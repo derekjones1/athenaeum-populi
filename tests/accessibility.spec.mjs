@@ -125,6 +125,10 @@ const REPRESENTATIVE_PAGES = [
     path: '/life-health-sciences/anatomy-physiology/11-the-muscular-system/05-muscles-of-the-pectoral-girdle-and-upper-limbs/',
   },
   {
+    name: 'anatomy-physiology section page (display equations, a table image with a transcribed table, a Disorders callout, an Interactive Link callout, longdescs)',
+    path: '/life-health-sciences/anatomy-physiology/22-the-respiratory-system/03-the-process-of-breathing/',
+  },
+  {
     name: 'anatomy-physiology unit 1 knowledge check (chapters 01–04)',
     path: '/life-health-sciences/anatomy-physiology/knowledge-check-01-04/',
   },

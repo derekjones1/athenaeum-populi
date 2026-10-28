@@ -8956,6 +8956,236 @@
       "caption": "In the DNA double helix, two strands attach via hydrogen bonds between the bases of the component nucleotides.",
       "transparent": false
     },
+    "2300_Mountain_Climbers": {
+      "source": "media/2300_Mountain_Climbers.jpg",
+      "sourceSha256": "cec470870a79e317942865685b65c2beac781c2c6dda934a981c2feee65451e7",
+      "module": "m46523",
+      "kind": "photo",
+      "width": 2288,
+      "height": 1050,
+      "variants": [
+        {
+          "width": 800,
+          "height": 367,
+          "file": "2300_Mountain_Climbers-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 734,
+          "file": "2300_Mountain_Climbers-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photo shows a group of people climbing a mountain.",
+      "caption": "The thin air at high elevations can strain the human respiratory system. (credit: “bortescristian”/flickr.com)"
+    },
+    "2301_Major_Respiratory_Organs": {
+      "source": "media/2301_Major_Respiratory_Organs.jpg",
+      "sourceSha256": "a27132e0e2aba6fdb726436b10de8462497c860a7711d5dbc81d9bd93c3b367f",
+      "module": "m46548",
+      "kind": "photo",
+      "width": 1933,
+      "height": 1625,
+      "variants": [
+        {
+          "width": 800,
+          "height": 672,
+          "file": "2301_Major_Respiratory_Organs-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1345,
+          "file": "2301_Major_Respiratory_Organs-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the upper half of the human body. The major organs in the respiratory system are labeled.",
+      "caption": "The major respiratory structures span the nasal cavity to the diaphragm."
+    },
+    "2302_External_Nose": {
+      "source": "media/2302_External_Nose.jpg",
+      "sourceSha256": "b8555b93a02269378b5c1fa7bb3fcbf219212604fd28eb2009dc035f71cef091",
+      "module": "m46548",
+      "kind": "photo",
+      "width": 1936,
+      "height": 1728,
+      "variants": [
+        {
+          "width": 800,
+          "height": 714,
+          "file": "2302_External_Nose-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1428,
+          "file": "2302_External_Nose-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the human nose. The top left panel shows the front view, and the top right panel shows the side view. The bottom panel shows the cartilaginous components of the nose.",
+      "caption": "This illustration shows features of the external nose (top) and skeletal features of the nose (bottom)."
+    },
+    "2303_Anatomy_of_Nose-Pharynx-Mouth-Larynx": {
+      "source": "media/2303_Anatomy_of_Nose-Pharynx-Mouth-Larynx.jpg",
+      "sourceSha256": "b3e44b20d8c078dbe271898329496415ac060e64cd9d6342fd2fccc104f46bb8",
+      "module": "m46548",
+      "kind": "photo",
+      "width": 1950,
+      "height": 1351,
+      "variants": [
+        {
+          "width": 800,
+          "height": 554,
+          "file": "2303_Anatomy_of_Nose-Pharynx-Mouth-Larynx-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1108,
+          "file": "2303_Anatomy_of_Nose-Pharynx-Mouth-Larynx-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a cross section view of the nose and throat. The major parts are labeled.",
+      "caption": ""
+    },
+    "2304_Pseudostratified_Epithelium": {
+      "source": "media/2304_Pseudostratified_Epithelium.jpg",
+      "sourceSha256": "23c6600fa8ee5203a3572f4f5ccda90fea253ea2e05698bae2cd3a0d20bde08e",
+      "module": "m46548",
+      "kind": "photo",
+      "width": 1931,
+      "height": 1131,
+      "variants": [
+        {
+          "width": 800,
+          "height": 468,
+          "file": "2304_Pseudostratified_Epithelium-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 937,
+          "file": "2304_Pseudostratified_Epithelium-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a micrograph of pseudostratified epithelium.",
+      "caption": "Respiratory epithelium is pseudostratified ciliated columnar epithelium. Seromucous glands provide lubricating mucus. LM × 680. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "2305_Divisions_of_the_Pharynx": {
+      "source": "media/2305_Divisions_of_the_Pharynx.jpg",
+      "sourceSha256": "9de62f2c12aa02b0c4eaa12413bb17e45bf42c22c2a894b3515bc92e43bfcb87",
+      "module": "m46548",
+      "kind": "photo",
+      "width": 1951,
+      "height": 1448,
+      "variants": [
+        {
+          "width": 800,
+          "height": 593,
+          "file": "2305_Divisions_of_the_Pharynx-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1187,
+          "file": "2305_Divisions_of_the_Pharynx-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the side view of the face. The different parts of the pharynx are color-coded and labeled.",
+      "caption": "The pharynx is divided into three regions: the nasopharynx, the oropharynx, and the laryngopharynx."
+    },
+    "2306_The_Larynx": {
+      "source": "media/2306_The_Larynx.jpg",
+      "sourceSha256": "cee09e7ad0c5fdf63387d0d77b020c7788ade5446b5bd0c5fdaba93c0ab7b00c",
+      "module": "m46548",
+      "kind": "photo",
+      "width": 1814,
+      "height": 1673,
+      "variants": [
+        {
+          "width": 800,
+          "height": 738,
+          "file": "2306_The_Larynx-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1475,
+          "file": "2306_The_Larynx-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top panel of this figure shows the anterior view of the larynx, and the bottom panel shows the right lateral view of the larynx.",
+      "caption": "The larynx extends from the laryngopharynx and the hyoid bone to the trachea."
+    },
+    "2307_Cartilages_of_the_Larynx": {
+      "source": "media/2307_Cartilages_of_the_Larynx.jpg",
+      "sourceSha256": "862916c33e8269ecb784aa1f13dad3e71210c66b1695b5898eba9b7d9e19ea42",
+      "module": "m46548",
+      "kind": "photo",
+      "width": 1938,
+      "height": 1133,
+      "variants": [
+        {
+          "width": 800,
+          "height": 467,
+          "file": "2307_Cartilages_of_the_Larynx-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 935,
+          "file": "2307_Cartilages_of_the_Larynx-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the cross section of the larynx. The different types of cartilages are labeled.",
+      "caption": "The true vocal cords and vestibular folds of the larynx are viewed inferiorly from the laryngopharynx."
+    },
+    "2308_The_Trachea-ab": {
+      "source": "media/2308_The_Trachea-ab.jpg",
+      "sourceSha256": "f7f51a5f8b1df2fae67a82b15cc938fe313236562e5b056a264ce89ec26f77de",
+      "module": "m46548",
+      "kind": "photo",
+      "width": 1950,
+      "height": 1266,
+      "variants": [
+        {
+          "width": 800,
+          "height": 519,
+          "file": "2308_The_Trachea-ab-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1038,
+          "file": "2308_The_Trachea-ab-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "(a) The top panel of this figure shows the trachea and its organs. The major parts including the larynx, trachea, bronchi, and lungs are labeled. (b) A micrograph shows a cross-section of tracheal wall tissue between the hyaline cartilage and the lumen of the trachea is the mucosa, which is composed of pseudostratified ciliated columnar epithelium that contains goblet cells.",
+      "caption": "(a) The tracheal tube is formed by stacked, C-shaped pieces of hyaline cartilage. (b) The layer visible in this cross-section of tracheal wall tissue between the hyaline cartilage and the lumen of the trachea is the mucosa, which is composed of pseudostratified ciliated columnar epithelium that contains goblet cells. LM × 1220. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "2309_The_Respiratory_Zone": {
+      "source": "media/2309_The_Respiratory_Zone.jpg",
+      "sourceSha256": "3adc99c2ca0739f0a6ff03a26bf52fc8d6667be3fe50bfd6aa4bfe3326a79d25",
+      "module": "m46548",
+      "kind": "photo",
+      "width": 2188,
+      "height": 1671,
+      "variants": [
+        {
+          "width": 800,
+          "height": 611,
+          "file": "2309_The_Respiratory_Zone-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1222,
+          "file": "2309_The_Respiratory_Zone-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the bronchioles and alveolar sacs in the lungs and depicts the exchange of oxygenated and deoxygenated blood in the pulmonary blood vessels.",
+      "caption": "Bronchioles lead to alveolar sacs in the respiratory zone, where gas exchange occurs."
+    },
     "230_Structure_of_Adenosine_Triphosphate__ATP_": {
       "source": "media/230_Structure_of_Adenosine_Triphosphate__ATP_.jpg",
       "sourceSha256": "425b77a380392621f237c0cb75671f85171f1224d491c914885fd43917eaf45f",
@@ -8974,6 +9204,236 @@
       "caption": "",
       "transparent": false
     },
+    "2310_Structures_of_the_Respiratory_Zone": {
+      "source": "media/2310_Structures_of_the_Respiratory_Zone.jpg",
+      "sourceSha256": "1198546c2181baccded04f6da52f051e2461360b8628ef4b493d04417dbb1169",
+      "module": "m46548",
+      "kind": "photo",
+      "width": 1958,
+      "height": 1155,
+      "variants": [
+        {
+          "width": 800,
+          "height": 472,
+          "file": "2310_Structures_of_the_Respiratory_Zone-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 944,
+          "file": "2310_Structures_of_the_Respiratory_Zone-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the detailed structure of the alveolus. The top panel shows the alveolar sacs and the bronchioles. The middle panel shows a magnified view of the alveolus, and the bottom panel shows a micrograph of the cross section of a bronchiole.",
+      "caption": "(a) The alveolus is responsible for gas exchange. (b) A micrograph shows the alveolar structures within lung tissue. LM × 178. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "2311_Lung_Tissue": {
+      "source": "media/2311_Lung_Tissue.jpg",
+      "sourceSha256": "1cf89e39491195a67baf010d5f03fcc2cc075bd101553bfab0d99c80f2b2b93b",
+      "module": "m46548",
+      "kind": "photo",
+      "width": 1737,
+      "height": 1932,
+      "variants": [
+        {
+          "width": 800,
+          "height": 890,
+          "file": "2311_Lung_Tissue-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1779,
+          "file": "2311_Lung_Tissue-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top panel of this figure shows normal lung tissue, and the bottom panel shows lung tissue inflamed by asthma.",
+      "caption": "(a) Normal lung tissue does not have the characteristics of lung tissue during (b) an asthma attack, which include thickened mucosa, increased mucus-producing goblet cells, and eosinophil infiltrates."
+    },
+    "2312_Gross_Anatomy_of_the_Lungs": {
+      "source": "media/2312_Gross_Anatomy_of_the_Lungs.jpg",
+      "sourceSha256": "67a7b18d0ec991f5295d1295a40080b2a356989af995fbd43d985137c1023985",
+      "module": "m46551",
+      "kind": "photo",
+      "width": 1896,
+      "height": 1304,
+      "variants": [
+        {
+          "width": 800,
+          "height": 550,
+          "file": "2312_Gross_Anatomy_of_the_Lungs-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1100,
+          "file": "2312_Gross_Anatomy_of_the_Lungs-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the structure of the lungs with the major parts labeled.",
+      "caption": ""
+    },
+    "2313_The_Lung_Pleurea": {
+      "source": "media/2313_The_Lung_Pleurea.jpg",
+      "sourceSha256": "688d885d0ecb300c1dc3984a0b42a129f2c6ead6514839189b0824149e6dc135",
+      "module": "m46551",
+      "kind": "photo",
+      "width": 1925,
+      "height": 1450,
+      "variants": [
+        {
+          "width": 800,
+          "height": 602,
+          "file": "2313_The_Lung_Pleurea-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1205,
+          "file": "2313_The_Lung_Pleurea-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the lungs and the chest wall, which protects the lungs, in the left panel. In the right panel, a magnified image shows the pleural cavity and a pleural sac.",
+      "caption": ""
+    },
+    "2314_Boyles_Law": {
+      "source": "media/2314_Boyles_Law.jpg",
+      "sourceSha256": "590e392ce5a0e9e7cebcb5e92b3040d39f7259003b11257d41a47dad1dae8de7",
+      "module": "m46549",
+      "kind": "photo",
+      "width": 1376,
+      "height": 1413,
+      "variants": [
+        {
+          "width": 800,
+          "height": 821,
+          "file": "2314_Boyles_Law-800.webp"
+        },
+        {
+          "width": 1376,
+          "height": 1413,
+          "file": "2314_Boyles_Law-1376.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows two canisters containing a gas. The two canisters show how volume and pressure are inversely proportional, which illustrates Boyle’s law.",
+      "caption": "In a gas, pressure increases as volume decreases."
+    },
+    "2315_Intrapulmonary_and_Intrapleural_Pressure": {
+      "source": "media/2315_Intrapulmonary_and_Intrapleural_Pressure.jpg",
+      "sourceSha256": "6a496cfee26ec7fffff30fba39ed84502631e62d4917f280361e00194a2689cc",
+      "module": "m46549",
+      "kind": "photo",
+      "width": 1938,
+      "height": 1472,
+      "variants": [
+        {
+          "width": 800,
+          "height": 607,
+          "file": "2315_Intrapulmonary_and_Intrapleural_Pressure-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1215,
+          "file": "2315_Intrapulmonary_and_Intrapleural_Pressure-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the lungs and the air pressure in different regions.",
+      "caption": "Intra-alveolar pressure changes during the different phases of the cycle. It equalizes at 760 mm Hg but does not remain at 760 mm Hg."
+    },
+    "2316_Inspiration_and_Expiration": {
+      "source": "media/2316_Inspiration_and_Expiration.jpg",
+      "sourceSha256": "5c3489e3a6a0f0c0339421cc10fdae8e9a25de91755bf0fac1764bef42176f24",
+      "module": "m46549",
+      "kind": "photo",
+      "width": 1925,
+      "height": 1422,
+      "variants": [
+        {
+          "width": 800,
+          "height": 591,
+          "file": "2316_Inspiration_and_Expiration-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1182,
+          "file": "2316_Inspiration_and_Expiration-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel of this image shows a person inhaling air and the location of the chest muscles. The right panel shows the person exhaling air and the contraction of the thoracic cavity.",
+      "caption": "Inspiration and expiration occur due to the expansion and contraction of the thoracic cavity, respectively."
+    },
+    "2317_Spirometry_and_Respiratory_Volumes": {
+      "source": "media/2317_Spirometry_and_Respiratory_Volumes.jpg",
+      "sourceSha256": "cb602b46690590cf7bc7f82ab9d03f352b9fdaffc3a9be78829a5a62fd026afe",
+      "module": "m46549",
+      "kind": "photo",
+      "width": 1940,
+      "height": 781,
+      "variants": [
+        {
+          "width": 800,
+          "height": 322,
+          "file": "2317_Spirometry_and_Respiratory_Volumes-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 644,
+          "file": "2317_Spirometry_and_Respiratory_Volumes-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel shows a graph of different respiratory volumes. The right panel shows how the different respiratory volumes result in respiratory capacity.",
+      "caption": "These two graphs show (a) respiratory volumes and (b) the combination of volumes that results in respiratory capacity."
+    },
+    "2318_Partial_and_Total_Pressure_of_a_Gas": {
+      "source": "media/2318_Partial_and_Total_Pressure_of_a_Gas.jpg",
+      "sourceSha256": "3de6369d8c5373779b81d6c328443c9d04e9964a5b92ffa97d67ecee709aba44",
+      "module": "m46521",
+      "kind": "photo",
+      "width": 1840,
+      "height": 625,
+      "variants": [
+        {
+          "width": 800,
+          "height": 271,
+          "file": "2318_Partial_and_Total_Pressure_of_a_Gas-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 543,
+          "file": "2318_Partial_and_Total_Pressure_of_a_Gas-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel of this figure shows a canister of oxygen. The middle panel shows a canister of nitrogen. The right panel shows a canister containing a mixture of oxygen and nitrogen. A pressure gauge on each container shows the pressure exerted by the gas in that container.",
+      "caption": "Partial pressure is the force exerted by a gas. The sum of the partial pressures of all the gases in a mixture equals the total pressure."
+    },
+    "2319_Fig_23.19-56b5": {
+      "source": "media/2319_Fig_23.19-56b5.jpg",
+      "sourceSha256": "091797c99694c77109e707e9247dddfb1a6de200fd623e5715bff3acdd0db8c5",
+      "module": "m46521",
+      "kind": "photo",
+      "width": 1921,
+      "height": 1152,
+      "variants": [
+        {
+          "width": 800,
+          "height": 479,
+          "file": "2319_Fig_23.19-56b5-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 959,
+          "file": "2319_Fig_23.19-56b5-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the pathway in which external respiration takes place. The exchange of oxygen and carbon dioxide between the alveolus and blood plasma is detailed.",
+      "caption": "In external respiration, oxygen diffuses across the respiratory membrane from the alveolus to the capillary, whereas carbon dioxide diffuses out of the capillary into the alveolus."
+    },
     "231_Structure_Carboxyl": {
       "source": "media/231_Structure_Carboxyl.jpg",
       "sourceSha256": "44989b474778b6a021088b2d46157d4b51cd78780f51eade089244b64385eb44",
@@ -8991,6 +9451,259 @@
       "alt": "R is single bonded to C, C is double bonded to one O and single bonded to another O. The second O is single bonded to H.",
       "caption": "",
       "transparent": false
+    },
+    "2320_Fig_23.20_NEW_KGX": {
+      "source": "media/2320_Fig_23.20_NEW_KGX.jpg",
+      "sourceSha256": "f4eddc973f409f4ef064dc9f2ba92a4aead9c94aa46d48a66a8a34ec87f4650d",
+      "module": "m46521",
+      "kind": "photo",
+      "width": 2165,
+      "height": 980,
+      "variants": [
+        {
+          "width": 800,
+          "height": 362,
+          "file": "2320_Fig_23.20_NEW_KGX-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 724,
+          "file": "2320_Fig_23.20_NEW_KGX-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram details the pathway of internal respiration. The exchange of oxygen and carbon dioxide between a red blood cell and a tissue cell is shown.",
+      "caption": "Oxygen diffuses out of the capillary and into cells, whereas carbon dioxide diffuses out of cells and into the capillary."
+    },
+    "2322_Fig_23.22-a": {
+      "source": "media/2322_Fig_23.22-a.jpg",
+      "sourceSha256": "02202cdd8b997d2872bb3573da042165a9b8ad6e1badd340c94e64a42d80f937",
+      "module": "m46545",
+      "kind": "photo",
+      "width": 1200,
+      "height": 1233,
+      "variants": [
+        {
+          "width": 800,
+          "height": 822,
+          "file": "2322_Fig_23.22-a-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 1233,
+          "file": "2322_Fig_23.22-a-1200.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows a red blood cell and the structure of a hemoglobin molecule.",
+      "caption": "Hemoglobin consists of four subunits, each of which contains one molecule of iron."
+    },
+    "2323_Oxygen-hemoglobin_Dissociation-a": {
+      "source": "media/2323_Oxygen-hemoglobin_Dissociation-a.jpg",
+      "sourceSha256": "8bc586913929ff9137162e2b4618d9c0a03698f5826f5959945525f211486905",
+      "module": "m46545",
+      "kind": "photo",
+      "width": 1913,
+      "height": 1508,
+      "variants": [
+        {
+          "width": 800,
+          "height": 630,
+          "file": "2323_Oxygen-hemoglobin_Dissociation-a-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1261,
+          "file": "2323_Oxygen-hemoglobin_Dissociation-a-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top panel of this figure shows a graph with oxygen saturation of the y-axis and partial pressure of oxygen on the x-axis.",
+      "caption": "These three graphs show (a) the relationship between the partial pressure of oxygen and hemoglobin saturation, (b) the effect of pH on the oxygen–hemoglobin dissociation curve, and (c) the effect of temperature on the oxygen–hemoglobin dissociation curve."
+    },
+    "2323_Oxygen-hemoglobin_Dissociation-b": {
+      "source": "media/2323_Oxygen-hemoglobin_Dissociation-b.jpg",
+      "sourceSha256": "a4c58038cab3f99f94868b9b83a82e4179acc97e0ccec80d33fc0ee68c8960c6",
+      "module": "m46545",
+      "kind": "photo",
+      "width": 1900,
+      "height": 1317,
+      "variants": [
+        {
+          "width": 800,
+          "height": 554,
+          "file": "2323_Oxygen-hemoglobin_Dissociation-b-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1109,
+          "file": "2323_Oxygen-hemoglobin_Dissociation-b-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The middle panel shows oxygen saturation versus partial pressure of oxygen as a function of pH.",
+      "caption": "These three graphs show (a) the relationship between the partial pressure of oxygen and hemoglobin saturation, (b) the effect of pH on the oxygen–hemoglobin dissociation curve, and (c) the effect of temperature on the oxygen–hemoglobin dissociation curve."
+    },
+    "2323_Oxygen-hemoglobin_Dissociation-c": {
+      "source": "media/2323_Oxygen-hemoglobin_Dissociation-c.jpg",
+      "sourceSha256": "f89580e2fc9b1a04bb956fca413a5282ab6eefbc9f5d9edf10b26b254f397ca3",
+      "module": "m46545",
+      "kind": "photo",
+      "width": 1896,
+      "height": 1317,
+      "variants": [
+        {
+          "width": 800,
+          "height": 555,
+          "file": "2323_Oxygen-hemoglobin_Dissociation-c-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1111,
+          "file": "2323_Oxygen-hemoglobin_Dissociation-c-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The bottom panel shows the same relationship as a function of temperature.",
+      "caption": "These three graphs show (a) the relationship between the partial pressure of oxygen and hemoglobin saturation, (b) the effect of pH on the oxygen–hemoglobin dissociation curve, and (c) the effect of temperature on the oxygen–hemoglobin dissociation curve."
+    },
+    "2324_Oxygen-hemoglobin_Dissociation_Fetus_Adult": {
+      "source": "media/2324_Oxygen-hemoglobin_Dissociation_Fetus_Adult.jpg",
+      "sourceSha256": "26e5fcbe1101aa9e90822c1bdeaadf33b3a0b5c4eddeecf8343fe8e0eaf79114",
+      "module": "m46545",
+      "kind": "photo",
+      "width": 1881,
+      "height": 1433,
+      "variants": [
+        {
+          "width": 800,
+          "height": 609,
+          "file": "2324_Oxygen-hemoglobin_Dissociation_Fetus_Adult-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1219,
+          "file": "2324_Oxygen-hemoglobin_Dissociation_Fetus_Adult-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This graph shows the oxygen saturation versus the partial pressure of oxygen in fetal hemoglobin and adult hemoglobin.",
+      "caption": "Fetal hemoglobin has a greater affinity for oxygen than does adult hemoglobin."
+    },
+    "2325_Carbon_Dioxide_Transport": {
+      "source": "media/2325_Carbon_Dioxide_Transport.jpg",
+      "sourceSha256": "470ff46ce47786098ed4215dc6f9cee9d49e58b56a03841e247fa6a863d75121",
+      "module": "m46545",
+      "kind": "photo",
+      "width": 1927,
+      "height": 950,
+      "variants": [
+        {
+          "width": 800,
+          "height": 394,
+          "file": "2325_Carbon_Dioxide_Transport-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 788,
+          "file": "2325_Carbon_Dioxide_Transport-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows how carbon dioxide is transported from the tissue to the red blood cell.",
+      "caption": "Carbon dioxide is transported by three different methods: (a) in erythrocytes; (b) after forming carbonic acid (H 2 CO 3 ), which is dissolved in plasma; (c) and in plasma."
+    },
+    "2327_Respiratory_Centers_of_the_Brain": {
+      "source": "media/2327_Respiratory_Centers_of_the_Brain.jpg",
+      "sourceSha256": "936a878b01de6da16d23b39564b0b9e6645684935a4011210c37a11fe3fb0a2b",
+      "module": "m46549",
+      "kind": "photo",
+      "width": 1883,
+      "height": 2447,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1039,
+          "file": "2327_Respiratory_Centers_of_the_Brain-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2079,
+          "file": "2327_Respiratory_Centers_of_the_Brain-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top panel of this image shows the regions of the brain that control respiration. The middle panel shows a magnified view of these regions and links the regions of the brain to the specific organs that they control.",
+      "caption": ""
+    },
+    "2328_Development_of_Lower_Respiratory_SystemN": {
+      "source": "media/2328_Development_of_Lower_Respiratory_SystemN.jpg",
+      "sourceSha256": "a643524356a498488db130ba1580a2196f180f68173cda89b5bf8b03ec9ed320",
+      "module": "m46518",
+      "kind": "photo",
+      "width": 1950,
+      "height": 1481,
+      "variants": [
+        {
+          "width": 800,
+          "height": 607,
+          "file": "2328_Development_of_Lower_Respiratory_SystemN-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1215,
+          "file": "2328_Development_of_Lower_Respiratory_SystemN-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This flowchart shows the embryonic development of the respiratory system and correlates the gestational age to the appearance of new features.",
+      "caption": ""
+    },
+    "2329_Pulmonary_Function_Testing": {
+      "source": "media/2329_Pulmonary_Function_Testing.jpg",
+      "sourceSha256": "ec226752359d192e46c97a5c8971f77b11e8fc6266ff02fa67c18c44c84963ff",
+      "module": "m46549",
+      "kind": "photo",
+      "width": 1996,
+      "height": 1467,
+      "variants": [
+        {
+          "width": 800,
+          "height": 588,
+          "file": "2329_Pulmonary_Function_Testing-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1176,
+          "file": "2329_Pulmonary_Function_Testing-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This tables describes methods of pulmonary function testing. Spirometry tests require a spirometer. These tests can measure forced vital capacity (FVC), the volume of air that is exhaled after maximum inhalation; foreced expiratory volume (FEV), the volume of air exhaled in one breath; forced expiratory flow, 25 to 75 percent, the air flow in the middle of exhalation; peak expiratory flow (PEF), the rate of exhalation; maximum voluntary ventilation (MVV), the volume of air that can be inspired and expired in 1 minute; slow vital capacity (SVC), the volume of air that can be slowly exhaled after inhaling past the tidal volume; total lung capacity (TLC), the volume of air in the lungs after maximum inhalation; functional residual capacity (FRC), the volume of air left in the lungs after normal expiration; residual volume (RV), the volume of air in the lungs after maximum exhalation; total lung capacity (TLC), the maximum volume of air that the lungs can hold; and expiratory reserve volume (ERV), the volume of air that can be exhaled beyond normal exhalation. Gas diffusion tests require a blood gas analyzer. These tests can measure arterial blood gases, the concentration of oxygen and carbon dioxide in the blood.",
+      "caption": ""
+    },
+    "2332_Hyperbaric_Chamber": {
+      "source": "media/2332_Hyperbaric_Chamber.jpg",
+      "sourceSha256": "d57e931ac17a264f3b8428a475f0e35d0f43f07082db4c6cc4c9801e95667f96",
+      "module": "m46521",
+      "kind": "photo",
+      "width": 1950,
+      "height": 1463,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "2332_Hyperbaric_Chamber-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1200,
+          "file": "2332_Hyperbaric_Chamber-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photo shows two hyperbaric chambers.",
+      "caption": "(credit: “komunews”/flickr.com)"
     },
     "400_Micrograph_of_Cervical_Tissue_updated": {
       "source": "media/400_Micrograph_of_Cervical_Tissue_updated.jpg",

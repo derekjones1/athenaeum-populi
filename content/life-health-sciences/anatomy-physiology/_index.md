@@ -127,13 +127,21 @@ reproduction, development, and inheritance.
   response against pathogens, diseases associated with depressed or
   overactive immune responses, and transplantation and cancer immunology.
 
+### Unit 5: Energy, Maintenance, and Environmental Exchange
+
+- **The Respiratory System** — the organs and structures of the respiratory
+  system, the lungs and their blood supply and pleura, the process of
+  breathing, gas exchange, transport of gases, modifications in respiratory
+  function with exercise and altitude, and the embryonic development of the
+  respiratory system.
+
 ## Planned contents
 
 The remaining chapters of Anatomy and Physiology 2e's six units will
 appear in this order:
 
 - **Unit 5: Energy, Maintenance, and Environmental Exchange** — The
-  Respiratory System; The Digestive System; Metabolism and Nutrition; The
+  Digestive System; Metabolism and Nutrition; The
   Urinary System; Fluid, Electrolyte, and Acid-Base Balance.
 - **Unit 6: Human Development and the Continuity of Life** — The Reproductive
   System; Development and Inheritance.

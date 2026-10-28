@@ -548,6 +548,14 @@
     "result": "agrees"
    }
   },
+  "012a4d2138533a3d": {
+   "verdict": "ok",
+   "note": "cloze nervous system — fs-id2780175 last sentence",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "012f4c016d6eb0be": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -1135,6 +1143,14 @@
   "02665c1bcb46746b": {
    "verdict": "ok",
    "note": "KC 7 40.2 § body White Blood Cells (fs-idm45398096), m66651 — parent re-read against the module"
+  },
+  "026860b5787eb450": {
+   "verdict": "ok",
+   "note": "re-read against m46549 CNXML and the page: continuous positive airway pressure",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "026e00cd197145f9": {
    "verdict": "ok",
@@ -1909,6 +1925,14 @@
     "result": "agrees"
    }
   },
+  "03e8189621359b4c": {
+   "verdict": "ok",
+   "note": "cloze of body fs-id2075909 'Recall that the respiratory system works to humidify incoming air…'; key humidify printed in body",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "03ebce1cbaa0519e": {
    "verdict": "ok",
    "note": "highest power 5; key p1297 #13 | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -1946,6 +1970,18 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "03f3d314802878c5": {
+   "verdict": "ok",
+   "note": "fs-id2100829 up to four molecules of oxygen",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "03f79428d369629e": {
+   "verdict": "ok",
+   "note": "CT fs-id2570954; model answer corrected per claim pass F8 (20-fold unsupported; fig 2324 P50 19 vs 26.8); rest verbatim"
   },
   "03f9ea3cd86177f3": {
    "verdict": "ok",
@@ -2095,6 +2131,14 @@
    "note": "re-derived by the parent (IA ch3 re-review, Sep 28 2026): f(x)=3: slope 0, intercept 3; answer JSON matches the equation in the stem",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "046bf2fda634a7da": {
+   "verdict": "ok",
+   "note": "Review fs-id2112277 key A; 'Each segment receives air from its own tertiary bronchus'",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -4827,6 +4871,14 @@
    "verdict": "ok",
    "note": "Critical Thinking eip-843: model answer is the source solution verbatim, answers the question as asked. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "0a72a7b7032343f0": {
+   "verdict": "ok",
+   "note": "cloze fs-id1469846 s1 quaternary structure",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0a767cd884dffd13": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -5080,6 +5132,14 @@
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
   },
+  "0affa19ef9738487": {
+   "verdict": "ok",
+   "note": "re-read against m46549 CNXML and the page: sea level",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0b01848b2222f4e5": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -5134,6 +5194,14 @@
   "0b1da65a74e8f993": {
    "verdict": "ok",
    "note": "KC 2 12.1 § Molecular Cloning, m58848 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "0b214119fd297ece": {
+   "verdict": "ok",
+   "note": "summary cloze: compression of the thoracic cavity forces fluid out; body prints fetal thoracic cavity",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -5304,6 +5372,14 @@
   "0b71d1fa3a074d0f": {
    "verdict": "ok",
    "note": "CT fs-id1199120, model answer = source solution verbatim."
+  },
+  "0b737c3fc3566113": {
+   "verdict": "ok",
+   "note": "fs-id2024583 re-keyed alveoli -> 'respiratory bronchioles' (kind key, parent ruling overturned after claim pass; erratum 2584): glossary bronchial tree = bronchi and bronchioles; fs-id2757673 respiratory bronchiole 'the smallest type of bronchiole'; options/order unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "0b7aa87715c534d5": {
    "verdict": "ok",
@@ -7946,6 +8022,14 @@
   "118f7e8f6271ffd3": {
    "verdict": "ok"
   },
+  "1191c57e673eecf8": {
+   "verdict": "ok",
+   "note": "re-read against m46549 CNXML and the page: respiratory cycle",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "119672d49f41f16f": {
    "verdict": "ok",
    "note": "Body CYU 1/2, § The Iceman and Evidence of Early Treatments + § Early Notions of Disease, Contagion, and Containment (both preceding subsections): model answer assembled from Ötzi's treatments, the Bible quarantine passage, and Ibn Sina's isolation practice. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -8586,6 +8670,14 @@
   "12f2e7f33952ca45": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "12f571f223fe8336": {
+   "verdict": "ok",
+   "note": "re-read against m46549 CNXML and the page: Influences and modifies the medulla oblongata’s functions",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -10125,6 +10217,18 @@
   "1619621aaa02185b": {
    "verdict": "ok",
    "note": "CNXML exercise fs-id1167663995001 part (b) (source prints no key), figure-keyed selfcheck: model answer reads the four side chains directly off the same tetrapeptide structural formula (a single carbon bonded to two methyl groups; bare hydrogen; one-carbon/hydroxyl group; single methyl group), left to right."
+  },
+  "161b0bf4bb677acb": {
+   "verdict": "ok",
+   "note": "CT fs-id1475566 model = source solution, one-word fix consist→consists"
+  },
+  "161ddff4d1a92b37": {
+   "verdict": "ok",
+   "note": "Review fs-id2228521; F7 claim correction: key 'The capillary constricts.' -> 'The pulmonary arterioles constrict.' (kind key, erratum 2582) per fs-id2584577 + m46551 'lack smooth muscle fibers'; option D 'The bronchioles dilate.' (true by fs-id2229918) -> 'Blood flow to the affected alveolus increases.' (false by fs-id2584577 redirection; kind options, erratum 2583); Source note under item",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "161e349b11425bd6": {
    "verdict": "ok",
@@ -12039,6 +12143,14 @@
     "result": "agrees"
    }
   },
+  "1a1f106da8b63249": {
+   "verdict": "ok",
+   "note": "RQ fs-id2585421 key C; fs-id2100829 oxyhemoglobin formed when oxygen binds to hemoglobin",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1a1f5c5c8c2b2fc6": {
    "verdict": "ok",
    "note": "KC 6 30.1 § body Plant Tissues (fs-idp2060048), m66596 — parent re-read against the module"
@@ -13052,6 +13164,14 @@
   "1c1747cd725a3881": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "1c17ee1dceb3d85d": {
+   "verdict": "ok",
+   "note": "fs-id1372139 key C ectoderm; body: ectodermal tissue invaginates to form olfactory pits",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -14630,6 +14750,10 @@
     "result": "agrees"
    }
   },
+  "1fa0e0e27b50a9fc": {
+   "verdict": "ok",
+   "note": "fs-id2760342 solution verbatim; matches Weeks 24–Term paragraph"
+  },
   "1fa12c97fb82a574": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -15187,6 +15311,14 @@
     "result": "agrees"
    }
   },
+  "20c4e5cc03f0395e": {
+   "verdict": "ok",
+   "note": "fs-id2069835 key A; body: full complement of functional alveoli around 8 years of age",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "20c6126c43323b48": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -15214,6 +15346,14 @@
   "20d85e0912bc92c6": {
    "verdict": "ok",
    "note": "Body CYU selfcheck, fs-id1172098382783 bullet 2 (\"How did Joseph Lister's work contribute...\"); model answer from § The Germ Theory of Disease's Lister paragraph (fs-id1172100932077). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "20db39da30488934": {
+   "verdict": "ok",
+   "note": "re-read after checker fixes against m46549 CNXML and the page: type II alveolar cells",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "20e0b3830f1dcab2": {
    "verdict": "ok",
@@ -17701,6 +17841,14 @@
     "result": "agrees"
    }
   },
+  "269ca82cab7c5def": {
+   "verdict": "ok",
+   "note": "fs-id1605776 key C; Birth: Some fluid remains, but is rapidly absorbed shortly after birth",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "26ab41958ffc8524": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -19714,6 +19862,14 @@
     "result": "agrees"
    }
   },
+  "2b400966df7c1778": {
+   "verdict": "ok",
+   "note": "re-read against m46549 CNXML and the page: residual volume",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2b40160a8703d7fa": {
    "verdict": "ok",
    "note": "author-built from § summary: \"Antonie van Leeuwenhoek is credited with the first observation of microbes, including protists and bacteria, with simple microscopes that h…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -19844,6 +20000,14 @@
   },
   "2b935a16c49e3a58": {
    "verdict": "ok"
+  },
+  "2b998932d6dc6f34": {
+   "verdict": "ok",
+   "note": "RQ fs-id2072180 key D; temperature fs-id2493930, BPG fs-id2754129, pH fs-id2352351",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "2b9a91bec5c93a87": {
    "verdict": "ok",
@@ -20333,6 +20497,15 @@
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
+   }
+  },
+  "2cc54277becb37c5": {
+   "verdict": "ok",
+   "note": "Review fs-id2321808 re-keyed to pulmonary (source C respiratory), Part C ruling erratum 2579; module: 'requires blood from the pulmonary circulation', summary 'The function of the pulmonary circulation is to aid in gas exchange'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "key \"pulmonary\" stands: the module names only the pulmonary circulation (Blood Supply; Summary \"The function of the pulmonary circulation is to aid in gas exchange\"); the source key \"respiratory\" is corrected under erratum 2579"
    }
   },
   "2ccc3acefa618585": {
@@ -21339,6 +21512,14 @@
    "verdict": "ok",
    "note": "Body Check Your Understanding bullet 1 (no source key). Model answer assembled from § Characteristics, first paragraph: 'A lichen is a combination of two organisms, a green alga or cyanobacterium and fungus, living in a symbiotic relationship.' Stays a selfcheck because the honest answer names two coordinate organism types rather than one gradable fact."
   },
+  "2ee09bef845ad35c": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1897952 total pressure; meaning verbatim as prompt",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2ee13d893ca2ecf1": {
    "verdict": "ok",
    "note": "model answer traced to retrospective/prospective + cohort/case-control/cross-sectional paragraphs | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -22164,6 +22345,14 @@
     "result": "agrees"
    }
   },
+  "30c956acc2ee1564": {
+   "verdict": "ok",
+   "note": "glossary recall: respiratory membrane, meaning verbatim from m46548 glossary",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "30cbc800d7244691": {
    "verdict": "ok",
    "note": "glossary textin, term 'age structure', definition 'proportion of population members at specific age ranges' — matches, accept 'age structures' added for the plural used elsewhere in the module.; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -22868,6 +23057,14 @@
   "3275b914b19d4576": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "32767e9c9e157131": {
+   "verdict": "ok",
+   "note": "re-read against m46549 CNXML and the page: transpulmonary pressure",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -23738,6 +23935,14 @@
     "result": "agrees"
    }
   },
+  "3495cd62460490a9": {
+   "verdict": "ok",
+   "note": "author MC from fs-id1720897 sentence 2 first clause: does not significantly alter; distractors significantly lowers/raises",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3499c5a658ef1478": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -24330,6 +24535,14 @@
    "verdict": "ok",
    "note": "model answer is CNXML solution fs-id2318195 (m66477) verbatim; rubric checkpoints are clauses of that solution, no new claims | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "35e97460842b7409": {
+   "verdict": "ok",
+   "note": "summary cloze fs-id2341449 s3 one atom of iron",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "35f8cbfc4c2e737f": {
    "verdict": "ok",
    "note": "cloze of fs-id2396137 bullet 3; key kidneys as printed",
@@ -24578,6 +24791,14 @@
   "366a504efdc4c45d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "3672183b22c7d1b6": {
+   "verdict": "ok",
+   "note": "Review fs-id2269266 key A visceral and parietal pleurae",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -25557,6 +25778,14 @@
   "38e726ecf73b82dc": {
    "verdict": "ok"
   },
+  "38e7d84a298f865b": {
+   "verdict": "ok",
+   "note": "fs-id1983853 key A 'increase surface area'; body: 'Conchae serve to increase the surface area of the nasal cavity'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "38e8f13471030351": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -26091,6 +26320,14 @@
   "3a0000fe9a1251b3": {
    "verdict": "ok",
    "note": "author-built from § Protozoan Virulence: \"Protozoan pathogens are unicellular eukaryotic parasites that have virulence factors and pathogenic mechanisms analogous to prokaryotic and…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "3a037a717938e4ba": {
+   "verdict": "ok",
+   "note": "re-read against m46549 CNXML and the page: anatomical dead space",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -26671,6 +26908,10 @@
   "3b733851ada83c7f": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "3b740fc517bfcb8e": {
+   "verdict": "ok",
+   "note": "re-read against m46549 CNXML and the page: selfcheck model = source solution"
   },
   "3b76332cf8c680f8": {
    "verdict": "ok",
@@ -28179,6 +28420,10 @@
    "verdict": "ok",
    "note": "01-the-process-of-meiosis.md line 278, model answer matches CNXML solution id=\"fs-id1561447\" verbatim; checks (homologs pulled apart to opposite poles, sister chromatids not separated until meiosis II, fused kinetochore ensures both sister chromatids bind the same spindle fiber) restate that solution's clauses with no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "3ed773c950391aaf": {
+   "verdict": "ok",
+   "note": "fs-id2574841 CT, source solution fs-id2484968 verbatim as model answer"
+  },
   "3ed7ab29e016a63e": {
    "verdict": "ok",
    "note": "Bio 28.6 superclasses selfcheck: source solution + source note per erratum 1003 (m66399 five subphyla); parent re-read Sep 23 2026"
@@ -29642,6 +29887,14 @@
    "verdict": "ok",
    "note": "Body CYU, selfcheck: antibiotic-resistance vs reporter gene, assembled from two Plasmids § sentences, confirmed against CNXML. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "41bdecf5db3729f4": {
+   "verdict": "ok",
+   "note": "cloze digestive — fs-id1720897 sentence 1 prints it",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "41c2a0d6cba88115": {
    "verdict": "ok",
    "note": "TryIt5 (source ti_08_01_06, beta=42,a=7.2,c=3.4): Area=0.5*a*c*sin(beta)=0.5*7.2*3.4*sin(42)=8.190 -> 8.2 sq ft. Matches CNXML 'about 8.2 square feet'."
@@ -30873,6 +31126,10 @@
     "result": "agrees"
    }
   },
+  "449fe61944379279": {
+   "verdict": "ok",
+   "note": "re-read against m46549 CNXML and the page: selfcheck model = source solution"
+  },
   "44a5f13ec80cb123": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -31952,6 +32209,14 @@
   "46f92e7e59339abf": {
    "verdict": "ok",
    "note": "Independently derived: 1/x^2 is even, so both sides of x=0 go to +inf and both tails go to 0; matches CNXML Try It 1. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "46fb2bfd5b2e37bc": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id2719526 foregut; body Weeks 4–7 also defines it",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "46fba703aa097412": {
    "verdict": "ok",
@@ -33713,6 +33978,14 @@
     "result": "agrees"
    }
   },
+  "4b26a3e049c32b45": {
+   "verdict": "ok",
+   "note": "re-read against m46549 CNXML and the page: Boyle’s law",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4b29ecffb3ba8e99": {
    "verdict": "ok",
    "note": "source exercise fs-idm4134384 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -34960,6 +35233,14 @@
     "result": "agrees"
    }
   },
+  "4df7fcda0513c6cb": {
+   "verdict": "ok",
+   "note": "fs-id2019566 key A; body: Around week 20, fetal breathing movements may begin",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4df951d7720b4717": {
    "verdict": "ok",
    "note": "body cloze from § introduction: \"Rapid visualization of bacteria from a clinical sample such as a throat swab or sputum can be achieved through fluorescent antibody (FA) te…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -35421,6 +35702,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "4f1925ec667b8c9d": {
+   "verdict": "ok",
+   "note": "CT fs-id1845034 solution verbatim"
   },
   "4f1cd448869360f3": {
    "verdict": "ok",
@@ -36150,6 +36435,14 @@
     "result": "agrees"
    }
   },
+  "5091deb088ac50c0": {
+   "verdict": "ok",
+   "note": "re-read against m46549 CNXML and the page: pneumotaxic center",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5098b4c54bc13bb6": {
    "verdict": "ok",
    "note": "source RQ fs-id1481522, key D; REVISED parent ruling: keyed option corrected to \"primary visual perception\" (module fs-id1335742 attributes visual processing to the cerebrocerebellum), Source note on page, DISCLOSED_DEVIATIONS kind key, erratum 2316",
@@ -36419,6 +36712,14 @@
   "51555fa4d53ad2c6": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "51576848a3792c5b": {
+   "verdict": "ok",
+   "note": "re-read against m46549 CNXML and the page: carbon dioxide",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -36780,6 +37081,14 @@
    "note": "Glossary recall (fs-id3294130 'origin'): answer and accept list match the glossary definition and its parenthetical 'ORI'/'origin of replication' forms. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "5245bbb710f7a1ed": {
+   "verdict": "ok",
+   "note": "RQ fs-id1493008 key A; fs-id2485319 and summary Haldane effect",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -39904,6 +40213,14 @@
     "result": "agrees"
    }
   },
+  "5950482d83c1a4f6": {
+   "verdict": "ok",
+   "note": "author MC read from tbl-ch23_03 oxygen row 104; distractors 569 (N2 row), 40 (CO2 row), 158.8 (tbl-ch23_02 O2 row)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "59512d7a8e0e290a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -40016,6 +40333,14 @@
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "598a69787db4d24e": {
+   "verdict": "ok",
+   "note": "re-read against m46549 CNXML and the page: Monitors emotional state and body temperature",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -41079,6 +41404,14 @@
     "result": "agrees"
    }
   },
+  "5bf1460887b95f96": {
+   "verdict": "ok",
+   "note": "cloze cerebral — fs-id1908137",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5bf27dad0b8464eb": {
    "verdict": "ok",
    "note": "source exercise fs-idm166908656 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -41759,6 +42092,14 @@
    "verdict": "ok",
    "note": "Try It 4 (CNXML ti_09_04_04, source solution (x-2)/(x^2-2x+3)+(2x+1)/(x^2-2x+3)^2). Independently solved via x^3-4x^2+9x-5=(Ax+B)(x^2-2x+3)+(Cx+D), expand and compare coefficients (A=1,B=-2,C=2,D=1), matching the source decomposition (x-2)/(...)+ (2x+1)/(...)^2. Cross-checked as exact-rational identity via node (no real poles, sampled at 17 points). Grader: self=correct, retype-of-printed=form. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "5d810da366492b08": {
+   "verdict": "ok",
+   "note": "re-read after checker fixes against m46549 CNXML and the page: Generates the breathing rhythm and integrates data coming into the medulla",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5d83c161a0d0e61c": {
    "verdict": "ok",
    "note": "38.4 m66643 fs-idm128339664 (Critical Thinking Question). Model answer is the source solution verbatim; checkpoints decompose it with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -42326,6 +42667,14 @@
   "5ea7a9f3be23d4ea": {
    "verdict": "ok",
    "note": "fs-id1232448 solution fs-id1399923 verbatim"
+  },
+  "5ea8168222e76dfe": {
+   "verdict": "ok",
+   "note": "cloze fs-id2026710 separated from maternal blood by the chorion",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "5ea8e963e2d3c3b2": {
    "verdict": "ok",
@@ -43620,6 +43969,14 @@
   "6237debb847a1423": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "623c589f95cb5f54": {
+   "verdict": "ok",
+   "note": "re-read against m46549 CNXML and the page: atmospheric, intra-alveolar, intrapleural",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "623da128899bd7fb": {
    "verdict": "ok",
@@ -45341,6 +45698,14 @@
     "result": "agrees"
    }
   },
+  "67062f08158cbd7a": {
+   "verdict": "ok",
+   "note": "cloze chronic — fs-id1406372 acclimatization definition",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6707142f65d8b8d1": {
    "verdict": "ok",
    "note": "Source True/False fs-id1167661268608, KEY False, rendered as two-option multiplechoice (True then False), stem not prefixed with 'True or false:'. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -46865,6 +47230,10 @@
    "verdict": "ok",
    "note": "-x+4y=8 -> 4y=x+8 -> y=x/4+2, so slope 1/4 and intercept 2; x-intercept (-8,0), y-intercept (0,2). Grid widened -7..7 -> -14..14 for plotPoints slack; the widening also brings the x-intercept (-8,0) onto the grid, which an exercise asking to graph 'using the intercepts' needs."
   },
+  "6aa856079f896f3e": {
+   "verdict": "ok",
+   "note": "CT fs-id2766181 solution verbatim"
+  },
   "6aa9a264a20d0462": {
    "verdict": "ok",
    "note": "Critical Thinking fs-id2200536: independently translated 5'-AUGGCCGGUUAUUAAGCA-3' codon by codon (AUG-GCC-GGU-UAU-UAA), confirming MAGY with a stop at the fifth codon, matching the source solution. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -47098,6 +47467,14 @@
    "note": "Boulder: a1=6,d=8,n=10; a10=78,S10=420 (node); matches CNXML fs-id1165135181425 solution (420 feet). | carried Oct 12 2026 (Precalculus ch11–12 re-review): re-hashed by a form, stem, or hint edit, key unchanged; re-solved blind (fable-solver, 77/77)",
    "solved": {
     "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
+  "6b61469fcce4a20e": {
+   "verdict": "ok",
+   "note": "re-read against m46549 CNXML and the page: The ribs and sternum move upward.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -49729,6 +50106,14 @@
   "7191d7bf9d95be46": {
    "verdict": "ok"
   },
+  "71973f0d56ec835a": {
+   "verdict": "ok",
+   "note": "re-read against m46549 CNXML and the page: when you swim under water",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "719beac8b7aa867d": {
    "verdict": "ok",
    "note": "source exercise fs-id1167661271491 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -49795,6 +50180,14 @@
   "71bad90b4a8b2a35": {
    "verdict": "ok",
    "note": "author-built from tbl-ch06_01 and the Short/Flat/Irregular/Sesamoid subsections; each label true of exactly one row (line 114: Assign each feature or example to the class of bone it belon)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "71bb2d33652ca439": {
+   "verdict": "ok",
+   "note": "re-read against m46549 CNXML and the page: central chemoreceptor",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -55701,6 +56094,14 @@
     "result": "agrees"
    }
   },
+  "7eb5c5894da5d366": {
+   "verdict": "ok",
+   "note": "re-read after checker fixes against m46549 CNXML and the page: Medullary respiratory center",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7eb65c6c68bac2cb": {
    "verdict": "ok",
    "note": "Microbiology 10.2 source CYU selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the deoxyribose carbon numbering and the free 5' phosphate / 3' hydroxyl sentence)"
@@ -55752,6 +56153,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "7ed3b967ff357b8a": {
+   "verdict": "ok",
+   "note": "CT fs-id1481649, solution fs-id2111266 with one-word fix by→of (motor neuron activation of the skeletal muscles)"
   },
   "7edd123ea01d6957": {
    "verdict": "ok",
@@ -55911,6 +56316,10 @@
     "result": "agrees"
    }
   },
+  "7f38f2afe23d5490": {
+   "verdict": "ok",
+   "note": "CT fs-id2338019, model answer verbatim; bone-marrow clause cut from rubric (module never says bone marrow)"
+  },
   "7f3c9eb15f6bdbad": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -56045,6 +56454,14 @@
   "7f901dfb48c59372": {
    "verdict": "ok",
    "note": "Practice: x=sqrt(y)+2y with y(t)=t substituted directly gives x(t)=sqrt(t)+2t; matches CNXML solution; retype of printed y-form confirmed graded incorrect against the t-keyed answer."
+  },
+  "7f9290ccf2e9324b": {
+   "verdict": "ok",
+   "note": "author MC from fs-id2017288 'the partial pressure of carbon dioxide is lower in the blood than it is in the tissue'; 'blood; alveoli' false by fs-id2650102 (45 vs 40)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "7f930cfbc859eb0f": {
    "verdict": "ok",
@@ -57488,6 +57905,10 @@
   "83075d0119de9c85": {
    "verdict": "ok",
    "note": "re-hashed by the Biology figure-alt pass: the fungal life-cycle figure's longdesc above it was corrected (Mitosis labels sit on the Spores-to-Hyphae arrows; asexual loop re-walked); the question, model answer, and ===CHECKS=== are untouched and were re-read against the image, whose ASEXUAL loop (hyphae -> spores -> hyphae by mitosis) still answers 'yes, asexually' | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "8307f68941a3b6b6": {
+   "verdict": "ok",
+   "note": "fs-id2325491 CT, source solution fs-id2870963 verbatim as model answer"
   },
   "83096d648450a52a": {
    "verdict": "ok",
@@ -59109,6 +59530,14 @@
     "result": "agrees"
    }
   },
+  "8679990a668988be": {
+   "verdict": "ok",
+   "note": "cloze § Blood Supply '…very thin walls that lack smooth muscle fibers'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "867ad99e81f9ec77": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -60372,6 +60801,14 @@
     "result": "agrees"
    }
   },
+  "897f2533430874f3": {
+   "verdict": "ok",
+   "note": "cloze of body fs-id2005867 '…which returns to the heart through the pulmonary veins'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "89879cf59f1e2470": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -61524,6 +61961,14 @@
     "result": "agrees"
    }
   },
+  "8c768659fb9c0d3c": {
+   "verdict": "ok",
+   "note": "author MC from fs-id2650102 'the solubility of carbon dioxide is much greater than that of oxygen…in both blood and alveolar fluids. As a result…similar'; distractors contradicted by fs-id2271582 (energy not required; membrane highly permeable to gases) and fs-id2650102",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8c80e2a9b71914ab": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -61538,6 +61983,14 @@
   "8c8274ef7412a386": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "8c8d65b310a51f3f": {
+   "verdict": "ok",
+   "note": "Review fs-id2602080, key C 'internal respiration' confirmed; fs-id2344495 / glossary fs-id1909285",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -61573,6 +62026,10 @@
   "8c9d05f64c22eb7f": {
    "verdict": "ok",
    "note": "sec^2x=1 -> cos^2x=1 -> cos x=+-1 -> x=0,pi on [0,2pi); standard. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "8c9ea024a69d2572": {
+   "verdict": "ok",
+   "note": "CT fs-id1653006, model answer = solution fs-id2505500 verbatim; checks are its three sentences"
   },
   "8c9faf6d870ae85c": {
    "verdict": "ok"
@@ -61817,6 +62274,14 @@
   "8d09214320f85c50": {
    "verdict": "ok",
    "note": "glossary fs-id2265793 meaning; body term-00003 prints key; accept fontanel grader-checked",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "8d0a2d66b7ae973f": {
+   "verdict": "ok",
+   "note": "cloze § Blood Supply '…creating the respiratory membrane'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -62613,6 +63078,14 @@
   "8f07106e18a3403d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "8f08c420e9f76bbd": {
+   "verdict": "ok",
+   "note": "cloze § Blood Supply 'This blood supply contains deoxygenated blood…' (referent added)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -64680,6 +65153,14 @@
     "result": "agrees"
    }
   },
+  "93c9f9239b1e7cdc": {
+   "verdict": "ok",
+   "note": "cloze BPG — fs-id1747572; accept 2,3-bisphosphoglycerate from 22.5 fs-id2754129",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "93cd6227a1b67d29": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -66322,6 +66803,14 @@
    "verdict": "ok",
    "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Test the equation $r=2\\theta$ for symmetry. Which symmetries) | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "97842e51354e471d": {
+   "verdict": "ok",
+   "note": "author MC from fs-id2075909 'alveolar air contains a greater amount of carbon dioxide and less oxygen than atmospheric air'; distractors the other three pairings",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "978880be316c2283": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -66763,6 +67252,14 @@
     "result": "agrees"
    }
   },
+  "98aec72526907243": {
+   "verdict": "ok",
+   "note": "re-read against m46549 CNXML and the page: pulmonary irritant reflexes",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "98b08f310d433d54": {
    "verdict": "ok",
    "note": "KC 4 20.1 § Shared Structures, m46597",
@@ -66965,6 +67462,14 @@
   "991c74e8444c66ef": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "99200bc19ccc135b": {
+   "verdict": "ok",
+   "note": "fs-id1491615 key C 'alveoli'; alveoli are respiratory-zone structures; pharynx, nasal cavity, bronchi are conducting zone",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -67976,6 +68481,14 @@
    "verdict": "ok",
    "note": "Matrix [[3,2,0|3],[-1,-9,4|-1],[8,5,7|8]]; row 3 read directly as coefficients/constant of equation 3: 8x+5y+7z=8 -> [8,5,7,8]. Matches CNXML fs-id1165137592598's derived system exactly. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "9b932f2da5450228": {
+   "verdict": "ok",
+   "note": "re-read against m46549 CNXML and the page: dorsal respiratory group",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9bb0abc9090d8381": {
    "verdict": "ok",
    "note": "Selfcheck matches CNXML Critical Thinking exercise fs-idm95190000; model answer is the source solution verbatim, checks decompose its four clauses with no new claim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -68599,6 +69112,14 @@
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "9d14f7ad56b91009": {
+   "verdict": "ok",
+   "note": "cloze of body fs-id2344495 'This creates a pressure gradient that causes oxygen to dissociate from hemoglobin, diffuse out of the blood, cross the interstitial space, and enter the tissue'; accept detach (fig 2320 label 'Detached from hemoglobin'); replaces the burgundy colour cloze per checker",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -71540,6 +72061,14 @@
    "verdict": "ok",
    "note": "Try It 2: B=[[4,1],[3,2]]; -2B computed in Node, row 2 = -2(3),-2(2) = -6,-4. Matches CNXML ti_09_05_02. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "a393c8c07239312a": {
+   "verdict": "ok",
+   "note": "re-read after checker fixes against m46549 CNXML and the page: increase in",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a39cb01addea709b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -71739,6 +72268,14 @@
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "a40c5bbd5418b092": {
+   "verdict": "ok",
+   "note": "author MC § Blood Supply 'One arteriole and an accompanying venule supply and drain one pulmonary lobule'; distractors lobe/segment/alveolus not supportable",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -74615,6 +75152,14 @@
     "result": "agrees"
    }
   },
+  "aab727ce394d89c6": {
+   "verdict": "ok",
+   "note": "Review fs-id2180766 key D small venous reserve of oxygen, solution fs-id1984197; fs-id1747572",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "aab8b1e595859666": {
    "verdict": "ok",
    "note": "author-built from § summary: \"Some protist infections of the nervous systems are fatal if not treated, including primary amoebic meningitis , granulomatous amoebic encep…\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -75031,6 +75576,14 @@
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "abbbb9a353033466": {
+   "verdict": "ok",
+   "note": "Review fs-id2772648 key A hyperventilation, solution fs-id2766181; fs-id1720897",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -76053,6 +76606,14 @@
   "ae0606f5e3ed5ab7": {
    "verdict": "ok",
    "note": "cloze from body fs-id970485 (This system -> referent); accept waste products, grader-checked",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "ae08f43714266a8c": {
+   "verdict": "ok",
+   "note": "Review fs-id2347595, key D 'high; low' confirmed in CNXML; body fs-id2757526 fixes it",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -77562,6 +78123,14 @@
     "result": "agrees"
    }
   },
+  "b1bc69b596ba43bc": {
+   "verdict": "ok",
+   "note": "author MC from Fetal Breathing: high blood glucose boosts; low glucose reduces, tobacco lowers",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b1c15e6b7db265c8": {
    "verdict": "ok",
    "note": "source exercise fs-id1167582522439 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -77966,6 +78535,14 @@
   "b287f86f77266f69": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "b28a7a488db88ecd": {
+   "verdict": "ok",
+   "note": "Review fs-id2614454 key B fissure; § Gross Anatomy 'Fissures separate these lobes from each other.'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -81143,6 +81720,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "b9bee56de6fdf582": {
+   "verdict": "ok",
+   "note": "fs-id2026710 maternal blood in placenta about 35 to 50 mm Hg; distractors 20/80/100 false for it",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b9bfa07e50f8efe2": {
    "verdict": "ok",
    "note": "5-6(3x+2)=-7-18x; key p1271 #35 | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -81508,6 +82093,14 @@
   },
   "ba9f553181cb8cdc": {
    "verdict": "ok"
+  },
+  "baa5a55ea109d4b2": {
+   "verdict": "ok",
+   "note": "fs-id2486872 key D 'oral cavity'; body: 'The fauces is the opening at the connection between the oral cavity and the oropharynx'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "baab51b47cedd77d": {
    "verdict": "ok",
@@ -83289,6 +83882,14 @@
     "result": "agrees"
    }
   },
+  "be756232f5126374": {
+   "verdict": "ok",
+   "note": "re-read against m46549 CNXML and the page: Cortical areas of the brain",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "be7d08df8fd1f391": {
    "verdict": "ok",
    "note": "node: 40000/(1+0.06/4)^(4*18) = 13693.1999... -> 13693; matches CNXML Try It #9 solution. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -85051,6 +85652,10 @@
    "verdict": "ok",
    "note": "author-written from § Prokaryotic Gene Regulation (the operon-regulatory-region paragraph): promoter, operator, structural genes. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "c2ba8a206c775c52": {
+   "verdict": "ok",
+   "note": "[hash rebuilt after a parent edit; was e80ca6f2e521abf8] CT fs-id2577567, solution fs-id1761838 with F7 correction 'pulmonary capillaries' -> 'pulmonary arterioles' in model answer and checkpoint; Source note in model answer"
+  },
   "c2c22c896f333e09": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -85094,6 +85699,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "c2d5ae89dc115b96": {
+   "verdict": "ok",
+   "note": "fs-id2608612 CT, source solution fs-id1905827 verbatim as model answer"
   },
   "c2deb06c9b798ef2": {
    "verdict": "ok",
@@ -86950,6 +87559,14 @@
     "result": "agrees"
    }
   },
+  "c6f8a0a65e1aa404": {
+   "verdict": "ok",
+   "note": "Review fs-id1959452 key D erythropoietin, solution fs-id2112029; fs-id1406372",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c6fb0869fe368ca6": {
    "verdict": "ok",
    "note": "source exercise fs-idp3441920 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -88105,6 +88722,14 @@
     "result": "agrees"
    }
   },
+  "c9c8c70f5f7b7cdb": {
+   "verdict": "ok",
+   "note": "re-read against m46549 CNXML and the page: it is difficult to expand the thorax to increase the size of the lungs",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c9d0803813764319": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -89198,6 +89823,14 @@
     "result": "agrees"
    }
   },
+  "cc4bfc3e39409c93": {
+   "verdict": "ok",
+   "note": "fs-id2311072 key D 'all of the above'; C-shaped cartilage and pseudostratified ciliated lining in Trachea subsection; smooth muscle per glossary trachealis muscle",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "cc4f658a9eaad8f2": {
    "verdict": "ok",
    "note": "RQ fs-id1661528 key D '-80 mv' (set as −80 mV, one-word case fix); body fs-id1517328 relative phase during K+ outflow / hyperpolarization below −70 mV (fs-id1229076)",
@@ -89749,6 +90382,14 @@
   "cd996d5619152ea2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "cd9def01461646fb": {
+   "verdict": "ok",
+   "note": "re-read against m46549 CNXML and the page: pulmonary ventilation",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -90456,6 +91097,14 @@
   "cf45659d6641fc5f": {
    "verdict": "ok",
    "note": "Author-written sortbins from fs-id2225935: ventral identifies stimuli/significance, uses temporal lobe structures, memories; dorsal locates objects in space, enters parietal lobe, influences frontal lobe activity.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "cf45876c711e840d": {
+   "verdict": "ok",
+   "note": "re-read against m46549 CNXML and the page: 12 to 18 breaths per minute",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -91805,6 +92454,14 @@
     "result": "agrees"
    }
   },
+  "d2b8728161984240": {
+   "verdict": "ok",
+   "note": "re-read against m46549 CNXML and the page: apneustic center",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d2bc4ea390ac61f4": {
    "verdict": "ok",
    "note": "Heron a=1.6,b=2.6,c=4.1: s=4.15, Area=sqrt(4.15*2.55*1.55*0.05)=0.9056 -> 0.91 yd^2, matches source key."
@@ -91942,6 +92599,14 @@
   "d32bf3b133c1b993": {
    "verdict": "ok",
    "note": "body cloze, m46344 fs-id1902734: 'The lower portion of the skeleton is specialized for stability during walking or running.'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d32c485da29dca23": {
+   "verdict": "ok",
+   "note": "author MC from fs-id2229918 'perfusion is regulated by the diameter of the blood vessels'; distractors bronchioles, alveolar ducts (module words)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -94314,6 +94979,14 @@
    "verdict": "ok",
    "note": "Try It 13: change-of-base with n=e gives ln(8)/ln(0.5); ln(8)/ln(0.5) = -3 exactly (node), matching log_{0.5}(8)=-3 by direct check (0.5^-3=8). Matches CNXML solution. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "d857d5bb2e2a9e16": {
+   "verdict": "ok",
+   "note": "re-read against m46549 CNXML and the page: vital capacity",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d85a3dbaf3e6afa8": {
    "verdict": "ok",
    "note": "Locally authored (disclosed in footer/ledger), built strictly from the section's own intro sentence ('the first step is ingestion... followed by digestion, absorption, and elimination'). Objective group was thin. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -94735,6 +95408,14 @@
    "note": "Review Question eip-850; CNXML solution B = 'dehydration' — matches; defensible as printed against the section's own account of constipation (excess water removal). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "d992b497c50d7418": {
+   "verdict": "ok",
+   "note": "re-read against m46549 CNXML and the page: resistance",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -95460,6 +96141,10 @@
   "db33a5e0164dc293": {
    "verdict": "ok"
   },
+  "db34162b89831129": {
+   "verdict": "ok",
+   "note": "fs-id2526718 solution verbatim; matches Fetal Breathing paragraph"
+  },
   "db35be87c7a40a0e": {
    "verdict": "ok",
    "note": "glossary textin: definition id fs-idm29204080, term 'life history'; prompt names the same referent (an inherited resource-allocation pattern) as the keyed term. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -95623,6 +96308,14 @@
    "note": "author-built from § Oxygen Requirements of Microorganisms, Check Your Understanding: \"Which bacteria grow at the top of a thioglycolate tube, and which grow at the bottom of the tube?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "db9ea8ec86a1e7d2": {
+   "verdict": "ok",
+   "note": "cloze § Pleura 'The pleura (plural = pleurae) is a serous membrane that surrounds the lung', 'serous' blanked (re-blanked after checker: 'membrane' alone was correct by the Summary)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -97750,6 +98443,14 @@
     "result": "agrees"
    }
   },
+  "e0c6e746c4335737": {
+   "verdict": "ok",
+   "note": "summary cloze fs-id2143670: 'The lining of the conducting zone is composed mostly of pseudostratified ciliated columnar epithelium with goblet cells.'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e0c6eeeb38e5b354": {
    "verdict": "ok",
    "note": "glossary recall: peptide hormone (fs-idp100534976) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -98839,6 +99540,14 @@
   "e32453e5bb3f228d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "e3264289c1a2645d": {
+   "verdict": "ok",
+   "note": "RQ fs-id1525443: source key A is wrong (chloride enters RBC, fs-id2560464); page keyed C and option B replaced per Part C rulings 2580/2581",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -100500,6 +101209,14 @@
     "result": "agrees"
    }
   },
+  "e6f5a443e03b7dda": {
+   "verdict": "ok",
+   "note": "fs-id2288656 key B; Birth: surfactant critical for inflation; RDS box: insufficient surfactant prevents inflation",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e6fd2f39b59b90bc": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -101773,6 +102490,14 @@
     "result": "agrees"
    }
   },
+  "ea65c70563242588": {
+   "verdict": "ok",
+   "note": "fs-id2093382 key C; body: alveolar macrophage 'removes debris and pathogens that have reached the alveoli'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ea699ab9e5bacc94": {
    "verdict": "ok",
    "note": "MC: matches CNXML solution 'C' = 'glucose : ATP' (fs-id1786661/fs-id1281011). Independently verified: the section states glucose/glycogen is the long-term store and ATP is the immediate-work currency. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -102478,6 +103203,14 @@
    "note": "source exercise fs-idm140387168 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "ec15afbdf5214783": {
+   "verdict": "ok",
+   "note": "cloze § Blood Supply '…by way of multiple pulmonary veins, which exit the lungs through the hilum'",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -106665,6 +107398,10 @@
     "result": "agrees"
    }
   },
+  "f5afed9831661dff": {
+   "verdict": "ok",
+   "note": "CT fs-id2518753 model = source solution verbatim"
+  },
   "f5b4286e91849b99": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -107210,6 +107947,14 @@
    "note": "glossary recall: zygospore (fs-idp2640112) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "fable-blind-solver",
+    "result": "agrees"
+   }
+  },
+  "f70deab6821113dc": {
+   "verdict": "ok",
+   "note": "Review fs-id2041910, key B 'It diffuses into the alveoli.' confirmed; fs-id2650102 45 vs 40 mm Hg",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -108078,6 +108823,10 @@
    "verdict": "ok",
    "note": "Practice #17: sqrt(x^3 y^-4)=(x^3y^-4)^(1/2); power rule gives (3/2)log(x)-2log(y). Matches CNXML solution. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "f8d1a6fd7905db7c": {
+   "verdict": "ok",
+   "note": "re-read against m46549 CNXML and the page: selfcheck model = source solution"
+  },
   "f8d50bbacab0931a": {
    "verdict": "ok",
    "note": "f(x)=108-13x^9-8x^4+14x^12+2x^3: highest power present is 12 (the 14x^12 term), so at most 12 x-intercepts. Matches CNXML ti_03_03_07. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -108873,6 +109622,14 @@
   "fac52b3455e7498f": {
    "verdict": "ok",
    "note": "key-term recall: SCID; printed in § Mechanisms and Risks of Gene Therapy: \"So far, gene therapies have proven relatively ineffective, with the possible exceptions of treatments for cystic fibrosis and adenosine dea…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "fac56c6a737f4fd9": {
+   "verdict": "ok",
+   "note": "author MC from fs-id2259743: proprioceptors sense movement and stretching; replaces summary MC (checker fix 3)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"

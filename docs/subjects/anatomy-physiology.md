@@ -13,7 +13,7 @@ all three before authoring a section (chapter-run authors: the sections
 `docs/briefs/anatomy-physiology/author.md` names).
 
 Written from the **September 22, 2026 scan** of the pinned source; chapter
-1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, chapter 5 on October 14, 2026, chapter 6 on October 15, 2026, chapters 7, 8, and 9 on October 16, 2026, chapters 10 and 11 on October 18, 2026, chapter 12 on October 20, 2026, chapters 13, 14, and 15 on October 21, 2026, and chapters 16 and 17 on October 24, 2026, chapter 18 on October 25, 2026, and chapter 19 the same day, and chapters 20 and 21 on October 26, 2026.
+1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, chapter 5 on October 14, 2026, chapter 6 on October 15, 2026, chapters 7, 8, and 9 on October 16, 2026, chapters 10 and 11 on October 18, 2026, chapter 12 on October 20, 2026, chapters 13, 14, and 15 on October 21, 2026, and chapters 16 and 17 on October 24, 2026, chapter 18 on October 25, 2026, and chapter 19 the same day, and chapters 20 and 21 on October 26, 2026, and chapter 22 (Unit 5's first) on October 27, 2026.
 A rule tagged *(pilot)* or *(chapter N)* came from authoring that chapter;
 the per-chapter record is `docs/history/anatomy-physiology.md`. A
 correction that is not folded back into a rule will be made again.
@@ -450,6 +450,21 @@ Lessons — baseline rules this book's vocabulary makes easy to break:
   environmental bacteria"): the hint points at the nearest module sentence,
   the solver may flag it "not answerable from the page", and the errata
   file carries a Reviewed-not-errata line saying so *(chapter 21)*.
+- **A Source note on a corrected `selfcheck` sits AFTER the closing tag**,
+  never inside the model answer: the keys gate reads the model answer's
+  words against the source solution, and a note inside it scored 22.4's
+  answer "49% from the source" and failed the gate *(chapter 22)*.
+- **A re-key Source note names the source's option by position** ("the
+  source keys the first option"), never by its text: the note sits under
+  the item, and 22.1's printed "alveoli", the key of the item two below
+  it *(chapter 22)*.
+- **The blind solve can overturn a parent key ruling as the claim pass
+  can**: 22.1's "most distal component of the bronchial tree" stood on
+  Part C and fell to the solver's reading of the module's own glossary
+  (erratum 2584) *(chapter 22)*.
+- **An equation inside `alt` or `longdesc` takes Unicode subscripts**
+  (`P₁V₁ = P₂V₂`): the ASCII-formula lint rejects "P1V1" there, and math
+  is never in an attribute *(chapter 22)*.
 
 The three readings and the blind solve run as
 `docs/briefs/anatomy-physiology/run.md` describes.
@@ -494,7 +509,7 @@ sections, weight 20; chapters 18 and 19 shifted 20→21 and 21→22. The run is
 recorded in `docs/history/anatomy-physiology.md`.
 
 Unit 4 landed October 27, 2026: `knowledge-check-18-21.md`, 72 items over 24
-sections, weight 25; no chapter shifted (chapter 22 is not yet authored). The
+sections, weight 25; no chapter shifted (chapter 22, authored the same day, takes weight 26). The
 run is recorded in `docs/history/anatomy-physiology.md`.
 
 A chapter authored before the previous unit's check exists takes the next

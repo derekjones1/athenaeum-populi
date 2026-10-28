@@ -284,7 +284,7 @@ the whole file to find the three entries that quote chapter 16 sentences
 until the claim pass has read the module: chapter 16's parent ruled 16.5's
 "processing visual information" key sound, and the claim pass found the
 module's own sentence attributing visual processing to the cerebrocerebellum,
-so the keyed option was changed (kind `key`, erratum 2316) *(chapter 16)*.
+so the keyed option was changed (kind `key`, erratum 2316) *(chapter 16)*. The same holds for the blind solve: 22.1's bronchial-tree key stood on Part C and was overturned by the solver's reading of the glossary *(chapter 22)*.
 
 After the last author reports, run `node tools/source/openstax-source.mjs
 build-map` at once: `verify:source-coverage` and `verify:source-keys`

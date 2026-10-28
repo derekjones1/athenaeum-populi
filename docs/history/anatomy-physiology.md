@@ -1704,6 +1704,60 @@ the keys gate baseline and the coverage floor. Authors ran 184–300k
 tokens, checkers 111–221k, the claim pass 219k, the verifier 257k, the
 solver 160k, and the Clerks 46–289k.
 
+## Chapter 22 (October 27, 2026)
+
+*The Respiratory System*, the first chapter of Unit 5, *Energy, Maintenance,
+and Environmental Exchange*: seven sections (m46548, m46551, m46549, m46521,
+m46545, m46524, m46518; intro m46523), run the day after chapters 20 and 21
+from `docs/briefs/anatomy-physiology/run.md`, with seven Opus authors
+launched together, seven Opus checkers, one Opus claim pass, one Opus
+alt-errata verifier, a fresh Fable blind solver, and Sonnet Clerks for the
+landing page, run facts, pins, errata draft, and this entry. It has 31
+vendored images (2300–2330). The pages carry 86 graded items solved blind. Errata 2579–2624. The run is
+committed at close-out (Derek: commit after every run).
+
+Six keys and options were ruled across the run, their numbers reserved as
+each arose. 22.2's pulmonary-circuit item was keyed "pulmonary" against the
+source's "respiratory" (2579; the solver flagged it, and the key stands).
+22.5's chloride-shift item was re-keyed (2580) and its option B replaced
+(2581), one deviation entry naming both. 22.4's ventilation-perfusion item was
+re-keyed to "The pulmonary arterioles constrict." (2582) with option D
+replaced (2583), again one entry. The blind solve overturned a parent key
+ruling: 22.1's bronchial-tree item, which the parent's Part C ruling had
+left keyed "alveoli", was re-keyed "respiratory bronchioles" on the module's
+own glossary and body (2584); the solver's answer then agreed with the new
+key. Part C was wrong in four small places that the authors caught: the
+epiglottis is among 2307's labels, 2311 is a drawing, an alt cannot spell
+P1V1 in ASCII (the lint wants P₁V₁), and the catalyst label CA sits over the
+reaction arrow, not under it.
+
+The solve answered 86 graded items, 85 agreed, one flag was adjudicated (the
+22.2 key stands), and one disagreement overturned the 22.1 ruling above. The
+claim pass found 10 findings over about 320 claims, 9 applied and 1 kept as
+printed: the alveolar duct leads from the respiratory bronchiole, and the
+respiratory zone begins beyond the terminal bronchioles (22.1 F1, F2); the
+vomer is one bone (F3); the palatine tonsils lie in the lateral oropharynx
+(F4); the glottis excludes the vestibular folds (F5); a 22.3 passage that
+called negative feedback positive (F6); the 22.4 summary and critical-thinking
+answer put the constriction in the pulmonary arterioles (F7); 22.5's
+"20-fold" affinity, against a figure showing P50 19 and 26.8 (F8); and the
+respiratory distress syndrome box's pH, which is low (22.7 F9). F10, the
+respiratory bronchioles at week 16 against week 19 in 22.7, stands as printed
+with a footer clause. The week-36 and week-28 sentences were ruled different
+claims and go to Reviewed-not-errata.
+
+Lessons. The grader folds a hyphen to a space only, so a hyphenated respelling
+of a closed compound ("fore-gut") must be listed in accept; the life-sciences
+playbook's semi-conservative example was corrected. Figure-label claims in
+Part C are the author's to confirm. An alt spells a formula with Unicode
+subscripts. A catalyst label's position is read from the MathML. A blind
+solver reading a masked page sees the Source note under a re-keyed multiple
+choice print the key, as the 19.2 and 21.2 precedents do (open for Derek:
+move re-key disclosures to the footer). A parent key ruling can be overturned
+by the blind solve and not only by the claim pass. Two-ruling items are now
+routine. A table-recall distractor copied from another row can be a second
+true option when the body states the same function for both components.
+
 ## Chapter 21 (October 26, 2026)
 
 *The Lymphatic and Immune System*, the fourth and last chapter of Unit 4,

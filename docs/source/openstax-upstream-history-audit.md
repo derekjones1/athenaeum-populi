@@ -16,10 +16,10 @@
 
 ## Coverage
 
-- Mapped local sections: 732
-- Sections changed upstream: 45
+- Mapped local sections: 739
+- Sections changed upstream: 46
 - Content-level changes: 36
-- Markup/metadata-only changes: 9
+- Markup/metadata-only changes: 10
 - Changed Try It records: 3
 - Changed Try Its where local math matches the PDF-era form: 0
 - Local-impact drift decisions recorded: 4
@@ -32,7 +32,7 @@
 - precalculus (`college-algebra-bundle`): `d1bd19c69107ba7f45775670809ae161d63db864`
 - biology (`biology-bundle`): `5c58838d2594bc5817127fdc47e127c30b44f2c2`
 - microbiology (`microbiology`): `633850257fbd3ccf6187b9428c55e80b69236382`
-- anatomy-physiology (`anatomy-physiology`): `716383a4c6c16037b14d75a156c65145e75e895e` — in-progress, 123 sections mapped
+- anatomy-physiology (`anatomy-physiology`): `716383a4c6c16037b14d75a156c65145e75e895e` — in-progress, 130 sections mapped
 
 ## Changed mapped sections
 
@@ -59,6 +59,11 @@ Module `m46495`; content-changed. Changed lanes: instructionalText.
 ### anatomy-physiology 14.3 — [content/life-health-sciences/anatomy-physiology/14-the-somatic-nervous-system/03-motor-responses.md](../../content/life-health-sciences/anatomy-physiology/14-the-somatic-nervous-system/03-motor-responses.md)
 
 Module `m46574`; content-changed. Changed lanes: instructionalText.
+
+
+### anatomy-physiology 22.1 — [content/life-health-sciences/anatomy-physiology/22-the-respiratory-system/01-organs-and-structures-of-the-respiratory-system.md](../../content/life-health-sciences/anatomy-physiology/22-the-respiratory-system/01-organs-and-structures-of-the-respiratory-system.md)
+
+Module `m46548`; markup-or-metadata-only. Changed lanes: raw XML only.
 
 
 ### biology 13.2 — [content/life-health-sciences/biology/13-modern-understandings-of-inheritance/02-chromosomal-basis-of-inherited-disorders.md](../../content/life-health-sciences/biology/13-modern-understandings-of-inheritance/02-chromosomal-basis-of-inherited-disorders.md)

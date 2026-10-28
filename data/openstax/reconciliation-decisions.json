@@ -4992,6 +4992,195 @@
       "status": "correct-local-source-defect",
       "errataEntry": 2578,
       "rationale": "The glossary defines the spleen as filtering pathogens from the blood (white pulp) and removing degenerating or damaged blood cells (red pulp) (fs-id1335889), but the module's own body paragraph (fs-id2396897) gives blood filtration to the red pulp and says the white pulp is where adaptive T and B cell responses are mounted, so the glossary swaps the two functions. The page's Key-terms bullet is reworded to \"secondary lymphoid organ whose red pulp filters the blood and removes degenerating or damaged blood cells and whose white pulp mounts adaptive T and B cell responses\", and the footer's Changes sentence discloses it (the spleen key term is reworded to match the module's body paragraph). Found by the Unit 4 Knowledge Check run, October 27, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/22-the-respiratory-system/02-the-lungs.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46551",
+      "sourceElementIds": [
+        "fs-id2321808",
+        "fs-id1372139",
+        "fs-id2413018",
+        "fs-id2417327"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2579,
+      "rationale": "The keyed source option c \"respiratory\" names a circulation no sentence of m46551 mentions; the Blood Supply subsection says gas exchange \"requires blood from the pulmonary circulation\" (fs-id2144132) and the Summary says \"The function of the pulmonary circulation is to aid in gas exchange\" (fs-id2638784), so option a \"pulmonary\" is the supported answer. The page keys the item to A with the options and their order unchanged, a visible Source note under the item, and a footer sentence; the keys gate's disclosed-deviation list records it as kind key. Found by the 22.2 author, flagged by the blind solver, and ruled by the orchestrator, October 27, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/22-the-respiratory-system/05-transport-of-gases.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46545",
+      "sourceElementIds": [
+        "fs-id1525443",
+        "fs-id2716461",
+        "fs-id2797196",
+        "fs-id2292718"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2580,
+      "rationale": "The keyed source option a \"Chloride is removed from the erythrocyte.\" reverses the chloride shift: m46545 says some bicarbonate \"will leave the erythrocytes … into the plasma in exchange for chloride (Cl–) ions\" (fs-id2560464), so chloride enters the erythrocyte and bicarbonate leaves it. The page keys the item to C \"Bicarbonate is removed from the erythrocyte.\" with the other options and their order unchanged except the second option (erratum 2581), a visible Source note under the item, and a footer sentence; the keys gate's disclosed-deviation list records both corrections in one entry of kind key. Found by the 22.5 author and confirmed by the 22.5 checker, October 27, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/22-the-respiratory-system/05-transport-of-gases.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46545",
+      "sourceElementIds": [
+        "fs-id1525443",
+        "fs-id2716461",
+        "fs-id2797196",
+        "fs-id2292718"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2581,
+      "rationale": "The source distractor b \"Chloride is exchanged for bicarbonate.\" is also a correct answer to \"Which of the following occurs during the chloride shift?\": m46545 defines the shift as bicarbonate leaving the erythrocytes \"in exchange for chloride (Cl–) ions\" (fs-id2560464) and the Summary repeats it (fs-id2124460). The page prints \"The electrical charge of the erythrocyte is altered.\" in its place (fs-id2560464: \"neither the electrical charge of the erythrocytes nor that of the blood is altered\"), with key C (erratum 2580), the other options and their order unchanged, a visible Source note under the item, and a footer sentence; the keys gate's disclosed-deviation list records it in the one entry of kind key shared with erratum 2580. Found by the 22.5 author and confirmed by the 22.5 checker, October 27, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/22-the-respiratory-system/04-gas-exchange.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46521",
+      "sourceElementIds": [
+        "fs-id2228521",
+        "fs-id2527379",
+        "fs-id2351604",
+        "fs-id2015439"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2582,
+      "rationale": "The keyed source option a \"The capillary constricts.\" is physiologically wrong and contradicts the module: m46521 redirects blood flow \"by constricting the pulmonary arterioles that serves the dysfunctional alveolus\" (fs-id2584577), and m46551 (fs-id2144132) says the pulmonary capillaries \"lack smooth muscle fibers\". The page keys the item to A with the text reworded to \"The pulmonary arterioles constrict.\", a visible Source note under the item, and a footer sentence; the keys gate's disclosed-deviation list records it in one entry of kind key shared with erratum 2583. Evidenced by the chapter 22 prose claim pass (F7) and ruled by the orchestrator, October 27, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/22-the-respiratory-system/04-gas-exchange.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46521",
+      "sourceElementIds": [
+        "fs-id2228521",
+        "fs-id2527379",
+        "fs-id2351604",
+        "fs-id2015439"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2583,
+      "rationale": "The source distractor d \"The bronchioles dilate.\" is also a correct answer to \"When ventilation is not sufficient, which of the following occurs?\": m46521 says \"A greater partial pressure of carbon dioxide in the alveoli causes the bronchioles to increase their diameter, as does a decreased level of oxygen in the blood supply\" (fs-id2229918), and both change in an underventilated alveolus. The page prints \"Blood flow to the affected alveolus increases.\" in its place (fs-id2584577: the body redirects blood flow to other alveoli), with key A (erratum 2582), the other options and their order unchanged, a visible Source note under the item, and a footer sentence; the keys gate's disclosed-deviation list records it in the one entry of kind key shared with erratum 2582. Found by the chapter 22 prose claim pass and ruled by the orchestrator, October 27, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/22-the-respiratory-system/01-organs-and-structures-of-the-respiratory-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46548",
+      "sourceElementIds": [
+        "fs-id2024583",
+        "fs-id2121855",
+        "fs-id2121856",
+        "fs-id2521607"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2584,
+      "rationale": "The keyed source option a \"alveoli\" is not a component of the bronchial tree as m46548 defines it: the glossary calls the bronchial tree the \"collective name for the multiple branches of the bronchi and bronchioles of the respiratory system\" (fs-id2024122), and the Respiratory Zone paragraph (fs-id2757673) calls the respiratory bronchiole \"the smallest type of bronchiole\" that \"leads to an alveolar duct, opening into a cluster of alveoli\", so the most distal component is the respiratory bronchiole (option d). The page keys the item to D with the options and their order unchanged and a visible Source note under the item; the keys gate's disclosed-deviation list records it as kind key. Found by the blind solver, which disagreed with the source key, and ruled by the orchestrator, October 27, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/22-the-respiratory-system/01-organs-and-structures-of-the-respiratory-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46548",
+      "sourceElementIds": [
+        "fs-id2112503"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2585,
+      "rationale": "The nasal-septum paragraph says the septum is formed in part by \"the thin vomer bones (whose name refers to its plough shape)\", but the vomer is a single, unpaired bone: m46355 (§7.2, fs-id1254996) says \"The unpaired vomer bone, often referred to simply as the vomer\" and lists it among the unpaired bones, and the sentence's own \"its\" is singular. The page prints \"the thin vomer bone\"; the footer names the one-word correction. Evidenced by the chapter 22 prose claim pass (F3), October 27, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/22-the-respiratory-system/01-organs-and-structures-of-the-respiratory-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46548",
+      "sourceElementIds": [
+        "fs-id2637383"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2586,
+      "rationale": "The paragraph says \"The glottis is composed of the vestibular folds, the true vocal cords, and the space between these folds\", but the module's own glossary defines the glottis as the \"opening between the vocal folds through which air passes when producing speech\" (fs-id2414488), which excludes the vestibular folds (false vocal cords), and anatomical usage places the glottis below them (Moore, Dalley and Agur, Clinically Oriented Anatomy, 7th ed.; Standring, Gray's Anatomy, 41st ed., as cited by Kenhub). The page reads \"The glottis is composed of the true vocal cords and the space between them\" with a visible Source note and a footer sentence. Evidenced by the chapter 22 prose claim pass (F5), October 27, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/22-the-respiratory-system/01-organs-and-structures-of-the-respiratory-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46548",
+      "sourceElementIds": [
+        "fs-id1483894"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2587,
+      "rationale": "The Summary names the terminal bronchioles as a gas-exchange structure of the respiratory zone, but they are the last conducting-zone airways: the Respiratory Zone paragraph (fs-id2757673) says the zone \"begins where the terminal bronchioles join a respiratory bronchiole\", and the Critical Thinking model answer (fs-id1416942) lists \"the respiratory bronchioles, alveolar ducts, and alveoli\". The page reads \"the respiratory bronchioles, alveolar ducts, and alveoli\" with a visible Source note and a footer sentence. Evidenced by the chapter 22 prose claim pass (F2), October 27, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/22-the-respiratory-system/01-organs-and-structures-of-the-respiratory-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46548",
+      "sourceElementIds": [
+        "fs-id2344734",
+        "fs-id1405455"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2588,
+      "rationale": "The glossary says the alveolar duct \"leads from the terminal bronchiole to the respiratory bronchiole\", but the Respiratory Zone paragraph (fs-id2757673) runs the other way: terminal bronchioles join a respiratory bronchiole, \"which then leads to an alveolar duct, opening into a cluster of alveoli\". The page's Key terms bullet reads \"small tube that leads from the respiratory bronchiole to the alveoli and is the point of attachment for alveoli\" with a visible Source note and a footer sentence. Evidenced by the chapter 22 prose claim pass (F1), October 27, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/22-the-respiratory-system/01-organs-and-structures-of-the-respiratory-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46548",
+      "sourceElementIds": [
+        "fs-id2715234",
+        "fs-id2260845"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2589,
+      "rationale": "The glossary places the palatine tonsil \"anterior to the uvula at the roof of isthmus of the fauces\", but the module's own body (fs-id2641568) says \"A palatine tonsil is one of a pair of structures located laterally in the oropharynx in the area of the fauces\", and m46511 (§23.3, fs-id1885003) and m46563 (§21.1, fig-ch22_01_09 caption) put the tonsils between the arches and on each side of the pharynx. The page's Key terms bullet uses the body's wording, with a visible Source note and a footer sentence. Evidenced by the chapter 22 prose claim pass (F4), October 27, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/22-the-respiratory-system/03-the-process-of-breathing.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46549",
+      "sourceElementIds": [
+        "fs-id2129358"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2599,
+      "rationale": "The paragraph calls the chemical control of ventilation a \"dose-response, positive-feedback relationship\", but the module itself describes the response removing its own stimulus: increased rate and depth of respiration expel carbon dioxide and so reduce hydrogen ions (fs-id2010068, fs-id1482542), and m45989 (§1.5, fs-id2632773) defines negative feedback as stabilizing an upset \"typically as the stimulus is removed\" while positive feedback \"intensifies a change\". The page reads \"negative-feedback\" with a visible Source note and a footer sentence. Evidenced by the chapter 22 prose claim pass (F6), October 27, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/22-the-respiratory-system/04-gas-exchange.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46521",
+      "sourceElementIds": [
+        "fs-id2175982",
+        "fs-id2105107",
+        "fs-id1761838"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2607,
+      "rationale": "The Summary (\"the capillary is constricted\", fs-id2175982) and the second Critical Thinking answer (\"the pulmonary capillaries serving these alveoli will constrict\", fs-id1761838) say a capillary constricts, but m46521 redirects blood flow \"by constricting the pulmonary arterioles that serves the dysfunctional alveolus\" (fs-id2584577) and m46551 (fs-id2144132) says the pulmonary capillaries \"lack smooth muscle fibers\". The page reads \"the pulmonary arterioles serving it constrict\" in the Summary and \"the pulmonary arterioles serving these alveoli will constrict\" in the model answer and its rubric checkpoint, each with a visible Source note and a footer sentence. Evidenced by the chapter 22 prose claim pass (F7), October 27, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/22-the-respiratory-system/05-transport-of-gases.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46545",
+      "sourceElementIds": [
+        "fs-id2570954",
+        "fs-id2203600",
+        "fs-id2254257"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2609,
+      "rationale": "The Critical Thinking model answer says fetal hemoglobin has \"about a 20-fold greater affinity for oxygen than does adult hemoglobin\", but the module states no fold value (its body says only \"a greater affinity\") and its fetal and adult dissociation graph (media fs-id2728343) marks half-saturation at a partial pressure of 19 for fetal against 26.8 for adult hemoglobin, a modest shift. The page reads \"fetal hemoglobin has a greater affinity for oxygen than does adult hemoglobin (it is half-saturated at a lower partial pressure of oxygen)\", its rubric checkpoint no longer asks for a fold value, and a visible Source note and a footer sentence say so. Evidenced by the chapter 22 prose claim pass (F8) and confirmed by the orchestrator against the figure, October 27, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/22-the-respiratory-system/07-embryonic-development-of-the-respiratory-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46518",
+      "sourceElementIds": [
+        "fs-id2518752"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2620,
+      "rationale": "The Respiratory Distress Syndrome box says blood \"carbon dioxide levels and pH are high\", but retained carbon dioxide lowers pH: m46549 (§22.3, fs-id2010068) says \"increased carbon dioxide levels lead to increased levels of hydrogen ions, decreasing pH\", and m46413 (§26.5, fs-id1971541) defines respiratory acidosis as blood \"overly acidic due to an excess of carbonic acid, resulting from too much CO2 in the blood\". The page says blood pH is low, with a visible Source note and a footer sentence. Evidenced by the chapter 22 prose claim pass (F9), October 27, 2026."
     }
   ]
 }

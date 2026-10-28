@@ -181,8 +181,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 28,
       "upstreamSections": 169,
-      "localChapters": 21,
-      "mappedSections": 123,
+      "localChapters": 22,
+      "mappedSections": 130,
       "units": [
         {
           "index": 1,
@@ -1358,6 +1358,69 @@
       "moduleId": "m46583",
       "sourceTitle": "Transplantation and Cancer Immunology",
       "moduleSha256": "4366725d96e8e81acf3d681d8cfa113f414aa6de2c53020e62b74366533b9b47"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/22-the-respiratory-system/01-organs-and-structures-of-the-respiratory-system.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "22.1",
+      "moduleId": "m46548",
+      "sourceTitle": "Organs and Structures of the Respiratory System",
+      "moduleSha256": "46ad1ccf7acd0596fb478aa64afbee76d388b7571af90e5e0f287183b262583a"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/22-the-respiratory-system/02-the-lungs.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "22.2",
+      "moduleId": "m46551",
+      "sourceTitle": "The Lungs",
+      "moduleSha256": "1ecc7ce8bf6d505689a5e157ef266792bf94933a41bf3001d1efe52e21c406e8"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/22-the-respiratory-system/03-the-process-of-breathing.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "22.3",
+      "moduleId": "m46549",
+      "sourceTitle": "The Process of Breathing",
+      "moduleSha256": "af883d7ab8fc8569e83f9e6fea4bd4357f21caad5802d8dc69a287c82c9107cf"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/22-the-respiratory-system/04-gas-exchange.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "22.4",
+      "moduleId": "m46521",
+      "sourceTitle": "Gas Exchange",
+      "moduleSha256": "3fdbdd2664d53120d1faedca06662210cde333c32da9d064d8a3fe8f5184011f"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/22-the-respiratory-system/05-transport-of-gases.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "22.5",
+      "moduleId": "m46545",
+      "sourceTitle": "Transport of Gases",
+      "moduleSha256": "6712b57e8d206c26b57bf2dad8421a2fb354d43fcc271337f23515e4db4dc6b1"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/22-the-respiratory-system/06-modifications-in-respiratory-functions.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "22.6",
+      "moduleId": "m46524",
+      "sourceTitle": "Modifications in Respiratory Functions",
+      "moduleSha256": "a951010271621825997b29df3eb5c3653136e37515d2c4750cab3e0f4cfad1d1"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/22-the-respiratory-system/07-embryonic-development-of-the-respiratory-system.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "22.7",
+      "moduleId": "m46518",
+      "sourceTitle": "Embryonic Development of the Respiratory System",
+      "moduleSha256": "652030e8918f05ae9563d60e1c2b043f1195a367a41e431edb71167e3ad1baa6"
     },
     {
       "localPath": "content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md",
