@@ -3525,6 +3525,14 @@
     "result": "agrees"
    }
   },
+  "077d4cb466fa26c1": {
+   "verdict": "ok",
+   "note": "KC 4 20.4 § Chemoreceptor Reflexes, m46603",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "07829bc8f7d19967": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
@@ -4687,6 +4695,14 @@
   "0a1f31deffc7d644": {
    "verdict": "ok",
    "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "0a1f80c5f23a372e": {
+   "verdict": "ok",
+   "note": "KC 4 21.4 § Four-chain Models of Antibody Structures, m46558",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "0a26ed99ca33e003": {
    "verdict": "ok",
@@ -8227,6 +8243,14 @@
    "verdict": "ok",
    "note": "body CYU, Electron Microscopy subsection, bullet 1; model answer from §Electron Microscopy paras 1-2 | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "1229e7dc4c161ea6": {
+   "verdict": "ok",
+   "note": "KC 4 18.3 § Hemoglobin, m46707",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "122e6b5e11b561a4": {
    "verdict": "ok",
    "note": "cloze from fs-id2406221: 'the CHP has dwindled to about 18 mm Hg due to loss of fluid' key loss of fluid; accept fluid loss|filtration|loss of water|water loss (checker round)",
@@ -8725,6 +8749,14 @@
   },
   "13535116fecd37f4": {
    "verdict": "ok"
+  },
+  "135398c85ff52417": {
+   "verdict": "ok",
+   "note": "KC 4 20.1 § Venules, m46597",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "135471d3f7292b7f": {
    "verdict": "ok",
@@ -9353,6 +9385,14 @@
    "verdict": "ok",
    "note": "Solved y=(3x+4)/(5-4x) for x by cross-multiplying and collecting x terms: x(3+4y)=5y-4 => x=(5y-4)/(4y+3), so f^{-1}(x)=(5x-4)/(4x+3). Verified by node composition f(f^{-1}(x))=x for x=0,1,2,-3,7.5 (exact match). Matches CNXML exercise fs-id1165135333251 (source #27), which has a solution. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "1473ab4c2b8b8e1d": {
+   "verdict": "ok",
+   "note": "KC 4 19.4 § Factors Decreasing Heart Rate, m46672",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "147c19fe7acd89f0": {
    "verdict": "ok",
    "note": "KC 4 16.1 § Patterns of Incidence (fs-id1167660340074), m58871"
@@ -9673,6 +9713,10 @@
   "1533e372b2606767": {
    "verdict": "ok",
    "note": "g(x)={sqrt(x),0<=x<4; 2x,x>=4}. left-limit at 4 = sqrt(4)=2; right-limit = 2*4=8. Both exist, unequal -> jump discontinuity. Matches source Try It 1(b) solution."
+  },
+  "15350c8515bee4c9": {
+   "verdict": "ok",
+   "note": "KC 4 20.2 § Pressure Relationships in the Venous System, m46635"
   },
   "15355a0e05318f75": {
    "verdict": "ok",
@@ -11310,6 +11354,14 @@
     "result": "agrees"
    }
   },
+  "189bf910cd85fc90": {
+   "verdict": "ok",
+   "note": "KC 4 20.5 § Arteries Serving the Lower Limbs, m46646",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "189d5d968eb15c56": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -11598,6 +11650,10 @@
     "result": "agrees"
    }
   },
+  "1933654a4bbcf84c": {
+   "verdict": "ok",
+   "note": "KC 4 21.7 § module introduction (untitled, before The Rh Factor), m46583"
+  },
   "193a65e3627d3812": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -11704,6 +11760,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "196afc14043e01ae": {
+   "verdict": "ok",
+   "note": "KC 4 18.2 § Bone Marrow Sampling and Transplants, m46691",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -11978,6 +12042,14 @@
   "1a1f5c5c8c2b2fc6": {
    "verdict": "ok",
    "note": "KC 6 30.1 § body Plant Tissues (fs-idp2060048), m66596 — parent re-read against the module"
+  },
+  "1a24fdab2148a985": {
+   "verdict": "ok",
+   "note": "KC 4 20.3 § opening paragraph, m46586",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "1a28cdfd520ecec5": {
    "verdict": "ok",
@@ -12668,6 +12740,10 @@
    "verdict": "ok",
    "note": "fs-idp49863504, source solution used as model answer with ONE numeric correction: the source solution says the virus takes 'a week' to reach the central nervous system, but the section's own body paragraph (para fs-idp39661408) says the bite-to-CNS progression 'may be two weeks or longer.' This is an internal contradiction within module m66537 between the body text and the critical-thinking solution (fs-idp21542736 says 'a week'). Corrected the model answer to 'two weeks or longer,' matching the body text, per the rule that a source solution the section's own text contradicts is corrected on the page and logged as a defect. Verdict is ok (not defect) because the corrected answer, not a known-wrong one, ships. Flagged for the errata file: module m66537, elements fs-idp39661408 (body, 'two weeks or longer') vs fs-idp21542736 (CT solution, 'a week'). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "1b7e6caa0332025a": {
+   "verdict": "ok",
+   "note": "KC 4 20.1 § Metarterioles and Capillary Beds, m46597"
+  },
   "1b7eebd8d66f59a4": {
    "verdict": "ok",
    "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L429 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
@@ -13204,6 +13280,14 @@
   "1ca53f54ad697a0d": {
    "verdict": "ok",
    "note": "author-written from § Isolation of Viruses only ('viruses require a living host cell for replication'); the module never mentions computer viruses, so the model answer states only the module's host-dependency fact and stops, per the no-speculation rule. Source (CNXML fs-id1168328287012) prints no answer key."
+  },
+  "1cabe50f61b72e3e": {
+   "verdict": "ok",
+   "note": "KC 4 21.6 § Human Immunodeficiency Virus/AIDS, m46566",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "1cac47274a00778f": {
    "verdict": "ok",
@@ -14293,6 +14377,10 @@
   "1f0961394a84c136": {
    "verdict": "ok",
    "note": "Local selfcheck (no source exercise); model answer paraphrases the module's own soil-ecosystem-services paragraph (fs-idp102268992) with no new claim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "1f1039d7d2dbb50d": {
+   "verdict": "ok",
+   "note": "KC 4 19.3 § Pressures and Flow, m46661"
   },
   "1f119bd5943126fb": {
    "verdict": "ok",
@@ -15966,6 +16054,14 @@
   "22d9bb115a33dc0e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "22ebc5179518a31e": {
+   "verdict": "ok",
+   "note": "KC 4 18.4 § Agranular Leukocytes, m46701",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -19313,6 +19409,14 @@
     "result": "agrees"
    }
   },
+  "2aa56fb8b27927c4": {
+   "verdict": "ok",
+   "note": "KC 4 19.4 § Heart Rates, m46672",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2aa9725036663a7a": {
    "verdict": "ok",
    "note": "glossary recall: haustoria (fs-idp6712128) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -20012,6 +20116,14 @@
   "2c38b816fa174827": {
    "verdict": "ok",
    "note": "KC 8 45.2 § body Early versus Late Reproduction (fs-idp89798640), m66688 — parent re-read against the module"
+  },
+  "2c3b73e4ef03c647": {
+   "verdict": "ok",
+   "note": "KC 4 21.3 § T Cell Development and Differentiation, m46560",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "2c3babe4b5f0524d": {
    "verdict": "ok",
@@ -21170,6 +21282,14 @@
   "2ebdb551135f36a7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "2ebe8d0e119ea3e6": {
+   "verdict": "ok",
+   "note": "KC 4 18.3 § Shape and Structure of Erythrocytes, m46707",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -22633,6 +22753,14 @@
     "result": "agrees"
    }
   },
+  "3232f9c8f1890ad0": {
+   "verdict": "ok",
+   "note": "KC 4 21.7 § Immune Responses Against Cancer, m46583",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "32355694ba37f044": {
    "verdict": "ok",
    "solved": {
@@ -23641,6 +23769,14 @@
   "34ac593dc37b777e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "34ae3d8b845b9b4b": {
+   "verdict": "ok",
+   "note": "KC 4 20.3 § Osmotic Pressure, m46586",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -25334,6 +25470,14 @@
     "result": "agrees"
    }
   },
+  "38a90cbab4f9d267": {
+   "verdict": "ok",
+   "note": "KC 4 21.1 § Functions of the Lymphatic System, m46563",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "38b1d2f73317bbab": {
    "verdict": "ok",
    "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -26771,6 +26915,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "3bf003424d598b4b": {
+   "verdict": "ok",
+   "note": "KC 4 21.5 § Evasion of the Immune System by Pathogens, m46569"
   },
   "3bf03ec8993126f5": {
    "verdict": "ok",
@@ -30015,6 +30163,14 @@
    "note": "KC 2 9.2 § glossary dimer (fs-id2155001), m66379 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "4309e57293088e5a": {
+   "verdict": "ok",
+   "note": "KC 4 21.4 § T cell-dependent versus T cell-independent Antigens, m46558",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -35063,6 +35219,14 @@
   "4e9045d4c7bc61b3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "4e9526e8be64a050": {
+   "verdict": "ok",
+   "note": "KC 4 21.6 § Delayed (Type IV) Hypersensitivity, m46566",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -41252,6 +41416,14 @@
     "result": "agrees"
    }
   },
+  "5c95f0321a00235d": {
+   "verdict": "ok",
+   "note": "KC 4 18.4 § Disorders of Platelets, m46701",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5c966b5237b61cf6": {
    "verdict": "ok",
    "note": "CT2 fs-id1629815 solution fs-id2346449 verbatim"
@@ -42888,6 +43060,14 @@
     "result": "agrees"
    }
   },
+  "60be4679184420ef": {
+   "verdict": "ok",
+   "note": "KC 4 18.6 § Rh Blood Groups, m46708",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "60c2fb0f260e0b26": {
    "verdict": "ok",
    "note": "Practice #13 (CNXML fs-id1165135376335, 5x/(x^2-9), source solution 5/(2(x+3))+5/(2(x-3))). Independently solved: 5x=A(x-3)+B(x+3); x=3 gives B=5/2, x=-3 gives A=5/2; matches source. Cross-checked as exact-rational identity via node. Grader: self=correct, retype-of-printed=form. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -43460,6 +43640,10 @@
   "623f66815e3c3dda": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "6240861ec6a08b21": {
+   "verdict": "ok",
+   "note": "KC 4 19.5 § body, m46673"
   },
   "6242f669f563bea3": {
    "verdict": "ok",
@@ -46692,6 +46876,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "6ab66076a809f22b": {
+   "verdict": "ok",
+   "note": "KC 4 21.5 § Defenses against Parasites, m46569",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6ab6e58b65e1ca89": {
    "verdict": "ok",
    "note": "KC 5 24.1 § Anatomy and Normal Microbiota of the Oral Cavity, m58924",
@@ -47035,6 +47227,10 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
+  },
+  "6bc5ffca4d995371": {
+   "verdict": "ok",
+   "note": "KC 4 19.2 § Cardiac Muscle Metabolism, m46664"
   },
   "6bc6d3457c4e97d9": {
    "verdict": "ok",
@@ -48167,6 +48363,14 @@
     "result": "agrees"
    }
   },
+  "6e775b513433ab88": {
+   "verdict": "ok",
+   "note": "KC 4 20.5 § Hepatic Portal System, m46646",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6e83f29fc9c64dd2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -48410,6 +48614,10 @@
     "result": "adjudicated",
     "note": "Key stands per the source's convention: the module's own worked answer for its graph is '(−∞,−2)∪(−2,1)∪(1,∞)', open at every discontinuity including the jump at x=1 where one side is closed, so this item's open intervals (−∞,1)∪(1,3)∪(3,∞) follow the book."
    }
+  },
+  "6f396eb152fffe12": {
+   "verdict": "ok",
+   "note": "KC 4 20.3 § Hydrostatic Pressure, m46586"
   },
   "6f3b2351ae59a6e3": {
    "verdict": "ok",
@@ -49457,6 +49665,14 @@
   },
   "7177bbd23f1a679b": {
    "verdict": "ok"
+  },
+  "7178e371fa9544a0": {
+   "verdict": "ok",
+   "note": "KC 4 19.1 § Coronary Veins, m46676",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "71794f44388738b4": {
    "verdict": "ok",
@@ -51173,6 +51389,14 @@
    "verdict": "ok",
    "note": "parent re-record after adding the model answer's fifth clause ('individuals would, as a whole, look essentially the same') to the rubric; model answer is the verbatim source solution for the Hardy-Weinberg-principle CT question | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "75647a1954bf9d2e": {
+   "verdict": "ok",
+   "note": "KC 4 19.2 § Electrocardiogram, m46664",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "756e4f95db547087": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -52464,6 +52688,14 @@
     "result": "agrees"
    }
   },
+  "7838718159ab7b41": {
+   "verdict": "ok",
+   "note": "KC 4 21.1 § Larger Lymphatic Vessels, Trunks, and Ducts, m46563",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "78393fc3225f2a9a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -52471,6 +52703,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "783ef31efaa19251": {
+   "verdict": "ok",
+   "note": "KC 4 21.4 § Active versus Passive Immunity, m46558"
   },
   "784032d45021ac76": {
    "verdict": "ok",
@@ -55934,6 +56170,14 @@
     "result": "agrees"
    }
   },
+  "7fcf5b413702e4b7": {
+   "verdict": "ok",
+   "note": "KC 4 21.7 § Tissue Transplantation, m46583",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7fe0251a58432bb4": {
    "verdict": "ok",
    "note": "KC 2 9.3 § introduction, m58830 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -57276,6 +57520,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "8314718b684f5211": {
+   "verdict": "ok",
+   "note": "KC 4 21.3 § Regulatory T Cells, m46560"
   },
   "8314c3ca9664e45e": {
    "verdict": "ok",
@@ -58686,6 +58934,10 @@
     "result": "agrees"
    }
   },
+  "86018e70f44f7895": {
+   "verdict": "ok",
+   "note": "KC 4 21.1 § Lymph Nodes, m46563"
+  },
   "86090c389e6b2c14": {
    "verdict": "ok"
   },
@@ -58740,6 +58992,14 @@
   "8634eb9e63963657": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "86380b98be99230c": {
+   "verdict": "ok",
+   "note": "KC 4 21.5 § Defenses against Bacteria and Fungi, m46569",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -59689,6 +59949,14 @@
   "88b8d93ec8e93b02": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "88bd5a5d2f0c5481": {
+   "verdict": "ok",
+   "note": "KC 4 20.6 § opening paragraph (shunt list, fs-id1551956), m46610",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "88bd87f9d1c23eda": {
    "verdict": "ok",
@@ -60825,6 +61093,10 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
+  },
+  "8b508220d5736019": {
+   "verdict": "ok",
+   "note": "KC 4 20.4 § Effect of Exercise on Vascular Homeostasis, m46603"
   },
   "8b555b524607b556": {
    "verdict": "ok",
@@ -62733,6 +63005,14 @@
     "result": "agrees"
    }
   },
+  "8fe40326e8cb2547": {
+   "verdict": "ok",
+   "note": "KC 4 21.3 § Professional Antigen-presenting Cells, m46560",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8feb854e8c53bd50": {
    "verdict": "ok",
    "solved": {
@@ -63545,6 +63825,14 @@
   "91e84cf23ddebab7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "91ea5bda5c857124": {
+   "verdict": "ok",
+   "note": "KC 4 20.6 § opening paragraph (shunts, fs-id1766849), m46610",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -66170,6 +66458,10 @@
     "result": "agrees"
    }
   },
+  "97e9770a20aa2f02": {
+   "verdict": "ok",
+   "note": "KC 4 18.4 § Characteristics of Leukocytes, m46701"
+  },
   "97ee9c784f6f83b5": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -66407,6 +66699,10 @@
     "result": "agrees"
    }
   },
+  "988f39ea442f1856": {
+   "verdict": "ok",
+   "note": "KC 4 21.2 § Recognition of Pathogens, m46571"
+  },
   "9891ebcdaa640e99": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -66462,6 +66758,14 @@
   "98ad0a984bb20723": {
    "verdict": "ok",
    "note": "source RQ fs-id1483088, key C, options and order as printed",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "98b08f310d433d54": {
+   "verdict": "ok",
+   "note": "KC 4 20.1 § Shared Structures, m46597",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -66711,6 +67015,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
+  "9946c25cc5db0385": {
+   "verdict": "ok",
+   "note": "KC 4 18.5 § Formation of the Platelet Plug, m46705",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -67121,6 +67433,14 @@
   "9a47ac754251f9d2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "9a47fb4feb4d75fd": {
+   "verdict": "ok",
+   "note": "KC 4 20.2 § Vessel Length and Diameter, m46635",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -69866,6 +70186,10 @@
   "a0e10e3143680258": {
    "verdict": "ok",
    "note": "Table (x=1..6; y=46,50,59,75,100,136) has consecutive differences 4,9,16,25,36 — not constant — so the data is 'Nonlinear', matching the declared answer."
+  },
+  "a0e48edf7d434516": {
+   "verdict": "ok",
+   "note": "KC 4 21.6 § Autoimmune Responses, m46566"
   },
   "a0e4db8e1b8189ef": {
    "verdict": "ok",
@@ -73392,6 +73716,14 @@
     "result": "agrees"
    }
   },
+  "a8882d94c8786296": {
+   "verdict": "ok",
+   "note": "KC 4 18.1 § Composition of Blood, m46710",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a88a0460a7a59bbd": {
    "verdict": "ok",
    "note": "KC 5 28.2 § body Class Anthozoa (fs-idm216084544), m66395 — parent re-read against the module"
@@ -74493,6 +74825,14 @@
     "result": "agrees"
    }
   },
+  "ab394864abc6f2d9": {
+   "verdict": "ok",
+   "note": "KC 4 20.4 § Renin-Angiotensin-Aldosterone Mechanism, m46603",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ab3f1b89e66e2821": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -75507,6 +75847,10 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
+  },
+  "adb3ec36e3c34fac": {
+   "verdict": "ok",
+   "note": "KC 4 20.6 § opening paragraph (vascular tubes and nerves, fs-id1883512 and fs-id3281409), m46610"
   },
   "adb4a73227273313": {
    "verdict": "ok",
@@ -81035,6 +81379,14 @@
    "verdict": "ok",
    "note": "Critical Thinking exercise fs-idm71000694 — model answer is the source solution verbatim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "ba49ab0b1b682e5b": {
+   "verdict": "ok",
+   "note": "KC 4 19.1 § Right Atrium, m46676",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ba4a0c87217db354": {
    "verdict": "ok",
    "note": "body cloze from § Plasma Membrane Hormone Receptors: \"Adenylyl cyclase catalyzes the conversion of ATP to cAMP. cAMP, in turn, activates a group of proteins called protein kinases, which transf…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -83467,6 +83819,14 @@
     "result": "agrees"
    }
   },
+  "bfc4c3521acad9e0": {
+   "verdict": "ok",
+   "note": "KC 4 21.2 § Complement System, m46571",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "bfcf833dd6a518cd": {
    "verdict": "ok",
    "note": "(x-4)^2/36+(y-2)^2/20=1: center (h,k)=(4,2) read directly from standard form; matches CNXML fs-id1361228. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -84949,6 +85309,14 @@
     "result": "agrees"
    }
   },
+  "c361e4c8df9e1acf": {
+   "verdict": "ok",
+   "note": "KC 4 19.3 § Heart Sounds, m46661",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c3641b0283c8ab8b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -85129,6 +85497,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "c3c6d475d0b1699d": {
+   "verdict": "ok",
+   "note": "KC 4 19.4 § Cardiovascular Centers, m46672"
   },
   "c3c9a1716241ce0d": {
    "verdict": "ok",
@@ -85591,6 +85963,14 @@
     "result": "agrees"
    }
   },
+  "c4b8524e9a49883f": {
+   "verdict": "ok",
+   "note": "KC 4 20.2 § Measurement of Blood Pressure, m46635",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c4ba06f776d2bb05": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -85975,6 +86355,14 @@
   "c57a3631cea1fab0": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c581e0ec4c854f56": {
+   "verdict": "ok",
+   "note": "KC 4 19.2 § Sinoatrial (SA) Node, m46664",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -86782,6 +87170,10 @@
     "result": "agrees"
    }
   },
+  "c7924118c8cf7e4e": {
+   "verdict": "ok",
+   "note": "KC 4 18.5 § Fibrinolysis, m46705"
+  },
   "c793dd6096d3666e": {
    "verdict": "ok",
    "note": "18.5 RQ fs-id2766568 key A vascular spasm; fs-id2492434 lists vascular spasm first; options/order as source.",
@@ -87098,6 +87490,14 @@
   "c868c69a7549ed7b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c86ad52f37878ed5": {
+   "verdict": "ok",
+   "note": "KC 4 18.1 § Plasma Proteins, m46710",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -87586,6 +87986,14 @@
   "c984ab9223493cfa": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "c9869bc7652b7368": {
+   "verdict": "ok",
+   "note": "KC 4 18.2 § Hemopoietic Growth Factors, m46691",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "c9883993a6c7c726": {
    "verdict": "ok",
@@ -91301,6 +91709,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "d285e199ea3778c6": {
+   "verdict": "ok",
+   "note": "KC 4 18.1 § Characteristics of Blood, m46710"
   },
   "d287be56b935ba4f": {
    "verdict": "ok",
@@ -96412,6 +96824,10 @@
     "result": "agrees"
    }
   },
+  "ded8babc4199a1bf": {
+   "verdict": "ok",
+   "note": "KC 4 18.6 § ABO Transfusion Protocols, m46708"
+  },
   "dedbf63defecfe51": {
    "verdict": "ok",
    "note": "author-built from § summary: \"Giardiasis , cryptosporidiosis , amoebiasis , and cyclosporiasis are intestinal infections caused by protozoans.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -99062,6 +99478,14 @@
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
   },
+  "e4ae1a348184b69a": {
+   "verdict": "ok",
+   "note": "KC 4 21.2 § Phagocytes: Macrophages and Neutrophils, m46571",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e4ae94d4e2b445ae": {
    "verdict": "ok",
    "note": "unkeyed CT, model from the module's own population/susceptibility definition and its own examples | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -99162,6 +99586,14 @@
    "note": "KC 5 29.6 § body Characteristics of Mammals (fs-idp70858768), m66593 — parent re-read against the module",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "e4d5f659898bc23f": {
+   "verdict": "ok",
+   "note": "KC 4 19.5 § body, m46673",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -99685,6 +100117,14 @@
   "e5f84219004da45f": {
    "verdict": "ok",
    "note": "KC 5 23.4 § Genital Herpes > Neonatal Herpes, m58920"
+  },
+  "e5f8900446cd4f45": {
+   "verdict": "ok",
+   "note": "KC 4 18.6 § Antigens, Antibodies, and Transfusion Reactions, m46708",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "e5f890d1db4f6096": {
    "verdict": "ok",
@@ -101596,6 +102036,10 @@
     "result": "agrees"
    }
   },
+  "eb0dcd2cd83f845b": {
+   "verdict": "ok",
+   "note": "KC 4 19.1 § Membranes, m46676"
+  },
   "eb12dbf4b66d8ab1": {
    "verdict": "ok",
    "note": "node: 1/Math.cos(310°·π/180)=1.5557238268604126, rounds to 1.556; matches CNXML solution 1.556 | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -101740,6 +102184,14 @@
   "eb61b5f851c6bf49": {
    "verdict": "ok",
    "note": "KC 5 25.3 § Arthropod-Borne Viral Diseases › Yellow Fever, m58937",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "eb64ff2c2f2e2342": {
+   "verdict": "ok",
+   "note": "KC 4 18.5 § Plasma Anticoagulants, m46705",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -104553,6 +105005,14 @@
    "note": "source exercise fs-id1167663628980 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "f22e12dbc2a8e0f2": {
+   "verdict": "ok",
+   "note": "KC 4 19.3 § Phases of the Cardiac Cycle, m46661",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -108151,6 +108611,10 @@
     "result": "agrees"
    }
   },
+  "fa0b262dd15bd289": {
+   "verdict": "ok",
+   "note": "KC 4 20.5 § Overview of Systemic Veins, m46646"
+  },
   "fa0ce427077c9ec0": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -109204,6 +109668,10 @@
     "result": "agrees"
    }
   },
+  "fc68ac4d6be56843": {
+   "verdict": "ok",
+   "note": "KC 4 18.2 § Sites of Hemopoiesis, m46691"
+  },
   "fc6b3f3c78ee4dd5": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -110206,6 +110674,10 @@
     "result": "agrees"
    }
   },
+  "fe850e89ae824254": {
+   "verdict": "ok",
+   "note": "KC 4 18.3 § Lifecycle of Erythrocytes, m46707"
+  },
   "fe87b0f95878cbc1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -110225,6 +110697,14 @@
   "fe88730c00a890c5": {
    "verdict": "ok",
    "note": "Microbiology 13.4 source CYU selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the Use-Dilution Test paragraphs (manufacturer validation, EPA, AOAC 59 of 60))"
+  },
+  "fe88aea6f4248cc3": {
+   "verdict": "ok",
+   "note": "KC 4 19.5 § body, m46673",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "fe8a2b2cc7f771c0": {
    "verdict": "ok",

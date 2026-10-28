@@ -133,6 +133,14 @@ const REPRESENTATIVE_PAGES = [
     path: '/life-health-sciences/anatomy-physiology/knowledge-check-05-11/',
   },
   {
+    name: 'anatomy-physiology unit 3 knowledge check (chapters 12–17)',
+    path: '/life-health-sciences/anatomy-physiology/knowledge-check-12-17/',
+  },
+  {
+    name: 'anatomy-physiology unit 4 knowledge check (chapters 18–21)',
+    path: '/life-health-sciences/anatomy-physiology/knowledge-check-18-21/',
+  },
+  {
     name: '404 page',
     path: '/404.html',
     title: 'Page not found – Athenaeum Populi',

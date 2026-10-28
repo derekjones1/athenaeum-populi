@@ -2220,6 +2220,85 @@ parent read every block and applied every one-line fix itself.
   101k–146k, sweeps 129k–140k, second checker 236k, solver 469k; about 2 h
   15 min wall.
 
+## Knowledge Check 4 — Unit 4, chapters 18–21 (October 27, 2026)
+
+The fourth Anatomy and Physiology check, run from
+`docs/briefs/anatomy-physiology/kc-run.md`. `knowledge-check-18-21.md`,
+"Knowledge Check: Unit 4 — Chapters 18–21", weight 25; no chapter shifted
+(chapter 22 is not yet authored). 24 sections (ch18 6, ch19 5, ch20 6, ch21
+7), 72 items: 25 multiplechoice, 23 textin, 24 selfcheck (every one with a
+rubric), 0 sortbins. 19.3 has two multiplechoice and a selfcheck (every
+Phases term already keyed or printed with its fact on the Practice block).
+MC key slots on the finished page: 3-option items 3/3/1, 4-option items
+4/4/5/5.
+
+Run shape: four Opus authors (one per chapter, launched together), four Opus
+checkers (each as its author reported), two Opus reverse-recall sweeps on the
+finished blocks (A ch18/19, B ch20/21), one Opus second checker over the
+whole replacement set (plus a re-read of the one second-round replacement),
+one blind Fable solve, one Sonnet errata drafter, and one Sonnet close-out
+clerk; the parent read every block and applied every one-line fix itself.
+
+- **Checker yield (hard/soft):** ch18 0/7, ch19 0/4, ch20 0/3, ch21 0/5 (0
+  hard in all four).
+- **Sweep yield (hard/soft):** A 1/3 (33 items), B 1/5 (39 items).
+- **Second checker:** 10 read, 9 pass, 1 fail (18.1 selfcheck, spread: its
+  Career Connection box is hosted in Blood Plasma, already used by the
+  globulins textin); the second replacement (Characteristics of Blood)
+  re-read: pass (11 read, 10 pass, 1 fail overall). Trial assembly before the
+  second checker: clean; `kc leaks` candidates: "venules" (20.1 key) in the
+  20.2 selfcheck stem and rubric, vocabulary, kept; the first trial also
+  showed eosinophils keyed twice (18.4 and 21.5), resolved by replacing 18.4.
+- **Replacements** (7 items replaced from different module sentences, type
+  kept, plus three in-place rewrites):
+  - 18.1 temperature-regulation selfcheck replaced first by phlebotomy draws (failed spread), then by blood pH and volume (Characteristics of Blood): a cross-block twin of the 20.5 superficial-veins selfcheck (sweep A), and an 18.1 sortbins label printing a rubric clause.
+  - 18.4 acidic-stain eosinophils MC replaced by monocytes by size (Agranular Leukocytes): the key was derivable from the option names (neutro-/baso-/eosin), and eosinophils were keyed again in 21.5 (checker ch18, both sweeps, `kc leaks`).
+  - 20.2 hypervolemia textin replaced by adipose tissue (Vessel Length and Diameter): a mirror of the 20.2 page's own hypovolemia cloze with the prefix flipped, and "hyperaldosteronism" in the stem (sweep B, checker ch20).
+  - 20.3 colloid textin replaced by oncotic (Bulk Flow › Osmotic Pressure): the page printed the key beside "plasma proteins" in a Practice rubric and model answer, an objective heading, and three MC options (sweep B).
+  - 21.3 clone textin replaced by class I MHC (T Cell Development and Differentiation): the page's Practice rubric printed "antigen-specific clones … antigen receptor" (sweep B; checker ch21 soft).
+  - 21.6 autoimmune-treatment/hygiene selfcheck replaced by localized vs diffuse autoimmune disease (Autoimmune Responses): the 21.5 page's Practice textin keys "hygiene theory" with the idea rubric clauses 3–4 graded (sweep B).
+  - 21.7 erythroblastosis selfcheck replaced by tissue typing vs the cancer response (module introduction): the 21.7 page's Practice IgG cloze printed two rubric clauses verbatim, and the 18.6 sensitization stem stated the first-birth fact (sweep B; checker ch21 soft). Spread exception accepted and ledgered: The Rh Factor subsection has no other clean explanation.
+  - In place: 19.5 selfcheck (S shape moved into the stem, clause 1 cut, since the page's Practice rubric printed it; checker ch19 and sweep A); 20.3 selfcheck (clause 2 cut, since a page sortbins bin pre-printed it; sweep B); 21.5 MC stem reworded from the module's "…and which cells evolved?" construction to a question (parent).
+- **Parent one-line fixes (ten):** accept lists (18.1 plasma globulins;
+  18.2 crest of the ilium; 18.4 thrombocytopaenia; 18.6 Rh
+  sensitization/sensitisation; 21.4 Fc fragment, Fc domain; 21.3 class 1, MHC
+  I molecules), the 21.5 accept "NO" dropped (a typed "no" would grade
+  correct), and the three in-place rewrites above.
+- **The cross-block leaks:** one twin (18.1 ↔ 20.5 temperature regulation,
+  sweep A), one double key (eosinophils 18.4/21.5, found by checker ch18, both
+  sweeps and `kc leaks`), one cross-block fact (18.6 sensitization stem vs
+  21.7 selfcheck clause, parent). All resolved by replacing the chapter 18 and
+  21.7 items.
+- **Spread exceptions accepted and ledgered:** 19.5 and 20.6 (modules without
+  subsections: three paragraphs), 20.3 (two subsections; Lymphatic
+  Capillaries spent by Practice), 21.7 (introduction + two subsections; Rh
+  unusable), 19.3 (two MC + selfcheck, no clean textin).
+- **Blind solve:** 48 graded items (25 multiplechoice, 23 textin) answered
+  cold from the 24 masked section pages by a fresh Fable solver: 48 agree, 0
+  disagree, 0 flagged, 0 unrecognized, 0 missing, 0 unanswered, 0
+  alsoDefensible, 0 unsure; every note read by the parent, none reporting a
+  page defect. Ledger: 72 provenance notes and 48 solve records merged (16496
+  records; `ledger:provenance` 0, prune 0); `--min-exercises` 16424 → 16496,
+  `--min-replayed` 7806 → 7829. Build: 6129/20000 files, 577.0 MiB,
+  check:build clean; the check page renders to 352,806 bytes of HTML (Unit 3:
+  395,254). Errata: 2577 (m46664 §19.2, "an enlarged suppressed or inverted Q
+  wave" self-contradictory; kept as printed, no item rests on it) and 2578
+  (m46563 §21.1 glossary swaps the red and white pulp functions against body
+  fs-id2396897; the 21.1 Key-terms bullet is corrected with a footer
+  disclosure and a sourceDefectDecisions entry). Found by the ch19 and ch21
+  authors, confirmed by their checkers and the parent against the CNXML.
+  Claim findings: none beyond these.
+- **Lessons** (the last four bullets of `kc-run.md` §0):
+  - A replacement's spread is checked against the CNXML nesting of the HOST subsection, not the box's own title: an 18.1 Career Connection box read as "Other Plasma Solutes" sat inside Blood Plasma, the subsection the section's textin already used; the second checker caught it, the author and first reader did not.
+  - A key reused for a second fact is a double key, not a twin: eosinophils keyed in 18.4 and 21.5 for different facts; `kc leaks` reports it as the option of each printing the other's key, and the page keys the term once after the fix.
+  - The sweeps carried the hard yield: the four chapter checkers found 0 hard on 72 items; both hard findings (an 18.1↔20.5 cross-block twin, a 21.7 rubric printed by the page's cloze) and four of the seven replacements came from the two sweeps, each reading every item beside its section page and the other blocks.
+  - Hidden-accept pitfall: an accept member that is an ordinary word ("NO" for nitric oxide) grades a guess correct; drop it.
+- **Costs:** authors ch18 222k, ch19 225k, ch20 228k, ch21 236k (including
+  fix rounds); checkers ch18 155k, ch19 139k, ch20 154k, ch21 142k; sweeps A
+  125k, B 123k; second checker 141k + re-read 147k total; errata clerk 61k;
+  solver 99k; about 45 minutes wall (authors launched to solve compared in
+  34 minutes).
+
 ## Examples moved from the playbook (October 13, 2026)
 
 Cut verbatim from `docs/subjects/anatomy-physiology.md`.

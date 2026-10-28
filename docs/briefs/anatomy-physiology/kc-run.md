@@ -30,7 +30,13 @@ below come from it. The third run, Unit 3 (October 25, 2026, 32 sections,
 96 items, "Knowledge Check 3" in the history), measured: checkers 6 hard and
 about 27 soft across six chapters, sweeps 10 hard, eight items replaced and
 two rewritten in place, second checker 6 of 24 failed (all applied by the parent), blind solve 65/65 with
-0 alsoDefensible, no errata, about 2 h 15 min wall.
+0 alsoDefensible, no errata, about 2 h 15 min wall. The fourth run, Unit 4
+(October 27, 2026, 24 sections, 72 items, "Knowledge Check 4" in the
+history), measured: checkers 0 hard and 19 soft across four chapters, sweeps
+2 hard and 8 soft, seven items replaced and three rewritten in place, second
+checker 1 of 10 failed (then the re-read of its replacement passed), blind
+solve 48/48 with 0 alsoDefensible, two errata (2577, 2578), about 45 minutes
+wall.
 
 ## 0. What the runs measured
 
@@ -101,6 +107,23 @@ two rewritten in place, second checker 6 of 24 failed (all applied by the parent
   October 25, 2026). It caught a stem-vs-rubric mismatch (17.10 asked a
   trigger no clause graded) and an adjacent-item giveaway (17.1's selfcheck
   printing "within seconds" above a time MC) that no first reader saw.
+- **A replacement's spread is checked against the CNXML nesting of the host
+  subsection, not the box's own title** (Unit 4, October 27, 2026): an 18.1
+  Career Connection box read as "Other Plasma Solutes" sat inside Blood
+  Plasma, the subsection the section's textin already used; the second
+  checker caught it, the author and first reader did not.
+- **A key reused for a second fact is a double key, not a twin** (Unit 4,
+  October 27, 2026): eosinophils keyed in 18.4 and 21.5 for different facts;
+  `kc leaks` reports it as the option of each printing the other's key, and
+  the page keys the term once after the fix.
+- **The sweeps carried the hard yield** (Unit 4, October 27, 2026): the four
+  chapter checkers found 0 hard on 72 items; both hard findings (an
+  18.1↔20.5 cross-block twin, a 21.7 rubric printed by the page's cloze) and
+  four of the seven replacements came from the two sweeps, each reading every
+  item beside its section page and the other blocks.
+- **An accept member that is an ordinary word grades a guess correct** (Unit
+  4, October 27, 2026): "NO" for nitric oxide in 21.5 would have marked a
+  typed "no" right; drop such members.
 
 ## 1. Before the wave
 

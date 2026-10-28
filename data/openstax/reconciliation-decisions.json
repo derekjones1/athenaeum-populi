@@ -4981,6 +4981,17 @@
       "status": "correct-local-source-defect",
       "errataEntry": 2567,
       "rationale": "The Autoimmune Diseases table gives Hashimoto's thyroiditis the autoantigen \"Thyroid-stimulating hormone receptor (antibody blocks receptor)\", but the autoantigens that define the disease are thyroid peroxidase and thyroglobulin, and receptor-blocking antibodies occur only in a minority of patients (Autoimmunity Reviews 2014, doi:10.1016/j.autrev.2014.01.007). The page reads \"Thyroid peroxidase and thyroglobulin\" with a visible Source note directly under the table and a footer sentence. Raised by the 21.6 author and evidenced by the chapter 21 prose claim pass (F9), October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/21-the-lymphatic-and-immune-system/01-anatomy-of-the-lymphatic-and-immune-systems.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46563",
+      "sourceElementIds": [
+        "fs-id1335889"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2578,
+      "rationale": "The glossary defines the spleen as filtering pathogens from the blood (white pulp) and removing degenerating or damaged blood cells (red pulp) (fs-id1335889), but the module's own body paragraph (fs-id2396897) gives blood filtration to the red pulp and says the white pulp is where adaptive T and B cell responses are mounted, so the glossary swaps the two functions. The page's Key-terms bullet is reworded to \"secondary lymphoid organ whose red pulp filters the blood and removes degenerating or damaged blood cells and whose white pulp mounts adaptive T and B cell responses\", and the footer's Changes sentence discloses it (the spleen key term is reworded to match the module's body paragraph). Found by the Unit 4 Knowledge Check run, October 27, 2026."
     }
   ]
 }
