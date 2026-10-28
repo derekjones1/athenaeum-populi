@@ -5181,6 +5181,249 @@
       "status": "correct-local-source-defect",
       "errataEntry": 2620,
       "rationale": "The Respiratory Distress Syndrome box says blood \"carbon dioxide levels and pH are high\", but retained carbon dioxide lowers pH: m46549 (§22.3, fs-id2010068) says \"increased carbon dioxide levels lead to increased levels of hydrogen ions, decreasing pH\", and m46413 (§26.5, fs-id1971541) defines respiratory acidosis as blood \"overly acidic due to an excess of carbonic acid, resulting from too much CO2 in the blood\". The page says blood pH is low, with a visible Source note and a footer sentence. Evidenced by the chapter 22 prose claim pass (F9), October 27, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/23-the-digestive-system/03-the-mouth-pharynx-and-esophagus.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46511",
+      "sourceElementIds": [
+        "fs-id1890969",
+        "fs-id1351653",
+        "fs-id1224217",
+        "fs-id1364929"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2632,
+      "rationale": "The source distractor d \"lower esophageal sphincter\" is also defensible as an answer to \"Which structure is located where the esophagus penetrates the diaphragm?\": m46511 says \"Surrounding this sphincter is the muscular diaphragm, which helps close off the sphincter when no food is being swallowed\" (fs-id2101903), which puts the lower esophageal sphincter where the esophagus passes the diaphragm. The key, the esophageal hiatus (fs-id1984077), is the better answer and stays. The page prints \"laryngopharynx\" as option D, with key A and the other options and their order unchanged, a visible Source note under the item, and a footer sentence; the keys gate's disclosed-deviation list records it as kind options. Evidenced by the chapter 23 prose claim pass (the true-distractor finding) and ruled by the orchestrator, October 28, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/23-the-digestive-system/01-overview-of-the-digestive-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46506",
+      "sourceElementIds": [
+        "fs-id1885631",
+        "fs-id1840781",
+        "fs-id1472352"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2633,
+      "rationale": "The submucosa paragraph says \"A broad layer of loose connective tissue\", but the module's own glossary defines the submucosa as a \"layer of dense connective tissue in the alimentary canal wall\" (fs-id1472352), and the printed PDF body (p. 1042) reads \"dense\"; the section is not in the September 8, 2026 upstream-errata table, so nothing upstream explains the difference between the PDF and the pinned CNXML. The page reads \"A broad layer of dense connective tissue\" with a visible Source note and a footer sentence, and the subject playbook's September 8 table has a row for the PDF difference. Evidenced by the chapter 23 prose claim pass (F2), October 28, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/23-the-digestive-system/01-overview-of-the-digestive-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46506",
+      "sourceElementIds": [
+        "fs-id2110035",
+        "fs-id1841649"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2634,
+      "rationale": "The muscularis paragraph places the skeletal muscle in the \"anterior part of the esophagus\", and the Blood Supply paragraph says \"the more anterior parts of the alimentary canal\" are supplied from the aortic arch and thoracic aorta, but the parts meant lie toward the mouth end of the canal, not toward the front of the body: m46511 (fs-id1976228) says \"In the upper third of the esophagus, the muscularis is skeletal muscle\", and the Blood Supply sentences that follow say \"Below this point\". The page reads \"upper part of the esophagus\" and \"the more proximal parts\", with one visible Source note after the muscularis paragraph and a footer sentence. Evidenced by the chapter 23 prose claim pass (F1), October 28, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/23-the-digestive-system/01-overview-of-the-digestive-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46506",
+      "sourceElementIds": [
+        "fs-id2005910"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2635,
+      "rationale": "The Serosa paragraph says the mouth, pharynx, and esophagus have \"a dense sheath of collagen fibers called the adventitia\", but m46511 (fs-id1976228) says \"the loose connective tissue of the adventitia\" of the same organs, and histology texts describe the esophageal adventitia as loose connective tissue. The page reads \"a sheath of loose connective tissue called the adventitia\" with a visible Source note and a footer sentence. Evidenced by the chapter 23 prose claim pass (F3), October 28, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/23-the-digestive-system/02-digestive-system-processes-and-regulation.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46502",
+      "sourceElementIds": [
+        "fs-id1921294"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2636,
+      "rationale": "The paragraph says \"These two plexuses and their connections were introduced earlier as the enteric nervous system\", but the two plexuses are the extrinsic and the intrinsic nerve plexuses of the sentences before it, and m46506 introduces the enteric nervous system as the intrinsic innervation alone (fs-id1838265: \"Intrinsic innervation of much of the alimentary canal is provided by the enteric nervous system\"; Chapter Review fs-id1616437: \"The enteric nervous system provides intrinsic innervation, and the autonomic nervous system provides extrinsic innervation\"). The page reads \"The intrinsic plexuses and their connections were introduced earlier as the enteric nervous system.\" with a visible Source note and a footer sentence. Found by the 23.2 author and ruled by the orchestrator (F18), October 28, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/23-the-digestive-system/03-the-mouth-pharynx-and-esophagus.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46511",
+      "sourceElementIds": [
+        "fs-id1204864"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2637,
+      "rationale": "The paragraph says fungiform papillae \"cover a large area of the tongue\" and are \"larger toward the rear of the tongue and smaller on the tip and sides\", but it is the filiform papillae that cover most of the front of the tongue and the fungiform papillae are scattered among them, chiefly on the tip and sides (Gray's Anatomy, 20th U.S. ed., 1918, The Tongue). The page says the long, thin filiform papillae cover a large area of the tongue and the fungiform papillae are scattered among them, chiefly on the tip and sides, with a visible Source note and a footer sentence. Evidenced by the chapter 23 prose claim pass (F4), October 28, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/23-the-digestive-system/03-the-mouth-pharynx-and-esophagus.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46511",
+      "sourceElementIds": [
+        "fs-id1652489",
+        "fs-id1861775"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2638,
+      "rationale": "The Mumps box says the United States had \"only 11 reported cases in 2011\", but the CDC's final count for 2011 is 404 (CDC, Summary of Notifiable Diseases, United States, 2011, MMWR 2013;60(53), Table 1). The page prints 404 with a visible Source note inside the callout and a footer sentence. Evidenced by the chapter 23 prose claim pass (F5), October 28, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/23-the-digestive-system/03-the-mouth-pharynx-and-esophagus.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46511",
+      "sourceElementIds": [
+        "fig-ch24_03_06",
+        "fs-id1285208"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2639,
+      "rationale": "The Pharynx figure's caption says the pharynx \"runs from the nostrils to the esophagus and the larynx\", but the nostrils open into the nasal cavity and the pharynx begins behind it: m46511 (fs-id1707702) says \"the pharynx runs from the posterior oral and nasal cavities to the opening of the esophagus and larynx\", and m46548 (fs-id2777795) says the nasopharynx \"is connected to the posterior nasal cavity\". The page's caption reads \"from the posterior nasal and oral cavities\", with a visible Source note under the figure and a footer sentence about the caption; the source alt repeated the clause and the page alt is rewritten from the image. Evidenced by the chapter 23 prose claim pass (F6), October 28, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/23-the-digestive-system/03-the-mouth-pharynx-and-esophagus.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46511",
+      "sourceElementIds": [
+        "tbl-ch24_05"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2640,
+      "rationale": "The esophagus table credits \"Lower esophageal sphincter relaxation\" with allowing the bolus into the stomach \"and prevents chyme from entering the esophagus\", but relaxing a sphincter opens it, and the module itself says the sphincter \"relaxes to let food pass into the stomach, and then contracts to prevent stomach acids from backing up into the esophagus\" (fs-id2101903). The page reads \"Allows the bolus to move from the esophagus into the stomach; the sphincter's closure prevents chyme from entering the esophagus\" with a visible Source note after the table and a footer clause. Found by the 23.3 author and ruled by the orchestrator (F19), October 28, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/23-the-digestive-system/04-the-stomach.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46517",
+      "sourceElementIds": [
+        "fig-ch24_04_02"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2641,
+      "rationale": "The Histology of the Stomach caption says the gastric glands \"secrete a variety of enzymes, including hydrochloric acid\", but hydrochloric acid is an acid, not an enzyme, and the same sentence names pepsin as the enzyme it activates: the module's glossary calls it a \"digestive acid secreted by parietal cells in the stomach\" (fs-id1892013). The page's caption reads \"a variety of substances\" with a visible Source note under the figure and a footer sentence. Evidenced by the chapter 23 prose claim pass (F7), October 28, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/23-the-digestive-system/04-the-stomach.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46517",
+      "sourceElementIds": [
+        "tbl-ch24_06"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2642,
+      "rationale": "The Ghrelin row says the hormone regulates food intake \"primarily by stimulating hunger and satiety\", but ghrelin stimulates hunger only: its levels rise before meals, as the row's own stimulus cell says, and fall after them (Cummings et al., Diabetes 2001;50(8):1714-1719, doi:10.2337/diabetes.50.8.1714). The page prints \"primarily by stimulating hunger\" with a visible Source note after the table and a footer sentence. Evidenced by the chapter 23 prose claim pass (F9), October 28, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/23-the-digestive-system/04-the-stomach.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46517",
+      "sourceElementIds": [
+        "fs-id1267264",
+        "fs-id1698044"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2643,
+      "rationale": "The glossary says the cardia surrounds \"the cardiac orifice (esophageal hiatus)\", but the esophageal hiatus is the opening in the diaphragm through which the esophagus passes (m46511, fs-id1984077), not the opening of the esophagus into the stomach; the section 23.3 Review Question prints the two as different options. The page's Key terms bullet drops \"(esophageal hiatus)\" with a visible Source note after the Key terms list and a footer sentence. Evidenced by the chapter 23 prose claim pass (F8), October 28, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/23-the-digestive-system/05-the-small-and-large-intestines.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46512",
+      "sourceElementIds": [
+        "fs-id2142144"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2644,
+      "rationale": "The paragraph says the small intestine is \"about five times longer than the large intestine\", but the module itself says the large intestine is \"about one-half as long as the small intestine\" (fs-id1850868), and a five-fold ratio would make the large intestine shorter than the 0.9 m jejunum the module gives. The page reads \"about twice as long\" with a visible Source note and a footer sentence. Evidenced by the chapter 23 prose claim pass (F10), October 28, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/23-the-digestive-system/05-the-small-and-large-intestines.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46512",
+      "sourceElementIds": [
+        "fs-id1921294"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2645,
+      "rationale": "The ileum paragraph says the ileum \"is thicker, more vascular, and has more developed mucosal folds than the jejunum\", reversing the comparison: the module's circular folds end \"near the middle of the ileum\" (fs-id1377788) and its absorptive adaptations are \"most abundant in the proximal two-thirds of the small intestine\" (fs-id2020227), and Gray's Anatomy (20th U.S. ed., 1918) describes the jejunum as the thicker, more vascular part. The page reads \"thinner, less vascular, and has less developed mucosal folds\" with a visible Source note and a footer sentence. Evidenced by the chapter 23 prose claim pass (F11), October 28, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/23-the-digestive-system/05-the-small-and-large-intestines.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46512",
+      "sourceElementIds": [
+        "fs-id1850868"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2646,
+      "rationale": "The Structure paragraph says \"The large intestine runs from the appendix to the anus\", but the first part of the large intestine is the cecum and the appendix attaches to it (fs-id2020835), and the figure caption says the large intestine \"includes the cecum, colon, and rectum\". The page reads \"from the cecum to the anus\" with a visible Source note and a footer clause. Found by the 23.5 author and the blind solver and ruled by the orchestrator (F20), October 28, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/23-the-digestive-system/05-the-small-and-large-intestines.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46512",
+      "sourceElementIds": [
+        "fs-id1976779",
+        "fs-id1492813"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2647,
+      "rationale": "The Colorectal Cancer box says \"studies support the conclusion that dietary fiber and calcium do not reduce the risk of colorectal cancer\", but the current systematic evidence says the opposite for both (World Cancer Research Fund / American Institute for Cancer Research, Diet, nutrition, physical activity and colorectal cancer, Continuous Update Project Expert Report, 2018: strong evidence that foods containing dietary fibre, dairy products, and calcium supplements each decrease the risk). The page states the current evidence in the sentence's place with a visible Source note citing the report and a footer sentence. Evidenced by the chapter 23 prose claim pass (F12), October 28, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/23-the-digestive-system/06-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46496",
+      "sourceElementIds": [
+        "fs-id1479465"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2648,
+      "rationale": "The paragraph says \"The falciform ligament and ligamentum teres hepatis are actually remnants of the umbilical vein\", but only the ligamentum teres hepatis is the obliterated umbilical vein; the falciform ligament is a peritoneal fold (the sentence before calls the five structures peritoneal folds, and the section 23.1 table of peritoneal folds lists it) that carries the ligamentum teres in its free edge (Gray's Anatomy, 20th U.S. ed., 1918; Radiopaedia, Falciform ligament). The page says that only the ligamentum teres hepatis, which runs in the free edge of the falciform ligament, is a remnant of the umbilical vein, with a visible Source note and a footer sentence. Evidenced by the chapter 23 prose claim pass (F13), October 28, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/23-the-digestive-system/06-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46496",
+      "sourceElementIds": [
+        "fs-id1884700"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2649,
+      "rationale": "The Bilirubin paragraph says bilirubin \"accounts for the green color of bile\", but bilirubin is a yellow pigment and biliverdin the green one: m46707 (fs-id1400972) says \"Bilirubin is a yellowish pigment\" and names biliverdin as the green pigment, and this module calls bile \"yellow-brown or yellow-green\" (fs-id1386125). The page says the yellow color with a visible Source note and a footer sentence. Evidenced by the chapter 23 prose claim pass (F14), October 28, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/23-the-digestive-system/06-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46496",
+      "sourceElementIds": [
+        "fs-id1379189"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2650,
+      "rationale": "The Bile paragraph says \"The valve-like hepatopancreatic ampulla closes\", but the ampulla is the chamber where the bile duct and pancreatic duct join and what closes is its sphincter: the module says \"The smooth muscle sphincter of the hepatopancreatic ampulla controls the release of pancreatic juice and bile into the small intestine\" (fs-id1836151), and m46512 (fs-id2227124) names it the hepatopancreatic sphincter (sphincter of Oddi). The page reads \"The hepatopancreatic sphincter closes\" with a visible Source note and a footer sentence; the author cloze that had keyed \"hepatopancreatic ampulla\" from this sentence was replaced, since a corrected term cannot key an item. Evidenced by the chapter 23 prose claim pass (F15), October 28, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/23-the-digestive-system/07-chemical-digestion-and-absorption-a-closer-look.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46501",
+      "sourceElementIds": [
+        "fs-id1493489",
+        "fs-id2135514"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2651,
+      "rationale": "The Vitamin Absorption paragraph says most water-soluble vitamins \"also are absorbed by simple diffusion\", and the Summary lists \"most water-soluble vitamins\" among the exceptions to absorption by transport mechanisms at the apical surface of enterocytes, but the module itself says \"water-soluble nutrients must use transport molecules embedded in the membrane to enter cells\" (fs-id1989212), and the literature describes the absorption of the water-soluble vitamins as specific carrier-mediated processes (Said, Biochemical Journal 2011;437(3):357-372, doi:10.1042/BJ20110326). The page says they are absorbed by specific carrier proteins in the apical membrane and leaves them out of the Summary's exceptions, with one Source note after the paragraph and a footer sentence. Evidenced by the chapter 23 prose claim pass (F16), October 28, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/23-the-digestive-system/07-chemical-digestion-and-absorption-a-closer-look.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46501",
+      "sourceElementIds": [
+        "fs-id969081",
+        "fs-id1368831"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2652,
+      "rationale": "The glossary says pancreatic amylase \"completes the chemical digestion of carbohydrates\", but the module's Digestive Enzymes table gives its products as \"alpha-Dextrins, disaccharides (maltose), trisaccharides (maltotriose)\", which the brush border enzymes then break down into monosaccharides, and m46512 says the microvilli-bound enzymes \"finish digesting carbohydrates and proteins\". The page's Key terms bullet reads \"continues the chemical digestion of carbohydrates\" with a visible Source note and a footer sentence. Evidenced by the chapter 23 prose claim pass (F17), October 28, 2026."
     }
   ]
 }

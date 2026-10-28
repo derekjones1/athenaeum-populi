@@ -181,8 +181,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 28,
       "upstreamSections": 169,
-      "localChapters": 22,
-      "mappedSections": 130,
+      "localChapters": 23,
+      "mappedSections": 137,
       "units": [
         {
           "index": 1,
@@ -1421,6 +1421,69 @@
       "moduleId": "m46518",
       "sourceTitle": "Embryonic Development of the Respiratory System",
       "moduleSha256": "652030e8918f05ae9563d60e1c2b043f1195a367a41e431edb71167e3ad1baa6"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/23-the-digestive-system/01-overview-of-the-digestive-system.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "23.1",
+      "moduleId": "m46506",
+      "sourceTitle": "Overview of the Digestive System",
+      "moduleSha256": "59b045e1e6c64c911b7eb014e224b02f8adfea1311349e463de44bcdca34a27d"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/23-the-digestive-system/02-digestive-system-processes-and-regulation.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "23.2",
+      "moduleId": "m46502",
+      "sourceTitle": "Digestive System Processes and Regulation",
+      "moduleSha256": "b6d1ff1b826c124630e3faac6d98cfe559bc2cb0a957a985b286dddebb12976a"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/23-the-digestive-system/03-the-mouth-pharynx-and-esophagus.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "23.3",
+      "moduleId": "m46511",
+      "sourceTitle": "The Mouth, Pharynx, and Esophagus",
+      "moduleSha256": "caa2fe940fdf213963f4d5f79dd0a633994ad64adc44b09ec3526e1676b28866"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/23-the-digestive-system/04-the-stomach.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "23.4",
+      "moduleId": "m46517",
+      "sourceTitle": "The Stomach",
+      "moduleSha256": "b3ca006d3eb79f334e6afd2e2d731307d418e04323dd32fb2f6bcbf8c216bd57"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/23-the-digestive-system/05-the-small-and-large-intestines.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "23.5",
+      "moduleId": "m46512",
+      "sourceTitle": "The Small and Large Intestines",
+      "moduleSha256": "107e6c8914db286b7b3e659086ad9a00fe8ee542f4fb107433a67427060c2ab6"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/23-the-digestive-system/06-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "23.6",
+      "moduleId": "m46496",
+      "sourceTitle": "Accessory Organs in Digestion: The Liver, Pancreas, and Gallbladder",
+      "moduleSha256": "3d85800214ada0c31d9280b86a9a5781d1e371d4b7434e38239a44f241f8bbc3"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/23-the-digestive-system/07-chemical-digestion-and-absorption-a-closer-look.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "23.7",
+      "moduleId": "m46501",
+      "sourceTitle": "Chemical Digestion and Absorption: A Closer Look",
+      "moduleSha256": "c827edc205a763b102b57124dd3b64428967f6a2ecb1987a26621d09d99d1776"
     },
     {
       "localPath": "content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md",

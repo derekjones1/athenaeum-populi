@@ -13,7 +13,7 @@ all three before authoring a section (chapter-run authors: the sections
 `docs/briefs/anatomy-physiology/author.md` names).
 
 Written from the **September 22, 2026 scan** of the pinned source; chapter
-1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, chapter 5 on October 14, 2026, chapter 6 on October 15, 2026, chapters 7, 8, and 9 on October 16, 2026, chapters 10 and 11 on October 18, 2026, chapter 12 on October 20, 2026, chapters 13, 14, and 15 on October 21, 2026, and chapters 16 and 17 on October 24, 2026, chapter 18 on October 25, 2026, and chapter 19 the same day, and chapters 20 and 21 on October 26, 2026, and chapter 22 (Unit 5's first) on October 27, 2026.
+1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, chapter 5 on October 14, 2026, chapter 6 on October 15, 2026, chapters 7, 8, and 9 on October 16, 2026, chapters 10 and 11 on October 18, 2026, chapter 12 on October 20, 2026, chapters 13, 14, and 15 on October 21, 2026, and chapters 16 and 17 on October 24, 2026, chapter 18 on October 25, 2026, and chapter 19 the same day, and chapters 20 and 21 on October 26, 2026, and chapter 22 (Unit 5's first) on October 27, 2026, and chapter 23 on October 28, 2026.
 A rule tagged *(pilot)* or *(chapter N)* came from authoring that chapter;
 the per-chapter record is `docs/history/anatomy-physiology.md`. A
 correction that is not folded back into a rule will be made again.
@@ -38,7 +38,10 @@ correction that is not folded back into a rule will be made again.
   the CNXML.**
 
 **The September 8, 2026 set: 16 modules (12 text or file-name changes, 4
-images replaced in place).** Section numbers are the collection's; a CNXML
+images replaced in place), plus one PDF/CNXML difference the chapter 23 run
+found that no upstream erratum explains (23.1, m46506) — the table is not
+exhaustive, and a module outside it whose pinned CNXML disagrees with the
+PDF gets a row here and a disclosed correction on the page, not silence.** Section numbers are the collection's; a CNXML
 figure id (`fig-ch23_01_08`) carries an older edition's chapter number, not
 the section.
 
@@ -50,6 +53,7 @@ the section.
 | 11.5 | m46495 | table typo "rotests" → "rotates" |
 | 14.3 | m46574 | "Walter" → "Wilder" Penfield |
 | 22.1 | m46548 | trachea figure now two-panel (`2308_The_Trachea-ab.jpg`) with a new alt |
+| 23.1 | m46506 | submucosa body sentence reads "A broad layer of loose connective tissue" in the pinned CNXML; the PDF (p. 1026, index 1042) and the module's own glossary print "dense"; the page prints "dense" as a disclosed claim correction (chapter 23 run, October 28, 2026) |
 | 23.3 | m46511 | the sentence on the tongue's glands secreting lingual lipase cut |
 | 23.5 | m46512 | glossary "mucous-" → "mucus-secreting" |
 | 24.2 | m46451 | fermentation: *pyruvate*, not lactic acid, is the final electron acceptor |
@@ -181,7 +185,13 @@ NO `anatomy interactive` note (12.2's two) gets an **Interactive Link**
 callout built from the pooled item's own text, placed where the source's
 `interactive-exercise` set sits (after the last body subsection, before
 `## Summary`), its URL kept when it has one; the footer says the source
-prints no in-module note *(ruled October 20, 2026, chapter 12)*.
+prints no in-module note *(ruled October 20, 2026, chapter 12)*. An
+Interactive Link Question whose printed solution is the non-answer "Answers
+may vary." (every one in chapter 23, the only chapter so printed) is the
+same case as a key that answers a different question: it stands as a prompt
+even when the module text would fix the answer, with a one-line Source note
+under its callout, a footer clause, and one erratum per module *(ruled
+October 28, 2026, chapter 23; errata 2625–2630)*.
 
 ### 2. Feature boxes
 
@@ -469,6 +479,34 @@ Lessons — baseline rules this book's vocabulary makes easy to break:
 - **An equation inside `alt` or `longdesc` takes Unicode subscripts**
   (`P₁V₁ = P₂V₂`): the ASCII-formula lint rejects "P1V1" there, and math
   is never in an attribute *(chapter 22)*.
+- **The distractor-falsifying rule binds every author stem, not only
+  sortbins members**: 23.6's first objective had no source item, and any
+  author stem stating the liver's role would have made Review Question 1's
+  "synthesized in the gallbladder" plainly false, so the author used a
+  `selfcheck` there *(chapter 23)*.
+- **A recall or cloze stem that prints the key's own root hands the key
+  over** ("colon" and "liver" in a stem keyed *right colic flexure* with
+  "hepatic" accepted; "lipid digestion … the enzyme ___" keyed *pancreatic
+  lipase*): the checker reads each stem against its key's roots, and the
+  item is re-blanked or replaced — no lint catches a root yet *(chapter
+  23)*.
+- **A sortbins member that shares a root with a DIFFERENT bin's label is a
+  decoy, not a giveaway, and stands** (23.4's Somatostatin member "Restricts
+  all gastric secretions" beside the Gastrin bin) *(chapter 23)*.
+- **Part C's sortbins candidates are read against the sibling Critical
+  Thinking STEMS as well as the Review keys**: 23.2's first Critical Thinking
+  stem placed segmentation and slow propulsion in the small intestine, and
+  the author dropped those members *(chapter 23)*.
+- **A claim pass's "parent's call" direction on an internal contradiction is
+  settled by the standard account plus the module's glossary and the
+  printed edition together**: 23.1's submucosa "loose" (pinned body) vs
+  "dense" (glossary, PDF, histology texts) went to "dense"; its adventitia
+  "dense sheath" (23.1) vs "loose connective tissue" (23.3, histology texts)
+  went to "loose" *(chapter 23)*.
+- **A module with three nesting levels of `<section>` takes `####` for the
+  third** (23.5's Circular folds / Villi / Microvilli under Histology), as
+  the Biology and Microbiology pages already do; it builds and renders as
+  `h4` *(chapter 23)*.
 
 The three readings and the blind solve run as
 `docs/briefs/anatomy-physiology/run.md` describes.

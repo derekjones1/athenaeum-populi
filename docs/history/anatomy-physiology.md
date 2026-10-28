@@ -1758,6 +1758,89 @@ by the blind solve and not only by the claim pass. Two-ruling items are now
 routine. A table-recall distractor copied from another row can be a second
 true option when the body states the same function for both components.
 
+## Chapter 23 (October 28, 2026)
+
+*The Digestive System*, the second chapter of Unit 5, *Energy, Maintenance,
+and Environmental Exchange*: seven sections (m46506, m46502, m46511, m46517,
+m46512, m46496, m46501; intro m46505), run the day after chapter 22 from
+`docs/briefs/anatomy-physiology/run.md`, with seven Opus authors launched
+together, seven Opus checkers, one Opus claim pass, one Opus alt-errata
+verifier, a fresh Fable blind solver, and Sonnet Clerks for the landing page,
+run facts, pins, errata draft, and this entry. It has 33 vendored images
+(2400–2433, no 2432). The source carries 50 exercises (25 Review, 18 Critical
+Thinking, 7 Interactive Link). The pages carry 80 graded items solved blind.
+Errata 2625–2671. The run is committed at close-out (Derek: commit after
+every run).
+
+Two kinds of ruling shaped the run. Every Interactive Link solution in this
+chapter is "Answers may vary." (the only chapter of the book where that is
+true), so all seven Interactive Link items are prompt-only with a Source note
+under the callout, and one erratum was reserved per module (2625–2630; 2629
+names both of 23.5's items). The 23.1 accessory-organ sentence pointed at the
+layers figure, which draws no accessory organ; the checker and the author both
+doubted the parent's first ruling to keep the pointer, the parent reversed it,
+and the sentence now points at the components figure (2631), as the 20.5
+precedent does; the verifier confirmed it. The claim pass found one true
+distractor, 23.3's hiatus Review Question, whose option "lower esophageal
+sphincter" is defensible on the module's own words; its options were replaced
+and the deviation recorded (2632). The key "chloride ions" for salivary amylase
+stands on the standard account and is a Reviewed-not-errata line, not an
+erratum.
+
+The solve answered 80 graded items: 79 agreed on the first read, none
+disagreed, and one was flagged, the 23.6 cloze keyed "hepatopancreatic
+ampulla", which a claim correction then made a corrected term that cannot key
+an item. It was replaced with an endocrine cloze, and a two-item re-solve of
+that cloze and of the re-optioned hiatus item agreed, so 80 of 80. The claim
+pass found 17 findings, all accepted after the parent read the evidence (about
+250k tokens); the parent ruled three more from the verifier's claim-type items
+(F18 to F20), so the run corrected 20 claims, numbered in page order
+(2633–2652). Among them: the submucosa is "loose" in the pinned CNXML body and
+"dense" in the module's glossary and the printed PDF, and the page prints
+"dense" (F2, 2633; 23.1 was not in the September 8 table, so the run added a
+new row for m46506); the skeletal muscle of the esophagus is in its upper
+part, not its "anterior part" (F1); the adventitia (F3); the fungiform papillae
+(F4); the mumps count (F5); a pharynx caption that runs it "from the
+nostrils" (F6); a caption that calls hydrochloric acid an enzyme (F7); the
+cardia glossary (F8); ghrelin (F9); "five times longer" against "one-half as
+long" for the small intestine (F10); the ileum against the jejunum (F11); a
+fiber and calcium sentence restated to the current WCRF/AICR evidence (F12);
+the falciform ligament (F13); the green color of bile attributed to bilirubin (F14); the closing
+hepatopancreatic ampulla (F15); water-soluble vitamin absorption (F16); and
+pancreatic amylase "completes" carbohydrate digestion, which the brush border
+enzymes do (F17). The verifier's three: "These two plexuses" as the enteric
+nervous system, when 23.1 makes the enteric system the intrinsic plexuses only
+(F18); the esophagus table's lower esophageal sphincter outcome (F19); and a
+colon that "runs from the appendix", which is the cecum (F20). The kept
+sentence is 23.5's "four main regions … anus" against three, which stays as
+printed and goes to Reviewed-not-errata with the lingual-lipase sentence
+(upstream cut one sentence and kept the table row and 23.4), the screening
+age, and the epithelial lifespans. Ten alt and artwork defects were confirmed
+(2653–2662: "chime" three times in 2419, "Taenia Coli" in 2433, 2413's "right
+panel's shows", 2418, 2412's "from the mouth", the stomach flow chart's
+"Overides" and "acidic.", the interlobular vein label of 2423 at medium-low
+confidence, 2429's "This diagrams shows", and 2427's artwork naming amylase
+where sucrase and lactase belong, medium confidence), and nine typographic
+ones in the text (2663–2671). Rejected: the 2428 alt (the author's withdrawal
+stands), 2414, 2415, and the 2427 pointer; "cross-section" for a lengthwise
+cut in 2409, 2411, and 2414 is not a defect by the chapter 13 precedent.
+
+Lessons. A chapter whose every Interactive Link solution is a non-answer
+needs its own reserved block of errata. A figure pointer two authors doubt
+deserves a re-rule, not a defence. Part C miscounted 23.5's figures from the
+PDF page count (6, not 11). A cloze or recall whose own stem prints the key's
+root passes the keys gate; the checker found two (the right colic flexure and
+pancreatic lipase), and a lint fold is a candidate. A corrected term cannot key
+an author item (23.6's ampulla), as in chapter 15. The "falsify a sibling
+distractor" rule, written for sortbins members, was applied to every author
+stem by 23.6's author and reads soundly; a playbook line is owed. The
+possessive "s" is not folded, so "Kupffer's cell" is rejected when the module
+prints "Kupffer cells". 23.5 is the first A&P page to use `####` headings; the
+build renders eleven h4s. Checkers found four defects in 23.1, three in 23.2,
+none in 23.4 and 23.7, one in 23.3 and 23.6, and five in 23.5, and no hash
+moved after the claim fixes except the two items above. The checkers and
+solver each read keys once before answering (a process slip, re-derived).
+
 ## Chapter 21 (October 26, 2026)
 
 *The Lymphatic and Immune System*, the fourth and last chapter of Unit 4,

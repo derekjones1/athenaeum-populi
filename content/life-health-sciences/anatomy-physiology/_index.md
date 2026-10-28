@@ -134,14 +134,18 @@ reproduction, development, and inheritance.
   breathing, gas exchange, transport of gases, modifications in respiratory
   function with exercise and altitude, and the embryonic development of the
   respiratory system.
+- **The Digestive System** — an overview of the digestive system, digestive
+  system processes and regulation, the mouth, pharynx, and esophagus, the
+  stomach, the small and large intestines, the accessory organs in digestion
+  (the liver, pancreas, and gallbladder), and chemical digestion and
+  absorption.
 
 ## Planned contents
 
 The remaining chapters of Anatomy and Physiology 2e's six units will
 appear in this order:
 
-- **Unit 5: Energy, Maintenance, and Environmental Exchange** — The
-  Digestive System; Metabolism and Nutrition; The
+- **Unit 5: Energy, Maintenance, and Environmental Exchange** — Metabolism and Nutrition; The
   Urinary System; Fluid, Electrolyte, and Acid-Base Balance.
 - **Unit 6: Human Development and the Continuity of Life** — The Reproductive
   System; Development and Inheritance.

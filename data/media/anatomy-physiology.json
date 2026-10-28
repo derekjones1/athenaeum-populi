@@ -9705,6 +9705,685 @@
       "alt": "This photo shows two hyperbaric chambers.",
       "caption": "(credit: “komunews”/flickr.com)"
     },
+    "2400_Women_Eating_Apples": {
+      "source": "media/2400_Women_Eating_Apples.jpg",
+      "sourceSha256": "9c1f0fbc4168b37bdbf831a4626dd7424f0abb18bdaf347b7a81457dec8e3265",
+      "module": "m46505",
+      "kind": "photo",
+      "width": 1144,
+      "height": 526,
+      "variants": [
+        {
+          "width": 800,
+          "height": 368,
+          "file": "2400_Women_Eating_Apples-800.webp"
+        },
+        {
+          "width": 1144,
+          "height": 526,
+          "file": "2400_Women_Eating_Apples-1144.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photograph shows two women eating apples.",
+      "caption": "Eating may be one of the simple pleasures in life, but digesting even one apple requires the coordinated work of many organs. (credit: “Aimanness Photography”/Flickr)"
+    },
+    "2401_Components_of_the_Digestive_System": {
+      "source": "media/2401_Components_of_the_Digestive_System.jpg",
+      "sourceSha256": "016c1cec466f7c76b918b1541f319cd3a79c8b5c3dab74e20031105e14c219e4",
+      "module": "m46506",
+      "kind": "photo",
+      "width": 1500,
+      "height": 1864,
+      "variants": [
+        {
+          "width": 800,
+          "height": 994,
+          "file": "2401_Components_of_the_Digestive_System-800.webp"
+        },
+        {
+          "width": 1500,
+          "height": 1864,
+          "file": "2401_Components_of_the_Digestive_System-1500.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the digestive system of a human being, with the major organs labeled.",
+      "caption": "All digestive organs play integral roles in the life-sustaining process of digestion."
+    },
+    "2402_Layers_of_the_Gastrointestinal_Tract": {
+      "source": "media/2402_Layers_of_the_Gastrointestinal_Tract.jpg",
+      "sourceSha256": "a318632388714858234a632ae8daa8d1ab053bc9fae9c9beeddaae3a54e45c20",
+      "module": "m46506",
+      "kind": "photo",
+      "width": 1059,
+      "height": 604,
+      "variants": [
+        {
+          "width": 800,
+          "height": 456,
+          "file": "2402_Layers_of_the_Gastrointestinal_Tract-800.webp"
+        },
+        {
+          "width": 1059,
+          "height": 604,
+          "file": "2402_Layers_of_the_Gastrointestinal_Tract-1059.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the cross section of the alimentary canal. The different layers of the alimentary canal are shown as concentric cylinders with major muscles and veins labeled.",
+      "caption": "The wall of the alimentary canal has four basic tissue layers: the mucosa, submucosa, muscularis, and serosa."
+    },
+    "2403_The_PeritoneumN": {
+      "source": "media/2403_The_PeritoneumN.jpg",
+      "sourceSha256": "465731f09d40e2bf5ad8db4cdd1fbd47a95f70a41811152d907194b9bcba1d22",
+      "module": "m46506",
+      "kind": "photo",
+      "width": 826,
+      "height": 589,
+      "variants": [
+        {
+          "width": 800,
+          "height": 570,
+          "file": "2403_The_PeritoneumN-800.webp"
+        },
+        {
+          "width": 826,
+          "height": 589,
+          "file": "2403_The_PeritoneumN-826.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the cross section of the abdomen. The peritoneum is made distinguishable from the abdominal organs through darker lines.",
+      "caption": "A cross-section of the abdomen shows the relationship between abdominal organs and the peritoneum (darker lines)."
+    },
+    "2404_PeristalsisN": {
+      "source": "media/2404_PeristalsisN.jpg",
+      "sourceSha256": "da2e3b30e7e372070208161b45c034e4d52e8739f431f6baf0dbf355383badd0",
+      "module": "m46502",
+      "kind": "photo",
+      "width": 542,
+      "height": 405,
+      "variants": [
+        {
+          "width": 542,
+          "height": 405,
+          "file": "2404_PeristalsisN-542.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the peristaltic movement of food. In the left image, the food bolus is towards the top of the esophagus and arrows pointing downward show the direction of movement of the peristaltic wave. In the center image, the food bolus and the wave movement are closer to the center of the esophagus and in the right image, the bolus and the wave are close to the bottom end of the esophagus.",
+      "caption": "Peristalsis moves food through the digestive tract with alternating waves of muscle contraction and relaxation."
+    },
+    "2405_Digestive_Process": {
+      "source": "media/2405_Digestive_Process.jpg",
+      "sourceSha256": "8de5fa695eaa6b3f04f26987120d9cf9e093f027535a157ec293560fcb79c45e",
+      "module": "m46502",
+      "kind": "photo",
+      "width": 1776,
+      "height": 1864,
+      "variants": [
+        {
+          "width": 800,
+          "height": 839,
+          "file": "2405_Digestive_Process-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1679,
+          "file": "2405_Digestive_Process-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the different processes involved in digestion. The image shows how food travels from the mouth through the major organs. Associated textboxes list the different processes such as propulsion, chemical and mechanical digestion and absorption near the organs where they take place.",
+      "caption": "The digestive processes are ingestion, propulsion, mechanical digestion, chemical digestion, absorption, and defecation."
+    },
+    "2406_Structures_of_the_Mouth": {
+      "source": "media/2406_Structures_of_the_Mouth.jpg",
+      "sourceSha256": "4f2a7297eea414017388124f14a8317340941d005ab54f5e073256746b885a05",
+      "module": "m46511",
+      "kind": "photo",
+      "width": 1075,
+      "height": 1028,
+      "variants": [
+        {
+          "width": 800,
+          "height": 765,
+          "file": "2406_Structures_of_the_Mouth-800.webp"
+        },
+        {
+          "width": 1075,
+          "height": 1028,
+          "file": "2406_Structures_of_the_Mouth-1075.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the structure of the mouth. The teeth, lips, tongue, gums and many other parts are labeled.",
+      "caption": "The mouth includes the lips, tongue, palate, gums, and teeth."
+    },
+    "2407_Tongue": {
+      "source": "media/2407_Tongue.jpg",
+      "sourceSha256": "41e584ea1d16242aed02ac6c1371eed5cfd0a8a91da9ea7fd0d4c2b31dcee8dd",
+      "module": "m46511",
+      "kind": "photo",
+      "width": 626,
+      "height": 557,
+      "variants": [
+        {
+          "width": 626,
+          "height": 557,
+          "file": "2407_Tongue-626.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the structure of the tongue and different parts of the tongue are labeled.",
+      "caption": "This superior view of the tongue shows the locations and types of lingual papillae."
+    },
+    "2408_Salivary_Glands": {
+      "source": "media/2408_Salivary_Glands.jpg",
+      "sourceSha256": "06bce4d687ea311ab80443e4f2e16f6b7d1349bf319b3e6b16fdf6ade5a543a5",
+      "module": "m46511",
+      "kind": "photo",
+      "width": 586,
+      "height": 542,
+      "variants": [
+        {
+          "width": 586,
+          "height": 542,
+          "file": "2408_Salivary_Glands-586.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the location of the salivary glands with reference to the teeth. The different salivary glands are labeled.",
+      "caption": "The major salivary glands are located outside the oral mucosa and deliver saliva into the mouth through ducts."
+    },
+    "2409_Tooth": {
+      "source": "media/2409_Tooth.jpg",
+      "sourceSha256": "4efa2a737accbac4f75e008d89130de16a0bc214408633e2ffbeb1603ab3ffba",
+      "module": "m46511",
+      "kind": "photo",
+      "width": 1281,
+      "height": 1010,
+      "variants": [
+        {
+          "width": 800,
+          "height": 630,
+          "file": "2409_Tooth-800.webp"
+        },
+        {
+          "width": 1281,
+          "height": 1010,
+          "file": "2409_Tooth-1281.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows a cross-section of a human tooth elucidating its structure. The major parts of the tooth along with the blood vessels are shown.",
+      "caption": "This longitudinal section through a molar in its alveolar socket shows the relationships between enamel, dentin, and pulp."
+    },
+    "2410_Permanent_and_Deciduous_TeethN": {
+      "source": "media/2410_Permanent_and_Deciduous_TeethN.jpg",
+      "sourceSha256": "0bc890d10f1e3d5fd2781151e66b8ef2a5abdf00eea35e9807ed9bf4f64700be",
+      "module": "m46511",
+      "kind": "photo",
+      "width": 660,
+      "height": 1110,
+      "variants": [
+        {
+          "width": 660,
+          "height": 1110,
+          "file": "2410_Permanent_and_Deciduous_TeethN-660.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the arrangement of permanent and deciduous teeth in human. The permanent teeth are labeled along with the average age at which they emerge. An inset shows the arrangement of the deciduous teeth, with the age at which they emerge listed.",
+      "caption": "This figure of two human dentitions shows the arrangement of teeth in the maxilla and mandible, and the relationship between the deciduous and permanent teeth."
+    },
+    "2411_Pharynx": {
+      "source": "media/2411_Pharynx.jpg",
+      "sourceSha256": "17e370daa011b4826119d16f3cfe5730bc5cd82524e54b038cfe6a395bc42ec4",
+      "module": "m46511",
+      "kind": "photo",
+      "width": 792,
+      "height": 927,
+      "variants": [
+        {
+          "width": 792,
+          "height": 927,
+          "file": "2411_Pharynx-792.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the cross-section of a human face and highlights the location of the pharynx, which runs from the nostrils to the esophagus and the larynx.",
+      "caption": "The pharynx runs from the nostrils to the esophagus and the larynx."
+    },
+    "2412_The_Esophagus": {
+      "source": "media/2412_The_Esophagus.jpg",
+      "sourceSha256": "ff91166c73516ba29ef68f165fa65f1fe9187f0e6ebaf2e198ecf7ebcea2cd59",
+      "module": "m46511",
+      "kind": "photo",
+      "width": 619,
+      "height": 824,
+      "variants": [
+        {
+          "width": 619,
+          "height": 824,
+          "file": "2412_The_Esophagus-619.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the esophagus, going from the mouth to the stomach. The upper and the lower esophageal sphincter are labeled.",
+      "caption": "The upper esophageal sphincter controls the movement of food from the pharynx to the esophagus. The lower esophageal sphincter controls the movement of food from the esophagus to the stomach."
+    },
+    "2413_DeglutitionN": {
+      "source": "media/2413_DeglutitionN.jpg",
+      "sourceSha256": "c241447f395e3bb4aa26360bb83fc45c61e32c5359c4f0ed63c65077cedfad81",
+      "module": "m46511",
+      "kind": "photo",
+      "width": 1017,
+      "height": 575,
+      "variants": [
+        {
+          "width": 800,
+          "height": 452,
+          "file": "2413_DeglutitionN-800.webp"
+        },
+        {
+          "width": 1017,
+          "height": 575,
+          "file": "2413_DeglutitionN-1017.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the three different phases of deglutition. The left panel shows the voluntary phase, the middle panel shows the pharyngeal phase and the right panel’s shows the esophageal phase.",
+      "caption": "Deglutition includes the voluntary phase and two involuntary phases: the pharyngeal phase and the esophageal phase."
+    },
+    "2414_Stomach": {
+      "source": "media/2414_Stomach.jpg",
+      "sourceSha256": "32c814b50a8d86b9d416e8eeadab5270ae1c57405b141db4dd8eecf23de55fdf",
+      "module": "m46517",
+      "kind": "photo",
+      "width": 1122,
+      "height": 741,
+      "variants": [
+        {
+          "width": 800,
+          "height": 528,
+          "file": "2414_Stomach-800.webp"
+        },
+        {
+          "width": 1122,
+          "height": 741,
+          "file": "2414_Stomach-1122.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows a cross-section of the stomach, and the major parts: the cardia, fundus, body and pylorus are labeled.",
+      "caption": "The stomach has four major regions: the cardia, fundus, body, and pylorus. The addition of an inner oblique smooth muscle layer gives the muscularis the ability to vigorously churn and mix food."
+    },
+    "2415_Histology_of_StomachN": {
+      "source": "media/2415_Histology_of_StomachN.jpg",
+      "sourceSha256": "f9f915213533d0a3e9607aa88c2ea276de20dba618953828944ff278a6e86c10",
+      "module": "m46517",
+      "kind": "photo",
+      "width": 1214,
+      "height": 568,
+      "variants": [
+        {
+          "width": 800,
+          "height": 374,
+          "file": "2415_Histology_of_StomachN-800.webp"
+        },
+        {
+          "width": 1214,
+          "height": 568,
+          "file": "2415_Histology_of_StomachN-1214.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the histological cross-section of the stomach. The left panel shows the stomach and the center panel shows a magnified view of a small region including the epithelium and the gastric glands. The right panel shows a further magnification of the mucosa and the different cell types are labeled.",
+      "caption": "The stomach wall is adapted for the functions of the stomach. In the epithelium, gastric pits lead to gastric glands that secrete gastric juice. The gastric glands (one gland is shown enlarged on the right) contain different types of cells that secrete a variety of enzymes, including hydrochloride acid, which activates the protein-digesting enzyme pepsin."
+    },
+    "2416_Three_Phases_Gastric_Secretion": {
+      "source": "media/2416_Three_Phases_Gastric_Secretion.jpg",
+      "sourceSha256": "b6cd41d2aeb74b091c2804d5afbb76c624e143fd8fd31b4cc1ea973cd6d3545d",
+      "module": "m46517",
+      "kind": "photo",
+      "width": 950,
+      "height": 1313,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1105,
+          "file": "2416_Three_Phases_Gastric_Secretion-800.webp"
+        },
+        {
+          "width": 950,
+          "height": 1313,
+          "file": "2416_Three_Phases_Gastric_Secretion-950.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This flowchart shows the three different phases of gastric secretion. The top panel shows the cephalic phase, the middle panel shows the gastric phase and the bottom panel shows the intestinal phase.",
+      "caption": "Gastric secretion occurs in three phases: cephalic, gastric, and intestinal. During each phase, the secretion of gastric juice can be stimulated or inhibited."
+    },
+    "2417_Small_IntestineN": {
+      "source": "media/2417_Small_IntestineN.jpg",
+      "sourceSha256": "78f2da45cafc2ba2d038f8b2f39b9c3e1a964c34ff3eb1331ec3514edd303aa2",
+      "module": "m46512",
+      "kind": "photo",
+      "width": 839,
+      "height": 552,
+      "variants": [
+        {
+          "width": 800,
+          "height": 526,
+          "file": "2417_Small_IntestineN-800.webp"
+        },
+        {
+          "width": 839,
+          "height": 552,
+          "file": "2417_Small_IntestineN-839.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the small intestine. The different parts of the small intestine are labeled.",
+      "caption": "The three regions of the small intestine are the duodenum, jejunum, and ileum."
+    },
+    "2418_Histology_Small_IntestinesN": {
+      "source": "media/2418_Histology_Small_IntestinesN.jpg",
+      "sourceSha256": "3d3b8bb034b1df45866e8fd1bd2bdff222a3edf82eaa093371d83464bfc572b6",
+      "module": "m46512",
+      "kind": "photo",
+      "width": 2231,
+      "height": 1644,
+      "variants": [
+        {
+          "width": 800,
+          "height": 589,
+          "file": "2418_Histology_Small_IntestinesN-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1179,
+          "file": "2418_Histology_Small_IntestinesN-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Illustration (a) shows the histological cross-section of the small intestine. The left panel shows a small region of the small intestine, along with the blood vessels and the muscle layers. The middle panel shows a magnified view of a small region of the small intestine, highlighting the absorptive cells, the lacteal and the goblet cells. The right panel shows a further magnified view of the epithelial cells including the microvilli. Illustrations (b) shows a micrograph of the circular folds, and illustration (c) shows a micrograph of the villi. Illustration (d) shows an electron micrograph of the microvilli.",
+      "caption": "(a) The absorptive surface of the small intestine is vastly enlarged by the presence of circular folds, villi, and microvilli. (b) Micrograph of the circular folds. (c) Micrograph of the villi. (d) Electron micrograph of the microvilli. From left to right, LM x 56, LM x 508, EM x 196,000. (credit b-d: Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "2419_Segmentation": {
+      "source": "media/2419_Segmentation.jpg",
+      "sourceSha256": "545e4e15019ec6e9e0314f11660e57535a0e108db6290c6ca50543f7c8d7781f",
+      "module": "m46512",
+      "kind": "photo",
+      "width": 442,
+      "height": 484,
+      "variants": [
+        {
+          "width": 442,
+          "height": 484,
+          "file": "2419_Segmentation-442.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the process of segmentation in the intestines. The left panel shows the separation of chime, the middle panel shows the remixing of the chime by pushing it back together and the right panel indicates that the chime is being digested and absorbed.",
+      "caption": "Segmentation separates chyme and then pushes it back together, mixing it and providing time for digestion and absorption."
+    },
+    "2420_Large_Intestine": {
+      "source": "media/2420_Large_Intestine.jpg",
+      "sourceSha256": "43ee32da0211be818d4ae5b77b369bfef1b7aed593948f9c8655dedd89feaf78",
+      "module": "m46512",
+      "kind": "photo",
+      "width": 633,
+      "height": 427,
+      "variants": [
+        {
+          "width": 633,
+          "height": 427,
+          "file": "2420_Large_Intestine-633.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the large intestine; the major parts of the large intestine are labeled.",
+      "caption": "The large intestine includes the cecum, colon, and rectum."
+    },
+    "2421_Histology_of_the_Large_IntestineN": {
+      "source": "media/2421_Histology_of_the_Large_IntestineN.jpg",
+      "sourceSha256": "1684737ba76983bff2f4dedba115910b5cd0d794201f724e149168e3c6cf3792",
+      "module": "m46512",
+      "kind": "photo",
+      "width": 1085,
+      "height": 923,
+      "variants": [
+        {
+          "width": 800,
+          "height": 680,
+          "file": "2421_Histology_of_the_Large_IntestineN-800.webp"
+        },
+        {
+          "width": 1085,
+          "height": 923,
+          "file": "2421_Histology_of_the_Large_IntestineN-1085.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the histological cross section of the large intestine. The left panel shows a small region of the large intestine. The center panel shows a magnified view of this region, highlighting the openings of the intestinal glands. The right panel shows a further magnified view, with the microvilli and goblet cells.",
+      "caption": "(a) The histologies of the large intestine and small intestine (not shown) are adapted for the digestive functions of each organ. (b) This micrograph shows the colon’s simple columnar epithelium and goblet cells. LM x 464. (credit b: Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "2422_Accessory_Organs": {
+      "source": "media/2422_Accessory_Organs.jpg",
+      "sourceSha256": "0880ee529f2a132ea69c6e993705343829c388d211522fdb219711fac640138f",
+      "module": "m46496",
+      "kind": "photo",
+      "width": 805,
+      "height": 1002,
+      "variants": [
+        {
+          "width": 800,
+          "height": 995,
+          "file": "2422_Accessory_Organs-800.webp"
+        },
+        {
+          "width": 805,
+          "height": 1002,
+          "file": "2422_Accessory_Organs-805.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the accessory organs of the digestive system. The liver, spleen, pancreas, gallbladder and their major parts are shown.",
+      "caption": "The liver, pancreas, and gallbladder are considered accessory digestive organs, but their roles in the digestive system are vital."
+    },
+    "2423_Microscopic_Anatomy_of_Liver": {
+      "source": "media/2423_Microscopic_Anatomy_of_Liver.jpg",
+      "sourceSha256": "fcda18a635dc699f7e05f4880e22d8c1d24f04f1bc73a88340e09778367dd277",
+      "module": "m46496",
+      "kind": "photo",
+      "width": 721,
+      "height": 824,
+      "variants": [
+        {
+          "width": 721,
+          "height": 824,
+          "file": "2423_Microscopic_Anatomy_of_Liver-721.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the microscopic anatomy of the liver. The top panel shows the liver; the center panel shows a magnified view of the connective tissue and the lobules. The bottom panel shows a further magnified view of a lobule, identifying the veins, bile duct and the sinusoids.",
+      "caption": "The liver receives oxygenated blood from the hepatic artery and nutrient-rich deoxygenated blood from the hepatic portal vein."
+    },
+    "2424_Exocrine_and_Endocrine_Pancreas": {
+      "source": "media/2424_Exocrine_and_Endocrine_Pancreas.jpg",
+      "sourceSha256": "dc6fd2bf1ea8c4a72067a60ec729c3a5577b4915a5cadcabb2140bb991204e93",
+      "module": "m46496",
+      "kind": "photo",
+      "width": 637,
+      "height": 827,
+      "variants": [
+        {
+          "width": 637,
+          "height": 827,
+          "file": "2424_Exocrine_and_Endocrine_Pancreas-637.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the pancreas and its major parts. A magnified view of a small region of the pancreas shows the pancreatic islet cells, the acinar cells and the pancreatic duct.",
+      "caption": "The pancreas has a head, a body, and a tail. It delivers pancreatic juice to the duodenum through the pancreatic duct."
+    },
+    "2425_Gallbladder": {
+      "source": "media/2425_Gallbladder.jpg",
+      "sourceSha256": "548f49e4ffbb6dc7061a08b57b13c9f9c13f777bcb21f7affa10ec99ec4e3d7e",
+      "module": "m46496",
+      "kind": "photo",
+      "width": 787,
+      "height": 641,
+      "variants": [
+        {
+          "width": 787,
+          "height": 641,
+          "file": "2425_Gallbladder-787.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the gallbladder and its major parts are labeled.",
+      "caption": "The gallbladder stores and concentrates bile, and releases it into the two-way cystic duct when it is needed by the small intestine."
+    },
+    "2426_Mechanical_and_Chemical_DigestionN": {
+      "source": "media/2426_Mechanical_and_Chemical_DigestionN.jpg",
+      "sourceSha256": "553df4103fde72346610b8a133547efc91865b90b74852a17ef2526cb8544c70",
+      "module": "m46501",
+      "kind": "photo",
+      "width": 636,
+      "height": 790,
+      "variants": [
+        {
+          "width": 636,
+          "height": 790,
+          "file": "2426_Mechanical_and_Chemical_DigestionN-636.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram identifies the functions of mechanical and chemical digestion and absorption at each organ. Next to each organ, a callout identifies which steps of digestion take place in that particular organ.",
+      "caption": "Digestion begins in the mouth and continues as food travels through the small intestine. Most absorption occurs in the small intestine."
+    },
+    "2427_Carbon_Digestion": {
+      "source": "media/2427_Carbon_Digestion.jpg",
+      "sourceSha256": "d41aee55f7eb47928cf0144233557c79b45cc349e6139b9f5e2182d6f5a8bb47",
+      "module": "m46501",
+      "kind": "photo",
+      "width": 1635,
+      "height": 1080,
+      "variants": [
+        {
+          "width": 800,
+          "height": 528,
+          "file": "2427_Carbon_Digestion-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1057,
+          "file": "2427_Carbon_Digestion-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This flow chart shows the steps in digestion of carbohydrates. The different levels shown are starch and glycogen, disaccharides and monosaccharides. Under each type of sugar, examples and the enzymes responsible for digestion are listed.",
+      "caption": "Carbohydrates are broken down into their monomers in a series of steps."
+    },
+    "2428_Digestion_of_Proteins": {
+      "source": "media/2428_Digestion_of_Proteins.jpg",
+      "sourceSha256": "ae59aaaae3cfd6c7ae497461035ca1a55b2f8aed52d8320b5ff17b86bff67e84",
+      "module": "m46501",
+      "kind": "photo",
+      "width": 328,
+      "height": 677,
+      "variants": [
+        {
+          "width": 328,
+          "height": 677,
+          "file": "2428_Digestion_of_Proteins-328.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This flow chart shows the different steps in the digestion of protein. The four steps shown are protein, large polypeptides, short peptides and amino acids and amino acids.",
+      "caption": "Proteins are successively broken down into their amino acid components."
+    },
+    "2429_Digestion_of_Proteins__Physiology_": {
+      "source": "media/2429_Digestion_of_Proteins__Physiology_.jpg",
+      "sourceSha256": "e3b96c57593718f3f998f2becf01c428675a372d4db935b93680ec99d0754412",
+      "module": "m46501",
+      "kind": "photo",
+      "width": 1281,
+      "height": 1602,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1000,
+          "file": "2429_Digestion_of_Proteins__Physiology_-800.webp"
+        },
+        {
+          "width": 1281,
+          "height": 1602,
+          "file": "2429_Digestion_of_Proteins__Physiology_-1281.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagrams shows the human digestive system and identifies the role of each organ in protein digestion. A text call-out next to each organ details the specific function.",
+      "caption": "The digestion of protein begins in the stomach and is completed in the small intestine."
+    },
+    "2430_Digestive_Secretions_Absorption_of_WaterN": {
+      "source": "media/2430_Digestive_Secretions_Absorption_of_WaterN.jpg",
+      "sourceSha256": "a2c27f99d30539f13ca7d1fdf223f1a5ff2919215cdbd9f914ee207dee8deea6",
+      "module": "m46501",
+      "kind": "photo",
+      "width": 636,
+      "height": 818,
+      "variants": [
+        {
+          "width": 636,
+          "height": 818,
+          "file": "2430_Digestive_Secretions_Absorption_of_WaterN-636.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the human digestive system. Next to each organ, a text callout identifies how water and digestive secretions such as saliva and bile are processed.",
+      "caption": "Absorption is a complex process, in which nutrients from digested food are harvested."
+    },
+    "2431_Lipid_Absorption": {
+      "source": "media/2431_Lipid_Absorption.jpg",
+      "sourceSha256": "22068b30d4daabe5d1aa0d1195c616ac3861a0e65e4c3da4b6c8e22035e1887c",
+      "module": "m46501",
+      "kind": "photo",
+      "width": 640,
+      "height": 827,
+      "variants": [
+        {
+          "width": 640,
+          "height": 827,
+          "file": "2431_Lipid_Absorption-640.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows how lipids are absorbed from the lumen of the intestine into the lacteals. The fatty acid micelles are shown to enter the epithelial cell and form chylomicrons inside the Golgi apparatus. Then, the chylomicrons are extruded from the epithelial cell and are taken up by the lacteals.",
+      "caption": "Unlike amino acids and simple sugars, lipids are transformed as they are absorbed through epithelial cells."
+    },
+    "2433_Teniae_Coli_Haustra_Epiploic_Appendage": {
+      "source": "media/2433_Teniae_Coli_Haustra_Epiploic_Appendage.jpg",
+      "sourceSha256": "4024ebb4c621dff602a6e51f80cbc760f88f6440ee3ef0afd6dbd17afa47a7e3",
+      "module": "m46512",
+      "kind": "photo",
+      "width": 636,
+      "height": 699,
+      "variants": [
+        {
+          "width": 636,
+          "height": 699,
+          "file": "2433_Teniae_Coli_Haustra_Epiploic_Appendage-636.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the Taenia Coli, haustra and epiploic appendages, which are parts of the large intestine.",
+      "caption": ""
+    },
     "400_Micrograph_of_Cervical_Tissue_updated": {
       "source": "media/400_Micrograph_of_Cervical_Tissue_updated.jpg",
       "sourceSha256": "b7f46b81d1081b06b8cf36b8864bb46298a4013a60a9c7416c1c181220cc33f6",

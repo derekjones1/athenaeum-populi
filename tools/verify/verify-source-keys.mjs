@@ -943,6 +943,13 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     erratum: 2478,
     reason: 'the source distractor "The brachial artery is the distal branch of the axillary artery." is a second true answer to "Which of the following statements is true?" — the module m46646\'s own fs-id1595346 says the axillary artery "continues into the upper arm, or brachium, and becomes the brachial artery"; the page prints "The brachial artery bifurcates into the radial and ulnar arteries at the wrist." in its place (the same paragraph says the brachial artery bifurcates "As the brachial artery approaches the coronoid fossa"); key "The radial and ulnar arteries join to form the palmar arch." unchanged',
   },
+  {
+    page: 'content/life-health-sciences/anatomy-physiology/23-the-digestive-system/03-the-mouth-pharynx-and-esophagus.md',
+    exercise: 'fs-id1890969',
+    kind: 'options',
+    erratum: 2632,
+    reason: 'the source distractor "lower esophageal sphincter" is a defensible second answer to "Which structure is located where the esophagus penetrates the diaphragm?" — the module m46511\'s own fs-id2101903 says "Surrounding this sphincter is the muscular diaphragm"; the page prints "laryngopharynx" in its place (fs-id1707702 puts it in the pharynx, its inferior border connecting to the esophagus, far above the diaphragm); key "esophageal hiatus" unchanged',
+  },
 ]);
 
 /* ---- source side ---------------------------------------------------------- */

@@ -284,7 +284,7 @@ the whole file to find the three entries that quote chapter 16 sentences
 until the claim pass has read the module: chapter 16's parent ruled 16.5's
 "processing visual information" key sound, and the claim pass found the
 module's own sentence attributing visual processing to the cerebrocerebellum,
-so the keyed option was changed (kind `key`, erratum 2316) *(chapter 16)*. The same holds for the blind solve: 22.1's bronchial-tree key stood on Part C and was overturned by the solver's reading of the glossary *(chapter 22)*.
+so the keyed option was changed (kind `key`, erratum 2316) *(chapter 16)*. The same holds for the blind solve: 22.1's bronchial-tree key stood on Part C and was overturned by the solver's reading of the glossary *(chapter 22)*. The solver's `alsoDefensible` flag can also anticipate a claim correction: 23.6's "valve-like hepatopancreatic ampulla" cloze was flagged for the sphincter before the claim pass's F15 reached the parent — read the flags against the claim report before adjudicating *(chapter 23)*.
 
 After the last author reports, run `node tools/source/openstax-source.mjs
 build-map` at once: `verify:source-coverage` and `verify:source-keys`
@@ -332,7 +332,10 @@ keys as for a replacement stem *(chapter 20)*. A section the size of 20.5
 first with a prompt line telling it to write the page in parts under
 `$SP/<unit>-*`, verify after each part, and keep crops in files: 276k tokens
 for the first round and 300k after the checker and claim rounds, no resume
-needed *(chapter 20)*.
+needed *(chapter 20)*. A prompt line that states a section's figure count quotes
+the CNXML `<figure` count, never the PDF page span: chapter 23's parent told
+the 23.5 author "11 figures" from its eleven PDF pages; the module has six
+*(chapter 23)*.
 A checker's "concern" that a hint rules out distractors is a defect to
 apply, not a note (21.1's three hints named the table or the reasoning
 step); and a Part B hedge ("the lint's digit-superscript rule applies")

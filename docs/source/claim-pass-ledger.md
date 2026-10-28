@@ -57,6 +57,7 @@ record. No Biology chapter is outstanding.
 | Anatomy and Physiology | 20-the-cardiovascular-system-blood-vessels-and-circulation | 6 | done Oct 26 2026 (in the authoring run) | 2480, 2488–2492, 2500, 2502–2512 |
 | Anatomy and Physiology | 21-the-lymphatic-and-immune-system | 7 | done Oct 26 2026 (in the authoring run) | 2532, 2546, 2547, 2552, 2557–2559, 2565–2567 |
 | Anatomy and Physiology | 22-the-respiratory-system | 7 | done Oct 27 2026 (in the authoring run); 10 findings (22.1 five, 22.3 one, 22.4 one, 22.5 one, 22.7 two; 22.2 and 22.6 none), 9 applied, 1 kept as printed (22.7 F10) | 2585–2589, 2599, 2607, 2609, 2620–2621 |
+| Anatomy and Physiology | 23-the-digestive-system | 7 | done Oct 28 2026 (in the authoring run); 20 findings (23.1 three, 23.2 one, 23.3 four, 23.4 three, 23.5 four, 23.6 three, 23.7 two; F18–F20 ruled from the verifier's claim-type items), all 20 applied, 1 options ruling (23.3 hiatus Review Question) | 2632–2652 |
 
 The Microbiology rows (26 chapters) are in `docs/history/microbiology.md`
 under "Prose claim pass rows". Knowledge-check pages (`knowledge-check-*.md`) carry no source prose and are
