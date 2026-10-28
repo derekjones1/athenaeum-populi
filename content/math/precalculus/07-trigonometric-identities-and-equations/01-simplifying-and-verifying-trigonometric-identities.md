@@ -451,7 +451,10 @@ $\tfrac{1-\sin\theta}{\sin\theta}$
 
 ## Key terms
 
-**even-odd identities** — set of equations involving trigonometric functions such that if $f(-x)=-f(x)$, the identity is odd, and if $f(-x)=f(x)$, the identity is even. **Pythagorean identities** — set of equations involving trigonometric functions based on the right triangle properties. **quotient identities** — pair of identities based on the fact that tangent is the ratio of sine and cosine, and cotangent is the ratio of cosine and sine. **reciprocal identities** — set of equations involving the reciprocals of basic trigonometric definitions.
+- **even-odd identities** — set of equations involving trigonometric functions such that if $f(-x)=-f(x)$, the identity is odd, and if $f(-x)=f(x)$, the identity is even.
+- **Pythagorean identities** — set of equations involving trigonometric functions based on the right triangle properties.
+- **quotient identities** — pair of identities based on the fact that tangent is the ratio of sine and cosine, and cotangent is the ratio of cosine and sine.
+- **reciprocal identities** — set of equations involving the reciprocals of basic trigonometric definitions.
 
 ## Practice
 

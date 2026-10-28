@@ -349,7 +349,8 @@ The developer has about $711.4$ square meters.
 
 ## Key terms
 
-**Law of Cosines** — states that the square of any side of a triangle is equal to the sum of the squares of the other two sides minus twice the product of the other two sides and the cosine of the included angle. **Generalized Pythagorean Theorem** — an extension of the Law of Cosines; relates the sides of an oblique triangle and is used for SAS and SSS triangles.
+- **Law of Cosines** — states that the square of any side of a triangle is equal to the sum of the squares of the other two sides minus twice the product of the other two sides and the cosine of the included angle.
+- **Generalized Pythagorean Theorem** — an extension of the Law of Cosines; relates the sides of an oblique triangle and is used for SAS and SSS triangles.
 
 ## Practice
 

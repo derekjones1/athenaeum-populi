@@ -76,7 +76,7 @@ exhaustion of energy reserves and buildup of pyruvic acid levels
 {{< textin
   question="Fast fibers hydrolyze ATP approximately twice as quickly as slow fibers, resulting in much quicker ________ (which pulls the thin filaments toward the center of the sarcomeres at a faster rate)."
   answer="cross-bridge cycling"
-  accept="crossbridge cycling|cross-bridge cycle|crossbridge cycle"
+  accept="cross-bridge cycle"
   hint="Look in the second paragraph of this section."
 >}}
 

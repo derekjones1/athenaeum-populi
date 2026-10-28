@@ -569,6 +569,13 @@ End matter is written as headings, never prose. A bold paragraph such as
 dropped, keep the wording verbatim, and place it with the rest of the end
 matter — before `## Practice`.
 
+A `## Key terms` glossary is a bullet list, one `- **term** — meaning` per
+bullet, so a reader can scan it. Two or more such entries run together in
+one paragraph or one bullet is a lint error (the math books' glossaries
+were one run-on paragraph each until October 27, 2026, when 181 pages were
+split). A block written as prose sentences ("A **linear inequality** is
+…") is not a glossary paragraph and is left as prose.
+
 Inside it, **one `### ` group per section objective, in the order the
 objectives callout lists them, each holding at least two interactive
 exercises** (`fillin`, `multiplechoice`, `graphplot`, `textin`, `selfcheck`,

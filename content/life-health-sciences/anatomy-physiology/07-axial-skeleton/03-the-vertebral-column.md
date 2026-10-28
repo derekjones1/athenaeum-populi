@@ -424,7 +424,7 @@ The sacrum also forms the posterior portion of the pelvis
 {{< textin
   question="An intervertebral disc is a ________ pad that fills the gap between adjacent vertebral bodies."
   answer="fibrocartilaginous"
-  accept="fibro-cartilaginous|fibrocartilage"
+  accept="fibrocartilage"
   hint="Look in the first paragraph of the Intervertebral Disc subsection."
 >}}
 

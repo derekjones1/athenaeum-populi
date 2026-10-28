@@ -502,13 +502,12 @@ $$
 ## Key terms
 
 - **FOIL method** — a shortcut for multiplying two binomials by adding the
-  products of the **F**irst, **O**uter, **I**nner, and **L**ast pairs of
-  terms.
+- products of the **F**irst, **O**uter, **I**nner, and **L**ast pairs of
+- terms.
 - **Vertical Method** — a way to multiply any two polynomials by stacking
-  them and adding partial products, just like multiplying whole numbers.
-
-Both the FOIL and Vertical methods are organized applications of the
-Distributive Property.
+- them and adding partial products, just like multiplying whole numbers.
+- th the FOIL and Vertical methods are organized applications of the
+- stributive Property.
 
 ## Practice
 

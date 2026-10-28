@@ -362,14 +362,14 @@ The cost of producing the box is $\text{\textdollar}456$.
 
 ## Key terms
 
-**monomial** — a term of the form $ax^m$, where $a$ is a constant and $m$ is a
-whole number. **polynomial** — a monomial, or two or more monomials
-combined by addition or subtraction. **binomial** — a polynomial with exactly
-two terms. **trinomial** — a polynomial with exactly three terms. **coefficient**
-— the constant factor in a term. **degree of a term** — the sum of the
-exponents of its variables. **degree of a polynomial** — the highest degree of
-all its terms. **standard form** — a polynomial written with its terms in
-descending order of degree.
+- **monomial** — a term of the form $ax^m$, where $a$ is a constant and $m$ is a whole number.
+- **polynomial** — a monomial, or two or more monomials combined by addition or subtraction.
+- **binomial** — a polynomial with exactly two terms.
+- **trinomial** — a polynomial with exactly three terms.
+- **coefficient** — the constant factor in a term.
+- **degree of a term** — the sum of the exponents of its variables.
+- **degree of a polynomial** — the highest degree of all its terms.
+- **standard form** — a polynomial written with its terms in descending order of degree.
 
 ## Practice
 

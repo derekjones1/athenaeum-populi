@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { acceptedForms, checkText, foldedForms, matchesForm, normalizeText, pluralFolds, singularFolds } from './check-text.mjs';
+import { acceptedForms, checkText, closedForm, foldedForms, matchesForm, normalizeText, pluralFolds, singularFolds } from './check-text.mjs';
 
 test('normalizeText folds case, diacritics, quotes, dashes, punctuation, articles', () => {
   const cases = [
@@ -111,4 +111,22 @@ test('checkText reads "X (Y)" as correct only when X and Y each grade correct', 
   assert.equal(checkText('ribosomes (ribosome)', 'ribosome'), 'correct');
   // only one trailing parenthetical is read
   assert.equal(checkText('cyclic AMP (cAMP) (cAMP)', 'cyclic AMP', { accept: 'cAMP' }), 'incorrect');
+});
+
+// A hyphen folds to a space (normalizeText) AND to nothing (closedForm), so
+// the hyphenated respelling of a closed compound grades correct without an
+// accept member (October 27, 2026; before it, `fore-gut` for `foregut` had
+// to be listed, Anatomy and Physiology 22.7).
+test('checkText folds a hyphen to nothing as well as to a space', () => {
+  assert.equal(closedForm('fore-gut'), 'foregut');
+  assert.equal(closedForm('Light–dependent reactions'), 'lightdependent reactions');
+  assert.equal(closedForm('the T-cell'), 'tcell');
+  assert.equal(closedForm('light/dependent'), 'light dependent', 'a slash is still a space');
+  assert.equal(checkText('fore-gut', 'foregut'), 'correct');
+  assert.equal(checkText('semi-conservative', 'semiconservative'), 'correct');
+  assert.equal(checkText('foregut', 'fore-gut'), 'correct', 'the fold runs both ways');
+  assert.equal(checkText('T-cell', 'T cell'), 'correct', 'the space reading still grades');
+  assert.equal(checkText('fore-guts', 'foregut'), 'correct', 'the plural fold applies to the closed reading');
+  assert.equal(checkText('fore gut', 'foregut'), 'incorrect', 'a space never folds to nothing');
+  assert.equal(checkText('semi-conservative', 'X', { accept: 'semiconservative' }), 'correct', 'accept members fold too');
 });

@@ -303,12 +303,8 @@ There are no common factors, so the rational expression is simplified.
 
 ## Key terms
 
-**least common denominator (LCD)** — the least common multiple of the
-denominators of two or more rational expressions; found by factoring each
-denominator completely and multiplying together each factor the greatest number
-of times it appears in any one denominator. **equivalent rational expression** —
-a rational expression rewritten with a new denominator by multiplying its
-numerator and denominator by the same nonzero factor, so its value is unchanged.
+- **least common denominator (LCD)** — the least common multiple of the denominators of two or more rational expressions; found by factoring each denominator completely and multiplying together each factor the greatest number of times it appears in any one denominator.
+- **equivalent rational expression** — a rational expression rewritten with a new denominator by multiplying its numerator and denominator by the same nonzero factor, so its value is unchanged.
 
 ## Practice
 

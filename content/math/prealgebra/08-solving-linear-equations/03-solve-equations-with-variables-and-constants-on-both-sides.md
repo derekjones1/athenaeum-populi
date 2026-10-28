@@ -788,12 +788,9 @@ $$
 
 ## Key terms
 
-**variable side** — the side of an equation chosen to collect all the
-variable terms. **constant side** — the side of an equation chosen to
-collect all the constant terms. **general strategy** — a five-step method
-(simplify each side, collect variable terms, collect constant terms, make
-the coefficient $1$, check) that solves any linear equation, regardless of
-its starting form.
+- **variable side** — the side of an equation chosen to collect all the variable terms.
+- **constant side** — the side of an equation chosen to collect all the constant terms.
+- **general strategy** — a five-step method (simplify each side, collect variable terms, collect constant terms, make the coefficient $1$, check) that solves any linear equation, regardless of its starting form.
 
 ## Practice
 

@@ -657,13 +657,8 @@ Add: $\text{\textdollar}3.28$. Write a sentence: Marla's total cost for the frui
 
 ## Key terms
 
-**decimal point** — the point that separates the whole-number part of a
-decimal from its fractional part; when adding or subtracting decimals, the
-decimal points must line up. **placeholder zero** — a zero written to fill
-an empty decimal place: at the end of a decimal, so that numbers being added
-or subtracted have the same number of decimal places without changing
-either number's value, or in front of the digits of a product or quotient,
-so that the decimal point lands in the right place.
+- **decimal point** — the point that separates the whole-number part of a decimal from its fractional part; when adding or subtracting decimals, the decimal points must line up.
+- **placeholder zero** — a zero written to fill an empty decimal place: at the end of a decimal, so that numbers being added or subtracted have the same number of decimal places without changing either number's value, or in front of the digits of a product or quotient, so that the decimal point lands in the right place.
 
 ## Practice
 

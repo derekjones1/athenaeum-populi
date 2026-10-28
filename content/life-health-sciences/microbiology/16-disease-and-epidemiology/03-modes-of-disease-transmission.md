@@ -325,7 +325,7 @@ Louse
 
 ### Explain the prevalence of nosocomial infections
 
-{{< textin question="A patient in the hospital with a urinary catheter develops a bladder infection. This is an example of a(n) ________ infection." answer="nosocomial" accept="healthcare-associated|health-care-associated|HAI|hospital-acquired|nosocomial infection|healthcare-associated infection" hint="Reread the second paragraph of this section's last subsection." >}}
+{{< textin question="A patient in the hospital with a urinary catheter develops a bladder infection. This is an example of a(n) ________ infection." answer="nosocomial" accept="healthcare-associated|HAI|hospital-acquired|nosocomial infection|healthcare-associated infection" hint="Reread the second paragraph of this section's last subsection." >}}
 
 {{< multiplechoice
   question="According to this section, what percentage of the 2011 HAIs in United States hospitals were urinary tract infections?"

@@ -634,11 +634,9 @@ Check on your own by multiplying.
 
 ## Key terms
 
-**factoring** — splitting a product into the factors that multiply to give it.
-**greatest common factor (GCF)** — the largest expression that is a factor of
-each of two or more given expressions. **factor by grouping** — a method for
-factoring a four-term polynomial by grouping terms with common factors,
-factoring the GCF from each group, and then factoring out the common binomial.
+- **factoring** — splitting a product into the factors that multiply to give it.
+- **greatest common factor (GCF)** — the largest expression that is a factor of each of two or more given expressions.
+- **factor by grouping** — a method for factoring a four-term polynomial by grouping terms with common factors, factoring the GCF from each group, and then factoring out the common binomial.
 
 ## Practice
 

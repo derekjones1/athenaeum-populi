@@ -435,10 +435,17 @@ differ — Biology 2e and Anatomy and Physiology key every exercise,
 Microbiology keys some sets and not others. The component rules below are
 shared. A figure question is always a `mediafigure` followed by its item:
 a figure-bound choice component was built and reverted (the sticky figure
-hid the options), and another needs a design decision from Derek first.
+hid the options), and no replacement is planned (October 27, 2026).
 
 **Multiple choice.** Options are the source's, in the source's order, each
 on its own line of the shortcode body; `answer` is the keyed option verbatim.
+A Source note placed directly under the item (a re-key, a replaced option)
+is read beside it, by the learner and by the blind solver, so it never
+prints the key: it names the source's option by position ("the source keys
+the first option"), says the page keys or prints a different option, and
+leaves the naming clause and the reasoning to the footer; the lint rejects
+a note under a multiple choice that prints the item's key (October 27,
+2026).
 Write a hint that says where to look (regular sections only; the hint rules
 under **Text recall** below hold for every item type). The text-mode distractor
 rules are the core's (`docs/authoring-playbook.md` §3). The corpus-wide
@@ -609,13 +616,14 @@ in the core (§3); the rules specific to a term-built item:
   Greek or Latin plural's `-um`/`-on`/`-us`/`-is` singular, an `-oes`
   key's `-o` singular, and an `-ex`/`-ix` key's `-ices` plural (`visual
   association cortices`, Anatomy and Physiology 14.2); never a hyphenated
-  or spaced respelling of a SPACED key (`T-cell` for `T cell`): the grader
-  folds a hyphen to a space, and `verify-section` rejects such a member as
-  a duplicate (Anatomy and Physiology 21.4, October 26, 2026). It does NOT
-  fold a hyphen to nothing, so the hyphenated respelling of a CLOSED
-  compound (`fore-gut` for `foregut`, `semi-conservative` for
-  `semiconservative`) grades wrong unless listed — list it (Anatomy and
-  Physiology 22.7, October 27, 2026); the
+  or spaced respelling of a SPACED key (`T-cell` for `T cell`), and never
+  the hyphenated or closed respelling of a CLOSED compound (`fore-gut` for
+  `foregut`, `semiconservative` for `semi-conservative`): the grader reads
+  a hyphen as a space AND as nothing (since October 27, 2026; before that
+  day the closed respelling had to be listed, and 127 such members were
+  stripped when the fold landed), and `verify-section` rejects either
+  member as redundant. A SPACED respelling of a closed compound (`fore
+  gut`) is not folded and is not listed either — no learner types it. The
   ASCII formula of a compound the page prints
   in Unicode (`H2O2`); the abbreviated binomial; the correct spelling
   where the source misspells (`phosphorous`); a module synonym (`jumping

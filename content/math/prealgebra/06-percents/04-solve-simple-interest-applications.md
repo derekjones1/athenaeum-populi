@@ -274,12 +274,9 @@ earned was $\text{\textdollar}15.75$.
 
 ## Key terms
 
-**principal** — the amount of money invested or borrowed, $P$. **rate of
-interest** — the percent of the principal charged or earned as interest,
-usually expressed as an annual rate, $r$. **simple interest** — interest
-computed on the principal only, using $I = Prt$, where $I$ is the
-interest, $P$ is the principal, $r$ is the rate, and $t$ is the time in
-years.
+- **principal** — the amount of money invested or borrowed, $P$.
+- **rate of interest** — the percent of the principal charged or earned as interest, usually expressed as an annual rate, $r$.
+- **simple interest** — interest computed on the principal only, using $I = Prt$, where $I$ is the interest, $P$ is the principal, $r$ is the rate, and $t$ is the time in years.
 
 ## Practice
 

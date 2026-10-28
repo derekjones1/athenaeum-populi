@@ -425,16 +425,14 @@ than $4q$." Translate the phrase into algebra: $4q - 3$.
 
 ## Key terms
 
-**variable** — a letter that represents a number whose value may change.
-**constant** — a number whose value always stays the same. **expression**
-— a number, a variable, or a combination of numbers and variables using
-operation symbols. **equation** — two expressions connected by an equal
-sign. **base** and **exponent** — in $a^n$, the base $a$ is the number
-being repeatedly multiplied, and the exponent $n$ tells how many times.
-**term** — a constant, or the product of a constant and one or more
-variables. **coefficient** — the constant that multiplies the variable in
-a term. **like terms** — terms that are either constants or have the same
-variables raised to the same powers.
+- **variable** — a letter that represents a number whose value may change.
+- **constant** — a number whose value always stays the same.
+- **expression** — a number, a variable, or a combination of numbers and variables using operation symbols.
+- **equation** — two expressions connected by an equal sign.
+- **base** and **exponent** — in $a^n$, the base $a$ is the number being repeatedly multiplied, and the exponent $n$ tells how many times.
+- **term** — a constant, or the product of a constant and one or more variables.
+- **coefficient** — the constant that multiplies the variable in a term.
+- **like terms** — terms that are either constants or have the same variables raised to the same powers.
 
 ## Practice
 

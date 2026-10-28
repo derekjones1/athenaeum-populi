@@ -412,14 +412,11 @@ Extrapolation
 
 ## Key terms
 
-**correlation coefficient** — a value, $r$, between $-1$ and 1 that indicates
-the degree of linear correlation of variables, or how closely a regression
-line fits a data set. **extrapolation** — predicting a value outside the
-domain and range of the data. **interpolation** — predicting a value inside
-the domain and range of the data. **least squares regression** — a
-statistical technique for fitting a line to data in a way that minimizes the
-differences between the line and data values. **model breakdown** — when a
-model no longer applies after a certain point.
+- **correlation coefficient** — a value, $r$, between $-1$ and 1 that indicates the degree of linear correlation of variables, or how closely a regression line fits a data set.
+- **extrapolation** — predicting a value outside the domain and range of the data.
+- **interpolation** — predicting a value inside the domain and range of the data.
+- **least squares regression** — a statistical technique for fitting a line to data in a way that minimizes the differences between the line and data values.
+- **model breakdown** — when a model no longer applies after a certain point.
 
 ## Practice
 

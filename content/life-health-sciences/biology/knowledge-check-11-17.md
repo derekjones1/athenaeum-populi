@@ -247,7 +247,7 @@ four
 {{< textin
   question="In prokaryotes such as *E. coli*, the twisting of DNA that is either under-wound or over-wound from its relaxed state, letting a 4.6-million-base-pair chromosome fit inside a small bacterial cell, is called ________."
   answer="supercoiling"
-  accept="DNA supercoiling|super-coiling"
+  accept="DNA supercoiling"
 >}}
 
 {{< selfcheck question="What recognition did Fred Sanger's method for sequencing DNA earn him, and in what year?" >}}
@@ -669,7 +669,7 @@ It acts as a transcription factor that binds to gene promoters to initiate trans
 {{< textin
   question="The protein that mediates the cell-death pathway and comes in a long and a short form is called ________."
   answer="c-Flip"
-  accept="cFLIP|c-Flip protein"
+  accept="c-Flip protein"
 >}}
 
 {{< selfcheck question="Specific cancers have altered expression of miRNAs. Why could overexpression of miRNAs be detrimental to normal cellular activity?" >}}

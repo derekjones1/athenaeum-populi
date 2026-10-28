@@ -87,7 +87,7 @@ cardiogenic region
 cardiogenic tubes
 {{< /multiplechoice >}}
 
-*(Source note: the source keys “cardiogenic tubes”, a name this module never uses; its own sentences say the hollowed strands “are referred to as endocardial tubes. The two tubes migrate together and fuse to form a single primitive heart tube,” and its glossary defines endocardial tubes, so the page keys “endocardial tubes” instead. The options and their order are unchanged.)*
+*(Source note: the source keys the fourth option, a name this module never uses; the page keys the name the module’s own sentences and glossary give the two tubes, and the footer gives the reasoning. The options and their order are as printed.)*
 
 {{< selfcheck
   question="Why is it so important for the human heart to develop early and begin functioning within the developing embryo?"

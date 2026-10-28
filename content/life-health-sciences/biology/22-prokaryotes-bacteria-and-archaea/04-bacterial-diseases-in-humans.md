@@ -245,7 +245,7 @@ All of the above.
 {{< textin
   question="MRSA acquired in the community rather than in a hospital is abbreviated ________."
   answer="CA-MRSA"
-  accept="community-associated MRSA|community-acquired MRSA|CAMRSA|community-associated methicillin-resistant Staphylococcus aureus"
+  accept="community-associated MRSA|community-acquired MRSA|community-associated methicillin-resistant Staphylococcus aureus"
   hint="Re-read the last sentence of the first paragraph under the MRSA subsection heading."
 >}}
 

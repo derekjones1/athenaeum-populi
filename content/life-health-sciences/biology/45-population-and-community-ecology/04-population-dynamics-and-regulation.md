@@ -127,7 +127,7 @@ a forest fire
 chronic wasting disease in the deer population
 {{< /multiplechoice >}}
 
-*(Source note: the source keys “snow in winter” for the question above, which this section's own text on winter carrying capacity and cold winter weather contradicts; the page keys a different option, and the footer gives the reasoning.)*
+*(Source note: the source keys the first option for the question above, which this section's own text on winter carrying capacity contradicts; the page keys a different option, and the footer gives the reasoning. The options and their order are as printed.)*
 
 {{< selfcheck question="According to this section's Evolution Connection, how did a 2008 study say climate change affected the geographic range available to woolly mammoths between 42,000 and 6,000 years ago?" hint="Reread the third paragraph of the Evolution Connection." >}}
 A 2008 study estimated that climate change reduced the mammoths' range from 3,000,000 square miles 42,000 years ago to 310,000 square miles 6,000 years ago.
@@ -142,7 +142,7 @@ to 310,000 square miles 6,000 years ago
 {{< textin
   question="Competition between different species for resources in a shared habitat or environment is called ________."
   answer="interspecific competition"
-  accept="inter-specific competition"
+
   hint="Reread the end of the section's opening paragraph, on populations that do not exist in isolation."
 >}}
 
@@ -244,7 +244,7 @@ K-selected species
 {{< textin
   question="Populations of K-selected species tend to exist close to their carrying capacity (hence the term K-selected) where ________ is high."
   answer="intraspecific competition"
-  accept="intra-specific competition"
+
   hint="Reread the third paragraph under the heading on the life histories of the two kinds of species."
 >}}
 

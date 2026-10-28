@@ -162,7 +162,7 @@ blood moves from the atria into the ventricles, opening the atrioventricular val
 {{< textin
   question="Name the amount of blood in the ventricles at the end of atrial systole just prior to ventricular contraction."
   answer="end diastolic volume"
-  accept="preload|pre-load|EDV"
+  accept="preload|EDV"
   hint="Look in the first paragraph of Ventricular Systole."
 >}}
 

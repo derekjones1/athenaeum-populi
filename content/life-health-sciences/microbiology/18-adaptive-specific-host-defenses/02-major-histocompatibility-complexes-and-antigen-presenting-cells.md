@@ -155,7 +155,7 @@ B-cell receptors
 {{< textin
   question="MHC II molecules are made up of two subunits (α and β) of approximately equal size, whereas MHC I molecules consist of a larger α subunit and a smaller subunit called ________."
   answer="β₂ microglobulin"
-  accept="beta-2 microglobulin|beta2 microglobulin|β 2 microglobulin|b2 microglobulin"
+  accept="beta-2 microglobulin|β 2 microglobulin|b2 microglobulin"
   hint="Look at the paired oval-shaped structure drawn beside the MHC I chain in the figure above."
 >}}
 

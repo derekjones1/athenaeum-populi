@@ -280,14 +280,13 @@ the $1$ carries: $3{,}978$ rounds to $4{,}000$.
 
 ## Key terms
 
-**counting numbers** — the numbers $1, 2, 3, \dots$ used to count objects;
-also called natural numbers. **whole numbers** — the counting numbers
-together with zero: $0, 1, 2, 3, \dots$ **origin** — the point labeled $0$ on
-the number line. **coordinate** — the number paired with a point on the
-number line. **place value system** — our number system, in which the value
-of a digit depends on its position in the number. **period** — a group of
-three place values, separated by commas in a written number. **rounding** —
-the process of approximating a number to a given place value.
+- **counting numbers** — the numbers $1, 2, 3, \dots$ used to count objects; also called natural numbers.
+- **whole numbers** — the counting numbers together with zero: $0, 1, 2, 3, \dots$
+- **origin** — the point labeled $0$ on the number line.
+- **coordinate** — the number paired with a point on the number line.
+- **place value system** — our number system, in which the value of a digit depends on its position in the number.
+- **period** — a group of three place values, separated by commas in a written number.
+- **rounding** — the process of approximating a number to a given place value.
 
 ## Practice
 

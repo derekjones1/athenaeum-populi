@@ -280,7 +280,7 @@ phototrophic
 {{< textin
   question="Bacteria in the genus Rhodospirillum that use hydrogen for oxidation and fix nitrogen are ________ bacteria."
   answer="purple nonsulfur"
-  accept="purple non-sulfur"
+
   hint="Reread the paragraph that introduces the genus Rhodospirillum."
 >}}
 

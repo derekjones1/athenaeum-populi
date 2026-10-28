@@ -411,16 +411,12 @@ is to the right of $-2$, so $-2 < \tfrac{-16}{9}$.
 
 ## Key terms
 
-**fraction** — a number written $\tfrac{a}{b}$ with $a$ the numerator and
-$b \neq 0$ the denominator, representing parts of a whole. **proper
-fraction** — a fraction whose numerator is smaller than its denominator
-(value less than one). **improper fraction** — a fraction whose numerator
-is greater than or equal to its denominator (value at least one). **mixed
-number** — a whole number combined with a proper fraction. **equivalent
-fractions** — fractions that represent the same value. **Equivalent
-Fractions Property** — multiplying (or dividing) the numerator and
-denominator of a fraction by the same nonzero number leaves its value
-unchanged.
+- **fraction** — a number written $\tfrac{a}{b}$ with $a$ the numerator and $b \neq 0$ the denominator, representing parts of a whole.
+- **proper fraction** — a fraction whose numerator is smaller than its denominator (value less than one).
+- **improper fraction** — a fraction whose numerator is greater than or equal to its denominator (value at least one).
+- **mixed number** — a whole number combined with a proper fraction.
+- **equivalent fractions** — fractions that represent the same value.
+- **Equivalent Fractions Property** — multiplying (or dividing) the numerator and denominator of a fraction by the same nonzero number leaves its value unchanged.
 
 ## Practice
 

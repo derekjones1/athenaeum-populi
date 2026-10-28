@@ -39,7 +39,7 @@ Neoplastic
 {{< textin
   question="Diseases that do not present any noticeable signs or symptoms are called asymptomatic or ________."
   answer="subclinical"
-  accept="sub-clinical"
+
 >}}
 
 ### 15.2 How Pathogens Cause Disease

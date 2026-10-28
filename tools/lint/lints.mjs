@@ -224,7 +224,7 @@ import { parseObjectivesCallout } from '../lib/openstax-source.mjs';
 // The real textin grading normalizer, so the word-count/retype-hazard/
 // duplicate-accept-member rules below reason about a textin answer exactly
 // the way check-text.mjs will grade it.
-import { normalizeText, foldedForms, pluralFolds } from '../../assets/js/lib/text/check-text.mjs';
+import { closedForm, foldedForms, normalizeText, pluralFolds } from '../../assets/js/lib/text/check-text.mjs';
 // Coverage measure for selfcheck rubric checkpoints — the same token-set
 // coverage verify-source-keys holds model answers to.
 import { phraseCoverage } from '../lib/openstax-source.mjs';
@@ -2224,6 +2224,27 @@ export function lintHugo(src, filename = '', options = {}) {
   for (const m of mediaSrc.matchAll(/^\*\*Key [a-z][a-z ]*[.:]?\*\*/gim)) {
     err(m.index, `${JSON.stringify(m[0])} is a bold prose paragraph — end matter must be a \`## Key …\` heading (drop the bold prefix, keep the content) placed before \`## Practice\``);
   }
+  // A `## Key terms` glossary is a bullet list, one `- **term** — meaning`
+  // per bullet, as the life-sciences books write it. The math books'
+  // glossaries were one run-on paragraph of bold terms (172 blocks) until
+  // October 27, 2026, when they were split; a block written as prose
+  // sentences ("A **linear inequality** is …") is not a glossary paragraph
+  // and is left alone, so the rule reads only the `**term** — meaning`
+  // shape: two or more such entries in one paragraph or one bullet.
+  const GLOSSARY_ENTRY = /(?:^|(?<=[.?!)$]\s))\*\*[^*]+?\*\*[^—]{0,40}—/gm;
+  for (const h of endMatterHeadings.filter((o) => /^Key terms$/i.test(o.title))) {
+    const next = headings.find((o) => o.index > h.index);
+    const block = mediaSrc.slice(h.end, next ? next.index : mediaSrc.length);
+    for (const para of block.matchAll(/[^\n][\s\S]*?(?=\n[ \t]*\n|$)/g)) {
+      const units = para[0].startsWith('- ') ? para[0].split('\n') : [para[0]];
+      for (const unit of units) {
+        const entries = [...unit.replace(/^- /, '').matchAll(GLOSSARY_ENTRY)];
+        if (entries.length < 2) continue;
+        err(h.end + para.index, `Key terms: ${entries.length} entries run together in one ${para[0].startsWith('- ') ? 'bullet' : 'paragraph'} (${JSON.stringify(entries[0][0].slice(0, 30))} … ${JSON.stringify(entries[1][0].slice(0, 30))}) — write the glossary as a bullet list, one \`- **term** — meaning\` per bullet`);
+        break;
+      }
+    }
+  }
   // Compare group titles to objectives loosely: the author copies the callout
   // item, so only case, spacing, and trailing punctuation should vary.
   const normalizeTitle = (t) => t.toLowerCase().replace(/\s+/g, ' ').replace(/[.:;,]+$/, '').trim();
@@ -2627,7 +2648,7 @@ export function lintHugo(src, filename = '', options = {}) {
 
   // ---- multiplechoice shortcode rules --------------------------------------
   const graphAnswerIndexes = [];
-  for (const { params, inner, index, closed } of multiplechoices) {
+  for (const { params, inner, index, end, closed } of multiplechoices) {
     if (!closed) continue; // the unclosed-shortcode rule above already named it
     const q = params.question || '';
     if (!q.trim()) err(index, 'multiplechoice: missing non-empty question');
@@ -2671,6 +2692,18 @@ export function lintHugo(src, filename = '', options = {}) {
         err(index, 'multiplechoice: missing non-empty answer');
       } else if (opts.length && !opts.includes(params.answer)) {
         err(index, `multiplechoice: answer ${JSON.stringify(params.answer.slice(0, 40))} is not one of the options (exact string match required)`);
+      }
+      // A Source note directly under the item is read beside it — by a
+      // learner and by the blind solver — so it never prints the key. A
+      // re-key note names the source's option by POSITION ("the source
+      // keys the first option"), says the page keys a different option,
+      // and leaves the naming and the reasoning to the footer (October 27,
+      // 2026: 19.2, 19.5, 22.1, and 22.2 had printed the house key under
+      // the item, and 22.1's note named a neighbour's key).
+      const key = normalizeText(params.answer || '');
+      const note = /^[ \t]*\r?\n[ \t]*\r?\n?[ \t]*\*\(Source note:([\s\S]*?)\)\*/.exec(mediaSrc.slice(end, end + 2000));
+      if (key && note && ` ${normalizeText(note[1])} `.includes(` ${key} `)) {
+        err(end + note.index, `multiplechoice (${q.slice(0, 40)}…): the Source note under the item prints its key ${JSON.stringify(params.answer.slice(0, 40))} — a note under a re-keyed item names the source's option by position only and says the page keys a different option; the naming clause and the reasoning go in the footer`);
       }
       // An option renders as Markdown text with `$…$` math, so TeX outside a
       // math span prints raw (`\cos^3\theta-…` on Precalculus 7.2–7.4 until
@@ -2827,6 +2860,22 @@ export function lintHugo(src, filename = '', options = {}) {
       }
       const relation = pluralFolds(covering.norm).includes(member.norm) ? 'plural' : 'singular';
       err(index, `${where}: ${member.label} is the regular ${relation} of ${covering.label} — grading already folds a trailing s/es both ways, so remove it (an irregular plural or singular still needs listing)`);
+    }
+    // The grader also reads every hyphen as NOTHING (check-text.mjs
+    // `closedForm`, October 27, 2026), so `fore-gut` grades for `foregut`
+    // and `semi-conservative` for `semiconservative` — a member that is
+    // the hyphenated or closed respelling of the answer or of a kept member
+    // (under the same plural folds) is dead weight.
+    const closedKept = [];
+    for (const member of members) {
+      const closed = closedForm(member.raw);
+      const covering = closedKept.find((other) => other.closed === closed || foldedForms(other.closed).includes(closed));
+      if (!covering || member.label.startsWith('answer ')) {
+        closedKept.push({ ...member, closed });
+        continue;
+      }
+      if (covering.norm === member.norm || foldedForms(covering.norm).includes(member.norm)) continue; // the normalized rules above already named it
+      err(index, `${where}: ${member.label} is the hyphenated or closed respelling of ${covering.label} — grading already folds a hyphen to a space AND to nothing, so remove it`);
     }
     // Every spelling the grader will take — the members and their folded
     // plurals and singulars — is a retype hazard if the prompt prints it.

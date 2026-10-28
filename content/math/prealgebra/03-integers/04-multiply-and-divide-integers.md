@@ -319,10 +319,8 @@ Simplify: $8$.
 
 ## Key terms
 
-**multiplication/division sign rule** — for both multiplying and
-dividing signed numbers: same signs give a positive result; different
-signs give a negative result. **multiplication and division by $-1$** —
-multiplying or dividing a number by $-1$ gives its opposite.
+- **multiplication/division sign rule** — for both multiplying and dividing signed numbers: same signs give a positive result; different signs give a negative result.
+- **multiplication and division by $-1$** — multiplying or dividing a number by $-1$ gives its opposite.
 
 ## Practice
 

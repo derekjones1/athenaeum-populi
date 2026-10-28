@@ -217,7 +217,7 @@ the NCX is a secondary active transport process
 {{< textin
   question="Movement of material that results from the electrochemical gradient a different pump established, without directly requiring ATP itself, is called ________."
   answer="secondary active transport"
-  accept="secondary transport|co-transport|cotransport"
+  accept="secondary transport|co-transport"
   hint="Reread the second paragraph of Moving Against a Gradient."
 >}}
 

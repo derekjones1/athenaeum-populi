@@ -386,11 +386,10 @@ Check both results by multiplying their factors.
 
 ## Key terms
 
-**factoring** — splitting a product into its factors. **greatest common
-factor (GCF)** — the largest expression that is a factor of every expression
-in a given collection. **factored form** — an expression written as a product
-of factors. **factor by grouping** — factor a four-term polynomial by grouping
-terms, factoring each group, and then factoring the common binomial.
+- **factoring** — splitting a product into its factors.
+- **greatest common factor (GCF)** — the largest expression that is a factor of every expression in a given collection.
+- **factored form** — an expression written as a product of factors.
+- **factor by grouping** — factor a four-term polynomial by grouping terms, factoring each group, and then factoring the common binomial.
 
 ## Practice
 

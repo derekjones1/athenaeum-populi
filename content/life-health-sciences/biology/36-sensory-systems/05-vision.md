@@ -199,7 +199,7 @@ The astronaut will feel the concussive force of the explosion, but will not see 
 {{< textin
   question="The visual defect in which an elongated eyeball causes the image focus to fall in front of the retina — making distant objects blurry but close-up objects clear — is called ________."
   answer="myopia"
-  accept="nearsightedness|near-sightedness|short-sightedness"
+  accept="nearsightedness|short-sightedness"
   hint="See the Anatomy of the Eye paragraph right after the Visual Connection question."
 >}}
 

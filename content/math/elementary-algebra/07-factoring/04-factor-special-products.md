@@ -700,12 +700,11 @@ $$
 
 ## Key terms
 
-**perfect square trinomial** — a trinomial of the form $a^2 + 2ab + b^2$ or
-$a^2 - 2ab + b^2$; it factors to $(a+b)^2$ or $(a-b)^2$. **difference of
-squares** — a binomial of the form $a^2 - b^2$; it factors to the conjugate
-pair $(a-b)(a+b)$. **sum of squares** — a binomial of the form $a^2 + b^2$; it
-does not factor and is prime. **sum of cubes** — $a^3 + b^3 = (a+b)(a^2 - ab +
-b^2)$. **difference of cubes** — $a^3 - b^3 = (a-b)(a^2 + ab + b^2)$.
+- **perfect square trinomial** — a trinomial of the form $a^2 + 2ab + b^2$ or $a^2 - 2ab + b^2$; it factors to $(a+b)^2$ or $(a-b)^2$.
+- **difference of squares** — a binomial of the form $a^2 - b^2$; it factors to the conjugate pair $(a-b)(a+b)$.
+- **sum of squares** — a binomial of the form $a^2 + b^2$; it does not factor and is prime.
+- **sum of cubes** — $a^3 + b^3 = (a+b)(a^2 - ab + b^2)$.
+- **difference of cubes** — $a^3 - b^3 = (a-b)(a^2 + ab + b^2)$.
 
 ## Practice
 

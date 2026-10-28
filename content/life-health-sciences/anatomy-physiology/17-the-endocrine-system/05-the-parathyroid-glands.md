@@ -126,7 +126,7 @@ the activity of osteoclasts
 {{< textin
   question="A disorder caused by underproduction of PTH that results in abnormally low blood calcium is called ________."
   answer="hypoparathyroidism"
-  accept="hypo-parathyroidism|parathyroid hormone deficiency"
+  accept="parathyroid hormone deficiency"
   hint="Look in the paragraph on abnormally low blood calcium levels, after the one on abnormally high activity of the gland."
 >}}
 

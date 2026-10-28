@@ -528,13 +528,10 @@ sides of the deck are $8$, $15$, and $17$ feet.
 
 ## Key terms
 
-**quadratic equation** — an equation of the form $ax^2 + bx + c = 0$ with
-$a \neq 0$; the variable is squared. **Zero Product Property** — if
-$a \cdot b = 0$, then $a = 0$ or $b = 0$ (or both), the key fact that lets us
-solve a factored equation set equal to zero. **double root** — a solution
-that repeats because the same factor appears twice, as in $(y - 8)^2 = 0$.
-**Pythagorean Theorem** — for a right triangle with legs $a$ and $b$ and
-hypotenuse $c$, $a^2 + b^2 = c^2$.
+- **quadratic equation** — an equation of the form $ax^2 + bx + c = 0$ with $a \neq 0$; the variable is squared.
+- **Zero Product Property** — if $a \cdot b = 0$, then $a = 0$ or $b = 0$ (or both), the key fact that lets us solve a factored equation set equal to zero.
+- **double root** — a solution that repeats because the same factor appears twice, as in $(y - 8)^2 = 0$.
+- **Pythagorean Theorem** — for a right triangle with legs $a$ and $b$ and hypotenuse $c$, $a^2 + b^2 = c^2$.
 
 ## Practice
 

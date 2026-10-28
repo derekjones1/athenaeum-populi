@@ -290,14 +290,14 @@ IP₃ causes the release of calcium, another second messenger, from intracellula
 {{< textin
   question="A decrease in the number of hormone receptors, typically in response to chronically excessive levels of a hormone, is called ________."
   answer="downregulation"
-  accept="down-regulation"
+
   hint="Look in the first paragraph of the Factors Affecting Target Cell Response section."
 >}}
 
 {{< textin
   question="An increase in the number of hormone receptors, typically in response to chronically reduced levels of a hormone, is called ________."
   answer="upregulation"
-  accept="up-regulation"
+
   hint="Look in the first paragraph of the Factors Affecting Target Cell Response section."
 >}}
 

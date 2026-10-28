@@ -412,18 +412,12 @@ It will also pass that height on the way down at 4.6 seconds.
 
 ## Key terms
 
-**Area of a Triangle** — for a triangle with base $b$ and height $h$, the
-area is $A=\tfrac{1}{2}bh$. **consecutive even integers** — even integers
-that immediately follow each other, each two more than the previous
-($n$, $n+2$, $n+4$, ...). **consecutive odd integers** — odd integers that
-immediately follow each other, following the same “add two” pattern as
-consecutive even integers. **problem solving strategy** — read the problem,
-identify and name what is sought, translate the situation into an equation,
-solve the equation, check the result, and answer the question. **Projectile
-Motion** — the height in feet of an object shot upward from the ground with
-initial velocity $v_0$ is $h=-16t^2+v_0t$ after $t$ seconds. **Pythagorean
-Theorem** — in a right triangle with legs $a$ and $b$ and hypotenuse $c$,
-$a^2+b^2=c^2$.
+- **Area of a Triangle** — for a triangle with base $b$ and height $h$, the area is $A=\tfrac{1}{2}bh$.
+- **consecutive even integers** — even integers that immediately follow each other, each two more than the previous ($n$, $n+2$, $n+4$, ...).
+- **consecutive odd integers** — odd integers that immediately follow each other, following the same “add two” pattern as consecutive even integers.
+- **problem solving strategy** — read the problem, identify and name what is sought, translate the situation into an equation, solve the equation, check the result, and answer the question.
+- **Projectile Motion** — the height in feet of an object shot upward from the ground with initial velocity $v_0$ is $h=-16t^2+v_0t$ after $t$ seconds.
+- **Pythagorean Theorem** — in a right triangle with legs $a$ and $b$ and hypotenuse $c$, $a^2+b^2=c^2$.
 
 ## Practice
 

@@ -296,7 +296,7 @@ synapse
 {{< textin
   question="In a translocation, a chromosome segment dissociates and reattaches to a different, ________ chromosome."
   answer="nonhomologous"
-  accept="non-homologous"
+
   hint="Reread the first sentence of Translocations."
 >}}
 

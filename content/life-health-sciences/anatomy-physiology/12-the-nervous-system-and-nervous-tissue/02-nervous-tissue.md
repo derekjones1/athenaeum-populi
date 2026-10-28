@@ -201,14 +201,14 @@ synaptic end bulb
 {{< textin
   question="True ________ cells are only found in invertebrate animals."
   answer="unipolar"
-  accept="uni-polar"
+
   hint="Look in the paragraph just after the figure of the three neuron shapes."
 >}}
 
 {{< textin
   question="________ neurons are all of the neurons that are not unipolar or bipolar."
   answer="multipolar"
-  accept="multi-polar"
+
   hint="Look in the third paragraph after the figure of the three neuron shapes."
 >}}
 

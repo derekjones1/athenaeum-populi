@@ -383,13 +383,8 @@ $$18p + (-15p) + 6q + 5q = 3p + 11q$$
 
 ## Key terms
 
-**commutative properties** — for real numbers $a$ and $b$: $a + b = b + a$
-and $a \cdot b = b \cdot a$; changing the order of addition or
-multiplication does not change the result. **associative properties** —
-for real numbers $a$, $b$, and $c$: $(a + b) + c = a + (b + c)$ and $(a
-\cdot b) \cdot c = a \cdot (b \cdot c)$; changing the grouping of addition
-or multiplication does not change the result. Subtraction and division are
-not commutative or associative.
+- **commutative properties** — for real numbers $a$ and $b$: $a + b = b + a$ and $a \cdot b = b \cdot a$; changing the order of addition or multiplication does not change the result.
+- **associative properties** — for real numbers $a$, $b$, and $c$: $(a + b) + c = a + (b + c)$ and $(a \cdot b) \cdot c = a \cdot (b \cdot c)$; changing the grouping of addition or multiplication does not change the result. Subtraction and division are not commutative or associative.
 
 ## Practice
 

@@ -210,11 +210,9 @@ price and the sale price is \$189.
 
 ## Key terms
 
-**difference** — the result of subtracting one number from another.
-**inverse operations** — operations that undo each other; addition and
-subtraction are inverse operations, which is why a subtraction can be checked
-by adding. **borrowing** — exchanging $1$ from the place to the left for
-$10$ in the current place so a column can be subtracted.
+- **difference** — the result of subtracting one number from another.
+- **inverse operations** — operations that undo each other; addition and subtraction are inverse operations, which is why a subtraction can be checked by adding.
+- **borrowing** — exchanging $1$ from the place to the left for $10$ in the current place so a column can be subtracted.
 
 ## Practice
 

@@ -447,11 +447,8 @@ $$\frac{p+q}{r} = -\frac{3}{4}$$
 
 ## Key terms
 
-**least common denominator (LCD)** — the least common multiple of the
-denominators of two or more fractions. **complex fraction** — a fraction
-whose numerator or denominator (or both) itself contains a fraction,
-requiring the order of operations to simplify: numerator first,
-denominator next, then divide.
+- **least common denominator (LCD)** — the least common multiple of the denominators of two or more fractions.
+- **complex fraction** — a fraction whose numerator or denominator (or both) itself contains a fraction, requiring the order of operations to simplify: numerator first, denominator next, then divide.
 
 ## Practice
 

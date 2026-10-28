@@ -391,11 +391,8 @@ Check this yourself by substituting $x = 9$ into the original equation.
 
 ## Key terms
 
-**clearing the equation of fractions** — multiplying both sides of an
-equation by the least common denominator (LCD) of all its fractions so the
-resulting equivalent equation has no fractions. **clearing the equation of
-decimals** — multiplying both sides of an equation by an appropriate power
-of ten so the resulting equivalent equation has no decimals.
+- **clearing the equation of fractions** — multiplying both sides of an equation by the least common denominator (LCD) of all its fractions so the resulting equivalent equation has no fractions.
+- **clearing the equation of decimals** — multiplying both sides of an equation by an appropriate power of ten so the resulting equivalent equation has no decimals.
 
 ## Practice
 

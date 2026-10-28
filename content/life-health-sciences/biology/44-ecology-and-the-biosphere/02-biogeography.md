@@ -235,7 +235,7 @@ both processes let nutrients from the bottom of the body of water be recycled an
 {{< textin
   question="The total mass of aboveground living plants per area is called ________."
   answer="above-ground biomass"
-  accept="aboveground biomass"
+
   hint="Reread the sentence on how productivity is estimated in terrestrial environments."
 >}}
 

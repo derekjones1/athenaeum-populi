@@ -351,11 +351,8 @@ $$\frac{4(-3)+6(-2)}{-3(2)-2} = 3$$
 
 ## Key terms
 
-**complex fraction** — a fraction in which the numerator, the
-denominator, or both, contain a fraction. **fraction bar as grouping
-symbol** — the numerator and denominator of a fraction are each treated
-as if enclosed in parentheses, so each is simplified fully before
-dividing.
+- **complex fraction** — a fraction in which the numerator, the denominator, or both, contain a fraction.
+- **fraction bar as grouping symbol** — the numerator and denominator of a fraction are each treated as if enclosed in parentheses, so each is simplified fully before dividing.
 
 ## Practice
 

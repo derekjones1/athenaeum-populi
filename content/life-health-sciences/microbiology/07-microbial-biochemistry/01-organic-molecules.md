@@ -194,7 +194,7 @@ They make up about 1%–1.5% of the dry weight of cells.
 
 {{< textin question="Each carbon atom can bind to another one, producing a ________ that can be straight, branched, or ring shaped." answer="carbon skeleton" accept="chain|carbon chain" hint="Reread the second paragraph of the Organic Molecules and Isomerism subsection." >}}
 
-{{< textin question="The organic molecules in organisms are called ________ because they are part of living matter." answer="biomolecules" accept="bio-molecules" hint="Reread the first paragraph of the Organic Molecules and Isomerism subsection." >}}
+{{< textin question="The organic molecules in organisms are called ________ because they are part of living matter." answer="biomolecules"  hint="Reread the first paragraph of the Organic Molecules and Isomerism subsection." >}}
 
 ### Explain the concept of isomerism
 
@@ -261,7 +261,7 @@ the carboxylic acid as this same carbonyl group joined with a hydroxyl group
 
 ### Describe the role of functional groups in synthesizing polymers
 
-{{< textin question="Functional groups combine with a carbon backbone to form molecules that are typically large, so they are called ________." answer="macromolecules" accept="macro-molecules" hint="Reread the first paragraph under the section's last subheading." >}}
+{{< textin question="Functional groups combine with a carbon backbone to form molecules that are typically large, so they are called ________." answer="macromolecules"  hint="Reread the first paragraph under the section's last subheading." >}}
 
 {{< textin question="Cells and cell structures include four main groups of carbon-containing macromolecules: ________, proteins, lipids, and nucleic acids." answer="polysaccharides" accept="carbohydrates" hint="Reread the first paragraph under the section's last subheading." >}}
 

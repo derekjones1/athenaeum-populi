@@ -566,16 +566,10 @@ common factors to remove from the numerator and denominator.
 
 ## Key terms
 
-**Quotient Property of Square Roots** — for non-negative real numbers $a$ and
-$b$ with $b \neq 0$, $\sqrt{\tfrac{a}{b}} = \tfrac{\sqrt{a}}{\sqrt{b}}$ (and its
-reverse), used to simplify a quotient of square roots. **rationalizing the
-denominator** — converting a fraction with a radical in the denominator to an
-equivalent fraction whose denominator is an integer. **conjugate** — for a
-two-term expression $a + b$, the expression $a - b$; multiplying a binomial
-containing a square root by its conjugate gives a product with no square roots.
-**simplified square root** — a square root with no perfect-square factors in
-the radicand, no fractions in the radicand, and no square roots in a
-denominator.
+- **Quotient Property of Square Roots** — for non-negative real numbers $a$ and $b$ with $b \neq 0$, $\sqrt{\tfrac{a}{b}} = \tfrac{\sqrt{a}}{\sqrt{b}}$ (and its reverse), used to simplify a quotient of square roots.
+- **rationalizing the denominator** — converting a fraction with a radical in the denominator to an equivalent fraction whose denominator is an integer.
+- **conjugate** — for a two-term expression $a + b$, the expression $a - b$; multiplying a binomial containing a square root by its conjugate gives a product with no square roots.
+- **simplified square root** — a square root with no perfect-square factors in the radicand, no fractions in the radicand, and no square roots in a denominator.
 
 ## Practice
 

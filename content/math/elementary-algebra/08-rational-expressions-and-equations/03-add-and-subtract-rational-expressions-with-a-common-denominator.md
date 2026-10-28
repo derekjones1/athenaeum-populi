@@ -241,11 +241,8 @@ $$
 
 ## Key terms
 
-**common denominator** — a single denominator shared by two or more rational
-expressions, allowing their numerators to be added or subtracted directly.
-**opposite denominators** — denominators that are negatives of each other (such
-as $3u - 1$ and $1 - 3u$); multiplying one fraction by $\tfrac{-1}{-1}$ turns
-them into a common denominator.
+- **common denominator** — a single denominator shared by two or more rational expressions, allowing their numerators to be added or subtracted directly.
+- **opposite denominators** — denominators that are negatives of each other (such as $3u - 1$ and $1 - 3u$); multiplying one fraction by $\tfrac{-1}{-1}$ turns them into a common denominator.
 
 ## Practice
 

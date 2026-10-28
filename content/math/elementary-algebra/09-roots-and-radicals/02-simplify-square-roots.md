@@ -445,12 +445,10 @@ $$
 
 ## Key terms
 
-**simplified square root** — a square root whose radicand contains no perfect
-square factors. **perfect square fraction** — a fraction in which both the
-numerator and the denominator are perfect squares. **Product Property of Square
-Roots** — for non-negative $a$ and $b$, $\sqrt{ab} = \sqrt{a} \cdot \sqrt{b}$.
-**Quotient Property of Square Roots** — for non-negative $a$ and $b$ with
-$b \neq 0$, $\sqrt{\tfrac{a}{b}} = \tfrac{\sqrt{a}}{\sqrt{b}}$.
+- **simplified square root** — a square root whose radicand contains no perfect square factors.
+- **perfect square fraction** — a fraction in which both the numerator and the denominator are perfect squares.
+- **Product Property of Square Roots** — for non-negative $a$ and $b$, $\sqrt{ab} = \sqrt{a} \cdot \sqrt{b}$.
+- **Quotient Property of Square Roots** — for non-negative $a$ and $b$ with $b \neq 0$, $\sqrt{\tfrac{a}{b}} = \tfrac{\sqrt{a}}{\sqrt{b}}$.
 
 ## Practice
 

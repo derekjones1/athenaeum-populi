@@ -614,16 +614,12 @@ feet.
 
 ## Key terms
 
-**vertex/vertices** — the corner points of a triangle, where two sides meet;
-each side is usually labeled with the lowercase letter matching the
-uppercase letter of the opposite vertex. **height (of a triangle)** — a line
-segment connecting the base to the opposite vertex, meeting the base at a
-$90\degree$ angle. **right triangle** — a triangle with one $90\degree$
-angle, usually marked with a small square. **hypotenuse** — the side of a
-right triangle opposite the $90\degree$ angle. **leg** — either of the two
-sides of a right triangle that form the right angle. **Pythagorean
-Theorem** — in any right triangle, $a^2 + b^2 = c^2$, where $a$ and $b$ are
-the lengths of the legs and $c$ is the length of the hypotenuse.
+- **vertex/vertices** — the corner points of a triangle, where two sides meet; each side is usually labeled with the lowercase letter matching the uppercase letter of the opposite vertex.
+- **height (of a triangle)** — a line segment connecting the base to the opposite vertex, meeting the base at a $90\degree$ angle.
+- **right triangle** — a triangle with one $90\degree$ angle, usually marked with a small square.
+- **hypotenuse** — the side of a right triangle opposite the $90\degree$ angle.
+- **leg** — either of the two sides of a right triangle that form the right angle.
+- **Pythagorean Theorem** — in any right triangle, $a^2 + b^2 = c^2$, where $a$ and $b$ are the lengths of the legs and $c$ is the length of the hypotenuse.
 
 ## Practice
 

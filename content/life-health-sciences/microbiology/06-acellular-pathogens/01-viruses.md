@@ -393,7 +393,7 @@ Tobacco mosaic virus (TMV)
 
 ### Describe the characteristics used to identify viruses as obligate intracellular parasites
 
-{{< textin question="A virus containing only nucleic acid and a capsid is called a(n) ________ virus." answer="naked" accept="nonenveloped|non-enveloped" hint="Reread the paragraph on the two categories of viruses based on general composition." >}}
+{{< textin question="A virus containing only nucleic acid and a capsid is called a(n) ________ virus." answer="naked" accept="nonenveloped" hint="Reread the paragraph on the two categories of viruses based on general composition." >}}
 
 {{< textin question="A/an __________ virus possesses characteristics of both a polyhedral and helical virus." answer="complex" hint="Reread the capsid-shape paragraph in Viral Structures." >}}
 

@@ -676,18 +676,16 @@ he can plant.
 
 ## Key terms
 
-**linear measure** — a measure of length, in units such as inches, feet,
-or centimeters. **area** (square measure) — a measure of the surface
-covered by a figure, in square units. **volume** (cubic measure) — a
-measure of the space filled by a solid, in cubic units. **perimeter** — the
-distance around a figure. **rectangle** — a four-sided figure with four
-right angles and equal opposite sides. **congruent** — having identical
-side lengths and angles. **base and height** (of a triangle) — the side a
-triangle sits on, and the perpendicular distance from that side to the
-opposite vertex. **isosceles triangle** — a triangle with two sides of
-equal length. **equilateral triangle** — a triangle with three sides of
-equal length. **trapezoid** — a four-sided figure with exactly two
-parallel sides (the bases).
+- **linear measure** — a measure of length, in units such as inches, feet, or centimeters.
+- **area** (square measure) — a measure of the surface covered by a figure, in square units.
+- **volume** (cubic measure) — a measure of the space filled by a solid, in cubic units.
+- **perimeter** — the distance around a figure.
+- **rectangle** — a four-sided figure with four right angles and equal opposite sides.
+- **congruent** — having identical side lengths and angles.
+- **base and height** (of a triangle) — the side a triangle sits on, and the perpendicular distance from that side to the opposite vertex.
+- **isosceles triangle** — a triangle with two sides of equal length.
+- **equilateral triangle** — a triangle with three sides of equal length.
+- **trapezoid** — a four-sided figure with exactly two parallel sides (the bases).
 
 ## Practice
 

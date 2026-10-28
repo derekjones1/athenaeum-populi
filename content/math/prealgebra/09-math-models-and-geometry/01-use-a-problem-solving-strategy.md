@@ -319,12 +319,9 @@ three consecutive integers are $13$, $14$, and $15$.
 
 ## Key terms
 
-**problem-solving strategy** — the seven-step method (read, identify, name,
-translate, solve, check, answer) used to set up and solve any word problem.
-**number problem** — a word problem giving clues about one or more numbers,
-solved by naming the numbers in terms of a single variable and translating
-the clues into an equation. **consecutive integers** — integers that
-immediately follow each other, each one more than the number before it.
+- **problem-solving strategy** — the seven-step method (read, identify, name, translate, solve, check, answer) used to set up and solve any word problem.
+- **number problem** — a word problem giving clues about one or more numbers, solved by naming the numbers in terms of a single variable and translating the clues into an equation.
+- **consecutive integers** — integers that immediately follow each other, each one more than the number before it.
 
 ## Practice
 

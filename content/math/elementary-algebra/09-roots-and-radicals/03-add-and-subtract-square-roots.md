@@ -315,11 +315,8 @@ $$
 
 ## Key terms
 
-**like square roots** — square roots with the same radicand (such as
-$3\sqrt{x}$ and $8\sqrt{x}$); like square roots can be combined by adding or
-subtracting their coefficients, just like like terms. **coefficient** — the
-numerical factor multiplying a square root; only the coefficients of like
-square roots are combined when adding or subtracting.
+- **like square roots** — square roots with the same radicand (such as $3\sqrt{x}$ and $8\sqrt{x}$); like square roots can be combined by adding or subtracting their coefficients, just like like terms.
+- **coefficient** — the numerical factor multiplying a square root; only the coefficients of like square roots are combined when adding or subtracting.
 
 ## Practice
 

@@ -485,12 +485,8 @@ $$
 
 ## Key terms
 
-**rational exponent** — an exponent that is a fraction; when $\sqrt[n]{a}$ is
-a real number, $a^{1/n} = \sqrt[n]{a}$ and
-$a^{m/n} = \left(\sqrt[n]{a}\right)^m = \sqrt[n]{a^m}$, connecting exponent
-notation to radical notation. **negative rational exponent** — a negative
-fractional exponent, rewritten with a positive exponent using
-$a^{-m/n} = \tfrac{1}{a^{m/n}}$.
+- **rational exponent** — an exponent that is a fraction; when $\sqrt[n]{a}$ is a real number, $a^{1/n} = \sqrt[n]{a}$ and $a^{m/n} = \left(\sqrt[n]{a}\right)^m = \sqrt[n]{a^m}$, connecting exponent notation to radical notation.
+- **negative rational exponent** — a negative fractional exponent, rewritten with a positive exponent using $a^{-m/n} = \tfrac{1}{a^{m/n}}$.
 
 ## Practice
 

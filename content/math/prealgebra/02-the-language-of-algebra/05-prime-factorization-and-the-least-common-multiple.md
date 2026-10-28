@@ -553,13 +553,10 @@ The LCM of $50$ and $100$ is $100$.
 
 ## Key terms
 
-**prime factorization** — the product of prime numbers that equals a given
-number. **factor tree** — a diagram that finds a prime factorization by
-repeatedly factoring composite branches until every branch ends in a prime.
-**ladder method** — a way to find a prime factorization by repeatedly
-dividing by the smallest prime that fits (also called stacked division).
-**least common multiple (LCM)** — the smallest number that is a multiple of
-two given numbers.
+- **prime factorization** — the product of prime numbers that equals a given number.
+- **factor tree** — a diagram that finds a prime factorization by repeatedly factoring composite branches until every branch ends in a prime.
+- **ladder method** — a way to find a prime factorization by repeatedly dividing by the smallest prime that fits (also called stacked division).
+- **least common multiple (LCM)** — the smallest number that is a multiple of two given numbers.
 
 ## Practice
 

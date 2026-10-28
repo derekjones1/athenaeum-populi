@@ -79,7 +79,7 @@ Lipid-derived (soluble) hormones can enter the cell by diffusing across the plas
 {{< textin
   question="An increase in the number of hormone receptors in response to prolonged low hormone levels is called ________."
   answer="up-regulation"
-  accept="upregulation"
+
   hint="See the section's opening paragraph, on a cell's sensitivity to a hormone."
 >}}
 

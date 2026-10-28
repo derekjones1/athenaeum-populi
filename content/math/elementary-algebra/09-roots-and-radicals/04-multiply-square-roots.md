@@ -489,12 +489,9 @@ becomes very useful in the next section when we divide square roots.
 
 ## Key terms
 
-**Product Property of Square Roots** — for nonnegative $a$ and $b$,
-$\sqrt{a} \cdot \sqrt{b} = \sqrt{ab}$; used "in reverse" to multiply two square
-roots into one. **squaring a square root** — for nonnegative $a$,
-$\left(\sqrt{a}\right)^2 = a$, since squaring undoes a square root. **conjugates**
-— a pair of binomials that differ only in the sign between their terms, such as
-$a + \sqrt{b}$ and $a - \sqrt{b}$; their product $a^2 - b$ contains no radical.
+- **Product Property of Square Roots** — for nonnegative $a$ and $b$, $\sqrt{a} \cdot \sqrt{b} = \sqrt{ab}$; used "in reverse" to multiply two square roots into one.
+- **squaring a square root** — for nonnegative $a$, $\left(\sqrt{a}\right)^2 = a$, since squaring undoes a square root.
+- **conjugates** — a pair of binomials that differ only in the sign between their terms, such as $a + \sqrt{b}$ and $a - \sqrt{b}$; their product $a^2 - b$ contains no radical.
 
 ## Practice
 

@@ -355,15 +355,9 @@ sessions.
 
 ## Key terms
 
-**substitution method** — solving one equation of a system for a variable,
-then replacing that variable with the resulting expression in the other
-equation so it becomes an equation in one variable. **consistent, dependent
-system** — a system whose equations, after substitution, reduce to a true
-numeric statement (like $0=0$); the two equations describe the same
-line and the system has infinitely many solutions. **inconsistent system**
-— a system whose equations, after substitution, reduce to a false numeric
-statement (like $0=-10$); the two equations describe parallel lines and the
-system has no solution.
+- **substitution method** — solving one equation of a system for a variable, then replacing that variable with the resulting expression in the other equation so it becomes an equation in one variable.
+- **consistent, dependent system** — a system whose equations, after substitution, reduce to a true numeric statement (like $0=0$); the two equations describe the same line and the system has infinitely many solutions.
+- **inconsistent system** — a system whose equations, after substitution, reduce to a false numeric statement (like $0=-10$); the two equations describe parallel lines and the system has no solution.
 
 ## Practice
 

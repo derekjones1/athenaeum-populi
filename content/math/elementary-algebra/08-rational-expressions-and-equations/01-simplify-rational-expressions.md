@@ -442,13 +442,10 @@ The factor $\tfrac{x-8}{8-x}$ divides to $-1$, leaving $-\tfrac{x+4}{x+8}$.
 
 ## Key terms
 
-**rational expression** — an expression of the form $\tfrac{p(x)}{q(x)}$, where
-$p$ and $q$ are polynomials and $q \neq 0$. **undefined** — a rational
-expression is undefined for any value of the variable that makes its denominator
-zero. **simplified rational expression** — a rational expression that has no
-common factors, other than $1$, in its numerator and denominator. **opposites**
-— two expressions such as $a - b$ and $b - a$; a factor and its opposite divide
-to $-1$.
+- **rational expression** — an expression of the form $\tfrac{p(x)}{q(x)}$, where $p$ and $q$ are polynomials and $q \neq 0$.
+- **undefined** — a rational expression is undefined for any value of the variable that makes its denominator zero.
+- **simplified rational expression** — a rational expression that has no common factors, other than $1$, in its numerator and denominator.
+- **opposites** — two expressions such as $a - b$ and $b - a$; a factor and its opposite divide to $-1$.
 
 ## Practice
 

@@ -503,12 +503,9 @@ perpendicular
 
 ## Key terms
 
-**slope-intercept form** — the form $y = mx + b$ of an equation of a line, where $m$
-is the slope and $(0, b)$ is the $y$-intercept. **parallel lines** — lines in the same
-plane that do not intersect; they have the same slope and different $y$-intercepts (or,
-for vertical lines, different $x$-intercepts). **perpendicular lines** — lines in the
-same plane that form a right angle; the product of their slopes is $-1$, so their
-slopes are negative reciprocals of each other.
+- **slope-intercept form** — the form $y = mx + b$ of an equation of a line, where $m$ is the slope and $(0, b)$ is the $y$-intercept.
+- **parallel lines** — lines in the same plane that do not intersect; they have the same slope and different $y$-intercepts (or, for vertical lines, different $x$-intercepts).
+- **perpendicular lines** — lines in the same plane that form a right angle; the product of their slopes is $-1$, so their slopes are negative reciprocals of each other.
 
 ## Practice
 

@@ -225,7 +225,7 @@ where working memory is localized
 {{< textin
   question="Area 4 is the primary motor cortex in the ________ gyrus, whereas area 6 is the premotor cortex."
   answer="precentral"
-  accept="precentral gyrus|pre-central|pre-central gyrus"
+  accept="precentral gyrus"
   hint="Look in the paragraph just after the figure of Brodmann’s map."
 >}}
 

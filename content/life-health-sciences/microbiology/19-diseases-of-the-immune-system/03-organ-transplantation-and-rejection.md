@@ -148,7 +148,7 @@ Over the next 6 months, Kerry follows her treatment plan and her symptoms do not
 {{< textin
   question="In a recipient's six-allele genotype, the two alleles at each locus are expressed ________."
   answer="codominantly"
-  accept="codominant|co-dominantly|co-dominant"
+  accept="codominant"
   hint="Reread the paragraph that follows the Types of Tissue and Organ Grafts table."
 >}}
 

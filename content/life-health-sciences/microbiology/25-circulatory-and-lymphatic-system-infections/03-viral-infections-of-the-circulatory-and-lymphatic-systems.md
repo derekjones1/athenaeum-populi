@@ -260,7 +260,7 @@ Many viruses are able to cause systemic, difficult-to-treat infections because o
 {{< textin
   question="Infectious mononucleosis is caused by ________ infections."
   answer="Epstein-Barr virus"
-  accept="EBV|Epstein-Barr|HHV-4|HHV4|human herpesvirus 4|cytomegalovirus|CMV|HHV-5|HHV5|human herpesvirus 5"
+  accept="EBV|Epstein-Barr|HHV-4|human herpesvirus 4|cytomegalovirus|CMV|HHV-5|human herpesvirus 5"
   hint="See the first subsection's paragraph on uninfected young adults."
 >}}
 

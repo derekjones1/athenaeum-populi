@@ -599,13 +599,10 @@ $$
 
 ## Key terms
 
-**rational expression** — an expression of the form $\tfrac{p}{q}$, where
-$p$ and $q$ are polynomials and $q\ne0$. **simplified rational expression** —
-a rational expression with no common factors, other than $1$, in its numerator and denominator.
-**complex fraction** — a fraction containing a fraction in its numerator,
-denominator, or both. **rational function** — a function of the form
-$R(x)=\tfrac{p(x)}{q(x)}$, where $p(x)$ and $q(x)$ are polynomial functions and
-$q(x)$ is not zero.
+- **rational expression** — an expression of the form $\tfrac{p}{q}$, where $p$ and $q$ are polynomials and $q\ne0$.
+- **simplified rational expression** — a rational expression with no common factors, other than $1$, in its numerator and denominator.
+- **complex fraction** — a fraction containing a fraction in its numerator, denominator, or both.
+- **rational function** — a function of the form $R(x)=\tfrac{p(x)}{q(x)}$, where $p(x)$ and $q(x)$ are polynomial functions and $q(x)$ is not zero.
 
 ## Practice
 

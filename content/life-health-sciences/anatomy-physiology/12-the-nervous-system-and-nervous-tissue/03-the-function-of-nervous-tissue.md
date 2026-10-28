@@ -84,7 +84,7 @@ Others with a medical degree and a specialization in neuroscience go on to work 
 {{< textin
   question="A region of the cortex is specialized for sending signals down to the spinal cord for movement. The upper motor neuron is in this region, called the ________ of the frontal cortex."
   answer="precentral gyrus"
-  accept="precentral gyrus of the frontal cortex|pre-central gyrus|precentral gyri"
+  accept="precentral gyrus of the frontal cortex|precentral gyri"
   hint="Look in the paragraph after the figure of the hands rising toward the faucet."
 >}}
 
@@ -115,7 +115,7 @@ cerebral cortex
 {{< textin
   question="A chemical signal that is released from the synaptic end bulb of a neuron to cause a change in the target cell is a ________."
   answer="neurotransmitter"
-  accept="neuro-transmitter"
+
   hint="Look at the end of the paragraph just before the figure of the hand under the falling water."
 >}}
 

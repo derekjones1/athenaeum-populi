@@ -318,11 +318,10 @@ number: $-\text{\textdollar}40$.
 
 ## Key terms
 
-**negative number** — a number that is less than $0$. **opposite** — the
-number that is the same distance from zero on the number line, but on
-the opposite side of zero. **integers** — counting numbers, their
-opposites, and zero. **absolute value** — the distance of a number from
-$0$ on the number line, written $|n|$.
+- **negative number** — a number that is less than $0$.
+- **opposite** — the number that is the same distance from zero on the number line, but on the opposite side of zero.
+- **integers** — counting numbers, their opposites, and zero.
+- **absolute value** — the distance of a number from $0$ on the number line, written $|n|$.
 
 ## Practice
 

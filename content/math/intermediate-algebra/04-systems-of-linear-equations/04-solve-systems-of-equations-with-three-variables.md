@@ -453,17 +453,12 @@ $25$ child tickets.
 
 ## Key terms
 
-**linear equation in three variables** — an equation of the form
-$ax+by+cz=d$, whose graph is a plane in three-dimensional space.
-**ordered triple** — a solution $(x,y,z)$ to an equation or system of
-equations in three variables. **solutions of a system of linear equations
-with three variables** — the ordered triples that make all three equations
-true; geometrically, the points common to all three planes. **consistent
-system** — a system with at least one solution. **inconsistent system** — a
-system with no solution; eliminating variables leaves a false statement
-like $0=-2$. **dependent equations** — equations whose graphs share a
-common line (or are the same plane), so the system has infinitely many
-solutions; eliminating variables leaves a true statement like $0=0$.
+- **linear equation in three variables** — an equation of the form $ax+by+cz=d$, whose graph is a plane in three-dimensional space.
+- **ordered triple** — a solution $(x,y,z)$ to an equation or system of equations in three variables.
+- **solutions of a system of linear equations with three variables** — the ordered triples that make all three equations true; geometrically, the points common to all three planes.
+- **consistent system** — a system with at least one solution.
+- **inconsistent system** — a system with no solution; eliminating variables leaves a false statement like $0=-2$.
+- **dependent equations** — equations whose graphs share a common line (or are the same plane), so the system has infinitely many solutions; eliminating variables leaves a true statement like $0=0$.
 
 ## Practice
 

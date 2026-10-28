@@ -238,15 +238,13 @@ area of the ceiling is $108$ square feet.
 
 ## Key terms
 
-**factor** — a number being multiplied. **product** — the result of
-multiplying numbers. **multiplicative identity** — the number $1$; the
-product of any number and $1$ is the number. **Multiplication Property of
-Zero** — the product of any number and $0$ is $0$. **Commutative Property of
-Multiplication** — changing the order of the factors does not change their
-product. **partial product** — the product of one digit of a factor and the
-other factor, written when multiplying multi-digit numbers. **area** — a
-measure of the surface covered by a shape, in square units; for a rectangle,
-the product of length and width.
+- **factor** — a number being multiplied.
+- **product** — the result of multiplying numbers.
+- **multiplicative identity** — the number $1$; the product of any number and $1$ is the number.
+- **Multiplication Property of Zero** — the product of any number and $0$ is $0$.
+- **Commutative Property of Multiplication** — changing the order of the factors does not change their product.
+- **partial product** — the product of one digit of a factor and the other factor, written when multiplying multi-digit numbers.
+- **area** — a measure of the surface covered by a shape, in square units; for a rectangle, the product of length and width.
 
 ## Practice
 

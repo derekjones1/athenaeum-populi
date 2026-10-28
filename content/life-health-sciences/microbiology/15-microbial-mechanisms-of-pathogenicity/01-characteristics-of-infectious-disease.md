@@ -254,7 +254,7 @@ cannot be clinically confirmed or objectively measured
 {{< textin
   question="A person steps on a rusty nail and develops tetanus. In this case, the person has acquired a(n) ________ disease."
   answer="noncommunicable"
-  accept="non-communicable"
+
   hint="Reread the Classifications of Disease paragraph that gives tetanus as its example."
 >}}
 

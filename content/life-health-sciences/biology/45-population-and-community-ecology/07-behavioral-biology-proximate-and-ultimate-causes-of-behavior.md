@@ -404,7 +404,7 @@ Females usually devote more energy to offspring production and development.
 {{< textin
   question="The category of simple learning in which the stimulus is not associated with any punishment or reward is called ________."
   answer="non-associative learning"
-  accept="nonassociative learning"
+
   hint="See the paragraphs about prairie dogs and hatchling ducks."
 >}}
 

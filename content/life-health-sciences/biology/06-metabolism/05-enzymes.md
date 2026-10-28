@@ -206,7 +206,7 @@ Binds directly to the active site and mimics the substrate.
 {{< textin
   question="A small organic molecule, such as a vitamin or its derivative, required to enhance an enzyme's activity is called a(n) ________."
   answer="coenzyme"
-  accept="co-enzyme"
+
   hint="Reread the paragraph that follows the Everyday Connection box."
 >}}
 

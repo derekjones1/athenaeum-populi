@@ -132,7 +132,7 @@ coordinating complex movements
 primary visual perception
 {{< /multiplechoice >}}
 
-*(Source note: the source’s keyed option reads “processing visual information”, which this module’s own sentence “Visual cortex information is also part of the processing that occurs in the cerebrocerebellum” attributes to the cerebellum, so the page names the cortical function, primary visual perception, instead.)*
+*(Source note: one source option reads “processing visual information”, which this module’s own sentence “Visual cortex information is also part of the processing that occurs in the cerebrocerebellum” attributes to the cerebellum, so the page prints a cortical function in its place; the footer names it. The other options are as printed.)*
 
 ### Chart the major divisions of the cerebellum
 

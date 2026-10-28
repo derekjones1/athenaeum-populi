@@ -479,10 +479,8 @@ $$
 
 ## Key terms
 
-**least common denominator (LCD)** — the smallest expression that is a
-multiple of every denominator in a collection of rational expressions.
-**rational expression addition and subtraction** — with a common denominator,
-add or subtract the numerators and place the result over that denominator.
+- **least common denominator (LCD)** — the smallest expression that is a multiple of every denominator in a collection of rational expressions.
+- **rational expression addition and subtraction** — with a common denominator, add or subtract the numerators and place the result over that denominator.
 
 ## Practice
 

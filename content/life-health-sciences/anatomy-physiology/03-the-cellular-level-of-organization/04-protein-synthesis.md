@@ -186,7 +186,7 @@ polymerases serve to add nucleotides to the growing DNA or mRNA strand
 {{< textin
   question="The consecutive sequence of three nucleotides that is complementary to a specific codon on an mRNA molecule is called the ________."
   answer="anticodon"
-  accept="anti-codon|tRNA anticodon"
+  accept="tRNA anticodon"
   hint="See the glycine example in the same paragraph."
 >}}
 
@@ -209,7 +209,7 @@ transcription utilizes polymerase enzymes to build mRNA whereas translation util
 {{< textin
   question="Several adjacent ribosomes translating a single mRNA strand at once form a string called a ________."
   answer="polyribosome"
-  accept="poly-ribosome"
+
   hint="Read the paragraph just before the video callout."
 >}}
 

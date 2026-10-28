@@ -573,13 +573,9 @@ To compare the intensities, we first need to convert the magnitudes to intensiti
 
 ## Key terms
 
-**common logarithmic function** — the function $f(x)=\log x$, the
-logarithmic function with base $10$, where $x>0$: $y=\log x$ is equivalent to
-$x=10^y$. **logarithmic function** — the function $f(x)=\log_a x$, the
-logarithmic function with base $a$, where $a>0$, $x>0$, and $a\ne1$:
-$y=\log_a x$ is equivalent to $x=a^y$. **natural logarithmic function** — the
-function $f(x)=\ln x$, the logarithmic function with base $e$, where $x>0$:
-$y=\ln x$ is equivalent to $x=e^y$.
+- **common logarithmic function** — the function $f(x)=\log x$, the logarithmic function with base $10$, where $x>0$: $y=\log x$ is equivalent to $x=10^y$.
+- **logarithmic function** — the function $f(x)=\log_a x$, the logarithmic function with base $a$, where $a>0$, $x>0$, and $a\ne1$: $y=\log_a x$ is equivalent to $x=a^y$.
+- **natural logarithmic function** — the function $f(x)=\ln x$, the logarithmic function with base $e$, where $x>0$: $y=\ln x$ is equivalent to $x=e^y$.
 
 ## Practice
 

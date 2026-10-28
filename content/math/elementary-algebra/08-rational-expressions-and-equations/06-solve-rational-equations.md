@@ -288,11 +288,9 @@ equation, we must also now state that $m \neq 1$.
 
 ## Key terms
 
-**rational equation** — two rational expressions connected by an equal sign.
-**extraneous solution to a rational equation** — an algebraic solution that
-would cause any of the expressions in the original equation to be undefined;
-it must be discarded. **excluded value** — a value of the variable that makes
-a denominator equal to zero, so the rational expression is undefined there.
+- **rational equation** — two rational expressions connected by an equal sign.
+- **extraneous solution to a rational equation** — an algebraic solution that would cause any of the expressions in the original equation to be undefined; it must be discarded.
+- **excluded value** — a value of the variable that makes a denominator equal to zero, so the rational expression is undefined there.
 
 ## Practice
 

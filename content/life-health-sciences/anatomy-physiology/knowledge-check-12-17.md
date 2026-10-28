@@ -742,7 +742,7 @@ up to 48 hours
 {{< textin
   question="A signaling molecule that plays an important role in the inflammatory response, ________, acts by autocrine signaling: the cells that secrete it have receptors on their cell surface that bind it."
   answer="interleukin-1"
-  accept="IL-1|IL1"
+  accept="IL-1"
 >}}
 
 ### 17.2 Hormones
@@ -783,7 +783,7 @@ the release of oxytocin decreases after the birth of the child
 {{< textin
   question="The cells in the zone between the pituitary lobes secrete MSH, a hormone formed by cleavage of the ________ precursor protein."
   answer="pro-opiomelanocortin"
-  accept="POMC|proopiomelanocortin"
+  accept="POMC"
 >}}
 
 {{< multiplechoice

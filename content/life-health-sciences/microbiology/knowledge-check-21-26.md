@@ -230,7 +230,7 @@ those most likely to be affected are the very young, the elderly, and immunocomp
 {{< textin
   question="Until 2012, *Coccidioides immitis* was considered a bioterrorism 'select agent' and classified as a ________ microbe."
   answer="BSL-3"
-  accept="BSL3|biosafety level 3|biosafety level three"
+  accept="biosafety level 3|biosafety level three"
 >}}
 
 {{< multiplechoice

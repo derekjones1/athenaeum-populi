@@ -116,7 +116,7 @@ Codons specifying amino acids are degenerate and universal.
 {{< textin
   question="In terms of RNA and protein, a relationship in which three “units” of RNA (nucleotides) specify one “unit” of protein (amino acid) in a consecutive fashion is described as ________."
   answer="colinear"
-  accept="collinear|co-linear"
+  accept="collinear"
   hint="Reread the end of the first paragraph under the central dogma heading."
 >}}
 

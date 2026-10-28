@@ -148,7 +148,7 @@ hemolysis
 {{< textin
   question="In contrast to the ABO group antibodies, which are ________, antibodies to the Rh antigen are produced only in Rh⁻ individuals after exposure to the antigen."
   answer="preformed"
-  accept="pre-formed|naturally formed"
+  accept="naturally formed"
   hint="Look in the paragraph right after the table of blood types within the United States."
 >}}
 

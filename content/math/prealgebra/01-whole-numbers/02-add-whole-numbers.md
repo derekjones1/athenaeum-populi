@@ -348,16 +348,14 @@ The perimeter of the patio is $46$ feet.
 
 ## Key terms
 
-**sum** — the result of addition. **addend** — one of the numbers being
-added. **expression** — a math statement that combines numbers and
-operations. **equation** — a math sentence stating that two expressions are
-equal. **Identity Property of Addition** — the sum of any number and $0$ is
-that number ($a + 0 = a$). **Commutative Property of Addition** — changing
-the order of the addends does not change the sum ($a + b = b + a$).
-**carrying** — regrouping $10$ units in one place value as $1$ unit in the
-next place value to the left, written as a small digit above the column.
-**perimeter** — the distance around a geometric figure; the sum of the
-lengths of its sides.
+- **sum** — the result of addition.
+- **addend** — one of the numbers being added.
+- **expression** — a math statement that combines numbers and operations.
+- **equation** — a math sentence stating that two expressions are equal.
+- **Identity Property of Addition** — the sum of any number and $0$ is that number ($a + 0 = a$).
+- **Commutative Property of Addition** — changing the order of the addends does not change the sum ($a + b = b + a$).
+- **carrying** — regrouping $10$ units in one place value as $1$ unit in the next place value to the left, written as a small digit above the column.
+- **perimeter** — the distance around a geometric figure; the sum of the lengths of its sides.
 
 ## Practice
 

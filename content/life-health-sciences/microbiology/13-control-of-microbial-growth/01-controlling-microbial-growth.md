@@ -286,7 +286,7 @@ True
 False
 {{< /multiplechoice >}}
 
-{{< textin question="A medical item that comes into contact with intact skin and does not penetrate sterile tissues or come into contact with mucous membranes is called a(n) ________ item." answer="noncritical" accept="non-critical|noncritical item|non-critical item" hint="Reread the paragraph on the three categories of clinical items in Other Methods of Control." >}}
+{{< textin question="A medical item that comes into contact with intact skin and does not penetrate sterile tissues or come into contact with mucous membranes is called a(n) ________ item." answer="noncritical" accept="noncritical item" hint="Reread the paragraph on the three categories of clinical items in Other Methods of Control." >}}
 
 {{< textin question="The goal of ________ ________ protocols is to rid canned produce of *Clostridium botulinum* endospores." answer="commercial sterilization" accept="commercial sterilisation|quasi-sterilization" hint="Reread the paragraph just before the second Check Your Understanding box." >}}
 
@@ -317,7 +317,7 @@ sterilization protocols require procedures that are not practical, or necessary,
 
 ### Differentiate between microorganisms of various biological safety levels and explain methods used for handling microbes at each level
 
-{{< textin question="________ agents are the most dangerous and often fatal, are typically exotic, are easily transmitted by inhalation, and cause infections for which there are no treatments or vaccinations." answer="BSL-4" accept="BSL4|biosafety level 4|biological safety level 4" hint="Reread the last BSL paragraph of Laboratory Biological Safety Levels." >}}
+{{< textin question="________ agents are the most dangerous and often fatal, are typically exotic, are easily transmitted by inhalation, and cause infections for which there are no treatments or vaccinations." answer="BSL-4" accept="biosafety level 4|biological safety level 4" hint="Reread the last BSL paragraph of Laboratory Biological Safety Levels." >}}
 
 {{< multiplechoice
   question="Which biosafety level is appropriate for research with microbes or infectious agents that pose moderate risk to laboratory workers and the community, and are typically indigenous?"

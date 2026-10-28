@@ -485,12 +485,11 @@ approximately $67.5$ miles per hour.
 
 ## Key terms
 
-**perfect square** — the square of a whole number. **square root** — a
-number whose square is $m$; if $n^2 = m$, then $n$ is a square root of
-$m$. **radical sign** — the symbol $\sqrt{\phantom{x}}$, which denotes the
-principal (positive) square root. **radicand** — the number or expression
-under a radical sign. **principal square root** — the positive square root
-of a positive number.
+- **perfect square** — the square of a whole number.
+- **square root** — a number whose square is $m$; if $n^2 = m$, then $n$ is a square root of $m$.
+- **radical sign** — the symbol $\sqrt{\phantom{x}}$, which denotes the principal (positive) square root.
+- **radicand** — the number or expression under a radical sign.
+- **principal square root** — the positive square root of a positive number.
 
 ## Practice
 

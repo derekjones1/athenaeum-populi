@@ -175,7 +175,7 @@ in different distributions depending on the trait
 {{< textin
   question="Progeny that result from homologous recombination and exhibit a different allele combination compared with their parents are called ________."
   answer="nonparental type"
-  accept="recombinant type|nonparental|recombinant|nonparental (recombinant) type|non-parental type"
+  accept="recombinant type|nonparental|recombinant|nonparental (recombinant) type"
   hint="Look at the paragraph that works through the AaBb test-cross example."
 >}}
 

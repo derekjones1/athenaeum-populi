@@ -752,18 +752,19 @@ Plot the three points, check that they line up, and draw the line.
 
 ## Key terms
 
-**rectangular coordinate system** — a grid formed by the $x$-axis and
-$y$-axis. **quadrants** — the four regions into which the axes divide the
-plane. **ordered pair** — $(x,y)$, the coordinates of a point. **origin** —
-the point $(0,0)$. **linear equation in two variables** — an equation of the
-form $Ax+By=C$, where $A$ and $B$ are not both zero. **standard form** — the
-form $Ax+By=C$. **solution of a linear equation in two variables** — an
-ordered pair that makes the equation true. **graph of a linear equation** —
-the straight line made up of all its solutions. **vertical line** — the graph
-of $x=a$. **horizontal line** — the graph of $y=b$. **intercepts of a line** —
-the points where a line crosses the axes. **$x$-intercept** — $(a,0)$, where a
-line crosses the $x$-axis. **$y$-intercept** — $(0,b)$, where a line crosses
-the $y$-axis.
+- **rectangular coordinate system** — a grid formed by the $x$-axis and $y$-axis.
+- **quadrants** — the four regions into which the axes divide the plane.
+- **ordered pair** — $(x,y)$, the coordinates of a point.
+- **origin** — the point $(0,0)$.
+- **linear equation in two variables** — an equation of the form $Ax+By=C$, where $A$ and $B$ are not both zero.
+- **standard form** — the form $Ax+By=C$.
+- **solution of a linear equation in two variables** — an ordered pair that makes the equation true.
+- **graph of a linear equation** — the straight line made up of all its solutions.
+- **vertical line** — the graph of $x=a$.
+- **horizontal line** — the graph of $y=b$.
+- **intercepts of a line** — the points where a line crosses the axes.
+- **$x$-intercept** — $(a,0)$, where a line crosses the $x$-axis.
+- **$y$-intercept** — $(0,b)$, where a line crosses the $y$-axis.
 
 ## Practice
 

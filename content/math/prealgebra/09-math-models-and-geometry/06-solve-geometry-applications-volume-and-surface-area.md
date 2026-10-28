@@ -417,16 +417,13 @@ The volume of the wrap is approximately $52.33$ cubic inches.
 
 ## Key terms
 
-**rectangular solid** — a three-dimensional figure with six rectangular
-faces (length, width, height). **surface area** — a square measure of the
-total area of all the faces of a solid. **volume** — a cubic measure of
-the space enclosed by a solid. **cube** — a rectangular solid whose
-length, width, and height are all equal. **sphere** — a three-dimensional
-figure where every point on the surface is the same distance (the radius)
-from the center. **cylinder** — a solid figure with two parallel circles
-of the same size at the top and bottom, called the bases.
-**cone** — a solid figure with one circular base tapering to a single
-vertex.
+- **rectangular solid** — a three-dimensional figure with six rectangular faces (length, width, height).
+- **surface area** — a square measure of the total area of all the faces of a solid.
+- **volume** — a cubic measure of the space enclosed by a solid.
+- **cube** — a rectangular solid whose length, width, and height are all equal.
+- **sphere** — a three-dimensional figure where every point on the surface is the same distance (the radius) from the center.
+- **cylinder** — a solid figure with two parallel circles of the same size at the top and bottom, called the bases.
+- **cone** — a solid figure with one circular base tapering to a single vertex.
 
 ## Practice
 

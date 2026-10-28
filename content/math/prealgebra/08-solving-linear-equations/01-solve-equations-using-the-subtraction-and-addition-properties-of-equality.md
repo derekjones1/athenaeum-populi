@@ -599,11 +599,9 @@ The sticker price was $\text{\textdollar}25{,}450$.
 
 ## Key terms
 
-**solution of an equation** — a value of a variable that makes a true
-statement when substituted into the equation. **Subtraction Property of
-Equality** — for all real numbers $a$, $b$, and $c$, if $a = b$, then
-$a - c = b - c$. **Addition Property of Equality** — for all real numbers
-$a$, $b$, and $c$, if $a = b$, then $a + c = b + c$.
+- **solution of an equation** — a value of a variable that makes a true statement when substituted into the equation.
+- **Subtraction Property of Equality** — for all real numbers $a$, $b$, and $c$, if $a = b$, then $a - c = b - c$.
+- **Addition Property of Equality** — for all real numbers $a$, $b$, and $c$, if $a = b$, then $a + c = b + c$.
 
 ## Practice
 

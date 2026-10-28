@@ -570,12 +570,11 @@ A 20-inch guitar string has a frequency of 572 vibrations per second.
 
 ## Key terms
 
-**proportion** — an equation stating that two rational expressions are equal. **similar
-figures** — figures whose corresponding angles are equal and whose
-corresponding sides have the same ratio. **direct variation** — a relationship
-of the form $y=kx$. **constant of variation** — the constant $k$ in a direct-
-or inverse-variation equation. **inverse variation** — a relationship of the
-form $y=\tfrac{k}{x}$.
+- **proportion** — an equation stating that two rational expressions are equal.
+- **similar figures** — figures whose corresponding angles are equal and whose corresponding sides have the same ratio.
+- **direct variation** — a relationship of the form $y=kx$.
+- **constant of variation** — the constant $k$ in a direct- or inverse-variation equation.
+- **inverse variation** — a relationship of the form $y=\tfrac{k}{x}$.
 
 ## Practice
 

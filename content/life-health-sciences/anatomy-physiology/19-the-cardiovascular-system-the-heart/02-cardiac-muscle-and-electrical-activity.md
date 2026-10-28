@@ -230,7 +230,7 @@ Only cardiac muscle is capable of autorhythmicity
 Only cardiac muscle has a high concentration of mitochondria.
 {{< /multiplechoice >}}
 
-*(Source note: the source keys “Only cardiac muscle has gap junctions,” which no sentence of this section asserts and which the book’s own account of smooth muscle contradicts, since single-unit smooth muscle tissue contains gap junctions; this section’s opening paragraph says of autorhythmicity, “Neither smooth nor skeletal muscle can do this,” so the item is keyed to that option instead.)*
+*(Source note: the source keys the second option, which no sentence of this section asserts and which the book’s own account of smooth muscle contradicts; the page keys a different option, and the footer gives the reasoning. The options and their order are as printed.)*
 
 {{< selfcheck
   question="How do gap junctions and intercalated disks aid contraction of the heart?"

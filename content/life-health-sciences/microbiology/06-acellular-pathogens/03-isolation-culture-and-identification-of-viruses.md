@@ -210,7 +210,7 @@ Released virions.
 
 ### Describe the cultivation of viruses and specimen collection and handling
 
-{{< textin question="Viruses can be diagnosed and observed using a(n) ________ microscope." answer="electron" accept="brightfield|bright-field|fluorescent|fluorescence" hint="Reread the first sentence of the Detection of a Virus subsection." >}}
+{{< textin question="Viruses can be diagnosed and observed using a(n) ________ microscope." answer="electron" accept="brightfield|fluorescent|fluorescence" hint="Reread the first sentence of the Detection of a Virus subsection." >}}
 
 {{< textin question="Cell abnormalities resulting from a viral infection are called ________." answer="cytopathic effects" accept="CPE" hint="Use the term this section defines near the start of the Detection of a Virus heading, then abbreviates for the rest of the section." >}}
 

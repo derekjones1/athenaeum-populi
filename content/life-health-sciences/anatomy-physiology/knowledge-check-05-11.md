@@ -1208,7 +1208,7 @@ stimulating the muscle to contract and preventing the loss of proteins that occu
 {{< textin
   question="When the muscle fibers wrap around the tendon, sometimes forming individual fascicles in the process, the arrangement is referred to as ________."
   answer="multipennate"
-  accept="multipennate muscle|multi-pennate"
+  accept="multipennate muscle"
 >}}
 
 {{< multiplechoice

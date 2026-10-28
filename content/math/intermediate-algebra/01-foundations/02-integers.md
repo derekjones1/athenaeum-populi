@@ -657,14 +657,11 @@ was the difference in the morning and afternoon temperatures?
 
 ## Key terms
 
-**negative number** — a number less than $0$; on the number line, the negative
-numbers lie to the left of zero. **opposite** — the number that is the same
-distance from zero on the number line but on the opposite side of zero; the
-opposite of $a$ is written $-a$. **absolute value** — the distance of a number
-from $0$ on the number line, written $|n|$; it is always greater than or equal
-to zero. **integers** — the whole numbers and their opposites:
-$\ldots {-3}, -2, -1, 0, 1, 2, 3 \ldots$ **neutral pair** — a positive counter
-paired with a negative counter, whose value is zero.
+- **negative number** — a number less than $0$; on the number line, the negative numbers lie to the left of zero.
+- **opposite** — the number that is the same distance from zero on the number line but on the opposite side of zero; the opposite of $a$ is written $-a$.
+- **absolute value** — the distance of a number from $0$ on the number line, written $|n|$; it is always greater than or equal to zero.
+- **integers** — the whole numbers and their opposites: $\ldots {-3}, -2, -1, 0, 1, 2, 3 \ldots$
+- **neutral pair** — a positive counter paired with a negative counter, whose value is zero.
 
 ## Practice
 

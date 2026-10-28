@@ -96,6 +96,19 @@ test('an accept member the plural fold still grades is not a narrowing', () => {
   assert.equal(results.length, 1);
 });
 
+test('an accept member the closed hyphen fold still grades is not a narrowing', () => {
+  // The grader reads a hyphen as nothing as well as a space (October 27,
+  // 2026), so dropping `mitochondri-a` for a key `mitochondria` narrows
+  // nothing. The check must run on the RAW old spelling: its normalized
+  // form (`mitochondri a`) never reaches the closed fold, and the first plan
+  // of that day's sweep left 88 sound records "accept-narrowed".
+  const dir = site(page({ accept: 'mitochondri-a' }));
+  const before = snapshot(join(dir, 'content'));
+  writeFileSync(join(dir, 'content', 'a.md'), page({ accept: '' }));
+  const { results } = planCarry({ before, now: snapshot(join(dir, 'content')), entries: recorded(before), note: 'n' });
+  assert.equal(results.length, 1);
+});
+
 test('a hint edit made together with a table edit is re-read, not carried', () => {
   // Both textins' hints change; only the table-bound one also changes its dependency.
   const { results, resolve } = plan({ hint: 'Look carefully.', row: '| 0 | 4 |' });

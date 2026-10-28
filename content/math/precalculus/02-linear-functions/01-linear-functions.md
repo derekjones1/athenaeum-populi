@@ -956,17 +956,13 @@ $x$ months since the measurements began.
 
 ## Key terms
 
-**linear function** — a function with a constant rate of change that is a
-polynomial of degree 1, and whose graph is a straight line.
-**slope-intercept form** — the equation for a line that represents a linear
-function in the form $f(x)=mx+b$. **slope** — the ratio of the change in
-output values to the change in input values; a measure of the steepness of a
-line. **$y$-intercept** — the value of a function when the input value is
-zero; also known as initial value. **increasing linear function** — a
-function with a positive slope: if $f(x)=mx+b$, then $m>0$. **decreasing
-linear function** — a function with a negative slope: if $f(x)=mx+b$, then
-$m<0$. **point-slope form** — the equation for a line that represents a
-linear function of the form $y-y_1=m(x-x_1)$.
+- **linear function** — a function with a constant rate of change that is a polynomial of degree 1, and whose graph is a straight line.
+- **slope-intercept form** — the equation for a line that represents a linear function in the form $f(x)=mx+b$.
+- **slope** — the ratio of the change in output values to the change in input values; a measure of the steepness of a line.
+- **$y$-intercept** — the value of a function when the input value is zero; also known as initial value.
+- **increasing linear function** — a function with a positive slope: if $f(x)=mx+b$, then $m>0$.
+- **decreasing linear function** — a function with a negative slope: if $f(x)=mx+b$, then $m<0$.
+- **point-slope form** — the equation for a line that represents a linear function of the form $y-y_1=m(x-x_1)$.
 
 ## Practice
 

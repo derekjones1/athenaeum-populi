@@ -328,11 +328,9 @@ $-\sqrt{25}$, $-1$, $6$, and $\sqrt{121}$
 
 ## Key terms
 
-**rational number** — a number that can be written as $\tfrac{p}{q}$, where
-$p$ and $q$ are integers and $q \neq 0$; its decimal form stops or repeats.
-**irrational number** — a number that cannot be written as the ratio of two
-integers; its decimal form neither stops nor repeats. **real number** — a
-number that is either rational or irrational.
+- **rational number** — a number that can be written as $\tfrac{p}{q}$, where $p$ and $q$ are integers and $q \neq 0$; its decimal form stops or repeats.
+- **irrational number** — a number that cannot be written as the ratio of two integers; its decimal form neither stops nor repeats.
+- **real number** — a number that is either rational or irrational.
 
 ## Practice
 

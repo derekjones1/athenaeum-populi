@@ -623,11 +623,11 @@ After $2$ seconds, the ball is at $144$ feet.
 
 ## Key terms
 
-**polynomial equation** — an equation that contains a polynomial expression.
-**degree of the polynomial equation** — the degree of the polynomial in the
-equation. **quadratic equation** — a polynomial equation of degree two.
-**Zero Product Property** — if a product is zero, then at least one of its
-factors is zero. **zero of a function** — a value of $x$ for which $f(x)=0$.
+- **polynomial equation** — an equation that contains a polynomial expression.
+- **degree of the polynomial equation** — the degree of the polynomial in the equation.
+- **quadratic equation** — a polynomial equation of degree two.
+- **Zero Product Property** — if a product is zero, then at least one of its factors is zero.
+- **zero of a function** — a value of $x$ for which $f(x)=0$.
 
 ## Practice
 

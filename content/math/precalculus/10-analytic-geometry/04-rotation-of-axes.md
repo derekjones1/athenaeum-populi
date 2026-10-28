@@ -561,7 +561,9 @@ ellipse
 
 ## Key terms
 
-**angle of rotation** — an acute angle formed by a set of axes rotated from the Cartesian plane where, if $\cot(2\theta)>0,$ then $\theta$ is between $(0^\circ,45^\circ)$; if $\cot(2\theta)<0,$ then $\theta$ is between $(45^\circ,90^\circ)$; and if $\cot(2\theta)=0,$ then $\theta=45^\circ$. **degenerate conic sections** — any of the possible shapes formed when a plane intersects a double cone through the apex; types of degenerate conic sections include a point, a line, and intersecting lines. **nondegenerate conic section** — a shape formed by the intersection of a plane with a double right cone such that the plane does not pass through the apex; nondegenerate conics include circles, ellipses, hyperbolas, and parabolas.
+- **angle of rotation** — an acute angle formed by a set of axes rotated from the Cartesian plane where, if $\cot(2\theta)>0,$ then $\theta$ is between $(0^\circ,45^\circ)$; if $\cot(2\theta)<0,$ then $\theta$ is between $(45^\circ,90^\circ)$; and if $\cot(2\theta)=0,$ then $\theta=45^\circ$.
+- **degenerate conic sections** — any of the possible shapes formed when a plane intersects a double cone through the apex; types of degenerate conic sections include a point, a line, and intersecting lines.
+- **nondegenerate conic section** — a shape formed by the intersection of a plane with a double right cone such that the plane does not pass through the apex; nondegenerate conics include circles, ellipses, hyperbolas, and parabolas.
 
 ## Practice
 

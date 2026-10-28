@@ -527,16 +527,12 @@ $$
 
 ## Key terms
 
-**$n$th root of a number** — if $b^n = a$, then $b$ is an $n$th root of $a$.
-**index** — the number $n$ in the radical $\sqrt[n]{a}$ that tells which root is
-being taken; for a square root the index $2$ is not written. **principal $n$th
-root** — the value $\sqrt[n]{a}$, which is non-negative when the index is even.
-**like radicals** — radicals with the same index and the same radicand.
-**Product Property of $n$th Roots** — for real $\sqrt[n]{a}$ and $\sqrt[n]{b}$
-and integer $n \ge 2$, $\sqrt[n]{ab} = \sqrt[n]{a} \cdot \sqrt[n]{b}$.
-**Quotient Property of $n$th Roots** — for real $\sqrt[n]{a}$ and $\sqrt[n]{b}$
-with $b \neq 0$ and integer $n \ge 2$,
-$\sqrt[n]{\tfrac{a}{b}} = \tfrac{\sqrt[n]{a}}{\sqrt[n]{b}}$.
+- **$n$th root of a number** — if $b^n = a$, then $b$ is an $n$th root of $a$.
+- **index** — the number $n$ in the radical $\sqrt[n]{a}$ that tells which root is being taken; for a square root the index $2$ is not written.
+- **principal $n$th root** — the value $\sqrt[n]{a}$, which is non-negative when the index is even.
+- **like radicals** — radicals with the same index and the same radicand.
+- **Product Property of $n$th Roots** — for real $\sqrt[n]{a}$ and $\sqrt[n]{b}$ and integer $n \ge 2$, $\sqrt[n]{ab} = \sqrt[n]{a} \cdot \sqrt[n]{b}$.
+- **Quotient Property of $n$th Roots** — for real $\sqrt[n]{a}$ and $\sqrt[n]{b}$ with $b \neq 0$ and integer $n \ge 2$, $\sqrt[n]{\tfrac{a}{b}} = \tfrac{\sqrt[n]{a}}{\sqrt[n]{b}}$.
 
 ## Practice
 

@@ -245,11 +245,8 @@ no
 
 ## Key terms
 
-**system of linear inequalities** — two or more linear inequalities grouped
-together. **solutions of a system of linear inequalities** — the ordered
-pairs $(x, y)$ that make every inequality in the system true, shown as a
-shaded region in the $x$-$y$ coordinate system where the shadings of the
-individual inequalities overlap.
+- **system of linear inequalities** — two or more linear inequalities grouped together.
+- **solutions of a system of linear inequalities** — the ordered pairs $(x, y)$ that make every inequality in the system true, shown as a shaded region in the $x$-$y$ coordinate system where the shadings of the individual inequalities overlap.
 
 ## Practice
 

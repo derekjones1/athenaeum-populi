@@ -555,15 +555,12 @@ no
 
 ## Key terms
 
-**division of a polynomial by a monomial** — dividing each term of the
-polynomial by the monomial. **polynomial long division** — a procedure for
-dividing a polynomial by a binomial: divide, multiply, subtract, and bring
-down, repeating until the remainder has lower degree than the divisor.
-**placeholder** — a term with zero coefficient inserted for a missing degree.
-**synthetic division** — a shortened form of polynomial division using only
-coefficients, for a divisor of the form $x-c$. **Remainder Theorem** — when
-$f(x)$ is divided by $x-c$, the remainder is $f(c)$. **Factor Theorem** —
-$x-c$ is a factor of $f(x)$ exactly when $f(c)=0$.
+- **division of a polynomial by a monomial** — dividing each term of the polynomial by the monomial.
+- **polynomial long division** — a procedure for dividing a polynomial by a binomial: divide, multiply, subtract, and bring down, repeating until the remainder has lower degree than the divisor.
+- **placeholder** — a term with zero coefficient inserted for a missing degree.
+- **synthetic division** — a shortened form of polynomial division using only coefficients, for a divisor of the form $x-c$.
+- **Remainder Theorem** — when $f(x)$ is divided by $x-c$, the remainder is $f(c)$.
+- **Factor Theorem** — $x-c$ is a factor of $f(x)$ exactly when $f(c)=0$.
 
 ## Practice
 

@@ -99,7 +99,7 @@ The location of a muscle’s attachment can also appear in its name. When the na
 {{< textin
   question="The shapes of some muscles are distinctive; for example, the direction of the muscle fibers is used to describe muscles of the body ________."
   answer="midline"
-  accept="mid-line"
+
   hint="Look at the fifth sentence of the Summary."
 >}}
 

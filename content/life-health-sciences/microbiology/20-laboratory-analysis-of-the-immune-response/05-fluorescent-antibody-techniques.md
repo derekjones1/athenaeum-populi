@@ -82,7 +82,7 @@ a fluorogen alone
 {{< textin
   question="What is the ANA test looking for, in the diagnosis of SLE and other autoimmune diseases?"
   answer="antinuclear antibodies"
-  accept="antinuclear antibody|anti-nuclear antibodies|anti-nuclear antibody|antinuclear autoantibodies"
+  accept="antinuclear antibody|antinuclear autoantibodies"
   hint="The section names these autoantibodies right where it introduces SLE."
 >}}
 

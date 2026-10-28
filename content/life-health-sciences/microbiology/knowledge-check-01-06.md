@@ -37,7 +37,7 @@ Bunsen burner
 {{< textin
   question="The earliest known urban sanitation systems, built around 2500 BCE, are found in the ancient Indus Valley Civilization cities of Harappa and ________."
   answer="Mohenjo-daro"
-  accept="Mohenjodaro"
+
 >}}
 
 {{< selfcheck question="What parasite infection did researchers discover evidence of in Ötzi the Iceman's remains, and what symptoms might it have caused him?" >}}
@@ -385,7 +385,7 @@ has been used as a model for studies of bacterial photosynthesis since the 1950s
 *Clostridioides difficile*
 {{< /multiplechoice >}}
 
-{{< textin question="*Streptococcus* species that inhabit the human mouth but do not belong to any Lancefield group are called the ________ streptococci." answer="nonpyogenic" accept="non-pyogenic|viridans" >}}
+{{< textin question="*Streptococcus* species that inhabit the human mouth but do not belong to any Lancefield group are called the ________ streptococci." answer="nonpyogenic" accept="viridans" >}}
 
 {{< selfcheck question="What toxin-related effects can strains of *Staphylococcus aureus* have on the body?" >}}
 Certain strains of *S. aureus* produce a substance called enterotoxin, which can cause severe enteritis, often called staph food poisoning. Some strains of *S. aureus* produce the toxin responsible for toxic shock syndrome, which can result in cardiovascular collapse and death.

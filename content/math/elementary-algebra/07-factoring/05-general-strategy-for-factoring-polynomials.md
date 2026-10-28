@@ -316,18 +316,13 @@ $2(5x + 3)(x - 4) = 2\left(5x^2 - 20x + 3x - 12\right) = 2\left(5x^2 - 17x - 12\
 
 ## Key terms
 
-**greatest common factor (GCF)** — the largest monomial that divides every
-term of a polynomial; always factor it out first. **difference of squares** —
-a binomial $a^2 - b^2$, which factors as the product of conjugates
-$(a - b)(a + b)$. **sum of squares** — a binomial $a^2 + b^2$, which is prime
-(does not factor). **sum and difference of cubes** — the patterns
-$a^3 + b^3 = (a + b)\left(a^2 - ab + b^2\right)$ and
-$a^3 - b^3 = (a - b)\left(a^2 + ab + b^2\right)$. **perfect-square trinomial**
-— a trinomial $a^2 \pm 2ab + b^2$, which factors as $(a \pm b)^2$.
-**grouping** — a method for factoring a polynomial with more than three terms
-by pairing terms that share a common factor. **factored completely** — a
-polynomial written so that, other than monomials, all of its factors are
-prime.
+- **greatest common factor (GCF)** — the largest monomial that divides every term of a polynomial; always factor it out first.
+- **difference of squares** — a binomial $a^2 - b^2$, which factors as the product of conjugates $(a - b)(a + b)$.
+- **sum of squares** — a binomial $a^2 + b^2$, which is prime (does not factor).
+- **sum and difference of cubes** — the patterns $a^3 + b^3 = (a + b)\left(a^2 - ab + b^2\right)$ and $a^3 - b^3 = (a - b)\left(a^2 + ab + b^2\right)$.
+- **perfect-square trinomial** — a trinomial $a^2 \pm 2ab + b^2$, which factors as $(a \pm b)^2$.
+- **grouping** — a method for factoring a polynomial with more than three terms by pairing terms that share a common factor.
+- **factored completely** — a polynomial written so that, other than monomials, all of its factors are prime.
 
 ## Practice
 

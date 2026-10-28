@@ -472,7 +472,12 @@ $$\cos\left(\sin^{-1}\left(\tfrac{x}{3}\right)\right)=\tfrac{\sqrt{9-x^2}}{3}$$
 
 ## Key terms
 
-**arccosine** — another name for the inverse cosine; $\arccos x=\cos^{-1}x$. **arcsine** — another name for the inverse sine; $\arcsin x=\sin^{-1}x$. **arctangent** — another name for the inverse tangent; $\arctan x=\tan^{-1}x$. **inverse cosine function** — the function $\cos^{-1}x$, which is the inverse of the cosine function and the angle that has a cosine equal to a given number. **inverse sine function** — the function $\sin^{-1}x$, which is the inverse of the sine function and the angle that has a sine equal to a given number. **inverse tangent function** — the function $\tan^{-1}x$, which is the inverse of the tangent function and the angle that has a tangent equal to a given number.
+- **arccosine** — another name for the inverse cosine; $\arccos x=\cos^{-1}x$.
+- **arcsine** — another name for the inverse sine; $\arcsin x=\sin^{-1}x$.
+- **arctangent** — another name for the inverse tangent; $\arctan x=\tan^{-1}x$.
+- **inverse cosine function** — the function $\cos^{-1}x$, which is the inverse of the cosine function and the angle that has a cosine equal to a given number.
+- **inverse sine function** — the function $\sin^{-1}x$, which is the inverse of the sine function and the angle that has a sine equal to a given number.
+- **inverse tangent function** — the function $\tan^{-1}x$, which is the inverse of the tangent function and the angle that has a tangent equal to a given number.
 
 ## Practice
 

@@ -618,10 +618,8 @@ In interval notation, this would be $(-\infty,-0.25)\cup(2.75,\infty)$.
 
 ## Key terms
 
-**absolute value equation** — an equation of the form $\lvert A\rvert=B$, with
-$B\ge 0$; it will have solutions when $A=B$ or $A=-B$. **absolute value
-inequality** — a relationship in the form $\lvert A\rvert<B$,
-$\lvert A\rvert\le B$, $\lvert A\rvert>B$, or $\lvert A\rvert\ge B$.
+- **absolute value equation** — an equation of the form $\lvert A\rvert=B$, with $B\ge 0$; it will have solutions when $A=B$ or $A=-B$.
+- **absolute value inequality** — a relationship in the form $\lvert A\rvert<B$, $\lvert A\rvert\le B$, $\lvert A\rvert>B$, or $\lvert A\rvert\ge B$.
 
 ## Practice
 

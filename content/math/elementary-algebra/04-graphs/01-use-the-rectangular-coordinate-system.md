@@ -530,22 +530,15 @@ $\left(1, \tfrac{3}{2}\right)$: $\ 3(1) + 2 \cdot \tfrac{3}{2}
 
 ## Key terms
 
-**rectangular coordinate system** — a grid formed by a horizontal $x$-axis
-and a vertical $y$-axis, used to show a relationship between two variables;
-also called the $xy$-plane. **quadrant** — one of the four regions the
-$x$-axis and $y$-axis divide the plane into, numbered I through IV
-counterclockwise starting from the upper right. **ordered pair** — a pair
-of numbers $(x, y)$ that gives the coordinates of a point in a rectangular
-coordinate system; the first number is the $x$-coordinate and the second is
-the $y$-coordinate. **$x$-coordinate** — the first number in an ordered
-pair $(x, y)$. **$y$-coordinate** — the second number in an ordered pair
-$(x, y)$. **origin** — the point $(0, 0)$, where the $x$-axis and
-$y$-axis intersect. **linear equation in two variables** — an equation of
-the form $Ax + By = C$, where $A$ and $B$ are not both zero. **standard
-form** — a linear equation is in standard form when it is written
-$Ax + By = C$. **solution of a linear equation in two variables** — an
-ordered pair $(x, y)$ that makes the equation a true statement when its
-$x$- and $y$-values are substituted in for $x$ and $y$.
+- **rectangular coordinate system** — a grid formed by a horizontal $x$-axis and a vertical $y$-axis, used to show a relationship between two variables; also called the $xy$-plane.
+- **quadrant** — one of the four regions the $x$-axis and $y$-axis divide the plane into, numbered I through IV counterclockwise starting from the upper right.
+- **ordered pair** — a pair of numbers $(x, y)$ that gives the coordinates of a point in a rectangular coordinate system; the first number is the $x$-coordinate and the second is the $y$-coordinate.
+- **$x$-coordinate** — the first number in an ordered pair $(x, y)$.
+- **$y$-coordinate** — the second number in an ordered pair $(x, y)$.
+- **origin** — the point $(0, 0)$, where the $x$-axis and $y$-axis intersect.
+- **linear equation in two variables** — an equation of the form $Ax + By = C$, where $A$ and $B$ are not both zero.
+- **standard form** — a linear equation is in standard form when it is written $Ax + By = C$.
+- **solution of a linear equation in two variables** — an ordered pair $(x, y)$ that makes the equation a true statement when its $x$- and $y$-values are substituted in for $x$ and $y$.
 
 ## Practice
 

@@ -589,15 +589,12 @@ $$
 
 ## Key terms
 
-**FOIL** — a method for multiplying two binomials by adding the products of
-the First, Outer, Inner, and Last terms. **Vertical Method** — a method for
-multiplying polynomials that lines up partial products in columns, like whole
-number multiplication. **conjugate pair** — two binomials of the form
-$(a-b),\ (a+b)$ with the same first and last terms, one a sum and one a
-difference. **binomial squares pattern** — $(a+b)^2=a^2+2ab+b^2$ and
-$(a-b)^2=a^2-2ab+b^2$. **product of conjugates pattern** —
-$(a-b)(a+b)=a^2-b^2$. **difference of squares** — a binomial of the form
-$a^2-b^2$, the product of a conjugate pair.
+- **FOIL** — a method for multiplying two binomials by adding the products of the First, Outer, Inner, and Last terms.
+- **Vertical Method** — a method for multiplying polynomials that lines up partial products in columns, like whole number multiplication.
+- **conjugate pair** — two binomials of the form $(a-b),\ (a+b)$ with the same first and last terms, one a sum and one a difference.
+- **binomial squares pattern** — $(a+b)^2=a^2+2ab+b^2$ and $(a-b)^2=a^2-2ab+b^2$.
+- **product of conjugates pattern** — $(a-b)(a+b)=a^2-b^2$.
+- **difference of squares** — a binomial of the form $a^2-b^2$, the product of a conjugate pair.
 
 ## Practice
 

@@ -321,11 +321,15 @@ Lessons — baseline rules this book's vocabulary makes easy to break:
   shape), and the claim pass's finding is logged, not applied. Part C
   greps the SIBLING chapter a Part B note names before ruling a key
   "stands" *(chapter 19)*.
-- **A Source note under a re-keyed multiple choice names the corrected
-  key** (16.5, 19.2, 19.5) — the blind solver reads it as the key printed
-  beneath the item. The precedent stands; a run that wants it hidden moves
-  the naming clause to the footer and leaves the note under the item
-  generic *(chapter 19, solver note)*.
+- **A Source note under a re-keyed multiple choice never prints the
+  key**: it names the source's option by position ("the source keys the
+  first option"), says the page keys a different option, and leaves the
+  naming clause and the reasoning to the footer; the lint rejects a note
+  under a multiple choice that prints the item's key. Decided October 27,
+  2026, after 16.5, 19.2, 19.5, 22.1, and 22.2 had printed the house key
+  beneath the item, where the blind solver and the learner read it; the
+  seven such notes were rewritten that day *(chapters 19 and 22, solver
+  notes)*.
 - **A double-keyed or misspelled source Review option is an `options`
   deviation whose erratum number the parent assigns IN the ruling** — and
   when the misspelled option is the KEYED one, the kind is `key`, not
@@ -457,7 +461,7 @@ Lessons — baseline rules this book's vocabulary makes easy to break:
 - **A re-key Source note names the source's option by position** ("the
   source keys the first option"), never by its text: the note sits under
   the item, and 22.1's printed "alveoli", the key of the item two below
-  it *(chapter 22)*.
+  it; see the re-key note rule above *(chapter 22)*.
 - **The blind solve can overturn a parent key ruling as the claim pass
   can**: 22.1's "most distal component of the bronchial tree" stood on
   Part C and fell to the solver's reading of the module's own glossary

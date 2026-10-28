@@ -263,7 +263,7 @@ bacitracin and polymyxin
 narrow-spectrum and broad-spectrum antimicrobials
 {{< /multiplechoice >}}
 
-{{< textin question="Antagonism can occur between two antimicrobials or between antimicrobials and ________ being used to treat other conditions." answer="nonantimicrobials" accept="non-antimicrobials" hint="Reread the second paragraph of Drug Interactions." >}}
+{{< textin question="Antagonism can occur between two antimicrobials or between antimicrobials and ________ being used to treat other conditions." answer="nonantimicrobials"  hint="Reread the second paragraph of Drug Interactions." >}}
 
 {{< selfcheck question="Too often patients will stop taking antimicrobial drugs before the prescription is finished. What are factors that cause a patient to stop too soon, and what negative impacts could this have?" hint="Reread the first paragraph of the Eye on Ethics box." >}}
 Patients often stop taking antimicrobials once their symptoms dissipate and they feel better, before finishing the full prescribed course. A shorter course of treatment not only fails to kill the target organisms to expected levels, it also selects for drug-resistant variants within the target population and within the patient's microbiota.

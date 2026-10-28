@@ -172,7 +172,7 @@ cytomegalovirus
 
 {{< textin question="Condylomata are ________." answer="warts" accept="genital warts|venereal warts" hint="Look at the first paragraph of the Human Papillomas subsection." >}}
 
-{{< textin question="HPV is a small, ________ virus with a circular double-stranded DNA genome." answer="non-enveloped" accept="nonenveloped" hint="Look at the first sentence of the second paragraph of the Human Papillomas subsection." >}}
+{{< textin question="HPV is a small, ________ virus with a circular double-stranded DNA genome." answer="non-enveloped"  hint="Look at the first sentence of the second paragraph of the Human Papillomas subsection." >}}
 
 {{< textin question="Herpes simplex virus type 1 (HSV-1) is generally associated with oral lesions like ________ or fever blisters." answer="cold sores" hint="Look in the paragraph that contrasts the two herpes simplex virus types." >}}
 

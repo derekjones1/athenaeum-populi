@@ -508,21 +508,15 @@ $y$-coordinate at $x=3$, which is $-10$.
 
 ## Key terms
 
-**rate of change** — the change of an output quantity relative to the change
-of the input quantity. **average rate of change** — the difference in the
-output values of a function found for two values of the input divided by the
-difference between the inputs. **increasing function** — a function is
-increasing in some open interval if $f(b)>f(a)$ for any two input values $a$
-and $b$ in the given interval where $b>a$. **decreasing function** — a
-function is decreasing in some open interval if $f(b)<f(a)$ for any two input
-values $a$ and $b$ in the given interval where $b>a$. **local maximum** — a
-value of the input where a function changes from increasing to decreasing as
-the input value increases. **local minimum** — a value of the input where a
-function changes from decreasing to increasing as the input value increases.
-**local extrema** — collectively, all of a function's local maxima and
-minima. **absolute maximum** — the greatest value of a function over an
-interval. **absolute minimum** — the lowest value of a function over an
-interval.
+- **rate of change** — the change of an output quantity relative to the change of the input quantity.
+- **average rate of change** — the difference in the output values of a function found for two values of the input divided by the difference between the inputs.
+- **increasing function** — a function is increasing in some open interval if $f(b)>f(a)$ for any two input values $a$ and $b$ in the given interval where $b>a$.
+- **decreasing function** — a function is decreasing in some open interval if $f(b)<f(a)$ for any two input values $a$ and $b$ in the given interval where $b>a$.
+- **local maximum** — a value of the input where a function changes from increasing to decreasing as the input value increases.
+- **local minimum** — a value of the input where a function changes from decreasing to increasing as the input value increases.
+- **local extrema** — collectively, all of a function's local maxima and minima.
+- **absolute maximum** — the greatest value of a function over an interval.
+- **absolute minimum** — the lowest value of a function over an interval.
 
 ## Practice
 

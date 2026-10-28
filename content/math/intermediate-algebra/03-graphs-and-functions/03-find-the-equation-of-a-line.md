@@ -568,11 +568,9 @@ lines. Do they appear perpendicular?
 
 ## Key terms
 
-**point-slope form** — the form $y-y_1=m(x-x_1)$ of an equation of a line
-with slope $m$ containing the point $(x_1,y_1)$. **parallel lines** — lines
-in the same plane that do not intersect and have the same slope.
-**perpendicular lines** — lines that intersect at a right angle and whose
-slopes are negative reciprocals.
+- **point-slope form** — the form $y-y_1=m(x-x_1)$ of an equation of a line with slope $m$ containing the point $(x_1,y_1)$.
+- **parallel lines** — lines in the same plane that do not intersect and have the same slope.
+- **perpendicular lines** — lines that intersect at a right angle and whose slopes are negative reciprocals.
 
 ## Practice
 

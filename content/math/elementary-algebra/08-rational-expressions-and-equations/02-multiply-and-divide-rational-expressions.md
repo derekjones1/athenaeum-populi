@@ -300,12 +300,9 @@ $$
 
 ## Key terms
 
-**rational expression** — a fraction whose numerator and denominator are
-polynomials. **reciprocal** — the fraction obtained by interchanging the
-numerator and denominator; the reciprocal of $\tfrac{a}{b}$ is $\tfrac{b}{a}$.
-**complex fraction** — a fraction in which the numerator, the denominator, or
-both contain a fraction; a complex fraction represents the division of its top
-by its bottom.
+- **rational expression** — a fraction whose numerator and denominator are polynomials.
+- **reciprocal** — the fraction obtained by interchanging the numerator and denominator; the reciprocal of $\tfrac{a}{b}$ is $\tfrac{b}{a}$.
+- **complex fraction** — a fraction in which the numerator, the denominator, or both contain a fraction; a complex fraction represents the division of its top by its bottom.
 
 ## Practice
 

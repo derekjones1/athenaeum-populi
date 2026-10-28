@@ -52,14 +52,14 @@ When blood levels of calcium get too high, the thyroid gland is stimulated to re
 {{< textin
   question="________ can result in problems with blood coagulation, muscle contraction, nerve functioning, and bone strength."
   answer="hypocalcemia"
-  accept="hypocalcaemia|hypo-calcemia"
+  accept="hypocalcaemia"
   hint="Look at the second sentence of the Summary."
 >}}
 
 {{< textin
   question="________ can result in lethargy, sluggish reflexes, constipation and loss of appetite, confusion, and coma."
   answer="hypercalcemia"
-  accept="hypercalcaemia|hyper-calcemia"
+  accept="hypercalcaemia"
   hint="Look at the third sentence of the Summary."
 >}}
 

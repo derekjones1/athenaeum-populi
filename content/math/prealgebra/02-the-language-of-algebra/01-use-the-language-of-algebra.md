@@ -305,14 +305,13 @@ right: $35 - 25 = 10$.
 
 ## Key terms
 
-**variable** — a letter that represents a number whose value may change.
-**constant** — a number whose value always stays the same. **expression** — a
-number, a variable, or a combination of these with operation symbols.
-**equation** — two expressions connected by an equal sign. **base** — in $a^n$,
-the factor $a$ being repeated. **exponent** — in $a^n$, the number $n$ of
-factors of the base. **order of operations** — the agreed order for simplifying:
-parentheses, exponents, multiplication and division (left to right), then
-addition and subtraction (left to right).
+- **variable** — a letter that represents a number whose value may change.
+- **constant** — a number whose value always stays the same.
+- **expression** — a number, a variable, or a combination of these with operation symbols.
+- **equation** — two expressions connected by an equal sign.
+- **base** — in $a^n$, the factor $a$ being repeated.
+- **exponent** — in $a^n$, the number $n$ of factors of the base.
+- **order of operations** — the agreed order for simplifying: parentheses, exponents, multiplication and division (left to right), then addition and subtraction (left to right).
 
 ## Practice
 

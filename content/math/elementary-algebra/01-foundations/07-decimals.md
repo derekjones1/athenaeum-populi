@@ -652,11 +652,9 @@ $0.093$.
 
 ## Key terms
 
-**decimal** — a way of writing a fraction whose denominator is a power of
-$10$, using a decimal point to separate the whole-number part from the
-fractional part. **repeating decimal** — a decimal in which the last digit
-or group of digits repeats endlessly, indicated with a bar over the
-repeating block. **percent** — a ratio whose denominator is $100$.
+- **decimal** — a way of writing a fraction whose denominator is a power of $10$, using a decimal point to separate the whole-number part from the fractional part.
+- **repeating decimal** — a decimal in which the last digit or group of digits repeats endlessly, indicated with a bar over the repeating block.
+- **percent** — a ratio whose denominator is $100$.
 
 ## Practice
 

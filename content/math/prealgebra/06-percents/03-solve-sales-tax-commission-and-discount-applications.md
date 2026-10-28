@@ -390,12 +390,9 @@ photograph was $\text{\textdollar}350$.
 
 ## Key terms
 
-**commission** — a percentage of total sales, as determined by the rate of
-commission; $\text{commission} = \text{rate of commission} \cdot
-\text{total sales}$. **discount rate** — the percent used to determine the
-amount of discount off an original price. **mark-up** — the amount a
-retailer adds to the wholesale price of an item to reach the list price;
-$\text{list price} = \text{wholesale price} + \text{mark-up}$.
+- **commission** — a percentage of total sales, as determined by the rate of commission; $\text{commission} = \text{rate of commission} \cdot \text{total sales}$.
+- **discount rate** — the percent used to determine the amount of discount off an original price.
+- **mark-up** — the amount a retailer adds to the wholesale price of an item to reach the list price; $\text{list price} = \text{wholesale price} + \text{mark-up}$.
 
 ## Practice
 

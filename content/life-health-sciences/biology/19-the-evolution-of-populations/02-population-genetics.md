@@ -251,7 +251,7 @@ when individuals mate with those who are least fit in the population
 {{< textin
   question="Changes in a population's gene pool caused by mate choice or other forces that make individuals more likely to reproduce with certain phenotypes than others are the result of ________."
   answer="nonrandom mating"
-  accept="non-random mating"
+
   hint="Reread the first paragraph of the subsection that follows Mutation."
 >}}
 

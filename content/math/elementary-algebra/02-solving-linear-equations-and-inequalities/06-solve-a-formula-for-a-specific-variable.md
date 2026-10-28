@@ -290,10 +290,8 @@ since $5$ does not divide evenly into both terms of the numerator.
 
 ## Key terms
 
-**rate** — an equivalent word for speed; how fast an object moves per unit
-of time. **solve a formula for a specific variable** — to isolate that
-variable on one side of the equals sign, with a coefficient of $1$, while
-all other variables and constants are on the other side.
+- **rate** — an equivalent word for speed; how fast an object moves per unit of time.
+- **solve a formula for a specific variable** — to isolate that variable on one side of the equals sign, with a coefficient of $1$, while all other variables and constants are on the other side.
 
 ## Practice
 

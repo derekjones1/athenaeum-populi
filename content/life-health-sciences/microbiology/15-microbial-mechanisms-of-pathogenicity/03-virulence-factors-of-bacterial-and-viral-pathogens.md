@@ -442,7 +442,7 @@ the increased cAMP causes the secretion of fluid and electrolytes responsible fo
 
 ### Describe the mechanisms viruses use for adhesion and antigenic variation
 
-{{< textin question="The glycoprotein adhesin gp120 on HIV must interact with ________ on some immune cells as the first step in the process of infecting the cell." answer="CD4" accept="CD-4|CD4 receptor|CD4 cellular marker|CD4 marker" hint="Reread the Viral Adhesins paragraph on HIV." >}}
+{{< textin question="The glycoprotein adhesin gp120 on HIV must interact with ________ on some immune cells as the first step in the process of infecting the cell." answer="CD4" accept="CD4 receptor|CD4 cellular marker|CD4 marker" hint="Reread the Viral Adhesins paragraph on HIV." >}}
 
 {{< textin question="Antigenic ________ is the result of reassortment of genes responsible for the production of influenza virus spike proteins between different virus particles while in the same host, whereas antigenic drift is the result of point mutations in the spike proteins." answer="shift" hint="Reread the first paragraph of the Antigenic Variation in Viruses subsection." >}}
 

@@ -934,17 +934,14 @@ $$
 
 ## Key terms
 
-**Product Property for Exponents** — $a^m \cdot a^n = a^{m+n}$; to multiply
-with like bases, add the exponents. **Quotient Property for Exponents** —
-$\tfrac{a^m}{a^n} = a^{m-n}$ for $a \neq 0$; subtract the exponents.
-**Zero Exponent Property** — any non-zero number raised to the zero power is
-$1$. **negative exponent** — $a^{-n} = \tfrac{1}{a^n}$ for $a \neq 0$.
-**Power Property for Exponents** — $(a^m)^n = a^{m \cdot n}$; to raise a power
-to a power, multiply the exponents. **Product to a Power Property** —
-$(ab)^m = a^m b^m$. **Quotient to a Power Property** —
-$\left(\tfrac{a}{b}\right)^m = \tfrac{a^m}{b^m}$. **scientific notation** — a
-number written in the form $a \times 10^n$, where $1 \le |a| < 10$ and $n$ is an
-integer.
+- **Product Property for Exponents** — $a^m \cdot a^n = a^{m+n}$; to multiply with like bases, add the exponents.
+- **Quotient Property for Exponents** — $\tfrac{a^m}{a^n} = a^{m-n}$ for $a \neq 0$; subtract the exponents.
+- **Zero Exponent Property** — any non-zero number raised to the zero power is $1$.
+- **negative exponent** — $a^{-n} = \tfrac{1}{a^n}$ for $a \neq 0$.
+- **Power Property for Exponents** — $(a^m)^n = a^{m \cdot n}$; to raise a power to a power, multiply the exponents.
+- **Product to a Power Property** — $(ab)^m = a^m b^m$.
+- **Quotient to a Power Property** — $\left(\tfrac{a}{b}\right)^m = \tfrac{a^m}{b^m}$.
+- **scientific notation** — a number written in the form $a \times 10^n$, where $1 \le |a| < 10$ and $n$ is an integer.
 
 ## Practice
 

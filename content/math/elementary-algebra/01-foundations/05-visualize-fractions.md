@@ -613,15 +613,12 @@ $\tfrac{m-n}{p}$.
 
 ## Key terms
 
-**fraction** — a way to represent parts of a whole, written $\tfrac{a}{b}$
-where $b \neq 0$; $a$ is the numerator and $b$ is the denominator.
-**equivalent fractions** — fractions that have the same value.
-**simplified fraction** — a fraction with no common factors, other than $1$,
-in its numerator and denominator. **reciprocal** — the fraction formed by
-inverting a given fraction; a number and its reciprocal multiply to $1$.
-**complex fraction** — a fraction in which the numerator or the denominator
-itself contains a fraction. **fraction bar** — the line separating the
-numerator from the denominator, which acts as a grouping symbol.
+- **fraction** — a way to represent parts of a whole, written $\tfrac{a}{b}$ where $b \neq 0$; $a$ is the numerator and $b$ is the denominator.
+- **equivalent fractions** — fractions that have the same value.
+- **simplified fraction** — a fraction with no common factors, other than $1$, in its numerator and denominator.
+- **reciprocal** — the fraction formed by inverting a given fraction; a number and its reciprocal multiply to $1$.
+- **complex fraction** — a fraction in which the numerator or the denominator itself contains a fraction.
+- **fraction bar** — the line separating the numerator from the denominator, which acts as a grouping symbol.
 
 ## Practice
 

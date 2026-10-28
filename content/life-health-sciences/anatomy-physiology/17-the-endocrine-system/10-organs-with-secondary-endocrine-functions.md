@@ -94,7 +94,7 @@ The liver is responsible for secreting at least four important hormones or hormo
 {{< textin
   question="When cholesterol present in the epidermis is exposed to ________ radiation, it is converted to cholecalciferol, which then enters the blood."
   answer="ultraviolet"
-  accept="UV|ultra-violet"
+  accept="UV"
   hint="Look in the Skin subsection."
 >}}
 

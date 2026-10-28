@@ -384,12 +384,8 @@ tall.
 
 ## Key terms
 
-**proportion** — an equation of the form $\tfrac{a}{b} = \tfrac{c}{d}$ (with
-$b \neq 0$ and $d \neq 0$) stating that two ratios are equal; read "$a$ is to
-$b$ as $c$ is to $d$." **proportional** — two quantities are proportional when
-they are related by a proportion. **similar figures** — two figures with the
-same shape but possibly different sizes, so their corresponding angles are
-equal and their corresponding sides are in the same ratio.
+- **proportion** — an equation of the form $\tfrac{a}{b} = \tfrac{c}{d}$ (with $b \neq 0$ and $d \neq 0$) stating that two ratios are equal; read "$a$ is to $b$ as $c$ is to $d$." **proportional** — two quantities are proportional when they are related by a proportion.
+- **similar figures** — two figures with the same shape but possibly different sizes, so their corresponding angles are equal and their corresponding sides are in the same ratio.
 
 ## Practice
 

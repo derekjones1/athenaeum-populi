@@ -471,15 +471,9 @@ So $20^\circ\text{C}$ is equivalent to $68^\circ\text{F}$.
 
 ## Key terms
 
-**U.S. system** — the system of measurement used in the United States,
-with units like inch, foot, mile, pound, ton, cup, and gallon. **metric
-system** — the system of measurement used in most of the world, with units
-related by powers of $10$ (kilo-, centi-, milli-, and so on). Unit
-conversions multiply a measurement by a cleverly chosen form of $1$ — a
-fraction equal to $1$ relating two units — so the value stays the same
-while the units change. **Fahrenheit** and **Celsius** — the two common
-temperature scales, related by $C = \tfrac{5}{9}(F - 32)$ and $F =
-\tfrac{9}{5}C + 32$.
+- **U.S. system** — the system of measurement used in the United States, with units like inch, foot, mile, pound, ton, cup, and gallon.
+- **metric system** — the system of measurement used in most of the world, with units related by powers of $10$ (kilo-, centi-, milli-, and so on). Unit conversions multiply a measurement by a cleverly chosen form of $1$ — a fraction equal to $1$ relating two units — so the value stays the same while the units change.
+- **Fahrenheit** and **Celsius** — the two common temperature scales, related by $C = \tfrac{5}{9}(F - 32)$ and $F = \tfrac{9}{5}C + 32$.
 
 ## Practice
 

@@ -161,7 +161,7 @@ There are several different forms of leishmaniasis. The most common is a localiz
 {{< textin
   question="The specific step in which a leukocyte flattens out and squeezes through a capillary's cellular junction is called ________."
   answer="transendothelial migration"
-  accept="trans-endothelial migration"
+
   hint="See the end of the first paragraph of this section's first subsection."
 >}}
 

@@ -314,11 +314,8 @@ Monica bought eight $8$-cent stamps and twenty $49$-cent stamps.
 
 ## Key terms
 
-**coin word problem** — a word problem that finds the number of coins of
-each type from clues about their relationship and their total value, using
-a table of number, value, and total value for each coin type. **ticket
-(and stamp) word problem** — a word problem structurally identical to a
-coin word problem, with ticket or stamp prices in place of coin values.
+- **coin word problem** — a word problem that finds the number of coins of each type from clues about their relationship and their total value, using a table of number, value, and total value for each coin type.
+- **ticket (and stamp) word problem** — a word problem structurally identical to a coin word problem, with ticket or stamp prices in place of coin values.
 
 ## Practice
 

@@ -86,7 +86,7 @@ protease
 {{< textin
   question="The 'drug cocktail' combination approach that attacks HIV at multiple stages of its replicative cycle at once, so the virus cannot develop resistance to every drug simultaneously, is known by the acronym ________."
   answer="HAART"
-  accept="highly active antiretroviral therapy|highly active anti-retroviral therapy|HAART therapy"
+  accept="highly active antiretroviral therapy|HAART therapy"
 >}}
 
 {{< selfcheck question="Why must people be vaccinated against influenza every year, while the same vaccine against measles, mumps, and rubella is used year after year?" >}}
@@ -374,7 +374,7 @@ without saprobe species, life would cease to exist as all organic carbon became 
 {{< textin
   question="Pigments associated with the fungal cell wall play a protective role against ________ radiation."
   answer="ultraviolet"
-  accept="UV|ultra-violet"
+  accept="UV"
 >}}
 
 {{< textin
@@ -555,7 +555,7 @@ than the Charales or the Coleochaetales
 {{< textin
   question="In hornworts, thin branched cells called ________ surround the spores and help propel them farther into the environment."
   answer="pseudoelaters"
-  accept="pseudo-elaters"
+
 >}}
 
 {{< textin

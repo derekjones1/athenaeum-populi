@@ -273,13 +273,10 @@ $$
 
 ## Key terms
 
-**radius** — the distance from the center of a circle to any point on the
-circle. **diameter** — the distance across a circle through its center,
-equal to twice the radius. **circumference** — the perimeter of (distance
-around) a circle, $C = 2\pi r$ or $C = \pi d$. **irregular figure** — a
-figure that is not a standard geometric shape, whose area can often be
-found by splitting it into rectangles, triangles, trapezoids, and circles
-(or semicircles) and adding their areas.
+- **radius** — the distance from the center of a circle to any point on the circle.
+- **diameter** — the distance across a circle through its center, equal to twice the radius.
+- **circumference** — the perimeter of (distance around) a circle, $C = 2\pi r$ or $C = \pi d$.
+- **irregular figure** — a figure that is not a standard geometric shape, whose area can often be found by splitting it into rectangles, triangles, trapezoids, and circles (or semicircles) and adding their areas.
 
 ## Practice
 

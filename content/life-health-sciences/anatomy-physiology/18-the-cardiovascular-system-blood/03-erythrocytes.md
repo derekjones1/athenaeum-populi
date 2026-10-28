@@ -235,7 +235,7 @@ The non-heme iron they consume in plant foods is not as well absorbed as heme ir
 {{< textin
   question="A compound of carbon dioxide and hemoglobin, and one of the ways in which carbon dioxide is carried in the blood, is called ________."
   answer="carbaminohemoglobin"
-  accept="carbamino-hemoglobin|carbaminohaemoglobin|carbamino-haemoglobin"
+  accept="carbaminohaemoglobin"
   hint="Look in the paragraph on how hemoglobin picks up and releases gases in the Hemoglobin subsection."
 >}}
 

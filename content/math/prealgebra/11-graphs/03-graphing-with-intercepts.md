@@ -534,10 +534,9 @@ vertical line
 
 ## Key terms
 
-**intercept of a line** — a point where a line crosses an axis. **$x$-intercept**
-— the point $(a, 0)$ where a line crosses the $x$-axis; it occurs when $y$ is
-zero. **$y$-intercept** — the point $(0, b)$ where a line crosses the
-$y$-axis; it occurs when $x$ is zero.
+- **intercept of a line** — a point where a line crosses an axis.
+- **$x$-intercept** — the point $(a, 0)$ where a line crosses the $x$-axis; it occurs when $y$ is zero.
+- **$y$-intercept** — the point $(0, b)$ where a line crosses the $y$-axis; it occurs when $x$ is zero.
 
 ## Practice
 

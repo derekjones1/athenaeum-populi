@@ -921,7 +921,7 @@ the outermost layer is connective tissue (collagen and elastic fibers)
 {{< textin
   question="Whales living in cold water keep their blood warm because their veins and arteries lie close together, so warmth passes between the two kinds of vessel. This mechanism is called a ________."
   answer="countercurrent heat exchanger"
-  accept="countercurrent heat exchange|counter-current heat exchanger|countercurrent exchanger"
+  accept="countercurrent heat exchange|countercurrent exchanger"
 >}}
 
 {{< selfcheck question="Each capillary is far narrower than the aorta, yet blood moves through the capillary beds much more slowly. Why, and how does this slow rate help the body?" >}}

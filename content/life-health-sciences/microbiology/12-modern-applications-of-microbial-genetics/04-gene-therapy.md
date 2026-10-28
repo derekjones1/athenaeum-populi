@@ -154,7 +154,7 @@ all of the answers are correct
 
 ### Compare somatic-cell and germ-line gene therapy
 
-{{< textin question="To date, the various types of gene therapies have been targeted to somatic cells, the ________ cells within the body." answer="non-reproductive" accept="nonreproductive" hint="Reread the start of the last paragraph of Ethical Concerns." >}}
+{{< textin question="To date, the various types of gene therapies have been targeted to somatic cells, the ________ cells within the body." answer="non-reproductive"  hint="Reread the start of the last paragraph of Ethical Concerns." >}}
 
 {{< textin question="For these reasons, the U.S. government does not currently ________ research projects investigating germ-line gene therapies in humans." answer="fund" accept="funding|finance" hint="Reread the last sentence of Ethical Concerns." >}}
 

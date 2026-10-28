@@ -656,7 +656,13 @@ Harmonic motion graphs may be enclosed by bounding curves. When a function has a
 
 ## Key terms
 
-**amplitude** — the distance from the midline to the maximum or minimum value of a sinusoidal function. **damped harmonic motion** — a form of harmonic motion affected by a damping factor that dissipates energy, causing the local maximum and minimum values of the displacement to shrink toward the equilibrium value. **frequency** — the reciprocal of the period, $\tfrac{\omega}{2\pi}$, giving the number of cycles per unit of time. **harmonic motion** — a kind of periodic motion attributable to a restoring force such as spring tension or gravity. **midline** — the average value of a sinusoidal function, the vertical shift from the parent graph. **periodic motion** — motion that repeats itself in a fixed time period. **simple harmonic motion** — a periodic motion, given as $d=a\cos(\omega t)$ or $d=a\sin(\omega t)$, that involves a restoring force but assumes the motion will continue forever.
+- **amplitude** — the distance from the midline to the maximum or minimum value of a sinusoidal function.
+- **damped harmonic motion** — a form of harmonic motion affected by a damping factor that dissipates energy, causing the local maximum and minimum values of the displacement to shrink toward the equilibrium value.
+- **frequency** — the reciprocal of the period, $\tfrac{\omega}{2\pi}$, giving the number of cycles per unit of time.
+- **harmonic motion** — a kind of periodic motion attributable to a restoring force such as spring tension or gravity.
+- **midline** — the average value of a sinusoidal function, the vertical shift from the parent graph.
+- **periodic motion** — motion that repeats itself in a fixed time period.
+- **simple harmonic motion** — a periodic motion, given as $d=a\cos(\omega t)$ or $d=a\sin(\omega t)$, that involves a restoring force but assumes the motion will continue forever.
 
 ## Practice
 

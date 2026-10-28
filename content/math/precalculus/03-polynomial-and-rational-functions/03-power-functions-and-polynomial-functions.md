@@ -812,24 +812,17 @@ The degree is 3 so the graph has at most 2 turning points.
 
 ## Key terms
 
-**coefficient** — a nonzero real number multiplied by a variable raised to
-an exponent. **continuous function** — a function whose graph can be drawn
-without lifting the pen from the paper because there are no breaks in the
-graph. **degree** — the highest power of the variable that occurs in a
-polynomial. **end behavior** — the behavior of the graph of a function as the
-input decreases without bound and increases without bound. **leading
-coefficient** — the coefficient of the leading term. **leading term** — the
-term containing the highest power of the variable. **polynomial function** —
-a function that consists of either zero or the sum of a finite number of
-non-zero terms, each of which is a product of a number, called the
-coefficient of the term, and a variable raised to a non-negative integer
-power. **power function** — a function that can be represented in the form
-$f(x)=kx^p$ where $k$ is a constant, the base is a variable, and the
-exponent, $p$, is a constant. **smooth curve** — a graph with no sharp
-corners. **term of a polynomial function** — any $a_ix^i$ of a polynomial
-function in the form $f(x)=a_nx^n+a_{n-1}x^{n-1}+\ldots+a_2x^2+a_1x+a_0$.
-**turning point** — the location at which the graph of a function changes
-direction.
+- **coefficient** — a nonzero real number multiplied by a variable raised to an exponent.
+- **continuous function** — a function whose graph can be drawn without lifting the pen from the paper because there are no breaks in the graph.
+- **degree** — the highest power of the variable that occurs in a polynomial.
+- **end behavior** — the behavior of the graph of a function as the input decreases without bound and increases without bound.
+- **leading coefficient** — the coefficient of the leading term.
+- **leading term** — the term containing the highest power of the variable.
+- **polynomial function** — a function that consists of either zero or the sum of a finite number of non-zero terms, each of which is a product of a number, called the coefficient of the term, and a variable raised to a non-negative integer power.
+- **power function** — a function that can be represented in the form $f(x)=kx^p$ where $k$ is a constant, the base is a variable, and the exponent, $p$, is a constant.
+- **smooth curve** — a graph with no sharp corners.
+- **term of a polynomial function** — any $a_ix^i$ of a polynomial function in the form $f(x)=a_nx^n+a_{n-1}x^{n-1}+\ldots+a_2x^2+a_1x+a_0$.
+- **turning point** — the location at which the graph of a function changes direction.
 
 ## Practice
 

@@ -621,7 +621,7 @@ the right visual field falls on the side of the retina in the left field where t
 {{< textin
   question="Specifically, photons cause some of the double-bonded carbons within the hydrocarbon chain of retinal to switch from a *cis* to a *trans* conformation. This process is called ________."
   answer="photoisomerization"
-  accept="photoisomerisation|photo-isomerization|photo-isomerisation"
+  accept="photoisomerisation"
   hint="Look in the second paragraph after the figure of rods and cones."
 >}}
 

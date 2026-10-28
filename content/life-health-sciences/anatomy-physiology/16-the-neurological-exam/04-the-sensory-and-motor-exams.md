@@ -134,7 +134,7 @@ Sensory discrimination can pinpoint the level of damage in the spinal cord. Belo
 {{< textin
   question="The skeletomotor system is largely based on the simple, two-cell projection from the ________ of the frontal lobe to the skeletal muscles."
   answer="precentral gyrus"
-  accept="pre-central gyrus|precentral gyri|primary motor cortex"
+  accept="precentral gyri|primary motor cortex"
   hint="Look in the first paragraph of the Muscle Strength and Voluntary Movement subsection."
 >}}
 
@@ -167,14 +167,14 @@ involves an axon in the ventral nerve root
 {{< textin
   question="A cut through half of a structure, such as the spinal cord, is called a ________."
   answer="hemisection"
-  accept="hemi-section"
+
   hint="Look in the paragraph on pairing the light touch and pain subtests, or at the start of the Disorders box."
 >}}
 
 {{< textin
   question="Ascending fibers that carry proprioceptive input to the cerebellum, used in maintaining balance and coordinated movement, make up the ________."
   answer="spinocerebellar tract"
-  accept="spinocerebellar|spino-cerebellar tract"
+  accept="spinocerebellar"
   hint="Look in the last paragraph of the Sensory Modalities and Location subsection."
 >}}
 

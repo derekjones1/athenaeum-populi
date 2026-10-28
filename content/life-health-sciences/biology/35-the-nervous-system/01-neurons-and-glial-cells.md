@@ -188,7 +188,7 @@ this ensures the signal is rapidly propagated to the rest of the body
 {{< textin
   question="There are four main types of neurons: unipolar, bipolar, multipolar, and ________ neurons."
   answer="pseudounipolar"
-  accept="pseudo-unipolar"
+
   hint="See the Types of Neurons paragraph that names the four basic types."
 >}}
 

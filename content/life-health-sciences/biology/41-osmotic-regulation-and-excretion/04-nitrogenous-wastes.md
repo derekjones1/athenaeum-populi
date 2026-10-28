@@ -104,7 +104,7 @@ arid conditions probably led to the evolution of the uric acid pathway as a mean
 {{< textin
   question="An agent that protects cells from being destroyed by reactive oxygen species is called a(n) ________."
   answer="antioxidant"
-  accept="anti-oxidant"
+
   hint="Look in the Everyday Connection on gout."
 >}}
 

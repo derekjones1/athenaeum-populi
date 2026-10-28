@@ -587,15 +587,10 @@ $$
 
 ## Key terms
 
-**Quotient Property for Exponents** — to divide powers with like bases,
-subtract the exponents: $\tfrac{a^m}{a^n} = a^{m-n}$ when $m > n$, and
-$\tfrac{a^m}{a^n} = \tfrac{1}{a^{n-m}}$ when $n > m$ (with $a \neq 0$).
-**Zero Exponent** — any nonzero number or expression raised to the zero power
-is $1$: $a^0 = 1$ for $a \neq 0$. **Quotient to a Power Property for
-Exponents** — to raise a fraction to a power, raise the numerator and
-denominator to that power: $\left(\tfrac{a}{b}\right)^m = \tfrac{a^m}{b^m}$
-(with $b \neq 0$). **monomial** — a one-term algebraic expression, such as
-$7x^4$, that we can divide by applying these properties of exponents.
+- **Quotient Property for Exponents** — to divide powers with like bases, subtract the exponents: $\tfrac{a^m}{a^n} = a^{m-n}$ when $m > n$, and $\tfrac{a^m}{a^n} = \tfrac{1}{a^{n-m}}$ when $n > m$ (with $a \neq 0$).
+- **Zero Exponent** — any nonzero number or expression raised to the zero power is $1$: $a^0 = 1$ for $a \neq 0$.
+- **Quotient to a Power Property for Exponents** — to raise a fraction to a power, raise the numerator and denominator to that power: $\left(\tfrac{a}{b}\right)^m = \tfrac{a^m}{b^m}$ (with $b \neq 0$).
+- **monomial** — a one-term algebraic expression, such as $7x^4$, that we can divide by applying these properties of exponents.
 
 ## Practice
 

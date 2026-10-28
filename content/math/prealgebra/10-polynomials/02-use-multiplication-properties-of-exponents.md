@@ -568,15 +568,11 @@ $$\left(\tfrac{3}{4}c^3d\right)(12cd^2) = \tfrac{3}{4} \cdot 12 \cdot c^3 \cdot 
 
 ## Key terms
 
-**exponential notation** — writing $a^m$ to mean $m$ factors of $a$
-multiplied together. **Product Property of Exponents** — to multiply
-expressions with the same base, add the exponents: $a^m \cdot a^n =
-a^{m+n}$. **Power Property of Exponents** — to raise a power to a power,
-multiply the exponents: $(a^m)^n = a^{m \cdot n}$. **Product to a Power
-Property of Exponents** — to raise a product to a power, raise each factor
-to that power: $(ab)^m = a^m b^m$. **monomial** — an algebraic expression
-with one term, such as a single number, variable, or product of numbers and
-variables with whole-number exponents.
+- **exponential notation** — writing $a^m$ to mean $m$ factors of $a$ multiplied together.
+- **Product Property of Exponents** — to multiply expressions with the same base, add the exponents: $a^m \cdot a^n = a^{m+n}$.
+- **Power Property of Exponents** — to raise a power to a power, multiply the exponents: $(a^m)^n = a^{m \cdot n}$.
+- **Product to a Power Property of Exponents** — to raise a product to a power, raise each factor to that power: $(ab)^m = a^m b^m$.
+- **monomial** — an algebraic expression with one term, such as a single number, variable, or product of numbers and variables with whole-number exponents.
 
 ## Practice
 

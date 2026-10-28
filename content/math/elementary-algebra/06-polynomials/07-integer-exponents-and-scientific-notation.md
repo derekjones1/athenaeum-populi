@@ -681,14 +681,10 @@ $$
 
 ## Key terms
 
-**negative exponent** — for $a \neq 0$, $a^{-n} = \tfrac{1}{a^n}$; a negative
-exponent means take the reciprocal of the base and change the sign of the
-exponent. **Property of Negative Exponents** — $\tfrac{1}{a^{-n}} = a^n$.
-**Quotient to a Negative Exponent Property** —
-$\left(\tfrac{a}{b}\right)^{-n} = \left(\tfrac{b}{a}\right)^n$. **scientific
-notation** — a number written in the form $a \times 10^n$, where
-$1 \le |a| < 10$ and $n$ is an integer; the power of $10$ is positive for
-numbers larger than $1$ and negative for numbers between $0$ and $1$.
+- **negative exponent** — for $a \neq 0$, $a^{-n} = \tfrac{1}{a^n}$; a negative exponent means take the reciprocal of the base and change the sign of the exponent.
+- **Property of Negative Exponents** — $\tfrac{1}{a^{-n}} = a^n$.
+- **Quotient to a Negative Exponent Property** — $\left(\tfrac{a}{b}\right)^{-n} = \left(\tfrac{b}{a}\right)^n$.
+- **scientific notation** — a number written in the form $a \times 10^n$, where $1 \le |a| < 10$ and $n$ is an integer; the power of $10$ is positive for numbers larger than $1$ and negative for numbers between $0$ and $1$.
 
 ## Practice
 

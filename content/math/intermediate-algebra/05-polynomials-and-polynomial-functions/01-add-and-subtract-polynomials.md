@@ -505,15 +505,15 @@ $$
 
 ## Key terms
 
-**monomial** — an algebraic expression with one term, of the form $ax^m$ in
-one variable. **polynomial** — a monomial, or two or more terms combined by
-addition or subtraction. **binomial** — a polynomial with exactly two terms.
-**trinomial** — a polynomial with exactly three terms. **degree of a term** —
-the sum of the exponents of its variables. **degree of a constant** — the
-degree of any constant, which is $0$. **degree of a polynomial** — the
-highest degree of all its terms. **standard form of a polynomial** — a
-polynomial written with terms in descending order of degree. **polynomial
-function** — a function whose range values are defined by a polynomial.
+- **monomial** — an algebraic expression with one term, of the form $ax^m$ in one variable.
+- **polynomial** — a monomial, or two or more terms combined by addition or subtraction.
+- **binomial** — a polynomial with exactly two terms.
+- **trinomial** — a polynomial with exactly three terms.
+- **degree of a term** — the sum of the exponents of its variables.
+- **degree of a constant** — the degree of any constant, which is $0$.
+- **degree of a polynomial** — the highest degree of all its terms.
+- **standard form of a polynomial** — a polynomial written with terms in descending order of degree.
+- **polynomial function** — a function whose range values are defined by a polynomial.
 
 ## Practice
 

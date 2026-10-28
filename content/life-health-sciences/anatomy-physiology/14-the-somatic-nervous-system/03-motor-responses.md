@@ -289,7 +289,7 @@ corticospinal tract
 {{< textin
   question="The primary motor cortex is located in the ________ of the frontal lobe."
   answer="precentral gyrus"
-  accept="pre-central gyrus"
+
   hint="Look in the first paragraph of the last subsection of Cortical Responses."
 >}}
 

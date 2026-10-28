@@ -150,9 +150,9 @@ False
 
 ### Explain the significance of the minimal inhibitory concentration and the minimal bactericidal concentration relative to the effectiveness of an antimicrobial drug
 
-{{< textin question="The MIC assay can also be performed using 96-well ________ trays, which allow for the use of small volumes and automated dispensing devices, as well as the testing of multiple antimicrobials and/or microorganisms in one tray." answer="microdilution" accept="micro-dilution|microbroth dilution" hint="Reread the paragraph after the test-tube figure in the Dilution Tests discussion." >}}
+{{< textin question="The MIC assay can also be performed using 96-well ________ trays, which allow for the use of small volumes and automated dispensing devices, as well as the testing of multiple antimicrobials and/or microorganisms in one tray." answer="microdilution" accept="microbroth dilution" hint="Reread the paragraph after the test-tube figure in the Dilution Tests discussion." >}}
 
-{{< textin question="The method that can determine the MICs of multiple antimicrobial drugs against a microbial strain using a single agar plate is called the ________." answer="Etest" accept="E-test" hint="Reread the paragraph before the last figure in the Dilution Tests discussion." >}}
+{{< textin question="The method that can determine the MICs of multiple antimicrobial drugs against a microbial strain using a single agar plate is called the ________." answer="Etest"  hint="Reread the paragraph before the last figure in the Dilution Tests discussion." >}}
 
 {{< multiplechoice
   question="Can an Etest be used to find the MBC of a drug?"

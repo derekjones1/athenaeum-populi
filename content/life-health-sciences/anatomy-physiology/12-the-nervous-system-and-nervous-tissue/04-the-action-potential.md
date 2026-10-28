@@ -203,7 +203,7 @@ Visit this [website with a virtual neurophysiology lab](http://openstax.org/l/ne
 {{< textin
   question="An ion channel that opens and closes at random, with an intrinsic rate of switching between the open and closed states, and that contributes to the resting transmembrane voltage is a(n) ________."
   answer="leakage channel"
-  accept="non-gated channel|nongated channel"
+  accept="non-gated channel"
   hint="Look in the last paragraph of Electrically Active Cell Membranes."
 >}}
 

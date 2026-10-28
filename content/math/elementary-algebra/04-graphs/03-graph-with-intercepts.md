@@ -451,10 +451,9 @@ since setting $x = 0$ or $y = 0$ in turn makes the arithmetic simple.
 
 ## Key terms
 
-**intercepts of a line** — the points where a line crosses the $x$-axis and
-the $y$-axis. **$x$-intercept** — the point $(a, 0)$ where a line crosses
-the $x$-axis; it occurs when $y$ is zero. **$y$-intercept** — the point
-$(0, b)$ where a line crosses the $y$-axis; it occurs when $x$ is zero.
+- **intercepts of a line** — the points where a line crosses the $x$-axis and the $y$-axis.
+- **$x$-intercept** — the point $(a, 0)$ where a line crosses the $x$-axis; it occurs when $y$ is zero.
+- **$y$-intercept** — the point $(0, b)$ where a line crosses the $y$-axis; it occurs when $x$ is zero.
 
 ## Practice
 

@@ -614,10 +614,8 @@ Note there are no factor pairs that give us $-9$ as a sum. The trinomial is
 
 ## Key terms
 
-**factor a trinomial** — to write a trinomial $x^2+bx+c$ as a product of two
-binomials $(x+m)(x+n)$, where $m$ and $n$ multiply to $c$ and add to $b$.
-**prime trinomial** — a trinomial that cannot be written as a product of two
-binomials with integer coefficients (no factor pair of $c$ adds to $b$).
+- **factor a trinomial** — to write a trinomial $x^2+bx+c$ as a product of two binomials $(x+m)(x+n)$, where $m$ and $n$ multiply to $c$ and add to $b$.
+- **prime trinomial** — a trinomial that cannot be written as a product of two binomials with integer coefficients (no factor pair of $c$ adds to $b$).
 
 ## Practice
 

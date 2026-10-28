@@ -1078,18 +1078,16 @@ sample table values are included with each function shown below.
 
 ## Key terms
 
-**relation** — a set of ordered pairs. **domain** — the set of all input
-values of a relation. **range** — the set of all output values of a relation.
-**independent variable** — an input value of a function. **dependent
-variable** — an output value of a function. **function** — a relation in
-which each input value yields a unique output value. **function notation** —
-the notation $y=f(x)$, defining a function named $f$ with input $x$ and
-output $y$. **one-to-one function** — a function for which each value of the
-output is associated with a unique input value. **vertical line test** — a
-method of testing whether a graph represents a function by determining
-whether a vertical line intersects the graph no more than once. **horizontal
-line test** — a method of testing whether a function is one-to-one by
-determining whether any horizontal line intersects the graph more than once.
+- **relation** — a set of ordered pairs.
+- **domain** — the set of all input values of a relation.
+- **range** — the set of all output values of a relation.
+- **independent variable** — an input value of a function.
+- **dependent variable** — an output value of a function.
+- **function** — a relation in which each input value yields a unique output value.
+- **function notation** — the notation $y=f(x)$, defining a function named $f$ with input $x$ and output $y$.
+- **one-to-one function** — a function for which each value of the output is associated with a unique input value.
+- **vertical line test** — a method of testing whether a graph represents a function by determining whether a vertical line intersects the graph no more than once.
+- **horizontal line test** — a method of testing whether a function is one-to-one by determining whether any horizontal line intersects the graph more than once.
 
 ## Practice
 

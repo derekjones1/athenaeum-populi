@@ -221,12 +221,11 @@ parentheses change the result.
 
 ## Key terms
 
-**evaluate** — to find the value of an expression by substituting a given number
-for the variable and simplifying. **term** — a constant or the product of a
-constant and one or more variables. **coefficient** — the constant that
-multiplies the variable(s) in a term. **like terms** — terms that are constants,
-or that have the same variables raised to the same powers. **combining like
-terms** — simplifying by adding the coefficients of like terms.
+- **evaluate** — to find the value of an expression by substituting a given number for the variable and simplifying.
+- **term** — a constant or the product of a constant and one or more variables.
+- **coefficient** — the constant that multiplies the variable(s) in a term.
+- **like terms** — terms that are constants, or that have the same variables raised to the same powers.
+- **combining like terms** — simplifying by adding the coefficients of like terms.
 
 ## Practice
 

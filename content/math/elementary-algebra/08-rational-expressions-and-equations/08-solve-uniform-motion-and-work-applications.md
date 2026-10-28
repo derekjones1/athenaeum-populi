@@ -289,13 +289,9 @@ It would take Casey $4$ hours to do the job alone.
 
 ## Key terms
 
-**uniform motion** — motion at a constant rate, modeled by $D = rt$; solving
-for time gives $t = \tfrac{D}{r}$, which fills the time column of a rate table.
-**headwind / tailwind** — a wind (or current) that decreases or increases a
-vehicle's speed, changing the rate by a fixed amount. **work application** — a
-problem where two or more workers share a job; each does $\tfrac{1}{a}$ of the
-job per hour when alone, and their per-hour parts sum to $\tfrac{1}{t}$, the
-together rate.
+- **uniform motion** — motion at a constant rate, modeled by $D = rt$; solving for time gives $t = \tfrac{D}{r}$, which fills the time column of a rate table.
+- **headwind / tailwind** — a wind (or current) that decreases or increases a vehicle's speed, changing the rate by a fixed amount.
+- **work application** — a problem where two or more workers share a job; each does $\tfrac{1}{a}$ of the job per hour when alone, and their per-hour parts sum to $\tfrac{1}{t}$, the together rate.
 
 ## Practice
 

@@ -535,12 +535,9 @@ $$\frac{p+q}{r} = \frac{-4+(-2)}{8} = \frac{-6}{8} = -\frac{3}{4}$$
 
 ## Key terms
 
-**common denominator** — a shared denominator that lets fractions be added
-or subtracted directly, by combining their numerators over it. **least
-common denominator (LCD)** — the least common multiple (LCM) of two
-fractions' denominators; the smallest denominator they can share.
-**complex fraction** — a fraction whose numerator, denominator, or both
-contain a fraction; the fraction bar indicates division.
+- **common denominator** — a shared denominator that lets fractions be added or subtracted directly, by combining their numerators over it.
+- **least common denominator (LCD)** — the least common multiple (LCM) of two fractions' denominators; the smallest denominator they can share.
+- **complex fraction** — a fraction whose numerator, denominator, or both contain a fraction; the fraction bar indicates division.
 
 ## Practice
 

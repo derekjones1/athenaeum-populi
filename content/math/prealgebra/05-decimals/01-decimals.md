@@ -550,11 +550,8 @@ So $18.379$ rounded to the nearest whole number is $18$.
 
 ## Key terms
 
-**decimal notation** — a way of writing a number as a whole-number part and
-a fractional part, where the fractional part has a denominator that is a
-power of ten. **equivalent decimals** — two decimals that convert to
-equivalent fractions; writing zeros at the end of a decimal does not change
-its value.
+- **decimal notation** — a way of writing a number as a whole-number part and a fractional part, where the fractional part has a denominator that is a power of ten.
+- **equivalent decimals** — two decimals that convert to equivalent fractions; writing zeros at the end of a decimal does not change its value.
 
 ## Practice
 

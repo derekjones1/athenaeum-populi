@@ -131,7 +131,7 @@ Atmospheric nitrogen is the largest pool of available nitrogen in terrestrial ec
 {{< textin
   question="Plants that are fully photosynthetic and use a host plant only for water and minerals are called ________."
   answer="hemiparasites"
-  accept="hemiparasitic plant|hemi-parasite"
+  accept="hemiparasitic plant"
   hint="Reread the end of the first subsection under Nutrients from Other Sources."
 >}}
 
@@ -187,7 +187,7 @@ nitrogen-fixing nodule
 {{< textin
   question="Ectomycorrhizae form an extensive dense sheath around the root, while ________ are embedded within the root tissue."
   answer="endomycorrhizae"
-  accept="endomycorrhiza|endo-mycorrhizae|arbuscular mycorrhizae|arbuscular mycorrhiza"
+  accept="endomycorrhiza|arbuscular mycorrhizae|arbuscular mycorrhiza"
   hint="Reread the last paragraph of the fungi-and-roots subsection."
 >}}
 

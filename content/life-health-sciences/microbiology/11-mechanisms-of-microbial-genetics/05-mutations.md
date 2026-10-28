@@ -138,7 +138,7 @@ DNA polymerase may either skip replicating several nucleotides, creating a delet
 either outcome may lead to a frameshift mutation
 {{< /selfcheck >}}
 
-{{< textin question="What type of mutagen causes thymine dimers?" answer="nonionizing radiation" accept="non-ionizing radiation|nonionizing|ultraviolet light|UV light|ultraviolet radiation|UV radiation|ultraviolet|UV" hint="Reread the second paragraph of the Radiation subsection." >}}
+{{< textin question="What type of mutagen causes thymine dimers?" answer="nonionizing radiation" accept="nonionizing|ultraviolet light|UV light|ultraviolet radiation|UV radiation|ultraviolet|UV" hint="Reread the second paragraph of the Radiation subsection." >}}
 
 ## DNA Repair
 

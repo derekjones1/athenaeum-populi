@@ -492,15 +492,12 @@ The pipe drops $1$ inch for every $48$ inches of horizontal run.
 
 ## Key terms
 
-**geoboard** — a board with a grid of pegs on it, used with rubber bands to
-model lines. **positive slope** — the slope of a line that goes up as you
-read from left to right. **negative slope** — the slope of a line that goes
-down as you read from left to right. **slope of a line** — the ratio of the rise (vertical change) to the run
-(horizontal change) between two points on the line, $m = \tfrac{\text{rise}}{\text{run}} = \tfrac{y_2 - y_1}{x_2 - x_1}$.
-**slope formula** — the algebraic formula for computing slope from two named
-points, $(x_1, y_1)$ and $(x_2, y_2)$. **point-slope method** — graphing a
-line by plotting one known point, then using the slope to count out and mark
-a second point.
+- **geoboard** — a board with a grid of pegs on it, used with rubber bands to model lines.
+- **positive slope** — the slope of a line that goes up as you read from left to right.
+- **negative slope** — the slope of a line that goes down as you read from left to right.
+- **slope of a line** — the ratio of the rise (vertical change) to the run (horizontal change) between two points on the line, $m = \tfrac{\text{rise}}{\text{run}} = \tfrac{y_2 - y_1}{x_2 - x_1}$.
+- **slope formula** — the algebraic formula for computing slope from two named points, $(x_1, y_1)$ and $(x_2, y_2)$.
+- **point-slope method** — graphing a line by plotting one known point, then using the slope to count out and mark a second point.
 
 ## Practice
 

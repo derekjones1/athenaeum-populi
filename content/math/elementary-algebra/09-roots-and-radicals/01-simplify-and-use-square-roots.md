@@ -323,14 +323,12 @@ $$
 
 ## Key terms
 
-**square** of a number — if $n^2 = m$, then $m$ is the square of $n$. **square
-root** of a number — if $n^2 = m$, then $n$ is a square root of $m$; every
-positive number has two square roots, one positive and one negative. **radical
-sign** — the symbol $\sqrt{\phantom{m}}$ that denotes the positive (principal)
-square root. **radicand** — the number or expression under the radical sign.
-**principal square root** — the non-negative square root, the one the radical
-sign indicates. **approximation** — a value close to the exact square root,
-written with $\approx$, accurate to the number of digits displayed.
+- **square** of a number — if $n^2 = m$, then $m$ is the square of $n$.
+- **square root** of a number — if $n^2 = m$, then $n$ is a square root of $m$; every positive number has two square roots, one positive and one negative.
+- **radical sign** — the symbol $\sqrt{\phantom{m}}$ that denotes the positive (principal) square root.
+- **radicand** — the number or expression under the radical sign.
+- **principal square root** — the non-negative square root, the one the radical sign indicates.
+- **approximation** — a value close to the exact square root, written with $\approx$, accurate to the number of digits displayed.
 
 ## Practice
 

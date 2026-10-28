@@ -344,11 +344,9 @@ This problem requires two main steps. First we must find the decay constant k. I
 
 ## Key terms
 
-**One-to-One Property of Logarithmic Equations** — for $M>0$, $N>0$, $a>0$,
-and $a\ne1$, if $\log_a M=\log_a N$, then $M=N$. **exponential decay** —
-decay modeled by $A=A_0e^{kt}$ with a negative rate of growth, the decay
-constant $k$. **half-life** — the amount of time it takes a radioactive
-substance to decay to half of its original amount.
+- **One-to-One Property of Logarithmic Equations** — for $M>0$, $N>0$, $a>0$, and $a\ne1$, if $\log_a M=\log_a N$, then $M=N$.
+- **exponential decay** — decay modeled by $A=A_0e^{kt}$ with a negative rate of growth, the decay constant $k$.
+- **half-life** — the amount of time it takes a radioactive substance to decay to half of its original amount.
 
 ## Practice
 

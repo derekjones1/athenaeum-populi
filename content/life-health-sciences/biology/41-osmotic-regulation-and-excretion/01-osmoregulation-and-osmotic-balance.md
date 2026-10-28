@@ -107,7 +107,7 @@ none of the above
 {{< textin
   question="A membrane that allows only certain solutes to pass through is called a ________."
   answer="semi-permeable membrane"
-  accept="semipermeable membrane"
+
   hint="Look in the first paragraph after the learning objectives, where the membranes of the body are described."
 >}}
 
@@ -154,7 +154,7 @@ it allows the organism to keep the amount of water and dissolved solutes in bala
 {{< textin
   question="A solute that does not break down into ions when dissolved in water is called a(n) ________."
   answer="non-electrolyte"
-  accept="nonelectrolyte"
+
   hint="Look in the first paragraph after the learning objectives, where the two kinds of solute in the body's fluids are defined."
 >}}
 

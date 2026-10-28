@@ -135,7 +135,7 @@ an intervertebral disc
 the shoulder joint
 {{< /multiplechoice >}}
 
-*(Source note: the source’s option b, the key, reads “the manubriosternal joint”, which [Section 9.3](/life-health-sciences/anatomy-physiology/09-joints/03-cartilaginous-joints/) of this book classes as a symphysis and so an amphiarthrosis; the first sternocostal joint, which Section 9.3 makes a synchondrosis and a synarthrosis, stands in its place.)*
+*(Source note: the source’s option b reads “the manubriosternal joint”, which [Section 9.3](/life-health-sciences/anatomy-physiology/09-joints/03-cartilaginous-joints/) of this book classes as a symphysis and so an amphiarthrosis; the page prints a different joint in that position, and the footer names it and gives the reasoning. The other options are as printed.)*
 
 {{< selfcheck
   question="Define how joints are classified based on function. Describe and give an example for each functional type of joint."

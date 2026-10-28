@@ -128,7 +128,7 @@ respiratory
 bronchial
 {{< /multiplechoice >}}
 
-*(Source note: the source keys “respiratory,” but no sentence of this section names a “respiratory circulation”; its Blood Supply subsection says gas exchange “requires blood from the pulmonary circulation,” and its Summary says “The function of the pulmonary circulation is to aid in gas exchange,” so the item is keyed to “pulmonary” instead. The options and their order are unchanged.)*
+*(Source note: the source keys the third option, a circulation no sentence of this section names; the page keys the circulation its Blood Supply subsection and Summary give gas exchange to, and the footer gives the reasoning. The options and their order are as printed.)*
 
 {{< textin
   question="The blood supply for gas exchange contains ________ blood and travels to the lungs where erythrocytes, also known as red blood cells, pick up oxygen to be transported to tissues throughout the body."

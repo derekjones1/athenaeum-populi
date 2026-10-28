@@ -140,7 +140,7 @@ a much faster crossing would be expected to make spread between Europe and the A
 
 ### Identify and differentiate between emerging and reemerging infectious diseases
 
-{{< textin question="A disease that is increasing in frequency after a previous period of decline is called a ________." answer="reemerging infectious disease" accept="reemerging disease|re-emerging infectious disease|re-emerging disease" hint="Reread the paragraph of this section's second subsection just before the Ebola graph." >}}
+{{< textin question="A disease that is increasing in frequency after a previous period of decline is called a ________." answer="reemerging infectious disease" accept="reemerging disease" hint="Reread the paragraph of this section's second subsection just before the Ebola graph." >}}
 
 {{< multiplechoice
   question="Which of the following would NOT be considered an emerging disease?"

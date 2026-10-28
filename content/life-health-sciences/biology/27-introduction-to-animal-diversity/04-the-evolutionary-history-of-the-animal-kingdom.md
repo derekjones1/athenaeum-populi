@@ -143,7 +143,7 @@ embryological development data
 {{< textin
   question="The fossils that may represent the earliest animal species ever found appear to be small, one-centimeter long, ________ creatures, irregularly shaped and with internal tubes or canals."
   answer="sponge-like"
-  accept="spongelike|sponge"
+  accept="sponge"
   hint="Look at the last paragraph of the Pre-Cambrian Animal Life subsection."
 >}}
 

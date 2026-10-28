@@ -490,11 +490,10 @@ for $18$ hours.
 
 ## Key terms
 
-**ratio** — a comparison of two numbers or quantities measured with the
-same unit, written $a$ to $b$, $\tfrac{a}{b}$, or $a:b$. **rate** — a
-comparison of two quantities measured in different units, usually written
-as a fraction. **unit rate** — a rate with a denominator of $1$ unit.
-**unit price** — a unit rate that gives the price of one item.
+- **ratio** — a comparison of two numbers or quantities measured with the same unit, written $a$ to $b$, $\tfrac{a}{b}$, or $a:b$.
+- **rate** — a comparison of two quantities measured in different units, usually written as a fraction.
+- **unit rate** — a rate with a denominator of $1$ unit.
+- **unit price** — a unit rate that gives the price of one item.
 
 ## Practice
 

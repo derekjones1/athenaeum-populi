@@ -554,10 +554,8 @@ $\text{\textdollar}12{,}000$? $\tfrac{3}{4} \cdot 16{,}000
 
 ## Key terms
 
-**Division Property of Equality** — for any numbers $a$, $b$, and $c$ with
-$c \neq 0$: if $a = b$, then $\tfrac{a}{c} = \tfrac{b}{c}$. **Multiplication
-Property of Equality** — for any numbers $a$, $b$, and $c$: if $a = b$, then
-$ac = bc$.
+- **Division Property of Equality** — for any numbers $a$, $b$, and $c$ with $c \neq 0$: if $a = b$, then $\tfrac{a}{c} = \tfrac{b}{c}$.
+- **Multiplication Property of Equality** — for any numbers $a$, $b$, and $c$: if $a = b$, then $ac = bc$.
 
 ## Practice
 

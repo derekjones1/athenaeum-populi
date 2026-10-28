@@ -638,17 +638,16 @@ Multiplying the factors: $\text{LCM}(24, 36) = 2 \cdot 2 \cdot 2 \cdot 3
 
 ## Key terms
 
-**counting numbers** — the numbers $1, 2, 3, \dots$, also called natural
-numbers. **whole numbers** — the counting numbers together with $0$.
-**rounding** — approximating a number to a specific place value.
-**multiple of a number** — a number is a multiple of $n$ if it is the
-product of a counting number and $n$. **divisible** — $m$ is divisible by $n$ if $m$ is a
-multiple of $n$. **factors** — numbers whose product is a given number.
-**prime number** — a counting number greater than $1$ whose only factors
-are $1$ and itself. **composite number** — a counting number that is not
-prime. **prime factorization** — the product of prime numbers that equals
-a given number. **least common multiple (LCM)** — the smallest number that
-is a multiple of two given numbers.
+- **counting numbers** — the numbers $1, 2, 3, \dots$, also called natural numbers.
+- **whole numbers** — the counting numbers together with $0$.
+- **rounding** — approximating a number to a specific place value.
+- **multiple of a number** — a number is a multiple of $n$ if it is the product of a counting number and $n$.
+- **divisible** — $m$ is divisible by $n$ if $m$ is a multiple of $n$.
+- **factors** — numbers whose product is a given number.
+- **prime number** — a counting number greater than $1$ whose only factors are $1$ and itself.
+- **composite number** — a counting number that is not prime.
+- **prime factorization** — the product of prime numbers that equals a given number.
+- **least common multiple (LCM)** — the smallest number that is a multiple of two given numbers.
 
 ## Practice
 

@@ -247,7 +247,7 @@ after a couple of generations, enough of these new hybrids can form to reproduce
 {{< textin
   question="A reproductive isolation mechanism that occurs after zygote formation is called a(n) ________."
   answer="postzygotic barrier"
-  accept="post-zygotic barrier"
+
   hint="Reread the second paragraph of the Reproductive Isolation subsection."
 >}}
 

@@ -256,7 +256,7 @@ the polar nuclei
 {{< textin
   question="The transfer of pollen from the anther of one flower to the stigma of a different flower is called ________."
   answer="cross-pollination"
-  accept="out-crossing|outcrossing"
+  accept="out-crossing"
   hint="Read the paragraph that contrasts the two pollination methods, just after self-pollination is defined."
 >}}
 

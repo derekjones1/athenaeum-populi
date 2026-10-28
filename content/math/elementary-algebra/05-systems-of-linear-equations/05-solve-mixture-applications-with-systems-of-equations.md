@@ -358,15 +358,8 @@ Rosie's bank loan is \$8,670 and the principal for her federal loan is
 
 ## Key terms
 
-**total value model** — $\text{number} \cdot \text{value} = \text{total
-value}$: the number of coins, tickets, or units of an ingredient times the
-value of each gives the total value of that type; in a mixture problem with
-two unknown types, the Number column and the Total Value column each give an
-equation, and together they form a system of two equations in two variables.
-**simple interest formula** — $I = Prt$, or $I = Pr$ when $t = 1$ year; in an
-investment or loan mixture problem, the Principal column gives one equation
-(the total amount invested or owed) and the Interest column gives the other
-(the total interest earned or paid).
+- **total value model** — $\text{number} \cdot \text{value} = \text{total value}$: the number of coins, tickets, or units of an ingredient times the value of each gives the total value of that type; in a mixture problem with two unknown types, the Number column and the Total Value column each give an equation, and together they form a system of two equations in two variables.
+- **simple interest formula** — $I = Prt$, or $I = Pr$ when $t = 1$ year; in an investment or loan mixture problem, the Principal column gives one equation (the total amount invested or owed) and the Interest column gives the other (the total interest earned or paid).
 
 ## Practice
 

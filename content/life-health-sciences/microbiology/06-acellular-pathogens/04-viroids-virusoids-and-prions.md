@@ -139,7 +139,7 @@ The case began in [Viruses](/life-health-sciences/microbiology/06-acellular-path
 {{< textin
   question="In 1971, pathologist Theodor Diener named this newly discovered acellular particle a viroid, meaning \"________.\""
   answer="virus-like"
-  accept="viruslike|like a virus"
+  accept="like a virus"
   hint="Reread the first sentence of the Viroids subsection."
 >}}
 

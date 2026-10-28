@@ -355,12 +355,9 @@ end of the three plays, the ball is on the $32$-yard line.
 
 ## Key terms
 
-**neutral pair** — a positive counter and a negative counter together,
-whose value is $0$. **same signs rule** — to add two integers with the
-same sign, add their absolute values and keep the common sign.
-**different signs rule** — to add two integers with different signs,
-subtract the smaller absolute value from the larger, and keep the sign
-of the number with the larger absolute value.
+- **neutral pair** — a positive counter and a negative counter together, whose value is $0$.
+- **same signs rule** — to add two integers with the same sign, add their absolute values and keep the common sign.
+- **different signs rule** — to add two integers with different signs, subtract the smaller absolute value from the larger, and keep the sign of the number with the larger absolute value.
 
 ## Practice
 

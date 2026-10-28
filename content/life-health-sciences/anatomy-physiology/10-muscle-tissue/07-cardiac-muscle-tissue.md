@@ -57,7 +57,7 @@ Another feature of cardiac muscle is its relatively long action potentials in it
 {{< textin
   question="The heart’s ability to control its own contractions is called ________."
   answer="autorhythmicity"
-  accept="auto-rhythmicity"
+
   hint="Look in the paragraph on the wave of contraction that begins with the pacemaker cells."
 >}}
 

@@ -120,7 +120,7 @@ Transcription in eukaryotes involves one of three types of polymerases, dependin
 {{< textin
   question="The cluster of transcription factors and other proteins that assembles on a promoter to recruit RNA polymerase II is called the ________."
   answer="preinitiation complex"
-  accept="pre-initiation complex"
+
   hint="Reread the paragraph on basal transcription factors that follows the promoter-element paragraph."
 >}}
 

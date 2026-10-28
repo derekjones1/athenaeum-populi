@@ -247,12 +247,12 @@ Cecelia will get $20$ servings from the big box.
 
 ## Key terms
 
-**quotient** — the result of dividing one number by another. **dividend** —
-the number being divided. **divisor** — the number dividing the dividend.
-**remainder** — the amount left over when a division does not come out
-evenly. **undefined** — having no answer; dividing a number by zero is
-undefined. **long division** — the digit-by-digit process of dividing using
-the bracket notation.
+- **quotient** — the result of dividing one number by another.
+- **dividend** — the number being divided.
+- **divisor** — the number dividing the dividend.
+- **remainder** — the amount left over when a division does not come out evenly.
+- **undefined** — having no answer; dividing a number by zero is undefined.
+- **long division** — the digit-by-digit process of dividing using the bracket notation.
 
 ## Practice
 

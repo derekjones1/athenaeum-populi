@@ -831,22 +831,12 @@ inches.
 
 ## Key terms
 
-**Descartes' Rule of Signs** — a rule that determines the maximum possible
-numbers of positive and negative real zeros based on the number of sign
-changes of $f(x)$ and $f(-x)$.
-**Factor Theorem** — $k$ is a zero of polynomial function $f(x)$ if and
-only if $(x-k)$ is a factor of $f(x)$.
-**Fundamental Theorem of Algebra** — a polynomial function with degree
-greater than 0 has at least one complex zero.
-**Linear Factorization Theorem** — allowing for multiplicities, a
-polynomial function will have the same number of factors as its degree,
-and each factor will be in the form $(x-c)$, where $c$ is a complex
-number.
-**Rational Zero Theorem** — the possible rational zeros of a polynomial
-function have the form $\tfrac{p}{q}$ where $p$ is a factor of the
-constant term and $q$ is a factor of the leading coefficient.
-**Remainder Theorem** — if a polynomial $f(x)$ is divided by $x-k$, then
-the remainder is equal to the value $f(k)$.
+- **Descartes' Rule of Signs** — a rule that determines the maximum possible numbers of positive and negative real zeros based on the number of sign changes of $f(x)$ and $f(-x)$.
+- **Factor Theorem** — $k$ is a zero of polynomial function $f(x)$ if and only if $(x-k)$ is a factor of $f(x)$.
+- **Fundamental Theorem of Algebra** — a polynomial function with degree greater than 0 has at least one complex zero.
+- **Linear Factorization Theorem** — allowing for multiplicities, a polynomial function will have the same number of factors as its degree, and each factor will be in the form $(x-c)$, where $c$ is a complex number.
+- **Rational Zero Theorem** — the possible rational zeros of a polynomial function have the form $\tfrac{p}{q}$ where $p$ is a factor of the constant term and $q$ is a factor of the leading coefficient.
+- **Remainder Theorem** — if a polynomial $f(x)$ is divided by $x-k$, then the remainder is equal to the value $f(k)$.
 
 ## Practice
 

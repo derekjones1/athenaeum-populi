@@ -83,7 +83,7 @@ A vascular plant consists of two organ systems: the shoot system and the root sy
 {{< textin
   question="The shoot system includes the aboveground ________ portions (stems and leaves) and reproductive parts (flowers and fruits)."
   answer="vegetative"
-  accept="non-reproductive|nonreproductive"
+  accept="non-reproductive"
   hint="Look at the Summary's sentence on the shoot system."
 >}}
 

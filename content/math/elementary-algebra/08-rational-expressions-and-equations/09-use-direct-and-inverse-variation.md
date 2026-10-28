@@ -261,12 +261,9 @@ A $20''$ guitar string has frequency $572$ vibrations per second.
 
 ## Key terms
 
-**direct variation** — a relationship in which $y = kx$: one variable is a
-constant multiple of the other.
-**inverse variation** — a relationship in which $y = \tfrac{k}{x}$: as one
-variable increases, the other decreases. **constant of variation** — the
-nonzero constant $k$ in a variation equation, found by substituting a known
-pair of values and solving.
+- **direct variation** — a relationship in which $y = kx$: one variable is a constant multiple of the other.
+- **inverse variation** — a relationship in which $y = \tfrac{k}{x}$: as one variable increases, the other decreases.
+- **constant of variation** — the nonzero constant $k$ in a variation equation, found by substituting a known pair of values and solving.
 
 ## Practice
 

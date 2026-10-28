@@ -508,14 +508,8 @@ is $x^2+x-9$.
 
 ## Key terms
 
-**Division Algorithm** — given a polynomial dividend $f(x)$ and a non-zero
-polynomial divisor $d(x)$ where the degree of $d(x)$ is less than or equal
-to the degree of $f(x)$, there exist unique polynomials $q(x)$ and $r(x)$
-such that $f(x)=d(x)q(x)+r(x)$; $q(x)$ is the quotient and $r(x)$ is the
-remainder, and the remainder is either equal to zero or has degree strictly
-less than $d(x)$.
-**synthetic division** — a shortcut method that can be used to divide a
-polynomial by a binomial of the form $x-k$.
+- **Division Algorithm** — given a polynomial dividend $f(x)$ and a non-zero polynomial divisor $d(x)$ where the degree of $d(x)$ is less than or equal to the degree of $f(x)$, there exist unique polynomials $q(x)$ and $r(x)$ such that $f(x)=d(x)q(x)+r(x)$; $q(x)$ is the quotient and $r(x)$ is the remainder, and the remainder is either equal to zero or has degree strictly less than $d(x)$.
+- **synthetic division** — a shortcut method that can be used to divide a polynomial by a binomial of the form $x-k$.
 
 ## Practice
 

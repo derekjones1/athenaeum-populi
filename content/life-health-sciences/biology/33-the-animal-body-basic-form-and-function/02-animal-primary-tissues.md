@@ -263,7 +263,7 @@ transitional
 {{< textin
   question="A layer of epithelia that appears multilayered, but is actually a simple covering, is called ________."
   answer="pseudostratified"
-  accept="pseudostratified epithelia|pseudostratified epithelium|pseudostratified columnar|pseudostratified columnar epithelia|pseudostratified columnar epithelium|pseudo-stratified"
+  accept="pseudostratified epithelia|pseudostratified epithelium|pseudostratified columnar|pseudostratified columnar epithelia|pseudostratified columnar epithelium"
   hint="Look at the paragraph after the digestive-tract columnar figure."
 >}}
 

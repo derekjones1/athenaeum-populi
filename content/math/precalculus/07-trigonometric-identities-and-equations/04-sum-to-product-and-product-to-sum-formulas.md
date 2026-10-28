@@ -309,7 +309,8 @@ $$
 
 ## Key terms
 
-**product-to-sum formula** — a trigonometric identity that allows the writing of a product of trigonometric functions as a sum or difference of trigonometric functions. **sum-to-product formula** — a trigonometric identity that allows, by using substitution, the writing of a sum of trigonometric functions as a product of trigonometric functions.
+- **product-to-sum formula** — a trigonometric identity that allows the writing of a product of trigonometric functions as a sum or difference of trigonometric functions.
+- **sum-to-product formula** — a trigonometric identity that allows, by using substitution, the writing of a sum of trigonometric functions as a product of trigonometric functions.
 
 ## Practice
 

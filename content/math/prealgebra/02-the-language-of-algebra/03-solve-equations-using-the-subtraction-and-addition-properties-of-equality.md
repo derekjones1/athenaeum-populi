@@ -384,12 +384,10 @@ Simplify: $y = 32$. **Check:** $32 - 14 = 18$. ✓
 
 ## Key terms
 
-**solution** — a value of a variable that makes a true statement when
-substituted into an equation. **solving an equation** — the process of
-finding a solution. **Subtraction Property of Equality** — subtracting the
-same quantity from both sides of an equation keeps the two sides equal.
-**Addition Property of Equality** — adding the same quantity to both sides of
-an equation keeps the two sides equal.
+- **solution** — a value of a variable that makes a true statement when substituted into an equation.
+- **solving an equation** — the process of finding a solution.
+- **Subtraction Property of Equality** — subtracting the same quantity from both sides of an equation keeps the two sides equal.
+- **Addition Property of Equality** — adding the same quantity to both sides of an equation keeps the two sides equal.
 
 ## Practice
 

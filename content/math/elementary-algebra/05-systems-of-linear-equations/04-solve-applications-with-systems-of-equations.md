@@ -539,13 +539,10 @@ the wind is 18 mph.
 
 ## Key terms
 
-**complementary angles** — two angles whose measures add to $90$ degrees;
-each is called the *complement* of the other. **supplementary angles** —
-two angles whose measures add to $180$ degrees; each is called the
-*supplement* of the other. **tailwind** — a wind current blowing in the
-same direction a plane is flying, so it increases the plane's actual speed
-to $j + w$. **headwind** — a wind current blowing against the direction a
-plane is flying, so it decreases the plane's actual speed to $j - w$.
+- **complementary angles** — two angles whose measures add to $90$ degrees; each is called the *complement* of the other.
+- **supplementary angles** — two angles whose measures add to $180$ degrees; each is called the *supplement* of the other.
+- **tailwind** — a wind current blowing in the same direction a plane is flying, so it increases the plane's actual speed to $j + w$.
+- **headwind** — a wind current blowing against the direction a plane is flying, so it decreases the plane's actual speed to $j - w$.
 
 ## Practice
 

@@ -235,7 +235,7 @@ IPSP1 = −4 mV, IPSP2 = −3 mV
 {{< textin
   question="A neurotransmitter type that includes protein molecules and shorter chains of amino acids is a(n) ________."
   answer="neuropeptide"
-  accept="neuro-peptide"
+
   hint="Look in the seventh paragraph of Neurotransmitter Systems."
 >}}
 

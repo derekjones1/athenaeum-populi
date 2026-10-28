@@ -82,7 +82,7 @@ Medical advances have resulted in an improved ability to treat RDS and support t
 {{< textin
   question="Endoderm of the embryo towards the head region is called the ________."
   answer="foregut"
-  accept="fore-gut"
+
   hint="Look in the Weeks 4–7 subsection of the Time Line."
 >}}
 

@@ -216,11 +216,9 @@ $108 = -9(-12)$ ✓.
 
 ## Key terms
 
-**solution** — a value of a variable that makes an equation's statement
-true. **Subtraction/Addition Property of Equality** — adding or
-subtracting the same quantity from both sides of an equation preserves
-equality. **Division Property of Equality** — dividing both sides of an
-equation by the same nonzero number preserves equality.
+- **solution** — a value of a variable that makes an equation's statement true.
+- **Subtraction/Addition Property of Equality** — adding or subtracting the same quantity from both sides of an equation preserves equality.
+- **Division Property of Equality** — dividing both sides of an equation by the same nonzero number preserves equality.
 
 ## Practice
 

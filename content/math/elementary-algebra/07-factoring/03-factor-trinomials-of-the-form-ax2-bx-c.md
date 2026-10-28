@@ -616,13 +616,9 @@ be factored.
 
 ## Key terms
 
-**trial and error** — a method of factoring $ax^2+bx+c$ by listing the factor
-pairs of the first and last terms, then testing the possible binomial
-combinations until the product matches the trinomial. **"ac" method** — a
-structured method of factoring $ax^2+bx+c$ by finding two numbers that
-multiply to $ac$ and add to $b$, splitting the middle term with them, and
-factoring by grouping. **prime polynomial** — a polynomial that cannot be
-factored.
+- **trial and error** — a method of factoring $ax^2+bx+c$ by listing the factor pairs of the first and last terms, then testing the possible binomial combinations until the product matches the trinomial.
+- **"ac" method** — a structured method of factoring $ax^2+bx+c$ by finding two numbers that multiply to $ac$ and add to $b$, splitting the middle term with them, and factoring by grouping.
+- **prime polynomial** — a polynomial that cannot be factored.
 
 ## Practice
 

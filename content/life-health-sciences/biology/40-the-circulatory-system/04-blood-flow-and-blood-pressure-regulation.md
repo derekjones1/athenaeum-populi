@@ -97,7 +97,7 @@ Blood primarily moves through the body by the rhythmic movement of smooth muscle
 {{< textin
   question="A small muscle that controls blood circulation in the capillary beds is called a ________."
   answer="precapillary sphincter"
-  accept="pre-capillary sphincter"
+
   hint="Look at the third paragraph of How Blood Flows Through the Body and the figure after it."
 >}}
 

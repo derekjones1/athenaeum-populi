@@ -524,10 +524,10 @@ We’ll leave the check by multiplying to you.
 
 ## Key terms
 
-**perfect square trinomial** — a trinomial that is the square of a binomial.
-**difference of squares** — a binomial of the form $a^2-b^2$, which factors
-as a product of conjugates. **sum of cubes** — a binomial of the form
-$a^3+b^3$. **difference of cubes** — a binomial of the form $a^3-b^3$.
+- **perfect square trinomial** — a trinomial that is the square of a binomial.
+- **difference of squares** — a binomial of the form $a^2-b^2$, which factors as a product of conjugates.
+- **sum of cubes** — a binomial of the form $a^3+b^3$.
+- **difference of cubes** — a binomial of the form $a^3-b^3$.
 
 ## Practice
 

@@ -168,7 +168,7 @@ act as indicators of air pollution
 {{< textin
   question="Lichens produce compounds that have ________ effects, and further research may discover compounds that are medically useful to humans."
   answer="antibacterial"
-  accept="anti-bacterial|antimicrobial"
+  accept="antimicrobial"
   hint="Look at the last sentence of the intro paragraph."
 >}}
 

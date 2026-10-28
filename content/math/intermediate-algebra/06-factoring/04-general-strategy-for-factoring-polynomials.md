@@ -327,7 +327,9 @@ $$
 
 ## Key terms
 
-**completely factored** — written as a product whose nonmonomial factors are prime. **general factoring strategy** — first factor out the GCF, then choose a method according to the number of terms and applicable special patterns, and finally check the factorization. **product of conjugates** — the factorization $(a-b)(a+b)$ of a difference of squares.
+- **completely factored** — written as a product whose nonmonomial factors are prime.
+- **general factoring strategy** — first factor out the GCF, then choose a method according to the number of terms and applicable special patterns, and finally check the factorization.
+- **product of conjugates** — the factorization $(a-b)(a+b)$ of a difference of squares.
 
 ## Practice
 

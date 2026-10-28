@@ -3552,3 +3552,46 @@ test('a carry row in a display array is an error; \\overset carries are not', ()
   assert.equal(lint('$$\n\\begin{array}{r}\n{}^{1}{}^{1} \\\\\n324 \\\\\n+586 \\\\\n\\hline\n910\n\\end{array}\n$$').length, 1);
   assert.equal(lint('$$\n\\begin{array}{r}\n\\overset{1}{3}\\overset{1}{2}4 \\\\\n+586 \\\\\n\\hline\n910\n\\end{array}\n$$').length, 0);
 });
+
+// The grader folds a hyphen to nothing as well as to a space (October 27,
+// 2026), so a hyphenated respelling of a closed compound is dead weight.
+test('textin: a hyphenated or closed respelling of the answer is a redundant accept member', () => {
+  const hyphen = lintHugo('{{< textin question="Name the region." answer="foregut" accept="fore-gut" hint="h" >}}', 'content/test.md').errors;
+  assert.ok(hyphen.some((e) => e.includes('accept member "fore-gut" is the hyphenated or closed respelling of answer "foregut"')), hyphen.join('\n'));
+  const closed = lintHugo('{{< textin question="Name the mode." answer="semi-conservative" accept="semiconservative" hint="h" >}}', 'content/test.md').errors;
+  assert.ok(closed.some((e) => e.includes('is the hyphenated or closed respelling of answer "semi-conservative"')), closed.join('\n'));
+  const plural = lintHugo('{{< textin question="Name them." answer="foregut" accept="fore-guts" hint="h" >}}', 'content/test.md').errors;
+  assert.ok(plural.some((e) => e.includes('accept member "fore-guts" is the hyphenated or closed respelling of answer "foregut"')), plural.join('\n'));
+  const spaced = lintHugo('{{< textin question="Name the cell." answer="T cell" accept="T-cell" hint="h" >}}', 'content/test.md').errors;
+  assert.ok(spaced.some((e) => e.includes('normalizes the same as')), 'a hyphen-versus-space member is still the duplicate rule\'s');
+  assert.ok(!spaced.some((e) => e.includes('hyphenated or closed respelling')), spaced.join('\n'));
+  const fine = lintHugo('{{< textin question="Name the region." answer="foregut" accept="fore gut" hint="h" >}}', 'content/test.md').errors;
+  assert.ok(!fine.some((e) => e.includes('hyphenated or closed respelling')), 'a SPACED respelling is not folded and stays listed');
+});
+
+// A Source note under a multiple choice is read beside the item, so a
+// re-key note names the source's option by position and never the key
+// (October 27, 2026).
+test('multiplechoice: a Source note under the item must not print the key', () => {
+  const item = (note) => '{{< multiplechoice question="Which is last?" answer="respiratory bronchioles" hint="h" >}}\nalveoli\nbronchi\nterminal bronchioles\nrespiratory bronchioles\n{{< /multiplechoice >}}\n\n' + note + '\n';
+  const leak = lintHugo(item('*(Source note: the source keys “alveoli”, so the item is keyed to “respiratory bronchioles” instead.)*'), 'content/test.md').errors;
+  assert.ok(leak.some((e) => e.includes('the Source note under the item prints its key "respiratory bronchioles"')), leak.join('\n'));
+  const generic = lintHugo(item('*(Source note: the source keys the first option, which this section’s own glossary contradicts; the page keys a different option, and the footer gives the reasoning.)*'), 'content/test.md').errors;
+  assert.ok(!generic.some((e) => e.includes('prints its key')), generic.join('\n'));
+  const elsewhere = lintHugo(item('A paragraph.\n\n*(Source note: respiratory bronchioles are named here, under something else.)*'), 'content/test.md').errors;
+  assert.ok(!elsewhere.some((e) => e.includes('prints its key')), 'only a note DIRECTLY under the item is read beside it');
+});
+
+// A Key terms glossary is one entry per bullet (October 27, 2026; the math
+// books' 172 run-on paragraphs were split that day).
+test('Key terms: two glossary entries in one paragraph or bullet is an error; prose and one-per-bullet pass', () => {
+  const page = (body) => '# Title\n\nBody.\n\n## Key terms\n\n' + body + '\n\n## Practice\n';
+  const runOn = lintHugo(page('**variable** — a letter that stands for a number. **constant** — a number whose value stays the same.'), 'content/test.md').errors;
+  assert.ok(runOn.some((e) => e.includes('Key terms: 2 entries run together in one paragraph')), runOn.join('\n'));
+  const bullet = lintHugo(page('- **variable** — a letter that stands for a number. **constant** — a number whose value stays the same.'), 'content/test.md').errors;
+  assert.ok(bullet.some((e) => e.includes('run together in one bullet')), bullet.join('\n'));
+  const list = lintHugo(page('- **variable** — a letter that stands for a number.\n- **constant** — a number whose value stays the same.\n- **base** and **exponent** — in $a^n$, the base is $a$.'), 'content/test.md').errors;
+  assert.ok(!list.some((e) => e.includes('Key terms:')), list.join('\n'));
+  const prose = lintHugo(page('A **linear inequality** is an inequality in one variable. A **compound inequality** joins two inequalities.'), 'content/test.md').errors;
+  assert.ok(!prose.some((e) => e.includes('Key terms:')), prose.join('\n'));
+});

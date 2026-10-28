@@ -1156,25 +1156,16 @@ the $-3$ on the outside of the function.
 
 ## Key terms
 
-**vertical shift** — a transformation that shifts a function's graph up or
-down by adding a positive or negative constant to the output. **horizontal
-shift** — a transformation that shifts a function's graph left or right by
-adding a positive or negative constant to the input. **vertical reflection** —
-a transformation that reflects a function's graph across the $x$-axis by
-multiplying the output by $-1$. **horizontal reflection** — a transformation
-that reflects a function's graph across the $y$-axis by multiplying the input
-by $-1$. **even function** — a function whose graph is unchanged by horizontal
-reflection, $f(x)=f(-x)$, and is symmetric about the $y$-axis. **odd
-function** — a function whose graph is unchanged by combined horizontal and
-vertical reflection, $f(x)=-f(-x)$, and is symmetric about the origin.
-**vertical stretch** — a transformation that stretches a function's graph
-vertically by multiplying the output by a constant $a>1$. **vertical
-compression** — a function transformation that compresses the function's graph
-vertically by multiplying the output by a constant $0<a<1$. **horizontal
-stretch** — a transformation that stretches a function's graph horizontally by
-multiplying the input by a constant $0<b<1$. **horizontal compression** — a
-transformation that compresses a function's graph horizontally, by multiplying
-the input by a constant $b>1$.
+- **vertical shift** — a transformation that shifts a function's graph up or down by adding a positive or negative constant to the output.
+- **horizontal shift** — a transformation that shifts a function's graph left or right by adding a positive or negative constant to the input.
+- **vertical reflection** — a transformation that reflects a function's graph across the $x$-axis by multiplying the output by $-1$.
+- **horizontal reflection** — a transformation that reflects a function's graph across the $y$-axis by multiplying the input by $-1$.
+- **even function** — a function whose graph is unchanged by horizontal reflection, $f(x)=f(-x)$, and is symmetric about the $y$-axis.
+- **odd function** — a function whose graph is unchanged by combined horizontal and vertical reflection, $f(x)=-f(-x)$, and is symmetric about the origin.
+- **vertical stretch** — a transformation that stretches a function's graph vertically by multiplying the output by a constant $a>1$.
+- **vertical compression** — a function transformation that compresses the function's graph vertically by multiplying the output by a constant $0<a<1$.
+- **horizontal stretch** — a transformation that stretches a function's graph horizontally by multiplying the input by a constant $0<b<1$.
+- **horizontal compression** — a transformation that compresses a function's graph horizontally, by multiplying the input by a constant $b>1$.
 
 ## Practice
 

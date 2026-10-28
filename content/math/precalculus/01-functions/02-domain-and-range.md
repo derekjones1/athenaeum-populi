@@ -992,14 +992,9 @@ function, though $(1,1)$ and $(2,3)$ are.
 
 ## Key terms
 
-**interval notation** — a method of describing a set that includes all
-numbers between a lower limit and an upper limit; the lower and upper values
-are listed between brackets or parentheses, a square bracket indicating
-inclusion in the set, and a parenthesis indicating exclusion. **piecewise
-function** — a function in which more than one formula is used to define the
-output. **set-builder notation** — a method of describing a set by a rule
-that all of its members obey; it takes the form $\{x\mid \text{statement
-about }x\}$.
+- **interval notation** — a method of describing a set that includes all numbers between a lower limit and an upper limit; the lower and upper values are listed between brackets or parentheses, a square bracket indicating inclusion in the set, and a parenthesis indicating exclusion.
+- **piecewise function** — a function in which more than one formula is used to define the output.
+- **set-builder notation** — a method of describing a set by a rule that all of its members obey; it takes the form $\{x\mid \text{statement about }x\}$.
 
 ## Practice
 

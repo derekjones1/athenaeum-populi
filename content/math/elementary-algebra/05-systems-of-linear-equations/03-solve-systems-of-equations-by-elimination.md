@@ -368,14 +368,9 @@ substitution
 
 ## Key terms
 
-**elimination** — a method for solving a system of linear equations in
-which the equations are added together, after being multiplied by
-constants if necessary, so that one variable cancels out. **consistent,
-dependent system** — a system whose equations describe the same line, so it
-has infinitely many solutions; eliminating a variable leaves a true
-statement like $0=0$. **inconsistent system** — a system whose equations
-describe parallel lines, so it has no solution; eliminating a variable
-leaves a false statement like $0=-5$.
+- **elimination** — a method for solving a system of linear equations in which the equations are added together, after being multiplied by constants if necessary, so that one variable cancels out.
+- **consistent, dependent system** — a system whose equations describe the same line, so it has infinitely many solutions; eliminating a variable leaves a true statement like $0=0$.
+- **inconsistent system** — a system whose equations describe parallel lines, so it has no solution; eliminating a variable leaves a false statement like $0=-5$.
 
 ## Practice
 

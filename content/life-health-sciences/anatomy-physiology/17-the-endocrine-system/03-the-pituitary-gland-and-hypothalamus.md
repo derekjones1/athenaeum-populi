@@ -240,7 +240,7 @@ the hypothalamus sends hormones produced by hypothalamic nerve cell bodies to th
 {{< textin
   question="Oxytocin is necessary for the milk ejection reflex, commonly referred to as ________, in breastfeeding people."
   answer="let-down"
-  accept="letdown"
+
   hint="Look in the second paragraph of the Oxytocin subsection."
 >}}
 

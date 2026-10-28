@@ -42,7 +42,7 @@
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { checkAnswer } from '../../assets/js/lib/math/check-answer.mjs';
-import { acceptedForms, checkText } from '../../assets/js/lib/text/check-text.mjs';
+import { checkText } from '../../assets/js/lib/text/check-text.mjs';
 import { parseCliArgs } from '../lib/cli.mjs';
 import { LedgerFormatError } from '../lib/ledger.mjs';
 import { LEDGER_PATH, exerciseHash, extractExercises, readLedger } from './answer-ledger.mjs';
@@ -77,8 +77,12 @@ export function acceptNeutral(before, now) {
   if (norm(oldAccept) === norm(newAccept)) return true;
   if (now.kind !== 'textin') return false;
   const answer = now.params?.answer ?? '';
-  return acceptedForms(before.params?.answer ?? '', oldAccept)
-    .every((form) => checkText(form, answer, { accept: newAccept }) === 'correct');
+  // The RAW old spellings, not their normalized forms: normalizing reads a
+  // hyphen as a space, and the grader's closed fold (`fore-gut` ≡ `foregut`,
+  // October 27, 2026) is only reachable from the spelling as listed.
+  return [before.params?.answer ?? '', ...String(oldAccept).split('|')]
+    .filter((raw) => raw.trim())
+    .every((raw) => checkText(raw, answer, { accept: newAccept }) === 'correct');
 }
 
 /** Does the unchanged key still grade correct under a changed answerForm? */

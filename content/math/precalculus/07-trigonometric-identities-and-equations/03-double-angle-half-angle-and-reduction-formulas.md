@@ -552,7 +552,9 @@ We can take the inverse tangent to find the angle: $\tan^{-1}(0.57)\approx29.7^\
 
 ## Key terms
 
-**double-angle formulas** — identities derived from the sum formulas for sine, cosine, and tangent in which the angles are equal. **half-angle formulas** — identities derived from the reduction formulas and used to determine half-angle values of trigonometric functions. **reduction formulas** — identities derived from the double-angle formulas and used to reduce the power of a trigonometric function.
+- **double-angle formulas** — identities derived from the sum formulas for sine, cosine, and tangent in which the angles are equal.
+- **half-angle formulas** — identities derived from the reduction formulas and used to determine half-angle values of trigonometric functions.
+- **reduction formulas** — identities derived from the double-angle formulas and used to reduce the power of a trigonometric function.
 
 ## Practice
 

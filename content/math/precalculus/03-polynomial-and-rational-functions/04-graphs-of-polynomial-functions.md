@@ -884,18 +884,10 @@ side.
 
 ## Key terms
 
-**global maximum** — the highest turning point on a graph; $f(a)$ where
-$f(a)\ge f(x)$ for all $x$.
-**global minimum** — the lowest turning point on a graph; $f(a)$ where
-$f(a)\le f(x)$ for all $x$.
-**Intermediate Value Theorem** — for two numbers $a$ and $b$ in the domain
-of $f$, if $a<b$ and $f(a)\ne f(b)$, then the function $f$ takes on every
-value between $f(a)$ and $f(b)$; specifically, when a polynomial function
-changes from a negative value to a positive value, the function must cross
-the $x$-axis.
-**multiplicity** — the number of times a given factor appears in the
-factored form of the equation of a polynomial; if a polynomial contains a
-factor of the form $(x-h)^{p}$, $x=h$ is a zero of multiplicity $p$.
+- **global maximum** — the highest turning point on a graph; $f(a)$ where $f(a)\ge f(x)$ for all $x$.
+- **global minimum** — the lowest turning point on a graph; $f(a)$ where $f(a)\le f(x)$ for all $x$.
+- **Intermediate Value Theorem** — for two numbers $a$ and $b$ in the domain of $f$, if $a<b$ and $f(a)\ne f(b)$, then the function $f$ takes on every value between $f(a)$ and $f(b)$; specifically, when a polynomial function changes from a negative value to a positive value, the function must cross the $x$-axis.
+- **multiplicity** — the number of times a given factor appears in the factored form of the equation of a polynomial; if a polynomial contains a factor of the form $(x-h)^{p}$, $x=h$ is a zero of multiplicity $p$.
 
 ## Practice
 

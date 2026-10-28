@@ -403,13 +403,13 @@ The height of the object is $156$ feet after $t = 3$ seconds.
 
 ## Key terms
 
-**polynomial** — a monomial, or two or more monomials, combined by addition
-or subtraction. **monomial** — a polynomial with exactly one term.
-**binomial** — a polynomial with exactly two terms. **trinomial** — a
-polynomial with exactly three terms. **degree of a term** — the exponent of
-its variable (the degree of a constant is $0$). **degree of a polynomial** —
-the highest degree of all its terms. **standard form** — a polynomial
-written with its terms in descending order of degree.
+- **polynomial** — a monomial, or two or more monomials, combined by addition or subtraction.
+- **monomial** — a polynomial with exactly one term.
+- **binomial** — a polynomial with exactly two terms.
+- **trinomial** — a polynomial with exactly three terms.
+- **degree of a term** — the exponent of its variable (the degree of a constant is $0$).
+- **degree of a polynomial** — the highest degree of all its terms.
+- **standard form** — a polynomial written with its terms in descending order of degree.
 
 ## Practice
 

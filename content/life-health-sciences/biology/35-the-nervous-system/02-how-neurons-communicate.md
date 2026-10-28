@@ -310,14 +310,14 @@ they also save energy for the cell since voltage-gated ion channels and sodium-p
 {{< textin
   question="A depolarization of a postsynaptic membrane caused by neurotransmitter molecules released from a presynaptic cell is called an ________."
   answer="excitatory postsynaptic potential"
-  accept="EPSP|excitatory post-synaptic potential"
+  accept="EPSP"
   hint="Look at the Chemical Synapse subsection's neuromuscular-junction example."
 >}}
 
 {{< textin
   question="A hyperpolarization of a postsynaptic membrane caused by neurotransmitter molecules released from a presynaptic cell is called an ________."
   answer="inhibitory postsynaptic potential"
-  accept="IPSP|inhibitory post-synaptic potential"
+  accept="IPSP"
   hint="Look at the Chemical Synapse subsection's GABA example."
 >}}
 

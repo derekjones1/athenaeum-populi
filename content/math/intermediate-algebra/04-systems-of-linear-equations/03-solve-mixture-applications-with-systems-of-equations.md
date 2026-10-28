@@ -462,18 +462,11 @@ both the cost and the revenue are \$12,250.
 
 ## Key terms
 
-**total value model** — $\text{number} \cdot \text{value} = \text{total
-value}$: in a mixture problem with two unknown types, the number column and
-the total value column each give an equation, and together they form a
-system of two equations in two variables. **simple interest formula** —
-$I = Prt$, or $I = Pr$ when $t = 1$ year; in an investment or loan mixture
-problem, the principal column gives one equation (the total amount invested
-or owed) and the interest column gives the other (the total interest earned
-or paid). **cost function** — $C(x) = (\text{cost per unit}) \cdot x +
-\text{fixed costs}$, the total cost of manufacturing $x$ units. **revenue
-function** — $R(x) = (\text{selling price per unit}) \cdot x$, the total
-money brought in from selling $x$ units. **break-even point** — the point
-where the cost and revenue functions are equal, $C(x) = R(x)$.
+- **total value model** — $\text{number} \cdot \text{value} = \text{total value}$: in a mixture problem with two unknown types, the number column and the total value column each give an equation, and together they form a system of two equations in two variables.
+- **simple interest formula** — $I = Prt$, or $I = Pr$ when $t = 1$ year; in an investment or loan mixture problem, the principal column gives one equation (the total amount invested or owed) and the interest column gives the other (the total interest earned or paid).
+- **cost function** — $C(x) = (\text{cost per unit}) \cdot x + \text{fixed costs}$, the total cost of manufacturing $x$ units.
+- **revenue function** — $R(x) = (\text{selling price per unit}) \cdot x$, the total money brought in from selling $x$ units.
+- **break-even point** — the point where the cost and revenue functions are equal, $C(x) = R(x)$.
 
 ## Practice
 

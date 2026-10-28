@@ -58,7 +58,7 @@ a body cell
 {{< textin
   question="Polyploidy formed by the reproduction of individuals from two different species, producing a viable offspring, is called a(n) ________."
   answer="allopolyploid"
-  accept="allopolyploidy|alloploidy|allo-polyploid"
+  accept="allopolyploidy|alloploidy"
 >}}
 
 {{< selfcheck question="How does habitat isolation, illustrated by a cricket population divided by a flood, differ from behavioral isolation, illustrated by fireflies, as forms of reproductive isolation?" >}}

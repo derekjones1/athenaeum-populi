@@ -341,11 +341,8 @@ Hamilton drove 40 mph in the city and 70 mph in the desert.
 
 ## Key terms
 
-**uniform motion problem** — an application in which one or more objects
-travel at a constant speed, so the distance, rate, and time formula
-$D = rt$ applies to each. **elapsed time** — the actual amount of time that
-passes during a trip; if a problem gives clock times instead, subtract to
-find the elapsed time before using $D = rt$.
+- **uniform motion problem** — an application in which one or more objects travel at a constant speed, so the distance, rate, and time formula $D = rt$ applies to each.
+- **elapsed time** — the actual amount of time that passes during a trip; if a problem gives clock times instead, subtract to find the elapsed time before using $D = rt$.
 
 ## Practice
 

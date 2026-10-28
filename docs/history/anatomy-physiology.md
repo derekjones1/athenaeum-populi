@@ -2474,3 +2474,23 @@ baseline rules this book's vocabulary makes easy to break:
   is folded to `…-Page1` by `vendor-media`, because Hugo percent-encodes the
   parentheses and the build audit then cannot match the variant file
   *(pilot)*.
+
+## Standing decisions closed (October 27, 2026)
+
+Derek asked for every item the runs had left "open for Derek" and ruled
+that the parent decides them. Two touch this book's pages. **Re-key Source
+notes**: a Source note directly under a multiple choice never prints the
+key; it names the source's option by position, says the page keys a
+different option, and leaves the naming clause and the reasoning to the
+footer, which every such footer already carried. The notes under 6.3 (two),
+19.2, 19.5, 22.1, 22.2, and Biology 45.4 were rewritten to that form, the
+replaced-option notes under 9.1 and 16.5 stopped naming the option the page
+prints in the key's place, and the lint now rejects a note under a multiple
+choice that prints the item's key (`docs/subjects/life-sciences.md`,
+"Multiple choice"; the chapter 19 and 22 playbook bullets). **21.7's
+natural-antibodies item** stays keyed to the source's "immunity to
+environmental bacteria" with its Reviewed-not-errata line; the hint points
+at the nearest module sentence and the key is the standard account. The
+grader's new hyphen fold (`docs/history/authoring-playbook.md`, same date)
+stripped the hyphenated accept members this book's pages had listed under
+the old rule, their ledger records carried.

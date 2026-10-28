@@ -384,11 +384,8 @@ $$
 
 ## Key terms
 
-**distance, rate, time formula** — the relationship $d = rt$, where $d$ is
-distance traveled, $r$ is the rate (speed), and $t$ is time. **solve a
-formula for a specific variable** — to isolate that variable on one side of
-the equation, treating the other variables as if they were numbers; also
-called solving a **literal equation**.
+- **distance, rate, time formula** — the relationship $d = rt$, where $d$ is distance traveled, $r$ is the rate (speed), and $t$ is time.
+- **solve a formula for a specific variable** — to isolate that variable on one side of the equation, treating the other variables as if they were numbers; also called solving a **literal equation**.
 
 ## Practice
 

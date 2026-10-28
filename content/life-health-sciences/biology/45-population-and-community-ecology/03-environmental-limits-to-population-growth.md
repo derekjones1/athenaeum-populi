@@ -185,7 +185,7 @@ the population eventually meets the carrying capacity of the environment and sto
 {{< textin
   question="Competition between members of the same species for resources is called ________."
   answer="intraspecific competition"
-  accept="intra-specific competition"
+
   hint="Reread the second paragraph of the second subsection under Logistic Growth."
 >}}
 

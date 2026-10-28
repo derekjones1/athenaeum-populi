@@ -626,16 +626,13 @@ $$
 
 ## Key terms
 
-**fraction** — a way to represent parts of a whole, written $\tfrac{a}{b}$
-with numerator $a$ and denominator $b \neq 0$. **numerator** — the top number
-in a fraction, indicating how many equal parts are included. **denominator** —
-the bottom number in a fraction, the number of equal parts the whole is
-divided into. **equivalent fractions** — fractions that have the same value.
-**reciprocal** — the fraction obtained by inverting a given fraction,
-exchanging its numerator and denominator. **complex fraction** — a fraction in
-which the numerator or the denominator contains a fraction. **least common
-denominator (LCD)** — the least common multiple of the denominators of two
-fractions, used as their common denominator.
+- **fraction** — a way to represent parts of a whole, written $\tfrac{a}{b}$ with numerator $a$ and denominator $b \neq 0$.
+- **numerator** — the top number in a fraction, indicating how many equal parts are included.
+- **denominator** — the bottom number in a fraction, the number of equal parts the whole is divided into.
+- **equivalent fractions** — fractions that have the same value.
+- **reciprocal** — the fraction obtained by inverting a given fraction, exchanging its numerator and denominator.
+- **complex fraction** — a fraction in which the numerator or the denominator contains a fraction.
+- **least common denominator (LCD)** — the least common multiple of the denominators of two fractions, used as their common denominator.
 
 ## Practice
 

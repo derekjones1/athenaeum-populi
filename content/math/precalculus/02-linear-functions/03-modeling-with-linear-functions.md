@@ -587,12 +587,9 @@ the cheaper price when more than 100 miles are driven, that is $d>100$.
 
 ## Key terms
 
-**linear function** — a function with a constant rate of change that is a
-polynomial of degree 1, and whose graph is a straight line.
-**$x$-intercept** — the point on the graph of a linear function when the
-output value is 0; the point at which the graph crosses the horizontal axis.
-**$y$-intercept** — the value of a function when the input value is zero; also
-known as initial value.
+- **linear function** — a function with a constant rate of change that is a polynomial of degree 1, and whose graph is a straight line.
+- **$x$-intercept** — the point on the graph of a linear function when the output value is 0; the point at which the graph crosses the horizontal axis.
+- **$y$-intercept** — the value of a function when the input value is zero; also known as initial value.
 
 ## Practice
 

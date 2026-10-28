@@ -567,14 +567,13 @@ no
 
 ## Key terms
 
-**slope** — the measure of the steepness of a line; the ratio of rise to run.
-**slope formula** — $m=\tfrac{y_2-y_1}{x_2-x_1}$, used to find the slope
-between two points. **slope-intercept form** — $y=mx+b$, where $m$ is the
-slope and $(0,b)$ is the $y$-intercept. **fixed cost** — a business cost that
-does not change with the number of units produced. **variable cost** — a
-business cost that changes with the number of units produced. **parallel
-lines** — lines in the same plane that do not intersect. **perpendicular
-lines** — lines in the same plane that form a right angle.
+- **slope** — the measure of the steepness of a line; the ratio of rise to run.
+- **slope formula** — $m=\tfrac{y_2-y_1}{x_2-x_1}$, used to find the slope between two points.
+- **slope-intercept form** — $y=mx+b$, where $m$ is the slope and $(0,b)$ is the $y$-intercept.
+- **fixed cost** — a business cost that does not change with the number of units produced.
+- **variable cost** — a business cost that changes with the number of units produced.
+- **parallel lines** — lines in the same plane that do not intersect.
+- **perpendicular lines** — lines in the same plane that form a right angle.
 
 ## Practice
 

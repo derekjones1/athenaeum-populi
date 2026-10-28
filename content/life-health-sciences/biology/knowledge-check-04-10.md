@@ -220,7 +220,7 @@ simple sugars
 {{< textin
   question="A membrane characteristic that allows some substances to pass through while blocking others is called being ________."
   answer="selectively permeable"
-  accept="semipermeable|semi-permeable"
+  accept="semipermeable"
 >}}
 
 {{< selfcheck question="Why does an unwatered plant wilt, even though its cell walls do not shrink?" >}}
@@ -386,7 +386,7 @@ the reactants are ATP and a water molecule
 {{< textin
   question="The phosphorylated molecule is at a higher-energy state and is less stable than its unphosphorylated form, and this added energy from phosphate allows the molecule to undergo its ________ reaction."
   answer="endergonic"
-  accept="nonspontaneous|non-spontaneous"
+  accept="nonspontaneous"
 >}}
 
 ### 6.5 Enzymes
@@ -642,7 +642,7 @@ Visible light and radio waves
 {{< textin
   question="The ejection of an electron from a reaction center, using the energy of an absorbed photon, is called a(n) ________."
   answer="photoact"
-  accept="photo-act"
+
 >}}
 
 {{< selfcheck question="How does the buildup of hydrogen ions in the thylakoid lumen ultimately allow ATP synthase to produce ATP?" >}}
@@ -902,7 +902,7 @@ tubulin proteins
 {{< textin
   question="Replication of the bacterial chromosome's DNA is described as ________, moving away from the origin on both strands of the loop simultaneously."
   answer="bidirectional"
-  accept="bi-directional"
+
 >}}
 
 {{< selfcheck question="How are FtsZ and tubulin structurally and functionally similar, and what energy source do both proteins use to rapidly assemble and disassemble their structures?" >}}

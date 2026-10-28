@@ -321,7 +321,7 @@ a fissure
 {{< textin
   question="The ongoing balance between osteoblasts and osteoclasts is responsible for the constant but subtle ________ of bone."
   answer="reshaping"
-  accept="remodeling|remodelling|re-shaping"
+  accept="remodeling|remodelling"
   hint="Look near the end of the paragraph that comes just before the table of bone cells."
 >}}
 
@@ -336,7 +336,7 @@ osteocytes
 osteogenic cells
 {{< /multiplechoice >}}
 
-*(Source note: the source keys “osteocytes,” which this section’s own text on which bone cells divide contradicts; the page keys a different option, and the footer gives the reasoning. The options are as printed.)*
+*(Source note: the source keys the third option, which this section’s own text on which bone cells divide contradicts; the page keys a different option, and the footer gives the reasoning. The options and their order are as printed.)*
 
 {{< multiplechoice
   question="Which cells do not originate from osteogenic cells?"
@@ -349,7 +349,7 @@ osteocytes
 osteoprogenitor cells
 {{< /multiplechoice >}}
 
-*(Source note: the source keys “osteoprogenitor cells,” a term this section never uses, and this section’s own text on which bone cells originate from osteogenic cells contradicts that key; the page keys a different option, and the footer gives the reasoning. The options are as printed.)*
+*(Source note: the source keys the fourth option, a term this section never uses, and this section’s own text on which bone cells originate from osteogenic cells contradicts that key; the page keys a different option, and the footer gives the reasoning. The options and their order are as printed.)*
 
 {{< sortbins
   question="Assign each description to the type of bone cell it describes."

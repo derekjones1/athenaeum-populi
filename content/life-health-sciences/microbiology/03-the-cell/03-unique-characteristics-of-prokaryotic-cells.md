@@ -600,7 +600,7 @@ They lack phospholipids entirely.
 {{< textin
   question="Unlike bacterial cell walls, most archaeal cell walls contain a polymer called ________ instead of peptidoglycan."
   answer="pseudopeptidoglycan"
-  accept="pseudomurein|pseudo-peptidoglycan"
+  accept="pseudomurein"
   hint="Reread the last paragraph of the Cell Wall subsection."
 >}}
 

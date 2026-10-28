@@ -368,14 +368,14 @@ plasma cell
 {{< textin
   question="A specialized lymphocyte that suppresses local inflammation and inhibits the secretion of cytokines, antibodies, and other stimulatory immune factors is called a(n) ________."
   answer="regulatory T cell"
-  accept="Treg cell|Treg|T-reg cell|T-reg|regulatory T lymphocyte|T regulatory cell|regulatory T (Treg) cell"
+  accept="Treg cell|Treg|regulatory T lymphocyte|T regulatory cell|regulatory T (Treg) cell"
   hint="Reread the last paragraph of the Mucosal Surfaces subsection."
 >}}
 
 {{< textin
   question="An inappropriate immune response to host cells or self-antigens is called the ________."
   answer="autoimmune response"
-  accept="autoimmunity|auto-immune response"
+  accept="autoimmunity"
   hint="Reread the end of the last paragraph of the Mucosal Surfaces subsection."
 >}}
 

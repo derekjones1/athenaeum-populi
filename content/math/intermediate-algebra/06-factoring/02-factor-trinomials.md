@@ -443,12 +443,10 @@ but most students prefer substitution.
 
 ## Key terms
 
-**trial and error** — testing possible factor pairs until their product is
-the original trinomial. **ac method** — finding two numbers whose product is
-$ac$ and sum is $b$, splitting the middle term, and factoring by grouping.
-**factoring by substitution** — replacing a repeated expression with a
-variable to make a familiar factorable form. **prime trinomial** — a
-trinomial that cannot be factored over the integers.
+- **trial and error** — testing possible factor pairs until their product is the original trinomial.
+- **ac method** — finding two numbers whose product is $ac$ and sum is $b$, splitting the middle term, and factoring by grouping.
+- **factoring by substitution** — replacing a repeated expression with a variable to make a familiar factorable form.
+- **prime trinomial** — a trinomial that cannot be factored over the integers.
 
 ## Practice
 

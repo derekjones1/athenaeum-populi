@@ -616,14 +616,10 @@ Simplifying, using the Quotient Rule, gives $5x$.
 
 ## Key terms
 
-**Quotient Property of Exponents** — for a real number $a \neq 0$ and
-whole numbers $m, n$: $\tfrac{a^m}{a^n} = a^{m-n}$ when $m > n$, and
-$\tfrac{a^m}{a^n} = \tfrac{1}{a^{n-m}}$ when $n > m$. **zero exponent** —
-any nonzero number or expression raised to the power $0$ equals $1$.
-**Quotient to a Power Property** — $\left(\tfrac{a}{b}\right)^m = \tfrac{a^m}{b^m}$
-for $b \neq 0$. **monomial** — a single term made of a coefficient and
-variables raised to whole-number powers, divided using these exponent
-properties one variable at a time.
+- **Quotient Property of Exponents** — for a real number $a \neq 0$ and whole numbers $m, n$: $\tfrac{a^m}{a^n} = a^{m-n}$ when $m > n$, and $\tfrac{a^m}{a^n} = \tfrac{1}{a^{n-m}}$ when $n > m$.
+- **zero exponent** — any nonzero number or expression raised to the power $0$ equals $1$.
+- **Quotient to a Power Property** — $\left(\tfrac{a}{b}\right)^m = \tfrac{a^m}{b^m}$ for $b \neq 0$.
+- **monomial** — a single term made of a coefficient and variables raised to whole-number powers, divided using these exponent properties one variable at a time.
 
 ## Practice
 

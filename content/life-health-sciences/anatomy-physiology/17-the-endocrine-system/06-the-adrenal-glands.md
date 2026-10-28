@@ -155,7 +155,7 @@ In contrast, the hyposecretion of corticosteroids can result in Addison’s dise
 {{< textin
   question="Adrenal hormones are released into the circulation via the left and right ________ veins."
   answer="suprarenal"
-  accept="suprarenal veins|supra-renal"
+  accept="suprarenal veins"
   hint="Look at the last sentence of the section’s opening paragraph, on the gland’s blood supply."
 >}}
 

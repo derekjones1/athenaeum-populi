@@ -1029,14 +1029,11 @@ graph below.
 
 ## Key terms
 
-**$x$-intercept** — the point on the graph of a linear function when the
-output value is 0; the point at which the graph crosses the horizontal axis.
-**horizontal line** — a line defined by $f(x)=b$, where $b$ is a real number.
-The slope of a horizontal line is 0. **vertical line** — a line defined by
-$x=a$, where $a$ is a real number. The slope of a vertical line is undefined.
-**parallel lines** — two or more lines with the same slope. **perpendicular
-lines** — two lines that intersect at right angles and have slopes that are
-negative reciprocals of each other.
+- **$x$-intercept** — the point on the graph of a linear function when the output value is 0; the point at which the graph crosses the horizontal axis.
+- **horizontal line** — a line defined by $f(x)=b$, where $b$ is a real number. The slope of a horizontal line is 0.
+- **vertical line** — a line defined by $x=a$, where $a$ is a real number. The slope of a vertical line is undefined.
+- **parallel lines** — two or more lines with the same slope.
+- **perpendicular lines** — two lines that intersect at right angles and have slopes that are negative reciprocals of each other.
 
 ## Practice
 

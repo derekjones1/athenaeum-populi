@@ -96,7 +96,7 @@ Similar to skeletal and cardiac muscle cells, smooth muscle can undergo hypertro
 {{< textin
   question="The arrangement of the dense bodies causes the entire muscle fiber to contract in a manner whereby the ends are pulled toward the center, causing the midsection to bulge in a ________ motion."
   answer="corkscrew"
-  accept="cork-screw"
+
   hint="Look in the sentence just before the figure of a relaxed and a contracted muscle cell."
 >}}
 
@@ -173,7 +173,7 @@ the actin and myosin filaments in smooth muscle are not as rigidly organized as 
 {{< textin
   question="A cell that triggers action potentials in smooth muscle is a ________."
   answer="pacesetter cell"
-  accept="pacesetter|pace-setter cell"
+  accept="pacesetter"
   hint="Look at the end of the paragraph on how axons of the ANS meet smooth muscle."
 >}}
 

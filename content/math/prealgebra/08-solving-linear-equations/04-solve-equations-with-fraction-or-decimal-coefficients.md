@@ -476,12 +476,8 @@ $$0.25(9) + 0.05(9 + 3) \stackrel{?}{=} 2.85 \qquad 2.25 + 0.05(12) \stackrel{?}
 
 ## Key terms
 
-**clearing the equation of fractions** — multiplying both sides of an
-equation by the least common denominator of all the fractions in the
-equation, so the resulting equivalent equation has no fractions.
-**clearing the equation of decimals** — the same idea applied to decimal
-coefficients: multiplying both sides by a power of ten equal to the LCD of
-the decimals' equivalent fractions removes the decimal points.
+- **clearing the equation of fractions** — multiplying both sides of an equation by the least common denominator of all the fractions in the equation, so the resulting equivalent equation has no fractions.
+- **clearing the equation of decimals** — the same idea applied to decimal coefficients: multiplying both sides by a power of ten equal to the LCD of the decimals' equivalent fractions removes the decimal points.
 
 ## Practice
 

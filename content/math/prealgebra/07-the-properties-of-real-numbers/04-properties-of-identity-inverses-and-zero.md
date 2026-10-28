@@ -357,13 +357,10 @@ $\tfrac{a}{0}$ is undefined.
 
 ## Key terms
 
-**additive identity** — $0$; adding it to any number leaves the number
-unchanged. **multiplicative identity** — $1$; multiplying by it leaves any
-number unchanged. **additive inverse** — the opposite of a number; a
-number and its additive inverse sum to $0$. **multiplicative inverse** —
-the reciprocal of a number; a nonzero number and its multiplicative
-inverse multiply to $1$. Zero times any number is $0$; zero divided by any
-nonzero number is $0$; but division *by* zero is undefined.
+- **additive identity** — $0$; adding it to any number leaves the number unchanged.
+- **multiplicative identity** — $1$; multiplying by it leaves any number unchanged.
+- **additive inverse** — the opposite of a number; a number and its additive inverse sum to $0$.
+- **multiplicative inverse** — the reciprocal of a number; a nonzero number and its multiplicative inverse multiply to $1$. Zero times any number is $0$; zero divided by any nonzero number is $0$; but division *by* zero is undefined.
 
 ## Practice
 

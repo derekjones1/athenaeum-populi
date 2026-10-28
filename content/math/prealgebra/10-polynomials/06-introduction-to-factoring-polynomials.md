@@ -518,9 +518,8 @@ Check on your own by multiplying the factors.
 
 ## Key terms
 
-**factoring** — splitting a product into the factors whose product it is;
-the reverse of multiplying. **greatest common factor (GCF)** — of two or
-more expressions, the largest expression that is a factor of all of them.
+- **factoring** — splitting a product into the factors whose product it is; the reverse of multiplying.
+- **greatest common factor (GCF)** — of two or more expressions, the largest expression that is a factor of all of them.
 
 ## Practice
 

@@ -285,11 +285,8 @@ Simplify: $1.7 = 1.7\ \checkmark$.
 
 ## Key terms
 
-**solution of an equation** — a value that, when substituted for the
-variable, makes the equation a true statement. **Properties of Equality** —
-the Subtraction, Addition, Division, and Multiplication properties: applying
-the same operation to both sides of a true equation keeps it true, which
-lets us isolate a variable and solve for it.
+- **solution of an equation** — a value that, when substituted for the variable, makes the equation a true statement.
+- **Properties of Equality** — the Subtraction, Addition, Division, and Multiplication properties: applying the same operation to both sides of a true equation keeps it true, which lets us isolate a variable and solve for it.
 
 ## Practice
 

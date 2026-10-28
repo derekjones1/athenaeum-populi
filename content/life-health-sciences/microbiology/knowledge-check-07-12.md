@@ -565,7 +565,7 @@ a reduced number of genes encoding metabolic functions
 {{< textin
   question="A 2008 law bars health insurance companies and employers from treating people differently when genome sequencing reveals a predisposition to a disease, although it does not cover life, disability, or long-term care insurance policies. This law is called the ________."
   answer="Genetic Information Nondiscrimination Act"
-  accept="GINA|Genetic Information Non-discrimination Act|Genetic Information Nondiscrimination Act of 2008"
+  accept="GINA|Genetic Information Nondiscrimination Act of 2008"
 >}}
 
 {{< selfcheck question="Why might some people carry an opportunistic pathogen like *Haemophilus influenzae* in the upper respiratory tract without symptoms while others become seriously ill when infected, and what host differences have been implicated?" >}}
@@ -676,7 +676,7 @@ damaging DNA, proteins, and other cellular components
 {{< textin
   question="In 1998, researchers found that up to 14% of people in some Eurasian ethnic groups carry a deletion mutation, called ________, in the gene for a T-cell surface coreceptor that many strains of HIV need to enter the host cell."
   answer="CCR5-delta 32"
-  accept="CCR5-Δ32|CCR5Δ32|Δ32|delta 32|CCR5-delta32|delta32"
+  accept="CCR5-Δ32|Δ32|delta 32|CCR5-delta32|delta32"
 >}}
 
 ### 11.6 How Asexual Prokaryotes Achieve Genetic Diversity
@@ -784,7 +784,7 @@ A radioactive phosphorus atom
 {{< textin
   question="Studying the gene-expression patterns of an entire microbial community, rather than of a single species, is called ________."
   answer="metatranscriptomics"
-  accept="meta-transcriptomics"
+
 >}}
 
 {{< multiplechoice

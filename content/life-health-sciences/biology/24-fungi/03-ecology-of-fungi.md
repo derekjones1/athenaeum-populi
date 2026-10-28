@@ -235,7 +235,7 @@ the fungus can spread to new trees
 {{< textin
   question="Some ________ farm fungi as a supply of food."
   answer="ants"
-  accept="leaf-cutter ant|leafcutter ant"
+  accept="leaf-cutter ant"
   hint="See the Fungus/Animal Mutualism subsection's second example."
 >}}
 

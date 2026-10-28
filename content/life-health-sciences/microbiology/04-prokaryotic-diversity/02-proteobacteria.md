@@ -258,7 +258,7 @@ genus
 
 {{< textin question="The species ________, which belongs to Epsilonproteobacteria, causes peptic ulcers of the stomach and duodenum." answer="Helicobacter pylori" accept="H. pylori" hint="Reread the Epsilonproteobacteria subsection." >}}
 
-{{< textin question="The genus *Salmonella* belongs to the class ________ and includes pathogens that cause salmonellosis and typhoid fever." answer="Gammaproteobacteria" accept="gamma-proteobacteria" hint="Locate Salmonella in the section's five class headings." >}}
+{{< textin question="The genus *Salmonella* belongs to the class ________ and includes pathogens that cause salmonellosis and typhoid fever." answer="Gammaproteobacteria"  hint="Locate Salmonella in the section's five class headings." >}}
 
 {{< sortbins question="Sort each characteristic under the genus it describes in this section's first comparison table." hint="Use each row's morphology and unique-characteristics cells." >}}
 {"bins":["Agrobacterium","Bartonella","Caulobacter","Rhizobium"],"items":[{"label":"Plant pathogen","bin":0},{"label":"Transmitted by lice and fleas; causes trench fever and cat scratch disease","bin":1},{"label":"Forms swarm cells and stalked cells during cell division","bin":2},{"label":"Forms a symbiotic relationship with roots of legumes","bin":3},{"label":"One species causes tumors in plants","bin":0},{"label":"Pleomorphic, flagellated coccobacillus","bin":1},{"label":"Used in studies of cellular adaptation and differentiation","bin":2},{"label":"Rectangular bacilli with rounded ends forming clusters","bin":3}]}

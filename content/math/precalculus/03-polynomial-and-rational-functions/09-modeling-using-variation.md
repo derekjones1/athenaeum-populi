@@ -342,18 +342,13 @@ $$
 
 ## Key terms
 
-**constant of variation** — the non-zero value $k$ that helps define the
-relationship between variables in direct or inverse variation. **direct
-variation** — the relationship between two variables that are a constant
-multiple of each other; as one quantity increases, so does the other.
-**inverse variation** — the relationship between two variables in which the
-product of the variables is a constant. **inversely proportional** — a
-relationship where one quantity is a constant divided by the other quantity;
-as one quantity increases, the other decreases. **joint variation** — a
-relationship where a variable varies directly or inversely with multiple
-variables. **varies directly** — a relationship where one quantity is a
-constant multiplied by the other quantity. **varies inversely** — a
-relationship where one quantity is a constant divided by the other quantity.
+- **constant of variation** — the non-zero value $k$ that helps define the relationship between variables in direct or inverse variation.
+- **direct variation** — the relationship between two variables that are a constant multiple of each other; as one quantity increases, so does the other.
+- **inverse variation** — the relationship between two variables in which the product of the variables is a constant.
+- **inversely proportional** — a relationship where one quantity is a constant divided by the other quantity; as one quantity increases, the other decreases.
+- **joint variation** — a relationship where a variable varies directly or inversely with multiple variables.
+- **varies directly** — a relationship where one quantity is a constant multiplied by the other quantity.
+- **varies inversely** — a relationship where one quantity is a constant divided by the other quantity.
 
 ## Practice
 

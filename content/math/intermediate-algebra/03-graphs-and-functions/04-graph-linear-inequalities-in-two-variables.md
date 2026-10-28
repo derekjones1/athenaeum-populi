@@ -650,12 +650,9 @@ administrative assistant, or working 28 hours at the day spa.
 
 ## Key terms
 
-**linear inequality** — an inequality that can be written as $Ax+By>C$,
-$Ax+By\geq C$, $Ax+By<C$, or $Ax+By\leq C$, where $A$ and $B$ are not both
-zero. **solution to a linear inequality** — an ordered pair $(x,y)$ that
-makes the inequality true when the values are substituted. **boundary line**
-— the line $Ax+By=C$ that separates the region where $Ax+By>C$ from the
-region where $Ax+By<C$.
+- **linear inequality** — an inequality that can be written as $Ax+By>C$, $Ax+By\geq C$, $Ax+By<C$, or $Ax+By\leq C$, where $A$ and $B$ are not both zero.
+- **solution to a linear inequality** — an ordered pair $(x,y)$ that makes the inequality true when the values are substituted.
+- **boundary line** — the line $Ax+By=C$ that separates the region where $Ax+By>C$ from the region where $Ax+By<C$.
 
 ## Practice
 

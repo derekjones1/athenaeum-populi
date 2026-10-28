@@ -791,3 +791,21 @@ stays there, undated.
   "Grader closures by re-review row" above.
 - **Re-review status lines.** The four "re-reviewed to the A&P standard,
   completed <date>" lines at the top of the playbook stay as status.
+
+## Key terms glossaries split into bullets (October 27, 2026)
+
+Every `## Key terms` block in the four math books was one run-on paragraph
+of bold terms (`**variable** — … **constant** — …`), left "open for Derek"
+by the Precalculus chapter 3 re-review. Derek ruled that the parent
+decides; the blocks were split by script into the life-sciences form, one
+`- **term** — meaning` bullet per entry, on 181 pages. A bullet keeps a
+definition's own bold (`**base** and **exponent** — …`, the FOIL letters)
+and a continuation sentence without a dash joins the entry before it; the
+26 blocks written as prose sentences (Intermediate Algebra chapters 2, 7,
+and 9: "A **linear inequality** is …") stay prose. The lint now rejects
+two glossary entries run together in one paragraph or bullet
+(`docs/authoring-playbook.md`, "The section-final Practice block"). No
+graded item changed, so the ledger is untouched. Two engine leftovers from
+the Intermediate Algebra chapter 3 re-review stay as they are, by the same
+ruling: the water-bill graph's per-axis snap at five pixels per dollar, and
+the overlap checker's "graze" rating of an arrowhead on an axis letter.

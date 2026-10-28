@@ -260,7 +260,7 @@ stimulates TSH release.
 {{< textin
   question="The hormone produced by the hypothalamus and released by the posterior pituitary that increases water reabsorption by the kidneys is called ________."
   answer="ADH"
-  accept="antidiuretic hormone|anti-diuretic hormone|vasopressin"
+  accept="antidiuretic hormone|vasopressin"
   hint="Look at the second paragraph of the excretory-system discussion."
 >}}
 

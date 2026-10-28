@@ -482,7 +482,7 @@ iodine
 {{< textin
   question="Ziehl-Neelsen staining, a type of ________ staining, is diagnostic for *Mycobacterium tuberculosis*."
   answer="acid-fast"
-  accept="acidfast|acid-fast staining|acid-fast stain"
+  accept="acid-fast staining|acid-fast stain"
   hint="Both Ziehl-Neelsen and Kinyoun are variants of the same staining approach; one uses heat to help the primary stain penetrate the cell wall."
 >}}
 

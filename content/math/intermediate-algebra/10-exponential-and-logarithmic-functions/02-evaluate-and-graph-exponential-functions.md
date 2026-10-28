@@ -546,13 +546,10 @@ Exponential growth is typically seen in the growth of populations of humans or a
 
 ## Key terms
 
-**asymptote** — a line which a graph of a function approaches closely but
-never touches. **exponential function** — a function of the form
-$f(x)=a^x$, where $a>0$ and $a\ne1$. **natural base** — the number
-$e\approx2.718281828\ldots$, defined as the value of
-$\left(1+\tfrac{1}{n}\right)^n$ as $n$ increases without bound. **natural exponential function** — the exponential function whose base is
-$e$, $f(x)=e^x$. Its domain is $(-\infty,\infty)$ and its range is
-$(0,\infty)$.
+- **asymptote** — a line which a graph of a function approaches closely but never touches.
+- **exponential function** — a function of the form $f(x)=a^x$, where $a>0$ and $a\ne1$.
+- **natural base** — the number $e\approx2.718281828\ldots$, defined as the value of $\left(1+\tfrac{1}{n}\right)^n$ as $n$ increases without bound.
+- **natural exponential function** — the exponential function whose base is $e$, $f(x)=e^x$. Its domain is $(-\infty,\infty)$ and its range is $(0,\infty)$.
 
 ## Practice
 

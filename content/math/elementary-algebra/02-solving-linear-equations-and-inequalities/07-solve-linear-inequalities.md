@@ -492,16 +492,10 @@ The solution in interval notation is $[75, \infty)$.
 
 ## Key terms
 
-**inequality** — a mathematical statement comparing two expressions using
-$<$, $\leq$, $>$, or $\geq$, showing that one is smaller than, smaller than
-or equal to, larger than, or larger than or equal to the other. **interval
-notation** — a way of describing the solution set of an inequality using
-parentheses (for endpoints not included) and brackets (for endpoints
-included), together with $\infty$ or $-\infty$ where the solution set has
-no upper or lower end. **identity (inequality)** — an inequality that is
-true for every real number, with solution $(-\infty, \infty)$.
-**contradiction (inequality)** — an inequality with no solution, because no
-real number makes it true.
+- **inequality** — a mathematical statement comparing two expressions using $<$, $\leq$, $>$, or $\geq$, showing that one is smaller than, smaller than or equal to, larger than, or larger than or equal to the other.
+- **interval notation** — a way of describing the solution set of an inequality using parentheses (for endpoints not included) and brackets (for endpoints included), together with $\infty$ or $-\infty$ where the solution set has no upper or lower end.
+- **identity (inequality)** — an inequality that is true for every real number, with solution $(-\infty, \infty)$.
+- **contradiction (inequality)** — an inequality with no solution, because no real number makes it true.
 
 ## Practice
 

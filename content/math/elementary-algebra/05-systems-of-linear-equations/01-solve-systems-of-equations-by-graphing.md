@@ -390,15 +390,13 @@ fruit juice and $2$ quarts of club soda.
 
 ## Key terms
 
-**system of linear equations** — two or more linear equations grouped
-together. **solution of a system of equations** — an ordered pair $(x, y)$
-that makes all the equations in the system true. **consistent system** — a
-system of equations with at least one solution. **inconsistent system** —
-a system of equations with no solution. **independent equations** — two
-equations with different solutions (intersecting or parallel lines).
-**dependent equations** — two equations whose solutions are identical
-(coincident lines). **coincident lines** — lines that have the same slope
-and same $y$-intercept.
+- **system of linear equations** — two or more linear equations grouped together.
+- **solution of a system of equations** — an ordered pair $(x, y)$ that makes all the equations in the system true.
+- **consistent system** — a system of equations with at least one solution.
+- **inconsistent system** — a system of equations with no solution.
+- **independent equations** — two equations with different solutions (intersecting or parallel lines).
+- **dependent equations** — two equations whose solutions are identical (coincident lines).
+- **coincident lines** — lines that have the same slope and same $y$-intercept.
 
 ## Practice
 

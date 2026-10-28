@@ -535,12 +535,9 @@ out. $12.5\%$ of $72$ is $9$.
 
 ## Key terms
 
-**proportion** — an equation of the form $\tfrac{a}{b} = \tfrac{c}{d}$,
-where $b \neq 0, d \neq 0$, stating that two ratios or rates are equal.
-**cross products** — the products found by multiplying each denominator
-of a proportion with the opposite numerator; equal cross products
-indicate a true proportion. **percent proportion** — a proportion of the
-form $\tfrac{\text{amount}}{\text{base}} = \tfrac{\text{percent}}{100}$.
+- **proportion** — an equation of the form $\tfrac{a}{b} = \tfrac{c}{d}$, where $b \neq 0, d \neq 0$, stating that two ratios or rates are equal.
+- **cross products** — the products found by multiplying each denominator of a proportion with the opposite numerator; equal cross products indicate a true proportion.
+- **percent proportion** — a proportion of the form $\tfrac{\text{amount}}{\text{base}} = \tfrac{\text{percent}}{100}$.
 
 ## Practice
 

@@ -298,11 +298,8 @@ $$
 
 ## Key terms
 
-**complex fraction** — a fraction in which the numerator, the denominator, or
-both contain a fraction. **complex rational expression** — a rational
-expression in which the numerator or denominator contains a rational
-expression; a complex rational expression represents the division of its top by
-its bottom.
+- **complex fraction** — a fraction in which the numerator, the denominator, or both contain a fraction.
+- **complex rational expression** — a rational expression in which the numerator or denominator contains a rational expression; a complex rational expression represents the division of its top by its bottom.
 
 ## Practice
 

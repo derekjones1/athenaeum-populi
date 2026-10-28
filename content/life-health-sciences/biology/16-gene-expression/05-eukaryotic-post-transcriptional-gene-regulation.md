@@ -140,7 +140,7 @@ Different gene isoforms can be expressed during different stages of development.
 {{< textin
   question="A series of adenine nucleotides attached to the 3′ end of an mRNA to protect it from degradation is called the ________."
   answer="poly-A tail"
-  accept="polyA tail"
+
   hint="Reread the first paragraph of Control of RNA Stability."
 >}}
 

@@ -281,9 +281,8 @@ Answer the question: Brenda must babysit at least 27 hours.
 
 ## Key terms
 
-**profit** — the money that remains when the expenses have been subtracted
-from the money earned. **commission** — pay calculated as a percent of
-sales, often combined with a fixed base amount.
+- **profit** — the money that remains when the expenses have been subtracted from the money earned.
+- **commission** — pay calculated as a percent of sales, often combined with a fixed base amount.
 
 ## Practice
 

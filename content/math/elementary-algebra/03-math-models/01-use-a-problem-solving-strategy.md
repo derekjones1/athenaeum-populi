@@ -665,13 +665,9 @@ The amount the wife earns is $2h - 16{,}000 = 2(42{,}000) - 16{,}000 =
 
 ## Key terms
 
-**consecutive integers** —
-integers that immediately follow each other, each one more than the
-previous ($n$, $n+1$, $n+2$, ...). **consecutive even integers** — even
-integers that immediately follow each other, each two more than the
-previous ($n$, $n+2$, $n+4$, ...). **consecutive odd integers** — odd
-integers that immediately follow each other, following the same "add two"
-pattern as consecutive even integers.
+- **consecutive integers** — integers that immediately follow each other, each one more than the previous ($n$, $n+1$, $n+2$, ...).
+- **consecutive even integers** — even integers that immediately follow each other, each two more than the previous ($n$, $n+2$, $n+4$, ...).
+- **consecutive odd integers** — odd integers that immediately follow each other, following the same "add two" pattern as consecutive even integers.
 
 ## Practice
 

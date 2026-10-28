@@ -122,7 +122,7 @@ it acts directly on the nephrons and decreases GFR
 {{< textin
   question="The hormone that is formed by the hypothalamus, stored in the posterior pituitary, and prevents the loss of water is called ________."
   answer="anti-diuretic hormone"
-  accept="ADH|vasopressin|antidiuretic hormone"
+  accept="ADH|vasopressin"
   hint="Look in the section after Mineralocorticoids, and in the table's row for the hormone produced in the hypothalamus."
 >}}
 

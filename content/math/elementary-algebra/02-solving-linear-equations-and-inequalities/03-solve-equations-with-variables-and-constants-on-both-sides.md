@@ -442,14 +442,9 @@ $-39 + 4 \overset{?}{=} -27 - 8$, and $-35 = -35$. ✓
 
 ## Key terms
 
-**variable side** — the side of an equation that we choose to collect all
-the variable terms onto, using the Addition or Subtraction Property of
-Equality. **constant side** — the side of an equation that we choose to
-collect all the constant terms onto. **Beginning Strategy for Solving
-Equations with Variables and Constants on Both Sides** — choose the
-variable side and constant side; collect the variable terms onto the
-variable side; collect the constants onto the constant side; make the
-coefficient of the variable equal to $1$; check the solution.
+- **variable side** — the side of an equation that we choose to collect all the variable terms onto, using the Addition or Subtraction Property of Equality.
+- **constant side** — the side of an equation that we choose to collect all the constant terms onto.
+- **Beginning Strategy for Solving Equations with Variables and Constants on Both Sides** — choose the variable side and constant side; collect the variable terms onto the variable side; collect the constants onto the constant side; make the coefficient of the variable equal to $1$; check the solution.
 
 ## Practice
 

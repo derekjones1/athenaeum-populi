@@ -295,7 +295,7 @@ terminal bronchioles
 respiratory bronchioles
 {{< /multiplechoice >}}
 
-*(Source note: the source keys the first option, but this section’s glossary defines the bronchial tree as the branches of the bronchi and bronchioles, and its Respiratory Zone section calls the respiratory bronchiole “the smallest type of bronchiole,” which then leads to an alveolar duct, so the item is keyed to “respiratory bronchioles” instead. The options and their order are unchanged.)*
+*(Source note: the source keys the first option, which this section’s own glossary definition of the bronchial tree contradicts; the page keys a different option, and the footer gives the reasoning. The options and their order are as printed.)*
 
 {{< multiplechoice
   question="What is the role of alveolar macrophages?"

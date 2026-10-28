@@ -223,7 +223,7 @@ avermectins
 
 ### 14.7 Current Strategies for Antimicrobial Discovery
 
-{{< textin question="The search for new antimicrobial drugs is considered essential to prevent the onset of the ________ era." answer="postantibiotic" accept="post-antibiotic" >}}
+{{< textin question="The search for new antimicrobial drugs is considered essential to prevent the onset of the ________ era." answer="postantibiotic"  >}}
 
 {{< textin question="Methods that use automation to test large numbers of soil and microbial product samples simultaneously for antimicrobial activity are called ________ methods." answer="high-throughput screening" accept="high-throughput" >}}
 

@@ -50,10 +50,27 @@ const LEADING_ARTICLE = /^(?:a|an|the) /;
  * `cell`). Numerals survive so `Type 2 diabetes` keeps its 2.
  */
 export function normalizeText(value) {
+  return canonical(value, ' ');
+}
+
+/**
+ * The same canonical form with every hyphen/dash read as NOTHING instead of
+ * a space (`fore-gut` → `foregut`, `semi-conservative` → `semiconservative`),
+ * so a hyphenated respelling of a closed compound grades the same as the
+ * compound (October 27, 2026). A slash or underscore is still a space. The
+ * grader compares inputs and forms under BOTH readings; a spaced respelling
+ * (`fore gut`) folds under neither, since folding spaces away would read
+ * any two words as one.
+ */
+export function closedForm(value) {
+  return canonical(value, '');
+}
+
+function canonical(value, hyphen) {
   let text = String(value ?? '').normalize('NFKD').replace(DIACRITICS, '');
   text = text.toLowerCase();
   text = text.replace(QUOTES, '').replace(/'/g, '');
-  text = text.replace(DASHES, '-').replace(/[-_/]+/g, ' ');
+  text = text.replace(DASHES, '-').replace(/-+/g, hyphen).replace(/[_/]+/g, ' ');
   text = text.replace(/[^\p{L}\p{N}\s]/gu, ' ');
   text = text.replace(/\s+/g, ' ').trim();
   text = text.replace(LEADING_ARTICLE, '');
@@ -61,8 +78,8 @@ export function normalizeText(value) {
 }
 
 /** The keyed answer plus its `|`-separated alternates, normalized, deduped, non-empty. */
-export function acceptedForms(answer, accept = '') {
-  const forms = [answer, ...String(accept ?? '').split('|')].map(normalizeText).filter(Boolean);
+export function acceptedForms(answer, accept = '', normalize = normalizeText) {
+  const forms = [answer, ...String(accept ?? '').split('|')].map(normalize).filter(Boolean);
   return [...new Set(forms)];
 }
 
@@ -123,9 +140,13 @@ export function checkText(input, answer, { accept = '' } = {}) {
   const normalized = normalizeText(input);
   if (!normalized) return 'empty';
   const forms = acceptedForms(answer, accept);
+  const closedForms = acceptedForms(answer, accept, closedForm);
   const graded = (text) => {
     const value = normalizeText(text);
-    return Boolean(value) && forms.some((form) => matchesForm(value, form));
+    if (!value) return false;
+    if (forms.some((form) => matchesForm(value, form))) return true;
+    const closed = closedForm(text);
+    return closedForms.some((form) => matchesForm(closed, form));
   };
   if (graded(input)) return 'correct';
   const paren = /^([^()]+)\(([^()]+)\)\s*$/.exec(String(input ?? '').trim());

@@ -510,12 +510,8 @@ column to the left. Add like terms to get the final product.
 
 ## Key terms
 
-**FOIL method** — a shortcut for multiplying two binomials: multiply the
-**F**irst terms, the **O**uter terms, the **I**nner terms, and the **L**ast
-terms, then combine any like terms. **Vertical Method** — a way to multiply
-polynomials that lines up partial products in columns, the same way you
-multiply multi-digit whole numbers; it works for any two polynomials, not
-just binomials.
+- **FOIL method** — a shortcut for multiplying two binomials: multiply the **F**irst terms, the **O**uter terms, the **I**nner terms, and the **L**ast terms, then combine any like terms.
+- **Vertical Method** — a way to multiply polynomials that lines up partial products in columns, the same way you multiply multi-digit whole numbers; it works for any two polynomials, not just binomials.
 
 ## Practice
 

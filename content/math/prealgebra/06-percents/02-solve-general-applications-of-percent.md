@@ -367,10 +367,9 @@ of gas decreased $1.9\%$.
 
 ## Key terms
 
-**base** — in a percent equation, the whole amount that a percent is taken
-of. **percent increase** — the amount of increase, expressed as a percent
-of the original amount. **percent decrease** — the amount of decrease,
-expressed as a percent of the original amount.
+- **base** — in a percent equation, the whole amount that a percent is taken of.
+- **percent increase** — the amount of increase, expressed as a percent of the original amount.
+- **percent decrease** — the amount of decrease, expressed as a percent of the original amount.
 
 ## Practice
 

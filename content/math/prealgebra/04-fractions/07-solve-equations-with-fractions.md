@@ -326,9 +326,8 @@ mixed number.
 
 ## Key terms
 
-**solution of an equation** — a value that, substituted for the
-variable, makes the equation a true statement. **Multiplication Property
-of Equality** — for any numbers $a$, $b$, $c$: if $a=b$, then $ac=bc$.
+- **solution of an equation** — a value that, substituted for the variable, makes the equation a true statement.
+- **Multiplication Property of Equality** — for any numbers $a$, $b$, $c$: if $a=b$, then $ac=bc$.
 
 ## Practice
 

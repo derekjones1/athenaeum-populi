@@ -433,12 +433,10 @@ $$(5x-6)(6x+5) = 30x^2 + 25x - 36x - 30 = 30x^2 - 11x - 30$$
 
 ## Key terms
 
-**conjugate pair** — two binomials of the form $(a-b)$, $(a+b)$ that have
-the same first term and the same last term, but one is a sum and the other a
-difference. **difference of squares** — a binomial of the form $a^2 - b^2$;
-it is the product of a conjugate pair. **Binomial Squares Pattern** —
-$(a+b)^2 = a^2 + 2ab + b^2$ and $(a-b)^2 = a^2 - 2ab + b^2$. **Product of
-Conjugates Pattern** — $(a-b)(a+b) = a^2 - b^2$.
+- **conjugate pair** — two binomials of the form $(a-b)$, $(a+b)$ that have the same first term and the same last term, but one is a sum and the other a difference.
+- **difference of squares** — a binomial of the form $a^2 - b^2$; it is the product of a conjugate pair.
+- **Binomial Squares Pattern** — $(a+b)^2 = a^2 + 2ab + b^2$ and $(a-b)^2 = a^2 - 2ab + b^2$.
+- **Product of Conjugates Pattern** — $(a-b)(a+b) = a^2 - b^2$.
 
 ## Practice
 

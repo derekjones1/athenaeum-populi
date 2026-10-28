@@ -1248,6 +1248,14 @@
     "result": "agrees"
    }
   },
+  "02867e8c62c60b55": {
+   "verdict": "ok",
+   "note": "KC 5 24.1 § body Cell Structure and Function (fs-idp33278112), m66558 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "028f8fa9e874fda8": {
    "verdict": "ok",
    "note": "cloze of fs-id2454712; key glycoproteins as printed",
@@ -1908,6 +1916,14 @@
   },
   "03c7fe66d4d23048": {
    "verdict": "ok"
+  },
+  "03d0b3222b9bd3b9": {
+   "verdict": "ok",
+   "note": "glossary recall: nonparental type — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "03d71cd1be00778f": {
    "verdict": "ok",
@@ -4081,6 +4097,14 @@
     "result": "agrees"
    }
   },
+  "089d388c28b89b50": {
+   "verdict": "ok",
+   "note": "body cloze from § Cell Wall: \"First, archaeal cell walls do not contain peptidoglycan; instead, they contain a similar polymer called pseudopeptidoglycan (pseudomurein)…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "08a0f9cce9a1c4d8": {
    "verdict": "ok",
    "note": "KC 2 4.3 § The Plasma Membrane, m66449 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -5583,6 +5607,14 @@
     "result": "agrees"
    }
   },
+  "0bedad4db8f6e912": {
+   "verdict": "ok",
+   "note": "summary cloze from § summary: \"Ectomycorrhizae form an extensive dense sheath around the root, while endomycorrhizae are embedded within the root tissue.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "0bf26f7a0c113457": {
    "verdict": "ok",
    "note": "CT fs-id1211287 solution verbatim"
@@ -5832,6 +5864,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "0c9a81d01dc889c4": {
+   "verdict": "ok",
+   "note": "glossary recall: ADH — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -6459,6 +6499,14 @@
     "result": "agrees"
    }
   },
+  "0df0afe97a6cdd22": {
+   "verdict": "ok",
+   "note": "summary-provenance cloze from m66620's section.summary closing sentence 'There are four main types of neurons: unipolar, bipolar, multipolar, and pseudounipolar neurons.' — blanks 'pseudounipolar', the one type not already used by another Practice item in this group. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "0df1b1dc63d0a584": {
    "verdict": "ok",
    "note": "KC 1 4.6 § body (introduction, before Crenarchaeota), m58800"
@@ -6564,6 +6612,14 @@
   "0e285b1c4ee347da": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "0e2910cf9783ca85": {
+   "verdict": "ok",
+   "note": "key-term recall: transendothelial migration; printed in § Extravasation (Diapedesis) of Leukocytes: \"When they reach a cellular junction, they will bind to even more of these adhesion molecules, flattening out and squeezing through the cell…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -8704,6 +8760,14 @@
    "note": "Review fs-id2480582, key A ilium; body fs-id2303942 'fan-like, superior region'",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "12ffd6d6503d8a7c": {
+   "verdict": "ok",
+   "note": "author-built from § Radiation, Check Your Understanding: \"What type of mutagen causes thymine dimers?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -11514,6 +11578,14 @@
     "result": "agrees"
    }
   },
+  "18b121aab296fdcc": {
+   "verdict": "ok",
+   "note": "body cloze from § Viral Adhesins: \"The first interaction involves binding between gp120 and the CD4 cellular marker that is found on some essential immune system cells.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "18ba1b65ea2042e6": {
    "verdict": "ok",
    "note": "source Critical Thinking fs-id1167660142838, unkeyed upstream; per run-facts C3, selfcheck; model answer joins the Gonorrhea section's co-infection sentence and the Micro Connection box's resistance sentence | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -11922,6 +11994,14 @@
     "by": "orchestrator",
     "result": "adjudicated",
     "note": "accept gap: the module names the form \"Emsleyan/Mertensian mimicry\" and a learner who types either half is right; accept widened"
+   }
+  },
+  "1997431522525521": {
+   "verdict": "ok",
+   "note": "Glossary recall for 'poly-A tail'; answer/accept match the glossary term; hyphen-vs-space variant intentionally omitted from accept per docs/subjects/biology.md (already grading-normalized).; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
    }
   },
   "1998fe1ec4b407d5": {
@@ -12333,6 +12413,14 @@
     "result": "agrees"
    }
   },
+  "1a778c4567f11971": {
+   "verdict": "ok",
+   "note": "body cloze from § Drug Interactions: \"Antagonism can occur between two antimicrobials or between antimicrobials and nonantimicrobials being used to treat other conditions.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1a79301e9115f324": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -12635,6 +12723,14 @@
     "result": "agrees"
    }
   },
+  "1b0ae037ef493e9e": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1860007: True unipolar cells are only found in invertebrate animals; re-read against m46509 CNXML and the page (re-hashed after checker fix: hyphen accept / hint reworded) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1b0e737e5635ac3d": {
    "verdict": "ok",
    "note": "Glossary recall: thermophile, meaning transcribed from the glossary definition (60-80 degrees C optimal growth).; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
@@ -12656,6 +12752,14 @@
    "note": "KC 8 44.2 § body Other Terrestrial Factors (fs-idp69649680), m66411 — parent re-read against the module",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "1b1c64bb1a07baef": {
+   "verdict": "ok",
+   "note": "body cloze from § Healthcare-Associated (Nosocomial) Infections: \"Health-care facilities seek to limit nosocomial infections through training and hygiene protocols such as those described in Control of Mic…\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -13400,6 +13504,14 @@
   "1ca53f54ad697a0d": {
    "verdict": "ok",
    "note": "author-written from § Isolation of Viruses only ('viruses require a living host cell for replication'); the module never mentions computer viruses, so the model answer states only the module's host-dependency fact and stops, per the no-speculation rule. Source (CNXML fs-id1168328287012) prints no answer key."
+  },
+  "1ca9f4cdf5711a4c": {
+   "verdict": "ok",
+   "note": "body cloze from § Translocations: \"A translocation occurs when a chromosome segment dissociates and reattaches to a different, nonhomologous chromosome.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "1cabe50f61b72e3e": {
    "verdict": "ok",
@@ -16084,6 +16196,14 @@
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "228996be68e20a70": {
+   "verdict": "ok",
+   "note": "KC 2 11.1 § introduction, m58840 (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "228eeecfd4420a5e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -16236,6 +16356,14 @@
    "note": "cloze adrenergic from fs-id2525262, referent added; accept adrenergic receptor|α-adrenergic|alpha-adrenergic",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "230b0deee55df976": {
+   "verdict": "ok",
+   "note": "KC 3 16.7 § body Cancer and Translational/Post-translational Control (fs-id1988417), m66509 — parent re-read against the module | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -17077,6 +17205,14 @@
    "verdict": "ok",
    "note": "body CYU, stays selfcheck — honest answer assembles three separate processing steps (5' cap, poly-A tail, splicing) from § Transcription in Eukaryotes; unmatched. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "252410eab77f0466": {
+   "verdict": "ok",
+   "note": "carbaminohemoglobin: glossary recall; key matches m46707 glossary and body term | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2526796171d50296": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -17784,6 +17920,14 @@
     "result": "agrees"
    }
   },
+  "26825b59234b8b2d": {
+   "verdict": "ok",
+   "note": "glossary recall hemisection; body fs-id1339554; accept hemi-section | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2682a6244b2e6b83": {
    "verdict": "ok"
   },
@@ -18471,6 +18615,14 @@
   "2813aeac09624929": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "2818868022b579ba": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1526539 'neurotransmitter'; meaning verbatim; accept neuro-transmitter; placed before action potential | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -19330,6 +19482,14 @@
    "verdict": "ok",
    "note": "Critical Thinking eip-331/eip-991, model answer transcribed verbatim (bullet list). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "2a0d82e11147a5f2": {
+   "verdict": "ok",
+   "note": "Glossary fs-id1471246; body fs-id1531254. | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2a0f15847c6ff6a9": {
    "verdict": "ok",
    "note": "m66677 fs-idm78708912 (Critical Thinking); model answer is the source solution verbatim, reused as complete sentences; checkpoints decompose it clause by clause with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -19750,6 +19910,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "2b0f18c46e638cc9": {
+   "verdict": "ok",
+   "note": "glossary recall: interspecific competition (fs-idm135679952) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "2b197fc4bf1c5dce": {
    "verdict": "ok",
    "note": "Review Question (fs-id2853936, module m66514) — keyed 'D' (all of the above) in the CNXML, matches OpenStax's published site; shipped unmodified. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -20169,6 +20337,14 @@
     "result": "agrees"
    }
   },
+  "2c0d8e3e52d67cf1": {
+   "verdict": "ok",
+   "note": "KC 2 10.5 § body Binary Fission, bidirectional-replication sentence (parent replacement of the origin recall), m66481 — parent re-read against the module | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "2c0e57dc732251e7": {
    "verdict": "ok",
    "note": "key-term recall from the Glossary appendix: tolerance (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -20256,6 +20432,14 @@
   "2c296ed56ae20536": {
    "verdict": "ok",
    "note": "RQ fs-id1841131 key D lysosomal; fs-id2594946 M. leprae resistant to lysosomal enzymes",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "2c2c919645a74c17": {
+   "verdict": "ok",
+   "note": "KC 2 11.1 § Patterns of Fascicle Organization, m46487 | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -22156,6 +22340,14 @@
     "result": "agrees"
    }
   },
+  "304b655362ad94b2": {
+   "verdict": "ok",
+   "note": "body cloze from § Macromolecules: \"The smaller molecules act as building blocks and are called monomer s , and the macromolecules that result from their linkage are called po…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "304e5dda43b49f39": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -22615,6 +22807,14 @@
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "318777e4f184e0c1": {
+   "verdict": "ok",
+   "note": "body cloze, fs-id2176324 last sentence: 'bulge in a corkscrew motion'; 'This arrangement' given referent | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -23089,6 +23289,14 @@
   "327f825fdfcccc53": {
    "verdict": "ok",
    "note": "author-built from § E. coli Infections, Check Your Understanding: \"Compare and contrast the virulence factors and signs and symptoms of infections with the four main E. coli groups.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "327f93047974d8d2": {
+   "verdict": "ok",
+   "note": "body cloze, retinal para: This process is called photoisomerization; British and hyphenated spellings accepted (re-hashed from 327f93047974d8d2 after the accept list grew) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -27054,6 +27262,14 @@
   "3ba89fe8e6a5cebe": {
    "verdict": "ok"
   },
+  "3bafbff0979bd7c8": {
+   "verdict": "ok",
+   "note": "body cloze from § Ethical Concerns: \"To date, the various types of gene therapies have been targeted to somatic cells, the non-reproductive cells within the body.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3bb278fbce604447": {
    "verdict": "ok",
    "note": "cloze, § Suture fs-id2293668: At the time of birth, the frontal and maxillary bones…",
@@ -29278,6 +29494,14 @@
    "verdict": "ok",
    "note": "CT fs-id1513483; model = source solution verbatim"
   },
+  "4078f4782522eb08": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1433438 autorhythmicity; body prints it (fs-id2254456); no source item keys or prints it | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4079c0413038f0a0": {
    "verdict": "ok",
    "note": "m66440 CT solution fs-id2854177 (glycogen vs starch) verbatim; six CHECKS clauses restate its sentences. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -29933,6 +30157,14 @@
   "41d434b62465ac2f": {
    "verdict": "ok",
    "note": "body cloze fs-id1192235 strut; referent the clavicle added",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "41d6e0f31775a2f5": {
+   "verdict": "ok",
+   "note": "body cloze from § Dilution Tests: \"The MIC assay can also be performed using 96-well microdilution trays, which allow for the use of small volumes and automated dispensing de…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -32737,6 +32969,14 @@
     "result": "agrees"
    }
   },
+  "484fadfdb6cc6928": {
+   "verdict": "ok",
+   "note": "Glossary textin, definition id fs-idm133006736: 'inhibitory postsynaptic potential (IPSP)' = 'hyperpolarization of a postsynaptic membrane caused by neurotransmitter molecules released from a presynaptic cell' — matches; accept list covers IPSP/IPSPs.; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "485118f27654fb9b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -33161,6 +33401,14 @@
   "493630fdd57c7951": {
    "verdict": "ok",
    "note": "glossary recall fs-id1478312 hyperglycemia; body bolds term-00010",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "4939753aa8686b4e": {
+   "verdict": "ok",
+   "note": "key-term recall: Etest; printed in § Dilution Tests: \"The Etest is an alternative method used to determine MIC, and is a combination of the Kirby-Bauer disk diffusion test and dilution methods.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -33958,6 +34206,14 @@
     "result": "agrees"
    }
   },
+  "4b18784170ca6bb8": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "4b1bf045c7cbe521": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -34299,6 +34555,14 @@
   },
   "4bc0c614a897b986": {
    "verdict": "ok"
+  },
+  "4bc16d9e00aa47ea": {
+   "verdict": "ok",
+   "note": "key re-read against the module body sentence / glossary in the raw CNXML; grader-checked accept members (precentral) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "4bc2536764c4aeee": {
    "verdict": "ok",
@@ -35823,6 +36087,14 @@
     "result": "agrees"
    }
   },
+  "4f5e14ae0b874f14": {
+   "verdict": "ok",
+   "note": "summary cloze, m46295 fs-id1016222 sentence 2 'Hypocalcemia can result in problems with blood coagulation, muscle contraction, nerve functioning, and bone strength.' | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4f665153402dd174": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -36896,6 +37168,14 @@
    "verdict": "ok",
    "note": "period of csc x equals period of sin x = 2pi; matches source's printed solution to the analogous verbal exercise. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "51ce41e6000e8a7b": {
+   "verdict": "ok",
+   "note": "KC 1 1.1 § Early Notions of Disease, Contagion, and Containment, m58781 | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "51d0724d77df4bae": {
    "verdict": "ok",
    "note": "18.5 RQ fs-id2291510 key C common pathway; fs-id1931116 prothrombinase converts prothrombin into thrombin in the common pathway; table row II 'Common; converted into thrombin'.",
@@ -37595,6 +37875,15 @@
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
+   }
+  },
+  "537aae0015b78f55": {
+   "verdict": "ok",
+   "note": "body cloze from § Habituation: \"This is a form of non-associative learning, as the stimulus is not associated with any punishment or reward.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "fable-blind-solve",
+    "result": "adjudicated",
+    "note": "The stem now asks for the category; m66699 says habituation \"is a form of non-associative learning, as the stimulus is not associated with any punishment or reward\" — habituation is a member, not the category (stem reworded after the first solver answered habituation)."
    }
   },
   "537b9414dceab2c2": {
@@ -38508,6 +38797,14 @@
     "result": "agrees"
    }
   },
+  "55a3c4756bd84271": {
+   "verdict": "ok",
+   "note": "glossary recall spinocerebellar tract; body fs-id2242057; accept spinocerebellar, spino-cerebellar tract | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "55a579edb17c4bc3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -38801,6 +39098,14 @@
    "note": "source exercise fs-id1172099498850 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "5634e95cc06de600": {
+   "verdict": "ok",
+   "note": "body cloze from § Transplant Rejection: \"With the three highly polymorphic MHC I genes in humans ( HLA-A , HLA-B , and HLA-C ) determining compatibility, each with many alleles seg…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -39166,6 +39471,14 @@
   "5726d3cfee8f3c45": {
    "verdict": "ok",
    "note": "source CT fs-id1167660210401, unchanged, stays selfcheck; model answer states only what § Lipid Catabolism gives and stops. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "57290e3287e31c24": {
+   "verdict": "ok",
+   "note": "cloze from body fs-id1270226; accept remodeling|remodelling|re-shaping (module calls the process remodeling), grader-checked | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "5730390acc856ca2": {
    "verdict": "ok",
@@ -40022,6 +40335,14 @@
   "58e99bc19d261da8": {
    "verdict": "ok",
    "note": "m66374 solution fs-id2318009 ('Why does water move through a membrane?'): model answer verbatim match. Three CHECKS clauses restate concentration gradient of solute/solvent, solute cannot balance itself, water moves to achieve balance. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "58ebdb5878ec9d75": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id2066721; preload|pre-load|EDV accepted | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "58ebdf8c5696d965": {
    "verdict": "ok",
@@ -41157,6 +41478,14 @@
   "5b57b5ce5483a782": {
    "verdict": "ok"
   },
+  "5b592a680702eecb": {
+   "verdict": "ok",
+   "note": "KC 3 14.7 § opening paragraph, m63248 | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5b59b208621a40ab": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -41500,6 +41829,14 @@
    "verdict": "ok",
    "note": "KC 7 42.4 § Autoimmunity, m66666 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | Biology KC re-review Sep 24 2026 (knowledge-check-33-43.md:1168): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
   },
+  "5c21a7e9c3f6af6a": {
+   "verdict": "ok",
+   "note": "glossary recall: regulatory T cell — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "fable-blind-solve",
+    "result": "agrees"
+   }
+  },
   "5c226749c02d44c6": {
    "verdict": "ok",
    "note": "author-built from § Nucleus: \"Rather than creating two clonal daughter cells, the goal of meiosis is to create four genetically-distinct gametes, with each gamete posses…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -41526,6 +41863,14 @@
   },
   "5c2612d21b04ee75": {
    "verdict": "ok"
+  },
+  "5c2bd9a280a14656": {
+   "verdict": "ok",
+   "note": "body cloze from § Detection of a Virus: \"Regardless of the method of cultivation, once a virus has been introduced into a whole host organism, embryo, or tissue-culture cell, a sam…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "5c2c599cc9be3498": {
    "verdict": "ok",
@@ -41787,6 +42132,14 @@
   "5cb0998eef79df81": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "5cb13b66b1d410f3": {
+   "verdict": "ok",
+   "note": "parent re-read after a checker-driven edit (accept list, wording, or description); key unchanged and re-checked against the CNXML solution/glossary — 35.02 line 332; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "5cb25967a8dfe3d5": {
    "verdict": "ok",
@@ -42422,6 +42775,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "5e245724ab97ce9d": {
+   "verdict": "ok",
+   "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -43388,6 +43749,15 @@
   "60afee3732462f02": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "60b199d1e8f18f4b": {
+   "verdict": "ok",
+   "note": "m66408 glossary textin: 'myopia' — '(also, nearsightedness) visual defect in which the image focus falls in front of the retina…'; accept=nearsightedness is the section's own printed synonym (body para: 'Myopia (nearsightedness) occurs when an eyeball is elongated…'). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "accept already carries \"nearsightedness\", which the module prints twice. Key stands."
+   }
   },
   "60b2ed017d4ee558": {
    "verdict": "ok",
@@ -44747,6 +45117,14 @@
   "646e47e5d6635bfb": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "646f803cd4b181ce": {
+   "verdict": "ok",
+   "note": "body cloze from § Human Papillomas: \"HPV is a small, non-enveloped virus with a circular double-stranded DNA genome.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -47625,6 +48003,14 @@
    "verdict": "ok",
    "note": "Complete the square in y: y^2-6y+9=-12x-21+9 -> (y-3)^2=-12x-12=-12(x+1); matches source exercise fs-id1154421's key exactly (node-verified by expanding back). | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "6bdb3c17e922ed46": {
+   "verdict": "ok",
+   "note": "re-read against m46032 CNXML and page text | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6be06adfee41acc9": {
    "verdict": "ok",
    "note": "KC 4 17.5 § Fever (Key terms), m58881 | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -50040,6 +50426,14 @@
     "result": "agrees"
    }
   },
+  "7172cfb0f0d13a37": {
+   "verdict": "ok",
+   "note": "body cloze from § Life Histories of K -selected and r -selected Species: \"Populations of K -selected species tend to exist close to their carrying capacity (hence the term K -selected) where intraspecific competit…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "fable-blind-solve",
+    "result": "agrees"
+   }
+  },
   "7177bbd23f1a679b": {
    "verdict": "ok"
   },
@@ -50808,6 +51202,14 @@
   "732ba076db423f43": {
    "verdict": "ok",
    "note": "body cloze from § Cancer Vaccines: \"The first FDA-approved therapeutic cancer vaccine was sipuleucel-T (Provenge) , approved in 2010 to treat certain cases of prostate cancer .\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "732d73ddae955551": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1953899: Multipolar neurons are all of the neurons that are not unipolar or bipolar; re-read against m46509 CNXML and the page (re-hashed after checker fix: hyphen accept / hint reworded) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -53541,6 +53943,14 @@
     "result": "agrees"
    }
   },
+  "7960b7667a3e2d42": {
+   "verdict": "ok",
+   "note": "glossary recall: intraspecific competition (fs-idp57750448) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "796382aabfe46c4a": {
    "verdict": "ok",
    "note": "det3([[5,1,-1],[2,3,1],[3,-6,-3]]) = 15, run in Node; matches CNXML solution 15 (fs-id1365782). | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -54253,6 +54663,14 @@
   "7aa31d80f1300625": {
    "verdict": "ok",
    "note": "KC 5 28.6 § body Subphylum Hexapoda (fs-idp69837728), m66399 — parent re-read against the module | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "7aac858063d7609e": {
+   "verdict": "ok",
+   "note": "KC 2 5.2 § glossary selectively permeable (fs-id1447472), m66374 — parent re-read against the module | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -55734,6 +56152,14 @@
    "verdict": "ok",
    "note": "parent re-read 2026-09-24 (Biology re-review ch46–47 + KC 1–17): model answer from the module's own sentences, rubric clauses decompose it with no new claim, no nearby key printed"
   },
+  "7dbd909401acd9fc": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1505883 neuropeptide; body term-00016; accept neuro-peptide | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7dbda16ef7a13a22": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -55755,6 +56181,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "7dd86e57a9d3f155": {
+   "verdict": "ok",
+   "note": "body cloze from § Viral Structures: \"Viruses formed from only a nucleic acid and capsid are called naked virus es or nonenveloped virus es .\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -56023,6 +56457,14 @@
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "7e95958bc4ce8d29": {
+   "verdict": "ok",
+   "note": "KC 1 4.4 § Lactobacillales, m58798 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -56592,6 +57034,14 @@
    "note": "KC 4 21.7 § Tissue Transplantation, m46583",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "7fd18dc29dac3e5d": {
+   "verdict": "ok",
+   "note": "summary cloze from § summary: \"The shoot system includes the aboveground vegetative portions (stems and leaves) and reproductive parts (flowers and fruits).\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -58238,6 +58688,14 @@
     "result": "agrees"
    }
   },
+  "83bc2f6c5f30cab5": {
+   "verdict": "ok",
+   "note": "parent re-read after a checker-driven edit (accept list, wording, or description); key unchanged and re-checked against the CNXML solution/glossary — 33.02 line 263 | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "83bc745988b496de": {
    "verdict": "ok",
    "note": "author-built from § Restriction Enzymes and Ligases: \"The creation of recombinant DNA molecules is possible due to the use of naturally occurring restriction endonucleases ( restriction enzymes…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -59665,6 +60123,14 @@
    "verdict": "ok",
    "note": "Matrix already row-echelon [[1,0,0|31],[0,1,1|45],[0,0,1|87]]. Back-substitution: z=87, y=45-87=-42, x=31. Matches CNXML fs-id1165134431916 (31,-42,87) exactly. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "86d34f92719b30bc": {
+   "verdict": "ok",
+   "note": "cloze of fs-id1899114 first sentence; key preformed; module equates naturally formed (fs-id2468186) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "86d3a272ea48079d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -60355,6 +60821,14 @@
     "result": "agrees"
    }
   },
+  "88932fcebd044a18": {
+   "verdict": "ok",
+   "note": "body cloze from § Viroids: \"In 1971, Theodor Diener , a pathologist working at the Agriculture Research Service, discovered an acellular particle that he named a viroi…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "8896ec0d5dd64f7e": {
    "verdict": "ok",
    "note": "m66620 Critical Thinking eip-80, model answer reuses the source solution verbatim (single axon = one signal at a time / multiple terminals reach several cells / rapid propagation); checkpoints decompose it with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -60470,6 +60944,14 @@
   "88e89c94c516a3c3": {
    "verdict": "ok",
    "note": "body cloze from § Antigenic Variation in Viruses: \"This reassortment for antigenic shift occurs typically when two different influenza viruses infect the same host.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "88f2a88d07e0e7ec": {
+   "verdict": "ok",
+   "note": "glossary recall: antioxidant (fs-idp44526608) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -60822,6 +61304,14 @@
    "note": "body cloze from § One of the Superbugs: MRSA: \"Researchers have expressed concern about the way this latter source of MRSA targets a much younger population than those residing in care f…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "fable-blind-solver",
+    "result": "agrees"
+   }
+  },
+  "89953bbbaf030d3f": {
+   "verdict": "ok",
+   "note": "KC 4 15.1 § Signs and Symptoms of Disease, m58866 | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -61802,6 +62292,14 @@
    "note": "source exercise fs-idp105300832 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "8c1a48bbda22098a": {
+   "verdict": "ok",
+   "note": "KC 7 40.4 § How Blood Flows Through the Body, m66654 (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -64175,6 +64673,14 @@
     "result": "agrees"
    }
   },
+  "91a64cd729d259e3": {
+   "verdict": "ok",
+   "note": "summary cloze from § summary: \"The amount of cleanliness ( sterilization versus high-level disinfection versus general cleanliness) required for items used clinically dep…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "91aa33a77e8bbe0d": {
    "verdict": "ok",
    "note": "Review Question 2 (fs-id2081310); keyed option D 'nucleotides' matches CNXML solution fs-id2017347. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -64311,6 +64817,14 @@
     "result": "agrees"
    }
   },
+  "91ed8f75a49df458": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "91f1175cdc9ebac1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -64413,6 +64927,14 @@
   "922e3a878d63b2c7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "923094fc2a7a69e3": {
+   "verdict": "ok",
+   "note": "summary cloze, m46295 fs-id1016222 sentence 3 'Hypercalcemia can result in lethargy, sluggish reflexes, constipation and loss of appetite, confusion, and coma.' | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -66329,6 +66851,14 @@
     "result": "agrees"
    }
   },
+  "9674eda29463384c": {
+   "verdict": "ok",
+   "note": "Summary cloze, fs-id2592756: \"…used to describe muscles of the body midline\"; mid-line accepted. | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "967cd97cb9fff583": {
    "verdict": "ok"
   },
@@ -67066,6 +67596,14 @@
     "result": "agrees"
    }
   },
+  "9831f6632479b69b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "98385ba55d6729b5": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -67169,6 +67707,14 @@
    "note": "source exercise fs-id1167663620588 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "98846bfe17b4c690": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1352107 pacesetter cell; accept pacesetter | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -67410,6 +67956,14 @@
   "990c4f2ff3d54c5a": {
    "verdict": "ok",
    "note": "author-built from § Functions of RNA in Protein Synthesis: \"Ribosomes are composed of rRNA and protein.\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "990e1697e5741d9b": {
+   "verdict": "ok",
+   "note": "KC 2 12.3 § Genomics, Transcriptomics, and Proteomics, m58850 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -68616,6 +69170,14 @@
   "9c079f4c6b300c73": {
    "verdict": "ok",
    "note": "Practice item, source exercise fs-id1165134226706. Solved 6x-5y-z=31, -x+2y+z=-6, 3x+3y+2z=13 via X=A^-1 B in exact rational arithmetic: X=(5,0,-1). Matches source; verified by substitution into all three equations. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "9c0b98f255106e8c": {
+   "verdict": "ok",
+   "note": "key-term recall: reemerging infectious disease; printed in § Emerging and Reemerging Infectious Diseases: \"A reemerging infectious disease is a disease that is increasing in frequency after a previous period of decline.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "9c0e1e08111eb644": {
    "verdict": "ok",
@@ -70911,6 +71473,14 @@
     "result": "agrees"
    }
   },
+  "a166ab7ac0f67eb9": {
+   "verdict": "ok",
+   "note": "KC 2 11.5 § Effects of Mutations on Protein Structure and Function, m58844 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a16bb7be6d168593": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -72671,6 +73241,14 @@
   "a4da6fb2b788bbed": {
    "verdict": "ok",
    "note": "RQ1 fs-id1435493 key B macrophage; fs-id1976682 macrophages phagocytic",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "a4ddd034192bc3b2": {
+   "verdict": "ok",
+   "note": "glossary recall: anti-diuretic hormone — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -75563,6 +76141,14 @@
     "result": "agrees"
    }
   },
+  "abb551a5b43688e7": {
+   "verdict": "ok",
+   "note": "key-term recall: noncommunicable; printed in § Classifications of Disease: \"In addition to the wide variety of noncommunicable infectious diseases, noninfectious disease s (those not caused by pathogens) are an impo…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "abb7dc4e2395b471": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -75904,6 +76490,14 @@
     "result": "agrees"
    }
   },
+  "ac90bdf491998399": {
+   "verdict": "ok",
+   "note": "glossary recall: cross-pollination (fs-idp72771312) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "ac914bde45a7dc48": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -75931,6 +76525,14 @@
   "ac9876486679826b": {
    "verdict": "ok",
    "note": "source exercise eip-157 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "aca023ccc5b2cd04": {
+   "verdict": "ok",
+   "note": "summary cloze from § summary: \"Some ants farm fungi as a supply of food.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -76029,6 +76631,14 @@
   "acc8978e586984d4": {
    "verdict": "ok",
    "note": "x=-2(y+3)^2+2: vertex (h,k)=(2,-3); y-intercepts (x=0): (y+3)^2=1 -> y=-2,-4 -> (0,-2),(0,-4), re-derived by node and matches CNXML solution image alt text verbatim. Points inside grid -4..4/-7..1, integer lattice."
+  },
+  "acd1fc5fd13f9e4f": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1553818 'oxytocin is necessary for the milk ejection reflex (commonly referred to as “let-down”) in breastfeeding people' | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "acd6e7697d0a9036": {
    "verdict": "ok",
@@ -76198,6 +76808,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "ad45d87afefb20c7": {
+   "verdict": "ok",
+   "note": "body cloze from § introduction: \"Finally, lichens produce compounds that have antibacterial effects, and further research may discover compounds that are medically useful t…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -79293,6 +79911,14 @@
    "verdict": "ok",
    "note": "body CYU selfcheck, model answer assembled from the HDN mechanism paragraphs (fs-id1167661561891, fs-id1167661366157) and the RhoGAM prevention paragraph (fs-id1167663986895) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "b446cbc566bcec3b": {
+   "verdict": "ok",
+   "note": "KC 3 17.3 § Intermediate Pituitary: Melanocyte-Stimulating Hormone, m46699 | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b44e26df9f04cdae": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -79499,6 +80125,14 @@
     "result": "agrees"
    }
   },
+  "b4b96f55b92d2874": {
+   "verdict": "ok",
+   "note": "body cloze, Skin fs-id1400782: 'When cholesterol present in the epidermis is exposed to ultraviolet radiation, it is converted to cholecalciferol' | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b4c179aeb7374e1d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -79668,6 +80302,14 @@
   "b5296f21017e2a4d": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "b52f5550f2e5db05": {
+   "verdict": "ok",
+   "note": "body cloze from § Acid-Fast Stains: \"Two different methods for acid-fast staining are the Ziehl-Neelsen technique and the Kinyoun technique .\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "b530b3f9f458dc06": {
    "verdict": "ok",
@@ -80778,6 +81420,14 @@
     "result": "agrees"
    }
   },
+  "b78c77dde61fc89d": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1388902 fibrocartilaginous; accept fibrocartilage | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b78c8f3fc86c7b6c": {
    "verdict": "ok",
    "note": "Microbiology 13.2 source CYU selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the Membrane Filters and HEPA filter paragraphs)"
@@ -81731,6 +82381,14 @@
   "b9bfa07e50f8efe2": {
    "verdict": "ok",
    "note": "5-6(3x+2)=-7-18x; key p1271 #35 | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "b9c1d0bfaddd8698": {
+   "verdict": "ok",
+   "note": "body cloze from § Plant Parasites: \"Other parasitic plants (hemiparasites) are fully photosynthetic and only use the host for water and minerals.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "b9c409a3c1d262e1": {
    "verdict": "ok",
@@ -82697,6 +83355,14 @@
     "result": "agrees"
    }
   },
+  "bbe2e314ffc41bbc": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id2719526 foregut; body Weeks 4–7 also defines it | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "bbe593db38c137a6": {
    "verdict": "ok",
    "note": "re-read against m46664 CNXML and page text: textin keyed fascicles",
@@ -82887,6 +83553,14 @@
   "bc4e5d421eb05cbc": {
    "verdict": "ok",
    "note": "body cloze, Other Plasma Solutes fs-id2338114; key electrolytes verbatim",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "bc504d184e3d8fd0": {
+   "verdict": "ok",
+   "note": "KC 3 17.1 § Other Types of Chemical Signaling, m46656 | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -85169,6 +85843,14 @@
     "result": "agrees"
    }
   },
+  "c1996a2f1475d7aa": {
+   "verdict": "ok",
+   "note": "glossary recall: up-regulation (fs-idp46451456) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "c1998601d80cd56d": {
    "verdict": "ok",
    "note": "source exercise fs-idm52208096 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -85966,6 +86648,14 @@
    "verdict": "ok",
    "note": "02-sexual-reproduction.md line 90, model answer matches CNXML solution id=\"fs-id983501\" verbatim (crossover in prophase I, random alignment at metaphase I, random fertilization); all three checks restate those same clauses with no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "c36fffdf7e4954d1": {
+   "verdict": "ok",
+   "note": "parent: accept list widened or prompt reworded after the checker pass; answer re-read against the glossary definition; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "c3706e4b81769969": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -86284,6 +86974,14 @@
     "result": "agrees"
    }
   },
+  "c43987600dc4ec0f": {
+   "verdict": "ok",
+   "note": "[hash rebuilt after a parent edit; was c53bde134d3b7b66] Author cloze from fs-id1905669: 'resulting in much quicker cross-bridge cycling (which pulls the thin filaments toward the center of the sarcomeres at a faster rate)'; blank before its parenthetical gloss; accept crossbridge cycling (unhyphenated, does not fold) and cross-bridge cycle; grader-tested. | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c43c1fe9990943d9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -86555,6 +87253,14 @@
   "c4af10beed188042": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c4b41934b77b766a": {
+   "verdict": "ok",
+   "note": "body cloze, fs-id1860007 first two sentences verbatim; glossary term fs-id1667047 'precentral gyrus of the frontal cortex'; full name, pre-central gyrus, precentral gyri accepted | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -87317,6 +88023,14 @@
     "result": "agrees"
    }
   },
+  "c6649f3aa08a2a60": {
+   "verdict": "ok",
+   "note": "key-term recall: β₂ microglobulin; printed in § Major Histocompatibility Complex Molecules: \"MHC I molecules are composed of a longer α protein chain coupled with a smaller β 2 microglobulin protein, and only the α chain spans the c…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c6670d6fae4c810f": {
    "verdict": "ok",
    "note": "20.1 selfcheck false-negative definition + two module reasons (detection threshold, immunocompromised)."
@@ -87435,6 +88149,14 @@
   "c692ea2e4812e1f0": {
    "verdict": "ok",
    "note": "CTQ (fs-idm68120736): model answer transcribes the source solution verbatim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "c698418f8ca93175": {
+   "verdict": "ok",
+   "note": "parent: accept list widened or prompt reworded after the checker pass; answer re-read against the glossary definition | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "c69e0fbdaaae15b1": {
    "verdict": "ok",
@@ -87973,6 +88695,14 @@
    "verdict": "ok",
    "note": "selfcheck line 160: model answer — model answer re-read against m46058 solution"
   },
+  "c80acc84839a9cd4": {
+   "verdict": "ok",
+   "note": "re-read against m46032 CNXML and page text | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c80f771c7c1fde52": {
    "verdict": "ok",
    "note": "source exercise fs-id2813837 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
@@ -88074,6 +88804,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver-B",
+    "result": "agrees"
+   }
+  },
+  "c84f57ae41e359f8": {
+   "verdict": "ok",
+   "note": "cloze of fs-id2199319; accept pre-central gyrus, precentral gyri, primary motor cortex (next sentence of fs-id2199319 names the same region) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -89075,6 +89813,14 @@
     "result": "agrees"
    }
   },
+  "ca6f614f8e2480b2": {
+   "verdict": "ok",
+   "note": "key-term recall: antinuclear antibodies; printed in § Cell Sorting Using Immunofluorescence: \"Diagnosing syphilis; detecting antinuclear antibodies (ANA) for lupus and other autoimmune diseases\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ca75f896169e74d3": {
    "verdict": "ok",
    "note": "CNXML exercise fs-id1167662470264 (unkeyed Critical Thinking), stays a selfcheck (an inference beyond a single stated fact); model answer assembled from § Initiation's 3′-OH requirement sentences only. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -89989,6 +90735,14 @@
     "result": "agrees"
    }
   },
+  "ccc5d8f5a2c1438c": {
+   "verdict": "ok",
+   "note": "22.4 glossary recall: 'CA-MRSA' meaning transcribed as the prompt, abbreviation as answer; accept includes 'community-associated MRSA,' the compound form used in the body prose. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "cccbce63a4c0efa4": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -90278,6 +91032,14 @@
   "cd69bdb89a0c6939": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"Proteomics approaches rely on protein analysis.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "cd6dc8c1dcf1b412": {
+   "verdict": "ok",
+   "note": "key-term recall from the Glossary appendix: biomolecule (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -91609,6 +92371,14 @@
     "result": "agrees"
    }
   },
+  "d0738d43591dc2aa": {
+   "verdict": "ok",
+   "note": "KC 5 22.4 § Coccidioidomycosis, m58915 | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d07487b547d3ffc9": {
    "verdict": "ok",
    "note": "author-built from § Fungal Diversity: \"Neurospora crassa is of particular use in genetics research because the spores produced by meiosis are kept inside the ascus in a row that…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -92548,6 +93318,14 @@
   "d2edaa6bcd8a2a45": {
    "verdict": "ok",
    "note": "author-built from § Prokaryotic versus Eukaryotic Gene Expression: \"As a result, the primary method to control what type of protein and how much of each protein is expressed in a prokaryotic cell is the regu…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d3035b053e7a5e3b": {
+   "verdict": "ok",
+   "note": "KC 2 6.4 § summary, m66462 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -95288,6 +96066,22 @@
     "result": "agrees"
    }
   },
+  "d921fcc84798e6ff": {
+   "verdict": "ok",
+   "note": "glossary recall: colinear (fs-id1360285) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d92222d1d31868ba": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1435300, key precentral gyrus; accept = figure label Pre-central gyrus. | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d92664c6ef50144e": {
    "verdict": "ok",
    "note": "Critical Thinking Question eip-63; model answer is the CNXML solution (eip-926/eip-142) verbatim, checkpoints are its four clauses. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -95416,6 +96210,14 @@
    "note": "re-read against m46549 CNXML and the page: resistance",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d99390b3d7907147": {
+   "verdict": "ok",
+   "note": "KC 5 25.3 § body Hornworts (fs-idp37789488), m66568 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -96343,6 +97145,14 @@
     "result": "agrees"
    }
   },
+  "dbb0bbd1ea1d2ca7": {
+   "verdict": "ok",
+   "note": "glossary recall: autoimmune response (fs-idp66472864) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "dbbb7715e2727e8a": {
    "verdict": "ok",
    "solved": {
@@ -96469,6 +97279,14 @@
     "by": "fable-blind-solver",
     "result": "adjudicated",
     "note": "Key stands: same figure and source solution; decreasing on (−∞,2); the window is not the domain."
+   }
+  },
+  "dbf45d0b9076836f": {
+   "verdict": "ok",
+   "note": "body cloze from § Pre-Cambrian Animal Life: \"While the validity of this claim is still under investigation, these primitive fossils appear to be small, one-centimeter long, sponge-like…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
    }
   },
   "dbf481166ca5c549": {
@@ -96980,6 +97798,14 @@
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "dd67a79a570d0753": {
+   "verdict": "ok",
+   "note": "Glossary fs-id1073343; body fs-id1531254. | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "dd6d1414ee00cb28": {
    "verdict": "ok",
    "note": "source exercise fs-id1167661568286 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -97062,6 +97888,14 @@
   "ddb5568b86ff235a": {
    "verdict": "ok",
    "note": "KC 3 14.2 § body DNA structure and base pairing (fs-id2317138), m66387 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "ddbc2687deb30aad": {
+   "verdict": "ok",
+   "note": "key-term recall: Gammaproteobacteria; printed in § Gammaproteobacteria: \"The most diverse class of gram-negative bacteria is Gammaproteobacteria , and it includes a number of human pathogens.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -97353,6 +98187,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver-B",
+    "result": "agrees"
+   }
+  },
+  "de57b3af5579ebb2": {
+   "verdict": "ok",
+   "note": "KC 3 14.2 § body DNA Packaging in Cells (fs-id2962722), m66387 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -97852,6 +98694,14 @@
   "df95b8237bf115e6": {
    "verdict": "ok"
   },
+  "df96f0d4415744a0": {
+   "verdict": "ok",
+   "note": "author-built from § Laboratory Biological Safety Levels: \"These microbes are typically exotic, are easily transmitted by inhalation, and cause infections for which there are no treatments or vaccin…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "df9783e409efdd6f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -98021,6 +98871,14 @@
    "note": "Keyed option 'condensation' matches CNXML solution fs-idm40512354 = A (m66438 Review Q3, ethyl ethanoate). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "dfe751f2be86ac94": {
+   "verdict": "ok",
+   "note": "cloze fs-id1381419 'left and right suprarenal veins' (checker fixes applied) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -98380,6 +99238,14 @@
     "result": "agrees"
    }
   },
+  "e09b31040a9e5373": {
+   "verdict": "ok",
+   "note": "KC 5 21.3 § body Vaccines and Antiviral Drugs for Treatment (fs-idm24414432), m66537 — parent re-read against the module | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "e09b778c241ed5fe": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -98419,6 +99285,14 @@
   "e0ada89ed6f18f72": {
    "verdict": "ok",
    "note": "KC 1 1.3 § Helminths, m58783 | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "e0b02db63df1a568": {
+   "verdict": "ok",
+   "note": "author-built from § summary: \"The former is associated with infectious mononucleosis and Burkitt lymphoma, and the latter can cause serious congenital infections as well…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -100322,6 +101196,14 @@
    "verdict": "ok",
    "note": "CNXML fs-idm3674368/fs-idm58621312 solution transcribed verbatim as model answer. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "e4e10fb37220f6b9": {
+   "verdict": "ok",
+   "note": "Glossary textin, term 'above-ground biomass' (fs-idm142038672). Prompt is the glossary meaning verbatim; answer matches the glossary term, accept 'aboveground biomass' — the module itself prints the unhyphenated spelling twice (fs-idm103544816) alongside the hyphenated glossary form. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "e4e4a05bfe54751a": {
    "verdict": "ok",
    "note": "Section exercise fs-id1165137447334: k=x^2*y=9*2=18, so y=18/x^2. Verified with node arithmetic; matches CNXML solution. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -100887,6 +101769,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "e61a7dc9e1e1ea7e": {
+   "verdict": "ok",
+   "note": "glossary recall: nonrandom mating (fs-idp35596080) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -102536,6 +103426,14 @@
   },
   "ea81d24ea3421756": {
    "verdict": "ok"
+  },
+  "ea84b3f65087c468": {
+   "verdict": "ok",
+   "note": "body cloze from § Phototrophic Bacteria: \"Purple nonsulfur bacteria are similar to purple sulfur bacteria, except that they use hydrogen rather than hydrogen sulfide for oxidation.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "ea8b483ef76d4229": {
    "verdict": "ok",
@@ -104464,6 +105362,14 @@
     "result": "agrees"
    }
   },
+  "eee6b151c46575ef": {
+   "verdict": "ok",
+   "note": "KC 2 8.2 § glossary photoact (fs-idm196081584), m66474 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "eee850893cd6ae1b": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -105226,6 +106132,14 @@
     "result": "agrees"
    }
   },
+  "f0ee4b9cb51d71ea": {
+   "verdict": "ok",
+   "note": "Glossary recall, m46687 definition fs-id2349525; body bolds hypoparathyroidism in fs-id1475434. Accept adds 'hypo-parathyroidism' and 'parathyroid hormone deficiency' (fs-id1475434: 'parathyroid hormone deficiency, called hypoparathyroidism'). | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f0f20bd9587ab264": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -105252,6 +106166,14 @@
   },
   "f0f80e3dabc2248c": {
    "verdict": "ok"
+  },
+  "f0fe039e78378601": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1613476 leakage channel; prompt built from body para fs-id1241528 (opens and closes at random, intrinsic switching rate, contributes to resting transmembrane voltage), prints neither gated nor leak; accept non-gated channel|nongated channel (grader-checked) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "f0ff3cdc4df9f2c9": {
    "verdict": "ok",
@@ -111105,6 +112027,14 @@
     "result": "agrees"
    }
   },
+  "fdc92667856efd9a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "fdd5a73b8b1eca0c": {
    "verdict": "ok",
    "note": "m66407 fs-idm61080288 — model answer is the CNXML solution verbatim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -111687,6 +112617,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
+  "ff180cf7abbc4ecc": {
+   "verdict": "ok",
+   "note": "KC 4 18.2 § body Sympatric Speciation (fs-idm74920656), m66520 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
