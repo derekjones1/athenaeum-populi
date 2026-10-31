@@ -74,7 +74,10 @@ checker fixes and twice pushed back correctly on a parent ruling. Hence:
   wrote a 5 MB page), rewrite JSON with `ensure_ascii=False` and the
   file's own indent, strip a matched attribute rather than drop its line,
   and name files explicitly rather than rely on a glob. A file several
-  agents edit is changed with the Edit tool, never rewritten whole.
+  agents edit is changed with the Edit tool, never rewritten whole. Say so
+  in every ruling that has an author append a decisions entry: the 24.5
+  author rewrote `reconciliation-decisions.json` through `json.dumps` and the
+  parent had to diff it and restore its final byte *(chapter 24)*.
 
 ## 1. Before the wave
 

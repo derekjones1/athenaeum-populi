@@ -950,6 +950,27 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     erratum: 2632,
     reason: 'the source distractor "lower esophageal sphincter" is a defensible second answer to "Which structure is located where the esophagus penetrates the diaphragm?" — the module m46511\'s own fs-id2101903 says "Surrounding this sphincter is the muscular diaphragm"; the page prints "laryngopharynx" in its place (fs-id1707702 puts it in the pharynx, its inferior border connecting to the esophagus, far above the diaphragm); key "esophageal hiatus" unchanged',
   },
+  {
+    page: 'content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/04-protein-metabolism.md',
+    exercise: 'fs-id1863134',
+    kind: 'options',
+    erratum: 2674,
+    reason: 'the source distractor "converted to acetyl CoA" is a second true answer to "If an amino acid is not used to create new proteins, it can be ________." — the module m46493\'s own fs-id2864299 says amino acids are transported "to be converted into fats or acetyl CoA and used in the Krebs cycle", and its Critical Thinking solution fs-id1387774 says they "are broken down into pyruvate, acetyl CoA, or intermediates of the Krebs cycle"; the page prints "stored in the pancreas" in its place (fs-id2508882: "the body has no capacity or mechanism for their storage"); key "converted to glucose or ketones" unchanged',
+  },
+  {
+    page: 'content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/07-nutrition-and-diet.md',
+    exercise: 'fs-id3085772',
+    kind: 'options',
+    erratum: 2676,
+    reason: 'the source distractor "improper bone development" is a second true answer to "A deficiency in vitamin A can result in ________." — the module m46467\'s own Fat-soluble Vitamins table (tbl-ch25_03) gives vitamin A the Function "Eye and bone development, immune function"; the page prints "beriberi" in its place (the module\'s Water-soluble Vitamins table tbl-ch25_04 ties beriberi to thiamine deficiency); key "improper eye development or sight" unchanged',
+  },
+  {
+    page: 'content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/04-protein-metabolism.md',
+    exercise: 'fs-id2058342',
+    kind: 'options',
+    erratum: 2675,
+    reason: 'the source distractor "supply energy for the cell" is a second true answer to "Amino acids are needed to ________." — the module m46493\'s own fs-id3342803 says "Amino acids can also be used as a source of energy" and "amino acids can serve as a source of energy production through the Krebs cycle"; the page prints "activate trypsinogen" in its place (fs-id1265347 gives that to enterokinase, which "binds to trypsinogen and converts it into its active form, trypsin"); key "build new proteins" unchanged',
+  },
 ]);
 
 /* ---- source side ---------------------------------------------------------- */

@@ -98,7 +98,18 @@ const filesWarnAt = 0.9;
 // every page of the book — is the thing to shrink if this trips again.
 // Measured at completion (September 3, 2026; 47 biology chapters, 600 HTML
 // documents): 254.3 MiB of HTML, under the projection; the cap stayed at 350.
-const maxTotalHtmlBytes = 350 * 1024 * 1024;
+//
+// Tripped October 31, 2026 on the Anatomy and Physiology chapter 24 commit,
+// as docs/subjects/anatomy-physiology.md "Build budgets" predicted: 940 HTML
+// documents, 353.5 MiB. The book's 173 pages (144 sections, 24 landings, 4
+// knowledge checks, cover) hold 51 MiB, ~301 KiB mean. Remaining: 28
+// sections, 4 landings, 2 knowledge checks (~34 documents), each adding
+// ~1.1 KiB of sidebar to every page of the book (~37 KiB per page at
+// completion) — ~207 pages × ~340 KiB ≈ 69 MiB for the finished book, so
+// ~372 MiB projected at corpus completion. 450 MiB keeps ~21% headroom over
+// that, the margin the earlier ratchets kept. The sidebar is still the lever
+// if a later book trips this again.
+const maxTotalHtmlBytes = 450 * 1024 * 1024;
 const maxPageBytes = 1.5 * 1024 * 1024;
 const maxPageElements = 35_000;
 // Duplicated non-content markup, as an ABSOLUTE mean per page.

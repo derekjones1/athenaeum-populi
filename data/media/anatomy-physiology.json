@@ -10384,6 +10384,558 @@
       "alt": "This image shows the Taenia Coli, haustra and epiploic appendages, which are parts of the large intestine.",
       "caption": ""
     },
+    "2500_NEW_6-4-13": {
+      "source": "media/2500_NEW_6-4-13.jpg",
+      "sourceSha256": "4f3a55ee55d38f8b38550d7b8e783404809fa889b74abd74e87c69388b16a66a",
+      "module": "m46458",
+      "kind": "photo",
+      "width": 2288,
+      "height": 1050,
+      "variants": [
+        {
+          "width": 800,
+          "height": 367,
+          "file": "2500_NEW_6-4-13-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 734,
+          "file": "2500_NEW_6-4-13-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photo shows a woman working out at a gym.",
+      "caption": "Metabolism is the sum of all energy-requiring and energy-consuming processes of the body. Many factors contribute to overall metabolism, including lean muscle mass, the amount and quality of food consumed, and the physical demands placed on the human body. (credit: \"tableatny\"/flickr.com)"
+    },
+    "2501_The_Structure_of_ATP_Molecules": {
+      "source": "media/2501_The_Structure_of_ATP_Molecules.jpg",
+      "sourceSha256": "5971fa5ca87b4027c5a958310c441acadc810641f3b8059afd2c9823760d269d",
+      "module": "m46489",
+      "kind": "photo",
+      "width": 1962,
+      "height": 1541,
+      "variants": [
+        {
+          "width": 800,
+          "height": 628,
+          "file": "2501_The_Structure_of_ATP_Molecules-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1256,
+          "file": "2501_The_Structure_of_ATP_Molecules-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the chemical structure of adenosine triphosphate, and how different reactions add or remove phosphate groups.",
+      "caption": "Adenosine triphosphate (ATP) is the energy molecule of the cell. During catabolic reactions, ATP is created and energy is stored until needed during anabolic reactions."
+    },
+    "2502_Catabolic_Reactions": {
+      "source": "media/2502_Catabolic_Reactions.jpg",
+      "sourceSha256": "bebc94d3aa32a4c0eb95d25664039317282b52323c4475584230fefe035ee5e5",
+      "module": "m46489",
+      "kind": "photo",
+      "width": 1905,
+      "height": 1751,
+      "variants": [
+        {
+          "width": 800,
+          "height": 735,
+          "file": "2502_Catabolic_Reactions-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1470,
+          "file": "2502_Catabolic_Reactions-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This flowchart shows how food is modified into lipids, carbohydrates, and protein, and the various catabolic reactions which convert food into energy.",
+      "caption": "During catabolic reactions, proteins are broken down into amino acids, lipids are broken down into fatty acids, and polysaccharides are broken down into monosaccharides. These building blocks are then used for the synthesis of molecules in anabolic reactions."
+    },
+    "2503_Cellular_Respiration": {
+      "source": "media/2503_Cellular_Respiration.jpg",
+      "sourceSha256": "e3bf20f96122fba319fb33568a8b6b62fcddb628c7295188c9d9c3dc4a48f435",
+      "module": "m46451",
+      "kind": "photo",
+      "width": 1020,
+      "height": 1139,
+      "variants": [
+        {
+          "width": 800,
+          "height": 893,
+          "file": "2503_Cellular_Respiration-800.webp"
+        },
+        {
+          "width": 1020,
+          "height": 1139,
+          "file": "2503_Cellular_Respiration-1020.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the different pathways of cellular respiration. The pathways shown are glycolysis, the pyruvic acid cycle, the Krebs cycle, and oxidative phosphorylation.",
+      "caption": "Cellular respiration oxidizes glucose molecules through glycolysis, the Krebs cycle, and oxidative phosphorylation to produce ATP."
+    },
+    "2504_Glycosis_Overview": {
+      "source": "media/2504_Glycosis_Overview.jpg",
+      "sourceSha256": "c9b9f8857234253eb0e11377bb9ee6d9253e49a3329199f8b3e223c31498196d",
+      "module": "m46451",
+      "kind": "photo",
+      "width": 1932,
+      "height": 2788,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1154,
+          "file": "2504_Glycosis_Overview-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2309,
+          "file": "2504_Glycosis_Overview-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This flowchart shows the different steps in glycolysis in detail. The top panel shows the energy-consuming phase, the middle panel shows the coupling of phosphorylation with oxidation, and the bottom panel shows the energy-releasing phase.",
+      "caption": "During the energy-consuming phase of glycolysis, two ATPs are consumed, transferring two phosphates to the glucose molecule. The glucose molecule then splits into two three-carbon compounds, each containing a phosphate. During the second phase, an additional phosphate is added to each of the three-carbon compounds. The energy for this endergonic reaction is provided by the removal (oxidation) of two electrons from each three-carbon compound. During the energy-releasing phase, the phosphates are removed from both three-carbon compounds and used to produce four ATP molecules."
+    },
+    "2505_Aerobic_Versus_Anaerobic_Respiration": {
+      "source": "media/2505_Aerobic_Versus_Anaerobic_Respiration.jpg",
+      "sourceSha256": "f557cb4a72ce47e856d2f24a29789d2bcf5265064746dbbf5f1807ab2847278c",
+      "module": "m46451",
+      "kind": "photo",
+      "width": 2105,
+      "height": 3072,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1167,
+          "file": "2505_Aerobic_Versus_Anaerobic_Respiration-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2335,
+          "file": "2505_Aerobic_Versus_Anaerobic_Respiration-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This flowchart shows the processes of fermentation and aerobic respiration. The top image shows the energy consuming phase of glycolysis. This branches into aerobic respiration on the left and fermentation on the right.",
+      "caption": "The process of fermentation converts glucose into two lactate molecules in the absence of oxygen or within erythrocytes that lack mitochondria. During fermentation, glucose is oxidized into two pyruvate molecules."
+    },
+    "2507_The_Krebs_Cycle": {
+      "source": "media/2507_The_Krebs_Cycle.jpg",
+      "sourceSha256": "6af5b05d39062d31d6a9bfd792c07d55be5cb84aaf673fb917fe62e6369cd067",
+      "module": "m46451",
+      "kind": "photo",
+      "width": 1963,
+      "height": 2513,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1024,
+          "file": "2507_The_Krebs_Cycle-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2048,
+          "file": "2507_The_Krebs_Cycle-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top panel of this figure shows the transformation of pyruvate to acetyl-CoA, and the bottom panel shows the steps in Krebs cycle.",
+      "caption": "During the Krebs cycle, each pyruvate that is generated by glycolysis is converted into a two-carbon acetyl CoA molecule. The acetyl CoA is systematically processed through the cycle and produces high-energy NADH, FADH 2 , and ATP molecules."
+    },
+    "2508_The_Electron_Transport_Chain": {
+      "source": "media/2508_The_Electron_Transport_Chain.jpg",
+      "sourceSha256": "1ecfc890d078e1ccc1abe2153b7133579e26679cc81395d2b4804f32361fbcb3",
+      "module": "m46451",
+      "kind": "photo",
+      "width": 1975,
+      "height": 1358,
+      "variants": [
+        {
+          "width": 800,
+          "height": 550,
+          "file": "2508_The_Electron_Transport_Chain-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1100,
+          "file": "2508_The_Electron_Transport_Chain-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the mitochondrial membrane with proton pumps and ATP synthase embedded in the membrane. Arrows show the direction of flow of proteins and electrons across the membrane.",
+      "caption": "The electron transport chain is a series of electron carriers and ion pumps that are used to pump H + ions out of the inner mitochondrial matrix."
+    },
+    "2509_Carbohydrate_Metabolism": {
+      "source": "media/2509_Carbohydrate_Metabolism.jpg",
+      "sourceSha256": "89626073d3adfb54c8eb27e41212e6f1719e5cb8dfd0a75de61b95c12a8daf13",
+      "module": "m46451",
+      "kind": "photo",
+      "width": 1793,
+      "height": 2795,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1247,
+          "file": "2509_Carbohydrate_Metabolism-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2494,
+          "file": "2509_Carbohydrate_Metabolism-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the different steps in which carbohydrates are metabolized and lists the number of ATP molecules produced in each step. The different steps shown are glycolysis, transformation of pyruvate to acetyl-CoA, the Krebs cycle, and the electron transport chain.",
+      "caption": "Carbohydrate metabolism involves glycolysis, the Krebs cycle, and the electron transport chain."
+    },
+    "2510_Gluconeogenesis": {
+      "source": "media/2510_Gluconeogenesis.jpg",
+      "sourceSha256": "2bd3a0e079e486ef04b68cba7d7613ba69a0248d40766e1448905a0cae7a41c6",
+      "module": "m46451",
+      "kind": "photo",
+      "width": 2033,
+      "height": 3166,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1246,
+          "file": "2510_Gluconeogenesis-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2491,
+          "file": "2510_Gluconeogenesis-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the different steps in gluconeogenesis, where pyruvate is converted to glucose.",
+      "caption": "Gluconeogenesis is the synthesis of glucose from pyruvate, lactate, glycerol, alanine, or glutamate."
+    },
+    "2511_A_Triglyceride_Molecule_-a_Is_Broken_Down_Into_Monoglycerides_-b": {
+      "source": "media/2511_A_Triglyceride_Molecule_(a)_Is_Broken_Down_Into_Monoglycerides_(b).jpg",
+      "sourceSha256": "71cd69877156bd7fb84eab6f776f7cf873573aab61dc7651e4bcff09baa865a6",
+      "module": "m46462",
+      "kind": "photo",
+      "width": 1596,
+      "height": 1771,
+      "variants": [
+        {
+          "width": 800,
+          "height": 887,
+          "file": "2511_A_Triglyceride_Molecule_-a_Is_Broken_Down_Into_Monoglycerides_-b-800.webp"
+        },
+        {
+          "width": 1596,
+          "height": 1771,
+          "file": "2511_A_Triglyceride_Molecule_-a_Is_Broken_Down_Into_Monoglycerides_-b-1596.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top image shows the chemical formula for a triglyceride, and the bottom panel shows the formula for a monoglyceride.",
+      "caption": "A triglyceride molecule (a) breaks down into a monoglyceride (b)."
+    },
+    "2512_Chylomicrons_Contain_Triglycerides_Cholesterol_Molecules_and_Other_Lipids": {
+      "source": "media/2512_Chylomicrons_Contain_Triglycerides_Cholesterol_Molecules_and_Other_Lipids.jpg",
+      "sourceSha256": "ef7b068ff25b9127fa9d56782da85b4162da087f65aead1104a6f9dd33ddd073",
+      "module": "m46462",
+      "kind": "photo",
+      "width": 1228,
+      "height": 981,
+      "variants": [
+        {
+          "width": 800,
+          "height": 639,
+          "file": "2512_Chylomicrons_Contain_Triglycerides_Cholesterol_Molecules_and_Other_Lipids-800.webp"
+        },
+        {
+          "width": 1228,
+          "height": 981,
+          "file": "2512_Chylomicrons_Contain_Triglycerides_Cholesterol_Molecules_and_Other_Lipids-1228.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a chylomicron containing triglycerides and cholesterol molecules as well as other lipids.",
+      "caption": "Chylomicrons contain triglycerides, cholesterol molecules, and other apolipoproteins (protein molecules). They function to carry these water-insoluble molecules from the intestine, through the lymphatic system, and into the bloodstream, which carries the lipids to adipose tissue for storage."
+    },
+    "2513_The_Breakdown_of_Fatty_Acids": {
+      "source": "media/2513_The_Breakdown_of_Fatty_Acids.jpg",
+      "sourceSha256": "f61e0329de126b35e496c9c0a7807609c1fdd723b5f368beb8bf2259048cfafb",
+      "module": "m46462",
+      "kind": "photo",
+      "width": 2249,
+      "height": 3954,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1406,
+          "file": "2513_The_Breakdown_of_Fatty_Acids-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2813,
+          "file": "2513_The_Breakdown_of_Fatty_Acids-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the reactions that break down fatty acids. The top panel shows the conversion of fatty acids into carnitine. The bottom panel shows the conversion of carnitine into acetyl-CoA.",
+      "caption": "During fatty acid oxidation, triglycerides can be broken down into acetyl CoA molecules and used for energy when glucose levels are low."
+    },
+    "2514_Ketogenesis": {
+      "source": "media/2514_Ketogenesis.jpg",
+      "sourceSha256": "22799592e8598bf23a40f5ffabfcc64c525ba24ce99001e3bcc8c136c473b780",
+      "module": "m46462",
+      "kind": "photo",
+      "width": 2236,
+      "height": 640,
+      "variants": [
+        {
+          "width": 800,
+          "height": 229,
+          "file": "2514_Ketogenesis-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 458,
+          "file": "2514_Ketogenesis-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This pathway shows the production of beta-hydroxybutyrate from acetyl-CoA.",
+      "caption": "Excess acetyl CoA is diverted from the Krebs cycle to the ketogenesis pathway. This reaction occurs in the mitochondria of liver cells. The result is the production of β-hydroxybutyrate, the primary ketone body found in the blood."
+    },
+    "2515_Ketone_Oxidation": {
+      "source": "media/2515_Ketone_Oxidation.jpg",
+      "sourceSha256": "2b0f19e4b673328ac49376fa1a12e157c56ca22086284f43cea0b3da72d7c765",
+      "module": "m46462",
+      "kind": "photo",
+      "width": 1915,
+      "height": 1646,
+      "variants": [
+        {
+          "width": 800,
+          "height": 687,
+          "file": "2515_Ketone_Oxidation-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1375,
+          "file": "2515_Ketone_Oxidation-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the reactions in which ketone is oxidized to acetyl-CoA.",
+      "caption": "When glucose is limited, ketone bodies can be oxidized to produce acetyl CoA to be used in the Krebs cycle to generate energy."
+    },
+    "2516_Lipid_Metabolism": {
+      "source": "media/2516_Lipid_Metabolism.jpg",
+      "sourceSha256": "58407d648910140c47496ffca0c99bd1c06dfa597be4dd022a3cc2e6088dd92b",
+      "module": "m46462",
+      "kind": "photo",
+      "width": 2222,
+      "height": 2267,
+      "variants": [
+        {
+          "width": 800,
+          "height": 816,
+          "file": "2516_Lipid_Metabolism-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1632,
+          "file": "2516_Lipid_Metabolism-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the different reactions that take place for lipid metabolism.",
+      "caption": "Lipids may follow one of several pathways during metabolism. Glycerol and fatty acids follow different pathways."
+    },
+    "2517_Protein-Digesting_EnzymesN": {
+      "source": "media/2517_Protein-Digesting_EnzymesN.jpg",
+      "sourceSha256": "81d145c36b90d434b47e5223c7ba5bcf256dc49be7b7f19466abdb0de92c795d",
+      "module": "m46493",
+      "kind": "photo",
+      "width": 1996,
+      "height": 1588,
+      "variants": [
+        {
+          "width": 800,
+          "height": 636,
+          "file": "2517_Protein-Digesting_EnzymesN-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1273,
+          "file": "2517_Protein-Digesting_EnzymesN-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel shows the main organs of the digestive system, and the right panel shows a magnified view of the intestine. Text callouts indicate the different protein digesting enzymes produced in different organs.",
+      "caption": "Enzymes in the stomach and small intestine break down proteins into amino acids. HCl in the stomach aids in proteolysis, and hormones secreted by intestinal cells direct the digestive processes."
+    },
+    "2518_Urea_Cycle": {
+      "source": "media/2518_Urea_Cycle.jpg",
+      "sourceSha256": "21720e99bc2efdbf557c59db0c46f2da6d69c69ffe71af639b70b2e3e79e25fd",
+      "module": "m46493",
+      "kind": "photo",
+      "width": 1944,
+      "height": 2668,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1098,
+          "file": "2518_Urea_Cycle-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2196,
+          "file": "2518_Urea_Cycle-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the reactions of the urea cycle and the organelles in which they take place.",
+      "caption": "Nitrogen is transaminated, creating ammonia and intermediates of the Krebs cycle. Ammonia is processed in the urea cycle to produce urea that is eliminated through the kidneys."
+    },
+    "2519_Energy_From_Amino_Acids": {
+      "source": "media/2519_Energy_From_Amino_Acids.jpg",
+      "sourceSha256": "edb9afc7a2d716c8c0c8c16fd717cb6d914aa4cc95c54753ba5783e77ce8ef76",
+      "module": "m46493",
+      "kind": "photo",
+      "width": 2087,
+      "height": 2148,
+      "variants": [
+        {
+          "width": 800,
+          "height": 823,
+          "file": "2519_Energy_From_Amino_Acids-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1646,
+          "file": "2519_Energy_From_Amino_Acids-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the different reactions in which products of carbohydrate breakdown are converted into different amino acids.",
+      "caption": "Amino acids can be broken down into precursors for glycolysis or the Krebs cycle. Amino acids (in bold) can enter the cycle through more than one pathway."
+    },
+    "2520_Catabolic_and_Anabolic_Pathways": {
+      "source": "media/2520_Catabolic_and_Anabolic_Pathways.jpg",
+      "sourceSha256": "54f3130ba6e7314334fa870f74a6592612b1e9b776b518047707fd56400e9811",
+      "module": "m46493",
+      "kind": "photo",
+      "width": 2224,
+      "height": 2807,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1009,
+          "file": "2520_Catabolic_and_Anabolic_Pathways-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2019,
+          "file": "2520_Catabolic_and_Anabolic_Pathways-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the different metabolic pathways, and how they are connected.",
+      "caption": "Nutrients follow a complex pathway from ingestion through anabolism and catabolism to energy production."
+    },
+    "2521_The_Absorptive_Stage": {
+      "source": "media/2521_The_Absorptive_Stage.jpg",
+      "sourceSha256": "fd6efa9b5efe9fedc4abbcb174578b4da46aebb946269e8181dff045d760122c",
+      "module": "m46466",
+      "kind": "photo",
+      "width": 2217,
+      "height": 2765,
+      "variants": [
+        {
+          "width": 800,
+          "height": 997,
+          "file": "2521_The_Absorptive_Stage-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1995,
+          "file": "2521_The_Absorptive_Stage-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows how nutrients are absorbed by the body. The diagram shows digested nutrients entering the blood stream and being absorbed by liver cells, muscle cells, and adipose cells. Underneath each panel, text details the process taking place in each cell type.",
+      "caption": "During the absorptive state, the body digests food and absorbs the nutrients."
+    },
+    "2522_The_Postabsorptive_Stage": {
+      "source": "media/2522_The_Postabsorptive_Stage.jpg",
+      "sourceSha256": "90cfb3e546c0e69027903673771cc6829ae156170eb6c4bbde6313ab8efd3587",
+      "module": "m46466",
+      "kind": "photo",
+      "width": 2122,
+      "height": 2774,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1046,
+          "file": "2522_The_Postabsorptive_Stage-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2091,
+          "file": "2522_The_Postabsorptive_Stage-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the postabsorptive stage where no nutrients enter the blood stream from the digestive system and its effects of liver cells, muscle cells, and adipose cells.",
+      "caption": "During the postabsorptive state, the body must rely on stored glycogen for energy."
+    },
+    "2523_The_Hypothalamus_Controls_Thermoregulation": {
+      "source": "media/2523_The Hypothalamus_Controls_Thermoregulation.jpg",
+      "sourceSha256": "bd2bc022d5145d5af77ba457b447597446ffd7c322616b46c32e7f1c6a8ff162",
+      "module": "m46456",
+      "kind": "photo",
+      "width": 1794,
+      "height": 3022,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1347,
+          "file": "2523_The_Hypothalamus_Controls_Thermoregulation-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2695,
+          "file": "2523_The_Hypothalamus_Controls_Thermoregulation-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the pathways in which body temperature is controlled by the hypothalamus.",
+      "caption": "The hypothalamus controls thermoregulation."
+    },
+    "2524_MyPlate": {
+      "source": "media/2524_MyPlate.jpg",
+      "sourceSha256": "2ca1a47f60d8de837ad119e3a87794206bbadd962a5dfb1c0ee7bf540b9bc372",
+      "module": "m46467",
+      "kind": "photo",
+      "width": 1092,
+      "height": 871,
+      "variants": [
+        {
+          "width": 800,
+          "height": 638,
+          "file": "2524_MyPlate-800.webp"
+        },
+        {
+          "width": 1092,
+          "height": 871,
+          "file": "2524_MyPlate-1092.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The figure shows a plate with different food groups assigned different portion sizes.",
+      "caption": "The U.S. Department of Agriculture developed food guidelines called MyPlate to help demonstrate how to maintain a healthy lifestyle."
+    },
     "400_Micrograph_of_Cervical_Tissue_updated": {
       "source": "media/400_Micrograph_of_Cervical_Tissue_updated.jpg",
       "sourceSha256": "b7f46b81d1081b06b8cf36b8864bb46298a4013a60a9c7416c1c181220cc33f6",

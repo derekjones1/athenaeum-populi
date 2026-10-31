@@ -181,8 +181,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 28,
       "upstreamSections": 169,
-      "localChapters": 23,
-      "mappedSections": 137,
+      "localChapters": 24,
+      "mappedSections": 144,
       "units": [
         {
           "index": 1,
@@ -1484,6 +1484,69 @@
       "moduleId": "m46501",
       "sourceTitle": "Chemical Digestion and Absorption: A Closer Look",
       "moduleSha256": "c827edc205a763b102b57124dd3b64428967f6a2ecb1987a26621d09d99d1776"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/01-overview-of-metabolic-reactions.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "24.1",
+      "moduleId": "m46489",
+      "sourceTitle": "Overview of Metabolic Reactions",
+      "moduleSha256": "dcd8273bc1f9486e48485c55a71f16b8692c33b7d2e5a8d0e8a09ba0b41c3c87"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/02-carbohydrate-metabolism.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "24.2",
+      "moduleId": "m46451",
+      "sourceTitle": "Carbohydrate Metabolism",
+      "moduleSha256": "3e553c8d57005f3884dd53c546980bd3bbe3096504103f49b6c5baa67c5f0740"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/03-lipid-metabolism.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "24.3",
+      "moduleId": "m46462",
+      "sourceTitle": "Lipid Metabolism",
+      "moduleSha256": "232caf5d73b4479d2fb5a3b554d0f5b6f82001e97e6cfe11e030abe052ac8291"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/04-protein-metabolism.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "24.4",
+      "moduleId": "m46493",
+      "sourceTitle": "Protein Metabolism",
+      "moduleSha256": "9f465cc55a7c7fe8722847449021141e0ea7f641c30b0b54647172a285e26482"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/05-metabolic-states-of-the-body.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "24.5",
+      "moduleId": "m46466",
+      "sourceTitle": "Metabolic States of the Body",
+      "moduleSha256": "c70cac8fce953a473c7edee7540039b6ddee29f3b8d9cc03d51e18bc5e2ab3d0"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/06-energy-and-heat-balance.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "24.6",
+      "moduleId": "m46456",
+      "sourceTitle": "Energy and Heat Balance",
+      "moduleSha256": "a15ae693377454b46d333ae000471ccbcc71f8826074824e87f3bd6973550bd6"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/07-nutrition-and-diet.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "24.7",
+      "moduleId": "m46467",
+      "sourceTitle": "Nutrition and Diet",
+      "moduleSha256": "e219de06262ba0a04f81f143676026aff15e3032debcda3738b6865dfb3168aa"
     },
     {
       "localPath": "content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md",

@@ -1841,6 +1841,112 @@ none in 23.4 and 23.7, one in 23.3 and 23.6, and five in 23.5, and no hash
 moved after the claim fixes except the two items above. The checkers and
 solver each read keys once before answering (a process slip, re-derived).
 
+## Chapter 24 (October 31, 2026)
+
+*Metabolism and Nutrition*, the third chapter of Unit 5, *Energy,
+Maintenance, and Environmental Exchange*: seven sections (m46489, m46451,
+m46462, m46493, m46466, m46456, m46467; intro m46458), run three days after
+chapter 23 from `docs/briefs/anatomy-physiology/run.md`, with seven Opus
+authors launched together, seven Opus checkers, one Opus claim pass, one Opus
+alt-errata verifier, a fresh Fable blind solver, and Sonnet Clerks for the
+landing page, run facts, pins, errata draft, and this entry. It has 24
+vendored images (2500–2524, no 2506). The source carries 43 exercises (29
+Review, 14 Critical Thinking, 0 Interactive Link Questions), the first
+chapter with none: 24.2 prints three Interactive Link notes and none ends in
+a question, so each is a callout and nothing is graded. The pages carry 75
+graded items solved blind. Errata 2672–2729 (58 entries, 27
+Reviewed-not-errata bullets besides). The run is committed at close-out.
+
+Seven rulings were reserved before the claim pass (2672–2678). The 24.5
+Starvation paragraph's "(see Figure 24.2)" points at the structure of ATP,
+which draws no ketone; the page points at its own postabsorptive figure (2672).
+The 24.3 Critical Thinking stem "a person with diabetes that has breath smells
+like alcohol" was corrected in place with a Source note (2673). Two Review
+Questions had a distractor the module's own words make true, so their options
+were replaced and the deviations recorded: 24.4 "converted to acetyl CoA"
+(2674) and, from the claim pass, 24.4 "supply energy for the cell" (2675) and
+24.7 vitamin A "improper bone development" (2676). Two stems were corrected
+from claims: the 24.5 type II diabetes stem, "insulin is produced but is
+nonfunctional" (2677), and the 24.6 fever stem, "chills to help cool" (2678).
+The 24.6 stem was done twice: the first correction named shivering and asked
+for "other" mechanisms, which clashed with the item's own options, and the
+parent reworded it to "chills help raise it … What mechanisms…". The 24.3
+checker's third defect, to remove the stem Source note, was overruled by the
+chapter 16 stem rule. The splash photograph (2500) is a pole vaulter, not the
+"woman working out at a gym" of its source alt; the page's alt is written from
+the image (2681). Section 24.2 is in the September 8 table (fermentation, with
+pyruvate as the final electron acceptor); the table row stands and no erratum
+was filed.
+
+The solve read 75 graded items: 71 agreed on the first read, 1 disagreed and 3
+were flagged, all four on items the parent's watch list already named. After
+the claim fixes six items re-hashed and were re-solved fresh (the 24.3 HMG CoA
+item, 24.4 RQ2, the 24.6 fever stem, 24.7 RQ1, the BMI recall, and the
+place-setting cloze), then the fever stem once more after the parent reworded it. The final compare was 72 agree, 1
+disagreed (24.7 "lean meats", adjudicated: the key stands on "the processing
+of proteins demands the most energy"; the solver's "vegetables" rests on a
+guideline the module does not tie to weight loss) and 2 flags adjudicated
+(24.6 crowded room, keyed "radiation" on the module's radiator sentence, with
+"convection" defensible only by analogy; and the 24.6 item keyed "all of the
+above", whose "erection of the hairs" the page never teaches), 0 unresolved.
+Both are Reviewed-not-errata lines.
+
+The claim pass found 23 findings (about 227k tokens), all accepted after the
+parent read the evidence (2683–2696 and the landing and stem items above).
+Among them: Addison's disease is primary adrenal insufficiency (F2, 2683); the
+glossary's "high-energy molecule needed for glycolysis" for NADH and FADH₂
+(F1, 2684); phosphofructokinase named for the glucose-6-phosphate to
+fructose-6-phosphate step (F3, 2685); the glycolysis equation, which gains
+"+ 2ADP" on its right side (F7, 2686); GDP listed as an electron receptor
+(F5, 2687); "succinyl CoA dehydrogenase" for succinyl CoA synthetase (F4,
+2688); the brain "can use only glucose" (F6, 2689); carbon dioxide named as
+the cause of diabetic ketoacidosis (F8, 2695); the glossary's HMG CoA "first
+step" against the ketogenesis figure, which draws acetoacetyl CoA first (F9,
+2696); the glossary's sodium bicarbonate as an "anion" (F10, 2704); the
+Summary's ketones fuelling the heart "so that the brain can still use glucose"
+(F11, 2717); the metabolic rate definition (F14, 2721); the remaining 10
+percent of daily expenditure, which is the thermic effect of food (F15,
+2722); fat, not carbohydrate, as the nutrient that needs the least energy to
+process (F17, 2723); the discontinued SuperTracker, whose cloze was replaced
+(F21, 2724); the 1990s obesity sentence (F19, 2725); BMI 18.5 (F18, 2726);
+"Vitamins are not stored" (F20, 2727); and, on the landing, "5 percent per
+year" for the metabolic rate of aging, restated as about 2 percent per decade
+after 30 (F22, 2679), and the splash caption's "energy-requiring and
+energy-consuming" (F23, 2680). 2522's muscle-panel glucagon text and 24.1's
+RQ2 "weight gain" (the net-energy paragraph muddles its accounting; the key
+rests on anabolism as building) go to Reviewed-not-errata.
+
+The alt-errata verifier gave 42 verdicts: 39 confirmed, 1 rejected (the 2517
+longdesc nit), 2 uncertain and not filed (2505's NADH/NAD⁺ arrow and 2523's
+blue-to-red flow). Confirmed source alt defects: the pyruvic acid cycle of
+2503 (2690), the "flow of proteins" of 2508 (2691), 2513's "fatty acids into
+carnitine" (2697), 2519's reversed arrows (2709), and 2522's "its effects of
+liver cells" (2718). Artwork: FAD⁺ in 2508 (2692) and twice in 2513 (2698),
+the glucose CH₂OH numbered 4 in 2510 (2693), 2513's second dehydrogenation
+drawn with FAD, its carbon lettered "O", and its acetyl CoA ending in CH₂
+(2699–2701), "CO2⁻" in 2514 (2702), the urea cycle's "transcarbamolase",
+"Arginosuccinate", "Argininosuccinase lyase", and uncharged NH₃ (2705–2708),
+"Ketose oxidation" (2710), the "(in bold)" caption of 2519 (2711),
+"Glyconeogenesis" and the swapped arrow colors and ketogenic-to-pyruvate join
+of 2520 (2712–2714), and 2522's two "3b" steps and step 3a text (2719, 2720).
+The text typos are the unclosed parenthesis in 24.2 (2694), the lowercase
+"beta (β)-hydroxybutyrate" (2703), "acetoacyl CoA" (2715), the Summary's "urea
+acid cycle" (2716), the intro's "tend have … then" (2682), "regular part"
+(2728), and the comma after "K" (2729). The 2501 "hexagon" adenine and the
+2523 alt that lacked the loops' meaning were the page's own errors, caught by
+checkers, and are Reviewed-not-errata.
+
+Lessons. A chapter with no Interactive Link Questions still needs its footers
+to say so in each of the seven modules. A first correction to a stem has to be
+read against the item's own options (the fever stem), and the re-solve is
+where that surfaces. Dated tools in a source (SuperTracker) are claim
+candidates and any item keyed on them has to be replaced. A key that appears
+in a body sentence the claim pass later corrects needs its stem re-read; the
+HMG CoA item was re-stemmed as a cloze on the cholesterol-precursor sentence
+because the parent's suggested sentence printed RQ5's key. The build tripped the
+350 MiB total-HTML budget (353.5 MiB, 940 documents) as the playbook predicted,
+and the cap went to 450 MiB with the measurement in `tools/build/audit-build.mjs`.
+
 ## Chapter 21 (October 26, 2026)
 
 *The Lymphatic and Immune System*, the fourth and last chapter of Unit 4,

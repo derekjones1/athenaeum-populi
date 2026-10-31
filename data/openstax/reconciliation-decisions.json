@@ -5424,6 +5424,317 @@
       "status": "correct-local-source-defect",
       "errataEntry": 2652,
       "rationale": "The glossary says pancreatic amylase \"completes the chemical digestion of carbohydrates\", but the module's Digestive Enzymes table gives its products as \"alpha-Dextrins, disaccharides (maltose), trisaccharides (maltotriose)\", which the brush border enzymes then break down into monosaccharides, and m46512 says the microvilli-bound enzymes \"finish digesting carbohydrates and proteins\". The page's Key terms bullet reads \"continues the chemical digestion of carbohydrates\" with a visible Source note and a footer sentence. Evidenced by the chapter 23 prose claim pass (F17), October 28, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/03-lipid-metabolism.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46462",
+      "sourceElementIds": [
+        "fs-id2936242",
+        "fs-id1362126",
+        "fs-id2637766"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2673,
+      "rationale": "The second Critical Thinking Question reads \"If a person with diabetes that has breath smells like alcohol, what could this mean?\", its words out of order (the PDF, Critical Thinking Question 35 on p. 1136, prints the same). The page reads \"If a person with diabetes has breath that smells like alcohol, what could this mean?\" with a visible Source note and a footer sentence; the model answer (fs-id799310) is unchanged. Found by the 24.3 author and ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/06-energy-and-heat-balance.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46456",
+      "sourceElementIds": [
+        "fs-id2105111",
+        "fs-id2189300"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2678,
+      "rationale": "The second Review Question's stem reads \"Fever increases the body temperature and can induce chills to help cool the temperature back down.\" Chills (shivering) generate heat and raise the temperature toward the fever's raised set point; the module's own fs-id2165326 says \"the hypothalamus can initiate shivering to generate heat\". The page's stem reads \"Fever increases the body temperature, and chills help raise it to the new set point. What mechanisms are in place to regulate the body temperature?\" (the source's \"other\" is dropped because shivering is itself one of the options) with a visible Source note and a footer sentence; options and key (D, all of the above) unchanged. Evidenced by the chapter 24 prose claim pass (F16) and ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/05-metabolic-states-of-the-body.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46466",
+      "sourceElementIds": [
+        "fs-id2383123",
+        "fs-id3049735",
+        "fs-id2476867",
+        "fs-id2638457"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2677,
+      "rationale": "The first Critical Thinking Question says \"In type II diabetes, insulin is produced but is nonfunctional\", and its solution that \"the insulin does not function properly\", but type II diabetes is insulin resistance: the hormone is produced and the target cells respond poorly to it, as m46432 (Section 25.2) says (\"because of insulin resistance (type II diabetes mellitus)\") and the book's endocrine pancreas module says (\"In type 2 diabetes, cells become resistant to the effects of insulin\"). The page's stem reads \"In type II diabetes, insulin is produced, but the body's cells do not respond to it normally (insulin resistance).\" with the rest unchanged, and the model answer reads \"insulin does not act properly on the cells\", with a visible Source note under the item and a footer sentence. Evidenced by the chapter 24 prose claim pass (F12), ruled by the parent, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/04-protein-metabolism.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46493",
+      "sourceElementIds": [
+        "fs-id1863134",
+        "fs-id2391971",
+        "fs-id3335704",
+        "fs-id2068669"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2674,
+      "rationale": "The source distractor \"converted to acetyl CoA\" is also a true answer to \"If an amino acid is not used to create new proteins, it can be ________.\": m46493 says amino acids are transported \"to be converted into fats or acetyl CoA and used in the Krebs cycle\" (fs-id2864299), and its Critical Thinking solution says they \"are broken down into pyruvate, acetyl CoA, or intermediates of the Krebs cycle\" (fs-id1387774). The key, \"converted to glucose or ketones\" (fs-id2508882), is the better answer and stays. The page prints \"stored in the pancreas\" as option A (fs-id2508882: \"the body has no capacity or mechanism for their storage\"), with key B and the other options and their order unchanged, a visible Source note under the item, and a footer sentence; the keys gate's disclosed-deviation list records it as kind options. Found by the 24.4 author and ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/04-protein-metabolism.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46493",
+      "sourceElementIds": [
+        "fs-id2058342",
+        "fs-id1626773",
+        "fs-id1492841",
+        "fs-id2467594"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2675,
+      "rationale": "The source distractor \"supply energy for the cell\" is also a true answer to \"Amino acids are needed to ________.\": m46493 says \"Amino acids can also be used as a source of energy\" and \"amino acids can serve as a source of energy production through the Krebs cycle\" (fs-id3342803), and m46489 says amino acids can be \"broken down further for the production of ATP\" (fs-id1438861). The key, \"build new proteins\", is the better answer and stays. The page prints \"activate trypsinogen\" as option C (fs-id1265347 gives that to enterokinase, which \"binds to trypsinogen and converts it into its active form, trypsin\"), with key A and the other options and their order unchanged, a visible Source note under the item, and a footer sentence; the keys gate's disclosed-deviation list records it as kind options. Evidenced by the chapter 24 prose claim pass (the true-distractor finding) and the blind solver's flag, ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/07-nutrition-and-diet.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46467",
+      "sourceElementIds": [
+        "fs-id3085772",
+        "fs-id1336740",
+        "fs-id2066655",
+        "fs-id2043992"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2676,
+      "rationale": "The source distractor \"improper bone development\" is also a true answer to \"A deficiency in vitamin A can result in ________.\": the module's Fat-soluble Vitamins table (tbl-ch25_03) gives vitamin A the Function \"Eye and bone development, immune function\". The key, \"improper eye development or sight\", is the better answer and stays. The page prints \"beriberi\" as option A (the Water-soluble Vitamins table, tbl-ch25_04, ties beriberi to thiamine deficiency), with key C and the other options and their order unchanged, a visible Source note under the item, and a footer sentence; the keys gate's disclosed-deviation list records it as kind options. Evidenced by the chapter 24 prose claim pass (the true-distractor finding) and the blind solver's flag, ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/_index.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46458",
+      "sourceElementIds": [
+        "fs-id1613685"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2679,
+      "rationale": "The introduction says \"Aging is known to decrease the metabolic rate by as much as 5 percent per year\", which would halve the metabolic rate in about 14 years; the book's own figure, in the Aging and the Body's Metabolic Rate box of m46451 (fs-id1744205), is that the metabolic rate \"decreases nearly 2 percent per decade after age 30\". The page reads \"about 2 percent per decade after age 30\"; the landing page has no Source note, and its Changes clause names the correction. Evidenced by the chapter 24 prose claim pass (F22) and applied by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/_index.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46458",
+      "sourceElementIds": [
+        "fig-ch25_00_01"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2680,
+      "rationale": "The splash caption defines metabolism as \"the sum of all energy-requiring and energy-consuming processes of the body\", which names anabolism twice and omits catabolism; m46489 defines it as \"the sum of all of the chemical reactions that are involved in catabolism and anabolism\" (fs-id2922738). The page's caption reads \"energy-releasing and energy-consuming\"; the landing page has no Source note, and its Changes clause names the correction. Evidenced by the chapter 24 prose claim pass (F23) and applied by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/01-overview-of-metabolic-reactions.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46489",
+      "sourceElementIds": [
+        "fs-id2637703"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2683,
+      "rationale": "The Disorders of the Metabolic Processes box calls adrenal insufficiency of either cause \"Addison's disease\", including the case from \"decreased ACTH availability from the pituitary\"; Addison's disease is primary adrenal insufficiency (damage to the adrenal glands themselves, with high ACTH), and the pituitary cause is secondary adrenal insufficiency. m46060 (fs-id1271098) has Addison's disease stimulating \"excess amounts of adrenocorticotropic hormone (ACTH)\", and the NIDDK page on adrenal insufficiency names the adrenal damage as Addison's and the pituitary cause as secondary. The page names Addison's disease as the adrenal glands' own failure and the pituitary cause as secondary adrenal insufficiency, with a visible Source note after the paragraph and a footer clause. Evidenced by the chapter 24 prose claim pass (F2), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/01-overview-of-metabolic-reactions.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46489",
+      "sourceElementIds": [
+        "fs-id1931867",
+        "fs-id1846546",
+        "fs-id2174878",
+        "fs-id2006747"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2684,
+      "rationale": "The glossary calls NADH and FADH2 each a \"high-energy molecule needed for glycolysis\", but glycolysis produces NADH from NAD+ and FADH2 plays no part in glycolysis (it is made in the Krebs cycle); m46451 says \"The NADH that is produced in this process will be used later to produce ATP in the mitochondria\" (fs-id1539388) and \"each citrate molecule will produce one ATP, one FADH2, and three NADH\" (fs-id1336395). The page's Key terms bullets give NADH as produced by glycolysis and the Krebs cycle and FADH2 as produced in the Krebs cycle, each carrying electrons to the electron transport chain, with a visible Source note under the Key terms list and a footer clause. Evidenced by the chapter 24 prose claim pass (F1), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/02-carbohydrate-metabolism.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46451",
+      "sourceElementIds": [
+        "fs-id2122726"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2685,
+      "rationale": "The glycolysis paragraph says \"Under the action of phosphofructokinase, glucose-6-phosphate is converted into fructose-6-phosphate\", but the module itself names glucose-6-phosphate isomerase for that conversion and phosphofructokinase-1 for the next step, adding the second phosphate to fructose-6-phosphate (fs-id1984458). The page moves the enzyme to the second step (\"Glucose-6-phosphate is converted into fructose-6-phosphate. At this point, under the action of phosphofructokinase, a second ATP donates its phosphate group\"), with a visible Source note under the paragraph and a footer clause. Evidenced by the chapter 24 prose claim pass (F3), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/02-carbohydrate-metabolism.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46451",
+      "sourceElementIds": [
+        "eip-959"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2686,
+      "rationale": "The glycolysis equation reads \"Glucose + 2ATP + 2NAD+ + 4ADP + 2Pi -> 2 Pyruvate + 4ATP + 2NADH + 2H+\", which does not balance: the two ATP consumed in the energy-consuming phase become two ADP that the right side omits, as the module's own Glycolysis Overview figure (2 ATP's Consumed, each ATP becoming ADP) and caption show. The page adds 2ADP to the right side, with a visible Source note under the equation and a footer clause. Evidenced by the chapter 24 prose claim pass (F7), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/02-carbohydrate-metabolism.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46451",
+      "sourceElementIds": [
+        "fs-id3068407"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2687,
+      "rationale": "The Aerobic Respiration paragraph lists GDP with NAD+ and FAD as \"the receptors\" of the electrons transferred from pyruvate, but GDP accepts a phosphate group, not electrons: the module's Krebs cycle paragraph (fs-id1599268) gives every electron transfer to NAD+ or FAD and has GTP simply formed, and succinyl-CoA synthetase catalyzes the cycle's one substrate-level phosphorylation (Huang and Fraser, Acta Crystallographica D 2016;72:912-921, doi:10.1107/S2059798316010044). The page says the receptors are NAD+ and FAD and that GDP is phosphorylated to GTP, with a visible Source note under the paragraph and a footer clause. Evidenced by the chapter 24 prose claim pass (F5), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/02-carbohydrate-metabolism.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46451",
+      "sourceElementIds": [
+        "fs-id1599268"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2688,
+      "rationale": "The Krebs cycle paragraph names \"succinyl CoA dehydrogenase\" as the enzyme that converts succinyl CoA into succinate and forms GTP, but the step is not an oxidation and the enzyme is succinyl-CoA synthetase, which \"catalyzes the only step in the citric acid cycle that provides substrate-level phosphorylation\" (Huang and Fraser, Acta Crystallographica D 2016;72:912-921, doi:10.1107/S2059798316010044); the module's own Krebs Cycle figure draws no electron carrier at that step. The page names the enzyme succinyl CoA synthetase, with a visible Source note under the paragraph citing the paper and a footer clause. Evidenced by the chapter 24 prose claim pass (F4), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/02-carbohydrate-metabolism.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46451",
+      "sourceElementIds": [
+        "fs-id1805372"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2689,
+      "rationale": "The Gluconeogenesis paragraph says \"Certain key organs, including the brain, can use only glucose as an energy source\", but the brain uses ketone bodies when glucose is limited: m46462 says organs \"classically thought to be dependent solely on glucose, such as the brain, can actually use ketones as an alternative energy source\" (fs-id2459241) and \"Ketones oxidize to produce energy for the brain\" (fs-id2383123). The page says they \"rely chiefly on glucose as an energy source\", with a visible Source note under the paragraph and a footer clause. Evidenced by the chapter 24 prose claim pass (F6), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/03-lipid-metabolism.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46462",
+      "sourceElementIds": [
+        "fs-id2459241"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2695,
+      "rationale": "The Ketone Body Oxidation paragraph says \"The carbon dioxide produced can acidify the blood, leading to diabetic ketoacidosis\", but ketoacidosis is caused by the ketone bodies themselves: m46409 (fs-id1417161) says the acetyl groups \"combine to form ketone bodies, acetoacetic acid, beta-hydroxybutyric acid, and acetone, all of which increase the acidity of the blood\", and m46413 (fs-id2102407) says \"Metabolic acidosis can also arise from diabetic ketoacidosis, wherein an excess of ketone bodies are present in the blood\". The page says the ketone bodies themselves are acids and can acidify the blood, with a visible Source note under the paragraph citing Sections 26.4 and 26.5 and a footer clause. Evidenced by the chapter 24 prose claim pass (F8), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/03-lipid-metabolism.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46462",
+      "sourceElementIds": [
+        "fs-id2882695",
+        "fs-id1503279"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2696,
+      "rationale": "The glossary says hydroxymethylglutaryl CoA (HMG CoA) is \"created in the first step of the creation of ketone bodies from acetyl CoA\", but the module's own Ketogenesis figure draws acetyl CoA x 2 into acetoacetyl CoA first and HMG CoA from it in the second step. The page's Key terms bullet says the molecule is created in the second step, from acetoacetyl CoA and a third acetyl CoA, with a visible Source note under the Key terms list and a footer clause; the author recall item that had inherited \"first step\" was re-stemmed as a cloze on the body sentence, and the body paragraph (fs-id1539903) is transcribed as printed. Evidenced by the chapter 24 prose claim pass (F9) and the alt-errata verifier's reading of the figure, ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/04-protein-metabolism.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46493",
+      "sourceElementIds": [
+        "fs-id1551579",
+        "fs-id1958496"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2704,
+      "rationale": "The glossary defines sodium bicarbonate as an \"anion released into the small intestine\", but sodium bicarbonate (NaHCO3) is a salt and its anion is bicarbonate, HCO3-, as m46409 says (\"Bicarbonate ions, HCO3-, found in the filtrate, are essential to the bicarbonate buffer system\", fs-id2023995). The page's Key terms bullet reads \"salt whose bicarbonate anion is released into the small intestine\", with a visible Source note under the Key terms list and a footer clause. Evidenced by the chapter 24 prose claim pass (F10; low severity), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/05-metabolic-states-of-the-body.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46466",
+      "sourceElementIds": [
+        "fs-id1413275"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2717,
+      "rationale": "The Summary says that after a few days ketone bodies \"serve as the preferential fuel source for the heart and other organs, so that the brain can still use glucose\", but in prolonged starvation the brain itself uses ketone bodies: the module's Starvation paragraph says \"the body uses ketones to satisfy the energy needs of the brain and other glucose-dependent organs, and to maintain proteins in the cells\" (fs-id2802463), and m46462 says the brain \"can actually use ketones as an alternative energy source\" (fs-id2459241). The page says they \"become a major fuel source for the heart, the brain, and other organs, which spares glucose and protein\", with a visible Source note under the Summary and a footer clause. Evidenced by the chapter 24 prose claim pass (F11), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/06-energy-and-heat-balance.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46456",
+      "sourceElementIds": [
+        "fs-id1964163",
+        "fs-id1571300",
+        "fs-id1539766"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2721,
+      "rationale": "The Metabolic Rate paragraph and the glossary define the metabolic rate as \"the amount of energy consumed minus the amount of energy expended by the body\", which is the energy balance; the metabolic rate is the rate of energy expenditure, as the same paragraph's basal metabolic rate sentence (\"the amount of daily energy expended by humans at rest\") and m46489 (\"The metabolic rate measures the amount of energy used to maintain life\", fs-id1749660) treat it. The page defines it as the amount of energy expended by the body per unit of time in both places, with a visible Source note under the paragraph, another under the Key terms list, and a footer clause. Evidenced by the chapter 24 prose claim pass (F14), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/06-energy-and-heat-balance.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46456",
+      "sourceElementIds": [
+        "fs-id1964163"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2722,
+      "rationale": "The Metabolic Rate paragraph says the remaining 10 percent of daily energy expenditure \"is necessary for body thermoregulation or temperature control\", but the standard third component, about 10 percent, is the thermic effect of food, the energy spent digesting and processing a meal (Westerterp, Diet induced thermogenesis, Nutrition & Metabolism 2004;1:5, doi:10.1186/1743-7075-1-5: daily energy expenditure consists of basal metabolic rate, diet-induced thermogenesis, and the energy cost of physical activity). The page says the remaining 10 percent \"is used to digest, absorb, and process food (the thermic effect of food)\", under the Source note shared with erratum 2721 and a footer clause. Evidenced by the chapter 24 prose claim pass (F15), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/07-nutrition-and-diet.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46467",
+      "sourceElementIds": [
+        "fs-id1479318",
+        "fs-id2002032"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2723,
+      "rationale": "The Food and Metabolism paragraph says \"the breakdown of carbohydrates requires the least amount of energy\" and the Summary says \"More energy is required to break down fats and proteins than carbohydrates\", but the energy spent processing food is lowest for fats, intermediate for carbohydrates, and highest for proteins (Westerterp, Nutrition & Metabolism 2004;1:5, doi:10.1186/1743-7075-1-5: the sequence \"alcohol, protein, carbohydrate, and fat\", lower \"at a high fat consumption\"). The page says the processing of fats requires the least energy and, in the Summary, that more energy is required to break down proteins than carbohydrates or fats, each with a visible Source note and a footer clause. Evidenced by the chapter 24 prose claim pass (F17), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/07-nutrition-and-diet.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46467",
+      "sourceElementIds": [
+        "fs-id1443825"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2724,
+      "rationale": "The MyPlate paragraph says ChooseMyPlate.gov \"also includes the SuperTracker\", a web-based application that the USDA Food and Nutrition Service discontinued on June 30, 2018 (USDA, SuperTracker Discontinuation, archived at webharvest.gov). The page puts the sentence in the past tense (\"It also included the SuperTracker ... until USDA discontinued it in 2018\"), with a visible Source note after the paragraph and a footer clause; the author cloze keyed \"SuperTracker\" was replaced. Evidenced by the chapter 24 prose claim pass (F21), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/07-nutrition-and-diet.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46467",
+      "sourceElementIds": [
+        "fs-id1741734"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2725,
+      "rationale": "The Metabolism and Obesity box says \"In the 1990s, most states reported that less than 10 percent of their populations was obese, and the state with the highest rate reported that only 15 percent\", but the CDC's Behavioral Risk Factor Surveillance System data for 1990 show ten states under 10 percent and none at 15 percent or more (CDC, Obesity Trends Among U.S. Adults; the claim pass quoted the sentence through a search relay, so the wording is at medium confidence and the count is not in doubt). The page gives that for 1990, with a visible Source note after the box and a footer clause. Evidenced by the chapter 24 prose claim pass (F19), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/07-nutrition-and-diet.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46467",
+      "sourceElementIds": [
+        "fs-id2150873",
+        "fs-id2869950",
+        "fs-id2009238"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2726,
+      "rationale": "The Obesity paragraph and the glossary give the healthy BMI range as \"between 18 and 24.9\" and \"18-24.9\", but the lower bound is 18.5 and a BMI of 18.0 to 18.4 is underweight (CDC, Adult BMI Categories: \"Underweight, Less than 18.5\"; \"Healthy Weight, 18.5 to less than 25\"). The page prints 18.5 in both places, each with a visible Source note, and its author recall item for body mass index prints \"18.5-24.9\" in its stem; a footer clause names the change. Evidenced by the chapter 24 prose claim pass (F18), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/07-nutrition-and-diet.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46467",
+      "sourceElementIds": [
+        "fs-id2530743"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2727,
+      "rationale": "The Summary says \"Vitamins are not stored in the body\", but the module's own body says fat-soluble vitamins \"can accumulate in the lipids stored in the body\" (fs-id1612761) and that only the water-soluble vitamins are \"not stored in the body\" (fs-id1813672). The page says \"Water-soluble vitamins are not stored in the body, so they must be obtained regularly from the diet\", with a visible Source note under the Summary and a footer clause. Evidenced by the chapter 24 prose claim pass (F20), ruled by the orchestrator, October 31, 2026."
     }
   ]
 }

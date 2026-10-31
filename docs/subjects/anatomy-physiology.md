@@ -13,7 +13,7 @@ all three before authoring a section (chapter-run authors: the sections
 `docs/briefs/anatomy-physiology/author.md` names).
 
 Written from the **September 22, 2026 scan** of the pinned source; chapter
-1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, chapter 5 on October 14, 2026, chapter 6 on October 15, 2026, chapters 7, 8, and 9 on October 16, 2026, chapters 10 and 11 on October 18, 2026, chapter 12 on October 20, 2026, chapters 13, 14, and 15 on October 21, 2026, and chapters 16 and 17 on October 24, 2026, chapter 18 on October 25, 2026, and chapter 19 the same day, and chapters 20 and 21 on October 26, 2026, and chapter 22 (Unit 5's first) on October 27, 2026, and chapter 23 on October 28, 2026.
+1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, chapter 5 on October 14, 2026, chapter 6 on October 15, 2026, chapters 7, 8, and 9 on October 16, 2026, chapters 10 and 11 on October 18, 2026, chapter 12 on October 20, 2026, chapters 13, 14, and 15 on October 21, 2026, and chapters 16 and 17 on October 24, 2026, chapter 18 on October 25, 2026, and chapter 19 the same day, and chapters 20 and 21 on October 26, 2026, and chapter 22 (Unit 5's first) on October 27, 2026, and chapter 23 on October 28, 2026, and chapter 24 on October 31, 2026.
 A rule tagged *(pilot)* or *(chapter N)* came from authoring that chapter;
 the per-chapter record is `docs/history/anatomy-physiology.md`. A
 correction that is not folded back into a rule will be made again.
@@ -191,7 +191,12 @@ may vary." (every one in chapter 23, the only chapter so printed) is the
 same case as a key that answers a different question: it stands as a prompt
 even when the module text would fix the answer, with a one-line Source note
 under its callout, a footer clause, and one erratum per module *(ruled
-October 28, 2026, chapter 23; errata 2625–2630)*.
+October 28, 2026, chapter 23; errata 2625–2630)*. A chapter whose modules print NO
+`interactive-exercise` set at all (chapter 24, the first): a note that ends
+in no question is still an **Interactive Link** callout, its footer says what
+4.3's does (no note ends in a question and the section has no Interactive
+Link Questions, so 0 are graded and 0 stand as prompts), and a module with
+no note says so in its footer too *(chapter 24)*.
 
 ### 2. Feature boxes
 
@@ -497,6 +502,21 @@ Lessons — baseline rules this book's vocabulary makes easy to break:
   Thinking STEMS as well as the Review keys**: 23.2's first Critical Thinking
   stem placed segmentation and slow propulsion in the small intestine, and
   the author dropped those members *(chapter 23)*.
+- **A corrected source STEM is re-read against its own options before it
+  lands**: 24.6's fever stem, corrected to "chills (shivering) help raise it
+  … What other mechanisms…", made option a ("shivering") and the key ("all
+  of the above") clash with the stem; the fresh re-solver caught it and the
+  parent dropped the parenthetical and the "other" *(chapter 24)*.
+- **A source Review Question whose stem paraphrases a module paragraph's
+  premise is screened against that paragraph before the wave**: 24.1's
+  "anabolic reactions exceed catabolic" is keyed "weight gain" while the
+  module's net-energy paragraph supports "weight loss" for the same case;
+  the key stood on anabolism-as-building, but the hint had pointed at the
+  distractor's paragraph *(chapter 24)*.
+- **A true distractor confirmed by both the claim pass and the solver is an
+  `options` deviation, two on one chapter (24.4 "supply energy for the
+  cell", 24.7 "improper bone development" — the module's own table makes
+  it true)** *(chapter 24)*.
 - **A claim pass's "parent's call" direction on an internal contradiction is
   settled by the standard account plus the module's glossary and the
   printed edition together**: 23.1's submucosa "loose" (pinned body) vs
@@ -571,6 +591,9 @@ at the book root) and shifts +1 when that check lands.
 The build-size caps live in `tools/build/audit-build.mjs`. Measured at the
 September 22, 2026 scan, the site was ~306 MB against the 350 MiB total-HTML
 cap and this book projects ~60 MB more, so **the cap will trip mid-book** —
-raise it deliberately with a measurement when it does, never in advance. The
+raise it deliberately with a measurement when it does, never in advance. It tripped on the chapter 24 commit (October 31, 2026: 940 documents,
+353.5 MiB; this book 51 MiB over 173 pages) and the cap went to 450 MiB,
+~21% over the ~372 MiB projected at corpus completion — the measurement is
+in the audit file's comment. The
 20,000-file Cloudflare ceiling is not at risk (~1,700 files for this book on
 top of ~4,800, measured at the same scan).

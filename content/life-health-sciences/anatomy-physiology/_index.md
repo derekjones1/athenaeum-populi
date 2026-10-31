@@ -139,13 +139,15 @@ reproduction, development, and inheritance.
   stomach, the small and large intestines, the accessory organs in digestion
   (the liver, pancreas, and gallbladder), and chemical digestion and
   absorption.
+- **Metabolism and Nutrition** — an overview of metabolic reactions,
+  carbohydrate, lipid, and protein metabolism, the metabolic states of the
+  body, energy and heat balance, and nutrition and diet.
 
 ## Planned contents
 
 The remaining chapters of Anatomy and Physiology 2e's six units will
 appear in this order:
 
-- **Unit 5: Energy, Maintenance, and Environmental Exchange** — Metabolism and Nutrition; The
-  Urinary System; Fluid, Electrolyte, and Acid-Base Balance.
+- **Unit 5: Energy, Maintenance, and Environmental Exchange** — The Urinary System; Fluid, Electrolyte, and Acid-Base Balance.
 - **Unit 6: Human Development and the Continuity of Life** — The Reproductive
   System; Development and Inheritance.

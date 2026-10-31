@@ -1260,6 +1260,10 @@
    "verdict": "ok",
    "note": "CT fs-id1583106; model answer = source solution fs-id1367999 verbatim; checks are its clauses. Hint reworded by role (second paragraph of Basic Functions), checker D1."
   },
+  "0291c831c3b0899f": {
+   "verdict": "ok",
+   "note": "CT1 fs-id2469597, model = solution fs-id1387774 verbatim"
+  },
   "0291f0394650d85e": {
    "verdict": "ok",
    "note": "body cloze from § Antibody Classes: \"The constant region of an antibody molecule determines its class, or isotype .\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -2580,6 +2584,10 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "053ae4791512ea81": {
+   "verdict": "ok",
+   "note": "CT2 fs-id2802608: hint re-pointed to a position in 24.3 (no rubric word); model answer = source solution"
+  },
   "053ca53e027d543f": {
    "verdict": "ok",
    "note": "author-built from § introduction: \"There are different types of grafts depending on the source of the new tissue or organ.\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -3869,6 +3877,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "08235fdfb394c214": {
+   "verdict": "ok",
+   "note": "m46456 fs-id2870043 solution fs-id2022151 verbatim"
   },
   "082510a5712679f7": {
    "verdict": "ok",
@@ -6546,6 +6558,10 @@
     "result": "agrees"
    }
   },
+  "0e0bab55af721016": {
+   "verdict": "ok",
+   "note": "source fs-id1627049 solution verbatim as model answer"
+  },
   "0e0d799e287dc8d3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -7696,6 +7712,14 @@
   "1075f32279d30eb6": {
    "verdict": "ok",
    "note": "KC 2 6.7 § body introduction, hypocalcemia paragraph (fs-id1858508), m46295"
+  },
+  "108105010d7101e9": {
+   "verdict": "ok",
+   "note": "cloze fs-id2124252 'Ketones serve as fuel in times of prolonged starvation…'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "1088d94c1f4a32bd": {
    "verdict": "ok",
@@ -9190,6 +9214,14 @@
     "result": "agrees"
    }
   },
+  "13e5cd10415671a8": {
+   "verdict": "ok",
+   "note": "cloze fs-id2383123 'beta (β)-hydroxybutyrate is oxidized to acetoacetate and NADH is released'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "13ea12f0a7a57101": {
    "verdict": "ok",
    "note": "source exercise fs-id1266974 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
@@ -10524,6 +10556,14 @@
    "verdict": "ok",
    "note": "KC 3 12.3 § The Function of Nervous Tissue (thermoreceptor paragraph), m46531"
   },
+  "169b28ec7d983d2d": {
+   "verdict": "ok",
+   "note": "cloze of fs-id1318518 first sentence; key anabolism printed verbatim in the parenthesis",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "16a0a6b18506fcbf": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -11609,6 +11649,14 @@
   "18ba1b65ea2042e6": {
    "verdict": "ok",
    "note": "source Critical Thinking fs-id1167660142838, unkeyed upstream; per run-facts C3, selfcheck; model answer joins the Gonorrhea section's co-infection sentence and the Micro Connection box's resistance sentence | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "18c7926e576341eb": {
+   "verdict": "ok",
+   "note": "select-the-term from fs-id2674976; distractors module terms, none true",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "18c8ea50c1b7cf08": {
    "verdict": "ok",
@@ -14327,6 +14375,14 @@
     "result": "agrees"
    }
   },
+  "1e851174b9047679": {
+   "verdict": "ok",
+   "note": "cloze of fs-id2802463 sentences 4-5; key fatty acids printed",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1e86f708bcd38d99": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -16236,6 +16292,14 @@
    "verdict": "ok",
    "note": "CT fs-id2410405: model answer is the source solution verbatim; rubric clauses cut from it"
   },
+  "22a30be052d66a1e": {
+   "verdict": "ok",
+   "note": "cloze fs-id2105166",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "22a458e5978c3aee": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -16341,6 +16405,14 @@
   },
   "23152123e29bf5fe": {
    "verdict": "ok"
+  },
+  "2317408fdfc5ded4": {
+   "verdict": "ok",
+   "note": "RQ5 fs-id2158787, key B acetyl CoA",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "231bf7830afd8b7a": {
    "verdict": "ok",
@@ -18733,6 +18805,14 @@
     "result": "agrees"
    }
   },
+  "287972448107f0e8": {
+   "verdict": "ok",
+   "note": "body cloze fs-id2189300 'It occurs primarily in the liver'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "287c6699cda6bab9": {
    "verdict": "ok",
    "note": "Glossary recall; answer matches glossary term fs-id1519661 'RNA editing'. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -19553,6 +19633,14 @@
     "result": "agrees"
    }
   },
+  "2a4e0b8948f25be5": {
+   "verdict": "ok",
+   "note": "source RQ fs-id1365095, options and order verbatim, source key D 'high; high; are low'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2a4e77f3f20aabf4": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -19607,6 +19695,14 @@
   },
   "2a713abfff316d3e": {
    "verdict": "ok"
+  },
+  "2a71f6dfc033c012": {
+   "verdict": "ok",
+   "note": "bins/items read against tbl-ch25_01 and tbl-ch25_02",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "2a7f308a64165655": {
    "verdict": "ok",
@@ -21041,6 +21137,14 @@
     "result": "agrees"
    }
   },
+  "2d980cd43b8df763": {
+   "verdict": "ok",
+   "note": "figure-keyed 2519: Arg/His/Gln/Pro/Glu box arrow -> alpha-Ketoglutarate",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2da8a2bea3855296": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -21817,6 +21921,14 @@
   "2f3353f6d864451b": {
    "verdict": "ok",
    "note": "Body CYU 'Why can chickenpox lead to shingles later in life?' stays selfcheck (the honest answer spans several sentences: latency in the dorsal ganglia, reactivation triggers, and the return trip along sensory nerves); rubric checkpoints trace to those three module clauses. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "2f36e1f8fcae3ede": {
+   "verdict": "ok",
+   "note": "sortbins line 237 (Sort each vitamin, named by the alternative name the vitamin): each member re-read against its table row",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "2f3851539790fd7e": {
    "verdict": "ok",
@@ -23606,6 +23718,14 @@
   "3364d5f58a7aa1e7": {
    "verdict": "ok"
   },
+  "3365900d04287890": {
+   "verdict": "ok",
+   "note": "RQ2 fs-id2058342 key A; option C replaced by \"activate trypsinogen\" per parent ruling (options, erratum 2675); fs-id1265347 gives the activation to enterokinase",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3369a747a7da4c3f": {
    "verdict": "ok",
    "note": "body cloze from § Clinical Uses of Monoclonal Antibodies: \"Mouse antibodies cannot be injected repeatedly into humans, because the immune system will recognize them as being foreign and will respond…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -24083,6 +24203,14 @@
     "result": "agrees"
    }
   },
+  "3489b9710d854f5f": {
+   "verdict": "ok",
+   "note": "figure-keyed 2519: Glucogenic box arrow -> Pyruvate molecules",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "348b0ea416e24d8e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -24102,6 +24230,14 @@
   "348ebb157df45873": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "3492dea4e25f27a2": {
+   "verdict": "ok",
+   "note": "RQ1 fs-id3085772 key C kept; option A replaced by \"beriberi\" (true distractor, DISCLOSED_DEVIATIONS options erratum 2676)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -25343,6 +25479,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "3744e43740e40ce1": {
+   "verdict": "ok",
+   "note": "CT2 fs-id2181977, model = solution fs-id1479835 verbatim"
   },
   "3745cee96c321f85": {
    "verdict": "ok",
@@ -27018,6 +27158,14 @@
     "result": "agrees"
    }
   },
+  "3b4e4dfc358fd297": {
+   "verdict": "ok",
+   "note": "glycogen: re-read against m46489 body sentence named in the ledger; key printed verbatim",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3b55c86150682141": {
    "verdict": "ok",
    "note": "KC 5 26.4 § table Plant Origin of Medicinal Compounds and Medical Applications (tab-ch26_04_02), m66575 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
@@ -27814,6 +27962,14 @@
   "3d1a8787ec7b468c": {
    "verdict": "ok",
    "note": "textin re-read against m46355 CNXML and page text; key \"peripheral vision\" — The medial walls of the two orbits are parallel to each other but each lateral w",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "3d1c797489d6e1fd": {
+   "verdict": "ok",
+   "note": "cloze fs-id1295393 first clause",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -28666,6 +28822,14 @@
   "3eef7a870e35470f": {
    "verdict": "ok",
    "note": "Body cloze fs-id1381644: '...travel through the cranial nerves—specifically, the trigeminal system.' Key cranial nerves.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "3eefaa256fcc2515": {
+   "verdict": "ok",
+   "note": "catabolic reaction: re-read against m46489 RQ solution / named sentence",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -32390,6 +32554,14 @@
     "result": "agrees"
    }
   },
+  "4700071679524cfa": {
+   "verdict": "ok",
+   "note": "RQ1 fs-id2041938 key D, options/order as CNXML",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4702691c7292af64": {
    "verdict": "ok",
    "note": "a1=3, a_n=-3*a_(n-1) for n=2..5, computed by loop: 3,-9,27,-81,243 (source Algebraic #27, printed solution matches). | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -32852,6 +33024,10 @@
   "4828992a2e5c4ce4": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "482e109814872f26": {
+   "verdict": "ok",
+   "note": "model answer read against m46489 solution or named paragraph"
   },
   "4833dbc157177712": {
    "verdict": "ok",
@@ -33388,6 +33564,14 @@
   "49524816dd51ab28": {
    "verdict": "ok",
    "note": "KC 1 4.3 § body Loose Connective Tissue (fs-id1139056), m46049",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "4954f4039a1dc6eb": {
+   "verdict": "ok",
+   "note": "m46456 fs-id1720962, source key B; body: hypothalamus is the thermostat, core temperature 36.5–37.5 °C (97.7–99.5 °F); C prints °F on the Celsius range",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -35747,6 +35931,14 @@
   },
   "4ea3acb348ba3ec0": {
    "verdict": "ok"
+  },
+  "4ea87b75bd4af4cb": {
+   "verdict": "ok",
+   "note": "glossary recall enterokinase (fs-id2044397); body fs-id1265347 prints it",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "4ea8838c260c04dd": {
    "verdict": "ok",
@@ -39813,6 +40005,14 @@
     "result": "agrees"
    }
   },
+  "57dcbf8225338948": {
+   "verdict": "ok",
+   "note": "author MC from fs-id1805372 'takes place primarily in the liver'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "57e22ebeb2131388": {
    "verdict": "ok",
    "note": "fs-id1638211 solution, chime->chyme"
@@ -40854,6 +41054,14 @@
   "5a22c12623231f43": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "5a265c3253670f9c": {
+   "verdict": "ok",
+   "note": "glossary recall BMI fs-id2869950; stem range corrected to 18.5–24.9 (claim F18)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -44197,6 +44405,14 @@
     "result": "agrees"
    }
   },
+  "61eb4b95de26ae45": {
+   "verdict": "ok",
+   "note": "author MC from fs-id1573463 'into the inner mitochondrial matrix, where they are metabolized by enzymes in a pathway called the Krebs cycle'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "61f13dbbd5ba572d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -44678,6 +44894,14 @@
   "635fea103722893c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "6362a9e39c3ddfd1": {
+   "verdict": "ok",
+   "note": "source fs-id1990553 key C; fig-ch25_02_06 tallies ETC 34 ATP",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -47743,6 +47967,14 @@
     "result": "agrees"
    }
   },
+  "6b5469540f3995eb": {
+   "verdict": "ok",
+   "note": "removing a phosphate group from ATP: re-read against m46489 RQ solution / named sentence",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6b549932f225828b": {
    "verdict": "ok",
    "note": "KC 5 28.6 § body Subphylum Crustacea (fs-idp97897024), m66399 — parent re-read against the module"
@@ -49074,6 +49306,14 @@
     "result": "agrees"
    }
   },
+  "6e7b8056d65e1b0d": {
+   "verdict": "ok",
+   "note": "textin urine: cloze of fs-id1813672 \"Excess water-soluble vitamins are excreted in the urine.\"; key printed in body only",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6e83f29fc9c64dd2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -49273,6 +49513,14 @@
   "6f1ada54306cf3d2": {
    "verdict": "ok",
    "note": "KC 7-12 (multiplechoice, line 33): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
+  "6f2020bf731400ca": {
+   "verdict": "ok",
+   "note": "40 percent: re-read against m46489 RQ solution / named sentence",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "6f2304bec62877d4": {
    "verdict": "ok",
@@ -51538,6 +51786,14 @@
    "verdict": "ok",
    "note": "A(50)=50*50=2500 sq ft (computed via node vertex k-value 2500); matches same CNXML solution. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "7431ebc188431061": {
+   "verdict": "ok",
+   "note": "amino acids: re-read against m46489 body sentence named in the ledger; key printed verbatim",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "74360c4fb36e5d24": {
    "verdict": "ok"
   },
@@ -51660,6 +51916,14 @@
     "result": "agrees"
    }
   },
+  "74895e813bdd4dae": {
+   "verdict": "ok",
+   "note": "source RQ fs-id1268237 verbatim, source key A 'glucagon and insulin'; module: insulin levels drop and glucagon is released as glucose falls",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "748a11ee19aa438a": {
    "verdict": "ok",
    "note": "KC 3 15.4 § Sympathomimetic Drugs, m46587",
@@ -51745,6 +52009,14 @@
   "74aceacb50611bb0": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "74ad32d70fdac7b3": {
+   "verdict": "ok",
+   "note": "hydrogen: re-read against m46489 body sentence named in the ledger; key printed verbatim",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -51877,6 +52149,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "74e393c1c093a500": {
+   "verdict": "ok",
+   "note": "textin line 172 (MyPyramid): re-read against the module sentence/glossary; key printed in body",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -52682,6 +52962,14 @@
     "result": "agrees"
    }
   },
+  "76ba1879b4b3e96b": {
+   "verdict": "ok",
+   "note": "author-written from Metabolic Rate fs-id1964163: 'About 70 percent of all daily energy expenditure comes from the basic functions of the organs in the body'; distractors 20/10 (same paragraph), 60 (fs-id682405); after F15 the 10 percent is the thermic effect of food — options numeric only, key unaffected",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "76be003423e13645": {
    "verdict": "ok"
   },
@@ -53327,6 +53615,10 @@
     "result": "agrees"
    }
   },
+  "78025e97d041c7ec": {
+   "verdict": "ok",
+   "note": "CT1 fs-id2124307, model answer = solution fs-id3304696 verbatim"
+  },
   "7802d4cfe298c93c": {
    "verdict": "ok",
    "note": "source exercise fs-id1167663590104 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -53415,6 +53707,14 @@
     "result": "agrees"
    }
   },
+  "783470f42bf7d578": {
+   "verdict": "ok",
+   "note": "multiplechoice line 226 (phosphorous): re-read against the CNXML exercise; source options, order, key kept",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7838718159ab7b41": {
    "verdict": "ok",
    "note": "KC 4 21.1 § Larger Lymphatic Vessels, Trunks, and Ducts, m46563",
@@ -53442,6 +53742,14 @@
   "7840f2c19b480c5d": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "7847bdd7a1d48994": {
+   "verdict": "ok",
+   "note": "author MC from fs-id2402744: 'The peripheral tissues preferentially absorb glucose. The liver ... will not do so after a prolonged fast.' Distractors liver (explicitly excluded), pancreas, intestinal lining (module terms)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "784ae1b34213a8c5": {
    "verdict": "ok",
@@ -54551,6 +54859,14 @@
   "7a777eb29a3da15f": {
    "verdict": "ok",
    "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Test the equation for symmetry: $r=-2\\cos\\theta$. Which symm) | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "7a7d0dd1bb2119c9": {
+   "verdict": "ok",
+   "note": "sortbins line 250 (Sort each mineral under the group of minerals it belongs to.): each member re-read against its table row",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "7a8e97b24f2084c3": {
    "verdict": "ok",
@@ -56472,6 +56788,14 @@
     "result": "agrees"
    }
   },
+  "7ec727da9d2d1137": {
+   "verdict": "ok",
+   "note": "figure-keyed 2520: Certain Amino Acids box arrows to/from Krebs cycle",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7ece59991f34b01f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -56503,6 +56827,14 @@
   "7ee5f47acd4ca6c0": {
    "verdict": "ok",
    "note": "source exercise fs-id1167661429072 (unkeyed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "7ee9bd7013ca55b2": {
+   "verdict": "ok",
+   "note": "RQ1 fs-id1548558, key D 'all of the above', options/order verbatim",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -57548,6 +57880,14 @@
   "815d2c5d1d1ec64d": {
    "verdict": "ok"
   },
+  "81609b859a1c0764": {
+   "verdict": "ok",
+   "note": "multiplechoice line 215 (vitamin D): re-read against the CNXML exercise; source options, order, key kept",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "81648f14e7a40067": {
    "verdict": "ok",
    "note": "11.2 CYU selfcheck; Sep 23 2026 close-out: model answer and rubric trimmed to the module's printed rolling-circle and leading/lagging-strand sentences, with no unstated \"no lagging strand\" inference; hint names the Rolling Circle Replication paragraph and Elongation; model answer, rubric, and hint re-read against the module"
@@ -57910,6 +58250,14 @@
   "822b734ff5746e5e": {
    "verdict": "ok",
    "note": "KC 8 45.3 § body Examples of Logistic Growth (fs-idm32635216), m66690 — parent re-read against the module"
+  },
+  "822f920bb0b46a1e": {
+   "verdict": "ok",
+   "note": "glossary recall energy-consuming phase (fs-id1297521); body fs-id1618994 equates 'energy consuming (also called chemical priming)'; accept adds 'energy-consuming stage' (list fs-id3046631 item 1)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "8233444553772cca": {
    "verdict": "ok",
@@ -58654,6 +59002,14 @@
   "83d6323a855b9e59": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "83d7632d224ea4a9": {
+   "verdict": "ok",
+   "note": "cloze of fs-id2802463 first sentence; key survival mode printed in quotation marks",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -60594,6 +60950,14 @@
     "result": "agrees"
    }
   },
+  "885ee08d4fe0176d": {
+   "verdict": "ok",
+   "note": "accept beta added (grader-checked); moved below RQ1; cloze of fs-id2338996 second sentence (truncated after 'bloodstream'); key beta cells printed",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8862ba33748dccfd": {
    "verdict": "ok",
    "note": "CT fs-id1286153; model answer = solution fs-id1639522 verbatim; checks are its clauses."
@@ -60693,6 +61057,10 @@
   "8889d142daad591f": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "888b1de055750710": {
+   "verdict": "ok",
+   "note": "CT2 fs-id2936242, stem word order corrected per parent ruling (erratum 2673, decisions entry); model answer = solution fs-id799310 verbatim"
   },
   "888b72eca54cc58f": {
    "verdict": "ok"
@@ -63788,6 +64156,14 @@
     "result": "agrees"
    }
   },
+  "8fbabe91837c454a": {
+   "verdict": "ok",
+   "note": "author MC from fig-ch25_03_04 caption 'This reaction occurs in the mitochondria of liver cells'; distractors gallbladder, intestinal mucosa, lymphatic system (module terms)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8fbea3492a72e67b": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -66735,6 +67111,14 @@
     "result": "agrees"
    }
   },
+  "966aaec178315367": {
+   "verdict": "ok",
+   "note": "accept alpha added (grader-checked); cloze of fs-id2041852 sentence 'the hormone glucagon is released from the alpha cells of the pancreas'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "966e0ecdd20b53f6": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -67713,6 +68097,14 @@
   "98b08f310d433d54": {
    "verdict": "ok",
    "note": "KC 4 20.1 § Shared Structures, m46597",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "98bc3e08d8835663": {
+   "verdict": "ok",
+   "note": "RQ3 fs-id1863134 key B; option A replaced by \"stored in the pancreas\" per parent ruling (DISCLOSED_DEVIATIONS options, erratum 2674); fs-id2508882 makes it false",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -69055,6 +69447,14 @@
     "result": "agrees"
    }
   },
+  "9bfe7f600b83b813": {
+   "verdict": "ok",
+   "note": "cloze fs-id1695399 sentence 2",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9c023e3bc1e98c1c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -69170,6 +69570,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "9c62cea4bc2640d2": {
+   "verdict": "ok",
+   "note": "hint now links the 24.3 page; source CT fs-id1740961, stem verbatim, model answer = solution fs-id1636578 verbatim; module itself does not describe ketone synthesis (24.3 does), hint points there"
   },
   "9c665901041be7ad": {
    "verdict": "ok",
@@ -70701,6 +71105,10 @@
     "result": "agrees"
    }
   },
+  "9fd3cd1d3de8d806": {
+   "verdict": "ok",
+   "note": "m46456 fs-id2181283 solution fs-id2398066 verbatim"
+  },
   "9fd4f2a8c9d616b8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -72007,6 +72415,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-blind-solver",
+    "result": "agrees"
+   }
+  },
+  "a296f896c26dce60": {
+   "verdict": "ok",
+   "note": "reduced: re-read against m46489 RQ solution / named sentence",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -73587,6 +74003,14 @@
    "verdict": "ok",
    "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "a5cf42acb57633b3": {
+   "verdict": "ok",
+   "note": "body cloze fs-id2864299; accept bicarbonate (Summary's word)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a5d0ac034c337dca": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -74408,6 +74832,14 @@
   "a7cb4fc966932d59": {
    "verdict": "ok",
    "note": "KC 7 34.2 § Organic Precursors, m66616 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "a7cf3ee5102fb773": {
+   "verdict": "ok",
+   "note": "source fs-id2889034 key B; fs-id1336395 and fig-ch25_02_04 caption",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -76172,6 +76604,14 @@
     "result": "agrees"
    }
   },
+  "ac09d73c5c08f2ef": {
+   "verdict": "ok",
+   "note": "RQ6 fs-id1297521, key C polysaccharides",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ac0dae409bdc977c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -77320,6 +77760,14 @@
    "verdict": "ok",
    "note": "f(0) = (2)^2(-2) / [2(-1)^2(-3)] = -8/-6 = 4/3, so (0,4/3); matches CNXML Try It 8. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "ae8c080175c4a9be": {
+   "verdict": "ok",
+   "note": "body cloze fs-id3342803 'especially in times of starvation'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ae8cae5461f0ce43": {
    "verdict": "ok",
    "note": "author-built from § Fungus/Animal Mutualism: \"The scale insects foster a flow of nutrients from the parasitized plant to the fungus.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -77585,6 +78033,15 @@
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
+   }
+  },
+  "af0d81841cce82b3": {
+   "verdict": "ok",
+   "note": "multiplechoice line 135 (lean meats): re-read against the CNXML exercise; source options, order, key kept; no module sentence names lean meats (parent ruling: transcribe, claim pass rules)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "adjudicated: key \"lean meats\" stands — the module prints \"the processing of proteins demands the most energy\" (kept by claim correction F17); \"vegetables\" rests on the MyPlate half-plate guideline, which the module does not tie to weight loss; Reviewed and not errata (parent, October 31, 2026)."
    }
   },
   "af0dc2a2e34add94": {
@@ -77981,6 +78438,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "b02ef1f270759022": {
+   "verdict": "ok",
+   "note": "F12 stem + model-answer clause corrected (insulin resistance), Source note after item, decisions entry 2677; hint reworded to locations; source CT fs-id2383123, stem verbatim, model answer = solution fs-id2476867 verbatim; checks are its clauses"
   },
   "b0308248cb9f93ed": {
    "verdict": "ok",
@@ -80457,6 +80918,14 @@
     "result": "agrees"
    }
   },
+  "b5aa2c10bc61cb1a": {
+   "verdict": "ok",
+   "note": "author MC from list item fs-id3046631 bullet 3 '(Complex II)'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b5b1eaff5501fdd4": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -81336,6 +81805,14 @@
     "result": "agrees"
    }
   },
+  "b7c07ac198470ef4": {
+   "verdict": "ok",
+   "note": "cloze from fs-id1539903 'HMG CoA is a precursor of cholesterol and is an intermediate that is subsequently converted into β-hydroxybutyrate, the primary ketone body in the blood' (claim-pass F9: glossary 'first step' wrong; restemmed); key hydroxymethylglutaryl CoA, accept HMG CoA / β-hydroxy-β-methylglutaryl CoA",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b7c0ffeec2a616c2": {
    "verdict": "ok"
   },
@@ -82110,6 +82587,14 @@
   },
   "b93ad2c87e332280": {
    "verdict": "ok"
+  },
+  "b943e181b8458e54": {
+   "verdict": "ok",
+   "note": "source fs-id2511765 key C; fs-id1972137 two pyruvate, fs-id2543889 lactic acid without oxygen",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "b948872cc99c20d7": {
    "verdict": "ok",
@@ -85578,6 +86063,10 @@
     "result": "agrees"
    }
   },
+  "c12b94d9ab2b0489": {
+   "verdict": "ok",
+   "note": "selfcheck line 146 (Weight loss and weight gain are complex processes. What are ): model answer read against the source solution or module paragraph"
+  },
   "c1379085fde87062": {
    "verdict": "ok",
    "note": "source Multiple Choice fs-id1167663731681, key C 'herpes simplex viruses' verbatim, source option order | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -85626,6 +86115,14 @@
    "note": "MC fs-idp188104608; source solution keys D, option text 'life table' — keyed as printed. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "c15f231893552fbe": {
+   "verdict": "ok",
+   "note": "cloze of fs-id2041852 first sentence; key fasting printed ('or the fasting state')",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -86059,6 +86556,14 @@
     "result": "agrees"
    }
   },
+  "c26e09405e7b3107": {
+   "verdict": "ok",
+   "note": "author sortbins: enzymes named in glycolysis paragraphs fs-id1984458/fs-id1749935 vs Krebs paragraph fs-id1599268; hint reworded to a location only",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c26e5bf60d67d00c": {
    "verdict": "ok",
    "note": "KC 1 2.4 § Acids, m46006",
@@ -86448,6 +86953,14 @@
     "result": "agrees"
    }
   },
+  "c352e117dbc2ab8d": {
+   "verdict": "ok",
+   "note": "source RQ fs-id1496229 verbatim, source key C 'glycogen; liver'; body 'rely initially on stored glycogen' + glucagon acting on liver cells",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c359d5b392572488": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -86539,6 +87052,14 @@
   "c38cef516640783f": {
    "verdict": "ok",
    "note": "source key confirmed against CNXML",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c39275e9c10f99dc": {
+   "verdict": "ok",
+   "note": "RQ4 fs-id1750106, key C triglycerides (FADH<sub>2</sub> option as FADH₂); flagged to claim pass by Part C",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -86922,6 +87443,15 @@
    "verdict": "ok",
    "note": "body selfcheck, IgA location; model traces to fs-id1167658393442 (mucus secretions; also breast milk, tears, saliva) — a list, correctly left selfcheck. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "c4792234df81cdac": {
+   "verdict": "ok",
+   "note": "m46456 fs-id1620590, source key C as printed; radiation 'occurs between any two objects when their temperatures differ'; convection arguable, flagged to claim pass",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "adjudicated: key \"radiation\" stands — the module's own sentence \"A radiator can warm a room via radiant heat… The same principle works from the body to the environment\" fixes it; \"convection\" is defensible only by analogy and is listed under Reviewed and not errata (parent, October 31, 2026)."
+   }
+  },
   "c47cc1b1f347e06b": {
    "verdict": "ok",
    "note": "source Multiple Choice fs-id1167663560800, key A 'roseola' verbatim, source option order | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -86956,6 +87486,10 @@
   },
   "c48866e77a5dc5fb": {
    "verdict": "ok"
+  },
+  "c48a5d6f5bc1a5e5": {
+   "verdict": "ok",
+   "note": "selfcheck line 184 (According to this section, how do the USDA’s MyPlate guideli): model answer read against the source solution or module paragraph"
   },
   "c48a6e16afd15a6e": {
    "verdict": "ok",
@@ -87376,6 +87910,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "c52cce6d30a3152a": {
+   "verdict": "ok",
+   "note": "model answer read against m46489 solution or named paragraph"
   },
   "c52d309271af1dd2": {
    "verdict": "ok",
@@ -88387,6 +88925,14 @@
     "result": "agrees"
    }
   },
+  "c7adb701e32a26c2": {
+   "verdict": "ok",
+   "note": "RQ3 fs-id1468981, key A",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c7adfbb141158a23": {
    "verdict": "ok",
    "note": "author-built from § Chemical and Enzymatic Mediators Found in Body Fluids, Check Your Understanding: \"Explain the difference between endogenous and exogenous mediators\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -88723,6 +89269,14 @@
   "c887b20e2360de7a": {
    "verdict": "ok",
    "note": "source exercise fs-id1167660319505 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c890d7a3c89723bc": {
+   "verdict": "ok",
+   "note": "Cushing syndrome: re-read against m46489 body sentence named in the ledger; key printed verbatim",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -89717,6 +90271,14 @@
    "note": "source exercise fs-id1168327871169 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "ca8f1319b2f19174": {
+   "verdict": "ok",
+   "note": "cloze from fs-id4068594 \"They have put the recommended elements of a healthy meal into the context of a place setting of food.\" (replaces SuperTracker cloze, claim F21); key printed in body only, not in alt",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -90943,6 +91505,10 @@
    "verdict": "ok",
    "note": "(3+4i)/(2-i)*(2+i)/(2+i)=(6+3i+8i+4i^2)/(4+1)=(2+11i)/5=2/5+11/5 i; recomputed independently with node, matches CNXML end-of-section answer key; also cross-checked that the single-fraction form (2+11i)/5 grades equal to the authored 2/5+11/5 i via check-answer.mjs. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "cd8b0cdea727a757": {
+   "verdict": "ok",
+   "note": "author selfcheck, model = fs-id2189300 sentences 3-5 verbatim; checks repeat no sibling key"
+  },
   "cd8e7aa5e3d1787b": {
    "verdict": "ok",
    "note": "source exercise fs-id1167663548118 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -91771,6 +92337,14 @@
   "cf6eb8f5ed032d8e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "cf7fa16c3be06dd3": {
+   "verdict": "ok",
+   "note": "cloze fs-id2459241 'The acetone is removed by exhalation' (referent from previous sentence); accept exhaling|expiration (22.3 glossary equates expiration with exhalation), grader-checked",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -93897,6 +94471,14 @@
   "d490fbcac17bf467": {
    "verdict": "ok",
    "note": "sortbins from table fs-id1172100972832 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d4983cdecb33e711": {
+   "verdict": "ok",
+   "note": "glossary fs-id1914007 basal metabolic rate (BMR); body prints the term and BMR",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -98152,6 +98734,10 @@
     "result": "agrees"
    }
   },
+  "deee66261cf720c0": {
+   "verdict": "ok",
+   "note": "source fs-id2498643 solution verbatim"
+  },
   "def3183deb75be83": {
    "verdict": "ok",
    "note": "source exercise fs-id1167663980082 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -98671,6 +99257,10 @@
   "dff58cf4dc5f6abd": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "dff88b1f37ba2aa4": {
+   "verdict": "ok",
+   "note": "model answer read against m46489 solution or named paragraph"
   },
   "e001aa64506fb50b": {
    "verdict": "ok",
@@ -101463,6 +102053,10 @@
    "verdict": "ok",
    "note": "KC 5 23.4 § Genital Herpes > Neonatal Herpes, m58920"
   },
+  "e5f8795bc11e477d": {
+   "verdict": "ok",
+   "note": "model answer read against m46489 solution or named paragraph"
+  },
   "e5f8900446cd4f45": {
    "verdict": "ok",
    "note": "KC 4 18.6 § Antigens, Antibodies, and Transfusion Reactions, m46708",
@@ -103814,6 +104408,14 @@
     "result": "agrees"
    }
   },
+  "ebf4c90f9b2fed86": {
+   "verdict": "ok",
+   "note": "m46456 fs-id2161602, source key A; conduction = transfer between two objects in direct contact",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ebfd492d95e45b68": {
    "verdict": "ok",
    "note": "KC 2 10.3 § RNA Structure, m58837 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
@@ -104821,6 +105423,14 @@
    "verdict": "ok",
    "note": "At x=6, f(6)=pi/6 exists (Condition 1 holds, defined by the 2<=x<=6 piece); left-hand limit=pi/6 and right-hand limit=12*pi both exist but differ -> Condition 2 fails (jump-type failure), independently derived since the source Try It 4 solution only names the x-value. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "ee0d492da5dcee72": {
+   "verdict": "ok",
+   "note": "glossary recall proteolysis (fs-id1642905); body fs-id1265347",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ee0e439d3a82f6f6": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -104875,6 +105485,14 @@
   "ee31ac55366c5fd1": {
    "verdict": "ok",
    "note": "m66530 exercise fs-idp32012832 (Visual Connection): source solution transcribed near-verbatim as the selfcheck model answer; checkpoints decompose it into 5 clauses, each a verbatim substring of the model. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "ee34356a89412523": {
+   "verdict": "ok",
+   "note": "source fs-id2179427 key D; fs-id3068407/fs-id1695399 water and ATP",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "ee39764a2cb48549": {
    "verdict": "ok",
@@ -105056,6 +105674,14 @@
   "eea9e248e25c2962": {
    "verdict": "ok",
    "note": "summary cloze fs-id1884720: 'Dysfunction of the production of insulin or target cell resistance to the effects of insulin causes diabetes mellitus...'; accept responsiveness from fs-id1845479 (checker)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "eeaa9ac74a36e2d9": {
+   "verdict": "ok",
+   "note": "RQ2 fs-id918427, key D 'bile salts'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -105722,6 +106348,14 @@
     "result": "agrees"
    }
   },
+  "f073c29e8e4c6c96": {
+   "verdict": "ok",
+   "note": "cloze fs-id1530964 'Oxaloacetate is converted into malate and then into pyruvate' (referent 'In the cytoplasm' from previous sentence); malic acid accepted from figure 2516 label",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f07697a987b60a14": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -106007,6 +106641,14 @@
   "f123ce09e2b29b7f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "f12903b4e3fb16ff": {
+   "verdict": "ok",
+   "note": "β-oxidation: re-read against m46489 body sentence named in the ledger; key printed verbatim",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -106298,6 +106940,14 @@
   },
   "f1fb84852bf6f974": {
    "verdict": "ok"
+  },
+  "f1fc873298cb3cc5": {
+   "verdict": "ok",
+   "note": "source fs-id1316357 key A; fs-id2066971 carriers reduced when they receive the electron",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "f1fcab5e5074e1ab": {
    "verdict": "ok",
@@ -108681,6 +109331,15 @@
     "by": "orchestrator-solver",
     "result": "adjudicated",
     "note": "key stands: tonsils — the stem asks which nodule sees food antigens FIRST; the module says the tonsillar crypts 'accumulate all sorts of materials taken into the body through eating and breathing' and the tonsils sit in the pharynx, before the small intestine; Peyer's patches are 'especially important for immune responses against ingested substances' but are not first (parent, Part C ruling, October 26, 2026)"
+   }
+  },
+  "f715a3b842c1a4a4": {
+   "verdict": "ok",
+   "note": "[hash rebuilt after a parent edit; was f49ad28c72a3fe92] m46456 fs-id2105111, source key D kept; stem corrected per claim pass F16 (chills raise temperature; fs-id2165326), Source note under the item; options unchanged; hair erection taught in m46062",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "adjudicated: key \"all of the above\" stands — a source item; the solver answered it and flags that the page never teaches hair erection (piloerection), which the parent lists under Reviewed and not errata (parent, October 31, 2026)."
    }
   },
   "f7175fa479cf85c5": {
@@ -112303,6 +112962,14 @@
     "result": "agrees"
    }
   },
+  "feed3520631f1833": {
+   "verdict": "ok",
+   "note": "figure-keyed 2519 headed boxes; Phe/Tyr/Ile excluded (also in unheaded boxes)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "fef0adb4f17997bd": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -112314,6 +112981,14 @@
   "fef7b10724795c33": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "fefa77d09e6af4ab": {
+   "verdict": "ok",
+   "note": "weight gain: re-read against m46489 RQ solution / named sentence",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"

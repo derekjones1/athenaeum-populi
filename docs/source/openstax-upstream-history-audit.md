@@ -16,9 +16,9 @@
 
 ## Coverage
 
-- Mapped local sections: 746
-- Sections changed upstream: 48
-- Content-level changes: 37
+- Mapped local sections: 753
+- Sections changed upstream: 49
+- Content-level changes: 38
 - Markup/metadata-only changes: 11
 - Changed Try It records: 3
 - Changed Try Its where local math matches the PDF-era form: 0
@@ -32,7 +32,7 @@
 - precalculus (`college-algebra-bundle`): `d1bd19c69107ba7f45775670809ae161d63db864`
 - biology (`biology-bundle`): `5c58838d2594bc5817127fdc47e127c30b44f2c2`
 - microbiology (`microbiology`): `633850257fbd3ccf6187b9428c55e80b69236382`
-- anatomy-physiology (`anatomy-physiology`): `716383a4c6c16037b14d75a156c65145e75e895e` — in-progress, 137 sections mapped
+- anatomy-physiology (`anatomy-physiology`): `716383a4c6c16037b14d75a156c65145e75e895e` — in-progress, 144 sections mapped
 
 ## Changed mapped sections
 
@@ -74,6 +74,11 @@ Module `m46511`; content-changed. Changed lanes: instructionalText, counts.
 ### anatomy-physiology 23.5 — [content/life-health-sciences/anatomy-physiology/23-the-digestive-system/05-the-small-and-large-intestines.md](../../content/life-health-sciences/anatomy-physiology/23-the-digestive-system/05-the-small-and-large-intestines.md)
 
 Module `m46512`; markup-or-metadata-only. Changed lanes: raw XML only.
+
+
+### anatomy-physiology 24.2 — [content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/02-carbohydrate-metabolism.md](../../content/life-health-sciences/anatomy-physiology/24-metabolism-and-nutrition/02-carbohydrate-metabolism.md)
+
+Module `m46451`; content-changed. Changed lanes: instructionalText.
 
 
 ### biology 13.2 — [content/life-health-sciences/biology/13-modern-understandings-of-inheritance/02-chromosomal-basis-of-inherited-disorders.md](../../content/life-health-sciences/biology/13-modern-understandings-of-inheritance/02-chromosomal-basis-of-inherited-disorders.md)
