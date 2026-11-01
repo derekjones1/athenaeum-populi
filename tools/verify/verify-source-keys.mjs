@@ -971,6 +971,20 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     erratum: 2675,
     reason: 'the source distractor "supply energy for the cell" is a second true answer to "Amino acids are needed to ________." — the module m46493\'s own fs-id3342803 says "Amino acids can also be used as a source of energy" and "amino acids can serve as a source of energy production through the Krebs cycle"; the page prints "activate trypsinogen" in its place (fs-id1265347 gives that to enterokinase, which "binds to trypsinogen and converts it into its active form, trypsin"); key "build new proteins" unchanged',
   },
+  {
+    page: 'content/life-health-sciences/anatomy-physiology/25-the-urinary-system/05-physiology-of-urine-formation.md',
+    exercise: 'fs-id2459453',
+    kind: 'key',
+    erratum: 2730,
+    reason: 'the source keys B "false" for "Systemic blood pressure must stay above 60 so that the proper amount of filtration occurs.", but the module m46433\'s own fs-id2533120 says "as long as mean arterial pressure is above approximately 60 mm Hg, the pressure will be adequate to maintain glomerular filtration. Blood pressures below this level will impair renal function and cause systemic disorders that are severe enough to threaten survival", so the statement is true by the module; the page keys option A "true" (options and option order unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/anatomy-physiology/25-the-urinary-system/03-gross-anatomy-of-the-kidney.md',
+    exercise: 'fs-id2415782',
+    kind: 'options',
+    erratum: 2733,
+    reason: 'the source distractor "it is displace by the heart" misspells "displaced" ("The right kidney is slightly lower because ________."); the page prints "it is displaced by the heart"; key "it is displaced by the liver" unchanged',
+  },
 ]);
 
 /* ---- source side ---------------------------------------------------------- */

@@ -124,7 +124,12 @@ them.
    the verifier both read the crop as held out to the side *(chapter 13)*.
    Keep the alt at or under 600 characters — `verify-section` caps it, and
    the chapter 16 parent's first draft ran 817 and failed the Clerk's
-   verify *(chapter 16)*. Launched together with the step-6 drafter.
+   verify *(chapter 16)*. Launched together with the step-6 drafter. An intro
+   module can carry an `anatomy interactive` note of its own (m46430, the
+   only one in the book): the Clerk's exemplars have none, so say in the
+   prompt that such a note is rendered as the section pages'
+   `**Interactive Link**` callout and named in the Changes clause — the
+   chapter 25 Clerk omitted it and had to be sent back *(chapter 25)*.
 6. **Run facts** — copy `run-facts-template.md` to `$SP/run-facts.md`.
    **Delegated, in two parts**: one Clerk (Sonnet) fills PART A (every
    factual field, from the `keys` files and the raw CNXML; every count an
@@ -241,7 +246,11 @@ them.
    boundaries in the drafter's stripped dump, and the real one ("FSH.During")
    was elsewhere — two authors had to say so. And the panel-count rule above
    binds Part C's figure lines too: chapter 17's Part C copied Part B's
-   "two-part" 1811, and the image has three panels *(chapter 17)*.
+   "two-part" 1811, and the image has three panels *(chapter 17)*; chapter
+   25's Part C called 2614 and 2615 "two panels" and 2613 a micrograph from
+   Part B's quoted source alts ("The top panel…"), and each is a drawing
+   whose panel count the alt does NOT give — open every figure Part C names
+   *(chapter 25)*.
    A checker can stumble on Part B while reading the run facts (17.10's did):
    `checker.md` now names the file as off-limits, and the drafter may be
    told to write it to `$SP/parent-only/` instead.
@@ -314,7 +323,11 @@ alt and `longdesc` on the page, not only against the keys: 14.2's
 replacement cloze ("information similar to that carried by spinothalamic
 tract, such as ________ sensations") was answered by a printed label in
 the ascending-pathways `longdesc`, and the parent's own read caught it
-after the author's key grep had passed *(chapter 14)*. A replacement distractor is grepped against the keys of the items above
+after the author's key grep had passed *(chapter 14)*. An author-written
+multiple choice's distractors are grepped against the keys of the items
+below it as well as above: 25.5's table item offered the next item's key as
+its fourth option, and only the parent's read of the emitted packets caught
+it *(chapter 25)*. A replacement distractor is grepped against the keys of the items above
 and below it before it is accepted: "fat storage" landed directly above an
 item keyed "fat stores" *(chapter 6; the author caught it)*. The harness
 may refuse an agent's Write of its report file ("Subagents should return
@@ -406,7 +419,10 @@ npm run solve:compare -- $SP/solve/chNN/answers.json content --out $SP/solve-res
 ```
 
 Every disagreement or flag gets an `adjudicated` note settled against the
-module's sentence. A why-question keyed to one abstract noun usually wants
+module's sentence. A re-keyed TWO-option item's Source note ("the source
+keys the second option … the page keys a different option") names the key
+by elimination; the house form still stands, placed after the block, and
+the solver's note saying so is recorded, not acted on *(chapter 25)*. A why-question keyed to one abstract noun usually wants
 its accept list extended within the 7-word accept cap; when the solver's
 answer is right but a paraphrase no accept list can enumerate (an effect,
 a reason — "unregulated activation" for "cytokine storm"), the item becomes

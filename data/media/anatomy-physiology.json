@@ -10936,6 +10936,530 @@
       "alt": "The figure shows a plate with different food groups assigned different portion sizes.",
       "caption": "The U.S. Department of Agriculture developed food guidelines called MyPlate to help demonstrate how to maintain a healthy lifestyle."
     },
+    "2600_Sewage_Treatment_Plan": {
+      "source": "media/2600_Sewage_Treatment_Plan.jpg",
+      "sourceSha256": "fe054ef5e8c383a7cb3f0a36c6d21081975132f292716a7a0bf06d7370c85474",
+      "module": "m46430",
+      "kind": "photo",
+      "width": 2288,
+      "height": 1049,
+      "variants": [
+        {
+          "width": 800,
+          "height": 366,
+          "file": "2600_Sewage_Treatment_Plan-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 733,
+          "file": "2600_Sewage_Treatment_Plan-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photo shows a water treatment plant.",
+      "caption": "(credit: “thekirbster”/flickr.com)"
+    },
+    "2601_Urine_Color_Chart": {
+      "source": "media/2601_Urine_Color_Chart.jpg",
+      "sourceSha256": "ccf8dc79b414c0f3cd3aa3e9cfb862a7cbed989621819813499bae6b1fa3d996",
+      "module": "m46432",
+      "kind": "photo",
+      "width": 675,
+      "height": 1146,
+      "variants": [
+        {
+          "width": 675,
+          "height": 1146,
+          "file": "2601_Urine_Color_Chart-675.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This color chart shows different shades of yellow and associates each shade with hydration or dehydration.",
+      "caption": ""
+    },
+    "2602_Female_Male_Urethra": {
+      "source": "media/2602_Female_Male_Urethra.jpg",
+      "sourceSha256": "9a5486c33a16169aeae5aeb7f32c8d0aee9a52614fd3179e9e2546d3c42f450a",
+      "module": "m46427",
+      "kind": "photo",
+      "width": 2033,
+      "height": 739,
+      "variants": [
+        {
+          "width": 800,
+          "height": 291,
+          "file": "2602_Female_Male_Urethra-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 581,
+          "file": "2602_Female_Male_Urethra-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top panel of this figure shows the organs in the female urinary system.",
+      "caption": "The urethra transports urine from the bladder to the outside of the body. This image shows (a) a female urethra and (b) a male urethra."
+    },
+    "2604_Nerves_Innervating_the_Urinary_SystemN": {
+      "source": "media/2604_Nerves_Innervating_the_Urinary_SystemN.jpg",
+      "sourceSha256": "8f21f0c2b6355e8eb159dcbb514fc3d9518fffe861963977fc37bd6a7e02d47c",
+      "module": "m46427",
+      "kind": "photo",
+      "width": 1738,
+      "height": 1265,
+      "variants": [
+        {
+          "width": 800,
+          "height": 582,
+          "file": "2604_Nerves_Innervating_the_Urinary_SystemN-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1164,
+          "file": "2604_Nerves_Innervating_the_Urinary_SystemN-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the female urinary system and identifies the nerves that are important in this system.",
+      "caption": ""
+    },
+    "2605_The_Bladder": {
+      "source": "media/2605_The_Bladder.jpg",
+      "sourceSha256": "8eb1f9f8dd50d06135882095f5a4568d05f8716c3d41d675fa508a2fa2a20db7",
+      "module": "m46427",
+      "kind": "photo",
+      "width": 1962,
+      "height": 1202,
+      "variants": [
+        {
+          "width": 800,
+          "height": 490,
+          "file": "2605_The_Bladder-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 980,
+          "file": "2605_The_Bladder-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel of this figure shows the cross section of the bladder and the major parts are labeled. The right panel shows a micrograph of the bladder.",
+      "caption": "(a) Anterior cross section of the bladder. (b) The detrusor muscle of the bladder (source: monkey tissue) LM × 448. (Micrograph provided by the Regents of the University of Michigan Medical School © 2012)"
+    },
+    "2607_Ureter": {
+      "source": "media/2607_Ureter.jpg",
+      "sourceSha256": "5c90116cfe7e39fd2f2c71cf518f7214e71a8f81b50e40ea1291e6c9bd1f4b6e",
+      "module": "m46427",
+      "kind": "photo",
+      "width": 1500,
+      "height": 1258,
+      "variants": [
+        {
+          "width": 800,
+          "height": 671,
+          "file": "2607_Ureter-800.webp"
+        },
+        {
+          "width": 1500,
+          "height": 1258,
+          "file": "2607_Ureter-1500.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A micrograph shows the lumen of the ureter.",
+      "caption": "Peristaltic contractions help to move urine through the lumen with contributions from fluid pressure and gravity. LM × 128. (Micrograph provided by the Regents of the University of Michigan Medical School © 2012)"
+    },
+    "2608_Kidney_Position_in_Abdomen": {
+      "source": "media/2608_Kidney_Position_in_Abdomen.jpg",
+      "sourceSha256": "07b680f7f2ae3966da570252f7ba46f2ed62c8c685f46383fc3a9f168cd222af",
+      "module": "m46429",
+      "kind": "photo",
+      "width": 1630,
+      "height": 1204,
+      "variants": [
+        {
+          "width": 800,
+          "height": 591,
+          "file": "2608_Kidney_Position_in_Abdomen-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1182,
+          "file": "2608_Kidney_Position_in_Abdomen-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows a human torso and shows the location of the kidneys within the torso.",
+      "caption": "The kidneys are slightly protected by the ribs and are surrounded by fat for protection (not shown)."
+    },
+    "2610_The_Kidney": {
+      "source": "media/2610_The_Kidney.jpg",
+      "sourceSha256": "30d15988386d61f74039dee64bb63f7d13556173058bb4d1d42ac97c12546654",
+      "module": "m46429",
+      "kind": "photo",
+      "width": 1975,
+      "height": 1129,
+      "variants": [
+        {
+          "width": 800,
+          "height": 457,
+          "file": "2610_The_Kidney-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 914,
+          "file": "2610_The_Kidney-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel of this figure shows the location of the kidneys in the abdomen. The right panel shows the cross section of the kidney.",
+      "caption": ""
+    },
+    "2611_Blood_Flow_in_the_Nephron": {
+      "source": "media/2611_Blood_Flow_in_the_Nephron.jpg",
+      "sourceSha256": "d08c9d6b859533d79b0315b352dbe8557fb5c2869b04469a824ae3b1cb46b138",
+      "module": "m46429",
+      "kind": "photo",
+      "width": 1345,
+      "height": 1945,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1157,
+          "file": "2611_Blood_Flow_in_the_Nephron-800.webp"
+        },
+        {
+          "width": 1345,
+          "height": 1945,
+          "file": "2611_Blood_Flow_in_the_Nephron-1345.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the blood vessels and the direction of blood flow in the nephron.",
+      "caption": "The two capillary beds are clearly shown in this figure. The efferent arteriole is the connecting vessel between the glomerulus and the peritubular capillaries and vasa recta."
+    },
+    "2612_Blood_Flow_in_the_Kidneys": {
+      "source": "media/2612_Blood_Flow_in_the_Kidneys.jpg",
+      "sourceSha256": "02acb54149e9769d0454c3ccab8ae081ab063ada7b8fbb270c7387bc457a473a",
+      "module": "m46429",
+      "kind": "photo",
+      "width": 1971,
+      "height": 1581,
+      "variants": [
+        {
+          "width": 800,
+          "height": 641,
+          "file": "2612_Blood_Flow_in_the_Kidneys-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1283,
+          "file": "2612_Blood_Flow_in_the_Kidneys-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the network of blood vessels and the blood flow in the kidneys.",
+      "caption": ""
+    },
+    "2613_Podocytes": {
+      "source": "media/2613_Podocytes.jpg",
+      "sourceSha256": "8ff3a653bd19d8dc55b6030f795336fe8489bdc096ef694937e20b4184f3da5d",
+      "module": "m46431",
+      "kind": "photo",
+      "width": 1942,
+      "height": 908,
+      "variants": [
+        {
+          "width": 800,
+          "height": 374,
+          "file": "2613_Podocytes-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 748,
+          "file": "2613_Podocytes-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel of this figure shows an image of a podocyte. The right panel shows a tube-like structure that illustrates the filtration slits and the cell bodies.",
+      "caption": "Podocytes interdigitate with structures called pedicels and filter substances in a way similar to fenestrations. In (a), the large cell body can be seen at the top right corner, with branches extending from the cell body. The smallest finger-like extensions are the pedicels. Pedicels on one podocyte always interdigitate with the pedicels of another podocyte. (b) This capillary has three podocytes wrapped around it."
+    },
+    "2614_Fenestrated_Capillary": {
+      "source": "media/2614_Fenestrated_Capillary.jpg",
+      "sourceSha256": "9a5db3859e6d67cf1d8c213f204179f1d7fc5626c213fc8d5a6b0d1272a1e02e",
+      "module": "m46431",
+      "kind": "photo",
+      "width": 1156,
+      "height": 875,
+      "variants": [
+        {
+          "width": 800,
+          "height": 605,
+          "file": "2614_Fenestrated_Capillary-800.webp"
+        },
+        {
+          "width": 1156,
+          "height": 875,
+          "file": "2614_Fenestrated_Capillary-1156.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top panel of this figure shows a tube-like structure with the basement membrane and other parts labeled.",
+      "caption": "Fenestrations allow many substances to diffuse from the blood based primarily on size."
+    },
+    "2615_Juxtaglomerular_Apparatus": {
+      "source": "media/2615_Juxtaglomerular_Apparatus.jpg",
+      "sourceSha256": "596d8046f8121c397701d26659373631f5edf2a9b2d3713d94b34d6ff43a845a",
+      "module": "m46431",
+      "kind": "photo",
+      "width": 1138,
+      "height": 739,
+      "variants": [
+        {
+          "width": 800,
+          "height": 519,
+          "file": "2615_Juxtaglomerular_Apparatus-800.webp"
+        },
+        {
+          "width": 1138,
+          "height": 739,
+          "file": "2615_Juxtaglomerular_Apparatus-1138.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top panel of this image shows the cross section of the juxtaglomerular apparatus. The major parts are labeled.",
+      "caption": "(a) The JGA allows specialized cells to monitor the composition of the fluid in the DCT and adjust the glomerular filtration rate. (b) This micrograph shows the glomerulus and surrounding structures. LM × 1540. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "2617_Net_Filtration_PressureN": {
+      "source": "media/2617_Net_Filtration_PressureN.jpg",
+      "sourceSha256": "a7904d07deafc5b0a6cf6ff4724faee3783196f62244b064665f66b609a5a04f",
+      "module": "m46433",
+      "kind": "photo",
+      "width": 1421,
+      "height": 1470,
+      "variants": [
+        {
+          "width": 800,
+          "height": 827,
+          "file": "2617_Net_Filtration_PressureN-800.webp"
+        },
+        {
+          "width": 1421,
+          "height": 1470,
+          "file": "2617_Net_Filtration_PressureN-1421.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the different pressures acting across the glomerulus.",
+      "caption": "The NFP is the sum of osmotic and hydrostatic pressures."
+    },
+    "2618_Nephron_Secretion_Reabsorption": {
+      "source": "media/2618_Nephron_Secretion_Reabsorption.jpg",
+      "sourceSha256": "22245114f45516127f8bd127a9eaeca7e3e3e017beb5a8deb5a8a15b78bcaafb",
+      "module": "m46443",
+      "kind": "photo",
+      "width": 1138,
+      "height": 2171,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1526,
+          "file": "2618_Nephron_Secretion_Reabsorption-800.webp"
+        },
+        {
+          "width": 1138,
+          "height": 2171,
+          "file": "2618_Nephron_Secretion_Reabsorption-1138.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the different ions and chemicals that are secreted and reabsorbed along the nephron. Arrows show the direction of the movement of the substance.",
+      "caption": ""
+    },
+    "2619_Substances_Reabsorbed_And_Secreted_By_The_PCT": {
+      "source": "media/2619_Substances_Reabsorbed_And_Secreted_By_The_PCT.jpg",
+      "sourceSha256": "b2389c64db7c72e700a9ffaf261a2f52e9d472608d151bc0638098e88f6bb7dc",
+      "module": "m46443",
+      "kind": "photo",
+      "width": 2232,
+      "height": 1600,
+      "variants": [
+        {
+          "width": 800,
+          "height": 573,
+          "file": "2619_Substances_Reabsorbed_And_Secreted_By_The_PCT-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1147,
+          "file": "2619_Substances_Reabsorbed_And_Secreted_By_The_PCT-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the different substances that are secreted and reabsorbed by the proximal collecting tubule. Arrows show the direction of the movement of the substance.",
+      "caption": ""
+    },
+    "2620_Reabsorption_of_Bicarbonate_from_the_PCT": {
+      "source": "media/2620_Reabsorption_of_Bicarbonate_from_the_PCT.jpg",
+      "sourceSha256": "f9f646f0aca38224f60b4916ee829b762e47a51a67fb505a590247449b15c0cd",
+      "module": "m46443",
+      "kind": "photo",
+      "width": 1439,
+      "height": 833,
+      "variants": [
+        {
+          "width": 800,
+          "height": 463,
+          "file": "2620_Reabsorption_of_Bicarbonate_from_the_PCT-800.webp"
+        },
+        {
+          "width": 1439,
+          "height": 833,
+          "file": "2620_Reabsorption_of_Bicarbonate_from_the_PCT-1439.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the process of reabsorption of bicarbonate by the proximal collecting tubule.",
+      "caption": ""
+    },
+    "2621_Loop_of_Henle_Countercurrent_Multiplier_System": {
+      "source": "media/2621_Loop_of_Henle_Countercurrent_Multiplier_System.jpg",
+      "sourceSha256": "48ebae9899268b8eacdea212e0053e1368bd58289283b1bf04fcf268b2cdb2d7",
+      "module": "m46443",
+      "kind": "photo",
+      "width": 1733,
+      "height": 1558,
+      "variants": [
+        {
+          "width": 800,
+          "height": 719,
+          "file": "2621_Loop_of_Henle_Countercurrent_Multiplier_System-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1438,
+          "file": "2621_Loop_of_Henle_Countercurrent_Multiplier_System-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel of this image shows the location of the loop of Henle. The right panel shows the interstitial osmolality and the exchange of sodium and chloride ions, as well as water and urea.",
+      "caption": ""
+    },
+    "2624_The_Enzyme_Renin_Converts_The_Pro-Enzyme_Angiotensin_I": {
+      "source": "media/2624_The_Enzyme_Renin_Converts_The_Pro-Enzyme_Angiotensin_I.jpg",
+      "sourceSha256": "a0883b9ab9e38a15b5eb3699a27b0bdc4b2ac2ed1adbcf9d3dedfcd6cac6aced",
+      "module": "m46446",
+      "kind": "photo",
+      "width": 1206,
+      "height": 1054,
+      "variants": [
+        {
+          "width": 800,
+          "height": 699,
+          "file": "2624_The_Enzyme_Renin_Converts_The_Pro-Enzyme_Angiotensin_I-800.webp"
+        },
+        {
+          "width": 1206,
+          "height": 1054,
+          "file": "2624_The_Enzyme_Renin_Converts_The_Pro-Enzyme_Angiotensin_I-1206.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the enzyme renin converting the pro-enzyme angiotensin",
+      "caption": ""
+    },
+    "2625_Aquaporin__Water_Channel": {
+      "source": "media/2625_Aquaporin_ Water_Channel.jpg",
+      "sourceSha256": "3d880cb8407d78e15f891f5ab5b69c3f614c99b994202ce6c49c57361fccfef5",
+      "module": "m46431",
+      "kind": "photo",
+      "width": 1342,
+      "height": 675,
+      "variants": [
+        {
+          "width": 800,
+          "height": 402,
+          "file": "2625_Aquaporin__Water_Channel-800.webp"
+        },
+        {
+          "width": 1342,
+          "height": 675,
+          "file": "2625_Aquaporin__Water_Channel-1342.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows an aquaporin water channel in the bilayer membrane with water molecules passing through.",
+      "caption": "Positive charges inside the channel prevent the leakage of electrolytes across the cell membrane, while allowing water to move due to osmosis."
+    },
+    "2626_Renin_Aldosterone_Angiotensin": {
+      "source": "media/2626_Renin_Aldosterone_Angiotensin.jpg",
+      "sourceSha256": "e8815769c3c29ad95c33fbac9b759191cf24da8636265e71fc0142672b94df65",
+      "module": "m46431",
+      "kind": "photo",
+      "width": 2258,
+      "height": 1425,
+      "variants": [
+        {
+          "width": 800,
+          "height": 505,
+          "file": "2626_Renin_Aldosterone_Angiotensin-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1009,
+          "file": "2626_Renin_Aldosterone_Angiotensin-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the pathway of action of the renin-aldosterone-angiotensin system. An arrow in the center of the image shows the sequence of events that take place, and branching off from this arrow are indications of where in the body these events take place.",
+      "caption": "The enzyme renin converts the pro-enzyme angiotensin I; the lung-derived enzyme ACE converts angiotensin I into active angiotensin II."
+    },
+    "2627_Nitrogen_Wastes": {
+      "source": "media/2627_Nitrogen_Wastes.jpg",
+      "sourceSha256": "2be2e1b3bd67f51119525529dd69ad70d3b3137191dd0281d882485b710f3e4c",
+      "module": "m46434",
+      "kind": "photo",
+      "width": 2281,
+      "height": 950,
+      "variants": [
+        {
+          "width": 800,
+          "height": 333,
+          "file": "2627_Nitrogen_Wastes-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 666,
+          "file": "2627_Nitrogen_Wastes-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the chemical structure of ammonia, urea, and uric acid.",
+      "caption": ""
+    },
+    "2629_Major_Hormones_that_Influence_GFR_and_Renal_Blood_Flow": {
+      "source": "media/2629_Major_Hormones_that_Influence_GFR_and_Renal_Blood_Flow.jpg",
+      "sourceSha256": "ad9415534f7e66df92a2addbb960aec66fa1f9b8fe8d0a358728fa253e4a3341",
+      "module": "m46424",
+      "kind": "photo",
+      "width": 1621,
+      "height": 1254,
+      "variants": [
+        {
+          "width": 800,
+          "height": 619,
+          "file": "2629_Major_Hormones_that_Influence_GFR_and_Renal_Blood_Flow-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1237,
+          "file": "2629_Major_Hormones_that_Influence_GFR_and_Renal_Blood_Flow-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This table shows the stimulus, effect on GFR (glomerular filtration rate), and effect on RBF (renal blood flow) for a variety of vasoconstrictors and vasodilators. The first vasoconstrictor is input from the sympathetic nerves that result in the secretion of epinephrine and norepinephrine. The stimulus is a decrease in extracellular fluid volume (ECFV). The second vasoconstrictor is angiotensin II. The stimulus is a decrease in ECFV. The third vasoconstrictor is endothelin. The stimulus is an increase in stretch, bradykinin, angiotensin II, and epinephrine along with a decrease in ECFV. All three of these vasoconstrictors decrease GFR and also decrease RBF. The first vasodilator is the prostaglandins PGE1, PGE2, and PGI2. The stimulus is a decrease in ECFV, an increase in shear stress, and an increase in angiotensin II. The second vasodilator is nitric oxide (NO). The stimulus is increasing shear stress, acetylcholine, histamine, bradykinin, ATP, and adenosine. The third vasodilator is bradykinin. The stimulus is the presence of prostaglandins and a decrease in angiotensin-converting enzyme. The fourth vasodilator is natriuretic peptides, including ANP and B-type. The stimulus is an increase in ECFV. All four of the vasodilators increase GFR and also increase RBF, with the exception of the natriuretic peptides, which cause no change in RBF. Prostaglandins also either increase or have no effect on GFR.",
+      "caption": ""
+    },
     "400_Micrograph_of_Cervical_Tissue_updated": {
       "source": "media/400_Micrograph_of_Cervical_Tissue_updated.jpg",
       "sourceSha256": "b7f46b81d1081b06b8cf36b8864bb46298a4013a60a9c7416c1c181220cc33f6",

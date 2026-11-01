@@ -142,12 +142,18 @@ reproduction, development, and inheritance.
 - **Metabolism and Nutrition** — an overview of metabolic reactions,
   carbohydrate, lipid, and protein metabolism, the metabolic states of the
   body, energy and heat balance, and nutrition and diet.
+- **The Urinary System** — the physical characteristics of urine, the gross
+  anatomy of urine transport and of the kidney, the microscopic anatomy of
+  the kidney, the physiology of urine formation, tubular reabsorption, the
+  regulation of renal blood flow, endocrine regulation of kidney function,
+  the regulation of fluid volume and composition, and the urinary system and
+  homeostasis.
 
 ## Planned contents
 
 The remaining chapters of Anatomy and Physiology 2e's six units will
 appear in this order:
 
-- **Unit 5: Energy, Maintenance, and Environmental Exchange** — The Urinary System; Fluid, Electrolyte, and Acid-Base Balance.
+- **Unit 5: Energy, Maintenance, and Environmental Exchange** — Fluid, Electrolyte, and Acid-Base Balance.
 - **Unit 6: Human Development and the Continuity of Life** — The Reproductive
   System; Development and Inheritance.

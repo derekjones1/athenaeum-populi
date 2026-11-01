@@ -181,8 +181,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 28,
       "upstreamSections": 169,
-      "localChapters": 24,
-      "mappedSections": 144,
+      "localChapters": 25,
+      "mappedSections": 154,
       "units": [
         {
           "index": 1,
@@ -1547,6 +1547,96 @@
       "moduleId": "m46467",
       "sourceTitle": "Nutrition and Diet",
       "moduleSha256": "e219de06262ba0a04f81f143676026aff15e3032debcda3738b6865dfb3168aa"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/01-physical-characteristics-of-urine.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "25.1",
+      "moduleId": "m46432",
+      "sourceTitle": "Physical Characteristics of Urine",
+      "moduleSha256": "65b9d31fb971af581a4305cf3aa51c952e5236f89961ffe6b05b8de6bd74a250"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/02-gross-anatomy-of-urine-transport.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "25.2",
+      "moduleId": "m46427",
+      "sourceTitle": "Gross Anatomy of Urine Transport",
+      "moduleSha256": "f7c0c16069bf5cd93e390e5db8679c0b2000f6a4aba5284f4f638a443b4c685b"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/03-gross-anatomy-of-the-kidney.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "25.3",
+      "moduleId": "m46429",
+      "sourceTitle": "Gross Anatomy of the Kidney",
+      "moduleSha256": "d5596eaae57c8f486543a79d2a57d17da974985478f980f5da145cc8da80c49e"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/04-microscopic-anatomy-of-the-kidney.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "25.4",
+      "moduleId": "m46431",
+      "sourceTitle": "Microscopic Anatomy of the Kidney",
+      "moduleSha256": "6e3cb5ece48ec28ec2b1d5e47f627af5f826928649d76d3bdef87279263ecf0c"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/05-physiology-of-urine-formation.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "25.5",
+      "moduleId": "m46433",
+      "sourceTitle": "Physiology of Urine Formation",
+      "moduleSha256": "d17f7b1e0296691d18dd5030fbb3229b103a27eeb5281517241e33c8a64eec99"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/06-tubular-reabsorption.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "25.6",
+      "moduleId": "m46443",
+      "sourceTitle": "Tubular Reabsorption",
+      "moduleSha256": "65c29aac2145eeb6a9222d6c70f0902103444416d89d1def27e0c80d9c4435e4"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/07-regulation-of-renal-blood-flow.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "25.7",
+      "moduleId": "m46435",
+      "sourceTitle": "Regulation of Renal Blood Flow",
+      "moduleSha256": "61f88324094580a05a45684318476af1f11a0e5d6bb4a12c60087b3be6731209"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/08-endocrine-regulation-of-kidney-function.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "25.8",
+      "moduleId": "m46424",
+      "sourceTitle": "Endocrine Regulation of Kidney Function",
+      "moduleSha256": "28a29e92571cecaf5bd2d79124cc9547f53b2bfff800e34812d85c8f749369ff"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/09-regulation-of-fluid-volume-and-composition.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "25.9",
+      "moduleId": "m46434",
+      "sourceTitle": "Regulation of Fluid Volume and Composition",
+      "moduleSha256": "e442ef58db2b66e32802b3010a1b68ee3469b8b5b685890e82cd24f477b0bef8"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/10-the-urinary-system-and-homeostasis.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "25.10",
+      "moduleId": "m46446",
+      "sourceTitle": "The Urinary System and Homeostasis",
+      "moduleSha256": "4581b454a2b0a41213d1ce7c0b16acdcbc9ea33e6aa586f54b04ca07150696ea"
     },
     {
       "localPath": "content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md",

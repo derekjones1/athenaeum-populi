@@ -1947,6 +1947,95 @@ because the parent's suggested sentence printed RQ5's key. The build tripped the
 350 MiB total-HTML budget (353.5 MiB, 940 documents) as the playbook predicted,
 and the cap went to 450 MiB with the measurement in `tools/build/audit-build.mjs`.
 
+## Chapter 25 (October 31, 2026)
+
+*The Urinary System*, the fourth chapter of Unit 5, *Energy, Maintenance, and
+Environmental Exchange*: ten sections (m46432, m46427, m46429, m46431, m46433,
+m46443, m46435, m46424, m46434, m46446; intro m46430), run the same day as
+chapter 24 from `docs/briefs/anatomy-physiology/run.md`, with ten Opus authors
+launched together, ten Opus checkers, one Opus claim pass, one Opus alt-errata
+verifier, a fresh Fable blind solver, and Sonnet Clerks for the landing page,
+run facts, pins, errata draft, and this entry. It has 23 vendored images
+(2600–2629, not contiguous). The source carries 51 exercises (30 Review, 21
+Critical Thinking, 0 Interactive Link Questions), the second chapter with
+none; it is also the first whose intro module carries an Interactive Link
+note, which renders as a callout on the landing page. The pages carry 111
+graded items solved blind. Errata 2730–2782 (53 entries, 44
+Reviewed-not-errata bullets besides). The run is committed at close-out.
+
+Eight rulings were reserved before the claim pass (2730–2737). 25.5's Review
+Question "Systemic blood pressure must stay above 60 so that the proper amount
+of filtration occurs" was keyed "false" though the module's text makes it true,
+so the key became true with a key deviation (2730). 25.4's first Critical
+Thinking model answer listed the PCT among the structures of the renal
+corpuscle (2731), and the Renin–Angiotensin–Aldosterone caption said renin
+"converts the pro-enzyme angiotensin I" (2732). 25.3's Review Question option
+"it is displace by the heart" was replaced in place and recorded as an options
+deviation (2733). 25.6's Summary "juxtaglomerular nephrons" became
+juxtamedullary (2734) and "cuboidal endothelial cells" became epithelial
+(2735); 25.8's "PO₃⁻" became PO₄³⁻ (2736). The Figure 25.13 caption described a
+"(b)" micrograph that neither the image nor the printed PDF contains, so the
+caption was cut to its (a) sentence with a Source note and a footer clause
+(2737). The 25.3 module is the only one in the September 8 table (its image
+2611 was replaced in place; the CNXML is unchanged); no wording difference
+from the PDF was found in any of the ten modules.
+
+The solve read 111 graded items on ten pages: 111 agreed, 0 disagreed, 0
+flagged, 0 unresolved, after one parent remap (25.5 item 13, where an option
+swap changed the hash). The solver noted that the 25.5 Review Question 3
+Source note reveals the key by elimination on a two-option item; it was kept,
+being the chapter 22 house form placed after the block. The parent added an
+accept for edema|oedema to a 25.5 recall, and the carry rule re-hashed it. The
+keys gate confirmed 6530 (baseline 6420), coverage 3847 of 3847, and the pins
+moved 753 to 763 and 144 to 154.
+
+The checkers found no defects on 25.1, 25.7, and 25.9; 25.2 had one defect and
+four concerns, 25.3 three defects, 25.4 six, 25.6 five, 25.10 two; the rest
+were small. The claim pass found 17 findings, all accepted after the parent
+read each cited sentence or source (2738–2754): 200 liters given as "189
+quarts" (211, F1, 2738); the 25.2 Summary's 250 mL against the body's 300 to
+400 mL (F2, 2739); the empty bladder's "columnar" epithelium, cuboidal (F3,
+2740); the hilum order, vein, artery, pelvis (F4, 2741); renin's 304 amino
+acids, 340 (F5, 2742); autoregulation in "afferent capillaries", arterioles
+(F6, 2743); in 25.6, the collecting duct's 20 percent (10) and the 20–25
+liters of urine (F7, 2744), the Summary's 90 percent before the DCT (80, F8,
+2745), the urea "pumps" (F9, 2746), "transcellular" for paracellular (F10,
+2747), the Na⁺/Cl⁻ symporter, Na⁺/K⁺/2Cl⁻ (F11, 2748), "renal pyramid" for
+cortex (F12, 2749), and "Chlorine" in the table, chloride (F13, 2750); the
+calcitriol name "1,25-hydroxy" (F14, 2751); K⁺ secretion and Cl⁻
+reabsorption under aldosterone (F15, 2752); H₂PO₄⁻ for HPO₄²⁻ (F16, 2753); and
+EPO's 193 amino acids, 166 mature (F17, 2754). Twenty further suspicions went
+to Reviewed-not-errata.
+
+The alt-errata verifier gave 46 verdicts: 38 confirmed and 8 rejected, none
+uncertain. Confirmed source alt defects: the splash alt's "water treatment
+plant" (2755), the "top panel" of 2602 and of two single-drawing 25.4 figures (2757, 2763, 2764),
+2604's "identifies the nerves" (2760), "proximal collecting tubule" in the 2619
+and 2620 alts (2770, 2771), and the cut-off title and alt of the
+Renin–Angiotensin figure (2777). Artwork: "Labium minora" and "Labium majora"
+in 2602 and again in 2604 (2758, 2759). The text typos are "albumen" (2756),
+"principle" twice in 25.4 and once in 25.3 (2761, 2765, 2766), "sack" (2762),
+"though" and a stray "of" (2767, 2768), "consists" (2769), "hypoosomotic"
+(2772), a stray "by" (2773), "CT = 300" in a model answer (2774),
+"vasoconstricton" (2775), the 25.8 table title "RFB" for the image's "RBF"
+(2776), "dieresis" (2778), a lowercase sentence start (2779), "under produced"
+(2780), a space before a full stop (2781), and a doubled verb in a model answer
+(2782). The page's own first alts of 2602 and 2617 and 2629 and the 2621 "1200"
+drawing quirk are Reviewed-not-errata.
+
+Lessons. Run facts Part C read three figures from Part B's quoted source
+alts, calling 2614 and 2615 two-panel drawings and 2613 a micrograph; the
+verifier settled what each is (2614 and 2615 single drawings, 2613 two drawn
+panels with an accurate source alt, no micrograph among them) and found one
+more brief error (the 2629 image prints RBF where the title and PDF say RFB),
+so panel counts in Part C must come from the image, never from Part B's
+inference. A source caption that describes a panel the figure lacks is a
+defect, cut with a Source note. A module of five source items and one glossary
+term still forces author items to meet the per-objective floor (25.10 needed
+three author selfchecks). The first intro module with an Interactive Link note
+needs the callout on the landing page, and the run.md step 5 lesson line
+records it.
+
 ## Chapter 21 (October 26, 2026)
 
 *The Lymphatic and Immune System*, the fourth and last chapter of Unit 4,

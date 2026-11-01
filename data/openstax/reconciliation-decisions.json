@@ -5735,6 +5735,297 @@
       "status": "correct-local-source-defect",
       "errataEntry": 2727,
       "rationale": "The Summary says \"Vitamins are not stored in the body\", but the module's own body says fat-soluble vitamins \"can accumulate in the lipids stored in the body\" (fs-id1612761) and that only the water-soluble vitamins are \"not stored in the body\" (fs-id1813672). The page says \"Water-soluble vitamins are not stored in the body, so they must be obtained regularly from the diet\", with a visible Source note under the Summary and a footer clause. Evidenced by the chapter 24 prose claim pass (F20), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/08-endocrine-regulation-of-kidney-function.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46424",
+      "sourceElementIds": [
+        "fs-id2267360"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2736,
+      "rationale": "The Parathyroid Hormone paragraph writes phosphate as \"PO<sub>3</sub><sup>–</sup>\" (\"It also blocks reabsorption of phosphate (PO3-), causing its loss in the urine\"), but the phosphate ion is PO4 3-, as the book's own tubular reabsorption module prints it in MathML among the ions co-transported with Na+ in the PCT (m46443, fs-id2360633). The page writes PO₄³⁻, with a visible Source note under the paragraph and a footer clause. Ruled by the orchestrator before the chapter 25 wave (run facts Part C), October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/05-physiology-of-urine-formation.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46433",
+      "sourceElementIds": [
+        "fs-id2459453",
+        "fs-id1605435",
+        "fs-id2328382",
+        "fs-id2467078",
+        "fs-id2820838",
+        "fs-id2684477"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2730,
+      "rationale": "The third Review Question is the statement \"Systemic blood pressure must stay above 60 so that the proper amount of filtration occurs.\" with options true and false, keyed B (false). The module's own Net Filtration Pressure paragraph (fs-id2533120) says \"as long as mean arterial pressure is above approximately 60 mm Hg, the pressure will be adequate to maintain glomerular filtration. Blood pressures below this level will impair renal function and cause systemic disorders that are severe enough to threaten survival\", so the statement is true by the module and no sentence makes false defensible. The page keys option A (true), with the options and their order unchanged, a visible Source note after the item, and a footer sentence; the keys gate's disclosed-deviation list records it as kind key. Ruled by the orchestrator before the chapter 25 wave (run facts Part C), confirmed by the chapter 25 alt-errata verifier, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/04-microscopic-anatomy-of-the-kidney.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46431",
+      "sourceElementIds": [
+        "fs-id3037983",
+        "fs-id2344330",
+        "fs-id2379562",
+        "fs-id2025585",
+        "fs-id2125612"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2731,
+      "rationale": "The first Critical Thinking Question asks which structures make up the renal corpuscle and its model answer is \"the glomerulus, Bowman's capsule, and PCT\". The module's Renal Corpuscle paragraph (fs-id2001225) says the corpuscle \"consists of a tuft of capillaries called the glomerulus that is largely surrounded by Bowman's (glomerular) capsule\" and that the capsule directs the filtrate to the PCT, and the m46429 glossary says the renal corpuscle \"consists of the glomerulus and Bowman's capsule\", so the PCT is the next segment, not part of the corpuscle. The page's model answer names only the glomerulus and Bowman's capsule, with a visible Source note under the item and a footer clause. Ruled by the orchestrator before the chapter 25 wave (run facts Part C), confirmed by the chapter 25 alt-errata verifier, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/04-microscopic-anatomy-of-the-kidney.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46431",
+      "sourceElementIds": [
+        "fig-ch26_04_04"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2732,
+      "rationale": "The caption of the Renin-Angiotensin-Aldosterone figure (print Figure 25.14) says \"The enzyme renin converts the pro-enzyme angiotensin I\". Renin acts on angiotensinogen to produce angiotensin I (paragraph fs-id2800783 and the glossary), and the image draws the liver releasing angiotensinogen into the blood ahead of the first enzyme reaction, so the pro-enzyme is angiotensinogen. The page's caption reads \"converts the pro-enzyme angiotensinogen to angiotensin I\", with a visible Source note under the figure and a footer clause. Ruled by the orchestrator before the chapter 25 wave (run facts Part C), confirmed by the chapter 25 alt-errata verifier against the image, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/03-gross-anatomy-of-the-kidney.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46429",
+      "sourceElementIds": [
+        "fs-id2415782",
+        "fs-id2714759",
+        "fs-id2341724",
+        "fs-id1881065",
+        "fs-id2212775",
+        "fs-id2795285"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2733,
+      "rationale": "The Review Question \"The right kidney is slightly lower because ________.\" prints the distractor \"it is displace by the heart\", which drops the d of \"displaced\" (the key, \"it is displaced by the liver\", shows the intended form). The page prints \"it is displaced by the heart\" as option B, with the key (A) and the other options and their order unchanged and a footer sentence; the keys gate's disclosed-deviation list records it as kind options. Ruled by the orchestrator before the chapter 25 wave (run facts Part C), confirmed by the chapter 25 alt-errata verifier, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/06-tubular-reabsorption.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46443",
+      "sourceElementIds": [
+        "fs-id1165447823674"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2734,
+      "rationale": "The Chapter Review says \"The descending loop of the juxtaglomerular nephrons reaches an osmolarity of up to 1200 mOsmol/kg\". The book names two classes of nephron, cortical and juxtamedullary (m46429 glossary: juxtamedullary nephrons have loops of Henle that extend into the renal medulla; this module's Loop of Henle section: \"Juxtamedullary nephrons have loops that extend variable distances, some very deep into the medulla\"), and the juxtaglomerular apparatus is a structure, not a class of nephron. The page reads \"juxtamedullary nephrons\", with a visible Source note under the paragraph and a footer clause. Ruled by the orchestrator before the chapter 25 wave (run facts Part C) and judged right by the chapter 25 prose claim pass, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/06-tubular-reabsorption.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46443",
+      "sourceElementIds": [
+        "fs-id2360633"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2735,
+      "rationale": "The PCT paragraph says \"In the PCT, there is a single layer of simple cuboidal endothelial cells against the basement membrane\". The cells line a kidney tubule, not a blood vessel, so they are epithelial; m46431 (the PCT's simple cuboidal cells with a brush border) and this module's own \"simple cuboidal epithelium\" for the ascending loop agree. The page reads \"epithelial cells\", with a visible Source note under the paragraph and a footer clause. Ruled by the orchestrator before the chapter 25 wave (run facts Part C) and judged right by the chapter 25 prose claim pass, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/04-microscopic-anatomy-of-the-kidney.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46431",
+      "sourceElementIds": [
+        "fig-ch26_04_03"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2737,
+      "rationale": "The caption of the Juxtaglomerular Apparatus figure (print Figure 25.13) reads \"(a) The JGA allows specialized cells to monitor the composition of the fluid in the DCT and adjust the glomerular filtration rate. (b) This micrograph shows the glomerulus and surrounding structures. LM x 1540. (Micrograph provided by the Regents of University of Michigan Medical School (c) 2012)\", but the vendored image holds only the drawing marked (a), and the printed PDF page 1167 also shows only the drawing under the full caption (page 1166 ends in blank space). The page keeps the first sentence without its (a) marker and cuts the (b) sentence and the micrograph credit, with a visible Source note under the figure and a footer clause that names both cuts. Found by the chapter 25 alt-errata verifier from the image and the PDF page, ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/01-physical-characteristics-of-urine.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46432",
+      "sourceElementIds": [
+        "fs-id2286233"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2738,
+      "rationale": "The first paragraph says \"The glomeruli create about 200 liters (189 quarts) of this filtrate every day\". At the 0.946 liter per quart the book's other conversions use (m46416 fs-id1909687, m46512 fs-id1644865, m46603 fs-id3239674), 200 liters is 211 quarts; 189 quarts is the conversion of about 180 liters, the GFR-derived daily filtrate. The page prints 211 quarts, with a visible Source note under the paragraph and a footer clause. Evidenced by the chapter 25 prose claim pass (F1), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/02-gross-anatomy-of-urine-transport.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46427",
+      "sourceElementIds": [
+        "fs-id2352128"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2739,
+      "rationale": "The Chapter Review says incontinence results \"in voiding when the bladder contains about 250 mL urine\", but the Micturition Reflex paragraph (fs-id2124488) says \"voluntary constraint fails with resulting incontinence, which will occur as bladder volume approaches 300 to 400 mL\"; 250 mL lies outside that range. The page's Summary prints \"about 300 to 400 mL\", with a visible Source note and a footer clause. Evidenced by the chapter 25 prose claim pass (F2), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/02-gross-anatomy-of-urine-transport.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46427",
+      "sourceElementIds": [
+        "fs-id2978014"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2740,
+      "rationale": "The Bladder paragraph says the empty bladder's transitional epithelium \"resembles columnar epithelia\", but m46048 (Section 4.2, fs-id1283151) describes it as having \"cuboidal apical cells with convex, umbrella shaped, apical surfaces\" when the bladder is empty. The page prints \"cuboidal\", with a visible Source note under the paragraph and a footer clause. Evidenced by the chapter 25 prose claim pass (F3), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/03-gross-anatomy-of-the-kidney.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46429",
+      "sourceElementIds": [
+        "fs-id1764618"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2741,
+      "rationale": "The Renal Hilum paragraph says \"The artery, vein, and renal pelvis are arranged in an anterior-to-posterior order\", but at the hilum the vein is in front, the artery in the middle, and the pelvis and ureter behind (Gray's Anatomy of the Human Body, 20th ed., 1918, p. 1219: \"The vein is in front, the artery in the middle, and the ureter behind and directed downward\"). The page prints \"The vein, artery, and renal pelvis\", with a visible Source note citing Gray's and a footer clause. Evidenced by the chapter 25 prose claim pass (F4), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/04-microscopic-anatomy-of-the-kidney.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46431",
+      "sourceElementIds": [
+        "fs-id2800783"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2742,
+      "rationale": "The paragraph says \"Active renin is a protein comprised of 304 amino acids\", but the mature human renin chain is 340 residues: the 406-residue precursor loses a 20-residue pre segment and a 46-residue pro segment (Imai et al., PNAS 80(24):7405-7409, 1983, doi:10.1073/pnas.80.24.7405; UniProt P00797, chain 67-406). The page prints \"340 amino acids\", with a visible Source note under the paragraph and a footer clause. Evidenced by the chapter 25 prose claim pass (F5), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/05-physiology-of-urine-formation.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46433",
+      "sourceElementIds": [
+        "fs-id2533120"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2743,
+      "rationale": "The paragraph places autoregulating smooth muscle in \"the afferent capillaries\" and says \"the same capillaries relax\"; the vessel that supplies the glomerulus and carries that muscle is the afferent arteriole (m46435, Arteriole Myogenic Mechanism: \"This mechanism works in the afferent arteriole that supplies the glomerulus\"; m46431 and m46429 agree). The page prints \"afferent arterioles\" and \"the same arterioles\", with a visible Source note under the paragraph and a footer clause. Evidenced by the chapter 25 prose claim pass (F6), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/06-tubular-reabsorption.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46443",
+      "sourceElementIds": [
+        "fs-id1165447772751"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2744,
+      "rationale": "The paragraph says \"about 20 percent of the original water is still present\" at the DCT to collecting duct transition and \"about 20-25 liters of urine would be produced\"; the module's opening paragraph (fs-id2785110) has \"About 10 percent (about 18 L) reaches the collecting ducts\", the Chapter Review and the water row of the first table (67 + 15 + 8 = 90 percent recovered) agree, and 20 percent of 180 L would be 36 L. The page prints about 10 percent and about 18 liters and keeps the sodium figure as printed, with a visible Source note and a footer clause. Evidenced by the chapter 25 prose claim pass (F7), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/06-tubular-reabsorption.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46443",
+      "sourceElementIds": [
+        "fs-id1165447823674"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2745,
+      "rationale": "The Chapter Review says \"Nearly 90 percent of water is recovered before the forming urine reaches the DCT, which will recover another 10 percent\", but the module has about 80 percent recovered before the DCT (fs-id1165447826911) and 90 percent before the collecting ducts (the Chapter Review's own first paragraph). The page prints \"about 80 percent\", with a visible Source note and a footer clause. Evidenced by the chapter 25 prose claim pass (F8), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/06-tubular-reabsorption.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46443",
+      "sourceElementIds": [
+        "fs-id1165447767387",
+        "fs-id1165447823674"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2746,
+      "rationale": "The module says the collecting ducts \"have urea pumps that actively pump urea into the interstitial spaces\" (fs-id1165447767387) and the Chapter Review that they \"actively pump urea into the medulla\"; the module's first table gives urea's reabsorption in the medullary collecting ducts as diffusion, and ADH induces the insertion of urea transporters (fs-id2652460). The page has urea diffusing out of the medullary collecting ducts through ADH-regulated urea transporters in both places, with a visible Source note and a footer clause. Evidenced by the chapter 25 prose claim pass (F9), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/06-tubular-reabsorption.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46443",
+      "sourceElementIds": [
+        "fs-id2360633"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2747,
+      "rationale": "The PCT paragraph calls the lateral diffusion of K+, Ca++, and Mg++ \"between adjacent cell membranes\" \"(transcellular)\", but movement between adjacent cells is the paracellular route, the word the module uses for the same movement in the Ascending Loop section (fs-id1165447849252). The page prints \"paracellular\", with a visible Source note and a footer clause. Evidenced by the chapter 25 prose claim pass (F10), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/06-tubular-reabsorption.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46443",
+      "sourceElementIds": [
+        "fs-id1165447849252",
+        "fs-id1165447773231"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2748,
+      "rationale": "The Ascending Loop paragraph names the apical carrier of the thick ascending limb \"Na+/Cl- symporters\", but the same paragraph's next sentences describe K+ entering through the symporters and leaving one Na+ and two Cl-, and the module later names the \"Na+/K+/2Cl- symporter in the apical membrane\" (fs-id1165447773231). The page prints \"Na+/K+/2Cl- symporters\", with a visible Source note and a footer clause. Evidenced by the chapter 25 prose claim pass (F11), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/06-tubular-reabsorption.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46443",
+      "sourceElementIds": [
+        "fs-id1165447773231"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2749,
+      "rationale": "The paragraph says Na+ and HCO3- are excreted \"into the interstitial fluid of the renal pyramid\" from PCT cells; the PCT lies in the cortex (m46429, fs-id2506359) and the renal pyramids are in the medulla (m46429 glossary). The page prints \"the renal cortex\", with a visible Source note and a footer clause. Evidenced by the chapter 25 prose claim pass (F12), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/06-tubular-reabsorption.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46443",
+      "sourceElementIds": [
+        "tbl-ch26_06"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2750,
+      "rationale": "The filtered-load table names the third row \"Chlorine\"; what is filtered and reabsorbed is the chloride ion, which the module's other table (tbl-ch26_05) names \"Chloride\". The page's table reads \"Chloride\", with a visible Source note under the table and a footer clause. Evidenced by the chapter 25 prose claim pass (F13), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/08-endocrine-regulation-of-kidney-function.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46424",
+      "sourceElementIds": [
+        "fs-id2267360"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2751,
+      "rationale": "The Parathyroid Hormone paragraph glosses calcitriol as \"1,25-hydroxycholecalciferol\"; calcitriol carries two hydroxyl groups and its name is 1,25-dihydroxycholecalciferol, as m46446 (fs-id1586933) prints it. The page prints 1,25-dihydroxycholecalciferol, with a visible Source note under the paragraph and a footer clause. Evidenced by the chapter 25 prose claim pass (F14), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/09-regulation-of-fluid-volume-and-composition.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46434",
+      "sourceElementIds": [
+        "fs-id2754247"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2752,
+      "rationale": "The Regulation of Extracellular K+ paragraph says the negative electrical gradient from aldosterone-driven Na+ recovery \"promotes the secretion of K+ and Cl- into the lumen\"; a lumen-negative gradient drives the anion Cl- out of the lumen, as m46443 says of the collecting duct (\"promotes the movement of Cl- out of the lumen into the interstitial space by a paracellular route\") and as its first table lists chloride as reabsorbed and never secreted. The page says the gradient promotes the secretion of K+ and the reabsorption of Cl-, with a visible Source note and a footer clause. Evidenced by the chapter 25 prose claim pass (F15), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/09-regulation-of-fluid-volume-and-composition.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46434",
+      "sourceElementIds": [
+        "fs-id2267433"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2753,
+      "rationale": "The paragraph says secreted hydrogen ions are buffered by \"H2PO4- (dihydrogen phosphate ion)\"; dihydrogen phosphate is the weak acid of the phosphate pair, and the species that picks up H+ is monohydrogen phosphate (HPO4 2-), as m46409 (Section 26.4, fs-id1882970) says. The page names HPO4 2- as the buffer and H2PO4- as what it forms, with a visible Source note and a footer clause. Evidenced by the chapter 25 prose claim pass (F16), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/25-the-urinary-system/10-the-urinary-system-and-homeostasis.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46446",
+      "sourceElementIds": [
+        "fs-id2801571"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2754,
+      "rationale": "The Erythropoiesis paragraph says \"EPO is a 193-amino acid protein\"; 193 residues is the precursor including its 27-residue signal peptide, and the secreted hormone is 166 residues (Lin et al., PNAS 82(22):7580-7584, 1985, doi:10.1073/pnas.82.22.7580). The page prints \"166-amino acid\", with a visible Source note citing Lin et al. and a footer clause. Evidenced by the chapter 25 prose claim pass (F17), ruled by the orchestrator, October 31, 2026."
     }
   ]
 }
