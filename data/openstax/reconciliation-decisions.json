@@ -6026,6 +6026,144 @@
       "status": "correct-local-source-defect",
       "errataEntry": 2754,
       "rationale": "The Erythropoiesis paragraph says \"EPO is a 193-amino acid protein\"; 193 residues is the precursor including its 27-residue signal peptide, and the secreted hormone is 166 residues (Lin et al., PNAS 82(22):7580-7584, 1985, doi:10.1073/pnas.82.22.7580). The page prints \"166-amino acid\", with a visible Source note citing Lin et al. and a footer clause. Evidenced by the chapter 25 prose claim pass (F17), ruled by the orchestrator, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/26-fluid-electrolyte-and-acid-base-balance/05-disorders-of-acid-base-balance.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46413",
+      "sourceElementIds": [
+        "fs-id2102407"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2784,
+      "rationale": "The paragraph after table tbl-ch27_02 says \"The first three of the eight causes of metabolic acidosis listed are medical (or unusual physiological) conditions\", but the table lists nine causes (Diarrhea, Uremia, Diabetic ketoacidosis, Strenuous exercise, Methanol, Paraldehyde, Isopropanol, Ethylene glycol, Salicylate/aspirin), and the paragraph's own next sentences account for all nine (three medical conditions, strenuous exercise, and \"the last five causes\"). The page says \"nine\", with a visible Source note after the paragraph and a footer clause; no item is keyed to the count. Ruled in the chapter 26 run facts (Part C) before the authoring wave, October 31, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/26-fluid-electrolyte-and-acid-base-balance/05-disorders-of-acid-base-balance.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46413",
+      "sourceElementIds": [
+        "tbl-ch27_02"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2802,
+      "rationale": "Table tbl-ch27_02 lists \"Isopropanol | Propionic acid*\" as a cause of metabolic acidosis; isopropanol is metabolized to acetone and causes no metabolic acidosis, its intoxication presenting with hyperosmolality alone (Kraut JA, Kurtz I, Clin J Am Soc Nephrol 2008;3(1):208-225, doi:10.2215/CJN.03220807). The row is kept as printed, so the table's nine causes (erratum 2784's count) stand, with a visible Source note after the table and a footer clause; Isopropanol is removed from the page's sortbins. Evidenced by the chapter 26 prose claim pass, ruled by the orchestrator, November 1, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/26-fluid-electrolyte-and-acid-base-balance/02-water-balance.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46416",
+      "sourceElementIds": [
+        "fs-id1883204",
+        "fs-id1972430",
+        "fs-id1340253"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2794,
+      "rationale": "The first Critical Thinking Question's solution (exercise fs-id1883204) says ADH causes the collecting tubule cells \"to move water channel proteins called aquaporins from the sides of the cells to the apical surface\"; the module's own Role of ADH paragraph (fs-id1850871) says \"from the interior of the cells to the apical surface\", and its aquaporin figure (fig-ch27_02_03) draws them in storage vesicles inside the cell. The page's model answer and its rubric checkpoint say \"from the interior of the cells\", with a visible Source note after the selfcheck and a footer clause. Evidenced by the chapter 26 prose claim pass (F1), ruled by the orchestrator, November 1, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/26-fluid-electrolyte-and-acid-base-balance/02-water-balance.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46416",
+      "sourceElementIds": [
+        "fs-id2030872",
+        "fs-id1540155",
+        "fs-id1540224"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2803,
+      "rationale": "The Regulation of Water Intake paragraph (fs-id2030872) says \"Osmolality is the ratio of solutes in a solution to a volume of solvent in a solution\", and the glossary entry for plasma osmolality (fs-id1540155) says \"ratio of solutes to a volume of solvent in the plasma\"; osmolality is expressed in osmoles of solute per kilogram of solvent, while the per-volume ratio is osmolarity (National Library of Medicine, MeSH, \"Osmolar Concentration\"). The page says \"to a mass (kilogram) of solvent\" in the body sentence and \"to a mass of solvent in the plasma\" in the Key terms entry, with one visible Source note after the body paragraph and a footer clause naming both places. Evidenced by the chapter 26 prose claim pass (F10), ruled by the orchestrator, November 1, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/26-fluid-electrolyte-and-acid-base-balance/03-electrolyte-balance.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46414",
+      "sourceElementIds": [
+        "tbl-ch27_01"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2795,
+      "rationale": "Table tbl-ch27_01 (Electrolyte and Ion Reference Values) gives the Plasma cells for calcium as \"2.15-2.55 (mmol/day)\" and for phosphate as \"0.81-1.45 (mmol/day)\"; a plasma value is a concentration, the table's Plasma column gives the other four ions in mM, and normal serum calcium is about 2.20-2.60 mmol/L (Merck Manual Professional, \"Overview of Disorders of Calcium Concentration\"). The page prints both Plasma cells in (mM); the urine cells, daily outputs, keep mmol/day. Visible Source note after the table and a footer clause; no item is keyed to a table value or unit. Evidenced by the chapter 26 prose claim pass (F2), ruled by the orchestrator, November 1, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/26-fluid-electrolyte-and-acid-base-balance/03-electrolyte-balance.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46414",
+      "sourceElementIds": [
+        "fs-id1721298"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2796,
+      "rationale": "The Bicarbonate paragraph says \"Thus, over 90 percent of the CO2 is converted into bicarbonate ions\"; this book's Section 22.5, Transport of Gases, says about 70 percent of the carbon dioxide that diffuses into the blood is transported to the lungs as bicarbonate. The page says \"about 70 percent\", with a visible Source note linking the Section 22.5 page and a footer clause; no item is keyed to the share. Evidenced by the chapter 26 prose claim pass (F3), ruled by the orchestrator, November 1, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/26-fluid-electrolyte-and-acid-base-balance/03-electrolyte-balance.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46414",
+      "sourceElementIds": [
+        "fs-id1355539"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2797,
+      "rationale": "The Hyperkalemia paragraph says the heart \"won't relax after a contraction, and will effectively 'seize' and stop pumping blood\"; this book's Section 19.4, Cardiac Physiology (m46672, fs-id1587477), says hyperkalemia \"causes the heart to become weak and flaccid, and ultimately to fail\". The page says the heart \"becomes weak and flaccid and ultimately stops pumping blood, which is fatal within minutes\", with a visible Source note linking the Section 19.4 page and a footer clause; no item is keyed to the sentence. Evidenced by the chapter 26 prose claim pass (F4), ruled by the orchestrator, November 1, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/26-fluid-electrolyte-and-acid-base-balance/03-electrolyte-balance.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46414",
+      "sourceElementIds": [
+        "fs-id2003025"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2798,
+      "rationale": "The Calcium paragraph says \"A little more than one-half of blood calcium is bound to proteins, leaving the rest in its ionized form\"; about 40 percent of blood calcium is protein-bound and ionized calcium is about 50 percent of the total, the remainder complexed with anions (Merck Manual Professional, \"Overview of Disorders of Calcium Concentration\"). The page says \"A little less than one-half of blood calcium is bound to proteins; most of the rest is in its ionized form\", with a visible Source note and a footer clause; no item is keyed to the fraction. Evidenced by the chapter 26 prose claim pass (F5), ruled by the orchestrator, November 1, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/26-fluid-electrolyte-and-acid-base-balance/03-electrolyte-balance.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46414",
+      "sourceElementIds": [
+        "fs-id1891427"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2804,
+      "rationale": "The Hypocalcemia paragraph says hypoparathyroidism may follow removal of the thyroid gland \"because the four nodules of the parathyroid gland are embedded in it\"; the parathyroid glands are separate glands, most people having four, embedded in the posterior surface of the thyroid gland, as this book's Section 17.5, The Parathyroid Glands, says. The page says \"because the four parathyroid glands are embedded in its posterior surface\", with a visible Source note linking the Section 17.5 page and a footer clause; the page's hypocalcemia multiple choice quotes only the clause before it and is unchanged. Evidenced by the chapter 26 prose claim pass (F11), ruled by the orchestrator, November 1, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/26-fluid-electrolyte-and-acid-base-balance/04-acid-base-balance.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46409",
+      "sourceElementIds": [
+        "fig-ch27_04_02",
+        "fs-id1632998"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2799,
+      "rationale": "The caption of figure fig-ch27_04_02 (Respiratory Regulation of Blood pH, media fs-id1632998) says \"The respiratory system can reduce blood pH by removing CO2 from the blood\"; removing CO2 raises pH, as the module itself says (fs-id1725236: \"The loss of CO2 from the body reduces blood levels of carbonic acid and thereby adjusts the pH upward\"; fs-id1638084: \"The respiratory tract can adjust the blood pH upward in minutes by exhaling CO2\") and as the figure's own acidosis column draws. The page says \"raise\", with a visible Source note after the figure and a footer clause. Evidenced by the chapter 26 prose claim pass (F6), ruled by the orchestrator, November 1, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/26-fluid-electrolyte-and-acid-base-balance/04-acid-base-balance.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46409",
+      "sourceElementIds": [
+        "fs-id1473396",
+        "fs-id810193"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2800,
+      "rationale": "The Ketoacidosis box (fs-id1473396) says \"Treatment for diabetic coma is ingestion or injection of sugar\" (fs-id810193); sugar treats hypoglycemic coma, while diabetic ketoacidosis is treated by fluid and electrolyte replacement and insulin (Kitabchi AE, Umpierrez GE, Miles JM, Fisher JN, \"Hyperglycemic Crises in Adult Patients With Diabetes,\" Diabetes Care 2009;32(7):1335-1343, doi:10.2337/dc09-9032). The page says \"the replacement of fluids and electrolytes and the administration of insulin\", with a visible Source note citing Kitabchi et al. at the end of the box and a footer clause. Evidenced by the chapter 26 prose claim pass (F7), ruled by the orchestrator, November 1, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/26-fluid-electrolyte-and-acid-base-balance/04-acid-base-balance.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46409",
+      "sourceElementIds": [
+        "fs-id1381492"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2801,
+      "rationale": "The Renal Regulation paragraph fs-id1381492 says salts in the filtrate \"such as sulfates, phosphates, or ammonia\" that capture hydrogen ions leave bicarbonate unconserved and \"contribute to a pH imbalance and acidosis\"; phosphate and ammonia buffering of secreted H+ is how the kidney excretes acid while each secreted H+ leaves a new bicarbonate ion to enter the blood, as the book's Section 25.9 says (m46434: fs-id2267433, secreted H+ buffered by phosphate or ammonia in the forming urine; fs-id2016656, \"The body rids itself of excess H+ and raises blood pH\"). The page says \"Salts in the filtrate, such as phosphates, and ammonia can also capture secreted hydrogen ions. The hydrogen ions are then excreted in the urine, and each one secreted leaves a new bicarbonate ion in the tubule cell to enter the blood, which raises blood pH.\", with a visible Source note linking Section 25.9 and a footer clause. Evidenced by the chapter 26 prose claim pass (F8), ruled by the orchestrator, November 1, 2026."
     }
   ]
 }

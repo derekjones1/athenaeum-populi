@@ -292,7 +292,11 @@ book's module ids all begin `m45`/`m46` — and the "Reviewed and *not*
 errata" lines) and name that file in the prompt. A bare `grep 'Anatomy'`
 catches only the headings, and the chapter 16 Part B drafter had to re-grep
 the whole file to find the three entries that quote chapter 16 sentences
-*(chapter 16)*. A parent ruling that a source KEY stands is provisional
+*(chapter 16)*. A finding that would DROP a table row the page's own
+counted correction relies on keeps the row as printed with a Source note
+instead: 26.5's isopropanol row (erratum 2802) stayed because the "nine
+causes" Source note (2784) counts it, and the member left only the
+`sortbins` *(chapter 26)*. A parent ruling that a source KEY stands is provisional
 until the claim pass has read the module: chapter 16's parent ruled 16.5's
 "processing visual information" key sound, and the claim pass found the
 module's own sentence attributing visual processing to the cerebrocerebellum,
@@ -351,7 +355,10 @@ for the first round and 300k after the checker and claim rounds, no resume
 needed *(chapter 20)*. A prompt line that states a section's figure count quotes
 the CNXML `<figure` count, never the PDF page span: chapter 23's parent told
 the 23.5 author "11 figures" from its eleven PDF pages; the module has six
-*(chapter 23)*.
+*(chapter 23)*. The author prompts' PDF page ranges are generated from the
+step-6 drafter's VERIFIED ranges, not the parent's first read: chapter 26's
+parent wrote the prompts before the drafter reported, and the 26.3 author
+found its section ran one page past the range it was given *(chapter 26)*.
 A checker's "concern" that a hint rules out distractors is a defect to
 apply, not a note (21.1's three hints named the table or the reasoning
 step); and a Part B hedge ("the lint's digit-superscript rule applies")
@@ -372,7 +379,11 @@ that may lawfully stand ungraded
 is an Interactive Link Question whose answer the module does not fix, and
 it still stands as a prompt in its callout and is counted in the footer.
 Verify every checker finding against the image or the raw CNXML before
-relaying it — some are wrong.
+relaying it — some are wrong. A checker's proposed `accept` member is
+grepped in the module before it is relayed: 26.2's checker proposed three
+("body weight", "water channels", "aquaporin channels") the module never
+prints, the parent relayed them, and the author had to push back under the
+brief's printed-synonym rule *(chapter 26)*.
 
 Claim-pass findings: the parent verifies each against the cited evidence
 (a same-book quote is confirmed with the CNXML's tags stripped first — a
@@ -548,9 +559,9 @@ the session.
    build-size cap this book is expected to trip (playbook "Build budgets")
    is measured only here. The axe suite reads only the routes in
    `REPRESENTATIVE_PAGES` (`tests/accessibility.spec.mjs`), which holds
-   Biology and Microbiology section and check pages but no Anatomy and
-   Physiology route yet: add a section page with this book's feature boxes
-   and figures, and each unit Knowledge Check as it lands.
+   Biology and Microbiology pages and two Anatomy and Physiology section
+   pages (5.1 and 6.3, every callout and figure shape): add a route only for
+   a shape no listed page has, and each unit Knowledge Check as it lands.
 7. New lessons: a one-line rule into the playbook section it belongs to;
    the narrative into `docs/history/anatomy-physiology.md`; a lint or test
    where one can hold it. Then the session memory file.

@@ -2036,6 +2036,142 @@ three author selfchecks). The first intro module with an Interactive Link note
 needs the callout on the landing page, and the run.md step 5 lesson line
 records it.
 
+## Chapter 26 (November 1, 2026)
+
+*Fluid, Electrolyte, and Acid-Base Balance*, the last chapter of Unit 5,
+*Energy, Maintenance, and Environmental Exchange*, which this run completes:
+five sections (m46411, m46416, m46414, m46409, m46413; intro m46415), run
+October 31 and November 1 from `docs/briefs/anatomy-physiology/run.md`, with
+five Opus authors launched together, five Opus checkers, one Opus claim pass,
+one Opus alt-errata verifier, a fresh Fable blind solver, and Sonnet Clerks
+for the landing page, run facts, pins, errata draft, and this entry. It has 18
+vendored images: the `Venus_at_us_open_2009` splash, 2701–2716, and
+`2108_Capillary_Exchange`, reused in 26.1 as the first printing of that
+unsuffixed stem (20.3 prints a different `2108_Capillary_ExchangeN` file). The
+source carries 40 exercises (26 Review, 10 Critical Thinking, 4 Interactive
+Link Questions), of which one (26.1's second) is graded and three stand as
+prompts. The graded items were solved blind, 50 of 50 agreeing, 0 flagged,
+after one parent remap of the 26.5 sortbins hash. Errata 2783–2826 (44
+entries, 27 Reviewed-not-errata bullets besides). The run is committed at
+close-out.
+
+The parent read the modules and wrote the rulings before the wave (Part C of
+the run facts). Interactive Link Questions were decided one by one. 26.1's
+first ("from what source is water taken in by the blood?") is a prompt only,
+because no sentence names the interstitial fluid. Its second is a graded
+`selfcheck`, fixed by the body sentence that says fluid enters the capillaries
+at the venule end where hydrostatic pressure is less than osmotic pressure;
+the callout carries the note verbatim, the `question=` carries the pooled
+exercise's one-word variant, and the footer names the difference. 26.3's
+seawater question and 26.5's high-altitude question are prompts, since no
+sentence gives the mechanism the key states ("altitude" occurs nowhere in
+26.5 outside the note and exercise). 26.2 and 26.4 print no interactive note,
+so their footers use 24.2's "0 graded and 0 stand as prompts" sentence. The
+two feature boxes are headed `**Disorders of the Fluid Balance.** *Edema.*`
+(26.1, with the allergic-reaction photograph kept inside the box) and
+`**Disorders of the Acid-Base Balance.** *Ketoacidosis.*` (26.4). The chapter's
+modules print "acid-base" with a hyphen, kept everywhere, as chapter 25's
+pages keep their en dash. Of the three tables, the 26.3 Electrolyte and Ion
+Reference Values table is transcribed only (its four dashed placeholder cells
+printed as an em dash, `Ca⁺⁺` set as Ca²⁺); the 26.5 Common Causes of
+Metabolic Acidosis table is transcribed in full (nine rows, the five
+asterisks and the caption kept) and yields the chapter's one `sortbins`,
+Medical condition against Ingested substance; the 26.5 Types of Acidosis and
+Alkalosis table is transcribed only, its cells being arrows. Notation follows
+the playbook: Unicode ions, chemical equations as Unicode text with the
+reversible arrow set as ⇌, partial pressure as P<sub>CO₂</sub> in prose and
+"carbon dioxide partial pressure (PCO₂)" inside an alt, and every number and
+unit exactly as each sentence prints it. 26.3 is the one module in the
+September 8 table (the aldosterone feedback-loop image replaced in place); the
+author wrote its alt from the vendored WebP, not the PDF's old drawing. Ten
+source defects were ruled before the wave and numbered 2783–2792: "narrows
+ranges" in the intro (2783); "eight causes" where the table lists nine, a
+Source note and a decisions entry (2784); "NaHPO₄" for NaH₂PO₄ (2785);
+"Acid-balance balance" (2786); copper listed twice (2787); H₂PO₄ with no
+charge (2788); a stray comma after NaHCO₃ (2789); "His … his" against "Their"
+in a model answer (2790); "N, then↑" missing a space (2791); and "(see
+equations above)", repointed to the bicarbonate reaction in 26.3 (2792).
+
+The checkers' findings were verified before being relayed. 26.2's checker
+(three defects, three concerns) proposed three accept members, "body weight",
+"water channels", and "aquaporin channels"; the parent relayed them and the
+author pushed back under the printed-synonym rule, since the module never
+prints them, so the parent ruled them removed and kept mass, water channel
+proteins, collecting ducts|collecting tubules, and mucous. 26.1's checker (three
+defects and three concerns) proposed an accept of "pitting edema"; the author
+skipped it because the module prints only "pitting", and the parent accepted
+the skip. 26.3's checker (four defects) proposed "aerobic respiration" and
+"cellular respiration" for a recall; the parent rejected them because the
+module prints neither, and accepted "buffering systems|buffers", which it
+does. 26.4's checker found three defects (hints that printed "respiratory"
+above a Review Question keyed respiratory system, a footer recall-order claim,
+and undisclosed source leaks), and 26.5's found one (a respiratory alkalosis
+recall under-determined against hypocapnia) plus a rubric missing its
+P<sub>CO₂</sub> evidence. The authors applied every accepted fix; no page
+stood unstable after the second round.
+
+The solve read the 50 graded items on five pages: 50 agreed, 0 disagreed, 0
+flagged, 0 unresolved. After the claim pass removed Isopropanol from the
+sortbins, the parent remapped the 26.5 sortbins answer (hash be2fff1ef44b3abb
+to 38b122fe573368b1) with a note and dropped that assignment. The solver's
+notes were matters already ruled (the 60 percent and one-third split, the
+mmol/day unit, the figure caption's "reduce") and accept hints already
+decided. The keys gate confirmed 6584 (baseline 6530), coverage 3887 of 3887
+(the floor was 3847), and the pins moved 763 to 768 and 154 to 159.
+
+The claim pass found 11 findings, all accepted after the parent read each
+(2794–2804): the 26.2 model answer's aquaporins "from the sides of the cells",
+the body saying interior (F1, 2794); the 26.3 table's plasma calcium and
+phosphate in "mmol/day", now mM (F2, 2795); "over 90 percent" of CO₂ as
+bicarbonate, about 70 as 22.5 says (F3, 2796); hyperkalemia making the heart
+"seize", weak and flaccid as 19.4 says (F4, 2797); calcium "a little more
+than one-half" bound, a little less (F5, 2798); the Respiratory Regulation
+caption's "reduce blood pH", raise (F6, 2799); the ketoacidosis box's sugar
+treatment for diabetic coma, now fluids, electrolytes, and insulin (F7,
+2800); the filtrate-buffer paragraph, rewritten per 25.9 (F8, 2801);
+osmolality per "volume" of solvent, now mass, in the body and the glossary
+(F10, 2803); and "four nodules of the parathyroid gland", four parathyroid
+glands in the posterior surface (F11, 2804). F9 (2802) kept the isopropanol
+row as printed with a Source note, because the "nine causes" correction
+(2784) counts it, and removed the member only from the sortbins. The
+true-distractor "prolonged use of diuretics" stands, on the claim pass's own
+recommendation.
+
+The alt-errata verifier gave 50 verdicts: 44 confirmed, 4 rejected, 2
+uncertain. The confirmed source alt defects are in errata 2805–2826: the
+2701 alt's "a single lung" and its omission of the Blood (50%) label (2805,
+2806), the 2702 alt naming extracellular fluid and never plasma (2808), the
+2703 percentages the image does not print (2809), the 2704 ions spelled out
+and its bars left without values (2810, 2811), the 2108 alt repeating its
+caption (2812), the 2706 glucose placed only outside the cell (2813), the
+2708 "dry mouth sensed by osmoreceptors" and "top-to bottom" (2815, 2816), the
+2710 alt's "three block-shaped cells" (2817), the 2711 alt's ions spelled out
+(2818), the 2712 "that that" (2819), the 2713 omission of "gastric acid" and
+"saline lake water" for Great Salt Lake (2821, 2822), the 2715 alt's cell
+count and "urine" (2823, 2824), and the 2716 alt's "silhouette" and "face,
+hands, and feet" (2825, 2826). Three figure references are filed: the
+infancy-to-adulthood sentence citing 2701 (2807), the Edema box citing the
+allergic-reaction photograph for chronic liver disease (2814), and the
+aldosterone pump sentence citing the 2712 cascade, which draws no pump
+(2820). The Venus splash alt was rejected as a defect and appears under
+Reviewed-not-errata.
+
+Lessons. A prompt that states a section's PDF page range must come from the
+step-6 drafter's verified ranges, not the parent's first read: the 26.3
+author found its section ran one page past the range it was given. A
+checker's proposed `accept` member is grepped in the module before it is
+relayed; 26.2's three unprinted synonyms cost a round. A claim-pass finding
+that would drop a table row which a counted correction already relies on
+keeps the row as printed with a Source note, and the member leaves only the
+`sortbins` (isopropanol, 2802). The axe suite reads only the routes in
+`REPRESENTATIVE_PAGES`, so a route is added only for a shape no listed page
+has. In the playbook, a selfcheck rubric checkpoint is plain text and the lint
+rejects a raw HTML tag there, so a partial pressure in a checkpoint is the
+attribute form `PCO₂`, never `P<sub>CO₂</sub>`; and a compound's hyphen or en
+dash follows its own module, so chapter 26's "acid-base" and chapter 25's
+"acid–base" are never harmonised, and a Knowledge Check item quotes the glyph
+of the page it tests.
+
 ## Chapter 21 (October 26, 2026)
 
 *The Lymphatic and Immune System*, the fourth and last chapter of Unit 4,

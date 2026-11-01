@@ -13,7 +13,7 @@ all three before authoring a section (chapter-run authors: the sections
 `docs/briefs/anatomy-physiology/author.md` names).
 
 Written from the **September 22, 2026 scan** of the pinned source; chapter
-1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, chapter 5 on October 14, 2026, chapter 6 on October 15, 2026, chapters 7, 8, and 9 on October 16, 2026, chapters 10 and 11 on October 18, 2026, chapter 12 on October 20, 2026, chapters 13, 14, and 15 on October 21, 2026, and chapters 16 and 17 on October 24, 2026, chapter 18 on October 25, 2026, and chapter 19 the same day, and chapters 20 and 21 on October 26, 2026, and chapter 22 (Unit 5's first) on October 27, 2026, and chapter 23 on October 28, 2026, and chapters 24 and 25 on October 31, 2026.
+1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, chapter 5 on October 14, 2026, chapter 6 on October 15, 2026, chapters 7, 8, and 9 on October 16, 2026, chapters 10 and 11 on October 18, 2026, chapter 12 on October 20, 2026, chapters 13, 14, and 15 on October 21, 2026, and chapters 16 and 17 on October 24, 2026, chapter 18 on October 25, 2026, and chapter 19 the same day, and chapters 20 and 21 on October 26, 2026, and chapter 22 (Unit 5's first) on October 27, 2026, and chapter 23 on October 28, 2026, and chapters 24 and 25 on October 31, 2026, and chapter 26 (Unit 5's last) on November 1, 2026.
 A rule tagged *(pilot)* or *(chapter N)* came from authoring that chapter;
 the per-chapter record is `docs/history/anatomy-physiology.md`. A
 correction that is not folded back into a rule will be made again.
@@ -484,7 +484,15 @@ Lessons — baseline rules this book's vocabulary makes easy to break:
   (erratum 2584) *(chapter 22)*.
 - **An equation inside `alt` or `longdesc` takes Unicode subscripts**
   (`P₁V₁ = P₂V₂`): the ASCII-formula lint rejects "P1V1" there, and math
-  is never in an attribute *(chapter 22)*.
+  is never in an attribute *(chapter 22)*. A selfcheck rubric checkpoint
+  is plain text too (the lint rejects a raw HTML tag there), so a partial
+  pressure in a checkpoint is the attribute form `PCO₂`, never
+  `P<sub>CO₂</sub>` *(chapter 26)*.
+- **A compound's hyphen or en dash follows its own module.** Chapter 26's
+  modules print "acid-base" with a hyphen and chapter 25's "acid–base"
+  with an en dash; each page keeps its source's glyph, and a Knowledge
+  Check item quotes the glyph of the page it tests — never harmonise
+  across modules *(chapter 26)*.
 - **The distractor-falsifying rule binds every author stem, not only
   sortbins members**: 23.6's first objective had no source item, and any
   author stem stating the liver's role would have made Review Question 1's

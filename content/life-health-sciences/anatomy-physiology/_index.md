@@ -148,12 +148,14 @@ reproduction, development, and inheritance.
   regulation of renal blood flow, endocrine regulation of kidney function,
   the regulation of fluid volume and composition, and the urinary system and
   homeostasis.
+- **Fluid, Electrolyte, and Acid-Base Balance** — body fluids and fluid
+  compartments, water balance, electrolyte balance, acid-base balance, and
+  disorders of acid-base balance.
 
 ## Planned contents
 
 The remaining chapters of Anatomy and Physiology 2e's six units will
 appear in this order:
 
-- **Unit 5: Energy, Maintenance, and Environmental Exchange** — Fluid, Electrolyte, and Acid-Base Balance.
 - **Unit 6: Human Development and the Continuity of Life** — The Reproductive
   System; Development and Inheritance.

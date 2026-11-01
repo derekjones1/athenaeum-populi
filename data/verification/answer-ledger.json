@@ -3059,6 +3059,14 @@
     "result": "agrees"
    }
   },
+  "06514496a210ad31": {
+   "verdict": "ok",
+   "note": "cloze fs-id1321995 sentence 2, key body mass; accept mass",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0651e78081c5e464": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -3865,6 +3873,14 @@
   "0812892fb226cf48": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "0813db26b7a0f215": {
+   "verdict": "ok",
+   "note": "Glossary term respiratory alkalosis; fs-id2044528 'This condition usually occurs when too much CO2 is exhaled...hyperventilation'.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -4887,6 +4903,14 @@
   "0a5212995b6a6565": {
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
+  },
+  "0a53e0761d00b79e": {
+   "verdict": "ok",
+   "note": "source RQ key re-read against CNXML m46409: Proteins have both positive and negative charges on their su",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "0a54e2f8c4ad08cf": {
    "verdict": "ok"
@@ -7526,6 +7550,14 @@
     "result": "agrees"
    }
   },
+  "0fe113318f114b3f": {
+   "verdict": "ok",
+   "note": "hypocalcemia: re-read against the CNXML and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0fe29c1fdcffb8d0": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -8232,6 +8264,14 @@
   "119d4fce0373aeb2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "11a5ffbbc5110d7b": {
+   "verdict": "ok",
+   "note": "re-read against m46411 CNXML and the page",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -9123,6 +9163,14 @@
   "13a22beb7190d289": {
    "verdict": "ok",
    "note": "m66465 critical-thinking solution fs-id1380782 (ATP as energy currency vs. direct bond energy) matches the page's model answer verbatim; all four ===CHECKS=== clauses restate the model answer with no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "13a4bfb9c51ef388": {
+   "verdict": "ok",
+   "note": "aerobic metabolism: cloze key printed verbatim in the cited module sentence; grader-checked",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "13a59a57b8dd4d01": {
    "verdict": "ok",
@@ -18092,6 +18140,14 @@
     "result": "agrees"
    }
   },
+  "26599a9b6064d629": {
+   "verdict": "ok",
+   "note": "RQ fs-id1967912 key A emphysema; fs-id1971541 lists emphysema.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "266b754ddab53470": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -20162,6 +20218,10 @@
     "result": "agrees"
    }
   },
+  "2b18bba04253459e": {
+   "verdict": "ok",
+   "note": "CT fs-id1883204, source solution with claim correction F1 (erratum 2794): 'from the interior of the cells' per fs-id1850871; rubric checkpoint corrected; Source note after the block"
+  },
   "2b197fc4bf1c5dce": {
    "verdict": "ok",
    "note": "Review Question (fs-id2853936, module m66514) — keyed 'D' (all of the above) in the CNXML, matches OpenStax's published site; shipped unmodified. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -20501,6 +20561,14 @@
   "2bd4b2960f770e9b": {
    "verdict": "ok",
    "note": "source exercise fs-id1167661323868 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "2bd66b90f6ab1a6f": {
+   "verdict": "ok",
+   "note": "RQ fs-id1968449, key D urine (fs-id1207337 first sentence; Summary)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -23629,6 +23697,14 @@
     "result": "agrees"
    }
   },
+  "32ae3c6cc452b025": {
+   "verdict": "ok",
+   "note": "chloride: re-read against the CNXML and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "32af630629e64f33": {
    "verdict": "ok",
    "note": "re-read against m46032 CNXML and page text"
@@ -24029,6 +24105,14 @@
    "verdict": "ok",
    "note": "KC 2 8.3 § body The Energy Flow (fs-idp23524720), m66475 — parent re-read against the module"
   },
+  "33a41593d3c8b763": {
+   "verdict": "ok",
+   "note": "cloze fs-id1850871 last sentence (closing clause cut), key aquaporins; accept water channel proteins (module equates)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "33ac0d480af55bfb": {
    "verdict": "ok",
    "note": "body Visual Connection selfcheck; model answer is CNXML solution fs-idp18899936 (m66479) verbatim; rubric checkpoints are clauses of that solution | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -24052,6 +24136,14 @@
   "33b9bc9087b83b4e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "33c25beb250f9a85": {
+   "verdict": "ok",
+   "note": "re-read after checker fixes against m46411 CNXML and the page",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -26227,6 +26319,14 @@
     "result": "agrees"
    }
   },
+  "38b122fe573368b1": {
+   "verdict": "ok",
+   "note": "Sortbins from tbl-ch27_02 + fs-id2102407 first three medical / last five ingested.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "38b1d2f73317bbab": {
    "verdict": "ok",
    "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -26919,6 +27019,14 @@
   "3a271d4bd9fff960": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "3a2ee81e3d5ca2a7": {
+   "verdict": "ok",
+   "note": "re-read against m46411 CNXML and the page",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -29801,6 +29909,10 @@
     "result": "agrees"
    }
   },
+  "405bb254b097509e": {
+   "verdict": "ok",
+   "note": "re-read against m46411 CNXML and the page"
+  },
   "40614c84c9972797": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -30879,6 +30991,14 @@
   "429e520b3be046c5": {
    "verdict": "ok",
    "note": "body cloze from § Chemiosmosis, Proton Motive Force, and Oxidative Phosphorylation: \"Because the ions involved are H + , a pH gradient is also established, with the side of the membrane having the higher concentration of H +…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "42a7a19a81c58b41": {
+   "verdict": "ok",
+   "note": "Summary cloze fs-id1707644 last sentence, key kidneys; accept collecting ducts|collecting tubules (fs-id1697734 'collecting ducts and tubules in the kidney')",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -34043,6 +34163,14 @@
     "result": "agrees"
    }
   },
+  "49c4757a46b1a40b": {
+   "verdict": "ok",
+   "note": "bone: re-read against the CNXML and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "49cc43e4f9495281": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -36415,6 +36543,14 @@
    "verdict": "ok",
    "note": "Degree 12 polynomial has at most 12-1=11 turning points. Matches CNXML ti_03_03_07. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "4f13a963418df0b7": {
+   "verdict": "ok",
+   "note": "sodium: re-read against the CNXML and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4f147b6d0d4a708f": {
    "verdict": "ok",
    "note": "source exercise fs-idm3491952 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -38180,6 +38316,10 @@
     "result": "agrees"
    }
   },
+  "531a3445e92d4740": {
+   "verdict": "ok",
+   "note": ": model answer verbatim from the source solution or the cited module sentences"
+  },
   "531afcc016349b0a": {
    "verdict": "ok",
    "note": "author-built from § Viroids, Check Your Understanding: \"What is the genome of a viroid made of?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -38690,6 +38830,14 @@
   "54177f06378a2267": {
    "verdict": "ok",
    "note": "CT fs-id1525960 model answer = fs-id2052496 verbatim"
+  },
+  "541c34546e6b0f5c": {
+   "verdict": "ok",
+   "note": "re-read after checker fixes against m46411 CNXML and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "5432bda1a99eb389": {
    "verdict": "ok",
@@ -39244,6 +39392,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "55909766fcde806a": {
+   "verdict": "ok",
+   "note": "author selfcheck, model = fs-id2021199 sentences 6-8 verbatim"
   },
   "559eeeb2a05ad9e1": {
    "verdict": "ok",
@@ -41459,6 +41611,14 @@
     "result": "agrees"
    }
   },
+  "5a3ef5c36529becc": {
+   "verdict": "ok",
+   "note": "buffer systems: cloze key printed verbatim in the cited module sentence; grader-checked (accept buffering systems|buffers, module words)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5a3ff194f7a842fd": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -43478,6 +43638,10 @@
     "result": "agrees"
    }
   },
+  "5e8e5c3bc9bad568": {
+   "verdict": "ok",
+   "note": "re-read against m46411 CNXML and the page"
+  },
   "5e963a718fc544a2": {
    "verdict": "ok"
   },
@@ -44043,6 +44207,14 @@
     "result": "agrees"
    }
   },
+  "5ffd46d93073fed3": {
+   "verdict": "ok",
+   "note": "re-read after checker fixes against m46411 CNXML and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "600228c156d69497": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -44370,6 +44542,14 @@
   "60e313e59dc3df00": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "60e9934a83a3bbe4": {
+   "verdict": "ok",
+   "note": "calcium and phosphate: re-read against the CNXML and the page",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -45278,6 +45458,14 @@
   "6362a9e39c3ddfd1": {
    "verdict": "ok",
    "note": "source fs-id1990553 key C; fig-ch25_02_06 tallies ETC 34 ATP",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "63681d5ca89c8faf": {
+   "verdict": "ok",
+   "note": "re-read against m46411 CNXML and the page",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -49898,6 +50086,14 @@
     "result": "agrees"
    }
   },
+  "6f12c685a5da4219": {
+   "verdict": "ok",
+   "note": "source RQ key re-read against CNXML m46409: renal system",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6f164bcdf052cbd3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -51258,6 +51454,10 @@
    "verdict": "ok",
    "note": "Repaired 2026-08-15. '45 is 30% of what number?' had TWO correct options: 45/n=30/100 and 45/30=n/100 are the same proportion by alternation (both give n=150). The alternated distractor was replaced with 30/45=n/100 (n=66.67); the four options now yield 13.50, 13.50, 66.67, 150.00 so only the declared answer is correct. | carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "71f1264ab0a6c5c1": {
+   "verdict": "ok",
+   "note": "re-read against m46411 CNXML and the page"
+  },
   "71f5feed2f4678dc": {
    "verdict": "ok",
    "note": "Practice: y=2sin x+1 with x(t)=t substituted directly gives y(t)=2sin t+1; matches CNXML solution; retype of printed x-form ('2sin x+1') confirmed graded incorrect against the t-keyed answer."
@@ -52585,6 +52785,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "74e2ab202c0b0395": {
+   "verdict": "ok",
+   "note": "source RQ key re-read against CNXML m46409: CO₂ + H₂O ⇌ H₂CO₃",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -56719,6 +56927,14 @@
     "result": "agrees"
    }
   },
+  "7d7460ee251a3871": {
+   "verdict": "ok",
+   "note": "RQ fs-id1378888, key A (fs-id1909687 last two sentences)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7d84b3a3568ae938": {
    "verdict": "ok",
    "note": "parent re-derived Oct 3 2026: C(x)=5x+6500 and R(x)=10x from the water-bottle stem; break-even (1300, 13000) inside the 0-2000 by 0-20000 grid",
@@ -56983,6 +57199,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "7e0984475375137d": {
+   "verdict": "ok",
+   "note": "Author selfcheck; model answer = fs-id1416028 sentences 1 and 3."
   },
   "7e0cfea326470583": {
    "verdict": "ok",
@@ -60085,6 +60305,10 @@
   "84e982762afbb00a": {
    "verdict": "ok"
   },
+  "84ea003e7ce1e16e": {
+   "verdict": "ok",
+   "note": "source CT solution verbatim, re-read against m46409: Describe the control of blood carbonic acid levels through t"
+  },
   "84ebbd846ee3ffbb": {
    "verdict": "ok",
    "note": "body cloze from § introduction: \"The animal diet is the source of materials needed for building DNA and other complex molecules needed for growth, maintenance, and reproduc…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -62595,6 +62819,14 @@
     "result": "agrees"
    }
   },
+  "8aca8b47015199ff": {
+   "verdict": "ok",
+   "note": "cloze fs-id2021199 sentence 'The signals result in ... thicker mucus output'; key mucus printed in body; accept mucous (adjective before 'output')",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8ada270e356e4c71": {
    "verdict": "ok",
    "note": "unkeyed CYU, selfcheck: comparison needs several module sentences | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -63462,6 +63694,14 @@
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "8cd9c9c851757a8b": {
+   "verdict": "ok",
+   "note": "source RQ key re-read against CNXML m46409: hemoglobin",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -64612,6 +64852,14 @@
    "note": "glossary recall: complement system (fs-idp180815136) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "8f8f86ffb60fd936": {
+   "verdict": "ok",
+   "note": "re-read against m46411 CNXML and the page",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -66628,6 +66876,14 @@
     "result": "agrees"
    }
   },
+  "9417b54962312366": {
+   "verdict": "ok",
+   "note": "osmolality: cloze key printed verbatim in the cited module sentence; grader-checked",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "941c115654730a9f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -67714,6 +67970,14 @@
   "9674eda29463384c": {
    "verdict": "ok",
    "note": "Summary cloze, fs-id2592756: \"…used to describe muscles of the body midline\"; mid-line accepted. | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "967acd61614060ac": {
+   "verdict": "ok",
+   "note": "RQ fs-id1381947, key C liquids (Summary: via liquids and food)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -70406,6 +70670,14 @@
     "result": "agrees"
    }
   },
+  "9cc88e0ca68f8b3f": {
+   "verdict": "ok",
+   "note": "re-read against m46411 CNXML and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9cc93f23ce95e10b": {
    "verdict": "ok",
    "note": "source exercise fs-id1635350 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -71431,6 +71703,10 @@
   "9f18a2e6cb898907": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "9f1ac0d171c96397": {
+   "verdict": "ok",
+   "note": "CT fs-id806350; source solution verbatim (pCO2 house form)."
   },
   "9f1b208dbca54689": {
    "verdict": "ok",
@@ -73635,6 +73911,14 @@
     "result": "agrees"
    }
   },
+  "a3b63f538fd5ba1e": {
+   "verdict": "ok",
+   "note": "Author MC; fs-id1906730 respiratory acidosis: kidney increases conservation of bicarbonate and secretion of H+.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a3b970e9872742b7": {
    "verdict": "ok"
   },
@@ -74455,6 +74739,10 @@
     "result": "agrees"
    }
   },
+  "a561098d17819093": {
+   "verdict": "ok",
+   "note": "CT fs-id1854585; source solution with pronouns matched to stem (erratum 2790)."
+  },
   "a565518831e2d45c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -74706,6 +74994,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "a5e140fdcbd0b947": {
+   "verdict": "ok",
+   "note": ": model answer verbatim from the source solution or the cited module sentences"
   },
   "a5e6972839e5b23b": {
    "verdict": "ok",
@@ -75460,6 +75752,14 @@
   "a7ba44a93075d640": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "a7bd97fc15364417": {
+   "verdict": "ok",
+   "note": "author MC from fs-id1355539 'Alcohol acts as a diuretic by inhibiting the release of ADH'; distractors module phrases (fs-id1850871, fs-id892029)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -76415,6 +76715,14 @@
   "a9fa2da2c9c25489": {
    "verdict": "ok",
    "note": "body cloze from § Fungus/Plant Mutualism: \"Other examples of fungus–plant mutualism include the endophytes: fungi that live inside tissue without damaging the host plant.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "a9fe17a63102b680": {
+   "verdict": "ok",
+   "note": "sodium and potassium: re-read against the CNXML and the page",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -83214,6 +83522,14 @@
    "verdict": "ok",
    "note": "Critical Thinking id fs-idp48187184: model answer is the source solution verbatim, decomposed into its four clauses (notochord, dorsal hollow nerve cord, pharyngeal slits, post-anal tail). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "b9106478f9d38fc0": {
+   "verdict": "ok",
+   "note": "re-read against m46411 CNXML and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b910db86264ec69e": {
    "verdict": "ok",
    "note": "7*tan(x)/(3x) = (7/3)*(tan x / x) -> 7/3 exactly as x->0 (tan x / x -> 1); node-sampled; matches the printed solution for fs-id1165135188629 (source exercise 39). | carried Oct 12 2026 (Precalculus ch11–12 re-review): re-hashed by a form, stem, or hint edit, key unchanged; re-solved blind (fable-solver, 77/77)",
@@ -83868,6 +84184,14 @@
   "bab8665485113d59": {
    "verdict": "ok",
    "note": "(x^2-11x+28)/(7-x) = (x-4)(x-7)/-(x-7) = -(x-4) = 4-x; at x=7, 4-7=-3; matches CNXML Try It 5 solution. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "babacd80b312cfbe": {
+   "verdict": "ok",
+   "note": "RQ fs-id1886717 key C diarrhea; tbl-ch27_02 row 1.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "babd5ace85b24eca": {
    "verdict": "ok",
@@ -89306,6 +89630,14 @@
     "result": "agrees"
    }
   },
+  "c69c8f02d674a578": {
+   "verdict": "ok",
+   "note": "potassium: re-read against the CNXML and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c69e0fbdaaae15b1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -90732,6 +91064,14 @@
     "result": "agrees"
    }
   },
+  "c9ff17b3179ed445": {
+   "verdict": "ok",
+   "note": "RQ fs-id1946886, key B 30 minutes (fs-id2059359)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ca0025a5fd53b3be": {
    "verdict": "ok",
    "note": "box cloze fs-id2532220 s1, referent 'The response to exercise'; key 'set points'; accept setpoints|homeostatic set points",
@@ -91447,6 +91787,14 @@
    "note": "glossary recall: Ediacaran period (fs-idm178539264) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "cb5443b1b779422c": {
+   "verdict": "ok",
+   "note": "source RQ key re-read against CNXML m46409: bicarbonate: carbonic acid buffer",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -94333,6 +94681,14 @@
     "result": "agrees"
    }
   },
+  "d2890f85c5c3cdba": {
+   "verdict": "ok",
+   "note": "potassium: re-read against the CNXML and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d28e07e142d34b6d": {
    "verdict": "ok",
    "note": "body cloze from § T Cell-Independent Activation of B cells: \"T-independent antigens (e.g., polysaccharide capsules, lipopolysaccharide) have repetitive epitope units within their structure, and this r…\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -95065,6 +95421,10 @@
     "result": "agrees"
    }
   },
+  "d435fcb677b85b33": {
+   "verdict": "ok",
+   "note": "re-read against m46411 CNXML and the page"
+  },
   "d436ad006331eb6b": {
    "verdict": "ok",
    "note": "KC 8 45.3 § body Carrying Capacity and the Logistic Model (fs-idm166520320), m66690 — parent re-read against the module",
@@ -95454,6 +95814,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "d4f498fe5e06c9de": {
+   "verdict": "ok",
+   "note": "author selfcheck, model = fs-id1321995 sentences 1 and 4 verbatim"
   },
   "d4f61d5b07322512": {
    "verdict": "ok",
@@ -97489,6 +97853,14 @@
     "result": "agrees"
    }
   },
+  "d9d4d50031be49c1": {
+   "verdict": "ok",
+   "note": "renal function: re-read against the CNXML and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d9dc2bd87039dc48": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -98865,6 +99237,14 @@
    "verdict": "ok",
    "note": "Try It 1 (CNXML ti_09_04_01, source solution 3/(x-3)-2/(x-2)). Independently solved by clearing denominators (x=A(x-2)+B(x-3)) and substituting x=3, x=2; matches source. Cross-checked as an exact-rational identity x/((x-3)(x-2)) = 3/(x-3)-2/(x-2) at 17 sample points via node (BigInt fractions). Grader: key self-grades correct under answerForm=expanded; retyping the printed x/((x-3)(x-2)) grades form, not correct. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "dd1edee05e6d4daa": {
+   "verdict": "ok",
+   "note": "RQ fs-id1355316 key B matches CNXML; options in source order; table row Metabolic alkalosis ↑ / N then ↑ / ↑.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "dd1f91e709beddf4": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
@@ -100205,6 +100585,10 @@
   "e01c7a7cb3b23389": {
    "verdict": "ok",
    "note": "Section Exercise 65 (Seattle building, 2deg, 2 miles): height=2*5280*tan(2deg)=368.7633 ft, computed with node; matches CNXML solution."
+  },
+  "e01cb4d19ec0093c": {
+   "verdict": "ok",
+   "note": ": model answer verbatim from the source solution or the cited module sentences"
   },
   "e01f860fa530d981": {
    "verdict": "ok",
@@ -102084,11 +102468,23 @@
     "result": "agrees"
    }
   },
+  "e41d89bceddbe2e0": {
+   "verdict": "ok",
+   "note": "CT fs-id1836269, source solution verbatim"
+  },
   "e42100a7be9165d7": {
    "verdict": "ok",
    "note": "Review Question fs-idm81517712 (m66622); source solution B = 'spinal cord'. Section text: 'The spinal cord also controls motor reflexes.' No other option (thalamus, parietal lobe, hippocampus) is described as controlling reflexes. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "e421f9739857299d": {
+   "verdict": "ok",
+   "note": "Author MC; fs-id2111255: the blood pH value indicates acidosis/normal/alkalosis; PCO2 and HCO3 assigned metabolic-vs-respiratory role.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -103692,6 +104088,10 @@
    "verdict": "ok",
    "note": "m66428 Critical Thinking exercise fs-id2750556, solution fs-id1281610: 'Layers of sedimentary rock have order but are not alive. Technology is capable of regulation but is not, of itself, alive.' Page model answer and both ===CHECKS=== clauses match verbatim."
   },
+  "e7d2b1007ca5ee7f": {
+   "verdict": "ok",
+   "note": "source CT solution verbatim, re-read against m46409: Describe the conservation of bicarbonate ions in the renal s"
+  },
   "e7d6277c74fa9ef0": {
    "verdict": "ok",
    "note": "Model answer compares HPS (North America, flu-like onset, up to 50% mortality, supportive care only) against HFRS (not reported in the US, different symptom onset, up to 15% mortality, treatable with ribavirin), both from the Hantavirus section's two paragraphs. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -104020,6 +104420,14 @@
   "e8f9ea5b4ddd6dbb": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "e8fdc0136aaa32cd": {
+   "verdict": "ok",
+   "note": "re-read against m46411 CNXML and the page",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -106750,6 +107158,14 @@
     "result": "agrees"
    }
   },
+  "ef026c80a4bd8dff": {
+   "verdict": "ok",
+   "note": "source RQ key re-read against CNXML m46409: respiratory system",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ef0313249672f557": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -108008,6 +108424,14 @@
    "verdict": "ok",
    "note": "Critical Thinking fs-idp4363264, solution fs-idm143870304, transcribed verbatim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "f21e4f7adfa27145": {
+   "verdict": "ok",
+   "note": "hypernatremia: re-read against the CNXML and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f22033f2278fdb0a": {
    "verdict": "ok",
    "note": "body cloze from § Animal and Human Parasites and Pathogens: \"Treatment of these and many other fungal diseases requires the use of antifungal medications that have serious side effects.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -108821,6 +109245,14 @@
    "note": "glossary recall: stipule (fs-idp31750928) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "f3ccc533f0b0a02e": {
+   "verdict": "ok",
+   "note": "re-read against m46411 CNXML and the page",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -111257,6 +111689,14 @@
     "result": "agrees"
    }
   },
+  "f91623f696cadd36": {
+   "verdict": "ok",
+   "note": "glossary recall re-read against m46409 glossary and body fs-id2004894: hypocapnia",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f916fefb18ba3911": {
    "verdict": "ok",
    "note": "KC 1 4.1 § Taxonomy and Systematics (fs-id1172098265661), m58795"
@@ -111770,6 +112210,14 @@
   "fa341a42e948b758": {
    "verdict": "ok",
    "note": "KC 1 5.5 § Characteristics, m58806",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "fa385c9cacca3bdb": {
+   "verdict": "ok",
+   "note": "osteomalacia: cloze key printed verbatim in the cited module sentence; grader-checked",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -112828,6 +113276,14 @@
     "result": "agrees"
    }
   },
+  "fc74f111eec6bf09": {
+   "verdict": "ok",
+   "note": "RQ fs-id2058760 key C 20:1; fs-id1383482.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "fc7b01b5c8646964": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -113158,6 +113614,14 @@
   "fd2a10ccbbb50b11": {
    "verdict": "ok",
    "note": "Practice ex19: D=1 read directly, matches CNXML midline y=1. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "fd2f7a75a1724be6": {
+   "verdict": "ok",
+   "note": "glossary recall re-read against m46409 glossary and body fs-id2004894: hypercapnia",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "fd3699a5e8f123a5": {
    "verdict": "ok",

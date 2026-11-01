@@ -181,8 +181,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 28,
       "upstreamSections": 169,
-      "localChapters": 25,
-      "mappedSections": 154,
+      "localChapters": 26,
+      "mappedSections": 159,
       "units": [
         {
           "index": 1,
@@ -1637,6 +1637,51 @@
       "moduleId": "m46446",
       "sourceTitle": "The Urinary System and Homeostasis",
       "moduleSha256": "4581b454a2b0a41213d1ce7c0b16acdcbc9ea33e6aa586f54b04ca07150696ea"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/26-fluid-electrolyte-and-acid-base-balance/01-body-fluids-and-fluid-compartments.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "26.1",
+      "moduleId": "m46411",
+      "sourceTitle": "Body Fluids and Fluid Compartments",
+      "moduleSha256": "bddd60df9bfe985f5052ba29b7da2947bf743b9f124306044f6b2e92ddb21691"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/26-fluid-electrolyte-and-acid-base-balance/02-water-balance.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "26.2",
+      "moduleId": "m46416",
+      "sourceTitle": "Water Balance",
+      "moduleSha256": "4492712dac2458fff2312683b2b2d295a74221e70bb0ae008f9fe119b25f0695"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/26-fluid-electrolyte-and-acid-base-balance/03-electrolyte-balance.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "26.3",
+      "moduleId": "m46414",
+      "sourceTitle": "Electrolyte Balance",
+      "moduleSha256": "89dfbe0e0fe48345c26cdcbc173e72b3ca103aeb1881e5db30bd1dc28126d9eb"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/26-fluid-electrolyte-and-acid-base-balance/04-acid-base-balance.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "26.4",
+      "moduleId": "m46409",
+      "sourceTitle": "Acid-Base Balance",
+      "moduleSha256": "67391f1db0176f224c71da2ccf3387e07ae0ec27d2ef3d70e9cdc9780e3c29e5"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/26-fluid-electrolyte-and-acid-base-balance/05-disorders-of-acid-base-balance.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "26.5",
+      "moduleId": "m46413",
+      "sourceTitle": "Disorders of Acid-Base Balance",
+      "moduleSha256": "c41b3752844f59ebfee14a861493e44ef2ddcaf62a42cb394ebdf0768c6df4e1"
     },
     {
       "localPath": "content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md",

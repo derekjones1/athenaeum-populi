@@ -60,6 +60,7 @@ record. No Biology chapter is outstanding.
 | Anatomy and Physiology | 23-the-digestive-system | 7 | done Oct 28 2026 (in the authoring run); 20 findings (23.1 three, 23.2 one, 23.3 four, 23.4 three, 23.5 four, 23.6 three, 23.7 two; F18–F20 ruled from the verifier's claim-type items), all 20 applied, 1 options ruling (23.3 hiatus Review Question) | 2632–2652 |
 | Anatomy and Physiology | 24-metabolism-and-nutrition | 7 | done Oct 31 2026 (in the authoring run) | 2677–2680, 2683–2689, 2695, 2696, 2704, 2717, 2721–2727 (23 claim corrections + 2 stem claims) |
 | Anatomy and Physiology | 25-the-urinary-system | 10 | done Oct 31 2026 (in the authoring run) | 2738–2754 (17 claim corrections, all accepted) |
+| Anatomy and Physiology | 26-fluid-electrolyte-and-acid-base-balance | 5 | done Nov 1 2026 (in the authoring run) | 2794–2804 |
 
 The Microbiology rows (26 chapters) are in `docs/history/microbiology.md`
 under "Prose claim pass rows". Knowledge-check pages (`knowledge-check-*.md`) carry no source prose and are

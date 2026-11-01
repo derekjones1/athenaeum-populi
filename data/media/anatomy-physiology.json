@@ -7008,6 +7008,29 @@
       "alt": "This photo shows a person’s leg.",
       "caption": "Varicose veins are commonly found in the lower limbs. (credit: Thomas Kriese)"
     },
+    "2108_Capillary_Exchange": {
+      "source": "media/2108_Capillary_Exchange.jpg",
+      "sourceSha256": "d2e6574c759e4ecdc23ee7bf25e4f347856949b153e3a9531abc8383ceabfb39",
+      "module": "m46411",
+      "kind": "photo",
+      "width": 975,
+      "height": 458,
+      "variants": [
+        {
+          "width": 800,
+          "height": 375,
+          "file": "2108_Capillary_Exchange-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 458,
+          "file": "2108_Capillary_Exchange-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Net filtration occurs near the arterial end of the capillary since capillary hydrostatic pressure (CHP) is greater than blood colloidal osmotic pressure (BCOP). There is no net movement of fluid near the midpoint of the capillary since CHP = BCOP. Net reabsorption occurs near the venous end of the capillary since BCOP is greater than CHP.",
+      "caption": "Net filtration occurs near the arterial end of the capillary since capillary hydrostatic pressure (CHP) is greater than blood colloidal osmotic pressure (BCOP). There is no net movement of fluid near the midpoint of the capillary since CHP = BCOP. Net reabsorption occurs near the venous end of the capillary since BCOP is greater than CHP."
+    },
     "2108_Capillary_ExchangeN": {
       "source": "media/2108_Capillary_ExchangeN.jpg",
       "sourceSha256": "340645db0e0213280e5a1bcb08f4b248a97bd8014bf46c259ae20d78075cd7f9",
@@ -11460,6 +11483,344 @@
       "alt": "This table shows the stimulus, effect on GFR (glomerular filtration rate), and effect on RBF (renal blood flow) for a variety of vasoconstrictors and vasodilators. The first vasoconstrictor is input from the sympathetic nerves that result in the secretion of epinephrine and norepinephrine. The stimulus is a decrease in extracellular fluid volume (ECFV). The second vasoconstrictor is angiotensin II. The stimulus is a decrease in ECFV. The third vasoconstrictor is endothelin. The stimulus is an increase in stretch, bradykinin, angiotensin II, and epinephrine along with a decrease in ECFV. All three of these vasoconstrictors decrease GFR and also decrease RBF. The first vasodilator is the prostaglandins PGE1, PGE2, and PGI2. The stimulus is a decrease in ECFV, an increase in shear stress, and an increase in angiotensin II. The second vasodilator is nitric oxide (NO). The stimulus is increasing shear stress, acetylcholine, histamine, bradykinin, ATP, and adenosine. The third vasodilator is bradykinin. The stimulus is the presence of prostaglandins and a decrease in angiotensin-converting enzyme. The fourth vasodilator is natriuretic peptides, including ANP and B-type. The stimulus is an increase in ECFV. All four of the vasodilators increase GFR and also increase RBF, with the exception of the natriuretic peptides, which cause no change in RBF. Prostaglandins also either increase or have no effect on GFR.",
       "caption": ""
     },
+    "2701_Water_Content_in_the_Body-01": {
+      "source": "media/2701_Water_Content_in_the_Body-01.jpg",
+      "sourceSha256": "88dd691c9ce44679da9a6d6f0e37a4758ebb4f7a5b5b4d5978330333d3119727",
+      "module": "m46411",
+      "kind": "photo",
+      "width": 1611,
+      "height": 2283,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1133,
+          "file": "2701_Water_Content_in_the_Body-01-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2267,
+          "file": "2701_Water_Content_in_the_Body-01-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This illustration shows a silhouette of a human body with various organs highlighted. The percent of water contained in each organ is given. The brain typically contains 80% to 85% water, teeth contain 8% to 10% water, a single lung contains 75% to 80% water, the heart contains 75% to 80% water, the bones contain 20% to 25% water, the liver contains 70% to 75% water, the kidneys contain 80% to 85% water, the skin contains 70% to 75% water and the muscles also contain 70% to 75% water.",
+      "caption": "Water content varies in different body organs and tissues, from as little as 8 percent in the teeth to as much as 85 percent in the brain."
+    },
+    "2702_Fluid_Compartments_ICF_ECF": {
+      "source": "media/2702_Fluid_Compartments_ICF_ECF.jpg",
+      "sourceSha256": "5bbc91d83ca6831570193dafb45d77047a4bec41ae8fc4005ad5566af0156f98",
+      "module": "m46411",
+      "kind": "photo",
+      "width": 677,
+      "height": 456,
+      "variants": [
+        {
+          "width": 677,
+          "height": 456,
+          "file": "2702_Fluid_Compartments_ICF_ECF-677.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows a small blood vessel surrounded by several body cells. The fluid between the body cells is the interstitial fluid (IF), which is a type of extracellular fluid (ECF). The fluid in the blood vessel is also an example of extracellular fluid. The fluid in the cytoplasm of each body cell is intracellular fluid, or ICF.",
+      "caption": "The intracellular fluid (ICF) is the fluid within cells. The interstitial fluid (IF) is part of the extracellular fluid (ECF) between the cells. Blood plasma is the second part of the ECF. Materials travel between cells and the plasma in capillaries through the IF."
+    },
+    "2703_Distribution_of_Water_in_the_Human_Body_in_Terms_of_ICF_and_ECF_Pie_Chart": {
+      "source": "media/2703_Distribution_of_Water_in_the_Human_Body_in_Terms_of_ICF_and_ECF_Pie_Chart.jpg",
+      "sourceSha256": "f8ad17c066183ffdf657d4733ad2285713114aae76a93aab18004a7fc9d82867",
+      "module": "m46411",
+      "kind": "photo",
+      "width": 588,
+      "height": 489,
+      "variants": [
+        {
+          "width": 588,
+          "height": 489,
+          "file": "2703_Distribution_of_Water_in_the_Human_Body_in_Terms_of_ICF_and_ECF_Pie_Chart-588.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This pie chart shows that about 55% of water in the human body is intracellular fluid. About 30% of the water in the human body is interstitial fluid. Most of the remaining 15% of water is plasma, along with a small percentage labeled “other fluid”.",
+      "caption": "Most of the water in the body is intracellular fluid. The second largest volume is the interstitial fluid, which surrounds cells that are not blood cells."
+    },
+    "2704_Concentration_of_Elements_in_Body_Fluids": {
+      "source": "media/2704_Concentration_of_Elements_in_Body_Fluids.jpg",
+      "sourceSha256": "7441053257781e60ea918e60c115432f6a8433308f3b8a027b9a103ec97b4981",
+      "module": "m46411",
+      "kind": "photo",
+      "width": 1351,
+      "height": 1335,
+      "variants": [
+        {
+          "width": 800,
+          "height": 790,
+          "file": "2704_Concentration_of_Elements_in_Body_Fluids-800.webp"
+        },
+        {
+          "width": 1351,
+          "height": 1335,
+          "file": "2704_Concentration_of_Elements_in_Body_Fluids-1351.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This bar graph shows the concentration of several ions and proteins in intracellular fluid, interstitial fluid and plasma. The ions and proteins are categories on the X axis . The Y axis shows concentration, in milliequivalents per liter, ranging from zero to 160. Three different colored bars are shown above each compound on the X axis. One bar represents intracellular fluid (ICF), a second bar represents interstitial fluid (IF, which is part of ECF) and the third bar represents plasma (ECF). Intracellular fluid contains high concentrations of K plus and HPO four two minus. It has lower concentrations of MG two plus and protein, and negligible amounts of the other compounds. Interstitial fluid contains high concentrations of NA plus and CL minus, along with a smaller amount of HCO 3 minus, and negligible amounts of the other compounds. Plasma contains large concentrations of NA plus and CL minus, with smaller concentrations of HCO 3 minus and protein, and negligible amounts of the other compounds.",
+      "caption": "The graph shows the composition of the ICF, IF, and plasma. The compositions of plasma and IF are similar to one another but are quite different from the composition of the ICF."
+    },
+    "2705_Sodium_Potassium_Pump": {
+      "source": "media/2705_Sodium_Potassium_Pump.jpg",
+      "sourceSha256": "39751759471ced26a9f48f59eb171be1e466f8d728c25fbf8c3eab821a0de9c4",
+      "module": "m46411",
+      "kind": "photo",
+      "width": 1079,
+      "height": 499,
+      "variants": [
+        {
+          "width": 800,
+          "height": 370,
+          "file": "2705_Sodium_Potassium_Pump-800.webp"
+        },
+        {
+          "width": 1079,
+          "height": 499,
+          "file": "2705_Sodium_Potassium_Pump-1079.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows a sodium potassium pump embedded in the cell membrane. In the first step, the pump is opened to the cytosol and closed to the extracellular fluid. First, three sodium ions move into the pump from the cytosol. An ATP molecule binds to the cytosol side of the pump, causing the pump to change shape and open to the extracellular fluid. The pump is now closed to the cytosol. The sodium ions are then released into the extracellular fluid, after which two potassium ions enter the pump. Also at this point, the used ADP detaches from the cytosol side of the pump, leaving a single phosphate attached. The pump then changes shape again so that it closes to the extracellular fluid and again opens to the cytosol. This releases the two potassium ions into the cytosol. The single phosphate also detaches from the pump at this point so that the cycle can start anew. Two bars along the right hand side of the figure indicate that sodium normally diffuses into the cell down its concentration gradient while potassium usually diffuses out of the cell down its concentration gradient. Therefore, the sodium potassium pump is working against these natural concentration gradients.",
+      "caption": "The sodium-potassium pump is powered by ATP to transfer sodium out of the cytoplasm and into the ECF. The pump also transfers potassium out of the ECF and into the cytoplasm. (credit: modification of work by Mariana Ruiz Villarreal)"
+    },
+    "2706_Facilitated_Diffusion": {
+      "source": "media/2706_Facilitated_Diffusion.jpg",
+      "sourceSha256": "b800635d0d326591df894993042b3bd5f488ef79ffb8bac4a2dc5f59f0fd7e4a",
+      "module": "m46411",
+      "kind": "photo",
+      "width": 777,
+      "height": 377,
+      "variants": [
+        {
+          "width": 777,
+          "height": 377,
+          "file": "2706_Facilitated_Diffusion-777.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows a carrier protein embedded in the plasma membrane between the cytoplasm and the extracellular fluid. There are several glucose molecules in the extracellular fluid. In the first step, the carrier protein is open to the extracellular fluid and closed to the cytosol. One of the glucose molecules travels from the extracellular fluid into the carrier protein. The protein then changes shape, closing at both ends. This pushes the glucose down into the carrier protein, closer to the cytosol end. The protein then opens on the cytosol side and closes on the extracellular fluid side, allowing the glucose to enter the cytosol.",
+      "caption": "Glucose molecules use facilitated diffusion to move down a concentration gradient through the carrier protein channels in the membrane. (credit: modification of work by Mariana Ruiz Villarreal)"
+    },
+    "2707_Edema_of_Right_Hand_Due_to_Allergic_Reaction": {
+      "source": "media/2707_Edema_of_Right_Hand_Due_to_Allergic_Reaction.jpg",
+      "sourceSha256": "bfacaab156023d1fd7989e74e963d8d909382217088af207f37a8dfba369abec",
+      "module": "m46411",
+      "kind": "photo",
+      "width": 641,
+      "height": 500,
+      "variants": [
+        {
+          "width": 641,
+          "height": 500,
+          "file": "2707_Edema_of_Right_Hand_Due_to_Allergic_Reaction-641.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photo shows the dorsal surfaces of a person’s right and left hands. The left hand is normal, with the several blood vessels visible under the skin. However, the top of the right hand is swollen and no blood vessels are visible.",
+      "caption": "An allergic reaction can cause capillaries in the hand to leak excess fluid that accumulates in the tissues. (credit: Jane Whitney)"
+    },
+    "2708_Flowchart_of_Thirst_Response": {
+      "source": "media/2708_Flowchart_of_Thirst_Response.jpg",
+      "sourceSha256": "cc5ff79747cb29888fc2828503b418b53055df379c80d8053d72bf837b750f0b",
+      "module": "m46416",
+      "kind": "photo",
+      "width": 1330,
+      "height": 2197,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1321,
+          "file": "2708_Flowchart_of_Thirst_Response-800.webp"
+        },
+        {
+          "width": 1330,
+          "height": 2197,
+          "file": "2708_Flowchart_of_Thirst_Response-1330.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure is a top-to bottom flowchart describing the thirst response. The topmost box of the chart states that there is insufficient water in the body, which has two effects. The left branch of the chart leads to decreased blood volume, which leads to decreased blood pressure. This triggers an increase in angiotensin two. Angiotensin two stimulates the thirst center in the hypothalamus. On the right branch, insufficient water in the body leads to increased blood osmolality, which causes dry mouth. Increased blood osmolality and dry mouth is sensed by osmoreceptors in the hypothalamus. This stimulates the thirst center in the hypothalamus to increase thirst, giving a person the urge to drink. Drinking decreases blood osmolality back to homeostatic levels.",
+      "caption": "The thirst response begins when osmoreceptors detect a decrease in water levels in the blood."
+    },
+    "2709_ADH": {
+      "source": "media/2709_ADH.jpg",
+      "sourceSha256": "6c4b7404ed33ef962be5e4272b2b4d3e726ac291eb6ad1a195b966f249d63298",
+      "module": "m46416",
+      "kind": "photo",
+      "width": 795,
+      "height": 644,
+      "variants": [
+        {
+          "width": 795,
+          "height": 644,
+          "file": "2709_ADH-795.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This set of diagrams shows the effects of ADH on various structures within the body. In the brain, ADH affects the cerebrum by influencing social behavior in some mammals. ADH is also produced in the brain by the hypothalamus and released in the posterior pituitary. ADH also constricts arterioles in the body, which are the small arteries that enter into capillary beds. Finally, a kidney is shown because ADH increases the reabsorption of water in the kidneys.",
+      "caption": "ADH is produced in the hypothalamus and released by the posterior pituitary gland. It causes the kidneys to retain water, constricts arterioles in the peripheral circulation, and affects some social behaviors in mammals."
+    },
+    "2710_Aquaporins-01": {
+      "source": "media/2710_Aquaporins-01.jpg",
+      "sourceSha256": "aab3f8bd85fbb279121d37cc2e7f8ef292f3ffb9928c65421766a69fb7dc807b",
+      "module": "m46416",
+      "kind": "photo",
+      "width": 1464,
+      "height": 1067,
+      "variants": [
+        {
+          "width": 800,
+          "height": 583,
+          "file": "2710_Aquaporins-01-800.webp"
+        },
+        {
+          "width": 1464,
+          "height": 1067,
+          "file": "2710_Aquaporins-01-1464.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram depicts a cross section of the right wall of a kidney collecting tubule. The wall is composed of three block-shaped cells arranged vertically one on top of each other. The lumen of the collecting tubule is to the left of the three cells. Yellow-colored urine is flowing through the lumen. There is a small strip of blue interstitial fluid to the right of the three cells. To the right of the interstitial fluid is a cross section of a blood vessel. Arrows show that water in the urine is entering the left side of the wall cells through aquaporins. The water travels through the cells and then leaves the kidney tubule through additional aquaporins in the right side of the wall cells. The water travels through the interstitial space and enters into the blood in the blood vessel. The aquaporins in the wall cells are being released from aquaporin storage vesicles within their cytoplasm.",
+      "caption": "The binding of ADH to receptors on the cells of the collecting tubule results in aquaporins being inserted into the plasma membrane, shown in the lower cell. This dramatically increases the flow of water out of the tubule and into the bloodstream."
+    },
+    "2711_Aldosterone_Feedback_Loop": {
+      "source": "media/2711_Aldosterone_Feedback_Loop.jpg",
+      "sourceSha256": "808a9fef6c60684853b5fcc0a2a7789804596f8d030d910f78fe077569676f0b",
+      "module": "m46414",
+      "kind": "photo",
+      "width": 810,
+      "height": 1236,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1220,
+          "file": "2711_Aldosterone_Feedback_Loop-800.webp"
+        },
+        {
+          "width": 810,
+          "height": 1236,
+          "file": "2711_Aldosterone_Feedback_Loop-810.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This flow chart shows how potassium and sodium ion concentrations in the blood are regulated by aldosterone. Rising K plus and falling NA plus levels in the blood trigger aldosterone release from the adrenal cortex. Aldosterone targets the kidneys, causing an increase in K plus excretion from the kidneys, which reduces the amount of K plus in the blood back to homeostatic levels. Aldosterone also increases sodium reabsorption by the kidneys, which increases the amount of NA plus in the blood back to homeostatic levels.",
+      "caption": "Aldosterone, which is released by the adrenal gland, facilitates reabsorption of Na + and thus the reabsorption of water."
+    },
+    "2712_Renin_Angiotensin_System-01": {
+      "source": "media/2712_Renin_Angiotensin_System-01.jpg",
+      "sourceSha256": "849caac34edc23ad65ca8a054b6ce2e7d4bf054f79aaf6dba747d9c53019af7c",
+      "module": "m46414",
+      "kind": "photo",
+      "width": 2283,
+      "height": 1042,
+      "variants": [
+        {
+          "width": 800,
+          "height": 365,
+          "file": "2712_Renin_Angiotensin_System-01-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 730,
+          "file": "2712_Renin_Angiotensin_System-01-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the hormone cascade that that increases kidney reabsorption of NA plus and water. In the first step, the kidneys release renin into the blood stream. The blood stream is depicted with a red arrow pointing from left to right. At the same time, the liver releases angiotensinogen into the blood, which combines with the renin, yielding angiotensin one. The blood flow then leads to the lungs. Within the pulmonary blood, angiotensin-converting enzyme (ACE) converts angiotensin one to angiotensin two. The blood then flows to the adrenal cortex, where angiotensin two stimulates the adrenal cortex to secrete aldosterone. Aldosterone causes the kidney tubules to increase reabsorption of NA plus and water into the blood.",
+      "caption": "Angiotensin II stimulates the release of aldosterone from the adrenal cortex."
+    },
+    "2713_pH_Scale-01": {
+      "source": "media/2713_pH_Scale-01.jpg",
+      "sourceSha256": "aca22be5011e64bcdc1b3f43dba428df7e0fad94b001f0f194c1570cb1e0bca2",
+      "module": "m46409",
+      "kind": "photo",
+      "width": 1069,
+      "height": 1833,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1371,
+          "file": "2713_pH_Scale-01-800.webp"
+        },
+        {
+          "width": 1069,
+          "height": 1833,
+          "file": "2713_pH_Scale-01-1069.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This table gives examples of solutions from PH of zero to 14. Examples of solutions with a PH of zero include battery acid and strong hydrofluoric acid. An example of a solution with a pH of one is the hydrochloric acid secreted by the stomach lining. Examples of solutions with a PH of two include lemon juice and vinegar. Examples of solutions with a PH of three include grapefruit juice, orange juice and soda. Examples of solutions with a PH of four include tomato juice and acid rain. Examples of solutions with a PH of five include soft drinking water and black coffee. Examples of solutions with a PH of six include urine and saliva. An example of a solution with a PH of seven is pure water. An example of a solution with a PH of eight is sea water. An example of a solution with a PH of nine is baking soda. Examples of solutions with a PH of ten include saline lake water and milk of magnesia. An example of a solution with a PH of eleven is an ammonia solution. An example of a solution with a PH of twelve is soapy water. Examples of solutions with a PH of thirteen include bleach and oven cleaner. An example of a solution with a PH of fourteen is liquid drain cleaner.",
+      "caption": "This chart shows where many common substances fall on the pH scale."
+    },
+    "2714_Respiratory_Regulation_of_Blood": {
+      "source": "media/2714_Respiratory_Regulation_of_Blood.jpg",
+      "sourceSha256": "529b04103d42013640274e768487ceb289531fc7f9ddf72ecd4bd123b175331e",
+      "module": "m46409",
+      "kind": "photo",
+      "width": 495,
+      "height": 903,
+      "variants": [
+        {
+          "width": 495,
+          "height": 903,
+          "file": "2714_Respiratory_Regulation_of_Blood-495.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This top to bottom flowchart describes the regulation of PH in the blood. The left branch shows acidosis, which is when the PH of the blood drops. Acidosis stimulates brain and arterial receptors, triggering an increase in respiratory rate. This causes a drop in blood CO two and H two CO three. A drop in these two acidic compounds causes the blood PH to rise back to homeostatic levels. The right branch shows alkalosis which is when the PH of the blood rises. Alkalosis also stimulates brain and arterial receptors, but these now trigger a decrease in respiratory rate. This causes an increase in blood CO two and H two CO three, which lowers the PH of the blood back to homeostatic levels.",
+      "caption": "The respiratory system can reduce blood pH by removing CO 2 from the blood."
+    },
+    "2715_Conservation_of_Bicarbonate_in_Kidney-01": {
+      "source": "media/2715_Conservation_of_Bicarbonate_in_Kidney-01.jpg",
+      "sourceSha256": "c69f783637ba9a5474c24a3d8726bec0e003ee3a2d722554b1b930e71b0aeb55",
+      "module": "m46409",
+      "kind": "photo",
+      "width": 1471,
+      "height": 865,
+      "variants": [
+        {
+          "width": 800,
+          "height": 470,
+          "file": "2715_Conservation_of_Bicarbonate_in_Kidney-01-800.webp"
+        },
+        {
+          "width": 1471,
+          "height": 865,
+          "file": "2715_Conservation_of_Bicarbonate_in_Kidney-01-1471.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram depicts a cross section of the left wall of a kidney proximal tubule. The wall is composed of two block-shaped cells arranged vertically one on top of each other. The lumen of the proximal tubule is to the left of the two cells. Yellow-colored urine is flowing through the lumen. There is a small strip of blue interstitial fluid to the right of the two cells. To the right of the interstitial fluid is a cross section of a blood vessel. A loop of chemical reactions is occurring in the diagram. Within the lumen of the proximal tubule, HCO three minus is combining with an H plus ion that enters the lumen from a proximal tubule cell. This reaction forms H two CO three. H two CO three then breaks into H two O and CO two, a reaction catalyzed by the enzyme carbonic anhydrase. The CO two then moves from the lumen of the proximal tubule into one of the proximal tubule cells. There, the reaction runs in reverse, with CO two combining with H two O to form H two CO three. The H two CO three then splits into H plus and HCO three minus. The H plus moves into the lumen, reinitiating the first step of the loop. The HCO three minus leaves the proximal tubule cell and enters the blood stream.",
+      "caption": "Tubular cells are not permeable to bicarbonate; thus, bicarbonate is conserved rather than reabsorbed. Steps 1 and 2 of bicarbonate conservation are indicated."
+    },
+    "2716_Symptoms_of_Acidosis_Alkalosis": {
+      "source": "media/2716_Symptoms_of_Acidosis_Alkalosis.jpg",
+      "sourceSha256": "86acd6958db04d1e5a8a66404b3cb3c8517575323c41b470cf1a47ece923e237",
+      "module": "m46413",
+      "kind": "photo",
+      "width": 860,
+      "height": 558,
+      "variants": [
+        {
+          "width": 800,
+          "height": 519,
+          "file": "2716_Symptoms_of_Acidosis_Alkalosis-800.webp"
+        },
+        {
+          "width": 860,
+          "height": 558,
+          "file": "2716_Symptoms_of_Acidosis_Alkalosis-860.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure points out the symptoms of acidosis and alkalosis on a silhouette of a human torso. The effects of acidosis on the central nervous system include headache, sleepiness, confusion, loss of consciousness and coma. The effects of acidosis are given on the left side of the diagram. The effects of acidosis on the respiratory system include shortness of breath and coughing. The effects of acidosis on the heart include arrhythmia and increased heart rate. The effects of acidosis on the muscular system include seizures and weakness. The effects of acidosis on the digestive system include nausea, vomiting and diarrhea. The right side of the diagram describes the symptoms of alkalosis. The effects of alkalosis on the central nervous system include confusion, light-headedness, stupor, and coma. The effects of alkalosis on the peripheral nervous system include hand tremor and numbness or tingling in the face, hands, and feet. The effects of alkalosis on the muscular system include twitching and prolonged spasms. The effects of alkalosis on the digestive system include nausea and vomiting.",
+      "caption": "Symptoms of acidosis affect several organ systems. Both acidosis and alkalosis can be diagnosed using a blood test."
+    },
     "400_Micrograph_of_Cervical_Tissue_updated": {
       "source": "media/400_Micrograph_of_Cervical_Tissue_updated.jpg",
       "sourceSha256": "b7f46b81d1081b06b8cf36b8864bb46298a4013a60a9c7416c1c181220cc33f6",
@@ -14680,6 +15041,29 @@
       "transparent": false,
       "alt": "The image on the right shows a drawing of the skull with the metal spike inserted like it would have been when he was injured.",
       "caption": "The victim of an accident while working on a railroad in 1848, Phineas Gage had a large iron rod impaled through the prefrontal cortex of his frontal lobe. After the accident, his personality appeared to change, but he eventually learned to cope with the trauma and lived as a coach driver even after such a traumatic event. (credit b: John M. Harlow, MD)"
+    },
+    "Venus_at_us_open_2009": {
+      "source": "media/Venus_at_us_open_2009.jpg",
+      "sourceSha256": "6a605136e7abd575b1543e9f2532f894ff5776c028db9ad3bb56ecc322e07f0b",
+      "module": "m46415",
+      "kind": "photo",
+      "width": 2288,
+      "height": 1049,
+      "variants": [
+        {
+          "width": 800,
+          "height": 366,
+          "file": "Venus_at_us_open_2009-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 733,
+          "file": "Venus_at_us_open_2009-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This is a photo of Venus Williams, the famous tennis player, executing a hard tennis swing.",
+      "caption": "The body has critically important mechanisms for balancing the intake and output of bodily fluids. An athlete must continuously replace the water and electrolytes lost in sweat. (credit: “Edwin Martinez1”/Wikimedia Commons)"
     }
   }
 }
