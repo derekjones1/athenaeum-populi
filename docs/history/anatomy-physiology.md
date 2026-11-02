@@ -3112,6 +3112,100 @@ read every block and applied the one-line fixes itself.
   launched 18:49 to solve compared 19:37, the whole wave live at once: five
   authors, then five checkers and two sweeps, then one second checker).
 
+## Knowledge Check 6 — Unit 6, chapters 27–28 (November 2, 2026)
+
+The sixth and last Anatomy and Physiology check, run from
+`docs/briefs/anatomy-physiology/kc-run.md`. `knowledge-check-27-28.md`,
+"Knowledge Check: Unit 6 — Chapters 27–28", weight 34; no chapter shifted
+(chapters 27 and 28 already carried weights 32 and 33; `kc weights --write`
+rewrote 0). 10 sections (ch27 3, ch28 7), 30 items: 9 multiplechoice, 11
+textin, 10 selfcheck (every one with a rubric), 0 sortbins. 27.1 has two
+textins and a selfcheck, 27.2 a textin, an MC and a selfcheck, 27.3 a textin,
+an MC and a selfcheck; every 28.x section has a textin, an MC and a selfcheck.
+MC key slots on the finished page: 4-option items (7) 2/2/1/2, 3-option items
+(2) slot 3 twice (28.2, 28.6).
+
+Run shape: two Opus authors (ch27, ch28, launched together), two Opus checkers
+(each as its author reported), one Opus reverse-recall sweep over both chapters
+(30 items), one Opus second checker (two rounds), one blind Fable solver and
+one Sonnet close-out clerk; no errata drafter (no new source defect found). The
+parent read both blocks before the checkers reported and applied its own
+one-line fixes. Prompt files came from the kit's `kc-prompts/` templates; the
+author prompt gained four bullets (grep the SENTENCE and hypo-/hyper- flips;
+sorted numeric options; options all effects/steps/structures and
+elimination-by-page; sibling-page rubrics).
+
+- **Checker yield (hard/soft):** ch27 0/4 (9 items), ch28 0/9 (21 items); 0
+  hard and 13 soft on 30 items. ch27: 27.2 rubric clause 4 restating the stem;
+  27.3 sortbins = the table the page footer rejected; 27.3 spread exception;
+  BPH accept list. ch28: two cross-unit twins (28.2 Wharton's jelly and the
+  4.3 cloze; 28.2 apoptosis and the 8.5 cloze); 28.3 "lower regions of the
+  body" leaving the key the only lower-body option; 28.6 "non-lactating" vs the
+  glandular distractors (kept); 28.6 rubric clauses 1-2 repeating the stem;
+  28.7 "much more rare" without its comparator; 28.5 Apgar provenance label;
+  28.3 primitive gut also keyed on the 28.2 page for a different fact (kept);
+  "monosomy X" not accepted (not printed).
+- **Sweep yield (hard/soft):** one sweep, 1/8 on 30 items. Hard: the 27.2
+  rubric clause (already dropped by the parent). Soft: the 27.3 sortbins, 28.3
+  primitive gut, 28.5 fossa ovalis stem reusing the page selfcheck's setup
+  sentence (page never prints the key; kept), 28.1 page hint pointing at the
+  survival sentence without the duration, brown fat / leptin vocabulary, BPH
+  stem paraphrasing roots, three selfcheck stems repeating parts of their
+  rubric clauses.
+- **Parent read:** found the 27.2 rubric clause before the checker and sweep
+  reported (all three agree); judged the 28.3 primitive-gut and 28.5
+  fossa-ovalis notes soft (different fact; key not on the page). Nothing beyond
+  the checkers and sweep.
+- **Second checker:** round 1 read 7 (3 replacements, 4 in-place rewrites), 6
+  pass, 1 fail (the 28.2 intestines-loop MC's distractor "the chorionic
+  cavity" is not printed in m46319; it is 28.1's term). Round 2 (that item with
+  three options) passed. Overall 8 reads, 7 pass, 1 fail. It also ruled the
+  28.2 "active transport" textin a clean key (two words, printed, named
+  process; the page's Source note under the placenta table is body prose, not a
+  Practice passage). Trial assembly before the second checker: verify-section
+  clean, `kc leaks` 0 candidates; final page 0 candidates.
+- **Replacements** (3 items replaced from different module sentences):
+  - 27.3 secondary-sex-characteristics sortbins → "first physical sign of puberty in males" MC, key "growth of the testes" (Puberty › Signs of Puberty): the 27.3 page footer had rejected a sortbins of this table because its members sort without the module (checker ch27 soft, sweep soft; parent ruled replace). Type change sortbins → multiplechoice, parent-authorised; the 27.3 spread exception stands.
+  - 28.2 Wharton's jelly textin → "amino acids and iron … moved across the placenta by ________" = active transport (Development of the Placenta): cross-unit twin of the 4.3 page cloze (checker ch28). The parent barred "decidua basalis" because the 28.2 page keys "decidual cells".
+  - 28.2 apoptosis MC → "into which structure do the intestines temporarily loop" = the umbilical cord (Organogenesis): cross-unit twin of the 8.5 page cloze (checker ch28). Round 2 dropped "the chorionic cavity" (not in m46319); three options.
+  - In place (4): 27.2 birth-control SC rubric clause 4 dropped (parent; checker ch27, sweep); 28.3 internal-iliac MC stem lost "into the lower regions of the body" (checker ch28); 28.6 bilirubin SC clauses 1-2 cut to "has laxative properties" / "through the excretion of bile" (checker ch28); 28.7 dominant-lethal SC stem opens "Compared with recessive lethal inheritance patterns," (checker ch28).
+- **Parent one-line fixes:** the 27.2 clause drop and the 28.2 "chorionic
+  cavity" drop (both on the scratch pages); accept lists unchanged (BPH keeps
+  only "BPH"; "prostatic hyperplasia", "benign prostatic hypertrophy" and
+  "monosomy X" kept out because not module-printed; "dropping" accepted for
+  lightening from the glossary).
+- **Cross-block leaks:** none within the unit (`kc leaks` 0 on both blocks, the
+  trial and the final page; no double key, no twin between ch27 and ch28). The
+  ch27 author flagged that the 27.3 bipotential rubric would leak
+  "bipotential" if ch28 keyed it; ch28 did not.
+- **Spread exceptions ledgered:** 27.3 (m46408 has two top-level subsections;
+  the leptin textin and the puberty MC both sit under Puberty, the MC in its
+  nested Signs of Puberty). None in ch28.
+- **Blind solve:** 20 graded items (9 multiplechoice, 11 textin) answered by
+  one fresh Fable solver from the 10 masked section pages: 20 agree, 0
+  disagree, 1 alsoDefensible (28.6 latent period vs "let-down"), adjudicated by
+  the parent against m46325 (the parenthetical attaches "the latent period" to
+  the interval and the glossary defines the let-down reflex as the release of
+  milk, the interval's endpoint; key stands, no accept added), 0 unsure. The
+  solver also reported, outside its items, the 28.5 Practice "both a and b"
+  option form over unlettered options; already reviewed in
+  `docs/openstax-errata.md` (m46335, "Not an erratum: kept as printed"), so no
+  action. No re-solve was needed (no item edited after the solve).
+- **Errata:** none new. Existing entries followed: 2828 ("sac" in the 27.1
+  model answer); sentences behind 2833, 2834, 2845, 2848, 2849-2862 avoided.
+  The 28.2 active-transport item rests on the body sentence erratum 2862 cites
+  as the correct account (the table row is the defect). Claim findings: none.
+- **Lessons** (the last four bullets of `kc-run.md` §0):
+  - Cross-unit twins exist and the unit-scoped sweep cannot see them (28.2 Wharton's jelly and 4.3, apoptosis and 8.5): grep every key and accept member against every section page of the book.
+  - A section page's footer can rule a sortbins out (27.3): read declined-item clauses before building a table item; the replacement may change type.
+  - A distractor must be printed in the item's own module ("the chorionic cavity" was 28.1's term).
+  - Three readers converge on a rubric clause that restates its stem (27.2, 28.6): cut to the verbatim substring that carries the new content.
+- **Costs** (tokens, including fix rounds): authors ~186k (ch27) and ~199k
+  (ch28); checkers ~119k and ~152k; sweep ~124k; second checker ~114k over two
+  rounds; solver ~193k; close-out clerk ~62k. About 28 minutes wall from the
+  authors' launch (14:47) to the solve compared (15:15), trial assembly clean
+  at 15:12 (the shortest check run; 10 sections), plus the close-out.
+
 ## Examples moved from the playbook (October 13, 2026)
 
 Cut verbatim from `docs/subjects/anatomy-physiology.md`.

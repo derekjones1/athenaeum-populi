@@ -2138,6 +2138,10 @@
    "verdict": "ok",
    "note": "selfcheck, author-written from source exercise fs-id1172098267150 (Critical Thinking #1, unkeyed). Model answer assembled from the Wallin-paragraph sentence on mitochondrial genome transfer (fs-id1172098320157) and the endosymbiotic-theory paragraph's DNA-reduction sentence (fs-id1172098276894). § Endosymbiotic Theory. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "04445cb5dbfcd8d1": {
+   "verdict": "ok",
+   "note": "KC 6 27.2 § Hormonal Birth Control, m46392"
+  },
   "044a30dabad50e86": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
@@ -6468,6 +6472,14 @@
   "0d50b6a89e6cf921": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "0d51beeca339e240": {
+   "verdict": "ok",
+   "note": "KC 6 28.2 § Organogenesis, m46319",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "0d5f7635a44dc741": {
    "verdict": "ok",
@@ -13928,6 +13940,14 @@
   "1c8a60bc5e206ead": {
    "verdict": "ok",
    "note": "KC 1 1.3 § body Metabolism (fs-id2305458), paragraph fs-id2578934, m45986",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "1c8bd9acca92f2a1": {
+   "verdict": "ok",
+   "note": "KC 6 27.1 § Sperm Transport › Prostate Gland, m46400",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -21516,6 +21536,10 @@
     "result": "agrees"
    }
   },
+  "2d0b152539dbb939": {
+   "verdict": "ok",
+   "note": "KC 6 28.6 § Changes in the Composition of Breast Milk, m46325"
+  },
   "2d0cfb2c35f7e351": {
    "verdict": "ok",
    "note": "Both numerator and denominator expand to degree 3 with leading coefficient 1; ratio 1/1=1; matches CNXML source answer. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -28101,6 +28125,10 @@
     "result": "agrees"
    }
   },
+  "3b82c85b0d97656a": {
+   "verdict": "ok",
+   "note": "KC 6 28.4 § Stages of Childbirth, m46353"
+  },
   "3b861e1fc0168321": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -29230,6 +29258,14 @@
   "3e231c90800dd430": {
    "verdict": "ok",
    "note": "m66701 fs-idp59754160: model answer is the CNXML <solution> verbatim (grazing food webs based on producers; detrital food webs based on decomposers; detrital webs keep grazing webs healthy and cycle nutrients). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "3e28f356b08013ad": {
+   "verdict": "ok",
+   "note": "KC 6 27.2 § The Ovarian Cycle › Folliculogenesis, m46392",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "3e2914c1dac20757": {
    "verdict": "ok",
@@ -38337,6 +38373,14 @@
     "result": "agrees"
    }
   },
+  "51a667f5c7945749": {
+   "verdict": "ok",
+   "note": "KC 6 27.1 § Testes › Sertoli Cells, m46400",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "51a6842716e64024": {
    "verdict": "ok",
    "note": "RQ fs-id2473251 key C; parasympathetic (ACh) increases motility to digest (fs-id2101505); A,B,D stated in fs-id2825202/fs-id2525262/fs-id2364402",
@@ -38630,6 +38674,14 @@
   },
   "5250195800a8f46d": {
    "verdict": "ok"
+  },
+  "52513dc1f6bd0183": {
+   "verdict": "ok",
+   "note": "KC 6 28.3 § Sexual Differentiation, m46316",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "52523b5be500d1e6": {
    "verdict": "ok",
@@ -44574,6 +44626,14 @@
     "result": "agrees"
    }
   },
+  "5f2b2eba840a0048": {
+   "verdict": "ok",
+   "note": "KC 6 27.3 § Further Sexual Development Occurs at Puberty › Signs of Puberty, m46408",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5f345c8f77b61767": {
    "verdict": "ok",
    "note": "Review Question eip-205, solution C = 'The discs ensure that all the cardiac muscle cells beat as a single unit.' Keyed as source. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -45071,6 +45131,10 @@
   },
   "6079c58a704ee7fe": {
    "verdict": "ok"
+  },
+  "607b70b46adc9a46": {
+   "verdict": "ok",
+   "note": "KC 6 27.1 § Scrotum, m46400"
   },
   "60821aaeb301c076": {
    "verdict": "ok",
@@ -49392,6 +49456,10 @@
     "result": "agrees"
    }
   },
+  "6b762089dbe02c53": {
+   "verdict": "ok",
+   "note": "KC 6 28.7 § Other Inheritance Patterns: Incomplete Dominance, Codominance, and Lethal Alleles, m46311"
+  },
   "6b77d366ece32a7a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -49751,6 +49819,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "6c635444fb99e739": {
+   "verdict": "ok",
+   "note": "KC 6 28.3 § Other Organ Systems, m46316"
   },
   "6c664d5ff7d956ba": {
    "verdict": "ok",
@@ -54059,6 +54131,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "75b8a29154297cf1": {
+   "verdict": "ok",
+   "note": "KC 6 28.5 § Homeostasis in the Newborn: Apgar Score (Homeostatic Imbalances box, module top level), m46335",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "75bd388d830db051": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -55474,6 +55554,14 @@
   "78c0dd56094b0ed5": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "78c3a083a5468082": {
+   "verdict": "ok",
+   "note": "KC 6 28.7 § Chromosomal Disorders, m46311",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "78c4003d60826bb2": {
    "verdict": "ok",
@@ -59873,6 +59961,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "820d77d39009fdfc": {
+   "verdict": "ok",
+   "note": "KC 6 28.7 § X-linked Dominant or Recessive Inheritance, m46311",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -66633,6 +66729,10 @@
     "result": "agrees"
    }
   },
+  "9137753ce9b3f4c2": {
+   "verdict": "ok",
+   "note": "KC 6 28.2 § Embryonic Membranes, m46319"
+  },
   "913d9cabc1666e80": {
    "verdict": "ok",
    "note": "m66408 glossary textin: 'retina' — 'layer of photoreceptive and supporting cells on the inner surface of the back of the eye.' | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -71339,6 +71439,14 @@
     "result": "agrees"
    }
   },
+  "9ba7c35f6dbd405b": {
+   "verdict": "ok",
+   "note": "KC 6 28.5 § Circulatory Adjustments, m46335",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9bb0abc9090d8381": {
    "verdict": "ok",
    "note": "Selfcheck matches CNXML Critical Thinking exercise fs-idm95190000; model answer is the source solution verbatim, checks decompose its four clauses with no new claim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -74461,6 +74569,14 @@
   "a2687c9fc1105752": {
    "verdict": "ok",
    "note": "RQ fs-id1476034 key C connective tissue (fs-id1146438)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "a2694f2cef3ad20a": {
+   "verdict": "ok",
+   "note": "KC 6 28.3 § The Fetal Circulatory System, m46316",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -82326,6 +82442,14 @@
     "result": "agrees"
    }
   },
+  "b3c8f86300970998": {
+   "verdict": "ok",
+   "note": "KC 6 28.1 § Transit of Sperm, m46308",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b3d135debd105e30": {
    "verdict": "ok",
    "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -84941,6 +85065,10 @@
     "result": "agrees"
    }
   },
+  "b937ca49ad03af12": {
+   "verdict": "ok",
+   "note": "KC 6 28.5 § Thermoregulatory Adjustments, m46335"
+  },
   "b93ad2c87e332280": {
    "verdict": "ok"
   },
@@ -85870,6 +85998,14 @@
    "note": "Locally authored MC (no CNXML exercise) built strictly from the Pain section's own sentence (\"Nociception starts at the sensory receptors, but pain … does not start until it is communicated to the brain\"), added because objective 3 has only two source/glossary items available and the landed floor needs three. Disclosed in footer and ledger. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "bb52e53b51276f3f": {
+   "verdict": "ok",
+   "note": "KC 6 28.6 § Structure of the Lactating Breast, m46325",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -87178,6 +87314,14 @@
     "result": "agrees"
    }
   },
+  "be1d4eabb378ddc1": {
+   "verdict": "ok",
+   "note": "KC 6 27.2 § The Uterus and Cervix, m46392",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "be1e41fd066ab6a2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -88466,6 +88610,10 @@
   "c0f01812f63b2d3e": {
    "verdict": "ok",
    "note": "selfcheck, unkeyed SA fs-id1167661271494, source prints no key; model names histoplasmosis (fixed by the tuberculosis-course and Ghon-complex sentences) and states plainly that the module names no discriminating test, per run-facts Part C item 2 | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "c0f0afc52b48fb21": {
+   "verdict": "ok",
+   "note": "KC 6 27.3 § Development of the Sexual Organs in the Embryo and Fetus, m46408"
   },
   "c0fd3e5c0959d2a3": {
    "verdict": "ok",
@@ -90850,6 +90998,14 @@
   "c63dcc6778bb4be1": {
    "verdict": "ok",
    "note": "author-built from § summary: \"Viral filtrate is a rich source of released virions.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c643bf879fbcd97b": {
+   "verdict": "ok",
+   "note": "KC 6 28.4 § Effects of Hormones, m46353",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -95860,6 +96016,14 @@
   "d1cdd98cd3af7359": {
    "verdict": "ok"
   },
+  "d1cff50b3fb2b69b": {
+   "verdict": "ok",
+   "note": "KC 6 27.3 § Further Sexual Development Occurs at Puberty, m46408",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d1d1f334a12981e1": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 173): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -98817,6 +98981,10 @@
    "verdict": "ok",
    "note": "150 deg * pi/180 = 150/180*pi = 5*pi/6 | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "d83a2bb3d2d576d7": {
+   "verdict": "ok",
+   "note": "KC 6 28.1 § The Zygote, m46308"
+  },
   "d845b6e0045cdfc6": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -101022,6 +101190,14 @@
     "result": "agrees"
    }
   },
+  "dda770d7cdcfda68": {
+   "verdict": "ok",
+   "note": "KC 6 28.1 § Contact Between Sperm and Oocyte, m46308",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "dda95efed3c50121": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -102069,6 +102245,14 @@
   "dfe843e064fb6144": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "dfe8927f971929d0": {
+   "verdict": "ok",
+   "note": "KC 6 28.2 § Development of the Placenta, m46319",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -106049,6 +106233,14 @@
     "result": "agrees"
    }
   },
+  "e8f3e03ece63a0fa": {
+   "verdict": "ok",
+   "note": "KC 6 28.4 § Changes in Organ Systems During Pregnancy, m46353",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e8f8b5541fea44e8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -107858,6 +108050,15 @@
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
+   }
+  },
+  "ecd5b3f54c12c34c": {
+   "verdict": "ok",
+   "note": "KC 6 28.6 § The Process of Lactation, m46325",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "key stands (parent, Nov 2 2026): m46325 attaches '(the latent period)' to the interval from suckling to secretion and '(the let-down)' to the secretion itself, and its glossary defines the let-down reflex as the release of milk from the alveoli — the interval's endpoint, not the interval. 'let-down' is not accepted."
    }
   },
   "ecd859b58593a10d": {

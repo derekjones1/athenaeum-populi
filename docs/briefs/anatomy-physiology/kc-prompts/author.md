@@ -29,6 +29,12 @@ __SECTIONS__
 - **Key terms:** the module's `<glossary>` is the key-terms list; a textin key should be a term the module defines or prints verbatim.
 - A page's `description` or objective heading printing the key with its fact is a reverse recall (the "eleven organ systems" case).
 - Stems carry no referent ("the figure above", "this section") — a cumulative page has none; write the fact into the stem.
+- **Grep the page for the SENTENCE, not only the key** (Unit 5): an item built on the sentence a page item already uses, with the blank moved, is the same reverse recall. Also grep for the **prefix-flipped mirror** of any page item (hypo-/hyper-, pre-/post-, dominant/recessive): a stem that mirrors a page cloze with the prefix flipped is a tell.
+- **Numeric options are sorted ascending**, then recount key slots; a number stated in the stem must not bracket the key, and a range key among single-number options is a tell.
+- **Options are all effects, all steps, or all structures** — an upstream step beside two effects is an arguable second key; a distractor the page assigns to something else, or that the item above settles, hands over the key by exclusion ("elimination by the page"). Every distractor is printed in the item's OWN module (Unit 6: a 28.1 term beside a 28.2 key failed the second checker).
+- **A sibling section page's rubric printing the fact is a reverse recall too** (Unit 5): grep the neighbouring section pages of the unit, not only your own.
+- **Grep every key and accept member against the whole BOOK's section pages** (Unit 6): `grep -rn 'answer="<key>"\|accept="[^"]*<key>' content/<book>/` — a fact an earlier unit's page already keys or accepts for the same fact (28.2 Wharton's jelly ↔ the 4.3 cloze; 28.2 apoptosis ↔ the 8.5 cloze) is a twin even across units, which the unit-scoped sweep cannot see.
+- **Read the section page's footer before building a table item**: a sortbins the page's footer declined because its members "sort without the module" stays declined on the check (Unit 6, 27.3); the replacement may change type with the parent's say-so.
 - **Errata:** grep `docs/openstax-errata.md` for each of your module ids before writing; a disclosed defect may carry a decision the check must follow (never key a corrected term unless the page's handling says so). Do not edit the errata file; report any new suspected source defect in your final message and in the ledger.
 
 ## Verify

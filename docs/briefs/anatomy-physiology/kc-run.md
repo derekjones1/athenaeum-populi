@@ -41,7 +41,12 @@ wall. The fifth run, Unit 5 (November 1, 2026, 36 sections, 108 items,
 across five chapters, sweeps 17 hard and 46 soft, sixteen items replaced
 (25.10 twice more) and twelve rewritten in place, second checker 3 of 30
 failed (two on 25.10, one on 24.3, all applied), blind solve 70/70 with 0
-alsoDefensible, one erratum (2827), about 48 minutes wall.
+alsoDefensible, one erratum (2827), about 48 minutes wall. The sixth run,
+Unit 6 (November 2, 2026, 10 sections, 30 items, "Knowledge Check 6" in the
+history), measured: checkers 0 hard and 13 soft across two chapters, sweep 1
+hard and 8 soft, three items replaced and four rewritten in place, second
+checker 1 of 8 reads failed (then the re-read passed), blind solve 20/20 with 1
+alsoDefensible (kept), no new errata, about 28 minutes wall to the solve compared.
 
 ## 0. What the runs measured
 
@@ -175,6 +180,27 @@ alsoDefensible, one erratum (2827), about 48 minutes wall.
   objective headings and hints (22.4, 22.7), sibling-page rubrics (25.1,
   26.3), page hints naming a rubric clause (25.2), and the elimination cases
   above.
+
+- **Cross-unit twins exist and the unit-scoped sweep cannot see them** (Unit 6,
+  November 2, 2026): two of 21 ch28 items re-asked a fact an earlier unit's page
+  already keyed or accepted (28.2 Wharton's jelly and 4.3; 28.2 apoptosis and
+  8.5), found by the chapter checker's book-wide grep, not by the sweep. Authors
+  and checkers grep every key and accept member against every section page of
+  the BOOK (keys, accepts, and cloze stems), not only the unit's pages.
+- **A section page's footer can rule a sortbins out** (Unit 6, November 2,
+  2026): the 27.3 footer disclosed that the secondary-sex-characteristics table
+  "sorts without the module"; the KC author built that sortbins anyway. Read the
+  page footer's declined-item clauses before building a table item; a declined
+  sortbins stays declined on the check, and the replacement may change type.
+- **A distractor must be printed in the item's own module** (Unit 6, November
+  2, 2026): "the chorionic cavity" beside the umbilical cord was 28.1's term, not
+  28.2's; the author, the parent and the first reader passed it, the second
+  checker's CNXML grep did not. Grep each distractor in the module, not the
+  chapter.
+- **Three readers converge on a rubric clause that restates its stem** (Unit 6,
+  November 2, 2026): the 27.2 clause was found by the parent, the checker and the
+  sweep; the 28.6 pair by the checker alone. Cut such clauses to the verbatim
+  substring that carries the new content.
 
 ## 1. Before the wave
 

@@ -22,7 +22,8 @@ __SECTIONS__
 6. **Accept lists:** every member module-printed; no ordinary word, no regular plural; run each natural variant of the key through the grader's folding (`npm run verify-section -- __SCRATCH__` self-grades the keys; read its log, do not edit).
 7. **Cross-block:** the key, keyed again in a sibling block (a double key), or the same fact asked in a sibling block (a twin), or a sibling block's stem printing this key with its fact.
 8. **Key positions** across the block's multiplechoice items.
-9. Grep `docs/openstax-errata.md` for each module id: an item must follow a disclosed decision.
+9. **Book-wide twins:** grep each key and accept member against every section page of the book (`answer=`/`accept=` and cloze stems), not only the unit's; a page in an earlier unit that keys or accepts the term for the same fact is a hard finding (Unit 6: two of 21 ch28 items).
+10. Grep `docs/openstax-errata.md` for each module id: an item must follow a disclosed decision.
 
 ## Report
 Append findings as you go to `$SP/kc/check-ch__CH__.md` (never a shared name). Per finding: item (section, type, stem's first words), **hard** or **soft**, the evidence (the exact page line or module sentence), and a suggested fix in one line (replacement sentence candidate from a different subsection where a replacement is needed). End with a summary line: `N items read, H hard, S soft; answered N with the key covered, D disagreements`. Final message: ten lines at most.
