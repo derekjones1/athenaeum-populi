@@ -109,7 +109,18 @@ const filesWarnAt = 0.9;
 // ~372 MiB projected at corpus completion. 450 MiB keeps ~21% headroom over
 // that, the margin the earlier ratchets kept. The sidebar is still the lever
 // if a later book trips this again.
-const maxTotalHtmlBytes = 450 * 1024 * 1024;
+//
+// Raised November 2, 2026, deliberately and with a measurement, on the
+// Anatomy and Physiology chapter 27 commit (Derek: "up the cap now so we
+// have room to grow"): 962 HTML documents, 364.6 MiB of HTML (388 KiB mean;
+// the 195 Anatomy and Physiology documents hold 60.9 MiB, 320 KiB mean).
+// Chapter 28 and the Unit 6 knowledge check add ~9 documents and ~9 sidebar
+// links per book page, ~5 MiB, so ~370 MiB at corpus completion — the ~372
+// projected above. 600 MiB leaves ~230 MiB over that: room for one more
+// book the size of Anatomy and Physiology (~70 MiB finished, sidebar
+// included) with the ~21% margin the earlier ratchets kept still intact
+// after it. The sidebar remains the lever if growth outruns this.
+const maxTotalHtmlBytes = 600 * 1024 * 1024;
 const maxPageBytes = 1.5 * 1024 * 1024;
 const maxPageElements = 35_000;
 // Duplicated non-content markup, as an ABSOLUTE mean per page.

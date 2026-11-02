@@ -607,6 +607,9 @@ cap and this book projects ~60 MB more, so **the cap will trip mid-book** —
 raise it deliberately with a measurement when it does, never in advance. It tripped on the chapter 24 commit (October 31, 2026: 940 documents,
 353.5 MiB; this book 51 MiB over 173 pages) and the cap went to 450 MiB,
 ~21% over the ~372 MiB projected at corpus completion — the measurement is
-in the audit file's comment. The
+in the audit file's comment. Raised again to 600 MiB on the chapter 27
+commit (November 2, 2026: 962 documents, 364.6 MiB of HTML, this book 60.9
+MiB over 195 documents) at Derek's request, to leave room for one more book
+of this size with the same margin after it. The
 20,000-file Cloudflare ceiling is not at risk (~1,700 files for this book on
 top of ~4,800, measured at the same scan).
