@@ -1926,6 +1926,14 @@
    "verdict": "ok",
    "note": "Critical Thinking Q1 (fs-id2119684/fs-id2016560, module m66514) — model answer is the keyed solution verbatim; checkpoints restate it. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "03c08210f96df61e": {
+   "verdict": "ok",
+   "note": "body cloze fs-id2175127 'Testosterone stimulates the growth of the larynx and thickening and lengthening of the vocal folds...'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "03c384012db6e71f": {
    "verdict": "ok",
    "note": "textin recall of glossary term 'phosphodiesterase' (fs-id1384518); meaning transcribed verbatim, answer matches term.; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -6555,6 +6563,10 @@
     "result": "agrees"
    }
   },
+  "0dbf026f8c613e67": {
+   "verdict": "ok",
+   "note": "model answer is the source solution verbatim; checkpoints are its clauses"
+  },
   "0dc9e49700502fdb": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -7077,6 +7089,14 @@
    "note": "author-built from § Chronic Infection, Check Your Understanding: \"In what two ways can a virus manage to maintain a persistent infection?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "0ed62a00a5638095": {
+   "verdict": "ok",
+   "note": "glossary recall inguinal canal (fs-id2569661); body fs-id2875054 prints it",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -8963,6 +8983,14 @@
     "result": "agrees"
    }
   },
+  "13062792b9948fe5": {
+   "verdict": "ok",
+   "note": "RQ fs-id1576900, source key b; body 'Without a functional SRY gene, an individual will be female.'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1307f86d657f0fa4": {
    "verdict": "ok",
    "note": "a_n=24-4n evaluated at n=1..5 by loop -> 20,16,12,8,4 (matches source key). | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -9200,6 +9228,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "1396a8036ac2b088": {
+   "verdict": "ok",
+   "note": "model answer is the source solution verbatim; checkpoints are its clauses"
   },
   "13972aa98713c833": {
    "verdict": "ok",
@@ -9807,6 +9839,14 @@
   "14b2d8c5f7ec5a06": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "14b83e76d90a4711": {
+   "verdict": "ok",
+   "note": "key atresia; re-read against the module sentence named in ledger-27.2.md; key printed in the body",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -12447,6 +12487,10 @@
     "result": "agrees"
    }
   },
+  "19debfa72ee77c3f": {
+   "verdict": "ok",
+   "note": "model answer is the source solution verbatim; checkpoints are its clauses"
+  },
   "19dfa021e5786e05": {
    "verdict": "ok",
    "note": "author-built from § Helminth Virulence: \"For example, the aquatic larval form of Schistosoma mansoni , which causes schistosomiasis , penetrates intact skin with the aid of proteas…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
@@ -14926,6 +14970,10 @@
     "result": "agrees"
    }
   },
+  "1f12a9ba21ee2926": {
+   "verdict": "ok",
+   "note": "CT fs-id2174205, source solution verbatim; matches fs-id2486952"
+  },
   "1f1f0b90d1862e3d": {
    "verdict": "ok",
    "note": "KC 3 17.5 § body Basic Techniques in Protein Analysis (fig-chF17_05_01 / fs-id2569068), m66515 — parent re-read against the module"
@@ -14963,6 +15011,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
+  "1f38ad8cdd42c5fe": {
+   "verdict": "ok",
+   "note": "key dominant follicle; source key re-read against raw CNXML solution and the module text",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -16042,6 +16098,10 @@
     "by": "fable-solver (blind, masked pages)",
     "result": "agrees"
    }
+  },
+  "2175b0a80488285a": {
+   "verdict": "ok",
+   "note": "CT fs-id2358195, source solution verbatim; matches body fs-id2603287"
   },
   "21799c3ddb180ba9": {
    "verdict": "ok",
@@ -18337,6 +18397,14 @@
     "result": "agrees"
    }
   },
+  "26a5ff608c054f14": {
+   "verdict": "ok",
+   "note": "RQ fs-id2633194, source key d; fs-id2184717 names genetics, psychological stress, stored fat",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "26ab41958ffc8524": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -18785,6 +18853,14 @@
    "note": "source exercise fs-idm2601472 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "279bec381c3697b5": {
+   "verdict": "ok",
+   "note": "RQ fs-id2007602, key b sperm; body fs-id2479953 'one male gamete, called a sperm'",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -20458,6 +20534,14 @@
     "result": "agrees"
    }
   },
+  "2b4b9b9cd5ad99d3": {
+   "verdict": "ok",
+   "note": "key myometrium; re-read against the module sentence named in ledger-27.2.md; key printed in the body",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2b4d02f90e579050": {
    "verdict": "ok",
    "note": "glossary recall: polyandry (fs-idp52684576) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -22092,6 +22176,10 @@
     "result": "agrees"
    }
   },
+  "2edb846622c36e46": {
+   "verdict": "ok",
+   "note": "CTQ fs-id2589761, model answer = source solution verbatim; 4 checkpoints are its sentences"
+  },
   "2ede030740916071": {
    "verdict": "ok",
    "note": "KC 2 10.4 § Viral Genomes, m58838 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
@@ -22126,6 +22214,14 @@
   },
   "2eeab5169fabc423": {
    "verdict": "ok"
+  },
+  "2eebde5a54a185ca": {
+   "verdict": "ok",
+   "note": "RQ fs-id2002473, key a; body fs-id2765667 'steroid hormone produced by Leydig cells'; option C replaced per parent ruling (options deviation, erratum 2836): 'produce inhibins' (fs-id2780238 gives inhibins to Sertoli cells)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "2eee0056d2f747d5": {
    "verdict": "ok",
@@ -23020,6 +23116,14 @@
   "30d4cad276ca86a2": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "30d852301e2ce883": {
+   "verdict": "ok",
+   "note": "key polar body; re-read against the module sentence named in ledger-27.2.md; key printed in the body",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "30da9501bc15d0bd": {
    "verdict": "ok",
@@ -26640,6 +26744,14 @@
   "39184b40a69d507a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "392e3235f8d4d824": {
+   "verdict": "ok",
+   "note": "body cloze fs-id2184717 '...nutrition on the age of menarche in the United States...'; accept 'start of menstruation' from fs-id2395971 'menarche, the start of menstruation'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -35478,6 +35590,14 @@
     "result": "agrees"
    }
   },
+  "4c59f2885d1cd187": {
+   "verdict": "ok",
+   "note": "key uterine tube; source key re-read against raw CNXML solution and the module text",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4c5c9d5ea5a0bf4d": {
    "verdict": "ok",
    "note": "source MC fs-id1167663988384, key C (epiglottis), source order kept | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -35944,6 +36064,14 @@
   "4d27a74b1ffb432f": {
    "verdict": "ok",
    "note": "Source-keyed FIB fs-id1167663723785, KEY 'patient serum', rendered as textin verbatim; accept='patient's serum' added per checker defect 3 (apostrophe strips on normalization to 'patients serum', which the grader's end-of-string plural fold never produces) — confirmed via check-text.mjs. (re-hashed: accept extended with recipient serum after the blind solve) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "4d2d024555941977": {
+   "verdict": "ok",
+   "note": "cloze of body fs-id2763275 'Soon after the formation of the testis, the Leydig cells begin to secrete testosterone.'; key printed verbatim",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -37212,6 +37340,14 @@
   "500a1f41177f3a39": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "500ad2dd4a2e780d": {
+   "verdict": "ok",
+   "note": "spermatogonia recall, stem rebuilt from body (checker finding): fs-id2212393 'Spermatogonia are the stem cells of the testis' + fs-id2919041 'begins with mitosis of the diploid spermatogonia'; accept spermatogonium; glossary meaning also fit primary spermatocytes",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -38501,6 +38637,14 @@
    "note": "glossary recall: cell-mediated immune response (fs-idm186893504) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "53150ab51b492997": {
+   "verdict": "ok",
+   "note": "summary cloze fs-id2463231 main clause 'the tissue that forms the internal reproductive structures stems from ducts that will develop into only male (Wolffian) or female (Müllerian) structures' (Whereas clause dropped); accept 'Wolffian duct'",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -39796,6 +39940,14 @@
   "55e58dd20ed0fd04": {
    "verdict": "ok"
   },
+  "55e89d7f2945c711": {
+   "verdict": "ok",
+   "note": "key areola; re-read against the module sentence named in ledger-27.2.md; key printed in the body",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "55ed1400d2b0782c": {
    "verdict": "ok",
    "note": "author-built from § Pertussis (Whooping Cough), Check Your Understanding: \"Why is pertussis becoming more common in the United States?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -40438,6 +40590,10 @@
   "57505a5741a0f863": {
    "verdict": "ok",
    "note": "Practice synthetic-division item 2: ran synthetic division (k=7) on 1,-21,147,-343 in node; quotient x^2-14x+49, remainder 0, matching the CNXML solution (fs-id1165134061948). | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "57519699d4be0b2b": {
+   "verdict": "ok",
+   "note": "ILQ fs-id2307604 graded selfcheck; source solution 'Sperm enter the prostate.' carried whole; fixed by fs-id1543486 'The paired ejaculatory ducts transport the seminal fluid into the next structure, the prostate gland.'"
   },
   "5755673a22192b12": {
    "verdict": "ok",
@@ -47374,6 +47530,10 @@
     "result": "agrees"
    }
   },
+  "67c7a5f86708d977": {
+   "verdict": "ok",
+   "note": "CT fs-id2197175, source solution verbatim"
+  },
   "67c9c14773e9af61": {
    "verdict": "ok",
    "note": "body cloze fs-id1119252 first sentence: 'Nervous tissue is characterized as being excitable and capable of sending and receiving electrochemical signals that provide the body with information.'",
@@ -49866,6 +50026,10 @@
   "6de24a5dabffcc59": {
    "verdict": "ok",
    "note": "KC 3 16.2 § Judgment and Abstract Reasoning, m46650"
+  },
+  "6de7e99075e5e660": {
+   "verdict": "ok",
+   "note": "CT fs-id2449759, source solution verbatim; prostate clause 'critical to sperm maturation' not supported by module (suspected claim error, transcribed as printed)"
   },
   "6def84f2d4177ac2": {
    "verdict": "ok",
@@ -55559,6 +55723,14 @@
     "result": "agrees"
    }
   },
+  "7a1d936f0f17059a": {
+   "verdict": "ok",
+   "note": "glossary recall prepuce (fs-id2405008); body fs-id2011703 prints prepuce and 'or foreskin'; accept foreskin",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7a1da97da2be80c5": {
    "verdict": "ok",
    "note": "key-term recall from the Glossary appendix: microtiter plates (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -57820,6 +57992,10 @@
    "verdict": "ok",
    "note": "CT fs-id1481649, solution fs-id2111266 with one-word fix by→of (motor neuron activation of the skeletal muscles)"
   },
+  "7ed769c3c0503153": {
+   "verdict": "ok",
+   "note": "ILQ fs-id2507982 graded selfcheck; source solution fs-id1546658 verbatim; fixed by fs-id2524917 'stored in the tail of the epididymis … until ejaculation occurs'; 'until they degenerate' not a checkpoint"
+  },
   "7edd123ea01d6957": {
    "verdict": "ok",
    "note": "author-built from § Antiviral Drugs: \"Nucleoside analog inhibition of nucleic acid synthesis\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -59700,6 +59876,14 @@
     "result": "agrees"
    }
   },
+  "832257b3d35f0090": {
+   "verdict": "ok",
+   "note": "key infundibulum; re-read against the module sentence named in ledger-27.2.md; key printed in the body",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8327ee6f4a72cf70": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -59971,6 +60155,14 @@
   "83b4fe288cd11c09": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 248): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "83ba8364de3ad1c0": {
+   "verdict": "ok",
+   "note": "key mons pubis, labia majora, and Bartholin’s glands; source key re-read against raw CNXML solution and the module text",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "83bb06ae42d8f76b": {
    "verdict": "ok",
@@ -61392,6 +61584,10 @@
     "result": "agrees"
    }
   },
+  "86c1b0c474698fe6": {
+   "verdict": "ok",
+   "note": "CT fs-id2610701, source solution verbatim; matches fs-id2336934"
+  },
   "86c31ea886739198": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -61403,6 +61599,10 @@
   "86c4fceda8c8f0ad": {
    "verdict": "ok",
    "note": "Point plot 1+5i; no computation, matches printed coordinates. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "86c590389fbefe36": {
+   "verdict": "ok",
+   "note": "model answer is the source solution verbatim; checkpoints are its clauses"
   },
   "86c5951811763968": {
    "verdict": "ok",
@@ -61434,6 +61634,14 @@
   "86d26245787a4522": {
    "verdict": "ok",
    "note": "Matrix already row-echelon [[1,0,0|31],[0,1,1|45],[0,0,1|87]]. Back-substitution: z=87, y=45-87=-42, x=31. Matches CNXML fs-id1165134431916 (31,-42,87) exactly. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "86d29eef27efb18f": {
+   "verdict": "ok",
+   "note": "key before birth; source key re-read against raw CNXML solution and the module text",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "86d34f92719b30bc": {
    "verdict": "ok",
@@ -62141,6 +62349,14 @@
   "888b1de055750710": {
    "verdict": "ok",
    "note": "CT2 fs-id2936242, stem word order corrected per parent ruling (erratum 2673, decisions entry); model answer = solution fs-id799310 verbatim"
+  },
+  "888b7210dea19df5": {
+   "verdict": "ok",
+   "note": "RQ fs-id2915084, key c; body fs-id2290408 'spermatogenesis occurs in the seminiferous tubules'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "888b72eca54cc58f": {
    "verdict": "ok"
@@ -70374,6 +70590,10 @@
     "result": "agrees"
    }
   },
+  "9b0b5dc3c0020c56": {
+   "verdict": "ok",
+   "note": "CTQ fs-id2981645, model answer = source solution verbatim; 2 checkpoints are its clauses"
+  },
   "9b0c18f3625c6d97": {
    "verdict": "ok",
    "note": "RQ fs-id1113573, key D disruption of blood to the brain (solution fs-id2564012); box fs-id1488700 'The common name for a disruption of blood supply to the brain is a stroke.'",
@@ -70934,6 +71154,14 @@
   "9c82b131937402b9": {
    "verdict": "ok"
   },
+  "9c8895a169d6fd29": {
+   "verdict": "ok",
+   "note": "key secretory phase; re-read against the module sentence named in ledger-27.2.md; key printed in the body",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9c89805fe1372c45": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -70961,6 +71189,14 @@
   "9c9ca3c97a06c39a": {
    "verdict": "ok",
    "note": "m66609 CT exercise fs-idm126240912: model answer is the source solution verbatim (annuals/biennials/perennials definitions), checkpoints decompose its four clauses with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "9ca18f926471d263": {
+   "verdict": "ok",
+   "note": "key ovaries; source key re-read against raw CNXML solution and the module text",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "9ca36287368def4e": {
    "verdict": "ok",
@@ -73410,6 +73646,14 @@
   },
   "a1f7ab8020c9ca0a": {
    "verdict": "ok"
+  },
+  "a1f7ed2dd65aeda1": {
+   "verdict": "ok",
+   "note": "cloze from fs-id2336934 'A structure called the acrosome covers most of the head…'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "a1f9fb4f70bbdfd4": {
    "verdict": "ok",
@@ -79639,6 +79883,14 @@
     "result": "agrees"
    }
   },
+  "af61c85865a07468": {
+   "verdict": "ok",
+   "note": "key There are no follicles left to produce estrogen.; source key re-read against raw CNXML solution and the module text",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "af65cc59045994b9": {
    "verdict": "ok",
    "note": "Locally authored textin from glossary definition 'electromagnetic spectrum' (fs-idm194226544): 'range of all possible frequencies of radiation'. Answer matches the glossary term exactly. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -84517,6 +84769,14 @@
     "result": "agrees"
    }
   },
+  "ba3a8608bf567fd0": {
+   "verdict": "ok",
+   "note": "author MC from fs-id2764705 (uterine tubes among duct-derived internal structures); distractors bipotential-derived per fs-id2780689 (gonads/testes) and fs-id2763275 (glans penis, clitoris)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ba3ae49b617fd74c": {
    "verdict": "ok"
   },
@@ -88352,6 +88612,14 @@
    "note": "author-built from § Preparing Specimens for Light Microscopy, Check Your Understanding: \"Why might an acidic dye react differently with a given specimen than a basic dye?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "c2cbbf7dca8f117d": {
+   "verdict": "ok",
+   "note": "RQ fs-id2395985, source key c (Y chromosome); body para-00002/fs-id2123649 support it",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -96564,6 +96832,14 @@
    "verdict": "ok",
    "note": "Critical Thinking selfcheck, m66411 exercise fs-idm68610512. Model answer is the CNXML solution verbatim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "d573617ac06b92c0": {
+   "verdict": "ok",
+   "note": "glossary recall spermatid (fs-id1848688) set in the singular; body fs-id2694146 'Each of these new cells is a spermatid'; accept early spermatid",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d576630ac8108189": {
    "verdict": "ok"
   },
@@ -102214,6 +102490,14 @@
     "result": "agrees"
    }
   },
+  "e220614ec4086fd2": {
+   "verdict": "ok",
+   "note": "key flagella; re-read against the module sentence named in ledger-27.2.md; key printed in the body",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e2207962028c90e4": {
    "verdict": "ok",
    "note": "RQ fs-id2189685 key A bulbus cordis; fs-id2343117 'The bulbus cordis develops into the right ventricle'",
@@ -102760,6 +103044,14 @@
    "note": "key-term recall from the Glossary appendix: optimum growth temperature (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "e3584a82dfa0b02a": {
+   "verdict": "ok",
+   "note": "RQ fs-id2752988, key a; body fs-id2524917 'newly formed sperm continue to mature … stored in the tail of the epididymis'",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -111102,6 +111394,14 @@
    "verdict": "ok",
    "note": "consecutive ratios all ~1.45 constant -> exponential; key p1316 #61"
   },
+  "f6708683d4abd46e": {
+   "verdict": "ok",
+   "note": "RQ fs-id2524700, key b; body fs-id2780238 GnRH from the hypothalamus",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f677ed86d32f6ecc": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 777): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -111727,6 +112027,10 @@
    "verdict": "ok",
    "note": "KC 2 6.4 § body phosphoanhydride bonds (fs-id1467282), m66462 — parent re-read against the module"
   },
+  "f788d2910299a1d7": {
+   "verdict": "ok",
+   "note": "CTQ fs-id1954220, model answer = source solution verbatim; 5 checkpoints are its clauses"
+  },
   "f789cafc3664a78f": {
    "verdict": "ok",
    "note": "source exercise fs-id1167663971070 (prose-key) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -112345,6 +112649,14 @@
    "verdict": "ok",
    "note": "Critical Thinking fs-idp167427680; model answer is the CNXML solution verbatim, checkpoints decompose it with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "f8fa3361a553a80d": {
+   "verdict": "ok",
+   "note": "key secondary oocyte; re-read against the module sentence named in ledger-27.2.md; key printed in the body",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f8fb07bb9f093d7e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -112364,6 +112676,14 @@
   "f90a0aee1b57a155": {
    "verdict": "ok",
    "note": "author-built from § Human Papillomas: \"An initial screening for HPV at age 30, conducted at the same time as a Pap test , is recommended.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "f90d5282f0900fff": {
+   "verdict": "ok",
+   "note": "cloze from fs-id2336934 'The central strand of the flagellum, the axial filament, is formed from one centriole…'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"

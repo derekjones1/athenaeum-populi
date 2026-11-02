@@ -2172,6 +2172,98 @@ dash follows its own module, so chapter 26's "acid-base" and chapter 25's
 "acid–base" are never harmonised, and a Knowledge Check item quotes the glyph
 of the page it tests.
 
+## Chapter 27 (November 2, 2026)
+
+*The Reproductive System*, the first chapter of Unit 6, *Human Development and
+the Continuity of Life*: three sections (m46400, m46392, m46408; intro m46385),
+run November 2 from `docs/briefs/anatomy-physiology/run.md`, with three Opus
+authors launched together, three Opus checkers, one Opus claim pass, one Opus
+alt-errata verifier, a fresh Fable blind solver, and Sonnet Clerks for the
+landing page, run facts, pins, errata draft, and this entry. It has 18
+vendored images, whose stems are `Figure_28_*` (the legacy numbering), the
+`Figure_28_00_01` splash among them. The source carries 31 exercises (14
+Review, 12 Critical Thinking, 5 Interactive Link Questions), of which two
+(both in 27.1) are graded and three stand as prompts. The graded items were
+solved blind, 33 of 33 agreeing, 0 flagged. Errata 2828–2842 (15 entries, the
+Reviewed-not-errata bullets besides).
+
+The parent read the modules and wrote the rulings before the wave (Part C of
+the run facts). The intro module has no `anatomy interactive` note. Interactive
+Link Questions were decided one by one. 27.1's two are graded `selfcheck`s: the
+vasectomy question is fixed by the sentence that places maturation and storage
+in the epididymis, and the sperm-path question by the sentence naming the
+prostate gland as the next structure, with a four-word key that became a
+one-sentence model answer restating the question. 27.2's two and 27.3's one
+are prompts, since no sentence of their modules gives the animation's answer.
+Table 27.1, the secondary sexual characteristics, is transcribed only and
+yields no `sortbins`, its cells being descriptions rather than assignments.
+27.2 is the one module in the September 8 table ("diploid" to "haploid" for the
+secondary oocyte); the row was extended to its second "haploid" site, and the
+playbook edited to say so. The parent wrote the landing's splash alt from the
+1600 image and two crops before reading the Clerk's draft, and swapped it in.
+The source defects ruled before and during the wave are one-word corrections
+kept in footers and ledgers: "muscular sack" to "sac" in 27.1 (2828), "raphae"
+to "raphe" (2829, the figure prints "Raphe"), "throughout a the" in 27.2
+(2830), and the glossary's "though" for "through" (2831).
+
+The checkers' findings were verified before being relayed. 27.1's checker found
+two defects: the 2801 alt, which said the arrow led to both panels when it
+leads to panel (a) only, and a spermatogonia recall whose stem fitted primary
+spermatocytes as well; both were applied, and the footer now states the full
+order of the Review and Critical Thinking items. Two more were rejected: that
+Critical Thinking 1's checkpoint stands in the source solution, and that the
+prostate checkpoint conflicts with the module's introduction. 27.2's checker
+found a recall that rejected "first polar body"; the parent accepted that
+member because the module prints the phrase across a `<term>` tag, which a
+plain grep misses, and rejected "flagellum" as unprinted. It also found a
+longdesc bracket on the wrong label (verified on the image), the Figure 27.15
+FSH "peaks sharply" where the image shows a modest rise, and an atresia stem
+reworded beyond a referent that the footer then disclosed. 27.3's checker found
+one defect and longdesc nits: the Wolffian cloze's stem answered the multiple
+choice above it, and the parent had already re-blanked the bipotential cloze
+once. The checker's accept members "interstitial cells", "vocal cords" and
+"flagellum" were rejected as unprinted.
+
+The solve read the 33 graded items on masked pages: 33 agreed, 0 disagreed, 0
+flagged, 0 unrecognized, 0 unresolved. The solver's synonyms (prepuce and
+foreskin, polar body and first polar body, Wolffian duct) were already accept
+members. The keys gate confirmed 6628 (baseline 6584), coverage 3918 of 3918
+(the floor was 3887), and the pins moved 768 to 771 and 159 to 162.
+
+The claim pass found four findings, all accepted after the parent read each
+(2832–2835): the landing's splash caption, which said the oocyte is released
+"into the uterine tube" when it is expelled into the peritoneal cavity and
+picked up (F1, 2832); the stratum functionalis lined by "endothelial" tissue,
+now epithelial (F2, 2833); the uterine tube's cilia lining "the outside and
+lumen", now the lumen along the length (F3, 2834); and the Women's Health
+Initiative, begun in the 1990s, its estrogen-plus-progestin arm stopped in
+2002 for breast cancer (F4, 2835). The Leydig review question's option
+"support spermatogenesis" is a true distractor on the module's own terms, so
+the option was replaced by "produce inhibins" and disclosed as an `options`
+deviation (2836). The prostate "sperm maturation" solution and the other
+suspicions are kept as printed under Reviewed-not-errata.
+
+The alt-errata verifier gave 12 verdicts: 6 confirmed, 4 rejected, 2 uncertain.
+The confirmed defects are in errata 2837–2842, in figure order: the
+`Figure_28_01_03` alt's "cross section" for a sagittal view (2837); the
+`Figure_28_01_07` alt's lower-case "sertoli" and its "micrographs" for drawings
+(2838, 2839); the "Labium minora" and "Labium majora" labels on Figure 27.9
+(2840); the vulva alt with its left and right panels swapped (2841); and
+"aveoli" in the Figure 27.17 artwork (2842). The 2801 "top panel / bottom
+panel" alt, the Figure 27.13 panel text, and the splash and one more source alt
+were rejected; the light-micrograph magnifications and the "Degrading corpus"
+order are uncertain and unfiled.
+
+Lessons. The 27.3 cloze was re-blanked twice: first by the parent, because its
+key stood in an earlier group's heading and tested the wrong objective, then on
+the checker's finding that its lead clause eliminated the neighbouring multiple
+choice's distractors; a cloze stem starts at the clause that carries the
+blank. No lint covers a key printed in an earlier group's `###` heading, so the
+author discloses it in the footer. A checker's proposed `accept` member is
+grepped in the module before it is relayed, and the grep must cross `<term>`
+tags, or "first polar body" looks unprinted. A true distractor is replaced
+rather than kept, as the Leydig option was.
+
 ## Chapter 21 (October 26, 2026)
 
 *The Lymphatic and Immune System*, the fourth and last chapter of Unit 4,

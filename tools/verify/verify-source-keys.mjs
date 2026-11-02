@@ -133,6 +133,13 @@ const shortSolutionWords = (solution) => normalizeWhitespace(solution).split(/\s
  */
 export const DISCLOSED_DEVIATIONS = Object.freeze([
   {
+    page: 'content/life-health-sciences/anatomy-physiology/27-the-reproductive-system/01-anatomy-and-physiology-of-the-testicular-reproductive-system.md',
+    exercise: 'fs-id2002473',
+    kind: 'options',
+    erratum: 2836,
+    reason: 'the source distractor C "support spermatogenesis" is a second true answer to "Leydig cells ________." — the module m46400\'s own fs-id2368387 says maintaining normal concentrations of testosterone, which Leydig cells produce, "promotes spermatogenesis", and fs-id2765667 says the rise of testosterone at puberty is "initiating spermatogenesis"; the page prints "produce inhibins" in its place (fs-id2780238 gives that to the Sertoli cells: "FSH also stimulates the Sertoli cells to produce hormones called inhibins"); key A "secrete testosterone", options B and D, and option order unchanged',
+  },
+  {
     page: 'content/life-health-sciences/anatomy-physiology/21-the-lymphatic-and-immune-system/03-the-adaptive-immune-response-t-lymphocytes-and-their-functional-types.md',
     exercise: 'fs-id2169042',
     kind: 'options',

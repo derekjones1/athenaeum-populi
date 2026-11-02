@@ -181,8 +181,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 28,
       "upstreamSections": 169,
-      "localChapters": 26,
-      "mappedSections": 159,
+      "localChapters": 27,
+      "mappedSections": 162,
       "units": [
         {
           "index": 1,
@@ -1682,6 +1682,33 @@
       "moduleId": "m46413",
       "sourceTitle": "Disorders of Acid-Base Balance",
       "moduleSha256": "c41b3752844f59ebfee14a861493e44ef2ddcaf62a42cb394ebdf0768c6df4e1"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/27-the-reproductive-system/01-anatomy-and-physiology-of-the-testicular-reproductive-system.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "27.1",
+      "moduleId": "m46400",
+      "sourceTitle": "Anatomy and Physiology of the Testicular Reproductive System",
+      "moduleSha256": "419f2ea873050fbffac13845286b2fbb39b44d814e39838bd552cebf320a7bd4"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/27-the-reproductive-system/02-anatomy-and-physiology-of-the-ovarian-reproductive-system.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "27.2",
+      "moduleId": "m46392",
+      "sourceTitle": "Anatomy and Physiology of the Ovarian Reproductive System",
+      "moduleSha256": "513dfd51230e88f98fb262af33cdbf9c78e7c5117fca878db444af3c911b0132"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/27-the-reproductive-system/03-development-of-the-male-and-female-reproductive-systems.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "27.3",
+      "moduleId": "m46408",
+      "sourceTitle": "Development of the Male and Female Reproductive Systems",
+      "moduleSha256": "36fcf13012296b82e37120adc55285e0855ca3738f1520b91144e26ca8983812"
     },
     {
       "localPath": "content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md",

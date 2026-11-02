@@ -122,6 +122,10 @@ them.
    before stating its position: the chapter 13 parent wrote "left arm
    bent behind the back" from a whole-figure zoom, and the claim pass and
    the verifier both read the crop as held out to the side *(chapter 13)*.
+   The parent inserts its alt with a script that asserts the page's alt equals
+   the PARENT-NOTES text byte for byte: chapter 27's parent re-joined the text
+   after a `split()`/`strip()` and shipped "micrographof", which only the claim
+   pass caught *(chapter 27)*.
    Keep the alt at or under 600 characters — `verify-section` caps it, and
    the chapter 16 parent's first draft ran 817 and failed the Clerk's
    verify *(chapter 16)*. Launched together with the step-6 drafter. An intro
@@ -251,6 +255,11 @@ them.
    Part B's quoted source alts ("The top panel…"), and each is a drawing
    whose panel count the alt does NOT give — open every figure Part C names
    *(chapter 25)*.
+   Part C names a term's typography from the CNXML MARKUP, never from Part B's
+   description: chapter 27's Part C called the first *SRY* mention italic from
+   Part B's "italic gene" line, and the module prints roman SRY with italic
+   initials inside the expansion — the author followed the CNXML and the
+   checker had to say so *(chapter 27)*.
    A checker can stumble on Part B while reading the run facts (17.10's did):
    `checker.md` now names the file as off-limits, and the drafter may be
    told to write it to `$SP/parent-only/` instead.

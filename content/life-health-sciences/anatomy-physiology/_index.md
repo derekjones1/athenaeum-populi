@@ -152,10 +152,17 @@ reproduction, development, and inheritance.
   compartments, water balance, electrolyte balance, acid-base balance, and
   disorders of acid-base balance.
 
+### Unit 6: Human Development and the Continuity of Life
+
+- **The Reproductive System** — the anatomy and physiology of the testicular
+  reproductive system, the anatomy and physiology of the ovarian
+  reproductive system, and the development of the male and female
+  reproductive systems.
+
 ## Planned contents
 
 The remaining chapters of Anatomy and Physiology 2e's six units will
 appear in this order:
 
-- **Unit 6: Human Development and the Continuity of Life** — The Reproductive
-  System; Development and Inheritance.
+- **Unit 6: Human Development and the Continuity of Life** — Development and
+  Inheritance.
