@@ -36,7 +36,12 @@ history), measured: checkers 0 hard and 19 soft across four chapters, sweeps
 2 hard and 8 soft, seven items replaced and three rewritten in place, second
 checker 1 of 10 failed (then the re-read of its replacement passed), blind
 solve 48/48 with 0 alsoDefensible, two errata (2577, 2578), about 45 minutes
-wall.
+wall. The fifth run, Unit 5 (November 1, 2026, 36 sections, 108 items,
+"Knowledge Check 5" in the history), measured: checkers 8 hard and 32 soft
+across five chapters, sweeps 17 hard and 46 soft, sixteen items replaced
+(25.10 twice more) and twelve rewritten in place, second checker 3 of 30
+failed (two on 25.10, one on 24.3, all applied), blind solve 70/70 with 0
+alsoDefensible, one erratum (2827), about 48 minutes wall.
 
 ## 0. What the runs measured
 
@@ -124,6 +129,52 @@ wall.
 - **An accept member that is an ordinary word grades a guess correct** (Unit
   4, October 27, 2026): "NO" for nitric oxide in 21.5 would have marked a
   typed "no" right; drop such members.
+- **A replacement built on the sentence a page item already uses, with the
+  blank moved, is the same reverse recall** (Unit 5, November 1, 2026): the
+  25.10 EPO item keyed "the liver" from "the kidney produces 85 percent of
+  circulating EPO; the liver, the remainder", the sentence the page's Practice
+  MC keys at 85 percent. The second checker caught it; the author, who had
+  grepped for the key, did not. Grep the page for the SENTENCE, not only the
+  key.
+- **An upstream step is not a distractor for an effect** (Unit 5, November 1,
+  2026): "the conversion of angiotensin I into angiotensin II by ACE" beside
+  two effects of angiotensin II can be argued to "help raise and maintain"
+  pressure too. Options are all effects, all steps, or all structures; and
+  when a module prints only two effects, the item is not a three-option MC:
+  change the sentence.
+- **"Elimination by the page" is a tell the item-by-item checkers under-read**
+  (Unit 5, November 1, 2026): a distractor the page assigns to something else
+  (24.1 coenzyme MC: both distractors were the page's own answers to other
+  items; 25.10 hypertonic MC: both distractors page-printed hypo-osmolar
+  causes) or that the item above settles (26.5 methanol after the formic-acid
+  item) hands over the key by exclusion. Both sweeps and the second checker
+  found these; no chapter checker did.
+- **A sibling section page's rubric printing the fact is a reverse recall
+  too** (Unit 5, November 1, 2026): the 25.1 ketone selfcheck's clauses sat in
+  the 24.3 and 24.5 pages' Practice rubrics, and the 26.3 PTH selfcheck's
+  calcium clauses in the 25.8 page's rubric. The chapter checkers grep their
+  own chapter's pages; the sweeps, reading across the unit, found both. Keep a
+  sweep's scope at two or three chapters so it can hold the neighbours' pages.
+- **Sort numeric options** (Unit 5, November 1, 2026): in 22.4 (5/40/80/64 mm
+  Hg) and 22.7 (24/4/13/16) the three distractors ran in order and the key
+  was the one out of place. Ascending order every time, then recount key
+  slots.
+- **Prefix-flip mirrors recur** (Unit 5, November 1, 2026; Unit 4's
+  hypervolemia lesson): 26.3 hyponatremia (page keys hypernatremia) and 25.10
+  hypertonic (page cloze on hypo-osmolarity) both shipped from the authors.
+  Add "no hypo-/hyper- flip of a page item" to the author's grep list
+  explicitly.
+- **Numbers stated in the stem must not bracket the key** (Unit 5, November
+  1, 2026): 26.1's stem printed 75 percent (infants) and 45 percent (old age),
+  and "about 50-60 percent" was the only option between them; the
+  mixed-format fix (single numbers against a range key) would have been a
+  second tell, so the item changed sentence.
+- **The sweeps out-yielded the checkers four to one on the margin** (Unit 5,
+  November 1, 2026): checkers 8 hard on 108 items, sweeps 17 hard (about half
+  overlapping the checkers and each other); the sweeps' own margin was page
+  objective headings and hints (22.4, 22.7), sibling-page rubrics (25.1,
+  26.3), page hints naming a rubric clause (25.2), and the elimination cases
+  above.
 
 ## 1. Before the wave
 
@@ -147,6 +198,12 @@ wall.
    to `$SP/kc/foot.md`, once.
 
 ## 2. The wave
+
+The prompt files below live in `kc-prompts/` beside this file (author,
+checker, sweep, second checker, solver, and the Unit 5 run's two clerk briefs
+as worked examples; its README names the placeholders) — copy them to
+`$SP/kc/prompt-*.md` and substitute with `str.replace`, since every earlier
+run's scratchpad had been cleaned away by the next (Unit 5, November 1, 2026).
 
 **Authors:** one Opus agent per chapter (`AGENTS.md` "Which model runs
 which agent": Author kind; Sonnet was the Biology/Microbiology precedent,

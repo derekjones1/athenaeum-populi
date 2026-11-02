@@ -2767,6 +2767,120 @@ clerk; the parent read every block and applied every one-line fix itself.
   solver 99k; about 45 minutes wall (authors launched to solve compared in
   34 minutes).
 
+## Knowledge Check 5 — Unit 5, chapters 22–26 (November 1, 2026)
+
+The fifth Anatomy and Physiology check, run from
+`docs/briefs/anatomy-physiology/kc-run.md`. `knowledge-check-22-26.md`,
+"Knowledge Check: Unit 5 — Chapters 22–26", weight 31; no chapter shifted
+(chapter 27 is not yet authored; `kc weights --write` rewrote 0). 36 sections
+(ch22 7, ch23 7, ch24 7, ch25 10, ch26 5), 108 items: 43 multiplechoice, 27
+textin, 38 selfcheck (every one with a rubric), 0 sortbins. 23.3 has two
+textins and a selfcheck (no MC); 22.6 and 26.2 have two selfchecks and one
+MC; 24.5, 25.2 and 25.6 have two MC and a selfcheck. MC key slots on the
+finished page: 3-option items (13) 5/4/4, 4-option items (30) 7/8/9/6.
+
+Run shape: five Opus authors (one per chapter, launched together), five Opus
+checkers (each as its author reported), two Opus reverse-recall sweeps on the
+finished blocks (A ch22/23/26, B ch24/25), one Opus second checker over the
+whole replacement set plus two re-reads of the 25.10 item, one blind Fable
+solver, one Sonnet errata drafter, and one Sonnet close-out clerk; the parent
+read every block and applied the one-line fixes itself.
+
+- **Checker yield (hard/soft):** ch22 2/7, ch23 1/4, ch24 3/5, ch25 1/10,
+  ch26 1/6 (8 hard total on 108 items).
+- **Sweep yield (hard/soft):** A 6/31 (57 items), B 11/15 (51 items). Several
+  hard flags were items the checkers or the parent had already found (the
+  23.4↔24.4 denature twin by both checkers and both sweeps; 24.3 ketone by
+  checker ch24 and sweep B; 26.3 PTH by checker ch26 soft and both sweeps
+  hard; 25.8↔26.3 phosphate by checker ch25, sweep A and sweep B). The
+  sweeps' own margin: 22.4 perfusion (page objective heading and hints), 22.7
+  week 24 (page hints), 24.1 coenzyme distractors page-assigned, 24.6 BMR
+  reverse of the page textin, 25.1 ketone twin (sibling pages' rubrics), 25.2
+  page hint naming "the one-way valve", 25.7 myogenic mirror of a page MC,
+  25.10 hypertonic prefix flip, 24.7 "urine" cloze.
+- **Parent read:** the 22.3 obliques stem (singled out the only abdominal
+  option) and the 22.6 altitude MC (premise deduced the key), both before
+  the checkers reported and both confirmed by checker ch22. Nothing the
+  checkers and sweeps missed.
+- **Second checker:** round 1 read 26 (15 replacements, 11 rewrites), 24
+  pass, 2 fail (25.10 EPO liver MC = the page's 85-percent MC with the blank
+  moved; 24.3 ketone-oxidation SC clause 3 = the page's acetone textin).
+  Round 2 read 3, 2 pass, 1 fail (25.10 RAAS longer-term MC: the ACE
+  conversion option arguable as a second key, an upstream step among
+  effects). Round 3: the 25.10 vitamin D "a hormone" MC passed. Overall 30
+  reads, 27 pass, 3 fail; 25.10 took three items. Trial assembly before the
+  second checker: clean; `kc leaks` 9 candidates, all vocabulary (liver ×5
+  across ch24 vs the 25.10 EPO key, "about 20 percent" 22.5 distractor vs 26.1
+  key, fatty acids, interstitial fluid, oblique); final page 8 candidates
+  (hormone ×3, fatty acids, interstitial fluid, citrate as a 26.5 distractor
+  vs the 24.3 key, oblique, about 20 percent), all vocabulary or a
+  distractor, agreed by the second checker.
+- **Replacements** (16 items replaced from different module sentences, type
+  kept; 25.10 twice more):
+  - 22.2 costal surface MC → interlobular septum (Gross Anatomy of the Lungs): etymology, costal = rib (checker ch22; parent soft).
+  - 22.4 perfusion textin → nitrogen, accept N2 (Solubility of Gases in Liquids): page objective heading and hints print "ventilation and perfusion" (sweep A).
+  - 22.6 hyperpnea SC → acute mountain sickness SC (High Altitude Effects): clauses 1–2 printed by the page's neural-factors rubric (checker ch22 soft, sweep A hard). Spread exception ledgered: two High Altitude Effects items, Hyperpnea exhausted by the page.
+  - 22.7 week-24 MC → eighth-month surfactant MC (Weeks 24–Term): two page hints print "Weeks 24–Term" (sweep A).
+  - 24.1 coenzyme MC → anabolic "fatty acids" MC (Anabolic Reactions): both distractors page-assigned to other things, elimination (sweep B).
+  - 24.3 ketogenesis SC → ketone-oxidation SC, then trimmed to 2 clauses (Ketone Body Oxidation): clause 3 = page "starvation" cloze, clauses 1–2 on the 24.5 page and a key term (checker ch24, sweep B); the replacement's acetone clause was the page's acetone textin (second checker).
+  - 24.4 "It denatures them" MC → sodium bicarbonate "protect the lining of the intestine" MC (opening paragraph): cross-block twin of the 23.4 selfcheck rubric clause (checkers ch23 and ch24, both sweeps).
+  - 25.1 diabetes-ketones SC → urine pH SC (urine pH paragraph): 24.3/24.5 page rubrics pre-print it, twin of the ch24 ketone item (sweep B).
+  - 25.7 myogenic SC → sympathetic stress vasoconstriction SC (Sympathetic Nerves): page MC states clause 1, clause 3 its mirror (sweep B). Spread exception ledgered (splanchnic textin shares the subsection; Paracrine is a table inside TGF and its NO fact is a page key).
+  - 25.10 hypertonic MC → EPO liver MC (failed: the page's 85-percent MC with the blank moved) → RAAS longer-term MC (failed: ACE option arguable) → vitamin D "a hormone" MC (Vitamin D Synthesis): prefix flip of the page's hypo-osmolarity cloze with page-printed distractors (sweep B; checker ch25 soft).
+  - 26.1 body-water MC → plasma's share of the ECF MC (Fluid Compartments › Extracellular Fluid): the stem's 75/45 bracketed the key (checker ch26).
+  - 26.2 kidney-volume SC → diuretics SC (Role of ADH): stem gave away clauses; Role of ADH was not exhausted, so the 26.2 spread exception was removed (checker ch26).
+  - 26.3 hyponatremia textin → cystic fibrosis textin (Chloride): hyper→hypo flip of the page's hypernatremia item (checker ch26, sweep A).
+  - 26.3 PTH SC → insulin's redistribution of potassium SC (Potassium): phosphate clause stated by the 25.8 block stem (checker ch25, both sweeps), calcium effects printed by the 25.8 page rubric (sweep A). Angiotensin II rejected because 25.10 Practice keys both its effects; calcitonin because it would be a second key to a committed KC 05-11 item.
+  - 26.4 Addison's disease textin → carbonic anhydrase textin (same paragraph): keyed on the committed knowledge-check-12-17.md (17.6), 24.1 Addison box, descriptor answered it (checker ch26 soft, parent).
+  - In place (12): 22.3 obliques stem re-aimed at "push the diaphragm further into the thorax" (parent, checker ch22); 22.4 and 22.7 numeric options sorted ascending (checker ch22 soft); 22.6 altitude MC premise dropped, "only a quarter" → "the same proportion" (parent); 23.2 secretin options reordered off the page's CCK order (checker ch23 soft); 24.6 BMR SC lost the "what does BMR measure" ask and clause 1 (checker ch24 soft, sweep B hard); 24.7 vitamins SC trimmed to the fat-soluble half (checker ch24, sweep B); 25.2 oblique-ureter rubric clause 1 dropped, the page hint naming "the one-way valve" (sweep B, checker ch25); 25.4 PCT SC cut to the mitochondria half (checker ch25 hard, sweep B); 25.8 BNP stem reworded without "peptide" (checker ch25); 25.1 "listed" and 25.9 "named" referents dropped (checker ch25); 26.3 PTH phosphate trim (superseded by the replacement); 26.5 aspirin stem clause dropped (unfiled claim-pass suspicion) and distractors → antacids, laxatives, citrate, since aspirin is absent from the page sortbins and methanol was eliminable from the item above (checker ch26, sweep A, second checker).
+- **Parent one-line fixes:** the in-place rewrites above, and accept lists:
+  25.7 + bare "splanchnic"; 25.4 − "parietal surface" (printed in m46429, not
+  the item's module); "renal lobes" (25.3), "nitrogen gas" (22.4), "duodenal
+  papilla" (23.5), "Addison disease" kept out because not module-printed.
+- **Cross-block leaks:** 23.4↔24.4 denature (fixed on the 24.4 side),
+  25.8↔26.3 phosphate (fixed on 26.3), 24.3↔25.1 ketones twin (fixed on
+  25.1), 26.4 Addison's vs KC 12–17 (fixed), 26.3 PTH vs the 25.8 page
+  (fixed).
+- **Spread exceptions ledgered:** 22.6 (two High Altitude Effects items),
+  23.2/23.5/23.7 (two top-level body sections; nested subsections counted in
+  their host), 24.4 (one body section + PKU box), 24.6 (two body sections),
+  25.1 (no subsections), 25.5 (GFR, NFP, summary), 25.7 (Sympathetic Nerves
+  ×2), 26.3 (two subsections of Roles of Electrolytes).
+- **Blind solve:** 70 graded items (43 multiplechoice, 27 textin) answered
+  cold from the 36 masked section pages by a fresh Fable solver: 70 agree, 0
+  disagree, 0 flagged, 0 unrecognized, 0 missing, 0 unanswered, 0
+  alsoDefensible, 0 unsure; every note read by the parent, none reporting a
+  page defect (notes 47, 48 and 54 observe that "renal lobes", bare
+  "parietal" and singular "splanchnic nerve" are plausible typings;
+  "parietal" and the plural fold already grade correct, "renal lobes" stays
+  out because m46429 never prints it). Ledger: 108 provenance notes (0 items
+  without provenance, 0 unused) and 70 solve records merged (17110 records;
+  `ledger:provenance` 0, prune 0); `--min-exercises` 17002 → 17110,
+  `--min-replayed` 8011 → 8038 (`--min-verified` and `--min-confirmed`
+  unchanged). Build: `npm test` green (953 files, 0 errors); `npm run build
+  && npm run check:build` clean, 6458/20000 files, 611.4 MiB; the check page
+  renders to 455,693 bytes of HTML (Unit 4: 352,806). The unit 5 route was
+  added to `tests/accessibility.spec.mjs`.
+- **Errata:** 2827 (m46414 §26.3 "This action increases the glomerular
+  filtration rate" contradicts m46424 §25.8 "reduces both GFR and renal blood
+  flow"; kept as printed, no item rests on it; found by the ch26 author,
+  confirmed by the parent). Claim findings: none beyond this.
+- **Lessons** (the last eight bullets of `kc-run.md` §0):
+  - A replacement built on the sentence a page item already uses, with the blank moved, is the same reverse recall (25.10 EPO liver): grep the page for the SENTENCE, not only the key.
+  - An upstream step is not a distractor for an effect (25.10 RAAS, ACE conversion beside two effects).
+  - "Elimination by the page" is a tell the item-by-item checkers under-read (24.1, 25.10, 26.5); the sweeps and the second checker found it.
+  - A sibling section page's rubric printing the fact is a reverse recall too (25.1, 26.3); keep a sweep's scope at two or three chapters.
+  - Sort numeric options ascending, then recount key slots (22.4, 22.7).
+  - Prefix-flip mirrors recur (26.3 hyponatremia, 25.10 hypertonic); add "no hypo-/hyper- flip of a page item" to the author's grep list.
+  - Numbers stated in the stem must not bracket the key (26.1).
+  - The sweeps out-yielded the checkers four to one on the margin (8 hard vs 17 hard on 108 items).
+- **Costs** (tokens, including fix rounds): authors ch22 231k, ch23 226k, ch24
+  232k, ch25 264k, ch26 266k; checkers ch22 152k, ch23 140k, ch24 159k, ch25
+  166k, ch26 160k; sweeps A 196k, B 168k; second checker 190k (three
+  rounds); errata clerk 51k; solver 444k; about 48 minutes wall (authors
+  launched 18:49 to solve compared 19:37, the whole wave live at once: five
+  authors, then five checkers and two sweeps, then one second checker).
+
 ## Examples moved from the playbook (October 13, 2026)
 
 Cut verbatim from `docs/subjects/anatomy-physiology.md`.

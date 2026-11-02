@@ -250,6 +250,10 @@
     "result": "agrees"
    }
   },
+  "008353b9a1d0d9eb": {
+   "verdict": "ok",
+   "note": "KC 5 26.2 § Regulation of Water Output, m46416"
+  },
   "00883b645f75f31f": {
    "verdict": "ok"
   },
@@ -1284,6 +1288,14 @@
     "result": "agrees"
    }
   },
+  "0295cb30e6703558": {
+   "verdict": "ok",
+   "note": "KC 5 25.5 § Net Filtration Pressure (NFP), m46433",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "029f6a5fdc52e2ff": {
    "verdict": "ok",
    "note": "KC 5 24.2 § Oral Thrush, m58925"
@@ -1662,6 +1674,14 @@
   "0340aeb3120b925a": {
    "verdict": "ok",
    "note": "Practice obj3, x^2+3sqrt3xy+4y^2+y-2=0: cot(2theta)=(1-4)/(3sqrt3)=-1/sqrt3, and since cot(2theta)<0 the section's own convention puts theta in (45,90); 2theta=120 gives theta=60 deg, matching source's printed 'theta=60 deg'. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "0341917d54f2ef63": {
+   "verdict": "ok",
+   "note": "KC 5 25.8 § Endothelin, m46424",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "0345decb76e170b3": {
    "verdict": "ok",
@@ -2074,6 +2094,10 @@
   "0438854b6a4333ea": {
    "verdict": "ok",
    "note": "Body selfcheck, CYU box1 bullet3 (seroconversion) — model answer restates 'antibody levels reach the threshold for detection' plus the onset/HIV-timing sentence. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "0438da88a6d15b18": {
+   "verdict": "ok",
+   "note": "KC 5 26.1 § Fluid Movement between Compartments, m46411"
   },
   "044101bb4ca7a63f": {
    "verdict": "ok",
@@ -3234,6 +3258,14 @@
    "verdict": "ok",
    "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Graph the polar equation $r^2=10\\cos(2\\theta)$. What is the ) | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "06c849922f744400": {
+   "verdict": "ok",
+   "note": "KC 5 25.7 § Tubuloglomerular Feedback, m46435",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "06caa96153b70099": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -3886,6 +3918,14 @@
     "result": "agrees"
    }
   },
+  "0816f4372d8a9300": {
+   "verdict": "ok",
+   "note": "KC 5 22.6 § High Altitude Effects, m46524",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0818cb2b2f546316": {
    "verdict": "ok",
    "note": "fs-idm59103088: source solution used verbatim as model answer; checkpoints are its three clauses. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -4033,6 +4073,14 @@
   },
   "0859979a781512a8": {
    "verdict": "ok"
+  },
+  "085bb63fb3cbd5ec": {
+   "verdict": "ok",
+   "note": "KC 5 25.2 § Micturition Reflex, m46427",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "085c3b045bf356aa": {
    "verdict": "ok",
@@ -11111,6 +11159,14 @@
     "result": "agrees"
    }
   },
+  "1754136e74243ca3": {
+   "verdict": "ok",
+   "note": "KC 5 24.7 § Food and Metabolism, m46467",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "175475601dd1ecfb": {
    "verdict": "ok",
    "note": "fs-id1394735 key D inhibin; body: inhibin 'inhibits the secretion of FSH from the anterior pituitary gland'",
@@ -11705,6 +11761,10 @@
     "by": "fable-solver-2",
     "result": "agrees"
    }
+  },
+  "1893b04bc60884e8": {
+   "verdict": "ok",
+   "note": "KC 5 23.3 § The Tongue, m46511"
   },
   "1894fefc153a3c6a": {
    "verdict": "ok",
@@ -12436,6 +12496,14 @@
    "note": "KC 3 16.3 § body, intro paragraph (fs-id2261473 region; the module opening), m66505 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "1a04ee2ddcaefcdc": {
+   "verdict": "ok",
+   "note": "KC 5 25.8 § Natriuretic Hormones, m46424",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -15866,6 +15934,10 @@
     "result": "agrees"
    }
   },
+  "212c8873bc44bca4": {
+   "verdict": "ok",
+   "note": "KC 5 23.4 § Histology, m46517"
+  },
   "212ca528ef489fa8": {
    "verdict": "ok",
    "note": "RQ fs-id2136699, key C audition; audition relays through the medial geniculate nucleus (fs-id2413700), gustation through the ventral posterior nucleus (fs-id1885696). Options and order as source.",
@@ -17329,6 +17401,10 @@
     "result": "agrees"
    }
   },
+  "24d909bbe3096f65": {
+   "verdict": "ok",
+   "note": "KC 5 26.2 § Role of ADH, m46416"
+  },
   "24d9dcc8edb45c63": {
    "verdict": "ok",
    "note": "author-built from § Actinobacteria: High G+C Gram-Positive Bacteria: \"One distinctive feature of this group is the presence of several different peptidoglycans in the cell wall.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -17524,6 +17600,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "253991b8d205b2cd": {
+   "verdict": "ok",
+   "note": "KC 5 24.2 § Oxidative Phosphorylation and the Electron Transport Chain, m46451"
   },
   "253e7dbf4023a6d9": {
    "verdict": "ok"
@@ -18127,6 +18207,14 @@
   "264081178a06c9c1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "2640b8378b39466b": {
+   "verdict": "ok",
+   "note": "KC 5 23.4 § Gastric Secretion, m46517",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -20286,6 +20374,10 @@
     "result": "agrees"
    }
   },
+  "2b2e587e712b465c": {
+   "verdict": "ok",
+   "note": "KC 5 26.5 § Compensation Mechanisms, m46413"
+  },
   "2b2fb80e0b4931bd": {
    "verdict": "ok",
    "note": "body cloze from § introduction: \"In addition, antigen mimicry between pathogen antigens and our own self antigens can lead to cross-reactivity and autoimmunity.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -21579,6 +21671,14 @@
     "result": "agrees"
    }
   },
+  "2e1a87fe461e8493": {
+   "verdict": "ok",
+   "note": "KC 5 26.3 § Roles of Electrolytes, m46414",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2e1c4154b9690679": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -22651,6 +22751,14 @@
   "30384ad0ae198d04": {
    "verdict": "ok",
    "note": "REVISED (checker D4): Source exercise fs-id1167662720542 (Short Answer, no source key) reverted from multiplechoice to selfcheck. Answering 'How can human activity lead to eutrophication?' needs § Nitrogen Cycle paragraph 3's two sentences (fs-id1167662374743) assembled — the first sentence only reaches surface runoff, the second only starts from 'fertilizer runoff' — and the former MC's distractors (sulfate reduction, CO2/rivers) were invented rather than drawn from the module. Model answer is both sentences verbatim; all 3 rubric checkpoints are literal clauses of it. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "303eb4d7f2623f35": {
+   "verdict": "ok",
+   "note": "KC 5 26.5 § Metabolic Acidosis: Primary Bicarbonate Deficiency, m46413",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "3044798debf626a0": {
    "verdict": "ok",
@@ -25495,6 +25603,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "369a898433e4dcdf": {
+   "verdict": "ok",
+   "note": "KC 5 24.6 § Metabolic Rate, m46456"
   },
   "369da6189f16e440": {
    "verdict": "ok",
@@ -28870,6 +28982,14 @@
     "result": "agrees"
    }
   },
+  "3e6da0f0367dbdd2": {
+   "verdict": "ok",
+   "note": "KC 5 25.10 § Vitamin D Synthesis, m46446",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3e70594c63f9843f": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -30762,6 +30882,14 @@
     "result": "agrees"
    }
   },
+  "422badda601dc766": {
+   "verdict": "ok",
+   "note": "KC 5 25.9 § Elimination of Drugs and Hormones, m46434",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "422dbb5afb828c82": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -31767,6 +31895,14 @@
     "result": "agrees"
    }
   },
+  "44707dbdab027709": {
+   "verdict": "ok",
+   "note": "KC 5 26.4 § Renal Regulation of Acid-Base Balance, m46409",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4471b7606406d2ca": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -32667,6 +32803,14 @@
     "result": "agrees"
    }
   },
+  "46503064645eba43": {
+   "verdict": "ok",
+   "note": "KC 5 25.4 § Loop of Henle, m46431",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "465272020b04c54b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -32965,6 +33109,14 @@
   "47098aa1d52f65ef": {
    "verdict": "ok",
    "note": "(3-4i)(2+3i) = 6+9i-8i-12i^2 = 6+i+12 = 18+i; recomputed independently, matches CNXML ti_03_01_05. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "4709b4c2b13375a0": {
+   "verdict": "ok",
+   "note": "KC 5 23.7 § Carbohydrate Digestion, m46501",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "470e0972e2c5dd0e": {
    "verdict": "ok",
@@ -33449,6 +33601,10 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 146): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
+  "484108fb8506af70": {
+   "verdict": "ok",
+   "note": "KC 5 25.10 § Recovery of Electrolytes, m46446"
+  },
   "4842dc39c86cde0c": {
    "verdict": "ok",
    "note": "key-term recall from the Glossary appendix: monoecious (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -33698,6 +33854,14 @@
   "48c384bb4a248750": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "48c3f317b1f0f213": {
+   "verdict": "ok",
+   "note": "KC 5 25.5 § Glomerular Filtration Rate (GFR), m46433",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "48c86ea06cabf33d": {
    "verdict": "ok",
@@ -36707,6 +36871,14 @@
    "verdict": "ok",
    "note": "orchestrator read (prose claim pass, September 6, 2026): model answer corrected from the source solution's 'capsule made of lipopolysaccharides' to outer membrane per m66545; erratum 388, DISCLOSED_DEVIATIONS kind solution; rubric clause updated to match | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "4f717e0c1629f418": {
+   "verdict": "ok",
+   "note": "KC 5 25.3 § Internal Anatomy, m46429",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4f72782b3a260f32": {
    "verdict": "ok",
    "note": "glossary recall fs-id1475686",
@@ -37219,6 +37391,14 @@
     "result": "agrees"
    }
   },
+  "506914142134871e": {
+   "verdict": "ok",
+   "note": "KC 5 22.4 § Solubility of Gases in Liquids, m46521",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5070cdec2143309d": {
    "verdict": "ok",
    "note": "KC 3 17.2 § Peptide and Protein Hormones, m46667",
@@ -37393,6 +37573,10 @@
   },
   "50cb231e38c3277c": {
    "verdict": "ok"
+  },
+  "50cf107dc5133644": {
+   "verdict": "ok",
+   "note": "KC 5 22.3 § Pressure Relationships, m46549"
   },
   "50df19bcf9a33d2d": {
    "verdict": "ok"
@@ -37991,6 +38175,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "5249fb83236b975a": {
+   "verdict": "ok",
+   "note": "KC 5 23.1 § Histology of the Alimentary Canal, m46506"
   },
   "5250195800a8f46d": {
    "verdict": "ok"
@@ -38830,6 +39018,14 @@
   "54177f06378a2267": {
    "verdict": "ok",
    "note": "CT fs-id1525960 model answer = fs-id2052496 verbatim"
+  },
+  "541930a8465d199f": {
+   "verdict": "ok",
+   "note": "KC 5 25.3 § External Anatomy, m46429",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "541c34546e6b0f5c": {
    "verdict": "ok",
@@ -39917,6 +40113,14 @@
    "verdict": "ok",
    "note": "u^2-u-110=0 -> u=11 (u=-10 rejected) -> x=ln11; key p1316 #45"
   },
+  "56bf8bc03c0c9450": {
+   "verdict": "ok",
+   "note": "KC 5 22.4 § External Respiration, m46521",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "56c5366de26df85a": {
    "verdict": "ok"
   },
@@ -40199,6 +40403,14 @@
   "5748791a27cec522": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "5748c941ad959efb": {
+   "verdict": "ok",
+   "note": "KC 5 23.6 § Histology, m46496",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -41555,6 +41767,10 @@
   "5a1c66291c9a1167": {
    "verdict": "ok"
   },
+  "5a1df410df1bc15f": {
+   "verdict": "ok",
+   "note": "KC 5 24.7 § Vitamins, m46467"
+  },
   "5a1f05ce8f37dea0": {
    "verdict": "ok",
    "note": "source exercise fs-id1167663929102 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -42908,6 +43124,10 @@
     "result": "agrees"
    }
   },
+  "5d118363018332ec": {
+   "verdict": "ok",
+   "note": "KC 5 25.2 § Ureters, m46427"
+  },
   "5d13e3833415d988": {
    "verdict": "ok",
    "note": "Try It 1: ran coefficient-array long division of 16x^3-12x^2+20x-3 by 4x+5 in node (also hand-verified step by step); got quotient 4x^2-8x+15, remainder -78, matching the CNXML solution exactly. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -42956,6 +43176,14 @@
    "note": "Locally authored cloze textin from the module's own sentence: 'The distribution of these biomes shows that the same biome can occur in geographically distinct areas with similar climates.' Answer 'climates' is the blanked content phrase; accept 'climate' (singular). | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "5d32a2a149884b6f": {
+   "verdict": "ok",
+   "note": "KC 5 23.1 § Blood Supply, m46506",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -43944,6 +44172,14 @@
    "verdict": "ok",
    "note": "sin(pi) = 0 exactly, y-coordinate of point (-1,0) at pi rad | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "5f672bedea45aef2": {
+   "verdict": "ok",
+   "note": "KC 5 24.1 § Anabolic Reactions, m46489",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5f681e6adce8c328": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -44655,6 +44891,14 @@
    "note": "summary cloze from § summary: \"If the egg develops outside the body, it usually has a protective covering over it.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "fable-blind-solve",
+    "result": "agrees"
+   }
+  },
+  "61328b8b9bf7ffc9": {
+   "verdict": "ok",
+   "note": "KC 5 22.2 § Gross Anatomy of the Lungs, m46551",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -48499,6 +48743,10 @@
    "verdict": "ok",
    "note": "Source Short Answer fs-id1167585133075 (verbatim stem 'Explain how helminths evade the immune system.'), no source key; per parent adjudication, restored as its own Practice selfcheck rather than folded into the similarly worded body CYU bullet. Model answer and 4-checkpoint rubric cover all four of this module's mechanisms: size (immune system ineffective against large helminths), tough cuticle (roundworms), varying surface characteristics/glycan mimicry, and active suppression (S. mansoni degrading host antibodies with proteases plus the general immune-overwhelm sentence) — assembled only from this module's own sentences, no new claim. Hint corrected per checker concern 1: the four reasons come from three module paragraphs (size+cuticle; glycan mimicry; active suppression), not two. | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged"
   },
+  "6b2773f680361904": {
+   "verdict": "ok",
+   "note": "KC 5 26.3 § Roles of Electrolytes, m46414"
+  },
   "6b322006f2c3cb33": {
    "verdict": "ok",
    "note": "IL fs-id1906424 graded selfcheck; model = source solution verbatim; fixed by Summary fs-id2237266 and body fs-id1761752"
@@ -49722,6 +49970,10 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "6e2ecc0cab0df6be": {
+   "verdict": "ok",
+   "note": "KC 5 24.3 § Ketone Body Oxidation, m46462"
+  },
   "6e364994ff37d865": {
    "verdict": "ok",
    "note": "KC 6 30.5 § body Translocation: Transport from Source to Sink (fs-idm95744672), m66600 — parent re-read against the module"
@@ -50425,6 +50677,14 @@
    "note": "source exercise fs-id1167663994698 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "6fc3283fa21b6b0f": {
+   "verdict": "ok",
+   "note": "KC 5 24.2 § Glycolysis, m46451",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -52378,6 +52638,10 @@
    "verdict": "ok",
    "note": "Source CT fs-id2093721, model answer = solution fs-id2289250 verbatim; fs-id2636907 supports it."
   },
+  "740918693502e118": {
+   "verdict": "ok",
+   "note": "KC 5 22.6 § Acclimatization, m46524"
+  },
   "740ac7ba8c8e2f78": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): #17 (fs-id2011827): cos45°cos15°=(1/2)[cos30°+cos60°]=(1/2)[(√3/2)+(1/2)]=(1+√3)/4; confirmed numerically (degrees converted to radians explicitly), matches CNXML solution (1/4)(1+√3).",
@@ -53275,6 +53539,14 @@
    "verdict": "ok",
    "note": "-0.125,0.25,-0.5,1,-2: ratios all -2 (0.25/-0.125=-2, -0.5/0.25=-2, 1/-0.5=-2, -2/1=-2). Matches CNXML Algebraic #7 solution r=-2. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "75e0cf06ecae62b3": {
+   "verdict": "ok",
+   "note": "KC 5 22.1 § Larynx, m46548",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "75e2fe24dc2fb4c2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -53431,6 +53703,10 @@
   "761c57f5bd38b5d5": {
    "verdict": "ok",
    "note": "KC 2 9.4 § body Signaling in Yeast (fs-id1547365), m66383 — parent re-read against the module"
+  },
+  "761c718848806525": {
+   "verdict": "ok",
+   "note": "KC 5 24.1 § Hormonal Regulation of Metabolism, m46489"
   },
   "761dcf166db46a45": {
    "verdict": "ok"
@@ -53917,6 +54193,14 @@
   "774c43396e0a03d6": {
    "verdict": "ok",
    "note": "m66671 fs-idp136653232; model answer is the source CT solution verbatim, checkpoints decompose its own clauses with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "774ed3ea21f48db7": {
+   "verdict": "ok",
+   "note": "KC 5 24.1 § Catabolic Reactions, m46489",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "7751b1532eb659c8": {
    "verdict": "ok",
@@ -54459,6 +54743,10 @@
     "result": "agrees"
    }
   },
+  "78831e12e3a41e84": {
+   "verdict": "ok",
+   "note": "KC 5 22.7 § Birth, m46518"
+  },
   "7883869765211962": {
    "verdict": "ok",
    "note": "Locally written self-check, disclosed in the footer, drawn strictly from body paragraph fs-id1568624 ('Changes in epigenetic regulation, transcription, RNA stability, protein translation, and post-translational control can be detected in cancer.'); model answer and rubric clauses restate only that sentence's five items, no new claim. Added because the module's two Review Questions and two Critical Thinking Questions all map to objectives 1 and 3, leaving objective 2 without a source item. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -54762,6 +55050,14 @@
   "79300ce456cc5f36": {
    "verdict": "ok",
    "note": "body cloze from § Animal and Human Parasites and Pathogens: \"Antibiotics only target prokaryotic cells, whereas compounds that kill fungi also harm the eukaryotic animal host.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "793093a724d3e7a7": {
+   "verdict": "ok",
+   "note": "KC 5 26.1 § Fluid Compartments, m46411",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -56489,6 +56785,14 @@
     "result": "agrees"
    }
   },
+  "7c8f442facc205cf": {
+   "verdict": "ok",
+   "note": "KC 5 22.5 § Oxygen Dissociation from Hemoglobin, m46545",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7c8fc4c715072477": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -57544,6 +57848,10 @@
    "verdict": "ok",
    "note": "Try It 14: log_5(100)=ln(100)/ln(5)=2.8613531... (node), rounds to 2.861, matching the CNXML solution's own rounding (4.6051/1.6094=2.861). | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "7ef02890e0b9bffd": {
+   "verdict": "ok",
+   "note": "KC 5 25.6 § Reabsorption and Secretion in the Distal Convoluted Tubule, m46443"
+  },
   "7ef307bb4d81e970": {
    "verdict": "ok",
    "note": "author-built from § Southern Blots and Modifications: \"A colony blot is another variation of the Southern blot in which colonies representing different clones in a genomic library are transferre…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -58303,6 +58611,14 @@
     "result": "agrees"
    }
   },
+  "8084f8d83eee4868": {
+   "verdict": "ok",
+   "note": "KC 5 26.1 § Composition of Body Fluids, m46411",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8085852839a55c30": {
    "verdict": "ok",
    "note": "Same function's cancelled factor gives a hole at x=5; reduced value (5+5)/(5*4)=1/2, so (5,1/2); matches CNXML Try It 5. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -58441,6 +58757,14 @@
   "80e33d5a800db932": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "80eaed72993e0e52": {
+   "verdict": "ok",
+   "note": "KC 5 24.6 § introduction, m46456",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -59384,6 +59708,10 @@
     "result": "agrees"
    }
   },
+  "8331182c955c8461": {
+   "verdict": "ok",
+   "note": "KC 5 23.2 § Neural Controls, m46502"
+  },
   "833426824c0d1c28": {
    "verdict": "ok",
    "note": "KC 5 21.1 § Anatomy and Microbiota of the Eye, m58906 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -59770,6 +60098,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "83f99427d515e4c6": {
+   "verdict": "ok",
+   "note": "KC 5 23.5 § Absorption, Feces Formation, and Defecation, m46512"
   },
   "83fc86ab7987485c": {
    "verdict": "ok",
@@ -60588,6 +60920,10 @@
   "858101605f401651": {
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
+  },
+  "85868c4ab5d98d91": {
+   "verdict": "ok",
+   "note": "KC 5 23.7 § Absorption, m46501"
   },
   "8588864ad720231c": {
    "verdict": "ok",
@@ -61428,6 +61764,14 @@
   "87af09011c371fd5": {
    "verdict": "ok",
    "note": "KC 2 11.2 § module body (no subsections), m46498"
+  },
+  "87af376ebd524e1e": {
+   "verdict": "ok",
+   "note": "KC 5 24.6 § Mechanisms of Heat Exchange, m46456",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "87b162d116d04683": {
    "verdict": "ok",
@@ -63079,6 +63423,10 @@
    "verdict": "ok",
    "note": "sec(120°)=1/cos(120°)=1/(-1/2)=-2; node check 1/Math.cos(120°·π/180)=-2.000000000000001 | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "8b7304544f35a0e1": {
+   "verdict": "ok",
+   "note": "KC 5 25.4 § Proximal Convoluted Tubule (PCT), m46431"
+  },
   "8b7563f3241082df": {
    "verdict": "ok",
    "note": "source exercise fs-idm46999728 (prose-key) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -64537,6 +64885,14 @@
     "result": "agrees"
    }
   },
+  "8ee6207f7eb95175": {
+   "verdict": "ok",
+   "note": "KC 5 26.3 § Regulation of Sodium and Potassium, m46414",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8ee6aa5296a382a5": {
    "verdict": "ok",
    "note": "author-built from § Congenital Syphilis, Check Your Understanding: \"What aspect of tertiary syphilis can lead to death?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -64664,6 +65020,14 @@
   "8f27665bf8e36429": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | prior derivation (carried by hand, October 4, 2026 re-review): Least-squares regression on the table (x=8,15,26,31,56; y=23,41,53,72,103) gives slope 1.6397... which rounds to 1.640, matching the declared answer.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "8f28e4fe3281e222": {
+   "verdict": "ok",
+   "note": "KC 5 24.3 § Lipogenesis, m46462",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -65432,6 +65796,14 @@
    "note": "author-built from § introduction: \"A cell’s genotype is the full collection of genes it contains, whereas its phenotype is the set of observable characteristics that result f…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "90fe8a2e94174319": {
+   "verdict": "ok",
+   "note": "KC 5 26.4 § Buffer Systems in the Body, m46409",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -67195,6 +67567,14 @@
     "result": "agrees"
    }
   },
+  "94cbbdecf2caa29a": {
+   "verdict": "ok",
+   "note": "KC 5 23.1 § The Peritoneum, m46506",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "94cc1d554ebeecc8": {
    "verdict": "ok",
    "note": "Body CYU bullet 2 ('How is candidiasis typically diagnosed?'), selfcheck; model answer and five rubric clauses assembled from the module's diagnosis paragraph (microscopic exam, culturing caveat, germ-tube/dimorphic culturing test, Affirm VPIII, molecular tests). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -67799,6 +68179,14 @@
     "result": "agrees"
    }
   },
+  "9618aea8cf5c4c2a": {
+   "verdict": "ok",
+   "note": "KC 5 26.2 § Regulation of Water Intake, m46416",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9619c98b4f22c855": {
    "verdict": "ok",
    "note": "KC 1 4.4 § body opening paragraph (fs-id1524010), m46055",
@@ -68365,6 +68753,14 @@
   "9760f3ac8433f1b0": {
    "verdict": "ok",
    "note": "selfcheck bacterial vs neonatal conjunctivitis — spans two subsections, stays selfcheck. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "9763510956087ac7": {
+   "verdict": "ok",
+   "note": "KC 5 22.2 § Nervous Innervation, m46551",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "976399958fb77506": {
    "verdict": "ok",
@@ -68998,6 +69394,14 @@
    "note": "body cloze from § Examples of Logistic Growth: \"Yeast, a microscopic fungus used to make bread and alcoholic beverages, exhibits the classical S-shaped curve when grown in a test tube ( a…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "fable-blind-solve",
+    "result": "agrees"
+   }
+  },
+  "98e6d50cef0568a7": {
+   "verdict": "ok",
+   "note": "KC 5 22.5 § Dissolved Carbon Dioxide, m46545",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -69785,6 +70189,10 @@
     "result": "agrees"
    }
   },
+  "9a99bed7ca04a78d": {
+   "verdict": "ok",
+   "note": "KC 5 22.4 § Internal Respiration, m46521"
+  },
   "9a9a232fcb51628f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -69945,6 +70353,14 @@
   "9affe62ba0cd9741": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "9b003da4edbadda1": {
+   "verdict": "ok",
+   "note": "KC 5 23.5 § Intestinal Glands, m46512",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -70701,6 +71117,14 @@
   "9ccf9b64ae9d736a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "9cd0c05e9f3a7743": {
+   "verdict": "ok",
+   "note": "KC 5 25.6 § Descending Loop, m46443",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -71907,6 +72331,14 @@
     "result": "agrees"
    }
   },
+  "9f953b4195af603d": {
+   "verdict": "ok",
+   "note": "KC 5 23.3 § The Mouth, m46511",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9f95c603bab83bc1": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -72925,6 +73357,14 @@
     "result": "agrees"
    }
   },
+  "a1d313066d9a271f": {
+   "verdict": "ok",
+   "note": "KC 5 25.2 § Male Urethra, m46427",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a1d38aae9ce89e5d": {
    "verdict": "ok",
    "note": "source exercise fs-idp59948800 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -73082,6 +73522,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "a21be9ef87cafdc7": {
+   "verdict": "ok",
+   "note": "KC 5 23.6 § The Gallbladder, m46496"
   },
   "a223090bd608e728": {
    "verdict": "ok"
@@ -73681,6 +74125,10 @@
    "verdict": "ok",
    "note": "Visual Connection self-check (fs-idp43828064): CNXML solution 'The air content of the soil decreases.' keyed verbatim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "a34365e7623442d8": {
+   "verdict": "ok",
+   "note": "KC 5 25.9 § Regulation of Extracellular Na⁺, m46434"
+  },
   "a350de366b8e279a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -74174,6 +74622,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "a43623829ae5e69b": {
+   "verdict": "ok",
+   "note": "KC 5 25.5 § summary (Chapter Review, fs-id2574550), m46433"
   },
   "a4375d9dfcac06bb": {
    "verdict": "ok",
@@ -75816,6 +76268,14 @@
   "a7d8c6833d073246": {
    "verdict": "ok",
    "note": "RQ fs-id2016087 key C emigration; fs-id2757674 defines emigration/diapedesis",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "a7d93abc7d99e7d6": {
+   "verdict": "ok",
+   "note": "KC 5 23.4 § Structure, m46517",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -79079,6 +79539,14 @@
     "result": "agrees"
    }
   },
+  "af2992d96edcc9be": {
+   "verdict": "ok",
+   "note": "KC 5 22.3 § Pulmonary Ventilation, m46549",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "af2be0a78dd18c4e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -79447,6 +79915,14 @@
    "verdict": "ok",
    "note": "parent re-read 2026-09-24 (Microbiology ch14.5-18 re-review): model answer and rubric checked against the module; checks quote module sentences, no new claims"
   },
+  "b03a2015e891cb8c": {
+   "verdict": "ok",
+   "note": "KC 5 25.7 § Sympathetic Nerves, m46435",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b03cf77cd4d6d64e": {
    "verdict": "ok",
    "note": "RQ fs-id2118045 key C; fs-id1370577 calcium positive inotropic.",
@@ -79773,6 +80249,14 @@
     "result": "agrees"
    }
   },
+  "b119e68d3df547b5": {
+   "verdict": "ok",
+   "note": "KC 5 23.3 § Anatomy of a Tooth, m46511",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b12272062f0d77b0": {
    "verdict": "ok",
    "note": "m66430 Critical Thinking Q2 <solution id=fs-idp140338797191968>: 'Hydrogen bonds and van der Waals interactions form weak associations... They provide the structure and shape necessary for proteins and DNA within cells so that they function properly.' Page model answer matches verbatim; both CHECKS clauses restate this with no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -79862,6 +80346,14 @@
   "b14c1f1de61ea59e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "b14d3065ae936cff": {
+   "verdict": "ok",
+   "note": "KC 5 22.7 § Weeks 4–7, m46518",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -81220,6 +81712,14 @@
     "result": "agrees"
    }
   },
+  "b43433cb5381e45a": {
+   "verdict": "ok",
+   "note": "KC 5 24.5 § Starvation, m46466",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b438d9d015a470f2": {
    "verdict": "ok",
    "note": "KC 4 19.1 § Type II (Cytotoxic) Hypersensitivities > ABO Blood Group Incompatibility, m58892",
@@ -82478,6 +82978,14 @@
     "result": "agrees"
    }
   },
+  "b710cfa793695929": {
+   "verdict": "ok",
+   "note": "KC 5 22.1 § Bronchial Tree, m46548",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b714422417f07294": {
    "verdict": "ok",
    "note": "Microbiology 14.1 source CT selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the Waksman and actinomycetes sentences; states the section is silent on producer resistance genes)"
@@ -83267,6 +83775,14 @@
   "b880bf96f354a35a": {
    "verdict": "ok",
    "note": "body cloze from § Southern Blots and Modifications: \"After hybridization with a DNA probe, the signal intensity detected is measured, allowing the researcher to estimate the amount of target D…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "b8855840424ad821": {
+   "verdict": "ok",
+   "note": "KC 5 25.6 § Collecting Ducts and Recovery of Water, m46443",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -86325,6 +86841,14 @@
    "verdict": "ok",
    "note": "(-4+4i)-(-6+9i)=(-4+6)+(4-9)i=2-5i; recomputed independently, matches CNXML end-of-section answer key. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "bf636552495e7aac": {
+   "verdict": "ok",
+   "note": "KC 5 24.4 § Urea Cycle (Metabolism: Pyruvate Dehydrogenase Complex Deficiency and Phenylketonuria box), m46493",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "bf658413a79a7554": {
    "verdict": "ok",
    "note": "source Review Question; key re-read against CNXML solution (line 103: Which category of bone is among the most numerous in the ske)",
@@ -88152,6 +88676,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "c391b866bada286f": {
+   "verdict": "ok",
+   "note": "KC 5 25.3 § Renal Hilum, m46429"
   },
   "c39275e9c10f99dc": {
    "verdict": "ok",
@@ -90683,6 +91211,14 @@
     "result": "agrees"
    }
   },
+  "c946104d9a51968a": {
+   "verdict": "ok",
+   "note": "KC 5 23.6 § The Pancreas, m46496",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c94a88548e69f573": {
    "verdict": "ok",
    "note": "Bio 45.5 selfcheck \"Human reproduction is far below its biotic potenti\": hint location-only, model answer and rubric checked against the module; parent re-read Sep 24 2026"
@@ -92326,6 +92862,10 @@
     "result": "agrees"
    }
   },
+  "cce462844339d89a": {
+   "verdict": "ok",
+   "note": "KC 5 25.1 § body paragraph on urine pH (fs-id1963376), m46432"
+  },
   "cce48d583cdaae78": {
    "verdict": "ok",
    "note": "selfcheck model answer is the source solution for fs-idm75528944 (Critical Thinking Q1) verbatim; checkpoints are its three clauses restated with no new claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -92379,6 +92919,14 @@
    "note": "Locally written MC (not a source exercise), built strictly from the body sentence on Ebola's animal vectors and 70-90% short-term fatality; no other option in the section matches both facts. Disclosed in ledger and footer. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "cd0861bbea763548": {
+   "verdict": "ok",
+   "note": "KC 5 25.1 § glossary (leukocyte esterase, fs-id1321499), m46432",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -94890,6 +95438,14 @@
   "d306ccb6e9634eee": {
    "verdict": "ok"
   },
+  "d317b2bd824aa5c8": {
+   "verdict": "ok",
+   "note": "KC 5 24.7 § Minerals, m46467",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d318eec7be903791": {
    "verdict": "ok",
    "note": "author-built from § Oxidation and Reduction in Metabolism: \"Because electrons can move from one molecule to another, oxidation and reduction occur in tandem.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -96040,6 +96596,14 @@
     "result": "agrees"
    }
   },
+  "d5919babd2e4fb9d": {
+   "verdict": "ok",
+   "note": "KC 5 26.5 § Respiratory Alkalosis: Primary Carbonic Acid/CO₂ Deficiency, m46413",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d5938ecf05ef4d1b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -96192,6 +96756,14 @@
    "verdict": "ok",
    "note": "Matches m66446 visual-connection note fs-id1456208, solution fs-id1299772 (second half, on large cell size — split from the small-cell-size selfcheck per the footer's disclosure). Model answer verbatim; CHECKS restate it. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "d5e3f55007f6a3b7": {
+   "verdict": "ok",
+   "note": "KC 5 23.2 § Digestive Processes, m46502",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d5e3fb5bc526a198": {
    "verdict": "ok",
    "note": "Review fs-id1648525 key C 26; body: 7 tarsal + 5 metatarsal + 14 phalanges",
@@ -96322,6 +96894,14 @@
   "d62d7bf4861df730": {
    "verdict": "ok",
    "note": "heart failure: body cloze of fs-id2624692",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d62d9f95a5b91589": {
+   "verdict": "ok",
+   "note": "KC 5 23.2 § Hormonal Controls, m46502",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -96889,6 +97469,14 @@
     "result": "agrees"
    }
   },
+  "d75d2fbc381bd262": {
+   "verdict": "ok",
+   "note": "KC 5 25.10 § pH Regulation (feature box Stem Cells and Repair of Kidney Damage), m46446",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d75daf1505a40cd5": {
    "verdict": "ok",
    "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
@@ -97433,6 +98021,14 @@
    "verdict": "ok",
    "note": "m66567 critical-thinking exercise fs-idp56267088, solution transcribed verbatim as the model answer; rubric checkpoints decompose it into two clauses with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "d89dff07b7ee715f": {
+   "verdict": "ok",
+   "note": "KC 5 25.9 § Diuretics and Fluid Volume, m46434",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d8a1498fee48dd7c": {
    "verdict": "ok",
    "note": "4*Math.cos(11*Math.PI/6)=3.4641016151377535=2*sqrt(3); 4*Math.sin(11*Math.PI/6)=-2.0000000000000018=-2. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -97692,6 +98288,14 @@
   "d95cadf6221d7ced": {
    "verdict": "ok",
    "note": "author-built from § Agglutination of Bacteria and Viruses, Check Your Understanding: \"In a latex bead assay to test for antibodies in a patient's serum, with what are the beads coated?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d96ed8ef5e03fbf3": {
+   "verdict": "ok",
+   "note": "KC 5 22.3 § Respiratory Volumes and Capacities, m46549",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -98083,6 +98687,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "da54836d33ce486d": {
+   "verdict": "ok",
+   "note": "KC 5 26.4 § Respiratory Regulation of Acid-Base Balance, m46409"
   },
   "da5b5257cadce5ca": {
    "verdict": "ok",
@@ -98552,6 +99160,14 @@
    "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): distance=sqrt(370^2+350^2-2*370*350*cos(2.1deg))=23.957 -> 24.0 km, matches source key.",
    "solved": {
     "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
+  "db456b5a14ab38ca": {
+   "verdict": "ok",
+   "note": "KC 5 25.1 § Urine Volumes table (tbl-ch26_02), m46432",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -99729,6 +100345,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "de505af0865f90e9": {
+   "verdict": "ok",
+   "note": "KC 5 22.1 § Alveoli, m46548"
   },
   "de53e7f096199642": {
    "verdict": "ok",
@@ -101753,6 +102373,14 @@
     "result": "agrees"
    }
   },
+  "e26debd971224599": {
+   "verdict": "ok",
+   "note": "KC 5 23.7 § Mineral Absorption, m46501",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e27960c5dc4d5ca3": {
    "verdict": "ok",
    "note": "KC 2 4.6 § body Extracellular Matrix of Animal Cells (fs-id1671786), m66455 — parent re-read against the module"
@@ -102507,6 +103135,10 @@
   "e42a75a225327136": {
    "verdict": "ok"
   },
+  "e42c11eb3491242c": {
+   "verdict": "ok",
+   "note": "KC 5 25.7 § Sympathetic Nerves, m46435"
+  },
   "e43e019df3cbc397": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -103137,6 +103769,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "e581da0eafdc75a1": {
+   "verdict": "ok",
+   "note": "KC 5 22.2 § Pleura of the Lungs, m46551"
   },
   "e587c1f42dfc1f5b": {
    "verdict": "ok",
@@ -104184,6 +104820,10 @@
     "result": "agrees"
    }
   },
+  "e83e882a3e131183": {
+   "verdict": "ok",
+   "note": "KC 5 24.4 § introduction, m46493"
+  },
   "e8454068bdf9856b": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -105100,6 +105740,10 @@
     "result": "agrees"
    }
   },
+  "ea77b5a246dea763": {
+   "verdict": "ok",
+   "note": "KC 5 25.8 § Parathyroid Hormone, m46424"
+  },
   "ea79052c5db9ce4e": {
    "verdict": "ok",
    "note": "12!/6! = 479001600/720 = 665280 (source Algebraic #41, printed solution 665,280 matches). Replayed the printed span through check-answer.mjs with form=decimal: reports form, not correct."
@@ -105126,6 +105770,14 @@
   "ea8b483ef76d4229": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "ea8d7a73afbd9bfd": {
+   "verdict": "ok",
+   "note": "KC 5 23.5 § Structure, m46512",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -105282,6 +105934,14 @@
   },
   "eae446a6a330408c": {
    "verdict": "ok"
+  },
+  "eae562e2a780b47c": {
+   "verdict": "ok",
+   "note": "KC 5 22.7 § Weeks 24–Term, m46518",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "eaea439d2039ecfe": {
    "verdict": "ok",
@@ -107340,6 +108000,10 @@
     "result": "agrees"
    }
   },
+  "ef81cd52ad69f80e": {
+   "verdict": "ok",
+   "note": "KC 5 22.6 § High Altitude Effects, m46524"
+  },
   "ef84ebafc909ca5b": {
    "verdict": "ok",
    "note": "glossary recall: centimorgan — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -109139,6 +109803,10 @@
     "result": "agrees"
    }
   },
+  "f38be4f0bcb9b194": {
+   "verdict": "ok",
+   "note": "KC 5 22.5 § Function of Hemoglobin, m46545"
+  },
   "f38c12481bd07c98": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -109224,6 +109892,10 @@
     "result": "agrees"
    }
   },
+  "f3bb15b3eba047fe": {
+   "verdict": "ok",
+   "note": "KC 5 24.5 § The Absorptive State, m46466"
+  },
   "f3c01cb5efb90406": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -109237,6 +109909,14 @@
    "note": "m66548 Review Question fs-idp100756832: source solution A. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "f3c92e164459ac14": {
+   "verdict": "ok",
+   "note": "KC 5 24.3 § Lipolysis, m46462",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -109685,6 +110365,14 @@
     "result": "agrees"
    }
   },
+  "f4a0f47812fe3964": {
+   "verdict": "ok",
+   "note": "KC 5 24.5 § The Postabsorptive State, m46466",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f4a932df08721e54": {
    "verdict": "ok",
    "note": "01-the-process-of-meiosis.md line 366, model answer matches CNXML solution id=\"fs-id1431518\" verbatim; checks (no crossover without recombination nodules, diversity limited to independent assortment, less fit) restate that solution's clauses (trailing qualifiers omitted, no claim added). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -109742,6 +110430,14 @@
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "f4c878e62eafa42f": {
+   "verdict": "ok",
+   "note": "KC 5 25.4 § Renal Corpuscle, m46431",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -110846,6 +111542,14 @@
   "f74525854744b6bc": {
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
+  },
+  "f74da41734e61dae": {
+   "verdict": "ok",
+   "note": "KC 5 24.2 § Gluconeogenesis, m46451",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "f750a9ea3379dda0": {
    "verdict": "ok",
@@ -112038,6 +112742,14 @@
   "f9b52a054f954293": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "f9bbe13b17a0cac5": {
+   "verdict": "ok",
+   "note": "KC 5 24.4 § introduction, m46493",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
