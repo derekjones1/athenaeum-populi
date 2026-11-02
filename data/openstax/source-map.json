@@ -178,11 +178,11 @@
     "anatomy-physiology": {
       "bundle": "anatomy-physiology",
       "contentPath": "content/life-health-sciences/anatomy-physiology",
-      "authoringStatus": "in-progress",
+      "authoringStatus": "complete",
       "upstreamChapters": 28,
       "upstreamSections": 169,
-      "localChapters": 27,
-      "mappedSections": 162,
+      "localChapters": 28,
+      "mappedSections": 169,
       "units": [
         {
           "index": 1,
@@ -1709,6 +1709,69 @@
       "moduleId": "m46408",
       "sourceTitle": "Development of the Male and Female Reproductive Systems",
       "moduleSha256": "36fcf13012296b82e37120adc55285e0855ca3738f1520b91144e26ca8983812"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/28-development-and-inheritance/01-fertilization.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "28.1",
+      "moduleId": "m46308",
+      "sourceTitle": "Fertilization",
+      "moduleSha256": "214fda5a79eba17aa5448829ddc719af4f1d1fc42233ba81730bbc6adbaef0cd"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/28-development-and-inheritance/02-embryonic-development.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "28.2",
+      "moduleId": "m46319",
+      "sourceTitle": "Embryonic Development",
+      "moduleSha256": "51d498795740b0e3e4e47744e1d9c677985c67aa03446f9084087858c5f8af5b"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/28-development-and-inheritance/03-fetal-development.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "28.3",
+      "moduleId": "m46316",
+      "sourceTitle": "Fetal Development",
+      "moduleSha256": "b6996a5b68f79eb64cb5be7d43494e668c05fe8034896ec52eb57fbd58c0d41f"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/28-development-and-inheritance/04-changes-during-pregnancy-labor-and-birth.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "28.4",
+      "moduleId": "m46353",
+      "sourceTitle": "Changes During Pregnancy, Labor, and Birth",
+      "moduleSha256": "d5c271bc9b686bf4c1f391281819e371f18e7b1d33792540670c710bf53e8bbc"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/28-development-and-inheritance/05-adjustments-of-the-infant-at-birth-and-postnatal-stages.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "28.5",
+      "moduleId": "m46335",
+      "sourceTitle": "Adjustments of the Infant at Birth and Postnatal Stages",
+      "moduleSha256": "6c87574a2b6e1d23c0e5b6590b8bf960068a6ecc970275d5e72aa03b688c9f0a"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/28-development-and-inheritance/06-lactation.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "28.6",
+      "moduleId": "m46325",
+      "sourceTitle": "Lactation",
+      "moduleSha256": "f771bdb9d31ccdc1c9a522e2b135bb0dc96fa1b49bbef1131f9f2b5b8eadf690"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/28-development-and-inheritance/07-patterns-of-inheritance.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "28.7",
+      "moduleId": "m46311",
+      "sourceTitle": "Patterns of Inheritance",
+      "moduleSha256": "6242cbf83f23ac0752a7c51e0e3677c5957ca8484f354846d3bd0380bf3c6758"
     },
     {
       "localPath": "content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md",

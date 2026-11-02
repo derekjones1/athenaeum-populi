@@ -13,7 +13,7 @@ all three before authoring a section (chapter-run authors: the sections
 `docs/briefs/anatomy-physiology/author.md` names).
 
 Written from the **September 22, 2026 scan** of the pinned source; chapter
-1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, chapter 5 on October 14, 2026, chapter 6 on October 15, 2026, chapters 7, 8, and 9 on October 16, 2026, chapters 10 and 11 on October 18, 2026, chapter 12 on October 20, 2026, chapters 13, 14, and 15 on October 21, 2026, and chapters 16 and 17 on October 24, 2026, chapter 18 on October 25, 2026, and chapter 19 the same day, and chapters 20 and 21 on October 26, 2026, and chapter 22 (Unit 5's first) on October 27, 2026, and chapter 23 on October 28, 2026, and chapters 24 and 25 on October 31, 2026, and chapter 26 (Unit 5's last) on November 1, 2026, and chapter 27 (Unit 6's first) on November 2, 2026.
+1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, chapter 5 on October 14, 2026, chapter 6 on October 15, 2026, chapters 7, 8, and 9 on October 16, 2026, chapters 10 and 11 on October 18, 2026, chapter 12 on October 20, 2026, chapters 13, 14, and 15 on October 21, 2026, and chapters 16 and 17 on October 24, 2026, chapter 18 on October 25, 2026, and chapter 19 the same day, and chapters 20 and 21 on October 26, 2026, and chapter 22 (Unit 5's first) on October 27, 2026, and chapter 23 on October 28, 2026, and chapters 24 and 25 on October 31, 2026, and chapter 26 (Unit 5's last) on November 1, 2026, and chapter 27 (Unit 6's first) on November 2, 2026, and chapter 28 (the book's last) on November 2, 2026.
 A rule tagged *(pilot)* or *(chapter N)* came from authoring that chapter;
 the per-chapter record is `docs/history/anatomy-physiology.md`. A
 correction that is not folded back into a rule will be made again.
@@ -113,7 +113,7 @@ each authored chapter under a `### Unit N: <title>` heading inside
 book's `units` list in `data/openstax/source-map.json`; URLs do not carry the
 unit. A chapter moves from the cover's "Planned contents" list to its unit
 heading when its first section lands, never earlier. The lock's
-`authoringStatus` flips to `complete` when the 169th section lands, as
+`authoringStatus` flipped to `complete` when the last section landed, on November 2, 2026, as
 life-sciences "Where the files go" describes. The chapter landing carries the
 intro module's paragraph and splash photo plus the chapter-objectives note as
 a list.
@@ -197,7 +197,12 @@ October 28, 2026, chapter 23; errata 2625–2630)*. A chapter whose modules prin
 in no question is still an **Interactive Link** callout, its footer says what
 4.3's does (no note ends in a question and the section has no Interactive
 Link Questions, so 0 are graded and 0 stand as prompts), and a module with
-no note says so in its footer too *(chapter 24)*.
+no note says so in its footer too *(chapter 24)*. An `anatomy interactive`
+note that ends in a question but has NO pooled exercise and no key (28.2's
+embryogenesis note, the first in the book) is an **Interactive Link**
+callout that keeps its question as a prompt; it is not an Interactive Link
+Question, is not counted as one, and the footer says the note's question
+is one the source never keys *(chapter 28)*.
 
 ### 2. Feature boxes
 

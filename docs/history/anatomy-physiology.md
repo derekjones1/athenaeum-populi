@@ -2264,6 +2264,145 @@ grepped in the module before it is relayed, and the grep must cross `<term>`
 tags, or "first polar body" looks unprinted. A true distractor is replaced
 rather than kept, as the Leydig option was.
 
+## Chapter 28 (November 2, 2026)
+
+*Development and Inheritance*, the second and last chapter of Unit 6, *Human
+Development and the Continuity of Life*, and so the last chapter of the book:
+all 28 chapters are authored, and the book's status was flipped to complete at
+this close-out. Seven sections (m46308, m46319, m46316, m46353, m46335, m46325,
+m46311; intro m46339), run November 2 from `docs/briefs/anatomy-physiology/run.md`,
+with seven Opus authors launched together in one wave, seven Opus checkers, one
+Opus claim pass, one Opus alt-errata verifier, a fresh Fable blind solver, and
+Sonnet Clerks for the landing page, run facts, pins and the status flip, errata
+draft, and this entry. It has 29 vendored images, stems 2900–2928, the
+`2900_Photo_of_Neonate-02` splash among them. The source carries 44 exercises
+(28 Review, 14 Critical Thinking, 2 Interactive Link Questions); both
+Interactive Link Questions, in 28.2 and 28.3, stand as prompts, none graded.
+The graded items were solved blind: 90 graded items on seven pages, 89
+agreeing and one remapped by the parent (the 28.3 cloaca cloze, re-cut by claim
+correction 2853), then one more form-only remap after the solve, the 28.2
+placenta `sortbins` whose first member followed erratum 2862; 0 disagreed, 0
+flagged. Errata 2843–2877 (35 entries, the Reviewed-not-errata bullets
+besides). The session hit Derek's usage limit mid-close-out and was finished in
+a second session the same day, and the run is committed at close-out.
+
+The parent read the modules and wrote the rulings before the wave (Part C of
+the run facts). Interactive Link Questions were decided one by one. 28.2's
+conceptus question is a prompt because its second part, when the blastocoel
+first appears in the movie, is answerable only from the linked movie; 28.3's
+heartbeat question is a prompt because its key, "approximately 8 weeks",
+appears nowhere in the module. 28.2's embryogenesis note ends in a question but
+has no pooled exercise and no key: it is a plain Interactive Link callout that
+keeps the question as a prompt, is not counted as an Interactive Link Question,
+and its footer says the source never keys it (the first such note in the book,
+now in the playbook). The other interactive notes end in statements, and 28.4,
+28.5 and 28.6 print none. Of the four tables, 28.2's Functions of the Placenta,
+whose columns are categories, is transcribed and also yields the chapter's one
+`sortbins` (its six bullets in three bins); the weight-gain table (28.4), the
+milk compositions (28.6) and the blood types (28.7) are quantities or give the
+bin's own letter, and are transcribed only. The September 8 table has two rows
+here: m46308, where the IVF image was replaced in place and the CNXML is
+unchanged, so the alt and longdesc were written from the vendored WebP with no
+erratum for the old alt; and m46311, whose allele glossary reads "locus on a
+specific chromosome" in the CNXML where the PDF Key Terms still prints
+"gene". The source defects ruled before the wave were 2843 ("Sherrise's
+concern" in a solution to a question that names no one), 2844 ("spina bidifa"),
+2845 (pitocin, a claim-level correction at two sites, each with a Source note),
+2846 (the 28.5 Review 1 distractor "ductus arteriosis", an `options` deviation)
+and 2847 (the 28.2 and 28.3 embryo size, kept as printed with a note on the
+28.3 Summary and no decisions entry); 2848, the Hormones Initiating Labor
+graph's "26" tick where 28 belongs, was confirmed from a 1578 px crop during the
+wave. The 28.4 weight table's Total row was first ruled "transcribe, no note".
+
+The checkers' findings were verified before being relayed. 28.1's checker
+proposed accepting "leucocytes", "white blood cells" and "WBCs" on a cloze; the
+module prints none of them, so the page was unchanged; its remaining concerns
+were the openness of a "phagocytic uterine" cloze (kept, the hint names the
+paragraph), the 4 days against 3–5 days (to the claim pass) and the IVF
+Endometrium leader (to the verifier). 28.2's checker found six defects, all
+confirmed, among them a blastocyst cavity printed once and the 2910 umbilical
+arteries spiralling around a straight vein; four items were re-hashed and a
+decidual-cells cloze replaced a two-sentence multiple choice. 28.3's checker
+had "cheese-like" rejected (a glossary definition verbatim, so not a root
+leak), the ductus venosus stem tightened, and the 2916 longdesc missing its
+purple arrows confirmed and fixed; the 30-weeks multiple choice was rebuilt.
+28.4's checker found the Stage 2 layout (two rows of two) and a legs distractor
+that became lungs, both confirmed. 28.5's checker found the sterile cloze
+answering the intestinal-flora self-check beneath it, confirmed and fixed with
+the arrow start re-read; its "both a and b" objection was kept on the Biology
+41.3 precedent. 28.6's checker found nothing hard; the parent applied a footer
+clause and a "early milk" accept member the module prints, and rejected
+"Montgomery's glands" as unprinted. 28.7's checker found no defect, and its
+three concerns (a Summary cloze above the genotype and phenotype self-check, two
+hints that named their answers) were relayed as fixes; the "genes" accept member
+was kept. All seven pages were stable after the checkers.
+
+The solve read the 90 graded items on masked pages: 89 agreed at once, and the
+one remapped item was the 28.3 cloaca cloze, whose text claim correction 2853
+had re-cut; after the remap, 90 agreed, 0 disagreed, 0 flagged, 0 unrecognized,
+0 unresolved. The second session then re-hashed the 28.2 placenta `sortbins`
+after erratum 2862 changed its first member (the bin unchanged, the change
+form-only) and compared that one item: 1 agreed, 0 disagreed, 0 flagged.
+
+The claim pass found 13 findings and the parent accepted 12 as 2849–2860. The
+28.2 findings were the primitive node placed at the caudal end of the streak
+(2849), the inner cell mass called totipotent where it is pluripotent (2850),
+the Germ Layers caption's "first 2 weeks" against the third week (2851), and
+the placenta previa glossary bullet (2852). In 28.3 the epididymis was given to
+the Wolffian ducts, which re-cut the cloaca cloze (2853), and the opening
+sentence and the flow chart's caption, which put the start of sexual
+differentiation in the fetal period, were corrected (2854). In 28.4 the due
+date's 284 and 270 days became 280 and 266 (2855), the bloody show became a
+sign that labor will "begin shortly" (2856), the weight table's Fat row went
+from 0.9 to 1.4 kg, which superseded Part C's "no note" while the Total row
+stayed as the pound totals converted (2857), and parathyroid was replaced by
+calcitriol (2858). In 28.6 phototherapy's "UV light" became blue light (2859)
+and the "lobules" became lobes (2860). F5, the fast block to polyspermy in
+mammals, was ruled a teaching simplification and not an erratum; it is filed
+under Reviewed-not-errata with the multiple choice keyed slow block standing.
+After the verifier's report the parent ruled two more: 2861 (the 28.7 sentence
+that places Mendel's 3:1 ratio in "second-generation offspring" where the module
+counts the third) and 2862 (amino acids dropped from the placenta table's
+diffusion cell, since the module moves them by active transport). The pitocin
+ruling was confirmed against the DailyMed label. The 28.5 neonatal period's
+"thirtieth day" against 28 days was a suspicion not acted on.
+
+The alt-errata verifier confirmed 18 defects; three of them overlapped claim
+entries already filed (2851, 2861, 2862), and the other 15 are errata
+2863–2877, in page order: the pre-embryonic figure's two callouts numbered 5
+(2863), "call" for "called" (2864), the week-3 figure's "Lungs (epithelial
+layers)" under the mesoderm (2865), the "Yolk sack" label (2866), the 2919
+source alt missing "of" (2867), the ">10 cm" label (2868), the Let-Down Reflex
+figure's prolactin "from the hypothalamus and posterior pituitary" (2869), and
+eight 28.7 one-word and alt defects (2870–2877, among them "femalse" in the
+X-linked artwork and the autosomal recessive alt's miscount). It also gave four
+28.2 page-wording verdicts that went back to the page's author: "surface view"
+for a cut-open blastocyst in the 2903 and 2904 longdescs, the 2906 alt's
+"upper and right wall", the 2913 longdesc's unlabelled purple tube (no longer
+named a neural tube) and its omitted white tube, and the 2914 alt's "left side"
+(now "left of the picture"). Three items stayed undecided and unfiled: the IVF
+Endometrium leader, the purple tube's colour, and the 2922 lobule panel headed
+"Alveolus". The landing's splash alt was written by the parent from the 1291 px
+image; after the claim pass and the verifier its two nits were applied
+("sparse" hair became "fine", the crop "at the waist" became "at the belly").
+The errata drafter's footer audit (`errata-footer-audit.md`) found five entries
+(2865, 2867–2870) whose footers did not name the defect, and the parent added a
+clause to each footer at close-out.
+
+Lessons. Part C's "rounding, no note" on a table with two unit columns is
+checked row by row first: the weight table had one mis-converted row and a
+Total that was the pound totals, and the claim pass overturned the ruling
+with a corrected row and a Source note. A verifier's page-wording verdict
+goes back to the page's author like a checker defect: four such on this
+chapter after two Opus readers had passed them, which is why the verifier
+stays. An interactive note that ends in a question but has no pooled exercise
+and no key is a plain Interactive Link callout, uncounted, with the footer
+saying the source never keys it. When the book's last section lands, the
+status flips to complete in every place the life-sciences playbook lists, the
+pins Clerk re-runs `build-map` before `source:verify` (which otherwise fails
+with "map records in-progress, lock says complete"), and the test file's "still
+in progress" chapter-count assertion becomes an equality.
+
 ## Chapter 21 (October 26, 2026)
 
 *The Lymphatic and Immune System*, the fourth and last chapter of Unit 4,

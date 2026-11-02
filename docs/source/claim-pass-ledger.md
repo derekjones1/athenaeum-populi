@@ -62,6 +62,7 @@ record. No Biology chapter is outstanding.
 | Anatomy and Physiology | 25-the-urinary-system | 10 | done Oct 31 2026 (in the authoring run) | 2738–2754 (17 claim corrections, all accepted) |
 | Anatomy and Physiology | 26-fluid-electrolyte-and-acid-base-balance | 5 | done Nov 1 2026 (in the authoring run) | 2794–2804 |
 | Anatomy and Physiology | 27-the-reproductive-system | 3 | done Nov 2 2026 (in the authoring run) | 2832–2836 |
+| Anatomy and Physiology | 28-development-and-inheritance | 7 | done Nov 2 2026 (in the authoring run); 13 findings (28.1 one, 28.2 four, 28.3 two, 28.4 four, 28.5 none, 28.6 two, 28.7 none) | 2849–2862 |
 
 The Microbiology rows (26 chapters) are in `docs/history/microbiology.md`
 under "Prose claim pass rows". Knowledge-check pages (`knowledge-check-*.md`) carry no source prose and are

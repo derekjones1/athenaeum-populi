@@ -15,9 +15,8 @@ Biology 2e is `complete` (47 chapters, 208 sections); its rules are
 OpenStax Microbiology is `complete` (26 chapters, 127 sections); its rules
 are in `docs/subjects/microbiology.md`, which records how it differs from
 Biology 2e (unkeyed prose exercises, no per-module glossary, new box and
-item types). Anatomy and Physiology 2e is `in-progress` (28 chapters in
-six units, 169 sections; `npm run source:verify` prints how many are
-authored); its rules are in
+item types). Anatomy and Physiology 2e is `complete` (28 chapters in
+six units, 169 sections); its rules are in
 `docs/subjects/anatomy-physiology.md`, which records the scan, its two
 book-specific rules (Interactive Link Questions, References), and that its
 pin postdates its PDF; a chapter is run from
@@ -53,7 +52,7 @@ the re-review campaign; the playbooks keep only what is operative.
   their keys have no `-bundle` suffix). Each lock entry carries a
   `contentPath`, so a book need not live under `content/math` (Biology 2e:
   `content/life-health-sciences/biology`). A book with
-  `authoringStatus: complete` — every book but Anatomy and Physiology 2e —
+  `authoringStatus: complete` — every pinned book —
   has a local page for every upstream numbered section, chapter parity
   enforced book-wide, and full coverage in `build-map`/`verify-map`. A book
   still being written follows the scaffolded-chapter procedure in

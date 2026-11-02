@@ -5,7 +5,6 @@ license: CC BY-NC-SA 4.0
 source: OpenStax Anatomy and Physiology 2e
 seo_title: "Anatomy and Physiology – Free Interactive Anatomy and Physiology Textbook | Athenaeum Populi"
 linkTitle: "Overview"
-authoring_status: in-progress
 cascade:
   type: docs
 ---
@@ -158,11 +157,7 @@ reproduction, development, and inheritance.
   reproductive system, the anatomy and physiology of the ovarian
   reproductive system, and the development of the male and female
   reproductive systems.
-
-## Planned contents
-
-The remaining chapters of Anatomy and Physiology 2e's six units will
-appear in this order:
-
-- **Unit 6: Human Development and the Continuity of Life** — Development and
-  Inheritance.
+- **Development and Inheritance** — fertilization, embryonic development,
+  fetal development, changes during pregnancy, labor, and birth, adjustments
+  of the infant at birth and postnatal stages, lactation, and patterns of
+  inheritance.

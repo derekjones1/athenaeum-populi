@@ -6223,6 +6223,176 @@
       "status": "correct-local-source-defect",
       "errataEntry": 2832,
       "rationale": "The caption of figure fig-ch28_00_01 (the chapter-opening micrograph) says an oocyte \"will be released into the uterine tube\"; the oocyte is expelled from the ovary into the peritoneal cavity and the nearby uterine tube then receives it, as the Ovarian Reproductive System module (m46392) says (fs-id2974584: \"results in the expulsion of the oocyte surrounded by granulosa cells into the peritoneal cavity\"; fs-id2978534: \"is released into the peritoneal cavity. The nearby uterine tube, either left or right, receives the oocyte\"; fs-id1535611: the uterine tubes are \"close to, but not directly connected to, the ovary\"). The page says \"released from the ovary and received by the uterine tube\", with a visible Source note after the sentence and a footer clause. Evidenced by the chapter 27 prose claim pass (F1), ruled by the orchestrator, November 2, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/28-development-and-inheritance/04-changes-during-pregnancy-labor-and-birth.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46353",
+      "sourceElementIds": [
+        "fs-id1752355",
+        "fs-id1632351"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2845,
+      "rationale": "The Physiology of Labor paragraph fs-id1752355 says that when labor must be induced \"a pharmaceutical version of these compounds (called pitocin) is administered by intravenous drip\", the compounds being oxytocin and prostaglandins, and the second Critical Thinking solution paragraph fs-id1632351 says \"Pitocin is a pharmaceutical preparation of synthetic prostaglandins and oxytocin\". Pitocin is oxytocin injection, USP (its FDA prescribing information); the prostaglandin preparations used to induce labor are separate drugs. The page says \"a pharmaceutical version of oxytocin (called pitocin)\" in the body, with a visible Source note after the paragraph, and the model answer says \"a pharmaceutical preparation of synthetic oxytocin\", with a Source note after the selfcheck block, and a footer clause. Ruled by the orchestrator in the chapter 28 run facts, November 2, 2026; the claim pass confirms the external reference."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/28-development-and-inheritance/06-lactation.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46325",
+      "sourceElementIds": [
+        "fs-id2153019"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2859,
+      "rationale": "The bilirubin paragraph fs-id2153019 says \"Newborns with hyperbilirubinemia are treated with phototherapy because UV light helps to break down the bilirubin quickly.\" Neonatal phototherapy uses narrow-spectrum blue (about 460-490 nm) LED light, not ultraviolet (Kemper AR et al., \"Clinical Practice Guideline Revision: Management of Hyperbilirubinemia in the Newborn Infant 35 or More Weeks of Gestation,\" Pediatrics 2022;150(3):e2022058859, doi:10.1542/peds.2022-058859). The page says \"because blue light helps to break down the bilirubin quickly\", with a visible Source note after the paragraph and a footer clause. Evidenced by the chapter 28 prose claim pass (F12), ruled by the orchestrator, November 2, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/28-development-and-inheritance/06-lactation.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46325",
+      "sourceElementIds": [
+        "fs-id2142783"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2860,
+      "rationale": "The Structure of the Lactating Breast paragraph fs-id2142783 says \"Clusters of alveoli that drain to a common duct are called lobules; the lactating female has 12-20 lobules organized radially around the nipple.\" The radial units are lobes, each made of many lobules: the book's own Ovarian Reproductive System module (m46392) says each lactiferous duct drains a glandular lobe and its breast figure draws the lobule as a sub-part of a lobe. The page says \"Clusters of alveoli that drain to a common duct are called lobules; lobules drain into the duct of a lobe, and the lactating female has 12-20 lobes organized radially around the nipple\", with a visible Source note after the paragraph naming the Ovarian Reproductive System section and a footer clause. Evidenced by the chapter 28 prose claim pass (F13), ruled by the orchestrator, November 2, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/28-development-and-inheritance/03-fetal-development.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46316",
+      "sourceElementIds": [
+        "fs-id2686721"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2853,
+      "rationale": "The Sexual Differentiation paragraph fs-id2686721 says \"During male fetal development, the bipotential gonads become the testes and associated epididymis\" and \"The Wolffian ducts become the vas deferens\". The epididymis forms from the Wolffian duct system, not from the bipotential gonad, as the book's own Development of the Male and Female Reproductive Systems section says (m46408 fs-id2764705) and as this module's figure fig-ch29_03_01 labels (\"Wolffian ducts become epididymis and ductus (vas) deferens\"). The page says \"the bipotential gonads become the testes\" and \"The Wolffian ducts become the epididymis and vas deferens\", with a visible Source note after the paragraph and a footer clause; the cloaca cloze is cut from the corrected sentence. Evidenced by the chapter 28 prose claim pass (F6), ruled by the orchestrator, November 2, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/28-development-and-inheritance/03-fetal-development.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46316",
+      "sourceElementIds": [
+        "fs-id1725244",
+        "fig-ch29_03_01"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2854,
+      "rationale": "The Sexual Differentiation paragraph fs-id1725244 says \"Sexual differentiation does not begin until the fetal period, during weeks 9–12\", and the caption of figure fig-ch29_03_01 says \"Differentiation of the male and female reproductive systems does not occur until the fetal period of development\". The book's Development of the Male and Female Reproductive Systems section has testosterone from the embryonic testis directing male development (m46408 fs-id2575757: \"Testosterone produced by Leydig cells in the embryonic testis stimulates the development of male sexual organs\"; fs-id2927115), so differentiation begins in the embryo and becomes visible only in the fetal period. The page says \"Sexual differentiation, which begins in the embryo with the formation of the testes, becomes visible only in the fetal period, during weeks 9–12\" and the caption \"The male and female reproductive systems become distinguishable only in the fetal period of development\", each with a visible Source note, and a footer clause. Evidenced by the chapter 28 prose claim pass (F7), ruled by the orchestrator, November 2, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/28-development-and-inheritance/04-changes-during-pregnancy-labor-and-birth.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46353",
+      "sourceElementIds": [
+        "fs-id2661115"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2855,
+      "rationale": "The opening paragraph fs-id2661115 says \"A full-term pregnancy lasts approximately 270 days (approximately 38.5 weeks) from conception to birth\" and \"obstetricians set the due date as 284 days (approximately 40.5 weeks) from the LMP\". The estimated due date is 280 days (40 weeks) from the first day of the LMP (Naegele's rule; ACOG Committee Opinion No. 700, Methods for Estimating the Due Date, Obstet Gynecol 2017;129:e150-e154, doi:10.1097/AOG.0000000000002046), which the paragraph's own next sentence (\"The 40 weeks of an average pregnancy\") matches; with conception on day 14, as the paragraph assumes, conception to birth is 266 days (38 weeks). The page says 266 days (38 weeks) and 280 days (40 weeks), with a visible Source note after the paragraph and a footer clause. Evidenced by the chapter 28 prose claim pass (F8), ruled by the orchestrator, November 2, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/28-development-and-inheritance/04-changes-during-pregnancy-labor-and-birth.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46353",
+      "sourceElementIds": [
+        "fs-id1409429"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2856,
+      "rationale": "The paragraph fs-id1409429 says \"A common sign that labor will be short is the so-called 'bloody show.'\"; the paragraph's own next sentences say the mucus plug is expelled approximately 1-2 days prior to the onset of true labor, so the bloody show signals that labor will begin soon, not that it will be brief. The page says \"A common sign that labor will begin shortly\", with a visible Source note after the paragraph and a footer clause. Evidenced by the chapter 28 prose claim pass (F9), ruled by the orchestrator, November 2, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/28-development-and-inheritance/04-changes-during-pregnancy-labor-and-birth.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46353",
+      "sourceElementIds": [
+        "tbl-ch29_02"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2857,
+      "rationale": "Table tbl-ch29_02 (Contributors to Weight Gain During Pregnancy) gives the Fat row as 0.9-4.1 kg beside 3-9 lb; 3 lb is 1.4 kg (0.9 kg is 2 lb). Every other row converts correctly, and the Total row (10-16.3 kg, 22-36 lb) is the pound totals converted, so it stands. The page gives the Fat row as 1.4-4.1 kg, with a visible Source note under the table and a footer clause; this replaces the run facts' transcribe-as-printed ruling on the table. Evidenced by the chapter 28 prose claim pass (F10), ruled by the orchestrator, November 2, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/28-development-and-inheritance/04-changes-during-pregnancy-labor-and-birth.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46353",
+      "sourceElementIds": [
+        "fs-id2310777"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2858,
+      "rationale": "The paragraph fs-id2310777 ends \"In addition to the pituitary hormones, increased parathyroid levels mobilize calcium from maternal bones for fetal use.\" In pregnancy parathyroid hormone falls to the low-normal range in the first trimester, and the fetal calcium demand is met by a calcitriol-driven doubling of maternal intestinal calcium absorption (Kovacs CS, Calcium and Phosphate Metabolism and Related Disorders During Pregnancy and Lactation, in Endotext, Feingold KR et al., eds., NCBI Bookshelf NBK279173). The page says \"a rise in calcitriol (active vitamin D) doubles maternal intestinal absorption of calcium for fetal use\", with a visible Source note after the paragraph and a footer clause. Evidenced by the chapter 28 prose claim pass (F11), ruled by the orchestrator, November 2, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/28-development-and-inheritance/02-embryonic-development.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46319",
+      "sourceElementIds": [
+        "fs-id2336777"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2849,
+      "rationale": "The Embryogenesis paragraph fs-id2336777 says \"A node at the caudal or “tail” end of the primitive streak emits growth factors that direct cells to multiply and migrate\"; the primitive node (Hensen's node) sits at the cranial end of the primitive streak (Prentiss and Arey, A Laboratory Manual and Text-book of Embryology, 2nd ed., 1917, germ-layers chapter; Gilbert, Developmental Biology, 8th ed., 2006). The page says \"A node at the cranial or “head” end of the primitive streak\" in the body, with a visible Source note after the paragraph, and the author-written gastrulation self-check's model answer says \"the cranial end\", with a Source note after the selfcheck block, and a footer clause. Evidenced by the chapter 28 prose claim pass (F1), ruled by the orchestrator, November 2, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/28-development-and-inheritance/02-embryonic-development.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46319",
+      "sourceElementIds": [
+        "fs-id2590647",
+        "fs-id2336777"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2850,
+      "rationale": "Paragraph fs-id2590647 says \"The inner mass of embryonic cells is totipotent during this stage, meaning that each cell has the potential to differentiate into any cell type in the human body. Totipotency lasts for only a few days\", and the Embryogenesis paragraph fs-id2336777 says gastrulation is the stage \"during which the cells transition from totipotency to multipotency\". The book's own Cellular Differentiation section (m46036, fs-id2212334) calls a cell that can differentiate into any type of human tissue but cannot support the full development of an organism pluripotent, and section 18.2 names the zygote as the totipotent cell. The page says \"pluripotent\", \"Pluripotency lasts\", and \"from pluripotency to multipotency\" in the body, with a visible Source note naming the Cellular Differentiation section, and the same in the gastrulation self-check's model answer and its rubric checkpoint, with a footer clause. Evidenced by the chapter 28 prose claim pass (F2), ruled by the orchestrator, November 2, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/28-development-and-inheritance/02-embryonic-development.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46319",
+      "sourceElementIds": [
+        "fig-ch29_02_06"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2851,
+      "rationale": "The caption of figure fig-ch29_02_06 (Germ Layers) says \"Formation of the three primary germ layers occurs during the first 2 weeks of development\"; the module's own Embryogenesis paragraph fs-id2336777 (\"As the third week of development begins, the two-layered disc of cells becomes a three-layered disc through the process of gastrulation\") and the caption of the next figure, fig-ch29_02_07 (\"Following gastrulation of the embryo in the third week\"), place it in the third week. The page's caption says \"during the third week of development\", with a visible Source note inside the caption and a footer clause. Evidenced by the chapter 28 prose claim pass (F3), ruled by the orchestrator, November 2, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/28-development-and-inheritance/02-embryonic-development.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46319",
+      "sourceElementIds": [
+        "fs-id1636265",
+        "fs-id2010263"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2852,
+      "rationale": "The glossary definition fs-id1636265 (meaning fs-id2010263) of placenta previa reads \"low placement of fetus within uterus causes placenta to partially or completely cover the opening of the cervix as it grows\"; the module attributes placenta previa to where the embryo implants (fs-id2081047: \"If the embryo implants in the inferior portion of the uterus, the placenta can potentially grow over the opening of the cervix\"; fs-id2302851: \"Placenta previa can result if an embryo implants close to the internal os of the uterus\"). The page's Key terms bullet reads \"low implantation of the embryo within the uterus causes the placenta to partially or completely cover the opening of the cervix as it grows\", with a visible Source note after the bullet and a footer clause. Evidenced by the chapter 28 prose claim pass (F4), ruled by the orchestrator, November 2, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/28-development-and-inheritance/07-patterns-of-inheritance.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46311",
+      "sourceElementIds": [
+        "fs-id1277237"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2861,
+      "rationale": "Paragraph fs-id1277237 says Mendel \"was able to identify a 3:1 phenotypic ratio in second-generation offspring because his large sample size overcame the influence of variability resulting from chance\"; the same module places that ratio in the third generation (fs-id1947052: \"recessive traits reappeared in third-generation plants in a ratio of 3:1\"; fs-id1635465: \"The result is Mendel’s third-generation phenotype ratio of 3:1\"; the caption of fig-ch29_07_02: the recessive phenotype \"has a 1 in 4, or 25 percent, chance of reappearing in the third generation\"). The page says \"in third-generation offspring\", with a visible Source note after the paragraph and a footer clause. Found by the 28.7 author, ruled by the orchestrator, November 2, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/28-development-and-inheritance/02-embryonic-development.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46319",
+      "sourceElementIds": [
+        "tbl-ch29_01",
+        "fs-id2268687"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2862,
+      "rationale": "The Functions of the Placenta table tbl-ch29_01 has the cell \"Mediates diffusion of maternal glucose, amino acids, fatty acids, vitamins, and minerals\" under Nutrition and digestion; the module's own paragraph fs-id2268687 says \"The fetus has a high demand for amino acids and iron, and those substances are moved across the placenta by active transport.\" The page's table cell reads \"Mediates diffusion of maternal glucose, fatty acids, vitamins, and minerals\", with a visible Source note under the table quoting both, and the sort-into-bins item built from the cell carries the corrected text in the same bin, with a footer clause. Ruled by the orchestrator, November 2, 2026."
     }
   ]
 }

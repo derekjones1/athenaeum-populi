@@ -37,8 +37,8 @@ section is authored locally and chapter-by-chapter parity is enforced;
 pages are still being written, so parity is only checked for what exists,
 and `build-map`/`verify-map` print the partial count on the book's own line
 (`k/N chapters, k/N sections mapped`), never folded silently into a
-"0 errors" run. Anatomy and Physiology 2e is the one `in-progress` book; every
-other pinned book is `complete`.
+"0 errors" run. Every pinned book is now `complete`; Anatomy and Physiology 2e
+was the last, on November 2, 2026.
 
 Every book's lock entry also carries a `contentPath` (for example
 `content/math/precalculus`, `content/life-health-sciences/biology`): the
@@ -209,11 +209,10 @@ therefore the last commit before the PDF,
 `716383a4c6c16037b14d75a156c65145e75e895e` (June 12, 2026), confidence
 `inferred-from-local-pdf-date`, so `npm run source:history -- --bundle
 anatomy-physiology` shows, section by section, exactly what the PDF lacks.
-The book is `in-progress`: `content/life-health-sciences/anatomy-physiology/_index.md`
-lists authored chapters under their unit heading (e.g.
-`### Unit 1: Levels of Organization`) and the rest on "Planned contents",
-grouped by the source's six units; `verify-map` prints
-its partial count, with the six-unit `units` list recorded in the map. Its subject playbook is
+The book is `complete`: `content/life-health-sciences/anatomy-physiology/_index.md`
+lists every chapter under its unit heading (e.g.
+`### Unit 1: Levels of Organization`), grouped by the source's six units, with
+the six-unit `units` list recorded in the map. Its subject playbook is
 `docs/subjects/anatomy-physiology.md`.
 
 ## Precalculus 2e

@@ -255,6 +255,11 @@ them.
    Part B's quoted source alts ("The top panel…"), and each is a drawing
    whose panel count the alt does NOT give — open every figure Part C names
    *(chapter 25)*.
+   A table whose two unit columns disagree is checked ROW BY ROW before Part
+   C calls the mismatch "rounding": 28.4's weight table had one row (Fat,
+   0.9 kg for 3 lb) mis-converted and a Total row that was the pound totals
+   converted, and the claim pass overturned Part C's "transcribe, no note"
+   with a corrected row and a Source note *(chapter 28)*.
    Part C names a term's typography from the CNXML MARKUP, never from Part B's
    description: chapter 27's Part C called the first *SRY* mention italic from
    Part B's "italic gene" line, and the module prints roman SRY with italic
@@ -394,6 +399,10 @@ grepped in the module before it is relayed: 26.2's checker proposed three
 prints, the parent relayed them, and the author had to push back under the
 brief's printed-synonym rule *(chapter 26)*.
 
+A verifier "page wording" verdict (28.2's "surface view" for a cut-open
+blastocyst, a longdesc naming an unlabelled tube) goes back to the page's
+author like a checker defect — four such on chapter 28 after two Opus
+readers had passed them, which is why the verifier stays *(chapter 28)*.
 Claim-pass findings: the parent verifies each against the cited evidence
 (a same-book quote is confirmed with the CNXML's tags stripped first — a
 bare `grep -c` of a sentence that spans a `<term>` returns 0 and looks
@@ -528,7 +537,12 @@ the session.
    N` heading under `## Chapters`), `docs/source/claim-pass-ledger.md`
    rows, the playbook header sentence for the chapter. When the book's
    last section lands, the status flips to `complete` in every place
-   life-sciences "Where the files go" lists — its own close-out step.
+   life-sciences "Where the files go" lists — its own close-out step. The
+   pins Clerk runs `node tools/source/openstax-source.mjs build-map` (or
+   edits the map's `authoringStatus`) before `npm run source:verify`, which
+   otherwise fails with "map records in-progress, lock says complete"; and
+   the test file's "still in progress" chapter-count assertion becomes an
+   equality *(chapter 28, the book's last)*.
 4. `node tools/source/openstax-source.mjs history --output
    docs/source/openstax-upstream-history-audit.md`.
 5. `python3 tools/verify/rebuild-ledger-results.py --results
@@ -552,6 +566,14 @@ the session.
    entry stops the rebuild and nothing is written for it or the pages
    after it: map stale → uncovered by question text against the solve
    packet's hashes, write the patched file, and merge that too.
+   The rebuild reads only `--unverified` records, so run after the merges
+   it exits "expected one page, found []": a no-op, not a failure. For an
+   item re-hashed after the solve was merged, write the one-item answers
+   file, compare and merge it, then merge the author's single record from
+   `$SP/ledger-results` too, or the record keeps the provenance
+   placeholder instead of the author's note; a fresh `solve:emit`
+   hash-diffed against the first emit lists exactly which items moved
+   *(chapter 28, resumed after a pause)*.
 6. `npm run check:external-links` BEFORE the errata drafter (step 0b), so
    dead-link errata land in the run's block (a 403 is a bot wall and stays
    linked; a 404 through the `openstax.org/l/` redirect is un-linked and

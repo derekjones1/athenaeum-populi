@@ -218,10 +218,10 @@ test('the source lock pins one upstream bundle per book', () => {
   assert.equal(lock.bundles.microbiology.moduleScope, 'bundle');
   // Anatomy and Physiology 2e: also a single-book repository
   // (`osbooks-anatomy-physiology`), pinned September 22, 2026; chapters 1–2
-  // (twelve sections) were authored the same day, chapter 1 as the pilot,
-  // so the book is `in-progress`.
+  // were authored the same day, chapter 1 as the pilot; the book is `complete`
+  // from chapter 28, its last chapter, on November 2, 2026.
   assert.equal(lock.books.get('anatomy-physiology').bundleKey, 'anatomy-physiology');
-  assert.equal(lock.books.get('anatomy-physiology').authoringStatus, 'in-progress');
+  assert.equal(lock.books.get('anatomy-physiology').authoringStatus, 'complete');
   assert.equal(lock.books.get('anatomy-physiology').contentPath, 'content/life-health-sciences/anatomy-physiology');
   assert.equal(lock.bundles['anatomy-physiology'].moduleScope, 'bundle');
 });
@@ -262,11 +262,11 @@ test('formatTriesCoverage reports n/a rather than 0/0 for a book with no note.tr
   assert.equal(formatTriesCoverage(3, 5), '3/5');
 });
 
-test('committed provenance maps all 771 local sections exactly once', () => {
+test('committed provenance maps all 778 local sections exactly once', () => {
   const result = verifyCommittedSourceMap(repositoryRoot);
   assert.deepEqual(result.errors, []);
-  assert.equal(result.expectedCount, 771);
-  assert.equal(result.actualCount, 771);
+  assert.equal(result.expectedCount, 778);
+  assert.equal(result.actualCount, 778);
   const counts = Object.groupBy(result.map.sections, (entry) => entry.book);
   assert.equal(counts.prealgebra.length, 60);
   assert.equal(counts['elementary-algebra'].length, 71);
@@ -274,7 +274,7 @@ test('committed provenance maps all 771 local sections exactly once', () => {
   assert.equal(counts.precalculus.length, 73);
   assert.equal(counts.biology.length, 208);
   assert.equal(counts.microbiology.length, 127);
-  assert.equal(counts['anatomy-physiology'].length, 162);
+  assert.equal(counts['anatomy-physiology'].length, 169);
   const representative = result.map.sections.find((entry) => (
     entry.book === 'intermediate-algebra' && entry.sourceSection === '3.1'
   ));
@@ -312,9 +312,9 @@ test('the Precalculus book is mapped complete, every upstream section authored',
   );
 });
 
-test('the Anatomy and Physiology book is pinned and in progress, its authored chapters mapped', () => {
-  // Pinned September 22, 2026. The partial count must print visibly on the
-  // book's own line rather than be omitted. The local counts are read from
+test('the Anatomy and Physiology book is pinned and complete, its authored chapters mapped', () => {
+  // Pinned September 22, 2026; `complete` from November 2, 2026. The count
+  // prints on the book's own line. The local counts are read from
   // the content tree, not pinned here, so a chapter run does not edit this
   // test; the map must agree with what is on disk.
   const bookDir = path.join(repositoryRoot, 'content/life-health-sciences/anatomy-physiology');
@@ -322,13 +322,13 @@ test('the Anatomy and Physiology book is pinned and in progress, its authored ch
   const sectionCount = chapterDirs
     .flatMap((dir) => readdirSync(path.join(bookDir, dir)))
     .filter((name) => /^\d{2}-.*\.md$/.test(name)).length;
-  assert.ok(chapterDirs.length > 0 && chapterDirs.length < 28, 'the book is still in progress');
+  assert.ok(chapterDirs.length === 28, 'every upstream chapter is authored');
   const result = verifyCommittedSourceMap(repositoryRoot);
   assert.deepEqual(result.errors, []);
   assert.deepEqual(result.map.books['anatomy-physiology'], {
     bundle: 'anatomy-physiology',
     contentPath: 'content/life-health-sciences/anatomy-physiology',
-    authoringStatus: 'in-progress',
+    authoringStatus: 'complete',
     upstreamChapters: 28,
     upstreamSections: 169,
     localChapters: chapterDirs.length,
@@ -344,7 +344,7 @@ test('the Anatomy and Physiology book is pinned and in progress, its authored ch
   });
   assert.equal(
     formatBookSummaryLine('anatomy-physiology', result.map.books['anatomy-physiology']),
-    `anatomy-physiology: in-progress — ${chapterDirs.length}/28 chapters, ${sectionCount}/169 sections mapped`,
+    `anatomy-physiology: complete — ${chapterDirs.length}/28 chapters, ${sectionCount}/169 sections mapped`,
   );
 });
 

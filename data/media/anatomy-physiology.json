@@ -11844,6 +11844,668 @@
       "alt": "This figure shows the different organs in the testicular reproductive system. The top panel shows the side view of a man and an uncircumcised and a circumcised penis. The bottom panel shows the lateral view of the male reproductive system and the major parts are labeled.",
       "caption": "The structures of the testicular reproductive system include the testes, the epididymides, the penis, and the ducts and glands that produce and carry semen. Sperm exit the scrotum through the ductus deferens, which is bundled in the spermatic cord. The seminal vesicles and prostate gland add fluids to the sperm to create semen."
     },
+    "2900_Photo_of_Neonate-02": {
+      "source": "media/2900_Photo_of_Neonate-02.jpg",
+      "sourceSha256": "03227b9331688b4e727dab7bcbb83f484a53d2fb5b9a16ddc2271337ca634d11",
+      "module": "m46339",
+      "kind": "photo",
+      "width": 1291,
+      "height": 645,
+      "variants": [
+        {
+          "width": 800,
+          "height": 399,
+          "file": "2900_Photo_of_Neonate-02-800.webp"
+        },
+        {
+          "width": 1291,
+          "height": 645,
+          "file": "2900_Photo_of_Neonate-02-1291.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photograph shows a newborn baby.",
+      "caption": "A single fertilized egg develops over the span of nine months into an infant consisting of trillions of cells and capable of surviving outside the womb. (credit: “Seattleye”/flickr.com)"
+    },
+    "2901_Sperm_Fertilization": {
+      "source": "media/2901_Sperm_Fertilization.jpg",
+      "sourceSha256": "4d879a230b9d0fc8149fa554589f6bca0d792721bf71b3b18d741e90b5333929",
+      "module": "m46308",
+      "kind": "photo",
+      "width": 1910,
+      "height": 1318,
+      "variants": [
+        {
+          "width": 800,
+          "height": 552,
+          "file": "2901_Sperm_Fertilization-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1104,
+          "file": "2901_Sperm_Fertilization-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the process of sperm fertilizing an egg. There are many sperm trying to attach to the egg.",
+      "caption": "Before fertilization, hundreds of capacitated sperm must break through the surrounding corona radiata and zona pellucida so that one can contact and fuse with the oocyte plasma membrane."
+    },
+    "2902_IVF-02": {
+      "source": "media/2902_IVF-02.jpg",
+      "sourceSha256": "c794e2d7d2cff7518bc669e27a9656f8dee66c3d1a7221d348bf3ae134e7cf56",
+      "module": "m46308",
+      "kind": "photo",
+      "width": 1944,
+      "height": 2919,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1201,
+          "file": "2902_IVF-02-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2402,
+          "file": "2902_IVF-02-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This multi-part figure shows the different steps in in vitro fertilization. The top panel shows how the oocytes and the sperm are collected and prepared. The next panel shows the sperm and oocytes being mixed in a petri dish. The panel below that shows the fertilized zygote being prepared for implantation. The last panel shows the fertilized zygote being implanted into the uterus.",
+      "caption": "In vitro fertilization involves egg collection from the ovaries, fertilization in a petri dish, and the transfer of embryos into the uterus."
+    },
+    "2903_Preembryonic_Cleavages-02": {
+      "source": "media/2903_Preembryonic_Cleavages-02.jpg",
+      "sourceSha256": "0459796406231bd394eecc3b64cf8a4b2589879ed9cdf0c69e121266aad8db5b",
+      "module": "m46319",
+      "kind": "photo",
+      "width": 1549,
+      "height": 1359,
+      "variants": [
+        {
+          "width": 800,
+          "height": 702,
+          "file": "2903_Preembryonic_Cleavages-02-800.webp"
+        },
+        {
+          "width": 1549,
+          "height": 1359,
+          "file": "2903_Preembryonic_Cleavages-02-1549.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the different stages of cell divisions taking place before the embryo is formed. The top panel shows the cell divisions occurring in the uterine tube and the bottom panel shows the cell divisions occurring in the uterus.",
+      "caption": "Pre-embryonic cleavages make use of the abundant cytoplasm of the conceptus as the cells rapidly divide without changing the total volume."
+    },
+    "2904_Preembryonic_Development-02": {
+      "source": "media/2904_Preembryonic_Development-02.jpg",
+      "sourceSha256": "8d09dd5b45da044175e1d9dfd502fa973e10207ac8d5de1ea8a546c0be7b92b8",
+      "module": "m46319",
+      "kind": "photo",
+      "width": 1957,
+      "height": 1792,
+      "variants": [
+        {
+          "width": 800,
+          "height": 732,
+          "file": "2904_Preembryonic_Development-02-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1465,
+          "file": "2904_Preembryonic_Development-02-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the different stages in pre-embryonic development. A diagram of the uterus is shown and from this image, eight callouts show the different stages of development.",
+      "caption": "Ovulation, fertilization, pre-embryonic development, and implantation occur at specific locations within the female reproductive system in a time span of approximately 1 week."
+    },
+    "2905_Implantation": {
+      "source": "media/2905_Implantation.jpg",
+      "sourceSha256": "f79ea038f98e04791584361a834b1c2d07feca88c90517b85988463eeecc3ceb",
+      "module": "m46319",
+      "kind": "photo",
+      "width": 1950,
+      "height": 2440,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1001,
+          "file": "2905_Implantation-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2002,
+          "file": "2905_Implantation-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the different steps during implantation. The top panel shows how the blastocyst burrows into the endometrium. The middle panel shows the blastocyst completely surrounded by the endometrium. The bottom panel shows the implanted embryo growing in the uterus.",
+      "caption": "During implantation, the trophoblast cells of the blastocyst adhere to the endometrium and digest endometrial cells until it is attached securely."
+    },
+    "2906_Placenta_Previa-02": {
+      "source": "media/2906_Placenta_Previa-02.jpg",
+      "sourceSha256": "12d18ee7b3c7fbfe6de0f149dc235f019f7d73dedc6a0e73e1cfa45486b1bace",
+      "module": "m46319",
+      "kind": "photo",
+      "width": 1599,
+      "height": 1017,
+      "variants": [
+        {
+          "width": 800,
+          "height": 509,
+          "file": "2906_Placenta_Previa-02-800.webp"
+        },
+        {
+          "width": 1599,
+          "height": 1017,
+          "file": "2906_Placenta_Previa-02-1599.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel of this image shows the normal location of the placenta and the right panel shows the location of the placenta in placenta previa.",
+      "caption": "An embryo that implants too close to the opening of the cervix can lead to placenta previa, a condition in which the placenta partially or completely covers the cervix."
+    },
+    "2907_Embroyonic_Disc,_Amniotic_Cavity,_Yolk_Sac-02": {
+      "source": "media/2907_Embroyonic_Disc,_Amniotic_Cavity,_Yolk_Sac-02.jpg",
+      "sourceSha256": "e9ca269ebb4aaec73c4cceeb393deb2295ab2b330788e15bd5f0704f15a4b4d3",
+      "module": "m46319",
+      "kind": "photo",
+      "width": 700,
+      "height": 487,
+      "variants": [
+        {
+          "width": 700,
+          "height": 487,
+          "file": "2907_Embroyonic_Disc,_Amniotic_Cavity,_Yolk_Sac-02-700.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the development of the amniotic cavity and the location of the embryonic disc.",
+      "caption": "Formation of the embryonic disc leaves spaces on either side that develop into the amniotic cavity and the yolk sac."
+    },
+    "2908_Germ_Layers-02": {
+      "source": "media/2908_Germ_Layers-02.jpg",
+      "sourceSha256": "d0d53e36ee8b91bc939506e96c8c8c4b7f88121de020c6c25473848746189dae",
+      "module": "m46319",
+      "kind": "photo",
+      "width": 1781,
+      "height": 1590,
+      "variants": [
+        {
+          "width": 800,
+          "height": 714,
+          "file": "2908_Germ_Layers-02-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1428,
+          "file": "2908_Germ_Layers-02-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the different germ layers. The top panel shows the epiblast and trophoblast cells in the early stages of development. The bottom panel shows the three germ layers: the endoderm, ectoderm, and mesoderm. All the other major parts are also labeled.",
+      "caption": "Formation of the three primary germ layers occurs during the first 2 weeks of development. The embryo at this stage is only a few millimeters in length."
+    },
+    "2909_Embryo_Week_3-02": {
+      "source": "media/2909_Embryo_Week_3-02.jpg",
+      "sourceSha256": "76e041e90bf70d9a043886bbc4a3c07b0bd9ff3482f86443fecab714f7eb6739",
+      "module": "m46319",
+      "kind": "photo",
+      "width": 1447,
+      "height": 1252,
+      "variants": [
+        {
+          "width": 800,
+          "height": 692,
+          "file": "2909_Embryo_Week_3-02-800.webp"
+        },
+        {
+          "width": 1447,
+          "height": 1252,
+          "file": "2909_Embryo_Week_3-02-1447.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the structure of the embryo in the third week of development. Under the image, three callouts list the different organ systems into which each germ layer develops.",
+      "caption": "Following gastrulation of the embryo in the third week, embryonic cells of the ectoderm, mesoderm, and endoderm begin to migrate and differentiate into the cell lineages that will give rise to mature organs and organ systems in the infant."
+    },
+    "2910_The_Placenta-02": {
+      "source": "media/2910_The_Placenta-02.jpg",
+      "sourceSha256": "7d01e6626ead694b6c6d000fd5b0be5ad96a586d855480f1266425ac5a05864b",
+      "module": "m46319",
+      "kind": "photo",
+      "width": 2059,
+      "height": 1068,
+      "variants": [
+        {
+          "width": 800,
+          "height": 415,
+          "file": "2910_The_Placenta-02-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 830,
+          "file": "2910_The_Placenta-02-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the location and structure of the placenta. The left panel shows a fetus in the womb. The right panel shows a magnified view of a small region including the placenta and the blood vessels.",
+      "caption": "In the placenta, maternal and fetal blood components are conducted through the surface of the chorionic villi, but maternal and fetal bloodstreams never mix directly."
+    },
+    "2911_Photo_of_Placenta-02": {
+      "source": "media/2911_Photo_of_Placenta-02.jpg",
+      "sourceSha256": "48d193aa3d25ad61c5422fe522b19885f73e125d7258441039d7cb1c8033b9ef",
+      "module": "m46319",
+      "kind": "photo",
+      "width": 1661,
+      "height": 1264,
+      "variants": [
+        {
+          "width": 800,
+          "height": 608,
+          "file": "2911_Photo_of_Placenta-02-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1217,
+          "file": "2911_Photo_of_Placenta-02-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This is a photo of a placenta and umbilical cord post-expulsion.",
+      "caption": "This post-expulsion placenta and umbilical cord (white) are viewed from the fetal side."
+    },
+    "2912_Neurulation-02": {
+      "source": "media/2912_Neurulation-02.jpg",
+      "sourceSha256": "272d724eaf757ac7107e1704c964d0835f5aee0a1d76fbb4a1a5bac6e97793ea",
+      "module": "m46319",
+      "kind": "photo",
+      "width": 1952,
+      "height": 2255,
+      "variants": [
+        {
+          "width": 800,
+          "height": 924,
+          "file": "2912_Neurulation-02-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1848,
+          "file": "2912_Neurulation-02-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This multi-part image shows the formation of the neural tube and the notochord. The top panel shows the ectoderm and mesoderm. The second panel shows the neural plate starting to fold over and the third panel shows the closed neural plate forming the neural tube. The fourth panel shows the mesoderm-derived notochord under the neural tube.",
+      "caption": "The embryonic process of neurulation establishes the rudiments of the future central nervous system and skeleton."
+    },
+    "2913_Embryonic_Folding": {
+      "source": "media/2913_Embryonic_Folding.jpg",
+      "sourceSha256": "a08d0740dfbd533e920db5b49b5f0c739b7bd01061246aa5f6e3dbdeea4614a8",
+      "module": "m46319",
+      "kind": "photo",
+      "width": 1894,
+      "height": 1735,
+      "variants": [
+        {
+          "width": 800,
+          "height": 733,
+          "file": "2913_Embryonic_Folding-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1465,
+          "file": "2913_Embryonic_Folding-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This multipart image shows the folding of the embryo. Each of the six panels shows a progression of steps in which the embryo folds on itself.",
+      "caption": "Embryonic folding converts a flat sheet of cells into a hollow, tube-like structure."
+    },
+    "2914_Photo_of_Embryo-02": {
+      "source": "media/2914_Photo_of_Embryo-02.jpg",
+      "sourceSha256": "c9794a5167a64022b0d7a45a126f5ba0105bb42e6e2e264c2f1f80c226cfe34c",
+      "module": "m46319",
+      "kind": "photo",
+      "width": 1270,
+      "height": 1356,
+      "variants": [
+        {
+          "width": 800,
+          "height": 854,
+          "file": "2914_Photo_of_Embryo-02-800.webp"
+        },
+        {
+          "width": 1270,
+          "height": 1356,
+          "file": "2914_Photo_of_Embryo-02-1270.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A photograph of an embryo derived from an ectopic pregnancy is shown.",
+      "caption": "An embryo at the end of 7 weeks of development is only 10 mm in length, but its developing eyes, limb buds, and tail are already visible. (This embryo was derived from an ectopic pregnancy.) (credit: Ed Uthman)"
+    },
+    "2915_Sexual_Differentation-02": {
+      "source": "media/2915_Sexual_Differentation-02.jpg",
+      "sourceSha256": "6b287fcc24e970c40fb1c318404ff4af4d0bd846025b41b833aaee0e9ef21780",
+      "module": "m46316",
+      "kind": "photo",
+      "width": 1297,
+      "height": 2444,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1507,
+          "file": "2915_Sexual_Differentation-02-800.webp"
+        },
+        {
+          "width": 1297,
+          "height": 2444,
+          "file": "2915_Sexual_Differentation-02-1297.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This flow chart shows how the sexual organs develop in embryos. The left side of the flow chart shows the development of male organs and the right side of the flow chart shows the development of female organs.",
+      "caption": "Differentiation of the male and female reproductive systems does not occur until the fetal period of development."
+    },
+    "2916_Fetal_Circulatory_System-02": {
+      "source": "media/2916_Fetal_Circulatory_System-02.jpg",
+      "sourceSha256": "ce8f9979a9b20b2a0978711c0e566fecdd430f597d749ce6a1e6fa73406ef8f7",
+      "module": "m46316",
+      "kind": "photo",
+      "width": 2235,
+      "height": 1948,
+      "variants": [
+        {
+          "width": 800,
+          "height": 697,
+          "file": "2916_Fetal_Circulatory_System-02-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1394,
+          "file": "2916_Fetal_Circulatory_System-02-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a baby in the center of the image. To the left, is a panel showing the umbilical cord and how blood is supplied to the baby in the womb. Two panels on the right show the circulation of blood inside the baby’s body.",
+      "caption": "The fetal circulatory system includes three shunts to divert blood from undeveloped and partially functioning organs, as well as blood supply to and from the placenta."
+    },
+    "2917_Size_of_Uterus_Throughout_Pregnancy-02": {
+      "source": "media/2917_Size_of_Uterus_Throughout_Pregnancy-02.jpg",
+      "sourceSha256": "7eefcf393335b030e4c6974af1f7d58596c5dbc5ac9ac5aedbc5b8e696251681",
+      "module": "m46353",
+      "kind": "photo",
+      "width": 1312,
+      "height": 1750,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1067,
+          "file": "2917_Size_of_Uterus_Throughout_Pregnancy-02-800.webp"
+        },
+        {
+          "width": 1312,
+          "height": 1750,
+          "file": "2917_Size_of_Uterus_Throughout_Pregnancy-02-1312.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a woman’s body and marks the size of the uterus as it grows throughout pregnancy.",
+      "caption": "The uterus grows throughout pregnancy to accommodate the fetus."
+    },
+    "2918_Photo_of_Linea_Nigra": {
+      "source": "media/2918_Photo_of_Linea_Nigra.jpg",
+      "sourceSha256": "8b96fc188ed4ebe323b32e23412ee99db0c5fd5e849efb5353114648f1e647ac",
+      "module": "m46353",
+      "kind": "photo",
+      "width": 1128,
+      "height": 1124,
+      "variants": [
+        {
+          "width": 800,
+          "height": 797,
+          "file": "2918_Photo_of_Linea_Nigra-800.webp"
+        },
+        {
+          "width": 1128,
+          "height": 1124,
+          "file": "2918_Photo_of_Linea_Nigra-1128.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photo shows a dark line below a woman’s navel.",
+      "caption": "The linea nigra, a dark medial line running from the umbilicus to the pubis, forms during pregnancy and persists for a few weeks following childbirth. The linea nigra shown here corresponds to a pregnancy that is 22 weeks along."
+    },
+    "2919_Hormones_Initiating_Labor-02": {
+      "source": "media/2919_Hormones_Initiating_Labor-02.jpg",
+      "sourceSha256": "af932acd812df40677a84faa19a76a3299145a7228c7bd7ed2f987e8a48d23f7",
+      "module": "m46353",
+      "kind": "photo",
+      "width": 1578,
+      "height": 886,
+      "variants": [
+        {
+          "width": 800,
+          "height": 449,
+          "file": "2919_Hormones_Initiating_Labor-02-800.webp"
+        },
+        {
+          "width": 1578,
+          "height": 886,
+          "file": "2919_Hormones_Initiating_Labor-02-1578.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A graph hormone concentration versus week of pregnancy shows how three hormones vary throughout pregnancy.",
+      "caption": "A positive feedback loop of hormones works to initiate labor."
+    },
+    "2920_Stages_of_Childbirth-02": {
+      "source": "media/2920_Stages_of_Childbirth-02.jpg",
+      "sourceSha256": "bd01195c2fbd4d593d0a923889112a3dffe4e311f63795553ba4ec968b8deb1f",
+      "module": "m46353",
+      "kind": "photo",
+      "width": 1890,
+      "height": 2958,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1252,
+          "file": "2920_Stages_of_Childbirth-02-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2504,
+          "file": "2920_Stages_of_Childbirth-02-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This multi-part figure shows the different stages of childbirth. The top panel shows dilation, the middle panel shows birth and the bottom panel shows afterbirth delivery.",
+      "caption": "The stages of childbirth include Stage 1, early cervical dilation; Stage 2, full dilation and expulsion of the newborn; and Stage 3, delivery of the placenta and associated fetal membranes. (The position of the newborn’s shoulder is described relative to the person giving birth.)"
+    },
+    "2921_Neonatal_Circulatory_System": {
+      "source": "media/2921_Neonatal_Circulatory_System.jpg",
+      "sourceSha256": "a852b26d791953dfca0a7c9011927c0a7118c25ed39ab8cf8e4344fea4929be6",
+      "module": "m46335",
+      "kind": "photo",
+      "width": 1950,
+      "height": 1651,
+      "variants": [
+        {
+          "width": 800,
+          "height": 677,
+          "file": "2921_Neonatal_Circulatory_System-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1354,
+          "file": "2921_Neonatal_Circulatory_System-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure illustrates the circulatory system in a newborn. The left image in both panels shows the blood circulation before birth and the right image shows the blood circulation after birth.",
+      "caption": "A newborn’s circulatory system reconfigures immediately after birth. The three fetal shunts have been closed permanently, facilitating blood flow to the liver and lungs."
+    },
+    "2922_Let_Down_Reflex": {
+      "source": "media/2922_Let_Down_Reflex.jpg",
+      "sourceSha256": "d8dc298aa90dfdb7191b5056869a1687231bb82b823e4ea57e5e6af4ca504e89",
+      "module": "m46325",
+      "kind": "photo",
+      "width": 2168,
+      "height": 2772,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1023,
+          "file": "2922_Let_Down_Reflex-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2045,
+          "file": "2922_Let_Down_Reflex-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the process of let down reflex, the process in which the brain receives sensory impulses to release the hormones necessary for producing and discharging milk to the suckling newborn.",
+      "caption": "A positive feedback loop ensures continued milk production as long as the infant continues to breastfeed."
+    },
+    "2923_Male_Chromosomes": {
+      "source": "media/2923_Male_Chromosomes.jpg",
+      "sourceSha256": "ca6cfa17c5b0d4ad94211c1de28a6352fe9ffda4badb49332a0da98df5cab777",
+      "module": "m46311",
+      "kind": "photo",
+      "width": 2004,
+      "height": 1533,
+      "variants": [
+        {
+          "width": 800,
+          "height": 612,
+          "file": "2923_Male_Chromosomes-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1224,
+          "file": "2923_Male_Chromosomes-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure show the 23 pairs of chromosomes in a male human being.",
+      "caption": "Each pair of chromosomes contains hundreds to thousands of genes. The banding patterns are nearly identical for the two chromosomes within each pair, indicating the same organization of genes. As is visible in this karyotype, the only exception to this is the XY sex chromosome pair in males. (credit: National Human Genome Research Institute)"
+    },
+    "2924_Mendelian_Pea_Plant_Cross": {
+      "source": "media/2924_Mendelian_Pea_Plant_Cross.jpg",
+      "sourceSha256": "bd8bfae540e1faaf18fc290ec6adb56dc9958cd66f7c7cf1042324fb082470d0",
+      "module": "m46311",
+      "kind": "photo",
+      "width": 1301,
+      "height": 1092,
+      "variants": [
+        {
+          "width": 800,
+          "height": 671,
+          "file": "2924_Mendelian_Pea_Plant_Cross-800.webp"
+        },
+        {
+          "width": 1301,
+          "height": 1092,
+          "file": "2924_Mendelian_Pea_Plant_Cross-1301.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the genetics experiment conducted by Mendel. The top panel shows the offspring from first generation cross and the bottom panel shows the offspring from the second generation cross.",
+      "caption": "In the formation of gametes, it is equally likely that either one of a pair alleles from one parent will be passed on to the offspring. This figure follows the possible combinations of alleles through two generations following a first-generation cross of homozygous dominant and homozygous recessive parents. The recessive phenotype, which is masked in the second generation, has a 1 in 4, or 25 percent, chance of reappearing in the third generation."
+    },
+    "2925_Autosomal_Dominant_Inheritance": {
+      "source": "media/2925_Autosomal_Dominant_Inheritance.jpg",
+      "sourceSha256": "755c5b54d83764c5e9ad1158e5bdd65f370f322e4d696800bd61bc554f0b3a6e",
+      "module": "m46311",
+      "kind": "photo",
+      "width": 1185,
+      "height": 491,
+      "variants": [
+        {
+          "width": 800,
+          "height": 331,
+          "file": "2925_Autosomal_Dominant_Inheritance-800.webp"
+        },
+        {
+          "width": 1185,
+          "height": 491,
+          "file": "2925_Autosomal_Dominant_Inheritance-1185.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This 2-by-2 Punnet square shows fifty percent dominant and fifty percent recessive offspring.",
+      "caption": "Inheritance pattern of an autosomal dominant disorder, such as neurofibromatosis, is shown in a Punnett square."
+    },
+    "2926_Autosomal_Recessive_Inheritance-new": {
+      "source": "media/2926_Autosomal_Recessive_Inheritance-new.jpg",
+      "sourceSha256": "c44729a46062e3526968aa2dc9065a93097757652b4d6d9edc8451ffe2d2da84",
+      "module": "m46311",
+      "kind": "photo",
+      "width": 1360,
+      "height": 741,
+      "variants": [
+        {
+          "width": 800,
+          "height": 436,
+          "file": "2926_Autosomal_Recessive_Inheritance-new-800.webp"
+        },
+        {
+          "width": 1360,
+          "height": 741,
+          "file": "2926_Autosomal_Recessive_Inheritance-new-1360.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "In this figure, the offspring of two carrier parents are shown. The first generation has two unaffected offspring and two carrier offspring. The second generation cross shows seventy five percent unaffected and twenty five percent affected with cystic fibrosis.",
+      "caption": "The inheritance pattern of an autosomal recessive disorder with two carrier parents reflects a 3:1 probability of expression among offspring. (credit: U.S. National Library of Medicine)"
+    },
+    "2927_X-linked_Dominant_Inheritance-new": {
+      "source": "media/2927_X-linked_Dominant_Inheritance-new.jpg",
+      "sourceSha256": "a456a9c5e07b8b971844814fedd51091995baaa39a6bb79785f35e501451b619",
+      "module": "m46311",
+      "kind": "photo",
+      "width": 932,
+      "height": 1545,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1326,
+          "file": "2927_X-linked_Dominant_Inheritance-new-800.webp"
+        },
+        {
+          "width": 932,
+          "height": 1545,
+          "file": "2927_X-linked_Dominant_Inheritance-new-932.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the generations resulting from an X-linked dominant, affected XY parent in the top panel and the generations resulting from an X-linked dominant, affected XX parent in the bottom panel.",
+      "caption": "A chart of X-linked dominant inheritance patterns differs depending on which parent is affected with the disease. (credit: U.S. National Library of Medicine)"
+    },
+    "2928_X-linked_Recessive_Inheritance-new": {
+      "source": "media/2928_X-linked_Recessive_Inheritance-new.jpg",
+      "sourceSha256": "9595c52e3a562b39f5e7a43002ca750752d1b87552b1a43d5456995fd76b263b",
+      "module": "m46311",
+      "kind": "photo",
+      "width": 886,
+      "height": 693,
+      "variants": [
+        {
+          "width": 800,
+          "height": 625,
+          "file": "2928_X-linked_Recessive_Inheritance-new-800.webp"
+        },
+        {
+          "width": 886,
+          "height": 693,
+          "file": "2928_X-linked_Recessive_Inheritance-new-886.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the offspring from a carrier mother with the X-linked recessive inheritance.",
+      "caption": "Given two parents in which the male is normal and the female is a carrier of an X-linked recessive disorder, a male offspring would have a 50 percent probability of being affected with the disorder, whereas female offspring would either be carriers or entirely unaffected. (credit: U.S. National Library of Medicine)"
+    },
     "400_Micrograph_of_Cervical_Tissue_updated": {
       "source": "media/400_Micrograph_of_Cervical_Tissue_updated.jpg",
       "sourceSha256": "b7f46b81d1081b06b8cf36b8864bb46298a4013a60a9c7416c1c181220cc33f6",

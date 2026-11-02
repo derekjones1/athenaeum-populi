@@ -133,6 +133,13 @@ const shortSolutionWords = (solution) => normalizeWhitespace(solution).split(/\s
  */
 export const DISCLOSED_DEVIATIONS = Object.freeze([
   {
+    page: 'content/life-health-sciences/anatomy-physiology/28-development-and-inheritance/05-adjustments-of-the-infant-at-birth-and-postnatal-stages.md',
+    exercise: 'fs-id810682',
+    kind: 'options',
+    erratum: 2846,
+    reason: 'the source distractor c "ductus arteriosis" misspells the structure the module m46335 and the 28.3 glossary (m46316) spell "ductus arteriosus"; the page prints "ductus arteriosus" in its place; key a "foramen ovale", options b and d, and option order unchanged',
+  },
+  {
     page: 'content/life-health-sciences/anatomy-physiology/27-the-reproductive-system/01-anatomy-and-physiology-of-the-testicular-reproductive-system.md',
     exercise: 'fs-id2002473',
     kind: 'options',

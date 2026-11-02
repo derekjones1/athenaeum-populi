@@ -49,8 +49,7 @@ or
 hierarchy Subject → Book → Chapter → Section.
 
 Every book — the four OpenStax math books, Biology 2e, and OpenStax
-Microbiology, all complete with their Knowledge Checks, plus Anatomy and
-Physiology 2e, in progress — has a pinned,
+Microbiology, and Anatomy and Physiology 2e, all complete — has a pinned,
 report-only source reconciliation workflow. See
 [docs/source/openstax-source-workflow.md](docs/source/openstax-source-workflow.md) before
 changing a book. `npm run source:verify` checks the committed section map
