@@ -140,7 +140,7 @@ Positive charges inside the channel prevent the leakage of electrolytes across t
 >}}
 
 {{< textin
-  question="The proteins associated with these pores are negatively charged, so they tend to repel negatively charged substances and allow ________ charged substances to pass more readily."
+  question="The proteins associated with the pores of the filtration membrane are negatively charged, so they tend to repel negatively charged substances and allow ________ charged substances to pass more readily."
   answer="positively"
   accept="positive"
   hint="See the paragraph after the fenestrated capillary figure, on electric charge."

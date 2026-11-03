@@ -14,6 +14,10 @@ all three before authoring a section (chapter-run authors: the sections
 
 Written from the **September 22, 2026 scan** of the pinned source; chapter
 1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, chapter 5 on October 14, 2026, chapter 6 on October 15, 2026, chapters 7, 8, and 9 on October 16, 2026, chapters 10 and 11 on October 18, 2026, chapter 12 on October 20, 2026, chapters 13, 14, and 15 on October 21, 2026, and chapters 16 and 17 on October 24, 2026, chapter 18 on October 25, 2026, and chapter 19 the same day, and chapters 20 and 21 on October 26, 2026, and chapter 22 (Unit 5's first) on October 27, 2026, and chapter 23 on October 28, 2026, and chapters 24 and 25 on October 31, 2026, and chapter 26 (Unit 5's last) on November 1, 2026, and chapter 27 (Unit 6's first) on November 2, 2026, and chapter 28 (the book's last) on November 2, 2026.
+The book is complete — all 28 chapters, the six Knowledge Checks, and the
+completion audit (November 2, 2026; its record and the figure-alt pass
+still owed are in `docs/history/anatomy-physiology.md`) — so these rules
+govern edits and re-runs.
 A rule tagged *(pilot)* or *(chapter N)* came from authoring that chapter;
 the per-chapter record is `docs/history/anatomy-physiology.md`. A
 correction that is not folded back into a rule will be made again.

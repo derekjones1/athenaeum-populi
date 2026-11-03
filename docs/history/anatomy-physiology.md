@@ -3347,3 +3347,90 @@ at the nearest module sentence and the key is the standard account. The
 grader's new hyphen fold (`docs/history/authoring-playbook.md`, same date)
 stripped the hyphenated accept members this book's pages had listed under
 the old rule, their ledger records carried.
+
+## Completion audit record (November 2, 2026)
+
+After the sixth and last Knowledge Check landed (commit f13d403), the book
+got the one pass the per-section gates do not perform (life-sciences
+"Completion audit"): a cold random sample read by fresh Opus checkers,
+one per unit, briefed to answer each graded item from the module or the
+masked page and write the answer down BEFORE opening the live page, then
+to compare key, options, accept list, and hint against the page and the
+raw CNXML; to answer each sampled selfcheck before reading its model
+answer and rubric; and to read every sampled image by inventory before
+reading its alt, `longdesc`, or caption. The draw (seed 20261102,
+stratified by unit, floors of 15 items, 4 selfchecks, and 7 figures per
+unit) was 155 graded items (82 multiple choice, 71 `textin`, 2
+`sortbins`), 32 selfchecks, and 64 figures of the book's 2,168 graded
+items, 612 selfchecks, and 724 figures on 175 pages. The six answer files
+were machine-graded with `solve-check compare` against the live keys and
+every flag was verified by the parent on the module or the image.
+
+- **Keys:** 155 of 155 cold answers agree with the live key; 0
+  disagreements, 0 double keys, 0 unprinted distractors, 0 dishonest
+  conversions. Four "also defensible" notes were all already settled:
+  4.3's "Wharton's jelly" is an accept member of the mucous-connective-
+  tissue cloze; 21.7's "lymphoma" and 22.6's "low partial pressure of
+  oxygen" are Reviewed-not-errata rulings; 13.2's "medulla" for the
+  cerebellum's major input is the inferior olive's minor contribution and
+  the source's "major input" settles the pons.
+- **Items fixed (page-introduced, no erratum):** 2.3's energy cloze
+  printed "chemical bonds" over the key "chemical energy", so the stem was
+  rewritten from the module's defining sentence ("stored in the bonds
+  between atoms and molecules, invested when those bonds form and released
+  when they break"); 25.4's charge cloze opened "these pores" with no
+  referent, now "the pores of the filtration membrane"; both re-solved
+  blind by a fresh solver. Two module-printed accept members were added
+  (3.1 "water fearing", the module's own gloss for *hydrophobic*; 10.4
+  "staircase" without its head noun). Two hints were corrected to say
+  where the fact actually is: 11.4's diaphragm-and-scalene item pointed at
+  a thorax table that lists no scalenes (the scalenes' "contribute to deep
+  inhalation" is in 11.3), and 18.4's neutrophil-count selfcheck pointed at
+  a paragraph that prints no 1,800-per-µL cutoff (it is the neutrophil row
+  of 18.3's formed-elements table). The four accept and hint edits carried
+  their ledger records (`ledger:carry`); the two stem edits re-hashed and
+  were re-solved.
+- **Not changed, by the module-printed-accept rule:** "ductus arteriosus
+  shunt" (28.3), "hind milk" (28.6), "surface area:volume" (28.1), and
+  "pitting edema" (26.1) are not printed by their modules; the learner's
+  fuller forms are noted here as the class a future grader fold could take.
+  A 6.4 Source note that names the source's dropped option "bone
+  remodeling" three groups above a cloze accepting *remodeling* stays: the
+  body prints the word throughout.
+- **Selfchecks:** 32 read, 0 model-answer or rubric defects; every model
+  answer is the source solution or a footer-disclosed edit of it.
+- **Figures:** 64 read image-first, 2 `longdesc` defects, both
+  page-introduced and both verified on the image: 27.2's cell-cycle and
+  HPV figure described "a red p53 inhibitor" where the art draws the
+  inhibitor green on a pink p53; 11.6's gluteal figure described the
+  posterior view's Adductor group leader ending "on the medial side of the
+  upper thigh" where it ends on the muscle against the exposed femur shaft,
+  and the second Gluteus maximus (cut) leader ending on a cut edge where it
+  ends on the tendon. One defect in 32 figures, against Biology's 1 in 12
+  and Microbiology's 1 in 13 at their audits; no flag was inherited from a
+  source alt, so no erratum. Five checkers reported one figure or
+  selfcheck each that was not fully cold (a source solution or alt seen in
+  a grep before the answer was written); those are recorded in the reports.
+- **Other gates:** `source:check --bundle anatomy-physiology` 28/28
+  chapters, 169/169 sections, 577/577 headings; `npm test`,
+  `verify:replay`, `build` (6,569 files, 624.6 MiB), and `check:build`
+  green; `source:verify` prints every book complete.
+  `check:external-links` flagged 33 destinations on this book's pages:
+  17 bot walls (403/406) kept as printed; the "dead" eight are either
+  already un-linked and footer-disclosed by their chapter runs (7.2, 18.1,
+  20.1) or answer 403/406 to a full GET with a browser user agent (the
+  CDC and cancer.org citations) and are kept; six "unreachable" are
+  redirect chains that never land (8.2's and 8.4's three, disclosed;
+  13.2's Scientific American loop; 12.2's Michigan slide; 5.4's career
+  site with an invalid certificate) and two HTTP 500s (9.3, disclosed) are
+  kept, since only a confirmed 404 is un-linked.
+- **Close-out gap:** the status word had been flipped in its six pinned
+  places, but the reader-visible prose had not — the cover still carried
+  the "This book is being written" callout and the shelf page said the
+  book was being written, in its paragraph and on its card. Both fixed,
+  and `tools/build/documentation.test.mjs` now fails a complete book's
+  cover or an all-complete shelf that says so.
+- **Still to run:** the image-first alt pass over every `mediafigure`
+  (life-sciences "Completion audit", `docs/briefs/alt-pass/`), which the
+  baseline requires at completion even for this book. The sample's rate
+  is the argument for scheduling it, not for skipping it.

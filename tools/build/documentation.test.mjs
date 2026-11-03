@@ -637,6 +637,34 @@ test('the vendored theme records what it is and how it may be changed', () => {
   );
 });
 
+// ---- completion wording ------------------------------------------------------
+
+test("a complete book's cover and shelf no longer say it is being written", () => {
+  // The status WORD is pinned in six places (life-sciences "Where the files
+  // go"), but the reader-visible prose was not: Anatomy and Physiology's
+  // cover kept its "This book is being written" callout and the shelf card
+  // its "Being written; chapters appear as they are finished" for a day
+  // after the lock said complete (November 2, 2026). The cover of a complete
+  // book carries no such callout, no "Planned contents" list, and no
+  // `authoring_status`; a shelf whose every book is complete says nothing
+  // is being written.
+  const sourceMap = JSON.parse(read('data/openstax/source-map.json'));
+  const books = Object.values(sourceMap.books).filter((book) => book.contentPath);
+  const shelves = new Map();
+  for (const book of books) {
+    const shelf = book.contentPath.replace(/\/[^/]+$/, '');
+    shelves.set(shelf, (shelves.get(shelf) ?? true) && book.authoringStatus === 'complete');
+    if (book.authoringStatus !== 'complete') continue;
+    const cover = read(`${book.contentPath}/_index.md`);
+    assert.doesNotMatch(cover, /being\s+written|Planned\s+contents|as\s+they\s+are\s+finished/i, `${book.contentPath}/_index.md still reads as a book in progress`);
+    assert.doesNotMatch(cover, /^authoring_status:/m, `${book.contentPath}/_index.md declares authoring_status although the book is complete`);
+  }
+  for (const [shelf, allComplete] of shelves) {
+    if (!allComplete || !exists(`${shelf}/_index.md`)) continue;
+    assert.doesNotMatch(read(`${shelf}/_index.md`), /being\s+written/i, `${shelf}/_index.md says a book is being written, but every book on the shelf is complete`);
+  }
+});
+
 // ---- count parity ----------------------------------------------------------
 
 test('no document restates a live section count the map already prints', () => {

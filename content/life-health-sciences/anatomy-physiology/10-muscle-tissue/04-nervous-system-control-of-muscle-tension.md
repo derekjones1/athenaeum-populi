@@ -241,6 +241,7 @@ relaxation phase
 {{< textin
   question="Treppe, a condition where muscle contractions become more efficient, is also known as the ________."
   answer="staircase effect"
+  accept="staircase"
   hint="Look in the first paragraph of the Treppe section."
 >}}
 

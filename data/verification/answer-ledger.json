@@ -17296,14 +17296,6 @@
     "result": "agrees"
    }
   },
-  "23f0ebaa13cefb4e": {
-   "verdict": "ok",
-   "note": "glossary recall hydrophobic",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "23f0f1616862359c": {
    "verdict": "ok",
    "note": "body cloze from § Indirect Fluorescent Antibody Techniques: \"After an incubation and wash, the cells can be examined for fluorescence evident around the nucleus ( ).\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -31258,6 +31250,14 @@
     "result": "agrees"
    }
   },
+  "420069d08412ba94": {
+   "verdict": "ok",
+   "note": "key \"staircase effect\": textin key re-read against the CNXML glossary/body/summary sentence named in ledger-10.4.md; accept members run through check-text | completion audit, November 2, 2026",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4206da86c4965a8e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -38206,14 +38206,6 @@
    "note": "source exercise fs-idp57677728 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "513f50550d3e7afa": {
-   "verdict": "ok",
-   "note": "glossary recall: chemical energy (fs-id2200468) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -56365,10 +56357,6 @@
     "result": "agrees"
    }
   },
-  "7a44d48ef1f6d3ab": {
-   "verdict": "ok",
-   "note": "CT fs-id2686791 model = source solution verbatim; 1800 threshold from solution only"
-  },
   "7a47da0fb2e9aa72": {
    "verdict": "ok",
    "note": "parent re-read after a checker-driven edit (accept list, wording, or description); key unchanged and re-checked against the CNXML solution/glossary — 35.02 line 217 | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -58381,14 +58369,6 @@
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "7e8ec4978c172679": {
-   "verdict": "ok",
-   "note": "cloze fs-id2789714: allow positively charged substances to pass more readily (accept positive). Replaces globulins cloze (checker: example blank).",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -67566,14 +67546,6 @@
   "92eaf8c9636ad4a7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "92ee71b4bf9a03c9": {
-   "verdict": "ok",
-   "note": "Review fs-id2589732 key D 'diaphragm, scalene' as printed; diaphragm's breathing role in fs-id2974297, scalene from 11.3",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -88028,6 +88000,10 @@
     "result": "agrees"
    }
   },
+  "bfb9c895d177a81d": {
+   "verdict": "ok",
+   "note": "CT fs-id2686791 model = source solution verbatim; 1800 threshold from solution only | completion audit, November 2, 2026"
+  },
   "bfbbb01913fd0115": {
    "verdict": "ok",
    "note": "author-built from § Fungal Virulence: \"Fungal toxins are called mycotoxin s .\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -100950,6 +100926,14 @@
     "result": "agrees"
    }
   },
+  "dcf8775d7e2de1b5": {
+   "verdict": "ok",
+   "note": "glossary recall hydrophobic | completion audit, November 2, 2026",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "dcfe115005e47477": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -102785,6 +102769,14 @@
   "e0d8c13493244737": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "e0ddf6b0b0d491ec": {
+   "verdict": "ok",
+   "note": "body cloze from § Renal Corpuscle: \"The proteins associated with these pores are negatively charged, so they tend to repel negatively charged substances and allow positively c…\" — provenance backfilled 2026-11-03 (ledger-provenance.mjs)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -104773,6 +104765,14 @@
   "e52074948e302fe8": {
    "verdict": "ok",
    "note": "academia = 8 letters, a x3; 8!/3!=6720 (node BigInt), matches CNXML key. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "e526d4b98ee1a734": {
+   "verdict": "ok",
+   "note": "glossary recall: chemical energy (fs-id2200468) — provenance backfilled 2026-11-03 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "e52793f5ca5775aa": {
    "verdict": "ok",
@@ -110254,14 +110254,6 @@
     "result": "agrees"
    }
   },
-  "f1fd24853a29c693": {
-   "verdict": "ok",
-   "note": "key \"staircase effect\": textin key re-read against the CNXML glossary/body/summary sentence named in ledger-10.4.md; accept members run through check-text",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "f1fd5e47388008ca": {
    "verdict": "ok",
    "note": "KC 1 1.5 § body Positive Feedback (fs-id1946828), paragraph fs-id2239774, m45989",
@@ -114430,6 +114422,14 @@
   "fabd0f33e51f6e8e": {
    "verdict": "ok",
    "note": "Practice: C(17,6) computed by BigInt factorial quotient = 12376; matches CNXML Algebraic exercise fs-id1165135241276 (printed 12,376). | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "fabd24c3226838b2": {
+   "verdict": "ok",
+   "note": "Review fs-id2589732 key D 'diaphragm, scalene' as printed; diaphragm's breathing role in fs-id2974297, scalene from 11.3 | completion audit, November 2, 2026",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "fabe536bcfd2d35c": {
    "verdict": "ok",

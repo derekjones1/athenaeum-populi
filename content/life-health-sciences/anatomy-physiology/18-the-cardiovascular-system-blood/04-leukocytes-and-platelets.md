@@ -181,7 +181,7 @@ cytoplasmic extending
 
 {{< selfcheck
   question="One of the more common adverse effects of cancer chemotherapy is the destruction of leukocytes. Before his next scheduled chemotherapy treatment, a patient undergoes a blood test called an absolute neutrophil count (ANC), which reveals that his neutrophil count is 1900 cells per microliter. Would his healthcare team be likely to proceed with his chemotherapy treatment? Why?"
-  hint="Look in the first paragraph on neutrophils, under Granular Leukocytes."
+  hint="Look at the neutrophil row of the formed-elements table in Erythrocytes (Section 18.3) for the normal range, and at the first paragraph on neutrophils, under Granular Leukocytes."
 >}}
 A neutrophil count below 1800 cells per microliter is considered abnormal. Thus, this patient’s ANC is at the low end of the normal range and there would be no reason to delay chemotherapy. In clinical practice, most patients are given chemotherapy if their ANC is above 1000.
 ===CHECKS===

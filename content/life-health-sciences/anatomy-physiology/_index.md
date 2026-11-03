@@ -20,12 +20,6 @@ immune systems), energy and exchange (respiration, digestion, metabolism,
 the urinary system, and fluid and acid-base balance), and closes with
 reproduction, development, and inheritance.
 
-{{< callout type="warning" >}}
-  **This book is being written.** Chapters are published as they are
-  finished and verified, in order; the list below shows what is available
-  now and what is planned.
-{{< /callout >}}
-
 {{< callout type="info" >}}
   **Prerequisites:** none. High-school biology and chemistry help, but every
   term is defined where it is introduced, and each section ends with its own

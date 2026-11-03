@@ -237,7 +237,7 @@ the transversus abdominis, which wraps across the trunk of the body
 {{< multiplechoice
   question="Which muscle pair plays a role in respiration?"
   answer="diaphragm, scalene"
-  hint="Look at the opening paragraph of Muscles of the Thorax and the table that follows it."
+  hint="Look at the opening paragraph of Muscles of the Thorax and the table that follows it; the second muscle of the pair is described with the neck muscles at the end of Section 11.3."
 >}}
 intertransversarii, interspinales
 semispinalis cervicis, semispinalis thoracis

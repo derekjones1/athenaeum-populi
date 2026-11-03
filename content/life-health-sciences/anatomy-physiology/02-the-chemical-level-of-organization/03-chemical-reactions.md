@@ -145,7 +145,7 @@ Catabolic, exergonic, and decomposition
 ### Identify four forms of energy important in human functioning
 
 {{< textin
-  question="The form of potential energy that is stored in and released from chemical bonds is called ________."
+  question="The form of potential energy that is stored in the bonds between atoms and molecules, invested when those bonds form and released when they break, is called ________."
   answer="chemical energy"
   hint="This is the form of energy your body converts from the food you eat into fuel your muscle cells can use."
 >}}

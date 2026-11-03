@@ -247,6 +247,7 @@ glycoproteins
 {{< textin
   question="A substance or structure repelled by water is described as ________."
   answer="hydrophobic"
+  accept="water fearing"
   hint="Reread the first subsection's description of the phospholipid tails."
 >}}
 
