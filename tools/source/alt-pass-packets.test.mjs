@@ -6,7 +6,7 @@ import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-// alt-pass-packets.py drives the figure-alt pass (docs/briefs/alt-pass/):
+// alt-pass-packets.py drives the figure-alt pass (docs/archive/alt-pass/, archived):
 // one packet per chapter, one line per `mediafigure`. It runs against the
 // real tree because its whole job is to agree with the media manifest and
 // the source map; a figure it silently dropped would never be re-read.

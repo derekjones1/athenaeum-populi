@@ -1,4 +1,4 @@
-"""usage: alt-pass-packets.py <book> <out-dir> [--longdesc with|without]  — one packet-NN.md per chapter for the figure-alt pass (docs/briefs/alt-pass/); --longdesc keeps only the figures that carry (with) or lack (without) a longdesc."""
+"""usage: alt-pass-packets.py <book> <out-dir> [--longdesc with|without]  — one packet-NN.md per chapter for the figure-alt pass (docs/archive/alt-pass/, archived November 2, 2026); --longdesc keeps only the figures that carry (with) or lack (without) a longdesc."""
 import json, re, os, glob, sys
 args=sys.argv[1:]
 LONGDESC=None

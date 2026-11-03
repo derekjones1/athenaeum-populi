@@ -23,8 +23,10 @@ pin postdates its PDF; a chapter is run from
 `docs/briefs/anatomy-physiology/run.md` (the parent's recipe) with the
 agent briefs beside it — versioned there, not re-derived per session. Dated
 narrative — retrospectives, per-chapter logs, closed programmes — lives in
-`docs/history/`, one file per playbook; `docs/history/re-review.md` records
-the re-review campaign; the playbooks keep only what is operative.
+`docs/history/`, one file per playbook; the playbooks keep only what is
+operative. Closed programmes that no run reads any more — the re-review
+campaign, the figure-alt passes, and their kit — are archived under
+`docs/archive/` (its README says what is there and why).
 
 ## Stack and constraints
 
@@ -76,10 +78,10 @@ the re-review campaign; the playbooks keep only what is operative.
   `docs/subjects/math.md`)
 - `npm run figures:numberlines -- [--dry-run] [--gallery out.html] <path>` —
   the number-line converter (the conversion backlog closed October 2026;
-  `docs/history/re-review.md`)
+  `docs/archive/re-review.md`)
 - `npm run figures:convert -- [--dry-run] [--gallery out.html] <path>` —
   the legacy `data-spec` converter (the conversion backlog closed October
-  2026; `docs/history/re-review.md`)
+  2026; `docs/archive/re-review.md`)
 - `npm run verify:replay` — replay every printed question span (source and
   MathLive-normalized spellings) through the grader so no exercise is passable
   by retyping its own prompt; holds a `--min-replayed` FLOOR (parallel,

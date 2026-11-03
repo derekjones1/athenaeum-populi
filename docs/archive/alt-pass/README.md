@@ -1,13 +1,16 @@
 # Figure-alt pass kit
 
 The image-first re-read of every `mediafigure` in a life-sciences book,
-required by `docs/subjects/life-sciences.md` §"Completion audit". Run
-records: `docs/history/microbiology.md`, `docs/history/biology.md`
+described in `docs/subjects/life-sciences.md` §"Completion audit". Run
+records: `docs/archive/reverification-microbiology.md`, `docs/archive/reverification-biology.md`
 ("Figure-alt pass", "Practice sweep and long-description pass", "Alt-only
 figure pass").
 
-The pass is required at a book's completion, and a figure fixed by the
-earlier passes is still re-read. The checker brief requires a full
+**Archived November 2, 2026.** The pass was required at the completion of
+the two books authored before the three-reading discipline; a book
+authored under the triple check does not run it (life-sciences
+"Completion audit"). A figure fixed by the earlier passes was still
+re-read. The checker brief requires a full
 inventory (every label, every count, every arrow as `source → target` with
 both ends zoomed) before the words are read, and a claim-by-claim check
 against it.
@@ -16,7 +19,9 @@ against it.
 task, the parent opens the image for one of its "clean" verdicts before
 launching the rest.
 
-History: `docs/history/re-review.md`, Alt-only figure pass.
+History: `docs/archive/re-review.md`, Alt-only figure pass;
+`docs/archive/reverification-biology.md` and
+`docs/archive/reverification-microbiology.md`.
 
 ## Run shape
 
@@ -28,7 +33,7 @@ History: `docs/history/re-review.md`, Alt-only figure pass.
    map, and the lock; a figure missing from the manifest or the map is
    printed to stderr.
 2. One `general-purpose` agent with `model: "opus"` per packet, six to
-   twelve at a time, prompt = "read `docs/briefs/alt-pass/checker-brief.md`; packet
+   twelve at a time, prompt = "read `docs/archive/alt-pass/checker-brief.md`; packet
    `<out-dir>/packet-NN.md`; report `<out-dir>/report-NN.md` (Bash heredoc
    appends, not the Write tool)". Launch the next packet as each finishes.
    Agents share the scratch dir, so name each one's helper scripts and

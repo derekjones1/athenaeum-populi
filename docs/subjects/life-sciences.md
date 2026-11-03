@@ -1150,23 +1150,25 @@ or the module. The audit also runs `npm run source:check -- --bundle
 and a book-wide `npm run check:external-links`, every dead destination
 already un-linked and disclosed. Checkers run on Opus.
 
-**Image-first alt pass (required).** The sample is not the end of the
-figure work: after it, every `mediafigure` in the book gets one more
-reading by a fresh Opus checker (packets of 30–45 figures, ordered by
-figure kind — the kit's run shape) who opens the image and
-writes down what is drawn — panels, labels, colours, arrows, counts, scale
-bars — BEFORE reading the alt, caption, `longdesc`, or source alt, then
-compares claim by claim, because an alt read first anchors the reader to
-its plausible count, colour, or label. The parent verifies every flag on
-the image (the checkers' own mis-counts are the largest rejected class),
-fixes the page, and writes an erratum for each claim inherited from the
-source alt. Counts, colours, directions, and "labeled" claims are where
-defects cluster. The kit is `docs/briefs/alt-pass/` (checker brief, run
-shape) with `tools/source/alt-pass-packets.py <book> <out-dir>` building
-the packets; the records are in `docs/history/biology.md` and
-`docs/history/microbiology.md` ("Figure-alt pass", "Practice sweep and
-long-description pass", "Alt-only figure pass"). A book whose section checkers already read every
-figure on Opus by inventory (Anatomy and Physiology) still runs the pass.
+**Image-first alt pass (archived; not run for a triple-checked book).**
+Biology 2e and Microbiology were authored before the three-reading
+discipline and the per-section Opus figure inventory, so at completion
+each got a book-wide image-first re-read of every `mediafigure` (packets
+of 30–45 figures; the image inventoried BEFORE the alt, caption,
+`longdesc`, or source alt is read, because an alt read first anchors the
+reader to its plausible count, colour, or label). Those passes found about
+one alt defect in ten figures; their records and kit are archived under
+`docs/archive/` (`reverification-biology.md`,
+`reverification-microbiology.md`, `alt-pass/`). **A book authored under
+the triple check does not run the pass** (Derek, November 2, 2026):
+Anatomy and Physiology's section checkers read every figure by inventory
+as the chapters were written, and its completion audit's cold figure
+sample found one `longdesc` detail defect in 32 figures and no alt
+defect, so the completion audit's figure sample is the completion measure
+for such a book. The pass can be re-run from the archived kit
+(`tools/source/alt-pass-packets.py <book> <out-dir>` still builds its
+packets) if a later measurement calls for it. The inventory method below
+remains the rule for writing and checking every figure.
 
 **Image-first is not enough for a `longdesc`: read it by inventory.**
 Image-first readers miss detail, not order: arrows joined to the wrong box
@@ -1177,8 +1179,8 @@ printed label and number, every count, and every arrow as `source →
 target` with both ends zoomed (crop and upscale small print with PIL);
 then each sentence is ticked against it, each drawn arrow that carries the
 figure's meaning is described, and each printed label is found in the
-alt, `longdesc`, caption, or an adjacent table. The alt-pass kit runs this
-method on Opus, `longdesc` figures first.
+alt, `longdesc`, caption, or an adjacent table. The archived alt-pass kit
+ran this method on Opus, `longdesc` figures first.
 
 **Figure, alt, and `longdesc` reading and fixing run on Opus, never
 Sonnet.** Sonnet stays right for

@@ -170,7 +170,7 @@ rest coordinate graphs and plain geometry. Derek's decision: the legacy
 figures go through the converter (18, one command, 0 investigations), the
 number lines through a new converter, the pictorial figures stay hand SVG
 and leave the queue, and the graphs and geometry become re-review rows after
-the Precalculus rows (`docs/history/re-review.md`).
+the Precalculus rows (`docs/archive/re-review.md`).
 
 The same day closed the π tick gap the October 6 entry left open. 61 graph
 specs on 9 pages (6.1 alone 21) faked π ticks with hand `texts` below the

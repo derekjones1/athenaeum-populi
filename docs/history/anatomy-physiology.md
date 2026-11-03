@@ -3430,7 +3430,14 @@ every flag was verified by the parent on the module or the image.
   book was being written, in its paragraph and on its card. Both fixed,
   and `tools/build/documentation.test.mjs` now fails a complete book's
   cover or an all-complete shelf that says so.
-- **Still to run:** the image-first alt pass over every `mediafigure`
-  (life-sciences "Completion audit", `docs/briefs/alt-pass/`), which the
-  baseline requires at completion even for this book. The sample's rate
-  is the argument for scheduling it, not for skipping it.
+- **Figure-alt pass waived (Derek, November 2, 2026).** The baseline had
+  required the book-wide image-first alt pass at completion even for this
+  book. Derek ruled that a book authored under the triple check — per-
+  section Opus checker reading every figure by inventory, blind solve,
+  claim pass — does not run it; the pass was the repair for the two books
+  written before that discipline, and this audit's figure sample (one
+  `longdesc` detail defect in 32, no alt defect, nothing touching a graded
+  answer) is the completion measure. The kit and the earlier books'
+  pass records moved to `docs/archive/`, so a future run does not load
+  them; the pass can be re-run from there if a later measurement calls
+  for it. The book is closed.

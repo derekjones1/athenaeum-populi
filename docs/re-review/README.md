@@ -1,8 +1,9 @@
 # Re-reviewing or editing a finished page
 
-Every book but Anatomy and Physiology 2e is complete and has been read to
-the standard below (the campaign that did it, row by row with costs and
-errata, is `docs/history/re-review.md`). Any later change to a finished
+Every book is complete and has been read to the standard below (the
+campaign that did it, row by row with costs and errata, is archived at
+`docs/archive/re-review.md`; Anatomy and Physiology met the standard as it
+was authored). Any later change to a finished
 page — a reported defect, a grader or engine change that re-opens keys, a
 figure or hint sweep — follows this document: the standard says what the
 page must satisfy afterwards, and the loop says who reads what. One request

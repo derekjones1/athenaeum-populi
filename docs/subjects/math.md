@@ -610,7 +610,7 @@ hand-assemble a picture out of `polygons` and `texts`; extending `graph-core`
 with a new primitive is Derek's call. `npm run figures:convert` and
 `npm run figures:numberlines` remain for a legacy or hand figure that
 reappears. The conversion campaign's procedure and the decision of October 7,
-2026 are in `docs/history/re-review.md` and `docs/history/math.md`.
+2026 are in `docs/archive/re-review.md` and `docs/history/math.md`.
 
 Gate the page before moving on: `npm run verify-section -- <page>`,
 `node tools/figures/check-figure-overlaps.mjs <page>` (it also reports the
