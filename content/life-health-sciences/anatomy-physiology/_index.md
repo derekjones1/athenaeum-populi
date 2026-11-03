@@ -2,6 +2,7 @@
 title: Anatomy and Physiology
 description: A two-semester human anatomy and physiology course — the chemical, cellular, and tissue levels of organization, then every organ system from the skin to the reproductive system, and human development and inheritance — with interactive practice on every page.
 license: CC BY-NC-SA 4.0
+prerequisites: []
 source: OpenStax Anatomy and Physiology 2e
 seo_title: "Anatomy and Physiology – Free Interactive Anatomy and Physiology Textbook | Athenaeum Populi"
 linkTitle: "Overview"
@@ -21,9 +22,12 @@ the urinary system, and fluid and acid-base balance), and closes with
 reproduction, development, and inheritance.
 
 {{< callout type="info" >}}
-  **Prerequisites:** none. High-school biology and chemistry help, but every
-  term is defined where it is introduced, and each section ends with its own
-  summary and key terms. This is advisory, not a gate.
+  **Prerequisites:** none. The first unit teaches the chemistry and cell
+  biology the rest of the book relies on, every term is defined where it is
+  introduced, and each section ends with its own summary and key terms.
+  Biology covers the same ground in more depth and is good preparation, but
+  it is not required, and neither is college chemistry. This is advisory,
+  not a gate.
 {{< /callout >}}
 
 ## Chapters

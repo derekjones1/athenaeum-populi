@@ -2,6 +2,7 @@
 title: Biology
 description: A complete introductory biology course — the chemistry of life, cell structure and metabolism, genetics, evolution, the diversity of life, plant and animal form and function, and ecology — with interactive practice on every page.
 license: CC BY-NC-SA 4.0
+prerequisites: []
 source: OpenStax Biology 2e
 seo_title: "Biology – Free Interactive Biology Textbook | Athenaeum Populi"
 linkTitle: "Overview"
@@ -20,9 +21,11 @@ moves through genetics and evolution, surveys the diversity of life, and
 closes with how plants and animals are built and how ecosystems work.
 
 {{< callout type="info" >}}
-  **Prerequisites:** none. High-school biology and chemistry help, but every
-  term is defined where it is introduced, and each section ends with its own
-  summary and key terms. This is advisory, not a gate.
+  **Prerequisites:** none. This is the first book on the shelf: its opening
+  unit teaches the chemistry of life from the atom up, every term is defined
+  where it is introduced, and each section ends with its own summary and key
+  terms. High-school biology and chemistry help but are not assumed. This is
+  advisory, not a gate.
 {{< /callout >}}
 
 ## Chapters

@@ -2,6 +2,7 @@
 title: Microbiology
 description: An allied-health microbiology course — how microbes are seen, classified, and grown; microbial biochemistry, genetics, and metabolism; how infections are controlled, resisted, and diagnosed; and the diseases of each body system — with interactive practice on every page.
 license: CC BY-NC-SA 4.0
+prerequisites: [Biology]
 source: OpenStax Microbiology
 seo_title: "Microbiology – Free Interactive Microbiology Textbook | Athenaeum Populi"
 linkTitle: "Overview"
@@ -19,9 +20,12 @@ and ends with the infectious diseases of each body system, organized by the
 pathogens that cause them.
 
 {{< callout type="info" >}}
-  **Prerequisites:** none. High-school biology and chemistry help, but every
-  term is defined where it is introduced, and each section ends with its own
-  summary and key terms. This is advisory, not a gate.
+  **Prerequisites:** Biology, or comfort with cell structure, basic chemistry
+  (atoms, bonds, water, and the macromolecules), and how DNA is copied and
+  read into protein. This book revisits that ground in a single biochemistry
+  chapter rather than teaching it from scratch, so a prior biology course and
+  high-school chemistry make the first half much easier. This is advisory,
+  not a gate — start here if that material already feels familiar.
 {{< /callout >}}
 
 ## Chapters
