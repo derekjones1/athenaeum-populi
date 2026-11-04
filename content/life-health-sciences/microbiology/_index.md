@@ -24,8 +24,7 @@ pathogens that cause them.
   (atoms, bonds, water, and the macromolecules), and how DNA is copied and
   read into protein. This book revisits that ground in a single biochemistry
   chapter rather than teaching it from scratch, so a prior biology course and
-  high-school chemistry make the first half much easier. This is advisory,
-  not a gate — start here if that material already feels familiar.
+  high-school chemistry make the first half much easier.
 {{< /callout >}}
 
 ## Chapters

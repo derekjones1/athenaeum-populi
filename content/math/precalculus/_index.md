@@ -18,8 +18,7 @@ and closes with a first look at limits and derivatives.
 {{< callout type="info" >}}
   **Prerequisites:** Intermediate Algebra, or comfort with functions,
   factoring, radicals, quadratics, and exponential and logarithmic
-  functions. This is advisory, not a gate — start here if the earlier
-  material already feels familiar.
+  functions.
 {{< /callout >}}
 
 ## Chapters

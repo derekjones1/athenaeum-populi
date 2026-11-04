@@ -18,9 +18,7 @@ logarithmic functions, conics, and finally sequences and series.
 
 {{< callout type="info" >}}
   **Prerequisites:** Elementary Algebra, or comfort with solving linear
-  equations, graphing lines, and working with polynomials and factoring. This
-  is advisory, not a gate — start here if the earlier material already feels
-  familiar.
+  equations, graphing lines, and working with polynomials and factoring.
 {{< /callout >}}
 
 ## Chapters

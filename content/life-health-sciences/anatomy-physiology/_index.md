@@ -26,8 +26,7 @@ reproduction, development, and inheritance.
   biology the rest of the book relies on, every term is defined where it is
   introduced, and each section ends with its own summary and key terms.
   Biology covers the same ground in more depth and is good preparation, but
-  it is not required, and neither is college chemistry. This is advisory,
-  not a gate.
+  it is not required, and neither is college chemistry.
 {{< /callout >}}
 
 ## Chapters

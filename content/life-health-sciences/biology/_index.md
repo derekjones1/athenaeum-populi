@@ -24,8 +24,7 @@ closes with how plants and animals are built and how ecosystems work.
   **Prerequisites:** none. This is the first book on the shelf: its opening
   unit teaches the chemistry of life from the atom up, every term is defined
   where it is introduced, and each section ends with its own summary and key
-  terms. High-school biology and chemistry help but are not assumed. This is
-  advisory, not a gate.
+  terms. High-school biology and chemistry help but are not assumed.
 {{< /callout >}}
 
 ## Chapters

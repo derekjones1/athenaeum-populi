@@ -17,8 +17,7 @@ finally quadratic equations.
 
 {{< callout type="info" >}}
   **Prerequisites:** Prealgebra, or comfort with integers, fractions,
-  decimals, and the basic language of algebra. This is advisory, not a
-  gate — start here if the foundations already feel familiar.
+  decimals, and the basic language of algebra.
 {{< /callout >}}
 
 ## Chapters

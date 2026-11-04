@@ -10,7 +10,7 @@ sidebar:
 
 Mathematics is built as a ladder: each book assumes only what came before it.
 Start wherever matches what you already know — every book states its
-prerequisites on its cover page, as guidance rather than gatekeeping.
+prerequisites on its cover page.
 
 ## Available books
 
