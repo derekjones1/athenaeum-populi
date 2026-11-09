@@ -18,7 +18,7 @@ import assert from 'node:assert/strict';
 import { existsSync, readFileSync, statSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { relative, sep } from 'node:path';
-import { ANSWER_FORM_TOKENS } from '../../assets/js/lib/math/check-answer.mjs';
+import { ANSWER_FORM_TOKENS, parseAnswerForm } from '../../assets/js/lib/math/check-answer.mjs';
 import { walkMarkdown } from '../lib/content.mjs';
 import { BOOK_RULES } from '../lint/lints.mjs';
 
@@ -419,6 +419,71 @@ test('the screenshot tools default to the port serve:public serves on', () => {
   }
 });
 
+test('the chemistry subject playbook states the rules its engine enforces', async () => {
+  // Chemistry 2e was pinned and its engine work landed on November 9, 2026,
+  // before any section was authored. Each claim below is one an author acts
+  // on, and each is checked against the code that owns it — the lint, the
+  // grader, the lock — rather than restated.
+  const chem = read('docs/subjects/chemistry.md');
+  const { lintLeaks } = await import('../lint/lints-leaks.mjs');
+  const { checkAnswer, describeFormFeedback, measuredKeyProblem } = await import('../../assets/js/lib/math/check-answer.mjs');
+  const page = 'content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/03-molarity.md';
+
+  // Where it sits and what it inherits.
+  const lock = JSON.parse(read('data/openstax/source-lock.json')).bundles['chemistry-bundle'];
+  assert.match(chem, new RegExp(lock.books.chemistry.contentPath.replace(/^content\//, '').replaceAll('/', '\\/')), 'names the lock\'s contentPath');
+  assert.match(chem, new RegExp(lock.books.chemistry.authoredBaselineCommit.slice(0, 8)), 'names the baseline commit the lock pins');
+  assert.match(chem, /docs\/subjects\/life-sciences\.md/, 'inherits the life-sciences notation and media rules');
+  assert.match(chem, /docs\/subjects\/math\.md/, 'points at the fill-in rules');
+  assert.match(chem, /source:media\s+--\s+--book\s+chemistry/);
+
+  // Notation: Unicode in prose, \ce in math — and the lint really runs here.
+  assert.match(chem, /a\s+formula\s+in\s+a\s+sentence\s+is\s+Unicode\s+text;\s+a\s+formula\s+inside\s+math\s+is\s+`\\ce\{…\}`/);
+  assert.ok(lintLeaks('Stibnite is Sb2S3.\n', page).errors.some((e) => /ASCII chemistry `Sb2S3`/.test(e)),
+    'the ASCII-formula lint runs on the Chemistry book with the whole periodic table');
+  assert.ok(lintLeaks('Water is $H_2O$.\n', page).errors.some((e) => /set by hand inside math/.test(e)),
+    'the hand-set-formula lint runs on the Chemistry book');
+  assert.match(chem, /A\s+formula\s+set\s+by\s+hand\s+in\s+math\s+is\s+a\s+lint\s+error/);
+  assert.match(chem, /`\\cancel\{\\text\{…\}\}`/, 'the unit-cancellation spelling');
+  assert.match(chem, /tools\/lib\/katex\.mjs/, 'names the shared renderer the gates use');
+  assert.ok(exists('tools/lib/katex.mjs'));
+  assert.match(chem, /assets\/js\/lib\/shared\/speakable-label\.mjs/, 'names where a \\ce is spelled for a screen reader');
+
+  // Graded items: keyed only, and the measured-quantity pair.
+  assert.match(chem, /a\s+graded\s+item\s+needs\s+a\s+source\s+key/);
+  assert.match(chem, /`sig-figs:<n>\s+last-digit:<k>`/);
+  // The worked table in the playbook is the grader's real behaviour.
+  const form = 'sig-figs:3 last-digit:1';
+  const verdicts = [['0.674', 'correct'], ['0.675', 'correct'], ['0.67442', 'form'], ['0.67', 'form'],
+    ['0.674M', 'unit'], ['\\frac{0.674mol}{L}', 'unit'], ['0.676', 'incorrect'], ['0.6', 'incorrect']];
+  for (const [typed, verdict] of verdicts) {
+    assert.equal(checkAnswer(typed, '0.674', { form }), verdict, `${typed} against 0.674`);
+  }
+  for (const [typed, sentence] of [['0.67442', 'now round it to 3 significant figures'],
+    ['0.67', 'now give it to 3 significant figures']]) {
+    assert.ok(describeFormFeedback(typed, form, '0.674').includes(sentence));
+    assert.ok(chem.replace(/\s+/g, ' ').includes(sentence), `the playbook quotes the feedback "${sentence}"`);
+  }
+  assert.match(chem, /Both\s+tokens\s+are\s+always\s+declared\s+together/);
+  assert.ok(measuredKeyProblem('0.674', 'sig-figs:3'), 'the lint refuses sig-figs without last-digit');
+  assert.match(chem, /`sig-figs:1`\s+takes\s+`last-digit:0`/);
+  assert.ok(measuredKeyProblem('5', 'sig-figs:1 last-digit:1'), 'the lint refuses an allowance on one figure');
+  assert.match(chem, /The\s+key\s+is\s+one\s+number/);
+  assert.ok(measuredKeyProblem('5371,3239', 'sig-figs:4 last-digit:0'), 'the lint refuses sig-figs on a list key');
+
+  // Figures and Knowledge Checks.
+  assert.match(chem, /every\s+image\s+ships\s+as\s+the\s+source's\s+raster\s+through\s+`mediafigure`/);
+  assert.match(chem, /set\s+`kind`\s+on\s+every\s+figure/);
+  assert.match(chem, /##\s+Knowledge\s+checks\n\nDecided\s+November\s+9,\s+2026:\s+\*\*one\s+check\s+per\s+block\s+of\s+chapters,\s+seven\s+pages\.\*\*/);
+  const blocks = [...chem.matchAll(/^\|\s+(\d)\s+\|\s+(\d+)–(\d+)\s+\|\s+(\d+)\s+\|/gm)]
+    .map((m) => ({ first: Number(m[2]), last: Number(m[3]), sections: Number(m[4]) }));
+  assert.equal(blocks.length, 7, 'seven Knowledge Check blocks');
+  assert.equal(blocks[0].first, 1);
+  assert.equal(blocks.at(-1).last, 21, 'the blocks end at the book\'s last chapter');
+  blocks.slice(1).forEach((block, i) => assert.equal(block.first, blocks[i].last + 1, 'the blocks tile the chapters with no gap'));
+  assert.equal(blocks.reduce((sum, block) => sum + block.sections, 0), 114, 'the blocks cover all 114 sections');
+});
+
 // ---- answerForm token parity, in both directions ---------------------------
 
 test('the math playbook documents every answerForm token', () => {
@@ -459,6 +524,19 @@ test('the fillin shortcode accepts exactly the exported answerForm tokens', () =
   assert.ok(exported.delete('solved:<variable>'), 'ANSWER_FORM_TOKENS still exports the solved family');
   assert.match(fillinShortcode, /findRE\s+`\^solved:\[a-zA-Z\]\$`/,
     'the shortcode still matches the solved:<variable> family with findRE');
+  // The measured-quantity pair (November 9, 2026): the grader reads one to
+  // nine figures and an allowance of zero to two units of the last one, and
+  // the template must refuse exactly what the grader would call unknown.
+  assert.ok(exported.delete('sig-figs:<n>'), 'ANSWER_FORM_TOKENS still exports the sig-figs family');
+  assert.match(fillinShortcode, /findRE\s+`\^sig-figs:\[1-9\]\$`/,
+    'the shortcode still matches the sig-figs:<n> family with findRE');
+  assert.ok(exported.delete('last-digit:<k>'), 'ANSWER_FORM_TOKENS still exports the last-digit family');
+  assert.match(fillinShortcode, /findRE\s+`\^last-digit:\[0-2\]\$`/,
+    'the shortcode still matches the last-digit:<k> family with findRE');
+  for (const [token, valid] of [['sig-figs:3', true], ['sig-figs:0', false], ['sig-figs:10', false],
+    ['last-digit:0', true], ['last-digit:2', true], ['last-digit:3', false]]) {
+    assert.equal(parseAnswerForm(token).valid, valid, `the grader ${valid ? 'reads' : 'refuses'} ${token}, as the template does`);
+  }
 
   assert.deepEqual(
     [...templateTokens].sort(),

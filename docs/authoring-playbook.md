@@ -16,8 +16,9 @@ life-health-sciences shelf, under which each book has a short delta file —
 [`microbiology.md`](subjects/microbiology.md), and
 [`anatomy-physiology.md`](subjects/anatomy-physiology.md) — recording its
 source, its CNXML-to-page mappings, and where it differs from the baseline.
-[`chemistry.md`](subjects/chemistry.md) is the scan-stage file for Chemistry
-2e, the first physical-sciences book; its authoring rules are written by its
+[`chemistry.md`](subjects/chemistry.md) is the file for Chemistry 2e, the
+first physical-sciences book: its notation, measured-quantity grading, and
+figure rules are decided there, and its page-level rules are written by its
 pilot.
 A subject playbook adds notation, media, and exercise-type rules on top of
 this core, and wins where it differs; a book file wins over its subject
@@ -259,7 +260,10 @@ another form) need an `answerForm` so the grader checks the shape, not just
 the value. The full `answerForm` token table, the re-expression discussion,
 and the fillin answer-shape rules (unordered-list answers, digit-grouping
 commas, braced exponents, `\\` outside environments) are documented per
-subject; for math, see `docs/subjects/math.md`.
+subject; for math, see `docs/subjects/math.md`. A measured quantity in a
+science book — a number keyed to its significant figures — declares
+`sig-figs:<n> last-digit:<k>`, which compares the value at the key's own
+precision; see `docs/subjects/chemistry.md`.
 
 **A categorical answer is never a number.** "Is $7{,}248$ divisible by $5$?
 Answer $1$ for yes or $0$ for no" grades a legend rather than the choice and

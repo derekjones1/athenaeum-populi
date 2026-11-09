@@ -203,7 +203,7 @@ function figureSpecErrors(rawJson, kindFromParam) {
 // grader itself, so the trivially-satisfiable-prompt check grades a printed
 // value exactly the way a learner's submission would be graded.
 import {
-  ANSWER_FORM_TOKENS, ce, checkAnswer, checkFormAsGraded, parseAnswerForm, preprocess,
+  ANSWER_FORM_TOKENS, ce, checkAnswer, checkFormAsGraded, measuredKeyProblem, parseAnswerForm, preprocess,
   splitTopLevelCommas, stripGroupingCommas,
 } from '../../assets/js/lib/math/check-answer.mjs';
 // The shared content primitives: one shortcode grammar, one math-span escape
@@ -2417,6 +2417,15 @@ export function lintHugo(src, filename = '', options = {}) {
       if (unknown.length) {
         err(index, `${where}: answerForm token(s) ${unknown.map((t) => JSON.stringify(t)).join(', ')} name no form — use ${ANSWER_FORM_TOKENS.join(', ')}`);
       }
+      // ---- a measured quantity declared by halves, or on a key that is not one.
+      // `sig-figs:<n>` changes how the VALUE is compared (at the key's own
+      // precision, with `last-digit:<k>` units of allowance), but only for a
+      // key that is one nonzero numeral: on a list or an expression the grader
+      // falls back to the ordinary comparison, and the tokens would sit on
+      // the item looking declared while grading nothing. The rules are
+      // measuredKeyProblem()'s, beside the grader they protect.
+      const measuredProblem = measuredKeyProblem(params.answer, params.answerForm, { mode: params.answerMode });
+      if (measuredProblem) err(index, `${where}: ${measuredProblem}`);
       // A rule used to sit here forbidding `answerForm` beside a comma
       // answer, because the grader returned from its list paths before the
       // form was ever checked and the declared token silently graded nothing.

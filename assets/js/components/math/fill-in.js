@@ -151,6 +151,13 @@ class FillInElement extends HTMLElement {
       // about how input parses.
       mathlive.MathfieldElement.computeEngine = ce;
       this._check = checkAnswer;
+      // A measured quantity is one numeral, and the only superscript in it is
+      // a power of ten — usually of two digits (10²³, 10⁻¹⁹). MathLive's smart
+      // superscript leaps out of an exponent after ONE digit, which suits
+      // `x^2+3x` and turns a typed `6.022*10^23` into 10² followed by a 3.
+      // Here every digit typed after `^` stays in the exponent. Set after the
+      // import, when <math-field> is defined and the property is its own.
+      if (/(?:^|\s)sig-figs:/.test(this.answerForm)) this.field.smartSuperscript = false;
 
       // Replace the interim label (raw TeX minus delimiters) with spoken
       // math now the serializer is here — BEFORE the Check button enables,

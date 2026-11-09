@@ -25,8 +25,9 @@ agent briefs beside it — versioned there, not re-derived per session.
 Chemistry 2e is `scaffolded` (21 flat chapters, 114 sections, pinned
 November 9, 2026; the first book under `content/physical-sciences/`): no
 section is authored, and `docs/subjects/chemistry.md` records the scan, the
-decisions made, and the engine work that must land before its chapter 1
-pilot. Dated
+decisions made, the notation, measured-quantity grading, and figure rules
+its engine work landed (`\ce{…}` formulas in math, `sig-figs:<n>
+last-digit:<k>` fill-ins), and what its chapter 1 pilot still settles. Dated
 narrative — retrospectives, per-chapter logs, closed programmes — lives in
 `docs/history/`, one file per playbook; the playbooks keep only what is
 operative. Closed programmes that no run reads any more — the re-review

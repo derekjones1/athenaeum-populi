@@ -1,12 +1,13 @@
 import test from 'node:test';
 import { normalizeText } from '../../assets/js/lib/text/check-text.mjs';
 import assert from 'node:assert/strict';
-import { directlyAboveLeak, lintLeaks, numericKey, selfcheckForwardLeak, unicodeFormula } from './lints-leaks.mjs';
+import { directlyAboveLeak, handSetFormulas, lintLeaks, numericKey, selfcheckForwardLeak, unicodeFormula } from './lints-leaks.mjs';
 
 const BIO = 'content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md';
 const AP = 'content/life-health-sciences/anatomy-physiology/01-an-introduction-to-the-human-body/07-medical-imaging.md';
 const MATH = 'content/math/prealgebra/01-whole-numbers/01-introduction.md';
 const KC = 'content/life-health-sciences/biology/knowledge-check-01-03.md';
+const CHEM = 'content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/03-molarity.md';
 
 const normalizeTextForTest = (value) => normalizeText(value);
 const errorsOf = (src, file = BIO) => lintLeaks(src, file).errors;
@@ -325,4 +326,94 @@ test('selfcheckForwardLeak names the field and the spelling it found', () => {
   assert.deepEqual(selfcheckForwardLeak(sc, { kind: 'textin', params: { answer: 'toxicity' } }), { field: 'model answer', member: 'toxicity', norm: 'toxicity' });
   assert.equal(selfcheckForwardLeak(sc, { kind: 'textin', params: { answer: 'allergic reactions' } }), null);
   assert.equal(selfcheckForwardLeak(sc, { kind: 'sortbins', params: {}, inner: '{}' }), null);
+});
+
+// ---- Chemistry 2e notation (November 9, 2026) --------------------------------
+
+test('the Chemistry book reads the whole periodic table as formulas in prose', () => {
+  // The life-sciences element set is short on purpose; a general chemistry
+  // text writes compounds of every element.
+  assert.equal(unicodeFormula('Sb2S3'), null, 'antimony is not in the life-sciences set');
+  assert.equal(unicodeFormula('Sb2S3', { chemistry: true }), 'Sb₂S₃');
+  assert.equal(unicodeFormula('TeO2', { chemistry: true }), 'TeO₂');
+  assert.equal(unicodeFormula('D2O', { chemistry: true }), 'D₂O');
+  assert.equal(unicodeFormula('Cu+', { chemistry: true }), 'Cu⁺');
+  assert.equal(unicodeFormula('Cu+'), null);
+  // No F plasmid in a chemistry book: fluorine forms fluoride only.
+  assert.equal(unicodeFormula('F+'), 'F⁺');
+  assert.equal(unicodeFormula('F+', { chemistry: true }), null);
+  assert.equal(unicodeFormula('F-', { chemistry: true }), 'F⁻');
+  // A lone symbol with a count is still not a formula (C60 is the checker's).
+  assert.equal(unicodeFormula('C60', { chemistry: true }), null);
+
+  assert(hasError('Stibnite is Sb2S3.\n', /ASCII chemistry `Sb2S3` — write `Sb₂S₃`/, CHEM));
+  assert(hasError('The Fe3+ ion and SO42- are common.\n', /ASCII chemistry `Fe3\+` — write `Fe³⁺`/, CHEM));
+  assert(!hasError('Stibnite is Sb2S3.\n', /ASCII chemistry/), 'the life-sciences set is unchanged');
+  assert(!hasError('Stibnite is Sb2S3.\n', /ASCII chemistry/, MATH), 'math books are out of scope');
+  const clean = 'Water (H₂O), sulfate (SO₄²⁻), the hydrate CuSO₄·5H₂O, carbon-14 (¹⁴C), and $\\ce{H2SO4}$ in math.\n';
+  assert.deepEqual(errorsOf(clean, CHEM).filter((e) => /ASCII chemistry|set by hand/.test(e)), []);
+});
+
+test('handSetFormulas finds the three hand spellings of a formula in math', async (t) => {
+  // [tex, the hits as written:why]
+  const rows = [
+    ['H_2O', ['H_2O:italic']],
+    ['CO_2', ['CO_2:italic']],
+    ['NH_3', ['NH_3:italic']],
+    ['H_2SO_4', ['H_2SO_4:italic']],
+    ['2H_2 + O_2 \\rightarrow 2H_2O', ['H_2O:italic']],
+    ['\\text{H}_2\\text{O}', ['\\text{H}_2:upright']],
+    ['\\mathrm{H_2O}', ['\\mathrm{H_2O}:upright']],
+    ['\\mathrm{N}_2', ['\\mathrm{N}_2:upright']],
+    ['P_{\\text{O}_2}', ['\\text{O}_2:upright']],
+    ['\\text{H}_{2}\\text{SO}_{4}', ['\\text{H}_{2}:upright']],
+  ];
+  for (const [tex, expected] of rows) {
+    await t.test(tex, () => {
+      assert.deepEqual(handSetFormulas(tex).map((hit) => `${hit.written}:${hit.why}`), expected);
+    });
+  }
+});
+
+test('handSetFormulas leaves mhchem, variables, units, and the gas laws alone', async (t) => {
+  const sound = [
+    '\\ce{H2O}',
+    '\\ce{2H2(g) + O2(g) -> 2H2O(l)}',
+    '\\ce{N2(g) + 3H2(g) <=> 2NH3(g)} \\qquad \\Delta H = -92.2\\ \\text{kJ}',
+    '\\pu{1.83 g/mL}',
+    'P_1V_1 = P_2V_2',          // every symbol subscripted: Boyle's law, not a compound
+    'C_1V_1 = C_2V_2',          // the dilution equation — C and V are both elements
+    '\\frac{P_1V_1}{T_1} = \\frac{P_2V_2}{T_2}',
+    'PV = nRT',                 // no count anywhere
+    'N_2',                      // a lone symbol cannot be told from a variable
+    'K_2',
+    'K_cRT',                    // a letter subscript is a label, not a count
+    '\\Delta H_1 + \\Delta H_2',
+    'K_\\text{sp} = 1.8 \\times 10^{-10}',
+    'q = mC_s\\Delta T',
+    'E = mc^2',
+    'x_1y_2',
+    '4.7\\ \\cancel{\\text{g K}} \\times \\frac{1\\ \\text{mol K}}{39.10\\ \\cancel{\\text{g K}}} = 0.12\\ \\text{mol K}',
+    'M = \\frac{\\text{mol solute}}{\\text{L solution}}',
+  ];
+  for (const tex of sound) {
+    await t.test(tex, () => assert.deepEqual(handSetFormulas(tex), []));
+  }
+});
+
+test('a formula set by hand in math is an error in the Chemistry book only', () => {
+  const page = 'Water is $H_2O$.\n\n$$\\text{H}_2 + \\text{Cl}_2 \\rightarrow 2\\text{HCl}$$\n';
+  const errors = errorsOf(page, CHEM).filter((e) => /set by hand/.test(e));
+  assert.equal(errors.length, 3, errors.join('\n'));
+  assert.match(errors[0], /^L1: formula `H_2O` is set by hand inside math — write `\\ce\{H2O\}` \(math sets bare letters italic/);
+  assert.match(errors[1], /^L3: formula `\\text\{H\}_2` is set by hand inside math — write `\\ce\{H2\}`/);
+  assert.match(errors[2], /^L3: formula `\\text\{Cl\}_2`.*write `\\ce\{Cl2\}`/);
+  // An exercise string is linted like body math.
+  assert(hasError('{{< fillin question="How many moles are in $18.0\\ \\text{g}$ of $H_2O$?" answer="1.00" answerForm="sig-figs:3 last-digit:1" hint="Use the molar mass." >}}\n',
+    /formula `H_2O` is set by hand/, CHEM));
+  // Life sciences keeps its own rule for partial pressures (`P_{\text{O}_2}`), and math has no formulas.
+  assert(!hasError(page, /set by hand/));
+  assert(!hasError(page, /set by hand/, MATH));
+  // Code is documentation.
+  assert(!hasError('Write `$H_2O$` as `$\\ce{H2O}$`.\n', /set by hand/, CHEM));
 });

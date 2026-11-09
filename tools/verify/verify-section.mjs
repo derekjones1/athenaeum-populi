@@ -34,7 +34,6 @@
  */
 import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import katex from 'katex';
 import { ce, checkAnswer, preprocess } from '../../assets/js/lib/math/check-answer.mjs';
 import { parseGraphPlotConfig } from '../../assets/js/lib/math/graph-plot-config.mjs';
 import { checkText } from '../../assets/js/lib/text/check-text.mjs';
@@ -42,6 +41,7 @@ import { checkSortbins, parseSortbinsConfig } from '../../assets/js/lib/text/che
 import { lintHugo } from '../lint/lints.mjs';
 import { lintLeaks } from '../lint/lints-leaks.mjs';
 import { parseCliArgs } from '../lib/cli.mjs';
+import { renderMath } from '../lib/katex.mjs';
 import { hasUnpairedDollar, maskCode, mathSpans, shortcodes } from '../lib/content.mjs';
 import { loadPracticeIndexForBook } from '../lib/practice-index.mjs';
 
@@ -104,7 +104,7 @@ function propMath(where, name, val) {
   }
   // A shortcode param is one logical line, so a span may cross a newline.
   for (const { tex } of mathSpans(val, { allowNewlines: true })) {
-    try { katex.renderToString(tex, { throwOnError: true, strict: 'ignore' }); }
+    try { renderMath(tex); }
     catch (e) { bad(`${where}: ${name} math "$${tex.slice(0, 40)}$" fails KaTeX — ${e.message.slice(0, 60)}`); }
   }
 }
@@ -176,7 +176,7 @@ for (const f of files) {
 
     // 2. body math
     for (const { tex, display } of mathSpans(src, { maskCode: true })) {
-      try { katex.renderToString(tex, { displayMode: display, throwOnError: true, strict: 'ignore' }); }
+      try { renderMath(tex, { display }); }
       catch (e) {
         bad(display
           ? `display math fails KaTeX — ${e.message.slice(0, 70)}`

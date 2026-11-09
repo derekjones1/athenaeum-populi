@@ -1759,8 +1759,12 @@ test('answerForm parsing and feedback wording', async (t) => {
   // undefined" — a defect only a reader of the rendered page would ever catch.
   for (const token of ANSWER_FORM_TOKENS) {
     await t.test(`the ${token} token has feedback wording`, () => {
+      // `last-digit:<k>` is the allowance beside `sig-figs:<n>` and has no
+      // phrase of its own, so it is worded as the pair it is always declared in.
       const spec = token === 'denominator:<n>' ? 'denominator:7'
-        : token === 'solved:<variable>' ? 'solved:y' : token;
+        : token === 'solved:<variable>' ? 'solved:y'
+          : token === 'sig-figs:<n>' ? 'sig-figs:3'
+            : token === 'last-digit:<k>' ? 'sig-figs:3 last-digit:1' : token;
       const phrased = describeAnswerForm(spec);
       assert.notEqual(phrased, '');
       assert.ok(!phrased.includes('undefined'), phrased);
@@ -4656,4 +4660,144 @@ test('a factorization complete but for its sign is told where the sign goes', ()
   assert.ok(describeFormFeedback('2(-x-2)', 'factored-completely', '-2(x+2)').includes(sign));
   assert.ok(describeFormFeedback('(x+2)(-2)', 'factored-completely', '-2(x+2)').includes(sign));
   assert.ok(!describeFormFeedback('(2x+4)(x+2)', 'factored-completely', '2(x+2)^2').includes(sign));
+});
+
+// ---- Measured quantities: `sig-figs:<n> last-digit:<k>` (November 9, 2026) --
+//
+// Chemistry 2e keys a computed quantity with the digits its data support.
+// These rows are the responses a learner really types against such a key —
+// the rounded answer, the neighbouring last digit, the calculator readout,
+// the answer with its unit — each graded through checkAnswer, the path the
+// fill-in itself calls. The arithmetic is tested in
+// significant-figures.test.mjs; this table is the reading around it.
+const M = 'sig-figs:3 last-digit:1';
+const measuredQuantities = [
+  // the molarity key 0.674 (Chemistry 2e 3.3)
+  ['0.674', '0.674', M, 'correct'],
+  ['0.675', '0.674', M, 'correct'],                  // a molar mass from another table
+  ['0.676', '0.674', M, 'incorrect'],
+  ['0.675', '0.674', 'sig-figs:3 last-digit:0', 'incorrect'],
+  ['0.67442', '0.674', M, 'form', 'now round it to 3 significant figures'],
+  ['0.67', '0.674', M, 'form', 'now give it to 3 significant figures'],
+  ['0.6', '0.674', M, 'incorrect'],
+  ['0.774', '0.674', M, 'incorrect'],
+  ['6.74\\times10^{-1}', '0.674', M, 'correct'],     // either notation, unless one is asked for
+  ['6.74e-1', '0.674', M, 'correct'],                // a calculator readout
+  // a unit after the right number — one letter included, which is a variable on any other key
+  ['0.674M', '0.674', M, 'unit'],
+  ['0.674\\text{ M}', '0.674', M, 'unit'],
+  ['0.674\\,mol/L', '0.674', M, 'unit'],
+  ['0.674\\mathrm{mol}\\cdot\\mathrm{L}^{-1}', '0.674', M, 'unit'],
+  ['0.774M', '0.674', M, 'incorrect'],               // a wrong number with a unit is wrong
+  // a compound unit typed with `/`: MathLive makes the whole response a fraction
+  ['\\frac{0.674mol}{L}', '0.674', M, 'unit'],
+  ['\\frac{0.674\\text{ mol}}{\\text{L}}', '0.674', M, 'unit'],
+  ['-\\frac{802kJ}{mol}', '-802', M, 'unit'],
+  ['\\frac{4.585\\times10^{22}atoms}{mol}', '4.585\\times10^{22}', 'sig-figs:4 last-digit:1', 'unit'],
+  ['\\frac{0.774mol}{L}', '0.674', M, 'incorrect'],
+  ['\\frac{0.67442mol}{L}', '0.674', M, 'form'],
+  ['\\frac{0.674}{2}', '0.674', M, 'incorrect'],     // a numeral below the bar is a division
+  ['0.67442M', '0.674', M, 'form'],                  // the digits first, then the unit
+  // a label or an approximation sign in front
+  ['M=0.674', '0.674', M, 'correct'],
+  ['K_c=0.674', '0.674', M, 'correct'],
+  ['\\approx0.674', '0.674', M, 'correct'],
+  ['x\\approx0.675', '0.674', M, 'correct'],
+  // the calculation left unfinished
+  ['\\frac{6.52}{128.9\\cdot0.0750}', '0.674', M, 'form', 'finish the calculation and enter just the result, to 3 significant figures'],
+  ['6.52/128.9/0.0750', '0.674', M, 'form', 'finish the calculation'],
+  ['\\frac{337}{500}', '0.674', M, 'form', 'finish the calculation'],
+  ['\\left(0.674+1-1\\right)', '0.674', M, 'form', 'finish the calculation'],   // the lint's unworked key
+  ['\\frac{6.52}{128.9}', '0.674', M, 'incorrect'],
+  ['0.335\\cdot2', '0.674', M, 'incorrect'],          // 0.67: an expression is a readout, not "right as far as it goes"
+  ['\\frac{1}{2}', '0.50', 'sig-figs:2 last-digit:0', 'form', 'finish the calculation'],
+  // what is not a number at all
+  ['', '0.674', M, 'empty'],
+  ['\\frac{\\placeholder{}}{2}', '0.674', M, 'invalid'],
+  ['0.674+', '0.674', M, 'invalid'],
+  ['x', '0.674', M, 'incorrect'],
+  // scientific notation, asked for or not
+  ['4.585\\times10^{22}', '4.585\\times10^{22}', 'sig-figs:4 last-digit:1 scientific-notation', 'correct'],
+  ['4.586\\times10^{22}', '4.585\\times10^{22}', 'sig-figs:4 last-digit:1 scientific-notation', 'correct'],
+  ['45.85\\times10^{21}', '4.585\\times10^{22}', 'sig-figs:4 last-digit:1 scientific-notation', 'form', 'in scientific notation to 4 significant figures'],
+  ['4.585e22', '4.585\\times10^{22}', 'sig-figs:4 last-digit:1 scientific-notation', 'form', 'in scientific notation'],
+  ['4.585e22', '4.585\\times10^{22}', 'sig-figs:4 last-digit:1', 'correct'],
+  ['4.585\\times10^{22}\\text{ Au atoms}', '4.585\\times10^{22}', 'sig-figs:4 last-digit:1', 'unit'],
+  ['4.5857\\times10^{22}', '4.585\\times10^{22}', 'sig-figs:4 last-digit:1', 'form', 'now round it to 4 significant figures'],
+  ['4.585\\times10^{21}', '4.585\\times10^{22}', 'sig-figs:4 last-digit:1', 'incorrect'],
+  ['2.957\\times10^{-2}', '2.957\\times10^{-2}', 'sig-figs:4 last-digit:0', 'correct'],
+  ['0.02957', '2.957\\times10^{-2}', 'sig-figs:4 last-digit:0', 'correct'],
+  ['0.02957', '2.957\\times10^{-2}', 'sig-figs:4 last-digit:0 scientific-notation', 'form'],
+  ['0.0296', '0.0296', 'sig-figs:3 last-digit:0 decimal', 'correct'],
+  ['2.96\\times10^{-2}', '0.0296', 'sig-figs:3 last-digit:0 decimal', 'form', 'as a decimal to 3 significant figures'],
+  // a rounding drill: the last digit is determined (Chemistry 2e 1.5)
+  ['31.6', '31.6', 'sig-figs:3 last-digit:0', 'correct'],
+  ['31.57', '31.6', 'sig-figs:3 last-digit:0', 'form', 'now round it to 3 significant figures'],   // the printed number retyped
+  ['31.5', '31.6', 'sig-figs:3 last-digit:0', 'incorrect'],
+  ['31.7', '31.6', 'sig-figs:3 last-digit:0', 'incorrect'],
+  ['2.15\\times10^5', '2.15\\times10^{5}', 'sig-figs:3 last-digit:0', 'correct'],
+  ['215000', '2.15\\times10^{5}', 'sig-figs:3 last-digit:0', 'correct'],
+  ['214776', '2.15\\times10^{5}', 'sig-figs:3 last-digit:0', 'form'],
+  ['214,776', '2.15\\times10^{5}', 'sig-figs:3 last-digit:0', 'form'],
+  ['628\\times342', '2.15\\times10^{5}', 'sig-figs:3 last-digit:0', 'form', 'finish the calculation'],   // the printed product retyped
+  ['2.14\\times10^5', '2.15\\times10^{5}', 'sig-figs:3 last-digit:0', 'incorrect'],                       // truncated, not rounded
+  // a whole number ending in zeros shows two or three figures
+  ['350', '350', 'sig-figs:2 last-digit:1', 'correct'],
+  ['3.5\\times10^{2}', '350', 'sig-figs:2 last-digit:1', 'correct'],
+  ['360', '350', 'sig-figs:2 last-digit:1', 'correct'],
+  ['355', '350', 'sig-figs:2 last-digit:1', 'form'],
+  ['370', '350', 'sig-figs:2 last-digit:1', 'incorrect'],
+  ['27440', '27440', 'sig-figs:4 last-digit:0', 'correct'],
+  ['27,440', '27440', 'sig-figs:4 last-digit:0', 'correct'],
+  ['27{,}440', '27440', 'sig-figs:4 last-digit:0', 'correct'],
+  ['27439.9593', '27440', 'sig-figs:4 last-digit:0', 'form'],
+  // a negative quantity keeps its sign
+  ['-494', '-494', M, 'correct'],
+  ['−493', '-494', M, 'correct'],                     // the Unicode minus a phone keyboard types
+  ['494', '-494', M, 'incorrect'],
+  ['-494\\text{ kJ/mol}', '-494', M, 'unit'],
+  // percent: a sign the key does not carry is a unit; one it carries is the form
+  ['48.3', '48.3', M, 'correct'],
+  ['48.3\\%', '48.3', M, 'unit'],
+  ['48.3\\%', '48.3\\%', `${M} percent`, 'correct'],
+  ['48.3', '48.3\\%', `${M} percent`, 'form', 'as a percent, with the % sign'],
+  ['0.483', '48.3\\%', `${M} percent`, 'incorrect'],   // read as written, never as a hundredth
+  // an authoring error surfaces as the key failing itself
+  ['0.6744', '0.6744', M, 'form'],                     // four figures keyed under sig-figs:3
+  ['35', '35', M, 'form'],                             // two figures keyed under sig-figs:3
+];
+test('Measured quantities: sig-figs with a last-digit allowance (November 9, 2026)', async (t) => {
+  for (const [typed, key, form, expected, feedback] of measuredQuantities) {
+    await t.test(`${typed}  vs  ${key}  [${form}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+      if (feedback) assert.ok(describeFormFeedback(typed, form, key).includes(feedback), describeFormFeedback(typed, form, key));
+    });
+  }
+});
+test('sig-figs changes nothing where it is not declared, or where the key is no single numeral', () => {
+  // The same responses under `decimal`: the 1e-9 comparison, and the
+  // one-letter unit read as a variable.
+  assert.equal(checkAnswer('0.675', '0.674', { form: 'decimal' }), 'incorrect');
+  assert.equal(checkAnswer('0.67442', '0.674', { form: 'decimal' }), 'incorrect');
+  assert.equal(checkAnswer('0.674M', '0.674', { form: 'decimal' }), 'incorrect');
+  // A list key is graded as every list is; the tokens then only describe the writing.
+  assert.equal(checkAnswer('5371,3239', '5371,3239', { form: 'sig-figs:4 last-digit:0' }), 'correct');
+  assert.equal(checkAnswer('5372,3239', '5371,3239', { form: 'sig-figs:4 last-digit:1' }), 'incorrect');
+  // An expression key is not a measured quantity.
+  assert.equal(checkAnswer('2x', '2x', { form: 'sig-figs:1 last-digit:0' }), 'form');
+});
+test('the measured-quantity tokens parse, describe themselves, and reject what the template rejects', () => {
+  assert.ok(ANSWER_FORM_TOKENS.includes('sig-figs:<n>'));
+  assert.ok(ANSWER_FORM_TOKENS.includes('last-digit:<k>'));
+  assert.equal(parseAnswerForm('sig-figs:3 last-digit:1').valid, true);
+  assert.deepEqual(parseAnswerForm('sig-figs:12 last-digit:5 sig-figs:x').unknown, ['sig-figs:12', 'last-digit:5', 'sig-figs:x']);
+  assert.equal(describeAnswerForm('sig-figs:3 last-digit:1'), 'That value is right — now write it to 3 significant figures.');
+  assert.equal(describeAnswerForm('sig-figs:1 last-digit:0'), 'That value is right — now write it to 1 significant figure.');
+  assert.equal(describeAnswerForm('sig-figs:4 last-digit:1 scientific-notation'),
+    'That value is right — now write it in scientific notation to 4 significant figures.');
+  // Asked about the writing alone, sig-figs reads one numeral showing that many figures.
+  assert.equal(checkFormAsGraded('0.674', 'sig-figs:3 last-digit:1', '0.674'), true);
+  assert.equal(checkFormAsGraded('0.67', 'sig-figs:3 last-digit:1', '0.674'), false);
+  assert.equal(checkFormAsGraded('350', 'sig-figs:2 last-digit:1', '350'), true);
+  assert.equal(checkFormAsGraded('6.52/128.9', 'sig-figs:3 last-digit:1', '0.674'), false);
 });

@@ -191,6 +191,9 @@ names):
 | `denominator:<n>` | that exact denominator — for equivalent-fraction asks, which are deliberately **not** reduced |
 | `solved:<variable>` | one written equation with that variable alone on one side and absent from the other — for "Solve the formula $7x+y=11$ for $y$", where equation-equivalence grading accepts the printed formula retyped; the variable is named because a formula can arrive solved for the *other* side ($x=5y-10$). An inequality counts the same way (`y\ge-2x+3` is solved for $y$; `2x+y\ge3` is not). Composed with other tokens, those tokens read the side the variable equals (equation forms such as `slope-intercept-form` still read the whole): `solved:a single-fraction reduced-fraction` refuses `a=\frac{2b}{2bc-2}`, and `solved:w expanded distributed no-like-terms` refuses `w=2(v+3)+1` — `solved:` alone passes an unfinished right side, so a formula or variation key that is a fraction or a combined sum declares its value form too; the cleared variable denominator `xy=16` grades equal to `y=\frac{16}{x}`, which is why a solve-for key keeps its `solved:` form |
 
+| `sig-figs:<n>` | a MEASURED quantity written to n significant figures (1–9) — the Chemistry book's token, the one form here that also changes how the VALUE is compared: the response, rounded to n figures, is compared with the key at the key's own nth digit, so the unrounded readout `0.67442` is `form` against `0.674` ("now round it to 3 significant figures"), `0.67` is `form` ("now give it to 3 significant figures"), an unfinished calculation of the right value is `form`, and a unit typed after the right number — one letter included (`0.674M`), and a compound unit typed with `/` — is `unit`. The key is ONE nonzero numeral, a decimal or `a\times10^{n}`; a plain decimal, scientific notation, and a calculator's `6.74e-1` are all read, and `scientific-notation` or `decimal` beside it narrows that. A whole number ending in zeros shows a range of counts (`350` is two or three figures). Always declared with `last-digit:<k>`; `docs/subjects/chemistry.md` "Measured quantities" has the authoring rules |
+| `last-digit:<k>` | the allowance beside `sig-figs:<n>`: how many units of the nth digit (0–2) the rounded response may differ from the key by. `last-digit:0` for a rounding drill or arithmetic on printed numbers, whose last digit is determined (`31.5` and `31.7` are `incorrect` against `31.6`); `last-digit:1` for a result computed from measured data, whose last digit is the uncertain one (`0.675` is `correct` against `0.674`, `0.676` is not). Never widened for a response written to fewer figures (`0.6` is `incorrect` against `0.674`), and `sig-figs:1` takes `last-digit:0` |
+
 A right value in the wrong shape reports back as "That value is right — now
 write it in lowest terms"; a wrong value is still just wrong.
 
@@ -348,6 +351,7 @@ the half-worked line (probe each: the key `correct`, the retyped subject
 | a binomial-expansion term | `single-term` alone |
 | an "evaluate" ask the engine evaluates (factorial, finite sum, limit, derivative) | `decimal` or `fraction`; `polynomial` on a polynomial derivative |
 | a three-sided estimate (`6<\sqrt{38}<7`) | `decimal` (the given middle is exempt) |
+| a measured or computed quantity keyed to its significant figures (Chemistry) | `sig-figs:<n> last-digit:<k>`, with `scientific-notation` when the stem asks for it |
 | a reflected log (`\log_2(-(x-1))`), a polar-form key | no form (the token grades the key `form` against itself) |
 
 ## GraphPlot: answer shapes and graph recognition

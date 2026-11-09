@@ -12,7 +12,7 @@
  *
  *   - an HTML character reference in a shortcode param (every book)
  *   - a chemical formula or ion in ASCII instead of Unicode sub/superscripts
- *     (life sciences)
+ *     (life sciences, and Chemistry with the whole periodic table)
  *   - a `textin` key printed by the item directly above it in a Practice
  *     group or Knowledge Check — its stem, its options, or its hint (every
  *     book)
@@ -39,8 +39,15 @@
  *     all true, fixed by reordering within their objective groups — 8
  *     Biology pages, 4 Microbiology; "any later item" measured 151 and was
  *     rejected)
+ *
+ * Landed November 9, 2026, with Chemistry 2e pinned and no page yet authored
+ * (so the corpus is clean by construction; the fixtures are the cases):
+ *
+ *   - a formula set by hand inside math — `H_2O` (italic, as variables),
+ *     `\text{H}_2\text{O}`, `\mathrm{H_2O}` — where the book writes
+ *     `\ce{H2O}` (Chemistry)
  */
-import { bookKeyOf, blankPreservingOffsets, maskCode, shortcodes, SHORTCODE_PARAMS } from '../lib/content.mjs';
+import { bookKeyOf, blankPreservingOffsets, maskCode, mathSpans, shortcodes, SHORTCODE_PARAMS } from '../lib/content.mjs';
 // The real textin grading normalizer, so a "printed key" here means printed
 // in exactly the sense check-text.mjs would grade a retyped copy of it.
 import { foldedForms, matchesForm, normalizeText } from '../../assets/js/lib/text/check-text.mjs';
@@ -115,6 +122,17 @@ export function numericKey(norm) {
  */
 const ELEMENTS = new Set(('H He Li Be B C N O F Ne Na Mg Al Si P S Cl Ar K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn '
   + 'Ga Ge As Se Br Kr Rb Sr Y Zr Mo Ag Cd Sn I Xe Cs Ba Pt Au Hg Pb Bi Rn Ra U').split(' '));
+/**
+ * The whole periodic table, for a chemistry book. The life-sciences set
+ * above is deliberately short — every symbol added there is another way for
+ * an abbreviation (`CD4`, `Th1`, `No`) to parse as a formula — but a general
+ * chemistry text writes compounds of every element, and its prose has no
+ * immunology shorthand to collide with.
+ */
+const ALL_ELEMENTS = new Set(('H He Li Be B C N O F Ne Na Mg Al Si P S Cl Ar K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn '
+  + 'Ga Ge As Se Br Kr Rb Sr Y Zr Nb Mo Tc Ru Rh Pd Ag Cd In Sn Sb Te I Xe Cs Ba La Ce Pr Nd Pm Sm Eu Gd Tb Dy Ho Er Tm '
+  + 'Yb Lu Hf Ta W Re Os Ir Pt Au Hg Tl Pb Bi Po At Rn Fr Ra Ac Th Pa U Np Pu Am Cm Bk Cf Es Fm Md No Lr Rf Db Sg Bh Hs Mt '
+  + 'Ds Rg Cn Nh Fl Mc Lv Ts Og D').split(' '));
 /** Cofactor abbreviations that carry a charge in the source (`NAD⁺`, `NADP⁺`, `FAD`). */
 const COFACTORS = new Set(['NAD', 'NADP', 'FAD']);
 /** The one-element molecules that are formulas; `B12`, `C3`, `K1` and the like are not. */
@@ -131,6 +149,11 @@ const NOT_FORMULAS = new Set(['PCV13', 'PPSV23', 'SV40', 'CC0', 'HSV1', 'HSV2', 
 
 /** The bare-sign ions a lone symbol may form, by symbol. */
 const ION_CHARGES = { H: '+', K: '+', Na: '+', Li: '+', Ag: '+', Cl: '-', Br: '-', I: '-', F: '+-' };
+/**
+ * The same for a chemistry book: the other +1 metals a general chemistry
+ * text writes, and fluoride only (no F plasmid here, so `F+` is not an ion).
+ */
+const CHEMISTRY_ION_CHARGES = { ...ION_CHARGES, F: '-', Rb: '+', Cs: '+', Cu: '+', Au: '+', Tl: '+' };
 
 const SUB = { 0: '₀', 1: '₁', 2: '₂', 3: '₃', 4: '₄', 5: '₅', 6: '₆', 7: '₇', 8: '₈', 9: '₉' };
 const SUP = { 0: '⁰', 1: '¹', 2: '²', 3: '³', 4: '⁴', 5: '⁵', 6: '⁶', 7: '⁷', 8: '⁸', 9: '⁹', '+': '⁺', '-': '⁻', '−': '⁻' };
@@ -147,7 +170,9 @@ const FORMULA_RE = /(?<![\p{L}\p{N}_./#&-])((?:NADP|NAD|FAD)|(?:[A-Z][a-z]?\d*)+
  * a lone element with a digit and a sign (`Ca2+`, `Fe3+`) carries the digit
  * as its charge, a compound (`NH4+`, `NO3-`) as a count.
  */
-export function unicodeFormula(token) {
+export function unicodeFormula(token, { chemistry = false } = {}) {
+  const elements = chemistry ? ALL_ELEMENTS : ELEMENTS;
+  const ionCharges = chemistry ? CHEMISTRY_ION_CHARGES : ION_CHARGES;
   const m = /^((?:NADP|NAD|FAD)|(?:[A-Z][a-z]?\d*)+?)(\d?[+\-−])?$/u.exec(token);
   if (!m) return null;
   let [, base, charge = ''] = m;
@@ -164,7 +189,7 @@ export function unicodeFormula(token) {
   }
   if (COFACTORS.has(base)) return charge ? base + [...charge].map((c) => SUP[c]).join('') : null;
   const parts = base.match(/[A-Z][a-z]?\d*/g) || [];
-  if (!parts.length || !parts.every((p) => ELEMENTS.has(p.replace(/\d+/g, '')))) return null;
+  if (!parts.length || !parts.every((p) => elements.has(p.replace(/\d+/g, '')))) return null;
   // Influenza subtypes, and the NCBI Bookshelf (`NBK555891`) and PubMed
   // Central (`PMC1234567`) ids a Source note cites — N, B, K, P, M, C are
   // all elements (Anatomy and Physiology 14.3).
@@ -180,11 +205,86 @@ export function unicodeFormula(token) {
   // and recipient strains are printed F⁺ and F⁻ by the source.
   if (parts.length === 1 && !/\d/.test(base + charge)) {
     const sign = charge === '+' ? '+' : '-';
-    if (!(ION_CHARGES[base] || '').includes(sign)) return null;
+    if (!(ionCharges[base] || '').includes(sign)) return null;
   }
   const uni = base.replace(/\d/g, (d) => SUB[d]) + [...charge].map((c) => SUP[c]).join('');
   return uni === token ? null : uni;
 }
+
+// ---- formulas set by hand inside math ----------------------------------------
+
+/** Blank every `\name{…}` group (balanced braces) of the named commands, offsets kept. */
+function blankCommandGroups(tex, names) {
+  const open = new RegExp(String.raw`\\(?:${names.join('|')})\s*\{`, 'g');
+  let out = tex;
+  for (const m of tex.matchAll(open)) {
+    let depth = 0;
+    let end = -1;
+    for (let i = m.index + m[0].length - 1; i < tex.length; i += 1) {
+      if (tex[i] === '\\') { i += 1; continue; }
+      if (tex[i] === '{') depth += 1;
+      else if (tex[i] === '}') { depth -= 1; if (depth === 0) { end = i; break; } }
+    }
+    if (end === -1) continue;
+    out = out.slice(0, m.index) + ' '.repeat(end + 1 - m.index) + out.slice(end + 1);
+  }
+  return out;
+}
+
+const SUBSCRIPT_DIGITS = String.raw`_\s*(?:\d|\{\s*\d+\s*\})`;
+// `\text{H}_2`, `\mathrm{O}_2`: an upright element symbol with a count hung on it.
+const UPRIGHT_SYMBOL_WITH_COUNT = new RegExp(String.raw`\\(?:text|textrm|mathrm)\s*\{\s*([A-Z][a-z]?)\s*\}\s*${SUBSCRIPT_DIGITS}`, 'g');
+// `\mathrm{H_2O}`: the count inside the upright group.
+const UPRIGHT_GROUP_WITH_COUNT = new RegExp(String.raw`\\mathrm\s*\{[^{}]*?([A-Z][a-z]?)${SUBSCRIPT_DIGITS}[^{}]*\}`, 'g');
+// `H_2O`, `CO_2`, `H_2SO_4`: a run of two or more capitalised symbols, bare in math.
+const BARE_SYMBOL_RUN = new RegExp(String.raw`(?<![A-Za-z\\}])((?:[A-Z][a-z]?(?:${SUBSCRIPT_DIGITS})?){2,})(?![A-Za-z])`, 'g');
+const BARE_SYMBOL = new RegExp(String.raw`([A-Z][a-z]?)(${SUBSCRIPT_DIGITS})?`, 'g');
+
+/**
+ * Every chemical formula in one math span that is typeset by hand where the
+ * book writes `\ce{…}`, as `{ index, written, why }` (index into `tex`).
+ *
+ * Three spellings, all of which render, which is why nothing else catches
+ * them. Bare `H_2O` is the worst: TeX sets letters in math italic, as
+ * variables, so water prints as the product H₂·O in the wrong face.
+ * `\text{H}_2\text{O}` and `\mathrm{H_2O}` are upright but each author
+ * spaces them differently, and a page that mixes them with `\ce{H2O}` shows
+ * one compound three ways.
+ *
+ * A bare run is a formula only when it cannot be a product of variables:
+ * every symbol an element, at least one carrying a count and at least one
+ * not. `P_1V_1` and `C_1V_1 = C_2V_2` (every symbol subscripted) and `PV`
+ * (none) are the gas and dilution laws and are left alone; so is a lone
+ * `N_2` or `K_2`, which no rule can tell from a variable. Those are the
+ * checker's to read on the rendered page.
+ */
+export function handSetFormulas(tex) {
+  const hits = [];
+  const outsideCe = blankCommandGroups(tex, ['ce', 'pu']);
+  for (const re of [UPRIGHT_SYMBOL_WITH_COUNT, UPRIGHT_GROUP_WITH_COUNT]) {
+    for (const m of outsideCe.matchAll(re)) {
+      if (ALL_ELEMENTS.has(m[1])) hits.push({ index: m.index, written: m[0], why: 'upright' });
+    }
+  }
+  // Bare runs are read with every command group that sets text blanked, and
+  // every remaining command name too (`\Delta H_2…` must not lend its letters).
+  const bare = blankCommandGroups(outsideCe, ['text', 'textrm', 'mathrm', 'operatorname', 'textbf', 'textit', 'mathbf'])
+    .replace(/\\[a-zA-Z]+/g, (name) => ' '.repeat(name.length));
+  for (const m of bare.matchAll(BARE_SYMBOL_RUN)) {
+    const parts = [...m[1].matchAll(BARE_SYMBOL)];
+    if (!parts.every((part) => ALL_ELEMENTS.has(part[1]))) continue;
+    const counted = parts.filter((part) => part[2]).length;
+    if (counted === 0 || counted === parts.length) continue;
+    hits.push({ index: m.index, written: m[1], why: 'italic' });
+  }
+  return hits.sort((a, b) => a.index - b.index);
+}
+
+/** `H_2SO_4` → `H2SO4`: the mhchem spelling of a hand-set formula, for the message. */
+const ceSpelling = (written) => written
+  .replace(/\\(?:text|textrm|mathrm)\s*\{([^{}]*)\}/g, '$1')
+  .replace(/_\s*\{?\s*(\d+)\s*\}?/g, '$1')
+  .replace(/\s+/g, '');
 
 /** `src` reduced to reader-visible text for the notation rule, offsets kept. */
 function notationText(src) {
@@ -285,6 +385,9 @@ export function lintLeaks(src, filename = '') {
   const err = (i, msg) => errors.push(`L${lineOf(src, i)}: ${msg}`);
   const book = bookKeyOf(filename);
   const lifeSciences = book.startsWith('life-health-sciences/');
+  // Chemistry 2e: Unicode formulas in prose like the life sciences, and
+  // `\ce{…}` for every formula inside math (docs/subjects/chemistry.md).
+  const chemistry = book === 'physical-sciences/chemistry';
   // Code examples and HTML comments are documentation, not authored content.
   const text = maskCode(src).replace(/<!--[\s\S]*?-->/g, blankPreservingOffsets);
 
@@ -316,7 +419,7 @@ export function lintLeaks(src, filename = '') {
   // beside five `H⁺`. Alt and longdesc text is held to the same form (it is
   // read aloud, which is the point); `accept` members are exempt because
   // they are what a learner types, and math spans are TeX.
-  if (lifeSciences) {
+  if (lifeSciences || chemistry) {
     const visible = notationText(src);
     for (const m of visible.matchAll(FORMULA_RE)) {
       // A token wrapped whole in quotation marks is a quotation of the
@@ -324,8 +427,27 @@ export function lintLeaks(src, filename = '') {
       // wrapped in asterisks is an italic gene symbol (*USP14*).
       const around = visible[m.index - 1] + visible[m.index + m[0].length];
       if (/^(?:["“”'‘’]{2}|\*\*|__)$/.test(around ?? '')) continue;
-      const uni = unicodeFormula(m[0]);
+      const uni = unicodeFormula(m[0], { chemistry });
       if (uni) err(m.index, `ASCII chemistry \`${m[0]}\` — write \`${uni}\` with Unicode sub/superscripts (a screen reader reads \`${m[0]}\` as letters and a bare number); only an \`accept\` member stays typeable ASCII`);
+    }
+  }
+
+  // ---- a formula set by hand inside math ------------------------------------
+  // In the Chemistry book every formula inside `$…$` or `$$…$$` is
+  // `\ce{…}`: Hugo's KaTeX carries mhchem, which sets the symbols upright,
+  // the counts as subscripts, the charges as superscripts, and the reaction
+  // arrows at their proper length from one plain spelling. handSetFormulas()
+  // has the three hand spellings and what it deliberately does not flag.
+  if (chemistry) {
+    for (const span of mathSpans(src, { maskCode: true })) {
+      // `tex` starts after the opening delimiter: one `$` inline, two for display.
+      const texStart = span.index + (span.display ? 2 : 1);
+      for (const hit of handSetFormulas(span.tex)) {
+        const reason = hit.why === 'italic'
+          ? 'math sets bare letters italic, as variables, so this prints as a product of them'
+          : 'a formula spaced by hand never matches the ones mhchem sets beside it';
+        err(texStart + hit.index, `formula \`${hit.written}\` is set by hand inside math — write \`\\ce{${ceSpelling(hit.written)}}\` (${reason})`);
+      }
     }
   }
 

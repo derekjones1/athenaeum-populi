@@ -3595,3 +3595,78 @@ test('Key terms: two glossary entries in one paragraph or bullet is an error; pr
   const prose = lintHugo(page('A **linear inequality** is an inequality in one variable. A **compound inequality** joins two inequalities.'), 'content/test.md').errors;
   assert.ok(!prose.some((e) => e.includes('Key terms:')), prose.join('\n'));
 });
+
+test('a measured quantity declares sig-figs and last-digit together, on one numeral key', () => {
+  // The two tokens change how the VALUE is compared, but only for a key that
+  // is one nonzero numeral (checkAnswer's measuredVerdict). Declared by
+  // halves, or on a key the grader does not read as a measured quantity,
+  // they would sit on the item and grade nothing.
+  const lint = (source) => lintHugo(source, 'content/physical-sciences/chemistry/03-composition/03-molarity.md').errors;
+  const fillin = (answer, form, extra = '') =>
+    `{{< fillin question="Calculate the molarity of the solution. Enter the molarity in mol/L." answer="${answer}" answerForm="${form}"${extra} hint="Convert to moles and liters first." >}}`;
+  const measured = (error) => /sig-figs/.test(error) && !/name no form/.test(error);
+  const errorsFor = (answer, form, extra) => lint(fillin(answer, form, extra)).filter(measured);
+
+  assert.deepEqual(errorsFor('0.674', 'sig-figs:3 last-digit:1'), [], 'the pair on a decimal key is sound');
+  assert.deepEqual(errorsFor('4.585\\times10^{22}', 'sig-figs:4 last-digit:1 scientific-notation'), [], 'a scientific-notation key is one numeral');
+  assert.deepEqual(errorsFor('31.6', 'sig-figs:3 last-digit:0'), [], 'a rounding drill takes no allowance');
+  assert.deepEqual(errorsFor('48.3\\%', 'sig-figs:3 last-digit:1 percent'), [], 'a percent key declares percent');
+  assert.deepEqual(errorsFor('-494', 'sig-figs:3 last-digit:1'), [], 'a negative quantity is one numeral');
+
+  assert.match(errorsFor('0.674', 'sig-figs:3')[0], /exactly one `sig-figs:<n>` and one `last-digit:<k>` together/, 'sig-figs alone');
+  assert.match(errorsFor('0.674', 'decimal last-digit:1')[0], /exactly one `sig-figs:<n>` and one `last-digit:<k>` together/, 'last-digit alone');
+  assert.match(errorsFor('0.674', 'sig-figs:3 sig-figs:4 last-digit:1')[0], /exactly one/, 'two counts');
+  assert.match(errorsFor('5', 'sig-figs:1 last-digit:1')[0], /no last digit to spare/, 'one figure with an allowance');
+  assert.deepEqual(errorsFor('5', 'sig-figs:1 last-digit:0'), [], 'one figure, compared exactly');
+  assert.match(errorsFor('5371,3239', 'sig-figs:4 last-digit:0')[0], /grades ONE nonzero number/, 'a list key');
+  assert.match(errorsFor('(1.2,3.4)', 'sig-figs:2 last-digit:1')[0], /grades ONE nonzero number/, 'a pair key');
+  assert.match(errorsFor('2.5x', 'sig-figs:2 last-digit:1')[0], /grades ONE nonzero number/, 'an expression key');
+  assert.match(errorsFor('0', 'sig-figs:1 last-digit:0')[0], /grades ONE nonzero number/, 'zero shows no significant figures');
+  assert.match(errorsFor('48.3\\%', 'sig-figs:3 last-digit:1')[0], /declares `percent` too/, 'a percent key without percent');
+  assert.match(errorsFor('0.674', 'sig-figs:3 last-digit:1', ' answerMode="unordered"')[0], /cannot be declared with answerMode="unordered"/);
+
+  // The pair is a value form: it refuses the key restated unworked, so the
+  // numeric-key rule asks for nothing more.
+  assert.equal(lint(fillin('0.674', 'sig-figs:3 last-digit:1')).filter((e) => e.includes('accepted unworked')).length, 0);
+  // …and a form that names neither token is not this rule's business.
+  assert.deepEqual(errorsFor('0.674', 'decimal'), []);
+});
+
+test('a structure drawing can stand uncaptioned in the text and inside a selfcheck model answer', () => {
+  // Chemistry 2e prints about 490 images outside any captioned <figure>:
+  // Lewis structures and structural formulas in running text, in exercise
+  // stems, and as the keyed answer to "draw the structure" exercises. Two
+  // shapes the life-sciences books never needed carry them, and both must
+  // keep linting clean: a mediafigure with no caption (the source prints
+  // none), and a mediafigure nested in a selfcheck, whose model answer is the
+  // drawing with a sentence the rubric is taken from.
+  const manifests = { chemistry: { figures: {
+    numbonds: { file: 'numbonds-514.webp', width: 514, height: 179 },
+    asf3: { file: 'asf3-150.webp', width: 150, height: 99 },
+  } } };
+  const page = [
+    'Oxygen and other atoms in group 16 obtain an octet by forming two covalent bonds:',
+    '',
+    '{{< mediafigure src="chemistry/numbonds" kind="diagram" alt="Three Lewis structures labeled ammonia, water, and hydrogen fluoride." >}}',
+    '{{< /mediafigure >}}',
+    '',
+    '{{< selfcheck question="Write the Lewis structure for arsenic trifluoride, AsF₃." hint="Count the valence electrons first." >}}',
+    '{{< mediafigure src="chemistry/asf3" kind="diagram" alt="A Lewis structure: an arsenic atom with one lone pair, single-bonded to three fluorine atoms, each with three lone pairs." >}}',
+    '{{< /mediafigure >}}',
+    '',
+    'Arsenic is the central atom, single-bonded to three fluorine atoms. Arsenic keeps one lone pair, and each fluorine atom has three lone pairs.',
+    '===CHECKS===',
+    'arsenic is the central atom',
+    'single-bonded to three fluorine atoms',
+    'each fluorine atom has three lone pairs',
+    '{{< /selfcheck >}}',
+    '',
+  ].join('\n');
+  const file = 'content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/03-lewis-symbols-and-structures.md';
+  const { errors } = lintHugo(page, file, { mediaManifests: manifests });
+  assert.deepEqual(errors, [], errors.join('\n'));
+  // The same page with the nested figure's stem missing from the manifest
+  // still fails: nesting does not hide a figure from the manifest rule.
+  const unvendored = lintHugo(page.replace('chemistry/asf3', 'chemistry/never-vendored'), file, { mediaManifests: manifests }).errors;
+  assert(unvendored.some((error) => /never-vendored/.test(error)), unvendored.join('\n'));
+});

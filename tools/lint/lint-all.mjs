@@ -6,7 +6,9 @@
  * For every content Markdown file:
  *   - run the mechanical lints (tools/lint/lints.mjs)
  *   - render every $…$ / $$…$$ math run with KaTeX (throwOnError) so bad LaTeX
- *     is caught here instead of shipping as a red error box
+ *     is caught here instead of shipping as a red error box — through
+ *     tools/lib/katex.mjs, which loads the same mhchem extension Hugo's
+ *     embedded KaTeX has, so `\ce{…}` is judged as the build will render it
  *
  * A `--check-docs` flag lived here while the Practice retrofit ran, asserting
  * the published backlog count against the corpus. The retrofit finished on
@@ -16,10 +18,10 @@
  * Exit non-zero on any error. Run via `npm run lint`.
  */
 import { readFileSync } from 'node:fs';
-import katex from 'katex';
 import { lintHugo } from './lints.mjs';
 import { lintLeaks } from './lints-leaks.mjs';
 import { parseCliArgs } from '../lib/cli.mjs';
+import { renderMath } from '../lib/katex.mjs';
 import { mathSpans, walkMarkdown } from '../lib/content.mjs';
 import { loadPracticeIndexForBook } from '../lib/practice-index.mjs';
 
@@ -46,7 +48,7 @@ for (const f of walkMarkdown(root)) {
   for (const { tex, display } of mathSpans(src, { maskCode: true })) {
     // throwOnError catches real parse errors; strict:'ignore' silences benign
     // "unknown symbol" warnings (e.g. an em-dash inside a money-dollar span).
-    try { katex.renderToString(tex, { displayMode: display, throwOnError: true, strict: 'ignore' }); }
+    try { renderMath(tex, { display }); }
     catch (e) { errors++; console.log(`KATEX ${f}: ${JSON.stringify(tex.slice(0, 50))} — ${e.message.slice(0, 80)}`); }
   }
 }

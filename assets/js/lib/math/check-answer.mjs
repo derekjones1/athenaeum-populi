@@ -26,6 +26,7 @@
  */
 
 import { ComputeEngine } from '@cortex-js/compute-engine';
+import { compareMeasured, numeralFromNumber, readNumeral } from './significant-figures.mjs';
 
 // One engine for the whole page. FillIn hands this same instance to
 // MathLive (MathfieldElement.computeEngine) so the field and the grader
@@ -6906,6 +6907,13 @@ function conversionMatchesKey(written, answerRaw, spec) {
 
 const DENOMINATOR_TOKEN = /^denominator:(\d+)$/;
 const SOLVED_TOKEN = /^solved:([a-zA-Z])$/;
+// A measured quantity's two tokens (see "Measured quantities" above
+// checkAnswer): how many significant figures the answer is written to, and
+// how many units of the last one the value may differ by.
+const SIG_FIGS_TOKEN = /^sig-figs:([1-9])$/;
+const LAST_DIGIT_TOKEN = /^last-digit:([0-2])$/;
+const isParameterizedToken = (token) => DENOMINATOR_TOKEN.test(token) || SOLVED_TOKEN.test(token)
+  || SIG_FIGS_TOKEN.test(token) || LAST_DIGIT_TOKEN.test(token);
 
 /**
  * Split an `answerForm` spec into its tokens, reporting any that name no
@@ -6914,12 +6922,12 @@ const SOLVED_TOKEN = /^solved:([a-zA-Z])$/;
  */
 export function parseAnswerForm(spec) {
   const tokens = String(spec ?? '').trim().split(/\s+/).filter(Boolean);
-  const unknown = tokens.filter((token) => !(token in FORM_PREDICATES)
-    && !DENOMINATOR_TOKEN.test(token) && !SOLVED_TOKEN.test(token));
+  const unknown = tokens.filter((token) => !(token in FORM_PREDICATES) && !isParameterizedToken(token));
   return { tokens, unknown, valid: tokens.length > 0 && unknown.length === 0 };
 }
 
-export const ANSWER_FORM_TOKENS = Object.freeze([...Object.keys(FORM_PREDICATES), 'denominator:<n>', 'solved:<variable>']);
+export const ANSWER_FORM_TOKENS = Object.freeze([...Object.keys(FORM_PREDICATES), 'denominator:<n>', 'solved:<variable>',
+  'sig-figs:<n>', 'last-digit:<k>']);
 
 /**
  * Feedback for a right value in the wrong shape. It names the shape rather
@@ -6987,9 +6995,37 @@ export function describeAnswerForm(spec) {
     if (denominator) return `with a denominator of ${denominator[1]}`;
     const solved = token.match(SOLVED_TOKEN);
     if (solved) return `solved for ${solved[1]}, with ${solved[1]} alone on one side`;
+    const figures = token.match(SIG_FIGS_TOKEN);
+    if (figures) return significantFiguresPhrase(Number(figures[1]));
+    // The last-digit allowance is how the value is compared, not a shape the
+    // learner writes: it has no phrase.
+    if (LAST_DIGIT_TOKEN.test(token)) return null;
     return FORM_PHRASES[token];
-  });
+  }).filter(Boolean);
+  // The number of figures reads last: "in scientific notation to 3
+  // significant figures", whichever order the tokens were declared in.
+  phrases.sort((a, b) => /significant figure/.test(a) - /significant figure/.test(b));
+  // `last-digit:<k>` alone names no shape (the lint refuses it without its
+  // `sig-figs`), and "now write it ." is not a sentence.
+  if (phrases.length === 0) return '';
   return `That value is right — now write it ${phrases.join(' ')}.`;
+}
+
+const significantFiguresPhrase = (figures) => `to ${figures} significant figure${figures === 1 ? '' : 's'}`;
+
+/**
+ * The sentence for a measured-quantity response that earned `form`
+ * (measuredVerdict's `reason`). Each names the one thing left to do: the
+ * learner's chemistry was right.
+ */
+function measuredFormFeedback(reason, spec) {
+  const { figures } = measuredSpec(spec);
+  const to = significantFiguresPhrase(figures);
+  if (reason === 'too-many') return `That value is right — now round it ${to}.`;
+  if (reason === 'too-few') return `That agrees with the answer as far as it goes — now give it ${to}.`;
+  if (reason === 'unworked') return `That value is right — now finish the calculation and enter just the result, ${to}.`;
+  if (reason === 'percent') return 'That value is right — now write it as a percent, with the % sign.';
+  return describeAnswerForm(spec);
 }
 
 // The sentence for the right solution set written in the other notation
@@ -7018,6 +7054,10 @@ const NUMBER_SHAPE_TOKENS = new Set(['decimal', 'fraction', 'percent', 'lowest-t
  * notation and keeps the token's sentence.
  */
 export function describeFormFeedback(studentRaw, spec, answerRaw) {
+  // A measured quantity is told what its digits still need, before any other
+  // reading: its `form` reasons are its own.
+  const measured = answerRaw === undefined ? null : measuredVerdict(studentRaw, answerRaw, { form: spec });
+  if (measured !== null && measured.verdict === 'form') return measuredFormFeedback(measured.reason, spec);
   // The right solution set in the other notation is told which notation the
   // key uses, before any token's sentence: with no answerForm declared this
   // is the only 'form' a response can earn.
@@ -7698,6 +7738,18 @@ function checkFormToken(studentRaw, token, answerRaw) {
   }
   const solved = token.match(SOLVED_TOKEN);
   if (solved) return writtenSolvedFor(studentRaw, solved[1]);
+  // The shape half of a measured quantity, for a caller that asks about the
+  // writing alone: one numeral showing that many significant figures.
+  // checkAnswer never reaches this — measuredVerdict grades the value and the
+  // figures together, because how close is close enough depends on both.
+  const figures = token.match(SIG_FIGS_TOKEN);
+  if (figures) {
+    const numeral = readNumeral(bareLatex(studentRaw));
+    const wanted = Number(figures[1]);
+    return numeral !== null && /^(?:\\?%)?$/.test(numeral.rest.trim())
+      && numeral.sigMin <= wanted && wanted <= numeral.sigMax;
+  }
+  if (LAST_DIGIT_TOKEN.test(token)) return true;
   return FORM_PREDICATES[token](studentRaw, answerRaw);
 }
 
@@ -8425,7 +8477,187 @@ function integerFamilyVerdict(studentRaw, answerRaw, options) {
   return formHolds ? 'correct' : 'form';
 }
 
+/* ---------------------------------------------------------------------------
+ * Measured quantities: `sig-figs:<n>` with `last-digit:<k>`
+ *
+ * A science book keys a computed quantity with the digits its data support —
+ * "0.674 M", "4.585 × 10²² atoms" — and both ordinary readings of such a key
+ * are wrong. Compared at 1e-9, the learner whose molar mass came from another
+ * periodic table and ended one digit off (0.675) is marked wrong for correct
+ * chemistry; compared with any tolerance wide enough to take that, the
+ * unrounded calculator readout (0.67442) is marked right, and the book spends
+ * a section of chapter 1 teaching that it is not the answer.
+ *
+ * `sig-figs:<n>` declares the key a measured quantity written to n
+ * significant figures, and from there the comparison is made at the key's own
+ * precision (significant-figures.mjs): the response rounded to n figures must
+ * sit within k units of the key's nth digit, k being the `last-digit:<k>`
+ * beside it. k = 0 is a rounding drill or arithmetic on printed numbers,
+ * whose last digit is determined; k = 1 is a result computed from measured
+ * data, molar masses, or constants, whose last digit is the uncertain one. A
+ * right value shown to more or fewer figures is `form` with a sentence naming
+ * the count; an unfinished calculation of the right value is `form` too.
+ *
+ * The response is read as a numeral, never as algebra: a plain decimal,
+ * `a\times10^{n}`, or a calculator's `4.585e22`, behind an optional label
+ * (`M=0.674`, `K_c=0.50`) or `\approx`. Whatever follows a right numeral is a
+ * unit — one letter included (`0.674M`, `0.24g`), which on any other key is a
+ * variable — and reports `unit`, the question having named it. The remaining
+ * tokens of the form (`scientific-notation`, `decimal`, `percent`) are then
+ * required of the numeral as written.
+ *
+ * Only a single-numeral key is read this way; a list, a tuple, or an
+ * expression key returns null and is graded as before (the content lint
+ * refuses `sig-figs` on one).
+ * ------------------------------------------------------------------------ */
+function measuredSpec(spec) {
+  const { tokens, valid } = parseAnswerForm(spec);
+  if (!valid) return null;
+  const figures = tokens.find((token) => SIG_FIGS_TOKEN.test(token));
+  if (!figures) return null;
+  const lastDigit = tokens.find((token) => LAST_DIGIT_TOKEN.test(token));
+  return {
+    figures: Number(figures.match(SIG_FIGS_TOKEN)[1]),
+    lastDigit: lastDigit ? Number(lastDigit.match(LAST_DIGIT_TOKEN)[1]) : 0,
+    rest: tokens.filter((token) => !SIG_FIGS_TOKEN.test(token) && !LAST_DIGIT_TOKEN.test(token)).join(' '),
+  };
+}
+
+// What may follow a measured numeral and still be its unit: letters (one is
+// enough here), `\text{…}` and its kin, the Greek and degree marks units are
+// written with, a solidus, a `\cdot` between unit factors, parentheses, and a
+// unit's own small exponent (`m/s^2`, `mol^{-1}`).
+const MEASURED_UNIT_PIECE = String.raw`\s|[A-Za-zµμΩÅ°]|\\(?:text|textrm|mathrm|operatorname)\s*\{[^{}]*\}|\\(?:mu|Omega|degree|AA|circ|cdot)(?![a-zA-Z])|\/|\(|\)|\^\s*(?:\{\s*-?\d\s*\}|-?\d)|\^\s*\{?\s*\\circ\s*\}?`;
+const MEASURED_UNIT_TAIL = new RegExp(`^(?:${MEASURED_UNIT_PIECE})+$`);
+const MEASURED_UNIT_INK = /[A-Za-zµμΩÅ°]/;
+const PERCENT_SIGN_ONLY = /^\\?%$/;
+
+/**
+ * A measured-quantity response as written: `{ numeral, percent, unit }` for
+ * a numeral with nothing, a percent sign, or a unit after it; `{ value }`
+ * (an exact-decimal numeral of what it evaluates to) for any other writing
+ * the engine can evaluate to one real number; `{ verdict }` when it cannot.
+ */
+function readMeasuredWriting(raw) {
+  const unlabelled = String(raw ?? '')
+    .replace(APPROX_PREFIX, (match, label) => (label ? `${label}=` : ''))
+    .replace(CURRENCY_PREFIX, '$1');
+  let text = bareLatex(unlabelled).replace(LEADING_VARIABLE_LABEL, '').trim();
+  // A compound unit typed with a solidus: MathLive turns `/` into a fraction
+  // over everything before it, so `0.674 mol/L` arrives as
+  // `\\frac{0.674mol}{L}` and `-802 kJ/mol` as `-\\frac{802kJ}{mol}`. A
+  // fraction whose denominator is unit ink alone, over a numerator that
+  // opens with a numeral, is that numeral with its unit — read back as typed.
+  const unitFraction = text.match(/^([+-]?)\s*\\[tdc]?frac\s*(?=\{)/);
+  if (unitFraction) {
+    const top = readBalancedGroup(text, unitFraction[0].length);
+    const bottom = top && text[top[1]] === '{' ? readBalancedGroup(text, top[1]) : null;
+    if (bottom && MEASURED_UNIT_TAIL.test(bottom[0]) && MEASURED_UNIT_INK.test(bottom[0]) && readNumeral(top[0]) !== null) {
+      text = `${unitFraction[1]}${top[0]}/${bottom[0]}${text.slice(bottom[1])}`;
+    }
+  }
+  const numeral = readNumeral(text);
+  if (numeral !== null) {
+    const rest = numeral.rest.trim();
+    if (rest === '') return { numeral, percent: false, unit: false };
+    if (PERCENT_SIGN_ONLY.test(rest)) return { numeral, percent: true, unit: false };
+    if (MEASURED_UNIT_TAIL.test(rest) && MEASURED_UNIT_INK.test(rest)) return { numeral, percent: false, unit: true };
+  }
+  let expr;
+  try {
+    expr = parseLatex(text);
+  } catch {
+    return { verdict: 'invalid' };
+  }
+  if (!expr.isValid) return { verdict: 'invalid' };
+  if (expr.unknowns.length !== 0) return { verdict: 'incorrect' };
+  const evaluated = unchoppedValue(expr);
+  if (!Number.isFinite(evaluated?.re) || Math.abs(evaluated.im ?? 0) !== 0) return { verdict: 'incorrect' };
+  const value = numeralFromNumber(evaluated.re);
+  return value === null ? { verdict: 'incorrect' } : { value };
+}
+
+/**
+ * The verdict for a response to a measured-quantity key, as
+ * `{ verdict, reason? }`, or null when the form declares no `sig-figs` or
+ * the key is not one nonzero numeral (then the ordinary grading applies).
+ */
+function measuredVerdict(studentRaw, answerRaw, options = {}) {
+  const spec = measuredSpec(options.form);
+  if (spec === null || options.unordered === true || options.mode === 'unordered') return null;
+  const key = readNumeral(bareLatex(answerRaw ?? ''));
+  if (key === null || key.mantissa === 0n) return null;
+  const keyRest = key.rest.trim();
+  const keyPercent = PERCENT_SIGN_ONLY.test(keyRest);
+  if (keyRest !== '' && !keyPercent) return null;
+
+  if (!preprocess(studentRaw ?? '')) return { verdict: 'empty' };
+  if (String(studentRaw).includes('\\placeholder')) return { verdict: 'invalid' };
+  const writing = readMeasuredWriting(studentRaw);
+  if (writing.verdict) return writing;
+  if (writing.value) {
+    // A calculation left unfinished: right when its value, rounded to the
+    // key's figures, sits within the allowance. The evaluation shows however
+    // many digits it happens to (`\frac{1}{2}` shows one), so it is read as
+    // a readout to be rounded, never as a count of figures.
+    const readout = { ...writing.value, sigMin: spec.figures + 1, sigMax: spec.figures + 1 };
+    return compareMeasured(readout, key, spec).verdict === 'incorrect'
+      ? { verdict: 'incorrect' }
+      : { verdict: 'form', reason: 'unworked' };
+  }
+  const compared = compareMeasured(writing.numeral, key, spec);
+  if (compared.verdict !== 'correct') return compared;
+  // A right number with its unit (or a percent sign the key does not carry)
+  // is the right number labelled: the question names the unit.
+  if (writing.unit || (writing.percent && !keyPercent)) return { verdict: 'unit' };
+  if (keyPercent && !writing.percent) return { verdict: 'form', reason: 'percent' };
+  const written = `${writing.numeral.written}${writing.percent ? '\\%' : ''}`;
+  if (spec.rest && !checkForm(written, spec.rest, answerRaw)) return { verdict: 'form', reason: 'shape' };
+  return { verdict: 'correct' };
+}
+
+/**
+ * What is wrong with declaring `spec` on the key `answerRaw` as a measured
+ * quantity, as a sentence for the content lint — or null when nothing is, or
+ * when the form names neither token. The pairing rules live here, beside the
+ * grading they protect, so the lint cannot drift from what checkAnswer reads:
+ *
+ *   - `sig-figs:<n>` and `last-digit:<k>` are declared together. The
+ *     allowance is the one judgment the tokens ask of an author (is the last
+ *     digit determined, or uncertain?), so neither value is a default.
+ *   - One significant figure has no last digit to spare: `sig-figs:1` takes
+ *     `last-digit:0`.
+ *   - The key is ONE nonzero numeral — a plain decimal or `a\times10^{n}`,
+ *     with a `\%` only under `percent` — graded in order. A list, a tuple,
+ *     or an expression falls back to the ordinary 1e-9 comparison, where the
+ *     tokens would look declared and grade nothing.
+ */
+export function measuredKeyProblem(answerRaw, spec, { mode } = {}) {
+  const { tokens } = parseAnswerForm(spec);
+  const figures = tokens.filter((token) => SIG_FIGS_TOKEN.test(token));
+  const allowance = tokens.filter((token) => LAST_DIGIT_TOKEN.test(token));
+  if (figures.length === 0 && allowance.length === 0) return null;
+  if (figures.length !== 1 || allowance.length !== 1) {
+    return 'a measured quantity declares exactly one `sig-figs:<n>` and one `last-digit:<k>` together — `last-digit:0` when the last digit is determined (a rounding drill, arithmetic on printed numbers), `last-digit:1` when it is the uncertain digit of a result computed from measured data';
+  }
+  if (figures[0] === 'sig-figs:1' && allowance[0] !== 'last-digit:0') {
+    return '`sig-figs:1` has no last digit to spare — one unit of the only figure is a different answer; declare `last-digit:0`';
+  }
+  if (mode === 'unordered') return '`sig-figs` grades one number; it cannot be declared with answerMode="unordered"';
+  const key = readNumeral(bareLatex(answerRaw ?? ''));
+  const rest = key === null ? null : key.rest.trim();
+  if (key === null || key.mantissa === 0n || (rest !== '' && !PERCENT_SIGN_ONLY.test(rest))) {
+    return '`sig-figs` grades ONE nonzero number — a decimal or `a\\times10^{n}` — so a list, a pair, a labelled or an expression key cannot declare it; give each quantity its own fill-in';
+  }
+  if (rest !== '' && !tokens.includes('percent')) {
+    return 'a `sig-figs` key that ends in `\\%` declares `percent` too, or drops the sign and names the percent in the question';
+  }
+  return null;
+}
+
 export function checkAnswer(studentRaw, answerRaw, options = {}) {
+  const measured = measuredVerdict(studentRaw, answerRaw, options);
+  if (measured !== null) return measured.verdict;
   const family = integerFamilyVerdict(studentRaw, answerRaw, options);
   if (family !== null) return family;
   // A ± response is the set of its two branches (plusMinusExpansion). A key
