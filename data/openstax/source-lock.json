@@ -143,6 +143,31 @@
           "authoringStatus": "complete"
         }
       }
+    },
+    "chemistry-bundle": {
+      "repository": "https://github.com/openstax/osbooks-chemistry-bundle",
+      "gitUrl": "https://github.com/openstax/osbooks-chemistry-bundle.git",
+      "branch": "main",
+      "commit": "cf857abfecc7af366e67bd5cee1cc85f6d26e6c7",
+      "commitDate": "2026-11-06T00:20:42Z",
+      "sourceDir": "sources/openstax/osbooks-chemistry-bundle",
+      "moduleScope": "mapped-collections",
+      "license": {
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International",
+        "spdx": "CC-BY-NC-SA-4.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      },
+      "books": {
+        "chemistry": {
+          "sourceSlug": "chemistry-2e",
+          "collectionId": "col26069",
+          "collectionPath": "collections/chemistry-2e.collection.xml",
+          "contentPath": "content/physical-sciences/chemistry",
+          "authoredBaselineCommit": "7d41ed008e9b83a6690c09c26a16f63f96046ec0",
+          "authoredBaselineConfidence": "inferred-from-local-pdf-metadata",
+          "authoringStatus": "scaffolded"
+        }
+      }
     }
   }
 }

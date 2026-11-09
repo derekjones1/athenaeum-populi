@@ -6,7 +6,7 @@ applies to Claude sessions exactly as written.
 For content work read `docs/authoring-playbook.md` — the subject-neutral
 core — plus the subject playbook under `docs/subjects/` (`math.md`, or
 `life-sciences.md` plus the book's `biology.md` / `microbiology.md` /
-`anatomy-physiology.md`); for cumulative assessments also read the
+`anatomy-physiology.md`, or `chemistry.md`); for cumulative assessments also read the
 subject's edition, `docs/knowledge-check-playbook-math.md` or
 `docs/knowledge-check-playbook-life-sciences.md`; for the OpenStax math books
 follow `docs/source/openstax-source-workflow.md` and treat the pinned CNXML

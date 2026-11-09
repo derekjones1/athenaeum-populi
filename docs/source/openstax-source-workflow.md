@@ -30,6 +30,11 @@ reviewed commit. Every book belongs to exactly one bundle.
   key is plain `anatomy-physiology` and the whole `modules/` tree is
   checked out (`moduleScope: "bundle"`, 198 modules: a preface, 28 chapter
   introductions, and 169 numbered sections; no appendices).
+- [`openstax/osbooks-chemistry-bundle`](https://github.com/openstax/osbooks-chemistry-bundle)
+  — Chemistry 2e. The bundle also ships Chemistry: Atoms First 2e, so the
+  checkout is scoped to the modules the Chemistry 2e collection references
+  (`moduleScope: "mapped-collections"`, 149 modules: a preface, 21 chapter
+  introductions, 114 numbered sections, and 13 appendices).
 
 Books carry an `authoringStatus`. `complete` means every upstream numbered
 section is authored locally and chapter-by-chapter parity is enforced;
@@ -37,8 +42,9 @@ section is authored locally and chapter-by-chapter parity is enforced;
 pages are still being written, so parity is only checked for what exists,
 and `build-map`/`verify-map` print the partial count on the book's own line
 (`k/N chapters, k/N sections mapped`), never folded silently into a
-"0 errors" run. Every pinned book is now `complete`; Anatomy and Physiology 2e
-was the last, on November 2, 2026.
+"0 errors" run. Seven books are `complete` (Anatomy and Physiology 2e was the
+last, on November 2, 2026); Chemistry 2e is `scaffolded`, pinned November 9,
+2026.
 
 Every book's lock entry also carries a `contentPath` (for example
 `content/math/precalculus`, `content/life-health-sciences/biology`): the
@@ -100,7 +106,8 @@ metadata `<md:abstract>` (the math bundles, Biology 2e) or, when that element
 is empty, in a leading `<section class="learning-objectives">` (Microbiology),
 and it excludes every end-matter section class any pinned bundle uses
 (`summary`, `multiple-choice`, `fill-in-the-blank`, `true-false`, `matching`,
-`short-answer`, `critical-thinking`, `interactive-exercise`, `references`, …)
+`short-answer`, `critical-thinking`, `interactive-exercise`, `references`,
+`exercises`, `key-equations`, …)
 from the core-heading comparison. A new bundle whose modules use a class not in that list shows up as
 `heading-needs-review` on every section; add the class to
 `EXCLUDED_CORE_SECTION_CLASSES` in `tools/lib/openstax-source.mjs` rather

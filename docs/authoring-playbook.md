@@ -16,6 +16,9 @@ life-health-sciences shelf, under which each book has a short delta file —
 [`microbiology.md`](subjects/microbiology.md), and
 [`anatomy-physiology.md`](subjects/anatomy-physiology.md) — recording its
 source, its CNXML-to-page mappings, and where it differs from the baseline.
+[`chemistry.md`](subjects/chemistry.md) is the scan-stage file for Chemistry
+2e, the first physical-sciences book; its authoring rules are written by its
+pilot.
 A subject playbook adds notation, media, and exercise-type rules on top of
 this core, and wins where it differs; a book file wins over its subject
 playbook. Read this core first, then the subject playbook.

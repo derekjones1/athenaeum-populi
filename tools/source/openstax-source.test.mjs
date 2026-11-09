@@ -190,10 +190,10 @@ test('every mapped module id is collected for a collection-scoped sparse checkou
 
 test('the source lock pins one upstream bundle per book', () => {
   const lock = loadSourceLock(repositoryRoot);
-  assert.deepEqual(lock.bundleKeys, ['prealgebra-bundle', 'college-algebra-bundle', 'biology-bundle', 'microbiology', 'anatomy-physiology']);
+  assert.deepEqual(lock.bundleKeys, ['prealgebra-bundle', 'college-algebra-bundle', 'biology-bundle', 'microbiology', 'anatomy-physiology', 'chemistry-bundle']);
   assert.deepEqual(
     [...lock.books.keys()].sort(),
-    ['anatomy-physiology', 'biology', 'elementary-algebra', 'intermediate-algebra', 'microbiology', 'precalculus', 'prealgebra'].sort(),
+    ['anatomy-physiology', 'biology', 'chemistry', 'elementary-algebra', 'intermediate-algebra', 'microbiology', 'precalculus', 'prealgebra'].sort(),
   );
   for (const [book, config] of lock.books) {
     assert.ok(lock.bundles[config.bundleKey], `${book} resolves to a declared bundle`);
@@ -224,6 +224,12 @@ test('the source lock pins one upstream bundle per book', () => {
   assert.equal(lock.books.get('anatomy-physiology').authoringStatus, 'complete');
   assert.equal(lock.books.get('anatomy-physiology').contentPath, 'content/life-health-sciences/anatomy-physiology');
   assert.equal(lock.bundles['anatomy-physiology'].moduleScope, 'bundle');
+  // Chemistry 2e: the first book on the physical-sciences shelf, pinned
+  // November 9, 2026. Its upstream repository also ships Chemistry: Atoms
+  // First 2e, so the checkout is scoped to the Chemistry 2e collection.
+  assert.equal(lock.books.get('chemistry').bundleKey, 'chemistry-bundle');
+  assert.equal(lock.books.get('chemistry').contentPath, 'content/physical-sciences/chemistry');
+  assert.equal(lock.bundles['chemistry-bundle'].moduleScope, 'mapped-collections');
 });
 
 test('loadSourceLock rejects a book missing contentPath, naming the book', () => {
@@ -308,7 +314,7 @@ test('the Precalculus book is mapped complete, every upstream section authored',
   });
   assert.deepEqual(
     Object.keys(result.map.bundles).sort(),
-    ['anatomy-physiology', 'biology-bundle', 'college-algebra-bundle', 'microbiology', 'prealgebra-bundle'],
+    ['anatomy-physiology', 'biology-bundle', 'chemistry-bundle', 'college-algebra-bundle', 'microbiology', 'prealgebra-bundle'],
   );
 });
 

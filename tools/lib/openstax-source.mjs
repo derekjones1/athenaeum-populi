@@ -18,7 +18,8 @@ export { parseFrontmatter };
 // (its `<md:abstract/>` is empty — see `parseModuleXml`) and adds four
 // end-matter exercise classes of its own; Anatomy and Physiology 2e adds
 // `interactive-exercise` (Interactive Link Questions) and `references` (a
-// citation list some sections end with). A class missing here surfaces as a
+// citation list some sections end with); Chemistry 2e adds `exercises` (its
+// end-of-section set) and `key-equations`. A class missing here surfaces as a
 // `heading-needs-review` on every section of the book, so keep this list the
 // union of every bundle's classes, not the current bundle's.
 const EXCLUDED_CORE_SECTION_CLASSES = new Set([
@@ -37,6 +38,8 @@ const EXCLUDED_CORE_SECTION_CLASSES = new Set([
   'short-answer',
   'interactive-exercise',
   'references',
+  'exercises',
+  'key-equations',
 ]);
 
 const MATCH_STOPWORDS = new Set([

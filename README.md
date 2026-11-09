@@ -40,7 +40,8 @@ index at `public/pagefind/`.
 Follow [docs/authoring-playbook.md](docs/authoring-playbook.md) — the
 subject-neutral core — plus the subject playbook under
 [docs/subjects/](docs/subjects/) for the book (`math.md`, or `life-sciences.md`
-plus the book's own `biology.md` / `microbiology.md` / `anatomy-physiology.md`) for
+plus the book's own `biology.md` / `microbiology.md` / `anatomy-physiology.md`,
+or `chemistry.md`) for
 sections, and the subject's knowledge-check playbook —
 [docs/knowledge-check-playbook-math.md](docs/knowledge-check-playbook-math.md)
 or
@@ -48,8 +49,9 @@ or
 — for cumulative knowledge checks. Content lives under `content/` in the
 hierarchy Subject → Book → Chapter → Section.
 
-Every book — the four OpenStax math books, Biology 2e, and OpenStax
-Microbiology, and Anatomy and Physiology 2e, all complete — has a pinned,
+Every book — the four OpenStax math books, Biology 2e, OpenStax
+Microbiology, and Anatomy and Physiology 2e, all complete, and Chemistry 2e,
+pinned and not yet authored — has a pinned,
 report-only source reconciliation workflow. See
 [docs/source/openstax-source-workflow.md](docs/source/openstax-source-workflow.md) before
 changing a book. `npm run source:verify` checks the committed section map

@@ -21,7 +21,12 @@ six units, 169 sections); its rules are in
 book-specific rules (Interactive Link Questions, References), and that its
 pin postdates its PDF; a chapter is run from
 `docs/briefs/anatomy-physiology/run.md` (the parent's recipe) with the
-agent briefs beside it — versioned there, not re-derived per session. Dated
+agent briefs beside it — versioned there, not re-derived per session.
+Chemistry 2e is `scaffolded` (21 flat chapters, 114 sections, pinned
+November 9, 2026; the first book under `content/physical-sciences/`): no
+section is authored, and `docs/subjects/chemistry.md` records the scan, the
+decisions made, and the engine work that must land before its chapter 1
+pilot. Dated
 narrative — retrospectives, per-chapter logs, closed programmes — lives in
 `docs/history/`, one file per playbook; the playbooks keep only what is
 operative. Closed programmes that no run reads any more — the re-review
@@ -49,9 +54,10 @@ campaign, the figure-alt passes, and their kit — are archived under
 - The lock pins one commit per upstream bundle: `prealgebra-bundle` for the
   three algebra books, `college-algebra-bundle` for Precalculus 2e,
   `biology-bundle` for Biology 2e, `microbiology` for OpenStax
-  Microbiology, and `anatomy-physiology` for Anatomy and Physiology 2e (the
-  last two are single-book repositories, e.g. `osbooks-microbiology`, so
-  their keys have no `-bundle` suffix). Each lock entry carries a
+  Microbiology, `anatomy-physiology` for Anatomy and Physiology 2e (those
+  two are single-book repositories, e.g. `osbooks-microbiology`, so
+  their keys have no `-bundle` suffix), and `chemistry-bundle` for
+  Chemistry 2e. Each lock entry carries a
   `contentPath`, so a book need not live under `content/math` (Biology 2e:
   `content/life-health-sciences/biology`). A book with
   `authoringStatus: complete` — every pinned book —

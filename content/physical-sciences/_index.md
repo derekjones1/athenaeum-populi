@@ -1,7 +1,9 @@
 ---
 title: Physical Sciences
-description: The physical sciences shelf — openly licensed, interactive textbooks. First books coming soon.
+description: The physical sciences shelf — openly licensed, interactive textbooks, starting with Chemistry.
 toc: false
+# Subject landing = a shelf of book cards, no sidebar (the sidebar appears once
+# you open a book), matching the Math shelf.
 sidebar:
   hide: true
 aliases:
@@ -9,10 +11,15 @@ aliases:
   - /physics/
 ---
 
-No books on this shelf yet. The library is starting with mathematics, and
-the physical sciences are among the first subjects planned after that.
+The physical sciences shelf starts with a two-semester general chemistry
+course, which is being written now; physics, astronomy, and earth science
+are to follow.
+Every book here follows the same rules as the rest of the library: openly
+licensed sources, interactive exercises on every page, free forever, no
+accounts.
 
-This shelf will hold physics, chemistry, astronomy, and earth science.
+## Available books
 
-Everything added here will follow the same rules as the rest of the library:
-openly licensed sources, interactive exercises, free forever, no accounts.
+{{< cards >}}
+  {{< card link="/physical-sciences/chemistry" title="Chemistry" subtitle="A two-semester general chemistry course, being written now — matter and measurement, atoms and bonding, stoichiometry, states of matter, kinetics, equilibrium, thermodynamics, and electrochemistry." >}}
+{{< /cards >}}
