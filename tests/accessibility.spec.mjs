@@ -59,6 +59,18 @@ const REPRESENTATIVE_PAGES = [
       '06-mathematical-treatment-of-measurement-results/',
   },
   {
+    // A reference page: a long data table with bold group rows, cells of
+    // KaTeX, table footnotes, and captioned Lewis-structure figures.
+    name: 'chemistry appendix (data table, Lewis structures)',
+    path: '/physical-sciences/chemistry/appendices/h-ionization-constants-of-weak-acids/',
+  },
+  {
+    name: 'chemistry appendix (403-row grouped table)',
+    path:
+      '/physical-sciences/chemistry/appendices/' +
+      'g-standard-thermodynamic-properties-for-selected-substances/',
+  },
+  {
     name: 'biology unit 1 knowledge check (chapters 01–03)',
     path: '/life-health-sciences/biology/knowledge-check-01-03/',
   },

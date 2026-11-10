@@ -24,12 +24,16 @@ pin postdates its PDF; a chapter is run from
 agent briefs beside it — versioned there, not re-derived per session.
 Chemistry 2e is `in-progress` (21 flat chapters, 114 sections, pinned
 November 9, 2026; the first book under `content/physical-sciences/`):
-chapter 1 is authored — the book's pilot — and `docs/subjects/chemistry.md`
+chapter 1 is authored — the book's pilot — and so are its thirteen
+appendices, the library's first reference pages
+(`appendices/<letter>-<slug>.md`, generated from the CNXML's tables and
+held to them cell by cell); `docs/subjects/chemistry.md`
 holds the scan, the page skeleton, the exercise rules (only source-keyed
 exercises reach the page), the notation, measured-quantity grading
 (`\ce{…}` formulas in math, `sig-figs:<n> last-digit:<k>` fill-ins), typed
 formulas and equations (`textin` with `answerForm="formula"` or
-`"equation"`), and
+`"equation"`), the appendix rules, the Knowledge Check quota (two to three
+items per section), and
 the figure rules; a chapter is run from `docs/briefs/chemistry/run.md` with
 the agent briefs beside it. Dated
 narrative — retrospectives, per-chapter logs, closed programmes — lives in
@@ -120,6 +124,17 @@ campaign, the figure-alt passes, and their kit — are archived under
   stale). `--min-covered` is the source's own unit total, so covered = total
   means nothing is missing; it moves only when the source pin moves. Skips absent
   bundles like `verify:source-keys` (part of `npm test`)
+- `npm run verify:source-tables` — hold every table cell of a reference page
+  (a book's `appendices/`, mapped by `build-map`) to the pinned CNXML: each
+  source row is a page row, in order, cell for cell, compared with the
+  typesetting taken away (`10<sup>−27</sup>` is `$10^{-27}$`) and, in a text
+  cell, with sub- and superscripts told apart. A cell written differently on
+  purpose — a corrected source defect, with its erratum — is listed in the
+  tool's `TABLE_NOTES`, and a listed difference the page no longer has fails
+  as stale. `--min-cells` is a FLOOR (package.json owns the number; raise it
+  when reference pages are added). Skips an absent bundle like
+  `verify:source-keys` (part of `npm test`). The pages' tables are written
+  by `node tools/source/appendix-draft.mjs`, never typed
 - `npm run verify:fillin-residual` — refuse a math `fillin` that has NO third
   reading: `verify:answers` cannot parse its ask, no source solution confirms
   it (unmatched, figure-only, symbolic, unkeyed, or a knowledge-check page

@@ -34,7 +34,9 @@ finding even when the final answer is right.
 
 1. **The same book first:** another module of
    `sources/openstax/osbooks-chemistry-bundle/modules/` (its glossary, its
-   tables, the appendices `m68859`–`m68871`).
+   tables, the appendices `m68859`–`m68871` — whose corrected cells are
+   listed in `TABLE_NOTES` of `tools/verify/verify-source-tables.mjs`; an
+   appendix value the page corrected is the page's, not the module's).
 2. **The pin postdates the PDF** (`docs/subjects/chemistry.md` "Source and
    authority"): a PDF/CNXML difference is checked with `git`-free means
    only — read both and report it; the parent runs the diff.

@@ -44,6 +44,16 @@ test('weights are derived from what exists: a new check moves only the chapters 
   assert.equal(spawnSync(process.execPath, [SCRIPT, 'weights', dir], { encoding: 'utf8' }).status, 0);
 });
 
+test('a book\'s appendices take the last weight, after every chapter and check', () => {
+  const dir = book([1, 2], [[1, 2, 3]]);
+  mkdirSync(path.join(dir, 'appendices'));
+  writeFileSync(path.join(dir, 'appendices', '_index.md'), '---\ntitle: Appendices\nweight: 2\n---\n');
+  const plan = plannedWeights(dir).map((e) => [path.relative(dir, e.file).replace('/_index.md', ''), e.current, e.target]);
+  assert.deepEqual(plan.at(-1), ['appendices', 2, 4], 'two chapters and a check come first');
+  execFileSync(process.execPath, [SCRIPT, 'weights', dir, '--write']);
+  assert.match(readFileSync(path.join(dir, 'appendices', '_index.md'), 'utf8'), /^weight: 4$/m);
+});
+
 test('a check whose last chapter is not authored yet is refused', () => {
   assert.throws(() => plannedWeights(book([1, 2], [[1, 4, 5]])), /no chapter ends where knowledge-check-01-04\.md does/);
 });

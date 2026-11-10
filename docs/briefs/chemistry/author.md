@@ -150,7 +150,11 @@ goes wrong.
   factor shows `$10^{-2}$` with no leading ×. Inside math the house lint
   groups a number of four or more digits (`5{,}371`) and bans `\dfrac`: a
   rule in this brief or the run facts that a lint refuses is REPORTED, and
-  the lint wins until the parent rules.
+  the lint wins until the parent rules. **The `\dfrac` ban is on watch**:
+  where an inline `\frac` makes a question worse or loses content — digits
+  you cannot tell apart on the rendered page, a fraction of fractions, a
+  stem a learner would misread — keep `\frac` and REPORT the item (line,
+  the fraction, what is lost); the parent logs it for the ban's review.
 - **Multiple choice** only over a set the stem itself names, options in the
   stem's order, the key the source's. Never an invented distractor.
 - **`selfcheck`** carries the source solution as the model answer, its
@@ -239,11 +243,15 @@ goes wrong.
   re-deriving the item against the CNXML; the note says where the key comes
   from (`source exercise <id> part (b)`, `Check Your Learning of example
   <id>`, `glossary recall: <term>`, `cloze from summary sentence "…"`).
+- **A reference to an appendix is a link** to its page in this book
+  (`docs/subjects/chemistry.md`, page skeleton rule 9; the run facts list
+  the appendices your module links and their paths). Every other
+  cross-reference stays plain text.
 - **Final message, fifteen lines at most:** counts (figures; items by kind;
   key terms; keyed exercises carried and unkeyed omitted), the
   `verify-section` tail line, suspected source defects and claim errors
   (count; details in the ledger), every departure from the source in one
-  line each, and — most important for this pilot — **every place the
+  line each, every fraction the `\dfrac` ban made hard to read, and — most important for this pilot — **every place the
   playbook, this brief, the run facts, the lint, or the grader was wrong,
   silent, or awkward for your module**, with the exact item. Do not paste
   the ledger.

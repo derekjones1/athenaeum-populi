@@ -4,6 +4,552 @@
   "bundle": "chemistry-bundle",
   "commit": "cf857abfecc7af366e67bd5cee1cc85f6d26e6c7",
   "figures": {
+    "CNX_Chem_00_AA_PeriodicPU_img": {
+      "source": "media/CNX_Chem_00_AA_PeriodicPU_img.jpg",
+      "sourceSha256": "61f10a4828bd6f0b733b5626ec69c261a9b3e2cf559e27348135ed62fd35c575",
+      "module": "m68859",
+      "kind": "photo",
+      "width": 1300,
+      "height": 1097,
+      "variants": [
+        {
+          "width": 800,
+          "height": 675,
+          "file": "CNX_Chem_00_AA_PeriodicPU_img-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 1097,
+          "file": "CNX_Chem_00_AA_PeriodicPU_img-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The Periodic Table of Elements, showing all 118 elements arranged in 18 groups and 7 periods. Per a provided key, metals are shaded yellow, metalloids purple, and nonmetals peach. Element symbols are printed in black for solids, blue for liquids, and red for gases at room temperature. An inset shows the layout of an individual element box, with atomic number at top left, symbol in the center, atomic mass below, and element name at the bottom. The lanthanide series (elements 57–71) and actinide series (elements 89–103) are displayed in separate rows below the main table.",
+      "caption": ""
+    },
+    "CNX_Chem_00_BB_Dependence_img": {
+      "source": "media/CNX_Chem_00_BB_Dependence_img.jpg",
+      "sourceSha256": "664ca4dc47b685fa9789df1998ffac8b4e3495766f225c387578c4a32dc0d16e",
+      "module": "m68860",
+      "kind": "photo",
+      "width": 1000,
+      "height": 664,
+      "variants": [
+        {
+          "width": 800,
+          "height": 531,
+          "file": "CNX_Chem_00_BB_Dependence_img-800.webp"
+        },
+        {
+          "width": 1000,
+          "height": 664,
+          "file": "CNX_Chem_00_BB_Dependence_img-1000.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A graph is titled “Dependency of Y on X.” The x-axis ranges from 0 to 4.5. The y-axis ranges from 0 to 16. Four points are plotted as a line graph; the points are 1 and 5, 2 and 10, 3 and 7, and 4 and 14.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_00_BB_Function_img": {
+      "source": "media/CNX_Chem_00_BB_Function_img.jpg",
+      "sourceSha256": "a253701a5d513eae66addc8dc04d2924492007ca018d48b35dea89afdf958bf0",
+      "module": "m68860",
+      "kind": "photo",
+      "width": 1000,
+      "height": 786,
+      "variants": [
+        {
+          "width": 800,
+          "height": 628,
+          "file": "CNX_Chem_00_BB_Function_img-800.webp"
+        },
+        {
+          "width": 1000,
+          "height": 786,
+          "file": "CNX_Chem_00_BB_Function_img-1000.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A graph is titled “Y equals x superscript 2 plus 2.” The x-axis ranges from 0 to 4.5. The y-axis ranges from 0 to 20. Four points are plotted as a line graph; the points are 1 and 3, 2 and 6, 3 and 11, and 4 and 18.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_00_EE_Density_img": {
+      "source": "media/CNX_Chem_00_EE_Density_img.jpg",
+      "sourceSha256": "1440d5aef15b357479aa2a1f0401bb2af5d91c77feef41830aea21b4a31733f6",
+      "module": "m68863",
+      "kind": "photo",
+      "width": 975,
+      "height": 698,
+      "variants": [
+        {
+          "width": 800,
+          "height": 572,
+          "file": "CNX_Chem_00_EE_Density_img-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 698,
+          "file": "CNX_Chem_00_EE_Density_img-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A line graph is titled “Density of Water as a Function of Temperature.” The x-axis is titled “Temperature, degrees Celsius,” and the y-axis is titled “Density, Kilograms per cubic meter.” A line connects plot points at the coordinates 0 and 999.8395, 4 and 999.9720, 10 and 999.7026, 15 and 999.1026, 20 and 998.2071, 22 and 997.7735, 25 and 997.0479, 30 and 995.6502, 40 and 992.2, 60 and 983.2, 80 and 971.8, and 100 and 958.4.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_00_EE_LiqWatAbso": {
+      "source": "media/CNX_Chem_00_EE_LiqWatAbso.jpg",
+      "sourceSha256": "56bd6f4bb444bb25ca8e6097e5d81fe5ab4fb8c1cc7c90990fda406da7e783ff",
+      "module": "m68863",
+      "kind": "photo",
+      "width": 1300,
+      "height": 865,
+      "variants": [
+        {
+          "width": 800,
+          "height": 532,
+          "file": "CNX_Chem_00_EE_LiqWatAbso-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 865,
+          "file": "CNX_Chem_00_EE_LiqWatAbso-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A line graph is titled “Water Full-Range Spectral Absorption Curve.” The x-axis is titled “Wavelength” and the y-axis is titled “Absorption ( 1 per meter ).” Evenly spaced tick marks on the x-axis denote 10 nanometers, 100 nanometers, 1 micrometer, 10 micrometers, 100 micrometers, 1 millimeter, and 10 millimeters. Evenly spaced tick marks on the y-axis denote 10 superscript negative two, 10 superscript negative one, 10 superscript zero, 10 superscript one, 10 superscript two, 10 superscript three, 10 superscript four, 10 superscript five, 10 superscript six, 10 superscript seven, and 10 superscript eight. Above the graph, horizontal lines indicate the range of wavelengths for U V, V I S, near I R , mid I R , far I R , and E H F. The graph contains one line that begins at 10 nanometers and a little more than 10 superscript six. Moving from left to right, this line ascends gradually until it reaches a point near 100 nanometers and 10 superscript eight. From this point, the line steeply descends to a point a little more than halfway between 100 nanometers and 1 micrometer, and slightly more than 10 superscript two. This point indicates the end of the range labeled “U V” and the beginning of the range labeled “V I S.” The range labeled “V I S” is shaded with a color spectrum including the full range of Roy G Biv colors. Here, the line briefly descends in the same path as before, and then steeply ascends to a point near 1 micrometer and 10 superscript zero. This point indicates the end of the range labeled “V I S” and the beginning of the range labeled “near I R.” The line continues its steep ascent, with short, abrupt descents in between, until it reaches a point a little more than halfway between 1 micrometer and 10 micrometers, and a little more than 10 superscript six. This point indicates the end of the range labeled “near I R” and the beginning of the range labeled “mid I R.” Here, the line moves steeply and sporadically up and down until it reaches a point a little more than halfway between 10 micrometers and 100 micrometers, and slightly more than 10 superscript five. This point indicates the end of the range labeled “Mid I R” and the beginning of the range labeled “Far I R.” The line descends very gradually to a point slightly more than 1 millimeter and slightly more than 10 superscript four. This point indicates the end of the range labeled “Far I R” and the beginning of the range labeled “E H F.” The line continues its gradual descent to 10 millimeters and slightly more than 10 superscript three. This point indicates the end of the range labeled “E H F.”",
+      "caption": "The plot shows the extent of light absorption versus wavelength for water. Absorption is reported in reciprocal meters and corresponds to the inverse of the distance light may travel through water before its intensity is diminished by 1/ e (~37%)."
+    },
+    "CNX_Chem_00_EE_Vapor_img": {
+      "source": "media/CNX_Chem_00_EE_Vapor_img.jpg",
+      "sourceSha256": "4764b5821c7a1095bf750d6415c939b763a6ec02f367ee3d2fd57feb9061a8a2",
+      "module": "m68863",
+      "kind": "photo",
+      "width": 975,
+      "height": 737,
+      "variants": [
+        {
+          "width": 800,
+          "height": 604,
+          "file": "CNX_Chem_00_EE_Vapor_img-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 737,
+          "file": "CNX_Chem_00_EE_Vapor_img-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A line graph is titled “Vapor Pressure as a Function of Temperature.” The x-axis is titled “Temperature, degrees Celsius,” and the y-axis is titled “Vapor pressure, torr.” A line connects plot points at the coordinates 0 and 4.6, 4 and 6.1, 10 and 9.2, 15 and 12.8, 20 and 17.5, 22 and 19.8, 25 and 23.8, 30 and 31.8, 35 and 42.2, 40 and 55.3, 45 and 71.9, 50 and 92.5, 55 and 118.0, 60 and 149.4, 65 and 187.5, 70 and 233.7, 75 and 289.1, 80 and 355.1, 85 and 433.6, 90 and 525.8, 95 and 633.9, and 100 and 760.0.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_00_EE_WaterpKw_img": {
+      "source": "media/CNX_Chem_00_EE_WaterpKw_img.jpg",
+      "sourceSha256": "aa8770c5b272cb633981b966dd44685a464033f6a6b568a4c74348ab73f30f27",
+      "module": "m68863",
+      "kind": "photo",
+      "width": 975,
+      "height": 737,
+      "variants": [
+        {
+          "width": 800,
+          "height": 604,
+          "file": "CNX_Chem_00_EE_WaterpKw_img-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 737,
+          "file": "CNX_Chem_00_EE_WaterpKw_img-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A line graph is titled “Water pK subscript W as a Function of Temperature.” The x-axis is titled “Temperature, degrees Celsius,” and the y-axis is titled “pK subscript W.” A line connects plot points at the coordinates 0 and 14.95, 5 and 14.74, 10 and 14.54, 15 and 14.33, 20 and 14.17, 25 and 14, 30 and 13.84, 35 and 13.69, 40 and 13.55, 45 and 13.41, 50 and 13.28, 55 and 13.15, 60 and 13.03, 75 and 12.7, and 100 and 12.25.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_00_HH_1sacetic_img": {
+      "source": "media/CNX_Chem_00_HH_1sacetic_img.jpg",
+      "sourceSha256": "bc3ad3d72d55ef4ffbb0f93c2d8e4cc911daa551b3515e16d8e1390ddbf0e29c",
+      "module": "m68866",
+      "kind": "photo",
+      "width": 211,
+      "height": 156,
+      "variants": [
+        {
+          "width": 211,
+          "height": 156,
+          "file": "CNX_Chem_00_HH_1sacetic_img-211.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Lewis structure of acetic acid, an organic compound found in vinegar. It illustrates the arrangement of atoms, bonds, and lone pairs in the molecule.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_00_HH_1sarsenic_img": {
+      "source": "media/CNX_Chem_00_HH_1sarsenic_img.jpg",
+      "sourceSha256": "3b88ed5b94e93cc81314f59bcf9c5137f5ed520266247bd9c945ef01e985d753",
+      "module": "m68866",
+      "kind": "photo",
+      "width": 178,
+      "height": 167,
+      "variants": [
+        {
+          "width": 178,
+          "height": 167,
+          "file": "CNX_Chem_00_HH_1sarsenic_img-178.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Lewis structure of arsenic acid (H3AsO4) showing the central arsenic atom bonded to one oxygen with a double bond and three hydroxyl groups, with lone pairs on oxygen atoms.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_00_HH_1sarsenous_img": {
+      "source": "media/CNX_Chem_00_HH_1sarsenous_img.jpg",
+      "sourceSha256": "f5e120405fc29f0a33757620462369f9d449ec478834ce0f74ce696480990a96",
+      "module": "m68866",
+      "kind": "photo",
+      "width": 169,
+      "height": 158,
+      "variants": [
+        {
+          "width": 169,
+          "height": 158,
+          "file": "CNX_Chem_00_HH_1sarsenous_img-169.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A chemical diagram illustrates the Lewis structure of arsenous acid (H3AsO3), featuring a central arsenic atom single-bonded to three oxygen atoms, each further bonded to a hydrogen atom, and lone pairs on the oxygen atoms.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_00_HH_1sboric_img": {
+      "source": "media/CNX_Chem_00_HH_1sboric_img.jpg",
+      "sourceSha256": "12771e5abf2892002a093b0988f4ec7534da59e2e3ffb5dadb31b759b1d4c43f",
+      "module": "m68866",
+      "kind": "photo",
+      "width": 178,
+      "height": 200,
+      "variants": [
+        {
+          "width": 178,
+          "height": 200,
+          "file": "CNX_Chem_00_HH_1sboric_img-178.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A chemical structure diagram of boric acid, showing a central boron atom bonded to three hydroxyl groups (B(OH)3).",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_00_HH_1scarbonic_img": {
+      "source": "media/CNX_Chem_00_HH_1scarbonic_img.jpg",
+      "sourceSha256": "c0cf22de4376dca4188b6820d12a2d06160c27d51c24231613d0d1944867d8f1",
+      "module": "m68866",
+      "kind": "photo",
+      "width": 156,
+      "height": 119,
+      "variants": [
+        {
+          "width": 156,
+          "height": 119,
+          "file": "CNX_Chem_00_HH_1scarbonic_img-156.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Lewis structure of carbonic acid (H2CO3), showing its covalent bonds and lone pair electrons.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_00_HH_1scyanic_img": {
+      "source": "media/CNX_Chem_00_HH_1scyanic_img.jpg",
+      "sourceSha256": "4bafd0f2f93868464afaa01b8f583945867b8a86fd9fa59ef60de1a83fb2c11b",
+      "module": "m68866",
+      "kind": "photo",
+      "width": 178,
+      "height": 92,
+      "variants": [
+        {
+          "width": 178,
+          "height": 92,
+          "file": "CNX_Chem_00_HH_1scyanic_img-178.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A Lewis structure representation of isocyanic acid (HNCO). This molecular diagram shows a hydrogen atom bonded to a nitrogen atom, which is double-bonded to a carbon atom, which is also double-bonded to an oxygen atom. Lone pairs are present on the nitrogen and oxygen atoms.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_00_HH_1sformic_img": {
+      "source": "media/CNX_Chem_00_HH_1sformic_img.jpg",
+      "sourceSha256": "907a833461ab65c0b6ff34f64eba593b4277435ba14e9cba41b022c728da1737",
+      "module": "m68866",
+      "kind": "photo",
+      "width": 108,
+      "height": 67,
+      "variants": [
+        {
+          "width": 108,
+          "height": 67,
+          "file": "CNX_Chem_00_HH_1sformic_img-108.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Lewis structure of formic acid (HCOOH) with lone pairs shown, illustrating its molecular arrangement and bonding.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_00_HH_1shydrazoi_img": {
+      "source": "media/CNX_Chem_00_HH_1shydrazoi_img.jpg",
+      "sourceSha256": "7a77361a01479a33d62ec51f4825b4fa78c273a1e877d6c4a2075f77b9f66c9f",
+      "module": "m68866",
+      "kind": "photo",
+      "width": 504,
+      "height": 114,
+      "variants": [
+        {
+          "width": 504,
+          "height": 114,
+          "file": "CNX_Chem_00_HH_1shydrazoi_img-504.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Resonance structures of hydrazoic acid (HN3), depicting the delocalization of electrons and formal charges across the nitrogen atoms.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_00_HH_1shydroper_img": {
+      "source": "media/CNX_Chem_00_HH_1shydroper_img.jpg",
+      "sourceSha256": "a7e08b2b507728644ee8e78646941e9c9d2326a8ca92dfaa689af258fd2ac9b6",
+      "module": "m68866",
+      "kind": "photo",
+      "width": 197,
+      "height": 61,
+      "variants": [
+        {
+          "width": 197,
+          "height": 61,
+          "file": "CNX_Chem_00_HH_1shydroper_img-197.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Lewis structure of Hydrogen Peroxide (H2O2), depicting two hydrogen atoms bonded to two oxygen atoms, with each oxygen also featuring two lone pairs of electrons.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_00_HH_1shydrosul_img": {
+      "source": "media/CNX_Chem_00_HH_1shydrosul_img.jpg",
+      "sourceSha256": "d0184c299bd754d1c920cb23f4a7dbde72c2d842db2908a78f1df41c12e48ac3",
+      "module": "m68866",
+      "kind": "photo",
+      "width": 167,
+      "height": 156,
+      "variants": [
+        {
+          "width": 167,
+          "height": 156,
+          "file": "CNX_Chem_00_HH_1shydrosul_img-167.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Lewis structure of the bisulfate ion (HSO4-), showing sulfur double-bonded to two oxygens, single-bonded to a negatively charged oxygen, and single-bonded to a hydroxyl group.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_00_HH_1snitrous_img": {
+      "source": "media/CNX_Chem_00_HH_1snitrous_img.jpg",
+      "sourceSha256": "fabe2753c8c8c6b65c128de71c7fddb8990a41e228b3eed174a10b794cf5a664",
+      "module": "m68866",
+      "kind": "photo",
+      "width": 158,
+      "height": 89,
+      "variants": [
+        {
+          "width": 158,
+          "height": 89,
+          "file": "CNX_Chem_00_HH_1snitrous_img-158.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The Lewis structure of nitrous acid (HNO2) displays single bonds between nitrogen and two oxygen atoms, with one oxygen bonded to a hydrogen. Lone pairs are also shown on the oxygen and nitrogen atoms.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_00_HH_1soxalic_img": {
+      "source": "media/CNX_Chem_00_HH_1soxalic_img.jpg",
+      "sourceSha256": "677f63ecf59e7f2419cc89d08a26360d0322d4aad1e73b26654a9e9987952bbe",
+      "module": "m68866",
+      "kind": "photo",
+      "width": 308,
+      "height": 103,
+      "variants": [
+        {
+          "width": 308,
+          "height": 103,
+          "file": "CNX_Chem_00_HH_1soxalic_img-308.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Lewis structure of oxalic acid, showing two hydroxyl groups and two carbonyl groups. The molecule has a chemical formula of H2C2O4.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_00_HH_1sphospho2_img": {
+      "source": "media/CNX_Chem_00_HH_1sphospho2_img.jpg",
+      "sourceSha256": "2af8c5b1727553a58a28f735ca35560c49ea77c10219759c256e75ed5b037ccf",
+      "module": "m68866",
+      "kind": "photo",
+      "width": 178,
+      "height": 117,
+      "variants": [
+        {
+          "width": 178,
+          "height": 117,
+          "file": "CNX_Chem_00_HH_1sphospho2_img-178.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Lewis structure of phosphorous acid (H3PO3), featuring a central phosphorus atom bonded to three hydroxyl groups, with each oxygen having two lone pairs.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_00_HH_1sphosphor_img": {
+      "source": "media/CNX_Chem_00_HH_1sphosphor_img.jpg",
+      "sourceSha256": "b32bbbe570c0b66cafa676132d63bb5c1a3757f8d25dc8fd188843a3ff486f57",
+      "module": "m68866",
+      "kind": "photo",
+      "width": 197,
+      "height": 203,
+      "variants": [
+        {
+          "width": 197,
+          "height": 203,
+          "file": "CNX_Chem_00_HH_1sphosphor_img-197.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Lewis structure of phosphoric acid (H3PO4), depicting a central phosphorus atom double-bonded to one oxygen and single-bonded to three other oxygen atoms, each of which is bonded to a hydrogen atom.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_00_HH_1ssulfurou_img": {
+      "source": "media/CNX_Chem_00_HH_1ssulfurou_img.jpg",
+      "sourceSha256": "6adf930d0f2c10e8909e9d3561b2547e8babd0f36b7d30a8d0f7bedfd1d45d2f",
+      "module": "m68866",
+      "kind": "photo",
+      "width": 172,
+      "height": 119,
+      "variants": [
+        {
+          "width": 172,
+          "height": 119,
+          "file": "CNX_Chem_00_HH_1ssulfurou_img-172.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Lewis structure of sulfuric acid (H2SO4), showing the central sulfur atom bonded to two hydroxyl groups and one oxygen, along with lone pairs of electrons.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_00_II_lsammonia_img": {
+      "source": "media/CNX_Chem_00_II_lsammonia_img.jpg",
+      "sourceSha256": "b75ffd6c00216d2173c13478116eb30486b69a6f278761ce7d55376fb2db8faf",
+      "module": "m68867",
+      "kind": "photo",
+      "width": 142,
+      "height": 103,
+      "variants": [
+        {
+          "width": 142,
+          "height": 103,
+          "file": "CNX_Chem_00_II_lsammonia_img-142.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The Lewis structure of an ammonia molecule (NH3), showing a central nitrogen atom bonded to three hydrogen atoms and a lone pair of electrons on the nitrogen.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_00_II_lsdimethyl_img": {
+      "source": "media/CNX_Chem_00_II_lsdimethyl_img.jpg",
+      "sourceSha256": "873039a554e955653c14f7165eaced5587ed6f4d5f706567aa4784244b5dbb8d",
+      "module": "m68867",
+      "kind": "photo",
+      "width": 253,
+      "height": 144,
+      "variants": [
+        {
+          "width": 253,
+          "height": 144,
+          "file": "CNX_Chem_00_II_lsdimethyl_img-253.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The structural formula of dimethylamine, (CH3)2NH, a secondary amine. It features a central nitrogen atom bonded to two methyl groups and one hydrogen, along with a lone pair.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_00_II_lsmethylam_img": {
+      "source": "media/CNX_Chem_00_II_lsmethylam_img.jpg",
+      "sourceSha256": "ba0121d89874b211ce6270559c2272cc1d43fe09fa2bd652cc97710cd2e9a825",
+      "module": "m68867",
+      "kind": "photo",
+      "width": 197,
+      "height": 144,
+      "variants": [
+        {
+          "width": 197,
+          "height": 144,
+          "file": "CNX_Chem_00_II_lsmethylam_img-197.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A Lewis structure diagram of methylamine, showing a carbon atom bonded to three hydrogen atoms and a nitrogen atom. The nitrogen atom is bonded to two hydrogen atoms and has one lone pair of electrons.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_00_II_lsphenylam_img": {
+      "source": "media/CNX_Chem_00_II_lsphenylam_img.jpg",
+      "sourceSha256": "81a309c8a37dff5cb03ad0286ffa17a5ce707a371730532aa6934f4499df063b",
+      "module": "m68867",
+      "kind": "photo",
+      "width": 239,
+      "height": 283,
+      "variants": [
+        {
+          "width": 239,
+          "height": 283,
+          "file": "CNX_Chem_00_II_lsphenylam_img-239.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The molecular structure of aniline (C6H5NH2), an aromatic organic compound featuring a benzene ring with an amino (-NH2) group attached.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_00_II_lstrimethy_img": {
+      "source": "media/CNX_Chem_00_II_lstrimethy_img.jpg",
+      "sourceSha256": "784bd1be4cbfbcdef054cf4561afa137632adea3dd6896dd5145a5b72f94ae48",
+      "module": "m68867",
+      "kind": "photo",
+      "width": 239,
+      "height": 228,
+      "variants": [
+        {
+          "width": 239,
+          "height": 228,
+          "file": "CNX_Chem_00_II_lstrimethy_img-239.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The chemical structure of trimethylamine, featuring a central nitrogen atom bonded to three methyl groups and a lone pair of electrons.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
     "CNX_Chem_01_00_DailyChem": {
       "source": "media/CNX_Chem_01_00_DailyChem.jpg",
       "sourceSha256": "1aa4b457cc8e5f1218f165b5b15822357a0fe9342ec2ba27a393be4b8a1a0c6e",

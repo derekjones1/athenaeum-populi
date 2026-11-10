@@ -44,7 +44,8 @@ and `build-map`/`verify-map` print the partial count on the book's own line
 (`k/N chapters, k/N sections mapped`), never folded silently into a
 "0 errors" run. Seven books are `complete` (Anatomy and Physiology 2e was the
 last, on November 2, 2026); Chemistry 2e is `in-progress`, pinned November 9,
-2026, with chapter 1 authored.
+2026, with chapter 1 and its thirteen appendices authored — the first book
+whose appendices are mapped (`verify-map` prints the count on its line).
 
 Every book's lock entry also carries a `contentPath` (for example
 `content/math/precalculus`, `content/life-health-sciences/biology`): the
@@ -71,7 +72,11 @@ What those commands do:
 - `source:verify` works offline. It confirms that every book's local numbered
   section has exactly one committed module mapping, that the map agrees with
   the local paths and `source_section` frontmatter, and that each book's
-  recorded bundle and authoring status match the lock.
+  recorded bundle and authoring status match the lock. An appendix page
+  (`<contentPath>/appendices/<letter>-<slug>.md`, `source_appendix: "G"`) is
+  mapped the same way, to the collection's back-matter module of that
+  letter, in the map's `appendices` list; a book maps all of its appendices
+  or none, and its summary line then ends `, 13/13 appendices`.
 - `source:check` works offline after the fetch. It compares titles,
   objectives, instructional headings, prose traceability, local interaction
   counts, and heuristic Try It prompt matches against the checked-out CNXML.
@@ -160,7 +165,8 @@ not a publishing instruction.
   deliberate. Use `covers: []` with a `covers_note` saying so — there is no
   audit flag for it to adjudicate.
 
-  **Only mapped sections may be named.** `openstax-source.test.mjs` asserts
+  **Only mapped pages may be named** — a numbered section or an appendix
+  page. `openstax-source.test.mjs` asserts
   every decision's `localPath` is in `source-map.json`, and Knowledge
   Check pages are not mapped — a decisions entry naming one fails `npm test`
   at `assert.ok(mapped)`. A cumulative-assessment change that would need a

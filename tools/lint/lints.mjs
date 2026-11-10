@@ -278,7 +278,13 @@ const MEDIA_MANIFEST_DIR = path.join(REPO_ROOT, 'data/media');
  * weight, and a miss points at exactly one section — so the count is exact,
  * not a floor. `autoGraded` mirrors the Practice rule: a section represented
  * only by selfchecks is not tested. A quota book grades words, so it refuses
- * `fillin` and `graphplot` on its Knowledge Checks too.
+ * `fillin` and `graphplot` on its Knowledge Checks too — unless its profile
+ * says `fillins: true`. `perSection` is a number (exactly that many) or
+ * `{ min, max }`: Chemistry 2e's sections differ too much for one count — a
+ * section of one worked calculation, a section of twelve — so its checks
+ * carry two or three items per section (Derek, November 10, 2026), at least
+ * one of them auto-graded, and its keyed answers are numbers, so `fillin`
+ * is allowed there.
  *
  * Exported so the documentation gate can derive the numbers the playbooks
  * state; `options.bookRules` lets a test (or a future book's retrofit run)
@@ -306,7 +312,18 @@ export const BOOK_RULES = Object.freeze({
     practice: { perObjective: 3, perSection: 8, distinctItems: true },
     knowledgeCheck: { perSection: 3, autoGraded: 1 },
   },
+  // Chemistry 2e: the practice floor is the default (the pilot, chapter 1,
+  // met it on every page); the Knowledge Check quota is a range, and its
+  // items may be numeric fill-ins. See docs/subjects/chemistry.md.
+  'physical-sciences/chemistry': {
+    knowledgeCheck: { perSection: { min: 2, max: 3 }, autoGraded: 1, fillins: true },
+  },
 });
+
+/** A Knowledge Check quota's bounds: a number is exact, `{ min, max }` a range. */
+export function quotaBounds(perSection) {
+  return typeof perSection === 'number' ? { min: perSection, max: perSection } : { min: perSection.min, max: perSection.max };
+}
 
 /** The profile for one book, with an override merged key by key over the table. */
 export function bookRulesFor(bookKey, overrides) {
@@ -1473,6 +1490,11 @@ export function lintHugo(src, filename = '', options = {}) {
     .replace(/(`+)([\s\S]*?)\1/g, blank);
   const isKnowledgeCheck = /knowledge-check-\d+-\d+\.md$/.test(filename);
   const isRegularSection = /[/\\]content[/\\][^/\\]+[/\\][^/\\]+[/\\]\d{2}-[^/\\]+[/\\]\d{2}-[^/\\]+\.md$/i
+    .test(filename.replace(/^\.?[/\\]?/, '/'));
+  // A book's reference pages: content/<shelf>/<book>/appendices/<letter>-slug.md.
+  // They carry no objectives and no Practice — nothing on them is graded — and
+  // the same attribution footer as every other book page.
+  const isAppendixPage = /[/\\]content[/\\][^/\\]+[/\\][^/\\]+[/\\]appendices[/\\][a-z]-[^/\\]+\.md$/i
     .test(filename.replace(/^\.?[/\\]?/, '/'));
   // The book's rule profile (practice floors, Knowledge Check quota), keyed
   // "shelf/book" by the one shared derivation.
@@ -3320,6 +3342,17 @@ export function lintHugo(src, filename = '', options = {}) {
     }
   }
 
+  // ---- a bracketed formula read as a Markdown link ------------------------
+  // `[Co(en)₃](ClO₄)₃` is, to Markdown, the link text "Co(en)₃" pointing at
+  // "ClO₄": the page prints a blue "Co(en)₃" and drops the brackets and the
+  // perchlorate. Chemistry 2e's Appendix G has four such salts; the answer
+  // gates read the same characters either way, and only the built site's
+  // link check saw them (November 10, 2026). A destination with a subscript
+  // digit in it is never a URL.
+  for (const m of mediaSrc.matchAll(/(?<!\\)\[[^\]\n]*\]\(([^)\s]*[₀-₉][^)\s]*)\)/g)) {
+    err(m.index, `Markdown reads ${JSON.stringify(m[0])} as a link to ${JSON.stringify(m[1])} — escape the complex's brackets: \\[…\\](…)`);
+  }
+
   // ---- attribution footer: present and real --------------------------------
   // Every book page — a section, a Knowledge Check, a chapter `_index.md` —
   // closes on a `<small>` attribution that links the OpenStax source page
@@ -3335,7 +3368,7 @@ export function lintHugo(src, filename = '', options = {}) {
   {
     const isChapterIndex = /[/\\]content[/\\][^/\\]+[/\\][^/\\]+[/\\][^/\\]+[/\\]_index\.md$/i
       .test(filename.replace(/^\.?[/\\]?/, '/'));
-    if (isRegularSection || isKnowledgeCheck || isChapterIndex) {
+    if (isRegularSection || isKnowledgeCheck || isChapterIndex || isAppendixPage) {
       const smalls = [...mediaSrc.matchAll(/<small>([\s\S]*?)<\/small>/g)];
       const last = smalls.at(-1);
       const body = last ? last[1].trim() : '';
@@ -3389,9 +3422,13 @@ export function lintHugo(src, filename = '', options = {}) {
   // the pages that carry one; the tests exercise the block on fixtures.
   const kcQuota = isKnowledgeCheck ? bookRules.knowledgeCheck : null;
   if (kcQuota) {
-    for (const { index } of [...fillins, ...graphplots]) {
-      err(index, 'fillin/graphplot on a life-sciences Knowledge Check — this book grades words (multiplechoice, textin, sortbins) and rubric\'d selfchecks only');
+    for (const { index } of (kcQuota.fillins ? graphplots : [...fillins, ...graphplots])) {
+      err(index, kcQuota.fillins
+        ? 'graphplot on this book\'s Knowledge Check — its checks grade numbers and words (fillin, multiplechoice, textin, sortbins) and rubric\'d selfchecks only'
+        : 'fillin/graphplot on a life-sciences Knowledge Check — this book grades words (multiplechoice, textin, sortbins) and rubric\'d selfchecks only');
     }
+    const { min: quotaMin, max: quotaMax } = quotaBounds(kcQuota.perSection);
+    const quotaWords = quotaMin === quotaMax ? `exactly ${quotaMin}` : `${quotaMin} to ${quotaMax}`;
     const sectionGroups = [...mediaSrc.matchAll(/^### +(\d+\.\d+)\b.*$/gm)]
       .map((m) => ({ index: m.index, end: m.index + m[0].length, id: m[1] }));
     // A section group ends at the next `###` OR the next `##` (chapter)
@@ -3407,11 +3444,11 @@ export function lintHugo(src, filename = '', options = {}) {
       const limit = limitOf(group.end);
       const within = ({ index }) => index >= group.end && index < limit;
       const count = practiceQuestions.filter(within).length;
-      if (count !== kcQuota.perSection) {
-        err(group.index, `Knowledge Check section \`### ${group.id}\` has ${count} item(s) — this book's quota is exactly ${kcQuota.perSection} per section`);
+      if (count < quotaMin || count > quotaMax) {
+        err(group.index, `Knowledge Check section \`### ${group.id}\` has ${count} item(s) — this book's quota is ${quotaWords} per section`);
       }
       if (autoGradedQuestions.filter(within).length < kcQuota.autoGraded) {
-        err(group.index, `Knowledge Check section \`### ${group.id}\` has no auto-graded item (multiplechoice, textin, or sortbins) — a section of only selfchecks is not tested`);
+        err(group.index, `Knowledge Check section \`### ${group.id}\` has no auto-graded item (${kcQuota.fillins ? 'fillin, ' : ''}multiplechoice, textin, or sortbins) — a section of only selfchecks is not tested`);
       }
     }
 

@@ -92,7 +92,10 @@ cannot resume the old session's ids. Five things the pilot added:
 5. **Landing page** `content/physical-sciences/chemistry/NN-<slug>/_index.md`
    from the intro module, in final form — a Clerk drafts it from chapter
    1's landing as the exemplar; the parent views the splash image at its
-   largest vendored width and writes the alt itself.
+   largest vendored width and writes the alt itself. Then
+   `npm run kc -- weights content/physical-sciences/chemistry --write`:
+   the appendices folder always takes the book's last weight, so a new
+   chapter moves it.
 6. **Run facts** — copy `run-facts-template.md` to `$SP/run-facts.md`. A
    Clerk fills the facts from the inventory and the raw CNXML (every count
    an element count); the parent writes the decisions, each naming the
@@ -100,7 +103,11 @@ cannot resume the old session's ids. Five things the pilot added:
    re-decided. Decisions the parent should expect to make: any keyed-answer
    shape the playbook's "Exercises" table lacks (a formula, a name, a
    balanced equation — chapter 2 meets them first, and the form is open in
-   the playbook); a simulation exercise; a datum a stem assumes.
+   the playbook); a simulation exercise; a datum a stem assumes. The facts
+   also list **every appendix the chapter's modules link**
+   (`grep -o 'document="m688[5-7][0-9]"'` over the modules; `m68859` is
+   Appendix A … `m68871` Appendix M) with the page's site path, since an
+   appendix reference is a link (playbook, page skeleton rule 9).
 7. Copy the briefs unchanged to `$SP/` (`author.md`, `checker.md`,
    `claim-pass.md`, `consistency.md`, `render-reader.md`). A run-specific
    correction to a brief is an edit to the repo copy, then the scratchpad
@@ -214,8 +221,10 @@ the CNXML and the page.
    scaled-down figure at full width fail there and nowhere else.
 7. **Lessons**: a one-line rule into the playbook section it belongs to
    (and both briefs when it is a hint or leak rule); the narrative into
-   `docs/history/chemistry.md`; a lint or test where one can hold it. Then
-   the session memory file.
+   `docs/history/chemistry.md`; a lint or test where one can hold it. Every
+   fraction an author or checker reported under the `\dfrac` watch goes
+   into "The `\dfrac` watch list" there, with its page and line — an empty
+   report is written as "none this chapter". Then the session memory file.
 8. **Commit** the run's own files at a green close-out (Derek, October 24,
    2026), leaving unrelated uncommitted work and saying what was left.
 

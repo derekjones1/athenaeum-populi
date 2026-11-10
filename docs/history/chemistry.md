@@ -208,8 +208,108 @@ form and not a ruling made mid-wave:
   13.6 px (the readers had guessed 9 to 11) and `\dfrac` at 19.4 px,
   pushing the line below it from 28 to about 45 px away; the ban on
   `\dfrac` stands until it is scoped to exercise stems, if at all.
-- **Found and not yet decided**: the Knowledge Check quota and where its
-  items come from (the playbook's "Still open" holds the proposal and the
-  counts); and the thirteen appendices, which are not mapped — the
-  chapters link into them 73 times, 36 of them to Appendix G's
-  thermodynamic data, which chapter 5's keyed exercises read.
+- **Found and left for Derek** (settled the next day — the section below):
+  the Knowledge Check quota and where its items come from; and the
+  thirteen appendices, then unmapped — the chapters link into them 73
+  times, 36 of them to Appendix G's thermodynamic data, which chapter 5's
+  keyed exercises read.
+
+## The appendices, the Knowledge Check quota, and the `\dfrac` watch (November 10, 2026)
+
+Derek settled the three items the session before had left: the Knowledge
+Check quota, the scope of the `\dfrac` ban, and the appendices.
+
+- **Knowledge Check quota: two to three items per section, at least one
+  auto-graded.** The lint's per-book profile took a range for the first
+  time (`perSection: { min: 2, max: 3 }`; the life-sciences books keep
+  their exact three) and lets this book's checks carry `fillin`s, since its
+  keyed answers are numbers. Where the items come from is still the
+  parent's working rule, to be confirmed by the first check (chapters 1–3).
+- **The `\dfrac` ban stays, on watch.** An author or checker who finds that
+  an inline `\frac` makes a question worse or loses content reports the
+  item; the list below is what the ban is reviewed from.
+- **The thirteen appendices were authored as reference pages** — the
+  library's first — under `appendices/`, last in the book's sidebar.
+
+**How the appendix pages were made.** No cell of a data table was typed:
+`tools/source/appendix-draft.mjs` wrote the tables from the CNXML (2,704
+cells: 403 rows of thermodynamic data, 136 half-cell potentials, 121
+solubility products), and `npm run verify:source-tables` holds the finished
+pages to the CNXML cell by cell, with a different normalizer from the one
+the draft tool writes with. The parent wrote Appendix B's prose page by
+hand, read the periodic table's 118 boxes off the image at 2.3× for the
+table of elements under it, and wrote every alt from the artwork. One
+session, no subagents: the work was a tool, a gate, and thirteen pages
+with nothing graded on them.
+
+**What the mechanical readings found in the source** (errata 2914–2922):
+
+- A charge-and-atom balance of every equation in Appendices K and L: six
+  half-reactions in L do not balance as printed — the silver–thiosulfate
+  complex is given 3+ for 3−, and Ce³⁺, Cr³⁺, Pu³⁺, Zr⁴⁺, and [Zn(OH)₄]²⁻
+  are printed without their signs (the MathML took the ion's plus sign for
+  the operator). Corrected on the page with a Source note.
+- The cell comparison: `CaSO4·2H₂O` with its 4 on the line (J); four
+  anions with a space before the charge (G).
+- Reading the rows of Appendix M in order of atomic number: plutonium-239
+  printed twice, the second time with plutonium-240's half-life; element
+  105 printed as Ha. Both corrected with a Source note.
+- An electron count of every Lewis structure in Appendix H: nitrous acid
+  drawn without its N=O double bond and sulfurous acid with a six-electron
+  oxygen; boric acid, carbonic acid, and the hydrogen sulfate ion without
+  some or all lone pairs; formic acid's C–H hydrogen in the red of an
+  ionizable one; phosphorous acid drawn and bolded as triprotic beside its
+  two constants. The images ship as the source's; the alts say what is
+  drawn and a Source note names each.
+- Appendix D mixes the exact 2019 SI values with older ones, so the
+  printed Faraday and gas constants are not the products of the values
+  beside them; the table's `summary` attribute still carries four
+  superseded values. The cells are the source's; a Source note gives the
+  two products.
+
+**What only the built site showed.** Markdown read
+`[Co(en)₃](ClO₄)₃` as a link to "ClO₄" — four salts in Appendix G. Every
+gate that compares characters passed; the internal-link check failed. The
+brackets are escaped, the draft tool writes them so, and the content lint
+refuses a link whose destination holds a subscript digit.
+
+**What only a phone-width browser showed.** Appendices G and L scrolled
+sideways by 15 and 22 px at 390 px — the page, not the table. A table
+scrolls inside its own box, but KaTeX's hidden MathML layer is absolutely
+positioned, and with no positioned ancestor a formula in a scrolled-off
+column was laid out against the page. `position: relative` on every content
+table contains it (site-wide; the browser suite ran whole afterwards). The
+new appendix browser test holds it, with the unnamed-column and
+formula-as-link checks.
+
+**Decisions the parent made**, each in the playbook's "Appendices":
+
+- One `appendices/` folder at the end of the sidebar rather than thirteen
+  top-level entries; titles carry the letter ("Appendix G: …"), since the
+  chapters cite appendices by letter.
+- Grouped tables (G, J) keep the print's shape — one table, the group name
+  in bold on its own row — rather than a table per element: the theme sets
+  tables `display: block`, so forty tables would not share column widths.
+- The Lewis structures of H and I leave the table and follow it, each
+  captioned with its row's name: a figure in a table cell forces the table
+  wider than a phone.
+- Appendix M is listed by atomic number and mass number; the source's
+  order is two column sets on each of two printed pages.
+- Appendix A keeps the image and adds a table of the elements read from
+  it, so an atomic mass can be found by a screen reader and by search.
+- Table footnotes are marked `*`, `†`, `‡`; the source's superscript
+  numerals read as powers beside a unit.
+- A reference to an appendix is a link to its page (chapter 1's two
+  references to Appendix B were linked); every other cross-reference in
+  the book stays plain text.
+- A stale constant is not corrected; a cell that contradicts chemistry or
+  the table itself is.
+
+### The `\dfrac` watch list
+
+Every inline fraction an author or checker reports as hard to read under
+the ban, with its page and line. The ban is reviewed from this list.
+
+- *(none yet — chapter 1 and the appendices reported none; the three
+  rendered-page remarks of the pilot were about size in general, before the
+  measurement, and named no item a learner would misread.)*

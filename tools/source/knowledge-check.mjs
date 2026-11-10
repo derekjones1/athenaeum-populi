@@ -11,8 +11,10 @@
  *       DERIVED from which chapters and checks exist, so landing a check
  *       needs no shift range — the one step earlier runs got wrong (a shift
  *       started at the unit's first chapter instead of the chapter after its
- *       last). Prints every file whose weight differs; `--write` rewrites
- *       them. Exit 1 on a difference without `--write`.
+ *       last). A book's `appendices/` landing takes the weight after every
+ *       chapter and check, so landing a chapter moves it too. Prints every
+ *       file whose weight differs; `--write` rewrites them. Exit 1 on a
+ *       difference without `--write`.
  *   assemble <out-page> --head <file> --foot <file> <chapter-scratch>...
  *       Concatenates the head (frontmatter and the opening callout), the
  *       `## Chapter N` blocks cut from each author's scratch page, and the
@@ -68,6 +70,11 @@ export function plannedWeights(bookDir) {
   const orphans = checks.filter((check) => !placed.has(check.file));
   if (orphans.length) {
     throw new Error(`no chapter ends where ${orphans.map((o) => path.basename(o.file)).join(', ')} does — author the chapter first`);
+  }
+  // A book's appendices follow its last chapter or check, whatever exists:
+  // the sidebar lists them at the end, so their weight is always the last.
+  if (names.some((entry) => entry.isDirectory() && entry.name === 'appendices')) {
+    order.push(path.join(bookDir, 'appendices', '_index.md'));
   }
   return order.map((file, index) => {
     const weight = parseFrontmatter(readFileSync(file, 'utf8')).attributes.weight;

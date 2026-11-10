@@ -6,6 +6,10 @@
  *
  * Hierarchy: content/ (0) → subject/ (1) → book/ (2) → chapter/ (3).
  * Section landings are `_index.md`; sections are `NN-slug.md`.
+ * A book may also carry `appendices/` beside its chapters: a landing that
+ * lists them under `## Appendices`, and one `<letter>-slug.md` page per
+ * appendix declaring `source_appendix: "<LETTER>"`. Its weight is the book's
+ * last, so the sidebar lists it after the final chapter.
  *
  * Zero deps. `npm run validate`. Exits non-zero with a list of problems.
  */
@@ -136,7 +140,7 @@ function checkKnowledgeCheck(file, fm, rel) {
   }
 }
 
-function checkFront(file, { isBookRoot, isChapterIndex, isNumberedSection, isKnowledgeCheck }) {
+function checkFront(file, { isBookRoot, isChapterIndex, isNumberedSection, isKnowledgeCheck, isAppendix = false }) {
   const rel = relative(ROOT, file);
   const src = readFileSync(file, 'utf8');
   const fm = frontOf(src);
@@ -152,6 +156,13 @@ function checkFront(file, { isBookRoot, isChapterIndex, isNumberedSection, isKno
     }
   }
   if (isKnowledgeCheck) checkKnowledgeCheck(file, fm, rel);
+  if (isAppendix) {
+    const letter = basename(file).match(/^([a-z])-/)?.[1]?.toUpperCase();
+    if (!letter) errors.push(`${rel}: an appendix page is named <letter>-<slug>.md (a-the-periodic-table.md)`);
+    else if (!new RegExp(`^source_appendix:\\s*["']${letter}["']\\s*$`, 'm').test(fm)) {
+      errors.push(`${rel}: appendix page needs \`source_appendix: "${letter}"\` (quoted, matching its file name)`);
+    }
+  }
   if (isNumberedSection) {
     if (!/^source_section:\s*["']?\d+\.\d+["']?\s*$/m.test(fm)) errors.push(`${rel}: numbered section needs \`source_section:\` like "1.1"`);
     else {
@@ -174,6 +185,8 @@ function checkFront(file, { isBookRoot, isChapterIndex, isNumberedSection, isKno
 }
 
 const isKC = (n, depth) => depth === 2 && /^knowledge-check-\d{2}-\d{2}$/.test(n);
+const APPENDICES = 'appendices';
+const isAppendices = (n, depth) => depth === 2 && n === APPENDICES;
 
 function checkDir(dir, depth) {
   const rel = relative(ROOT, dir) || 'content';
@@ -191,7 +204,16 @@ function checkDir(dir, depth) {
   const bookIndex = depth === 2 ? join(dir, '_index.md') : null;
   const inProgressBookRoot = Boolean(bookIndex && existsSync(bookIndex)
     && hasKey(frontOf(readFileSync(bookIndex, 'utf8')), 'authoring_status'));
-  const nonIndex = [...folders, ...pages].filter((n) => !isKC(n, depth));
+  const nonIndex = [...folders, ...pages].filter((n) => !isKC(n, depth) && !isAppendices(n, depth));
+  const inAppendices = depth === 3 && basename(dir) === APPENDICES;
+  if (inAppendices) {
+    // Appendix A, B, C … with no letter skipped: the letters are the book's.
+    const letters = pages.map((name) => name.match(/^([a-z])-/)?.[1] ?? '?').sort();
+    letters.forEach((letter, i) => {
+      if (letter !== String.fromCharCode(97 + i)) errors.push(`${rel}: appendix letters ${JSON.stringify(letters)} — expected a, b, c … with none skipped`);
+    });
+    if (folders.length) errors.push(`${rel}: an appendices folder holds pages only, not ${JSON.stringify(folders)}`);
+  }
   const prefixed = nonIndex.filter((n) => /^\d+-/.test(n));
   if (prefixed.length) {
     for (const n of nonIndex) if (!/^\d{2}-/.test(n)) errors.push(`${rel}: '${n}' — siblings are numbered, so this needs a zero-padded prefix too`);
@@ -211,6 +233,10 @@ function checkDir(dir, depth) {
     const missing = ordered.filter((o) => Number.isNaN(o.w));
     for (const m of missing) errors.push(`${rel}/${m.name}: missing \`weight:\` (Hugo sidebar order)`);
     const weights = ordered.filter((o) => !Number.isNaN(o.w)).map((o) => o.w).sort((a, b) => a - b);
+    const appendices = ordered.find((o) => isAppendices(o.name, depth));
+    if (appendices && !Number.isNaN(appendices.w) && appendices.w !== weights.at(-1)) {
+      errors.push(`${rel}/${APPENDICES}: weight ${appendices.w} must be the book's last (${weights.at(-1)}) — the appendices follow the final chapter in the sidebar`);
+    }
     if (inProgressBookRoot) {
       weights.forEach((w, i) => { if (i && w <= weights[i - 1]) errors.push(`${rel}: weights ${JSON.stringify(weights)} — expected strictly increasing (book in progress)`); });
     } else {
@@ -258,24 +284,25 @@ function checkDir(dir, depth) {
     isChapterIndex: false,
     isNumberedSection: depth === 3 && /^\d{2}-/.test(p),
     isKnowledgeCheck: isKC(p, depth),
+    isAppendix: inAppendices,
   });
   if (existsSync(join(dir, '_index.md'))) {
     const indexFile = join(dir, '_index.md');
     checkFront(indexFile, {
       isBookRoot: depth === 2,
-      isChapterIndex: depth === 3,
+      isChapterIndex: depth === 3 && !inAppendices,
       isNumberedSection: false,
       isKnowledgeCheck: false,
     });
 
     if (depth === 2 || depth === 3) {
       const src = readFileSync(indexFile, 'utf8');
-      const heading = depth === 2 ? 'Chapters' : 'Sections';
+      const heading = depth === 2 ? 'Chapters' : inAppendices ? 'Appendices' : 'Sections';
       const listed = orderedLandingTitles(src, heading);
       const expected = depth === 2
         ? expectedChildTitles(dir, folders.filter((name) => /^\d{2}-/.test(name)))
         : expectedChildTitles(dir, entries
-          .filter((entry) => entry.isFile() && /^\d{2}-.*\.md$/.test(entry.name))
+          .filter((entry) => entry.isFile() && (inAppendices ? /^[a-z]-.*\.md$/ : /^\d{2}-.*\.md$/).test(entry.name))
           .map((entry) => entry.name));
       if (listed == null) {
         errors.push(`${rel}/_index.md: missing \`## ${heading}\` list`);

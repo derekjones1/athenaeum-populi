@@ -1700,8 +1700,56 @@ function chemistrySectionRoutes() {
   return routes.sort();
 }
 
+// The book's reference pages (November 10, 2026): long data tables, where
+// the same three failures can happen, and one more — a table wider than a
+// phone must scroll inside its own box, never the page.
+function chemistryAppendixRoutes() {
+  const root = 'public/physical-sciences/chemistry/appendices';
+  return readdirSync(root, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory() && /^[a-z]-/.test(entry.name))
+    .map((entry) => `/physical-sciences/chemistry/appendices/${entry.name}/`)
+    .sort();
+}
+
+test('a Chemistry appendix table scrolls inside its own box, its figures load, and a bracketed formula is not a link', async ({ page }) => {
+  const routes = chemistryAppendixRoutes();
+  expect(routes.length, 'the thirteen appendix pages were discovered in public/').toBe(13);
+  test.setTimeout(60_000 + routes.length * 6_000);
+  let tables = 0;
+  let rows = 0;
+  for (const width of [1280, 390]) {
+    await page.setViewportSize({ width, height: 900 });
+    for (const route of routes) {
+      await gotoBuiltPage(page, route);
+      const audit = await page.evaluate(() => {
+        const content = document.querySelector('.content');
+        const tablesHere = [...content.querySelectorAll('table')];
+        return {
+          tables: tablesHere.length,
+          rows: content.querySelectorAll('tbody tr').length,
+          pageScrolls: document.documentElement.scrollWidth - window.innerWidth,
+          // A link inside a data cell that points at no page of this site and
+          // no other: Markdown's reading of `[Co(en)₃](ClO₄)₃`.
+          formulaLinks: [...content.querySelectorAll('td a')].map((a) => a.getAttribute('href'))
+            .filter((href) => !/^(https?:|\/|#)/.test(href)),
+          emptyCells: tablesHere.flatMap((table) => [...table.querySelectorAll('thead th')])
+            .filter((th) => !th.textContent.trim()).length,
+          katexErrors: content.querySelectorAll('.katex-error').length,
+        };
+      });
+      expect(audit.pageScrolls, `${route} at ${width} px: the page itself scrolls sideways`).toBeLessThanOrEqual(1);
+      expect(audit.formulaLinks, `${route}: a bracketed formula became a link`).toEqual([]);
+      expect(audit.emptyCells, `${route}: a table has an unnamed column`).toBe(0);
+      expect(audit.katexErrors, `${route}: KaTeX could not set a cell`).toBe(0);
+      if (width === 1280) { tables += audit.tables; rows += audit.rows; }
+    }
+  }
+  expect(tables, 'the appendices carry their tables').toBeGreaterThanOrEqual(24);
+  expect(rows, 'and their rows: 403 in Appendix G alone').toBeGreaterThan(1000);
+});
+
 test('on every Chemistry page a display row fits the column, scientific notation stays on one line, and a scaled-down figure stays small', async ({ page }) => {
-  const routes = chemistrySectionRoutes();
+  const routes = [...chemistrySectionRoutes(), ...chemistryAppendixRoutes()];
   expect(routes.length, 'Chemistry section pages were discovered in public/').toBeGreaterThanOrEqual(6);
   test.setTimeout(60_000 + routes.length * 6_000);
   const totals = { displays: 0, kept: 0, keptInStems: 0, scaled: 0 };

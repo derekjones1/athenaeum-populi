@@ -249,3 +249,51 @@ test('content validator: Knowledge Check and landing drift regressions rejected'
 
   console.log('content validator: Knowledge Check and landing drift regressions rejected');
 });
+
+test('content validator: a book\'s appendices folder', () => {
+  try {
+    const book = prepare();
+    const appendices = join(book, 'appendices');
+    const landing = (weight, titles = ['Appendix A: The Periodic Table', 'Appendix B: Essential Mathematics']) => write(
+      join(appendices, '_index.md'),
+      `---\ntitle: Appendices\ndescription: The appendices.\nweight: ${weight}\n---\n\n## Appendices\n\n`
+        + titles.map((title) => `- **${title}** — a reference page.\n`).join(''),
+    );
+    const appendix = (file, letter, title, weight) => write(
+      join(appendices, file),
+      `---\ntitle: "${title}"\ndescription: A reference page.\nsource_appendix: "${letter}"\nweight: ${weight}\n---\n\nBody.\n`,
+    );
+    landing(5);
+    appendix('a-the-periodic-table.md', 'A', 'Appendix A: The Periodic Table', 1);
+    appendix('b-essential-mathematics.md', 'B', 'Appendix B: Essential Mathematics', 2);
+    const good = validate();
+    assert.equal(good.status, 0, `appendices after the last check validate: ${good.stderr}`);
+
+    landing(3);
+    const early = validate();
+    assert.notEqual(early.status, 0, 'appendices that do not come last must fail');
+    assert.match(early.stderr, /appendices: weight 3 must be the book's last/);
+
+    landing(5);
+    appendix('b-essential-mathematics.md', 'C', 'Appendix B: Essential Mathematics', 2);
+    const wrongLetter = validate();
+    assert.notEqual(wrongLetter.status, 0, 'a page whose letter differs from its file name must fail');
+    assert.match(wrongLetter.stderr, /appendix page needs `source_appendix: "B"`/);
+
+    rmSync(join(appendices, 'b-essential-mathematics.md'));
+    appendix('c-units.md', 'C', 'Appendix C: Units', 2);
+    landing(5, ['Appendix A: The Periodic Table', 'Appendix C: Units']);
+    const skipped = validate();
+    assert.notEqual(skipped.status, 0, 'a skipped letter must fail');
+    assert.match(skipped.stderr, /appendix letters \["a","c"\] — expected a, b, c/);
+
+    rmSync(join(appendices, 'c-units.md'));
+    appendix('b-essential-mathematics.md', 'B', 'Appendix B: Essential Mathematics', 2);
+    landing(5, ['Appendix A: The Periodic Table']);
+    const unlisted = validate();
+    assert.notEqual(unlisted.status, 0, 'a landing that omits an appendix must fail');
+    assert.match(unlisted.stderr, /appendices list .* must match authored titles/i);
+  } finally {
+    rmSync(fixture, { recursive: true, force: true });
+  }
+});

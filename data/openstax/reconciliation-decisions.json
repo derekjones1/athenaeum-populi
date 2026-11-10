@@ -6530,6 +6530,50 @@
       "status": "correct-local-source-defect",
       "errataEntry": 2911,
       "rationale": "The Key Equations list writes T_K = °C + 273.15 and T_°C = K − 273.15, a unit symbol standing in for a temperature, and gives the Fahrenheit-to-Celsius equation a multiplication sign the body's form lacks. The page sets the four equations in the forms the section's body gives them (T_K = T_°C + 273.15, T_°C = T_K − 273.15), with a footer clause. Found by the cross-page consistency reading, ruled by the orchestrator, November 9, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/j-solubility-products.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68868",
+      "sourceElementIds": [
+        "fs-idm454814336"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2914,
+      "rationale": "The source types CaSO4·2H₂O with the 4 on the line. The page prints CaSO₄·2H₂O, as every other formula in the table is set. Authored with the appendices, ruled by the orchestrator, November 10, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/l-standard-electrode-half-cell-potentials.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68870",
+      "sourceElementIds": [
+        "fs-idm126797824"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2915,
+      "rationale": "Six half-reactions are printed with a wrong or missing charge: [Ag(S₂O₃)₂] as 3+, Ce³⁺, Cr³⁺, Pu³⁺ and Zr⁴⁺ without their plus signs, [Zn(OH)₄]²⁻ without its minus sign; none balances in charge as printed. The page prints the corrected charges with a Source note under the table; all 134 half-reactions then balance in atoms and charge. Authored with the appendices, ruled by the orchestrator, November 10, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/m-half-lives-for-several-radioactive-isotopes.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68871",
+      "sourceElementIds": [
+        "fs-idp343615296"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2916,
+      "rationale": "The source prints plutonium-239 on two consecutive rows; the second carries 6.54 × 10³ y, the half-life of plutonium-240, and the next row is plutonium-241. The page prints ²⁴⁰Pu with a Source note under the table. Authored with the appendices, ruled by the orchestrator, November 10, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/m-half-lives-for-several-radioactive-isotopes.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68871",
+      "sourceElementIds": [
+        "fs-idp343615296"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2917,
+      "rationale": "The source prints the symbol Ha for element 105, which IUPAC named dubnium (Db) in 1997 and the book's own periodic table prints as Db. The page prints Db with a Source note under the table. Authored with the appendices, ruled by the orchestrator, November 10, 2026."
     }
   ]
 }

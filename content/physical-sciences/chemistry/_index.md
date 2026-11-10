@@ -42,6 +42,14 @@ chemistry, and nuclear chemistry.
   of matter, physical and chemical properties, measurements, measurement
   uncertainty, and the mathematical treatment of measurement results.
 
+## Appendices
+
+The book's thirteen [appendices](/physical-sciences/chemistry/appendices/)
+are complete: the periodic table, a review of the mathematics the book uses,
+and eleven tables of units, constants, and data — among them the standard
+thermodynamic properties, ionization constants, solubility products, and
+standard electrode potentials that the chapters refer to by letter.
+
 ## Planned contents
 
 The remaining chapters of Chemistry 2e will appear in this order:

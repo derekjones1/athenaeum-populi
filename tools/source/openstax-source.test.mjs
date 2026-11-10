@@ -416,7 +416,12 @@ test('verify-map rejects a units list that drops, duplicates, or misorders a cha
       cpSync(path.join(repositoryRoot, 'data/openstax/source-lock.json'), path.join(dir, 'data/openstax/source-lock.json'));
       writeFileSync(path.join(dir, 'data/openstax/source-map.json'), JSON.stringify(copy));
       copy.sections = [];
-      for (const book of Object.values(copy.books)) book.mappedSections = 0;
+      copy.appendices = [];
+      for (const book of Object.values(copy.books)) {
+        book.mappedSections = 0;
+        delete book.mappedAppendices;
+        delete book.upstreamAppendices;
+      }
       writeFileSync(path.join(dir, 'data/openstax/source-map.json'), JSON.stringify(copy));
       return verifyCommittedSourceMap(dir).errors.filter((e) => /unit/.test(e));
     } finally {
@@ -446,7 +451,9 @@ test('reconciliation decisions refer to mapped paths and modules', () => {
   for (const [bundleKey, commit] of Object.entries(decisions.targetCommits)) {
     assert.equal(commit, lock.bundles[bundleKey].commit, `decisions target the pinned ${bundleKey} commit`);
   }
-  const byPath = new Map(map.sections.map((entry) => [entry.localPath, entry]));
+  // A decision may name a numbered section or an appendix page: both are
+  // mapped to a pinned module.
+  const byPath = new Map([...map.sections, ...(map.appendices || [])].map((entry) => [entry.localPath, entry]));
   const keys = new Set();
   for (const decision of [...decisions.metadataDecisions, ...decisions.upstreamDriftDecisions]) {
     const mapped = byPath.get(decision.localPath);
@@ -559,4 +566,25 @@ test('a KaTeX-set function name survives into the plain text the objective audit
   ].join('\n'));
   assert.equal(phraseCoverage('Analyze the graph of y=tan x.', section.plainText), 1);
   assert.equal(phraseCoverage('Graph variations of y=tan x.', section.plainText), 1);
+});
+
+test('the Chemistry appendices are mapped, A through M, each to its back-matter module', () => {
+  const map = JSON.parse(readFileSync(path.join(repositoryRoot, 'data/openstax/source-map.json'), 'utf8'));
+  const appendices = map.appendices.filter((entry) => entry.book === 'chemistry');
+  assert.deepEqual(appendices.map((entry) => entry.sourceAppendix), [...'ABCDEFGHIJKLM']);
+  // The collection lists its thirteen appendices as m68859–m68871, in order.
+  assert.deepEqual(
+    appendices.map((entry) => entry.moduleId),
+    Array.from({ length: 13 }, (_, index) => `m${68859 + index}`),
+  );
+  for (const entry of appendices) {
+    assert.match(entry.localPath, new RegExp(`^content/physical-sciences/chemistry/appendices/${entry.sourceAppendix.toLowerCase()}-[a-z0-9-]+\\.md$`));
+  }
+  assert.equal(map.books.chemistry.mappedAppendices, 13);
+  assert.equal(map.books.chemistry.upstreamAppendices, 13);
+  assert.match(formatBookSummaryLine('chemistry', map.books.chemistry), /, 13\/13 appendices$/);
+  // A book that maps none carries neither field, and its line is unchanged.
+  assert.equal(map.books.biology.mappedAppendices, undefined);
+  assert.doesNotMatch(formatBookSummaryLine('biology', map.books.biology), /appendices/);
+  assert.deepEqual(verifyCommittedSourceMap(repositoryRoot).errors, []);
 });

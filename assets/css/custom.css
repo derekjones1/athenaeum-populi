@@ -76,6 +76,16 @@
   min-width: 100%;
 }
 
+/* A wide table scrolls sideways inside its own box (the theme sets a table
+   `display: block; overflow-x: auto`). KaTeX's hidden MathML layer is
+   absolutely positioned, so with no positioned ancestor a formula in a
+   scrolled-off column was laid out against the PAGE and widened it:
+   Chemistry's Appendix G and L scrolled 15 and 22 px sideways on a phone.
+   The table is that ancestor (browser test). */
+.content table {
+  position: relative;
+}
+
 /* Never let KaTeX inline math wrap mid-equation inside a table cell. */
 td .katex,
 th .katex {

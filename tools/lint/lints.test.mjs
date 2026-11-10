@@ -2933,11 +2933,14 @@ test('bookRulesFor merges an override key by key over the published profile', ()
   });
   assert.deepEqual(partial.knowledgeCheck, { perSection: 4, autoGraded: 2 }, 'the overridden key moves');
   assert.deepEqual(partial.practice, BOOK_RULES['life-health-sciences/biology'].practice, 'the other key keeps the published value');
-  const fresh = bookRulesFor('physical-sciences/chemistry', {
-    'physical-sciences/chemistry': { practice: { perObjective: 1, perSection: 4 } },
+  const fresh = bookRulesFor('physical-sciences/physics', {
+    'physical-sciences/physics': { practice: { perObjective: 1, perSection: 4 } },
   });
   assert.deepEqual(fresh.practice, { perObjective: 1, perSection: 4 });
   assert.equal(fresh.knowledgeCheck, null, 'a new book has no quota until one is published');
+  const chemistry = bookRulesFor('physical-sciences/chemistry');
+  assert.deepEqual(chemistry.practice, BOOK_RULES.default.practice, 'Chemistry publishes no practice profile, so it gets the default floor');
+  assert.deepEqual(chemistry.knowledgeCheck, { perSection: { min: 2, max: 3 }, autoGraded: 1, fillins: true });
 });
 
 test('every regular-section selfcheck requires a rubric, whatever the book', () => {
@@ -3040,6 +3043,52 @@ test("a life-sciences Knowledge Check holds exactly the book's quota per section
       .errors.some((e) => e.includes('quota is exactly 3')),
     'a quota published for a math book would apply there too — the rule is per profile, not per shelf',
   );
+});
+
+test("a Chemistry Knowledge Check holds two to three items per section, one of them auto-graded, and may grade numbers", () => {
+  const chemKC = 'content/physical-sciences/chemistry/knowledge-check-01-02.md';
+  const kcFillin = (q, i) => `{{< fillin question="${q} ${i}: enter the mass in grams." answer="1.${i}5" answerForm="sig-figs:3 last-digit:0" >}}`;
+  assert.equal(lintKC(kcPage([2, 3, 2]), chemKC).errors.length, 0, 'two and three are both inside the range');
+  const short = lintKC(kcPage([2, 1, 3]), chemKC).errors;
+  assert.equal(short.length, 1, `one quota error expected: ${short.join('; ')}`);
+  assert.match(short[0], /`### 1\.2` has 1 item\(s\) — this book's quota is 2 to 3 per section/);
+  assert(lintKC(kcPage([2, 3, 4]), chemKC).errors.some((e) => e.includes('`### 2.1` has 4 item(s)')), 'four overshoots the range');
+  assert.equal(
+    lintKC(kcPage([2, 2, 2], kcFillin), chemKC).errors.filter((e) => /Knowledge Check/.test(e)).length, 0,
+    'numeric fill-ins are this book\'s graded items, and a fill-in is auto-graded',
+  );
+  assert(
+    lintKC(kcPage([2, 2, 2], kcSelfcheck), chemKC).errors.some((e) => e.includes('has no auto-graded item (fillin, multiplechoice, textin, or sortbins)')),
+    'a section of only selfchecks is not tested',
+  );
+  assert(
+    lintKC(kcPage([3, 3, 3], kcFillin), bioKC).errors.some((e) => e.includes('fillin/graphplot on a life-sciences Knowledge Check')),
+    'the life-sciences refusal of fill-ins is unchanged',
+  );
+});
+
+test('a complex salt whose brackets Markdown would read as a link is an error', () => {
+  const page = (cell) => `| Substance | Value |\n|---|---|\n| ${cell} | −762.7 |\n`;
+  const errors = lintHugo(page('[Co(en)₃](ClO₄)₃'), 'content/physical-sciences/chemistry/appendices/g-x.md').errors;
+  assert(errors.some((e) => e.includes('as a link to "ClO₄"')), `the unescaped salt is refused: ${errors.join('; ')}`);
+  assert.equal(
+    lintHugo(page('\\[Co(en)₃\\](ClO₄)₃'), 'content/physical-sciences/chemistry/appendices/g-x.md').errors.filter((e) => e.includes('as a link')).length, 0,
+    'escaped brackets print as brackets',
+  );
+  assert.equal(
+    lintHugo('See [the table](https://example.org/table).\n', 'content/math/prealgebra/x.md').errors.filter((e) => e.includes('as a link')).length, 0,
+    'a real link is left alone',
+  );
+});
+
+test('an appendix page needs the attribution footer and nothing a section needs', () => {
+  const appendix = 'content/physical-sciences/chemistry/appendices/d-fundamental-physical-constants.md';
+  const body = '---\ntitle: "Appendix D: Fundamental Physical Constants"\nsource_appendix: "D"\n---\n\n**Fundamental Physical Constants**\n\n| Name and Symbol | Value |\n|---|---|\n| atomic mass unit (amu) | $1.6605402 \\times 10^{-27}$ kg |\n';
+  assert(
+    lintHugo(body, appendix).errors.some((e) => e.includes('page has no attribution footer')),
+    'an appendix page without a footer is refused',
+  );
+  assert.deepEqual(lintHugo(`${body}\n${ATTRIBUTION}\n`, appendix).errors, [], 'with its footer it is clean: no objectives callout, no Practice block');
 });
 
 test('a Knowledge Check section group ends at the next chapter heading', () => {

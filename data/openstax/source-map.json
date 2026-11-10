@@ -261,7 +261,9 @@
       "upstreamChapters": 21,
       "upstreamSections": 114,
       "localChapters": 1,
-      "mappedSections": 6
+      "mappedSections": 6,
+      "upstreamAppendices": 13,
+      "mappedAppendices": 13
     }
   },
   "sections": [
@@ -7320,6 +7322,125 @@
       "moduleId": "m68683",
       "sourceTitle": "Mathematical Treatment of Measurement Results",
       "moduleSha256": "c97a8b8d957c919d349aae82dfc74ee5b6b10a165eae41cab2cfd16393022c8a"
+    }
+  ],
+  "appendices": [
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/a-the-periodic-table.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceAppendix": "A",
+      "moduleId": "m68859",
+      "sourceTitle": "The Periodic Table",
+      "moduleSha256": "ebce7f3f921578db9bdeb352583893c1d31fad6bb8a5a82fd3daba5c6137d656"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/b-essential-mathematics.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceAppendix": "B",
+      "moduleId": "m68860",
+      "sourceTitle": "Essential Mathematics",
+      "moduleSha256": "171cf098c81016a23b80e6aa3bb16ae3e8420878d6df9e2cdf7e0e400f376079"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/c-units-and-conversion-factors.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceAppendix": "C",
+      "moduleId": "m68861",
+      "sourceTitle": "Units and Conversion Factors",
+      "moduleSha256": "5437c205b32a2d38197a40dcae083c049691d97ba50ac13a77f57abb76e1a4e6"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/d-fundamental-physical-constants.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceAppendix": "D",
+      "moduleId": "m68862",
+      "sourceTitle": "Fundamental Physical Constants",
+      "moduleSha256": "53e3cf67e6074e44813d4369c860ec12a01af1c5f6d454066851647a7cd16bd5"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/e-water-properties.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceAppendix": "E",
+      "moduleId": "m68863",
+      "sourceTitle": "Water Properties",
+      "moduleSha256": "4165f07189e2982bdbd33cc7d1a62bb4c03e0e31da0aa3e1eb0c749650de76ed"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/f-composition-of-commercial-acids-and-bases.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceAppendix": "F",
+      "moduleId": "m68864",
+      "sourceTitle": "Composition of Commercial Acids and Bases",
+      "moduleSha256": "cf196ceb972e0b6ad3f60dc315b401cddb2b2395db8a9883278cd59a9456db08"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/g-standard-thermodynamic-properties-for-selected-substances.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceAppendix": "G",
+      "moduleId": "m68865",
+      "sourceTitle": "Standard Thermodynamic Properties for Selected Substances",
+      "moduleSha256": "7470c9ea0afa3704fcd06946f4af5a07499b3e3cd4146d27ae954adca4bef75e"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/h-ionization-constants-of-weak-acids.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceAppendix": "H",
+      "moduleId": "m68866",
+      "sourceTitle": "Ionization Constants of Weak Acids",
+      "moduleSha256": "74f5ff5da26ba8c29f75a2102bc75f0591c61898c3d8152c6ff8c98d6ab11faa"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/i-ionization-constants-of-weak-bases.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceAppendix": "I",
+      "moduleId": "m68867",
+      "sourceTitle": "Ionization Constants of Weak Bases",
+      "moduleSha256": "97cca1f2840fbb56973882523d62c9073eb09b2472e7834d9d2b7dc1e42a6862"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/j-solubility-products.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceAppendix": "J",
+      "moduleId": "m68868",
+      "sourceTitle": "Solubility Products",
+      "moduleSha256": "48fb7e727b7da41c494fe294294f464a36e6e258b9c4c70cea2a4f31ca6adf72"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/k-formation-constants-for-complex-ions.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceAppendix": "K",
+      "moduleId": "m68869",
+      "sourceTitle": "Formation Constants for Complex Ions",
+      "moduleSha256": "ffe0b7f17ac207b859043a4b8fdc5fcb89b649a113d52f2cd372364463aff76a"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/l-standard-electrode-half-cell-potentials.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceAppendix": "L",
+      "moduleId": "m68870",
+      "sourceTitle": "Standard Electrode (Half-Cell) Potentials",
+      "moduleSha256": "4a78588d692c80d025e44a2e99b8875cf3be0409e2f40f0a3e65b4385e88c0e7"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/m-half-lives-for-several-radioactive-isotopes.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceAppendix": "M",
+      "moduleId": "m68871",
+      "sourceTitle": "Half-Lives for Several Radioactive Isotopes",
+      "moduleSha256": "3fc7cc96bf7f302bd1299ba13003341a7385551ef7b2b0d982589f33115b5ba5"
     }
   ]
 }

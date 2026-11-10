@@ -123,6 +123,11 @@ picture. Caption verbatim with its credit.
   sibling keys before calling it a defect or a convention.
 - A display row longer than about 60 rendered characters is cut off on the
   page: report it.
+- An inline fraction that is hard to read as set — the `\dfrac` ban is on
+  watch (`docs/subjects/chemistry.md` "Notation"): report the line, the
+  fraction, and what a learner loses, as a CONCERN headed `\dfrac`.
+- A reference to an appendix that is not a link to its page in this book,
+  or links the wrong appendix: a DEFECT.
 - `npm run verify-section -- <page>` prints `verified`.
 
 ## 6. Report

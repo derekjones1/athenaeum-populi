@@ -38,9 +38,9 @@ measured-quantity tokens described here.
   when chapter 5 is authored.
 - **Structure:** flat — 21 chapters, no units, 114 numbered sections
   (chapter 18 has 12). Each chapter's first module becomes the chapter
-  `_index.md`. The preface (`m68662`) and the 13 appendices
-  (`m68859`–`m68871`: the periodic table, Essential Mathematics, and eleven
-  data tables) are not mapped.
+  `_index.md`. The 13 appendices (`m68859`–`m68871`: the periodic table,
+  Essential Mathematics, and eleven data tables) are authored as reference
+  pages and mapped ("Appendices"). The preface (`m68662`) is not mapped.
 - **License:** the pinned `LICENSE` and the collection metadata say
   **CC BY-NC-SA 4.0**. Senior contributing authors for the footer: Paul
   Flowers, Klaus Theopold, Richard Langley, William R. Robinson.
@@ -52,7 +52,9 @@ with `NN` the upstream chapter and section numbers. The cover lists chapters
 as plain bullets — the source has no units and none are invented. The lock's
 `authoringStatus` is `in-progress` and the cover's `authoring_status` copies
 it; a finished chapter moves from the cover's "Planned contents" to its
-`## Chapters` list.
+`## Chapters` list. The appendices are
+`content/physical-sciences/chemistry/appendices/<letter>-<slug>.md`
+("Appendices").
 
 ## The section page, in order
 
@@ -91,8 +93,10 @@ these differences:
    prose — because the page scrolls an over-wide row sideways with no
    scrollbar and the learner sees it cut off (browser test).
 4. **Tables.** A table's title is a bold line directly above the table; a
-   table footnote is a sentence directly below it, marked as the source
-   marks it.
+   table footnote is a sentence directly below it, marked `*`, `†`, `‡`,
+   `§` in the order the notes first appear (written `\*` for the first).
+   The source's numbered markers are not kept: a superscript numeral on
+   "Density (g/mL)" reads as a power.
 5. **`## Summary`** is the module's "Key Concepts and Summary" section, one
    bullet per source paragraph.
 6. **`## Key equations`** — the module's `key-equations` section, one
@@ -115,7 +119,15 @@ these differences:
    substances"); a cross-reference to another section is plain text, the
    source's wording where the source wrote it and "Section 1.4
    Measurements" where the page did (no book in the library links between
-   its sections).
+   its sections). **A reference to an appendix is the exception: it is a
+   link to the appendix's page**,
+   `[Appendix G](/physical-sciences/chemistry/appendices/g-standard-thermodynamic-properties-for-selected-substances/)`,
+   in the body, in an example, and in an exercise stem alike — the source
+   links them (73 times; 36 to Appendix G), and a learner sent to a table
+   for a value must reach it in one step. The footer says "the references
+   to Appendix G linked to its page in this book". A hint may name an
+   appendix ("Find the standard enthalpies of formation in Appendix G.")
+   but takes no link: a hint is plain text.
 
 ## Exercises
 
@@ -458,9 +470,18 @@ mhchem extension, so nothing is loaded:
   exponent is math, as everywhere: `$6.022 \times 10^{23}$`.
 - **A fraction in inline math is `\frac`**, as the source sets it, and
   `\dfrac` is banned across the library (lint: it crowds the lines around
-  it). An inline fraction sets its digits at about 11 px; the pilot's
-  rendered-page readers flagged that three times, and it stays, as the
-  math books' `\tfrac` does.
+  it). An inline fraction sets its digits at 13.6 px (measured; `\dfrac`
+  sets them at 19.4 px and pushes the next line from 28 to about 45 px
+  away); the pilot's rendered-page readers flagged the size three times,
+  and it stays, as the math books' `\tfrac` does. **The ban is kept on
+  watch** *(Derek, November 10, 2026)*: wherever it makes a question worse
+  or degrades content — digits that cannot be told apart, a fraction of
+  fractions that cannot be read, a stem a learner would misread — the
+  author or checker reports the item (page, line, the fraction, what is
+  lost), the parent adds it to "The `\dfrac` watch list" in
+  `docs/history/chemistry.md`, and the ban is revisited from that list,
+  not from taste. A display equation is not affected: `$$…$$` sets
+  `\frac` at full size.
 - **A number in scientific notation never breaks at its ×.** The math
   render hook holds a short inline `a \times 10^{n}` on one line (browser
   test); nothing is written for it. A number and its unit in prose may
@@ -701,11 +722,109 @@ each fluorine atom has three lone pairs
 A drawing answer is never converted to a multiple choice: the source keys
 one structure and prints no wrong ones to offer.
 
+## Appendices
+
+*(November 10, 2026.)* The book's thirteen appendices are reference pages,
+authored once and complete: `appendices/_index.md` (titled "Appendices",
+listing them under `## Appendices`) and one page per appendix,
+`<letter>-<slug>.md`, titled "Appendix G: Standard Thermodynamic Properties
+for Selected Substances" and declaring `source_appendix: "G"`. The folder's
+weight is the book's last, so the sidebar lists it after the final chapter
+(`npm run kc -- weights content/physical-sciences/chemistry --write` moves
+it when a chapter or check lands). `build-map` maps each page to its module
+— Appendix A is the collection's first back-matter module — and a book maps
+all of its appendices or none.
+
+An appendix page has no objectives callout, no Summary, no Key terms, and
+no Practice: nothing on it is graded. It is the source's tables and figures,
+the attribution footer ("This appendix is adapted from …"), and nothing
+else except what a rule below adds.
+
+- **No cell of a data table is typed by hand.**
+  `node tools/source/appendix-draft.mjs --book chemistry --appendix G
+  [--groups rows] [--unfold 3]` writes the Markdown tables from the pinned
+  CNXML in the house notation; the author adds the frontmatter, headers the
+  source lacks, figures, and the footer.
+- **`npm run verify:source-tables` holds every cell of the finished page to
+  the CNXML** (2,704 cells; part of `npm test`): each source row is a page
+  row, in order, cell for cell, with the typesetting taken away, and a text
+  cell's sub- and superscripts told apart. A cell the page writes
+  differently on purpose is listed in the tool's `TABLE_NOTES` with its
+  reason or its erratum; a listed difference the page no longer has fails
+  as stale.
+- **What a page does to a source table**, each said in the footer:
+  - a full-width row that names a group (an element in Appendix G, a metal
+    in Appendix J) is a row with the name in bold in the first column;
+  - a cell the source stacks on several lines (Appendix C's equivalents) is
+    one row per line, the unit repeated — a `<br>` between math spans does
+    not typeset (lint);
+  - a cell that spans rows (a polyprotic acid's name) is repeated on each;
+  - a table the print folds into side-by-side column sets (Appendix M) is
+    one list — in order of atomic number and mass number there, since the
+    print's order is its pagination;
+  - a table with no header row gets column headings (Appendix C: "Unit",
+    "Equivalents");
+  - a formula printed as an image is typed as text; a column of drawings
+    (the Lewis structures of Appendices H and I) leaves the table and
+    follows it under a `## Lewis structures` heading, each a `mediafigure`
+    captioned with its row's name;
+  - a table printed as an image is transcribed BESIDE the image where the
+    image is the page (Appendix A: the periodic table stays, and a table of
+    the 118 elements read from it follows).
+- **Notation in a table cell.** A formula in a text cell is Unicode
+  (`Al³⁺(*aq*)`); a half-reaction or equilibrium the source sets in MathML
+  is `$\ce{…}$`, a charge always after `^` (`$\ce{Ce^3+ + 3e^- -> Ce}$`); a
+  power of ten is math with its coefficient; a unit with a negative
+  exponent is math (`$\text{J}\ \text{K}^{-1}$`), a degree sign there
+  `{}^\circ\text{C}`; a minus sign in a text cell is U+2212, whatever dash
+  the source typed; a micro prefix is µ (U+00B5). **A complex's square
+  brackets are escaped** — `\[Co(en)₃\](ClO₄)₃` — because Markdown reads
+  `[…](…)` as a link (lint).
+- **Every equation in a data table is balanced by a run**, atoms and
+  charge, before the page ships: a source cell that does not balance is a
+  source defect. Appendix L had six (a complex printed 3+ for 3−, and five
+  ions without their sign); Appendix K had none.
+- **Every Lewis structure's electrons are counted** against the species'
+  valence electrons. A drawing that falls short ships as the source's
+  image — nothing is redrawn — with an alt that says what is drawn and "as
+  the source draws it", and a Source note above the structures naming it.
+- **A corrected cell** is printed corrected, with a Source note directly
+  under the table that names every correction (a reference table has no
+  key to protect), a `TABLE_NOTES` deviation, a decisions entry, and the
+  erratum. **A stale value is not a defect**: the table's data are the
+  source's (the book's keyed answers were worked from them), and a constant
+  an outside table now gives differently stays, with a Source note only
+  where the table contradicts itself (Appendix D: Faraday's constant is
+  not the product of the Avogadro and charge values printed beside it).
+
+The run that authored them is in `docs/history/chemistry.md`.
+
 ## Knowledge checks
 
 Decided November 9, 2026: **one check per block of chapters, seven pages.**
 The book is flat, so blocks follow the content, and uneven blocks are
 accepted where chapters belong together.
+
+**Quota** *(Derek, November 10, 2026)*: **each section of a block carries
+two or three items, at least one of them auto-graded** (`fillin`,
+`multiplechoice`, `textin`, or `sortbins`; a section of only `selfcheck`s is
+not tested). The count is a range because the sections differ — one worked
+calculation in some, a dozen in others — and the lint holds it
+(`BOOK_RULES['physical-sciences/chemistry'].knowledgeCheck`, which also
+lets a check carry `fillin`s: this book's keyed answers are numbers). Three
+where the section's content supports three; two is not a shortfall. By
+block that is 34–51, 16–24, 30–45, 34–51, 42–63, 22–33, and 50–75 items.
+
+**Where the items come from** *(the parent's working rule for the first
+check, chapters 1–3; Derek set the quota, not the source)*: a graded item
+needs a source key ("Graded items"), so where a section has a worked
+example — 86 of 114 do — one item re-asks that example's question, whose
+answer the source prints, with the life-sciences rule that a check's stem
+is not a section Practice item's stem; the others are recall items on the
+module's own sentences, glossary, and summary, as in the life-sciences
+checks. The unkeyed exercises are not a pool: only about one in five sits
+beside a keyed twin close enough to vouch for its method. The first check's
+run confirms or changes this, and writes the kit.
 
 | Block | Chapters | Sections | Content |
 |---|---|---|---|
@@ -732,7 +851,8 @@ Settled by chapter 1 (November 9, 2026; narrative in
   lettered part (`tools/lib/keyed-units.mjs`); `verify:source-coverage`
   counts an unkeyed exercise as `omitted` and fails one that is rendered;
   `verify:ledger` requires a solve and provenance for
-  `content/physical-sciences`.
+  `content/physical-sciences`; `verify:source-tables` reads the appendix
+  pages cell by cell ("Appendices").
 - **The browser suite types into the real field** (`tests/browser-check.spec.mjs`,
   "Chemistry"): every measured key on 1.6 key by key, a two-digit exponent
   of either sign, a typed unit, the exact power-of-ten factor; and it reads
@@ -745,16 +865,12 @@ Settled by chapter 1 (November 9, 2026; narrative in
 
 Still open:
 
-- the Knowledge Check quota per section, and where its items come from —
-  decided with the first check (chapters 1–3). Proposed November 9, 2026,
-  not yet decided: two to three items per section (34–51, 16–24, 30–45,
-  34–51, 42–63, 22–33, 50–75 by block), at least one auto-graded, and where
-  the section has a worked example (86 of 114 do; 289 examples) one item
-  re-asks a worked example, whose answer the source prints, so the check
-  is quantitative without an author-derived key; the rest are recall items
-  from the module's text, as in the life-sciences checks. The unkeyed
-  exercises were measured as a pool and set aside: only about one in five
-  sits beside a keyed twin close enough to vouch for its method;
+- the Knowledge Check kit (author, checker, and solve briefs for a block)
+  and whether the item-source rule in "Knowledge checks" holds — written
+  with the first check, chapters 1–3; the quota itself is settled;
+- whether `verify:source-tables` should read the tables of the section
+  pages too (the chapters have about 190): it reads appendix pages only,
+  and a section's tables are still read by the author and the checker;
 - the item form for an electron configuration and for an ordering
   (chapter 6), for a condensed structural formula (chapter 20), and for a
   nuclear equation (chapter 21) — each a `selfcheck` until its chapter
@@ -762,7 +878,6 @@ Still open:
 - a browser test that types a formula and an equation into the real field:
   the grader, the lint, and the gates are unit-tested, and chapter 2's
   first page is the first place the suite can type one;
-- site-wide, found by the rendered-page reading and left for a design
-  decision: the compact navbar covers the right end of the article's top
-  line between 1100 and 1280 px; a practice card leaves about 50 px above
-  "Show hint".
+- a long table's header row scrolls out of view (Appendix G is 403 rows):
+  the theme sets a table `display: block`, so a sticky header needs a
+  table render hook, which would change every table on the site.

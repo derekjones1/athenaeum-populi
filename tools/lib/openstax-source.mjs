@@ -676,6 +676,7 @@ export function parseLocalSection(markdown) {
   return {
     title: attributes.title || '',
     sourceSection: attributes.source_section || '',
+    sourceAppendix: attributes.source_appendix || '',
     headings,
     objectives,
     interactions,
@@ -819,9 +820,40 @@ export function localChapterIndexes(repositoryRoot, book) {
     .sort((left, right) => left.directory.localeCompare(right.directory));
 }
 
+/** The directory, under a book's content root, that holds its appendix pages. */
+export const APPENDIX_DIRECTORY = 'appendices';
+
+/**
+ * A book's appendix pages: `<contentPath>/appendices/<letter>-<slug>.md`, each
+ * declaring `source_appendix: "<LETTER>"`. Appendix A is the collection's
+ * first back-matter module, B its second, and so on — the letters are the
+ * book's own, printed in its running heads. Returns
+ * `{ localPath, letter, title }[]` in letter order; a page whose file letter
+ * and frontmatter letter disagree is reported in `errors`.
+ */
+export function localAppendixPages(repositoryRoot, book, errors = []) {
+  const directory = path.join(repositoryRoot, book.contentPath, APPENDIX_DIRECTORY);
+  if (!existsSync(directory)) return [];
+  const pages = [];
+  for (const entry of readdirSync(directory, { withFileTypes: true })) {
+    if (!entry.isFile() || !entry.name.endsWith('.md') || entry.name === '_index.md') continue;
+    const localPath = `${book.contentPath}/${APPENDIX_DIRECTORY}/${entry.name}`;
+    const { attributes } = parseFrontmatter(readFileSync(path.join(directory, entry.name), 'utf8'));
+    const fileLetter = entry.name.match(/^([a-z])-/)?.[1]?.toUpperCase() ?? null;
+    const letter = String(attributes.source_appendix || '');
+    if (!fileLetter || !/^[A-Z]$/.test(letter) || letter !== fileLetter) {
+      errors.push(`${localPath}: an appendix page is named <letter>-<slug>.md and declares the same letter as source_appendix: "${fileLetter ?? 'A'}"`);
+      continue;
+    }
+    pages.push({ localPath, letter, title: attributes.title || '' });
+  }
+  return pages.sort((left, right) => left.letter.localeCompare(right.letter));
+}
+
 export function buildSourceMap(repositoryRoot, sourceDirectories, lock = loadSourceLock(repositoryRoot)) {
   const collections = loadCollections(lock, sourceDirectories);
   const entries = [];
+  const appendixEntries = [];
   const errors = [];
   const chapterLocalCounts = new Map();
 
@@ -874,9 +906,44 @@ export function buildSourceMap(repositoryRoot, sourceDirectories, lock = loadSou
     }
   }
 
+  // Appendix pages. A book either maps none of its appendices (every book
+  // before Chemistry 2e) or all of them: they are one reference shelf, and a
+  // chapter that points at "Appendix G" must find it.
+  for (const [book, config] of collections) {
+    const upstream = config.collection.backMatterModuleIds;
+    const pages = localAppendixPages(repositoryRoot, config, errors);
+    for (const page of pages) {
+      const moduleId = upstream[page.letter.charCodeAt(0) - 65];
+      if (!moduleId) {
+        errors.push(`${page.localPath}: upstream collection has no appendix ${page.letter} (${upstream.length} back-matter modules)`);
+        continue;
+      }
+      const modulePath = path.join(config.sourceRoot, 'modules', moduleId, 'index.cnxml');
+      if (!existsSync(modulePath)) {
+        errors.push(`${page.localPath}: missing modules/${moduleId}/index.cnxml`);
+        continue;
+      }
+      const moduleXml = readFileSync(modulePath, 'utf8');
+      const module = parseModuleXml(moduleXml);
+      appendixEntries.push({
+        localPath: page.localPath,
+        bundle: config.bundleKey,
+        book,
+        sourceAppendix: page.letter,
+        moduleId,
+        sourceTitle: module.title,
+        moduleSha256: sha256(moduleXml),
+      });
+    }
+    if (pages.length && pages.length !== upstream.length) {
+      errors.push(`${book}: ${pages.length} local appendix pages but ${upstream.length} upstream appendices — a book maps all of its appendices or none`);
+    }
+  }
+
   const books = {};
   for (const [bookKey, config] of collections) {
     const { collection } = config;
+    const mappedAppendices = appendixEntries.filter((entry) => entry.book === bookKey).length;
     const upstreamSections = collection.chapters.reduce((sum, chapter) => sum + chapter.sectionModuleIds.length, 0);
     const mappedSections = entries.filter((entry) => entry.book === bookKey).length;
     const chapterIndexes = localChapterIndexes(repositoryRoot, config);
@@ -951,13 +1018,17 @@ export function buildSourceMap(repositoryRoot, sourceDirectories, lock = loadSou
       upstreamSections,
       localChapters: chapterIndexes.length,
       mappedSections,
+      // Recorded only for a book that maps its appendices, so a book whose
+      // appendices are deliberately unmapped does not read as 0/3 behind.
+      ...(mappedAppendices ? { upstreamAppendices: collection.backMatterModuleIds.length, mappedAppendices } : {}),
       ...(units.length ? { units } : {}),
     };
   }
 
   entries.sort((left, right) => left.localPath.localeCompare(right.localPath));
+  appendixEntries.sort((left, right) => left.localPath.localeCompare(right.localPath));
   const ids = new Set();
-  for (const entry of entries) {
+  for (const entry of [...entries, ...appendixEntries]) {
     const key = `${entry.bundle}:${entry.moduleId}`;
     if (ids.has(key)) errors.push(`duplicate upstream module mapping: ${entry.bundle} ${entry.moduleId}`);
     ids.add(key);
@@ -978,6 +1049,7 @@ export function buildSourceMap(repositoryRoot, sourceDirectories, lock = loadSou
       bundles,
       books,
       sections: entries,
+      appendices: appendixEntries,
     },
     errors,
     collections,
@@ -992,7 +1064,8 @@ export function buildSourceMap(repositoryRoot, sourceDirectories, lock = loadSou
 export function formatBookSummaryLine(bookKey, summary) {
   return `${bookKey}: ${summary.authoringStatus} — `
     + `${summary.localChapters}/${summary.upstreamChapters} chapters, `
-    + `${summary.mappedSections}/${summary.upstreamSections} sections mapped`;
+    + `${summary.mappedSections}/${summary.upstreamSections} sections mapped`
+    + (summary.mappedAppendices === undefined ? '' : `, ${summary.mappedAppendices}/${summary.upstreamAppendices} appendices`);
 }
 
 /** "n/a" rather than "0/0" when the audited scope's modules carry zero
@@ -1064,8 +1137,46 @@ export function verifyCommittedSourceMap(repositoryRoot, lock = loadSourceLock(r
   for (const localPath of actual.keys()) {
     if (!expected.has(localPath)) errors.push(`${localPath}: stale source-map entry (no local numbered section)`);
   }
+
+  // Appendix pages: the same three-way agreement — page, frontmatter, map.
+  const expectedAppendices = new Map();
+  for (const [book, config] of lock.books) {
+    for (const page of localAppendixPages(repositoryRoot, config, errors)) {
+      expectedAppendices.set(page.localPath, { book, ...page });
+    }
+  }
+  const actualAppendices = new Map();
+  for (const entry of map.appendices || []) {
+    if (actualAppendices.has(entry.localPath)) errors.push(`duplicate local path in source map: ${entry.localPath}`);
+    actualAppendices.set(entry.localPath, entry);
+    if (!/^[a-z]\d+$/i.test(entry.moduleId || '')) errors.push(`${entry.localPath}: invalid module id ${entry.moduleId}`);
+    if (!/^[0-9a-f]{64}$/.test(entry.moduleSha256 || '')) errors.push(`${entry.localPath}: invalid module SHA-256`);
+    const bookConfig = lock.books.get(entry.book);
+    if (!bookConfig) errors.push(`${entry.localPath}: mapped book ${entry.book} is not in the source lock`);
+    else if (entry.bundle !== bookConfig.bundleKey) {
+      errors.push(`${entry.localPath}: mapped bundle ${entry.bundle} should be ${bookConfig.bundleKey}`);
+    }
+  }
+  for (const [localPath, page] of expectedAppendices) {
+    const entry = actualAppendices.get(localPath);
+    if (!entry) {
+      errors.push(`${localPath}: missing from source map (run build-map)`);
+      continue;
+    }
+    if (entry.book !== page.book) errors.push(`${localPath}: mapped book ${entry.book} should be ${page.book}`);
+    if (entry.sourceAppendix !== page.letter) {
+      errors.push(`${localPath}: mapped appendix ${entry.sourceAppendix} should be ${page.letter}`);
+    }
+    if (tokenSimilarity(page.title, entry.sourceTitle) < 0.45) {
+      errors.push(`${localPath}: local title and mapped source title are unexpectedly different`);
+    }
+  }
+  for (const localPath of actualAppendices.keys()) {
+    if (!expectedAppendices.has(localPath)) errors.push(`${localPath}: stale source-map entry (no local appendix page)`);
+  }
+
   const moduleIds = new Set();
-  for (const entry of actual.values()) {
+  for (const entry of [...actual.values(), ...actualAppendices.values()]) {
     const key = `${entry.bundle}:${entry.moduleId}`;
     if (moduleIds.has(key)) errors.push(`duplicate mapped module id: ${entry.bundle} ${entry.moduleId}`);
     moduleIds.add(key);
@@ -1132,6 +1243,13 @@ export function verifyCommittedSourceMap(repositoryRoot, lock = loadSourceLock(r
     }
     if (config.authoringStatus === 'complete' && summary.mappedSections !== summary.upstreamSections) {
       errors.push(`source map book ${bookKey} is complete but maps ${summary.mappedSections} of ${summary.upstreamSections} upstream sections`);
+    }
+    const countedAppendices = [...actualAppendices.values()].filter((entry) => entry.book === bookKey).length;
+    if ((summary.mappedAppendices ?? 0) !== countedAppendices) {
+      errors.push(`source map book ${bookKey} claims ${summary.mappedAppendices ?? 0} mapped appendices but lists ${countedAppendices}`);
+    }
+    if (summary.mappedAppendices !== undefined && summary.mappedAppendices !== summary.upstreamAppendices) {
+      errors.push(`source map book ${bookKey} maps ${summary.mappedAppendices} of ${summary.upstreamAppendices} appendices — all or none`);
     }
   }
 
