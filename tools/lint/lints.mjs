@@ -225,6 +225,9 @@ import { parseObjectivesCallout } from '../lib/openstax-source.mjs';
 // duplicate-accept-member rules below reason about a textin answer exactly
 // the way check-text.mjs will grade it.
 import { closedForm, foldedForms, normalizeText, pluralFolds } from '../../assets/js/lib/text/check-text.mjs';
+// A textin whose answer is a chemical formula or equation is validated by the
+// grader that reads it, not by the word rules.
+import { chemKeyProblem } from '../../assets/js/lib/text/check-chem.mjs';
 // Coverage measure for selfcheck rubric checkpoints — the same token-set
 // coverage verify-source-keys holds model answers to.
 import { phraseCoverage } from '../lib/openstax-source.mjs';
@@ -236,7 +239,7 @@ const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..
 /** Why a component refuses the params it does not read — the sentence the author needs. */
 const UNKNOWN_PARAM_WHY = {
   multiplechoice: 'the chosen option is the answer, and the key is `answer` (text) or `answerIndex` (graph)',
-  textin: 'it grades words, not values; use fillin for a math answer, and the keyed word is its own display',
+  textin: 'it grades words (or, with answerForm="formula" or "equation", a chemical formula or equation), not values; use fillin for a math answer, and the keyed text is its own display',
   selfcheck: 'a self-check has no key; its model answer is the inner content',
   sortbins: 'the key is the config\'s bin indexes in the inner JSON',
   graphplot: 'the answer and grid are the inner JSON config',
@@ -1500,6 +1503,16 @@ export function lintHugo(src, filename = '', options = {}) {
   // `validate-content` is what requires every section to carry the list — it
   // sees whole files, where this lint also runs over authoring fragments.
   const objectives = parseObjectivesCallout(mediaSrc) ?? [];
+
+  // ---- the attribution footer is one paragraph ----------------------------
+  // `<small>` alone on its line opens an HTML block, and Markdown inside an
+  // HTML block is not parsed: three Intermediate Algebra footers printed
+  // "[*Intermediate Algebra 2e*, Section 9.8](https://…)" as raw text for
+  // months (found by the rendered-page reading of November 9, 2026). The
+  // corpus form is `<small>…</small>` with its text on the same line.
+  for (const m of mediaSrc.matchAll(/^<small>[ \t]*$/gm)) {
+    err(m.index, '`<small>` alone on its line opens an HTML block, and the Markdown inside it (the source link, the license link) prints as raw text — write the footer as one paragraph: `<small>…</small>` with the text on the same line');
+  }
 
   // ---- Math / array rules --------------------------------------------------
 
@@ -2828,6 +2841,16 @@ export function lintHugo(src, filename = '', options = {}) {
       if (value !== undefined && UNESCAPED_DOLLAR_RE.test(value)) {
         err(index, `${where}: ${name} must not contain \`$\` math — a text field has no spoken-math name; use multiplechoice for a prompt that needs math`);
       }
+    }
+    // A chemical formula or equation (answerForm) is not a word: the word
+    // count, the plural fold, and the hyphen fold below do not describe it.
+    // check-chem.mjs says whether the key reads one way and, for an
+    // equation, whether it balances in atoms and charge in lowest terms —
+    // which is also how a source key that does not balance is found.
+    if (params.answerForm !== undefined) {
+      const problem = answer.trim() ? chemKeyProblem(answer, params.answerForm, params.accept || '') : null;
+      if (problem) err(index, `${where}: ${problem}`);
+      continue;
     }
     const members = [];
     // The answer is what a learner is asked to produce, so it stays short (4

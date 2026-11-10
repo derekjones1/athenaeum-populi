@@ -51,6 +51,7 @@ import { bookKeyOf, blankPreservingOffsets, maskCode, mathSpans, shortcodes, SHO
 // The real textin grading normalizer, so a "printed key" here means printed
 // in exactly the sense check-text.mjs would grade a retyped copy of it.
 import { foldedForms, matchesForm, normalizeText } from '../../assets/js/lib/text/check-text.mjs';
+import { readSpecies } from '../../assets/js/lib/text/check-chem.mjs';
 // The rubric-checkpoint coverage helper lints.mjs holds every checkpoint to.
 import { phraseCoverage } from '../lib/openstax-source.mjs';
 
@@ -484,7 +485,24 @@ export function lintLeaks(src, filename = '') {
     // "meters·second" right for a speed and "°K" right for a temperature.
     // Such a key is a `multiplechoice` whose distractors are the product,
     // the inverse, and the degree-marked form.
-    if (chemistry) {
+    // ---- a formula keyed as a word (Chemistry) -------------------------------
+    // The word grader lowercases and drops punctuation: `CO` passes for `Co`,
+    // `No` for `NO`, `FeCl3` for `FeCl₃·2H₂O`'s first half typed alone.
+    // A key that reads as a formula declares answerForm="formula" (and an
+    // equation "equation"), which grades capitals, subscripts, and charge.
+    if (chemistry && item.params.answerForm === undefined) {
+      const key = String(item.params.answer ?? '').trim();
+      const question = String(item.params.question ?? '');
+      const marked = /[\d₀-₉⁰¹²³⁴-⁹⁺⁻()[\]·^]/.test(key) || (key.match(/[A-Z]/g) || []).length >= 2;
+      const symbol = /^[A-Z][a-z]?$/.test(key) && /\b(?:symbol|formula)/i.test(question);
+      if (/⟶|→|⇌|->/.test(key)) {
+        err(item.index, `${where}: its key ${JSON.stringify(key)} is an equation graded as words — declare answerForm="equation"`);
+      } else if ((marked || symbol) && readSpecies(key).length) {
+        err(item.index, `${where}: its key ${JSON.stringify(key)} is a chemical formula graded as a word (the word grader ignores capitals, so "CO" passes for "Co") — declare answerForm="formula"`);
+      }
+    }
+
+    if (chemistry && item.params.answerForm === undefined) {
       const operator = [String(item.params.answer ?? ''), ...String(item.params.accept ?? '').split('|')]
         .find((member) => /[\/·×*°]/.test(member));
       if (operator) {
@@ -742,6 +760,20 @@ export function lintLeaks(src, filename = '') {
       // on its two negative keys and on none of its positive ones.
       if (/\bwith its sign\b/i.test(question)) {
         err(item.index, `${where}: "with its sign" — a negative answer is typed with its minus sign as a matter of course, and the phrase, which pages wrote on negative keys only, tells the learner the sign; drop it`);
+      }
+      // A hint that does the item: the pilot's pages carried "Multiply by
+      // nine-fifths, then add 32" and "Every digit here is significant"
+      // after the rule against them was written. The line the playbook
+      // draws by pairs ("Hints") is drawn here by the two shapes a pattern
+      // can see: an arithmetic imperative, and a verdict on this number's
+      // digits.
+      if (item.kind === 'fillin') {
+        const hint = String(item.params.hint ?? '');
+        const does = /^(?:first,?\s+)?(?:multiply|divide|add|subtract|cube|square)\b/i.exec(hint)
+          || /\bevery (?:non-?zero )?(?:digit|zero)\b[^.]*\bsignificant\b|\bplaceholder zero\b|\bis a final 5\b/i.exec(hint);
+        if (does) {
+          err(item.index, `${where}: the hint ${JSON.stringify(hint.slice(0, 60))} does the item ("${does[0]}") — a hint names the tool (the equation by name, the rule, the table), never the arithmetic on this item's numbers or a verdict on its digits (playbook "Hints")`);
+        }
       }
       // A display equation set inline in a stem and run into the next
       // sentence: "…$d = \frac{m}{V}$ Considering that…" (1.3).

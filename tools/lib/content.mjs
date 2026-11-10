@@ -229,7 +229,7 @@ export const SHORTCODE_PARAMS = Object.freeze({
   multiplechoice: new Set(['question', 'answer', 'answerIndex', 'hint', 'mode']),
   graphplot: new Set(['question', 'answerDisplay', 'ariaLabel', 'hint', 'snap']),
   apfigure: new Set(['kind']),
-  textin: new Set(['question', 'answer', 'accept', 'hint']),
+  textin: new Set(['question', 'answer', 'accept', 'answerForm', 'hint']),
   selfcheck: new Set(['question', 'hint']),
   sortbins: new Set(['question', 'hint']),
   mediafigure: new Set(['src', 'alt', 'kind', 'longdesc', 'eager']),

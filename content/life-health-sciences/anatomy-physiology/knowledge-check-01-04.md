@@ -610,7 +610,6 @@ allows our airways and digestive tracts to rapidly replace damaged cells with ne
 {{< textin
   question="The distinctive appearance of cartilage is due to polysaccharides called ________, which bind with ground substance proteins to form proteoglycans."
   answer="chondroitin sulfates"
-  accept="chondroitin sulphates"
 >}}
 
 {{< multiplechoice

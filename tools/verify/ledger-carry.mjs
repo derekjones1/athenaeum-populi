@@ -82,7 +82,7 @@ export function acceptNeutral(before, now) {
   // October 27, 2026) is only reachable from the spelling as listed.
   return [before.params?.answer ?? '', ...String(oldAccept).split('|')]
     .filter((raw) => raw.trim())
-    .every((raw) => checkText(raw, answer, { accept: newAccept }) === 'correct');
+    .every((raw) => checkText(raw, answer, { accept: newAccept, form: now.params?.answerForm }) === 'correct');
 }
 
 /** Does the unchanged key still grade correct under a changed answerForm? */

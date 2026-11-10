@@ -1741,9 +1741,21 @@ test('textin shortcode rules', () => {
   );
   assert(
     lintHugo('{{< textin question="Name it." answer="a" answerForm="exact" hint="h" >}}', 'content/test.md')
-      .errors.some((e) => e.includes('does not take "answerForm"')),
-    'answerForm is rejected — textin grades words, not values',
+      .errors.some((e) => e.includes('answerForm "exact" is not a text form')),
+    'a fill-in form on a textin is rejected — textin takes "formula" or "equation" only',
   );
+  // A chemical formula or equation is validated by the grader that reads it:
+  // the four-word cap and the plural folds are word rules.
+  const chem = (answer, form, extra = '') => lintHugo(
+    `{{< textin question="Write it." answer="${answer}" answerForm="${form}"${extra} hint="h" >}}`, 'content/test.md').errors;
+  assert.deepEqual(chem('Mn₃(PO₄)₂', 'formula'), []);
+  assert.deepEqual(chem('CH₃CO₂H', 'formula', ' accept="CH3COOH|HC2H3O2"'), []);
+  assert.deepEqual(chem('8H⁺(aq) + MnO₄⁻(aq) + 5e⁻ ⟶ Mn²⁺(aq) + 4H₂O(l)', 'equation'), [], 'eleven "words", and no word rule fires');
+  assert(chem('SO42-', 'formula').some((e) => e.includes('reads two ways')));
+  assert(chem('barium oxide', 'formula').some((e) => e.includes('does not read as a formula')));
+  assert(chem('Na(s) + H₂O(l) ⟶ NaOH(aq) + H₂(g)', 'equation').some((e) => e.includes('not balanced')),
+    'an unbalanced key is an error — and a source key that does not balance is found here');
+  assert(chem('4Na + 4H₂O ⟶ 4NaOH + 2H₂', 'equation').some((e) => e.includes('lowest terms')));
   assert(
     lintHugo('{{< textin question="Name $x$." answer="a" hint="h" >}}', 'content/test.md')
       .errors.some((e) => e.includes('must not contain `$` math')),
@@ -3692,4 +3704,11 @@ test('the lettered parts of one source question count as one question in a body 
   const simplify = (n) => `{{< fillin question="Simplify: $${n}x+${n}x$" answer="${2 * n}x" answerForm="no-like-terms" hint="Combine like terms." >}}`;
   assert.equal(lintHugo(`Text.\n\n${[1, 2, 3, 4].map(simplify).join('\n\n')}\n`, 'content/math/book/01-chapter/01-section.md').errors
     .filter((error) => /consecutive interactive questions/.test(error)).length, 1);
+});
+
+test('a footer whose <small> opens an HTML block is an error', () => {
+  const block = 'Body.\n\n---\n\n<small>\nAdapted from [*Intermediate Algebra 2e*](https://openstax.org/x).\n</small>\n';
+  const inline = 'Body.\n\n---\n\n<small>Adapted from [*Intermediate Algebra 2e*](https://openstax.org/x).</small>\n';
+  assert(lintHugo(block, 'content/test.md').errors.some((e) => e.includes('alone on its line opens an HTML block')));
+  assert(!lintHugo(inline, 'content/test.md').errors.some((e) => e.includes('opens an HTML block')));
 });

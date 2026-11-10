@@ -20,7 +20,8 @@
  * accessibility contract is <fill-in>'s: a named control before it is
  * interactive, `role=status` feedback, and focus retained on success.
  */
-import { checkText } from '../../lib/text/check-text.mjs';
+import { gradeText } from '../../lib/text/check-text.mjs';
+import { previewChem } from '../../lib/text/check-chem.mjs';
 import { plainMathText } from '../../lib/shared/speakable-label.mjs';
 import { mountHintToggle } from '../../lib/shared/hint-toggle.mjs';
 import { TONE } from '../../lib/shared/colors.mjs';
@@ -31,13 +32,24 @@ const MESSAGES = {
   idle: '',
   empty: 'Type an answer first.',
   incorrect: 'Not quite — try again.',
+  form: 'Nearly — check the form of your answer.',
 };
+
+// How a formula or an equation is typed on a plain keyboard. The line sits
+// under the field and is its description (aria-describedby): no stem has to
+// spend a sentence on it, and it says nothing about the answer.
+const GUIDE = {
+  formula: 'Type subscripts as plain numbers and a charge after ^: Mn3(PO4)2, SO4^2-.',
+  equation: 'Type subscripts as plain numbers, a charge after ^, and the arrow as ->: 2H2 + O2 -> 2H2O.',
+};
+let guideCount = 0;
 
 // Status → shared feedback tone (colors.mjs owns the palette fallbacks).
 const COLOR = {
   correct: TONE.success,
   incorrect: TONE.error,
   empty: TONE.muted,
+  form: TONE.warning,
 };
 
 class TextInElement extends HTMLElement {
@@ -47,6 +59,7 @@ class TextInElement extends HTMLElement {
 
     this.answer = this.dataset.answer || '';
     this.accept = this.dataset.accept || '';
+    this.form = this.dataset.answerForm || '';
     this.status = 'idle';
     this.done = false;
 
@@ -72,6 +85,7 @@ class TextInElement extends HTMLElement {
     field.setAttribute('aria-label', plainMathText(this.dataset.question || '') || 'Text answer');
     field.addEventListener('input', () => {
       if (this.status !== 'idle') this._setStatus('idle');
+      this._showReading();
     });
     this.field = field;
 
@@ -89,7 +103,27 @@ class TextInElement extends HTMLElement {
     feedback.setAttribute('aria-live', 'polite');
     this.feedback = feedback;
 
-    wrap.append(form, feedback);
+    wrap.append(form);
+    if (GUIDE[this.form]) {
+      // A formula field shows what it has read, in the book's print, as the
+      // learner types: "SO42-" is read back as SO₄²⁻ before it is checked.
+      // The reading is not announced on every keystroke (aria-hidden); the
+      // typing guide is the field's description.
+      field.autocorrect = 'off';
+      field.inputMode = 'text';
+      const guide = document.createElement('p');
+      guide.className = 'ap-textin-guide';
+      guideCount += 1;
+      guide.id = `ap-textin-guide-${guideCount}`;
+      guide.textContent = GUIDE[this.form];
+      field.setAttribute('aria-describedby', guide.id);
+      const reading = document.createElement('p');
+      reading.className = 'ap-textin-reading';
+      reading.setAttribute('aria-hidden', 'true');
+      this.reading = reading;
+      wrap.append(reading, guide);
+    }
+    wrap.append(feedback);
 
     mountHintToggle(wrap, this.hintHTML);
 
@@ -101,10 +135,17 @@ class TextInElement extends HTMLElement {
 
   _runCheck() {
     if (this.done) return;
-    this._setStatus(checkText(this.field.value, this.answer, { accept: this.accept }));
+    const verdict = gradeText(this.field.value, this.answer, { accept: this.accept, form: this.form });
+    this._setStatus(verdict.status, verdict.message);
   }
 
-  _setStatus(status) {
+  _showReading() {
+    if (!this.reading) return;
+    const read = previewChem(this.field.value, this.form);
+    this.reading.textContent = read ? `Read as: ${read}` : '';
+  }
+
+  _setStatus(status, message) {
     this.status = status;
     if (status === 'correct') {
       this.done = true;
@@ -117,7 +158,7 @@ class TextInElement extends HTMLElement {
       restoreFocus(this.feedback);
       this.button.disabled = true;
     } else {
-      this.feedback.textContent = MESSAGES[status] || '';
+      this.feedback.textContent = message || MESSAGES[status] || '';
     }
     this.feedback.style.color = COLOR[status] || 'inherit';
   }

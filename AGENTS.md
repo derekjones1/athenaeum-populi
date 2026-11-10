@@ -27,7 +27,9 @@ November 9, 2026; the first book under `content/physical-sciences/`):
 chapter 1 is authored — the book's pilot — and `docs/subjects/chemistry.md`
 holds the scan, the page skeleton, the exercise rules (only source-keyed
 exercises reach the page), the notation, measured-quantity grading
-(`\ce{…}` formulas in math, `sig-figs:<n> last-digit:<k>` fill-ins), and
+(`\ce{…}` formulas in math, `sig-figs:<n> last-digit:<k>` fill-ins), typed
+formulas and equations (`textin` with `answerForm="formula"` or
+`"equation"`), and
 the figure rules; a chapter is run from `docs/briefs/chemistry/run.md` with
 the agent briefs beside it. Dated
 narrative — retrospectives, per-chapter logs, closed programmes — lives in

@@ -191,6 +191,16 @@ goes wrong.
   characters. Put a result and its "(round to …)" parenthetical on their
   own aligned row. A browser test measures every row; you cannot see it in
   the Markdown.
+- **A name, a formula, an equation** (playbook "Exercises" table and
+  "Formulas and equations"): a name is a plain `textin`; a formula or an
+  ion's symbol is a `textin` with `answerForm="formula"`; a balanced
+  equation is a `textin` with `answerForm="equation"`. Write the key in the
+  book's Unicode print (`Mn₃(PO₄)₂`, `SO₄²⁻`), state symbols as the source
+  prints them. Grade the key, the natural near-misses, and the stem's own
+  formula or equation through the real grader before you file:
+  `node -e 'import("./assets/js/lib/text/check-text.mjs").then(m=>console.log(m.gradeText("<typed>","<key>",{form:"formula"})))'`.
+  A key the lint calls unbalanced or unreadable is a suspected source
+  defect: report it, do not repair it silently.
 - **A unit as the answer**: a one-word or counted unit name is a `textin`
   with the accept crossings the playbook's table lists; a quotient or
   product unit, or kelvin against "°K", is a `multiplechoice` (the text

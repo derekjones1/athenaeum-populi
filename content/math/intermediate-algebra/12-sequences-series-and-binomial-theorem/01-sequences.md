@@ -677,6 +677,4 @@ finite number of terms of a sequence, we call the sum a **partial sum**.
   hint="Find the pattern in the absolute values, then choose the power of $-1$ that gives the signs."
 >}}
 
-<small>
-Adapted from [Intermediate Algebra 2e, Section 12.1: Sequences](https://openstax.org/books/intermediate-algebra-2e/pages/12-1-sequences) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/). Changes: omitted the “Be Prepared” readiness exercises and external media link; converted “Try It” exercises to interactive checks, adapted formatting for the web, and adapted selected end-of-section exercises into an interactive Practice block.
-</small>
+<small>Adapted from [Intermediate Algebra 2e, Section 12.1: Sequences](https://openstax.org/books/intermediate-algebra-2e/pages/12-1-sequences) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/). Changes: omitted the “Be Prepared” readiness exercises and external media link; converted “Try It” exercises to interactive checks, adapted formatting for the web, and adapted selected end-of-section exercises into an interactive Practice block.</small>

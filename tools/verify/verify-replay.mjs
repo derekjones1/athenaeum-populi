@@ -78,6 +78,21 @@ import { checkText } from '../../assets/js/lib/text/check-text.mjs';
 
 // file (repo-relative) + a question prefix that names ONE fillin + the exact
 // printed SPAN that coincides + why that coincidence is sound.
+/**
+ * The formulas or equations a question prints, as a learner could copy them:
+ * every whitespace-delimited token for a formula (closing punctuation
+ * dropped), and for an equation every run around an arrow, cut at the colon,
+ * semicolon, or sentence end before it.
+ */
+export function chemSpans(question, form) {
+  if (form === 'equation') {
+    return [...question.matchAll(/[^:;?]*(?:⟶|→|⇌|->)[^;?]*/g)]
+      .map((m) => m[0].trim().replace(/\.$/, '')).filter(Boolean);
+  }
+  return [...new Set(question.split(/\s+/).map((token) => token.replace(/^[(“"]+|[.,;:?!)”"]+$/g, ''))
+    .filter((token) => /[A-Z]/.test(token)))];
+}
+
 export const SOUND_COINCIDENCES = [
   ['content/physical-sciences/chemistry/01-essential-ideas/02-phases-and-classification-of-matter.md', 'Yeast converts glucose to ethanol and carbon dioxide during anaerobic fermentation as depicted in the simple chemical equation here: $\\text{glucose} \\longrightarrow \\text{ethanol} + \\text{carbon dioxide}$. If 200.0 g of glucose is fully converted, what will be the total mass', '200.0', 'the law the item tests: by conservation of matter the total mass of the products IS the printed mass of the glucose, so retyping it is the correct response (source exercise, key 200.0 g)'],
   ['content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/01-solve-equations-using-the-subtraction-and-addition-properties-of-equality.md', 'Translate and solve: The difference of $4x$ and $3x$ is $14$', '14', 'the section objective: 4x - 3x = x, so the solution equals the printed right side; the ask is the translation and the one-step solve, not a retype'],
@@ -230,8 +245,27 @@ function replayFile(file) {
     const q = sc.params.question || '';
     const answer = sc.params.answer || '';
     if (!q || !answer) continue;
+    const form = sc.params.answerForm;
+    const line = src.slice(0, sc.index).split('\n').length;
+    if (form) {
+      // A formula or equation the stem prints is a span a learner can copy:
+      // "Determine the empirical formula: sucrose, C₁₂H₂₂O₁₁" is answered by
+      // its own stem when the formula is already empirical. Each printed
+      // formula or equation is replayed; a sound one is listed like a
+      // fill-in's.
+      const exempt = new Set(SOUND_COINCIDENCES
+        .filter(([f, prefix]) => rel.endsWith(f) && q.startsWith(prefix))
+        .map(([, , span]) => span));
+      for (const span of chemSpans(q, form)) {
+        if (exempt.has(span)) { skipped['allowlisted span'] += 1; continue; }
+        if (checkText(span, answer, { accept: sc.params.accept, form }) === 'correct') {
+          failures.push(`${rel}:${line} textin accepts its own printed ${form} ${JSON.stringify(span)} (answerForm=${JSON.stringify(form)})`);
+        }
+        replayed += 1;
+      }
+      continue;
+    }
     if (checkText(q, answer, { accept: sc.params.accept }) === 'correct') {
-      const line = src.slice(0, sc.index).split('\n').length;
       failures.push(`${rel}:${line} textin accepts its own printed question as the answer (answer=${JSON.stringify(answer)})`);
     }
     replayed += 1;

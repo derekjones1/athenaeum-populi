@@ -19345,6 +19345,14 @@
     "result": "agrees"
    }
   },
+  "279c56ebd33705c2": {
+   "verdict": "ok",
+   "note": "body cloze from § How Organisms Acquire Energy in a Food Web: \"Many chemoautotrophs in hydrothermal vents use hydrogen sulfide (H 2 S), which is released from the vents as a source of chemical energy.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | accept member removed on November 9, 2026: the grader now folds sulph- to sulf-, so the British spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "27a0a20d34865f4f": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"The loss of control begins with a change in the DNA sequence of a gene that codes for one of the regulatory molecules.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -30475,6 +30483,14 @@
     "result": "agrees"
    }
   },
+  "3f7279d7c8d29fd2": {
+   "verdict": "ok",
+   "note": "KC 1 4.3 § body Cartilage (fs-id1333453), m46049 | accept member removed on November 9, 2026: the grader now folds sulph- to sulf-, so the British spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3f767b1c2d303479": {
    "verdict": "ok",
    "note": "source exercise eip-113 (options-differ) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -37490,14 +37506,6 @@
     "result": "agrees"
    }
   },
-  "4e98e228ec2fbef2": {
-   "verdict": "ok",
-   "note": "body cloze from § How Organisms Acquire Energy in a Food Web: \"Many chemoautotrophs in hydrothermal vents use hydrogen sulfide (H 2 S), which is released from the vents as a source of chemical energy.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "4ea2cf5c33b7eb9f": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -39033,6 +39041,14 @@
   "51eee66ee9b93616": {
    "verdict": "ok",
    "note": "selfcheck fs-idp108486512 (What would happen if multiple sperm fused with one egg?); model answer = CNXML solution verbatim (polyspermy, genetically non-viable, dies within a few days). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "5201a332a063c287": {
+   "verdict": "ok",
+   "note": "body cloze from § Macronutrients and Micronutrients: \"Sulfur is part of certain amino acids, such as cysteine and methionine, and is present in several coenzymes.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | accept member removed on November 9, 2026: the grader now folds sulph- to sulf-, so the British spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "520623383cbf3d20": {
    "verdict": "ok"
@@ -72419,14 +72435,6 @@
    "verdict": "ok",
    "note": "MC: 'or' of two disjoint events uses the Addition Principle; matches source Section Exercise 3's own explanation. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
-  "9b8c79261f93f418": {
-   "verdict": "ok",
-   "note": "KC 1 4.3 § body Cartilage (fs-id1333453), m46049",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "9b8d9ef5975e5014": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -80045,14 +80053,6 @@
    "note": "glossary recall: peristome (fs-idp11287248) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "fable-blind-solver",
-    "result": "agrees"
-   }
-  },
-  "ac15563649a8cdfe": {
-   "verdict": "ok",
-   "note": "body cloze from § Macronutrients and Micronutrients: \"Sulfur is part of certain amino acids, such as cysteine and methionine, and is present in several coenzymes.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },

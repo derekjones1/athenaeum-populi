@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { acceptedForms, checkText, closedForm, foldedForms, matchesForm, normalizeText, pluralFolds, singularFolds } from './check-text.mjs';
+import { acceptedForms, checkText, closedForm, foldedForms, matchesForm, normalizeText, pluralFolds, singularFolds, gradeText } from './check-text.mjs';
 
 test('normalizeText folds case, diacritics, quotes, dashes, punctuation, articles', () => {
   const cases = [
@@ -129,4 +129,37 @@ test('checkText folds a hyphen to nothing as well as to a space', () => {
   assert.equal(checkText('fore-guts', 'foregut'), 'correct', 'the plural fold applies to the closed reading');
   assert.equal(checkText('fore gut', 'foregut'), 'incorrect', 'a space never folds to nothing');
   assert.equal(checkText('semi-conservative', 'X', { accept: 'semiconservative' }), 'correct', 'accept members fold too');
+});
+
+test('the three element names English spells two ways are one name', () => {
+  // Chemistry 2e's nomenclature items would otherwise need an accept member
+  // on every sulfate; IUPAC itself prints "aluminium" and "caesium".
+  assert.equal(checkText('sulphur', 'sulfur'), 'correct');
+  assert.equal(checkText('copper(II) sulphate pentahydrate', 'copper(II) sulfate pentahydrate'), 'correct');
+  assert.equal(checkText('sulphuric acid', 'sulfuric acid'), 'correct');
+  assert.equal(checkText('aluminium fluoride', 'aluminum fluoride'), 'correct');
+  assert.equal(checkText('caesium chloride', 'cesium chloride'), 'correct');
+  assert.equal(checkText('aluminum fluoride', 'aluminium fluoride'), 'correct', 'in either direction');
+  assert.equal(checkText('sulfite', 'sulfate'), 'incorrect');
+  assert.equal(normalizeText('Aluminium sulphate'), 'aluminum sulfate');
+});
+
+test('a compound name is read with or without its parentheses and spaces, never without its numeral', () => {
+  for (const typed of ['chromium(III) oxide', 'chromium (III) oxide', 'Chromium(iii) Oxide', 'chromium III oxide']) {
+    assert.equal(checkText(typed, 'chromium(III) oxide'), 'correct', typed);
+  }
+  assert.equal(checkText('chromium(II) oxide', 'chromium(III) oxide'), 'incorrect');
+  assert.equal(checkText('chromium oxide', 'chromium(III) oxide'), 'incorrect');
+  assert.equal(checkText('cobalt(II) chloride hexahydrate', 'cobalt(II) chloride hexahydrate'), 'correct');
+  assert.equal(checkText('cobalt(II) chloride', 'cobalt(II) chloride hexahydrate'), 'incorrect');
+});
+
+test('a chemistry form sends the response to the formula reader, and gradeText carries its message', () => {
+  assert.equal(checkText('co', 'CO'), 'correct', 'as words, capitals do not count');
+  assert.equal(checkText('Co', 'CO', { form: 'formula' }), 'incorrect');
+  assert.equal(checkText('CO', 'CO', { form: 'formula' }), 'correct');
+  assert.equal(checkText('ClNa', 'NaCl', { form: 'formula' }), 'form');
+  assert.equal(checkText('2H2 + O2 -> 2H2O', '2H₂(g) + O₂(g) ⟶ 2H₂O(l)', { form: 'equation' }), 'correct');
+  assert.match(gradeText('H2 + O2 -> H2O', '2H₂(g) + O₂(g) ⟶ 2H₂O(l)', { form: 'equation' }).message, /not balanced/);
+  assert.deepEqual(gradeText('cell', 'cell'), { status: 'correct' });
 });

@@ -34,7 +34,7 @@ import { spawnSync } from 'node:child_process';
 
 import { walkMarkdown, mathSpans, shortcodes } from '../lib/content.mjs';
 import {
-  SKIP_CLASSES, SOUND_COINCIDENCES, mathliveSpelling, parseReplayArgs,
+  SKIP_CLASSES, SOUND_COINCIDENCES, chemSpans, mathliveSpelling, parseReplayArgs,
 } from './verify-replay.mjs';
 
 const REPLAY_TOOL = new URL('./verify-replay.mjs', import.meta.url).pathname;
@@ -194,4 +194,15 @@ test('a textin question that IS its own answer fails replay, and a safe one is c
   } finally {
     rmSync(dir, { recursive: true, force: true });
   }
+});
+
+test('a formula or equation a text-in stem prints is a span a learner can copy', () => {
+  // Chemistry 2e 2.4: sucrose is already its own empirical formula.
+  assert.deepEqual(chemSpans('Determine the empirical formula for the following compound: sucrose, C₁₂H₂₂O₁₁.', 'formula'),
+    ['Determine', 'C₁₂H₂₂O₁₁']);
+  assert.deepEqual(chemSpans('For the following pair of ions, write the formula of the compound they will form: NH₄⁺, SO₄²⁻', 'formula'),
+    ['For', 'NH₄⁺', 'SO₄²⁻']);
+  assert.deepEqual(chemSpans('Balance the following equation: PCl₅(s) + H₂O(l) ⟶ POCl₃(l) + HCl(aq).', 'equation'),
+    ['PCl₅(s) + H₂O(l) ⟶ POCl₃(l) + HCl(aq)']);
+  assert.deepEqual(chemSpans('Write a balanced equation for the decomposition of calcium carbonate.', 'equation'), []);
 });

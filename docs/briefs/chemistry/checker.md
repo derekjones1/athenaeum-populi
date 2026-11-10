@@ -91,7 +91,12 @@ the result, the observation a judgment turns on — it is a defect. So is a
 hint that points at a table or equation that is not on the page or does not
 hold what the learner needs, and a hint so general it helps nobody where a
 real pointer exists.
-For every `textin`, grade the rivals a learner would type: the product for a
+For a `textin` with `answerForm="formula"` or `"equation"`, read the key
+against the CNXML character by character (a capital I for a small l, a
+digit 1 for an l, a charge's sign), count an equation's atoms and charge
+yourself, and grade the stem's own formula or equation and the plausible
+wrong answers (the unbalanced equation, the anhydrous salt, the ion without
+its charge) through `gradeText`. For every other `textin`, grade the rivals a learner would type: the product for a
 quotient, the degree-marked symbol, the wrong-case symbol, each
 singular/plural and meter/metre crossing of a multi-word unit. On a page
 that teaches a rule, apply the rule to every reason its worked examples

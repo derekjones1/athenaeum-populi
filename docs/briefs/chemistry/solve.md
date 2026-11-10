@@ -40,6 +40,11 @@ factors, constants, and rounding rules the page itself prints.
 - **A `multiplechoice`:** the option text verbatim. Name a second option in
   `alsoDefensible` whenever the page supports it too.
 - **A `textin`:** the word or phrase the page uses, in the page's spelling.
+  When the packet's `answerForm` is `formula` or `equation`, type it as a
+  learner would on a plain keyboard, capitals exact: `Mn3(PO4)2`, `SO4^2-`,
+  `FeCl3.2H2O`, `2Na + 2H2O -> 2NaOH + H2` (state symbols optional, a charge
+  after `^`, smallest whole-number coefficients). Check an equation's atoms
+  and charge on both sides before you write it down.
 - An item you cannot settle from the page gets your best answer plus
   `"unsure": true` and the reason in `note`.
 - Anything wrong on the page outside your item — a worked example whose

@@ -425,6 +425,4 @@ rewrite it in the form $au^2+bu+c=0$, where $a\ne0$.
 
 ---
 
-<small>
-Adapted from [*Intermediate Algebra 2e*, Section 9.4](https://openstax.org/books/intermediate-algebra-2e/pages/9-4-solve-equations-in-quadratic-form) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/). Changes: adapted the source to interactive web format, converted Try It exercises to auto-graded questions, and adapted selected end-of-section exercises into an interactive Practice block.
-</small>
+<small>Adapted from [*Intermediate Algebra 2e*, Section 9.4](https://openstax.org/books/intermediate-algebra-2e/pages/9-4-solve-equations-in-quadratic-form) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/). Changes: adapted the source to interactive web format, converted Try It exercises to auto-graded questions, and adapted selected end-of-section exercises into an interactive Practice block.</small>

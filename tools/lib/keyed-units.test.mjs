@@ -203,3 +203,32 @@ test('a part the page restated is still its part, under its own lead-in only', (
   assert.equal(plain('$8{,}119 \\times 0.000023$'), plain('8119 × 0.000023'));
   assert.equal(plain('14.98 + 27,340 + 84.7593'), plain('14.98 + 27340 + 84.7593'));
 });
+
+test('a text-in is confirmed when its part\'s answer prints the name, or reads as the same formula or equation', () => {
+  // Chemistry 2e 2.7 and 4.1, as the CNXML prints them: subscripts in <sub>,
+  // an equation in spaced MathML text.
+  const chem = keyedUnits(cnxml(exercises(
+    exercise('n1', ['Name the following compounds:', '(a) BaO', '(b) Cr<sub>2</sub>O<sub>3</sub>'], '(a) barium oxide; (b) chromium(III) oxide'),
+    exercise('f1', ['Write the formulas of the following ionic compounds:', '(a) manganese(II) phosphate', '(b) iron(III) chloride dihydrate'],
+      '(a) Mn<sub>3</sub>(PO<sub>4</sub>)<sub>2</sub>; (b) FeCl<sub>3</sub>·2H<sub>2</sub>O'),
+    exercise('i1', ['For each of the following compounds, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved:', '(a) BaO', '(b) IBr'],
+      '(a) ionic, Ba<sup>2+</sup>, O<sup>2−</sup>; (b) covalent'),
+    exercise('q1', ['Balance the following equation: Na(s) + H<sub>2</sub>O(l) ⟶ NaOH(aq) + H<sub>2</sub>(g)'],
+      '2 Na ( s ) + 2 H 2 O ( l ) ⟶ 2 NaOH ( a q ) + H 2 ( g )'),
+  )));
+  const textin = (question, answer, form = '') => ({ type: 'textin', question, answer, form });
+  const judge = (item) => judgeKeyedUnit(item, chem).status;
+  assert.equal(judge(textin('Name the following compound: Cr₂O₃', 'chromium(III) oxide')), 'confirmed');
+  assert.equal(judge(textin('Name the following compound: Cr₂O₃', 'chromium(II) oxide')), 'key-differs');
+  assert.equal(judge(textin('Write the formula of the following ionic compound: manganese(II) phosphate', 'Mn₃(PO₄)₂', 'formula')), 'confirmed');
+  assert.equal(judge(textin('Write the formula of the following ionic compound: iron(III) chloride dihydrate', 'FeCl₃·2H₂O', 'formula')), 'confirmed');
+  assert.equal(judge(textin('Write the formula of the following ionic compound: iron(III) chloride dihydrate', 'FeCl₃', 'formula')), 'key-differs');
+  // One piece of an answer that lists several things.
+  const ions = 'For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: BaO';
+  assert.equal(judge(textin(`${ions} Enter the symbol of the cation.`, 'Ba²⁺', 'formula')), 'confirmed');
+  assert.equal(judge(textin(`${ions} Enter the symbol of the anion.`, 'O²⁻', 'formula')), 'confirmed');
+  assert.equal(judge(textin(`${ions} Enter the symbol of the anion.`, 'O⁻', 'formula')), 'key-differs');
+  const balance = 'Balance the following equation: Na(s) + H₂O(l) ⟶ NaOH(aq) + H₂(g)';
+  assert.equal(judge(textin(balance, '2Na(s) + 2H₂O(l) ⟶ 2NaOH(aq) + H₂(g)', 'equation')), 'confirmed');
+  assert.equal(judge(textin(balance, '2Na(s) + H₂O(l) ⟶ 2NaOH(aq) + H₂(g)', 'equation')), 'key-differs');
+});

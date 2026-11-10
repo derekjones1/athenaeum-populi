@@ -436,6 +436,28 @@ test('in the Chemistry book a textin is never keyed to a word of its own objecti
   assert.deepEqual(hit(`### Mass and weight\n\n${weight}\n\n## Practice\n\n### Explain the thing\n\n${gravity}\n`), []);
 });
 
+test('in the Chemistry book a formula or an equation is never keyed as a word', () => {
+  const page = (item) => `Body text.\n\n${item}\n`;
+  const hit = (src, file = CHEM) => errorsOf(src, file).filter((e) => /declare answerForm/.test(e));
+  const formula = (answer, question = 'Write the formula of the following compound: rubidium bromide.') => textin(question, answer);
+  assert.match(hit(page(formula('RbBr')))[0], /its key "RbBr" is a chemical formula graded as a word/);
+  assert.equal(hit(page(formula('Mn₃(PO₄)₂'))).length, 1);
+  assert.equal(hit(page(formula('FeCl₃·2H₂O'))).length, 1, 'the hydrate dot is not the operator rule\'s to report twice');
+  assert.equal(hit(page(formula('Se²⁻', 'Give the symbol for the ion with 34 protons and 36 electrons.'))).length, 1);
+  // A lone symbol is a formula when the stem asks for a symbol or a formula.
+  assert.equal(hit(page(formula('Be', 'Give the symbol of the lightest alkaline earth metal.'))).length, 1);
+  assert.deepEqual(hit(page(formula('Be', 'To ________ or not, that is the question.'))), []);
+  assert.match(hit(page(formula('H₂ + Cl₂ ⟶ 2HCl', 'Write the balanced equation.')))[0], /is an equation graded as words/);
+  // Declared, it is the grader's; a name is a word; other books are not read.
+  const declared = formula('RbBr').replace('answer="RbBr"', 'answer="RbBr" answerForm="formula"');
+  assert.deepEqual(errorsOf(page(declared), CHEM).filter((e) => /declare answerForm|reads as a space/.test(e)), []);
+  assert.deepEqual(hit(page(formula('chromium(III) oxide', 'Name the following compound: Cr₂O₃.'))), []);
+  assert.deepEqual(hit(page(formula('RbBr')), BIO), []);
+  // A declared hydrate is not an "operator the text grader drops".
+  const hydrate = formula('FeCl₃·2H₂O').replace('answer="FeCl₃·2H₂O"', 'answer="FeCl₃·2H₂O" answerForm="formula"');
+  assert.deepEqual(errorsOf(page(hydrate), CHEM).filter((e) => /reads as a space/.test(e)), []);
+});
+
 test('in the Chemistry book a textin key never carries an operator the text grader drops', () => {
   const page = (item) => `Body text.\n\n${item}\n`;
   const hit = (src, file = CHEM) => errorsOf(src, file).filter((e) => /reads as a space/.test(e));
@@ -465,6 +487,24 @@ test('in the Chemistry book a stem never says "with its sign" and never runs an 
   assert.deepEqual(run(page(fillin('Density is the ratio $d = \\frac{m}{V}$. Considering that mass is extensive, explain.'))), []);
   // A unit symbol after an inline equation is not a new sentence.
   assert.deepEqual(run(page(fillin('A gas has $V = 22.4$ L at $P = 101.3$ Pa. Find its temperature.'))), []);
+});
+
+test('in the Chemistry book a fill-in hint never does the arithmetic or rules on the digits', () => {
+  const fillin = (hint) => `{{< fillin\n  question="Convert 80.92 °C to kelvin."\n  answer="354.07"\n  answerForm="sig-figs:5 last-digit:0"\n  hint="${hint}"\n>}}`;
+  const hit = (hint, file = CHEM) => errorsOf(`Body text.\n\n${fillin(hint)}\n`, file).filter((e) => /does the item/.test(e));
+  // The pilot's own hints, before and after round 3.
+  for (const hint of ['Add 273.15.', 'Multiply the Celsius temperature by nine-fifths, then add 32.', 'Divide the mass by the volume.',
+    'First, cube the edge length.', 'Every digit here is significant.', 'Every nonzero digit is significant.',
+    'Keep the number\'s size with a placeholder zero.', 'The digit to be dropped is a final 5.']) {
+    assert.equal(hit(hint).length, 1, hint);
+  }
+  for (const hint of ['Use the kelvin–Celsius equation above.', 'Use the definition of density.',
+    'Test each zero against the rules for leading, captive, and trailing zeros.',
+    'Find the first digit to be dropped, then apply the rounding rules.',
+    'Apply the rounding rule for addition and subtraction.']) {
+    assert.deepEqual(hit(hint), [], hint);
+  }
+  assert.deepEqual(hit('Add 273.15.', MATH), [], 'a math hint states its rule by design');
 });
 
 test('in the Chemistry book the footer never prints a blank\'s key and every Key term closes with a period', () => {

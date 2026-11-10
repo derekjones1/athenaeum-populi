@@ -48,6 +48,20 @@
   line-height: 1.7;
 }
 
+/* The attribution footer every section and Knowledge Check page ends with is
+   one <small> filling a paragraph (or, where the source line breaks after
+   the tag, sitting straight in .content as an HTML block). Inline, the
+   small text (12.8px) kept the paragraph's 28px strut and line-height, so
+   its lines stood 28–30px apart — about 2.3 times the font size, which
+   reads as double-spaced on the long Changes notes. As a block it sets its
+   own line boxes at a normal 1.5 leading. Scoped to a <small> that is the
+   paragraph's only element, which is how the corpus writes it. */
+.content p > small:only-child,
+.content > small {
+  display: block;
+  line-height: 1.5;
+}
+
 /* Keep wide display equations inside the article instead of letting their
    intrinsic KaTeX width paint over the right-hand table of contents. */
 .content .katex-display {
@@ -131,6 +145,19 @@ nav.hextra-toc a {
 /* graph-plot writes its verdict into an .ap-fillin-feedback line too. */
 .ap-fillin-feedback, .ap-mc-feedback, .ap-textin-feedback, .ap-selfcheck-feedback,
 .ap-sortbins-feedback { font-size: 15px; margin: 10px 0 0; min-height: 22px; }
+/* An empty feedback line takes no room. The line is the card's live region
+   (role="status"), so it must exist before the first verdict and is never
+   removed; its margin and min-height were held open on every unanswered
+   card as a 32px band (40px with the hint toggle's margin) between the
+   answer row and "Show hint" — and still did not prevent the shift it was
+   reserving for, since one line of feedback is 28px, not 22. Feedback only
+   appears after the reader presses Check, directly below the control they
+   used, so the reservation bought nothing. Zero-size while :empty; every
+   component writes the verdict as text and clears it to '' (never to a
+   space), so the rule tracks the state exactly, and the region stays in the
+   accessibility tree because it is not display:none. */
+.ap-fillin-feedback:empty, .ap-mc-feedback:empty, .ap-textin-feedback:empty,
+.ap-selfcheck-feedback:empty, .ap-sortbins-feedback:empty { margin: 0; min-height: 0; }
 
 /* --- Interactive exercise components ----------------------------------- */
 .ap-fillin-row { display: flex; gap: 8px; align-items: stretch; }
@@ -608,6 +635,35 @@ sort-bins:not(:defined) .ap-sortbins-check {
 .ap-nav-compact .hextra-toc > div {
   top: 3rem;
 }
+@media (max-width: 79.99rem) {
+  /* Below xl there is no rail column for the cluster to sit over: the
+     article runs to the viewport's right edge, so a cluster-wide backdrop
+     floated over the article's right end (256px of it from md to xl, 164px
+     on a phone) and every line scrolling up showed beside the cluster and
+     vanished under it. Here the backdrop spans the viewport, as the full
+     bar's does, so the article scrolls under a 3rem strip instead; the
+     controls stay the cluster, packed right. The strip catches pointer
+     events (the theme's blur is pointer-events-none, and the container is
+     none in this state) so a click on it cannot reach text hidden under it.
+     From xl up the cluster stays rail-wide and the article strip clear. */
+  .ap-nav-compact .hextra-nav-container-blur {
+    left: 0;
+    width: auto;
+    border-bottom-left-radius: 0;
+    pointer-events: auto;
+  }
+}
+@media (min-width: 48rem) and (max-width: 79.99rem) {
+  /* The strip now spans the sidebar too, so between md and xl the sidebar
+     stops beneath it (--navbar-height, 3rem here) instead of rising to the
+     viewport top as it does from xl, and its list loses the same 3rem. */
+  .ap-nav-compact .hextra-sidebar-container {
+    top: var(--navbar-height);
+  }
+  .ap-nav-compact .hextra-sidebar-container > .hextra-scrollbar {
+    height: calc(100vh - var(--navbar-height) - var(--menu-height));
+  }
+}
 
 /* --- <text-in> ------------------------------------------------------------
    Short text answers (a term, a name). Same card as .ap-fillin; the field is a
@@ -629,6 +685,13 @@ sort-bins:not(:defined) .ap-sortbins-check {
 .ap-textin-field::placeholder { color: #6f6e69; opacity: 1; }
 .dark .ap-textin-field::placeholder { color: #b0afa6; }
 .ap-textin-field:read-only { opacity: 0.8; }
+/* A formula or equation field (answerForm): what it has read, in the book's
+   print, and under it how to type one. The reading is empty until something
+   reads, and then takes no more room than a line of feedback. */
+.ap-textin-reading { margin: 6px 0 0; font-size: 15px; min-height: 0; }
+.ap-textin-reading:empty { margin: 0; }
+.ap-textin-guide { margin: 6px 0 0; font-size: 13px; color: #6f6e69; }
+.dark .ap-textin-guide { color: #b0afa6; }
 
 /* --- <self-check> --------------------------------------------------------- */
 .ap-selfcheck-label { display: block; font-size: 13px; color: var(--ap-muted, #6f6e69); margin-bottom: 4px; }

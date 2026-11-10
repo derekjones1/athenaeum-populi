@@ -744,6 +744,13 @@ test('the shared hint toggle discloses a fill-in hint and a self-check hint the 
     const hint = card.locator('.ap-fillin-hint');
     await expect(hint).toBeHidden();
     expect(await toggle.getAttribute('aria-controls')).toBe(await hint.getAttribute('id'));
+    // An unanswered card holds no empty band above "Show hint": its feedback
+    // line (the live region, present from the start) takes no room until a
+    // verdict is written into it (custom.css, `:empty` feedback rule).
+    expect(await card.evaluate((el) => {
+      const status = el.querySelector('[role="status"]');
+      return { text: status.textContent, height: status.getBoundingClientRect().height };
+    })).toEqual({ text: '', height: 0 });
     await toggle.scrollIntoViewIfNeeded();
     await toggle.click();
     await expect(toggle).toHaveAttribute('aria-expanded', 'true');
@@ -1158,6 +1165,27 @@ test('the navbar folds to a top-right cluster of logo, search, and scroll-to-top
   expect(await page.evaluate(
     () => document.activeElement === document.querySelector('.hextra-nav-container nav > a'),
   )).toBe(true);
+
+  // Below xl there is no rail column under the cluster and the article runs
+  // to the right edge, so a cluster-wide backdrop floated over the article's
+  // right end. There the backdrop spans the viewport: the article scrolls
+  // under a 3rem strip that catches clicks, and the sidebar stops beneath it.
+  await page.setViewportSize({ width: 1100, height: 800 });
+  await page.evaluate(() => window.scrollTo(0, 900));
+  await expect.poll(async () => (await shape()).compact).toBe(true);
+  expect(await page.evaluate(() => {
+    const blur = document.querySelector('.hextra-nav-container-blur').getBoundingClientRect();
+    const hit = document.elementFromPoint(400, 24);
+    return {
+      left: Math.round(blur.left),
+      spans: Math.abs(blur.right - document.documentElement.clientWidth) < 2,
+      height: Math.round(blur.height),
+      stripCatches: Boolean(hit && hit.closest('.hextra-nav-container')),
+      sidebarTop: Math.round(document.querySelector('.hextra-sidebar-container').getBoundingClientRect().top),
+    };
+  }), 'below xl the folded bar must not float over the article').toEqual({
+    left: 0, spans: true, height: 48, stripCatches: true, sidebarTop: 48,
+  });
 
   // Below md the shelves already live in the hamburger drawer and the theme
   // keeps the search box out of the bar; folding must leave the hamburger in

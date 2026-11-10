@@ -471,6 +471,28 @@ test('the chemistry subject playbook states the rules its engine enforces', asyn
   assert.match(chem, /The\s+key\s+is\s+one\s+number/);
   assert.ok(measuredKeyProblem('5371,3239', 'sig-figs:4 last-digit:0'), 'the lint refuses sig-figs on a list key');
 
+  // Formulas and equations: the playbook's table is the grader's behaviour.
+  const { checkChem, chemKeyProblem } = await import('../../assets/js/lib/text/check-chem.mjs');
+  const flat = chem.replace(/\s+/g, ' ');
+  assert.match(chem, /`answerForm="formula"`,\s+`answerForm="equation"`/);
+  for (const [typed, key, form, status] of [
+    ['Mn3(PO4)2', 'Mn₃(PO₄)₂', 'formula', 'correct'], ['Mn3P2O8', 'Mn₃(PO₄)₂', 'formula', 'form'],
+    ['nacl', 'NaCl', 'formula', 'form'], ['Co', 'CO', 'formula', 'incorrect'],
+    ['SO42-', 'SO₄²⁻', 'formula', 'correct'], ['FeCl3.2H2O', 'FeCl₃·2H₂O', 'formula', 'correct'],
+    ['2Na + 2H2O -> 2NaOH + H2', '2Na(s) + 2H₂O(l) ⟶ 2NaOH(aq) + H₂(g)', 'equation', 'correct'],
+    ['4Na + 4H2O -> 4NaOH + 2H2', '2Na(s) + 2H₂O(l) ⟶ 2NaOH(aq) + H₂(g)', 'equation', 'form'],
+    ['Na + H2O -> NaOH + H2', '2Na(s) + 2H₂O(l) ⟶ 2NaOH(aq) + H₂(g)', 'equation', 'incorrect'],
+    ['8H+ + MnO4- + 5e- -> Mn2+ + 4H2O', '8H⁺(aq) + MnO₄⁻(aq) + 5e⁻ ⟶ Mn²⁺(aq) + 4H₂O(l)', 'equation', 'correct'],
+  ]) {
+    const verdict = checkChem(typed, key, { form });
+    assert.equal(verdict.status, status, `${typed} against ${key}`);
+    assert.ok(flat.includes(`\`${typed}\``), `the playbook's table shows ${typed}`);
+    if (verdict.message) assert.ok(flat.includes(verdict.message.slice(0, 40)), `the playbook quotes the feedback for ${typed}`);
+  }
+  assert.ok(chemKeyProblem('SO42-', 'formula'), 'the lint refuses a key that reads two ways');
+  assert.ok(chemKeyProblem('Na + H₂O ⟶ NaOH + H₂', 'equation'), 'the lint refuses an unbalanced equation key');
+  assert.match(chem, /An\s+equation\s+key\s+balances,\s+in\s+atoms\s+and\s+in\s+charge,\s+in\s+lowest\s+terms/);
+
   // Figures and Knowledge Checks.
   assert.match(chem, /every\s+image\s+ships\s+as\s+the\s+source's\s+raster\s+through\s+`mediafigure`/);
   assert.match(chem, /set\s+`kind`\s+on\s+every\s+figure/);

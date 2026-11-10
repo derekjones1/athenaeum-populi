@@ -34,12 +34,21 @@
  * printed in the question.
  */
 
+import { checkChem } from './check-chem.mjs';
+
 const DIACRITICS = /[̀-ͯ]/g;
 const DASHES = /[‐‑‒–—−]/g;
 // U+02B9 (modifier letter prime) is what OpenStax types for 5ʹ/3ʹ in some
 // modules; it is a letter to Unicode, so the letter filter would keep it.
 const QUOTES = /[‘’‚‛′ʹʼ]/g;
 const LEADING_ARTICLE = /^(?:a|an|the) /;
+// The three element names English spells two ways, and every word built on
+// them: sulphate, sulphuric, aluminium, caesium. IUPAC itself prints
+// "aluminium" and "caesium" where OpenStax prints "aluminum" and "cesium", so
+// a compound's name typed either way is the same name (November 9, 2026,
+// before Chemistry 2e's nomenclature chapter: a fold here, not an accept
+// member on every sulfate).
+const BRITISH = [[/sulph/g, 'sulf'], [/\baluminium\b/g, 'aluminum'], [/\bcaesium\b/g, 'cesium']];
 
 /**
  * Canonical form of a learner's or author's text: Unicode-decomposed with
@@ -74,6 +83,7 @@ function canonical(value, hyphen) {
   text = text.replace(/[^\p{L}\p{N}\s]/gu, ' ');
   text = text.replace(/\s+/g, ' ').trim();
   text = text.replace(LEADING_ARTICLE, '');
+  for (const [pattern, american] of BRITISH) text = text.replace(pattern, american);
   return text;
 }
 
@@ -134,9 +144,23 @@ export function matchesForm(normalized, form) {
 }
 
 /**
- * @returns {'empty'|'correct'|'incorrect'}
+ * Grade a response and say why: `{ status, message? }`. A `form` of
+ * `formula` or `equation` hands the response to check-chem.mjs, which reads
+ * capitals, subscripts, charges, and coefficients where this module reads
+ * words; its `form` status is a right answer not yet in the form asked for,
+ * as the math grader's is.
  */
-export function checkText(input, answer, { accept = '' } = {}) {
+export function gradeText(input, answer, { accept = '', form = '' } = {}) {
+  if (form) return checkChem(input, answer, { accept, form });
+  return { status: checkText(input, answer, { accept }) };
+}
+
+/**
+ * @returns {'empty'|'correct'|'incorrect'|'form'} — `form` only under a
+ * chemistry `form`.
+ */
+export function checkText(input, answer, { accept = '', form = '' } = {}) {
+  if (form) return checkChem(input, answer, { accept, form }).status;
   const normalized = normalizeText(input);
   if (!normalized) return 'empty';
   const forms = acceptedForms(answer, accept);

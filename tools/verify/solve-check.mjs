@@ -258,8 +258,10 @@ export function gradeAnswer(exercise, written) {
     if (verdict === 'correct' || verdict === 'form') return { status: 'agrees', detail: `${written}${verdict === 'form' ? ' (form differs)' : ''}` };
     return { status: 'disagrees', detail: `solver: "${written}"; key: "${exercise.params.answer}" (${verdict})` };
   }
-  const verdict = checkText(written, exercise.params.answer || '', { accept: exercise.params.accept || '' });
-  if (verdict === 'correct') return { status: 'agrees', detail: written };
+  const verdict = checkText(written, exercise.params.answer || '', { accept: exercise.params.accept || '', form: exercise.params.answerForm });
+  // Under a chemistry form, 'form' is the right atoms or a balanced multiple
+  // written another way: the key is confirmed, as a fill-in's is.
+  if (verdict === 'correct' || verdict === 'form') return { status: 'agrees', detail: `${written}${verdict === 'form' ? ' (form differs)' : ''}` };
   return {
     status: 'disagrees',
     detail: `solver: "${written}"; key: "${exercise.params.answer}"${exercise.params.accept ? ` (accept: ${exercise.params.accept})` : ''}`,

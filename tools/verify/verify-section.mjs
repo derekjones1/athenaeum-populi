@@ -248,11 +248,11 @@ for (const f of files) {
   for (const { params: p } of shortcodes(interactiveSrc, 'textin')) {
     const where = `textin (${(p.question || '?').slice(0, 40)}…)`;
     if (p.answer != null) {
-      if (checkText(p.answer, p.answer, { accept: p.accept }) !== 'correct') {
+      if (checkText(p.answer, p.answer, { accept: p.accept, form: p.answerForm }) !== 'correct') {
         bad(`${where}: answer ${JSON.stringify(p.answer)} does not self-grade 'correct'`);
       }
       for (const member of (p.accept || '').split('|').filter(Boolean)) {
-        if (checkText(member, p.answer, { accept: p.accept }) !== 'correct') {
+        if (checkText(member, p.answer, { accept: p.accept, form: p.answerForm }) !== 'correct') {
           bad(`${where}: accept member ${JSON.stringify(member)} does not grade 'correct' against the answer`);
         }
       }

@@ -78,7 +78,15 @@ cannot resume the old session's ids. Five things the pilot added:
 4. **Extraction** (`tools/source/chemistry-prep.py`):
    `inventory N > $SP/chN-inventory.txt` (per module: objectives, keyed and
    unkeyed exercises, Check Your Learning, figures, tables, feature boxes)
-   and, per module, `keys <moduleId> > $SP/keys-N.M.txt`. The printed
+   and, per module, `keys <moduleId> > $SP/keys-N.M.txt`. Then
+   `node tools/source/chemistry-shapes.mjs N > $SP/chN-shapes.txt` (add
+   `--list` for every keyed unit): each section's keyed answers by shape —
+   number, formula, equation, words, sentence, drawing — with the
+   component the playbook's table gives it, and a FLAG on every keyed
+   formula the grader cannot read and every keyed equation that does not
+   balance. A flag is a source defect or a shape the forms do not take;
+   the parent rules on each in the run facts before the wave (chapter 2
+   has one, 2.7's "AIF₃·3H₂O" with a capital I for the l). The printed
    exercise number is the module's own number plus the count of exercises
    in the modules before it; put the offsets in the run facts.
 5. **Landing page** `content/physical-sciences/chemistry/NN-<slug>/_index.md`

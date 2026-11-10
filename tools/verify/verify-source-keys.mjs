@@ -109,6 +109,7 @@ import { integerFlag, parseCliArgs } from '../lib/cli.mjs';
 import { shortcodes } from '../lib/content.mjs';
 import { parseSortbinsConfig } from '../../assets/js/lib/text/check-sortbins.mjs';
 import { foldedForms } from '../../assets/js/lib/text/check-text.mjs';
+import { chemCanon } from '../../assets/js/lib/text/check-chem.mjs';
 import { readNumeral } from '../../assets/js/lib/math/significant-figures.mjs';
 import {
   KEYED_ONLY_BOOKS, keyedUnits, plain as foldedPlain, printedNumerals, unitFor,
@@ -1237,6 +1238,7 @@ export function pageItems(markdown) {
       question: sc.params.question || '',
       answer: sc.params.answer || '',
       accept: sc.params.accept || '',
+      form: sc.params.answerForm || '',
     });
   }
   for (const sc of shortcodes(markdown, 'sortbins')) {
@@ -1940,12 +1942,34 @@ const withoutArticle = (value) => foldedPlain(value).replace(/^(?:an?|the) /, ''
  *                                    book does not render it
  */
 export function judgeKeyedUnit(item, units) {
-  if (!['multiplechoice', 'fillin', 'selfcheck'].includes(item.type)) return null;
+  if (!['multiplechoice', 'fillin', 'selfcheck', 'textin'].includes(item.type)) return null;
   const unit = unitFor(item.question, units);
   if (!unit) return null;
   const exercise = { id: unit.id };
   if (!unit.keyed) {
     return { status: 'unkeyed-unit', exercise, detail: `source ${unit.id} prints no answer, and this book renders only keyed exercises — remove the item` };
+  }
+  if (item.type === 'textin') {
+    const differs = {
+      status: 'key-differs',
+      exercise,
+      detail: `textin keys ${JSON.stringify(item.answer)} but source ${unit.id} answers ${JSON.stringify(unit.answer.slice(0, 140))}`,
+    };
+    if (item.form) {
+      // A formula or an equation: the key and the source's answer are read
+      // by the grader's own parser, so "Mn _3 (PO _4 ) _2" and "Mn₃(PO₄)₂"
+      // are one formula. An answer that lists several things ("ionic,
+      // Ba²⁺, O²⁻"; an equation followed by a mass) is read piece by piece.
+      const key = chemCanon(item.answer, item.form);
+      const pieces = [unit.answer, ...unit.answer.split(/[,;]|\s(?:and|or)\s/)]
+        .map((piece) => chemCanon(piece.trim().replace(/[.:]$/, ''), item.form)).filter(Boolean);
+      return key && pieces.includes(key) ? { status: 'confirmed', exercise } : differs;
+    }
+    // A name or a word: the answer prints it, plural fold included.
+    const answer = ` ${foldedPlain(unit.answer)} `;
+    const key = foldedPlain(item.answer);
+    const printed = [key, ...foldedForms(key)].some((form) => form && answer.includes(` ${form} `));
+    return printed ? { status: 'confirmed', exercise } : differs;
   }
   if (item.type === 'multiplechoice') {
     const answer = ` ${foldedPlain(unit.answer)} `;

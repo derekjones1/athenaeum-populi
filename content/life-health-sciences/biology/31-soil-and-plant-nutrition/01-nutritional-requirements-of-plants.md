@@ -179,7 +179,7 @@ chlorosis
 {{< textin
   question="________ is part of certain amino acids, such as cysteine and methionine, and is present in several coenzymes."
   answer="sulfur"
-  accept="S|sulphur"
+  accept="S"
   hint="See the long paragraph that follows the cellulose figure."
 >}}
 

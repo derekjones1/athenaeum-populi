@@ -124,7 +124,7 @@ Organisms in an ecosystem acquire energy in a variety of ways, which is transfer
 {{< textin
   question="Many chemoautotrophs in hydrothermal vents use ________, which is released from the vents, as a source of chemical energy."
   answer="hydrogen sulfide"
-  accept="H2S|hydrogen sulphide"
+  accept="H2S"
   hint="Reread the paragraph on chemoautotrophs just above the hydrothermal-vent photograph."
 >}}
 

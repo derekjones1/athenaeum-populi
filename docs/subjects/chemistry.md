@@ -141,6 +141,11 @@ The component follows the SHAPE of the source's keyed answer:
 | an SI prefix's factor ("× 10⁻²") | `fillin` keyed with the bare power of ten, `answer="10^{-2}"`, under `sig-figs:1 last-digit:0` — a bare power-of-ten key is an exact factor, so `0.010` and `1.0×10⁻²` are right too ("Measured quantities") |
 | the name of a unit that is one word or a counted word ("meters", "kilograms", "square meters", "cubic meters") or of a prefix ("centi") | `textin`; the accept list holds the symbol without operators (`m`, `kg`, `m3`) and every crossing the plural fold cannot reach, which folds the LAST word only: `meters squared\|meter squared\|metres squared\|metre squared` |
 | a unit that is a quotient or a product ("meters/second", "kilograms/cubic meter"), or one whose degree sign is the point ("kelvin", never "°K") | `multiplechoice` whose distractors are the confusions the part tests — the product, the inverse, a wrong power, "degrees kelvin" — and never another unit the body allows for the quantity. The text grader reads `/`, `·`, `×`, `*`, and `°` as spaces, so as a `textin` the product passes for the quotient: a key or accept member carrying one is a lint error in this book |
+| the name of a compound or an ion ("chromium(III) oxide", "the selenide ion") | `textin`. Capitals, the spaces around a parenthesis, and the parentheses themselves are free; the Roman numeral and every word are not. The grader reads sulph- as sulf-, aluminium as aluminum, and caesium as cesium, so those are never `accept` members; a second name the module itself prints ("ferric nitrate") is |
+| a formula or an ion's symbol ("Mn₃(PO₄)₂", "FeCl₃·2H₂O", "Se²⁻", "¹⁴C") | `textin` with `answerForm="formula"` ("Formulas and equations") — never a plain `textin`, which reads `CO` as `Co` (lint) |
+| a balanced equation, a half-reaction, a net ionic equation | `textin` with `answerForm="equation"` ("Formulas and equations") |
+| several of these at once ("calcium, Ca"; "ionic, Ba²⁺, O²⁻"; an equation and a mass) | one item per piece, each stem saying which: the classification as a `multiplechoice` first, then a formula `textin` per ion |
+| a nuclide symbol with both numbers, or counts of particles ("47 protons, 47 electrons, 62 neutrons") | one `whole-number` `fillin` per number, and a formula `textin` for the element's symbol where the key prints one |
 | two or more quantities ("5371 °F, 3239 K"; a range; a ratio) | one `fillin` per quantity, each stem saying which |
 | an explanation, a list, a description, "answers will vary" | `selfcheck` with the source solution as the model answer and a rubric |
 | a drawing | `selfcheck` with the figure in the model answer ("Figures") |
@@ -500,6 +505,75 @@ pool is the 873 keyed end-of-section exercises and the 288 Check Your
 Learning items. The 863 unkeyed exercises are not given author-derived
 keys.
 
+### Formulas and equations: `answerForm="formula"`, `answerForm="equation"`
+
+About 60 keyed answers are a formula and about 200 are an equation, from
+chapter 2 on. A `textin` that declares one of these forms is read by
+`assets/js/lib/text/check-chem.mjs` — capitals, subscripts, grouping,
+charge, hydrate, coefficients — where a plain `textin` reads words:
+
+```
+{{</* textin
+  question="Write the formula of the following ionic compound: manganese(II) phosphate."
+  answer="Mn₃(PO₄)₂"
+  answerForm="formula"
+  hint="Find the charge of each ion, then the smallest numbers of each that cancel."
+*/>}}
+
+{{</* textin
+  question="Balance the following equation: Na(s) + H₂O(l) ⟶ NaOH(aq) + H₂(g)."
+  answer="2Na(s) + 2H₂O(l) ⟶ 2NaOH(aq) + H₂(g)"
+  answerForm="equation"
+  hint="Balance the element that appears in the fewest substances first."
+*/>}}
+```
+
+What the learner types, and sees. The field carries its own typing guide
+("Type subscripts as plain numbers and a charge after ^: Mn3(PO4)2,
+SO4^2-."), so no stem spends a sentence on it, and it shows what it has
+read in the book's print as the learner types ("Read as: SO₄²⁻").
+
+| Typed | Against | Verdict | Feedback |
+|---|---|---|---|
+| `Mn3(PO4)2`, `Mn_3(PO_4)_2`, `Mn₃(PO₄)₂` | `Mn₃(PO₄)₂` | correct | |
+| `Mn3P2O8`, `ClNa` for `NaCl` | | form | "That has the right atoms — now write the formula in its usual order and grouping." |
+| `nacl`, `NACL` | `NaCl` | form | "Those are the right letters — now fix the capitals…" |
+| `Co` | `CO` | incorrect | |
+| `SO4^2-`, `SO42-`, `SO4-2`, `SO₄²⁻` | `SO₄²⁻` | correct | |
+| `FeCl3.2H2O`, `FeCl3*2H2O`, `FeCl₃·2H₂O` | `FeCl₃·2H₂O` | correct | |
+| `2Na + 2H2O -> 2NaOH + H2`, the species in any order within a side, with or without state symbols, `=` or `→` for the arrow | the equation above | correct | |
+| `4Na + 4H2O -> 4NaOH + 2H2` | | form | "That is balanced — now write it with the smallest whole-number coefficients." |
+| `Na + H2O -> NaOH + H2` | | incorrect | "Those are the right substances, but the equation is not balanced…" |
+| `8H+ + MnO4- + 5e- -> Mn2+ + 4H2O` | the half-reaction | correct | |
+
+Rules for the key and the stem:
+
+- **The key is written in the book's print**, in Unicode, as every formula
+  in prose is ("Notation"): `Mn₃(PO₄)₂`, `SO₄²⁻`, `FeCl₃·2H₂O`, `¹⁴C`,
+  `2Na(s) + 2H₂O(l) ⟶ 2NaOH(aq) + H₂(g)`. A charge is a superscript, so the
+  key reads one way (lint); the learner's bare `SO42-` is read every way it
+  can be and is right when one reading is the key.
+- **An equation key balances, in atoms and in charge, in lowest terms**
+  (lint). A source key that fails is a suspected source defect: the scan
+  that sized this form found four in the book: chapter 4's "MgC1₂" (a
+  digit for the letter), and in chapter 19 "3Cl⁺" for a chloride, "MnO⁴⁻"
+  for permanganate, and an iron(III) ion printed without its charge.
+- **An equation key keeps the source's state symbols**; a response may
+  leave them out, and a state the learner types is compared.
+- **A formula's `accept`** holds the other formulas the MODULE prints for
+  the substance (`CH3COOH|HC2H3O2` beside `CH₃CO₂H`), typed plainly. An
+  equation takes none: order within a side is already free.
+- **The stem is prose** — a `textin` question takes no `$…$` — so a formula
+  or an equation the stem prints is Unicode text, state symbols included.
+- **A formula or equation the stem prints is replayed** (`verify:replay`):
+  "Determine the empirical formula: sucrose, C₁₂H₂₂O₁₁" is answered by its
+  own stem, and is recorded as a sound coincidence or it fails.
+- **Not read by these forms**, and a `selfcheck` until the chapter that
+  meets them first settles a form: an electron configuration
+  (`[Kr]4d¹⁰5s²`, chapter 6), an ordering ("Rb < Li < N < F", chapter 6),
+  a nuclear equation with both numbers on every nuclide (chapter 21), a
+  condensed structural formula with its bonds drawn (chapter 20).
+
 ### Measured quantities: `sig-figs:<n> last-digit:<k>`
 
 A computed quantity is keyed with the digits its data support (`0.674 M`,
@@ -671,10 +745,23 @@ Settled by chapter 1 (November 9, 2026; narrative in
 
 Still open:
 
-- the Knowledge Check quota per section — decided with the first check
-  (chapters 1–3);
-- the item form for a keyed answer that is a formula, a name, or a balanced
-  equation — chapter 1 has none; chapter 2 meets them first;
+- the Knowledge Check quota per section, and where its items come from —
+  decided with the first check (chapters 1–3). Proposed November 9, 2026,
+  not yet decided: two to three items per section (34–51, 16–24, 30–45,
+  34–51, 42–63, 22–33, 50–75 by block), at least one auto-graded, and where
+  the section has a worked example (86 of 114 do; 289 examples) one item
+  re-asks a worked example, whose answer the source prints, so the check
+  is quantitative without an author-derived key; the rest are recall items
+  from the module's text, as in the life-sciences checks. The unkeyed
+  exercises were measured as a pool and set aside: only about one in five
+  sits beside a keyed twin close enough to vouch for its method;
+- the item form for an electron configuration and for an ordering
+  (chapter 6), for a condensed structural formula (chapter 20), and for a
+  nuclear equation (chapter 21) — each a `selfcheck` until its chapter
+  settles it ("Formulas and equations");
+- a browser test that types a formula and an equation into the real field:
+  the grader, the lint, and the gates are unit-tested, and chapter 2's
+  first page is the first place the suite can type one;
 - site-wide, found by the rendered-page reading and left for a design
   decision: the compact navbar covers the right end of the article's top
   line between 1100 and 1280 px; a practice card leaves about 50 px above

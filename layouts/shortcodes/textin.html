@@ -12,6 +12,10 @@
                spelling, abbreviation) graded as correct too; a regular
                s/es plural, and the regular singular of a plural, is folded
                by the grader and must not be listed
+    answerForm optional: "formula" or "equation" — the answer is a chemical
+               formula (`Mn₃(PO₄)₂`, `SO₄²⁻`) or a balanced equation, read
+               by check-chem.mjs with its capitals, subscripts, charges, and
+               coefficients, where a word is read without them
     hint       optional hint
 
   Nothing else: `answerDisplay` and `placeholder` were accepted for a year
@@ -26,10 +30,12 @@
 {{- if or (not (trim ($question | default "") " ")) (not (trim ($answer | default "") " ")) -}}
   {{- errorf "textin shortcode needs both a non-empty 'question' and 'answer' (%s)" .Position -}}
 {{- end -}}
-{{- range (slice "answerMode" "answerForm") -}}
-  {{- with $.Get . -}}
-    {{- errorf "textin does not take %q — it grades words, not values; use fillin for a math answer (%s)" . $.Position -}}
-  {{- end -}}
+{{- with .Get "answerMode" -}}
+  {{- errorf "textin does not take \"answerMode\" — it grades words, not values; use fillin for a math answer (%s)" $.Position -}}
+{{- end -}}
+{{- $answerForm := .Get "answerForm" | default "" -}}
+{{- if and $answerForm (not (in (slice "formula" "equation") $answerForm)) -}}
+  {{- errorf "textin answerForm %q is not a text form — use \"formula\" or \"equation\"; a numeric answer is a fillin (%s)" $answerForm .Position -}}
 {{- end -}}
 {{- range (slice "answerDisplay" "placeholder") -}}
   {{- with $.Get . -}}
@@ -45,6 +51,7 @@
 <text-in
   data-answer="{{ $answer }}"
   {{ with .Get "accept" }}data-accept="{{ . }}"{{ end }}
+  {{ with $answerForm }}data-answer-form="{{ . }}"{{ end }}
   data-question="{{ $question }}">
   <div class="ap-textin">
     <p class="ap-textin-question">{{ partial "mathtext" $question }}</p>

@@ -161,3 +161,55 @@ redirect that fails its TLS handshake, kept linked and disclosed). Baselines: ke
 rendered-page readers at 150–170k tokens each, the consistency reader at
 about 210k, six fixers at 75–160k, the fix checker at about 165k, the
 re-solve at about 150k.
+
+## Before chapter 2: the forms chapter 1 never met (November 9, 2026)
+
+Chapter 1 keys no formula, name, or equation; chapter 2 keys about 50
+formulas and about 60 names and classifications, and chapter 4 keys 38
+balanced equations. The work
+done between the two chapters, so chapter 2's authors meet a finished
+form and not a ruling made mid-wave:
+
+- **A scan of every keyed answer by shape** (`tools/source/chemistry-shapes.mjs`,
+  now a prep step): about 60 formulas, 200 equations, and several hundred
+  names across the book. Run over the book, the equation reader found four
+  keyed equations that do not balance — "MgC1₂" with a digit for the
+  letter in chapter 4; "3Cl⁺", "MnO⁴⁻", and an iron(III) ion without its
+  charge in chapter 19 — before any author had read them, and chapter 2's
+  "AIF₃·3H₂O" with a capital I.
+- **`textin` gained `answerForm="formula"` and `"equation"`**
+  (`assets/js/lib/text/check-chem.mjs`). The word grader lowercases, so
+  `CO` passed for `Co`; the math field cannot type words. The new reader
+  takes what a plain keyboard types (`Mn3(PO4)2`, `SO42-`,
+  `2H2 + O2 -> 2H2O`), compares structures, and separates a wrong answer
+  from a right one in the wrong form (atoms right and order wrong;
+  balanced by a multiple). The field shows what it has read, in the book's
+  print, as the learner types. Reusing `textin` rather than adding a
+  component kept the ledger, the solve packets, and the source gates
+  working unchanged; the keys gate, the replay gate, and the lint each
+  learned the form.
+- **Names stayed a plain `textin`**: the grader already read
+  "chromium (III) oxide" and "chromium(iii) oxide" as one name. It now also
+  reads sulph- as sulf-, aluminium as aluminum, and caesium as cesium,
+  which made three accept members in the life-sciences books redundant
+  (removed; ledger records carried).
+- **Two lints from the pilot's lessons**: a fill-in hint that opens with an
+  arithmetic imperative or rules on the number's digits; a formula keyed as
+  a word.
+- **Three site-wide defects the rendered-page reading had found** were
+  fixed in the stylesheet: the folded navbar covered the right end of the
+  article at every width below 1280 px (it is now a full-width strip
+  there); an empty status line reserved 32 px on every practice card; the
+  attribution footer inherited the body's 28 px leading at 12.8 px type on
+  every page of every book. Eight footers written as an HTML block, three
+  of which printed their links as raw Markdown, were rewritten and the
+  form is now a lint error.
+- **Measured and left as they are**: an inline `\frac` sets its digits at
+  13.6 px (the readers had guessed 9 to 11) and `\dfrac` at 19.4 px,
+  pushing the line below it from 28 to about 45 px away; the ban on
+  `\dfrac` stands until it is scoped to exercise stems, if at all.
+- **Found and not yet decided**: the Knowledge Check quota and where its
+  items come from (the playbook's "Still open" holds the proposal and the
+  counts); and the thirteen appendices, which are not mapped — the
+  chapters link into them 73 times, 36 of them to Appendix G's
+  thermodynamic data, which chapter 5's keyed exercises read.
