@@ -118,7 +118,7 @@ import { integerFlag, parseCliArgs } from '../lib/cli.mjs';
 import { shortcodes } from '../lib/content.mjs';
 import { mediaBindings } from '../lib/exercise-context.mjs';
 import {
-  KEYED_EXERCISE_CLASS, KEYED_ONLY_BOOKS, checkYourLearning, markedStemText, plain, sequentialParts, unitScore,
+  KEYED_EXERCISE_CLASS, KEYED_ONLY_BOOKS, checkYourLearning, markedStemText, plain, readingRank, sequentialParts, unitScore,
 } from '../lib/keyed-units.mjs';
 import { MATCH_FLOOR } from './verify-source-keys.mjs';
 
@@ -669,8 +669,9 @@ export function scoreItem(unit, item) {
     // must print the part itself beside a lead-in that reads like the
     // exercise's (keyed-units.mjs `unitScore`). Sibling parts share every
     // word but their own, so nothing weaker tells them apart.
-    const { score, words } = unitScore(unit, item.question, item);
-    return score > 0 ? { score, how: score === 1 ? 'part' : 'part-restated', tie: words } : { score: 0, how: null, tie: 0 };
+    const reading = unitScore(unit, item.question, item);
+    const { score } = reading;
+    return score > 0 ? { score, how: score === 1 ? 'part' : 'part-restated', tie: readingRank(reading) } : { score: 0, how: null, tie: 0 };
   }
   const stem = plain(unit.stem);
   const run = transcribed(unit.stem, item.text);

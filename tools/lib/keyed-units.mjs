@@ -44,7 +44,6 @@ const RESTATED_SCORE = 0.9;
 const LEAD_FLOOR = 0.25;
 /** A whole (unlettered) exercise is matched at verify-source-keys' own floor. */
 const WHOLE_FLOOR = 0.5;
-
 const SUBSCRIPTS = /[₀-₉]+/g;
 const SUPERSCRIPTS = /[⁰¹²³⁴-⁹]+/g;
 /**
@@ -317,9 +316,34 @@ export function keyedUnits(xml) {
  * item is bound to (exercise-context.mjs `mediaBindings`), read only for a
  * part that is nothing but an image.
  */
+/**
+ * A stem with nothing but its characters: TeX control words, math
+ * delimiters, script marks, and spaces gone, compatibility forms folded
+ * (`As³⁺`, `\ce{As^3+}`, and the source's "As 3+" are all `as3+`), a minus
+ * sign of any kind a hyphen. `plain` drops a charge's sign with the rest of
+ * the punctuation; this keeps it, and tells As³⁺ from As³⁻.
+ */
+const tight = (value) => String(value ?? '').normalize('NFKC').replace(/\\[a-zA-Z]+/g, '')
+  .replace(/[\s${}^_\\]/g, '').replace(/[−–]/g, '-').toLowerCase();
+
+/** How many times a space-padded phrase stands in a space-padded text; two in a row share the space between them. */
+const occurrences = (needle, haystack) => {
+  let count = 0;
+  for (let at = haystack.indexOf(needle); at !== -1; at = haystack.indexOf(needle, at + needle.length - 1)) count += 1;
+  return count;
+};
+
 export function unitScore(unit, question, item = {}) {
+  // How much the question reads like THIS unit's whole stem, and whether it
+  // prints the part character for character: what ranks two units that both
+  // pass (`unitFor`). Sibling parts and twin exercises share most words.
+  const near = tokenSimilarity(question, unit.stem);
   if (unit.partText !== null && unit.partText !== undefined) {
     const part = plain(unit.partText);
+    // The length of the part printed character for character, so that of
+    // "NO 2" and "NO 2 −" under one lead-in the longer one the question
+    // prints is its part.
+    const exact = part && tight(question).includes(tight(unit.partText)) ? tight(unit.partText).length : 0;
     if (!part) {
       // A part that is only an image: every sibling's item prints the same
       // words, so the part is the one whose image the item is bound to
@@ -327,10 +351,17 @@ export function unitScore(unit, question, item = {}) {
       // lead-in that reads like the exercise's.
       const bound = Boolean(item.figure) && (unit.media || []).includes(item.figure);
       const lead = unit.lead ? tokenSimilarity(unit.lead, question) : 1;
-      return bound && lead >= LEAD_FLOOR ? { score: 1, words: 0 } : { score: 0, words: 0 };
+      return bound && lead >= LEAD_FLOOR ? { score: 1, words: 0, near, exact: 0 } : { score: 0, words: 0 };
     }
     const words = part.split(' ').length;
-    if (!padded(plain(question)).includes(padded(part))) {
+    const asked = padded(plain(question));
+    // A part whose words the lead-in itself prints ("mm Hg" under a lead
+    // that gives a pressure in mm Hg; the element In under any lead with
+    // the word "in") is printed by every sibling's item. It is this part's
+    // item only when it prints them once more than the lead does.
+    const inLead = unit.lead ? occurrences(padded(part), padded(plain(unit.lead))) : 0;
+    const printed = occurrences(padded(part), asked) > inLead;
+    if (!printed) {
       // A part the page had to restate — "the cube in part (a)" replaced by
       // that part's given data, a trailing "Explain." moved to the selfcheck
       // beside it — is still its part when the question prints most of a
@@ -344,22 +375,63 @@ export function unitScore(unit, question, item = {}) {
       // be read into an item that carries the other's lead-in.
       const underOwnLead = !unit.lead || phraseCoverage(unit.lead, question) >= RESTATED_FLOOR;
       const share = words >= RESTATED_WORDS && underOwnLead ? phraseCoverage(unit.partText, question) : 0;
-      return share >= RESTATED_FLOOR ? { score: RESTATED_SCORE * share, words } : { score: 0, words: 0 };
+      return share >= RESTATED_FLOOR ? { score: RESTATED_SCORE * share, words, near, exact } : { score: 0, words: 0 };
     }
     const lead = unit.lead ? tokenSimilarity(unit.lead, question) : 1;
-    return lead >= LEAD_FLOOR || words >= STANDALONE_WORDS ? { score: 1, words } : { score: 0, words: 0 };
+    return lead >= LEAD_FLOOR || words >= STANDALONE_WORDS ? { score: 1, words, near, exact } : { score: 0, words: 0 };
   }
   const score = tokenSimilarity(question, unit.stem);
-  return { score: score >= WHOLE_FLOOR ? score : 0, words: 0 };
+  return { score: score >= WHOLE_FLOOR ? score : 0, words: 0, near, exact: 0 };
 }
 
-/** The unit a page question transcribes, or null (`item` as in `unitScore`). */
+/**
+ * The order of two passing readings of ONE exercise's parts, best first:
+ * the stronger score (a part printed verbatim over one restated); then the
+ * unit whose whole stem the question reads most like; then the longer part
+ * printed character for character (a charge's sign included); then the
+ * longer part in words.
+ */
+export const compareReadings = (a, b) => b.score - a.score || (b.near ?? 0) - (a.near ?? 0)
+  || (b.exact ?? 0) - (a.exact ?? 0) || b.words - a.words;
+
+/** One number that orders readings as `compareReadings` does, for a sort that has only a `tie`. */
+export const readingRank = ({ near = 0, exact = 0, words = 0 }) => Math.round(near * 1000) * 1e6 + Math.min(exact, 999) * 1000 + Math.min(words, 999);
+
+/**
+ * The unit a page question transcribes, or null (`item` as in `unitScore`).
+ *
+ * Chosen in two steps, because two different things are being told apart.
+ * FIRST the exercise: of every exercise with a passing unit, the one whose
+ * stem the question reads most like, whole. Twin exercises put one part
+ * ("Br", "0.710 kg of sodium carbonate…") under two lead-ins, and a short or
+ * generic part of another exercise ("volume", "What is the rate constant?")
+ * is printed by many questions verbatim — a score of 1 that says nothing
+ * about which exercise is asked. THEN the part within it (`compareReadings`):
+ * siblings share the lead-in, so there the part's own evidence decides.
+ * Chapter 1 never needed the first step; the whole-book probe
+ * (tools/source/chemistry-gate-probe.mjs) found about a hundred keyed parts
+ * from chapter 2 on that were read as another exercise without it.
+ */
 export function unitFor(question, units, item = {}) {
-  let best = null;
+  const groups = new Map();
   for (const unit of units) {
-    const { score, words } = unitScore(unit, question, item);
-    if (score === 0) continue;
-    if (!best || score > best.score || (score === best.score && words > best.words)) best = { unit, score, words };
+    const reading = unitScore(unit, question, item);
+    if (reading.score === 0) continue;
+    const group = groups.get(unit.group) || { near: -1, score: 0, keyed: false, readings: [] };
+    group.keyed = group.keyed || Boolean(unit.keyed);
+    group.near = Math.max(group.near, reading.near ?? 0);
+    group.score = Math.max(group.score, reading.score);
+    group.readings.push({ unit, ...reading });
+    groups.set(unit.group, group);
   }
-  return best ? best.unit : null;
+  let best = null;
+  for (const group of groups.values()) {
+    // Two exercises the question reads equally like: the stronger part,
+    // then the KEYED one — a page renders no unkeyed exercise, so a stem
+    // that is word for word a keyed exercise's and its unkeyed twin's
+    // (9.2: the two differ only in the figure they point at) is the keyed one.
+    const better = group.near - best?.near || group.score - best?.score || Number(group.keyed) - Number(best?.keyed);
+    if (!best || better > 0) best = group;
+  }
+  return best ? best.readings.sort(compareReadings)[0].unit : null;
 }

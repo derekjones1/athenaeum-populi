@@ -125,9 +125,20 @@ export function splitChemistry(latex) {
 // on `$...$` math delimiters.
 const ESCAPED_DOLLAR = '\uE000';
 
+/**
+ * A Markdown link read as its text. A stem may link an appendix ("Using the
+ * [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/),
+ * predict…"; docs/subjects/chemistry.md, page skeleton rule 9), the page
+ * renders the link, and an accessible name built from the raw prompt would
+ * otherwise speak the brackets and the whole path. Only a destination that
+ * is a site path or a URL counts, so interval notation followed by a
+ * parenthesis — `[2, 5](x)` — is never taken for a link.
+ */
+export const unlinked = (text) => text.replace(/\[([^\]\n]+)\]\((?:\/|https?:\/\/)[^)\s]*\)/g, '$1');
+
 /** The text with math delimiters stripped — the pre-engine accessible name. */
 export function plainMathText(text) {
-  return text
+  return unlinked(text)
     .replaceAll('\\$', ESCAPED_DOLLAR)
     .replaceAll('$', '')
     .replaceAll(ESCAPED_DOLLAR, '$')
@@ -140,7 +151,7 @@ export function plainMathText(text) {
  * `\cup`), which an accessible name must never expose.
  */
 export function speakableMathText(text, convertLatexToSpeakableText) {
-  const parts = text.replaceAll('\\$', ESCAPED_DOLLAR).split(/(\$[^$]*\$)/);
+  const parts = unlinked(text).replaceAll('\\$', ESCAPED_DOLLAR).split(/(\$[^$]*\$)/);
   const spoken = parts.map((part) => {
     if (part.length > 2 && part.startsWith('$') && part.endsWith('$')) {
       const latex = part.slice(1, -1).replaceAll(ESCAPED_DOLLAR, '\\$');

@@ -115,25 +115,41 @@ cannot resume the old session's ids. Five things the pilot added:
    also list **every appendix the chapter's modules link**
    (`grep -o 'document="m688[5-7][0-9]"'` over the modules; `m68859` is
    Appendix A … `m68871` Appendix M) with the page's site path, since an
-   appendix reference is a link (playbook, page skeleton rule 9).
-6a. **Gate probe.** The source gates were proven on the shapes of the
-   chapters already authored, and no others: before chapter 2 they could
-   not read a part that is only an image, a nuclide symbol, or a formula
-   its answer labels in words, and each would have failed a sound page
-   in the middle of the wave. For every shape in `$SP/chN-shapes.txt`
-   that no earlier chapter carried, build ONE item by hand as the
-   playbook's table shapes it and judge it against the real module —
-   `judgeKeyedUnit(item, keyedUnits(xml))` from
-   `tools/verify/verify-source-keys.mjs` and `tools/lib/keyed-units.mjs`,
-   in a ten-line script under `$SP/parent-only/` — with the right key
-   (`confirmed`, or `prose-key` for words the answer does not print) and
-   a wrong one (`key-differs`). `null` means the gate does not see the
-   item as its exercise: fix the gate, with a test, before the wave, not
-   the page after it. Grade the same key and its natural near-misses
-   through the grader (`gradeText`, `checkAnswer`), and write what the
-   probe showed into the run facts. The probe is the only early reading
-   the gates give: `verify-section` does not run them, so an author never
-   sees a gate failure, and the parent first sees one after `build-map`.
+   appendix reference is a link (playbook, page skeleton rule 9) — and
+   **every appendix the chapter's content NEEDS without linking it**: a
+   stem or example that says "using the periodic table" on a page with
+   none, an exercise whose data are in an appendix table
+   (`grep -n -i 'periodic table\|appendix'` over the keys files is the
+   first pass; the parent reads the hits). Those are linked too
+   *(Derek, November 10, 2026)*, and the facts name the section, the
+   phrase, and the appendix path for each.
+6a. **Gate probe.** `node tools/source/chemistry-gate-probe.mjs N >
+   $SP/chN-probe.txt`. The source gates were written from the shapes of
+   the chapters already on the site, and a shape they have not met fails
+   a sound page in the middle of the wave, or lets a part go unrequired:
+   before chapter 2 they could not read a part that is only an image or
+   a nuclide symbol, and about a hundred keyed parts of the book were
+   read as ANOTHER exercise (one part under two lead-ins; a charge's
+   sign; a lead-in that prints a sibling's part). The probe builds, for
+   every keyed unit of the chapter, the item the page will carry — the
+   source's own stem, the source's own answer as its key — and asks both
+   gates what they will be asked of the real page. Every line it prints
+   is ruled on in the run facts before the wave:
+   - `key not confirmed` — a source defect (2.7's "AIF₃"), or an answer
+     that is not the shape `chemistry-shapes` read (a label before a
+     drawing, a cell diagram): say which, and the item's form;
+   - `read as another` — two keyed exercises with one stem, word for
+     word (the difference was a figure or a cross-reference): the
+     page's two items must differ by the data each restates, and the
+     facts say how;
+   - `not seen`, `not covered`, `unkeyed read as rendered` — a gate to
+     fix, with a test, before the wave.
+   For a shape the playbook's table shapes in a way the probe does not
+   build (two items for one answer, a signed charge), add one hand-built
+   item: `judgeKeyedUnit(item, keyedUnits(xml))`, right key and wrong
+   key. The probe is the only early reading the gates give:
+   `verify-section` does not run them, so an author never sees a gate
+   failure, and the parent first sees one after `build-map`.
 7. Copy the briefs unchanged to `$SP/` (`author.md`, `checker.md`,
    `claim-pass.md`, `consistency.md`, `render-reader.md`). A run-specific
    correction to a brief is an edit to the repo copy, then the scratchpad
@@ -211,13 +227,15 @@ solve is re-solved (one-item packets) or carried (§0). Read every answer's
 **What the solve does not read, and who does.** The solver answers the
 auto-graded items; a `selfcheck` has no packet, and its model answer is
 held to the source by `verify:source-keys` and read by the checker alone.
-The source-keys gate confirms a `fillin` when its answer segment PRINTS the
-keyed number, so a part answered with several numbers ("3 protons, 3
-electrons, 4 neutrons") confirms any of them under any of its items: on
-such a part the checker's tick and the solver's answer are the readings
-that tell the numbers apart, and the parent reads the solver's note on
-each. The gate does not read a formula's atomic-number prescript either
-(`²³₁₁Na` and `²³₁₂Na` are one key to it).
+A figure-bound item is answered from the PICTURE (`solve.md`): the alt on
+the masked page is the author's reading of it, and a solver who reads only
+the alt repeats the author's mistake. The source-keys gate confirms a
+`fillin` when its answer segment prints the keyed number; where the
+segment names several ("3 protons, 3 electrons, 4 neutrons") it holds the
+item to the number its closing sentence asks for by name, so that sentence
+names one ("Enter the number of neutrons."). It does not read a formula's
+atomic-number prescript (`²³₁₁Na` and `²³₁₂Na` are one key to it): the
+checker reads that character.
 
 ## 4. Close-out, in this order
 

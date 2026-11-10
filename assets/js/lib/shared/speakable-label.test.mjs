@@ -81,3 +81,18 @@ test('speakableMathText names a compound the serializer would have dropped', () 
   assert.equal(speakableMathText('Simplify $\\tfrac{3}{4}$ for \\$5', spoken), 'Simplify <\\tfrac{3}{4}> for $5');
   assert.equal(plainMathText('Simplify $\\tfrac{3}{4}$ for \\$5'), 'Simplify \\tfrac{3}{4} for $5');
 });
+
+test('a linked stem is spoken as its words, never as brackets and a path', () => {
+  // docs/subjects/chemistry.md, page skeleton rule 9: a stem that sends the
+  // learner to an appendix links it. The page renders the link; the field's
+  // accessible name is built from the raw prompt.
+  const stem = 'Using the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), give the number of protons in an atom of tin.';
+  const heard = 'Using the periodic table, give the number of protons in an atom of tin.';
+  assert.equal(plainMathText(stem), heard);
+  assert.equal(speakableMathText(stem, spoken), heard);
+  assert.equal(plainMathText('Visit this [density simulation](http://openstax.org/l/16phetmasvolden) and weigh the block.'), 'Visit this density simulation and weigh the block.');
+  // Math is untouched: brackets before a parenthesis are not a link without a destination.
+  assert.equal(plainMathText('Evaluate $[2, 5](x)$ and $f[x](3)$.'), 'Evaluate [2, 5](x) and f[x](3).');
+  assert.equal(speakableMathText('Find $\\ce{[Co(NH3)6]^3+}$ in [Appendix K](/physical-sciences/chemistry/appendices/k-formation-constants-for-complex-ions/).', spoken),
+    speakableMathText('Find $\\ce{[Co(NH3)6]^3+}$ in Appendix K.', spoken));
+});

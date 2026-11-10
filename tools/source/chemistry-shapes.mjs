@@ -50,6 +50,9 @@ const NUMBER = /^[−–-]?\d[\d,.]*(?:\s*[×x]\s*10\s*\^?\s*\{?[−–-]?\d+\}?
 export function shapeOf(answer) {
   const text = String(answer ?? '').replace(/\s+/g, ' ').trim().replace(/[.;]$/, '');
   if (!text) return { shape: 'drawing', component: 'selfcheck with the figure as the model answer' };
+  // "SeF₆:" is the label of a drawing that follows it, and "Yes" is not yttrium and einsteinium.
+  if (/:$/.test(text) && text.split(' ').length <= 8) return { shape: 'drawing', component: 'selfcheck with the figure as the model answer (the text is the drawing\'s label)' };
+  if (/^(?:yes|no)\b/i.test(text) && text.split(' ').length <= 8) return { shape: 'words', component: 'multiplechoice (yes or no), then a selfcheck for any reason' };
   const words = text.split(' ').length;
   if (ARROW.test(text)) {
     const arrows = (text.match(/⟶|→|⇌/g) || []).length;

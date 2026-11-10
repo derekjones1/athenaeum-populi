@@ -55,7 +55,10 @@ keys files.
   outside a captioned figure, any in an exercise stem, any that is a keyed
   answer. Tables: list, noting a table printed as an image. Feature boxes:
   class and title. Keyed-answer shapes the playbook's "Exercises" table
-  does not list: the exercise ids, or "none".
+  does not list: the exercise ids, or "none". Appendices: each one the
+  module links, and each one its content needs without linking (the
+  phrase, the items, the appendix's site path) — both are links on the
+  page.
 
 ## Parent decisions
 

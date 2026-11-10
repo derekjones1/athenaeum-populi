@@ -130,6 +130,25 @@ these differences:
    appendix ("Find the standard enthalpies of formation in Appendix G.")
    but takes no link: a hint is plain text.
 
+   **Where the content asks the learner to consult what an appendix
+   holds, the words are linked to that appendix even where the source
+   links nothing** *(Derek, November 10, 2026)*. The test is what the
+   learner must do, not what the source marked up: a stem, an example, or
+   a body sentence that sends the learner to a table the page itself does
+   not show — "Using the periodic table, predict…" on 2.6 and 2.7, which
+   show none (Appendix A); a formation enthalpy, a solubility product, an
+   ionization constant, a reduction potential, a half-life the item needs
+   and does not print (G, J, H and I, L, M); a conversion factor or a
+   constant the page's own tables lack (C, D) — links the phrase that
+   names the thing, in the source's words and nothing added:
+   `Using the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), predict…`.
+   Every item that needs it carries the link, since each is answered on
+   its own. A page that shows the table itself (2.5 prints the periodic
+   table) needs no link to it. The footer says "the periodic table linked
+   to Appendix A where an item needs it; the source links nothing there".
+   A link is not a word of the stem: the source gates read the stem
+   without it.
+
 ## Exercises
 
 *(pilot, chapter 1.)*
@@ -158,7 +177,7 @@ The component follows the SHAPE of the source's keyed answer:
 | a formula or an ion's symbol ("Mn₃(PO₄)₂", "FeCl₃·2H₂O", "Se²⁻", "¹⁴C") | `textin` with `answerForm="formula"` ("Formulas and equations") — never a plain `textin`, which reads `CO` as `Co` (lint) |
 | a balanced equation, a half-reaction, a net ionic equation | `textin` with `answerForm="equation"` ("Formulas and equations") |
 | several of these at once ("calcium, Ca"; "ionic, Ba²⁺, O²⁻"; "molecular C₂H₂, empirical CH"; an equation and a mass) | one item per piece, each stem saying which ("Enter the molecular formula."): the classification as a `multiplechoice` first, then a formula `textin` per ion or per formula |
-| counts of particles ("47 protons, 47 electrons, 62 neutrons") | one `whole-number` `fillin` per number, each stem saying which, and a name or formula `textin` for the element where the key prints one. A count the stem itself prints (the protons of an atom given by its atomic number) is right by the definition the item tests: it stands, and the parent lists it in `verify:replay`'s allowlist ("Numeric keys") |
+| counts of particles ("47 protons, 47 electrons, 62 neutrons") | one `whole-number` `fillin` per number, each stem closing with a sentence that names the one it asks for in the answer's own word ("Enter the number of neutrons." — the source gate reads that sentence and refuses a swapped pair), and a name or formula `textin` for the element where the key prints one. A count the stem itself prints (the protons of an atom given by its atomic number) is right by the definition the item tests: it stands, and the parent lists it in `verify:replay`'s allowlist ("Numeric keys") |
 | a nuclide symbol with its mass number, with or without the atomic number ("¹³³Cs⁺", "²³₁₁Na") | ONE formula `textin`, keyed in print with every number the source prints. The field reads the mass number, the symbol, and the charge; it does not read the atomic number, which the symbol fixes (`23Na` and `^23_11Na` are both right, `Na` is not). The stem ends "Type the mass number before the symbol, as in 14C." — with another nuclide where ¹⁴C is the answer. Never a fill-in for a number the stem itself gives |
 | a list sorted into the stem's categories by one answer sentence, the stem unlettered ("Ionic: KCl, MgCl₂; Covalent: NCl₃, ICl, PCl₅, CCl₄") | `selfcheck`, the source's sentence as the model answer and one rubric clause per category. Not a multiple choice per member: the source gate reads the exercise as one unit, finds every category in its answer, and refuses the item |
 | a charge ("4+") | `fillin` with `whole-number`, keyed as a signed number (`4`), the stem ending "Enter the charge as a signed number, the sign first, as +1 or −1." — the field reads a typed `4+` as unfinished arithmetic, and "with its sign" is a lint error ("Stems"). Proven through the gate for a cation (2.3's platinum ion); the source prints an anion's charge sign-last ("2−"), which the gate reads as 2, so the first negative one is probed before its wave |
@@ -879,7 +898,14 @@ Settled by chapter 1 (November 9, 2026; narrative in
   (a part that is only an image, a nuclide symbol, a formula its answer
   labels in words), each of which would have failed a sound page, so a
   chapter's new shapes are probed through the gates before its wave
-  (`run.md` §1 step 6a).
+  (`run.md` §1 step 6a). The probe is a tool,
+  `node tools/source/chemistry-gate-probe.mjs N`: it builds the item
+  each keyed unit will carry and asks both gates about it. Run over the
+  book it found about a hundred keyed parts the keys gate read as
+  another exercise, now read by exercise first and part second
+  (`keyed-units.mjs` `unitFor`), and it leaves 25 lines for their
+  chapters' run facts: source defects, answers the shapes tool misreads,
+  and five pairs of keyed exercises whose stems are one text.
 - **The browser suite types into the real field** (`tests/browser-check.spec.mjs`,
   "Chemistry"): every measured key on 1.6 key by key, a two-digit exponent
   of either sign, a typed unit, the exact power-of-ten factor; and it reads

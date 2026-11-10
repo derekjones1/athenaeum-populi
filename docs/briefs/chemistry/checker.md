@@ -113,9 +113,11 @@ stem shows it.
   (it must not be `correct`).
 - **A part answered with several numbers** ("3 protons, 3 electrons, 4
   neutrons") is carried as one item per number: tick each item's key
-  against the number its stem asks for. The source-keys gate confirms any
-  number the answer prints under any of the part's items, so a swapped
-  pair passes it.
+  against the number its stem asks for, and confirm each stem's closing
+  sentence names the one thing it asks for ("Enter the number of
+  neutrons.") — the source-keys gate reads that sentence to tell the
+  numbers apart, and a stem that names two, or none, leaves a swapped pair
+  to you alone.
 - **On a page that teaches a rule**, apply the rule to every reason its
   worked examples state.
 
@@ -143,7 +145,13 @@ stem shows it.
   watch (`docs/subjects/chemistry.md` "Notation"): report the line, the
   fraction, and what a learner loses, as a CONCERN headed `\dfrac`.
 - A reference to an appendix that is not a link to its page in this book,
-  or links the wrong appendix: a DEFECT.
+  or links the wrong appendix: a DEFECT. So is an item, example, or
+  sentence that sends the learner to something only an appendix holds —
+  "using the periodic table" on a page that shows none, a table value the
+  item needs and does not print — with no link to that appendix, even
+  where the source links nothing (playbook, page skeleton rule 9). Answer
+  each such item with only what the page and its links give you: if you
+  had to go looking, the link is missing.
 - `npm run verify-section -- <page>` prints `verified`.
 
 ## 6. Report

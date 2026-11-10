@@ -11,7 +11,8 @@ scratchpad directory named in your task. **Never run a git command. Do not
 spawn sub-agents. Do not run any `npm` script.** **Do not open the live page
 under `content/`** — it prints the keys. Do not read `data/verification/`,
 `$SP/ledger-*`, `$SP/check-*`, `$SP/keys-*`, `$SP/report-*`, the CNXML, the
-PDF, or any checker report. Write only the answers file named in your task.
+PDF, or any checker report. The one thing you open outside the packet
+directory is a figure an item is bound to (below). Write only the answers file named in your task.
 
 ## Input
 
@@ -34,6 +35,15 @@ factors, constants, and rounding rules the page itself prints.
   `a\times10^{n}` with a braced exponent (`4.585\times10^{22}`). Never type
   the unit; the stem names it. A count is a bare integer. Put the unrounded
   result and the one-line derivation in `note`.
+- **An item bound to a figure** (its packet has a `dependency` whose text
+  is a `mediafigure`, or its stem says "the figure above"): open the
+  picture itself — `static/media/<src>-<width>.webp`, the largest width
+  there is, with `Read` — and answer from what is DRAWN: count the atoms
+  and bonds, read the scale, read the labels. The alt on the masked page
+  is one person's description of the picture, written by the page's
+  author; it is not your source. Where the alt and the picture disagree,
+  answer from the picture and say so in `note` — an alt that miscounts is
+  a defect this pass can catch and no other does.
 - If the `answerForm` names `sig-figs:<n>` and your own count of the
   figures the data support is NOT n, answer with your own count and say so
   in `note` — that disagreement is what this pass exists to find.

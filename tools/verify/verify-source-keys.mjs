@@ -2018,6 +2018,27 @@ export function judgeKeyedUnit(item, units) {
     const key = keyNumeral(item.answer);
     if (!key) return { status: 'symbolic', exercise };
     const printed = printedNumerals(unit.answer);
+    // A part answered with several NAMED numbers — "3 protons, 3 electrons,
+    // 4 neutrons" — is carried as one item per number, and every one of
+    // them is printed in the segment. The item whose closing sentence asks
+    // for one by name ("Enter the number of neutrons.") is keyed with THAT
+    // number: a swapped pair is a wrong key the printed-number test passes.
+    const named = [...unit.answer.matchAll(/([−–-]?\d[\d.,]*)\s+([a-z]{4,})/gi)]
+      .map((match) => ({ numeral: printedNumerals(match[1])[0], name: match[2].toLowerCase().replace(/s$/, '') }))
+      .filter((entry) => entry.numeral);
+    const names = [...new Set(named.map((entry) => entry.name))];
+    if (names.length >= 2) {
+      const ask = item.question.split(/(?<=[.?!:])\s+/).pop().toLowerCase();
+      const asked = names.filter((name) => new RegExp(`\\b${name}s?\\b`).test(ask));
+      if (asked.length === 1 && !named.some((entry) => entry.name === asked[0] && sameNumeral(entry.numeral, key))) {
+        const given = named.filter((entry) => entry.name === asked[0]).map((entry) => entry.numeral.printed).join(' or ');
+        return {
+          status: 'key-differs',
+          exercise,
+          detail: `fillin keys ${JSON.stringify(item.answer)} for the ${asked[0]}s, which source ${unit.id} gives as ${given} (${JSON.stringify(unit.answer.slice(0, 100))})`,
+        };
+      }
+    }
     const same = printed.filter((numeral) => sameNumeral(numeral, key));
     if (!same.length) {
       // A count the source spells out: "(a) two; (b) three".

@@ -412,14 +412,84 @@ parent of that run confirms):
 10. 2.6's "Se²⁻, the selenide ion": a formula `textin` and a name `textin`
     keyed `selenide`, `accept="selenide ion"`.
 
-**Open, for Derek or the next parent.** Sections 2.6 and 2.7 ask the
-learner to use "the periodic table" and show none; the source links
-Appendix A once in the chapter (2.3). Linking those words to Appendix A
-in such a stem would extend the appendix-link rule to a place the source
-did not link. Not decided here.
+**Settled by Derek the same day.** Sections 2.6 and 2.7 ask the learner
+to use "the periodic table" and show none; the source links Appendix A
+once in the chapter (2.3). His ruling: "if the content is asking to check
+the appendix, we should link to it even if the source doesn't." It is
+page skeleton rule 9 now — the test is what the learner must do, not what
+the source marked up — and both briefs and the run facts carry it.
+Chapter 1 was swept for it: nothing there sends a learner to an appendix
+beyond the two references already linked.
 
-**What was not run.** The browser suite: no page, script, or style
-changed. `npm test` and `verify:replay` were run after the last edit.
+### The second half of the review: is anything else like those three?
+
+Derek's follow-up: link an appendix wherever the content sends the learner
+to one; and can the three readings and the blind solve be made stronger,
+and are there more gaps like the three the tests now hold. The answer to
+the last was found by asking the gates about the whole book at once.
+
+**The probe.** `tools/source/chemistry-gate-probe.mjs` builds, for each of
+the book's 2,254 keyed units, the item the page will carry — the source's
+own stem, the source's own answer as its key — and asks both source gates
+about it. First run: 146 findings. Ninety-nine were one defect chapter 1
+had no instance of: **the keys gate read a unit's own stem as a different
+exercise.** A part's score was 1 whenever its words were printed, and ties
+went to the longer part, so:
+
+- one part under two lead-ins ("Br" in "write the electron configuration"
+  and in the unkeyed "predict the charge") went to whichever came first —
+  and when that was the unkeyed twin, the gate would have told the author
+  to remove a sound item;
+- a lead-in that prints a sibling's whole part ("…137 mm Hg. Determine the
+  pressure in: (a) mm Hg (b) atm (c) kPa") gave every item to (a), as did
+  the element In under any lead-in with the word "in";
+- As³⁺ and As³⁻, NO₂ and NO₂⁻, were one part, the word fold dropping the
+  sign;
+- a generic part ("What is the rate constant?", "Answer the question.")
+  took a whole exercise that prints those words.
+
+`unitFor` now chooses the exercise first — the one whose whole stem the
+question reads most like, a keyed one before its word-for-word unkeyed
+twin — and the part second, with the part's exact characters, sign
+included, as a tiebreak; a part the lead-in already prints must be printed
+once more than the lead-in prints it. 146 findings became 25, all of which
+are rulings and none a gate defect: twenty keyed answers that are a source
+defect or not the shape the shapes tool read (a label before a drawing, a
+cell diagram, an electron configuration), and five pairs of keyed
+exercises whose stems are one text because their difference was a figure
+or a cross-reference (4.3, 17.1, 18.7, 20.1, 20.4). `run.md` step 6a runs
+the probe for each chapter.
+
+**The readings, strengthened.**
+
+- *The solver looks at the picture.* On every book so far the blind solver
+  answered a figure-bound item from the alt on the masked page — the
+  author's own description. `solve.md` now sends it to the image, and a
+  disagreement between alt and picture is something it reports.
+- *The keys gate reads which number an item asks for.* "3 protons, 3
+  electrons, 4 neutrons" confirmed any of the three under any item; the
+  gate now holds an item to the number its closing sentence names, and the
+  briefs make that sentence a rule.
+- *The hint lint* reads every auto-graded kind (the first half).
+- Not built, and why: a second blind read of `selfcheck` model answers
+  (the gate already holds them to the source word for word, and the
+  checker reads the rubric); a "hint-only" solve to measure leaks (the
+  checker reads every hint with the key covered, and the lint holds the
+  two shapes a pattern can see).
+
+**The appendix link, and what it would have broken.** Derek: "if the
+content is asking to check the appendix, we should link to it even if the
+source doesn't." It is page skeleton rule 9. Proving the rule end to end
+found that no auto-graded item had ever carried a link: the page renders
+one, but a fill-in's and a text-in's accessible name is built from the raw
+prompt, and a screen reader would have been read the brackets and the
+whole path. `speakable-label.mjs` now reads a link as its words. The
+existing rule — an appendix reference in a stem is a link — would have
+shipped that defect on chapter 5's thirty-six references to Appendix G.
+
+**What was run.** `npm run ci` after the last edit: the unit and corpus
+tests, the replay gate, the build and its checks, and the browser suite
+(a shipped script changed).
 
 ### The `\dfrac` watch list
 

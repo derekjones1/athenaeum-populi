@@ -117,8 +117,14 @@ goes wrong.
 7. Tables as Markdown from the CELLS, checked against the PDF.
    **A reference to an appendix is a link** to its page in this book
    (playbook, page skeleton rule 9; the run facts list the appendices
-   your module links and their paths). Every other cross-reference stays
-   plain text.
+   your module links and their paths). **So is any place the content
+   asks the learner to consult what an appendix holds, whether or not the
+   source links it**: "Using the periodic table, …" on a page that shows
+   no periodic table links those words to Appendix A; an item that needs
+   a table value it does not print links the phrase naming it to the
+   appendix that has it. The source's words stay as they are — only the
+   link is added — every item that needs it carries it, and the footer
+   says so. Every other cross-reference stays plain text.
 8. `## Summary`, `## Key equations` (only if the module has that section),
    `## Key terms` (the module's `<glossary>`, source order), `## Practice`,
    then `---` and the `<small>` footer whose `Changes:` clause names every
@@ -215,6 +221,11 @@ goes wrong.
   keyed in print with both numbers where the source prints both
   (`²³₁₁Na`), and its stem ends "Type the mass number before the symbol,
   as in 14C." unless 14C is the answer.
+- **A part answered with several named numbers** ("3 protons, 3
+  electrons, 4 neutrons") is one fill-in per number, and each stem CLOSES
+  with a sentence that names the one it asks for, in the answer's own
+  word: "Enter the number of neutrons." The source gate reads that
+  sentence to hold each item to its own number.
 - **A part that is only an image** ("(a) [structure] (b) [structure]"):
   the `mediafigure` directly above the part's item or items, and each
   stem says "shown in the figure above". Nothing else tells the parts

@@ -294,6 +294,11 @@ test('a nuclide symbol is read in a stem as the page prints it and in an answer 
   assert.equal(count(`${lead} $\\ce{^{7}_{3}Li}$. Enter the number of neutrons.`, '4').exercise.id, 'c1(a)');
   assert.equal(count(`${lead} $\\ce{^{7}_{3}Li}$. Enter the number of neutrons.`, '4').status, 'confirmed');
   assert.equal(count(`${lead} $\\ce{^{125}_{52}Te}$. Enter the number of neutrons.`, '4').status, 'key-differs');
+  // A swapped pair: 3 is printed in the segment (the protons), and is not the neutrons.
+  assert.equal(count(`${lead} $\\ce{^{7}_{3}Li}$. Enter the number of neutrons.`, '3').status, 'key-differs');
+  assert.equal(count(`${lead} $\\ce{^{7}_{3}Li}$. Enter the number of protons.`, '3').status, 'confirmed');
+  assert.equal(count(`${lead} $\\ce{^{7}_{3}Li}$. Enter the number of electrons.`, '4').status, 'key-differs');
+  assert.match(count(`${lead} $\\ce{^{7}_{3}Li}$. Enter the number of neutrons.`, '3').detail, /for the neutrons, which source c1\(a\) gives as 4/);
   const symbol = (question, answer) => judgeKeyedUnit({ type: 'textin', question, answer, form: 'formula' }, atoms).status;
   const write = 'Write a symbol for the following neutral isotope. Include the atomic number and mass number.';
   assert.equal(symbol(`${write} the alkali metal with 11 protons and a mass number of 23`, '²³₁₁Na'), 'confirmed');
@@ -301,4 +306,47 @@ test('a nuclide symbol is read in a stem as the page prints it and in an answer 
   assert.equal(symbol('Write the symbol for the following ion: the ion with a 1+ charge, atomic number 55, and mass number 133', '¹³³Cs⁺'), 'confirmed');
   assert.equal(symbol('Write the symbol for the following ion: the ion with 54 electrons, 53 protons, and 74 neutrons', '¹²⁷I⁻'), 'confirmed');
   assert.equal(symbol('Write the symbol for the following ion: the ion with 54 electrons, 53 protons, and 74 neutrons', '¹³³Cs⁺'), 'key-differs');
+});
+
+test('of two units a question could be, it is the one whose whole stem it reads most like', () => {
+  // The shapes the whole-book gate probe found (tools/source/chemistry-gate-probe.mjs):
+  // chapter 1 had none of them, and about a hundred keyed parts of the book
+  // were read as another exercise.
+  const twins = keyedUnits(cnxml(exercises(
+    // One part under two lead-ins, the second exercise unkeyed (7.1).
+    exercise('p1', ['Predict the charge on the monatomic ions formed from the following atoms in binary ionic compounds:', '(a) P', '(b) In', '(c) Br'], null),
+    exercise('p2', ['Write out the full electron configuration for each of the following atoms and for the monatomic ion found in binary ionic compounds containing the element:', '(a) Al', '(b) Br', '(c) In'],
+      '(a) Al: 1s<sup>2</sup>2s<sup>2</sup>; (b) Br: 1s<sup>2</sup>; (c) In: 1s<sup>2</sup>2s<sup>2</sup>2p<sup>6</sup>'),
+    // A lead-in that prints a sibling's whole part (9.1).
+    exercise('m1', ['The pressure of a sample of gas is measured at sea level with an open-end mercury manometer, which reads 13.7 cm Hg, or 137 mm Hg. Determine the pressure of the gas in:', '(a) mm Hg', '(b) atm', '(c) kPa'],
+      '(a) 897 mm Hg; (b) 1.18 atm; (c) 119.6 kPa'),
+    // Parts that differ by a charge's sign, which the word fold drops (7.1).
+    exercise('s1', ['Write the electron configuration for each of the following ions:', '(a) As<sup>3–</sup>', '(b) As<sup>3+</sup>', '(c) NO<sub>2</sub>', '(d) NO<sub>2</sub><sup>−</sup>'],
+      '(a) [Ar]4s<sup>2</sup>; (b) [Ar]3d<sup>10</sup>; (c) seventeen; (d) eighteen'),
+    // A generic part that stands in many exercises, beside a whole exercise that prints its words (12.3).
+    exercise('g1', ['For the reaction A ⟶ B + C, the following data were obtained at 30 °C:', '(a) What is the order of the reaction with respect to [A]?', '(b) What is the rate constant?'], '(a) first; (b) 0.0113 s<sup>−1</sup>'),
+    exercise('g2', ['The half-life of a first-order reaction is 12.0 min at 25 °C. What is the rate constant?'], '0.0578 min<sup>−1</sup>'),
+    // A part the lead-in already prints twice, printed a third time (15.1).
+    exercise('r1', ['What is the effect on the amount of solid NiCO<sub>3</sub> when each of the following is added to a saturated solution of NiCO<sub>3</sub>?', '(a) KClO<sub>4</sub>', '(b) NiCO<sub>3</sub>'], '(a) no effect; (b) more solid'),
+  )));
+  const is = (question, id) => assert.equal(unitFor(question, twins)?.id, id, question);
+  const configuration = 'Write out the full electron configuration for the following atom and for the monatomic ion found in binary ionic compounds containing the element:';
+  is(`${configuration} Br`, 'p2(b)');
+  is(`${configuration} In`, 'p2(c)');
+  is(`${configuration} Al`, 'p2(a)');
+  const pressure = 'The pressure of a sample of gas is measured at sea level with an open-end mercury manometer, which reads 13.7 cm Hg, or 137 mm Hg. Determine the pressure of the gas in:';
+  is(`${pressure} atm. Enter the pressure in atmospheres.`, 'm1(b)');
+  is(`${pressure} kPa`, 'm1(c)');
+  is(`${pressure} mm Hg`, 'm1(a)');
+  const ion = 'Write the electron configuration for the following ion:';
+  is(`${ion} As³⁺`, 's1(b)');
+  is(`${ion} As³⁻`, 's1(a)');
+  is(`${ion} $\\ce{As^3+}$`, 's1(b)');
+  is(`${ion} NO₂⁻`, 's1(d)');
+  is(`${ion} NO₂`, 's1(c)');
+  is('The half-life of a first-order reaction is 12.0 min at 25 °C. What is the rate constant? Enter the rate constant in min⁻¹.', 'g2');
+  is('For the reaction A ⟶ B + C, the following data were obtained at 30 °C: What is the rate constant?', 'g1(b)');
+  const nickel = 'What is the effect on the amount of solid NiCO₃ when the following is added to a saturated solution of NiCO₃?';
+  is(`${nickel} NiCO₃`, 'r1(b)');
+  is(`${nickel} KClO₄`, 'r1(a)');
 });
