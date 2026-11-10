@@ -10,6 +10,11 @@
 //   node tools/source/chemistry-shapes.mjs <chapter>            the table and the flags
 //   node tools/source/chemistry-shapes.mjs <chapter> --list     every keyed unit, one line each
 //
+// After the flags come NOTES: the units whose STRUCTURE the page must shape
+// for the source gates — a part that is only an image, an answer that is
+// only an image, a part the solution leaves unkeyed, a lettered answer under
+// a stem whose parts are in another exercise.
+//
 // The shape is read off the answer's text and is a first reading: the table
 // in the playbook, and the parent, decide. "words" is the one shape this
 // cannot split — a name is a `textin`, a member of a set the stem names is a
@@ -17,7 +22,7 @@
 import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { keyedUnits } from '../lib/keyed-units.mjs';
+import { keyedUnits, sequentialParts } from '../lib/keyed-units.mjs';
 import { chemCanon, chemKeyProblem } from '../../assets/js/lib/text/check-chem.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
@@ -92,6 +97,7 @@ function main(argv) {
   const list = argv.includes('--list');
   const SHAPES = ['number', 'formula', 'equation', 'equation+', 'words', 'sentence', 'drawing'];
   const flags = [];
+  const notes = [];
   console.log(`Chapter ${chapter}, ${all[chapter - 1].title}: keyed answers by shape (one row per section; parts counted)`);
   console.log(['section', 'module', ...SHAPES, 'unkeyed'].join('\t'));
   all[chapter - 1].modules.forEach((moduleId, index) => {
@@ -104,8 +110,22 @@ function main(argv) {
       const read = shapeOf(unit.answer);
       counts[read.shape] += 1;
       const answer = unit.answer.replace(/\s+/g, ' ').trim();
-      lines.push(`  ${unit.id}\t${read.shape}\t${answer.slice(0, 90) || '(an image)'}\t→ ${read.component}`);
+      const imageOnly = unit.label && !unit.partText && (unit.media || []).length;
+      lines.push(`  ${unit.id}\t${read.shape}\t${answer.slice(0, 90) || '(an image)'}\t→ ${read.component}${imageOnly ? ' — the part is only an image' : ''}`);
       if (read.flag) flags.push(`${chapter}.${index} ${moduleId} ${unit.id}: ${read.flag}\n    ${answer.slice(0, 160)}`);
+      const where = `${chapter}.${index} ${moduleId} ${unit.id}`;
+      // What the source gates need the page, or the parent, to do for this unit.
+      if (imageOnly) {
+        notes.push(`${where}: the part is only an image (${unit.media.join(', ')}) — its item sits under that mediafigure and says "the figure above"; the gates tell the parts apart by the figure`);
+      }
+      if (unit.label && unit.answered === false) {
+        notes.push(`${where}: the solution prints no part (${unit.label}) — unkeyed inside a keyed exercise; the gates still expect it (rule on it: playbook "What is still open")`);
+      } else if (unit.label && !answer) {
+        notes.push(`${where}: the answer is only an image — a selfcheck with the figure as its model answer (playbook "Figures")`);
+      }
+      if (!unit.label && sequentialParts(unit.answer)) {
+        notes.push(`${where}: a lettered answer under a stem with no parts — the parts are in the exercise or table the stem refers to; restate each datum (playbook "Stems")\n    ${unit.stem.slice(0, 140)}`);
+      }
     }
     console.log([`${chapter}.${index}`, moduleId, ...SHAPES.map((shape) => counts[shape]), counts.unkeyed].join('\t'));
     if (list) console.log(lines.join('\n'));
@@ -113,6 +133,7 @@ function main(argv) {
   console.log(flags.length
     ? `\nFlags — rule on each before the wave (a source defect, or a shape the forms do not read):\n${flags.join('\n')}`
     : '\nNo flags: every keyed formula reads and every keyed equation balances.');
+  if (notes.length) console.log(`\nNotes — units the page must shape for the source gates:\n${notes.join('\n')}`);
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) main(process.argv.slice(2));

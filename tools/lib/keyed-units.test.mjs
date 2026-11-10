@@ -10,7 +10,8 @@ import {
   KEYED_ONLY_BOOKS, answerText, keyedUnits, plain, printedNumerals, sequentialParts, unitFor, unitScore,
 } from './keyed-units.mjs';
 import { parseXml } from './openstax-source.mjs';
-import { judgeKeyedUnit } from '../verify/verify-source-keys.mjs';
+import { judgeKeyedUnit, pageItems } from '../verify/verify-source-keys.mjs';
+import { coverage, sourceExercises } from '../verify/verify-source-coverage.mjs';
 
 const cnxml = (body) => `<?xml version="1.0"?><document xmlns="http://cnx.rice.edu/cnxml"><content>${body}</content></document>`;
 const exercise = (id, paragraphs, solution) => `<exercise id="${id}"><problem>${
@@ -231,4 +232,73 @@ test('a text-in is confirmed when its part\'s answer prints the name, or reads a
   const balance = 'Balance the following equation: Na(s) + H₂O(l) ⟶ NaOH(aq) + H₂(g)';
   assert.equal(judge(textin(balance, '2Na(s) + 2H₂O(l) ⟶ 2NaOH(aq) + H₂(g)', 'equation')), 'confirmed');
   assert.equal(judge(textin(balance, '2Na(s) + H₂O(l) ⟶ 2NaOH(aq) + H₂(g)', 'equation')), 'key-differs');
+});
+
+test('a lettered part that is only an image is a part, told from its siblings by the figure its item is bound to', () => {
+  // Chemistry 2e 2.4, as the CNXML prints it: each part is a label and a
+  // <media>, and the last has nothing after its image.
+  const image = (name) => `<media alt="a structure"><image mime-type="image/jpg" src="../../media/${name}.jpg"/></media>`;
+  const module = cnxml(exercises(
+    `<exercise id="s1"><problem><para>Write the molecular and empirical formulas of the following compounds:</para><para>(a)<newline/>${
+      image('Q3a_img')}<newline/> (b)<newline/>${image('Q3b_img')}<newline/> (c)<newline/>${image('Q3c_img')}</para></problem>`
+    + '<solution><para>(a) molecular CO<sub>2</sub>, empirical CO<sub>2</sub>; (b) molecular C<sub>2</sub>H<sub>2</sub>, empirical CH; '
+    + '(c) molecular C<sub>2</sub>H<sub>4</sub>, empirical CH<sub>2</sub></para></solution></exercise>',
+    `<exercise id="s2"><problem><para>Write the empirical formulas for the following compounds:</para><para>(a)<newline/>${
+      image('Q7a_img')}<newline/> (b)<newline/>${image('Q7b_img')}</para></problem></exercise>`,
+  ));
+  const parts = keyedUnits(module);
+  assert.deepEqual(parts.map((part) => part.id), ['s1(a)', 's1(b)', 's1(c)', 's2(a)', 's2(b)']);
+  assert.deepEqual(parts.map((part) => part.media), [['Q3a_img'], ['Q3b_img'], ['Q3c_img'], ['Q7a_img'], ['Q7b_img']]);
+  assert.equal(parts[2].partText, '');
+  assert.equal(parts[2].answer, 'molecular C _2 H _4 , empirical CH _2');
+  assert.equal(parts[0].stem, 'Write the molecular and empirical formulas of the following compounds:', 'no mark reaches a stem');
+
+  const ask = 'Write the molecular and empirical formulas of the following compound, shown in the figure above.';
+  assert.equal(unitFor(`${ask} Enter the molecular formula.`, parts, { figure: 'Q3b_img' }).id, 's1(b)');
+  assert.equal(unitFor(`${ask} Enter the molecular formula.`, parts, {}), null, 'an item bound to no figure is no image part');
+  assert.equal(unitFor('Which structure above is a compound?', parts, { figure: 'Q3b_img' }), null, 'another question under the same figure');
+
+  // The page: a mediafigure, then the part's two items, each bound to it.
+  const figure = (name) => `{{< mediafigure src="chemistry/${name}" kind="diagram" alt="A structure." >}}\n{{< /mediafigure >}}\n\n`;
+  const textin = (question, answer) => `{{< textin question="${question}" answer="${answer}" answerForm="formula" hint="Count the atoms." >}}\n\n`;
+  const page = (b) => figure('Q3a_img') + textin(`${ask} Enter the molecular formula.`, 'CO₂') + textin(`${ask} Enter the empirical formula.`, 'CO₂')
+    + figure('Q3b_img') + textin(`${ask} Enter the molecular formula.`, b) + textin(`${ask} Enter the empirical formula.`, 'CH')
+    + figure('Q3c_img') + textin(`${ask} Enter the molecular formula.`, 'C₂H₄') + textin(`${ask} Enter the empirical formula.`, 'CH₂');
+  const items = pageItems(page('C₂H₂'));
+  assert.deepEqual(items.map((item) => item.figure), ['Q3a_img', 'Q3a_img', 'Q3b_img', 'Q3b_img', 'Q3c_img', 'Q3c_img']);
+  assert.deepEqual(items.map((item) => judgeKeyedUnit(item, parts).status), Array(6).fill('confirmed'));
+  assert.equal(judgeKeyedUnit(pageItems(page('C₂H₄'))[2], parts).status, 'key-differs', 'part (b) keyed with part (c)\'s formula');
+
+  const verdicts = coverage(page('C₂H₂'), sourceExercises(module), { keyedOnly: true });
+  assert.deepEqual(verdicts.map((verdict) => [verdict.id, verdict.status]),
+    [['s1(a)', 'rendered'], ['s1(b)', 'rendered'], ['s1(c)', 'rendered'], ['s2(a)', 'omitted'], ['s2(b)', 'omitted']]);
+  // A page that leaves part (c) out fails, where the last image-only part was once not a part at all.
+  const short = page('C₂H₂').split(figure('Q3c_img'))[0];
+  assert.equal(coverage(short, sourceExercises(module), { keyedOnly: true }).find((verdict) => verdict.id === 's1(c)').status, 'missing');
+});
+
+test('a nuclide symbol is read in a stem as the page prints it and in an answer as the grader types it', () => {
+  // Chemistry 2e 2.3 and 2.5: MathML prescripts on an empty base, and an
+  // answer whose label stands directly before a superscript.
+  const nuclide = (atomic, mass, symbol) => `<m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:msubsup><m:mrow/><m:mn>${atomic}</m:mn><m:mn>${mass}</m:mn></m:msubsup><m:mtext>${symbol}</m:mtext></m:math>`;
+  const atoms = keyedUnits(cnxml(exercises(
+    exercise('c1', ['Give the number of protons, electrons, and neutrons in neutral atoms of each of the following isotopes:', `(a) ${nuclide(3, 7, 'Li')}`, `(b) ${nuclide(52, 125, 'Te')}`],
+      '(a) 3 protons, 3 electrons, 4 neutrons; (b) 52 protons, 52 electrons, 73 neutrons'),
+    exercise('y1', ['Write a symbol for each of the following neutral isotopes. Include the atomic number and mass number for each.', '(a) the alkali metal with 11 protons and a mass number of 23', '(b) the noble gas element with 75 neutrons in its nucleus and 54 electrons in the neutral atom'],
+      `(a) ${nuclide(11, 23, 'Na')}; (b) ${nuclide(54, 129, 'Xe')}`),
+    exercise('i1', ['Write the symbol for each of the following ions:', '(a) the ion with a 1+ charge, atomic number 55, and mass number 133', '(b) the ion with 54 electrons, 53 protons, and 74 neutrons'],
+      '(a) <sup>133</sup>Cs<sup>+</sup>; (b) <sup>127</sup>I<sup>−</sup>'),
+  )));
+  const lead = 'Give the number of protons, electrons, and neutrons in neutral atoms of the following isotope:';
+  const count = (question, answer) => judgeKeyedUnit({ type: 'fillin', question, answer, form: 'whole-number' }, atoms);
+  assert.equal(count(`${lead} $\\ce{^{7}_{3}Li}$. Enter the number of neutrons.`, '4').exercise.id, 'c1(a)');
+  assert.equal(count(`${lead} $\\ce{^{7}_{3}Li}$. Enter the number of neutrons.`, '4').status, 'confirmed');
+  assert.equal(count(`${lead} $\\ce{^{125}_{52}Te}$. Enter the number of neutrons.`, '4').status, 'key-differs');
+  const symbol = (question, answer) => judgeKeyedUnit({ type: 'textin', question, answer, form: 'formula' }, atoms).status;
+  const write = 'Write a symbol for the following neutral isotope. Include the atomic number and mass number.';
+  assert.equal(symbol(`${write} the alkali metal with 11 protons and a mass number of 23`, '²³₁₁Na'), 'confirmed');
+  assert.equal(symbol(`${write} the alkali metal with 11 protons and a mass number of 23`, '²⁴₁₁Na'), 'key-differs');
+  assert.equal(symbol('Write the symbol for the following ion: the ion with a 1+ charge, atomic number 55, and mass number 133', '¹³³Cs⁺'), 'confirmed');
+  assert.equal(symbol('Write the symbol for the following ion: the ion with 54 electrons, 53 protons, and 74 neutrons', '¹²⁷I⁻'), 'confirmed');
+  assert.equal(symbol('Write the symbol for the following ion: the ion with 54 electrons, 53 protons, and 74 neutrons', '¹³³Cs⁺'), 'key-differs');
 });

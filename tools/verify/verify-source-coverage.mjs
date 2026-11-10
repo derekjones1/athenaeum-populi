@@ -116,8 +116,9 @@ import {
 } from '../lib/openstax-source.mjs';
 import { integerFlag, parseCliArgs } from '../lib/cli.mjs';
 import { shortcodes } from '../lib/content.mjs';
+import { mediaBindings } from '../lib/exercise-context.mjs';
 import {
-  KEYED_EXERCISE_CLASS, KEYED_ONLY_BOOKS, checkYourLearning, plain, sequentialParts, unitScore,
+  KEYED_EXERCISE_CLASS, KEYED_ONLY_BOOKS, checkYourLearning, markedStemText, plain, sequentialParts, unitScore,
 } from '../lib/keyed-units.mjs';
 import { MATCH_FLOOR } from './verify-source-keys.mjs';
 
@@ -491,6 +492,9 @@ export function sourceExercises(xml) {
       const exercise = {
         id: node.attributes.id || '', cls: here, stem: stemOf(problem), options, pools: null,
         keyed: Boolean(firstElement(node, 'solution')),
+        // A keyed-only book's stem with its images marked, so a lettered
+        // part that is only an image is still a part (keyed-units.mjs).
+        ...(PART_CLASSES.has(here) ? { marked: markedStemText(problem) } : {}),
       };
       if (here === 'matching') {
         // A Matching table's left cells are blanks ("___chitin") and its
@@ -517,7 +521,7 @@ export function sourceExercises(xml) {
   walk(document, null);
   // A keyed-only book's Check Your Learning questions (keyed-units.mjs).
   for (const check of checkYourLearning(document)) {
-    found.push({ id: check.id, cls: check.cls, stem: check.stem, options: [], pools: null, keyed: check.keyed });
+    found.push({ id: check.id, cls: check.cls, stem: check.stem, marked: check.marked, options: [], pools: null, keyed: check.keyed });
   }
   const checkQuestions = descendants(document, (node) => localName(node) === 'note'
     && /check-your-understanding/.test(node.attributes.class || ''))
@@ -552,6 +556,7 @@ export function pageTexts(markdown) {
   const footer = footerOf(markdown);
   const body = footer ? markdown.slice(0, markdown.length - footer.length) : markdown;
   const items = [];
+  const figures = mediaBindings(body);
   for (const name of ['multiplechoice', 'textin', 'selfcheck', 'sortbins', 'fillin']) {
     for (const sc of shortcodes(body, name)) {
       const question = sc.params.question || '';
@@ -566,6 +571,8 @@ export function pageTexts(markdown) {
         options,
         text: [question, ...options].join(' \n '),
         line: body.slice(0, sc.index).split('\n').length,
+        // The source image the item is bound to ("the figure above").
+        figure: figures.get(`${name}:${sc.index}`) || '',
       });
     }
   }
@@ -662,7 +669,7 @@ export function scoreItem(unit, item) {
     // must print the part itself beside a lead-in that reads like the
     // exercise's (keyed-units.mjs `unitScore`). Sibling parts share every
     // word but their own, so nothing weaker tells them apart.
-    const { score, words } = unitScore(unit, item.question);
+    const { score, words } = unitScore(unit, item.question, item);
     return score > 0 ? { score, how: score === 1 ? 'part' : 'part-restated', tie: words } : { score: 0, how: null, tie: 0 };
   }
   const stem = plain(unit.stem);
@@ -723,7 +730,7 @@ function unitsOf(exercise, orientation = 0) {
     }));
   }
   if (PART_CLASSES.has(exercise.cls)) {
-    const lettered = sequentialParts(exercise.stem);
+    const lettered = sequentialParts(exercise.marked ?? exercise.stem);
     if (!lettered) return [{ ...exercise, group: exercise.id }];
     return lettered.parts.map((part) => ({
       ...exercise,
@@ -731,6 +738,7 @@ function unitsOf(exercise, orientation = 0) {
       stem: `${lettered.lead} ${part.text}`.trim(),
       lead: lettered.lead,
       partText: part.text,
+      media: part.media,
       group: exercise.id,
     }));
   }

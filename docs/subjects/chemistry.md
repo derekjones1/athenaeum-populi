@@ -112,7 +112,8 @@ these differences:
 8. **The pooled end matter of the PDF** (Key Terms, Key Equations, Summary,
    and Exercises printed once at the chapter's end) is each module's own in
    the CNXML, and that is where the page takes it from.
-9. **Small conventions every page follows.** The frontmatter description
+9. **Small conventions every page follows** — none of them is held by a
+   lint, so each is the checker's to tick. The frontmatter description
    ends "— adapted from OpenStax Chemistry 2e, Section N.M."; the page's
    first figure is `eager="true"`; a reference to a numbered figure or
    table becomes a describing phrase ("the table of densities of common
@@ -153,11 +154,14 @@ The component follows the SHAPE of the source's keyed answer:
 | an SI prefix's factor ("× 10⁻²") | `fillin` keyed with the bare power of ten, `answer="10^{-2}"`, under `sig-figs:1 last-digit:0` — a bare power-of-ten key is an exact factor, so `0.010` and `1.0×10⁻²` are right too ("Measured quantities") |
 | the name of a unit that is one word or a counted word ("meters", "kilograms", "square meters", "cubic meters") or of a prefix ("centi") | `textin`; the accept list holds the symbol without operators (`m`, `kg`, `m3`) and every crossing the plural fold cannot reach, which folds the LAST word only: `meters squared\|meter squared\|metres squared\|metre squared` |
 | a unit that is a quotient or a product ("meters/second", "kilograms/cubic meter"), or one whose degree sign is the point ("kelvin", never "°K") | `multiplechoice` whose distractors are the confusions the part tests — the product, the inverse, a wrong power, "degrees kelvin" — and never another unit the body allows for the quantity. The text grader reads `/`, `·`, `×`, `*`, and `°` as spaces, so as a `textin` the product passes for the quotient: a key or accept member carrying one is a lint error in this book |
-| the name of a compound or an ion ("chromium(III) oxide", "the selenide ion") | `textin`. Capitals, the spaces around a parenthesis, and the parentheses themselves are free; the Roman numeral and every word are not. The grader reads sulph- as sulf-, aluminium as aluminum, and caesium as cesium, so those are never `accept` members; a second name the module itself prints ("ferric nitrate") is |
+| the name of a compound or an ion ("chromium(III) oxide", "the selenide ion") | `textin`. Capitals, the spaces around a parenthesis, and the parentheses themselves are free; the Roman numeral and every word are not. The grader reads sulph- as sulf-, aluminium as aluminum, and caesium as cesium, so those are never `accept` members. A second name the module itself prints for the compound is one — unless the STEM prints it: 2.7 asks for the IUPAC name of "ferric nitrate", and there the old name retyped must be wrong. **An ion's name is keyed bare** (`selenide`) with the two-word form in `accept` (`selenide ion`): the grader drops "the" and does not drop "ion", so keyed "selenide ion" it marks the bare name wrong |
 | a formula or an ion's symbol ("Mn₃(PO₄)₂", "FeCl₃·2H₂O", "Se²⁻", "¹⁴C") | `textin` with `answerForm="formula"` ("Formulas and equations") — never a plain `textin`, which reads `CO` as `Co` (lint) |
 | a balanced equation, a half-reaction, a net ionic equation | `textin` with `answerForm="equation"` ("Formulas and equations") |
-| several of these at once ("calcium, Ca"; "ionic, Ba²⁺, O²⁻"; an equation and a mass) | one item per piece, each stem saying which: the classification as a `multiplechoice` first, then a formula `textin` per ion |
-| a nuclide symbol with both numbers, or counts of particles ("47 protons, 47 electrons, 62 neutrons") | one `whole-number` `fillin` per number, and a formula `textin` for the element's symbol where the key prints one |
+| several of these at once ("calcium, Ca"; "ionic, Ba²⁺, O²⁻"; "molecular C₂H₂, empirical CH"; an equation and a mass) | one item per piece, each stem saying which ("Enter the molecular formula."): the classification as a `multiplechoice` first, then a formula `textin` per ion or per formula |
+| counts of particles ("47 protons, 47 electrons, 62 neutrons") | one `whole-number` `fillin` per number, each stem saying which, and a name or formula `textin` for the element where the key prints one. A count the stem itself prints (the protons of an atom given by its atomic number) is right by the definition the item tests: it stands, and the parent lists it in `verify:replay`'s allowlist ("Numeric keys") |
+| a nuclide symbol with its mass number, with or without the atomic number ("¹³³Cs⁺", "²³₁₁Na") | ONE formula `textin`, keyed in print with every number the source prints. The field reads the mass number, the symbol, and the charge; it does not read the atomic number, which the symbol fixes (`23Na` and `^23_11Na` are both right, `Na` is not). The stem ends "Type the mass number before the symbol, as in 14C." — with another nuclide where ¹⁴C is the answer. Never a fill-in for a number the stem itself gives |
+| a list sorted into the stem's categories by one answer sentence, the stem unlettered ("Ionic: KCl, MgCl₂; Covalent: NCl₃, ICl, PCl₅, CCl₄") | `selfcheck`, the source's sentence as the model answer and one rubric clause per category. Not a multiple choice per member: the source gate reads the exercise as one unit, finds every category in its answer, and refuses the item |
+| a charge ("4+") | `fillin` with `whole-number`, keyed as a signed number (`4`), the stem ending "Enter the charge as a signed number, the sign first, as +1 or −1." — the field reads a typed `4+` as unfinished arithmetic, and "with its sign" is a lint error ("Stems"). Proven through the gate for a cation (2.3's platinum ion); the source prints an anion's charge sign-last ("2−"), which the gate reads as 2, so the first negative one is probed before its wave |
 | two or more quantities ("5371 °F, 3239 K"; a range; a ratio) | one `fillin` per quantity, each stem saying which |
 | an explanation, a list, a description, "answers will vary" | `selfcheck` with the source solution as the model answer and a rubric |
 | a drawing | `selfcheck` with the figure in the model answer ("Figures") |
@@ -225,10 +229,24 @@ selfchecks, source defects, the footer — and each is stated once.
   underlined item is “Ni powder”.)".
 - **An item bound to a figure or table** says "the figure above" or "the
   table above", so the answer ledger binds them.
+- **A lettered part that is only an image** ("(a) [structure] (b)
+  [structure]", 2.4) has no words of its own: its `mediafigure` goes
+  directly above its item or items, and each stem is the lead-in restated
+  for one, "…of the following compound, shown in the figure above." The
+  figure is the only thing that tells the parts apart, for the learner and
+  for the source gates, which match such a part by the image its item is
+  bound to. `chemistry-shapes` lists every such part under Notes.
+- **A key whose word is not in the stem's own set** — 2.6 asks "ionic or
+  covalent" and answers "molecular" — keeps the stem's set as the options
+  and keys the stem's word; the footer names the difference and the
+  inconsistency is an erratum. The section's own text must make the two
+  words one (2.6 calls covalent compounds molecular compounds); where it
+  does not, the parent rules.
 - **A count is asked before the quantity it counts.** The grader's own
   feedback names the count ("now round it to 2 significant figures"), so a
   "how many significant figures can you justify" item goes first.
-- **A multiple-choice stem ends with its punctuation.**
+- **A multiple-choice stem ends with its punctuation** (read by the
+  checker; no lint holds it).
 - **A keyed exercise whose answer comes from a linked simulation** is a
   `selfcheck` with the source's answer as the model answer; the link stays
   in the question.
@@ -329,6 +347,10 @@ after the rule was written, so the line is drawn by pairs:
 - A hint never sends the learner to a table that lacks the answer (1.4's
   area item pointed at the table of base units, which has no area unit).
 - Several items may share one hint.
+- **The lint sees two shapes of this rule and no more** — a hint that opens
+  with an arithmetic imperative (multiply, divide, add, subtract, cube,
+  square), and a verdict on the number's digits — on every auto-graded
+  item. Everything else in the table is the checker's to read, key covered.
 
 ### Selfchecks
 
@@ -852,7 +874,12 @@ Settled by chapter 1 (November 9, 2026; narrative in
   counts an unkeyed exercise as `omitted` and fails one that is rendered;
   `verify:ledger` requires a solve and provenance for
   `content/physical-sciences`; `verify:source-tables` reads the appendix
-  pages cell by cell ("Appendices").
+  pages cell by cell ("Appendices"). **A gate is proven only on the shapes
+  it has met**: the review before chapter 2 found three it could not read
+  (a part that is only an image, a nuclide symbol, a formula its answer
+  labels in words), each of which would have failed a sound page, so a
+  chapter's new shapes are probed through the gates before its wave
+  (`run.md` §1 step 6a).
 - **The browser suite types into the real field** (`tests/browser-check.spec.mjs`,
   "Chemistry"): every measured key on 1.6 key by key, a two-digit exponent
   of either sign, a typed unit, the exact power-of-ten factor; and it reads
@@ -875,6 +902,18 @@ Still open:
   (chapter 6), for a condensed structural formula (chapter 20), and for a
   nuclear equation (chapter 21) — each a `selfcheck` until its chapter
   settles it ("Formulas and equations");
+- a part of a keyed exercise that the solution leaves out (8.4 answers
+  (a)–(c) of five parts; 13.3 answers two of six): the playbook's rule
+  omits an unkeyed exercise, the gates still expect every part of a keyed
+  one, and the two are reconciled when chapter 8 is prepared
+  (`chemistry-shapes` flags each under Notes);
+- a drawing as the whole keyed answer of a part (about 60 parts from
+  chapter 6 on): the `selfcheck`-with-figure form is the rule ("Figures"),
+  and the source-keys gate has not yet judged one — probe it before
+  chapter 6's wave (`run.md` §1 step 6a);
+- a lettered answer under a stem whose parts are in another exercise (4.3,
+  13.2, 17.1, 17.2, 17.7, 19.2 — nine exercises): the gates read each as one
+  unit with the whole solution; probe before chapter 4;
 - a browser test that types a formula and an equation into the real field:
   the grader, the lint, and the gates are unit-tested, and chapter 2's
   first page is the first place the suite can type one;

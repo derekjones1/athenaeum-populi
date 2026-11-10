@@ -1540,7 +1540,7 @@ export function lintHugo(src, filename = '', options = {}) {
 
   // \dfrac forces displaystyle sizing and crowds adjacent rows.
   for (const m of mediaSrc.matchAll(/\\dfrac/g)) {
-    err(m.index, '\\dfrac is banned — use \\tfrac (or \\cfrac for nested display fractions)');
+    err(m.index, '\\dfrac is banned — use \\tfrac, or \\frac where the book sets its inline fractions with it (Chemistry), or \\cfrac for nested display fractions');
   }
   // plain \frac inside a $$ array renders full-height too.
   for (const m of src.matchAll(/\\begin\{array\}[\s\S]*?\\end\{array\}/g)) {

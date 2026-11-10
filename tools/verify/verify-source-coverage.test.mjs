@@ -281,9 +281,9 @@ test('sequentialParts reads lettered parts in order and is not cut by a state sy
   const lettered = sequentialParts(`${LEAD} (a) condensation of steam (b) burning of gasoline (c) souring of milk`);
   assert.equal(lettered.lead, LEAD);
   assert.deepEqual(lettered.parts, [
-    { label: 'a', text: 'condensation of steam' },
-    { label: 'b', text: 'burning of gasoline' },
-    { label: 'c', text: 'souring of milk' },
+    { label: 'a', text: 'condensation of steam', media: [] },
+    { label: 'b', text: 'burning of gasoline', media: [] },
+    { label: 'c', text: 'souring of milk', media: [] },
   ]);
   // Nine parts and more: the life-sciences splitter stops at (h).
   const nine = sequentialParts(`Convert: ${'abcdefghij'.split('').map((letter, i) => `(${letter}) ${i + 1} g`).join(' ')}`);

@@ -86,7 +86,13 @@ cannot resume the old session's ids. Five things the pilot added:
    formula the grader cannot read and every keyed equation that does not
    balance. A flag is a source defect or a shape the forms do not take;
    the parent rules on each in the run facts before the wave (chapter 2
-   has one, 2.7's "AIF₃·3H₂O" with a capital I for the l). The printed
+   has two: 2.7's "AIF₃·3H₂O" with a capital I for the l, and a
+   simulation answer that offers two symbols joined by "or"). After the
+   flags the tool prints NOTES — the units whose structure the page must
+   shape for the source gates: a part that is only an image, an answer
+   that is only an image, a part the solution leaves unkeyed, a lettered
+   answer under a stem whose parts are in another exercise. Each note is
+   copied into the run facts with what the author does about it. The printed
    exercise number is the module's own number plus the count of exercises
    in the modules before it; put the offsets in the run facts.
 5. **Landing page** `content/physical-sciences/chemistry/NN-<slug>/_index.md`
@@ -101,13 +107,33 @@ cannot resume the old session's ids. Five things the pilot added:
    an element count); the parent writes the decisions, each naming the
    playbook rule it applies. A shape the playbook already fixes is not
    re-decided. Decisions the parent should expect to make: any keyed-answer
-   shape the playbook's "Exercises" table lacks (a formula, a name, a
-   balanced equation — chapter 2 meets them first, and the form is open in
-   the playbook); a simulation exercise; a datum a stem assumes. The facts
+   shape the playbook's "Exercises" table lacks; a key whose word is not
+   one of the stem's own set (2.6 asks "ionic or covalent" and answers
+   "molecular"); a simulation exercise; a datum a stem assumes. **Every
+   keyed-answer shape that is new to the book is probed through the source
+   gates before the wave** (step 6a). The facts
    also list **every appendix the chapter's modules link**
    (`grep -o 'document="m688[5-7][0-9]"'` over the modules; `m68859` is
    Appendix A … `m68871` Appendix M) with the page's site path, since an
    appendix reference is a link (playbook, page skeleton rule 9).
+6a. **Gate probe.** The source gates were proven on the shapes of the
+   chapters already authored, and no others: before chapter 2 they could
+   not read a part that is only an image, a nuclide symbol, or a formula
+   its answer labels in words, and each would have failed a sound page
+   in the middle of the wave. For every shape in `$SP/chN-shapes.txt`
+   that no earlier chapter carried, build ONE item by hand as the
+   playbook's table shapes it and judge it against the real module —
+   `judgeKeyedUnit(item, keyedUnits(xml))` from
+   `tools/verify/verify-source-keys.mjs` and `tools/lib/keyed-units.mjs`,
+   in a ten-line script under `$SP/parent-only/` — with the right key
+   (`confirmed`, or `prose-key` for words the answer does not print) and
+   a wrong one (`key-differs`). `null` means the gate does not see the
+   item as its exercise: fix the gate, with a test, before the wave, not
+   the page after it. Grade the same key and its natural near-misses
+   through the grader (`gradeText`, `checkAnswer`), and write what the
+   probe showed into the run facts. The probe is the only early reading
+   the gates give: `verify-section` does not run them, so an author never
+   sees a gate failure, and the parent first sees one after `build-map`.
 7. Copy the briefs unchanged to `$SP/` (`author.md`, `checker.md`,
    `claim-pass.md`, `consistency.md`, `render-reader.md`). A run-specific
    correction to a brief is an edit to the repo copy, then the scratchpad
@@ -181,6 +207,17 @@ unit item that does not say "no prefix added". A stem clarified after the
 solve is re-solved (one-item packets) or carried (§0). Read every answer's
 `note`, not only the disagreements. `docs/briefs/anatomy-physiology/run.md`
 §3 has the mechanics of remaps and one-item answers files.
+
+**What the solve does not read, and who does.** The solver answers the
+auto-graded items; a `selfcheck` has no packet, and its model answer is
+held to the source by `verify:source-keys` and read by the checker alone.
+The source-keys gate confirms a `fillin` when its answer segment PRINTS the
+keyed number, so a part answered with several numbers ("3 protons, 3
+electrons, 4 neutrons") confirms any of them under any of its items: on
+such a part the checker's tick and the solver's answer are the readings
+that tell the numbers apart, and the parent reads the solver's note on
+each. The gate does not read a formula's atomic-number prescript either
+(`²³₁₁Na` and `²³₁₂Na` are one key to it).
 
 ## 4. Close-out, in this order
 

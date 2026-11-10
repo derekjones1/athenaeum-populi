@@ -139,3 +139,31 @@ export function dependencyOf(exercise, blocks, reference) {
   }
   return nearest;
 }
+
+/** The exercise shortcodes a page item can be, for `mediaBindings`. */
+const EXERCISE_KINDS = ['multiplechoice', 'fillin', 'textin', 'selfcheck', 'sortbins'];
+
+/**
+ * The source image each exercise on a page is bound to, as a Map from
+ * `"<kind>:<index>"` to the file stem of the `mediafigure` its stem points at
+ * ("the figure above" under `src="chemistry/CNX_Chem_02_04_Question3a_img"`
+ * gives `CNX_Chem_02_04_Question3a_img`). An exercise that names no figure,
+ * or whose reference resolves to a table or a drawn figure, has no entry.
+ *
+ * The source gates read this for a lettered part that is ONLY an image
+ * ("(a) [structure] (b) [structure]"): every such part's item prints the same
+ * words, and the figure it is bound to is what tells the parts apart
+ * (tools/lib/keyed-units.mjs `unitScore`).
+ */
+export function mediaBindings(source) {
+  const exercises = EXERCISE_KINDS.flatMap((kind) => [...shortcodes(source, kind)].map((sc) => ({ kind, ...sc })));
+  const blocks = figureLikeBlocks(source, { exerciseSpans: exercises });
+  const bound = new Map();
+  for (const exercise of exercises) {
+    const block = dependencyOf(exercise, blocks, referencesContext(exercise));
+    if (!block || block.kind !== 'mediafigure') continue;
+    const src = /\bsrc="([^"]*)"/.exec(block.raw);
+    if (src) bound.set(`${exercise.kind}:${exercise.index}`, src[1].split('/').pop());
+  }
+  return bound;
+}

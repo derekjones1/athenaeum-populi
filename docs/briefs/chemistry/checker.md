@@ -82,26 +82,42 @@ Open every vendored image the page uses. The alt and any `longdesc` say what
 is drawn — counts, labels, directions read off the image, not the source
 alt — and print no answer of an item beside it. Recount every number an alt
 or `longdesc` states, and re-read every "each", "all", "only", and "gone"
-against a zoom.
+against a zoom. `kind` is right for the picture. Caption verbatim with its
+credit. **An item whose source part is only an image** sits directly under
+that part's `mediafigure` and says "the figure above": open the CNXML part
+and the figure's `src` and confirm they are the same image — an item under
+its neighbour's figure is keyed to the wrong structure, and nothing in the
+stem shows it.
 
-Read every hint with the item's key covered, against the allowed/forbidden
-table in playbook "Hints": if the hint alone decides the item — an
-operation on its numbers, a remark about this number's digits, the shape of
-the result, the observation a judgment turns on — it is a defect. So is a
-hint that points at a table or equation that is not on the page or does not
-hold what the learner needs, and a hint so general it helps nobody where a
-real pointer exists.
-For a `textin` with `answerForm="formula"` or `"equation"`, read the key
-against the CNXML character by character (a capital I for a small l, a
-digit 1 for an l, a charge's sign), count an equation's atoms and charge
-yourself, and grade the stem's own formula or equation and the plausible
-wrong answers (the unbalanced equation, the anhydrous salt, the ion without
-its charge) through `gradeText`. For every other `textin`, grade the rivals a learner would type: the product for a
-quotient, the degree-marked symbol, the wrong-case symbol, each
-singular/plural and meter/metre crossing of a multi-word unit. On a page
-that teaches a rule, apply the rule to every reason its worked examples
-state. `kind` is right for the
-picture. Caption verbatim with its credit.
+## 4a. Hints, text answers, taught rules
+
+- **Read every hint with the item's key covered**, against the
+  allowed/forbidden table in playbook "Hints": if the hint alone decides
+  the item — an operation on its numbers, a remark about this number's
+  digits, the shape of the result, the observation a judgment turns on — it
+  is a defect. So is a hint that points at a table or equation that is not
+  on the page or does not hold what the learner needs, and a hint so
+  general it helps nobody where a real pointer exists.
+- **A `textin` with `answerForm="formula"` or `"equation"`:** read the key
+  against the CNXML character by character (a capital I for a small l, a
+  digit 1 for an l, a charge's sign, a nuclide's two numbers — the gates do
+  not read the atomic number), count an equation's atoms and charge
+  yourself, and grade the stem's own formula or equation and the plausible
+  wrong answers (the unbalanced equation, the anhydrous salt, the ion
+  without its charge, the symbol without its mass number) through
+  `gradeText`.
+- **Every other `textin`:** grade the rivals a learner would type: the
+  product for a quotient, the degree-marked symbol, the wrong-case symbol,
+  each singular/plural and meter/metre crossing of a multi-word unit, an
+  ion's name with and without the word "ion", and any name the STEM prints
+  (it must not be `correct`).
+- **A part answered with several numbers** ("3 protons, 3 electrons, 4
+  neutrons") is carried as one item per number: tick each item's key
+  against the number its stem asks for. The source-keys gate confirms any
+  number the answer prints under any of the part's items, so a swapped
+  pair passes it.
+- **On a page that teaches a rule**, apply the rule to every reason its
+  worked examples state.
 
 ## 5. Leaks, hints, footer
 

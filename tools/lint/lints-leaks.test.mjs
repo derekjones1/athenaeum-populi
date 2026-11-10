@@ -505,6 +505,13 @@ test('in the Chemistry book a fill-in hint never does the arithmetic or rules on
     assert.deepEqual(hit(hint), [], hint);
   }
   assert.deepEqual(hit('Add 273.15.', MATH), [], 'a math hint states its rule by design');
+  // Every auto-graded kind: chapter 2's counts are text-ins and multiple choices.
+  const textin = (hint) => `{{< textin\n  question="An atom has 11 protons and 12 neutrons. What is the element?"\n  answer="sodium"\n  hint="${hint}"\n>}}`;
+  const choice = (hint) => `{{< multiplechoice question="Is the compound ionic or covalent?" answer="ionic" hint="${hint}" >}}\nionic\ncovalent\n{{< /multiplechoice >}}`;
+  const does = (item) => errorsOf(`Body text.\n\n${item}\n`, CHEM).filter((e) => /does the item/.test(e)).length;
+  assert.equal(does(textin('Add the protons and the neutrons.')), 1);
+  assert.equal(does(choice('Subtract the electrons from the protons.')), 1);
+  assert.equal(does(textin('Find the atomic number in the periodic table.')), 0);
 });
 
 test('in the Chemistry book the footer never prints a blank\'s key and every Key term closes with a period', () => {

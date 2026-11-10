@@ -63,7 +63,7 @@ chapters' pages beyond the exemplar, or the checker brief.
   `sources/openstax/osbooks-chemistry-bundle/modules/<moduleId>/index.cnxml`.
   Read the raw file; `tools/source/cnxml-preview.py` drops cross-references
   and TeX spaces.
-- **Visual authority:** `$SP/pdf/ch01/p-00NN.png` (your range is in the run
+- **Visual authority:** `$SP/pdf/chNN/p-00NN.png` (your range is in the run
   facts; the chapter's pooled Key Terms, Key Equations, Summary, and
   Exercises pages and the answer-key pages are listed there too). **The PDF
   is older than the CNXML** (playbook "Source and authority"): where they
@@ -115,6 +115,10 @@ goes wrong.
    label-dense figure, written from an inventory of the image you put in
    your ledger first. Refer to a figure by describing it, never by number.
 7. Tables as Markdown from the CELLS, checked against the PDF.
+   **A reference to an appendix is a link** to its page in this book
+   (playbook, page skeleton rule 9; the run facts list the appendices
+   your module links and their paths). Every other cross-reference stays
+   plain text.
 8. `## Summary`, `## Key equations` (only if the module has that section),
    `## Key terms` (the module's `<glossary>`, source order), `## Practice`,
    then `---` and the `<small>` footer whose `Changes:` clause names every
@@ -204,7 +208,19 @@ goes wrong.
   formula or equation through the real grader before you file:
   `node -e 'import("./assets/js/lib/text/check-text.mjs").then(m=>console.log(m.gradeText("<typed>","<key>",{form:"formula"})))'`.
   A key the lint calls unbalanced or unreadable is a suspected source
-  defect: report it, do not repair it silently.
+  defect: report it, do not repair it silently. An ion's NAME is keyed
+  bare (`selenide`) with the two-word form in `accept` (`selenide ion`);
+  a name the stem itself prints ("ferric nitrate" in "give the IUPAC name
+  of ferric nitrate") is never an `accept` member; a nuclide symbol is
+  keyed in print with both numbers where the source prints both
+  (`²³₁₁Na`), and its stem ends "Type the mass number before the symbol,
+  as in 14C." unless 14C is the answer.
+- **A part that is only an image** ("(a) [structure] (b) [structure]"):
+  the `mediafigure` directly above the part's item or items, and each
+  stem says "shown in the figure above". Nothing else tells the parts
+  apart — to the learner or to the source gates — so never put two
+  parts' figures above one item, and never an item of one part under
+  another part's figure.
 - **A unit as the answer**: a one-word or counted unit name is a `textin`
   with the accept crossings the playbook's table lists; a quotient or
   product unit, or kelvin against "°K", is a `multiplechoice` (the text
@@ -224,9 +240,14 @@ goes wrong.
 
 - `npm run verify-section -- <your page>` until it prints `verified` with no
   ✗; run it again immediately before you report. **A rule that fires on
-  sound content is REPORTED, not worked around** — this is the book's first
-  chapter, and a lint or grader that misreads chemistry is exactly what the
-  parent needs to hear.
+  sound content is REPORTED, not worked around** — every chapter of this
+  book meets answer shapes no earlier chapter had, and a lint, gate, or
+  grader that misreads chemistry is exactly what the parent needs to hear.
+  `verify-section` does not run the source gates (they need the chapter's
+  map and run in the parent's `npm test`), so the parent matches your
+  items to the source's exercises by their STEMS after you report: keep
+  each stem the source's words, and say in your report which items you
+  could not shape as the playbook's table gives.
 - **Source ledger** `$SP/ledger-N.M.md`: per interactive item, the CNXML
   exercise or example id and part, the component, your own computation and
   the source key side by side for a number, the `last-digit` you chose and
@@ -243,15 +264,11 @@ goes wrong.
   re-deriving the item against the CNXML; the note says where the key comes
   from (`source exercise <id> part (b)`, `Check Your Learning of example
   <id>`, `glossary recall: <term>`, `cloze from summary sentence "…"`).
-- **A reference to an appendix is a link** to its page in this book
-  (`docs/subjects/chemistry.md`, page skeleton rule 9; the run facts list
-  the appendices your module links and their paths). Every other
-  cross-reference stays plain text.
 - **Final message, fifteen lines at most:** counts (figures; items by kind;
   key terms; keyed exercises carried and unkeyed omitted), the
   `verify-section` tail line, suspected source defects and claim errors
   (count; details in the ledger), every departure from the source in one
-  line each, every fraction the `\dfrac` ban made hard to read, and — most important for this pilot — **every place the
+  line each, every fraction the `\dfrac` ban made hard to read, and — most important — **every place the
   playbook, this brief, the run facts, the lint, or the grader was wrong,
   silent, or awkward for your module**, with the exact item. Do not paste
   the ledger.

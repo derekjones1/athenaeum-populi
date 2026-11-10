@@ -766,8 +766,10 @@ export function lintLeaks(src, filename = '') {
       // after the rule against them was written. The line the playbook
       // draws by pairs ("Hints") is drawn here by the two shapes a pattern
       // can see: an arithmetic imperative, and a verdict on this number's
-      // digits.
-      if (item.kind === 'fillin') {
+      // digits. Every auto-graded kind is read: chapter 2's counts and
+      // formulas are `textin`s and multiple choices, and "Add the protons
+      // and neutrons" does a `textin` as surely as it does a `fillin`.
+      if (item.kind !== 'selfcheck') {
         const hint = String(item.params.hint ?? '');
         const does = /^(?:first,?\s+)?(?:multiply|divide|add|subtract|cube|square)\b/i.exec(hint)
           || /\bevery (?:non-?zero )?(?:digit|zero)\b[^.]*\bsignificant\b|\bplaceholder zero\b|\bis a final 5\b/i.exec(hint);

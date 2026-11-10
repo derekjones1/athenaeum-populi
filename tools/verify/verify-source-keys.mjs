@@ -107,6 +107,7 @@ import {
 } from '../lib/openstax-source.mjs';
 import { integerFlag, parseCliArgs } from '../lib/cli.mjs';
 import { shortcodes } from '../lib/content.mjs';
+import { mediaBindings } from '../lib/exercise-context.mjs';
 import { parseSortbinsConfig } from '../../assets/js/lib/text/check-sortbins.mjs';
 import { foldedForms } from '../../assets/js/lib/text/check-text.mjs';
 import { chemCanon } from '../../assets/js/lib/text/check-chem.mjs';
@@ -1213,10 +1214,15 @@ export function readModule(xml) {
 
 export function pageItems(markdown) {
   const items = [];
+  // The source image each item is bound to ("the figure above"), by which a
+  // lettered part that is only an image is told from its siblings.
+  const figures = mediaBindings(markdown);
+  const figureOf = (kind, sc) => figures.get(`${kind}:${sc.index}`) || '';
   for (const sc of shortcodes(markdown, 'multiplechoice')) {
     items.push({
       type: 'multiplechoice',
       line: lineOf(markdown, sc.index),
+      figure: figureOf('multiplechoice', sc),
       question: sc.params.question || '',
       answer: sc.params.answer || '',
       options: sc.inner.split('\n').map((line) => line.trim()).filter(Boolean),
@@ -1226,6 +1232,7 @@ export function pageItems(markdown) {
     items.push({
       type: 'fillin',
       line: lineOf(markdown, sc.index),
+      figure: figureOf('fillin', sc),
       question: sc.params.question || '',
       answer: sc.params.answer || '',
       form: sc.params.answerForm || '',
@@ -1235,6 +1242,7 @@ export function pageItems(markdown) {
     items.push({
       type: 'textin',
       line: lineOf(markdown, sc.index),
+      figure: figureOf('textin', sc),
       question: sc.params.question || '',
       answer: sc.params.answer || '',
       accept: sc.params.accept || '',
@@ -1257,6 +1265,7 @@ export function pageItems(markdown) {
     items.push({
       type: 'selfcheck',
       line: lineOf(markdown, sc.index),
+      figure: figureOf('selfcheck', sc),
       question: sc.params.question || '',
       // The optional ===CHECKS=== tail holds rubric checkpoints — clauses of
       // the model answer restated for self-marking. Judging reads the model
@@ -1943,7 +1952,7 @@ const withoutArticle = (value) => foldedPlain(value).replace(/^(?:an?|the) /, ''
  */
 export function judgeKeyedUnit(item, units) {
   if (!['multiplechoice', 'fillin', 'selfcheck', 'textin'].includes(item.type)) return null;
-  const unit = unitFor(item.question, units);
+  const unit = unitFor(item.question, units, item);
   if (!unit) return null;
   const exercise = { id: unit.id };
   if (!unit.keyed) {
@@ -1959,10 +1968,15 @@ export function judgeKeyedUnit(item, units) {
       // A formula or an equation: the key and the source's answer are read
       // by the grader's own parser, so "Mn _3 (PO _4 ) _2" and "Mn₃(PO₄)₂"
       // are one formula. An answer that lists several things ("ionic,
-      // Ba²⁺, O²⁻"; an equation followed by a mass) is read piece by piece.
+      // Ba²⁺, O²⁻"; an equation followed by a mass) is read piece by piece,
+      // and a piece the answer labels in words ("molecular C₂H₂, empirical
+      // CH") is read without them: a word of three letters or more is never
+      // an element's symbol.
       const key = chemCanon(item.answer, item.form);
       const pieces = [unit.answer, ...unit.answer.split(/[,;]|\s(?:and|or)\s/)]
-        .map((piece) => chemCanon(piece.trim().replace(/[.:]$/, ''), item.form)).filter(Boolean);
+        .map((piece) => piece.trim().replace(/[.:]$/, ''))
+        .flatMap((piece) => [piece, piece.replace(/^(?:[A-Za-z][a-z]{2,}\s+)+/, '')])
+        .map((piece) => chemCanon(piece, item.form)).filter(Boolean);
       return key && pieces.includes(key) ? { status: 'confirmed', exercise } : differs;
     }
     // A name or a word: the answer prints it, plural fold included.

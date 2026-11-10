@@ -305,6 +305,122 @@ formula-as-link checks.
 - A stale constant is not corrected; a cell that contradicts chemistry or
   the table itself is.
 
+## The review before chapter 2 (November 10, 2026)
+
+Derek asked for one more pass over chapter 1 and the playbook before the
+book goes on: lessons, irregularities, and whether the three readings and
+the blind solve reach a right page. One session, the parent, and one
+Sonnet agent for the checklist-shaped part.
+
+**What was read.** All 199 items of chapter 1 in one table — stem, key,
+form, hint — with every numeric key of 1.6 recomputed from the page's own
+conversion table; the playbook, the eight briefs, and this file against
+each other; every "(lint)", "(browser test)", and named gate in the
+playbook against the code (the Sonnet agent: 45 claims); and chapter 2's
+prep tools run for real, with a hand-built item of each new answer shape
+judged through the source gates against the pinned modules.
+
+**Chapter 1.** No key, stem, or hint was changed. The one key that reads
+oddly on a fresh look — 50 °F to "280 K (two significant figures)", where
+Section 1.5's addition rule gives 283 — follows the worked example
+directly above it (505.4 K written 5.1 × 10² K) and the source's stem,
+which states the count: a convention the module keeps, not a defect, by
+the sibling test the pilot settled.
+
+**The finding: a gate is proven only on the shapes it has met.** Chapter
+1 keys numbers, words, and sentences. Run on chapter 2's modules, the
+source gates could not read three of its shapes, and each would have
+failed a sound page in the middle of the wave — or, worse, let a part go
+unrequired:
+
+- **A lettered part that is only an image** (2.4: "Write the molecular
+  and empirical formulas of the following compounds: (a) [structure] …").
+  The splitter dropped the last such part — nothing but an image follows
+  its label — and every image-only part had an empty text that no item
+  could match. Seven keyed exercises in the book (2.4 twice, 3.1, 12.7
+  twice, 20.2, 20.3). `keyed-units.mjs` now marks each image in a stem,
+  `exercise-context.mjs` `mediaBindings` gives each page item the
+  `mediafigure` its "the figure above" resolves to, and a part with no
+  words is matched by that image.
+- **A nuclide symbol.** MathML prescripts read "3 7 Li" where the page
+  prints ⁷₃Li, so 2.3's fifteen proton, electron, and neutron counts
+  matched no unit; and an answer of "11 23 Na" did not read as a formula.
+  Stems now read mass number first, answers read `^{23}_{11} Na`, and an
+  answer label standing directly before a superscript ("(a)¹³³Cs⁺") is a
+  label.
+- **A formula its answer labels in words** ("molecular C₂H₂, empirical
+  CH"): the keys gate now reads the piece without a leading word of three
+  letters or more, which is never an element's symbol.
+
+`chemistry-shapes` prints these units under a new Notes heading, with two
+shapes that are NOT yet read and are flagged for their chapters: a part
+the solution leaves unkeyed inside a keyed exercise (8.4, 13.3), and a
+lettered answer under a stem whose parts are in another exercise (4.3,
+13.2, 17.1, 17.2, 17.7, 19.2). `run.md` gained step 6a, the gate probe.
+
+**The playbook against the code.** Of 45 enforcement claims, about 29 are
+held as written; ten are held more narrowly than the text says; five are
+words only (the first figure's `eager`, the description's closing phrase,
+a multiple-choice stem's punctuation, "the figure above" on a bound item,
+the footer's census). Done about it: the hint lint read `fillin` hints
+only and now reads every auto-graded kind; the `\dfrac` lint's message
+named `\tfrac` alone and now names the `\frac` this book writes; the
+playbook says which rules no lint holds, so the checker knows they are
+its own. Left, each small:
+a four-digit number from 1000 to 2099 in math is read as a year and not
+grouped (`$2000\ \text{lb}$` passes); `\$` is refused in inline math and
+not in display math; `verify:replay` and the browser suite run
+in `npm run ci` and not in `npm test`, which is why `run.md` §4 step 6
+runs both by name.
+
+**The playbook against itself.** Corrected: the name row offered "ferric
+nitrate" as its example of an `accept` member, and 2.7 asks for the IUPAC
+name OF ferric nitrate; an ion's name keyed "the selenide ion" marks the
+bare "selenide" wrong (the grader drops "the", not "ion"); the nuclide
+row asked for a fill-in per number where 2.5's stems print both numbers;
+`run.md` still called the formula form open; the author brief still said
+"this is the book's first chapter" and pointed at `ch01`; the checker
+brief's section on figures had the hint and text-answer checks spliced
+into the middle of a sentence. Added to the "Exercises" table: counts of
+particles, a nuclide symbol, a list sorted by one answer sentence, a
+charge, and the labelled pair of formulas; to "Stems": the image-only
+part, and a key whose word is not in the stem's set.
+
+**Rulings chapter 2's run facts should carry** (each probed here; the
+parent of that run confirms):
+
+1. 2.7 exercise fs-idp268321696(e), "AIF₃·3H₂O": a capital I for the l.
+   Key `AlF₃·3H₂O`; erratum, decisions entry, `DISCLOSED_DEVIATIONS`.
+2. 2.3's two Build an Atom exercises (the second is the shapes tool's
+   other flag, "⁶Li⁺ or ⁶₃Li⁺"): `selfcheck`s, by the simulation rule.
+3. 2.4's two image-part exercises: a `mediafigure` above each part, two
+   formula `textin`s under each figure of the first.
+4. 2.3's counts: one `whole-number` fill-in per number; `verify:replay`
+   will name the ones whose stem prints the number (allowlist, with the
+   reason "the count is the stem's number by definition").
+5. 2.3 and 2.5 nuclide symbols: one formula `textin` each, keyed in print.
+6. 2.5's ten-part classification: two multiple choices per part (the gate
+   confirms the first and reads "representative element" against the
+   stem's "main-group (representative) element" as a prose key — the
+   checker ticks those ten by hand).
+7. 2.6's unlettered list of six chlorides: a `selfcheck`.
+8. 2.6's Check Your Learning answers "molecular" to a stem that asks
+   "ionic or covalent": options as the stem names them, key the stem's
+   word, footer and erratum.
+9. 2.3's platinum ion: two counts and the charge as a signed
+   `whole-number` fill-in.
+10. 2.6's "Se²⁻, the selenide ion": a formula `textin` and a name `textin`
+    keyed `selenide`, `accept="selenide ion"`.
+
+**Open, for Derek or the next parent.** Sections 2.6 and 2.7 ask the
+learner to use "the periodic table" and show none; the source links
+Appendix A once in the chapter (2.3). Linking those words to Appendix A
+in such a stem would extend the appendix-link rule to a place the source
+did not link. Not decided here.
+
+**What was not run.** The browser suite: no page, script, or style
+changed. `npm test` and `verify:replay` were run after the last edit.
+
 ### The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under

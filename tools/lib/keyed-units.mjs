@@ -70,50 +70,100 @@ export const plain = (value) => normalizeText(String(value ?? '')
 const padded = (value) => ` ${value} `;
 
 /**
+ * A `<media>` element inside a stem, as `markedStemText` writes it: the
+ * image's file stem between marks no source text contains.
+ */
+const MEDIA_MARK = /\s*⟦media:([^⟧]*)⟧\s*/g;
+const withoutMarks = (text) => text.replace(MEDIA_MARK, ' ').replace(/\s+/g, ' ').trim();
+const marksIn = (text) => [...text.matchAll(MEDIA_MARK)].map((match) => match[1]);
+
+/**
  * The lettered parts of a stem or a solution, read IN SEQUENCE — "(a)", then
- * the next "(b)" after it, and so on — as `{ lead, parts: [{ label, text }] }`,
- * or null when there are fewer than two. A label counts only where the next
- * expected letter stands at the start of a word, so a state symbol — "(g)",
- * "(s)", "(l)" are letters in parentheses too — is never a part, and parts
- * run past (h).
+ * the next "(b)" after it, and so on — as
+ * `{ lead, parts: [{ label, text, media }] }`, or null when there are fewer
+ * than two. A label counts only where the next expected letter stands at the
+ * start of a word, so a state symbol — "(g)", "(s)", "(l)" are letters in
+ * parentheses too — is never a part, and parts run past (h). In an answer a
+ * label may stand directly before a superscript ("(a)^{133} Cs^{+}", a
+ * nuclide's mass number), which `answerText` writes without a space.
+ *
+ * A stem read by `markedStemText` carries a mark for each image. The marks
+ * are taken out of every `text` and listed in the part's `media`, so a part
+ * that is ONLY an image ("(a) [structure] (b) [structure]", Chemistry 2.4) is
+ * a part with an empty text and one image — and the last of them, which has
+ * nothing but its image after the label, is still found.
  */
 export function sequentialParts(stem) {
   const marks = [];
   let from = 0;
   for (let code = 97; code <= 122; code += 1) {
     const label = String.fromCharCode(code);
-    const found = new RegExp(`(?:^|\\s)\\(${label}\\)\\s+`).exec(stem.slice(from));
+    const found = new RegExp(`(?:^|\\s)\\(${label}\\)(?:\\s+|(?=\\^\\{))`).exec(stem.slice(from));
     if (!found) break;
     marks.push({ label, start: from + found.index, end: from + found.index + found[0].length });
     from = from + found.index + found[0].length;
   }
   if (marks.length < 2) return null;
   return {
-    lead: stem.slice(0, marks[0].start).trim(),
-    parts: marks.map((mark, index) => ({
-      label: mark.label,
-      text: stem.slice(mark.end, index + 1 < marks.length ? marks[index + 1].start : stem.length).trim(),
-    })),
+    lead: withoutMarks(stem.slice(0, marks[0].start)),
+    parts: marks.map((mark, index) => {
+      const raw = stem.slice(mark.end, index + 1 < marks.length ? marks[index + 1].start : stem.length);
+      return { label: mark.label, text: withoutMarks(raw), media: marksIn(raw) };
+    }),
   };
 }
 
-/** Prose of a node with lists, tables, and media left out, every element boundary a space. */
-function stemText(node) {
+/**
+ * A nuclide's prescripts: MathML `msubsup` on an EMPTY base, the atomic
+ * number below and the mass number above, set before the element's symbol
+ * (`<msubsup><mrow/><mn>11</mn><mn>23</mn></msubsup><mtext>Na</mtext>`).
+ * Returns `{ atomic, mass }` as text, or null for any other `msubsup`.
+ */
+function prescripts(node, textOf) {
+  if (localName(node) !== 'msubsup') return null;
+  const [base, sub, sup] = (node.children || []).filter((child) => typeof child !== 'string');
+  if (!base || !sub || !sup || normalizeWhitespace(textOf(base))) return null;
+  return { atomic: normalizeWhitespace(textOf(sub)), mass: normalizeWhitespace(textOf(sup)) };
+}
+
+/**
+ * Prose of a node with lists, tables, and media left out, every element
+ * boundary a space. With `marked`, each `<media>` leaves a mark naming its
+ * image's file stem (`sequentialParts` reads and removes them).
+ */
+function stemText(node, { marked = false } = {}) {
   const parts = [];
   const visit = (candidate) => {
     if (typeof candidate === 'string') { parts.push(candidate); return; }
-    if (['list', 'table', 'media', 'figure'].includes(localName(candidate))) return;
+    const name = localName(candidate);
+    if (name === 'media' && marked) {
+      const image = descendants(candidate, (child) => localName(child) === 'image')[0];
+      const file = (image?.attributes?.src || '').split('/').pop().replace(/\.[a-z0-9]+$/i, '');
+      if (file) parts.push(` ⟦media:${file}⟧ `);
+      return;
+    }
+    if (['list', 'table', 'media', 'figure'].includes(name)) return;
+    // A nuclide's prescripts read mass number first, as the page prints
+    // them (`\ce{^{7}_{3}Li}`, ⁷₃Li): MathML lists the subscript first.
+    const nuclide = prescripts(candidate, (child) => stemText(child));
+    if (nuclide) { parts.push(` ${nuclide.mass} ${nuclide.atomic} `); return; }
     for (const child of candidate.children || []) visit(child);
   };
   visit(node);
   return normalizeWhitespace(parts.join(' '));
 }
 
+/** A stem with a mark where each image stands — the text `sequentialParts`
+ * splits when a part may be only an image. Never shown and never matched:
+ * `stemText` is the stem. */
+export const markedStemText = (node) => stemText(node, { marked: true });
+
 /**
  * An answer node as text a numeral can be read out of: `<sup>` and MathML
  * `msup` exponents written `^{…}`, a MathML fraction as `(a)/(b)`, every
  * other element boundary a space. "2.957 × 10<sup>−2</sup> L" reads
- * "2.957 × 10^{−2} L".
+ * "2.957 × 10^{−2} L", and a nuclide's MathML prescripts read
+ * "^{23}_{11} Na".
  */
 export function answerText(node) {
   const visit = (candidate) => {
@@ -123,6 +173,9 @@ export function answerText(node) {
     if (name === 'title') return '';
     if (name === 'sup') return `^{${normalizeWhitespace(inner()).replace(/\s+/g, '')}}`;
     if (name === 'sub') return ` _${normalizeWhitespace(inner())} `;
+    // A nuclide's prescripts, in the grader's own writing: "^{23}_{11} Na".
+    const nuclide = prescripts(candidate, visit);
+    if (nuclide) return ` ^{${nuclide.mass.replace(/\s+/g, '')}}_{${nuclide.atomic.replace(/\s+/g, '')}} `;
     if (name === 'msup') {
       const [base, exponent] = (candidate.children || []).filter((child) => typeof child !== 'string');
       return `${base ? visit(base) : ''}^{${exponent ? normalizeWhitespace(visit(exponent)).replace(/\s+/g, '') : ''}}`;
@@ -182,10 +235,11 @@ export function checkYourLearning(document) {
     if (at === -1) continue;
     const answerAt = children.findIndex((child, index) => index > at && localName(child) === 'note' && /^answer:?$/i.test(titleOf(child)));
     const paragraphs = children.slice(at, answerAt === -1 ? at + 1 : answerAt).filter((child) => localName(child) === 'para');
-    const stem = normalizeWhitespace(paragraphs.map((para) => stemText(para)).join(' ')).replace(/^check your learning\s*/i, '');
+    const read = (options) => normalizeWhitespace(paragraphs.map((para) => stemText(para, options)).join(' ')).replace(/^check your learning\s*/i, '');
+    const stem = read();
     if (!stem) continue;
     found.push({
-      id: `${example.attributes.id || ''}#check`, cls: 'check-your-learning', stem,
+      id: `${example.attributes.id || ''}#check`, cls: 'check-your-learning', stem, marked: read({ marked: true }),
       keyed: answerAt !== -1, answer: answerAt === -1 ? '' : answerText(children[answerAt]),
     });
   }
@@ -195,13 +249,15 @@ export function checkYourLearning(document) {
 /**
  * Every keyed-book unit of one module, in source order:
  *
- *   { id, group, cls, label, lead, partText, stem, keyed, answer }
+ *   { id, group, cls, label, lead, partText, media, stem, keyed, answer }
  *
  * One unit per exercise, or per lettered part of one; one per Check Your
  * Learning (the question a worked `<example>` ends with, keyed by the
  * `Answer:` note after it), or per lettered part of one. `answer` is the
  * unit's own segment of the solution as `answerText`; `keyed` is false for an
- * exercise the source prints no solution for.
+ * exercise the source prints no solution for. `media` lists the images a
+ * lettered part's stem holds, by file stem; a part that is only an image has
+ * an empty `partText` and is told from its siblings by it (`unitScore`).
  */
 export function keyedUnits(xml) {
   const document = typeof xml === 'string' ? parseXml(xml) : xml;
@@ -213,15 +269,15 @@ export function keyedUnits(xml) {
       if (!problem) continue;
       const solution = firstElement(exercise, 'solution');
       whole.push({
-        id: exercise.attributes.id || '', cls: KEYED_EXERCISE_CLASS, stem: stemText(problem),
+        id: exercise.attributes.id || '', cls: KEYED_EXERCISE_CLASS, stem: stemText(problem), marked: markedStemText(problem),
         keyed: Boolean(solution), answer: solution ? answerText(solution) : '',
       });
     }
   }
   whole.push(...checkYourLearning(document));
   const units = [];
-  for (const unit of whole) {
-    const lettered = sequentialParts(unit.stem);
+  for (const { marked, ...unit } of whole) {
+    const lettered = sequentialParts(marked ?? unit.stem);
     if (!lettered) {
       units.push({ ...unit, group: unit.id, label: null, lead: '', partText: null });
       continue;
@@ -236,10 +292,15 @@ export function keyedUnits(xml) {
         label: part.label,
         lead: lettered.lead,
         partText: part.text,
+        media: part.media,
         stem: `${lettered.lead} ${part.text}`.trim(),
         // A lettered stem whose solution is not lettered answers every part
         // with the whole solution.
         answer: answers ? (segment ? segment.text.replace(/[;,]\s*$/, '') : '') : unit.answer,
+        // False when the solution letters its parts and prints none for this
+        // one (8.4 answers (a)–(c) of five parts): a part the source leaves
+        // unkeyed inside a keyed exercise. `chemistry-shapes` flags it.
+        answered: answers ? Boolean(segment) : true,
       });
     }
   }
@@ -252,12 +313,22 @@ export function keyedUnits(xml) {
  * that reads like the exercise's, or long enough to stand alone), the token
  * similarity for an unlettered exercise, 0 otherwise. `words` orders equal
  * scores, longest part first: "iron" also stands inside the item for
- * "iron oxide" and must not take it.
+ * "iron oxide" and must not take it. `item.figure` is the image the page
+ * item is bound to (exercise-context.mjs `mediaBindings`), read only for a
+ * part that is nothing but an image.
  */
-export function unitScore(unit, question) {
+export function unitScore(unit, question, item = {}) {
   if (unit.partText !== null && unit.partText !== undefined) {
     const part = plain(unit.partText);
-    if (!part) return { score: 0, words: 0 };
+    if (!part) {
+      // A part that is only an image: every sibling's item prints the same
+      // words, so the part is the one whose image the item is bound to
+      // ("the figure above" under that image's mediafigure), beside a
+      // lead-in that reads like the exercise's.
+      const bound = Boolean(item.figure) && (unit.media || []).includes(item.figure);
+      const lead = unit.lead ? tokenSimilarity(unit.lead, question) : 1;
+      return bound && lead >= LEAD_FLOOR ? { score: 1, words: 0 } : { score: 0, words: 0 };
+    }
     const words = part.split(' ').length;
     if (!padded(plain(question)).includes(padded(part))) {
       // A part the page had to restate — "the cube in part (a)" replaced by
@@ -282,11 +353,11 @@ export function unitScore(unit, question) {
   return { score: score >= WHOLE_FLOOR ? score : 0, words: 0 };
 }
 
-/** The unit a page question transcribes, or null. */
-export function unitFor(question, units) {
+/** The unit a page question transcribes, or null (`item` as in `unitScore`). */
+export function unitFor(question, units, item = {}) {
   let best = null;
   for (const unit of units) {
-    const { score, words } = unitScore(unit, question);
+    const { score, words } = unitScore(unit, question, item);
     if (score === 0) continue;
     if (!best || score > best.score || (score === best.score && words > best.words)) best = { unit, score, words };
   }
