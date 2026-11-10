@@ -81,7 +81,8 @@ catch.
 Open every vendored image the page uses. The alt and any `longdesc` say what
 is drawn — counts, labels, directions read off the image, not the source
 alt — and print no answer of an item beside it. Recount every number an alt
-or `longdesc` states, and re-read every "each", "all", "only", and "gone"
+or `longdesc` states, and re-read every position word ("above", "between",
+"below"), every colour, and every "each", "all", "only", and "gone"
 against a zoom. `kind` is right for the picture. Caption verbatim with its
 credit. **An item whose source part is only an image** sits directly under
 that part's `mediafigure` and says "the figure above": open the CNXML part
@@ -105,7 +106,11 @@ stem shows it.
   yourself, and grade the stem's own formula or equation and the plausible
   wrong answers (the unbalanced equation, the anhydrous salt, the ion
   without its charge, the symbol without its mass number) through
-  `gradeText`.
+  `gradeText`, **with the item's form passed as `form`** — the option is
+  `form`, not `answerForm`, and a formula graded without it is graded as
+  plain text, which calls `133Cs-` right against `¹³³Cs⁺`:
+  `node -e 'import("./assets/js/lib/text/check-text.mjs").then(m=>console.log(m.gradeText("<typed>","<key>",{form:"formula"})))'`
+  (`form:"equation"` for an equation).
 - **Every other `textin`:** grade the rivals a learner would type: the
   product for a quotient, the degree-marked symbol, the wrong-case symbol,
   each singular/plural and meter/metre crossing of a multi-word unit, an
@@ -140,6 +145,15 @@ stem shows it.
   the answer is a key printed), and each corrected value it mentions.
 - A Source note beside an unanswered item: could a learner work the key
   out from it (the source's value, "truncated rather than rounded")?
+- A select-the-term multiple choice under an objective heading that names
+  its key: does the heading name at least one other option too? (No lint
+  reads this; the heading-word lint is for `textin`.) A stem or model
+  answer that names a part by its letter — "(a)", "(b)" — on a page that
+  prints no letters is a defect (playbook "Stems").
+- A selfcheck rubric: is every clause a whole statement in the model
+  answer's words that checks something, and can the page's own model
+  answer meet every clause? (Chapter 2: a "Sample answer" that failed two
+  of its three clauses because the rubric dropped "if it was not".)
 - A phrase in the stems that appears only on items with one kind of key
   ("with its sign" on the negative answers alone) is a leak by contrast:
   read the stems of like items side by side.

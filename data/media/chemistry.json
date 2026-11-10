@@ -594,7 +594,8 @@
       ],
       "transparent": false,
       "alt": "Part (a) is a historical woodcut sketch depicting four people stirring and handling chemicals in barrels and large cylinders over burning embers, with a large stove and a steam-producing chest in the corner. Part (b) is a black-and-white photograph of a woman in a white lab coat working carefully with glassware in a modern laboratory setting.",
-      "caption": "(a) This portrayal shows an alchemist’s workshop circa 1580. Although alchemy made some useful contributions to how to manipulate matter, it was not scientific by modern standards. (b) While the equipment used by Alma Levant Hayden in this 1952 picture might not seem as sleek as you might find in a lab today, her approach was highly methodical and carefully recorded. A department head at the FDA, Hayden is most famous for exposing an aggressively marketed anti-cancer drug as nothing more than an unhelpful solution of common substances. (credit a: Chemical Heritage Foundation; b: NIH History Office)"
+      "caption": "(a) This portrayal shows an alchemist’s workshop circa 1580. Although alchemy made some useful contributions to how to manipulate matter, it was not scientific by modern standards. (b) While the equipment used by Alma Levant Hayden in this 1952 picture might not seem as sleek as you might find in a lab today, her approach was highly methodical and carefully recorded. A department head at the FDA, Hayden is most famous for exposing an aggressively marketed anti-cancer drug as nothing more than an unhelpful solution of common substances. (credit a: Chemical Heritage Foundation; b: NIH History Office)",
+      "scale": "scaled-down"
     },
     "CNX_Chem_01_01_ChemWeb": {
       "source": "media/CNX_Chem_01_01_ChemWeb.jpg",
@@ -663,7 +664,8 @@
       ],
       "transparent": false,
       "alt": "The fuel cell consists of a proton exchange membrane sandwiched between an anode and a cathode. Hydrogen gas enters the battery near the anode. Oxygen gas enters the battery near the cathode. The entering hydrogen gas is broken up into single white spheres that each have a positive charge. These are protons. The protons repel negatively-charged electrons within the anode. These electrons travel through a circuit, providing electricity to anything attached to the battery. The protons continue through the proton exchange membrane and through the cathode to reach the oxygen gas molecules at the opposite end of the battery. There, the oxygen atoms split up into single red spheres. Each oxygen atom takes on two of the incoming protons to form a water molecule.",
-      "caption": "A fuel cell generates electrical energy from hydrogen and oxygen via an electrochemical process and produces only water as the waste product."
+      "caption": "A fuel cell generates electrical energy from hydrogen and oxygen via an electrochemical process and produces only water as the waste product.",
+      "scale": "scaled-down"
     },
     "CNX_Chem_01_01_SciMethod": {
       "source": "media/CNX_Chem_01_01_SciMethod.jpg",
@@ -847,7 +849,8 @@
       ],
       "transparent": false,
       "alt": "Diagram A shows a glass containing a red liquid with a layer of yellow oil floating on the surface of the red liquid. A zoom in box is magnifying a portion of the red liquid that contains some of the yellow oil. The zoomed in image shows that oil is forming round droplets within the red liquid. Diagram B shows a photo of Gatorade G 2. A zoom in box is magnifying a portion of the Gatorade, which is uniformly red.",
-      "caption": "(a) Oil and vinegar salad dressing is a heterogeneous mixture because its composition is not uniform throughout. (b) A commercial sports drink is a homogeneous mixture because its composition is uniform throughout. (credit a “left”: modification of work by John Mayer; credit a “right”: modification of work by Umberto Salvagnin; credit b “left: modification of work by Jeff Bedford)"
+      "caption": "(a) Oil and vinegar salad dressing is a heterogeneous mixture because its composition is not uniform throughout. (b) A commercial sports drink is a homogeneous mixture because its composition is uniform throughout. (credit a “left”: modification of work by John Mayer; credit a “right”: modification of work by Umberto Salvagnin; credit b “left: modification of work by Jeff Bedford)",
+      "scale": "scaled-down"
     },
     "CNX_Chem_01_02_Molecules": {
       "source": "media/CNX_Chem_01_02_Molecules.jpg",
@@ -888,7 +891,8 @@
       ],
       "transparent": false,
       "alt": "A cutting torch is being used to cut a piece of metal. Bright, white colored plasma can be seen near the tip of the torch, where it is contacting the metal.",
-      "caption": "A plasma torch can be used to cut metal. (credit: “Hypertherm”/Wikimedia Commons)"
+      "caption": "A plasma torch can be used to cut metal. (credit: “Hypertherm”/Wikimedia Commons)",
+      "scale": "scaled-down"
     },
     "CNX_Chem_01_02_StatesMatt": {
       "source": "media/CNX_Chem_01_02_StatesMatt.jpg",
@@ -934,7 +938,8 @@
       ],
       "transparent": false,
       "alt": "This figure shows a series of three photos labeled a, b, and c. Photo a shows the bottom of a test tube that is filled with an orange-red substance. A slight amount of a silver substance is also visible. Photo b shows the substance in the test tube being heated over a flame. Photo c shows a test tube that is not longer being heated. The orange-red substance is almost completely gone, and small, silver droplets of a substance are left.",
-      "caption": "(a) The compound mercury(II) oxide, (b) when heated, (c) decomposes into silvery droplets of liquid mercury and invisible oxygen gas. (credit: modification of work by Paul Flowers)"
+      "caption": "(a) The compound mercury(II) oxide, (b) when heated, (c) decomposes into silvery droplets of liquid mercury and invisible oxygen gas. (credit: modification of work by Paul Flowers)",
+      "scale": "scaled-down"
     },
     "CNX_Chem_01_03_ChemChange": {
       "source": "media/CNX_Chem_01_03_ChemChange.jpg",
@@ -957,7 +962,8 @@
       ],
       "transparent": false,
       "alt": "Figure A is a photo of the flask containing a blue liquid. Several strands of brownish copper are immersed into the blue liquid. There is a brownish gas rising from the liquid and filling the upper part of the flask. Figure B shows a burning match. Figure C shows red meat being cooked in a pan. Figure D shows a small bunch of yellow bananas that have many black spots.",
-      "caption": "(a) Copper and nitric acid undergo a chemical change to form copper nitrate and brown, gaseous nitrogen dioxide. (b) During the combustion of a match, cellulose in the match and oxygen from the air undergo a chemical change to form carbon dioxide and water vapor. (c) Cooking red meat causes a number of chemical changes, including the oxidation of iron in myoglobin that results in the familiar red-to-brown color change. (d) A banana turning brown is a chemical change as new, darker (and less tasty) substances form. (credit b: modification of work by Jeff Turner; credit c: modification of work by Gloria Cabada-Leman; credit d: modification of work by Roberto Verzo)"
+      "caption": "(a) Copper and nitric acid undergo a chemical change to form copper nitrate and brown, gaseous nitrogen dioxide. (b) During the combustion of a match, cellulose in the match and oxygen from the air undergo a chemical change to form carbon dioxide and water vapor. (c) Cooking red meat causes a number of chemical changes, including the oxidation of iron in myoglobin that results in the familiar red-to-brown color change. (d) A banana turning brown is a chemical change as new, darker (and less tasty) substances form. (credit b: modification of work by Jeff Turner; credit c: modification of work by Gloria Cabada-Leman; credit d: modification of work by Roberto Verzo)",
+      "scale": "scaled-down"
     },
     "CNX_Chem_01_03_HazDiamond": {
       "source": "media/CNX_Chem_01_03_HazDiamond.jpg",
@@ -1026,7 +1032,8 @@
       ],
       "transparent": false,
       "alt": "Figure A is a photograph of butter melting in a pot on a stove. Figure B is a photograph of something being heated on a stove in a pot. Water droplets are forming on the underside of a glass cover that has been placed over the pot.",
-      "caption": "(a) Wax undergoes a physical change when solid wax is heated and forms liquid wax. (b) Steam condensing inside a cooking pot is a physical change, as water vapor is changed into liquid water. (credit a: modification of work by “95jb14”/Wikimedia Commons; credit b: modification of work by “mjneuby”/Flickr)"
+      "caption": "(a) Wax undergoes a physical change when solid wax is heated and forms liquid wax. (b) Steam condensing inside a cooking pot is a physical change, as water vapor is changed into liquid water. (credit a: modification of work by “95jb14”/Wikimedia Commons; credit b: modification of work by “mjneuby”/Flickr)",
+      "scale": "scaled-down"
     },
     "CNX_Chem_01_03_Rust": {
       "source": "media/CNX_Chem_01_03_Rust.jpg",
@@ -1049,7 +1056,8 @@
       ],
       "transparent": false,
       "alt": "Figure A is a photo of metal machinery that is now mostly covered with reddish orange rust. Figure B shows the silver colored chrome parts of a motorcycle. One of the parts is so shiny that you can see a reflection of the surrounding street and buildings.",
-      "caption": "(a) One of the chemical properties of iron is that it rusts; (b) one of the chemical properties of chromium is that it does not. (credit a: modification of work by Tony Hisgett; credit b: modification of work by “Atoma”/Wikimedia Commons)"
+      "caption": "(a) One of the chemical properties of iron is that it rusts; (b) one of the chemical properties of chromium is that it does not. (credit a: modification of work by Tony Hisgett; credit b: modification of work by “Atoma”/Wikimedia Commons)",
+      "scale": "scaled-down"
     },
     "CNX_Chem_01_04_CylGold": {
       "source": "media/CNX_Chem_01_04_CylGold.jpg",
@@ -1105,7 +1113,8 @@
       ],
       "transparent": false,
       "alt": "The photo shows a small metal cylinder on a stand. The cylinder is covered with 2 glass lids, with the smaller glass lid encased within the larger glass lid.",
-      "caption": "This replica prototype kilogram as previously defined is housed at the National Institute of Standards and Technology (NIST) in Maryland. (credit: National Institutes of Standards and Technology)"
+      "caption": "This replica prototype kilogram as previously defined is housed at the National Institute of Standards and Technology (NIST) in Maryland. (credit: National Institutes of Standards and Technology)",
+      "scale": "scaled-down"
     },
     "CNX_Chem_01_04_MYdCmIn": {
       "source": "media/CNX_Chem_01_04_MYdCmIn.jpg",
@@ -1128,7 +1137,8 @@
       ],
       "transparent": false,
       "alt": "One meter is slightly larger than a yard and one centimeter is less than half the size of one inch. 1 inch is equal to 2.54 cm. 1 m is equal to 1.094 yards which is equal to 39.36 inches.",
-      "caption": "The relative lengths of 1 m, 1 yd, 1 cm, and 1 in. are shown (not actual size), as well as comparisons of 2.54 cm and 1 in., and of 1 m and 1.094 yd."
+      "caption": "The relative lengths of 1 m, 1 yd, 1 cm, and 1 in. are shown (not actual size), as well as comparisons of 2.54 cm and 1 in., and of 1 m and 1.094 yd.",
+      "scale": "scaled-down"
     },
     "CNX_Chem_01_04_Volume": {
       "source": "media/CNX_Chem_01_04_Volume.jpg",
@@ -1151,7 +1161,8 @@
       ],
       "transparent": false,
       "alt": "Figure A shows a large cube with a volume of 1 meter cubed, made up of many smaller cubes in a 10 by 10 by 10 pattern. Each of these smaller cubes has a volume of 1 decimeter cubed, or one liter. Each of these smaller cubes is, in turn, made up of many tiny cubes. Each of these tiny cubes has a volume of 1 centimeter cubed, or one milliliter. Figure B shows a one cubic centimeter cube next to a dime; the cube is about the same width as the dime, approximately 1.8 centimeters.",
-      "caption": "(a) The relative volumes are shown for cubes of 1 m 3 , 1 dm 3 (1 L), and 1 cm 3 (1 mL) (not to scale). (b) The diameter of a dime is compared relative to the edge length of a 1-cm 3 (1-mL) cube."
+      "caption": "(a) The relative volumes are shown for cubes of 1 m 3 , 1 dm 3 (1 L), and 1 cm 3 (1 mL) (not to scale). (b) The diameter of a dime is compared relative to the edge length of a 1-cm 3 (1-mL) cube.",
+      "scale": "scaled-down"
     },
     "CNX_Chem_01_05_Archer2_img": {
       "source": "media/CNX_Chem_01_05_Archer2_img.jpg",
@@ -1358,6 +1369,1010 @@
       "transparent": false,
       "alt": "Three thermometers are shown for the Fahrenheit, Celsius, and Kelvin scales. Under the Fahrenheit scale, the boiling point of water is 212 degrees while the freezing point is 32 degrees, with 180 Fahrenheit degrees between them. Under the Celsius scale, the boiling point is 100 degrees while the freezing point is 0 degrees, with 100 Celsius degrees between them. Under the Kelvin scale, the boiling point is 373.15 K while the freezing point is 273.15 K, with 100 kelvins between them. 233.15 K is equal to negative 40 degrees Celsius, which is also equal to negative 40 degrees Fahrenheit.",
       "caption": "The Fahrenheit, Celsius, and kelvin temperature scales are compared."
+    },
+    "CNX_Chem_02_00_Biomarkers": {
+      "source": "media/CNX_Chem_02_00_Biomarkers.jpg",
+      "sourceSha256": "b7e3d704a616de0c0d110db18857840d757356511fd6e9def53f953fbc9caf00",
+      "module": "m68684",
+      "kind": "photo",
+      "width": 1348,
+      "height": 600,
+      "variants": [
+        {
+          "width": 800,
+          "height": 356,
+          "file": "CNX_Chem_02_00_Biomarkers-800.webp"
+        },
+        {
+          "width": 1348,
+          "height": 600,
+          "file": "CNX_Chem_02_00_Biomarkers-1348.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A person is shown blowing into a tube connected to a plastic bag. There is a computer screen displaying data that reads “Mass Spectral Breath Analysis.” An arrow from the plastic bag points to an illustration of different molecular compounds contained in the person’s exhalation",
+      "caption": "Analysis of molecules in an exhaled breath can provide valuable information, leading to early diagnosis of diseases or detection of environmental exposure to harmful substances. (credit: modification of work by Paul Flowers)"
+    },
+    "CNX_Chem_02_01_Dalton1": {
+      "source": "media/CNX_Chem_02_01_Dalton1.jpg",
+      "sourceSha256": "19d38d4a9bc430c63f90c93c3f7187339bfc3a6e8f172ec774b53f6313da8376",
+      "module": "m68685",
+      "kind": "photo",
+      "width": 650,
+      "height": 265,
+      "variants": [
+        {
+          "width": 650,
+          "height": 265,
+          "file": "CNX_Chem_02_01_Dalton1-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left image shows a photograph of a stack of pennies. The right image calls out an area of one of the pennies, which is made up of many sphere-shaped copper atoms. The atoms are densely organized.",
+      "caption": "A pre-1982 copper penny (left) contains approximately 3 × 10 22 copper atoms (several dozen are represented as brown spheres at the right), each of which has the same chemical properties. (credit: modification of work by “slgckgc”/Flickr)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_02_01_Dalton10_img": {
+      "source": "media/CNX_Chem_02_01_Dalton10_img.jpg",
+      "sourceSha256": "2193a636e28e6532569db6d9ed4e382433c3e40d9581e71cc6aacca5ed81f57d",
+      "module": "m68685",
+      "kind": "photo",
+      "width": 650,
+      "height": 108,
+      "variants": [
+        {
+          "width": 650,
+          "height": 108,
+          "file": "CNX_Chem_02_01_Dalton10_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This equation contains the starting materials of a single, green sphere plus two smaller, blue spheres bonded together. When the starting materials are added together the products of the change are one blue sphere bonded with one green sphere plus one blue sphere bonded with one green sphere.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_02_01_Dalton2": {
+      "source": "media/CNX_Chem_02_01_Dalton2.jpg",
+      "sourceSha256": "4d5ba14f0f90f75163f677a0784d1787c74b95d274cadc0499c647b5e4fef253",
+      "module": "m68685",
+      "kind": "photo",
+      "width": 650,
+      "height": 329,
+      "variants": [
+        {
+          "width": 650,
+          "height": 329,
+          "file": "CNX_Chem_02_01_Dalton2-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left image shows a container with a black, powdery compound. The right image calls out the molecular structure of the powder which contains copper atoms that are clustered together with an equal number of oxygen atoms.",
+      "caption": "Copper(II) oxide, a powdery, black compound, results from the combination of two types of atoms—copper (brown spheres) and oxygen (red spheres)—in a 1:1 ratio. (credit: modification of work by “Chemicalinterest”/Wikimedia Commons)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_02_01_Dalton3": {
+      "source": "media/CNX_Chem_02_01_Dalton3.jpg",
+      "sourceSha256": "dc0c3de35be9bc1ca4fcfd24a01c4c74311072272d502709eff628ba773f0f99",
+      "module": "m68685",
+      "kind": "photo",
+      "width": 1200,
+      "height": 656,
+      "variants": [
+        {
+          "width": 800,
+          "height": 437,
+          "file": "CNX_Chem_02_01_Dalton3-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 656,
+          "file": "CNX_Chem_02_01_Dalton3-1200.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left stoppered bottle contains copper and oxygen. There is a callout which shows that copper is made up of many sphere-shaped atoms. The atoms are densely organized. The open space of the bottle contains oxygen gas, which is made up of bonded pairs of oxygen atoms that are evenly spaced. The right stoppered bottle shows the compound copper two oxide, which is a black, powdery substance. A callout from the powder shows a molecule of copper two oxide, which contains copper atoms that are clustered together with an equal number of oxygen atoms.",
+      "caption": "When the elements copper (a shiny, red-brown solid, shown here as brown spheres) and oxygen (a clear and colorless gas, shown here as red spheres) react, their atoms rearrange to form a compound containing copper and oxygen (a powdery, black solid). (credit copper: modification of work by http://images-of-elements.com/copper.php)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_02_01_Dalton6_img": {
+      "source": "media/CNX_Chem_02_01_Dalton6_img.jpg",
+      "sourceSha256": "35ec52de2e1dbd257c5928e9eda43258d438c4122c44878ae241f3c9a157f8d9",
+      "module": "m68685",
+      "kind": "photo",
+      "width": 650,
+      "height": 106,
+      "variants": [
+        {
+          "width": 650,
+          "height": 106,
+          "file": "CNX_Chem_02_01_Dalton6_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This equation shows that the starting materials of the reaction are two bonded, green spheres, which are being combined with two smaller, bonded blue spheres. The product of the change is one blue sphere that is bonded to one green sphere.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_02_01_Dalton8_img": {
+      "source": "media/CNX_Chem_02_01_Dalton8_img.jpg",
+      "sourceSha256": "7f886ca7ffde7cf5a402774837f485b08d23d312483916c8d7b583e807813247",
+      "module": "m68685",
+      "kind": "photo",
+      "width": 1000,
+      "height": 107,
+      "variants": [
+        {
+          "width": 800,
+          "height": 85,
+          "file": "CNX_Chem_02_01_Dalton8_img-800.webp"
+        },
+        {
+          "width": 1000,
+          "height": 107,
+          "file": "CNX_Chem_02_01_Dalton8_img-1000.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This equation shows that the starting materials of the reaction are two sets of bonded, green spheres which are each being combined with two smaller, bonded blue spheres. The products of the change are two molecules that each contain one blue sphere bonded between two green spheres.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_02_01_MultProp": {
+      "source": "media/CNX_Chem_02_01_MultProp.jpg",
+      "sourceSha256": "835a485dfbef1e64cec9f74fc3c54bc502b8c513ff7c442befe9f5bce0870b2f",
+      "module": "m68685",
+      "kind": "photo",
+      "width": 1300,
+      "height": 486,
+      "variants": [
+        {
+          "width": 800,
+          "height": 299,
+          "file": "CNX_Chem_02_01_MultProp-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 486,
+          "file": "CNX_Chem_02_01_MultProp-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Figure A shows a pile of green powder. A callout shows that the green powder is made up of a lattice of copper atoms interspersed with chlorine atoms. The atoms are color coded brown for copper and green for chlorine. The number of copper atoms is equal to the number of chlorine atoms in the molecule. Figure B shows a pile of brown powder. A callout shows that the brown powder is also made up of copper and chlorine atoms similar to the molecule shown in figure A. However there appears to be two chlorine atoms for every copper atom in this molecule. The copper atoms in figure B bond with both the chlorine atoms and the other copper atoms. The copper atoms in figure A only bond with the chlorine atoms.",
+      "caption": "Compared to the copper chlorine compound in (a), where copper is represented by brown spheres and chlorine by green spheres, the copper chlorine compound in (b) has twice as many chlorine atoms per copper atom. (credit a: modification of work by “Benjah-bmm27”/Wikimedia Commons; credit b: modification of work by “Walkerma”/Wikimedia Commons)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_02_02_AtomModels": {
+      "source": "media/CNX_Chem_02_02_AtomModels.jpg",
+      "sourceSha256": "ef3fb9e7c3c88539857fcac842cc0f70b0b3119dc7f154d37dd0cdab4d689a38",
+      "module": "m68687",
+      "kind": "photo",
+      "width": 1300,
+      "height": 394,
+      "variants": [
+        {
+          "width": 800,
+          "height": 242,
+          "file": "CNX_Chem_02_02_AtomModels-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 394,
+          "file": "CNX_Chem_02_02_AtomModels-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Figure A shows a photograph of plum pudding, which is a thick, almost spherical cake containing raisins throughout. To the right, an atom model is round and contains negatively charged electrons embedded within a sphere of positively charged matter. Figure B shows a photograph of the planet Saturn, which has rings. To the right, an atom model is a sphere of positively charged matter encircled by a ring of negatively charged electrons.",
+      "caption": "(a) Thomson suggested that atoms resembled plum pudding, an English dessert consisting of moist cake with embedded raisins (“plums”). (b) Nagaoka proposed that atoms resembled the planet Saturn, with a ring of electrons surrounding a positive “planet.” (credit a: modification of work by “Man vyi”/Wikimedia Commons; credit b: modification of work by “NASA”/Wikimedia Commons)"
+    },
+    "CNX_Chem_02_02_CathodeRay": {
+      "source": "media/CNX_Chem_02_02_CathodeRay.jpg",
+      "sourceSha256": "d3949578146e0f968386631f023544b295b5aaa7dbaa02374c12b941eb11c896",
+      "module": "m68687",
+      "kind": "photo",
+      "width": 1300,
+      "height": 910,
+      "variants": [
+        {
+          "width": 800,
+          "height": 560,
+          "file": "CNX_Chem_02_02_CathodeRay-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 910,
+          "file": "CNX_Chem_02_02_CathodeRay-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Figure A shows a photo of J. J. Thomson working at a desk. Figure B shows a photograph of a cathode ray tube. It is a long, glass tube that is narrow at the left end but expands into a large bulb on the right end. The entire cathode tube is sitting on a wooden stand. Figure C shows the parts of the cathode ray tube. The cathode ray tube consists of a cathode and an anode. The cathode, which has a negative charge, is located in a small bulb of glass on the left side of the cathode ray tube. To the left of the cathode it says “High voltage” and indicates a positive and negative charge. The anode, which has a positive charge, is located to the right of the cathode. Two charged plates are located to the right of the anode, and are connected to a battery and two magnets. The magnets are labeled “S” and “N.” A cathode ray is generated from the cathode, travels through the anode and into a wider part of the cathode ray tube, where it travels between a positively charged electrode plate and a negatively charged electrode plate. The ray bends upward and continues to travel until it hits the wide part of the tube on the right. The rightmost end of the tube contains a printed scale that allows one to measure how much the ray was deflected.",
+      "caption": "(a) J. J. Thomson produced a visible beam in a cathode ray tube. (b) This is an early cathode ray tube, invented in 1897 by Ferdinand Braun. (c) In the cathode ray, the beam (shown in yellow) comes from the cathode and is accelerated past the anode toward a fluorescent scale at the end of the tube. Simultaneous deflections by applied electric and magnetic fields permitted Thomson to calculate the mass-to-charge ratio of the particles composing the cathode ray. (credit a: modification of work by Nobel Foundation; credit b: modification of work by Eugen Nesper; credit c: modification of work by “Kurzon”/Wikimedia Commons)"
+    },
+    "CNX_Chem_02_02_GoldFoil3": {
+      "source": "media/CNX_Chem_02_02_GoldFoil3.jpg",
+      "sourceSha256": "26dec3d74d821aab907cee504062a918b4c8ac45125529dae70409e302ee6ae0",
+      "module": "m68687",
+      "kind": "photo",
+      "width": 1300,
+      "height": 761,
+      "variants": [
+        {
+          "width": 800,
+          "height": 468,
+          "file": "CNX_Chem_02_02_GoldFoil3-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 761,
+          "file": "CNX_Chem_02_02_GoldFoil3-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left diagram shows a beam of alpha particles hitting a rectangular piece of gold foil. Some of the alpha particles bounce backwards after hitting the foil. However, most of the particles travel through the foil, with some being deflected as they pass through. A callout box shows a magnified cross-section of the gold foil. Most of the alpha particles are not deflected, but pass straight through the foil because they travel between the gold atom nuclei, through the electron clouds. A few alpha particles are slightly deflected because they glanced off a nucleus. A very small number of alpha particles are significantly deflected when they hit a nucleus head-on.",
+      "caption": "The α particles are deflected only when they collide with or pass close to the much heavier, positively charged gold nucleus. Because the nucleus is very small compared to the size of an atom, very few α particles are deflected. Most pass through the relatively large region occupied by electrons, which are too light to deflect the rapidly moving particles."
+    },
+    "CNX_Chem_02_02_Millikan": {
+      "source": "media/CNX_Chem_02_02_Millikan.jpg",
+      "sourceSha256": "ab0b71822f8dfeee3dd94ca12d63e12616a8ba6ed52164044bfb21c45f0f886d",
+      "module": "m68687",
+      "kind": "photo",
+      "width": 1300,
+      "height": 690,
+      "variants": [
+        {
+          "width": 800,
+          "height": 424,
+          "file": "CNX_Chem_02_02_Millikan-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 690,
+          "file": "CNX_Chem_02_02_Millikan-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The experimental apparatus consists of an oil atomizer which sprays fine oil droplets into a large, sealed container. The sprayed oil lands on a positively charged brass plate with a pinhole at the center. As the drops fall through the pinhole, they travel through X-rays that are emitted within the container. This gives the oil droplets an electrical charge. The oil droplets land on a brass plate that is negatively charged. A telescopic eyepiece penetrates the inside of the container so that the user can observe how the charged oil droplets respond to the negatively charged brass plate. The table that accompanies this figure gives the charge, in coulombs or C, for 5 oil drops. Oil drop A has a charge of 4.8 times 10 to the negative 19 power. Oil drop B has a charge of 3.2 times 10 to the negative 19 power. Oil drop C has a charge of 6.4 times 10 to the negative 19 power. Oil drop D has a charge of 1.6 times 10 to the negative 19 power. Oil drop E has a charge of 4.8 times 10 to the negative 19 power.",
+      "caption": "Millikan’s experiment measured the charge of individual oil drops. The tabulated data are examples of a few possible values."
+    },
+    "CNX_Chem_02_02_Rutherford": {
+      "source": "media/CNX_Chem_02_02_Rutherford.jpg",
+      "sourceSha256": "66024001076b5833a2da0397b232ba825dca545e87b110bf16b8d355b3fd68ee",
+      "module": "m68687",
+      "kind": "photo",
+      "width": 1300,
+      "height": 570,
+      "variants": [
+        {
+          "width": 800,
+          "height": 350,
+          "file": "CNX_Chem_02_02_Rutherford-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 570,
+          "file": "CNX_Chem_02_02_Rutherford-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a box on the left that contains a radium source of alpha particles which generates a beam of alpha particles. The beam travels through an opening within a ring-shaped luminescent screen which is used to detect scattered alpha particles. A piece of thin gold foil is at the center of the ring formed by the screen. When the beam encounters the gold foil, most of the alpha particles pass straight through it and hit the luminescent screen directly behind the foil. Some of the alpha particles are slightly deflected by the foil and hit the luminescent screen off to the side of the foil. Some alpha particles are significantly deflected and bounce back to hit the front of the screen.",
+      "caption": "Geiger and Rutherford fired α particles at a piece of gold foil and detected where those particles went, as shown in this schematic diagram of their experiment. Most of the particles passed straight through the foil, but a few were deflected slightly and a very small number were significantly deflected."
+    },
+    "CNX_Chem_02_03_AtomSize": {
+      "source": "media/CNX_Chem_02_03_AtomSize.jpg",
+      "sourceSha256": "7968c90e8f11f7766b6d5a9ee9b10b0dce295e3b996c65fd19fbae0c36dad3e5",
+      "module": "m68692",
+      "kind": "photo",
+      "width": 1300,
+      "height": 400,
+      "variants": [
+        {
+          "width": 800,
+          "height": 246,
+          "file": "CNX_Chem_02_03_AtomSize-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 400,
+          "file": "CNX_Chem_02_03_AtomSize-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The diagram on the left shows a picture of an atom that is 10 to the negative tenth power meters in diameter. The nucleus is labeled at the center of the atom and is 10 to the negative fifteenth power meters. The central figure shows a photograph of an American football stadium. The figure on the right shows a photograph of a person with a handful of blueberries.",
+      "caption": "If an atom could be expanded to the size of a football stadium, the nucleus would be the size of a single blueberry. (credit middle: modification of work by “babyknight”/Wikimedia Commons; credit right: modification of work by Paxson Woelber)"
+    },
+    "CNX_Chem_02_03_AtomSym": {
+      "source": "media/CNX_Chem_02_03_AtomSym.jpg",
+      "sourceSha256": "fef371f58ec1a6526a4df72fe92a6b3f23800e65ded180b079d64edc68353f28",
+      "module": "m68692",
+      "kind": "photo",
+      "width": 650,
+      "height": 144,
+      "variants": [
+        {
+          "width": 650,
+          "height": 144,
+          "file": "CNX_Chem_02_03_AtomSym-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the symbol for helium, “H e.” The number to the upper left of the symbol is the mass number, which is 4. The number to the upper right of the symbol is the charge which is positive 2. The number to the lower left of the symbol is the atomic number, which is 2. This number is often omitted. Also shown is “M g” which stands for magnesium It has a mass number of 24, a charge of positive 2, and an atomic number of 12.",
+      "caption": "The symbol for an atom indicates the element via its usual two-letter symbol, the mass number as a left superscript, the atomic number as a left subscript (sometimes omitted), and the charge as a right superscript.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_02_03_Iodine": {
+      "source": "media/CNX_Chem_02_03_Iodine.jpg",
+      "sourceSha256": "4fc33737fd22b57a894e19c45fc52833b67604e82b3dee35b16cdbdd72935615",
+      "module": "m68692",
+      "kind": "photo",
+      "width": 975,
+      "height": 432,
+      "variants": [
+        {
+          "width": 800,
+          "height": 354,
+          "file": "CNX_Chem_02_03_Iodine-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 432,
+          "file": "CNX_Chem_02_03_Iodine-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Figure A shows a photo of a person who has a very swollen thyroid in his or her neck. Figure B shows a photo of a canister of iodized salt.",
+      "caption": "(a) Insufficient iodine in the diet can cause an enlargement of the thyroid gland called a goiter. (b) The addition of small amounts of iodine to salt, which prevents the formation of goiters, has helped eliminate this concern in the US where salt consumption is high. (credit a: modification of work by “Almazi”/Wikimedia Commons; credit b: modification of work by Mike Mozart)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_02_03_MassSpec": {
+      "source": "media/CNX_Chem_02_03_MassSpec.jpg",
+      "sourceSha256": "21430f1db3ff049102f26daf96bb01cc88c59f73ca4579d5073e210551db11b9",
+      "module": "m68692",
+      "kind": "photo",
+      "width": 1300,
+      "height": 606,
+      "variants": [
+        {
+          "width": 800,
+          "height": 373,
+          "file": "CNX_Chem_02_03_MassSpec-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 606,
+          "file": "CNX_Chem_02_03_MassSpec-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left diagram shows how a mass spectrometer works, which is primarily a large tube that bends downward at its midpoint. The sample enters on the left side of the tube. A heater heats the sample, causing it to vaporize. The sample is also hit with a beam of electrons as it is being vaporized. Charged particles from the sample, called ions, are then accelerated and pass between two magnets. The magnetic field deflects the lightest ions most. The deflection of the ions is measured by a detector located on the right side of the tube. The graph to the right of the spectrometer shows a mass spectrum of zirconium. The relative abundance, as a percentage from 0 to 100, is graphed on the y axis, and the mass to charge ratio is graphed on the x axis. The sample contains five different isomers of zirconium. Z r 90, which has a mass to charge ratio of 90, is the most abundant isotope at about 51 percent relative abundance. Z r 91 has a mass to charge ratio of 91 and a relative abundance of about 11 percent. Z r 92 has a mass to charge ratio of 92 and a relative abundance of about 18 percent. Z r 94 has a mass to charge ratio of 94 and a relative abundance of about 18 percent. Z r 96, which has a mass to charge ratio of 96, is the least abundant zirconium isotope with a relative abundance of about 2 percent.",
+      "caption": "Analysis of zirconium in a mass spectrometer produces a mass spectrum with peaks showing the different isotopes of Zr."
+    },
+    "CNX_Chem_02_03_SiSymbol": {
+      "source": "media/CNX_Chem_02_03_SiSymbol.jpg",
+      "sourceSha256": "b05c0aed83fc0f4d4b7d475c71c3a7fb55df87846390e041925a51fdb5da6da4",
+      "module": "m68692",
+      "kind": "photo",
+      "width": 650,
+      "height": 520,
+      "variants": [
+        {
+          "width": 650,
+          "height": 520,
+          "file": "CNX_Chem_02_03_SiSymbol-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A jar labeled “H g” is shown with a small amount of liquid mercury in it.",
+      "caption": "The symbol Hg represents the element mercury regardless of the amount; it could represent one atom of mercury or a large amount of mercury.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_02_04_AceticAcid": {
+      "source": "media/CNX_Chem_02_04_AceticAcid.jpg",
+      "sourceSha256": "d8d2b408b24ac1b8e7ca9ce41d5657891b3a184d5fdf0cde9d52f4fe5a5c8dd4",
+      "module": "m68693",
+      "kind": "photo",
+      "width": 975,
+      "height": 411,
+      "variants": [
+        {
+          "width": 800,
+          "height": 337,
+          "file": "CNX_Chem_02_04_AceticAcid-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 411,
+          "file": "CNX_Chem_02_04_AceticAcid-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Figure A shows a jug of distilled, white vinegar. Figure B shows a structural formula for acetic acid which contains two carbon atoms connected by a single bond. The left carbon atom forms single bonds with three hydrogen atoms. The right carbon atom forms a double bond with an oxygen atom. The right carbon atom also forms a single bond with an oxygen atom. This oxygen forms a single bond with a hydrogen atom. Figure C shows a 3-D ball-and-stick model of acetic acid.",
+      "caption": "(a) Vinegar contains acetic acid, C 2 H 4 O 2 , which has an empirical formula of CH 2 O. It can be represented as (b) a structural formula and (c) as a ball-and-stick model. (credit a: modification of work by “HomeSpot HQ”/Flickr)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_02_04_Benzene": {
+      "source": "media/CNX_Chem_02_04_Benzene.jpg",
+      "sourceSha256": "362351ed3309c4b601d772de59bfb92bae84e97e2fc9893b253334be0e613657",
+      "module": "m68693",
+      "kind": "photo",
+      "width": 1300,
+      "height": 294,
+      "variants": [
+        {
+          "width": 800,
+          "height": 181,
+          "file": "CNX_Chem_02_04_Benzene-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 294,
+          "file": "CNX_Chem_02_04_Benzene-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Figure A shows that benzene is composed of six carbons shaped like a hexagon. Every other bond between the carbon atoms is a double bond. Each carbon also has a single bonded hydrogen atom. Figure B shows a 3-D, ball-and-stick drawing of benzene. The six carbon atoms are black spheres while the six hydrogen atoms are smaller, white spheres. Figure C is a space-filling model of benzene which shows that most of the interior space is occupied by the carbon atoms. The hydrogen atoms are embedded in the outside surface of the carbon atoms. Figure d shows a small vial filled with benzene which appears to be clear.",
+      "caption": "Benzene, C 6 H 6 , is produced during oil refining and has many industrial uses. A benzene molecule can be represented as (a) a structural formula, (b) a ball-and-stick model, and (c) a space-filling model. (d) Benzene is a clear liquid. (credit d: modification of work by Sahar Atwa)"
+    },
+    "CNX_Chem_02_04_Hydrogen": {
+      "source": "media/CNX_Chem_02_04_Hydrogen.jpg",
+      "sourceSha256": "b998cff4572031fc55c7d8c19619b21b21b14c06c6a64d694c6ad4bdc7925bd4",
+      "module": "m68693",
+      "kind": "photo",
+      "width": 975,
+      "height": 237,
+      "variants": [
+        {
+          "width": 800,
+          "height": 194,
+          "file": "CNX_Chem_02_04_Hydrogen-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 237,
+          "file": "CNX_Chem_02_04_Hydrogen-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows four diagrams. The diagram for H shows a single, white sphere and is labeled one H atom. The diagram for 2 H shows two white spheres that are not bonded together. It is labeled 2 H atoms. The diagram for H subscript 2 shows two white spheres bonded together. It is labeled one H subscript 2 molecule. The diagram for 2 H subscript 2 shows two sets of bonded, white spheres. It is labeled 2 H subscript 2 molecules.",
+      "caption": "The symbols H, 2H, H 2 , and 2H 2 represent very different entities.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_02_04_Isomers": {
+      "source": "media/CNX_Chem_02_04_Isomers.jpg",
+      "sourceSha256": "fb44bc45c0740f069ade7064b05d6b5ba7576c0a05e9a5a97de2a585d835c4e9",
+      "module": "m68693",
+      "kind": "photo",
+      "width": 650,
+      "height": 310,
+      "variants": [
+        {
+          "width": 650,
+          "height": 310,
+          "file": "CNX_Chem_02_04_Isomers-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Figure A shows a structural diagram of acetic acid, C subscript 2 H subscript 4 O subscript 2. Acetic acid contains two carbon atoms connected by a single bond. The left carbon atom forms single bonds with three hydrogen atoms. The carbon on the right forms a double bond with an oxygen atom. The right carbon atom also forms a single bond to an oxygen atom which forms a single bond with a hydrogen atom. Figure B shows a structural diagram of methyl formate, C subscript 2 H subscript 4 O subscript 2. This molecule contains a carbon atom which forms single bonds with three hydrogen atoms, and a single bond with an oxygen atom. The oxygen atom forms a single bond with another carbon atom which forms a double bond with another oxygen atom and a single bond with a hydrogen atom.",
+      "caption": "Molecules of (a) acetic acid and methyl formate (b) are structural isomers; they have the same formula (C 2 H 4 O 2 ) but different structures (and therefore different chemical properties).",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_02_04_Isomers2": {
+      "source": "media/CNX_Chem_02_04_Isomers2.jpg",
+      "sourceSha256": "c21fe6c89d5eb645d5595ea7d7715c6db3aa84b16d84c43487cb7e6df51ffcbf",
+      "module": "m68693",
+      "kind": "photo",
+      "width": 1300,
+      "height": 731,
+      "variants": [
+        {
+          "width": 800,
+          "height": 450,
+          "file": "CNX_Chem_02_04_Isomers2-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 731,
+          "file": "CNX_Chem_02_04_Isomers2-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top left portion of this 2 row, 4 column figure shows a structural diagram of positive carvone, C subscript 10 H subscript 14 O. This molecule has a carbon atom which forms a double bond with a C H subscript 2 group and a C H subscript 3 group. The carbon atom also forms a single bond with another carbon atom which is part of a ring. This carbon atom, being part of the ring, forms single bonds with a hydrogen atom, a C H subscript 2 group, and a C H subscript 2 group. The first C H subscript two group forms a single bond with C H which forms a double bond with a carbon atom. This carbon atom forms a single bond with a C H subscript 3 group. The carbon atom forming part of the ring forms a single bond with a carbon atom which forms a double bond with an oxygen atom and a single bond with a C H subscript 2 group to complete the ring. Below the structural diagram of carvone is a photo of caraway seeds. Column 2 contains identical ball and stick representations of the structural diagram in the top left position. The top right portions of these images each contains the letter “S” and there is an arrow pointing downward from the top image to the bottom image. Columns 3 and 4 are representations of negative carvone. The top row in column three depicts a mirrored image of the ball and stick structure to its left, reflected across the y axis. There is a downward pointing arrow to the image below, which is the same structure rotated counter clockwise 180 degrees. Both images in column 3 have an “R” in the top right corner. The image in the first row of column 4 is the same as the lewis structure in the first row of column 1, reflected across the y axis. Below this negative carvone structural diagram is a photo of spearmint leaves.",
+      "caption": "Molecules of carvone are spatial isomers; they only differ in the relative orientations of the atoms in space. (credit bottom left: modification of work by “Miansari66”/Wikimedia Commons; credit bottom right: modification of work by Forest & Kim Starr)"
+    },
+    "CNX_Chem_02_04_MethaneRep": {
+      "source": "media/CNX_Chem_02_04_MethaneRep.jpg",
+      "sourceSha256": "5a92ee4252f3b83cfd478daa88bad52054a20afe23c91b6f53fdb21fb4e360f2",
+      "module": "m68693",
+      "kind": "photo",
+      "width": 975,
+      "height": 244,
+      "variants": [
+        {
+          "width": 800,
+          "height": 200,
+          "file": "CNX_Chem_02_04_MethaneRep-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 244,
+          "file": "CNX_Chem_02_04_MethaneRep-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Figure A shows C H subscript 4. Figure B shows a carbon atom that is bonded to four hydrogen atoms at right angles: one above, one to the left, one to the right, and one below. Figure C shows a 3-D, ball-and-stick model of the carbon atom bonded to four hydrogen atoms. Figure D shows a space-filling model of a carbon atom with hydrogen atoms partially embedded into the surface of the carbon atom.",
+      "caption": "A methane molecule can be represented as (a) a molecular formula, (b) a structural formula, (c) a ball-and-stick model, and (d) a space-filling model. Carbon and hydrogen atoms are represented by black and white spheres, respectively.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_02_04_PaulaHammond": {
+      "source": "media/CNX_Chem_02_04_PaulaHammond.jpg",
+      "sourceSha256": "9ea1a7bd7b9be11f2ed4a72a2855d43c942cda43fa0db3c8202ebde2a1a49e07",
+      "module": "m68693",
+      "kind": "photo",
+      "width": 525,
+      "height": 397,
+      "variants": [
+        {
+          "width": 525,
+          "height": 397,
+          "file": "CNX_Chem_02_04_PaulaHammond-525.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A portrait of Paula Hammond.",
+      "caption": "Paula Hammond pioneered new techniques to precisely formulate chemical structures. Hammond’s work applies to cancer treatments, wound healing, cataract medicine, and fuel cells. Widely recognized as a leader in the field, she has won numerous awards and has been elected to various prestigious positions and fellowships by her peers and the U.S. government. She chairs the chemical engineering department at MIT, which is usually ranked as one of the best engineering and science institutions in the world. (credit: modification of work by The White House)"
+    },
+    "CNX_Chem_02_04_Question3a_img": {
+      "source": "media/CNX_Chem_02_04_Question3a_img.jpg",
+      "sourceSha256": "1c3fa7e5fca12c84ede59db2b5b183ab74909789ba7b9e4bb7747263d0d559e9",
+      "module": "m68693",
+      "kind": "photo",
+      "width": 325,
+      "height": 24,
+      "variants": [
+        {
+          "width": 325,
+          "height": 24,
+          "file": "CNX_Chem_02_04_Question3a_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Figure A shows a carbon atom that forms two, separate double bonds with two oxygen atoms.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_02_04_Question3b_img": {
+      "source": "media/CNX_Chem_02_04_Question3b_img.jpg",
+      "sourceSha256": "9b11274d9a56c5dc171088174eda08e45d577af6fcfe52f2fb04a883b86ba869",
+      "module": "m68693",
+      "kind": "photo",
+      "width": 325,
+      "height": 31,
+      "variants": [
+        {
+          "width": 325,
+          "height": 31,
+          "file": "CNX_Chem_02_04_Question3b_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Figure B shows a hydrogen atom which forms a single bond with a carbon atom. The carbon atom forms a triple bond with another carbon atom. The second carbon atom forms a single bond with a hydrogen atom.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_02_04_Question3c_img": {
+      "source": "media/CNX_Chem_02_04_Question3c_img.jpg",
+      "sourceSha256": "65369e4298013d380142cd93608539f55198ebd29f429370d768eb8cda95412b",
+      "module": "m68693",
+      "kind": "photo",
+      "width": 325,
+      "height": 123,
+      "variants": [
+        {
+          "width": 325,
+          "height": 123,
+          "file": "CNX_Chem_02_04_Question3c_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Figure C shows a carbon atom double bonded to another carbon atom. Each carbon atom is further single bonded to two hydrogen atoms.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_02_04_Question3d_img": {
+      "source": "media/CNX_Chem_02_04_Question3d_img.jpg",
+      "sourceSha256": "3b59807451d35d915f99a7f97e521518d40eda5954d642e4a09e21748efef3c2",
+      "module": "m68693",
+      "kind": "photo",
+      "width": 325,
+      "height": 143,
+      "variants": [
+        {
+          "width": 325,
+          "height": 143,
+          "file": "CNX_Chem_02_04_Question3d_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Figure D shows a sulfur atom forming double bonds with two oxygen atoms and single bonds with two oxygen atoms. Two of the oxygen atoms form a single bond with a hydrogen atom.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_02_04_Question4a_img": {
+      "source": "media/CNX_Chem_02_04_Question4a_img.jpg",
+      "sourceSha256": "8a0ab3276b9deb3ff362f24ed2c24415c438a2d7a6fb5fdeccead8a00cb7d5b7",
+      "module": "m68693",
+      "kind": "photo",
+      "width": 325,
+      "height": 142,
+      "variants": [
+        {
+          "width": 325,
+          "height": 142,
+          "file": "CNX_Chem_02_04_Question4a_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Figure A shows a structural diagram of four carbon atoms bonded together into a chain. The two carbon atoms on the left form a double bond with each other. All of the remaining carbon atoms form single bonds with each other. The leftmost carbon also forms single bonds with two hydrogen atoms. The second carbon in the chain forms a single bond with a hydrogen atom. The third carbon in the chain forms single bonds with two hydrogen atoms. The rightmost carbon forms single bonds with three hydrogen atoms.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_02_04_Question4b_img": {
+      "source": "media/CNX_Chem_02_04_Question4b_img.jpg",
+      "sourceSha256": "cae5f8be04c085d40351752306f9f72bd184a835f7e7d3ee9ba913512a6d3da7",
+      "module": "m68693",
+      "kind": "photo",
+      "width": 325,
+      "height": 142,
+      "variants": [
+        {
+          "width": 325,
+          "height": 142,
+          "file": "CNX_Chem_02_04_Question4b_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Figure B shows a structural diagram of a molecule that has a chain of four carbon atoms. The leftmost carbon atom forms a single bond with three hydrogen atoms each and single bond with the second carbon atom. The second carbon atom forms a triple bond with the third carbon atom. The third carbon atom forms a single bond to the fourth carbon atom. The fourth carbon atom forms a single bond to three hydrogen atoms each.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_02_04_Question4c_img": {
+      "source": "media/CNX_Chem_02_04_Question4c_img.jpg",
+      "sourceSha256": "78bb2c35446f2dd1fff4079da72050612883166048c57828670c19c0a6e7a526",
+      "module": "m68693",
+      "kind": "photo",
+      "width": 325,
+      "height": 142,
+      "variants": [
+        {
+          "width": 325,
+          "height": 142,
+          "file": "CNX_Chem_02_04_Question4c_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Figure C shows a structural diagram of two silicon atoms bonded together with a single bond. Each of the silicon atoms forms single bonds to two chlorine atoms and one hydrogen atom.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_02_04_Question4d_img": {
+      "source": "media/CNX_Chem_02_04_Question4d_img.jpg",
+      "sourceSha256": "703d593986e5ddf2ebc55bd4792429af0a7eda4393b2ee1b70a976464fcac19e",
+      "module": "m68693",
+      "kind": "photo",
+      "width": 325,
+      "height": 142,
+      "variants": [
+        {
+          "width": 325,
+          "height": 142,
+          "file": "CNX_Chem_02_04_Question4d_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Figure D shows a structural diagram of a phosphorus atom that forms a double bond with one oxygen atom and a single bond with three oxygen atoms each. Three of the oxygen atoms each have a single bond to a hydrogen atom.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_02_04_Question7a_img": {
+      "source": "media/CNX_Chem_02_04_Question7a_img.jpg",
+      "sourceSha256": "6bb711126e4c896c0e97538a6b1d076eb0a84ca39374dfe9d44d1f6b74028b9c",
+      "module": "m68693",
+      "kind": "photo",
+      "width": 325,
+      "height": 140,
+      "variants": [
+        {
+          "width": 325,
+          "height": 140,
+          "file": "CNX_Chem_02_04_Question7a_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Figure A shows a structural diagram of two carbon atoms that form a single bond with each other. The left carbon forms single bonds with three hydrogen atoms. The right carbon forms a double bond to an oxygen atom and a single bond to another oxygen atom. This second oxygen atom also forms a single bond to a hydrogen atom.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_02_04_Question7b_img": {
+      "source": "media/CNX_Chem_02_04_Question7b_img.jpg",
+      "sourceSha256": "105fc53ab332354e23c50b287da35c7fce98f54da4f40461a3805bc443db5df8",
+      "module": "m68693",
+      "kind": "photo",
+      "width": 650,
+      "height": 140,
+      "variants": [
+        {
+          "width": 650,
+          "height": 140,
+          "file": "CNX_Chem_02_04_Question7b_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Figure B shows a structural diagram containing a leftmost carbon that forms single bonds to three hydrogen atoms each. This leftmost carbon also forms a single bond to a second carbon atom. The second carbon atom forms a double bond with an oxygen atom. The second carbon also forms a single bond to a second oxygen atom. This oxygen atom forms a single bond to a third carbon atom. This third carbon atom forms single bonds with two hydrogen atoms each as well as a single bond with another carbon atom. The rightmost carbon atom forms a single bond with three hydrogen atoms each.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_02_04_Question9a_img": {
+      "source": "media/CNX_Chem_02_04_Question9a_img.jpg",
+      "sourceSha256": "604cc1487feaeceb2726b7f0489fd736f9b6724005d799143911597dcee300d9",
+      "module": "m68693",
+      "kind": "photo",
+      "width": 325,
+      "height": 138,
+      "variants": [
+        {
+          "width": 325,
+          "height": 138,
+          "file": "CNX_Chem_02_04_Question9a_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A structural formula is shown. An oxygen atom is bonded to two carbon atoms with single bonds. Each carbon atom is bonded to three hydrogen atoms with single bonds. There are a total of two carbon atoms, six hydrogen atoms, and one oxygen atom.",
+      "caption": ""
+    },
+    "CNX_Chem_02_04_Question9b_img": {
+      "source": "media/CNX_Chem_02_04_Question9b_img.jpg",
+      "sourceSha256": "338c39637c0a4435c85593315ba8f234af1d1f4f7fe0eb44083f3bc036dc9adc",
+      "module": "m68693",
+      "kind": "photo",
+      "width": 325,
+      "height": 138,
+      "variants": [
+        {
+          "width": 325,
+          "height": 138,
+          "file": "CNX_Chem_02_04_Question9b_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A structural formula is shown. An oxygen atom is bonded to a hydrogen atom and a carbon atom with single bonds. That carbon atom is bonded to two hydrogen atoms and another carbon atom with single bonds. That carbon atom is bonded to three hydrogen atoms with single bonds. There are a total of two carbon atoms, six hydrogen atoms, and one oxygen atom.",
+      "caption": ""
+    },
+    "CNX_Chem_02_04_Sulfur": {
+      "source": "media/CNX_Chem_02_04_Sulfur.jpg",
+      "sourceSha256": "ba2b3263d25578e8ad28a7b0132fd5109f31e2aa0ee85f69d4536f67b6f39eda",
+      "module": "m68693",
+      "kind": "photo",
+      "width": 975,
+      "height": 237,
+      "variants": [
+        {
+          "width": 800,
+          "height": 194,
+          "file": "CNX_Chem_02_04_Sulfur-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 237,
+          "file": "CNX_Chem_02_04_Sulfur-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Figure A shows eight sulfur atoms, symbolized with the letter S, that are bonded to each other to form an octagon. Figure B shows a 3-D, ball-and-stick model of the arrangement of the sulfur atoms. The shape is clearly not octagonal as it is represented in the structural formula. Figure C is a space-filling model that shows each sulfur atom is partially embedded into the sulfur atom it bonds with.",
+      "caption": "A molecule of sulfur is composed of eight sulfur atoms and is therefore written as S 8 . It can be represented as (a) a structural formula, (b) a ball-and-stick model, and (c) a space-filling model. Sulfur atoms are represented by yellow spheres.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_02_04_TiO2": {
+      "source": "media/CNX_Chem_02_04_TiO2.jpg",
+      "sourceSha256": "019f1d08c591b0fa55f359bde21174246f16128ab3330355ce4a6945c850dd54",
+      "module": "m68693",
+      "kind": "photo",
+      "width": 975,
+      "height": 407,
+      "variants": [
+        {
+          "width": 800,
+          "height": 334,
+          "file": "CNX_Chem_02_04_TiO2-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 407,
+          "file": "CNX_Chem_02_04_TiO2-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Figure A shows a photo of a person applying suntan lotion to his or her lower leg. Figure B shows a 3-D ball-and-stick model of the molecule titanium dioxide, which involves a complicated interlocking of many titanium and oxygen atoms. The titanium atoms in the molecule are shown as silver spheres and the oxygen atoms are shown as red spheres. There are twice as many oxygen atoms as titanium atoms in the molecule.",
+      "caption": "(a) The white compound titanium dioxide provides effective protection from the sun. (b) A crystal of titanium dioxide, TiO 2 , contains titanium and oxygen in a ratio of 1 to 2. The titanium atoms are gray and the oxygen atoms are red. (credit a: modification of work by “osseous”/Flickr)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_02_05_Mendeleev": {
+      "source": "media/CNX_Chem_02_05_Mendeleev.jpg",
+      "sourceSha256": "b7441118d8a9a9fed85f25d84fb7fb065f4f697c2c7ea1ad4e40e5e32ea41e06",
+      "module": "m68695",
+      "kind": "photo",
+      "width": 1300,
+      "height": 496,
+      "variants": [
+        {
+          "width": 800,
+          "height": 305,
+          "file": "CNX_Chem_02_05_Mendeleev-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 496,
+          "file": "CNX_Chem_02_05_Mendeleev-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Figure A shows a photograph of Dimitri Mendeleev. Figure B shows the first periodic table developed by Mendeleev, which had eight groups and twelve periods. In the first group (—, R superscript plus sign 0) is the following information: H = 1, L i = 7, N a = 23, K = 39, (C u = 63), R b = 85, (A g = 108), C a = 183, (—),—, (A u = 199) —. Note that each of these entries corresponds to one of the twelve periods respectively. The second group (—, R 0) contains the following information: (not entry for period 1) B o = 9, 4, M g = 24, C a = 40, Z n = 65, S r = 87, C d = 112, B a = 187, —, —, H g = 200, —. Note the ach of these entries corresponds to one of the twelve periods respectively. Group three (—, R superscript one 0 superscript nine) contains the information: (no entry for period 1), B = 11, A l = 27, 8. — = 44, — = 68, ? Y t = 88, I n = 113, ? D I = 138, —, ? E r = 178, T l = 204, —. Note that each of these entries corresponds to one of the twelve periods respectively. Group four (RH superscript four, R0 superscript eight) contains the following information: (no entry for period 1), C = 12, B i = 28, T i = 48, — = 72, Z r = 90, S n = 118, ? C o = 140, ? L a = 180, P b = 207, T h = 231. Note that each of these entries corresponds to one of the twelve periods respectively. Group five (R H superscript two, R superscript two 0 superscript five) contains the following information: (no entry for period 1), N = 14, P = 31, V = 51, A s = 75, N b = 94, S b = 122, —, —, T a = 182, B l = 208, —. Note that each of these entries corresponds to one of the twelve periods respectively. Group six (R H superscript two, R 0 superscript three) contains the following information: (no entry for period 1), O = 16, S = 32, C r = 52, S o = 78, M o = 96, T o = 125, —, —, W = 184, —, U = 240. Note that each of these entries corresponds to one of the twelve periods respectively. Group seven (R H , R superscript plus sing, 0 superscript 7) contains the following information: (no entry for period 1), F = 19, C l = 35, 5, M n = 55, B r = 80, — = 100, J = 127, —, —, —, —, —. Note that each of these entries corresponds to one of the twelve periods respectively. Group 8 (—, R 0 superscript four) contains the following information: (no entry for periods 1, 2, 3), in period 4: F o = 56, C o = 59, N i = 59, C u = 63, no entry for period five, in period 6: R u = 104, R h = 104, P d = 106, A g = 108, no entries for periods 7, 8 , or 9, in period 10: O s = 195, I r = 197, P t = 198, A u = 199, no entries for periods 11 or 12.",
+      "caption": "(a) Dimitri Mendeleev is widely credited with creating (b) the first periodic table of the elements. (credit a: modification of work by Serge Lachinov; credit b: modification of work by “Den fjättrade ankan”/Wikimedia Commons)"
+    },
+    "CNX_Chem_02_05_PerTable1": {
+      "source": "media/CNX_Chem_02_05_PerTable1.jpg",
+      "sourceSha256": "82a2d4a7a2ecf8a7e885850e06bc1161538c380751cc8b8cbfe9fabe091d2532",
+      "module": "m68695",
+      "kind": "photo",
+      "width": 1300,
+      "height": 1016,
+      "variants": [
+        {
+          "width": 800,
+          "height": 625,
+          "file": "CNX_Chem_02_05_PerTable1-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 1016,
+          "file": "CNX_Chem_02_05_PerTable1-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The Periodic Table of Elements is shown. The 18 columns are labeled “Group” and the 7 rows are labeled “Period.” Below the table to the right is a box labeled “Color Code” with different colors for metals, metalloids, and nonmetals, as well as solids, liquids, and gases. To the left of this box is an enlarged picture of the upper-left most box on the table. The number 1 is in its upper-left hand corner and is labeled “Atomic number.” The letter “H” is in the middle in red indicating that it is a gas. It is labeled “Symbol.” Below that is the number 1.008 which is labeled “Atomic Mass.” Below that is the word hydrogen which is labeled “name.” The color of the box indicates that it is a nonmetal. Each element will be described in this order: atomic number; name; symbol; whether it is a metal, metalloid, or nonmetal; whether it is a solid, liquid, or gas; and atomic mass. Beginning at the top left of the table, or period 1, group 1, is a box containing “1; hydrogen; H; nonmetal; gas; and 1.008.” There is only one other element box in period 1, group 18, which contains “2; helium; H e; nonmetal; gas; and 4.003.” Period 2, group 1 contains “3; lithium; L i; metal; solid; and 6.94” Group 2 contains “4; beryllium; B e; metal; solid; and 9.012.” Groups 3 through 12 are skipped and group 13 contains “5; boron; B; metalloid; solid; 10.81.” Group 14 contains “6; carbon; C; nonmetal; solid; and 12.01.” Group 15 contains “7; nitrogen; N; nonmetal; gas; and 14.01.” Group 16 contains “8; oxygen; O; nonmetal; gas; and 16.00.” Group 17 contains “9; fluorine; F; nonmetal; gas; and 19.00.” Group 18 contains “10; neon; N e; nonmetal; gas; and 20.18.” Period 3, group 1 contains “11; sodium; N a; metal; solid; and 22.99.” Group 2 contains “12; magnesium; M g; metal; solid; and 24.31.” Groups 3 through 12 are skipped again in period 3 and group 13 contains “13; aluminum; A l; metal; solid; and 26.98.” Group 14 contains “14; silicon; S i; metalloid; solid; and 28.09.” Group 15 contains “15; phosphorous; P; nonmetal; solid; and 30.97.” Group 16 contains “16; sulfur; S; nonmetal; solid; and 32.06.” Group 17 contains “17; chlorine; C l; nonmetal; gas; and 35.45.” Group 18 contains “18; argon; A r; nonmetal; gas; and 39.95.” Period 4, group 1 contains “19; potassium; K; metal; solid; and 39.10.” Group 2 contains “20; calcium; C a; metal; solid; and 40.08.” Group 3 contains “21; scandium; S c; metal; solid; and 44.96.” Group 4 contains “22; titanium; T i; metal; solid; and 47.87.” Group 5 contains “23; vanadium; V; metal; solid; and 50.94.” Group 6 contains “24; chromium; C r; metal; solid; and 52.00.” Group 7 contains “25; manganese; M n; metal; solid; and 54.94.” Group 8 contains “26; iron; F e; metal; solid; and 55.85.” Group 9 contains “27; cobalt; C o; metal; solid; and 58.93.” Group 10 contains “28; nickel; N i; metal; solid; and 58.69.” Group 11 contains “29; copper; C u; metal; solid; and 63.55.” Group 12 contains “30; zinc; Z n; metal; solid; and 65.38.” Group 13 contains “31; gallium; G a; metal; solid; and 69.72.” Group 14 contains “32; germanium; G e; metalloid; solid; and 72.63.” Group 15 contains “33; arsenic; A s; metalloid; solid; and 74.92.” Group 16 contains “34; selenium; S e; nonmetal; solid; and 78.97.” Group 17 contains “35; bromine; B r; nonmetal; liquid; and 79.90.” Group 18 contains “36; krypton; K r; nonmetal; gas; and 83.80.” Period 5, group 1 contains “37; rubidium; R b; metal; solid; and 85.47.” Group 2 contains “38; strontium; S r; metal; solid; and 87.62.” Group 3 contains “39; yttrium; Y; metal; solid; and 88.91.” Group 4 contains “40; zirconium; Z r; metal; solid; and 91.22.” Group 5 contains “41; niobium; N b; metal; solid; and 92.91.” Group 6 contains “42; molybdenum; M o; metal; solid; and 95.95.” Group 7 contains “43; technetium; T c; metal; solid; and 97.” Group 8 contains “44; ruthenium; R u; metal; solid; and 101.1.” Group 9 contains “45; rhodium; R h; metal; solid; and 102.9.” Group 10 contains “46; palladium; P d; metal; solid; and 106.4.” Group 11 contains “47; silver; A g; metal; solid; and 107.9.” Group 12 contains “48; cadmium; C d; metal; solid; and 112.4.” Group 13 contains “49; indium; I n; metal; solid; and 114.8.” Group 14 contains “50; tin; S n; metal; solid; and 118.7.” Group 15 contains “51; antimony; S b; metalloid; solid; and 121.8.” Group 16 contains “52; tellurium; T e; metalloid; solid; and 127.6.” Group 17 contains “53; iodine; I; nonmetal; solid; and 126.9.” Group 18 contains “54; xenon; X e; nonmetal; gas; and 131.3.” Period 6, group 1 contains “55; cesium; C s; metal; solid; and 132.9.” Group 2 contains “56; barium; B a; metal; solid; and 137.3.” Group 3 breaks the pattern. The box has a large arrow pointing to a row of elements below the table with atomic numbers ranging from 57-71. In sequential order by atomic number, the first box in this row contains “57; lanthanum; L a; metal; solid; and 138.9.” To its right, the next is “58; cerium; C e; metal; solid; and 140.1.” Next is “59; praseodymium; P r; metal; solid; and 140.9.” Next is “60; neodymium; N d; metal; solid; and 144.2.” Next is “61; promethium; P m; metal; solid; and 145.” Next is “62; samarium; S m; metal; solid; and 150.4.” Next is “63; europium; E u; metal; solid; and 152.0.” Next is “64; gadolinium; G d; metal; solid; and 157.3.” Next is “65; terbium; T b; metal; solid; and 158.9.” Next is “66; dysprosium; D y; metal; solid; and 162.5.” Next is “67; holmium; H o; metal; solid; and 164.9.” Next is “68; erbium; E r; metal; solid; and 167.3.” Next is “69; thulium; T m; metal; solid; and 168.9.” Next is “70; ytterbium; Y b; metal; solid; and 173.1.” The last in this special row is “71; lutetium; L u; metal; solid; and 175.0.” Continuing in period 6, group 4 contains “72; hafnium; H f; metal; solid; and 178.5.” Group 5 contains “73; tantalum; T a; metal; solid; and 180.9.” Group 6 contains “74; tungsten; W; metal; solid; and 183.8.” Group 7 contains “75; rhenium; R e; metal; solid; and 186.2.” Group 8 contains “76; osmium; O s; metal; solid; and 190.2.” Group 9 contains “77; iridium; I r; metal; solid; and 192.2.” Group 10 contains “78; platinum; P t; metal; solid; and 195.1.” Group 11 contains “79; gold; A u; metal; solid; and 197.0.” Group 12 contains “80; mercury; H g; metal; liquid; and 200.6.” Group 13 contains “81; thallium; T l; metal; solid; and 204.4.” Group 14 contains “82; lead; P b; metal; solid; and 207.2.” Group 15 contains “83; bismuth; B i; metal; solid; and 209.0.” Group 16 contains “84; polonium; P o; metal; solid; and 209.” Group 17 contains “85; astatine; A t; metalloid; solid; and 210.” Group 18 contains “86; radon; R n; nonmetal; gas; and 222.” Period 7, group 1 contains “87; francium; F r; metal; solid; and 223.” Group 2 contains “88; radium; R a; metal; solid; and 226.” Group 3 breaks the pattern much like what occurs in period 6. A large arrow points from the box in period 7, group 3 to a special row containing the elements with atomic numbers ranging from 89-103, just below the row which contains atomic numbers 57-71. In sequential order by atomic number, the first box in this row contains “89; actinium; A c; metal; solid; and 227.” To its right, the next is “90; thorium; T h; metal; solid; and 232.0.” Next is “91; protactinium; P a; metal; solid; and 231.0.” Next is “92; uranium; U; metal; solid; and 238.0.” Next is “93; neptunium; N p; metal; solid; and N p.” Next is “94; plutonium; P u; metal; solid; and 244.” Next is “95; americium; A m; metal; solid; and 243.” Next is “96; curium; C m; metal; solid; and 247.” Next is “97; berkelium; B k; metal; solid; and 247.” Next is “98; californium; C f; metal; solid; and 251.” Next is “99; einsteinium; E s; metal; solid; and 252.” Next is “100; fermium; F m; metal; solid; and 257.” Next is “101; mendelevium; M d; metal; solid; and 258.” Next is “102; nobelium; N o; metal; solid; and 259.” The last in this special row is “103; lawrencium; L r; metal; solid; and 262.” Continuing in period 7, group 4 contains “104; rutherfordium; R f; metal; solid; and 267.” Group 5 contains “105; dubnium; D b; metal; solid; and 270.” Group 6 contains “106; seaborgium; S g; metal; solid; and 271.” Group 7 contains “107; bohrium; B h; metal; solid; and 270.” Group 8 contains “108; hassium; H s; metal; solid; and 277.” Group 9 contains “109; meitnerium; M t; not indicated; solid; and 276.” Group 10 contains “110; darmstadtium; D s; not indicated; solid; and 281.” Group 11 contains “111; roentgenium; R g; not indicated; solid; and 282.” Group 12 contains “112; copernicium; C n; metal; liquid; and 285.” Group 13 contains “113; ununtrium; U u t; not indicated; solid; and 285.” Group 14 contains “114; flerovium; F l; not indicated; solid; and 289.” Group 15 contains “115; ununpentium; U u p; not indicated; solid; and 288.” Group 16 contains “116; livermorium; L v; not indicated; solid; and 293.” Group 17 contains “117; ununseptium; U u s; not indicated; solid; and 294.” Group 18 contains “118; ununoctium; U u o; not indicated; solid; and 294.”",
+      "caption": "Elements in the periodic table are organized according to their properties."
+    },
+    "CNX_Chem_02_05_PerTable2": {
+      "source": "media/CNX_Chem_02_05_PerTable2.jpg",
+      "sourceSha256": "592c751106bfc1da0268281932290b3b5faf5c1da2dc44a5c76e533ca3593cb7",
+      "module": "m68695",
+      "kind": "photo",
+      "width": 1300,
+      "height": 767,
+      "variants": [
+        {
+          "width": 800,
+          "height": 472,
+          "file": "CNX_Chem_02_05_PerTable2-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 767,
+          "file": "CNX_Chem_02_05_PerTable2-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram combines the groups and periods of the periodic table based on their similar properties. Group 1 contains the alkali metals, group 2 contains the earth alkaline metals, group 15 contains the pnictogens, group 16 contains the chalcogens, group 17 contains the halogens and group 18 contains the noble gases. The main group elements consist of groups 1, 2, and 12 through 18. Therefore, most of the transition metals, which are contained in groups 3 through 11, are not main group elements. The lanthanides and actinides are called out at the bottom of the periodic table.",
+      "caption": "The periodic table organizes elements with similar properties into groups."
+    },
+    "CNX_Chem_02_06_IonCharges": {
+      "source": "media/CNX_Chem_02_06_IonCharges.jpg",
+      "sourceSha256": "c17588a572afd7e6900877c6a39be039483a896cb7eee4bd5dfb4ad089c59ed0",
+      "module": "m68696",
+      "kind": "photo",
+      "width": 1300,
+      "height": 791,
+      "variants": [
+        {
+          "width": 800,
+          "height": 486,
+          "file": "CNX_Chem_02_06_IonCharges-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 791,
+          "file": "CNX_Chem_02_06_IonCharges-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A periodic table showing common ion charges. Group one contains lithium superscript plus, sodium superscript plus, potassium superscript plus, rubidium superscript plus, cesium superscript plus, and francium superscript plus. Group two contains beryllium superscript 2 plus, magnesium superscript 2 plus, calcium superscript 2 plus, strontium superscript 2 plus, barium superscript 2 plus, and radium superscript 2 plus. Group six contains chromium superscript 3 plus and chromium superscript 6 plus. Group seven contains manganese superscript 2 plus. Group eight contains iron superscript 2 plus and iron superscript 3 plus. Group nine contains cobalt superscript 2 plus. Group ten contains nickel superscript 2 plus and platinum superscript 2 plus. Group 11 contains copper superscript plus and copper superscript 2 plus, silver superscript plus, and gold superscript plus and gold superscript 3 plus. Group 12 contains zinc superscript 2 plus, cadmium superscript 2 plus, and mercury superscript 2 plus and mercury subscript 2 superscript 2 plus. Group 13 contains aluminum superscript 3 plus. Group 14 contains carbon superscript 4 minus. Group 15 contains nitrogen superscript 3 minus, phosphorus superscript 3 minus, and arsenic superscript 3 minus. Group 16 contains oxygen superscript 2 minus, sulfur superscript 2 minus, selenium superscript 2 minus, and tellurium superscript 2 minus. Group 17 contains fluorine superscript minus, chlorine superscript minus, bromine superscript minus, iodine superscript minus, and astatine superscript minus. Group 18 contains helium, neon, argon, krypton, xenon, and radon, with no charges indicated.",
+      "caption": "Some elements exhibit a regular pattern of ionic charge when they form ions."
+    },
+    "CNX_Chem_02_06_NaCation": {
+      "source": "media/CNX_Chem_02_06_NaCation.jpg",
+      "sourceSha256": "14bb17f0c9dc645d81fecf2bc56888f71bb6380be0a421cfa1438b924dad5a7d",
+      "module": "m68696",
+      "kind": "photo",
+      "width": 1300,
+      "height": 525,
+      "variants": [
+        {
+          "width": 800,
+          "height": 323,
+          "file": "CNX_Chem_02_06_NaCation-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 525,
+          "file": "CNX_Chem_02_06_NaCation-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Figure A shows a sodium atom, N a, which has a nucleus containing 11 protons and 12 neutrons. The atom’s surrounding electron cloud contains 11 electrons. Figure B shows a sodium ion, N a superscript plus sign. Its nucleus contains 11 protons and 12 neutrons. The ion’s electron cloud contains 10 electrons and is smaller than that of the sodium atom in figure A.",
+      "caption": "(a) A sodium atom (Na) has equal numbers of protons and electrons (11) and is uncharged. (b) A sodium cation (Na + ) has lost an electron, so it has one more proton (11) than electrons (10), giving it an overall positive charge, signified by a superscripted plus sign."
+    },
+    "CNX_Chem_02_06_NaClMolten": {
+      "source": "media/CNX_Chem_02_06_NaClMolten.jpg",
+      "sourceSha256": "e1b8b1112f1de4a6cc7daf947582fb80206c163b3171132616c4b6749ef83ea7",
+      "module": "m68696",
+      "kind": "photo",
+      "width": 975,
+      "height": 413,
+      "variants": [
+        {
+          "width": 800,
+          "height": 339,
+          "file": "CNX_Chem_02_06_NaClMolten-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 413,
+          "file": "CNX_Chem_02_06_NaClMolten-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows three photos connected by right-facing arrows. The first shows a light bulb as part of a complex lab equipment setup. The light bulb is not lit. The second photo shows a substances being heated or set on fire. The third shows the light bulb again which is lit.",
+      "caption": "Sodium chloride melts at 801 °C and conducts electricity when molten. (credit: modification of work by Mark Blaser and Matt Evans)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_02_06_Sapphire": {
+      "source": "media/CNX_Chem_02_06_Sapphire.jpg",
+      "sourceSha256": "67c626c8591ef9ecb6763f02024b030ed53edd85dfa34c3f1ca4310583d1745f",
+      "module": "m68696",
+      "kind": "photo",
+      "width": 325,
+      "height": 248,
+      "variants": [
+        {
+          "width": 325,
+          "height": 248,
+          "file": "CNX_Chem_02_06_Sapphire-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This is a photograph of a ring with a sapphire set in it.",
+      "caption": "Although pure aluminum oxide is colorless, trace amounts of iron and titanium give blue sapphire its characteristic color. (credit: modification of work by Stanislav Doronenko)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_02_07_ErinBrocko": {
+      "source": "media/CNX_Chem_02_07_ErinBrocko.jpg",
+      "sourceSha256": "67671eed0e7cf6403e533f3483f4f4e7f0e8409d7edc7931184e817181c4dd98",
+      "module": "m68698",
+      "kind": "photo",
+      "width": 1200,
+      "height": 447,
+      "variants": [
+        {
+          "width": 800,
+          "height": 298,
+          "file": "CNX_Chem_02_07_ErinBrocko-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 447,
+          "file": "CNX_Chem_02_07_ErinBrocko-1200.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Figure A shows a photo of Erin Brockovich. Figure B shows 3-D ball-and-stick models of chromate and dichromate. Chromate has a chromium atom at its center bonded to four oxygen atoms. Two of the oxygen atoms are single-bonded to chromium atom while the other two are double-bonded. The structure of dichromate consists of two chromate ions bonded together by a shared oxygen atom to which each chromate atom has a single bond.",
+      "caption": "(a) Erin Brockovich found that Cr(VI), used by PG&E, had contaminated the Hinckley, California, water supply. (b) The Cr(VI) ion is often present in water as the polyatomic ions chromate, CrO 4 2− (left), and dichromate, Cr 2 O 7 2− (right)."
     }
   }
 }

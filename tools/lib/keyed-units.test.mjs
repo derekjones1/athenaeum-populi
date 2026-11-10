@@ -393,6 +393,54 @@ test('a stem that asks about another exercise\'s parts is split by them', () => 
   assert.equal(judgeKeyedUnit({ type: 'fillin', question: item, answer: '0.005780', form: 'sig-figs:4 last-digit:1' }, linked).status, 'confirmed');
 });
 
+test('an item that restates the exercise its stem refers to is still its own exercise', () => {
+  // 2.3 and 2.4: a keyed exercise says "Repeat [the even exercise] using …",
+  // and its answer is not lettered by the other's parts, so nothing is
+  // borrowed. The page restates the omitted exercise's text — the learner
+  // cannot repeat what the page does not print — and that text is most of
+  // the item. It was read as the unkeyed exercise, and the item refused.
+  const setup = 'Open the Isotopes and Atomic Mass simulator and select the Mixtures simulator, hide the “Percent Composition” and “Average Atomic Mass” boxes, and then select the element boron.';
+  const parts = ['(a) Write the symbols of the isotopes of boron that are shown as naturally occurring in significant amounts.', '(b) Predict the relative amounts (percentages) of these boron isotopes found in nature. Explain the reasoning behind your choice.'];
+  const build = 'Open the Build a Molecule simulation and select the “Playground” simulator. Select an appropriate atom’s “Kit” to build a molecule with two carbon and six hydrogen atoms.';
+  const units = keyedUnits(cnxml(exercises(
+    exercise('s0', [setup, ...parts], null),
+    exercise('s1', ['Repeat <link target-id="s0"/> using an element that has three naturally occurring isotopes.'], 'Let us use neon as an example. The abundances are 90.48% Ne-20, 9.25% Ne-22, and 0.27% Ne-21.'),
+    exercise('b0', [build, '(a) Draw the structural formula of this molecule and state its name.', '(b) Can you arrange these atoms in any way to make a different compound?'], null),
+    exercise('b1', ['Use the Build a Molecule simulation to repeat <link target-id="b0"/>, but build a molecule with two carbons, six hydrogens, and one oxygen.', '(a) Draw the structural formula of this molecule and state its name.', '(b) Can you arrange these atoms to make a different molecule? If so, draw its structural formula and state its name.'], '(a) ethanol; (b) methoxymethane, more commonly known as dimethyl ether'),
+  )));
+  assert.equal(units.find((unit) => unit.id === 's1').refersTo, 's0');
+  assert.equal(units.find((unit) => unit.id === 's0(a)').refersTo, undefined);
+  const repeated = `Repeat the following exercise using an element that has three naturally occurring isotopes: ${setup} ${parts.join(' ')}`;
+  assert.equal(unitFor(repeated, units).id, 's1');
+  assert.equal(judgeKeyedUnit({ type: 'selfcheck', question: repeated, model: 'Let us use neon as an example. The abundances are 90.48% Ne-20, 9.25% Ne-22, and 0.27% Ne-21.' }, units).exercise.id, 's1');
+  const lead = 'Use the Build a Molecule simulation to repeat the exercise described below, but build a molecule with two carbons, six hydrogens, and one oxygen.';
+  const drawn = `${lead} Draw the structural formula of this molecule and state its name. (The exercise: ${build})`;
+  assert.equal(unitFor(drawn, units).id, 'b1(a)');
+  // The unkeyed exercise printed as itself is still the unkeyed exercise:
+  // it prints none of the referring stem's own words.
+  assert.equal(unitFor(`${setup} ${parts[0]}`, units).id, 's0(a)');
+  assert.equal(unitFor(`${build} Draw the structural formula of this molecule and state its name.`, units).id, 'b0(a)');
+});
+
+test('a part of an exercise whose answers vary carries its own sample whole', () => {
+  // 2.3's Build an Atom: the solution answers every part for carbon-12 and
+  // says once, at its end, that other answers are possible.
+  const atom = keyedUnits(cnxml(exercises(
+    exercise('v1', ['Open the Build an Atom simulation and click on the Atom icon.', '(a) Pick any one of the first 10 elements that you would like to build and state its symbol.', '(b) Predict whether your atom will be stable or unstable. State your reasoning.'],
+      '(a) Carbon-12, <sup>12</sup>C; (b) The atom will be stable since C-12 is a stable isotope of carbon. Other answers for this exercise are possible if a different element of isotope is chosen.'),
+    exercise('v2', ['Open the Build an Atom simulation.', '(a) Make a neutral atom of Lithium-6 and say how many protons it has.', '(b) Predict whether your atom will be stable or unstable. State your reasoning.'],
+      '(a) Lithium-6 contains three protons. (b) The atom will be stable since Li-6 is a stable isotope of lithium.'),
+  )));
+  const predict = (lead, model) => ({ type: 'selfcheck', question: `${lead} Predict whether your atom will be stable or unstable. State your reasoning.`, model });
+  const varying = 'Open the Build an Atom simulation and click on the Atom icon.';
+  const sample = 'A good answer predicts whether the atom will be stable or unstable and states a reason. Sample answer: The atom will be stable since C-12 is a stable isotope of carbon. Other answers for this exercise are possible if a different element or isotope is chosen.';
+  assert.equal(judgeKeyedUnit(predict(varying, sample), atom).status, 'reworded');
+  // The sample is the source's, whole — not the author's own.
+  assert.equal(judgeKeyedUnit(predict(varying, 'A good answer predicts whether the atom will be stable or unstable and states a reason. Sample answer: Neon-20 has ten protons and ten neutrons, which makes it stable.'), atom).status, 'diverges');
+  // An exercise that does not say its answers vary takes no such frame.
+  assert.equal(judgeKeyedUnit(predict('Open the Build an Atom simulation.', 'A good answer predicts whether the atom will be stable or unstable and states a reason, naming the isotope and what is known of it. Sample answer: The atom will be stable since Li-6 is a stable isotope of lithium.'), atom).status, 'diverges');
+});
+
 test('an answer that is only a drawing is confirmed by the selfcheck that shows the source\'s image', () => {
   const picture = (name) => `<media alt="a Lewis structure"><image mime-type="image/jpeg" src="../../media/${name}.jpg"/></media>`;
   const drawn = keyedUnits(cnxml(exercises(
@@ -406,6 +454,30 @@ test('an answer that is only a drawing is confirmed by the selfcheck that shows 
   const wrong = judgeKeyedUnit(selfcheck('Q7a'), drawn);
   assert.equal(wrong.status, 'key-differs', 'the neighbouring part\'s drawing');
   assert.match(wrong.detail, /answers with a drawing \(Q7b\)/);
+  // Words AND a drawing ("ethanol [structure]", 2.4): the image shown, the
+  // source's words carried whole, and the author's sentences about the
+  // drawing beside them — which no solution prints and which read, alone, as
+  // a model answer that diverges.
+  const named = keyedUnits(cnxml(exercises(
+    `<exercise id="n1"><problem><para>Build a molecule with two carbons, six hydrogens, and one oxygen.</para><para>(a) Draw the structural formula of this molecule and state its name.</para><para>(b) Can you arrange these atoms to make a different molecule? If so, draw its structural formula and state its name.</para></problem>`
+    + `<solution><para>(a) ethanol<newline/>${picture('Q9a')}<newline/> (b) methoxymethane, more commonly known as dimethyl ether<newline/>${picture('Q9b')}</para></solution></exercise>`,
+  )));
+  const ether = (image, words) => pageItems(`{{< selfcheck question="Build a molecule with two carbons, six hydrogens, and one oxygen. Can you arrange these atoms to make a different molecule? If so, draw its structural formula and state its name." hint="Try the oxygen between the carbons." >}}
+`
+    + `${words}
+
+{{< mediafigure src="chemistry/${image}" kind="diagram" alt="A structural formula." >}}
+{{< /mediafigure >}}
+
+In the drawing, the oxygen atom sits between the two carbon atoms, and each carbon atom is bonded to three hydrogen atoms.
+===CHECKS===
+the oxygen atom sits between the two carbon atoms
+{{< /selfcheck >}}
+`)[0];
+  const source = 'Methoxymethane, more commonly known as dimethyl ether.';
+  assert.equal(judgeKeyedUnit(ether('Q9b', source), named).status, 'reworded');
+  assert.equal(judgeKeyedUnit(ether('Q9a', source), named).status, 'key-differs', 'the sibling part\'s drawing');
+  assert.equal(judgeKeyedUnit(ether('Q9b', 'Ethyl methyl ether.'), named).status, 'diverges', 'the source\'s name is not carried');
 });
 
 test('answers that hold several choices at once are read for the one a multiple choice asks', () => {

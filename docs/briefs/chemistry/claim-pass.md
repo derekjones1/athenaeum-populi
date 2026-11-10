@@ -30,6 +30,20 @@ figures the data support by the book's own rules (section 1.5 teaches
 them, round-half-to-even included). A step that does not reproduce is a
 finding even when the final answer is right.
 
+
+**Six kinds of claim chapter 2's reading found, each easy to pass over:**
+a number inside a `selfcheck` MODEL ANSWER (recompute it from the page's
+own table — the source averaged a neon mixture from mass numbers); a
+present-tense line of biography in a Portrait of a Chemist box (check the
+post against the institution's own news page — it has an expiry date); the
+colour of a compound (CRC "Physical Constants of Inorganic Compounds"); an
+analytical ratio "found" for a named compound (recompute it from the
+formula with Appendix A's masses — 5.33 for isooctane is 96/18); a
+constant credited to a historical experiment (is the number the
+experiment's or today's?); a sum printed to more figures than its rounded
+terms carry. For each, say whether the page's own data reproduce the
+printed value: one that does is a convention the parent may keep.
+
 ## Evidence rules
 
 1. **The same book first:** another module of

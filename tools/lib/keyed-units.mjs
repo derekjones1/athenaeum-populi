@@ -305,16 +305,24 @@ export function roleFirstParts(answer) {
  * The reference is a `<link target-id>` to an exercise of the module, or the
  * words "the previous exercise" / "the previous problem".
  */
+/** The exercise of the module an exercise's stem refers to — by `<link target-id>`, or as "the previous exercise" — or null. */
+export function referencedExercise(exercise, document) {
+  const problem = firstElement(exercise, 'problem');
+  if (!problem) return null;
+  const all = descendants(document, (node) => localName(node) === 'exercise');
+  const linked = descendants(problem, (node) => localName(node) === 'link' && node.attributes['target-id'])
+    .map((link) => all.find((candidate) => candidate.attributes.id === link.attributes['target-id'])).find(Boolean);
+  const previous = /\bprevious (?:exercise|problem)\b/i.test(stemText(problem)) ? all[all.indexOf(exercise) - 1] : null;
+  const referenced = linked || previous || null;
+  return referenced && referenced !== exercise && firstElement(referenced, 'problem') ? referenced : null;
+}
+
 export function splittingStem(exercise, document) {
   const problem = firstElement(exercise, 'problem');
   const own = markedStemText(problem);
   const solution = firstElement(exercise, 'solution');
   if (sequentialParts(own) || !solution || !sequentialParts(answerText(solution), { answer: true })) return own;
-  const all = descendants(document, (node) => localName(node) === 'exercise');
-  const linked = descendants(problem, (node) => localName(node) === 'link' && node.attributes['target-id'])
-    .map((link) => all.find((candidate) => candidate.attributes.id === link.attributes['target-id'])).find(Boolean);
-  const previous = /\bprevious (?:exercise|problem)\b/i.test(own) ? all[all.indexOf(exercise) - 1] : null;
-  const referenced = linked || previous;
+  const referenced = referencedExercise(exercise, document);
   const theirs = referenced && firstElement(referenced, 'problem') ? sequentialParts(markedStemText(firstElement(referenced, 'problem'))) : null;
   if (!theirs) return own;
   return `${own} ${theirs.parts.map((part) => `(${part.label}) ${part.text} ${part.media.map((file) => `⟦media:${file}⟧`).join(' ')}`).join(' ')}`;
@@ -344,10 +352,16 @@ export function keyedUnits(xml) {
       const problem = firstElement(exercise, 'problem');
       if (!problem) continue;
       const solution = firstElement(exercise, 'solution');
+      // A keyed exercise that sends the learner to another one ("Repeat
+      // [Exercise 2.25] using an element that has three naturally occurring
+      // isotopes"): the page restates the other exercise's text beside this
+      // one's words, and `unitFor` reads that item as THIS exercise.
+      const referenced = solution ? referencedExercise(exercise, document) : null;
       whole.push({
         id: exercise.attributes.id || '', cls: KEYED_EXERCISE_CLASS, stem: stemText(problem), marked: splittingStem(exercise, document),
         keyed: Boolean(solution), answer: solution ? answerText(solution) : '',
         answerMarked: solution ? markedStemText(solution) : '',
+        ...(referenced ? { refersTo: referenced.attributes.id || '', refersStem: stemText(firstElement(referenced, 'problem')) } : {}),
       });
     }
   }
@@ -422,6 +436,24 @@ const occurrences = (needle, haystack) => {
 };
 
 export function unitScore(unit, question, item = {}) {
+  const reading = ownScore(unit, question, item);
+  if (!unit.refersTo) return reading;
+  // A unit whose stem refers to another exercise. Its item restates that
+  // exercise's text beside the unit's own words — the only place the learner
+  // meets what is to be repeated — so the item is long where the stem is
+  // short, and reads more like the exercise it quotes than like its own.
+  // Where the question prints the unit's own words, the unit is read against
+  // its stem AND the text it refers to, and the reading says which exercise
+  // it quotes (`unitFor` then sets that exercise aside).
+  const own = phraseCoverage(unit.lead || unit.stem, question) >= RESTATED_FLOOR;
+  if (!own) return reading;
+  if (reading.score > 0) return { ...reading, refers: unit.refersTo };
+  if (unit.partText !== null && unit.partText !== undefined) return reading;
+  const score = tokenSimilarity(question, `${unit.stem} ${unit.refersStem}`);
+  return score >= WHOLE_FLOOR ? { score, words: 0, near: score, exact: 0, refers: unit.refersTo } : reading;
+}
+
+function ownScore(unit, question, item = {}) {
   // How much the question reads like THIS unit's whole stem, and whether it
   // prints the part character for character: what ranks two units that both
   // pass (`unitFor`). Sibling parts and twin exercises share most words.
@@ -511,6 +543,18 @@ export function unitFor(question, units, item = {}) {
     group.score = Math.max(group.score, reading.score);
     group.readings.push({ unit, ...reading });
     groups.set(unit.group, group);
+  }
+  // An item that prints a referring exercise's own words and the text of the
+  // exercise it refers to ("Repeat the following exercise using an element
+  // that has three naturally occurring isotopes: Open the … simulator …") is
+  // the referring exercise's, however much of it is the other's text. Only
+  // an UNKEYED exercise is set aside this way — the one the page omits and
+  // must therefore quote; two keyed exercises that refer to each other are
+  // told apart as any two are.
+  for (const group of [...groups.values()]) {
+    for (const reading of group.readings) {
+      if (reading.refers && groups.has(reading.refers) && !groups.get(reading.refers).keyed) groups.delete(reading.refers);
+    }
   }
   let best = null;
   for (const group of groups.values()) {

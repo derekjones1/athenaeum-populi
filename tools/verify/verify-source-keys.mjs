@@ -1490,6 +1490,15 @@ export function unprintableFillInTheBlank(item, source) {
 const VARYING_SAMPLE_RE = /^(?:the )?(?:answers?|responses?) (?:may|will) vary\.\s+\S/i;
 const OPEN_ANSWER_RE = /^(?:the )?(?:answers?|responses?) (?:is open|are open|will vary)(?: and will vary)?\.?$/i;
 
+/** A solution that says, anywhere in it, that its answer is one of several a learner could give. */
+const VARYING_EXERCISE_RE = /\b(?:answers?|responses?) (?:may|will) vary\b|\bother answers\b[^.]*\bpossible\b/i;
+
+/** Whether a model answer carries a part's sample whole — its segment less any sentence that only says answers vary. */
+function sampleCarried(segment, model) {
+  const sample = segment.split(/(?<=[.!?])\s+/).filter((sentence) => !VARYING_EXERCISE_RE.test(sentence)).join(' ').trim();
+  return Boolean(sample) && phraseCoverage(sample, model) >= 0.95;
+}
+
 export function judgeSelfcheck(item, source) {
   if (isCheckQuestion(item.question, source)) return { status: 'unmatched' };
   const exercise = bestExercise(item.question, source.exercises);
@@ -2102,6 +2111,33 @@ export function judgeKeyedUnit(item, units) {
     checkQuestions: null,
     exercises: [{ id: unit.id, problem: item.question, solution: unit.answer, options: [] }],
   });
+  // A name AND a drawing ("ethanol [structure]", 2.4): the model answer is
+  // the source's words, the source's image, and the one or two sentences the
+  // playbook has the author write about the drawing ("Figures") — sentences
+  // no source solution prints, which read as a model answer that diverges.
+  // Held to both halves instead: the part's own image shown (never a
+  // sibling's), and the source's words carried whole.
+  if ((unit.answerMedia || []).length && item.type === 'selfcheck') {
+    const missing = unit.answerMedia.filter((file) => !(item.figures || []).includes(file));
+    if (missing.length) return { status: 'key-differs', exercise, detail: `source ${unit.id} answers with a drawing (${missing.join(', ')}) that the selfcheck's model answer does not show` };
+    if (judged.status === 'diverges' && phraseCoverage(unit.answer, item.model) >= 0.95) {
+      return { status: 'reworded', exercise, coverage: judged.coverage, detail: 'source words carried whole beside the source\'s drawing' };
+    }
+  }
+  // A simulation exercise answered part by part for ONE choice the learner
+  // could have made otherwise (2.3's Build an Atom: "(a) Carbon-12, ¹²C; (b)
+  // This atom contains six protons … (e) … Other answers for this exercise
+  // are possible if a different element or isotope is chosen."). "Answers
+  // vary" is said once, for the exercise; each part's model answer takes the
+  // varying-answer form — what any good answer contains, then "Sample
+  // answer:" and the part's own segment carried whole.
+  if (judged.status === 'diverges' && item.type === 'selfcheck' && /\bSample answer:/.test(item.model)
+    && VARYING_EXERCISE_RE.test(units.filter((other) => other.group === unit.group).map((other) => other.answer).join(' '))
+    // The sentence that says so belongs to the exercise, not to the part it
+    // happens to close: the part's sample is its segment without it.
+    && sampleCarried(unit.answer, item.model)) {
+    return { status: 'reworded', exercise, coverage: judged.coverage, detail: 'varying-answer exercise: the part\'s sample carried whole in the model answer' };
+  }
   return { ...judged, exercise };
 }
 

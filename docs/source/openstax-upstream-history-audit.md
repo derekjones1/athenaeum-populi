@@ -17,10 +17,10 @@
 
 ## Coverage
 
-- Mapped local sections: 784
-- Sections changed upstream: 58
-- Content-level changes: 41
-- Markup/metadata-only changes: 17
+- Mapped local sections: 788
+- Sections changed upstream: 62
+- Content-level changes: 42
+- Markup/metadata-only changes: 20
 - Changed Try It records: 3
 - Changed Try Its where local math matches the PDF-era form: 0
 - Local-impact drift decisions recorded: 4
@@ -34,7 +34,7 @@
 - biology (`biology-bundle`): `5c58838d2594bc5817127fdc47e127c30b44f2c2`
 - microbiology (`microbiology`): `633850257fbd3ccf6187b9428c55e80b69236382`
 - anatomy-physiology (`anatomy-physiology`): `716383a4c6c16037b14d75a156c65145e75e895e`
-- chemistry (`chemistry-bundle`): `7d41ed008e9b83a6690c09c26a16f63f96046ec0` — in-progress, 6 sections mapped
+- chemistry (`chemistry-bundle`): `7d41ed008e9b83a6690c09c26a16f63f96046ec0` — in-progress, 10 sections mapped
 
 ## Changed mapped sections
 
@@ -344,5 +344,25 @@ Module `m68690`; markup-or-metadata-only. Changed lanes: raw XML only.
 ### chemistry 1.6 — [content/physical-sciences/chemistry/01-essential-ideas/06-mathematical-treatment-of-measurement-results.md](../../content/physical-sciences/chemistry/01-essential-ideas/06-mathematical-treatment-of-measurement-results.md)
 
 Module `m68683`; content-changed. Changed lanes: instructionalText.
+
+
+### chemistry 2.1 — [content/physical-sciences/chemistry/02-atoms-molecules-and-ions/01-early-ideas-in-atomic-theory.md](../../content/physical-sciences/chemistry/02-atoms-molecules-and-ions/01-early-ideas-in-atomic-theory.md)
+
+Module `m68685`; markup-or-metadata-only. Changed lanes: raw XML only.
+
+
+### chemistry 2.2 — [content/physical-sciences/chemistry/02-atoms-molecules-and-ions/02-evolution-of-atomic-theory.md](../../content/physical-sciences/chemistry/02-atoms-molecules-and-ions/02-evolution-of-atomic-theory.md)
+
+Module `m68687`; markup-or-metadata-only. Changed lanes: raw XML only.
+
+
+### chemistry 2.3 — [content/physical-sciences/chemistry/02-atoms-molecules-and-ions/03-atomic-structure-and-symbolism.md](../../content/physical-sciences/chemistry/02-atoms-molecules-and-ions/03-atomic-structure-and-symbolism.md)
+
+Module `m68692`; content-changed. Changed lanes: instructionalText.
+
+
+### chemistry 2.4 — [content/physical-sciences/chemistry/02-atoms-molecules-and-ions/04-chemical-formulas.md](../../content/physical-sciences/chemistry/02-atoms-molecules-and-ions/04-chemical-formulas.md)
+
+Module `m68693`; markup-or-metadata-only. Changed lanes: raw XML only.
 
 

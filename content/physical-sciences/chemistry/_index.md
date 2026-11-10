@@ -41,6 +41,10 @@ chemistry, and nuclear chemistry.
 - **Essential Ideas** — chemistry in context, the phases and classification
   of matter, physical and chemical properties, measurements, measurement
   uncertainty, and the mathematical treatment of measurement results.
+- **Atoms, Molecules, and Ions** — atomic theory and its evolution, atomic
+  structure and symbolism, and chemical formulas. The chapter's last three
+  sections — the periodic table, ionic and molecular compounds, and
+  chemical nomenclature — are being written.
 
 ## Appendices
 
@@ -54,9 +58,6 @@ standard electrode potentials that the chapters refer to by letter.
 
 The remaining chapters of Chemistry 2e will appear in this order:
 
-- **Atoms, Molecules, and Ions** — atomic theory and its evolution, atomic
-  structure and symbolism, chemical formulas, the periodic table, ionic and
-  molecular compounds, and chemical nomenclature.
 - **Composition of Substances and Solutions** — formula mass and the mole,
   empirical and molecular formulas, molarity, and other units for solution
   concentrations.

@@ -109,7 +109,12 @@ goes wrong.
 6. Figures as `mediafigure`: caption verbatim with its credit; `alt` ≤ 600
    plain-text characters written from the IMAGE — every count ("six boxes,
    seven arrows") taken by counting, and every "each", "all", "only", and
-   "gone" re-read against a zoom; an alt directly above an item never
+   "gone", every position word ("above", "between", "below"), and every
+   colour re-read against a zoom (chapter 2: "dark-crusted" for a
+   golden-brown pudding; a column described "above, between, and below"
+   that ended at the bottom pair); a footer reason of the form "the source
+   alt says X, the drawing does not" is true of the DRAWING — re-open it
+   before you write the clause; an alt directly above an item never
    states what the item asks for; `kind` explicit;
    `eager="true"` on the first only. A `longdesc` for a multi-panel or
    label-dense figure, written from an inventory of the image you put in
@@ -177,8 +182,16 @@ goes wrong.
 - **`selfcheck`** carries the source solution as the model answer, its
   first letter capitalized and a closing period added and nothing else
   reworded, and 2–6 lowercase `===CHECKS===` clauses in the model answer's
-  own words; the bare-value and "Answers will vary" forms are the
-  playbook's ("Selfchecks").
+  own words, each a whole statement that checks something (not "its net
+  charge"; not the question again; not the clause above it reworded); the
+  bare-value and "Answers will vary" forms are the playbook's
+  ("Selfchecks") — the second also for a simulation or example answer that
+  is one possible case, with the added label "Sample answer:".
+- **Part letters do not reach the page.** A stem or model answer that
+  names another part by letter names it by position ("the previous item",
+  "the two previous items"); a keyed exercise that says "repeat [Exercise
+  N]" restates the omitted exercise's text verbatim in its own question
+  (playbook "Stems").
 - **Fillers** (glossary-recall `textin`, summary or body cloze,
   select-the-term multiple choice) only where an objective group is short
   of the floor, each from ONE module sentence or glossary entry you name in
@@ -187,7 +200,9 @@ goes wrong.
   other member of an open list — and drop the sentence if one is as right
   as the key); never a word its own objective heading prints; never one
   half of a contrast pair; a select-the-term multiple choice where no cloze
-  is unique. The leak rules are life-sciences "Leaks across the page":
+  is unique — written as a question, never opening with a blank, and under
+  a heading that names its key only if the heading names another option
+  too. The leak rules are life-sciences "Leaks across the page":
   nothing directly above a `textin` prints its key; a hint says where to
   look and never states the key or the fact that decides the item.
 - **Hints**: the tool — the equation by its name, the table, the rule or
@@ -199,7 +214,9 @@ goes wrong.
   allowed/forbidden table in playbook "Hints" before you write the first
   one: the pilot's authors wrote its forbidden column, some of them after
   the rule existed. A hint points only at a table or equation that is on
-  the page and holds what the learner needs.
+  the page and holds what the learner needs — and never at the one row or
+  sentence that prints the whole answer ("Find lithium in the table" under
+  an item that asks for lithium-6's symbol and counts).
 - **Order inside a Practice group:** the source's keyed items first, in
   source order, then your added items (an added item goes above a keyed
   `selfcheck` whose model answer prints its key).

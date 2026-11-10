@@ -6574,6 +6574,63 @@
       "status": "correct-local-source-defect",
       "errataEntry": 2917,
       "rationale": "The source prints the symbol Ha for element 105, which IUPAC named dubnium (Db) in 1997 and the book's own periodic table prints as Db. The page prints Db with a Source note under the table. Authored with the appendices, ruled by the orchestrator, November 10, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/03-atomic-structure-and-symbolism.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68692",
+      "sourceElementIds": [
+        "fs-idp79309808"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2931,
+      "rationale": "The solution to the three-isotope exercise prints 20.18 amu as the average mass of a guessed mixture of 91% Ne-20 and 9% Ne-22. With the isotopic masses in the section's table, 0.91 × 19.9924 + 0.09 × 21.9914 = 20.172, which rounds to 20.17 amu; 20.18 comes from the mass numbers 20 and 22. The page's sample answer prints 20.17 amu with a visible Source note after the block and a footer clause; the terrestrial average 20.18 earlier in the paragraph is right and stands. Found by the prose claim pass (F1). Authored with chapter 2, ruled by the orchestrator, November 10, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/03-atomic-structure-and-symbolism.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68692",
+      "sourceElementIds": [
+        "fs-idm202281808",
+        "fs-idm73306928"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2932,
+      "rationale": "The solar-wind neon example prints the mass of 21Ne as 20.9940 amu in its statement and in its equation. The mass is 20.9938 amu, as the table of the very light elements on the same page gives it and as the NIST atomic weights and isotopic compositions list it. The page prints 20.9938 amu in both places with a visible Source note directly after the solution and a footer clause; the result, 20.15 amu, does not change. Found by the prose claim pass (F9). Authored with chapter 2, ruled by the orchestrator, November 10, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/03-atomic-structure-and-symbolism.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68692",
+      "sourceElementIds": [
+        "fs-idm105035264"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2933,
+      "rationale": "The paragraph says the recommended name of a new element is based on the Latin word(s) for its atomic number. The IUPAC numerical roots are Latin and Greek (\"pent\", \"hex\", and \"enn\" are Greek; J. Chatt, Pure and Applied Chemistry 51 (1979), 381-384). The page prints that the name is built from Latin and Greek numerical roots, with a visible Source note directly after the paragraph and a footer clause. Found by the prose claim pass (F10). Authored with chapter 2, ruled by the orchestrator, November 10, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/04-chemical-formulas.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68693",
+      "sourceElementIds": [
+        "CNX_Chem_02_04_PaulaHammond",
+        "para-00002"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2939,
+      "rationale": "The Portrait of a Chemist caption and text say Paula Hammond chairs MIT's chemical engineering department. She headed it from 2015 to 2023 (MIT News, November 13, 2023) and was named dean of the School of Engineering in December 2025, effective January 16, 2026 (MIT News, December 5, 2025). The page prints that she led the department from 2015 to 2023 and became dean of the School of Engineering in 2026, changing only the clause about her post in the caption and the paragraph, with a visible Source note at the end of the callout and a footer clause. Found by the prose claim pass (F3). Authored with chapter 2, ruled by the orchestrator, November 10, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/04-chemical-formulas.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68693",
+      "sourceElementIds": [
+        "fs-idm49637696"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2940,
+      "rationale": "The acetic acid paragraph reduces the ratio 2:4:2 to 1:2:1 by \"dividing by the lowest common denominator (2)\". A lowest common denominator belongs to fractions; a ratio of whole numbers is reduced by dividing by the greatest common factor of its terms. The page prints \"greatest common factor\" with a visible Source note directly after the acetic acid figure the paragraph introduces and a footer clause. Found by the prose claim pass (F5). Authored with chapter 2, ruled by the orchestrator, November 10, 2026."
     }
   ]
 }

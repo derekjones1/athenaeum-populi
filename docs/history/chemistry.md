@@ -539,11 +539,134 @@ bent the page to the gate. The playbook now says the gate is taught the
 form. The probe stands at 20 lines for the book, none a gate defect and
 none an answer shape left unread.
 
-### The `\dfrac` watch list
+## Chapter 2, Sections 2.1–2.4 (November 10, 2026)
+
+Derek: "author chapter 2 … just author a few sections or half the chapter,
+whatever is best." The parent chose four of the seven sections as one
+complete run — through the blind solve and the commit — because chapter 2
+is the first with formula, nuclide, and image-part items, and a first wave
+is where systematic drift shows. Sections 2.5–2.7 are the next run.
+
+### Shape
+
+Prep once for the whole chapter (media, 56 PDF pages, inventory, shapes,
+probe: two findings, both already ruled). A Sonnet clerk drafted the
+landing and the run facts' tables; the parent wrote ten decisions. Four
+Opus authors together; an Opus checker as each reported; then, on the
+fixed pages, the claim pass, the consistency reader, and three
+rendered-page readers together; one rulings round; an Opus fix checker; the
+blind solve (a fresh Fable solver, 65 items); a Sonnet clerk for the
+errata. About three and a half hours.
+
+### What the run holds
+
+Four pages, 87 items: 30 fill-ins, 8 multiple choices, 27 text-ins (21 of
+them formulas or nuclide symbols), 22 self-checks; 34 figures; six Source
+notes. 18 keyed exercises carried, 18 unkeyed omitted. Errata 2923–2942:
+five body or model-answer facts corrected (the guessed neon mixture's
+average, 20.17 for 20.18; the mass of ²¹Ne in the solar-wind example; the
+"Latin" roots of systematic element names; Paula Hammond's post at MIT,
+checked by the parent against MIT News; "lowest common denominator" for
+greatest common factor), one kept with a Source note (copper(I) chloride
+called green), three kept as printed, the rest typos, alt texts, and one
+added clarification. No key was corrected and none disputed: the solver
+agreed on 65 of 65.
+
+### What each reading found
+
+| Reading | Found | Would another have found it? |
+|---|---|---|
+| Parent's gate runs as pages landed | three answer shapes the source gates refused on sound pages (below) | no: `verify-section` does not run the gates |
+| Checkers (4) | 87 of 87 keys confirmed; a `longdesc` whose position words were wrong; footer reasons about a source alt that the artwork did not bear out; hints that named the model answer's axes or the key's digit; the periodic-table sentence on six items that did not need it; that `source:media` read the half-width class on `<media>` only; that the brief's own grader command dropped the formula form | the first two, no |
+| Claim pass | 11 claims, 5 corrected | no |
+| Consistency reader | the run facts against the playbook in three places (a unit printed only as a symbol; an added "Use the periodic table." sentence; the varying-answer form on answers the source does not call variable); a part letter left in a stem; blank-first and question-first multiple choices on sibling pages; an en dash for a minus | the letter: the rendered-page reader too |
+| Rendered-page readers (3) | that a flat 26rem cap set 1,000–1,300 px drawings at a third of their size, with 7 px labels; an exercise drawing floating between two cards; a table cell that broke a nuclide from its name | no |
+| Fix checker | 10: a rubric its own sample answer failed; a hint pointing at the table row that prints the whole answer; a hint that called carbon-14 stable; a Source note between a paragraph and the figure it introduces | no |
+| Blind solve | 65 of 65; a stray article in 2.4; that the packets carried no `answerForm` for a text-in | the article: no |
+
+### Gates, tools, tests
+
+- **A keyed exercise that says "repeat [Exercise N]"** (2.3, 2.4): the page
+  restates the omitted exercise so the learner can do it, and that text is
+  most of the item — the keys gate read the item as the unkeyed exercise
+  and would have refused it. `keyed-units.mjs` records the reference
+  (`refersTo`), reads the unit against its own stem and the text it quotes,
+  and sets the quoted exercise aside when it is unkeyed and the question
+  prints the referring one's own words. Found before the wave, by
+  hand-built items. (The first version set aside a keyed exercise too, and
+  the close-out's full test run caught it on the probe's own fixture of
+  two keyed exercises that share a stem.)
+- **A name and a drawing as one answer** ("ethanol [structure]", 2.4): held
+  to the part's own image and the source's words carried whole; the
+  author's sentence about the drawing, which the playbook asks for, no
+  longer reads as a model answer that diverges.
+- **A varying answer given part by part** (2.3's Build an Atom): "Sample
+  answer:" and the part's own segment, in an exercise whose solution says
+  once that other answers are possible; the sentence that says so is the
+  exercise's, not the last part's sample.
+- **`source:media` reads `scaled-down` on the `<figure>` too** (352 figures
+  in the book; 281 carry it on the `<media>`). Reading it showed what the
+  class means: half, or three tenths, of the image's NATIVE size, not of
+  the column. The stylesheet now gives a marked figure that share of its
+  own width, never under 26rem (14rem); a browser test holds both bounds.
+  Eleven chapter 1 figures and thirteen of chapter 2's changed size.
+- **An uncaptioned figure directly above an item** sits close to it and
+  apart from the card above (stylesheet).
+- `solve:emit` carries a text-in's `answerForm`; three sound coincidences
+  recorded for `verify:replay` (a proton count beside its atomic number,
+  twice; sucrose, its own empirical formula).
+
+### Rulings, now in the playbook
+
+Part letters become "the previous item(s)"; a "repeat" exercise restates
+what it repeats; the varying-answer form for an answer that is one
+possible case; a select-the-term multiple choice is a question and never
+opens with a blank; a filler multiple choice under a heading that names its
+key needs the heading to name another option too; a unit printed only as a
+symbol (amu) is named by it; "Use the periodic table." as an added
+sentence, only on items that need the table; key-term periods are not
+disclosed; "(shown in the figure below)"; U+2212 for every minus; a
+scaled figure's share. The kit gained `fix-check.md`; `run.md` says to
+build the map and run the gates as each page lands, how a chapter is split
+across two runs, and that a landing with section pages carries no
+`authoring_status`.
+
+### What the process got wrong
+
+- The checkers were launched before the map had the chapter, so
+  `source:diff` skipped their pages; two compared by hand. The map is now
+  built as the first author reports.
+- The parent's first part-letter ruling missed one sentence of the stem it
+  was written for (2.2's "Now test your predictions from (a), (b), and
+  (c)"); the author applied the ruling as worded, and two later readings
+  caught it. No lint reads a question for "(a)".
+- The parent's ruling on the varying-answer form had every part carry the
+  exercise's closing sentence; the consistency reader asked why, and it
+  came out of four of five.
+- The claim ruling named the wrong paragraph ("glucose" for acetic acid);
+  the author corrected the right one and said so.
+
+### Not acted on
+
+- An ion typed without its charge is "incorrect" with no message; a line
+  of feedback belongs in `checkFormula`.
+- Lints for a part letter in a question and for an en dash between
+  numbers in a parenthesis: both are the checker's for now.
+- The isooctane ratio (5.33 from whole-number masses; 5.30 by Appendix A)
+  is kept as printed and logged (2925).
+
+## The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under
 the ban, with its page and line. The ban is reviewed from this list.
 
-- *(none yet — chapter 1 and the appendices reported none; the three
-  rendered-page remarks of the pilot were about size in general, before the
-  measurement, and named no item a learner would misread.)*
+- 2.1, the compound X / compound Y Check Your Learning (line ~127 of
+  `01-early-ideas-in-atomic-theory.md`): the ratio of the two mass ratios,
+  a fraction of fractions with units. Inline, its inner numbers were too
+  small to read; it is set as a display equation inside the model answer,
+  where `\frac` is full size. Nothing lost.
+- 2.1, the isooctane table (lines 78–80): each cell holds
+  `\frac{14.82 g carbon}{2.78 g hydrogen} = \frac{5.33 g carbon}{1.00 g hydrogen}`
+  inline. Readable on the rendered page (the rendered-page reader passed
+  it); reported by the author under the watch.
+- Chapter 1 and the appendices reported none.

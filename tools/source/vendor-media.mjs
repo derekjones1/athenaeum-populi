@@ -97,21 +97,25 @@ export function plainXmlText(fragment) {
 export function extractModuleImages(moduleId, xml) {
   const figures = [];
   const stack = [];
-  for (const m of xml.matchAll(/<(\/?)figure\b[^>]*>/g)) {
+  const scaleOf = (attributes) => ((attributes.match(/\bclass="([^"]*)"/) || [])[1] || '')
+    .split(/\s+/).find((name) => /^scaled-down(-\d+)?$/.test(name)) || null;
+  for (const m of xml.matchAll(/<(\/?)figure\b([^>]*)>/g)) {
     if (m[1] === '/') {
-      const start = stack.pop();
-      if (start !== undefined) figures.push({ start, end: m.index + m[0].length });
+      const open = stack.pop();
+      if (open !== undefined) figures.push({ start: open.start, end: m.index + m[0].length, scale: open.scale });
     } else {
-      stack.push(m.index);
+      stack.push({ start: m.index, scale: scaleOf(m[2]) });
     }
   }
   const images = [];
   for (const media of xml.matchAll(/<media\b([^>]*)>([\s\S]*?)<\/media>/g)) {
     const alt = plainXmlText((media[1].match(/\balt="([^"]*)"/) || [])[1] || '');
     // Chemistry 2e sizes a small drawing with `class="scaled-down"` (about
-    // half the text width) or `scaled-down-30`; the shortcode keeps it.
-    const scale = ((media[1].match(/\bclass="([^"]*)"/) || [])[1] || '')
-      .split(/\s+/).find((name) => /^scaled-down(-\d+)?$/.test(name)) || null;
+    // half the text width) or `scaled-down-30`; the shortcode keeps it. The
+    // class sits on the `<media>` or on the `<figure>` around it — 352 of
+    // the book's figures carry it there, and until chapter 2's checker
+    // noticed, only the `<media>` was read.
+    const ownScale = scaleOf(media[1]);
     for (const image of media[2].matchAll(/<image\b[^>]*\bsrc="([^"]+)"[^>]*>/g)) {
       const src = image[1].replace(/^(\.\.\/)+/, '');
       if (!src.startsWith('media/')) continue;
@@ -124,6 +128,7 @@ export function extractModuleImages(moduleId, xml) {
         const captions = [...block.matchAll(/<caption\b[^>]*>([\s\S]*?)<\/caption>/g)];
         if (captions.length) caption = plainXmlText(captions[captions.length - 1][1]);
       }
+      const scale = ownScale || enclosing?.scale || null;
       images.push({ module: moduleId, source: src, alt, caption, ...(scale ? { scale } : {}) });
     }
   }

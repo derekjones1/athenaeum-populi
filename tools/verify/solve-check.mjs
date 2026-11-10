@@ -117,6 +117,11 @@ export function packetItem(exercise) {
     if (exercise.params.answerMode) item.answerMode = exercise.params.answerMode;
     if (exercise.params.answerForm) item.answerForm = exercise.params.answerForm;
   }
+  // A text-in's form says how to TYPE the answer — a formula with its
+  // subscripts and charge, a balanced equation — not what it is. The solver
+  // brief sends the solver to the packet for it; until Chemistry chapter 2
+  // the packet left it out and the solver found it on the masked page.
+  if (exercise.kind === 'textin' && exercise.params.answerForm) item.answerForm = exercise.params.answerForm;
   // "The graph above", "the table below": the block the exercise is bound
   // to travels with it whatever --context says — a "below" reference was
   // out of reach of a backward-looking window entirely. Key-masked, which

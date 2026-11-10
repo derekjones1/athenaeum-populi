@@ -53,6 +53,30 @@ cannot resume the old session's ids. Five things the pilot added:
   you touched, hint-only ones too". The pilot's brief said a hint-only edit
   kept its hash, and one fixer filed 9 results for 46 re-hashed items.
 
+Three things chapter 2 added (`docs/history/chemistry.md`, "Chapter 2,
+Sections 2.1–2.4"):
+
+- **A chapter of shapes the book has not met may be authored in two runs**
+  — a few sections through the solve and the commit, then the rest with
+  the first run's lessons in the briefs (chapter 2: 2.1–2.4, then 2.5–2.7).
+  Prep (media, PDF pages, inventory, shapes, probe) is done once for the
+  whole chapter. The landing lists the sections on the site and says in
+  one paragraph which are being written; it carries NO `authoring_status`
+  (`build-map` refuses the key on a landing whose chapter has section
+  pages), and the cover's entry says the same. The second run removes the
+  paragraph.
+- **The parent runs both source gates on each page as it lands** —
+  `build-map`, then `npm run verify:source-keys` and
+  `verify:source-coverage` — not after the last author. Three of chapter
+  2's four gate lessons (a "repeat [Exercise N]" stem, a name with a
+  drawing, a varying answer given part by part) were found this way while
+  the authors were still working, and each was a gate taught a form, with
+  a test, before its page's checker reported.
+- **A parent who edits an item files its record.** After the fix check the
+  parent applied exact old→new text itself; `rebuild-ledger-results.py`
+  then stops ("N stale — map by hand"). Drop the stale hashes from the
+  authors' results and add a parent results file for the re-hashed items.
+
 ## 1. Before the wave
 
 `SP` is this session's scratchpad. Never a git command from an agent — say
@@ -151,7 +175,7 @@ cannot resume the old session's ids. Five things the pilot added:
    `verify-section` does not run them, so an author never sees a gate
    failure, and the parent first sees one after `build-map`.
 7. Copy the briefs unchanged to `$SP/` (`author.md`, `checker.md`,
-   `claim-pass.md`, `consistency.md`, `render-reader.md`). A run-specific
+   `claim-pass.md`, `consistency.md`, `render-reader.md`, `fix-check.md`). A run-specific
    correction to a brief is an edit to the repo copy, then the scratchpad
    copy — never a fork.
 
@@ -165,9 +189,11 @@ page, 1.2 for a page of classification and added recall items.
 - **As each author reports**, launch its checker (Author kind; prompt = the
   page path + "read `$SP/checker.md`"; never name the author's report).
   Checker defects go back to the page's author by `SendMessage`.
-- **After the last author reports**, `node tools/source/openstax-source.mjs
-  build-map` at once: `verify:source-coverage` and `verify:source-keys`
-  skip a chapter with no map rows.
+- **As soon as the first author reports**, and again after each,
+  `node tools/source/openstax-source.mjs build-map`: `verify:source-coverage`
+  and `verify:source-keys` skip a chapter with no map rows, and a checker's
+  `npm run source:diff` skips a page the map lacks — chapter 2's first two
+  checkers compared their pages by hand for that reason.
 - **When the checker fixes are in**, launch together: the **claim pass**
   (one Author-kind agent for the chapter, the pages and the landing with
   their module ids, "read `$SP/claim-pass.md`", report
@@ -195,8 +221,15 @@ page, 1.2 for a page of classification and added recall items.
   parent's ruling and fell to the consistency reader's comparison with
   Section 1.5's rules and the sibling keys.
 - **Rewritten hints and replaced items are read once more** by a checker
-  that did not write them (one Author-kind agent for the chapter; it
-  proposes exact old→new text), before the solve.
+  that did not write them (one Author-kind agent for the chapter, "read
+  `$SP/fix-check.md`"; it proposes exact old→new text), before the solve.
+  Chapter 2's found ten: a rubric its own sample answer could not meet, a
+  hint that pointed at the row printing the whole answer, a Source note on
+  the wrong side of its figure.
+- **`npm run verify:replay` before the solve**: an item whose stem prints
+  its key by the definition it tests (a proton count beside the atomic
+  number; a formula that is its own empirical formula) is recorded in
+  `SOUND_COINCIDENCES` with its reason once its stem is final.
 
 All of this is before the blind solve, so the solve reads the pages that
 ship. The pilot ran the two extra readings after its solve, and 131 items
@@ -283,7 +316,15 @@ the CNXML and the page.
 8. **Commit** the run's own files at a green close-out (Derek, October 24,
    2026), leaving unrelated uncommitted work and saying what was left.
 
-## What a chapter cost (chapter 1, six sections, measured where known)
+## What a chapter cost
+
+Chapter 2, Sections 2.1–2.4 (four sections, 87 items, about three and a
+half hours of wall time): authors 200–295k tokens each across three
+rounds; checkers 150–210k; claim pass 175k; consistency reader 210k; three
+rendered-page readers 135–180k; fix checker 165k; blind solver 127k; two
+clerks 80k and 150k.
+
+Chapter 1, six sections, measured where known:
 
 Extra readings: five rendered-page readers at 150–170k tokens each; one
 consistency reader at about 210k; six fixers at 75–160k; one fix checker.

@@ -94,6 +94,11 @@ test('every sound-coincidence entry names one real fillin and one printed span',
     for (const sc of shortcodes(src, 'fillin')) {
       if (sc.params.question) fillins.push(sc.params);
     }
+    // A formula or equation text-in is replayed too (Chemistry 2.4: sucrose
+    // is its own empirical formula), and its entry is held the same way.
+    for (const sc of shortcodes(src, 'textin')) {
+      if (sc.params.question && sc.params.answerForm) fillins.push(sc.params);
+    }
     questionsByFile.set(rel, fillins);
   }
   const printedSpans = (question) => {
@@ -116,7 +121,10 @@ test('every sound-coincidence entry names one real fillin and one printed span',
       const matched = fillins.filter((params) => params.question.startsWith(prefix));
       assert.equal(matched.length, 1,
         `the question prefix must name exactly ONE fillin, matched ${matched.length}`);
-      assert.ok(printedSpans(matched[0].question).includes(span),
+      const printed = matched[0].answerForm && /^(?:formula|equation)$/.test(matched[0].answerForm)
+        ? chemSpans(matched[0].question, matched[0].answerForm)
+        : printedSpans(matched[0].question);
+      assert.ok(printed.includes(span),
         `the exempted span ${JSON.stringify(span)} is not printed by that question`);
       assert.ok(reason.trim().length > 0, 'every exemption records why it is sound');
     });

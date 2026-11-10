@@ -260,8 +260,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 21,
       "upstreamSections": 114,
-      "localChapters": 1,
-      "mappedSections": 6,
+      "localChapters": 2,
+      "mappedSections": 10,
       "upstreamAppendices": 13,
       "mappedAppendices": 13
     }
@@ -7322,6 +7322,42 @@
       "moduleId": "m68683",
       "sourceTitle": "Mathematical Treatment of Measurement Results",
       "moduleSha256": "c97a8b8d957c919d349aae82dfc74ee5b6b10a165eae41cab2cfd16393022c8a"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/01-early-ideas-in-atomic-theory.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "2.1",
+      "moduleId": "m68685",
+      "sourceTitle": "Early Ideas in Atomic Theory",
+      "moduleSha256": "048b4bdd1c70b7335d6070574d73e662154bac4090bbc2ed8ec6638a14f42222"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/02-evolution-of-atomic-theory.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "2.2",
+      "moduleId": "m68687",
+      "sourceTitle": "Evolution of Atomic Theory",
+      "moduleSha256": "410c24a7641bee12f2ff0fc58eda67854df200c68f7a20ced0ee7a8c3c10c892"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/03-atomic-structure-and-symbolism.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "2.3",
+      "moduleId": "m68692",
+      "sourceTitle": "Atomic Structure and Symbolism",
+      "moduleSha256": "696e6624c170a2bda1acebef7489d823bd347b5b19f6aaa29de980c03e86517a"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/04-chemical-formulas.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "2.4",
+      "moduleId": "m68693",
+      "sourceTitle": "Chemical Formulas",
+      "moduleSha256": "0e4b9b089212ae1587d2ef834cb226435e9058d91ec786f9fbf24395a6bf9544"
     }
   ],
   "appendices": [

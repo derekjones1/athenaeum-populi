@@ -1771,8 +1771,21 @@ test('on every Chemistry page a display row fits the column, scientific notation
           overflowing: displays.filter((el) => el.scrollWidth > el.clientWidth + 1)
             .map((el) => `${short(el.querySelector('annotation') ?? el)} (${el.scrollWidth} > ${el.clientWidth})`),
           split: kept.filter((el) => el.getClientRects().length > 1).map(short),
-          wide: scaled.filter((img) => img.getBoundingClientRect().width > 26 * 16 + 1)
-            .map((img) => `${img.closest('figure').dataset.stem} at ${Math.round(img.getBoundingClientRect().width)} px`),
+          // Half (or three tenths) of the native width, and never under
+          // 26rem (14rem): assets/css/custom.css, `.ap-mediafigure[data-scale]`.
+          wide: scaled.filter((img) => {
+            const third = img.closest('figure').dataset.scale === 'scaled-down-30';
+            const cap = Math.max((third ? 14 : 26) * 16, Number(img.getAttribute('width')) * (third ? 0.3 : 0.5));
+            return img.getBoundingClientRect().width > cap + 1;
+          }).map((img) => `${img.closest('figure').dataset.stem} at ${Math.round(img.getBoundingClientRect().width)} px`),
+          // …and a wide one is not squeezed under its share: the 26rem cap
+          // alone set a 1300 px drawing at a third of native.
+          squeezed: scaled.filter((img) => {
+            const third = img.closest('figure').dataset.scale === 'scaled-down-30';
+            const share = Number(img.getAttribute('width')) * (third ? 0.3 : 0.5);
+            const column = img.closest('figure').getBoundingClientRect().width;
+            return img.getBoundingClientRect().width < Math.min(share, column) - 1;
+          }).map((img) => `${img.closest('figure').dataset.stem} at ${Math.round(img.getBoundingClientRect().width)} px`),
         };
       });
       expect(audit.split, `${route} at ${width} px: a number in scientific notation is split across lines`).toEqual([]);
@@ -1781,6 +1794,7 @@ test('on every Chemistry page a display row fits the column, scientific notation
         // tells the learner the row goes on.
         expect(audit.overflowing, `${route}: a display equation row is wider than the column — break the row`).toEqual([]);
         expect(audit.wide, `${route}: a figure the source marks scaled-down fills the column`).toEqual([]);
+        expect(audit.squeezed, `${route}: a figure the source marks scaled-down is set under its share of its native width`).toEqual([]);
         totals.displays += audit.displays;
         totals.kept += audit.kept;
         totals.keptInStems += audit.keptInStems;

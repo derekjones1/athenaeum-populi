@@ -74,8 +74,9 @@ these differences:
    | `sciences-interconnect` | `**How Sciences Interconnect.** *Title.*` |
    | `chemist-portrait` | `**Portrait of a Chemist.** *Title.*` |
 
-   The first two names are confirmed from the PDF (chapter 1); confirm the
-   other two where they first appear. Every feature box is a
+   The first two names are confirmed from the PDF (chapter 1) and "Portrait
+   of a Chemist" from 2.4's (Paula Hammond); confirm "How Sciences
+   Interconnect" where it first appears. Every feature box is a
    `callout type="info"`.
 2. **Worked examples.** A source `<example>` is prose in the body, at its
    source position, in the math books' form: `**Example.** *Its title.*`
@@ -107,7 +108,8 @@ these differences:
    $T_\text{K} = T_{°\text{C}} + 273.15$, the footer says so, and the
    difference is an erratum.
 7. **`## Key terms`** is the module's glossary in its CNXML order, every
-   definition ending with a period (lint), an alias roman and outside the
+   definition ending with a period (lint; the source prints almost none,
+   and the footer does not disclose them), an alias roman and outside the
    bold: `- **solution** — (also, homogeneous mixture) combination of …`.
 8. **The pooled end matter of the PDF** (Key Terms, Key Equations, Summary,
    and Exercises printed once at the chapter's end) is each module's own in
@@ -116,8 +118,10 @@ these differences:
    lint, so each is the checker's to tick. The frontmatter description
    ends "— adapted from OpenStax Chemistry 2e, Section N.M."; the page's
    first figure is `eager="true"`; a reference to a numbered figure or
-   table becomes a describing phrase ("the table of densities of common
-   substances"); a cross-reference to another section is plain text, the
+   table in running text becomes a describing phrase ("the table of
+   densities of common substances"), and a bare parenthetical one —
+   the source's "(Figure 2.16)" — is "(shown in the figure below)", or "the
+   photograph", "the table"; a cross-reference to another section is plain text, the
    source's wording where the source wrote it and "Section 1.4
    Measurements" where the page did (no book in the library links between
    its sections). **A reference to an appendix is the exception: it is a
@@ -142,6 +146,15 @@ these differences:
    constant the page's own tables lack (C, D) — links the phrase that
    names the thing, in the source's words and nothing added:
    `Using the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), predict…`.
+   **Where the stem names no table** — 2.3's "the ion with 54 electrons, 53
+   protons, and 74 neutrons" needs an element for an atomic number and
+   says nothing of where to find it — the item adds one sentence after the
+   source's words and before its "Enter …" or "Type …" sentence:
+   "Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+   Only an item that cannot be answered without the table carries it: a
+   count whose stem gives the atomic number does not *(chapter 2: the
+   sentence went on six such items, and the footer's reason was false for
+   them)*.
    Every item that needs it carries the link, since each is answered on
    its own. A page that shows the table itself (2.5 prints the periodic
    table) needs no link to it. The footer says "the periodic table linked
@@ -212,7 +225,9 @@ selfchecks, source defects, the footer — and each is stated once.
 - **"Enter the … in …" is added only where the source stem leaves the unit
   open.** One named unit is spelled out ("grams", "liters", "kelvin",
   "degrees Celsius"); a quotient or product unit is its symbol ("g/mL",
-  "m/s", "kJ/mol"), since "mol/L·s" has no readable spelled form.
+  "m/s", "kJ/mol"), since "mol/L·s" has no readable spelled form. A unit
+  the book itself prints only as a symbol (amu) is named by that symbol:
+  "Enter the average atomic mass in amu." *(chapter 2)*
 - **"with its sign" is never written** (lint). A negative answer is typed
   with its minus sign as a matter of course, and the phrase on the negative
   keys alone tells the learner the answer is negative.
@@ -238,6 +253,26 @@ selfchecks, source defects, the footer — and each is stated once.
   be used as vertical studs…"), keeps the source's words: the coverage
   gate matches a part to its source by its stem, and a reworded referent
   reads as an exercise the page lacks.
+- **A part named by its letter is named by its position** *(chapter 2)*.
+  The page prints no part letters, so "your prediction from (a)", "the
+  molecules drawn in (a) and (b)", and a model answer's "the predictions
+  from (a), (b), and (c)" become "the previous item", "the two previous
+  items", "the first of the three previous items" — in the stem and in
+  the model answer alike, nothing else changed, the footer saying so
+  once. No lint reads a question for "(a)": the checker does.
+- **A keyed exercise that says "repeat [another exercise]"** (2.3: "Repeat
+  [Exercise 2.25] using an element that has three naturally occurring
+  isotopes"; 2.4's Build a Molecule exercise) points at an unkeyed
+  exercise the page omits, and the learner cannot repeat what the page
+  does not print. The stem keeps the source's words with the number
+  replaced by "the following exercise" or "the exercise described below",
+  and the omitted exercise's text is restated VERBATIM in the same
+  question — whole, with its letters, where the answer is one paragraph;
+  its set-up sentences in a closing parenthesis, "(The exercise: …)",
+  where this exercise has parts of its own. The source gates read such an
+  item as the exercise that refers, not the one it quotes
+  (`keyed-units.mjs`, `refersTo`). The footer says the reference was
+  replaced by the omitted exercise's text.
 - **A datum the source assumes and neither the stem nor the module states**
   (1.6's short ton of 2,000 lb) is added to the stem in parentheses and
   named in the footer; a hint is not where a needed number lives.
@@ -347,7 +382,13 @@ selfchecks, source defects, the footer — and each is stated once.
     ________ to the amount of matter").
   - **Where no cloze is unique, a select-the-term `multiplechoice`** whose
     options are all terms one module sentence or list itself prints, the
-    key position varied.
+    key position varied. It is a question, and a blank never opens it:
+    "Which scientist does the following statement describe? …" *(chapter
+    2: "________ discovered that…" reads aloud as nothing)*; a page uses
+    one form throughout. Under a heading that names its key it stands only
+    if the heading names at least one other option too — a heading may
+    narrow the choice, never make it (no lint: the heading-word lint reads
+    `textin` only).
   - **A blank followed by its head noun** ("an ________ property") lists
     the phrase with the noun in `accept`, since a learner may type both
     words.
@@ -411,6 +452,15 @@ after the rule was written, so the line is drawn by pairs:
     Sample answer: …" — and the rubric is those criteria; a rubric of the
     sample's own details is one only the sample can meet. `verify:source-keys`
     confirms the form by finding the source's sample carried whole.
+    **The same form for an answer that is one possible case without the
+    words** *(chapter 2)* — a simulation exercise whose solution ends "Other
+    answers for this exercise are possible if a different element or
+    isotope is chosen", one that opens "Let us use neon as an example":
+    the opening sentence, then the added label "Sample answer:" and the
+    part's own segment of the source's answer, whole. A sentence the source
+    prints once for the whole exercise stays in the part it closes and is
+    not copied into the others; the gate holds each part to its own
+    segment. The footer says the opening sentence and the label are added.
 
 ### Source defects and Source notes
 
@@ -500,7 +550,11 @@ superscripts exactly as in the life-sciences books: `H₂O`, `SO₄²⁻`, `Fe³
 (`H2O`, `Fe3+`) runs on this book with the whole periodic table, where the
 life-sciences books read a short element list. A quantity is prose too:
 `15.00 g`, `75.0 mL`, `128.9 g/mol` — never `$15.00\ \text{g}$`, which in
-an exercise string is spoken as "15.00g".
+an exercise string is spoken as "15.00g". A minus sign, and the sign of a
+negative charge, is U+2212 (−) wherever it stands — prose, stems, model
+answers, table cells — whatever dash the source typed (2.3's source
+writes "[53 – (1–) = 54]" with en dashes). An expression is all math or
+all prose, never half: `$Z = 11$`, not "$Z$ = 11".
 
 **In math** — every source `<equation>`, and any inline span that is
 mathematics — a formula is `\ce{…}`. Hugo's embedded KaTeX carries the
@@ -752,11 +806,15 @@ it stands.** Chapter 1's source alts called flasks beakers, wax butter, and
 a 21.6 mL reading 20.8 mL, and the one alt the pilot kept said "Kelvin
 scale" on a page that teaches lowercase kelvin.
 
-**A figure the source marks `class="scaled-down"` or `scaled-down-30`**
-(281 of them, small drawings print sets at about half the text width) is
-held to that share of the column: `source:media` records the class in the
-manifest (`scale`) and the shortcode passes it on. Nothing is written on
-the page.
+**A figure the source marks `class="scaled-down"` or `scaled-down-30`** —
+on its `<media>` (281) or on the `<figure>` around it (352; read since
+chapter 2) — is printed at half, or three tenths, of its NATIVE size, not
+of the column: a 975 px drawing is set at two thirds of the text width and
+a 1300 px one almost across it. `source:media` records the class in the
+manifest (`scale`), the shortcode passes it on with the native width, and
+the stylesheet gives the figure that share of its own width, never under
+26rem (14rem) *(chapter 2: a flat 26rem cap set the wide ones at a third of
+native, with 7 px labels; browser test)*. Nothing is written on the page.
 
 About 490 images sit outside any captioned figure. Each shape has one
 answer:
@@ -789,6 +847,10 @@ whole answer is an image (92 parts, from chapter 6 on), the `selfcheck` is
 confirmed when its model answer shows that image, and refused when it
 shows none or a neighbouring part's. The sentences beside it are the
 author's reading of the drawing and are the checker's to read against it.
+Where the answer is a name AND a drawing ("ethanol [structure]", 2.4), the
+model answer is the source's words, then the figure, then the sentence
+about the drawing; the gate holds it to the part's own image and to the
+source's words carried whole.
 
 ## Appendices
 

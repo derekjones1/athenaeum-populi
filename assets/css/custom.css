@@ -801,14 +801,26 @@ self-check:not(:defined) .ap-selfcheck-checkpoint input { pointer-events: none; 
   height: auto;
   border-radius: 4px;
 }
-/* A figure the source marks `class="scaled-down"` (Chemistry 2e: a small
-   drawing printed at about half the text width) or `scaled-down-30` keeps
-   that share of the column instead of filling it; the manifest records the
-   class (`scale`, written by vendor-media). On a phone it has the whole
-   column again: a third of 340 px is unreadable. */
+/* A figure the source marks `class="scaled-down"` or `scaled-down-30`
+   (Chemistry 2e; the manifest records the class as `scale`, written by
+   vendor-media) is printed at half, or three tenths, of its NATIVE size —
+   not of the column: the book sets a 975 px methane drawing at two thirds
+   of the text width and a 1300 px one almost across it. The shortcode
+   passes the native width; the figure takes that share of it, and never
+   less than 26rem (14rem), below which a small drawing's labels cannot be
+   read on a screen. A flat 26rem cap, the rule until chapter 2, set the
+   wide ones at a third of native with 7 px labels. On a phone the figure
+   has the whole column again: a third of 340 px is unreadable. */
 @media (min-width: 48rem) {
-  .ap-mediafigure[data-scale="scaled-down"] img { max-width: min(100%, 26rem); }
-  .ap-mediafigure[data-scale="scaled-down-30"] img { max-width: min(100%, 14rem); }
+  .ap-mediafigure[data-scale="scaled-down"] img { max-width: min(100%, max(26rem, calc(var(--ap-native-width, 0px) * 0.5))); }
+  .ap-mediafigure[data-scale="scaled-down-30"] img { max-width: min(100%, max(14rem, calc(var(--ap-native-width, 0px) * 0.3))); }
+}
+/* An uncaptioned figure directly above an item is that item's own picture —
+   an exercise part that is nothing but a drawing (Chemistry 2.4). With even
+   margins it floated midway between two cards and read as the end of the
+   item above; it sits apart from that one and close to its own. */
+.ap-mediafigure:not(:has(> .ap-mediafigure-caption)):has(+ :is(fill-in, multiple-choice, text-in, self-check, sort-bins)) {
+  margin: 2.75rem 0 0.5rem;
 }
 .dark .ap-mediafigure[data-kind="diagram"] img,
 .dark .ap-mediafigure[data-transparent] img { background: #fff; padding: 4px; box-sizing: border-box; }

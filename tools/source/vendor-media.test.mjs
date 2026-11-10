@@ -44,11 +44,17 @@ test('extractModuleImages records the source scale class and nothing else from c
   const xml = `
 <figure id="f1"><media id="a" class="scaled-down" alt="A"><image src="../../media/A.jpg"/></media></figure>
 <figure id="f2"><media id="b" alt="B" class="span-all scaled-down-30"><image src="../../media/B.jpg"/></media></figure>
-<figure id="f3"><media id="c" class="span-all" alt="C"><image src="../../media/C.jpg"/></media></figure>`;
+<figure id="f3"><media id="c" class="span-all" alt="C"><image src="../../media/C.jpg"/></media></figure>
+<figure id="f4" class="scaled-down"><media id="d" alt="D"><image src="../../media/D.jpg"/></media></figure>
+<figure id="f5" class="scaled-down"><media id="e" class="scaled-down-30" alt="E"><image src="../../media/E.jpg"/></media></figure>`;
   assert.deepEqual(extractModuleImages('m68690', xml), [
     { module: 'm68690', source: 'media/A.jpg', alt: 'A', caption: '', scale: 'scaled-down' },
     { module: 'm68690', source: 'media/B.jpg', alt: 'B', caption: '', scale: 'scaled-down-30' },
     { module: 'm68690', source: 'media/C.jpg', alt: 'C', caption: '' },
+    // Chapter 2 (m68693): the class on the <figure>, as 352 of the book's
+    // figures carry it; the <media>'s own class wins where both are set.
+    { module: 'm68690', source: 'media/D.jpg', alt: 'D', caption: '', scale: 'scaled-down' },
+    { module: 'm68690', source: 'media/E.jpg', alt: 'E', caption: '', scale: 'scaled-down-30' },
   ]);
 });
 

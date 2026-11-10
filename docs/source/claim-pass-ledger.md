@@ -64,6 +64,7 @@ record. No Biology chapter is outstanding.
 | Anatomy and Physiology | 27-the-reproductive-system | 3 | done Nov 2 2026 (in the authoring run) | 2832–2836 |
 | Anatomy and Physiology | 28-development-and-inheritance | 7 | done Nov 2 2026 (in the authoring run); 13 findings (28.1 one, 28.2 four, 28.3 two, 28.4 four, 28.5 none, 28.6 two, 28.7 none) | 2849–2862 |
 | Chemistry | 01-essential-ideas | 6 | done Nov 9 2026 (in the authoring run, the book's pilot); 19 findings, 8 corrected on the pages, 11 reviewed and not errata | 2883, 2887, 2894, 2895, 2902–2905, 2907, 2909 |
+| Chemistry | 02-atoms-molecules-and-ions | 4 of 7 (Sections 2.1–2.4; 2.5–2.7 follow) | done Nov 10 2026 (in the authoring run); 11 findings: 5 corrected on the pages, 1 kept with a Source note, 1 kept as printed and logged, 4 reviewed and not errata | 2924, 2925, 2931–2933, 2939, 2940 |
 
 The Microbiology rows (26 chapters) are in `docs/history/microbiology.md`
 under "Prose claim pass rows". Knowledge-check pages (`knowledge-check-*.md`) carry no source prose and are

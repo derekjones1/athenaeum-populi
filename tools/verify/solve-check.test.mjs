@@ -70,6 +70,9 @@ test('a packet carries the question and options only — never the key, accept l
   const serialized = JSON.stringify([item, packetItem(textin)]);
   assert.doesNotMatch(serialized, /hint|accept|answer=/);
   assert.doesNotMatch(serialized, /carotenoids/);
+  // A formula or equation text-in says how its answer is typed, as a fill-in does.
+  assert.equal(packetItem({ ...textin, params: { ...textin.params, answerForm: 'formula' } }).answerForm, 'formula');
+  assert.equal(packetItem(textin).answerForm, undefined);
 });
 
 test('a fillin packet carries the question and the answer shape — never the key or hint — and is graded by the math grader', () => {
