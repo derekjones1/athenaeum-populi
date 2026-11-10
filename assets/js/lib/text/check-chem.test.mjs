@@ -191,3 +191,27 @@ test('a reading is shown back in the book\'s print', () => {
   assert.equal(previewChem('sodium', 'formula'), '');
   assert.equal(prettySpecies(readSpecies('Hg2Cl2(s)', { equation: true })[0]), 'Hg₂Cl₂(s)');
 });
+
+test('a nuclide\'s atomic number is its element\'s: read in a key, a response, and the gate\'s canon', async () => {
+  const { checkFormula, chemKeyProblem, chemCanon, previewChem } = await import('./check-chem.mjs');
+  // A key that prints both numbers asks for both.
+  assert.equal(checkFormula('^23_11Na', '²³₁₁Na').status, 'correct');
+  assert.equal(checkFormula('²³₁₁Na', '²³₁₁Na').status, 'correct');
+  assert.equal(checkFormula('23Na', '²³₁₁Na').status, 'form');
+  assert.match(checkFormula('23Na', '²³₁₁Na').message, /atomic number/);
+  assert.equal(checkFormula('^23_12Na', '²³₁₁Na').status, 'incorrect');
+  assert.equal(checkFormula('^24_11Na', '²³₁₁Na').status, 'incorrect');
+  // A key that prints the mass number alone leaves the atomic number free — but never wrong.
+  assert.equal(checkFormula('133Cs+', '¹³³Cs⁺').status, 'correct');
+  assert.equal(checkFormula('^133_55Cs^+', '¹³³Cs⁺').status, 'correct');
+  assert.equal(checkFormula('^133_56Cs^+', '¹³³Cs⁺').status, 'incorrect');
+  // The lint refuses a key whose atomic number is another element's.
+  assert.equal(chemKeyProblem('²³₁₁Na', 'formula'), null);
+  assert.match(chemKeyProblem('²³₁₂Na', 'formula'), /atomic number 12, and Na is element 11/);
+  assert.match(chemKeyProblem('¹²⁹₅₃Xe', 'formula'), /Xe is element 54/);
+  // The gate's canon keeps a printed atomic number: two keys, one nuclide.
+  assert.equal(chemCanon('²³₁₁Na', 'formula'), '^23_11Na');
+  assert.equal(chemCanon('^{23}_{11} Na', 'formula'), '^23_11Na');
+  assert.equal(chemCanon('²³Na', 'formula'), '^23Na');
+  assert.match(JSON.stringify(previewChem('^23_11Na', 'formula')), /²³₁₁Na/);
+});

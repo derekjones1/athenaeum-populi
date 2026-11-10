@@ -491,6 +491,54 @@ shipped that defect on chapter 5's thirty-six references to Appendix G.
 tests, the replay gate, the build and its checks, and the browser suite
 (a shipped script changed).
 
+### The four left over, handled (November 10, 2026)
+
+Derek asked how the four items the review had left "for their chapters"
+should be handled. Reading the source for each changed two of the four:
+
+- **"Parts the solution leaves unkeyed" (8.4, 13.3) were not unkeyed.**
+  The solutions are typed loosely — "…is O₂;(d) F₂" with no space, "(c),
+  [H₂] increases" with a comma — and the splitter stopped at the slip. An
+  answer's labels are now read as answers are typed, a closing label whose
+  answer is only an image included; an answer that merely LISTS labels
+  ("(a), (b), (c), (d), and (e)", 21.1) still answers its exercise whole.
+  No keyed exercise in the book has an unkeyed part.
+- **Stems whose parts are another exercise's** (nine): the gates now
+  borrow the parts — the lead-in is the asking exercise's stem, each part
+  the referenced exercise's, found by its `<link target-id>` or by "the
+  previous exercise". The page restates each part verbatim (playbook
+  "Stems"), and that restated part is what the gates match.
+- **A drawing as a part's whole answer** (92 parts, not the 60 first
+  counted): the keys gate called such a `selfcheck` "unkeyed" and passed
+  it unread. It now confirms the one whose model answer shows the source's
+  image and refuses one that shows none or a neighbour's.
+- **A nuclide's atomic number** is its element's, so nothing has to trust
+  it: the grader reads it (a key that prints both numbers asks for both;
+  one left out is a form verdict, a wrong one is wrong), the lint refuses
+  a key whose atomic number is not its symbol's, and the gate's canon
+  keeps it, so `²³Na` is refused where the source prints ²³₁₁Na. This one
+  changes what a learner must type, and is Derek's to veto.
+
+**Multiple choice stays open** *(Derek, the same day: "I want to keep
+multiple choice open as an option still for question authoring")*. The two
+shapes first left for rulings, and the 2.6 list this review had made a
+`selfcheck` because the gate refused anything else, are all choices among
+things the stem prints, and are multiple choices now:
+
+- 2.6's six chlorides sorted by one sentence — one item per compound, the
+  stem's two categories as options; the gate finds the category whose list
+  holds the compound the item prints;
+- 13.3's "Only (b)" and 21.1's "(a), (b), (c), (d), and (e)" — one yes/no
+  item per part; the gate reads a named part as yes and the others as no;
+- 17.1's answers lettered by role first — regrouped by part, and one item
+  per reaction over its reactants, the stem's closing sentence naming the
+  role; the gate reads that role's value.
+
+The lesson is the review's own, turned on the reviewer: the first ruling
+bent the page to the gate. The playbook now says the gate is taught the
+form. The probe stands at 20 lines for the book, none a gate defect and
+none an answer shape left unread.
+
 ### The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under

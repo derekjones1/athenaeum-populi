@@ -178,12 +178,23 @@ The component follows the SHAPE of the source's keyed answer:
 | a balanced equation, a half-reaction, a net ionic equation | `textin` with `answerForm="equation"` ("Formulas and equations") |
 | several of these at once ("calcium, Ca"; "ionic, Ba²⁺, O²⁻"; "molecular C₂H₂, empirical CH"; an equation and a mass) | one item per piece, each stem saying which ("Enter the molecular formula."): the classification as a `multiplechoice` first, then a formula `textin` per ion or per formula |
 | counts of particles ("47 protons, 47 electrons, 62 neutrons") | one `whole-number` `fillin` per number, each stem closing with a sentence that names the one it asks for in the answer's own word ("Enter the number of neutrons." — the source gate reads that sentence and refuses a swapped pair), and a name or formula `textin` for the element where the key prints one. A count the stem itself prints (the protons of an atom given by its atomic number) is right by the definition the item tests: it stands, and the parent lists it in `verify:replay`'s allowlist ("Numeric keys") |
-| a nuclide symbol with its mass number, with or without the atomic number ("¹³³Cs⁺", "²³₁₁Na") | ONE formula `textin`, keyed in print with every number the source prints. The field reads the mass number, the symbol, and the charge; it does not read the atomic number, which the symbol fixes (`23Na` and `^23_11Na` are both right, `Na` is not). The stem ends "Type the mass number before the symbol, as in 14C." — with another nuclide where ¹⁴C is the answer. Never a fill-in for a number the stem itself gives |
-| a list sorted into the stem's categories by one answer sentence, the stem unlettered ("Ionic: KCl, MgCl₂; Covalent: NCl₃, ICl, PCl₅, CCl₄") | `selfcheck`, the source's sentence as the model answer and one rubric clause per category. Not a multiple choice per member: the source gate reads the exercise as one unit, finds every category in its answer, and refuses the item |
+| a nuclide symbol with its mass number, with or without the atomic number ("¹³³Cs⁺", "²³₁₁Na") | ONE formula `textin`, keyed in print with every number the source prints (the gate refuses `²³Na` where the source prints ²³₁₁Na). A key that prints both numbers asks for both: `^23_11Na` is right, `23Na` is the right nuclide short of its atomic number (form feedback), a wrong atomic number is wrong. A key with the mass number alone leaves the atomic number free, but never wrong. The lint refuses a key whose atomic number is not its element's. The stem ends "Type the mass number, then the atomic number after an underscore, before the symbol: ^14_6C." (or, for a mass number alone, "Type the mass number before the symbol, as in 14C.") — with another nuclide where carbon-14 is the answer. Never a fill-in for a number the stem itself gives |
+| a list sorted into the stem's categories by one answer sentence, the stem unlettered ("Ionic: KCl, MgCl₂; Covalent: NCl₃, ICl, PCl₅, CCl₄") | one `multiplechoice` per member, the lead-in restated for one ("…predict whether the following chloride is ionic or covalent: KCl."), the options the stem's categories in its order. The source gate finds the category whose list holds the member the stem prints |
+| an answer that NAMES parts instead of answering each ("Only (b)"; "(a), (b), (c), (d), and (e)") | one `multiplechoice` per part with the options `yes` and `no`, the lead-in turned into a question about one part ("Will the following increase the percent of ammonia…? Addition of HCl"; "Does the following nucleus lie within the band of stability shown in the figure above? ²¹¹Pb"). Never one item whose options are the parts: "only" is part of the answer, and five of eight cannot be one choice |
+| an answer by role for a reaction the stem prints ("Oxidized: Sn²⁺; reduced: H₂O₂; oxidizing agent: H₂O₂; reducing agent: Sn²⁺") | ONE `multiplechoice` per reaction whose options are the reaction's reactants, the stem closing with the one role it asks in the answer's own words ("Which reactant is the oxidizing agent?"). One item, not one per role: with two reactants the second role is the first one's remainder. Not a formula `textin`: the stem prints both candidates |
 | a charge ("4+") | `fillin` with `whole-number`, keyed as a signed number (`4`), the stem ending "Enter the charge as a signed number, the sign first, as +1 or −1." — the field reads a typed `4+` as unfinished arithmetic, and "with its sign" is a lint error ("Stems"). Proven through the gate for a cation (2.3's platinum ion); the source prints an anion's charge sign-last ("2−"), which the gate reads as 2, so the first negative one is probed before its wave |
 | two or more quantities ("5371 °F, 3239 K"; a range; a ratio) | one `fillin` per quantity, each stem saying which |
 | an explanation, a list, a description, "answers will vary" | `selfcheck` with the source solution as the model answer and a rubric |
 | a drawing | `selfcheck` with the figure in the model answer ("Figures") |
+
+**Multiple choice stays open** *(Derek, November 10, 2026)*. Where a keyed
+answer is a choice among things the stem itself prints — its categories,
+its lettered parts, the reactants of its reaction, yes or no to its
+question — the item is a `multiplechoice`, auto-graded, and never falls
+back to a `selfcheck` because a gate cannot yet read the form: the gate is
+taught the form, with a test (`run.md` §1 step 6a). What does not change is
+where the options come from: the stem's own set, in its order, the key the
+source's — never a distractor the author invented.
 
 The rules below are grouped — stems, numeric keys, added items, hints,
 selfchecks, source defects, the footer — and each is stated once.
@@ -246,6 +257,16 @@ selfchecks, source defects, the footer — and each is stated once.
   underline is not announced by a screen reader: a stem that asks about
   "the underlined item" keeps the `<u>` and ends with the sentence "(The
   underlined item is “Ni powder”.)".
+- **A stem that asks about each part of ANOTHER exercise** ("Determine
+  the number of moles and the mass requested for each reaction in
+  [Exercise 4.40]"; "…each cell in the previous exercise") and is answered
+  part by part is one item per answered part: this exercise's lead-in
+  restated for one, then the referenced exercise's part VERBATIM — the
+  reaction, the cell, the complex, with its data. The referenced exercise
+  is an even-numbered one the page omits, so its part is the only place
+  the learner meets the datum, and it is what the source gates match
+  (nine exercises: 4.3 twice, 13.2, 17.1 twice, 17.2 twice, 17.7, 19.2).
+  The footer says the parts were restated from the omitted exercise.
 - **An item bound to a figure or table** says "the figure above" or "the
   table above", so the answer ledger binds them.
 - **A lettered part that is only an image** ("(a) [structure] (b)
@@ -763,6 +784,12 @@ each fluorine atom has three lone pairs
 A drawing answer is never converted to a multiple choice: the source keys
 one structure and prints no wrong ones to offer.
 
+**The source gate holds a drawing answer to its picture**: where a part's
+whole answer is an image (92 parts, from chapter 6 on), the `selfcheck` is
+confirmed when its model answer shows that image, and refused when it
+shows none or a neighbouring part's. The sentences beside it are the
+author's reading of the drawing and are the checker's to read against it.
+
 ## Appendices
 
 *(November 10, 2026.)* The book's thirteen appendices are reference pages,
@@ -928,18 +955,6 @@ Still open:
   (chapter 6), for a condensed structural formula (chapter 20), and for a
   nuclear equation (chapter 21) — each a `selfcheck` until its chapter
   settles it ("Formulas and equations");
-- a part of a keyed exercise that the solution leaves out (8.4 answers
-  (a)–(c) of five parts; 13.3 answers two of six): the playbook's rule
-  omits an unkeyed exercise, the gates still expect every part of a keyed
-  one, and the two are reconciled when chapter 8 is prepared
-  (`chemistry-shapes` flags each under Notes);
-- a drawing as the whole keyed answer of a part (about 60 parts from
-  chapter 6 on): the `selfcheck`-with-figure form is the rule ("Figures"),
-  and the source-keys gate has not yet judged one — probe it before
-  chapter 6's wave (`run.md` §1 step 6a);
-- a lettered answer under a stem whose parts are in another exercise (4.3,
-  13.2, 17.1, 17.2, 17.7, 19.2 — nine exercises): the gates read each as one
-  unit with the whole solution; probe before chapter 4;
 - a browser test that types a formula and an equation into the real field:
   the grader, the lint, and the gates are unit-tested, and chapter 2's
   first page is the first place the suite can type one;

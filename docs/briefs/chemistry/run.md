@@ -233,9 +233,9 @@ the alt repeats the author's mistake. The source-keys gate confirms a
 `fillin` when its answer segment prints the keyed number; where the
 segment names several ("3 protons, 3 electrons, 4 neutrons") it holds the
 item to the number its closing sentence asks for by name, so that sentence
-names one ("Enter the number of neutrons."). It does not read a formula's
-atomic-number prescript (`²³₁₁Na` and `²³₁₂Na` are one key to it): the
-checker reads that character.
+names one ("Enter the number of neutrons."). A drawing answer is held to
+its picture: the `selfcheck` must show the source's image, and the words
+under it are the checker's.
 
 ## 4. Close-out, in this order
 

@@ -126,7 +126,7 @@ function main(argv) {
       } else if (unit.label && !answer) {
         notes.push(`${where}: the answer is only an image — a selfcheck with the figure as its model answer (playbook "Figures")`);
       }
-      if (!unit.label && sequentialParts(unit.answer)) {
+      if (!unit.label && sequentialParts(unit.answer, { answer: true })) {
         notes.push(`${where}: a lettered answer under a stem with no parts — the parts are in the exercise or table the stem refers to; restate each datum (playbook "Stems")\n    ${unit.stem.slice(0, 140)}`);
       }
     }

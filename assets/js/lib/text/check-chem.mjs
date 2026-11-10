@@ -53,6 +53,9 @@ const ELEMENTS = new Set(('H He Li Be B C N O F Ne Na Mg Al Si P S Cl Ar K Ca Sc
   + 'Rb Sr Y Zr Nb Mo Tc Ru Rh Pd Ag Cd In Sn Sb Te I Xe Cs Ba La Ce Pr Nd Pm Sm Eu Gd Tb Dy Ho Er Tm Yb Lu Hf Ta W Re Os Ir Pt Au Hg '
   + 'Tl Pb Bi Po At Rn Fr Ra Ac Th Pa U Np Pu Am Cm Bk Cf Es Fm Md No Lr Rf Db Sg Bh Hs Mt Ds Rg Cn Nh Fl Mc Lv Ts Og').split(' '));
 
+/** An element's atomic number: its place in the list above. */
+const ATOMIC_NUMBER = new Map([...ELEMENTS].map((symbol, index) => [symbol, index + 1]));
+
 const SUBSCRIPTS = '₀₁₂₃₄₅₆₇₈₉';
 const SUPERSCRIPTS = '⁰¹²³⁴⁵⁶⁷⁸⁹';
 const ARROW = /<=>|<->|⇌|⇄|⟷|↔|-->|->|→|⟶|=/g;
@@ -157,9 +160,13 @@ export function readSpecies(raw, { equation = false } = {}) {
   }
   // An electron: e-, e^-, e⁻.
   if (equation && /^e\^?-$/.test(text)) return [{ canon: 'e^-', atoms: {}, charge: -1, mass: null, state, coef }];
-  const isotope = (equation ? /^\^(\d+)(?:_\d+)?/ : /^\^?(\d+)(?:_\d+)?(?=[A-Z([])/).exec(text);
+  // A nuclide's prescripts: the mass number, and below it the atomic number
+  // where one is written (`^23_11Na`, `²³₁₁Na`).
+  let atomic = null;
+  const isotope = (equation ? /^\^(\d+)(?:_(\d+))?/ : /^\^?(\d+)(?:_(\d+))?(?=[A-Z([])/).exec(text);
   if (isotope) {
     mass = Number(isotope[1]);
+    atomic = isotope[2] === undefined ? null : Number(isotope[2]);
     text = text.slice(isotope[0].length);
   }
   const body = parseBody(text, 0, null);
@@ -212,7 +219,11 @@ export function readSpecies(raw, { equation = false } = {}) {
     const canon = `${mass === null ? '' : `^${mass}`}${serialize(items)}`
       + `${hydrate ? `·${hydrate.coef > 1 ? hydrate.coef : ''}${serialize(hydrate.items)}` : ''}`
       + `${charge ? `^${Math.abs(charge) > 1 ? Math.abs(charge) : ''}${charge > 0 ? '+' : '-'}` : ''}`;
-    return { canon, atoms, charge, mass, state, coef };
+    // The atomic number the species' one element has, when it is one
+    // element: what a written atomic number is held to.
+    const symbols = Object.keys(atoms);
+    const expected = symbols.length === 1 ? ATOMIC_NUMBER.get(symbols[0]) ?? null : null;
+    return { canon, atoms, charge, mass, atomic, expected, state, coef };
   });
 }
 
@@ -221,7 +232,7 @@ export function prettySpecies(species) {
   const sub = (digits) => [...String(digits)].map((d) => SUBSCRIPTS[d]).join('');
   const sup = (text) => [...String(text)].map((c) => (c === '+' ? '⁺' : c === '-' ? '⁻' : SUPERSCRIPTS[c])).join('');
   const body = species.canon
-    .replace(/^\^(\d+)/, (_, mass) => sup(mass))
+    .replace(/^\^(\d+)/, (_, mass) => `${sup(mass)}${species.atomic === null || species.atomic === undefined ? '' : sub(species.atomic)}`)
     .replace(/\^(\d*[+-])$/, (_, charge) => sup(charge))
     .replace(/·(\d*)/, (_, n) => `·\u0000${n}\u0000`)
     .replace(/(?<![\u0000\d])(\d+)(?!\d*\u0000)/g, (_, n) => sub(n))
@@ -244,7 +255,16 @@ export function checkFormula(input, answer, { accept = '' } = {}) {
     }
     return { status: 'incorrect', message: 'That does not read as a formula. Type element symbols with their capitals and subscripts as plain numbers, like Mn3(PO4)2.' };
   }
-  if (readings.some((reading) => keyReadings.some((key) => key.canon === reading.canon))) return { status: 'correct' };
+  const matched = readings.flatMap((reading) => keyReadings.filter((key) => key.canon === reading.canon).map((key) => ({ reading, key })));
+  if (matched.length) {
+    // A nuclide's atomic number is its element's. One typed wrong is wrong
+    // whatever the key prints; one left out is the right nuclide, short of
+    // what a key that prints both numbers asks for.
+    const sound = matched.filter(({ reading }) => reading.atomic === null || reading.expected === null || reading.atomic === reading.expected);
+    if (!sound.length) return { status: 'incorrect', message: 'The atomic number you typed is not this element’s — find the element in the periodic table.' };
+    if (sound.some(({ reading, key }) => key.atomic === null || reading.atomic !== null)) return { status: 'correct' };
+    return { status: 'form', message: 'That is the right nuclide — now include its atomic number as well: type it after an underscore, as in ^14_6C.' };
+  }
   if (readings.some((reading) => keyReadings.some((key) => compositionKey(key) === compositionKey(reading)))) {
     return { status: 'form', message: 'That has the right atoms — now write the formula in its usual order and grouping.' };
   }
@@ -395,6 +415,10 @@ export function chemKeyProblem(answer, form, accept = '') {
       const readings = readSpecies(member);
       if (!readings.length) return `${JSON.stringify(member)} does not read as a formula`;
       if (readings.length > 1) return `${JSON.stringify(member)} reads two ways — write its charge as a superscript (SO₄²⁻) or after ^ (SO4^2-)`;
+      const [nuclide] = readings;
+      if (nuclide.atomic !== null && nuclide.expected !== null && nuclide.atomic !== nuclide.expected) {
+        return `${JSON.stringify(member)} prints the atomic number ${nuclide.atomic}, and ${Object.keys(nuclide.atoms)[0]} is element ${nuclide.expected}`;
+      }
     }
     return null;
   }
@@ -421,5 +445,9 @@ export function chemCanon(text, form) {
     return equation.sides.map((side) => side.map(([species]) => `${species.coef}${species.canon}`).sort().join(' + ')).join(' -> ');
   }
   const readings = readSpecies(text);
-  return readings.length === 1 ? readings[0].canon : null;
+  if (readings.length !== 1) return null;
+  // A printed atomic number is part of what a key prints: `²³₁₁Na` and
+  // `²³Na` are one nuclide and two keys.
+  const [{ canon, atomic }] = readings;
+  return atomic === null ? canon : canon.replace(/^\^(\d+)/, `^$1_${atomic}`);
 }

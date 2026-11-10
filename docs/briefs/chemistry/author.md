@@ -166,7 +166,14 @@ goes wrong.
   stem a learner would misread — keep `\frac` and REPORT the item (line,
   the fraction, what is lost); the parent logs it for the ban's review.
 - **Multiple choice** only over a set the stem itself names, options in the
-  stem's order, the key the source's. Never an invented distractor.
+  stem's order, the key the source's. Never an invented distractor. Within
+  that, prefer it: a keyed answer that is a choice among things the stem
+  prints — its categories for each member of a list, yes or no for each
+  part an answer names ("Only (b)"), the reactants of a printed reaction
+  for the role asked — is a `multiplechoice`, not a `selfcheck` (playbook
+  "Exercises" table; "Multiple choice stays open"). If you believe a
+  source gate will not read the form, say so in your report; do not
+  retreat to a `selfcheck`.
 - **`selfcheck`** carries the source solution as the model answer, its
   first letter capitalized and a closing period added and nothing else
   reworded, and 2–6 lowercase `===CHECKS===` clauses in the model answer's
@@ -218,9 +225,15 @@ goes wrong.
   bare (`selenide`) with the two-word form in `accept` (`selenide ion`);
   a name the stem itself prints ("ferric nitrate" in "give the IUPAC name
   of ferric nitrate") is never an `accept` member; a nuclide symbol is
-  keyed in print with both numbers where the source prints both
-  (`²³₁₁Na`), and its stem ends "Type the mass number before the symbol,
-  as in 14C." unless 14C is the answer.
+  keyed in print with every number the source prints (`²³₁₁Na`; the
+  field then asks for both, and its stem ends "Type the mass number,
+  then the atomic number after an underscore, before the symbol:
+  ^14_6C." — with another nuclide where carbon-14 is the answer).
+- **A stem that asks about each part of another exercise** ("…for each
+  reaction in [Exercise 4.40]", "…each cell in the previous exercise"):
+  one item per answered part — the lead-in restated for one, then the
+  referenced exercise's part verbatim, data and all. The run facts list
+  these exercises and the exercise each one borrows from.
 - **A part answered with several named numbers** ("3 protons, 3
   electrons, 4 neutrons") is one fill-in per number, and each stem CLOSES
   with a sentence that names the one it asks for, in the answer's own

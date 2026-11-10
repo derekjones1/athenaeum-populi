@@ -1272,6 +1272,9 @@ export function pageItems(markdown) {
       // part only: the checkpoints repeat its words, and counting them twice
       // would distort phraseCoverage against the source solution.
       model: normalizeWhitespace(sc.inner.split(/^[ \t]*===CHECKS===[ \t]*$/m)[0]),
+      // The images the model answer shows, by file stem: a drawing the
+      // source answers with is confirmed by the page showing that image.
+      figures: [...sc.inner.matchAll(/\{\{<\s*mediafigure\b[^>]*?\bsrc="([^"]*)"/g)].map((match) => match[1].split('/').pop()),
     });
   }
   return items;
@@ -1986,7 +1989,28 @@ export function judgeKeyedUnit(item, units) {
     return printed ? { status: 'confirmed', exercise } : differs;
   }
   if (item.type === 'multiplechoice') {
-    const answer = ` ${foldedPlain(unit.answer)} `;
+    // Two answers that hold several choices at once, each narrowed to the
+    // one THIS item asks for before the options are read against it:
+    //   "Ionic: KCl, MgCl₂; Covalent: NCl₃, ICl, …" — a list sorted into the
+    //   options; the item's is the option whose list holds the one member
+    //   its question prints (2.6, one multiple choice per compound);
+    //   "Oxidized: Sn²⁺; reduced: H₂O₂; oxidizing agent: H₂O₂; …" — one value
+    //   per role; the item's is the role its closing sentence names (17.1).
+    const segments = unit.answer.split(';').map((segment) => /^\s*([^:]+):\s*(.+)$/s.exec(segment)).filter(Boolean)
+      .map((match) => ({ head: foldedPlain(match[1]), body: match[2].trim() }));
+    let said = unit.answer;
+    if (segments.length >= 2) {
+      const asked = ` ${foldedPlain(item.question)} `;
+      const sorted = segments.filter((segment) => item.options.some((option) => foldedPlain(option) === segment.head));
+      const holding = sorted.filter((segment) => segment.body.split(/,|\sand\s/).map((member) => foldedPlain(member)).filter(Boolean)
+        .some((member) => asked.includes(` ${member} `)));
+      const closing = ` ${foldedPlain(item.question.split(/(?<=[.?!:])\s+/).pop())} `;
+      const roles = segments.filter((segment) => segment.head.split(/\s*=\s*|\s{2,}/).concat(segment.head)
+        .some((role) => role && closing.includes(` ${role} `)));
+      if (sorted.length === segments.length && holding.length === 1) said = holding[0].head;
+      else if (!sorted.length && roles.length === 1) said = roles[0].body;
+    }
+    const answer = ` ${foldedPlain(said)} `;
     // An option is named when the answer prints it — as a run of words, or,
     // for an option of several words, each of its words ("symbolic,
     // microscopic" names the option "symbolic, microscopic" and, word for
@@ -2062,6 +2086,17 @@ export function judgeKeyedUnit(item, units) {
       };
     }
     return { status: 'confirmed', exercise };
+  }
+  // An answer that is ONLY a drawing (a Lewis structure, an orbital
+  // diagram): there are no words to hold the model answer to, so it is held
+  // to the picture — the selfcheck shows the source's own image
+  // (docs/subjects/chemistry.md "Figures"). Words beside an image are
+  // judged as words; an image table is transcribed, not shown.
+  if (!unit.answer.trim() && (unit.answerMedia || []).length) {
+    const missing = unit.answerMedia.filter((file) => !(item.figures || []).includes(file));
+    return missing.length
+      ? { status: 'key-differs', exercise, detail: `source ${unit.id} answers with a drawing (${missing.join(', ')}) that the selfcheck's model answer does not show` }
+      : { status: 'confirmed', exercise };
   }
   const judged = judgeSelfcheck(item, {
     checkQuestions: null,

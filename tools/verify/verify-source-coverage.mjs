@@ -118,7 +118,7 @@ import { integerFlag, parseCliArgs } from '../lib/cli.mjs';
 import { shortcodes } from '../lib/content.mjs';
 import { mediaBindings } from '../lib/exercise-context.mjs';
 import {
-  KEYED_EXERCISE_CLASS, KEYED_ONLY_BOOKS, checkYourLearning, markedStemText, plain, readingRank, sequentialParts, unitScore,
+  KEYED_EXERCISE_CLASS, KEYED_ONLY_BOOKS, checkYourLearning, plain, readingRank, sequentialParts, splittingStem, unitScore,
 } from '../lib/keyed-units.mjs';
 import { MATCH_FLOOR } from './verify-source-keys.mjs';
 
@@ -494,7 +494,7 @@ export function sourceExercises(xml) {
         keyed: Boolean(firstElement(node, 'solution')),
         // A keyed-only book's stem with its images marked, so a lettered
         // part that is only an image is still a part (keyed-units.mjs).
-        ...(PART_CLASSES.has(here) ? { marked: markedStemText(problem) } : {}),
+        ...(PART_CLASSES.has(here) ? { marked: splittingStem(node, document) } : {}),
       };
       if (here === 'matching') {
         // A Matching table's left cells are blanks ("___chitin") and its

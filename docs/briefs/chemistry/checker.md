@@ -100,8 +100,8 @@ stem shows it.
   general it helps nobody where a real pointer exists.
 - **A `textin` with `answerForm="formula"` or `"equation"`:** read the key
   against the CNXML character by character (a capital I for a small l, a
-  digit 1 for an l, a charge's sign, a nuclide's two numbers — the gates do
-  not read the atomic number), count an equation's atoms and charge
+  digit 1 for an l, a charge's sign, a nuclide's two numbers), count an
+  equation's atoms and charge
   yourself, and grade the stem's own formula or equation and the plausible
   wrong answers (the unbalanced equation, the anhydrous salt, the ion
   without its charge, the symbol without its mass number) through
@@ -118,6 +118,13 @@ stem shows it.
   neutrons.") — the source-keys gate reads that sentence to tell the
   numbers apart, and a stem that names two, or none, leaves a swapped pair
   to you alone.
+- **A `selfcheck` whose answer is a drawing**: the gate confirms that the
+  model answer shows the source's image; the sentences under it are the
+  author's reading of the drawing — count every atom, bond, and lone pair
+  they state against the image.
+- **An item restated from another exercise's part** (the stem's own
+  exercise says "each reaction in [another exercise]"): read the part
+  against the referenced exercise in the CNXML, every number and formula.
 - **On a page that teaches a rule**, apply the rule to every reason its
   worked examples state.
 

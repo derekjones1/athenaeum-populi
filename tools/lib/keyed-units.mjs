@@ -92,24 +92,35 @@ const marksIn = (text) => [...text.matchAll(MEDIA_MARK)].map((match) => match[1]
  * a part with an empty text and one image — and the last of them, which has
  * nothing but its image after the label, is still found.
  */
-export function sequentialParts(stem) {
+export function sequentialParts(stem, { answer = false } = {}) {
   const marks = [];
   let from = 0;
+  // A solution is typed more loosely than a stem: a label may follow a
+  // semicolon with no space ("…is O₂;(d) F₂…", 8.4) and be followed by a
+  // comma ("(c), [H₂] increases", 13.3). Read strictly, both exercises
+  // lost every part after the slip and looked half-keyed.
+  const before = answer ? '(?:^|[\\s;,])' : '(?:^|\\s)';
+  // …and the last label may close the text, its answer being only an image.
+  const after = answer ? '(?:[,:]?\\s+|$|(?=\\^\\{))' : '(?:\\s+|(?=\\^\\{))';
   for (let code = 97; code <= 122; code += 1) {
     const label = String.fromCharCode(code);
-    const found = new RegExp(`(?:^|\\s)\\(${label}\\)(?:\\s+|(?=\\^\\{))`).exec(stem.slice(from));
+    const found = new RegExp(`${before}\\(${label}\\)${after}`).exec(stem.slice(from));
     if (!found) break;
     marks.push({ label, start: from + found.index, end: from + found.index + found[0].length });
     from = from + found.index + found[0].length;
   }
   if (marks.length < 2) return null;
-  return {
-    lead: withoutMarks(stem.slice(0, marks[0].start)),
-    parts: marks.map((mark, index) => {
-      const raw = stem.slice(mark.end, index + 1 < marks.length ? marks[index + 1].start : stem.length);
-      return { label: mark.label, text: withoutMarks(raw), media: marksIn(raw) };
-    }),
-  };
+  const parts = marks.map((mark, index) => {
+    const raw = stem.slice(mark.end, index + 1 < marks.length ? marks[index + 1].start : stem.length);
+    return { label: mark.label, text: withoutMarks(raw), media: marksIn(raw) };
+  });
+  // An answer that only LISTS labels — "(a), (b), (c), (d), and (e)", the
+  // nuclei that lie in the band of stability (21.1) — answers the exercise
+  // whole: its labels name parts, they do not head answers.
+  // (Labels with nothing between them and no "and" or comma are parts whose
+  // answers are images — "(a) (b) (c)" — and stay parts.)
+  if (answer && /,|\band\b/.test(stem) && parts.every((part) => !part.media.length && !part.text.replace(/\band\b|[.,;]/g, '').trim())) return null;
+  return { lead: withoutMarks(stem.slice(0, marks[0].start)), parts };
 }
 
 /**
@@ -240,9 +251,73 @@ export function checkYourLearning(document) {
     found.push({
       id: `${example.attributes.id || ''}#check`, cls: 'check-your-learning', stem, marked: read({ marked: true }),
       keyed: answerAt !== -1, answer: answerAt === -1 ? '' : answerText(children[answerAt]),
+      answerMarked: answerAt === -1 ? '' : markedStemText(children[answerAt]),
     });
   }
   return found;
+}
+
+/**
+ * The parts an answer NAMES instead of answering one by one — "Only (b)",
+ * "(a), (b), (c), (d), and (e)" — as their labels, or null. Such an answer
+ * says yes to the parts it names and no to the rest (13.3: which additions
+ * raise the ionization; 21.1: which nuclei lie in the band of stability).
+ */
+export function namedParts(answer) {
+  const text = String(answer ?? '').trim().replace(/[.;]$/, '');
+  if (!/^(?:only\s+)?\([a-z]\)(?:\s*,?\s*(?:and\s+)?\([a-z]\))*$/i.test(text)) return null;
+  return [...text.matchAll(/\(([a-z])\)/gi)].map((match) => match[1].toLowerCase());
+}
+
+/**
+ * An answer lettered by ROLE first and part second — "Oxidized: (a) Sn²⁺;
+ * (b) Hg; (c) Al; reduced: (a) H₂O₂; (b) PbO₂; …" (17.1) — regrouped by
+ * part: a Map from label to "Oxidized: Sn²⁺; reduced: H₂O₂; …", or null
+ * when the answer is not that shape. Read in sequence, such an answer gives
+ * part (c) everything after its first "(c)".
+ */
+export function roleFirstParts(answer) {
+  const text = String(answer ?? '');
+  const heads = [...text.matchAll(/(?:^|[;.]\s*)([A-Za-z][A-Za-z ]*(?:=\s*[A-Za-z ]+)?):\s*(?=\(a\)\s)/g)];
+  if (heads.length < 2) return null;
+  const byPart = new Map();
+  heads.forEach((head, index) => {
+    const body = text.slice(head.index + head[0].length, index + 1 < heads.length ? heads[index + 1].index : text.length);
+    for (const part of sequentialParts(body, { answer: true })?.parts ?? []) {
+      const value = part.text.replace(/[;,.]\s*$/, '').trim();
+      byPart.set(part.label, [...(byPart.get(part.label) || []), `${head[1].trim()}: ${value}`]);
+    }
+  });
+  return byPart.size ? new Map([...byPart].map(([label, roles]) => [label, roles.join('; ')])) : null;
+}
+
+/**
+ * The text a keyed exercise's stem is SPLIT from. Usually its own stem, with
+ * its images marked. But nine keyed exercises of Chemistry 2e ask about
+ * "each reaction in [another exercise]" or "each cell in the previous
+ * exercise" and answer part by part — "(a) 0.435 mol Na…; (b) …" — for parts
+ * their own stem does not print: the parts are the OTHER exercise's (4.3,
+ * 13.2, 17.1, 17.2, 17.7, 19.2), which is an even-numbered one the page
+ * omits. For those the lettered parts are borrowed: this exercise's stem is
+ * the lead-in, and each part is the referenced exercise's part, which is
+ * what the page's item must restate for the question to be answerable.
+ *
+ * The reference is a `<link target-id>` to an exercise of the module, or the
+ * words "the previous exercise" / "the previous problem".
+ */
+export function splittingStem(exercise, document) {
+  const problem = firstElement(exercise, 'problem');
+  const own = markedStemText(problem);
+  const solution = firstElement(exercise, 'solution');
+  if (sequentialParts(own) || !solution || !sequentialParts(answerText(solution), { answer: true })) return own;
+  const all = descendants(document, (node) => localName(node) === 'exercise');
+  const linked = descendants(problem, (node) => localName(node) === 'link' && node.attributes['target-id'])
+    .map((link) => all.find((candidate) => candidate.attributes.id === link.attributes['target-id'])).find(Boolean);
+  const previous = /\bprevious (?:exercise|problem)\b/i.test(own) ? all[all.indexOf(exercise) - 1] : null;
+  const referenced = linked || previous;
+  const theirs = referenced && firstElement(referenced, 'problem') ? sequentialParts(markedStemText(firstElement(referenced, 'problem'))) : null;
+  if (!theirs) return own;
+  return `${own} ${theirs.parts.map((part) => `(${part.label}) ${part.text} ${part.media.map((file) => `⟦media:${file}⟧`).join(' ')}`).join(' ')}`;
 }
 
 /**
@@ -257,6 +332,8 @@ export function checkYourLearning(document) {
  * exercise the source prints no solution for. `media` lists the images a
  * lettered part's stem holds, by file stem; a part that is only an image has
  * an empty `partText` and is told from its siblings by it (`unitScore`).
+ * `answerMedia` lists the images its answer holds. A stem that takes its
+ * parts from another exercise is split by them (`splittingStem`).
  */
 export function keyedUnits(xml) {
   const document = typeof xml === 'string' ? parseXml(xml) : xml;
@@ -268,20 +345,28 @@ export function keyedUnits(xml) {
       if (!problem) continue;
       const solution = firstElement(exercise, 'solution');
       whole.push({
-        id: exercise.attributes.id || '', cls: KEYED_EXERCISE_CLASS, stem: stemText(problem), marked: markedStemText(problem),
+        id: exercise.attributes.id || '', cls: KEYED_EXERCISE_CLASS, stem: stemText(problem), marked: splittingStem(exercise, document),
         keyed: Boolean(solution), answer: solution ? answerText(solution) : '',
+        answerMarked: solution ? markedStemText(solution) : '',
       });
     }
   }
   whole.push(...checkYourLearning(document));
   const units = [];
-  for (const { marked, ...unit } of whole) {
+  for (const { marked, answerMarked, ...unit } of whole) {
     const lettered = sequentialParts(marked ?? unit.stem);
     if (!lettered) {
-      units.push({ ...unit, group: unit.id, label: null, lead: '', partText: null });
+      units.push({ ...unit, group: unit.id, label: null, lead: '', partText: null, answerMedia: marksIn(answerMarked ?? '') });
       continue;
     }
-    const answers = sequentialParts(unit.answer);
+    const byRole = roleFirstParts(unit.answer);
+    const named = byRole ? null : namedParts(unit.answer);
+    const answers = byRole
+      ? { parts: [...byRole].map(([label, text]) => ({ label, text })) }
+      // "Only (b)" answers every part: yes to the parts it names, no to the others.
+      : named ? { parts: lettered.parts.map(({ label }) => ({ label, text: `${named.includes(label) ? 'yes' : 'no'} — the source answers ${JSON.stringify(unit.answer.trim())}` })) }
+        : sequentialParts(unit.answer, { answer: true });
+    const drawn = sequentialParts(answerMarked ?? '', { answer: true });
     for (const part of lettered.parts) {
       const segment = answers?.parts.find((candidate) => candidate.label === part.label);
       units.push({
@@ -300,6 +385,9 @@ export function keyedUnits(xml) {
         // one (8.4 answers (a)–(c) of five parts): a part the source leaves
         // unkeyed inside a keyed exercise. `chemistry-shapes` flags it.
         answered: answers ? Boolean(segment) : true,
+        // The images this part's answer holds, by file stem: a drawing
+        // answer is confirmed by the page showing THAT image.
+        answerMedia: drawn ? (drawn.parts.find((candidate) => candidate.label === part.label)?.media ?? []) : marksIn(answerMarked ?? ''),
       });
     }
   }

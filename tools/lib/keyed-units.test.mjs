@@ -350,3 +350,93 @@ test('of two units a question could be, it is the one whose whole stem it reads 
   is(`${nickel} NiCO₃`, 'r1(b)');
   is(`${nickel} KClO₄`, 'r1(a)');
 });
+
+test('a solution\'s labels are read as loosely as solutions are typed', () => {
+  // 8.4 and 13.3: a label after a semicolon with no space, a label followed
+  // by a comma. Read strictly, each exercise lost its later parts and looked
+  // half-keyed.
+  const loose = keyedUnits(cnxml(exercises(
+    exercise('l1', ['Determine the bond order of each member of the following groups:', '(a) H<sub>2</sub>', '(b) O<sub>2</sub>', '(c) Li<sub>2</sub>', '(d) F<sub>2</sub>'],
+      '(a) bond order = 1; (b) bond order = 2 (c) bond order = 1;(d) bond order = 1'),
+    exercise('l2', ['Methanol can be prepared from carbon monoxide and hydrogen.', '(a) What happens if more hydrogen is added?', '(b) What happens if carbon monoxide is removed?', '(c) What happens if more catalyst is added?'],
+      '(a) [CO] decreases; (b), [CO] decreases; (c), no changes.'),
+  )));
+  assert.deepEqual(loose.map((part) => [part.id, part.answered]), [['l1(a)', true], ['l1(b)', true], ['l1(c)', true], ['l1(d)', true], ['l2(a)', true], ['l2(b)', true], ['l2(c)', true]]);
+  assert.equal(loose[3].answer, 'bond order = 1');
+  assert.equal(loose[6].answer, 'no changes.');
+  // An answer that only lists labels answers the exercise whole (21.1).
+  assert.equal(sequentialParts('(a), (b), (c), (d), and (e)', { answer: true }), null);
+  // A stem is still read strictly: a state symbol after a comma is no label.
+  assert.equal(sequentialParts('Water, (a) liquid, boils;(b) and freezes'), null);
+});
+
+test('a stem that asks about another exercise\'s parts is split by them', () => {
+  // 4.3, 13.2, 17.2, 17.7, 19.2: "…each reaction in [the even exercise]",
+  // answered "(a) …; (b) …". The page omits the even exercise, so each item
+  // restates its part — and that restated part is what the gates match.
+  const linked = keyedUnits(cnxml(exercises(
+    exercise('r0', ['Write the balanced equation, then outline the steps necessary to determine the information requested in each of the following:', '(a) The number of moles and the mass of chlorine required to react with 10.0 g of sodium metal', '(b) The number of moles and the mass of oxygen formed by the decomposition of 1.252 g of mercury(II) oxide'], null),
+    exercise('r1', ['Determine the number of moles and the mass requested for each reaction in <link target-id="r0"/>.'], '(a) 0.435 mol Na, 0.217 mol Cl<sub>2</sub>, 15.4 g Cl<sub>2</sub>; (b) 0.005780 mol HgO'),
+    exercise('c0', ['Write the half-reactions for each cell:', '(a) a magnesium and copper cell', '(b) a nickel and silver cell'], null),
+    exercise('c1', ['Write a balanced equation for the cell reaction of each cell in the previous exercise.'], '(a) Mg + Cu<sup>2+</sup> ⟶ Mg<sup>2+</sup> + Cu; (b) 2Ag<sup>+</sup> + Ni ⟶ Ni<sup>2+</sup> + 2Ag'),
+    // No reference, or an unkeyed asker: nothing is borrowed.
+    exercise('c2', ['Write a balanced equation for the cell reaction of each cell in the previous exercise.'], null),
+  )));
+  assert.deepEqual(linked.filter((part) => part.keyed).map((part) => part.id), ['r1(a)', 'r1(b)', 'c1(a)', 'c1(b)']);
+  const moles = linked.find((part) => part.id === 'r1(b)');
+  assert.equal(moles.lead, 'Determine the number of moles and the mass requested for each reaction in .');
+  assert.match(moles.partText, /^The number of moles and the mass of oxygen formed/);
+  assert.equal(moles.answer, '0.005780 mol HgO');
+  assert.equal(linked.find((part) => part.id === 'c2').partText, null);
+  const item = 'Determine the number of moles and the mass requested for the following reaction: The number of moles and the mass of oxygen formed by the decomposition of 1.252 g of mercury(II) oxide. Enter the number of moles of mercury(II) oxide.';
+  assert.equal(unitFor(item, linked.filter((part) => part.keyed)).id, 'r1(b)');
+  assert.equal(judgeKeyedUnit({ type: 'fillin', question: item, answer: '0.005780', form: 'sig-figs:4 last-digit:1' }, linked).status, 'confirmed');
+});
+
+test('an answer that is only a drawing is confirmed by the selfcheck that shows the source\'s image', () => {
+  const picture = (name) => `<media alt="a Lewis structure"><image mime-type="image/jpeg" src="../../media/${name}.jpg"/></media>`;
+  const drawn = keyedUnits(cnxml(exercises(
+    `<exercise id="w1"><problem><para>Write Lewis structures for the following:</para><para>(a) O<sub>2</sub></para><para>(b) AsF<sub>3</sub></para></problem>`
+    + `<solution><para>(a)<newline/>${picture('Q7a')}<newline/> In this case, the Lewis structure is inadequate.<newline/> (b)<newline/>${picture('Q7b')}</para></solution></exercise>`,
+  )));
+  assert.deepEqual(drawn.map((part) => [part.id, part.answer, part.answerMedia]), [['w1(a)', 'In this case, the Lewis structure is inadequate.', ['Q7a']], ['w1(b)', '', ['Q7b']]]);
+  const selfcheck = (image) => pageItems(`{{< selfcheck question="Write the Lewis structure for the following: AsF₃" hint="Count the valence electrons first." >}}\n`
+    + `{{< mediafigure src="chemistry/${image}" kind="diagram" alt="A Lewis structure." >}}\n{{< /mediafigure >}}\n\nArsenic is the central atom.\n===CHECKS===\narsenic is the central atom\n{{< /selfcheck >}}\n`)[0];
+  assert.equal(judgeKeyedUnit(selfcheck('Q7b'), drawn).status, 'confirmed');
+  const wrong = judgeKeyedUnit(selfcheck('Q7a'), drawn);
+  assert.equal(wrong.status, 'key-differs', 'the neighbouring part\'s drawing');
+  assert.match(wrong.detail, /answers with a drawing \(Q7b\)/);
+});
+
+test('answers that hold several choices at once are read for the one a multiple choice asks', () => {
+  const choices = keyedUnits(cnxml(exercises(
+    // A list sorted into the stem's categories by one sentence (2.6).
+    exercise('k1', ['Using the periodic table, predict whether the following chlorides are ionic or covalent: KCl, NCl<sub>3</sub>, ICl, MgCl<sub>2</sub>, PCl<sub>5</sub>, and CCl<sub>4</sub>.'],
+      'Ionic: KCl, MgCl<sub>2</sub>; Covalent: NCl<sub>3</sub>, ICl, PCl<sub>5</sub>, CCl<sub>4</sub>'),
+    // An answer that names parts (13.3, 21.1).
+    exercise('y1', ['Will any of the following increase the percent of ammonia that is converted to the ammonium ion in water?', '(a) Addition of NaOH', '(b) Addition of HCl', '(c) Addition of NH<sub>4</sub>Cl'], 'Only (b)'),
+    exercise('y2', ['Which of the following nuclei lie within the band of stability?', '(a) chlorine-37', '(b) calcium-40', '(c) carbon-14'], '(a) and (b)'),
+    // An answer lettered by role first, under parts borrowed from the exercise before (17.1).
+    exercise('o0', ['Balance the equations below assuming they occur in an acidic solution.', '(a) H<sub>2</sub>O<sub>2</sub> + Sn<sup>2+</sup> ⟶ H<sub>2</sub>O + Sn<sup>4+</sup>', '(b) PbO<sub>2</sub> + Hg ⟶ Hg<sub>2</sub><sup>2+</sup> + Pb<sup>2+</sup>'], null),
+    exercise('o1', ['Identify the oxidant and reductant of each reaction of the previous exercise.'],
+      'Oxidized: (a) Sn<sup>2+</sup>; (b) Hg; reduced: (a) H<sub>2</sub>O<sub>2</sub>; (b) PbO<sub>2</sub>; oxidizing agent: (a) H<sub>2</sub>O<sub>2</sub>; (b) PbO<sub>2</sub>; reducing agent: (a) Sn<sup>2+</sup>; (b) Hg'),
+  )));
+  const judge = (question, answer, options) => judgeKeyedUnit({ type: 'multiplechoice', question, answer, options }, choices).status;
+  const chloride = 'Using the periodic table, predict whether the following chloride is ionic or covalent:';
+  assert.equal(judge(`${chloride} KCl.`, 'ionic', ['ionic', 'covalent']), 'confirmed');
+  assert.equal(judge(`${chloride} ICl.`, 'covalent', ['ionic', 'covalent']), 'confirmed');
+  assert.equal(judge(`${chloride} ICl.`, 'ionic', ['ionic', 'covalent']), 'key-differs');
+  assert.equal(judge(`${chloride} PCl₅.`, 'ionic', ['ionic', 'covalent']), 'key-differs');
+  const ammonia = 'Will the following increase the percent of ammonia that is converted to the ammonium ion in water?';
+  assert.equal(judge(`${ammonia} Addition of HCl`, 'yes', ['yes', 'no']), 'confirmed');
+  assert.equal(judge(`${ammonia} Addition of NaOH`, 'no', ['yes', 'no']), 'confirmed');
+  assert.equal(judge(`${ammonia} Addition of NaOH`, 'yes', ['yes', 'no']), 'key-differs');
+  const band = 'Does the following nucleus lie within the band of stability?';
+  assert.equal(judge(`${band} calcium-40`, 'yes', ['yes', 'no']), 'confirmed');
+  assert.equal(judge(`${band} carbon-14`, 'yes', ['yes', 'no']), 'key-differs');
+  const redox = 'Identify the oxidant and reductant of the following reaction:';
+  assert.equal(choices.find((part) => part.id === 'o1(b)').answer, 'Oxidized: Hg; reduced: PbO _2; oxidizing agent: PbO _2; reducing agent: Hg');
+  assert.equal(judge(`${redox} H₂O₂ + Sn²⁺ ⟶ H₂O + Sn⁴⁺. Which reactant is the oxidizing agent?`, 'H₂O₂', ['H₂O₂', 'Sn²⁺']), 'confirmed');
+  assert.equal(judge(`${redox} H₂O₂ + Sn²⁺ ⟶ H₂O + Sn⁴⁺. Which reactant is the oxidizing agent?`, 'Sn²⁺', ['H₂O₂', 'Sn²⁺']), 'key-differs');
+  assert.equal(judge(`${redox} PbO₂ + Hg ⟶ Hg₂²⁺ + Pb²⁺. Which reactant is the reducing agent?`, 'Hg', ['PbO₂', 'Hg']), 'confirmed');
+});
