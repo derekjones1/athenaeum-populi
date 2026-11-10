@@ -43,8 +43,8 @@ pages are still being written, so parity is only checked for what exists,
 and `build-map`/`verify-map` print the partial count on the book's own line
 (`k/N chapters, k/N sections mapped`), never folded silently into a
 "0 errors" run. Seven books are `complete` (Anatomy and Physiology 2e was the
-last, on November 2, 2026); Chemistry 2e is `scaffolded`, pinned November 9,
-2026.
+last, on November 2, 2026); Chemistry 2e is `in-progress`, pinned November 9,
+2026, with chapter 1 authored.
 
 Every book's lock entry also carries a `contentPath` (for example
 `content/math/precalculus`, `content/life-health-sciences/biology`): the

@@ -116,7 +116,12 @@ import {
 } from '../lib/openstax-source.mjs';
 import { integerFlag, parseCliArgs } from '../lib/cli.mjs';
 import { shortcodes } from '../lib/content.mjs';
+import {
+  KEYED_EXERCISE_CLASS, KEYED_ONLY_BOOKS, checkYourLearning, plain, sequentialParts, unitScore,
+} from '../lib/keyed-units.mjs';
 import { MATCH_FLOOR } from './verify-source-keys.mjs';
+
+export { KEYED_ONLY_BOOKS, plain, sequentialParts };
 
 /** The shortest verbatim run `runCoverage` credits. */
 export const RUN = 4;
@@ -146,12 +151,33 @@ export const OPTION_CONFLICT_FLOOR = 0.5;
  * for its whole stem (the context sentences dropped or moved). */
 export const ASK_FLOOR = 0.8;
 
+/** How surely an item must transcribe an UNKEYED exercise before a
+ * keyed-only book is told it rendered one: an odd exercise and the even one
+ * after it are often the same sentence with other numbers, so only a
+ * near-verbatim stem, on an item no keyed exercise claimed, counts. */
+export const UNKEYED_RENDERED_FLOOR = 0.9;
+
 /** Source section classes that hold end-of-section exercises. */
 export const EXERCISE_CLASSES = Object.freeze([
   'multiple-choice', 'fill-in-the-blank', 'true-false', 'matching',
   'short-answer', 'critical-thinking', 'free-response', 'visual-exercise',
   'interactive-exercise',
+  // Chemistry 2e's one end-of-section class (November 9, 2026).
+  'exercises',
 ]);
+
+/** The shelves whose books this gate reads: the prose books, and Chemistry,
+ * whose graded items are numbers but whose rule is the same — an exercise
+ * the book says it renders is on the page. */
+export const COVERAGE_SHELVES = Object.freeze(['content/life-health-sciences/', 'content/physical-sciences/']);
+
+// Books that render only the exercises the source KEYS are read through
+// tools/lib/keyed-units.mjs (`KEYED_ONLY_BOOKS`; docs/subjects/chemistry.md
+// "Exercises"): a keyed exercise, each lettered part of one, and each Check
+// Your Learning must be rendered; an UNKEYED exercise must not be — it
+// reports `omitted` when no item transcribes it and fails as
+// `unkeyed-rendered` when one does.
+const PART_CLASSES = new Set([KEYED_EXERCISE_CLASS, 'check-your-learning']);
 
 /**
  * Source exercises a page lawfully carries WITHOUT an item of its own, each
@@ -462,7 +488,10 @@ export function sourceExercises(xml) {
       if (!problem) return;
       const list = descendants(problem, (child) => localName(child) === 'list')[0];
       const options = list ? elementChildren(list, 'item').map((item) => spacedText(item)) : [];
-      const exercise = { id: node.attributes.id || '', cls: here, stem: stemOf(problem), options, pools: null };
+      const exercise = {
+        id: node.attributes.id || '', cls: here, stem: stemOf(problem), options, pools: null,
+        keyed: Boolean(firstElement(node, 'solution')),
+      };
       if (here === 'matching') {
         // A Matching table's left cells are blanks ("___chitin") and its
         // right cells lettered entries ("A. energy storage polymer…"); the
@@ -486,6 +515,10 @@ export function sourceExercises(xml) {
     for (const child of node.children || []) walk(child, here);
   };
   walk(document, null);
+  // A keyed-only book's Check Your Learning questions (keyed-units.mjs).
+  for (const check of checkYourLearning(document)) {
+    found.push({ id: check.id, cls: check.cls, stem: check.stem, options: [], pools: null, keyed: check.keyed });
+  }
   const checkQuestions = descendants(document, (node) => localName(node) === 'note'
     && /check-your-understanding/.test(node.attributes.class || ''))
     .flatMap((note) => descendants(note, (node) => localName(node) === 'item'))
@@ -496,24 +529,8 @@ export function sourceExercises(xml) {
 
 /* ---- page side ------------------------------------------------------------ */
 
-/** Text with the markup the source never prints removed and the spellings
- * the two sides disagree on folded, then `normalizeText`ed:
- *   - inline HTML tags and TeX control words dropped, markdown link targets
- *     dropped;
- *   - a RUN of Unicode sub/superscript digits read as one number set off by
- *     spaces, the way the source's `<sub>12</sub>` reads once its tags are
- *     spaced: the page's `C₆H₁₂O₆` and the source's `C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>`
- *     both become "c 6 h 12 o 6" (normalizeText alone splits `₁₂` into
- *     "1 2" and glues the next letter on: "c 6h 1 2o 6").
- * Used on both sides, so the source's own stems fold the same way. */
-const SUBSCRIPTS = /[\u2080-\u2089]+/g;
-const SUPERSCRIPTS = /[\u2070\u00B9\u00B2\u00B3\u2074-\u2079]+/g;
-export const plain = (value) => normalizeText(String(value ?? '')
-  .replace(/<[^>]+>/g, ' ')
-  .replace(/\\[a-zA-Z]+/g, ' ')
-  .replace(/\]\([^)]*\)/g, ' ')
-  .replace(SUBSCRIPTS, (run) => ` ${run.normalize('NFKC')} `)
-  .replace(SUPERSCRIPTS, (run) => ` ${run.normalize('NFKC')} `));
+// `plain` — the fold both sides are compared under — is keyed-units.mjs's,
+// re-exported above.
 
 /** The footer: the `<small>This section is adapted…` paragraph (the page's
  * attribution and `Changes:` clause). Empty when the page has none. */
@@ -640,6 +657,14 @@ export function scoreItem(unit, item) {
     const score = phraseScore(unit.poolEntry, item.question);
     return { score, how: 'matching-row' };
   }
+  if (unit.partText !== undefined) {
+    // A lettered part of a keyed-only book's exercise: the item's question
+    // must print the part itself beside a lead-in that reads like the
+    // exercise's (keyed-units.mjs `unitScore`). Sibling parts share every
+    // word but their own, so nothing weaker tells them apart.
+    const { score, words } = unitScore(unit, item.question);
+    return score > 0 ? { score, how: score === 1 ? 'part' : 'part-restated', tie: words } : { score: 0, how: null, tie: 0 };
+  }
   const stem = plain(unit.stem);
   const run = transcribed(unit.stem, item.text);
   const similar = item.question ? tokenSimilarity(unit.stem, item.question) : 0;
@@ -697,6 +722,18 @@ function unitsOf(exercise, orientation = 0) {
       ...exercise, id: `${exercise.id}#${index + 1}`, stem: entry, poolEntry: entry, otherPool: other, group: exercise.id,
     }));
   }
+  if (PART_CLASSES.has(exercise.cls)) {
+    const lettered = sequentialParts(exercise.stem);
+    if (!lettered) return [{ ...exercise, group: exercise.id }];
+    return lettered.parts.map((part) => ({
+      ...exercise,
+      id: `${exercise.id}(${part.label})`,
+      stem: `${lettered.lead} ${part.text}`.trim(),
+      lead: lettered.lead,
+      partText: part.text,
+      group: exercise.id,
+    }));
+  }
   const parts = stemParts(exercise.stem);
   if (parts) {
     return parts.map((part) => ({ ...exercise, id: `${exercise.id}(${part.label})`, stem: part.text, group: exercise.id }));
@@ -720,7 +757,7 @@ function unitsOf(exercise, orientation = 0) {
  * callout or its selfcheck with the note's own question, so it is judged
  * outside the assignment.
  */
-export function coverage(markdown, source, { listed = [] } = {}) {
+export function coverage(markdown, source, { listed = [], keyedOnly = false } = {}) {
   const { items, callouts } = pageTexts(markdown);
   const units = [];
   for (const exercise of source.exercises) {
@@ -732,8 +769,11 @@ export function coverage(markdown, source, { listed = [] } = {}) {
     units.push(...unitsOf(exercise, rendered(1) > rendered(0) ? 1 : 0));
   }
   const candidates = [];
+  // In a keyed-only book an unkeyed exercise is not a candidate for any item:
+  // it is judged afterwards, against the items no keyed exercise claimed.
+  const omittable = (unit) => keyedOnly && unit.keyed === false;
   units.forEach((unit, unitIndex) => {
-    if (unit.cls === 'interactive-exercise') return;
+    if (unit.cls === 'interactive-exercise' || omittable(unit)) return;
     items.forEach((item, itemIndex) => {
       const scored = scoreItem(unit, item);
       if (scored.score >= PASS_FLOOR) candidates.push({ unitIndex, itemIndex, ...scored });
@@ -742,15 +782,37 @@ export function coverage(markdown, source, { listed = [] } = {}) {
   candidates.sort((a, b) => b.score - a.score || (b.tie || 0) - (a.tie || 0) || a.unitIndex - b.unitIndex || a.itemIndex - b.itemIndex);
   const unitTaken = new Map();
   const itemOwner = new Map();
+  // A lettered part of a keyed-only book's exercise owns its item outright
+  // (one component per part), except a `selfcheck`, which may carry several
+  // parts of one exercise whole as the life-sciences books' do.
+  const partOwned = new Set();
   for (const candidate of candidates) {
     if (unitTaken.has(candidate.unitIndex)) continue;
     const owner = itemOwner.get(candidate.itemIndex);
     if (owner !== undefined && owner !== units[candidate.unitIndex].group) continue;
+    const exclusive = (candidate.how === 'part' || candidate.how === 'part-restated')
+      && items[candidate.itemIndex].type !== 'selfcheck';
+    if (exclusive && partOwned.has(candidate.itemIndex)) continue;
     unitTaken.set(candidate.unitIndex, candidate);
     itemOwner.set(candidate.itemIndex, units[candidate.unitIndex].group);
+    if (exclusive) partOwned.add(candidate.itemIndex);
   }
   return units.map((unit, unitIndex) => {
     const verdict = { id: unit.id, group: unit.group, cls: unit.cls, stem: unit.stem };
+    if (omittable(unit)) {
+      // Read on the WHOLE stem, never on its ask sentence alone: an odd
+      // exercise and the even one after it often close on the same question
+      // ("How many significant figures can you justify…?") over different
+      // data, and a keyed exercise split into two items leaves one of them
+      // unowned — which is not the unkeyed twin rendered.
+      const wholeStem = (item) => (unit.partText !== undefined
+        ? scoreItem(unit, item).score
+        : runCoverage(plain(unit.stem), plain(item.text)));
+      const rendered = items.findIndex((item, itemIndex) => !itemOwner.has(itemIndex) && wholeStem(item) >= UNKEYED_RENDERED_FLOOR);
+      return rendered === -1
+        ? { ...verdict, status: 'omitted', how: 'unkeyed' }
+        : { ...verdict, status: 'unkeyed-rendered', how: 'item', line: items[rendered].line };
+    }
     if (unit.cls === 'interactive-exercise') {
       const graded = items.find((item) => transcribed(unit.stem, item.text) >= PASS_FLOOR
         || tokenSimilarity(unit.stem, item.question) >= MATCH_FLOOR);
@@ -780,12 +842,12 @@ export function coverage(markdown, source, { listed = [] } = {}) {
 
 /* ---- corpus walk ---------------------------------------------------------- */
 
-export function checkCoverage(repositoryRoot, { contentRoot = 'content/life-health-sciences' } = {}) {
+export function checkCoverage(repositoryRoot, { contentRoot = 'content' } = {}) {
   const lock = loadSourceLock(repositoryRoot);
   const map = JSON.parse(readFileSync(path.join(repositoryRoot, 'data/openstax/source-map.json'), 'utf8'));
   const prefix = `${contentRoot.replace(/\/+$/, '')}/`;
   const sections = map.sections.filter((section) => section.localPath.startsWith(prefix)
-    && section.localPath.startsWith('content/life-health-sciences/'));
+    && COVERAGE_SHELVES.some((shelf) => section.localPath.startsWith(shelf)));
   const skipped = {};
   const results = [];
   const failures = [];
@@ -799,7 +861,7 @@ export function checkCoverage(repositoryRoot, { contentRoot = 'content/life-heal
     const markdown = readFileSync(pagePath, 'utf8');
     const source = sourceExercises(readFileSync(modulePath, 'utf8'));
     const listed = LISTED_EXERCISES.filter((entry) => entry.page === section.localPath);
-    const verdicts = coverage(markdown, source, { listed });
+    const verdicts = coverage(markdown, source, { listed, keyedOnly: KEYED_ONLY_BOOKS.includes(section.book) });
     for (const verdict of verdicts) {
       const row = { page: section.localPath, section: section.sourceSection, module: section.moduleId, ...verdict };
       results.push(row);
@@ -807,6 +869,12 @@ export function checkCoverage(repositoryRoot, { contentRoot = 'content/life-heal
         failures.push({
           page: section.localPath,
           detail: `${section.sourceSection} ${section.moduleId} ${verdict.id} (${verdict.cls}) has no rendered counterpart: ${JSON.stringify(verdict.stem.slice(0, 160))}`,
+        });
+      }
+      if (verdict.status === 'unkeyed-rendered') {
+        failures.push({
+          page: section.localPath,
+          detail: `${section.sourceSection} ${section.moduleId} ${verdict.id} is UNKEYED in the source, and line ${verdict.line} renders it: this book builds no item on an answer the source does not print — remove the item: ${JSON.stringify(verdict.stem.slice(0, 160))}`,
         });
       }
     }
@@ -830,8 +898,11 @@ export function checkCoverage(repositoryRoot, { contentRoot = 'content/life-heal
   }
   const tally = {};
   for (const row of results) tally[row.status] = (tally[row.status] || 0) + 1;
-  const covered = results.filter((row) => row.status !== 'missing').length;
-  return { results, failures, tally, covered, total: results.length, skipped };
+  // An exercise a keyed-only book omits is neither rendered nor owed: it is
+  // tallied, and left out of both sides of "covered of total".
+  const owed = results.filter((row) => row.status !== 'omitted');
+  const covered = owed.filter((row) => row.status !== 'missing' && row.status !== 'unkeyed-rendered').length;
+  return { results, failures, tally, covered, total: owed.length, skipped };
 }
 
 /** The per-page Interactive Link tally a footer must state: N in source, M
@@ -871,7 +942,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === new URL(import.meta.url
       boolFlags: ['verbose', 'json'],
       positional: { max: 1, name: 'content root' },
     });
-    contentRoot = cli.positional[0] ?? 'content/life-health-sciences';
+    contentRoot = cli.positional[0] ?? 'content';
     verbose = cli.bool('verbose');
     json = cli.bool('json');
     minCovered = integerFlag(cli, 'min-covered');

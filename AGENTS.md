@@ -22,12 +22,14 @@ book-specific rules (Interactive Link Questions, References), and that its
 pin postdates its PDF; a chapter is run from
 `docs/briefs/anatomy-physiology/run.md` (the parent's recipe) with the
 agent briefs beside it — versioned there, not re-derived per session.
-Chemistry 2e is `scaffolded` (21 flat chapters, 114 sections, pinned
-November 9, 2026; the first book under `content/physical-sciences/`): no
-section is authored, and `docs/subjects/chemistry.md` records the scan, the
-decisions made, the notation, measured-quantity grading, and figure rules
-its engine work landed (`\ce{…}` formulas in math, `sig-figs:<n>
-last-digit:<k>` fill-ins), and what its chapter 1 pilot still settles. Dated
+Chemistry 2e is `in-progress` (21 flat chapters, 114 sections, pinned
+November 9, 2026; the first book under `content/physical-sciences/`):
+chapter 1 is authored — the book's pilot — and `docs/subjects/chemistry.md`
+holds the scan, the page skeleton, the exercise rules (only source-keyed
+exercises reach the page), the notation, measured-quantity grading
+(`\ce{…}` formulas in math, `sig-figs:<n> last-digit:<k>` fill-ins), and
+the figure rules; a chapter is run from `docs/briefs/chemistry/run.md` with
+the agent briefs beside it. Dated
 narrative — retrospectives, per-chapter logs, closed programmes — lives in
 `docs/history/`, one file per playbook; the playbooks keep only what is
 operative. Closed programmes that no run reads any more — the re-review

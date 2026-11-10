@@ -84,7 +84,10 @@ test('every skip class is named and carries the unit it counts', () => {
 // moved or been rewritten. One entry named a file that does not exist.
 test('every sound-coincidence entry names one real fillin and one printed span', async (t) => {
   const questionsByFile = new Map();
-  for (const file of walkMarkdown('content/math')) {
+  // The whole corpus, not content/math: Chemistry's fill-ins are replayed
+  // too, and its first entry (a total mass that IS the printed reactant
+  // mass, by conservation of matter) was "a file that is not in the corpus".
+  for (const file of walkMarkdown('content')) {
     const rel = file.split('\\').join('/').replace(/^\.\//, '');
     const src = readFileSync(file, 'utf8');
     const fillins = [];

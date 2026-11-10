@@ -268,11 +268,11 @@ test('formatTriesCoverage reports n/a rather than 0/0 for a book with no note.tr
   assert.equal(formatTriesCoverage(3, 5), '3/5');
 });
 
-test('committed provenance maps all 778 local sections exactly once', () => {
+test('committed provenance maps all 784 local sections exactly once', () => {
   const result = verifyCommittedSourceMap(repositoryRoot);
   assert.deepEqual(result.errors, []);
-  assert.equal(result.expectedCount, 778);
-  assert.equal(result.actualCount, 778);
+  assert.equal(result.expectedCount, 784);
+  assert.equal(result.actualCount, 784);
   const counts = Object.groupBy(result.map.sections, (entry) => entry.book);
   assert.equal(counts.prealgebra.length, 60);
   assert.equal(counts['elementary-algebra'].length, 71);
@@ -281,6 +281,7 @@ test('committed provenance maps all 778 local sections exactly once', () => {
   assert.equal(counts.biology.length, 208);
   assert.equal(counts.microbiology.length, 127);
   assert.equal(counts['anatomy-physiology'].length, 169);
+  assert.equal(counts.chemistry.length, 6);
   const representative = result.map.sections.find((entry) => (
     entry.book === 'intermediate-algebra' && entry.sourceSection === '3.1'
   ));
@@ -294,6 +295,7 @@ test('committed provenance maps all 778 local sections exactly once', () => {
     // a single-book upstream repository: the bundle key is the book key
     microbiology: 'microbiology',
     'anatomy-physiology': 'anatomy-physiology',
+    chemistry: 'chemistry-bundle',
   };
   for (const entry of result.map.sections) {
     assert.equal(entry.bundle, bundleForBook[entry.book], `${entry.localPath} is attributed to its pinned bundle`);

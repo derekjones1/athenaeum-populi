@@ -3670,3 +3670,26 @@ test('a structure drawing can stand uncaptioned in the text and inside a selfche
   const unvendored = lintHugo(page.replace('chemistry/asf3', 'chemistry/never-vendored'), file, { mediaManifests: manifests }).errors;
   assert(unvendored.some((error) => /never-vendored/.test(error)), unvendored.join('\n'));
 });
+
+test('the lettered parts of one source question count as one question in a body run', () => {
+  const lint = (source) => lintHugo(source, 'content/physical-sciences/chemistry/01-essential-ideas/05-measurement-uncertainty.md').errors
+    .filter((error) => /consecutive interactive questions/.test(error));
+  const part = (stem, answer) => `{{< fillin question="${stem}" answer="${answer}" answerForm="sig-figs:2 last-digit:0" hint="Look at the digit to be dropped." >}}`;
+  const lead = 'Round the following to the indicated number of significant figures:';
+  const four = ['0.424 (to two significant figures)', '0.0038661 (to three significant figures)', '421.25 (to four significant figures)', '28,683.5 (to five significant figures)'];
+  const parts = (texts) => texts.map((text) => part(`${lead} ${text}`, '0.42')).join('\n\n');
+  const other = (n) => part(`What is the density of sample ${n}? Enter the density in g/mL.`, '1.0');
+  // Four parts under one lead-in, nothing between them: one question.
+  assert.deepEqual(lint(`Text.\n\n${parts(four)}\n\nMore text.\n`), []);
+  // …followed by two more questions of their own: still within the limit (1 + 2).
+  assert.deepEqual(lint(`Text.\n\n${parts(four)}\n\n${other(1)}\n\n${other(2)}\n`), []);
+  // Four separate questions in a row are still four.
+  assert.equal(lint(`Text.\n\n${[1, 2, 3, 4].map(other).join('\n\n')}\n`).length, 1);
+  // A different lead-in is a different question: one + one + two more = four.
+  const second = part('Express the following number in exponential notation: 704', '7.0');
+  assert.equal(lint(`Text.\n\n${parts(four.slice(0, 2))}\n\n${second}\n\n${other(1)}\n\n${other(2)}\n`).length, 1);
+  // A short shared opening ("Simplify: …") is not a lead-in: the math books' runs are counted as before.
+  const simplify = (n) => `{{< fillin question="Simplify: $${n}x+${n}x$" answer="${2 * n}x" answerForm="no-like-terms" hint="Combine like terms." >}}`;
+  assert.equal(lintHugo(`Text.\n\n${[1, 2, 3, 4].map(simplify).join('\n\n')}\n`, 'content/math/book/01-chapter/01-section.md').errors
+    .filter((error) => /consecutive interactive questions/.test(error)).length, 1);
+});

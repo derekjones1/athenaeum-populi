@@ -2333,17 +2333,34 @@ export function lintHugo(src, filename = '', options = {}) {
 
   const inPracticeBlock = (index) => practiceRange !== null
     && index >= practiceRange[0] && index < practiceRange[1];
+  // The lettered parts of ONE source question are one question here, however
+  // many components they take. Chemistry 2e's rounding Check Your Learning
+  // has four parts under one lead-in and no source text between them; each
+  // part is its own fill-in, and the run of four was refused — the author
+  // passed the rule by repeating the lead-in as prose between parts (b) and
+  // (c), which is the workaround the rule's own policy forbids (the pilot,
+  // November 9, 2026). Parts are recognized by what makes them parts: the
+  // same lead-in, word for word, up to its colon. Items that merely follow
+  // one another are still counted one by one.
+  const leadInOf = (question) => {
+    const text = String(question ?? '');
+    const colon = text.indexOf(':');
+    const lead = colon === -1 ? '' : text.slice(0, colon).split(/\s+/).filter(Boolean).join(' ');
+    return lead.split(' ').length >= 4 ? lead : '';
+  };
   let previousQuestionEnd = -1;
+  let previousLeadIn = '';
   let consecutiveQuestions = 0;
-  for (const { index, end } of practiceQuestions) {
-    consecutiveQuestions = previousQuestionEnd >= 0
-      && src.slice(previousQuestionEnd, index).trim() === ''
-      ? consecutiveQuestions + 1
-      : 1;
-    if (!isKnowledgeCheck && consecutiveQuestions === 4 && !inPracticeBlock(index)) {
+  for (const { index, end, params } of practiceQuestions) {
+    const adjacent = previousQuestionEnd >= 0 && src.slice(previousQuestionEnd, index).trim() === '';
+    const leadIn = leadInOf(params?.question);
+    const samePart = adjacent && leadIn !== '' && leadIn === previousLeadIn;
+    if (!samePart) consecutiveQuestions = adjacent ? consecutiveQuestions + 1 : 1;
+    if (!isKnowledgeCheck && !samePart && consecutiveQuestions === 4 && !inPracticeBlock(index)) {
       err(index, 'more than three consecutive interactive questions — keep each practice set to 2–3 questions');
     }
     previousQuestionEnd = end;
+    previousLeadIn = leadIn;
   }
 
   // ---- fillin shortcode rules ----------------------------------------------

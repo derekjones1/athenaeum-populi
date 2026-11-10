@@ -410,7 +410,7 @@ test('the screenshot tools default to the port serve:public serves on', () => {
     /process\.env\.PORT \|\| (\d+)/,
     'the default port serve-public.mjs listens on',
   );
-  for (const path of ['tools/build/screenshot-page.mjs', 'tools/build/screenshot-components.mjs']) {
+  for (const path of ['tools/build/screenshot-page.mjs', 'tools/build/screenshot-components.mjs', 'tools/build/screenshot-tiles.mjs']) {
     assert.match(
       read(path),
       new RegExp(`process\\.env\\.PORT \\|\\| ${servePublicPort}\\b`),
@@ -823,6 +823,11 @@ test('Chrome launches only through the stdio shim, and the shim detaches both st
     read('tools/build/screenshot-page.mjs'),
     /executablePath: chromeShim/,
     'tools/build/screenshot-page.mjs must launch Chrome through the stdio shim',
+  );
+  assert.match(
+    read('tools/build/screenshot-tiles.mjs'),
+    /executablePath: chromeShim/,
+    'tools/build/screenshot-tiles.mjs must launch Chrome through the stdio shim',
   );
   const shim = read('tools/build/chrome-stdio-shim.sh');
   const execLines = shim.split('\n').filter((line) => /^\s*exec /.test(line));

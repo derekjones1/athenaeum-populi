@@ -35,6 +35,12 @@
  * on a transparent background vanish against the dark page — 39 photo-kind
  * figures lost their panel letters and labels that way (September 26, 2026).
  *
+ * An entry also records `scale` when the source `<media>` carries
+ * `class="scaled-down"` or `scaled-down-30` (Chemistry 2e marks 281 small
+ * drawings so): the shortcode passes it on and the stylesheet holds the
+ * figure to that share of the column, as print does. A re-run refreshes the
+ * field on an entry that is otherwise current.
+ *
  *   node tools/source/vendor-media.mjs --book biology --refresh-transparency
  *
  * recomputes the field for every entry already in the manifest from the
@@ -102,6 +108,10 @@ export function extractModuleImages(moduleId, xml) {
   const images = [];
   for (const media of xml.matchAll(/<media\b([^>]*)>([\s\S]*?)<\/media>/g)) {
     const alt = plainXmlText((media[1].match(/\balt="([^"]*)"/) || [])[1] || '');
+    // Chemistry 2e sizes a small drawing with `class="scaled-down"` (about
+    // half the text width) or `scaled-down-30`; the shortcode keeps it.
+    const scale = ((media[1].match(/\bclass="([^"]*)"/) || [])[1] || '')
+      .split(/\s+/).find((name) => /^scaled-down(-\d+)?$/.test(name)) || null;
     for (const image of media[2].matchAll(/<image\b[^>]*\bsrc="([^"]+)"[^>]*>/g)) {
       const src = image[1].replace(/^(\.\.\/)+/, '');
       if (!src.startsWith('media/')) continue;
@@ -114,7 +124,7 @@ export function extractModuleImages(moduleId, xml) {
         const captions = [...block.matchAll(/<caption\b[^>]*>([\s\S]*?)<\/caption>/g)];
         if (captions.length) caption = plainXmlText(captions[captions.length - 1][1]);
       }
-      images.push({ module: moduleId, source: src, alt, caption });
+      images.push({ module: moduleId, source: src, alt, caption, ...(scale ? { scale } : {}) });
     }
   }
   return images;
@@ -298,6 +308,7 @@ function main(argv) {
       if (existing && existing.sourceSha256 === sourceSha256
         && existing.variants.every((v) => existsSync(path.join(outDir, v.file)))) {
         if (typeof existing.transparent !== 'boolean') existing.transparent = webpHasTransparency(path.join(outDir, largestVariant(existing).file));
+        if (image.scale) existing.scale = image.scale; else delete existing.scale;
         skipped += 1;
         continue;
       }
@@ -327,6 +338,7 @@ function main(argv) {
         transparent: webpHasTransparency(path.join(outDir, variants.at(-1).file)),
         alt: image.alt,
         caption: image.caption,
+        ...(image.scale ? { scale: image.scale } : {}),
       };
       vendored += 1;
       console.log(`  vendored ${stem} (${width}×${height} → ${variants.map((v) => v.width).join('/')})`);

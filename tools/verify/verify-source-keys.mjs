@@ -109,6 +109,10 @@ import { integerFlag, parseCliArgs } from '../lib/cli.mjs';
 import { shortcodes } from '../lib/content.mjs';
 import { parseSortbinsConfig } from '../../assets/js/lib/text/check-sortbins.mjs';
 import { foldedForms } from '../../assets/js/lib/text/check-text.mjs';
+import { readNumeral } from '../../assets/js/lib/math/significant-figures.mjs';
+import {
+  KEYED_ONLY_BOOKS, keyedUnits, plain as foldedPlain, printedNumerals, unitFor,
+} from '../lib/keyed-units.mjs';
 
 /** A page question must share this much of a source problem's vocabulary to
  * count as a transcription of it; below this it is an author-written item. */
@@ -132,6 +136,20 @@ const shortSolutionWords = (solution) => normalizeWhitespace(solution).split(/\s
  * sortbins bins an item against the source table (exercise = the table id).
  */
 export const DISCLOSED_DEVIATIONS = Object.freeze([
+  {
+    page: 'content/physical-sciences/chemistry/01-essential-ideas/06-mathematical-treatment-of-measurement-results.md',
+    exercise: 'fs-idm75569040#check',
+    kind: 'key',
+    erratum: 2910,
+    reason: 'the Check Your Learning answer prints "354.07 K, 177.66 °F" for 80.92 °C; by the rules Section 1.5 teaches, 80.92 × 9/5 = 145.656 keeps four figures (145.7) and adding the exact 32 gives 177.7 °F, as every sibling temperature key in the module rounds (5371 °F, −33.4 °C, 113 °F), so the Fahrenheit fill-in keys 177.7; the kelvin fill-in keeps the source\'s 354.07',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/01-essential-ideas/06-mathematical-treatment-of-measurement-results.md',
+    exercise: 'fs-idm125803088',
+    kind: 'key',
+    erratum: 2878,
+    reason: 'the source solution prints "68–71 cm" for a ball of 27 to 28 in.; 27 in × 2.54 cm/in (exact) = 68.58 cm, which rounds to 69 cm at two significant figures, so the lower-circumference fill-in keys 69; the other three bounds (71 cm, 400 g, 450 g) are the source\'s',
+  },
   {
     page: 'content/life-health-sciences/anatomy-physiology/28-development-and-inheritance/05-adjustments-of-the-infant-at-birth-and-postnatal-stages.md',
     exercise: 'fs-id810682',
@@ -1209,6 +1227,7 @@ export function pageItems(markdown) {
       line: lineOf(markdown, sc.index),
       question: sc.params.question || '',
       answer: sc.params.answer || '',
+      form: sc.params.answerForm || '',
     });
   }
   for (const sc of shortcodes(markdown, 'textin')) {
@@ -1453,6 +1472,8 @@ export function unprintableFillInTheBlank(item, source) {
  * not exercises at all — bulleted items inside a <note> — so readModule never
  * sees them and their self-checks report 'unmatched'.)
  */
+/** A solution that says answers vary and then goes on to print a sample. */
+const VARYING_SAMPLE_RE = /^(?:the )?(?:answers?|responses?) (?:may|will) vary\.\s+\S/i;
 const OPEN_ANSWER_RE = /^(?:the )?(?:answers?|responses?) (?:is open|are open|will vary)(?: and will vary)?\.?$/i;
 
 export function judgeSelfcheck(item, source) {
@@ -1477,7 +1498,26 @@ export function judgeSelfcheck(item, source) {
     && phraseCoverage(exercise.solution, item.model) >= 0.95) {
     return { status: 'reworded', exercise, coverage, detail: 'short source solution carried whole in the model answer' };
   }
+  // "Answers will vary. Sample answer: Gatorade contains ..." (Chemistry 1.2):
+  // the sample is one answer among many, so the page's model answer opens
+  // with a sentence saying what any good answer contains and the rubric is
+  // that sentence (docs/subjects/chemistry.md, Exercises). The opening
+  // sentence is the page's by rule; the test is that the source's sample is
+  // carried whole beside it.
+  if (VARYING_SAMPLE_RE.test(normalizeWhitespace(exercise.solution))
+    && phraseCoverage(exercise.solution, item.model) >= 0.95) {
+    return { status: 'reworded', exercise, coverage, detail: 'varying-answer source solution carried whole in the model answer' };
+  }
   if (coverage >= MODEL_COVERAGE_FLOOR) return { status: 'reworded', exercise, coverage };
+  // A bare value or bare symbols — "m = 18.58 g, V = 5.7 mL" (Chemistry 1.4)
+  // — has no words for a rubric's quantity clause, so the model answer names
+  // the quantity in the QUESTION's words: "The mass of the unknown material
+  // is m = 18.58 g, and the volume is V = 5.7 mL." The solution is carried
+  // whole, and what was added is the question's.
+  if (phraseCoverage(exercise.solution, item.model) >= 0.95
+    && phraseCoverage(item.model, `${exercise.solution} ${item.question}`) >= MODEL_COVERAGE_FLOOR) {
+    return { status: 'reworded', exercise, coverage, detail: 'source solution carried whole, framed in the question\'s words' };
+  }
   return {
     status: 'diverges',
     exercise,
@@ -1848,6 +1888,129 @@ export function judgeFillin(item, source) {
   return { status: 'confirmed', exercise };
 }
 
+/* ---- keyed units: a book that renders only what its source keys ------------- */
+
+/** A fill-in key as significant-figures.mjs reads it, or null when it is not one numeral. */
+function keyNumeral(answer) {
+  const written = String(answer ?? '')
+    .replace(/\\left|\\right/g, '')
+    .replace(/\\[,;:! ]/g, '')
+    .replace(/\{,\}/g, '')
+    .replace(/[\u2212\u2013]/g, '-')
+    .replace(/\s*\\%\s*$/, '')
+    .trim();
+  const numeral = readNumeral(written);
+  return numeral && numeral.rest.trim() === '' ? numeral : null;
+}
+
+/** Two numerals of the same exact value (sign included). */
+function sameNumeral(a, b) {
+  if (a.negative !== b.negative && a.mantissa !== 0n) return false;
+  const to = Math.min(a.exponent, b.exponent);
+  return a.mantissa * 10n ** BigInt(a.exponent - to) === b.mantissa * 10n ** BigInt(b.exponent - to);
+}
+
+const withoutArticle = (value) => foldedPlain(value).replace(/^(?:an?|the) /, '');
+
+/**
+ * One multiplechoice, fillin, or selfcheck of a keyed-only book
+ * (tools/lib/keyed-units.mjs; docs/subjects/chemistry.md "Exercises")
+ * against the UNIT it transcribes — an exercise, a lettered part of one, or
+ * a Check Your Learning — and that unit's own segment of the printed answer.
+ * Returns null when the question transcribes no unit (an author-written
+ * filler: the ordinary judges read it), else
+ *
+ *   multiplechoice  'confirmed'      the answer segment names the keyed
+ *                                    option and no other option of the item
+ *                   'key-differs'    it names another option, or more than
+ *                                    one (a two-category answer cannot be
+ *                                    one multiple choice)
+ *                   'prose-key'      it names none of the options
+ *   fillin          'confirmed'      the segment prints the keyed number, and
+ *                                    a declared `sig-figs:<n>` is a count the
+ *                                    printed numeral shows
+ *                   'key-differs'    the segment prints numbers, none of them
+ *                                    the key
+ *                   'figures-differ' the number is printed, to other figures
+ *                                    than the item declares
+ *                   'symbolic'       the key is not one numeral
+ *                   'unkeyed'        the segment prints no number at all
+ *   selfcheck       judgeSelfcheck's verdict against the segment
+ *   any             'unkeyed-unit'   the unit has NO printed answer — the
+ *                                    book does not render it
+ */
+export function judgeKeyedUnit(item, units) {
+  if (!['multiplechoice', 'fillin', 'selfcheck'].includes(item.type)) return null;
+  const unit = unitFor(item.question, units);
+  if (!unit) return null;
+  const exercise = { id: unit.id };
+  if (!unit.keyed) {
+    return { status: 'unkeyed-unit', exercise, detail: `source ${unit.id} prints no answer, and this book renders only keyed exercises — remove the item` };
+  }
+  if (item.type === 'multiplechoice') {
+    const answer = ` ${foldedPlain(unit.answer)} `;
+    // An option is named when the answer prints it — as a run of words, or,
+    // for an option of several words, each of its words ("symbolic,
+    // microscopic" names the option "symbolic, microscopic" and, word for
+    // word, the option "microscopic" too). Of the options named, one whose
+    // words are all inside another named option is the less specific
+    // reading and gives way to it: the answer that says "symbolic,
+    // microscopic" keys the compound option, not the bare domain.
+    const wordsOf = (option) => withoutArticle(option).split(' ').filter(Boolean);
+    const printed = (option) => {
+      const words = wordsOf(option);
+      return words.length > 0 && (answer.includes(` ${words.join(' ')} `)
+        || (words.length > 1 && words.every((word) => answer.includes(` ${word} `))));
+    };
+    const mentioned = item.options.filter(printed);
+    const named = mentioned.filter((option) => !mentioned.some((other) => other !== option
+      && wordsOf(other).length > wordsOf(option).length
+      && wordsOf(option).every((word) => wordsOf(other).includes(word))));
+    if (named.length === 1 && compact(named[0]) === compact(item.answer)) return { status: 'confirmed', exercise };
+    if (named.length === 0) return { status: 'prose-key', exercise };
+    return {
+      status: 'key-differs',
+      exercise,
+      detail: named.length > 1
+        ? `source ${unit.id} answers ${JSON.stringify(unit.answer.slice(0, 140))}, which names more than one of the options (${named.join(', ')}) — the answer is not one choice; page keys ${JSON.stringify(item.answer)}`
+        : `source ${unit.id} answers ${JSON.stringify(unit.answer.slice(0, 140))}; page keys ${JSON.stringify(item.answer)}`,
+    };
+  }
+  if (item.type === 'fillin') {
+    const key = keyNumeral(item.answer);
+    if (!key) return { status: 'symbolic', exercise };
+    const printed = printedNumerals(unit.answer);
+    const same = printed.filter((numeral) => sameNumeral(numeral, key));
+    if (!same.length) {
+      // A count the source spells out: "(a) two; (b) three".
+      const value = Number(`${key.negative ? '-' : ''}${key.mantissa}e${key.exponent}`);
+      const spelled = numberWords(unit.answer);
+      if (spelled.includes(value)) return { status: 'confirmed', exercise };
+      if (!printed.length && !spelled.length) return { status: 'unkeyed', exercise };
+      return {
+        status: 'key-differs',
+        exercise,
+        detail: `fillin keys ${JSON.stringify(item.answer)} but source ${unit.id} answers ${JSON.stringify(unit.answer.slice(0, 140))}`,
+      };
+    }
+    const figures = String(item.form || '').match(/(?:^|\s)sig-figs:(\d)(?:\s|$)/);
+    if (figures && !same.some((numeral) => numeral.sigMin <= Number(figures[1]) && Number(figures[1]) <= numeral.sigMax)) {
+      const shown = same[0].sigMin === same[0].sigMax ? `${same[0].sigMin}` : `${same[0].sigMin}–${same[0].sigMax}`;
+      return {
+        status: 'figures-differ',
+        exercise,
+        detail: `fillin declares sig-figs:${figures[1]}, but source ${unit.id} prints ${JSON.stringify(same[0].printed)}, which shows ${shown} significant figure(s)`,
+      };
+    }
+    return { status: 'confirmed', exercise };
+  }
+  const judged = judgeSelfcheck(item, {
+    checkQuestions: null,
+    exercises: [{ id: unit.id, problem: item.question, solution: unit.answer, options: [] }],
+  });
+  return { ...judged, exercise };
+}
+
 /* ---- corpus walk ---------------------------------------------------------- */
 
 /** Biology and Microbiology only — every math book's content lives outside
@@ -1907,9 +2070,39 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
       failures.push({ page: section.localPath, line: 0, detail: `pinned module ${section.moduleId} is not checked out at ${path.relative(repositoryRoot, modulePath)}` });
       continue;
     }
-    const source = readModule(readFileSync(modulePath, 'utf8'));
+    const moduleXml = readFileSync(modulePath, 'utf8');
+    const source = readModule(moduleXml);
+    // A keyed-only book's items are read against the unit each transcribes
+    // first (an exercise part and its own answer segment); only an item that
+    // transcribes no unit falls through to the ordinary judges below.
+    const units = KEYED_ONLY_BOOKS.includes(section.book) ? keyedUnits(moduleXml) : null;
     for (const item of pageItems(readFileSync(pagePath, 'utf8'))) {
       const where = `${section.localPath}:${item.line}`;
+      const keyedVerdict = units ? judgeKeyedUnit(item, units) : null;
+      if (keyedVerdict) {
+        const { status } = keyedVerdict;
+        verdicts.push({ page: section.localPath, line: item.line, type: item.type, status });
+        if (['key-differs', 'figures-differ', 'diverges', 'unkeyed-unit'].includes(status)) {
+          const deviation = status === 'unkeyed-unit' ? null : deviationFor(section.localPath, keyedVerdict.exercise.id);
+          const wanted = status === 'diverges' ? 'solution' : 'key';
+          if (deviation && deviation.kind === wanted) {
+            used.add(deviation);
+            counts[item.type].disclosed += 1;
+            notes.push(`${where} keys against the source on purpose (erratum ${deviation.erratum})`);
+          } else {
+            failures.push({
+              page: section.localPath,
+              line: item.line,
+              detail: status === 'unkeyed-unit' ? keyedVerdict.detail
+                : `${keyedVerdict.detail}\n    an intended correction needs an errata entry and a DISCLOSED_DEVIATIONS line (kind ${JSON.stringify(wanted)})`,
+            });
+          }
+        } else {
+          counts[item.type][status] = (counts[item.type][status] || 0) + 1;
+          if (!['confirmed', 'verbatim', 'reworded'].includes(status)) notes.push(`${where} ${item.type} ${status}: ${item.question.slice(0, 80)}`);
+        }
+        continue;
+      }
       if (item.type === 'multiplechoice') {
         const verdict = judgeMultipleChoice(item, source);
         if (verdict.status === 'key-differs' || verdict.status === 'options-differ') {

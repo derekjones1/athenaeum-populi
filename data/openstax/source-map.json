@@ -257,11 +257,11 @@
     "chemistry": {
       "bundle": "chemistry-bundle",
       "contentPath": "content/physical-sciences/chemistry",
-      "authoringStatus": "scaffolded",
+      "authoringStatus": "in-progress",
       "upstreamChapters": 21,
       "upstreamSections": 114,
-      "localChapters": 0,
-      "mappedSections": 0
+      "localChapters": 1,
+      "mappedSections": 6
     }
   },
   "sections": [
@@ -7266,6 +7266,60 @@
       "moduleId": "m49455",
       "sourceTitle": "Derivatives",
       "moduleSha256": "a81dd626fad3b0d7484235fc580af4f09c0aadab8f8962ced969013f656b7971"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/01-essential-ideas/01-chemistry-in-context.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "1.1",
+      "moduleId": "m68664",
+      "sourceTitle": "Chemistry in Context",
+      "moduleSha256": "b30647b61f467553b5f91923e90cf2d1bc4f6155c9be5cbb71680b2b87d87e53"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/01-essential-ideas/02-phases-and-classification-of-matter.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "1.2",
+      "moduleId": "m68667",
+      "sourceTitle": "Phases and Classification of Matter",
+      "moduleSha256": "539880a970305e5c722488cf87f0cc328757e8e5a2f8574099e78a55318f6033"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/01-essential-ideas/03-physical-and-chemical-properties.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "1.3",
+      "moduleId": "m68670",
+      "sourceTitle": "Physical and Chemical Properties",
+      "moduleSha256": "565de95d6e43e3ff7fc650726cae108b46a38cb4f554b3145c17f355a8797540"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/01-essential-ideas/04-measurements.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "1.4",
+      "moduleId": "m68674",
+      "sourceTitle": "Measurements",
+      "moduleSha256": "916e40efaad9f8ffe3d73b89838f77b88eb93f198fc85b6ae1c312396be3c851"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/01-essential-ideas/05-measurement-uncertainty-accuracy-and-precision.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "1.5",
+      "moduleId": "m68690",
+      "sourceTitle": "Measurement Uncertainty, Accuracy, and Precision",
+      "moduleSha256": "9f259bf7cf502fbfa6e98f57bafb7bfd72c76f2fbb59001564cf7c5b0457f698"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/01-essential-ideas/06-mathematical-treatment-of-measurement-results.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "1.6",
+      "moduleId": "m68683",
+      "sourceTitle": "Mathematical Treatment of Measurement Results",
+      "moduleSha256": "c97a8b8d957c919d349aae82dfc74ee5b6b10a165eae41cab2cfd16393022c8a"
     }
   ]
 }

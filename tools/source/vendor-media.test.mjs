@@ -38,6 +38,20 @@ test('extractModuleImages pairs each image with its media alt and innermost figu
   ]);
 });
 
+test('extractModuleImages records the source scale class and nothing else from class', () => {
+  // Chemistry 2e m68690: the rebar cylinder is `class="scaled-down"`; the
+  // page drew it at the full column until the rendered-page reading.
+  const xml = `
+<figure id="f1"><media id="a" class="scaled-down" alt="A"><image src="../../media/A.jpg"/></media></figure>
+<figure id="f2"><media id="b" alt="B" class="span-all scaled-down-30"><image src="../../media/B.jpg"/></media></figure>
+<figure id="f3"><media id="c" class="span-all" alt="C"><image src="../../media/C.jpg"/></media></figure>`;
+  assert.deepEqual(extractModuleImages('m68690', xml), [
+    { module: 'm68690', source: 'media/A.jpg', alt: 'A', caption: '', scale: 'scaled-down' },
+    { module: 'm68690', source: 'media/B.jpg', alt: 'B', caption: '', scale: 'scaled-down-30' },
+    { module: 'm68690', source: 'media/C.jpg', alt: 'C', caption: '' },
+  ]);
+});
+
 test('stemOf drops the extension only', () => {
   assert.equal(stemOf('media/Figure_01_01_09new.png'), 'Figure_01_01_09new');
   assert.equal(stemOf('media/Figure_01_01_01-3978.jpg'), 'Figure_01_01_01-3978');

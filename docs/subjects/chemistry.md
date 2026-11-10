@@ -1,11 +1,12 @@
 # Chemistry — subject playbook
 
-Pinned November 9, 2026; the engine work below landed the same day. No
-section is authored yet. This file records the source, the decisions made,
-the notation and grading rules the engine now enforces, and what the chapter
-1 pilot still has to settle. A rule here is operative when it says
-**Decided** or names the lint or test that holds it; everything under "What
-the pilot settles" is open.
+Pinned November 9, 2026; the engine work and the chapter 1 pilot landed the
+same day. This file records the source, the page skeleton, the exercise
+rules, the notation and grading rules the engine enforces, and the figure
+rules. Every rule here is operative as written and is stated once; "What is
+still open" lists what a later chapter settles. A chapter is run from
+`docs/briefs/chemistry/run.md`; the pilot's narrative is in
+`docs/history/chemistry.md`.
 
 `docs/authoring-playbook.md` is the shared core. Chemistry is the first book
 that is neither a math book nor a life-sciences book. Its prose, key terms,
@@ -49,8 +50,334 @@ measured-quantity tokens described here.
 `content/physical-sciences/chemistry/NN-chapter-slug/NN-section-slug.md`,
 with `NN` the upstream chapter and section numbers. The cover lists chapters
 as plain bullets — the source has no units and none are invented. The lock's
-`authoringStatus` is `scaffolded` and the cover's `authoring_status` copies
-it; both move to `in-progress` with the first authored chapter.
+`authoringStatus` is `in-progress` and the cover's `authoring_status` copies
+it; a finished chapter moves from the cover's "Planned contents" to its
+`## Chapters` list.
+
+## The section page, in order
+
+*(pilot, chapter 1.)* The page is life-sciences "The section page, in
+order" — objectives callout, body with one `##` per CNXML `<section>`, bold
+`<term>`s, feature boxes as callouts, `mediafigure`s, Markdown tables,
+`## Summary`, `## Key terms`, `## Practice`, the attribution footer — with
+these differences:
+
+1. **Feature boxes.** The callout's first line is the printed box name in
+   bold, then the note's own `<title>` in italics:
+
+   | `<note class>` | First line |
+   |---|---|
+   | `link-to-learning` | `**Link to Learning**` (no title; the link text describes the destination) |
+   | `everyday-life` | `**Chemistry in Everyday Life.** *Title.*` |
+   | `sciences-interconnect` | `**How Sciences Interconnect.** *Title.*` |
+   | `chemist-portrait` | `**Portrait of a Chemist.** *Title.*` |
+
+   The first two names are confirmed from the PDF (chapter 1); confirm the
+   other two where they first appear. Every feature box is a
+   `callout type="info"`.
+2. **Worked examples.** A source `<example>` is prose in the body, at its
+   source position, in the math books' form: `**Example.** *Its title.*`
+   and the problem; `**Solution.**` and the worked solution, every display
+   equation transcribed; then its Check Your Learning as the interactive
+   item or items the answer's shape calls for (below), placed directly after
+   the solution with no "Check Your Learning" label — the item after a
+   Solution is that example's check, as the math books' Try It is. The
+   source's printed `Answer:` is the key of that item and is not printed as
+   prose. A "reason" the solution gives is a claim to test ("Source
+   defects").
+3. **A display equation row fits the column** (44rem, about 60 rendered
+   characters). A longer row is broken — the result and any "(round to …)"
+   parenthetical on their own aligned row, or the parenthetical moved to
+   prose — because the page scrolls an over-wide row sideways with no
+   scrollbar and the learner sees it cut off (browser test).
+4. **Tables.** A table's title is a bold line directly above the table; a
+   table footnote is a sentence directly below it, marked as the source
+   marks it.
+5. **`## Summary`** is the module's "Key Concepts and Summary" section, one
+   bullet per source paragraph.
+6. **`## Key equations`** — the module's `key-equations` section, one
+   equation per bullet set as inline math, between `## Summary` and
+   `## Key terms`, only where the module has one. An equation is written in
+   the form the body gives it: where the source's list lets a unit stand in
+   for a quantity (1.6's `T_K = °C + 273.15`), the page writes the body's
+   $T_\text{K} = T_{°\text{C}} + 273.15$, the footer says so, and the
+   difference is an erratum.
+7. **`## Key terms`** is the module's glossary in its CNXML order, every
+   definition ending with a period (lint), an alias roman and outside the
+   bold: `- **solution** — (also, homogeneous mixture) combination of …`.
+8. **The pooled end matter of the PDF** (Key Terms, Key Equations, Summary,
+   and Exercises printed once at the chapter's end) is each module's own in
+   the CNXML, and that is where the page takes it from.
+9. **Small conventions every page follows.** The frontmatter description
+   ends "— adapted from OpenStax Chemistry 2e, Section N.M."; the page's
+   first figure is `eager="true"`; a reference to a numbered figure or
+   table becomes a describing phrase ("the table of densities of common
+   substances"); a cross-reference to another section is plain text, the
+   source's wording where the source wrote it and "Section 1.4
+   Measurements" where the page did (no book in the library links between
+   its sections).
+
+## Exercises
+
+*(pilot, chapter 1.)*
+
+**Every keyed source exercise reaches the page, one component per lettered
+part, in source order within its objective group. The unkeyed exercises are
+omitted, and the footer says how many.** The source keys the odd-numbered
+exercises and every Check Your Learning; an item is built on those and on
+the module's glossary and summary, never on an answer the author derived.
+
+The component follows the SHAPE of the source's keyed answer:
+
+| The keyed answer is | Component |
+|---|---|
+| one measured or computed number | `fillin` with `sig-figs:<n> last-digit:<k>` ("Measured quantities"); the stem names the unit |
+| a count ("how many significant figures", "how many protons") | `fillin` with `whole-number`, which refuses the stem's own `2.0` retyped against the key `2` |
+| a number in a named notation ("in exponential notation") | `fillin` adding `scientific-notation` |
+| one of a closed set the stem or its figure names (physical or chemical; element, compound, or mixture; exact or uncertain; an inch, a foot, a yard, or a mile; Archer W, X, Y, or Z) | `multiplechoice` whose options are that set, in its own order — a two-option set is a two-option item |
+| a judgment the key supports with a number ("yes; weight = 89.4 kg") | the number as a `fillin` first, then the judgment as a `multiplechoice` |
+| a choice from the stem's set with a reason ("law (states a consistently observed phenomenon…)"; "increased, because…") | the choice as a `multiplechoice` first, then a `selfcheck` for the explanation with the source's answer as the model — in that order, so the reveal does not hand over the key |
+| a choice that can name two of the stem's categories ("symbolic, microscopic") | one `multiplechoice` whose options are every answer the stem allows, the compound ones written as the key writes them, and the SAME option list on every part of the exercise |
+| an SI prefix's factor ("× 10⁻²") | `fillin` keyed with the bare power of ten, `answer="10^{-2}"`, under `sig-figs:1 last-digit:0` — a bare power-of-ten key is an exact factor, so `0.010` and `1.0×10⁻²` are right too ("Measured quantities") |
+| the name of a unit that is one word or a counted word ("meters", "kilograms", "square meters", "cubic meters") or of a prefix ("centi") | `textin`; the accept list holds the symbol without operators (`m`, `kg`, `m3`) and every crossing the plural fold cannot reach, which folds the LAST word only: `meters squared\|meter squared\|metres squared\|metre squared` |
+| a unit that is a quotient or a product ("meters/second", "kilograms/cubic meter"), or one whose degree sign is the point ("kelvin", never "°K") | `multiplechoice` whose distractors are the confusions the part tests — the product, the inverse, a wrong power, "degrees kelvin" — and never another unit the body allows for the quantity. The text grader reads `/`, `·`, `×`, `*`, and `°` as spaces, so as a `textin` the product passes for the quotient: a key or accept member carrying one is a lint error in this book |
+| two or more quantities ("5371 °F, 3239 K"; a range; a ratio) | one `fillin` per quantity, each stem saying which |
+| an explanation, a list, a description, "answers will vary" | `selfcheck` with the source solution as the model answer and a rubric |
+| a drawing | `selfcheck` with the figure in the model answer ("Figures") |
+
+The rules below are grouped — stems, numeric keys, added items, hints,
+selfchecks, source defects, the footer — and each is stated once.
+
+### Stems
+
+- **The source stem stays verbatim.** What an item adds goes after it:
+  "Enter the volume in liters." A lettered part's stem is the exercise's
+  lead-in followed by that part, the letter dropped, and a lead-in that
+  addresses the parts together is restated for the one part and nothing
+  else changed: "Classify each of the following changes as physical or
+  chemical:" becomes "Classify the following change as physical or
+  chemical: condensation of steam". The footer says the lead-ins were
+  restated in the singular.
+- **"Enter the … in …" is added only where the source stem leaves the unit
+  open.** One named unit is spelled out ("grams", "liters", "kelvin",
+  "degrees Celsius"); a quotient or product unit is its symbol ("g/mL",
+  "m/s", "kJ/mol"), since "mol/L·s" has no readable spelled form.
+- **"with its sign" is never written** (lint). A negative answer is typed
+  with its minus sign as a matter of course, and the phrase on the negative
+  keys alone tells the learner the answer is negative.
+- **A stem that cannot name its unit without answering** (convert to the SI
+  base unit) says "Enter the value without its unit", and the footer says
+  which items those are.
+- **A key to a place coarser than the data force** — whole dollars — has
+  the stem say so: "Enter the cost to the nearest dollar." The sentence is
+  for a key COARSER than the data; a source key with more figures than the
+  rules give is a source defect (below).
+- **Before the book teaches significant figures** (Section 1.5), a measured
+  fill-in whose place is not obvious states it in plain words: "Enter the
+  mass in grams, to the nearest tenth of a gram." From 1.5 on, the count is
+  the learner's to find.
+- **A part that leans on an earlier part** ("the cube in part (a)", "the
+  nail") restates that part's GIVEN data inline, in its own sentence, never
+  its answer: "If a cube with an edge length of 0.843 cm is copper and has a
+  mass of 5.34 g, …". No parenthetical sentence and no pointer back: the
+  item above is one keystroke from the item below, and a stem that prints
+  the answer above it has answered it. "The value you measured in the
+  previous item" is only for data the learner measured in a simulation.
+  A part that only refers back, with no datum to carry ("This lumber can
+  be used as vertical studs…"), keeps the source's words: the coverage
+  gate matches a part to its source by its stem, and a reworded referent
+  reads as an exercise the page lacks.
+- **A datum the source assumes and neither the stem nor the module states**
+  (1.6's short ton of 2,000 lb) is added to the stem in parentheses and
+  named in the footer; a hint is not where a needed number lives.
+- **A cross-reference to an exercise** is read against what the page
+  renders. A body reference ("see Exercise 1.42 and Exercise 1.43") names
+  only the keyed exercises on the page, by describing them ("see the
+  foam-block density-simulation exercise at the end of this section"). A
+  stem's reference to an omitted exercise is dropped only after reading
+  that exercise for every datum the key depends on — a value, its
+  exactness, a stated figure count — and restating each in parentheses
+  (1.6's cubit exercise lost "(two significant figures)" with its
+  cross-reference). The footer says the reference was dropped.
+- **A display equation inside an exercise stem** is set inline in the
+  question (a shortcode parameter cannot hold `$$…$$`), with `\frac`, and
+  ends its sentence with a period before the part's text begins (lint).
+- **An item identified only by formatting is also named in words.** An
+  underline is not announced by a screen reader: a stem that asks about
+  "the underlined item" keeps the `<u>` and ends with the sentence "(The
+  underlined item is “Ni powder”.)".
+- **An item bound to a figure or table** says "the figure above" or "the
+  table above", so the answer ledger binds them.
+- **A count is asked before the quantity it counts.** The grader's own
+  feedback names the count ("now round it to 2 significant figures"), so a
+  "how many significant figures can you justify" item goes first.
+- **A multiple-choice stem ends with its punctuation.**
+- **A keyed exercise whose answer comes from a linked simulation** is a
+  `selfcheck` with the source's answer as the model answer; the link stays
+  in the question.
+
+### Numeric keys
+
+- **Compute every numeric key yourself**, by running the arithmetic, before
+  comparing with the source's. A source key your computation does not
+  reach, allowance included, is a suspected source defect ("Source
+  defects").
+- **`last-digit` is decided by where the numbers come from** (this is the
+  one statement of the rule):
+  - `0` when every number in the calculation is printed in the stem or
+    exact by definition, however many steps it takes: a rounding drill,
+    significant-figure arithmetic, a metric-prefix conversion, a
+    temperature-scale conversion, a density problem whose density the stem
+    prints, a conversion whose every route in the book's table is exact.
+  - `1` when the learner fetches a measured factor from a table — a
+    conversion factor, a molar mass, a constant — since another table
+    prints one more or one fewer digit. A stem that prints the factor
+    itself is `0`.
+  - `2` only when THIS book's own conversion table offers more than one
+    route and the routes end more than one unit apart — one of them may be
+    exact — with every route computed in the ledger (1.6: Kilimanjaro's
+    19,565 ft, 5.9632 to 5.9635 km by the table's routes).
+- **A key that is a stem number by the law the item tests** (the total mass
+  of products, 200.0 g, from 200.0 g of reactant) stands as a `fillin`; the
+  ledger says so.
+- **`answerDisplay`**: a count shows the bare digit; a measured value shows
+  the value with its unit; a bare power-of-ten factor shows `$10^{-2}$`
+  with no leading ×. It is math, so the house lint groups its digits
+  ("Notation").
+
+### Added items
+
+- **Fillers.** Each objective needs its group in `## Practice` filled to
+  the floor, and the keyed exercises do not cover every objective — a
+  chapter-opening module can leave two objectives with none. A group the
+  keyed exercises leave short is filled with glossary-recall `textin`s,
+  summary or body clozes, and select-the-term `multiplechoice` items under
+  life-sciences "Text recall", "Each thing once", and "Leaks across the
+  page" — items whose key the module's own glossary or sentence fixes. On
+  such a page the added items are most of the practice, so:
+  - **One answer fits.** Never blank the last item of an open list ("…to
+    medicine and ________") or a word with a common synonym ("reproduced":
+    repeated and replicated fit). Run the blank's likely rivals through
+    the text grader; if a rival is as right as the key by the sentence
+    itself, choose another sentence.
+  - **Never a word of its own heading.** A `textin` keyed to a word its
+    objective heading prints is a lint error in this book: under
+    "Distinguish between mass and weight" the keys `mass` and `weight` are
+    answered by elimination.
+  - **Never one half of a contrast pair the sentence prints.** "Heat is an
+    example of an ________ property, and temperature is an example of an
+    intensive property" is answered by elimination, and so is a multiple
+    choice whose stem names two of its three options. Key a two-category
+    objective's filler on a word that is not a category ("directly
+    ________ to the amount of matter").
+  - **Where no cloze is unique, a select-the-term `multiplechoice`** whose
+    options are all terms one module sentence or list itself prints, the
+    key position varied.
+  - **A blank followed by its head noun** ("an ________ property") lists
+    the phrase with the noun in `accept`, since a learner may type both
+    words.
+- **Order inside a group:** the source's keyed items first, in source
+  order, then the added items — except that an added item goes above a
+  keyed `selfcheck` whose model answer prints its key (1.3: the "directly
+  proportional" cloze sits above the density explanation), and the footer
+  says so.
+- **A Check Your Learning item is not repeated in `## Practice`**, and a
+  Practice item is not a Check Your Learning with the numbers changed.
+
+### Hints
+
+**A hint names the tool — the equation by its name, the table, the rule or
+definition to recall, the unit chain of a multi-step conversion — and never
+the fact that decides THIS item.** It never performs or dictates the
+arithmetic on the item's own numbers, never remarks on this number's
+digits, never states the shape of the result. The pilot's pages broke this
+after the rule was written, so the line is drawn by pairs:
+
+| Allowed | Forbidden |
+|---|---|
+| "Use the Celsius-to-Fahrenheit equation above." | "Multiply by nine-fifths, then add 32." "Add 273.15." |
+| "Use the definition of density." | "Divide the mass by the volume." "Cube the edge length." |
+| "Find the factor that relates inches and centimeters in the table of conversion factors, and decide which unit must cancel." | "Multiply by the exact inch–centimeter factor." |
+| "Test each zero against the rules for leading, captive, and trailing zeros." | "Every digit here is significant." "Leading zeros become the power of ten." |
+| "Find the first digit to be dropped, then apply the rounding rules." | "The digit to be dropped is a final 5." "Keep the number's size with a placeholder zero." |
+| "Feet to inches to centimeters to kilometers." (a multi-step route, by units, no numbers) | the same route with its factors |
+| "Name the law, and ask what enters or leaves the container." | "Every product stays inside the container." |
+| "Reread the subsection on derived units." | "A speed is a distance divided by a time." |
+
+- **On a two-option classification** (physical or chemical, exact or
+  uncertain) the hint names the question to ask of the case, never one
+  category's definition as the place to look — with two options, pointing
+  at one is the answer — and never a body example that names the item's own
+  case (1.3's body classifies steam and sugar itself).
+- A hint never sends the learner to a table that lacks the answer (1.4's
+  area item pointed at the table of base units, which has no area unit).
+- Several items may share one hint.
+
+### Selfchecks
+
+- **A `selfcheck`'s model answer is the source solution with its first
+  letter capitalized and a closing period added, and nothing else**; the
+  footer says "capitals and periods added" once. Rubric clauses start
+  lowercase. A one-value answer reaches its two rubric clauses by splitting
+  the source's own words — the quantity named, and its value with its
+  unit. Two exceptions, each said in the footer:
+  - **A bare value or bare symbol** ("0.230 g/mL", "d = 3.3 g/mL") has no
+    words to split, and a one-letter clause checks nothing: the model
+    answer names the quantity in the QUESTION's own words ("The density of
+    the foam sample is 0.230 g/mL."), and the rubric is that name and the
+    value with its unit, as two clauses.
+  - **An "Answers will vary" solution**: the model answer opens with a
+    sentence that restates, in the question's own words, what a good answer
+    contains, then gives the source's sentence whole — "Answers will vary.
+    Sample answer: …" — and the rubric is those criteria; a rubric of the
+    sample's own details is one only the sample can meet. `verify:source-keys`
+    confirms the form by finding the source's sample carried whole.
+
+### Source defects and Source notes
+
+- **A source key the arithmetic does not reach** is a suspected defect: the
+  author transcribes the source key, reports it, and the parent rules. Once
+  the CNXML, the PDF, and the computation are compared and the defect is
+  confirmed, the page keys the computed value, a Source note follows the
+  item, and the parent adds the decisions entry, the `DISCLOSED_DEVIATIONS`
+  line, and the erratum (core §0 rule 4).
+- **A source key with more figures than the book's own rules give** is the
+  same defect. 1.6's Check Your Learning keys 80.92 °C as 177.66 °F; the
+  rules of 1.5 give 177.7, and every sibling temperature key in the module
+  follows them. Check the siblings before ruling: one outlier among keys
+  that follow the rule is a defect, a module that rounds the same way
+  throughout is a convention.
+- **On a page that teaches a rule, every "reason" a worked example gives,
+  and every intermediate value it prints, is a claim to test against that
+  rule.** 1.5 states the round-half-to-even rule and then gives "the
+  retained digit is even" as the reason for rounding 31.57 to 32; 1.6 says
+  273.15 is exact and then adds 273.2. The result is right and the working
+  is not: corrected on the page with a Source note, as a wrong key is.
+- **A body fact corrected against an outside source** is printed corrected,
+  with an italic `*Source note:*` paragraph directly after the corrected
+  paragraph that says what the source prints and cites the authority — or
+  directly after the figure, when the paragraph introduces one.
+- **A Source note beside an unanswered item never lets the key be worked
+  out**: no source value, no arithmetic, no direction of the error ("the
+  product truncated rather than rounded" told the learner to round up).
+  Form: "*Source note:* the answer graded here is not the one the source
+  prints for the smallest circumference; the source's value does not follow
+  from the stem's data." The erratum holds the numbers.
+
+### The footer
+
+- It states the census: "N exercises the source keys … carried as M items
+  (breakdown)", and how many unkeyed exercises are omitted.
+- **It never prints or contains an item's key.** A corrected value is
+  named, not given ("the source's key for the smallest circumference is
+  corrected"). An added item is named by where its sentence is ("a cloze on
+  the Summary sentence that defines weight"), never "(blank: gravity)"
+  (lint) and never a quoted sentence that contains the answer.
+- It names every departure from the source in one clause each: restated
+  lead-ins, a datum added to a stem, a dropped cross-reference, an alt
+  rewritten against a wrong source alt, a Key equation set in the body's
+  form, "capitals and periods added", "unit cancellation set with a
+  diagonal strike".
 
 ## What the scan found
 
@@ -117,8 +444,32 @@ mhchem extension, so nothing is loaded:
   leaves alone what it cannot tell from variables — `P_1V_1 = P_2V_2`,
   `C_1V_1 = C_2V_2`, a lone `N_2` — so those are read on the rendered page.
 - **Symbols for quantities are ordinary math**: `$K_\text{sp}$`,
-  `$\Delta H^\circ_\text{f}$`, `$P_1V_1 = P_2V_2$`. A numeric exponent is
-  math, as everywhere: `$6.022 \times 10^{23}$`.
+  `$\Delta H^\circ_\text{f}$`, `$P_1V_1 = P_2V_2$`, `$d = \frac{m}{V}$` —
+  italic by house rule, whatever the source's markup (1.3's density
+  exercise wraps d, m, and V in `mtext` and prints them upright), and the
+  same symbol named in a prose parenthetical is math too: "its mass
+  ($m$)". A word equation keeps its words upright:
+  `$\text{density} = \frac{\text{mass}}{\text{volume}}$`. A numeric
+  exponent is math, as everywhere: `$6.022 \times 10^{23}$`.
+- **A fraction in inline math is `\frac`**, as the source sets it, and
+  `\dfrac` is banned across the library (lint: it crowds the lines around
+  it). An inline fraction sets its digits at about 11 px; the pilot's
+  rendered-page readers flagged that three times, and it stays, as the
+  math books' `\tfrac` does.
+- **A number in scientific notation never breaks at its ×.** The math
+  render hook holds a short inline `a \times 10^{n}` on one line (browser
+  test); nothing is written for it. A number and its unit in prose may
+  still part at a line end — the library writes no no-break spaces.
+- **Digit grouping.** In prose — body text, a stem's words, a table cell —
+  digits are grouped exactly as the CNXML prints them: never add or remove
+  a comma (the source writes both "1000 mL" and "1,000 mL"). Inside math
+  the house lint groups every number of four or more digits
+  (`$8{,}119$`, an `answerDisplay` of `$5{,}371\ \text{°F}$`), whatever
+  the source prints. The grader reads a typed `5,371` as 5371.
+- **A dollar sign inside math is `\text{\textdollar}`**; `\$` is for
+  prose only (the lint refuses it in a math span).
+- **Life-sciences "Display chemical equations are text, not KaTeX" does not
+  apply to this book**: its reactions are `$$\ce{…}$$`.
 - **State symbols** are upright inside `\ce{…}` (mhchem follows IUPAC) and
   italic in prose as the book prints them: `H₂O(*l*)`. A lowercase upright
   `l` in the body font is not distinguishable from `I` or `1`.
@@ -172,12 +523,9 @@ key's own precision:
 - **`sig-figs:<n>`** (1–9): the answer is written to n significant figures.
 - **`last-digit:<k>`** (0–2): the response, rounded to n figures, may differ
   from the key by k units of the nth digit.
-  - **`last-digit:0`** when the last digit is determined: a rounding
-    drill, arithmetic on printed numbers (1.5's "report with the correct
-    number of significant figures"), a conversion by exact factors.
-  - **`last-digit:1`** when it is the uncertain digit: anything computed
-    from measured data through a molar mass, a physical constant, or more
-    than one step.
+  Which k: "Exercises", "Numeric keys" — `0` for printed or exact numbers,
+  `1` when a measured factor comes from a table, `2` for the rare key the
+  book's own table reaches by routes more than one unit apart.
   - Both tokens are always declared together — the allowance is the one
     judgment the pair asks of an author, so neither value is a default —
     and `sig-figs:1` takes `last-digit:0` (lint).
@@ -200,7 +548,7 @@ Rules for the key and the stem:
   `sig-figs` (lint): an answer of two quantities (`5371 °F, 3239 K`) is two
   fill-ins.
 - **The stem names the unit**, and the key carries none: "Enter the
-  molarity in mol/L", "Enter the value in kJ/mol, with its sign". A learner
+  molarity in mol/L", "Enter the enthalpy change in kJ/mol". A learner
   who types the unit after the right number — one letter included — is told
   to drop it.
 - **Count n from the source's answer, and say it when zeros hide it.** A
@@ -214,8 +562,14 @@ Rules for the key and the stem:
 - **A percent** is keyed bare with the stem naming it ("Enter the percent
   yield as a number, without the percent sign"); a typed `%` is then a unit.
   A key ending in `\%` declares `percent` as well.
-- **A count or an exact integer** (protons in an atom, a reaction order) is
-  not a measured quantity: `decimal`, as in the math books.
+- **A count** (significant figures in a number, protons in an atom, a
+  reaction order) is not a measured quantity: `whole-number`.
+- **A key written as a bare power of ten is an exact factor.** `10^{-2}`
+  under `sig-figs:1 last-digit:0` accepts every writing of that number —
+  `0.01`, `0.010`, `1.0\times10^{-2}`, the book's `\times10^{-2}` — and
+  refuses a value that merely rounds to it (`0.0104`). A MEASURED one-figure
+  result is keyed with its coefficient, `1\times10^{3}`, and keeps the
+  count: `1.0\times10^{3}` is then `form`.
 - **Typing a two-digit exponent works.** In a measured-quantity field every
   digit typed after `^` stays in the exponent, where the math books' fields
   leap out after one.
@@ -233,8 +587,19 @@ several hundred times over.
 `npm run source:media -- --book chemistry --chapter N` vendors a chapter
 (verified on section 7.3: 77 images, 568 KB). Every image upstream is a
 JPEG, so the manifest guesses `photo` for all of them: **set `kind` on every
-figure**; nearly everything outside a chapter-opening photograph is a
-`diagram`.
+figure** from the picture — a photograph is a `photo`, a drawing, chart,
+structure, or labelled apparatus a `diagram`.
+
+**Every alt is written from the artwork; the source's alt is never kept as
+it stands.** Chapter 1's source alts called flasks beakers, wax butter, and
+a 21.6 mL reading 20.8 mL, and the one alt the pilot kept said "Kelvin
+scale" on a page that teaches lowercase kelvin.
+
+**A figure the source marks `class="scaled-down"` or `scaled-down-30`**
+(281 of them, small drawings print sets at about half the text width) is
+held to that share of the column: `source:media` records the class in the
+manifest (`scale`) and the shortcode passes it on. Nothing is written on
+the page.
 
 About 490 images sit outside any captioned figure. Each shape has one
 answer:
@@ -278,31 +643,39 @@ accepted where chapters belong together.
 | 6 | 16–17 | 11 | thermodynamics and electrochemistry |
 | 7 | 18–21 | 25 | descriptive, coordination, organic, and nuclear chemistry |
 
-## What the pilot settles
+## What the pilot settled, and what is still open
 
-The chapter 1 pilot writes the page skeleton and these rules; none is
-decided:
+Settled by chapter 1 (November 9, 2026; narrative in
+`docs/history/chemistry.md`):
 
-- the practice floor (the book runs on the `default` `BOOK_RULES` profile
-  until the pilot measures what the keyed pool supports per section) and the
-  Knowledge Check quota per section;
-- the printed names of the four feature boxes, confirmed from the PDF, and
-  their callout mapping;
-- the item form for a keyed answer that is a formula, a name, an
-  explanation, or a balanced equation;
-- whether an unkeyed even exercise is omitted or shown as an ungraded
-  prompt;
-- how the gates read this book: `verify:source-keys` against the
-  `exercises` section class and the Check Your Learning notes,
-  `verify:source-coverage`, and the `verify:ledger` `--require-solved` and
-  `--require-provenance` prefixes, all of which name the life-sciences
-  shelf today;
-- a browser spec for a measured-quantity fill-in. The grader, the lint, and
-  the spoken labels are unit-tested, but three behaviours exist only in a
-  browser and were checked by hand on a scratch page: a two-digit exponent
-  typed after `^` stays in the exponent, a unit typed after the right number
-  reports `unit`, and the field's accessible name speaks a `\ce{…}`
-  formula. The first authored page is the first place the suite can assert
-  them;
-- the briefs (`docs/briefs/chemistry/`), modelled on the Anatomy and
-  Physiology kit.
+- **The practice floor is the `default` `BOOK_RULES` profile**: two
+  exercises per objective group and five per section, each group with at
+  least one auto-graded item. Chapter 1's keyed pool plus added items met
+  it on all six pages, groups of exactly two included, so no chemistry
+  profile was written.
+- **The gates read this book.** `verify:source-keys` reads the `exercises`
+  section class and the Check Your Learning notes, one keyed unit per
+  lettered part (`tools/lib/keyed-units.mjs`); `verify:source-coverage`
+  counts an unkeyed exercise as `omitted` and fails one that is rendered;
+  `verify:ledger` requires a solve and provenance for
+  `content/physical-sciences`.
+- **The browser suite types into the real field** (`tests/browser-check.spec.mjs`,
+  "Chemistry"): every measured key on 1.6 key by key, a two-digit exponent
+  of either sign, a typed unit, the exact power-of-ten factor; and it reads
+  the rendered page for what no source gate sees — a display row wider
+  than the column, a number in scientific notation split across lines, a
+  scaled-down figure at full width.
+- **The kit**: `docs/briefs/chemistry/` (`run.md`, the parent's recipe, and
+  the author, checker, claim-pass, solve, render-reader, and consistency
+  briefs).
+
+Still open:
+
+- the Knowledge Check quota per section — decided with the first check
+  (chapters 1–3);
+- the item form for a keyed answer that is a formula, a name, or a balanced
+  equation — chapter 1 has none; chapter 2 meets them first;
+- site-wide, found by the rendered-page reading and left for a design
+  decision: the compact navbar covers the right end of the article's top
+  line between 1100 and 1280 px; a practice card leaves about 50 px above
+  "Show hint".

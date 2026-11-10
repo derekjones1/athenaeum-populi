@@ -6394,6 +6394,142 @@
       "status": "correct-local-source-defect",
       "errataEntry": 2862,
       "rationale": "The Functions of the Placenta table tbl-ch29_01 has the cell \"Mediates diffusion of maternal glucose, amino acids, fatty acids, vitamins, and minerals\" under Nutrition and digestion; the module's own paragraph fs-id2268687 says \"The fetus has a high demand for amino acids and iron, and those substances are moved across the placenta by active transport.\" The page's table cell reads \"Mediates diffusion of maternal glucose, fatty acids, vitamins, and minerals\", with a visible Source note under the table quoting both, and the sort-into-bins item built from the cell carries the corrected text in the same bin, with a footer clause. Ruled by the orchestrator, November 2, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/01-essential-ideas/06-mathematical-treatment-of-measurement-results.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68683",
+      "sourceElementIds": [
+        "fs-idm125803088"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2878,
+      "rationale": "Exercise fs-idm125803088 keys a soccer ball's 27 in. lower circumference as 68 cm. 27 in × 2.54 cm/in (exact) = 68.58 cm, which rounds to 69 cm at two significant figures; 68 is the product truncated. The page's fill-in for the smallest circumference keys 69 with a visible Source note directly after it and a footer clause; the other three bounds (71 cm, 400 g, 450 g) reproduce and are the source's. Ruled by the orchestrator, November 9, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/01-essential-ideas/02-phases-and-classification-of-matter.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68667",
+      "sourceElementIds": [
+        "fs-idp64376128"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2883,
+      "rationale": "The spider-web paragraph says it would take \"about 150 million carbon atom 'dimes'\" to cover the strand's cross-section. The strand is 7000 atom diameters across, so covering it takes the area ratio, 7000 × 7000 = 4.9 × 10^7 dimes; 150 million is that number multiplied by π (the strand's diameter used as its radius). The page prints \"about 50 million\" with a visible Source note directly after the paragraph and a footer clause. Found by the 1.2 author, confirmed by the prose claim pass (F1), ruled by the orchestrator, November 9, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/01-essential-ideas/03-physical-and-chemical-properties.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68670",
+      "sourceElementIds": [
+        "fs-idp135749488"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2887,
+      "rationale": "The paragraph says chromium \"does not oxidize\". Chromium oxidizes readily; a thin adherent oxide layer protects it, which is why it does not rust, and the book's own §17.6 (m68826, fs-idm43841616) describes that passivating oxide layer. The page prints \"chromium does not rust\" with a visible Source note directly after the paragraph and a footer clause. Found by the prose claim pass (F5), ruled by the orchestrator, November 9, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/01-essential-ideas/04-measurements.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68674",
+      "sourceElementIds": [
+        "fs-idp222999216"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2894,
+      "rationale": "The paragraph says the kilogram was previously defined by the International Union of Pure and Applied Chemistry (IUPAC). The SI units are defined by the General Conference on Weights and Measures (CGPM) under the Metre Convention (BIPM, The International System of Units, 9th edition, 2019). The page prints the CGPM with a visible Source note directly after the paragraph and a footer clause; only the attribution is changed. Found by the prose claim pass (F8), ruled by the orchestrator, November 9, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/01-essential-ideas/05-measurement-uncertainty-accuracy-and-precision.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68690",
+      "sourceElementIds": [
+        "fs-idm254904560"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2902,
+      "rationale": "The paragraph weighs \"a quarter\" on a balance and reads 6.72 g. A US quarter has a specified mass of 5.670 g (United States Mint, coin specifications), so no quarter reads 6.72 g, though the significant-figure reasoning is sound. The page says \"a coin\" and keeps the source's readings, with a visible Source note directly after the paragraph and a footer clause. Found by the prose claim pass (F13), ruled by the orchestrator, November 9, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/01-essential-ideas/05-measurement-uncertainty-accuracy-and-precision.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68690",
+      "sourceElementIds": [
+        "fs-idm173917264"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2903,
+      "rationale": "The paragraph says \"the official January 2014 census reported\" the US population as 317,297,725. The US census is decennial; the January 1, 2014 figure is a Census Bureau projection, 317,297,938 (release CB13-TPS.112, December 30, 2013), and the printed digits match neither. The page prints that the Census Bureau projected the population on January 1, 2014, as 317,297,938, with a visible Source note directly after the paragraph and a footer clause. Found by the prose claim pass (F12), the release verified by the orchestrator, November 9, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/01-essential-ideas/05-measurement-uncertainty-accuracy-and-precision.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68690",
+      "sourceElementIds": [
+        "fs-idm125552432"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2904,
+      "rationale": "Rounding Numbers solution (a) gives \"the retained digit is even\" as the reason 31.57 rounds up to 32. The retained 1 is odd and the dropped 5 is followed by the nonzero 7, so the section's own last clause (\"If any nonzero digits follow the dropped 5, round up\") decides it. The page prints \"(the dropped digit is 5, and a nonzero digit follows it)\" with a visible Source note directly after the solution and a footer clause; the result is unchanged. Found by the 1.5 checker, ruled by the orchestrator, November 9, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/01-essential-ideas/05-measurement-uncertainty-accuracy-and-precision.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68690",
+      "sourceElementIds": [
+        "fs-idm174540832"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2905,
+      "rationale": "Rounding Numbers solution (d) gives \"the retained digit is even\" as the reason 0.90275 rounds up to 0.9028. The retained 7 is odd and the dropped 5 is the last digit, so the round-to-even clause rounds up to the even 8. The page prints \"(the dropped digit is 5, and the retained digit is odd)\" with the same Source note as part (a) and a footer clause; the result is unchanged. Found by the 1.5 checker, ruled by the orchestrator, November 9, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/01-essential-ideas/06-mathematical-treatment-of-measurement-results.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68683",
+      "sourceElementIds": [
+        "fs-idm279137456",
+        "fs-idm289883088",
+        "fs-idm144640128"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2907,
+      "rationale": "The antifreeze example prints 4.00 qt × (1 L / 1.0567 qt) = 3.78 L, then 3.78 × 10^3 mL, and 3.78 × 10^3 mL in the density quotient. 4.00 ÷ 1.0567 = 3.785, which rounds to 3.79 L at three significant figures; 3.78 is the truncation, and the density is 1.11 g/mL either way. The page prints 3.79 in all three with a visible Source note directly after the example and a footer clause. Found by the prose claim pass (F16) and independently by the blind solver, ruled by the orchestrator, November 9, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/01-essential-ideas/06-mathematical-treatment-of-measurement-results.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68683",
+      "sourceElementIds": [
+        "fs-idm288599552",
+        "fs-idm223031696"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2909,
+      "rationale": "The paragraph says the 273.15 in the kelvin-Celsius equations \"has been determined experimentally, so it is not exact\". A Celsius temperature is defined as the kelvin temperature minus 273.15, exactly (BIPM, The International System of Units, 9th edition, 2019, §2.3.1 and §2.3.4). The page prints \"is exact: it is part of the definition of the Celsius scale\" with a visible Source note directly after the paragraph and a footer clause. The worked line that follows (fs-idm223031696) adds 273.2 to 37.0, rounding the exact offset first; the page prints 37.0 + 273.15 = 310.2 K, the sum rounded to the tenths place, with a footer clause. Found by the prose claim pass (F14), ruled by the orchestrator, November 9, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/01-essential-ideas/06-mathematical-treatment-of-measurement-results.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68683",
+      "sourceElementIds": [
+        "fs-idm75569040",
+        "fs-idm203762304"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2910,
+      "rationale": "The Check Your Learning answer prints 177.66 °F for 80.92 °C. By the rules Section 1.5 teaches, 80.92 × 9/5 = 145.656 keeps four figures (145.7) and adding the exact 32 gives 177.7 °F; the example the check follows and every other temperature key in the module round that way. The page's Fahrenheit fill-in keys 177.7 with a visible Source note directly after it that prints neither value, and a footer clause; the kelvin fill-in keeps the source's 354.07. First kept as printed with the place stated; overturned by the orchestrator after the cross-page consistency reading, November 9, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/01-essential-ideas/06-mathematical-treatment-of-measurement-results.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68683",
+      "sourceElementIds": [
+        "fs-idm299998176"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2911,
+      "rationale": "The Key Equations list writes T_K = °C + 273.15 and T_°C = K − 273.15, a unit symbol standing in for a temperature, and gives the Fahrenheit-to-Celsius equation a multiplication sign the body's form lacks. The page sets the four equations in the forms the section's body gives them (T_K = T_°C + 273.15, T_°C = T_K − 273.15), with a footer clause. Found by the cross-page consistency reading, ruled by the orchestrator, November 9, 2026."
     }
   ]
 }

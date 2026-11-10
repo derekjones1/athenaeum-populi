@@ -4,6 +4,13 @@
   Math is rendered by Hugo's pinned transform.ToMath implementation and ships
   as static HTML+MathML. There is intentionally no client-side/CDN fallback:
   an authoring error must fail the build instead of becoming a runtime fetch.
+
+  A short inline number in scientific notation is wrapped in `.ap-math-keep`
+  (white-space: nowrap). KaTeX lets inline math break after a binary
+  operator, so `1.497 \times 10^{-3}` could end one line at "×" and start the
+  next at "10⁻³", and a learner reads the given value as 1.497. Only that
+  shape is held together: a long inline expression stays free to wrap on a
+  phone.
 */ -}}
 {{- $engine := site.Params.math.engine | default "katex" -}}
 
@@ -13,7 +20,11 @@
     {{- with .Err -}}
       {{- errorf "transform.ToMath failed to render math (%s): %s" $.Position . -}}
     {{- else -}}
-      {{- .Value -}}
+      {{- if and (ne $.Type "block") (le (len $.Inner) 60) (findRE `\\times\s*10\^` $.Inner 1) -}}
+        <span class="ap-math-keep">{{ .Value }}</span>
+      {{- else -}}
+        {{- .Value -}}
+      {{- end -}}
       {{- $.Page.Store.Set "hasMath" true -}}
     {{- end -}}
   {{- end -}}

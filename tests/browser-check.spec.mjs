@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { readdirSync } from 'node:fs';
 import {
   clearMathField, focusMathField, gotoBuiltPage, waitForUpgrade,
 } from './helpers.mjs';
@@ -1506,4 +1507,219 @@ test('the "On this page" rail is a right-hand drawer below xl, opened from the n
   await gotoBuiltPage(page, '/math/');
   await expect(page.locator('.ap-nav-toc')).toHaveCount(0);
   await expect(page.locator('.ap-toc-scrim')).toHaveCount(0);
+});
+
+// ---- Chemistry: measured quantities typed into the real field ---------------
+//
+// The grader's `sig-figs:<n> last-digit:<k>` path is unit-tested in
+// assets/js/lib/math/. What only a browser can show is what MathLive makes of
+// the keystrokes before the grader sees them, and the engine work found three
+// such defects by hand (a two-digit exponent leaving the superscript after
+// one digit, a unit typed with "/" swallowing the number into a fraction, a
+// formula vanishing from the field's accessible name). Chemistry 1.6 is the
+// book's densest page of measured-quantity fill-ins, so it is the fixture:
+// EVERY one of them is typed, key by key.
+
+/** The keystrokes that type a numeric key: digits, sign, point, and `*10^n` for a power of ten. */
+function keystrokesFor(answer) {
+  const power = answer.match(/^(-?[\d.]+)\\times10\^\{(-?\d+)\}$/);
+  if (power) return `${power[1]}*10^${power[2]}`;
+  return /^-?[\d.]+$/.test(answer) ? answer : null;
+}
+
+test('every measured-quantity fill-in on Chemistry 1.6 grades its own key as typed', async ({ page }) => {
+  test.setTimeout(240_000);
+  await gotoBuiltPage(page, '/physical-sciences/chemistry/01-essential-ideas/06-mathematical-treatment-of-measurement-results/');
+  const cards = page.locator('fill-in[data-answer-form*="sig-figs:"]').filter({ has: page.locator('math-field') });
+  const count = await cards.count();
+  expect(count, 'the page still carries its measured-quantity fill-ins').toBeGreaterThan(40);
+  let powersOfTen = 0;
+  for (let index = 0; index < count; index += 1) {
+    const card = cards.nth(index);
+    const answer = await card.getAttribute('data-answer');
+    const keys = keystrokesFor(answer);
+    expect(keys, `fill-in ${index} is keyed with a number this test can type: ${answer}`).not.toBeNull();
+    if (answer.includes('\\times')) powersOfTen += 1;
+    const field = card.locator('math-field');
+    await focusMathField(page, field);
+    await page.keyboard.type(keys, { delay: 12 });
+    await card.getByRole('button', { name: /check/i }).click();
+    await expect
+      .poll(async () => card.evaluate((el) => el.status), { timeout: 5000, message: `key ${answer} typed as ${keys}` })
+      .toBe('correct');
+  }
+  // The exponent case is the one MathLive's smart superscript used to break.
+  expect(powersOfTen, 'at least one key is a power of ten with a typed exponent').toBeGreaterThan(3);
+});
+
+test('a measured-quantity field keeps a two-digit exponent together, reports a typed unit, and holds back the unrounded readout', async ({ page }) => {
+  await gotoBuiltPage(page, '/physical-sciences/chemistry/01-essential-ideas/06-mathematical-treatment-of-measurement-results/');
+  // The long-ton exercise: 1.0160 × 10³ kg, five significant figures.
+  const card = page.locator('fill-in[data-question^="A long ton is defined as exactly 2240 lb."]');
+  await expect(card).toHaveCount(1);
+  const field = card.locator('math-field');
+  const status = () => card.evaluate((el) => el.status);
+  const feedback = card.locator('.ap-fillin-feedback');
+  const check = async (keys) => {
+    await clearMathField(field);
+    await focusMathField(page, field);
+    await page.keyboard.type(keys, { delay: 15 });
+    await card.getByRole('button', { name: /check/i }).click();
+  };
+
+  // Every digit typed after "^" stays in the exponent: 10^12 is ten to the
+  // twelfth, not ten squared followed by a 2.
+  await check('1.0160*10^12');
+  expect(await field.evaluate((el) => el.value)).toContain('10^{12}');
+  await expect.poll(status).toBe('incorrect');
+
+  // The unrounded value is right and not yet the answer.
+  await check('1016.047');
+  await expect.poll(status).toBe('form');
+  await expect(feedback).toHaveText(/now round it to 5 significant figures/);
+
+  // The right number with its unit typed after it. MathLive knows `kg` and
+  // writes it `\\operatorname{\\mathrm{kg}}`; a compound unit typed with a
+  // solidus becomes a fraction over everything before it; and the book's
+  // abbreviation for inches ends in a period. Each is the right number
+  // labelled, never a wrong answer.
+  for (const labelled of ['1016.0 kg', '1016.0 kg/mol', '1016.0 min', '1016.0 in.']) {
+    await check(labelled);
+    await expect.poll(status, { message: labelled }).toBe('unit');
+    await expect(feedback).toHaveText(/enter it without the unit/i);
+  }
+
+  // The plain decimal is the same number to the same figures.
+  await check('1016.0');
+  await expect.poll(status).toBe('correct');
+});
+
+// Chemistry 1.4 keys each SI prefix's factor as a bare power of ten. Two
+// things only the field can show: a NEGATIVE two-digit exponent typed after
+// "^" stays whole (`10^-12` is `10^{-12}`, where an unbraced `10^-12` would
+// grade incorrect), and the exact factor is right however it is written.
+
+test('an SI prefix factor is typed as a bare power of ten, a negative two-digit exponent included', async ({ page }) => {
+  test.setTimeout(120_000);
+  await gotoBuiltPage(page, '/physical-sciences/chemistry/01-essential-ideas/04-measurements/');
+  const cards = page.locator('fill-in[data-answer^="10^{"]').filter({ has: page.locator('math-field') });
+  const count = await cards.count();
+  expect(count, 'the prefix exercise keys its eight factors').toBe(8);
+  const exponents = [];
+  for (let index = 0; index < count; index += 1) {
+    const card = cards.nth(index);
+    const answer = await card.getAttribute('data-answer');
+    const exponent = answer.match(/^10\^\{(-?\d+)\}$/)[1];
+    exponents.push(exponent);
+    const field = card.locator('math-field');
+    await focusMathField(page, field);
+    await page.keyboard.type(`10^${exponent}`, { delay: 15 });
+    // MathLive braces an exponent of two characters or more and leaves a
+    // single digit bare; either way every character typed is in the exponent.
+    const held = exponent.length === 1 ? [answer, `10^${exponent}`] : [answer];
+    expect(held, `10^${exponent} as typed`).toContain(await field.evaluate((el) => el.value));
+    await card.getByRole('button', { name: /check/i }).click();
+    await expect.poll(async () => card.evaluate((el) => el.status), { message: `key ${answer}` }).toBe('correct');
+  }
+  expect(exponents, 'the two-digit exponents of both signs are among them').toEqual(expect.arrayContaining(['-12', '12']));
+});
+
+test('an SI prefix factor is exact: a written zero is right, a neighbouring power is not', async ({ page }) => {
+  await gotoBuiltPage(page, '/physical-sciences/chemistry/01-essential-ideas/04-measurements/');
+  // A card answered correctly locks its field, so each check that ends
+  // 'correct' is the last on its card.
+  const typeInto = async (card, keys, clear) => {
+    const field = card.locator('math-field');
+    if (clear) await clearMathField(field);
+    await focusMathField(page, field);
+    await page.keyboard.type(keys, { delay: 15 });
+    await card.getByRole('button', { name: /check/i }).click();
+  };
+  const centi = page.locator('fill-in[data-answer="10^{-2}"]');
+  await typeInto(centi, '10^-3', false);
+  await expect.poll(() => centi.evaluate((el) => el.status)).toBe('incorrect');
+  await typeInto(centi, '0.010', true);
+  await expect.poll(() => centi.evaluate((el) => el.status)).toBe('correct');
+  // The book prints the factor with its multiplication sign, "× 10⁻¹".
+  const deci = page.locator('fill-in[data-answer="10^{-1}"]');
+  await typeInto(deci, '*10^-1', false);
+  await expect.poll(() => deci.evaluate((el) => el.status)).toBe('correct');
+});
+
+// ---- Chemistry: what only the rendered page shows ---------------------------
+//
+// The pilot's chapter passed an author, a checker, a claim pass, and a blind
+// solve, all reading Markdown. Five readers then compared the RENDERED pages
+// with print and found three things no source gate can see: a worked
+// example's display row wider than the column (the page scrolls it sideways
+// with no scrollbar, so "(round to three significant figures)" ended at
+// "(round to three sign"), `1.497 × 10⁻³` broken across two lines at its ×,
+// and the source's half-width drawings filling the column. Each is held
+// here, on every Chemistry section page the build has, so the next chapter
+// is read by the test and not by a reader.
+
+function chemistrySectionRoutes() {
+  const root = 'public/physical-sciences/chemistry';
+  const routes = [];
+  for (const chapter of readdirSync(root, { withFileTypes: true })) {
+    if (!chapter.isDirectory() || !/^\d\d-/.test(chapter.name)) continue;
+    for (const section of readdirSync(`${root}/${chapter.name}`, { withFileTypes: true })) {
+      if (section.isDirectory() && /^\d\d-/.test(section.name)) {
+        routes.push(`/physical-sciences/chemistry/${chapter.name}/${section.name}/`);
+      }
+    }
+  }
+  return routes.sort();
+}
+
+test('on every Chemistry page a display row fits the column, scientific notation stays on one line, and a scaled-down figure stays small', async ({ page }) => {
+  const routes = chemistrySectionRoutes();
+  expect(routes.length, 'Chemistry section pages were discovered in public/').toBeGreaterThanOrEqual(6);
+  test.setTimeout(60_000 + routes.length * 6_000);
+  const totals = { displays: 0, kept: 0, keptInStems: 0, scaled: 0 };
+  for (const width of [1280, 390]) {
+    await page.setViewportSize({ width, height: 900 });
+    for (const route of routes) {
+      await gotoBuiltPage(page, route);
+      await page.evaluate(() => document.fonts.ready);
+      const audit = await page.evaluate(() => {
+        const short = (el) => el.textContent.replace(/\s+/g, ' ').trim().slice(0, 60);
+        const displays = [...document.querySelectorAll('.content .katex-display')];
+        const kept = [...document.querySelectorAll('.content .ap-math-keep')];
+        const scaled = [...document.querySelectorAll('.ap-mediafigure[data-scale] img')];
+        return {
+          displays: displays.length,
+          kept: kept.length,
+          keptInStems: kept.filter((el) => el.closest('.ap-fillin-question')).length,
+          scaled: scaled.length,
+          overflowing: displays.filter((el) => el.scrollWidth > el.clientWidth + 1)
+            .map((el) => `${short(el.querySelector('annotation') ?? el)} (${el.scrollWidth} > ${el.clientWidth})`),
+          split: kept.filter((el) => el.getClientRects().length > 1).map(short),
+          wide: scaled.filter((img) => img.getBoundingClientRect().width > 26 * 16 + 1)
+            .map((img) => `${img.closest('figure').dataset.stem} at ${Math.round(img.getBoundingClientRect().width)} px`),
+        };
+      });
+      expect(audit.split, `${route} at ${width} px: a number in scientific notation is split across lines`).toEqual([]);
+      if (width === 1280) {
+        // A phone scrolls a wide row by touch; at desktop width nothing
+        // tells the learner the row goes on.
+        expect(audit.overflowing, `${route}: a display equation row is wider than the column — break the row`).toEqual([]);
+        expect(audit.wide, `${route}: a figure the source marks scaled-down fills the column`).toEqual([]);
+        totals.displays += audit.displays;
+        totals.kept += audit.kept;
+        totals.keptInStems += audit.keptInStems;
+        totals.scaled += audit.scaled;
+      }
+    }
+  }
+  expect(totals.displays, 'display equations were measured').toBeGreaterThan(20);
+  // Body prose goes through the passthrough render hook and a shortcode's
+  // question, hint, and answer display through the `mathtext` partial: both
+  // must wrap (the first version of this test passed with the partial
+  // unwrapped, on table cells alone). Chapter 1 shows 32 such numbers, 8 of
+  // them in fill-in stems; an answer display's is in a <template> until the
+  // item is answered and is not counted.
+  expect(totals.kept, 'inline scientific notation is held together in prose and in stems').toBeGreaterThanOrEqual(30);
+  expect(totals.keptInStems, 'a fill-in stem\'s scientific notation is held together').toBeGreaterThanOrEqual(8);
+  expect(totals.scaled, 'the manifest\'s scaled-down figures reached the page').toBeGreaterThanOrEqual(6);
 });

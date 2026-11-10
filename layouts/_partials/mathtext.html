@@ -31,7 +31,15 @@
       {{- with .Err -}}
         {{- errorf "mathtext: KaTeX failed on %q: %s" $tex . -}}
       {{- else -}}
-        {{- $sb = $sb | append (printf "%s" .Value) -}}
+        {{- /* A short number in scientific notation is held on one line, as
+             the passthrough render hook holds it in body prose
+             (layouts/_markup/render-passthrough.html says why): a stem that
+             ended a line at "1.497 ×" was where the break was first seen. */ -}}
+        {{- if and (le (len $tex) 60) (findRE `\\times\s*10\^` $tex 1) -}}
+          {{- $sb = $sb | append (printf `<span class="ap-math-keep">%s</span>` .Value) -}}
+        {{- else -}}
+          {{- $sb = $sb | append (printf "%s" .Value) -}}
+        {{- end -}}
       {{- end -}}
     {{- end -}}
   {{- else -}}

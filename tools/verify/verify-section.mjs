@@ -142,7 +142,13 @@ function factsPanel(src, interactiveSrc) {
   const multiplechoice = [...shortcodes(practiceSrc, 'multiplechoice')].filter((sc) => sc.closed).length;
   const textin = [...shortcodes(practiceSrc, 'textin')].length;
   const sortbins = [...shortcodes(practiceSrc, 'sortbins')].filter((sc) => sc.closed).length;
-  const practiceTotal = multiplechoice + textin + practiceSelfchecks + sortbins;
+  // Fill-ins too: a Chemistry page's Practice block is mostly numbers, and
+  // its 1.6 author's footer tally had no line here to check against
+  // (November 9, 2026). The body count is the worked examples' Check Your
+  // Learning items.
+  const fillin = [...shortcodes(practiceSrc, 'fillin')].length;
+  const bodyFillins = [...shortcodes(bodySrc, 'fillin')].length;
+  const practiceTotal = multiplechoice + textin + practiceSelfchecks + sortbins + fillin;
 
   const keyTerms = src.match(/\n##[ \t]+Key terms\b([\s\S]*?)(?=\n##[ \t]|$)/);
   const keyTermsCount = keyTerms ? (keyTerms[1].match(/^-\s+\*\*/gm) || []).length : 0;
@@ -151,8 +157,9 @@ function factsPanel(src, interactiveSrc) {
 
   return `  facts: figures ${figures.length} (${kindPart}, ${longdescPart}), `
     + `body selfchecks ${bodySelfchecks}, `
+    + (bodyFillins ? `body fillins ${bodyFillins}, ` : '')
     + `practice items ${practiceTotal} (multiplechoice ${multiplechoice}, textin ${textin}, `
-    + `selfcheck ${practiceSelfchecks}, sortbins ${sortbins}), `
+    + `selfcheck ${practiceSelfchecks}, sortbins ${sortbins}${fillin ? `, fillin ${fillin}` : ''}), `
     + `key terms ${keyTermsCount}, `
     + `selfchecks total ${bodySelfchecks + practiceSelfchecks} (each model answer read against its source solution or, where author-written, the module), `
     + `cross-links ${crossLinks}`;

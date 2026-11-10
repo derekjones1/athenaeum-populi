@@ -292,6 +292,29 @@ test('a source solution that only says the answer is open keys nothing', () => {
   assert.equal(judge('Briefly discuss the most interesting or surprising thing you learned about viruses.', 'A good answer names a specific virus and explains why it surprised the learner.'), 'unkeyed');
   // a solution that goes on to give a sample answer is still compared
   assert.equal(judge('Describe how a prokaryote in a deep-sea vent obtains its energy and carbon.', 'Lytic phages burst their host cells after assembling new virions.'), 'diverges');
+  // ...and a model answer that opens with what a good answer contains and then
+  // carries the source's sample whole is the Chemistry "Answers will vary" form
+  assert.equal(judge('Describe how a prokaryote in a deep-sea vent obtains its energy and carbon.',
+    'A good answer names the energy source and the carbon source of one deep-sea vent prokaryote and says how each is obtained. Responses will vary. A possible answer is that it is a chemolithoautotroph using dissolved carbon dioxide.'), 'reworded');
+  // the criteria sentence without the sample is not that form
+  assert.equal(judge('Describe how a prokaryote in a deep-sea vent obtains its energy and carbon.',
+    'A good answer names the energy source and the carbon source of one deep-sea vent prokaryote and says how each is obtained.'), 'diverges');
+});
+
+test('a bare-value source solution framed in the question\'s own words is reworded; framed in other words it diverges', () => {
+  // Chemistry 1.4: the simulation exercise's key is symbols and values only.
+  const bare = readModule(`<document xmlns="http://cnx.rice.edu/cnxml"><content>
+    <exercise id="sim"><problem><para>Use the water displacement approach to measure the mass and volume of the unknown material (select the green block with question marks).</para></problem>
+      <solution><para>m = 18.58 g, V = 5.7 mL</para></solution></exercise>
+  </content></document>`);
+  const question = 'Use the water displacement approach to measure the mass and volume of the unknown material (select the green block with question marks).';
+  const judge = (model) => judgeSelfcheck({ type: 'selfcheck', question, model }, bare).status;
+  assert.equal(judge('m = 18.58 g, V = 5.7 mL'), 'verbatim');
+  assert.equal(judge('The mass of the unknown material is m = 18.58 g, and the volume is V = 5.7 mL.'), 'reworded');
+  // the framing must be the question's: an explanation the source does not give is a divergence
+  assert.equal(judge('Because the block sinks, its density exceeds that of water, which follows from m = 18.58 g, V = 5.7 mL and from buoyancy.'), 'diverges');
+  // and the values must all be there
+  assert.equal(judge('The mass of the unknown material is m = 18.58 g.'), 'diverges');
 });
 
 test('a one-phrase source solution carried whole in a sentence-long model answer is reworded, not diverging', () => {

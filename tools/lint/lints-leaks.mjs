@@ -476,6 +476,44 @@ export function lintLeaks(src, filename = '') {
     const where = labelOf('textin', item.params);
     const spellings = gradedSpellings(item.params);
 
+    // ---- the key carries an operator the text grader drops (Chemistry) -----
+    // The text grader reads `/`, `·`, `×`, `*`, and `°` as spaces, so
+    // `kg/m3` and `kg·m3` are one string and `°K` is `K`. A derived unit's
+    // quotient-or-product is the very thing such an item tests, and the body
+    // teaches that kelvin takes no degree sign: the pilot's 1.4 page marked
+    // "meters·second" right for a speed and "°K" right for a temperature.
+    // Such a key is a `multiplechoice` whose distractors are the product,
+    // the inverse, and the degree-marked form.
+    if (chemistry) {
+      const operator = [String(item.params.answer ?? ''), ...String(item.params.accept ?? '').split('|')]
+        .find((member) => /[\/·×*°]/.test(member));
+      if (operator) {
+        err(item.index, `${where}: its key ${JSON.stringify(operator)} carries an operator or degree sign the text grader reads as a space (a product would pass for the quotient, "°K" for "K") — ask a derived unit or a degree-marked unit as a \`multiplechoice\``);
+      }
+    }
+
+    // ---- the key is a word of its own objective heading (Chemistry) -------
+    // Chemistry 2e keys only half its exercises, so an objective with no
+    // keyed exercise is covered by fillers alone — and the easy filler is a
+    // recall of the objective's own words. The pilot's 1.2 page filled
+    // "Distinguish between mass and weight" with two textins keyed `weight`
+    // and `mass`: with the heading printing both, each is answered by
+    // elimination, and nothing else in the group was graded. The
+    // life-sciences books treat a heading-printed key as a preference (their
+    // groups always hold keyed source items too); here it is the rule.
+    if (chemistry && inPractice(item.index)) {
+      const before = text.slice(0, item.index);
+      const headings = [...before.matchAll(/^###[ \t]+(.+)$/gm)];
+      const heading = headings.length ? headings[headings.length - 1] : null;
+      if (heading && heading.index > practiceStart) {
+        const headingText = normalizeText(heading[1]);
+        const printed = spellings.find((s) => containsWholeWordRun(headingText, s.norm));
+        if (printed) {
+          err(item.index, `${where}: its key ${JSON.stringify(printed.member)} is printed (as ${JSON.stringify(printed.norm)}) in its own objective heading \`### ${heading[1].trim()}\` — a filler's key is never a word its heading prints; blank a word of the body sentence the heading does not print`);
+        }
+      }
+    }
+
     // ---- the "directly above" leak ----------------------------------------
     // The item directly above a `textin` is the last thing a learner read
     // before the blank, so if its stem, its options, or its hint prints the
@@ -693,6 +731,47 @@ export function lintLeaks(src, filename = '') {
   // electrons" for a how-many-shells item). Life sciences only: a math hint
   // states the decision rule ("opposite signs mean a hyperbola"), which
   // names the answer category by design.
+  // ---- Chemistry: what only reading the pilot's six pages together found ----
+  // Each page had passed its own author and checker; these four shapes were
+  // legal on any one page and wrong across them (November 9, 2026).
+  if (chemistry) {
+    for (const item of items) {
+      const question = String(item.params.question ?? '');
+      const where = labelOf(item.kind, item.params);
+      // 1.6 wrote "Enter the temperature in degrees Celsius, with its sign."
+      // on its two negative keys and on none of its positive ones.
+      if (/\bwith its sign\b/i.test(question)) {
+        err(item.index, `${where}: "with its sign" — a negative answer is typed with its minus sign as a matter of course, and the phrase, which pages wrote on negative keys only, tells the learner the sign; drop it`);
+      }
+      // A display equation set inline in a stem and run into the next
+      // sentence: "…$d = \frac{m}{V}$ Considering that…" (1.3).
+      const run = /\$[^$]*=[^$]*\$[ \t]+([A-Z][a-z]{2,})/.exec(question);
+      if (run) {
+        err(item.index, `${where}: the inline equation runs into the next sentence ("… ${run[1]}") with no punctuation — an equation set inline in a stem ends its sentence with a period`);
+      }
+    }
+    // The footer is on the page the learner answers on. 1.2's said
+    // "(blank: gravity)" of an added cloze.
+    for (const footer of text.matchAll(/<small>[\s\S]*?<\/small>/g)) {
+      const blank = /\(blank:/i.exec(footer[0]);
+      if (blank) {
+        err(footer.index + blank.index, 'the footer prints an added item\'s key ("(blank: …)") — name the item by where its sentence is ("a cloze on the Summary sentence that defines weight"), never by its answer');
+      }
+    }
+    // Key terms: every definition closes with a period (1.5's seven did not).
+    const keyTerms = /^## Key terms[ \t]*$/m.exec(text);
+    if (keyTerms) {
+      const after = keyTerms.index + keyTerms[0].length;
+      const next = /^## /m.exec(text.slice(after));
+      const block = text.slice(after, next ? after + next.index : text.length);
+      for (const bullet of block.matchAll(/^- [^\n]*(?:\n(?!- |\n)[^\n]+)*/gm)) {
+        if (!/[.!?][)”"*]*\s*$/.test(bullet[0])) {
+          err(after + bullet.index, `Key terms: the entry ${JSON.stringify(bullet[0].slice(0, 40))}… does not end with a period — every definition closes with one`);
+        }
+      }
+    }
+  }
+
   if (lifeSciences) {
     const COUNT = /^(?:\d+|zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve)$/;
     for (const item of items) {

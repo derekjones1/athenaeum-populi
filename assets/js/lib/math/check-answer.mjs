@@ -26,7 +26,7 @@
  */
 
 import { ComputeEngine } from '@cortex-js/compute-engine';
-import { compareMeasured, numeralFromNumber, readNumeral } from './significant-figures.mjs';
+import { compareMeasured, numeralFromNumber, readNumeral, sameNumber } from './significant-figures.mjs';
 
 // One engine for the whole page. FillIn hands this same instance to
 // MathLive (MathfieldElement.computeEngine) so the field and the grader
@@ -4938,6 +4938,18 @@ function improperFractionTerm(term) {
 
 const FORM_PREDICATES = {
   fraction: (latex) => asFraction(latex) !== null,
+  // A COUNT: digits only, no decimal point. "How many significant figures
+  // does the conversion factor justify?" is keyed 2, and under `decimal` the
+  // stem's own "2.0 L" retyped is the same value in a decimal's shape —
+  // graded correct (Chemistry 2e 1.6, the pilot). A count has no tenths to
+  // write, so the point itself is what this refuses; every member of a list
+  // of counts is held to it, as under `decimal`.
+  'whole-number': (latex) => {
+    const whole = (text) => /^[+-]?\d+$/.test(stripGroupingCommas(bareLatex(text)));
+    if (whole(latex)) return true;
+    const members = splitTopLevelCommas(stripGroupingCommas(bareLatex(latex)));
+    return members.length >= 2 && members.every(whole);
+  },
   // An ordered pair keyed with numbers — "(-1,-6)" — is a decimal in each
   // coordinate: `(-1,2(-1)-4)` is the substitution left unworked.
   decimal: (latex) => {
@@ -6936,6 +6948,7 @@ export const ANSWER_FORM_TOKENS = Object.freeze([...Object.keys(FORM_PREDICATES)
  */
 const FORM_PHRASES = {
   fraction: 'as a fraction',
+  'whole-number': 'as a whole number, with no decimal point',
   decimal: 'as a decimal',
   percent: 'as a percent, with the % sign',
   'rational-exponent': 'with a rational exponent in lowest terms, not a radical',
@@ -7037,7 +7050,7 @@ const NOTATION_FEEDBACK = {
 
 // The tokens whose shape is a number: a response refused under only these,
 // written with no letter in it, is arithmetic the learner left undone.
-const NUMBER_SHAPE_TOKENS = new Set(['decimal', 'fraction', 'percent', 'lowest-terms', 'mixed-number',
+const NUMBER_SHAPE_TOKENS = new Set(['decimal', 'whole-number', 'fraction', 'percent', 'lowest-terms', 'mixed-number',
   'improper-fraction', 'fraction-or-mixed-number']);
 
 /**
@@ -8526,8 +8539,15 @@ function measuredSpec(spec) {
 // What may follow a measured numeral and still be its unit: letters (one is
 // enough here), `\text{…}` and its kin, the Greek and degree marks units are
 // written with, a solidus, a `\cdot` between unit factors, parentheses, and a
-// unit's own small exponent (`m/s^2`, `mol^{-1}`).
-const MEASURED_UNIT_PIECE = String.raw`\s|[A-Za-zµμΩÅ°]|\\(?:text|textrm|mathrm|operatorname)\s*\{[^{}]*\}|\\(?:mu|Omega|degree|AA|circ|cdot)(?![a-zA-Z])|\/|\(|\)|\^\s*(?:\{\s*-?\d\s*\}|-?\d)|\^\s*\{?\s*\\circ\s*\}?`;
+// unit's own small exponent (`m/s^2`, `mol^{-1}`). The wrapper may nest once:
+// MathLive knows `kg` as a unit and writes it `\operatorname{\mathrm{kg}}`,
+// which the first browser run of a measured-quantity page graded 'incorrect'
+// for the right number (Chemistry 2e 1.6, the pilot).
+// The same run showed three more spellings the field hands over: `min` typed
+// as a unit arrives as the operator `\min`, `torr` as `t\lor r` (MathLive
+// reads the "or"), and the book's own abbreviation for inches ends in a
+// period, `in.`.
+const MEASURED_UNIT_PIECE = String.raw`\s|[A-Za-zµμΩÅ°]|\\(?:text|textrm|mathrm|operatorname)\s*\{(?:[^{}]|\{[^{}]*\})*\}|\\(?:mu|Omega|degree|AA|circ|cdot|min|lor)(?![a-zA-Z])|\.|\/|\(|\)|\^\s*(?:\{\s*-?\d\s*\}|-?\d)|\^\s*\{?\s*\\circ\s*\}?`;
 const MEASURED_UNIT_TAIL = new RegExp(`^(?:${MEASURED_UNIT_PIECE})+$`);
 const MEASURED_UNIT_INK = /[A-Za-zµμΩÅ°]/;
 const PERCENT_SIGN_ONLY = /^\\?%$/;
@@ -8605,7 +8625,17 @@ function measuredVerdict(studentRaw, answerRaw, options = {}) {
       ? { verdict: 'incorrect' }
       : { verdict: 'form', reason: 'unworked' };
   }
-  const compared = compareMeasured(writing.numeral, key, spec);
+  let compared = compareMeasured(writing.numeral, key, spec);
+  // A key written as a bare power of ten (`10^{-2}`) is an EXACT factor — an
+  // SI prefix, a conversion defined by a power of ten — not a measurement
+  // that happens to show one figure. `0.010` and `1.0\times10^{-2}` are that
+  // factor, and "round to 1 significant figure" would be a false correction
+  // (Chemistry 2e 1.4, the pilot's checker). A measured one-figure result is
+  // keyed with its coefficient, `1\times10^{3}`, and keeps the count.
+  // By the same reading `0.0104` is not the factor "unrounded": it is another number.
+  if (key.bare && compared.verdict === 'form' && compared.reason === 'too-many') {
+    compared = { verdict: sameNumber(writing.numeral, key) ? 'correct' : 'incorrect' };
+  }
   if (compared.verdict !== 'correct') return compared;
   // A right number with its unit (or a percent sign the key does not carry)
   // is the right number labelled: the question names the unit.

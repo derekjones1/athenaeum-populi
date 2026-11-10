@@ -13,13 +13,14 @@
 - `biology-bundle` — [https://github.com/openstax/osbooks-biology-bundle](https://github.com/openstax/osbooks-biology-bundle), review target `63f8b6f8d129dd1582989bb755011e9a6d523471`
 - `microbiology` — [https://github.com/openstax/osbooks-microbiology](https://github.com/openstax/osbooks-microbiology), review target `633850257fbd3ccf6187b9428c55e80b69236382`
 - `anatomy-physiology` — [https://github.com/openstax/osbooks-anatomy-physiology](https://github.com/openstax/osbooks-anatomy-physiology), review target `5ae32b3f4bc24ed003e91dc38bf47dba80751044`
+- `chemistry-bundle` — [https://github.com/openstax/osbooks-chemistry-bundle](https://github.com/openstax/osbooks-chemistry-bundle), review target `cf857abfecc7af366e67bd5cee1cc85f6d26e6c7`
 
 ## Coverage
 
-- Mapped local sections: 778
-- Sections changed upstream: 52
-- Content-level changes: 39
-- Markup/metadata-only changes: 13
+- Mapped local sections: 784
+- Sections changed upstream: 58
+- Content-level changes: 41
+- Markup/metadata-only changes: 17
 - Changed Try It records: 3
 - Changed Try Its where local math matches the PDF-era form: 0
 - Local-impact drift decisions recorded: 4
@@ -33,6 +34,7 @@
 - biology (`biology-bundle`): `5c58838d2594bc5817127fdc47e127c30b44f2c2`
 - microbiology (`microbiology`): `633850257fbd3ccf6187b9428c55e80b69236382`
 - anatomy-physiology (`anatomy-physiology`): `716383a4c6c16037b14d75a156c65145e75e895e`
+- chemistry (`chemistry-bundle`): `7d41ed008e9b83a6690c09c26a16f63f96046ec0` — in-progress, 6 sections mapped
 
 ## Changed mapped sections
 
@@ -312,5 +314,35 @@ Module `m49448`; content-changed. Changed lanes: instructionalText.
 ### precalculus 12.3 — [content/math/precalculus/12-introduction-to-calculus/03-continuity.md](../../content/math/precalculus/12-introduction-to-calculus/03-continuity.md)
 
 Module `m49454`; content-changed. Changed lanes: instructionalText.
+
+
+### chemistry 1.1 — [content/physical-sciences/chemistry/01-essential-ideas/01-chemistry-in-context.md](../../content/physical-sciences/chemistry/01-essential-ideas/01-chemistry-in-context.md)
+
+Module `m68664`; content-changed. Changed lanes: instructionalText.
+
+
+### chemistry 1.2 — [content/physical-sciences/chemistry/01-essential-ideas/02-phases-and-classification-of-matter.md](../../content/physical-sciences/chemistry/01-essential-ideas/02-phases-and-classification-of-matter.md)
+
+Module `m68667`; markup-or-metadata-only. Changed lanes: raw XML only.
+
+
+### chemistry 1.3 — [content/physical-sciences/chemistry/01-essential-ideas/03-physical-and-chemical-properties.md](../../content/physical-sciences/chemistry/01-essential-ideas/03-physical-and-chemical-properties.md)
+
+Module `m68670`; markup-or-metadata-only. Changed lanes: raw XML only.
+
+
+### chemistry 1.4 — [content/physical-sciences/chemistry/01-essential-ideas/04-measurements.md](../../content/physical-sciences/chemistry/01-essential-ideas/04-measurements.md)
+
+Module `m68674`; markup-or-metadata-only. Changed lanes: raw XML only.
+
+
+### chemistry 1.5 — [content/physical-sciences/chemistry/01-essential-ideas/05-measurement-uncertainty-accuracy-and-precision.md](../../content/physical-sciences/chemistry/01-essential-ideas/05-measurement-uncertainty-accuracy-and-precision.md)
+
+Module `m68690`; markup-or-metadata-only. Changed lanes: raw XML only.
+
+
+### chemistry 1.6 — [content/physical-sciences/chemistry/01-essential-ideas/06-mathematical-treatment-of-measurement-results.md](../../content/physical-sciences/chemistry/01-essential-ideas/06-mathematical-treatment-of-measurement-results.md)
+
+Module `m68683`; content-changed. Changed lanes: instructionalText.
 
 

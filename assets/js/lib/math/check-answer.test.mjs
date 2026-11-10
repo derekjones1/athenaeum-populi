@@ -1454,6 +1454,9 @@ const formCases = [
   // Product Property combines `\sqrt{10}\sqrt{y}` into `\sqrt{10y}`
   ['\\frac{\\sqrt{10}\\sqrt{y}+\\sqrt{30}}{y-3}', '\\frac{\\sqrt{10}(\\sqrt{y}+\\sqrt{3})}{y-3}', 'simplified-radical', 'form'],
   ['\\frac{\\sqrt{10y}+\\sqrt{30}}{y-3}', '\\frac{\\sqrt{10}(\\sqrt{y}+\\sqrt{3})}{y-3}', 'simplified-radical', 'correct'],
+  // whole-number: a count takes no decimal point (Chemistry 2e 1.6)
+  ['2.0', '2', 'whole-number', 'form'],
+  ['2', '2', 'whole-number', 'correct'],
   // no answerForm — grading is exactly what it was
   ['0.5', '\\frac{1}{2}', undefined, 'correct'],
   ['\\frac{2}{4}', '\\frac{1}{2}', undefined, 'correct'],
@@ -4728,6 +4731,13 @@ const measuredQuantities = [
   ['2.957\\times10^{-2}', '2.957\\times10^{-2}', 'sig-figs:4 last-digit:0', 'correct'],
   ['0.02957', '2.957\\times10^{-2}', 'sig-figs:4 last-digit:0', 'correct'],
   ['0.02957', '2.957\\times10^{-2}', 'sig-figs:4 last-digit:0 scientific-notation', 'form'],
+  // a key whose coefficient is 1: the bare power of ten is the same number to one figure
+  ['10^{12}', '1\\times10^{12}', 'sig-figs:1 last-digit:0', 'correct'],
+  ['10^{12}', '1\\times10^{12}', 'sig-figs:1 last-digit:0 scientific-notation', 'form', 'in scientific notation'],
+  ['1\\times10^{12}', '1\\times10^{12}', 'sig-figs:1 last-digit:0 scientific-notation', 'correct'],
+  // two figures short is not "right as far as it goes"
+  ['0.7', '0.674', M, 'incorrect'],
+  ['90', '89.4', M, 'incorrect'],
   ['0.0296', '0.0296', 'sig-figs:3 last-digit:0 decimal', 'correct'],
   ['2.96\\times10^{-2}', '0.0296', 'sig-figs:3 last-digit:0 decimal', 'form', 'as a decimal to 3 significant figures'],
   // a rounding drill: the last digit is determined (Chemistry 2e 1.5)
@@ -4800,4 +4810,72 @@ test('the measured-quantity tokens parse, describe themselves, and reject what t
   assert.equal(checkFormAsGraded('0.67', 'sig-figs:3 last-digit:1', '0.674'), false);
   assert.equal(checkFormAsGraded('350', 'sig-figs:2 last-digit:1', '350'), true);
   assert.equal(checkFormAsGraded('6.52/128.9', 'sig-figs:3 last-digit:1', '0.674'), false);
+});
+
+test('whole-number: a count refuses a decimal point, and so the stem\'s own 2.0 retyped', () => {
+  // Chemistry 2e 1.6: "How many significant figures can you justify?" keyed 2,
+  // under a stem that prints "2.0 L".
+  assert.equal(checkAnswer('2', '2', { form: 'whole-number' }), 'correct');
+  assert.equal(checkAnswer('2.0', '2', { form: 'whole-number' }), 'form');
+  assert.equal(checkAnswer('2.0', '2', { form: 'decimal' }), 'correct', 'what decimal alone lets through');
+  assert.equal(checkAnswer('3', '2', { form: 'whole-number' }), 'incorrect');
+  assert.equal(checkAnswer('1+1', '2', { form: 'whole-number' }), 'form');
+  assert.equal(checkAnswer('\\left(2+1-1\\right)', '2', { form: 'whole-number' }), 'form', 'the lint\'s unworked key');
+  assert.equal(checkAnswer('27,440', '27440', { form: 'whole-number' }), 'correct', 'digit grouping is not a decimal point');
+  assert.equal(checkAnswer('-3', '-3', { form: 'whole-number' }), 'correct');
+  assert.equal(checkAnswer('2,5', '2,5', { form: 'whole-number' }), 'correct');
+  assert.equal(checkAnswer('2.0,5', '2,5', { form: 'whole-number' }), 'form');
+  assert.equal(describeFormFeedback('2.0', 'whole-number', '2'), 'That value is right — now write it as a whole number, with no decimal point.');
+});
+
+test('an SI prefix factor is keyed as the bare power of ten and typed any of the ways the book prints it', () => {
+  // Chemistry 2e 1.4: "centi-, × 10⁻²". The key is `10^{-2}`; one significant
+  // figure, the last digit determined.
+  const form = 'sig-figs:1 last-digit:0';
+  for (const typed of ['10^{-2}', '\\times10^{-2}', '1\\times10^{-2}', '0.01', '\\cdot10^{-2}']) {
+    assert.equal(checkAnswer(typed, '10^{-2}', { form }), 'correct', typed);
+  }
+  assert.equal(checkAnswer('10^{12}', '10^{12}', { form }), 'correct');
+  assert.equal(checkAnswer('\\times10^{12}', '10^{12}', { form }), 'correct');
+  assert.equal(checkAnswer('10^{-3}', '10^{-2}', { form }), 'incorrect');
+  assert.equal(checkAnswer('0.010', '10^{-2}', { form }), 'correct', 'the factor is exact: a written zero is not a rounding error');
+  assert.equal(checkAnswer('10^{2}', '10^{-2}', { form }), 'incorrect');
+});
+
+test('a bare power-of-ten key is an exact factor: an equal value is right whatever figures it shows', () => {
+  const prefix = (response, key = '10^{-2}') => checkAnswer(response, key, { form: 'sig-figs:1 last-digit:0' });
+  for (const right of ['10^{-2}', '\\times10^{-2}', '1\\times10^{-2}', '0.01', '0.010', '1.0\\times10^{-2}', '1.000\\times10^{-2}']) {
+    assert.equal(prefix(right), 'correct', right);
+  }
+  assert.equal(prefix('1000', '10^{3}'), 'correct');
+  assert.equal(prefix('1000.', '10^{3}'), 'correct');
+  assert.equal(prefix('1.000\\times10^{3}', '10^{3}'), 'correct');
+  // a neighbouring power, a value that only ROUNDS to the factor, and the bare exponent are still wrong
+  assert.equal(prefix('10^{-3}'), 'incorrect');
+  assert.equal(prefix('0.011'), 'incorrect');
+  assert.equal(prefix('0.0104'), 'incorrect');
+  assert.equal(prefix('-2'), 'incorrect');
+  assert.equal(prefix('10^{-2}\\text{ m}'), 'unit');
+  // a key written WITH its coefficient is a measured one-figure number and keeps the count
+  const measured = (response) => checkAnswer(response, '1\\times10^{3}', { form: 'sig-figs:1 last-digit:0' });
+  assert.equal(measured('1\\times10^{3}'), 'correct');
+  assert.equal(measured('1.0\\times10^{3}'), 'form');
+});
+
+test('a unit MathLive wraps as a nested operator name is still a unit after the right number', () => {
+  // Typed "1016.0 kg" in the real field: `1016.0\operatorname{\mathrm{kg}}`.
+  const form = 'sig-figs:5 last-digit:1';
+  const key = '1.0160\\times10^{3}';
+  assert.equal(checkAnswer('1016.0\\operatorname{\\mathrm{kg}}', key, { form }), 'unit');
+  assert.equal(checkAnswer('1.0160\\cdot10^3\\operatorname{\\mathrm{kg}}', key, { form }), 'unit');
+  assert.equal(checkAnswer('\\frac{1016.0\\operatorname{\\mathrm{kg}}}{\\operatorname{\\mathrm{mol}}}', key, { form }), 'unit');
+  // minutes, torr, and the book's "in." as the field writes them
+  assert.equal(checkAnswer('1016.0\\min', key, { form }), 'unit');
+  assert.equal(checkAnswer('1016.0t\\lor r', key, { form }), 'unit');
+  assert.equal(checkAnswer('1016.0in.', key, { form }), 'unit');
+  // a stray period with no unit is not one, and a logical "or" between two numbers is not a unit
+  assert.notEqual(checkAnswer('1016.0.', key, { form }), 'unit');
+  assert.notEqual(checkAnswer('1016.0\\lor1016.0', key, { form }), 'unit');
+  // the wrong number with a unit is still the wrong number
+  assert.equal(checkAnswer('1020.0\\operatorname{\\mathrm{kg}}', key, { form }), 'incorrect');
 });

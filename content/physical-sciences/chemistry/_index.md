@@ -6,7 +6,7 @@ prerequisites: [Intermediate Algebra]
 source: OpenStax Chemistry 2e
 seo_title: "Chemistry – Free Interactive General Chemistry Textbook | Athenaeum Populi"
 linkTitle: "Overview"
-authoring_status: scaffolded
+authoring_status: in-progress
 cascade:
   type: docs
 ---
@@ -24,7 +24,8 @@ chemistry, and nuclear chemistry.
 
 {{< callout type="warning" >}}
   **This book is being written.** Chapters are published as they are
-  finished and verified, in order; the list below shows what is planned.
+  finished and verified, in order; the list below shows what is available
+  now and what is planned.
 {{< /callout >}}
 
 {{< callout type="info" >}}
@@ -37,13 +38,14 @@ chemistry, and nuclear chemistry.
 
 ## Chapters
 
-No chapters are published yet.
-
-## Planned contents
-
 - **Essential Ideas** — chemistry in context, the phases and classification
   of matter, physical and chemical properties, measurements, measurement
   uncertainty, and the mathematical treatment of measurement results.
+
+## Planned contents
+
+The remaining chapters of Chemistry 2e will appear in this order:
+
 - **Atoms, Molecules, and Ions** — atomic theory and its evolution, atomic
   structure and symbolism, chemical formulas, the periodic table, ionic and
   molecular compounds, and chemical nomenclature.

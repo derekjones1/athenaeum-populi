@@ -417,3 +417,69 @@ test('a formula set by hand in math is an error in the Chemistry book only', () 
   // Code is documentation.
   assert(!hasError('Write `$H_2O$` as `$\\ce{H2O}$`.\n', /set by hand/, CHEM));
 });
+
+test('in the Chemistry book a textin is never keyed to a word of its own objective heading', () => {
+  const group = (heading, ...items) => `## Summary\n\nText.\n\n## Practice\n\n### ${heading}\n\n${items.join('\n\n')}\n`;
+  const weight = textin('The force that gravity exerts on an object is its ________.', 'weight');
+  const gravity = textin('Weight refers to the force that ________ exerts on an object.', 'gravity');
+  const hit = (src, file = CHEM) => errorsOf(src, file).filter((e) => /its own objective heading/.test(e));
+  assert.equal(hit(group('Distinguish between mass and weight', weight)).length, 1);
+  assert.match(hit(group('Distinguish between mass and weight', weight))[0], /its key "weight" is printed \(as "weight"\) in its own objective heading `### Distinguish between mass and weight`/);
+  assert.deepEqual(hit(group('Distinguish between mass and weight', gravity)), []);
+  // The plural the grader folds is the same word: "atoms" in the heading, `atom` keyed.
+  assert.equal(hit(group('Define and give examples of atoms and molecules', textin('The smallest particle of an element is an ________.', 'atom'))).length, 1);
+  // A key the heading of ANOTHER group prints is not this rule.
+  const two = `${group('Distinguish between mass and weight', gravity)}\n### Apply the law of conservation of matter\n\n${weight}\n`;
+  assert.deepEqual(hit(two), []);
+  // Life sciences keeps it a preference, and a body item has no objective heading.
+  assert.deepEqual(hit(group('Distinguish between mass and weight', weight), BIO), []);
+  assert.deepEqual(hit(`### Mass and weight\n\n${weight}\n\n## Practice\n\n### Explain the thing\n\n${gravity}\n`), []);
+});
+
+test('in the Chemistry book a textin key never carries an operator the text grader drops', () => {
+  const page = (item) => `Body text.\n\n${item}\n`;
+  const hit = (src, file = CHEM) => errorsOf(src, file).filter((e) => /reads as a space/.test(e));
+  const speed = textin('The SI derived unit of speed is ________.', 'meters/second');
+  assert.equal(hit(page(speed)).length, 1);
+  assert.match(hit(page(speed))[0], /its key "meters\/second" carries an operator/);
+  // An accept member is graded exactly as the key is.
+  const kelvin = textin('The SI base unit of temperature is the ________.', 'kelvin').replace('answer="kelvin"', 'answer="kelvin" accept="K|°K"');
+  assert.match(hit(page(kelvin))[0], /its key "°K" carries/);
+  assert.equal(hit(page(textin('The SI unit of density is kg per ________.', 'kilograms·cubic meter'))).length, 1);
+  // A unit NAME with no operator is a fine textin, and the life-sciences books are not read.
+  assert.deepEqual(hit(page(textin('The SI base unit of length is the ________.', 'meter'))), []);
+  assert.deepEqual(hit(page(textin('The SI unit of volume is the ________.', 'cubic meters').replace('answer="cubic meters"', 'answer="cubic meters" accept="m3|meters cubed"'))), []);
+  assert.deepEqual(hit(page(speed), BIO), []);
+});
+
+test('in the Chemistry book a stem never says "with its sign" and never runs an inline equation into the next sentence', () => {
+  const fillin = (question) => `{{< fillin\n  question="${question}"\n  answer="-23"\n  answerForm="sig-figs:2 last-digit:0"\n  hint="Use the equation above."\n>}}`;
+  const page = (item) => `Body text.\n\n${item}\n`;
+  const sign = (src, file = CHEM) => errorsOf(src, file).filter((e) => /with its sign/.test(e));
+  assert.equal(sign(page(fillin('Convert −10 °F. Enter the temperature in degrees Celsius, with its sign.'))).length, 1);
+  assert.deepEqual(sign(page(fillin('Convert −10 °F. Enter the temperature in degrees Celsius.'))), []);
+  assert.deepEqual(sign(page(fillin('Enter the charge with its sign.')), BIO), []);
+  const run = (src, file = CHEM) => errorsOf(src, file).filter((e) => /runs into the next sentence/.test(e));
+  // Chemistry 1.3's density stem as the pilot first shipped it.
+  assert.equal(run(page(fillin('Density is the ratio $d = \\frac{m}{V}$ Considering that mass is extensive, explain.'))).length, 1);
+  assert.deepEqual(run(page(fillin('Density is the ratio $d = \\frac{m}{V}$. Considering that mass is extensive, explain.'))), []);
+  // A unit symbol after an inline equation is not a new sentence.
+  assert.deepEqual(run(page(fillin('A gas has $V = 22.4$ L at $P = 101.3$ Pa. Find its temperature.'))), []);
+});
+
+test('in the Chemistry book the footer never prints a blank\'s key and every Key term closes with a period', () => {
+  const page = (keyTerms, footer) => `Body text.\n\n## Summary\n\n- Text.\n\n## Key terms\n\n${keyTerms}\n\n## Practice\n\n### Explain the thing\n\n${textin('The force that ________ exerts on an object is its weight.', 'gravity')}\n\n---\n\n<small>${footer}</small>\n`;
+  const terms = '- **mass** — fundamental property indicating amount of matter.\n- **weight** — force that gravity exerts\n  on an object.';
+  const blank = (src, file = CHEM) => errorsOf(src, file).filter((e) => /footer prints an added item's key/.test(e));
+  assert.equal(blank(page(terms, 'Added: a cloze on the weight sentence (blank: gravity).')).length, 1);
+  assert.deepEqual(blank(page(terms, 'Added: a cloze on the Summary sentence that defines weight.')), []);
+  assert.deepEqual(blank(page(terms, 'Added: a cloze (blank: gravity).'), BIO), []);
+  const period = (src, file = CHEM) => errorsOf(src, file).filter((e) => /does not end with a period/.test(e));
+  assert.deepEqual(period(page(terms, 'Footer.')), []);
+  const open = '- **mass** — fundamental property indicating amount of matter\n- **weight** — force that gravity exerts\n  on an object';
+  assert.equal(period(page(open, 'Footer.')).length, 2);
+  assert.match(period(page(open, 'Footer.'))[0], /Key terms: the entry "- \*\*mass\*\*/);
+  // A definition may close inside a parenthesis or a quotation.
+  assert.deepEqual(period(page('- **liter (L)** — unit of volume (also, cubic decimeter.)', 'Footer.')), []);
+  assert.deepEqual(period(page(open, 'Footer.'), BIO), []);
+});

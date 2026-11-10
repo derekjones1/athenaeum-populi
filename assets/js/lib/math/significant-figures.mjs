@@ -35,6 +35,14 @@ const POWER_OF_TEN = String.raw`\s*(?:\\times|\\cdot|\*)\s*10\s*\^\s*(?:\{\s*([+
 // there is no variable, so both spellings are the power of ten.
 const E_NOTATION = String.raw`\s*(?:[eE]|\{[eE]\})\s*([+-]?\s*\d+)`;
 const NUMERAL = new RegExp(String.raw`^([+-]?)\s*(${DECIMAL})(?:${POWER_OF_TEN}|${E_NOTATION})?`);
+// A bare power of ten, `10^{12}`: the coefficient 1 left unwritten. It is
+// the number 1 × 10¹² showing one significant figure — a learner asked for a
+// one-figure answer who types it has the value and the count right, and
+// whether the coefficient must be WRITTEN is the `scientific-notation`
+// token's question, not this reader's (Chemistry 2e 1.6, the pilot).
+// A leading multiplication sign is the same unwritten 1: the book prints an
+// SI prefix's factor as "× 10⁻²", and a learner copies it (1.4, the pilot).
+const BARE_POWER_OF_TEN = /^([+-]?)\s*(?:(?:\\times|\\cdot|\*)\s*)?10\s*\^\s*(?:\{\s*([+-]?\d+)\s*\}|(\d))/;
 
 /**
  * Read the numeral that OPENS `text` — a plain decimal, scientific notation
@@ -52,6 +60,20 @@ const NUMERAL = new RegExp(String.raw`^([+-]?)\s*(${DECIMAL})(?:${POWER_OF_TEN}|
  */
 export function readNumeral(text) {
   const source = String(text ?? '').trim();
+  const bare = source.match(BARE_POWER_OF_TEN);
+  if (bare) {
+    return {
+      negative: bare[1] === '-',
+      mantissa: 1n,
+      exponent: Number(bare[2] ?? bare[3]),
+      sigMin: 1,
+      sigMax: 1,
+      scientific: true,
+      bare: true,
+      written: bare[0],
+      rest: source.slice(bare[0].length),
+    };
+  }
   const match = source.match(NUMERAL);
   if (!match) return null;
   const [whole, sign, decimal, bracedPower, barePower, ePower] = match;
@@ -87,6 +109,13 @@ export function numeralFromNumber(value) {
 }
 
 const pow10 = (n) => 10n ** BigInt(n);
+
+/** True when two numerals are the same number, however many zeros each was written with. */
+export function sameNumber(a, b) {
+  if (a.negative !== b.negative) return false;
+  const low = Math.min(a.exponent, b.exponent);
+  return a.mantissa * pow10(a.exponent - low) === b.mantissa * pow10(b.exponent - low);
+}
 const digitCount = (mantissa) => (mantissa === 0n ? 0 : mantissa.toString().length);
 
 /**
@@ -139,10 +168,14 @@ export function lastFigureExponent(key, figures) {
  * `correct` — the response shows `figures` significant figures and sits
  * within the allowance. `too-many` — it shows more, and rounded to `figures`
  * (by either rounding rule) it sits within the allowance: the unrounded
- * readout of a right calculation. `too-few` — it shows fewer, and it is what
- * an allowed value rounds to at the figures it does show: right as far as it
+ * readout of a right calculation. `too-few` — it shows ONE figure fewer, and
+ * it is what an allowed value rounds to at that count: right as far as it
  * goes. Everything else is `incorrect`; the allowance is never widened for a
- * response written to fewer figures, or `0.6` would stand for `0.674`.
+ * response written to fewer figures, or `0.6` would stand for `0.674`. A
+ * response two or more figures short is `incorrect` as well: at one figure
+ * the round numbers a stem prints start to "agree" — typing the stem's own
+ * class limit, 90, against the key 89.4 was told it "agrees as far as it
+ * goes" (Chemistry 2e 1.6, the pilot) — and the sentence would be a hint.
  *
  * A key that does not itself show `figures` significant figures is an
  * authoring error, reported as `form` against itself by the caller's
@@ -153,29 +186,27 @@ export function compareMeasured(response, key, { figures, lastDigit = 0 }) {
   const place = lastFigureExponent(key, figures);
   const near = (numeral) => within(numeral, key, lastDigit, place);
 
-  if (response.sigMin <= figures && figures <= response.sigMax) {
+  // Written to the key's count of figures — or to the key's own last decimal
+  // place, which is the same precision on the other side of a power of ten
+  // (0.99 against 1.00 shows two figures and is written to hundredths, as
+  // the key is).
+  if ((response.sigMin <= figures && figures <= response.sigMax) || response.exponent === place) {
     if (near(response)) return { verdict: 'correct' };
   }
   if (response.sigMin > figures) {
     const rounded = [false, true].map((halfEven) => ({ ...response, ...roundToFigures(response, figures, { halfEven }) }));
     return rounded.some(near) ? { verdict: 'form', reason: 'too-many' } : { verdict: 'incorrect' };
   }
-  // Fewer figures than asked: the response must be exactly what an allowed
-  // value rounds to at each count the writing could be showing.
-  const allowed = [];
-  for (let step = -lastDigit; step <= lastDigit; step += 1) {
-    const to = Math.min(key.exponent, place);
-    const value = scaled(key, to) + BigInt(step) * pow10(place - to);
-    allowed.push({ negative: value < 0n, mantissa: value < 0n ? -value : value, exponent: to });
-  }
-  for (let shown = response.sigMin; shown <= Math.min(response.sigMax, figures - 1); shown += 1) {
-    if (shown < 1) continue;
-    for (const value of allowed) {
-      for (const halfEven of [false, true]) {
-        const rounded = { ...value, ...roundToFigures(value, shown, { halfEven }) };
-        if (within(response, rounded, 0, Math.min(response.exponent, rounded.exponent))) {
-          return { verdict: 'form', reason: 'too-few' };
-        }
+  // One figure fewer than asked: the response must be exactly what the KEY
+  // rounds to at that count, by either rounding rule. The last-digit
+  // allowance is not carried down — an allowed neighbour of 89.4 is 89.5,
+  // which rounds to 90, and 90 is the round number the stem itself prints.
+  const shown = figures - 1;
+  if (shown >= 1 && response.sigMin <= shown && shown <= response.sigMax) {
+    for (const halfEven of [false, true]) {
+      const rounded = { ...key, ...roundToFigures(key, shown, { halfEven }) };
+      if (within(response, rounded, 0, Math.min(response.exponent, rounded.exponent))) {
+        return { verdict: 'form', reason: 'too-few' };
       }
     }
   }

@@ -51,6 +51,14 @@ const REPRESENTATIVE_PAGES = [
     path: '/life-health-sciences/biology/10-cell-reproduction/05-prokaryotic-cell-division/',
   },
   {
+    // Chemistry's shapes: worked examples with cancelled units, measured-
+    // quantity fill-ins (`sig-figs`), Key equations, a scaled-down figure.
+    name: 'chemistry section (worked examples, measured fill-ins, key equations)',
+    path:
+      '/physical-sciences/chemistry/01-essential-ideas/' +
+      '06-mathematical-treatment-of-measurement-results/',
+  },
+  {
     name: 'biology unit 1 knowledge check (chapters 01–03)',
     path: '/life-health-sciences/biology/knowledge-check-01-03/',
   },

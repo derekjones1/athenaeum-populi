@@ -68,6 +68,12 @@ th .katex {
   white-space: nowrap;
 }
 
+/* A number in scientific notation never breaks at its "×": the passthrough
+   render hook wraps that one inline shape (layouts/_markup). */
+.ap-math-keep {
+  white-space: nowrap;
+}
+
 /* Respect users who ask for less motion (WCAG 2.3.3). */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
@@ -721,6 +727,15 @@ self-check:not(:defined) .ap-selfcheck-checkpoint input { pointer-events: none; 
   max-width: 100%;
   height: auto;
   border-radius: 4px;
+}
+/* A figure the source marks `class="scaled-down"` (Chemistry 2e: a small
+   drawing printed at about half the text width) or `scaled-down-30` keeps
+   that share of the column instead of filling it; the manifest records the
+   class (`scale`, written by vendor-media). On a phone it has the whole
+   column again: a third of 340 px is unreadable. */
+@media (min-width: 48rem) {
+  .ap-mediafigure[data-scale="scaled-down"] img { max-width: min(100%, 26rem); }
+  .ap-mediafigure[data-scale="scaled-down-30"] img { max-width: min(100%, 14rem); }
 }
 .dark .ap-mediafigure[data-kind="diagram"] img,
 .dark .ap-mediafigure[data-transparent] img { background: #fff; padding: 4px; box-sizing: border-box; }

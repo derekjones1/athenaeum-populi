@@ -32,6 +32,9 @@ test('readNumeral counts the significant figures a writing shows', async (t) => 
     ['3{e}-2', 1, 1],           // preprocess() braces the e of a whole-number mantissa
     ['0', 0, 0],
     ['0.00', 0, 0],
+    ['10^{12}', 1, 1],          // a bare power of ten: the coefficient 1, unwritten
+    ['10^{-7}', 1, 1],
+    ['-10^3', 1, 1],
   ];
   for (const [written, sigMin, sigMax] of rows) {
     await t.test(written, () => {
@@ -113,8 +116,8 @@ test('compareMeasured grades value and figures together', async (t) => {
     ['31.65', '31.7', 3, 0, 'form', 'too-many'],       // and half up reaches this one
     // too few figures: right as far as it goes, and only then
     ['0.67', '0.674', 3, 1, 'form', 'too-few'],
-    ['0.7', '0.674', 3, 1, 'form', 'too-few'],
-    ['0.68', '0.674', 3, 1, 'form', 'too-few'],        // what the allowed 0.675 rounds to
+    ['0.7', '0.674', 3, 1, 'incorrect'],               // two figures short: a round number is no evidence
+    ['0.68', '0.674', 3, 1, 'incorrect'],              // the allowance is not carried down to fewer figures
     ['0.68', '0.674', 3, 0, 'incorrect'],
     ['0.6', '0.674', 3, 1, 'incorrect'],               // the allowance is never one unit of a coarser digit
     ['0.66', '0.674', 3, 1, 'incorrect'],
@@ -126,14 +129,19 @@ test('compareMeasured grades value and figures together', async (t) => {
     ['355', '350', 2, 1, 'form', 'too-many'],
     ['350.', '350', 2, 1, 'form', 'too-many'],
     ['350', '350', 3, 0, 'correct'],
-    ['1300', '1250', 4, 0, 'form', 'too-few'],         // half up of 1250 at two figures
-    ['1200', '1250', 4, 0, 'form', 'too-few'],         // half to even of the same
+    ['1300', '1250', 4, 0, 'incorrect'],               // 1250 at two figures: two short of four
+    ['1200', '1250', 4, 0, 'incorrect'],
+    ['1250', '1254', 4, 0, 'form', 'too-few'],         // one short, and what 1254 rounds to
+    ['1260', '1255', 4, 0, 'form', 'too-few'],         // half up of 1255 at three figures
+    ['1260', '1265', 4, 0, 'form', 'too-few'],         // half to even of 1265
     ['1400', '1250', 4, 0, 'incorrect'],
     // a power-of-ten boundary inside the allowance
     ['10.0', '9.99', 3, 1, 'correct'],
     ['1.00\\times10^{1}', '9.99', 3, 1, 'correct'],
     ['0.990', '1.00', 3, 1, 'correct'],
-    ['0.99', '1.00', 3, 1, 'form', 'too-few'],
+    ['0.99', '1.00', 3, 1, 'correct'],                 // two figures, but written to the key's own hundredths
+    ['0.99', '1.00', 3, 0, 'incorrect'],
+    ['10.00', '9.99', 3, 1, 'correct'],                // four figures, the same hundredths
     // sign, scientific notation, zero
     ['-494', '-494', 3, 1, 'correct'],
     ['494', '-494', 3, 1, 'incorrect'],
@@ -141,7 +149,14 @@ test('compareMeasured grades value and figures together', async (t) => {
     ['4.586\\times10^{22}', '4.585\\times10^{22}', 4, 1, 'correct'],
     ['4.585\\times10^{21}', '4.585\\times10^{22}', 4, 1, 'incorrect'],
     ['4.5857\\times10^{22}', '4.585\\times10^{22}', 4, 1, 'form', 'too-many'],
-    ['4.6\\times10^{22}', '4.585\\times10^{22}', 4, 1, 'form', 'too-few'],
+    ['4.6\\times10^{22}', '4.585\\times10^{22}', 4, 1, 'incorrect'],
+    ['4.59\\times10^{22}', '4.585\\times10^{22}', 4, 1, 'form', 'too-few'],
+    // the stem's own round number is not "right as far as it goes" (1.6: a 90 kg class limit, key 89.4)
+    ['90', '89.4', 3, 1, 'incorrect'],
+    ['89', '89.4', 3, 1, 'form', 'too-few'],
+    // a bare power of ten is the coefficient 1, one figure
+    ['10^{12}', '1\\times10^{12}', 1, 0, 'correct'],
+    ['10^{11}', '1\\times10^{12}', 1, 0, 'incorrect'],
     ['0', '0.674', 3, 1, 'incorrect'],
     ['0.000', '0.674', 3, 1, 'incorrect'],
   ];

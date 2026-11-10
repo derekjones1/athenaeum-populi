@@ -27,5 +27,10 @@ close-out step (run-facts draft, landing pages, errata draft, pins) to a
 Sonnet agent as run.md prescribes — without being asked. That kit is also
 the template for the next life-sciences book.
 
+To author a Chemistry chapter ("author chapter N of Chemistry"), follow
+`docs/briefs/chemistry/run.md` the same way: the briefs beside it, the prep
+tool `tools/source/chemistry-prep.py`, the consistency reading every
+chapter, and every reading and ruling before the blind solve.
+
 To edit or re-review a finished book's page, follow `docs/re-review/README.md`
 and record the run in the subject's `docs/history/` file.
