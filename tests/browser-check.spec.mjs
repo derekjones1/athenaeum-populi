@@ -1794,6 +1794,66 @@ test('a Chemistry formula field reads back what is typed, says what a bare symbo
   await statusOf(salt).toBe('correct');
 });
 
+// A charge or a subscript written in Unicode is drawn by the subset face
+// "AP SupSub" (assets/css/custom.css, tools/build/gen-supsub-font.py), not by
+// the system font, whose `⁻` is two or three pixels across. Three things can
+// break silently: the file stops loading (the page still renders, small), the
+// glyphs lose their size, or the face's line metrics push a line apart.
+test('a Unicode charge or subscript is drawn by the enlarged subset font, as tall as a real <sup>, and adds no height to its line', async ({ page }) => {
+  await gotoBuiltPage(page, '/physical-sciences/chemistry/02-atoms-molecules-and-ions/06-ionic-and-molecular-compounds/');
+  await page.evaluate(() => document.fonts.ready);
+  const measured = await page.evaluate(async () => {
+    const prose = document.querySelector('main#content p');
+    const style = getComputedStyle(prose);
+    const px = parseFloat(style.fontSize);
+    await document.fonts.load(`${px}px "AP SupSub"`, '⁻₂');
+    const system = 'ui-sans-serif, system-ui, sans-serif';
+    const context = document.createElement('canvas').getContext('2d');
+    const ink = (font, text) => {
+      context.font = font;
+      const m = context.measureText(text);
+      return { width: m.width, height: m.actualBoundingBoxAscent + m.actualBoundingBoxDescent, foot: -m.actualBoundingBoxDescent };
+    };
+    const line = (text, lineHeight) => {
+      const p = document.createElement('p');
+      p.textContent = text;
+      if (lineHeight) p.style.lineHeight = lineHeight;
+      prose.after(p);
+      const height = p.getBoundingClientRect().height;
+      p.remove();
+      return height;
+    };
+    return {
+      family: style.fontFamily,
+      loaded: document.fonts.check(`${px}px "AP SupSub"`, '⁻₂'),
+      // In the page itself, through the body font stack — not a canvas that
+      // names the face.
+      minusInProse: (() => {
+        const span = document.createElement('span');
+        span.textContent = '⁻';
+        prose.append(span);
+        const width = span.getBoundingClientRect().width;
+        span.remove();
+        return width / px;
+      })(),
+      two: { face: ink(`${px}px "AP SupSub"`, '²'), sup: ink(`${px * 0.75}px ${system}`, '2') },
+      // The theme raises a <sup> by half of its own (75%) font size.
+      supFoot: px * 0.75 * 0.5,
+      lines: { plain: line('Na and Cl'), charged: line('Na⁺ and Cl⁻, SO₄²⁻') },
+      normalLines: { plain: line('Na and Cl', 'normal'), charged: line('Na⁺ and Cl⁻, SO₄²⁻', 'normal') },
+    };
+  });
+  expect(measured.family, 'the body font stack leads with the subset face').toMatch(/^"?AP SupSub"?,/);
+  expect(measured.loaded, 'the subset font file loaded').toBe(true);
+  // 338 units of the face's 800-unit em. A system font's own `⁻` differs by
+  // platform (about 0.32 em on a Mac), so the face's advance is what is asked.
+  expect(measured.minusInProse, 'a superscript minus in prose has the subset face\'s advance').toBeCloseTo(338 / 800, 2);
+  expect(Math.abs(measured.two.face.height - measured.two.sup.height), 'a Unicode ² is as tall as a real <sup>2</sup>').toBeLessThan(1.5);
+  expect(Math.abs(measured.two.face.foot - measured.supFoot), 'a Unicode ² stands where a real <sup>2</sup> stands').toBeLessThan(1.5);
+  expect(measured.lines.charged, 'a prose line with charges is no taller than one without').toBe(measured.lines.plain);
+  expect(measured.normalLines.charged, 'nor is one at `line-height: normal`').toBe(measured.normalLines.plain);
+});
+
 test('on every Chemistry page a display row fits the column, scientific notation stays on one line, and a scaled-down figure stays small', async ({ page }) => {
   const routes = [...chemistrySectionRoutes(), ...chemistryAppendixRoutes()];
   expect(routes.length, 'Chemistry section pages were discovered in public/').toBeGreaterThanOrEqual(6);

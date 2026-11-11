@@ -4,7 +4,30 @@
  * tokens, content styling, and interactive-component presentation.
  */
 
+/*
+ * Unicode superscripts and subscripts (Na⁺, SO₄²⁻, H₂O, x²) at a readable
+ * size. The system body font draws them very small — a lone ⁻ is two or three
+ * pixels on a standard screen. This face holds only those characters (a
+ * subset of Noto Sans, built by tools/build/gen-supsub-font.py) and is
+ * limited to them by `unicode-range`; it leads the body font stack below, and
+ * every other character falls through to the system font as before. The
+ * enlargement is in the font file itself, not in a `size-adjust` here: its
+ * glyphs are drawn at the size and height the theme gives a real <sup>/<sub>,
+ * and its line metrics are no larger than a system font's, so a line with a
+ * charge in it is no taller than one without. Math figures set their own
+ * font (ap-figure.js) and are not affected.
+ */
+@font-face {
+  font-family: "AP SupSub";
+  src: url("/fonts/ap-supsub-v1.woff2") format("woff2");
+  font-weight: 400 700;
+  font-display: swap;
+  unicode-range: U+00B2-00B3, U+00B9, U+2070-209C;
+}
+
 :root {
+  --hx-font-sans: "AP SupSub", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
   /* Calm scholarly blue used by the site's navigation and accents. */
   --primary-hue: 214deg;
   --primary-saturation: 66%;

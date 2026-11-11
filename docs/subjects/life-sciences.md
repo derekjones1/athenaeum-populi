@@ -194,6 +194,13 @@ numbers:
 `5 µm`, `37 °C`, `1,000` with a plain comma in prose. Never put math in a
 `textin` question or answer — the lint rejects it.
 
+The site draws these characters with its own small font, so they are as large
+as a real `<sup>` or `<sub>` — the system body font alone draws a `⁻` two or
+three pixels across. The face ("AP SupSub", `assets/css/custom.css`, built by
+`tools/build/gen-supsub-font.py`) covers the whole Unicode superscript and
+subscript block and nothing else. Do not reach for `<sup>`/`<sub>` to make a
+charge legible; they stay for the names Unicode has no character for (below).
+
 The lint enforces this: an ASCII formula or ion
 (`CO2`, `H+`, `Ca2+`, `NO3-`, `NADP+`) in prose, item params and options,
 captions, alt, or longdesc is an error, with the Unicode spelling in the

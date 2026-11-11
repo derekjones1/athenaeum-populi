@@ -1077,10 +1077,8 @@ Still open:
   the first page with one). A formula is typed now: the suite types an ion
   and a grouped formula into 2.6's fields and reads the "Read as" line and
   the grader's message *(chapter 2, Sections 2.5–2.6)*;
-- Unicode superscripts and subscripts are drawn small by the body font — a
-  lone ⁻ is two or three pixels on a standard screen — and a dense diagram
-  (the periodic table) has no way to be enlarged. Both are site-wide
-  presentation questions, put to Derek after Sections 2.5–2.6;
+- a dense diagram (the periodic table) has no way to be enlarged — a
+  site-wide presentation question, put to Derek after Sections 2.5–2.6;
 - a long table's header row scrolls out of view (Appendix G is 403 rows):
   the theme sets a table `display: block`, so a sticky header needs a
   table render hook, which would change every table on the site.
