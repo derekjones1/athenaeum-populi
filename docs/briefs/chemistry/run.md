@@ -31,22 +31,15 @@ cannot resume the old session's ids. Five things the pilot added:
 
 - **The parent's notes live in `$SP/parent-only/PARENT-NOTES.md`**, with
   its list of suspected claims, and every reader's brief forbids the
-  directory. The pilot's claim-pass reader grepped the scratchpad for a
-  phrase, hit the parent's notes, and read the parent's five leads; it
-  said so, and its agreement on four of them was no longer blind.
-- **A ruling is checked against the house lints before it is sent.** Two
-  pilot rulings — "`\dfrac` for inline fractions", "numbers grouped as the
-  source prints them" — contradicted lint errors that already existed
-  (`\dfrac` is banned; a four-digit number in math is grouped) and cost a
-  fixer round-trip each. Grep `tools/lint/` for the token, or lint a
-  three-line scratch file that follows the ruling. **A lint written during
-  the run is run against the ruling it enforces before either is sent**:
-  Section 2.7's ruling "close the stem ‘Type the dot as a period, as in
-  CuSO4.5H2O.’" came with a new lint that required the sentence, and the
-  ASCII-chemistry lint refused it; the author found out, not the parent.
+  directory.
+- **A ruling is checked against the house lints before it is sent**
+  (`\dfrac` is banned; a four-digit number in math is grouped). Grep
+  `tools/lint/` for the token, or lint a three-line scratch file that
+  follows the ruling. **A lint written during the run is run against the
+  ruling it enforces before either is sent**: a new lint can require a
+  sentence an older lint refuses.
 - **A rule promoted mid-run is swept across every page on disk before
-  close-out.** The hint rule was written from 1.5's hints, and 1.5 still
-  carried them, word for word, when the chapter was "done".
+  close-out.**
 - **Every edit to an item re-hashes it — a hint-only edit included.**
   Before any round of edits that follows the blind solve, take
   `node tools/verify/ledger-carry.mjs snapshot content > $SP/ledger-before.json`;
@@ -54,43 +47,36 @@ cannot resume the old session's ids. Five things the pilot added:
   covers and lists what must be re-solved. A round run without the
   snapshot is paid for with a remap script or a second solve. **Merge the
   run's author results and solve results first**: `plan` carries ledger
-  records, and before the merge the run's items have none *(Sections
-  2.5–2.6: a snapshot taken before the merge carried nothing, and four
-  hashes were remapped by script)*.
+  records, and before the merge the run's items have none.
 - **Fixers are told which edits change a hash honestly**: "list every item
-  you touched, hint-only ones too". The pilot's brief said a hint-only edit
-  kept its hash, and one fixer filed 9 results for 46 re-hashed items.
+  you touched, hint-only ones too".
 
-Three things chapter 2 added (`docs/history/chemistry.md`, "Chapter 2,
+Five things chapter 2 added (`docs/history/chemistry.md`, "Chapter 2,
 Sections 2.1–2.4"):
 
-- **A chapter of shapes the book has not met may be authored in two runs**
-  — a few sections through the solve and the commit, then the rest with
-  the first run's lessons in the briefs (chapter 2 took three: 2.1–2.4, 2.5–2.6, then 2.7).
+- **A chapter of shapes the book has not met may be authored in more
+  than one run** — a few sections through the solve and the commit, then
+  the rest with the earlier run's lessons in the briefs (chapter 2 took
+  three: 2.1–2.4, 2.5–2.6, then 2.7).
   A one-section run needs no clerk for its facts, landing line, or pins.
   Prep (media, PDF pages, inventory, shapes, probe) is done once for the
   whole chapter. The landing lists the sections on the site and says in
   one paragraph which are being written; it carries NO `authoring_status`
   (`build-map` refuses the key on a landing whose chapter has section
-  pages), and the cover's entry says the same. The second run removes the
+  pages), and the cover's entry says the same. The last run removes the
   paragraph.
 - **The parent runs both source gates on each page as it lands** —
   `build-map`, then `npm run verify:source-keys` and
-  `verify:source-coverage` — not after the last author. Three of chapter
-  2's four gate lessons (a "repeat [Exercise N]" stem, a name with a
-  drawing, a varying answer given part by part) were found this way while
-  the authors were still working, and each was a gate taught a form, with
-  a test, before its page's checker reported.
+  `verify:source-coverage` — not after the last author, so a gate that
+  must be taught a form is taught it, with a test, while the authors are
+  still working.
 - **A run that lands a section re-reads the earlier pages' placeholders
-  for it** *(Sections 2.5–2.6)*: `grep -rn "not yet on this site\|later
-  section of this chapter" content/physical-sciences/chemistry` — 2.3 said
-  "the periodic table in a later section" and its footer gave the reason
-  "not yet on this site" until 2.5 landed. The parent corrects those.
+  for it**: `grep -rn "not yet on this site\|later
+  section of this chapter" content/physical-sciences/chemistry`. The
+  parent corrects those.
 - **The hand-built probe items of step 6a carry the page's real stems** —
   the link, the closing sentence — not the bare source
-  stem. Four gate gaps of 2.5–2.6 showed only that way: a link's path
-  counted as stem words, a formula after a colon, an option that prints
-  its second name in parentheses, an answer in the glossary's other word.
+  stem: a gate gap can show only on the real stem.
 - **A parent who edits an item files its record.** After the fix check the
   parent applied exact old→new text itself; `rebuild-ledger-results.py`
   then stops ("N stale — map by hand"). Drop the stale hashes from the
@@ -115,8 +101,9 @@ Sections 2.1–2.4"):
    `pdftoppm -f A -l B -r 110 -png sources/chemistry-2e_-_WEB.pdf $SP/pdf/chNN/p`.
    The chapter's end matter is pooled after its last section (Key Terms,
    Key Equations, Summary, Exercises numbered through the chapter); the
-   answer key is at the back of the book (chapter 1: indexes 1135–1137,
-   rendered as `key-NNNN.png`). **Every module was corrected upstream after
+   answer key is at the back of the book, rendered as `key-NNNN.png`
+   (chapter 1's at indexes 1135–1137 and chapter 2's at 1137–1138; the
+   run facts carry this chapter's). **Every module was corrected upstream after
    the PDF was made**: where they differ, the CNXML is the text.
 4. **Extraction** (`tools/source/chemistry-prep.py`):
    `inventory N > $SP/chN-inventory.txt` (per module: objectives, keyed and
@@ -128,9 +115,7 @@ Sections 2.1–2.4"):
    component the playbook's table gives it, and a FLAG on every keyed
    formula the grader cannot read and every keyed equation that does not
    balance. A flag is a source defect or a shape the forms do not take;
-   the parent rules on each in the run facts before the wave (chapter 2
-   had two: 2.7's "AIF₃·3H₂O" with a capital I for the l, and a
-   simulation answer that offers two symbols joined by "or"). After the
+   the parent rules on each in the run facts before the wave. After the
    flags the tool prints NOTES — the units whose structure the page must
    shape for the source gates: a part that is only an image, an answer
    that is only an image, a part the solution leaves unkeyed, a lettered
@@ -156,24 +141,32 @@ Sections 2.1–2.4"):
    keyed-answer shape that is new to the book is probed through the source
    gates before the wave** (step 6a). The facts
    also list **every appendix the chapter's modules link**
-   (`grep -o 'document="m688[5-7][0-9]"'` over the modules; `m68859` is
-   Appendix A … `m68871` Appendix M) with the page's site path, since an
-   appendix reference is a link (playbook, page skeleton rule 9) — and
-   **every appendix the chapter's content NEEDS without linking it**: a
-   stem or example that says "using the periodic table" on a page with
-   none, an exercise whose data are in an appendix table
+   (`grep -oE 'document="m688(59|6[0-9]|7[01])"'` over the modules;
+   `m68859` is Appendix A … `m68871` Appendix M — the bare `m688[5-7][0-9]`
+   also matches seven chapter 21 modules) with the page's site path, since
+   an appendix reference is a link (playbook, page skeleton rule 9) — and
+   **every place the content NEEDS an appendix without linking it**: a stem
+   or example whose own words send the learner to an appendix's table on a
+   page that does not show it ("Using the periodic table, …" on a page with
+   none), an exercise whose data are in an appendix table
    (`grep -n -i 'periodic table\|appendix'` over the keys files is the
    first pass; the parent reads the hits). Those are linked too
    *(Derek, November 10, 2026)*, and the facts name the section, the
-   phrase, and the appendix path for each.
+   phrase, and the appendix path for each. **Appendix A is the
+   exception** *(Derek, November 11, 2026)*: the periodic table is a
+   control on every page (playbook, the paragraph that begins "The
+   periodic table is on every page of the book"), so an item that needs
+   only its data — an atomic mass, a molar mass, an element for an atomic
+   number — and names no table is NOT listed and gets nothing added.
+   Chapter 3 is almost all molar masses: those items take no pointer. The
+   source's own words about the table ("Using the periodic table, …") are
+   still listed and linked, and every OTHER appendix still needs its link
+   on each item that needs it.
 6a. **Gate probe.** `node tools/source/chemistry-gate-probe.mjs N >
    $SP/chN-probe.txt`. The source gates were written from the shapes of
    the chapters already on the site, and a shape they have not met fails
-   a sound page in the middle of the wave, or lets a part go unrequired:
-   before chapter 2 they could not read a part that is only an image or
-   a nuclide symbol, and about a hundred keyed parts of the book were
-   read as ANOTHER exercise (one part under two lead-ins; a charge's
-   sign; a lead-in that prints a sibling's part). The probe builds, for
+   a sound page in the middle of the wave, or lets a part go unrequired.
+   The probe builds, for
    every keyed unit of the chapter, the item the page will carry — the
    source's own stem, the source's own answer as its key — and asks both
    gates what they will be asked of the real page. Every line it prints
@@ -203,7 +196,11 @@ Sections 2.1–2.4"):
 One Author per section, launched together, each prompt three lines: section
 number, module id, output path, PDF page range, "read `$SP/author.md`
 first". Chapter 1's finished pages are the exemplar: 1.6 for a numeric
-page, 1.2 for a page of classification and added recall items.
+page, 1.2 for a page of classification and added recall items; and where
+the chapter keys the shape, one chapter 2 ITEM each, named in the run
+facts by page and stem — a formula `textin` under an image-only part
+(2.4), a name `textin` (2.7), items held in a `followup` (2.6). The
+author reads only those items of a chapter 2 page (`author.md` §1).
 
 - **As each author reports**, launch its checker (Author kind; prompt = the
   page path + "read `$SP/checker.md`"; never name the author's report).
@@ -211,56 +208,48 @@ page, 1.2 for a page of classification and added recall items.
 - **As soon as the first author reports**, and again after each,
   `node tools/source/openstax-source.mjs build-map`: `verify:source-coverage`
   and `verify:source-keys` skip a chapter with no map rows, and a checker's
-  `npm run source:diff` skips a page the map lacks — chapter 2's first two
-  checkers compared their pages by hand for that reason.
+  `npm run source:diff` skips a page the map lacks.
 - **When the checker fixes are in**, launch together: the **claim pass**
   (one Author-kind agent for the chapter, the pages and the landing with
   their module ids, "read `$SP/claim-pass.md`", report
   `$SP/claims-chNN.md`); and the **consistency reader** (one Author-kind
   agent, "read `$SP/consistency.md`", the chapter directory, the inventory,
   and the previous chapter's pages for the forms to match, report
-  `$SP/consistency.md`). Do not tell the claim pass what the parent already
+  `$SP/consistency-chNN.md` — never `$SP/consistency.md`, which is the
+  brief). Do not tell the claim pass what the parent already
   suspects; compare afterwards.
 - **The rendered-page reading** ran for all three of chapter 2's runs (each
-  found something a test now holds; Section 2.7's found that the formula
-  field's own typing example was the key of an item on the page — the
-  reader reads the widgets' words, not only the page's) and after that
-  runs for a chapter that renders a shape no earlier chapter did — the first
+  found something a test now holds) and after that runs for a chapter that renders a shape no earlier chapter did — the first
   Lewis structures, the first table transcribed from an image, a new
   shortcode use. `npm run build && npm run serve:public &`, then
   `node tools/build/screenshot-tiles.mjs $SP/render <route> …` (it exits
   non-zero if a page raised a KaTeX or page error); one Author-kind reader
   per one or two sections, about twenty tiles each, "read
-  `$SP/render-reader.md`", with the section's PDF range. What it finds that
+  `$SP/render-reader.md`", with the section's PDF range, report
+  `$SP/render-N.M.md` (the first section it reads). What it finds that
   a test can hold becomes a test.
 - **The parent rules on the three reports in one round** — a rulings file
   (`$SP/rulings.md`: general rulings, then a list per page), each ruling
   checked against the lints (§0), sent to the page's author. A ruling that
   overturns an earlier one says so. A parent ruling that a source key
   stands is provisional until the claim pass, the consistency reader, and
-  the solver have read the module: the pilot's 177.66 °F stood on the
-  parent's ruling and fell to the consistency reader's comparison with
-  Section 1.5's rules and the sibling keys. **A Source note prints no
+  the solver have read the module. **A Source note prints no
   outside citation the parent has not seen quoted**: the claim pass
   quotes the words it read (its brief says so), and a citation that comes
-  with no quotation is opened by the parent or left out of the note
-  *(Section 2.7: an IUPAC table cited for the opposite of what it says)*.
+  with no quotation is opened by the parent or left out of the note.
   A reason the parent gives from memory ("earlier editions print…") is
   checked the same way before it goes into a ruling or an erratum.
 - **Rewritten hints and replaced items are read once more** by a checker
   that did not write them (one Author-kind agent for the chapter, "read
-  `$SP/fix-check.md`"; it proposes exact old→new text), before the solve.
-  Chapter 2's found ten: a rubric its own sample answer could not meet, a
-  hint that pointed at the row printing the whole answer, a Source note on
-  the wrong side of its figure.
+  `$SP/fix-check.md`", report `$SP/fix-check-chNN.md`; it proposes exact
+  old→new text), before the solve.
 - **`npm run verify:replay` before the solve**: an item whose stem prints
   its key by the definition it tests (a proton count beside the atomic
   number; a formula that is its own empirical formula) is recorded in
   `SOUND_COINCIDENCES` with its reason once its stem is final.
 
 All of this is before the blind solve, so the solve reads the pages that
-ship. The pilot ran the two extra readings after its solve, and 131 items
-re-hashed.
+ship.
 
 ## 3. The blind solve
 
@@ -270,7 +259,10 @@ npm run solve:emit -- content/physical-sciences/chemistry/NN-<slug> --out $SP/so
 
 ONE fresh Blind-solver agent (`model: "fable"`), prompt = "read
 `docs/briefs/chemistry/solve.md`; packets in `$SP/solve/chNN`, masked pages
-in `$SP/solve/chNN/pages`; write `$SP/solve/chNN/answers.json`". Then
+in `$SP/solve/chNN/pages`; write `$SP/solve/chNN/answers.json`". The
+masked pages print no atomic masses, so the brief lets the solver read
+the appendix pages (`content/physical-sciences/chemistry/appendices/`,
+which carry no items) and nothing else under `content/`. Then
 
 ```sh
 npm run solve:compare -- $SP/solve/chNN/answers.json content --out $SP/solve-results/chNN > $SP/solve/chNN/compare.log 2>&1
@@ -321,7 +313,9 @@ the CNXML and the page.
    local sections": raise both by the chapter's section count. The cover
    (`content/physical-sciences/chemistry/_index.md`): the chapter moves
    from "Planned contents" to `## Chapters`. `docs/source/claim-pass-ledger.md`
-   gains the chapter's row.
+   gains the chapter's row. `AGENTS.md`'s Chemistry sentence names no
+   chapter — it points at the cover — so it changes only when the book's
+   status does; read it, and correct anything the chapter made false.
 4. `npm run source:history -- --output docs/source/openstax-upstream-history-audit.md`.
 5. **Ledger.** Merge the authors' results and the solve results, prune,
    then provenance (`docs/briefs/anatomy-physiology/run.md` §4 step 5, with
@@ -342,32 +336,20 @@ the CNXML and the page.
    report is written as "none this chapter". Then the session memory file.
 8. **Commit** the run's own files at a green close-out (Derek, October 24,
    2026), leaving unrelated uncommitted work and saying what was left.
+9. **The next run.** If the chapter just finished closes a Knowledge Check
+   block (playbook "Knowledge checks", the table of blocks: chapters 1–3,
+   4–5, 6–8, 9–11, 12–15, 16–17, 18–21), the next run is that block's
+   check, not the next chapter: say so in the history entry and the
+   session memory. **Chapter 3 closes block 1, and the Chemistry Knowledge
+   Check kit does not exist yet** (playbook "What is still open"): that
+   run's parent first writes it — a `kc-run.md` and its prompts beside this
+   file — from `docs/briefs/anatomy-physiology/kc-run.md` and its
+   `kc-prompts/` as the template, with this book's quota and item-source
+   rule ("Knowledge checks"), and only then authors the block. The check's
+   page needs its sidebar place (`npm run kc -- weights
+   content/physical-sciences/chemistry --write`).
 
 ## What a chapter cost
 
-Chapter 2, Sections 2.1–2.4 (four sections, 87 items, about three and a
-half hours of wall time): authors 200–295k tokens each across three
-rounds; checkers 150–210k; claim pass 175k; consistency reader 210k; three
-rendered-page readers 135–180k; fix checker 165k; blind solver 127k; two
-clerks 80k and 150k.
-
-Chapter 2, Sections 2.5–2.6 (two sections, 79 items, about two hours of
-work): authors about 265k tokens each across three rounds; checkers 178k
-each; claim pass 119k; consistency reader 224k; one rendered-page reader
-for both pages 233k; fix checker 139k; blind solver 103k; four clerks 53k
-to 139k.
-
-Chapter 2, Section 2.7 (one section, 48 items, about two hours of work): the
-author 269k tokens across four rounds; checker 198k; claim pass 108k;
-consistency reader 171k; rendered-page reader 157k; fix checker 134k;
-blind solver 79k; two clerks 111k and about 60k. With one module the
-parent wrote the run facts, the landing and cover lines, the pins, and
-the decisions entries itself.
-
-Chapter 1, six sections, measured where known:
-
-Extra readings: five rendered-page readers at 150–170k tokens each; one
-consistency reader at about 210k; six fixers at 75–160k; one fix checker.
-The consistency reader found more per token than any other reading of the
-pilot — the rulebook contradicting itself, a key against another section's
-rule, a leak visible only by contrast — and it is the one that recurs.
+The measured tokens and wall time of each run are in
+`docs/history/chemistry.md` ("What the kit's runs cost").

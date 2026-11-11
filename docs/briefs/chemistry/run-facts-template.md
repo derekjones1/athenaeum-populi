@@ -40,7 +40,17 @@ that does not apply.
   for a numeric page (worked examples, measured fill-ins, Key equations);
   `…/02-phases-and-classification-of-matter.md` for classification items
   and added recall items. Read the first 40 lines and from `## Summary` to
-  the end.
+  the end. Where this chapter keys the shape, one chapter 2 item each,
+  found by its stem in `content/physical-sciences/chemistry/02-atoms-molecules-and-ions/`
+  (read the item and the lines around it, not the page): a formula
+  `textin` under a part that is only an image — `04-chemical-formulas.md`,
+  "Write the molecular and empirical formulas of the following compound,
+  shown in the figure above. Enter the molecular formula."; a name
+  `textin` — `07-chemical-nomenclature.md`, "Name the following compound:
+  CsCl."; further items held in a `followup` —
+  `06-ionic-and-molecular-compounds.md`, "…write the symbols for the ions
+  involved: BaO." (the `multiplechoice`, then its `followup` of two formula
+  `textin`s). Delete the lines this chapter does not need.
 - Practice floor: at least 2 exercises per objective group and 5 per
   section, each group with at least one auto-graded item.
 
@@ -56,9 +66,16 @@ keys files.
   answer. Tables: list, noting a table printed as an image. Feature boxes:
   class and title. Keyed-answer shapes the playbook's "Exercises" table
   does not list: the exercise ids, or "none". Appendices: each one the
-  module links, and each one its content needs without linking (the
-  phrase, the items, the appendix's site path) — both are links on the
-  page.
+  module links (with its site path), and each place the content needs an
+  appendix without linking it — the phrase, the items, the site path —
+  both of which are links on the page. **Appendix A is the exception**:
+  the periodic table is a control on every page, so an item that needs
+  only its data (an atomic mass, a molar mass, an element for an atomic
+  number) and names no table is NOT listed and gets nothing added —
+  chapter 3's molar-mass items take no pointer. Where the source's own
+  words name the table ("Using the periodic table, …"), those words are
+  listed and linked. Every OTHER appendix is listed for each item that
+  needs it.
 
 ## Parent decisions
 

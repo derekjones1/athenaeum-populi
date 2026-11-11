@@ -41,6 +41,12 @@ measured-quantity tokens described here.
   `_index.md`. The 13 appendices (`m68859`–`m68871`: the periodic table,
   Essential Mathematics, and eleven data tables) are authored as reference
   pages and mapped ("Appendices"). The preface (`m68662`) is not mapped.
+- **What the source keys:** only the odd-numbered end-of-section
+  exercises, as in the printed book, and every Check Your Learning; none
+  is multiple choice. About a third of the keyed answers are one number
+  with a unit; the rest are sentences, lettered multi-part answers,
+  formulas, names, and 65 drawings. Objectives are in `md:abstract`. The
+  scan's full counts are in `docs/history/chemistry.md`.
 - **License:** the pinned `LICENSE` and the collection metadata say
   **CC BY-NC-SA 4.0**. Senior contributing authors for the footer: Paul
   Flowers, Klaus Theopold, Richard Langley, William R. Robinson.
@@ -115,7 +121,7 @@ these differences:
    and Exercises printed once at the chapter's end) is each module's own in
    the CNXML, and that is where the page takes it from.
 9. **Small conventions every page follows** — none of them is held by a
-   lint, so each is the checker's to tick. The frontmatter description
+   lint, so each is the checker's to tick (`checker.md` §3 lists them). The frontmatter description
    ends "— adapted from OpenStax Chemistry 2e, Section N.M."; the page's
    first figure is `eager="true"`; a reference to a numbered figure or
    table in running text becomes a describing phrase ("the table of
@@ -154,20 +160,17 @@ these differences:
    Appendix A in a section's body or stems opens the same viewer. So where
    a stem names no table — 2.3's "the ion with 54 electrons, 53 protons,
    and 74 neutrons" needs an element for an atomic number and says nothing
-   of where to find it — the stem stays the source's words. Through chapter
-   2 such an item ended "Use the periodic table." with a link; 74 items
-   carried it, 46 on Section 2.7 alone, and following the link left the
-   page and the typed answers behind. The lint refuses the sentence now.
-   **Every other appendix still needs its link on each item that needs
-   it**, since each item is answered on its own and only the periodic
-   table is at hand. A page that shows the table itself (2.5 prints the
+   of where to find it — the stem stays the source's words, and so does
+   every item whose data are atomic masses (a molar mass, a percent
+   composition), however many there are. The lint refuses an added "Use
+   the periodic table." **Every other appendix still needs its link on
+   each item that needs it**, since each item is answered on its own and
+   only the periodic table is at hand. A page that shows the table itself (2.5 prints the
    periodic table) needs no link to it. The footer says where the words
    were linked: "the words “periodic table” linked to Appendix A …, the
    source linking nothing there".
    A link is not a word of the stem: the source gates read the stem
-   without it (`unlinked`, `tools/lib/keyed-units.mjs`; a test holds it —
-   until 2.6 the path's six words counted, and an unlettered exercise
-   carried one member at a time fell under the floor).
+   without it (`unlinked`, `tools/lib/keyed-units.mjs`; a test holds it).
 
 ## Exercises
 
@@ -193,7 +196,7 @@ The component follows the SHAPE of the source's keyed answer:
 | an SI prefix's factor ("× 10⁻²") | `fillin` keyed with the bare power of ten, `answer="10^{-2}"`, under `sig-figs:1 last-digit:0` — a bare power-of-ten key is an exact factor, so `0.010` and `1.0×10⁻²` are right too ("Measured quantities") |
 | the name of a unit that is one word or a counted word ("meters", "kilograms", "square meters", "cubic meters") or of a prefix ("centi") | `textin`; the accept list holds the symbol without operators (`m`, `kg`, `m3`) and every crossing the plural fold cannot reach, which folds the LAST word only: `meters squared\|meter squared\|metres squared\|metre squared` |
 | a unit that is a quotient or a product ("meters/second", "kilograms/cubic meter"), or one whose degree sign is the point ("kelvin", never "°K") | `multiplechoice` whose distractors are the confusions the part tests — the product, the inverse, a wrong power, "degrees kelvin" — and never another unit the body allows for the quantity. The text grader reads `/`, `·`, `×`, `*`, and `°` as spaces, so as a `textin` the product passes for the quotient: a key or accept member carrying one is a lint error in this book |
-| the name of a compound or an ion ("chromium(III) oxide", "the selenide ion") | `textin`. Capitals, the spaces around a parenthesis, and the parentheses themselves are free; the Roman numeral and every word are not. The grader reads sulph- as sulf-, aluminium as aluminum, and caesium as cesium, so those are never `accept` members. A second name the module itself prints for the compound is one — unless the STEM prints it: 2.7 asks for the IUPAC name of "ferric nitrate", and there the old name retyped must be wrong. **A name the module prints as out of date is not a second name** *(Section 2.7)*: "ferrous chloride", which the module says "was known as" and calls nomenclature "largely abandoned", is not an `accept` member of the item that asks FeCl₂'s name, and neither is a name another exercise's stem prints for the compound as the one to be replaced ("titanium tetrachloride"). The grader does not call such a name wrong: a classical -ous/-ic name of the KEYED compound is answered "That is an older name. Give the systematic name." in the tone of a right answer in the wrong form, and the field stays open (`assets/js/lib/text/older-names.mjs`, a table of nine metals; `gradeText` only — every gate still reads it as incorrect; *November 11, 2026, Derek: until then it was refused as plainly wrong*). The older name of a different compound ("ferric chloride" for FeCl₂) is incorrect, and so is a stem's Greek-prefix name retyped. The lint refuses an older name as an `accept` member. The item's hint still says what form the name takes — the charge as a Roman numeral in parentheses — since the message does not. The source gate holds a name key to the WHOLE name the source prints: "cobalt(II) chloride" is refused where the source answers "cobalt(II) chloride hexahydrate" **An ion's name is keyed bare** (`selenide`) with the two-word form in `accept` (`selenide ion`): the grader drops "the" and does not drop "ion", so keyed "selenide ion" it marks the bare name wrong |
+| the name of a compound or an ion ("chromium(III) oxide", "the selenide ion") | `textin`. Capitals, the spaces around a parenthesis, and the parentheses themselves are free; the Roman numeral and every word are not. The grader reads sulph- as sulf-, aluminium as aluminum, and caesium as cesium, so those are never `accept` members. A second name the module itself prints for the compound is one — unless the STEM prints it: 2.7 asks for the IUPAC name of "ferric nitrate", and there the old name retyped must be wrong. **A name the module prints as out of date is not a second name** *(Section 2.7)*: "ferrous chloride", which the module says "was known as" and calls nomenclature "largely abandoned", is not an `accept` member of the item that asks FeCl₂'s name, and neither is a name another exercise's stem prints for the compound as the one to be replaced ("titanium tetrachloride"). The grader does not call such a name wrong: a classical -ous/-ic name of the KEYED compound is answered "That is an older name. Give the systematic name." in the tone of a right answer in the wrong form, and the field stays open (`assets/js/lib/text/older-names.mjs`, a table of nine metals; `gradeText` only — every gate still reads it as incorrect; *November 11, 2026, Derek: until then it was refused as plainly wrong*). The older name of a different compound ("ferric chloride" for FeCl₂) is incorrect, and so is a stem's Greek-prefix name retyped. The lint refuses an older name as an `accept` member. The item's hint still says what form the name takes — the charge as a Roman numeral in parentheses — since the message does not. The source gate holds a name key to the WHOLE name the source prints: "cobalt(II) chloride" is refused where the source answers "cobalt(II) chloride hexahydrate". **An ion's name is keyed bare** (`selenide`) with the two-word form in `accept` (`selenide ion`): the grader drops "the" and does not drop "ion", so keyed "selenide ion" it marks the bare name wrong |
 | a formula or an ion's symbol ("Mn₃(PO₄)₂", "FeCl₃·2H₂O", "Se²⁻", "¹⁴C") | `textin` with `answerForm="formula"` ("Formulas and equations") — never a plain `textin`, which reads `CO` as `Co` (lint) |
 | a balanced equation, a half-reaction, a net ionic equation | `textin` with `answerForm="equation"` ("Formulas and equations") |
 | several of these at once ("calcium, Ca"; "ionic, Ba²⁺, O²⁻"; "molecular C₂H₂, empirical CH"; an equation and a mass) | one item per piece, each stem saying which ("Enter the molecular formula."): the classification as a `multiplechoice` first, then a formula `textin` per ion or per formula. **When only some parts have the further pieces** ("(a) covalent; (b) ionic, Ba²⁺, O²⁻" — the source keys nothing more for a covalent part, so there is nothing more to grade there), each part's further items go in a `followup` directly after its `multiplechoice`: in the open they stand under the ionic parts alone and answer the classification by being there. `verify:source-keys` refuses the shape unwrapped (`conditionalUnwrapped`) |
@@ -216,6 +219,26 @@ back to a `selfcheck` because a gate cannot yet read the form: the gate is
 taught the form, with a test (`run.md` §1 step 6a). What does not change is
 where the options come from: the stem's own set, in its order, the key the
 source's — never a distractor the author invented.
+
+**An `accept` member is one of two things** *(chapter 2, Sections
+2.5–2.6)*. It is **another name or form of the answer that the module
+itself prints** for the same thing — a synonym, a second name for a
+compound or a group, an abbreviation, a unit's symbol, a formula written
+another way: 2.5's "oxygen group" beside the key `chalcogen`,
+`CH3COOH|HC2H3O2` beside `CH₃CO₂H` — never one the author knows from
+elsewhere, never one the stem prints, and never one the module calls out
+of date (the name row). Or it is **the key's own words spelled another
+way that the grader does not fold**, which no module needs to print: a
+British spelling outside the grader's three element folds (`metres`,
+`metres squared` — the grader reads sulph- as sulf-, aluminium and
+caesium, and nothing else), an irregular plural or singular, the closed
+or open form of a compound word (`oxy acid` beside `oxyacid`), the
+blank's phrase with its head noun ("Added items"), or another form of the
+key's own word that completes the stem's sentence as well (`soy` beside
+`soybeans`, `experiment` beside `experimentation`: 1.1). A spelling the grader
+already reads — capitals, a hyphen, a regular plural, sulph- — is never a
+member. The life-sciences rule that `accept` lists "a standard
+abbreviation" is narrowed here to an abbreviation the module prints.
 
 The rules below are grouped — stems, numeric keys, added items, hints,
 selfchecks, source defects, the footer — and each is stated once.
@@ -380,6 +403,9 @@ selfchecks, source defects, the footer — and each is stated once.
 
 ### Added items
 
+- **The practice floor is the `default` `BOOK_RULES` profile**: two
+  exercises per objective group and five per section, each group with at
+  least one auto-graded item (lint).
 - **Fillers.** Each objective needs its group in `## Practice` filled to
   the floor, and the keyed exercises do not cover every objective — a
   chapter-opening module can leave two objectives with none. A group the
@@ -421,9 +447,7 @@ selfchecks, source defects, the footer — and each is stated once.
   - **Never a working word of the page's own stems.** A glossary recall
     keyed `group` or `period` on the page whose source stems say "the
     following group" and "in the same period as" is answered by the items
-    around it *(chapter 2, Section 2.5: both were deleted, and the keyed
-    exercises that exercise the objective were moved under it instead)*.
-    Before adding a filler to an objective, ask whether a keyed exercise
+    around it. Before adding a filler to an objective, ask whether a keyed exercise
     placed elsewhere serves that objective at least as well.
   - **A blank followed by its head noun** ("an ________ property") lists
     the phrase with the noun in `accept`, since a learner may type both
@@ -477,7 +501,11 @@ after the rule was written, so the line is drawn by pairs:
   uncertain) the hint names the question to ask of the case, never one
   category's definition as the place to look — with two options, pointing
   at one is the answer — and never a body example that names the item's own
-  case (1.3's body classifies steam and sugar itself).
+  case (1.3's body classifies steam and sugar itself). **On any
+  two-option item** a hint never says what one option was replaced by, used before, or is "instead" — "what
+  Mendeleev's table was arranged by, and what the relationship was found
+  to involve instead" marks the wrong option, which is the key by
+  elimination.
 - A hint never sends the learner to a table that lacks the answer (1.4's
   area item pointed at the table of base units, which has no area unit).
 - **A hint that needs a table of another section names the table and the
@@ -497,10 +525,6 @@ after the rule was written, so the line is drawn by pairs:
   across the parts of one exercise may name every table the set needs
   ("the periodic table and the table of common polyatomic ions"); it is
   never split by which part needs which table, since the split tells.
-- **On a two-option item a hint never says what one option was replaced
-  by, used before, or is "instead"** — "what Mendeleev's table was
-  arranged by, and what the relationship was found to involve instead"
-  marks the wrong option, which is the key by elimination.
 - **A hint that sends the learner to read small print in a figure** (a
   name or an atomic mass in a box of the periodic table) also names the
   appendix table that lists it, in plain words.
@@ -594,36 +618,6 @@ after the rule was written, so the line is drawn by pairs:
   form, "capitals and periods added", "unit cancellation set with a
   diagonal strike".
 
-## What the scan found
-
-| | Count |
-|---|---|
-| End-of-section exercises (`section class="exercises"`) | 1,736 |
-| … with a `<solution>` | 873 |
-| Worked `<example>`s | 301 |
-| … with a "Check Your Learning" twin and an `Answer:` note | 288 |
-| `m:math` expressions / display `<equation>`s | 5,367 / 1,558 |
-| Struck-through terms (`m:menclose`, unit cancellation) | 273 |
-| Inline `<sub>` / `<sup>` (formulas, charges, exponents) | about 7,500 / 3,500 |
-| Image references (all JPEG) | about 1,150 |
-| … inside a captioned `<figure>` | about 625 |
-| … outside one (text, examples, exercise stems, solutions) | about 490 |
-| Tables | 191 |
-| Modules with a `<glossary>` / definitions | 109 / 766 |
-| `key-equations` sections | 43 |
-
-- **Only the odd-numbered exercises are keyed**, as in the printed book,
-  and none is multiple choice. Of the 1,160 keyed answers (exercises and
-  Check Your Learning together), about 400 are one short number with a
-  unit; the rest are sentences, lettered multi-part answers, formulas,
-  names, and 65 that are drawings.
-- **Objectives** are in `md:abstract` (the math and Biology shape).
-- **Feature boxes** (`<note class>`): `link-to-learning` (95),
-  `everyday-life` (44), `sciences-interconnect` (19), `chemist-portrait`
-  (10).
-- The parser's `EXCLUDED_CORE_SECTION_CLASSES` gained `exercises` and
-  `key-equations` for this book.
-
 ## Notation
 
 **Decided November 9, 2026.** One rule decides every case: **a formula in a
@@ -674,10 +668,8 @@ mhchem extension, so nothing is loaded:
   exponent is math, as everywhere: `$6.022 \times 10^{23}$`.
 - **A fraction in inline math is `\frac`**, as the source sets it, and
   `\dfrac` is banned across the library (lint: it crowds the lines around
-  it). An inline fraction sets its digits at 13.6 px (measured; `\dfrac`
-  sets them at 19.4 px and pushes the next line from 28 to about 45 px
-  away); the pilot's rendered-page readers flagged the size three times,
-  and it stays, as the math books' `\tfrac` does. **The ban is kept on
+  it). An inline fraction is set small, as the math books' `\tfrac` is
+  (the measurements are in `docs/history/chemistry.md`). **The ban is kept on
   watch** *(Derek, November 10, 2026)*: wherever it makes a question worse
   or degrades content — digits that cannot be told apart, a fraction of
   fractions that cannot be read, a stem a learner would misread — the
@@ -704,8 +696,8 @@ mhchem extension, so nothing is loaded:
   italic in prose as the book prints them: `H₂O(*l*)`. The body face
   ("AP Body", Inter with its tailed `l` and seriffed `I` as the default
   letters; `assets/css/custom.css`) tells `l`, `I` and `1` apart upright
-  too, but a math figure sets its own Helvetica/Arial, in which they are
-  one shape.
+  too, but a figure's labels are the source's raster lettering, which may
+  draw a capital I and a lowercase l alike.
 - **A cancelled unit is `\cancel{\text{…}}`**:
   `$$4.7\ \cancel{\text{g K}} \times \frac{1\ \text{mol K}}{39.10\ \cancel{\text{g K}}} = 0.12\ \text{mol K}$$`.
   The book prints a horizontal strike, which is hard to read through two
@@ -742,7 +734,7 @@ charge, hydrate, coefficients — where a plain `textin` reads words:
 
 ```
 {{</* textin
-  question="Write the formula of the following ionic compound: manganese(II) phosphate. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="Write the formula of the following ionic compound: manganese(II) phosphate."
   answer="Mn₃(PO₄)₂"
   answerForm="formula"
   hint="Find the charge of each ion, then the smallest numbers of each that cancel."
@@ -908,14 +900,12 @@ a 21.6 mL reading 20.8 mL, and the one alt the pilot kept said "Kelvin
 scale" on a page that teaches lowercase kelvin.
 
 **A figure the source marks `class="scaled-down"` or `scaled-down-30`** —
-on its `<media>` (281) or on the `<figure>` around it (352; read since
-chapter 2) — is printed at half, or three tenths, of its NATIVE size, not
+on its `<media>` or on the `<figure>` around it — is printed at half, or three tenths, of its NATIVE size, not
 of the column: a 975 px drawing is set at two thirds of the text width and
 a 1300 px one almost across it. `source:media` records the class in the
 manifest (`scale`), the shortcode passes it on with the native width, and
 the stylesheet gives the figure that share of its own width, never under
-26rem (14rem) *(chapter 2: a flat 26rem cap set the wide ones at a third of
-native, with 7 px labels; browser test)*. Nothing is written on the page.
+26rem (14rem) (browser test). Nothing is written on the page.
 
 About 490 images sit outside any captioned figure. Each shape has one
 answer:
@@ -1028,8 +1018,6 @@ else except what a rule below adds.
   where the table contradicts itself (Appendix D: Faraday's constant is
   not the product of the Avogadro and charge values printed beside it).
 
-The run that authored them is in `docs/history/chemistry.md`.
-
 ## Knowledge checks
 
 Decided November 9, 2026: **one check per block of chapters, seven pages.**
@@ -1067,61 +1055,33 @@ run confirms or changes this, and writes the kit.
 | 6 | 16–17 | 11 | thermodynamics and electrochemistry |
 | 7 | 18–21 | 25 | descriptive, coordination, organic, and nuclear chemistry |
 
-## What the pilot settled, and what is still open
+## What is still open
 
-Settled by chapter 1 (November 9, 2026; narrative in
-`docs/history/chemistry.md`):
+What chapter 1 settled, and what the scan of the book counted, are in
+`docs/history/chemistry.md`.
 
-- **The practice floor is the `default` `BOOK_RULES` profile**: two
-  exercises per objective group and five per section, each group with at
-  least one auto-graded item. Chapter 1's keyed pool plus added items met
-  it on all six pages, groups of exactly two included, so no chemistry
-  profile was written.
-- **The gates read this book.** `verify:source-keys` reads the `exercises`
-  section class and the Check Your Learning notes, one keyed unit per
-  lettered part (`tools/lib/keyed-units.mjs`); `verify:source-coverage`
-  counts an unkeyed exercise as `omitted` and fails one that is rendered;
-  `verify:ledger` requires a solve and provenance for
-  `content/physical-sciences`; `verify:source-tables` reads the appendix
-  pages cell by cell ("Appendices"). **A gate is proven only on the shapes
-  it has met**: the review before chapter 2 found three it could not read
-  (a part that is only an image, a nuclide symbol, a formula its answer
-  labels in words), each of which would have failed a sound page, so a
-  chapter's new shapes are probed through the gates before its wave
-  (`run.md` §1 step 6a). The probe is a tool,
-  `node tools/source/chemistry-gate-probe.mjs N`: it builds the item
-  each keyed unit will carry and asks both gates about it. Run over the
-  book it found about a hundred keyed parts the keys gate read as
-  another exercise, now read by exercise first and part second
-  (`keyed-units.mjs` `unitFor`), and it leaves 25 lines for their
-  chapters' run facts: source defects, answers the shapes tool misreads,
-  and five pairs of keyed exercises whose stems are one text.
-- **The browser suite types into the real field** (`tests/browser-check.spec.mjs`,
-  "Chemistry"): every measured key on 1.6 key by key, a two-digit exponent
-  of either sign, a typed unit, the exact power-of-ten factor; and it reads
-  the rendered page for what no source gate sees — a display row wider
-  than the column, a number in scientific notation split across lines, a
-  scaled-down figure at full width.
-- **The kit**: `docs/briefs/chemistry/` (`run.md`, the parent's recipe, and
-  the author, checker, claim-pass, solve, render-reader, and consistency
-  briefs).
-
-Still open:
-
-- the Knowledge Check kit (author, checker, and solve briefs for a block)
-  and whether the item-source rule in "Knowledge checks" holds — written
-  with the first check, chapters 1–3; the quota itself is settled;
+- **The Knowledge Check kit is not yet written** (author, checker, and
+  solve briefs for a block), nor is it known whether the item-source rule
+  in "Knowledge checks" holds; the quota is settled. The first check,
+  block 1, is the run after chapter 3, and its parent writes the kit
+  first, from `docs/briefs/anatomy-physiology/kc-run.md` and its
+  `kc-prompts/` (`docs/briefs/chemistry/run.md` §4).
 - whether `verify:source-tables` should read the tables of the section
   pages too (the chapters have about 190): it reads appendix pages only,
   and a section's tables are still read by the author and the checker;
-- the item form for an electron configuration and for an ordering
-  (chapter 6), for a condensed structural formula (chapter 20), and for a
-  nuclear equation (chapter 21) — each a `selfcheck` until its chapter
-  settles it ("Formulas and equations");
+- the item forms the formula and equation fields do not yet read — each a
+  `selfcheck` until its chapter settles it ("Formulas and equations", the
+  last rule);
 - a browser test that types an EQUATION into the real field (chapter 4 is
   the first page with one). A formula is typed now: the suite types an ion
   and a grouped formula into 2.6's fields and reads the "Read as" line and
-  the grader's message *(chapter 2, Sections 2.5–2.6)*;
+  the grader's message;
 - a long table's header row scrolls out of view (Appendix G is 403 rows):
   the theme sets a table `display: block`, so a sticky header needs a
-  table render hook, which would change every table on the site.
+  table render hook, which would change every table on the site;
+- **how an item reaches an appendix other than A, to be decided before
+  chapter 5** (its first Appendix G item). Page skeleton rule 9 links each
+  such item to the appendix page, and that link leaves the page and the
+  answers typed on it, which is why the periodic table became a control
+  instead (`docs/history/chemistry.md`, "The periodic table is a control
+  on every page"): a viewer for the table appendices, or another form.

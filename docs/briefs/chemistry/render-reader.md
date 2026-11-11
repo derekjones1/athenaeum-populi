@@ -59,8 +59,8 @@ or serve the site. Do not spawn sub-agents.**
   every key on the page (2.7: the guide's example formula was the key of
   one item, and nothing told the learner how a hydrate's dot is typed).
 - **Letters that share a glyph**: the page's text face draws a tailed l and
-  a seriffed I, but a math figure's labels set their own Helvetica/Arial,
-  in which a capital I and a lowercase l are one shape (CaI₂ reads as
+  a seriffed I, but a figure's labels are the source's raster lettering,
+  which may draw a capital I and a lowercase l alike (CaI₂ reads as
   "Cal₂"). Report each figure label where the reading changes the
   substance; it is the parent's to raise.
 - Visual defects: a row cut off at the column edge, clipping, overlap, an
@@ -73,7 +73,9 @@ skeleton (objectives callout, per-section Summary and Key terms, Practice
 groups, added recall items, unlabeled Check Your Learning items);
 corrections disclosed in a Source note or the footer; CNXML-backed wording
 differences from the PDF; inline fractions set small (house style:
-`\dfrac` is banned); a number and its unit parted at a line end.
+`\dfrac` is banned), except one you cannot read — report that one under a
+`\dfrac` watch heading (playbook "Notation"); a number and its unit
+parted at a line end.
 
 ## Output
 

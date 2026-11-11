@@ -11,8 +11,12 @@ scratchpad directory named in your task. **Never run a git command. Do not
 spawn sub-agents. Do not run any `npm` script.** **Do not open the live page
 under `content/`** — it prints the keys. Do not read `data/verification/`,
 `$SP/ledger-*`, `$SP/check-*`, `$SP/keys-*`, `$SP/report-*`, the CNXML, the
-PDF, or any checker report. The one thing you open outside the packet
-directory is a figure an item is bound to (below). Write only the answers file named in your task.
+PDF, or any checker report. Outside the packet directory you open two
+things and nothing else: a figure an item is bound to (below), and the
+book's reference pages, `content/physical-sciences/chemistry/appendices/*.md`
+— the one part of `content/` you may read, since nothing on an appendix
+page is graded and none prints a key. Write only the answers file named in
+your task.
 
 ## Input
 
@@ -22,7 +26,14 @@ The packet directory in your task holds one JSON per page, emitted by
 `multiplechoice` — key, accept, hint, and `answerDisplay` are stripped.
 Beside it, `pages/` holds each page whole with every key masked: that is
 your source. The page outranks your general knowledge: use the conversion
-factors, constants, and rounding rules the page itself prints.
+factors, constants, and rounding rules the page itself prints. **The
+masked pages print no atomic masses**: every learner has the periodic
+table on every page, so take each atomic mass from Appendix A
+(`appendices/a-the-periodic-table.md`, its table of the 118 elements), and
+a constant or a table value the page does not print from the appendix
+that holds it — as printed there, to the places printed there, never from
+memory. A molar mass's significant figures, and so the key's, depend on
+those places.
 
 ## Method
 

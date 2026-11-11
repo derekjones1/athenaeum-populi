@@ -1104,7 +1104,9 @@ typed.
   judgment the parent made — the alternative was a fresh solve of 74
   items whose question had not changed — and it is recorded in AGENTS.md
   beside the other carry rules. A stem that loses anything else, or the
-  source's own words about the table, is still re-solved (tested).
+  source's own words about the table, is still re-solved (tested). (The rule was a one-off and was removed the
+  same day, once the records were carried: "A review before chapter 3",
+  below.)
 - Lint: the sentence is an error from now on, so the carry rule can only
   ever drop it from the old side of a comparison.
 - Gates after the edit: `verify-section` on 2.3, 2.6, 2.7; source keys
@@ -1217,6 +1219,334 @@ look-alike letters; changing that re-flows every label in about 1,500
 figures and is a separate decision. The standalone 404 page keeps its inline
 system stack: it loads no site stylesheet, and a second copy of the
 `@font-face` there is a file name a rename would have to remember.
+
+### A review before chapter 3
+
+Before chapter 3, three Opus reviewers read the Chemistry kit cold: one the
+kit (`docs/subjects/chemistry.md`, `docs/briefs/chemistry/`, and the parts
+of `AGENTS.md` and the inherited playbooks they point at), one the code the
+last day changed (commits 85747a39, 5bb8d634, 7297b15b, f426be46), and one
+every rendered Chemistry page.
+
+**The kit review** counted 1 finding that would fail a gate in chapter 3
+(A), 7 that would cost a round of rework (B), and 12 of polish (C). What
+held up: every file, tool, script, and flag `run.md` names exists and takes
+the arguments shown, the chapter 3 prep tools run clean (no shape flag, 117
+keyed units probed with no finding), and the grader commands in the briefs
+return what the briefs say.
+
+- **A1.** The playbook's one worked formula `textin` still ended "Use the
+  [periodic table](…)." — the sentence the lint has refused since that
+  morning. Deleted from the example; no other example or instruction in the
+  kit or `AGENTS.md` adds a pointer to the table.
+- **B1.** `run.md` sent the consistency reader's report to
+  `$SP/consistency.md`, the path of its own copied brief. Now
+  `$SP/consistency-chNN.md`; the rendered-page reader and the fix checker
+  were given named report paths too (`$SP/render-N.M.md`,
+  `$SP/fix-check-chNN.md`).
+- **B2.** `run.md` §1 step 6 and the run-facts template still had the
+  parent list every item that needs an appendix's data, Appendix A
+  included. Both now say Appendix A is the exception: an item that needs
+  only the table's data and names no table is not listed and gets nothing
+  added (chapter 3's molar-mass items take no pointer); the source's own
+  words about the table are still linked; every other appendix still needs
+  its link on each item. The author brief says the same.
+- **B3.** The blind solver could open nothing under `content/`, and the
+  masked pages print no atomic masses. `solve.md` now lets it read the
+  appendix pages (a grep found no graded shortcode on any of them) and
+  says atomic masses and constants come from those pages as printed, to
+  the places printed, since a molar mass's significant figures depend on
+  them; `run.md` §3 says the same.
+- **B4.** "An `accept` member is only a form the module itself prints"
+  (Sections 2.5–2.6, above) was recorded as a playbook ruling and was not
+  in the playbook, while its own unit row prescribed `metres squared`,
+  which no module prints. The grader folds only sulph-, aluminium, and
+  caesium, so `metres` is a spelling a correct learner types and the
+  grader cannot read. The playbook now states the rule generally ("An
+  `accept` member is one of two things", under "Exercises"): another name
+  or form only where the module prints it, or the key's own words spelled
+  another way the grader does not fold. The author and checker briefs
+  point to it. Two chapter 1 members were neither as the rule was first
+  written — `soy` for `soybeans` and `experiment|experimenting` for
+  `experimentation` (1.1), each another form of the key's own word that
+  completes the sentence as well. They are sound answers that three
+  readings accepted, so the rule's second half names that case rather
+  than the members being withdrawn.
+- **B5.** The exemplars were chapter 1 pages only, and the author may not
+  open another chapter's page. The run-facts template and `run.md` now
+  name three chapter 2 ITEMS by page and stem (a formula `textin` under an
+  image-only part on 2.4, a name `textin` on 2.7, a `followup` on 2.6), and
+  `author.md` lets the author read those items and nothing else of those
+  pages.
+- **B6.** `AGENTS.md` said only chapter 1 was authored. It now points at
+  the cover for what is done, and `run.md`'s pins step reads the sentence
+  at each close-out. Its "Re-solving after a sweep" lost the clause on the
+  retired pointer sentence, a one-off carry that is being taken out of
+  `ledger-carry.mjs` in the same review.
+- **B7.** Chapter 3 closes Knowledge Check block 1, and `run.md` never
+  mentioned knowledge checks. Its close-out gained step 9: when a chapter
+  closes a block, the next run is the block's check, and for block 1 its
+  parent first writes the Chemistry Knowledge Check kit from
+  `docs/briefs/anatomy-physiology/kc-run.md` and `kc-prompts/`. The
+  playbook's "What is still open" says the kit does not exist.
+- **C1–C12.** Applied: `run.md`'s "Three things" over five bullets and
+  "two runs" (C1); the appendix grep that also matched seven chapter 21
+  modules (C2); the probe's stale "25 lines" and a kit list missing two
+  briefs, both in the settled-by-chapter-1 text moved below (C3); "a math
+  figure sets its own Helvetica/Arial", when every Chemistry figure is the
+  source's raster (C4); the forms not yet read, stated twice — the
+  "Formulas and equations" rule kept, "What is still open" pointing to it
+  (C5); the page-skeleton conventions no lint holds, now listed in the
+  checker's §3 (C6); `AGENTS.md`'s "four" baselines (there are five),
+  and `--min-covered` said to move only with the pin (C7; the reviewer
+  also set `AGENTS.md`'s "do not commit unless the user explicitly asks"
+  against `run.md`'s commit step — that sentence was left as it is, the
+  rule being Derek's to change); the rendered-page reader's "inline
+  fractions set small" exception made to report an unreadable one under
+  the `\dfrac` watch (C8); `run.md`'s chapter 1 key-page indexes (C10);
+  the name row's missing period (C11); and the author brief's two
+  duplicated bullets and "prints no number" (C12). Recorded, not decided:
+  links to the appendices other than A still leave the page (C9), now in
+  the playbook's "What is still open" for a decision before chapter 5.
+  Not done: moving the name row's older-name passage out of the table
+  (C11's second half), a matter of layout.
+
+**Concision.** The playbook lost "What the scan found" (kept as one bullet
+under "Source and authority") and the settled half of "What the pilot
+settled, and what is still open" (the practice floor moved to "Added
+items"), two duplicated passages, and the anecdotes after rules that read
+whole without them; `run.md` lost "What a chapter cost" and the same kind
+of anecdote. The text is below.
+
+**The code review** found nothing a learner or a gate meets wrong, and four
+latent weaknesses, each reproduced before it was fixed:
+
+- The older-name lint compared strings, where the grader folds a plural:
+  `accept="ferrous ions"` beside the key "iron(II) ion" passed the lint and
+  graded Correct. The lint now asks the grader's own question
+  (`isOlderName` against the other accepted members).
+- The browser-fixture gate recognised three verdict words, so the new
+  "older name" case (`form`) was never replayed in `npm test`. It reads
+  `form` now; four older `form` cases are replayed with it.
+- The build audit's body-font preload rule skipped when it could not find
+  the `@font-face`. It now reports that as a problem, and reads a `src`
+  that begins with `local()`.
+- A link to Appendix A written without its trailing slash would have left
+  the page, and the retired sentence spelled that way passed the lint. Both
+  read the page with or without the slash, and as `index.html`.
+
+Two things were changed on the reviewer's notes rather than its findings.
+The ledger carry rule for the retired sentence was a one-off: with the 74
+records carried and the lint refusing the sentence, it was removed from
+`ledger:carry` and from `AGENTS.md`. And the font build took its character
+set from the content of the day, so a later run would have written
+different bytes under the same file name, with nothing to say when a new
+chapter printed a character the face lacks. The set is now a function of
+the script's own constants and the pinned release — 22 Unicode blocks that
+are cheap to take whole, and 15 single characters (EXTRAS) from blocks that
+are not — so two runs write the same bytes: upright 95,484, italic 105,568.
+`data/fonts/ap-body.json` records what the faces cover, and
+`tools/build/body-font-coverage.test.mjs` fails `npm test` on any character
+a page prints outside math that neither face draws and its commented list
+of fourteen does not name (⇌ ⇄ ∙ ∝ ⨯ ᵂ ♀ ♂ ⓐ ⓑ ⓒ ⓓ ⟨ ⟩, which Inter
+lacks). What went wrong on the way: the parent's first list of blocks took
+Latin Extended-B, IPA Extensions and the combining marks whole, and the
+upright file — the one every page preloads — went from 88 to 160 KB for
+five characters; the blocks came out and the five were named.
+
+**The rendered-page reading** (all 29 Chemistry routes at 1280 and 390 px)
+found one thing that misled a learner and four that were visibly wrong:
+
+- **A formula typed with the stem's period.** "MgSe." was answered "Those
+  are the right letters — now fix the capitals", its capitals being right:
+  a period is how a hydrate's dot is typed, and the reader took the last
+  one for a dot with nothing after it. Every stem ends in a period and so
+  does the typing guide's example. The chemistry reader now drops a
+  period, comma, or semicolon from the END of what was typed
+  (`check-chem.mjs`; a key is never passed through that).
+- **Section 2.3 scrolled sideways on a phone**: its Key equations line,
+  one inline formula with a `\left( … \right)` group that cannot break,
+  ran 20 px past the screen. Not the font's doing — the page did it before.
+  A Key equations line now scrolls inside itself and is
+  keyboard-reachable when it does (`custom.css`,
+  `scrollable-regions.js`), and a browser test asks every page of the book
+  not to scroll sideways at 390 px; until then only the appendices were
+  asked. The parent's first rule was wrong twice, and its own test and a
+  screenshot showed it: the scroll box cut a few pixels off a fraction
+  (it is padded now, the padding taken back as margin), and
+  `li > .katex:only-child` also matched a lone symbol inside a sentence —
+  `:only-child` does not see text — and put a gap after the Z of "(Z)" in
+  2.3's summary (the rule is scoped to the list under the heading).
+- **Below 1280 px nothing on an item points at the Periodic table
+  control**: the rail is the "On this page" drawer there, behind an
+  icon-only button, and on the nine appendix pages with no headings there
+  is no drawer at all. 34 of Section 2.7's 48 items name no table. Put to
+  Derek.
+- **Section 2.5 prints "Using the periodic table" as plain words where 2.6
+  links them** — the playbook's rule, since 2.5 shows the table itself.
+  Left as it is, pending the decision above.
+- Recorded and not acted on: a Roman numeral typed with lowercase l's gets
+  only "Not quite"; the older-name message says "systematic name" where
+  five stems say "IUPAC name"; "∙" in Appendix C is drawn by the fallback
+  face; display equations cut off on a phone show no sign that they
+  scroll; the viewer's title is clipped to "Periodic ta…" at 390 px.
+
+What it confirmed: the control is on every page but Appendix A and opens
+the table; none of the 74 edited stems is left with a dangling sentence;
+the three footers no longer describe the removed sentence; I, l, the Roman
+numerals and the Unicode charges read correctly at three times the size;
+no console error or failed request on any page, width, or theme.
+
+### Text moved out of the kit at the review before chapter 3
+
+#### From the playbook, "What the pilot settled" (the settled half)
+
+Settled by chapter 1 (November 9, 2026; narrative in
+`docs/history/chemistry.md`):
+
+- **The practice floor is the `default` `BOOK_RULES` profile**: two
+  exercises per objective group and five per section, each group with at
+  least one auto-graded item. Chapter 1's keyed pool plus added items met
+  it on all six pages, groups of exactly two included, so no chemistry
+  profile was written.
+- **The gates read this book.** `verify:source-keys` reads the `exercises`
+  section class and the Check Your Learning notes, one keyed unit per
+  lettered part (`tools/lib/keyed-units.mjs`); `verify:source-coverage`
+  counts an unkeyed exercise as `omitted` and fails one that is rendered;
+  `verify:ledger` requires a solve and provenance for
+  `content/physical-sciences`; `verify:source-tables` reads the appendix
+  pages cell by cell ("Appendices"). **A gate is proven only on the shapes
+  it has met**: the review before chapter 2 found three it could not read
+  (a part that is only an image, a nuclide symbol, a formula its answer
+  labels in words), each of which would have failed a sound page, so a
+  chapter's new shapes are probed through the gates before its wave
+  (`run.md` §1 step 6a). The probe is a tool,
+  `node tools/source/chemistry-gate-probe.mjs N`: it builds the item
+  each keyed unit will carry and asks both gates about it. Run over the
+  book it found about a hundred keyed parts the keys gate read as
+  another exercise, now read by exercise first and part second
+  (`keyed-units.mjs` `unitFor`), and it leaves 25 lines for their
+  chapters' run facts: source defects, answers the shapes tool misreads,
+  and five pairs of keyed exercises whose stems are one text.
+- **The browser suite types into the real field** (`tests/browser-check.spec.mjs`,
+  "Chemistry"): every measured key on 1.6 key by key, a two-digit exponent
+  of either sign, a typed unit, the exact power-of-ten factor; and it reads
+  the rendered page for what no source gate sees — a display row wider
+  than the column, a number in scientific notation split across lines, a
+  scaled-down figure at full width.
+- **The kit**: `docs/briefs/chemistry/` (`run.md`, the parent's recipe, and
+  the author, checker, claim-pass, solve, render-reader, and consistency
+  briefs).
+
+#### From the playbook, "What the scan found"
+
+| | Count |
+|---|---|
+| End-of-section exercises (`section class="exercises"`) | 1,736 |
+| … with a `<solution>` | 873 |
+| Worked `<example>`s | 301 |
+| … with a "Check Your Learning" twin and an `Answer:` note | 288 |
+| `m:math` expressions / display `<equation>`s | 5,367 / 1,558 |
+| Struck-through terms (`m:menclose`, unit cancellation) | 273 |
+| Inline `<sub>` / `<sup>` (formulas, charges, exponents) | about 7,500 / 3,500 |
+| Image references (all JPEG) | about 1,150 |
+| … inside a captioned `<figure>` | about 625 |
+| … outside one (text, examples, exercise stems, solutions) | about 490 |
+| Tables | 191 |
+| Modules with a `<glossary>` / definitions | 109 / 766 |
+| `key-equations` sections | 43 |
+
+- **Only the odd-numbered exercises are keyed**, as in the printed book,
+  and none is multiple choice. Of the 1,160 keyed answers (exercises and
+  Check Your Learning together), about 400 are one short number with a
+  unit; the rest are sentences, lettered multi-part answers, formulas,
+  names, and 65 that are drawings.
+- **Objectives** are in `md:abstract` (the math and Biology shape).
+- **Feature boxes** (`<note class>`): `link-to-learning` (95),
+  `everyday-life` (44), `sciences-interconnect` (19), `chemist-portrait`
+  (10).
+- The parser's `EXCLUDED_CORE_SECTION_CLASSES` gained `exercises` and
+  `key-equations` for this book.
+
+#### From the playbook, shorter cuts
+
+- Page skeleton rule 9, after the periodic-table control: "Through chapter
+  2 such an item ended "Use the periodic table." with a link; 74 items
+  carried it, 46 on Section 2.7 alone, and following the link left the
+  page and the typed answers behind." (already above, "The periodic table
+  is a control on every page").
+- Rule 9, on a link in a stem: "until 2.6 the path's six words counted, and
+  an unlettered exercise carried one member at a time fell under the
+  floor" (already above, Sections 2.5–2.6, "Gates, tools, tests").
+- "Added items", a filler on a working word: "*(chapter 2, Section 2.5:
+  both were deleted, and the keyed exercises that exercise the objective
+  were moved under it instead)*".
+- "Notation", the inline fraction: "An inline fraction sets its digits at
+  13.6 px (measured; `\dfrac` sets them at 19.4 px and pushes the next line
+  from 28 to about 45 px away); the pilot's rendered-page readers flagged
+  the size three times" (the measurement is already in "The appendices,
+  the Knowledge Check quota, and the `\dfrac` watch").
+- "Figures", the scaled-down classes: the counts "(281)" on the `<media>`
+  and "(352; read since chapter 2)" on the `<figure>`, and "*(chapter 2: a
+  flat 26rem cap set the wide ones at a third of native, with 7 px labels;
+  browser test)*" (both already in Sections 2.1–2.4).
+- "Appendices": "The run that authored them is in
+  `docs/history/chemistry.md`."
+- "Still open", the browser test of a typed formula: "*(chapter 2,
+  Sections 2.5–2.6)*".
+
+#### From `run.md`, the anecdotes after its rules
+
+Most of these are already told in the run entries above; they are kept here
+word for word as `run.md` had them.
+
+- §0, the parent's notes: "The pilot's claim-pass reader grepped the scratchpad for a phrase, hit the parent's notes, and read the parent's five leads; it said so, and its agreement on four of them was no longer blind."
+- §0, rulings against the lints: "Two pilot rulings — "`\dfrac` for inline fractions", "numbers grouped as the source prints them" — contradicted lint errors that already existed … and cost a fixer round-trip each." and "Section 2.7's ruling "close the stem ‘Type the dot as a period, as in CuSO4.5H2O.’" came with a new lint that required the sentence, and the ASCII-chemistry lint refused it; the author found out, not the parent."
+- §0, sweeping a promoted rule: "The hint rule was written from 1.5's hints, and 1.5 still carried them, word for word, when the chapter was "done"."
+- §0, the ledger snapshot: "*(Sections 2.5–2.6: a snapshot taken before the merge carried nothing, and four hashes were remapped by script)*"
+- §0, fixers and hashes: "The pilot's brief said a hint-only edit kept its hash, and one fixer filed 9 results for 46 re-hashed items."
+- §0, gates as each page lands: "Three of chapter 2's four gate lessons (a "repeat [Exercise N]" stem, a name with a drawing, a varying answer given part by part) were found this way while the authors were still working, and each was a gate taught a form, with a test, before its page's checker reported."
+- §0, placeholders: "*(Sections 2.5–2.6)* … 2.3 said "the periodic table in a later section" and its footer gave the reason "not yet on this site" until 2.5 landed."
+- §0, hand-built probe items: "Four gate gaps of 2.5–2.6 showed only that way: a link's path counted as stem words, a formula after a colon, an option that prints its second name in parentheses, an answer in the glossary's other word."
+- §1 step 4, shapes flags: "(chapter 2 had two: 2.7's "AIF₃·3H₂O" with a capital I for the l, and a simulation answer that offers two symbols joined by "or")"
+- §1 step 6a, why the probe: "before chapter 2 they could not read a part that is only an image or a nuclide symbol, and about a hundred keyed parts of the book were read as ANOTHER exercise (one part under two lead-ins; a charge's sign; a lead-in that prints a sibling's part)."
+- §2, build-map: "— chapter 2's first two checkers compared their pages by hand for that reason."
+- §2, rendered-page reading: "Section 2.7's found that the formula field's own typing example was the key of an item on the page — the reader reads the widgets' words, not only the page's"
+- §2, provisional rulings: "the pilot's 177.66 °F stood on the parent's ruling and fell to the consistency reader's comparison with Section 1.5's rules and the sibling keys."
+- §2, citations: "*(Section 2.7: an IUPAC table cited for the opposite of what it says)*"
+- §2, the fix check: "Chapter 2's found ten: a rubric its own sample answer could not meet, a hint that pointed at the row printing the whole answer, a Source note on the wrong side of its figure."
+- §2, before the solve: "The pilot ran the two extra readings after its solve, and 131 items re-hashed."
+
+#### What the kit's runs cost
+
+From `run.md`, "What a chapter cost".
+
+Chapter 2, Sections 2.1–2.4 (four sections, 87 items, about three and a
+half hours of wall time): authors 200–295k tokens each across three
+rounds; checkers 150–210k; claim pass 175k; consistency reader 210k; three
+rendered-page readers 135–180k; fix checker 165k; blind solver 127k; two
+clerks 80k and 150k.
+
+Chapter 2, Sections 2.5–2.6 (two sections, 79 items, about two hours of
+work): authors about 265k tokens each across three rounds; checkers 178k
+each; claim pass 119k; consistency reader 224k; one rendered-page reader
+for both pages 233k; fix checker 139k; blind solver 103k; four clerks 53k
+to 139k.
+
+Chapter 2, Section 2.7 (one section, 48 items, about two hours of work): the
+author 269k tokens across four rounds; checker 198k; claim pass 108k;
+consistency reader 171k; rendered-page reader 157k; fix checker 134k;
+blind solver 79k; two clerks 111k and about 60k. With one module the
+parent wrote the run facts, the landing and cover lines, the pins, and
+the decisions entries itself.
+
+Chapter 1, six sections, measured where known:
+
+Extra readings: five rendered-page readers at 150–170k tokens each; one
+consistency reader at about 210k; six fixers at 75–160k; one fix checker.
+The consistency reader found more per token than any other reading of the
+pilot — the rulebook contradicting itself, a key against another section's
+rule, a leak visible only by contrast — and it is the one that recurs.
 
 ## The `\dfrac` watch list
 

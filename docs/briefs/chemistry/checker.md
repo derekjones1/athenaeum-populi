@@ -18,7 +18,7 @@ may read `$SP/keys-N.M.txt` only AFTER forming your own answer to an item.
 
 Read first: `$SP/run-facts.md` (a page that follows a parent decision is not
 defective for it), then `docs/subjects/chemistry.md` (all but "Knowledge
-checks" and "What the pilot settled, and what is still open") and, in `docs/subjects/life-sciences.md`,
+checks" and "What is still open") and, in `docs/subjects/life-sciences.md`,
 "The section page, in order", "Notation", "Media: vendored figures", "Leaks
 across the page", and "Defect classes the checkers find".
 
@@ -79,6 +79,12 @@ catch.
   examples (title, problem, every solution step), tables cell by cell
   against the PDF, summary, key equations, key terms against the
   `<glossary>` one for one.
+- **The small conventions no lint holds** (playbook "The section page, in
+  order", rule 9), ticked one by one: the frontmatter description ends
+  "— adapted from OpenStax Chemistry 2e, Section N.M."; the first figure,
+  and only it, is `eager="true"`; a numbered figure or table in running
+  text is a describing phrase; a reference to another section is plain
+  text.
 
 ## 4. Figures
 
@@ -114,7 +120,11 @@ stem shows it.
   (`group` where the source stems say "the following group") is a defect,
   and so is a name the MODULE prints for a key that the item's `accept`
   lacks ("oxygen group" for chalcogen): search the module for "also
-  called", "can be called", "or", and the glossary's "(also, …)". A name
+  called", "can be called", "or", and the glossary's "(also, …)". The
+  converse is a defect too: an `accept` member that is another name or
+  abbreviation the module does NOT print, rather than a spelling of the
+  key the grader does not fold (playbook "Exercises", "An `accept` member
+  is one of two things"). A name
   the module prints as out of date ("was known as", "previously called")
   is not one (playbook "Exercises", the name row), and its absence from
   `accept` is not a finding: the lint refuses it there, and the grader

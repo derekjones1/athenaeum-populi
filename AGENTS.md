@@ -24,11 +24,12 @@ pin postdates its PDF; a chapter is run from
 agent briefs beside it — versioned there, not re-derived per session.
 Chemistry 2e is `in-progress` (21 flat chapters, 114 sections, pinned
 November 9, 2026; the first book under `content/physical-sciences/`):
-chapter 1 is authored — the book's pilot — and so are its thirteen
-appendices, the library's first reference pages
-(`appendices/<letter>-<slug>.md`, generated from the CNXML's tables and
-held to them cell by cell); `docs/subjects/chemistry.md`
-holds the scan, the page skeleton, the exercise rules (only source-keyed
+its cover, `content/physical-sciences/chemistry/_index.md`, lists the
+chapters authored so far under `## Chapters` and the rest under "Planned
+contents", and its thirteen appendices are complete, the library's first
+reference pages (`appendices/<letter>-<slug>.md`, generated from the
+CNXML's tables and held to them cell by cell); `docs/subjects/chemistry.md`
+holds the source, the page skeleton, the exercise rules (only source-keyed
 exercises reach the page), the notation, measured-quantity grading
 (`\ce{…}` formulas in math, `sig-figs:<n> last-digit:<k>` fill-ins), typed
 formulas and equations (`textin` with `answerForm="formula"` or
@@ -121,8 +122,12 @@ campaign, the figure-alt passes, and their kit — are archived under
   fold the matcher can see, or a reviewed entry in the tool's
   `LISTED_EXERCISES` (disclosed folds and reworded conversions; an entry
   whose exercise becomes rendered, or whose named item disappears, fails as
-  stale). `--min-covered` is the source's own unit total, so covered = total
-  means nothing is missing; it moves only when the source pin moves. Skips absent
+  stale). `--min-covered` is the count of covered source units; for a
+  finished book that is the source's own unit total, so covered = total
+  means nothing is missing, and it moves only when the source pin moves.
+  It also rises with every chapter of a book still being written
+  (Chemistry's moved 4,213 → 4,259 with Section 2.7), and
+  `npm run baseline:update` rewrites it. Skips absent
   bundles like `verify:source-keys` (part of `npm test`)
 - `npm run verify:source-tables` — hold every table cell of a reference page
   (a book's `appendices/`, mapped by `build-map`) to the pinned CNXML: each
@@ -195,9 +200,9 @@ campaign, the figure-alt passes, and their kit — are archived under
   and list the dead, blocked, and unreachable ones; needs the network, so it
   is not in `test` or `ci`
 - `npm run ci` — complete local equivalent of CI
-- `npm run baseline:update` — recount the four published baselines and
+- `npm run baseline:update` — recount the five published baselines and
   rewrite package.json's `--min-verified`, `--min-confirmed`,
-  `--min-replayed`, and `--min-exercises` in place (`-- --allow-decrease`
+  `--min-replayed`, `--min-exercises`, and `--min-covered` in place (`-- --allow-decrease`
   for a deliberate drop, named in the commit)
 - `npm run source:fetch` — fetch the ignored, sparse OpenStax source checkout
 - `npm run source:verify` — verify the committed section map offline
@@ -213,7 +218,7 @@ warning level (working rules: `docs/authoring-playbook.md` §5). If a rule
 fires on sound content, narrow the rule and add a test for the case it got
 wrong — do not exempt the page. When authoring moves any published
 baseline (`--min-verified`, `--min-confirmed`, `--min-replayed`,
-`--min-exercises`), end the session with `npm run baseline:update` and
+`--min-exercises`, `--min-covered`), end the session with `npm run baseline:update` and
 commit the rewrite together with the content.
 
 ## The answer ledger
@@ -264,10 +269,7 @@ hash when the stem, options, and key are unchanged and every previously
 graded form still grades correct (so `accept` ADDITIONS carry, and a
 removal carries only when the grader still reads the removed spelling —
 a regular plural, or since October 27, 2026 a hyphenated or closed
-respelling — while a new key does not); a stem that lost only the retired
-pointer sentence "Use the [periodic table](…)." is the same stem (November
-11, 2026: 74 Chemistry items, when the table became a control on every
-page — the sentence asked nothing); a fill-in's `answerForm` change carries
+respelling — while a new key does not); a fill-in's `answerForm` change carries
 while the key still grades correct under the new form, since `solve:compare`
 judges a solver on value, not form (October 4, 2026); an item whose `dependency` block — the
 figure or table it names — changed is re-solved, since the solver read

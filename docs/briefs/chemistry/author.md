@@ -31,7 +31,7 @@ to confirm the bytes landed (several agents write to this tree at once).
 
 1. `$SP/run-facts.md`.
 2. `docs/subjects/chemistry.md` — all of it except "Knowledge checks" and
-   "What the pilot settled, and what is still open". "Notation", "The section page, in order",
+   "What is still open". "Notation", "The section page, in order",
    "Exercises", "Measured quantities", and "Figures" are the rules you
    write to.
 3. `docs/subjects/life-sciences.md` — only "The section page, in order",
@@ -52,10 +52,13 @@ to confirm the bytes landed (several agents write to this tree at once).
    `layouts/shortcodes/fillin.html`, `multiplechoice.html`, `textin.html`,
    `selfcheck.html`, `mediafigure.html`; `verify-section` rejects an unknown
    param.
-7. The exemplar named in the run facts, for shape only.
+7. The exemplars named in the run facts, for shape only: the chapter 1
+   pages it names, and — where your module keys the shape — the chapter 2
+   ITEMS it names, found by their stems. Of a chapter 2 page read only the
+   named item and the few lines around it (its figure, its `followup`).
 
 Do not read `AGENTS.md`, `docs/history/`, the other subject playbooks, other
-chapters' pages beyond the exemplar, or the checker brief.
+chapters' pages beyond the exemplars, or the checker brief.
 
 ## 2. Your sources
 
@@ -110,9 +113,11 @@ goes wrong.
    plain-text characters written from the IMAGE — every count ("six boxes,
    seven arrows") taken by counting, and every "each", "all", "only", and
    "gone", every position word ("above", "between", "below"), and every
-   colour re-read against a zoom (chapter 2: "dark-crusted" for a
-   golden-brown pudding; a column described "above, between, and below"
-   that ended at the bottom pair); a footer reason of the form "the source
+   colour re-read against a zoom of the exact object, not its
+   neighbourhood (chapter 2: "dark-crusted" for a golden-brown pudding;
+   "the dish glows orange" for the flame beside a dish that stays silver;
+   a column described "above, between, and below" that ended at the
+   bottom pair); a footer reason of the form "the source
    alt says X, the drawing does not" is true of the DRAWING — re-open it
    before you write the clause; an alt directly above an item never
    states what the item asks for; `kind` explicit;
@@ -126,12 +131,15 @@ goes wrong.
    asks the learner to consult what an appendix holds, whether or not the
    source links it**: "Using the periodic table, …" on a page that shows
    no periodic table links those words to Appendix A; an item that needs
-   a table value it does not print links the phrase naming it to the
-   appendix that has it. The source's words stay as they are — only the
-   link is added — every item that needs it carries it, and the footer
-   says so. **Never add a sentence that points to the periodic table**
-   ("Use the periodic table."): every page of the book carries it as a
-   control in the rail, and the lint refuses the sentence. Every other
+   a value from any OTHER appendix (a formation enthalpy, a constant the
+   page lacks) links the phrase naming it to the appendix that has it.
+   The source's words stay as they are — only the link is added — every
+   item that needs it carries it, and the footer says so. **An item that
+   needs only atomic masses or other periodic-table data and names no
+   table gets nothing** — a molar mass, a percent composition, an element
+   for an atomic number: every page of the book carries the table as a
+   control in the rail. Never add a sentence that points to it ("Use the
+   periodic table."); the lint refuses it. Every other
    cross-reference stays plain text.
 8. `## Summary`, `## Key equations` (only if the module has that section),
    `## Key terms` (the module's `<glossary>`, source order), `## Practice`,
@@ -143,8 +151,10 @@ goes wrong.
 - **The form follows the keyed answer's shape** — the table in playbook
   "Exercises". Do not grade what the source does not key; do not turn an
   explanation into a multiple choice with invented options.
-- **The stem is the source's, verbatim.** What you add comes after it and
-  prints no number: "Enter the volume in liters." A lettered part's stem is
+- **The stem is the source's, verbatim.** What you add comes after it;
+  the closing sentence prints no number: "Enter the volume in liters." A
+  datum the source assumes and the module never states goes in the stem in
+  parentheses (playbook "Stems"). A lettered part's stem is
   the lead-in followed by that part, with the letter dropped. One named
   unit is spelled out, a quotient or product unit is its symbol ("g/mL");
   "with its sign" is never written (lint); a part that leans on an earlier
@@ -209,7 +219,10 @@ goes wrong.
   half of a contrast pair; a select-the-term multiple choice where no cloze
   is unique — written as a question, never opening with a blank, and under
   a heading that names its key only if the heading names another option
-  too. The leak rules are life-sciences "Leaks across the page":
+  too. Never key a filler on a working word of the page's own stems
+  (`group`, `period` on the page whose source stems say "the following
+  group"): before adding one, ask whether a keyed exercise placed under
+  another objective serves this one at least as well. The leak rules are life-sciences "Leaks across the page":
   nothing directly above a `textin` prints its key; a hint says where to
   look and never states the key or the fact that decides the item.
 - **Hints**: the tool — the equation by its name, the table, the rule or
@@ -233,13 +246,6 @@ goes wrong.
   and Molecular Compounds"); where the module names one substance two
   ways by its state, the hint names the subsection whose rule decides,
   never the observation that decides it.
-- **A colour or position in a photograph's alt** is read off a zoom of the
-  exact object, not its neighbourhood (chapter 2: "the dish glows orange"
-  was the flame beside a dish that stays silver).
-- **A filler is never keyed on a working word of the page's own stems**
-  (`group`, `period` on the page whose source stems say "the following
-  group"): before adding one, ask whether a keyed exercise placed under
-  another objective serves this one at least as well.
 - **Order inside a Practice group:** the source's keyed items first, in
   source order, then your added items (an added item goes above a keyed
   `selfcheck` whose model answer prints its key).
@@ -289,6 +295,11 @@ goes wrong.
   apart — to the learner or to the source gates — so never put two
   parts' figures above one item, and never an item of one part under
   another part's figure.
+- **An `accept` member** is another name or form the module itself
+  prints for the answer, or the key's own words spelled another way the
+  grader does not fold (`metres`; an irregular plural) — never a name you
+  know from elsewhere (playbook "Exercises", "An `accept` member is one of
+  two things").
 - **A unit as the answer**: a one-word or counted unit name is a `textin`
   with the accept crossings the playbook's table lists; a quotient or
   product unit, or kelvin against "°K", is a `multiplechoice` (the text

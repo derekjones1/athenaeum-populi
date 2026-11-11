@@ -44,8 +44,13 @@ the production architecture.
   cannot make a line taller. A metric-matched local Arial ("AP Body
   Fallback") holds the layout while the web font loads, and every page
   preloads the upright file; the build audit checks that the preload names
-  the file the stylesheet does. Characters Inter lacks (the generator prints
-  them: ⇌, ⟨ ⟩, ⓐ and a few operators) fall through to the system font.
+  the file the stylesheet does. The subset is whole Unicode blocks plus a
+  short list of single characters from the pinned release only
+  (`data/fonts/ap-body.json` records it), and
+  `tools/build/body-font-coverage.test.mjs` fails on any character content
+  prints outside math that neither face draws and its commented allowlist
+  does not name. Characters Inter lacks (⇌, ⟨ ⟩, ⓐ and a few operators) are
+  drawn by "AP Body Fallback", then the system font.
   Math figures and KaTeX set their own fonts.
 - Static diagrams are accessible inline SVG. New figures are authored as
   graph-core spec JSON in the `apfigure` shortcode and rendered in the
