@@ -341,6 +341,7 @@ ionic
 covalent
 {{< /multiplechoice >}}
 
+{{< followup >}}
 {{< textin
   question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: BaO. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/). Enter the symbol of the cation."
   answer="Ba²⁺"
@@ -354,6 +355,7 @@ covalent
   answerForm="formula"
   hint="Split the formula into ions whose charges balance, using the periodic table and the table of common polyatomic ions."
 >}}
+{{< /followup >}}
 
 {{< multiplechoice
   question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: (NH₄)₂CO₃. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
@@ -364,6 +366,7 @@ ionic
 covalent
 {{< /multiplechoice >}}
 
+{{< followup >}}
 {{< textin
   question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: (NH₄)₂CO₃. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/). Enter the symbol of the cation."
   answer="NH₄⁺"
@@ -377,6 +380,7 @@ covalent
   answerForm="formula"
   hint="Split the formula into ions whose charges balance, using the periodic table and the table of common polyatomic ions."
 >}}
+{{< /followup >}}
 
 {{< multiplechoice
   question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: Sr(H₂PO₄)₂. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
@@ -387,6 +391,7 @@ ionic
 covalent
 {{< /multiplechoice >}}
 
+{{< followup >}}
 {{< textin
   question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: Sr(H₂PO₄)₂. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/). Enter the symbol of the cation."
   answer="Sr²⁺"
@@ -400,6 +405,7 @@ covalent
   answerForm="formula"
   hint="Split the formula into ions whose charges balance, using the periodic table and the table of common polyatomic ions."
 >}}
+{{< /followup >}}
 
 {{< multiplechoice
   question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: IBr. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
@@ -419,6 +425,7 @@ ionic
 covalent
 {{< /multiplechoice >}}
 
+{{< followup >}}
 {{< textin
   question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: Na₂O. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/). Enter the symbol of the cation."
   answer="Na⁺"
@@ -432,6 +439,7 @@ covalent
   answerForm="formula"
   hint="Split the formula into ions whose charges balance, using the periodic table and the table of common polyatomic ions."
 >}}
+{{< /followup >}}
 
 ### Determine formulas for simple ionic compounds
 
@@ -472,4 +480,4 @@ covalent
 
 ---
 
-<small>This section is adapted from [Chemistry 2e, Section 2.6: Ionic and Molecular Compounds](https://openstax.org/books/chemistry-2e/pages/2-6-ionic-and-molecular-compounds) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the four figures re-encoded as WebP, the drawing of a sodium atom and ion and the periodic table of common ion charges marked as diagrams and the molten-salt sequence and the sapphire ring as photos; every figure’s alt text rewritten from the image, with an extended description added to the periodic table of common ion charges that names every symbol it prints, group by group; references to numbered figures and to the table replaced by describing phrases; the periodic table linked to Appendix A where an item needs it; the source links nothing there: the words “periodic table” linked in the body paragraph that first sends the reader to the table, in the solution of the Composition of Ions example, in the hint the source prints inside the lithium peroxide Check Your Learning, in the bonding Check Your Learning, and in the chloride exercise, and the sentence “Use the periodic table.” added after the source’s words in the two items on the ion with 34 protons and 36 electrons, the three items on aluminum and carbon, and the fourteen items of the exercise on whether each compound is ionic or covalent and which ions it holds, each of which must place an element in the table; the Link to Learning box rendered as a callout, its link text “video” extended over the source’s own following words so that it describes its destination; the table of common polyatomic ions transcribed as a Markdown table with its title as a bold line above it and the cells the source leaves empty left empty; formulas and ions set as Unicode text throughout; “the same number electrons” corrected to “the same number of electrons” in the solution of the Formation of Ions example; the definition of oxyanions corrected from polyatomic ions to polyatomic anions, as the module’s glossary defines them, with a Source note after the table of common polyatomic ions; a Source note added after the figure of common ion charges on the rule that a main-group cation’s charge equals its group number; the five worked examples set as prose, each followed by its Check Your Learning as interactive items (eleven in all), the printed answers serving as their keys rather than appearing as text: the ion with 34 protons and 36 electrons as a formula text-recall item for its symbol and a text-recall item for its name, the name keyed without the word “ion” and accepted with it; the aluminum and carbon ions as two formula text-recall items, one for each element’s ion, then a self-check carrying the source’s answer as its model answer, with rubric checkpoints decomposing it; the sodium sulfide and lithium peroxide formulas as one formula text-recall item each; and the four compounds of the bonding Check Your Learning as one two-option multiple-choice item each, its lead-in restated in the singular; where the source’s answer uses a word that is not one of the stem’s two — the module’s glossary gives it as another name for one of them — the page keys the stem’s own word; the end-of-section exercises adapted into the interactive Practice block, the 3 exercises the source keys carried as 25 items: the six chlorides as one two-option multiple-choice item each; the six compounds of the ionic-or-covalent exercise as one two-option multiple-choice item each, followed, for each of the four compounds the source answers as ionic, by two formula text-recall items, the cation’s symbol and then the anion’s, each stem closed by a sentence naming the one it asks for; and the five pairs of ions as one formula text-recall item each; the lead-ins of all three exercises restated in the singular; the 3 exercises the source prints no answer for are omitted; and two filler multiple-choice items added to the group on defining ionic and molecular compounds, which no keyed exercise covers, each offering the pair of terms the module defines side by side: one built on the glossary definition of one of the section’s two kinds of compound, and one on the body sentence that defines one of its two kinds of bond.</small>
+<small>This section is adapted from [Chemistry 2e, Section 2.6: Ionic and Molecular Compounds](https://openstax.org/books/chemistry-2e/pages/2-6-ionic-and-molecular-compounds) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the four figures re-encoded as WebP, the drawing of a sodium atom and ion and the periodic table of common ion charges marked as diagrams and the molten-salt sequence and the sapphire ring as photos; every figure’s alt text rewritten from the image, with an extended description added to the periodic table of common ion charges that names every symbol it prints, group by group; references to numbered figures and to the table replaced by describing phrases; the periodic table linked to Appendix A where an item needs it; the source links nothing there: the words “periodic table” linked in the body paragraph that first sends the reader to the table, in the solution of the Composition of Ions example, in the hint the source prints inside the lithium peroxide Check Your Learning, in the bonding Check Your Learning, and in the chloride exercise, and the sentence “Use the periodic table.” added after the source’s words in the two items on the ion with 34 protons and 36 electrons, the three items on aluminum and carbon, and the fourteen items of the exercise on whether each compound is ionic or covalent and which ions it holds, each of which must place an element in the table; the Link to Learning box rendered as a callout, its link text “video” extended over the source’s own following words so that it describes its destination; the table of common polyatomic ions transcribed as a Markdown table with its title as a bold line above it and the cells the source leaves empty left empty; formulas and ions set as Unicode text throughout; “the same number electrons” corrected to “the same number of electrons” in the solution of the Formation of Ions example; the definition of oxyanions corrected from polyatomic ions to polyatomic anions, as the module’s glossary defines them, with a Source note after the table of common polyatomic ions; a Source note added after the figure of common ion charges on the rule that a main-group cation’s charge equals its group number; the five worked examples set as prose, each followed by its Check Your Learning as interactive items (eleven in all), the printed answers serving as their keys rather than appearing as text: the ion with 34 protons and 36 electrons as a formula text-recall item for its symbol and a text-recall item for its name, the name keyed without the word “ion” and accepted with it; the aluminum and carbon ions as two formula text-recall items, one for each element’s ion, then a self-check carrying the source’s answer as its model answer, with rubric checkpoints decomposing it; the sodium sulfide and lithium peroxide formulas as one formula text-recall item each; and the four compounds of the bonding Check Your Learning as one two-option multiple-choice item each, its lead-in restated in the singular; where the source’s answer uses a word that is not one of the stem’s two — the module’s glossary gives it as another name for one of them — the page keys the stem’s own word; the end-of-section exercises adapted into the interactive Practice block, the 3 exercises the source keys carried as 25 items: the six chlorides as one two-option multiple-choice item each; the six compounds of the ionic-or-covalent exercise as one two-option multiple-choice item each, followed, for each of the four compounds the source answers as ionic, by two formula text-recall items, the cation’s symbol and then the anion’s, each stem closed by a sentence naming the one it asks for, and shown only once the compound has been answered as ionic; and the five pairs of ions as one formula text-recall item each; the lead-ins of all three exercises restated in the singular; the 3 exercises the source prints no answer for are omitted; and two filler multiple-choice items added to the group on defining ionic and molecular compounds, which no keyed exercise covers, each offering the pair of terms the module defines side by side: one built on the glossary definition of one of the section’s two kinds of compound, and one on the body sentence that defines one of its two kinds of bond.</small>

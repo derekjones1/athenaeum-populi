@@ -3761,3 +3761,25 @@ test('a footer whose <small> opens an HTML block is an error', () => {
   assert(lintHugo(block, 'content/test.md').errors.some((e) => e.includes('alone on its line opens an HTML block')));
   assert(!lintHugo(inline, 'content/test.md').errors.some((e) => e.includes('opens an HTML block')));
 });
+
+test('a followup directly follows the graded item it waits for and holds items only', () => {
+  const lint = (source) => lintHugo(source, 'content/physical-sciences/chemistry/02-atoms-molecules-and-ions/06-ionic-and-molecular-compounds.md').errors
+    .filter((message) => /followup/.test(message));
+  const choice = '{{< multiplechoice question="Is BaO ionic or covalent?" answer="ionic" hint="Find a metal." >}}\nionic\ncovalent\n{{< /multiplechoice >}}';
+  const ion = (which, key) => `{{< textin question="Is BaO ionic or covalent? Enter the symbol of the ${which}." answer="${key}" answerForm="formula" hint="Balance the charges." >}}`;
+  const wrapped = `{{< followup >}}\n${ion('cation', 'Ba²⁺')}\n\n${ion('anion', 'O²⁻')}\n{{< /followup >}}`;
+
+  assert.deepEqual(lint(`${choice}\n\n${wrapped}\n`), []);
+
+  const messages = (source) => lint(source).join('\n');
+  assert.match(messages(`${choice}\n\nA sentence between.\n\n${wrapped}\n`), /must come directly after the graded item/);
+  assert.match(messages(`## Practice\n\n${wrapped}\n`), /must come directly after the graded item/);
+  assert.match(messages(`{{< selfcheck question="Why?" hint="Think." >}}\nBecause.\n{{< /selfcheck >}}\n\n${wrapped}\n`), /must come directly after the graded item/);
+  assert.match(messages(`${choice}\n\n{{< followup >}}\nNow write the ions.\n\n${ion('cation', 'Ba²⁺')}\n{{< /followup >}}\n`), /holds something that is not an item \("Now write the ions\."\)/);
+  assert.match(messages(`${choice}\n\n{{< followup >}}\n\n{{< /followup >}}\n`), /holds no item/);
+  assert.match(messages(`${choice}\n\n{{< followup >}}\n${ion('cation', 'Ba²⁺')}\n`), /is never closed/);
+  assert.match(messages(`${choice}\n\n{{< followup >}}\n${ion('cation', 'Ba²⁺')}\n{{< followup >}}\n${ion('anion', 'O²⁻')}\n{{< /followup >}}\n{{< /followup >}}\n`), /cannot hold another followup/);
+  assert.match(messages(`${choice}\n\n{{< followup >}}\n${ion('cation', 'Ba²⁺')}\n{{< /followup >}}\n\n{{< followup >}}\n${ion('anion', 'O²⁻')}\n{{< /followup >}}\n`), /the item before it is inside another followup/);
+  assert.match(messages(`${choice}\n\n{{< followup after="correct" >}}\n${ion('cation', 'Ba²⁺')}\n{{< /followup >}}\n`), /followup does not take "after".*it takes no parameters/);
+});
+

@@ -469,7 +469,10 @@ another term. (A `textin` keyed to a term its own `###` objective heading
 prints is avoided when the objective offers another term, but it is a
 preference, not a defect.)
 Fix a leak by reordering or rewording, never by changing the item's type
-(`docs/subjects/life-sciences.md` Exercises).
+(`docs/subjects/life-sciences.md` Exercises). One leak neither fixes: items
+that stand under only SOME parts of an exercise and so answer the question
+asked of every part ("ionic or covalent? If ionic, write the ions") — those
+go in a `followup` (below).
 
 **Self-check (`selfcheck`)** — a free-response prompt with a model answer to
 compare against. Nothing is graded or stored: the learner writes, reveals
@@ -532,6 +535,35 @@ form). Grading is partial-credit, with no drag. Which source tables qualify (the
 either axis), when an unkeyed prose question converts into one, and how the
 source cross-check reads them are subject-specific; see
 `docs/subjects/life-sciences.md`.
+
+**Follow-up (`followup`)** — a paired wrapper with no params, written
+directly after a `multiplechoice`, `textin` or `fillin`; the items inside it
+stay hidden until that item is answered correctly, and the item's verdict
+then says how many more questions follow. Use it for one shape only: an
+exercise that asks the same first question of every part and a further
+question of only the parts answered one way, where the further items left in
+the open would give the first answer away by being there (*Chemistry 2.6*:
+six compounds classed ionic or covalent, the ion symbols asked of the four
+ionic ones). The items inside are ordinary items — every gate, the lint and
+the practice counts read them as if the wrapper were not there — and each
+still carries its whole stem. It holds items and nothing else: prose inside
+would vanish with them. The lint refuses a followup that is unclosed,
+nested, empty, holding text, or not directly after a graded item; for a
+book that grades only source-keyed items, `verify:source-keys` refuses the
+shape left unwrapped. Do not use it to pace a page or to hide a later step
+of a worked sequence — an item every part carries leaks nothing and stays
+in the open.
+
+    {{</* multiplechoice question="…ionic or covalent… BaO." answer="ionic" hint="…" */>}}
+    ionic
+    covalent
+    {{</* /multiplechoice */>}}
+
+    {{</* followup */>}}
+    {{</* textin question="…BaO. Enter the symbol of the cation." answer="Ba²⁺" answerForm="formula" hint="…" */>}}
+
+    {{</* textin question="…BaO. Enter the symbol of the anion." answer="O²⁻" answerForm="formula" hint="…" */>}}
+    {{</* /followup */>}}
 
 **Media figure (`mediafigure`)** — a vendored raster figure (photo,
 micrograph, diagram) with its alt text, caption, and optional extended

@@ -34,7 +34,9 @@ or serve the site. Do not spawn sub-agents.**
 - Item form for the same keyed-answer shape. Same shape, two forms on two
   pages, is a finding.
 - Stem wording for what to type; `last-digit` choices for like cases; a
-  phrase that appears only on items with one kind of key (a contrast leak).
+  phrase that appears only on items with one kind of key (a contrast leak);
+  further items under only some parts of an exercise, not held in a
+  `followup` (a leak by presence).
 - Hints: read them against the allowed/forbidden pairs in the playbook's
   "Hints". A rule written from a page is checked on that page first.
 - Selfcheck model answers and rubrics; Source notes (form, placement, never

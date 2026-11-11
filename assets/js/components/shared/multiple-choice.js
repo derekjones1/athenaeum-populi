@@ -24,6 +24,7 @@ import { engineUrl } from '@params';
 import { plainMathText, speakableMathText } from '../../lib/shared/speakable-label.mjs';
 import { hintSlotHTML, mountHintToggle } from '../../lib/shared/hint-toggle.mjs';
 import { TONE } from '../../lib/shared/colors.mjs';
+import { announceCorrect } from '../../lib/shared/item-events.mjs';
 
 // Status → shared feedback tone (colors.mjs owns the palette fallbacks).
 const COLOR = {
@@ -217,6 +218,8 @@ class MultipleChoiceElement extends HTMLElement {
       });
       this.feedback.textContent = 'Correct!';
       this.feedback.style.color = COLOR.correct;
+      // After the verdict is written: a follow-up adds to this live region.
+      announceCorrect(this);
     } else {
       this.feedback.textContent = 'Not quite — try again.';
       this.feedback.style.color = COLOR.incorrect;

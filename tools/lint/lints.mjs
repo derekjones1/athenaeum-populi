@@ -245,6 +245,7 @@ const UNKNOWN_PARAM_WHY = {
   graphplot: 'the answer and grid are the inner JSON config',
   apfigure: 'the figure is its spec JSON; only `kind` rides on the tag',
   mediafigure: 'the caption is the inner content',
+  followup: 'it only wraps the items that appear after the item before it is answered',
 };
 const MEDIA_MANIFEST_DIR = path.join(REPO_ROOT, 'data/media');
 
@@ -2166,7 +2167,7 @@ export function lintHugo(src, filename = '', options = {}) {
         for (const param of Object.keys(shortcodeParams(open))) {
           if (takes.has(param)) continue;
           const why = UNKNOWN_PARAM_WHY[name] ? ` — ${UNKNOWN_PARAM_WHY[name]}` : '';
-          err(index, `${name} does not take ${JSON.stringify(param)}${why}; it takes ${[...takes].join(', ')}`);
+          err(index, `${name} does not take ${JSON.stringify(param)}${why}; it takes ${takes.size ? [...takes].join(', ') : 'no parameters'}`);
         }
       }
       // Hugo's shortcode parser refuses a raw newline inside a quoted param
@@ -2191,6 +2192,46 @@ export function lintHugo(src, filename = '', options = {}) {
     if (paired) continue;
     for (const m of mediaSrc.matchAll(new RegExp(`\\{\\{<\\s*/${name}\\s*>\\}\\}`, 'g'))) {
       err(m.index, `{{< /${name} >}}: ${name} is an unpaired shortcode — write {{< ${name} … >}} with no closing tag and no self-closing slash (Hugo refuses a closing tag on a shortcode that never reads .Inner)`);
+    }
+  }
+
+  // ---- followup: items shown once the item before them is answered ---------
+  // The wrapper hides what it holds until the item directly before it — its
+  // gate — is answered correctly (layouts/shortcodes/followup.html). Each
+  // rule here is a way the page would otherwise ship something a learner
+  // cannot reach, or cannot explain: no gate to wait for, a gate that is
+  // itself hidden, prose that vanishes with the items, an empty wrapper.
+  {
+    const ITEM_NAMES = ['fillin', 'multiplechoice', 'textin', 'selfcheck', 'sortbins', 'graphplot'];
+    const GATE_NAMES = ['multiplechoice', 'textin', 'fillin'];
+    const followups = [...shortcodes(mediaSrc, 'followup')].filter((sc) => sc.closed);
+    const inside = (index) => followups.some((sc) => index > sc.index && index < sc.end);
+    const gates = GATE_NAMES.flatMap((name) => [...shortcodes(mediaSrc, name)].map((sc) => ({ ...sc, name })));
+    for (const followup of followups) {
+      if (/\{\{<\s*followup\b/.test(followup.inner)) {
+        err(followup.index, 'followup: a followup cannot hold another followup — close this one, and open the next after the item it waits for');
+        continue;
+      }
+      let rest = followup.inner;
+      let held = 0;
+      for (const name of ITEM_NAMES) {
+        for (const item of [...shortcodes(followup.inner, name)].reverse()) {
+          held += 1;
+          rest = rest.slice(0, item.index) + ' '.repeat(item.end - item.index) + rest.slice(item.end);
+        }
+      }
+      if (held === 0) {
+        err(followup.index, 'followup: holds no item — it wraps the items that appear after the item before it is answered');
+      } else if (rest.trim()) {
+        err(followup.index, `followup: holds something that is not an item (${JSON.stringify(rest.trim().slice(0, 60))}) — text inside is hidden with the items; put it in an item's question, or outside the followup`);
+      }
+      const gate = gates.filter((sc) => sc.end <= followup.index).sort((a, b) => b.end - a.end)[0];
+      const between = gate ? mediaSrc.slice(gate.end, followup.index) : '';
+      if (gate && inside(gate.index) && !between.replace(/\{\{<\s*\/followup\s*>\}\}/, '').trim()) {
+        err(followup.index, 'followup: the item before it is inside another followup — a followup waits for an item the page shows from the start');
+      } else if (!gate || between.trim()) {
+        err(followup.index, 'followup: must come directly after the graded item it waits for (a multiplechoice, textin or fillin), with nothing between them — its items stay hidden until that item is answered correctly');
+      }
     }
   }
 

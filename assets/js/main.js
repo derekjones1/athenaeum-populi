@@ -14,6 +14,8 @@ import './components/math/ap-figure.js';
 import './components/text/text-in.js';
 import './components/text/self-check.js';
 import './components/text/sort-bins.js';
+// Items that appear once the item before them is answered (after the items it waits on).
+import './components/shared/follow-up.js';
 // Site chrome (not a component): folds the sticky navbar down while reading.
 import './navbar-compact.js';
 // Site chrome: makes exactly the display equations that overflow keyboard-reachable.

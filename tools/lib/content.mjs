@@ -216,6 +216,7 @@ export const PAIRED_SHORTCODES = Object.freeze({
   selfcheck: true,
   sortbins: true,
   mediafigure: true,
+  followup: true,
 });
 
 /**
@@ -233,6 +234,9 @@ export const SHORTCODE_PARAMS = Object.freeze({
   selfcheck: new Set(['question', 'hint']),
   sortbins: new Set(['question', 'hint']),
   mediafigure: new Set(['src', 'alt', 'kind', 'longdesc', 'eager']),
+  // A wrapper with no params: it holds items, and every tool reads those by
+  // their own names.
+  followup: new Set(),
 });
 
 /**

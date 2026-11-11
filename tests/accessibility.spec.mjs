@@ -1090,6 +1090,41 @@ test('a graded multiple-choice has no serious or critical axe violations', async
   await expectNoBlockingViolations(page, 'a graded multiple-choice', testInfo);
 });
 
+test('items revealed by a follow-up are announced where the verdict is read and have no serious or critical axe violations', async ({
+  page,
+}, testInfo) => {
+  const path = '/physical-sciences/chemistry/02-atoms-molecules-and-ions/06-ionic-and-molecular-compounds/';
+  await page.goto(path, { waitUntil: 'domcontentloaded' });
+  await assertProductionBuild(page, path);
+  await waitForPageReady(page);
+
+  const card = page.locator('multiple-choice[data-question*="ions involved: BaO."]');
+  await expect(card).toHaveCount(1);
+  await expect
+    .poll(async () => card.evaluate((el) => el.querySelectorAll('.ap-mc-option:not([disabled])').length), { timeout: 20_000 })
+    .toBeGreaterThan(0);
+  const followup = page.locator('multiple-choice[data-question*="ions involved: BaO."] + ap-followup');
+  // Hidden means out of the accessibility tree and the tab order, not just
+  // out of sight: a screen-reader user must not meet the ion items first.
+  await expect(followup).toBeHidden();
+  expect(await followup.evaluate((el) => getComputedStyle(el).display)).toBe('none');
+
+  await card.scrollIntoViewIfNeeded();
+  await card.locator('.ap-mc-option[data-value="ionic"]').focus();
+  await page.keyboard.press('Enter');
+  // The announcement rides the multiple choice's own polite live region…
+  const status = card.locator('.ap-mc-feedback');
+  await expect(status).toHaveAttribute('role', 'status');
+  await expect(status).toHaveText('Correct! Two more questions follow.');
+  // …and focus stays on the option that was chosen: nothing is moved.
+  expect(await card.evaluate((el) => el.contains(document.activeElement))).toBe(true);
+  await expect(followup).toBeVisible();
+  // The next Tab stops are the revealed items' own controls, in order.
+  await expect(followup.locator('text-in .ap-textin-field').first()).toBeVisible();
+
+  await expectNoBlockingViolations(page, 'a multiple choice with its follow-up items revealed', testInfo);
+});
+
 test('a revealed, rated self-check (model answer and rubric open) has no serious or critical axe violations', async ({
   page,
 }, testInfo) => {

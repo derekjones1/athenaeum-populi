@@ -1,0 +1,28 @@
+{{- /*
+  followup — items shown once the item directly before them is answered
+  correctly.
+
+  For an exercise that asks a second thing of only some of its parts ("state
+  whether it is ionic or covalent; if it is ionic, write the symbols for the
+  ions"): the further items, left in the open, stand under those parts alone,
+  and their presence gives the first answer away. Wrapped here, they stay
+  hidden until the learner has answered the item before them.
+
+    Usage (paired, no params), directly after the graded item it waits for —
+    a multiplechoice, textin or fillin:
+
+      a multiplechoice shortcode
+      then an opening followup tag, one or more item shortcodes, and the
+      closing /followup tag
+
+  The content lint holds the shape: closed, not nested, holding items and
+  nothing else, and directly after a graded item. The component
+  (assets/js/components/shared/follow-up.js) does the waiting; every gate
+  reads the items inside exactly as it reads any other item.
+*/ -}}
+{{- if not (trim .Inner " \n\t") -}}
+  {{- errorf "followup is empty — it wraps the items that appear after the item before it is answered (%s)" .Position -}}
+{{- end -}}
+<ap-followup class="ap-followup">
+{{ .Inner }}
+</ap-followup>

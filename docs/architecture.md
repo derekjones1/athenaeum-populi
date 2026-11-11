@@ -38,7 +38,11 @@ the production architecture.
   or a `data-pictorial` hand SVG, and both forms are lint-validated. Interactive practice uses the `fillin`, `multiplechoice`,
   `graphplot`, `textin`, `selfcheck`, and `sortbins` shortcodes; graph-mode
   multiplechoice options are authored as the same spec JSON and render
-  through `<ap-figure>`.
+  through `<ap-figure>`. A `followup` wrapper (`followup.html`,
+  `follow-up.js`) keeps the items it holds hidden until the item before it
+  is answered correctly — the one piece of state that passes between two
+  items, carried by the `ap-item-correct` event
+  (`assets/js/lib/shared/item-events.mjs`); nothing is stored.
 
 ## Browser runtime
 

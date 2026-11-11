@@ -26,6 +26,7 @@ import { plainMathText, speakableMathText } from '../../lib/shared/speakable-lab
 import { mountHintToggle } from '../../lib/shared/hint-toggle.mjs';
 import { TONE } from '../../lib/shared/colors.mjs';
 import { focusGuard } from '../../lib/shared/focus.mjs';
+import { announceCorrect } from '../../lib/shared/item-events.mjs';
 
 
 const MESSAGES = {
@@ -309,6 +310,7 @@ class FillInElement extends HTMLElement {
       this.feedback.textContent = (status === 'form' && formMessage) || MESSAGES[status] || '';
     }
     this.feedback.style.color = COLOR[status] || 'inherit';
+    if (status === 'correct') announceCorrect(this);
   }
 }
 

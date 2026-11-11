@@ -763,3 +763,39 @@ test('a sortbins keyed by a transposed table (categories as rows) is confirmed',
   assert.equal(wrong.status, 'assignment-differs');
   assert.match(wrong.detail, /binary fission.*"Prokaryotes" in table tab-t/);
 });
+
+test('further items under only some parts of one multiple choice must be held in a followup', async () => {
+  const { conditionalUnwrapped, pageItems: items } = await import('./verify-source-keys.mjs');
+  const choice = (part, line) => ({ group: 'ex-47', unit: `ex-47(${part})`, type: 'multiplechoice', line, options: ['ionic', 'covalent'], followup: false });
+  const ion = (part, line, followup) => ({ group: 'ex-47', unit: `ex-47(${part})`, type: 'textin', line, followup });
+
+  // (a) covalent, (b) ionic with two ion items in the open: both are named.
+  const open = conditionalUnwrapped([choice('a', 1), choice('b', 10), ion('b', 20, false), ion('b', 27, false)]);
+  assert.deepEqual(open.map((offender) => offender.line), [20, 27]);
+  assert.match(open[0].detail, /under only 1 of the 2 parts of source ex-47/);
+  assert.match(open[0].detail, /\{\{< followup >\}\}/);
+  // Held in a followup: nothing to say. One of the two left out: that one.
+  assert.deepEqual(conditionalUnwrapped([choice('a', 1), choice('b', 10), ion('b', 20, true), ion('b', 27, true)]), []);
+  assert.deepEqual(conditionalUnwrapped([choice('a', 1), choice('b', 10), ion('b', 20, true), ion('b', 27, false)]).map((offender) => offender.line), [27]);
+  // Every part has further items: their presence tells nothing.
+  assert.deepEqual(conditionalUnwrapped([choice('a', 1), ion('a', 5, false), choice('b', 10), ion('b', 20, false)]), []);
+  // Parts that ask different multiple choices are different questions, not one classification.
+  const other = { ...choice('a', 1), options: ['metal', 'nonmetal'] };
+  assert.deepEqual(conditionalUnwrapped([other, choice('b', 10), ion('b', 20, false)]), []);
+  // A part with no multiple choice, or an exercise of one part, is not this shape.
+  assert.deepEqual(conditionalUnwrapped([ion('a', 1, false), choice('b', 10), ion('b', 20, false)]), []);
+  assert.deepEqual(conditionalUnwrapped([choice('b', 10), ion('b', 20, false)]), []);
+  // Another exercise on the page does not count toward this one's parts.
+  assert.deepEqual(conditionalUnwrapped([choice('a', 1), { ...choice('a', 40), group: 'ex-45', unit: 'ex-45(a)' }, { ...ion('a', 50, false), group: 'ex-45', unit: 'ex-45(a)' }]), []);
+
+  // pageItems marks what a followup holds, and nothing else.
+  const page = [
+    '{{< multiplechoice question="Is BaO ionic or covalent?" answer="ionic" >}}', 'ionic', 'covalent', '{{< /multiplechoice >}}', '',
+    '{{< followup >}}',
+    '{{< textin question="Is BaO ionic or covalent? Enter the symbol of the cation." answer="Ba²⁺" answerForm="formula" >}}',
+    '{{< /followup >}}', '',
+    '{{< textin question="What is the formula of water?" answer="H₂O" answerForm="formula" >}}',
+  ].join('\n');
+  assert.deepEqual(items(page).map((item) => [item.type, Boolean(item.followup)]), [['multiplechoice', false], ['textin', true], ['textin', false]]);
+});
+

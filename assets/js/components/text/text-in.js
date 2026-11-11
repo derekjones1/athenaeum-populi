@@ -26,6 +26,7 @@ import { plainMathText } from '../../lib/shared/speakable-label.mjs';
 import { mountHintToggle } from '../../lib/shared/hint-toggle.mjs';
 import { TONE } from '../../lib/shared/colors.mjs';
 import { focusGuard } from '../../lib/shared/focus.mjs';
+import { announceCorrect } from '../../lib/shared/item-events.mjs';
 
 
 const MESSAGES = {
@@ -161,6 +162,7 @@ class TextInElement extends HTMLElement {
       this.feedback.textContent = message || MESSAGES[status] || '';
     }
     this.feedback.style.color = COLOR[status] || 'inherit';
+    if (status === 'correct') announceCorrect(this);
   }
 }
 

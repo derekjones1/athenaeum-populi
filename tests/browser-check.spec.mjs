@@ -1854,6 +1854,55 @@ test('a Unicode charge or subscript is drawn by the enlarged subset font, as tal
   expect(measured.normalLines.charged, 'nor is one at `line-height: normal`').toBe(measured.normalLines.plain);
 });
 
+// Exercise 2.47 asks "ionic or covalent?" of six compounds and, of the ionic
+// ones only, the ions. In the open, the ion items stand under four compounds
+// and answer the first question before it is asked; a `followup` holds them
+// back until the compound's own multiple choice is answered
+// (assets/js/components/shared/follow-up.js).
+test('the ion items of an ionic compound appear only once the compound is answered as ionic, and a covalent compound has none', async ({ page }) => {
+  await gotoBuiltPage(page, '/physical-sciences/chemistry/02-atoms-molecules-and-ions/06-ionic-and-molecular-compounds/');
+  const ready = (el) => Boolean(customElements.get('multiple-choice')) && Boolean(customElements.get('ap-followup'))
+    && el.querySelectorAll('.ap-mc-option:not([disabled])').length > 0;
+
+  // Nothing of any follow-up is on show before an answer — neither rendered
+  // nor reachable by keyboard or a screen reader.
+  const followups = page.locator('ap-followup');
+  await expect(followups).toHaveCount(4);
+  await waitForUpgrade(page.locator('multiple-choice[data-question*="ions involved: BaO."]'), ready);
+  for (const followup of await followups.all()) await expect(followup).toBeHidden();
+  expect(await page.locator('ap-followup text-in').evaluateAll((items) => items.filter((item) => item.getClientRects().length > 0).length)).toBe(0);
+
+  const barium = page.locator('multiple-choice[data-question*="ions involved: BaO."]');
+  const ions = page.locator('multiple-choice[data-question*="ions involved: BaO."] + ap-followup');
+  await expect(ions).toHaveCount(1);
+  await barium.scrollIntoViewIfNeeded();
+  // A wrong answer tells nothing more than "not quite".
+  await barium.locator('.ap-mc-option[data-value="covalent"]').click();
+  await expect(barium.locator('.ap-mc-feedback')).toHaveText('Not quite — try again.');
+  await expect(ions).toBeHidden();
+  // The right one shows both ion items and says so where the verdict is read.
+  await barium.locator('.ap-mc-option[data-value="ionic"]').click();
+  await expect(barium.locator('.ap-mc-feedback')).toHaveText('Correct! Two more questions follow.');
+  await expect(ions).toBeVisible();
+  await expect(ions.locator('text-in')).toHaveCount(2);
+  await expect(ions.locator('text-in[data-answer="Ba²⁺"] .ap-textin-field')).toBeVisible();
+  // …and they grade as any item does.
+  const cation = ions.locator('text-in[data-answer="Ba²⁺"]');
+  await cation.locator('.ap-textin-field').fill('Ba2+');
+  await cation.locator('.ap-textin-field').press('Enter');
+  await expect.poll(async () => cation.evaluate((el) => el.status)).toBe('correct');
+  // The other three stay closed: one compound's answer opens only its own.
+  expect(await followups.evaluateAll((all) => all.filter((el) => !el.hidden).length)).toBe(1);
+
+  // A covalent compound: answered, and nothing appears.
+  const fluoride = page.locator('multiple-choice[data-question*="ions involved: NF₃."]');
+  await fluoride.scrollIntoViewIfNeeded();
+  await fluoride.locator('.ap-mc-option[data-value="covalent"]').click();
+  await expect(fluoride.locator('.ap-mc-feedback')).toHaveText('Correct!');
+  expect(await fluoride.evaluate((el) => el.nextElementSibling?.localName)).not.toBe('ap-followup');
+  expect(await followups.evaluateAll((all) => all.filter((el) => !el.hidden).length)).toBe(1);
+});
+
 test('on every Chemistry page a display row fits the column, scientific notation stays on one line, and a scaled-down figure stays small', async ({ page }) => {
   const routes = [...chemistrySectionRoutes(), ...chemistryAppendixRoutes()];
   expect(routes.length, 'Chemistry section pages were discovered in public/').toBeGreaterThanOrEqual(6);

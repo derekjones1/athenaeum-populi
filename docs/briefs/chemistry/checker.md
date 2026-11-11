@@ -166,6 +166,10 @@ stem shows it.
 - A phrase in the stems that appears only on items with one kind of key
   ("with its sign" on the negative answers alone) is a leak by contrast:
   read the stems of like items side by side.
+- Items that stand under only some parts of one exercise leak by being
+  there (2.47: ion items under the ionic compounds alone). They belong in a
+  `followup` after the part's first item (playbook "Exercises"); the source
+  gate catches the multiple-choice shape, and you read for any other.
 - A source key with more figures than the page's own rules give, or a
   worked line that rounds an exact number: compare with the module's
   sibling keys before calling it a defect or a convention.

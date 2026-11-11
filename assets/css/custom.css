@@ -321,6 +321,16 @@ ap-figure { display: block; }
 .ap-graphplot-row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 10px; }
 .ap-graphplot-add { font-size: 13px; color: var(--ap-muted, #6f6e69); }
 
+/* --- <ap-followup> --------------------------------------------------------
+   Items that appear once the item before them is answered
+   (assets/js/components/shared/follow-up.js). Until the component is defined
+   — before the bundle runs, or with no JavaScript — the items stay out of
+   sight: they could not be answered then, and showing them is the leak the
+   wrapper exists to close. Once defined, the element's own `hidden` decides. */
+ap-followup { display: block; }
+ap-followup:not(:defined),
+ap-followup[hidden] { display: none; }
+
 /* --- Sidebar collapse: remove collapsed branches from focus/AT ------------
    The theme collapses branches with height:0 + overflow:hidden only, which
    keeps every clipped link keyboard-focusable (Tab disappears into invisible

@@ -1218,9 +1218,15 @@ export function pageItems(markdown) {
   // lettered part that is only an image is told from its siblings.
   const figures = mediaBindings(markdown);
   const figureOf = (kind, sc) => figures.get(`${kind}:${sc.index}`) || '';
+  // An item inside a `followup` is shown only once the item before the
+  // wrapper is answered (layouts/shortcodes/followup.html); `conditionalUnwrapped`
+  // asks for exactly that of some items.
+  const followups = [...shortcodes(markdown, 'followup')];
+  const held = (sc) => (followups.some((wrapper) => sc.index > wrapper.index && sc.index < wrapper.end) ? { followup: true } : {});
   for (const sc of shortcodes(markdown, 'multiplechoice')) {
     items.push({
       type: 'multiplechoice',
+      ...held(sc),
       line: lineOf(markdown, sc.index),
       figure: figureOf('multiplechoice', sc),
       question: sc.params.question || '',
@@ -1231,6 +1237,7 @@ export function pageItems(markdown) {
   for (const sc of shortcodes(markdown, 'fillin')) {
     items.push({
       type: 'fillin',
+      ...held(sc),
       line: lineOf(markdown, sc.index),
       figure: figureOf('fillin', sc),
       question: sc.params.question || '',
@@ -1241,6 +1248,7 @@ export function pageItems(markdown) {
   for (const sc of shortcodes(markdown, 'textin')) {
     items.push({
       type: 'textin',
+      ...held(sc),
       line: lineOf(markdown, sc.index),
       figure: figureOf('textin', sc),
       question: sc.params.question || '',
@@ -1264,6 +1272,7 @@ export function pageItems(markdown) {
   for (const sc of shortcodes(markdown, 'selfcheck')) {
     items.push({
       type: 'selfcheck',
+      ...held(sc),
       line: lineOf(markdown, sc.index),
       figure: figureOf('selfcheck', sc),
       question: sc.params.question || '',
@@ -1968,7 +1977,7 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [] } = {}) {
   const item = { ...linkedItem, question: unlinked(linkedItem.question) };
   const unit = unitFor(item.question, units, item);
   if (!unit) return null;
-  const exercise = { id: unit.id };
+  const exercise = { id: unit.id, group: unit.group };
   if (!unit.keyed) {
     return { status: 'unkeyed-unit', exercise, detail: `source ${unit.id} prints no answer, and this book renders only keyed exercises — remove the item` };
   }
@@ -2173,6 +2182,55 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [] } = {}) {
  * this prefix, and the body-print gate below is a life-sciences rule
  * (docs/subjects/life-sciences.md's textin provenance rules, not the math
  * fillin rules). */
+/**
+ * Items whose mere presence answers another item, and are not held back.
+ *
+ * "State whether the compound is ionic or covalent. If it is ionic, write the
+ * symbols for the ions involved" (Chemistry 2.6): every lettered part gets the
+ * same multiple choice, and only the parts the source answers one way get
+ * further items — there is nothing further to key on the others ("grade only
+ * what the source keys"). Left in the open, the further items stand under
+ * those parts alone and give the multiple choice away before it is asked.
+ * They belong in a `followup` directly after their part's multiple choice,
+ * which shows them once it is answered.
+ *
+ * `records` are one page's items that transcribe a keyed unit:
+ * `{ group, unit, type, line, options, followup }`. The shape is read
+ * narrowly, so that an exercise whose parts simply ask different things is
+ * left alone: two or more parts, each with exactly one multiple choice, all
+ * with the same options, and further items under some parts but not all.
+ * Returns the further items that are not inside a followup.
+ */
+export function conditionalUnwrapped(records) {
+  const groups = new Map();
+  for (const record of records) {
+    if (!groups.has(record.group)) groups.set(record.group, new Map());
+    const parts = groups.get(record.group);
+    if (!parts.has(record.unit)) parts.set(record.unit, { choices: [], further: [] });
+    parts.get(record.unit)[record.type === 'multiplechoice' ? 'choices' : 'further'].push(record);
+  }
+  const offenders = [];
+  for (const [group, byPart] of groups) {
+    const parts = [...byPart.values()];
+    if (parts.length < 2 || !parts.every((part) => part.choices.length === 1)) continue;
+    const optionSets = new Set(parts.map((part) => JSON.stringify([...(part.choices[0].options || [])].sort())));
+    if (optionSets.size !== 1) continue;
+    const withFurther = parts.filter((part) => part.further.length > 0);
+    if (withFurther.length === 0 || withFurther.length === parts.length) continue;
+    for (const part of withFurther) {
+      for (const item of part.further) {
+        if (item.followup) continue;
+        offenders.push({
+          line: item.line,
+          detail: `this ${item.type} stands under only ${withFurther.length} of the ${parts.length} parts of source ${group} that the page asks the same multiple choice of, so its presence gives that multiple choice away`
+            + '\n    wrap it, with the part\'s other further items, in {{< followup >}} … {{< /followup >}} directly after the part\'s multiplechoice (docs/subjects/chemistry.md, "Exercises")',
+        });
+      }
+    }
+  }
+  return offenders.sort((a, b) => a.line - b.line);
+}
+
 export const isLifeSciencesPage = (localPath) => localPath.startsWith('content/life-health-sciences/');
 
 export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose = false } = {}) {
@@ -2233,11 +2291,17 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
     // transcribes no unit falls through to the ordinary judges below.
     const units = KEYED_ONLY_BOOKS.includes(section.book) ? keyedUnits(moduleXml) : null;
     const aliases = units ? glossaryAliases(moduleXml) : [];
+    // This page's items by the unit each transcribes, for `conditionalUnwrapped`.
+    const shape = [];
     for (const item of pageItems(readFileSync(pagePath, 'utf8'))) {
       const where = `${section.localPath}:${item.line}`;
       const keyedVerdict = units ? judgeKeyedUnit(item, units, { aliases }) : null;
       if (keyedVerdict) {
         const { status } = keyedVerdict;
+        shape.push({
+          group: keyedVerdict.exercise.group, unit: keyedVerdict.exercise.id,
+          type: item.type, line: item.line, options: item.options, followup: Boolean(item.followup),
+        });
         verdicts.push({ page: section.localPath, line: item.line, type: item.type, status });
         if (['key-differs', 'figures-differ', 'diverges', 'unkeyed-unit'].includes(status)) {
           const deviation = status === 'unkeyed-unit' ? null : deviationFor(section.localPath, keyedVerdict.exercise.id);
@@ -2361,6 +2425,9 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
           if (verdict.status !== 'verbatim') notes.push(`${where} selfcheck ${verdict.status}${verdict.coverage != null ? ` (coverage ${verdict.coverage.toFixed(2)})` : ''}: ${item.question.slice(0, 80)}`);
         }
       }
+    }
+    for (const offender of conditionalUnwrapped(shape)) {
+      failures.push({ page: section.localPath, line: offender.line, detail: offender.detail });
     }
   }
 
