@@ -261,7 +261,7 @@
       "upstreamChapters": 21,
       "upstreamSections": 114,
       "localChapters": 2,
-      "mappedSections": 10,
+      "mappedSections": 12,
       "upstreamAppendices": 13,
       "mappedAppendices": 13
     }
@@ -7358,6 +7358,24 @@
       "moduleId": "m68693",
       "sourceTitle": "Chemical Formulas",
       "moduleSha256": "0e4b9b089212ae1587d2ef834cb226435e9058d91ec786f9fbf24395a6bf9544"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/05-the-periodic-table.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "2.5",
+      "moduleId": "m68695",
+      "sourceTitle": "The Periodic Table",
+      "moduleSha256": "1132a48537488713fb2e39489f6b04414624b7e9ef2b68995f8601e166b94535"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/06-ionic-and-molecular-compounds.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "2.6",
+      "moduleId": "m68696",
+      "sourceTitle": "Ionic and Molecular Compounds",
+      "moduleSha256": "ed0f23fce949f93b3c07edd958cf1d9a133855954317139580f99a293c9a5b29"
     }
   ],
   "appendices": [

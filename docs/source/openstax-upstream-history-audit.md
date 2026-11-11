@@ -17,10 +17,10 @@
 
 ## Coverage
 
-- Mapped local sections: 788
-- Sections changed upstream: 62
+- Mapped local sections: 790
+- Sections changed upstream: 64
 - Content-level changes: 42
-- Markup/metadata-only changes: 20
+- Markup/metadata-only changes: 22
 - Changed Try It records: 3
 - Changed Try Its where local math matches the PDF-era form: 0
 - Local-impact drift decisions recorded: 4
@@ -34,7 +34,7 @@
 - biology (`biology-bundle`): `5c58838d2594bc5817127fdc47e127c30b44f2c2`
 - microbiology (`microbiology`): `633850257fbd3ccf6187b9428c55e80b69236382`
 - anatomy-physiology (`anatomy-physiology`): `716383a4c6c16037b14d75a156c65145e75e895e`
-- chemistry (`chemistry-bundle`): `7d41ed008e9b83a6690c09c26a16f63f96046ec0` — in-progress, 10 sections mapped
+- chemistry (`chemistry-bundle`): `7d41ed008e9b83a6690c09c26a16f63f96046ec0` — in-progress, 12 sections mapped
 
 ## Changed mapped sections
 
@@ -364,5 +364,15 @@ Module `m68692`; content-changed. Changed lanes: instructionalText.
 ### chemistry 2.4 — [content/physical-sciences/chemistry/02-atoms-molecules-and-ions/04-chemical-formulas.md](../../content/physical-sciences/chemistry/02-atoms-molecules-and-ions/04-chemical-formulas.md)
 
 Module `m68693`; markup-or-metadata-only. Changed lanes: raw XML only.
+
+
+### chemistry 2.5 — [content/physical-sciences/chemistry/02-atoms-molecules-and-ions/05-the-periodic-table.md](../../content/physical-sciences/chemistry/02-atoms-molecules-and-ions/05-the-periodic-table.md)
+
+Module `m68695`; markup-or-metadata-only. Changed lanes: raw XML only.
+
+
+### chemistry 2.6 — [content/physical-sciences/chemistry/02-atoms-molecules-and-ions/06-ionic-and-molecular-compounds.md](../../content/physical-sciences/chemistry/02-atoms-molecules-and-ions/06-ionic-and-molecular-compounds.md)
+
+Module `m68696`; markup-or-metadata-only. Changed lanes: raw XML only.
 
 

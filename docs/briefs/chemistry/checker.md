@@ -98,7 +98,16 @@ stem shows it.
   digits, the shape of the result, the observation a judgment turns on — it
   is a defect. So is a hint that points at a table or equation that is not
   on the page or does not hold what the learner needs, and a hint so
-  general it helps nobody where a real pointer exists.
+  general it helps nobody where a real pointer exists. **A hint shared by
+  several items is read against every one of them**, the module's named
+  exceptions first (a metal-and-nonmetal test on a compound of polyatomic
+  ions); on a two-option item a hint that says what one option was
+  replaced by, or is "instead", decides it.
+- **A filler keyed on a working word of the page's own stems or hints**
+  (`group` where the source stems say "the following group") is a defect,
+  and so is a name the MODULE prints for a key that the item's `accept`
+  lacks ("oxygen group" for chalcogen): search the module for "also
+  called", "can be called", "or", and the glossary's "(also, …)".
 - **A `textin` with `answerForm="formula"` or `"equation"`:** read the key
   against the CNXML character by character (a capital I for a small l, a
   digit 1 for an l, a charge's sign, a nuclide's two numbers), count an

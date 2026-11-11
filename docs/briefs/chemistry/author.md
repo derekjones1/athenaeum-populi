@@ -216,7 +216,18 @@ goes wrong.
   the rule existed. A hint points only at a table or equation that is on
   the page and holds what the learner needs — and never at the one row or
   sentence that prints the whole answer ("Find lithium in the table" under
-  an item that asks for lithium-6's symbol and counts).
+  an item that asks for lithium-6's symbol and counts). **A hint shared by
+  several items is read, key covered, against EVERY one of them**, the
+  module's named exceptions first ("ask whether a metal is combined with
+  nonmetals" gave covalent for (NH₄)₂CO₃); on a two-option item a hint
+  never says what one option was replaced by or is "instead".
+- **A colour or position in a photograph's alt** is read off a zoom of the
+  exact object, not its neighbourhood (chapter 2: "the dish glows orange"
+  was the flame beside a dish that stays silver).
+- **A filler is never keyed on a working word of the page's own stems**
+  (`group`, `period` on the page whose source stems say "the following
+  group"): before adding one, ask whether a keyed exercise placed under
+  another objective serves this one at least as well.
 - **Order inside a Practice group:** the source's keyed items first, in
   source order, then your added items (an added item goes above a keyed
   `selfcheck` whose model answer prints its key).

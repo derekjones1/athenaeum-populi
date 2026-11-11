@@ -268,6 +268,19 @@ export function checkFormula(input, answer, { accept = '' } = {}) {
   if (readings.some((reading) => keyReadings.some((key) => compositionKey(key) === compositionKey(reading)))) {
     return { status: 'form', message: 'That has the right atoms — now write the formula in its usual order and grouping.' };
   }
+  // The right atoms without what the key's symbol carries beside them — an
+  // ion typed without its charge, a nuclide typed without its mass number.
+  // Still wrong (the charge or the mass number is what the item asks for),
+  // but said: a bare "incorrect" sent learners back to the atoms they had
+  // right (Chemistry 2.3, 2.5, 2.6). Neither message gives the number.
+  const atomsOf = (species) => Object.keys(species.atoms).sort().map((el) => `${el}${species.atoms[el]}`).join(' ');
+  const bare = (test) => readings.some((reading) => keyReadings.some((key) => atomsOf(key) === atomsOf(reading) && test(reading, key)));
+  if (bare((reading, key) => key.mass !== null && reading.mass === null)) {
+    return { status: 'incorrect', message: 'A symbol for one isotope carries its mass number: type it before the symbol, as in 14C.' };
+  }
+  if (bare((reading, key) => Boolean(key.charge) && !reading.charge && (key.mass === null) === (reading.mass === null))) {
+    return { status: 'incorrect', message: 'An ion’s symbol ends with its charge: type it after the symbol, as in Ca2+ or Cl-.' };
+  }
   return { status: 'incorrect' };
 }
 

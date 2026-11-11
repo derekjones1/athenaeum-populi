@@ -69,6 +69,42 @@ export const plain = (value) => normalizeText(String(value ?? '')
 const padded = (value) => ` ${value} `;
 
 /**
+ * A question without its Markdown link targets: "Using the [periodic
+ * table](/physical-sciences/…/a-the-periodic-table/), predict…" reads as the
+ * source's "Using the periodic table, predict…". A link is not a word of the
+ * stem (docs/subjects/chemistry.md, page skeleton rule 9), and its path is
+ * six words no source stem prints — enough to take an unlettered exercise
+ * carried one member at a time (2.6's six chlorides) under the floor.
+ */
+export const unlinked = (value) => String(value ?? '').replace(/\[([^\]]*)\]\([^)]*\)/g, '$1');
+
+/**
+ * The word pairs a module's own glossary makes one: "covalent compound —
+ * (also, molecular compound)" gives ["covalent", "molecular"], the shared
+ * head noun dropped; "main-group element — (also, representative element)"
+ * gives ["main group", "representative"]. Folded as `plain` folds. An answer
+ * that says "molecular" to a stem that asks "ionic or covalent" (2.6) is
+ * read through them.
+ */
+export function glossaryAliases(xml) {
+  const pairs = [];
+  for (const match of String(xml ?? '').matchAll(/<term>([^<]+)<\/term>\s*<meaning[^>]*>\s*\(also,?\s*([^)<]+)\)/g)) {
+    const term = plain(match[1]).split(' ').filter(Boolean);
+    for (const other of match[2].split(/\s+or\s+|,\s*/)) {
+      const alias = plain(other).split(' ').filter(Boolean);
+      if (!alias.length) continue;
+      let shared = 0;
+      while (shared < Math.min(term.length, alias.length) - 1
+        && term[term.length - 1 - shared] === alias[alias.length - 1 - shared]) shared += 1;
+      const a = term.slice(0, term.length - shared).join(' ');
+      const b = alias.slice(0, alias.length - shared).join(' ');
+      if (a && b && a !== b && !pairs.some(([x, y]) => (x === a && y === b) || (x === b && y === a))) pairs.push([a, b]);
+    }
+  }
+  return pairs;
+}
+
+/**
  * A `<media>` element inside a stem, as `markedStemText` writes it: the
  * image's file stem between marks no source text contains.
  */
@@ -435,7 +471,8 @@ const occurrences = (needle, haystack) => {
   return count;
 };
 
-export function unitScore(unit, question, item = {}) {
+export function unitScore(unit, linkedQuestion, item = {}) {
+  const question = unlinked(linkedQuestion);
   const reading = ownScore(unit, question, item);
   if (!unit.refersTo) return reading;
   // A unit whose stem refers to another exercise. Its item restates that

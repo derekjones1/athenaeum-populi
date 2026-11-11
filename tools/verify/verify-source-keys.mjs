@@ -113,7 +113,7 @@ import { foldedForms } from '../../assets/js/lib/text/check-text.mjs';
 import { chemCanon } from '../../assets/js/lib/text/check-chem.mjs';
 import { readNumeral } from '../../assets/js/lib/math/significant-figures.mjs';
 import {
-  KEYED_ONLY_BOOKS, keyedUnits, plain as foldedPlain, printedNumerals, unitFor,
+  KEYED_ONLY_BOOKS, glossaryAliases, keyedUnits, plain as foldedPlain, printedNumerals, unitFor, unlinked,
 } from '../lib/keyed-units.mjs';
 
 /** A page question must share this much of a source problem's vocabulary to
@@ -1962,8 +1962,10 @@ const withoutArticle = (value) => foldedPlain(value).replace(/^(?:an?|the) /, ''
  *   any             'unkeyed-unit'   the unit has NO printed answer — the
  *                                    book does not render it
  */
-export function judgeKeyedUnit(item, units) {
-  if (!['multiplechoice', 'fillin', 'selfcheck', 'textin'].includes(item.type)) return null;
+export function judgeKeyedUnit(linkedItem, units, { aliases = [] } = {}) {
+  if (!['multiplechoice', 'fillin', 'selfcheck', 'textin'].includes(linkedItem.type)) return null;
+  // A link is not a word of the stem: the item is read without its targets.
+  const item = { ...linkedItem, question: unlinked(linkedItem.question) };
   const unit = unitFor(item.question, units, item);
   if (!unit) return null;
   const exercise = { id: unit.id };
@@ -1985,8 +1987,11 @@ export function judgeKeyedUnit(item, units) {
       // CH") is read without them: a word of three letters or more is never
       // an element's symbol.
       const key = chemCanon(item.answer, item.form);
+      // A piece the answer introduces with a colon ("Al will form a cation
+      // with a charge of 3+: Al³⁺", 2.6) is also read after it.
       const pieces = [unit.answer, ...unit.answer.split(/[,;]|\s(?:and|or)\s/)]
         .map((piece) => piece.trim().replace(/[.:]$/, ''))
+        .flatMap((piece) => (piece.includes(':') ? [piece, piece.slice(piece.lastIndexOf(':') + 1).trim()] : [piece]))
         .flatMap((piece) => [piece, piece.replace(/^(?:[A-Za-z][a-z]{2,}\s+)+/, '')])
         .map((piece) => chemCanon(piece, item.form)).filter(Boolean);
       return key && pieces.includes(key) ? { status: 'confirmed', exercise } : differs;
@@ -2019,7 +2024,7 @@ export function judgeKeyedUnit(item, units) {
       if (sorted.length === segments.length && holding.length === 1) said = holding[0].head;
       else if (!sorted.length && roles.length === 1) said = roles[0].body;
     }
-    const answer = ` ${foldedPlain(said)} `;
+    const said1 = ` ${foldedPlain(said)} `;
     // An option is named when the answer prints it — as a run of words, or,
     // for an option of several words, each of its words ("symbolic,
     // microscopic" names the option "symbolic, microscopic" and, word for
@@ -2027,16 +2032,37 @@ export function judgeKeyedUnit(item, units) {
     // words are all inside another named option is the less specific
     // reading and gives way to it: the answer that says "symbolic,
     // microscopic" keys the compound option, not the bare domain.
+    //
+    // Two ways the answer's word and the option's differ and are still one:
+    //   an option that prints its own second name in parentheses — the
+    //   stem's "main-group (representative) element", answered
+    //   "representative element" (2.5) — is named by either name;
+    //   an answer in the word the module's glossary gives as the option's
+    //   alias — "molecular" to a stem that asks "ionic or covalent", where
+    //   the glossary has "covalent compound — (also, molecular compound)"
+    //   (2.6) — is read through that pair, and only when the answer names
+    //   no option as printed.
     const wordsOf = (option) => withoutArticle(option).split(' ').filter(Boolean);
-    const printed = (option) => {
-      const words = wordsOf(option);
-      return words.length > 0 && (answer.includes(` ${words.join(' ')} `)
-        || (words.length > 1 && words.every((word) => answer.includes(` ${word} `))));
+    const readingsOf = (option) => {
+      const aside = /^(.*?)\s*\(([^)]+)\)\s*(.*)$/.exec(option);
+      return [option, ...(aside ? [`${aside[1]} ${aside[3]}`, `${aside[2]} ${aside[3]}`] : [])].map(wordsOf);
     };
-    const mentioned = item.options.filter(printed);
-    const named = mentioned.filter((option) => !mentioned.some((other) => other !== option
-      && wordsOf(other).length > wordsOf(option).length
-      && wordsOf(option).every((word) => wordsOf(other).includes(word))));
+    const namedIn = (answer) => {
+      const printed = (option) => readingsOf(option).some((words) => words.length > 0 && (answer.includes(` ${words.join(' ')} `)
+        || (words.length > 1 && words.every((word) => answer.includes(` ${word} `)))));
+      const mentioned = item.options.filter(printed);
+      return mentioned.filter((option) => !mentioned.some((other) => other !== option
+        && wordsOf(other).length > wordsOf(option).length
+        && wordsOf(option).every((word) => wordsOf(other).includes(word))));
+    };
+    let named = namedIn(said1);
+    if (named.length === 0) {
+      const through = aliases.flatMap(([a, b]) => [[a, b], [b, a]])
+        .filter(([from]) => said1.includes(` ${from} `))
+        .map(([from, to]) => namedIn(said1.split(` ${from} `).join(` ${to} `)))
+        .filter((options) => options.length > 0);
+      if (through.length === 1) named = through[0];
+    }
     if (named.length === 1 && compact(named[0]) === compact(item.answer)) return { status: 'confirmed', exercise };
     if (named.length === 0) return { status: 'prose-key', exercise };
     return {
@@ -2206,9 +2232,10 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
     // first (an exercise part and its own answer segment); only an item that
     // transcribes no unit falls through to the ordinary judges below.
     const units = KEYED_ONLY_BOOKS.includes(section.book) ? keyedUnits(moduleXml) : null;
+    const aliases = units ? glossaryAliases(moduleXml) : [];
     for (const item of pageItems(readFileSync(pagePath, 'utf8'))) {
       const where = `${section.localPath}:${item.line}`;
-      const keyedVerdict = units ? judgeKeyedUnit(item, units) : null;
+      const keyedVerdict = units ? judgeKeyedUnit(item, units, { aliases }) : null;
       if (keyedVerdict) {
         const { status } = keyedVerdict;
         verdicts.push({ page: section.localPath, line: item.line, type: item.type, status });

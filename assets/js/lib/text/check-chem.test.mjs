@@ -45,6 +45,28 @@ test('the same atoms in another order or grouping are right atoms in the wrong f
   assert.equal(formula('C2H4O2', 'CH₃CO₂H', 'CH3COOH|HC2H3O2'), 'form');
 });
 
+test('the right atoms without their charge or mass number are wrong, and told what is missing', () => {
+  const noCharge = checkFormula('Se', 'Se²⁻');
+  assert.equal(noCharge.status, 'incorrect');
+  assert.match(noCharge.message, /ends with its charge/);
+  assert.match(checkFormula('NH4', 'NH₄⁺').message, /ends with its charge/);
+  assert.match(checkFormula('H2PO4', 'H₂PO₄⁻').message, /ends with its charge/);
+  // A wrong charge, or other atoms, gets no message: nothing is confirmed.
+  assert.equal(checkFormula('Se-', 'Se²⁻').message, undefined);
+  assert.equal(checkFormula('Se2+', 'Se²⁻').message, undefined);
+  assert.equal(checkFormula('S', 'Se²⁻').message, undefined);
+  assert.equal(checkFormula('Na2S', 'Na₂S').status, 'correct');
+  assert.equal(checkFormula('NaS', 'Na₂S').message, undefined);
+  const noMass = checkFormula('Na', '²³₁₁Na');
+  assert.equal(noMass.status, 'incorrect');
+  assert.match(noMass.message, /mass number/);
+  assert.match(checkFormula('Cs+', '¹³³Cs⁺').message, /mass number/);
+  assert.match(checkFormula('133Cs', '¹³³Cs⁺').message, /ends with its charge/);
+  assert.equal(checkFormula('K', '²³₁₁Na').message, undefined);
+  assert.equal(checkFormula('24Na', '²³₁₁Na').message, undefined);
+  for (const message of [noCharge.message, noMass.message]) assert.doesNotMatch(message, /\b(?:2|23|11)\b|Se|Na\b/, 'the message never prints the key');
+});
+
 test('a charge is read marked or bare, number first or sign first', () => {
   for (const typed of ['SO4^2-', 'SO₄²⁻', 'SO42-', 'SO4-2', 'SO4^-2', 'SO4 2-', 'SO4^{2-}', 'SO₄^2−']) {
     assert.equal(formula(typed, 'SO₄²⁻'), 'correct', typed);

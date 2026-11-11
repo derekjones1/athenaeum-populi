@@ -118,7 +118,7 @@ import { integerFlag, parseCliArgs } from '../lib/cli.mjs';
 import { shortcodes } from '../lib/content.mjs';
 import { mediaBindings } from '../lib/exercise-context.mjs';
 import {
-  KEYED_EXERCISE_CLASS, KEYED_ONLY_BOOKS, checkYourLearning, plain, readingRank, sequentialParts, splittingStem, unitScore,
+  KEYED_EXERCISE_CLASS, KEYED_ONLY_BOOKS, checkYourLearning, plain, readingRank, sequentialParts, splittingStem, unitScore, unlinked,
 } from '../lib/keyed-units.mjs';
 import { MATCH_FLOOR } from './verify-source-keys.mjs';
 
@@ -559,7 +559,8 @@ export function pageTexts(markdown) {
   const figures = mediaBindings(body);
   for (const name of ['multiplechoice', 'textin', 'selfcheck', 'sortbins', 'fillin']) {
     for (const sc of shortcodes(body, name)) {
-      const question = sc.params.question || '';
+      // A link is not a word of the stem: its target is not read (keyed-units.mjs `unlinked`).
+      const question = unlinked(sc.params.question || '');
       let options = [];
       if (name === 'multiplechoice') options = sc.inner.split('\n').map((line) => line.trim()).filter(Boolean);
       if (name === 'sortbins') {

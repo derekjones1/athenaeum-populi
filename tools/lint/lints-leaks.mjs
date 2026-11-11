@@ -338,9 +338,17 @@ export function directlyAboveLeak(prev, textin) {
     const option = spellings.find((s) => options.includes(s.norm));
     if (option) return { option: true, member: option.member };
   }
+  // A formula or ion key (`answerForm`) is printed only where its own
+  // characters are, charge included: the normalized text drops a charge, so
+  // the stem's "(NH₄)₂CO₃" read as printing the key "NH₄⁺" of the item that
+  // asks for the cation's symbol (Chemistry 2.6) — and the charge is what
+  // that item grades. A neutral formula the item above prints is still a hit.
+  const formula = textin.params.answerForm !== undefined;
+  const tight = (value) => String(value ?? '').replace(/\s+/g, '');
   for (const [field, value] of printedFields(prev)) {
     const haystack = normalizedLines(value);
-    const hit = spellings.find((s) => containsWholeWordRun(haystack, s.norm));
+    const hit = spellings.find((s) => containsWholeWordRun(haystack, s.norm)
+      && (!formula || tight(value).includes(tight(s.member))));
     if (hit) return { field, member: hit.member, norm: hit.norm };
   }
   return null;

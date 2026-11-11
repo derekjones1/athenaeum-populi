@@ -44,8 +44,10 @@ the concept of molecular identity.
 - **Evolution of Atomic Theory** — milestones in the development of modern atomic theory, the experiments of Thomson, Millikan, and Rutherford, the three subatomic particles that compose atoms, and isotopes.
 - **Atomic Structure and Symbolism** — symbols that show an atom’s or ion’s atomic number, mass number, and charge; the atomic mass unit and average atomic mass; and calculating average atomic mass and isotopic abundance.
 - **Chemical Formulas** — molecular and empirical formulas, which symbolize the composition of molecules, and structural formulas, which represent the bonding arrangement of atoms within them.
+- **The Periodic Table** — the periodic law and the organization of the elements in the periodic table, predicting an element’s general properties from its location, and identifying metals, nonmetals, and metalloids.
+- **Ionic and Molecular Compounds** — ionic and molecular (covalent) compounds, predicting the type of compound elements form from their location in the periodic table, and determining formulas for simple ionic compounds.
 
-The chapter’s remaining sections — The Periodic Table, Ionic and Molecular Compounds, and Chemical Nomenclature — are being written and will appear here when they are finished and verified.
+The chapter’s last section — Chemical Nomenclature — is being written and will appear here when it is finished and verified.
 
 ---
 

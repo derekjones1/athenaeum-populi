@@ -6631,6 +6631,62 @@
       "status": "correct-local-source-defect",
       "errataEntry": 2940,
       "rationale": "The acetic acid paragraph reduces the ratio 2:4:2 to 1:2:1 by \"dividing by the lowest common denominator (2)\". A lowest common denominator belongs to fractions; a ratio of whole numbers is reduced by dividing by the greatest common factor of its terms. The page prints \"greatest common factor\" with a visible Source note directly after the acetic acid figure the paragraph introduces and a footer clause. Found by the prose claim pass (F5). Authored with chapter 2, ruled by the orchestrator, November 10, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/05-the-periodic-table.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68695",
+      "sourceElementIds": [
+        "CNX_Chem_02_05_Mendeleev"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2943,
+      "rationale": "The Mendeleev figure's caption calls the table in panel (b) \"the first periodic table of the elements\". The table shown, with eight groups headed by oxide and hydride formulas and thorium at 231 and uranium at 240, is the revised table Mendeleev published in 1871 (Annalen der Chemie und Pharmacie, Supplementband 8, pages 133–229); the image's Wikimedia Commons record is titled \"Mendelejevs periodiska system 1871\", and his first table appeared in 1869, as the module's own text says. The page prints panel (b) as his periodic table in the form he published in 1871, credits unchanged, with a visible Source note directly after the figure and a footer clause. Found by the prose claim pass (F2). Authored with chapter 2, ruled by the orchestrator, November 10, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/05-the-periodic-table.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68695",
+      "sourceElementIds": [
+        "fs-idm330060208"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2945,
+      "rationale": "The paragraph says that parts of two of the rows, \"a total of 14 columns\", are written below the main body of the table. The periodic table figure directly below sets 15 boxes in each of the two rows (lanthanum through lutetium and actinium through lawrencium); 14 is the f-block width only in the layout that puts lutetium and lawrencium in group 3, which this book does not use. The page prints \"a total of 15 columns\" with a visible Source note directly after the periodic-table figure, before the sentence that links Appendix A, and a footer clause. Found by the prose claim pass (F5). Authored with chapter 2, ruled by the orchestrator, November 10, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/05-the-periodic-table.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68695",
+      "sourceElementIds": [
+        "eip-288"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2951,
+      "rationale": "The paragraph says that purines, key components of DNA, \"contain oxygen\". Of the two purines in DNA, guanine (C5H5N5O) contains an oxygen atom and adenine (C5H5N5) does not (PubChem, compounds 764 and 190). The page prints \"some of which contain oxygen\" with a visible Source note directly after the paragraph and a footer clause. Found by the prose claim pass (F6). Authored with chapter 2, ruled by the orchestrator, November 10, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/05-the-periodic-table.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68695",
+      "sourceElementIds": [
+        "fs-idm334010160",
+        "fs-idm251981584"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2956,
+      "rationale": "The glossary defines a representative element as an element in columns 1, 2, and 12–18. The module's own glossary entry for main-group element, the same class under its other name, and its body text both give 1, 2, and 13–18, and group 12 is among the columns 3–12; group 12 is d-block (IUPAC Red Book 2005, IR-3.5). The page prints columns 1, 2, and 13–18 in the Key terms list with a visible Source note directly after the list and a footer clause. Found by the section ledger and the prose claim pass (F1). Authored with chapter 2, ruled by the orchestrator, November 10, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/06-ionic-and-molecular-compounds.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68696",
+      "sourceElementIds": [
+        "fs-idp9416320"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2961,
+      "rationale": "The paragraph defines oxyanions as \"polyatomic ions that contain one or more oxygen atoms\". By that wording the hydronium ion in the table of common polyatomic ions directly below, a cation, would be an oxyanion; the module's own glossary defines an oxyanion as a polyatomic anion. The page prints \"polyatomic anions\" with a visible Source note directly after the table of common polyatomic ions, which the paragraph introduces, and a footer clause. Found by the prose claim pass (F8). Authored with chapter 2, ruled by the orchestrator, November 10, 2026."
     }
   ]
 }

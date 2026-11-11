@@ -416,6 +416,14 @@
   "00cabcd918019b5b": {
    "verdict": "ok"
   },
+  "00d3580ca7b8dd05": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp221295264 (printed 2.47) part (b) classification — solution fs-idm3993968; hint rewritten after check",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "00db153eb3795a1d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -997,6 +1005,14 @@
     "result": "agrees"
    }
   },
+  "0215f9658f4546f9": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp221295264 (printed 2.47) part (d) cation symbol — solution fs-idm3993968",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "02188f179170f360": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -1223,6 +1239,14 @@
   "027607c9521b33fd": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "02767698a7b5ba80": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (e): first classification metal",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -2977,6 +3001,14 @@
   "05d9bd34550f2c8b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "05dbaed24e24551d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm430165648 part (a): ²³₁₁Na",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -7597,6 +7629,14 @@
   "0f75d4626c2e12a2": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "0f76890fa85707fc": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (e): further classification transition metal",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "0f7714865f01bd1f": {
    "verdict": "ok",
@@ -12997,6 +13037,14 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 480): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "1a3fe9d79319ffac": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm419056816 part (c): Li Hint reworded after the blind solve (parent): it now also sends the learner to the text for which elements of the column the group's name covers; question, key, and form unchanged.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1a40eab2392380ba": {
    "verdict": "ok",
    "note": "glossary recall: urine (fs-idm117296416) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -13799,6 +13847,15 @@
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
+   }
+  },
+  "1bd2a330782b24bc": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm11079584 (answer: Se2-, the selenide ion) — name, keyed bare with the two-word form accepted; hint reworded after the fix check (parent) so that it no longer says which kind of ion this is; key unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "Key stands: keyed bare \"selenide\" with \"selenide ion\" in accept (playbook name row: the grader drops \"the\", not \"ion\"), so the solver's \"selenide ion\" and the bare name both grade correct. Source answer: \"Se2-, the selenide ion\"."
    }
   },
   "1bd4dee11318d874": {
@@ -18385,6 +18442,14 @@
     "result": "agrees"
    }
   },
+  "2594ce314df0e6f4": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp51588352 (answer fs-idp194881696) — aluminum ion symbol",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "259d65883147f548": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -18587,6 +18652,14 @@
   },
   "25ed3fafa1648dc8": {
    "verdict": "ok"
+  },
+  "25ee26c81d56c70f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (d): further classification main-group (representative) element",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "25ee88013d4edb3f": {
    "verdict": "ok",
@@ -20219,6 +20292,14 @@
     "result": "agrees"
    }
   },
+  "293bdc821a86bb28": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (d): first classification nonmetal",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "29404dfec757fc97": {
    "verdict": "ok",
    "note": "locally authored selfcheck paraphrasing the module's migration/public-health paragraph (fs-idm171579728), no new claims — disclosed in the footer (thin-group filler). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -21119,6 +21200,14 @@
     "result": "agrees"
    }
   },
+  "2b385f9e944771bc": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (f): further classification inner transition metal",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2b3b68829860c0c3": {
    "verdict": "ok",
    "note": "KC 3 14.4 § glossary sliding clamp (fs-id1703233), m66390 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -21461,6 +21550,14 @@
   "2c0920432bb5f2b8": {
    "verdict": "ok",
    "note": "KC 4 19.3 § introduction, m66718 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "2c0ae997566caaa7": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (a): first classification metal",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -21852,6 +21949,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "2cda70894012d1b2": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp51588352 (answer fs-idp194881696) — self-check carrying the source answer whole"
   },
   "2ce0a3ae5e852550": {
    "verdict": "ok",
@@ -22674,6 +22775,14 @@
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "2e79b7610b6726a5": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp178456496 (printed 2.49) part (d) — solution fs-idp3249008",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -23651,6 +23760,14 @@
   "3071f87b9ddbaa1e": {
    "verdict": "ok",
    "note": "Diagonal matrix det3(diag(-1,1,-3)) = (-1)(1)(-3) = 3, run in Node; matches CNXML solution 3 (fs-id1513986). | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "30745c5dad6af967": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (f): first classification metal",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "30756a8c5d3de30b": {
    "verdict": "ok",
@@ -25380,6 +25497,14 @@
   "344a8ac028390fe6": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "344aba0b65e6357c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp298677568 (printed 2.45), member CCl₄ — solution fs-idp129483232",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -27237,6 +27362,14 @@
     "result": "agrees"
    }
   },
+  "3866c137c368e538": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm415648752 part (a): symbol Kr",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "38671b10ae2f999f": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -28131,6 +28264,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "3a481ec42a5a0535": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (c): first classification metal",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3a4d5e3bbdcc94c1": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"When protein receptors on the plasma membrane's surface of an animal cell bind to a substance in the extracellular matrix, a chain of react…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -28176,6 +28317,14 @@
    "note": "m66554 exercise fs-idp237302288 (Review Q2): keyed option B 'mixotrophs' matches the CNXML solution and the Metabolism paragraph's own definition (photoautotrophic or heterotrophic routes). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "3a6df2cdfe447b0a": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm415648752 part (b): symbol Ca",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -28439,6 +28588,14 @@
    "note": "author-built from § Capsule Staining: \"The dye stains the background but does not penetrate the capsules, which appear like halos around the borders of the cell.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "3aef3860422369d1": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm419056816 part (b): Be Hint reworded after the blind solve (parent): it now also sends the learner to the text for which elements of the column the group's name covers; question, key, and form unchanged.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -29014,6 +29171,14 @@
     "result": "agrees"
    }
   },
+  "3c2b88dad914c3f1": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm415648752 part (b): name calcium",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3c2c79d1d754f384": {
    "verdict": "ok",
    "note": "KC 5 26.4 § Human African Trypanosomiasis, m58943"
@@ -29532,6 +29697,14 @@
     "result": "agrees"
    }
   },
+  "3d705afeffe3e489": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (j): further classification main-group (representative) element",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3d720e3ed301cf3a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -29719,6 +29892,14 @@
   "3de7ea03d0f8bbf1": {
    "verdict": "ok",
    "note": "KC 1 5.1 § Chromalveolata, m58802 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "3df08dd8b5ea94ff": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (h): first classification nonmetal",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -31763,6 +31944,14 @@
   "41b9112553f98bd6": {
    "verdict": "ok",
    "note": "Body CYU, selfcheck: antibiotic-resistance vs reporter gene, assembled from two Plasmids § sentences, confirmed against CNXML. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "41bbbbc08e485df2": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm430165648 part (b): ¹²⁹₅₄Xe",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "41bdecf5db3729f4": {
    "verdict": "ok",
@@ -35761,6 +35950,14 @@
     "result": "agrees"
    }
   },
+  "4a7550981579464e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (h): further classification main-group (representative) element",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4a7b9402bc69b2d4": {
    "verdict": "ok",
    "note": "body cloze fs-id2227440 sentence 2 'The IgA (and sometimes IgM) antibodies...'; stem cut after \"pathogen\" (no neutralize root); accept + immunoglobulin A",
@@ -35983,6 +36180,14 @@
   "4aeb4c9432d8edea": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "4aeda82707ee87c9": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp298677568 (printed 2.45), member NCl₃ — solution fs-idp129483232",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -36891,6 +37096,14 @@
   "4ce6130d6813b303": {
    "verdict": "ok",
    "note": "KC 1 3.6 § body Differentiation (fs-id1521639), Everyday Connection Stem Cell Research (fs-id704569), m46036",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "4ce8c88f605fc37c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm430165648 part (d): ²²⁶₈₈Ra",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -39681,6 +39894,14 @@
   "52e478d99713dcc6": {
    "verdict": "ok"
   },
+  "52ecfc9d5d46fc73": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp221295264 (printed 2.47) part (f) anion symbol — solution fs-idm3993968",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "52ee8c4f77f48f49": {
    "verdict": "ok",
    "note": "selfcheck model answer assembled from the hepatitis B subunit-vaccine paragraph, no new claim | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -40636,6 +40857,14 @@
   },
   "5504dde457477c87": {
    "verdict": "ok"
+  },
+  "55076b50d141b43e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm415648752 part (d): name tellurium",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "5514f160d9de626a": {
    "verdict": "ok",
@@ -42970,6 +43199,14 @@
     "result": "agrees"
    }
   },
+  "59c602d6d967d9ae": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp221295264 (printed 2.47) part (d) classification — solution fs-idm3993968; hint rewritten after check",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "59ced5014fd47cc8": {
    "verdict": "ok",
    "note": "Critical Thinking Q1 fs-idm42954032, model answer = source solution verbatim | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -44418,6 +44655,14 @@
    "verdict": "ok",
    "note": "CT fs-id2277157 solution verbatim"
   },
+  "5cccd2c40f2996ff": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp178456496 (printed 2.49) part (b) — solution fs-idp3249008",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5cd9a5e7dd7476a2": {
    "verdict": "ok",
    "note": "C(10,3)*C(6,5)*C(5,2)=120*6*10=7200 (node BigInt), matches CNXML key. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -44895,6 +45140,14 @@
   "5de2eade71fb5b91": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "5de75d6c665953db": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (i): further classification main-group (representative) element",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "5de7e173c7598a2b": {
    "verdict": "ok",
@@ -45973,6 +46226,14 @@
   "60568dba048e2dda": {
    "verdict": "ok",
    "note": "source exercise fs-id1167583718663 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "6059f335e9432ccd": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (i): first classification nonmetal",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -52986,6 +53247,14 @@
     "result": "agrees"
    }
   },
+  "7133ce87b276eb9b": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp75448432 (answer fs-idp104312384: Na2S)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "71350dcd02d9f0d5": {
    "verdict": "ok",
    "note": "KC 3 13.2 § The Spinal Cord, m46533",
@@ -54113,6 +54382,14 @@
   "739d017586541a93": {
    "verdict": "ok",
    "note": "Summary cloze; m46432 fs-id2138266 sentence 2 prints 'must be reabsorbed farther down the nephron tubules'; stem matches page Summary bullet. accept=\"recovered\" added (Summary: \"amount of water being recovered or lost by renal nephrons\").",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "739e14b4dbfb8f8b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp221295264 (printed 2.47) part (b) anion symbol — solution fs-idm3993968",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -55684,6 +55961,14 @@
   "76e4b47c67112664": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "76e5401b5636ba94": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm415648752 part (c): name fluorine",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -58009,6 +58294,14 @@
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "7b7faf169f0b83de": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp411086368 part (a) (answer fs-idm16446416) — source says molecular; keyed covalent per glossary alias (covalent compound, also molecular compound) and parent decision 12",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7b84a9197d31e374": {
    "verdict": "ok"
   },
@@ -58034,6 +58327,14 @@
   },
   "7ba9175b3a1e932d": {
    "verdict": "ok"
+  },
+  "7babbe9a31397805": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp221295264 (printed 2.47) part (c) cation symbol — solution fs-idm3993968",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "7babc05909625c93": {
    "verdict": "ok",
@@ -58600,6 +58901,14 @@
   "7c9bb6e07c620891": {
    "verdict": "ok",
    "note": "CT fs-id1146501 model answer = solution fs-id1960453 verbatim"
+  },
+  "7ca2729db2ed46f5": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp221295264 (printed 2.47) part (f) cation symbol — solution fs-idm3993968",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "7ca2b834a6a9bfae": {
    "verdict": "ok",
@@ -62083,6 +62392,14 @@
    "verdict": "ok",
    "note": "KC 2 5.4 § Basal Cell Carcinoma, m46066"
   },
+  "843b67832e2be723": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm415648752 part (c): symbol F",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "843b8a54d3aa2f76": {
    "verdict": "ok",
    "note": "RQ fs-id2340300 key A; fs-id2470385 'When blood pressure increases, smooth muscle cells ... respond by contracting'.",
@@ -64220,6 +64537,15 @@
    "verdict": "ok",
    "note": "TryIt1 (source ti_08_01_01, AAS): beta=180-98-43=39; a=b*sin(alpha)/sin(beta)=22*sin(98)/sin(39)=34.618 -> 34.6, nearest tenth. Independently derived via node law-of-sines; matches CNXML solution a=34.6."
   },
+  "88b06c0f4ef27f45": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm382810864 part (b): chalcogen; accept oxygen group|oxygen family from para fs-idm177301632",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "Key stands (source: \"chalcogen\"). The body prints \"oxygen group or oxygen family\" for the chalcogens; both were added to the accept list after the checker's reading and grade correct."
+   }
+  },
   "88b24be44285738c": {
    "verdict": "ok",
    "note": "source exercise fs-idm67489232 part (d), keyed microscopic from solution fs-idp31026272; same four options; underlined item also named in words in a closing parenthesis",
@@ -66301,6 +66627,14 @@
    "note": "source exercise fs-id1167663723473 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "8d2a42f815ee7fd1": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp298677568 (printed 2.45), member MgCl₂ — solution fs-idp129483232",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -69686,6 +70020,14 @@
    "verdict": "ok",
    "note": "Visual Connection (fs-idp121757008, keyed to fig-ch22_01_07): model answer is the CNXML solution paragraph verbatim (matrix/outer layer protects inner bacteria; proximity facilitates lateral gene transfer of resistance genes; an exo-enzyme-producing bacterium may protect neighbors). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "94b3ac12ac6ea9bc": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp2219712 (answer fs-idp19956160: Li2O2)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "94b9f11b6c3af896": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -70116,6 +70458,14 @@
     "result": "agrees"
    }
   },
+  "95888b6cca9772ca": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp51588352 (answer fs-idp194881696) — carbon ion symbol",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9594c449b74feff1": {
    "verdict": "ok",
    "note": "CT2 (fs-idp90900816): model answer is the CNXML solution verbatim ('environmental conditions on Earth were extreme: high temperatures, lack of oxygen, high radiation'). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -70381,6 +70731,14 @@
   "9619c98b4f22c855": {
    "verdict": "ok",
    "note": "KC 1 4.4 § body opening paragraph (fs-id1524010), m46055",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "961d983341cf9ad4": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp178456496 (printed 2.49) part (a) — solution fs-idp3249008",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -71801,6 +72159,14 @@
     "result": "agrees"
    }
   },
+  "991f088dd4039af7": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (g): first classification metal",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "99200bc19ccc135b": {
    "verdict": "ok",
    "note": "fs-id1491615 key C 'alveoli'; alveoli are respiratory-zone structures; pharynx, nasal cavity, bronchi are conducting zone",
@@ -72472,6 +72838,14 @@
   "9aaf26d1886c46f7": {
    "verdict": "ok",
    "note": "m66488 solution fs-id1450646 (probability method, AABBCc x Aabbcc) matches page verbatim. Re-derived: gene A (AA x Aa) -> 1/2 AA, 1/2 Aa; gene B (BB x bb) -> all Bb; gene C (Cc x cc) -> 1/2 Cc, 1/2 cc; combined proportions each 1/4, ratio 1:1:1:1, matching the stated four genotypes and ratio. CHECKS clauses restate the solution with no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "9ab1697e89ba5957": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm11079584 (answer fs-idp2161376: Se2-, the selenide ion) — symbol; closing sentence reworded per ruling",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "9abb1de493eaf5be": {
    "verdict": "ok",
@@ -73209,6 +73583,14 @@
   },
   "9c82b131937402b9": {
    "verdict": "ok"
+  },
+  "9c84583889f99509": {
+   "verdict": "ok",
+   "note": "filler select-the-term multiple choice from body sentence in para fs-idm10305952 (Covalent bonds are the attractive forces between...); options ionic bonds / covalent bonds",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "9c8895a169d6fd29": {
    "verdict": "ok",
@@ -75125,6 +75507,15 @@
    "solved": {
     "by": "fable-solver",
     "result": "agrees"
+   }
+  },
+  "a0bf7b08111d38a7": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm382810864 part (a): noble gas",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "Key stands (source answer fs-idm382810864: \"noble gas\"). \"inert gas\" is the module glossary's own alias and is already in the item's accept list; both grade correct."
    }
   },
   "a0c25fa90cdb13cf": {
@@ -78107,6 +78498,14 @@
     "result": "agrees"
    }
   },
+  "a6a9a1539a610e9c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp298677568 (printed 2.45), member KCl — solution fs-idp129483232",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a6aaaf5467ac6620": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -78512,6 +78911,14 @@
   "a78fc87a8c825960": {
    "verdict": "ok",
    "note": "glossary recall fs-id2158108 ischemic stroke ; accept ischaemic stroke",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "a7925afad6faf205": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp411086368 part (b) (answer fs-idm16446416)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -80756,6 +81163,14 @@
     "result": "agrees"
    }
   },
+  "acb591b9b97d2649": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm419056816 part (d): O Hint reworded after the blind solve (parent): it now also sends the learner to the text for which elements of the column the group's name covers; question, key, and form unchanged.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "acbb73a7ac61cb57": {
    "verdict": "ok",
    "note": "key-term recall: bacteriocins; printed in § Antimicrobial Peptides: \"AMPs called bacteriocins are produced exogenously by certain members of the resident microbiota within the gastrointestinal tract.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -82665,6 +83080,14 @@
     "result": "agrees"
    }
   },
+  "b11754468c9a244c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp221295264 (printed 2.47) part (a) classification — solution fs-idm3993968; hint rewritten after check",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b119e68d3df547b5": {
    "verdict": "ok",
    "note": "KC 5 23.3 § Anatomy of a Tooth, m46511",
@@ -83484,6 +83907,14 @@
   "b29ec0854196ecca": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "b29fb583e99f0d37": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp411086368 part (c) (answer fs-idm16446416) — source says molecular; keyed covalent per glossary alias (covalent compound, also molecular compound) and parent decision 12",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -84381,6 +84812,14 @@
   "b4a0f0409bba9363": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "b4a8aa4107780136": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm415648752 part (a): name krypton",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -86419,6 +86858,14 @@
     "result": "agrees"
    }
   },
+  "b8ca50dad0aed2f3": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm382810864 part (d): alkali metal",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b8cfa2014a9701f5": {
    "verdict": "ok",
    "note": "source exercise fs-id1451758 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -88055,6 +88502,14 @@
    "verdict": "ok",
    "note": "source CT fs-id2061794; model answer = source solution verbatim; checks are its clauses"
   },
+  "bc64ed0369430e5b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm415648752 part (d): symbol Te",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "bc65e0370dfb7ca5": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -89149,6 +89604,14 @@
    "note": "Review Question exercise fs-id1282023, keyed B in CNXML solution fs-id1235749 (\"is a recombinant protein\"). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "bea5a1fd372d804e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp221295264 (printed 2.47) part (e) classification — solution fs-idm3993968; hint rewritten after check",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -94878,6 +95341,14 @@
     "result": "agrees"
    }
   },
+  "cb0c879869e2dccb": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (j): first classification metal",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "cb14bfb54dc00e6d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -94989,6 +95460,14 @@
   "cb468e389571f9dd": {
    "verdict": "ok",
    "note": "RQ fs-id1989047, key A = myelinated axons; body fs-id2151899 'white matter (the regions with many axons)... axons are insulated by... myelin'; glossary white matter 'mostly myelinated axons'.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "cb4b55b55e6da61f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (b): further classification main-group (representative) element",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -96782,6 +97261,14 @@
    "verdict": "ok",
    "note": "m66383 critical-thinking solution fs-id1434277 (Pseudomonas bacterial load) verbatim match. All 3 CHECKS clauses trace to that solution's sentences; no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "cf8bd2c4a67a39db": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm430165648 part (c): ⁷³₃₃As",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "cf8d9bdc14737129": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) Options reordered by the parent after the mc-distribution test (key moved off the first position); key text unchanged. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -97087,6 +97574,14 @@
   "d02f22d2a9a54422": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "d03a5fcf1e977763": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (a): further classification inner transition metal",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "d03b022c92f171e9": {
    "verdict": "ok",
@@ -98274,6 +98769,14 @@
     "result": "agrees"
    }
   },
+  "d33e2436d652ac3c": {
+   "verdict": "ok",
+   "note": "filler select-the-term multiple choice from glossary definition fs-idp182712496 (ionic compound); options the module terms ionic compound / molecular compound",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d346a12557a614d2": {
    "verdict": "ok"
   },
@@ -98332,6 +98835,14 @@
   "d371d4fc3e4825d8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d37256dab015ca4d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp221295264 (printed 2.47) part (c) anion symbol — solution fs-idm3993968",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -99797,6 +100308,14 @@
   "d664166360f34cea": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d6687fce73079a3f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp178456496 (printed 2.49) part (e) — solution fs-idp3249008",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -101616,6 +102135,14 @@
     "result": "agrees"
    }
   },
+  "da6e00e3ae0097f1": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm382810864 part (c): alkaline earth metal",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "da7a84e228ac9221": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -101831,6 +102358,14 @@
   "dad25ee1bab6e079": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "dad278806bc5065c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp221295264 (printed 2.47) part (b) cation symbol — solution fs-idm3993968",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -105542,6 +106077,14 @@
     "result": "agrees"
    }
   },
+  "e2ce0a857e7b76ec": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp221295264 (printed 2.47) part (f) classification — solution fs-idm3993968; hint rewritten after check",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e2cff663055f74ec": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -107577,6 +108120,14 @@
   "e74a62c39c6594ea": {
    "verdict": "ok"
   },
+  "e74ed01d6aaf8109": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm419056816 part (a): He Hint reworded after the blind solve (parent): it now also sends the learner to the text for which elements of the column the group's name covers; question, key, and form unchanged.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e75049350870e57f": {
    "verdict": "ok",
    "note": "KC 4 18.5 § Micro Connection: DNA Vaccines, m58888 | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -107615,6 +108166,14 @@
   "e75b1091c4349156": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"Yeasts use cell-surface receptors and signaling cascades to communicate information on mating with other yeast cells.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "e763cbcea3603170": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp411086368 part (d) (answer fs-idm16446416)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -107829,6 +108388,14 @@
     "result": "agrees"
    }
   },
+  "e7e1914a2815570f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp298677568 (printed 2.45), member ICl — solution fs-idp129483232",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e7e7c58cb5847686": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -107852,6 +108419,14 @@
   "e7fd720865fd5da8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "e7ffbf33b1b1ef49": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp221295264 (printed 2.47) part (d) anion symbol — solution fs-idm3993968",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -109262,6 +109837,14 @@
    "note": "author-built from § The Role of Captive Breeding: \"However, captive breeding programs have yielded some success stories, such as the California condor reintroduction to the Grand Canyon and…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "eb4cfe1c8020fde8": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp298677568 (printed 2.45), member PCl₅ — solution fs-idp129483232",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -111720,6 +112303,14 @@
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "f0bfb58ce3a0f651": {
+   "verdict": "ok",
+   "note": "filler select-the-term from body sentence in para fs-idm330060208 (periodic relationship involved atomic numbers rather than atomic masses) and the italic statement of the periodic law",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f0c70849ce807621": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -112605,6 +113196,14 @@
    "verdict": "ok",
    "note": "parent: graph MC, keyed option shades above y=x^2-1 and below y=x+1 solid; distractors dashed/wrong-side; labels rewritten self-contained | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "f2b9077f0e090e78": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp221295264 (printed 2.47) part (c) classification — solution fs-idm3993968; hint rewritten after check",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f2bc49574327ef71": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"The use of cellular signaling to organize the dismantling of a cell ensures that harmful molecules from the cytoplasm are not released into…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -113141,6 +113740,14 @@
   "f3ccc533f0b0a02e": {
    "verdict": "ok",
    "note": "re-read against m46411 CNXML and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "f3cd348be36d23f0": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (g): further classification transition metal",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -115238,6 +115845,14 @@
   },
   "f7e256241e05c28d": {
    "verdict": "ok"
+  },
+  "f7e3446074f0b800": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp178456496 (printed 2.49) part (c) — solution fs-idp3249008",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "f7e600fc0658df0c": {
    "verdict": "ok",
@@ -118967,6 +119582,14 @@
     "result": "agrees"
    }
   },
+  "ff9e6f4b44468a3c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (b): first classification nonmetal",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ffa1c654a1371824": {
    "verdict": "ok",
    "note": "source exercise fs-idp38309200 part (c), choice keyed hypothesis from solution fs-idp5011648",
@@ -119123,6 +119746,14 @@
   "ffd4c82711bc7a90": {
    "verdict": "ok",
    "note": "Prefix table (module m68674, Common Unit Prefixes) row for symbol m: milli; only symbol quoted.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "ffdb86b391a42f55": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (c): further classification main-group (representative) element",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"

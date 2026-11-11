@@ -1748,6 +1748,52 @@ test('a Chemistry appendix table scrolls inside its own box, its figures load, a
   expect(rows, 'and their rows: 403 in Appendix G alone').toBeGreaterThan(1000);
 });
 
+// The first formula a browser types (docs/subjects/chemistry.md "Formulas and
+// equations"). The grader is unit-tested; what only the page shows is the
+// field wired to it: the typing guide as the field's description, the
+// "Read as" line following the keys, the grader's own message in place of a
+// bare "Not quite", and an ion typed on a plain keyboard graded right.
+// Chemistry 2.6 is the first page dense in ions.
+test('a Chemistry formula field reads back what is typed, says what a bare symbol is missing, and grades an ion and a grouped formula', async ({ page }) => {
+  await gotoBuiltPage(page, '/physical-sciences/chemistry/02-atoms-molecules-and-ions/06-ionic-and-molecular-compounds/');
+  const upgraded = (el) => Boolean(customElements.get('text-in')) && Boolean(el.querySelector('.ap-textin-check'));
+  const statusOf = (card) => expect.poll(async () => card.evaluate((el) => el.status), { timeout: 5000 });
+
+  const ion = page.locator('text-in[data-answer="Se²⁻"]');
+  await expect(ion).toHaveCount(1);
+  await waitForUpgrade(ion, upgraded);
+  await ion.scrollIntoViewIfNeeded();
+  const field = ion.locator('.ap-textin-field');
+  const guide = ion.locator('.ap-textin-guide');
+  await expect(guide).toHaveText(/a charge after \^/);
+  expect(await field.getAttribute('aria-describedby')).toBe(await guide.getAttribute('id'));
+  // The right atom without its charge: wrong, and told what is missing — never the charge itself.
+  await field.fill('Se');
+  await expect(ion.locator('.ap-textin-reading')).toHaveText('Read as: Se');
+  await field.press('Enter');
+  await statusOf(ion).toBe('incorrect');
+  await expect(ion.locator('.ap-textin-feedback')).toHaveText(/ends with its charge/);
+  await expect(ion.locator('.ap-textin-feedback')).not.toHaveText(/2-|²⁻|Se/);
+  // Typed on a plain keyboard, read in the book's print, and right.
+  await field.fill('Se2-');
+  await expect(ion.locator('.ap-textin-reading')).toHaveText('Read as: Se²⁻');
+  await field.press('Enter');
+  await statusOf(ion).toBe('correct');
+
+  const salt = page.locator('text-in[data-answer="(NH₄)₂SO₄"]');
+  await expect(salt).toHaveCount(1);
+  await waitForUpgrade(salt, upgraded);
+  await salt.scrollIntoViewIfNeeded();
+  const saltField = salt.locator('.ap-textin-field');
+  await saltField.fill('NH42SO4');
+  await saltField.press('Enter');
+  await statusOf(salt).toBe('incorrect');
+  await saltField.fill('(NH4)2SO4');
+  await expect(salt.locator('.ap-textin-reading')).toHaveText('Read as: (NH₄)₂SO₄');
+  await saltField.press('Enter');
+  await statusOf(salt).toBe('correct');
+});
+
 test('on every Chemistry page a display row fits the column, scientific notation stays on one line, and a scaled-down figure stays small', async ({ page }) => {
   const routes = [...chemistrySectionRoutes(), ...chemistryAppendixRoutes()];
   expect(routes.length, 'Chemistry section pages were discovered in public/').toBeGreaterThanOrEqual(6);

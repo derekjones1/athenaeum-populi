@@ -655,6 +655,156 @@ across two runs, and that a landing with section pages carries no
 - The isooctane ratio (5.33 from whole-number masses; 5.30 by Appendix A)
   is kept as printed and logged (2925).
 
+## Chapter 2, Sections 2.5–2.6 (November 10, 2026)
+
+Derek: "Let's continue onto the next 2 sections for chemistry." The parent
+took that as Sections 2.5 and 2.6 and left 2.7 (Chemical Nomenclature, now
+the chapter's only section "being written") for the next run. Like the
+first run, this one went through the blind solve and the commit.
+
+### Shape
+
+Prep reused from the first run (media, PDF pages, inventory, key page);
+the shapes and the probe were re-run (two findings, both already ruled).
+A Sonnet clerk drafted the run facts' tables; the parent wrote sixteen
+decisions (0–15). Two Opus authors together; an Opus checker as each
+reported; then, on the fixed pages, the claim pass, the consistency
+reader, and one rendered-page reader together; one rulings round; an Opus
+fix checker; the blind solve (a fresh Fable solver, 78 items); Sonnet
+clerks for the landing, cover, and pins and for the errata. The usage limit
+stopped the run between the rulings and the fix checker's last message;
+the fix checker and the errata clerk were resumed by SendMessage and lost
+only their final messages. About two hours of work on either side of the
+pause.
+
+### What the run holds
+
+Two pages, 79 items: 39 multiple choices, 39 text-ins (2.5: 12 formula
+text-ins for the four lightest group members, the four symbols, and the
+four isotope symbols; 2.6: formulas and ions throughout), one self-check
+(2.6); 7 figures (3 and 4); eight Source notes (2.5: six; 2.6: two). 2.5
+holds 41 items, 2.6 holds 38. Seven keyed exercises carried (4 and 3), 7
+unkeyed omitted. Errata 2943–2963 (21 entries): five corrected with a
+Source note and a decisions entry (the Mendeleev caption; "14 columns";
+purines "which contain oxygen"; the glossary's representative element as
+columns 12–18; oxyanions as polyatomic "ions"), three kept with a Source
+note (Tacke and Noddack's "discoveries"; the bracket rule; the group-number
+rule for charges), six typos, four source alt texts, and three kept as
+printed (the glossary's "hydrate", the polyatomic table's stale `summary`
+attribute, and the "molecular" answer to a "covalent" stem). Nine more
+claims were reviewed and are not errata. No key was corrected and none
+disputed: the solver agreed on 75 of 78, with three also-defensible
+answers (noble gas as "inert gas", chalcogen as "oxygen group", selenide as
+"selenide ion"), each already in the item's accept list.
+
+### What each reading found
+
+| Reading | Found | Would another have found it? |
+|---|---|---|
+| Parent's hand probe, before the wave | four gate gaps on the page's real stems (below) | no: bare source stems passed |
+| Checkers (2) | every key confirmed; 2.5: a hint with "instead" on a two-option item, a chalcogen accept without the module's "oxygen group", two fillers keyed on words the stems use as tools; 2.6: a shared hint wrong for one exception, a photo alt that coloured the dish when the flame glowed | the hints: the fix checker, in part |
+| Claim pass | 11 claims: 5 corrected, 3 kept with a Source note, 3 not errata | no |
+| Consistency reader | 15 findings: a footer that named both filler keys (hard); two stale "later section" sentences on 2.3; four forms of one filler and three closings of one stem; footer vocabulary; straight quotes among curly ones | the footer: the checker, once; the rest, no |
+| Rendered-page reader | 0 wrong, 3 misleading, 2 cosmetic: Unicode charges and subscripts a few pixels tall; the periodic table's names unreadable at its size, with no way to enlarge it; the nuclide stem's `^14_6C` beside a field guide that says a charge follows `^` | no |
+| Fix checker | 4 changes (a hint's "above" pointing at the wrong figure; a selenide hint that gave the ion's sign; a Source note that credited "IIIA" to a page that never prints it; a footer count that told how many of four were covalent) and 2 judgment calls | no |
+| Blind solve | 75 agree, 0 disagree, 3 also-defensible; the notes pointed at the lightest alkali metal in the 2.39 hint | the hint: no |
+
+### Gates, tools, tests
+
+- **Four readings the source gates lacked**, found by the hand probe (55
+  items built on the pages' real stems) before the wave; all four are in
+  `keyed-units.test.mjs` ("a link, a second name, and a glossary alias").
+  A link's path was counted as stem words, so the unlettered 2.45 chlorides
+  read as no unit (the keys gate returned null, coverage "missing"):
+  `unlinked()` in `keyed-units.mjs`, used by `unitScore`,
+  `judgeKeyedUnit`, and the coverage page texts. A formula after a colon
+  ("…a charge of 3+: Al³⁺") was not a piece of the answer. A multiple
+  choice option that prints its second name in parentheses ("main-group
+  (representative) element") did not match the key "representative
+  element". The glossary's "(also, …)" alias ("molecular" for "covalent")
+  is now passed to the gate by its caller. On the real pages the keys gate
+  has 0 failures (7,072 confirmed; prose-keyed unchanged at 367) and
+  coverage 4,213 of 4,213.
+- **The leak lint's formula fold** (`lints-leaks.mjs`, with a test): the
+  directly-above lint read "(NH₄)₂CO₃" as printing the key "NH₄⁺", because
+  its normalization drops the charge. A formula-form key now counts as
+  printed only where its own characters are. Without it 2.6 did not verify.
+- **The formula grader's two new messages** (`check-chem.mjs`, with a unit
+  test): an ion typed without its charge ("An ion’s symbol ends with its
+  charge…") and a nuclide without its mass number ("…carries its mass
+  number…", "as in 14C", the stems' own wording, after the consistency reading). The status stays
+  incorrect. This is shipped JavaScript.
+- **A browser test that types a formula** (`browser-check.spec.mjs`): Se²⁻
+  and (NH₄)₂SO₄ on 2.6, because the grader's JavaScript changed.
+- **Edits on finished pages:** 2.3's body sentence and footer now name
+  "the periodic table in Section 2.5 The Periodic Table" (no item touched);
+  2.4's footer says "formula text-recall items".
+- Pins 788 to 790 and chemistry 10 to 12 (`openstax-source.test.mjs`);
+  the landing gained two bullets, the cover says "last section being
+  written"; the claim-pass ledger's row reads 6 of 7.
+
+### Rulings, now in the playbook
+
+A corrected or annotated claim gets an italic Source note directly after
+its paragraph, or after the figure or table the paragraph introduces, and
+a one-clause footer entry; a note never states a key. A two-option filler
+only where the module prints exactly two terms of the kind; one filler
+stem form per page. An element or ion item closes "Enter the element’s
+symbol." or "Enter the ion’s name."; "Select …" closes an item only where
+two items of one part share stem and form. A hint shared across a part set
+may name every table the set needs, and is tested, key covered, on every
+member, including the exceptions the module names. A hint may name Appendix
+A in plain words; a hint that sends the learner to read a name or mass in
+the periodic-table figure also names Appendix A. A filler is never keyed on
+a word the page’s stems or hints use as a tool word; "what X used and what
+replaced it instead" is forbidden as a hint on a two-option item. An
+`accept` member is only a form the module itself prints. A sentence
+answer that holds symbols among its words is a formula text-in per symbol,
+then one self-check with the source's answer whole. A key in the
+glossary's other word for an option, and an option the stem prints with
+its second name in parentheses, are read by the gate. Footer vocabulary:
+"formula text-recall items", "text-recall items". Curly quotes in prose.
+A photo alt’s colour claim needs a zoom of the exact object. The kit
+gained, in `run.md`, a grep for "not yet on this site" at each run.
+
+### What the process got wrong
+
+- The parent's first probe used bare source stems; the four gate gaps
+  showed only with the pages' real stems (a link, an added sentence).
+- Run-facts decision 13 called the polyatomic table's stale `summary`
+  "not an erratum", and the parent's own list for the errata clerk then
+  named it as one. It is one, and is logged (2962); the decision's words
+  were wrong.
+- Decision 14 invited fillers for 2.5's first objective when two keyed
+  exercises served it; the checker caught it, and the parent ruled the two
+  exercises under that objective and deleted the two glossary text-ins.
+- The parent's Source note for 2.6 credited "IIIA" to Section 2.5, which
+  never prints it; the fix checker caught it.
+- A hint edit after the solve was snapshotted before the run's records
+  were merged, so `ledger-carry plan` carried nothing and four hashes were
+  remapped by script. Merge author and solve results before any post-solve
+  snapshot.
+- The usage limit killed the fix checker and the errata clerk mid-task;
+  both resumed by SendMessage.
+
+### Not acted on
+
+- Unicode charges and subscripts are drawn a few pixels tall in the body
+  font on every chemistry page (render F4); the options are a
+  `unicode-range` `@font-face` with `size-adjust` or render-time
+  `<sup>` and `<sub>`. Put to Derek.
+- No way to enlarge a dense diagram: the periodic table at 1x gets the
+  800-pixel variant, its names and masses a few pixels tall (render F1).
+  The hints that send a learner to it now also name Appendix A's table.
+  Put to Derek.
+- An element's name typed in a symbol field is told only that it does not
+  read as a formula, never that a symbol is wanted.
+- A formula typed without its parentheses (`NH42SO4`) is bare "incorrect".
+- The formula field's guide ("a charge after ^") sits beside the nuclide
+  stem's "^14_6C"; the guide is generic by design, and the items grade.
+- Exercise 2.47's ion-symbol items appear only after the ionic parts, so
+  they show which compounds are ionic; the playbook's shape, ruled to stand.
+
 ## The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under
@@ -670,3 +820,4 @@ the ban, with its page and line. The ban is reviewed from this list.
   inline. Readable on the rendered page (the rendered-page reader passed
   it); reported by the author under the watch.
 - Chapter 1 and the appendices reported none.
+- Sections 2.5–2.6 reported none: neither page prints a fraction.

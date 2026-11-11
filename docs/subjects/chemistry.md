@@ -160,7 +160,9 @@ these differences:
    table) needs no link to it. The footer says "the periodic table linked
    to Appendix A where an item needs it; the source links nothing there".
    A link is not a word of the stem: the source gates read the stem
-   without it.
+   without it (`unlinked`, `tools/lib/keyed-units.mjs`; a test holds it —
+   until 2.6 the path's six words counted, and an unlettered exercise
+   carried one member at a time fell under the floor).
 
 ## Exercises
 
@@ -197,6 +199,7 @@ The component follows the SHAPE of the source's keyed answer:
 | an answer by role for a reaction the stem prints ("Oxidized: Sn²⁺; reduced: H₂O₂; oxidizing agent: H₂O₂; reducing agent: Sn²⁺") | ONE `multiplechoice` per reaction whose options are the reaction's reactants, the stem closing with the one role it asks in the answer's own words ("Which reactant is the oxidizing agent?"). One item, not one per role: with two reactants the second role is the first one's remainder. Not a formula `textin`: the stem prints both candidates |
 | a charge ("4+") | `fillin` with `whole-number`, keyed as a signed number (`4`), the stem ending "Enter the charge as a signed number, the sign first, as +1 or −1." — the field reads a typed `4+` as unfinished arithmetic, and "with its sign" is a lint error ("Stems"). Proven through the gate for a cation (2.3's platinum ion); the source prints an anion's charge sign-last ("2−"), which the gate reads as 2, so the first negative one is probed before its wave |
 | two or more quantities ("5371 °F, 3239 K"; a range; a ratio) | one `fillin` per quantity, each stem saying which |
+| a sentence or two that hold symbols among their words ("Al will form a cation with a charge of 3+: Al³⁺, an aluminum ion. Carbon will form an anion with a charge of 4−: C⁴⁻, a carbide ion.") | a formula `textin` per symbol, each stem closing with a sentence that says whose ("Enter the symbol of the ion that carbon forms."), then ONE `selfcheck` with the source's stem and its answer whole — last, so its reveal does not hand over the keys. The gate reads a formula the answer introduces with a colon |
 | an explanation, a list, a description, "answers will vary" | `selfcheck` with the source solution as the model answer and a rubric |
 | a drawing | `selfcheck` with the figure in the model answer ("Figures") |
 
@@ -316,12 +319,27 @@ selfchecks, source defects, the footer — and each is stated once.
   and keys the stem's word; the footer names the difference and the
   inconsistency is an erratum. The section's own text must make the two
   words one (2.6 calls covalent compounds molecular compounds); where it
-  does not, the parent rules.
+  does not, the parent rules. The source gate reads the answer through the
+  module glossary's own "(also, …)" pairs (`glossaryAliases`), so such a
+  key is confirmed and a wrong one refused; a word the glossary does not
+  pair is a prose key, and the checker's to tick. **An option the stem
+  prints with its second name in parentheses** — 2.5's "main-group
+  (representative) element", answered "representative element" — is
+  written as the stem writes it and is named by either name.
 - **A count is asked before the quantity it counts.** The grader's own
   feedback names the count ("now round it to 2 significant figures"), so a
   "how many significant figures can you justify" item goes first.
 - **A multiple-choice stem ends with its punctuation** (read by the
   checker; no lint holds it).
+- **The closing sentence of a name or symbol item says whose**: "Enter the
+  element’s name." and "Enter the element’s symbol." for an element;
+  "Enter the ion’s symbol.", "Enter the ion’s name.", "Enter the symbol of
+  the cation." for an ion *(chapter 2; 2.3's earlier "Name the element."
+  stands)*. Where one part is carried as two multiple choices under one
+  stem (2.5: metal or nonmetal, then the further classification), each
+  closes with a sentence that says which — "Select metal or nonmetal.",
+  "Select the further classification." A classification followed by
+  formula items (2.6) needs none: its options say which.
 - **A keyed exercise whose answer comes from a linked simulation** is a
   `selfcheck` with the source's answer as the model answer; the link stays
   in the question.
@@ -389,6 +407,19 @@ selfchecks, source defects, the footer — and each is stated once.
     if the heading names at least one other option too — a heading may
     narrow the choice, never make it (no lint: the heading-word lint reads
     `textin` only).
+  - **A two-option select-the-term item** stands only where the module's
+    sentence or list prints exactly two terms of the kind (atomic masses
+    and atomic numbers; ionic and covalent bonds); otherwise the options
+    are three to five. The stem either quotes the module's sentence after
+    "Which … does the following statement describe?" or asks a direct
+    "Which …?" question — one form on a page.
+  - **Never a working word of the page's own stems.** A glossary recall
+    keyed `group` or `period` on the page whose source stems say "the
+    following group" and "in the same period as" is answered by the items
+    around it *(chapter 2, Section 2.5: both were deleted, and the keyed
+    exercises that exercise the objective were moved under it instead)*.
+    Before adding a filler to an objective, ask whether a keyed exercise
+    placed elsewhere serves that objective at least as well.
   - **A blank followed by its head noun** ("an ________ property") lists
     the phrase with the noun in `accept`, since a learner may type both
     words.
@@ -427,7 +458,20 @@ after the rule was written, so the line is drawn by pairs:
   case (1.3's body classifies steam and sugar itself).
 - A hint never sends the learner to a table that lacks the answer (1.4's
   area item pointed at the table of base units, which has no area unit).
-- Several items may share one hint.
+- Several items may share one hint — and **a shared hint is read, key
+  covered, against every item it serves**, the module's own named
+  exceptions first *(chapter 2: "ask whether a metal is combined with
+  nonmetals" gave covalent for (NH₄)₂CO₃, which is ionic)*. A hint shared
+  across the parts of one exercise may name every table the set needs
+  ("the periodic table and the table of common polyatomic ions"); it is
+  never split by which part needs which table, since the split tells.
+- **On a two-option item a hint never says what one option was replaced
+  by, used before, or is "instead"** — "what Mendeleev's table was
+  arranged by, and what the relationship was found to involve instead"
+  marks the wrong option, which is the key by elimination.
+- **A hint that sends the learner to read small print in a figure** (a
+  name or an atomic mass in a box of the periodic table) also names the
+  appendix table that lists it, in plain words.
 - **The lint sees two shapes of this rule and no more** — a hint that opens
   with an arithmetic imperative (multiply, divide, add, subtract, cube,
   square), and a verdict on the number's digits — on every auto-graded
@@ -485,7 +529,13 @@ after the rule was written, so the line is drawn by pairs:
 - **A body fact corrected against an outside source** is printed corrected,
   with an italic `*Source note:*` paragraph directly after the corrected
   paragraph that says what the source prints and cites the authority — or
-  directly after the figure, when the paragraph introduces one.
+  directly after the figure or table, when the paragraph introduces one. A
+  corrected Key-terms definition takes its note directly after the list.
+  **A claim that is loose rather than wrong keeps the source's words and
+  takes a Source note that says what is missing** (2.5: "one of their
+  discoveries" of Tacke and Noddack, of whose two reported elements one
+  was confirmed; a rule for bracketed atomic masses that the page's own
+  table shows three exceptions to).
 - **A Source note beside an unanswered item never lets the key be worked
   out**: no source value, no arithmetic, no direction of the error ("the
   product truncated rather than rounded" told the learner to round up).
@@ -502,6 +552,10 @@ after the rule was written, so the line is drawn by pairs:
   corrected"). An added item is named by where its sentence is ("a cloze on
   the Summary sentence that defines weight"), never "(blank: gravity)"
   (lint) and never a quoted sentence that contains the answer.
+- **One phrase per kind of item**: "multiple-choice items", "fill-in
+  items", "text-recall items", "formula text-recall items", "self-checks".
+- **Which objective a keyed exercise is placed under is the page's
+  structure, not a departure**, and takes no clause.
 - It names every departure from the source in one clause each: restated
   lead-ins, a datum added to a stem, a dropped cross-reference, an alt
   rewritten against a wrong source alt, a Key equation set in the body's
@@ -677,6 +731,8 @@ read in the book's print as the learner types ("Read as: SO₄²⁻").
 | `nacl`, `NACL` | `NaCl` | form | "Those are the right letters — now fix the capitals…" |
 | `Co` | `CO` | incorrect | |
 | `SO4^2-`, `SO42-`, `SO4-2`, `SO₄²⁻` | `SO₄²⁻` | correct | |
+| `SO4`, `Se`, `NH4` — the right atoms, no charge | `SO₄²⁻`, `Se²⁻`, `NH₄⁺` | incorrect | "An ion’s symbol ends with its charge: type it after the symbol, as in Ca2+ or Cl-." A wrong charge, or other atoms, gets no message *(chapter 2, Sections 2.5–2.6: a bare "incorrect" sent the learner back to atoms that were right)* |
+| `Na`, `Cs+` — the right element, no mass number | `²³₁₁Na`, `¹³³Cs⁺` | incorrect | "A symbol for one isotope carries its mass number: type it before the symbol, as in 14C." |
 | `FeCl3.2H2O`, `FeCl3*2H2O`, `FeCl₃·2H₂O` | `FeCl₃·2H₂O` | correct | |
 | `2Na + 2H2O -> 2NaOH + H2`, the species in any order within a side, with or without state symbols, `=` or `→` for the arrow | the equation above | correct | |
 | `4Na + 4H2O -> 4NaOH + 2H2` | | form | "That is balanced — now write it with the smallest whole-number coefficients." |
@@ -1017,9 +1073,14 @@ Still open:
   (chapter 6), for a condensed structural formula (chapter 20), and for a
   nuclear equation (chapter 21) — each a `selfcheck` until its chapter
   settles it ("Formulas and equations");
-- a browser test that types a formula and an equation into the real field:
-  the grader, the lint, and the gates are unit-tested, and chapter 2's
-  first page is the first place the suite can type one;
+- a browser test that types an EQUATION into the real field (chapter 4 is
+  the first page with one). A formula is typed now: the suite types an ion
+  and a grouped formula into 2.6's fields and reads the "Read as" line and
+  the grader's message *(chapter 2, Sections 2.5–2.6)*;
+- Unicode superscripts and subscripts are drawn small by the body font — a
+  lone ⁻ is two or three pixels on a standard screen — and a dense diagram
+  (the periodic table) has no way to be enlarged. Both are site-wide
+  presentation questions, put to Derek after Sections 2.5–2.6;
 - a long table's header row scrolls out of view (Appendix G is 403 rows):
   the theme sets a table `display: block`, so a sticky header needs a
   table render hook, which would change every table on the site.

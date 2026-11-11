@@ -78,6 +78,26 @@ test('accept members, math, quotations, gene symbols, footers, and non-chemistry
 
 // ---- the "directly above" leak -------------------------------------------------
 
+test('an ion key is not printed by the neutral formula that holds it (Chemistry 2.6)', () => {
+  const formulaTextin = (question, answer) => `{{< textin\n  question="${question}"\n  answer="${answer}"\n  answerForm="formula"\n  hint="Reread the first subsection."\n>}}`;
+  const stem = 'For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: (NH₄)₂CO₃.';
+  const DIRECT = /directly above it/;
+  // The stem prints (NH₄) inside the compound; the key is the ion, with its charge.
+  assert(!hasError(practice(
+    mc(stem, 'ionic', ['ionic', 'covalent']),
+    formulaTextin(`${stem} Enter the symbol of the cation.`, 'NH₄⁺'),
+  ), DIRECT, CHEM));
+  // A neutral formula the item above prints whole is still a leak.
+  assert(hasError(practice(
+    mc('Is (NH₄)₂CO₃ made of ions? The cation is NH₄⁺.', 'yes', ['yes', 'no']),
+    formulaTextin('Enter the symbol of the ammonium ion.', 'NH₄⁺'),
+  ), DIRECT, CHEM));
+  assert(hasError(practice(
+    mc('Is Na₂S ionic or covalent?', 'ionic', ['ionic', 'covalent']),
+    formulaTextin('Predict the formula of the compound of the sodium cation and the sulfide anion.', 'Na₂S'),
+  ), DIRECT, CHEM));
+});
+
 test('the A&P chapter 1–2 "directly above" leaks are errors', () => {
   // 1.7: the multiple choice directly above the X-ray textin prints "X-rays" in its stem.
   assert(hasError(practice(

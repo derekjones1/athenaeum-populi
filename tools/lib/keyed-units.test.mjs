@@ -7,7 +7,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  KEYED_ONLY_BOOKS, answerText, keyedUnits, plain, printedNumerals, sequentialParts, unitFor, unitScore,
+  KEYED_ONLY_BOOKS, answerText, glossaryAliases, keyedUnits, plain, printedNumerals, sequentialParts, unitFor, unitScore, unlinked,
 } from './keyed-units.mjs';
 import { parseXml } from './openstax-source.mjs';
 import { judgeKeyedUnit, pageItems } from '../verify/verify-source-keys.mjs';
@@ -478,6 +478,54 @@ the oxygen atom sits between the two carbon atoms
   assert.equal(judgeKeyedUnit(ether('Q9b', source), named).status, 'reworded');
   assert.equal(judgeKeyedUnit(ether('Q9a', source), named).status, 'key-differs', 'the sibling part\'s drawing');
   assert.equal(judgeKeyedUnit(ether('Q9b', 'Ethyl methyl ether.'), named).status, 'diverges', 'the source\'s name is not carried');
+});
+
+test('a link, a second name, and a glossary alias do not hide a unit or its key (2.5, 2.6)', () => {
+  const glossary = '<glossary><definition id="g1"><term>covalent compound</term><meaning id="g1m">(also, molecular compound) composed of molecules</meaning></definition>'
+    + '<definition id="g2"><term>main-group element</term><meaning id="g2m">(also, representative element) element in groups 1, 2, and 13–18</meaning></definition></glossary>';
+  const xml = cnxml(exercises(
+    exercise('k1', ['Using the periodic table, predict whether the following chlorides are ionic or covalent: KCl, NCl<sub>3</sub>, ICl, MgCl<sub>2</sub>, PCl<sub>5</sub>, and CCl<sub>4</sub>.'],
+      'Ionic: KCl, MgCl<sub>2</sub>; Covalent: NCl<sub>3</sub>, ICl, PCl<sub>5</sub>, CCl<sub>4</sub>'),
+    exercise('c1', ['Using the periodic table, classify each of the following elements as a metal or a nonmetal, and then further classify each as a main-group (representative) element, transition metal, or inner transition metal:', '(a) uranium', '(b) bromine'],
+      '(a) metal, inner transition metal; (b) nonmetal, representative element'),
+    exercise('m1', ['Using the periodic table, predict whether the following compounds are ionic or covalent:', '(a) SO<sub>2</sub>', '(b) CaF<sub>2</sub>'], '(a) molecular; (b) ionic'),
+    exercise('a1', ['Aluminum and carbon react to form an ionic compound. Predict which forms an anion, which forms a cation, and the charges of each ion. Write the symbol for each ion and name them.'],
+      'Al will form a cation with a charge of 3+: Al<sup>3+</sup>, an aluminum ion. Carbon will form an anion with a charge of 4−: C<sup>4−</sup>, a carbide ion.'),
+  )).replace('</content>', `</content>${glossary}`);
+  assert.ok(xml.includes('<glossary>'), 'the fixture carries its glossary');
+  const units = keyedUnits(xml);
+  const aliases = glossaryAliases(xml);
+  assert.deepEqual(aliases, [['covalent', 'molecular'], ['main group', 'representative']]);
+  const mc = (question, answer, options) => judgeKeyedUnit({ type: 'multiplechoice', question, answer, options }, units, { aliases }).status;
+  // The link's path is not the stem's words: one chloride of six, linked, is still its exercise.
+  const table = '[periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)';
+  assert.equal(unlinked(`Using the ${table}, predict`), 'Using the periodic table, predict');
+  assert.equal(mc(`Using the ${table}, predict whether the following chloride is ionic or covalent: KCl.`, 'ionic', ['ionic', 'covalent']), 'confirmed');
+  assert.equal(mc(`Using the ${table}, predict whether the following chloride is ionic or covalent: CCl₄.`, 'ionic', ['ionic', 'covalent']), 'key-differs');
+  const linkedPage = ['KCl', 'NCl₃', 'ICl', 'MgCl₂', 'PCl₅', 'CCl₄'].map((member) => `{{< multiplechoice question="Using the ${table}, predict whether the following chloride is ionic or covalent: ${member}." answer="ionic" hint="h" >}}\nionic\ncovalent\n{{< /multiplechoice >}}\n`).join('\n');
+  assert.equal(coverage(linkedPage, sourceExercises(xml), { keyedOnly: true }).find((verdict) => verdict.id === 'k1').status, 'rendered', 'the coverage gate reads the linked stem too');
+  // An option that prints its second name in parentheses is named by either name.
+  const classify = 'Using the periodic table, classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal:';
+  const further = ['main-group (representative) element', 'transition metal', 'inner transition metal'];
+  assert.equal(mc(`${classify} bromine. Select the further classification.`, 'main-group (representative) element', further), 'confirmed');
+  assert.equal(mc(`${classify} bromine. Select the further classification.`, 'transition metal', further), 'key-differs');
+  assert.equal(mc(`${classify} uranium. Select the further classification.`, 'inner transition metal', further), 'confirmed');
+  assert.equal(mc(`${classify} uranium. Select the further classification.`, 'transition metal', further), 'key-differs');
+  assert.equal(mc(`${classify} uranium. Select metal or nonmetal.`, 'metal', ['metal', 'nonmetal']), 'confirmed');
+  assert.equal(mc(`${classify} bromine. Select metal or nonmetal.`, 'metal', ['metal', 'nonmetal']), 'key-differs');
+  // An answer in the glossary's other word for an option: "molecular" keys "covalent".
+  const predict = `Using the ${table}, predict whether the following compound is ionic or covalent:`;
+  assert.equal(mc(`${predict} SO₂`, 'covalent', ['ionic', 'covalent']), 'confirmed');
+  assert.equal(mc(`${predict} SO₂`, 'ionic', ['ionic', 'covalent']), 'key-differs');
+  assert.equal(mc(`${predict} CaF₂`, 'ionic', ['ionic', 'covalent']), 'confirmed');
+  assert.equal(judgeKeyedUnit({ type: 'multiplechoice', question: `${predict} SO₂`, answer: 'ionic', options: ['ionic', 'covalent'] }, units).status, 'prose-key',
+    'without the glossary the word names no option');
+  // A formula the answer introduces with a colon.
+  const ions = 'Aluminum and carbon react to form an ionic compound. Predict which forms an anion, which forms a cation, and the charges of each ion. Write the symbol for each ion and name them.';
+  const symbol = (question, answer) => judgeKeyedUnit({ type: 'textin', question, answer, form: 'formula' }, units).status;
+  assert.equal(symbol(`${ions} Enter the symbol of the ion that aluminum forms.`, 'Al³⁺'), 'confirmed');
+  assert.equal(symbol(`${ions} Enter the symbol of the ion that carbon forms.`, 'C⁴⁻'), 'confirmed');
+  assert.equal(symbol(`${ions} Enter the symbol of the ion that carbon forms.`, 'C⁴⁺'), 'key-differs');
 });
 
 test('answers that hold several choices at once are read for the one a multiple choice asks', () => {

@@ -44,6 +44,17 @@ experiment's or today's?); a sum printed to more figures than its rounded
 terms carry. For each, say whether the page's own data reproduce the
 printed value: one that does is a convention the parent may keep.
 
+**Five more, from Sections 2.5–2.6:** a glossary range against its
+synonym's entry and the body ("12–18" beside "13–18"); a caption that says
+"the first …" against the date the image itself shows (read the picture
+for its values, and the credit's file title); a discovery credited in the
+plural (each element against its accepted discoverer); a rule given as the
+reason for "most" (test it on the page's own table for the exceptions);
+and a count or an "and so on" in prose against the figure beside it (14
+columns under a figure of 15; "a charge equal to the group number" under
+a figure that shows Al³⁺ in group 13). A body definition is also read
+against the glossary's definition of the same bold term.
+
 ## Evidence rules
 
 1. **The same book first:** another module of

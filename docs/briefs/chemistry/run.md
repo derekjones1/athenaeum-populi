@@ -48,7 +48,11 @@ cannot resume the old session's ids. Five things the pilot added:
   `node tools/verify/ledger-carry.mjs snapshot content > $SP/ledger-before.json`;
   after it, `ledger-carry.mjs plan` carries what the solver's answer still
   covers and lists what must be re-solved. A round run without the
-  snapshot is paid for with a remap script or a second solve.
+  snapshot is paid for with a remap script or a second solve. **Merge the
+  run's author results and solve results first**: `plan` carries ledger
+  records, and before the merge the run's items have none *(Sections
+  2.5–2.6: a snapshot taken before the merge carried nothing, and four
+  hashes were remapped by script)*.
 - **Fixers are told which edits change a hash honestly**: "list every item
   you touched, hint-only ones too". The pilot's brief said a hint-only edit
   kept its hash, and one fixer filed 9 results for 46 re-hashed items.
@@ -72,6 +76,16 @@ Sections 2.1–2.4"):
   drawing, a varying answer given part by part) were found this way while
   the authors were still working, and each was a gate taught a form, with
   a test, before its page's checker reported.
+- **A run that lands a section re-reads the earlier pages' placeholders
+  for it** *(Sections 2.5–2.6)*: `grep -rn "not yet on this site\|later
+  section of this chapter" content/physical-sciences/chemistry` — 2.3 said
+  "the periodic table in a later section" and its footer gave the reason
+  "not yet on this site" until 2.5 landed. The parent corrects those.
+- **The hand-built probe items of step 6a carry the page's real stems** —
+  the link, the added sentence, the closing sentence — not the bare source
+  stem. Four gate gaps of 2.5–2.6 showed only that way: a link's path
+  counted as stem words, a formula after a colon, an option that prints
+  its second name in parentheses, an answer in the glossary's other word.
 - **A parent who edits an item files its record.** After the fix check the
   parent applied exact old→new text itself; `rebuild-ledger-results.py`
   then stops ("N stale — map by hand"). Drop the stale hashes from the
@@ -323,6 +337,12 @@ half hours of wall time): authors 200–295k tokens each across three
 rounds; checkers 150–210k; claim pass 175k; consistency reader 210k; three
 rendered-page readers 135–180k; fix checker 165k; blind solver 127k; two
 clerks 80k and 150k.
+
+Chapter 2, Sections 2.5–2.6 (two sections, 79 items, about two hours of
+work): authors about 265k tokens each across three rounds; checkers 178k
+each; claim pass 119k; consistency reader 224k; one rendered-page reader
+for both pages 233k; fix checker 139k; blind solver 103k; four clerks 53k
+to 139k.
 
 Chapter 1, six sections, measured where known:
 
