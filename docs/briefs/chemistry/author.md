@@ -220,7 +220,12 @@ goes wrong.
   several items is read, key covered, against EVERY one of them**, the
   module's named exceptions first ("ask whether a metal is combined with
   nonmetals" gave covalent for (NH₄)₂CO₃); on a two-option item a hint
-  never says what one option was replaced by or is "instead".
+  never says what one option was replaced by or is "instead". A table the
+  item needs that another section prints is named with its section, in
+  plain words ("the table of common polyatomic ions in Section 2.6 Ionic
+  and Molecular Compounds"); where the module names one substance two
+  ways by its state, the hint names the subsection whose rule decides,
+  never the observation that decides it.
 - **A colour or position in a photograph's alt** is read off a zoom of the
   exact object, not its neighbourhood (chapter 2: "the dish glows orange"
   was the flame beside a dish that stays silver).
@@ -252,7 +257,10 @@ goes wrong.
   defect: report it, do not repair it silently. An ion's NAME is keyed
   bare (`selenide`) with the two-word form in `accept` (`selenide ion`);
   a name the stem itself prints ("ferric nitrate" in "give the IUPAC name
-  of ferric nitrate") is never an `accept` member; a nuclide symbol is
+  of ferric nitrate") is never an `accept` member, and neither is a name
+  the module prints as out of date ("was known as ferrous chloride"); a
+  wrong name gets no message from the grader, so the hint of an item that
+  refuses one says what form the name takes; a nuclide symbol is
   keyed in print with every number the source prints (`²³₁₁Na`; the
   field then asks for both, and its stem ends "Type the mass number,
   then the atomic number after an underscore, before the symbol:

@@ -253,7 +253,7 @@ export function checkFormula(input, answer, { accept = '' } = {}) {
     if (keys.some((member) => flatLetters(member) === flatLetters(input))) {
       return { status: 'form', message: 'Those are the right letters — now fix the capitals: an element’s symbol is one capital letter, or a capital and a small letter.' };
     }
-    return { status: 'incorrect', message: 'That does not read as a formula. Type element symbols with their capitals and subscripts as plain numbers, like Mn3(PO4)2.' };
+    return { status: 'incorrect', message: 'That does not read as a formula. Type element symbols with their capitals and subscripts as plain numbers, like Ca3(PO4)2.' };
   }
   const matched = readings.flatMap((reading) => keyReadings.filter((key) => key.canon === reading.canon).map((key) => ({ reading, key })));
   if (matched.length) {

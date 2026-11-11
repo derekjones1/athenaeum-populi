@@ -4588,6 +4588,14 @@
    "verdict": "ok",
    "note": "source fs-id2253367, solution fs-id1707039 verbatim as model answer"
   },
+  "09374b9a312b20b9": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm194224 part (e); key FeCl₃·2H₂O — round 3: dot example changed to Na2CO3.10H2O (F3)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "093a16190e0fbceb": {
    "verdict": "ok",
    "note": "textin re-read against m46355 CNXML and page text; key \"ramus\" — The infratemporal fossa is located below the zygomatic arch and deep to the ____",
@@ -4964,6 +4972,14 @@
     "result": "agrees"
    }
   },
+  "09f85bcbcd6bb86e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp279515392 part (b); key iron(II) chloride",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "09fa13ab7bdbf5e3": {
    "verdict": "ok",
    "note": "cloze enteric from fs-id2101505",
@@ -5128,6 +5144,14 @@
    "note": "Review Question eip-736; source solution A 'Sweating for evaporative cooling.' matches the keyed answer. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "0a617458641191cc": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm194224 part (c); key Mn₃(PO₄)₂",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -12653,6 +12677,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "1966f6b16dee0f73": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268321696 part (f); key SiO₂",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1968d003e0cfe21d": {
    "verdict": "ok"
   },
@@ -16952,6 +16984,14 @@
     "result": "agrees"
    }
   },
+  "2220b9087fc8bab8": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268310912 part (e); key copper(II) bromide — round 3: shared hint revised (F1/F2)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2223a8e7d76f8f73": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -18788,6 +18828,14 @@
   "2629beb34bb5e065": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "262a4d4f4cbd5d27": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm250352 part (b); key MgSe",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -25446,6 +25494,14 @@
    "verdict": "ok",
    "note": "TI3: f(x)=(10x+11)/(5x+4), quotient-rule derivative simplifies to -15/(5a+4)^2; confirmed numerically at a=2: node central-difference -0.076530612 vs -15/(14)^2=-0.076530612. Matches source Try It solution."
   },
+  "3443ef95b0956935": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268365168 part (c); key CaCl₂ — round 3: shared hint revised (F1/F2)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "344422db8231bcf0": {
    "verdict": "ok",
    "note": "source exercise fs-idp358584288 part (c); key 2.08 from solution fs-idp42820064; recomputed (214776, 4166200, 2.07669, 0.186737, 27439.7393, 42.959) [Filed by the author under an earlier hash of this item; carried by the orchestrator after a round-3 edit that changed no key (a hint, a stem period, a datum added to a stem).]",
@@ -27480,6 +27536,14 @@
   "38a90cbab4f9d267": {
    "verdict": "ok",
    "note": "KC 4 21.1 § Functions of the Lymphatic System, m46563",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "38ab1165ffe7ff1f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm250352 part (d); key CaCl₂",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -30053,6 +30117,14 @@
     "result": "agrees"
    }
   },
+  "3e298f5b144a8069": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm206240 part (a); key PCl₅",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3e2f117e2d6457d9": {
    "verdict": "ok",
    "note": "glossary recall: hypha (fs-idm44074976) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -31402,6 +31474,14 @@
   "40a7dcf40fb3d528": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "40adc4d32f50750d": {
+   "verdict": "ok",
+   "note": "glossary recall: oxyacid (definition fs-idp282228224)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "40af9a4f62e7508d": {
    "verdict": "ok",
@@ -34173,6 +34253,14 @@
     "result": "agrees"
    }
   },
+  "467241d4c9065e32": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268310912 part (d); key titanium(IV) chloride — round 3: shared hint revised (F1/F2)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "467bac405f54f67d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -34406,6 +34494,14 @@
   "470eb5b2e0ca5346": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "470fa7c551e3792d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268365168 part (e); key NH₄NO₃ — round 3: shared hint revised (F1/F2)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -34934,6 +35030,14 @@
   "4853ea5d89b5a82b": {
    "verdict": "ok",
    "note": "RQ fs-id2105019 key C tuberculosis; fs-id2673661",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "48544729e0dba600": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm250352 part (e); key HF",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -39645,6 +39749,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "526cb12124ab15cd": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp282297472 part (b); key barium oxide",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "52733edff586d74c": {
    "verdict": "ok",
    "note": "summary cloze, fs-id1853731 sentence 1; key printed in body (box fs-id1350098 'immunological memory')",
@@ -40749,6 +40861,14 @@
   "54b236b405eec9cc": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "54b32ec17e2d08e3": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268321696 part (a); key ClO₂",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -43378,6 +43498,14 @@
    "note": "glossary recall: genetic drift (fs-idm72605376) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "5a3e23c792c00f39": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm194224 part (d); key Cu₂O",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -51234,6 +51362,14 @@
     "result": "agrees"
    }
   },
+  "6cbf9d2368ccb159": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp282297472 part (f); key aluminum fluoride",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6cc2ebfc94b07255": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -52623,6 +52759,14 @@
    "note": "multiplechoice, Review Question 2 (CNXML exercise fs-id1770002). Options/order and keyed answer 'the movement of hydrogen ions across a mitochondrial membrane' (SOLUTION: C) match source verbatim; confirmed against the Chemiosmosis section text. The 'hydrogen atoms' distractor is not independently true — the section specifies ions (protons), not neutral atoms, cross the membrane. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "6fd78e67147c4380": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp282297472 part (d); key beryllium chloride",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -55449,6 +55593,14 @@
     "result": "agrees"
    }
   },
+  "75b627660f462ff9": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm194224 part (b); key HgS",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "75b7018ad2874aeb": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -55570,6 +55722,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver-B",
+    "result": "agrees"
+   }
+  },
+  "75f6abf76f787762": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm194224 part (a); key CrP",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -57048,6 +57208,14 @@
   "7924c15350e303d8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "79259e8c58638ead": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268365168 part (f); key NaHSO₄ — round 3: shared hint revised (F1/F2)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -59754,6 +59922,14 @@
     "result": "agrees"
    }
   },
+  "7e73c6873463e1fa": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268310912 part (a); key manganese(IV) oxide — round 3: shared hint revised (F1/F2)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7e774cb59c94d47d": {
    "verdict": "ok",
    "note": "glossary recall fs-id2142844; body fs-id2614547",
@@ -60092,6 +60268,14 @@
   "7f26b1b91d52581c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "7f2a45b2ea219983": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp282297472 part (a); key cesium chloride",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -62533,6 +62717,15 @@
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
+   }
+  },
+  "846717506db208a0": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp282297472 part (e); key hydrogen bromide | Section 2.7, after the blind solve: \"hydrobromic acid\" added to accept on the solver's also-defensible note (the solver's own answer is the key); parent ruling, November 10, 2026",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "The solver's answer is the key, the source's own (fs-idp282297472(e), \"hydrogen bromide\"). The second name is the module's name for the same formula in water (table fs-idp272649888: HBr(aq), hydrobromic acid), and the stem prints no state, so it cannot refuse it: by the playbook's name row (a second name the module prints for the compound, which the stem does not print) \"hydrobromic acid\" becomes an accept member. This overturns parent decision 5; four readings (author, checker, consistency reader, solver) had raised it."
    }
   },
   "846c2cf176f21f65": {
@@ -76272,6 +76465,14 @@
     "result": "agrees"
    }
   },
+  "a22d4b080cf93978": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm250352 part (h); key (NH₄)₂SO₄",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a22edced288d968f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -76824,6 +77025,14 @@
   "a32d473086280c0a": {
    "verdict": "ok",
    "note": "Microbiology 12.1 source CYU selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the blue-white screening and lacZ reporter-gene paragraphs)"
+  },
+  "a3361dc97e242e50": {
+   "verdict": "ok",
+   "note": "glossary recall: binary acid (definition fs-idp282291040)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "a33f8e6fd62e557a": {
    "verdict": "ok",
@@ -82251,6 +82460,14 @@
     "result": "agrees"
    }
   },
+  "aefc9e7f20244d11": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm250352 part (f); key GaP",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "aefdbe22a91f7557": {
    "verdict": "ok",
    "note": "glossary recall: stereoscopic vision (fs-idp25272592) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -83324,6 +83541,14 @@
     "by": "orchestrator-solver",
     "result": "adjudicated",
     "note": "key stands: m58859 \"such as tapeworms treated with niclosamide, or for decontaminating the bowel, as with colistin\" — the module ties bowel decontamination to colistin only; niclosamide is its intestinal-tapeworm example"
+   }
+  },
+  "b19c6a0bf53e29b9": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm250352 part (g); key AlBr₃",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
    }
   },
   "b19da5893129b09a": {
@@ -85671,6 +85896,14 @@
   "b67dc1464caa02d0": {
    "verdict": "ok",
    "note": "Using the same table: f(1)=6, then f(6)=2, so f(f(1))=2, matching the declared answer. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "b67eed1283f0acac": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm206240 part (c); key IF₇",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "b686751cc89fbf45": {
    "verdict": "ok",
@@ -88104,6 +88337,14 @@
    "verdict": "ok",
    "note": "KC 7 38.2 § body Thickening of Long Bones (fs-idm166160432), m66638 — parent re-read against the module"
   },
+  "bb8ae30eb947404e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268321696 part (e); key AlF₃·3H₂O (source prints AIF₃·3H₂O, capital I for l; corrected per run-facts decision 3) — round 3: dot example changed to Na2CO3.10H2O (F3)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "bb92ed4ce89cf3b2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -89708,6 +89949,14 @@
   "bedb6f097754c28c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "bedf6b91caf26f8e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268321696 part (b); key N₂O₄",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -94211,6 +94460,14 @@
     "note": "Key 27 stands: the m81256 solution reads \"Jenna uses 26 pairs of contact lenses, but there is 1 day left over, so she needs 27 pairs for 365 days\"; 26 leaves day 365 uncovered."
    }
   },
+  "c8ecb371e40d37c8": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp282297472 part (c); key potassium sulfide",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c8f592f244a339c3": {
    "verdict": "ok",
    "note": "Glossary textin: answer 'homeostasis' matches glossary term; meaning ('dynamic equilibrium maintaining appropriate body functions') is the prompt. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -94730,6 +94987,14 @@
   "c9e925de161ef266": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c9edfac2a651f824": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268365168 part (d); key TiO₂ — round 3: shared hint revised (F1/F2)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -96896,6 +97161,14 @@
     "result": "agrees"
    }
   },
+  "ce95188c8148784b": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm206240 part (b); key N₂O",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ce9a1c6bc56c6110": {
    "verdict": "ok",
    "note": "KC 2 10.1 § summary (fs-id2097179, fs-id1616494), m46473"
@@ -98425,6 +98698,14 @@
    "verdict": "ok",
    "note": "c^2=49+49=98 -> c=7sqrt(2) -> foci (2+7sqrt2,-7),(2-7sqrt2,-7); matches source fs-id1636747. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "d266ee6d5355984b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp279515392 part (e); key cobalt(II) chloride hexahydrate",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d26745a11a492faa": {
    "verdict": "ok",
    "solved": {
@@ -98572,6 +98853,14 @@
    "note": "body cloze from § Amoebozoa: \"The Eumycetozoa are an unusual group of organisms called slime molds , which have previously been classified as animals, fungi, and plants…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "d2b574455acaa234": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268310912 part (c); key iron(III) nitrate — round 3: shared hint revised (F1/F2)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -99423,6 +99712,14 @@
     "result": "agrees"
    }
   },
+  "d471ba52151c68d6": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268321696 part (c); key K₃P",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d47836643095e2ea": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -100119,6 +100416,14 @@
     "result": "agrees"
    }
   },
+  "d5fb0e87b216ceea": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp279515392 part (c); key chromium(VI) oxide",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d5fbc62b269f740d": {
    "verdict": "ok",
    "note": "source exercise fs-idm50545184 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -100675,6 +100980,14 @@
   "d70d92b3b95ba146": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d70e7b0cdd2b943a": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268310912 part (b); key mercury(I) chloride — round 3: shared hint revised (F1/F2)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -105236,6 +105549,14 @@
     "result": "agrees"
    }
   },
+  "e11783e65df97a73": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp279515392 part (f); key molybdenum(IV) sulfide",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e127516a3dcb3746": {
    "verdict": "ok",
    "note": "matches CNXML CT fs-idp49915760 solution verbatim (macronutrients/micronutrients list)"
@@ -105339,6 +105660,14 @@
   "e158b075104a6b74": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "e159ff4214a08cc1": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm250352 part (a); key RbBr",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -110885,6 +111214,14 @@
     "result": "agrees"
    }
   },
+  "ed70b5d2f0216bf4": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp279515392 part (a); key chromium(III) oxide",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ed7a16f65aa221b2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -111963,6 +112300,14 @@
     "result": "agrees"
    }
   },
+  "eff01600ac6a2604": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268321696 part (d); key Ag₂S",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "eff6e91654cf9f28": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -112779,6 +113124,14 @@
     "result": "agrees"
    }
   },
+  "f1d8f1fbb2795be6": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm206240 part (d); key CCl₄",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f1dcd49f4f5af0d3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -113316,6 +113669,14 @@
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "f3136fb950024868": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268365168 part (a); key K₃PO₄ — round 3: shared hint revised (F1/F2)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -114605,6 +114966,14 @@
   "f57ccddb29ade9b7": {
    "verdict": "ok",
    "note": "m66577 Critical Thinking fs-idm15041760: model answer is the source solution verbatim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "f57efe21b9c24d57": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268365168 part (b); key CuSO₄ — round 3: shared hint revised (F1/F2)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "f588339bb90e6261": {
    "verdict": "ok"
@@ -116228,6 +116597,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "f8c1e70652210f11": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp279515392 part (d); key titanium(IV) chloride",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -119680,6 +120057,14 @@
    "note": "source exercise fs-idm37813424 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "ffbdad02cb11b495": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm250352 part (c); key Na₂O",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },

@@ -39,7 +39,11 @@ cannot resume the old session's ids. Five things the pilot added:
   source prints them" — contradicted lint errors that already existed
   (`\dfrac` is banned; a four-digit number in math is grouped) and cost a
   fixer round-trip each. Grep `tools/lint/` for the token, or lint a
-  three-line scratch file that follows the ruling.
+  three-line scratch file that follows the ruling. **A lint written during
+  the run is run against the ruling it enforces before either is sent**:
+  Section 2.7's ruling "close the stem ‘Type the dot as a period, as in
+  CuSO4.5H2O.’" came with a new lint that required the sentence, and the
+  ASCII-chemistry lint refused it; the author found out, not the parent.
 - **A rule promoted mid-run is swept across every page on disk before
   close-out.** The hint rule was written from 1.5's hints, and 1.5 still
   carried them, word for word, when the chapter was "done".
@@ -62,7 +66,8 @@ Sections 2.1–2.4"):
 
 - **A chapter of shapes the book has not met may be authored in two runs**
   — a few sections through the solve and the commit, then the rest with
-  the first run's lessons in the briefs (chapter 2: 2.1–2.4, then 2.5–2.7).
+  the first run's lessons in the briefs (chapter 2 took three: 2.1–2.4, 2.5–2.6, then 2.7).
+  A one-section run needs no clerk for its facts, landing line, or pins.
   Prep (media, PDF pages, inventory, shapes, probe) is done once for the
   whole chapter. The landing lists the sections on the site and says in
   one paragraph which are being written; it carries NO `authoring_status`
@@ -124,7 +129,7 @@ Sections 2.1–2.4"):
    formula the grader cannot read and every keyed equation that does not
    balance. A flag is a source defect or a shape the forms do not take;
    the parent rules on each in the run facts before the wave (chapter 2
-   has two: 2.7's "AIF₃·3H₂O" with a capital I for the l, and a
+   had two: 2.7's "AIF₃·3H₂O" with a capital I for the l, and a
    simulation answer that offers two symbols joined by "or"). After the
    flags the tool prints NOTES — the units whose structure the page must
    shape for the source gates: a part that is only an image, an answer
@@ -216,9 +221,11 @@ page, 1.2 for a page of classification and added recall items.
   and the previous chapter's pages for the forms to match, report
   `$SP/consistency.md`). Do not tell the claim pass what the parent already
   suspects; compare afterwards.
-- **The rendered-page reading** runs for chapter 2 (to confirm the tests
-  the pilot's reading seeded hold on a second chapter) and after that only
-  for a chapter that renders a shape no earlier chapter did — the first
+- **The rendered-page reading** ran for all three of chapter 2's runs (each
+  found something a test now holds; Section 2.7's found that the formula
+  field's own typing example was the key of an item on the page — the
+  reader reads the widgets' words, not only the page's) and after that
+  runs for a chapter that renders a shape no earlier chapter did — the first
   Lewis structures, the first table transcribed from an image, a new
   shortcode use. `npm run build && npm run serve:public &`, then
   `node tools/build/screenshot-tiles.mjs $SP/render <route> …` (it exits
@@ -233,7 +240,13 @@ page, 1.2 for a page of classification and added recall items.
   stands is provisional until the claim pass, the consistency reader, and
   the solver have read the module: the pilot's 177.66 °F stood on the
   parent's ruling and fell to the consistency reader's comparison with
-  Section 1.5's rules and the sibling keys.
+  Section 1.5's rules and the sibling keys. **A Source note prints no
+  outside citation the parent has not seen quoted**: the claim pass
+  quotes the words it read (its brief says so), and a citation that comes
+  with no quotation is opened by the parent or left out of the note
+  *(Section 2.7: an IUPAC table cited for the opposite of what it says)*.
+  A reason the parent gives from memory ("earlier editions print…") is
+  checked the same way before it goes into a ruling or an erratum.
 - **Rewritten hints and replaced items are read once more** by a checker
   that did not write them (one Author-kind agent for the chapter, "read
   `$SP/fix-check.md`"; it proposes exact old→new text), before the solve.
@@ -343,6 +356,13 @@ work): authors about 265k tokens each across three rounds; checkers 178k
 each; claim pass 119k; consistency reader 224k; one rendered-page reader
 for both pages 233k; fix checker 139k; blind solver 103k; four clerks 53k
 to 139k.
+
+Chapter 2, Section 2.7 (one section, 48 items, about two hours of work): the
+author 269k tokens across four rounds; checker 198k; claim pass 108k;
+consistency reader 171k; rendered-page reader 157k; fix checker 134k;
+blind solver 79k; two clerks 111k and about 60k. With one module the
+parent wrote the run facts, the landing and cover lines, the pins, and
+the decisions entries itself.
 
 Chapter 1, six sections, measured where known:
 

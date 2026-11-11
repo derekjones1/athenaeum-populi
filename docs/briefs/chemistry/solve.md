@@ -51,8 +51,8 @@ factors, constants, and rounding rules the page itself prints.
   `alsoDefensible` whenever the page supports it too.
 - **A `textin`:** the word or phrase the page uses, in the page's spelling.
   When the packet's `answerForm` is `formula` or `equation`, type it as a
-  learner would on a plain keyboard, capitals exact: `Mn3(PO4)2`, `SO4^2-`,
-  `FeCl3.2H2O`, `2Na + 2H2O -> 2NaOH + H2` (state symbols optional, a charge
+  learner would on a plain keyboard, capitals exact: `Ca3(PO4)2`, `SO4^2-`,
+  `Na2CO3.10H2O`, `2H2 + O2 -> 2H2O` (state symbols optional, a charge
   after `^`, smallest whole-number coefficients). Check an equation's atoms
   and charge on both sides before you write it down.
 - An item you cannot settle from the page gets your best answer plus

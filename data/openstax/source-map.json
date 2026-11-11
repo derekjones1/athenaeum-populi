@@ -261,7 +261,7 @@
       "upstreamChapters": 21,
       "upstreamSections": 114,
       "localChapters": 2,
-      "mappedSections": 12,
+      "mappedSections": 13,
       "upstreamAppendices": 13,
       "mappedAppendices": 13
     }
@@ -7376,6 +7376,15 @@
       "moduleId": "m68696",
       "sourceTitle": "Ionic and Molecular Compounds",
       "moduleSha256": "ed0f23fce949f93b3c07edd958cf1d9a133855954317139580f99a293c9a5b29"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/07-chemical-nomenclature.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "2.7",
+      "moduleId": "m68698",
+      "sourceTitle": "Chemical Nomenclature",
+      "moduleSha256": "9d18dbe0a24f8e4301d29f9e23d785b875c5f48b0d74c015476c3c79751e721e"
     }
   ],
   "appendices": [

@@ -68,6 +68,13 @@ against the glossary's definition of the same bold term.
 3. **Then a standard reference:** NIST (SI definitions, CODATA constants),
    IUPAC, the CRC Handbook, a primary paper with a DOI. Never a blog or a
    homework site. Quote the value and name the source and its year.
+   **A reference you did not open is not evidence**: every outside
+   source in a finding or a corrected sentence comes with the words you
+   read in it, quoted, and a finding that rests on a rule you remember
+   says "from memory, not opened". Section 2.7's reading cited IUPAC's
+   2005 element sequence for the order that sequence reverses (it ranks
+   the halogens after oxygen); the citation was printed in a Source note
+   and the blind solver caught it.
 4. A claim that is defensible as printed — a rounded constant, a
    simplification the book flags, an older but once-standard value — is NOT
    a finding; list it under "Reviewed, stands" with one line.

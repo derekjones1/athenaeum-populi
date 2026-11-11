@@ -139,8 +139,8 @@ these differences:
    links nothing** *(Derek, November 10, 2026)*. The test is what the
    learner must do, not what the source marked up: a stem, an example, or
    a body sentence that sends the learner to a table the page itself does
-   not show — "Using the periodic table, predict…" on 2.6 and 2.7, which
-   show none (Appendix A); a formation enthalpy, a solubility product, an
+   not show — "Using the periodic table, predict…" on 2.6, which shows
+   none (Appendix A); a formation enthalpy, a solubility product, an
    ionization constant, a reduction potential, a half-life the item needs
    and does not print (G, J, H and I, L, M); a conversion factor or a
    constant the page's own tables lack (C, D) — links the phrase that
@@ -188,7 +188,7 @@ The component follows the SHAPE of the source's keyed answer:
 | an SI prefix's factor ("× 10⁻²") | `fillin` keyed with the bare power of ten, `answer="10^{-2}"`, under `sig-figs:1 last-digit:0` — a bare power-of-ten key is an exact factor, so `0.010` and `1.0×10⁻²` are right too ("Measured quantities") |
 | the name of a unit that is one word or a counted word ("meters", "kilograms", "square meters", "cubic meters") or of a prefix ("centi") | `textin`; the accept list holds the symbol without operators (`m`, `kg`, `m3`) and every crossing the plural fold cannot reach, which folds the LAST word only: `meters squared\|meter squared\|metres squared\|metre squared` |
 | a unit that is a quotient or a product ("meters/second", "kilograms/cubic meter"), or one whose degree sign is the point ("kelvin", never "°K") | `multiplechoice` whose distractors are the confusions the part tests — the product, the inverse, a wrong power, "degrees kelvin" — and never another unit the body allows for the quantity. The text grader reads `/`, `·`, `×`, `*`, and `°` as spaces, so as a `textin` the product passes for the quotient: a key or accept member carrying one is a lint error in this book |
-| the name of a compound or an ion ("chromium(III) oxide", "the selenide ion") | `textin`. Capitals, the spaces around a parenthesis, and the parentheses themselves are free; the Roman numeral and every word are not. The grader reads sulph- as sulf-, aluminium as aluminum, and caesium as cesium, so those are never `accept` members. A second name the module itself prints for the compound is one — unless the STEM prints it: 2.7 asks for the IUPAC name of "ferric nitrate", and there the old name retyped must be wrong. **An ion's name is keyed bare** (`selenide`) with the two-word form in `accept` (`selenide ion`): the grader drops "the" and does not drop "ion", so keyed "selenide ion" it marks the bare name wrong |
+| the name of a compound or an ion ("chromium(III) oxide", "the selenide ion") | `textin`. Capitals, the spaces around a parenthesis, and the parentheses themselves are free; the Roman numeral and every word are not. The grader reads sulph- as sulf-, aluminium as aluminum, and caesium as cesium, so those are never `accept` members. A second name the module itself prints for the compound is one — unless the STEM prints it: 2.7 asks for the IUPAC name of "ferric nitrate", and there the old name retyped must be wrong. **A name the module prints as out of date is not a second name** *(Section 2.7)*: "ferrous chloride", which the module says "was known as" and calls nomenclature "largely abandoned", is not an `accept` member of the item that asks FeCl₂'s name, and neither is a name another exercise's stem prints for the compound as the one to be replaced ("titanium tetrachloride"). The item's hint says what form the name takes — the charge as a Roman numeral in parentheses — since a refused name gets no message. The source gate holds a name key to the WHOLE name the source prints: "cobalt(II) chloride" is refused where the source answers "cobalt(II) chloride hexahydrate" **An ion's name is keyed bare** (`selenide`) with the two-word form in `accept` (`selenide ion`): the grader drops "the" and does not drop "ion", so keyed "selenide ion" it marks the bare name wrong |
 | a formula or an ion's symbol ("Mn₃(PO₄)₂", "FeCl₃·2H₂O", "Se²⁻", "¹⁴C") | `textin` with `answerForm="formula"` ("Formulas and equations") — never a plain `textin`, which reads `CO` as `Co` (lint) |
 | a balanced equation, a half-reaction, a net ionic equation | `textin` with `answerForm="equation"` ("Formulas and equations") |
 | several of these at once ("calcium, Ca"; "ionic, Ba²⁺, O²⁻"; "molecular C₂H₂, empirical CH"; an equation and a mass) | one item per piece, each stem saying which ("Enter the molecular formula."): the classification as a `multiplechoice` first, then a formula `textin` per ion or per formula. **When only some parts have the further pieces** ("(a) covalent; (b) ionic, Ba²⁺, O²⁻" — the source keys nothing more for a covalent part, so there is nothing more to grade there), each part's further items go in a `followup` directly after its `multiplechoice`: in the open they stand under the ionic parts alone and answer the classification by being there. `verify:source-keys` refuses the shape unwrapped (`conditionalUnwrapped`) |
@@ -458,6 +458,16 @@ after the rule was written, so the line is drawn by pairs:
   case (1.3's body classifies steam and sugar itself).
 - A hint never sends the learner to a table that lacks the answer (1.4's
   area item pointed at the table of base units, which has no area unit).
+- **A hint that needs a table of another section names the table and the
+  section**, in plain words and with no link: "the table of common
+  polyatomic ions in Section 2.6 Ionic and Molecular Compounds", never
+  "the common polyatomic ions" on a page that prints none *(Section 2.7)*.
+- **Where the module names one substance two ways by its state** (HBr the
+  gas, hydrogen bromide; HBr in water, hydrobromic acid), the hint names
+  the subsection whose rule decides, never the observation that decides
+  it ("the formula prints no state") *(Section 2.7: a parent decision
+  allowed that sentence, and the checker and the consistency reader both
+  read it as the answer)*.
 - Several items may share one hint — and **a shared hint is read, key
   covered, against every item it serves**, the module's own named
   exceptions first *(chapter 2: "ask whether a metal is combined with
@@ -610,8 +620,10 @@ answers, table cells — whatever dash the source typed (2.3's source
 writes "[53 – (1–) = 54]" with en dashes). An expression is all math or
 all prose, never half: `$Z = 11$`, not "$Z$ = 11".
 
-**In math** — every source `<equation>`, and any inline span that is
-mathematics — a formula is `\ce{…}`. Hugo's embedded KaTeX carries the
+**In math** — every source `<equation>` that is mathematics, and any
+inline span that is — a formula is `\ce{…}`. (A source `<equation>` that
+only sets a name beside a formula, as 2.7's two hydrates are, is prose:
+one line each, "name, formula", in Unicode.) Hugo's embedded KaTeX carries the
 mhchem extension, so nothing is loaded:
 
 | Write | For |
@@ -705,7 +717,7 @@ charge, hydrate, coefficients — where a plain `textin` reads words:
 
 ```
 {{</* textin
-  question="Write the formula of the following ionic compound: manganese(II) phosphate."
+  question="Write the formula of the following ionic compound: manganese(II) phosphate. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
   answer="Mn₃(PO₄)₂"
   answerForm="formula"
   hint="Find the charge of each ion, then the smallest numbers of each that cancel."
@@ -720,9 +732,14 @@ charge, hydrate, coefficients — where a plain `textin` reads words:
 ```
 
 What the learner types, and sees. The field carries its own typing guide
-("Type subscripts as plain numbers and a charge after ^: Mn3(PO4)2,
+("Type subscripts as plain numbers and a charge after ^: Ca3(PO4)2,
 SO4^2-."), so no stem spends a sentence on it, and it shows what it has
-read in the book's print as the learner types ("Read as: SO₄²⁻").
+read in the book's print as the learner types ("Read as: SO₄²⁻"). The
+guide's examples are no item's key (a test holds it: the first example,
+Mn3(PO4)2, was the key of a Check Your Learning item of 2.7). **A hydrate
+is the one shape the guide does not cover**: an item keyed with a
+hydrate's formula closes "Type the dot as a period, as in Na2CO3.10H2O."
+(a hydrate the page's body prints whose formula holds no key of the page: 2.7's first example, CuSO4.5H2O, held the key of the item that asks copper(II) sulfate's formula) — lint.
 
 | Typed | Against | Verdict | Feedback |
 |---|---|---|---|
@@ -855,7 +872,10 @@ several hundred times over.
 (verified on section 7.3: 77 images, 568 KB). Every image upstream is a
 JPEG, so the manifest guesses `photo` for all of them: **set `kind` on every
 figure** from the picture — a photograph is a `photo`, a drawing, chart,
-structure, or labelled apparatus a `diagram`.
+structure, or labelled apparatus a `diagram`. A composite with a drawn panel
+that carries information of its own (2.7's photograph beside two
+ball-and-stick models) is a `diagram`; a composite of photographs (the
+chapter 2 landing's) is a `photo`.
 
 **Every alt is written from the artwork; the source's alt is never kept as
 it stands.** Chapter 1's source alts called flasks beakers, wax butter, and

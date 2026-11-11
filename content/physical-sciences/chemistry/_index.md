@@ -42,9 +42,8 @@ chemistry, and nuclear chemistry.
   of matter, physical and chemical properties, measurements, measurement
   uncertainty, and the mathematical treatment of measurement results.
 - **Atoms, Molecules, and Ions** — atomic theory and its evolution, atomic
-  structure and symbolism, chemical formulas, the periodic table, and ionic
-  and molecular compounds. The chapter's last section — chemical
-  nomenclature — is being written.
+  structure and symbolism, chemical formulas, the periodic table, ionic and
+  molecular compounds, and chemical nomenclature.
 
 ## Appendices
 

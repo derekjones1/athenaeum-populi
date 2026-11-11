@@ -102,12 +102,19 @@ stem shows it.
   several items is read against every one of them**, the module's named
   exceptions first (a metal-and-nonmetal test on a compound of polyatomic
   ions); on a two-option item a hint that says what one option was
-  replaced by, or is "instead", decides it.
+  replaced by, or is "instead", decides it. A hint that needs another
+  section's table names the table and the section in plain words; one
+  that states the observation a two-name substance turns on ("the
+  formula prints no state") decides the item, whatever the run facts say.
 - **A filler keyed on a working word of the page's own stems or hints**
   (`group` where the source stems say "the following group") is a defect,
   and so is a name the MODULE prints for a key that the item's `accept`
   lacks ("oxygen group" for chalcogen): search the module for "also
-  called", "can be called", "or", and the glossary's "(also, …)".
+  called", "can be called", "or", and the glossary's "(also, …)". A name
+  the module prints as out of date ("was known as", "previously called")
+  is not one (playbook "Exercises", the name row). The text grader gives a
+  wrong name no message (`checkText` returns a status only): say what it
+  marks wrong, not what it tells the learner.
 - **A `textin` with `answerForm="formula"` or `"equation"`:** read the key
   against the CNXML character by character (a capital I for a small l, a
   digit 1 for an l, a charge's sign, a nuclide's two numbers), count an

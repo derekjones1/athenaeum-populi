@@ -153,6 +153,13 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     reason: 'the source solution prints "68–71 cm" for a ball of 27 to 28 in.; 27 in × 2.54 cm/in (exact) = 68.58 cm, which rounds to 69 cm at two significant figures, so the lower-circumference fill-in keys 69; the other three bounds (71 cm, 400 g, 450 g) are the source\'s',
   },
   {
+    page: 'content/physical-sciences/chemistry/02-atoms-molecules-and-ions/07-chemical-nomenclature.md',
+    exercise: 'fs-idp268321696(e)',
+    kind: 'key',
+    erratum: 2964,
+    reason: 'the source solution prints "AIF₃·3H₂O" for aluminum fluoride trihydrate, with a capital I where the lowercase l of Al belongs: no element has the symbol A, and aluminum\'s symbol is Al in the stem\'s own compound name and in part (f) of the first exercise ("AlF₃"), so the formula text-in keys AlF₃·3H₂O',
+  },
+  {
     page: 'content/life-health-sciences/anatomy-physiology/28-development-and-inheritance/05-adjustments-of-the-infant-at-birth-and-postnatal-stages.md',
     exercise: 'fs-id810682',
     kind: 'options',
@@ -2008,8 +2015,24 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [] } = {}) {
     // A name or a word: the answer prints it, plural fold included.
     const answer = ` ${foldedPlain(unit.answer)} `;
     const key = foldedPlain(item.answer);
-    const printed = [key, ...foldedForms(key)].some((form) => form && answer.includes(` ${form} `));
-    return printed ? { status: 'confirmed', exercise } : differs;
+    const forms = [key, ...foldedForms(key)].filter(Boolean);
+    if (!forms.some((form) => answer.includes(` ${form} `))) return differs;
+    // A name cut short is another compound's name: "cobalt(II) chloride"
+    // is printed in "cobalt(II) chloride hexahydrate" and is not its answer
+    // (2.7). Where the answer is a list of names and symbols — every piece
+    // between its commas and semicolons a few words, none a sentence — the
+    // key is one whole piece, the article and the word "ion" aside ("Se²⁻,
+    // the selenide ion" keys "selenide"). An answer in sentences is read as
+    // before: there the key is a word the sentence prints.
+    const pieces = unit.answer.split(/[,;]/).map((piece) => withoutArticle(piece)).filter(Boolean);
+    const listed = pieces.length > 0 && pieces.every((piece) => piece.split(' ').length <= 4);
+    if (listed) {
+      const whole = pieces.flatMap((piece) => [piece, piece.replace(/ ions?$/, '')]);
+      if (!forms.some((form) => whole.includes(form))) {
+        return { ...differs, detail: `${differs.detail} — the key is part of a longer name the answer prints` };
+      }
+    }
+    return { status: 'confirmed', exercise };
   }
   if (item.type === 'multiplechoice') {
     // Two answers that hold several choices at once, each narrowed to the
@@ -2308,7 +2331,10 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
           const wanted = status === 'diverges' ? 'solution' : 'key';
           if (deviation && deviation.kind === wanted) {
             used.add(deviation);
-            counts[item.type].disclosed += 1;
+            // A text-in's tally is summed whole into the confirmed count, so
+            // its disclosed corrections are counted beside it, not in it.
+            if (item.type === 'textin') counts.textinDisclosed = (counts.textinDisclosed ?? 0) + 1;
+            else counts[item.type].disclosed += 1;
             notes.push(`${where} keys against the source on purpose (erratum ${deviation.erratum})`);
           } else {
             failures.push({
@@ -2331,7 +2357,10 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
           const wanted = verdict.status === 'key-differs' ? 'key' : 'options';
           if (deviation && deviation.kind === wanted) {
             used.add(deviation);
-            counts[item.type].disclosed += 1;
+            // A text-in's tally is summed whole into the confirmed count, so
+            // its disclosed corrections are counted beside it, not in it.
+            if (item.type === 'textin') counts.textinDisclosed = (counts.textinDisclosed ?? 0) + 1;
+            else counts[item.type].disclosed += 1;
             notes.push(`${where} keys against the source on purpose (erratum ${deviation.erratum})`);
           } else {
             failures.push({
@@ -2488,7 +2517,7 @@ export function summaryLine({ counts, confirmed, failures, sections, sectionsSki
   return `${failures.length ? '✖' : sectionsSkipped ? '⊘' : '✓'} source-key cross-check${scope}: `
     + `${confirmed} keyed answers confirmed against the pinned CNXML across ${sections} mapped sections `
     + `(multiplechoice ${mc.confirmed}, textin ${textin}, selfcheck ${selfcheck}, sortbins ${sortbins.confirmed}, fillin ${fillin.confirmed}); `
-    + `${mc.disclosed + counts.selfcheck.disclosed + sortbins.disclosed + fillin.disclosed} disclosed correction(s); ${mc.unmatched + counts.selfcheck.unmatched + sortbins.unmatched + fillin.unmatched} unmatched to any source exercise; `
+    + `${mc.disclosed + (counts.textinDisclosed ?? 0) + counts.selfcheck.disclosed + sortbins.disclosed + fillin.disclosed} disclosed correction(s); ${mc.unmatched + counts.selfcheck.unmatched + sortbins.unmatched + fillin.unmatched} unmatched to any source exercise; `
     + `${mc['prose-key']} prose-keyed; ${unkeyed} matched to an unkeyed source question; `
     + `fillin ${fillin.figure ?? 0} figure-only, ${fillin.unkeyed} unkeyed, ${fillin.symbolic} symbolic; ${failures.length} failure(s)`;
 }

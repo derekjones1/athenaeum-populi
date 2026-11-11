@@ -476,6 +476,14 @@ test('in the Chemistry book a formula or an equation is never keyed as a word', 
   // A declared hydrate is not an "operator the text grader drops".
   const hydrate = formula('FeCl₃·2H₂O').replace('answer="FeCl₃·2H₂O"', 'answer="FeCl₃·2H₂O" answerForm="formula"');
   assert.deepEqual(errorsOf(page(hydrate), CHEM).filter((e) => /reads as a space/.test(e)), []);
+  // …and its stem says how the dot is typed, which the field's guide does not.
+  const dot = (src) => errorsOf(src, CHEM).filter((e) => /how a centered dot is typed/.test(e));
+  assert.equal(dot(page(hydrate)).length, 1);
+  const told = hydrate.replace('rubidium bromide.', 'iron(III) chloride dihydrate. Type the dot as a period, as in CuSO4.5H2O.');
+  assert.deepEqual(dot(page(told)), []);
+  assert.deepEqual(errorsOf(page(told), CHEM).filter((e) => /ASCII chemistry/.test(e)), [], 'the typed example is not ASCII chemistry');
+  assert.equal(errorsOf(page(told.replace('Type the dot as a period, as in CuSO4.5H2O.', 'Compare CuSO4.')), CHEM).filter((e) => /ASCII chemistry/.test(e)).length, 1);
+  assert.deepEqual(dot(page(declared)), [], 'a formula with no dot needs no sentence');
 });
 
 test('in the Chemistry book a textin key never carries an operator the text grader drops', () => {

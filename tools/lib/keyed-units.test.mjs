@@ -221,6 +221,18 @@ test('a text-in is confirmed when its part\'s answer prints the name, or reads a
   const judge = (item) => judgeKeyedUnit(item, chem).status;
   assert.equal(judge(textin('Name the following compound: Cr₂O₃', 'chromium(III) oxide')), 'confirmed');
   assert.equal(judge(textin('Name the following compound: Cr₂O₃', 'chromium(II) oxide')), 'key-differs');
+  // A name cut short is another compound's name (2.7's hydrate), while a
+  // name the answer lists beside a symbol, or with "the … ion", is whole.
+  const named = keyedUnits(cnxml(exercises(
+    exercise('h1', ['Name these compounds:', '(a) CoCl<sub>2</sub>·6H<sub>2</sub>O', '(b) TiCl<sub>4</sub>'], '(a) cobalt(II) chloride hexahydrate; (b) titanium(IV) chloride'),
+    exercise('s1', ['Give the symbol and name for the ion with 34 protons and 36 electrons.'], 'Se<sup>2−</sup>, the selenide ion'),
+  )));
+  const judgeNamed = (item) => judgeKeyedUnit(item, named).status;
+  assert.equal(judgeNamed(textin('Name this compound: CoCl₂·6H₂O', 'cobalt(II) chloride hexahydrate')), 'confirmed');
+  assert.equal(judgeNamed(textin('Name this compound: CoCl₂·6H₂O', 'cobalt(II) chloride')), 'key-differs', 'the hydrate without its water');
+  assert.equal(judgeNamed(textin('Name this compound: CoCl₂·6H₂O', 'chloride hexahydrate')), 'key-differs', 'the name without its metal');
+  assert.equal(judgeNamed(textin('Name this compound: TiCl₄', 'titanium(IV) chloride')), 'confirmed');
+  assert.equal(judgeNamed(textin('Give the symbol and name for the ion with 34 protons and 36 electrons. Enter the ion’s name.', 'selenide')), 'confirmed');
   assert.equal(judge(textin('Write the formula of the following ionic compound: manganese(II) phosphate', 'Mn₃(PO₄)₂', 'formula')), 'confirmed');
   assert.equal(judge(textin('Write the formula of the following ionic compound: iron(III) chloride dihydrate', 'FeCl₃·2H₂O', 'formula')), 'confirmed');
   assert.equal(judge(textin('Write the formula of the following ionic compound: iron(III) chloride dihydrate', 'FeCl₃', 'formula')), 'key-differs');

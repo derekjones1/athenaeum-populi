@@ -436,6 +436,10 @@ export function lintLeaks(src, filename = '') {
       // wrapped in asterisks is an italic gene symbol (*USP14*).
       const around = visible[m.index - 1] + visible[m.index + m[0].length];
       if (/^(?:["“”'‘’]{2}|\*\*|__)$/.test(around ?? '')) continue;
+      // The one formula a stem prints as it is TYPED: the closing sentence
+      // of a hydrate item, "Type the dot as a period, as in CuSO4.5H2O."
+      // (the hydrate rule below requires it, so this rule cannot refuse it).
+      if (chemistry && /Type the dot as a period, as in $/.test(visible.slice(Math.max(0, m.index - 40), m.index))) continue;
       const uni = unicodeFormula(m[0], { chemistry });
       if (uni) err(m.index, `ASCII chemistry \`${m[0]}\` — write \`${uni}\` with Unicode sub/superscripts (a screen reader reads \`${m[0]}\` as letters and a bare number); only an \`accept\` member stays typeable ASCII`);
     }
@@ -508,6 +512,15 @@ export function lintLeaks(src, filename = '') {
       } else if ((marked || symbol) && readSpecies(key).length) {
         err(item.index, `${where}: its key ${JSON.stringify(key)} is a chemical formula graded as a word (the word grader ignores capitals, so "CO" passes for "Co") — declare answerForm="formula"`);
       }
+    }
+
+    // ---- a hydrate key says how its dot is typed (Chemistry) ----------------
+    // The formula field's guide shows subscripts and a charge and nothing
+    // else. A centered dot is on no keyboard, and nothing on the 2.7 page
+    // said the grader reads a period for it (the rendered-page reading).
+    if (chemistry && item.params.answerForm === 'formula' && String(item.params.answer ?? '').includes('·')
+      && !/Type the dot as a period, as in \S+\.\S+\./.test(String(item.params.question ?? ''))) {
+      err(item.index, `${where}: its key is a hydrate's formula, and the field's guide does not say how a centered dot is typed — close the stem "Type the dot as a period, as in Na2CO3.10H2O." (a hydrate whose formula holds no key of the page)`);
     }
 
     if (chemistry && item.params.answerForm === undefined) {

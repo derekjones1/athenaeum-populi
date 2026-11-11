@@ -46,8 +46,7 @@ the concept of molecular identity.
 - **Chemical Formulas** — molecular and empirical formulas, which symbolize the composition of molecules, and structural formulas, which represent the bonding arrangement of atoms within them.
 - **The Periodic Table** — the periodic law and the organization of the elements in the periodic table, predicting an element’s general properties from its location, and identifying metals, nonmetals, and metalloids.
 - **Ionic and Molecular Compounds** — ionic and molecular (covalent) compounds, predicting the type of compound elements form from their location in the periodic table, and determining formulas for simple ionic compounds.
-
-The chapter’s last section — Chemical Nomenclature — is being written and will appear here when it is finished and verified.
+- **Chemical Nomenclature** — deriving names for common types of inorganic compounds using a systematic approach: ionic compounds, ionic hydrates, molecular compounds of two elements, binary acids, and oxyacids.
 
 ---
 

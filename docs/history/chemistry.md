@@ -875,6 +875,160 @@ Found in the browser:
   clipped "Close");
 - zooming out below the fit shows nothing more and is not offered.
 
+## Chapter 2, Section 2.7 (November 10, 2026)
+
+Derek: "Let's finish the last section of chapter 2 chemistry then
+commit." The parent took it as Section 2.7 (Chemical Nomenclature, module
+m68698), the last of the chapter's seven. Like the two runs before it,
+this one went through the blind solve and the commit. HEAD at the start
+was 99c5103f with a clean tree; the last erratum was 2963, so the run
+began at 2964.
+
+### Shape
+
+One section, so no wave. Prep reused from the earlier runs' scratchpad
+(the PDF pages 106–128 and the key pages 1137–1138, the media already
+vendored); the inventory, keys, shapes, and probe re-run. The parent wrote
+the run facts itself: one module, so no run-facts clerk. One Opus author
+in four rounds (write; the checker's fixes; the three readings' rulings;
+the fix checker's changes); one Opus checker; then the claim pass, the
+consistency reader, and one rendered-page reader together (17 tiles); one
+rulings round (`rulings.md`), preceded by a short checker round
+(`rulings-1.md`) and followed by a fix-check round (`rulings-3.md`); an
+Opus fix checker; the blind solve (a fresh Fable solver, 48 items); one
+Sonnet clerk for the errata draft and one for this narrative. The landing,
+cover, pins, decisions entries, and claim-pass ledger row were the
+parent's, a seven-line job each. No usage-limit pause. Tokens: author 269k
+across the four rounds, checker 198k, claim pass 108k, consistency 171k,
+rendered-page reader 157k, fix checker 134k, solver 79k, errata clerk 111k.
+
+### What the run holds
+
+One page, 48 items, all text-ins: 46 from the source (6 keyed exercises as
+37 items, 17 names and 20 formulas; the 2 Check Your Learnings as 9
+formulas) and 2 glossary recalls the parent asked for (binary acid,
+oxyacid), beyond the floor: no keyed exercise asks about an acid. 5
+unkeyed exercises omitted. One figure (a photograph beside two drawn
+ball-and-stick models: kind `diagram`, with a longdesc); 8 tables
+transcribed; 4 key terms; 6 Source notes. All 46 source items carry "Use
+the periodic table." with a link to Appendix A (decision 1: no 2.7 stem
+names it; one body sentence does). Errata 2964–2976 (13 entries): three
+corrected with a Source note and a decisions entry (2964, the aluminum
+fluoride trihydrate key, the book's first corrected text-in key; 2970,
+the pipeline that was a set of cooling towers; 2972, the 2010 EWG
+study), three kept with a Source note (2968 gallium(III) nitride; 2973
+the name-order rule; 2976 the oxyacid glossary entry), five typos and an
+alt text (2965 "principle", 2966 a comma, 2969 "Hinckley" ×5, 2974 a
+sentence with two openings, 2975 "is replace with"; 2971 the figure's
+source alt), and one kept as printed (2967, two table summary attributes
+that print nothing). Chapter 2 is complete, 7 of 7: the landing's "being
+written" paragraph and the cover's sentence are gone; pins 791 sections,
+chemistry 13. The solver agreed on 47 of 48 and disagreed on none; the
+one flag was a second defensible name for HBr, now an accept member.
+
+### What each reading found
+
+| Reading | Found | Would another have found it? |
+|---|---|---|
+| Parent's hand probe, before the wave (98 lines, every item with its real stem) | one gate gap: a name cut short was confirmed against the whole name | no |
+| Author | the aluminum fluoride misprint confirmed; two one-word typos; the garbled sentence; the source alt's two misreadings; gallium(III) nitride; the EWG sentence (not checkable offline); the missing comma | the claim pass, for the EWG sentence |
+| Checker | 2 hard (an accept for an out-of-date name, ruled out; no Source note beside the corrected key) and 10 notes (the HBr hint; no hint says polyatomic-ion charges live on 2.6; "oxy acid") | the HBr hint: the consistency reader and the solver; the rest, no |
+| Claim pass | 4 findings: the EWG study (wrong), the pipeline (wrong; the box contradicts itself), the oxyacid glossary (loose), the name-order rule against Cl₂O₇ (loose) | no |
+| Consistency reader | gallium(III) nitride against the body's rule; decision 5's HBr hint against the Hints rule; four rulebook slips (a playbook example without the periodic-table sentence; 2.7 cited as a "Using the periodic table" page; a rule that forbade setting name-beside-formula equations as prose; no rule for a mixed-panel figure's kind) | the HBr hint: the checker and solver; the rest, no |
+| Rendered-page reader | 0 wrong, 3 misleading, 2 cosmetic: the formula field's typing example was a Check Your Learning key; nothing said the hydrate dot is typed as a period; capital I and lowercase l are one glyph; 2.61's stems read as fragments; the hydrate lines ran name into formula | no |
+| Fix checker | 2 hints (2.61's said "from the formula" where two stems print none; 2.59's did not say where a monatomic ion's charge comes from); the dot sentence's example was 2.59(b)'s key; a Source note on the wrong side of its figure; a footer clause | no |
+| Blind solve | 47 agree, 0 disagree, 1 also-defensible; it also caught a wrong IUPAC citation in the parent's Source note | the citation: no |
+
+### Gates, tools, tests
+
+- **A name key must be a whole piece of a list-shaped answer**
+  (`verify-source-keys.mjs`, test in `keyed-units.test.mjs`): "cobalt(II)
+  chloride" had been confirmed against "…hexahydrate". The corpus gate was
+  unchanged by it (7,072 confirmed, 0 failures).
+- **The gate's tally**: the first disclosed text-in correction made the
+  confirmed count NaN, because the text-in tally is summed whole. It is now
+  `counts.textinDisclosed`, with tests. Source keys 7,072 to 7,119;
+  coverage 4,213 to 4,259; replay 8,428 to 8,522 (`baseline:update`).
+- **A test that every corrected key of a Chemistry page has its "*Source
+  note:* the answer graded …" paragraph.** A `DISCLOSED_DEVIATIONS` line
+  for the key (`fs-idp268321696(e)`, 2964) and decisions entries 2964,
+  2970, 2972.
+- **The formula field's typing examples are no item's key.** The guide's
+  example `Mn3(PO4)2` was a Check Your Learning key; it is `Ca3(PO4)2`
+  now, in `text-in.js` and in the grader's "does not read as a formula"
+  message (`check-chem.mjs`); `solve.md`'s examples, which had printed two
+  of this page's keys to the blind solver, became `Ca3(PO4)2`,
+  `Na2CO3.10H2O`, and `2H2 + O2 -> 2H2O`. A `documentation.test` case
+  grades every typing example against every formula and equation key in
+  the content (80 keys today).
+- **A lint for the hydrate's dot** (`lints-leaks.mjs`, with a test): a
+  formula key holding a hydrate's dot needs the stem sentence "Type the dot
+  as a period, as in Na2CO3.10H2O."; the ASCII-chemistry lint exempts that
+  one typed example.
+- Pins 790 to 791 and chemistry 12 to 13 (`openstax-source.test.mjs`);
+  the claim-pass ledger's row reads 7 of 7.
+
+### Rulings, now in the playbook
+
+A name the module prints as out of date is not an `accept` member; the
+hint says the form the name takes, and the gate holds a name to the whole
+name. A hint that sends the learner to another section's table names the
+section; where the module names one substance two ways by its state, the
+hint names the subsection to recall, not the observation that decides.
+The guide's typing examples are no item's key (test); a hydrate key closes
+with the dot sentence (lint). A source `<equation>` that only sets a name
+beside a formula is prose, "name, formula". A composite figure with a
+drawn panel is a `diagram`. Rule 9 no longer lists 2.7 among the "Using
+the periodic table" pages, and the playbook's formula example carries the
+sentence. `run.md` §0: a lint written during the run is run against the
+ruling it enforces. A Source note's outside citation is one the claim pass
+quoted or the parent opens.
+
+### What the process got wrong
+
+- The session memory said 2.7's stems say "Using the periodic table";
+  none does. The run facts came from the CNXML, so nothing followed from
+  it, but the playbook's rule 9 held the same false example.
+- Decision 5 let the HBr hint "send the learner to what the formula does
+  and does not show"; that contradicted the Hints rule, the author
+  followed it, and the checker and consistency reader read it as the
+  answer. Overturned in round 2. Its other half (no accept for
+  "hydrobromic acid") fell after the solve: the author, the checker, the
+  consistency reader, and then the solver had each raised it before the
+  parent moved.
+- Ruling R1 and decision 4 left the Source note out of the corrected
+  key's list (erratum, decisions entry, deviation line); the checker
+  caught it.
+- Ruling G3 said each ruling was checked against the lints and was not:
+  the new hydrate lint required a sentence the ASCII-chemistry lint
+  refused. One author round trip.
+- Ruling R4's reason ("earlier editions print exactly…") was written from
+  memory; the errata clerk flagged that it had opened no source, and the
+  parent then read the first edition's page, which does print "Some other
+  examples are shown in Table 2.11."
+- Ruling C5 printed the claim pass's IUPAC citation without opening it.
+  The claim pass quoted its sources for F1 and F2, not for F4; the solver
+  caught it, and the note now cites nothing (erratum 2973 corrected).
+- The NaN tally printed a ✓ line ("NaN keyed answers confirmed … 0
+  failure(s)"); it was seen only because the parent read the line.
+
+### Not acted on
+
+- Capital I and lowercase l are one glyph in the page's sans font: CaI₂
+  reads "Cal₂", AlF₃ reads "AIF₃", the source's misprint. A site-wide
+  typography question, a chemistry book being full of Al, Cl, and I. Put
+  to Derek.
+- The periodic-table sentence on all 46 source items: every reader kept
+  it; 2.61(b), (c), (e) and the two ammonium compounds are the weakest
+  cases, the table giving them only symbols.
+- A formula typed without its parentheses ("NH42SO4") is marked incorrect
+  with no message; "Cr3P3" for CrP gets no lowest-terms message.
+- A wrong name gets no message at all (the text grader returns a status).
+- Keys the page's own tables print (Na₂O, HF, IF₇, N₂O, FeCl₂, K₃PO₄):
+  the source's design.
+- No narrow-viewport tiles were captured for the eight tables; the
+  browser suite walks the page at its widths.
+
 ## The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under
@@ -891,3 +1045,4 @@ the ban, with its page and line. The ban is reviewed from this list.
   it); reported by the author under the watch.
 - Chapter 1 and the appendices reported none.
 - Sections 2.5–2.6 reported none: neither page prints a fraction.
+- Section 2.7 reported none: the page has no math.

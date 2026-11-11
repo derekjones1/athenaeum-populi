@@ -496,6 +496,22 @@ test('every disclosed deviation names a mapped page and an erratum number', () =
   }
 });
 
+// Core playbook §0 rule 4: a corrected answer carries a visible Source note
+// after its item. Chemistry's note has one form (docs/subjects/chemistry.md,
+// "Source defects and Source notes"), so it can be counted: Section 2.7's
+// corrected formula key reached its checker with the erratum, the decisions
+// entry, and the deviation line ordered, and no note on the page.
+test('every corrected key of a Chemistry page has its Source note on the page', () => {
+  const chemistry = DISCLOSED_DEVIATIONS.filter((deviation) => deviation.kind === 'key'
+    && deviation.page.startsWith('content/physical-sciences/chemistry/'));
+  assert.ok(chemistry.length >= 3, 'the Chemistry key deviations are read');
+  for (const page of new Set(chemistry.map((deviation) => deviation.page))) {
+    const wanted = chemistry.filter((deviation) => deviation.page === page).length;
+    const notes = readFileSync(path.join(repositoryRoot, page), 'utf8').match(/^\*Source note:\* the answer graded /gm) ?? [];
+    assert.ok(notes.length >= wanted, `${page}: ${wanted} corrected key(s), ${notes.length} "*Source note:* the answer graded …" paragraph(s)`);
+  }
+});
+
 // The erratum file is a gitignored local scratchpad, so this only has
 // something to resolve against on an authoring machine; in CI it is skipped
 // by name, the same shape as the bundle-absent skip below. Without it, a
@@ -531,7 +547,7 @@ test('the corpus carries no undisclosed departure from a source key', {
   // A deviation may be exercised by any kind that judges against a source
   // exercise or table.
   assert.equal(
-    counts.multiplechoice.disclosed
+    counts.multiplechoice.disclosed + (counts.textinDisclosed ?? 0)
       + counts.selfcheck.disclosed + counts.sortbins.disclosed + counts.fillin.disclosed,
     DISCLOSED_DEVIATIONS.length,
     'every listed deviation is exercised',
@@ -578,6 +594,13 @@ test('a bundle with no checkout is skipped by name, not failed, and the floor is
     assert.match(partial, /^⊘ source-key cross-check \(partial: \d+ of \d+ mapped sections skipped, no checkout\): 0 keyed answers/);
     assert.equal(partial.match(pattern), null, 'a partial count cannot be recorded as the baseline');
     assert.match(summaryLine({ ...result, sectionsSkipped: 0 }), pattern);
+    // A corrected text-in key (Chemistry 2.7's "AIF₃") is a disclosed
+    // correction, never a member of the text-in tally: that tally is summed
+    // whole into the confirmed count, and `disclosed` inside it once made
+    // the count NaN.
+    const corrected = summaryLine({ ...result, sectionsSkipped: 0, counts: { ...result.counts, textinDisclosed: 1 } });
+    assert.match(corrected, pattern);
+    assert.match(corrected, / 1 disclosed correction\(s\);/);
   });
 });
 

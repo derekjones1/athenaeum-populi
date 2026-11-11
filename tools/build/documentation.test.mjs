@@ -886,3 +886,43 @@ test('the README no longer instructs a browser install', () => {
   assert.doesNotMatch(readme, /playwright\s+install/);
   assert.match(readme, /No\s+browser\s+install\s+step\s+is\s+needed/);
 });
+
+// The formula field prints one typing guide under every formula and equation
+// item, the grader prints an example when a response does not read as a
+// formula, and the solver's brief shows the solver how to type one. An
+// example that is some item's key answers that item: the guide's first
+// example, Mn3(PO4)2, was the key of a Check Your Learning item of Chemistry
+// 2.7, and the brief's FeCl3.2H2O the key of the item beside it (found by the
+// rendered-page reading). Every example is graded against every formula and
+// equation key in the content.
+test('no typing example shown beside a formula field is an item\'s key', async () => {
+  const { checkChem } = await import('../../assets/js/lib/text/check-chem.mjs');
+  const { pageItems } = await import('../verify/verify-source-keys.mjs');
+  const quoted = (text, pattern) => [...text.matchAll(pattern)].map((match) => match[1]);
+  const component = read('assets/js/components/text/text-in.js');
+  const guide = /const GUIDE = \{([\s\S]*?)\n\};/.exec(component)[1];
+  const grader = read('assets/js/lib/text/check-chem.mjs');
+  const solve = /A `textin`:\*\*([\s\S]*?)\n- /.exec(read('docs/briefs/chemistry/solve.md'))[1];
+  const examples = [
+    ...quoted(guide, /(?:: |, )([A-Z0-9][^,']*?)(?=,|\.')/g),
+    ...quoted(grader, /plain numbers, like ([^.']+)\./g),
+    ...quoted(solve, /`([^`]+)`/g).filter((text) => /[A-Z]/.test(text) && !/answerForm/.test(text)),
+  ];
+  assert.ok(examples.includes('Ca3(PO4)2') && examples.includes('2H2 + O2 -> 2H2O') && examples.includes('Na2CO3.10H2O'),
+    `the examples are read: ${examples.join(' | ')}`);
+  const keys = [];
+  for (const file of walkMarkdown(fileURLToPath(new URL('content/', repositoryRoot)))) {
+    const markdown = readFileSync(file, 'utf8');
+    if (!markdown.includes('answerForm=')) continue;
+    for (const item of pageItems(markdown)) {
+      if (item.type === 'textin' && ['formula', 'equation'].includes(item.form)) keys.push({ file, ...item });
+    }
+  }
+  assert.ok(keys.length >= 60, `the formula and equation keys are read (${keys.length})`);
+  for (const example of examples) {
+    for (const key of keys) {
+      assert.notEqual(checkChem(example, key.answer, { form: key.form }).status, 'correct',
+        `${relative(repositoryRootPath, key.file)}:${key.line} is keyed ${key.answer}, the typing example ${example}`);
+    }
+  }
+});

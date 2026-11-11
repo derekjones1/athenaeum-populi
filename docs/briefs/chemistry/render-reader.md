@@ -53,6 +53,14 @@ or serve the site. Do not spawn sub-agents.**
   units, figures). Can the learner tell what to type — the unit, the place,
   the form? Is anything on screen a give-away: a Source note, a footer, a
   hint, the item above?
+- **The widgets' own words**: the typing guide under a formula or
+  equation field, a field's placeholder, the message a wrong response
+  gets. Each is the same on every item of the book, so read it against
+  every key on the page (2.7: the guide's example formula was the key of
+  one item, and nothing told the learner how a hydrate's dot is typed).
+- **Letters that share a glyph**: in the page's sans font a capital I and a
+  lowercase l are one shape (CaI₂ reads as "Cal₂"). Report each formula
+  where the reading changes the substance; it is the parent's to raise.
 - Visual defects: a row cut off at the column edge, clipping, overlap, an
   empty box, a control with no label.
 

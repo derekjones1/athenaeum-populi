@@ -6687,6 +6687,39 @@
       "status": "correct-local-source-defect",
       "errataEntry": 2961,
       "rationale": "The paragraph defines oxyanions as \"polyatomic ions that contain one or more oxygen atoms\". By that wording the hydronium ion in the table of common polyatomic ions directly below, a cation, would be an oxyanion; the module's own glossary defines an oxyanion as a polyatomic anion. The page prints \"polyatomic anions\" with a visible Source note directly after the table of common polyatomic ions, which the paragraph introduces, and a footer clause. Found by the prose claim pass (F8). Authored with chapter 2, ruled by the orchestrator, November 10, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/07-chemical-nomenclature.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68698",
+      "sourceElementIds": [
+        "fs-idp268325312"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2964,
+      "rationale": "The solution of exercise fs-idp268321696 prints the formula of aluminum fluoride trihydrate, part (e), as \"AIF3·3H2O\" with a capital I where the lowercase l of Al belongs; no element has the symbol A, and the module writes \"AlF3\" in part (f) of its first exercise. The page keys the formula item AlF₃·3H₂O with a visible Source note directly after the item and a footer clause; verify-source-keys carries the disclosed deviation. Known from the shape scan before the wave and confirmed by the section's author and checker. Authored with chapter 2, ruled by the orchestrator, November 10, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/07-chemical-nomenclature.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68698",
+      "sourceElementIds": [
+        "fs-idm7968"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2970,
+      "rationale": "The paragraph says the Cr(VI) was used by PG&E \"to fight corrosion in a nearby natural gas pipeline\". PG&E added it to the cooling-tower water of its Hinkley compressor station, as the same box says in its third paragraph (\"to prevent corrosion in cooling tower water, as occurred near Hinckley\"), so the box contradicts itself. The page prints \"to fight corrosion in the cooling towers of a nearby natural gas compressor station\" with a visible Source note directly after the paragraph, inside the box, and a footer clause. Found by the prose claim pass (F2). Authored with chapter 2, ruled by the orchestrator, November 10, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/07-chemical-nomenclature.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68698",
+      "sourceElementIds": [
+        "fs-idp279150320"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2972,
+      "rationale": "The paragraph says a 2010 Environmental Working Group study found that of 35 US cities tested, 31 had higher levels of Cr(VI) than the public health goal of 0.02 parts per billion set by the California Environmental Protection Agency. The 31 of 35 is the count of cities where Cr(VI) was detected, by a method whose detection limit was 0.02 parts per billion; the study compared its results with the goal of 0.06 parts per billion proposed in 2009, which 25 cities exceeded, and the 0.02 parts per billion goal was adopted in July 2011, after the study. The page prints the corrected sentence with a visible Source note directly after the paragraph, inside the box, and a footer clause. Found by the prose claim pass (F1). Authored with chapter 2, ruled by the orchestrator, November 10, 2026."
     }
   ]
 }

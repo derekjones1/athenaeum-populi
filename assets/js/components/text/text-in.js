@@ -38,9 +38,12 @@ const MESSAGES = {
 
 // How a formula or an equation is typed on a plain keyboard. The line sits
 // under the field and is its description (aria-describedby): no stem has to
-// spend a sentence on it, and it says nothing about the answer.
+// spend a sentence on it, and it says nothing about the answer — so its
+// examples are no item's key (a test reads every formula and equation key
+// of the content against them: the first example, Mn3(PO4)2, was the key
+// of a Check Your Learning item of Chemistry 2.7).
 const GUIDE = {
-  formula: 'Type subscripts as plain numbers and a charge after ^: Mn3(PO4)2, SO4^2-.',
+  formula: 'Type subscripts as plain numbers and a charge after ^: Ca3(PO4)2, SO4^2-.',
   equation: 'Type subscripts as plain numbers, a charge after ^, and the arrow as ->: 2H2 + O2 -> 2H2O.',
 };
 let guideCount = 0;
