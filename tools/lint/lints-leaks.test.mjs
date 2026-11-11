@@ -355,6 +355,10 @@ test('the Chemistry book reads the whole periodic table as formulas in prose', (
   // text writes compounds of every element.
   assert.equal(unicodeFormula('Sb2S3'), null, 'antimony is not in the life-sciences set');
   assert.equal(unicodeFormula('Sb2S3', { chemistry: true }), 'Sb₂S₃');
+  // An intravenous fluid's trade name is not deuterium and tungsten (3.4).
+  assert.equal(unicodeFormula('D5W', { chemistry: true }), null);
+  assert.equal(unicodeFormula('D10W', { chemistry: true }), null);
+  assert.equal(unicodeFormula('D2O', { chemistry: true }), 'D₂O', 'heavy water is still a formula');
   assert.equal(unicodeFormula('TeO2', { chemistry: true }), 'TeO₂');
   assert.equal(unicodeFormula('D2O', { chemistry: true }), 'D₂O');
   assert.equal(unicodeFormula('Cu+', { chemistry: true }), 'Cu⁺');

@@ -6924,8 +6924,12 @@ const SOLVED_TOKEN = /^solved:([a-zA-Z])$/;
 // how many units of the last one the value may differ by.
 const SIG_FIGS_TOKEN = /^sig-figs:([1-9])$/;
 const LAST_DIGIT_TOKEN = /^last-digit:([0-2])$/;
+// A relative band, in percent, in place of the last-digit allowance — or on
+// its own, where the count of figures cannot be asked ("Measured quantities").
+const TOLERANCE_TOKEN = /^tolerance:(\d+(?:\.\d+)?)%$/;
+const isMeasuredToken = (token) => SIG_FIGS_TOKEN.test(token) || LAST_DIGIT_TOKEN.test(token) || TOLERANCE_TOKEN.test(token);
 const isParameterizedToken = (token) => DENOMINATOR_TOKEN.test(token) || SOLVED_TOKEN.test(token)
-  || SIG_FIGS_TOKEN.test(token) || LAST_DIGIT_TOKEN.test(token);
+  || isMeasuredToken(token);
 
 /**
  * Split an `answerForm` spec into its tokens, reporting any that name no
@@ -6939,7 +6943,7 @@ export function parseAnswerForm(spec) {
 }
 
 export const ANSWER_FORM_TOKENS = Object.freeze([...Object.keys(FORM_PREDICATES), 'denominator:<n>', 'solved:<variable>',
-  'sig-figs:<n>', 'last-digit:<k>']);
+  'sig-figs:<n>', 'last-digit:<k>', 'tolerance:<p>%']);
 
 /**
  * Feedback for a right value in the wrong shape. It names the shape rather
@@ -7012,7 +7016,7 @@ export function describeAnswerForm(spec) {
     if (figures) return significantFiguresPhrase(Number(figures[1]));
     // The last-digit allowance is how the value is compared, not a shape the
     // learner writes: it has no phrase.
-    if (LAST_DIGIT_TOKEN.test(token)) return null;
+    if (LAST_DIGIT_TOKEN.test(token) || TOLERANCE_TOKEN.test(token)) return null;
     return FORM_PHRASES[token];
   }).filter(Boolean);
   // The number of figures reads last: "in scientific notation to 3
@@ -7033,6 +7037,13 @@ const significantFiguresPhrase = (figures) => `to ${figures} significant figure$
  */
 function measuredFormFeedback(reason, spec) {
   const { figures } = measuredSpec(spec);
+  // A tolerance with no count of figures asks nothing of the digits: the
+  // only thing left to do to a right value is to finish working it out.
+  if (figures === null) {
+    if (reason === 'unworked') return 'That value is right — now finish the calculation and enter just the result.';
+    if (reason === 'percent') return 'That value is right — now write it as a percent, with the % sign.';
+    return describeAnswerForm(spec);
+  }
   const to = significantFiguresPhrase(figures);
   if (reason === 'too-many') return `That value is right — now round it ${to}.`;
   if (reason === 'too-few') return `That agrees with the answer as far as it goes — now give it ${to}.`;
@@ -7762,7 +7773,7 @@ function checkFormToken(studentRaw, token, answerRaw) {
     return numeral !== null && /^(?:\\?%)?$/.test(numeral.rest.trim())
       && numeral.sigMin <= wanted && wanted <= numeral.sigMax;
   }
-  if (LAST_DIGIT_TOKEN.test(token)) return true;
+  if (LAST_DIGIT_TOKEN.test(token) || TOLERANCE_TOKEN.test(token)) return true;
   return FORM_PREDICATES[token](studentRaw, answerRaw);
 }
 
@@ -8491,7 +8502,7 @@ function integerFamilyVerdict(studentRaw, answerRaw, options) {
 }
 
 /* ---------------------------------------------------------------------------
- * Measured quantities: `sig-figs:<n>` with `last-digit:<k>`
+ * Measured quantities: `sig-figs:<n>` with `last-digit:<k>`, and `tolerance:<p>%`
  *
  * A science book keys a computed quantity with the digits its data support —
  * "0.674 M", "4.585 × 10²² atoms" — and both ordinary readings of such a key
@@ -8519,20 +8530,35 @@ function integerFamilyVerdict(studentRaw, answerRaw, options) {
  * tokens of the form (`scientific-notation`, `decimal`, `percent`) are then
  * required of the numeral as written.
  *
+ * `tolerance:<p>%` is the other width for the comparison: a relative band of
+ * p percent of the key. Beside `sig-figs:<n>` it stands in the allowance's
+ * place — the count of figures is still asked, and the response rounded to n
+ * figures must sit inside the band. ALONE it grades the value and nothing
+ * else: where the key was computed from atomic masses with more digits than
+ * the learner's periodic table prints (the source answers 123.896 amu for
+ * P₄; the book's own table gives 123.88), no count of figures can be asked,
+ * and `123.88`, `123.9`, and `123.896` are one answer. The band is set wider
+ * than that rounding noise and narrower than the smallest real mistake — one
+ * hydrogen miscounted is 1.008 amu (Chemistry 2e chapter 3; Derek, November
+ * 11, 2026).
+ *
  * Only a single-numeral key is read this way; a list, a tuple, or an
  * expression key returns null and is graded as before (the content lint
- * refuses `sig-figs` on one).
+ * refuses `sig-figs` and `tolerance` on one).
  * ------------------------------------------------------------------------ */
 function measuredSpec(spec) {
   const { tokens, valid } = parseAnswerForm(spec);
   if (!valid) return null;
   const figures = tokens.find((token) => SIG_FIGS_TOKEN.test(token));
-  if (!figures) return null;
+  const band = tokens.find((token) => TOLERANCE_TOKEN.test(token));
+  if (!figures && !band) return null;
   const lastDigit = tokens.find((token) => LAST_DIGIT_TOKEN.test(token));
+  const tolerance = band ? readNumeral(band.match(TOLERANCE_TOKEN)[1]) : null;
   return {
-    figures: Number(figures.match(SIG_FIGS_TOKEN)[1]),
+    figures: figures ? Number(figures.match(SIG_FIGS_TOKEN)[1]) : null,
     lastDigit: lastDigit ? Number(lastDigit.match(LAST_DIGIT_TOKEN)[1]) : 0,
-    rest: tokens.filter((token) => !SIG_FIGS_TOKEN.test(token) && !LAST_DIGIT_TOKEN.test(token)).join(' '),
+    tolerance,
+    rest: tokens.filter((token) => !isMeasuredToken(token)).join(' '),
   };
 }
 
@@ -8620,7 +8646,8 @@ function measuredVerdict(studentRaw, answerRaw, options = {}) {
     // key's figures, sits within the allowance. The evaluation shows however
     // many digits it happens to (`\frac{1}{2}` shows one), so it is read as
     // a readout to be rounded, never as a count of figures.
-    const readout = { ...writing.value, sigMin: spec.figures + 1, sigMax: spec.figures + 1 };
+    const shown = (spec.figures ?? 0) + 1;
+    const readout = { ...writing.value, sigMin: shown, sigMax: shown };
     return compareMeasured(readout, key, spec).verdict === 'incorrect'
       ? { verdict: 'incorrect' }
       : { verdict: 'form', reason: 'unworked' };
@@ -8666,21 +8693,30 @@ export function measuredKeyProblem(answerRaw, spec, { mode } = {}) {
   const { tokens } = parseAnswerForm(spec);
   const figures = tokens.filter((token) => SIG_FIGS_TOKEN.test(token));
   const allowance = tokens.filter((token) => LAST_DIGIT_TOKEN.test(token));
-  if (figures.length === 0 && allowance.length === 0) return null;
-  if (figures.length !== 1 || allowance.length !== 1) {
-    return 'a measured quantity declares exactly one `sig-figs:<n>` and one `last-digit:<k>` together — `last-digit:0` when the last digit is determined (a rounding drill, arithmetic on printed numbers), `last-digit:1` when it is the uncertain digit of a result computed from measured data';
-  }
-  if (figures[0] === 'sig-figs:1' && allowance[0] !== 'last-digit:0') {
+  const band = tokens.filter((token) => TOLERANCE_TOKEN.test(token));
+  if (figures.length === 0 && allowance.length === 0 && band.length === 0) return null;
+  if (band.length > 0) {
+    // The relative band stands in the allowance's place, or alone.
+    if (band.length !== 1 || allowance.length !== 0 || figures.length > 1) {
+      return 'a `tolerance:<p>%` is declared once, alone (the count of figures is then not graded) or beside one `sig-figs:<n>` in place of `last-digit:<k>` — never with a `last-digit`, which is the other way to say how close is close enough';
+    }
+    const percent = Number(band[0].match(TOLERANCE_TOKEN)[1]);
+    if (!(percent > 0) || percent > 2) {
+      return '`tolerance:<p>%` is a relative band of more than 0 and at most 2 percent — wider than rounding noise, narrower than the smallest real mistake';
+    }
+  } else if (figures.length !== 1 || allowance.length !== 1) {
+    return 'a measured quantity declares exactly one `sig-figs:<n>` and one `last-digit:<k>` together — `last-digit:0` when the last digit is determined (a rounding drill, arithmetic on printed numbers), `last-digit:1` when it is the uncertain digit of a result computed from measured data — or a `tolerance:<p>%` in the allowance\'s place';
+  } else if (figures[0] === 'sig-figs:1' && allowance[0] !== 'last-digit:0') {
     return '`sig-figs:1` has no last digit to spare — one unit of the only figure is a different answer; declare `last-digit:0`';
   }
-  if (mode === 'unordered') return '`sig-figs` grades one number; it cannot be declared with answerMode="unordered"';
+  if (mode === 'unordered') return '`sig-figs` and `tolerance` grade one number; neither can be declared with answerMode="unordered"';
   const key = readNumeral(bareLatex(answerRaw ?? ''));
   const rest = key === null ? null : key.rest.trim();
   if (key === null || key.mantissa === 0n || (rest !== '' && !PERCENT_SIGN_ONLY.test(rest))) {
-    return '`sig-figs` grades ONE nonzero number — a decimal or `a\\times10^{n}` — so a list, a pair, a labelled or an expression key cannot declare it; give each quantity its own fill-in';
+    return '`sig-figs` and `tolerance` grade ONE nonzero number — a decimal or `a\\times10^{n}` — so a list, a pair, a labelled or an expression key cannot declare either; give each quantity its own fill-in';
   }
   if (rest !== '' && !tokens.includes('percent')) {
-    return 'a `sig-figs` key that ends in `\\%` declares `percent` too, or drops the sign and names the percent in the question';
+    return 'a `sig-figs` or `tolerance` key that ends in `\\%` declares `percent` too, or drops the sign and names the percent in the question';
   }
   return null;
 }

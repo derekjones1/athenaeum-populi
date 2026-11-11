@@ -2373,6 +2373,845 @@
       "transparent": false,
       "alt": "Figure A shows a photo of Erin Brockovich. Figure B shows 3-D ball-and-stick models of chromate and dichromate. Chromate has a chromium atom at its center bonded to four oxygen atoms. Two of the oxygen atoms are single-bonded to chromium atom while the other two are double-bonded. The structure of dichromate consists of two chromate ions bonded together by a shared oxygen atom to which each chromate atom has a single bond.",
       "caption": "(a) Erin Brockovich found that Cr(VI), used by PG&E, had contaminated the Hinckley, California, water supply. (b) The Cr(VI) ion is often present in water as the polyatomic ions chromate, CrO 4 2− (left), and dichromate, Cr 2 O 7 2− (right)."
+    },
+    "CNX_Chem_03_00_Pool": {
+      "source": "media/CNX_Chem_03_00_Pool.jpg",
+      "sourceSha256": "cf00a0542152d404baf10f9bafb4e0b37fac5f43ece4288e282277116f944896",
+      "module": "m68699",
+      "kind": "photo",
+      "width": 1300,
+      "height": 600,
+      "variants": [
+        {
+          "width": 800,
+          "height": 369,
+          "file": "CNX_Chem_03_00_Pool-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 600,
+          "file": "CNX_Chem_03_00_Pool-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a swimming pool that is full of water and surrounded by a concrete patio.",
+      "caption": "The water in a swimming pool is a complex mixture of substances whose relative amounts must be carefully maintained to ensure the health and comfort of people using the pool. (credit: modification of work by Vic Brincat)"
+    },
+    "CNX_Chem_03_01_Ex01_05a_img": {
+      "source": "media/CNX_Chem_03_01_Ex01_05a_img.jpg",
+      "sourceSha256": "39ce9a2cd3dfff56bd35923023dcb1166687509a221f27e1fea521f96be220a4",
+      "module": "m68700",
+      "kind": "photo",
+      "width": 325,
+      "height": 125,
+      "variants": [
+        {
+          "width": 325,
+          "height": 125,
+          "file": "CNX_Chem_03_01_Ex01_05a_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A structure is shown. A C atom is bonded to two C l atoms and forms a double bond with one O atom.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_03_01_Ex01_05b_img": {
+      "source": "media/CNX_Chem_03_01_Ex01_05b_img.jpg",
+      "sourceSha256": "89399b58410a5a7bead09abe2757e68a9f4b358a82775c076c193468d953bb59",
+      "module": "m68700",
+      "kind": "photo",
+      "width": 325,
+      "height": 31,
+      "variants": [
+        {
+          "width": 325,
+          "height": 31,
+          "file": "CNX_Chem_03_01_Ex01_05b_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A structure is shown. Two C atoms form a triple bond with each other. Each C atom also forms a single bond with on H atom.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_03_01_Ex01_05c_img": {
+      "source": "media/CNX_Chem_03_01_Ex01_05c_img.jpg",
+      "sourceSha256": "df5d02fabbfa2084f87995fbddbadb002ecde305fb59d6391c7450d327f4c062",
+      "module": "m68700",
+      "kind": "photo",
+      "width": 325,
+      "height": 117,
+      "variants": [
+        {
+          "width": 325,
+          "height": 117,
+          "file": "CNX_Chem_03_01_Ex01_05c_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A structure is shown. Two C atoms form double bonds with each other. Each C atom also forms a single bond with an H atom and a B r atom.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_03_01_Ex01_05d_img": {
+      "source": "media/CNX_Chem_03_01_Ex01_05d_img.jpg",
+      "sourceSha256": "1e21466c369b9c727ba0336f5acd3c224f1c8d352489b4f3fe305434115cc794",
+      "module": "m68700",
+      "kind": "photo",
+      "width": 325,
+      "height": 136,
+      "variants": [
+        {
+          "width": 325,
+          "height": 136,
+          "file": "CNX_Chem_03_01_Ex01_05d_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A structure is shown. An S atom forms double bonds with two O atoms. The S atom also forms a single bond with an O atom which forms a single bond with an H atom. The S atom also forms a single bond with another O atom which forms a single bond with another H atom.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_03_01_Ex01_06a_img": {
+      "source": "media/CNX_Chem_03_01_Ex01_06a_img.jpg",
+      "sourceSha256": "74191b8350de6746522867aaa018d360d825bf4ad406029353156d26e6fb26e8",
+      "module": "m68700",
+      "kind": "photo",
+      "width": 325,
+      "height": 122,
+      "variants": [
+        {
+          "width": 325,
+          "height": 122,
+          "file": "CNX_Chem_03_01_Ex01_06a_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A structure is shown. Two C atoms form double bonds with each other. The C atom on the left forms a single bond with two H atoms each. The C atom on the right forms a single bond with an H atom and with a C H subscript 2 C H subscript 3 group.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_03_01_Ex01_06b_img": {
+      "source": "media/CNX_Chem_03_01_Ex01_06b_img.jpg",
+      "sourceSha256": "5239076af82320c445e4d906795f6e9faa3802726216f3b73c5c28437ca76006",
+      "module": "m68700",
+      "kind": "photo",
+      "width": 325,
+      "height": 134,
+      "variants": [
+        {
+          "width": 325,
+          "height": 134,
+          "file": "CNX_Chem_03_01_Ex01_06b_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A structure is shown. There is a C atom which forms single bonds with three H atoms each. This C atom is bonded to another C atom. This second C atom forms a triple bond with another C atom which forms a single bond with a fourth C atom. The fourth C atom forms single bonds with three H atoms each.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_03_01_Ex01_06c_img": {
+      "source": "media/CNX_Chem_03_01_Ex01_06c_img.jpg",
+      "sourceSha256": "a64824ff6b01a94bcabd14002a156a9171b9912307b13ab54c48ec94f1d76de6",
+      "module": "m68700",
+      "kind": "photo",
+      "width": 325,
+      "height": 134,
+      "variants": [
+        {
+          "width": 325,
+          "height": 134,
+          "file": "CNX_Chem_03_01_Ex01_06c_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A structure is shown. An S i atom forms a single bond with a C l atom, a single bond with a C l atom, a single bond with an H atom, and a single bond with another S i atom. The second S i atom froms a single bond with a C l atom, a single bond with a C l atom, and a single bond with an H atom.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_03_01_Ex01_06d_img": {
+      "source": "media/CNX_Chem_03_01_Ex01_06d_img.jpg",
+      "sourceSha256": "c19909a3763b6e9448104fcdba18eb8825661e6365b043d8840b000459f620a1",
+      "module": "m68700",
+      "kind": "photo",
+      "width": 325,
+      "height": 135,
+      "variants": [
+        {
+          "width": 325,
+          "height": 135,
+          "file": "CNX_Chem_03_01_Ex01_06d_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A structure is shown. A P atom forms a double bond with an O atom. It also forms a single bond with an O atom which forms a single bond with an H atom. It also forms a single bond with another O atom which forms a single bond with an H atom. It also forms a single bond with another O atom which forms a single bond with an H atom.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_03_01_Ex01_07a_img": {
+      "source": "media/CNX_Chem_03_01_Ex01_07a_img.jpg",
+      "sourceSha256": "97c0300acdf1c093f3489ce9a571a610e465374e1b80770f9e4e21523cd19f0f",
+      "module": "m68700",
+      "kind": "photo",
+      "width": 325,
+      "height": 36,
+      "variants": [
+        {
+          "width": 325,
+          "height": 36,
+          "file": "CNX_Chem_03_01_Ex01_07a_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A structure is shown. A C atom forms a triple bond with another C atom. Each C atom also forms a single bond with an H atom.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_03_01_Ex01_07b_img": {
+      "source": "media/CNX_Chem_03_01_Ex01_07b_img.jpg",
+      "sourceSha256": "d5c00e3c005ce286f619bc404369539490badb45af090a3911ec3d944f06d505",
+      "module": "m68700",
+      "kind": "photo",
+      "width": 325,
+      "height": 118,
+      "variants": [
+        {
+          "width": 325,
+          "height": 118,
+          "file": "CNX_Chem_03_01_Ex01_07b_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A structure is shown. Two C atoms form a double bond with each other. Each C atom also forms a single bond with two H atoms.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_03_01_Ex01_07c_img": {
+      "source": "media/CNX_Chem_03_01_Ex01_07c_img.jpg",
+      "sourceSha256": "5a3d6fa0c72321a5df6a31597997eb4490783c0710c8b27598d699862cbe08c8",
+      "module": "m68700",
+      "kind": "photo",
+      "width": 325,
+      "height": 133,
+      "variants": [
+        {
+          "width": 325,
+          "height": 133,
+          "file": "CNX_Chem_03_01_Ex01_07c_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A structure is shown. A C atom forms a single bond with three H atoms each and with another C atom. The second C atom also forms a single bond with three H atoms each.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_03_01_alsulfatemass_img": {
+      "source": "media/CNX_Chem_03_01_alsulfatemass_img.jpg",
+      "sourceSha256": "4e1b17dca743696f41e410ddb1f5edfae413cf04c9d5640e5c052dd9cf4c551a",
+      "module": "m68700",
+      "kind": "photo",
+      "width": 1200,
+      "height": 320,
+      "variants": [
+        {
+          "width": 800,
+          "height": 213,
+          "file": "CNX_Chem_03_01_alsulfatemass_img-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 320,
+          "file": "CNX_Chem_03_01_alsulfatemass_img-1200.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A table is shown that is made up of six columns and five rows. The header row reads: “Element,” “Quantity,” a blank space, “Average atomic mass (a m u),” a blank space, and “Subtotal (a m u).” The first column contains the symbols “A l,” “S,” “O,” and a merged cell. The merged cell runs the length of the first five columns. The second column contains the numbers “2,” “3,” and “12” as well as the merged cell. The third column contains the multiplication symbol in each cell except for the last, merged cell. The fourth column contains the numbers “26.98,” “32.06,” and “16.00” as well as the merged cell. The fifth column contains the symbol “=” in each cell except for the last, merged cell. The sixth column contains the values “53.96,” “96.18,” “192.00,” and “342.14.” There is a thick black line under the number 192.00. The merged cell under the first five columns reads “Formula mass.” To the right of this table is a ball-and-stick structure. It shows yellow and grey sphere connected to red spheres in a complex pattern. The yellow and grey spheres are similar in size, but the red spheres appear to be smaller by comparison.",
+      "caption": ""
+    },
+    "CNX_Chem_03_01_aspirin": {
+      "source": "media/CNX_Chem_03_01_aspirin.jpg",
+      "sourceSha256": "00ad47c7d19e12729522bf7ebf52c3e7d877dfc35eba7048cb77317500c1436d",
+      "module": "m68700",
+      "kind": "photo",
+      "width": 1174,
+      "height": 317,
+      "variants": [
+        {
+          "width": 800,
+          "height": 216,
+          "file": "CNX_Chem_03_01_aspirin-800.webp"
+        },
+        {
+          "width": 1174,
+          "height": 317,
+          "file": "CNX_Chem_03_01_aspirin-1174.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A table and diagram are shown. The table is made up of six columns and five rows. The header row reads: “Element,” “Quantity,” a blank space, “Average atomic mass (a m u),” a blank space, and “Subtotal (a m u).” The first column contains the symbols “C,” “H,” “O,” and a merged cell. The merged cell runs the length of the first five columns. The second column contains the numbers “9,” “8,” and “4” as well as the merged, cell. The third column contains the multiplication symbol in each cell except for the last, merged cell. The fourth column contains the numbers “12.01,” “1.008,” and “16.00” as well as the merged cell. The fifth column contains the symbol “=” in each cell except for the last, merged cell. The sixth column contains the values: “108.09,” “8.064,” “64.00,” and “180.15.” There is a thick black line below the number 64.00. The merged cell under the first five columns reads “Molecular mass.” To the left of the table is a diagram of a molecule. Six black spheres are located in a six-sided ring and connected by alternating double and single black bonds. Attached to each of the four black spheres is one smaller white sphere. Attached to the farthest right black sphere is a red sphere, connected to two more black spheres, all in a row. Attached to the last black sphere of that row are two more white spheres. Attached to the first black sphere of that row is another red sphere. A black sphere, attached to two red spheres and a white sphere is attached to the black sphere on the top right of the six-sided ring.",
+      "caption": "The average mass of an aspirin molecule is 180.15 amu. The model shows the molecular structure of aspirin, C 9 H 8 O 4 ."
+    },
+    "CNX_Chem_03_01_brain-ec0b": {
+      "source": "media/CNX_Chem_03_01_brain-ec0b.jpg",
+      "sourceSha256": "52891510ac4288b57748dd751db08dd80c21bd9641cf954e49dd8282a6b0469a",
+      "module": "m68700",
+      "kind": "photo",
+      "width": 700,
+      "height": 347,
+      "variants": [
+        {
+          "width": 700,
+          "height": 347,
+          "file": "CNX_Chem_03_01_brain-ec0b-700.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two pictures are shown. The left picture shows the human brain. The right picture is a microscopic image that depicts two large irregularly shaped masses in a field of threadlike material interspersed with smaller, relatively round masses. The two larger masses are labeled with arrows and the phrase “Neuron cells.”",
+      "caption": "(a) A typical human brain weighs about 1.5 kg and occupies a volume of roughly 1.1 L. (b) Information is transmitted in brain tissue and throughout the central nervous system by specialized cells called neurons (micrograph shows cells at 1600× magnification).",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_03_01_chloroform": {
+      "source": "media/CNX_Chem_03_01_chloroform.jpg",
+      "sourceSha256": "872467fcdcd276f7d3c48c626a00e211ebed92f22f3e73ebd8131f52e53c66a7",
+      "module": "m68700",
+      "kind": "photo",
+      "width": 1300,
+      "height": 319,
+      "variants": [
+        {
+          "width": 800,
+          "height": 196,
+          "file": "CNX_Chem_03_01_chloroform-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 319,
+          "file": "CNX_Chem_03_01_chloroform-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A table and diagram are shown. The table is made up of six columns and five rows. The header row reads: “Element,” “Quantity,” a blank space, “Average atomic mass (a m u),” a blank space, and “Subtotal (a m u).” The first column contains the symbols “C,” “H,” “C l” and a blank, merged cell that runs the width of the first five columns. The second column contains the numbers “1,” “1,” and “3” as well as the merged cell. The third column contains the multiplication symbol in each cell except for the last, merged cell. The fourth column contains the numbers “12.01,” “1.008,” and “35.45” as well as the merged cell. The fifth column contains the symbol “=” in each cell except for the last, merged cell. The sixth column contains the values “12.01,” “1.008,” “106.35,” and “119.37.” There is a thick black line below the number 106.35. The merged cell under the first five columns reads “Molecular mass.” To the left of the table is a diagram of a molecule. Three green spheres are attached to a slightly smaller black sphere, which is also attached to a smaller white sphere. The green spheres lie beneath and to the sides of the black sphere while the white sphere is located straight up from the black sphere.",
+      "caption": "The average mass of a chloroform molecule, CHCl 3 , is 119.37 amu, which is the sum of the average atomic masses of each of its constituent atoms. The model shows the molecular structure of chloroform."
+    },
+    "CNX_Chem_03_01_exocytosis-88f6": {
+      "source": "media/CNX_Chem_03_01_exocytosis-88f6.jpg",
+      "sourceSha256": "6c6bee4e2762b08654a5ddc751a375f21f58e904a98d9299415af6fb49e308c9",
+      "module": "m68700",
+      "kind": "photo",
+      "width": 700,
+      "height": 390,
+      "variants": [
+        {
+          "width": 700,
+          "height": 390,
+          "file": "CNX_Chem_03_01_exocytosis-88f6-700.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two diagrams are shown. In the upper left corner of the left diagram, an oval with a darkened center that has five short, branching appendages and one long tail-like appendage is shown and connected by an arrow to another image. This image depicts a close-up view of the oval section and its interaction with the tail-like portion of a similar structure. The close up view is composed of a narrow tube labeled “neuron” leading down to a bulbous base that holds thirteen circles filled with small dots. These circles are labeled “vesicles.” The base of the bulbous structure is next to a curved object labeled “neuron” and very small dots are emerging from the bulb’s base and flowing toward the curved structure. The gap in between the two structures is labeled “synapse,” and the small dots are labeled “neurotransmitters.” The diagram on the right depicts a molecule composed of six black spheres connected by alternating double and single bonds in a hexagonal ring with other spheres attached to it. Three of the black spheres are connected to one smaller, white sphere each. Two of the black balls are connected to a smaller red sphere each. Each red sphere is connected to a smaller, white sphere. One black sphere is connected to another black sphere. It is connected to two smaller, white spheres and another black sphere. This second black sphere is connected to two smaller white spheres, and a slightly smaller blue sphere. The blue sphere is connected to two smaller, white spheres.",
+      "caption": "(a) Chemical signals are transmitted from neurons to other cells by the release of neurotransmitter molecules into the small gaps (synapses) between the cells. (b) Dopamine, C 8 H 11 NO 2 , is a neurotransmitter involved in a number of neurological processes."
+    },
+    "CNX_Chem_03_01_glycinemass_img": {
+      "source": "media/CNX_Chem_03_01_glycinemass_img.jpg",
+      "sourceSha256": "0fff0c45e7437fe0f7a60ad844300382dc6b35ade4668941c9a726980bdfbbfc",
+      "module": "m68700",
+      "kind": "photo",
+      "width": 1200,
+      "height": 411,
+      "variants": [
+        {
+          "width": 800,
+          "height": 274,
+          "file": "CNX_Chem_03_01_glycinemass_img-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 411,
+          "file": "CNX_Chem_03_01_glycinemass_img-1200.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A table is shown that is made up of six columns and six rows. The header row reads: “Element,” “Quantity (mol element / mol compound,” a blank space, “Molar mass (g / mol element),” a blank space, and “Subtotal (a m u).” The first column contains the symbols “C,” “H,” “O,” “N,” and a merged cell. The merged cell runs the width of the first five columns. The second column contains the numbers “2,” “5,” “2,” and “1” as well as the merged cell. The third column contains the multiplication symbol in each cell except for the last, merged cell. The fourth column contains the numbers “12.01,” “1.008,” “16.00,” and “14.007” as well as the merged cell. The fifth column contains the symbol “=” in each cell except for the last, merged cell. The sixth column contains the values “24.02,” “5.040,” “32.00,” “14.007,” and “75.07.” There is a thick black line under the number 14.007. The merged cell under the first five columns reads “Molar mass (g / mol compound). There is a ball-and-stick drawing to the right of this table. It shows a black sphere that forms a double bond with a slightly smaller red sphere, a single bond with another red sphere, and a single bond with another black sphere. The red sphere that forms a single bond with the black sphere also forms a single bond with a smaller, white sphere. The second black sphere forms a single bond with a smaller, white sphere and a smaller blue sphere. The blue sphere forms a single bond with two smaller, white spheres each.",
+      "caption": ""
+    },
+    "CNX_Chem_03_01_ibuprofenmass_img": {
+      "source": "media/CNX_Chem_03_01_ibuprofenmass_img.jpg",
+      "sourceSha256": "1b8e6c7ece4ff4a5a5a78945d029f6d7fe34fe05d4d4374050a0cdf0f9357487",
+      "module": "m68700",
+      "kind": "photo",
+      "width": 1196,
+      "height": 318,
+      "variants": [
+        {
+          "width": 800,
+          "height": 212,
+          "file": "CNX_Chem_03_01_ibuprofenmass_img-800.webp"
+        },
+        {
+          "width": 1196,
+          "height": 318,
+          "file": "CNX_Chem_03_01_ibuprofenmass_img-1196.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A table is shown that is made up of six columns and five rows. The header row reads: “Element,” “Quantity,” a blank space, “Average atomic mass (a m u),” a blank space, and “Subtotal (a m u).” The first column contains the symbols “C,” “H,” “O,” and a merged cell. The merged cell runs the length of the first five columns. The second column contains the numbers “13,” “8,” and “2” as well as the merged cell. The third column contains the multiplication symbol in each cell except for the last, merged cell. The fourth column contains the numbers “12.01,” “1.008,” and “16.00” as well as the merged cell. The fifth column contains the symbol “=” in each cell except for the last, merged cell. The sixth column contains the values “156.13,” “18.114,” “32.00,” and “206.27.” There is a thick black line below the number 32.00. The merged cell under the first five columns reads “Molecular mass.” To the right is a ball-and-stick model of the structure. At the center, it shows six black spheres arranged in a six-sided ring with alternating double bonds. The two black spheres at the top and bottom of the six-sided ring are each bonded to one, smaller, white sphere. The black sphere on the left side of the six-sided ring is connect to another black sphere. This sphere is connected to two smaller, white spheres and another black sphere. This black sphere is connected to one, smaller white sphere, and two other black spheres. Each of these last two black spheres is connected to two smaller, white spheres. The black sphere on the right side of the six-sided ring is connected to another black sphere. This black sphere is connected to one smaller, white sphere and two other black spheres. The black sphere that is connected to it and is situated to the top right is connected to two smaller, white spheres. The black sphere connected towards the bottom right is connected to two red spheres. It forms a double bond with one of these red spheres and the other red sphere is connected to a smaller, white sphere.",
+      "caption": ""
+    },
+    "CNX_Chem_03_01_saltMass": {
+      "source": "media/CNX_Chem_03_01_saltMass.jpg",
+      "sourceSha256": "88970a6a98ce79c0a65b26e3e34eed2b41176eb23886e173d0ab1d2d591de80c",
+      "module": "m68700",
+      "kind": "photo",
+      "width": 1300,
+      "height": 262,
+      "variants": [
+        {
+          "width": 800,
+          "height": 161,
+          "file": "CNX_Chem_03_01_saltMass-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 262,
+          "file": "CNX_Chem_03_01_saltMass-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A table and diagram are shown. The table is made up of six columns and four rows. The header row reads: “Element,” “Quantity,” a blank space, “Average atomic mass (a m u),” a blank space and “Subtotal (a m u).” The first column contains the symbols “N a”, “C l,” and a merged cell. The merged cell runs the length of the first five columns. The second column contains the numbers “1” and “1” as well as the merged cell. The third column contains the multiplication symbol in each cell except for the last, merged cell. The fourth column contains the numbers “22.99” and “35.45” as well as the merged cell. The fifth column contains the symbol “=” in each cell except for the last, merged cell. The sixth column contains the values “22.99,” “35.45,” and “58.44.” There is a thick black line below the number “35.45.” The merged cell under the first five columns reads “Formula mass.” To the left of the table is a diagram of a chemical structure. The diagram shows green and purple spheres placed in an alternating pattern, making up the corners of eight stacked cubes to form one larger cube. The green spheres are slightly smaller than the purple spheres.",
+      "caption": "Table salt, NaCl, contains an array of sodium and chloride ions combined in a 1:1 ratio. Its formula mass is 58.44 amu."
+    },
+    "CNX_Chem_03_02_argon_img-9025": {
+      "source": "media/CNX_Chem_03_02_argon_img-9025.jpg",
+      "sourceSha256": "7d58ba2df558d2f5153730f1ea8ff857927effd882190e4d44ff6d7b4644bbc1",
+      "module": "m68700",
+      "kind": "photo",
+      "width": 650,
+      "height": 147,
+      "variants": [
+        {
+          "width": 650,
+          "height": 147,
+          "file": "CNX_Chem_03_02_argon_img-9025-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram of two boxes connected by a right-facing arrow is shown. The box on the left contains the phrase, “Moles of A r atoms ( mol )” while the one on the right contains the phrase, “Mass of A r atoms ( g ).” There is a phrase under the arrow that says “Multiply by molar mass ( g / mol ).”",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_03_02_compound": {
+      "source": "media/CNX_Chem_03_02_compound.jpg",
+      "sourceSha256": "dfb138990044baaa8e467914fadcc97b5d339ad9d5f54bf234dde9ccb55dd3d8",
+      "module": "m68700",
+      "kind": "photo",
+      "width": 650,
+      "height": 433,
+      "variants": [
+        {
+          "width": 650,
+          "height": 433,
+          "file": "CNX_Chem_03_02_compound-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photo shows two vials filled with a colorless liquid. It also shows two bowls: one filled with an off-white powder and one filled with a bright red powder.",
+      "caption": "Each sample contains 6.02 × 10 23 molecules or formula units—1.00 mol of the compound or element. Clock-wise from the upper left: 130.2 g of C 8 H 17 OH (1-octanol, formula mass 130.2 amu), 454.4 g of HgI 2 (mercury(II) iodide, formula mass 454.4 amu), 32.0 g of CH 3 OH (methanol, formula mass 32.0 amu) and 256.5 g of S 8 (sulfur, formula mass 256.5 amu). (credit: Sahar Atwa)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_03_02_copper": {
+      "source": "media/CNX_Chem_03_02_copper.jpg",
+      "sourceSha256": "086863d202df743f2b1462db9594cec15831a61ff63c0637e50dc8824b369342",
+      "module": "m68700",
+      "kind": "photo",
+      "width": 360,
+      "height": 479,
+      "variants": [
+        {
+          "width": 360,
+          "height": 479,
+          "file": "CNX_Chem_03_02_copper-360.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A close-up photo of a spool of copper wire is shown.",
+      "caption": "Copper wire is composed of many, many atoms of Cu. (credit: Emilian Robert Vicol)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_03_02_copperMoles_img-a962": {
+      "source": "media/CNX_Chem_03_02_copperMoles_img-a962.jpg",
+      "sourceSha256": "45a63b3f6000bcfead2636af56d79692f93fd7c3eb4dec2b3c8f8dca3fc8b8a3",
+      "module": "m68700",
+      "kind": "photo",
+      "width": 1200,
+      "height": 173,
+      "variants": [
+        {
+          "width": 800,
+          "height": 115,
+          "file": "CNX_Chem_03_02_copperMoles_img-a962-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 173,
+          "file": "CNX_Chem_03_02_copperMoles_img-a962-1200.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram of three boxes connected by a right-facing arrow in between each is shown. The box on the left contains the phrase, “Mass of C u atoms ( g ),” the middle box reads, “Moles of C u atoms ( mol ),” while the one on the right contains the phrase, “Number of C u atoms.” There is a phrase under the left arrow that says “Divide by molar mass (g / mol),” and under the right arrow it states, “Multiply by Avogadro’s number ( mol superscript negative one ).”",
+      "caption": ""
+    },
+    "CNX_Chem_03_02_glycine_img-7c96": {
+      "source": "media/CNX_Chem_03_02_glycine_img-7c96.jpg",
+      "sourceSha256": "60ab2063348441a265e90083cec26549173d120b864733f397d6f06d27ffd050",
+      "module": "m68700",
+      "kind": "photo",
+      "width": 650,
+      "height": 147,
+      "variants": [
+        {
+          "width": 650,
+          "height": 147,
+          "file": "CNX_Chem_03_02_glycine_img-7c96-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram of two boxes connected by a right-facing arrow is shown. The box on the left contains the phrase, “Mass of C subscript 2 H subscript 5 O subscript 2 N ( g )” while the box on the right contains the phrase, “Moles of C subscript 2 H subscript 5 O subscript 2 N ( mol ).” There is a phrase under the arrow that says “Divide by molar mass (g / mol).”",
+      "caption": ""
+    },
+    "CNX_Chem_03_02_moles-6296": {
+      "source": "media/CNX_Chem_03_02_moles-6296.jpg",
+      "sourceSha256": "e2f7e0757ca8c5b12a1183f8e9dc26c8204aac32f642f0a436dc89cc95cacc18",
+      "module": "m68700",
+      "kind": "photo",
+      "width": 700,
+      "height": 463,
+      "variants": [
+        {
+          "width": 700,
+          "height": 463,
+          "file": "CNX_Chem_03_02_moles-6296-700.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure contains eight different substances displayed on white circles. The amount of each substance is visibly different.",
+      "caption": "Each sample contains 6.022 × 10 23 atoms —1.00 mol of atoms. From left to right (top row): 65.4 g zinc, 12.0 g carbon, 24.3 g magnesium, and 63.5 g copper. From left to right (bottom row): 32.1 g sulfur, 28.1 g silicon, 207 g lead, and 118.7 g tin. (credit: modification of work by Mark Ott)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_03_02_potassium_img-f1d1": {
+      "source": "media/CNX_Chem_03_02_potassium_img-f1d1.jpg",
+      "sourceSha256": "13af29b0a88d0550c459bedbdb09ea270b872c7f3d74e00e9d60f88ca9a96ca9",
+      "module": "m68700",
+      "kind": "photo",
+      "width": 650,
+      "height": 147,
+      "variants": [
+        {
+          "width": 650,
+          "height": 147,
+          "file": "CNX_Chem_03_02_potassium_img-f1d1-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram of two boxes connected by a right-facing arrow is shown. The box on the left contains the phrase, “Mass of K atoms ( g )” while the one on the right contains the phrase, “Moles of K atoms ( mol ).” There is a phrase under the arrow that says, “Divide by molar mass (g / mol).”",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_03_02_sacch_img-3278": {
+      "source": "media/CNX_Chem_03_02_sacch_img-3278.jpg",
+      "sourceSha256": "1fb7781ff9a963044c1662fc915d2906b146446182ee5a8077a7a33bfff294fe",
+      "module": "m68700",
+      "kind": "photo",
+      "width": 1200,
+      "height": 178,
+      "variants": [
+        {
+          "width": 800,
+          "height": 118,
+          "file": "CNX_Chem_03_02_sacch_img-3278-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 178,
+          "file": "CNX_Chem_03_02_sacch_img-3278-1200.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram of three boxes connected by a right-facing arrow in between each is shown. The box on the left contains the phrase, “Mass of C subscript seven H subscript five N O subscript three S ( g ),” the middle box reads, “Moles of C subscript seven H subscript five N O subscript three S ( mol ),” while the one on the right contains the phrase, “Number of C subscript seven H subscript five N O subscript three S molecules.” There is a phrase under the left arrow that says, “Divide by molar mass (g / mol),” and under the right arrow it states, “Multiply by Avogadro’s number ( mol superscript negative one).”",
+      "caption": ""
+    },
+    "CNX_Chem_03_02_saccharin_img": {
+      "source": "media/CNX_Chem_03_02_saccharin_img.jpg",
+      "sourceSha256": "65321a55b9374f3ff347daf2d9f5bd3e5f36d901e5388988cfdacac2ce27b42e",
+      "module": "m68700",
+      "kind": "photo",
+      "width": 325,
+      "height": 256,
+      "variants": [
+        {
+          "width": 325,
+          "height": 256,
+          "file": "CNX_Chem_03_02_saccharin_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram of a molecule is shown that is made up of two ring structures attached together. The left ring is hexagonal in shape with C atoms at each point of the ring and alternating single and double bonds. A double bond occurs between the C atom at the top vertex of the hexagon and the C atom down and to the left of it. The C atoms on the left, top, and bottom of the structure form a single bond to an H atom each. The two right C atoms make up one side of a pentagon and the other points of the pentagon are made up of a C atom, an N atom, and an S atom if read clockwise. The C atom forms a double bond with an O atom. The N atom forms a single bond with an H atom. The S atom forms two double bonds to two O atoms.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_03_02_vitC_img-e537": {
+      "source": "media/CNX_Chem_03_02_vitC_img-e537.jpg",
+      "sourceSha256": "a7f4e1d91c54bd1cfcd2a88d46c3fcb447d53add4503d5357e17cfbb8c467297",
+      "module": "m68700",
+      "kind": "photo",
+      "width": 975,
+      "height": 147,
+      "variants": [
+        {
+          "width": 800,
+          "height": 120,
+          "file": "CNX_Chem_03_02_vitC_img-e537-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 147,
+          "file": "CNX_Chem_03_02_vitC_img-e537-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram of two boxes connected by a right-facing arrow is shown. The box on the left contains the phrase, “Moles of vitamin C ( mol )” while the one the right contains the phrase, “Mass of vitamin C ( g )”. There is a phrase under the arrow that says “Multiply by molar mass (g / mol).”",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_03_02_water": {
+      "source": "media/CNX_Chem_03_02_water.jpg",
+      "sourceSha256": "d53e738232561e2483523b22bbff8eae94f5b685dfe54d8b267fb32dbc5f5dde",
+      "module": "m68700",
+      "kind": "photo",
+      "width": 650,
+      "height": 647,
+      "variants": [
+        {
+          "width": 650,
+          "height": 647,
+          "file": "CNX_Chem_03_02_water-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A close-up photo of a water droplet on a leaf is shown. The water droplet is not perfectly spherical.",
+      "caption": "The number of molecules in a single droplet of water is roughly 100 billion times greater than the number of people on earth. (credit: “tanakawho”/Wikimedia commons)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_03_03_BrewTank": {
+      "source": "media/CNX_Chem_03_03_BrewTank.jpg",
+      "sourceSha256": "50089f8d31c3f8658fcc567a307537d412010cda67a57434284b51f0d6cf79df",
+      "module": "m68702",
+      "kind": "photo",
+      "width": 650,
+      "height": 622,
+      "variants": [
+        {
+          "width": 650,
+          "height": 622,
+          "file": "CNX_Chem_03_03_BrewTank-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A picture is shown of four copper-colored industrial containers with a large pipe connecting to the top of each one.",
+      "caption": "An oxide of carbon is removed from these fermentation tanks through the large copper pipes at the top. (credit: “Dual Freq”/Wikimedia Commons)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_03_03_empform": {
+      "source": "media/CNX_Chem_03_03_empform.jpg",
+      "sourceSha256": "20e42eb634e6205043aa7071746f45a0b668f941f1695d3da8c0a58447f72139",
+      "module": "m68702",
+      "kind": "photo",
+      "width": 1300,
+      "height": 299,
+      "variants": [
+        {
+          "width": 800,
+          "height": 184,
+          "file": "CNX_Chem_03_03_empform-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 299,
+          "file": "CNX_Chem_03_03_empform-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A flow chart is shown that is composed of six boxes, two of which are connected together by a right facing arrow and located above two more that are also connected by a right-facing arrow. These two rows of boxes are connected vertically by a line that leads to a right-facing arrow and the last two boxes, connected by a final right facing arrow. The first two upper boxes have the phrases, “Mass of A atoms” and “Moles of A atoms” respectively, while the arrow that connects them has the phrase, “Divide by molar mass,” written below it. The second two bottom boxes have the phrases, “Mass of X atoms” and “Moles of X atoms” respectively, while the arrow that connects them has the phrase, “Divide by molar mass” written below it. The arrow that connects the upper and lower boxes to the last two boxes has the phrase “Divide by lowest number of moles” written below it. The last two boxes have the phrases, “A to X mole ratio” and “Empirical formula” respectively, while the arrow that connects them has the phrase, “Convert ratio to lowest whole numbers” written below it.",
+      "caption": "The empirical formula of a compound can be derived from the masses of all elements in the sample."
+    },
+    "CNX_Chem_03_03_espresso": {
+      "source": "media/CNX_Chem_03_03_espresso.jpg",
+      "sourceSha256": "fe3bdc1f8da6e2a1f00fc73cde0b25811c8e1e173526b9dca9ed7e1ba7c7129a",
+      "module": "m68703",
+      "kind": "photo",
+      "width": 650,
+      "height": 570,
+      "variants": [
+        {
+          "width": 650,
+          "height": 570,
+          "file": "CNX_Chem_03_03_espresso-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A picture is shown of sugar being poured from a spoon into a cup.",
+      "caption": "Sugar is one of many components in the complex mixture known as coffee. The amount of sugar in a given amount of coffee is an important determinant of the beverage’s sweetness. (credit: Jane Whitney)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_03_03_hematite": {
+      "source": "media/CNX_Chem_03_03_hematite.jpg",
+      "sourceSha256": "f3410b646c6397d10ce6e16706ce58d27dfc28f7e1911988ac7421c81d5cabbb",
+      "module": "m68702",
+      "kind": "photo",
+      "width": 650,
+      "height": 400,
+      "variants": [
+        {
+          "width": 650,
+          "height": 400,
+          "file": "CNX_Chem_03_03_hematite-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two rounded, smooth black stones are shown.",
+      "caption": "Hematite is an iron oxide that is used in jewelry. (credit: Mauro Cateb)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_03_04_dilution": {
+      "source": "media/CNX_Chem_03_04_dilution.jpg",
+      "sourceSha256": "8e26b934deb7b466f43e65cc463443cd85301f674159ad44f64a9acb4a040fae",
+      "module": "m68703",
+      "kind": "photo",
+      "width": 650,
+      "height": 385,
+      "variants": [
+        {
+          "width": 650,
+          "height": 385,
+          "file": "CNX_Chem_03_04_dilution-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows two graduated cylinders side-by-side. The first has about half as much blue liquid as the second. The blue liquid is darker in the first cylinder than in the second.",
+      "caption": "Both solutions contain the same mass of copper nitrate. The solution on the right is more dilute because the copper nitrate is dissolved in more solvent. (credit: Mark Ott)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_03_04_vinegar": {
+      "source": "media/CNX_Chem_03_04_vinegar.jpg",
+      "sourceSha256": "757b8e74b1db64192b5cf073274e582364b1fa155a76c19d6e16652d485a82ce",
+      "module": "m68703",
+      "kind": "photo",
+      "width": 650,
+      "height": 619,
+      "variants": [
+        {
+          "width": 650,
+          "height": 619,
+          "file": "CNX_Chem_03_04_vinegar-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A label on a container is shown. The label has a picture of a salad with the words “Distilled White Vinegar,” and, “Reduced with water to 5% acidity,” written above it.",
+      "caption": "Distilled white vinegar is a solution of acetic acid in water.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_03_05_Example2_img": {
+      "source": "media/CNX_Chem_03_05_Example2_img.jpg",
+      "sourceSha256": "59c66008a290aed71ea136d2ccb01364d4393139c8ac71a29d06aeeb30b888e8",
+      "module": "m68704",
+      "kind": "photo",
+      "width": 1200,
+      "height": 171,
+      "variants": [
+        {
+          "width": 800,
+          "height": 114,
+          "file": "CNX_Chem_03_05_Example2_img-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 171,
+          "file": "CNX_Chem_03_05_Example2_img-1200.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram of three boxes connected by a right-facing arrow in between each is shown. The box on the left contains the phrase, “Volume of solution ( m L ),” the middle box reads, “Mass of solution ( g ),” while the one on the right contains the phrase, “Mass of H C l ( g ).” There is a phrase under the left arrow that says, “Multiply by density ( g / m L )” and under the right arrow it states, “Multiply by mass percent as ratio ( g H C l / g solution ).”",
+      "caption": ""
+    },
+    "CNX_Chem_03_05_bleach": {
+      "source": "media/CNX_Chem_03_05_bleach.jpg",
+      "sourceSha256": "f90152fb15f5c82f1a63247b5f6993fd5201fc461a994a4c2eb58fa9b3268fef",
+      "module": "m68704",
+      "kind": "photo",
+      "width": 975,
+      "height": 703,
+      "variants": [
+        {
+          "width": 800,
+          "height": 577,
+          "file": "CNX_Chem_03_05_bleach-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 703,
+          "file": "CNX_Chem_03_05_bleach-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The sides of two cylindrical containers are shown. Each container’s label is partially visible. The left container’s label reads “Bleach.” The right label contains more information about the product including the phrase, “Contains: Sodium hypochlorite 7.4 %.”",
+      "caption": "Liquid bleach is an aqueous solution of sodium hypochlorite (NaOCl). This brand has a concentration of 7.4% NaOCl by mass.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_03_05_faucet": {
+      "source": "media/CNX_Chem_03_05_faucet.jpg",
+      "sourceSha256": "1751cca39dda5c8de82b1d0a87850c5dacfbca54693f815de47eb9d1347a7469",
+      "module": "m68704",
+      "kind": "photo",
+      "width": 1300,
+      "height": 660,
+      "variants": [
+        {
+          "width": 800,
+          "height": 406,
+          "file": "CNX_Chem_03_05_faucet-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 660,
+          "file": "CNX_Chem_03_05_faucet-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two pictures are shown labeled a and b. Picture a is a close-up shot of water coming out of a faucet. Picture b shows a machine with the words, “Filtered Water Dispenser.” This machine appears to be inside a refrigerator.",
+      "caption": "(a) In some areas, trace-level concentrations of contaminants can render unfiltered tap water unsafe for drinking and cooking. (b) Inline water filters reduce the concentration of solutes in tap water. (credit a: modification of work by Jenn Durfey; credit b: modification of work by “vastateparkstaff”/Wikimedia commons)"
+    },
+    "CNX_Chem_03_05_saline": {
+      "source": "media/CNX_Chem_03_05_saline.jpg",
+      "sourceSha256": "6ace35b39fde5a6154a3c94db78bfd98d8c32e1590d69753f0b2a7ff27c6131d",
+      "module": "m68704",
+      "kind": "photo",
+      "width": 1300,
+      "height": 640,
+      "variants": [
+        {
+          "width": 800,
+          "height": 394,
+          "file": "CNX_Chem_03_05_saline-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 640,
+          "file": "CNX_Chem_03_05_saline-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two pictures are shown labeled a and b. Picture a depicts a clear, colorless solution in a plastic bag being held in a person’s hand. Picture b shows a person’s hand holding a detection meter with a digital readout screen while another hand holds someone’s finger up to the end of the meter. The meter is pressed to the drop of blood that is at the end of the person’s finger.",
+      "caption": "“Mixed” mass-volume units are commonly encountered in medical settings. (a) The NaCl concentration of physiological saline is 0.9% (m/v). (b) This device measures glucose levels in a sample of blood. The normal range for glucose concentration in blood (fasting) is around 70–100 mg/dL. (credit a: modification of work by “The National Guard”/Flickr; credit b: modification of work by Biswarup Ganguly)"
     }
   }
 }

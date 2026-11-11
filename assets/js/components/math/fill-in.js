@@ -158,7 +158,9 @@ class FillInElement extends HTMLElement {
       // `x^2+3x` and turns a typed `6.022*10^23` into 10² followed by a 3.
       // Here every digit typed after `^` stays in the exponent. Set after the
       // import, when <math-field> is defined and the property is its own.
-      if (/(?:^|\s)sig-figs:/.test(this.answerForm)) this.field.smartSuperscript = false;
+      // A key graded inside a relative band (`tolerance:<p>%`) is a measured
+      // numeral too, with or without a count of figures beside it.
+      if (/(?:^|\s)(?:sig-figs|tolerance):/.test(this.answerForm)) this.field.smartSuperscript = false;
 
       // Replace the interim label (raw TeX minus delimiters) with spoken
       // math now the serializer is here — BEFORE the Check button enables,

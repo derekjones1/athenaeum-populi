@@ -17,9 +17,9 @@
 
 ## Coverage
 
-- Mapped local sections: 791
-- Sections changed upstream: 65
-- Content-level changes: 42
+- Mapped local sections: 795
+- Sections changed upstream: 66
+- Content-level changes: 43
 - Markup/metadata-only changes: 23
 - Changed Try It records: 3
 - Changed Try Its where local math matches the PDF-era form: 0
@@ -34,7 +34,7 @@
 - biology (`biology-bundle`): `5c58838d2594bc5817127fdc47e127c30b44f2c2`
 - microbiology (`microbiology`): `633850257fbd3ccf6187b9428c55e80b69236382`
 - anatomy-physiology (`anatomy-physiology`): `716383a4c6c16037b14d75a156c65145e75e895e`
-- chemistry (`chemistry-bundle`): `7d41ed008e9b83a6690c09c26a16f63f96046ec0` — in-progress, 13 sections mapped
+- chemistry (`chemistry-bundle`): `7d41ed008e9b83a6690c09c26a16f63f96046ec0` — in-progress, 17 sections mapped
 
 ## Changed mapped sections
 
@@ -379,5 +379,10 @@ Module `m68696`; markup-or-metadata-only. Changed lanes: raw XML only.
 ### chemistry 2.7 — [content/physical-sciences/chemistry/02-atoms-molecules-and-ions/07-chemical-nomenclature.md](../../content/physical-sciences/chemistry/02-atoms-molecules-and-ions/07-chemical-nomenclature.md)
 
 Module `m68698`; markup-or-metadata-only. Changed lanes: raw XML only.
+
+
+### chemistry 3.1 — [content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md](../../content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md)
+
+Module `m68700`; content-changed. Changed lanes: instructionalText.
 
 

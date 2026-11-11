@@ -15,7 +15,7 @@ import assert from 'node:assert/strict';
 import {
   ce, foldPrimes,
   ANSWER_FORM_TOKENS, bracketsAsParentheses, checkAnswer, checkFormAsGraded, describeAnswerForm,
-  describeFormFeedback, parseAnswerForm,
+  describeFormFeedback, measuredKeyProblem, parseAnswerForm,
   preprocess,
 } from './check-answer.mjs';
 
@@ -1767,7 +1767,10 @@ test('answerForm parsing and feedback wording', async (t) => {
       const spec = token === 'denominator:<n>' ? 'denominator:7'
         : token === 'solved:<variable>' ? 'solved:y'
           : token === 'sig-figs:<n>' ? 'sig-figs:3'
-            : token === 'last-digit:<k>' ? 'sig-figs:3 last-digit:1' : token;
+            : token === 'last-digit:<k>' ? 'sig-figs:3 last-digit:1'
+              // `tolerance:<p>%` is a width too, and alone it asks nothing of
+              // the writing: it is worded beside the count it can stand with.
+              : token === 'tolerance:<p>%' ? 'sig-figs:3 tolerance:0.05%' : token;
       const phrased = describeAnswerForm(spec);
       assert.notEqual(phrased, '');
       assert.ok(!phrased.includes('undefined'), phrased);
@@ -4878,4 +4881,33 @@ test('a unit MathLive wraps as a nested operator name is still a unit after the 
   assert.notEqual(checkAnswer('1016.0\\lor1016.0', key, { form }), 'unit');
   // the wrong number with a unit is still the wrong number
   assert.equal(checkAnswer('1020.0\\operatorname{\\mathrm{kg}}', key, { form }), 'incorrect');
+});
+
+test('tolerance:<p>% grades a measured value inside a relative band (Chemistry 2e chapter 3)', () => {
+  // Alone: the count of figures is not graded. The source keys P4 as 123.896
+  // amu, from atomic masses with more digits than the book's periodic table
+  // prints; a learner on the site reaches 4 × 30.97 = 123.88.
+  const alone = (response, key = '123.896') => checkAnswer(response, key, { form: 'tolerance:0.05%' });
+  for (const right of ['123.88', '123.9', '123.896', '1.2388\\times10^{2}', '1.2388e2']) assert.equal(alone(right), 'correct', right);
+  for (const wrong of ['124', '122.888', '123.83', '-123.88', '12.388']) assert.equal(alone(wrong), 'incorrect', wrong);
+  assert.equal(alone('123.88amu'), 'unit');
+  assert.equal(alone('4\\cdot30.97'), 'form', 'an unfinished calculation of a right value');
+  assert.equal(describeFormFeedback('4\\cdot30.97', 'tolerance:0.05%', '123.896'),
+    'That value is right — now finish the calculation and enter just the result.');
+  assert.equal(alone(''), 'empty');
+  // Beside sig-figs: the band stands in the allowance's place and the count is still asked.
+  const counted = (response) => checkAnswer(response, '82.24', { form: 'sig-figs:4 tolerance:0.05%' });
+  assert.equal(counted('82.27'), 'correct');
+  assert.equal(counted('82.2665'), 'form');
+  assert.match(describeFormFeedback('82.2665', 'sig-figs:4 tolerance:0.05%', '82.24'), /now round it to 4 significant figures/);
+  assert.equal(counted('82.29'), 'incorrect');
+  // The pairing rules the lint reads.
+  assert.equal(measuredKeyProblem('123.896', 'tolerance:0.05%'), null);
+  assert.equal(measuredKeyProblem('82.24', 'sig-figs:4 tolerance:0.05%'), null);
+  assert.match(measuredKeyProblem('123.896', 'tolerance:0.05% last-digit:1'), /never with a `last-digit`/);
+  assert.match(measuredKeyProblem('123.896', 'tolerance:5%'), /at most 2 percent/);
+  assert.match(measuredKeyProblem('123.896', 'tolerance:0%'), /more than 0/);
+  assert.match(measuredKeyProblem('123.896,18.015', 'tolerance:0.05%'), /ONE nonzero number/);
+  assert.equal(parseAnswerForm('tolerance:0.05').valid, false, 'the percent sign is part of the token');
+  assert.equal(parseAnswerForm('tolerance:0.5%').valid, true);
 });

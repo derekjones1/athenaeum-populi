@@ -22,7 +22,8 @@
                     the shape too. A measured quantity (a science answer
                     keyed to its significant figures) declares
                     `sig-figs:<n> last-digit:<k>` here, which also changes
-                    how its value is compared — docs/subjects/chemistry.md. For the accepted tokens read $formTokens
+                    how its value is compared, or a relative band,
+                    `tolerance:<p>%` — docs/subjects/chemistry.md. For the accepted tokens read $formTokens
                     below — it is the list this template validates against, and
                     tools/build/documentation.test.mjs asserts it set-equals
                     ANSWER_FORM_TOKENS in assets/js/lib/math/check-answer.mjs. Do
@@ -52,7 +53,7 @@
 {{- range (split $answerForm " ") -}}
   {{- $token := trim . " " -}}
   {{- if $token -}}
-    {{- if not (or (in $formTokens $token) (findRE `^denominator:\d+$` $token) (findRE `^solved:[a-zA-Z]$` $token) (findRE `^sig-figs:[1-9]$` $token) (findRE `^last-digit:[0-2]$` $token)) -}}
+    {{- if not (or (in $formTokens $token) (findRE `^denominator:\d+$` $token) (findRE `^solved:[a-zA-Z]$` $token) (findRE `^sig-figs:[1-9]$` $token) (findRE `^last-digit:[0-2]$` $token) (findRE `^tolerance:\d+(\.\d+)?%$` $token)) -}}
       {{- errorf "fillin answerForm token %q is not a form (%s)" $token $.Position -}}
     {{- end -}}
   {{- end -}}

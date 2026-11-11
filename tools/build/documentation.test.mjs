@@ -465,6 +465,13 @@ test('the chemistry subject playbook states the rules its engine enforces', asyn
     assert.ok(chem.replace(/\s+/g, ' ').includes(sentence), `the playbook quotes the feedback "${sentence}"`);
   }
   assert.match(chem, /Both\s+tokens\s+are\s+always\s+declared\s+together/);
+  // The relative band: the playbook's table is the grader's real behaviour.
+  assert.match(chem, /`tolerance:<p>%`/);
+  for (const [typed, verdict] of [['123.88', 'correct'], ['123.9', 'correct'], ['123.896', 'correct'],
+    ['124', 'incorrect'], ['122.888', 'incorrect'], ['123.88amu', 'unit']]) {
+    assert.equal(checkAnswer(typed, '123.896', { form: 'tolerance:0.05%' }), verdict, `${typed} against 123.896`);
+  }
+  assert.ok(measuredKeyProblem('123.896', 'tolerance:0.05% last-digit:1'), 'the lint refuses a tolerance beside a last-digit');
   assert.ok(measuredKeyProblem('0.674', 'sig-figs:3'), 'the lint refuses sig-figs without last-digit');
   assert.match(chem, /`sig-figs:1`\s+takes\s+`last-digit:0`/);
   assert.ok(measuredKeyProblem('5', 'sig-figs:1 last-digit:1'), 'the lint refuses an allowance on one figure');
@@ -555,8 +562,13 @@ test('the fillin shortcode accepts exactly the exported answerForm tokens', () =
   assert.ok(exported.delete('last-digit:<k>'), 'ANSWER_FORM_TOKENS still exports the last-digit family');
   assert.match(fillinShortcode, /findRE\s+`\^last-digit:\[0-2\]\$`/,
     'the shortcode still matches the last-digit:<k> family with findRE');
+  // The relative band (November 11, 2026): a percent, its sign written.
+  assert.ok(exported.delete('tolerance:<p>%'), 'ANSWER_FORM_TOKENS still exports the tolerance family');
+  assert.ok(fillinShortcode.includes('findRE `^tolerance:\\d+(\\.\\d+)?%$`'),
+    'the shortcode still matches the tolerance:<p>% family with findRE');
   for (const [token, valid] of [['sig-figs:3', true], ['sig-figs:0', false], ['sig-figs:10', false],
-    ['last-digit:0', true], ['last-digit:2', true], ['last-digit:3', false]]) {
+    ['last-digit:0', true], ['last-digit:2', true], ['last-digit:3', false],
+    ['tolerance:0.05%', true], ['tolerance:1%', true], ['tolerance:0.05', false], ['tolerance:%', false]]) {
     assert.equal(parseAnswerForm(token).valid, valid, `the grader ${valid ? 'reads' : 'refuses'} ${token}, as the template does`);
   }
 

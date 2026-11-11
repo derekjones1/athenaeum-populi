@@ -572,3 +572,89 @@ test('answers that hold several choices at once are read for the one a multiple 
   assert.equal(judge(`${redox} H₂O₂ + Sn²⁺ ⟶ H₂O + Sn⁴⁺. Which reactant is the oxidizing agent?`, 'Sn²⁺', ['H₂O₂', 'Sn²⁺']), 'key-differs');
   assert.equal(judge(`${redox} PbO₂ + Hg ⟶ Hg₂²⁺ + Pb²⁺. Which reactant is the reducing agent?`, 'Hg', ['PbO₂', 'Hg']), 'confirmed');
 });
+
+test('two formulas each labelled AFTER it are keyed one per item, by the label its closing sentence names (3.2)', () => {
+  // Chemistry 2e 3.2, exercise fs-idm149528800, as the CNXML prints it.
+  const asbestos = keyedUnits(cnxml(exercises(
+    exercise('fs-idm149528800', ['Determine the empirical and molecular formula for chrysotile asbestos. Chrysotile has the following percent composition: 28.03% Mg, 21.60% Si, 1.16% H, and 49.21% O. The molar mass for chrysotile is 520.8 g/mol.'],
+      'Mg<sub>3</sub>Si<sub>2</sub>H<sub>3</sub>O<sub>8</sub> (empirical formula), Mg<sub>6</sub>Si<sub>4</sub>H<sub>6</sub>O<sub>16</sub> (molecular formula)'),
+    // 2.4's label BEFORE the formula is held to the same rule.
+    exercise('s1', ['Write the molecular and empirical formulas of the following compounds:', '(a) acetylene', '(b) ethylene'],
+      '(a) molecular C<sub>2</sub>H<sub>2</sub>, empirical CH; (b) molecular C<sub>2</sub>H<sub>4</sub>, empirical CH<sub>2</sub>'),
+  )));
+  const stem = 'Determine the empirical and molecular formula for chrysotile asbestos. Chrysotile has the following percent composition: 28.03% Mg, 21.60% Si, 1.16% H, and 49.21% O. The molar mass for chrysotile is 520.8 g/mol.';
+  const judge = (question, answer) => judgeKeyedUnit({ type: 'textin', question, answer, form: 'formula' }, asbestos);
+  assert.equal(judge(`${stem} Enter the empirical formula.`, 'Mg₃Si₂H₃O₈').status, 'confirmed');
+  assert.equal(judge(`${stem} Enter the molecular formula.`, 'Mg₆Si₄H₆O₁₆').status, 'confirmed');
+  // A swapped pair: each formula is printed in the answer, under the other label.
+  assert.equal(judge(`${stem} Enter the empirical formula.`, 'Mg₆Si₄H₆O₁₆').status, 'key-differs');
+  assert.equal(judge(`${stem} Enter the molecular formula.`, 'Mg₃Si₂H₃O₈').status, 'key-differs');
+  assert.match(judge(`${stem} Enter the molecular formula.`, 'Mg₃Si₂H₃O₈').detail, /for the molecular formula, which source fs-idm149528800 gives as "Mg _6 Si _4 H _6 O _16"/);
+  assert.equal(judge(`${stem} Enter the molecular formula.`, 'Mg₆Si₄H₆O₈').status, 'key-differs', 'a formula the answer does not print');
+  const lead = 'Write the molecular and empirical formulas of the following compound:';
+  assert.equal(judge(`${lead} acetylene. Enter the molecular formula.`, 'C₂H₂').status, 'confirmed');
+  assert.equal(judge(`${lead} acetylene. Enter the empirical formula.`, 'CH').status, 'confirmed');
+  assert.equal(judge(`${lead} acetylene. Enter the molecular formula.`, 'CH').status, 'key-differs', 'the label-before pair swapped');
+});
+
+test('a Check Your Learning that restates the previous one\'s given data is read as the question it asks (3.3)', () => {
+  // Chemistry 2e 3.3, examples fs-idm98982768 and fs-idm64107376, their Check Your Learning paragraphs as the CNXML prints them.
+  const molarity = keyedUnits(cnxml('<example id="fs-idm98982768"><para id="fs-idm10181424"><title>Calculating Molar Concentrations</title>\nA 355-mL soft drink sample contains 0.133 mol of sucrose (table sugar). What is the molar concentration of sucrose in the beverage?</para>'
+    + '<para id="fs-idm883648"><title>Check Your Learning</title>\nA teaspoon of table sugar contains about 0.01 mol sucrose. What is the molarity of sucrose if a teaspoon of sugar has been dissolved in a cup of tea with a volume of 200 mL?</para>'
+    + '<note id="fs-idm62768528"><title>Answer:</title><para id="fs-idm62230608">0.05 <emphasis effect="italics">M</emphasis></para></note></example>'
+    + '<example id="fs-idm64107376"><para id="fs-idm58170960"><title>Deriving Moles and Volumes from Molar Concentrations</title>\nHow much sugar (mol) is contained in a modest sip (~10 mL) of the soft drink from <link target-id="fs-idm98982768"/>?</para>'
+    + '<para id="fs-idm97768960"><title>Check Your Learning</title>\nWhat volume (mL) of the sweetened tea described in <link target-id="fs-idm98982768"/> contains the same amount of sugar (mol) as 10 mL of the soft drink in this example?</para>'
+    + '<note id="fs-idm58199648"><title>Answer:</title><para id="fs-idm89023504">80 mL</para></note></example>'));
+  const above = 'A teaspoon of table sugar contains about 0.01 mol sucrose. What is the molarity of sucrose if a teaspoon of sugar has been dissolved in a cup of tea with a volume of 200 mL? Enter the molarity in mol/L.';
+  const below = 'A teaspoon of table sugar containing about 0.01 mol sucrose has been dissolved in a cup of tea with a volume of 200 mL. What volume (mL) of the sweetened tea described above contains the same amount of sugar (mol) as 10 mL of the soft drink in this example?';
+  const fill = (question, answer) => judgeKeyedUnit({ type: 'fillin', question, answer, form: '' }, molarity);
+  assert.equal(fill(below, '80').exercise.id, 'fs-idm64107376#check', 'the question it asks, not the data it restates');
+  assert.equal(fill(below, '80').status, 'confirmed');
+  assert.equal(fill(below, '0.05').status, 'key-differs', 'the restated unit\'s key is a wrong key here');
+  assert.equal(fill(above, '0.05').exercise.id, 'fs-idm98982768#check', 'the item above is still itself');
+  assert.equal(fill(above, '0.05').status, 'confirmed');
+  assert.equal(fill(above, '80').status, 'key-differs');
+
+  // The coverage gate gives each item its own Check Your Learning.
+  const module = cnxml('<example id="fs-idm98982768"><para><title>Check Your Learning</title>A teaspoon of table sugar contains about 0.01 mol sucrose. What is the molarity of sucrose if a teaspoon of sugar has been dissolved in a cup of tea with a volume of 200 mL?</para>'
+    + '<note><title>Answer:</title><para>0.05 M</para></note></example>'
+    + '<example id="fs-idm64107376"><para><title>Check Your Learning</title>What volume (mL) of the sweetened tea described in <link target-id="fs-idm98982768"/> contains the same amount of sugar (mol) as 10 mL of the soft drink in this example?</para>'
+    + '<note><title>Answer:</title><para>80 mL</para></note></example>');
+  const fillin = (question, answer) => `{{< fillin question="${question}" answer="${answer}" hint="h" >}}\n\n`;
+  const verdicts = coverage(fillin(above, '0.05') + fillin(below, '80'), sourceExercises(module), { keyedOnly: true });
+  assert.deepEqual(verdicts.map((verdict) => [verdict.id, verdict.status, verdict.line]),
+    [['fs-idm98982768#check', 'rendered', 1], ['fs-idm64107376#check', 'rendered', 3]]);
+});
+
+test('a lettered exercise answered by naming one part is one multiple choice whose options are its parts (3.1)', () => {
+  // Chemistry 2e 3.1, exercise fs-idp40890272, as the CNXML prints it.
+  const module = cnxml(exercises(exercise('fs-idp40890272', [
+    'Which of the following represents the least number of molecules?',
+    '(a) 20.0 g of H<sub>2</sub>O (18.02 g/mol)', '(b) 77.0 g of CH<sub>4</sub> (16.06 g/mol)', '(c) 68.0 g of C<sub>3</sub>H<sub>6</sub> (42.08 g/mol)',
+    '(d) 100.0 g of N<sub>2</sub>O (44.02 g/mol)', '(e) 84.0 g of HF (20.01 g/mol)',
+  ], '20.0 g H<sub>2</sub>O represents the least number of molecules since it has the least number of moles.')));
+  const units = keyedUnits(module);
+  assert.deepEqual(units.map((unit) => [unit.id, unit.chosen, unit.choices.length]), [['fs-idp40890272', 'a', 5]]);
+  // The page's options, (b) printed with the corrected molar mass beside a Source note.
+  const options = ['20.0 g of H₂O (18.02 g/mol)', '77.0 g of CH₄ (16.04 g/mol)', '68.0 g of C₃H₆ (42.08 g/mol)', '100.0 g of N₂O (44.02 g/mol)', '84.0 g of HF (20.01 g/mol)'];
+  const ask = 'Which of the following represents the least number of molecules?';
+  const judge = (answer, offered = options) => judgeKeyedUnit({ type: 'multiplechoice', question: ask, answer, options: offered }, units);
+  assert.equal(judge(options[0]).status, 'confirmed');
+  assert.equal(judge(options[0]).exercise.id, 'fs-idp40890272');
+  assert.equal(judge(options[1]).status, 'key-differs', 'another part as the key');
+  assert.match(judge(options[4]).detail, /naming part \(a\).*part \(e\)/);
+  assert.equal(judge(options[0], options.slice(0, 4)), null, 'a missing option: the item is not this exercise');
+
+  const mc = (offered, answer = offered[0]) => `{{< multiplechoice\n  question="${ask}"\n  answer="${answer}"\n  hint="h"\n>}}\n${offered.join('\n')}\n{{< /multiplechoice >}}\n`;
+  assert.deepEqual(coverage(mc(options), sourceExercises(module), { keyedOnly: true }).map((verdict) => [verdict.id, verdict.status, verdict.how]),
+    [['fs-idp40890272', 'rendered', 'choices']]);
+  assert.equal(coverage(mc(options.slice(0, 4)), sourceExercises(module), { keyedOnly: true })[0].status, 'missing', 'every part must be an option');
+  assert.equal(coverage(mc([...options.slice(0, 4), '50.0 g of NH₃ (17.03 g/mol)']), sourceExercises(module), { keyedOnly: true })[0].status, 'missing', 'an option that is no part');
+
+  // "Only (b)" and a lettered answer stay one item per part.
+  const perPart = keyedUnits(cnxml(exercises(
+    exercise('y1', ['Which of the following nuclei lie within the band of stability?', '(a) chlorine-37', '(b) calcium-40'], 'Only (b)'),
+    exercise('y2', ['Which of the following are ionic?', '(a) KCl', '(b) ICl'], '(a) ionic; (b) covalent'),
+  )));
+  assert.deepEqual(perPart.map((unit) => unit.id), ['y1(a)', 'y1(b)', 'y2(a)', 'y2(b)']);
+});

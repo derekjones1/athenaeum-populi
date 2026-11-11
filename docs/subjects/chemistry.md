@@ -81,8 +81,8 @@ these differences:
    | `chemist-portrait` | `**Portrait of a Chemist.** *Title.*` |
 
    The first two names are confirmed from the PDF (chapter 1) and "Portrait
-   of a Chemist" from 2.4's (Paula Hammond); confirm "How Sciences
-   Interconnect" where it first appears. Every feature box is a
+   of a Chemist" from 2.4's (Paula Hammond), and "How Sciences
+   Interconnect" from 3.1's (the neurotransmitter box). Every feature box is a
    `callout type="info"`.
 2. **Worked examples.** A source `<example>` is prose in the body, at its
    source position, in the math books' form: `**Example.** *Its title.*`
@@ -186,7 +186,7 @@ The component follows the SHAPE of the source's keyed answer:
 
 | The keyed answer is | Component |
 |---|---|
-| one measured or computed number | `fillin` with `sig-figs:<n> last-digit:<k>` ("Measured quantities"); the stem names the unit |
+| one measured or computed number | `fillin` with `sig-figs:<n> last-digit:<k>` ("Measured quantities"); the stem names the unit. Where this book's periodic table cannot reach the source's key digit for digit, `tolerance:<p>%` ("Numeric keys", "The source's value is the key") |
 | a count ("how many significant figures", "how many protons") | `fillin` with `whole-number`, which refuses the stem's own `2.0` retyped against the key `2` |
 | a number in a named notation ("in exponential notation") | `fillin` adding `scientific-notation` |
 | one of a closed set the stem or its figure names (physical or chemical; element, compound, or mixture; exact or uncertain; an inch, a foot, a yard, or a mile; Archer W, X, Y, or Z) | `multiplechoice` whose options are that set, in its own order — a two-option set is a two-option item |
@@ -357,8 +357,12 @@ selfchecks, source defects, the footer — and each is stated once.
 - **A count is asked before the quantity it counts.** The grader's own
   feedback names the count ("now round it to 2 significant figures"), so a
   "how many significant figures can you justify" item goes first.
-- **A multiple-choice stem ends with its punctuation** (read by the
-  checker; no lint holds it).
+- **Every stem ends with its punctuation** (read by the checker; no lint
+  holds it) *(chapter 3)*. A part that closes the stem takes a period —
+  "…the following molecule? CH₄." — and an added "Enter …" sentence comes
+  after it. The one exception is a part that is a bare number to be
+  rounded or counted (1.5), where a period would read as part of the
+  numeral.
 - **The closing sentence of a name or symbol item says whose**: "Enter the
   element’s name." and "Enter the element’s symbol." for an element;
   "Enter the ion’s symbol.", "Enter the ion’s name.", "Enter the symbol of
@@ -388,11 +392,86 @@ selfchecks, source defects, the footer — and each is stated once.
   - `1` when the learner fetches a measured factor from a table — a
     conversion factor, a molar mass, a constant — since another table
     prints one more or one fewer digit. A stem that prints the factor
-    itself is `0`.
+    itself is `0`. So is an item where `1` would grade a number the stem
+    prints as correct (3.3: 4.25 g of NH₃ in 0.500 L is 0.499 M, and the
+    stem's own 0.500 typed back must be wrong — `verify:replay` refuses
+    the item otherwise), once every common table is seen to give the key.
   - `2` only when THIS book's own conversion table offers more than one
     route and the routes end more than one unit apart — one of them may be
     exact — with every route computed in the ledger (1.6: Kilimanjaro's
     19,565 ft, 5.9632 to 5.9635 km by the table's routes).
+- **The source's value is the key, and a relative band takes the
+  learner's table** *(Derek, November 11, 2026; chapter 3)*. The source's
+  answer key was not always computed from the atomic masses this book's
+  periodic table prints: printed Exercise 3.3 answers 123.896 amu for P₄,
+  and the table (four figures for most elements) gives 4 × 30.97 = 123.88.
+  More digits in the table would buy nothing — another table still ends a
+  digit off — so the page keeps the source's number as the key and grades
+  inside a band, `tolerance:<p>%` ("Measured quantities"). The key is never
+  re-computed to the table and no item takes a Source note for it.
+  - **Compute every such key from Appendix A's masses as printed**, by the
+    module's own method (count × atomic mass keeps the mass's decimal
+    places; the sum is rounded to the least precise place of its terms),
+    and put both values and their relative difference in the ledger.
+  - **`tolerance:<p>%` ALONE — the count of figures is not graded — on a
+    formula mass or molar mass asked for itself WHERE the source's key
+    shows a place the table does not print**: every part of such an
+    exercise, the same token on each (3.1's printed 3.3, 3.5, 3.13, 3.15).
+    A formula mass the table reaches digit for digit (3.1's two Check Your
+    Learning answers, 151.16 and 310.18) keeps `sig-figs:<n>
+    last-digit:1`: its figures can be asked.
+  - **`sig-figs:<n> tolerance:<p>%` on any other measured item whose table
+    value, at the source's count, is more than one unit of the last digit
+    from the source's key** (3.2's 82.24% N in NH₃, 82.27 by the table):
+    the count is still the learner's to find. An item the table reaches
+    within one unit stays `sig-figs:<n> last-digit:1`.
+  - **The band is a chapter default, set per exercise where it must
+    differ**: wider than rounding noise, narrower than the smallest real
+    mistake. Chapter 3: `0.05%` — the widest table-against-key gap is
+    0.036%, and one hydrogen miscounted (1.008 amu) is caught up to a
+    formula mass of about 2,000 amu. A chapter of multi-step
+    stoichiometry, where rounding compounds through each step, will need
+    0.5 to 1 percent; its run facts state the default and the measured gap
+    that sets it. The grader refuses more than 2 percent.
+  - **The same band takes a key the source's own rounded stem misses by a
+    unit of the last digit.** Printed 3.59 dilutes 0.1718 L of 0.3556 M
+    propanol to 0.1222 M and answers 0.5000 L; the stem's numbers return
+    0.4999, and the source's next exercise gives "0.5000 L of a 0.1222-M
+    solution" as data — the stem was built from the answer and rounded.
+    The source's value stays the key, `sig-figs:4 tolerance:0.05%`, with
+    one erratum and no Source note. Not for a key the stem's data miss by
+    more than the band, and not for a tie rounded the other way (3.51(d),
+    exactly 5.85 × 10⁻⁷: the book's own rounding rule decides the KEY, with
+    the Source note of "Source defects" in 1.6's wording, and the item
+    takes `last-digit:1` so that the tie rounded half up is right too —
+    the item tests molarity, not rounding; a rounding drill of 1.5 keeps
+    `last-digit:0`).
+  - **A gap the band does not cover is not table noise.** A source key the
+    table misses by more than the chapter's band (3.25's 53.74 g of
+    aluminum, 53.83 by any table) is an arithmetic defect, handled under
+    "Source defects".
+  - **A worked example's value inside the band is left as the source prints
+    it** (3.2's 81.13 amu for C₅H₇N and 180.159 g/mol for aspirin, 81.12
+    and 180.15 by the table): it is the same noise, in the body. A value
+    that is a slip of arithmetic or of copying (3.2's 8.624 for the 8.641
+    of the line above) is corrected with a Source note.
+  - **The page says so once.** Directly under `## Practice`, before the
+    first objective heading, on a page with at least one item graded by a
+    band alone: "*Source note:* the source’s answer key for some exercises
+    of this section was computed from atomic masses with more digits than
+    this book’s periodic table prints. An answer worked from the table is
+    graded as correct on those items; where an item asks for a formula mass
+    or a molar mass itself, its number of significant figures is not
+    graded." **An item graded `sig-figs:<n> tolerance:<p>%` on a page
+    without that paragraph** takes one sentence directly after it, since
+    its revealed answer is one the table does not return: "*Source note:*
+    the answer shown for this item is the source’s, which was computed
+    from atomic masses with more digits than this book’s periodic table
+    prints; an answer worked from the table is graded as correct." (3.2's
+    percent of nitrogen in ammonia, which the body itself works to
+    another last digit.) One erratum for the module records it; no
+    decisions entry and no `DISCLOSED_DEVIATIONS` line, since no key
+    differs from the source's.
 - **A key that is a stem number by the law the item tests** (the total mass
   of products, 200.0 g, from 200.0 g of reactant) stands as a `fillin`; the
   ledger says so.
@@ -496,6 +575,7 @@ after the rule was written, so the line is drawn by pairs:
 | "Feet to inches to centimeters to kilometers." (a multi-step route, by units, no numbers) | the same route with its factors |
 | "Name the law, and ask what enters or leaves the container." | "Every product stays inside the container." |
 | "Reread the subsection on derived units." | "A speed is a distance divided by a time." |
+| "Convert the mass to moles with a molar mass computed from the formula." "…with the atomic mass from the periodic table." (an element) | "…with the molar mass of CuI from the periodic table." (the table prints no compound's molar mass) |
 
 - **On a two-option classification** (physical or chemical, exact or
   uncertain) the hint names the question to ask of the case, never one
@@ -508,6 +588,10 @@ after the rule was written, so the line is drawn by pairs:
   elimination.
 - A hint never sends the learner to a table that lacks the answer (1.4's
   area item pointed at the table of base units, which has no area unit).
+- **A hint never points at a body passage that works the item's own
+  question** *(chapter 3)*: 3.2's body computes ammonia's percent
+  composition, and printed 3.33(a) asks it — "the method of the ammonia
+  calculation above" is the answer. Name the equation.
 - **A hint that needs a table of another section names the table and the
   section**, in plain words and with no link: "the table of common
   polyatomic ions in Section 2.6 Ionic and Molecular Compounds", never
@@ -608,8 +692,8 @@ after the rule was written, so the line is drawn by pairs:
   corrected"). An added item is named by where its sentence is ("a cloze on
   the Summary sentence that defines weight"), never "(blank: gravity)"
   (lint) and never a quoted sentence that contains the answer.
-- **One phrase per kind of item**: "multiple-choice items", "fill-in
-  items", "text-recall items", "formula text-recall items", "self-checks".
+- **One phrase per kind of item**: "multiple-choice items", "fill-ins",
+  "text-recall items", "formula text-recall items", "self-checks".
 - **Which objective a keyed exercise is placed under is the page's
   structure, not a departure**, and takes no clause.
 - It names every departure from the source in one clause each: restated
@@ -687,7 +771,23 @@ mhchem extension, so nothing is loaded:
   a comma (the source writes both "1000 mL" and "1,000 mL"). Inside math
   the house lint groups every number of four or more digits
   (`$8{,}119$`, an `answerDisplay` of `$5{,}371\ \text{°F}$`), whatever
-  the source prints. The grader reads a typed `5,371` as 5371.
+  the source prints. The grader reads a typed `5,371` as 5371. The lint
+  lets 1000–2099 through as possible years; the rule does not:
+  `1{,}000\ \text{mL}` *(chapter 3)*.
+- **Rows of an `aligned` display that each hold a fraction are separated
+  by `\\[6pt]`** *(chapter 3, the rendered-page readers)*: with a bare
+  `\\` one row's denominator sits on the next row's numerator and the
+  column reads as one tall fraction.
+- **The molar unit after a number is `*M*` in prose and stems** ("0.30 *M*
+  glucose", "5.3 m*M*") and `M` inside math (`$0.674\ M$`); the quantity
+  symbol named in a parenthetical is math, "**Molarity ($M$)**". The
+  fill-in's accessible name drops the emphasis markers
+  (`assets/js/lib/shared/speakable-label.mjs`).
+- **A micro prefix inside math is `\mu` before the unit**,
+  `\mu\text{g}`: the site's KaTeX refuses `\text{µg}` under strict mode.
+  Prose keeps µ (U+00B5).
+- **A tilde that means "about" before a math span goes inside the span**,
+  `(${\sim}10^{-3}$ mol)`, so the line cannot break between them.
 - **A dollar sign inside math is `\text{\textdollar}`**; `\$` is for
   prose only (the lint refuses it in a math span).
 - **Life-sciences "Display chemical equations are text, not KaTeX" does not
@@ -815,11 +915,15 @@ key's own precision:
 {{</* fillin
   question="Calculate the molarity of 6.52 g of CoCl₂ (128.9 g/mol) dissolved in an aqueous solution with a total volume of 75.0 mL. Enter the molarity in mol/L."
   answer="0.674"
-  answerForm="sig-figs:3 last-digit:1"
+  answerForm="sig-figs:3 last-digit:0"
   answerDisplay="$0.674\ M$"
   hint="Convert the mass to moles and the volume to liters first."
 */>}}
 ```
+
+(This stem prints the molar mass itself, so its allowance is `0`; the
+table below shows the same key as it would be graded had the molar mass
+been fetched from the periodic table, `last-digit:1`.)
 
 - **`sig-figs:<n>`** (1–9): the answer is written to n significant figures.
 - **`last-digit:<k>`** (0–2): the response, rounded to n figures, may differ
@@ -830,6 +934,22 @@ key's own precision:
   - Both tokens are always declared together — the allowance is the one
     judgment the pair asks of an author, so neither value is a default —
     and `sig-figs:1` takes `last-digit:0` (lint).
+
+- **`tolerance:<p>%`** — a relative band of p percent of the key (more
+  than 0, at most 2; the percent sign is part of the token), for a key the
+  learner's table cannot reach digit for digit ("Numeric keys", "The
+  source's value is the key"). It is declared one of two ways, and never
+  with `last-digit` (lint):
+  - **alone**, `answerForm="tolerance:0.05%"`: the value is graded and the
+    count of figures is not. Against the key `123.896`: `123.88`, `123.9`,
+    `123.896`, and `1.2388×10²` are correct; `124` and `122.888` (one
+    hydrogen short) are incorrect; `123.88 amu` is told to drop the unit;
+    `4·30.97` is told to finish the calculation.
+  - **beside `sig-figs:<n>`**, in the allowance's place,
+    `answerForm="sig-figs:4 tolerance:0.05%"`: the count is asked as
+    before, and the response rounded to n figures must sit inside the band.
+    Against the key `82.24`: `82.27` is correct, `82.2665` is told to round
+    to 4 significant figures, `82.29` is incorrect.
 
 What the learner sees, against the key `0.674` under `sig-figs:3 last-digit:1`:
 

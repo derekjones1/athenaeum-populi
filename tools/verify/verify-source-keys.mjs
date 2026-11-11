@@ -113,7 +113,7 @@ import { foldedForms } from '../../assets/js/lib/text/check-text.mjs';
 import { chemCanon } from '../../assets/js/lib/text/check-chem.mjs';
 import { readNumeral } from '../../assets/js/lib/math/significant-figures.mjs';
 import {
-  KEYED_ONLY_BOOKS, glossaryAliases, keyedUnits, plain as foldedPlain, printedNumerals, unitFor, unlinked,
+  KEYED_ONLY_BOOKS, choiceLabels, glossaryAliases, keyedUnits, plain as foldedPlain, printedNumerals, unitFor, unlinked,
 } from '../lib/keyed-units.mjs';
 
 /** A page question must share this much of a source problem's vocabulary to
@@ -1025,6 +1025,20 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     kind: 'options',
     erratum: 2733,
     reason: 'the source distractor "it is displace by the heart" misspells "displaced" ("The right kidney is slightly lower because ________."); the page prints "it is displaced by the heart"; key "it is displaced by the liver" unchanged',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md',
+    exercise: 'fs-idp40492096',
+    kind: 'key',
+    erratum: 2987,
+    reason: 'the source answers "AlPO4: 1.000 mol, or 26.98 g Al; Al2Cl6: 1.994 mol, or 53.74 g Al; Al2S3: 3.00 mol, or 80.94 g Al" for 122 g, 266 g, and 225 g of the three compounds: four figures from three-figure data, 53.74 following from no set of atomic masses (266/266.66 × 2 × 26.98 = 53.83) and 80.94 from the moles rounded to 3.00 before multiplying (80.86); the gaps are outside the chapter\'s 0.05 percent band, so the page keys the three masses the book\'s periodic table gives at three figures (the multiple choice among the samples keeps the source\'s answer)',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/03-molarity.md',
+    exercise: 'fs-idm62322112(d)',
+    kind: 'key',
+    erratum: 2998,
+    reason: 'the source answers "5.9 × 10^−7 mol FeSO4" for 325 mL of 1.8 × 10^−6 M FeSO4; the product is exactly 5.85 × 10^−7, a tie that Section 1.5\'s round-half-to-even rule, which this module applies to 1.325 mol ("properly rounded to 1.32 mol"), rounds to 5.8 × 10^−7; the mass keyed beside it, 8.9 × 10^−5 g, is the source\'s',
   },
 ]);
 
@@ -1949,6 +1963,38 @@ function sameNumeral(a, b) {
   return a.mantissa * 10n ** BigInt(a.exponent - to) === b.mantissa * 10n ** BigInt(b.exponent - to);
 }
 
+/** A label in words set after a formula: " (empirical formula)". A state symbol ("(aq)", "(s)") is no label. */
+const LABEL_AFTER = /\s*\(([A-Za-z][a-z]{2,}(?:\s+[a-z]{2,})*)\)\s*$/;
+
+/**
+ * The formulas of an answer that labels each in words, before or after it —
+ * "molecular C₂H₂, empirical CH" (2.4); "Mg₃Si₂H₃O₈ (empirical formula),
+ * Mg₆Si₄H₆O₁₆ (molecular formula)" (3.2) — as `{ label, words, canon,
+ * printed }`, `words` the label's words no other label shares (so
+ * "formula", common to both, names neither). Empty unless the answer has
+ * at least two such pieces under two labels.
+ */
+export function labelledFormulas(answer, form) {
+  const entries = [];
+  for (const raw of String(answer ?? '').split(/[,;]/)) {
+    const piece = raw.trim().replace(/[.:]$/, '');
+    const after = LABEL_AFTER.exec(piece);
+    const before = after ? null : /^((?:[A-Za-z][a-z]{2,}\s+)+)(?=\S)/.exec(piece);
+    const label = (after ? after[1] : before ? before[1] : '').trim().toLowerCase();
+    if (!label) continue;
+    const formula = after ? piece.slice(0, after.index) : piece.slice(before[0].length);
+    const canon = chemCanon(formula, form);
+    if (canon) entries.push({ label, canon, printed: formula.trim() });
+  }
+  const labels = [...new Set(entries.map((entry) => entry.label))];
+  if (entries.length < 2 || labels.length < 2) return [];
+  const wordsOf = (label) => foldedPlain(label).split(' ').filter(Boolean);
+  return entries.map((entry) => ({
+    ...entry,
+    words: wordsOf(entry.label).filter((word) => labels.filter((other) => wordsOf(other).includes(word)).length === 1),
+  }));
+}
+
 const withoutArticle = (value) => foldedPlain(value).replace(/^(?:an?|the) /, '');
 
 /**
@@ -2005,12 +2051,28 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [] } = {}) {
       const key = chemCanon(item.answer, item.form);
       // A piece the answer introduces with a colon ("Al will form a cation
       // with a charge of 3+: Al³⁺", 2.6) is also read after it.
+      // A piece labelled AFTER its formula ("Mg₃Si₂H₃O₈ (empirical formula),
+      // Mg₆Si₄H₆O₁₆ (molecular formula)", 3.2) is read without its label too.
       const pieces = [unit.answer, ...unit.answer.split(/[,;]|\s(?:and|or)\s/)]
         .map((piece) => piece.trim().replace(/[.:]$/, ''))
+        .flatMap((piece) => [piece, piece.replace(LABEL_AFTER, '')])
         .flatMap((piece) => (piece.includes(':') ? [piece, piece.slice(piece.lastIndexOf(':') + 1).trim()] : [piece]))
         .flatMap((piece) => [piece, piece.replace(/^(?:[A-Za-z][a-z]{2,}\s+)+/, '')])
         .map((piece) => chemCanon(piece, item.form)).filter(Boolean);
-      return key && pieces.includes(key) ? { status: 'confirmed', exercise } : differs;
+      if (!key || !pieces.includes(key)) return differs;
+      // An answer whose formulas are each labelled — before ("molecular C₂H₂,
+      // empirical CH", 2.4) or after ("… (empirical formula), … (molecular
+      // formula)", 3.2) — is carried as one item per formula, and the item
+      // whose closing sentence names one label ("Enter the molecular
+      // formula.") is keyed with THAT formula: a swapped pair is a wrong key
+      // the piece-by-piece test passes.
+      const labelled = labelledFormulas(unit.answer, item.form);
+      const closing = ` ${foldedPlain(item.question.split(/(?<=[.?!:])\s+/).pop())} `;
+      const asked = labelled.filter((entry) => entry.words.some((word) => closing.includes(` ${word} `)));
+      if (asked.length && new Set(asked.map((entry) => entry.label)).size === 1 && !asked.some((entry) => entry.canon === key)) {
+        return { ...differs, detail: `textin keys ${JSON.stringify(item.answer)} for the ${asked[0].label}, which source ${unit.id} gives as ${JSON.stringify(asked[0].printed)} (${JSON.stringify(unit.answer.slice(0, 120))})` };
+      }
+      return { status: 'confirmed', exercise };
     }
     // A name or a word: the answer prints it, plural fold included.
     const answer = ` ${foldedPlain(unit.answer)} `;
@@ -2033,6 +2095,21 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [] } = {}) {
       }
     }
     return { status: 'confirmed', exercise };
+  }
+  if (item.type === 'multiplechoice' && unit.choices) {
+    // One of a closed set (keyed-units.mjs `closedSet`, 3.1): the options are
+    // the exercise's parts, and the key is the option that IS the part the
+    // answer names — read through the part, so an option the page corrects
+    // (a molar mass, with a Source note) is still its part.
+    const labels = choiceLabels(unit.choices, item.options);
+    const keyed = labels ? labels[item.options.findIndex((option) => compact(option) === compact(item.answer))] : undefined;
+    if (keyed === unit.chosen) return { status: 'confirmed', exercise };
+    const chosen = unit.choices.find((choice) => choice.label === unit.chosen);
+    return {
+      status: 'key-differs',
+      exercise,
+      detail: `source ${unit.id} answers ${JSON.stringify(unit.answer.slice(0, 140))}, naming part (${unit.chosen}) ${JSON.stringify(chosen.text)}; page keys ${JSON.stringify(item.answer)}${keyed ? `, part (${keyed})` : ''}`,
+    };
   }
   if (item.type === 'multiplechoice') {
     // Two answers that hold several choices at once, each narrowed to the
@@ -2482,6 +2559,11 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
     // Every fill-in's judgment, for solve-check's residual: the items neither
     // verify-answers nor this gate could read are the ones a solver answers.
     verdicts,
+    // How many listed deviations an item exercised. One deviation may cover
+    // several items — the three aluminum masses of Chemistry 3.25 are one
+    // unlettered exercise and one erratum — so the item count in
+    // `counts.*.disclosed` can exceed it.
+    deviationsExercised: used.size,
     sections: checked.length,
     skipped,
     sectionsSkipped: Object.values(skipped).reduce((a, b) => a + b, 0),

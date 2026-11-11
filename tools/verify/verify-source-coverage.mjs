@@ -118,7 +118,7 @@ import { integerFlag, parseCliArgs } from '../lib/cli.mjs';
 import { shortcodes } from '../lib/content.mjs';
 import { mediaBindings } from '../lib/exercise-context.mjs';
 import {
-  KEYED_EXERCISE_CLASS, KEYED_ONLY_BOOKS, checkYourLearning, plain, readingRank, sequentialParts, splittingStem, unitScore, unlinked,
+  KEYED_EXERCISE_CLASS, KEYED_ONLY_BOOKS, answerText, checkYourLearning, closedSet, plain, readingRank, sequentialParts, splittingStem, unitScore, unlinked,
 } from '../lib/keyed-units.mjs';
 import { MATCH_FLOOR } from './verify-source-keys.mjs';
 
@@ -495,6 +495,9 @@ export function sourceExercises(xml) {
         // A keyed-only book's stem with its images marked, so a lettered
         // part that is only an image is still a part (keyed-units.mjs).
         ...(PART_CLASSES.has(here) ? { marked: splittingStem(node, document) } : {}),
+        // …and its answer, which says whether its parts are a closed set the
+        // learner chooses one of (keyed-units.mjs `closedSet`).
+        ...(PART_CLASSES.has(here) && firstElement(node, 'solution') ? { answer: answerText(firstElement(node, 'solution')) } : {}),
       };
       if (here === 'matching') {
         // A Matching table's left cells are blanks ("___chitin") and its
@@ -521,7 +524,7 @@ export function sourceExercises(xml) {
   walk(document, null);
   // A keyed-only book's Check Your Learning questions (keyed-units.mjs).
   for (const check of checkYourLearning(document)) {
-    found.push({ id: check.id, cls: check.cls, stem: check.stem, marked: check.marked, options: [], pools: null, keyed: check.keyed });
+    found.push({ id: check.id, cls: check.cls, stem: check.stem, marked: check.marked, answer: check.answer, options: [], pools: null, keyed: check.keyed });
   }
   const checkQuestions = descendants(document, (node) => localName(node) === 'note'
     && /check-your-understanding/.test(node.attributes.class || ''))
@@ -665,6 +668,13 @@ export function scoreItem(unit, item) {
     const score = phraseScore(unit.poolEntry, item.question);
     return { score, how: 'matching-row' };
   }
+  if (unit.choices) {
+    // One of a closed set (keyed-units.mjs `closedSet`): a multiple choice
+    // that asks the lead-in and offers every part as an option.
+    if (item.type !== 'multiplechoice') return { score: 0, how: null, tie: 0 };
+    const reading = unitScore(unit, item.question, item);
+    return reading.score > 0 ? { score: Math.max(reading.score, PASS_FLOOR), how: 'choices', tie: readingRank(reading) } : { score: 0, how: null, tie: 0 };
+  }
   if (unit.partText !== undefined) {
     // A lettered part of a keyed-only book's exercise: the item's question
     // must print the part itself beside a lead-in that reads like the
@@ -732,6 +742,10 @@ function unitsOf(exercise, orientation = 0) {
     }));
   }
   if (PART_CLASSES.has(exercise.cls)) {
+    // One of a closed set: ONE unit, rendered by one multiple choice whose
+    // options are its parts — every part an option.
+    const closed = exercise.keyed ? closedSet(exercise.marked ?? exercise.stem, exercise.answer) : null;
+    if (closed) return [{ ...exercise, group: exercise.id, lead: closed.lead, choices: closed.choices, chosen: closed.chosen }];
     const lettered = sequentialParts(exercise.marked ?? exercise.stem);
     if (!lettered) return [{ ...exercise, group: exercise.id }];
     return lettered.parts.map((part) => ({

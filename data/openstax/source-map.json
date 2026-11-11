@@ -260,8 +260,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 21,
       "upstreamSections": 114,
-      "localChapters": 2,
-      "mappedSections": 13,
+      "localChapters": 3,
+      "mappedSections": 17,
       "upstreamAppendices": 13,
       "mappedAppendices": 13
     }
@@ -7385,6 +7385,42 @@
       "moduleId": "m68698",
       "sourceTitle": "Chemical Nomenclature",
       "moduleSha256": "9d18dbe0a24f8e4301d29f9e23d785b875c5f48b0d74c015476c3c79751e721e"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "3.1",
+      "moduleId": "m68700",
+      "sourceTitle": "Formula Mass and the Mole Concept",
+      "moduleSha256": "45dbf76fa2dfca8ae1c1208c9b7876766697e2e3c81c0b9209dda12673489546"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/02-determining-empirical-and-molecular-formulas.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "3.2",
+      "moduleId": "m68702",
+      "sourceTitle": "Determining Empirical and Molecular Formulas",
+      "moduleSha256": "73fd97029886fc95d87894d992ff0e0e1e0ee5a2901e68808109acf6734d72e4"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/03-molarity.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "3.3",
+      "moduleId": "m68703",
+      "sourceTitle": "Molarity",
+      "moduleSha256": "fc0090e470d90f978da7cc526e95e0d214d7403690f4a1974e78dbe17f265871"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/04-other-units-for-solution-concentrations.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "3.4",
+      "moduleId": "m68704",
+      "sourceTitle": "Other Units for Solution Concentrations",
+      "moduleSha256": "f567750ea401e678c763d046c57157fc0510c5bd34efb39e44ede85c0fea0cb0"
     }
   ],
   "appendices": [

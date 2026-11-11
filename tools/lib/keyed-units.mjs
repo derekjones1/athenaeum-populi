@@ -284,7 +284,14 @@ export function checkYourLearning(document) {
     const read = (options) => normalizeWhitespace(paragraphs.map((para) => stemText(para, options)).join(' ')).replace(/^check your learning\s*/i, '');
     const stem = read();
     if (!stem) continue;
+    // The example whose Check Your Learning this one leans on ("the sweetened
+    // tea described in [Example 3.14]", 3.3): the page restates that one's
+    // given data (`unitFor`; the gate probe builds the item so).
+    const leans = paragraphs.flatMap((para) => descendants(para, (node) => localName(node) === 'link' && node.attributes['target-id']))
+      .map((link) => link.attributes['target-id']).find((target) => target !== example.attributes.id
+        && descendants(document, (node) => localName(node) === 'example' && node.attributes.id === target).length);
     found.push({
+      ...(leans ? { leansOn: `${leans}#check` } : {}),
       id: `${example.attributes.id || ''}#check`, cls: 'check-your-learning', stem, marked: read({ marked: true }),
       keyed: answerAt !== -1, answer: answerAt === -1 ? '' : answerText(children[answerAt]),
       answerMarked: answerAt === -1 ? '' : markedStemText(children[answerAt]),
@@ -303,6 +310,58 @@ export function namedParts(answer) {
   const text = String(answer ?? '').trim().replace(/[.;]$/, '');
   if (!/^(?:only\s+)?\([a-z]\)(?:\s*,?\s*(?:and\s+)?\([a-z]\))*$/i.test(text)) return null;
   return [...text.matchAll(/\(([a-z])\)/gi)].map((match) => match[1].toLowerCase());
+}
+
+/** A part or an answer as the words that name a sample: its parenthetical
+ * asides ("(18.02 g/mol)") and its articles and "of" dropped, space-padded. */
+const sampleWords = (text) => padded(plain(String(text ?? '').replace(/\([^)]*\)/g, ' '))
+  .split(' ').filter((word) => word && !['of', 'the', 'a', 'an'].includes(word)).join(' '));
+
+/**
+ * A lettered exercise answered by NAMING ONE of its parts — "Which of the
+ * following represents the least number of molecules? (a) 20.0 g of H₂O
+ * (18.02 g/mol) (b) 77.0 g of CH₄ … (e) …", answered "20.0 g H₂O represents
+ * the least number of molecules since…" (3.1). Its parts are not questions:
+ * they are the closed set the stem asks the learner to choose from, and the
+ * page carries the exercise as ONE multiple choice whose options are the
+ * parts (docs/subjects/chemistry.md "Exercises", the row "one of a closed set
+ * the stem or its figure names"). Returns `{ lead, choices: [{ label, text }],
+ * chosen }`, or null: the lead-in must ask "which of the following", the
+ * answer must letter nothing and list no labels ("Only (b)" is one yes/no per
+ * part), and it must name exactly one part by that part's own words.
+ */
+export function closedSet(stem, answer) {
+  const lettered = sequentialParts(stem);
+  if (!lettered || !/\bwhich of the following\b/i.test(lettered.lead)) return null;
+  if (!answer || sequentialParts(answer, { answer: true }) || namedParts(answer)) return null;
+  const said = sampleWords(answer);
+  const named = lettered.parts.filter((part) => sampleWords(part.text).trim() && said.includes(sampleWords(part.text)));
+  if (named.length !== 1) return null;
+  return { lead: lettered.lead, choices: lettered.parts.map(({ label, text }) => ({ label, text })), chosen: named[0].label };
+}
+
+/** How alike an option must read to a part to be that part. */
+const CHOICE_FLOOR = 0.5;
+
+/**
+ * The part each multiple-choice option is, as labels in option order, or
+ * null unless the options are the parts one for one — every part an option,
+ * no option two parts, none of them a part the stem does not print. An
+ * option is the part it prints word for word; failing that, the one part it
+ * reads most like by its words, clearly ahead of the next: a page that
+ * corrects one value of a sample (3.1 prints CH₄'s molar mass 16.04 g/mol
+ * where the source prints 16.06, with a Source note) still offers that part.
+ */
+export function choiceLabels(choices, options = []) {
+  if (!choices?.length || options.length !== choices.length) return null;
+  const labels = options.map((option) => {
+    const exact = choices.filter((choice) => tight(choice.text) === tight(option));
+    if (exact.length === 1) return exact[0].label;
+    const ranked = choices.map((choice) => ({ label: choice.label, score: tokenSimilarity(choice.text, option) }))
+      .sort((a, b) => b.score - a.score);
+    return ranked[0].score >= CHOICE_FLOOR && ranked[0].score > (ranked[1]?.score ?? 0) ? ranked[0].label : null;
+  });
+  return labels.every(Boolean) && new Set(labels).size === choices.length ? labels : null;
 }
 
 /**
@@ -404,6 +463,12 @@ export function keyedUnits(xml) {
   whole.push(...checkYourLearning(document));
   const units = [];
   for (const { marked, answerMarked, ...unit } of whole) {
+    // One of a closed set: one unit, its parts the options (`closedSet`).
+    const closed = unit.keyed ? closedSet(marked ?? unit.stem, unit.answer) : null;
+    if (closed) {
+      units.push({ ...unit, group: unit.id, label: null, lead: closed.lead, partText: null, choices: closed.choices, chosen: closed.chosen, answerMedia: [] });
+      continue;
+    }
     const lettered = sequentialParts(marked ?? unit.stem);
     if (!lettered) {
       units.push({ ...unit, group: unit.id, label: null, lead: '', partText: null, answerMedia: marksIn(answerMarked ?? '') });
@@ -491,6 +556,13 @@ export function unitScore(unit, linkedQuestion, item = {}) {
 }
 
 function ownScore(unit, question, item = {}) {
+  // One of a closed set (`closedSet`): the item asks the lead-in and offers
+  // every part, and nothing else, as its options. A missing option is a miss.
+  if (unit.choices) {
+    if (!choiceLabels(unit.choices, item.options)) return { score: 0, words: 0 };
+    const near = tokenSimilarity(question, unit.lead);
+    return near >= WHOLE_FLOOR ? { score: near, words: 0, near, exact: 0 } : { score: 0, words: 0 };
+  }
   // How much the question reads like THIS unit's whole stem, and whether it
   // prints the part character for character: what ranks two units that both
   // pass (`unitFor`). Sibling parts and twin exercises share most words.
@@ -569,7 +641,17 @@ export const readingRank = ({ near = 0, exact = 0, words = 0 }) => Math.round(ne
  * (tools/source/chemistry-gate-probe.mjs) found about a hundred keyed parts
  * from chapter 2 on that were read as another exercise without it.
  */
-export function unitFor(question, units, item = {}) {
+/** How alike two question sentences must read to be one question (a link's words aside). */
+const ASK_SAME = 0.8;
+
+/** The last sentence of a text that ends in a question mark, with its link targets dropped; '' when none. */
+export function lastAsk(text) {
+  const sentences = unlinked(text).split(/(?<=[.?!])\s+/).map((sentence) => sentence.trim());
+  return [...sentences].reverse().find((sentence) => sentence.endsWith('?')) || '';
+}
+
+export function unitFor(linkedQuestion, units, item = {}) {
+  const question = unlinked(linkedQuestion);
   const groups = new Map();
   for (const unit of units) {
     const reading = unitScore(unit, question, item);
@@ -592,6 +674,26 @@ export function unitFor(question, units, item = {}) {
     for (const reading of group.readings) {
       if (reading.refers && groups.has(reading.refers) && !groups.get(reading.refers).keyed) groups.delete(reading.refers);
     }
+  }
+  // A Check Your Learning that leans on an earlier one opens with that one's
+  // GIVEN data restated in its own sentence (docs/subjects/chemistry.md,
+  // "Stems") — 3.3: "A teaspoon of table sugar containing about 0.01 mol
+  // sucrose has been dissolved in a cup of tea with a volume of 200 mL. What
+  // volume (mL) of the sweetened tea described above contains …?" — and so
+  // reads, word for word, more like the earlier unit than like its own. Its
+  // question is the one it ASKS: where the item's last question sentence is
+  // the own question of exactly one passing whole unit, the item is that
+  // unit's. (The earlier unit's own item asks the earlier question, and is
+  // read as itself.)
+  const asked = lastAsk(question);
+  if (asked && asked.split(' ').length >= RESTATED_WORDS) {
+    const carriers = [...groups.values()].flatMap((group) => group.readings)
+      .filter(({ unit }) => unit.partText === null || unit.partText === undefined)
+      .filter(({ unit }) => {
+        const own = lastAsk(unit.stem);
+        return own && tokenSimilarity(asked, own) >= ASK_SAME;
+      });
+    if (new Set(carriers.map(({ unit }) => unit.group)).size === 1) return carriers[0].unit;
   }
   let best = null;
   for (const group of groups.values()) {

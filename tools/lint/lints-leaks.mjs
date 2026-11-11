@@ -194,7 +194,10 @@ export function unicodeFormula(token, { chemistry = false } = {}) {
   // Influenza subtypes, and the NCBI Bookshelf (`NBK555891`) and PubMed
   // Central (`PMC1234567`) ids a Source note cites — N, B, K, P, M, C are
   // all elements (Anatomy and Physiology 14.3).
-  if (/^H\d+N\d+$/.test(base) || /^(?:NBK|PMC)\d+$/.test(base) || NOT_FORMULAS.has(base)) return null;
+  // An intravenous fluid's trade name — D5W, D10W: "dextrose 5% in water"
+  // (D is deuterium and W tungsten; Chemistry 2e 3.4, the first page to
+  // print one in an exercise stem).
+  if (/^H\d+N\d+$/.test(base) || /^(?:NBK|PMC)\d+$/.test(base) || /^D\d+W$/.test(base) || NOT_FORMULAS.has(base)) return null;
   // `Ca2` + `+`: the regex is lazy, so a lone element's digit lands in the
   // charge group already; a compound's trailing count stays in the base.
   const hasDigit = /\d/.test(base + charge.replace(/[+\-−]/, ''));

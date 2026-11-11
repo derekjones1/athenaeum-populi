@@ -178,3 +178,38 @@ test('numeralFromNumber gives an evaluated value its exact-decimal reading', () 
   assert.equal(numeralFromNumber(Infinity), null);
   assert.equal(numeralFromNumber(NaN), null);
 });
+
+test('a relative tolerance grades the value, with or without a count of figures', async (t) => {
+  const { withinPercent } = await import('./significant-figures.mjs');
+  const percent = (text) => readNumeral(text);
+  // Exactly on the edge of the band is inside it: 0.05% of 2000 is 1.
+  assert.equal(withinPercent(readNumeral('2001'), readNumeral('2000'), percent('0.05')), true);
+  assert.equal(withinPercent(readNumeral('2001.01'), readNumeral('2000'), percent('0.05')), false);
+  assert.equal(withinPercent(readNumeral('-123.88'), readNumeral('123.896'), percent('0.05')), false, 'the sign is part of the number');
+  const rows = [
+    // Chemistry 2e 3.3(a): the source answers 123.896 amu for P4; the book's table gives 4 × 30.97.
+    ['123.88', '123.896', null, '0.05', 'correct'],
+    ['123.9', '123.896', null, '0.05', 'correct'],
+    ['123.896', '123.896', null, '0.05', 'correct'],
+    ['1.2388\\times10^{2}', '123.896', null, '0.05', 'correct'],
+    ['124', '123.896', null, '0.05', 'incorrect'],
+    // one hydrogen miscounted (1.008 amu) is far outside the band
+    ['122.888', '123.896', null, '0.05', 'incorrect'],
+    ['18.02', '18.015', null, '0.05', 'correct'],
+    ['18', '18.015', null, '0.05', 'incorrect'],
+    // beside sig-figs the band replaces the last-digit allowance and the count is still asked
+    // (3.33(a): the source answers 82.24% N for NH3; the book's table gives 82.27)
+    ['82.27', '82.24', 4, '0.05', 'correct'],
+    ['82.2665', '82.24', 4, '0.05', 'form', 'too-many'],
+    ['82.2', '82.24', 4, '0.05', 'form', 'too-few'],
+    ['82.29', '82.24', 4, '0.05', 'incorrect'],
+    ['82.3', '82.24', 4, '0.05', 'incorrect'],
+  ];
+  for (const [response, key, figures, tolerance, verdict, reason] of rows) {
+    await t.test(`${response} against ${key} (${figures ?? 'no'} figures, ±${tolerance}%)`, () => {
+      const result = compareMeasured(readNumeral(response), readNumeral(key), { figures, tolerance: percent(tolerance) });
+      assert.equal(result.verdict, verdict);
+      assert.equal(result.reason, reason);
+    });
+  }
+});

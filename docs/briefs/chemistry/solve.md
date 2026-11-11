@@ -58,6 +58,12 @@ those places.
 - If the `answerForm` names `sig-figs:<n>` and your own count of the
   figures the data support is NOT n, answer with your own count and say so
   in `note` — that disagreement is what this pass exists to find.
+- If the `answerForm` is `tolerance:<p>%` with no `sig-figs`, the item is
+  graded inside that relative band and no count of figures is asked (the
+  source's key was computed from finer atomic masses than Appendix A
+  prints): answer with the value Appendix A's masses give by the page's own
+  method, to the places that method keeps, and put the arithmetic in
+  `note`. With `sig-figs:<n>` beside it, the count is asked as usual.
 - **A `multiplechoice`:** the option text verbatim. Name a second option in
   `alsoDefensible` whenever the page supports it too.
 - **A `textin`:** the word or phrase the page uses, in the page's spelling.

@@ -164,7 +164,19 @@ goes wrong.
 - **Numeric keys.** The key is the bare number the source prints, to the
   figures it prints; the stem names the unit. Declare `sig-figs:<n>
   last-digit:<k>` (playbook "Measured quantities" and the `last-digit` rule
-  in "Exercises"); a count takes `whole-number`. A key with a power of ten is
+  in "Exercises"); a count takes `whole-number`. **An atomic mass comes from
+  this book's periodic table** (`appendices/a-the-periodic-table.md`), and
+  the source's value stays the key where the table does not reach it digit
+  for digit: `tolerance:<p>%` at the chapter's band, alone on a formula
+  mass or molar mass asked for itself, beside `sig-figs:<n>` elsewhere
+  (playbook "Numeric keys", "The source's value is the key") — never a key
+  re-computed to the table. **A real-world number in a worked example's
+  stem is a claim** (a liter of air's argon, a dietary requirement, which
+  organism ferments grain), and so is every intermediate value: re-run
+  each line from the line it comes from, and where the body states a
+  defined constant, read the Summary and the Key terms entry of the same
+  term for superseded wording. List what does not reproduce in your
+  ledger's claim-error section. A key with a power of ten is
   `a\times10^{n}` with a braced exponent. **Run the arithmetic yourself**
   (`python3 -c`), from the stem's numbers and the book's own conversion
   factors, before you look at the source key; record both in your ledger.

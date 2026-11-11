@@ -96,3 +96,18 @@ test('a linked stem is spoken as its words, never as brackets and a path', () =>
   assert.equal(speakableMathText('Find $\\ce{[Co(NH3)6]^3+}$ in [Appendix K](/physical-sciences/chemistry/appendices/k-formation-constants-for-complex-ions/).', spoken),
     speakableMathText('Find $\\ce{[Co(NH3)6]^3+}$ in Appendix K.', spoken));
 });
+
+test('Markdown emphasis in a stem is spoken as its words, never as asterisks', async () => {
+  // Chemistry 2e 3.3: the molar unit is italic in prose, "0.30 *M* glucose",
+  // and the fill-in's accessible name was built from the raw prompt.
+  const { unemphasized } = await import('./speakable-label.mjs');
+  const stem = 'What volume of a 1.50-*M* KBr solution contains 66.0 g KBr? A **bold** word and 5.3 m*M*.';
+  assert.equal(plainMathText(stem), 'What volume of a 1.50-M KBr solution contains 66.0 g KBr? A bold word and 5.3 mM.');
+  assert.equal(speakableMathText(stem, (latex) => latex), plainMathText(stem));
+  // A multiplication sign between spaced numbers is not emphasis, and a
+  // star inside a math span is the engine's to read.
+  assert.equal(unemphasized('Compute 3 * 4 * 5.'), 'Compute 3 * 4 * 5.');
+  assert.equal(plainMathText('Find $a*b*c$ when *a* is 2.'), 'Find a*b*c when a is 2.');
+  // A blank's underscores are untouched.
+  assert.equal(unemphasized('an ________ property'), 'an ________ property');
+});

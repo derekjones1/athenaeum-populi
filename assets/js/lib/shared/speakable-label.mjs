@@ -136,10 +136,26 @@ const ESCAPED_DOLLAR = '\uE000';
  */
 export const unlinked = (text) => text.replace(/\[([^\]\n]+)\]\((?:\/|https?:\/\/)[^)\s]*\)/g, '$1');
 
+/**
+ * Prose with its Markdown emphasis markers dropped: `0.30 *M* glucose` is
+ * rendered with an italic M, and an accessible name built from the raw
+ * prompt would otherwise speak the asterisks (Chemistry 2e 3.3, the first
+ * fill-in stems in the library to carry emphasis — the molar unit). Only a
+ * closed pair hugging its words counts — inside a word too (`5.3 m*M*`), as
+ * Markdown itself reads it — so a spaced multiplication sign (`3 * 4 * 5`)
+ * is left alone. Never applied inside a math span.
+ */
+export const unemphasized = (prose) => prose
+  .replace(/\*\*(?=\S)([^*\n]*?\S)\*\*/g, '$1')
+  .replace(/(?<!\*)\*(?=[^\s*])([^*\n]*?[^\s*])\*(?!\*)/g, '$1');
+
 /** The text with math delimiters stripped — the pre-engine accessible name. */
 export function plainMathText(text) {
   return unlinked(text)
     .replaceAll('\\$', ESCAPED_DOLLAR)
+    .split(/(\$[^$]*\$)/)
+    .map((part) => (part.length > 2 && part.startsWith('$') && part.endsWith('$') ? part.slice(1, -1) : unemphasized(part)))
+    .join('')
     .replaceAll('$', '')
     .replaceAll(ESCAPED_DOLLAR, '$')
     .trim();
@@ -160,7 +176,7 @@ export function speakableMathText(text, convertLatexToSpeakableText) {
         piece.chemistry ? piece.text : convertLatexToSpeakableText(piece.text).trim()
       )).join(' ')} `;
     }
-    return part.replaceAll(ESCAPED_DOLLAR, '$');
+    return unemphasized(part).replaceAll(ESCAPED_DOLLAR, '$');
   });
   return spoken.join('').replace(/\s+/g, ' ').trim();
 }

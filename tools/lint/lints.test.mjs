@@ -3721,12 +3721,20 @@ test('a measured quantity declares sig-figs and last-digit together, on one nume
   assert.match(errorsFor('0.674', 'sig-figs:3 sig-figs:4 last-digit:1')[0], /exactly one/, 'two counts');
   assert.match(errorsFor('5', 'sig-figs:1 last-digit:1')[0], /no last digit to spare/, 'one figure with an allowance');
   assert.deepEqual(errorsFor('5', 'sig-figs:1 last-digit:0'), [], 'one figure, compared exactly');
-  assert.match(errorsFor('5371,3239', 'sig-figs:4 last-digit:0')[0], /grades ONE nonzero number/, 'a list key');
-  assert.match(errorsFor('(1.2,3.4)', 'sig-figs:2 last-digit:1')[0], /grades ONE nonzero number/, 'a pair key');
-  assert.match(errorsFor('2.5x', 'sig-figs:2 last-digit:1')[0], /grades ONE nonzero number/, 'an expression key');
-  assert.match(errorsFor('0', 'sig-figs:1 last-digit:0')[0], /grades ONE nonzero number/, 'zero shows no significant figures');
+  assert.match(errorsFor('5371,3239', 'sig-figs:4 last-digit:0')[0], /grade ONE nonzero number/, 'a list key');
+  // The relative band (chapter 3): alone, or beside the count in the
+  // allowance's place — never with a last-digit, never wider than 2 percent.
+  const band = (answer, form) => lint(fillin(answer, form)).filter((error) => /tolerance/.test(error) && !/name no form/.test(error));
+  assert.deepEqual(band('123.896', 'tolerance:0.05%'), [], 'a band alone on a numeral key is sound');
+  assert.deepEqual(band('82.24', 'sig-figs:4 tolerance:0.05%'), [], 'a band beside the count is sound');
+  assert.match(band('123.896', 'tolerance:0.05% last-digit:1')[0], /never with a `last-digit`/, 'a band and an allowance');
+  assert.match(band('123.896', 'tolerance:3%')[0], /at most 2 percent/, 'a band too wide to catch a mistake');
+  assert.match(band('123.896,18.015', 'tolerance:0.05%')[0], /grade ONE nonzero number/, 'a band on a list key');
+  assert.match(errorsFor('(1.2,3.4)', 'sig-figs:2 last-digit:1')[0], /grade ONE nonzero number/, 'a pair key');
+  assert.match(errorsFor('2.5x', 'sig-figs:2 last-digit:1')[0], /grade ONE nonzero number/, 'an expression key');
+  assert.match(errorsFor('0', 'sig-figs:1 last-digit:0')[0], /grade ONE nonzero number/, 'zero shows no significant figures');
   assert.match(errorsFor('48.3\\%', 'sig-figs:3 last-digit:1')[0], /declares `percent` too/, 'a percent key without percent');
-  assert.match(errorsFor('0.674', 'sig-figs:3 last-digit:1', ' answerMode="unordered"')[0], /cannot be declared with answerMode="unordered"/);
+  assert.match(errorsFor('0.674', 'sig-figs:3 last-digit:1', ' answerMode="unordered"')[0], /can(?:not)? be declared with answerMode="unordered"/);
 
   // The pair is a value form: it refuses the key restated unworked, so the
   // numeric-key rule asks for nothing more.

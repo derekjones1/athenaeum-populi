@@ -150,6 +150,22 @@ function within(a, b, units, unitExponent) {
 }
 
 /**
+ * Is |a − b| at most `percent` percent of |b|? Exact: `percent` is itself a
+ * numeral (`0.05` read off the token), so the test is one integer comparison
+ * and a response sitting on the edge of the band is on it, not beside it.
+ */
+export function withinPercent(a, b, percent) {
+  const to = Math.min(a.exponent, b.exponent);
+  const difference = scaled(a, to) - scaled(b, to);
+  const distance = difference < 0n ? -difference : difference;
+  const size = b.mantissa * pow10(b.exponent - to);
+  // distance · 100 ≤ percent · size, with percent = mantissa · 10^exponent.
+  const lift = percent.exponent < 0 ? pow10(-percent.exponent) : 1n;
+  const scale = percent.exponent > 0 ? pow10(percent.exponent) : 1n;
+  return distance * 100n * lift <= percent.mantissa * scale * size;
+}
+
+/**
  * The power of ten of the key's Nth significant figure: the place the
  * comparison is made at, and the unit the last-digit allowance counts in.
  */
@@ -159,7 +175,10 @@ export function lastFigureExponent(key, figures) {
 
 /**
  * Grade a numeral response against a numeral key under `figures`
- * significant figures and an allowance of `lastDigit` units in the last one.
+ * significant figures and an allowance of `lastDigit` units in the last one —
+ * or, where `tolerance` (a numeral, in percent) is given instead, a relative
+ * band of that width. With a tolerance and NO `figures` the count is not
+ * graded at all: any writing of a value inside the band is `correct`.
  *
  *   { verdict: 'correct' }
  *   { verdict: 'form', reason: 'too-many' | 'too-few' }
@@ -181,10 +200,20 @@ export function lastFigureExponent(key, figures) {
  * authoring error, reported as `form` against itself by the caller's
  * self-grade — this function assumes nothing about it beyond a nonzero value.
  */
-export function compareMeasured(response, key, { figures, lastDigit = 0 }) {
+export function compareMeasured(response, key, { figures, lastDigit = 0, tolerance = null }) {
   if (key.mantissa === 0n || response.mantissa === 0n) return { verdict: 'incorrect' };
+  // A relative band with no count of figures: the value is all that is
+  // graded. `123.88`, `123.9`, and `123.896` are one answer to a key the
+  // learner's table cannot reach digit for digit.
+  if (figures === null || figures === undefined) {
+    return { verdict: tolerance !== null && withinPercent(response, key, tolerance) ? 'correct' : 'incorrect' };
+  }
   const place = lastFigureExponent(key, figures);
-  const near = (numeral) => within(numeral, key, lastDigit, place);
+  // The band is `lastDigit` units of the key's last figure, or — when a
+  // tolerance is declared in its place — that percent of the key.
+  const near = tolerance !== null
+    ? (numeral) => withinPercent(numeral, key, tolerance)
+    : (numeral) => within(numeral, key, lastDigit, place);
 
   // Written to the key's count of figures — or to the key's own last decimal
   // place, which is the same precision on the other side of a power of ten

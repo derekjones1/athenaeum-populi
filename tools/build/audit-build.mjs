@@ -178,22 +178,23 @@ const built = walkFiles(root);
 const bytes = built.reduce((sum, file) => sum + statSync(file).size, 0);
 const htmlFiles = built.filter((file) => file.endsWith('.html'));
 const htmlDocuments = htmlFiles.map((file) => readFileSync(file, 'utf8'));
-const html = htmlDocuments.join('\n');
+// Every built file is read ONCE and tested where it sits. This tool used to
+// hold the HTML three times over and then join each set into one string —
+// six copies of a 395 MB site — and ran out of heap at Node's default limit
+// when Chemistry chapter 3 landed (November 11, 2026). The site is a fifth
+// of the way through one book: nothing here may grow with a multiple of it.
+const htmlText = new Map(htmlFiles.map((file, index) => [file, htmlDocuments[index]]));
 const runtimeFiles = built.filter((file) => /\.(?:html|css|m?js)$/i.test(file));
-const runtimeSources = runtimeFiles.map((file) => ({ file, text: readFileSync(file, 'utf8') }));
-const runtimeText = runtimeSources.map(({ text }) => text).join('\n');
+const runtimeSources = runtimeFiles.map((file) => ({ file, text: htmlText.get(file) ?? readFileSync(file, 'utf8') }));
 // Pagefind internally constructs fragment URLs against example.com before
 // replacing the origin. That string is library implementation, not site
 // configuration; placeholder checks still cover every first-party asset.
-const firstPartyRuntimeText = runtimeFiles
-  .filter((file) => !file.startsWith(join(root, 'pagefind') + '/'))
-  .map((file) => readFileSync(file, 'utf8'))
-  .join('\n');
+const firstParty = ({ file }) => !file.startsWith(join(root, 'pagefind') + '/');
 const forbidden = [
-  ['FlexSearch', /flexsearch/i, runtimeText],
-  ['placeholder production URL', /https:\/\/example\.com/i, firstPartyRuntimeText],
+  ['FlexSearch', /flexsearch/i, runtimeSources],
+  ['placeholder production URL', /https:\/\/example\.com/i, runtimeSources.filter(firstParty)],
 ];
-const problems = forbidden.filter(([, pattern, source]) => pattern.test(source)).map(([label]) => label);
+const problems = forbidden.filter(([, pattern, sources]) => sources.some(({ text }) => pattern.test(text))).map(([label]) => label);
 
 // Inspect authored page output inside main#content. Hextra's pinned light/dark
 // navbar logos live outside this element and remain ordinary theme chrome.

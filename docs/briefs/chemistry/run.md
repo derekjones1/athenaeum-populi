@@ -82,6 +82,30 @@ Sections 2.1–2.4"):
   then stops ("N stale — map by hand"). Drop the stale hashes from the
   authors' results and add a parent results file for the re-hashed items.
 
+Six things chapter 3 added (`docs/history/chemistry.md`, "Chapter 3"):
+
+- **The run facts state the chapter's band** — the `tolerance:<p>%` its
+  table-dependent keys are graded inside (playbook "Numeric keys", "The
+  source's value is the key") — with the widest measured gap between a
+  source key and the value this book's periodic table gives, and the
+  smallest real mistake it must still catch. Chapter 3's is `0.05%`. A key
+  is never re-computed to the table: the parent who did so was overruled.
+- **A ruling that corrects a key waits for the consistency reader.** It
+  sets the item beside the module's other exercises (3.59's "wrong" key
+  was the next exercise's given datum). A ruling made earlier is sent
+  marked provisional, and says what would overturn it.
+- **A ruling is checked against the errata log as well as the lints**
+  (`grep -n -i '<the word>' docs/openstax-errata.md`): an `accept` member
+  the parent allowed was a word the book's own erratum calls a misprint.
+- **The parent opens every quotation a Source note prints**, whatever the
+  claim pass says it opened: a reader's "opened" is not the parent's
+  "seen". No words seen, no quotation marks — paraphrase or leave it out.
+- **A Source note copied from another item's is re-read against its own
+  item**: "does not follow from the stem's data" was true where it was
+  written and false where it was pasted.
+- **A clerk that reports in seconds, or in one word, is read on disk**
+  before its output is used.
+
 ## 1. Before the wave
 
 `SP` is this session's scratchpad. Never a git command from an agent — say

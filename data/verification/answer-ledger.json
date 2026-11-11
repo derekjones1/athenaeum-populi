@@ -989,6 +989,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "01ff0cbbcb7cafed": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm27167936; stem gives 0.499935 -> 0.4999; source key 0.5000 kept by parent ruling (rounding noise: the source built it from 3.63(b) datum), tolerance:0.05% grades both correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "020ab1da44d710a8": {
    "verdict": "ok",
    "note": "source exercise fs-id1167661369825 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -3721,6 +3729,14 @@
     "result": "agrees"
    }
   },
+  "076671399ce178b5": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp50267072 part (choice); key = source solution, re-derived against the CNXML and recomputed from the periodic table",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0770facee3e37a61": {
    "verdict": "ok",
    "note": "sin(pi/3) = sqrt(3)/2 = 0.8660254037844386, rounds to 0.8660 at 4dp (node computed) | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -3915,6 +3931,10 @@
     "result": "agrees"
    }
   },
+  "07d36b5e70f4527d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm26500064 part (a), model answer = source solution, period added"
+  },
   "07d389525648fdaf": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -3926,6 +3946,22 @@
   "07d4b3652d0f5a80": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 875): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
+  "07d4ba8e806a585c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp56656128 part (a); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "07d78d81cd037d9b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm130496608 part (b), %Na: 45.98/158.10 = 29.08 (source 29.08)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "07dc37bbfaf85f17": {
    "verdict": "ok",
@@ -4786,6 +4822,14 @@
     "result": "agrees"
    }
   },
+  "09af1d8aaa1f3962": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp14091664 part (c); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "09af760a5a27c56b": {
    "verdict": "ok",
    "note": "Critical Thinking Question eip-142; model answer is the source solution verbatim, checkpoints are its three clauses. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -5049,6 +5093,14 @@
     "result": "agrees"
    }
   },
+  "0a2aa9606ea6241e": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm150394080, carbon: 3.01/24.81 = 12.13% -> 12.1 (source 12.1% C)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0a2e7068c911400b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -5301,6 +5353,14 @@
     "result": "agrees"
    }
   },
+  "0ab8109e177c14c3": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm2827872 part (b): 1:1.996:1 -> CH2O (source); stem period added (ruling G2)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0ab9decc8ac357ab": {
    "verdict": "ok",
    "note": "KC 2 6.5 § Molecular Regulation of Enzymes, m66463 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -5547,6 +5607,14 @@
   "0b2db299967691dc": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "0b37beb276cf8469": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp40492096 part (Al2S3 Al mass); key computed from Appendix A at the stem data's three figures (parent ruling: source values 26.98/53.74/80.94 a confirmed defect), Source note after the third item",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -6173,6 +6241,14 @@
     "result": "agrees"
    }
   },
+  "0c821eaa2e5444c5": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm98103760 part (b); H3PO4 97.99, 98.0/97.99 = 1.0001, source 1.00",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0c826a63b74d26da": {
    "verdict": "ok"
   },
@@ -6452,6 +6528,14 @@
    "note": "glossary recall: innate behavior (fs-idm53994832) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "fable-blind-solve",
+    "result": "agrees"
+   }
+  },
+  "0d0c791bd0763e6a": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp14091664 part (d); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -6739,6 +6823,14 @@
   "0da91452d116fcee": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "0daa185b3793f329": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm26577792 part (d); I2 253.8, 1.14e-3, source 1.1e-3 M",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -8182,6 +8274,14 @@
     "result": "agrees"
    }
   },
+  "10998d1958206d64": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm130496608 part (c): 120.24/310.18 = 38.76 (source % Ca2+ = 38.76); answerDisplay set with \\ce (check-3.2 defect 2)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "109a973ac43d7f92": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -8268,6 +8368,14 @@
   "10db807a6bb0ce67": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "10dd7b09b6f2cb16": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm62322112 part (b) mass; 1.862e-5 -> 1.9e-5, source 1.9e-5 g",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -8372,6 +8480,14 @@
    "note": "source exercise fs-id1167662550707 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "11370dde108c107d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm62322112 part (a) moles; 37.0 mol, matches source",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -9410,6 +9526,14 @@
   "1357da148da1f43b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "135bcd05c5a5e16b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp42864672 part (O mass); key = source solution, re-derived against the CNXML and recomputed from the periodic table",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -12829,6 +12953,14 @@
    "verdict": "ok",
    "note": "KC 4 20.1 § body Limitations of Phylogenetic Trees (fs-idp15260000), m66530 — parent re-read against the module"
   },
+  "19c3aa968649764c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp63104368: C 5.000 N 1 H 4.965 -> C5H5N 79.10; 240/79.10 = 3.03 -> C15H15N3 (source)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "19c97962756bcd94": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
@@ -13535,6 +13667,14 @@
   "1b11467b13b20f08": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "1b14dcda20040156": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm162294688: 111.70/159.70 = 69.94% -> 69.9 (source 69.9% Fe)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -14542,6 +14682,15 @@
     "result": "agrees"
    }
   },
+  "1d0921333a52b0d0": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm130496608 part (a), %N: source key 82.24 (decision 1, sig-figs:4 tolerance:0.05%); table 82.27 / unrounded 82.25 inside band; hint re-pointed to the percent composition equation (check-3.2 defect 1)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "The key 82.24 is the source's, computed from atomic masses with more digits than this book's periodic table prints (erratum 2996). The solver's 82.25 (formula mass carried unrounded) and the body's 82.27 (formula mass rounded to 17.03) both grade correct under sig-figs:4 tolerance:0.05%, as the parent verified through the grader; the body's working of ammonia is the source's and stands, and a Source note after the exercise says the answer shown is the source's."
+   }
+  },
   "1d0c66b1ae0898d8": {
    "verdict": "ok",
    "note": "RQ6 fs-id2790910 key C parallel; body fs-id2292670",
@@ -15080,6 +15229,14 @@
   "1e60d1cbe8f6b541": {
    "verdict": "ok",
    "note": "KC 2 10.3 § § Functions of RNA in Protein Synthesis, m58837",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "1e653c59ea76d41c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp50969136 part (a); key = source solution, re-derived against the CNXML and recomputed from the periodic table",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -15803,6 +15960,10 @@
     "result": "agrees"
    }
   },
+  "1fbcabd310c1b860": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp23072; key = source solution, re-derived against the CNXML and recomputed from the periodic table"
+  },
   "1fc0d248499e9dab": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -16140,6 +16301,14 @@
   "2064e6f200df0d38": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "20656eaa2a84af6e": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm73270640; source answer printed as key; recomputed from the periodic table",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -16841,6 +17010,14 @@
     "result": "agrees"
    }
   },
+  "21dfdfafa0d948de": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm39075008: CuI = 63.55+126.9 = 190.4/190.5; 454×1.00e-4/190.45 = 2.384e-4 → 2.38e-4 mol either way; source 2.38e-4 mol (decision 1(i))",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "21e039a44bde37ac": {
    "verdict": "ok",
    "note": "RQ fs-id2137086 key B; fs-id2134843 'pressure of any fluid enclosed in a space'; A/C/D false per fs-id2406221",
@@ -17339,6 +17516,14 @@
    "verdict": "ok",
    "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L381 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
   },
+  "2327511e35768396": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm88061984; 66.0/119.00/1.50 = 0.3697, source 0.370 L",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "232ce50edcd2e4eb": {
    "verdict": "ok",
    "note": "multiplechoice re-read against m46355 CNXML and page text; key \"air-filled spaces found within the frontal, maxilla, sphenoid, and ethmoid bones only\" — The paranasal sinuses are ________.",
@@ -17748,6 +17933,14 @@
     "result": "agrees"
    }
   },
+  "2424b748e10cedc1": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm39094144: C6H12O6 = 72.06+12.096+96.00 = 180.16; 5.3e-3×180.16 g/L = 954.8 mg/L = 95.48 mg/dL → 95; source 95 mg/dL (table within one unit: last-digit:1); no closing sentence, stem names the unit",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "24297e75e159da47": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"Whether or not they are sorting independently, genes may interact at the level of gene products such that the expression of an allele for o…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -18097,6 +18290,14 @@
   "24e70953f3fd7044": {
    "verdict": "ok",
    "note": "fs-id2528969 key D; fs-id2242057 Romberg test concentrates on proprioception",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "24e89da5a00f57ee": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp41325184; key = source solution, re-derived against the CNXML and recomputed from the periodic table",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -20381,6 +20582,14 @@
   "29637d5a7d223337": {
    "verdict": "ok"
   },
+  "2967e97bde001942": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp51968592 part (b); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "296cf590374ae210": {
    "verdict": "ok",
    "note": "[hash rebuilt after a parent edit; was 8f21e25096257ffe] body cloze fs-id1318566 (Lipid Storage box): 'depends on hormones (testosterone, estrogen, insulin, glucagon, leptin, and others), as well as genetic factors'; replaces the adipocytes cloze (checker: self-answering)",
@@ -20934,6 +21143,14 @@
   "2ab78a963f601aaf": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "2abd577f1ad443c2": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm108358432: H/C 0.994 -> CH 13.02; 78.1/13.02 = 5.998 -> C6H6 (source)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -23085,6 +23302,14 @@
     "result": "agrees"
    }
   },
+  "2f0dcc3d3c1e64f2": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp51968592 part (c); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2f0e30a88be2568a": {
    "verdict": "ok",
    "note": "String has 12 symbols, #x3 @x2 $x3 %x4; 12!/(3!2!3!4!)=277200 (node BigInt), matches CNXML key ratio (source leaves the quotient unevaluated). | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -23512,6 +23737,14 @@
   "2fd0fc612f7f863e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "2fd2f8bc3d40f51b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp51968592 part (a); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -27283,6 +27516,14 @@
     "result": "agrees"
    }
   },
+  "382618f63467312f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm98103760 part (c); Ca(OH)2 74.10, 0.06997 vs source 0.06998 (within one unit, decision 1(i): source key kept)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "382900e7ad38b033": {
    "verdict": "ok",
    "note": "source exercise fs-id1167742490714 (unkeyed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -27294,6 +27535,14 @@
   "3832a3faa0df9ee8": {
    "verdict": "ok",
    "note": "selfcheck C. acnes role — needs the infection sentence plus the enzyme/lesion sentence, stays selfcheck. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "383353aa9f638946": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm26523680: 1000 mL×1.109×0.100/0.970 = 114.33 → 114 g; source 114 g",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "38393646480962df": {
    "verdict": "ok",
@@ -27363,6 +27612,14 @@
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "3852ac8369f15c1e": {
+   "verdict": "ok",
+   "note": "cloze from body sentence fs-idm60561504 \"Solutions have previously been defined as homogeneous mixtures...\"",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -27706,6 +27963,14 @@
   "390cb657b6434144": {
    "verdict": "ok",
    "note": "author-built from § introduction: \"An additional strategy that needs to be explored further is the development of compounds that inhibit resistance mechanisms and restore the…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "391444474e42f414": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp41416224 part (b); key = source solution, re-derived against the CNXML and recomputed from the periodic table",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -28515,6 +28780,14 @@
     "result": "agrees"
    }
   },
+  "3ac540d32945ed76": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp13749376; source answer printed as key (first of two answers: molecules); recomputed from the periodic table",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3ac83c25544c618f": {
    "verdict": "ok",
    "note": "rate 53000/40=1325/yr, 85000+5*1325=91625; key p1279 #33 | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -29279,6 +29552,14 @@
     "result": "agrees"
    }
   },
+  "3c58b4bd822f762c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp50969136 part (b); key = source solution, re-derived against the CNXML and recomputed from the periodic table",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3c6610222708ae9a": {
    "verdict": "ok",
    "note": "sortbins re-read against m46355: every item binned by the module sentences listing the eight brain-case bones and the paired/unpaired facial bones — Sort each bone under the part of the skull it belongs to.",
@@ -29306,6 +29587,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "3c7b53f0e69364ea": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp14147136 part (a), model answer = source solution (a) verbatim"
   },
   "3c7c889c43b853d2": {
    "verdict": "ok",
@@ -29600,6 +29885,14 @@
   "3d1c797489d6e1fd": {
    "verdict": "ok",
    "note": "cloze fs-id1295393 first clause",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "3d22d9207f1d7628": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp14091664 part (b); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -32892,6 +33185,14 @@
     "result": "agrees"
    }
   },
+  "43bc4fbb39a7bd77": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp13749376; source answer printed as key (second of two answers: hydrogen atoms); recomputed from the periodic table",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "43beeb22aff93936": {
    "verdict": "ok",
    "note": "38.4 m66643 fs-idm24752624 (Critical Thinking Question). Model answer is the source solution verbatim; checkpoints decompose it with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -35575,6 +35876,14 @@
     "result": "agrees"
    }
   },
+  "49861d65c6860783": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm26577792 part (b); NH3 17.03, 0.4991, source 0.499 M; last-digit:0 so the stem 0.500 is refused",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "49892e266532e82f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -36070,6 +36379,14 @@
    "note": "source exercise fs-id1172101784957 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "4a993003a009063e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp14760336 part (a); key = source solution, re-derived against the CNXML and recomputed from the periodic table",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -37133,6 +37450,14 @@
     "result": "agrees"
    }
   },
+  "4cd7ce4d2a6b0764": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp42864672 part (Zr atoms); key = source solution, re-derived against the CNXML and recomputed from the periodic table",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4cdcaf7fb1f43683": {
    "verdict": "ok",
    "note": "Parent re-derived after rephrasing the prompt so 'hydrocarbon' no longer appears in it and adding accept='substituted hydrocarbons': 2.3 glossary 'substituted hydrocarbon — hydrocarbon chain or ring containing an atom of another element in place of one of the backbone carbons'.; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -38093,6 +38418,14 @@
   "4ef28bb589c4aac0": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "4ef72f7092d1b2bc": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp40890272; key = source solution, re-derived against the CNXML and recomputed from the periodic table",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -40085,6 +40418,14 @@
     "result": "agrees"
    }
   },
+  "53469c0b43279b30": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm26500064 part (b); KMnO4 158.04, 0.0908/158.04/0.500 = 1.149e-3, source 1.15e-3 M",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "534776dcd83ea0cb": {
    "verdict": "ok",
    "note": "glossary recall: supine (fs-id2308198) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
@@ -41663,6 +42004,14 @@
   "568387fa42ed108e": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "568d303754a5427d": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm150394080, chlorine: 17.81/24.81 = 71.786% -> 71.79 (source 71.79% Cl)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "568d907f03da46b3": {
    "verdict": "ok",
@@ -43339,6 +43688,14 @@
     "result": "agrees"
    }
   },
+  "59f6b11c6f5589ed": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm98103760 part (d); hydrate 322.20, 10500/322.20/18.60 = 1.752, source 1.75",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "59fc2b80adcf3ac8": {
    "verdict": "ok",
    "note": "glossary recall: peptide bond (fs-id1552657) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -43615,6 +43972,14 @@
     "result": "agrees"
    }
   },
+  "5a95300d62cd73f7": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm26577792 part (a); C27H46O 386.64, 5.043e-3, source 5.04e-3 M",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5a96717836d3590f": {
    "verdict": "ok",
    "note": "glossary recall varicosity; accept 'varicosities' (summary fs-id1638226 prints it; -ity plural not folded)",
@@ -43771,6 +44136,14 @@
   "5ae8d12da445313a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "5aea2a3b4c0e40a5": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm62322112 part (c) mass; 2.197 kg -> 2.20, source 2.20 kg",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -48582,6 +48955,14 @@
     "result": "agrees"
    }
   },
+  "664a52d19e0aec7d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm62322112 part (b) moles; 3.8e-7 mol, matches source",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "664a678ae3e43ba9": {
    "verdict": "ok",
    "note": "body cloze from § Nematoda (Roundworms): \"Some are common intestinal parasites, and their eggs can sometimes be identified in feces or around the anus of infected individuals.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -48683,6 +49064,14 @@
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "66830baf7e95a30c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp50969136 part (e); key = source solution, re-derived against the CNXML and recomputed from the periodic table",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -49195,6 +49584,14 @@
   "67ab2cd012c96234": {
    "verdict": "ok",
    "note": "7.5 Critical Thinking fs-id1976228; model answer = solution fs-id1845535 verbatim except 'The facial bones and base of the skull arise' -> 'The base of the skull arises' (claim correction F1: §6.4 m46301 fs-id1173842 forms the flat bones of the face by intramembranous ossification); stem verbatim, Source note after the item; checkpoints copied."
+  },
+  "67ae3861f6912c60": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp14147136 part (b): 400.0×10.0/68.0 = 58.82 → 58.8 g; source 58.8 g",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "67b246301979aca9": {
    "verdict": "ok",
@@ -50794,6 +51191,14 @@
     "result": "agrees"
    }
   },
+  "6b6305e614d61a85": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm62322112 part (a) mass; 3628.96 g -> 3.63e3, source 3.63e3 g",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6b6c6ba98a85315b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -50912,6 +51317,14 @@
   "6bbf7ba065a89b3c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "6bc51079295973c9": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp14091664 part (a); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -51221,6 +51634,14 @@
   "6c7c2bacd9f0dff7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "6c80562cc91113da": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm81033056; 0.250 x 1.88/0.125 = 3.76, source 3.76 L",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -51632,6 +52053,14 @@
    "note": "glossary recall: gastrodermis (fs-idp8187536) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "6d615557164779be": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm26577792 part (c); C3H7OH 60.09, 9.918, source 9.92 M",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -52387,6 +52816,14 @@
   "6f2402ed3c840376": {
    "verdict": "ok"
   },
+  "6f27ee12a2bd3270": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp56656128 part (e); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6f281449b61cb031": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -52569,6 +53006,14 @@
   "6f87322126e74f88": {
    "verdict": "ok",
    "note": "Parathyroid hormone (PTH) is produced by the parathyroid glands in res — re-read against the raw CNXML source item or the named module sentence/table row; single defensible option",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "6f8bcbf9153698b3": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp103798128: 102.18/267.48 = 38.20 -> 38.2 (source 38.2)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -53087,6 +53532,14 @@
   "70a93993f88805e1": {
    "verdict": "ok",
    "note": "key-term recall: MMR; printed in § Measles (Rubeola): \"Vaccination is widespread in developed countries as part of the measles, mumps, and rubella ( MMR ) vaccine.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "70b08873eb9e071e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm2827872 part (a): S/C 1.996 -> CS2 (source); stem period added (ruling G2)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -54459,6 +54912,14 @@
     "result": "agrees"
    }
   },
+  "738fc6e6f2c96e66": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp56804240 part (a); key = source solution, re-derived against the CNXML and recomputed from the periodic table",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7396d8f367716dde": {
    "verdict": "ok",
    "note": "Critical Thinking eip-843, model answer is the source solution verbatim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -55666,6 +56127,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver-B",
+    "result": "agrees"
+   }
+  },
+  "75fa4f9fcfa65a61": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp76540048; source answer printed as key; recomputed from the periodic table",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -57352,6 +57821,14 @@
     "result": "agrees"
    }
   },
+  "797dfadd4b947c1e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp14760336 part (d); key = source solution, re-derived against the CNXML and recomputed from the periodic table",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "797e38b06a6df53b": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -57910,6 +58387,14 @@
     "result": "agrees"
    }
   },
+  "7a5e57976b00e4e1": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm62194192 part (b); 0.150 mol x 180.16 = 27.02, source 27 g",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7a6014f8d11dbc91": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -58417,6 +58902,14 @@
   "7b84a9197d31e374": {
    "verdict": "ok"
   },
+  "7b8b59bfcec4bcb2": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp56804240 part (e); key = source solution, re-derived against the CNXML and recomputed from the periodic table",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7b8b93f24e12a7b5": {
    "verdict": "ok",
    "note": "KC 3 15.1 § Parasympathetic Division of the Autonomic Nervous System, m46582"
@@ -58793,6 +59286,14 @@
   "7c2a346e5c07ba7c": {
    "verdict": "ok",
    "note": "Re-derived each target: f(x)=2^(x-1)+3 gives f(0)=2^-1+3=3.5, f(1)=2^0+3=4, f(2)=2+3=5, f(3)=4+3=7, f(4)=8+3=11; all five on the 0.5 snap lattice and inside [-4,6]x[-1,12]. Matches source Try It (m49362) 'Graph f(x)=2^(x-1)+3'. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "7c2aff510cd70c5c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm98103760 part (a); 0.444/0.654 = 0.6789, source 0.679",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "7c2b69af570b47ce": {
    "verdict": "ok",
@@ -60201,6 +60702,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "7f2564271e885600": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm98982768; 0.01/0.200 = 0.05 M, source 0.05 M",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7f26b1b91d52581c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -60272,6 +60781,14 @@
   "7f4cc16d26fedcd3": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "7f4ea4eda25411ee": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp51968592 part (e); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "7f57dd43c5308dd4": {
    "verdict": "ok",
@@ -60675,6 +61192,14 @@
   "801aed93253cc805": {
    "verdict": "ok",
    "note": "glossary recall: prone (fs-id2752934) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "802265b0b693ea1d": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm64107376; 0.00375 mol / 0.05 M = 0.075 L, one figure 0.08 L = 80 mL, source 80 mL",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -62642,6 +63167,14 @@
   "8463d4d27a49c1f6": {
    "verdict": "ok",
    "note": "Review fs-id2442596 key A quadratus lumborum; options C/D one-word corrected interior/exterior oblique -> internal/external oblique; body fs-id2738851 and summary place QL in the posterior wall",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "8469226fd1f2824e": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm22950992 (m68704), first quantity: 0.48e-3 g/50.0 g × 1e6 = 9.6 ppm; source 9.6 ppm",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -64937,6 +65470,14 @@
     "result": "agrees"
    }
   },
+  "89419ea8716d0d7e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp40492096 part (choice); key = source solution, re-derived against the CNXML and recomputed from the periodic table",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "89444243a9caffc6": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -65178,6 +65719,14 @@
   "89b083ccf0932f47": {
    "verdict": "ok",
    "note": "source exercise fs-id1167583612623 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "89b666555f184fa4": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp14760336 part (b); key = source solution, re-derived against the CNXML and recomputed from the periodic table",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -65427,6 +65976,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "8a49937411a59f8e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm62322112 part (c) moles; 73.15 -> 73.2 mol, matches source",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8a4f04417c795c35": {
    "verdict": "ok",
    "note": "KC 6 32.3 § Grafting, m66609 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | Biology KC re-review Sep 24 2026 (knowledge-check-30-32.md:316): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
@@ -65625,6 +66182,14 @@
    "note": "MC fs-idm29405328 'Which of the following gives rise to the skin cells?' — CNXML SOL: A (ectoderm); page keys ectoderm, source options and order preserved. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "8abc84c38396e479": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp14091664 part (e); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -66188,6 +66753,14 @@
     "result": "agrees"
    }
   },
+  "8c299e47af680fb2": {
+   "verdict": "ok",
+   "note": "glossary select-the-term: volume percentage (fs-idp17597424, 'ratio of solute-to-solution volume expressed as a percentage'); options the five units of objective 1 in its order",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8c2afc3fc91623d9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -66481,6 +67054,14 @@
   "8cab18c67651f41c": {
    "verdict": "ok",
    "note": "source exercise fs-id1167741301615 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "8cab3909db3ee7fa": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm104693104; 0.2500 x 0.200 x 110.98 = 5.549, source 5.55 g",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -68004,6 +68585,14 @@
     "result": "agrees"
    }
   },
+  "8ff6f97d9111d34c": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm1714048; source answer printed as key; recomputed from the periodic table",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8ff870584f0d44bd": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -68090,6 +68679,14 @@
   "9042e29ff4e2e3c4": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "904498bd82896085": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm153155296: ratios C 3.999 H 5.009 N 1.999 O 1 -> C4H5N2O, 97.10; 194.2/97.10 = 2 -> C8H10N4O2 (source)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -69424,6 +70021,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "9321cf5d829d31e3": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm81897840; 6.52/128.9/0.0750 = 0.6744, source 0.674 (stem molar mass 128.9 reported: table gives 129.83); Source note after item gives the table value 129.83",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9322c32de2480d89": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -69443,6 +70048,14 @@
   "932f0356abd9a96f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "9332bc7db83cfd44": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm149528800, molecular: EF 260.13; 520.8/260.13 = 2.002 -> Mg6Si4H6O16 (source)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -69747,6 +70360,14 @@
   "93cd6227a1b67d29": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "93d24485f5b55b2f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm27373392; 868.8/36.46/2.00 = 11.91, source 11.9 M",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -70368,6 +70989,14 @@
   "9507d9a76d202224": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "950cea921c1add92": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm130496608 part (b), %O: 48.00/158.10 = 30.36 (source 30.36)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -72328,6 +72957,14 @@
     "result": "agrees"
    }
   },
+  "992447119f0c4e35": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp42864672 part (O atoms); key = source solution, re-derived against the CNXML and recomputed from the periodic table",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9929e463581b44ad": {
    "verdict": "ok",
    "note": "KC 2 12.1 § Introducing Recombinant Molecules into Eukaryotic Hosts, m58848 | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -73386,6 +74023,14 @@
   },
   "9bc76d8fa4f024b6": {
    "verdict": "ok"
+  },
+  "9bcac88f18e62082": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm81737600; 25.0 x 2.04/500.0 = 0.102, source 0.102 M",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "9bcb2d6d4ba6356c": {
    "verdict": "ok",
@@ -74726,6 +75371,14 @@
     "result": "agrees"
    }
   },
+  "9ea30d4055adeaf9": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm27672496 part (b); 0.04888, matches source",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9ea3bbc4c27137d1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -75166,6 +75819,14 @@
     "result": "agrees"
    }
   },
+  "9f9034ade687c635": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp50969136 part (d); key = source solution, re-derived against the CNXML and recomputed from the periodic table",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9f953b4195af603d": {
    "verdict": "ok",
    "note": "KC 5 23.3 § The Mouth, m46511",
@@ -75484,6 +76145,14 @@
   "a059f54cf54e1544": {
    "verdict": "ok",
    "note": "source Review MC keyed 'gluteal' matches m46482 solution letter; options in source order",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "a05baad536f4926f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp20009152 part (b); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -78994,6 +79663,14 @@
     "result": "agrees"
    }
   },
+  "a73cd852c1ddb93c": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm23566960 (m68704): 135/(135+775)×100 = 14.835 → 14.8; source 14.8%",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a744b1fd3146918c": {
    "verdict": "ok",
    "note": "source exercise fs-id1167663712682 (Critical Thinking, bare media OSC_Microbio_11_07_Diaux_img), source prints no key; selfcheck per the run's decision. Model answer applies § The lac Operon: Activation by Catabolite Activator Protein (the diauxic-growth and CAP-cAMP passages) to xylose exactly as the question's own note instructs. Caption author-written; alt reads axes and letter positions only, never the explanation. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -80642,6 +81319,14 @@
   },
   "aafbe7fa5ed438fe": {
    "verdict": "ok"
+  },
+  "aafc35acec7bce59": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm27672496 part (a); 0.125, matches source",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "ab000ea458367231": {
    "verdict": "ok",
@@ -82572,6 +83257,14 @@
     "result": "agrees"
    }
   },
+  "af11b1d85d78165c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp67228256: 1029 g/L×0.050 = 51.45 g/180.16 = 0.2856 → 0.29 M; source 0.29 M (decision 1(i))",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "af132ca15e2d54ce": {
    "verdict": "ok",
    "note": "g(x)=x^2-6x+13: h=3, k=g(3)=4, so (x-3)^2+4; matches CNXML solution."
@@ -82766,6 +83459,14 @@
   "af86ad12f9cd2ac2": {
    "verdict": "ok",
    "note": "author-built from § Other Methods of Control, Check Your Understanding: \"Which is most effective at removing microbes from a product: sanitization, degerming, or sterilization?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "af9c84061b1c2664": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp42864672 part (Si atoms); key = source solution, re-derived against the CNXML and recomputed from the periodic table",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -83494,6 +84195,14 @@
    "verdict": "ok",
    "note": "CT fs-id2133649, model = solution fs-id2325220 verbatim"
   },
+  "b1656d2ca70695ec": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm1441136 (m68704): 750×0.12×0.789/46.06 = 1.542 → 1.5 mol; source 1.5 mol ethanol",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b173d22f58251dfd": {
    "verdict": "ok",
    "note": "key-term recall from the Glossary appendix: microbiome (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -83779,6 +84488,14 @@
   "b1f6da58ae4feb95": {
    "verdict": "ok",
    "note": "author-built from § summary: \"The level of free energy of the electrons drops from about 60 kcal/mol in NADH or 45 kcal/mol in FADH 2 to about 0 kcal/mol in water.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "b1fc5ec88f6f3474": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm98103760 part (e); 7.0e-3/0.1000 = 0.070, source 0.070",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -84802,6 +85519,14 @@
     "by": "orchestrator",
     "result": "adjudicated",
     "note": "accept already carries \"tympanic membrane|eardrum|ear drum\"; module prints tympanic membrane six times. Key stands."
+   }
+  },
+  "b41cb79e9b678727": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp51968592 part (d); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
    }
   },
   "b41f9ace5b5fc212": {
@@ -86638,6 +87363,14 @@
    "verdict": "ok",
    "note": "CT fs-id1927012, source solution verbatim"
   },
+  "b7ec49ef941b32c3": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp17719968; source answer printed as key; recomputed from the periodic table",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b7ef245899aeeda1": {
    "verdict": "ok",
    "note": "Microbiology 5.1 source CT selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the historical informal groupings and the evolutionary-history basis of current protist taxonomy)"
@@ -86971,6 +87704,14 @@
   "b880bf96f354a35a": {
    "verdict": "ok",
    "note": "body cloze from § Southern Blots and Modifications: \"After hybridization with a DNA probe, the signal intensity detected is measured, allowing the researcher to estimate the amount of target D…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "b884d5ac9b495344": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm26521728; 1.0/40.08 = 0.02495, source 0.025 M",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -87629,6 +88370,15 @@
     "result": "agrees"
    }
   },
+  "ba033303b1705683": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm130496608 part (a), %H: 3.024/17.03 = 17.76 (source 17.76); hint re-pointed (check-3.2 defect 1)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "The key 17.76 is the source's and the body's own. The solver's 17.75 (formula mass carried unrounded, 3.024/17.034) grades correct under sig-figs:4 last-digit:1, which is what the allowance for a molar mass fetched from the table is for."
+   }
+  },
   "ba0702e2958268cb": {
    "verdict": "ok",
    "note": "summary cloze fs-id2844948 last sentence 'with the lungs and plasma buffers'",
@@ -88173,6 +88923,14 @@
     "result": "agrees"
    }
   },
+  "bb288039aaf4d22c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp56804240 part (b); key = source solution, re-derived against the CNXML and recomputed from the periodic table",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "bb28a4168e299e50": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -88384,6 +89142,14 @@
   "bb8acee9b7843e9d": {
    "verdict": "ok",
    "note": "KC 7 38.2 § body Thickening of Long Bones (fs-idm166160432), m66638 — parent re-read against the module"
+  },
+  "bb913716b9550f24": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm150394080, oxygen: 4.00/24.81 = 16.12% -> 16.1 (source 16.1% O)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "bb92ed4ce89cf3b2": {
    "verdict": "ok",
@@ -88673,6 +89439,14 @@
    "note": "source exercise fs-id1167661442116 (unkeyed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "bc32380e101374bb": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp42864672 part (Si mass); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm sig-figs:4 tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -90650,6 +91424,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "c041964ea3f18c46": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp15853040; source answer printed as key; recomputed from the periodic table",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c04756879a65cb78": {
    "verdict": "ok",
    "note": "glossary recall: ampulla of Lorenzini (fs-idp8515136) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -92599,6 +93381,14 @@
     "result": "agrees"
    }
   },
+  "c49bd9478ae5b43c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp71747216; key = source solution, re-derived against the CNXML and recomputed from the periodic table",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c49c7f4caade9988": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -92835,6 +93625,14 @@
    "note": "source exercise fs-id1167662498805 (unkeyed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "c4f212f89612a9b5": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp20009152 part (d); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -94319,6 +95117,14 @@
     "result": "agrees"
    }
   },
+  "c856f44ac3de2534": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp40492096 part (AlPO4 Al mass); key computed from Appendix A at the stem data's three figures (parent ruling: source values 26.98/53.74/80.94 a confirmed defect), Source note after the third item",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c85a89741bea50c6": {
    "verdict": "ok",
    "note": "KC 2 7.4 § Complex III, m66468 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -94571,6 +95377,18 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "c9021e8227155c47": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm27672496 part (d); 0.005625 -> 0.0056, matches source",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c90298b612df168a": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm62194192 part (a), model answer = source solution, capital and period added"
   },
   "c9077160fbbf6933": {
    "verdict": "ok",
@@ -97554,6 +98372,14 @@
     "result": "agrees"
    }
   },
+  "cf60271d878f4887": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp11336208: ratios 1:1.999:1 -> CH2O (source CH2O)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "cf607f1e049b67d4": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -98640,6 +99466,22 @@
    "verdict": "ok",
    "note": "KC 1 1.2 § The Role of Genetics in Modern Taxonomy, m58782"
   },
+  "d1ee17b46fdef0a1": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp41416224 part (c); key = source solution, re-derived against the CNXML and recomputed from the periodic table",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d1f54c4e81cb8d20": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp40492096 part (Al2Cl6 Al mass); key computed from Appendix A at the stem data's three figures (parent ruling: source values 26.98/53.74/80.94 a confirmed defect), Source note after the third item",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d1f5a7f911cfba53": {
    "verdict": "ok",
    "note": "body selfcheck, haptens; model traces to fs-id1167662654313 (too small alone; free epitope; attach to carrier to become antigenic). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -98754,6 +99596,14 @@
   "d25bf5b9a6dd3f4f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d25ea0eb379b8893": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm27672496 part (c); 0.2056 -> 0.206, matches source",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -99235,6 +100085,14 @@
   "d3884e26f6e3aee1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d38ddc23a55d25c6": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm26483264; K2SO4 174.26, 57/174.26/0.20 = 1.635, source 1.6 L",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -100289,6 +101147,22 @@
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "d599db6db23bf1f3": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp56804240 part (d); key = source solution, re-derived against the CNXML and recomputed from the periodic table",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d59b31e2251872c0": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp56656128 part (c); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -102045,6 +102919,14 @@
     "result": "agrees"
    }
   },
+  "d95af7382c19eb00": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm8741648; source answer printed as key; recomputed from the periodic table",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d95cadf6221d7ced": {
    "verdict": "ok",
    "note": "author-built from § Agglutination of Bacteria and Viruses, Check Your Understanding: \"In a latex bead assay to test for antibodies in a patient's serum, with what are the beads coated?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -102088,6 +102970,14 @@
   "d984a106e1f3c328": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d98708e041a5a133": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp20009152 part (a); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -103663,6 +104553,10 @@
    "verdict": "ok",
    "note": "6.4 author reading: source CT fs-id1812566; model answer = solution fs-id1173842 verbatim; 6 checks are its clauses"
   },
+  "dd06c924dddc14d7": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp17737968; key = source solution, re-derived against the CNXML and recomputed from the periodic table"
+  },
   "dd0af5d8d234318f": {
    "verdict": "ok",
    "note": "f(5)=2 <-> f^-1(2)=5 by definition; key p1272 #79 | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -103966,6 +104860,14 @@
     "result": "agrees"
    }
   },
+  "ddce128f122435bd": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp56656128 part (d); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ddd684d577c6c717": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -104037,6 +104939,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "dde5db68287472a4": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp50267072 part (explanation); key = source solution, re-derived against the CNXML and recomputed from the periodic table"
   },
   "dde6361d989dcc0b": {
    "verdict": "ok",
@@ -105066,6 +105972,14 @@
   "e00909cf414dcf7f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "e01204e7bf9ef4e5": {
+   "verdict": "ok",
+   "note": "glossary select-the-term: mass-volume percent (fs-idm12309360, 'ratio of solute mass to solution volume, expressed as a percentage'); option spelled as objective 1 prints it, mass-volume percentage",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -106739,6 +107653,14 @@
   "e37dc37244a32ef4": {
    "verdict": "ok"
   },
+  "e3815c48ffa54ee0": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp20009152 part (c); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e3826ec6e62fde59": {
    "verdict": "ok",
    "note": "selfcheck = source exercise fs-idp223910576 (Critical Thinking); model answer is the source solution verbatim, rubric checkpoints decompose its three clauses with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -106776,6 +107698,14 @@
   "e39e234f59ae778e": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "e39e5cc5a49a7801": {
+   "verdict": "ok",
+   "note": "glossary recall: solvent (definition fs-idm26666032)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "e3a0bee938d437d8": {
    "verdict": "ok",
@@ -107716,6 +108646,14 @@
   "e5729f6a698a2b60": {
    "verdict": "ok"
   },
+  "e5730230c2031b8e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp56656128 part (b); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e5742b2153e662dd": {
    "verdict": "ok"
   },
@@ -108278,6 +109216,14 @@
    "note": "a_n=12*(-1/2)^(n-1): n=1..5 gives 12, -6, 3, -1.5, 0.75 (node-computed), i.e. 12,-6,3,-3/2,3/4. Matches CNXML Algebraic #33 solution. | carried Oct 12 2026 (Precalculus ch11–12 re-review): re-hashed by a form, stem, or hint edit, key unchanged; re-solved blind (fable-solver, 77/77)",
    "solved": {
     "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
+  "e6aa0bda4224103c": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp70151968: N 0.009279 mol, O 0.02313 mol, O/N 2.492 -> N2O5 (source N2O5)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -108966,6 +109912,14 @@
   "e89dff63e69067be": {
    "verdict": "ok",
    "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "e89f47cef6e66fcc": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp42864672 part (Zr mass); key = source solution, re-derived against the CNXML and recomputed from the periodic table",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "e8a06cbb5e7a18a9": {
    "verdict": "ok",
@@ -110302,6 +111256,14 @@
     "result": "agrees"
    }
   },
+  "eb9d6478b12f2f33": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp50969136 part (c); key = source solution, re-derived against the CNXML and recomputed from the periodic table",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "eb9ff53861588cf1": {
    "verdict": "ok",
    "note": "Check Your Learning of example fs-idm139194256; key 24.31 amu; computed 24.3057",
@@ -110873,9 +111835,25 @@
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
   },
+  "eca4ec4776078079": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp41416224 part (a); key = source solution, re-derived against the CNXML and recomputed from the periodic table",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "eca505336484304e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "eca661a1786ddc3d": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm60422464; 50.00 x 3.00/0.575 = 260.9 mL = 0.261 L, source 0.261 L",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -112158,6 +113136,15 @@
     "result": "agrees"
    }
   },
+  "ef89bb604fa7fcc1": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm62322112 part (d) moles; 5.85e-7 exactly, Section 1.5 half-to-even gives 5.8e-7; source 5.9e-7 corrected by parent ruling, last-digit:0 (1.6 80.92 C precedent), Source note after item | form-only edit after the blind solve: 3.51(d) moles to last-digit:1 (the solver's flag on the tie)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "An exact tie, 5.85e-7. The key is 5.8e-7 by Section 1.5's round-half-to-even rule, which this module applies to 1.325 mol; the source prints the half-up 5.9e-7 (erratum 2998, disclosed deviation). The solver's flag is accepted: after this solve the form is changed from last-digit:0 to last-digit:1 so that the tie rounded the other way also grades correct — the item tests molarity, not the rounding of a tie."
+   }
+  },
   "ef8c39e5beb4a08a": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -113254,6 +114241,14 @@
     "result": "agrees"
    }
   },
+  "f216a4e66f0e129c": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm22950992 (m68704), second quantity: ×1e9 = 9600 ppb (two figures); source 9600 ppb",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f21d7dcadb288264": {
    "verdict": "ok",
    "note": "Critical Thinking fs-idp4363264, solution fs-idm143870304, transcribed verbatim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -113973,6 +114968,14 @@
     "result": "agrees"
    }
   },
+  "f38386a9392e3b19": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm62322112 part (d) mass; 8.887e-5 -> 8.9e-5, source 8.9e-5 g",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f38be4f0bcb9b194": {
    "verdict": "ok",
    "note": "KC 5 22.5 § Function of Hemoglobin, m46545"
@@ -114425,6 +115428,14 @@
     "result": "agrees"
    }
   },
+  "f45c057aab8943f0": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm130496608 part (b), %S: 64.12/158.10 = 40.56 (source 40.56)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f45e6f4b7bbcf6ac": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -114474,6 +115485,14 @@
   },
   "f46b56ff2b91eeff": {
    "verdict": "ok"
+  },
+  "f46fa48dbd76cad8": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm98103760 part (f); HCl 36.46, 18/36.46/0.075 = 6.58, source 6.6",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "f46fb0381795bcb7": {
    "verdict": "ok",
@@ -114738,6 +115757,14 @@
   "f4f5816c2d367839": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "f4f64e4284f7c50a": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp14760336 part (c); key = source solution, re-derived against the CNXML and recomputed from the periodic table",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -115861,6 +116888,10 @@
     "result": "agrees"
    }
   },
+  "f75d1388b861abed": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm66121488 (printed 3.45), model answer = source solution"
+  },
   "f75e32684f8b5d56": {
    "verdict": "ok",
    "note": "author-built from § Antigen-Presenting Cells (APCs): \"In addition, whereas macrophages and dendritic cells recognize pathogens through nonspecific receptor interactions (e.g., PAMPs , toll-like…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -115934,6 +116965,14 @@
    "note": "body cloze from § Protein Catabolism: \"When grown on skim milk agar, production of the extracellular protease caseinase causes degradation of casein, which appears as a zone of c…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "f776ebd9776362ec": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm27694256; 0.025 x 25/0.33 = 1.894, source 1.9 mL",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -117273,6 +118312,14 @@
     "result": "agrees"
    }
   },
+  "fa240757eb1d25fc": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm27131760 (m68704), example's 37.2% and 1.19 g/mL restated: 125/0.372/1.19 = 282.37 → 282 mL; source 282 mL",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "fa265ec23e3dd699": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -117735,6 +118782,14 @@
   },
   "fb1aa7fbad200fc5": {
    "verdict": "ok"
+  },
+  "fb1adb62885147d1": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm149528800, empirical: Mg 1.499 Si 1 H 1.497 O 4.000 -> x2 Mg3Si2H3O8 (source)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "fb21dad26090a6fe": {
    "verdict": "ok",
@@ -118959,6 +120014,14 @@
     "result": "agrees"
    }
   },
+  "fd995f37a5fa69be": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp56804240 part (c); key = source solution, re-derived against the CNXML and recomputed from the periodic table",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "fd9ae16e3f59dfc8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -119067,6 +120130,14 @@
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "fdca09b312a70a95": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp10913296; source answer printed as key; recomputed from the periodic table",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -119192,6 +120263,14 @@
    "note": "source exercise fs-idm104907776 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "fe25f6c6f8ae063b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm5149536: CaCO3 = 40.08+12.01+48.00 = 100.09 g/mol (Appendix A); 0.175/100.09 = 1.748e-3 → 1.75e-3 M; source 1.75e-3 M (decision 1(i))",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },

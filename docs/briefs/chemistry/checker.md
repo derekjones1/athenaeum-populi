@@ -41,7 +41,14 @@ catch.
   a `sig-figs` count that is not the key's; a `last-digit` that the
   playbook's rule would set the other way (say which numbers in the
   calculation are measured factors); a stem that does not name the unit the
-  key is in. Grade through the real grader
+  key is in. **Take every atomic mass from this book's periodic table**
+  (`appendices/a-the-periodic-table.md`): the answer a learner reaches from
+  it must grade `correct`. Report an item where it does not; a
+  `tolerance:<p>%` wider than the chapter's band, or declared where
+  `last-digit:1` already takes the table's value; and a gap between the
+  table's value and the key that is wider than the band (that is an
+  arithmetic defect, not table noise — playbook "Numeric keys", "The
+  source's value is the key"). Grade through the real grader
   (`node -e 'import("./assets/js/lib/math/check-answer.mjs").then(m=>console.log(m.checkAnswer("<typed>","<key>",{form:"<form>"})))'`):
   your own answer, the key, the unrounded readout, the answer with its
   unit, and every number the stem prints. Your answer and the key must be
@@ -214,6 +221,9 @@ stem shows it.
   needs it and names no table is not a finding, and an added "Use the
   periodic table." is one (the lint refuses it).
 - `npm run verify-section -- <page>` prints `verified`.
+- `node tools/verify/verify-replay.mjs <page>` accepts no printed number:
+  a stem's own number typed back must not grade correct (chapter 3: two
+  items of one page failed it after `verify-section` passed).
 
 ## 6. Report
 

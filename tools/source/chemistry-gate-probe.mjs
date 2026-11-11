@@ -24,7 +24,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { keyedUnits } from '../lib/keyed-units.mjs';
-import { judgeKeyedUnit } from '../verify/verify-source-keys.mjs';
+import { judgeKeyedUnit, labelledFormulas } from '../verify/verify-source-keys.mjs';
 import { coverage, sourceExercises } from '../verify/verify-source-coverage.mjs';
 import { chapters, shapeOf } from './chemistry-shapes.mjs';
 
@@ -34,14 +34,47 @@ const bundle = path.join(root, 'sources/openstax/osbooks-chemistry-bundle');
 /** The stem as a shortcode parameter holds it. */
 const quoted = (text) => text.replace(/\\/g, '\\\\').replace(/"/g, '\\"');
 const figureOf = (unit) => (unit.label && !unit.partText && (unit.media || [])[0]) || '';
-/** What the page's stem says for the unit: its own words, and "the figure above" where the part is only an image. */
-const askOf = (unit) => (figureOf(unit) ? `${unit.stem} Answer for the structure shown in the figure above.` : unit.stem);
+/**
+ * What the page's stem says for the unit: its own words; "the figure above"
+ * where the part is only an image; and, for a Check Your Learning that leans
+ * on an earlier one ("the sweetened tea described in [Example 3.14]", 3.3),
+ * that one's given data restated first, in its own sentence, as the playbook
+ * has the page do ("Stems") — every word of the earlier stem, its question
+ * made a statement, which is the most of the other unit a page can print.
+ */
+export const askOf = (unit, units = []) => {
+  if (unit.choices) return unit.lead; // one of a closed set: the parts are the options, not the stem
+  if (figureOf(unit)) return `${unit.stem} Answer for the structure shown in the figure above.`;
+  const leant = unit.leansOn ? units.find((other) => other.id === unit.leansOn) : null;
+  return leant ? `${leant.stem.replace(/\?\s*$/, '.').replace(/\?(?=\s)/g, '.')} ${unit.stem}` : unit.stem;
+};
 
-/** The item the playbook's table gives a keyed answer, keyed with the source's own text; null where nothing is auto-graded. */
-function itemFor(unit) {
+/**
+ * The items the playbook's table gives a keyed answer, keyed with the
+ * source's own text; empty where nothing is auto-graded. Two shapes are
+ * carried as the page carries them: an answer of formulas each labelled in
+ * words ("… (empirical formula), … (molecular formula)", 3.2) as one text-in
+ * per formula, its closing sentence naming the label; and one of a closed
+ * set (keyed-units.mjs `closedSet`, 3.1) as ONE multiple choice whose
+ * options are the parts.
+ */
+export function itemsFor(unit, units) {
   const answer = unit.answer.replace(/\s+/g, ' ').trim().replace(/[.;]$/, '');
+  const base = { question: askOf(unit, units), figure: figureOf(unit) };
+  if (unit.choices) {
+    const options = unit.choices.map((choice) => choice.text);
+    return [{ ...base, type: 'multiplechoice', options, answer: options[unit.choices.findIndex((choice) => choice.label === unit.chosen)] }];
+  }
+  const labelled = labelledFormulas(answer, 'formula');
+  if (labelled.length) {
+    return labelled.map((entry) => ({ ...base, question: `${base.question} Enter the ${entry.label}${/formula$/.test(entry.label) ? '' : ' formula'}.`, type: 'textin', answer: entry.printed, form: 'formula' }));
+  }
+  const item = itemFor(unit, answer, base);
+  return item ? [item] : [];
+}
+
+function itemFor(unit, answer, base) {
   const { shape } = shapeOf(answer);
-  const base = { question: askOf(unit), figure: figureOf(unit) };
   if (shape === 'number') {
     const numeral = /[−–-]?\d[\d,]*(?:\.\d+)?(?:\s*[×x]\s*10\s*\^\{[−–-]?\d+\})?/.exec(answer);
     if (!numeral) return null;
@@ -60,7 +93,7 @@ export function probeModule(xml) {
   const findings = [];
   for (const unit of keyed) {
     if (unit.label && unit.answered === false) continue; // reported by chemistry-shapes; ruled on, not probed
-    const probe = { type: 'selfcheck', question: askOf(unit), figure: figureOf(unit), model: unit.answer };
+    const probe = unit.choices ? itemsFor(unit, units)[0] : { type: 'selfcheck', question: askOf(unit, units), figure: figureOf(unit), model: unit.answer };
     const seen = judgeKeyedUnit(probe, units);
     if (!seen) { findings.push({ unit: unit.id, kind: 'not seen', detail: 'the keys gate reads the unit\'s own stem as no exercise' }); continue; }
     if (seen.exercise.id !== unit.id) {
@@ -69,18 +102,22 @@ export function probeModule(xml) {
       if (!other || other.answer !== unit.answer) findings.push({ unit: unit.id, kind: 'read as another', detail: `the keys gate reads the unit's own stem as ${seen.exercise.id}${other && !other.keyed ? ' (UNKEYED: the item would be refused)' : ''} — the two stems are one text; the page's item must differ by its restated data or its figure` });
       continue;
     }
-    const item = itemFor(unit);
-    if (!item) continue;
-    const verdict = judgeKeyedUnit(item, units);
-    if (!verdict || !['confirmed', 'figures-differ', 'symbolic'].includes(verdict.status)) {
-      findings.push({ unit: unit.id, kind: 'key not confirmed', detail: `${item.type}${item.form ? ` (${item.form})` : ''} keyed with the source's own ${JSON.stringify(item.answer.slice(0, 60))}: ${verdict ? verdict.status : 'no unit'} — a source defect, or an answer that is not the shape chemistry-shapes read` });
+    for (const item of itemsFor(unit, units)) {
+      const verdict = judgeKeyedUnit(item, units);
+      if (!verdict || !['confirmed', 'figures-differ', 'symbolic'].includes(verdict.status)) {
+        findings.push({ unit: unit.id, kind: 'key not confirmed', detail: `${item.type}${item.form ? ` (${item.form})` : ''} keyed with the source's own ${JSON.stringify(item.answer.slice(0, 60))}: ${verdict ? verdict.status : 'no unit'} — a source defect, or an answer that is not the shape chemistry-shapes read` });
+      }
     }
   }
   // One page carrying every keyed unit: a mediafigure above an image-only part, then its item.
   const page = keyed.filter((unit) => !(unit.label && unit.answered === false)).map((unit) => {
     const figure = figureOf(unit);
+    if (unit.choices) {
+      const [item] = itemsFor(unit, units);
+      return `{{< multiplechoice question="${quoted(item.question)}" answer="${quoted(item.answer)}" hint="h" >}}\n${item.options.join('\n')}\n{{< /multiplechoice >}}\n`;
+    }
     return `${figure ? `{{< mediafigure src="chemistry/${figure}" kind="diagram" alt="A structure." >}}\n{{< /mediafigure >}}\n\n` : ''}`
-      + `{{< selfcheck question="${quoted(askOf(unit))}" hint="h" >}}\nModel answer.\n{{< /selfcheck >}}\n`;
+      + `{{< selfcheck question="${quoted(askOf(unit, units))}" hint="h" >}}\nModel answer.\n{{< /selfcheck >}}\n`;
   }).join('\n');
   const skipped = new Set(keyed.filter((unit) => unit.label && unit.answered === false).map((unit) => unit.id));
   for (const verdict of coverage(page, sourceExercises(xml), { keyedOnly: true })) {

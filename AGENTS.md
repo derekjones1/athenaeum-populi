@@ -31,7 +31,9 @@ reference pages (`appendices/<letter>-<slug>.md`, generated from the
 CNXML's tables and held to them cell by cell); `docs/subjects/chemistry.md`
 holds the source, the page skeleton, the exercise rules (only source-keyed
 exercises reach the page), the notation, measured-quantity grading
-(`\ce{…}` formulas in math, `sig-figs:<n> last-digit:<k>` fill-ins), typed
+(`\ce{…}` formulas in math, `sig-figs:<n> last-digit:<k>` fill-ins, a
+`tolerance:<p>%` band where the source's key was computed from finer atomic
+masses than the book's periodic table prints), typed
 formulas and equations (`textin` with `answerForm="formula"` or
 `"equation"`), the appendix rules, the Knowledge Check quota (two to three
 items per section), and
@@ -126,7 +128,7 @@ campaign, the figure-alt passes, and their kit — are archived under
   finished book that is the source's own unit total, so covered = total
   means nothing is missing, and it moves only when the source pin moves.
   It also rises with every chapter of a book still being written
-  (Chemistry's moved 4,213 → 4,259 with Section 2.7), and
+  (Chemistry's moved 4,259 → 4,372 with chapter 3), and
   `npm run baseline:update` rewrites it. Skips absent
   bundles like `verify:source-keys` (part of `npm test`)
 - `npm run verify:source-tables` — hold every table cell of a reference page

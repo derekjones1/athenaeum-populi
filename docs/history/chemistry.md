@@ -1521,6 +1521,12 @@ word for word as `run.md` had them.
 
 From `run.md`, "What a chapter cost".
 
+Chapter 3 (four sections, 138 items; wall time not measured): authors 336k, 287k, 290k, and 273k tokens each
+across all rounds (3.1 to 3.4); checkers 226k, 173k, 197k, and 174k; the
+gate-teaching agent 157k; claim pass 171k; consistency reader 271k; three
+rendered-page readers 200k, 185k, and 157k; fix checker 217k; blind solver
+149k; clerks 84k (facts), 54k (landing), and 233k (errata).
+
 Chapter 2, Sections 2.1–2.4 (four sections, 87 items, about three and a
 half hours of wall time): authors 200–295k tokens each across three
 rounds; checkers 150–210k; claim pass 175k; consistency reader 210k; three
@@ -1548,6 +1554,231 @@ The consistency reader found more per token than any other reading of the
 pilot — the rulebook contradicting itself, a key against another section's
 rule, a leak visible only by contrast — and it is the one that recurs.
 
+## Chapter 3 (November 11, 2026)
+
+Derek: "Let's continue authoring Chapter 3 Chemistry, using opus
+subagents". The parent took it as the whole chapter in one run, Sections
+3.1 to 3.4 (modules m68700, m68702, m68703, m68704; the landing is
+m68699), the first Chemistry chapter authored in one wave since chapter 1.
+HEAD at the start was af9bcd72 with a green baseline; the last erratum was
+2976, so the run began at 2977. Mid-run Derek overruled the parent's first
+ruling on answer keys computed from finer atomic masses; that became a new
+grading token (decision 1 below).
+
+### Shape
+
+Prep: baseline green; 41 images vendored; PDF pages 129 to 168 (the
+folio = index − 14 offset holds) and key pages 1138 and 1139; inventory,
+keys, shapes (no flags; four image-only parts in 3.1), and the gate probe
+(117 keyed units, 0 findings, which it later turned out to owe to three
+shapes it never built as a page carries them). A Sonnet clerk drafted the
+run facts' tables and another the landing; the landing clerk's report came
+back as the single word "placeholder" after 21 seconds, and the parent
+read the file on disk, rewrote the four Sections lines from the objectives,
+and wrote the picture's alt text.
+
+Four Opus authors at once, one per section; four Opus checkers as each
+reported; one Opus agent that taught the source gates three shapes while
+the authors converted; then the claim pass and the consistency reader
+together, and three rendered-page readers (3.1; 3.2 with 3.4; 3.3); one
+rulings round (`rulings.md`, probed against the lints before it was sent);
+an Opus fix checker; the blind solve (a fresh Fable solver, 131 items);
+a Sonnet errata clerk and this history clerk. Wall time was not measured.
+No usage-limit pause.
+
+### What the run holds
+
+Four pages and a landing, 138 items: 3.1 holds 62 (53 Practice, 9 Check
+Your Learning), 3.2 holds 20 (13 and 7), 3.3 holds 42 (34, of which 2 are
+added text recalls, and 8), 3.4 holds 14 (9, of which 2 are added multiple
+choices, and 5). 131 are auto-graded items and went through the solve.
+40 keyed exercises carried (16, 6, 12, 6) and 40 unkeyed were omitted
+(15, 6, 13, 6). 3.1 carries 23 figures (9 captioned, 10 in worked examples,
+4 in the molecular-mass exercise); every alt was rewritten from the
+artwork. Errata 2977–3001 (25 entries), 8 decisions entries, and 2
+disclosed-deviation lines. Pins 791 to 795 sections, chemistry 13 to 17.
+
+1. **The band** (Derek, November 11, 2026). Several exercise keys of 3.1
+   were computed from atomic masses with more digits than the book's own
+   periodic table prints (the P₄ key is 123.896 amu; the table gives
+   4 × 30.97 = 123.88). The parent's first ruling re-computed such keys to
+   the table, with a Source note and an erratum for each. Derek overruled
+   it: "A tolerance is needed with either table, so more digits buys you
+   nothing"; the band must be "wider than rounding noise but narrower than
+   the smallest real mistake" (one hydrogen miscounted, 1.008 amu); 0.05%
+   for formula masses; later multi-step chapters 0.5 to 1%; "a per-exercise
+   or per-section setting with a chapter default, not one global number";
+   "A tolerance doesn't grade significant figures"; the source's values
+   restored as the keys, one note in place of the per-exercise errata, the
+   playbook amended. Built as the token `tolerance:<p>%`: alone (figures
+   not graded) on a formula or molar mass asked for itself where the key
+   shows a place the table does not print, 19 items of 3.1; beside
+   `sig-figs:<n>`, in the allowance's place, where the count can still be
+   asked: the silicon mass in zircon (3.1), the percent of nitrogen in NH₃
+   (3.2, where the body itself works 82.27), and 3.59's volume (3.3). The
+   grader refuses more than 2%. One Source note under `## Practice` on 3.1,
+   one sentence after the exercise on 3.2, one erratum (2985) for all
+   nineteen.
+2. **Two keys corrected**, both disclosed deviations: 3.25's three
+   aluminum masses (four figures from three-figure data; one of them
+   follows from no set of masses; the gaps, 0.16% and 0.09%, are outside
+   the band, so arithmetic rather than table noise; keyed to three figures
+   by the table, erratum 2987), and 3.51(d)'s moles (an exact tie, where
+   Section 1.5's half-to-even rule and the source's half-up print differ,
+   erratum 2998).
+3. **3.59** keys a volume the stem's own rounded numbers miss by a unit in
+   the last place. First ruled corrected, then restored to the source's key
+   after the consistency reader set it beside 3.63(b), which gives the
+   volume as data: the source built the stem from the answer and rounded.
+   The band takes it; erratum 2999; the footer says the later stem states
+   the volume.
+4. **Claims.** Corrected in place with a Source note: the Key terms mole
+   and Avogadro's number (to the body's own 2019 definition; one note after
+   the Key terms list covers the Summary too), saccharin's atom count
+   (9.17 to 9.20 × 10²⁰), "bacterial" fermentation to yeast, nicotine's
+   8.641 and 7.008, 0.285 mol H, "/g solution" to "/100 g solution". Kept as
+   printed with a note: argon in a liter of air (NASA's figures), the
+   potassium "estimated average requirement" (a paraphrase of the National
+   Academies' 2019 finding and its adequate intakes), CoCl₂ printed as
+   128.9 g/mol. Kept as printed inside the band, no note: 81.13, 180.159,
+   176.124. Eighteen further claims are logged as reviewed and not errata.
+5. **3.31** is carried as one multiple choice of five samples (a
+   superlative has one answer); its "CH₄ (16.06 g/mol)" is corrected to
+   16.04. The source drawing's "Cl" in 3.5(c) reads "CI", so that stem
+   names the three elements.
+6. **The solve:** 128 agree, 0 disagree, 3 also-defensible, each
+   adjudicated: the nitrogen item's 82.25 against the body's 82.27 (the
+   band takes all three); 17.75 against 17.76 (`last-digit:1`); the tie's
+   other rounding, which changed the form after the solve (see below).
+
+### What each reading found
+
+| Reading | Found | Would another have found it? |
+|---|---|---|
+| Parent's gate probe, before the wave | 117 units, 0 findings | no: it built none of three shapes as a page carries them (below) |
+| Authors' ledgers | the finer-mass keys with their percent gaps; 3.25's arithmetic; 3.59; the tie; CoCl₂ 128.9; typos ("chloride atom", "approximately18", "Scientific Report", "alchol", "Assuming a convenient, a", "as demonstrated ."); four source alts that contradict their images | the claim pass, for the typos and some numbers |
+| Checkers (4) | 3.1: 1 hard (aluminum), 6 soft; 3.2: 4 defects (a hint pointing at the body passage that works the item's own question; a hand-set ion in an `answerDisplay`), 8 concerns; 3.3: 6 hard (two replay failures `verify-section` does not run; the stem's own 0.500 graded correct under `last-digit:1`); 3.4: 2 (both footer clauses), every key right | the aluminum arithmetic: no |
+| Claim pass | 13 findings (F1–F13) and 6 suspicions from memory, none opened | no |
+| Consistency reader | 13 findings: hints sending the learner to "the molar mass from the periodic table" for a compound (18 hints on 3.3–3.4); `*M*` in 22 fill-in stems reaching the accessible name as asterisks; "homogenous" accepted against erratum 2882; 3.63(b) printing 3.59's value; 1000 ungrouped under the lint's year exemption; the playbook's CoCl₂ example contradicting its own last-digit rule; "fill-ins" against "fill-in items" | 3.59 against 3.63(b): no |
+| Rendered-page readers (3) | 3.1: 0 wrong, 1 misleading (the "Cl"), 3 cosmetic; 3.2 with 3.4: 0, 1, 5, and 2 `\dfrac` entries; 3.3: 0, 2, 2: aligned fraction rows touching; a Source note the parent had worded falsely for the tie; 3.2's item revealing 82.24 under a body that prints 82.27; a tilde breaking from its math span; Source notes equally far from the card above and below | no |
+| Fix checker | 10 wording changes and 5 judgment calls; no key wrong; the potassium note's quotation could not be found word for word (now a paraphrase); the yeast note named carbon dioxide before the example derives it | the quotation: no |
+| Blind solve | 128 agree, 0 disagree, 3 also-defensible; answered the nineteen band items from Appendix A and all graded correct; its flag on the tie changed the form | the flag: no |
+
+### Gates, tools, tests
+
+- **`tolerance:<p>%`**: `significant-figures.mjs` (`withinPercent`, exact
+  BigInt; `compareMeasured` with no figures), `check-answer.mjs` (the token,
+  `measuredSpec`, feedback with no count, `measuredKeyProblem`: alone or
+  beside `sig-figs`, never with `last-digit`, at most 2%), `fillin.html`,
+  `fill-in.js` (a tolerance field keeps typed exponent digits), tests in
+  four files, `math.md`'s token row, `chemistry.md`.
+- **Three shapes the source gates could not read**, taught by an Opus
+  agent, each with a test. Two formulas each labelled after it
+  ("Mg₃Si₂H₃O₈ (empirical formula), Mg₆Si₄H₆O₁₆ (molecular formula)":
+  `labelledFormulas`). A Check Your Learning that restates the previous
+  one's data and so read as the previous one (`lastAsk` in `unitFor`). A
+  lettered exercise answered by naming one part, carried as one multiple
+  choice (`closedSet`, `choiceLabels`, coverage match "choices"). The
+  probe (`chemistry-gate-probe.mjs`) now builds them as a page does and
+  prints 0 findings on chapter 3; the book-wide total stays 22.
+- **Lint:** "D5W" was read as a formula (deuterium, tungsten); `/^D\d+W$/`
+  is exempt, with a test. Lint tests for the tolerance token.
+- **`verify:replay`:** one `SOUND_COINCIDENCES` entry (3.47(b): 98.0 g of
+  H₃PO₄ in 1.00 L is 1.00 M).
+- **`speakable-label.mjs`:** `unemphasized()`, so Markdown emphasis markers
+  no longer reach a fill-in's accessible name; test.
+- **Baselines:** replayed 8,478 to 8,652; exercises 17,709 to 17,847;
+  confirmed source keys 7,119 to 7,248; covered 4,259 to 4,372.
+  `DISCLOSED_DEVIATIONS` lines for the aluminum item (2987) and the tie
+  (2998). The upstream-history audit and the provenance pin failed
+  between the pages and the close-out, as expected, and are green after
+  `source:history` and the pin edit.
+- Landing and cover: the chapter moved to `## Chapters`; the claim-pass
+  ledger's row added; links checked (chapter 3 has one 403, a bot wall at
+  `openstax.org/l/16BRAINInit`).
+
+Two more came at close-out. `npm run check:build` aborted: the build audit
+(`tools/build/audit-build.mjs`) ran out of heap at Node's default limit —
+it held the site's 395 MB of HTML three times over and joined each set
+into one string, a peak of 5.1 GB, and chapter 3 took it past 4.3 GB. It
+now reads each built file once and tests it where it sits (peak 1.7 GB).
+And the test "the corpus carries no undisclosed departure from a source
+key" counted disclosed ITEMS against listed deviations, which the three
+aluminum fill-ins under one deviation broke; the gate now reports how many
+deviations were exercised and the test compares that. The test that every
+corrected Chemistry key has its Source note accepts "the answers graded"
+as well as "the answer graded".
+
+### Rulings, now in the playbook
+
+"Numeric keys → The source's value is the key": the band, when it stands
+alone and when beside `sig-figs`, the chapter default and how it is set,
+a gap outside the band as arithmetic, the same band for a key its own
+rounded stem misses, a worked example's value inside the band left alone,
+the page saying so once. `last-digit:0` where `1` would grade a number
+the stem prints. Every stem ends with its punctuation. A hint never points
+at a body passage that works the item's own question and never at "the
+molar mass from the periodic table" for a compound. `\\[6pt]` between
+fraction rows of an aligned display. `*M*` for the molar unit in prose and
+`$M$` for the symbol; `\mu\text{g}` in math (KaTeX strict refuses
+`\text{µg}`); a tilde inside its math span; 1000 grouped. Footers say
+"fill-ins". The CoCl₂ example's allowance. "How Sciences Interconnect"
+confirmed from 3.1. Briefs: the author's (a real-world number in an
+example stem is a claim; re-run every intermediate), the checker's (run
+`verify:replay` on the page; atomic masses from the book's table), the
+solve's (how a band item is answered).
+
+### What the process got wrong
+
+- The first ruling on the finer-mass keys treated table noise as a source
+  defect and would have printed four per-exercise Source notes and
+  corrected nineteen keys; two authors had to be told mid-flight.
+- The tie's Source note said the source's value "does not follow from the
+  stem's data", true of the note it was copied from and false there; the
+  rendered-page reader caught it.
+- An `accept` member was allowed against the book's own erratum
+  ("homogenous", 2882): a ruling not checked against the errata log; the
+  consistency reader caught it.
+- 3.59's corrected key was ruled before the consistency reader had read
+  the module, against the recipe's "provisional until"; overturned.
+- Decision 5 of the run facts told an author to add a unit sentence the
+  playbook forbids, the stem already naming mg/dL; the author and the
+  checker both objected.
+- A quotation was accepted because the claim pass said it had opened the
+  source; the fix checker could not find the sentence word for word.
+  "No quotation, no citation" needs the parent to see the words.
+- The tie's allowance went 1, 0, 1: the parent ruled 1, accepted the
+  consistency reader's 0 by a precedent (1.6's 177.7 °F) that was not a
+  tie, and the blind solver's flag brought it back.
+- The landing clerk's empty report was not noticed as a failure until the
+  file was read; a 21-second clerk is checked on disk.
+
+### Not acted on
+
+- Source notes sit equally far from the item above and the item below and
+  can read as a preface to the next item (site-wide CSS). Put to Derek.
+- The digit-grouping lint's 1000–2099 year exemption lets `1000\ \text{mL}`
+  through corpus-wide (1.6 line 101 has one); narrowing it touches the math
+  books and is measured later.
+- No gate recomputes a molar-mass key from Appendix A; no lint holds the
+  stem-final period, the compound-molar-mass hint, or a Source note's two
+  fixed forms.
+- The glycine flow chart renders about 1.6 times larger than its siblings
+  (the source gives it no scaled-down class).
+- The claim pass's five suspicions from memory (the Cullinan diamond's
+  date and mass, "household ammonia" at 0.50 M, the "minimum lethal
+  concentration" of NaCN, inline filters and fluoride, the lead action
+  level) and the brain caption (1.5 kg in 1.1 L): no source opened; kept
+  as printed.
+- The errata clerk's three unnumbered candidates: a table `summary`
+  attribute that misprints Cl as 33.45, the bleach alt, and the HCl flow
+  chart's raster "HCI".
+- Whether an item under a band should say so beside the field rather than
+  once per page.
+
+Chapter 3 closes Knowledge Check block 1 (chapters 1–3), so the next run is
+that check, and its parent writes the Chemistry Knowledge Check kit first.
+
 ## The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under
@@ -1565,3 +1796,11 @@ the ban, with its page and line. The ban is reviewed from this list.
 - Chapter 1 and the appendices reported none.
 - Sections 2.5–2.6 reported none: neither page prints a fraction.
 - Section 2.7 reported none: the page has no math.
+- Chapter 3 reported four places. 3.2, the Key equations' second row (line
+  ~306): a fraction whose numerator and denominator each held a g/mol
+  fraction, about 5 pixels tall inside; resolved by writing the unit as its
+  symbol, `(\text{amu or g/mol})`. 3.3 line ~75 (the vinegar display): a
+  conversion factor inside a numerator, subscripts at script size. 3.3 line
+  ~235 (a Key equation, molarity as moles of solute over liters of
+  solution): an inline word fraction, small but legible. 3.4 lines
+  151–153: three Key equations as inline word fractions.

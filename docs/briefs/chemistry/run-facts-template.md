@@ -53,6 +53,12 @@ that does not apply.
   `textin`s). Delete the lines this chapter does not need.
 - Practice floor: at least 2 exercises per objective group and 5 per
   section, each group with at least one auto-graded item.
+- **The chapter's band**: `tolerance:<p>%` (playbook "Numeric keys", "The
+  source's value is the key") — state p, the widest gap measured between a
+  source key and the value Appendix A's masses give (run the keys files
+  through a molar-mass script before the wave), and the smallest real
+  mistake the band must still refuse. Chapter 3: `0.05%`, widest gap
+  0.036%, one hydrogen miscounted.
 
 ## Per section (one block each)
 

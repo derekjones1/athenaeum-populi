@@ -507,7 +507,7 @@ test('every corrected key of a Chemistry page has its Source note on the page', 
   assert.ok(chemistry.length >= 3, 'the Chemistry key deviations are read');
   for (const page of new Set(chemistry.map((deviation) => deviation.page))) {
     const wanted = chemistry.filter((deviation) => deviation.page === page).length;
-    const notes = readFileSync(path.join(repositoryRoot, page), 'utf8').match(/^\*Source note:\* the answer graded /gm) ?? [];
+    const notes = readFileSync(path.join(repositoryRoot, page), 'utf8').match(/^\*Source note:\* the answers? graded /gm) ?? [];
     assert.ok(notes.length >= wanted, `${page}: ${wanted} corrected key(s), ${notes.length} "*Source note:* the answer graded …" paragraph(s)`);
   }
 });
@@ -540,17 +540,21 @@ test('the corpus carries no undisclosed departure from a source key', {
   skip: absentBundles.length > 0 && !process.env.ATHENAEUM_REQUIRE_SOURCES
     && `run npm run source:fetch first (not checked out: ${absentBundles.join(', ')})`,
 }, () => {
-  const { failures, counts, confirmed, skipped, sectionsSkipped } = checkCorpus(repositoryRoot);
+  const { failures, counts, confirmed, skipped, sectionsSkipped, deviationsExercised } = checkCorpus(repositoryRoot);
   assert.deepEqual(failures, []);
   assert.deepEqual(skipped, {});
   assert.equal(sectionsSkipped, 0);
   // A deviation may be exercised by any kind that judges against a source
   // exercise or table.
-  assert.equal(
+  assert.equal(deviationsExercised, DISCLOSED_DEVIATIONS.length, 'every listed deviation is exercised');
+  // An item per deviation at least; more where one unlettered exercise is
+  // carried as several items under one erratum (Chemistry 3.25: three
+  // aluminum masses, one deviation).
+  assert.ok(
     counts.multiplechoice.disclosed + (counts.textinDisclosed ?? 0)
-      + counts.selfcheck.disclosed + counts.sortbins.disclosed + counts.fillin.disclosed,
-    DISCLOSED_DEVIATIONS.length,
-    'every listed deviation is exercised',
+      + counts.selfcheck.disclosed + counts.sortbins.disclosed + counts.fillin.disclosed
+      >= DISCLOSED_DEVIATIONS.length,
+    'every listed deviation discloses at least one item',
   );
   assert.ok(confirmed > 0);
 });

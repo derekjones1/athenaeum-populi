@@ -1666,6 +1666,56 @@ test('a measured-quantity field keeps a two-digit exponent together, reports a t
   await expect.poll(status).toBe('correct');
 });
 
+// Chemistry 3.1: a key graded inside a relative band (`tolerance:<p>%`).
+// The source answers 123.896 amu for P₄ from atomic masses with more digits
+// than the book's periodic table prints; a learner on the site reaches
+// 4 × 30.97 = 123.88. The band is unit-tested in check-answer.test.mjs; the
+// typed path — the field, its shortcode attribute, the feedback line — is
+// only real here.
+test('a formula mass graded inside a relative band takes the periodic table’s value as typed', async ({ page }) => {
+  test.setTimeout(240_000);
+  await gotoBuiltPage(page, '/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept/');
+  const banded = page.locator('fill-in[data-answer-form="tolerance:0.05%"]').filter({ has: page.locator('math-field') });
+  expect(await banded.count(), 'the page still carries its nineteen band-graded formula masses').toBe(19);
+
+  const card = page.locator('fill-in[data-answer="123.896"]');
+  await expect(card).toHaveCount(1);
+  const field = card.locator('math-field');
+  const status = () => card.evaluate((el) => el.status);
+  const feedback = card.locator('.ap-fillin-feedback');
+  const check = async (keys) => {
+    await clearMathField(field);
+    await focusMathField(page, field);
+    await page.keyboard.type(keys, { delay: 15 });
+    await card.getByRole('button', { name: /check/i }).click();
+  };
+  // One phosphorus atom's mass off is far outside the band.
+  await check('92.91');
+  await expect.poll(status).toBe('incorrect');
+  // The right number with its unit typed after it.
+  await check('123.88 amu');
+  await expect.poll(status).toBe('unit');
+  await expect(feedback).toHaveText(/enter it without the unit/i);
+  // The periodic table's value, to the places the table gives.
+  await check('123.88');
+  await expect.poll(status).toBe('correct');
+
+  // Every band-graded item on the page grades its own key as typed.
+  for (let index = 0; index < 19; index += 1) {
+    const item = banded.nth(index);
+    const answer = await item.getAttribute('data-answer');
+    if (answer === '123.896') continue;
+    const keys = keystrokesFor(answer);
+    expect(keys, `fill-in ${index} is keyed with a number this test can type: ${answer}`).not.toBeNull();
+    await focusMathField(page, item.locator('math-field'));
+    await page.keyboard.type(keys, { delay: 12 });
+    await item.getByRole('button', { name: /check/i }).click();
+    await expect
+      .poll(async () => item.evaluate((el) => el.status), { timeout: 5000, message: `key ${answer} typed as ${keys}` })
+      .toBe('correct');
+  }
+});
+
 // Chemistry 1.4 keys each SI prefix's factor as a bare power of ten. Two
 // things only the field can show: a NEGATIVE two-digit exponent typed after
 // "^" stays whole (`10^-12` is `10^{-12}`, where an unbraced `10^-12` would
