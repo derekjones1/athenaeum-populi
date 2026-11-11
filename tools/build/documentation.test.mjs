@@ -926,3 +926,36 @@ test('no typing example shown beside a formula field is an item\'s key', async (
     }
   }
 });
+
+// The grader answers the classical name of a keyed compound — "ferrous
+// chloride" for iron(II) chloride — as an older name rather than as wrong
+// (check-text.mjs `gradeText`). This walks every Chemistry name key that
+// has a Roman numeral: where the metal has a classical name for that charge,
+// the name must get that verdict and the metal's other classical name must
+// not. (That no accept member IS such a name is the lint's rule.)
+test('every Chemistry name keyed with a charge answers its classical name as an older name', async () => {
+  const { gradeText, checkText, normalizeText, OLDER_NAME_MESSAGE } = await import('../../assets/js/lib/text/check-text.mjs');
+  const { CLASSICAL_NAMES, systematicName } = await import('../../assets/js/lib/text/older-names.mjs');
+  const { pageItems } = await import('../verify/verify-source-keys.mjs');
+  // "iron ii" → "ferrous": the table read backwards.
+  const classicalOf = new Map(CLASSICAL_NAMES.map((name) => [systematicName(name), name]));
+  let read = 0;
+  for (const file of walkMarkdown(fileURLToPath(new URL('content/physical-sciences/chemistry/', repositoryRoot)))) {
+    const markdown = readFileSync(file, 'utf8');
+    for (const item of pageItems(markdown)) {
+      if (item.type !== 'textin' || item.form) continue;
+      const where = `${relative(repositoryRootPath, file)}:${item.line}`;
+      const words = normalizeText(item.answer).split(' ');
+      const classical = classicalOf.get(words.slice(0, 2).join(' '));
+      if (!classical) continue;
+      read += 1;
+      const older = [classical, ...words.slice(2)].join(' ');
+      assert.deepEqual(gradeText(older, item.answer, { accept: item.accept ?? '' }), { status: 'form', message: OLDER_NAME_MESSAGE }, `${where}: ${older}`);
+      assert.equal(checkText(older, item.answer, { accept: item.accept ?? '' }), 'incorrect', `${where}: no gate reads ${older} as the key`);
+      const partner = classical.endsWith('ous') ? `${classical.slice(0, -3)}ic` : `${classical.slice(0, -2)}ous`;
+      const wrong = [partner, ...words.slice(2)].join(' ');
+      assert.deepEqual(gradeText(wrong, item.answer, { accept: item.accept ?? '' }), { status: 'incorrect' }, `${where}: ${wrong}`);
+    }
+  }
+  assert.ok(read >= 6, `the charged name keys are read (${read})`);
+});

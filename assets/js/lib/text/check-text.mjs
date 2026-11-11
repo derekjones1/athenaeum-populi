@@ -35,6 +35,7 @@
  */
 
 import { checkChem } from './check-chem.mjs';
+import { systematicName } from './older-names.mjs';
 
 const DIACRITICS = /[̀-ͯ]/g;
 const DASHES = /[‐‑‒–—−]/g;
@@ -149,15 +150,36 @@ export function matchesForm(normalized, form) {
  * capitals, subscripts, charges, and coefficients where this module reads
  * words; its `form` status is a right answer not yet in the form asked for,
  * as the math grader's is.
+ *
+ * A word answer has one `form` reading of its own: an OLDER NAME of the keyed
+ * compound ("ferrous chloride" where the key is "iron(II) chloride"). The
+ * learner has the compound right and the name out of date, so the verdict
+ * says that instead of "Not quite" and the field stays open; the older name
+ * of a different compound ("ferric chloride") is plainly incorrect. Only
+ * this function reads it — `checkText`, which every gate calls, still
+ * answers `incorrect`, so no gate can take an older name for a key.
  */
 export function gradeText(input, answer, { accept = '', form = '' } = {}) {
   if (form) return checkChem(input, answer, { accept, form });
-  return { status: checkText(input, answer, { accept }) };
+  const status = checkText(input, answer, { accept });
+  if (status === 'incorrect' && isOlderName(input, answer, { accept })) {
+    return { status: 'form', message: OLDER_NAME_MESSAGE };
+  }
+  return { status };
+}
+
+// Says nothing of the answer: not the metal, not the numeral.
+export const OLDER_NAME_MESSAGE = 'That is an older name. Give the systematic name.';
+
+/** Is the response a classical (-ous/-ic) name of the compound the item keys? */
+export function isOlderName(input, answer, { accept = '' } = {}) {
+  const systematic = systematicName(normalizeText(input));
+  return Boolean(systematic) && checkText(systematic, answer, { accept }) === 'correct';
 }
 
 /**
  * @returns {'empty'|'correct'|'incorrect'|'form'} — `form` only under a
- * chemistry `form`.
+ * chemistry `form`; an older name is `incorrect` here (see `gradeText`).
  */
 export function checkText(input, answer, { accept = '', form = '' } = {}) {
   if (form) return checkChem(input, answer, { accept, form }).status;

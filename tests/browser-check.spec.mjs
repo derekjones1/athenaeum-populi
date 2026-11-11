@@ -729,6 +729,50 @@ test('a text-in grades wrong then right, and an Enter-key submission focuses the
   ).toBe(true);
 });
 
+// Chemistry 2e Section 2.7 retires "ferrous chloride". Until November 11,
+// 2026 the name was refused as plainly wrong; it now gets its own verdict,
+// in the tone of a right answer in the wrong form, and the field stays open.
+test('a text-in answers an older name of the keyed compound as an older name, and leaves the field open', async ({ page }) => {
+  await gotoBuiltPage(
+    page,
+    '/physical-sciences/chemistry/02-atoms-molecules-and-ions/07-chemical-nomenclature/',
+  );
+
+  const card = page.locator('text-in[data-answer="iron(II) chloride"]');
+  await expect(card).toHaveCount(1);
+  await waitForUpgrade(card, (el) => (
+    Boolean(customElements.get('text-in')) && Boolean(el.querySelector('.ap-textin-check'))
+  ));
+  await card.scrollIntoViewIfNeeded();
+
+  const field = card.locator('.ap-textin-field');
+  const feedback = card.locator('.ap-textin-feedback');
+  await field.fill('ferrous chloride');
+  await field.press('Enter');
+  await expect
+    .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
+    .toBe('form');
+  await expect(feedback).toHaveText('That is an older name. Give the systematic name.');
+  expect(await field.evaluate((el) => el.readOnly)).toBe(false);
+  await expect(card.locator('.ap-textin-check')).toBeEnabled();
+  const olderTone = await feedback.evaluate((el) => getComputedStyle(el).color);
+
+  // The older name of the OTHER chloride of iron is simply wrong.
+  await field.fill('ferric chloride');
+  await field.press('Enter');
+  await expect
+    .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
+    .toBe('incorrect');
+  await expect(feedback).toHaveText(/^Not quite/);
+  expect(await feedback.evaluate((el) => getComputedStyle(el).color)).not.toBe(olderTone);
+
+  await field.fill('iron(II) chloride');
+  await field.press('Enter');
+  await expect
+    .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
+    .toBe('correct');
+});
+
 test('the shared hint toggle discloses a fill-in hint and a self-check hint the same way', async ({ page }) => {
   // One implementation (assets/js/lib/shared/hint-toggle.mjs) mounts every
   // component's "Show hint": the button names the hint it controls, flips

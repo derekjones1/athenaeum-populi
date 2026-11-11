@@ -1,6 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { acceptedForms, checkText, closedForm, foldedForms, matchesForm, normalizeText, pluralFolds, singularFolds, gradeText } from './check-text.mjs';
+import { acceptedForms, checkText, closedForm, foldedForms, isOlderName, matchesForm, normalizeText, pluralFolds, singularFolds, gradeText, OLDER_NAME_MESSAGE } from './check-text.mjs';
+import { CLASSICAL_NAMES, systematicName } from './older-names.mjs';
 
 test('normalizeText folds case, diacritics, quotes, dashes, punctuation, articles', () => {
   const cases = [
@@ -162,4 +163,58 @@ test('a chemistry form sends the response to the formula reader, and gradeText c
   assert.equal(checkText('2H2 + O2 -> 2H2O', '2H₂(g) + O₂(g) ⟶ 2H₂O(l)', { form: 'equation' }), 'correct');
   assert.match(gradeText('H2 + O2 -> H2O', '2H₂(g) + O₂(g) ⟶ 2H₂O(l)', { form: 'equation' }).message, /not balanced/);
   assert.deepEqual(gradeText('cell', 'cell'), { status: 'correct' });
+});
+
+// Chemistry 2e Section 2.7 retires "ferrous chloride" for "iron(II)
+// chloride". A learner who types the older name has the compound right, so
+// the verdict is not "Not quite" — and it is not Correct either (November
+// 11, 2026: until then the name was refused with no message).
+test('an older name of the keyed compound is answered as an older name, never as correct and never by a gate', () => {
+  const older = { status: 'form', message: OLDER_NAME_MESSAGE };
+  assert.deepEqual(gradeText('ferrous chloride', 'iron(II) chloride'), older);
+  assert.deepEqual(gradeText('Ferrous Chloride', 'iron(II) chloride'), older, 'capitals do not count');
+  assert.deepEqual(gradeText('ferric nitrate', 'iron(III) nitrate'), older);
+  assert.deepEqual(gradeText('cupric bromide', 'copper(II) bromide'), older);
+  assert.deepEqual(gradeText('mercurous chloride', 'mercury(I) chloride'), older);
+  assert.deepEqual(gradeText('stannic fluoride', 'tin(IV) fluoride'), older, '-ic is 4+ for tin, not 3+');
+  assert.deepEqual(gradeText('cobaltous chloride hexahydrate', 'cobalt(II) chloride hexahydrate'), older);
+  assert.deepEqual(gradeText('ferrous', 'iron(II)', { accept: 'iron(II) ion' }), older, 'an ion keyed bare');
+  assert.deepEqual(gradeText('ferrous ion', 'iron(II)', { accept: 'iron(II) ion' }), older);
+
+  // The older name of a DIFFERENT compound is plainly wrong.
+  assert.deepEqual(gradeText('ferric chloride', 'iron(II) chloride'), { status: 'incorrect' });
+  assert.deepEqual(gradeText('ferrous bromide', 'iron(II) chloride'), { status: 'incorrect' });
+  assert.deepEqual(gradeText('stannic fluoride', 'tin(II) fluoride'), { status: 'incorrect' });
+  // The systematic name is still the only correct one, and a name with no
+  // classical word in it is read as before.
+  assert.deepEqual(gradeText('iron(II) chloride', 'iron(II) chloride'), { status: 'correct' });
+  assert.deepEqual(gradeText('titanium tetrachloride', 'titanium(IV) chloride'), { status: 'incorrect' });
+  assert.deepEqual(gradeText('chromic acid', 'chromium(VI) oxide'), { status: 'incorrect' });
+
+  // Every gate calls checkText, which must never take an older name for a key.
+  assert.equal(checkText('ferrous chloride', 'iron(II) chloride'), 'incorrect');
+  assert.equal(isOlderName('ferrous chloride', 'iron(II) chloride'), true);
+  assert.equal(isOlderName('iron(II) chloride', 'iron(II) chloride'), false);
+
+  // The message names neither the metal nor the numeral.
+  assert.doesNotMatch(OLDER_NAME_MESSAGE, /iron|roman|numeral|\(|II/i);
+});
+
+test('the classical names come in pairs, the -ous name the lower charge, and nothing else is read', () => {
+  const numeral = { i: 1, ii: 2, iii: 3, iv: 4 };
+  const charge = (name) => numeral[systematicName(name).split(' ')[1]];
+  const metal = (name) => systematicName(name).split(' ')[0];
+  const ous = CLASSICAL_NAMES.filter((name) => name.endsWith('ous'));
+  assert.equal(ous.length * 2, CLASSICAL_NAMES.length);
+  for (const lower of ous) {
+    const higher = `${lower.slice(0, -3)}ic`;
+    assert.ok(CLASSICAL_NAMES.includes(higher), `${lower} has its -ic partner`);
+    assert.equal(metal(lower), metal(higher), `${lower} and ${higher} are one metal`);
+    assert.ok(charge(lower) < charge(higher), `${lower} is the lower charge`);
+  }
+  assert.equal(systematicName('stannous fluoride'), 'tin ii fluoride');
+  assert.equal(systematicName('nitric acid'), null);
+  assert.equal(systematicName('sulfurous acid'), null);
+  assert.equal(systematicName('iron ii chloride'), null);
+  assert.equal(systematicName(''), null);
 });

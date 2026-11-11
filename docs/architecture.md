@@ -126,7 +126,10 @@ Three components serve prose subjects beside the math ones: `<text-in>`
 (`layouts/shortcodes/textin.html`, `assets/js/components/text/text-in.js`),
 a plain text field graded by `assets/js/lib/text/check-text.mjs` —
 normalized exact match against the key plus an author-listed `accept` list,
-deliberately without fuzzy tolerance; `<self-check>`
+deliberately without fuzzy tolerance (one answer besides right and wrong: a
+classical name of the keyed compound, "ferrous chloride" for iron(II)
+chloride, is told it is an older name — `older-names.mjs`, read by the
+component's `gradeText` and by no gate); `<self-check>`
 (`selfcheck.html`, `self-check.js`), a written response with a model
 answer and rubric revealed by a native `<details>` and a self-mark that
 writes only a live region, functional without JavaScript; and `<sort-bins>`

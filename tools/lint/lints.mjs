@@ -228,6 +228,7 @@ import { closedForm, foldedForms, normalizeText, pluralFolds } from '../../asset
 // A textin whose answer is a chemical formula or equation is validated by the
 // grader that reads it, not by the word rules.
 import { chemKeyProblem } from '../../assets/js/lib/text/check-chem.mjs';
+import { systematicName } from '../../assets/js/lib/text/older-names.mjs';
 // Coverage measure for selfcheck rubric checkpoints — the same token-set
 // coverage verify-source-keys holds model answers to.
 import { phraseCoverage } from '../lib/openstax-source.mjs';
@@ -2949,6 +2950,22 @@ export function lintHugo(src, filename = '', options = {}) {
         if (members[i].norm && members[i].norm === members[j].norm) {
           err(index, `${where}: ${members[j].label} normalizes the same as ${members[i].label} — remove the duplicate`);
         }
+      }
+    }
+    // An older name of the keyed compound is not a second name for it
+    // (Chemistry 2e Section 2.7 calls "ferrous chloride" naming "largely
+    // abandoned"): the grader answers it with its own message
+    // (check-text.mjs `gradeText`, older-names.mjs), and listing it in
+    // `accept` would grade it Correct before that message is ever reached.
+    // Only a member whose systematic reading IS the key or another member
+    // is named, so "chromic acid" beside a key it does not translate to is
+    // left alone.
+    for (const member of members) {
+      if (member.label.startsWith('answer ')) continue;
+      const systematic = systematicName(member.norm);
+      const named = systematic && members.find((other) => other !== member && other.norm === systematic);
+      if (named) {
+        err(index, `${where}: ${member.label} is an older name of ${named.label} — the grader already answers it "That is an older name", so remove it (an out-of-date name is not an accepted answer)`);
       }
     }
     // The grader folds the regular plural BOTH ways (check-text.mjs

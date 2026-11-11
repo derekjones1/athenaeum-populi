@@ -1029,6 +1029,45 @@ quoted or the parent opens.
 - No narrow-viewport tiles were captured for the eight tables; the
   browser suite walks the page at its widths.
 
+## Four fixes after Section 2.7 (November 11, 2026)
+
+The 2.7 run closed with four points put to Derek ("Not acted on", above).
+He decided each on November 10; this is what was done.
+
+### An older name is answered, not refused
+
+Decision: "Say so, not 'Incorrect'". "Ferrous chloride" for FeCl₂ named
+the right compound in the form the section retires, and was marked "Not
+quite — try again." like any wrong name.
+
+- `assets/js/lib/text/older-names.mjs`: the classical names of nine metals
+  (ferrous/ferric, cuprous/cupric, stannous/stannic, plumbous/plumbic,
+  mercurous/mercuric, cobaltous/cobaltic, chromous/chromic,
+  manganous/manganic, aurous/auric), each with its element and charge. The
+  table is written out because the suffix does not give the charge: -ic is
+  3+ for iron, 2+ for copper, 4+ for tin.
+- `gradeText` (the component's grader) reads an incorrect word answer
+  through the table; when its systematic reading grades correct against
+  the key, the verdict is `form` with the message "That is an older name.
+  Give the systematic name." — the amber tone, the field left open. The
+  message names neither the metal nor the numeral. The older name of a
+  different compound ("ferric chloride" for FeCl₂) stays incorrect.
+- `checkText`, which every gate calls, is unchanged: an older name is
+  `incorrect` there, so `verify:replay` still proves that the three stems
+  which print one ("the IUPAC name of ferric nitrate") cannot be passed by
+  retyping it.
+- Lint: an `accept` member that is an older name of the key or of another
+  member is an error. Sabotaged once (`accept="ferrous chloride"` on the
+  FeCl₂ item: it fired at L472) and reverted.
+- Tests: the grader's cases; the table's pairs (-ous the lower charge);
+  every Chemistry name key with a charge and a table metal (six today)
+  answers its classical name as an older name and its partner as wrong; a
+  browser case on 2.7. The browser-fixture gate now replays typed answers
+  through `gradeText`, the component's grader, instead of `checkText`.
+- Not covered: a stem's Greek-prefix name retyped ("titanium
+  tetrachloride") is still plainly incorrect — it is not an older name of
+  a kind a table can hold.
+
 ## The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under

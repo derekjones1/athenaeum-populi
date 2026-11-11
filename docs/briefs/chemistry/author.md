@@ -258,9 +258,10 @@ goes wrong.
   bare (`selenide`) with the two-word form in `accept` (`selenide ion`);
   a name the stem itself prints ("ferric nitrate" in "give the IUPAC name
   of ferric nitrate") is never an `accept` member, and neither is a name
-  the module prints as out of date ("was known as ferrous chloride"); a
-  wrong name gets no message from the grader, so the hint of an item that
-  refuses one says what form the name takes; a nuclide symbol is
+  the module prints as out of date ("was known as ferrous chloride": the
+  lint refuses it, and the grader answers it "That is an older name" on
+  its own — nothing is authored for that); the grader's message does not
+  say what form the name takes, so the hint of such an item does; a nuclide symbol is
   keyed in print with every number the source prints (`²³₁₁Na`; the
   field then asks for both, and its stem ends "Type the mass number,
   then the atomic number after an underscore, before the symbol:

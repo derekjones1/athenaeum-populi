@@ -112,9 +112,12 @@ stem shows it.
   lacks ("oxygen group" for chalcogen): search the module for "also
   called", "can be called", "or", and the glossary's "(also, …)". A name
   the module prints as out of date ("was known as", "previously called")
-  is not one (playbook "Exercises", the name row). The text grader gives a
-  wrong name no message (`checkText` returns a status only): say what it
-  marks wrong, not what it tells the learner.
+  is not one (playbook "Exercises", the name row), and its absence from
+  `accept` is not a finding: the lint refuses it there, and the grader
+  answers a classical -ous/-ic name of the keyed compound "That is an older
+  name. Give the systematic name." without marking it wrong. Any other
+  wrong name gets no message (`checkText` returns a status only): say what
+  the grader marks wrong, not what it tells the learner.
 - **A `textin` with `answerForm="formula"` or `"equation"`:** read the key
   against the CNXML character by character (a capital I for a small l, a
   digit 1 for an l, a charge's sign, a nuclide's two numbers), count an

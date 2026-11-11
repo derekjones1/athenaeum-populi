@@ -3432,6 +3432,22 @@ test('a mediafigure directly above an item may not print that item\'s answer', (
     'the alt shares only one unrelated word with the textin answer');
 });
 
+// An out-of-date name is not a second name (Chemistry 2.7): the grader
+// answers "ferrous chloride" with its own message, which an accept member
+// would pre-empt by grading it Correct.
+test('textin: an older name of the keyed compound is not an accept member', () => {
+  const listed = lintHugo('{{< textin question="Name the following compound: FeCl₂." answer="iron(II) chloride" accept="ferrous chloride" hint="h" >}}', 'content/test.md').errors;
+  assert.ok(listed.some((e) => e.includes('accept member "ferrous chloride" is an older name of answer "iron(II) chloride"')), listed.join('\n'));
+  const viaMember = lintHugo('{{< textin question="Name the ion." answer="iron(II)" accept="iron(II) ion|ferrous ion" hint="h" >}}', 'content/test.md').errors;
+  assert.ok(viaMember.some((e) => e.includes('accept member "ferrous ion" is an older name of accept member "iron(II) ion"')), viaMember.join('\n'));
+  // A second name the module prints, and a classical word that is not the
+  // older name of this key, are left alone.
+  const other = lintHugo('{{< textin question="Name the following compound: HBr." answer="hydrogen bromide" accept="hydrobromic acid" hint="h" >}}', 'content/test.md').errors;
+  assert.ok(!other.some((e) => e.includes('older name')), other.join('\n'));
+  const wrongCharge = lintHugo('{{< textin question="Name the following compound: FeCl₂." answer="iron(II) chloride" accept="ferric chloride" hint="h" >}}', 'content/test.md').errors;
+  assert.ok(!wrongCharge.some((e) => e.includes('older name')), 'a wrong accept member is another rule\'s business');
+});
+
 // The grader folds a regular plural (form + s / + es) onto every accepted
 // form (September 6, 2026), so a listed regular plural is dead weight and a
 // prompt that prints the folded plural is a retype hazard.

@@ -13,8 +13,9 @@
  * This reads every spec, resolves each attribute locator against the page's
  * markdown (the attributes are the shortcode params verbatim — see
  * layouts/shortcodes/), and fails in seconds when a fixture is gone. It also
- * replays each text-in answer a spec types through `checkText`, the
- * component's own grader, so dropping an `accept` alternate a spec relies on
+ * replays each text-in answer a spec types through `gradeText`, the
+ * component's own grader (not `checkText`: an older name of the keyed
+ * compound is `form` to the component and `incorrect` to the gates), so dropping an `accept` alternate a spec relies on
  * fails here too. Fill-in answers are typed as keystrokes that MathLive turns
  * into TeX, which Node cannot reproduce, so for those only the card is checked.
  *
@@ -26,7 +27,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { checkText } from '../../assets/js/lib/text/check-text.mjs';
+import { gradeText } from '../../assets/js/lib/text/check-text.mjs';
 import { shortcodes } from '../lib/content.mjs';
 
 const root = fileURLToPath(new URL('../../', import.meta.url));
@@ -251,7 +252,7 @@ export function fixtureProblems(fixture, readPage = (file) => readFileSync(file,
   }
   for (const { typed, expect } of fixture.fills) {
     if (!expect) continue;
-    const verdict = checkText(typed, card.params.answer, { accept: card.params.accept ?? '' });
+    const verdict = gradeText(typed, card.params.answer, { accept: card.params.accept ?? '' }).status;
     if (verdict !== expect) {
       problems.push(`typing "${typed}" now grades ${verdict}, but the spec expects ${expect} `
         + `(answer "${card.params.answer}", accept "${card.params.accept ?? ''}")`);
