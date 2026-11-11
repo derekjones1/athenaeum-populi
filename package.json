@@ -32,7 +32,7 @@
     "verify:source-coverage": "node tools/verify/verify-source-coverage.mjs content --min-covered 4259",
     "verify:source-tables": "node tools/verify/verify-source-tables.mjs --min-cells 2704",
     "verify:fillin-residual": "node tools/verify/solve-check.mjs residual content/math",
-    "verify:replay": "node tools/verify/verify-replay.mjs content --min-replayed 8522",
+    "verify:replay": "node tools/verify/verify-replay.mjs content --min-replayed 8478",
     "verify:ledger": "node tools/verify/answer-ledger.mjs check content --min-exercises 17709 --max-unverifiable 0 --require-solved content/life-health-sciences,content/physical-sciences --require-provenance content/life-health-sciences,content/physical-sciences",
     "ledger:stats": "node tools/verify/answer-ledger.mjs stats content",
     "ledger:list": "node tools/verify/answer-ledger.mjs list content",

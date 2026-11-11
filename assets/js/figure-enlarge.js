@@ -22,9 +22,21 @@
  *
  * Math figures are not included: they are vector drawings sized to be read
  * in the column.
+ *
+ * A BOOK'S REFERENCE FIGURE opens here too. Chemistry keeps the periodic
+ * table at hand on every page: layouts/_partials/toc.html prints one control
+ * in the page rail (utils/reference-figure.html — a real link to Appendix A
+ * that carries the figure's file and size), and it opens this dialog instead
+ * of leaving the page, where a typed answer would be lost. So does a link to
+ * that same page in the body of a section — "Using the periodic table, …" in
+ * a stem — when the control says so (`data-figure-links`: on a section page,
+ * not on a landing or among the appendices, where the link is navigation).
+ * The dialog then carries a link to the figure's own page, which is where a
+ * reader who cannot use the image finds its content as text.
  */
 
 const LINK = '.ap-mediafigure-enlarge';
+const REFERENCE = '.ap-reference-figure';
 // CSS pixels per image pixel. "Fit" is wherever the window puts it, capped so
 // a small file is not blown up on a large screen.
 const LADDER = [0.25, 0.5, 0.75, 1, 1.5, 2, 3];
@@ -51,7 +63,8 @@ function build() {
     </div>
     <div class="ap-figure-viewer-stage" tabindex="0" role="group" aria-label="Enlarged figure. Scroll, or use the arrow keys, to move around it." autofocus>
       <img class="ap-figure-viewer-image" alt="" decoding="async" draggable="false">
-    </div>`;
+    </div>
+    <p class="ap-figure-viewer-page" hidden>Open <a></a></p>`;
   document.body.append(dialog);
 
   const state = {
@@ -60,6 +73,7 @@ function build() {
     level: dialog.querySelector('.ap-figure-viewer-level'),
     stage: dialog.querySelector('.ap-figure-viewer-stage'),
     image: dialog.querySelector('.ap-figure-viewer-image'),
+    page: dialog.querySelector('.ap-figure-viewer-page'),
     zoomIn: dialog.querySelector('[data-zoom="in"]'),
     zoomOut: dialog.querySelector('[data-zoom="out"]'),
     natural: { width: 1, height: 1 },
@@ -194,25 +208,67 @@ function wirePointer(state) {
   });
 }
 
-function open(figure, link) {
-  const inline = figure.querySelector(':scope > img');
-  if (!inline) return false;
+/** Show one image in the dialog. `page`, when given, is `{ href, title }` of
+ * the page the figure belongs to — a reference figure opened from elsewhere. */
+function show({ src, width, height, title, alt, plate, page }) {
   viewer ??= build();
   const state = viewer;
-  state.natural = {
-    width: Number(inline.getAttribute('width')) || inline.naturalWidth || 1,
-    height: Number(inline.getAttribute('height')) || inline.naturalHeight || 1,
-  };
-  const caption = figure.querySelector(':scope > .ap-mediafigure-caption')?.textContent.replace(/\s+/g, ' ').trim();
-  state.title.textContent = caption || 'Figure';
-  state.image.alt = inline.alt;
-  state.image.src = link.href;
+  state.natural = { width: width || 1, height: height || 1 };
+  state.title.textContent = title || 'Figure';
+  state.image.alt = alt || '';
+  state.image.src = src;
   // The dark theme's light plate, for the figures that get one inline.
-  state.stage.dataset.plate = String(figure.dataset.kind === 'diagram' || 'transparent' in figure.dataset);
+  state.stage.dataset.plate = String(Boolean(plate));
+  state.page.hidden = !page;
+  const pageLink = state.page.querySelector('a');
+  if (page) {
+    pageLink.href = page.href;
+    pageLink.textContent = page.title;
+  } else {
+    pageLink.removeAttribute('href');
+    pageLink.textContent = '';
+  }
   state.dialog.showModal();
   fit(state);
   state.stage.scrollTo(0, 0);
   return true;
+}
+
+function open(figure, link) {
+  const inline = figure.querySelector(':scope > img');
+  if (!inline) return false;
+  const caption = figure.querySelector(':scope > .ap-mediafigure-caption')?.textContent.replace(/\s+/g, ' ').trim();
+  return show({
+    src: link.href,
+    width: Number(inline.getAttribute('width')) || inline.naturalWidth,
+    height: Number(inline.getAttribute('height')) || inline.naturalHeight,
+    title: caption,
+    alt: inline.alt,
+    plate: figure.dataset.kind === 'diagram' || 'transparent' in figure.dataset,
+  });
+}
+
+/** The book's reference figure, from the rail control that describes it. */
+function openReference(control) {
+  const { figureSrc, figureWidth, figureHeight, figureAlt, figureKind, figurePage } = control.dataset;
+  if (!figureSrc) return false;
+  return show({
+    src: figureSrc,
+    width: Number(figureWidth),
+    height: Number(figureHeight),
+    title: control.textContent.trim(),
+    alt: figureAlt,
+    plate: figureKind === 'diagram',
+    page: { href: control.getAttribute('href'), title: figurePage || control.textContent.trim() },
+  });
+}
+
+/** Is this link the reference control itself, or a body link to its page
+ * that the control says to open in place? */
+function opensReference(link, control) {
+  if (link === control) return true;
+  if (!('figureLinks' in control.dataset) || !link.closest('main .content')) return false;
+  return link.origin === control.origin && link.pathname === control.pathname && !link.hash;
 }
 
 document.addEventListener('click', (event) => {
@@ -220,6 +276,12 @@ document.addEventListener('click', (event) => {
   if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
   if (typeof HTMLDialogElement !== 'function') return;
   const target = event.target instanceof Element ? event.target : null;
+  const control = document.querySelector(REFERENCE);
+  const anchor = control && target?.closest('a[href]');
+  if (anchor && opensReference(anchor, control)) {
+    if (openReference(control)) event.preventDefault();
+    return;
+  }
   const figure = target?.closest('.ap-mediafigure');
   if (!figure) return;
   const link = figure.querySelector(':scope > .ap-mediafigure-actions > ' + LINK);

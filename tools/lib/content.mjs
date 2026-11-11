@@ -72,6 +72,19 @@ export function walkMarkdown(root, { includeIndex = true } = {}) {
 }
 
 /**
+ * "Use the [periodic table](…)." — the sentence 74 Chemistry items carried
+ * after the source's words, through chapter 2, to send the learner to
+ * Appendix A. Retired November 11, 2026, when the table became a control on
+ * every Chemistry page (layouts/_partials/utils/reference-figure.html): the
+ * lint refuses it, and `ledger:carry` reads a stem without it, so the items
+ * that lost it kept their solves. With its leading space, as it stood after
+ * the stem's last sentence. The source's OWN words about the table ("Using
+ * the periodic table, predict…", "Hint: Use the periodic table to predict…")
+ * are not this sentence and stay, linked.
+ */
+export const RETIRED_REFERENCE_POINTER = / Use the \[periodic table\]\(\/physical-sciences\/chemistry\/appendices\/a-the-periodic-table\/\)\./g;
+
+/**
  * "shelf/book" for a page inside a book — the two path segments after
  * `content/` — or '' for anything else: a shelf or site landing, a page
  * directly under a shelf, or a test fragment path with no `content/` segment.

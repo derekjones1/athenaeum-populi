@@ -17,8 +17,12 @@
      open/close state, inert page, and focus trap in assets/js/toc-drawer.js.
      The scrim div is the drawer's click-to-close backdrop; it is emitted
      only where the button is (utils/toc-drawer.html decides for both) and
-     is display:none until the drawer opens. Everything else is verbatim
-     theme code. */}}
+     is display:none until the drawer opens. A book that names a reference
+     figure (Chemistry's periodic table; utils/reference-figure.html) gets
+     a control for it at the top of the sticky bottom block, on every one
+     of its pages but the figure's own: a real link to that page, which
+     assets/js/figure-enlarge.js opens in the viewer instead of following.
+     Everything else is verbatim theme code. */}}
 {{- $toc := .Params.toc | default true -}}
 {{- $onThisPage := (T "onThisPage") | default "On this page"}}
 {{- $tags := (T "tags") | default "Tags"}}
@@ -28,6 +32,7 @@
      contact-email shortcode also use. */}}
 {{- $contactHref := partial "utils/contact-mailto.html" . -}}
 {{- $drawer := partial "utils/toc-drawer.html" . -}}
+{{- $reference := partial "utils/reference-figure.html" . -}}
 
 {{- if $drawer }}<div class="ap-toc-scrim"></div>{{ end -}}
 <nav id="ap-toc" class="hextra-toc hx:order-last hx:w-64 hx:shrink-0 hx:print:hidden hx:px-4" aria-label="{{ (T "tableOfContents") | default "Table of contents" }}">
@@ -57,6 +62,11 @@
               {{ partial "tags.html" (dict "context" .) }}
             </div>
           </div>
+        {{- end -}}
+        {{- with $reference -}}
+          <a class="ap-reference-figure hx:hextra-focus-visible-inset" href="{{ .href }}" data-pagefind-ignore
+            data-figure-src="{{ .src }}" data-figure-width="{{ .width }}" data-figure-height="{{ .height }}"
+            data-figure-kind="{{ .kind }}" data-figure-alt="{{ .alt }}" data-figure-page="{{ .title }}"{{ if .links }} data-figure-links{{ end }}>{{ .label }}</a>
         {{- end -}}
         {{- with $contactHref -}}
           <a class="hx:inline-block hx:rounded-sm hx:text-xs hx:font-medium hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-100 hx:contrast-more:text-gray-800 hx:contrast-more:dark:text-gray-50 hx:hextra-focus-visible-inset" href="{{ . | safeURL }}">Questions or concerns? Email us!</a>

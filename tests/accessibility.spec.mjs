@@ -1254,6 +1254,48 @@ test('the figure viewer opens from the keyboard, keeps focus inside, closes on E
   expect(await link.evaluate((el) => el === document.activeElement), 'focus returns to the link').toBe(true);
 });
 
+test('the periodic table control opens the viewer from the keyboard, names the image and its page, returns focus, and has no serious or critical axe violations', async ({
+  page,
+}, testInfo) => {
+  const path = '/physical-sciences/chemistry/02-atoms-molecules-and-ions/07-chemical-nomenclature/';
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await page.goto(path, { waitUntil: 'domcontentloaded' });
+  await assertProductionBuild(page, path);
+  await waitForPageReady(page);
+
+  const control = page.locator('nav#ap-toc a.ap-reference-figure');
+  await expect(control).toHaveCount(1);
+  const box = await control.boundingBox();
+  expect(Math.min(box.width, box.height), 'the control is a 24 px target').toBeGreaterThanOrEqual(24);
+  // The control at rest, in the rail, in this theme.
+  await expectNoBlockingViolations(page, 'a Chemistry page with the periodic table control', testInfo);
+  await control.focus();
+  await page.keyboard.press('Enter');
+
+  const dialog = page.locator('dialog.ap-figure-viewer[open]');
+  await expect(dialog).toBeVisible();
+  const image = dialog.locator('.ap-figure-viewer-image');
+  await expect(image).toHaveJSProperty('complete', true);
+  expect(await dialog.evaluate((el) => document.getElementById(el.getAttribute('aria-labelledby'))?.textContent.trim())).toBe('Periodic table');
+  // The image says what it is and where its content is given as text, and
+  // the link to that page is reachable by Tab inside the dialog.
+  expect(await image.getAttribute('alt')).toMatch(/periodic table.*Appendix A/);
+  const pageLink = dialog.locator('.ap-figure-viewer-page a');
+  await expect(pageLink).toHaveAccessibleName('Appendix A: The Periodic Table');
+  let reached = false;
+  for (let presses = 0; presses < 8 && !reached; presses += 1) {
+    await page.keyboard.press('Tab');
+    reached = await pageLink.evaluate((el) => el === document.activeElement);
+    expect(await page.evaluate(() => Boolean(document.activeElement?.closest('dialog.ap-figure-viewer'))), `Tab ${presses + 1} stays in the viewer`).toBe(true);
+  }
+  expect(reached, 'Tab reaches the link to the page').toBe(true);
+  await expectNoBlockingViolations(page, 'the open viewer on the periodic table', testInfo);
+
+  await page.keyboard.press('Escape');
+  await expect(page.locator('dialog.ap-figure-viewer[open]')).toHaveCount(0);
+  expect(await control.evaluate((el) => el === document.activeElement), 'focus returns to the control').toBe(true);
+});
+
 test('every mediafigure image has alt text, and a longdesc summary is keyboard-operable', async ({
   page,
 }) => {

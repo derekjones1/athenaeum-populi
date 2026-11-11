@@ -1068,6 +1068,62 @@ quite — try again." like any wrong name.
   tetrachloride") is still plainly incorrect — it is not an older name of
   a kind a table can hold.
 
+### The periodic table is a control on every page
+
+Decision: "A button on every Chemistry page". Through chapter 2, 74 items
+ended "Use the periodic table." with a link to Appendix A (2.3: 9, 2.6:
+19, 2.7: 46 — the summary put to Derek said 75; the 75th is the source's
+own "Hint: Use the periodic table to predict…" in 2.6, which stays). The
+sentence was repetitive, and worse: the site keeps no answers, so
+following the link from the middle of a Practice block lost what had been
+typed.
+
+- The book names a **reference figure** in its `_index.md` (`reference:`
+  label, page, media stem, alt). `layouts/_partials/utils/reference-figure.html`
+  resolves it; `toc.html` prints "Periodic table" at the top of the rail's
+  sticky bottom block on every page of the book except Appendix A — in
+  view at any scroll position from xl up, one tap into the "On this page"
+  drawer below (the drawer already closes itself on a link and hands focus
+  to its button, which is where focus returns when the viewer closes).
+- It is a real link to Appendix A. With the script
+  (`assets/js/figure-enlarge.js`) it opens the figure in the viewer of
+  November 10 instead, and so does a link to Appendix A in a section's
+  body — the eleven items and the body sentences that carry the source's own
+  words about the table. Not on a landing page or among the appendices,
+  where such a link is navigation (the pager of Appendix B). The dialog
+  gains a line "Open Appendix A: The Periodic Table", since the image's
+  content as text is on that page; the control's alt says so.
+- The 74 sentences were removed by exact string and the three footers
+  rewritten: 2.3 loses the clause, 2.6 and 2.7 keep the one about the
+  linked words.
+- **The ledger.** A changed stem is a new exercise, so 74 records were
+  stranded. `ledger:carry` now reads a stem without this one retired
+  sentence (`RETIRED_REFERENCE_POINTER`, `tools/lib/content.mjs`): it was
+  added to the source's words, asked nothing, and no answer depends on it.
+  74 carried, 0 left to re-read; no blind solve was re-run. This is a
+  judgment the parent made — the alternative was a fresh solve of 74
+  items whose question had not changed — and it is recorded in AGENTS.md
+  beside the other carry rules. A stem that loses anything else, or the
+  source's own words about the table, is still re-solved (tested).
+- Lint: the sentence is an error from now on, so the carry rule can only
+  ever drop it from the old side of a comparison.
+- Gates after the edit: `verify-section` on 2.3, 2.6, 2.7; source keys
+  7119, coverage 4259, ledger 17709 — all unchanged.
+- **The replay floor went down by 44, 8522 → 8478, on purpose.** For a
+  formula item `verify:replay` replays every capitalised word of the stem
+  as a formula a learner could copy, and the sentence's "Use" was one such
+  word on each of the 44 formula items that carried it. Replaying the
+  three pages as committed and as edited gives 222 and 178 spans; nothing
+  else moved, and no span that is still printed went unreplayed.
+- Tests: the control and a body link open the viewer in place and a typed
+  answer survives, at 1280 and 390 px; absent on Appendix A and on a
+  Biology page; a sibling appendix's link navigates; an axe scan of the
+  control and of the open dialog in both themes.
+- Left as it is: links to the OTHER appendices (tables, not figures)
+  still leave the page. Nothing in chapters 1–2 needs one from an item;
+  the general answer is keeping typed answers across a navigation, which
+  is a separate piece of work.
+
 ## The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under

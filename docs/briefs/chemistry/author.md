@@ -129,7 +129,10 @@ goes wrong.
    a table value it does not print links the phrase naming it to the
    appendix that has it. The source's words stay as they are — only the
    link is added — every item that needs it carries it, and the footer
-   says so. Every other cross-reference stays plain text.
+   says so. **Never add a sentence that points to the periodic table**
+   ("Use the periodic table."): every page of the book carries it as a
+   control in the rail, and the lint refuses the sentence. Every other
+   cross-reference stays plain text.
 8. `## Summary`, `## Key equations` (only if the module has that section),
    `## Key terms` (the module's `<glossary>`, source order), `## Practice`,
    then `---` and the `<small>` footer whose `Changes:` clause names every

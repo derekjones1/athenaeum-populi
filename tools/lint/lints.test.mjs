@@ -3432,6 +3432,23 @@ test('a mediafigure directly above an item may not print that item\'s answer', (
     'the alt shares only one unrelated word with the textin answer');
 });
 
+// Chemistry's periodic table is a control on every page of the book
+// (November 11, 2026); the sentence that pointed to it from 74 items is gone.
+test('the retired "Use the periodic table." sentence is refused; the source\'s own words about the table are not', () => {
+  const link = '[periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)';
+  const added = lintHugo(`{{< textin question="Name the following compound: CsCl. Use the ${link}." answer="cesium chloride" hint="h" >}}`, 'content/test.md').errors;
+  assert.ok(added.some((e) => e.includes('no longer added to an item')), added.join('\n'));
+  const midStem = lintHugo(`{{< textin question="Write the formula: a hydrate. Use the ${link}. Type the dot as a period." answer="x" hint="h" >}}`, 'content/test.md').errors;
+  assert.ok(midStem.some((e) => e.includes('no longer added to an item')), midStem.join('\n'));
+  for (const source of [
+    `Using the ${link}, predict whether the following chlorides are ionic or covalent: KCl.`,
+    `Predict the formula of lithium peroxide (Hint: Use the ${link} to predict the charge on the lithium ion.)`,
+  ]) {
+    const kept = lintHugo(`{{< textin question="${source}" answer="x" hint="h" >}}`, 'content/test.md').errors;
+    assert.ok(!kept.some((e) => e.includes('no longer added to an item')), kept.join('\n'));
+  }
+});
+
 // An out-of-date name is not a second name (Chemistry 2.7): the grader
 // answers "ferrous chloride" with its own message, which an accept member
 // would pre-empt by grading it Correct.

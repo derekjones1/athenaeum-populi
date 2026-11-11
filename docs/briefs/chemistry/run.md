@@ -87,7 +87,7 @@ Sections 2.1–2.4"):
   "the periodic table in a later section" and its footer gave the reason
   "not yet on this site" until 2.5 landed. The parent corrects those.
 - **The hand-built probe items of step 6a carry the page's real stems** —
-  the link, the added sentence, the closing sentence — not the bare source
+  the link, the closing sentence — not the bare source
   stem. Four gate gaps of 2.5–2.6 showed only that way: a link's path
   counted as stem words, a formula after a colon, an option that prints
   its second name in parentheses, an answer in the glossary's other word.

@@ -135,35 +135,35 @@ sodium carbonate decahydrate, Na₂CO₃·10H₂O
 *Source note:* the source names gallium’s compounds both ways: with the charge here, and without it in an exercise of this section (“gallium phosphide”). Both names are in use. Magnesium, which forms only one ion, takes no numeral in part (d).
 
 {{< textin
-  question="Write the formula of the following ionic compound: chromium(III) phosphide. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="Write the formula of the following ionic compound: chromium(III) phosphide."
   answer="CrP"
   answerForm="formula"
   hint="The Roman numeral gives the metal ion’s charge. Find the anion’s charge, using the table of common polyatomic ions in Section 2.6 Ionic and Molecular Compounds for a polyatomic anion, combine the ions in the smallest ratio that makes the compound neutral, and write a hydrate’s water molecules after a centered dot, counted with the table of nomenclature prefixes."
 >}}
 
 {{< textin
-  question="Write the formula of the following ionic compound: mercury(II) sulfide. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="Write the formula of the following ionic compound: mercury(II) sulfide."
   answer="HgS"
   answerForm="formula"
   hint="The Roman numeral gives the metal ion’s charge. Find the anion’s charge, using the table of common polyatomic ions in Section 2.6 Ionic and Molecular Compounds for a polyatomic anion, combine the ions in the smallest ratio that makes the compound neutral, and write a hydrate’s water molecules after a centered dot, counted with the table of nomenclature prefixes."
 >}}
 
 {{< textin
-  question="Write the formula of the following ionic compound: manganese(II) phosphate. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="Write the formula of the following ionic compound: manganese(II) phosphate."
   answer="Mn₃(PO₄)₂"
   answerForm="formula"
   hint="The Roman numeral gives the metal ion’s charge. Find the anion’s charge, using the table of common polyatomic ions in Section 2.6 Ionic and Molecular Compounds for a polyatomic anion, combine the ions in the smallest ratio that makes the compound neutral, and write a hydrate’s water molecules after a centered dot, counted with the table of nomenclature prefixes."
 >}}
 
 {{< textin
-  question="Write the formula of the following ionic compound: copper(I) oxide. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="Write the formula of the following ionic compound: copper(I) oxide."
   answer="Cu₂O"
   answerForm="formula"
   hint="The Roman numeral gives the metal ion’s charge. Find the anion’s charge, using the table of common polyatomic ions in Section 2.6 Ionic and Molecular Compounds for a polyatomic anion, combine the ions in the smallest ratio that makes the compound neutral, and write a hydrate’s water molecules after a centered dot, counted with the table of nomenclature prefixes."
 >}}
 
 {{< textin
-  question="Write the formula of the following ionic compound: iron(III) chloride dihydrate. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/). Type the dot as a period, as in Na2CO3.10H2O."
+  question="Write the formula of the following ionic compound: iron(III) chloride dihydrate. Type the dot as a period, as in Na2CO3.10H2O."
   answer="FeCl₃·2H₂O"
   answerForm="formula"
   hint="The Roman numeral gives the metal ion’s charge. Find the anion’s charge, using the table of common polyatomic ions in Section 2.6 Ionic and Molecular Compounds for a polyatomic anion, combine the ions in the smallest ratio that makes the compound neutral, and write a hydrate’s water molecules after a centered dot, counted with the table of nomenclature prefixes."
@@ -232,28 +232,28 @@ There are a few common names that you will encounter as you continue your study 
 (d) tetraphosphorus hexoxide
 
 {{< textin
-  question="Write the formula for the following compound: phosphorus pentachloride. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="Write the formula for the following compound: phosphorus pentachloride."
   answer="PCl₅"
   answerForm="formula"
   hint="Read each Greek prefix with the table of nomenclature prefixes as the number of atoms of the element it stands before, and recall what an element with no prefix means."
 >}}
 
 {{< textin
-  question="Write the formula for the following compound: dinitrogen monoxide. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="Write the formula for the following compound: dinitrogen monoxide."
   answer="N₂O"
   answerForm="formula"
   hint="Read each Greek prefix with the table of nomenclature prefixes as the number of atoms of the element it stands before, and recall what an element with no prefix means."
 >}}
 
 {{< textin
-  question="Write the formula for the following compound: iodine heptafluoride. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="Write the formula for the following compound: iodine heptafluoride."
   answer="IF₇"
   answerForm="formula"
   hint="Read each Greek prefix with the table of nomenclature prefixes as the number of atoms of the element it stands before, and recall what an element with no prefix means."
 >}}
 
 {{< textin
-  question="Write the formula for the following compound: carbon tetrachloride. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="Write the formula for the following compound: carbon tetrachloride."
   answer="CCl₄"
   answerForm="formula"
   hint="Read each Greek prefix with the table of nomenclature prefixes as the number of atoms of the element it stands before, and recall what an element with no prefix means."
@@ -327,128 +327,128 @@ For example, consider H₂CO₃ (which you might be tempted to call “hydrogen 
 ### Derive names for common types of inorganic compounds using a systematic approach
 
 {{< textin
-  question="Name the following compound: CsCl. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="Name the following compound: CsCl."
   answer="cesium chloride"
   hint="Name the element written first, then the other element with its ending replaced by the suffix -ide. For a compound of hydrogen, recall from the subsection on binary acids when an acid’s name is used."
 >}}
 
 {{< textin
-  question="Name the following compound: BaO. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="Name the following compound: BaO."
   answer="barium oxide"
   hint="Name the element written first, then the other element with its ending replaced by the suffix -ide. For a compound of hydrogen, recall from the subsection on binary acids when an acid’s name is used."
 >}}
 
 {{< textin
-  question="Name the following compound: K₂S. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="Name the following compound: K₂S."
   answer="potassium sulfide"
   hint="Name the element written first, then the other element with its ending replaced by the suffix -ide. For a compound of hydrogen, recall from the subsection on binary acids when an acid’s name is used."
 >}}
 
 {{< textin
-  question="Name the following compound: BeCl₂. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="Name the following compound: BeCl₂."
   answer="beryllium chloride"
   hint="Name the element written first, then the other element with its ending replaced by the suffix -ide. For a compound of hydrogen, recall from the subsection on binary acids when an acid’s name is used."
 >}}
 
 {{< textin
-  question="Name the following compound: HBr. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="Name the following compound: HBr."
   answer="hydrogen bromide"
   accept="hydrobromic acid"
   hint="Name the element written first, then the other element with its ending replaced by the suffix -ide. For a compound of hydrogen, recall from the subsection on binary acids when an acid’s name is used."
 >}}
 
 {{< textin
-  question="Name the following compound: AlF₃. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="Name the following compound: AlF₃."
   answer="aluminum fluoride"
   hint="Name the element written first, then the other element with its ending replaced by the suffix -ide. For a compound of hydrogen, recall from the subsection on binary acids when an acid’s name is used."
 >}}
 
 {{< textin
-  question="Write the formula of the following compound: rubidium bromide. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="Write the formula of the following compound: rubidium bromide."
   answer="RbBr"
   answerForm="formula"
   hint="Find each ion’s charge from its element’s place in the periodic table or from the table of common polyatomic ions in Section 2.6 Ionic and Molecular Compounds, and combine the ions in the smallest ratio that makes the total charge zero."
 >}}
 
 {{< textin
-  question="Write the formula of the following compound: magnesium selenide. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="Write the formula of the following compound: magnesium selenide."
   answer="MgSe"
   answerForm="formula"
   hint="Find each ion’s charge from its element’s place in the periodic table or from the table of common polyatomic ions in Section 2.6 Ionic and Molecular Compounds, and combine the ions in the smallest ratio that makes the total charge zero."
 >}}
 
 {{< textin
-  question="Write the formula of the following compound: sodium oxide. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="Write the formula of the following compound: sodium oxide."
   answer="Na₂O"
   answerForm="formula"
   hint="Find each ion’s charge from its element’s place in the periodic table or from the table of common polyatomic ions in Section 2.6 Ionic and Molecular Compounds, and combine the ions in the smallest ratio that makes the total charge zero."
 >}}
 
 {{< textin
-  question="Write the formula of the following compound: calcium chloride. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="Write the formula of the following compound: calcium chloride."
   answer="CaCl₂"
   answerForm="formula"
   hint="Find each ion’s charge from its element’s place in the periodic table or from the table of common polyatomic ions in Section 2.6 Ionic and Molecular Compounds, and combine the ions in the smallest ratio that makes the total charge zero."
 >}}
 
 {{< textin
-  question="Write the formula of the following compound: hydrogen fluoride. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="Write the formula of the following compound: hydrogen fluoride."
   answer="HF"
   answerForm="formula"
   hint="Find each ion’s charge from its element’s place in the periodic table or from the table of common polyatomic ions in Section 2.6 Ionic and Molecular Compounds, and combine the ions in the smallest ratio that makes the total charge zero."
 >}}
 
 {{< textin
-  question="Write the formula of the following compound: gallium phosphide. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="Write the formula of the following compound: gallium phosphide."
   answer="GaP"
   answerForm="formula"
   hint="Find each ion’s charge from its element’s place in the periodic table or from the table of common polyatomic ions in Section 2.6 Ionic and Molecular Compounds, and combine the ions in the smallest ratio that makes the total charge zero."
 >}}
 
 {{< textin
-  question="Write the formula of the following compound: aluminum bromide. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="Write the formula of the following compound: aluminum bromide."
   answer="AlBr₃"
   answerForm="formula"
   hint="Find each ion’s charge from its element’s place in the periodic table or from the table of common polyatomic ions in Section 2.6 Ionic and Molecular Compounds, and combine the ions in the smallest ratio that makes the total charge zero."
 >}}
 
 {{< textin
-  question="Write the formula of the following compound: ammonium sulfate. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="Write the formula of the following compound: ammonium sulfate."
   answer="(NH₄)₂SO₄"
   answerForm="formula"
   hint="Find each ion’s charge from its element’s place in the periodic table or from the table of common polyatomic ions in Section 2.6 Ionic and Molecular Compounds, and combine the ions in the smallest ratio that makes the total charge zero."
 >}}
 
 {{< textin
-  question="Write the formula of the following compound: chlorine dioxide. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="Write the formula of the following compound: chlorine dioxide."
   answer="ClO₂"
   answerForm="formula"
   hint="For a molecular compound, read the Greek prefixes with the table of nomenclature prefixes as numbers of atoms. For an ionic compound, combine the ions in the smallest ratio that makes the total charge zero, and write a hydrate’s water molecules after a centered dot."
 >}}
 
 {{< textin
-  question="Write the formula of the following compound: dinitrogen tetraoxide. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="Write the formula of the following compound: dinitrogen tetraoxide."
   answer="N₂O₄"
   answerForm="formula"
   hint="For a molecular compound, read the Greek prefixes with the table of nomenclature prefixes as numbers of atoms. For an ionic compound, combine the ions in the smallest ratio that makes the total charge zero, and write a hydrate’s water molecules after a centered dot."
 >}}
 
 {{< textin
-  question="Write the formula of the following compound: potassium phosphide. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="Write the formula of the following compound: potassium phosphide."
   answer="K₃P"
   answerForm="formula"
   hint="For a molecular compound, read the Greek prefixes with the table of nomenclature prefixes as numbers of atoms. For an ionic compound, combine the ions in the smallest ratio that makes the total charge zero, and write a hydrate’s water molecules after a centered dot."
 >}}
 
 {{< textin
-  question="Write the formula of the following compound: silver sulfide. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="Write the formula of the following compound: silver sulfide."
   answer="Ag₂S"
   answerForm="formula"
   hint="For a molecular compound, read the Greek prefixes with the table of nomenclature prefixes as numbers of atoms. For an ionic compound, combine the ions in the smallest ratio that makes the total charge zero, and write a hydrate’s water molecules after a centered dot."
 >}}
 
 {{< textin
-  question="Write the formula of the following compound: aluminum fluoride trihydrate. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/). Type the dot as a period, as in Na2CO3.10H2O."
+  question="Write the formula of the following compound: aluminum fluoride trihydrate. Type the dot as a period, as in Na2CO3.10H2O."
   answer="AlF₃·3H₂O"
   answerForm="formula"
   hint="For a molecular compound, read the Greek prefixes with the table of nomenclature prefixes as numbers of atoms. For an ionic compound, combine the ions in the smallest ratio that makes the total charge zero, and write a hydrate’s water molecules after a centered dot."
@@ -457,116 +457,116 @@ For example, consider H₂CO₃ (which you might be tempted to call “hydrogen 
 *Source note:* the answer graded here is not the one the source prints for this compound; the source’s formula misprints one letter of an element symbol.
 
 {{< textin
-  question="Write the formula of the following compound: silicon dioxide. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="Write the formula of the following compound: silicon dioxide."
   answer="SiO₂"
   answerForm="formula"
   hint="For a molecular compound, read the Greek prefixes with the table of nomenclature prefixes as numbers of atoms. For an ionic compound, combine the ions in the smallest ratio that makes the total charge zero, and write a hydrate’s water molecules after a centered dot."
 >}}
 
 {{< textin
-  question="The following compound contains a metal that can exhibit more than one ionic charge. Name this compound: Cr₂O₃. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="The following compound contains a metal that can exhibit more than one ionic charge. Name this compound: Cr₂O₃."
   answer="chromium(III) oxide"
   hint="Find the metal ion’s charge from the formula and the anion’s charge, and write it as a Roman numeral in parentheses after the metal’s name, as the subsection on metal ions with a variable charge does; name a hydrate as the subsection on ionic hydrates does."
 >}}
 
 {{< textin
-  question="The following compound contains a metal that can exhibit more than one ionic charge. Name this compound: FeCl₂. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="The following compound contains a metal that can exhibit more than one ionic charge. Name this compound: FeCl₂."
   answer="iron(II) chloride"
   hint="Find the metal ion’s charge from the formula and the anion’s charge, and write it as a Roman numeral in parentheses after the metal’s name, as the subsection on metal ions with a variable charge does; name a hydrate as the subsection on ionic hydrates does."
 >}}
 
 {{< textin
-  question="The following compound contains a metal that can exhibit more than one ionic charge. Name this compound: CrO₃. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="The following compound contains a metal that can exhibit more than one ionic charge. Name this compound: CrO₃."
   answer="chromium(VI) oxide"
   hint="Find the metal ion’s charge from the formula and the anion’s charge, and write it as a Roman numeral in parentheses after the metal’s name, as the subsection on metal ions with a variable charge does; name a hydrate as the subsection on ionic hydrates does."
 >}}
 
 {{< textin
-  question="The following compound contains a metal that can exhibit more than one ionic charge. Name this compound: TiCl₄. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="The following compound contains a metal that can exhibit more than one ionic charge. Name this compound: TiCl₄."
   answer="titanium(IV) chloride"
   hint="Find the metal ion’s charge from the formula and the anion’s charge, and write it as a Roman numeral in parentheses after the metal’s name, as the subsection on metal ions with a variable charge does; name a hydrate as the subsection on ionic hydrates does."
 >}}
 
 {{< textin
-  question="The following compound contains a metal that can exhibit more than one ionic charge. Name this compound: CoCl₂·6H₂O. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="The following compound contains a metal that can exhibit more than one ionic charge. Name this compound: CoCl₂·6H₂O."
   answer="cobalt(II) chloride hexahydrate"
   hint="Find the metal ion’s charge from the formula and the anion’s charge, and write it as a Roman numeral in parentheses after the metal’s name, as the subsection on metal ions with a variable charge does; name a hydrate as the subsection on ionic hydrates does."
 >}}
 
 {{< textin
-  question="The following compound contains a metal that can exhibit more than one ionic charge. Name this compound: MoS₂. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="The following compound contains a metal that can exhibit more than one ionic charge. Name this compound: MoS₂."
   answer="molybdenum(IV) sulfide"
   hint="Find the metal ion’s charge from the formula and the anion’s charge, and write it as a Roman numeral in parentheses after the metal’s name, as the subsection on metal ions with a variable charge does; name a hydrate as the subsection on ionic hydrates does."
 >}}
 
 {{< textin
-  question="The following ionic compound is found in common household products. Write the formula for the compound: potassium phosphate. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="The following ionic compound is found in common household products. Write the formula for the compound: potassium phosphate."
   answer="K₃PO₄"
   answerForm="formula"
   hint="Find each ion’s charge, reading a Roman numeral as the metal ion’s charge, a monatomic ion’s from its element’s place in the periodic table, and a polyatomic ion’s from the table of common polyatomic ions in Section 2.6 Ionic and Molecular Compounds, and combine the ions in the smallest ratio that makes the total charge zero."
 >}}
 
 {{< textin
-  question="The following ionic compound is found in common household products. Write the formula for the compound: copper(II) sulfate. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="The following ionic compound is found in common household products. Write the formula for the compound: copper(II) sulfate."
   answer="CuSO₄"
   answerForm="formula"
   hint="Find each ion’s charge, reading a Roman numeral as the metal ion’s charge, a monatomic ion’s from its element’s place in the periodic table, and a polyatomic ion’s from the table of common polyatomic ions in Section 2.6 Ionic and Molecular Compounds, and combine the ions in the smallest ratio that makes the total charge zero."
 >}}
 
 {{< textin
-  question="The following ionic compound is found in common household products. Write the formula for the compound: calcium chloride. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="The following ionic compound is found in common household products. Write the formula for the compound: calcium chloride."
   answer="CaCl₂"
   answerForm="formula"
   hint="Find each ion’s charge, reading a Roman numeral as the metal ion’s charge, a monatomic ion’s from its element’s place in the periodic table, and a polyatomic ion’s from the table of common polyatomic ions in Section 2.6 Ionic and Molecular Compounds, and combine the ions in the smallest ratio that makes the total charge zero."
 >}}
 
 {{< textin
-  question="The following ionic compound is found in common household products. Write the formula for the compound: titanium(IV) oxide. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="The following ionic compound is found in common household products. Write the formula for the compound: titanium(IV) oxide."
   answer="TiO₂"
   answerForm="formula"
   hint="Find each ion’s charge, reading a Roman numeral as the metal ion’s charge, a monatomic ion’s from its element’s place in the periodic table, and a polyatomic ion’s from the table of common polyatomic ions in Section 2.6 Ionic and Molecular Compounds, and combine the ions in the smallest ratio that makes the total charge zero."
 >}}
 
 {{< textin
-  question="The following ionic compound is found in common household products. Write the formula for the compound: ammonium nitrate. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="The following ionic compound is found in common household products. Write the formula for the compound: ammonium nitrate."
   answer="NH₄NO₃"
   answerForm="formula"
   hint="Find each ion’s charge, reading a Roman numeral as the metal ion’s charge, a monatomic ion’s from its element’s place in the periodic table, and a polyatomic ion’s from the table of common polyatomic ions in Section 2.6 Ionic and Molecular Compounds, and combine the ions in the smallest ratio that makes the total charge zero."
 >}}
 
 {{< textin
-  question="The following ionic compound is found in common household products. Write the formula for the compound: sodium bisulfate (the common name for sodium hydrogen sulfate). Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="The following ionic compound is found in common household products. Write the formula for the compound: sodium bisulfate (the common name for sodium hydrogen sulfate)."
   answer="NaHSO₄"
   answerForm="formula"
   hint="Find each ion’s charge, reading a Roman numeral as the metal ion’s charge, a monatomic ion’s from its element’s place in the periodic table, and a polyatomic ion’s from the table of common polyatomic ions in Section 2.6 Ionic and Molecular Compounds, and combine the ions in the smallest ratio that makes the total charge zero."
 >}}
 
 {{< textin
-  question="What is the IUPAC name of the following compound: manganese dioxide? Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="What is the IUPAC name of the following compound: manganese dioxide?"
   answer="manganese(IV) oxide"
   hint="Work out the metal ion’s charge from the anion’s charge and how many of each ion the compound has — the formula shows it where the stem prints one, the name’s Greek prefixes where it does not — then name the compound with that charge as a Roman numeral in parentheses after the metal’s name, as the subsection on metal ions with a variable charge does."
 >}}
 
 {{< textin
-  question="What is the IUPAC name of the following compound: mercurous chloride (Hg₂Cl₂)? Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="What is the IUPAC name of the following compound: mercurous chloride (Hg₂Cl₂)?"
   answer="mercury(I) chloride"
   hint="Work out the metal ion’s charge from the anion’s charge and how many of each ion the compound has — the formula shows it where the stem prints one, the name’s Greek prefixes where it does not — then name the compound with that charge as a Roman numeral in parentheses after the metal’s name, as the subsection on metal ions with a variable charge does."
 >}}
 
 {{< textin
-  question="What is the IUPAC name of the following compound: ferric nitrate [Fe(NO₃)₃]? Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="What is the IUPAC name of the following compound: ferric nitrate [Fe(NO₃)₃]?"
   answer="iron(III) nitrate"
   hint="Work out the metal ion’s charge from the anion’s charge and how many of each ion the compound has — the formula shows it where the stem prints one, the name’s Greek prefixes where it does not — then name the compound with that charge as a Roman numeral in parentheses after the metal’s name, as the subsection on metal ions with a variable charge does."
 >}}
 
 {{< textin
-  question="What is the IUPAC name of the following compound: titanium tetrachloride? Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="What is the IUPAC name of the following compound: titanium tetrachloride?"
   answer="titanium(IV) chloride"
   hint="Work out the metal ion’s charge from the anion’s charge and how many of each ion the compound has — the formula shows it where the stem prints one, the name’s Greek prefixes where it does not — then name the compound with that charge as a Roman numeral in parentheses after the metal’s name, as the subsection on metal ions with a variable charge does."
 >}}
 
 {{< textin
-  question="What is the IUPAC name of the following compound: cupric bromide (CuBr₂)? Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="What is the IUPAC name of the following compound: cupric bromide (CuBr₂)?"
   answer="copper(II) bromide"
   hint="Work out the metal ion’s charge from the anion’s charge and how many of each ion the compound has — the formula shows it where the stem prints one, the name’s Greek prefixes where it does not — then name the compound with that charge as a Roman numeral in parentheses after the metal’s name, as the subsection on metal ions with a variable charge does."
 >}}
@@ -586,4 +586,4 @@ For example, consider H₂CO₃ (which you might be tempted to call “hydrogen 
 
 ---
 
-<small>This section is adapted from [Chemistry 2e, Section 2.7: Chemical Nomenclature](https://openstax.org/books/chemistry-2e/pages/2-7-chemical-nomenclature) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the figure re-encoded as WebP and marked as a diagram, since beside its photograph it shows two drawn ball-and-stick models; its alt text rewritten from the image, with an extended description added (the source alt says the dichromate model is two chromate ions bonded together and calls a chromium atom a chromate atom; the drawing shows two chromium atoms that share one oxygen atom and hold three others each); references to the numbered tables and to the figure replaced by describing phrases, and the reference to the figure of common ion charges in Section 2.6 written as plain text naming that section; the periodic table linked to Appendix A where an item needs it; the source links nothing there: the words “periodic table” linked in the body paragraph on naming compounds composed of two elements, and the sentence “Use the periodic table.” added after the source’s words in all 46 items built on the two Check Your Learnings and the six keyed exercises, each of which turns a symbol into a name or a name into a symbol, or places an element to find its ion’s charge; the two Chemistry in Everyday Life boxes and the Link to Learning box rendered as callouts, the figure inside its box, and the link text “website” extended over the source’s own following words so that it describes its destination; the eight tables transcribed as Markdown tables with their titles as bold lines above them, the two that print no header row (the names of some ionic compounds and of some polyatomic ionic compounds) given the heading “Compound” over each column, as the source’s table of molecular compounds repeats its headings; formulas and ions set as Unicode text throughout, the two hydrate formulas the source displays beside their names set as two lines of text, a comma between each name and its formula; “principle” corrected to “principal” in the opening paragraph, “is replace with” to “is replaced with” in the subsection on oxyacids, the missing comma restored after CaCO₃ in the table of everyday ionic compounds, and the town’s name corrected to Hinkley in the Erin Brockovich box; the garbled sentence that introduces the table of molecular compounds composed of two elements, which runs two openings together, repaired by dropping its unfinished first opening; in the Erin Brockovich box, the use of the Cr(VI) corrected from a natural gas pipeline to the cooling towers of a compressor station, and the sentence on the 2010 study corrected to the cities and the public health goal the study reported, each with a Source note; Source notes added after the Naming Ionic Compounds solution, on its naming gallium’s compound with the charge where an exercise of the section names one without it, and on magnesium, which forms only one ion, taking no numeral in part (d), after the paragraph giving the rule for which element of a molecular compound is named first, on chlorine and oxygen, and after the key terms, on the oxyacid definition, which the body gives more completely; the two worked examples set as prose, each followed by its Check Your Learning as interactive items (nine in all), the printed answers serving as their keys rather than appearing as text: the five ionic compounds and the four covalent compounds as one formula text-recall item each, the lead-ins restated in the singular; the end-of-section exercises adapted into the interactive Practice block, the 6 exercises the source keys carried as 37 items: the 17 compounds of the three naming exercises as one text-recall item each, keyed with the names the source prints, and the 20 compounds of the three formula exercises as one formula text-recall item each; the lead-ins restated in the singular, the question that opens the exercise on IUPAC names asked of one compound; the two items keyed with a hydrate’s formula closed by a sentence saying how to type its dot; the source’s key for aluminum fluoride trihydrate corrected, where it misprints a letter of an element symbol, with a Source note after the item; the 5 exercises the source prints no answer for are omitted; and two text-recall items added after the keyed items, since no keyed exercise or Check Your Learning asks for an acid’s name or what kind of compound an acid is: a recall of the key term defined as a compound of hydrogen and one other element with acidic properties, and a recall of the key term defined as a compound of hydrogen, oxygen, and one other element with acidic properties.</small>
+<small>This section is adapted from [Chemistry 2e, Section 2.7: Chemical Nomenclature](https://openstax.org/books/chemistry-2e/pages/2-7-chemical-nomenclature) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the figure re-encoded as WebP and marked as a diagram, since beside its photograph it shows two drawn ball-and-stick models; its alt text rewritten from the image, with an extended description added (the source alt says the dichromate model is two chromate ions bonded together and calls a chromium atom a chromate atom; the drawing shows two chromium atoms that share one oxygen atom and hold three others each); references to the numbered tables and to the figure replaced by describing phrases, and the reference to the figure of common ion charges in Section 2.6 written as plain text naming that section; the words “periodic table” linked to Appendix A in the body paragraph on naming compounds composed of two elements, the source linking nothing there; the two Chemistry in Everyday Life boxes and the Link to Learning box rendered as callouts, the figure inside its box, and the link text “website” extended over the source’s own following words so that it describes its destination; the eight tables transcribed as Markdown tables with their titles as bold lines above them, the two that print no header row (the names of some ionic compounds and of some polyatomic ionic compounds) given the heading “Compound” over each column, as the source’s table of molecular compounds repeats its headings; formulas and ions set as Unicode text throughout, the two hydrate formulas the source displays beside their names set as two lines of text, a comma between each name and its formula; “principle” corrected to “principal” in the opening paragraph, “is replace with” to “is replaced with” in the subsection on oxyacids, the missing comma restored after CaCO₃ in the table of everyday ionic compounds, and the town’s name corrected to Hinkley in the Erin Brockovich box; the garbled sentence that introduces the table of molecular compounds composed of two elements, which runs two openings together, repaired by dropping its unfinished first opening; in the Erin Brockovich box, the use of the Cr(VI) corrected from a natural gas pipeline to the cooling towers of a compressor station, and the sentence on the 2010 study corrected to the cities and the public health goal the study reported, each with a Source note; Source notes added after the Naming Ionic Compounds solution, on its naming gallium’s compound with the charge where an exercise of the section names one without it, and on magnesium, which forms only one ion, taking no numeral in part (d), after the paragraph giving the rule for which element of a molecular compound is named first, on chlorine and oxygen, and after the key terms, on the oxyacid definition, which the body gives more completely; the two worked examples set as prose, each followed by its Check Your Learning as interactive items (nine in all), the printed answers serving as their keys rather than appearing as text: the five ionic compounds and the four covalent compounds as one formula text-recall item each, the lead-ins restated in the singular; the end-of-section exercises adapted into the interactive Practice block, the 6 exercises the source keys carried as 37 items: the 17 compounds of the three naming exercises as one text-recall item each, keyed with the names the source prints, and the 20 compounds of the three formula exercises as one formula text-recall item each; the lead-ins restated in the singular, the question that opens the exercise on IUPAC names asked of one compound; the two items keyed with a hydrate’s formula closed by a sentence saying how to type its dot; the source’s key for aluminum fluoride trihydrate corrected, where it misprints a letter of an element symbol, with a Source note after the item; the 5 exercises the source prints no answer for are omitted; and two text-recall items added after the keyed items, since no keyed exercise or Check Your Learning asks for an acid’s name or what kind of compound an acid is: a recall of the key term defined as a compound of hydrogen and one other element with acidic properties, and a recall of the key term defined as a compound of hydrogen, oxygen, and one other element with acidic properties.</small>

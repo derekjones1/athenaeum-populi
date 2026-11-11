@@ -39,14 +39,14 @@ Some elements exhibit a regular pattern of ionic charge when they form ions.
 **Solution.** Because the number of protons remains unchanged when an atom forms an ion, the atomic number of the element must be 13. Knowing this lets us use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/) to identify the element as Al (aluminum). The Al atom has lost three electrons and thus has three more positive charges (13) than it has electrons (10). This is the aluminum cation, Al³⁺.
 
 {{< textin
-  question="Give the symbol and name for the ion with 34 protons and 36 electrons. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/). Enter the ion’s symbol."
+  question="Give the symbol and name for the ion with 34 protons and 36 electrons. Enter the ion’s symbol."
   answer="Se²⁻"
   answerForm="formula"
   hint="Use the proton count to find the element in the periodic table, then compare the numbers of protons and electrons, as the solution above does."
 >}}
 
 {{< textin
-  question="Give the symbol and name for the ion with 34 protons and 36 electrons. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/). Enter the ion’s name."
+  question="Give the symbol and name for the ion with 34 protons and 36 electrons. Enter the ion’s name."
   answer="selenide"
   accept="selenide ion"
   hint="Find the element with this atomic number in the periodic table; the next worked example shows how the ions of magnesium and nitrogen are named."
@@ -59,20 +59,20 @@ Some elements exhibit a regular pattern of ionic charge when they form ions.
 Nitrogen’s position in the periodic table (group 15) reveals that it is a nonmetal. Nonmetals form negative ions (anions). A nitrogen atom must gain three electrons to have the same number of electrons as an atom of the following noble gas, neon. Thus, a nitrogen atom will form an anion with three more electrons than protons and a charge of 3−. The symbol for the ion is N³⁻, and it is called a nitride ion.
 
 {{< textin
-  question="Aluminum and carbon react to form an ionic compound. Predict which forms an anion, which forms a cation, and the charges of each ion. Write the symbol for each ion and name them. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/). Enter the symbol of the ion that aluminum forms."
+  question="Aluminum and carbon react to form an ionic compound. Predict which forms an anion, which forms a cation, and the charges of each ion. Write the symbol for each ion and name them. Enter the symbol of the ion that aluminum forms."
   answer="Al³⁺"
   answerForm="formula"
   hint="Use the element’s group in the periodic table, as the solution above does for magnesium and nitrogen."
 >}}
 
 {{< textin
-  question="Aluminum and carbon react to form an ionic compound. Predict which forms an anion, which forms a cation, and the charges of each ion. Write the symbol for each ion and name them. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/). Enter the symbol of the ion that carbon forms."
+  question="Aluminum and carbon react to form an ionic compound. Predict which forms an anion, which forms a cation, and the charges of each ion. Write the symbol for each ion and name them. Enter the symbol of the ion that carbon forms."
   answer="C⁴⁻"
   answerForm="formula"
   hint="Use the element’s group in the periodic table, as the solution above does for magnesium and nitrogen."
 >}}
 
-{{< selfcheck question="Aluminum and carbon react to form an ionic compound. Predict which forms an anion, which forms a cation, and the charges of each ion. Write the symbol for each ion and name them. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)." hint="Follow the solution above: decide from each element’s position whether it is a metal or a nonmetal, then count the electrons it must lose or gain to match a noble gas." >}}
+{{< selfcheck question="Aluminum and carbon react to form an ionic compound. Predict which forms an anion, which forms a cation, and the charges of each ion. Write the symbol for each ion and name them." hint="Follow the solution above: decide from each element’s position whether it is a metal or a nonmetal, then count the electrons it must lose or gain to match a noble gas." >}}
 Al will form a cation with a charge of 3+: Al³⁺, an aluminum ion. Carbon will form an anion with a charge of 4−: C⁴⁻, a carbide ion.
 ===CHECKS===
 Al will form a cation with a charge of 3+
@@ -324,7 +324,7 @@ covalent
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: NF₃. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: NF₃."
   answer="covalent"
   hint="Place each element in the periodic table, look for a polyatomic ion from the table of common polyatomic ions, and ask what holds the compound together."
 >}}
@@ -333,7 +333,7 @@ covalent
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: BaO. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: BaO."
   answer="ionic"
   hint="Place each element in the periodic table, look for a polyatomic ion from the table of common polyatomic ions, and ask what holds the compound together."
 >}}
@@ -343,14 +343,14 @@ covalent
 
 {{< followup >}}
 {{< textin
-  question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: BaO. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/). Enter the symbol of the cation."
+  question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: BaO. Enter the symbol of the cation."
   answer="Ba²⁺"
   answerForm="formula"
   hint="Split the formula into ions whose charges balance, using the periodic table and the table of common polyatomic ions."
 >}}
 
 {{< textin
-  question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: BaO. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/). Enter the symbol of the anion."
+  question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: BaO. Enter the symbol of the anion."
   answer="O²⁻"
   answerForm="formula"
   hint="Split the formula into ions whose charges balance, using the periodic table and the table of common polyatomic ions."
@@ -358,7 +358,7 @@ covalent
 {{< /followup >}}
 
 {{< multiplechoice
-  question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: (NH₄)₂CO₃. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: (NH₄)₂CO₃."
   answer="ionic"
   hint="Place each element in the periodic table, look for a polyatomic ion from the table of common polyatomic ions, and ask what holds the compound together."
 >}}
@@ -368,14 +368,14 @@ covalent
 
 {{< followup >}}
 {{< textin
-  question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: (NH₄)₂CO₃. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/). Enter the symbol of the cation."
+  question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: (NH₄)₂CO₃. Enter the symbol of the cation."
   answer="NH₄⁺"
   answerForm="formula"
   hint="Split the formula into ions whose charges balance, using the periodic table and the table of common polyatomic ions."
 >}}
 
 {{< textin
-  question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: (NH₄)₂CO₃. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/). Enter the symbol of the anion."
+  question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: (NH₄)₂CO₃. Enter the symbol of the anion."
   answer="CO₃²⁻"
   answerForm="formula"
   hint="Split the formula into ions whose charges balance, using the periodic table and the table of common polyatomic ions."
@@ -383,7 +383,7 @@ covalent
 {{< /followup >}}
 
 {{< multiplechoice
-  question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: Sr(H₂PO₄)₂. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: Sr(H₂PO₄)₂."
   answer="ionic"
   hint="Place each element in the periodic table, look for a polyatomic ion from the table of common polyatomic ions, and ask what holds the compound together."
 >}}
@@ -393,14 +393,14 @@ covalent
 
 {{< followup >}}
 {{< textin
-  question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: Sr(H₂PO₄)₂. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/). Enter the symbol of the cation."
+  question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: Sr(H₂PO₄)₂. Enter the symbol of the cation."
   answer="Sr²⁺"
   answerForm="formula"
   hint="Split the formula into ions whose charges balance, using the periodic table and the table of common polyatomic ions."
 >}}
 
 {{< textin
-  question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: Sr(H₂PO₄)₂. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/). Enter the symbol of the anion."
+  question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: Sr(H₂PO₄)₂. Enter the symbol of the anion."
   answer="H₂PO₄⁻"
   answerForm="formula"
   hint="Split the formula into ions whose charges balance, using the periodic table and the table of common polyatomic ions."
@@ -408,7 +408,7 @@ covalent
 {{< /followup >}}
 
 {{< multiplechoice
-  question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: IBr. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: IBr."
   answer="covalent"
   hint="Place each element in the periodic table, look for a polyatomic ion from the table of common polyatomic ions, and ask what holds the compound together."
 >}}
@@ -417,7 +417,7 @@ covalent
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: Na₂O. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
+  question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: Na₂O."
   answer="ionic"
   hint="Place each element in the periodic table, look for a polyatomic ion from the table of common polyatomic ions, and ask what holds the compound together."
 >}}
@@ -427,14 +427,14 @@ covalent
 
 {{< followup >}}
 {{< textin
-  question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: Na₂O. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/). Enter the symbol of the cation."
+  question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: Na₂O. Enter the symbol of the cation."
   answer="Na⁺"
   answerForm="formula"
   hint="Split the formula into ions whose charges balance, using the periodic table and the table of common polyatomic ions."
 >}}
 
 {{< textin
-  question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: Na₂O. Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/). Enter the symbol of the anion."
+  question="For the following compound, state whether it is ionic or covalent. If it is ionic, write the symbols for the ions involved: Na₂O. Enter the symbol of the anion."
   answer="O²⁻"
   answerForm="formula"
   hint="Split the formula into ions whose charges balance, using the periodic table and the table of common polyatomic ions."
@@ -480,4 +480,4 @@ covalent
 
 ---
 
-<small>This section is adapted from [Chemistry 2e, Section 2.6: Ionic and Molecular Compounds](https://openstax.org/books/chemistry-2e/pages/2-6-ionic-and-molecular-compounds) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the four figures re-encoded as WebP, the drawing of a sodium atom and ion and the periodic table of common ion charges marked as diagrams and the molten-salt sequence and the sapphire ring as photos; every figure’s alt text rewritten from the image, with an extended description added to the periodic table of common ion charges that names every symbol it prints, group by group; references to numbered figures and to the table replaced by describing phrases; the periodic table linked to Appendix A where an item needs it; the source links nothing there: the words “periodic table” linked in the body paragraph that first sends the reader to the table, in the solution of the Composition of Ions example, in the hint the source prints inside the lithium peroxide Check Your Learning, in the bonding Check Your Learning, and in the chloride exercise, and the sentence “Use the periodic table.” added after the source’s words in the two items on the ion with 34 protons and 36 electrons, the three items on aluminum and carbon, and the fourteen items of the exercise on whether each compound is ionic or covalent and which ions it holds, each of which must place an element in the table; the Link to Learning box rendered as a callout, its link text “video” extended over the source’s own following words so that it describes its destination; the table of common polyatomic ions transcribed as a Markdown table with its title as a bold line above it and the cells the source leaves empty left empty; formulas and ions set as Unicode text throughout; “the same number electrons” corrected to “the same number of electrons” in the solution of the Formation of Ions example; the definition of oxyanions corrected from polyatomic ions to polyatomic anions, as the module’s glossary defines them, with a Source note after the table of common polyatomic ions; a Source note added after the figure of common ion charges on the rule that a main-group cation’s charge equals its group number; the five worked examples set as prose, each followed by its Check Your Learning as interactive items (eleven in all), the printed answers serving as their keys rather than appearing as text: the ion with 34 protons and 36 electrons as a formula text-recall item for its symbol and a text-recall item for its name, the name keyed without the word “ion” and accepted with it; the aluminum and carbon ions as two formula text-recall items, one for each element’s ion, then a self-check carrying the source’s answer as its model answer, with rubric checkpoints decomposing it; the sodium sulfide and lithium peroxide formulas as one formula text-recall item each; and the four compounds of the bonding Check Your Learning as one two-option multiple-choice item each, its lead-in restated in the singular; where the source’s answer uses a word that is not one of the stem’s two — the module’s glossary gives it as another name for one of them — the page keys the stem’s own word; the end-of-section exercises adapted into the interactive Practice block, the 3 exercises the source keys carried as 25 items: the six chlorides as one two-option multiple-choice item each; the six compounds of the ionic-or-covalent exercise as one two-option multiple-choice item each, followed, for each of the four compounds the source answers as ionic, by two formula text-recall items, the cation’s symbol and then the anion’s, each stem closed by a sentence naming the one it asks for, and shown only once the compound has been answered as ionic; and the five pairs of ions as one formula text-recall item each; the lead-ins of all three exercises restated in the singular; the 3 exercises the source prints no answer for are omitted; and two filler multiple-choice items added to the group on defining ionic and molecular compounds, which no keyed exercise covers, each offering the pair of terms the module defines side by side: one built on the glossary definition of one of the section’s two kinds of compound, and one on the body sentence that defines one of its two kinds of bond.</small>
+<small>This section is adapted from [Chemistry 2e, Section 2.6: Ionic and Molecular Compounds](https://openstax.org/books/chemistry-2e/pages/2-6-ionic-and-molecular-compounds) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the four figures re-encoded as WebP, the drawing of a sodium atom and ion and the periodic table of common ion charges marked as diagrams and the molten-salt sequence and the sapphire ring as photos; every figure’s alt text rewritten from the image, with an extended description added to the periodic table of common ion charges that names every symbol it prints, group by group; references to numbered figures and to the table replaced by describing phrases; the words “periodic table” linked to Appendix A where the source’s own words send the reader to the table, the source linking nothing there: in the body paragraph that first does so, in the solution of the Composition of Ions example, in the hint the source prints inside the lithium peroxide Check Your Learning, in the bonding Check Your Learning, and in the chloride exercise; the Link to Learning box rendered as a callout, its link text “video” extended over the source’s own following words so that it describes its destination; the table of common polyatomic ions transcribed as a Markdown table with its title as a bold line above it and the cells the source leaves empty left empty; formulas and ions set as Unicode text throughout; “the same number electrons” corrected to “the same number of electrons” in the solution of the Formation of Ions example; the definition of oxyanions corrected from polyatomic ions to polyatomic anions, as the module’s glossary defines them, with a Source note after the table of common polyatomic ions; a Source note added after the figure of common ion charges on the rule that a main-group cation’s charge equals its group number; the five worked examples set as prose, each followed by its Check Your Learning as interactive items (eleven in all), the printed answers serving as their keys rather than appearing as text: the ion with 34 protons and 36 electrons as a formula text-recall item for its symbol and a text-recall item for its name, the name keyed without the word “ion” and accepted with it; the aluminum and carbon ions as two formula text-recall items, one for each element’s ion, then a self-check carrying the source’s answer as its model answer, with rubric checkpoints decomposing it; the sodium sulfide and lithium peroxide formulas as one formula text-recall item each; and the four compounds of the bonding Check Your Learning as one two-option multiple-choice item each, its lead-in restated in the singular; where the source’s answer uses a word that is not one of the stem’s two — the module’s glossary gives it as another name for one of them — the page keys the stem’s own word; the end-of-section exercises adapted into the interactive Practice block, the 3 exercises the source keys carried as 25 items: the six chlorides as one two-option multiple-choice item each; the six compounds of the ionic-or-covalent exercise as one two-option multiple-choice item each, followed, for each of the four compounds the source answers as ionic, by two formula text-recall items, the cation’s symbol and then the anion’s, each stem closed by a sentence naming the one it asks for, and shown only once the compound has been answered as ionic; and the five pairs of ions as one formula text-recall item each; the lead-ins of all three exercises restated in the singular; the 3 exercises the source prints no answer for are omitted; and two filler multiple-choice items added to the group on defining ionic and molecular compounds, which no keyed exercise covers, each offering the pair of terms the module defines side by side: one built on the glossary definition of one of the section’s two kinds of compound, and one on the body sentence that defines one of its two kinds of bond.</small>

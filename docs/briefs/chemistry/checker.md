@@ -195,7 +195,10 @@ stem shows it.
   item needs and does not print — with no link to that appendix, even
   where the source links nothing (playbook, page skeleton rule 9). Answer
   each such item with only what the page and its links give you: if you
-  had to go looking, the link is missing.
+  had to go looking, the link is missing. **The periodic table is the
+  exception**: it is a control on every page of the book, so an item that
+  needs it and names no table is not a finding, and an added "Use the
+  periodic table." is one (the lint refuses it).
 - `npm run verify-section -- <page>` prints `verified`.
 
 ## 6. Report

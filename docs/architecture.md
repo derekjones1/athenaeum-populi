@@ -196,7 +196,17 @@ viewer behind the "Enlarge figure" link that `mediafigure.html` puts under
 every raster figure shown smaller than its file. The link is a real link to
 the largest variant, so the feature degrades to "open the image"; the
 dialog and its `<img>` exist only at runtime, which is why the build
-audit's one-image-per-figure rule is unchanged.
+audit's one-image-per-figure rule is unchanged. The same dialog shows a
+book's **reference figure**: a book names one in its `_index.md`
+(`reference:` — a label, the figure's page, its media stem, an alt), and
+`toc.html` then prints a control for it in the rail's sticky bottom block on
+every page of the book but the figure's own
+(`layouts/_partials/utils/reference-figure.html`). Chemistry's is the
+periodic table. The control is a real link to the page; with the script it
+opens the figure in place, as does a link to that page in a section's body
+(not on a landing page or among the appendices, where such a link is
+navigation), and the dialog then carries a link to the page, where the
+figure's content is also a text table.
 `utils/toc-drawer.html` decides, for the button and the scrim alike,
 whether a page has a heading list at all — a landing page with
 `toc: false` gets neither. The browser suite drives the drawer at phone

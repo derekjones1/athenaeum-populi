@@ -1,0 +1,66 @@
+{{- /* The reference figure a book keeps at hand on every one of its pages —
+     Chemistry's periodic table — or an empty dict when the book names none
+     or when the page being rendered IS the figure's own page.
+
+     A book names it in its own `_index.md`:
+
+       reference:
+         label: Periodic table              # the words on the control
+         page: /physical-sciences/chemistry/appendices/a-the-periodic-table
+         figure: chemistry/CNX_Chem_00_AA_PeriodicPU_img   # <book>/<stem>, as mediafigure's src
+         alt: …                             # the image's text alternative in the viewer
+
+     Why it exists (November 11, 2026): the items that need the periodic
+     table each ended "Use the periodic table." with a link to Appendix A —
+     74 of them by the end of chapter 2, 46 on one page — and following the
+     link left the page, where a typed answer is not kept. The table is now
+     one control in the page rail that opens the figure IN PLACE
+     (assets/js/figure-enlarge.js); without JavaScript it is a plain link to
+     the page, which also lists the figure's content as a text table.
+
+     Returns a dict: label, href (the page), title (the page's title), src,
+     width, height (the figure's largest variant), alt, kind, and links —
+     whether a link to the page in this page's BODY should open the figure
+     in place too. That is so on a section page, where such a link is a
+     pointer to the table from a stem or a sentence; not on a landing page
+     or among the figure page's own siblings (the appendices and their
+     index), where a link to it is navigation. Caller: toc.html. A page or
+     figure that does not resolve fails the build. */ -}}
+{{- $out := dict -}}
+{{- $book := partial "utils/book-root.html" . -}}
+{{- if $book -}}
+  {{- with $book.Params.reference -}}
+    {{- $target := site.GetPage .page -}}
+    {{- if not $target -}}
+      {{- errorf "%s: reference.page %q is not a page" $book.File.Path .page -}}
+    {{- end -}}
+    {{- $parts := split .figure "/" -}}
+    {{- if ne (len $parts) 2 -}}
+      {{- errorf "%s: reference.figure %q must be <book>/<stem>" $book.File.Path .figure -}}
+    {{- end -}}
+    {{- $media := index $parts 0 -}}
+    {{- $stem := index $parts 1 -}}
+    {{- $entry := index (index hugo.Data.media $media).figures $stem -}}
+    {{- if not $entry -}}
+      {{- errorf "%s: reference.figure %q is not in data/media/%s.json" $book.File.Path .figure $media -}}
+    {{- end -}}
+    {{- if or (not .label) (not .alt) -}}
+      {{- errorf "%s: reference needs a label and an alt" $book.File.Path -}}
+    {{- end -}}
+    {{- if ne $target.RelPermalink $.RelPermalink -}}
+      {{- $variants := sort $entry.variants "width" -}}
+      {{- $largest := index $variants (sub (len $variants) 1) -}}
+      {{- $out = dict
+            "label" .label
+            "href" $target.RelPermalink
+            "title" $target.Title
+            "src" (printf "/media/%s/%s" $media $largest.file)
+            "width" (int $largest.width)
+            "height" (int $largest.height)
+            "alt" .alt
+            "kind" ($entry.kind | default "diagram")
+            "links" (and $.IsPage (ne $.CurrentSection $target.CurrentSection)) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $out -}}

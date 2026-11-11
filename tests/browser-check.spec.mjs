@@ -2047,6 +2047,109 @@ test('a figure shown smaller than its file can be enlarged in place: fit, the fi
   }))).toEqual({ overflows: false, clipped: [] });
 });
 
+// Through chapter 2, 74 Chemistry items ended "Use the periodic table." with
+// a link to Appendix A, and following it left the page and the typed
+// answers. The book now names the table as its reference figure
+// (layouts/_partials/utils/reference-figure.html): one control in the page
+// rail, and the body's own links to Appendix A, open it in the figure viewer.
+test('Chemistry keeps the periodic table at hand: the rail control and a body link open it in place, and a typed answer survives', async ({ page }) => {
+  const route = '/physical-sciences/chemistry/02-atoms-molecules-and-ions/06-ionic-and-molecular-compounds/';
+  const appendix = '/physical-sciences/chemistry/appendices/a-the-periodic-table/';
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await gotoBuiltPage(page, route);
+
+  const control = page.locator('nav#ap-toc a.ap-reference-figure');
+  await expect(control).toHaveCount(1);
+  await expect(control).toHaveText('Periodic table');
+  // Without the script the control is the whole feature: a link to the page.
+  expect(await control.getAttribute('href')).toBe(appendix);
+  // From xl up the rail's bottom block is sticky, so the control is in view
+  // wherever the reader is — here, at the Practice block.
+  const card = page.locator('text-in').last();
+  await waitForUpgrade(card, (el) => Boolean(customElements.get('text-in')) && Boolean(el.querySelector('.ap-textin-check')));
+  await card.scrollIntoViewIfNeeded();
+  await expect(control).toBeInViewport();
+  const field = card.locator('.ap-textin-field');
+  await field.fill('typed before looking');
+
+  const dialog = page.locator('dialog.ap-figure-viewer[open]');
+  const image = dialog.locator('.ap-figure-viewer-image');
+  const pageLink = dialog.locator('.ap-figure-viewer-page a');
+  await control.click();
+  await expect(dialog).toBeVisible();
+  expect(new URL(page.url()).pathname, 'the page was not left').toBe(route);
+  await expect(dialog.locator('.ap-figure-viewer-title')).toHaveText('Periodic table');
+  await expect(image).toHaveJSProperty('complete', true);
+  expect(await image.evaluate((img) => ({ file: new URL(img.src).pathname, width: img.naturalWidth, alt: img.alt.length > 40 })))
+    .toEqual({ file: '/media/chemistry/CNX_Chem_00_AA_PeriodicPU_img-1300.webp', width: 1300, alt: true });
+  // The way to the figure's own page, where its content is also a text table.
+  await expect(pageLink).toHaveText('Appendix A: The Periodic Table');
+  expect(await pageLink.getAttribute('href')).toBe(appendix);
+  await page.keyboard.press('Escape');
+  await expect(page.locator('dialog.ap-figure-viewer[open]')).toHaveCount(0);
+  expect(await control.evaluate((el) => el === document.activeElement), 'focus returns to the control').toBe(true);
+  await expect(field).toHaveValue('typed before looking');
+
+  // A link to Appendix A in a stem or a sentence opens the same viewer.
+  const bodyLink = page.locator(`main .content a[href="${appendix}"]`).first();
+  await expect(bodyLink).toHaveText('periodic table');
+  await bodyLink.scrollIntoViewIfNeeded();
+  await bodyLink.click();
+  await expect(dialog).toBeVisible();
+  expect(new URL(page.url()).pathname).toBe(route);
+  await page.keyboard.press('Escape');
+  expect(await bodyLink.evaluate((el) => el === document.activeElement), 'focus returns to the link').toBe(true);
+  // An ordinary figure opened afterwards carries no page link.
+  const enlarge = page.locator('a.ap-mediafigure-enlarge').first();
+  await enlarge.scrollIntoViewIfNeeded();
+  await enlarge.click();
+  await expect(dialog).toBeVisible();
+  await expect(dialog.locator('.ap-figure-viewer-page')).toBeHidden();
+  await page.keyboard.press('Escape');
+
+  // On a phone the rail is the "On this page" drawer: the control is one tap
+  // inside it, the drawer closes, and the viewer's bar still fits.
+  await page.setViewportSize({ width: 390, height: 844 });
+  const drawerButton = page.locator('.ap-nav-toc');
+  await drawerButton.click();
+  await expect(control).toBeVisible();
+  await control.click();
+  await expect(dialog).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.classList.contains('ap-toc-open')), 'the drawer closed').toBe(false);
+  await expect(dialog.locator('.ap-figure-viewer-page')).toBeVisible();
+  expect(await dialog.evaluate((el) => ({
+    overflows: el.querySelector('.ap-figure-viewer-bar').scrollWidth > el.querySelector('.ap-figure-viewer-bar').clientWidth,
+    wide: el.getBoundingClientRect().width > window.innerWidth,
+    pageLineInside: el.querySelector('.ap-figure-viewer-page').getBoundingClientRect().bottom <= el.getBoundingClientRect().bottom + 0.5,
+  }))).toEqual({ overflows: false, wide: false, pageLineInside: true });
+  await page.keyboard.press('Escape');
+  await expect(page.locator('dialog.ap-figure-viewer[open]')).toHaveCount(0);
+  expect(await drawerButton.evaluate((el) => el === document.activeElement), 'focus returns to the drawer button').toBe(true);
+});
+
+test('the periodic table control is on Chemistry pages only, not on the table\'s own page, and among the appendices a link to it navigates', async ({ page }) => {
+  const appendix = '/physical-sciences/chemistry/appendices/a-the-periodic-table/';
+  await page.setViewportSize({ width: 1280, height: 900 });
+  // The figure's own page shows the figure: no control.
+  await gotoBuiltPage(page, appendix);
+  await expect(page.locator('a.ap-reference-figure')).toHaveCount(0);
+  // A sibling appendix has the control, and its pager's link to Appendix A
+  // is navigation, not a pointer to the table.
+  await gotoBuiltPage(page, '/physical-sciences/chemistry/appendices/b-essential-mathematics/');
+  const control = page.locator('a.ap-reference-figure');
+  await expect(control).toHaveCount(1);
+  expect(await control.evaluate((el) => 'figureLinks' in el.dataset), 'body links are not taken over among the appendices').toBe(false);
+  await page.locator(`main a[href="${appendix}"]`).first().click();
+  await page.waitForURL(`**${appendix}`);
+  await expect(page.locator('dialog.ap-figure-viewer[open]')).toHaveCount(0);
+  // A landing page has the control too, and takes over no link.
+  await gotoBuiltPage(page, '/physical-sciences/chemistry/02-atoms-molecules-and-ions/');
+  expect(await page.locator('a.ap-reference-figure').evaluateAll((els) => els.map((el) => 'figureLinks' in el.dataset))).toEqual([false]);
+  // Another book names no reference figure.
+  await gotoBuiltPage(page, '/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology/');
+  await expect(page.locator('a.ap-reference-figure')).toHaveCount(0);
+});
+
 test('on every Chemistry page a display row fits the column, scientific notation stays on one line, and a scaled-down figure stays small', async ({ page }) => {
   const routes = [...chemistrySectionRoutes(), ...chemistryAppendixRoutes()];
   expect(routes.length, 'Chemistry section pages were discovered in public/').toBeGreaterThanOrEqual(6);

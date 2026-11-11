@@ -146,19 +146,24 @@ these differences:
    constant the page's own tables lack (C, D) — links the phrase that
    names the thing, in the source's words and nothing added:
    `Using the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), predict…`.
-   **Where the stem names no table** — 2.3's "the ion with 54 electrons, 53
-   protons, and 74 neutrons" needs an element for an atomic number and
-   says nothing of where to find it — the item adds one sentence after the
-   source's words and before its "Enter …" or "Type …" sentence:
-   "Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)."
-   Only an item that cannot be answered without the table carries it: a
-   count whose stem gives the atomic number does not *(chapter 2: the
-   sentence went on six such items, and the footer's reason was false for
-   them)*.
-   Every item that needs it carries the link, since each is answered on
-   its own. A page that shows the table itself (2.5 prints the periodic
-   table) needs no link to it. The footer says "the periodic table linked
-   to Appendix A where an item needs it; the source links nothing there".
+   **The periodic table is on every page of the book, so no sentence is
+   added for it** *(Derek, November 11, 2026)*: the page rail carries a
+   "Periodic table" control (the book's `reference` entry in its
+   `_index.md`; `layouts/_partials/utils/reference-figure.html`) that opens
+   the table in the figure viewer without leaving the page, and a link to
+   Appendix A in a section's body or stems opens the same viewer. So where
+   a stem names no table — 2.3's "the ion with 54 electrons, 53 protons,
+   and 74 neutrons" needs an element for an atomic number and says nothing
+   of where to find it — the stem stays the source's words. Through chapter
+   2 such an item ended "Use the periodic table." with a link; 74 items
+   carried it, 46 on Section 2.7 alone, and following the link left the
+   page and the typed answers behind. The lint refuses the sentence now.
+   **Every other appendix still needs its link on each item that needs
+   it**, since each item is answered on its own and only the periodic
+   table is at hand. A page that shows the table itself (2.5 prints the
+   periodic table) needs no link to it. The footer says where the words
+   were linked: "the words “periodic table” linked to Appendix A …, the
+   source linking nothing there".
    A link is not a word of the stem: the source gates read the stem
    without it (`unlinked`, `tools/lib/keyed-units.mjs`; a test holds it —
    until 2.6 the path's six words counted, and an unlettered exercise

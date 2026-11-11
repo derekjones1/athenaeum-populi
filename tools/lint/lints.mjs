@@ -210,7 +210,7 @@ import {
 // strategy, and one set of HTML readers, so this lint and the verifiers can
 // never disagree about what a page says.
 import {
-  bookKeyOf, loadMediaManifests, malformedShortcodeParams, mathSpans, PAIRED_SHORTCODES,
+  bookKeyOf, loadMediaManifests, malformedShortcodeParams, mathSpans, PAIRED_SHORTCODES, RETIRED_REFERENCE_POINTER,
   SHORTCODE_PARAMS, shortcodeParams, shortcodeParamSpans, shortcodes,
 } from '../lib/content.mjs';
 import { decodeHtmlEntities, hasFileBackedCssImage, htmlAttribute, openTagRe } from '../lib/html.mjs';
@@ -1490,6 +1490,14 @@ export function lintHugo(src, filename = '', options = {}) {
   // spans, but retain indented tags for the HTML-specific checks below.
   const htmlMediaSrc = maskMarkdownCodeBlocks(uncommented, blank, false)
     .replace(/(`+)([\s\S]*?)\1/g, blank);
+  // The sentence that sent a learner from an item to Appendix A is retired:
+  // every Chemistry page carries the periodic table as a control that opens
+  // in place (November 11, 2026). Until then it stood on 74 items, 46 of
+  // them on one page, and following its link left the page — and the typed
+  // answers — behind.
+  for (const pointer of uncommented.matchAll(RETIRED_REFERENCE_POINTER)) {
+    err(pointer.index + 1, 'the sentence "Use the periodic table." is no longer added to an item — every Chemistry page carries the Periodic table control, which opens the table in place; delete the sentence (the source\'s own words about the table stay, and stay linked)');
+  }
   const isKnowledgeCheck = /knowledge-check-\d+-\d+\.md$/.test(filename);
   const isRegularSection = /[/\\]content[/\\][^/\\]+[/\\][^/\\]+[/\\]\d{2}-[^/\\]+[/\\]\d{2}-[^/\\]+\.md$/i
     .test(filename.replace(/^\.?[/\\]?/, '/'));

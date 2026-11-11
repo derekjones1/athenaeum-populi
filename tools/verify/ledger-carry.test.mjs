@@ -109,6 +109,40 @@ test('an accept member the closed hyphen fold still grades is not a narrowing', 
   assert.equal(results.length, 1);
 });
 
+// November 11, 2026: 74 Chemistry stems ended "Use the [periodic
+// table](…)." — a pointer added to the source's words. The table became a
+// control on every page and the sentence came out; it asked nothing, so the
+// items keep their solves. Any other change to a stem is still a new stem.
+test('a stem that loses only the retired reference pointer carries; any other stem edit does not', () => {
+  const pointer = ' Use the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/).';
+  const stem = (question) => `---\ntitle: Sample\n---\n\n## Practice\n\n{{< textin question="${question}" answer="cesium chloride" hint="h" >}}\n`;
+  const carry = (from, to) => {
+    const dir = site(stem(from));
+    const before = snapshot(join(dir, 'content'));
+    writeFileSync(join(dir, 'content', 'a.md'), stem(to));
+    const now = snapshot(join(dir, 'content'));
+    return { before, now, ...planCarry({ before, now, entries: recorded(before), note: 'carried by test' }) };
+  };
+  const dropped = carry(`Name the following compound: CsCl.${pointer}`, 'Name the following compound: CsCl.');
+  assert.equal(dropped.resolve.length, 0);
+  assert.equal(dropped.results.length, 1);
+  assert.notEqual(dropped.results[0].hash, dropped.before[0].hash, 'the edit re-hashed the item');
+  assert.deepEqual(dropped.results[0].solved, { by: 'fable', result: 'agrees' });
+  // With a sentence after it, as the two hydrate items have.
+  const middle = carry(`Write the formula: a hydrate.${pointer} Type the dot as a period.`, 'Write the formula: a hydrate. Type the dot as a period.');
+  assert.equal(middle.results.length, 1);
+
+  // The pointer gone AND a word of the stem changed: a new stem.
+  const reworded = carry(`Name the following compound: CsCl.${pointer}`, 'Name the following compound: CsBr.');
+  assert.deepEqual(reworded.resolve.map((r) => r.why), ['changed']);
+  // The source's own words about the table are words of the stem.
+  const sourceWords = carry('Using the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), name CsCl.', 'Name CsCl.');
+  assert.deepEqual(sourceWords.resolve.map((r) => r.why), ['changed']);
+  // Some other added sentence is not this one.
+  const other = carry('Name the following compound: CsCl. Use the table of ions.', 'Name the following compound: CsCl.');
+  assert.deepEqual(other.resolve.map((r) => r.why), ['changed']);
+});
+
 test('a hint edit made together with a table edit is re-read, not carried', () => {
   // Both textins' hints change; only the table-bound one also changes its dependency.
   const { results, resolve } = plan({ hint: 'Look carefully.', row: '| 0 | 4 |' });

@@ -416,14 +416,6 @@
   "00cabcd918019b5b": {
    "verdict": "ok"
   },
-  "00d3580ca7b8dd05": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp221295264 (printed 2.47) part (b) classification — solution fs-idm3993968; hint rewritten after check",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "00db153eb3795a1d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -1000,14 +992,6 @@
   "020ab1da44d710a8": {
    "verdict": "ok",
    "note": "source exercise fs-id1167661369825 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "0215f9658f4546f9": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp221295264 (printed 2.47) part (d) cation symbol — solution fs-idm3993968",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -1914,6 +1898,14 @@
   "0399fc25b75681e7": {
    "verdict": "ok",
    "note": "selfcheck, CT fs-id1167658066298, module does not compare to bacterial infections (stated in model answer) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "039c13915889124b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268365168 part (d); key TiO₂ — round 3: shared hint revised (F1/F2) | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "039ccf741b972518": {
    "verdict": "ok",
@@ -4166,6 +4158,15 @@
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "083f22ccc1c8b03f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp282297472 part (e); key hydrogen bromide | Section 2.7, after the blind solve: \"hydrobromic acid\" added to accept on the solver's also-defensible note (the solver's own answer is the key); parent ruling, November 10, 2026 | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "The solver's answer is the key, the source's own (fs-idp282297472(e), \"hydrogen bromide\"). The second name is the module's name for the same formula in water (table fs-idp272649888: HBr(aq), hydrobromic acid), and the stem prints no state, so it cannot refuse it: by the playbook's name row (a second name the module prints for the compound, which the stem does not print) \"hydrobromic acid\" becomes an accept member. This overturns parent decision 5; four readings (author, checker, consistency reader, solver) had raised it."
+   }
+  },
   "0842675c82025c36": {
    "verdict": "ok",
    "note": "m66530 glossary definition fs-idp85464784 (kingdom): meaning ('domain division...') used as prompt, term as answer; accept='kingdoms' (regular plural).; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -4588,14 +4589,6 @@
    "verdict": "ok",
    "note": "source fs-id2253367, solution fs-id1707039 verbatim as model answer"
   },
-  "09374b9a312b20b9": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm194224 part (e); key FeCl₃·2H₂O — round 3: dot example changed to Na2CO3.10H2O (F3)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "093a16190e0fbceb": {
    "verdict": "ok",
    "note": "textin re-read against m46355 CNXML and page text; key \"ramus\" — The infratemporal fossa is located below the zygomatic arch and deep to the ____",
@@ -4972,14 +4965,6 @@
     "result": "agrees"
    }
   },
-  "09f85bcbcd6bb86e": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp279515392 part (b); key iron(II) chloride",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "09fa13ab7bdbf5e3": {
    "verdict": "ok",
    "note": "cloze enteric from fs-id2101505",
@@ -5144,14 +5129,6 @@
    "note": "Review Question eip-736; source solution A 'Sweating for evaporative cooling.' matches the keyed answer. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "0a617458641191cc": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm194224 part (c); key Mn₃(PO₄)₂",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -5936,6 +5913,14 @@
    "note": "summary cloze from § summary: \"Ectomycorrhizae form an extensive dense sheath around the root, while endomycorrhizae are embedded within the root tissue.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "0bef6e93b0ff8422": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268365168 part (b); key CuSO₄ — round 3: shared hint revised (F1/F2) | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -10733,14 +10718,6 @@
     "result": "agrees"
    }
   },
-  "15dd78ae0e069619": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm187202528 part (a) (name); key iron",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "15df333821383d7f": {
    "verdict": "ok",
    "note": "body cloze from § Antiviral Drugs: \"Neuraminidase inhibitors, including olsetamivir ( Tamiflu ), zanamivir ( Relenza ), and peramivir ( Rapivab ), specifically target influenz…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -11713,6 +11690,14 @@
     "result": "agrees"
    }
   },
+  "178688b85c26c4e8": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268321696 part (c); key K₃P | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1788cf4473768496": {
    "verdict": "ok",
    "note": "Practice #3: 7x*2y=14xy=2*7*x*y; product rule gives log_b(2)+log_b(7)+log_b(x)+log_b(y). Matches CNXML solution. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -12677,14 +12662,6 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "1966f6b16dee0f73": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp268321696 part (f); key SiO₂",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "1968d003e0cfe21d": {
    "verdict": "ok"
   },
@@ -12785,6 +12762,14 @@
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "19b3c68395008ba3": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm206240 part (c); key IF₇ | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -13879,15 +13864,6 @@
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
-   }
-  },
-  "1bd2a330782b24bc": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm11079584 (answer: Se2-, the selenide ion) — name, keyed bare with the two-word form accepted; hint reworded after the fix check (parent) so that it no longer says which kind of ion this is; key unchanged",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "adjudicated",
-    "note": "Key stands: keyed bare \"selenide\" with \"selenide ion\" in accept (playbook name row: the grader drops \"the\", not \"ion\"), so the solver's \"selenide ion\" and the bare name both grade correct. Source answer: \"Se2-, the selenide ion\"."
    }
   },
   "1bd4dee11318d874": {
@@ -14990,14 +14966,6 @@
   },
   "1e1f324d71f19ac2": {
    "verdict": "ok"
-  },
-  "1e21162a7e8c27c1": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm174365776 part (d); key ⁵⁷Co³⁺",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "1e220e24cbbd09f1": {
    "verdict": "ok",
@@ -16984,14 +16952,6 @@
     "result": "agrees"
    }
   },
-  "2220b9087fc8bab8": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp268310912 part (e); key copper(II) bromide — round 3: shared hint revised (F1/F2)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "2223a8e7d76f8f73": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -17023,6 +16983,14 @@
   "2233ba2dd8d73b2f": {
    "verdict": "ok",
    "note": "KC 2 11.2 § Termination, m58841",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "2238fc0883f72ae7": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm174365776 part (a); key ¹³³Cs⁺ | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -18442,6 +18410,14 @@
     "result": "agrees"
    }
   },
+  "2586d82949742bf9": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm174365776 part (b); key ¹²⁷I⁻ | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "258947585aa16e3a": {
    "verdict": "ok",
    "note": "body cloze fs-id2760204: mannose-binding protein and C-reactive protein, made in the liver",
@@ -18477,14 +18453,6 @@
   "2593a43e36fade28": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "2594ce314df0e6f4": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idp51588352 (answer fs-idp194881696) — aluminum ion symbol",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -18828,14 +18796,6 @@
   "2629beb34bb5e065": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "262a4d4f4cbd5d27": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm250352 part (b); key MgSe",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -19829,6 +19789,14 @@
     "result": "agrees"
    }
   },
+  "28448d28c9d3f1e4": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm250352 part (d); key CaCl₂ | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "284a2c5c591f8fde": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -20472,6 +20440,14 @@
   "298fd0a920246bd2": {
    "verdict": "ok",
    "note": "KC 1 6.4 § Viroids, m58811 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "2995271ddcbd0d1b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp221295264 (printed 2.47) part (d) classification — solution fs-idm3993968; hint rewritten after check | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -21997,10 +21973,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "2cda70894012d1b2": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idp51588352 (answer fs-idp194881696) — self-check carrying the source answer whole"
   },
   "2ce0a3ae5e852550": {
    "verdict": "ok",
@@ -25494,14 +25466,6 @@
    "verdict": "ok",
    "note": "TI3: f(x)=(10x+11)/(5x+4), quotient-rule derivative simplifies to -15/(5a+4)^2; confirmed numerically at a=2: node central-difference -0.076530612 vs -15/(14)^2=-0.076530612. Matches source Try It solution."
   },
-  "3443ef95b0956935": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp268365168 part (c); key CaCl₂ — round 3: shared hint revised (F1/F2)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "344422db8231bcf0": {
    "verdict": "ok",
    "note": "source exercise fs-idp358584288 part (c); key 2.08 from solution fs-idp42820064; recomputed (214776, 4166200, 2.07669, 0.186737, 27439.7393, 42.959) [Filed by the author under an earlier hash of this item; carried by the orchestrator after a round-3 edit that changed no key (a hint, a stem period, a datum added to a stem).]",
@@ -25720,6 +25684,14 @@
   "349a75b47e0bee54": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "349d5a1e09410436": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268321696 part (b); key N₂O₄ | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "34a5e84be389806c": {
    "verdict": "ok",
@@ -27541,14 +27513,6 @@
     "result": "agrees"
    }
   },
-  "38ab1165ffe7ff1f": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm250352 part (d); key CaCl₂",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "38b122fe573368b1": {
    "verdict": "ok",
    "note": "Sortbins from tbl-ch27_02 + fs-id2102407 first three medical / last five ingested.",
@@ -28847,6 +28811,14 @@
     "result": "agrees"
    }
   },
+  "3b7180d6b09a6c25": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm5511728 (charge); key 78 protons; 117 neutrons; charge is 4+ | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3b733851ada83c7f": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -29889,14 +29861,6 @@
    "verdict": "ok",
    "note": "KC 3 17.4 § Pharmacogenomics and Toxicogenomics, m66514 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | parent re-read 2026-09-24 (Biology re-review ch46–47 + KC 1–17): model answer from the module's own sentences, rubric clauses decompose it with no new claim, no nearby key printed"
   },
-  "3dacaebfc298ea2a": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm187202528 part (b) (name); key iodine",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "3daefbb2c596da60": {
    "verdict": "ok",
    "note": "author-built from § summary: \"Ribosomal RNA ( rRNA ) is a type of stable RNA that is a major constituent of ribosomes.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
@@ -30112,14 +30076,6 @@
   "3e2914c1dac20757": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "3e298f5b144a8069": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm206240 part (a); key PCl₅",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -30504,6 +30460,14 @@
   },
   "3ee3675dd755ce1d": {
    "verdict": "ok"
+  },
+  "3eeb089daeaa07ad": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268365168 part (c); key CaCl₂ — round 3: shared hint revised (F1/F2) | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "3eecb00f8f6c9ae7": {
    "verdict": "ok",
@@ -31602,14 +31566,6 @@
     "result": "agrees"
    }
   },
-  "40efcf0f46620396": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm174365776 part (c); key ³¹P³⁻",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "41011df8bd297d9b": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"Plants also have chemical defenses, including toxic secondary metabolites and hormones, which elicit additional defense mechanisms.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -32099,6 +32055,14 @@
   "41dd3cd655e1bd4d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "41df86e311af29ff": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm5511728 (number of neutrons); key 78 protons; 117 neutrons; charge is 4+ | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -33406,6 +33370,14 @@
   "44bb8b8566710194": {
    "verdict": "ok"
   },
+  "44c1d2a480cff1fc": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm250352 part (b); key MgSe | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "44c5755de6aae2d2": {
    "verdict": "ok",
    "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -34205,6 +34177,14 @@
     "result": "agrees"
    }
   },
+  "465a5891fc1299be": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm206240 part (b); key N₂O | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "465c2e6dc0f55236": {
    "verdict": "ok",
    "note": "source exercise fs-id1167662429032 (prose-key) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -34248,14 +34228,6 @@
   "466e73ee1fb8abeb": {
    "verdict": "ok",
    "note": "source exercise fs-id1172098460427 (unkeyed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "467241d4c9065e32": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp268310912 part (d); key titanium(IV) chloride — round 3: shared hint revised (F1/F2)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -34494,14 +34466,6 @@
   "470eb5b2e0ca5346": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "470fa7c551e3792d": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp268365168 part (e); key NH₄NO₃ — round 3: shared hint revised (F1/F2)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -35030,14 +34994,6 @@
   "4853ea5d89b5a82b": {
    "verdict": "ok",
    "note": "RQ fs-id2105019 key C tuberculosis; fs-id2673661",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "48544729e0dba600": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm250352 part (e); key HF",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -39701,6 +39657,14 @@
   "5250195800a8f46d": {
    "verdict": "ok"
   },
+  "52513748e87ad4d3": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268310912 part (b); key mercury(I) chloride — round 3: shared hint revised (F1/F2) | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "52513dc1f6bd0183": {
    "verdict": "ok",
    "note": "KC 6 28.3 § Sexual Differentiation, m46316",
@@ -39748,14 +39712,6 @@
   "5267ef57dd2f6fa8": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "526cb12124ab15cd": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp282297472 part (b); key barium oxide",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "52733edff586d74c": {
    "verdict": "ok",
@@ -40005,14 +39961,6 @@
   },
   "52e478d99713dcc6": {
    "verdict": "ok"
-  },
-  "52ecfc9d5d46fc73": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp221295264 (printed 2.47) part (f) anion symbol — solution fs-idm3993968",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "52ee8c4f77f48f49": {
    "verdict": "ok",
@@ -40861,14 +40809,6 @@
   "54b236b405eec9cc": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "54b32ec17e2d08e3": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp268321696 part (a); key ClO₂",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -43319,14 +43259,6 @@
     "result": "agrees"
    }
   },
-  "59c602d6d967d9ae": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp221295264 (printed 2.47) part (d) classification — solution fs-idm3993968; hint rewritten after check",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "59ced5014fd47cc8": {
    "verdict": "ok",
    "note": "Critical Thinking Q1 fs-idm42954032, model answer = source solution verbatim | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -43501,14 +43433,6 @@
     "result": "agrees"
    }
   },
-  "5a3e23c792c00f39": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm194224 part (d); key Cu₂O",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "5a3e6afe56c13027": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -43627,6 +43551,14 @@
   "5a72a9288ed71bd8": {
    "verdict": "ok",
    "note": "source exercise fs-idm164758784 part (d); sample answer is the source segment whole; hint reworded after the fix check (parent)"
+  },
+  "5a7479c9abe2850d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268310912 part (a); key manganese(IV) oxide — round 3: shared hint revised (F1/F2) | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "5a763b7d67b36d68": {
    "verdict": "ok",
@@ -44314,6 +44246,14 @@
   "5be1c479b9ba636d": {
    "verdict": "ok",
    "note": "textin line 247: cancer stem cells — re-read against m46058 and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "5be2756866ecc6b6": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm206240 part (d); key CCl₄ | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -46292,6 +46232,14 @@
   "6012bae9024bb054": {
    "verdict": "ok",
    "note": "KC 7 34.3 § body Lipids (fs-idp49872272), m66617 — parent re-read against the module"
+  },
+  "60179d26209b7298": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm174365776 part (d); key ⁵⁷Co³⁺ | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "601e5fb398bbfa74": {
    "verdict": "ok"
@@ -49391,6 +49339,10 @@
     "result": "agrees"
    }
   },
+  "6802f8e8038461d1": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp51588352 (answer fs-idp194881696) — self-check carrying the source answer whole | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)"
+  },
   "68031a32c40a6a04": {
    "verdict": "ok",
    "note": "Matches m66445 exercise fs-id1746755, solution fs-id2029130 (advantages/disadvantages of each microscope type). Model answer verbatim; all four CHECKS restate the solution's clauses. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -51009,6 +50961,14 @@
     "result": "agrees"
    }
   },
+  "6be2e92319d04134": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268310912 part (e); key copper(II) bromide — round 3: shared hint revised (F1/F2) | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6be921cee1a479e5": {
    "verdict": "ok",
    "note": "source CT fs-id1321298, solution fs-id2266356 verbatim"
@@ -51357,14 +51317,6 @@
   "6cbf8ebfc64cebc3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "6cbf9d2368ccb159": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp282297472 part (f); key aluminum fluoride",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -52297,14 +52249,6 @@
     "result": "agrees"
    }
   },
-  "6ee2c6a15a5fb3ee": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm174365776 part (b); key ¹²⁷I⁻",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "6ee2cafc7c907371": {
    "verdict": "ok",
    "note": "4p=-20->p=-5; directrix y=k-p=3-(-5)=8; matches source TI5. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -52759,14 +52703,6 @@
    "note": "multiplechoice, Review Question 2 (CNXML exercise fs-id1770002). Options/order and keyed answer 'the movement of hydrogen ions across a mitochondrial membrane' (SOLUTION: C) match source verbatim; confirmed against the Chemiosmosis section text. The 'hydrogen atoms' distractor is not independently true — the section specifies ions (protons), not neutral atoms, cross the membrane. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "6fd78e67147c4380": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp282297472 part (d); key beryllium chloride",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -54012,6 +53948,14 @@
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "72637cc643d085a3": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp221295264 (printed 2.47) part (f) classification — solution fs-idm3993968; hint rewritten after check | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7265490a2c470978": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -54104,6 +54048,14 @@
     "result": "agrees"
    }
   },
+  "72894d07cdcd71ef": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm194224 part (c); key Mn₃(PO₄)₂ | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7295e2a00448aa61": {
    "verdict": "ok",
    "note": "KC 4 20.4 § Enzyme-linked Immunosorbent Assays (ELISAs), m58903 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -54187,6 +54139,14 @@
   "72bb6e2af1285e15": {
    "verdict": "ok",
    "note": "author-built from § Observational Studies: \"Analytical studies incorporate groups into their designs to assist in teasing out associations with disease.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "72bf776f1b191325": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268310912 part (c); key iron(III) nitrate — round 3: shared hint revised (F1/F2) | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -54526,14 +54486,6 @@
   "739d017586541a93": {
    "verdict": "ok",
    "note": "Summary cloze; m46432 fs-id2138266 sentence 2 prints 'must be reabsorbed farther down the nephron tubules'; stem matches page Summary bullet. accept=\"recovered\" added (Summary: \"amount of water being recovered or lost by renal nephrons\").",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "739e14b4dbfb8f8b": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp221295264 (printed 2.47) part (b) anion symbol — solution fs-idm3993968",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -55593,14 +55545,6 @@
     "result": "agrees"
    }
   },
-  "75b627660f462ff9": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm194224 part (b); key HgS",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "75b7018ad2874aeb": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -55722,14 +55666,6 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver-B",
-    "result": "agrees"
-   }
-  },
-  "75f6abf76f787762": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm194224 part (a); key CrP",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -56507,6 +56443,14 @@
     "result": "agrees"
    }
   },
+  "778102a275b7d31a": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm194224 part (d); key Cu₂O | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "77842ca3b5a4afa0": {
    "verdict": "ok",
    "note": "KC 3 14.1 § summary (fs-id2984818), m66386 — parent re-read against the module",
@@ -57069,6 +57013,14 @@
     "result": "agrees"
    }
   },
+  "78c3ad0980f85d89": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm250352 part (g); key AlBr₃ | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "78c4003d60826bb2": {
    "verdict": "ok",
    "note": "CYU § Cell Morphologies — Identify two differences: nucleus/nuclear membrane and membrane-bound organelles/cytoskeleton, from the intro paragraph. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -57208,14 +57160,6 @@
   "7924c15350e303d8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "79259e8c58638ead": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp268365168 part (f); key NaHSO₄ — round 3: shared hint revised (F1/F2)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -58496,14 +58440,6 @@
   "7ba9175b3a1e932d": {
    "verdict": "ok"
   },
-  "7babbe9a31397805": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp221295264 (printed 2.47) part (c) cation symbol — solution fs-idm3993968",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "7babc05909625c93": {
    "verdict": "ok",
    "note": "Critical Thinking Q (fs-idm124909392), model answer matches source solution verbatim; checkpoints decompose it with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -59070,14 +59006,6 @@
    "verdict": "ok",
    "note": "CT fs-id1146501 model answer = solution fs-id1960453 verbatim"
   },
-  "7ca2729db2ed46f5": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp221295264 (printed 2.47) part (f) cation symbol — solution fs-idm3993968",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "7ca2b834a6a9bfae": {
    "verdict": "ok",
    "note": "body cloze from § Oversight of Gene Therapy: \"Along with several local agencies, these federal agencies interact with the institutional review board to ensure that protocols are in plac…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -59560,6 +59488,14 @@
    "verdict": "ok",
    "note": "CT fs-idm136908720: selfcheck model answer transcribes the source solution verbatim (roles of osteoblasts/osteocytes/osteoclasts). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "7d94fbf21b7fa4fe": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp221295264 (printed 2.47) part (b) anion symbol — solution fs-idm3993968 | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7d95c0f267a29bdb": {
    "verdict": "ok"
   },
@@ -59782,6 +59718,14 @@
    "verdict": "ok",
    "note": "Author selfcheck; model answer = fs-id1416028 sentences 1 and 3."
   },
+  "7e0be5cdd0c423ad": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp221295264 (printed 2.47) part (c) classification — solution fs-idm3993968; hint rewritten after check | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7e0c9f1b05924ffd": {
    "verdict": "ok",
    "note": "source Review fs-id1893042 key A; fs-id2308410 bone marrow begins to take over erythrocyte production in weeks 9–12",
@@ -59917,14 +59861,6 @@
   "7e62a9dd3eb1c28d": {
    "verdict": "ok",
    "note": "fs-id1246774 key C; stem corrected to trigeminal per Part C; fs-id1640836 deep tendon reflex = stretch reflex; 16.3 m46607 jaw-jerk is a stretch reflex of the masseter",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "7e73c6873463e1fa": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp268310912 part (a); key manganese(IV) oxide — round 3: shared hint revised (F1/F2)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -60268,14 +60204,6 @@
   "7f26b1b91d52581c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "7f2a45b2ea219983": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp282297472 part (a); key cesium chloride",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -62719,15 +62647,6 @@
     "result": "agrees"
    }
   },
-  "846717506db208a0": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp282297472 part (e); key hydrogen bromide | Section 2.7, after the blind solve: \"hydrobromic acid\" added to accept on the solver's also-defensible note (the solver's own answer is the key); parent ruling, November 10, 2026",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "adjudicated",
-    "note": "The solver's answer is the key, the source's own (fs-idp282297472(e), \"hydrogen bromide\"). The second name is the module's name for the same formula in water (table fs-idp272649888: HBr(aq), hydrobromic acid), and the stem prints no state, so it cannot refuse it: by the playbook's name row (a second name the module prints for the compound, which the stem does not print) \"hydrobromic acid\" becomes an accept member. This overturns parent decision 5; four readings (author, checker, consistency reader, solver) had raised it."
-   }
-  },
   "846c2cf176f21f65": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -62846,6 +62765,14 @@
   "849a0c98a7315caf": {
    "verdict": "ok",
    "note": "Practice (source fs-id1165135550012, a=5,c=6,beta=35): Area=0.5*5*6*sin(35)=8.6036 -> 8.6. Matches CNXML answer 8.6."
+  },
+  "849a3f460655fc0e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp282297472 part (f); key aluminum fluoride | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "849ed231a4fcd2ce": {
    "verdict": "ok",
@@ -63013,14 +62940,6 @@
   "84d67249f5ae64ab": {
    "verdict": "ok",
    "note": "model answer is CNXML solution fs-id1788358 (m66477) verbatim; rubric checkpoints are clauses of that solution, no new claims | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
-  },
-  "84d89f0737a094b9": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm5511728 (number of protons); key 78 protons; 117 neutrons; charge is 4+",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "84dcaeb7db77d542": {
    "verdict": "ok",
@@ -63623,14 +63542,6 @@
   "862c858c441b9e32": {
    "verdict": "ok",
    "note": "KC 4 17.2 § Antimicrobial Peptides, m58878"
-  },
-  "862f514756d9c53c": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm174365776 part (a); key ¹³³Cs⁺",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "862fc230a9688ff9": {
    "verdict": "ok",
@@ -64333,6 +64244,14 @@
   "87cf1760ff0868c4": {
    "verdict": "ok",
    "note": "cloze from body sentence 'The value of an extensive property is directly proportional to the amount of matter in question.' (para fs-idp29966736); accept 'directly proportional'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "87d22533c0ab8179": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268321696 part (f); key SiO₂ | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -67387,6 +67306,14 @@
    "verdict": "ok",
    "note": "unkeyed SA fs-id1167584726495; selfcheck, model answer assembled from the ethylene-oxide cold-sterilization sentence plus the adjacent penetration/examples sentence | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "8e7db8c226cbad4b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp279515392 part (c); key chromium(VI) oxide | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8e8e275056ede713": {
    "verdict": "ok",
    "note": "model answer assembles the IHC-definition sentence and the ICC-contrast sentence, both fs-id1167662791403/fs-id1167662674522 | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -69938,6 +69865,15 @@
     "result": "agrees"
    }
   },
+  "9417518fc63e03fd": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm11079584 (answer: Se2-, the selenide ion) — name, keyed bare with the two-word form accepted; hint reworded after the fix check (parent) so that it no longer says which kind of ion this is; key unchanged | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "Key stands: keyed bare \"selenide\" with \"selenide ion\" in accept (playbook name row: the grader drops \"the\", not \"ion\"), so the solver's \"selenide ion\" and the bare name both grade correct. Source answer: \"Se2-, the selenide ion\"."
+   }
+  },
   "9417b54962312366": {
    "verdict": "ok",
    "note": "osmolality: cloze key printed verbatim in the cited module sentence; grader-checked",
@@ -70094,6 +70030,14 @@
    "verdict": "ok",
    "note": "author selfcheck, model = fs-id2919329 sentences 3-4"
   },
+  "9476c55d41f1682a": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm250352 part (f); key GaP | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9476d4c62dfd18dc": {
    "verdict": "ok",
    "note": "m66378 critical-thinking solution fs-id1441754: 'Intracellular signaling occurs within a cell, and intercellular signaling occurs between cells.' Page model answer verbatim match. Both CHECKS clauses restate the two halves with no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -70232,6 +70176,14 @@
   "94bac66db1bfbd8c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "94bb278872da6914": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268365168 part (e); key NH₄NO₃ — round 3: shared hint revised (F1/F2) | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -70646,14 +70598,6 @@
   "958741f5f694f34e": {
    "verdict": "ok",
    "note": "glossary recall: polar molecule (fs-id2005946) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "95888b6cca9772ca": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idp51588352 (answer fs-idp194881696) — carbon ion symbol",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -71289,6 +71233,14 @@
   "96d23c3cc3b0929d": {
    "verdict": "ok",
    "note": "CT3 fs-id2661166 model answer = solution fs-id2168014 verbatim"
+  },
+  "96d36b90f32f84a7": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp282297472 part (a); key cesium chloride | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "96d3e1bc7fbdc0ed": {
    "verdict": "ok"
@@ -73032,14 +72984,6 @@
    "verdict": "ok",
    "note": "m66488 solution fs-id1450646 (probability method, AABBCc x Aabbcc) matches page verbatim. Re-derived: gene A (AA x Aa) -> 1/2 AA, 1/2 Aa; gene B (BB x bb) -> all Bb; gene C (Cc x cc) -> 1/2 Cc, 1/2 cc; combined proportions each 1/4, ratio 1:1:1:1, matching the stated four genotypes and ratio. CHECKS clauses restate the solution with no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
-  "9ab1697e89ba5957": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm11079584 (answer fs-idp2161376: Se2-, the selenide ion) — symbol; closing sentence reworded per ruling",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "9abb1de493eaf5be": {
    "verdict": "ok",
    "note": "x^4: even exponent, coefficient +1 (positive) -> both ends increase without bound. Matches CNXML fs-id1165137455119. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -74519,6 +74463,14 @@
   },
   "9dfee8d8159ed405": {
    "verdict": "ok"
+  },
+  "9dff6c0c0dec867d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp279515392 part (e); key cobalt(II) chloride hexahydrate | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "9e026f94d4cf3cc3": {
    "verdict": "ok",
@@ -76130,6 +76082,14 @@
     "note": "Solver agrees; the expanded numerator is the same function and grades correct against the key."
    }
   },
+  "a19ff6ccea452655": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp221295264 (printed 2.47) part (b) cation symbol — solution fs-idm3993968 | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a1a12ce48a947a85": {
    "verdict": "ok",
    "note": "Critical Thinking eip-469; model answer is the source solution verbatim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -76465,14 +76425,6 @@
     "result": "agrees"
    }
   },
-  "a22d4b080cf93978": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm250352 part (h); key (NH₄)₂SO₄",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "a22edced288d968f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -76723,6 +76675,14 @@
    "note": "m66677 fs-idm43088464; source key C, 'sterilization'; page keys C; supported by 'Tubal ligation and vasectomy are considered permanent prevention, while other methods are reversible and provide short-term contraception.' | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "a29b97d5818cc489": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp221295264 (printed 2.47) part (e) classification — solution fs-idm3993968; hint rewritten after check | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -77985,6 +77945,14 @@
     "result": "agrees"
    }
   },
+  "a4ff850fa5ce0f2b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp221295264 (printed 2.47) part (b) classification — solution fs-idm3993968; hint rewritten after check | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a50594dc593fcf91": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -78243,6 +78211,14 @@
     "result": "agrees"
    }
   },
+  "a587ffad944cc307": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm250352 part (e); key HF | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a58854537b4480ee": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -78458,6 +78434,14 @@
   "a600d6f555cc234a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "a60489fb2c81563c": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm5511728 (number of protons); key 78 protons; 117 neutrons; charge is 4+ | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -79528,6 +79512,14 @@
     "result": "agrees"
    }
   },
+  "a85888b43c024364": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp221295264 (printed 2.47) part (f) cation symbol — solution fs-idm3993968 | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a85cc807caafe9c3": {
    "verdict": "ok",
    "solved": {
@@ -80304,6 +80296,14 @@
     "result": "agrees"
    }
   },
+  "aa3d7974955130c6": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp279515392 part (f); key molybdenum(IV) sulfide | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "aa473d162e984255": {
    "verdict": "ok"
   },
@@ -80575,6 +80575,14 @@
   "aadfe732be2d3961": {
    "verdict": "ok",
    "note": "author-built from § Creating a Genomic Library: \"Because mRNA cannot be cloned directly, in the laboratory mRNA must be used as a template by the retroviral enzyme reverse transcriptase to…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "aae240f0a3701e72": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp221295264 (printed 2.47) part (d) anion symbol — solution fs-idm3993968 | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -81483,6 +81491,14 @@
    "verdict": "ok",
    "note": "model answer = source solution verbatim; rubric clauses from it"
   },
+  "acfe7f9ea1a29a24": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268321696 part (e); key AlF₃·3H₂O (source prints AIF₃·3H₂O, capital I for l; corrected per run-facts decision 3) — round 3: dot example changed to Na2CO3.10H2O (F3) | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ad00ad7ec5b007d0": {
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
@@ -82196,6 +82212,14 @@
     "result": "agrees"
    }
   },
+  "ae7f5fa9c8c280e5": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268310912 part (d); key titanium(IV) chloride — round 3: shared hint revised (F1/F2) | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ae80a2b4c4f7f3b8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -82460,14 +82484,6 @@
     "result": "agrees"
    }
   },
-  "aefc9e7f20244d11": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm250352 part (f); key GaP",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "aefdbe22a91f7557": {
    "verdict": "ok",
    "note": "glossary recall: stereoscopic vision (fs-idp25272592) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -82598,6 +82614,14 @@
   "af2c3ee8cb92fe06": {
    "verdict": "ok",
    "note": "KC 2 8.4 § Arches of the Foot (fs-id2306452), paragraph fs-id1480344, m46364",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "af2d5ad70b1a391a": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm194224 part (a); key CrP | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -83297,14 +83321,6 @@
     "result": "agrees"
    }
   },
-  "b11754468c9a244c": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp221295264 (printed 2.47) part (a) classification — solution fs-idm3993968; hint rewritten after check",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "b119e68d3df547b5": {
    "verdict": "ok",
    "note": "KC 5 23.3 § Anatomy of a Tooth, m46511",
@@ -83344,6 +83360,14 @@
   "b137fa29b7499102": {
    "verdict": "ok",
    "note": "cloze of fs-id2182350; accept adds pulmonic valve and right semilunar valve (19.1 synonyms), grader-checked",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "b13985e09bb09d3f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp279515392 part (d); key titanium(IV) chloride | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -83541,14 +83565,6 @@
     "by": "orchestrator-solver",
     "result": "adjudicated",
     "note": "key stands: m58859 \"such as tapeworms treated with niclosamide, or for decontaminating the bowel, as with colistin\" — the module ties bowel decontamination to colistin only; niclosamide is its intestinal-tapeworm example"
-   }
-  },
-  "b19c6a0bf53e29b9": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm250352 part (g); key AlBr₃",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
    }
   },
   "b19da5893129b09a": {
@@ -85232,6 +85248,14 @@
     "result": "agrees"
    }
   },
+  "b507f45822e8b636": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp279515392 part (b); key iron(II) chloride | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b512948d745ae2af": {
    "verdict": "ok",
    "note": "Computed h(-7.5) = -7/16*(3.5)^2+7 = 1.640625 via node; below the 4-ft hoop, matches CNXML's 'doesn't make it'."
@@ -85753,6 +85777,14 @@
     "result": "agrees"
    }
   },
+  "b6241aa2c432f051": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp282297472 part (d); key beryllium chloride | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b630cb2ffde30524": {
    "verdict": "ok",
    "note": "source exercise fs-id1172101888699 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -85804,6 +85836,14 @@
   "b644c1d2f5c9325a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "b64595efe3d72275": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm11079584 (answer fs-idp2161376: Se2-, the selenide ion) — symbol; closing sentence reworded per ruling | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -85897,14 +85937,6 @@
    "verdict": "ok",
    "note": "Using the same table: f(1)=6, then f(6)=2, so f(f(1))=2, matching the declared answer. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
-  "b67eed1283f0acac": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm206240 part (c); key IF₇",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "b686751cc89fbf45": {
    "verdict": "ok",
    "note": "glossary recall: alveolar sac (fs-idm76207904) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -85959,6 +85991,14 @@
   "b6adb50f6570f91f": {
    "verdict": "ok",
    "note": "KC 2 7.3 § glossary transverse foramen (fs-id1491897), body Cervical Vertebrae (fs-id2350051), paragraph fs-id2157005, m46352",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "b6b0e418cac08e5d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp221295264 (printed 2.47) part (c) anion symbol — solution fs-idm3993968 | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -88325,6 +88365,14 @@
    "verdict": "ok",
    "note": "Critical Thinking fs-idp161347296: model answer is the source solution verbatim except the confirmed typo \"parthenogentically\" corrected to \"parthenogenetically\" (errata-reportable; module spells the adjective correctly elsewhere). Answers the question as asked. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "bb7dd177fb8baee2": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm194224 part (e); key FeCl₃·2H₂O — round 3: dot example changed to Na2CO3.10H2O (F3) | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "bb80111442e196a3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -88337,14 +88385,6 @@
    "verdict": "ok",
    "note": "KC 7 38.2 § body Thickening of Long Bones (fs-idm166160432), m66638 — parent re-read against the module"
   },
-  "bb8ae30eb947404e": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp268321696 part (e); key AlF₃·3H₂O (source prints AIF₃·3H₂O, capital I for l; corrected per run-facts decision 3) — round 3: dot example changed to Na2CO3.10H2O (F3)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "bb92ed4ce89cf3b2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -88356,6 +88396,14 @@
   "bb9a6836d1cb772a": {
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
+  },
+  "bba050aa44746aef": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp279515392 part (a); key chromium(III) oxide | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "bba0cc6bd8999123": {
    "verdict": "ok",
@@ -88420,6 +88468,14 @@
   "bbbe050f77fa8e86": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "bbc1a5bf9b0c6811": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp221295264 (printed 2.47) part (a) classification — solution fs-idm3993968; hint rewritten after check | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -88599,6 +88655,14 @@
   "bc190d16b294da97": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "bc283fe63d5878ca": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp282297472 part (c); key potassium sulfide | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -89848,14 +89912,6 @@
     "result": "agrees"
    }
   },
-  "bea5a1fd372d804e": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp221295264 (printed 2.47) part (e) classification — solution fs-idm3993968; hint rewritten after check",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "bea6b75881deaaf5": {
    "verdict": "ok",
    "note": "Visual Connection (fs-idp126858320/fs-idm33648512, fig-ch23_01_04): source solution kept verbatim as the selfcheck model answer; the diagram shows the aerobic-bacterium engulfment at step 2 preceding the photosynthetic-bacterium branch at step 3, and only the non-branching heterotroph path lacks the green plastid organelle, matching the keyed solution. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -89949,14 +90005,6 @@
   "bedb6f097754c28c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "bedf6b91caf26f8e": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp268321696 part (b); key N₂O₄",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -92146,6 +92194,14 @@
     "result": "agrees"
    }
   },
+  "c3bf388381ed8461": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp51588352 (answer fs-idp194881696) — carbon ion symbol | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c3c27c17767c2f2e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -93211,6 +93267,14 @@
     "result": "agrees"
    }
   },
+  "c6093d4b2f4193a2": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm187202528 part (a) (name); key iron | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c60bf426c0013955": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -93833,6 +93897,14 @@
    "verdict": "ok",
    "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L305 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
   },
+  "c75eb521b4821b5f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm250352 part (a); key RbBr | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c760a889876b9a88": {
    "verdict": "ok",
    "note": "source Review item keyed from CNXML m46021 (key B/D/C/B per position); re-read against body",
@@ -94159,6 +94231,14 @@
    "verdict": "ok",
    "note": "source Critical Thinking fs-id1167660227530 (no source key); model answer assembled from the module's separate antibiotic-disruption sentence and proton-pump-inhibitor sentence, two checkpoints | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "c820b256be419489": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268321696 part (a); key ClO₂ | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c8248d6140ede6e8": {
    "verdict": "ok",
    "note": "Author MC from fs-id1534105: Note that epithelial tissue originates in all three layers.",
@@ -94460,14 +94540,6 @@
     "note": "Key 27 stands: the m81256 solution reads \"Jenna uses 26 pairs of contact lenses, but there is 1 day left over, so she needs 27 pairs for 365 days\"; 26 leaves day 365 uncovered."
    }
   },
-  "c8ecb371e40d37c8": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp282297472 part (c); key potassium sulfide",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "c8f592f244a339c3": {
    "verdict": "ok",
    "note": "Glossary textin: answer 'homeostasis' matches glossary term; meaning ('dynamic equilibrium maintaining appropriate body functions') is the prompt. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -94567,6 +94639,14 @@
   "c930a009c70bf676": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 73): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "c9310e23c425213d": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm206240 part (a); key PCl₅ | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "c93533d4fb9b7002": {
    "verdict": "ok",
@@ -94987,14 +95067,6 @@
   "c9e925de161ef266": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "c9edfac2a651f824": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp268365168 part (d); key TiO₂ — round 3: shared hint revised (F1/F2)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -96236,6 +96308,14 @@
     "result": "agrees"
    }
   },
+  "ccaa3b3fd51294fd": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268365168 part (f); key NaHSO₄ — round 3: shared hint revised (F1/F2) | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ccaa9ee00b1f572e": {
    "verdict": "ok",
    "note": "g(0)=-2*0.25^0=-2, so y-intercept (0,-2); matches CNXML solution exactly. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -96321,6 +96401,14 @@
   "ccddb3d7244bed95": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "cce1b8bf3eb384d6": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm250352 part (h); key (NH₄)₂SO₄ | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -97161,14 +97249,6 @@
     "result": "agrees"
    }
   },
-  "ce95188c8148784b": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm206240 part (b); key N₂O",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "ce9a1c6bc56c6110": {
    "verdict": "ok",
    "note": "KC 2 10.1 § summary (fs-id2097179, fs-id1616494), m46473"
@@ -97756,6 +97836,14 @@
     "result": "agrees"
    }
   },
+  "cff52b8c3a8d4357": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268321696 part (d); key Ag₂S | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "cffadcf947871a67": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -98034,14 +98122,6 @@
   "d08a4a17cb78f3ec": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "d097a9c63c15766b": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm5511728 (charge); key 78 protons; 117 neutrons; charge is 4+",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -98698,14 +98778,6 @@
    "verdict": "ok",
    "note": "c^2=49+49=98 -> c=7sqrt(2) -> foci (2+7sqrt2,-7),(2-7sqrt2,-7); matches source fs-id1636747. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
-  "d266ee6d5355984b": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp279515392 part (e); key cobalt(II) chloride hexahydrate",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "d26745a11a492faa": {
    "verdict": "ok",
    "solved": {
@@ -98853,14 +98925,6 @@
    "note": "body cloze from § Amoebozoa: \"The Eumycetozoa are an unusual group of organisms called slime molds , which have previously been classified as animals, fungi, and plants…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "d2b574455acaa234": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp268310912 part (c); key iron(III) nitrate — round 3: shared hint revised (F1/F2)",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -99124,14 +99188,6 @@
   "d371d4fc3e4825d8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "d37256dab015ca4d": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp221295264 (printed 2.47) part (c) anion symbol — solution fs-idm3993968",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -99709,14 +99765,6 @@
    "note": "source exercise fs-idp10923008 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "d471ba52151c68d6": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp268321696 part (c); key K₃P",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -100416,14 +100464,6 @@
     "result": "agrees"
    }
   },
-  "d5fb0e87b216ceea": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp279515392 part (c); key chromium(VI) oxide",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "d5fbc62b269f740d": {
    "verdict": "ok",
    "note": "source exercise fs-idm50545184 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -100985,14 +101025,6 @@
     "result": "agrees"
    }
   },
-  "d70e7b0cdd2b943a": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp268310912 part (b); key mercury(I) chloride — round 3: shared hint revised (F1/F2)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "d7134711b59996b4": {
    "verdict": "ok",
    "note": "source exercise fs-id1167662402081 (unkeyed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -101265,6 +101297,14 @@
    "verdict": "ok",
    "note": "selfcheck model answer is the source solution for fs-idm35642672 (Critical Thinking Q2) verbatim; checkpoints are its clauses restated with no new claim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "d79ad706fd6737bf": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp221295264 (printed 2.47) part (f) anion symbol — solution fs-idm3993968 | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d7a38874d14d6533": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -101509,6 +101549,14 @@
     "result": "agrees"
    }
   },
+  "d813b14a7353c26d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp268365168 part (a); key K₃PO₄ — round 3: shared hint revised (F1/F2) | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d818b2cf48db3445": {
    "verdict": "ok",
    "note": "glossary textin: 'heterospecifics' = individuals that are members of different species (glossary fs-idp166187056); accept 'heterospecific' likewise the section's own singular form. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -101721,6 +101769,14 @@
    "verdict": "ok",
    "note": "4*Math.cos(11*Math.PI/6)=3.4641016151377535=2*sqrt(3); 4*Math.sin(11*Math.PI/6)=-2.0000000000000018=-2. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "d8a462ee40765e2e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm250352 part (c); key Na₂O | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d8a602b08d93f4f7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -101812,6 +101868,14 @@
   "d8e7772ce31a173e": {
    "verdict": "ok",
    "note": "Table (0,2)(pi/4,7)(pi/2,2)(3pi/4,-3)(pi,2)(5pi/4,7)(3pi/2,2): amplitude (7-(-3))/2=5, midline (7-3)/2=2, midline crossing rising at x=0 -> sine form, max at x=pi/4 -> B=2. y=5sin(2x)+2 numerically checked against all 7 table points (matches source exercise #7 solution). | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "d8eaa6ee3c11a562": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp282297472 part (b); key barium oxide | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "d8f138962867b16c": {
    "verdict": "ok",
@@ -101984,14 +102048,6 @@
   "d95cadf6221d7ced": {
    "verdict": "ok",
    "note": "author-built from § Agglutination of Bacteria and Viruses, Check Your Understanding: \"In a latex bead assay to test for antibodies in a patient's serum, with what are the beads coated?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "d9600a2c5ee6c936": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm5511728 (number of neutrons); key 78 protons; 117 neutrons; charge is 4+",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -102671,14 +102727,6 @@
   "dad25ee1bab6e079": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "dad278806bc5065c": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp221295264 (printed 2.47) part (b) cation symbol — solution fs-idm3993968",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -104467,6 +104515,14 @@
     "result": "agrees"
    }
   },
+  "df22686925389515": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm187202528 part (b) (name); key iodine | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "df23fffc697f7ac9": {
    "verdict": "ok"
   },
@@ -105549,14 +105605,6 @@
     "result": "agrees"
    }
   },
-  "e11783e65df97a73": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp279515392 part (f); key molybdenum(IV) sulfide",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "e127516a3dcb3746": {
    "verdict": "ok",
    "note": "matches CNXML CT fs-idp49915760 solution verbatim (macronutrients/micronutrients list)"
@@ -105660,14 +105708,6 @@
   "e158b075104a6b74": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "e159ff4214a08cc1": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm250352 part (a); key RbBr",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -106401,14 +106441,6 @@
   "e2c80b18af57eb9e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "e2ce0a857e7b76ec": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp221295264 (printed 2.47) part (f) classification — solution fs-idm3993968; hint rewritten after check",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -108157,6 +108189,14 @@
     "result": "agrees"
    }
   },
+  "e68597b110d6e972": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp221295264 (printed 2.47) part (c) cation symbol — solution fs-idm3993968 | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e687c2b2ef61806e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -108697,6 +108737,14 @@
    "verdict": "ok",
    "note": "source CT solution verbatim, re-read against m46409: Describe the conservation of bicarbonate ions in the renal s"
   },
+  "e7d3bb0555ad4d92": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp51588352 (answer fs-idp194881696) — aluminum ion symbol | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e7d6277c74fa9ef0": {
    "verdict": "ok",
    "note": "Model answer compares HPS (North America, flu-like onset, up to 50% mortality, supportive care only) against HFRS (not reported in the US, different symptom onset, up to 15% mortality, treatable with ribavirin), both from the Hantavirus section's two paragraphs. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -108748,14 +108796,6 @@
   "e7fd720865fd5da8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "e7ffbf33b1b1ef49": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp221295264 (printed 2.47) part (d) anion symbol — solution fs-idm3993968",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -110398,6 +110438,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "ebcca30ef1eda7be": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm194224 part (b); key HgS | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ebcd987f52f290e7": {
    "verdict": "ok"
   },
@@ -111209,14 +111257,6 @@
   "ed6cf9c46c65636b": {
    "verdict": "ok",
    "note": "source Review Question; key re-read against CNXML solution (line 81: Sesamoid bones are found embedded in ________.)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "ed70b5d2f0216bf4": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp279515392 part (a); key chromium(III) oxide",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -112300,14 +112340,6 @@
     "result": "agrees"
    }
   },
-  "eff01600ac6a2604": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp268321696 part (d); key Ag₂S",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "eff6e91654cf9f28": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -113124,14 +113156,6 @@
     "result": "agrees"
    }
   },
-  "f1d8f1fbb2795be6": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm206240 part (d); key CCl₄",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "f1dcd49f4f5af0d3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -113549,14 +113573,6 @@
    "verdict": "ok",
    "note": "parent: graph MC, keyed option shades above y=x^2-1 and below y=x+1 solid; distractors dashed/wrong-side; labels rewritten self-contained | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
-  "f2b9077f0e090e78": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp221295264 (printed 2.47) part (c) classification — solution fs-idm3993968; hint rewritten after check",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "f2bc49574327ef71": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"The use of cellular signaling to organize the dismantling of a cell ensures that harmful molecules from the cytoplasm are not released into…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -113669,14 +113685,6 @@
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
-  "f3136fb950024868": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp268365168 part (a); key K₃PO₄ — round 3: shared hint revised (F1/F2)",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -114967,14 +114975,6 @@
    "verdict": "ok",
    "note": "m66577 Critical Thinking fs-idm15041760: model answer is the source solution verbatim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "f57efe21b9c24d57": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp268365168 part (b); key CuSO₄ — round 3: shared hint revised (F1/F2)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "f588339bb90e6261": {
    "verdict": "ok"
   },
@@ -115321,6 +115321,14 @@
    "note": "MC: three NADH per turn; matches CNXML exercise fs-id1393295 solution C, and the Products of the Citric Acid Cycle paragraph states 'three NADH molecules and one FADH2 molecule' per turn. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "f6574f24956a8d01": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp221295264 (printed 2.47) part (d) cation symbol — solution fs-idm3993968 | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -116444,6 +116452,14 @@
    "verdict": "ok",
    "note": "log_5(25)=2 is 5^2=25 by definition; matches CNXML Try It 1b. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "f84d4cf05bc3a551": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm174365776 part (c); key ³¹P³⁻ | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f851f36ab47592c8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -116597,14 +116613,6 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
-  "f8c1e70652210f11": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp279515392 part (d); key titanium(IV) chloride",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -120057,14 +120065,6 @@
    "note": "source exercise fs-idm37813424 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "ffbdad02cb11b495": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm250352 part (c); key Na₂O",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
