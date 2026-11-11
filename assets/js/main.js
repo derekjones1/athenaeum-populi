@@ -22,3 +22,5 @@ import './navbar-compact.js';
 import './scrollable-regions.js';
 // Site chrome: the "On this page" rail as a right-hand drawer below xl.
 import './toc-drawer.js';
+// Site chrome: the "Enlarge figure" viewer for vendored raster figures.
+import './figure-enlarge.js';

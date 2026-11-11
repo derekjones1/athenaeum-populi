@@ -585,6 +585,17 @@ math books' prohibition on every other file-backed image form (`![]()`,
 the image-accessibility policy, and every other detail of this component are
 subject-specific — for the life sciences, see `docs/subjects/life-sciences.md`.
 
+A figure whose file is wider than the text column (704 px), or that the
+source prints scaled down, is shown smaller than its pixels, and the
+template puts an **Enlarge figure** link under its caption on its own:
+without JavaScript it opens the full-size file; with it, the link and the
+image open a viewer in place (fit to the window, the file's own pixels, up
+to three times that; `assets/js/figure-enlarge.js`). There is nothing to
+author and no param. So a hint or a stem may send the learner to "the
+periodic table above" even where its smallest print cannot be read in the
+column — and a table of the same facts in an appendix is still worth the
+link (`docs/subjects/chemistry.md`, appendix links).
+
 A shortcode param never holds an HTML character reference (`&quot;`,
 `&amp;`, `&#39;`): the template escapes attribute text, so it ships
 double-escaped and a screen reader reads the entity's letters. Quote inside a

@@ -186,6 +186,14 @@ cluster widens by one button where it is present), and
 aria-hidden; open, main, footer, and the left sidebar are inert behind a
 click-to-close scrim, Tab cycles through the button and the panel's links,
 Escape and any heading link close it, and the two drawers never overlap.
+`assets/js/figure-enlarge.js` is the third piece of chrome that takes the
+page over, and the first to use a native modal `<dialog>` (inert page,
+focus containment, Escape and focus return come from the browser): the
+viewer behind the "Enlarge figure" link that `mediafigure.html` puts under
+every raster figure shown smaller than its file. The link is a real link to
+the largest variant, so the feature degrades to "open the image"; the
+dialog and its `<img>` exist only at runtime, which is why the build
+audit's one-image-per-figure rule is unchanged.
 `utils/toc-drawer.html` decides, for the button and the scrim alike,
 whether a page has a heading list at all — a landing page with
 `toc: false` gets neither. The browser suite drives the drawer at phone

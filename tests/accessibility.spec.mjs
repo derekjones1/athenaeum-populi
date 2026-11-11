@@ -1204,6 +1204,56 @@ test('a graded graph-plot (points placed, verdict shown) has no serious or criti
   await expectNoBlockingViolations(page, 'a graded graph-plot', testInfo);
 });
 
+test('the figure viewer opens from the keyboard, keeps focus inside, closes on Escape back to its link, and has no serious or critical axe violations', async ({
+  page,
+}, testInfo) => {
+  const path = '/physical-sciences/chemistry/02-atoms-molecules-and-ions/05-the-periodic-table/';
+  await page.goto(path, { waitUntil: 'domcontentloaded' });
+  await assertProductionBuild(page, path);
+  await waitForPageReady(page);
+
+  const link = page.locator('.ap-mediafigure[data-stem="CNX_Chem_02_05_PerTable1"] a.ap-mediafigure-enlarge');
+  await expect(link).toHaveCount(1);
+  await link.scrollIntoViewIfNeeded();
+  const linkBox = await link.boundingBox();
+  expect(linkBox.height, 'the link is a 24 px target').toBeGreaterThanOrEqual(24);
+  await link.focus();
+  await page.keyboard.press('Enter');
+
+  const dialog = page.locator('dialog.ap-figure-viewer[open]');
+  await expect(dialog).toBeVisible();
+  await expect(dialog.locator('.ap-figure-viewer-image')).toHaveJSProperty('complete', true);
+  // Named by the figure's caption; focus starts on the stage, so the arrow
+  // keys move the figure at once.
+  expect(await dialog.evaluate((el) => document.getElementById(el.getAttribute('aria-labelledby'))?.textContent.trim().length > 0)).toBe(true);
+  expect(await page.evaluate(() => document.activeElement?.className)).toBe('ap-figure-viewer-stage');
+  // Every control is at least 24 by 24.
+  const small = await dialog.locator('button').evaluateAll((buttons) => buttons
+    .map((button) => ({ name: button.getAttribute('aria-label') || button.textContent, box: button.getBoundingClientRect() }))
+    .filter(({ box }) => box.width < 24 || box.height < 24).map(({ name }) => name));
+  expect(small).toEqual([]);
+  // Tab never reaches the page behind.
+  for (let presses = 0; presses < 8; presses += 1) {
+    await page.keyboard.press('Tab');
+    expect(await page.evaluate(() => {
+      const active = document.activeElement;
+      return !active || active === document.body || Boolean(active.closest('dialog.ap-figure-viewer'));
+    }), `Tab ${presses + 1} stays in the viewer`).toBe(true);
+  }
+  // Enlarged, with the level announced: the state with the most on screen.
+  // (How many steps the file's own pixels are from the fit depends on the window.)
+  const level = dialog.locator('.ap-figure-viewer-level');
+  for (let presses = 0; presses < 4 && (await level.textContent()) !== '100%'; presses += 1) {
+    await dialog.locator('[data-zoom="in"]').click();
+  }
+  await expect(level).toHaveText('100%');
+  await expectNoBlockingViolations(page, 'the open figure viewer', testInfo);
+
+  await page.keyboard.press('Escape');
+  await expect(page.locator('dialog.ap-figure-viewer[open]')).toHaveCount(0);
+  expect(await link.evaluate((el) => el === document.activeElement), 'focus returns to the link').toBe(true);
+});
+
 test('every mediafigure image has alt text, and a longdesc summary is keyboard-operable', async ({
   page,
 }) => {

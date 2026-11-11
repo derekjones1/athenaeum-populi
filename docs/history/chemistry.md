@@ -792,11 +792,12 @@ gained, in `run.md`, a grep for "not yet on this site" at each run.
 - Unicode charges and subscripts are drawn a few pixels tall in the body
   font on every chemistry page (render F4); the options are a
   `unicode-range` `@font-face` with `size-adjust` or render-time
-  `<sup>` and `<sub>`. Put to Derek.
+  `<sup>` and `<sub>`. Put to Derek. *(Done the same day — "Three
+  presentation fixes" below.)*
 - No way to enlarge a dense diagram: the periodic table at 1x gets the
   800-pixel variant, its names and masses a few pixels tall (render F1).
   The hints that send a learner to it now also name Appendix A's table.
-  Put to Derek.
+  Put to Derek. *(Done the same day.)*
 - An element's name typed in a symbol field is told only that it does not
   read as a formula, never that a symbol is wanted.
 - A formula typed without its parentheses (`NH42SO4`) is bare "incorrect".
@@ -804,6 +805,75 @@ gained, in `run.md`, a grep for "not yet on this site" at each run.
   stem's "^14_6C"; the guide is generic by design, and the items grade.
 - Exercise 2.47's ion-symbol items appear only after the ionic parts, so
   they show which compounds are ionic; the playbook's shape, ruled to stand.
+  *(Overruled the same day: they are held in a `followup`.)*
+
+## Three presentation fixes after Sections 2.5–2.6 (November 10, 2026)
+
+Derek, on the three items the 2.5–2.6 run had put to him: "What can we do
+to fix these issues?" He chose, of the options laid out, a font rule for
+the small characters, a viewer dialog for figures, and a follow-up reveal
+for Exercise 2.47. Three commits, each site-wide except the page edit.
+
+**Superscripts and subscripts.** A 3.9 KB subset of Noto Sans ("AP
+SupSub", `static/fonts/`, built by `tools/build/gen-supsub-font.py`) leads
+the body font stack, limited by `unicode-range` to ¹²³ and the Unicode
+superscript and subscript block. Content, keys, lints, gates and search are
+untouched. What the first attempt got wrong, and the browser showed:
+
+- `size-adjust: 125%` alone matched a real `<sup>` in size (a `²` 8.7 px
+  tall against 8.7 at a 16 px body) and lifted it 2.4 px too high, because
+  the scale works from the baseline. It also made a `line-height: normal`
+  line 27 px tall against 18.
+- So the three changes are made in the font file: the em cut from 1000 to
+  800 units (the same 1.25), the superscript digits and signs moved down
+  116 units (the subscripts are composites of them and get it back), and
+  ascent and descent set to 0.90 and 0.21 em. No `size-adjust`, no
+  `ascent-override`: not every browser reads both, and a font file is
+  read the same by all of them.
+- Measured after: `²` at 6.0–14.7 px above the baseline (a real `<sup>2`:
+  6.0–14.7), `⁻` 6.8 px wide (it was 5.1), every line the height it was.
+- Left as it is: `P<sub>O₂</sub>` (52 places in Biology and Anatomy and
+  Physiology) nests a Unicode subscript in an HTML one and is still the
+  smallest print on its page, though a quarter larger than before.
+
+**Exercise 2.47.** The four cation/anion pairs are wrapped in a new
+`followup` shortcode: hidden until the compound's own multiple choice is
+answered "ionic", when its verdict reads "Correct! Two more questions
+follow." Stems, keys and hints are unchanged, so the page was not re-read
+or re-solved; all 14 items are still keyed to the source. Rulings:
+
+- A keyed "no ions" item for the two covalent compounds was not possible:
+  the source answers them "covalent" and nothing more, and the keys gate
+  refuses a key the answer does not print.
+- The reveal is on a CORRECT answer. A wrong "covalent" for BaO says "Not
+  quite — try again." and shows nothing.
+- It fails open: a `followup` with no item before it shows its items. The
+  lint forbids that shape (and an unclosed, nested, empty or prose-holding
+  one, and one whose gate is itself inside a followup).
+- The gate that would have caught 2.47: `conditionalUnwrapped` in
+  `verify:source-keys` — parts of one exercise that all carry the same
+  multiple choice, further items under only some of them, not in a
+  followup. Run on the page as committed that morning it names all eight
+  ion items; over every book it finds no other case.
+- Not fixed: the blind solve reads the page in order and still sees which
+  compounds have ion items. It tests the keys, not the leak.
+
+**Enlarging a figure.** Every `mediafigure` whose file is wider than
+704 px, or that the source scales down, gets an "Enlarge figure" link
+under its caption (2,009 of 2,783 figures: Anatomy and Physiology 652,
+Biology 659, Microbiology 591, Chemistry 107). It is a link to the largest
+variant; `assets/js/figure-enlarge.js` opens it, and a click on the image,
+in one native modal `<dialog>`: fit to the window, the file's own pixels,
+up to three times that; pan by scroll, arrow keys or drag. The periodic
+table opens 1.6 times its column size on a 1280 × 900 window and at 1300 px
+on the first "+". No sharper copy exists: the source file is 1300 px wide.
+Found in the browser:
+
+- the theme's reset zeroes the `<dialog>`'s centring margin (it opened in
+  the top-left corner);
+- a flex button with a `min-width` shrinks below its own label (a phone
+  clipped "Close");
+- zooming out below the fit shows nothing more and is not offered.
 
 ## The `\dfrac` watch list
 

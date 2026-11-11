@@ -32,6 +32,13 @@
   `scaled-down-30` (manifest `scale`) is held by the stylesheet to that
   share of its own native width — half, or three tenths — and never below
   26rem or 14rem; the figure carries the native width as a custom property.
+
+  A figure whose file is wider than the 44rem (704 px) column, or that is
+  held to a share of its native width, is shown smaller than its pixels, so
+  it gets an "Enlarge figure" link to its largest variant. Without
+  JavaScript the link opens the file; with it, the link and the image open
+  the viewer dialog (assets/js/figure-enlarge.js). The link is kept out of
+  the search index: it is a control, the same words on every figure.
 */ -}}
 {{- $src := .Get "src" | default "" -}}
 {{- $alt := trim (.Get "alt" | default "") " " -}}
@@ -74,6 +81,9 @@
     {{- if ne (.Get "eager") "true" }} loading="lazy"{{ end }} decoding="async">
   {{- with $caption }}
   <figcaption class="ap-mediafigure-caption">{{ . | markdownify }}</figcaption>
+  {{- end }}
+  {{- if or (gt (int $largest.width) 704) $entry.scale }}
+  <p class="ap-mediafigure-actions" data-pagefind-ignore><a class="ap-mediafigure-enlarge" href="/media/{{ $book }}/{{ $largest.file }}">Enlarge figure</a></p>
   {{- end }}
   {{- with .Get "longdesc" }}
   <details class="ap-mediafigure-longdesc">

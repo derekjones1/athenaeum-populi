@@ -868,6 +868,98 @@ self-check:not(:defined) .ap-selfcheck-checkpoint input { pointer-events: none; 
 .ap-mediafigure-longdesc { font-size: 14px; margin: 6px auto 0; max-width: 44rem; }
 .ap-mediafigure-longdesc > summary { cursor: pointer; }
 
+/* --- Enlarging a figure -----------------------------------------------------
+   A figure shown smaller than its file (wider than the column, or scaled
+   down) carries an "Enlarge figure" link under its caption — a plain link to
+   the largest variant, which assets/js/figure-enlarge.js turns into a viewer:
+   one native modal <dialog> for the whole page, nearly the size of the
+   window, with a bar of controls over a stage that scrolls both ways. The
+   image inside is sized in pixels by the script; `margin: auto` centres it
+   while it fits and lets every edge be scrolled to once it does not (centring
+   by alignment would cut off the top and left). The page behind is held
+   still while the viewer is open. Nothing here moves or fades, so there is
+   nothing for a reduced-motion preference to switch off. */
+.ap-mediafigure-actions { font-size: 14px; margin: 2px auto 0; max-width: 44rem; }
+/* A 24 px target (WCAG 2.2): the line of text alone is 17 px tall. */
+.ap-mediafigure-enlarge { display: inline-block; padding: 4px 0; }
+.ap-mediafigure:has(> .ap-mediafigure-actions) > img { cursor: zoom-in; }
+@media print {
+  .ap-mediafigure-actions { display: none; }
+}
+
+html:has(dialog.ap-figure-viewer[open]) { overflow: hidden; }
+dialog.ap-figure-viewer {
+  /* The theme's reset zeroes every margin, the browser's centring one too. */
+  margin: auto;
+  width: calc(100vw - 2rem);
+  height: calc(100dvh - 2rem);
+  max-width: none;
+  max-height: none;
+  padding: 0;
+  border: 1px solid var(--ap-border, #d8d5cf);
+  border-radius: 8px;
+  background: #fff;
+  color: #1c1917;
+  overflow: hidden;
+}
+dialog.ap-figure-viewer[open] { display: flex; flex-direction: column; }
+dialog.ap-figure-viewer::backdrop { background: rgb(0 0 0 / 0.6); }
+.dark dialog.ap-figure-viewer { background: #111; color: #f3f4f6; }
+.ap-figure-viewer-bar {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--ap-border, #d8d5cf);
+}
+.ap-figure-viewer-title {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ap-figure-viewer-tools { flex: none; display: flex; align-items: center; gap: 6px; }
+.ap-figure-viewer-level { min-width: 3.25em; text-align: center; font-size: 14px; font-variant-numeric: tabular-nums; }
+.ap-figure-viewer-btn {
+  /* Never squeezed: on a phone the title gives way, not "Close". */
+  flex: none;
+  font: inherit;
+  font-size: 15px;
+  min-width: 32px;
+  min-height: 32px;
+  padding: 4px 10px;
+  border: 1px solid var(--ap-border, #d6d3cd);
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+.ap-figure-viewer-btn:disabled { opacity: 0.45; cursor: default; }
+.ap-figure-viewer-stage {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  overflow: auto;
+  overscroll-behavior: contain;
+  /* The dialog clips an outline drawn outside the stage. */
+  outline-offset: -2px;
+}
+.ap-figure-viewer-stage[data-dragging] { cursor: grabbing; user-select: none; }
+.ap-figure-viewer-image {
+  flex: none;
+  display: block;
+  margin: auto;
+  max-width: none;
+  cursor: zoom-in;
+}
+.ap-figure-viewer-stage[data-fitted="false"] .ap-figure-viewer-image { cursor: zoom-out; }
+.ap-figure-viewer-stage[data-dragging] .ap-figure-viewer-image { cursor: grabbing; }
+.dark .ap-figure-viewer-stage[data-plate="true"] .ap-figure-viewer-image { background: #fff; }
+
 /* --- Figures and links inside a blue callout ------------------------------
    Hextra's info callout is a `hx:bg-blue-100` (#dbeafe) box with no class of
    its own. Two things fail AA on that tint that pass on the page ground:

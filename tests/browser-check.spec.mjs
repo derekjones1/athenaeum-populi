@@ -1903,6 +1903,106 @@ test('the ion items of an ionic compound appear only once the compound is answer
   expect(await followups.evaluateAll((all) => all.filter((el) => !el.hidden).length)).toBe(1);
 });
 
+// The periodic table is 1300 px wide and set in a 704 px column: its names
+// and masses are a few pixels tall. A figure shown smaller than its file has
+// an "Enlarge figure" link — a real link to the full-size file — which the
+// viewer (assets/js/figure-enlarge.js) opens in place.
+test('a figure shown smaller than its file can be enlarged in place: fit, the file\'s own pixels, pan, and back', async ({ page }) => {
+  const route = '/physical-sciences/chemistry/02-atoms-molecules-and-ions/05-the-periodic-table/';
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await gotoBuiltPage(page, route);
+
+  // Which figures get the link: the ones wider than the column or scaled
+  // down, and no others.
+  const links = await page.evaluate(() => [...document.querySelectorAll('.ap-mediafigure')].map((figure) => ({
+    stem: figure.dataset.stem,
+    shrunk: Number(figure.querySelector(':scope > img').getAttribute('width')) > 704 || 'scale' in figure.dataset,
+    linked: Boolean(figure.querySelector(':scope > .ap-mediafigure-actions > a.ap-mediafigure-enlarge')),
+  })));
+  expect(links.length).toBeGreaterThan(0);
+  expect(links.filter((figure) => figure.shrunk !== figure.linked).map((figure) => figure.stem), 'the link is on exactly the figures shown under their size').toEqual([]);
+
+  const figure = page.locator('.ap-mediafigure[data-stem="CNX_Chem_02_05_PerTable1"]');
+  const link = figure.locator('a.ap-mediafigure-enlarge');
+  const inline = figure.locator(':scope > img');
+  await expect(link).toHaveText('Enlarge figure');
+  // Without the script the link is the whole feature, so it must open the file.
+  const href = await link.getAttribute('href');
+  expect(href).toMatch(/^\/media\/chemistry\/CNX_Chem_02_05_PerTable1-1300\.webp$/);
+  expect((await page.request.get(href)).ok()).toBe(true);
+
+  await link.scrollIntoViewIfNeeded();
+  const inlineWidth = (await inline.boundingBox()).width;
+  const pageScroll = await page.evaluate(() => window.scrollY);
+  await link.click();
+  const dialog = page.locator('dialog.ap-figure-viewer[open]');
+  await expect(dialog).toBeVisible();
+  const image = dialog.locator('.ap-figure-viewer-image');
+  const stage = dialog.locator('.ap-figure-viewer-stage');
+  const level = dialog.locator('.ap-figure-viewer-level');
+  await expect(image).toHaveJSProperty('complete', true);
+  expect(await image.getAttribute('alt')).toBe(await inline.getAttribute('alt'));
+  await expect(dialog.locator('.ap-figure-viewer-title')).toHaveText(/Elements in the periodic table are organized/);
+  const widthOf = async () => (await image.boundingBox()).width;
+  const scrolls = () => stage.evaluate((el) => ({ x: el.scrollWidth > el.clientWidth + 1, y: el.scrollHeight > el.clientHeight + 1 }));
+
+  // Opens fitted: all of it in view, and already well past the column's size.
+  expect(await scrolls()).toEqual({ x: false, y: false });
+  const fitted = await widthOf();
+  expect(fitted).toBeGreaterThan(inlineWidth * 1.3);
+  await expect(dialog.locator('[data-zoom="out"]')).toBeDisabled();
+
+  // "+" goes to the file's own pixels, then past them; the stage scrolls.
+  await page.keyboard.press('+');
+  await expect(level).toHaveText('100%');
+  expect(Math.round(await widthOf())).toBe(1300);
+  await dialog.locator('[data-zoom="in"]').click();
+  await expect(level).toHaveText('150%');
+  expect(await scrolls()).toEqual({ x: true, y: true });
+  // The wheel moves the figure, never the page behind it.
+  await stage.hover();
+  await page.mouse.wheel(300, 400);
+  await expect.poll(async () => stage.evaluate((el) => el.scrollTop)).toBeGreaterThan(0);
+  expect(await page.evaluate(() => window.scrollY)).toBe(pageScroll);
+  // A click on the image goes back to the fit, and from the fit to 100%.
+  await image.click({ position: { x: 40, y: 40 } });
+  expect(Math.round(await widthOf())).toBe(Math.round(fitted));
+  await image.click({ position: { x: 40, y: 40 } });
+  await expect(level).toHaveText('100%');
+  await page.keyboard.press('0');
+  expect(Math.round(await widthOf())).toBe(Math.round(fitted));
+
+  // Closing gives the page back as it was, and the image opens it too.
+  await dialog.locator('.ap-figure-viewer-close').click();
+  await expect(page.locator('dialog.ap-figure-viewer[open]')).toHaveCount(0);
+  expect(await page.evaluate(() => window.scrollY)).toBe(pageScroll);
+  expect((await inline.boundingBox()).width).toBe(inlineWidth);
+  await inline.click();
+  await expect(dialog).toBeVisible();
+  await page.keyboard.press('Escape');
+  await expect(page.locator('dialog.ap-figure-viewer[open]')).toHaveCount(0);
+
+  // On a phone the fit is the whole figure across the screen; enlarged, it
+  // pans sideways inside the viewer and the page itself gets no wider.
+  await page.setViewportSize({ width: 390, height: 844 });
+  await link.scrollIntoViewIfNeeded();
+  await link.click();
+  await expect(dialog).toBeVisible();
+  expect(await scrolls()).toEqual({ x: false, y: false });
+  expect(await widthOf()).toBeLessThanOrEqual(390);
+  await dialog.locator('[data-zoom="fit"]').focus();
+  for (let presses = 0; presses < 4 && (await level.textContent()) !== '100%'; presses += 1) await page.keyboard.press('+');
+  await expect(level).toHaveText('100%');
+  expect((await scrolls()).x).toBe(true);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  // The controls fit a phone: none is squeezed under its label or pushed
+  // off the bar (a flex item with a min-width shrinks below its text).
+  expect(await dialog.locator('.ap-figure-viewer-bar').evaluate((bar) => ({
+    overflows: bar.scrollWidth > bar.clientWidth,
+    clipped: [...bar.querySelectorAll('button')].filter((button) => button.scrollWidth > button.clientWidth).map((button) => button.textContent),
+  }))).toEqual({ overflows: false, clipped: [] });
+});
+
 test('on every Chemistry page a display row fits the column, scientific notation stays on one line, and a scaled-down figure stays small', async ({ page }) => {
   const routes = [...chemistrySectionRoutes(), ...chemistryAppendixRoutes()];
   expect(routes.length, 'Chemistry section pages were discovered in public/').toBeGreaterThanOrEqual(6);
