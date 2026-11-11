@@ -291,10 +291,10 @@ test('build audit: content images, duplicated chrome, and missing no-JavaScript 
     const siteLink = `<link rel="stylesheet" href="/css/compiled/${siteCssName}">`;
     const bodyPreload = (name) => `<link rel="preload" href="/fonts/${name}.woff2" as="font" type="font/woff2" crossorigin>`;
     const bodyFiles = ['fonts/ap-body-v1.woff2', 'fonts/ap-body-v2.woff2', 'fonts/ap-body-italic-v2.woff2'];
-    const withSiteCss = (head) => {
+    const withSiteCss = (head, css = siteCss) => {
       prepare('<p>Semantic content.</p>', bodyFiles, { head });
       mkdirSync(join(fixture, 'css', 'compiled'), { recursive: true });
-      writeFileSync(join(fixture, 'css', 'compiled', siteCssName), siteCss);
+      writeFileSync(join(fixture, 'css', 'compiled', `main.${createHash('sha256').update(css).digest('hex')}.css`), css);
       return audit();
     };
     const preloaded = withSiteCss(bodyPreload('ap-body-v2') + siteLink);
@@ -302,6 +302,21 @@ test('build audit: content images, duplicated chrome, and missing no-JavaScript 
     assert.match(withSiteCss(siteLink).stderr, /body font preload missing or stale/, 'a page without the body font preload must fail');
     assert.match(withSiteCss(bodyPreload('ap-body-v1') + siteLink).stderr, /body font preload missing or stale/, 'a preload of a superseded body font file must fail');
     assert.match(withSiteCss(bodyPreload('ap-body-italic-v2') + siteLink).stderr, /body font preload missing or stale/, 'preloading only the italic face must fail');
+    // A `src` that leads with local() still names the file.
+    const localFirst = siteCss.replace('src:url(/fonts/ap-body-v2.woff2)', 'src:local("AP Body"),url(/fonts/ap-body-v2.woff2)');
+    const localFirstRun = withSiteCss(bodyPreload('ap-body-v2') + siteLink, localFirst);
+    assert.equal(localFirstRun.status, 0, `a src that leads with local() should still be read: ${localFirstRun.stderr}`);
+    assert.match(withSiteCss(siteLink, localFirst).stderr, /body font preload missing or stale/, 'a local()-first src must not switch the preload rule off');
+    // A site stylesheet with no upright "AP Body" face is reported, never
+    // read as "nothing to check": a renamed family, an italic-only face, and
+    // a src with no url() each fail.
+    for (const [css, why] of [
+      [siteCss.replaceAll('"AP Body"', '"AP Text"'), 'a renamed family'],
+      [siteCss.split('}@font-face')[1].replace(/^/, '@font-face'), 'only the italic face'],
+      [siteCss.replace('src:url(/fonts/ap-body-v2.woff2)format("woff2")', 'src:local("AP Body")'), 'a src with no url()'],
+    ]) {
+      assert.match(withSiteCss(bodyPreload('ap-body-v2') + siteLink, css).stderr, /no upright "AP Body" @font-face with a url\(\) src/, `${why} must be reported`);
+    }
     assert.match(
       withSiteCss(bodyPreload('ap-body-v2').replace(' crossorigin', '') + siteLink).stderr,
       /font preload without crossorigin/,

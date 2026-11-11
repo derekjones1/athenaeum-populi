@@ -1,5 +1,5 @@
 /**
- * Keyboard access to wide display equations and tables.
+ * Keyboard access to wide display equations, tables, and Key equations lines.
  *
  * `custom.css` lets a `.katex-display` block scroll horizontally rather than
  * paint over the right-hand rail, which makes an overflowing equation a
@@ -16,7 +16,10 @@
  * check re-runs when the viewport resizes and once the KaTeX fonts arrive,
  * because both change an equation's width.
  */
-const SELECTOR = '.content .katex-display, .content table';
+// The third kind is a Key equations line (a list entry that is one formula,
+// under that heading), which custom.css lets scroll inside itself for the
+// same reason; the selector is the stylesheet's.
+const SELECTOR = '.content .katex-display, .content table, .content h2:has(> #key-equations) + ul > li > .katex:only-child';
 
 function markScrollable() {
   for (const block of document.querySelectorAll(SELECTOR)) {

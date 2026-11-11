@@ -397,13 +397,27 @@ export function checkEquation(input, answer) {
   return best;
 }
 
+/**
+ * A response without the sentence punctuation typed after it. Every stem
+ * ends in a period and the typing guide under the field ends "SO4^2-.", so
+ * learners type "MgSe." — and a period is also how a hydrate's dot is typed,
+ * so the reader took the last one for a dot with nothing after it and
+ * answered "now fix the capitals" to a formula whose capitals were right
+ * (found by the rendered-page reading of November 11, 2026). No formula or
+ * equation ends in a period, comma, or semicolon, so they are dropped from
+ * the end of what was typed; a key is never passed through this.
+ */
+const withoutClosingPunctuation = (input) => String(input ?? '').replace(/[\s.,;]+$/u, '');
+
 /** Grade a response under a chemistry form. */
 export function checkChem(input, answer, { accept = '', form } = {}) {
-  return form === 'equation' ? checkEquation(input, answer) : checkFormula(input, answer, { accept });
+  const typed = withoutClosingPunctuation(input);
+  return form === 'equation' ? checkEquation(typed, answer) : checkFormula(typed, answer, { accept });
 }
 
 /** What the field shows a learner it has read, or '' when it reads nothing yet. */
-export function previewChem(input, form) {
+export function previewChem(rawInput, form) {
+  const input = withoutClosingPunctuation(rawInput);
   if (form === 'equation') {
     const equation = readEquation(input)[0];
     if (!equation) return '';

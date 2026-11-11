@@ -102,7 +102,7 @@ export function specFixtures(source) {
     for (const m of chunk.matchAll(/\.fill\((['"])((?:(?!\1).)+)\1\)/g)) {
       events.push({ at: m.index, kind: 'fill', value: m[2] });
     }
-    for (const m of chunk.matchAll(/\.toBe\('(correct|incorrect|empty)'\)/g)) {
+    for (const m of chunk.matchAll(/\.toBe\('(correct|incorrect|empty|form)'\)/g)) {
       events.push({ at: m.index, kind: 'verdict', value: m[1] });
     }
     events.sort((a, b) => a.at - b.at);

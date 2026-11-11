@@ -20,13 +20,6 @@
  *
  *   - same page, same kind, and every param except `hint` and `accept`
  *     identical after whitespace collapse — the stem, the options, the key;
- *     one sentence of a stem is not counted: "Use the [periodic
- *     table](…)." — the pointer to a book's reference figure that 74
- *     Chemistry items carried until the figure became a control on every
- *     page (November 11, 2026). It was added to the source's words to say
- *     where a table is, asked nothing, and its removal changes no answer;
- *     the lint refuses it now, so this reading only ever drops it from the
- *     OLD side of a comparison;
  *   - the same inner content (a multiple choice's options, a selfcheck's
  *     model answer);
  *   - the same dependency block — the figure or table the item names —
@@ -51,7 +44,6 @@ import { join, resolve } from 'node:path';
 import { checkAnswer } from '../../assets/js/lib/math/check-answer.mjs';
 import { checkText } from '../../assets/js/lib/text/check-text.mjs';
 import { parseCliArgs } from '../lib/cli.mjs';
-import { RETIRED_REFERENCE_POINTER } from '../lib/content.mjs';
 import { LedgerFormatError } from '../lib/ledger.mjs';
 import { LEDGER_PATH, exerciseHash, extractExercises, readLedger } from './answer-ledger.mjs';
 
@@ -73,9 +65,8 @@ export function snapshot(root) {
 /** Everything a solver reads except the hint, plus the key; `accept` and `answerForm` are judged separately. */
 function signature(item) {
   const { hint, accept, answerForm, ...rest } = item.params ?? {};
-  const read = (key) => (key === 'question' ? norm(rest[key]).replace(RETIRED_REFERENCE_POINTER, '') : norm(rest[key]));
   return JSON.stringify([
-    item.path, item.kind, Object.keys(rest).sort().map((key) => [key, read(key)]), norm(item.inner),
+    item.path, item.kind, Object.keys(rest).sort().map((key) => [key, norm(rest[key])]), norm(item.inner),
   ]);
 }
 

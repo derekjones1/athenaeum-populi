@@ -31,10 +31,20 @@ copied verbatim from the release. What is changed:
     so the page would not show the characters a learner is to type.
   - AXES. Weight is limited to 400–700, the range the site sets. Optical size
     (14–32) is kept, so headings get Inter's display spacing; see OPSZ below.
-  - CHARACTERS. A subset: the Unicode blocks in BLOCKS, intersected with what
-    Inter has, plus every character Inter has that appears anywhere in the
-    sources in CORPUS. The characters the corpus uses and Inter lacks are
-    printed; they fall through to the next font in the stack.
+  - CHARACTERS. A subset: the Unicode blocks in BLOCKS and the single
+    characters in EXTRAS, intersected with what Inter has — a function of
+    those two constants and the pinned release only, so a re-run
+    at any later commit writes the same bytes. The sources in CORPUS are read
+    only to CHECK the subset: the build stops when they use a character Inter
+    has and the subset leaves out (add it to EXTRAS, or its small block to
+    BLOCKS; the message names both), and it prints the characters they use that Inter
+    lacks. Those fall to the next face in the stack, "AP Body Fallback" (the
+    local Arial at 107.1%), and only when Arial lacks them too to the system
+    font. tools/build/body-font-coverage.test.mjs keeps content/ inside the
+    subset as chapters arrive.
+  - COVERAGE FILE. data/fonts/ap-body.json records the output names, the
+    release and its SHA-256, the ranges the body face covers, and the code
+    points of the superscript/subscript face; the coverage test reads it.
   - NAMES. The family is renamed "AP Body" so a modified version does not
     present itself as Inter; the copyright, designer and licence records are
     kept. The fonts are unhinted, as the source is.
@@ -74,6 +84,7 @@ stylesheet names the files, the page head preloads the upright one, and
 """
 import hashlib
 import io
+import json
 import shutil
 import sys
 import tempfile
@@ -83,6 +94,7 @@ import zipfile
 from pathlib import Path
 
 from fontTools import subset
+from fontTools import unicodedata as blocks_of
 from fontTools.ttLib import TTFont
 from fontTools.ttLib.tables.TupleVariation import TupleVariation
 from fontTools.ttLib.tables._g_l_y_f import Glyph, GlyphComponent
@@ -100,6 +112,9 @@ OUT_BODY = OUT_DIR / "ap-body-v1.woff2"
 OUT_BODY_ITALIC = OUT_DIR / "ap-body-italic-v1.woff2"
 OUT_SUPSUB = OUT_DIR / "ap-supsub-v2.woff2"
 OUT_LICENSE = OUT_DIR / "OFL.txt"
+# Read by tools/build/body-font-coverage.test.mjs. Hugo loads data/ as
+# hugo.Data; nothing reads hugo.Data.fonts.
+OUT_COVERAGE = ROOT / "data" / "fonts" / "ap-body.json"
 
 # ---- the body face ---------------------------------------------------------
 
@@ -110,23 +125,71 @@ REQUIRED_SUBSTITUTIONS = {"cv05": 0x006C, "cv08": 0x0049}
 LAYOUT_FEATURES = ["kern", "mark", "mkmk", "ccmp", "locl", "tnum", "pnum", "case"]
 WEIGHT = (400, 700)
 # Optical size: kept over Inter's whole range. Pinning it to the 14-unit text
-# default saves about a third of each file; the two together stay well under
-# the 300 KB that would make the saving worth losing display spacing in
-# headings (sizes in docs/history/chemistry.md).
+# default saves about a third of each file; the two files together (95 KB
+# upright, the one every page preloads, and 106 KB italic, November 11, 2026)
+# stay well under the 300 KB that would make the saving worth losing display
+# spacing in headings (the earlier sizes are in docs/history/chemistry.md).
 OPSZ = (14, 32)
+# Whole Unicode blocks, each intersected with what Inter has, taken whole only
+# where a block is cheap: each comment gives what it added to the upright
+# file when it was added (November 11, 2026). Until then the set also took
+# every character the corpus used, so a re-run at a later commit rewrote a
+# file in place. Latin Extended-B (+21.8 KB), IPA Extensions (+16.8 KB),
+# Combining Diacritical Marks (+18.8 KB), Latin Extended Additional, Spacing
+# Modifier Letters (+5.9 KB) and Number Forms (+4.1 KB) cost far more than
+# the few characters printed from them; those are in EXTRAS.
 BLOCKS = [
     (0x0020, 0x007E),  # Basic Latin
     (0x00A0, 0x00FF),  # Latin-1 Supplement
     (0x0100, 0x017F),  # Latin Extended-A
     (0x0370, 0x03FF),  # Greek and Coptic
+    (0x1D00, 0x1D7F),  # Phonetic Extensions (ᵇ ᵏ ᵗ ᵢ): +2.0 KB
+    (0x1D80, 0x1DBF),  # Phonetic Extensions Supplement (ᶜ): +0.7 KB
     (0x2000, 0x206F),  # General Punctuation
     (0x2070, 0x209F),  # Superscripts and Subscripts
     (0x20A0, 0x20CF),  # Currency Symbols
     (0x2100, 0x214F),  # Letterlike Symbols
     (0x2190, 0x21FF),  # Arrows
     (0x2200, 0x22FF),  # Mathematical Operators
+    (0x2300, 0x23FF),  # Miscellaneous Technical: +1.6 KB
+    (0x2460, 0x24FF),  # Enclosed Alphanumerics (①–⑥): +1.1 KB
     (0x25A0, 0x25FF),  # Geometric Shapes
+    (0x2600, 0x26FF),  # Miscellaneous Symbols: +1.6 KB
+    (0x2700, 0x27BF),  # Dingbats (✓): +0.6 KB
+    (0x27C0, 0x27EF),  # Miscellaneous Mathematical Symbols-A: +0.1 KB
+    (0x27F0, 0x27FF),  # Supplemental Arrows-A (⟵): +0.1 KB
+    (0x2900, 0x297F),  # Supplemental Arrows-B: +0.5 KB
+    (0x2980, 0x29FF),  # Miscellaneous Mathematical Symbols-B (Inter has none today)
+    (0x2A00, 0x2AFF),  # Supplemental Mathematical Operators: +0 KB
 ]
+# Single characters from blocks too large to take whole, each one the
+# sources print.
+EXTRAS = [
+    # Latin Extended-B
+    0x01A9,  # Ʃ capital esh — "the symbol Ʃ means 'the sum of'" in the Chemistry 2e source (thermochemistry, not yet authored)
+    # IPA Extensions
+    0x0259,  # ə schwa — in the Chemistry 2e source (not yet authored); also the letter AP SupSub scales for ₔ
+    # Spacing Modifier Letters
+    0x02B0,  # ʰ modifier small h — the allele cᶜʰ (Biology 12.2)
+    0x02B7,  # ʷ modifier small w — the allele Xʷ (Biology 12.2)
+    0x02B9,  # ʹ modifier prime — 5ʹ and 3ʹ ends (Microbiology 10.2, 10.3, data/media/microbiology.json)
+    0x02BA,  # ʺ modifier double prime — a photo credit in the Chemistry 2e source (not yet authored)
+    0x02BC,  # ʼ modifier apostrophe — a quote the text grader folds (check-text.mjs), so a learner may type it
+    0x02DA,  # ˚ ring above — named in a source note on a degree glyph (Biology 44.4)
+    0x02E3,  # ˣ modifier small x — 2ˣ in figure labels (Precalculus 4.2, 4.4, 4.6)
+    # Combining Diacritical Marks
+    0x0304,  # combining macron — in the Chemistry 2e source (not yet authored)
+    0x0307,  # combining dot above — in the Chemistry 2e source (not yet authored)
+    # Latin Extended Additional
+    0x1E6C,  # Ṭ capital t with dot below — a transliterated name (Microbiology 1.1)
+    # Number Forms
+    0x2153,  # ⅓ one third — figure specs and their aria labels (Precalculus 4.2, 4.4; Intermediate Algebra 10.3)
+    0x215B,  # ⅛ one eighth — a figure spec (Precalculus 4.4)
+]
+# Characters in the corpus that no page prints, skipped by the corpus check:
+# the two ends of the diacritic range `[\u0300-\u036f]` written literally in
+# a regular expression in assets/js/lib/text/check-text.mjs.
+NOT_PRINTED = {0x0300, 0x036F}
 # Everything that puts text on a page: the content, the site's and the
 # theme's templates and strings, the media manifests (captions and alt
 # text), and the interactive components' messages.
@@ -183,6 +246,50 @@ def corpus_codepoints() -> set[int]:
     # Controls, format characters (joiners, variation selectors, the BOM) and
     # the replacement character are not drawn by a text face.
     return {cp for cp in found if unicodedata.category(chr(cp)) not in ("Cc", "Cf", "Cs", "Co", "Cn") and cp != 0xFFFD}
+
+
+def block_codepoints() -> set[int]:
+    """The subset: BLOCKS and EXTRAS (each intersected with the source later)."""
+    return {cp for low, high in BLOCKS for cp in range(low, high + 1)} | set(EXTRAS)
+
+
+def block_of(cp: int) -> str:
+    """The Unicode block a code point is in, with its range, for a message."""
+    from bisect import bisect_right
+    index = bisect_right(blocks_of.Blocks.RANGES, cp) - 1
+    low = blocks_of.Blocks.RANGES[index]
+    high = blocks_of.Blocks.RANGES[index + 1] - 1 if index + 1 < len(blocks_of.Blocks.RANGES) else 0x10FFFF
+    return f"{blocks_of.Blocks.VALUES[index]} (0x{low:04X}, 0x{high:04X})"
+
+
+def check_corpus(archive: zipfile.ZipFile, corpus: set[int]) -> None:
+    """Stop when the sources use a character Inter has that the subset leaves out;
+    print the ones Inter lacks."""
+    upright = TTFont(io.BytesIO(archive.read(UPRIGHT))).getBestCmap()
+    italic = TTFont(io.BytesIO(archive.read(ITALIC))).getBestCmap()
+    blocks = block_codepoints()
+    dropped = sorted(cp for cp in corpus - NOT_PRINTED if (cp in upright or cp in italic) and cp not in blocks)
+    if dropped:
+        sys.exit("the sources use characters Inter has that the subset leaves out — add each to EXTRAS "
+                 "with a comment on where it is used (or its block to BLOCKS, if the block is small), "
+                 "regenerate, and rename the outputs (v2, …) if the fonts have been deployed:\n"
+                 + "\n".join(f"    0x{cp:04X},  # {chr(cp)} {unicodedata.name(chr(cp), '?')} — in {block_of(cp)}" for cp in dropped))
+    lacking = sorted(cp for cp in corpus if cp not in upright)
+    print(f"{len(lacking)} characters the sources use and Inter lacks (they fall to \"AP Body Fallback\", "
+          "the local Arial, and then to the system font):")
+    for cp in lacking:
+        print(f"  U+{cp:04X} {chr(cp)}  {unicodedata.name(chr(cp), '?')}")
+
+
+def ranges(codepoints: list[int]) -> list[str]:
+    """Code points as CSS unicode-range terms: U+0020-007E, U+00B9."""
+    out: list[str] = []
+    for cp in sorted(codepoints):
+        if out and out[-1][1] == cp - 1:
+            out[-1][1] = cp
+        else:
+            out.append([cp, cp])
+    return [f"U+{low:04X}" if low == high else f"U+{low:04X}-{high:04X}" for low, high in out]
 
 
 def single_substitutions(font: TTFont, tag: str) -> dict[str, str]:
@@ -257,16 +364,11 @@ def rename(font: TTFont, italic: bool) -> None:
 
 
 def build_body(archive: zipfile.ZipFile, member: str, italic: bool, opsz, out: Path,
-               corpus: set[int], report: bool) -> None:
+               report: bool) -> list[int]:
+    """Cut one body face; return the code points it covers."""
     font = TTFont(io.BytesIO(archive.read(member)), recalcTimestamp=False)
     cmap = font.getBestCmap()
-    blocks = {cp for low, high in BLOCKS for cp in range(low, high + 1)}
-    wanted = sorted(cp for cp in blocks | corpus if cp in cmap)
-    if report:
-        lacking = sorted(cp for cp in corpus if cp not in cmap)
-        print(f"{len(lacking)} corpus characters Inter lacks (they fall through to the system font):")
-        for cp in lacking:
-            print(f"  U+{cp:04X} {chr(cp)}  {unicodedata.name(chr(cp), '?')}")
+    wanted = sorted(cp for cp in block_codepoints() if cp in cmap)
     moved = make_alternates_default(font)
     subset_font(font, wanted, LAYOUT_FEATURES, [0, 1, 2, 3, 4, 5, 6, 9, 10, 13, 14])
     font = instancer.instantiateVariableFont(font, {"wght": WEIGHT, "opsz": opsz})
@@ -279,6 +381,7 @@ def build_body(archive: zipfile.ZipFile, member: str, italic: bool, opsz, out: P
         print(f"{len([cp for cp in moved if cp in kept])} characters draw the cv05/cv08 alternates by default")
     font.flavor = "woff2"
     font.save(out)
+    return sorted(kept)
 
 
 def build_supsub(archive: zipfile.ZipFile, out: Path) -> None:
@@ -344,20 +447,34 @@ def build_supsub(archive: zipfile.ZipFile, out: Path) -> None:
     lost = [f"U+{cp:04X}" for cp in sorted({**SUPERSCRIPTS, **SUBSCRIPTS}) if cp not in kept]
     if lost:
         sys.exit(f"the subset lost: {', '.join(lost)}")
+    return sorted(kept)
 
 
 def main() -> None:
     archive = read_release(sys.argv)
-    corpus = corpus_codepoints()
+    check_corpus(archive, corpus_codepoints())
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory() as tmp:
         staged = {out: Path(tmp) / out.name for out in (OUT_BODY, OUT_BODY_ITALIC, OUT_SUPSUB)}
-        build_body(archive, UPRIGHT, False, OPSZ, staged[OUT_BODY], corpus, report=True)
-        build_body(archive, ITALIC, True, OPSZ, staged[OUT_BODY_ITALIC], corpus, report=False)
-        build_supsub(archive, staged[OUT_SUPSUB])
+        body = build_body(archive, UPRIGHT, False, OPSZ, staged[OUT_BODY], report=True)
+        body_italic = build_body(archive, ITALIC, True, OPSZ, staged[OUT_BODY_ITALIC], report=False)
+        if body != body_italic:
+            differ = sorted(set(body) ^ set(body_italic))
+            sys.exit(f"the upright and italic faces cover different characters: {', '.join(ranges(differ))}")
+        supsub = build_supsub(archive, staged[OUT_SUPSUB])
         for out, path in staged.items():
             shutil.copyfile(path, out)
     OUT_LICENSE.write_bytes(archive.read(LICENSE))
+    coverage = {
+        "about": "Written by tools/build/gen-body-font.py; do not edit. "
+                 "Read by tools/build/body-font-coverage.test.mjs.",
+        "source": {"release": RELEASE, "sha256": SHA256},
+        "files": {"body": OUT_BODY.name, "bodyItalic": OUT_BODY_ITALIC.name, "supsub": OUT_SUPSUB.name},
+        "body": ranges(body),
+        "supsub": [f"U+{cp:04X}" for cp in supsub],
+    }
+    OUT_COVERAGE.parent.mkdir(parents=True, exist_ok=True)
+    OUT_COVERAGE.write_text(json.dumps(coverage, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     for out in (OUT_BODY, OUT_BODY_ITALIC, OUT_SUPSUB):
         print(f"{out.relative_to(ROOT)}: {out.stat().st_size} bytes")
 

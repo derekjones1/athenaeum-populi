@@ -76,13 +76,15 @@ export function walkMarkdown(root, { includeIndex = true } = {}) {
  * after the source's words, through chapter 2, to send the learner to
  * Appendix A. Retired November 11, 2026, when the table became a control on
  * every Chemistry page (layouts/_partials/utils/reference-figure.html): the
- * lint refuses it, and `ledger:carry` reads a stem without it, so the items
- * that lost it kept their solves. With its leading space, as it stood after
- * the stem's last sentence. The source's OWN words about the table ("Using
- * the periodic table, predict…", "Hint: Use the periodic table to predict…")
- * are not this sentence and stay, linked.
+ * lint refuses it, with or without the link's trailing slash. The one-off
+ * ledger carry that read a stem past it, so the 74 items kept their solves,
+ * ran in commit 5bb8d634 and was removed once the migration was done. With
+ * its leading space, as it stood after the stem's last sentence. The
+ * source's OWN words about the table ("Using the periodic table, predict…",
+ * "Hint: Use the periodic table to predict…") are not this sentence and stay,
+ * linked.
  */
-export const RETIRED_REFERENCE_POINTER = / Use the \[periodic table\]\(\/physical-sciences\/chemistry\/appendices\/a-the-periodic-table\/\)\./g;
+export const RETIRED_REFERENCE_POINTER = / Use the \[periodic table\]\(\/physical-sciences\/chemistry\/appendices\/a-the-periodic-table\/?\)\./g;
 
 /**
  * "shelf/book" for a page inside a book — the two path segments after

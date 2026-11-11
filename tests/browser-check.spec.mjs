@@ -1755,6 +1755,59 @@ function chemistryAppendixRoutes() {
     .sort();
 }
 
+// Chemistry 2.3's Key equations line — one inline formula with a
+// \left( … \right) group that cannot break — ran 20 px past a phone's
+// screen, and the whole page scrolled sideways (found by the rendered-page
+// reading of November 11, 2026; the appendix test below asked this only of
+// the appendices). A list entry that is one formula now scrolls inside
+// itself, and every page of the book is asked.
+test('no Chemistry page scrolls sideways on a phone, and a Key equations line too wide for it scrolls inside itself', async ({ page }) => {
+  const routes = [
+    '/physical-sciences/chemistry/',
+    '/physical-sciences/chemistry/appendices/',
+    ...new Set(chemistrySectionRoutes().map((route) => route.replace(/[^/]+\/$/, ''))),
+    ...chemistrySectionRoutes(),
+    ...chemistryAppendixRoutes(),
+  ];
+  expect(routes.length).toBeGreaterThanOrEqual(29);
+  test.setTimeout(60_000 + routes.length * 4_000);
+  await page.setViewportSize({ width: 390, height: 844 });
+  for (const route of routes) {
+    await gotoBuiltPage(page, route);
+    await page.evaluate(() => document.fonts.ready);
+    const over = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
+    expect(over, `${route} at 390 px: the page itself scrolls sideways`).toBeLessThanOrEqual(1);
+  }
+  // The line that did it: it scrolls inside its own box, and a keyboard reaches it.
+  await gotoBuiltPage(page, '/physical-sciences/chemistry/02-atoms-molecules-and-ions/03-atomic-structure-and-symbolism/');
+  await page.evaluate(() => document.fonts.ready);
+  const line = page.locator('.content h2:has(> #key-equations) + ul > li > .katex:only-child');
+  await expect(line).toHaveCount(1);
+  await expect(line).toContainText('average mass');
+  // Only that list: a lone symbol inside a sentence of another bullet (the
+  // summary's "(Z)") is not made a box, which would put a gap after it.
+  expect(await page.evaluate(() => [...document.querySelectorAll('.content li > .katex:only-child')]
+    .filter((el) => !el.matches('.content h2:has(> #key-equations) + ul > li > .katex'))
+    .map((el) => getComputedStyle(el).display).filter((display) => display !== 'inline'))).toEqual([]);
+  await expect.poll(async () => line.evaluate((el) => ({
+    scrolls: el.scrollWidth > el.clientWidth + 1,
+    inside: el.getBoundingClientRect().right <= window.innerWidth + 0.5,
+    reachable: el.getAttribute('tabindex'),
+  }))).toEqual({ scrolls: true, inside: true, reachable: '0' });
+  // Its bullet is still drawn: the scroll box is the formula, not the list item.
+  expect(await line.evaluate((el) => getComputedStyle(el.parentElement).overflowX)).toBe('visible');
+  // On a wide screen it does not scroll and is no tab stop.
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await expect.poll(async () => line.evaluate((el) => ({ scrolls: el.scrollWidth > el.clientWidth + 1, reachable: el.getAttribute('tabindex') })))
+    .toEqual({ scrolls: false, reachable: null });
+  // Nothing of a fraction is cut by the box, on any Key equations line (1.6's have fractions).
+  await gotoBuiltPage(page, '/physical-sciences/chemistry/01-essential-ideas/06-mathematical-treatment-of-measurement-results/');
+  await page.evaluate(() => document.fonts.ready);
+  const lines = page.locator('.content h2:has(> #key-equations) + ul > li > .katex:only-child');
+  expect(await lines.count()).toBeGreaterThanOrEqual(4);
+  expect(await lines.evaluateAll((els) => els.filter((el) => el.scrollHeight > el.clientHeight || el.scrollWidth > el.clientWidth + 1).length)).toBe(0);
+});
+
 test('a Chemistry appendix table scrolls inside its own box, its figures load, and a bracketed formula is not a link', async ({ page }) => {
   const routes = chemistryAppendixRoutes();
   expect(routes.length, 'the thirteen appendix pages were discovered in public/').toBe(13);
@@ -2217,6 +2270,18 @@ test('Chemistry keeps the periodic table at hand: the rail control and a body li
   expect(new URL(page.url()).pathname).toBe(route);
   await page.keyboard.press('Escape');
   expect(await bodyLink.evaluate((el) => el === document.activeElement), 'focus returns to the link').toBe(true);
+  // The same page spelled without its trailing slash, or as index.html, is
+  // the same page: a link written that way must not leave (and lose what
+  // was typed).
+  for (const spelling of [appendix.replace(/\/$/, ''), `${appendix}index.html`]) {
+    await bodyLink.evaluate((el, href) => el.setAttribute('href', href), spelling);
+    await bodyLink.click();
+    await expect(dialog, `a link to ${spelling} opens the viewer`).toBeVisible();
+    expect(new URL(page.url()).pathname).toBe(route);
+    await page.keyboard.press('Escape');
+  }
+  await bodyLink.evaluate((el, href) => el.setAttribute('href', href), appendix);
+  await expect(field).toHaveValue('typed before looking');
   // An ordinary figure opened afterwards carries no page link.
   const enlarge = page.locator('a.ap-mediafigure-enlarge').first();
   await enlarge.scrollIntoViewIfNeeded();

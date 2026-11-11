@@ -552,16 +552,20 @@ if (htmlDocuments.some((document) => fontPreloads(document).some(({ href }) => {
 // metrics. The file name carries a version, so read the one the site
 // stylesheet names and require that same file in every page that links the
 // stylesheet: a renamed font with a stale preload downloads twice.
-const siteStylesheet = emittedCss
-  .filter(({ file }) => relative(root, file).split(sep).join('/').startsWith('css/compiled/'))
-  .map(({ text }) => text)
-  .join('\n');
+// A build that emits the site stylesheet must name the face in it: a
+// renamed family, or a `src` this reader cannot parse, is reported rather than
+// read as "nothing to check". The `src` may lead with `local(…)`.
+const siteStylesheets = emittedCss
+  .filter(({ file }) => relative(root, file).split(sep).join('/').startsWith('css/compiled/'));
+const siteStylesheet = siteStylesheets.map(({ text }) => text).join('\n');
 const bodyFaceUrl = [...siteStylesheet.matchAll(/@font-face\s*\{([^}]*)\}/gi)]
   .map((match) => match[1])
   .filter((rule) => /font-family\s*:\s*["']?AP Body["']?\s*(?:;|$)/i.test(rule) && !/font-style\s*:\s*italic/i.test(rule))
-  .map((rule) => /src\s*:\s*url\(\s*["']?([^"')]+)/i.exec(rule)?.[1])
+  .map((rule) => /(?:^|;)\s*src\s*:[^;]*?url\(\s*["']?([^"')]+)/i.exec(rule)?.[1])
   .find(Boolean);
-if (bodyFaceUrl) {
+if (siteStylesheets.length && !bodyFaceUrl) {
+  problems.push('no upright "AP Body" @font-face with a url() src in the site stylesheet (css/compiled/) — the body font preload cannot be checked');
+} else if (bodyFaceUrl) {
   const linksSiteStylesheet = (document) => [...document.matchAll(openTagRe('link'))].some((match) => (
     htmlAttribute(match[0], 'rel').toLowerCase().split(/\s+/).includes('stylesheet')
     && /\/css\/compiled\//.test(htmlAttribute(match[0], 'href'))

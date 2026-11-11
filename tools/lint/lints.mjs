@@ -224,7 +224,7 @@ import { parseObjectivesCallout } from '../lib/openstax-source.mjs';
 // The real textin grading normalizer, so the word-count/retype-hazard/
 // duplicate-accept-member rules below reason about a textin answer exactly
 // the way check-text.mjs will grade it.
-import { closedForm, foldedForms, normalizeText, pluralFolds } from '../../assets/js/lib/text/check-text.mjs';
+import { checkText, closedForm, foldedForms, isOlderName, normalizeText, pluralFolds } from '../../assets/js/lib/text/check-text.mjs';
 // A textin whose answer is a chemical formula or equation is validated by the
 // grader that reads it, not by the word rules.
 import { chemKeyProblem } from '../../assets/js/lib/text/check-chem.mjs';
@@ -2965,13 +2965,20 @@ export function lintHugo(src, filename = '', options = {}) {
     // abandoned"): the grader answers it with its own message
     // (check-text.mjs `gradeText`, older-names.mjs), and listing it in
     // `accept` would grade it Correct before that message is ever reached.
-    // Only a member whose systematic reading IS the key or another member
-    // is named, so "chromic acid" beside a key it does not translate to is
-    // left alone.
+    // The lint asks the grader's own question (`isOlderName`): with this
+    // member taken out of the accepted set, would the grader read it as an
+    // older name of the key or of another member? That folds plurals,
+    // hyphens and parentheticals exactly as grading does, so "ferrous ions"
+    // beside "iron(II) ion" is caught, while "chromic acid" beside a key it
+    // does not translate to is left alone.
+    const answerRaw = members.find((member) => member.label.startsWith('answer '))?.raw ?? '';
     for (const member of members) {
       if (member.label.startsWith('answer ')) continue;
+      const others = members.filter((other) => other !== member);
+      const otherAccept = others.filter((other) => !other.label.startsWith('answer ')).map((other) => other.raw).join('|');
+      if (!isOlderName(member.raw, answerRaw, { accept: otherAccept })) continue;
       const systematic = systematicName(member.norm);
-      const named = systematic && members.find((other) => other !== member && other.norm === systematic);
+      const named = others.find((other) => checkText(systematic, other.raw) === 'correct') ?? others[0];
       if (named) {
         err(index, `${where}: ${member.label} is an older name of ${named.label} — the grader already answers it "That is an older name", so remove it (an out-of-date name is not an accepted answer)`);
       }

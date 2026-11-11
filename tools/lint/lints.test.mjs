@@ -3440,6 +3440,9 @@ test('the retired "Use the periodic table." sentence is refused; the source\'s o
   assert.ok(added.some((e) => e.includes('no longer added to an item')), added.join('\n'));
   const midStem = lintHugo(`{{< textin question="Write the formula: a hydrate. Use the ${link}. Type the dot as a period." answer="x" hint="h" >}}`, 'content/test.md').errors;
   assert.ok(midStem.some((e) => e.includes('no longer added to an item')), midStem.join('\n'));
+  // The same link without its trailing slash is the same sentence.
+  const slashless = lintHugo(`{{< textin question="Name the following compound: CsCl. Use the ${link.replace('table/)', 'table)')}." answer="cesium chloride" hint="h" >}}`, 'content/test.md').errors;
+  assert.ok(slashless.some((e) => e.includes('no longer added to an item')), slashless.join('\n'));
   for (const source of [
     `Using the ${link}, predict whether the following chlorides are ionic or covalent: KCl.`,
     `Predict the formula of lithium peroxide (Hint: Use the ${link} to predict the charge on the lithium ion.)`,
@@ -3457,6 +3460,12 @@ test('textin: an older name of the keyed compound is not an accept member', () =
   assert.ok(listed.some((e) => e.includes('accept member "ferrous chloride" is an older name of answer "iron(II) chloride"')), listed.join('\n'));
   const viaMember = lintHugo('{{< textin question="Name the ion." answer="iron(II)" accept="iron(II) ion|ferrous ion" hint="h" >}}', 'content/test.md').errors;
   assert.ok(viaMember.some((e) => e.includes('accept member "ferrous ion" is an older name of accept member "iron(II) ion"')), viaMember.join('\n'));
+  // The grader folds plurals, so the lint does too: an older name that
+  // reaches the key or a member only through a fold is still refused.
+  const plural = lintHugo('{{< textin question="Name the ion." answer="iron(II) ion" accept="ferrous ions" hint="h" >}}', 'content/test.md').errors;
+  assert.ok(plural.some((e) => e.includes('accept member "ferrous ions" is an older name of answer "iron(II) ion"')), plural.join('\n'));
+  const pluralKey = lintHugo('{{< textin question="Name the compounds." answer="iron(II) chlorides" accept="ferrous chloride" hint="h" >}}', 'content/test.md').errors;
+  assert.ok(pluralKey.some((e) => e.includes('accept member "ferrous chloride" is an older name of answer "iron(II) chlorides"')), pluralKey.join('\n'));
   // A second name the module prints, and a classical word that is not the
   // older name of this key, are left alone.
   const other = lintHugo('{{< textin question="Name the following compound: HBr." answer="hydrogen bromide" accept="hydrobromic acid" hint="h" >}}', 'content/test.md').errors;

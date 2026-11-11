@@ -22,9 +22,12 @@
  * such as "2H2 + O2 -> 2H2O" and "(NH4)2SO4", and Inter's `calt` would draw
  * `->` as an arrow and raise a parenthesis beside a capital. Weight runs
  * 400–700 and the optical-size axis is kept, so headings get Inter's display
- * spacing. Characters the subset lacks (a few arrows, operators and circled
- * letters; the generator prints the list) fall through to the next face. The
- * upright file is preloaded from the page head (layouts/_partials/head.html).
+ * spacing. Characters Inter lacks (a few arrows, operators and circled
+ * letters; the generator prints the list, and
+ * tools/build/body-font-coverage.test.mjs lists the ones content prints) are
+ * drawn by the next face, "AP Body Fallback" — the local Arial at 107.1% —
+ * and only where Arial lacks them too by the system font. The upright file
+ * is preloaded from the page head (layouts/_partials/head.html).
  *
  * "AP Body Fallback" is the local Arial (or its metric twin, Liberation
  * Sans) scaled to Inter's measure, so text set before the web font arrives
@@ -150,6 +153,34 @@
 .content .katex-display > .katex {
   width: max-content;
   min-width: 100%;
+}
+
+/* A Key equations line — a list entry that is one formula, under the
+   "Key equations" heading — scrolls inside itself when the formula is wider
+   than the column. (Scoped to that list: `:only-child` does not see text, so
+   without the heading a single symbol inside a sentence of any bullet would
+   become a padded box too.) An inline formula cannot
+   break inside a \left( … \right) group, so on a phone Chemistry 2.3's
+   "average mass = Σ(fractional abundance × isotopic mass)" ran 20 px past
+   the screen and the whole page scrolled sideways. The formula, not the
+   <li>, is the scroll box: an overflow on the <li> clips its bullet.
+   assets/js/scrollable-regions.js makes one that does scroll reachable by
+   keyboard, as it does a display equation.
+   A scroll box clips at its padding edge, and a fraction's bars and an
+   italic's overhang reach a few pixels past the formula's own line box, so
+   the box is padded on three sides and the block padding is taken back as
+   margin: the line keeps its height and nothing is cut. */
+.content h2:has(> #key-equations) + ul > li > .katex:only-child {
+  display: inline-block;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-inline: contain;
+  vertical-align: top;
+  padding-block: 0.5em;
+  margin-block: -0.5em;
+  padding-inline-end: 0.25em;
 }
 
 /* A wide table scrolls sideways inside its own box (the theme sets a table

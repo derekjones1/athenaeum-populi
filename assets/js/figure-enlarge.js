@@ -268,7 +268,14 @@ function openReference(control) {
 function opensReference(link, control) {
   if (link === control) return true;
   if (!('figureLinks' in control.dataset) || !link.closest('main .content')) return false;
-  return link.origin === control.origin && link.pathname === control.pathname && !link.hash;
+  return link.origin === control.origin && samePage(link.pathname, control.pathname) && !link.hash;
+}
+
+/** The same page whether a link spells it with the trailing slash, without
+ * it, or as the directory's index.html. */
+function samePage(a, b) {
+  const page = (path) => path.replace(/\/index\.html$/, '/').replace(/\/?$/, '/');
+  return page(a) === page(b);
 }
 
 document.addEventListener('click', (event) => {

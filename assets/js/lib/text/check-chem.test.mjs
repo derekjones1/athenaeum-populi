@@ -237,3 +237,22 @@ test('a nuclide\'s atomic number is its element\'s: read in a key, a response, a
   assert.equal(chemCanon('²³Na', 'formula'), '^23Na');
   assert.match(JSON.stringify(previewChem('^23_11Na', 'formula')), /²³₁₁Na/);
 });
+
+// Every stem ends in a period and so does the typing guide's example, so a
+// learner types "MgSe." — and a period is how a hydrate's dot is typed. The
+// reader took the closing period for a dot and said "now fix the capitals"
+// to a formula whose capitals were right (November 11, 2026).
+test('sentence punctuation typed after a formula or an equation is not part of it', () => {
+  for (const [typed, key] of [['MgSe.', 'MgSe'], ['IF7.', 'IF₇'], ['Se2-.', 'Se²⁻'], ['SO4^2-.', 'SO₄²⁻'], ['MgSe,', 'MgSe'], ['MgSe. ', 'MgSe'], ['AlF3.3H2O.', 'AlF₃·3H₂O']]) {
+    assert.deepEqual(checkChem(typed, key, { form: 'formula' }), { status: 'correct' }, typed);
+  }
+  assert.equal(previewChem('MgSe.', 'formula'), 'MgSe');
+  assert.equal(previewChem('AlF3.3H2O.', 'formula'), 'AlF₃·3H₂O');
+  assert.equal(checkChem('2H2 + O2 -> 2H2O.', '2H₂(g) + O₂(g) ⟶ 2H₂O(l)', { form: 'equation' }).status, 'correct');
+  // The period inside a hydrate still counts, and a wrong formula is still wrong.
+  assert.equal(checkChem('AlF3.3H2O', 'AlF₃·3H₂O', { form: 'formula' }).status, 'correct');
+  assert.notEqual(checkChem('AlF33H2O.', 'AlF₃·3H₂O', { form: 'formula' }).status, 'correct');
+  assert.notEqual(checkChem('MgS.', 'MgSe', { form: 'formula' }).status, 'correct');
+  assert.equal(checkChem('mgse.', 'MgSe', { form: 'formula' }).status, 'form', 'the capitals message is for capitals');
+  assert.equal(checkChem('.', 'MgSe', { form: 'formula' }).status, 'empty');
+});
