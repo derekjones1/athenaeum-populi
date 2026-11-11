@@ -195,10 +195,12 @@ numbers:
 `textin` question or answer — the lint rejects it.
 
 The site draws these characters with its own small font, so they are as large
-as a real `<sup>` or `<sub>` — the system body font alone draws a `⁻` two or
-three pixels across. The face ("AP SupSub", `assets/css/custom.css`, built by
-`tools/build/gen-supsub-font.py`) covers the whole Unicode superscript and
-subscript block and nothing else. Do not reach for `<sup>`/`<sub>` to make a
+as a real `<sup>` or `<sub>` — a body font alone draws a `⁻` two or three
+pixels across. The face ("AP SupSub", `assets/css/custom.css`, built by
+`tools/build/gen-body-font.py`) draws each character as the body face's own
+glyph at the theme's `<sup>` size and position, so a Unicode charge looks
+like a tagged one; it covers the whole Unicode superscript and subscript
+block and nothing else. Do not reach for `<sup>`/`<sub>` to make a
 charge legible; they stay for the names Unicode has no character for (below).
 
 The lint enforces this: an ASCII formula or ion

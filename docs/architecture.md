@@ -31,6 +31,22 @@ the production architecture.
   overflow keyboard-focusable — display equations and prose tables, which
   the theme also styles as horizontal scrollers (a scrollable region a
   keyboard user cannot reach fails WCAG 2.1.1).
+- The site's text is set in two self-hosted faces cut from Inter 4.1 (SIL
+  Open Font License 1.1, `static/fonts/OFL.txt`) by
+  `tools/build/gen-body-font.py`, and named in the one font stack every
+  rule inherits, `--hx-font-sans` in `assets/css/custom.css`. "AP Body"
+  (upright and italic, weight 400–700, optical size kept) has Inter's tailed
+  `l` and seriffed `I` as its default letters, so CaI₂ cannot be read as
+  "Cal₂", and leaves out Inter's contextual alternates, which would draw a
+  typed `->` as an arrow. "AP SupSub" leads the stack, limited by
+  `unicode-range` to the Unicode superscripts and subscripts, and draws them
+  at a real `<sup>`/`<sub>`'s size and position with line metrics that
+  cannot make a line taller. A metric-matched local Arial ("AP Body
+  Fallback") holds the layout while the web font loads, and every page
+  preloads the upright file; the build audit checks that the preload names
+  the file the stylesheet does. Characters Inter lacks (the generator prints
+  them: ⇌, ⟨ ⟩, ⓐ and a few operators) fall through to the system font.
+  Math figures and KaTeX set their own fonts.
 - Static diagrams are accessible inline SVG. New figures are authored as
   graph-core spec JSON in the `apfigure` shortcode and rendered in the
   browser by the `<ap-figure>` component (measured text metrics plus a

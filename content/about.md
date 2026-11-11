@@ -51,6 +51,12 @@ You can read the source, download any book as Markdown, report problems, or
 propose improvements through issues and pull requests. The site code is MIT
 licensed; each book carries its own open license, noted on its cover page.
 
+The site's text is set in [Inter](https://rsms.me/inter/), a typeface by The
+Inter Project Authors, used under the [SIL Open Font License 1.1](/fonts/OFL.txt).
+It is served in a modified form: a subset of its characters, with the font's
+own alternate "l" and "I" made the default letters so the two can be told
+apart.
+
 ## Where it is headed
 
 The library begins with mathematics — a ladder starting at prealgebra and

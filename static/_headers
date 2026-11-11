@@ -47,9 +47,9 @@
 /katex/*
   Cache-Control: public, max-age=86400
 
-# The superscript/subscript subset font (static/fonts/, built by
-# tools/build/gen-supsub-font.py) carries a version in its name, not a content
-# hash, so it gets a day as well.
+# The site's text fonts — the body face and the superscript/subscript face
+# (static/fonts/, built by tools/build/gen-body-font.py) — carry a version in
+# their names, not a content hash, so they get a day as well.
 /fonts/*
   Cache-Control: public, max-age=86400
 

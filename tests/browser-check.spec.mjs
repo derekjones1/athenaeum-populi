@@ -1839,10 +1839,13 @@ test('a Chemistry formula field reads back what is typed, says what a bare symbo
 });
 
 // A charge or a subscript written in Unicode is drawn by the subset face
-// "AP SupSub" (assets/css/custom.css, tools/build/gen-supsub-font.py), not by
-// the system font, whose `⁻` is two or three pixels across. Three things can
+// "AP SupSub" (assets/css/custom.css, tools/build/gen-body-font.py), not by
+// the body face, whose own `⁻` is two or three pixels across. Three things can
 // break silently: the file stops loading (the page still renders, small), the
-// glyphs lose their size, or the face's line metrics push a line apart.
+// glyphs lose their size, or the face's line metrics push a line apart. The
+// face draws each character as the body face's own glyph at the theme's <sup>
+// size, so a real <sup>/<sub> set in the body stack is what it is compared
+// with.
 test('a Unicode charge or subscript is drawn by the enlarged subset font, as tall as a real <sup>, and adds no height to its line', async ({ page }) => {
   await gotoBuiltPage(page, '/physical-sciences/chemistry/02-atoms-molecules-and-ions/06-ionic-and-molecular-compounds/');
   await page.evaluate(() => document.fonts.ready);
@@ -1851,7 +1854,8 @@ test('a Unicode charge or subscript is drawn by the enlarged subset font, as tal
     const style = getComputedStyle(prose);
     const px = parseFloat(style.fontSize);
     await document.fonts.load(`${px}px "AP SupSub"`, '⁻₂');
-    const system = 'ui-sans-serif, system-ui, sans-serif';
+    await document.fonts.load(`${px * 0.75}px "AP Body"`, '2');
+    const body = style.fontFamily;
     const context = document.createElement('canvas').getContext('2d');
     const ink = (font, text) => {
       context.font = font;
@@ -1875,27 +1879,130 @@ test('a Unicode charge or subscript is drawn by the enlarged subset font, as tal
       minusInProse: (() => {
         const span = document.createElement('span');
         span.textContent = '⁻';
-        prose.append(span);
-        const width = span.getBoundingClientRect().width;
+        const sup = document.createElement('sup');
+        sup.textContent = '−';
+        prose.append(span, sup);
+        const widths = { face: span.getBoundingClientRect().width / px, sup: sup.getBoundingClientRect().width / px };
         span.remove();
-        return width / px;
+        sup.remove();
+        return widths;
       })(),
-      two: { face: ink(`${px}px "AP SupSub"`, '²'), sup: ink(`${px * 0.75}px ${system}`, '2') },
-      // The theme raises a <sup> by half of its own (75%) font size.
+      two: { face: ink(`${px}px "AP SupSub"`, '²'), sup: ink(`${px * 0.75}px ${body}`, '2') },
+      sub: ink(`${px}px "AP SupSub"`, '₂'),
+      // The theme raises a <sup> by half of its own (75%) font size and lowers
+      // a <sub> by a quarter of it.
       supFoot: px * 0.75 * 0.5,
+      subFoot: -px * 0.75 * 0.25,
       lines: { plain: line('Na and Cl'), charged: line('Na⁺ and Cl⁻, SO₄²⁻') },
       normalLines: { plain: line('Na and Cl', 'normal'), charged: line('Na⁺ and Cl⁻, SO₄²⁻', 'normal') },
     };
   });
   expect(measured.family, 'the body font stack leads with the subset face').toMatch(/^"?AP SupSub"?,/);
   expect(measured.loaded, 'the subset font file loaded').toBe(true);
-  // 338 units of the face's 800-unit em. A system font's own `⁻` differs by
-  // platform (about 0.32 em on a Mac), so the face's advance is what is asked.
-  expect(measured.minusInProse, 'a superscript minus in prose has the subset face\'s advance').toBeCloseTo(338 / 800, 2);
+  // The body face's own `⁻` has nearly the same advance as a real <sup>−</sup>
+  // (0.43 em), so the advance cannot show which face drew it; the browser
+  // says so instead.
+  expect(measured.minusInProse.face, 'a superscript minus in prose is as wide as a real <sup>−</sup>').toBeCloseTo(measured.minusInProse.sup, 2);
+  const cdp = await page.context().newCDPSession(page);
+  await cdp.send('DOM.enable');
+  await cdp.send('CSS.enable');
+  const { root } = await cdp.send('DOM.getDocument', { depth: -1 });
+  const { nodeIds } = await cdp.send('DOM.querySelectorAll', { nodeId: root.nodeId, selector: 'main#content p' });
+  let charged = 0;
+  for (const nodeId of nodeIds) {
+    const { fonts } = await cdp.send('CSS.getPlatformFontsForNode', { nodeId });
+    if (fonts.some((font) => font.familyName === 'AP SupSub' && font.isCustomFont)) charged += 1;
+  }
+  expect(charged, 'the page\'s charges and subscripts are drawn by the subset face').toBeGreaterThan(0);
   expect(Math.abs(measured.two.face.height - measured.two.sup.height), 'a Unicode ² is as tall as a real <sup>2</sup>').toBeLessThan(1.5);
   expect(Math.abs(measured.two.face.foot - measured.supFoot), 'a Unicode ² stands where a real <sup>2</sup> stands').toBeLessThan(1.5);
+  expect(Math.abs(measured.sub.foot - measured.subFoot), 'a Unicode ₂ stands where a real <sub>2</sub> stands').toBeLessThan(1.5);
   expect(measured.lines.charged, 'a prose line with charges is no taller than one without').toBe(measured.lines.plain);
   expect(measured.normalLines.charged, 'nor is one at `line-height: normal`').toBe(measured.normalLines.plain);
+});
+
+// The body face "AP Body" (assets/css/custom.css, tools/build/gen-body-font.py)
+// exists so that capital I and lowercase l differ: in the system sans fonts
+// CaI₂ reads as "Cal₂". It is Inter with its tailed l and seriffed I made the
+// default letters, and with its contextual alternates left out, because Inter's
+// `calt` draws a typed `->` as an arrow and moves parentheses up beside
+// capitals. What can break silently: the file stops loading or a rule stops
+// inheriting the stack (the page still renders, in the system font), the
+// alternates are lost in a rebuild, or `calt` comes back. The browser itself
+// says which font drew each element (CDP CSS.getPlatformFontsForNode), so the
+// check is on the page, not on a canvas that names the face.
+test('prose, a formula field and its "Read as" line are set in the body face, whose I and l differ and whose -> stays two characters', async ({ page }) => {
+  await gotoBuiltPage(page, '/physical-sciences/chemistry/02-atoms-molecules-and-ions/07-chemical-nomenclature/');
+  await page.evaluate(() => document.fonts.ready);
+
+  const item = page.locator('text-in[data-answer="HgS"]');
+  await waitForUpgrade(item, (el) => Boolean(customElements.get('text-in')) && Boolean(el.querySelector('.ap-textin-field')));
+  await item.locator('.ap-textin-field').fill('CaI2');
+  await expect(item.locator('.ap-textin-reading')).toHaveText('Read as: CaI₂');
+
+  const cdp = await page.context().newCDPSession(page);
+  await cdp.send('DOM.enable');
+  await cdp.send('CSS.enable');
+  const { root } = await cdp.send('DOM.getDocument', { depth: 0 });
+  const drawnBy = async (selector) => {
+    const { nodeId } = await cdp.send('DOM.querySelector', { nodeId: root.nodeId, selector });
+    expect(nodeId, `${selector} is on the page`).toBeGreaterThan(0);
+    const { fonts } = await cdp.send('CSS.getPlatformFontsForNode', { nodeId });
+    // The face that drew the most glyphs; a stray character Inter lacks may
+    // fall through to the next face in the stack.
+    return [...fonts].sort((a, b) => b.glyphCount - a.glyphCount)[0];
+  };
+  for (const [selector, what] of [
+    ['main#content p', 'regular prose'],
+    ['main#content p strong', 'bold prose'],
+    ['main#content p em', 'italic prose'],
+    ['text-in[data-answer="HgS"] .ap-textin-field', 'a formula field'],
+    ['text-in[data-answer="HgS"] .ap-textin-reading', 'its "Read as" line'],
+  ]) {
+    const font = await drawnBy(selector);
+    expect(font?.familyName, `${what} is drawn by the body face`).toBe('AP Body');
+    expect(font?.isCustomFont, `${what} is drawn by the web font, not a local one`).toBe(true);
+  }
+  const styles = await page.evaluate(() => ({
+    bold: getComputedStyle(document.querySelector('main#content p strong')).fontWeight,
+    italic: getComputedStyle(document.querySelector('main#content p em')).fontStyle,
+    italicLoaded: [...document.fonts].some((face) => /AP Body/i.test(face.family) && face.style === 'italic' && face.status === 'loaded'),
+  }));
+  expect(Number(styles.bold), 'the bold sample is bold').toBeGreaterThanOrEqual(600);
+  expect(styles.italic, 'the italic sample is italic').toBe('italic');
+  expect(styles.italicLoaded, 'the italic file loaded, so italics are not slanted by the browser').toBe(true);
+
+  const measured = await page.evaluate(async () => {
+    await document.fonts.load('64px "AP Body"', 'Il->3x4(NH');
+    const context = document.createElement('canvas').getContext('2d');
+    // Kerning off: a kerned pair is not a substitution, and the comparison
+    // below is with the characters' own advances.
+    context.fontKerning = 'none';
+    const measure = (family, text) => {
+      context.font = `64px ${family}`;
+      const m = context.measureText(text);
+      return { advance: m.width, ink: m.actualBoundingBoxLeft + m.actualBoundingBoxRight, descent: m.actualBoundingBoxDescent };
+    };
+    const lookalike = (family) => Math.abs(measure(family, 'I').ink - measure(family, 'l').ink) / 64;
+    const sum = (family, text) => [...text].reduce((total, character) => total + measure(family, character).advance, 0);
+    return {
+      body: lookalike('"AP Body"'),
+      system: lookalike('system-ui, sans-serif'),
+      arrow: { whole: measure('"AP Body"', '->').advance, parts: sum('"AP Body"', '->') },
+      times: { whole: measure('"AP Body"', '3x4').advance, parts: sum('"AP Body"', '3x4') },
+      paren: { beside: measure('"AP Body"', '(N').descent, alone: measure('"AP Body"', '(').descent },
+    };
+  });
+  // Ink widths at 64 px: the seriffed I is about 0.26 em wide and the tailed l
+  // about 0.16; the system font's two are bars within about 0.01 em of each
+  // other. The second line is the control that shows the measure can fail.
+  expect(measured.body, 'the body face\'s I and l are told apart by their ink').toBeGreaterThan(0.05);
+  expect(measured.system, 'the control: the system font\'s I and l are the look-alike pair').toBeLessThan(0.02);
+  // With Inter's `calt`, "->" is one arrow 59 px wide at 64 px where its two
+  // characters are 67.6, and a "(" beside a capital moves up 3.4 px.
+  expect(measured.arrow.whole, '"->" is drawn as its two characters').toBeCloseTo(measured.arrow.parts, 1);
+  expect(measured.times.whole, '"3x4" is drawn as its three characters').toBeCloseTo(measured.times.parts, 1);
+  expect(measured.paren.beside, 'a parenthesis beside a capital stays where it stands alone').toBeCloseTo(measured.paren.alone, 1);
 });
 
 // Exercise 2.47 asks "ionic or covalent?" of six compounds and, of the ionic
@@ -1975,6 +2082,17 @@ test('a figure shown smaller than its file can be enlarged in place: fit, the fi
   expect(href).toMatch(/^\/media\/chemistry\/CNX_Chem_02_05_PerTable1-1300\.webp$/);
   expect((await page.request.get(href)).ok()).toBe(true);
 
+  await link.scrollIntoViewIfNeeded();
+  // A lazy figure above the link starts loading as the link scrolls in, and
+  // its file's own aspect ratio moves the link by a fraction of a pixel. A
+  // click in that frame finds the link "not stable" and Playwright, retrying,
+  // scrolls it to the window's bottom edge — a page scroll the viewer did not
+  // make. Let the figures in reach finish first.
+  await page.waitForFunction(() => [...document.querySelectorAll('main img')].every((img) => {
+    const { top, bottom } = img.getBoundingClientRect();
+    return img.complete || bottom < -innerHeight || top > 2 * innerHeight;
+  }));
+  await page.evaluate(() => new Promise((done) => requestAnimationFrame(() => requestAnimationFrame(done))));
   await link.scrollIntoViewIfNeeded();
   const inlineWidth = (await inline.boundingBox()).width;
   const pageScroll = await page.evaluate(() => window.scrollY);

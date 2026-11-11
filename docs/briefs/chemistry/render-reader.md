@@ -58,9 +58,11 @@ or serve the site. Do not spawn sub-agents.**
   gets. Each is the same on every item of the book, so read it against
   every key on the page (2.7: the guide's example formula was the key of
   one item, and nothing told the learner how a hydrate's dot is typed).
-- **Letters that share a glyph**: in the page's sans font a capital I and a
-  lowercase l are one shape (CaI₂ reads as "Cal₂"). Report each formula
-  where the reading changes the substance; it is the parent's to raise.
+- **Letters that share a glyph**: the page's text face draws a tailed l and
+  a seriffed I, but a math figure's labels set their own Helvetica/Arial,
+  in which a capital I and a lowercase l are one shape (CaI₂ reads as
+  "Cal₂"). Report each figure label where the reading changes the
+  substance; it is the parent's to raise.
 - Visual defects: a row cut off at the column edge, clipping, overlap, an
   empty box, a control with no label.
 

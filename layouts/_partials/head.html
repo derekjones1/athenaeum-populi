@@ -58,6 +58,14 @@
     <link href="{{ $customCss.RelPermalink }}" rel="stylesheet" />
   {{- end }}
 
+  {{- /* The upright body face (assets/css/custom.css, "AP Body") sets nearly
+        every word on every page, so it is fetched with the stylesheet rather
+        than after the first layout asks for it; the italic file is left to
+        load on demand. `crossorigin` is required even same-origin, for the
+        reason given at the KaTeX preloads below. tools/build/audit-build.mjs
+        checks that every page preloads the file the stylesheet names. */ -}}
+  <link rel="preload" href="{{ "fonts/ap-body-v1.woff2" | relURL }}" as="font" type="font/woff2" crossorigin />
+
   {{ partial "components/analytics/analytics.html" . }}
 
   {{- $scriptsHead := slice -}}

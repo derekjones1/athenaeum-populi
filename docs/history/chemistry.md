@@ -1137,6 +1137,87 @@ subsection is touched is a reading, so the author names the subsection in
 the ledger note and the checker reads the claim. Nothing was re-authored
 and no item changed.
 
+### A body font that tells I from l
+
+Decision: Inter 4, with its tailed l and seriffed I, for all of the site's
+text. Derek chose it from a five-way specimen. He preferred the look of
+Atkinson Hyperlegible Next, but it draws a slashed zero and lacks Greek,
+primes, arrows and the superscript/subscript block — 10,310 characters of
+the corpus would have fallen back to the system font. Source Sans 3 sets
+visibly smaller at 16 px.
+
+What was built. `tools/build/gen-body-font.py` cuts three files from the
+pinned Inter 4.1 release, and replaces `gen-supsub-font.py`:
+
+- "AP Body", upright and italic (`static/fonts/ap-body-v1.woff2`, 87,788
+  bytes; `ap-body-italic-v1.woff2`, 96,960). The character map points l, I
+  and every letter `cv05` and `cv08` cover (ĺ ļ ľ ŀ ł, Ì Í Î Ï Ĩ Ī Ĭ Į İ) at
+  the alternates, so no stylesheet has to ask for them. Weight runs
+  400–700. The subset is eleven Unicode blocks plus every character Inter
+  has that the content, the templates, the media manifests and the
+  components use. The family is renamed; the copyright and licence records
+  stay, and `static/fonts/OFL.txt` is now Inter's licence. The about page
+  credits the font.
+- Optical size was kept. Pinned to the 14-unit text default, the two files
+  were 56,392 and 61,480 bytes (117,872 together, against 184,748 kept);
+  kept stays well under the 300 KB set as the limit, and the specimen Derek
+  approved had it on.
+- Only kerning, marks, `ccmp`, `locl`, `case`, `tnum` and `pnum` are kept.
+  Measured with the source Inter in Chrome at 64 px, its `calt` draws a
+  typed `->` as one arrow 59.1 px wide where the two characters are 67.6
+  (`<-`, `=>` and `-->` likewise), and raises a parenthesis beside a capital
+  by 3.4 px: "(NH4)2" and "[H]". This site prints typing examples, so the
+  page must show the characters a learner types. "3x4" was not changed by
+  Inter 4.1's `calt` in Chrome; it is tested anyway.
+- Line metrics: Inter's ascent and descent are 0.969 and 0.241 em (19.4 px
+  at 16 px). The prose line-height is an explicit 28 px, so no line grew.
+- "AP Body Fallback": the local Arial (or Liberation Sans) with
+  `size-adjust: 107.1%` — the two faces' advances weighted by the content's
+  own character frequencies — and ascent 90.4%, descent 22.5%, line gap 0,
+  so the page does not re-wrap when the web font arrives. Next.js publishes
+  107%, 90% and 22.5% for the same pair.
+- The page head preloads the upright file. The build audit now reads the
+  file name from the stylesheet's `@font-face` and fails a page that
+  preloads another, and holds every font preload, not only KaTeX's, to
+  `crossorigin` and a built file.
+- Twenty-six characters in those sources are not in Inter and fall through
+  to the system font: ᵂ ⇄ ⇌ ∈ ∓ ∙ ∝ ∣ ∩ ∪ ≡ ⋅ ⌈ ⌉ ⏐ ⓐ ⓑ ⓒ ⓓ ♀ ♂ ⟨ ⟩ ⨯ ｜ and
+  🎉. Most stand inside KaTeX math or component source, which this face
+  never draws.
+
+What the first attempt got wrong. The superscript face was first recut
+the way the Noto one had been: Inter's own superior figures, the em cut
+from 2048 to 1486 units to enlarge them 1.38 times, lowered 341 units. It
+passed the browser test — a ² 8.85 px tall against 8.85 for a real
+`<sup>2</sup>`, its feet at 6.0 px — but on the page it was visibly
+heavier and wider than the text: Inter draws its superiors thick so they
+survive at their own small size. A ² was 9.7 px wide against 7.3, and
+SO₄²⁻ 51.8 px against 45.5 tagged. `ap-supsub-v2.woff2` (4,948 bytes)
+instead draws each character as a composite of the body face's own glyph
+at 75%, placed where the theme puts a `<sup>` (0.375 em up) or a `<sub>`
+(0.1875 em down), so a Unicode charge and a tagged one look the same at
+every weight. The browser test now also compares a ⁻ with a real
+`<sup>−</sup>` and a ₂ with a real `<sub>2</sub>`, and asks the browser
+which face drew them.
+
+Tests: the superscript test compares against the body stack instead of
+the bare system stack. A new browser test on 2.7 asks Chrome which font drew
+regular, bold and italic prose, a formula field and its "Read as" line;
+checks that I and l differ in ink width (and that the system font's do not,
+the control); and checks that `->`, `3x4` and a parenthesis beside a capital
+are drawn as their own characters. The figure-viewer test failed once the
+text re-wrapped: a lazy figure above 2.5's periodic table now loads as the
+link scrolls in and moves it by 0.19 px, and Playwright, finding the link
+"not stable", scrolled it to the window's bottom edge before clicking. The
+test now waits for the figures in reach to load; the viewer was not at
+fault.
+
+Not changed: math figures set their own Helvetica/Arial and keep the
+look-alike letters; changing that re-flows every label in about 1,500
+figures and is a separate decision. The standalone 404 page keeps its inline
+system stack: it loads no site stylesheet, and a second copy of the
+`@font-face` there is a file name a rename would have to remember.
+
 ## The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under

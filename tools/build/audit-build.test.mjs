@@ -281,6 +281,33 @@ test('build audit: content images, duplicated chrome, and missing no-JavaScript 
       'a font preload must point at an emitted font file',
     );
 
+    // The body face: every page that links the site stylesheet preloads the
+    // upright file the stylesheet's "AP Body" @font-face names — the italic
+    // face is not the one asked for, and a stale name is a second download.
+    const siteCss = '@font-face{font-family:"AP Body";src:url(/fonts/ap-body-v2.woff2)format("woff2");font-style:normal}'
+      + '@font-face{font-family:"AP Body";src:url(/fonts/ap-body-italic-v2.woff2)format("woff2");font-style:italic}';
+    // Immutable-cached, so named by its own hash like the real one.
+    const siteCssName = `main.${createHash('sha256').update(siteCss).digest('hex')}.css`;
+    const siteLink = `<link rel="stylesheet" href="/css/compiled/${siteCssName}">`;
+    const bodyPreload = (name) => `<link rel="preload" href="/fonts/${name}.woff2" as="font" type="font/woff2" crossorigin>`;
+    const bodyFiles = ['fonts/ap-body-v1.woff2', 'fonts/ap-body-v2.woff2', 'fonts/ap-body-italic-v2.woff2'];
+    const withSiteCss = (head) => {
+      prepare('<p>Semantic content.</p>', bodyFiles, { head });
+      mkdirSync(join(fixture, 'css', 'compiled'), { recursive: true });
+      writeFileSync(join(fixture, 'css', 'compiled', siteCssName), siteCss);
+      return audit();
+    };
+    const preloaded = withSiteCss(bodyPreload('ap-body-v2') + siteLink);
+    assert.equal(preloaded.status, 0, `a page preloading the body face its stylesheet names should pass: ${preloaded.stderr}`);
+    assert.match(withSiteCss(siteLink).stderr, /body font preload missing or stale/, 'a page without the body font preload must fail');
+    assert.match(withSiteCss(bodyPreload('ap-body-v1') + siteLink).stderr, /body font preload missing or stale/, 'a preload of a superseded body font file must fail');
+    assert.match(withSiteCss(bodyPreload('ap-body-italic-v2') + siteLink).stderr, /body font preload missing or stale/, 'preloading only the italic face must fail');
+    assert.match(
+      withSiteCss(bodyPreload('ap-body-v2').replace(' crossorigin', '') + siteLink).stderr,
+      /font preload without crossorigin/,
+      'the crossorigin rule holds on a page without math too',
+    );
+
     prepare('<p>Semantic content.</p>', [], { katexCss: '.katex{font-size:1em}' });
     assert.match(
       audit().stderr,

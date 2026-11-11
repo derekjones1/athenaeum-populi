@@ -5,28 +5,81 @@
  */
 
 /*
- * Unicode superscripts and subscripts (Na⁺, SO₄²⁻, H₂O, x²) at a readable
- * size. The system body font draws them very small — a lone ⁻ is two or three
- * pixels on a standard screen. This face holds only those characters (a
- * subset of Noto Sans, built by tools/build/gen-supsub-font.py) and is
- * limited to them by `unicode-range`; it leads the body font stack below, and
- * every other character falls through to the system font as before. The
- * enlargement is in the font file itself, not in a `size-adjust` here: its
- * glyphs are drawn at the size and height the theme gives a real <sup>/<sub>,
- * and its line metrics are no larger than a system font's, so a line with a
- * charge in it is no taller than one without. Math figures set their own
- * font (ap-figure.js) and are not affected.
+ * The site's text faces. Everything — prose, navigation, buttons, answer
+ * fields — inherits `--hx-font-sans` below, so these few rules set the type
+ * of the whole site. Math figures set their own font (ap-figure.js) and
+ * KaTeX sets its own; neither is affected.
+ *
+ * "AP Body" is Inter 4.1 (The Inter Project Authors, SIL Open Font License
+ * 1.1; static/fonts/OFL.txt), cut by tools/build/gen-body-font.py. It exists
+ * because capital I and lowercase l are one shape in the system sans fonts:
+ * CaI₂ read as "Cal₂" and AlF₃ as "AIF₃". Inter's own alternates — the l with
+ * a tail and the I with serifs — are made the default letters in the file
+ * itself, so the two always differ, in every browser, with no feature setting
+ * here to forget. The file keeps only kerning, marks, the localized and
+ * case-sensitive forms and the figure-spacing features. Contextual alternates
+ * (`calt`) are left out on purpose: the site prints literal typing examples
+ * such as "2H2 + O2 -> 2H2O" and "(NH4)2SO4", and Inter's `calt` would draw
+ * `->` as an arrow and raise a parenthesis beside a capital. Weight runs
+ * 400–700 and the optical-size axis is kept, so headings get Inter's display
+ * spacing. Characters the subset lacks (a few arrows, operators and circled
+ * letters; the generator prints the list) fall through to the next face. The
+ * upright file is preloaded from the page head (layouts/_partials/head.html).
+ *
+ * "AP Body Fallback" is the local Arial (or its metric twin, Liberation
+ * Sans) scaled to Inter's measure, so text set before the web font arrives
+ * does not re-wrap when it swaps in: `size-adjust` is the ratio of the two
+ * faces' advance widths weighted by the character frequencies of the site's
+ * content (107.1%), and the line metrics are Inter's (0.969 and 0.241 em)
+ * divided by that ratio.
+ *
+ * "AP SupSub" draws Unicode superscripts and subscripts (Na⁺, SO₄²⁻, H₂O,
+ * x²) at a readable size; a body font draws them very small — a lone ⁻ is
+ * two or three pixels on a standard screen. It is cut from the same Inter
+ * file, holds only those characters and is limited to them by
+ * `unicode-range`, so it leads the stack and every other character falls
+ * through to "AP Body". Each character is the body face's own glyph at the
+ * size and height the theme gives a real <sup>/<sub> (75%, raised half or
+ * lowered a quarter of that), drawn so in the font file itself rather than
+ * by a `size-adjust` here, so a Unicode charge and a tagged one look alike.
+ * Its line metrics are no larger than the body face's, so a line with a
+ * charge in it is no taller than one without.
  */
 @font-face {
   font-family: "AP SupSub";
-  src: url("/fonts/ap-supsub-v1.woff2") format("woff2");
+  src: url("/fonts/ap-supsub-v2.woff2") format("woff2");
   font-weight: 400 700;
   font-display: swap;
   unicode-range: U+00B2-00B3, U+00B9, U+2070-209C;
 }
 
+@font-face {
+  font-family: "AP Body";
+  src: url("/fonts/ap-body-v1.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AP Body";
+  src: url("/fonts/ap-body-italic-v1.woff2") format("woff2");
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AP Body Fallback";
+  src: local("Arial"), local("ArialMT"), local("Liberation Sans"), local("LiberationSans");
+  size-adjust: 107.1%;
+  ascent-override: 90.4%;
+  descent-override: 22.5%;
+  line-gap-override: 0%;
+}
+
 :root {
-  --hx-font-sans: "AP SupSub", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --hx-font-sans: "AP SupSub", "AP Body", "AP Body Fallback", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
   /* Calm scholarly blue used by the site's navigation and accents. */
   --primary-hue: 214deg;

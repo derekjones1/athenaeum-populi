@@ -520,7 +520,7 @@ const KATEX_PRELOAD_FACES = [
   'KaTeX_Main-Regular', 'KaTeX_Main-Bold', 'KaTeX_Math-Italic', 'KaTeX_AMS-Regular',
   'KaTeX_Size1-Regular', 'KaTeX_Size2-Regular', 'KaTeX_Size3-Regular', 'KaTeX_Size4-Regular',
 ];
-function katexFontPreloads(document) {
+function fontPreloads(document) {
   const preloads = [];
   for (const match of document.matchAll(openTagRe('link'))) {
     const rel = htmlAttribute(match[0], 'rel').toLowerCase().split(/\s+/);
@@ -530,20 +530,46 @@ function katexFontPreloads(document) {
   return preloads;
 }
 for (const document of mathDocuments) {
-  const preloads = katexFontPreloads(document);
+  const preloads = fontPreloads(document);
   if (KATEX_PRELOAD_FACES.some((face) => !preloads.some(({ href }) => href.endsWith(`/${face}.woff2`)))) {
     problems.push('KaTeX font preload links missing on a rendered math page');
     break;
   }
 }
-if (mathDocuments.some((document) => katexFontPreloads(document).some(({ crossorigin }) => !crossorigin))) {
-  problems.push('KaTeX font preload without crossorigin (font fetch cannot reuse it)');
+// The same two rules hold for every font preload on any page, not only
+// KaTeX's: the body face is preloaded from every page head.
+if (htmlDocuments.some((document) => fontPreloads(document).some(({ crossorigin }) => !crossorigin))) {
+  problems.push('font preload without crossorigin (font fetch cannot reuse it)');
 }
-if (mathDocuments.some((document) => katexFontPreloads(document).some(({ href }) => {
+if (htmlDocuments.some((document) => fontPreloads(document).some(({ href }) => {
   if (!href || /^(?:[a-z]+:)?\/\//i.test(href)) return false;
   return !existsSync(join(root, href.split(/[?#]/, 1)[0].replace(/^\/+/, '')));
 }))) {
-  problems.push('KaTeX font preload does not resolve to a built file');
+  problems.push('font preload does not resolve to a built file');
+}
+// The upright body face ("AP Body" in assets/css/custom.css) sets nearly every
+// word, and the page head preloads it so the first layout already has its
+// metrics. The file name carries a version, so read the one the site
+// stylesheet names and require that same file in every page that links the
+// stylesheet: a renamed font with a stale preload downloads twice.
+const siteStylesheet = emittedCss
+  .filter(({ file }) => relative(root, file).split(sep).join('/').startsWith('css/compiled/'))
+  .map(({ text }) => text)
+  .join('\n');
+const bodyFaceUrl = [...siteStylesheet.matchAll(/@font-face\s*\{([^}]*)\}/gi)]
+  .map((match) => match[1])
+  .filter((rule) => /font-family\s*:\s*["']?AP Body["']?\s*(?:;|$)/i.test(rule) && !/font-style\s*:\s*italic/i.test(rule))
+  .map((rule) => /src\s*:\s*url\(\s*["']?([^"')]+)/i.exec(rule)?.[1])
+  .find(Boolean);
+if (bodyFaceUrl) {
+  const linksSiteStylesheet = (document) => [...document.matchAll(openTagRe('link'))].some((match) => (
+    htmlAttribute(match[0], 'rel').toLowerCase().split(/\s+/).includes('stylesheet')
+    && /\/css\/compiled\//.test(htmlAttribute(match[0], 'href'))
+  ));
+  if (htmlDocuments.some((document) => linksSiteStylesheet(document)
+    && !fontPreloads(document).some(({ href }) => href.split(/[?#]/, 1)[0] === bodyFaceUrl))) {
+    problems.push(`body font preload missing or stale (the stylesheet names ${bodyFaceUrl})`);
+  }
 }
 if (mathDocuments.some((document) => {
   const mathml = (document.match(/\bkatex-mathml\b/g) || []).length;

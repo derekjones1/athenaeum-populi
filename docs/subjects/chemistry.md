@@ -701,8 +701,11 @@ mhchem extension, so nothing is loaded:
 - **Life-sciences "Display chemical equations are text, not KaTeX" does not
   apply to this book**: its reactions are `$$\ce{…}$$`.
 - **State symbols** are upright inside `\ce{…}` (mhchem follows IUPAC) and
-  italic in prose as the book prints them: `H₂O(*l*)`. A lowercase upright
-  `l` in the body font is not distinguishable from `I` or `1`.
+  italic in prose as the book prints them: `H₂O(*l*)`. The body face
+  ("AP Body", Inter with its tailed `l` and seriffed `I` as the default
+  letters; `assets/css/custom.css`) tells `l`, `I` and `1` apart upright
+  too, but a math figure sets its own Helvetica/Arial, in which they are
+  one shape.
 - **A cancelled unit is `\cancel{\text{…}}`**:
   `$$4.7\ \cancel{\text{g K}} \times \frac{1\ \text{mol K}}{39.10\ \cancel{\text{g K}}} = 0.12\ \text{mol K}$$`.
   The book prints a horizontal strike, which is hard to read through two
