@@ -52,6 +52,10 @@ catch.
   names, in its order; the key is the source's.
 - **A `selfcheck`:** the model answer is the source solution; each rubric
   clause is in the model answer's words.
+- **A filler beyond the floor is not a finding** when it is the ONE item
+  of a headed body subsection no source item touches and the footer says
+  so (playbook "Added items"); a second one for that subsection, or one
+  for a subsection a source item already reaches, is.
 - **A filler:** ONE module sentence or glossary entry fixes its key; no
   other answer fits the blank; and the blank is not one half of a contrast
   pair the stem prints the other half of. Grade a `textin` through the real

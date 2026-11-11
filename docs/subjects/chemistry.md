@@ -428,6 +428,23 @@ selfchecks, source defects, the footer — and each is stated once.
   - **A blank followed by its head noun** ("an ________ property") lists
     the phrase with the noun in `accept`, since a learner may type both
     words.
+- **Beyond the floor: one item for a subsection nothing practises**
+  *(Derek, November 11, 2026)*. A group already at the floor takes an
+  added item for one reason only: a headed subsection of the body that no
+  source item on the page touches. It gets ONE item, a filler under every
+  rule above, its key fixed by the module's own glossary, table, or
+  sentence. Section 2.7's six keyed exercises and two Check Your Learnings
+  fill the floor many times over and ask nothing about an acid, so "Binary
+  Acids" and "Oxyacids" each have one glossary recall (`binary acid`,
+  `oxyacid`). The footer names the items and the reason ("since no keyed
+  exercise or Check Your Learning asks …"). Never a second item for a
+  subsection, never one for a subsection a source item already reaches
+  (an accepted second answer counts: 2.7's HBr item accepts "hydrobromic
+  acid" and still is not practice in naming acids, which is why the two
+  recalls stand), and never to lengthen a group for its own sake. Whether
+  a subsection is "touched" is a reading, not something a gate can count:
+  the author names the subsection in the ledger note, and the checker
+  reads the claim.
 - **Order inside a group:** the source's keyed items first, in source
   order, then the added items — except that an added item goes above a
   keyed `selfcheck` whose model answer prints its key (1.3: the "directly

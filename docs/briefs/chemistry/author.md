@@ -198,7 +198,11 @@ goes wrong.
 - **Fillers** (glossary-recall `textin`, summary or body cloze,
   select-the-term multiple choice) only where an objective group is short
   of the floor, each from ONE module sentence or glossary entry you name in
-  your ledger. Never a numeric `textin`. The playbook's four filler rules
+  your ledger. **One exception, beyond the floor:** a headed body
+  subsection that no source item on the page touches gets ONE filler
+  (2.7's "Binary Acids" and "Oxyacids"); name the subsection in the ledger
+  note and the items and the reason in the footer (playbook "Added
+  items"). Never a numeric `textin`. The playbook's four filler rules
   bind: one answer fits (grade the blank's likely rivals — a synonym, any
   other member of an open list — and drop the sentence if one is as right
   as the key); never a word its own objective heading prints; never one

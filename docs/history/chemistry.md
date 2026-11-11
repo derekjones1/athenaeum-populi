@@ -1124,6 +1124,19 @@ typed.
   the general answer is keeping typed answers across a navigation, which
   is a separate piece of work.
 
+### Added items beyond the floor: the rule
+
+Decision: "Keep, and write the rule". The two acid recalls of 2.7 stay as
+authored. The playbook's "Added items" now says when an item may be added
+to a group already at the floor: one filler for a headed body subsection
+that no source item on the page touches, keyed by the module's own
+glossary, table, or sentence, named with its reason in the footer — and
+never a second one, never for a subsection a source item reaches. The
+author and checker briefs carry one line each. No gate: whether a
+subsection is touched is a reading, so the author names the subsection in
+the ledger note and the checker reads the claim. Nothing was re-authored
+and no item changed.
+
 ## The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under
