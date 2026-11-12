@@ -116,7 +116,11 @@ an item. So:
     datum from a picture; **needs no table the check page lacks** — every
     measured factor is printed in its stem or is in the periodic table
     (1.6's fuel-economy example needs the section's table of conversion
-    factors, and is not used); is, **in the part the item asks**, as the
+    factors, and is not used). That holds for every block, an appendix
+    included: an example that sends the reader to an appendix other than A
+    is not used, and the rule costs little — 18 of the book's 289 worked
+    examples do (one in chapter 5, five in chapter 16), counted from the
+    CNXML's links and its "Appendix X" on November 11, 2026. Is, **in the part the item asks**, as the
     source prints it — the section page corrected nothing in that part's
     question, its data, the working that leads to its answer, or the
     answer, and no Source note is about it (a known defect is not an
@@ -206,9 +210,9 @@ an item. So:
   than this book's periodic table prints; an answer worked from the table
   is graded as correct."
 - **The periodic table is on the page** (the rail control resolves from
-  the book root), so no sentence is added for it. How an item reaches any
-  other appendix is still open (`docs/subjects/chemistry.md`, "What is
-  still open") and is settled before the first check item that needs one.
+  the book root), so no sentence is added for it. **No check item needs any
+  other appendix** ("A usable example": no table the check page lacks), so
+  a check carries no link to one.
 - **The footer** follows the section-page form — licence, deep link to
   the source book, and a `Changes:` clause that says the calculation
   questions re-ask the chapters' worked examples with the answers the

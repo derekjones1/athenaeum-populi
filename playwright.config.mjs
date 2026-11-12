@@ -1,11 +1,18 @@
 import { defineConfig, devices } from '@playwright/test';
 import { fileURLToPath } from 'node:url';
 
-// Port 1315, not Hugo's 1313: the suite must never attach to a running
-// `hugo server`. That server injects livereload, serves unfingerprinted CSS,
-// and overwrites `public/` as it renders — so measuring colour, size, and
-// contrast against it reports the dev server rather than the shipped site.
-const baseURL = process.env.BASE_URL || 'http://127.0.0.1:1315';
+// The suite's own port — not Hugo's 1313, and not serve:public's default
+// 1315 either. It must never attach to a running `hugo server`: that server
+// injects livereload, serves unfingerprinted CSS, and overwrites `public/`
+// as it renders — so measuring colour, size, and contrast against it reports
+// the dev server rather than the shipped site. And 1315 is the port every
+// session serves the build on for screenshots, for the render readers, and
+// for a page left open for review, so a server someone left running there
+// (November 11, 2026: one from that morning) stopped the suite from
+// starting, since it refuses a server it did not start. Nothing else in the
+// repo is told to use this port.
+const suitePort = '1319';
+const baseURL = process.env.BASE_URL || `http://127.0.0.1:${suitePort}`;
 
 // The shim launches the installed Chrome with stdout/stderr pointed at
 // /dev/null, because Chrome's helper daemons (crashpad, GoogleUpdater)
@@ -71,6 +78,7 @@ export default defineConfig({
     ? undefined
     : {
         command: webServerCommand,
+        env: { PORT: suitePort },
         url: baseURL,
         // Never inherit a server this config did not start: a leftover
         // `hugo server` on the same port would silently invalidate the run.

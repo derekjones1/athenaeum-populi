@@ -264,7 +264,9 @@ keeps only the two facts that are architectural:
   gates, which run everywhere regardless, still hold every key to its
   recorded verdict).
 - The browser suites never measure a dev server: Playwright builds `public/`
-  and serves it through `npm run serve:public` on port 1315, and every spec
+  and serves it through `npm run serve:public` on its own port, 1319 — not
+  the 1315 that command defaults to, where a session leaves a server up for
+  screenshots and review (`playwright.config.mjs`) — and every spec
   refuses a page carrying a livereload script or unloaded stylesheets. Set
   `PLAYWRIGHT_SKIP_BUILD=1` when a current build already exists, or
   `BASE_URL` to test a deployment. `npm run test:e2e` drives the grader

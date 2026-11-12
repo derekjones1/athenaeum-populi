@@ -85,7 +85,9 @@ campaign, the figure-alt passes, and their kit — are archived under
 
 - `npm run serve` — local Hugo server (port 1313)
 - `npm run serve:public` — serve the built `public/` with no livereload
-  (port 1315; what the screenshot tools and the browser suite read)
+  (port 1315; what the screenshot tools read, and where a page is left open
+  for review — the browser suite starts its own on port 1319, so a server
+  left running on 1315 never blocks it)
 - `npm test` — unit tests, content validation, per-page verification, the
   answer cross-check, the source-key and answer-ledger gates, math lint,
   figure label readability; stays offline and never fetches upstream — in

@@ -419,6 +419,30 @@ test('the screenshot tools default to the port serve:public serves on', () => {
   }
 });
 
+test('the browser suite serves the build on a port of its own', () => {
+  // The suite refuses a server it did not start (`reuseExistingServer:
+  // false`), and port 1315 is where a session leaves one running — for
+  // screenshots, for the render readers, for a page left open for review.
+  // On November 11, 2026 a server from that morning held 1315 and the suite
+  // would not start. So the suite's port is its own, the server it starts is
+  // told that port, and the docs that send a reader to 1315 say the suite is
+  // elsewhere.
+  const servePublicPort = capture(
+    'tools/build/serve-public.mjs',
+    /process\.env\.PORT \|\| (\d+)/,
+    'the default port serve-public.mjs listens on',
+  );
+  const config = read('playwright.config.mjs');
+  const suitePort = capture('playwright.config.mjs', /const suitePort = '(\d+)'/, 'the port the browser suite serves on');
+  assert.notEqual(suitePort, servePublicPort, 'the suite must not share the port serve:public defaults to');
+  assert.notEqual(suitePort, '1313', 'the suite must not share the Hugo dev server\'s port');
+  assert.match(config, /env: \{ PORT: suitePort \}/, 'the server the suite starts must be told the suite\'s port');
+  assert.match(config, /reuseExistingServer: false/);
+  for (const path of ['AGENTS.md', 'docs/architecture.md']) {
+    assert.match(read(path), new RegExp(`\\b${suitePort}\\b`), `${path} must name the suite's port (${suitePort})`);
+  }
+});
+
 test('the chemistry subject playbook states the rules its engine enforces', async () => {
   // Chemistry 2e was pinned and its engine work landed on November 9, 2026,
   // before any section was authored. Each claim below is one an author acts

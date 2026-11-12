@@ -1898,10 +1898,28 @@ and their ledger records carry that solve.
 
 - `kc sources` refuses a count the Solution writes as "the number of
   electrons is 54" after an earlier "53 electrons" (the judge reads a
-  number before its name). It errs toward refusing.
+  number before its name). It errs toward refusing. **Ruled to stay
+  (November 11, 2026)**: in the whole book that wording settles a keyed
+  count in one worked example, 2.3's iodine anion, which is out anyway
+  because a section item asks it again. A form nothing will use only
+  loosens the gate; do not build it.
 - 2.4 is the check's thinnest section: two two-option multiple choices.
-- How a check item reaches an appendix other than A is still open; block
-  2 (chapters 4–5) meets it with Appendix G.
+- How a check item reaches an appendix other than A: **it never does
+  (November 11, 2026)**. "No table, no item" holds for every block. The
+  source's 21 chapters were counted that day, every `<example>` and
+  `<exercise>`, by its links and its "Appendix X": 18 of 289 worked
+  examples and 18 of 873 keyed exercises send the reader to an appendix
+  other than A (16 and 18 of them to a table, C–M; two examples to
+  Appendix B's mathematics) — none in chapter 4; one example and five
+  keyed exercises in chapter 5, all Appendix G; then chapters 7, 9, and
+  13–19. So block 2 does not
+  meet the question; the section pages do, from chapter 5 ("A table
+  appendix opens in place", below).
+- Both rulings on corrected examples stand as the edition states them: a
+  correction is judged for the part the item asks, and 3.4's
+  hydrochloric-acid example stays out, because the page changed a quantity
+  in its working (per gram to per 100 g), which is not a misspelling. 3.4
+  carries three check items without it.
 
 Costs, in subagent tokens: authors 252, 303, and 268 thousand over three
 rounds of fixes; checkers 148, 169, and 138; the sweep 195 (22 minutes,
