@@ -1926,6 +1926,71 @@ rounds of fixes; checkers 148, 169, and 138; the sweep 195 (22 minutes,
 the slowest agent); the second checker 149; the solver 300; the eight-item
 re-solve 66.
 
+## A table appendix opens in place (November 11, 2026)
+
+Open since the periodic table became a control: how an item reaches any
+other appendix. Page skeleton rule 9 links the item to the appendix page,
+and following the link leaves the page and the answers typed on it. Asked
+with three forms in front of him — the table opened over the page with a
+filter, the link opened in a new tab, or typed answers kept across pages so
+that leaving costs nothing — **Derek chose the first.**
+
+What the count said first (every `<example>` and `<exercise>` of the 21
+chapters, by its links and its "Appendix X"): 18 worked examples and 18
+keyed exercises send the reader to an appendix other than A, none before
+chapter 5. So the checks never need one ("Knowledge Check 1", "What was
+left"), and the section pages need it for about three dozen items, the
+first six in chapter 5 and all of those Appendix G.
+
+What was built:
+
+- `lookup: true` on Appendices C–M (the validator: an appendix page, with
+  a table). Not A, which is the reference figure, and not B, which is
+  prose a reader goes to.
+- `layouts/_partials/utils/reference-lookups.html` and one line of JSON
+  from `toc.html`, on a section page only — the test
+  `reference-figure.html` uses for a body link to the periodic table. No
+  link render hook: the theme owns that template.
+- `assets/js/reference-lookup.js`: the link fetches the appendix page once
+  per page view and shows its content, without the heading and the
+  attribution footer, in a modal `<dialog>` at a reading width. The
+  heading row sticks to the top of the dialog's own scroller. Filter text
+  and scroll are kept per appendix until the page unloads. Escape closes
+  and keeps the filter. A long table opens with the cursor in the filter;
+  a short one (under 13 rows) opens on the table, so a phone's keyboard
+  does not cover it. A failed fetch follows the link.
+- `assets/js/lib/shared/lookup-filter.mjs`, the filter as a pure function
+  with tests: NFKC folding (so `SiF4` finds SiF₄ and `Al3+` finds Al³⁺), a
+  hyphen for the minus sign, `x` for ×, a full stop for the hydrate dot; a
+  capital read as typed where that finds anything, so `Co` is cobalt and
+  `CO` is carbon monoxide; a group's name listing its whole group.
+- Tests: the filter's unit tests; a browser test that types an answer,
+  opens Appendix G, filters it, closes, and finds the answer and the
+  filter kept, then a phone width, a short table, and a fetch that fails;
+  an accessibility test from the keyboard with axe in both themes. No
+  section links a table appendix yet, so both browser tests add the link
+  to a real section page at run time; chapter 5's run replaces it with a
+  real exercise (`docs/briefs/chemistry/run.md`, step 6).
+
+What the first browser run found: the scroll position was read at the
+dialog's `close` event, when the dialog is no longer drawn and its scroll
+reads zero. It is recorded as the reader scrolls instead; the test reopens
+the dialog and reads it.
+
+Not built: a first column that stays while a wide table scrolls sideways
+on a phone. With the filter down to a row or two the name is beside the
+values; revisit if chapter 5's pages say otherwise.
+
+### The browser suite's port
+
+The suite refused to start during Knowledge Check 1 because a
+`serve-public` from that morning still held port 1315, and the suite does
+not attach to a server it did not start. 1315 is where every session
+serves the build for screenshots, render readers, and review, so the
+collision was going to recur. The suite now serves on 1319
+(`playwright.config.mjs`; a documentation test holds the two ports apart),
+and a server left on 1315 is harmless.
+
 ## The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under

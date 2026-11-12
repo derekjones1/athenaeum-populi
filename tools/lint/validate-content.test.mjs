@@ -280,6 +280,24 @@ test('content validator: a book\'s appendices folder', () => {
     assert.notEqual(wrongLetter.status, 0, 'a page whose letter differs from its file name must fail');
     assert.match(wrongLetter.stderr, /appendix page needs `source_appendix: "B"`/);
 
+    // `lookup: true` marks a table a section's link opens in place.
+    const lookup = (value, body) => write(
+      join(appendices, 'b-essential-mathematics.md'),
+      `---\ntitle: "Appendix B: Essential Mathematics"\ndescription: A reference page.\nsource_appendix: "B"\nlookup: ${value}\nweight: 2\n---\n\n${body}\n`,
+    );
+    lookup('true', '| Unit | Value |\n|---|---|\n| 1 L | 1000 mL |');
+    const table = validate();
+    assert.equal(table.status, 0, `a lookup appendix that holds a table validates: ${table.stderr}`);
+    lookup('true', 'Prose only.');
+    const noTable = validate();
+    assert.notEqual(noTable.status, 0, 'a lookup appendix with no table must fail');
+    assert.match(noTable.stderr, /`lookup: true` marks a table to look values up in, and this page holds no table/);
+    lookup('yes', '| Unit | Value |\n|---|---|\n| 1 L | 1000 mL |');
+    const notTrue = validate();
+    assert.notEqual(notTrue.status, 0, 'a lookup value other than true must fail');
+    assert.match(notTrue.stderr, /`lookup:` is `true` or absent/);
+    appendix('b-essential-mathematics.md', 'B', 'Appendix B: Essential Mathematics', 2);
+
     rmSync(join(appendices, 'b-essential-mathematics.md'));
     appendix('c-units.md', 'C', 'Appendix C: Units', 2);
     landing(5, ['Appendix A: The Periodic Table', 'Appendix C: Units']);

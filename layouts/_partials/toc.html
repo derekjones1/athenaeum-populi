@@ -22,6 +22,10 @@
      a control for it at the top of the sticky bottom block, on every one
      of its pages but the figure's own: a real link to that page, which
      assets/js/figure-enlarge.js opens in the viewer instead of following.
+     A book with table appendices a section looks values up in (Chemistry's
+     C–M; utils/reference-lookups.html) gets their addresses as JSON beside
+     the rail, which assets/js/reference-lookup.js reads to open a body
+     link to one of them over the page.
      Everything else is verbatim theme code. */}}
 {{- $toc := .Params.toc | default true -}}
 {{- $onThisPage := (T "onThisPage") | default "On this page"}}
@@ -33,8 +37,10 @@
 {{- $contactHref := partial "utils/contact-mailto.html" . -}}
 {{- $drawer := partial "utils/toc-drawer.html" . -}}
 {{- $reference := partial "utils/reference-figure.html" . -}}
+{{- $lookups := partial "utils/reference-lookups.html" . -}}
 
 {{- if $drawer }}<div class="ap-toc-scrim"></div>{{ end -}}
+{{- with $lookups }}<script type="application/json" id="ap-lookups">{{ . | jsonify | safeJS }}</script>{{ end -}}
 <nav id="ap-toc" class="hextra-toc hx:order-last hx:w-64 hx:shrink-0 hx:print:hidden hx:px-4" aria-label="{{ (T "tableOfContents") | default "Table of contents" }}">
   {{- if $toc }}
     <div class="hextra-scrollbar hx:sticky hx:top-16 hx:overflow-y-auto hx:pr-4 hx:pt-6 hx:text-sm [hyphens:auto] hx:max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] hx:ltr:-mr-4 hx:rtl:-ml-4">

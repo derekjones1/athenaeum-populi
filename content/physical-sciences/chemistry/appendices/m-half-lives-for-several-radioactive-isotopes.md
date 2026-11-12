@@ -4,6 +4,7 @@ description: >-
   Half-lives and types of emission of 58 radioactive isotopes, from carbon-14
   to seaborgium-263 — adapted from OpenStax Chemistry 2e, Appendix M.
 source_appendix: "M"
+lookup: true
 weight: 13
 ---
 

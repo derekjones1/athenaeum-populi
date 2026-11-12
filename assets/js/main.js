@@ -24,3 +24,5 @@ import './scrollable-regions.js';
 import './toc-drawer.js';
 // Site chrome: the "Enlarge figure" viewer for vendored raster figures.
 import './figure-enlarge.js';
+// Site chrome: a table appendix opened over the page, with a row filter.
+import './reference-lookup.js';

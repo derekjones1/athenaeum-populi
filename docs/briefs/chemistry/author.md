@@ -133,7 +133,9 @@ goes wrong.
    source links it**: "Using the periodic table, …" on a page that shows
    no periodic table links those words to Appendix A; an item that needs
    a value from any OTHER appendix (a formation enthalpy, a constant the
-   page lacks) links the phrase naming it to the appendix that has it.
+   page lacks) links the phrase naming it to the appendix that has it
+   (the site opens a table appendix over the page; add no sentence
+   about that).
    The source's words stay as they are — only the link is added — every
    item that needs it carries it, and the footer says so. **An item that
    needs only atomic masses or other periodic-table data and names no

@@ -5,6 +5,7 @@ description: >-
   from the atomic mass unit to the speed of light — adapted from OpenStax
   Chemistry 2e, Appendix D.
 source_appendix: "D"
+lookup: true
 weight: 4
 ---
 

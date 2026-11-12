@@ -6,6 +6,7 @@ description: >-
   ebullioscopic constants, and absorption spectrum — adapted from OpenStax
   Chemistry 2e, Appendix E.
 source_appendix: "E"
+lookup: true
 weight: 5
 ---
 

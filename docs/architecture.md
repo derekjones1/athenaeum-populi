@@ -228,6 +228,17 @@ opens the figure in place, as does a link to that page in a section's body
 (not on a landing page or among the appendices, where such a link is
 navigation), and the dialog then carries a link to the page, where the
 figure's content is also a text table.
+`assets/js/reference-lookup.js` is the same idea for a **table appendix**:
+a book's appendix page declares `lookup: true`, `toc.html` prints the
+book's lookup pages as JSON on every section page
+(`layouts/_partials/utils/reference-lookups.html`), and a body link to one
+of them fetches the page and shows its content — heading and attribution
+footer left behind — in a second modal `<dialog>` with a row filter
+(`assets/js/lib/shared/lookup-filter.mjs`), the heading row sticky inside
+the dialog's own scroller. Each appendix is fetched once per page view and
+keeps its filter and scroll between openings. The link is a real link, so
+no JavaScript, a modified click, or a failed fetch all mean "go to the
+appendix".
 `utils/toc-drawer.html` decides, for the button and the scrim alike,
 whether a page has a heading list at all — a landing page with
 `toc: false` gets neither. The browser suite drives the drawer at phone

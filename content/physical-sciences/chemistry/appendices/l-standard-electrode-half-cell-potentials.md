@@ -4,6 +4,7 @@ description: >-
   Standard electrode potentials of 134 reduction half-reactions, listed
   alphabetically by element — adapted from OpenStax Chemistry 2e, Appendix L.
 source_appendix: "L"
+lookup: true
 weight: 12
 ---
 

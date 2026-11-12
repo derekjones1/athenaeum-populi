@@ -5,6 +5,7 @@ description: >-
   standard entropies of about 360 substances, grouped by element — adapted
   from OpenStax Chemistry 2e, Appendix G.
 source_appendix: "G"
+lookup: true
 weight: 7
 ---
 

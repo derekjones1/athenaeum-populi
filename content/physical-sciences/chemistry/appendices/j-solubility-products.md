@@ -5,6 +5,7 @@ description: >-
   ionic compounds, grouped by metal — adapted from OpenStax Chemistry 2e,
   Appendix J.
 source_appendix: "J"
+lookup: true
 weight: 10
 ---
 

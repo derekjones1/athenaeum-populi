@@ -166,7 +166,16 @@ these differences:
    the periodic table." **Every other appendix still needs its link on
    each item that needs it**, since each item is answered on its own and
    only the periodic table is at hand. A page that shows the table itself (2.5 prints the
-   periodic table) needs no link to it. The footer says where the words
+   periodic table) needs no link to it.
+   **A link to a table appendix opens the table over the page**
+   *(Derek, November 11, 2026)*: Appendices C–M declare `lookup: true`,
+   and on a section page a body link to one of them opens it in a dialog
+   with a "Filter rows" field — `SiF4` finds SiF₄(*g*) among Appendix G's
+   360 rows — instead of leaving the page and the answers typed on it
+   (`assets/js/reference-lookup.js`; "Appendices" below). The author's
+   part does not change: the stem takes the link, in the source's words,
+   and no sentence is added about the dialog or the filter. Appendix B is
+   prose and stays a page the reader goes to. The footer says where the words
    were linked: "the words “periodic table” linked to Appendix A …, the
    source linking nothing there".
    A link is not a word of the stem: the source gates read the stem
@@ -1081,6 +1090,25 @@ no Practice: nothing on it is graded. It is the source's tables and figures,
 the attribution footer ("This appendix is adapted from …"), and nothing
 else except what a rule below adds.
 
+- **An appendix that is a table to look values up in declares `lookup:
+  true`** (C–M; not A, the reference figure, and not B, which is prose).
+  The validator holds the key to an appendix page that has a table. Every
+  section page of the book then carries the list of those pages
+  (`layouts/_partials/utils/reference-lookups.html`), and a link to one in
+  a section's body opens it over the page: the page's content without its
+  heading and attribution footer, the heading row stuck to the top of the
+  scrolling table, a filter that hides the rows that do not match, the
+  count of rows left, and a link to the appendix's own page. The filter
+  reads what a keyboard types — no subscripts, a hyphen for the minus
+  sign, `x` for ×, a full stop for the hydrate dot — and reads a capital
+  as typed where that finds anything (`Co` is cobalt, `CO` carbon
+  monoxide); a group's name (Appendix G's elements, J's metals: bold in
+  the first cell, the rest empty) lists its whole group
+  (`assets/js/lib/shared/lookup-filter.mjs`). So a table the lookup must
+  filter keeps one substance to a row and names its groups that way.
+  Without JavaScript, on a modified click, and when the page cannot be
+  fetched, the link is a link.
+
 - **No cell of a data table is typed by hand.**
   `node tools/source/appendix-draft.mjs --book chemistry --appendix G
   [--groups rows] [--unfold 3]` writes the Markdown tables from the pinned
@@ -1185,12 +1213,13 @@ What chapter 1 settled, and what the scan of the book counted, are in
   the first page with one). A formula is typed now: the suite types an ion
   and a grouped formula into 2.6's fields and reads the "Read as" line and
   the grader's message;
-- a long table's header row scrolls out of view (Appendix G is 403 rows):
-  the theme sets a table `display: block`, so a sticky header needs a
-  table render hook, which would change every table on the site;
-- **how an item reaches an appendix other than A, to be decided before
-  chapter 5** (its first Appendix G item). Page skeleton rule 9 links each
-  such item to the appendix page, and that link leaves the page and the
-  answers typed on it, which is why the periodic table became a control
-  instead (`docs/history/chemistry.md`, "The periodic table is a control
-  on every page"): a viewer for the table appendices, or another form.
+- a long table's header row scrolls out of view ON THE APPENDIX'S OWN
+  PAGE (Appendix G is 403 rows): the theme sets a table `display: block`,
+  so a sticky header there needs a table render hook, which would change
+  every table on the site. Opened from a section the heading row does
+  stay (the lookup owns its scroller);
+- the browser test of the lookup adds its link to a section page at run
+  time, since no section links a table appendix before chapter 5. That
+  chapter's run replaces the added link with its first exercise that
+  links Appendix G (`tests/browser-check.spec.mjs`, "a table appendix
+  opens over the page").

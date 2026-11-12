@@ -9,7 +9,11 @@
  * A book may also carry `appendices/` beside its chapters: a landing that
  * lists them under `## Appendices`, and one `<letter>-slug.md` page per
  * appendix declaring `source_appendix: "<LETTER>"`. Its weight is the book's
- * last, so the sidebar lists it after the final chapter.
+ * last, so the sidebar lists it after the final chapter. An appendix that is
+ * a table to look values up in declares `lookup: true`: a section's link to
+ * it opens it over the page (assets/js/reference-lookup.js), so the key
+ * belongs to an appendix page only, is `true` or absent, and the page must
+ * hold a table.
  *
  * Zero deps. `npm run validate`. Exits non-zero with a list of problems.
  */
@@ -161,6 +165,13 @@ function checkFront(file, { isBookRoot, isChapterIndex, isNumberedSection, isKno
     if (!letter) errors.push(`${rel}: an appendix page is named <letter>-<slug>.md (a-the-periodic-table.md)`);
     else if (!new RegExp(`^source_appendix:\\s*["']${letter}["']\\s*$`, 'm').test(fm)) {
       errors.push(`${rel}: appendix page needs \`source_appendix: "${letter}"\` (quoted, matching its file name)`);
+    }
+  }
+  if (hasKey(fm, 'lookup')) {
+    if (!isAppendix) errors.push(`${rel}: \`lookup:\` belongs to an appendix page — it marks a table a section's link opens in place`);
+    else if (!/^lookup:\s*true\s*$/m.test(fm)) errors.push(`${rel}: \`lookup:\` is \`true\` or absent`);
+    else if (!/^\|.*\|\s*$/m.test(src.slice(src.indexOf(fm) + fm.length))) {
+      errors.push(`${rel}: \`lookup: true\` marks a table to look values up in, and this page holds no table`);
     }
   }
   if (isNumberedSection) {

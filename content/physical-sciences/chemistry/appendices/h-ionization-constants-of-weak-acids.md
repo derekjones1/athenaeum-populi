@@ -5,6 +5,7 @@ description: >-
   polyprotic acid on its own row, with the Lewis structures of fifteen of them
   — adapted from OpenStax Chemistry 2e, Appendix H.
 source_appendix: "H"
+lookup: true
 weight: 8
 ---
 

@@ -1302,6 +1302,68 @@ test('the periodic table control opens the viewer from the keyboard, names the i
   expect(await control.evaluate((el) => el === document.activeElement), 'focus returns to the control').toBe(true);
 });
 
+// The appendix lookup (assets/js/reference-lookup.js). No section links a
+// table appendix before chapter 5, so the link is added to a real section
+// page at run time (tests/browser-check.spec.mjs says why).
+test('a table appendix opens from the keyboard, names its dialog and its filter, announces the count, returns focus, and has no serious or critical axe violations', async ({
+  page,
+}, testInfo) => {
+  const path = '/physical-sciences/chemistry/02-atoms-molecules-and-ions/07-chemical-nomenclature/';
+  const appendix = '/physical-sciences/chemistry/appendices/j-solubility-products/';
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await page.goto(path, { waitUntil: 'domcontentloaded' });
+  await assertProductionBuild(page, path);
+  await waitForPageReady(page);
+
+  await page.evaluate((href) => {
+    const link = document.createElement('a');
+    link.href = href;
+    link.id = 'lookup-link';
+    link.textContent = 'Appendix J';
+    document.querySelector('main .content p').append(' ', link);
+  }, appendix);
+  const link = page.locator('#lookup-link');
+  await link.focus();
+  await page.keyboard.press('Enter');
+
+  const dialog = page.locator('dialog.ap-lookup[open]');
+  await expect(dialog).toBeVisible();
+  await expect(dialog.locator('.ap-lookup-sheet table')).toHaveCount(1);
+  expect(new URL(page.url()).pathname, 'the page was not left').toBe(path);
+  expect(await dialog.evaluate((el) => document.getElementById(el.getAttribute('aria-labelledby'))?.textContent.trim()))
+    .toBe('Appendix J: Solubility Products');
+  const input = dialog.locator('.ap-lookup-input');
+  await expect(input).toBeFocused();
+  await expect(input).toHaveAccessibleName('Filter rows');
+  // The count is a live status: a screen reader hears what the filter left.
+  const count = dialog.locator('.ap-lookup-count');
+  expect(await count.evaluate((el) => [el.getAttribute('role'), el.getAttribute('aria-live')])).toEqual(['status', 'polite']);
+  await page.keyboard.type('AgCl');
+  await expect(count).toHaveText(/^1 of \d+ rows$/);
+  await expectNoBlockingViolations(page, 'the appendix lookup, filtered', testInfo);
+  await input.fill('');
+  await expect(count).toHaveText(/^\d+ rows$/);
+  await expectNoBlockingViolations(page, 'the appendix lookup, every row shown', testInfo);
+
+  // Tab stays inside, and reaches the scrolling table and the link to the
+  // appendix's own page.
+  const stage = dialog.locator('.ap-lookup-stage');
+  const pageLink = dialog.locator('.ap-figure-viewer-page a');
+  await expect(pageLink).toHaveAccessibleName('Appendix J: Solubility Products');
+  const reached = { stage: false, link: false };
+  for (let presses = 0; presses < 8 && !(reached.stage && reached.link); presses += 1) {
+    await page.keyboard.press('Tab');
+    reached.stage ||= await stage.evaluate((el) => el === document.activeElement);
+    reached.link ||= await pageLink.evaluate((el) => el === document.activeElement);
+    expect(await page.evaluate(() => Boolean(document.activeElement?.closest('dialog.ap-lookup'))), `Tab ${presses + 1} stays in the dialog`).toBe(true);
+  }
+  expect(reached, 'Tab reaches the table and the link to the page').toEqual({ stage: true, link: true });
+
+  await page.keyboard.press('Escape');
+  await expect(page.locator('dialog.ap-lookup[open]')).toHaveCount(0);
+  await expect(link).toBeFocused();
+});
+
 test('every mediafigure image has alt text, and a longdesc summary is keyboard-operable', async ({
   page,
 }) => {

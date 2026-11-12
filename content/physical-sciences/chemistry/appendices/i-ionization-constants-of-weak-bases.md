@@ -4,6 +4,7 @@ description: >-
   Base ionization constants at 25 °C for ammonia and four amines, with their
   Lewis structures — adapted from OpenStax Chemistry 2e, Appendix I.
 source_appendix: "I"
+lookup: true
 weight: 9
 ---
 

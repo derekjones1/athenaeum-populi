@@ -1,0 +1,33 @@
+{{- /* The pages of a book that a section opens IN PLACE when its body links
+     them — Chemistry's table appendices — or an empty slice.
+
+     A book's appendix says so in its own front matter:
+
+       lookup: true
+
+     Why it exists (November 11, 2026): an exercise that needs a formation
+     enthalpy links Appendix G, and following the link left the page, where
+     a typed answer is not kept. The periodic table had the same problem and
+     became a control in the page rail (utils/reference-figure.html). A table
+     appendix is not a figure and there are eleven of them, so there is no
+     control: the link in the stem is the way in, and
+     assets/js/reference-lookup.js opens the page it points at in a dialog
+     with a row filter. Without JavaScript it is the plain link.
+
+     Returned only for a page where such a link is a pointer to a table — a
+     regular page outside the lookup page's own section — which is the test
+     reference-figure.html uses for `links`. On a landing page, and among
+     the appendices themselves, the same link is navigation.
+
+     Returns a slice of dicts: href (the page), title. Caller: toc.html,
+     which prints it as the JSON the script reads. */ -}}
+{{- $out := slice -}}
+{{- $book := partial "utils/book-root.html" . -}}
+{{- if and $book .IsPage -}}
+  {{- range where $book.RegularPagesRecursive "Params.lookup" true -}}
+    {{- if ne $.CurrentSection .CurrentSection -}}
+      {{- $out = $out | append (dict "href" .RelPermalink "title" .Title) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $out -}}

@@ -5,6 +5,7 @@ description: >-
   pressure, with the exact relations marked — adapted from OpenStax Chemistry
   2e, Appendix C.
 source_appendix: "C"
+lookup: true
 weight: 3
 ---
 

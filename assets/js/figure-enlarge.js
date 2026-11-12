@@ -272,8 +272,9 @@ function opensReference(link, control) {
 }
 
 /** The same page whether a link spells it with the trailing slash, without
- * it, or as the directory's index.html. */
-function samePage(a, b) {
+ * it, or as the directory's index.html. (reference-lookup.js reads its
+ * links the same way.) */
+export function samePage(a, b) {
   const page = (path) => path.replace(/\/index\.html$/, '/').replace(/\/?$/, '/');
   return page(a) === page(b);
 }

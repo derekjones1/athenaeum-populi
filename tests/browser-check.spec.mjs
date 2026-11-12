@@ -2268,6 +2268,151 @@ test('a figure shown smaller than its file can be enlarged in place: fit, the fi
   }))).toEqual({ overflows: false, clipped: [] });
 });
 
+// An exercise that needs a formation enthalpy links Appendix G, and
+// following the link left the page and the typed answers, as the links to
+// the periodic table once did. A table appendix (`lookup: true` in its front
+// matter; layouts/_partials/utils/reference-lookups.html) now opens over the
+// page, with a field that filters its rows (assets/js/reference-lookup.js).
+//
+// No section links a table appendix before chapter 5, so this test ADDS the
+// link to a real section page at run time; everything else — the list of
+// lookup pages the page carries, the script, the appendix it fetches — is
+// the shipped site. Chapter 5's run replaces the added link with the first
+// exercise that links Appendix G.
+test('a table appendix opens over the page: its rows filter as typed, the heading row stays, and a typed answer survives', async ({ page }) => {
+  const appendix = '/physical-sciences/chemistry/appendices/g-standard-thermodynamic-properties-for-selected-substances/';
+  const title = 'Appendix G: Standard Thermodynamic Properties for Selected Substances';
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await gotoBuiltPage(page, '/physical-sciences/chemistry/02-atoms-molecules-and-ions/06-ionic-and-molecular-compounds/');
+  const route = new URL(page.url()).pathname;
+
+  // The page names the appendices that open in place: the table appendices,
+  // not the periodic table (a figure, with its own control) and not the
+  // mathematics appendix (prose, which a reader goes to).
+  const lookups = await page.evaluate(() => JSON.parse(document.getElementById('ap-lookups').textContent));
+  expect(lookups.map((entry) => entry.title.match(/^Appendix (\w):/)?.[1]).join('')).toBe('CDEFGHIJKLM');
+  expect(lookups.find((entry) => entry.href === appendix)?.title).toBe(title);
+
+  const card = page.locator('text-in').last();
+  await waitForUpgrade(card, (el) => Boolean(customElements.get('text-in')) && Boolean(el.querySelector('.ap-textin-check')));
+  const field = card.locator('.ap-textin-field');
+  await field.fill('typed before looking');
+
+  const addLink = (href, id) => page.evaluate(([to, name]) => {
+    const link = document.createElement('a');
+    link.href = to;
+    link.id = name;
+    link.textContent = 'Appendix G';
+    document.querySelector('main .content p').append(' ', link);
+  }, [href, id]);
+  await addLink(appendix, 'lookup-link');
+  const link = page.locator('#lookup-link');
+  await link.scrollIntoViewIfNeeded();
+  await link.click();
+
+  const dialog = page.locator('dialog.ap-lookup[open]');
+  const input = dialog.locator('.ap-lookup-input');
+  const count = dialog.locator('.ap-lookup-count');
+  const stage = dialog.locator('.ap-lookup-stage');
+  const shownRows = () => dialog.locator('tbody tr:visible td:first-child').allInnerTexts();
+  await expect(dialog).toBeVisible();
+  await expect(dialog.locator('.ap-lookup-sheet table')).toHaveCount(1);
+  expect(new URL(page.url()).pathname, 'the page was not left').toBe(route);
+  await expect(dialog.locator('.ap-figure-viewer-title')).toHaveText(title);
+  // The appendix page's own heading and attribution footer stay on that page.
+  await expect(dialog.locator('h1')).toHaveCount(0);
+  await expect(dialog.locator('.ap-lookup-sheet small')).toHaveCount(0);
+  await expect(count).toHaveText(/^\d+ rows$/);
+  const total = Number((await count.innerText()).match(/\d+/)[0]);
+  expect(total, 'Appendix G is a long table').toBeGreaterThan(300);
+  // A long table opens with the cursor in the filter.
+  await expect(input).toBeFocused();
+  await expect(input).toHaveAccessibleName('Filter rows');
+
+  // Typed as a keyboard types it: no subscript.
+  await input.pressSequentially('SiF4');
+  await expect(count).toHaveText(`1 of ${total} rows`);
+  expect(await shownRows(), 'the row, under the name of its group').toEqual(['silicon', 'SiF₄(g)']);
+  await expect(dialog.locator('tbody tr:visible').last()).toContainText('−1615.0');
+  await expect(dialog.locator('thead th').first()).toBeVisible();
+  // A group's name lists the group; a capital is read as typed.
+  await input.fill('silicon');
+  expect((await shownRows())[0]).toBe('silicon');
+  expect((await shownRows()).length).toBeGreaterThan(3);
+  await input.fill('CO');
+  expect((await shownRows()).some((cell) => cell.startsWith('Co')), 'CO is not cobalt').toBe(false);
+  expect(await shownRows()).toContain('CO(g)');
+  await input.fill('no such substance');
+  await expect(count).toHaveText(`No row of ${total} matches`);
+  await expect(dialog.locator('.ap-lookup-sheet table')).toBeHidden();
+  await input.fill('SiF4');
+
+  // Escape closes, returns to the link, and loses neither the answer typed
+  // on the page nor the filter: the next value is usually near the first.
+  await page.keyboard.press('Escape');
+  await expect(page.locator('dialog.ap-lookup[open]')).toHaveCount(0);
+  await expect(link).toBeFocused();
+  await expect(field).toHaveValue('typed before looking');
+  await link.click();
+  await expect(dialog).toBeVisible();
+  await expect(input).toHaveValue('SiF4');
+  await expect(count).toHaveText(`1 of ${total} rows`);
+
+  // Unfiltered, the heading row stays at the top of the scrolling stage.
+  await input.fill('');
+  await expect(count).toHaveText(`${total} rows`);
+  await stage.evaluate((el) => el.scrollTo(0, 4000));
+  expect(await stage.evaluate((el) => {
+    const heading = el.querySelector('thead th').getBoundingClientRect();
+    const box = el.getBoundingClientRect();
+    return { scrolled: el.scrollTop > 3000, stuck: Math.abs(heading.top - box.top) <= 1 };
+  })).toEqual({ scrolled: true, stuck: true });
+  // The way to the appendix's own page.
+  const pageLink = dialog.locator('.ap-figure-viewer-page a');
+  await expect(pageLink).toHaveText(title);
+  expect(await pageLink.getAttribute('href')).toBe(appendix);
+  await dialog.locator('.ap-lookup-close').click();
+  await expect(page.locator('dialog.ap-lookup[open]')).toHaveCount(0);
+  // Opened again, it is where it was left.
+  await link.click();
+  await expect(dialog).toBeVisible();
+  expect(await stage.evaluate((el) => el.scrollTop)).toBeGreaterThan(3000);
+  await page.keyboard.press('Escape');
+
+  // On a phone the dialog and its bar fit, and nothing scrolls the page
+  // sideways. A short table (Appendix I: five rows) opens on the table, so
+  // the keyboard does not rise over it.
+  await page.setViewportSize({ width: 390, height: 844 });
+  await addLink('/physical-sciences/chemistry/appendices/i-ionization-constants-of-weak-bases/', 'short-link');
+  await page.locator('#short-link').click();
+  await expect(dialog).toBeVisible();
+  await expect(count).toHaveText(/^\d rows$/);
+  await expect(stage).toBeFocused();
+  await expect(dialog.locator('.ap-lookup-close')).toBeInViewport();
+  expect(await page.evaluate(() => {
+    const box = document.querySelector('dialog.ap-lookup').getBoundingClientRect();
+    return {
+      fits: box.left >= 0 && box.right <= window.innerWidth && box.bottom <= window.innerHeight,
+      sideways: document.documentElement.scrollWidth > document.documentElement.clientWidth,
+      field: parseFloat(getComputedStyle(document.querySelector('.ap-lookup-input')).fontSize) >= 16,
+    };
+  })).toEqual({ fits: true, sideways: false, field: true });
+  await page.keyboard.press('Escape');
+  await expect(field).toHaveValue('typed before looking');
+
+  // A page that cannot be fetched is still a link: the browser follows it.
+  const unreachable = '/physical-sciences/chemistry/appendices/k-formation-constants-for-complex-ions/';
+  await page.route(`**${unreachable}`, (request) => (request.request().resourceType() === 'fetch'
+    ? request.fulfill({ status: 500, body: '' })
+    : request.continue()));
+  await addLink(unreachable, 'unreachable-link');
+  await page.locator('#unreachable-link').click();
+  await page.waitForURL(`**${unreachable}`);
+  // Among the appendices themselves a link to another is navigation: the
+  // page carries no list.
+  await expect(page.locator('#ap-lookups')).toHaveCount(0);
+});
+
 // Through chapter 2, 74 Chemistry items ended "Use the periodic table." with
 // a link to Appendix A, and following it left the page and the typed
 // answers. The book now names the table as its reference figure

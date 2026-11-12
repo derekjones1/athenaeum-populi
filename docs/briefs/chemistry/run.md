@@ -185,7 +185,14 @@ Six things chapter 3 added (`docs/history/chemistry.md`, "Chapter 3"):
    Chapter 3 is almost all molar masses: those items take no pointer. The
    source's own words about the table ("Using the periodic table, …") are
    still listed and linked, and every OTHER appendix still needs its link
-   on each item that needs it.
+   on each item that needs it. A link to a table appendix (C–M) opens the
+   table over the page with a row filter (playbook, "Appendices"); the
+   author adds nothing for it. **Chapter 5 is the first chapter with such
+   a link** (five keyed exercises and one example, all Appendix G): its
+   parent replaces the link the browser test adds at run time
+   (`tests/browser-check.spec.mjs`, "a table appendix opens over the
+   page") with the page and stem of the first exercise that links
+   Appendix G, and opens that exercise's lookup in a real browser.
 6a. **Gate probe.** `node tools/source/chemistry-gate-probe.mjs N >
    $SP/chN-probe.txt`. The source gates were written from the shapes of
    the chapters already on the site, and a shape they have not met fails

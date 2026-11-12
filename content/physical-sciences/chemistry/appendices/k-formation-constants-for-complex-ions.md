@@ -4,6 +4,7 @@ description: >-
   Formation constants of 23 complex ions, each with the equilibrium that forms
   it — adapted from OpenStax Chemistry 2e, Appendix K.
 source_appendix: "K"
+lookup: true
 weight: 11
 ---
 

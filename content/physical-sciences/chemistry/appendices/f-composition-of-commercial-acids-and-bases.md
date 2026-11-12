@@ -5,6 +5,7 @@ description: >-
   base solutions as they are sold — adapted from OpenStax Chemistry 2e,
   Appendix F.
 source_appendix: "F"
+lookup: true
 weight: 6
 ---
 
