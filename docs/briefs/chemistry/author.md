@@ -31,7 +31,8 @@ to confirm the bytes landed (several agents write to this tree at once).
 
 1. `$SP/run-facts.md`.
 2. `docs/subjects/chemistry.md` — all of it except "Knowledge checks" and
-   "What is still open". "Notation", "The section page, in order",
+   "What is still open" (a check has its own edition and its own briefs:
+   `kc-run.md`). "Notation", "The section page, in order",
    "Exercises", "Measured quantities", and "Figures" are the rules you
    write to.
 3. `docs/subjects/life-sciences.md` — only "The section page, in order",

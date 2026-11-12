@@ -1140,52 +1140,36 @@ else except what a rule below adds.
 
 ## Knowledge checks
 
-Decided November 9, 2026: **one check per block of chapters, seven pages.**
-The book is flat, so blocks follow the content, and uneven blocks are
-accepted where chapters belong together.
+The rules are `docs/knowledge-check-playbook-chemistry.md`, this book's
+edition, and a check is run from `docs/briefs/chemistry/kc-run.md`. What
+was decided, and when:
 
-**Quota** *(Derek, November 10, 2026)*: **each section of a block carries
-two or three items, at least one of them auto-graded** (`fillin`,
-`multiplechoice`, `textin`, or `sortbins`; a section of only `selfcheck`s is
-not tested). The count is a range because the sections differ — one worked
-calculation in some, a dozen in others — and the lint holds it
-(`BOOK_RULES['physical-sciences/chemistry'].knowledgeCheck`, which also
-lets a check carry `fillin`s: this book's keyed answers are numbers). Three
-where the section's content supports three; two is not a shortfall. By
-block that is 34–51, 16–24, 30–45, 34–51, 42–63, 22–33, and 50–75 items.
-
-**Where the items come from** *(the parent's working rule for the first
-check, chapters 1–3; Derek set the quota, not the source)*: a graded item
-needs a source key ("Graded items"), so where a section has a worked
-example — 86 of 114 do — one item re-asks that example's question, whose
-answer the source prints, with the life-sciences rule that a check's stem
-is not a section Practice item's stem; the others are recall items on the
-module's own sentences, glossary, and summary, as in the life-sciences
-checks. The unkeyed exercises are not a pool: only about one in five sits
-beside a keyed twin close enough to vouch for its method. The first check's
-run confirms or changes this, and writes the kit.
-
-| Block | Chapters | Sections | Content |
-|---|---|---|---|
-| 1 | 1–3 | 17 | matter and measurement, atoms and ions, the mole and solutions |
-| 2 | 4–5 | 8 | reaction stoichiometry and thermochemistry |
-| 3 | 6–8 | 15 | electronic structure, bonding, and molecular geometry |
-| 4 | 9–11 | 17 | gases, liquids and solids, solutions |
-| 5 | 12–15 | 21 | kinetics and equilibrium, including acid-base and solubility |
-| 6 | 16–17 | 11 | thermodynamics and electrochemistry |
-| 7 | 18–21 | 25 | descriptive, coordination, organic, and nuclear chemistry |
+- **One check per block of chapters, seven pages** *(November 9, 2026)*.
+  The book is flat, so blocks follow the content, and uneven blocks are
+  accepted where chapters belong together. The edition's "Placement" has
+  the table of blocks with each file and weight: chapters 1–3, 4–5, 6–8,
+  9–11, 12–15, 16–17, and 18–21.
+- **Quota** *(Derek, November 10, 2026)*: each section of a block carries
+  two or three items, at least one of them auto-graded; the lint holds it
+  (`BOOK_RULES['physical-sciences/chemistry'].knowledgeCheck`, which also
+  lets a check carry `fillin`s). By block that is 34–51, 16–24, 30–45,
+  34–51, 42–63, 22–33, and 50–75 items.
+- **Where the items come from** *(Derek, November 11, 2026)*: a graded
+  item needs a source key ("Graded items"), and every keyed exercise and
+  Check Your Learning is spent on the section pages, so **a calculation
+  item re-asks a worked example's own question and keys the answer its
+  Solution prints**; the other items are written from the module's
+  glossary, summary, and sentences, as in the life-sciences checks. The
+  unkeyed exercises are not a pool: that would be an author-derived key.
+  `npm run kc -- sources` (in `npm test`) refuses a fill-in, a formula, or
+  an equation on a check that is not a worked example's question keyed
+  with what its Solution prints.
 
 ## What is still open
 
 What chapter 1 settled, and what the scan of the book counted, are in
 `docs/history/chemistry.md`.
 
-- **The Knowledge Check kit is not yet written** (author, checker, and
-  solve briefs for a block), nor is it known whether the item-source rule
-  in "Knowledge checks" holds; the quota is settled. The first check,
-  block 1, is the run after chapter 3, and its parent writes the kit
-  first, from `docs/briefs/anatomy-physiology/kc-run.md` and its
-  `kc-prompts/` (`docs/briefs/chemistry/run.md` §4).
 - whether `verify:source-tables` should read the tables of the section
   pages too (the chapters have about 190): it reads appendix pages only,
   and a section's tables are still read by the author and the checker;

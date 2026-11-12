@@ -5,8 +5,9 @@ has the build and deployment design. For content work, follow
 `docs/authoring-playbook.md` — the subject-neutral core — plus the subject
 playbook under `docs/subjects/` for the book you are authoring; for
 knowledge checks, also the subject's edition —
-`docs/knowledge-check-playbook-math.md` or
-`docs/knowledge-check-playbook-life-sciences.md`. The four OpenStax math
+`docs/knowledge-check-playbook-math.md`,
+`docs/knowledge-check-playbook-life-sciences.md`, or
+`docs/knowledge-check-playbook-chemistry.md`. The four OpenStax math
 books — the three algebra books and Precalculus 2e — are `complete`; also
 follow `docs/subjects/math.md` and `docs/source/openstax-source-workflow.md`.
 Biology 2e is `complete` (47 chapters, 208 sections); its rules are
@@ -35,10 +36,12 @@ exercises reach the page), the notation, measured-quantity grading
 `tolerance:<p>%` band where the source's key was computed from finer atomic
 masses than the book's periodic table prints), typed
 formulas and equations (`textin` with `answerForm="formula"` or
-`"equation"`), the appendix rules, the Knowledge Check quota (two to three
-items per section), and
+`"equation"`), the appendix rules, and
 the figure rules; a chapter is run from `docs/briefs/chemistry/run.md` with
-the agent briefs beside it. Dated
+the agent briefs beside it, and a Knowledge Check (one per block of
+chapters, two to three items per section, its calculation items re-asking
+worked examples) from `docs/briefs/chemistry/kc-run.md` under
+`docs/knowledge-check-playbook-chemistry.md`. Dated
 narrative — retrospectives, per-chapter logs, closed programmes — lives in
 `docs/history/`, one file per playbook; the playbooks keep only what is
 operative. Closed programmes that no run reads any more — the re-review
@@ -183,12 +186,20 @@ campaign, the figure-alt passes, and their kit — are archived under
   tie), never touching a verdict or a solve; weak matches are marked "low
   confidence" and listed. Run at the close-out of any run or sweep, then
   `ledger:merge` its output
-- `npm run kc -- weights|assemble|notes|leaks …` — the parent's Knowledge
-  Check kit (`docs/briefs/anatomy-physiology/kc-run.md`): derive every
-  chapter and check weight from what exists (`--write` applies), assemble
-  the chapter scratch blocks into the page, turn the authors' provenance
-  files into ledger notes, and report every key another item on the page
-  prints
+- `npm run kc -- weights|assemble|notes|leaks|examples|sources …` — the
+  parent's Knowledge Check kit (`docs/briefs/anatomy-physiology/kc-run.md`,
+  `docs/briefs/chemistry/kc-run.md`): derive every chapter and check weight
+  from what exists (`--write` applies), assemble the chapter scratch blocks
+  into the page, turn the authors' provenance files into ledger notes, and
+  report every key another item on the page prints (a fill-in's as a
+  number). For a keyed-only book (Chemistry): `examples` lists a block's
+  worked examples from the pinned CNXML, and `sources` is the gate below
+- `npm run verify:kc-sources` — `kc sources content`: on a keyed-only
+  book's Knowledge Check, every `fillin` and every `textin` declaring
+  `answerForm="formula"` or `"equation"` must re-ask a worked example of
+  its `### N.M` section's module and key what that example's Solution
+  prints, to the figures a declared `sig-figs:<n>` names and never a number
+  the question itself gives (part of `npm test`; needs the pinned bundle)
 - `npm run ledger:stats` — verified/total per shortcode kind
 - `npm run ledger:list` — emit exercises as JSON for a verification pass
   (`--shard i/n`, `--kind`, `--unverified`, `--verdict`, `--context N`)

@@ -1944,7 +1944,7 @@ export function judgeFillin(item, source) {
 /* ---- keyed units: a book that renders only what its source keys ------------- */
 
 /** A fill-in key as significant-figures.mjs reads it, or null when it is not one numeral. */
-function keyNumeral(answer) {
+export function keyNumeral(answer) {
   const written = String(answer ?? '')
     .replace(/\\left|\\right/g, '')
     .replace(/\\[,;:! ]/g, '')
@@ -1957,7 +1957,7 @@ function keyNumeral(answer) {
 }
 
 /** Two numerals of the same exact value (sign included). */
-function sameNumeral(a, b) {
+export function sameNumeral(a, b) {
   if (a.negative !== b.negative && a.mantissa !== 0n) return false;
   const to = Math.min(a.exponent, b.exponent);
   return a.mantissa * 10n ** BigInt(a.exponent - to) === b.mantissa * 10n ** BigInt(b.exponent - to);

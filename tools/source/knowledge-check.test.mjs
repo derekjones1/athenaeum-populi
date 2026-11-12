@@ -5,7 +5,7 @@ import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { execFileSync, spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
-import { assemble, chapterBlocks, findLeaks, plannedWeights, provenanceResults } from './knowledge-check.mjs';
+import { assemble, bookSections, chapterBlocks, checkSources, findLeaks, plannedWeights, provenanceResults, solutionPrints } from './knowledge-check.mjs';
 
 // knowledge-check.mjs is the parent's kit for a Knowledge Check run
 // (docs/briefs/anatomy-physiology/kc-run.md). Earlier runs rebuilt these
@@ -113,3 +113,87 @@ test('leaks report a key printed by another item, through the plural fold, but n
   const leaks = findLeaks(page);
   assert.deepEqual(leaks.map((l) => [l.key, l.as, l.part, l.printedLine]), [['dermatophyte', 'dermatophytes', 'stem', 3]]);
 });
+
+test('leaks read a fill-in: its key as a number another item prints, however it is written', () => {
+  // Chemistry 3.3 chains its worked examples: one answers 0.839 M and the
+  // next takes 0.839 M as its given datum. Both on one check is a leak the
+  // word-only reading never saw.
+  const page = [
+    '### 3.3 Molarity', '',
+    '{{< fillin question="A 0.500-L vinegar solution contains 25.2 g of acetic acid. What is its molarity?" answer="0.839" answerForm="sig-figs:3 last-digit:1" >}}', '',
+    '{{< fillin question="The concentration of acetic acid in white vinegar is 0.839 *M*. What volume of vinegar contains 75.6 g of acetic acid?" answer="1.50" answerForm="sig-figs:3 last-digit:1" >}}', '',
+    '{{< fillin question="How many atoms are in the sample? It weighs $4.74\\times10^{22}$ times one atom." answer="5.00" answerForm="sig-figs:3 last-digit:0" >}}', '',
+    '{{< fillin question="How many copper atoms are in 5.00 g of copper wire?" answer="4.74\\times10^{22}" answerForm="sig-figs:3 last-digit:1" >}}', '',
+    '{{< fillin question="How many significant figures does 12 have?" answer="2" answerForm="whole-number" >}}', '',
+  ].join('\n');
+  const leaks = findLeaks(page).map((leak) => [leak.key, leak.keyLine, leak.printedLine, leak.part]);
+  assert.deepEqual(leaks.filter(([key]) => key === '0.839'), [['0.839', 3, 5, 'stem']], 'the next example\'s datum');
+  assert.ok(leaks.some(([key, , printedLine]) => key === '4.74\\times10^{22}' && printedLine === 7), 'a power of ten written in TeX is the same number');
+  assert.ok(leaks.some(([key, , printedLine]) => key === '5.00' && printedLine === 9), 'and so is a datum printed to the same figures');
+  assert.ok(!leaks.some(([key]) => key === '2'), 'a count is never reported: two digits or fewer recur by chance');
+});
+
+const cnxml = (body) => `<?xml version="1.0"?><document xmlns="http://cnx.rice.edu/cnxml"><content>${body}</content></document>`;
+const worked = (id, title, question, solution, check = 'Another one?') => `<example id="${id}"><para><title>${title}</title>${question}</para>`
+  + `<para><title>Solution</title>${solution}</para><para><title>Check Your Learning</title>${check}</para><note><title>Answer:</title><para>9.99 M</para></note></example>`;
+const MOLARITY = cnxml(
+  worked('ex1', 'Calculating Molar Concentrations', 'A 355-mL soft drink sample contains 0.133 mol of sucrose (table sugar). What is the molar concentration of sucrose in the beverage?',
+    'The volume must be converted from mL to L: M = 0.133 mol / 0.355 L = 0.375 <emphasis effect="italics">M</emphasis>',
+    'A teaspoon of table sugar contains about 0.01 mol sucrose. What is the molarity of sucrose if a teaspoon of sugar has been dissolved in a cup of tea with a volume of 200 mL?')
+  + worked('ex2', 'Predicting the Formula of a Compound with a Polyatomic Anion', 'Baking powder contains calcium dihydrogen phosphate, an ionic compound composed of the ions Ca<sup>2+</sup> and H<sub>2</sub>PO<sub>4</sub><sup>−</sup>. What is the formula of this compound?',
+    'This requires a ratio of one Ca<sup>2+</sup> ion to two dihydrogen phosphate ions. We designate this by enclosing the formula in parentheses and adding a subscript 2. The formula is Ca(H<sub>2</sub>PO<sub>4</sub>)<sub>2</sub>.'),
+);
+const check = (...items) => ['## Chapter 3: Composition', '', '### 3.3 Molarity', '', ...items.flatMap((item) => [item, ''])].join('\n');
+const SOFT_DRINK = 'A 355-mL soft drink sample contains 0.133 mol of sucrose (table sugar). What is the molar concentration of sucrose in the beverage? Enter the molarity in mol/L.';
+const BAKING = 'Baking powder contains calcium dihydrogen phosphate, an ionic compound composed of the ions Ca²⁺ and H₂PO₄⁻. What is the formula of this compound?';
+const moduleOf = (section) => (section === '3.3' ? MOLARITY : null);
+
+test('sources: a fill-in or a formula on a keyed-only book\'s check re-asks a worked example and keys what its Solution prints', () => {
+  const good = checkSources(check(
+    `{{< fillin question="${SOFT_DRINK}" answer="0.375" answerForm="sig-figs:3 last-digit:0" >}}`,
+    `{{< textin question="${BAKING}" answer="Ca(H₂PO₄)₂" answerForm="formula" >}}`,
+    // A recall item and a selfcheck are a reader's to check, not this gate's.
+    '{{< textin question="A solution\'s concentration in moles of solute per liter of solution is its ________." answer="molarity" >}}',
+  ), moduleOf);
+  assert.deepEqual(good, { confirmed: 2, failures: [] });
+});
+
+test('sources refuse a key the Solution does not print, other figures than it shows, a datum of the question, and an item that is no worked example', () => {
+  const lines = (page) => checkSources(page, moduleOf).failures.map((failure) => failure.detail);
+  assert.match(lines(check(`{{< fillin question="${SOFT_DRINK}" answer="0.374" answerForm="sig-figs:3 last-digit:0" >}}`))[0], /keys "0\.374", which the Solution of worked example ex1 does not print/);
+  assert.match(lines(check(`{{< fillin question="${SOFT_DRINK}" answer="0.375" answerForm="sig-figs:4 last-digit:0" >}}`))[0], /declares sig-figs:4/);
+  assert.match(lines(check(`{{< fillin question="${SOFT_DRINK}" answer="0.133" answerForm="sig-figs:3 last-digit:0" >}}`))[0], /a number worked example ex1's own question prints/);
+  assert.match(lines(check(`{{< textin question="${BAKING}" answer="CaH₂PO₄" answerForm="formula" >}}`))[0], /does not print as one formula/);
+  // The example's own Check Your Learning is spent on the section page, and
+  // an item written from nothing is an author-derived key.
+  const spent = 'A teaspoon of table sugar contains about 0.01 mol sucrose. What is the molarity of sucrose if a teaspoon of sugar has been dissolved in a cup of tea with a volume of 200 mL?';
+  assert.match(lines(check(`{{< fillin question="${spent}" answer="0.05" answerForm="sig-figs:1 last-digit:0" >}}`))[0], /is not the question of a worked example of Section 3\.3/);
+  assert.match(lines(check('{{< fillin question="What is the molarity of 2.00 mol of salt in 4.00 L of solution?" answer="0.500" answerForm="sig-figs:3 last-digit:0" >}}'))[0], /is not the question of a worked example/);
+  // An item above the first section heading, or under a section the map lacks, has no module to be read against.
+  assert.match(checkSources(`{{< fillin question="${SOFT_DRINK}" answer="0.375" answerForm="sig-figs:3 last-digit:0" >}}\n`, moduleOf).failures[0].detail, /no "### N\.M" heading/);
+  assert.match(lines(check(`{{< fillin question="${SOFT_DRINK}" answer="0.375" answerForm="sig-figs:3 last-digit:0" >}}`).replace('### 3.3', '### 9.9'))[0], /Section 9\.9, which the source map does not hold/);
+});
+
+test('a Solution is prose: a formula is found as any run of its words, in the source\'s spaced subscripts', () => {
+  const solution = 'We designate this by adding a subscript 2. The formula is Ca(H _2 PO _4 ) _2 . Finally: (C 5 H 7 N) 2 = C 10 H 14 N 2';
+  assert.equal(solutionPrints(solution, 'Ca(H₂PO₄)₂', 'formula'), true);
+  assert.equal(solutionPrints(solution, 'C₁₀H₁₄N₂', 'formula'), true);
+  assert.equal(solutionPrints(solution, 'CaH₂PO₄', 'formula'), false);
+  assert.equal(solutionPrints('This is the aluminum cation, Al^{3+} .', 'Al³⁺', 'formula'), true);
+  assert.equal(solutionPrints('This is the aluminum cation, Al^{3+} .', 'Al³⁻', 'formula'), false);
+});
+
+test('a scratch copy at a mirrored path is read as the book it mirrors', () => {
+  const { book, sections } = bookSections(path.join(tmpdir(), 'kc', 'ch03', 'content', 'physical-sciences', 'chemistry'), ROOT);
+  assert.equal(book, 'chemistry');
+  assert.equal(sections.get('3.3').moduleId, 'm68703');
+  assert.equal(bookSections(path.join(ROOT, 'content', 'life-health-sciences', 'biology'), ROOT).book, 'biology');
+});
+
+test('the committed checks pass the sources gate', () => {
+  // Every keyed-only book's check under content/; the other books' checks are passed over.
+  const out = spawnSync(process.execPath, [SCRIPT, 'sources', path.join(ROOT, 'content')], { encoding: 'utf8', cwd: ROOT });
+  assert.equal(out.status, 0, out.stdout + out.stderr);
+  assert.match(out.stdout, /failure\(s\)/);
+});
+

@@ -7,14 +7,15 @@ no hints.**
 Read and follow `docs/authoring-playbook.md` and `docs/subjects/math.md`
 first; all their rules apply here. This edition governs the OpenStax
 mathematics books; the life-sciences books use
-`docs/knowledge-check-playbook-life-sciences.md`.
+`docs/knowledge-check-playbook-life-sciences.md` and Chemistry 2e uses
+`docs/knowledge-check-playbook-chemistry.md`.
 
 ## Placement
 
 The placement and identity rules every edition shares — file name and
 location, frontmatter, non-overlapping ranges, the numeric-prefix exemption,
 `aliases` on rename, no hints, the waived 2–3 cap, real components only —
-live in `docs/authoring-playbook.md` §3 "Knowledge Checks (both editions)".
+live in `docs/authoring-playbook.md` §3 "Knowledge Checks (every edition)".
 For a math book, `XX-YY` is the chapter range the check covers (e.g.
 `knowledge-check-01-06.md`, weight one past chapter 6): one check per half
 of the book, or whatever split the chapter count makes even.

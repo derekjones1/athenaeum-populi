@@ -8,6 +8,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
   KEYED_ONLY_BOOKS, answerText, glossaryAliases, keyedUnits, plain, printedNumerals, sequentialParts, unitFor, unitScore, unlinked,
+  workedExampleUnits, workedExamples,
 } from './keyed-units.mjs';
 import { parseXml } from './openstax-source.mjs';
 import { judgeKeyedUnit, pageItems } from '../verify/verify-source-keys.mjs';
@@ -658,3 +659,29 @@ test('a lettered exercise answered by naming one part is one multiple choice who
   )));
   assert.deepEqual(perPart.map((unit) => unit.id), ['y1(a)', 'y1(b)', 'y2(a)', 'y2(b)']);
 });
+
+test('a worked example is read whole: its question up to the Solution, the Solution up to its Check Your Learning', () => {
+  const xml = cnxml(
+    '<example id="w1"><para><title>Calculating Molar Concentrations</title>A 355-mL soft drink sample contains 0.133 mol of sucrose. What is the molar concentration of sucrose in the beverage?</para>'
+    + '<para><title>Solution</title>The volume must be converted from mL to L:</para><equation><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mi>M</m:mi><m:mo>=</m:mo><m:mn>0.375</m:mn><m:mi>M</m:mi></m:math></equation>'
+    + '<para><title>Check Your Learning</title>A teaspoon of sugar holds 0.01 mol sucrose. What is its molarity in 200 mL of tea?</para><note><title>Answer:</title><para>0.05 M</para></note></example>'
+    + '<example id="w2"><para><title>Deriving Moles</title>How much sugar (mol) is contained in a sip (~10 mL) of the soft drink from <link target-id="w1"/>?</para>'
+    + '<para><title>Solution</title>(a) first part gives 0.004 mol sugar</para></example>'
+    // An example with no Solution paragraph (an appendix's table of rules) is not one a check can re-ask.
+    + '<example id="w3"><para><title>Rules</title>Only a table.</para></example>',
+  );
+  const examples = workedExamples(xml);
+  assert.deepEqual(examples.map((example) => [example.id, example.title, example.leansOn ?? null]), [
+    ['w1', 'Calculating Molar Concentrations', null], ['w2', 'Deriving Moles', 'w1'],
+  ]);
+  assert.equal(examples[0].stem, 'A 355-mL soft drink sample contains 0.133 mol of sucrose. What is the molar concentration of sucrose in the beverage?', 'the example\'s title is not part of its question');
+  assert.deepEqual(printedNumerals(examples[0].answer).map((numeral) => numeral.printed), ['0.375'], 'the Solution stops at the Check Your Learning: 0.05 is not its answer');
+  // As units they are read by the same judge as an exercise — and are never among a section page's keyed units.
+  const units = workedExampleUnits(xml);
+  const item = { type: 'fillin', question: `${examples[0].stem} Enter the molarity in mol/L.`, answer: '0.375', form: 'sig-figs:3 last-digit:0' };
+  assert.equal(judgeKeyedUnit(item, units).status, 'confirmed');
+  assert.equal(judgeKeyedUnit({ ...item, answer: '0.05' }, units).status, 'key-differs');
+  assert.ok(!keyedUnits(xml).some((unit) => unit.cls === 'worked-example'), 'a section page builds no item on a worked example');
+  assert.deepEqual(keyedUnits(xml).map((unit) => unit.id), ['w1#check']);
+});
+

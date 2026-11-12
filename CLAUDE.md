@@ -7,8 +7,9 @@ For content work read `docs/authoring-playbook.md` — the subject-neutral
 core — plus the subject playbook under `docs/subjects/` (`math.md`, or
 `life-sciences.md` plus the book's `biology.md` / `microbiology.md` /
 `anatomy-physiology.md`, or `chemistry.md`); for cumulative assessments also read the
-subject's edition, `docs/knowledge-check-playbook-math.md` or
-`docs/knowledge-check-playbook-life-sciences.md`; for the OpenStax math books
+subject's edition, `docs/knowledge-check-playbook-math.md`,
+`docs/knowledge-check-playbook-life-sciences.md`, or
+`docs/knowledge-check-playbook-chemistry.md`; for the OpenStax math books
 follow `docs/source/openstax-source-workflow.md` and treat the pinned CNXML
 commit in `data/openstax/source-lock.json` as the transcription authority.
 Verify with `npm run verify-section -- <page>` and `npm test` before
@@ -30,7 +31,11 @@ the template for the next life-sciences book.
 To author a Chemistry chapter ("author chapter N of Chemistry"), follow
 `docs/briefs/chemistry/run.md` the same way: the briefs beside it, the prep
 tool `tools/source/chemistry-prep.py`, the consistency reading every
-chapter, and every reading and ruling before the blind solve.
+chapter, and every reading and ruling before the blind solve. A chapter
+that closes a block is followed by that block's Knowledge Check ("author
+the Knowledge Check for chapters X–Y of Chemistry"):
+`docs/briefs/chemistry/kc-run.md` and the prompts in `kc-prompts/` beside
+it.
 
 To edit or re-review a finished book's page, follow `docs/re-review/README.md`
 and record the run in the subject's `docs/history/` file.

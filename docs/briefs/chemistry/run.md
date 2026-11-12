@@ -364,14 +364,9 @@ the CNXML and the page.
    block (playbook "Knowledge checks", the table of blocks: chapters 1–3,
    4–5, 6–8, 9–11, 12–15, 16–17, 18–21), the next run is that block's
    check, not the next chapter: say so in the history entry and the
-   session memory. **Chapter 3 closes block 1, and the Chemistry Knowledge
-   Check kit does not exist yet** (playbook "What is still open"): that
-   run's parent first writes it — a `kc-run.md` and its prompts beside this
-   file — from `docs/briefs/anatomy-physiology/kc-run.md` and its
-   `kc-prompts/` as the template, with this book's quota and item-source
-   rule ("Knowledge checks"), and only then authors the block. The check's
-   page needs its sidebar place (`npm run kc -- weights
-   content/physical-sciences/chemistry --write`).
+   session memory. The check is run from `kc-run.md` beside this file,
+   with the prompts in `kc-prompts/`, under
+   `docs/knowledge-check-playbook-chemistry.md`.
 
 ## What a chapter cost
 

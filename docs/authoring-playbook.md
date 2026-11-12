@@ -42,8 +42,9 @@ remains required, and its record is what the gate checks.
 Before writing:
 
 1. Read `AGENTS.md`, this playbook, and—when applicable—the subject's
-   Knowledge Check playbook (`docs/knowledge-check-playbook-math.md` or
-   `docs/knowledge-check-playbook-life-sciences.md`). Inspect `git status` and preserve unrelated work.
+   Knowledge Check playbook (`docs/knowledge-check-playbook-math.md`,
+   `docs/knowledge-check-playbook-life-sciences.md`, or
+   `docs/knowledge-check-playbook-chemistry.md`). Inspect `git status` and preserve unrelated work.
 2. For an OpenStax math book listed in
    `data/openstax/source-lock.json`, follow
    `docs/source/openstax-source-workflow.md`: use the pinned CNXML as the
@@ -709,13 +710,15 @@ The grading engine's own notational limits, and the closed-class record of
 fill-ins that were passable by retyping their own prompt, are documented per
 subject; for math, see `docs/subjects/math.md`.
 
-### Knowledge Checks (both editions)
+### Knowledge Checks (every edition)
 
 A Knowledge Check is a cumulative self-test at book level (math: a chapter
-range) or unit level (life sciences: one page per unit) — not a section. The
-rules every edition shares live here; each subject's edition
+range), unit level (life sciences: one page per unit), or block level
+(Chemistry: one page per block of chapters) — not a section. The rules
+every edition shares live here; each subject's edition
 (`docs/knowledge-check-playbook-math.md`,
-`docs/knowledge-check-playbook-life-sciences.md`) adds how its items are
+`docs/knowledge-check-playbook-life-sciences.md`,
+`docs/knowledge-check-playbook-chemistry.md`) adds how its items are
 sourced and counted.
 
 - **Placement.** `content/<subject>/<book>/knowledge-check-XX-YY.md`, at

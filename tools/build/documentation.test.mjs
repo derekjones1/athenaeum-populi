@@ -86,7 +86,7 @@ test('the playbooks live in docs/ only', () => {
   // linked to those routes and they were absent from the nav and the legacy
   // route manifest, so the mirror was deleted rather than kept in sync. Guard
   // against it coming back.
-  for (const name of ['authoring-playbook.md', 'knowledge-check-playbook-math.md', 'knowledge-check-playbook-life-sciences.md']) {
+  for (const name of ['authoring-playbook.md', 'knowledge-check-playbook-math.md', 'knowledge-check-playbook-life-sciences.md', 'knowledge-check-playbook-chemistry.md']) {
     assert.ok(
       exists(`docs/${name}`),
       `docs/${name} is the canonical location for this playbook`,
@@ -160,14 +160,14 @@ test('AGENTS.md documents the ledger result-file shape the merge reads', () => {
   assert.match(agents, /fail\s+the\s+merge\s+with\s+nothing\s+written/);
 });
 
-test('the core owns the shared knowledge-check rules and both editions point at it', () => {
+test('the core owns the shared knowledge-check rules and every edition points at it', () => {
   // The overlap/identity rule used to be stated verbatim in both editions;
   // it lives once in the core now, and each edition delegates.
   const core = read('docs/authoring-playbook.md');
-  assert.match(core, /###\s+Knowledge\s+Checks\s+\(both\s+editions\)/);
+  assert.match(core, /###\s+Knowledge\s+Checks\s+\(every\s+edition\)/);
   assert.match(core, /must\s+not\s+overlap/);
   assert.match(core, /filename,\s+title,\s+`source_chapters`/);
-  for (const name of ['knowledge-check-playbook-math.md', 'knowledge-check-playbook-life-sciences.md']) {
+  for (const name of ['knowledge-check-playbook-math.md', 'knowledge-check-playbook-life-sciences.md', 'knowledge-check-playbook-chemistry.md']) {
     const knowledgeChecks = read(`docs/${name}`);
     assert.match(knowledgeChecks, /authoring-playbook\.md[^\n]*Knowledge\s+Checks/, `${name} points at the core's shared rules`);
     assert.doesNotMatch(knowledgeChecks, /must\s+not\s+overlap/, `${name} no longer restates the overlap rule`);
@@ -503,14 +503,10 @@ test('the chemistry subject playbook states the rules its engine enforces', asyn
   // Figures and Knowledge Checks.
   assert.match(chem, /every\s+image\s+ships\s+as\s+the\s+source's\s+raster\s+through\s+`mediafigure`/);
   assert.match(chem, /set\s+`kind`\s+on\s+every\s+figure/);
-  assert.match(chem, /##\s+Knowledge\s+checks\n\nDecided\s+November\s+9,\s+2026:\s+\*\*one\s+check\s+per\s+block\s+of\s+chapters,\s+seven\s+pages\.\*\*/);
-  const blocks = [...chem.matchAll(/^\|\s+(\d)\s+\|\s+(\d+)–(\d+)\s+\|\s+(\d+)\s+\|/gm)]
-    .map((m) => ({ first: Number(m[2]), last: Number(m[3]), sections: Number(m[4]) }));
-  assert.equal(blocks.length, 7, 'seven Knowledge Check blocks');
-  assert.equal(blocks[0].first, 1);
-  assert.equal(blocks.at(-1).last, 21, 'the blocks end at the book\'s last chapter');
-  blocks.slice(1).forEach((block, i) => assert.equal(block.first, blocks[i].last + 1, 'the blocks tile the chapters with no gap'));
-  assert.equal(blocks.reduce((sum, block) => sum + block.sections, 0), 114, 'the blocks cover all 114 sections');
+  // The decisions stay here; the rules and the table of blocks are the
+  // book's own edition (pinned in the test of that name below).
+  assert.match(chem, /##\s+Knowledge\s+checks\n\nThe\s+rules\s+are\s+`docs\/knowledge-check-playbook-chemistry\.md`/);
+  assert.match(chem, /\*\*One\s+check\s+per\s+block\s+of\s+chapters,\s+seven\s+pages\*\*/);
 });
 
 // ---- answerForm token parity, in both directions ---------------------------
@@ -970,4 +966,63 @@ test('every Chemistry name keyed with a charge answers its classical name as an 
     }
   }
   assert.ok(read >= 6, `the charged name keys are read (${read})`);
+});
+
+test('the Chemistry Knowledge Check edition states what the lint, the gate, and the kit hold', () => {
+  // Written November 11, 2026, with the kit beside the chapter kit. Each
+  // claim is one a check author acts on, read against the code that owns it.
+  const edition = read('docs/knowledge-check-playbook-chemistry.md');
+  const chem = read('docs/subjects/chemistry.md');
+  const flat = (text) => text.replace(/\s+/g, ' ');
+
+  // The quota is the lint's profile, in both documents.
+  const quota = BOOK_RULES['physical-sciences/chemistry'].knowledgeCheck;
+  assert.deepEqual(quota, { perSection: { min: 2, max: 3 }, autoGraded: 1, fillins: true });
+  for (const [name, text] of [['the edition', edition], ['the subject playbook', chem]]) {
+    assert.match(flat(text).toLowerCase(), /two or three items/, `${name} states the range`);
+    assert.match(flat(text), /at least one of them auto-graded/, `${name} states the auto-graded floor`);
+  }
+
+  // The seven blocks: each row's item range is its section count times the
+  // quota, the sections are the book's 114, and the chapters run 1–21
+  // without a gap. The weight is the row's place among chapters and checks.
+  const rows = [...edition.matchAll(/^\| (\d) \| (\d+)–(\d+) \| (\d+) \| (\d+)–(\d+) \| `(knowledge-check-(\d\d)-(\d\d)\.md)` \| (\d+) \|/gm)]
+    .map((m) => ({ block: +m[1], first: +m[2], last: +m[3], sections: +m[4], low: +m[5], high: +m[6], file: m[7], from: +m[8], to: +m[9], weight: +m[10] }));
+  assert.equal(rows.length, 7, 'seven blocks');
+  assert.equal(rows.reduce((sum, row) => sum + row.sections, 0), 114, 'every section of the book sits in one block');
+  let next = 1;
+  for (const row of rows) {
+    assert.equal(row.first, next, `block ${row.block} starts where the last one ended`);
+    assert.deepEqual([row.from, row.to], [row.first, row.last], `${row.file} is named for its chapters`);
+    assert.deepEqual([row.low, row.high], [row.sections * quota.perSection.min, row.sections * quota.perSection.max], `block ${row.block}'s item range is its sections times the quota`);
+    assert.equal(row.weight, row.last + row.block, `block ${row.block}'s weight follows its last chapter and the checks before it`);
+    next = row.last + 1;
+  }
+  assert.equal(next, 22, 'the blocks end at chapter 21');
+  // The subject playbook names the same blocks and ranges.
+  assert.ok(flat(chem).includes(rows.map((row) => `${row.first}–${row.last}`).join(', ').replace(/, (\d+–\d+)$/, ', and $1')), 'the subject playbook lists the same chapter ranges');
+  assert.ok(flat(chem).includes(rows.map((row) => `${row.low}–${row.high}`).join(', ').replace(/, (\d+–\d+)$/, ', and $1')), 'and the same item ranges');
+
+  // Where the items come from, and the gate that holds it.
+  assert.match(flat(edition), /re-asks a worked example's own question and keys the answer its Solution prints/);
+  assert.match(flat(chem), /re-asks a worked example's own question and keys the answer its Solution prints/);
+  assert.match(edition, /npm run kc --\s+sources/);
+  const scripts = JSON.parse(read('package.json')).scripts;
+  assert.equal(scripts['verify:kc-sources'], 'node tools/source/knowledge-check.mjs sources content');
+  assert.match(scripts.test, /npm run verify:kc-sources/, 'the gate is part of npm test');
+  assert.match(read('AGENTS.md'), /npm run verify:kc-sources/);
+
+  // The kit the edition and the entry points name is there.
+  assert.match(edition, /docs\/briefs\/chemistry\/kc-run\.md/);
+  assert.match(read('CLAUDE.md'), /docs\/briefs\/chemistry\/kc-run\.md/);
+  for (const name of ['kc-run.md', 'kc-prompts/README.md', 'kc-prompts/author.md', 'kc-prompts/checker.md',
+    'kc-prompts/sweep.md', 'kc-prompts/second-checker.md', 'kc-prompts/solver.md']) {
+    assert.ok(exists(`docs/briefs/chemistry/${name}`), `docs/briefs/chemistry/${name}`);
+  }
+  // Every prompt forbids git, and the solver's two passes are spelled out.
+  for (const name of ['author', 'checker', 'sweep', 'second-checker', 'solver']) {
+    assert.match(read(`docs/briefs/chemistry/kc-prompts/${name}.md`), /[Nn]ever (?:run )?(?:a )?(?:npm or )?git/, `${name}.md`);
+  }
+  assert.match(read('docs/briefs/chemistry/kc-prompts/solver.md'), /PASS ONE, before you open any file/);
+  assert.match(flat(edition), /works each fill-in from the stem and Appendix A first/);
 });

@@ -43,9 +43,10 @@ subject-neutral core — plus the subject playbook under
 plus the book's own `biology.md` / `microbiology.md` / `anatomy-physiology.md`,
 or `chemistry.md`) for
 sections, and the subject's knowledge-check playbook —
-[docs/knowledge-check-playbook-math.md](docs/knowledge-check-playbook-math.md)
+[docs/knowledge-check-playbook-math.md](docs/knowledge-check-playbook-math.md),
+[docs/knowledge-check-playbook-life-sciences.md](docs/knowledge-check-playbook-life-sciences.md),
 or
-[docs/knowledge-check-playbook-life-sciences.md](docs/knowledge-check-playbook-life-sciences.md)
+[docs/knowledge-check-playbook-chemistry.md](docs/knowledge-check-playbook-chemistry.md)
 — for cumulative knowledge checks. Content lives under `content/` in the
 hierarchy Subject → Book → Chapter → Section.
 

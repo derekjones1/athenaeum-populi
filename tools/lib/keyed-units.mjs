@@ -301,6 +301,50 @@ export function checkYourLearning(document) {
 }
 
 /**
+ * Each worked example of a module, whole: the question it asks — every
+ * paragraph and equation before its titled `Solution` paragraph, the
+ * example's own title dropped — and the Solution, up to the Check Your
+ * Learning it ends with, as `answerText`. A Knowledge Check of a keyed-only
+ * book re-asks the question and keys what the Solution prints
+ * (docs/knowledge-check-playbook-chemistry.md, "Where the items come from").
+ * Returns `{ id, cls, title, stem, marked, keyed, answer, leansOn, figures }`:
+ * `leansOn` is the other example its question links ("the soft drink from
+ * [Example 3.14]"), `figures` how many images the question holds.
+ */
+export function workedExamples(xml) {
+  const document = typeof xml === 'string' ? parseXml(xml) : xml;
+  const found = [];
+  for (const example of descendants(document, (node) => localName(node) === 'example')) {
+    const children = (example.children || []).filter((child) => typeof child !== 'string');
+    const titleOf = (node) => normalizeWhitespace(stemText(firstElement(node, 'title') || { children: [] }));
+    const solutionAt = children.findIndex((child) => localName(child) === 'para' && /^solution\b/i.test(titleOf(child)));
+    if (solutionAt < 1) continue;
+    const checkAt = children.findIndex((child, index) => index > solutionAt && localName(child) === 'para' && /^check your learning$/i.test(titleOf(child)));
+    const asked = children.slice(0, solutionAt);
+    const worked = children.slice(solutionAt, checkAt === -1 ? children.length : checkAt);
+    const title = titleOf(asked[0]);
+    const read = (options) => {
+      const text = normalizeWhitespace(asked.map((child) => stemText(child, options)).join(' '));
+      return title && text.startsWith(title) ? text.slice(title.length).trim() : text;
+    };
+    const stem = read();
+    if (!stem) continue;
+    const leans = asked.flatMap((child) => descendants(child, (node) => localName(node) === 'link' && node.attributes['target-id']))
+      .map((link) => link.attributes['target-id']).find((target) => target !== example.attributes.id
+        && descendants(document, (node) => localName(node) === 'example' && node.attributes.id === target).length);
+    const marked = read({ marked: true });
+    found.push({
+      ...(leans ? { leansOn: leans } : {}),
+      id: example.attributes.id || '', cls: 'worked-example', title, stem, marked,
+      keyed: true, answer: normalizeWhitespace(worked.map((child) => answerText(child)).join(' ')),
+      answerMarked: normalizeWhitespace(worked.map((child) => markedStemText(child)).join(' ')),
+      figures: marksIn(marked).length + asked.filter((child) => localName(child) === 'figure').length,
+    });
+  }
+  return found;
+}
+
+/**
  * The parts an answer NAMES instead of answering one by one — "Only (b)",
  * "(a), (b), (c), (d), and (e)" — as their labels, or null. Such an answer
  * says yes to the parts it names and no to the rest (13.3: which additions
@@ -461,6 +505,11 @@ export function keyedUnits(xml) {
     }
   }
   whole.push(...checkYourLearning(document));
+  return splitUnits(whole);
+}
+
+/** Whole exercises as units: one each, or one per lettered part (`keyedUnits`). */
+function splitUnits(whole) {
   const units = [];
   for (const { marked, answerMarked, ...unit } of whole) {
     // One of a closed set: one unit, its parts the options (`closedSet`).
@@ -507,6 +556,18 @@ export function keyedUnits(xml) {
     }
   }
   return units;
+}
+
+/**
+ * A module's worked examples as units the source gates' judges read
+ * (`unitFor`, verify-source-keys `judgeKeyedUnit`): each example's question
+ * the stem, its Solution the answer, split by lettered part as an exercise
+ * is. They are NOT among `keyedUnits`: a section page prints a worked
+ * example as prose and builds no item on it; a Knowledge Check does
+ * (tools/source/knowledge-check.mjs `sources`).
+ */
+export function workedExampleUnits(xml) {
+  return splitUnits(workedExamples(xml).map(({ title, figures, leansOn, ...unit }) => unit));
 }
 
 /**

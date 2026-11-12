@@ -14,7 +14,9 @@ here, and so do the life-sciences playbook's component rules
 `selfcheck` rubrics, `sortbins` construction, `mediafigure` manifest rule).
 
 This edition governs every life-sciences book; the mathematics edition is
-`docs/knowledge-check-playbook-math.md`. Both are cumulative, grouped by the
+`docs/knowledge-check-playbook-math.md`, and Chemistry 2e has its own,
+`docs/knowledge-check-playbook-chemistry.md`, which takes this edition's
+rules for a written item and adds worked-example items. Both are cumulative, grouped by the
 chapter and section each item comes from, hint-free, and ledgered and
 independently solved. They differ where the source differs: a life-sciences
 book has no chapter Practice Test, Review Exercises, or Answer Key pool —
@@ -26,7 +28,7 @@ is **author-written from the module text at a fixed count per section**.
 The placement and identity rules every edition shares — file name and
 location, frontmatter, non-overlapping ranges, the numeric-prefix exemption,
 `aliases` on rename, no hints, the waived 2–3 cap, real components only —
-live in `docs/authoring-playbook.md` §3 "Knowledge Checks (both editions)".
+live in `docs/authoring-playbook.md` §3 "Knowledge Checks (every edition)".
 What is specific to a unit-level check:
 
 - **One page per unit.** Biology 2e's units are the machine-readable
