@@ -16,7 +16,7 @@ Also note: a key that is a word of its `### N.M` title; a stem printing a word o
 ## Method — every WORKED-EXAMPLE item (fill-in, formula or equation text-in, or a provenance note that says "Example:")
 1. Find its example on the section page (`**Example.** *Title.*`). The stem is that question with only a closing sentence added. A changed number, a dropped datum, or a surviving referent ("the previous example") is hard.
 2. **The chain leak**, across every block of the check: the item's key printed as a datum in another item's stem, or a datum of this stem that is another item's key. `node tools/source/knowledge-check.mjs leaks <block>` lists the candidates within one block; across blocks the read is yours.
-3. **A page correction**: the section page carries a `*Source note:*` on or directly after this example, or its numbers differ from the item's. Hard: a corrected example is not used.
+3. **A page correction**, judged for the PART the item asks: the section page corrected that part's question, its data, the working that leads to its answer, or the answer, or a `*Source note:*` is about it. Hard. A correction to another part of the example (1.6's body-temperature example: the page rewrote the kelvin line, and the item asks the Fahrenheit answer) is not.
 4. The same example asked twice on the check, or an example item and a written item asking one fact. Hard.
 5. The section page's own Check Your Learning or Practice item with the same numbers as this item (not merely the same method): hard — that is the duplicate the lint reads only word for word.
 

@@ -9428,6 +9428,14 @@
    "verdict": "ok",
    "note": "Bio 41.5 selfcheck \"How does the renin-angiotensin-aldosterone mechani\": hint location-only, model answer and rubric checked against the module; parent re-read Sep 24 2026"
   },
+  "1323f5a664ec2132": {
+   "verdict": "ok",
+   "note": "KC 1 1.2 § Classifying Matter, m68667",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1327318b7a7353ec": {
    "verdict": "ok",
    "note": "Review fs-id1862585, key D 'cerebral cortex'; body fs-id1521110 'Within the cerebral cortex, information is processed among many neurons, integrating…'",
@@ -13128,6 +13136,14 @@
     "result": "agrees"
    }
   },
+  "1a2646ef84fe24a9": {
+   "verdict": "ok",
+   "note": "KC 1 3.4 § Example: Calculation of Parts per Million and Parts per Billion Concentrations, m68704",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1a28cdfd520ecec5": {
    "verdict": "ok",
    "note": "source exercise fs-id1172100999760 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -14986,6 +15002,14 @@
     "result": "agrees"
    }
   },
+  "1dbe3ca02f109de2": {
+   "verdict": "ok",
+   "note": "KC 1 2.7 § Example: Naming Covalent Compounds, m68698",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1dbed42dfe012eb3": {
    "verdict": "ok",
    "note": "source exercise fs-id1172097196464 (prose-key) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -15035,6 +15059,14 @@
    "note": "RQ2 (fs-idp163375200): CNXML solution keys D = 'all of the above'; all three sub-claims (earliest life, hydrothermal-vent energy, multi-layered sheet of bacteria+archaea) are stated in the Microbial Mats subsection, so 'all of the above' is taught. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "1decb7577f6f48e2": {
+   "verdict": "ok",
+   "note": "KC 1 2.1 § introduction (body), m68685",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -18906,6 +18938,14 @@
     "result": "agrees"
    }
   },
+  "25fdc2c351fa474e": {
+   "verdict": "ok",
+   "note": "KC 1 2.7 § Compounds Containing Polyatomic Ions (Everyday Ionic Compounds table), m68698",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "260034a222b03a88": {
    "verdict": "ok",
    "note": "Critical Thinking fs-idp87953008: model answer is the source solution verbatim; checkpoints decompose its four clauses (bilirubin->bile, malfunction->excess bilirubin/low bile, struggles with fatty food, jaundice diet) with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -19129,6 +19169,14 @@
   "2676318e0bc6669a": {
    "verdict": "ok",
    "note": "KC 7 39.3 § note Avian Respiration (fs-idp533232), m66647 — parent re-read against the module"
+  },
+  "26779cd31e7b1377": {
+   "verdict": "ok",
+   "note": "KC 1 2.2 § introduction (body: Thomson and Nagaoka models), m68687",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "267ff3760f34537f": {
    "verdict": "ok",
@@ -21465,6 +21513,14 @@
     "result": "agrees"
    }
   },
+  "2b3e27ed66a2ec3a": {
+   "verdict": "ok",
+   "note": "KC 1 3.2 § Example: Determining a Compound’s Empirical Formula from the Masses of Its Elements, m68702",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2b400966df7c1778": {
    "verdict": "ok",
    "note": "re-read against m46549 CNXML and the page: residual volume",
@@ -22883,6 +22939,14 @@
    "verdict": "ok",
    "note": "CT fs-id2190462; model = solution fs-id1404500 verbatim; consistent with fs-id1279392."
   },
+  "2e43e2c91e6eda83": {
+   "verdict": "ok",
+   "note": "KC 1 2.1 § Example: Laws of Definite and Multiple Proportions, m68685",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2e4887e4f5b520ac": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -24085,6 +24149,14 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 41): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
+  "3092a2679d313404": {
+   "verdict": "ok",
+   "note": "KC 1 1.6 § Example: Using a Unit Conversion Factor, m68683",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "309ade03fe59da3c": {
    "verdict": "ok"
   },
@@ -24223,6 +24295,14 @@
   "30eda3c104bb4d62": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "30edf8e710430b79": {
+   "verdict": "ok",
+   "note": "KC 1 3.3 § Example: Determining the Mass of Solute in a Given Volume of Solution, m68703",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -24420,6 +24500,14 @@
   "3172f8b428cb8b02": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "3175ce519eca8aae": {
+   "verdict": "ok",
+   "note": "KC 1 3.2 § Example: Calculation of Percent Composition, m68702",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "31764824a4bea98e": {
    "verdict": "ok",
@@ -26969,6 +27057,14 @@
     "result": "agrees"
    }
   },
+  "36d35ad32d2dd0c4": {
+   "verdict": "ok",
+   "note": "KC 1 2.6 § Example: Predicting the Type of Bonding in Compounds, m68696",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "36e5dcf01b166fbe": {
    "verdict": "ok",
    "note": "body cloze fs-id1339348 water content",
@@ -28602,6 +28698,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver-A",
+    "result": "agrees"
+   }
+  },
+  "3a69c506aace930c": {
+   "verdict": "ok",
+   "note": "KC 1 1.5 § Significant Figures in Measurement, m68690",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -31319,6 +31423,14 @@
   "3fd3e6ef10ea4756": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "3fd531f9bb9b1dd7": {
+   "verdict": "ok",
+   "note": "KC 1 2.5 § introduction (body: classes and named groups of elements), m68695",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -34149,6 +34261,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver-A",
+    "result": "agrees"
+   }
+  },
+  "45c4fd5b12fe74ea": {
+   "verdict": "ok",
+   "note": "KC 1 2.3 § Example: Calculation of Percent Abundance, m68692",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -37325,6 +37445,15 @@
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
+   }
+  },
+  "4ca149bb161e90cb": {
+   "verdict": "ok",
+   "note": "KC 1 2.5 § Example: Naming Groups of Elements, m68695",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "form variant, not a second key: m68695’s Solution answers \"halogen\" and the grader folds the regular plural, so \"halogens\" is graded correct too (checkText); the key stands"
    }
   },
   "4ca2d65af39c8226": {
@@ -41071,6 +41200,14 @@
     "result": "agrees"
    }
   },
+  "548a55d32576469c": {
+   "verdict": "ok",
+   "note": "KC 1 1.3 § Physical and Chemical Properties, m68670",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "548aad58e897a84a": {
    "verdict": "ok",
    "note": "KC 1 3.6 § body Differentiation (fs-id1521639), Everyday Connection Stem Cell Research (fs-id704569), m46036"
@@ -43735,6 +43872,14 @@
     "result": "agrees"
    }
   },
+  "5a195587b96e602e": {
+   "verdict": "ok",
+   "note": "KC 1 1.6 § Example: Conversion from Celsius, m68683",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5a1c66291c9a1167": {
    "verdict": "ok"
   },
@@ -44217,6 +44362,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "5b04715882fdeaa9": {
+   "verdict": "ok",
+   "note": "KC 1 2.3 § Atomic Mass, m68692"
   },
   "5b05d7d70d88f561": {
    "verdict": "ok",
@@ -45853,6 +46002,10 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "5e477266fc1522fb": {
+   "verdict": "ok",
+   "note": "KC 1 1.6 § Mathematical Treatment of Measurement Results, m68683"
+  },
   "5e482e5592fc52c3": {
    "verdict": "ok",
    "note": "glossary fs-id2925499 recall; accept septic (blood poisoning dropped after claim correction F4: the body names sepsis blood poisoning); sepsis not accepted (not a type of shock).",
@@ -46337,6 +46490,14 @@
   "5f83efce19fc8ce9": {
    "verdict": "ok",
    "note": "KC 2 9.2 § Detoxification of Reactive Oxygen Species, m58829",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "5f8c48f46d2771d1": {
+   "verdict": "ok",
+   "note": "KC 1 1.2 § Atoms and Molecules, m68667",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -47340,6 +47501,14 @@
     "result": "agrees"
    }
   },
+  "61dc5e19afed975f": {
+   "verdict": "ok",
+   "note": "KC 1 3.4 § Mass-Volume Percentage, m68704",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "61df73ffa8359498": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -47422,6 +47591,14 @@
   "620b58f3a85e551b": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "622d70e6476c283f": {
+   "verdict": "ok",
+   "note": "KC 1 1.5 § Accuracy and Precision, m68690",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "6237debb847a1423": {
    "verdict": "ok",
@@ -49680,6 +49857,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "67e15aaf0c75fe9b": {
+   "verdict": "ok",
+   "note": "KC 1 2.6 § Ionic Compounds, m68696"
   },
   "67e336865cea9ac0": {
    "verdict": "ok",
@@ -52115,6 +52296,14 @@
     "result": "agrees"
    }
   },
+  "6d8184d768494367": {
+   "verdict": "ok",
+   "note": "KC 1 2.2 § introduction (body: discovery of isotopes), m68687",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6d88547c4dfc28c6": {
    "verdict": "ok",
    "note": "source exercise fs-id1167662747086 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -53059,6 +53248,14 @@
   "6f9a49464beff5e4": {
    "verdict": "ok"
   },
+  "6f9b595b5a3645b0": {
+   "verdict": "ok",
+   "note": "KC 1 1.3 § Hazard Diamond, m68670",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6fa00c1bba8bfea4": {
    "verdict": "ok",
    "note": "KC 1 1.1 § Natural Sciences, m66427 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -53476,6 +53673,14 @@
   "709571c12b1d98ec": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "70991d0d6356d6f7": {
+   "verdict": "ok",
+   "note": "KC 1 1.4 § Example: Calculation of Density, m68674",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -56001,6 +56206,14 @@
   "75b2744af7e5e7ec": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "75b37dccd6de8f38": {
+   "verdict": "ok",
+   "note": "KC 1 1.1 § The Domains of Chemistry, m68664",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -63379,6 +63592,14 @@
     "result": "agrees"
    }
   },
+  "84bb292083e9c567": {
+   "verdict": "ok",
+   "note": "KC 1 1.1 § Chemistry in Context, m68664",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "84bcb39b7254dfac": {
    "verdict": "ok",
    "note": "glossary recall fs-id1518990; stem = body defining clause fs-id1320162",
@@ -66375,6 +66596,14 @@
     "result": "agrees"
    }
   },
+  "8b2b7e53826a3166": {
+   "verdict": "ok",
+   "note": "KC 1 2.6 § Example: Predicting the Formula of a Compound with a Polyatomic Anion, m68696",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8b2baed91459df9c": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -66394,6 +66623,14 @@
   "8b34819e3afa5166": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "8b3a28deb1d330ee": {
+   "verdict": "ok",
+   "note": "KC 1 1.5 § Example: Calculation with Significant Figures, m68690",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -67806,6 +68043,14 @@
   "8e5a047e07158d04": {
    "verdict": "ok",
    "note": "KC 8 44.3 § body Temperate Forests (fs-idp19162496), m66420 — parent re-read against the module"
+  },
+  "8e5aafdb68c6cb12": {
+   "verdict": "ok",
+   "note": "KC 1 3.3 § Example: Volume of a Concentrated Solution Needed for Dilution, m68703",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "8e5c3e3f6a01e802": {
    "verdict": "ok",
@@ -72324,6 +72569,14 @@
     "result": "agrees"
    }
   },
+  "97ccdef26a132916": {
+   "verdict": "ok",
+   "note": "KC 1 3.1 § Example: Deriving Moles from Grams for a Compound, m68700",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "97d223d54b2254c2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -76710,6 +76963,14 @@
     "result": "agrees"
    }
   },
+  "a18bf6f778be2583": {
+   "verdict": "ok",
+   "note": "KC 1 3.4 § Example: Calculation of Percent by Mass, m68704",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a18eebf486cdbc27": {
    "verdict": "ok",
    "note": "glossary fs-id1809183: uniporter = transporter that carries one specific ion or molecule.; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -77262,6 +77523,14 @@
   "a276b115cb5889a0": {
    "verdict": "ok",
    "note": "KC 3 12.2 § Codominance, m66487 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "a276c68eeeb99274": {
+   "verdict": "ok",
+   "note": "KC 1 1.4 § Measurements, m68674",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -80632,6 +80901,14 @@
     "result": "agrees"
    }
   },
+  "a943961511881ea4": {
+   "verdict": "ok",
+   "note": "KC 1 2.4 § introduction (body: isomers), m68693",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a949bbf50247e4b5": {
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
@@ -81480,6 +81757,15 @@
   "ab635a78fa91fa37": {
    "verdict": "ok",
    "note": "KC 5 21.2 § body Animal Viruses (fs-idm53380352), m66535 — parent re-read against the module"
+  },
+  "ab73769214c088b8": {
+   "verdict": "ok",
+   "note": "KC 1 3.3 § Solutions, m68703",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "form variant, not a second key: the solver typed \"aqueous solution\", the item’s accept member, and names the key \"aqueous\" as the other form; both are graded correct (checkText); the key stands"
+   }
   },
   "ab75b662295db7ac": {
    "verdict": "ok"
@@ -88379,6 +88665,14 @@
     "note": "The key 17.76 is the source's and the body's own. The solver's 17.75 (formula mass carried unrounded, 3.024/17.034) grades correct under sig-figs:4 last-digit:1, which is what the allowance for a molar mass fetched from the table is for."
    }
   },
+  "ba06440bbb1d6f10": {
+   "verdict": "ok",
+   "note": "KC 1 2.7 § Oxyacids, m68698",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ba0702e2958268cb": {
    "verdict": "ok",
    "note": "summary cloze fs-id2844948 last sentence 'with the lungs and plasma buffers'",
@@ -92239,6 +92533,14 @@
     "result": "agrees"
    }
   },
+  "c24ef5bcf8bba591": {
+   "verdict": "ok",
+   "note": "KC 1 2.3 § Isotopes, m68692",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c252a2f16342732e": {
    "verdict": "ok",
    "note": "KC 2 7.5 § body, m58817",
@@ -93572,6 +93874,14 @@
     "result": "agrees"
    }
   },
+  "c4cba90d5196ae9c": {
+   "verdict": "ok",
+   "note": "KC 1 2.4 § introduction (body: structural formula and models), m68693",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c4d24c458c086b3e": {
    "verdict": "ok",
    "note": "source exercise fs-id1167663603833 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -94008,6 +94318,14 @@
   },
   "c5deb2844db6eb64": {
    "verdict": "ok"
+  },
+  "c5df39f2f0d22152": {
+   "verdict": "ok",
+   "note": "KC 1 3.1 § Formula Mass for Covalent Substances, m68700",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "c5e7451b010413d9": {
    "verdict": "ok",
@@ -100989,6 +101307,14 @@
     "result": "agrees"
    }
   },
+  "d54501dfb5a08670": {
+   "verdict": "ok",
+   "note": "KC 1 1.1 § The Scientific Method, m68664",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d5452573be067d99": {
    "verdict": "ok",
    "note": "key-term recall: buffer zones; printed in § Preserve Design: \"Preserves perform better when there are buffer zones around them of suboptimal habitat.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -101137,6 +101463,14 @@
   "d594205de1e43068": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d597876655edd575": {
+   "verdict": "ok",
+   "note": "KC 1 2.5 § introduction (body: metals, nonmetals, and metalloids), m68695",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -101345,6 +101679,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "d5fd5aecf94e888a": {
+   "verdict": "ok",
+   "note": "KC 1 1.2 § Phases and Classification of Matter, m68667"
   },
   "d5ff0456c6cf9040": {
    "verdict": "ok",
@@ -117506,6 +117844,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "f85374fa8764c874": {
+   "verdict": "ok",
+   "note": "KC 1 3.1 § The Mole, m68700"
   },
   "f8575f2d28c92c1d": {
    "verdict": "ok",

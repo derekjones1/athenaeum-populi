@@ -71,6 +71,12 @@ const REPRESENTATIVE_PAGES = [
       'g-standard-thermodynamic-properties-for-selected-substances/',
   },
   {
+    // A check with measured fill-ins, typed formulas, and no hints; the
+    // periodic-table control sits on its rail as on a section page.
+    name: 'chemistry block 1 knowledge check (chapters 01–03)',
+    path: '/physical-sciences/chemistry/knowledge-check-01-03/',
+  },
+  {
     name: 'biology unit 1 knowledge check (chapters 01–03)',
     path: '/life-health-sciences/biology/knowledge-check-01-03/',
   },

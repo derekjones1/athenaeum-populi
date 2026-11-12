@@ -2448,3 +2448,64 @@ test('on every Chemistry page a display row fits the column, scientific notation
   expect(totals.keptInStems, 'a fill-in stem\'s scientific notation is held together').toBeGreaterThanOrEqual(8);
   expect(totals.scaled, 'the manifest\'s scaled-down figures reached the page').toBeGreaterThanOrEqual(6);
 });
+
+// The first Chemistry Knowledge Check (November 11, 2026). A check of this
+// book carries what no other book's does: measured-quantity fill-ins and
+// typed formulas, each re-asking a worked example, on a page with no hints
+// and no section table to look a factor up in. What the gates cannot see is
+// the rendered page: where it sits, that the periodic table is still one
+// click away, and that the two typed forms grade as on a section page.
+test('the Chemistry Knowledge Check follows its block, has no hints, keeps the periodic table, and grades a fill-in and a formula', async ({ page }) => {
+  await gotoBuiltPage(page, '/physical-sciences/chemistry/knowledge-check-01-03/');
+
+  // After the block's last chapter and its sections, before the appendices.
+  const book = await page.locator('aside a[href^="/physical-sciences/chemistry/"]').evaluateAll(
+    (links) => [...new Set(links.map((a) => a.getAttribute('href')))],
+  );
+  const at = book.findIndex((href) => href.endsWith('/chemistry/knowledge-check-01-03/'));
+  expect(at, 'the check is in the sidebar').toBeGreaterThan(0);
+  expect(book[at - 1]).toMatch(/^\/physical-sciences\/chemistry\/03-[^/]+\/\d\d-[^/]+\/$/);
+  expect(book[at + 1]).toBe('/physical-sciences/chemistry/appendices/');
+
+  // No hint anywhere, and every item kind the page carries is there.
+  await expect(page.locator('[class*="hint"]')).toHaveCount(0);
+  for (const [tag, floor] of [['fill-in', 8], ['text-in', 8], ['multiple-choice', 12], ['self-check', 3]]) {
+    expect(await page.locator(tag).count(), `${tag} items`).toBeGreaterThanOrEqual(floor);
+  }
+  // A molar mass needs the table, and a check has no section page around it.
+  await expect(page.locator('nav#ap-toc a.ap-reference-figure')).toHaveText('Periodic table');
+
+  // A measured fill-in: the key, the unrounded readout, and a number the stem prints.
+  const dilution = page.locator('fill-in[data-question^="What volume of 1.59"]');
+  await expect(dilution).toHaveCount(1);
+  const field = dilution.locator('math-field');
+  const status = () => dilution.evaluate((el) => el.status);
+  const check = async (keys) => {
+    await clearMathField(field);
+    await focusMathField(page, field);
+    await page.keyboard.type(keys, { delay: 15 });
+    await dilution.getByRole('button', { name: /check/i }).click();
+  };
+  await check('5.00');
+  await expect.poll(status).toBe('incorrect');
+  await check('0.31447');
+  await expect.poll(status).toBe('form');
+  await check('0.314');
+  await expect.poll(status).toBe('correct');
+
+  // A typed formula: read back in print, wrong without its grouping, then right.
+  const upgraded = (el) => Boolean(customElements.get('text-in')) && Boolean(el.querySelector('.ap-textin-check'));
+  const salt = page.locator('text-in[data-answer="Ca(H₂PO₄)₂"]');
+  await expect(salt).toHaveCount(1);
+  await waitForUpgrade(salt, upgraded);
+  await salt.scrollIntoViewIfNeeded();
+  const saltField = salt.locator('.ap-textin-field');
+  const saltStatus = () => salt.evaluate((el) => el.status);
+  await saltField.fill('CaH2PO4');
+  await saltField.press('Enter');
+  await expect.poll(saltStatus).toBe('incorrect');
+  await saltField.fill('Ca(H2PO4)2');
+  await expect(salt.locator('.ap-textin-reading')).toHaveText('Read as: Ca(H₂PO₄)₂');
+  await saltField.press('Enter');
+  await expect.poll(saltStatus).toBe('correct');
+});

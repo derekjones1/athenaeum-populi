@@ -1779,6 +1779,135 @@ solve's (how a band item is answered).
 Chapter 3 closes Knowledge Check block 1 (chapters 1–3), so the next run is
 that check, and its parent writes the Chemistry Knowledge Check kit first.
 
+## Knowledge Check 1: the kit, and chapters 1–3 (November 11, 2026)
+
+Derek: "Let's make a plan for the knowledge check playbook in chemistry".
+The plan was written in plan mode and approved; HEAD at the start was
+4e4e8770 with a green baseline, and the last erratum was 3001. Two commits:
+the kit (d9477140), then the check.
+
+### What Derek decided
+
+- **Where a check's items come from** — the question the playbook had left
+  as the parent's working rule since November 10. Put to him with three
+  options (worked examples; the unkeyed exercises with keys derived three
+  times, for checks only; examples first with unkeyed exercises as a
+  fallback), he chose the first: **a calculation item re-asks a worked
+  example's own question and keys the answer its Solution prints; the rest
+  are written from the module text.** The November 9 ruling that a graded
+  item needs a source key stands whole.
+- **Scope**: the playbook edition and the kit, then block 1 in the same run
+  as the pilot that confirms them.
+
+### The kit
+
+- `docs/knowledge-check-playbook-chemistry.md`, a third edition beside the
+  math and life-sciences ones (the core's §3 heading became "Knowledge
+  Checks (every edition)"). `docs/subjects/chemistry.md` "Knowledge checks"
+  keeps the three decisions and points at it.
+- `docs/briefs/chemistry/kc-run.md` and `kc-prompts/` (author, checker,
+  sweep, second checker, solver), from the Anatomy and Physiology kit.
+- **A gate for the item source**, `npm run kc -- sources`
+  (`verify:kc-sources`, in `npm test`): on a keyed-only book's check every
+  fill-in, formula, and equation must be a worked example's question, from
+  the module of the `### N.M` section it sits under, keyed with what that
+  example's Solution prints, to the figures a declared `sig-figs` names,
+  and never a number the question itself gives. `tools/lib/keyed-units.mjs`
+  reads a worked example as a unit (`workedExamples`,
+  `workedExampleUnits`), so the section gates' own judge reads it. A
+  Solution is prose, so a formula is looked for as any run of its words.
+  Probed before any author started: eight right items confirmed, six
+  planted wrong ones refused.
+- `npm run kc -- examples` lists a block's worked examples from the CNXML;
+  `kc leaks` now reads a fill-in's key as a number another item prints
+  (3.3's examples chain: one answers 0.839 *M* and a later one takes it as
+  its datum).
+- The solver's rule: a masked section page prints every worked example
+  solved, so the solver works each fill-in from the stem and Appendix A
+  before it opens a page, and then says whether the page's value agrees.
+
+### The check
+
+`content/physical-sciences/chemistry/knowledge-check-01-03.md`, "Knowledge
+Check: Chapters 1–3", weight 4 (the appendices moved to 5). Forty-five
+items over seventeen sections: 11 fill-ins, 11 text-ins, 18 multiple
+choices, 5 selfchecks. Seventeen re-ask a worked example — the 11
+fill-ins, 2 formulas, 2 multiple choices, 2 names — and 28 are written.
+Six sections stand at two items (1.3, 1.4, 2.1, 2.2, 2.4, 3.2), the rest
+at three. No item needed a `tolerance` band.
+
+Shape: the parent's run facts ruled each of the block's 51 worked examples
+usable or not before the wave (about twenty out: a Source note inside, an
+answer printed only in an image, data in a picture, a simulation, a datum
+that is another example's answer). Three Opus authors, one per chapter,
+wrote 50 items; three Opus checkers; the parent's read; one Opus sweep
+over all three blocks; a second checker over fourteen replacements; a
+fresh Fable solver.
+
+- **Checkers**: every item answered key-covered, every number run again,
+  no disagreement with a key or a Solution. Two hard findings, both in
+  chapter 2 and both also found by the parent's read: 2.3's iodine-anion
+  example and 2.4's glucose example are each asked again by a keyed
+  exercise of the same page, same substance and same answer. Seventeen
+  soft. The chapter 1 checker found that 1.6's fuel-economy example needs
+  conversion factors a check page does not show.
+- **Sweep**: 6 hard and 13 soft on 49 items, none of which a checker had
+  found, all page-side. Five accepted: the 1.3 Practice self-check stem
+  that rules out both distractors of an intensive-property item; the 2.1
+  page's rubrics printing the Dalton-postulates clauses; two 2.2
+  self-check stems stating the alpha-particle fact; the 2.4 and 3.1
+  objective headings that pair a key with its fact. One rejected, which
+  settled a rule: the sweep read "the page corrected its working" for the
+  whole 1.6 body-temperature example, and the rule is judged for the part
+  the item asks (the page rewrote the kelvin line; the item asks the
+  Fahrenheit answer).
+- **Second checker**: 5 of 14 replacements failed — two distractors from
+  one module clause, a rubric clause the 2.4 page's hints print four
+  times, a clause a Practice stem prints, option prefixes that answer
+  "hydrogen-2". Three items were dropped, one became a text-in, and for
+  2.4 the parent ruled that the molecular-and-empirical-formula objective
+  has nothing unspent, so its two items both serve the other objective.
+- **Blind solve**: 40 graded items, 38 agree, 0 disagree, 2 flagged as
+  also defensible and adjudicated as form variants the grader already
+  takes ("halogens"; "aqueous solution"). All 11 fill-ins were settled in
+  the solver's first pass, from the stem and Appendix A, and every worked
+  value on the pages agreed.
+
+Parent rulings, each now in the edition's "A usable example": no table the
+check page lacks; not an example a section-page item asks again; a page
+correction judged for the part the item asks, with 3.4's hydrochloric-acid
+example out (the page corrected its working, erratum 3000); a pointer to a
+picture or a table that gives the question nothing it lacks is dropped.
+
+No new erratum. The solver's note that 3.4's spinal-fluid equation lacks
+"× 100%" was read against the CNXML and is not a defect: a ratio of
+0.00075 is 0.075 percent.
+
+### A defect the solver found in the solve tooling
+
+The masked 2.6 page the solver read still printed eight keys and hints:
+`maskKeys` copied the body of a `followup` wrapper out whole, so every
+item inside one reached a blind solver unmasked. 2.6 is the only page in
+the corpus with the wrapper, and its eight ion-symbol text-ins had been
+"solved" that way in chapter 2's run. Fixed in `tools/lib/content.mjs`
+(`WRAPPER_SHORTCODES`, masked through) with a test; the eight items were
+solved again by a fresh solver on a properly masked page, 8 of 8 agreeing,
+and their ledger records carry that solve.
+
+### What was left
+
+- `kc sources` refuses a count the Solution writes as "the number of
+  electrons is 54" after an earlier "53 electrons" (the judge reads a
+  number before its name). It errs toward refusing.
+- 2.4 is the check's thinnest section: two two-option multiple choices.
+- How a check item reaches an appendix other than A is still open; block
+  2 (chapters 4–5) meets it with Appendix G.
+
+Costs, in subagent tokens: authors 252, 303, and 268 thousand over three
+rounds of fixes; checkers 148, 169, and 138; the sweep 195 (22 minutes,
+the slowest agent); the second checker 149; the solver 300; the eight-item
+re-solve 66.
+
 ## The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under

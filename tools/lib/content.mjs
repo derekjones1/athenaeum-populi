@@ -279,6 +279,12 @@ export const KEYED_INNER = Object.freeze({
 });
 
 /**
+ * Paired shortcodes whose inner content is other ITEMS, each a shortcode of
+ * its own: `maskKeys` masks through them.
+ */
+export const WRAPPER_SHORTCODES = Object.freeze(new Set(['followup']));
+
+/**
  * Iterate every `{{< name … >}}` shortcode in `src`.
  *
  * Yields `{ params, inner, index, end, open, closed }`:
@@ -402,7 +408,17 @@ const newlinesOf = (s) => s.replace(/[^\n]/g, '');
  * needed, and hand the model answer through untouched.
  */
 export function maskKeys(source) {
-  const src = maskCode(source);
+  return maskShortcodeKeys(maskCode(source));
+}
+
+/**
+ * `maskKeys` on text whose code spans are already masked. A wrapper that
+ * holds items (`followup`) is masked THROUGH: its body is this function's
+ * result on that body. Until November 11, 2026 a wrapper's body was copied
+ * out whole, so every item inside a `followup` reached the blind solver
+ * with its key and hint printed (Chemistry 2.6: eight formula text-ins).
+ */
+function maskShortcodeKeys(src) {
   const found = [];
   for (const name of Object.keys(SHORTCODE_PARAMS)) {
     for (const sc of shortcodes(src, name)) found.push({ name, ...sc });
@@ -418,6 +434,8 @@ export function maskKeys(source) {
     if (sc.closed && KEYED_INNER[sc.name]) {
       const lead = sc.inner.startsWith('\n') ? '\n' : '';
       out += `${lead}${KEYED_INNER[sc.name]}${newlinesOf(sc.inner).slice(lead.length)}`;
+    } else if (sc.closed && WRAPPER_SHORTCODES.has(sc.name)) {
+      out += maskShortcodeKeys(sc.inner);
     } else {
       out += sc.inner;
     }

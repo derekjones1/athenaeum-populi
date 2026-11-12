@@ -1165,6 +1165,11 @@ was decided, and when:
   an equation on a check that is not a worked example's question keyed
   with what its Solution prints.
 
+Block 1 landed November 11, 2026: `knowledge-check-01-03.md`, 45 items over
+17 sections (17 of them worked-example items), weight 4, the appendices
+moving to 5; chapter 4 will take weight 5 and move them again
+(`docs/history/chemistry.md`, "Knowledge Check 1").
+
 ## What is still open
 
 What chapter 1 settled, and what the scan of the book counted, are in

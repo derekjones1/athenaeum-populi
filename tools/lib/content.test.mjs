@@ -458,3 +458,41 @@ over two lines.
   }
   assert.ok(!masked.includes('Documented'), 'an inline-code example is masked as code, not read as an exercise');
 });
+
+test('maskKeys masks through a followup wrapper: the items it holds are items', () => {
+  // Chemistry 2.6 holds each ionic compound's two ion-symbol text-ins in a
+  // `followup`. The wrapper's body used to be copied out whole, so the blind
+  // solver's "masked" page printed eight keys and their hints (found by the
+  // solver of Knowledge Check 1, November 11, 2026).
+  const page = [
+    '{{< multiplechoice question="BaO: ionic or covalent?" answer="ionic" >}}',
+    'ionic',
+    'covalent',
+    '{{< /multiplechoice >}}',
+    '',
+    '{{< followup >}}',
+    '{{< textin',
+    '  question="Enter the symbol of the cation."',
+    '  answer="Ba²⁺"',
+    '  answerForm="formula"',
+    '  hint="Split the formula into ions."',
+    '>}}',
+    '',
+    '{{< selfcheck question="Why?" >}}',
+    'Because barium is a metal.',
+    '===CHECKS===',
+    'barium is a metal',
+    '{{< /selfcheck >}}',
+    '{{< /followup >}}',
+    '',
+    'After.',
+  ].join('\n');
+  const masked = maskKeys(page);
+  assert.equal(masked.split('\n').length, page.split('\n').length, 'the line count is kept');
+  for (const key of ['Ba²⁺', 'Split the formula', 'barium is a metal', 'answer="ionic"']) {
+    assert.ok(!masked.includes(key), `${key} is masked`);
+  }
+  assert.match(masked, /\{\{< followup >\}\}\n\{\{< textin\n {2}question="Enter the symbol of the cation\."\n {2}answer="…"\n {2}answerForm="formula"\n {2}hint="…"\n>\}\}/);
+  assert.match(masked, /\(model answer removed\)/);
+  assert.match(masked, /\{\{< \/followup >\}\}\n\nAfter\.$/);
+});

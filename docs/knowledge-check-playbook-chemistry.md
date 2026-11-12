@@ -96,9 +96,11 @@ an item. So:
     with several quantities gives one of them, the stem closing with the
     sentence that says which (the ledger records the choice): two of a
     section's items are never two answers of one example. A parenthetical
-    pointer to a picture that carries no data — "(shown in the photograph
-    below)" — is dropped, since a cumulative page has no figure to point
-    at; nothing else of the question changes, and never a number.
+    pointer to a picture or a table that gives the question nothing it
+    lacks — "(shown in the photograph below)"; "(see the table above)"
+    after a factor the question itself prints — is dropped, since a
+    cumulative page has no figure or table to point at; nothing else of
+    the question changes, and never a number.
   - **The key** is the Solution's final value as printed. The component
     and the `answerForm` follow the table in "Exercises" and "Numeric
     keys", exactly as for a keyed exercise: `last-digit` by where the
@@ -111,9 +113,22 @@ an item. So:
     restated inline in its own sentence ("Stems", "A part that leans on an
     earlier part"); has one answer of an auto-gradable shape; prints that
     answer in the Solution's text, not only in an image, and takes no
-    datum from a picture; is not one the
-    section page corrected or put a Source note on (a known defect is not
-    an anchor); does not answer with a number its own question gives; and
+    datum from a picture; **needs no table the check page lacks** — every
+    measured factor is printed in its stem or is in the periodic table
+    (1.6's fuel-economy example needs the section's table of conversion
+    factors, and is not used); is, **in the part the item asks**, as the
+    source prints it — the section page corrected nothing in that part's
+    question, its data, the working that leads to its answer, or the
+    answer, and no Source note is about it (a known defect is not an
+    anchor: 3.4's hydrochloric-acid example, whose working the page
+    corrected, is not used; 1.6's body-temperature example is asked for
+    its Fahrenheit answer, the page having rewritten the kelvin line
+    only; a misspelling the page fixed excludes nothing); **is not one
+    a section-page item already asks again** — the same substance or data
+    and the same answer, as the source's own exercises sometimes do (2.4
+    asks glucose's empirical formula in its worked example and again in a
+    keyed exercise; 2.3 asks an iodine anion's particle counts in both);
+    does not answer with a number its own question gives; and
     does not give, or take, another check item's answer (3.3's vinegar
     example answers 0.839 *M*, and a later example takes 0.839 *M* as its
     datum: one of the two, never both). Where the section offers a choice,
@@ -136,7 +151,12 @@ an item. So:
   answer to a different question, numeric options sorted, and no item may
   print another item's key. **A `textin` key is never a word of its
   section's title**: on a check the heading above an item is `### N.M
-  Title`, and the heading-word lint reads it.
+  Title`, and the heading-word lint reads it. **Each option of a multiple
+  choice comes from a different module clause**: two distractors the
+  module names in one breath ("such as density and color") leave the key
+  as the odd one out; and option names must not answer the stem by their
+  own prefixes (protium, deuterium, tritium under "hydrogen-2" — asked as
+  a `textin` instead).
 - **A `selfcheck`** asks for an explanation the module gives. Its model
   answer is made of the module's own sentences and its `===CHECKS===`
   rubric lists two to six clauses of that answer (required on a check:
@@ -158,11 +178,20 @@ an item. So:
   `selfcheck`.
 - **A check item may not duplicate a section item, in either direction.**
   Before settling a recall item, grep the section page — `description`,
-  objective headings, Practice stems, options, hints and rubrics, body
-  self-checks — and then every section page of the book for the key and
-  its defining fact. This book's pages already carry glossary recalls and
-  summary clozes as fillers, so the unspent terms are fewer than the
-  glossary suggests.
+  objective headings and the objectives callout, Practice stems
+  (self-check stems included), options, hints and rubrics, body
+  self-checks — and then every section page of the book, for the key, its
+  defining fact, and every distractor. This book's pages already carry
+  glossary recalls and summary clozes as fillers, so the unspent terms
+  are fewer than the glossary suggests, and on block 1 every hard finding
+  was a page already printing a written item's fact: an objective heading
+  that pairs the key with it, a self-check stem that rules out the
+  distractors, a rubric, a hint.
+- **A section stands at two items rather than take a third that leaks.**
+  When a module's unspent sentences run out (block 1: six sections of
+  seventeen), the section keeps two; where both then serve one objective
+  because the other has nothing unspent, the parent rules so and the
+  history records it (2.4).
 - **The worked example is on the section page, solution and all, by
   design**: that is not a reverse recall. The item tests whether the
   learner can now work it unaided, and the callout says so.

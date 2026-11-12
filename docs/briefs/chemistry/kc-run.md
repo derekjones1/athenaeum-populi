@@ -57,7 +57,12 @@ before any edit that follows the solve, no git from an agent).
    block's modules (`grep -n 'm<id>' docs/openstax-errata.md`), with any
    decision a check item must follow; every Source note on the block's
    section pages (`grep -n '\*Source note' <chapter dirs>`), since an
-   example a page corrected is not used.
+   example a page corrected is not used; **every usable example's
+   substance and data grepped in its section's `## Practice` block**, since
+   the source's own exercises sometimes ask a worked example again (block
+   1: 2.3's iodine anion, 2.4's glucose) and such an example is not used;
+   and every example that needs a conversion factor or constant its stem
+   does not print.
 5. **Scratch layout**, one directory per chapter:
    `$SP/kc/chNN/content/physical-sciences/chemistry/knowledge-check-XX-YY.md`
    — the mirrored path gives `verify-section` the book's quota and
@@ -147,4 +152,50 @@ All of this is before the blind solve.
 
 ## 5. What the runs measured
 
-(The first run, block 1, writes this section.)
+**Block 1, chapters 1–3 (November 11, 2026;
+`docs/history/chemistry.md`, "Knowledge Check 1").** Three authors wrote 50
+items; 45 landed (11 fill-ins, 11 text-ins, 18 multiple choices, 5
+selfchecks; 17 of them worked-example items), six sections at two items.
+The three chapter checkers answered every item key-covered with no
+disagreement and found 2 hard (both the twins below, which the parent's
+read also found) and 17 soft; the sweep found 6 hard and 13 soft, five of
+the six accepted; the second checker failed 5 of 14 replacements.
+
+- **The keys were never the problem; the page was.** No reader disagreed
+  with a key or a Solution. Every hard finding was a section page already
+  printing a written item's fact: an objective heading (2.4, 3.1), a
+  Practice self-check STEM (1.3, 2.2), a page rubric (2.1), a hint (2.7).
+  Authors grepped Practice stems and options and missed the rest, as the
+  life-sciences runs found; on this book the pages are denser still, since
+  every objective is filled to the floor with recalls.
+- **The source repeats its worked examples in its exercises.** 2.3's iodine
+  anion and 2.4's glucose are each asked again by a keyed exercise, same
+  substance and same answer. The run facts missed both; the parent's read
+  and the chapter 2 checker found them. Before the wave, the parent greps
+  each usable example's substance and data in the section's Practice block
+  and rules the echoes out in the run facts.
+- **Replacements repeat the tells, here too**: 5 of 14 failed the second
+  checker — two distractors from one module clause (twice), a rubric clause
+  a sibling page's hint prints, option prefixes that answer the stem
+  (protium, deuterium, tritium for hydrogen-2). Three were dropped, and a
+  drop was the right fix: **a thin module's section stands at two items
+  rather than take a third that leaks.**
+- **Two distractors from one module clause leave the key as the odd one
+  out** (Democritus and Leucippus; potassium and sodium; density and
+  color). Each option comes from a different clause.
+- **An item that needs a table the check page lacks is not asked**: 1.6's
+  fuel-economy example needs the section's conversion factors. Found by
+  the chapter 1 checker; now a test of "A usable example".
+- **A corrected example is judged by the part the item asks.** The sweep
+  read "the page corrected its working" at the level of the whole example
+  and flagged 1.6's body-temperature item, whose kelvin line the page
+  rewrote and whose Fahrenheit part is untouched. The playbook now says
+  which.
+- **A gate limit**: `kc sources` refuses a count the Solution writes as
+  "the number of electrons is 54" when an earlier sentence prints "53
+  electrons" (the judge reads a number before its name). It errs toward
+  refusing; the author keyed another count. Teach the judge the reversed
+  order when a block needs it.
+- **Costs**: three authors about 240–300 thousand tokens each over three
+  rounds of fixes, three checkers 140–170, the sweep 195 (22 minutes — the
+  slowest single agent), the second checker 150.

@@ -78,6 +78,10 @@ those places.
   arithmetic fails, a unit that does not cancel, a table that contradicts
   its prose, a stem that prints another item's answer, two items asking the
   same thing — goes in the nearest item's `note` with the line it sits on.
+  **So does an item on a masked page whose key or hint is NOT masked**
+  (`answer="…"` is what a masked key looks like): say which lines, and do
+  not use what they print. The first Knowledge Check's solver found eight
+  that way, and the masking was fixed.
 
 ## Output
 

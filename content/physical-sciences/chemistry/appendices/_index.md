@@ -4,7 +4,7 @@ description: >-
   The thirteen appendices of Chemistry 2e — the periodic table, a mathematics
   review, and eleven tables of units, constants, and data that the chapters
   refer to by letter — adapted from OpenStax Chemistry 2e.
-weight: 4
+weight: 5
 ---
 
 The chapters refer to these reference pages by letter: “Appendix G” is the table of standard thermodynamic properties, “Appendix L” the table of standard electrode potentials. Each page carries the data of the book’s own appendix.
