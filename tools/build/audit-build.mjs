@@ -621,6 +621,49 @@ const EXERCISE_RE = /<(fill-in|multiple-choice|self-check|sort-bins|text-in)\b[\
 if ([...contentHtml.matchAll(EXERCISE_RE)].some(([block]) => /[A-Za-z]{2}<span class="?katex"?>/.test(block))) {
   problems.push('exercise text glues a word to inline math (mathtext dropped the space before a $...$ run)');
 }
+// Punctuation typed straight after an inline formula is set with it in one
+// `.ap-math-glue` span, or a browser may start the next line with the period
+// alone (layouts/_markup/render-passthrough.html). Body math is glued by
+// `_partials/glue-math.html`, which a layout must call on the page's content
+// — the render hook cannot — so a page type whose template prints
+// `.Content` bare ships every formula unglued, and its markers are gone by
+// the time the HTML is minified. Each inline formula of main#content is
+// found, its end reached by counting <span>s, and the character after it
+// read; a formula inside a display block is not inline.
+const PUNCTUATION_AFTER_MATH = /^(?:[.,;:?!)’”]|&rsquo;|&rdquo;)/;
+function ungluedMath(content) {
+  const open = /<span class="?katex"?>/g;
+  let found;
+  while ((found = open.exec(content))) {
+    let lead = content.slice(Math.max(0, found.index - 80), found.index);
+    const tag = /<span\b|<\/span>/g;
+    tag.lastIndex = found.index;
+    let depth = 0;
+    let end = -1;
+    for (let part = tag.exec(content); part; part = tag.exec(content)) {
+      depth += part[0] === '</span>' ? -1 : 1;
+      if (depth === 0) { end = tag.lastIndex; break; }
+    }
+    if (end < 0) return null;
+    open.lastIndex = end;
+    if (/<span class="?katex-display"?>$/.test(lead)) continue;
+    let after = content.slice(end, end + 16);
+    // A number in scientific notation sits in its own no-wrap span first.
+    if (/<span class="?ap-math-keep"?>$/.test(lead)) {
+      if (!after.startsWith('</span>')) continue;
+      after = after.slice('</span>'.length);
+      lead = lead.replace(/<span class="?ap-math-keep"?>$/, '');
+    }
+    if (PUNCTUATION_AFTER_MATH.test(after) && !/<span class="?ap-math-glue"?>$/.test(lead)) {
+      return content.slice(Math.max(0, found.index - 40), found.index).replace(/<[^>]*>/g, '').trim().slice(-30) + ' [formula]' + after.slice(0, 1);
+    }
+  }
+  return null;
+}
+const unglued = contentDocuments.map(({ content }) => (content ? ungluedMath(content) : null)).filter(Boolean);
+if (unglued.length) {
+  problems.push(`punctuation after inline math is outside its .ap-math-glue span on ${unglued.length} page(s), so it can start a line alone (a layout that prints .Content without the glue-math partial, or a template that renders math around the mathtext partial): "${unglued[0]}"`);
+}
 // Media elements remain active even when nested in raw <pre>/<code>.
 // `<img>` is handled separately below — mediafigure's own well-formed `<img>`
 // inside `<figure class="ap-mediafigure">` is the one sanctioned exception —

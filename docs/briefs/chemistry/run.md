@@ -132,9 +132,21 @@ Eight things chapter 4 added (`docs/history/chemistry.md`, "Chapter 4"):
   something was rounded mid-way" five ways across three pages before the
   consistency reader set them side by side; a token ruling made for one
   item is checked against every item with the same cause.
-- **A reader's "from memory" is not a correction.** The claim pass marked
-  four findings so; each was opened by the parent (and corrected) or left
-  as printed and listed in the history.
+- **A reader's "from memory" is not a correction — and "kept as printed"
+  is not where it ends.** The claim pass marked four findings so; each was
+  opened by the parent (and corrected) or left as printed and listed in
+  the history. The three left as printed were opened the same day in the
+  follow-up and all three were source defects (errata 3032–3035): the
+  parent opens a source for every such finding before close-out, **the
+  book's own later chapters first** (one grep of the pinned checkout
+  settled "ores such as K[Ag(CN)₂]" from Section 19.1), then a public
+  agency or a paper with a DOI; a PDF the fetch tool cannot read is read
+  with `mdimport` from the saved file. Only a claim no source could be
+  found for goes to "Reviewed and not errata".
+- **A grader change is probed on the cases beside it, and the playbook's
+  worked tables are its test** (`tools/build/documentation.test.mjs` reads
+  every row): the first near-miss zone called 10¹¹ "close" to 10¹² and 370
+  close to 350, and was narrowed by figure count before it shipped.
 - **The fix check's accepted old→new text is applied by the parent**, who
   then re-files the records it re-hashed (§0, chapter 2's last bullet):
   take the ledger snapshot first.

@@ -809,3 +809,10 @@ graded item changed, so the ledger is untouched. Two engine leftovers from
 the Intermediate Algebra chapter 3 re-review stay as they are, by the same
 ruling: the water-bill graph's per-axis snap at five pixels per dollar, and
 the overlap checker's "graze" rating of an arrowhead on an axis letter.
+
+## Practice headings lose their period (November 12, 2026)
+
+Nine objective headings under `## Practice` in Precalculus ended with a period, where every other heading of the four math books has none: the five of 7.2 (“Use sum and difference formulas for cosine” through “… to verify identities”) and the four of 7.3 (“Use double-angle formulas to find exact values” through “Use half-angle formulas to find exact values”). All nine were found by the lint Chemistry chapter 4 added for its own book, run over the library; the period is removed from each. No item, key, or anchor changed: Hugo's heading ids already dropped the
+period, so every `#…` link is what it was, and the ledger is untouched. The
+rule (`practicePeriodHeadings` in `tools/lint/lints-leaks.mjs`) left the
+Chemistry block the same day and is an error in every book.

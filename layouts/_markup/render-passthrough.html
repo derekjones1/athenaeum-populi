@@ -11,6 +11,27 @@
   next at "10⁻³", and a learner reads the given value as 1.497. Only that
   shape is held together: a long inline expression stays free to wrap on a
   phone.
+
+  Punctuation after inline math. A browser may break a line between an
+  inline-block and the text after it, and KaTeX sets every piece of a formula
+  as one, so the period, comma, or bracket after a formula could start the
+  next line alone (29,589 formulas in the library are followed by one). This
+  hook cannot see the text after its span, so it only marks where the span
+  begins and ends, with two comments; `_partials/glue-math.html`, called on
+  the page's whole content by `layouts/docs/single.html` and `list.html`,
+  moves the formula and its punctuation into `.ap-math-glue`
+  (white-space: nowrap) and takes the comments out. A comment left behind by
+  a template that does not call the partial is inert; `check:build` refuses
+  one all the same.
+
+  Inside a no-wrap box a formula would lose the breaks KaTeX allows after
+  its operators — between its `.base` pieces — and a long one would run off
+  a phone. So every inline formula carries a `<wbr>` between its pieces:
+  hidden by default (custom.css), shown inside `.ap-math-glue`, where it
+  gives back exactly the breaks the formula had. The other approach, a
+  no-wrap wrapper with wrapping restored on the formula inside it, does not
+  hold in Chrome: the break after an inline-block is decided by the
+  inline-block's own parent, and survives the closing tags after it.
 */ -}}
 {{- $engine := site.Params.math.engine | default "katex" -}}
 
@@ -20,10 +41,14 @@
     {{- with .Err -}}
       {{- errorf "transform.ToMath failed to render math (%s): %s" $.Position . -}}
     {{- else -}}
-      {{- if and (ne $.Type "block") (le (len $.Inner) 60) (findRE `\\times\s*10\^` $.Inner 1) -}}
-        <span class="ap-math-keep">{{ .Value }}</span>
-      {{- else -}}
+      {{- if eq $.Type "block" -}}
         {{- .Value -}}
+      {{- else -}}
+        {{- $math := replace (printf "%s" .Value) `</span><span class="base">` `</span><wbr><span class="base">` -}}
+        {{- if and (le (len $.Inner) 60) (findRE `\\times\s*10\^` $.Inner 1) -}}
+          {{- $math = printf `<span class="ap-math-keep">%s</span>` $math -}}
+        {{- end -}}
+        {{- printf "<!--m-->%s<!--/m-->" $math | safeHTML -}}
       {{- end -}}
       {{- $.Page.Store.Set "hasMath" true -}}
     {{- end -}}

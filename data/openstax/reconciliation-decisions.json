@@ -6888,6 +6888,29 @@
       "status": "correct-local-source-defect",
       "errataEntry": 3027,
       "rationale": "The Check Your Learning of example fs-idp80717680 answers 0.2648 M for 23.24 mL of 0.09113 M KMnO4 against 20.00 mL of oxalic acid. 23.24 mL × 0.09113 M × 5/2 ÷ 20.00 mL = 0.264733, which is 0.2647 M to four figures; 0.2648 follows from rounding the intermediate to 2.118 mmol. The page keys 0.2647 (sig-figs:4 last-digit:1), so the source's value is still graded right by the one-unit allowance, with a visible Source note directly after the item, footer clauses, and a disclosed deviation in verify-source-keys (exercise fs-idp80717680#check). Found by the prose claim pass (F3). Authored with chapter 4, ruled by the orchestrator, November 12, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/02-classifying-chemical-reactions.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68710",
+      "sourceElementIds": [
+        "fs-idm117278880"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3032,
+      "rationale": "The Culinary Aspects of Chemistry box says \"The beneficial bacteria feed on starches in the cucumber and produce lactic acid\". What the lactic acid bacteria of a cucumber fermentation consume is the fruit's sugars (Pérez-Díaz and others, Frontiers in Microbiology 14:1210190, 2023, https://doi.org/10.3389/fmicb.2023.1210190: \"Fructose, glucose, xylose, and trehalose are present in cucumber fermentation\"; \"Fructose and glucose are preferably removed by lactobacilli in cucumber fermentation\"); the paper names no starch. The page prints \"feed on sugars\", with the visible Source note directly after the callout saying what the source prints and linking the paper, and a footer clause; no item is keyed on the sentence. Suspected by the prose claim pass (F8) from memory and kept as printed with chapter 4; the source was opened in the follow-up, ruled by the orchestrator, November 12, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/03-reaction-stoichiometry.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68713",
+      "sourceElementIds": [
+        "fs-idp172099568",
+        "fs-idp124132784"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3034,
+      "rationale": "Exercise fs-idp172099056 opens \"Silver is often extracted from ores such as K[Ag(CN)2]\" and its part (a) asks \"How many molecules of Zn(CN)2 are produced\". K[Ag(CN)2] is not an ore but the soluble compound cyanide makes of one, by the book's own m68842 (Section 19.1): \"a process called hydrometallurgy to separate silver from its ores … alkali metal cyanides readily form the soluble dicyanoargentate(I) ion, [Ag(CN)2]−, from silver metal or silver-containing compounds such as Ag2S and AgCl\". Zinc cyanide is an ionic compound, and by m68696 (Section 2.6) \"an ionic compound is not made up of single, discrete molecules\" (errata 3034 and 3035). Both items of the exercise read \"extracted from its ores as K[Ag(CN)2]\" and the first asks for \"formula units\", its answer display likewise, with a visible Source note directly after the first item and a footer clause; neither key changes. Suspected by the prose claim pass (F11) from memory and kept as printed with chapter 4; the book's own module was opened in the follow-up, ruled by the orchestrator, November 12, 2026."
     }
   ]
 }

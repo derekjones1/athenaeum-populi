@@ -1590,3 +1590,10 @@ September 6, and chapters 5, *The Eukaryotes of Microbiology*, 6,
 ## Forward-leak lint (October 16, 2026)
 
 - The new `lints-leaks.mjs` rule (a `selfcheck` model answer or rubric clause printing the key of the graded item directly below it) fired on four Microbiology pages, all reordered within their objective groups, no key, stem, or model answer edited: 4.3 (syphilis cloze above the *Bacteroides* multiple choice), 11.5 (mutated-strands self-check to its group's end), 14.2 (toxicity cloze below the dosage-goal multiple choice), and 18.4 (IgG cloze above the memory-B-cell cloze).
+
+## Practice headings lose their period (November 12, 2026)
+
+Four objective headings under `## Practice` ended with the source's period, where every other heading of the book drops it: two in 7.3 (triacylglycerides and phospholipids; phospholipids and membranes), one in 8.2 (pyruvate to acetyl groups), and one in 14.7 (discovery of new antimicrobial agents). All four were found by the lint Chemistry chapter 4 added for its own book, run over the library; the period is removed from each. No item, key, or anchor changed: Hugo's heading ids already dropped the
+period, so every `#…` link is what it was, and the ledger is untouched. The
+rule (`practicePeriodHeadings` in `tools/lint/lints-leaks.mjs`) left the
+Chemistry block the same day and is an error in every book.

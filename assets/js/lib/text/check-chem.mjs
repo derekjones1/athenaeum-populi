@@ -530,6 +530,106 @@ function otherSolution(key, responses) {
   });
 }
 
+/*
+ * The arrow is part of the equation (decided after chapter 4, for chapter
+ * 13): `⟶` says the reaction is written as going to completion, `⇌` that it
+ * reaches equilibrium. A response with the key's substances, coefficients,
+ * and states under the other arrow is not `correct`; it is told which arrow,
+ * and nothing about the reaction that the key's own arrow does not say.
+ * `=` is the one-way arrow, as it is everywhere else.
+ */
+const ONE_WAY_ARROW = 'Those are the right substances and coefficients — now write the equation with a single arrow (->). The double arrow is for a reaction that reaches equilibrium.';
+const EQUILIBRIUM_ARROW = 'Those are the right substances and coefficients — now write the equation with the equilibrium arrow (<=>): this reaction does not go to completion.';
+
+/*
+ * A formula written as the simplest ratio of its atoms (Chemistry 2e 4.2:
+ * P₄ + 5O₂ ⟶ 2P₂O₅ against the key's P₄O₁₀). The response balances, and its
+ * species are the key's, side for side, except that one or more is the key's
+ * formula divided through by a whole number — atoms and charge alike, so
+ * 2Hg⁺ for Hg₂²⁺ is the same slip. Never `correct`: the chapter prints the
+ * molecular formula, and Section 3.2 is where the two are told apart. The
+ * sentence names no substance.
+ */
+const SIMPLEST_RATIO = 'That balances, but one formula is an empirical formula — the simplest ratio of its atoms. Write that substance’s molecular formula, a whole-number multiple of it.';
+// The same slip on an element (4P for P₄, 2O for O₂) is not an empirical
+// formula, and is told as what it is.
+const SEPARATE_ATOMS = 'That balances, but one element is written as separate atoms. Write it as the molecule it exists as.';
+
+/** The whole number n ≥ 2 with `whole` = n × `part` in every atom and in charge, or 0. */
+function multipleOf(whole, part) {
+  const elements = Object.keys(whole.atoms);
+  if (!elements.length || elements.length !== Object.keys(part.atoms).length) return 0;
+  if ((whole.mass ?? null) !== (part.mass ?? null)) return 0;
+  const n = whole.atoms[elements[0]] / (part.atoms[elements[0]] || NaN);
+  if (!Number.isInteger(n) || n < 2) return 0;
+  if (!elements.every((el) => part.atoms[el] * n === whole.atoms[el])) return 0;
+  return part.charge * n === whole.charge ? n : 0;
+}
+
+/** The sentence for a response that is the key with a formula divided through, or null. */
+function simplestRatioFormula(key, responses) {
+  const keySides = key.sides.map((side) => side.map(([species]) => species));
+  let compound = false;
+  const found = responses.some((response) => choices(response).some((sides) => {
+    if (!sameTotals(sideTotals(sides[0].map((s) => [s])), sideTotals(sides[1].map((s) => [s])))) return false;
+    let divided = false;
+    let dividedCompound = false;
+    const matched = [0, 1].every((i) => {
+      if (sides[i].length !== keySides[i].length) return false;
+      const used = new Set();
+      const place = (index) => {
+        if (index === keySides[i].length) return true;
+        const wanted = keySides[i][index];
+        for (let j = 0; j < sides[i].length; j += 1) {
+          if (used.has(j)) continue;
+          const typed = sides[i][j];
+          const same = (typed.loose ?? typed.canon) === (wanted.loose ?? wanted.canon);
+          const part = !same && multipleOf(wanted, typed) > 0;
+          if (!same && !part) continue;
+          used.add(j);
+          if (place(index + 1)) {
+            if (part) {
+              divided = true;
+              // A polyatomic ion of one element (Hg₂²⁺) is a formula, not a gas's molecule.
+              if (Object.keys(wanted.atoms).length > 1 || wanted.charge !== 0) dividedCompound = true;
+            }
+            return true;
+          }
+          used.delete(j);
+        }
+        return false;
+      };
+      return place(0);
+    });
+    if (matched && divided && dividedCompound) compound = true;
+    return matched && divided;
+  }));
+  if (!found) return null;
+  return compound ? SIMPLEST_RATIO : SEPARATE_ATOMS;
+}
+
+/*
+ * Electrons (Chemistry 2e 4.2, the half-reaction method). A bare `e` or `2e`
+ * is not a species, so the line did not read as an equation and the learner
+ * was sent to the arrow; and a half-reaction typed with every substance and
+ * no electrons was plainly wrong. Each is told what is missing.
+ */
+const ELECTRON = 'e^-';
+const BARE_ELECTRON = 'An electron carries its charge: type it as e-, as in 2e-.';
+const NO_ELECTRONS = 'Those are the right substances, but a half-reaction also shows the electrons transferred: add e- to the side that balances the charge.';
+
+const typedBareElectron = (input) => prepare(input)
+  .split(/<=>|<->|⇌|⇄|⟷|↔|-->|->|→|⟶|=|\+/)
+  .some((part) => /^\s*\d*\s*e\s*$/.test(part));
+
+function missingElectrons(key, responses) {
+  const isElectron = ([species]) => species.canon === ELECTRON;
+  if (!key.sides.some((side) => side.some(isElectron))) return false;
+  const bare = key.sides.map((side) => side.filter((readings) => !isElectron(readings)));
+  return responses.some((response) => !response.sides.some((side) => side.some((readings) => readings.some((r) => r.canon === ELECTRON)))
+    && [0, 1].every((i) => matchSide(bare[i], response.sides[i]) !== null));
+}
+
 /** @returns {{ status: 'empty'|'correct'|'form'|'incorrect', message?: string }} */
 export function checkEquation(input, answer) {
   if (!String(input ?? '').trim()) return { status: 'empty' };
@@ -537,6 +637,7 @@ export function checkEquation(input, answer) {
   if (!key) return { status: 'incorrect' };
   const responses = readEquation(input);
   if (!responses.length) {
+    if (typedBareElectron(input)) return { status: 'incorrect', message: BARE_ELECTRON };
     return { status: 'incorrect', message: 'That does not read as an equation. Type it on one line with a plus sign between substances and -> for the arrow, like 2H2 + O2 -> 2H2O.' };
   }
   const hydrogenIon = holdsHydrogenIon(key) || responses.some(holdsHydrogenIon);
@@ -555,6 +656,9 @@ export function checkEquation(input, answer) {
       const ratios = pairs.map(({ key: k, reading }) => reading.coef / k.coef);
       const statesAgree = pairs.every(({ key: k, reading }) => !reading.state || !k.state || reading.state === k.state);
       if (ratios.every((ratio) => Math.abs(ratio - 1) < 1e-9)) {
+        if (statesAgree && typed.equilibrium !== key.equilibrium) {
+          return { status: 'form', message: key.equilibrium ? EQUILIBRIUM_ARROW : ONE_WAY_ARROW };
+        }
         if (statesAgree) return { status: 'correct' };
         best = { status: 'form', message: 'The equation is balanced — now check the state symbols, or leave them out.' };
         continue;
@@ -571,6 +675,11 @@ export function checkEquation(input, answer) {
     }
   }
   if (best.status === 'incorrect' && otherSolution(key, responses)) return { status: 'form', message: OTHER_SOLUTION };
+  if (best.status === 'incorrect' && !best.message) {
+    const divided = simplestRatioFormula(key, responses);
+    if (divided) return { status: 'form', message: divided };
+    if (missingElectrons(key, responses)) return { status: 'incorrect', message: NO_ELECTRONS };
+  }
   return best;
 }
 
@@ -646,7 +755,8 @@ export function chemCanon(text, form) {
   if (form === 'equation') {
     const equation = readEquation(text)[0];
     if (!equation) return null;
-    return equation.sides.map((side) => side.map(([species]) => `${species.coef}${species.canon}`).sort().join(' + ')).join(' -> ');
+    // The arrow is part of the key: an equilibrium is another equation.
+    return equation.sides.map((side) => side.map(([species]) => `${species.coef}${species.canon}`).sort().join(' + ')).join(equation.equilibrium ? ' <=> ' : ' -> ');
   }
   const readings = readSpecies(text);
   if (readings.length !== 1) return null;

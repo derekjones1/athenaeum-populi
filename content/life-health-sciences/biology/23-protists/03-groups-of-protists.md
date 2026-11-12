@@ -389,7 +389,7 @@ kingdoms
   hint="Re-read the third sentence of the section summary."
 >}}
 
-### Identify defining features of protists in each of the six supergroups of eukaryotes.
+### Identify defining features of protists in each of the six supergroups of eukaryotes
 
 {{< multiplechoice
   question="Which protist group exhibits mitochondrial remnants with reduced functionality?"

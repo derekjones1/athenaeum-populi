@@ -477,7 +477,14 @@ selfchecks, source defects, the footer — and each is stated once.
     carrying values unrounded (Section 3.3), so a response that rounds each
     step and lands a unit away is graded by the same `last-digit` as any
     other — `0` when every number is in the stem. In chapter 4 the band
-    took one item. The grader refuses more than 2 percent.
+    took one item. The grader refuses more than 2 percent. **A step-rounder
+    is told, not accepted** *(November 12, 2026)*: every such miss measured
+    in chapter 4 lands one or two units of the last figure outside the
+    allowance (34.9 for 35.0, 73.5 for 73.3 ± 1, 86.53 for 86.56 ± 1), and
+    there the fill-in says "Close, but not within rounding of the answer…"
+    in place of "Not quite" (`compareMeasured`'s `near`; the table under
+    "Measured quantities" quotes it). The verdict is incorrect and no key or
+    token changed for it; no hint needs a sentence about rounding.
   - **The same band takes a key the source's own rounded stem misses by a
     unit of the last digit.** Printed 3.59 dilutes 0.1718 L of 0.3556 M
     propanol to 0.1222 M and answers 0.5000 L; the stem's numbers return
@@ -959,6 +966,11 @@ hydrate's formula closes "Type the dot as a period, as in Na2CO3.10H2O."
 | `2Na + 2H2O -> 2NaOH + H2`, the species in any order within a side, with or without state symbols, `=` or `→` for the arrow | the equation above | correct | |
 | `4Na + 4H2O -> 4NaOH + 2H2` | | form | "That is balanced — now write it with the smallest whole-number coefficients." |
 | `Na + H2O -> NaOH + H2` | | incorrect | "Those are the right substances, but the equation is not balanced…" |
+| `2Na + 2H2O <=> 2NaOH + H2`, or `⇌` typed | the equation above | form | "Those are the right substances and coefficients — now write the equation with a single arrow (->). The double arrow is for a reaction that reaches equilibrium." The arrow is part of the equation: a `⇌` key answered with `->` or `=` is told "…now write the equation with the equilibrium arrow (<=>): this reaction does not go to completion." *(November 12, 2026; until then `⇌` was correct against every `⟶` key)* |
+| `P4 + 5O2 -> 2P2O5` | `P₄(s) + 5O₂(g) ⟶ P₄O₁₀(s)` | form | "That balances, but one formula is an empirical formula — the simplest ratio of its atoms. Write that substance’s molecular formula, a whole-number multiple of it." Only for a response that balances and has the key's species, side for side, with one or more divided through by a whole number; it names no substance *(November 12, 2026)* |
+| `4P + 5O2 -> P4O10` | the same key | form | "That balances, but one element is written as separate atoms. Write it as the molecule it exists as." |
+| `Cu -> Cu2+ + 2e` | `Cu(s) ⟶ Cu²⁺(aq) + 2e⁻` | incorrect | "An electron carries its charge: type it as e-, as in 2e-." (it was told the line was no equation, and sent to the arrow) |
+| `Cu -> Cu2+` | the same half-reaction | incorrect | "Those are the right substances, but a half-reaction also shows the electrons transferred: add e- to the side that balances the charge." |
 | `8H+ + MnO4- + 5e- -> Mn2+ + 4H2O` | the half-reaction | correct | |
 | `6H2O -> O2 + 4H3O+ + 4e-`, `2H2O -> O2 + 4H+ + 4e-` | `2H₂O(l) ⟶ O₂(g) + 4H⁺(aq) + 4e⁻` | correct | H₃O⁺ is read as H⁺ + H₂O and water on both sides cancels, either way round *(chapter 4)* |
 | `2IO3- + 12H+ + 10e- -> I2 + 6H2O` | `6H₂O(l) + 2IO₃⁻(aq) + 10e⁻ ⟶ I₂(s) + 12OH⁻(aq)`, and an acid key answered with OH⁻ | form | "That is balanced — now write it for the solution the question names: an acidic solution has H⁺ (or H₃O⁺), a basic solution OH⁻." Only for a balanced response that becomes the key by H⁺ + OH⁻ ⟶ H₂O, where one equation holds OH⁻ and the other H⁺ in its place *(chapter 4)* |
@@ -1057,10 +1069,11 @@ What the learner sees, against the key `0.674` under `sig-figs:3 last-digit:1`:
 |---|---|---|
 | `0.674`, `0.675`, `0.673`, `6.74×10⁻¹`, `6.74e-1` | correct | |
 | `0.67442` | form | "That value is right — now round it to 3 significant figures." |
-| `0.67` | form | "That agrees with the answer as far as it goes — now give it to 3 significant figures." |
+| `0.67` | form | "That agrees with the answer as far as it goes — now give it to 3 significant figures." Said one figure short, when the response is what the key rounds to — and, at any count, of the key's own number with its zeros left off: `8` and `8.0` against `8.00` *(November 12, 2026: `8` was plainly incorrect)*. `0.7` and the stem's round `90` against `89.4` are still incorrect with nothing said |
 | `6.52/128.9/0.0750` written as a fraction | form | "…now finish the calculation and enter just the result, to 3 significant figures." |
 | `0.674 M`, `0.674 mol/L` | unit | "Right number — enter it without the unit." |
-| `0.676`, `0.6` | incorrect | |
+| `0.676` | incorrect | "Close, but not within rounding of the answer. If you rounded partway through, carry the extra digits through every step and round only the final result." Said of a response written to the right count of figures (or a readout that rounds to one) that misses the allowance by one unit of the last figure of a two-figure key, by up to two of a longer one, or under a band sits within three bands; never at one figure *(November 12, 2026)* |
+| `0.6`, `0.774` | incorrect | |
 
 Rules for the key and the stem:
 

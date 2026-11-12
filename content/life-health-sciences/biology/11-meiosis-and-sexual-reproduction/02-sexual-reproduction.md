@@ -149,7 +149,7 @@ the + and – mating types that produce the zygote are randomly combined
 the zygote also undergoes meiosis to return to the haploid stage
 {{< /selfcheck >}}
 
-### Describe the three different life-cycle types among sexually reproducing multicellular organisms.
+### Describe the three different life-cycle types among sexually reproducing multicellular organisms
 
 {{< textin
   question="A multicellular haploid life-cycle stage that produces gametes is called a ________."

@@ -15,7 +15,7 @@ import assert from 'node:assert/strict';
 import {
   ce, foldPrimes,
   ANSWER_FORM_TOKENS, bracketsAsParentheses, checkAnswer, checkFormAsGraded, describeAnswerForm,
-  describeFormFeedback, measuredKeyProblem, parseAnswerForm,
+  describeFormFeedback, describeIncorrectFeedback, NEAR_MISS_FEEDBACK, measuredKeyProblem, parseAnswerForm,
   preprocess,
 } from './check-answer.mjs';
 
@@ -4786,6 +4786,42 @@ test('Measured quantities: sig-figs with a last-digit allowance (November 9, 202
       if (feedback) assert.ok(describeFormFeedback(typed, form, key).includes(feedback), describeFormFeedback(typed, form, key));
     });
   }
+});
+test('a measured quantity a unit outside its allowance is still incorrect, and is told why it is close', () => {
+  // [typed, key, form, verdict, said]: `said` is the fill-in's own sentence
+  // for the verdict — the near-miss sentence, a form sentence, or nothing
+  // beyond "Not quite". Chemistry 2e chapter 4: rounding at each step is not
+  // accommodated (Section 3.3 teaches carrying values unrounded), so these
+  // stay wrong; the sentence is all that changed.
+  const rows = [
+    ['34.9', '35.0', 'sig-figs:3 last-digit:0', 'incorrect', NEAR_MISS_FEEDBACK],            // 4.5: 2.62 mmol carried
+    ['34.93', '35.0', 'sig-figs:3 last-digit:0', 'incorrect', NEAR_MISS_FEEDBACK],
+    ['86.53', '86.56', 'sig-figs:4 last-digit:1', 'incorrect', NEAR_MISS_FEEDBACK],          // 4.4: 0.003008 × 412.1
+    ['3.5\\times10^{-3}', '3.4\\times10^{-3}', 'sig-figs:2 last-digit:0', 'incorrect', NEAR_MISS_FEEDBACK],
+    ['34.9\\ \\text{mL}', '35.0', 'sig-figs:3 last-digit:0', 'incorrect', NEAR_MISS_FEEDBACK],
+    ['0.0866', '0.08644', 'sig-figs:4 tolerance:0.2%', 'incorrect', ''],                     // three figures: not the count asked
+    ['0.08680', '0.08644', 'sig-figs:4 tolerance:0.2%', 'incorrect', NEAR_MISS_FEEDBACK],    // 0.42%: inside three bands
+    ['0.08700', '0.08644', 'sig-figs:4 tolerance:0.2%', 'incorrect', ''],                    // 0.65%: outside them
+    // far from the key, or written to another count of figures: nothing to add
+    ['36.0', '35.0', 'sig-figs:3 last-digit:0', 'incorrect', ''],
+    ['17.5', '35.0', 'sig-figs:3 last-digit:0', 'incorrect', ''],
+    ['90', '89.4', 'sig-figs:3 last-digit:1', 'incorrect', ''],
+    ['10^{11}', '1\\times10^{12}', 'sig-figs:1 last-digit:0', 'incorrect', ''],
+    // the key's own number written short is told to write its figures, at any count
+    ['8', '8.00', 'sig-figs:3 last-digit:1', 'form', 'now give it to 3 significant figures'],
+    ['8.0', '8.00', 'sig-figs:3 last-digit:1', 'form', 'now give it to 3 significant figures'],
+    ['9', '8.00', 'sig-figs:3 last-digit:1', 'incorrect', ''],
+    // not a measured quantity: never a near miss
+    ['0.675', '0.674', 'decimal', 'incorrect', ''],
+    ['3', '4', '', 'incorrect', ''],
+  ];
+  for (const [typed, key, form, verdict, said] of rows) {
+    assert.equal(checkAnswer(typed, key, { form }), verdict, `${typed} against ${key}`);
+    if (verdict === 'incorrect') assert.equal(describeIncorrectFeedback(typed, form, key), said, `${typed} against ${key}`);
+    else assert.ok(describeFormFeedback(typed, form, key).includes(said), describeFormFeedback(typed, form, key));
+  }
+  assert.equal(describeIncorrectFeedback('34.9', 'sig-figs:3 last-digit:0'), '', 'no key, nothing to say');
+  assert.doesNotMatch(NEAR_MISS_FEEDBACK, /\d|higher|lower|too (high|low|large|small)/, 'names no size and no direction');
 });
 test('sig-figs changes nothing where it is not declared, or where the key is no single numeral', () => {
   // The same responses under `decimal`: the 1e-9 comparison, and the

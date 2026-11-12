@@ -7052,6 +7052,12 @@ function measuredFormFeedback(reason, spec) {
   return describeAnswerForm(spec);
 }
 
+// The sentence for a measured quantity that misses its allowance by a hair
+// (compareMeasured's `near`): still incorrect, and told the one cause a
+// learner can act on. It names no direction and no size, and it is not said
+// of a response written to the wrong count of figures and far from the key.
+export const NEAR_MISS_FEEDBACK = 'Close, but not within rounding of the answer. If you rounded partway through, carry the extra digits through every step and round only the final result.';
+
 // The sentence for the right solution set written in the other notation
 // (notationMismatch), in the style of describeAnswerForm's.
 const NOTATION_FEEDBACK = {
@@ -7077,6 +7083,16 @@ const NUMBER_SHAPE_TOKENS = new Set(['decimal', 'whole-number', 'fraction', 'per
  * `(-\infty,-\frac12]` against a `decimal` key is one number in the wrong
  * notation and keeps the token's sentence.
  */
+/**
+ * The feedback for an 'incorrect' verdict on THIS response, or '' when
+ * there is nothing to add to "Not quite". Today one case: a measured
+ * quantity a unit or two outside its allowance (NEAR_MISS_FEEDBACK).
+ */
+export function describeIncorrectFeedback(studentRaw, spec, answerRaw) {
+  const measured = answerRaw === undefined ? null : measuredVerdict(studentRaw, answerRaw, { form: spec });
+  return measured !== null && measured.verdict === 'incorrect' && measured.reason === 'near' ? NEAR_MISS_FEEDBACK : '';
+}
+
 export function describeFormFeedback(studentRaw, spec, answerRaw) {
   // A measured quantity is told what its digits still need, before any other
   // reading: its `form` reasons are its own.

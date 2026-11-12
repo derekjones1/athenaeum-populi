@@ -41,10 +41,13 @@ const MESSAGES = {
 // spend a sentence on it, and it says nothing about the answer — so its
 // examples are no item's key (a test reads every formula and equation key
 // of the content against them: the first example, Mn3(PO4)2, was the key
-// of a Check Your Learning item of Chemistry 2.7).
+// of a Check Your Learning item of Chemistry 2.7). The equation example
+// shows every piece a learner is unsure how to type — a subscript, a group
+// in parentheses, a charge, a coefficient, a state symbol (the first one,
+// 2H2 + O2 -> 2H2O, showed neither a charge nor a state: chapter 4).
 const GUIDE = {
   formula: 'Type subscripts as plain numbers and a charge after ^: Ca3(PO4)2, SO4^2-.',
-  equation: 'Type subscripts as plain numbers, a charge after ^, and the arrow as ->: 2H2 + O2 -> 2H2O.',
+  equation: 'Type subscripts as plain numbers, a charge after ^, and the arrow as ->: Cu^2+(aq) + 2OH^-(aq) -> Cu(OH)2(s).',
 };
 // The pieces of a guide a line must not break inside: the arrow as typed,
 // and each example (what follows the colon, up to its comma or period).

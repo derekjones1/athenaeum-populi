@@ -450,7 +450,7 @@ test('the chemistry subject playbook states the rules its engine enforces', asyn
   // grader, the lock — rather than restated.
   const chem = read('docs/subjects/chemistry.md');
   const { lintLeaks } = await import('../lint/lints-leaks.mjs');
-  const { checkAnswer, describeFormFeedback, measuredKeyProblem } = await import('../../assets/js/lib/math/check-answer.mjs');
+  const { checkAnswer, describeFormFeedback, describeIncorrectFeedback, NEAR_MISS_FEEDBACK, measuredKeyProblem } = await import('../../assets/js/lib/math/check-answer.mjs');
   const page = 'content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/03-molarity.md';
 
   // Where it sits and what it inherits.
@@ -488,6 +488,13 @@ test('the chemistry subject playbook states the rules its engine enforces', asyn
     assert.ok(describeFormFeedback(typed, form, '0.674').includes(sentence));
     assert.ok(chem.replace(/\s+/g, ' ').includes(sentence), `the playbook quotes the feedback "${sentence}"`);
   }
+  // The near miss and the key written short (November 12, 2026): the table's
+  // rows are the grader's, and the playbook quotes the sentence whole.
+  assert.equal(describeIncorrectFeedback('0.676', form, '0.674'), NEAR_MISS_FEEDBACK);
+  for (const typed of ['0.6', '0.774']) assert.equal(describeIncorrectFeedback(typed, form, '0.674'), '', typed);
+  assert.ok(chem.replace(/\s+/g, ' ').includes(NEAR_MISS_FEEDBACK), 'the playbook quotes the near-miss sentence');
+  for (const typed of ['8', '8.0']) assert.equal(checkAnswer(typed, '8.00', { form }), 'form', `${typed} against 8.00`);
+  for (const [typed, key] of [['0.7', '0.674'], ['90', '89.4']]) assert.equal(checkAnswer(typed, key, { form }), 'incorrect', `${typed} against ${key}`);
   assert.match(chem, /Both\s+tokens\s+are\s+always\s+declared\s+together/);
   // The relative band: the playbook's table is the grader's real behaviour.
   assert.match(chem, /`tolerance:<p>%`/);
@@ -536,6 +543,14 @@ test('the chemistry subject playbook states the rules its engine enforces', asyn
     { shown: '4Na + 4H2O -> 4NaOH + 2H2', key: H2O_NA, form: 'equation', status: 'form' },
     { shown: 'Na + H2O -> NaOH + H2', key: H2O_NA, form: 'equation', status: 'incorrect' },
     { shown: '8H+ + MnO4- + 5e- -> Mn2+ + 4H2O', key: '8H⁺(aq) + MnO₄⁻(aq) + 5e⁻ ⟶ Mn²⁺(aq) + 4H₂O(l)', form: 'equation', status: 'correct' },
+    // November 12, 2026: the arrow, a formula divided through, electrons.
+    { shown: '2Na + 2H2O <=> 2NaOH + H2', key: H2O_NA, form: 'equation', status: 'form' },
+    { shown: '2Na + 2H2O <=> 2NaOH + H2', typed: '2Na + 2H2O ⇌ 2NaOH + H2', key: H2O_NA, form: 'equation', status: 'form' },
+    { shown: '2Na + 2H2O <=> 2NaOH + H2', typed: 'N2 + 3H2 -> 2NH3', key: 'N₂(g) + 3H₂(g) ⇌ 2NH₃(g)', form: 'equation', status: 'form' },
+    { shown: 'P4 + 5O2 -> 2P2O5', key: 'P₄(s) + 5O₂(g) ⟶ P₄O₁₀(s)', form: 'equation', status: 'form' },
+    { shown: '4P + 5O2 -> P4O10', key: 'P₄(s) + 5O₂(g) ⟶ P₄O₁₀(s)', form: 'equation', status: 'form' },
+    { shown: 'Cu -> Cu2+ + 2e', key: 'Cu(s) ⟶ Cu²⁺(aq) + 2e⁻', form: 'equation', status: 'incorrect' },
+    { shown: 'Cu -> Cu2+', key: 'Cu(s) ⟶ Cu²⁺(aq) + 2e⁻', form: 'equation', status: 'incorrect' },
     // Chapter 4's rows.
     { shown: '6H2O -> O2 + 4H3O+ + 4e-', key: OXYGEN, form: 'equation', status: 'correct' },
     { shown: '2H2O -> O2 + 4H+ + 4e-', key: OXYGEN, form: 'equation', status: 'correct' },
@@ -995,7 +1010,7 @@ test('no typing example shown beside a formula field is an item\'s key', async (
     ...quoted(grader, /plain numbers, like ([^.']+)\./g),
     ...quoted(solve, /`([^`]+)`/g).filter((text) => /[A-Z]/.test(text) && !/answerForm/.test(text)),
   ];
-  assert.ok(examples.includes('Ca3(PO4)2') && examples.includes('2H2 + O2 -> 2H2O') && examples.includes('Na2CO3.10H2O'),
+  assert.ok(examples.includes('Ca3(PO4)2') && examples.includes('Cu^2+(aq) + 2OH^-(aq) -> Cu(OH)2(s)') && examples.includes('Na2CO3.10H2O'),
     `the examples are read: ${examples.join(' | ')}`);
   const keys = [];
   for (const file of walkMarkdown(fileURLToPath(new URL('content/', repositoryRoot)))) {
@@ -1029,7 +1044,7 @@ test('the typing guide\'s no-wrap pieces are its arrow and its whole examples, a
   const pattern = new RegExp(literal[1], 'g');
   const pieces = (text) => [...text.matchAll(pattern)].map((m) => m[0]);
   assert.deepEqual(pieces(GUIDE.formula), ['Ca3(PO4)2,', 'SO4^2-.']);
-  assert.deepEqual(pieces(GUIDE.equation), ['->', '2H2 + O2 -> 2H2O.']);
+  assert.deepEqual(pieces(GUIDE.equation), ['->', 'Cu^2+(aq) + 2OH^-(aq) -> Cu(OH)2(s).']);
   // The component rebuilds the text from the cuts; nothing is dropped or doubled.
   for (const text of Object.values(GUIDE)) {
     let done = 0;
@@ -1133,4 +1148,37 @@ test('the Chemistry Knowledge Check edition states what the lint, the gate, and 
   }
   assert.match(read('docs/briefs/chemistry/kc-prompts/solver.md'), /PASS ONE, before you open any file/);
   assert.match(flat(edition), /works each fill-in from the stem and Appendix A first/);
+});
+
+// The punctuation after inline math (November 12, 2026). Body math is glued
+// to its punctuation by a partial that only a layout can call, so the two
+// `docs` layouts are copies of the vendored theme's with that one call. A
+// theme upgrade that changes the originals must fail here, not ship a page
+// whose chrome has quietly fallen behind.
+test('the docs layouts are the theme\'s, with the content passed through glue-math', () => {
+  for (const name of ['single.html', 'list.html']) {
+    const theme = read(`themes/hextra/layouts/docs/${name}`).trimEnd();
+    const ours = read(`layouts/docs/${name}`);
+    assert.equal(theme.split('{{ .Content }}').length, 2, `the theme's docs/${name} prints .Content once`);
+    const body = ours.replace(/^\{\{- \/\*[\s\S]*?\*\/ -\}\}\n/, '').trimEnd();
+    assert.notEqual(body, ours.trimEnd(), `layouts/docs/${name} opens with its comment`);
+    assert.equal(body, theme.replace('{{ .Content }}', '{{ partial "glue-math.html" .Content }}'),
+      `layouts/docs/${name} is the theme's template with one change`);
+  }
+  const hook = read('layouts/_markup/render-passthrough.html');
+  const partial = read('layouts/_partials/glue-math.html');
+  const mathtext = read('layouts/_partials/mathtext.html');
+  // The marker the hook writes is the marker the partial reads and removes.
+  assert.match(hook, /printf "<!--m-->%s<!--\/m-->"/);
+  assert.match(partial, /`<!--m-->\(\(\?:\[\^<\]\|<\[\^!\]\)\*\)<!--\/m-->/, 'the body of the pattern admits no comment, so it cannot span two formulas');
+  assert.match(partial, /replace \(replace \$html "<!--m-->" ""\) "<!--\/m-->" ""/, 'every marker is removed');
+  // Both renderers give a formula the <wbr> between its pieces that the glue span shows.
+  for (const [name, text] of [['render-passthrough.html', hook], ['mathtext.html', mathtext]]) {
+    assert.match(text, /`<\/span><span class="base">` `<\/span><wbr><span class="base">`/, `${name} marks the breaks between a formula's pieces`);
+  }
+  assert.match(mathtext, /<span class="ap-math-glue">%s%s<\/span>/, 'mathtext glues in place: its output also reaches the rail and the sidebar');
+  const css = read('assets/css/custom.css');
+  assert.match(css, /\.katex wbr \{\s*display: none;/);
+  assert.match(css, /\.ap-math-glue \{\s*white-space: nowrap;/);
+  assert.match(css, /\.ap-math-glue > \.katex wbr \{\s*display: inline;/);
 });

@@ -1,0 +1,24 @@
+{{- /*
+  Athenaeum Populi — hold the punctuation after inline math on the formula's
+  line.
+
+  `_markup/render-passthrough.html` marks each inline formula of the body
+  with `<!--m-->…<!--/m-->` (it says why, and why not CSS alone). Here the
+  formula and the punctuation typed straight after it — `. , ; : ? ! )` and a
+  closing quote, any run of them — become one `.ap-math-glue` span, and
+  every marker is removed.
+
+  The pattern must never run from one formula's start to a LATER formula's
+  end. RE2 has no lookahead, so the body is written as "no comment inside":
+  any character but `<`, or a `<` not followed by `!`. KaTeX's output holds
+  no comment, and neither does the `.ap-math-keep` span around it.
+
+  Call:  {{ partial "glue-math.html" .Content }}
+  Returns trusted HTML.
+*/ -}}
+{{- $html := printf "%s" . -}}
+{{- if in $html "<!--m-->" -}}
+  {{- $html = replaceRE `<!--m-->((?:[^<]|<[^!])*)<!--/m-->((?:[.,;:?!)’”]|&rsquo;|&rdquo;)+)` `<span class="ap-math-glue">$1$2</span>` $html -}}
+  {{- $html = replace (replace $html "<!--m-->" "") "<!--/m-->" "" -}}
+{{- end -}}
+{{- return ($html | safeHTML) -}}

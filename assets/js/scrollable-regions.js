@@ -54,7 +54,12 @@ function markWideQuestionMath() {
     const right = box.right - (parseFloat(getComputedStyle(question).paddingRight) || 0);
     for (const math of question.querySelectorAll('.katex')) {
       if (math.closest('.katex-display') || math.parentElement.closest('.katex')) continue;
-      if ([...math.getClientRects()].some((rect) => rect.width && rect.right > right + 1)) wide.push(math);
+      // Punctuation typed after the formula scrolls with it: the two share
+      // an `.ap-math-glue` span (layouts/_markup/render-passthrough.html),
+      // and that span becomes the block, so the period is not left alone
+      // on the line under it.
+      const glue = math.parentElement.closest('.ap-math-glue');
+      if ([...math.getClientRects()].some((rect) => rect.width && rect.right > right + 1)) wide.push(glue ?? math);
     }
   }
   // Reads above, writes below: one layout, not one per formula.

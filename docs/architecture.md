@@ -25,7 +25,29 @@ the production architecture.
   and corrects only elements that measure wrong (re-probing on resize/zoom
   and font arrival, undoing itself when the engine state is healthy). The
   browser suite pins both halves: shim shipped, inert on a healthy engine,
-  and every display block's rows on the math axis. A display equation wider
+  and every display block's rows on the math axis. **Punctuation typed
+  straight after an inline formula is set with it** in one no-wrap
+  `.ap-math-glue` span, because a browser may break a line between an
+  inline-block and the text after it, and every piece of a KaTeX formula is
+  one: "…is $x$." could put the period alone on the next line (29,589
+  formulas in the library are followed by punctuation). The passthrough
+  render hook cannot see the text after its span, so it marks each inline
+  formula with two comments, and `layouts/_partials/glue-math.html` —
+  called on the page's whole content by `layouts/docs/single.html` and
+  `list.html`, copies of the vendored theme's templates with that one
+  change — moves formula and punctuation into the span and removes the
+  marks; the `mathtext` partial, which does see the next piece of a
+  shortcode's text, glues in place. Inside a no-wrap box a long formula
+  would lose the breaks KaTeX allows after its operators, so every inline
+  formula carries a `<wbr>` between its pieces, hidden everywhere and shown
+  only inside the glue span (`assets/css/custom.css`). A no-wrap wrapper
+  with wrapping restored on the formula inside it does not work in Chrome:
+  the break after an inline-block is decided by the inline-block's own
+  parent. The build audit refuses a page on which punctuation follows an
+  inline formula outside its span (a layout that prints `.Content` bare);
+  `documentation.test.mjs` holds the two layout copies to the theme; the
+  browser suite measures the lines at a phone and a desktop width. Checked
+  in Chrome only — no other engine is installed here. A display equation wider
   than the article scrolls horizontally rather than painting over the rail,
   and `assets/js/scrollable-regions.js` makes exactly the blocks that
   overflow keyboard-focusable — display equations and prose tables, which

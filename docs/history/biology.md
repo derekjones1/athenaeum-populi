@@ -103,3 +103,10 @@ The rule each note came from stays in `docs/subjects/life-sciences.md` or `docs/
 ## Forward-leak lint (October 16, 2026)
 
 - The new `lints-leaks.mjs` rule (a `selfcheck` model answer or rubric clause printing the key of the graded item directly below it) fired on eight Biology pages, all reordered within their objective groups, no key, stem, or model answer edited: 4.5 (cell-wall self-check to its group's end), 5.2 (potassium-channel self-check to its group's end), 6.3 (ant-farm self-check below the "more ordered" cloze), 6.5 (vitamins self-check below the coenzyme cloze), 10.2 (centrosome multiple choice one place down its group), 12.3 (independent-assortment "genes" cloze below the multiple choice), 41.4 (antioxidant cloze to the top of its group), and 41.5 (vasodilator cloze to the top of its group).
+
+## Practice headings lose their period (November 12, 2026)
+
+Two objective headings under `## Practice` ended with the source's period, where every other heading of the book drops it: 11.2's “Describe the three different life-cycle types among sexually reproducing multicellular organisms” and 23.3's “Identify defining features of protists in each of the six supergroups of eukaryotes”. Both were found by the lint Chemistry chapter 4 added for its own book, run over the library; the period is removed from both. No item, key, or anchor changed: Hugo's heading ids already dropped the
+period, so every `#…` link is what it was, and the ledger is untouched. The
+rule (`practicePeriodHeadings` in `tools/lint/lints-leaks.mjs`) left the
+Chemistry block the same day and is an error in every book.

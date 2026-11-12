@@ -5137,14 +5137,6 @@
     "result": "agrees"
    }
   },
-  "0a2ac04792ebcf16": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp172099056 part (b), 10.41 g (table 10.40)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "0a2e7068c911400b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -6911,10 +6903,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "0db772139c96d5b0": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp89462576 part (b): selfcheck; model answer CORRECTED per rulings 4.2-3 (claims-ch04 F1, Appendix H Ka) to NaHS + NaHCO3; source prints Na2S + CO2 + H2O; key (model answer) re-derived against the CNXML"
   },
   "0db92802a493d7e2": {
    "verdict": "ok",
@@ -12120,14 +12108,6 @@
   "17e68a0068133357": {
    "verdict": "ok",
    "note": "fs-id1339977 solution fs-id1260896 verbatim; two full-clause checkpoints"
-  },
-  "17e89b5dca285a47": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp172099056 part (a), 5.337 × 10²² molecules; sig-figs:4 last-digit:1 per rulings G1 (table 5.3355e22, within 1u); no Source note",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "17ec25ba3018d4b9": {
    "verdict": "ok",
@@ -85070,14 +85050,6 @@
     "result": "agrees"
    }
   },
-  "b0815baae5c2ba6e": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp97761872 (printed 4.91): source 0.0122 M; own 0.012200",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "b098281a99832a3e": {
    "verdict": "ok",
    "note": "source exercise fs-id1404412 (key-differs) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -87751,6 +87723,14 @@
     "result": "agrees"
    }
   },
+  "b60844538867656c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp97761872 (printed 4.91): source 0.0122 M; own 0.012200 November 12, 2026 follow-up: the added closing sentence now names the calcium hydroxide solution (erratum 3036); key unchanged, re-solved blind.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b608c7a1b34e856e": {
    "verdict": "ok",
    "note": "RQ5 (eip-902): CNXML solution keys C = 'Most of the necessary culture conditions could be inferred for pathogenic prokaryotes.' | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -89086,6 +89066,10 @@
   "b89c5242fc63ef19": {
    "verdict": "ok",
    "note": "selfcheck; model answer = source solution verbatim, rubric clauses from it"
+  },
+  "b89df96c176c914f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp89462576 part (b): selfcheck; model answer CORRECTED per rulings 4.2-3 (claims-ch04 F1, Appendix H Ka) to NaHS + NaHCO3; source prints Na2S + CO2 + H2O (erratum 3007). November 12, 2026 follow-up: two sentences added to the model answer saying why (H2S, Ka 8.9e-8, is weaker than H2CO3, 4.3e-7, and stronger than HCO3-, 4.7e-11; HS-, 1.0e-19, cannot protonate carbonate), re-read by the parent against Appendix H and the equation re-balanced by count (Na 2, C 1, O 3, H 2, S 1 on each side)"
   },
   "b8a004a7d5d92c2a": {
    "verdict": "ok",
@@ -110335,6 +110319,14 @@
     "result": "agrees"
    }
   },
+  "e5a5b5697ae8f11e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp172099056 part (b), 10.41 g (table 10.40) November 12, 2026 follow-up: stem corrected from \"ores such as K[Ag(CN)2]\" to \"its ores as K[Ag(CN)2]\" (erratum 3034); key unchanged, re-solved blind.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e5b09a8740fa6d18": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -116096,6 +116088,14 @@
    "note": "source exercise fs-idm129887328 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "f2879cadf456d636": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp172099056 part (a), 5.337 × 10²² molecules; sig-figs:4 last-digit:1 per rulings G1 (table 5.3355e22, within 1u). November 12, 2026 follow-up: stem corrected from \"ores such as K[Ag(CN)2]\" to \"its ores as K[Ag(CN)2]\" and \"molecules\" to \"formula units\" (errata 3034, 3035); key unchanged, a Source note after the item, re-solved blind.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },

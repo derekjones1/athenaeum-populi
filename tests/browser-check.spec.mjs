@@ -2631,18 +2631,21 @@ test('on every Chemistry page no inline formula in an item\'s question runs past
           const right = box.right - parseFloat(style.borderRightWidth) - parseFloat(style.paddingRight);
           for (const math of question.querySelectorAll('.katex')) {
             if (math.closest('.katex-display') || math.parentElement.closest('.katex')) continue;
-            const rect = math.getBoundingClientRect();
+            // A wide formula with punctuation after it scrolls as one block
+            // with that punctuation: the class is on their shared glue span.
+            const block = math.classList.contains('ap-katex-wide') ? math : math.parentElement.closest('.ap-math-glue.ap-katex-wide');
+            const rect = (block ?? math).getBoundingClientRect();
             if (!rect.width) continue;
             count += 1;
             const name = `${question.textContent.replace(/\s+/g, ' ').trim().slice(0, 50)}… — ${(math.querySelector('annotation')?.textContent ?? '').slice(0, 40)}`;
             if (rect.right > right + 1) {
               over.push(`${name} by ${Math.round(rect.right - right)} px`);
             }
-            if (math.classList.contains('ap-katex-wide')) {
+            if (block) {
               // The scroll block: it scrolls (else it should have been undone),
               // and a keyboard reaches it.
-              const style = getComputedStyle(math);
-              blocks.push({ name, ok: math.scrollWidth > math.clientWidth + 1 && math.getAttribute('tabindex') === '0'
+              const style = getComputedStyle(block);
+              blocks.push({ name, ok: block.scrollWidth > block.clientWidth + 1 && block.getAttribute('tabindex') === '0'
                 && style.display === 'block' && style.overflowX === 'auto' });
             }
           }
@@ -2669,7 +2672,7 @@ test('on every Chemistry page no inline formula in an item\'s question runs past
   // the line, tab stop included; narrowed again, the blocks return.
   const wide = () => page.evaluate(() => ({
     blocks: document.querySelectorAll('.ap-katex-wide').length,
-    stops: document.querySelectorAll('.ap-fillin-question .katex[tabindex], .ap-selfcheck-question .katex[tabindex]').length,
+    stops: document.querySelectorAll(':is(.ap-fillin-question, .ap-selfcheck-question) :is(.katex, .ap-math-glue)[tabindex]').length,
   }));
   await page.setViewportSize({ width: 390, height: 900 });
   await gotoBuiltPage(page, '/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/05-quantitative-chemical-analysis/');
@@ -2680,13 +2683,191 @@ test('on every Chemistry page no inline formula in an item\'s question runs past
   await expect.poll(async () => (await wide()).blocks).toBeGreaterThan(0);
 });
 
+// Chapter 4's "Not acted on" list (November 12, 2026): six responses that were
+// a bare "Not quite" — or, for the arrow, a wrong "Correct" — now carry a
+// sentence. The verdicts are unit-tested beside the graders; what only a
+// browser shows is that the sentence reaches the learner: `fill-in` printed
+// a message for a `form` verdict alone until the near miss gave an
+// `incorrect` one something to say.
+test('chapter 4\'s fields say why: a short or near-miss number, the wrong arrow, an empirical formula, a missing electron', async ({ page }) => {
+  test.setTimeout(120_000);
+  const chapter = '/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions';
+  const typeNumber = async (card, keys) => {
+    const field = card.locator('math-field');
+    await clearMathField(field);
+    await focusMathField(page, field);
+    await page.keyboard.type(keys, { delay: 15 });
+    await card.getByRole('button', { name: /check/i }).click();
+  };
+  const fillin = async (prefix) => {
+    const card = page.locator(`fill-in[data-question^="${prefix}"]`).filter({ has: page.locator('math-field') });
+    await expect(card, prefix).toHaveCount(1);
+    await card.scrollIntoViewIfNeeded();
+    return card;
+  };
+  const status = (card) => card.evaluate((el) => el.status);
+
+  // 4.3: 8.00 mol of sodium nitrate. `8` is the answer without its zeros.
+  await gotoBuiltPage(page, `${chapter}/03-reaction-stoichiometry/`);
+  const moles = page.locator('fill-in[data-answer="8.00"]').filter({ has: page.locator('math-field') });
+  await expect(moles).toHaveCount(1);
+  await moles.scrollIntoViewIfNeeded();
+  for (const short of ['8', '8.0']) {
+    await typeNumber(moles, short);
+    await expect.poll(() => status(moles), { message: short }).toBe('form');
+    await expect(moles.locator('.ap-fillin-feedback')).toHaveText(/now give it to 3 significant figures/);
+  }
+  await typeNumber(moles, '9');
+  await expect.poll(() => status(moles)).toBe('incorrect');
+  await expect(moles.locator('.ap-fillin-feedback')).toHaveText('Not quite — try again.');
+
+  // 4.5: 35.0 mL of KOH, no allowance. Rounding the millimoles first gives 34.9.
+  await gotoBuiltPage(page, `${chapter}/05-quantitative-chemical-analysis/`);
+  const volume = await fillin('How many milliliters of a 0.1500-');
+  await typeNumber(volume, '34.9');
+  await expect.poll(() => status(volume)).toBe('incorrect');
+  await expect(volume.locator('.ap-fillin-feedback')).toHaveText(/^Close, but not within rounding of the answer\. If you rounded partway through/);
+  await typeNumber(volume, '36.0');
+  await expect.poll(() => status(volume)).toBe('incorrect');
+  await expect(volume.locator('.ap-fillin-feedback')).toHaveText('Not quite — try again.');
+  await typeNumber(volume, '35.0');
+  await expect.poll(() => status(volume)).toBe('correct');
+
+  // 4.2: the phosphorus equation, and a half-reaction.
+  await gotoBuiltPage(page, `${chapter}/02-classifying-chemical-reactions/`);
+  const textin = async (answer) => {
+    const card = page.locator(`text-in[data-answer="${answer}"]`);
+    await expect(card, answer).toHaveCount(1);
+    await waitForUpgrade(card, (el) => Boolean(customElements.get('text-in')) && Boolean(el.querySelector('.ap-textin-check')));
+    await card.scrollIntoViewIfNeeded();
+    return card;
+  };
+  const answer = async (card, typed) => {
+    await card.locator('.ap-textin-field').fill(typed);
+    await card.locator('.ap-textin-field').press('Enter');
+  };
+  const phosphorus = await textin('P₄(s) + 5O₂(g) ⟶ P₄O₁₀(s)');
+  for (const [typed, verdict, said] of [
+    ['P4 + 5O2 <=> P4O10', 'form', /now write the equation with a single arrow \(->\)/],
+    ['P4 + 5O2 -> 2P2O5', 'form', /one formula is an empirical formula/],
+    ['4P + 5O2 -> P4O10', 'form', /one element is written as separate atoms/],
+  ]) {
+    await answer(phosphorus, typed);
+    await expect.poll(() => status(phosphorus), { message: typed }).toBe(verdict);
+    await expect(phosphorus.locator('.ap-textin-feedback')).toHaveText(said);
+    expect(await phosphorus.locator('.ap-textin-field').evaluate((el) => el.readOnly), `${typed} leaves the field open`).toBe(false);
+  }
+  await answer(phosphorus, 'P4 + 5O2 -> P4O10');
+  await expect.poll(() => status(phosphorus)).toBe('correct');
+
+  const tin = await textin('Sn⁴⁺(aq) + 2e⁻ ⟶ Sn²⁺(aq)');
+  await answer(tin, 'Sn4+ + 2e -> Sn2+');
+  await expect.poll(() => status(tin)).toBe('incorrect');
+  await expect(tin.locator('.ap-textin-feedback')).toHaveText('An electron carries its charge: type it as e-, as in 2e-.');
+  await answer(tin, 'Sn4+ -> Sn2+');
+  await expect.poll(() => status(tin)).toBe('incorrect');
+  await expect(tin.locator('.ap-textin-feedback')).toHaveText(/a half-reaction also shows the electrons transferred/);
+  await answer(tin, 'Sn4+ + 2e- -> Sn2+');
+  await expect.poll(() => status(tin)).toBe('correct');
+});
+
+// The period after an inline formula could start the next line alone: a
+// browser may break between an inline-block and the text after it, and every
+// piece of a KaTeX formula is one (reported from the rendered pages of
+// Chemistry chapter 4; 29,589 formulas in the library are followed by
+// punctuation). The templates set the formula and its punctuation in one
+// no-wrap `.ap-math-glue` span, with a <wbr> between the formula's pieces so
+// a long formula still wraps where it always could. Measured here on pages
+// of four books, body prose and item stems, at a desktop and a phone width:
+// every such formula is glued, no glued punctuation starts a line, a long
+// formula still breaks inside, and the page does not scroll sideways.
+// tools/build/audit-build.mjs holds "every such formula is glued" for every
+// page of the build; this is the layout no static check can read.
+test('punctuation typed after an inline formula stays on the formula\'s line', async ({ page }) => {
+  const routes = [
+    '/math/precalculus/07-trigonometric-identities-and-equations/02-sum-and-difference-identities/',
+    '/math/precalculus/09-systems-of-equations-and-inequalities/01-systems-of-linear-equations-two-variables/',
+    '/math/elementary-algebra/02-solving-linear-equations-and-inequalities/01-solve-equations-using-the-subtraction-and-addition-properties-of-equality/',
+    '/math/prealgebra/01-whole-numbers/02-add-whole-numbers/',
+    '/physical-sciences/chemistry/03-composition-of-substances-and-solutions/02-determining-empirical-and-molecular-formulas/',
+    '/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/03-reaction-stoichiometry/',
+  ];
+  test.setTimeout(60_000 + routes.length * 12_000);
+  const totals = { glued: 0, inStems: 0, wrapped: 0, wideWithPunctuation: 0 };
+  for (const width of [1280, 520, 390]) {
+    await page.setViewportSize({ width, height: 900 });
+    for (const route of routes) {
+      await gotoBuiltPage(page, route);
+      await page.evaluate(() => document.fonts.ready);
+      // scrollable-regions.js decides a wide stem formula in an animation frame after layout.
+      await page.evaluate(() => new Promise((done) => requestAnimationFrame(() => requestAnimationFrame(done))));
+      const audit = await page.evaluate(() => {
+        const PUNCTUATION = /^[.,;:?!)’”]/;
+        const name = (math) => `${(math.querySelector('annotation')?.textContent ?? math.textContent).slice(0, 40)}`;
+        const out = { glued: 0, inStems: 0, wrapped: 0, wideWithPunctuation: 0, unglued: [], stranded: [], breaksShown: [] };
+        for (const math of document.querySelectorAll('.content .katex')) {
+          if (math.closest('.katex-display') || math.parentElement.closest('.katex')) continue;
+          if (!math.getClientRects().length) continue; // inside a hidden follow-up
+          const glue = math.closest('.ap-math-glue');
+          if (!glue) {
+            const host = math.parentElement.classList.contains('ap-math-keep') ? math.parentElement : math;
+            const next = host.nextSibling;
+            if (next && next.nodeType === Node.TEXT_NODE && PUNCTUATION.test(next.textContent)) out.unglued.push(name(math));
+            // A formula that is not glued shows none of its <wbr>s: its breaks are the browser's own.
+            if ([...math.querySelectorAll('wbr')].some((wbr) => getComputedStyle(wbr).display !== 'none')) out.breaksShown.push(name(math));
+            continue;
+          }
+          out.glued += 1;
+          if (glue.closest('[class$="-question"]')) out.inStems += 1;
+          if (math.getClientRects().length > 1) out.wrapped += 1;
+          if (glue.classList.contains('ap-katex-wide')) out.wideWithPunctuation += 1;
+          const tail = glue.lastChild;
+          if (!tail || tail.nodeType !== Node.TEXT_NODE || !PUNCTUATION.test(tail.textContent)) {
+            out.unglued.push(`${name(math)} (a glue span that does not end in its punctuation)`);
+            continue;
+          }
+          // The first punctuation character against the formula's last line box.
+          const range = document.createRange();
+          range.setStart(tail, 0);
+          range.setEnd(tail, 1);
+          const mark = range.getBoundingClientRect();
+          const lines = math.getClientRects();
+          const last = lines[lines.length - 1];
+          if (mark.width && mark.top > last.bottom - 2) out.stranded.push(`${name(math)} ${tail.textContent}`);
+        }
+        out.sideways = document.documentElement.scrollWidth - window.innerWidth;
+        return out;
+      });
+      expect(audit.unglued, `${route} at ${width} px: punctuation follows an inline formula outside its glue span`).toEqual([]);
+      expect(audit.stranded, `${route} at ${width} px: the punctuation after a formula starts a line`).toEqual([]);
+      expect(audit.breaksShown, `${route} at ${width} px: a formula outside a glue span shows a <wbr>`).toEqual([]);
+      expect(audit.sideways, `${route} at ${width} px: the page scrolls sideways`).toBeLessThanOrEqual(0);
+      if (width === 1280) {
+        totals.glued += audit.glued;
+        totals.inStems += audit.inStems;
+      }
+      if (width === 390) {
+        totals.wrapped += audit.wrapped;
+        totals.wideWithPunctuation += audit.wideWithPunctuation;
+      }
+    }
+  }
+  // Body prose is glued by the layout's partial and a stem by `mathtext`: both are counted.
+  expect(totals.glued, 'formulas followed by punctuation were measured').toBeGreaterThanOrEqual(250);
+  expect(totals.inStems, 'formulas in item stems were measured').toBeGreaterThanOrEqual(20);
+  // The no-wrap span took nothing from a long formula: on a phone some still break inside…
+  expect(totals.wrapped, 'on a phone a glued formula still wraps between its pieces').toBeGreaterThanOrEqual(10);
+  // …and a stem formula too wide for its card scrolls together with its question mark.
+  expect(totals.wideWithPunctuation, 'on a phone a wide stem formula scrolls with its punctuation').toBeGreaterThanOrEqual(3);
+});
+
 // The typing guide under an equation field once wrapped inside its arrow,
 // "…O2 -" over "> 2H2O" (the rendered-page reading of Chemistry 4.1). The
 // component sets the arrow and each example in a no-wrap span
 // (`.ap-textin-example`); the text the field is described by is unchanged.
 // tools/build/documentation.test.mjs reads the splitting pattern itself.
 test('the equation typing guide never breaks inside its arrow or an example', async ({ page }) => {
-  const GUIDE = 'Type subscripts as plain numbers, a charge after ^, and the arrow as ->: 2H2 + O2 -> 2H2O.';
+  const GUIDE = 'Type subscripts as plain numbers, a charge after ^, and the arrow as ->: Cu^2+(aq) + 2OH^-(aq) -> Cu(OH)2(s).';
   for (const width of [1280, 390]) {
     await page.setViewportSize({ width, height: 900 });
     await gotoBuiltPage(page, '/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/01-writing-and-balancing-chemical-equations/');
@@ -2709,7 +2890,7 @@ test('the equation typing guide never breaks inside its arrow or an example', as
         })),
       };
     });
-    expect(pieces.examples.map((p) => p.text), `at ${width} px: the arrow and the example are the no-wrap pieces`).toEqual(['->', '2H2 + O2 -> 2H2O.']);
+    expect(pieces.examples.map((p) => p.text), `at ${width} px: the arrow and the example are the no-wrap pieces`).toEqual(['->', 'Cu^2+(aq) + 2OH^-(aq) -> Cu(OH)2(s).']);
     for (const piece of pieces.examples) {
       expect({ rects: piece.rects, tall: piece.tall }, `at ${width} px: "${piece.text}" sits on one line`).toEqual({ rects: 1, tall: false });
     }

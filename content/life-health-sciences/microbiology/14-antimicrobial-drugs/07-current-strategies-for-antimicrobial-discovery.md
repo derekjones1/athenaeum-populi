@@ -63,7 +63,7 @@ To [learn more about the history of antimicrobial drug discovery](https://openst
 
 ## Practice
 
-### Describe the methods and strategies used for discovery of new antimicrobial agents.
+### Describe the methods and strategies used for discovery of new antimicrobial agents
 
 {{< multiplechoice
   question="Which of the following has yielded compounds with the most antimicrobial activity?"

@@ -122,6 +122,33 @@ test('build audit: content images, duplicated chrome, and missing no-JavaScript 
     prepare('<fill-in data-question="Evaluate $x$"><p class=ap-fillin-question>Evaluate <span class=katex>x</span></p></fill-in><p>$3$ R<span class=katex>4</span></p><text-in><p>3 R<span class=katex>4</span></p></text-in>');
     assert.doesNotMatch(audit().stderr, /exercise text glues/, 'remainder notation and body prose may abut math');
 
+    // Punctuation after inline math sits in the formula's own no-wrap span
+    // (layouts/_partials/glue-math.html); a layout that prints .Content bare
+    // ships it outside, and the period can start a line alone.
+    const K = '<span class=katex><span class=katex-mathml>x</span><span class=katex-html aria-hidden=true><span class=base><span class=mord>x</span></span></span></span>';
+    const outside = /punctuation after inline math is outside its \.ap-math-glue span on 1 page/;
+    for (const [html, why] of [
+      [`<p>The measure is ${K}. Next.</p>`, 'a period after bare inline math'],
+      [`<p>Like ${K}, it is.</p>`, 'a comma'],
+      [`<p>(Here ${K})</p>`, 'a closing bracket'],
+      [`<p>All of ${K}&rsquo;s terms.</p>`, 'an apostrophe'],
+      [`<p>About <span class=ap-math-keep>${K}</span>.</p>`, 'a number in scientific notation outside the glue span'],
+      [`<p>One <span class=ap-math-glue>${K}.</span> and ${K}; two.</p>`, 'the second formula of a paragraph'],
+    ]) {
+      prepare(html);
+      assert.match(audit().stderr, outside, why);
+    }
+    for (const [html, why] of [
+      [`<p>The measure is <span class=ap-math-glue>${K}.</span> Next.</p>`, 'glued'],
+      [`<p>About <span class=ap-math-glue><span class=ap-math-keep>${K}</span>.</span></p>`, 'glued around the scientific-notation span'],
+      [`<p>The measure ${K} is next, and ${K} (too).</p>`, 'no punctuation straight after the formula'],
+      [`<p>Then</p><span class=katex-display>${K}</span>.`, 'a display block is not inline math'],
+      [`<p>About <span class=ap-math-keep>${K}</span> grams.</p>`, 'a kept number with a word after it'],
+    ]) {
+      prepare(html);
+      assert.doesNotMatch(audit().stderr, /outside its \.ap-math-glue/, why);
+    }
+
     prepare('<p>Semantic content.</p>');
     rmSync(join(fixture, 'images', 'logo-dark.svg'));
     assert.match(

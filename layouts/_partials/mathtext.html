@@ -23,6 +23,12 @@
 {{- $protected := replace $src "\\$" $NUL -}}
 {{- $parts := split $protected "$" -}}
 {{- $sb := slice -}}
+{{- /* Punctuation typed straight after a math run is set inside the run's
+     own `.ap-math-glue` span, so it cannot start the next line alone
+     (layouts/_markup/render-passthrough.html says why, and what the <wbr>
+     between a formula's pieces is for). `$glued` is that punctuation, taken
+     off the front of the prose part that follows. */ -}}
+{{- $glued := "" -}}
 {{- range $i, $p := $parts -}}
   {{- if eq (mod $i 2) 1 -}}
     {{- $tex := replace $p $NUL "\\$" -}}
@@ -35,11 +41,20 @@
              the passthrough render hook holds it in body prose
              (layouts/_markup/render-passthrough.html says why): a stem that
              ended a line at "1.497 ×" was where the break was first seen. */ -}}
+        {{- $math := replace (printf "%s" .Value) `</span><span class="base">` `</span><wbr><span class="base">` -}}
         {{- if and (le (len $tex) 60) (findRE `\\times\s*10\^` $tex 1) -}}
-          {{- $sb = $sb | append (printf `<span class="ap-math-keep">%s</span>` .Value) -}}
-        {{- else -}}
-          {{- $sb = $sb | append (printf "%s" .Value) -}}
+          {{- $math = printf `<span class="ap-math-keep">%s</span>` $math -}}
         {{- end -}}
+        {{- if lt (add $i 1) (len $parts) -}}
+          {{- /* A straight quote here is an apostrophe or a closing quote
+               ("$b$'s"); markdownify would have curled it, so it is curled
+               by hand. */ -}}
+          {{- with findRE `^[.,;:?!)’”']+` (index $parts (add $i 1)) 1 -}}
+            {{- $glued = index . 0 -}}
+            {{- $math = printf `<span class="ap-math-glue">%s%s</span>` $math (replace $glued "'" "’") -}}
+          {{- end -}}
+        {{- end -}}
+        {{- $sb = $sb | append $math -}}
       {{- end -}}
     {{- end -}}
   {{- else -}}
@@ -49,6 +64,10 @@
     {{- /* markdownify trims its input, which ate the space on each side of
          every math run ("Evaluate $x$ when" → "Evaluatexwhen"). Re-attach
          the run's own edge whitespace; a whitespace-only run passes as-is. */ -}}
+    {{- if $glued -}}
+      {{- $p = strings.TrimPrefix $glued $p -}}
+      {{- $glued = "" -}}
+    {{- end -}}
     {{- if eq (trim $p " \t\n\r") "" -}}
       {{- $sb = $sb | append $p -}}
     {{- else -}}

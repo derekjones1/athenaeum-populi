@@ -2176,10 +2176,146 @@ exercise; a plain-text address that no longer answers.
   (4.4's dropped percent sign passed), reads one equation item's stem
   against another item's key, or counts added items beyond the floor.
 
+Most of this list was acted on the same day: "After chapter 4" below.
+
 Next is Chapter 5 (Thermochemistry), then Knowledge Check block 2
 (chapters 4–5). Chapter 5 is the first chapter with a link to a table
 appendix other than this run's Appendix H citation: its parent follows
 `run.md` step 6 for the lookup test.
+
+## After chapter 4: the list of things not acted on (November 12, 2026)
+
+Derek read chapter 4's "Not acted on" list and asked for it to be fixed,
+"scientifically accurate and … an easy way for the user to understand and
+learn". He confirmed two rulings as they stood — the 0.2 percent band, and
+no allowance for rounding at each step — and chose, for the rest: a nudge
+for P₂O₅, a nudge now for the wrong arrow, a grader message for a
+step-rounder, and the four smaller leftovers (electron messages, the
+typing guide's example, two stem wordings, the Great Lakes note). One
+session, the `docs/re-review/README.md` loop; no key and no allowance
+changed.
+
+### The grader says why
+
+Six cases that were a bare "Not quite" (or, for the arrow, a wrong
+"Correct") now carry a sentence. `docs/subjects/chemistry.md` quotes each in
+its worked tables and `documentation.test.mjs` holds the tables to the
+grader.
+
+- **`8` for the key 8.00** is told to give three significant figures, as
+  `8.0` already was: the key's own number with its zeros left off, at any
+  count, is `too-few`. Exact equality, so the chapter 1 ruling stands — 90
+  against 89.4 is still refused with nothing said.
+- **A near miss is still incorrect and is told so**: "Close, but not within
+  rounding of the answer. If you rounded partway through, carry the extra
+  digits through every step and round only the final result." The zone is
+  one unit of the last figure beyond the allowance at two figures, two at
+  three or more, three bands under a tolerance, none at one figure. Every
+  step-rounding miss the chapter 4 consistency reading recorded lands in
+  it (34.9 for 35.0, 73.5 for 73.3 ± 1, 86.53 for 86.56 ± 1, 3.5 × 10⁻³ for
+  3.4 × 10⁻³). The sentence names no section: items of chapters 1 and 2
+  are graded by the same code and come before Section 3.3.
+- **The arrow is part of the equation.** `⇌` typed against a `⟶` key was
+  graded correct on all 60 equation items; it is now `form`, told to use a
+  single arrow, and a `⇌` key answered with `->` or `=` is told the
+  reverse. `chemCanon` joins an equilibrium with `<=>`, so the source-key
+  and Knowledge Check gates see the arrow; a `⟶` key's canon string is
+  what it was, and nothing re-hashed.
+- **A balanced equation with a formula divided through** (P₄ + 5O₂ ⟶
+  2P₂O₅ against P₄O₁₀) is `form`: "one formula is an empirical formula …
+  Write that substance's molecular formula". An element typed as separate
+  atoms (4P, 2O) has its own sentence. Neither names a substance.
+- **A bare `2e`** is told to type `e-` (it had been told the line was no
+  equation and sent to the arrow), and **a half-reaction with every
+  substance and no electrons** is told what is missing.
+- The equation field's typing guide shows a charge, a coefficient, a group
+  in parentheses, and state symbols: `Cu^2+(aq) + 2OH^-(aq) -> Cu(OH)2(s)`,
+  no item's key (the test that holds the guide's examples reads all 60).
+
+### The period after a formula
+
+"…is $x$." could put the period alone on the next line: a browser may
+break between an inline-block and the text after it, and every piece of a
+KaTeX formula is one. 29,589 of the library's 73,151 inline formulas are
+followed by punctuation. The formula and its punctuation are now one
+no-wrap span (`docs/architecture.md` has the mechanism: two comments from
+the render hook, a partial the two `docs` layouts call, `mathtext` gluing
+in place, a `<wbr>` between a formula's pieces so a long one still wraps).
+
+- **The first design failed in the browser and was measured before any
+  template was written.** A no-wrap wrapper with wrapping restored on the
+  formula inside it leaves every stranded period where it was in Chrome:
+  the break after an inline-block is decided by the inline-block's own
+  parent. The prototype (DOM edits on the built pages, four widths)
+  showed it in a minute.
+- A wide stem formula that becomes a scroll block on a phone now scrolls
+  together with its question mark; the period had sat alone under the
+  block (7 of 12 on 4.3 at 390 px).
+- The build audit's new check found what the measured pages had not: three
+  Elementary Algebra stems with an apostrophe after a formula ("$b$'s").
+- Measured on six pages of four books at 1280, 520, and 390 px: no
+  stranded punctuation, the same interior breaks as before, no sideways
+  scroll. **Chrome only**: no other engine is installed on this machine.
+
+### Practice headings
+
+The 15 headings ending in a period outside Chemistry (Biology 2,
+Microbiology 4, Precalculus 9) lost it, and the rule left the Chemistry
+block: an error in every book. Each book's history has a line.
+
+### Source claims: three "from memory" findings, all three defects
+
+Each was opened; none stayed as printed.
+
+| Claim | Opened | On the page | Erratum |
+|---|---|---|---|
+| 4.2 pickling box: bacteria "feed on starches" | Pérez-Díaz and others, *Frontiers in Microbiology* 14:1210190 (2023): "Fructose and glucose are preferably removed by lactobacilli in cucumber fermentation" | "sugars", with the callout's Source note saying what the source prints | 3032 |
+| 4.2 solubility table: every group 2 fluoride insoluble | ATSDR, *Toxicological Profile for Beryllium* (2023), Table 4-2: beryllium fluoride "Very soluble" | row kept (a guideline; an added item quotes it), Source note under the table | 3033 |
+| 4.3: "ores such as K[Ag(CN)₂]" | the book's own m68842 (Section 19.1): cyanide forms the soluble dicyanoargentate(I) ion "from silver metal or silver-containing compounds" | both stems read "from its ores as K[Ag(CN)₂]", Source note after the first | 3034 |
+| 4.3: "molecules of Zn(CN)₂" | the book's own Section 2.6: "an ionic compound is not made up of single, discrete molecules" | "formula units" in the stem and the answer display | 3035 |
+| 4.5: "What is the molarity?" names no solute | the CNXML | the added closing sentence names the calcium hydroxide solution | 3036 |
+| 4.2: Great Lakes Chemical, present tense | Chemtura's Form 10-K for 2006: merged with Crompton on July 1, 2005 | stem kept, dated Source note after the item | not an erratum |
+
+The sodium carbonate and hydrogen sulfide self-check (erratum 3007) was
+re-derived against Appendix H and stands; its model answer now says why,
+in two sentences a chapter 4 learner can follow. It stays a self-check: the
+chapter's gas-forming pattern gives the source's wrong products, and a
+graded field would mark the learner who follows the chapter wrong. The six
+keys that differ from the source were re-derived and stand (the gallium
+chloride moles are 1.248, not a rounding tie). Erratum 3015's Local
+handling contradicted itself and is rewritten; two headings lacked a blank
+line.
+
+### Ledger and gates
+
+Four items re-hashed: the self-check (re-read by the parent) and three
+fill-ins whose stems changed, solved blind by a fresh Fable solver on
+masked pages — 3 agree, 0 disagree, 0 flagged (5.336 × 10²² and 10.40 from
+the table's masses, each one unit from the key and inside its allowance).
+`npm test` green; the five baselines did not move (keys 7,419, coverage
+4,501, replay 8,864, exercises 18,074). Errata 3032–3036; next free 3037.
+
+### What the process should keep
+
+- **Open the source before close-out, the book's later chapters first**
+  (now in `run.md`). Three findings marked "from memory" were left as
+  printed at chapter 4's close and were all defects; one needed only a
+  grep of the pinned checkout.
+- **Prototype a layout fix in the browser before writing it into
+  templates.** The plan's CSS would have shipped a fix that fixed nothing.
+- **A sabotage must fail for the reason the gate exists.** Editing the
+  built stylesheet tripped its integrity check, not the new test; the rule
+  was overridden inside the test for one run instead.
+- **The first near-miss zone was too generous**: a flat three units called
+  10¹¹ close to 10¹². The existing test table caught it.
+
+### Still open
+
+4.3 asks grams of barium peroxide where its siblings ask kilograms (the
+source's unit, not a defect). No gate compares a display equation with its
+MathML symbol by symbol, reads one equation item's stem against another's
+key, or counts added items beyond the floor. The punctuation glue is
+unverified in Safari and Firefox.
 
 ## The `\dfrac` watch list
 

@@ -139,13 +139,16 @@ class FillInElement extends HTMLElement {
     // URL is a build-time constant, so esbuild leaves this as a real import().
     try {
       const engine = await import(engineUrl);
-      const { mathlive, checkAnswer, ce, describeAnswerForm, describeFormFeedback } = engine;
+      const { mathlive, checkAnswer, ce, describeAnswerForm, describeFormFeedback, describeIncorrectFeedback } = engine;
       // The form requirement is phrased next to the predicates that enforce
       // it, so the feedback and the rule can never drift apart.
       if (this.answerForm) this._formMessage = describeAnswerForm(this.answerForm);
       // A 'form' verdict is phrased for the response in hand: an unworked
       // calculation is told to finish it, any other shape gets the sentence above.
       this._describeForm = describeFormFeedback;
+      // An 'incorrect' verdict the grader can say something about: a measured
+      // quantity a unit or two outside its allowance.
+      this._describeMiss = describeIncorrectFeedback;
       // No sound assets are shipped — silence the virtual keyboard.
       mathlive.MathfieldElement.soundsDirectory = null;
       // Field and grader share ONE Compute Engine so they can never disagree
@@ -216,6 +219,7 @@ class FillInElement extends HTMLElement {
       status === 'form' && this._describeForm
         ? this._describeForm(latex, this.answerForm, this.answer) || this._formMessage
         : this._formMessage,
+      status === 'incorrect' && this._describeMiss ? this._describeMiss(latex, this.answerForm, this.answer) : '',
     );
   }
 
@@ -294,7 +298,7 @@ class FillInElement extends HTMLElement {
     requestAnimationFrame(apply);
   }
 
-  _setStatus(status, formMessage) {
+  _setStatus(status, formMessage, missMessage = '') {
     this.status = status;
     if (status === 'correct') {
       this.done = true;
@@ -309,7 +313,7 @@ class FillInElement extends HTMLElement {
       restoreFocus(this.feedback);
       this.button.disabled = true;
     } else {
-      this.feedback.textContent = (status === 'form' && formMessage) || MESSAGES[status] || '';
+      this.feedback.textContent = (status === 'form' && formMessage) || (status === 'incorrect' && missMessage) || MESSAGES[status] || '';
     }
     this.feedback.style.color = COLOR[status] || 'inherit';
     if (status === 'correct') announceCorrect(this);

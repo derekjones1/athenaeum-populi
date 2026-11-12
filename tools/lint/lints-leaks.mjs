@@ -53,9 +53,9 @@
  *   - a footer that prints a graded item's key: a measured fill-in's key of
  *     three or more significant figures as the key or its display writes
  *     it, or a formula or equation key (Chemistry; 4.3's "18.86")
- *   - a `###` heading under `## Practice` that ends with a period
- *     (Chemistry; library-wide 15 such headings in Biology 2, Microbiology
- *     4, Precalculus 9, not enforced there)
+ *   - a `###` heading under `## Practice` that ends with a period (every
+ *     book: the objectives callout keeps the source's period, the heading
+ *     drops it)
  *   - a unit set inside a stem's math after a power of ten,
  *     `$1.00 \times 10^{3}\ \text{kg}$` (Chemistry; an answer display is
  *     not a stem)
@@ -873,6 +873,13 @@ export function lintLeaks(src, filename = '') {
   // electrons" for a how-many-shells item). Life sciences only: a math hint
   // states the decision rule ("opposite signs mean a hyperbola"), which
   // names the answer category by design.
+  // An objective heading under `## Practice` drops the source's period —
+  // in every book. First enforced for Chemistry (chapter 4); the 15 such
+  // headings in Biology, Microbiology and Precalculus were cleared on
+  // November 12, 2026 and the rule left the Chemistry block.
+  for (const { index, heading } of practicePeriodHeadings(text)) {
+    err(index, `Practice heading \`### ${heading}\` ends with a period — the objectives callout keeps the source's period; the heading drops it`);
+  }
   // ---- Chemistry: what only reading the pilot's six pages together found ----
   // Each page had passed its own author and checker; these four shapes were
   // legal on any one page and wrong across them (November 9, 2026).
@@ -927,10 +934,6 @@ export function lintLeaks(src, filename = '') {
           err(footer.index, `the footer prints ${JSON.stringify(spelling.text)}, the key of ${labelOf(item.kind, item.params)} — name an item by where it is or what it asks ("the Check Your Learning of the propane example"), never by its key`);
         }
       }
-    }
-    // An objective heading under `## Practice` drops the source's period.
-    for (const { index, heading } of practicePeriodHeadings(text)) {
-      err(index, `Practice heading \`### ${heading}\` ends with a period — the objectives callout keeps the source's period; the heading drops it`);
     }
     // A unit inside a stem's math after a power of ten: "$1.00 \times
     // 10^{3}\ \text{kg}$" is read aloud as a product of the number and the

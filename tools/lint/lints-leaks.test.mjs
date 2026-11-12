@@ -609,12 +609,17 @@ test('practicePeriodHeadings reads only the Practice block\'s objective headings
   assert.deepEqual(practicePeriodHeadings('### No practice.\n'), []);
 });
 
-test('in the Chemistry book a Practice heading never ends with a period', () => {
+test('in every book a Practice heading never ends with a period', () => {
   const page = (heading) => `## Summary\n\nText.\n\n## Practice\n\n### ${heading}\n\n${textin('The ________ is balanced.', 'equation')}\n`;
   const period = (src, file = CHEM) => errorsOf(src, file).filter((e) => /Practice heading .* ends with a period/.test(e));
   assert.equal(period(page('Derive chemical equations from narrative descriptions of chemical reactions.')).length, 1);
   assert.deepEqual(period(page('Derive chemical equations from narrative descriptions of chemical reactions')), []);
-  assert.deepEqual(period(page('Derive chemical equations.'), MATH), [], 'enforced for Chemistry only');
+  // Enforced in every book since November 12, 2026 (it was Chemistry-only
+  // while 15 headings in three other books still carried the period).
+  for (const file of [MATH, BIO]) {
+    assert.equal(period(page('Derive chemical equations.'), file).length, 1, file);
+    assert.deepEqual(period(page('Derive chemical equations'), file), [], file);
+  }
 });
 
 test('in the Chemistry book a stem never sets a unit inside its math after a power of ten', () => {

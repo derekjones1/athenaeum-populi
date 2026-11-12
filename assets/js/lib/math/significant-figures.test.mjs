@@ -100,8 +100,8 @@ test('compareMeasured grades value and figures together', async (t) => {
     ['0.674', '0.674', 3, 1, 'correct'],
     ['0.675', '0.674', 3, 1, 'correct'],
     ['0.673', '0.674', 3, 1, 'correct'],
-    ['0.676', '0.674', 3, 1, 'incorrect'],
-    ['0.675', '0.674', 3, 0, 'incorrect'],
+    ['0.676', '0.674', 3, 1, 'incorrect', 'near'],
+    ['0.675', '0.674', 3, 0, 'incorrect', 'near'],
     ['0.676', '0.674', 3, 2, 'correct'],
     // the same value in another notation
     ['6.74\\times10^{-1}', '0.674', 3, 1, 'correct'],
@@ -109,8 +109,8 @@ test('compareMeasured grades value and figures together', async (t) => {
     // too many figures: the readout of a right calculation
     ['0.67442', '0.674', 3, 1, 'form', 'too-many'],
     ['0.6746', '0.674', 3, 1, 'form', 'too-many'],     // rounds to 0.675, inside the allowance
-    ['0.6756', '0.674', 3, 1, 'incorrect'],            // rounds to 0.676
-    ['0.6746', '0.674', 3, 0, 'incorrect'],            // rounds to 0.675, and none is allowed
+    ['0.6756', '0.674', 3, 1, 'incorrect', 'near'],            // rounds to 0.676
+    ['0.6746', '0.674', 3, 0, 'incorrect', 'near'],            // rounds to 0.675, and none is allowed
     ['31.57', '31.6', 3, 0, 'form', 'too-many'],
     ['31.65', '31.6', 3, 0, 'form', 'too-many'],       // half to even reaches the key
     ['31.65', '31.7', 3, 0, 'form', 'too-many'],       // and half up reaches this one
@@ -125,7 +125,7 @@ test('compareMeasured grades value and figures together', async (t) => {
     ['350', '350', 2, 1, 'correct'],
     ['3.5\\times10^{2}', '350', 2, 1, 'correct'],
     ['340', '350', 2, 1, 'correct'],
-    ['370', '350', 2, 1, 'incorrect'],
+    ['370', '350', 2, 1, 'incorrect', 'near'],
     ['355', '350', 2, 1, 'form', 'too-many'],
     ['350.', '350', 2, 1, 'form', 'too-many'],
     ['350', '350', 3, 0, 'correct'],
@@ -140,7 +140,7 @@ test('compareMeasured grades value and figures together', async (t) => {
     ['1.00\\times10^{1}', '9.99', 3, 1, 'correct'],
     ['0.990', '1.00', 3, 1, 'correct'],
     ['0.99', '1.00', 3, 1, 'correct'],                 // two figures, but written to the key's own hundredths
-    ['0.99', '1.00', 3, 0, 'incorrect'],
+    ['0.99', '1.00', 3, 0, 'incorrect', 'near'],
     ['10.00', '9.99', 3, 1, 'correct'],                // four figures, the same hundredths
     // sign, scientific notation, zero
     ['-494', '-494', 3, 1, 'correct'],
@@ -154,6 +154,27 @@ test('compareMeasured grades value and figures together', async (t) => {
     // the stem's own round number is not "right as far as it goes" (1.6: a 90 kg class limit, key 89.4)
     ['90', '89.4', 3, 1, 'incorrect'],
     ['89', '89.4', 3, 1, 'form', 'too-few'],
+    // the key's own number with its zeros left off is the answer written short, at any count (4.3: 8.00 mol)
+    ['8', '8.00', 3, 1, 'form', 'too-few'],
+    ['8.', '8.00', 3, 1, 'form', 'too-few'],
+    ['8.0', '8.00', 3, 1, 'form', 'too-few'],
+    ['9', '8.00', 3, 1, 'incorrect'],
+    ['0.05', '0.0500', 3, 0, 'form', 'too-few'],
+    ['5\\times10^{-2}', '0.0500', 3, 0, 'form', 'too-few'],
+    // a near miss is still incorrect, and says so: where rounding at each step lands (chapter 4)
+    ['34.9', '35.0', 3, 0, 'incorrect', 'near'],
+    ['34.8', '35.0', 3, 0, 'incorrect', 'near'],
+    ['34.7', '35.0', 3, 0, 'incorrect'],
+    ['34.93', '35.0', 3, 0, 'incorrect', 'near'],       // an unrounded readout of the same miss
+    ['73.5', '73.3', 3, 1, 'incorrect', 'near'],
+    ['86.53', '86.56', 4, 1, 'incorrect', 'near'],
+    ['86.52', '86.56', 4, 1, 'incorrect'],
+    ['3.5\\times10^{-3}', '3.4\\times10^{-3}', 2, 0, 'incorrect', 'near'],
+    ['3.6\\times10^{-3}', '3.4\\times10^{-3}', 2, 0, 'incorrect'],   // two units of a two-figure key is no near miss
+    ['2.4', '1.2', 2, 0, 'incorrect'],
+    // written to the wrong count of figures and not the key's own number: nothing to say
+    ['35', '35.4', 3, 0, 'form', 'too-few'],
+    ['36', '35.4', 3, 0, 'incorrect'],
     // a bare power of ten is the coefficient 1, one figure
     ['10^{12}', '1\\times10^{12}', 1, 0, 'correct'],
     ['10^{11}', '1\\times10^{12}', 1, 0, 'incorrect'],
@@ -192,17 +213,17 @@ test('a relative tolerance grades the value, with or without a count of figures'
     ['123.9', '123.896', null, '0.05', 'correct'],
     ['123.896', '123.896', null, '0.05', 'correct'],
     ['1.2388\\times10^{2}', '123.896', null, '0.05', 'correct'],
-    ['124', '123.896', null, '0.05', 'incorrect'],
+    ['124', '123.896', null, '0.05', 'incorrect', 'near'],
     // one hydrogen miscounted (1.008 amu) is far outside the band
     ['122.888', '123.896', null, '0.05', 'incorrect'],
     ['18.02', '18.015', null, '0.05', 'correct'],
-    ['18', '18.015', null, '0.05', 'incorrect'],
+    ['18', '18.015', null, '0.05', 'incorrect', 'near'],
     // beside sig-figs the band replaces the last-digit allowance and the count is still asked
     // (3.33(a): the source answers 82.24% N for NH3; the book's table gives 82.27)
     ['82.27', '82.24', 4, '0.05', 'correct'],
     ['82.2665', '82.24', 4, '0.05', 'form', 'too-many'],
     ['82.2', '82.24', 4, '0.05', 'form', 'too-few'],
-    ['82.29', '82.24', 4, '0.05', 'incorrect'],
+    ['82.29', '82.24', 4, '0.05', 'incorrect', 'near'],
     ['82.3', '82.24', 4, '0.05', 'incorrect'],
   ];
   for (const [response, key, figures, tolerance, verdict, reason] of rows) {

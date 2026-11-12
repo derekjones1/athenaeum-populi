@@ -178,7 +178,7 @@ during the energy payoff phase of glycolysis, when high-energy phosphate groups 
 in the Krebs cycle, where one ATP (or GTP) is produced per turn by substrate-level phosphorylation
 {{< /selfcheck >}}
 
-### Explain how three-carbon pyruvate molecules are converted into two-carbon acetyl groups that can be funneled into the Krebs cycle.
+### Explain how three-carbon pyruvate molecules are converted into two-carbon acetyl groups that can be funneled into the Krebs cycle
 
 {{< textin
   question="The enzyme complex ________ decarboxylates pyruvate to a two-carbon acetyl group in the transition reaction."

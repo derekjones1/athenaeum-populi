@@ -174,7 +174,7 @@ carbohydrates
 
 {{< textin question="Cholesterol is the most common member of the __________ group, found in animal tissues; it has a tetracyclic carbon ring system with a double bond in one of the rings and one free hydroxyl group." answer="steroid" accept="sterol" hint="Reread the paragraph after the isoprenoid diagram." >}}
 
-### Compare and contrast triacylglycerides (triglycerides) and phospholipids.
+### Compare and contrast triacylglycerides (triglycerides) and phospholipids
 
 {{< multiplechoice question="Molecules bearing both polar and nonpolar groups are said to be which of the following?" answer="amphipathic" hint="Reread the paragraph after the phospholipid diagram." >}}
 hydrophilic
@@ -197,7 +197,7 @@ the two fatty acid chains are hydrophobic and form its nonpolar tails
 it is amphipathic — neither purely polar nor purely nonpolar
 {{< /selfcheck >}}
 
-### Describe how phospholipids are used to construct biological membranes.
+### Describe how phospholipids are used to construct biological membranes
 
 {{< selfcheck question="Microorganisms can thrive under many different conditions, including high-temperature environments such as hot springs. To function properly, cell membranes have to be in a fluid state. How do you expect the fatty acid content (saturated versus unsaturated) of bacteria living in high-temperature environments might compare with that of bacteria living in more moderate temperatures?" hint="Review what the section says about which fatty acid type keeps a lipid solid and which keeps it liquid." >}}
 The section gives the facts this comparison rests on: lipids containing saturated fatty acids are solids at room temperature, whereas lipids containing unsaturated fatty acids are liquids, because saturated fatty acids have a straight, flexible carbon backbone and unsaturated fatty acids have "kinks" where each double bond causes a rigid bend of the carbon skeleton. The question adds that cell membranes have to be in a fluid state to function properly. The section itself does not say how the fatty acid content of bacteria from high-temperature environments compares with that of bacteria from moderate temperatures; an answer reasons from these facts about which kind of fatty acid makes a lipid solid and which keeps it liquid.

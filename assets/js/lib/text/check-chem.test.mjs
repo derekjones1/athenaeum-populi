@@ -150,8 +150,9 @@ test('ions and electrons are read in an equation', () => {
   assert.equal(equation('H3O+ + OH- -> 2H2O', netIonic), 'correct');
   assert.equal(equation('H3O++OH-->2H2O', netIonic), 'correct', 'no spaces at all');
   assert.equal(equation('OH- + H3O+ -> 2H2O', netIonic), 'correct');
-  // An equilibrium arrow is an arrow.
+  // An equilibrium arrow is an arrow — the key's own (the next test has the other one).
   assert.equal(equation('N2 + 3H2 <=> 2NH3', 'N₂(g) + 3H₂(g) ⇌ 2NH₃(g)'), 'correct');
+  assert.equal(equation('N2 + 3H2 ⇌ 2NH3', 'N₂(g) + 3H₂(g) ⇌ 2NH₃(g)'), 'correct');
   // A fractional coefficient is the key's, when the key prints one.
   assert.equal(equation('H2 + 1/2O2 -> H2O', 'H₂(g) + 1/2O₂(g) ⟶ H₂O(l)'), 'correct');
   assert.equal(equation('2H2 + O2 -> 2H2O', 'H₂(g) + 1/2O₂(g) ⟶ H₂O(l)'), 'form');
@@ -428,4 +429,86 @@ test('sentence punctuation typed after a formula or an equation is not part of i
   assert.notEqual(checkChem('MgS.', 'MgSe', { form: 'formula' }).status, 'correct');
   assert.equal(checkChem('mgse.', 'MgSe', { form: 'formula' }).status, 'form', 'the capitals message is for capitals');
   assert.equal(checkChem('.', 'MgSe', { form: 'formula' }).status, 'empty');
+});
+
+// Decided after chapter 4 (November 12, 2026): `⇌` was graded correct against
+// every `⟶` key, and the arrow is part of what an equation says.
+test('the arrow is part of the equation: the other arrow is told which one, never correct', () => {
+  const oneWay = 'P₄(s) + 5O₂(g) ⟶ P₄O₁₀(s)';
+  for (const typed of ['P4 + 5O2 -> P4O10', 'P4 + 5O2 --> P4O10', 'P4 + 5O2 → P4O10', 'P4 + 5O2 ⟶ P4O10', 'P4 + 5O2 = P4O10', '5O2 + P4 -> P4O10(s)']) {
+    assert.equal(equation(typed, oneWay), 'correct', typed);
+  }
+  for (const typed of ['P4 + 5O2 ⇌ P4O10', 'P4 + 5O2 <=> P4O10', 'P4 + 5O2 <-> P4O10', 'P4(s) + 5O2(g) ⇄ P4O10(s)']) {
+    const result = checkEquation(typed, oneWay);
+    assert.equal(result.status, 'form', typed);
+    assert.match(result.message, /single arrow \(->\)/, typed);
+    assert.doesNotMatch(result.message, /P4|P₄|O10|O₁₀/, 'names no substance');
+  }
+  const equilibrium = 'N₂(g) + 3H₂(g) ⇌ 2NH₃(g)';
+  for (const typed of ['N2 + 3H2 -> 2NH3', 'N2 + 3H2 = 2NH3', 'N2 + 3H2 ⟶ 2NH3']) {
+    const result = checkEquation(typed, equilibrium);
+    assert.equal(result.status, 'form', typed);
+    assert.match(result.message, /equilibrium arrow \(<=>\)/, typed);
+  }
+  // One thing at a time: a wrong state or a doubled equation is told that first, and a wrong equation is wrong.
+  assert.match(checkEquation('P4(g) + 5O2 ⇌ P4O10', oneWay).message, /state symbols/);
+  assert.match(checkEquation('2P4 + 10O2 ⇌ 2P4O10', oneWay).message, /smallest whole-number/);
+  assert.equal(equation('P4 + 3O2 ⇌ P4O6', oneWay), 'incorrect');
+  // The gate's canon tells the two apart, and a one-way key's canon is what it was.
+  assert.equal(chemCanon(oneWay, 'equation'), '1P4 + 5O2 -> 1P4O10');
+  assert.equal(chemCanon(equilibrium, 'equation'), '1N2 + 3H2 <=> 2NH3');
+  assert.notEqual(chemCanon('N2 + 3H2 -> 2NH3', 'equation'), chemCanon(equilibrium, 'equation'));
+  assert.equal(previewChem('N2 + 3H2 <=> 2NH3', 'equation'), 'N₂ + 3H₂ ⇌ 2NH₃');
+});
+
+// Chemistry 2e 4.2, the blind solve: P₄ + 5O₂ ⟶ 2P₂O₅ against the key's P₄O₁₀
+// was plainly wrong. It balances; the formula is the empirical one.
+test('a balanced response with a formula divided through is told to write the molecular formula', () => {
+  const key = 'P₄(s) + 5O₂(g) ⟶ P₄O₁₀(s)';
+  for (const typed of ['P4 + 5O2 -> 2P2O5', 'P4 + 5O2 -> 2P2O5(s)', '2P4 + 10O2 -> 4P2O5', '4P + 5O2 -> 2P2O5']) {
+    const result = checkEquation(typed, key);
+    assert.equal(result.status, 'form', typed);
+    assert.match(result.message, /empirical formula/, typed);
+    assert.doesNotMatch(result.message, /P4|P₄|O10|O₁₀|P2|O5/, 'names no substance');
+  }
+  // An element typed as separate atoms is the same slip, and is not called an empirical formula.
+  for (const [typed, against] of [['4P + 5O2 -> P4O10', key], ['P4 + 10O -> P4O10', key], ['2H2 + 2O -> 2H2O', '2H₂(g) + O₂(g) ⟶ 2H₂O(l)']]) {
+    const result = checkEquation(typed, against);
+    assert.equal(result.status, 'form', typed);
+    assert.match(result.message, /separate atoms/, typed);
+  }
+  // An ion divided through: atoms and charge alike.
+  assert.match(checkEquation('2Hg+ + 2Cl- -> Hg2Cl2', 'Hg₂²⁺(aq) + 2Cl⁻(aq) ⟶ Hg₂Cl₂(s)').message, /empirical formula/);
+  // Only for a response that balances, with every other species the key's.
+  assert.equal(checkEquation('P4 + 5O2 -> P2O5', key).message, undefined);
+  assert.equal(equation('P4 + 5O2 -> P2O5', key), 'incorrect');
+  assert.equal(equation('P4 + 3O2 -> 2P2O3', key), 'incorrect');
+  assert.equal(checkEquation('P4 + 3O2 -> 2P2O3', key).message, undefined);
+  // A multiple of the key's formula is not this slip, and neither is another compound of the same elements.
+  assert.equal(checkEquation('2Na + Cl2 -> Na2Cl2', '2Na(s) + Cl₂(g) ⟶ 2NaCl(s)').message, undefined);
+  assert.equal(checkEquation('2H2 + 2O2 -> 2H2O2', '2H₂(g) + O₂(g) ⟶ 2H₂O(l)').message, undefined);
+  // The key's own equation is still simply right.
+  assert.equal(equation('P4 + 5O2 -> P4O10', key), 'correct');
+});
+
+test('an electron typed without its charge, or left out of a half-reaction, is told so', () => {
+  const half = 'Cu(s) ⟶ Cu²⁺(aq) + 2e⁻';
+  for (const typed of ['Cu -> Cu2+ + 2e', 'Cu -> Cu2+ + 2 e', 'Cu + 2e -> Cu2+', 'Cu -> Cu^2+ + e']) {
+    const result = checkEquation(typed, half);
+    assert.equal(result.status, 'incorrect', typed);
+    assert.match(result.message, /type it as e-/, typed);
+    assert.doesNotMatch(result.message, /arrow/, typed);
+  }
+  const none = checkEquation('Cu -> Cu2+', half);
+  assert.equal(none.status, 'incorrect');
+  assert.match(none.message, /half-reaction also shows the electrons/);
+  assert.doesNotMatch(none.message, /\d/, 'names no count');
+  // Other substances, or the wrong count of electrons, keep the sentences they had.
+  assert.equal(checkEquation('Cu -> Cu+', half).message, undefined);
+  assert.match(checkEquation('Cu -> Cu2+ + e-', half).message, /not balanced/);
+  assert.equal(equation('Cu -> Cu2+ + 2e-', half), 'correct');
+  // A key with no electrons never asks for them, and a line that is no equation still says how to type one.
+  assert.equal(checkEquation('H2 + O2 -> H2O2', '2H₂(g) + O₂(g) ⟶ 2H₂O(l)').message, undefined);
+  assert.match(checkEquation('hello', half).message, /does not read as an equation/);
+  assert.match(checkEquation('Fe -> Fe3+ + 3e-', '8H⁺(aq) + MnO₄⁻(aq) + 5e⁻ ⟶ Mn²⁺(aq) + 4H₂O(l)').message ?? '', /^$/);
 });

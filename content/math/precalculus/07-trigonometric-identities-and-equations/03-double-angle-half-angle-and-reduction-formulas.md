@@ -558,7 +558,7 @@ We can take the inverse tangent to find the angle: $\tan^{-1}(0.57)\approx29.7^\
 
 ## Practice
 
-### Use double-angle formulas to find exact values.
+### Use double-angle formulas to find exact values
 
 {{< fillin
   question="If $\sin x=\tfrac18$ and $x$ is in quadrant I, find $\sin(2x)$, $\cos(2x)$, and $\tan(2x)$, in that order, separated by commas."
@@ -580,7 +580,7 @@ We can take the inverse tangent to find the angle: $\tan^{-1}(0.57)\approx29.7^\
   hint="Read $\sin\alpha$ and $\cos\alpha$ from the triangle's sides and hypotenuse (found with the Pythagorean theorem), then apply each double-angle formula."
 >}}
 
-### Use double-angle formulas to verify identities.
+### Use double-angle formulas to verify identities
 
 {{< fillin
   question="Simplify $2\sin\left(\tfrac{\pi}{4}\right)\cos\left(\tfrac{\pi}{4}\right)$ to one trigonometric expression."
@@ -598,7 +598,7 @@ We can take the inverse tangent to find the angle: $\tan^{-1}(0.57)\approx29.7^\
   hint="Recognize the numerator and the denominator as double-angle formulas, then use a quotient identity."
 >}}
 
-### Use reduction formulas to simplify an expression.
+### Use reduction formulas to simplify an expression
 
 {{< fillin
   question="Reduce $\sin^2x\cos^2x$ so that no exponent is higher than $1$."
@@ -616,7 +616,7 @@ We can take the inverse tangent to find the angle: $\tan^{-1}(0.57)\approx29.7^\
   hint="Write $\sin^4(3x)$ as $(\sin^2(3x))^2$, apply the reduction formula for $\sin^2(3x)$, then apply it again to the resulting $\cos^2(6x)$ term."
 >}}
 
-### Use half-angle formulas to find exact values.
+### Use half-angle formulas to find exact values
 
 {{< fillin
   question="Find the exact value using a half-angle formula: $\sin\left(\tfrac{\pi}{8}\right)$."

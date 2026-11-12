@@ -193,7 +193,10 @@
    gives KaTeX's absolutely positioned MathML layer a containing block inside
    the scroll box (the table note below); the block padding keeps a
    fraction's bars and an italic's overhang from being clipped. */
-.content .katex.ap-katex-wide {
+/* Where punctuation follows the formula, the script puts the class on the
+   two together — the `.ap-math-glue` span — so the period scrolls with the
+   formula's end and is not left alone on the line under the block. */
+.content .ap-katex-wide {
   display: block;
   position: relative;
   box-sizing: border-box;
@@ -226,6 +229,32 @@ th .katex {
    render hook wraps that one inline shape (layouts/_markup). */
 .ap-math-keep {
   white-space: nowrap;
+}
+
+/* The punctuation typed straight after an inline formula stays on the
+   formula's line. A browser may break between an inline-block and the text
+   after it, and every piece of a KaTeX formula is one, so "…is $x$." could
+   put the period alone on the next line. The templates set the formula and
+   its punctuation in one `.ap-math-glue` span (layouts/_markup says how),
+   and nothing inside it wraps — except where the formula itself could
+   always wrap: between its pieces, after an operator. Every inline formula
+   carries a <wbr> at each of those places, hidden everywhere (so a formula
+   in a table cell, or a number in scientific notation, still never breaks)
+   and shown only here, where it gives the formula back the breaks the
+   no-wrap box took. A long formula still wraps on a phone; only its last
+   piece holds the period. */
+.katex wbr {
+  display: none;
+}
+.ap-math-glue {
+  white-space: nowrap;
+}
+.ap-math-glue > .katex wbr {
+  display: inline;
+}
+td .ap-math-glue > .katex wbr,
+th .ap-math-glue > .katex wbr {
+  display: none;
 }
 
 /* Respect users who ask for less motion (WCAG 2.3.3). */

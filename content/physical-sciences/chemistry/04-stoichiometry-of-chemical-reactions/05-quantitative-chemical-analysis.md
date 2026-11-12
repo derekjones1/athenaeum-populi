@@ -240,7 +240,7 @@ and the empirical formula for polyethylene is CH₂.
 >}}
 
 {{< fillin
-  question="A sample of solid calcium hydroxide, Ca(OH)₂, is allowed to stand in water until a saturated solution is formed. A titration of 75.00 mL of this solution with $5.00 \times 10^{-2}$ *M* HCl requires 36.6 mL of the acid to reach the end point. $\ce{Ca(OH)2(aq) + 2HCl(aq) -> CaCl2(aq) + 2H2O(l)}$. What is the molarity? Enter the molarity in mol/L."
+  question="A sample of solid calcium hydroxide, Ca(OH)₂, is allowed to stand in water until a saturated solution is formed. A titration of 75.00 mL of this solution with $5.00 \times 10^{-2}$ *M* HCl requires 36.6 mL of the acid to reach the end point. $\ce{Ca(OH)2(aq) + 2HCl(aq) -> CaCl2(aq) + 2H2O(l)}$. What is the molarity? Enter the molarity of the calcium hydroxide solution in mol/L."
   answer="0.0122"
   answerForm="sig-figs:3 last-digit:0"
   answerDisplay="$0.0122\ M$"

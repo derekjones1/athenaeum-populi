@@ -639,7 +639,7 @@ $$\alpha\approx0.079741\left(\tfrac{180}{\pi}\right)\approx4.57^\circ$$
 
 ## Practice
 
-### Use sum and difference formulas for cosine.
+### Use sum and difference formulas for cosine
 
 {{< fillin
   question="Find the exact value: $\cos\left(\tfrac{\pi}{12}\right)$."
@@ -657,7 +657,7 @@ $$\alpha\approx0.079741\left(\tfrac{180}{\pi}\right)\approx4.57^\circ$$
   hint="Write the sum formula for cosine with $\alpha=x$ and $\beta=\tfrac{2\pi}{3}$, then evaluate $\cos\tfrac{2\pi}{3}$ and $\sin\tfrac{2\pi}{3}$."
 >}}
 
-### Use sum and difference formulas for sine.
+### Use sum and difference formulas for sine
 
 {{< fillin
   question="Find the exact value: $\sin\left(\tfrac{11\pi}{12}\right)$."
@@ -675,7 +675,7 @@ $$\alpha\approx0.079741\left(\tfrac{180}{\pi}\right)\approx4.57^\circ$$
   hint="Write the difference formula for sine with $\alpha=x$ and $\beta=\tfrac{3\pi}{4}$, then evaluate $\cos\tfrac{3\pi}{4}$ and $\sin\tfrac{3\pi}{4}$."
 >}}
 
-### Use sum and difference formulas for tangent.
+### Use sum and difference formulas for tangent
 
 {{< fillin
   question="Find the exact value: $\tan\left(\tfrac{19\pi}{12}\right)$."
@@ -693,7 +693,7 @@ $$\alpha\approx0.079741\left(\tfrac{180}{\pi}\right)\approx4.57^\circ$$
   hint="Recognize the right side of the difference formula for tangent, then subtract the two arguments: $\tfrac32x-\tfrac75x$."
 >}}
 
-### Use sum and difference formulas for cofunctions.
+### Use sum and difference formulas for cofunctions
 
 {{< fillin
   question="Simplify $\sec\left(\tfrac{\pi}{2}-\theta\right)$ to a single trigonometric function of $\theta$."
@@ -711,7 +711,7 @@ $$\alpha\approx0.079741\left(\tfrac{180}{\pi}\right)\approx4.57^\circ$$
   hint="Use the cofunction identity for tangent: $\tan\theta=\cot\left(\tfrac{\pi}{2}-\theta\right)$, applied to the angle $\tfrac{\pi}{2}-x$."
 >}}
 
-### Use sum and difference formulas to verify identities.
+### Use sum and difference formulas to verify identities
 
 {{< multiplechoice
   question="True or false: if $\alpha$, $\beta$, and $\gamma$ are angles in the same triangle, then $\sin(\alpha+\beta)=\sin\gamma$."
