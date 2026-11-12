@@ -123,6 +123,12 @@ stem shows it.
   section's table names the table and the section in plain words; one
   that states the observation a two-name substance turns on ("the
   formula prints no state") decides the item, whatever the run facts say.
+  **A member of a family of items whose hint differs from the others' is a
+  tell** (4.1: the one net-ionic item with no spectator ion had its own
+  wording); one sentence true of all is "Compare each species on the two
+  sides of the complete ionic equation, and remove any that appear
+  unchanged on both." A role or "if so" question standing in the open
+  after a yes/no item answers it: it goes in a `followup`.
 - **A filler keyed on a working word of the page's own stems or hints**
   (`group` where the source stems say "the following group") is a defect,
   and so is a name the MODULE prints for a key that the item's `accept`
@@ -183,6 +189,10 @@ stem shows it.
   about the source alt: open it). It prints no item's key: check each added
   item it names against that item's answer (a quoted sentence that holds
   the answer is a key printed), and each corrected value it mentions.
+- Read each equation item's stem against every OTHER item's key and
+  against the body's displays: the source's own exercises overlap (4.1: one
+  exercise's stem prints the product another asks for), and the footer
+  discloses an overlap it cannot move.
 - A Source note beside an unanswered item: could a learner work the key
   out from it (the source's value, "truncated rather than rounded")?
 - A select-the-term multiple choice under an objective heading that names

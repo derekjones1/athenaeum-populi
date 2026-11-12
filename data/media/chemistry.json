@@ -3212,6 +3212,676 @@
       "transparent": false,
       "alt": "Two pictures are shown labeled a and b. Picture a depicts a clear, colorless solution in a plastic bag being held in a person’s hand. Picture b shows a person’s hand holding a detection meter with a digital readout screen while another hand holds someone’s finger up to the end of the meter. The meter is pressed to the drop of blood that is at the end of the person’s finger.",
       "caption": "“Mixed” mass-volume units are commonly encountered in medical settings. (a) The NaCl concentration of physiological saline is 0.9% (m/v). (b) This device measures glucose levels in a sample of blood. The normal range for glucose concentration in blood (fasting) is around 70–100 mg/dL. (credit a: modification of work by “The National Guard”/Flickr; credit b: modification of work by Biswarup Ganguly)"
+    },
+    "CNX_Chem_04_00_Rocket": {
+      "source": "media/CNX_Chem_04_00_Rocket.jpg",
+      "sourceSha256": "bf67e05dbc5e6bf2f40062c88ee1eb44deb06f4325d23a166f52bf7d903c10fc",
+      "module": "m68730",
+      "kind": "photo",
+      "width": 1300,
+      "height": 642,
+      "variants": [
+        {
+          "width": 800,
+          "height": 395,
+          "file": "CNX_Chem_04_00_Rocket-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 642,
+          "file": "CNX_Chem_04_00_Rocket-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "An image is shown of a rocket that appears to have just passed through a layer of clouds as it travels skyward. A bright white light is seen in the upper right corner of the image. To the lower left appears the layer of clouds and the bottom of the rocket with fire projecting from the fuel cones at its base.",
+      "caption": "Many modern rocket fuels are solid mixtures of substances combined in carefully measured amounts and ignited to yield a thrust-generating chemical reaction. (credit: modification of work by NASA)"
+    },
+    "CNX_Chem_04_01_basehyd_img": {
+      "source": "media/CNX_Chem_04_01_basehyd_img.jpg",
+      "sourceSha256": "b0b5be59f02939d8060daec979e8886ccf6b99c708c6db175c0ad197cdc8605c",
+      "module": "m68709",
+      "kind": "photo",
+      "width": 1300,
+      "height": 142,
+      "variants": [
+        {
+          "width": 800,
+          "height": 87,
+          "file": "CNX_Chem_04_01_basehyd_img-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 142,
+          "file": "CNX_Chem_04_01_basehyd_img-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a chemical reaction. On the left side of the reaction arrow, a structural formula for a molecule is shown on the far left. It has a C atom on the left to which H atoms are bonded above, below, and to the left. To the right, another C atom is bonded which has H atoms bonded above and below. To the right, another C atom is bonded, which has a double bonded O atom above and another O atom singly bonded to the right. To the right of the singly bonded O atom, an H atom is bonded. This is followed by a plus sign and N a O H. A reaction arrow appears to the right, which is followed by another structural formula. It has a C atom on the left to which H atoms are bonded above, below, and to the left. To the right, another C atom is bonded which has H atoms bonded above and below. To the right, another C atom is bonded, which has a double bonded O atom above and another O atom singly bonded to the right. The singly bonded O atom is followed by a superscript negative sign. This is followed to the right by a plus sign, N a superscript positive sign, another plus sign, and a horizontal line segment, indicating a space for an answer to be written.",
+      "caption": ""
+    },
+    "CNX_Chem_04_01_rxn2": {
+      "source": "media/CNX_Chem_04_01_rxn2.jpg",
+      "sourceSha256": "c7035b264dd092a766f0fd8b22053e4c819d26e7a2e76a7af9d44b1c89aae50a",
+      "module": "m68709",
+      "kind": "photo",
+      "width": 975,
+      "height": 444,
+      "variants": [
+        {
+          "width": 800,
+          "height": 364,
+          "file": "CNX_Chem_04_01_rxn2-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 444,
+          "file": "CNX_Chem_04_01_rxn2-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a balanced chemical equation followed below by a representation of the equation using space-filling models. The equation reads C H subscript 4 plus 2 O subscript 2 arrow C O subscript 2 plus 2 H subscript 2 O. Under the C H subscript 4, the molecule is shown with a central black sphere, representing a C atom, to which 4 smaller white spheres, representing H atoms, are distributed evenly around. All four H atoms are bonded to the central black C atom. This is followed by a plus sign. Under the 2 O subscript 2, two molecules are shown. The molecules are each composed of two red spheres bonded together. The red spheres represent O atoms. To the right of an arrow and under the C O subscript 2, appears a single molecule with a black central sphere with two red spheres bonded to the left and right. Following a plus sign and under the 2 H subscript 2 O, are two molecules, each with a central red sphere and two smaller white spheres attached to the lower right and lower left sides of the central red sphere. Note that in space filling models of molecules, spheres appear slightly compressed in regions where there is a bond between two atoms.",
+      "caption": "The reaction between methane and oxygen to yield carbon dioxide and water (shown at bottom) may be represented by a chemical equation using formulas (top)."
+    },
+    "CNX_Chem_04_01_rxn3": {
+      "source": "media/CNX_Chem_04_01_rxn3.jpg",
+      "sourceSha256": "c06c7023401e997dda9c9724abcb454399bb05a7c145305bc9ea0e056fcb63d2",
+      "module": "m68709",
+      "kind": "photo",
+      "width": 1300,
+      "height": 504,
+      "variants": [
+        {
+          "width": 800,
+          "height": 310,
+          "file": "CNX_Chem_04_01_rxn3-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 504,
+          "file": "CNX_Chem_04_01_rxn3-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image has a left side, labeled, “Mixture before reaction” separated by a vertical dashed line from right side labeled, “Mixture after reaction.” On the left side of the figure, two types of molecules are illustrated with space-filling models. Six of the molecules have only two red spheres bonded together. Three of the molecules have four small white spheres evenly distributed about and bonded to a central, larger black sphere. On the right side of the dashed vertical line, two types of molecules which are different from those on the left side are shown. Six of the molecules have a central red sphere to which smaller white spheres are bonded. The white spheres are not opposite each other on the red atoms, giving the molecule a bent shape or appearance. The second molecule type has a central black sphere to which two red spheres are attached on opposite sides, resulting in a linear shape or appearance. Note that in space filling models of molecules, spheres appear slightly compressed in regions where there is a bond between two atoms. On each side of the dashed line, twelve red, three black, and twelve white spheres are present.",
+      "caption": "Regardless of the absolute numbers of molecules involved, the ratios between numbers of molecules of each species that react (the reactants) and molecules of each species that form (the products) are the same and are given by the chemical reaction equation."
+    },
+    "CNX_Chem_04_02_Citrus": {
+      "source": "media/CNX_Chem_04_02_Citrus.jpg",
+      "sourceSha256": "00441ac17dc91ddfc5b9513867c1649cd1bb740b43cce62608841a01455d3be3",
+      "module": "m68710",
+      "kind": "photo",
+      "width": 650,
+      "height": 579,
+      "variants": [
+        {
+          "width": 650,
+          "height": 579,
+          "file": "CNX_Chem_04_02_Citrus-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure contains two images, each with an associated structural formula provided in the lower left corner of the image. The first image is a photograph of a variety of thinly sliced, circular cross sections of citrus fruits ranging in color for green to yellow, to orange and reddish-orange. The slices are closely packed on a white background. The structural formula with this picture shows a central chain of five C atoms. The leftmost C atom has an O atom double bonded above and to the left and a singly bonded O atom below and to the left. This single bonded O atom has an H atom indicated in red on its left side which is highlighted in pink. The second C atom moving to the right has H atoms bonded above and below. The third C atom has a single bonded O atom above which has an H atom on its right. This third C atom has a C atom bonded below it which has an O atom double bonded below and to the left and a singly bonded O atom below and to the right. An H atom appears in red and is highlighted in pink to the right of the singly bonded O atom. The fourth C atom has H atoms bonded above and below. The fifth C atom is at the right end of the structure. It has an O atom double bonded above and to the right and a singly bonded O atom below and to the right. This single bonded O atom has a red H atom on its right side which is highlighted in pink. The second image is a photograph of bottles of vinegar. The bottles are labeled, “Balsamic Vinegar,” and appear to be clear and colorless. The liquid in this bottle appears to be brown. The structural formula that appears with this image shows a chain of two C atoms. The leftmost C atom has H atoms bonded above, below, and to the left. The C atom on the right has a doubly bonded O atom above and to the right and a singly bonded O atom below and to the right. This O atom has an H atom bonded to its right which is highlighted in pink.",
+      "caption": "(a) Fruits such as oranges, lemons, and grapefruit contain the weak acid citric acid. (b) Vinegars contain the weak acid acetic acid. (credit a: modification of work by Scott Bauer; credit b: modification of work by Brücke-Osteuropa/Wikimedia Commons)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_04_02_HClsoln": {
+      "source": "media/CNX_Chem_04_02_HClsoln.jpg",
+      "sourceSha256": "bb45877f19254ef7137ebfee5a149ca51d045482b8430504ed0575be7825f2be",
+      "module": "m68710",
+      "kind": "photo",
+      "width": 975,
+      "height": 554,
+      "variants": [
+        {
+          "width": 800,
+          "height": 454,
+          "file": "CNX_Chem_04_02_HClsoln-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 554,
+          "file": "CNX_Chem_04_02_HClsoln-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows two flasks, labeled a and b. The flasks are both sealed with stoppers and are nearly three-quarters full of a liquid. Flask a is labeled H C l followed by g in parentheses. In the liquid there are approximately twenty space-filling molecular models composed of one red sphere and two smaller attached white spheres. The label H subscript 2 O followed by a q in parentheses is connected with a line to one of these models. In the space above the liquid in the flask, four space filling molecular models composed of one larger green sphere to which a smaller white sphere is bonded are shown. To one of these models, the label H C l followed by g in parentheses is attached with a line segment. An arrow is drawn from the space above the liquid pointing down into the liquid below. Flask b is labeled H subscript 3 O superscript positive sign followed by a q in parentheses. This is followed by a plus sign and C l superscript negative sign which is also followed by a q in parentheses. In this flask, no molecules are shown in the open space above the liquid. A label, C l superscript negative sign followed by a q in parentheses, is connected with a line segment to a green sphere. This sphere is surrounded by four molecules composed each of one red sphere and two white smaller spheres. A few of these same molecules appear separate from the green spheres in the liquid. A line segment connects one of them to the label H subscript 2 O which is followed by l in parentheses. There are a few molecules formed from one central larger red sphere to which three smaller white spheres are bonded. A line segment is drawn from one of these to the label H subscript 3 O superscript positive sign, followed by a q in parentheses.",
+      "caption": "When hydrogen chloride gas dissolves in water, (a) it reacts as an acid, transferring protons to water molecules to yield (b) hydronium ions (and solvated chloride ions).",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_04_02_LeadIodide": {
+      "source": "media/CNX_Chem_04_02_LeadIodide.jpg",
+      "sourceSha256": "82c0984603fd9298db9ca501f5280b9b686c14668facd9c2df5bcb8b463166d8",
+      "module": "m68710",
+      "kind": "photo",
+      "width": 650,
+      "height": 712,
+      "variants": [
+        {
+          "width": 650,
+          "height": 712,
+          "file": "CNX_Chem_04_02_LeadIodide-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A photograph is shown of a yellow green opaque substance swirled through a clear, colorless liquid in a test tube.",
+      "caption": "A precipitate of PbI 2 forms when solutions containing Pb 2+ and I − are mixed. (credit: Der Kreole/Wikimedia Commons)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_04_02_ammonia": {
+      "source": "media/CNX_Chem_04_02_ammonia.jpg",
+      "sourceSha256": "18b981cd022168b5558b1485291d4b5c7d56e57e21373d22e170b98f51d1c973",
+      "module": "m68710",
+      "kind": "photo",
+      "width": 975,
+      "height": 316,
+      "variants": [
+        {
+          "width": 800,
+          "height": 259,
+          "file": "CNX_Chem_04_02_ammonia-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 316,
+          "file": "CNX_Chem_04_02_ammonia-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photograph shows a large agricultural tractor in a field pulling a field sprayer and a large, white cylindrical tank which is labeled “Caution Ammonia.”",
+      "caption": "Ammonia is a weak base used in a variety of applications. (a) Pure ammonia is commonly applied as an agricultural fertilizer. (b) Dilute solutions of ammonia are effective household cleansers. (credit a: modification of work by National Resources Conservation Service; credit b: modification of work by pat00139)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_04_03_airbag": {
+      "source": "media/CNX_Chem_04_03_airbag.jpg",
+      "sourceSha256": "72885a1730b91946ca6e4ee42386b08e9afc439ff73b1eb8bfa6a0b073d489cb",
+      "module": "m68713",
+      "kind": "photo",
+      "width": 650,
+      "height": 488,
+      "variants": [
+        {
+          "width": 650,
+          "height": 488,
+          "file": "CNX_Chem_04_03_airbag-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photograph shows the inside of an automobile from the driver’s side area. The image shows inflated airbags positioned just in front of the driver’s and passenger’s seats and along the length of the passenger side over the windows. A large, round airbag covers the steering wheel.",
+      "caption": "Airbags deploy upon impact to minimize serious injuries to passengers. (credit: Jon Seidman)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_04_03_etheneBr_img": {
+      "source": "media/CNX_Chem_04_03_etheneBr_img.jpg",
+      "sourceSha256": "ac387f5446130c878f67d3ee850594139e3c00e26cdcca56b6bde4f3d1788e56",
+      "module": "m68713",
+      "kind": "photo",
+      "width": 1300,
+      "height": 193,
+      "variants": [
+        {
+          "width": 800,
+          "height": 118,
+          "file": "CNX_Chem_04_03_etheneBr_img-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 193,
+          "file": "CNX_Chem_04_03_etheneBr_img-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure includes two structural formulas. It reads, “The number of moles and the mass of,” which is followed by a structure with two C atoms bonded with a single horizontal at the center. Both C atoms have H atoms bonded above and below. The C atom to the left has a B r atom bonded to its left. The C atom to the right has a B r atom bonded to its right. Following this structure, the figure reads, “formed by the reaction of 12.85 g of,” which is followed by a structure with two C atoms connected with a horizontal double bond. The C atom to the left has H atoms bonded above and to the left and below and to the left. The C atom to the right has H atoms bonded above and to the right and below and to the right. The figure ends with, “with an excess of B r subscript 2.”",
+      "caption": ""
+    },
+    "CNX_Chem_04_03_ethene_img": {
+      "source": "media/CNX_Chem_04_03_ethene_img.jpg",
+      "sourceSha256": "dabb296a4c3aa8cfcc949c2e8ecf469b3d5d0d397dced567f4cb2264c7adcf72",
+      "module": "m68713",
+      "kind": "photo",
+      "width": 1300,
+      "height": 142,
+      "variants": [
+        {
+          "width": 800,
+          "height": 87,
+          "file": "CNX_Chem_04_03_ethene_img-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 142,
+          "file": "CNX_Chem_04_03_ethene_img-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure includes two structural formulas. It reads, “The number of moles and the mass of,” which is followed by a structure with two C atoms connected with a horizontal double bond at the center. The C atom to the left has H atoms bonded above and to the left and below and to the left. The C atom to the right has H atoms bonded above and to the right and below and to the right. Following this structure, the figure reads, “required to react with H subscript 2 O to produce 9.55 g of,” which is followed by a structure with two C atoms connected with a horizontal single bond. The C atom to the left has H atoms bonded above, to the left, and below. The C atom to the right has H atoms bonded above and below. To the right, an O atom forms a single bond with the C atom. A single H atom is bonded to the right side of the O atom.",
+      "caption": ""
+    },
+    "CNX_Chem_04_03_flowchart": {
+      "source": "media/CNX_Chem_04_03_flowchart.jpg",
+      "sourceSha256": "9fd68160495d1e59693feeffe1380a8c5ac43f93eb33c861a3500896ec565115",
+      "module": "m68713",
+      "kind": "photo",
+      "width": 1300,
+      "height": 796,
+      "variants": [
+        {
+          "width": 800,
+          "height": 490,
+          "file": "CNX_Chem_04_03_flowchart-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 796,
+          "file": "CNX_Chem_04_03_flowchart-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This flowchart shows 10 rectangles connected by double headed arrows. To the upper left, a rectangle is shaded lavender and is labeled, “Volume of pure substance A.” This rectangle is followed by a horizontal double headed arrow labeled, “Density.” It connects to a second rectangle which is shaded yellow and is labeled, “Mass of A.” This rectangle is followed by a double headed arrow which is labeled, “Molar Mass,” that connects to a third rectangle which is shaded pink and is labeled, “Moles of A.” To the left of this rectangle is a horizontal double headed arrow labeled, “Molarity,” which connects to a lavender rectangle which is labeled, “Volume of solution A.” The pink, “Moles of A,” rectangle is also connected with a double headed arrow below and to the left. This arrow is labeled “Avogadro’s number.” It connects to a green shaded rectangle that is labeled, “Number of particles of A.” To the right of the pink “Moles of A,” rectangle is a horizontal double headed arrow which is labeled, “Stoichiometric factor.” It connects to a second pink rectangle which is labeled, “Moles of B.” A double headed arrow which is labeled, “Molar mass,” extends from the top of this rectangle above and to the right to a yellow shaded rectangle labeled, “Mass of B.” A horizontal double headed arrow which is labeled, “Density” links to a lavender rectangle labeled, “Volume of substance B,” to the right. A horizontal double headed arrow labeled, “Molarity,” extends right to the of the pink “Moles of B” rectangle. This arrow connects to a lavender rectangle that is labeled, “Volume of substance B.” Another double headed arrow extends below and to the right of the pink “Moles of B” rectangle. This arrow is labeled “Avogadro’s number,” and it extends to a green rectangle which is labeled, “Number of particles of B.”",
+      "caption": "The flowchart depicts the various computational steps involved in most reaction stoichiometry calculations."
+    },
+    "CNX_Chem_04_03_iodine": {
+      "source": "media/CNX_Chem_04_03_iodine.jpg",
+      "sourceSha256": "714aef788ed0e4917d28ede1ca99f74850df7d650adc3718d082cac945b50cb5",
+      "module": "m68713",
+      "kind": "photo",
+      "width": 975,
+      "height": 182,
+      "variants": [
+        {
+          "width": 800,
+          "height": 149,
+          "file": "CNX_Chem_04_03_iodine-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 182,
+          "file": "CNX_Chem_04_03_iodine-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows three photos with an arrow leading from one to the next. The first photo shows a small pile of iodine and aluminum on a white surface. The second photo shows a small amount of purple smoke coming from the pile. The third photo shows a large amount of purple and gray smoke coming from the pile.",
+      "caption": "Aluminum and iodine react to produce aluminum iodide. The heat of the reaction vaporizes some of the solid iodine as a purple vapor. (credit: modification of work by Mark Ott)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_04_03_map2_img": {
+      "source": "media/CNX_Chem_04_03_map2_img.jpg",
+      "sourceSha256": "5304e62463a90aa9ba7a5abb84b7b0d1d3fdb6e10951aca4d9c9a971f6fa8906",
+      "module": "m68713",
+      "kind": "photo",
+      "width": 1000,
+      "height": 444,
+      "variants": [
+        {
+          "width": 800,
+          "height": 355,
+          "file": "CNX_Chem_04_03_map2_img-800.webp"
+        },
+        {
+          "width": 1000,
+          "height": 444,
+          "file": "CNX_Chem_04_03_map2_img-1000.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows four rectangles. The first is shaded yellow and is labeled, “Mass of M g ( O H ) subscript 2.” This rectangle is followed by an arrow pointing right to a second rectangle which is shaded pink and is labeled, “Moles of M g ( O H ) subscript 2.” This rectangle is followed by an arrow pointing right to a third rectangle which is shaded pink and is labeled, “Moles of N a O H.” This rectangle is followed by an arrow pointing right to a fourth rectangle which is shaded yellow and is labeled, “Mass of N a O H.”",
+      "caption": ""
+    },
+    "CNX_Chem_04_03_map3_img": {
+      "source": "media/CNX_Chem_04_03_map3_img.jpg",
+      "sourceSha256": "ffc4e32070dd87c0be07ef91d6c128ce3a09ffae74a247030a2dab08578ae3a5",
+      "module": "m68713",
+      "kind": "photo",
+      "width": 1000,
+      "height": 444,
+      "variants": [
+        {
+          "width": 800,
+          "height": 355,
+          "file": "CNX_Chem_04_03_map3_img-800.webp"
+        },
+        {
+          "width": 1000,
+          "height": 444,
+          "file": "CNX_Chem_04_03_map3_img-1000.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows four rectangles. The first is shaded yellow and is labeled, “Mass of C subscript 8 H subscript 18.” This rectangle is followed by an arrow pointing right to a second rectangle which is shaded pink and is labeled, “Moles of C subscript 8 H subscript 18.” This rectangle is followed by an arrow pointing right to a third rectangle which is shaded pink and is labeled, “Moles of O subscript 2.” This rectangle is followed by an arrow pointing right to a fourth rectangle which is shaded yellow and is labeled, “Mass of O subscript 2.”",
+      "caption": ""
+    },
+    "CNX_Chem_04_03_moleratio1_img": {
+      "source": "media/CNX_Chem_04_03_moleratio1_img.jpg",
+      "sourceSha256": "6869be0bff4a64a7734b14789490cae262a73804482756b33f2d9a8f9fef780d",
+      "module": "m68713",
+      "kind": "photo",
+      "width": 650,
+      "height": 126,
+      "variants": [
+        {
+          "width": 650,
+          "height": 126,
+          "file": "CNX_Chem_04_03_moleratio1_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows two pink rectangles. The first is labeled, “Moles of A l.” This rectangle is followed by an arrow pointing right to a second rectangle labeled, “Moles of I subscript 2.”",
+      "caption": ""
+    },
+    "CNX_Chem_04_03_moleratio2_img": {
+      "source": "media/CNX_Chem_04_03_moleratio2_img.jpg",
+      "sourceSha256": "1ca4e281ca896068b748b2ef1510099f477b34be4a8f4a705c392e195791511d",
+      "module": "m68713",
+      "kind": "photo",
+      "width": 1000,
+      "height": 136,
+      "variants": [
+        {
+          "width": 800,
+          "height": 109,
+          "file": "CNX_Chem_04_03_moleratio2_img-800.webp"
+        },
+        {
+          "width": 1000,
+          "height": 136,
+          "file": "CNX_Chem_04_03_moleratio2_img-1000.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows two pink rectangles. The first is labeled, “Moles of C subscript 3 H subscript 8.” This rectangle is followed by an arrow pointing right to a second rectangle labeled, “Moles of C O subscript 2.”",
+      "caption": ""
+    },
+    "CNX_Chem_04_04_CuAgNO3": {
+      "source": "media/CNX_Chem_04_04_CuAgNO3.jpg",
+      "sourceSha256": "3fba35056c6d311cb6bdc78e1f78c26a65b88e1613669c0bea60187f2e811ff1",
+      "module": "m68710",
+      "kind": "photo",
+      "width": 975,
+      "height": 232,
+      "variants": [
+        {
+          "width": 800,
+          "height": 190,
+          "file": "CNX_Chem_04_04_CuAgNO3-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 232,
+          "file": "CNX_Chem_04_04_CuAgNO3-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure contains three photographs. In a, a coiled copper wire is shown beside a test tube filled with a clear, colorless liquid. In b, the wire has been inserted into the test tube with the clear, colorless liquid. In c, the test tube contains a light blue liquid and the coiled wire appears to have a fuzzy silver gray coating.",
+      "caption": "(a) A copper wire is shown next to a solution containing silver(I) ions. (b) Displacement of dissolved silver ions by copper ions results in (c) accumulation of gray-colored silver metal on the wire and development of a blue color in the solution, due to dissolved copper ions. (credit: modification of work by Mark Ott)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_04_04_GreenChem": {
+      "source": "media/CNX_Chem_04_04_GreenChem.jpg",
+      "sourceSha256": "d8ff735d94b5fde6206591a869fee408efd03bda9cf1f279ea8ed931a911d0e7",
+      "module": "m68714",
+      "kind": "photo",
+      "width": 1200,
+      "height": 1062,
+      "variants": [
+        {
+          "width": 800,
+          "height": 708,
+          "file": "CNX_Chem_04_04_GreenChem-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 1062,
+          "file": "CNX_Chem_04_04_GreenChem-1200.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure is labeled, “a,” and, “b.” Part a shows an open bottle of ibuprofen and a small pile of ibuprofen tablets beside it. Part b shows a reaction along with line structures. The first line structure looks like a diagonal line pointing down and to the right, then up and to the right and then down and to the right. At this point it connects to a hexagon with alternating double bonds. At the first trough there is a line that points straight down. From this structure, there is an arrow pointing downward. The arrow is labeled, “H F,” on the left and “( C H subscript 3 C O ) subscript 2 O,” on the right. The next line structure looks exactly like the first line structure, but it has a line angled down and to the right from the lower right point of the hexagon. This line is connected to another line which points straight down. Where these two lines meet, there is a double bond to an O atom. There is another arrow pointing downward, and it is labeled, “H subscript 2, Raney N i.” The next structure looks very similar to the second, previous structure, except in place of the double bonded O, there is a singly bonded O H group. There is a final reaction arrow pointing downward, and it is labeled, “C O, [ P d ].” The final structure is similar to the third, previous structure except in place of the O H group, there is another line that points down and to the right to an O H group. At these two lines, there is a double bonded O.",
+      "caption": "(a) Ibuprofen is a popular nonprescription pain medication commonly sold as 200 mg tablets. (b) The BHC process for synthesizing ibuprofen requires only three steps and exhibits an impressive atom economy. (credit a: modification of work by Derrick Coetzee)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_04_04_limiting": {
+      "source": "media/CNX_Chem_04_04_limiting.jpg",
+      "sourceSha256": "b6f180d88e9f3a9e103ef5b6ca3c5a7bf1260dbaee5711816236ca5cb1f6534d",
+      "module": "m68714",
+      "kind": "photo",
+      "width": 1200,
+      "height": 545,
+      "variants": [
+        {
+          "width": 800,
+          "height": 363,
+          "file": "CNX_Chem_04_04_limiting-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 545,
+          "file": "CNX_Chem_04_04_limiting-1200.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The figure shows a space-filling molecular models reacting. There is a reaction arrow pointing to the right in the middle. To the left of the reaction arrow there are three molecules each consisting of two green spheres bonded together. There are also five molecules each consisting of two smaller, white spheres bonded together. Above these molecules is the label, “Before reaction,” and below these molecules is the label, “6 H subscript 2 and 4 C l subscript 2.” To the right of the reaction arrow, there are eight molecules each consisting of one green sphere bonded to a smaller white sphere. There are also two molecules each consisting of two white spheres bonded together. Above these molecules is the label, “After reaction,” and below these molecules is the label, “8 H C l and 2 H subscript 2.”",
+      "caption": "When H 2 and Cl 2 are combined in nonstoichiometric amounts, one of these reactants will limit the amount of HCl that can be produced. This illustration shows a reaction in which hydrogen is present in excess and chlorine is the limiting reactant."
+    },
+    "CNX_Chem_04_04_saccharin_img": {
+      "source": "media/CNX_Chem_04_04_saccharin_img.jpg",
+      "sourceSha256": "ea9b81c1b494d06cfba65e3dce35e0bf852b3449cad83c85c42805a2c9e4cfc5",
+      "module": "m68714",
+      "kind": "photo",
+      "width": 325,
+      "height": 255,
+      "variants": [
+        {
+          "width": 325,
+          "height": 255,
+          "file": "CNX_Chem_04_04_saccharin_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A structural formula is shown. A hexagonal ring of 6 C atoms with alternating double bonds has single H atoms bonded to four consecutive C atoms on the left side of the ring. The two C atoms on the right side of the ring, which are joined by a double bond, are also included in a 5 atom ring to their right. The C atom of this pair that is nearest the top of the structure is singly bonded to a C atom at the top of the 5 atom ring which has an O atom double bonded above. An N atom is singly bonded to the lower right of this same C atom. The N atom has an H atom bonded to its right and to its lower left, it is bonded to an S atom. The S atom is connected to the second C atom that is shared in the two rings. The S atom is also double bonded to an O atom to its lower right and is double bonded to a second O atom directly below it.",
+      "caption": ""
+    },
+    "CNX_Chem_04_04_sandwich": {
+      "source": "media/CNX_Chem_04_04_sandwich.jpg",
+      "sourceSha256": "b4c45855171ff69185c2360f05d662aa95d495d7602d386615b8f934cf0b8cce",
+      "module": "m68714",
+      "kind": "photo",
+      "width": 1300,
+      "height": 719,
+      "variants": [
+        {
+          "width": 800,
+          "height": 442,
+          "file": "CNX_Chem_04_04_sandwich-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 719,
+          "file": "CNX_Chem_04_04_sandwich-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure has three rows showing the ingredients needed to make a sandwich. The first row reads, “1 sandwich = 2 slices of bread + 1 slice of cheese.” Two slices of bread and one slice of cheese are shown. The second row reads, “Provided with: 28 slices of bread + 11 slices of cheese.” There are 28 slices of bread and 11 slices of cheese shown. The third row reads, “We can make: 11 sandwiches + 6 slices of bread left over.” 11 sandwiches are shown with six extra slices of bread.",
+      "caption": "Sandwich making can illustrate the concepts of limiting and excess reactants."
+    },
+    "CNX_Chem_04_05_combmap_img": {
+      "source": "media/CNX_Chem_04_05_combmap_img.jpg",
+      "sourceSha256": "01b80fef5319da4774f724491ab5a35e06d981e7a118a242a2b4784a86e36944",
+      "module": "m68716",
+      "kind": "photo",
+      "width": 1000,
+      "height": 753,
+      "variants": [
+        {
+          "width": 800,
+          "height": 602,
+          "file": "CNX_Chem_04_05_combmap_img-800.webp"
+        },
+        {
+          "width": 1000,
+          "height": 753,
+          "file": "CNX_Chem_04_05_combmap_img-1000.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows two flowcharts. The first row is a single flow chart. In this row, a rectangle at the left is shaded yellow and is labeled, “Mass of C O subscript 2.” This rectangle is followed by an arrow pointing right to a second rectangle. The arrow is labeled, “Molar mass.” The second rectangle is shaded pink and is labeled, “Moles of C O subscript 2.” This rectangle is followed by an arrow pointing right to a third rectangle. The arrow is labeled, “Stoichiometric factor.” The third rectangle is shaded pink and is labeled, “Moles of C.” This rectangle is followed by an arrow labeled “Molar mass” which points right to a fourth rectangle. The fourth rectangle is shaded yellow and is labeled “Mass of C.” Below, is a second flowchart. It begins with a yellow shaded rectangle on the left which is labeled, “Mass of H subscript 2 O.” This rectangle is followed by an arrow labeled, “Molar mass,” which points right to a second rectangle. The second rectangle is shaded pink and is labeled, “Moles of H subscript 2 O.” This rectangle is followed by an arrow pointing right to a third rectangle. The arrow is labeled, “Stoichiometric factor.” The third rectangle is shaded pink and is labeled “Moles of H.” This rectangle is followed to the right by an arrow labeled, “Molar mass,” which points to a fourth rectangle. The fourth rectangle is shaded yellow and is labeled “Mass of H.” An arrow labeled, “Sample mass” points down beneath this rectangle to a green shaded rectangle. This rectangle is labeled, “Percent composition.” An arrow extends beneath the pink rectangle labeled, “Moles of H,” to a green shaded rectangle labeled, “C to H mole ratio.” Beneath this rectangle, an arrow extends to a second green shaded rectangle which is labeled, “Empirical formula.”",
+      "caption": ""
+    },
+    "CNX_Chem_04_05_combustion": {
+      "source": "media/CNX_Chem_04_05_combustion.jpg",
+      "sourceSha256": "ae3909f38963e91d767158cbcba55b54bbaa1cb26dd3fb3f9ad2a725a226af99",
+      "module": "m68716",
+      "kind": "photo",
+      "width": 1300,
+      "height": 321,
+      "variants": [
+        {
+          "width": 800,
+          "height": 197,
+          "file": "CNX_Chem_04_05_combustion-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 321,
+          "file": "CNX_Chem_04_05_combustion-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows an arrow pointing from O subscript 2 into a tube that leads into a vessel containing a red material, labeled “Sample.” This vessel is inside a blue container with a red inner lining which is labeled “Furnace.” An arrow points from the tube to the right into the vessel above the red sample material. An arrow leads out of this vessel through a tube into a second vessel outside the furnace. An line points from this tube to a label above the diagram that reads “C O subscript 2, H subscript 2 O, O subscript 2, and other gases.” Many small green spheres are visible in the second vessel which is labeled below, “H subscript 2 O absorber such as M g ( C l O subscript 4 ) subscript 2.” An arrow points to the right through the vessel, and another arrow points right heading out of the vessel through a tube into a third vessel. The third vessel contains many small blue spheres. It is labeled “C O subscript 2 absorber such as N a O H.” An arrow points right through this vessel, and a final arrow points out of a tube at the right end of the vessel. Outside the end of this tube at the end of the arrow is the label, “O subscript 2 and other gases.”",
+      "caption": "This schematic diagram illustrates the basic components of a combustion analysis device for determining the carbon and hydrogen content of a sample."
+    },
+    "CNX_Chem_04_05_filter": {
+      "source": "media/CNX_Chem_04_05_filter.jpg",
+      "sourceSha256": "67ae916dc9d76336c9d7525670b4c80b0db8f5dd23ec9314a864cd653a879465",
+      "module": "m68716",
+      "kind": "photo",
+      "width": 650,
+      "height": 1053,
+      "variants": [
+        {
+          "width": 650,
+          "height": 1053,
+          "file": "CNX_Chem_04_05_filter-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A photo is shown of a flask and funnel used for filtration. The flask contains a slightly opaque liquid filtrate with a slight yellow tint. A funnel, which contains a bright yellow and orange material, sits atop the flask. The flask is held in place by a clamp and is connected to a vacuum line. The connection between the funnel and flask is sealed with a rubber bung or gasket.",
+      "caption": "Precipitate may be removed from a reaction mixture by filtration.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_04_05_map7_img": {
+      "source": "media/CNX_Chem_04_05_map7_img.jpg",
+      "sourceSha256": "280cdd683ada621c937c31c020c5e4d6bff4b5ac7787224070f56b1641b63a8c",
+      "module": "m68716",
+      "kind": "photo",
+      "width": 1000,
+      "height": 444,
+      "variants": [
+        {
+          "width": 800,
+          "height": 355,
+          "file": "CNX_Chem_04_05_map7_img-800.webp"
+        },
+        {
+          "width": 1000,
+          "height": 444,
+          "file": "CNX_Chem_04_05_map7_img-1000.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows four rectangles. The first is shaded lavender and is labeled, “Volume of N a O H.” This rectangle is followed by an arrow pointing right which is labeled, “Molar concentration,” to a second rectangle. This second rectangle is shaded pink and is labeled, “Moles of N a O H.” This rectangle is followed by an arrow pointing right which is labeled, “Stoichiometric factor,” to a third rectangle which is shaded pink and is labeled, “Moles of H C l.” This rectangle is followed by an arrow labeled, “Solution volume,” which points right to a fourth rectangle. This fourth rectangle is shaded lavender and is labeled, “Concentration of H C l.”",
+      "caption": ""
+    },
+    "CNX_Chem_04_05_map8_img": {
+      "source": "media/CNX_Chem_04_05_map8_img.jpg",
+      "sourceSha256": "8de868a9a64fed1ae600dfb4889524cfd6ae910c75d469818b6acd99de955f67",
+      "module": "m68716",
+      "kind": "photo",
+      "width": 1000,
+      "height": 472,
+      "variants": [
+        {
+          "width": 800,
+          "height": 377,
+          "file": "CNX_Chem_04_05_map8_img-800.webp"
+        },
+        {
+          "width": 1000,
+          "height": 472,
+          "file": "CNX_Chem_04_05_map8_img-1000.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows five rectangles. The first is shaded yellow and is labeled “Mass of B a S O subscript 4.” This rectangle is followed by an arrow pointing right to a second rectangle. The arrow is labeled, “Molar mass.” The second rectangle is shaded pink and is labeled, “Moles of B a S O subscript 4.” This rectangle is followed by an arrow pointing right to a third rectangle. The arrow is labeled, “Stoichiometric factor.” This third rectangle is shaded pink and is labeled, “Moles of M g S O subscript 4.” This rectangle is followed by an arrow labeled, “Molar mass,” which points downward to a fourth rectangle. This fourth rectangle is shaded yellow and is labeled, “Mass of M g S O subscript 4.” This rectangle is followed by an arrow labeled, “Sample mass,” which points left to a fifth rectangle. This fifth rectangle is shaded lavender and is labeled, “Percent M g S O subscript 4.",
+      "caption": ""
+    },
+    "CNX_Chem_04_05_propionate_img": {
+      "source": "media/CNX_Chem_04_05_propionate_img.jpg",
+      "sourceSha256": "3958c66cbb34b3bd9921f47b4de73e67fc0d768f5e6dc543e0bb8be26140ed79",
+      "module": "m68716",
+      "kind": "photo",
+      "width": 1214,
+      "height": 158,
+      "variants": [
+        {
+          "width": 800,
+          "height": 104,
+          "file": "CNX_Chem_04_05_propionate_img-800.webp"
+        },
+        {
+          "width": 1214,
+          "height": 158,
+          "file": "CNX_Chem_04_05_propionate_img-1214.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A chemical reaction is shown. To the left, a structural formula is provided for a molecule with a 4 C atom horizontal chain involving all single bonds between the C atoms. The three C atoms to the left have H atoms bonded above and below and the left most C atom also has an H atom bonded to its left side. The fourth C atom, which is toward the right end of the structure, has a double bonded O atom above and a single bonded O atom to its right. An H atom is bonded to the right of the single bonded O atom. This structure is followed by a plus sign, then the formula C a ( O H ) subscript 2. This is followed by a reaction arrow. To the right of this arrow is a structural formula that begins C a, and in parentheses has a 4 C atom horizontal chain involving all single bonds between the C atoms. The three C atoms to the left have H atoms bonded above and below, and the left most C atom also has an H atom bonded to its left side. The fourth C atom, which is toward the right end of the structure, has a double bonded O atom above and a single bonded O atom to its right. Outside the parentheses is a subscript 2. This structure is followed by a plus sign and 2 H subscript 2 O.",
+      "caption": ""
+    },
+    "CNX_Chem_04_05_titration": {
+      "source": "media/CNX_Chem_04_05_titration.jpg",
+      "sourceSha256": "1b52048045428f1024d7d2db1991573a9376d3863ea360eb297d793977f2d4da",
+      "module": "m68716",
+      "kind": "photo",
+      "width": 975,
+      "height": 750,
+      "variants": [
+        {
+          "width": 800,
+          "height": 615,
+          "file": "CNX_Chem_04_05_titration-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 750,
+          "file": "CNX_Chem_04_05_titration-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two pictures are shown. In a, a person is shown pouring a liquid from a small beaker into a buret. The person is wearing goggles and gloves as she transfers the solution into the buret. In b, a close up view of the markings on the side of the buret is shown. The markings for 10, 15, and 20 are clearly shown with horizontal rings printed on the buret. Between each of these whole number markings, half markings are also clearly shown with horizontal line segment markings.",
+      "caption": "(a) A student fills a buret in preparation for a titration analysis. (b) A typical buret permits volume measurements to the nearest 0.01 mL. (credit a: modification of work by Mark Blaser and Matt Evans; credit b: modification of work by Mark Blaser and Matt Evans)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_14_03_FishLemon": {
+      "source": "media/CNX_Chem_14_03_FishLemon.jpg",
+      "sourceSha256": "9fe70f7dee5ca566696b82f94fedfec8565ba53869510e7b90ab66dcf31f6fd0",
+      "module": "m68710",
+      "kind": "photo",
+      "width": 1200,
+      "height": 781,
+      "variants": [
+        {
+          "width": 800,
+          "height": 520,
+          "file": "CNX_Chem_14_03_FishLemon-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 781,
+          "file": "CNX_Chem_14_03_FishLemon-1200.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "An image is shown of two fish with heads removed and skin on with lemon slices placed in the body cavity. The first line of an equation below the image reads C H subscript 3 C O O H plus N H subscript 2 C H subscript 2 C H subscript 2 C H subscript 2 C H subscript 2 N H subscript 2 arrow C H subscript 3 C O O superscript negative sign plus N H subscript 3 superscript positive sign C H subscript 2 C H subscript 2 C H subscript 2 C H subscript 2 N H subscript 2. The second line of the equation reads Acetic acid plus sign Putrescine arrow Acetate ion plus sign Putrescinium ion.",
+      "caption": "A neutralization reaction takes place between citric acid in lemons or acetic acid in vinegar, and the bases in the flesh of fish."
     }
   }
 }

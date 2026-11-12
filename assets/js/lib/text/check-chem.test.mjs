@@ -157,6 +157,179 @@ test('ions and electrons are read in an equation', () => {
   assert.equal(equation('2H2 + O2 -> 2H2O', 'H₂(g) + 1/2O₂(g) ⟶ H₂O(l)'), 'form');
 });
 
+// Chemistry 2e 4.2: the half-reaction method balances hydrogen "by adding H⁺
+// ions", and the answer key prints H₃O⁺ in some answers (4.39(b), (c), (e))
+// and H⁺ in others (4.37(d), 4.41(c)). Either notation is the module's own.
+test('H⁺ and H₃O⁺ are one hydrogen ion: H₃O⁺ is H⁺ + H₂O, and water on both sides cancels', () => {
+  const hydronium = 'H₂S(g) + Hg₂²⁺(aq) + 2H₂O(l) ⟶ 2Hg(l) + S(s) + 2H₃O⁺(aq)';
+  for (const typed of [
+    'H2S + Hg2^2+ -> 2Hg + S + 2H+',
+    'H2S + Hg2^2+ + 2H2O -> 2Hg + S + 2H3O+',
+    'H2S(g) + Hg2^2+(aq) -> 2Hg(l) + S(s) + 2H+(aq)',
+    'Hg2^2+ + H2S -> 2H+ + S + 2Hg',
+  ]) assert.equal(equation(typed, hydronium), 'correct', typed);
+  const proton = '2H₂O(l) ⟶ O₂(g) + 4H⁺(aq) + 4e⁻';
+  for (const typed of ['6H2O -> O2 + 4H3O+ + 4e-', '2H2O -> O2 + 4H+ + 4e-', '6H2O(l) -> O2(g) + 4H3O+(aq) + 4e-']) {
+    assert.equal(equation(typed, proton), 'correct', typed);
+  }
+  // 4.39(c), (e) and 4.41(c), each in the other notation.
+  assert.equal(equation('5CN- + 2ClO2 + H2O -> 5CNO- + 2Cl- + 2H+', '5CN⁻(aq) + 2ClO₂(aq) + 3H₂O(l) ⟶ 5CNO⁻(aq) + 2Cl⁻(aq) + 2H₃O⁺(aq)'), 'correct');
+  assert.equal(equation('2HBrO -> 2H+ + 2Br- + O2', '2HBrO(aq) + 2H₂O(l) ⟶ 2H₃O⁺(aq) + 2Br⁻(aq) + O₂(g)'), 'correct');
+  assert.equal(equation('Br2 + SO2 + 6H2O -> 4H3O+ + 2Br- + SO4^2-', 'Br₂(l) + SO₂(g) + 2H₂O(l) ⟶ 4H⁺(aq) + 2Br⁻(aq) + SO₄²⁻(aq)'), 'correct');
+  // Neutralization: H₃O⁺ + OH⁻ ⟶ 2H₂O is H⁺ + OH⁻ ⟶ H₂O.
+  assert.equal(equation('H+ + OH- -> H2O', 'H₃O⁺(aq) + OH⁻(aq) ⟶ 2H₂O(l)'), 'correct');
+  assert.equal(equation('H3O+ + OH- -> 2H2O', 'H⁺(aq) + OH⁻(aq) ⟶ H₂O(l)'), 'correct');
+  // Balanced in either notation, not in lowest terms.
+  for (const typed of ['12H2O -> 2O2 + 8H3O+ + 8e-', '4H2O -> 2O2 + 8H+ + 8e-']) {
+    const doubled = checkEquation(typed, proton);
+    assert.equal(doubled.status, 'form', typed);
+    assert.match(doubled.message, /smallest whole-number coefficients/, typed);
+  }
+  // The right substances, not balanced, in either notation.
+  for (const [typed, key] of [
+    ['H2S + Hg2^2+ -> Hg + S + H+', hydronium],
+    ['H2S + Hg2^2+ + H2O -> Hg + S + H3O+', hydronium],
+    ['H2O -> O2 + H3O+ + e-', proton],
+    ['H2O -> O2 + H+ + e-', proton],
+  ]) {
+    const unbalanced = checkEquation(typed, key);
+    assert.equal(unbalanced.status, 'incorrect', typed);
+    assert.match(unbalanced.message, /right substances, but the equation is not balanced/, typed);
+  }
+  // H₃O⁺ typed with the water left uncancelled on the other side is still
+  // balanced only once: an equation not balanced is not made right by the rule.
+  assert.equal(equation('2H2O -> O2 + 4H3O+ + 4e-', proton), 'incorrect');
+  assert.equal(equation('H2S + Hg2^2+ -> 2Hg + S + 2H3O+', hydronium), 'incorrect');
+  // A wrong state on the hydrogen ion is still a state the learner chose to type.
+  assert.equal(equation('2H2O(l) -> O2(g) + 4H+(s) + 4e-', proton), 'form');
+});
+
+test('only water cancels: spectator ions stay, and a net ionic equation is not the complete one', () => {
+  // Chemistry 2e 4.11(b): H⁺ is a spectator on both sides of the complete equation.
+  const complete = 'Pb²⁺(aq) + 2NO₃⁻(aq) + 2H⁺(aq) + SO₄²⁻(aq) ⟶ PbSO₄(s) + 2H⁺(aq) + 2NO₃⁻(aq)';
+  const net = 'Pb²⁺(aq) + SO₄²⁻(aq) ⟶ PbSO₄(s)';
+  assert.equal(equation('Pb2+ + 2NO3- + 2H+ + SO4^2- -> PbSO4 + 2H+ + 2NO3-', complete), 'correct');
+  assert.equal(equation('Pb2+ + 2NO3- + 2H3O+ + SO4^2- -> PbSO4 + 2H3O+ + 2NO3-', complete), 'correct');
+  for (const [typed, key] of [['Pb2+ + SO4^2- -> PbSO4', complete], ['Pb2+ + 2NO3- + 2H+ + SO4^2- -> PbSO4 + 2H+ + 2NO3-', net]]) {
+    const result = checkEquation(typed, key);
+    assert.equal(result.status, 'incorrect', typed);
+    assert.doesNotMatch(result.message ?? '', /not balanced/, 'a balanced response is never told it is not');
+  }
+  // With no hydrogen ion anywhere, water on both sides of a response is not cancelled.
+  assert.equal(equation('2Na + 3H2O -> 2NaOH + H2 + H2O', '2Na(s) + 2H₂O(l) ⟶ 2NaOH(aq) + H₂(g)'), 'incorrect');
+  // A formula is still a formula: H₃O⁺ asked as a formula is not H⁺.
+  assert.equal(formula('H+', 'H₃O⁺'), 'incorrect');
+  assert.equal(formula('H3O+', 'H⁺'), 'incorrect');
+  // Every key keeps the notation it was printed in for the lint.
+  assert.equal(chemKeyProblem('H₂S(g) + Hg₂²⁺(aq) + 2H₂O(l) ⟶ 2Hg(l) + S(s) + 2H₃O⁺(aq)', 'equation'), null);
+  assert.equal(chemKeyProblem(complete, 'equation'), null);
+});
+
+// Chemistry 2e 4.2: the half-reaction method balances with H⁺ and converts to
+// a basic solution in a last step, so a learner who stops early types the
+// right reaction in acid against a key in base (and the reverse).
+test('the right reaction balanced for the other solution is told to use the solution the question names', () => {
+  const medium = /solution the question names/;
+  const pairs = [
+    // Base keys (4.37(e), (h); 4.41(a), (b); Check Your Learning) against their acid forms.
+    ['6H₂O(l) + 2IO₃⁻(aq) + 10e⁻ ⟶ I₂(s) + 12OH⁻(aq)', '2IO3- + 12H+ + 10e- -> I2 + 6H2O'],
+    ['Cl⁻(aq) + 6OH⁻(aq) ⟶ ClO₃⁻(aq) + 3H₂O(l) + 6e⁻', 'Cl- + 3H2O -> ClO3- + 6H+ + 6e-'],
+    ['2MnO₄⁻(aq) + 3NO₂⁻(aq) + H₂O(l) ⟶ 2MnO₂(s) + 3NO₃⁻(aq) + 2OH⁻(aq)', '2MnO4- + 3NO2- + 2H+ -> 2MnO2 + 3NO3- + H2O'],
+    ['3MnO₄²⁻(aq) + 2H₂O(l) ⟶ 2MnO₄⁻(aq) + 4OH⁻(aq) + MnO₂(s)', '3MnO4^2- + 4H+ -> 2MnO4- + MnO2 + 2H2O'],
+    ['3Cl₂(aq) + 6OH⁻(aq) ⟶ 5Cl⁻(aq) + ClO₃⁻(aq) + 3H₂O(l)', '3Cl2 + 3H2O -> 5Cl- + ClO3- + 6H+'],
+    ['3Cl₂(aq) + 6OH⁻(aq) ⟶ 5Cl⁻(aq) + ClO₃⁻(aq) + 3H₂O(l)', '3Cl2 + 9H2O -> 5Cl- + ClO3- + 6H3O+'],
+    // Acid keys (4.37(d), (f), (g); 4.39(b), (c), (e); 4.41(c)) against their base forms.
+    ['2H₂O(l) ⟶ O₂(g) + 4H⁺(aq) + 4e⁻', '4OH- -> O2 + 2H2O + 4e-'],
+    ['H₂O(l) + SO₃²⁻(aq) ⟶ SO₄²⁻(aq) + 2H⁺(aq) + 2e⁻', 'SO3^2- + 2OH- -> SO4^2- + H2O + 2e-'],
+    ['8H⁺(aq) + MnO₄⁻(aq) + 5e⁻ ⟶ Mn²⁺(aq) + 4H₂O(l)', 'MnO4- + 4H2O + 5e- -> Mn2+ + 8OH-'],
+    ['H₂S(g) + Hg₂²⁺(aq) + 2H₂O(l) ⟶ 2Hg(l) + S(s) + 2H₃O⁺(aq)', 'H2S + Hg2^2+ + 2OH- -> 2Hg + S + 2H2O'],
+    ['5CN⁻(aq) + 2ClO₂(aq) + 3H₂O(l) ⟶ 5CNO⁻(aq) + 2Cl⁻(aq) + 2H₃O⁺(aq)', '5CN- + 2ClO2 + 2OH- -> 5CNO- + 2Cl- + H2O'],
+    ['2HBrO(aq) + 2H₂O(l) ⟶ 2H₃O⁺(aq) + 2Br⁻(aq) + O₂(g)', '2HBrO + 2OH- -> 2Br- + O2 + 2H2O'],
+    ['Br₂(l) + SO₂(g) + 2H₂O(l) ⟶ 4H⁺(aq) + 2Br⁻(aq) + SO₄²⁻(aq)', 'Br2 + SO2 + 4OH- -> 2Br- + SO4^2- + 2H2O'],
+  ];
+  for (const [key, typed] of pairs) {
+    const result = checkEquation(typed, key);
+    assert.equal(result.status, 'form', `${typed} against ${key}`);
+    assert.match(result.message, medium, typed);
+    assert.equal(chemKeyProblem(key, 'equation'), null, key);
+  }
+  // Doubled in the other solution: still the solution first.
+  assert.equal(checkEquation('4IO3- + 24H+ + 20e- -> 2I2 + 12H2O', pairs[0][0]).status, 'form');
+  // Never for an unbalanced response, and never correct.
+  const unbalanced = checkEquation('2IO3- + 12H+ + 10e- -> I2 + 5H2O', pairs[0][0]);
+  assert.equal(unbalanced.status, 'incorrect');
+  assert.doesNotMatch(unbalanced.message ?? '', medium);
+  // The key's own solution is still simply right.
+  assert.equal(equation('6H2O + 2IO3- + 10e- -> I2 + 12OH-', pairs[0][0]), 'correct');
+  // Neutralization holds both ions: it stays one answer in either notation, and no medium message.
+  assert.equal(equation('H+ + OH- -> H2O', 'H₃O⁺(aq) + OH⁻(aq) ⟶ 2H₂O(l)'), 'correct');
+  // Degenerate and ion-free responses get no message.
+  for (const typed of ['2H2O -> 2H2O', 'H2O -> H2O', '4OH- -> 4OH-', 'H+ -> H+']) {
+    assert.doesNotMatch(checkEquation(typed, pairs[0][0]).message ?? '', medium, typed);
+    assert.notEqual(checkEquation(typed, pairs[0][0]).status, 'correct', typed);
+  }
+  // A key with neither ion: an ionic response with OH⁻ is not a medium question.
+  const sodium = checkEquation('2Na + 2H2O -> 2Na+ + 2OH- + H2', '2Na(s) + 2H₂O(l) ⟶ 2NaOH(aq) + H₂(g)');
+  assert.equal(sodium.status, 'incorrect');
+  assert.doesNotMatch(sodium.message ?? '', medium);
+  // A net ionic equation in acid against a complete ionic key in base stays wrong, without the message:
+  // spectator ions are never cancelled.
+  const complete = '2Na⁺(aq) + 2Cl⁻(aq) + 2H₂O(l) ⟶ 2Na⁺(aq) + 2OH⁻(aq) + H₂(g) + Cl₂(g)';
+  for (const typed of ['2Cl- + 2H+ -> H2 + Cl2', '2Cl- + 2H2O -> 2OH- + H2 + Cl2']) {
+    const result = checkEquation(typed, complete);
+    assert.equal(result.status, 'incorrect', typed);
+    assert.doesNotMatch(result.message ?? '', medium, typed);
+  }
+  // H⁺ only a spectator in the key (4.11(b) complete): OH⁻ in its place is no medium question.
+  const spectator = checkEquation('Pb2+ + 2NO3- + 2OH- + SO4^2- -> PbSO4 + 2OH- + 2NO3-', 'Pb²⁺(aq) + 2NO₃⁻(aq) + 2H⁺(aq) + SO₄²⁻(aq) ⟶ PbSO₄(s) + 2H⁺(aq) + 2NO₃⁻(aq)');
+  assert.equal(spectator.status, 'incorrect');
+  assert.doesNotMatch(spectator.message ?? '', medium);
+  // Both ions in the response: no message.
+  assert.doesNotMatch(checkEquation('2IO3- + 12H+ + 10e- + OH- -> I2 + 6H2O + OH-', pairs[0][0]).message ?? '', medium);
+});
+
+test('a balanced response with other ratios is not told it is unbalanced', () => {
+  // Two ways to balance one set of substances (H₂O₂ is both oxidized and reduced).
+  const key = '2MnO₄⁻(aq) + 5H₂O₂(aq) + 6H⁺(aq) ⟶ 2Mn²⁺(aq) + 5O₂(g) + 8H₂O(l)';
+  const other = checkEquation('2MnO4- + 7H2O2 + 6H+ -> 2Mn2+ + 6O2 + 10H2O', key);
+  assert.equal(other.status, 'incorrect');
+  assert.doesNotMatch(other.message ?? '', /not balanced/);
+});
+
+// Chemistry 2e 4.37(b): the key prints the complex ion in square brackets, and
+// the same ion is written without them as often as with.
+test('brackets or parentheses around one unit of a formula are only grouping', () => {
+  const key = '[Ag(NH₃)₂]⁺(aq) + e⁻ ⟶ Ag(s) + 2NH₃(aq)';
+  for (const typed of ['[Ag(NH3)2]+ + e- -> Ag + 2NH3', 'Ag(NH3)2+ + e- -> Ag + 2NH3', 'Ag(NH3)2^+ + e- -> Ag + 2NH3', '(Ag(NH3)2)+ + e- -> Ag + 2NH3']) {
+    assert.equal(equation(typed, key), 'correct', typed);
+  }
+  assert.equal(equation('(NH4)2(Cr2O7) -> Cr2O3 + N2 + 4H2O', '(NH₄)₂Cr₂O₇(s) ⟶ Cr₂O₃(s) + N₂(g) + 4H₂O(g)'), 'correct');
+  // Only inside an equation: a formula item grades how the formula is
+  // written, and the gates' canon keeps every group.
+  assert.equal(formula('Ag(NH3)2+', '[Ag(NH₃)₂]⁺'), 'form');
+  assert.equal(formula('[Ag(NH3)2]+', '[Ag(NH₃)₂]⁺'), 'correct');
+  assert.equal(chemCanon('Ca(H2PO4)', 'formula'), 'Ca(H2PO4)');
+  assert.notEqual(chemCanon('Ca(H _2 PO _4 )', 'formula'), chemCanon('CaH₂PO₄', 'formula'));
+  assert.equal(chemCanon('[Ag(NH₃)₂]⁺', 'formula'), '(Ag(NH3)2)^+');
+  assert.equal(chemCanon('(NH₄)₂(Cr₂O₇)', 'formula'), '(NH4)2(Cr2O7)');
+  // A count on the group still multiplies it.
+  assert.equal(formula('Ag(NH3)+', '[Ag(NH₃)₂]⁺'), 'incorrect');
+  assert.equal(equation('[Ag(NH3)2]+ + e- -> Ag + NH3', key), 'incorrect');
+  // The field shows the brackets the learner typed.
+  assert.equal(previewChem('[Ag(NH3)2]+ + e- -> Ag + 2NH3', 'equation'), '[Ag(NH₃)₂]⁺ + e⁻ ⟶ Ag + 2NH₃');
+  assert.equal(previewChem('Mn3[PO4]2', 'formula'), 'Mn₃[PO₄]₂');
+  assert.equal(chemCanon('[ Ag ( NH 3 ) 2 ]^{+} ( a q ) + e^{−} ⟶ Ag ( s ) + 2 NH 3 ( a q )', 'equation'), chemCanon(key, 'equation'));
+  assert.equal(chemKeyProblem(key, 'equation'), null);
+});
+
+test('a state symbol typed in capitals is still a state symbol', () => {
+  const key = '2Na(s) + 2H₂O(l) ⟶ 2NaOH(aq) + H₂(g)';
+  assert.equal(equation('2Na(S) + 2H2O(L) -> 2NaOH(AQ) + H2(G)', key), 'correct');
+  assert.equal(equation('2Na(s) + 2H2O(l) -> 2NaOH(Aq) + H2(g)', key), 'correct');
+  assert.equal(equation('2Na(S) + 2H2O(G) -> 2NaOH(aq) + H2(g)', key), 'form');
+  assert.equal(previewChem('2Na(S) + 2H2O(L) -> 2NaOH(AQ) + H2(G)', 'equation'), '2Na(s) + 2H₂O(l) ⟶ 2NaOH(aq) + H₂(g)');
+});
+
 test('what is not an equation says how to type one', () => {
   const none = checkEquation('sodium plus water', '2Na(s) + 2H₂O(l) ⟶ 2NaOH(aq) + H₂(g)');
   assert.equal(none.status, 'incorrect');

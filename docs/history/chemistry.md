@@ -1521,6 +1521,15 @@ word for word as `run.md` had them.
 
 From `run.md`, "What a chapter cost".
 
+Chapter 4 (five sections, 182 items; wall time not measured): authors 276k,
+362k, 323k, 308k, and 300k tokens each across three rounds (4.1 to 4.5);
+checkers 187k, 257k, 177k, 170k, and 178k; claim pass 190k; consistency
+reader 286k; five rendered-page readers 148k, 160k, 148k, 146k, and 196k;
+fix checker 206k; blind solver 177k. Before the wave: gates agent 413k (two
+later tasks included), grader agent 200k (three tasks), band agent 129k.
+Hardening agent 192k. Clerks: 90k (run facts), 207k (errata), 81k
+(lessons).
+
 Chapter 3 (four sections, 138 items; wall time not measured): authors 336k, 287k, 290k, and 273k tokens each
 across all rounds (3.1 to 3.4); checkers 226k, 173k, 197k, and 174k; the
 gate-teaching agent 157k; claim pass 171k; consistency reader 271k; three
@@ -1991,6 +2000,187 @@ collision was going to recur. The suite now serves on 1319
 (`playwright.config.mjs`; a documentation test holds the two ports apart),
 and a server left on 1315 is harmless.
 
+## Chapter 4 (November 12, 2026)
+
+Derek: "Let's continue and author chapter 4 of chemistry". One run,
+Sections 4.1 to 4.5 (modules m68709, m68710, m68713, m68714, m68716; the
+landing is m68730). HEAD at the start was e667bcbd with a green baseline;
+the last erratum was 3001, so the run began at 3002. The run paused once at
+the usage limit, in close-out after the blind solve, and resumed in the same
+session; the two agents still running at the pause (the hardening agent and
+the lessons clerk) had finished, and their work was read on disk before it
+was used.
+
+### Shape
+
+Prep: baseline green; 30 images vendored; PDF indexes 169 to 218 (the
+folio = index − 14 offset holds) and key pages 1139 and 1140 — but the
+parent first rendered only to index 204, taking the last printed folio for
+an index, and the 4.1 author worked without the printed exercise pages
+until the parent rendered 205 to 218; inventory, keys, shapes (12 flags, 2
+notes), and the gate probe (129 units, 0 findings). A Sonnet clerk drafted
+the run facts' tables; the parent wrote the landing and its alt.
+
+Before the wave, three Opus agents: a grader agent (the first equation
+`textin`s of the book), a gates agent (a hand-built probe of 19 shapes as
+the page carries them), and a band agent (56 numeric keys computed three
+ways). Then five Opus authors at once; five Opus checkers as each
+reported; the claim pass and the consistency reader together with five
+rendered-page readers (4.2's 31 tiles split between two); one rulings round
+(`rulings.md`, lint-checked on a scratch copy); an Opus fix checker, whose
+accepted changes the parent applied; the blind solve (a fresh Fable solver,
+165 items); an Opus hardening agent; Sonnet clerks for the errata block and
+for placing the lesson sentences. Wall time was not measured.
+
+### What the run holds
+
+Five pages and a landing, 182 items: 4.1 holds 33 (29 Practice, 4 Check
+Your Learning; 30 equation and 2 formula text-ins, 1 self-check), 4.2 holds
+78, 4.3 holds 41, 4.4 holds 15, 4.5 holds 15. 165 are auto-graded items
+and went through the solve. 48 keyed exercises carried and 48 unkeyed were
+omitted (6 and 5, 15 and 15, 9 and 9, 9 and 9, 9 and 9). Added items: 4.2
+two, 4.3 two, 4.5 two; none on 4.1 or 4.4. Fifteen Source notes (landing 1,
+4.1 one, 4.2 four, 4.3 four, 4.4 one, 4.5 four). Errata 3002–3031 (30
+entries), 7 decisions entries, and 7 disclosed-deviation lines (six keys,
+one self-check solution). Pins 795 to 800 sections, chemistry 17 to 22.
+Baselines: keys 7,248 to 7,419, coverage 4,372 to 4,501, replay 8,685 to
+8,864, exercises 17,892 to 18,074.
+
+### What each reading found
+
+- Checkers: every key agreed with the source on all five pages (33, 68, 37,
+  11, and 13 graded keys); the defects were leaks and hints. 4.1: two
+  cross-group overlaps undisclosed and a hint that differed on the one part
+  with no spectator ion. 4.2: an open "Which reactant is the oxidant?"
+  answering the yes/no above it, an added recall keyed on a working word of
+  the page's own stems, three hints that decided the item. 4.3: a
+  miscounted footer clause and an alt without the second airbag. 4.4: a
+  display equation that dropped its percent sign. 4.5: a third added item
+  beyond the floor.
+- Claim pass: 12 findings (the Na₂CO₃ + H₂S answer against Appendix H;
+  "normal serum"; the oxalic acid 0.2648; a chloride 23.76 that this book's
+  table returns, rejected; ibuprofen's date; the Space Launch System; Great
+  Lakes Chemical; the pickling box; the strong-base glossary entry; a
+  credit; K[Ag(CN)₂] as an ore; the fluoride row). Four rested on memory;
+  the parent opened a source for each it corrected.
+- Consistency reader: 10 findings; the chief one, "one unit off because
+  something was rounded mid-way", graded five ways across 4.3 to 4.5 and
+  not at all on two like items; a key printed in a footer; a unit inside a
+  stem's math; three forms of Practice heading.
+- Rendered-page readers: nothing wrong; the equation typing guide broke
+  inside its own arrow on all 60 equation fields; nothing said how to type
+  an electron; three inline stem equations ran past the card; the gold
+  exercise's address was auto-linked to a dead page.
+- Fix check: 3 changes and 6 judgment calls; the ibuprofen Source note sat
+  before the figure its paragraph introduces.
+- Blind solve: 165 items, 156 agree, 0 disagree, 9 also defensible, all
+  adjudicated with no key changed: H⁺ for H₃O⁺ (graded correct), 2P₂O₅ for
+  P₄O₁₀ (refused: the chapter prints only P₄O₁₀), the acid form of two
+  basic half-reactions (the form message), plain 680 and 220 and 0.0034 and
+  0.0096 (graded correct), and gallium by difference, 22.9 for 22.4 (a
+  Source note now names the route).
+
+### Gates, tools, tests
+
+- **`check-chem.mjs`**: H⁺ and H₃O⁺ are one hydrogen ion (each H₃O⁺ read as
+  H⁺ + H₂O, only water cancelled); a balanced response in the other medium
+  is `form` with a message; in an equation a group taken once is only
+  grouping (`[Ag(NH₃)₂]⁺`); the "not balanced" message no longer goes to a
+  balanced response; state symbols in capitals read. The first version
+  flattened groups in `chemCanon` and loosened the Knowledge Check sources
+  gate (two tests failed); `chemCanon` is strict again and the leniency
+  lives only in equation matching.
+- **`keyed-units.mjs`, `verify-source-keys.mjs`,
+  `verify-source-coverage.mjs`**: MathML spellings folded (`( a q )`,
+  one-symbol runs, a glued coefficient); an answer's several equations each
+  held to its own item; two bare formulas held by element; oxidation states
+  and mole/gram amounts held by the symbol or formula the closing sentence
+  names; roles and the limiting reactant read from sentences; a followup
+  required where the further item is a multiple choice; a stem's
+  `$\ce{…}$`, whole or split after its arrow, read as the Unicode reaction;
+  a self-check model that prints an equation the source does not is a
+  divergence. The probe builds multi-key items and reports "swap
+  confirmed" (it fires on 8.2 `fs-idm32929264(d)`, for chapter 8's run).
+- **Lints** (Chemistry, errors): a half-reaction stem closes "Type an
+  electron as e-."; a footer prints no key; a Practice `###` heading ends
+  without a period; no unit inside a stem's math after a power of ten.
+- **Site:** the typing guide keeps its arrow and each example on one line
+  (`text-in.js`, `.ap-textin-example`); an inline formula in an item's
+  question that is wider than its card becomes a scrolling block of its own
+  (`scrollable-regions.js`, `ap-katex-wide`), decided per formula after
+  layout — at 390 px seventeen chapter 4 stems needed it, none at 1280.
+- **Tests:** the playbook's grader table is read row by row against
+  `checkChem` (16 rows, 30 responses); browser tests for the guide and for
+  item-card formulas at 1280, 1100, and 390 px; the Knowledge Check order
+  test now expects chapter 4 after the check; `SOUND_COINCIDENCES` gained
+  4.2's iron–cerium equation, already balanced as printed.
+
+### Rulings, now in the playbook
+
+The band is `0.2%` and took one item; no allowance is widened for rounding
+at each step; a key the source's own arithmetic misrounds is corrected and
+takes `last-digit:1`; a key with fewer figures than its data; a source
+equation the book's own tables refute becomes a self-check; a reaction in a
+fill-in or multiple-choice stem is `$\ce{…}$`, split after its arrow when
+too long; a half-reaction's closing sentence; oxidation states as signed
+whole numbers by element symbol; several equations in one answer; a type of
+reaction from the section's own objective; a shared hint; a footer prints
+no key; a Key equation takes the body's form; a selfcheck that answers a
+later item goes after it; a Check Your Learning repeated by a keyed
+exercise; a plain-text address that no longer answers.
+
+### What the process got wrong
+
+- The PDF was rendered to the last printed folio, not the last index.
+- The parent ruled a Source note onto the oxalic acid Check Your Learning,
+  then none, then a corrected key with a note: three rulings on one item
+  before the claim pass and the consistency reader had both read it.
+- The parent told an author to say in the footer that two items are "keyed
+  alike", which hands over the second key; the checker caught it.
+- A one-unit allowance was put on a stem-only item (the gallium chloride
+  moles), and step rounding was accommodated on some items and not others
+  until the consistency reader set them side by side.
+- The ruling that set a stem's reaction as `$\ce{…}$` split after its arrow
+  passed the lint and lost six items in the coverage gate.
+- The first grader change was not retested against the Knowledge Check gate
+  that reads `chemCanon`.
+- The run-facts wording "keyed 18.86" carried a key into a footer.
+- The run facts ruled that the "MgC1₂" misprint needed no Source note; a
+  house test (`every corrected key of a Chemistry page has its Source note
+  on the page`) failed at close-out, and the note was added to that item
+  and to 4.3's sodium nitrate mass, so the pages carry fifteen Source
+  notes, not the thirteen first counted.
+
+### Not acted on
+
+- Derek expected a band of 0.5 to 1 percent for multi-step stoichiometry;
+  the measurement set 0.2 percent and the rule against step rounding. Put
+  to Derek: if step-rounders are to be accepted, 4.5's 35.0 needs
+  `last-digit:1`, 4.3's 2762 `last-digit:2`, the acid-rain item `1`, and
+  the uranium and dicyanoargentate items the band.
+- Grader: a right value typed to one significant figure ("8" for 8.00) is
+  plainly incorrect where "8.0" is told to give three figures; `⇌` is
+  accepted for a `⟶` key (revisit at chapter 13); a bare `2e` is blamed on
+  the arrow; a half-reaction typed without electrons gets no message;
+  2P₂O₅ for P₄O₁₀ is refused.
+- Site-wide: the period after an inline formula can wrap to the next line
+  alone (KaTeX's inline-block bases); the equation guide's example shows no
+  charge and no state symbol.
+- Practice headings ending in a period outside Chemistry: Biology 2,
+  Microbiology 4, Precalculus 9 (the lint is Chemistry-only).
+- Source: "feed on starches", K[Ag(CN)₂] as an ore, the fluoride row, Great
+  Lakes Chemical's present tense (no source opened; kept as printed); 4.5's
+  "What is the molarity?" names no solute; 4.3 asks grams of barium
+  peroxide where its siblings ask kilograms (the source's unit).
+- No gate compares a display equation with its MathML symbol by symbol
+  (4.4's dropped percent sign passed), reads one equation item's stem
+  against another item's key, or counts added items beyond the floor.
+
+Next is Chapter 5 (Thermochemistry), then Knowledge Check block 2
+(chapters 4–5). Chapter 5 is the first chapter with a link to a table
+appendix other than this run's Appendix H citation: its parent follows
+`run.md` step 6 for the lookup test.
+
 ## The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under
@@ -2016,3 +2206,4 @@ the ban, with its page and line. The ban is reviewed from this list.
   ~235 (a Key equation, molarity as moles of solute over liters of
   solution): an inline word fraction, small but legible. 3.4 lines
   151–153: three Key equations as inline word fractions.
+- Chapter 4 reported none: every author and checker reported none.

@@ -260,8 +260,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 21,
       "upstreamSections": 114,
-      "localChapters": 3,
-      "mappedSections": 17,
+      "localChapters": 4,
+      "mappedSections": 22,
       "upstreamAppendices": 13,
       "mappedAppendices": 13
     }
@@ -7421,6 +7421,51 @@
       "moduleId": "m68704",
       "sourceTitle": "Other Units for Solution Concentrations",
       "moduleSha256": "f567750ea401e678c763d046c57157fc0510c5bd34efb39e44ede85c0fea0cb0"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/01-writing-and-balancing-chemical-equations.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "4.1",
+      "moduleId": "m68709",
+      "sourceTitle": "Writing and Balancing Chemical Equations",
+      "moduleSha256": "7109896c820c75b4c214f9776befc8339ae5fed24ea3cbd5f87df366fdd4ad5a"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/02-classifying-chemical-reactions.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "4.2",
+      "moduleId": "m68710",
+      "sourceTitle": "Classifying Chemical Reactions",
+      "moduleSha256": "1485b34537c20d820fa6aa0f9e7a87269c9661fc261d023facd14020e0ab1182"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/03-reaction-stoichiometry.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "4.3",
+      "moduleId": "m68713",
+      "sourceTitle": "Reaction Stoichiometry",
+      "moduleSha256": "bfda08d1953366999811e0bd2faef1317f8d11db088eb7b8f7e3dc04c9b59ecf"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/04-reaction-yields.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "4.4",
+      "moduleId": "m68714",
+      "sourceTitle": "Reaction Yields",
+      "moduleSha256": "0900d9d5be7fe002f74d5bdb54510c255ebac613d841af078a75f8795abc2867"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/05-quantitative-chemical-analysis.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "4.5",
+      "moduleId": "m68716",
+      "sourceTitle": "Quantitative Chemical Analysis",
+      "moduleSha256": "aa1a13d50dd0d66cb49ec48cd79d832df9ad74eed9cc1895d9d56f674bdbe8f8"
     }
   ],
   "appendices": [

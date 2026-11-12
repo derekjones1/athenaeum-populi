@@ -183,6 +183,29 @@
   padding-inline-end: 0.25em;
 }
 
+/* An inline formula in an item's question that is wider than the card — an
+   equation written into a stem cannot break, and on a phone seventeen of
+   Chemistry chapter 4's ran up to 198 px past the card. The class is set per
+   formula after layout by assets/js/scrollable-regions.js, which also makes
+   it a tab stop and takes the class off again when the formula fits, so a
+   formula that fits keeps its inline box and baseline. It becomes a block
+   of its own that scrolls sideways inside the card. `position: relative`
+   gives KaTeX's absolutely positioned MathML layer a containing block inside
+   the scroll box (the table note below); the block padding keeps a
+   fraction's bars and an italic's overhang from being clipped. */
+.content .katex.ap-katex-wide {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-inline: contain;
+  white-space: nowrap;
+  padding-block: 0.25em;
+  padding-inline-end: 0.25em;
+}
+
 /* A wide table scrolls sideways inside its own box (the theme sets a table
    `display: block; overflow-x: auto`). KaTeX's hidden MathML layer is
    absolutely positioned, so with no positioned ancestor a formula in a
@@ -819,6 +842,7 @@ sort-bins:not(:defined) .ap-sortbins-check {
 .ap-textin-reading:empty { margin: 0; }
 .ap-textin-guide { margin: 6px 0 0; font-size: 13px; color: #6f6e69; }
 .dark .ap-textin-guide { color: #b0afa6; }
+.ap-textin-example { white-space: nowrap; }
 
 /* --- <self-check> --------------------------------------------------------- */
 .ap-selfcheck-label { display: block; font-size: 13px; color: var(--ap-muted, #6f6e69); margin-bottom: 4px; }

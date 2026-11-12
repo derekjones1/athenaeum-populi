@@ -52,6 +52,9 @@ chemistry, and nuclear chemistry.
 - **Composition of Substances and Solutions** — formula mass and the mole,
   empirical and molecular formulas, molarity, and other units for solution
   concentrations.
+- **Stoichiometry of Chemical Reactions** — writing and balancing chemical
+  equations, classifying reactions, reaction stoichiometry, reaction yields,
+  and quantitative chemical analysis.
 
 ## Appendices
 
@@ -65,9 +68,6 @@ standard electrode potentials that the chapters refer to by letter.
 
 The remaining chapters of Chemistry 2e will appear in this order:
 
-- **Stoichiometry of Chemical Reactions** — writing and balancing chemical
-  equations, classifying reactions, reaction stoichiometry, reaction yields,
-  and quantitative chemical analysis.
 - **Thermochemistry** — energy basics, calorimetry, and enthalpy.
 - **Electronic Structure and Periodic Properties of Elements** —
   electromagnetic energy, the Bohr model, the development of quantum theory,

@@ -46,6 +46,9 @@ const GUIDE = {
   formula: 'Type subscripts as plain numbers and a charge after ^: Ca3(PO4)2, SO4^2-.',
   equation: 'Type subscripts as plain numbers, a charge after ^, and the arrow as ->: 2H2 + O2 -> 2H2O.',
 };
+// The pieces of a guide a line must not break inside: the arrow as typed,
+// and each example (what follows the colon, up to its comma or period).
+const GUIDE_UNBROKEN = /->(?=:)|(?<=: |, )[A-Z0-9][^,]*?[,.](?= |$)/g;
 let guideCount = 0;
 
 // Status → shared feedback tone (colors.mjs owns the palette fallbacks).
@@ -119,7 +122,20 @@ class TextInElement extends HTMLElement {
       guide.className = 'ap-textin-guide';
       guideCount += 1;
       guide.id = `ap-textin-guide-${guideCount}`;
-      guide.textContent = GUIDE[this.form];
+      // The arrow and each example stay on one line: a browser breaks after
+      // a hyphen, and the guide once showed "O2 -" over "> 2H2O" (found by
+      // the rendered-page reading of Chemistry 4.1). The text is unchanged.
+      const text = GUIDE[this.form];
+      let done = 0;
+      for (const match of text.matchAll(GUIDE_UNBROKEN)) {
+        guide.append(text.slice(done, match.index));
+        const whole = document.createElement('span');
+        whole.className = 'ap-textin-example';
+        whole.textContent = match[0];
+        guide.append(whole);
+        done = match.index + match[0].length;
+      }
+      guide.append(text.slice(done));
       field.setAttribute('aria-describedby', guide.id);
       const reading = document.createElement('p');
       reading.className = 'ap-textin-reading';

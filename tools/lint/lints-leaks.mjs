@@ -46,6 +46,19 @@
  *   - a formula set by hand inside math — `H_2O` (italic, as variables),
  *     `\text{H}_2\text{O}`, `\mathrm{H_2O}` — where the book writes
  *     `\ce{H2O}` (Chemistry)
+ *
+ * Landed November 12, 2026, from the readings of Chemistry chapter 4 (each
+ * fixed on its page by hand first; chapters 1–4 swept clean):
+ *
+ *   - a footer that prints a graded item's key: a measured fill-in's key of
+ *     three or more significant figures as the key or its display writes
+ *     it, or a formula or equation key (Chemistry; 4.3's "18.86")
+ *   - a `###` heading under `## Practice` that ends with a period
+ *     (Chemistry; library-wide 15 such headings in Biology 2, Microbiology
+ *     4, Precalculus 9, not enforced there)
+ *   - a unit set inside a stem's math after a power of ten,
+ *     `$1.00 \times 10^{3}\ \text{kg}$` (Chemistry; an answer display is
+ *     not a stem)
  */
 import { bookKeyOf, blankPreservingOffsets, maskCode, mathSpans, shortcodes, SHORTCODE_PARAMS } from '../lib/content.mjs';
 // The real textin grading normalizer, so a "printed key" here means printed
@@ -390,6 +403,84 @@ export function selfcheckForwardLeak(sc, next, count = /^(?:\d+|zero|one|two|thr
   return null;
 }
 
+// ---- Chemistry chapter 4: what its readers found -----------------------------
+
+/**
+ * The `###` objective headings of a page's `## Practice` block that end with
+ * a period. The objectives callout keeps the source's sentence period; the
+ * heading drops it (Chemistry 4.x shipped "### Derive … equations." beside
+ * its siblings). Exported for the library-wide count.
+ */
+export function practicePeriodHeadings(text) {
+  const practice = /^## Practice[ \t]*$/m.exec(text);
+  if (!practice) return [];
+  const start = practice.index + practice[0].length;
+  const next = /^## /m.exec(text.slice(start));
+  const block = text.slice(start, next ? start + next.index : text.length);
+  return [...block.matchAll(/^###[ \t]+(.*?)[ \t]*$/gm)]
+    .filter((m) => /\.$/.test(m[1]) && !/\.\.\.$|…$/.test(m[1]))
+    .map((m) => ({ index: start + m.index, heading: m[1] }));
+}
+
+/**
+ * The significant figures of a plain decimal written as a key writes it
+ * ("18.86" → 4, "0.0250" → 3, "1500" → 2); null for anything else.
+ */
+function writtenSigFigs(number) {
+  const digits = number.replace(/^[-−+]/, '');
+  if (!/^(?:\d+\.?\d*|\.\d+)$/.test(digits)) return null;
+  if (digits.includes('.')) return digits.replace('.', '').replace(/^0+/, '').length;
+  return digits.replace(/^0+/, '').replace(/0+$/, '').length;
+}
+
+/**
+ * The spellings of a graded item's key that its page's footer must not
+ * print: a measured fill-in's key of three or more significant figures,
+ * written as the key writes it and as its answer display does (the mantissa
+ * of a power of ten, thousands separators dropped), and a formula or an
+ * equation key. A whole-number key is a count, and a year-shaped integer is
+ * never measured; both are left out, so "38 items" and "2019" never fire.
+ */
+export function footerKeySpellings(item) {
+  const answer = String(item.params.answer ?? '').trim();
+  const form = String(item.params.answerForm ?? '');
+  if (!answer) return [];
+  if (item.kind === 'textin') {
+    return ['formula', 'equation'].includes(form) ? [{ kind: form, text: answer }] : [];
+  }
+  if (item.kind !== 'fillin' || /\bwhole-number\b/.test(form)) return [];
+  const declared = /\bsig-figs:(\d+)/.exec(form);
+  const numbers = [];
+  const mantissa = answer.replace(/\s*\\times\s*10\^\{?[^}]*\}?\s*$/, '').replace(/\{,\}|,(?=\d{3}\b)/g, '');
+  numbers.push(mantissa);
+  const display = String(item.params.answerDisplay ?? '').replace(/\{,\}|(?<=\d),(?=\d{3}\b)/g, '');
+  const first = /[-−]?\d*\.?\d+/.exec(display);
+  if (first) numbers.push(first[0]);
+  const spellings = [];
+  for (const number of new Set(numbers.map((n) => n.replace(/^[-−+]/, '')))) {
+    const figures = writtenSigFigs(number);
+    if (figures === null) continue;
+    if (!number.includes('.') && /^(?:1[5-9]|20)\d\d$/.test(number)) continue;
+    if (Math.max(figures, declared && number === mantissa.replace(/^[-−+]/, '') ? Number(declared[1]) : 0) < 3) continue;
+    spellings.push({ kind: 'number', text: number });
+  }
+  return spellings;
+}
+
+/** Where `spelling` stands whole in `footer` (a number not inside a longer one, a formula not inside a longer one). */
+function footerPrints(footer, spelling) {
+  const escaped = spelling.text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  if (spelling.kind === 'number') {
+    const plain = footer.replace(/(?<=\d),(?=\d{3}\b)/g, '').replace(/\{,\}/g, '');
+    return new RegExp(`(?<![\\d.])${escaped}(?!\\d|\\.\\d)`).test(plain);
+  }
+  const FORMULA_CHAR = '[\\p{L}\\p{N}₀-₉⁰¹²³⁴-⁹⁺⁻·([\\]]';
+  return new RegExp(`(?<!${FORMULA_CHAR})${escaped}(?!${FORMULA_CHAR})`, 'u').test(footer);
+}
+
+/** A power of ten in a stem's inline math followed, inside the same span, by a unit set as text. */
+export const STEM_POWER_UNIT = /\\times\s*10\s*\^\s*(?:\{[^{}]*\}|-?\d)\s*(?:\\ |\\,)\s*\\(?:text|mathrm)\s*\{/;
+
 // ---- the lint ----------------------------------------------------------------
 
 export function lintLeaks(src, filename = '') {
@@ -524,6 +615,15 @@ export function lintLeaks(src, filename = '') {
     if (chemistry && item.params.answerForm === 'formula' && String(item.params.answer ?? '').includes('·')
       && !/Type the dot as a period, as in \S+\.\S+\./.test(String(item.params.question ?? ''))) {
       err(item.index, `${where}: its key is a hydrate's formula, and the field's guide does not say how a centered dot is typed — close the stem "Type the dot as a period, as in Na2CO3.10H2O." (a hydrate whose formula holds no key of the page)`);
+    }
+
+    // ---- a half-reaction key says how its electron is typed (Chemistry) ----
+    // The equation field's guide shows subscripts, a charge, and the arrow.
+    // Nothing on the 4.2 page said an electron is typed at all, and a bare
+    // "2e" does not read (the rendered-page reading of Chemistry 4.2).
+    if (chemistry && item.params.answerForm === 'equation' && /(?:^|[\s+⟶])\d*\s*e⁻/.test(String(item.params.answer ?? ''))
+      && !/Type an electron as e-\./.test(String(item.params.question ?? ''))) {
+      err(item.index, `${where}: its key is a half-reaction, and the field's guide does not say how an electron is typed — close the stem "Type an electron as e-."`);
     }
 
     if (chemistry && item.params.answerForm === undefined) {
@@ -814,6 +914,34 @@ export function lintLeaks(src, filename = '') {
       const blank = /\(blank:/i.exec(footer[0]);
       if (blank) {
         err(footer.index + blank.index, 'the footer prints an added item\'s key ("(blank: …)") — name the item by where its sentence is ("a cloze on the Summary sentence that defines weight"), never by its answer');
+      }
+    }
+    // A footer that prints a graded item's key: 4.3's said "keyed with the
+    // source's 18.86" of a Check Your Learning fill-in. The footer is read on
+    // the page the item is answered on, so naming an item by its key answers
+    // it (the "(blank: …)" rule above is the cloze case of the same thing).
+    const keyed = items.flatMap((item) => footerKeySpellings(item).map((spelling) => ({ item, spelling })));
+    for (const footer of text.matchAll(/<small>[\s\S]*?<\/small>/g)) {
+      for (const { item, spelling } of keyed) {
+        if (footerPrints(footer[0], spelling)) {
+          err(footer.index, `the footer prints ${JSON.stringify(spelling.text)}, the key of ${labelOf(item.kind, item.params)} — name an item by where it is or what it asks ("the Check Your Learning of the propane example"), never by its key`);
+        }
+      }
+    }
+    // An objective heading under `## Practice` drops the source's period.
+    for (const { index, heading } of practicePeriodHeadings(text)) {
+      err(index, `Practice heading \`### ${heading}\` ends with a period — the objectives callout keeps the source's period; the heading drops it`);
+    }
+    // A unit inside a stem's math after a power of ten: "$1.00 \times
+    // 10^{3}\ \text{kg}$" is read aloud as a product of the number and the
+    // word (the stem's math is spoken whole). The unit goes outside the
+    // math: "$1.00 \times 10^{3}$ kg". An answer display is not a stem.
+    for (const item of items) {
+      for (const span of String(item.params.question ?? '').matchAll(/(?<!\$)\$([^$]+)\$(?!\$)/g)) {
+        const unit = STEM_POWER_UNIT.exec(span[1]);
+        if (unit) {
+          err(item.index, `${labelOf(item.kind, item.params)}: the stem's math \`${span[1].slice(0, 50)}\` sets a unit after its power of ten inside the math — close the math before the unit: \`$1.00 \\times 10^{3}$ kg\``);
+        }
       }
     }
     // Key terms: every definition closes with a period (1.5's seven did not).

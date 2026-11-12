@@ -89,7 +89,7 @@ function parseBody(text, start, closer) {
     if (c === '(' || c === '[') {
       const inner = parseBody(text, i + 1, c === '(' ? ')' : ']');
       if (!inner || !inner.items.length) return null;
-      item = { group: inner.items };
+      item = { group: inner.items, bracket: c === '[' };
       i = inner.end;
     } else if (/[A-Z]/.test(c)) {
       const two = text.slice(i, i + 2);
@@ -116,6 +116,20 @@ function parseBody(text, start, closer) {
 }
 
 const serialize = (items) => items.map((item) => `${item.el ?? `(${serialize(item.group)})`}${item.n > 1 ? item.n : ''}`).join('');
+/** As typed, square brackets kept: what the field shows back. */
+const serializeShown = (items) => items.map((item) => `${item.el ?? (item.bracket ? `[${serializeShown(item.group)}]` : `(${serializeShown(item.group)})`)}${item.n > 1 ? item.n : ''}`).join('');
+
+/**
+ * A group taken once is only grouping INSIDE AN EQUATION: `[Ag(NH₃)₂]⁺` is
+ * `Ag(NH₃)₂⁺`, and `(NH₄)₂(Cr₂O₇)` is `(NH₄)₂Cr₂O₇` (Chemistry 2e 4.37(b)
+ * prints the complex ion in brackets; it is as often written without them).
+ * This is the `loose` spelling, used only where an equation's response
+ * species is matched to the key's. `canon` keeps every group: a formula item
+ * grades how the formula is written (`Ag(NH3)2+` for `[Ag(NH₃)₂]⁺` is "form",
+ * the usual-grouping message), and the gates that read `chemCanon` must not
+ * take the first words of "Ca(H₂PO₄)₂" for a key "CaH₂PO₄".
+ */
+const flatten = (items) => items.flatMap((item) => (item.group && item.n === 1 ? flatten(item.group) : [item.group ? { ...item, group: flatten(item.group) } : item]));
 
 function addAtoms(items, times, atoms) {
   for (const item of items) {
@@ -143,9 +157,10 @@ export function readSpecies(raw, { equation = false } = {}) {
   if (!text) return [];
   let state = null;
   // "(s, graphite)": the allotrope rides with the state.
-  const stateMatch = /\((s|l|g|aq)(?:,[a-z]+)?\)$/.exec(text);
-  if (stateMatch && STATES.has(stateMatch[1])) {
-    state = stateMatch[1];
+  // A state typed in capitals, (S) or (AQ), is the same state.
+  const stateMatch = /\((s|l|g|aq)(?:,[a-z]+)?\)$/i.exec(text);
+  if (stateMatch && STATES.has(stateMatch[1].toLowerCase())) {
+    state = stateMatch[1].toLowerCase();
     text = text.slice(0, stateMatch.index);
   }
   let coef = 1;
@@ -159,7 +174,7 @@ export function readSpecies(raw, { equation = false } = {}) {
     }
   }
   // An electron: e-, e^-, e⁻.
-  if (equation && /^e\^?-$/.test(text)) return [{ canon: 'e^-', atoms: {}, charge: -1, mass: null, state, coef }];
+  if (equation && /^e\^?-$/.test(text)) return [{ canon: 'e^-', loose: 'e^-', atoms: {}, charge: -1, mass: null, state, coef }];
   // A nuclide's prescripts: the mass number, and below it the atomic number
   // where one is written (`^23_11Na`, `²³₁₁Na`).
   let atomic = null;
@@ -216,14 +231,17 @@ export function readSpecies(raw, { equation = false } = {}) {
     const atoms = addAtoms(items, 1, {});
     if (hydrate) addAtoms(hydrate.items, hydrate.coef, atoms);
     const charge = tail.charge;
-    const canon = `${mass === null ? '' : `^${mass}`}${serialize(items)}`
-      + `${hydrate ? `·${hydrate.coef > 1 ? hydrate.coef : ''}${serialize(hydrate.items)}` : ''}`
+    const spell = (write, flat) => `${mass === null ? '' : `^${mass}`}${write(flat(items))}`
+      + `${hydrate ? `·${hydrate.coef > 1 ? hydrate.coef : ''}${write(flat(hydrate.items))}` : ''}`
       + `${charge ? `^${Math.abs(charge) > 1 ? Math.abs(charge) : ''}${charge > 0 ? '+' : '-'}` : ''}`;
+    const canon = spell(serialize, (list) => list);
+    const loose = spell(serialize, flatten);
+    const shown = spell(serializeShown, (list) => list);
     // The atomic number the species' one element has, when it is one
     // element: what a written atomic number is held to.
     const symbols = Object.keys(atoms);
     const expected = symbols.length === 1 ? ATOMIC_NUMBER.get(symbols[0]) ?? null : null;
-    return { canon, atoms, charge, mass, atomic, expected, state, coef };
+    return { canon, loose, shown, atoms, charge, mass, atomic, expected, state, coef };
   });
 }
 
@@ -231,7 +249,7 @@ export function readSpecies(raw, { equation = false } = {}) {
 export function prettySpecies(species) {
   const sub = (digits) => [...String(digits)].map((d) => SUBSCRIPTS[d]).join('');
   const sup = (text) => [...String(text)].map((c) => (c === '+' ? '⁺' : c === '-' ? '⁻' : SUPERSCRIPTS[c])).join('');
-  const body = species.canon
+  const body = (species.shown ?? species.canon)
     .replace(/^\^(\d+)/, (_, mass) => `${sup(mass)}${species.atomic === null || species.atomic === undefined ? '' : sub(species.atomic)}`)
     .replace(/\^(\d*[+-])$/, (_, charge) => sup(charge))
     .replace(/·(\d*)/, (_, n) => `·\u0000${n}\u0000`)
@@ -343,7 +361,7 @@ function matchSide(keySide, responseSide) {
     const key = keySide[index][0];
     for (let j = 0; j < responseSide.length; j += 1) {
       if (used.has(j)) continue;
-      const reading = responseSide[j].find((candidate) => candidate.canon === key.canon);
+      const reading = responseSide[j].find((candidate) => (candidate.loose ?? candidate.canon) === (key.loose ?? key.canon));
       if (!reading) continue;
       used.add(j);
       pairs.push({ key, reading });
@@ -368,6 +386,150 @@ function sideTotals(side) {
 
 const sameTotals = (a, b) => [...new Set([...Object.keys(a), ...Object.keys(b)])].every((k) => Math.abs((a[k] || 0) - (b[k] || 0)) < 1e-9);
 
+/*
+ * H⁺ and H₃O⁺ are one hydrogen ion (Chemistry 2e 4.2, decided for chapter 4).
+ * The half-reaction method balances hydrogen "by adding H⁺ ions", and the
+ * answer key prints H₃O⁺ in some answers and H⁺ in others, so a learner who
+ * follows the module writes the other notation from the key's. Where the key
+ * or the response holds either ion, both are compared after each H₃O⁺ is read
+ * as H⁺ + H₂O on its own side, the hydrogen ions and waters of a side are
+ * added up, and water common to both sides is cancelled. Nothing else is
+ * cancelled: a complete ionic equation keeps its spectator ions.
+ */
+const PROTON = 'H^+';
+const HYDRONIUM = 'H3O^+';
+const WATER = 'H2O';
+const single = (readings, canon) => readings.length === 1 && readings[0].canon === canon;
+const holdsHydrogenIon = (equation) => equation.sides.some((side) => side.some((readings) => single(readings, PROTON) || single(readings, HYDRONIUM)));
+
+function asProtons(equation) {
+  const sides = equation.sides.map((side) => {
+    const out = [];
+    const held = new Map();
+    const add = (species) => {
+      const same = held.get(species.canon);
+      if (same) {
+        same.coef += species.coef;
+        same.state = same.state ?? species.state;
+        return;
+      }
+      const copy = { ...species };
+      held.set(copy.canon, copy);
+      out.push([copy]);
+    };
+    for (const readings of side) {
+      if (single(readings, HYDRONIUM)) {
+        const [ion] = readings;
+        add({ ...ion, canon: PROTON, loose: PROTON, shown: PROTON, atoms: { H: 1 }, expected: 1 });
+        // The water's state is not printed with the ion: it is left free.
+        add({ ...ion, canon: WATER, loose: WATER, shown: WATER, atoms: { H: 2, O: 1 }, charge: 0, expected: null, state: null });
+      } else if (single(readings, PROTON) || single(readings, WATER)) {
+        add(readings[0]);
+      } else {
+        out.push(readings);
+      }
+    }
+    return out;
+  });
+  const [left, right] = sides.map((side) => side.find((readings) => single(readings, WATER))?.[0]);
+  if (left && right) {
+    const common = Math.min(left.coef, right.coef);
+    left.coef -= common;
+    right.coef -= common;
+  }
+  return { ...equation, sides: sides.map((side) => side.filter((readings) => readings[0].coef > 1e-9)) };
+}
+
+/** The equation with H₃O⁺ renamed H⁺ and no water added or cancelled: the substances as typed, in one notation. */
+const renamedProtons = (equation) => ({
+  ...equation,
+  sides: equation.sides.map((side) => side.map((readings) => readings.map((r) => (r.canon === HYDRONIUM ? { ...r, canon: PROTON, loose: PROTON } : r)))),
+});
+
+/** Whether some reading of each species makes the response balance as typed. */
+function balances(response) {
+  const pick = (side, choices) => side.map((readings, i) => [readings[choices[i]]]);
+  const options = (side) => side.reduce((all, readings) => all.flatMap((choice) => readings.map((_, j) => [...choice, j])), [[]]).slice(0, 64);
+  return options(response.sides[0]).some((l) => options(response.sides[1]).some((r) => sameTotals(sideTotals(pick(response.sides[0], l)), sideTotals(pick(response.sides[1], r)))));
+}
+
+/*
+ * The other solution (Chemistry 2e 4.2, chapter 4). The half-reaction method
+ * balances with H⁺ and converts to a basic solution last (adding OH⁻ to both
+ * sides, H⁺ + OH⁻ ⟶ H₂O, cancelling water), so a learner who stops early
+ * writes the right reaction in acid against a key in base, or the reverse.
+ * Each side is split into its other species, which must be the key's, side
+ * for side, in one ratio (spectators never cancel), and the medium species:
+ * with H⁺ written as H₂O − OH⁻, the net water and the net hydroxide across
+ * the arrow must be the key's in the same ratio. Only when one equation holds
+ * OH⁻ and the other H⁺ or H₃O⁺ in its place, and only for a response that
+ * balances; never `correct`.
+ */
+const HYDROXIDE = 'OH^-';
+const MEDIUM_SPECIES = new Set([PROTON, HYDROXIDE, WATER]);
+const OTHER_SOLUTION = 'That is balanced — now write it for the solution the question names: an acidic solution has H⁺ (or H₃O⁺), a basic solution OH⁻.';
+
+/** Every choice of one reading per species (at most 64), as plain species lists. */
+function choices(equation) {
+  const side = (readings) => readings.reduce((all, options) => all.flatMap((chosen) => options.map((option) => [...chosen, option])), [[]]).slice(0, 64);
+  return side(equation.sides[0]).flatMap((left) => side(equation.sides[1]).map((right) => [left, right]));
+}
+
+/** `{ core: [Map, Map], water, hydroxide, acid, base }` of sides already read as H⁺ (asProtons). */
+function mediumView(sides) {
+  const core = [new Map(), new Map()];
+  let water = 0;
+  let hydroxide = 0;
+  let acid = false;
+  let base = false;
+  sides.forEach((side, i) => {
+    const sign = i ? 1 : -1;
+    for (const species of side) {
+      const id = species.loose ?? species.canon;
+      if (!MEDIUM_SPECIES.has(id)) {
+        core[i].set(id, (core[i].get(id) || 0) + species.coef);
+      } else if (id === PROTON) {
+        acid = true;
+        water += sign * species.coef;
+        hydroxide -= sign * species.coef;
+      } else if (id === HYDROXIDE) {
+        base = true;
+        hydroxide += sign * species.coef;
+      } else {
+        water += sign * species.coef;
+      }
+    }
+  });
+  return { core, water, hydroxide, acid, base };
+}
+
+function otherSolution(key, responses) {
+  const keyView = mediumView(asProtons(key).sides.map((side) => side.map(([species]) => species)));
+  // A key whose H⁺ (or OH⁻) is only a spectator, the same on both sides, has no medium to convert.
+  if (keyView.acid === keyView.base || Math.abs(keyView.hydroxide) < 1e-9) return false;
+  return responses.some((response) => {
+    const read = asProtons(response);
+    return choices(read).some((sides) => {
+      const view = mediumView(sides);
+      if (view.acid === view.base || view.acid === keyView.acid) return false;
+      // Balanced as typed, in the reading chosen.
+      if (!sameTotals(sideTotals(sides[0].map((s) => [s])), sideTotals(sides[1].map((s) => [s])))) return false;
+      let ratio = null;
+      for (let i = 0; i < 2; i += 1) {
+        if (view.core[i].size !== keyView.core[i].size) return false;
+        for (const [id, coef] of keyView.core[i]) {
+          if (!view.core[i].has(id)) return false;
+          const r = view.core[i].get(id) / coef;
+          if (ratio === null) ratio = r;
+          else if (Math.abs(r - ratio) > 1e-9) return false;
+        }
+      }
+      if (ratio === null) return false;
+      return Math.abs(view.water - keyView.water * ratio) < 1e-9 && Math.abs(view.hydroxide - keyView.hydroxide * ratio) < 1e-9;
+    });
+  });
+}
+
 /** @returns {{ status: 'empty'|'correct'|'form'|'incorrect', message?: string }} */
 export function checkEquation(input, answer) {
   if (!String(input ?? '').trim()) return { status: 'empty' };
@@ -377,23 +539,38 @@ export function checkEquation(input, answer) {
   if (!responses.length) {
     return { status: 'incorrect', message: 'That does not read as an equation. Type it on one line with a plus sign between substances and -> for the arrow, like 2H2 + O2 -> 2H2O.' };
   }
+  const hydrogenIon = holdsHydrogenIon(key) || responses.some(holdsHydrogenIon);
+  const comparedKey = hydrogenIon ? asProtons(key) : key;
   let best = { status: 'incorrect' };
-  for (const response of responses) {
-    const left = matchSide(key.sides[0], response.sides[0]);
-    const right = matchSide(key.sides[1], response.sides[1]);
-    if (!left || !right) continue;
-    const pairs = [...left, ...right];
-    const ratios = pairs.map(({ key: k, reading }) => reading.coef / k.coef);
-    const statesAgree = pairs.every(({ key: k, reading }) => !reading.state || !k.state || reading.state === k.state);
-    if (ratios.every((ratio) => Math.abs(ratio - 1) < 1e-9)) {
-      if (statesAgree) return { status: 'correct' };
-      best = { status: 'form', message: 'The equation is balanced — now check the state symbols, or leave them out.' };
-    } else if (ratios.every((ratio) => Math.abs(ratio - ratios[0]) < 1e-9)) {
-      if (best.status !== 'form') best = { status: 'form', message: 'That is balanced — now write it with the smallest whole-number coefficients.' };
-    } else if (best.status === 'incorrect') {
+  for (const typed of responses) {
+    const response = hydrogenIon ? asProtons(typed) : typed;
+    const left = matchSide(comparedKey.sides[0], response.sides[0]);
+    const right = matchSide(comparedKey.sides[1], response.sides[1]);
+    // The right substances: the same species on each side, read in one
+    // notation before water is cancelled, or in the compared form after.
+    const sameSubstances = Boolean(left && right)
+      || (hydrogenIon && [0, 1].every((i) => matchSide(renamedProtons(key).sides[i], renamedProtons(typed).sides[i]) !== null));
+    if (left && right) {
+      const pairs = [...left, ...right];
+      const ratios = pairs.map(({ key: k, reading }) => reading.coef / k.coef);
+      const statesAgree = pairs.every(({ key: k, reading }) => !reading.state || !k.state || reading.state === k.state);
+      if (ratios.every((ratio) => Math.abs(ratio - 1) < 1e-9)) {
+        if (statesAgree) return { status: 'correct' };
+        best = { status: 'form', message: 'The equation is balanced — now check the state symbols, or leave them out.' };
+        continue;
+      }
+      if (ratios.every((ratio) => Math.abs(ratio - ratios[0]) < 1e-9)) {
+        if (best.status !== 'form') best = { status: 'form', message: 'That is balanced — now write it with the smallest whole-number coefficients.' };
+        continue;
+      }
+    }
+    // Said only of a response that does not balance: one balanced with
+    // other coefficients is not the key's, and is not told it is unbalanced.
+    if (sameSubstances && best.status === 'incorrect' && !balances(typed)) {
       best = { status: 'incorrect', message: 'Those are the right substances, but the equation is not balanced: count each element, and the charge, on both sides.' };
     }
   }
+  if (best.status === 'incorrect' && otherSolution(key, responses)) return { status: 'form', message: OTHER_SOLUTION };
   return best;
 }
 

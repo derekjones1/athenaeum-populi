@@ -106,6 +106,39 @@ Six things chapter 3 added (`docs/history/chemistry.md`, "Chapter 3"):
 - **A clerk that reports in seconds, or in one word, is read on disk**
   before its output is used.
 
+Eight things chapter 4 added (`docs/history/chemistry.md`, "Chapter 4"):
+
+- **The PDF range is checked as INDEXES, to the last exercise page.** The
+  parent rendered to index 204 after reading the printed folio 204; the
+  chapter ended at index 218, and the first author had no printed exercise
+  pages. `ls` the last page and open it before the wave.
+- **The automatic gate probe is not the probe.** It builds one item per
+  keyed unit from the bare source stem; an agent builds every NEW shape as
+  the page will carry it, right key and wrong key, before the wave
+  (chapter 4: the tool said 0 findings and the hand probe found five parts
+  "not seen" and one read as an unkeyed exercise).
+- **A ruling that changes the FORM of a stem is run through both source
+  gates on one real item before it is sent.** The lint is not enough: "a
+  reaction in a stem is `$\ce{}$`, split after its arrow" passed the lint
+  and lost six items in the coverage gate.
+- **A grader change is retested against every caller of the function it
+  touches** (`chemCanon` is read by the Knowledge Check sources gate): run
+  `tools/source`, `tools/verify`, `tools/lib`, and `tools/lint` tests, not
+  only the grader's.
+- **The band is measured by an agent before the wave** (every numeric key
+  three ways: unrounded, rounded at each step, a two-decimal table) and
+  the report goes to the authors with the run facts.
+- **One rule for one cause.** The parent graded "one unit off because
+  something was rounded mid-way" five ways across three pages before the
+  consistency reader set them side by side; a token ruling made for one
+  item is checked against every item with the same cause.
+- **A reader's "from memory" is not a correction.** The claim pass marked
+  four findings so; each was opened by the parent (and corrected) or left
+  as printed and listed in the history.
+- **The fix check's accepted old→new text is applied by the parent**, who
+  then re-files the records it re-hashed (§0, chapter 2's last bullet):
+  take the ledger snapshot first.
+
 ## 1. Before the wave
 
 `SP` is this session's scratchpad. Never a git command from an agent — say
@@ -258,7 +291,8 @@ author reads only those items of a chapter 2 page (`author.md` §1).
   per one or two sections, about twenty tiles each, "read
   `$SP/render-reader.md`", with the section's PDF range, report
   `$SP/render-N.M.md` (the first section it reads). What it finds that
-  a test can hold becomes a test.
+  a test can hold becomes a test. From chapter 4 the reading is split at
+  about sixteen tiles a reader (4.2's 31 tiles took two).
 - **The parent rules on the three reports in one round** — a rulings file
   (`$SP/rulings.md`: general rulings, then a list per page), each ruling
   checked against the lints (§0), sent to the page's author. A ruling that

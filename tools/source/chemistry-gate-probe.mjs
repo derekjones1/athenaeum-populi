@@ -24,7 +24,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { keyedUnits } from '../lib/keyed-units.mjs';
-import { judgeKeyedUnit, labelledFormulas } from '../verify/verify-source-keys.mjs';
+import { ELEMENT_BY_NAME, answerEquations, judgeKeyedUnit, labelledFormulas } from '../verify/verify-source-keys.mjs';
 import { coverage, sourceExercises } from '../verify/verify-source-coverage.mjs';
 import { chapters, shapeOf } from './chemistry-shapes.mjs';
 
@@ -69,8 +69,54 @@ export function itemsFor(unit, units) {
   if (labelled.length) {
     return labelled.map((entry) => ({ ...base, question: `${base.question} Enter the ${entry.label}${/formula$/.test(entry.label) ? '' : ' formula'}.`, type: 'textin', answer: entry.printed, form: 'formula' }));
   }
+  const several = severalItems(answer, base);
+  if (several.length) return several;
   const item = itemFor(unit, answer, base);
   return item ? [item] : [];
+}
+
+/**
+ * Chapter 4's answers that print several keys to one part, carried one item
+ * per key with a closing sentence that says which (docs/subjects/chemistry.md
+ * "Exercises"; the gate holds each item to its own key):
+ *   several equations — "Enter the net ionic equation." by the answer's own
+ *   label, or, unlabelled, "Enter the equation for the reaction of
+ *   magnesium." by the one element only that equation holds;
+ *   an element's symbol before each signed number ("H +1, P +5, O −2") —
+ *   "Enter the oxidation state of P as a signed number, …";
+ *   amounts in mol and in grams of a substance ("0.435 mol Na, 0.217 mol
+ *   Cl₂, 15.4 g Cl₂") — the moles and the mass of the substance whose mass
+ *   is printed: "Enter the number of moles of Cl₂.", "Enter the mass of
+ *   Cl₂ in grams.".
+ */
+function severalItems(answer, unclosed) {
+  // The part closes with its period before the added sentence ("Stems": every stem ends with its punctuation).
+  const base = { ...unclosed, question: /[.?!:]$/.test(unclosed.question.trim()) ? unclosed.question.trim() : `${unclosed.question.trim()}.` };
+  const equations = answerEquations(answer);
+  if (equations.length >= 2) {
+    const items = equations.map((entry) => {
+      if (entry.label) return { closing: `Enter the ${entry.label.replace(/\s*equation$/, '').replace(/^(complete|net)$/, '$1 ionic')} equation.`, entry };
+      const own = [...ELEMENT_BY_NAME].find(([, symbol]) => equations.filter((other) => new RegExp(`${symbol}(?![a-z])`).test(other.printed)).length === 1
+        && new RegExp(`${symbol}(?![a-z])`).test(entry.printed));
+      return own ? { closing: `Enter the equation for the reaction of ${own[0]}.`, entry } : null;
+    });
+    if (items.every(Boolean)) return items.map(({ closing, entry }) => ({ ...base, question: `${base.question} ${closing}`, type: 'textin', answer: entry.printed, form: 'equation' }));
+  }
+  const states = [...answer.matchAll(/(?:^|[\s,;])([A-Z][a-z]?)\s*,?\s+([+−–-]\s?\d+)(?=\s*(?:[,;.]|$))/g)];
+  if (new Set(states.map((match) => match[1])).size >= 2) {
+    return states.map((match) => ({ ...base, question: `${base.question} Enter the oxidation state of ${match[1]} as a signed number, the sign first, as +2 or −1.`, type: 'fillin', answer: match[2].replace(/[−–]/g, '-').replace(/[+\s]/g, ''), form: 'whole-number' }));
+  }
+  const amounts = answer.split(/[,;]/).map((piece) => /([−–-]?\d[\d.]*(?:\s*[×x]\s*10\s*\^\{[−–-]?\d+\})?)\s+(mol|kg|g)\s+(.+)$/.exec(piece.trim()))
+    .filter(Boolean).map(([, number, unit, formula]) => ({ number: number.replace(/[−–]/g, '-').replace(/\s*[×x]\s*10\s*\^\{(-?\d+)\}/, '\\times10^{$1}'), unit, formula: formula.replace(/\s/g, '') }));
+  const mass = amounts.filter((entry) => entry.unit !== 'mol').pop();
+  const moles = mass && (amounts.filter((entry) => entry.unit === 'mol' && entry.formula === mass.formula).pop() || amounts.filter((entry) => entry.unit === 'mol').pop());
+  if (mass && moles) {
+    return [
+      { ...base, question: `${base.question} Enter the number of moles of ${mass.formula}.`, type: 'fillin', answer: moles.number, form: '' },
+      { ...base, question: `${base.question} Enter the mass of ${mass.formula} in ${mass.unit === 'kg' ? 'kilograms' : 'grams'}.`, type: 'fillin', answer: mass.number, form: '' },
+    ];
+  }
+  return [];
 }
 
 function itemFor(unit, answer, base) {
@@ -102,10 +148,18 @@ export function probeModule(xml) {
       if (!other || other.answer !== unit.answer) findings.push({ unit: unit.id, kind: 'read as another', detail: `the keys gate reads the unit's own stem as ${seen.exercise.id}${other && !other.keyed ? ' (UNKEYED: the item would be refused)' : ''} — the two stems are one text; the page's item must differ by its restated data or its figure` });
       continue;
     }
-    for (const item of itemsFor(unit, units)) {
+    const items = itemsFor(unit, units);
+    for (const item of items) {
       const verdict = judgeKeyedUnit(item, units);
       if (!verdict || !['confirmed', 'figures-differ', 'symbolic'].includes(verdict.status)) {
         findings.push({ unit: unit.id, kind: 'key not confirmed', detail: `${item.type}${item.form ? ` (${item.form})` : ''} keyed with the source's own ${JSON.stringify(item.answer.slice(0, 60))}: ${verdict ? verdict.status : 'no unit'} — a source defect, or an answer that is not the shape chemistry-shapes read` });
+      }
+      // Several keys to one part, one item each: every item must refuse its
+      // siblings' keys, or the closing sentence that says which is not read.
+      for (const other of items) {
+        if (other === item || other.type !== item.type || other.answer === item.answer) continue;
+        const swapped = judgeKeyedUnit({ ...item, answer: other.answer }, units);
+        if (swapped?.status === 'confirmed') findings.push({ unit: unit.id, kind: 'swap confirmed', detail: `the item that closes ${JSON.stringify(item.question.split(/(?<=[.?!])\s+/).pop())} is confirmed keyed with its sibling's ${JSON.stringify(other.answer.slice(0, 40))}` });
       }
     }
   }

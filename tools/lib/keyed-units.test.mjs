@@ -11,7 +11,7 @@ import {
   workedExampleUnits, workedExamples,
 } from './keyed-units.mjs';
 import { parseXml } from './openstax-source.mjs';
-import { judgeKeyedUnit, pageItems } from '../verify/verify-source-keys.mjs';
+import { answerEquations, conditionalUnwrapped, judgeKeyedUnit, pageItems } from '../verify/verify-source-keys.mjs';
 import { coverage, sourceExercises } from '../verify/verify-source-coverage.mjs';
 
 const cnxml = (body) => `<?xml version="1.0"?><document xmlns="http://cnx.rice.edu/cnxml"><content>${body}</content></document>`;
@@ -685,3 +685,248 @@ test('a worked example is read whole: its question up to the Solution, the Solut
   assert.deepEqual(keyedUnits(xml).map((unit) => unit.id), ['w1#check']);
 });
 
+
+/* ---- chapter 4: the shapes probed before the wave (docs/briefs/chemistry/run.md §1 step 6a) ---- */
+
+// The source's MathML read as stemText and answerText read it: one
+// identifier per symbol, the aqueous state "( a q )", mercury "H g".
+const CH4 = cnxml(exercises(
+  exercise('q3', ['Balance the following equations:', '(a) PCl 5 ( s ) + H 2 O ( l ) ⟶ POCl 3 ( l ) + HCl ( a q )', '(b) H 2 ( g ) + I 2 ( s ) ⟶ HI ( s )'],
+    '(a) PCl 5 ( s ) + H 2 O ( l ) ⟶ POCl 3 ( l ) + 2 HCl ( a q ); (b) H 2 ( g ) + I 2 ( s ) ⟶ 2 HI ( s )'),
+  exercise('q4', ['Balance the following equations:', '(a) Fe ( s ) + O 2 ( g ) ⟶ Fe 2 O 3 ( s )', '(b) Pb ( s ) + O 2 ( g ) ⟶ PbO ( s )'], null),
+  exercise('q7', ['Colorful fireworks often involve the decomposition of barium nitrate and potassium chlorate and the reaction of the metals magnesium, aluminum, and iron with oxygen.',
+    '(a) Write the formulas of barium nitrate and potassium chlorate.',
+    '(b) Write separate equations for the reactions of the solid metals magnesium, aluminum, and iron with diatomic oxygen gas to yield the corresponding metal oxides. (Assume the iron oxide contains Fe<sup>3+</sup> ions.)'],
+  '(a) Ba(NO<sub>3</sub>)<sub>2</sub>, KClO<sub>3</sub>; (b) 2 Mg ( s ) + O 2 ( g ) ⟶ 2 MgO ( s ) ; 4 Al ( s ) + 3 O 2 ( g ) ⟶ 2 Al 2 O 3 ( s ) ; 4 Fe ( s ) + 3 O 2 ( g ) ⟶ 2 Fe 2 O 3 ( s )'),
+  exercise('q11', ['From the balanced molecular equations, write the complete ionic and net ionic equations for the following:',
+    '(a) Pb ( N O 3 ) 2 ( a q ) + H 2 SO 4 ( a q ) ⟶ PbSO 4 ( s ) + 2 HNO 3 ( a q )',
+    '(b) CaCO 3 ( s ) + H 2 SO 4 ( a q ) ⟶ CaSO 4 ( s ) + CO 2 ( g ) + H 2 O ( l )'],
+  '(a) Pb<sup>2+</sup> ( a q ) + 2 NO 3<sup>−</sup> ( a q ) + 2 H<sup>+</sup> ( a q ) + SO 4<sup>2−</sup> ( a q ) ⟶ PbSO 4 ( s ) + 2 H<sup>+</sup> ( a q ) + 2 NO 3<sup>−</sup> ( a q ) (complete) Pb<sup>2+</sup> ( a q ) + SO 4<sup>2−</sup> ( a q ) ⟶ PbSO 4 ( s ) (net) '
+    + '(b) CaCO 3 ( s ) + 2 H<sup>+</sup> ( a q ) + SO 4<sup>2−</sup> ( a q ) ⟶ CaSO 4 ( s ) + CO 2 ( g ) + H 2 O ( l ) (complete) CaCO 3 ( s ) + 2 H<sup>+</sup> ( a q ) + SO 4<sup>2−</sup> ( a q ) ⟶ CaSO 4 ( s ) + CO 2 ( g ) + H 2 O ( l ) (net)'),
+  exercise('q28', ['Balance each of the following equations according to the half-reaction method:',
+    '(a) H 2 S ( g ) + Hg 2<sup>2+</sup> ( a q ) ⟶ H g ( l ) + S ( s ) (in acid)', '(b) MnO 4<sup>2−</sup> ( a q ) ⟶ MnO 4<sup>−</sup> ( a q ) + MnO 2 ( s ) (in base)'],
+  '(a) H 2 S ( g ) + Hg 2<sup>2+</sup> ( a q ) + 2 H 2 O ( l ) ⟶ 2 Hg ( l ) + S ( s ) + 2 H 3 O<sup>+</sup> ( a q ); (b) 3 MnO 4<sup>2−</sup> ( a q ) + 2 H 2 O ( l ) ⟶ 2 MnO 4<sup>−</sup> ( a q ) + 4 OH<sup>−</sup> ( a q ) + MnO 2 ( s ) (in base)'),
+));
+const ch4 = keyedUnits(CH4);
+const equation = (question, answer) => judgeKeyedUnit({ type: 'textin', question, answer, form: 'equation' }, ch4);
+const FIREWORKS = 'Colorful fireworks often involve the decomposition of barium nitrate and potassium chlorate and the reaction of the metals magnesium, aluminum, and iron with oxygen.';
+const METALS = `${FIREWORKS} Write separate equations for the reactions of the solid metals magnesium, aluminum, and iron with diatomic oxygen gas to yield the corresponding metal oxides. (Assume the iron oxide contains Fe³⁺ ions.)`;
+const ionic = (part, which) => `From the balanced molecular equation, write the complete ionic and net ionic equations for the following: ${part}. Enter the ${which} ionic equation.`;
+
+test('an equation item reads in the book\'s print and is held to its own equation (4.1, 4.2)', () => {
+  const balance = 'Balance the following equation: PCl₅(s) + H₂O(l) ⟶ POCl₃(l) + HCl(aq).';
+  assert.equal(equation(balance, 'PCl₅(s) + H₂O(l) ⟶ POCl₃(l) + 2HCl(aq)').status, 'confirmed');
+  assert.equal(equation(balance, 'PCl₅(s) + H₂O(l) ⟶ POCl₃(l) + 2HCl(aq)').exercise.id, 'q3(a)');
+  assert.equal(equation(balance, 'PCl₅(s) + H₂O(l) ⟶ POCl₃(l) + 3HCl(aq)').status, 'key-differs', 'a coefficient changed');
+  assert.equal(equation(balance, 'H₂(g) + I₂(s) ⟶ 2HI(s)').status, 'key-differs', 'the sibling part\'s equation');
+  assert.equal(equation(balance, 'PCl₅(s) + H₂O(l) ⟶ POCl₃(l) + HCl(aq)').status, 'key-differs', 'the unbalanced stem equation');
+  // "( a q )" and "H g ( l )" are the page's (aq) and Hg(l): before, these parts were no exercise at all.
+  const half = 'Balance the following equation according to the half-reaction method:';
+  assert.equal(equation(`${half} H₂S(g) + Hg₂²⁺(aq) ⟶ Hg(l) + S(s) (in acid).`, 'H₂S(g) + Hg₂²⁺(aq) + 2H₂O(l) ⟶ 2Hg(l) + S(s) + 2H₃O⁺(aq)').exercise.id, 'q28(a)');
+  // The answer's trailing "(in base)" is the stem's condition, not a species.
+  assert.equal(equation(`${half} MnO₄²⁻(aq) ⟶ MnO₄⁻(aq) + MnO₂(s) (in base).`, '3MnO₄²⁻(aq) + 2H₂O(l) ⟶ 2MnO₄⁻(aq) + 4OH⁻(aq) + MnO₂(s)').status, 'confirmed');
+  assert.equal(equation(`${half} MnO₄²⁻(aq) ⟶ MnO₄⁻(aq) + MnO₂(s) (in base).`, '3MnO₄²⁻(aq) + 2H₂O(l) ⟶ 2MnO₄⁻(aq) + 2OH⁻(aq) + MnO₂(s)').status, 'key-differs');
+});
+
+test('several equations to one part: each item is held to the one its closing sentence asks (4.1)', () => {
+  const eqs = { Mg: '2Mg(s) + O₂(g) ⟶ 2MgO(s)', Al: '4Al(s) + 3O₂(g) ⟶ 2Al₂O₃(s)', Fe: '4Fe(s) + 3O₂(g) ⟶ 2Fe₂O₃(s)' };
+  for (const [symbol, name] of [['Mg', 'magnesium'], ['Al', 'aluminum'], ['Fe', 'iron']]) {
+    const question = `${METALS} Enter the equation for the reaction of ${name}.`;
+    assert.equal(equation(question, eqs[symbol]).status, 'confirmed', name);
+    assert.equal(equation(question, eqs[symbol]).exercise.id, 'q7(b)');
+    for (const other of Object.keys(eqs).filter((key) => key !== symbol)) assert.equal(equation(question, eqs[other]).status, 'key-differs', `${other} under ${name}`);
+  }
+  // Labelled after, with nothing between them: "… (complete) … (net)".
+  assert.deepEqual(answerEquations(ch4.find((unit) => unit.id === 'q11(a)').answer).map((entry) => entry.label), ['complete', 'net']);
+  const lead = 'Pb(NO₃)₂(aq) + H₂SO₄(aq) ⟶ PbSO₄(s) + 2HNO₃(aq)';
+  const complete = 'Pb²⁺(aq) + 2NO₃⁻(aq) + 2H⁺(aq) + SO₄²⁻(aq) ⟶ PbSO₄(s) + 2H⁺(aq) + 2NO₃⁻(aq)';
+  const net = 'Pb²⁺(aq) + SO₄²⁻(aq) ⟶ PbSO₄(s)';
+  assert.equal(equation(ionic(lead, 'complete'), complete).status, 'confirmed');
+  assert.equal(equation(ionic(lead, 'complete'), complete).exercise.id, 'q11(a)', 'the source\'s "N O 3" and the page\'s glued "2HNO₃" read as the part');
+  assert.equal(equation(ionic(lead, 'net'), net).status, 'confirmed');
+  assert.equal(equation(ionic(lead, 'complete'), net).status, 'key-differs', 'the net ionic key under the complete ionic stem');
+  assert.equal(equation(ionic(lead, 'net'), complete).status, 'key-differs');
+  // Two identical equations: both items keyed with it are right.
+  const same = 'CaCO₃(s) + 2H⁺(aq) + SO₄²⁻(aq) ⟶ CaSO₄(s) + CO₂(g) + H₂O(l)';
+  const carbonate = 'CaCO₃(s) + H₂SO₄(aq) ⟶ CaSO₄(s) + CO₂(g) + H₂O(l)';
+  assert.equal(equation(ionic(carbonate, 'complete'), same).status, 'confirmed');
+  assert.equal(equation(ionic(carbonate, 'net'), same).status, 'confirmed');
+  // Two formulas listed bare: held by the element the closing sentence names.
+  const formulas = `${FIREWORKS} Write the formulas of barium nitrate and potassium chlorate.`;
+  const formula = (question, answer) => judgeKeyedUnit({ type: 'textin', question, answer, form: 'formula' }, ch4).status;
+  assert.equal(formula(`${formulas} Enter the formula of barium nitrate.`, 'Ba(NO₃)₂'), 'confirmed');
+  assert.equal(formula(`${formulas} Enter the formula of barium nitrate.`, 'KClO₃'), 'key-differs');
+  assert.equal(formula(`${formulas} Enter the formula of potassium chlorate.`, 'KClO₃'), 'confirmed');
+  assert.equal(formula(`${formulas} Enter the formula of potassium chlorate.`, 'Ba(NO₃)₂'), 'key-differs');
+});
+
+test('a part is required by an item of its own, never by a sibling\'s item that prints most of its words (4.1)', () => {
+  const textin = (question, answer, form) => `{{< textin question="${question}" answer="${answer}" answerForm="${form}" hint="h" >}}\n\n`;
+  const metals = ['magnesium', 'aluminum', 'iron'].map((name, index) => textin(`${METALS} Enter the equation for the reaction of ${name}.`,
+    ['2Mg(s) + O₂(g) ⟶ 2MgO(s)', '4Al(s) + 3O₂(g) ⟶ 2Al₂O₃(s)', '4Fe(s) + 3O₂(g) ⟶ 2Fe₂O₃(s)'][index], 'equation')).join('');
+  const formulas = textin(`${FIREWORKS} Write the formulas of barium nitrate and potassium chlorate. Enter the formula of barium nitrate.`, 'Ba(NO₃)₂', 'formula');
+  const status = (page, id) => coverage(page, sourceExercises(CH4), { keyedOnly: true }).find((verdict) => verdict.id === id).status;
+  assert.equal(status(formulas + metals, 'q7(a)'), 'rendered');
+  assert.equal(status(formulas + metals, 'q7(b)'), 'rendered');
+  assert.equal(status(metals, 'q7(a)'), 'missing', '(b)\'s three items print the lead-in that names both compounds; none of them is (a)');
+});
+
+test('a fill-in is held to the one number its closing sentence names: an element\'s oxidation state, an amount of a substance (4.2, 4.3)', () => {
+  const module = cnxml(
+    example('x3', 'Assign oxidation states to the elements whose atoms are underlined in each of the following compounds or ions: (a) K <emphasis effect="underline">N</emphasis> O<sub>3</sub> (b) N _ H<sub>4</sub><sup>+</sup>', '(a) N, +5; (b) N, −3')
+    + exercises(
+      exercise('o6', ['Determine the oxidation states of the elements in the compounds listed. None of the oxygen-containing compounds are peroxides or superoxides.', '(a) H<sub>3</sub>PO<sub>4</sub>', '(b) In<sub>2</sub>S<sub>3</sub>'],
+        '(a) H +1, P +5, O −2; (b) In +3, S −2'),
+      // An unkeyed exercise whose parts the next one borrows (4.3's (1) and (2)).
+      exercise('m1', ['Write the balanced equation, then outline the steps necessary to determine the information requested in each of the following:',
+        '(a) The number of moles and the mass of chlorine, Cl<sub>2</sub>, required to react with 10.0 g of sodium metal, Na, to produce sodium chloride, NaCl.',
+        '(b) The number of moles and the mass of copper(II) carbonate needed to produce 1.500 kg of copper(II) oxide. (CO<sub>2</sub> is the other product.)'], null),
+      exercise('m2', ['Determine the number of moles and the mass requested for each reaction in <link target-id="m1"/>.'],
+        '(a) 0.435 mol Na, 0.217 mol Cl<sub>2</sub>, 15.4 g Cl<sub>2</sub>; (b) 18.86 mol CuO, 2.330 kg CuCO<sub>3</sub>'),
+    ),
+  );
+  const units = keyedUnits(module);
+  const fill = (question, answer, form = '') => judgeKeyedUnit({ type: 'fillin', question, answer, form }, units).status;
+  const signed = 'as a signed number, the sign first, as +2 or −1.';
+  const acid = `Determine the oxidation states of the elements in the following compound. None of the oxygen-containing compounds are peroxides or superoxides. H₃PO₄. Enter the oxidation state of P ${signed}`;
+  assert.equal(fill(acid, '5', 'whole-number'), 'confirmed');
+  assert.equal(fill(acid, '1', 'whole-number'), 'key-differs', 'H\'s number under P\'s closing sentence');
+  const oxygen = acid.replace('of P', 'of O');
+  assert.equal(fill(oxygen, '-2', 'whole-number'), 'confirmed');
+  assert.equal(fill(oxygen, '−2', 'whole-number'), 'confirmed', 'a minus sign as the source prints it');
+  assert.equal(fill(oxygen, '2', 'whole-number'), 'key-differs', 'the sign is part of the key');
+  assert.equal(fill(acid.replace('H₃PO₄', 'In₂S₃').replace('of P', 'of In'), '3', 'whole-number'), 'confirmed', '"In" the symbol, not the word');
+  assert.equal(fill(acid.replace('H₃PO₄', 'In₂S₃').replace('of P', 'of In'), '-2', 'whole-number'), 'key-differs');
+  // The underlined atom: the page's <u>N</u> and the source's lone MathML underline both split nothing.
+  const underlined = (formula) => `Assign the oxidation state to the element whose atom is underlined in the following compound or ion: ${formula}. Enter the oxidation state of N ${signed}`;
+  assert.equal(fill(underlined('K<u>N</u>O₃'), '5', 'whole-number'), 'confirmed');
+  assert.equal(fill(underlined('<u>N</u>H₄⁺'), '-3', 'whole-number'), 'confirmed');
+  assert.equal(fill(underlined('<u>N</u>H₄⁺'), '3', 'whole-number'), 'key-differs');
+
+  const chlorine = 'Determine the number of moles and the mass requested for the following reaction: The number of moles and the mass of chlorine, Cl₂, required to react with 10.0 g of sodium metal, Na, to produce sodium chloride, NaCl.';
+  assert.equal(fill(`${chlorine} Enter the number of moles of Cl₂.`, '0.217'), 'confirmed');
+  assert.equal(fill(`${chlorine} Enter the number of moles of Cl₂.`, '0.435'), 'key-differs', 'the sodium\'s amount, which the answer also prints');
+  assert.equal(fill(`${chlorine} Enter the mass of Cl₂ in grams.`, '15.4'), 'confirmed');
+  assert.equal(fill(`${chlorine} Enter the mass of Cl₂ in grams.`, '0.217'), 'key-differs');
+  // The answer prints the moles of the oxide, equal 1:1 to the carbonate's asked: read by the unit alone.
+  const copper = 'Determine the number of moles and the mass requested for the following reaction: The number of moles and the mass of copper(II) carbonate needed to produce 1.500 kg of copper(II) oxide. (CO₂ is the other product.)';
+  assert.equal(fill(`${copper} Enter the number of moles of CuCO₃.`, '18.86'), 'confirmed');
+  assert.equal(fill(`${copper} Enter the number of moles of CuCO₃.`, '2.330'), 'key-differs');
+  assert.equal(fill(`${copper} Enter the mass of CuCO₃ in kilograms.`, '2.330'), 'confirmed');
+
+  // Each borrowed part carried as two items: both are the keyed exercise's, and the unkeyed one is omitted.
+  const fillin = (question, answer) => `{{< fillin question="${question}" answer="${answer}" hint="h" >}}\n\n`;
+  const page = fillin(`${chlorine} Enter the number of moles of Cl₂.`, '0.217') + fillin(`${chlorine} Enter the mass of Cl₂ in grams.`, '15.4')
+    + fillin(`${copper} Enter the number of moles of CuCO₃.`, '18.86') + fillin(`${copper} Enter the mass of CuCO₃ in kilograms.`, '2.330');
+  assert.deepEqual(coverage(page, sourceExercises(module), { keyedOnly: true }).filter((verdict) => /^m/.test(verdict.id)).map((verdict) => [verdict.id, verdict.status]),
+    [['m1(a)', 'omitted'], ['m1(b)', 'omitted'], ['m2(a)', 'rendered'], ['m2(b)', 'rendered']]);
+});
+
+test('roles said in sentences, a limiting reactant, and a role asked in a followup (4.2, 4.4)', () => {
+  const module = cnxml(
+    example('x4', 'This equation describes the production of tin(II) chloride: Sn ( s ) + 2 HCl ( g ) ⟶ SnCl 2 ( s ) + H 2 ( g ) Is this a redox reaction? If so, provide a more specific name for the reaction if appropriate, and identify the oxidant and reductant.',
+      'Yes, a single-replacement reaction. Sn(<emphasis effect="italics">s</emphasis>) is the reductant, HCl(<emphasis effect="italics">g</emphasis>) is the oxidant.')
+    + exercises(
+      exercise('r8', ['Classify the following as acid-base reactions or oxidation-reduction reactions:', '(a) Na 2 S ( a q ) + 2 HCl ( a q ) ⟶ 2 NaCl ( a q ) + H 2 S ( g )', '(b) Mg ( s ) + Cl 2 ( g ) ⟶ MgCl 2 ( s )'],
+        '(a) acid-base; (b) oxidation-reduction: Mg is oxidized, Cl<sub>2</sub> is reduced'),
+      exercise('l2', ['What is the limiting reactant in a reaction that produces sodium chloride from 8 g of sodium and 8 g of diatomic chlorine?'], 'The limiting reactant is Cl2.'),
+      exercise('l12', ['Outline the steps needed to determine the limiting reactant when 0.50 mol of Cr and 0.75 mol of H<sub>3</sub>PO<sub>4</sub> react according to the following chemical equation. 2 Cr + 2 H 3 PO 4 ⟶ 2 CrPO 4 + 3 H 2 Determine the limiting reactant.'],
+        'The conversion needed is mol Cr ⟶ mol H 3 PO 4 . Then compare the amount of Cr to the amount of acid present. Cr is the limiting reactant.'),
+    ),
+  );
+  const units = keyedUnits(module);
+  const choose = (question, answer, options) => judgeKeyedUnit({ type: 'multiplechoice', question, answer, options }, units).status;
+  const classify = 'Classify the following as an acid-base reaction or an oxidation-reduction reaction: Mg(s) + Cl₂(g) ⟶ MgCl₂(s).';
+  assert.equal(choose(classify, 'oxidation-reduction', ['acid-base', 'oxidation-reduction']), 'confirmed');
+  assert.equal(choose(`${classify} Which reactant is oxidized?`, 'Mg', ['Mg', 'Cl₂']), 'confirmed', 'the answer names both reactants, each with its role');
+  assert.equal(choose(`${classify} Which reactant is oxidized?`, 'Cl₂', ['Mg', 'Cl₂']), 'key-differs');
+  assert.equal(choose(`${classify} Which reactant is reduced?`, 'Cl₂', ['Mg', 'Cl₂']), 'confirmed');
+  const tin = 'This equation describes the production of tin(II) chloride: Sn(s) + 2HCl(g) ⟶ SnCl₂(s) + H₂(g). Is this a redox reaction? If so, provide a more specific name for the reaction if appropriate, and identify the oxidant and reductant.';
+  assert.equal(choose(`${tin} Which reactant is the oxidant?`, 'HCl', ['Sn', 'HCl']), 'confirmed');
+  assert.equal(choose(`${tin} Which reactant is the oxidant?`, 'Sn', ['Sn', 'HCl']), 'key-differs');
+  assert.equal(choose(tin, 'yes', ['yes', 'no']), 'confirmed');
+  // The formula the answer prints names the option that holds its element's name.
+  const sodium = 'What is the limiting reactant in a reaction that produces sodium chloride from 8 g of sodium and 8 g of diatomic chlorine?';
+  assert.equal(choose(sodium, 'diatomic chlorine', ['sodium', 'diatomic chlorine']), 'confirmed');
+  assert.equal(choose(sodium, 'sodium', ['sodium', 'diatomic chlorine']), 'key-differs');
+  const chromium = 'Outline the steps needed to determine the limiting reactant when 0.50 mol of Cr and 0.75 mol of H₃PO₄ react according to the following chemical equation. 2Cr + 2H₃PO₄ ⟶ 2CrPO₄ + 3H₂. Determine the limiting reactant.';
+  assert.equal(choose(chromium, 'Cr', ['Cr', 'H₃PO₄']), 'confirmed', '"Cr is the limiting reactant", the conversion before it aside');
+  assert.equal(choose(chromium, 'H₃PO₄', ['Cr', 'H₃PO₄']), 'key-differs');
+
+  // The role item stands under the redox part alone: it must be held in a followup, though it is a multiple choice itself.
+  const mc = (question, answer, options) => `{{< multiplechoice question="${question}" answer="${answer}" hint="h" >}}\n${options.join('\n')}\n{{< /multiplechoice >}}\n\n`;
+  const acidBase = mc('Classify the following as an acid-base reaction or an oxidation-reduction reaction: Na₂S(aq) + 2HCl(aq) ⟶ 2NaCl(aq) + H₂S(g).', 'acid-base', ['acid-base', 'oxidation-reduction']);
+  const role = mc(`${classify} Which reactant is oxidized?`, 'Mg', ['Mg', 'Cl₂']);
+  const records = (page) => pageItems(page).map((item) => {
+    const verdict = judgeKeyedUnit(item, units);
+    return { group: verdict.exercise.group, unit: verdict.exercise.id, type: item.type, line: item.line, options: item.options, followup: Boolean(item.followup) };
+  });
+  const redox = mc(classify, 'oxidation-reduction', ['acid-base', 'oxidation-reduction']);
+  assert.deepEqual(conditionalUnwrapped(records(acidBase + redox + `{{< followup >}}\n${role}{{< /followup >}}\n`)), []);
+  assert.deepEqual(conditionalUnwrapped(records(acidBase + redox + role)).map((offender) => offender.line), [records(acidBase + redox + role).at(-1).line]);
+});
+
+test('formulas said in sentences, and a selfcheck that prints the source\'s equations in the book\'s print (4.2, 4.5)', () => {
+  const module = cnxml(exercises(
+    exercise('s8', ['A 0.025-g sample of a compound composed of boron and hydrogen, with a molecular mass of ~28 amu, burns spontaneously when exposed to air, producing 0.063 g of B<sub>2</sub>O<sub>3</sub>. What are the empirical and molecular formulas of the compound?'],
+      'The empirical formula is BH<sub>3</sub>. The molecular formula is B<sub>2</sub>H<sub>6</sub>.'),
+    exercise('s14', ['Complete and balance the equations for the following acid-base neutralization reactions. In some cases, there may be more than one correct answer, depending on the amounts of reactants used.', '(a) Mg (OH) 2 ( s ) + HClO 4 ( a q ) ⟶', '(b) SrO ( s ) + H 2 SO 4 ( l ) ⟶'],
+      '(a) Mg (OH) 2 ( s ) + 2 HClO 4 ( a q ) ⟶ Mg<sup>2+</sup> ( a q ) + 2 ClO 4<sup>−</sup> ( a q ) + 2 H 2 O ( l ) ; (b) SrO ( s ) + H 2 SO 4 ( l ) ⟶ SrSO 4 ( s ) + H 2 O'),
+  ));
+  const units = keyedUnits(module);
+  const boron = 'A 0.025-g sample of a compound composed of boron and hydrogen, with a molecular mass of ~28 amu, burns spontaneously when exposed to air, producing 0.063 g of B₂O₃. What are the empirical and molecular formulas of the compound?';
+  const formula = (question, answer) => judgeKeyedUnit({ type: 'textin', question, answer, form: 'formula' }, units).status;
+  assert.equal(formula(`${boron} Enter the empirical formula.`, 'BH₃'), 'confirmed');
+  assert.equal(formula(`${boron} Enter the molecular formula.`, 'B₂H₆'), 'confirmed');
+  assert.equal(formula(`${boron} Enter the empirical formula.`, 'B₂H₆'), 'key-differs');
+  const lead = 'Complete and balance the equation for the following acid-base neutralization reaction. In some cases, there may be more than one correct answer, depending on the amounts of reactants used.';
+  const selfcheck = (question, model) => judgeKeyedUnit({ type: 'selfcheck', question, model }, units).status;
+  assert.equal(selfcheck(`${lead} Mg(OH)₂(s) + HClO₄(aq) ⟶.`, 'Mg(OH)₂(s) + 2HClO₄(aq) ⟶ Mg²⁺(aq) + 2ClO₄⁻(aq) + 2H₂O(l)'), 'verbatim');
+  assert.equal(selfcheck(`${lead} Mg(OH)₂(s) + HClO₄(aq) ⟶.`, 'SrO(s) + H₂SO₄(l) ⟶ SrSO₄(s) + H₂O'), 'diverges', 'another part\'s equation');
+});
+
+test('a reaction printed as $\\ce{…}$, whole or split after its arrow, reads as the same reaction in Unicode (chapter 4 stems)', () => {
+  assert.equal(unlinked('$\\ce{Na2S(aq) + 2HCl(aq) ->}$ $\\ce{2NaCl(aq) + H2S(g)}$'), 'Na₂S(aq) + 2HCl(aq) ⟶ 2NaCl(aq) + H₂S(g)');
+  assert.equal(unlinked('$\\ce{SO4^2- + Hg2^{2+} + Cl-(aq)}$'), 'SO₄²⁻ + Hg₂²⁺ + Cl⁻(aq)');
+  assert.equal(unlinked('$\\ce{CuSO4*5H2O}$ and $\\ce{FeCl3.2H2O}$ and $\\ce{^{7}_{3}Li}$'), 'CuSO₄·5H₂O and FeCl₃·2H₂O and ⁷₃Li');
+  // 4.2's classification exercise as the CNXML prints it, carried as the page now carries it.
+  const module = cnxml(exercises(
+    exercise('fs-idp153725776', ['Classify the following as acid-base reactions or oxidation-reduction reactions:',
+      '(a) Na 2 S ( a q ) + 2 HCl ( a q ) ⟶ 2 NaCl ( a q ) + H 2 S ( g )', '(b) 2 Na ( s ) + 2 HCl ( a q ) ⟶ 2 NaCl ( a q ) + H 2 ( g )',
+      '(c) Mg ( s ) + Cl 2 ( g ) ⟶ MgCl 2 ( s )'],
+    '(a) acid-base; (b) oxidation-reduction: Na is oxidized, H<sup>+</sup> is reduced; (c) oxidation-reduction: Mg is oxidized, Cl<sub>2</sub> is reduced'),
+    exercise('fs-idm9932800', ['The military has experimented with lasers that produce very intense light when fluorine combines explosively with hydrogen. What is the balanced equation for this reaction?'], 'H 2 ( g ) + F 2 ( g ) ⟶ 2HF ( g )'),
+  ));
+  const units = keyedUnits(module);
+  const lead = 'Classify the following as an acid-base reaction or an oxidation-reduction reaction:';
+  const parts = { a: '$\\ce{Na2S(aq) + 2HCl(aq) ->}$ $\\ce{2NaCl(aq) + H2S(g)}$', b: '$\\ce{2Na(s) + 2HCl(aq) ->}$ $\\ce{2NaCl(aq) + H2(g)}$', c: '$\\ce{Mg(s) + Cl2(g) ->}$ $\\ce{MgCl2(s)}$' };
+  const choose = (question, answer, options = ['acid-base', 'oxidation-reduction']) => judgeKeyedUnit({ type: 'multiplechoice', question, answer, options }, units);
+  assert.equal(choose(`${lead} ${parts.a}.`, 'acid-base').exercise.id, 'fs-idp153725776(a)');
+  assert.equal(choose(`${lead} ${parts.a}.`, 'acid-base').status, 'confirmed');
+  assert.equal(choose(`${lead} ${parts.a}.`, 'oxidation-reduction').status, 'key-differs');
+  assert.equal(choose(`${lead} ${parts.b}.`, 'oxidation-reduction').exercise.id, 'fs-idp153725776(b)');
+  assert.equal(choose(`${lead} ${parts.c}. Which reactant is oxidized?`, 'Mg', ['Mg', 'Cl₂']).status, 'confirmed');
+  assert.equal(choose(`${lead} ${parts.c}. Which reactant is oxidized?`, 'Cl₂', ['Mg', 'Cl₂']).status, 'key-differs');
+  assert.equal(choose(`${lead} ${parts.b}. Which reactant is oxidized?`, 'Na', ['Na', 'HCl']).exercise.id, 'fs-idp153725776(b)');
+  // An unlettered stem and an equation key, the same.
+  const laser = 'The military has experimented with lasers that produce very intense light when fluorine combines explosively with hydrogen. What is the balanced equation for this reaction?';
+  assert.equal(judgeKeyedUnit({ type: 'textin', question: laser, answer: 'H₂(g) + F₂(g) ⟶ 2HF(g)', form: 'equation' }, units).status, 'confirmed');
+  // Coverage: every part rendered by its own item, and a part whose equation is not printed is missing.
+  const mc = (question, answer, options = ['acid-base', 'oxidation-reduction']) => `{{< multiplechoice\n  question="${question}"\n  answer="${answer}"\n  hint="h"\n>}}\n${options.join('\n')}\n{{< /multiplechoice >}}\n\n`;
+  const page = mc(`${lead} ${parts.a}.`, 'acid-base') + mc(`${lead} ${parts.b}.`, 'oxidation-reduction')
+    + `{{< followup >}}\n${mc(`${lead} ${parts.b}. Which reactant is oxidized?`, 'Na', ['Na', 'HCl'])}{{< /followup >}}\n\n`;
+  const status = (markdown) => coverage(markdown, sourceExercises(module), { keyedOnly: true }).filter((verdict) => verdict.id.startsWith('fs-idp153725776')).map((verdict) => verdict.status);
+  assert.deepEqual(status(page + mc(`${lead} ${parts.c}.`, 'oxidation-reduction')), ['rendered', 'rendered', 'rendered']);
+  assert.deepEqual(status(page), ['rendered', 'rendered', 'missing']);
+});
+
+test('a selfcheck model answer that prints an equation the source does not is a correction, however many words it shares (4.2)', () => {
+  const units = keyedUnits(cnxml(exercises(exercise('fs-idp89462576', ['Complete and balance the equations of the following reactions, each of which could be used to remove hydrogen sulfide from natural gas:',
+    '(a) Ca ( OH ) 2 ( s ) + H 2 S ( g ) ⟶', '(b) Na 2 CO 3 ( a q ) + H 2 S ( g ) ⟶'],
+  '(a) Ca (OH) 2 ( s ) + H 2 S ( g ) ⟶ CaS ( s ) + 2 H 2 O ( l ) ; (b) Na 2 CO 3 ( a q ) + H 2 S ( g ) ⟶ Na 2 S ( a q ) + CO 2 ( g ) + H 2 O ( l )'))));
+  const question = 'Complete and balance the equation of the following reaction, which could be used to remove hydrogen sulfide from natural gas: Na₂CO₃(aq) + H₂S(g) ⟶.';
+  const selfcheck = (model) => judgeKeyedUnit({ type: 'selfcheck', question, model }, units);
+  assert.ok(['verbatim', 'reworded'].includes(selfcheck('Na₂CO₃(aq) + H₂S(g) ⟶ Na₂S(aq) + CO₂(g) + H₂O(l)').status), 'the source\'s own equation');
+  assert.equal(selfcheck('Na₂CO₃(aq) + H₂S(g) ⟶ NaHS(aq) + NaHCO₃(aq).').status, 'diverges');
+  assert.match(selfcheck('Na₂CO₃(aq) + H₂S(g) ⟶ NaHS(aq) + NaHCO₃(aq).').detail, /an equation source fs-idp89462576\(b\) does not print/);
+});

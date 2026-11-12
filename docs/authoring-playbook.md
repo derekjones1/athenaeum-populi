@@ -545,7 +545,10 @@ exercise that asks the same first question of every part and a further
 question of only the parts answered one way, where the further items left in
 the open would give the first answer away by being there (*Chemistry 2.6*:
 six compounds classed ionic or covalent, the ion symbols asked of the four
-ionic ones). The items inside are ordinary items — every gate, the lint and
+ionic ones), or a yes/no question whose source asks a further question
+only "if so" (*Chemistry 4.2*: "Is this a redox reaction? If so, …
+identify the oxidant"), where the further item standing in the open
+answers the first *(Chemistry chapter 4)*. The items inside are ordinary items — every gate, the lint and
 the practice counts read them as if the wrapper were not there — and each
 still carries its whole stem. It holds items and nothing else: prose inside
 would vanish with them. The lint refuses a followup that is unclosed,

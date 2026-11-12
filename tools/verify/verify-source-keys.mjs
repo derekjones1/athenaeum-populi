@@ -1040,6 +1040,55 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     erratum: 2998,
     reason: 'the source answers "5.9 × 10^−7 mol FeSO4" for 325 mL of 1.8 × 10^−6 M FeSO4; the product is exactly 5.85 × 10^−7, a tie that Section 1.5\'s round-half-to-even rule, which this module applies to 1.325 mol ("properly rounded to 1.32 mol"), rounds to 5.8 × 10^−7; the mass keyed beside it, 8.9 × 10^−5 g, is the source\'s',
   },
+  {
+    page: 'content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/01-writing-and-balancing-chemical-equations.md',
+    exercise: 'fs-idp122928448(c)',
+    kind: 'key',
+    erratum: 3003,
+    reason: 'the source solution prints "MgC1₂(aq) + 2NaOH(aq) ⟶ Mg(OH)₂(s) + 2NaCl(aq)" for magnesium chloride and sodium hydroxide, with the digit one where the lowercase l of Cl belongs: no element has the symbol C1, the stem names "magnesium chloride", and the same answer writes "NaCl" correctly, so the equation text-in keys MgCl₂(aq) + 2NaOH(aq) ⟶ Mg(OH)₂(s) + 2NaCl(aq)',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/02-classifying-chemical-reactions.md',
+    exercise: 'fs-idp89462576(b)',
+    kind: 'solution',
+    erratum: 3007,
+    reason: 'the source solution prints "Na2CO3(aq) + H2S(g) ⟶ Na2S(aq) + CO2(g) + H2O(l)" for sodium carbonate and hydrogen sulfide; by the book\'s own Appendix H, H2S (Ka 8.9 × 10^−8) is a weaker acid than H2CO3 (4.3 × 10^−7) and HS⁻ (1.0 × 10^−19) far weaker than HCO3⁻ (4.7 × 10^−11), so sulfide and carbon dioxide do not form and the reaction stops at NaHS + NaHCO3; the self-check\'s model answer is Na₂CO₃(aq) + H₂S(g) ⟶ NaHS(aq) + NaHCO₃(aq)',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/03-reaction-stoichiometry.md',
+    exercise: 'fs-idp147780304(c)',
+    kind: 'key',
+    erratum: 3015,
+    reason: 'the source answers "6.8 × 10^2 g NaNO3" for the mass required to produce 128 g of oxygen: two figures where the data give three, and the same part\'s moles are printed to three (8.00), so the mass fill-in keys 6.80 × 10^2, the source\'s value written to the figures its data give',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/03-reaction-stoichiometry.md',
+    exercise: 'fs-idp147780304(d)',
+    kind: 'key',
+    erratum: 3016,
+    reason: 'the source answers "1665 mol CO2" for the combustion of 20.0 kg of carbon: four figures from data that give three, the same part\'s mass (73.3 kg) having three, so the moles fill-in keys 1.67 × 10^3',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/03-reaction-stoichiometry.md',
+    exercise: 'fs-idp272460112(b)',
+    kind: 'key',
+    erratum: 3018,
+    reason: 'the source answers "1.25 mol GaCl3" for 2.6 L of 1.44 M HCl: three figures from a two-figure volume, the same part\'s mass (2.2 × 10^2 g) having two, so the moles fill-in keys 1.2',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/05-quantitative-chemical-analysis.md',
+    exercise: 'fs-idp204697696',
+    kind: 'key',
+    erratum: 3026,
+    reason: 'the source answers "34.99 mL KOH" for 40.00 mL of 0.0656 M H3PO4 titrated with 0.1500 M KOH: four figures from a three-figure molarity (the calculation gives 34.987), as no other numeric key of the module does, so the fill-in keys 35.0',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/05-quantitative-chemical-analysis.md',
+    exercise: 'fs-idp80717680#check',
+    kind: 'key',
+    erratum: 3027,
+    reason: 'the Check Your Learning answer prints "0.2648 M" for 23.24 mL of 0.09113 M KMnO4 against 20.00 mL of oxalic acid; the data give 23.24 × 0.09113 × 5/2 ÷ 20.00 = 0.264733, which is 0.2647 M to four figures (0.2648 follows from rounding the intermediate to 2.118 mmol), so the fill-in keys 0.2647 with the one-unit allowance, which still grades the source\'s 0.2648 right',
+  },
 ]);
 
 /* ---- source side ---------------------------------------------------------- */
@@ -1965,6 +2014,8 @@ export function sameNumeral(a, b) {
 
 /** A label in words set after a formula: " (empirical formula)". A state symbol ("(aq)", "(s)") is no label. */
 const LABEL_AFTER = /\s*\(([A-Za-z][a-z]{2,}(?:\s+[a-z]{2,})*)\)\s*$/;
+/** An answer's pieces: between its commas and semicolons, and its sentences ("… is BH _3 . The …"). */
+const ANSWER_PIECES_SENTENCES = /[,;]|\s*\.\s+(?=[A-Z])/;
 
 /**
  * The formulas of an answer that labels each in words, before or after it —
@@ -1976,11 +2027,12 @@ const LABEL_AFTER = /\s*\(([A-Za-z][a-z]{2,}(?:\s+[a-z]{2,})*)\)\s*$/;
  */
 export function labelledFormulas(answer, form) {
   const entries = [];
-  for (const raw of String(answer ?? '').split(/[,;]/)) {
+  // …or in sentences: "The empirical formula is BH₃. The molecular formula is B₂H₆." (4.5).
+  for (const raw of String(answer ?? '').split(ANSWER_PIECES_SENTENCES)) {
     const piece = raw.trim().replace(/[.:]$/, '');
     const after = LABEL_AFTER.exec(piece);
-    const before = after ? null : /^((?:[A-Za-z][a-z]{2,}\s+)+)(?=\S)/.exec(piece);
-    const label = (after ? after[1] : before ? before[1] : '').trim().toLowerCase();
+    const before = after ? null : /^((?:[A-Za-z][a-z]{2,}\s+)+)(?:(?:is|are)\s+)?(?=\S)/.exec(piece);
+    const label = (after ? after[1] : before ? before[1] : '').trim().toLowerCase().replace(/^(?:the|an?) /, '');
     if (!label) continue;
     const formula = after ? piece.slice(0, after.index) : piece.slice(before[0].length);
     const canon = chemCanon(formula, form);
@@ -1996,6 +2048,138 @@ export function labelledFormulas(answer, form) {
 }
 
 const withoutArticle = (value) => foldedPlain(value).replace(/^(?:an?|the) /, '');
+
+/** Each element's English name and symbol, for a closing sentence that names an element ("Enter the equation for the reaction of magnesium."). */
+export const ELEMENT_BY_NAME = new Map(('hydrogen H helium He lithium Li beryllium Be boron B carbon C nitrogen N oxygen O fluorine F neon Ne '
+  + 'sodium Na magnesium Mg aluminum Al silicon Si phosphorus P sulfur S chlorine Cl argon Ar potassium K calcium Ca '
+  + 'scandium Sc titanium Ti vanadium V chromium Cr manganese Mn iron Fe cobalt Co nickel Ni copper Cu zinc Zn '
+  + 'gallium Ga germanium Ge arsenic As selenium Se bromine Br krypton Kr rubidium Rb strontium Sr yttrium Y zirconium Zr '
+  + 'niobium Nb molybdenum Mo technetium Tc ruthenium Ru rhodium Rh palladium Pd silver Ag cadmium Cd indium In tin Sn '
+  + 'antimony Sb tellurium Te iodine I xenon Xe cesium Cs barium Ba lanthanum La cerium Ce hafnium Hf tantalum Ta '
+  + 'tungsten W rhenium Re osmium Os iridium Ir platinum Pt gold Au mercury Hg thallium Tl lead Pb bismuth Bi '
+  + 'polonium Po astatine At radon Rn francium Fr radium Ra actinium Ac thorium Th uranium U plutonium Pu')
+  .split(' ').reduce((pairs, word, index, words) => (index % 2 ? pairs : [...pairs, [word, words[index + 1]]]), []));
+
+/** A label set before an equation with a colon ("complete ionic equation: …") or after it in parentheses ("… (net)", "… ( molecular )"); a state symbol, of one or two letters, is never one, nor a condition "(in base)". */
+const EQUATION_LABEL = /\(\s*([a-z]{3,}(?:\s+[a-z]{3,})*)\s*\)|\b([a-z]{3,}(?:\s+[a-z]{3,})*)\s*:/g;
+
+/**
+ * The equations an answer prints, in order, as `{ label, canon, printed }` —
+ * one per equation the grader's parser reads, `label` the words the answer
+ * names it by or ''. Chapter 4 prints several equations to one part in three
+ * ways: separated by semicolons (4.1's "2Mg + O₂ ⟶ 2MgO; 4Al + 3O₂ ⟶ …; 4Fe
+ * + …", one per metal), labelled before ("complete ionic equation: …, net
+ * ionic equation: …"), and labelled after with nothing between them ("…
+ * (complete) … (net)", one math element; "… ( molecular ) … ( complete ionic
+ * ) … (net ionic)"). A condition the answer repeats after an equation ("(in
+ * base)") is the stem's, not a species.
+ */
+export function answerEquations(answer) {
+  const text = String(answer ?? '');
+  const entries = [];
+  let at = 0;
+  let before = '';
+  const push = (segment, after) => {
+    for (const piece of segment.split(';')) {
+      const printed = piece.trim().replace(/^[,.]\s*|[,.]\s*$/g, '').replace(/\s*\(in [a-z ]+\)\s*$/, '').trim();
+      const canon = printed ? chemCanon(printed, 'equation') : null;
+      if (canon) entries.push({ label: (after || before).toLowerCase(), canon, printed });
+    }
+    before = '';
+  };
+  for (const match of text.matchAll(EQUATION_LABEL)) {
+    const segment = text.slice(at, match.index);
+    if (match[1]) push(segment, match[1]);
+    else { push(segment, ''); before = match[2]; }
+    at = match.index + match[0].length;
+  }
+  push(text.slice(at), '');
+  return entries;
+}
+
+/**
+ * Of an answer's several equations, the one an item's closing sentence asks
+ * for, or null when it names none: by a word only one equation's label holds
+ * ("Enter the net ionic equation." → the equation labelled "net ionic" or
+ * "net"), or, the equations unlabelled, by the one element it names whose
+ * symbol stands in exactly one of them ("Enter the equation for the reaction
+ * of magnesium." → the equation with Mg). Returns the equations it could be.
+ */
+function askedEquations(equations, question) {
+  // A sentence may close inside a parenthesis: "(Assume the iron oxide contains Fe³⁺ ions.) Enter …".
+  const closing = ` ${foldedPlain(String(question).split(/(?<=[.?!:][)”’"]?)\s+/).pop())} `;
+  const labels = [...new Set(equations.map((entry) => entry.label).filter(Boolean))];
+  const wordsOf = (label) => foldedPlain(label).split(' ').filter(Boolean);
+  const unique = (label) => wordsOf(label).filter((word) => labels.filter((other) => wordsOf(other).includes(word)).length === 1);
+  const byLabel = equations.filter((entry) => entry.label && unique(entry.label).some((word) => closing.includes(` ${word} `)));
+  if (byLabel.length && new Set(byLabel.map((entry) => entry.label)).size === 1) return byLabel;
+  if (labels.length) return null;
+  return byElement(equations, closing);
+}
+
+/**
+ * Of several printed formulas or equations (`{ printed }`), the one that
+ * holds the ONE element a closing sentence names, when exactly one does:
+ * "Enter the formula of barium nitrate." → of "Ba(NO₃)₂, KClO₃" the one with
+ * Ba (4.1). Null when the sentence names no element, or several, or the
+ * element stands in more than one.
+ */
+/** A formula as its characters, sub- and superscripts folded and spaces gone: "Cl _2" and "Cl₂" are "Cl2". */
+const formulaChars = (value) => String(value ?? '').normalize('NFKC').replace(/[\s_{}^$]/g, '').replace(/[−–]/g, '-');
+
+/**
+ * A fill-in key held to the ONE number of several that its closing sentence
+ * asks for, where the answer says which is which in a way the "3 protons, 4
+ * neutrons" reading above does not. Returns what was asked ("the number for
+ * P") when the key is not that number, else null.
+ *
+ *   An element's symbol before each signed number — "H +1, P +5, O −2" (4.2,
+ *   oxidation states): the item that closes "Enter the oxidation state of P
+ *   …" is keyed with P's number, sign and all.
+ *   A unit and a formula after each number — "0.435 mol Na, 0.217 mol Cl₂,
+ *   15.4 g Cl₂" (4.3): "Enter the number of moles of Cl₂." is keyed with the
+ *   amount in mol OF Cl₂, "Enter the mass of Cl₂ in grams." with the mass. A
+ *   formula the answer prints no amount of in that unit is read by the unit
+ *   alone: 4.3's "18.86 mol CuO, 2.330 kg CuCO₃" answers the moles of
+ *   CuCO₃ asked with the moles of CuO, which equal them (1:1).
+ */
+function heldNumber(answer, question, key) {
+  const closing = String(question).split(/(?<=[.?!][)”’"]?)\s+/).pop();
+  const bySymbol = [...String(answer).matchAll(/(?:^|[\s,;])([A-Z][a-z]?)\s*,?\s+([+−–-]\s?\d+)(?=\s*(?:[,;.]|$))/g)]
+    .map((match) => ({ symbol: match[1], numeral: printedNumerals(match[2].replace(/\s/g, ''))[0] })).filter((entry) => entry.numeral);
+  if (new Set(bySymbol.map((entry) => entry.symbol)).size >= 2) {
+    const asked = [...new Set(bySymbol.map((entry) => entry.symbol))]
+      .filter((symbol) => new RegExp(`(?<![A-Za-z])${symbol}(?![A-Za-z])`).test(closing));
+    if (asked.length === 1) {
+      return bySymbol.some((entry) => entry.symbol === asked[0] && sameNumeral(entry.numeral, key)) ? null : `the number for ${asked[0]}`;
+    }
+  }
+  const KINDS = { mol: 'moles', g: 'mass', kg: 'mass', mg: 'mass' };
+  const amounts = [];
+  for (const piece of String(answer).split(/[,;]/)) {
+    const [numeral] = printedNumerals(piece);
+    if (!numeral) continue;
+    const rest = /^\s*(mol|kg|mg|g)\b\s*(.*)$/.exec(piece.slice(piece.indexOf(numeral.printed) + numeral.printed.length));
+    if (rest) amounts.push({ numeral, kind: KINDS[rest[1]], formula: formulaChars(rest[2].replace(/[.;]\s*$/, '')) });
+  }
+  if (amounts.length < 2) return null;
+  const kind = /\bmoles?\b/i.test(closing) ? 'moles' : /\bmass\b/i.test(closing) ? 'mass' : null;
+  if (!kind) return null;
+  const ofWhat = /.*\bof\s+(.+?)(?:\s+in\s+[a-z]+)?\.?$/i.exec(closing);
+  const formula = ofWhat ? formulaChars(ofWhat[1]) : '';
+  const ofKind = amounts.filter((entry) => entry.kind === kind);
+  if (!ofKind.length) return null;
+  const exact = ofKind.filter((entry) => formula && entry.formula === formula);
+  const candidates = exact.length ? exact : ofKind;
+  return candidates.some((entry) => sameNumeral(entry.numeral, key)) ? null : `the ${kind}${exact.length ? ` of ${ofWhat[1]}` : ''}`;
+}
+
+function byElement(entries, closing) {
+  const symbols = [...ELEMENT_BY_NAME].filter(([name]) => closing.includes(` ${name} `)).map(([, symbol]) => symbol);
+  if (symbols.length !== 1) return null;
+  const holding = entries.filter((entry) => new RegExp(`${symbols[0]}(?![a-z])`).test(entry.printed));
+  return holding.length === 1 ? holding : null;
+}
 
 /**
  * One multiplechoice, fillin, or selfcheck of a keyed-only book
@@ -2053,13 +2237,26 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [] } = {}) {
       // with a charge of 3+: Al³⁺", 2.6) is also read after it.
       // A piece labelled AFTER its formula ("Mg₃Si₂H₃O₈ (empirical formula),
       // Mg₆Si₄H₆O₁₆ (molecular formula)", 3.2) is read without its label too.
-      const pieces = [unit.answer, ...unit.answer.split(/[,;]|\s(?:and|or)\s/)]
+      // A condition the answer repeats after its equation ("… + MnO₂(s) (in
+      // base)", 4.2) is the stem's, not a species: read without it.
+      const pieces = [unit.answer, ...unit.answer.split(/[,;]|\s(?:and|or)\s|\s*\.\s+(?=[A-Z])/)]
         .map((piece) => piece.trim().replace(/[.:]$/, ''))
-        .flatMap((piece) => [piece, piece.replace(LABEL_AFTER, '')])
+        .flatMap((piece) => [piece, piece.replace(LABEL_AFTER, '').replace(/\s*\(in [a-z ]+\)\s*$/, '')])
         .flatMap((piece) => (piece.includes(':') ? [piece, piece.slice(piece.lastIndexOf(':') + 1).trim()] : [piece]))
-        .flatMap((piece) => [piece, piece.replace(/^(?:[A-Za-z][a-z]{2,}\s+)+/, '')])
+        .flatMap((piece) => [piece, piece.replace(/^(?:[A-Za-z][a-z]{2,}\s+)+(?:(?:is|are)\s+)?/, '')])
         .map((piece) => chemCanon(piece, item.form)).filter(Boolean);
+      // Several equations to one part (4.1): read one by one, and the item
+      // whose closing sentence asks for one is held to THAT one — the net
+      // ionic key under "Enter the complete ionic equation." is refused.
+      const equations = item.form === 'equation' ? answerEquations(unit.answer) : [];
+      pieces.push(...equations.map((entry) => entry.canon));
       if (!key || !pieces.includes(key)) return differs;
+      if (equations.length >= 2) {
+        const asked = askedEquations(equations, item.question);
+        if (asked && !asked.some((entry) => entry.canon === key)) {
+          return { ...differs, detail: `textin keys ${JSON.stringify(item.answer)} for the equation its closing sentence asks, which source ${unit.id} gives as ${JSON.stringify(asked[0].printed)}` };
+        }
+      }
       // An answer whose formulas are each labelled — before ("molecular C₂H₂,
       // empirical CH", 2.4) or after ("… (empirical formula), … (molecular
       // formula)", 3.2) — is carried as one item per formula, and the item
@@ -2071,6 +2268,22 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [] } = {}) {
       const asked = labelled.filter((entry) => entry.words.some((word) => closing.includes(` ${word} `)));
       if (asked.length && new Set(asked.map((entry) => entry.label)).size === 1 && !asked.some((entry) => entry.canon === key)) {
         return { ...differs, detail: `textin keys ${JSON.stringify(item.answer)} for the ${asked[0].label}, which source ${unit.id} gives as ${JSON.stringify(asked[0].printed)} (${JSON.stringify(unit.answer.slice(0, 120))})` };
+      }
+      // Two formulas listed bare ("Ba(NO₃)₂, KClO₃", 4.1), carried one item
+      // per formula: the item whose closing sentence names one compound
+      // ("Enter the formula of barium nitrate.") is held to the formula that
+      // holds the element it names — a swapped pair is refused.
+      if (item.form === 'formula' && !labelled.length) {
+        const listed = [];
+        for (const piece of unit.answer.split(/[,;]|\s(?:and|or)\s/)) {
+          const printed = piece.trim().replace(/[.:]$/, '');
+          const canon = chemCanon(printed, 'formula');
+          if (canon && !listed.some((entry) => entry.canon === canon)) listed.push({ canon, printed });
+        }
+        const held = listed.length >= 2 ? byElement(listed, closing) : null;
+        if (held && held[0].canon !== key) {
+          return { ...differs, detail: `textin keys ${JSON.stringify(item.answer)} for the formula its closing sentence names, which source ${unit.id} gives as ${JSON.stringify(held[0].printed)}` };
+        }
       }
       return { status: 'confirmed', exercise };
     }
@@ -2133,6 +2346,22 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [] } = {}) {
       if (sorted.length === segments.length && holding.length === 1) said = holding[0].head;
       else if (!sorted.length && roles.length === 1) said = roles[0].body;
     }
+    // …and roles said in sentences: "Mg is oxidized, Cl₂ is reduced" (4.2,
+    // under its classification); "Sn(s) is the reductant, HCl(g) is the
+    // oxidant." (4.2's Check Your Learning). The item's is the one whose
+    // role its closing sentence asks ("Which reactant is oxidized?").
+    // The limiting reactant is said either way round: "Cr is the limiting
+    // reactant." and "The limiting reactant is Cl2." (4.4).
+    const ROLE = '(?:the\\s+)?(?:oxidized|reduced|oxidant|reductant|oxidizing agent|reducing agent|limiting reactant)';
+    const roleClauses = [
+      ...[...said.matchAll(new RegExp(`(?:^|[,;:.]\\s*)([^,;:.]+?)\\s+is\\s+(${ROLE})\\b`, 'gi'))].map((match) => ({ who: match[1], role: match[2] })),
+      ...[...said.matchAll(/(?:^|[,;:.]\s*)the\s+(limiting reactant)\s+is\s+([^,;:]+?)\s*(?:[,;:]|\.(?:\s|$)|$)/gi)].map((match) => ({ who: match[2], role: match[1] })),
+    ].map((clause) => ({ who: clause.who.trim(), role: foldedPlain(clause.role).replace(/^the /, '') }));
+    if (roleClauses.length) {
+      const closing = ` ${foldedPlain(item.question.split(/(?<=[.?!:])\s+/).pop())} `;
+      const askedRoles = roleClauses.filter((clause) => closing.includes(` ${clause.role} `));
+      if (askedRoles.length === 1) said = askedRoles[0].who;
+    }
     const said1 = ` ${foldedPlain(said)} `;
     // An option is named when the answer prints it — as a run of words, or,
     // for an option of several words, each of its words ("symbolic,
@@ -2165,6 +2394,15 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [] } = {}) {
         && wordsOf(option).every((word) => wordsOf(other).includes(word))));
     };
     let named = namedIn(said1);
+    // An element the answer prints as its formula and the options name in
+    // words: "The limiting reactant is Cl2." to the stem's "sodium" or
+    // "diatomic chlorine" (4.4) — the option that holds the element's name.
+    if (named.length === 0) {
+      const symbols = [...said.matchAll(/(?<![A-Za-z])([A-Z][a-z]?)(?:\s*_?\s*\d+)?(?![A-Za-z])/g)].map((match) => match[1]);
+      const names = [...ELEMENT_BY_NAME].filter(([, symbol]) => symbols.includes(symbol)).map(([name]) => name);
+      const holding = item.options.filter((option) => names.some((name) => ` ${foldedPlain(option)} `.includes(` ${name} `)));
+      if (names.length === 1 && holding.length === 1) named = holding;
+    }
     if (named.length === 0) {
       const through = aliases.flatMap(([a, b]) => [[a, b], [b, a]])
         .filter(([from]) => said1.includes(` ${from} `))
@@ -2207,6 +2445,8 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [] } = {}) {
         };
       }
     }
+    const held = heldNumber(unit.answer, item.question, key);
+    if (held) return { status: 'key-differs', exercise, detail: `fillin keys ${JSON.stringify(item.answer)} for ${held}, which source ${unit.id} answers ${JSON.stringify(unit.answer.slice(0, 100))}` };
     const same = printed.filter((numeral) => sameNumeral(numeral, key));
     if (!same.length) {
       // A count the source spells out: "(a) two; (b) three".
@@ -2242,10 +2482,32 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [] } = {}) {
       ? { status: 'key-differs', exercise, detail: `source ${unit.id} answers with a drawing (${missing.join(', ')}) that the selfcheck's model answer does not show` }
       : { status: 'confirmed', exercise };
   }
-  const judged = judgeSelfcheck(item, {
+  let judged = judgeSelfcheck(item, {
     checkQuestions: null,
     exercises: [{ id: unit.id, problem: item.question, solution: unit.answer, options: [] }],
   });
+  // A model answer that prints the source's equations in the book's print
+  // ("Mg(OH)₂(s) + 2HClO₄(aq) ⟶ …" for the source's "Mg (OH) 2 ( s ) + 2
+  // HClO 4 ( a q ) ⟶ …", 4.2) is read with both sides folded as the part
+  // matcher folds them (`plain`): formulas, charges, and states then read alike.
+  if (judged.status === 'diverges') {
+    const folded = judgeSelfcheck({ ...item, model: foldedPlain(item.model) }, {
+      checkQuestions: null,
+      exercises: [{ id: unit.id, problem: item.question, solution: foldedPlain(unit.answer), options: [] }],
+    });
+    if (folded.status === 'verbatim' || folded.status === 'reworded') judged = folded;
+  }
+  // A model answer that prints an equation the source does not — 4.2's
+  // corrected "Na₂CO₃ + H₂S ⟶ NaHS + NaHCO₃" for the source's "… ⟶ Na₂S +
+  // CO₂ + H₂O" — is a correction however many of its words the source shares
+  // (the reactants alone carried it past the floor): it needs its disclosure.
+  if ((judged.status === 'verbatim' || judged.status === 'reworded') && item.type === 'selfcheck') {
+    const theirs = answerEquations(unit.answer).map((entry) => entry.canon);
+    const foreign = theirs.length ? answerEquations(item.model).filter((entry) => !theirs.includes(entry.canon)) : [];
+    if (foreign.length) {
+      return { status: 'diverges', exercise, coverage: judged.coverage, detail: `the model answer prints ${JSON.stringify(foreign[0].printed)}, an equation source ${unit.id} does not print (${JSON.stringify(unit.answer.slice(0, 120))})` };
+    }
+  }
   // A name AND a drawing ("ethanol [structure]", 2.4): the model answer is
   // the source's words, the source's image, and the one or two sentences the
   // playbook has the author write about the drawing ("Figures") — sentences
@@ -2307,7 +2569,11 @@ export function conditionalUnwrapped(records) {
     if (!groups.has(record.group)) groups.set(record.group, new Map());
     const parts = groups.get(record.group);
     if (!parts.has(record.unit)) parts.set(record.unit, { choices: [], further: [] });
-    parts.get(record.unit)[record.type === 'multiplechoice' ? 'choices' : 'further'].push(record);
+    // The part's FIRST multiple choice is the one every part is asked; any
+    // item after it is further — a followup may hold a multiple choice of its
+    // own ("Which reactant is oxidized?" under 4.2's redox parts).
+    const part = parts.get(record.unit);
+    (record.type === 'multiplechoice' && !part.choices.length ? part.choices : part.further).push(record);
   }
   const offenders = [];
   for (const [group, byPart] of groups) {

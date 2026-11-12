@@ -64,7 +64,21 @@ export const plain = (value) => normalizeText(String(value ?? '')
   .replace(/\\[a-zA-Z]+/g, ' ')
   .replace(/\]\([^)]*\)/g, ' ')
   .replace(SUBSCRIPTS, (run) => ` ${run.normalize('NFKC')} `)
-  .replace(SUPERSCRIPTS, (run) => ` ${run.normalize('NFKC')} `));
+  .replace(SUPERSCRIPTS, (run) => ` ${run.normalize('NFKC')} `)
+  // Chapter 4's formulas and equations, which the source's MathML sets one
+  // identifier at a time and the page prints in the book's Unicode print:
+  //   an underline under a symbol is a lone "_" (MathML munder; the page's
+  //   <u>N</u> is gone with the tags above);
+  .replace(/\s+/g, ' ').replace(/ _ /g, ' ')
+  //   the aqueous state is one word, not "( a q )";
+  .replace(/\(\s*a\s+q\s*\)/g, '(aq)')
+  //   a two-letter symbol is one word before a state symbol ("H g ( l )");
+  .replace(/(?<![A-Za-z])([A-Z]) ([a-z]) (?=\(\s*(?:s|l|g|aq)\s*\))/g, '$1$2 ')
+  //   a run of symbols before a subscript or a parenthesis is one formula
+  //   ("Pb ( N O 3 )", "Ca F 2", "K N O 3" with the N underlined);
+  .replace(/(?<![A-Za-z])[A-Z][a-z]?(?: [A-Z][a-z]?)+(?= \d| \()/g, (run) => run.replace(/ /g, ''))
+  //   and a coefficient is its own number ("2HNO₃" is the source's "2 HNO 3").
+  .replace(/(?<![\w.,])(\d+)(?=[A-Z[(])/g, '$1 '));
 
 const padded = (value) => ` ${value} `;
 
@@ -76,7 +90,41 @@ const padded = (value) => ` ${value} `;
  * six words no source stem prints — enough to take an unlettered exercise
  * carried one member at a time (2.6's six chlorides) under the floor.
  */
-export const unlinked = (value) => String(value ?? '').replace(/\[([^\]]*)\]\([^)]*\)/g, '$1');
+export const unlinked = (value) => cePrinted(String(value ?? '').replace(/\[([^\]]*)\]\([^)]*\)/g, '$1'));
+
+const SUB_DIGITS = '₀₁₂₃₄₅₆₇₈₉';
+const SUP_CHARS = { 0: '⁰', 1: '¹', 2: '²', 3: '³', 4: '⁴', 5: '⁵', 6: '⁶', 7: '⁷', 8: '⁸', 9: '⁹', '+': '⁺', '-': '⁻', '−': '⁻' };
+const asSub = (digits) => [...digits].map((digit) => SUB_DIGITS[digit] ?? digit).join('');
+const asSup = (text) => [...text].map((char) => SUP_CHARS[char] ?? char).join('');
+
+/**
+ * One mhchem formula or reaction as the book prints it in Unicode:
+ * `Na2S(aq) + 2HCl(aq) ->` is "Na₂S(aq) + 2HCl(aq) ⟶", `SO4^2-` "SO₄²⁻",
+ * `CuSO4*5H2O` (or `.`) "CuSO₄·5H₂O", `^{7}_{3}Li` "⁷₃Li".
+ */
+export function ceAsPrint(ce) {
+  return String(ce)
+    .replace(/<=>/g, '⇌').replace(/->/g, '⟶')
+    .replace(/\^\{([^}]*)\}|\^([0-9]*[+\-−]|[0-9]+)/g, (match, braced, bare) => asSup(braced ?? bare))
+    .replace(/_\{([0-9]+)\}|_([0-9]+)/g, (match, braced, bare) => asSub(braced ?? bare))
+    // A sign set directly after a symbol, a digit, or a parenthesis is a charge ("Cl-(aq)", "Na+").
+    .replace(/(?<=[A-Za-z0-9)\]₀-₉])([+\-])(?=[\s(}]|$)/g, (sign) => asSup(sign))
+    // A digit after a symbol or a closing bracket is a subscript; a coefficient stands first.
+    .replace(/(?<=[A-Za-z)\]₀-₉])([0-9]+)/g, (digits) => asSub(digits))
+    .replace(/(?<=[A-Za-z0-9)₀-₉])\s*[*.]\s*(?=[0-9]*[A-Z(])/g, '·');
+}
+
+/**
+ * Text with every `\ce{…}` set in the book's Unicode print, its `$` and the
+ * space between two spans of one reaction split after its arrow
+ * (`$\ce{Na2S(aq) + 2HCl(aq) ->}$ $\ce{2NaCl(aq) + H2S(g)}$`, the chapter-4
+ * ruling for fill-in and multiple-choice stems) read as one reaction: the
+ * source gates read a reaction printed that way exactly as the same reaction
+ * typed in Unicode.
+ */
+export function cePrinted(text) {
+  return String(text).replace(/\$?\\ce\{((?:[^{}]|\{[^{}]*\})*)\}\$?/g, (match, ce) => ceAsPrint(ce));
+}
 
 /**
  * The word pairs a module's own glossary makes one: "covalent compound —

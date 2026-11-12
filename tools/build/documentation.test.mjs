@@ -506,18 +506,73 @@ test('the chemistry subject playbook states the rules its engine enforces', asyn
   const { checkChem, chemKeyProblem } = await import('../../assets/js/lib/text/check-chem.mjs');
   const flat = chem.replace(/\s+/g, ' ');
   assert.match(chem, /`answerForm="formula"`,\s+`answerForm="equation"`/);
-  for (const [typed, key, form, status] of [
-    ['Mn3(PO4)2', 'Mn₃(PO₄)₂', 'formula', 'correct'], ['Mn3P2O8', 'Mn₃(PO₄)₂', 'formula', 'form'],
-    ['nacl', 'NaCl', 'formula', 'form'], ['Co', 'CO', 'formula', 'incorrect'],
-    ['SO42-', 'SO₄²⁻', 'formula', 'correct'], ['FeCl3.2H2O', 'FeCl₃·2H₂O', 'formula', 'correct'],
-    ['2Na + 2H2O -> 2NaOH + H2', '2Na(s) + 2H₂O(l) ⟶ 2NaOH(aq) + H₂(g)', 'equation', 'correct'],
-    ['4Na + 4H2O -> 4NaOH + 2H2', '2Na(s) + 2H₂O(l) ⟶ 2NaOH(aq) + H₂(g)', 'equation', 'form'],
-    ['Na + H2O -> NaOH + H2', '2Na(s) + 2H₂O(l) ⟶ 2NaOH(aq) + H₂(g)', 'equation', 'incorrect'],
-    ['8H+ + MnO4- + 5e- -> Mn2+ + 4H2O', '8H⁺(aq) + MnO₄⁻(aq) + 5e⁻ ⟶ Mn²⁺(aq) + 4H₂O(l)', 'equation', 'correct'],
-  ]) {
+  // Every row of the table is read (chapter 4 added four rows the first
+  // version of this list did not): each typed response the table shows in
+  // backticks is a `shown` below, graded against its key, and the row's own
+  // Verdict cell must be the grader's. A `typed` differs from `shown` where
+  // the table shows a piece of an equation (the complex ion) or prose names
+  // the key ("the complete ionic equation"); `aside` marks a second context
+  // the row's Feedback cell describes, whose verdict is not the row's.
+  const H2O_NA = '2Na(s) + 2H₂O(l) ⟶ 2NaOH(aq) + H₂(g)';
+  const OXYGEN = '2H₂O(l) ⟶ O₂(g) + 4H⁺(aq) + 4e⁻';
+  const AMMINE = 'AgCl(s) + 2NH₃(aq) ⟶ [Ag(NH₃)₂]⁺(aq) + Cl⁻(aq)';
+  const cases = [
+    { shown: 'Mn3(PO4)2', key: 'Mn₃(PO₄)₂', form: 'formula', status: 'correct' },
+    { shown: 'Mn_3(PO_4)_2', key: 'Mn₃(PO₄)₂', form: 'formula', status: 'correct' },
+    { shown: 'Mn₃(PO₄)₂', key: 'Mn₃(PO₄)₂', form: 'formula', status: 'correct' },
+    { shown: 'Mn3P2O8', key: 'Mn₃(PO₄)₂', form: 'formula', status: 'form' },
+    { shown: 'ClNa', key: 'NaCl', form: 'formula', status: 'form' },
+    { shown: 'nacl', key: 'NaCl', form: 'formula', status: 'form' },
+    { shown: 'NACL', key: 'NaCl', form: 'formula', status: 'form' },
+    { shown: 'Co', key: 'CO', form: 'formula', status: 'incorrect' },
+    ...['SO4^2-', 'SO42-', 'SO4-2', 'SO₄²⁻'].map((shown) => ({ shown, key: 'SO₄²⁻', form: 'formula', status: 'correct' })),
+    { shown: 'SO4', key: 'SO₄²⁻', form: 'formula', status: 'incorrect' },
+    { shown: 'Se', key: 'Se²⁻', form: 'formula', status: 'incorrect' },
+    { shown: 'NH4', key: 'NH₄⁺', form: 'formula', status: 'incorrect' },
+    { shown: 'Na', key: '²³₁₁Na', form: 'formula', status: 'incorrect' },
+    { shown: 'Cs+', key: '¹³³Cs⁺', form: 'formula', status: 'incorrect' },
+    ...['FeCl3.2H2O', 'FeCl3*2H2O', 'FeCl₃·2H₂O'].map((shown) => ({ shown, key: 'FeCl₃·2H₂O', form: 'formula', status: 'correct' })),
+    { shown: '2Na + 2H2O -> 2NaOH + H2', key: H2O_NA, form: 'equation', status: 'correct' },
+    { shown: '4Na + 4H2O -> 4NaOH + 2H2', key: H2O_NA, form: 'equation', status: 'form' },
+    { shown: 'Na + H2O -> NaOH + H2', key: H2O_NA, form: 'equation', status: 'incorrect' },
+    { shown: '8H+ + MnO4- + 5e- -> Mn2+ + 4H2O', key: '8H⁺(aq) + MnO₄⁻(aq) + 5e⁻ ⟶ Mn²⁺(aq) + 4H₂O(l)', form: 'equation', status: 'correct' },
+    // Chapter 4's rows.
+    { shown: '6H2O -> O2 + 4H3O+ + 4e-', key: OXYGEN, form: 'equation', status: 'correct' },
+    { shown: '2H2O -> O2 + 4H+ + 4e-', key: OXYGEN, form: 'equation', status: 'correct' },
+    { shown: '2IO3- + 12H+ + 10e- -> I2 + 6H2O', key: '6H₂O(l) + 2IO₃⁻(aq) + 10e⁻ ⟶ I₂(s) + 12OH⁻(aq)', form: 'equation', status: 'form' },
+    // "…and an acid key answered with OH⁻": the same verdict the other way round.
+    { shown: '2IO3- + 12H+ + 10e- -> I2 + 6H2O', typed: '2IO3- + 6H2O + 10e- -> I2 + 12OH-', key: '2IO₃⁻(aq) + 12H⁺(aq) + 10e⁻ ⟶ I₂(s) + 6H₂O(l)', form: 'equation', status: 'form' },
+    { shown: 'Pb2+ + SO4^2- -> PbSO4', key: 'Pb²⁺(aq) + 2NO₃⁻(aq) + 2Na⁺(aq) + SO₄²⁻(aq) ⟶ PbSO₄(s) + 2Na⁺(aq) + 2NO₃⁻(aq)', form: 'equation', status: 'incorrect' },
+    { shown: 'Ag(NH3)2+', typed: 'AgCl + 2NH3 -> Ag(NH3)2+ + Cl-', key: AMMINE, form: 'equation', status: 'correct' },
+    { shown: '[Ag(NH3)2]+', typed: 'AgCl + 2NH3 -> [Ag(NH3)2]+ + Cl-', key: AMMINE, form: 'equation', status: 'correct' },
+    { shown: 'Ag(NH3)2+', key: '[Ag(NH₃)₂]⁺', form: 'formula', status: 'form', aside: true },
+  ];
+  // The table, row by row: the backticked responses of its Typed cell (not
+  // "for `NaCl`", which names a key, nor `=` or `→`, which name an arrow).
+  const tableStart = chem.indexOf('| Typed | Against | Verdict | Feedback |');
+  assert.ok(tableStart > 0, 'the Formulas and equations table is found');
+  const after = chem.slice(tableStart).split('\n').slice(2);
+  const rows = after.slice(0, after.findIndex((line) => !line.startsWith('|')));
+  assert.ok(rows.length >= 16, `the table's rows are read (${rows.length})`);
+  let shownRead = 0;
+  for (const row of rows) {
+    const [typedCell, , verdictCell] = row.split(/(?<!\\)\|/).slice(1, -1).map((cell) => cell.trim());
+    const shownHere = [...typedCell.matchAll(/(?<!for )`([^`]+)`/g)].map((m) => m[1]).filter((s) => /[A-Za-z]/.test(s));
+    assert.ok(shownHere.length, `a table row shows a typed response: ${row.slice(0, 60)}`);
+    for (const shown of shownHere) {
+      const mine = cases.filter((c) => c.shown === shown);
+      assert.ok(mine.length, `the table's typed \`${shown}\` is read against the grader here — add it to this list`);
+      for (const c of mine.filter((c) => !c.aside)) {
+        assert.equal(c.status, verdictCell, `the table's verdict for \`${shown}\` is the one tested`);
+      }
+      shownRead += 1;
+    }
+  }
+  assert.ok(shownRead >= 30, `the table's typed responses are read (${shownRead})`);
+  for (const { shown, typed = shown, key, form, status } of cases) {
     const verdict = checkChem(typed, key, { form });
     assert.equal(verdict.status, status, `${typed} against ${key}`);
-    assert.ok(flat.includes(`\`${typed}\``), `the playbook's table shows ${typed}`);
+    assert.ok(flat.includes(`\`${shown}\``), `the playbook's table shows ${shown}`);
     if (verdict.message) assert.ok(flat.includes(verdict.message.slice(0, 40)), `the playbook quotes the feedback for ${typed}`);
   }
   assert.ok(chemKeyProblem('SO42-', 'formula'), 'the lint refuses a key that reads two ways');
@@ -956,6 +1011,35 @@ test('no typing example shown beside a formula field is an item\'s key', async (
       assert.notEqual(checkChem(example, key.answer, { form: key.form }).status, 'correct',
         `${relative(repositoryRootPath, key.file)}:${key.line} is keyed ${key.answer}, the typing example ${example}`);
     }
+  }
+});
+
+// The typing guide under a formula or equation field once wrapped inside its
+// arrow ("…O2 -" over "> 2H2O", the rendered-page reading of Chemistry 4.1).
+// The component wraps the arrow and each example in a no-wrap span, cut by
+// GUIDE_UNBROKEN. text-in.js defines a custom element at load and cannot be
+// imported here, so its two constants are read from the source, as the test
+// above reads GUIDE; the browser test of the same name measures the lines.
+test('the typing guide\'s no-wrap pieces are its arrow and its whole examples, and the text is unchanged', () => {
+  const component = read('assets/js/components/text/text-in.js');
+  const guide = /const GUIDE = \{([\s\S]*?)\n\};/.exec(component)[1];
+  const GUIDE = Object.fromEntries([...guide.matchAll(/^\s*(\w+): '([^']*)',$/gm)].map((m) => [m[1], m[2]]));
+  const literal = /const GUIDE_UNBROKEN = \/(.+)\/g;/.exec(component);
+  assert.ok(literal, 'GUIDE_UNBROKEN is a regular-expression literal with the g flag');
+  const pattern = new RegExp(literal[1], 'g');
+  const pieces = (text) => [...text.matchAll(pattern)].map((m) => m[0]);
+  assert.deepEqual(pieces(GUIDE.formula), ['Ca3(PO4)2,', 'SO4^2-.']);
+  assert.deepEqual(pieces(GUIDE.equation), ['->', '2H2 + O2 -> 2H2O.']);
+  // The component rebuilds the text from the cuts; nothing is dropped or doubled.
+  for (const text of Object.values(GUIDE)) {
+    let done = 0;
+    let rebuilt = '';
+    for (const m of text.matchAll(pattern)) {
+      assert.ok(m.index >= done, 'the pieces do not overlap');
+      rebuilt += text.slice(done, m.index) + m[0];
+      done = m.index + m[0].length;
+    }
+    assert.equal(rebuilt + text.slice(done), text);
   }
 });
 

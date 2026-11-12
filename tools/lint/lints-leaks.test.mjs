@@ -488,6 +488,16 @@ test('in the Chemistry book a formula or an equation is never keyed as a word', 
   assert.deepEqual(errorsOf(page(told), CHEM).filter((e) => /ASCII chemistry/.test(e)), [], 'the typed example is not ASCII chemistry');
   assert.equal(errorsOf(page(told.replace('Type the dot as a period, as in CuSO4.5H2O.', 'Compare CuSO4.')), CHEM).filter((e) => /ASCII chemistry/.test(e)).length, 1);
   assert.deepEqual(dot(page(declared)), [], 'a formula with no dot needs no sentence');
+  // A half-reaction's stem says how its electron is typed (Chemistry 4.2).
+  const electron = (src) => errorsOf(src, CHEM).filter((e) => /how an electron is typed/.test(e));
+  const half = formula('Sn⁴⁺(aq) + 2e⁻ ⟶ Sn²⁺(aq)', 'Complete and balance the following half-reaction: Sn⁴⁺(aq) ⟶ Sn²⁺(aq).')
+    .replace('answer="Sn⁴⁺(aq) + 2e⁻ ⟶ Sn²⁺(aq)"', 'answer="Sn⁴⁺(aq) + 2e⁻ ⟶ Sn²⁺(aq)" answerForm="equation"');
+  assert.equal(electron(page(half)).length, 1);
+  const typed = half.replace('⟶ Sn²⁺(aq).', '⟶ Sn²⁺(aq). Type an electron as e-.');
+  assert.deepEqual(electron(page(typed)), []);
+  assert.deepEqual(errorsOf(page(typed), CHEM).filter((e) => /ASCII chemistry/.test(e)), [], 'the typed electron is not ASCII chemistry');
+  const whole = half.replace('+ 2e⁻ ⟶ Sn²⁺', '+ 2Fe²⁺(aq) ⟶ Sn²⁺').replace('+ 2e⁻ ⟶ Sn²⁺', '+ 2Fe²⁺(aq) ⟶ Sn²⁺');
+  assert.deepEqual(electron(page(whole)), [], 'an equation with no electron needs no sentence');
 });
 
 test('in the Chemistry book a textin key never carries an operator the text grader drops', () => {
@@ -561,4 +571,61 @@ test('in the Chemistry book the footer never prints a blank\'s key and every Key
   // A definition may close inside a parenthesis or a quotation.
   assert.deepEqual(period(page('- **liter (L)** — unit of volume (also, cubic decimeter.)', 'Footer.')), []);
   assert.deepEqual(period(page(open, 'Footer.'), BIO), []);
+});
+
+// ---- Chemistry chapter 4: what its readers found ----------------------------
+
+test('in the Chemistry book the footer never prints a graded item\'s key', () => {
+  const fillin = (answer, form, display) => `{{< fillin\n  question="Determine the moles of CuCO₃ formed."\n  answer="${answer}"\n  answerForm="${form}"\n  answerDisplay="${display}"\n  hint="Use the stoichiometric factor."\n>}}`;
+  const formula = (answer, form) => `{{< textin\n  question="Write the balanced equation."\n  answer="${answer}"\n  answerForm="${form}"\n  hint="Change only the coefficients."\n>}}`;
+  const page = (item, footer) => `Body text.\n\n## Practice\n\n### Explain the thing\n\n${item}\n\n---\n\n<small>${footer}</small>\n`;
+  const printed = (src, file = CHEM) => errorsOf(src, file).filter((e) => /the footer prints "/.test(e));
+  const cyl = fillin('18.86', 'sig-figs:4 last-digit:0', '$18.86\\ \\text{mol}$');
+  // Chemistry 4.3's footer as it first shipped.
+  assert.equal(printed(page(cyl, 'Changes: the Check Your Learning, keyed with the source’s 18.86.')).length, 1);
+  // As its display writes it: a power of ten's mantissa, thousands separators dropped.
+  const big = fillin('1.234\\times10^{4}', 'sig-figs:4 last-digit:0', '$1.234 \\times 10^{4}\\ \\text{g}$');
+  assert.equal(printed(page(big, 'Keyed with $1.234 \\times 10^{4}$ g.')).length, 1);
+  assert.equal(printed(page(fillin('12340', 'sig-figs:4 last-digit:0', '$12{,}340\\ \\text{g}$'), 'Keyed 12,340 g.')).length, 1);
+  // A formula and an equation key.
+  assert.equal(printed(page(formula('2NH₄NO₃ ⟶ 2N₂ + O₂ + 4H₂O', 'equation'), 'Keyed 2NH₄NO₃ ⟶ 2N₂ + O₂ + 4H₂O.')).length, 1);
+  assert.equal(printed(page(formula('CuCO₃', 'formula'), 'The item keyed CuCO₃.')).length, 1);
+  // Not a hit: counts, years, a two-figure key, a number inside a longer one,
+  // a formula inside a longer one, and every other book.
+  assert.deepEqual(printed(page(cyl, 'Changes: 38 items, 4 formula text-recall items; source 2019.')), []);
+  assert.deepEqual(printed(page(cyl, 'Changes: the figure at 118.860 px.')), []);
+  assert.deepEqual(printed(page(fillin('38', 'whole-number', '$38$'), 'Changes: 38 items.')), []);
+  assert.deepEqual(printed(page(fillin('2019', 'sig-figs:4 last-digit:0', '$2019$'), 'Published 2019.')), []);
+  assert.deepEqual(printed(page(fillin('1.4', 'sig-figs:2 last-digit:0', '$1.4\\ \\text{g}$'), 'Rounded to 1.4 g.')), []);
+  assert.deepEqual(printed(page(formula('CO₂', 'formula'), 'The CO₂⁻ and the H₂CO₂ figures re-encoded.')), []);
+  assert.deepEqual(printed(page(cyl, 'Changes: the Check Your Learning of the copper carbonate example.')), []);
+  assert.deepEqual(printed(page(cyl, 'Changes: keyed with the source’s 18.86.'), BIO), []);
+});
+
+test('practicePeriodHeadings reads only the Practice block\'s objective headings', async () => {
+  const { practicePeriodHeadings } = await import('./lints-leaks.mjs');
+  const src = '## Summary\n\n### Body heading.\n\n## Practice\n\n### Balance chemical equations.\n\nText.\n\n### Write net ionic equations\n\n### Wait...\n\n## Key terms\n\n### Later heading.\n';
+  assert.deepEqual(practicePeriodHeadings(src).map((h) => h.heading), ['Balance chemical equations.']);
+  assert.deepEqual(practicePeriodHeadings('### No practice.\n'), []);
+});
+
+test('in the Chemistry book a Practice heading never ends with a period', () => {
+  const page = (heading) => `## Summary\n\nText.\n\n## Practice\n\n### ${heading}\n\n${textin('The ________ is balanced.', 'equation')}\n`;
+  const period = (src, file = CHEM) => errorsOf(src, file).filter((e) => /Practice heading .* ends with a period/.test(e));
+  assert.equal(period(page('Derive chemical equations from narrative descriptions of chemical reactions.')).length, 1);
+  assert.deepEqual(period(page('Derive chemical equations from narrative descriptions of chemical reactions')), []);
+  assert.deepEqual(period(page('Derive chemical equations.'), MATH), [], 'enforced for Chemistry only');
+});
+
+test('in the Chemistry book a stem never sets a unit inside its math after a power of ten', () => {
+  const fillin = (question, display = '$2.32 \\times 10^{8}\\ \\text{kg}$') => `{{< fillin\n  question="${question}"\n  answer="2.32\\times10^{8}"\n  answerForm="sig-figs:3 last-digit:0 scientific-notation"\n  answerDisplay="${display}"\n  hint="Use the stoichiometric factor."\n>}}`;
+  const unit = (src, file = CHEM) => errorsOf(`Body text.\n\n${src}\n`, file).filter((e) => /after its power of ten inside the math/.test(e));
+  assert.equal(unit(fillin('What mass of ore holds $1.00 \\times 10^{3}\\ \\text{kg}$ of copper?')).length, 1);
+  assert.equal(unit(fillin('What mass of ore holds $1.00 \\times 10^{3}\\,\\text{kg}$ of copper?')).length, 1);
+  assert.equal(unit(fillin('A sample of $6.02 \\times 10^{-3} \\ \\text{mol}$ is weighed.')).length, 1);
+  // The unit outside the math; a unit without a power of ten; the answer display.
+  assert.deepEqual(unit(fillin('What mass of ore holds $1.00 \\times 10^{3}$ kg of copper?')), []);
+  assert.deepEqual(unit(fillin('What mass of ore holds $\\ce{CuCO3}$ of copper, $12.0\\ \\text{kg}$?')), []);
+  assert.deepEqual(unit(fillin('What mass of ore holds $1.00 \\times 10^{3}$ kg of copper?', '$1.00 \\times 10^{3}\\ \\text{kg}$')), [], 'an answer display is not a stem');
+  assert.deepEqual(unit(fillin('What mass of ore holds $1.00 \\times 10^{3}\\ \\text{kg}$ of copper?'), MATH), []);
 });

@@ -65,3 +65,26 @@ test('the probe builds chapter 3\'s three shapes as the page carries them', () =
   assert.match(askOf(unit('fs-idm64107376#check'), units), /^A teaspoon of table sugar contains about 0\.01 mol sucrose\. What is the molarity of sucrose if .* 200 mL\. What volume \(mL\) of the sweetened tea/);
   assert.deepEqual(result.findings, []);
 });
+
+test('the probe builds chapter 4\'s several-keys parts one item per key, and finds a sibling\'s key the gate would confirm', () => {
+  const xml = cnxml(
+    exercise('c7', ['Colorful fireworks often involve the reaction of the metals magnesium and aluminum with oxygen.', '(a) Write separate equations for the reactions of the solid metals magnesium and aluminum with diatomic oxygen gas.', '(b) Write the formula of potassium chlorate.'],
+      '(a) 2 Mg ( s ) + O 2 ( g ) ⟶ 2 MgO ( s ) ; 4 Al ( s ) + 3 O 2 ( g ) ⟶ 2 Al 2 O 3 ( s ) ; (b) KClO<sub>3</sub>')
+    + exercise('c9', ['Solid calcium fluoride can be prepared by the reaction of aqueous solutions of calcium chloride and sodium fluoride. Write complete and net ionic equations for this reaction.'],
+      'complete ionic equation: 2 Na<sup>+</sup> ( a q ) + 2 F<sup>−</sup> ( a q ) + Ca<sup>2+</sup> ( a q ) + 2 Cl<sup>−</sup> ( a q ) ⟶ CaF 2 ( s ) + 2 Na<sup>+</sup> ( a q ) + 2 Cl<sup>−</sup> ( a q ), net ionic equation: 2 F<sup>−</sup> ( a q ) + Ca<sup>2+</sup> ( a q ) ⟶ CaF 2 ( s )')
+    + exercise('c6', ['Determine the oxidation states of the elements in the compounds listed.', '(a) H<sub>3</sub>PO<sub>4</sub>', '(b) SeO<sub>2</sub>'], '(a) H +1, P +5, O −2; (b) Se +4, O −2')
+    + exercise('c2', ['Determine the number of moles and the mass of chlorine, Cl<sub>2</sub>, required to react with 10.0 g of sodium metal, Na, to produce sodium chloride, NaCl.'],
+      '0.435 mol Na, 0.217 mol Cl<sub>2</sub>, 15.4 g Cl<sub>2</sub>'),
+  );
+  const units = keyedUnits(xml);
+  const built = (id) => itemsFor(units.find((unit) => unit.id === id), units).map((item) => [item.type, item.answer, item.question.split(/(?<=[.?!])\s+/).pop()]);
+  assert.deepEqual(built('c7(a)').map(([, , closing]) => closing), ['Enter the equation for the reaction of magnesium.', 'Enter the equation for the reaction of aluminum.']);
+  assert.deepEqual(built('c9').map(([, , closing]) => closing), ['Enter the complete ionic equation.', 'Enter the net ionic equation.']);
+  assert.deepEqual(built('c6(a)'), [['fillin', '1', 'Enter the oxidation state of H as a signed number, the sign first, as +2 or −1.'],
+    ['fillin', '5', 'Enter the oxidation state of P as a signed number, the sign first, as +2 or −1.'], ['fillin', '-2', 'Enter the oxidation state of O as a signed number, the sign first, as +2 or −1.']]);
+  assert.deepEqual(built('c2'), [['fillin', '0.217', 'Enter the number of moles of Cl_2.'], ['fillin', '15.4', 'Enter the mass of Cl_2 in grams.']]);
+  assert.deepEqual(probeModule(xml).findings, []);
+  // 8.2 prints oxidation states AND formal charges by symbol: two numbers for O, which no closing sentence about O tells apart.
+  const both = cnxml(exercise('f1', ['Determine the oxidation states and formal charge of the atoms in the ClO<sub>3</sub><sup>–</sup> ion.'], 'Oxidation states Cl +5, O –2. Formal charges: Cl +2: O –1'));
+  assert.ok(probeModule(both).findings.some((finding) => finding.kind === 'swap confirmed'));
+});

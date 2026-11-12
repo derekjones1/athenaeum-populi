@@ -803,7 +803,23 @@ export function coverage(markdown, source, { listed = [], keyedOnly = false } = 
       if (scored.score >= PASS_FLOOR) candidates.push({ unitIndex, itemIndex, ...scored });
     });
   });
+  // An item that prints one lettered part word for word is that part's, and
+  // never a sibling part read by its restated words: 4.1's (d) is carried as
+  // three items, one per metal, each printing (d) whole under a lead-in that
+  // names barium nitrate and potassium chlorate — most of the words of parts
+  // (a) and (c), which must be required by items of their own.
+  const verbatim = new Set(candidates.filter((candidate) => candidate.how === 'part')
+    .map((candidate) => `${candidate.itemIndex} ${units[candidate.unitIndex].group}`));
+  for (let index = candidates.length - 1; index >= 0; index -= 1) {
+    const candidate = candidates[index];
+    if (candidate.how === 'part-restated' && verbatim.has(`${candidate.itemIndex} ${units[candidate.unitIndex].group}`)) candidates.splice(index, 1);
+  }
   candidates.sort((a, b) => b.score - a.score || (b.tie || 0) - (a.tie || 0) || a.unitIndex - b.unitIndex || a.itemIndex - b.itemIndex);
+  // The best a keyed lettered PART reads each item, owned or not (the omitted judge below).
+  const keyedClaim = new Map();
+  for (const candidate of candidates.filter((entry) => entry.how === 'part' || entry.how === 'part-restated')) {
+    keyedClaim.set(candidate.itemIndex, Math.max(keyedClaim.get(candidate.itemIndex) ?? 0, candidate.score));
+  }
   const unitTaken = new Map();
   const itemOwner = new Map();
   // A lettered part of a keyed-only book's exercise owns its item outright
@@ -832,7 +848,12 @@ export function coverage(markdown, source, { listed = [], keyedOnly = false } = 
       const wholeStem = (item) => (unit.partText !== undefined
         ? scoreItem(unit, item).score
         : runCoverage(plain(unit.stem), plain(item.text)));
-      const rendered = items.findIndex((item, itemIndex) => !itemOwner.has(itemIndex) && wholeStem(item) >= UNKEYED_RENDERED_FLOOR);
+      // …and an item a KEYED lettered part reads as its own at least as well
+      // is that part's: 4.3's (2) borrows the parts of the unkeyed (1) it refers to,
+      // and carries each as two items (the moles, then the mass), the second
+      // of which no unit owns — it is still (2)'s, not (1) rendered.
+      const rendered = items.findIndex((item, itemIndex) => !itemOwner.has(itemIndex) && wholeStem(item) >= UNKEYED_RENDERED_FLOOR
+        && !(keyedClaim.get(itemIndex) >= wholeStem(item)));
       return rendered === -1
         ? { ...verdict, status: 'omitted', how: 'unkeyed' }
         : { ...verdict, status: 'unkeyed-rendered', how: 'item', line: items[rendered].line };

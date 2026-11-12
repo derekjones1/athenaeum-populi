@@ -6811,6 +6811,83 @@
       "status": "correct-local-source-defect",
       "errataEntry": 2998,
       "rationale": "The answer to exercise fs-idm62322112 (printed 3.51), part (d), prints 5.9 × 10^-7 mol FeSO4 for 325 mL of 1.8 × 10^-6 M. 0.325 L × 1.8 × 10^-6 M = 5.85 × 10^-7 mol exactly, a dropped 5 with nothing after it, which Section 1.5's round-half-to-even rule rounds to 5.8 × 10^-7; the module's own paragraph fs-idm75726960 rounds 1.325 to 1.32 the same way. The printed 5.9 is the round-half-up value; the mass 8.9 × 10^-5 g is right, from the unrounded moles. The page keys the moles fill-in 5.8 × 10^-7 with no allowance for the last digit (sig-figs:2 last-digit:0, as for erratum 2910), with a visible Source note directly after the item, a footer clause, and a disclosed deviation in verify-source-keys. Found by the 3.3 author's ledger. Authored with chapter 3, ruled by the orchestrator, November 11, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/02-classifying-chemical-reactions.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68710",
+      "sourceElementIds": [
+        "fs-idp19195056"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3007,
+      "rationale": "The solution to exercise fs-idp89462576, part (b), prints Na2CO3(aq) + H2S(g) ⟶ Na2S(aq) + CO2(g) + H2O(l). By the book's own Appendix H (m68866), H2S has Ka 8.9 × 10^-8 and HS- 1.0 × 10^-19, against 4.3 × 10^-7 for H2CO3 and 4.7 × 10^-11 for HCO3-: hydrogen sulfide is a weaker acid than carbonic acid, and HS- far weaker than HCO3-, so sulfide and carbon dioxide do not form and the reaction stops at NaHS + NaHCO3. The page makes the part a self-check whose model answer is Na2CO3(aq) + H2S(g) ⟶ NaHS(aq) + NaHCO3(aq), with a visible Source note directly after it linking Appendix H, a footer clause, and a disclosed deviation in verify-source-keys (kind solution). Found by the prose claim pass (F1). Authored with chapter 4, ruled by the orchestrator, November 12, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/02-classifying-chemical-reactions.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68710",
+      "sourceElementIds": [
+        "fs-idm4239184"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3008,
+      "rationale": "The glossary defines a strong base as a \"base that reacts completely when dissolved in water to yield hydroxide ions\", while the module's own paragraph fs-idp2912576 says that these compounds \"do not react chemically with water; instead they dissolve and dissociate\". The page prints \"base that dissociates completely when dissolved in water to yield hydroxide ions\" in its Key terms list, with a visible Source note directly after the list and a footer clause; no item is keyed on the definition. Found by the prose claim pass (F9). Authored with chapter 4, ruled by the orchestrator, November 12, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/03-reaction-stoichiometry.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68713",
+      "sourceElementIds": [
+        "fs-idp75003744"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3016,
+      "rationale": "The answer to exercise fs-idp147780304 (printed 4.43), part (d), prints 1665 mol CO2 for the combustion of 20.0 kg of carbon: four significant figures from data that give three, the same part's mass (73.3 kg) having three. 20.0 kg ÷ 12.01 g/mol = 1665.3 mol, which Section 1.5's rules round to 1.67 × 10^3. The page keys the moles fill-in 1.67 × 10^3 (sig-figs:3 last-digit:1), with a visible Source note directly after the item, a footer clause, and a disclosed deviation in verify-source-keys. Authored with chapter 4, ruled by the orchestrator, November 12, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/03-reaction-stoichiometry.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68713",
+      "sourceElementIds": [
+        "fs-idp32310528"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3018,
+      "rationale": "The answer to exercise fs-idp272460112 (printed 4.47), part (b), prints 1.25 mol GaCl3 for 2.6 L of 1.44 M HCl: three significant figures from a two-figure volume, the same part's mass (2.2 × 10^2 g) having two. 2.6 L × 1.44 M ÷ 3 = 1.248 mol, which rounds to 1.2. The page keys the moles fill-in 1.2 (sig-figs:2 last-digit:0), with a visible Source note directly after the item, a footer clause, and a disclosed deviation in verify-source-keys. Authored with chapter 4, ruled by the orchestrator, November 12, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/04-reaction-yields.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68714",
+      "sourceElementIds": [
+        "fs-idp167996000"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3021,
+      "rationale": "The Green Chemistry and Atom Economy box says \"First marketed in the early 1960s, ibuprofen was produced using a six-step synthesis\". Ibuprofen was discovered in 1961 and first marketed in 1969 in the United Kingdom (Ershad and others, \"Ibuprofen Toxicity\", StatPearls, 2024, https://www.ncbi.nlm.nih.gov/books/NBK526078/: \"was discovered by Dr. Stewart Adams in 1961. The drug was first marketed in 1969 in the United Kingdom and in 1974 in the United States\"). The page prints \"Discovered in 1961 and first marketed in 1969\", with a visible Source note directly after the callout and a footer clause. Found by the prose claim pass (F5). Authored with chapter 4, ruled by the orchestrator, November 12, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/05-quantitative-chemical-analysis.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68716",
+      "sourceElementIds": [
+        "fs-idp46830048"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3026,
+      "rationale": "The answer to exercise fs-idp204697696 (printed 4.93) prints 34.99 mL KOH for 40.00 mL of 0.0656 M H3PO4 titrated with 0.1500 M KOH: four significant figures from a three-figure molarity, where every other numeric key of the module follows the figure rules. The calculation gives 34.987 mL, which rounds to 35.0. The page keys 35.0 (sig-figs:3 last-digit:0), with a visible Source note directly after the item, a footer clause, and a disclosed deviation in verify-source-keys. Authored with chapter 4, ruled by the orchestrator, November 12, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/05-quantitative-chemical-analysis.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68716",
+      "sourceElementIds": [
+        "fs-idm9637984"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3027,
+      "rationale": "The Check Your Learning of example fs-idp80717680 answers 0.2648 M for 23.24 mL of 0.09113 M KMnO4 against 20.00 mL of oxalic acid. 23.24 mL × 0.09113 M × 5/2 ÷ 20.00 mL = 0.264733, which is 0.2647 M to four figures; 0.2648 follows from rounding the intermediate to 2.118 mmol. The page keys 0.2647 (sig-figs:4 last-digit:1), so the source's value is still graded right by the one-unit allowance, with a visible Source note directly after the item, footer clauses, and a disclosed deviation in verify-source-keys (exercise fs-idp80717680#check). Found by the prose claim pass (F3). Authored with chapter 4, ruled by the orchestrator, November 12, 2026."
     }
   ]
 }

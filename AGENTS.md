@@ -133,7 +133,7 @@ campaign, the figure-alt passes, and their kit — are archived under
   finished book that is the source's own unit total, so covered = total
   means nothing is missing, and it moves only when the source pin moves.
   It also rises with every chapter of a book still being written
-  (Chemistry's moved 4,259 → 4,372 with chapter 3), and
+  (Chemistry's moved 4,372 → 4,501 with chapter 4), and
   `npm run baseline:update` rewrites it. Skips absent
   bundles like `verify:source-keys` (part of `npm test`)
 - `npm run verify:source-tables` — hold every table cell of a reference page

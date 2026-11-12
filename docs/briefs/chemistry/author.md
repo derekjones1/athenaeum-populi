@@ -261,6 +261,13 @@ goes wrong.
   and Molecular Compounds"); where the module names one substance two
   ways by its state, the hint names the subsection whose rule decides,
   never the observation that decides it.
+- **A hint shared by a family of items is read against every member, and a
+  member whose hint differs is a tell** (4.1: the one net-ionic item with
+  no spectator ion had its own wording). Write one sentence true of all:
+  "Compare each species on the two sides of the complete ionic equation,
+  and remove any that appear unchanged on both." A role or "if so"
+  question standing in the open after a yes/no item answers it: it goes in
+  a `followup`.
 - **Order inside a Practice group:** the source's keyed items first, in
   source order, then your added items (an added item goes above a keyed
   `selfcheck` whose model answer prints its key).

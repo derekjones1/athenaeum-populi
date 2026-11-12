@@ -2594,6 +2594,130 @@ test('on every Chemistry page a display row fits the column, scientific notation
   expect(totals.scaled, 'the manifest\'s scaled-down figures reached the page').toBeGreaterThanOrEqual(6);
 });
 
+// Three stems of Chemistry chapter 4 carried an inline `$\ce{…}$` that cannot
+// break and ran past the item card's right edge at 1100 px (found by the
+// rendered-page reading, fixed by hand). The display-row test above asks
+// only `.katex-display`; this asks every inline formula of an item's
+// question, on every Chemistry section page, against its card's content
+// box. A hidden item (a follow-up not yet shown) has no box and is skipped.
+test('on every Chemistry page no inline formula in an item\'s question runs past its card', async ({ page }) => {
+  const routes = chemistrySectionRoutes();
+  expect(routes.length, 'Chemistry section pages were discovered in public/').toBeGreaterThanOrEqual(6);
+  test.setTimeout(60_000 + routes.length * 9_000);
+  let measured = 0;
+  const overflowing = [];
+  const broken = [];
+  const desktopBlocks = [];
+  let phoneBlocks = 0;
+  for (const width of [1280, 1100, 390]) {
+    await page.setViewportSize({ width, height: 900 });
+    for (const route of routes) {
+      await gotoBuiltPage(page, route);
+      await page.evaluate(() => document.fonts.ready);
+      // scrollable-regions.js decides in an animation frame after layout.
+      await page.evaluate(() => new Promise((done) => requestAnimationFrame(() => requestAnimationFrame(done))));
+      const audit = await page.evaluate(() => {
+        const CARDS = '.ap-fillin, .ap-mc, .ap-textin, .ap-selfcheck, .ap-sortbins, .ap-graphplot';
+        const QUESTIONS = '.ap-fillin-question, .ap-mc-question, .ap-textin-question, .ap-selfcheck-question, .ap-sortbins-question, .ap-graphplot-question';
+        const over = [];
+        const blocks = [];
+        let count = 0;
+        for (const question of document.querySelectorAll(`.content :is(${QUESTIONS})`)) {
+          const card = question.closest(CARDS);
+          if (!card) continue;
+          const box = card.getBoundingClientRect();
+          if (!box.width) continue;
+          const style = getComputedStyle(card);
+          const right = box.right - parseFloat(style.borderRightWidth) - parseFloat(style.paddingRight);
+          for (const math of question.querySelectorAll('.katex')) {
+            if (math.closest('.katex-display') || math.parentElement.closest('.katex')) continue;
+            const rect = math.getBoundingClientRect();
+            if (!rect.width) continue;
+            count += 1;
+            const name = `${question.textContent.replace(/\s+/g, ' ').trim().slice(0, 50)}… — ${(math.querySelector('annotation')?.textContent ?? '').slice(0, 40)}`;
+            if (rect.right > right + 1) {
+              over.push(`${name} by ${Math.round(rect.right - right)} px`);
+            }
+            if (math.classList.contains('ap-katex-wide')) {
+              // The scroll block: it scrolls (else it should have been undone),
+              // and a keyboard reaches it.
+              const style = getComputedStyle(math);
+              blocks.push({ name, ok: math.scrollWidth > math.clientWidth + 1 && math.getAttribute('tabindex') === '0'
+                && style.display === 'block' && style.overflowX === 'auto' });
+            }
+          }
+        }
+        return { over, count, blocks };
+      });
+      for (const block of audit.blocks) {
+        if (!block.ok) broken.push(`${route} at ${width} px: ${block.name}`);
+        if (width === 1280) desktopBlocks.push(`${route}: ${block.name}`);
+        else if (width === 390) phoneBlocks += 1;
+      }
+      // Every page and width is measured before the verdict, so one run names them all.
+      for (const hit of audit.over) overflowing.push(`${route} at ${width} px: ${hit}`);
+      if (width === 1280) measured += audit.count;
+    }
+  }
+  expect(measured, 'inline formulas in item questions were measured').toBeGreaterThan(50);
+  expect(overflowing, 'an inline formula in a question runs past its card').toEqual([]);
+  expect(broken, 'a formula made a scroll block does not scroll, or no keyboard reaches it').toEqual([]);
+  // The block is the phone's fallback; at a desktop width every stem's formula fits inline.
+  expect(desktopBlocks, 'at 1280 px a stem formula needed the scroll block').toEqual([]);
+  expect(phoneBlocks, 'chapter 4\'s over-wide stem equations became scroll blocks on a phone').toBeGreaterThanOrEqual(10);
+  // Turned back: a phone page widened to a desktop gives every block back to
+  // the line, tab stop included; narrowed again, the blocks return.
+  const wide = () => page.evaluate(() => ({
+    blocks: document.querySelectorAll('.ap-katex-wide').length,
+    stops: document.querySelectorAll('.ap-fillin-question .katex[tabindex], .ap-selfcheck-question .katex[tabindex]').length,
+  }));
+  await page.setViewportSize({ width: 390, height: 900 });
+  await gotoBuiltPage(page, '/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/05-quantitative-chemical-analysis/');
+  await expect.poll(async () => (await wide()).blocks).toBeGreaterThan(0);
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await expect.poll(wide).toEqual({ blocks: 0, stops: 0 });
+  await page.setViewportSize({ width: 390, height: 900 });
+  await expect.poll(async () => (await wide()).blocks).toBeGreaterThan(0);
+});
+
+// The typing guide under an equation field once wrapped inside its arrow,
+// "…O2 -" over "> 2H2O" (the rendered-page reading of Chemistry 4.1). The
+// component sets the arrow and each example in a no-wrap span
+// (`.ap-textin-example`); the text the field is described by is unchanged.
+// tools/build/documentation.test.mjs reads the splitting pattern itself.
+test('the equation typing guide never breaks inside its arrow or an example', async ({ page }) => {
+  const GUIDE = 'Type subscripts as plain numbers, a charge after ^, and the arrow as ->: 2H2 + O2 -> 2H2O.';
+  for (const width of [1280, 390]) {
+    await page.setViewportSize({ width, height: 900 });
+    await gotoBuiltPage(page, '/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/01-writing-and-balancing-chemical-equations/');
+    await page.evaluate(() => document.fonts.ready);
+    // The page's first equation field.
+    const item = page.locator('text-in[data-answer="2NH₄NO₃ ⟶ 2N₂ + O₂ + 4H₂O"]');
+    await expect(item).toHaveCount(1);
+    await waitForUpgrade(item, (el) => Boolean(customElements.get('text-in')) && Boolean(el.querySelector('.ap-textin-guide')));
+    const guide = item.locator('.ap-textin-guide');
+    await expect(guide).toHaveText(GUIDE);
+    expect(await item.locator('.ap-textin-field').getAttribute('aria-describedby')).toBe(await guide.getAttribute('id'));
+    const pieces = await guide.evaluate((el) => {
+      const line = parseFloat(getComputedStyle(el).lineHeight) || parseFloat(getComputedStyle(el).fontSize) * 1.2;
+      return {
+        lines: Math.round(el.getBoundingClientRect().height / line),
+        examples: [...el.querySelectorAll('.ap-textin-example')].map((span) => ({
+          text: span.textContent,
+          rects: span.getClientRects().length,
+          tall: span.getBoundingClientRect().height >= 2 * line,
+        })),
+      };
+    });
+    expect(pieces.examples.map((p) => p.text), `at ${width} px: the arrow and the example are the no-wrap pieces`).toEqual(['->', '2H2 + O2 -> 2H2O.']);
+    for (const piece of pieces.examples) {
+      expect({ rects: piece.rects, tall: piece.tall }, `at ${width} px: "${piece.text}" sits on one line`).toEqual({ rects: 1, tall: false });
+    }
+    // On a phone the guide does wrap, so the pieces are tested where a break can fall.
+    if (width === 390) expect(pieces.lines, 'the guide wraps on a phone').toBeGreaterThan(1);
+  }
+});
+
 // The first Chemistry Knowledge Check (November 11, 2026). A check of this
 // book carries what no other book's does: measured-quantity fill-ins and
 // typed formulas, each re-asking a worked example, on a page with no hints
@@ -2603,14 +2727,15 @@ test('on every Chemistry page a display row fits the column, scientific notation
 test('the Chemistry Knowledge Check follows its block, has no hints, keeps the periodic table, and grades a fill-in and a formula', async ({ page }) => {
   await gotoBuiltPage(page, '/physical-sciences/chemistry/knowledge-check-01-03/');
 
-  // After the block's last chapter and its sections, before the appendices.
+  // After the block's last chapter and its sections, before the next
+  // chapter (the appendices, until chapter 4 landed on November 12, 2026).
   const book = await page.locator('aside a[href^="/physical-sciences/chemistry/"]').evaluateAll(
     (links) => [...new Set(links.map((a) => a.getAttribute('href')))],
   );
   const at = book.findIndex((href) => href.endsWith('/chemistry/knowledge-check-01-03/'));
   expect(at, 'the check is in the sidebar').toBeGreaterThan(0);
   expect(book[at - 1]).toMatch(/^\/physical-sciences\/chemistry\/03-[^/]+\/\d\d-[^/]+\/$/);
-  expect(book[at + 1]).toBe('/physical-sciences/chemistry/appendices/');
+  expect(book[at + 1]).toBe('/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/');
 
   // No hint anywhere, and every item kind the page carries is there.
   await expect(page.locator('[class*="hint"]')).toHaveCount(0);
