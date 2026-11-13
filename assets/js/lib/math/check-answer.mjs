@@ -26,7 +26,7 @@
  */
 
 import { ComputeEngine } from '@cortex-js/compute-engine';
-import { compareMeasured, numeralFromNumber, readNumeral, sameNumber } from './significant-figures.mjs';
+import { compareMeasured, numeralFromNumber, readNumeral, sameNumber, withinPercent } from './significant-figures.mjs';
 
 // One engine for the whole page. FillIn hands this same instance to
 // MathLive (MathfieldElement.computeEngine) so the field and the grader
@@ -6924,10 +6924,20 @@ const SOLVED_TOKEN = /^solved:([a-zA-Z])$/;
 // how many units of the last one the value may differ by.
 const SIG_FIGS_TOKEN = /^sig-figs:([1-9])$/;
 const LAST_DIGIT_TOKEN = /^last-digit:([0-2])$/;
-// A relative band, in percent, in place of the last-digit allowance — or on
-// its own, where the count of figures cannot be asked ("Measured quantities").
-const TOLERANCE_TOKEN = /^tolerance:(\d+(?:\.\d+)?)%$/;
-const isMeasuredToken = (token) => SIG_FIGS_TOKEN.test(token) || LAST_DIGIT_TOKEN.test(token) || TOLERANCE_TOKEN.test(token);
+// A key's second value — what the book's own data give where the source's
+// answer cannot be reached from them — beside the two tokens above, or on its
+// own, where the count of figures cannot be asked ("Measured quantities").
+// The value is one nonzero numeral, written without a space: `0.08642`,
+// `5.336\times10^{22}`.
+const WORKED_TOKEN = /^worked:(\S+)$/;
+/** The numeral a `worked:<value>` token carries, or null when the token is not one. */
+function workedNumeral(token) {
+  const match = String(token).match(WORKED_TOKEN);
+  const numeral = match ? readNumeral(match[1]) : null;
+  return numeral !== null && numeral.rest === '' && numeral.mantissa !== 0n ? numeral : null;
+}
+const isWorkedToken = (token) => workedNumeral(token) !== null;
+const isMeasuredToken = (token) => SIG_FIGS_TOKEN.test(token) || LAST_DIGIT_TOKEN.test(token) || isWorkedToken(token);
 const isParameterizedToken = (token) => DENOMINATOR_TOKEN.test(token) || SOLVED_TOKEN.test(token)
   || isMeasuredToken(token);
 
@@ -6943,7 +6953,7 @@ export function parseAnswerForm(spec) {
 }
 
 export const ANSWER_FORM_TOKENS = Object.freeze([...Object.keys(FORM_PREDICATES), 'denominator:<n>', 'solved:<variable>',
-  'sig-figs:<n>', 'last-digit:<k>', 'tolerance:<p>%']);
+  'sig-figs:<n>', 'last-digit:<k>', 'worked:<value>']);
 
 /**
  * Feedback for a right value in the wrong shape. It names the shape rather
@@ -7014,9 +7024,9 @@ export function describeAnswerForm(spec) {
     if (solved) return `solved for ${solved[1]}, with ${solved[1]} alone on one side`;
     const figures = token.match(SIG_FIGS_TOKEN);
     if (figures) return significantFiguresPhrase(Number(figures[1]));
-    // The last-digit allowance is how the value is compared, not a shape the
-    // learner writes: it has no phrase.
-    if (LAST_DIGIT_TOKEN.test(token) || TOLERANCE_TOKEN.test(token)) return null;
+    // The last-digit allowance and a worked value are how the value is
+    // compared, not a shape the learner writes: neither has a phrase.
+    if (LAST_DIGIT_TOKEN.test(token) || isWorkedToken(token)) return null;
     return FORM_PHRASES[token];
   }).filter(Boolean);
   // The number of figures reads last: "in scientific notation to 3
@@ -7037,10 +7047,12 @@ const significantFiguresPhrase = (figures) => `to ${figures} significant figure$
  */
 function measuredFormFeedback(reason, spec) {
   const { figures } = measuredSpec(spec);
-  // A tolerance with no count of figures asks nothing of the digits: the
-  // only thing left to do to a right value is to finish working it out.
+  // A worked value with no count of figures asks no count of the digits:
+  // what is left to do to a right value is to finish working it out, or to
+  // write the digits its data carry.
   if (figures === null) {
     if (reason === 'unworked') return 'That value is right — now finish the calculation and enter just the result.';
+    if (reason === 'too-few') return VALUE_ONLY_TOO_FEW_FEEDBACK;
     if (reason === 'percent') return 'That value is right — now write it as a percent, with the % sign.';
     return describeAnswerForm(spec);
   }
@@ -7051,6 +7063,11 @@ function measuredFormFeedback(reason, spec) {
   if (reason === 'percent') return 'That value is right — now write it as a percent, with the % sign.';
   return describeAnswerForm(spec);
 }
+
+// The sentence for a value graded with no count of figures and written two
+// places short of what its data reach (`124` for 123.88): every digit shown
+// is right, and the answer has more of them.
+export const VALUE_ONLY_TOO_FEW_FEEDBACK = 'That agrees with the answer as far as it goes — now give it more precisely, keeping the decimal places of the values you combined.';
 
 // The sentence for a measured quantity that misses its allowance by a hair
 // (compareMeasured's `near`): still incorrect, and told the one cause a
@@ -7789,7 +7806,7 @@ function checkFormToken(studentRaw, token, answerRaw) {
     return numeral !== null && /^(?:\\?%)?$/.test(numeral.rest.trim())
       && numeral.sigMin <= wanted && wanted <= numeral.sigMax;
   }
-  if (LAST_DIGIT_TOKEN.test(token) || TOLERANCE_TOKEN.test(token)) return true;
+  if (LAST_DIGIT_TOKEN.test(token) || isWorkedToken(token)) return true;
   return FORM_PREDICATES[token](studentRaw, answerRaw);
 }
 
@@ -8518,7 +8535,7 @@ function integerFamilyVerdict(studentRaw, answerRaw, options) {
 }
 
 /* ---------------------------------------------------------------------------
- * Measured quantities: `sig-figs:<n>` with `last-digit:<k>`, and `tolerance:<p>%`
+ * Measured quantities: `sig-figs:<n>` with `last-digit:<k>`, and `worked:<value>`
  *
  * A science book keys a computed quantity with the digits its data support —
  * "0.674 M", "4.585 × 10²² atoms" — and both ordinary readings of such a key
@@ -8546,34 +8563,36 @@ function integerFamilyVerdict(studentRaw, answerRaw, options) {
  * tokens of the form (`scientific-notation`, `decimal`, `percent`) are then
  * required of the numeral as written.
  *
- * `tolerance:<p>%` is the other width for the comparison: a relative band of
- * p percent of the key. Beside `sig-figs:<n>` it stands in the allowance's
- * place — the count of figures is still asked, and the response rounded to n
- * figures must sit inside the band. ALONE it grades the value and nothing
- * else: where the key was computed from atomic masses with more digits than
- * the learner's periodic table prints (the source answers 123.896 amu for
- * P₄; the book's own table gives 123.88), no count of figures can be asked,
- * and `123.88`, `123.9`, and `123.896` are one answer. The band is set wider
- * than that rounding noise and narrower than the smallest real mistake — one
- * hydrogen miscounted is 1.008 amu (Chemistry 2e chapter 3; Derek, November
- * 11, 2026).
+ * `worked:<value>` gives the key a second value: what the book's own data
+ * give where the source's answer key cannot be reached from them (the source
+ * answers 0.08644 g of O₂ from a silver mass finer than the periodic table's
+ * 107.9, and the table gives 0.08642). Both are right, with everything
+ * between them, and `last-digit:<k>` is counted from each end — so the
+ * window is as wide as the disagreement that justifies it and no wider.
+ * ALONE the token grades the value and no count of figures: where the key
+ * shows a place the table does not print (the source answers 123.896 amu for
+ * P₄; the table gives 123.88), `123.88`, `123.9`, and `123.896` are one
+ * answer, graded at the worked value's last place (compareMeasured). A
+ * relative band in percent, `tolerance:<p>%`, did this work for chapters 3
+ * and 4 and was retired on November 12, 2026: its width was a chapter's
+ * judgment, not the item's, and on the one item it took in chapter 4 it let
+ * a molar mass rounded to three figures through.
  *
  * Only a single-numeral key is read this way; a list, a tuple, or an
  * expression key returns null and is graded as before (the content lint
- * refuses `sig-figs` and `tolerance` on one).
+ * refuses `sig-figs` and `worked` on one).
  * ------------------------------------------------------------------------ */
 function measuredSpec(spec) {
   const { tokens, valid } = parseAnswerForm(spec);
   if (!valid) return null;
   const figures = tokens.find((token) => SIG_FIGS_TOKEN.test(token));
-  const band = tokens.find((token) => TOLERANCE_TOKEN.test(token));
-  if (!figures && !band) return null;
+  const second = tokens.find(isWorkedToken);
+  if (!figures && !second) return null;
   const lastDigit = tokens.find((token) => LAST_DIGIT_TOKEN.test(token));
-  const tolerance = band ? readNumeral(band.match(TOLERANCE_TOKEN)[1]) : null;
   return {
     figures: figures ? Number(figures.match(SIG_FIGS_TOKEN)[1]) : null,
     lastDigit: lastDigit ? Number(lastDigit.match(LAST_DIGIT_TOKEN)[1]) : 0,
-    tolerance,
+    worked: second ? workedNumeral(second) : null,
     rest: tokens.filter((token) => !isMeasuredToken(token)).join(' '),
   };
 }
@@ -8641,8 +8660,8 @@ function readMeasuredWriting(raw) {
 
 /**
  * The verdict for a response to a measured-quantity key, as
- * `{ verdict, reason? }`, or null when the form declares no `sig-figs` or
- * the key is not one nonzero numeral (then the ordinary grading applies).
+ * `{ verdict, reason? }`, or null when the form declares neither `sig-figs`
+ * nor `worked`, or the key is not one nonzero numeral (then the ordinary grading applies).
  */
 function measuredVerdict(studentRaw, answerRaw, options = {}) {
   const spec = measuredSpec(options.form);
@@ -8663,7 +8682,17 @@ function measuredVerdict(studentRaw, answerRaw, options = {}) {
     // many digits it happens to (`\frac{1}{2}` shows one), so it is read as
     // a readout to be rounded, never as a count of figures.
     const shown = (spec.figures ?? 0) + 1;
-    const readout = { ...writing.value, sigMin: shown, sigMax: shown };
+    // With no count graded the readout is compared at whatever place the
+    // worked value reaches: an evaluation that happens to end in zeros
+    // (`164.1` for 164.10) is not a value written short.
+    const pad = spec.figures === null ? 6n : 0n;
+    const readout = {
+      ...writing.value,
+      mantissa: writing.value.mantissa * 10n ** pad,
+      exponent: writing.value.exponent - Number(pad),
+      sigMin: shown,
+      sigMax: shown,
+    };
     return compareMeasured(readout, key, spec).verdict === 'incorrect'
       ? { verdict: 'incorrect' }
       : { verdict: 'form', reason: 'unworked' };
@@ -8704,37 +8733,77 @@ function measuredVerdict(studentRaw, answerRaw, options = {}) {
  *     with a `\%` only under `percent` — graded in order. A list, a tuple,
  *     or an expression falls back to the ordinary 1e-9 comparison, where the
  *     tokens would look declared and grade nothing.
+ *   - `worked:<value>` is declared once: beside the pair, where it must show
+ *     the pair's count of figures and be another number than the key (the
+ *     same number says nothing); or ALONE, where no count is graded and the
+ *     value sets the place the comparison is made at.
+ *   - The worked value is within WORKED_CEILING_PERCENT of the key, with one
+ *     unit of the last place to spare for the rounding of each. Two tables'
+ *     digits do not part by more (chapters 3 and 4: at most 0.04 percent
+ *     unrounded); a wider gap is two different answers — 53.74 g of
+ *     aluminum against any table's 53.83 (3.25) — and which one is right is
+ *     a ruling ("Source defects"), not a window.
  */
+export const WORKED_CEILING_PERCENT = '0.1';
+const PAIR_PROBLEM = 'a measured quantity declares exactly one `sig-figs:<n>` and one `last-digit:<k>` together — `last-digit:0` when the last digit is determined (a rounding drill, arithmetic on printed numbers), `last-digit:1` when it is the uncertain digit of a result computed from measured data — and, where the book\'s own data give another value than the source\'s key, that value as `worked:<value>` beside them';
+
 export function measuredKeyProblem(answerRaw, spec, { mode } = {}) {
   const { tokens } = parseAnswerForm(spec);
   const figures = tokens.filter((token) => SIG_FIGS_TOKEN.test(token));
   const allowance = tokens.filter((token) => LAST_DIGIT_TOKEN.test(token));
-  const band = tokens.filter((token) => TOLERANCE_TOKEN.test(token));
-  if (figures.length === 0 && allowance.length === 0 && band.length === 0) return null;
-  if (band.length > 0) {
-    // The relative band stands in the allowance's place, or alone.
-    if (band.length !== 1 || allowance.length !== 0 || figures.length > 1) {
-      return 'a `tolerance:<p>%` is declared once, alone (the count of figures is then not graded) or beside one `sig-figs:<n>` in place of `last-digit:<k>` — never with a `last-digit`, which is the other way to say how close is close enough';
-    }
-    const percent = Number(band[0].match(TOLERANCE_TOKEN)[1]);
-    if (!(percent > 0) || percent > 2) {
-      return '`tolerance:<p>%` is a relative band of more than 0 and at most 2 percent — wider than rounding noise, narrower than the smallest real mistake';
-    }
-  } else if (figures.length !== 1 || allowance.length !== 1) {
-    return 'a measured quantity declares exactly one `sig-figs:<n>` and one `last-digit:<k>` together — `last-digit:0` when the last digit is determined (a rounding drill, arithmetic on printed numbers), `last-digit:1` when it is the uncertain digit of a result computed from measured data — or a `tolerance:<p>%` in the allowance\'s place';
-  } else if (figures[0] === 'sig-figs:1' && allowance[0] !== 'last-digit:0') {
-    return '`sig-figs:1` has no last digit to spare — one unit of the only figure is a different answer; declare `last-digit:0`';
+  const second = tokens.filter((token) => WORKED_TOKEN.test(token));
+  if (figures.length === 0 && allowance.length === 0 && second.length === 0) return null;
+  if (second.length > 1) return 'a `worked:<value>` is declared once — the one value the book\'s own data give';
+  const worked = second.length === 1 ? workedNumeral(second[0]) : null;
+  if (second.length === 1 && worked === null) {
+    return '`worked:<value>` carries ONE nonzero number written without a space — `worked:0.08642`, `worked:5.336\\times10^{22}`';
   }
-  if (mode === 'unordered') return '`sig-figs` and `tolerance` grade one number; neither can be declared with answerMode="unordered"';
+  const alone = second.length === 1 && figures.length === 0 && allowance.length === 0;
+  if (!alone) {
+    if (figures.length !== 1 || allowance.length !== 1) return PAIR_PROBLEM;
+    if (figures[0] === 'sig-figs:1' && allowance[0] !== 'last-digit:0') {
+      return '`sig-figs:1` has no last digit to spare — one unit of the only figure is a different answer; declare `last-digit:0`';
+    }
+  }
+  if (mode === 'unordered') return '`sig-figs` and `worked` grade one number; neither can be declared with answerMode="unordered"';
   const key = readNumeral(bareLatex(answerRaw ?? ''));
   const rest = key === null ? null : key.rest.trim();
   if (key === null || key.mantissa === 0n || (rest !== '' && !PERCENT_SIGN_ONLY.test(rest))) {
-    return '`sig-figs` and `tolerance` grade ONE nonzero number — a decimal or `a\\times10^{n}` — so a list, a pair, a labelled or an expression key cannot declare either; give each quantity its own fill-in';
+    return '`sig-figs` and `worked` grade ONE nonzero number — a decimal or `a\\times10^{n}` — so a list, a pair, a labelled or an expression key cannot declare either; give each quantity its own fill-in';
   }
   if (rest !== '' && !tokens.includes('percent')) {
-    return 'a `sig-figs` or `tolerance` key that ends in `\\%` declares `percent` too, or drops the sign and names the percent in the question';
+    return 'a `sig-figs` or `worked` key that ends in `\\%` declares `percent` too, or drops the sign and names the percent in the question';
+  }
+  if (worked !== null) {
+    const spare = { units: 1, unitExponent: Math.max(worked.exponent, key.exponent) };
+    if (worked.negative !== key.negative || !withinPercent(worked, key, readNumeral(WORKED_CEILING_PERCENT), spare)) {
+      return `the \`worked\` value is more than ${WORKED_CEILING_PERCENT} percent (and a unit of the last place) from the key — that is not another table's digits but another answer; settle which one is right (docs/subjects/chemistry.md, "Source defects") and key that`;
+    }
+    if (!alone) {
+      const count = Number(figures[0].match(SIG_FIGS_TOKEN)[1]);
+      if (!(worked.sigMin <= count && count <= worked.sigMax)) {
+        return `the \`worked\` value is written to the ${count} significant figure${count === 1 ? '' : 's'} the item asks for, as its key is`;
+      }
+      if (sameNumber(worked, key)) {
+        return 'the `worked` value is the key itself — the token says nothing; drop it, or record the value the book\'s own data give';
+      }
+    }
   }
   return null;
+}
+
+/**
+ * The worked value to show a learner beside the source's answer, as the
+ * LaTeX the token carries — or '' when the form declares none, or declares
+ * the key's own number (a formula mass the table reaches, graded value-only
+ * beside its exercise's other parts): then there is one answer to show.
+ */
+export function workedValueShown(answerRaw, spec) {
+  const { tokens } = parseAnswerForm(spec);
+  const second = tokens.find(isWorkedToken);
+  const key = readNumeral(bareLatex(answerRaw ?? ''));
+  if (!second || key === null) return '';
+  return sameNumber(workedNumeral(second), key) ? '' : second.match(WORKED_TOKEN)[1];
 }
 
 export function checkAnswer(studentRaw, answerRaw, options = {}) {

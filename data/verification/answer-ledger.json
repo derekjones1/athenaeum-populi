@@ -1180,6 +1180,14 @@
     "result": "agrees"
    }
   },
+  "0262ef8d5dbbc8e2": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp20009152 part (d); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "02665c1bcb46746b": {
    "verdict": "ok",
    "note": "KC 7 40.2 § body White Blood Cells (fs-idm45398096), m66651 — parent re-read against the module"
@@ -14923,6 +14931,14 @@
     "result": "agrees"
    }
   },
+  "1d4dc5f37b522930": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp14091664 part (c); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1d50269e3e59a7b8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -16737,6 +16753,14 @@
   "20e7236e26940eac": {
    "verdict": "ok",
    "note": "Practice #19: combine x^2*x^(2/3) and y^3*y^(5/3) exponents (cube root as 1/3 power); verified by float substitution x=2,y=3 (node) equals (8/3)log(x)+(14/3)log(y). Matches CNXML solution. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "20f0f930f4944275": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp14091664 part (e); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "20f52fa96c327e8e": {
    "verdict": "ok",
@@ -22888,6 +22912,14 @@
   "2de7a1c96e4d85e0": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "2de9c1c96a3a3faf": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp51968592 part (d); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -33428,6 +33460,14 @@
     "result": "agrees"
    }
   },
+  "435095706a867579": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp51968592 part (b); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4350eb03dc3162d3": {
    "verdict": "ok",
    "note": "Critical Thinking fs-idp149773760. Model answer is the CNXML solution verbatim, naming the four ruminant stomach compartments (rumen, reticulum, omasum, abomasum) and their microbial fermentation role, matching the Ruminants subsection prose. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -41689,6 +41729,14 @@
    "verdict": "ok",
    "note": "m66466 critical-thinking solution fs-id1482920 (universality of glycolysis supporting its antiquity) matches the page's model answer verbatim; all three checks restate it with no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "549d3c486c753c2c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm27167936; stem gives 0.499935 -> 0.4999; source key 0.5000 kept by parent ruling (rounding noise: the source built it from 3.63(b) datum), tolerance:0.05% grades both correct | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "549e69877d9a5a93": {
    "verdict": "ok",
    "note": "RQ fs-id1543027 key C source of blood vessels in the epidermis (fs-id1511323 avascular epidermis); option D wording as printed; hint now points only at the Hypodermis section and its box",
@@ -46066,6 +46114,14 @@
     "result": "agrees"
    }
   },
+  "5d90a46f1a5e47fe": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp172099056 part (a), 5.337 × 10²² molecules; sig-figs:4 last-digit:1 per rulings G1 (table 5.3355e22, within 1u). November 12, 2026 follow-up: stem corrected from \"ores such as K[Ag(CN)2]\" to \"its ores as K[Ag(CN)2]\" and \"molecules\" to \"formula units\" (errata 3034, 3035); key unchanged, a Source note after the item, re-solved blind. | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5d9115d997b23894": {
    "verdict": "ok",
    "note": "parent: r=16^(1/4)=2, theta=(120+360k)/4 -> 30,120,210,300; each root^4 recomputed | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -48182,6 +48238,14 @@
   "625e3e00e555782e": {
    "verdict": "ok",
    "note": "cloze of fs-id1956663",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "625eea8545fa8d45": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp20009152 part (b); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -56716,6 +56780,14 @@
    "verdict": "ok",
    "note": "Critical Thinking Q2 fs-idm146811344, model answer = source solution verbatim | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "75584a4fb284d609": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp14091664 part (d); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "755e1b78c7040490": {
    "verdict": "ok",
    "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -59355,6 +59427,14 @@
   "7a65d7631c240c88": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "7a6aa6ffeedf510d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp56656128 part (a); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -66770,6 +66850,14 @@
     "result": "agrees"
    }
   },
+  "89ccfa38c5bc53b8": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp56656128 part (b); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "89d4956867050988": {
    "verdict": "ok"
   },
@@ -68680,6 +68768,14 @@
     "result": "agrees"
    }
   },
+  "8df52093a63c9740": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp61309952 part (b) (restating fs-idp16477696), mass, key 0.08644 | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8df67d1f7bc1e618": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -68705,6 +68801,14 @@
    "note": "glossary recall: frequency-dependent selection (fs-idm77374592) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "8e09fdcc5f4b60d6": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp51968592 part (a); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -70594,6 +70698,14 @@
     "result": "agrees"
    }
   },
+  "92180a62c260438a": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp56656128 part (c); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9218f43b279c46eb": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -71105,6 +71217,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver-A",
+    "result": "agrees"
+   }
+  },
+  "932bdac6b14ad0e9": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp20009152 part (a); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -94009,6 +94129,14 @@
     "result": "agrees"
    }
   },
+  "c32a6bbccb08a2cd": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp51968592 part (e); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c32fdaa849197e25": {
    "verdict": "ok",
    "note": "source exercise fs-idp61309952 part (e) (restating fs-idp16477696), moles, key 16.31",
@@ -94430,6 +94558,14 @@
   "c3fcab43609e434b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c3fe76db5952848a": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp172099056 part (b), 10.41 g (table 10.40) November 12, 2026 follow-up: stem corrected from \"ores such as K[Ag(CN)2]\" to \"its ores as K[Ag(CN)2]\" (erratum 3034); key unchanged, re-solved blind. | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -95781,6 +95917,14 @@
   "c69e0fbdaaae15b1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c6a0424735158094": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp56656128 part (e); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -103194,6 +103338,14 @@
     "result": "agrees"
    }
   },
+  "d6c34e3f6e49ed5c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp14091664 part (b); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d6c43fe8485cc386": {
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
@@ -108428,6 +108580,15 @@
     "result": "agrees"
    }
   },
+  "e1d595aa76b07938": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm130496608 part (a), %N: source key 82.24 (decision 1, sig-figs:4 tolerance:0.05%); table 82.27 / unrounded 82.25 inside band; hint re-pointed to the percent composition equation (check-3.2 defect 1) | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "The key 82.24 is the source's, computed from atomic masses with more digits than this book's periodic table prints (erratum 2996). The solver's 82.25 (formula mass carried unrounded) and the body's 82.27 (formula mass rounded to 17.03) both grade correct under sig-figs:4 tolerance:0.05%, as the parent verified through the grader; the body's working of ammonia is the source's and stands, and a Source note after the exercise says the answer shown is the source's."
+   }
+  },
   "e1d79da262cfb5e8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -108674,6 +108835,14 @@
     "result": "agrees"
    }
   },
+  "e23e94087e9f76cd": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp14091664 part (a); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e23ea75c77c0b9cb": {
    "verdict": "ok",
    "note": "author MC from glossary fs-id2288002 cortical nephrons ('of Henle' dropped from stem)",
@@ -108701,6 +108870,14 @@
   "e2491259ee34b433": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "e249e7e5c242e14f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp56656128 part (d); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -117484,6 +117661,14 @@
    "verdict": "ok",
    "note": "m66459 visual-exercise fs-idp41379504, solution fs-id1786520 (rendered as selfcheck): model answer \"No. We can store chemical energy because of the need to overcome the barrier to its breakdown.\" matches source verbatim. Both CHECKS clauses restate it, no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "f519572df638895a": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp20009152 part (c); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f51bc039574ad1e1": {
    "verdict": "ok",
    "note": "Review fs-id1407729, source key A 'most do not reach the oocyte'; fs-id1723898 + summary fs-id2520259",
@@ -118952,6 +119137,14 @@
   "f7eef64147cef137": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "f7f38d5c048e931a": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp51968592 part (c); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -121368,6 +121561,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver (blind, masked pages)",
+    "result": "agrees"
+   }
+  },
+  "fcdef935a36f3c28": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp42864672 part (Si mass); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm sig-figs:4 tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },

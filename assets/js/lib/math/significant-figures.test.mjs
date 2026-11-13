@@ -200,35 +200,78 @@ test('numeralFromNumber gives an evaluated value its exact-decimal reading', () 
   assert.equal(numeralFromNumber(NaN), null);
 });
 
-test('a relative tolerance grades the value, with or without a count of figures', async (t) => {
+test('a worked value is the key\'s second right answer, with or without a count of figures', async (t) => {
   const { withinPercent } = await import('./significant-figures.mjs');
-  const percent = (text) => readNumeral(text);
-  // Exactly on the edge of the band is inside it: 0.05% of 2000 is 1.
-  assert.equal(withinPercent(readNumeral('2001'), readNumeral('2000'), percent('0.05')), true);
-  assert.equal(withinPercent(readNumeral('2001.01'), readNumeral('2000'), percent('0.05')), false);
-  assert.equal(withinPercent(readNumeral('-123.88'), readNumeral('123.896'), percent('0.05')), false, 'the sign is part of the number');
+  // The lint's ceiling on how far the two values may part. Exactly on the
+  // edge is inside: 0.05% of 2000 is 1.
+  assert.equal(withinPercent(readNumeral('2001'), readNumeral('2000'), readNumeral('0.05')), true);
+  assert.equal(withinPercent(readNumeral('2001.01'), readNumeral('2000'), readNumeral('0.05')), false);
+  assert.equal(withinPercent(readNumeral('-123.88'), readNumeral('123.896'), readNumeral('0.05')), false, 'the sign is part of the number');
   const rows = [
-    // Chemistry 2e 3.3(a): the source answers 123.896 amu for P4; the book's table gives 4 × 30.97.
-    ['123.88', '123.896', null, '0.05', 'correct'],
-    ['123.9', '123.896', null, '0.05', 'correct'],
-    ['123.896', '123.896', null, '0.05', 'correct'],
-    ['1.2388\\times10^{2}', '123.896', null, '0.05', 'correct'],
-    ['124', '123.896', null, '0.05', 'incorrect', 'near'],
-    // one hydrogen miscounted (1.008 amu) is far outside the band
-    ['122.888', '123.896', null, '0.05', 'incorrect'],
-    ['18.02', '18.015', null, '0.05', 'correct'],
-    ['18', '18.015', null, '0.05', 'incorrect', 'near'],
-    // beside sig-figs the band replaces the last-digit allowance and the count is still asked
-    // (3.33(a): the source answers 82.24% N for NH3; the book's table gives 82.27)
-    ['82.27', '82.24', 4, '0.05', 'correct'],
-    ['82.2665', '82.24', 4, '0.05', 'form', 'too-many'],
-    ['82.2', '82.24', 4, '0.05', 'form', 'too-few'],
-    ['82.29', '82.24', 4, '0.05', 'incorrect', 'near'],
-    ['82.3', '82.24', 4, '0.05', 'incorrect'],
+    // [response, key, figures, lastDigit, worked, verdict, reason]
+    // No count graded. Chemistry 2e 3.3(a): the source answers 123.896 amu
+    // for P4; the book's table gives 4 × 30.97 = 123.88. Graded at the
+    // worked value's last place, one unit of it to spare at each end.
+    ['123.88', '123.896', null, 0, '123.88', 'correct'],
+    ['123.896', '123.896', null, 0, '123.88', 'correct'],
+    ['123.89', '123.896', null, 0, '123.88', 'correct'],        // between the two
+    ['123.87', '123.896', null, 0, '123.88', 'correct'],        // one unit below the table's value
+    ['123.906', '123.896', null, 0, '123.88', 'correct'],       // one unit above the source's
+    ['1.2388\\times10^{2}', '123.896', null, 0, '123.88', 'correct'],
+    ['123.86', '123.896', null, 0, '123.88', 'incorrect', 'near'],
+    ['123.91', '123.896', null, 0, '123.88', 'incorrect', 'near'],
+    ['123.84', '123.896', null, 0, '123.88', 'incorrect'],
+    // one hydrogen miscounted (1.008 amu)
+    ['122.888', '123.896', null, 0, '123.88', 'incorrect'],
+    // written one place short: right when a value between the two rounds to it
+    ['123.9', '123.896', null, 0, '123.88', 'correct'],          // 4 × 30.97 by the multiplication rule
+    ['123.8', '123.896', null, 0, '123.88', 'incorrect'],
+    ['256.5', '256.48', null, 0, '256.48', 'correct'],           // S8: the table reaches the key
+    ['256.4', '256.48', null, 0, '256.48', 'incorrect'],
+    ['256.50', '256.48', null, 0, '256.48', 'incorrect', 'near'], // a zero that claims the hundredths
+    ['18.0', '18.015', null, 0, '18.02', 'correct'],
+    // two places short and still what it rounds to: told to write its digits
+    ['124', '123.896', null, 0, '123.88', 'form', 'too-few'],
+    ['18', '18.015', null, 0, '18.02', 'form', 'too-few'],
+    ['200', '199.9976', null, 0, '200.00', 'form', 'too-few'],
+    ['123', '123.896', null, 0, '123.88', 'incorrect'],
+    ['120', '123.896', null, 0, '123.88', 'incorrect'],
+    ['100', '97.9950', null, 0, '97.99', 'incorrect'],            // three places short: a round number is no answer
+    // Beside the count, the allowance runs from each end.
+    // 4.45(b): the source answers 0.08644 g O2; Appendix A's silver gives 0.08642.
+    ['0.08642', '0.08644', 4, 1, '0.08642', 'correct'],
+    ['0.08643', '0.08644', 4, 1, '0.08642', 'correct'],
+    ['0.08641', '0.08644', 4, 1, '0.08642', 'correct'],
+    ['0.08645', '0.08644', 4, 1, '0.08642', 'correct'],
+    ['0.08640', '0.08644', 4, 1, '0.08642', 'incorrect', 'near'],  // moles cut to three figures
+    ['0.08647', '0.08644', 4, 1, '0.08642', 'incorrect', 'near'],
+    ['0.08634', '0.08644', 4, 1, '0.08642', 'incorrect'],          // a molar mass rounded to 232
+    ['0.086419', '0.08644', 4, 1, '0.08642', 'form', 'too-many'],
+    ['0.0864', '0.08644', 4, 1, '0.08642', 'form', 'too-few'],
+    // 3.33(a): the source answers 82.24% N for NH3; the book's table gives 82.27
+    ['82.27', '82.24', 4, 1, '82.27', 'correct'],
+    ['82.25', '82.24', 4, 1, '82.27', 'correct'],
+    ['82.28', '82.24', 4, 1, '82.27', 'correct'],
+    ['82.2665', '82.24', 4, 1, '82.27', 'form', 'too-many'],
+    ['82.2', '82.24', 4, 1, '82.27', 'form', 'too-few'],
+    ['82.3', '82.24', 4, 1, '82.27', 'form', 'too-few'],           // what the worked value rounds to
+    ['82.29', '82.24', 4, 1, '82.27', 'incorrect', 'near'],
+    ['82.31', '82.24', 4, 1, '82.27', 'incorrect'],
+    // no allowance at all: every number is in the stem (3.59), and the two values are the whole window
+    ['0.4999', '0.5000', 4, 0, '0.4999', 'correct'],
+    ['0.5000', '0.5000', 4, 0, '0.4999', 'correct'],
+    ['0.5001', '0.5000', 4, 0, '0.4999', 'incorrect', 'near'],
+    // the worked value may be the larger of the two, and in scientific notation
+    ['5.335\\times10^{22}', '5.337\\times10^{22}', 4, 1, '5.336\\times10^{22}', 'correct'],
+    ['5.338\\times10^{22}', '5.337\\times10^{22}', 4, 1, '5.336\\times10^{22}', 'correct'],
+    ['5.334\\times10^{22}', '5.337\\times10^{22}', 4, 1, '5.336\\times10^{22}', 'incorrect', 'near'],
+    // with no worked value nothing changed
+    ['0.08642', '0.08644', 4, 1, null, 'incorrect', 'near'],
   ];
-  for (const [response, key, figures, tolerance, verdict, reason] of rows) {
-    await t.test(`${response} against ${key} (${figures ?? 'no'} figures, ±${tolerance}%)`, () => {
-      const result = compareMeasured(readNumeral(response), readNumeral(key), { figures, tolerance: percent(tolerance) });
+  for (const [response, key, figures, lastDigit, worked, verdict, reason] of rows) {
+    await t.test(`${response} against ${key} (${figures ?? 'no'} figures, ±${lastDigit}, worked ${worked})`, () => {
+      const result = compareMeasured(readNumeral(response), readNumeral(key),
+        { figures, lastDigit, worked: worked === null ? null : readNumeral(worked) });
       assert.equal(result.verdict, verdict);
       assert.equal(result.reason, reason);
     });

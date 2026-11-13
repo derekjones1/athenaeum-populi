@@ -72,7 +72,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { basename, dirname, join, resolve } from 'node:path';
 import { SOLVE_NOTE, extractExercises, readLedger } from './answer-ledger.mjs';
-import { maskKeys } from '../lib/content.mjs';
+import { maskKeys, maskWorkedValue } from '../lib/content.mjs';
 import { checkText } from '../../assets/js/lib/text/check-text.mjs';
 import { normalizeText } from '../lib/openstax-source.mjs';
 import { checkSortbins, parseSortbinsConfig } from '../../assets/js/lib/text/check-sortbins.mjs';
@@ -115,7 +115,8 @@ export function packetItem(exercise) {
     // The answer's SHAPE is not the key: an unordered list, a required form
     // ("fraction", "solved:x") tell the solver how to write what they find.
     if (exercise.params.answerMode) item.answerMode = exercise.params.answerMode;
-    if (exercise.params.answerForm) item.answerForm = exercise.params.answerForm;
+    // The form's `worked:<value>` is a second right answer: its value never enters the packet.
+    if (exercise.params.answerForm) item.answerForm = maskWorkedValue(exercise.params.answerForm);
   }
   // A text-in's form says how to TYPE the answer — a formula with its
   // subscripts and charge, a balanced equation — not what it is. The solver

@@ -52,8 +52,9 @@ before any edit that follows the solve, no git from an agent).
    content/physical-sciences/chemistry X-Y > $SP/kc/examples.txt`.
 4. **Run facts**, `$SP/kc/run-facts.md`, written by the parent: per section
    its module id, objectives, and worked examples; the examples ruled
-   unusable, each with its reason; the chapters' bands (`docs/history/chemistry.md`
-   has each chapter's `tolerance:<p>%` default); the errata that touch the
+   unusable, each with its reason; the section items that carry a `worked:<value>`
+   (`grep -n 'worked:' content/physical-sciences/chemistry`), since a check
+   item re-asking one takes the same token; the errata that touch the
    block's modules (`grep -n 'm<id>' docs/openstax-errata.md`), with any
    decision a check item must follow; every Source note on the block's
    section pages (`grep -n '\*Source note' <chapter dirs>`), since an

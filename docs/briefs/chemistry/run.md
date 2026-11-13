@@ -84,12 +84,13 @@ Sections 2.1–2.4"):
 
 Six things chapter 3 added (`docs/history/chemistry.md`, "Chapter 3"):
 
-- **The run facts state the chapter's band** — the `tolerance:<p>%` its
-  table-dependent keys are graded inside (playbook "Numeric keys", "The
-  source's value is the key") — with the widest measured gap between a
-  source key and the value this book's periodic table gives, and the
-  smallest real mistake it must still catch. Chapter 3's is `0.05%`. A key
-  is never re-computed to the table: the parent who did so was overruled.
+- **The run facts list the chapter's worked values** — every source key
+  this book's periodic table does not reach, with the table's value beside
+  it, which the item carries as `worked:<value>` (playbook "Numeric keys",
+  "The source's value is the key"). Chapters 3 and 4 set a percent band
+  here instead (`0.05%`, `0.2%`); it was retired on November 12, 2026,
+  because a chapter's width is not an item's. A key is never re-computed
+  to the table: the parent who did so was overruled.
 - **A ruling that corrects a key waits for the consistency reader.** It
   sets the item beside the module's other exercises (3.59's "wrong" key
   was the next exercise's given datum). A ruling made earlier is sent
@@ -125,9 +126,10 @@ Eight things chapter 4 added (`docs/history/chemistry.md`, "Chapter 4"):
   touches** (`chemCanon` is read by the Knowledge Check sources gate): run
   `tools/source`, `tools/verify`, `tools/lib`, and `tools/lint` tests, not
   only the grader's.
-- **The band is measured by an agent before the wave** (every numeric key
-  three ways: unrounded, rounded at each step, a two-decimal table) and
-  the report goes to the authors with the run facts.
+- **The table's values are computed by an agent before the wave** (every
+  numeric key from Appendix A's masses, by the module's own method,
+  carried unrounded) and the report — each key the table does not reach,
+  with the table's value — goes to the authors with the run facts.
 - **One rule for one cause.** The parent graded "one unit off because
   something was rounded mid-way" five ways across three pages before the
   consistency reader set them side by side; a token ruling made for one

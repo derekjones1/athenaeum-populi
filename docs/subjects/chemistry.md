@@ -200,7 +200,7 @@ The component follows the SHAPE of the source's keyed answer:
 
 | The keyed answer is | Component |
 |---|---|
-| one measured or computed number | `fillin` with `sig-figs:<n> last-digit:<k>` ("Measured quantities"); the stem names the unit. Where this book's periodic table cannot reach the source's key digit for digit, `tolerance:<p>%` ("Numeric keys", "The source's value is the key") |
+| one measured or computed number | `fillin` with `sig-figs:<n> last-digit:<k>` ("Measured quantities"); the stem names the unit. Where this book's own data give another value than the source's key, that value beside the pair as `worked:<value>` ("Numeric keys", "The source's value is the key") |
 | a count ("how many significant figures", "how many protons") | `fillin` with `whole-number`, which refuses the stem's own `2.0` retyped against the key `2` |
 | a number in a named notation ("in exponential notation") | `fillin` adding `scientific-notation` |
 | one of a closed set the stem or its figure names (physical or chemical; element, compound, or mixture; exact or uncertain; an inch, a foot, a yard, or a mile; Archer W, X, Y, or Z) | `multiplechoice` whose options are that set, in its own order — a two-option set is a two-option item |
@@ -439,99 +439,138 @@ selfchecks, source defects, the footer — and each is stated once.
   - `2` only when THIS book's own conversion table offers more than one
     route and the routes end more than one unit apart — one of them may be
     exact — with every route computed in the ledger (1.6: Kilimanjaro's
-    19,565 ft, 5.9632 to 5.9635 km by the table's routes).
-- **The source's value is the key, and a relative band takes the
-  learner's table** *(Derek, November 11, 2026; chapter 3)*. The source's
+    19,565 ft, 5.9632 to 5.9635 km by the table's routes). This is not a
+    worked value (below): every route is this book's own data and the key
+    is one of them, so there is no second answer to name — a
+    `worked:5.9632` would tell a learner "this book's own data give
+    5.9632" of a table that gives 5.9634 as well *(looked at and left,
+    November 12, 2026)*.
+- **The source's value is the key, and the value this book's own data
+  give is right beside it** *(Derek, November 11, 2026, chapter 3; the
+  second value replaced a percent band on November 12, 2026)*. The source's
   answer key was not always computed from the atomic masses this book's
   periodic table prints: printed Exercise 3.3 answers 123.896 amu for P₄,
   and the table (four figures for most elements) gives 4 × 30.97 = 123.88.
   More digits in the table would buy nothing — another table still ends a
-  digit off — so the page keeps the source's number as the key and grades
-  inside a band, `tolerance:<p>%` ("Measured quantities"). The key is never
-  re-computed to the table and no item takes a Source note for it.
-  - **Compute every such key from Appendix A's masses as printed**, by the
-    module's own method (count × atomic mass keeps the mass's decimal
-    places; the sum is rounded to the least precise place of its terms),
-    and put both values and their relative difference in the ledger.
-  - **`tolerance:<p>%` ALONE — the count of figures is not graded — on a
+  digit off — so the page keeps the source's number as the key and records
+  the table's as the item's **worked value**, `worked:<value>` in the
+  `answerForm` ("Measured quantities"). Both are graded correct, with
+  everything between them, and a learner who answers correctly is shown
+  both. The key is never re-computed to the table.
+  - **The rule for an author is one sentence: when the value you work from
+    this book's own data is not the source's key, record it.** Compute
+    every key from Appendix A's masses as printed, by the module's own
+    method (count × atomic mass keeps the mass's decimal places; the sum
+    is rounded to the least precise place of its terms; a molar mass the
+    module rounds before dividing is rounded — 3.2's 14.01 ÷ 17.03 =
+    82.27), carried unrounded through every other step, and put both
+    values in the ledger. One unit of the last figure apart or ten, the
+    worked value goes on the item: the window is then as wide as the
+    disagreement and no wider, and no one chooses a width.
+  - **`sig-figs:<n> last-digit:<k> worked:<value>` on a measured item**:
+    the count is still the learner's to find, and the allowance —
+    `last-digit` exactly as "Numeric keys" above gives it, `1` where a
+    factor is fetched from a table — is counted from each of the two
+    values (4.3's 0.08644 g of O₂ with `worked:0.08642`: 0.08641 to
+    0.08645; 3.2's 82.24% N with `worked:82.27`: 82.23 to 82.28). The
+    worked value is written to the same count of figures as the key.
+  - **`worked:<value>` ALONE — the count of figures is not graded — on a
     formula mass or molar mass asked for itself WHERE the source's key
     shows a place the table does not print**: every part of such an
-    exercise, the same token on each (3.1's printed 3.3, 3.5, 3.13, 3.15).
-    A formula mass the table reaches digit for digit (3.1's two Check Your
-    Learning answers, 151.16 and 310.18) keeps `sig-figs:<n>
-    last-digit:1`: its figures can be asked.
-  - **`sig-figs:<n> tolerance:<p>%` on any other measured item whose table
-    value, at the source's count, is more than one unit of the last digit
-    from the source's key** (3.2's 82.24% N in NH₃, 82.27 by the table):
-    the count is still the learner's to find. An item the table reaches
-    within one unit stays `sig-figs:<n> last-digit:1`.
-  - **The band is a chapter default, set per exercise where it must
-    differ**: wider than rounding noise, narrower than the smallest real
-    mistake. Chapter 3: `0.05%` — the widest table-against-key gap is
-    0.036%, and one hydrogen miscounted (1.008 amu) is caught up to a
-    formula mass of about 2,000 amu. Chapter 4, multi-step stoichiometry,
-    measured every key three ways and set `0.2%`: the widest gap between a
-    source key and the table's value on a four-figure key is 0.096%, and
-    one hydrogen miscounted in UO₂(C₂O₄)·3H₂O is 0.244%. **No allowance is
-    widened for rounding at each step** *(chapter 4)*: the book teaches
-    carrying values unrounded (Section 3.3), so a response that rounds each
-    step and lands a unit away is graded by the same `last-digit` as any
-    other — `0` when every number is in the stem. In chapter 4 the band
-    took one item. The grader refuses more than 2 percent. **A step-rounder
-    is told, not accepted** *(November 12, 2026)*: every such miss measured
-    in chapter 4 lands one or two units of the last figure outside the
-    allowance (34.9 for 35.0, 73.5 for 73.3 ± 1, 86.53 for 86.56 ± 1), and
-    there the fill-in says "Close, but not within rounding of the answer…"
-    in place of "Not quite" (`compareMeasured`'s `near`; the table under
-    "Measured quantities" quotes it). The verdict is incorrect and no key or
-    token changed for it; no hint needs a sentence about rounding.
-  - **The same band takes a key the source's own rounded stem misses by a
-    unit of the last digit.** Printed 3.59 dilutes 0.1718 L of 0.3556 M
-    propanol to 0.1222 M and answers 0.5000 L; the stem's numbers return
-    0.4999, and the source's next exercise gives "0.5000 L of a 0.1222-M
-    solution" as data — the stem was built from the answer and rounded.
-    The source's value stays the key, `sig-figs:4 tolerance:0.05%`, with
-    one erratum and no Source note. Not for a key the stem's data miss by
-    more than the band, and not for a tie rounded the other way (3.51(d),
-    exactly 5.85 × 10⁻⁷: the book's own rounding rule decides the KEY, with
-    the Source note of "Source defects" in 1.6's wording, and the item
-    takes `last-digit:1` so that the tie rounded half up is right too —
-    the item tests molarity, not rounding; a rounding drill of 1.5 keeps
-    `last-digit:0`).
+    exercise, the same form on each (3.1's printed 3.3, 3.5, 3.13, 3.15),
+    a part the table happens to reach included (S₈: `answer="256.48"`,
+    `worked:256.48`). The value is graded at the worked value's last
+    place: between the two with one unit of that place to spare, or —
+    written one place short — what a value between them rounds to (123.9
+    for 4 × 30.97, four figures by the multiplication rule). A formula
+    mass in an exercise whose every key the table reaches digit for digit
+    (3.1's two Check Your Learning answers, 151.16 and 310.18) keeps
+    `sig-figs:<n> last-digit:1`: its figures can be asked.
+  - **No width is chosen, by the chapter or by the item** *(November 12,
+    2026)*. Chapters 3 and 4 graded these items inside a relative band,
+    `tolerance:<p>%`, "wider than rounding noise, narrower than the
+    smallest real mistake", set once per chapter (0.05%, then 0.2%). The
+    band was the chapter's and not the item's: chapter 4's 0.2% was sized
+    from a gap on an item that took `last-digit:1`, and on the one item it
+    did take it graded 0.08627 to 0.08661 correct — a molar mass rounded
+    to three figures among them — where the two values are two units
+    apart. The token is gone from the grader; a page that declares it does
+    not build.
+  - **The two values are within 0.1 percent of each other, with a unit of
+    the last place to spare for the rounding of each** (lint). Two tables'
+    digits do not part by more — beyond a single unit of the last figure,
+    the widest gap in chapters 3 and 4 is 82.24 against 82.27, 0.04
+    percent. A wider gap is another answer, not
+    another table (3.25's 53.74 g of aluminum, 53.83 by any table, 0.17
+    percent): which one is right is a ruling under "Source defects", and
+    the item is keyed with it. The ceiling is the book's and is raised
+    only by a recorded decision, with the items that need it named — a
+    later chapter whose answers are small differences of large table
+    values may be the first.
+  - **No allowance is widened for rounding at each step** *(chapter 4)*:
+    the book teaches carrying values unrounded (Section 3.3), so a response
+    that rounds each step and lands a unit away is graded by the same
+    `last-digit` as any other — `0` when every number is in the stem.
+    **A step-rounder is told, not accepted** *(November 12, 2026)*: every
+    such miss measured in chapter 4 lands one or two units of the last
+    figure outside the allowance (34.9 for 35.0, 73.5 for 73.3 ± 1, 86.53
+    for 86.56 ± 1; 0.08640 for 0.08641 to 0.08645), and there the fill-in
+    says "Close, but not within rounding of the answer…" in place of "Not
+    quite" (`compareMeasured`'s `near`; the table under "Measured
+    quantities" quotes it). The verdict is incorrect and no key or token
+    changed for it; no hint needs a sentence about rounding.
+  - **A key the source's own rounded stem misses is a worked value too.**
+    Printed 3.59 dilutes 0.1718 L of 0.3556 M propanol to 0.1222 M and
+    answers 0.5000 L; the stem's numbers return 0.4999, and the source's
+    next exercise gives "0.5000 L of a 0.1222-M solution" as data — the
+    stem was built from the answer and rounded. The source's value stays
+    the key, `sig-figs:4 last-digit:0 worked:0.4999` — every number is in
+    the stem, so no unit is spared and the two values are the whole
+    window — with one erratum and no Source note. Not for a tie rounded
+    the other way (3.51(d), exactly 5.85 × 10⁻⁷: the book's own rounding
+    rule decides the KEY, with the Source note of "Source defects" in
+    1.6's wording, and the item takes `last-digit:1` so that the tie
+    rounded half up is right too — the item tests molarity, not rounding;
+    a rounding drill of 1.5 keeps `last-digit:0`).
   - **A key the source's own arithmetic misrounds** — every number in the
     stem, the unrounded result one unit from the printed answer (4.5's
     oxalic acid Check Your Learning, 0.264733 printed as 0.2648) — is a
     source defect: the page keys the computed value with a Source note, and
     takes `last-digit:1` so that the source's printed value is still right
     *(chapter 4)*.
-  - **A gap the band does not cover is not table noise.** A source key the
-    table misses by more than the chapter's band (3.25's 53.74 g of
-    aluminum, 53.83 by any table) is an arithmetic defect, handled under
-    "Source defects".
-  - **A worked example's value inside the band is left as the source prints
-    it** (3.2's 81.13 amu for C₅H₇N and 180.159 g/mol for aspirin, 81.12
-    and 180.15 by the table): it is the same noise, in the body. A value
-    that is a slip of arithmetic or of copying (3.2's 8.624 for the 8.641
-    of the line above) is corrected with a Source note.
+  - **A worked example's value a table's digits away is left as the source
+    prints it** (3.2's 81.13 amu for C₅H₇N and 180.159 g/mol for aspirin,
+    81.12 and 180.15 by the table): it is the same noise, in the body. A
+    value that is a slip of arithmetic or of copying (3.2's 8.624 for the
+    8.641 of the line above) is corrected with a Source note.
+  - **The learner is shown both answers.** A correct response reads
+    "Correct — the source’s answer is 0.08644 g O₂; this book’s own data
+    give 0.08642." The first is the item's `answerDisplay` (required
+    beside a worked value, lint); the second is the token's value, typeset
+    by the shortcode. Where the worked value is the key's own number
+    (S₈), one answer is shown.
   - **The page says so once.** Directly under `## Practice`, before the
     first objective heading, on a page with at least one item graded by a
-    band alone: "*Source note:* the source’s answer key for some exercises
-    of this section was computed from atomic masses with more digits than
-    this book’s periodic table prints. An answer worked from the table is
-    graded as correct on those items; where an item asks for a formula mass
-    or a molar mass itself, its number of significant figures is not
-    graded." **An item graded `sig-figs:<n> tolerance:<p>%` on a page
-    without that paragraph** takes one sentence directly after it, since
-    its revealed answer is one the table does not return: "*Source note:*
-    the answer shown for this item is the source’s, which was computed
-    from atomic masses with more digits than this book’s periodic table
-    prints; an answer worked from the table is graded as correct." (3.2's
-    percent of nitrogen in ammonia, which the body itself works to
-    another last digit.) One erratum for the module records it; no
-    decisions entry and no `DISCLOSED_DEVIATIONS` line, since no key
-    differs from the source's. The sentence is written only where it is
-    true — where the table, carried unrounded, does not return the revealed
-    answer.
+    worked value alone: "*Source note:* the source’s answer key for some
+    exercises of this section was computed from atomic masses with more
+    digits than this book’s periodic table prints. An answer worked from
+    the table is graded as correct on those items; where an item asks for
+    a formula mass or a molar mass itself, its number of significant
+    figures is not graded." **An item graded `sig-figs:<n> last-digit:1
+    worked:<value>` whose values are more than one unit apart, on a page
+    without that paragraph**, takes one sentence directly after it, since
+    its key is one the table does not return: "*Source note:* the answer
+    shown for this item is the source’s, which was computed from atomic
+    masses with more digits than this book’s periodic table prints; an
+    answer worked from the table is graded as correct." (3.2's percent of
+    nitrogen in ammonia, which the body itself works to another last
+    digit.) One erratum for the module records it; no decisions entry and
+    no `DISCLOSED_DEVIATIONS` line, since no key differs from the
+    source's. The sentence is written only where it is true — where the
+    table, carried unrounded, does not return the source's answer. A
+    worked value one unit from its key (4.3's 5.337 × 10²² with
+    `worked:5.336\times10^{22}`) takes no note: the feedback names both,
+    and the allowance alone already took the table's answer.
 - **A key that is a stem number by the law the item tests** (the total mass
   of products, 200.0 g, from 200.0 g of reactant) stands as a `fillin`; the
   ledger says so.
@@ -1012,6 +1051,19 @@ Rules for the key and the stem:
   (`[Kr]4d¹⁰5s²`, chapter 6), an ordering ("Rb < Li < N < F", chapter 6),
   a nuclear equation with both numbers on every nuclide (chapter 21), a
   condensed structural formula with its bonds drawn (chapter 20).
+- **A logarithm's answer is not asked rightly by `sig-figs:<n>`** — a pH,
+  a pK, a ln k (first met in chapter 12 or 14). The figures of a logarithm
+  are its decimal places (pH 4.74 from 1.8 × 10⁻⁵ has two), so the pair
+  would GRADE such a key correctly when n is the count of digits written
+  (`4.74` under `sig-figs:3`: the comparison is made at the key's last
+  place) and would SAY the wrong thing: "round it to 3 significant
+  figures" of a number the book calls two. The chapter that meets one
+  first settles a `decimal-places:<n>` token at its gate probe (run.md
+  step 6a) — the same comparison, the count taken from the decimal point,
+  and its own sentences — before any item is keyed; until then such an
+  item is not authored as a `fillin` with the pair. Identified November
+  12, 2026, with the worked value; not built, there being no item to test
+  it against.
 
 ### Measured quantities: `sig-figs:<n> last-digit:<k>`
 
@@ -1047,21 +1099,50 @@ been fetched from the periodic table, `last-digit:1`.)
     judgment the pair asks of an author, so neither value is a default —
     and `sig-figs:1` takes `last-digit:0` (lint).
 
-- **`tolerance:<p>%`** — a relative band of p percent of the key (more
-  than 0, at most 2; the percent sign is part of the token), for a key the
-  learner's table cannot reach digit for digit ("Numeric keys", "The
-  source's value is the key"). It is declared one of two ways, and never
-  with `last-digit` (lint):
-  - **alone**, `answerForm="tolerance:0.05%"`: the value is graded and the
-    count of figures is not. Against the key `123.896`: `123.88`, `123.9`,
-    `123.896`, and `1.2388×10²` are correct; `124` and `122.888` (one
-    hydrogen short) are incorrect; `123.88 amu` is told to drop the unit;
-    `4·30.97` is told to finish the calculation.
-  - **beside `sig-figs:<n>`**, in the allowance's place,
-    `answerForm="sig-figs:4 tolerance:0.05%"`: the count is asked as
-    before, and the response rounded to n figures must sit inside the band.
-    Against the key `82.24`: `82.27` is correct, `82.2665` is told to round
-    to 4 significant figures, `82.29` is incorrect.
+- **`worked:<value>`** — the key's second right value: what this book's
+  own data give where the source's key cannot be reached from them
+  ("Numeric keys", "The source's value is the key"). One nonzero number,
+  written without a space (`worked:0.08642`, `worked:5.336\times10^{22}`),
+  within 0.1 percent of the key and a unit of the last place (lint). It is
+  declared one of two ways:
+  - **beside the pair**,
+    `answerForm="sig-figs:4 last-digit:1 worked:0.08642"`: the count is
+    asked as before, and the allowance is counted from each value. The
+    worked value shows the pair's count of figures and is another number
+    than the key (lint). Against the key `0.08644`:
+
+    | Typed | Verdict | Why |
+    |---|---|---|
+    | `0.08641`, `0.08642`, `0.08643`, `0.08644`, `0.08645` | correct | from one unit below the table's value to one above the source's |
+    | `0.086419` | form | "…now round it to 4 significant figures." |
+    | `0.0864` | form | "…now give it to 4 significant figures." |
+    | `0.08640` | incorrect | the near-miss sentence below: the moles cut to three figures on the way |
+    | `0.08634` | incorrect | "Not quite": a molar mass rounded to 232 |
+
+  - **alone**, `answerForm="worked:123.88"`: the value is graded and the
+    count of figures is not, at the worked value's last place (here
+    hundredths). The value may be the key's own number, where the table
+    reaches it and the exercise's other parts are graded this way
+    (`answer="256.48"`, `worked:256.48`). Against the key `123.896`:
+
+    | Typed | Verdict | Why |
+    |---|---|---|
+    | `123.88`, `123.896`, `123.89`, `1.2388×10²` | correct | the two values and what lies between |
+    | `123.87`, `123.906` | correct | one unit of the hundredths beyond either |
+    | `123.9` | correct | one place short, and what 123.88 rounds to: 4 × 30.97 by the multiplication rule |
+    | `124` | form | "That agrees with the answer as far as it goes — now give it more precisely, keeping the decimal places of the values you combined." Two places short and still what the value rounds to; three short (`120`, `100` for 97.99) is incorrect with nothing said |
+    | `4·30.97` | form | "…now finish the calculation and enter just the result." |
+    | `123.88 amu` | unit | "Right number — enter it without the unit." |
+    | `123.86`, `123.91` | incorrect | the near-miss sentence: two units of the hundredths beyond the window |
+    | `123.8`, `122.888` (one hydrogen short) | incorrect | "Not quite" |
+
+  - **A right answer is shown both values**: "Correct — the source’s
+    answer is 0.08644 g O₂; this book’s own data give 0.08642." The
+    worked value is typeset from the token; the unit is the
+    `answerDisplay`'s. A footer may print neither number
+    (`footerKeySpellings` reads the token as a key).
+  - `tolerance:<p>%`, the relative band of chapters 3 and 4, is no longer
+    a form: the shortcode and the lint refuse it.
 
 What the learner sees, against the key `0.674` under `sig-figs:3 last-digit:1`:
 

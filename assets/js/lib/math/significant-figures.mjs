@@ -150,19 +150,48 @@ function within(a, b, units, unitExponent) {
 }
 
 /**
- * Is |a − b| at most `percent` percent of |b|? Exact: `percent` is itself a
- * numeral (`0.05` read off the token), so the test is one integer comparison
- * and a response sitting on the edge of the band is on it, not beside it.
+ * Is `numeral` between `low` and `high`, with `units` · 10^unitExponent to
+ * spare at each end? Exact. `low` and `high` are the same numeral when a key
+ * has no second value.
  */
-export function withinPercent(a, b, percent) {
-  const to = Math.min(a.exponent, b.exponent);
+function inside(numeral, low, high, units, unitExponent) {
+  const to = Math.min(numeral.exponent, low.exponent, high.exponent, unitExponent);
+  const slack = BigInt(units) * pow10(unitExponent - to);
+  const value = scaled(numeral, to);
+  return value >= scaled(low, to) - slack && value <= scaled(high, to) + slack;
+}
+
+/** The magnitude rounded to the power of ten `place`, by either rule for a dropped 5. */
+function roundToPlace(numeral, place, { halfEven = false } = {}) {
+  if (numeral.exponent >= place) return { mantissa: numeral.mantissa, exponent: numeral.exponent };
+  const figures = digitCount(numeral.mantissa) - (place - numeral.exponent);
+  // Nothing of the number reaches that place: it rounds to zero or to one unit of it.
+  if (figures <= 0) {
+    const unit = pow10(place - numeral.exponent);
+    const twice = numeral.mantissa * 2n;
+    const up = figures === 0 && (twice > unit || (twice === unit && !halfEven));
+    return { mantissa: up ? 1n : 0n, exponent: place };
+  }
+  return roundToFigures(numeral, figures, { halfEven });
+}
+
+/**
+ * Is |a − b| at most `percent` percent of |b| — plus, where given, `units` ·
+ * 10^unitExponent? Exact: `percent` is itself a numeral (`0.1`), so the test
+ * is one integer comparison and a value sitting on the edge is on it, not
+ * beside it. The content lint's ceiling on how far a key and its worked
+ * value may part reads this; no response is graded by a percent.
+ */
+export function withinPercent(a, b, percent, { units = 0, unitExponent = 0 } = {}) {
+  const to = Math.min(a.exponent, b.exponent, unitExponent);
   const difference = scaled(a, to) - scaled(b, to);
   const distance = difference < 0n ? -difference : difference;
   const size = b.mantissa * pow10(b.exponent - to);
-  // distance · 100 ≤ percent · size, with percent = mantissa · 10^exponent.
+  // distance · 100 ≤ percent · size + units · 100, with percent = mantissa · 10^exponent.
   const lift = percent.exponent < 0 ? pow10(-percent.exponent) : 1n;
   const scale = percent.exponent > 0 ? pow10(percent.exponent) : 1n;
-  return distance * 100n * lift <= percent.mantissa * scale * size;
+  const spare = BigInt(units) * pow10(unitExponent - to) * 100n * lift;
+  return distance * 100n * lift <= percent.mantissa * scale * size + spare;
 }
 
 /**
@@ -175,10 +204,25 @@ export function lastFigureExponent(key, figures) {
 
 /**
  * Grade a numeral response against a numeral key under `figures`
- * significant figures and an allowance of `lastDigit` units in the last one —
- * or, where `tolerance` (a numeral, in percent) is given instead, a relative
- * band of that width. With a tolerance and NO `figures` the count is not
- * graded at all: any writing of a value inside the band is `correct`.
+ * significant figures and an allowance of `lastDigit` units in the last one.
+ *
+ * `worked` (a numeral, or null) is the key's SECOND value: what the book's
+ * own data give where the source's answer key cannot be reached from them —
+ * a key computed from atomic masses with more digits than the book's
+ * periodic table prints, a stem rounded after its answer was fixed. Both are
+ * right, and so is everything between them; the allowance is counted from
+ * each end. So the window is never wider than the disagreement that
+ * justifies it, plus the same unit of the last figure every other fetched
+ * value takes (Chemistry 2e, November 12, 2026 — a relative band in percent
+ * stood here before, and was sized by the chapter, not by the item).
+ *
+ * With `worked` and NO `figures` the count is not graded: the response is
+ * `correct` when, written to the worked value's last place or finer, it sits
+ * between the two values with one unit of that place to spare — or when,
+ * written ONE place short, it is what a value between them rounds to
+ * (`123.9` for 4 × 30.97, which is four figures by the multiplication rule
+ * and five by the addition the module shows). Two places short and still
+ * what the value rounds to is `too-few`; every digit written must be right.
  *
  *   { verdict: 'correct' }
  *   { verdict: 'form', reason: 'too-many' | 'too-few' }
@@ -188,29 +232,31 @@ export function lastFigureExponent(key, figures) {
  * within the allowance. `too-many` — it shows more, and rounded to `figures`
  * (by either rounding rule) it sits within the allowance: the unrounded
  * readout of a right calculation. `too-few` — it shows ONE figure fewer, and
- * it is what an allowed value rounds to at that count: right as far as it
- * goes. Everything else is `incorrect`; the allowance is never widened for a
- * response written to fewer figures, or `0.6` would stand for `0.674`. A
- * response two or more figures short is `incorrect` as well: at one figure
- * the round numbers a stem prints start to "agree" — typing the stem's own
- * class limit, 90, against the key 89.4 was told it "agrees as far as it
- * goes" (Chemistry 2e 1.6, the pilot) — and the sentence would be a hint.
- * The one exception is the key's own number written short: `8` for `8.00`
- * IS the answer, lacking only its zeros, and is `too-few` at any count
- * (Chemistry 2e 4.3) — exact equality, so 90 against 89.4 is still refused.
+ * it is what the key (or its worked value) rounds to at that count: right as
+ * far as it goes. Everything else is `incorrect`; the allowance is never
+ * widened for a response written to fewer figures, or `0.6` would stand for
+ * `0.674`. A response two or more figures short is `incorrect` as well: at
+ * one figure the round numbers a stem prints start to "agree" — typing the
+ * stem's own class limit, 90, against the key 89.4 was told it "agrees as
+ * far as it goes" (Chemistry 2e 1.6, the pilot) — and the sentence would be
+ * a hint. The one exception is the key's own number written short: `8` for
+ * `8.00` IS the answer, lacking only its zeros, and is `too-few` at any
+ * count (Chemistry 2e 4.3) — exact equality, so 90 against 89.4 is still
+ * refused.
  *
  * An `incorrect` verdict carries `reason: 'near'` when the response is
  * written to the right count of figures (or is an unrounded readout that
  * rounds to one) and misses the allowance by at most nearUnits(figures)
- * units of the last figure — or, under a tolerance, sits within NEAR_BANDS
- * times the band. That is where rounding at each step of a calculation
- * lands: every such miss measured in Chemistry 2e chapter 4 is one unit
- * outside at two or three figures (3.5 × 10⁻³ for 3.4 × 10⁻³, 34.9 for
- * 35.0, 73.5 for 73.3 ± 1) and two at four (86.53 for 86.56 ± 1). One unit
- * of a two-figure key is already one to ten percent of it, so the zone is
- * not wider there, and a one-figure key has none (a unit of it is the whole
- * number: 10¹¹ is not "close" to 10¹²). The verdict is still `incorrect` — no allowance is
- * widened — and the caller only says why a close answer is not the answer.
+ * units of the last figure — with no count graded, by at most two units of
+ * the worked value's last place. That is where rounding at each step of a
+ * calculation lands: every such miss measured in Chemistry 2e chapter 4 is
+ * one unit outside at two or three figures (3.5 × 10⁻³ for 3.4 × 10⁻³, 34.9
+ * for 35.0, 73.5 for 73.3 ± 1) and two at four (86.53 for 86.56 ± 1). One
+ * unit of a two-figure key is already one to ten percent of it, so the zone
+ * is not wider there, and a one-figure key has none (a unit of it is the
+ * whole number: 10¹¹ is not "close" to 10¹²). The verdict is still
+ * `incorrect` — no allowance is widened — and the caller only says why a
+ * close answer is not the answer.
  *
  * A key that does not itself show `figures` significant figures is an
  * authoring error, reported as `form` against itself by the caller's
@@ -218,32 +264,42 @@ export function lastFigureExponent(key, figures) {
  */
 /** Units of the last figure, beyond the allowance, that still count as a near miss. */
 export const nearUnits = (figures) => (figures <= 1 ? 0 : figures === 2 ? 1 : 2);
-/** Under a tolerance: how many bands wide a near miss may be. */
-export const NEAR_BANDS = 3n;
 
-export function compareMeasured(response, key, { figures, lastDigit = 0, tolerance = null }) {
+export function compareMeasured(response, key, { figures, lastDigit = 0, worked = null }) {
   if (key.mantissa === 0n || response.mantissa === 0n) return { verdict: 'incorrect' };
-  const wideBand = tolerance === null ? null : { ...tolerance, mantissa: tolerance.mantissa * NEAR_BANDS };
-  // A relative band with no count of figures: the value is all that is
-  // graded. `123.88`, `123.9`, and `123.896` are one answer to a key the
-  // learner's table cannot reach digit for digit.
+  // The two ends of what is right. With no worked value they are one number.
+  const second = worked ?? key;
+  const to = Math.min(key.exponent, second.exponent);
+  const [low, high] = scaled(second, to) < scaled(key, to) ? [second, key] : [key, second];
+  const ends = worked === null ? [key] : [key, worked];
+  const rules = [false, true];
+
+  // No count of figures: the value is all that is graded, at the place the
+  // book's own data reach.
   if (figures === null || figures === undefined) {
-    if (tolerance !== null && withinPercent(response, key, tolerance)) return { verdict: 'correct' };
-    return wideBand !== null && withinPercent(response, key, wideBand)
-      ? { verdict: 'incorrect', reason: 'near' }
-      : { verdict: 'incorrect' };
+    const unit = second.exponent;
+    if (response.exponent <= unit) {
+      if (inside(response, low, high, 1, unit)) return { verdict: 'correct' };
+      return inside(response, low, high, 1 + nearUnits(3), unit) ? { verdict: 'incorrect', reason: 'near' } : { verdict: 'incorrect' };
+    }
+    // Written short: right when it is what a value between the two rounds
+    // to at its own place — no unit to spare, every digit shown is checked.
+    const short = response.exponent - unit;
+    if (short > 2) return { verdict: 'incorrect' };
+    const floor = rules.map((halfEven) => roundToPlace(low, response.exponent, { halfEven }));
+    const ceiling = rules.map((halfEven) => roundToPlace(high, response.exponent, { halfEven }));
+    const rounds = floor.some((least) => ceiling.some((most) => inside(response, { ...low, ...least }, { ...high, ...most }, 0, response.exponent)));
+    if (!rounds) return { verdict: 'incorrect' };
+    return short === 1 ? { verdict: 'correct' } : { verdict: 'form', reason: 'too-few' };
   }
+
   const place = lastFigureExponent(key, figures);
-  // The band is `lastDigit` units of the key's last figure, or — when a
-  // tolerance is declared in its place — that percent of the key.
-  const near = tolerance !== null
-    ? (numeral) => withinPercent(numeral, key, tolerance)
-    : (numeral) => within(numeral, key, lastDigit, place);
+  // Within the allowance: `lastDigit` units of the key's last figure, counted
+  // from the key — and from its worked value, where it has one.
+  const near = (numeral) => inside(numeral, low, high, lastDigit, place);
   // Just outside it: see nearUnits. Only ever asked of a response that
   // `near` has already refused.
-  const close = wideBand !== null
-    ? (numeral) => withinPercent(numeral, key, wideBand)
-    : (numeral) => within(numeral, key, lastDigit + nearUnits(figures), place);
+  const close = (numeral) => inside(numeral, low, high, lastDigit + nearUnits(figures), place);
   const miss = (numerals) => (numerals.some(close) ? { verdict: 'incorrect', reason: 'near' } : { verdict: 'incorrect' });
 
   // Written to the key's count of figures — or to the key's own last decimal
@@ -253,25 +309,28 @@ export function compareMeasured(response, key, { figures, lastDigit = 0, toleran
   const rightCount = (response.sigMin <= figures && figures <= response.sigMax) || response.exponent === place;
   if (rightCount && near(response)) return { verdict: 'correct' };
   if (response.sigMin > figures) {
-    const rounded = [false, true].map((halfEven) => ({ ...response, ...roundToFigures(response, figures, { halfEven }) }));
+    const rounded = rules.map((halfEven) => ({ ...response, ...roundToFigures(response, figures, { halfEven }) }));
     return rounded.some(near) ? { verdict: 'form', reason: 'too-many' } : miss(rounded);
   }
   // One figure fewer than asked: the response must be exactly what the KEY
-  // rounds to at that count, by either rounding rule. The last-digit
-  // allowance is not carried down — an allowed neighbour of 89.4 is 89.5,
-  // which rounds to 90, and 90 is the round number the stem itself prints.
+  // (or its worked value) rounds to at that count, by either rounding rule.
+  // The last-digit allowance is not carried down — an allowed neighbour of
+  // 89.4 is 89.5, which rounds to 90, and 90 is the round number the stem
+  // itself prints.
   const shown = figures - 1;
   if (shown >= 1 && response.sigMin <= shown && shown <= response.sigMax) {
-    for (const halfEven of [false, true]) {
-      const rounded = { ...key, ...roundToFigures(key, shown, { halfEven }) };
-      if (within(response, rounded, 0, Math.min(response.exponent, rounded.exponent))) {
-        return { verdict: 'form', reason: 'too-few' };
+    for (const end of ends) {
+      for (const halfEven of rules) {
+        const rounded = { ...end, ...roundToFigures(end, shown, { halfEven }) };
+        if (within(response, rounded, 0, Math.min(response.exponent, rounded.exponent))) {
+          return { verdict: 'form', reason: 'too-few' };
+        }
       }
     }
   }
   // The key's own number with its trailing zeros left off, however many:
   // `8` for `8.00`. Exactly the key, so nothing a stem's round number can
   // reach unless that number is the answer.
-  if (response.sigMax < figures && sameNumber(response, key)) return { verdict: 'form', reason: 'too-few' };
+  if (response.sigMax < figures && ends.some((end) => sameNumber(response, end))) return { verdict: 'form', reason: 'too-few' };
   return rightCount ? miss([response]) : { verdict: 'incorrect' };
 }

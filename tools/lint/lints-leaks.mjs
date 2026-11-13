@@ -453,6 +453,9 @@ export function footerKeySpellings(item) {
   const numbers = [];
   const mantissa = answer.replace(/\s*\\times\s*10\^\{?[^}]*\}?\s*$/, '').replace(/\{,\}|,(?=\d{3}\b)/g, '');
   numbers.push(mantissa);
+  // The value the book's own data give is a key as well: both are graded.
+  const worked = /(?:^|\s)worked:(\S+)/.exec(form);
+  if (worked) numbers.push(worked[1].replace(/\\times\s*10\^\{?[^}]*\}?$/, ''));
   const display = String(item.params.answerDisplay ?? '').replace(/\{,\}|(?<=\d),(?=\d{3}\b)/g, '');
   const first = /[-−]?\d*\.?\d+/.exec(display);
   if (first) numbers.push(first[0]);

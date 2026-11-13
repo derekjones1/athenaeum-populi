@@ -324,7 +324,7 @@ $$\ce{(C5H7N)2} = \ce{C10H14N2}$$
 {{< fillin
   question="Calculate the following to four significant figures: the percent composition of ammonia, NH₃. Enter the percent of nitrogen by mass as a number, without the percent sign."
   answer="82.24"
-  answerForm="sig-figs:4 tolerance:0.05%"
+  answerForm="sig-figs:4 last-digit:1 worked:82.27"
   answerDisplay="$82.24\%\ \text{N}$"
   hint="Find the formula mass from the atomic masses, then use the percent composition equation in the Key equations list."
 >}}

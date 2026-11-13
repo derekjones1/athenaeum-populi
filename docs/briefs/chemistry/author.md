@@ -170,10 +170,14 @@ goes wrong.
   in "Exercises"); a count takes `whole-number`. **An atomic mass comes from
   this book's periodic table** (`appendices/a-the-periodic-table.md`), and
   the source's value stays the key where the table does not reach it digit
-  for digit: `tolerance:<p>%` at the chapter's band, alone on a formula
-  mass or molar mass asked for itself, beside `sig-figs:<n>` elsewhere
-  (playbook "Numeric keys", "The source's value is the key") — never a key
-  re-computed to the table. **A real-world number in a worked example's
+  for digit. **When the value you work from the table is not the source's
+  key, record it on the item as `worked:<value>`** — beside
+  `sig-figs:<n> last-digit:<k>`, written to the same figures; alone on a
+  formula mass or molar mass asked for itself — and put both values in
+  your ledger (playbook "Numeric keys", "The source's value is the key").
+  Never a key re-computed to the table, and never a width chosen: the
+  lint refuses a worked value more than 0.1 percent from its key, and
+  that item goes to the parent as a suspected source defect. **A real-world number in a worked example's
   stem is a claim** (a liter of air's argon, a dietary requirement, which
   organism ferments grain), and so is every intermediate value: re-run
   each line from the line it comes from, and where the body states a

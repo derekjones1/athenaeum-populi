@@ -87,6 +87,23 @@ test('a fillin packet carries the question and the answer shape — never the ke
   assert.equal(gradeAnswer(fillin, '').status, 'unrecognized');
 });
 
+test('a fillin packet names a worked value and never prints it: the form carries a second right answer', () => {
+  // Chemistry 4.3 (November 12, 2026). The first emit after `worked:<value>`
+  // landed printed "worked:0.08642" in the packet: the page mask blanked it
+  // and the packet's own `answerForm` field did not.
+  const fillin = exercisesIn(scratch()).find((exercise) => exercise.kind === 'fillin');
+  const silver = { ...fillin, params: { question: 'Enter the mass of O₂ in grams.', answer: '0.08644', answerForm: 'sig-figs:4 last-digit:1 worked:0.08642' } };
+  const item = packetItem(silver);
+  assert.equal(item.answerForm, 'sig-figs:4 last-digit:1 worked:…');
+  assert.doesNotMatch(JSON.stringify(item), /0\.0864/);
+  assert.equal(packetItem({ ...silver, params: { ...silver.params, answerForm: 'worked:123.88' } }).answerForm, 'worked:…');
+  // The solver's answer is the independent reading of the masked value:
+  // worked from the book's table it agrees, and so does the source's key.
+  assert.equal(gradeAnswer(silver, '0.08642').status, 'agrees');
+  assert.equal(gradeAnswer(silver, '0.08644').status, 'agrees');
+  assert.equal(gradeAnswer(silver, '0.08634').status, 'disagrees');
+});
+
 test('the residual is the fill-ins no mechanical reading confirmed and no record explains', () => {
   const [mechanical, wordy] = [
     { kind: 'fillin', hash: 'a', path: 'content/math/x.md', line: 1, params: { question: 'Solve: $2x=6$.', answer: '3' } },

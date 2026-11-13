@@ -481,7 +481,7 @@ from the number of moles and the volume of solution, determine the molarity
 {{< fillin
   question="If 0.1718 L of a 0.3556-*M* C₃H₇OH solution is diluted to a concentration of 0.1222 *M*, what is the volume of the resulting solution? Enter the volume in liters."
   answer="0.5000"
-  answerForm="sig-figs:4 tolerance:0.05%"
+  answerForm="sig-figs:4 last-digit:0 worked:0.4999"
   answerDisplay="$0.5000\ \text{L}$"
   hint="Use the dilution equation, rearranged for the volume after dilution."
 >}}

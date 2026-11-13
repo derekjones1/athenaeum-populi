@@ -104,8 +104,8 @@ an item. So:
   - **The key** is the Solution's final value as printed. The component
     and the `answerForm` follow the table in "Exercises" and "Numeric
     keys", exactly as for a keyed exercise: `last-digit` by where the
-    numbers come from, and the chapter's `tolerance:<p>%` band where this
-    book's periodic table cannot reach the printed value. **Compute it
+    numbers come from, and `worked:<value>` beside the pair where this
+    book's periodic table gives another value than the printed one. **Compute it
     yourself first.** A value the arithmetic does not reach is a suspected
     source defect, reported to the parent — and it is a defect of the
     section page too, which prints the same example.
@@ -136,8 +136,8 @@ an item. So:
     does not give, or take, another check item's answer (3.3's vinegar
     example answers 0.839 *M*, and a later example takes 0.839 *M* as its
     datum: one of the two, never both). Where the section offers a choice,
-    prefer an example the periodic table reaches within one unit of the
-    last digit, so the item needs no band.
+    prefer an example the periodic table reaches digit for digit, so the
+    item needs no worked value.
   - **A worked example whose answer is a choice or a name** — ionic or
     molecular, a group's name, a compound's name — is a `multiplechoice`
     or a plain `textin` under the same rows of the table, and its ledger
@@ -202,10 +202,11 @@ an item. So:
 
 ### The page
 
-- **A band-graded key takes its sentence.** A check has no `## Practice`
-  heading to carry the page-level Source note of "Numeric keys", so an item
-  graded `tolerance:<p>%` — alone or beside `sig-figs` — is followed by
-  the one-sentence form: "*Source note:* the answer shown for this item is
+- **A key with a worked value takes its sentence.** A check has no
+  `## Practice` heading to carry the page-level Source note of "Numeric
+  keys", so an item graded `worked:<value>` — alone, or beside the pair
+  with the two values more than one unit apart — is followed by the
+  one-sentence form: "*Source note:* the answer shown for this item is
   the source's, which was computed from atomic masses with more digits
   than this book's periodic table prints; an answer worked from the table
   is graded as correct."
@@ -232,9 +233,9 @@ a committed file. For every item record:
 - for a worked-example item: the question as the CNXML prints it and as
   the item prints it, with every added sentence; the Solution's final
   value quoted; **your own computation, run and unrounded**; the
-  `last-digit` or band with its reason; where a molar mass enters, the
-  value Appendix A's masses give and its relative difference from the
-  key; and why the example is usable (each test of "A usable example");
+  `last-digit` with its reason; where a molar mass enters, the value
+  Appendix A's masses give — the item's `worked:<value>` when it is not
+  the key; and why the example is usable (each test of "A usable example");
 - for a written item: the exact sentence, definition, or cells, the
   independently derived answer, and for a multiple choice where the module
   prints each distractor and why none is also correct.

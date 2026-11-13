@@ -1666,17 +1666,17 @@ test('a measured-quantity field keeps a two-digit exponent together, reports a t
   await expect.poll(status).toBe('correct');
 });
 
-// Chemistry 3.1: a key graded inside a relative band (`tolerance:<p>%`).
+// Chemistry 3.1: a key with a second right value (`worked:<value>`).
 // The source answers 123.896 amu for P₄ from atomic masses with more digits
 // than the book's periodic table prints; a learner on the site reaches
-// 4 × 30.97 = 123.88. The band is unit-tested in check-answer.test.mjs; the
-// typed path — the field, its shortcode attribute, the feedback line — is
-// only real here.
-test('a formula mass graded inside a relative band takes the periodic table’s value as typed', async ({ page }) => {
+// 4 × 30.97 = 123.88. The grading is unit-tested in check-answer.test.mjs;
+// the typed path — the field, its shortcode attribute, the feedback line
+// that names both answers — is only real here.
+test('a formula mass with a worked value takes the periodic table’s value as typed, and shows both answers', async ({ page }) => {
   test.setTimeout(240_000);
   await gotoBuiltPage(page, '/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept/');
-  const banded = page.locator('fill-in[data-answer-form="tolerance:0.05%"]').filter({ has: page.locator('math-field') });
-  expect(await banded.count(), 'the page still carries its nineteen band-graded formula masses').toBe(19);
+  const banded = page.locator('fill-in[data-answer-form^="worked:"]').filter({ has: page.locator('math-field') });
+  expect(await banded.count(), 'the page still carries its nineteen formula masses graded with no count of figures').toBe(19);
 
   const card = page.locator('fill-in[data-answer="123.896"]');
   await expect(card).toHaveCount(1);
@@ -1699,8 +1699,11 @@ test('a formula mass graded inside a relative band takes the periodic table’s 
   // The periodic table's value, to the places the table gives.
   await check('123.88');
   await expect.poll(status).toBe('correct');
+  // Both right answers are named: the source's, and the one the learner
+  // just reached from the book's own table.
+  await expect(feedback).toHaveText(/the source’s answer is.*123\.896.*amu.*this book’s own data give.*123\.88/s);
 
-  // Every band-graded item on the page grades its own key as typed.
+  // Every such item on the page grades its own key as typed.
   for (let index = 0; index < 19; index += 1) {
     const item = banded.nth(index);
     const answer = await item.getAttribute('data-answer');
@@ -1713,6 +1716,9 @@ test('a formula mass graded inside a relative band takes the periodic table’s 
     await expect
       .poll(async () => item.evaluate((el) => el.status), { timeout: 5000, message: `key ${answer} typed as ${keys}` })
       .toBe('correct');
+    // S₈: the table reaches the source's key (8 × 32.06), so one answer is shown.
+    if (answer === '256.48') await expect(item.locator('.ap-fillin-feedback')).toHaveText(/^Correct — .*256\.48.*\.$/s);
+    if (answer === '256.48') await expect(item.locator('.ap-fillin-feedback')).not.toHaveText(/own data/);
   }
 });
 
@@ -2691,7 +2697,6 @@ test('on every Chemistry page no inline formula in an item\'s question runs past
 // `incorrect` one something to say.
 test('chapter 4\'s fields say why: a short or near-miss number, the wrong arrow, an empirical formula, a missing electron', async ({ page }) => {
   test.setTimeout(120_000);
-  const chapter = '/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions';
   const typeNumber = async (card, keys) => {
     const field = card.locator('math-field');
     await clearMathField(field);
@@ -2699,16 +2704,17 @@ test('chapter 4\'s fields say why: a short or near-miss number, the wrong arrow,
     await page.keyboard.type(keys, { delay: 15 });
     await card.getByRole('button', { name: /check/i }).click();
   };
-  const fillin = async (prefix) => {
-    const card = page.locator(`fill-in[data-question^="${prefix}"]`).filter({ has: page.locator('math-field') });
-    await expect(card, prefix).toHaveCount(1);
+  // Each locator below is a literal, on a literal page: the fixture gate
+  // (tools/build/browser-fixtures.test.mjs) reads both against the content.
+  const fillin = async (card) => {
+    await expect(card).toHaveCount(1);
     await card.scrollIntoViewIfNeeded();
     return card;
   };
   const status = (card) => card.evaluate((el) => el.status);
 
   // 4.3: 8.00 mol of sodium nitrate. `8` is the answer without its zeros.
-  await gotoBuiltPage(page, `${chapter}/03-reaction-stoichiometry/`);
+  await gotoBuiltPage(page, '/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/03-reaction-stoichiometry/');
   const moles = page.locator('fill-in[data-answer="8.00"]').filter({ has: page.locator('math-field') });
   await expect(moles).toHaveCount(1);
   await moles.scrollIntoViewIfNeeded();
@@ -2722,8 +2728,8 @@ test('chapter 4\'s fields say why: a short or near-miss number, the wrong arrow,
   await expect(moles.locator('.ap-fillin-feedback')).toHaveText('Not quite — try again.');
 
   // 4.5: 35.0 mL of KOH, no allowance. Rounding the millimoles first gives 34.9.
-  await gotoBuiltPage(page, `${chapter}/05-quantitative-chemical-analysis/`);
-  const volume = await fillin('How many milliliters of a 0.1500-');
+  await gotoBuiltPage(page, '/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/05-quantitative-chemical-analysis/');
+  const volume = await fillin(page.locator('fill-in[data-question^="How many milliliters of a 0.1500-"]').filter({ has: page.locator('math-field') }));
   await typeNumber(volume, '34.9');
   await expect.poll(() => status(volume)).toBe('incorrect');
   await expect(volume.locator('.ap-fillin-feedback')).toHaveText(/^Close, but not within rounding of the answer\. If you rounded partway through/);
@@ -2734,10 +2740,9 @@ test('chapter 4\'s fields say why: a short or near-miss number, the wrong arrow,
   await expect.poll(() => status(volume)).toBe('correct');
 
   // 4.2: the phosphorus equation, and a half-reaction.
-  await gotoBuiltPage(page, `${chapter}/02-classifying-chemical-reactions/`);
-  const textin = async (answer) => {
-    const card = page.locator(`text-in[data-answer="${answer}"]`);
-    await expect(card, answer).toHaveCount(1);
+  await gotoBuiltPage(page, '/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/02-classifying-chemical-reactions/');
+  const textin = async (card) => {
+    await expect(card).toHaveCount(1);
     await waitForUpgrade(card, (el) => Boolean(customElements.get('text-in')) && Boolean(el.querySelector('.ap-textin-check')));
     await card.scrollIntoViewIfNeeded();
     return card;
@@ -2746,7 +2751,7 @@ test('chapter 4\'s fields say why: a short or near-miss number, the wrong arrow,
     await card.locator('.ap-textin-field').fill(typed);
     await card.locator('.ap-textin-field').press('Enter');
   };
-  const phosphorus = await textin('P₄(s) + 5O₂(g) ⟶ P₄O₁₀(s)');
+  const phosphorus = await textin(page.locator('text-in[data-answer="P₄(s) + 5O₂(g) ⟶ P₄O₁₀(s)"]'));
   for (const [typed, verdict, said] of [
     ['P4 + 5O2 <=> P4O10', 'form', /now write the equation with a single arrow \(->\)/],
     ['P4 + 5O2 -> 2P2O5', 'form', /one formula is an empirical formula/],
@@ -2760,7 +2765,7 @@ test('chapter 4\'s fields say why: a short or near-miss number, the wrong arrow,
   await answer(phosphorus, 'P4 + 5O2 -> P4O10');
   await expect.poll(() => status(phosphorus)).toBe('correct');
 
-  const tin = await textin('Sn⁴⁺(aq) + 2e⁻ ⟶ Sn²⁺(aq)');
+  const tin = await textin(page.locator('text-in[data-answer="Sn⁴⁺(aq) + 2e⁻ ⟶ Sn²⁺(aq)"]'));
   await answer(tin, 'Sn4+ + 2e -> Sn2+');
   await expect.poll(() => status(tin)).toBe('incorrect');
   await expect(tin.locator('.ap-textin-feedback')).toHaveText('An electron carries its charge: type it as e-, as in 2e-.');

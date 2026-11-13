@@ -459,6 +459,33 @@ over two lines.
   assert.ok(!masked.includes('Documented'), 'an inline-code example is masked as code, not read as an exercise');
 });
 
+test('maskKeys blanks the value of a worked:<value> token: an answerForm may carry a second right answer', () => {
+  // Chemistry 4.3, November 12, 2026: the value the book's own periodic
+  // table gives is graded correct beside the source's key, and it rides in
+  // `answerForm`, which is not a key param and reaches the blind solver.
+  const page = [
+    '{{< fillin',
+    '  question="Enter the mass of O₂ in grams."',
+    '  answer="0.08644"',
+    '  answerForm="sig-figs:4 last-digit:1 worked:0.08642"',
+    '  answerDisplay="$0.08644\\ \\text{g}$"',
+    '>}}',
+    '',
+    '{{< fillin question="Molecular mass of P₄ in amu." answer="123.896" answerForm="worked:123.88" >}}',
+    '',
+    '{{< fillin question="Formula units?" answer="5.337\\times10^{22}" answerForm=\'sig-figs:4 last-digit:1 worked:5.336\\times10^{22} scientific-notation\' >}}',
+    '',
+    'The example above is worked:0.08642 in prose, which no mask touches.',
+  ].join('\n');
+  const masked = maskKeys(page);
+  assert.equal(masked.split('\n').length, page.split('\n').length);
+  for (const leaked of ['0.08644', 'worked:0.08642"', '123.88', '5.336', '5.337']) assert.ok(!masked.includes(leaked), `leaked: ${leaked}`);
+  for (const kept of ['answerForm="sig-figs:4 last-digit:1 worked:…"', 'answerForm="worked:…"',
+    "answerForm='sig-figs:4 last-digit:1 worked:… scientific-notation'", 'worked:0.08642 in prose']) {
+    assert.ok(masked.includes(kept), `missing: ${kept}`);
+  }
+});
+
 test('maskKeys masks through a followup wrapper: the items it holds are items', () => {
   // Chemistry 2.6 holds each ionic compound's two ion-symbol text-ins in a
   // `followup`. The wrapper's body used to be copied out whole, so the blind

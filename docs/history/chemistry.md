@@ -2317,6 +2317,120 @@ MathML symbol by symbol, reads one equation item's stem against another's
 key, or counts added items beyond the floor. The punctuation glue is
 unverified in Safari and Firefox.
 
+## Worked values replace the percent band (November 12, 2026)
+
+Derek asked whether chapter 4's `0.2%` band was an issue on the one item
+that took it, and then how every such band would be handled from here: "I
+want to have the correct implementation for a student trying to learn, and
+want to make sure the ruling we apply extends throughout future authoring."
+He chose the design below and asked that a right answer be shown the
+table's value.
+
+### What was wrong with the band
+
+- 4.3's grams of O₂ from 1.252 g of silver(I) oxide: source key 0.08644,
+  0.08642 by Appendix A's silver (107.9). Under `sig-figs:4 tolerance:0.2%`
+  the grader took 0.08627 to 0.08661 — seventeen units of the last figure
+  either side, for two values two units apart. A molar mass rounded to 232
+  (0.08634) was correct there and "Close, but…" on every other four-figure
+  item of the chapter.
+- The 0.2% had been sized from the chapter's widest gap, 0.096% — which is
+  10.41 against 10.40, one unit, an item that took `last-digit:1` and never
+  used the band.
+- The rule itself ("a chapter default, wider than rounding noise, narrower
+  than the smallest real mistake") was a judgment re-made every chapter,
+  and one that later chapters could not have satisfied: a difference of
+  large table values, or an exponential, turns a table's last digit into
+  percents.
+
+### What replaced it
+
+`worked:<value>` in a fill-in's `answerForm`: the key's second right
+value, what this book's own data give where the source's key cannot be
+reached from them. The source's value is still the key.
+
+- **Beside `sig-figs:<n> last-digit:<k>`**: the allowance is counted from
+  each of the two values. 0.08644 with `worked:0.08642` takes 0.08641 to
+  0.08645; 0.08640 (moles cut to three figures) is a near miss, 0.08634 is
+  wrong.
+- **Alone**: no count of figures is graded (3.1's nineteen formula and
+  molar masses). The value is graded at the worked value's last place —
+  between the two with one unit to spare; one place short, what a value
+  between them rounds to (123.9); two places short and still what it
+  rounds to, a `form` nudge ("…now give it more precisely, keeping the
+  decimal places of the values you combined."); three short, incorrect.
+  Under the 0.05% band these items took wrong last digits on a large mass
+  (342.2 and 342.4 for sucrose's 342.30) and refused a right short one on
+  a small mass (18.0 for water): the percent was a different rule on
+  every item.
+- **A right answer is shown both**: "Correct — the source’s answer is
+  0.08644 g O₂; this book’s own data give 0.08642." Where the worked value
+  is the key's own number (S₈), one answer is shown.
+- **`tolerance:<p>%` is gone** from the grader, the shortcode, and the
+  lint: a page that declares it does not build.
+- **Lint** (`measuredKeyProblem`): declared once; beside the pair or alone;
+  one nonzero numeral; beside the pair, written to the pair's count and
+  another number than the key; within 0.1 percent of the key and a unit of
+  the last place; an `answerDisplay` beside a worked value that is shown;
+  a footer may print neither number.
+
+### Items
+
+Twenty-five, all in chapters 3 and 4: the nineteen of 3.1 (alone), 3.1's
+silicon in zircon (9.504, `worked:9.506`), 3.2's nitrogen in ammonia
+(82.24, `worked:82.27`), 3.3's dilution (0.5000, `last-digit:0
+worked:0.4999` — every number is in the stem, so the two values are the
+whole window), and 4.3's three silver items (0.08644 / 0.08642; 5.337 ×
+10²² / 5.336 × 10²²; 10.41 / 10.40). The last two had taken
+`last-digit:1` alone; they carry the worked value now because the rule for
+an author is "when the value you work from this book's own data is not the
+source's key, record it", one unit apart or ten. Every table value was
+recomputed from Appendix A by script and agrees with the values errata
+2985, 2996, 2999, and 3019 already recorded. A fresh blind solver then
+answered the twenty-five from masked pages and Appendix A alone: 20 agree,
+0 disagree, 5 also-defensible, and each of the five second readings is the
+other end of its item's window (82.25 unrounded beside the page's own
+82.27; 0.08643 with the moles rounded; 199.0 for the molar mass of
+K[Ag(CN)₂], which returns the source's 5.337 × 10²² and 10.41; the
+three-decimal sum 199.996). The ledger records carried: no key changed and
+every key still grades correct under its new form.
+
+### Three things the work turned up
+
+- **The first ceiling was wrong, and the playbook's own example showed
+  it.** The lint first refused a worked value more than 0.5 percent from
+  its key; writing the rule's example (3.25's 53.74 g of aluminum, 53.83
+  by any table — an arithmetic defect) showed that pair is 0.17 percent
+  apart and would have passed. The ceiling is 0.1 percent plus a unit of
+  the last place, which parts every real table gap in chapters 3 and 4
+  from that defect.
+- **The blind-solve mask let the worked value through, twice.**
+  `answerForm` is not a key param, so `maskKeys` printed
+  `worked:0.08642` on the masked page; with that fixed, the first
+  `solve:emit` still printed it in the packet's own `answerForm` field.
+  Both blank the value and keep the token (`worked:…`), each with a test.
+- **`npm test` was red at the last commit.** The chapter 4 follow-up's
+  browser test built its page paths and two locators from template
+  strings, which the fixture gate (`browser-fixtures.test.mjs`) cannot
+  read; the gate had not been run after the test was written. The test
+  now uses literal paths and locators.
+
+### What was looked at and left
+
+- **1.6's Kilimanjaro item stays `last-digit:2`.** Its routes are all this
+  book's own table, and its key is one of them: there is no second answer
+  to name. The playbook says so beside the rule.
+- **A logarithm's answer** (pH, pK, ln k) is graded correctly by the pair
+  and told the wrong thing ("3 significant figures" of a number with two).
+  It needs a `decimal-places:<n>` token with its own sentences, settled at
+  the gate probe of the chapter that first keys one (12 or 14). Written
+  into the playbook's "Not read by these forms" list; not built, there
+  being no item to test it against.
+- **Other `last-digit:1` items of chapters 1–4 whose table value is one
+  unit from the key** were not swept: only erratum 3019's two had the
+  table's value on record. They grade the table's answer correct already;
+  what they lack is the second value in the feedback.
+
 ## The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under

@@ -33,8 +33,8 @@ CNXML's tables and held to them cell by cell); `docs/subjects/chemistry.md`
 holds the source, the page skeleton, the exercise rules (only source-keyed
 exercises reach the page), the notation, measured-quantity grading
 (`\ce{…}` formulas in math, `sig-figs:<n> last-digit:<k>` fill-ins, a
-`tolerance:<p>%` band where the source's key was computed from finer atomic
-masses than the book's periodic table prints), typed
+second right value `worked:<value>` where the source's key was computed
+from finer atomic masses than the book's periodic table prints), typed
 formulas and equations (`textin` with `answerForm="formula"` or
 `"equation"`), the appendix rules, and
 the figure rules; a chapter is run from `docs/briefs/chemistry/run.md` with

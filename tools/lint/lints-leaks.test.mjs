@@ -587,6 +587,11 @@ test('in the Chemistry book the footer never prints a graded item\'s key', () =>
   const big = fillin('1.234\\times10^{4}', 'sig-figs:4 last-digit:0', '$1.234 \\times 10^{4}\\ \\text{g}$');
   assert.equal(printed(page(big, 'Keyed with $1.234 \\times 10^{4}$ g.')).length, 1);
   assert.equal(printed(page(fillin('12340', 'sig-figs:4 last-digit:0', '$12{,}340\\ \\text{g}$'), 'Keyed 12,340 g.')).length, 1);
+  // A worked value is a key as well: both numbers are graded (November 12, 2026).
+  const silver = fillin('0.08644', 'sig-figs:4 last-digit:1 worked:0.08642', '$0.08644\\ \\text{g}$');
+  assert.equal(printed(page(silver, 'The table’s value, 0.08642 g, is taken as correct.')).length, 1);
+  assert.equal(printed(page(fillin('5.337\\times10^{22}', 'sig-figs:4 last-digit:1 worked:5.336\\times10^{22}', '$5.337 \\times 10^{22}$'), 'The table gives 5.336 × 10²².')).length, 1);
+  assert.deepEqual(printed(page(silver, 'Three items take the table’s value as correct beside the source’s.')), []);
   // A formula and an equation key.
   assert.equal(printed(page(formula('2NH₄NO₃ ⟶ 2N₂ + O₂ + 4H₂O', 'equation'), 'Keyed 2NH₄NO₃ ⟶ 2N₂ + O₂ + 4H₂O.')).length, 1);
   assert.equal(printed(page(formula('CuCO₃', 'formula'), 'The item keyed CuCO₃.')).length, 1);

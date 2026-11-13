@@ -203,7 +203,7 @@ function figureSpecErrors(rawJson, kindFromParam) {
 // grader itself, so the trivially-satisfiable-prompt check grades a printed
 // value exactly the way a learner's submission would be graded.
 import {
-  ANSWER_FORM_TOKENS, ce, checkAnswer, checkFormAsGraded, measuredKeyProblem, parseAnswerForm, preprocess,
+  ANSWER_FORM_TOKENS, ce, checkAnswer, checkFormAsGraded, measuredKeyProblem, parseAnswerForm, preprocess, workedValueShown,
   splitTopLevelCommas, stripGroupingCommas,
 } from '../../assets/js/lib/math/check-answer.mjs';
 // The shared content primitives: one shortcode grammar, one math-span escape
@@ -2528,6 +2528,12 @@ export function lintHugo(src, filename = '', options = {}) {
       // measuredKeyProblem()'s, beside the grader they protect.
       const measuredProblem = measuredKeyProblem(params.answer, params.answerForm, { mode: params.answerMode });
       if (measuredProblem) err(index, `${where}: ${measuredProblem}`);
+      // ---- a worked value with no answer to stand beside. The learner is
+      // shown both right answers, "the source's answer is …; this book's own
+      // data give …", and the first half is the answerDisplay.
+      if (!measuredProblem && !params.answerDisplay && workedValueShown(params.answer, params.answerForm) !== '') {
+        err(index, `${where}: a \`worked:<value>\` item declares an answerDisplay — the feedback names the source's answer (with its unit) beside the worked value`);
+      }
       // A rule used to sit here forbidding `answerForm` beside a comma
       // answer, because the grader returned from its list paths before the
       // form was ever checked and the declared token silently graded nothing.

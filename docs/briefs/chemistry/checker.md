@@ -43,12 +43,13 @@ catch.
   calculation are measured factors); a stem that does not name the unit the
   key is in. **Take every atomic mass from this book's periodic table**
   (`appendices/a-the-periodic-table.md`): the answer a learner reaches from
-  it must grade `correct`. Report an item where it does not; a
-  `tolerance:<p>%` wider than the chapter's band, or declared where
-  `last-digit:1` already takes the table's value; and a gap between the
-  table's value and the key that is wider than the band (that is an
-  arithmetic defect, not table noise — playbook "Numeric keys", "The
-  source's value is the key"). Grade through the real grader
+  it must grade `correct`. Report an item where it does not; an item
+  whose table value is not the source's key and carries no
+  `worked:<value>`; a `worked:<value>` that is not the value YOU reach
+  from the table by the module's own method (compute it before you read
+  the token); and a gap between the two that the lint's ceiling refuses
+  (that is an arithmetic defect, not table noise — playbook "Numeric
+  keys", "The source's value is the key"). Grade through the real grader
   (`node -e 'import("./assets/js/lib/math/check-answer.mjs").then(m=>console.log(m.checkAnswer("<typed>","<key>",{form:"<form>"})))'`):
   your own answer, the key, the unrounded readout, the answer with its
   unit, and every number the stem prints. Your answer and the key must be

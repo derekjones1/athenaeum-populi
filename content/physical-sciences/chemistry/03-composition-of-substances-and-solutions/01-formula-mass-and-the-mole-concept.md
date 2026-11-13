@@ -350,7 +350,7 @@ Significant progress has been made recently in directly measuring the number of 
 {{< fillin
   question="Calculate the molecular or formula mass of the following: P₄. Enter the molecular mass in amu."
   answer="123.896"
-  answerForm="tolerance:0.05%"
+  answerForm="worked:123.88"
   answerDisplay="$123.896\ \text{amu}$"
   hint="Use the definition of formula mass, with the average atomic masses from the periodic table, as in the formula-mass figures above."
 >}}
@@ -358,7 +358,7 @@ Significant progress has been made recently in directly measuring the number of 
 {{< fillin
   question="Calculate the molecular or formula mass of the following: H₂O. Enter the molecular mass in amu."
   answer="18.015"
-  answerForm="tolerance:0.05%"
+  answerForm="worked:18.02"
   answerDisplay="$18.015\ \text{amu}$"
   hint="Use the definition of formula mass, with the average atomic masses from the periodic table, as in the formula-mass figures above."
 >}}
@@ -366,7 +366,7 @@ Significant progress has been made recently in directly measuring the number of 
 {{< fillin
   question="Calculate the molecular or formula mass of the following: Ca(NO₃)₂. Enter the formula mass in amu."
   answer="164.086"
-  answerForm="tolerance:0.05%"
+  answerForm="worked:164.10"
   answerDisplay="$164.086\ \text{amu}$"
   hint="Use the definition of formula mass, with the average atomic masses from the periodic table, as in the formula-mass figures above."
 >}}
@@ -374,7 +374,7 @@ Significant progress has been made recently in directly measuring the number of 
 {{< fillin
   question="Calculate the molecular or formula mass of the following: CH₃CO₂H (acetic acid). Enter the molecular mass in amu."
   answer="60.052"
-  answerForm="tolerance:0.05%"
+  answerForm="worked:60.05"
   answerDisplay="$60.052\ \text{amu}$"
   hint="Use the definition of formula mass, with the average atomic masses from the periodic table, as in the formula-mass figures above."
 >}}
@@ -382,7 +382,7 @@ Significant progress has been made recently in directly measuring the number of 
 {{< fillin
   question="Calculate the molecular or formula mass of the following: C₁₂H₂₂O₁₁ (sucrose, cane sugar). Enter the molecular mass in amu."
   answer="342.297"
-  answerForm="tolerance:0.05%"
+  answerForm="worked:342.30"
   answerDisplay="$342.297\ \text{amu}$"
   hint="Use the definition of formula mass, with the average atomic masses from the periodic table, as in the formula-mass figures above."
 >}}
@@ -393,7 +393,7 @@ Significant progress has been made recently in directly measuring the number of 
 {{< fillin
   question="Determine the molecular mass of the following compound, shown in the figure above. Enter the molecular mass in amu."
   answer="56.107"
-  answerForm="tolerance:0.05%"
+  answerForm="worked:56.10"
   answerDisplay="$56.107\ \text{amu}$"
   hint="Count the atoms of each element in the structural formula, then use the definition of molecular mass with the average atomic masses from the periodic table."
 >}}
@@ -404,7 +404,7 @@ Significant progress has been made recently in directly measuring the number of 
 {{< fillin
   question="Determine the molecular mass of the following compound, shown in the figure above. Enter the molecular mass in amu."
   answer="54.091"
-  answerForm="tolerance:0.05%"
+  answerForm="worked:54.09"
   answerDisplay="$54.091\ \text{amu}$"
   hint="Count the atoms of each element in the structural formula, then use the definition of molecular mass with the average atomic masses from the periodic table."
 >}}
@@ -415,7 +415,7 @@ Significant progress has been made recently in directly measuring the number of 
 {{< fillin
   question="Determine the molecular mass of the following compound, shown in the figure above. (The atoms in the drawing are silicon, hydrogen, and chlorine.) Enter the molecular mass in amu."
   answer="199.9976"
-  answerForm="tolerance:0.05%"
+  answerForm="worked:200.00"
   answerDisplay="$199.9976\ \text{amu}$"
   hint="Count the atoms of each element in the structural formula, then use the definition of molecular mass with the average atomic masses from the periodic table."
 >}}
@@ -426,7 +426,7 @@ Significant progress has been made recently in directly measuring the number of 
 {{< fillin
   question="Determine the molecular mass of the following compound, shown in the figure above. Enter the molecular mass in amu."
   answer="97.9950"
-  answerForm="tolerance:0.05%"
+  answerForm="worked:97.99"
   answerDisplay="$97.9950\ \text{amu}$"
   hint="Count the atoms of each element in the structural formula, then use the definition of molecular mass with the average atomic masses from the periodic table."
 >}}
@@ -444,7 +444,7 @@ the molecular mass is the mass of 1 molecule
 {{< fillin
   question="Calculate the molar mass of the following: S₈. Enter the molar mass in g/mol."
   answer="256.48"
-  answerForm="tolerance:0.05%"
+  answerForm="worked:256.48"
   answerDisplay="$256.48\ \text{g/mol}$"
   hint="Use the definition of molar mass, with the average atomic masses from the periodic table, as in the molar-mass table of the glycine example above."
 >}}
@@ -452,7 +452,7 @@ the molecular mass is the mass of 1 molecule
 {{< fillin
   question="Calculate the molar mass of the following: C₅H₁₂. Enter the molar mass in g/mol."
   answer="72.150"
-  answerForm="tolerance:0.05%"
+  answerForm="worked:72.15"
   answerDisplay="$72.150\ \text{g/mol}$"
   hint="Use the definition of molar mass, with the average atomic masses from the periodic table, as in the molar-mass table of the glycine example above."
 >}}
@@ -460,7 +460,7 @@ the molecular mass is the mass of 1 molecule
 {{< fillin
   question="Calculate the molar mass of the following: Sc₂(SO₄)₃. Enter the molar mass in g/mol."
   answer="378.103"
-  answerForm="tolerance:0.05%"
+  answerForm="worked:378.10"
   answerDisplay="$378.103\ \text{g/mol}$"
   hint="Use the definition of molar mass, with the average atomic masses from the periodic table, as in the molar-mass table of the glycine example above."
 >}}
@@ -468,7 +468,7 @@ the molecular mass is the mass of 1 molecule
 {{< fillin
   question="Calculate the molar mass of the following: CH₃COCH₃ (acetone). Enter the molar mass in g/mol."
   answer="58.080"
-  answerForm="tolerance:0.05%"
+  answerForm="worked:58.08"
   answerDisplay="$58.080\ \text{g/mol}$"
   hint="Use the definition of molar mass, with the average atomic masses from the periodic table, as in the molar-mass table of the glycine example above."
 >}}
@@ -476,7 +476,7 @@ the molecular mass is the mass of 1 molecule
 {{< fillin
   question="Calculate the molar mass of the following: C₆H₁₂O₆ (glucose). Enter the molar mass in g/mol."
   answer="180.158"
-  answerForm="tolerance:0.05%"
+  answerForm="worked:180.16"
   answerDisplay="$180.158\ \text{g/mol}$"
   hint="Use the definition of molar mass, with the average atomic masses from the periodic table, as in the molar-mass table of the glycine example above."
 >}}
@@ -484,7 +484,7 @@ the molecular mass is the mass of 1 molecule
 {{< fillin
   question="Calculate the molar mass of the following: the anesthetic halothane, C₂HBrClF₃. Enter the molar mass in g/mol."
   answer="197.382"
-  answerForm="tolerance:0.05%"
+  answerForm="worked:197.38"
   answerDisplay="$197.382\ \text{g/mol}$"
   hint="Use the definition of molar mass, with the average atomic masses from the periodic table, as in the molar-mass table of the glycine example above."
 >}}
@@ -492,7 +492,7 @@ the molecular mass is the mass of 1 molecule
 {{< fillin
   question="Calculate the molar mass of the following: the herbicide paraquat, C₁₂H₁₄N₂Cl₂. Enter the molar mass in g/mol."
   answer="257.163"
-  answerForm="tolerance:0.05%"
+  answerForm="worked:257.15"
   answerDisplay="$257.163\ \text{g/mol}$"
   hint="Use the definition of molar mass, with the average atomic masses from the periodic table, as in the molar-mass table of the glycine example above."
 >}}
@@ -500,7 +500,7 @@ the molecular mass is the mass of 1 molecule
 {{< fillin
   question="Calculate the molar mass of the following: caffeine, C₈H₁₀N₄O₂. Enter the molar mass in g/mol."
   answer="194.193"
-  answerForm="tolerance:0.05%"
+  answerForm="worked:194.20"
   answerDisplay="$194.193\ \text{g/mol}$"
   hint="Use the definition of molar mass, with the average atomic masses from the periodic table, as in the molar-mass table of the glycine example above."
 >}}
@@ -508,7 +508,7 @@ the molecular mass is the mass of 1 molecule
 {{< fillin
   question="Calculate the molar mass of the following: urea, CO(NH₂)₂. Enter the molar mass in g/mol."
   answer="60.056"
-  answerForm="tolerance:0.05%"
+  answerForm="worked:60.06"
   answerDisplay="$60.056\ \text{g/mol}$"
   hint="Use the definition of molar mass, with the average atomic masses from the periodic table, as in the molar-mass table of the glycine example above."
 >}}
@@ -516,7 +516,7 @@ the molecular mass is the mass of 1 molecule
 {{< fillin
   question="Calculate the molar mass of the following: a typical soap, C₁₇H₃₅CO₂Na. Enter the molar mass in g/mol."
   answer="306.464"
-  answerForm="tolerance:0.05%"
+  answerForm="worked:306.45"
   answerDisplay="$306.464\ \text{g/mol}$"
   hint="Use the definition of molar mass, with the average atomic masses from the periodic table, as in the molar-mass table of the glycine example above."
 >}}
@@ -679,7 +679,7 @@ its formula has twice as many oxygen atoms as the other two compounds
 {{< fillin
   question="Determine the number of atoms and the mass of zirconium, silicon, and oxygen found in 0.3384 mol of zircon, ZrSiO₄, a semiprecious stone. Enter the mass of silicon in grams."
   answer="9.504"
-  answerForm="sig-figs:4 tolerance:0.05%"
+  answerForm="sig-figs:4 last-digit:1 worked:9.506"
   answerDisplay="$9.504\ \text{g}$"
   hint="Moles of zircon to moles of the element’s atoms, with the formula’s subscript, then to grams with the element’s molar mass from the periodic table."
 >}}
