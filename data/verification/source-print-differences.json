@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "note": "Fill-in keys that differ from the number the pinned source prints only because this book’s periodic table (data/chemistry/elements.json) carries other atomic masses than the source’s answer key was worked from. Written by `node tools/verify/verify-source-keys.mjs --write-register`; verify-source-keys fails when a run computes other rows. Review the diff of this file like a key change: `units` is the distance at the coarser of the two last places.",
+  "differences": [
+    {"page":"content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md","exercise":"fs-idm73270640#check","key":"310.174","sourcePrint":"310.18","units":1},
+    {"page":"content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md","exercise":"fs-idm8741648#check","key":"4.586\\times10^{22}","sourcePrint":"4.585 × 10^{22}","units":1},
+    {"page":"content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md","exercise":"fs-idp14760336(a)","key":"12.011","sourcePrint":"12.01","units":0},
+    {"page":"content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md","exercise":"fs-idp14760336(b)","key":"12.011","sourcePrint":"12.01","units":0},
+    {"page":"content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md","exercise":"fs-idp14760336(c)","key":"144.132","sourcePrint":"144.12","units":1},
+    {"page":"content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md","exercise":"fs-idp14760336(d)","key":"60.055","sourcePrint":"60.05","units":1},
+    {"page":"content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md","exercise":"fs-idp15853040#check","key":"504.4","sourcePrint":"504.5","units":1},
+    {"page":"content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md","exercise":"fs-idp17719968#check","key":"151.165","sourcePrint":"151.16","units":1},
+    {"page":"content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md","exercise":"fs-idp20009152(a)","key":"56.108","sourcePrint":"56.107","units":1},
+    {"page":"content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md","exercise":"fs-idp20009152(b)","key":"54.092","sourcePrint":"54.091","units":1},
+    {"page":"content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md","exercise":"fs-idp20009152(c)","key":"199.99","sourcePrint":"199.9976","units":1},
+    {"page":"content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md","exercise":"fs-idp20009152(d)","key":"97.994","sourcePrint":"97.9950","units":1},
+    {"page":"content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md","exercise":"fs-idp50969136(a)","key":"99.40","sourcePrint":"99.41","units":1},
+    {"page":"content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md","exercise":"fs-idp51968592(b)","key":"72.151","sourcePrint":"72.150","units":1},
+    {"page":"content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md","exercise":"fs-idp51968592(c)","key":"378.08","sourcePrint":"378.103","units":2},
+    {"page":"content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md","exercise":"fs-idp51968592(e)","key":"180.156","sourcePrint":"180.158","units":2},
+    {"page":"content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md","exercise":"fs-idp56656128(a)","key":"197.38","sourcePrint":"197.382","units":0},
+    {"page":"content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md","exercise":"fs-idp56656128(b)","key":"257.16","sourcePrint":"257.163","units":0},
+    {"page":"content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md","exercise":"fs-idp56656128(c)","key":"194.194","sourcePrint":"194.193","units":1},
+    {"page":"content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md","exercise":"fs-idp56656128(e)","key":"306.466","sourcePrint":"306.464","units":2}
+  ]
+}

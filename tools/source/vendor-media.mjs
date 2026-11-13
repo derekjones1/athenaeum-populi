@@ -223,6 +223,10 @@ function refreshTransparency(bookKey) {
   const outDir = path.join(repositoryRoot, 'static/media', bookKey);
   let transparent = 0;
   for (const entry of Object.values(manifest.figures)) {
+    // A figure a tool draws (Chemistry's periodic table, an SVG written by
+    // tools/figures/periodic-table.mjs) is not a vendored WebP: its entry is
+    // that tool's, and it paints its own background.
+    if (entry.generated) continue;
     entry.transparent = webpHasTransparency(path.join(outDir, largestVariant(entry).file));
     if (entry.transparent) transparent += 1;
   }

@@ -2431,6 +2431,121 @@ every key still grades correct under its new form.
   table's value on record. They grade the table's answer correct already;
   what they lack is the second value in the feedback.
 
+## One data set, one right answer (November 12, 2026)
+
+Derek opened Section 4.3, answered the silver(I) oxide item with 0.08642, and
+read "Correct — the source’s answer is 0.08644 g O₂; this book’s own data
+give 0.08642." He called it confusing, out of line with the other books, and
+asked why the book's periodic table was less accurate than its own answers.
+This entry supersedes the November 11 ruling ("source keys stay") and the
+worked-value design above.
+
+### What was found
+
+- The periodic table was OpenStax's image: four-figure atomic masses
+  (Ag 107.9, O 16.00) printed in its pixels, and a text table typed from
+  it. No tool or gate read either.
+- The source's answer key was not worked from that table. Its formula
+  masses match 1990s atomic weights (H 1.00794, Cl 35.4527, Si 28.0855,
+  Zn 65.39). The source disagrees with itself, and no single table
+  reproduces every printed answer: with IUPAC's current five-figure table,
+  8 of 3.1's nineteen formula-mass keys equal the source's print and 11
+  stand a unit or two from it.
+- A four-figure mass is wrong by up to 3 parts in 10,000 (Ag), the size of
+  the fourth figure of an answer; the exercises give four-figure data and
+  ask four figures.
+- The November 11 reasoning ("A tolerance is needed with either table, so
+  more digits buys you nothing") holds as far as it goes: a tolerance to
+  the SOURCE's key is needed with any table. None is needed once the
+  source's key is no longer the key.
+
+### What Derek decided
+
+1. The book's periodic table carries IUPAC's abridged standard atomic
+   weights (CIAAW, Abridged Standard Atomic Weights 2024; five significant
+   figures, fewer where isotopic composition varies), and the source's
+   image is replaced by a table drawn from that data.
+2. A numeric key is what this book's table and constants give. A correct
+   answer reads the ordinary "Correct — …". The source's differing print
+   is recorded and never shown to the learner; it grades correct only
+   inside the ordinary `last-digit` allowance. `worked:<value>` is retired.
+3. Worked examples in the body are recomputed from the table.
+4. Appendix D's constants move to current CODATA values.
+
+The parent's calls inside those, each put to Derek in the plan: a constant
+a chapter states is used as stated (6.022 × 10²³); a molar mass is the
+addition-rule sum, then carried unrounded; 3.3's 0.5000 becomes an ordinary
+corrected key; the nine boxes the source leaves unshaded stay unclassified
+(the key gains a "Not classified" entry); the six calculation-table images
+of 3.1 become tables and their molecular models are not carried.
+
+### What was built
+
+- `data/chemistry/elements.json`: 118 elements, each mass a string, copied
+  from the CIAAW page kept at `tools/fixtures/ciaaw/`; 75 of the 84
+  standard atomic weights changed. `tools/source/elements.test.mjs` holds
+  the file to the copy digit for digit and to the grader's symbol list.
+- `tools/figures/periodic-table.mjs` draws
+  `static/media/chemistry/periodic-table.svg` (whole-number geometry on a
+  fixed pitch, `--check` in the tests, every label fitted with the
+  measured advances and the platform margin, 4.5 to 1 contrast). The rail
+  control and the viewer took the SVG unchanged.
+- `tools/source/elements-table.mjs` writes Appendix A's table;
+  `verify:source-tables` now reads that table against the data file (it
+  was the one table the tool skipped), and its floor rose 2,704 → 3,418.
+- `tools/verify/molar-mass.mjs`: a formula mass by the book's method,
+  exact arithmetic, a calculation table in Markdown, and `--page`.
+- `verify:source-keys`: a key within two units of the source's print (at
+  the coarser last place, and within 0.1 percent) on an item that carries
+  `last-digit:1` or `2` is `data-differs`, not a failure; every such item
+  is a row of `data/verification/source-print-differences.json`
+  (`--write-register`), and the page carries one Source note under
+  `## Practice`. A formula mass asked for itself must equal the tool's sum
+  exactly (`table-differs`). Where a stem gives no number of its own the
+  count of figures is the table's. Sabotaged both ways: a changed register
+  row failed as unlisted and as stale.
+- The grader: a response one figure short and within two units of what the
+  key rounds to (123.88 against 123.896) is a near miss, and a near miss
+  under `last-digit:1` or more adds "If you looked up a value, such as an
+  atomic mass, use every digit its table prints."
+
+### The pilot: Appendix A and Section 3.1
+
+Author (Opus) → checker (Opus, forbidden the author's notes) → blind solve
+(fresh Fable, masked page, the new Appendix A). 59 numbers changed by the
+author; six calculation-table images replaced by tables; twenty `worked:`
+tokens gone.
+
+- **The checker found five keys the author had left on the old data**:
+  2.345 mol of LiCl (99.41, the source's, from Li 6.941; the table's 6.94
+  gives 99.40), and the four "mass of carbon in this molecule" items, which
+  the author had rounded to the source's count of figures (12.01, 60.06)
+  because the gate then refused 12.011. The gate was wrong: a stem that
+  gives no number takes its count from the table. Both readings stay in
+  the recipe — the author's rework is not the check.
+- The gate could not read a formula-mass item whose formula is a drawing
+  (Si₂H₂Cl₄, H₃PO₄) and demanded the source's seven figures; fixed by the
+  same rule.
+- The least-molecules question printed 44.02 g/mol for N₂O beside a Source
+  note saying its molar masses are this book's table's; the table gives
+  44.01. Corrected in the option, the note widened.
+- Blind solve: 58 agree, 1 flagged and adjudicated (oxygen atoms in
+  zircon, 8.151 × 10²³ with the page's 6.022 × 10²³ and 8.152 × 10²³ with
+  the exact constant the body prints once; the allowance takes both).
+- 20 register rows, all of 3.1. `--min-confirmed` 7,419 → 7,399: those
+  twenty keys are no longer "confirmed against the source", by design.
+
+### Still to do (this entry is extended as each lands)
+
+- The sweep: 2.3, 2.5 (and figures 1.3 and 2.5, the same periodic table),
+  2.6, 3.2–3.4, chapter 4, Knowledge Check 1; the five remaining `worked:`
+  items; then the token's removal from the grader, shortcode, lints, mask,
+  and tests.
+- Appendix D to CODATA.
+- The playbook, briefs, and AGENTS.md still describe the worked-value
+  rule; they are rewritten after the sweep, before chapter 5.
+- Errata 2985, 2988, 2996, 2999, 3019 "Local handling".
+
 ## The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under

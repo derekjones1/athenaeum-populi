@@ -35,8 +35,12 @@
  * A cell the page writes differently ON PURPOSE — a corrected source defect,
  * a notation the skeleton cannot fold — is listed in `deviations` with its
  * reason; one that no longer applies fails as stale. A page table the source
- * does not have (Appendix A's list of elements, transcribed from the image)
- * is named in `added` by its bold title.
+ * does not have is named in `added` by its bold title. Appendix A's list of
+ * the elements is such a table — the source's periodic table is an image —
+ * and it is not left unread: `elements` holds it, cell for cell, to
+ * `data/chemistry/elements.json`, the file the periodic-table figure is
+ * drawn from and every molar mass is computed from
+ * (tools/source/elements-table.mjs writes it).
  *
  * With a bundle absent the tool says which pages it could not read and
  * applies no rule, as verify-source-keys does; ATHENAEUM_REQUIRE_SOURCES=1
@@ -47,10 +51,12 @@ import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { integerFlag, parseCliArgs } from '../lib/cli.mjs';
+import { loadElements } from '../lib/elements.mjs';
 import { descendants, loadSourceLock, localName, parseXml } from '../lib/openstax-source.mjs';
 import {
   mediaStem, moduleTables, pageSkeleton, pageTables, sourceFootnotes, sourceSkeleton,
 } from '../lib/source-tables.mjs';
+import { ELEMENTS_TABLE_TITLE, compareElementsTable } from '../source/elements-table.mjs';
 
 const repositoryRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 
@@ -61,9 +67,10 @@ const repositoryRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url))
  * corrected source defect names its erratum in docs/openstax-errata.md.
  */
 export const TABLE_NOTES = Object.freeze({
-  // Appendix A: the periodic table is an image; the page adds a table of the
-  // elements transcribed from it (read against the image, not the CNXML).
-  'chemistry-bundle:m68859': { added: ['The elements of the periodic table above'] },
+  // Appendix A: the source's periodic table is an image. The page draws its
+  // own from data/chemistry/elements.json and lists the same file as a table,
+  // which is read against that file (`elements`), not against the CNXML.
+  'chemistry-bundle:m68859': { added: [ELEMENTS_TABLE_TITLE], elements: true },
   // Appendix H: nine formulas are printed as images; the Lewis structures
   // leave the table and follow it as figures.
   'chemistry-bundle:m68866': {
@@ -283,10 +290,16 @@ function main(argv) {
     const modulePath = path.join(sourceRoot, 'modules', entry.moduleId, 'index.cnxml');
     if (!existsSync(modulePath)) { skipped.add(entry.bundle); continue; }
     const notes = TABLE_NOTES[`${entry.bundle}:${entry.moduleId}`] || {};
-    const result = compareTables(readFileSync(modulePath, 'utf8'), readFileSync(path.join(repositoryRoot, entry.localPath), 'utf8'), notes);
+    const markdown = readFileSync(path.join(repositoryRoot, entry.localPath), 'utf8');
+    const result = compareTables(readFileSync(modulePath, 'utf8'), markdown, notes);
     cells += result.cells;
     pages += 1;
     for (const error of result.errors) failures.push(`${entry.localPath}: ${error}`);
+    if (notes.elements) {
+      const table = compareElementsTable(markdown, loadElements(repositoryRoot));
+      cells += table.cells;
+      for (const error of table.errors) failures.push(`${entry.localPath}: table of the elements, ${error} (node tools/source/elements-table.mjs --write)`);
+    }
   }
   for (const key of Object.keys(TABLE_NOTES)) {
     const [bundle, moduleId] = key.split(':');

@@ -1,0 +1,666 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1566 1212" width="1566" height="1212" font-family="Helvetica, Arial, sans-serif" fill="#111111">
+<title>Periodic Table of the Elements</title>
+<rect width="1566" height="1212" fill="#ffffff"/>
+<text x="783" y="40" font-size="28" text-anchor="middle" font-weight="bold">Periodic Table of the Elements</text>
+<text x="87" y="66" font-size="22" text-anchor="middle" font-weight="bold" fill="#2b4a9b">Group</text>
+<text x="87" y="95" font-size="24" text-anchor="middle" font-weight="bold" fill="#2b4a9b">1</text>
+<text x="171" y="179" font-size="24" text-anchor="middle" font-weight="bold" fill="#2b4a9b">2</text>
+<text x="255" y="347" font-size="24" text-anchor="middle" font-weight="bold" fill="#2b4a9b">3</text>
+<text x="339" y="347" font-size="24" text-anchor="middle" font-weight="bold" fill="#2b4a9b">4</text>
+<text x="423" y="347" font-size="24" text-anchor="middle" font-weight="bold" fill="#2b4a9b">5</text>
+<text x="507" y="347" font-size="24" text-anchor="middle" font-weight="bold" fill="#2b4a9b">6</text>
+<text x="591" y="347" font-size="24" text-anchor="middle" font-weight="bold" fill="#2b4a9b">7</text>
+<text x="675" y="347" font-size="24" text-anchor="middle" font-weight="bold" fill="#2b4a9b">8</text>
+<text x="759" y="347" font-size="24" text-anchor="middle" font-weight="bold" fill="#2b4a9b">9</text>
+<text x="843" y="347" font-size="24" text-anchor="middle" font-weight="bold" fill="#2b4a9b">10</text>
+<text x="927" y="347" font-size="24" text-anchor="middle" font-weight="bold" fill="#2b4a9b">11</text>
+<text x="1011" y="347" font-size="24" text-anchor="middle" font-weight="bold" fill="#2b4a9b">12</text>
+<text x="1095" y="179" font-size="24" text-anchor="middle" font-weight="bold" fill="#2b4a9b">13</text>
+<text x="1179" y="179" font-size="24" text-anchor="middle" font-weight="bold" fill="#2b4a9b">14</text>
+<text x="1263" y="179" font-size="24" text-anchor="middle" font-weight="bold" fill="#2b4a9b">15</text>
+<text x="1347" y="179" font-size="24" text-anchor="middle" font-weight="bold" fill="#2b4a9b">16</text>
+<text x="1431" y="179" font-size="24" text-anchor="middle" font-weight="bold" fill="#2b4a9b">17</text>
+<text x="1515" y="95" font-size="24" text-anchor="middle" font-weight="bold" fill="#2b4a9b">18</text>
+<text x="18" y="92" font-size="22" font-weight="bold" fill="#75147c" transform="rotate(-90 18 92)">Period</text>
+<text x="20" y="154" font-size="24" text-anchor="middle" font-weight="bold" fill="#75147c">1</text>
+<text x="20" y="238" font-size="24" text-anchor="middle" font-weight="bold" fill="#75147c">2</text>
+<text x="20" y="322" font-size="24" text-anchor="middle" font-weight="bold" fill="#75147c">3</text>
+<text x="20" y="406" font-size="24" text-anchor="middle" font-weight="bold" fill="#75147c">4</text>
+<text x="20" y="490" font-size="24" text-anchor="middle" font-weight="bold" fill="#75147c">5</text>
+<text x="20" y="574" font-size="24" text-anchor="middle" font-weight="bold" fill="#75147c">6</text>
+<text x="20" y="658" font-size="24" text-anchor="middle" font-weight="bold" fill="#75147c">7</text>
+<rect x="292" y="716" width="1270" height="178" fill="#c5c9c8"/>
+<rect x="46" y="104" width="82" height="82" fill="#dbe8e2" stroke="#55575a"/>
+<text x="50" y="120" font-size="14">1</text>
+<text x="87" y="147" font-size="27" text-anchor="middle" font-weight="bold" fill="#8f1a14">H</text>
+<text x="87" y="165" font-size="15" text-anchor="middle">1.0080</text>
+<text x="87" y="180" font-size="11" text-anchor="middle">hydrogen</text>
+<rect x="1474" y="104" width="82" height="82" fill="#dbe8e2" stroke="#55575a"/>
+<text x="1478" y="120" font-size="14">2</text>
+<text x="1515" y="147" font-size="27" text-anchor="middle" font-weight="bold" fill="#8f1a14">He</text>
+<text x="1515" y="165" font-size="15" text-anchor="middle">4.0026</text>
+<text x="1515" y="180" font-size="11" text-anchor="middle">helium</text>
+<rect x="46" y="188" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="50" y="204" font-size="14">3</text>
+<text x="87" y="231" font-size="27" text-anchor="middle" font-weight="bold">Li</text>
+<text x="87" y="249" font-size="15" text-anchor="middle">6.94</text>
+<text x="87" y="264" font-size="11" text-anchor="middle">lithium</text>
+<rect x="130" y="188" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="134" y="204" font-size="14">4</text>
+<text x="171" y="231" font-size="27" text-anchor="middle" font-weight="bold">Be</text>
+<text x="171" y="249" font-size="15" text-anchor="middle">9.0122</text>
+<text x="171" y="264" font-size="11" text-anchor="middle">beryllium</text>
+<rect x="1054" y="188" width="82" height="82" fill="#eadcee" stroke="#55575a"/>
+<text x="1058" y="204" font-size="14">5</text>
+<text x="1095" y="231" font-size="27" text-anchor="middle" font-weight="bold">B</text>
+<text x="1095" y="249" font-size="15" text-anchor="middle">10.81</text>
+<text x="1095" y="264" font-size="11" text-anchor="middle">boron</text>
+<rect x="1138" y="188" width="82" height="82" fill="#dbe8e2" stroke="#55575a"/>
+<text x="1142" y="204" font-size="14">6</text>
+<text x="1179" y="231" font-size="27" text-anchor="middle" font-weight="bold">C</text>
+<text x="1179" y="249" font-size="15" text-anchor="middle">12.011</text>
+<text x="1179" y="264" font-size="11" text-anchor="middle">carbon</text>
+<rect x="1222" y="188" width="82" height="82" fill="#dbe8e2" stroke="#55575a"/>
+<text x="1226" y="204" font-size="14">7</text>
+<text x="1263" y="231" font-size="27" text-anchor="middle" font-weight="bold" fill="#8f1a14">N</text>
+<text x="1263" y="249" font-size="15" text-anchor="middle">14.007</text>
+<text x="1263" y="264" font-size="11" text-anchor="middle">nitrogen</text>
+<rect x="1306" y="188" width="82" height="82" fill="#dbe8e2" stroke="#55575a"/>
+<text x="1310" y="204" font-size="14">8</text>
+<text x="1347" y="231" font-size="27" text-anchor="middle" font-weight="bold" fill="#8f1a14">O</text>
+<text x="1347" y="249" font-size="15" text-anchor="middle">15.999</text>
+<text x="1347" y="264" font-size="11" text-anchor="middle">oxygen</text>
+<rect x="1390" y="188" width="82" height="82" fill="#dbe8e2" stroke="#55575a"/>
+<text x="1394" y="204" font-size="14">9</text>
+<text x="1431" y="231" font-size="27" text-anchor="middle" font-weight="bold" fill="#8f1a14">F</text>
+<text x="1431" y="249" font-size="15" text-anchor="middle">18.998</text>
+<text x="1431" y="264" font-size="11" text-anchor="middle">fluorine</text>
+<rect x="1474" y="188" width="82" height="82" fill="#dbe8e2" stroke="#55575a"/>
+<text x="1478" y="204" font-size="14">10</text>
+<text x="1515" y="231" font-size="27" text-anchor="middle" font-weight="bold" fill="#8f1a14">Ne</text>
+<text x="1515" y="249" font-size="15" text-anchor="middle">20.180</text>
+<text x="1515" y="264" font-size="11" text-anchor="middle">neon</text>
+<rect x="46" y="272" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="50" y="288" font-size="14">11</text>
+<text x="87" y="315" font-size="27" text-anchor="middle" font-weight="bold">Na</text>
+<text x="87" y="333" font-size="15" text-anchor="middle">22.990</text>
+<text x="87" y="348" font-size="11" text-anchor="middle">sodium</text>
+<rect x="130" y="272" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="134" y="288" font-size="14">12</text>
+<text x="171" y="315" font-size="27" text-anchor="middle" font-weight="bold">Mg</text>
+<text x="171" y="333" font-size="15" text-anchor="middle">24.305</text>
+<text x="171" y="348" font-size="11" text-anchor="middle">magnesium</text>
+<rect x="1054" y="272" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="1058" y="288" font-size="14">13</text>
+<text x="1095" y="315" font-size="27" text-anchor="middle" font-weight="bold">Al</text>
+<text x="1095" y="333" font-size="15" text-anchor="middle">26.982</text>
+<text x="1095" y="348" font-size="11" text-anchor="middle">aluminum</text>
+<rect x="1138" y="272" width="82" height="82" fill="#eadcee" stroke="#55575a"/>
+<text x="1142" y="288" font-size="14">14</text>
+<text x="1179" y="315" font-size="27" text-anchor="middle" font-weight="bold">Si</text>
+<text x="1179" y="333" font-size="15" text-anchor="middle">28.085</text>
+<text x="1179" y="348" font-size="11" text-anchor="middle">silicon</text>
+<rect x="1222" y="272" width="82" height="82" fill="#dbe8e2" stroke="#55575a"/>
+<text x="1226" y="288" font-size="14">15</text>
+<text x="1263" y="315" font-size="27" text-anchor="middle" font-weight="bold">P</text>
+<text x="1263" y="333" font-size="15" text-anchor="middle">30.974</text>
+<text x="1263" y="348" font-size="11" text-anchor="middle">phosphorus</text>
+<rect x="1306" y="272" width="82" height="82" fill="#dbe8e2" stroke="#55575a"/>
+<text x="1310" y="288" font-size="14">16</text>
+<text x="1347" y="315" font-size="27" text-anchor="middle" font-weight="bold">S</text>
+<text x="1347" y="333" font-size="15" text-anchor="middle">32.06</text>
+<text x="1347" y="348" font-size="11" text-anchor="middle">sulfur</text>
+<rect x="1390" y="272" width="82" height="82" fill="#dbe8e2" stroke="#55575a"/>
+<text x="1394" y="288" font-size="14">17</text>
+<text x="1431" y="315" font-size="27" text-anchor="middle" font-weight="bold" fill="#8f1a14">Cl</text>
+<text x="1431" y="333" font-size="15" text-anchor="middle">35.45</text>
+<text x="1431" y="348" font-size="11" text-anchor="middle">chlorine</text>
+<rect x="1474" y="272" width="82" height="82" fill="#dbe8e2" stroke="#55575a"/>
+<text x="1478" y="288" font-size="14">18</text>
+<text x="1515" y="315" font-size="27" text-anchor="middle" font-weight="bold" fill="#8f1a14">Ar</text>
+<text x="1515" y="333" font-size="15" text-anchor="middle">39.95</text>
+<text x="1515" y="348" font-size="11" text-anchor="middle">argon</text>
+<rect x="46" y="356" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="50" y="372" font-size="14">19</text>
+<text x="87" y="399" font-size="27" text-anchor="middle" font-weight="bold">K</text>
+<text x="87" y="417" font-size="15" text-anchor="middle">39.098</text>
+<text x="87" y="432" font-size="11" text-anchor="middle">potassium</text>
+<rect x="130" y="356" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="134" y="372" font-size="14">20</text>
+<text x="171" y="399" font-size="27" text-anchor="middle" font-weight="bold">Ca</text>
+<text x="171" y="417" font-size="15" text-anchor="middle">40.078</text>
+<text x="171" y="432" font-size="11" text-anchor="middle">calcium</text>
+<rect x="214" y="356" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="218" y="372" font-size="14">21</text>
+<text x="255" y="399" font-size="27" text-anchor="middle" font-weight="bold">Sc</text>
+<text x="255" y="417" font-size="15" text-anchor="middle">44.956</text>
+<text x="255" y="432" font-size="11" text-anchor="middle">scandium</text>
+<rect x="298" y="356" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="302" y="372" font-size="14">22</text>
+<text x="339" y="399" font-size="27" text-anchor="middle" font-weight="bold">Ti</text>
+<text x="339" y="417" font-size="15" text-anchor="middle">47.867</text>
+<text x="339" y="432" font-size="11" text-anchor="middle">titanium</text>
+<rect x="382" y="356" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="386" y="372" font-size="14">23</text>
+<text x="423" y="399" font-size="27" text-anchor="middle" font-weight="bold">V</text>
+<text x="423" y="417" font-size="15" text-anchor="middle">50.942</text>
+<text x="423" y="432" font-size="11" text-anchor="middle">vanadium</text>
+<rect x="466" y="356" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="470" y="372" font-size="14">24</text>
+<text x="507" y="399" font-size="27" text-anchor="middle" font-weight="bold">Cr</text>
+<text x="507" y="417" font-size="15" text-anchor="middle">51.996</text>
+<text x="507" y="432" font-size="11" text-anchor="middle">chromium</text>
+<rect x="550" y="356" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="554" y="372" font-size="14">25</text>
+<text x="591" y="399" font-size="27" text-anchor="middle" font-weight="bold">Mn</text>
+<text x="591" y="417" font-size="15" text-anchor="middle">54.938</text>
+<text x="591" y="432" font-size="11" text-anchor="middle">manganese</text>
+<rect x="634" y="356" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="638" y="372" font-size="14">26</text>
+<text x="675" y="399" font-size="27" text-anchor="middle" font-weight="bold">Fe</text>
+<text x="675" y="417" font-size="15" text-anchor="middle">55.845</text>
+<text x="675" y="432" font-size="11" text-anchor="middle">iron</text>
+<rect x="718" y="356" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="722" y="372" font-size="14">27</text>
+<text x="759" y="399" font-size="27" text-anchor="middle" font-weight="bold">Co</text>
+<text x="759" y="417" font-size="15" text-anchor="middle">58.933</text>
+<text x="759" y="432" font-size="11" text-anchor="middle">cobalt</text>
+<rect x="802" y="356" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="806" y="372" font-size="14">28</text>
+<text x="843" y="399" font-size="27" text-anchor="middle" font-weight="bold">Ni</text>
+<text x="843" y="417" font-size="15" text-anchor="middle">58.693</text>
+<text x="843" y="432" font-size="11" text-anchor="middle">nickel</text>
+<rect x="886" y="356" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="890" y="372" font-size="14">29</text>
+<text x="927" y="399" font-size="27" text-anchor="middle" font-weight="bold">Cu</text>
+<text x="927" y="417" font-size="15" text-anchor="middle">63.546</text>
+<text x="927" y="432" font-size="11" text-anchor="middle">copper</text>
+<rect x="970" y="356" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="974" y="372" font-size="14">30</text>
+<text x="1011" y="399" font-size="27" text-anchor="middle" font-weight="bold">Zn</text>
+<text x="1011" y="417" font-size="15" text-anchor="middle">65.38</text>
+<text x="1011" y="432" font-size="11" text-anchor="middle">zinc</text>
+<rect x="1054" y="356" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="1058" y="372" font-size="14">31</text>
+<text x="1095" y="399" font-size="27" text-anchor="middle" font-weight="bold">Ga</text>
+<text x="1095" y="417" font-size="15" text-anchor="middle">69.723</text>
+<text x="1095" y="432" font-size="11" text-anchor="middle">gallium</text>
+<rect x="1138" y="356" width="82" height="82" fill="#eadcee" stroke="#55575a"/>
+<text x="1142" y="372" font-size="14">32</text>
+<text x="1179" y="399" font-size="27" text-anchor="middle" font-weight="bold">Ge</text>
+<text x="1179" y="417" font-size="15" text-anchor="middle">72.630</text>
+<text x="1179" y="432" font-size="11" text-anchor="middle">germanium</text>
+<rect x="1222" y="356" width="82" height="82" fill="#eadcee" stroke="#55575a"/>
+<text x="1226" y="372" font-size="14">33</text>
+<text x="1263" y="399" font-size="27" text-anchor="middle" font-weight="bold">As</text>
+<text x="1263" y="417" font-size="15" text-anchor="middle">74.922</text>
+<text x="1263" y="432" font-size="11" text-anchor="middle">arsenic</text>
+<rect x="1306" y="356" width="82" height="82" fill="#dbe8e2" stroke="#55575a"/>
+<text x="1310" y="372" font-size="14">34</text>
+<text x="1347" y="399" font-size="27" text-anchor="middle" font-weight="bold">Se</text>
+<text x="1347" y="417" font-size="15" text-anchor="middle">78.971</text>
+<text x="1347" y="432" font-size="11" text-anchor="middle">selenium</text>
+<rect x="1390" y="356" width="82" height="82" fill="#dbe8e2" stroke="#55575a"/>
+<text x="1394" y="372" font-size="14">35</text>
+<text x="1431" y="399" font-size="27" text-anchor="middle" font-weight="bold" fill="#0a5c99">Br</text>
+<text x="1431" y="417" font-size="15" text-anchor="middle">79.904</text>
+<text x="1431" y="432" font-size="11" text-anchor="middle">bromine</text>
+<rect x="1474" y="356" width="82" height="82" fill="#dbe8e2" stroke="#55575a"/>
+<text x="1478" y="372" font-size="14">36</text>
+<text x="1515" y="399" font-size="27" text-anchor="middle" font-weight="bold" fill="#8f1a14">Kr</text>
+<text x="1515" y="417" font-size="15" text-anchor="middle">83.798</text>
+<text x="1515" y="432" font-size="11" text-anchor="middle">krypton</text>
+<rect x="46" y="440" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="50" y="456" font-size="14">37</text>
+<text x="87" y="483" font-size="27" text-anchor="middle" font-weight="bold">Rb</text>
+<text x="87" y="501" font-size="15" text-anchor="middle">85.468</text>
+<text x="87" y="516" font-size="11" text-anchor="middle">rubidium</text>
+<rect x="130" y="440" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="134" y="456" font-size="14">38</text>
+<text x="171" y="483" font-size="27" text-anchor="middle" font-weight="bold">Sr</text>
+<text x="171" y="501" font-size="15" text-anchor="middle">87.62</text>
+<text x="171" y="516" font-size="11" text-anchor="middle">strontium</text>
+<rect x="214" y="440" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="218" y="456" font-size="14">39</text>
+<text x="255" y="483" font-size="27" text-anchor="middle" font-weight="bold">Y</text>
+<text x="255" y="501" font-size="15" text-anchor="middle">88.906</text>
+<text x="255" y="516" font-size="11" text-anchor="middle">yttrium</text>
+<rect x="298" y="440" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="302" y="456" font-size="14">40</text>
+<text x="339" y="483" font-size="27" text-anchor="middle" font-weight="bold">Zr</text>
+<text x="339" y="501" font-size="15" text-anchor="middle">91.222</text>
+<text x="339" y="516" font-size="11" text-anchor="middle">zirconium</text>
+<rect x="382" y="440" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="386" y="456" font-size="14">41</text>
+<text x="423" y="483" font-size="27" text-anchor="middle" font-weight="bold">Nb</text>
+<text x="423" y="501" font-size="15" text-anchor="middle">92.906</text>
+<text x="423" y="516" font-size="11" text-anchor="middle">niobium</text>
+<rect x="466" y="440" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="470" y="456" font-size="14">42</text>
+<text x="507" y="483" font-size="27" text-anchor="middle" font-weight="bold">Mo</text>
+<text x="507" y="501" font-size="15" text-anchor="middle">95.95</text>
+<text x="507" y="516" font-size="11" text-anchor="middle">molybdenum</text>
+<rect x="550" y="440" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="554" y="456" font-size="14">43</text>
+<text x="591" y="483" font-size="27" text-anchor="middle" font-weight="bold">Tc</text>
+<text x="591" y="501" font-size="15" text-anchor="middle">[97]</text>
+<text x="591" y="516" font-size="11" text-anchor="middle">technetium</text>
+<rect x="634" y="440" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="638" y="456" font-size="14">44</text>
+<text x="675" y="483" font-size="27" text-anchor="middle" font-weight="bold">Ru</text>
+<text x="675" y="501" font-size="15" text-anchor="middle">101.07</text>
+<text x="675" y="516" font-size="11" text-anchor="middle">ruthenium</text>
+<rect x="718" y="440" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="722" y="456" font-size="14">45</text>
+<text x="759" y="483" font-size="27" text-anchor="middle" font-weight="bold">Rh</text>
+<text x="759" y="501" font-size="15" text-anchor="middle">102.91</text>
+<text x="759" y="516" font-size="11" text-anchor="middle">rhodium</text>
+<rect x="802" y="440" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="806" y="456" font-size="14">46</text>
+<text x="843" y="483" font-size="27" text-anchor="middle" font-weight="bold">Pd</text>
+<text x="843" y="501" font-size="15" text-anchor="middle">106.42</text>
+<text x="843" y="516" font-size="11" text-anchor="middle">palladium</text>
+<rect x="886" y="440" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="890" y="456" font-size="14">47</text>
+<text x="927" y="483" font-size="27" text-anchor="middle" font-weight="bold">Ag</text>
+<text x="927" y="501" font-size="15" text-anchor="middle">107.87</text>
+<text x="927" y="516" font-size="11" text-anchor="middle">silver</text>
+<rect x="970" y="440" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="974" y="456" font-size="14">48</text>
+<text x="1011" y="483" font-size="27" text-anchor="middle" font-weight="bold">Cd</text>
+<text x="1011" y="501" font-size="15" text-anchor="middle">112.41</text>
+<text x="1011" y="516" font-size="11" text-anchor="middle">cadmium</text>
+<rect x="1054" y="440" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="1058" y="456" font-size="14">49</text>
+<text x="1095" y="483" font-size="27" text-anchor="middle" font-weight="bold">In</text>
+<text x="1095" y="501" font-size="15" text-anchor="middle">114.82</text>
+<text x="1095" y="516" font-size="11" text-anchor="middle">indium</text>
+<rect x="1138" y="440" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="1142" y="456" font-size="14">50</text>
+<text x="1179" y="483" font-size="27" text-anchor="middle" font-weight="bold">Sn</text>
+<text x="1179" y="501" font-size="15" text-anchor="middle">118.71</text>
+<text x="1179" y="516" font-size="11" text-anchor="middle">tin</text>
+<rect x="1222" y="440" width="82" height="82" fill="#eadcee" stroke="#55575a"/>
+<text x="1226" y="456" font-size="14">51</text>
+<text x="1263" y="483" font-size="27" text-anchor="middle" font-weight="bold">Sb</text>
+<text x="1263" y="501" font-size="15" text-anchor="middle">121.76</text>
+<text x="1263" y="516" font-size="11" text-anchor="middle">antimony</text>
+<rect x="1306" y="440" width="82" height="82" fill="#eadcee" stroke="#55575a"/>
+<text x="1310" y="456" font-size="14">52</text>
+<text x="1347" y="483" font-size="27" text-anchor="middle" font-weight="bold">Te</text>
+<text x="1347" y="501" font-size="15" text-anchor="middle">127.60</text>
+<text x="1347" y="516" font-size="11" text-anchor="middle">tellurium</text>
+<rect x="1390" y="440" width="82" height="82" fill="#dbe8e2" stroke="#55575a"/>
+<text x="1394" y="456" font-size="14">53</text>
+<text x="1431" y="483" font-size="27" text-anchor="middle" font-weight="bold">I</text>
+<text x="1431" y="501" font-size="15" text-anchor="middle">126.90</text>
+<text x="1431" y="516" font-size="11" text-anchor="middle">iodine</text>
+<rect x="1474" y="440" width="82" height="82" fill="#dbe8e2" stroke="#55575a"/>
+<text x="1478" y="456" font-size="14">54</text>
+<text x="1515" y="483" font-size="27" text-anchor="middle" font-weight="bold" fill="#8f1a14">Xe</text>
+<text x="1515" y="501" font-size="15" text-anchor="middle">131.29</text>
+<text x="1515" y="516" font-size="11" text-anchor="middle">xenon</text>
+<rect x="46" y="524" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="50" y="540" font-size="14">55</text>
+<text x="87" y="567" font-size="27" text-anchor="middle" font-weight="bold">Cs</text>
+<text x="87" y="585" font-size="15" text-anchor="middle">132.91</text>
+<text x="87" y="600" font-size="11" text-anchor="middle">cesium</text>
+<rect x="130" y="524" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="134" y="540" font-size="14">56</text>
+<text x="171" y="567" font-size="27" text-anchor="middle" font-weight="bold">Ba</text>
+<text x="171" y="585" font-size="15" text-anchor="middle">137.33</text>
+<text x="171" y="600" font-size="11" text-anchor="middle">barium</text>
+<rect x="298" y="722" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="302" y="738" font-size="14">57</text>
+<text x="339" y="765" font-size="27" text-anchor="middle" font-weight="bold">La</text>
+<text x="339" y="783" font-size="15" text-anchor="middle">138.91</text>
+<text x="339" y="798" font-size="11" text-anchor="middle">lanthanum</text>
+<rect x="382" y="722" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="386" y="738" font-size="14">58</text>
+<text x="423" y="765" font-size="27" text-anchor="middle" font-weight="bold">Ce</text>
+<text x="423" y="783" font-size="15" text-anchor="middle">140.12</text>
+<text x="423" y="798" font-size="11" text-anchor="middle">cerium</text>
+<rect x="466" y="722" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="470" y="738" font-size="14">59</text>
+<text x="507" y="765" font-size="27" text-anchor="middle" font-weight="bold">Pr</text>
+<text x="507" y="783" font-size="15" text-anchor="middle">140.91</text>
+<text x="507" y="798" font-size="11" text-anchor="middle">praseodymium</text>
+<rect x="550" y="722" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="554" y="738" font-size="14">60</text>
+<text x="591" y="765" font-size="27" text-anchor="middle" font-weight="bold">Nd</text>
+<text x="591" y="783" font-size="15" text-anchor="middle">144.24</text>
+<text x="591" y="798" font-size="11" text-anchor="middle">neodymium</text>
+<rect x="634" y="722" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="638" y="738" font-size="14">61</text>
+<text x="675" y="765" font-size="27" text-anchor="middle" font-weight="bold">Pm</text>
+<text x="675" y="783" font-size="15" text-anchor="middle">[145]</text>
+<text x="675" y="798" font-size="11" text-anchor="middle">promethium</text>
+<rect x="718" y="722" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="722" y="738" font-size="14">62</text>
+<text x="759" y="765" font-size="27" text-anchor="middle" font-weight="bold">Sm</text>
+<text x="759" y="783" font-size="15" text-anchor="middle">150.36</text>
+<text x="759" y="798" font-size="11" text-anchor="middle">samarium</text>
+<rect x="802" y="722" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="806" y="738" font-size="14">63</text>
+<text x="843" y="765" font-size="27" text-anchor="middle" font-weight="bold">Eu</text>
+<text x="843" y="783" font-size="15" text-anchor="middle">151.96</text>
+<text x="843" y="798" font-size="11" text-anchor="middle">europium</text>
+<rect x="886" y="722" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="890" y="738" font-size="14">64</text>
+<text x="927" y="765" font-size="27" text-anchor="middle" font-weight="bold">Gd</text>
+<text x="927" y="783" font-size="15" text-anchor="middle">157.25</text>
+<text x="927" y="798" font-size="11" text-anchor="middle">gadolinium</text>
+<rect x="970" y="722" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="974" y="738" font-size="14">65</text>
+<text x="1011" y="765" font-size="27" text-anchor="middle" font-weight="bold">Tb</text>
+<text x="1011" y="783" font-size="15" text-anchor="middle">158.93</text>
+<text x="1011" y="798" font-size="11" text-anchor="middle">terbium</text>
+<rect x="1054" y="722" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="1058" y="738" font-size="14">66</text>
+<text x="1095" y="765" font-size="27" text-anchor="middle" font-weight="bold">Dy</text>
+<text x="1095" y="783" font-size="15" text-anchor="middle">162.50</text>
+<text x="1095" y="798" font-size="11" text-anchor="middle">dysprosium</text>
+<rect x="1138" y="722" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="1142" y="738" font-size="14">67</text>
+<text x="1179" y="765" font-size="27" text-anchor="middle" font-weight="bold">Ho</text>
+<text x="1179" y="783" font-size="15" text-anchor="middle">164.93</text>
+<text x="1179" y="798" font-size="11" text-anchor="middle">holmium</text>
+<rect x="1222" y="722" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="1226" y="738" font-size="14">68</text>
+<text x="1263" y="765" font-size="27" text-anchor="middle" font-weight="bold">Er</text>
+<text x="1263" y="783" font-size="15" text-anchor="middle">167.26</text>
+<text x="1263" y="798" font-size="11" text-anchor="middle">erbium</text>
+<rect x="1306" y="722" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="1310" y="738" font-size="14">69</text>
+<text x="1347" y="765" font-size="27" text-anchor="middle" font-weight="bold">Tm</text>
+<text x="1347" y="783" font-size="15" text-anchor="middle">168.93</text>
+<text x="1347" y="798" font-size="11" text-anchor="middle">thulium</text>
+<rect x="1390" y="722" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="1394" y="738" font-size="14">70</text>
+<text x="1431" y="765" font-size="27" text-anchor="middle" font-weight="bold">Yb</text>
+<text x="1431" y="783" font-size="15" text-anchor="middle">173.05</text>
+<text x="1431" y="798" font-size="11" text-anchor="middle">ytterbium</text>
+<rect x="1474" y="722" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="1478" y="738" font-size="14">71</text>
+<text x="1515" y="765" font-size="27" text-anchor="middle" font-weight="bold">Lu</text>
+<text x="1515" y="783" font-size="15" text-anchor="middle">174.97</text>
+<text x="1515" y="798" font-size="11" text-anchor="middle">lutetium</text>
+<rect x="298" y="524" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="302" y="540" font-size="14">72</text>
+<text x="339" y="567" font-size="27" text-anchor="middle" font-weight="bold">Hf</text>
+<text x="339" y="585" font-size="15" text-anchor="middle">178.49</text>
+<text x="339" y="600" font-size="11" text-anchor="middle">hafnium</text>
+<rect x="382" y="524" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="386" y="540" font-size="14">73</text>
+<text x="423" y="567" font-size="27" text-anchor="middle" font-weight="bold">Ta</text>
+<text x="423" y="585" font-size="15" text-anchor="middle">180.95</text>
+<text x="423" y="600" font-size="11" text-anchor="middle">tantalum</text>
+<rect x="466" y="524" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="470" y="540" font-size="14">74</text>
+<text x="507" y="567" font-size="27" text-anchor="middle" font-weight="bold">W</text>
+<text x="507" y="585" font-size="15" text-anchor="middle">183.84</text>
+<text x="507" y="600" font-size="11" text-anchor="middle">tungsten</text>
+<rect x="550" y="524" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="554" y="540" font-size="14">75</text>
+<text x="591" y="567" font-size="27" text-anchor="middle" font-weight="bold">Re</text>
+<text x="591" y="585" font-size="15" text-anchor="middle">186.21</text>
+<text x="591" y="600" font-size="11" text-anchor="middle">rhenium</text>
+<rect x="634" y="524" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="638" y="540" font-size="14">76</text>
+<text x="675" y="567" font-size="27" text-anchor="middle" font-weight="bold">Os</text>
+<text x="675" y="585" font-size="15" text-anchor="middle">190.23</text>
+<text x="675" y="600" font-size="11" text-anchor="middle">osmium</text>
+<rect x="718" y="524" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="722" y="540" font-size="14">77</text>
+<text x="759" y="567" font-size="27" text-anchor="middle" font-weight="bold">Ir</text>
+<text x="759" y="585" font-size="15" text-anchor="middle">192.22</text>
+<text x="759" y="600" font-size="11" text-anchor="middle">iridium</text>
+<rect x="802" y="524" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="806" y="540" font-size="14">78</text>
+<text x="843" y="567" font-size="27" text-anchor="middle" font-weight="bold">Pt</text>
+<text x="843" y="585" font-size="15" text-anchor="middle">195.08</text>
+<text x="843" y="600" font-size="11" text-anchor="middle">platinum</text>
+<rect x="886" y="524" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="890" y="540" font-size="14">79</text>
+<text x="927" y="567" font-size="27" text-anchor="middle" font-weight="bold">Au</text>
+<text x="927" y="585" font-size="15" text-anchor="middle">196.97</text>
+<text x="927" y="600" font-size="11" text-anchor="middle">gold</text>
+<rect x="970" y="524" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="974" y="540" font-size="14">80</text>
+<text x="1011" y="567" font-size="27" text-anchor="middle" font-weight="bold" fill="#0a5c99">Hg</text>
+<text x="1011" y="585" font-size="15" text-anchor="middle">200.59</text>
+<text x="1011" y="600" font-size="11" text-anchor="middle">mercury</text>
+<rect x="1054" y="524" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="1058" y="540" font-size="14">81</text>
+<text x="1095" y="567" font-size="27" text-anchor="middle" font-weight="bold">Tl</text>
+<text x="1095" y="585" font-size="15" text-anchor="middle">204.38</text>
+<text x="1095" y="600" font-size="11" text-anchor="middle">thallium</text>
+<rect x="1138" y="524" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="1142" y="540" font-size="14">82</text>
+<text x="1179" y="567" font-size="27" text-anchor="middle" font-weight="bold">Pb</text>
+<text x="1179" y="585" font-size="15" text-anchor="middle">207.2</text>
+<text x="1179" y="600" font-size="11" text-anchor="middle">lead</text>
+<rect x="1222" y="524" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="1226" y="540" font-size="14">83</text>
+<text x="1263" y="567" font-size="27" text-anchor="middle" font-weight="bold">Bi</text>
+<text x="1263" y="585" font-size="15" text-anchor="middle">208.98</text>
+<text x="1263" y="600" font-size="11" text-anchor="middle">bismuth</text>
+<rect x="1306" y="524" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="1310" y="540" font-size="14">84</text>
+<text x="1347" y="567" font-size="27" text-anchor="middle" font-weight="bold">Po</text>
+<text x="1347" y="585" font-size="15" text-anchor="middle">[209]</text>
+<text x="1347" y="600" font-size="11" text-anchor="middle">polonium</text>
+<rect x="1390" y="524" width="82" height="82" fill="#eadcee" stroke="#55575a"/>
+<text x="1394" y="540" font-size="14">85</text>
+<text x="1431" y="567" font-size="27" text-anchor="middle" font-weight="bold">At</text>
+<text x="1431" y="585" font-size="15" text-anchor="middle">[210]</text>
+<text x="1431" y="600" font-size="11" text-anchor="middle">astatine</text>
+<rect x="1474" y="524" width="82" height="82" fill="#dbe8e2" stroke="#55575a"/>
+<text x="1478" y="540" font-size="14">86</text>
+<text x="1515" y="567" font-size="27" text-anchor="middle" font-weight="bold" fill="#8f1a14">Rn</text>
+<text x="1515" y="585" font-size="15" text-anchor="middle">[222]</text>
+<text x="1515" y="600" font-size="11" text-anchor="middle">radon</text>
+<rect x="46" y="608" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="50" y="624" font-size="14">87</text>
+<text x="87" y="651" font-size="27" text-anchor="middle" font-weight="bold">Fr</text>
+<text x="87" y="669" font-size="15" text-anchor="middle">[223]</text>
+<text x="87" y="684" font-size="11" text-anchor="middle">francium</text>
+<rect x="130" y="608" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="134" y="624" font-size="14">88</text>
+<text x="171" y="651" font-size="27" text-anchor="middle" font-weight="bold">Ra</text>
+<text x="171" y="669" font-size="15" text-anchor="middle">[226]</text>
+<text x="171" y="684" font-size="11" text-anchor="middle">radium</text>
+<rect x="298" y="806" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="302" y="822" font-size="14">89</text>
+<text x="339" y="849" font-size="27" text-anchor="middle" font-weight="bold">Ac</text>
+<text x="339" y="867" font-size="15" text-anchor="middle">[227]</text>
+<text x="339" y="882" font-size="11" text-anchor="middle">actinium</text>
+<rect x="382" y="806" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="386" y="822" font-size="14">90</text>
+<text x="423" y="849" font-size="27" text-anchor="middle" font-weight="bold">Th</text>
+<text x="423" y="867" font-size="15" text-anchor="middle">232.04</text>
+<text x="423" y="882" font-size="11" text-anchor="middle">thorium</text>
+<rect x="466" y="806" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="470" y="822" font-size="14">91</text>
+<text x="507" y="849" font-size="27" text-anchor="middle" font-weight="bold">Pa</text>
+<text x="507" y="867" font-size="15" text-anchor="middle">231.04</text>
+<text x="507" y="882" font-size="11" text-anchor="middle">protactinium</text>
+<rect x="550" y="806" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="554" y="822" font-size="14">92</text>
+<text x="591" y="849" font-size="27" text-anchor="middle" font-weight="bold">U</text>
+<text x="591" y="867" font-size="15" text-anchor="middle">238.03</text>
+<text x="591" y="882" font-size="11" text-anchor="middle">uranium</text>
+<rect x="634" y="806" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="638" y="822" font-size="14">93</text>
+<text x="675" y="849" font-size="27" text-anchor="middle" font-weight="bold">Np</text>
+<text x="675" y="867" font-size="15" text-anchor="middle">[237]</text>
+<text x="675" y="882" font-size="11" text-anchor="middle">neptunium</text>
+<rect x="718" y="806" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="722" y="822" font-size="14">94</text>
+<text x="759" y="849" font-size="27" text-anchor="middle" font-weight="bold">Pu</text>
+<text x="759" y="867" font-size="15" text-anchor="middle">[244]</text>
+<text x="759" y="882" font-size="11" text-anchor="middle">plutonium</text>
+<rect x="802" y="806" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="806" y="822" font-size="14">95</text>
+<text x="843" y="849" font-size="27" text-anchor="middle" font-weight="bold">Am</text>
+<text x="843" y="867" font-size="15" text-anchor="middle">[243]</text>
+<text x="843" y="882" font-size="11" text-anchor="middle">americium</text>
+<rect x="886" y="806" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="890" y="822" font-size="14">96</text>
+<text x="927" y="849" font-size="27" text-anchor="middle" font-weight="bold">Cm</text>
+<text x="927" y="867" font-size="15" text-anchor="middle">[247]</text>
+<text x="927" y="882" font-size="11" text-anchor="middle">curium</text>
+<rect x="970" y="806" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="974" y="822" font-size="14">97</text>
+<text x="1011" y="849" font-size="27" text-anchor="middle" font-weight="bold">Bk</text>
+<text x="1011" y="867" font-size="15" text-anchor="middle">[247]</text>
+<text x="1011" y="882" font-size="11" text-anchor="middle">berkelium</text>
+<rect x="1054" y="806" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="1058" y="822" font-size="14">98</text>
+<text x="1095" y="849" font-size="27" text-anchor="middle" font-weight="bold">Cf</text>
+<text x="1095" y="867" font-size="15" text-anchor="middle">[251]</text>
+<text x="1095" y="882" font-size="11" text-anchor="middle">californium</text>
+<rect x="1138" y="806" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="1142" y="822" font-size="14">99</text>
+<text x="1179" y="849" font-size="27" text-anchor="middle" font-weight="bold">Es</text>
+<text x="1179" y="867" font-size="15" text-anchor="middle">[252]</text>
+<text x="1179" y="882" font-size="11" text-anchor="middle">einsteinium</text>
+<rect x="1222" y="806" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="1226" y="822" font-size="14">100</text>
+<text x="1263" y="849" font-size="27" text-anchor="middle" font-weight="bold">Fm</text>
+<text x="1263" y="867" font-size="15" text-anchor="middle">[257]</text>
+<text x="1263" y="882" font-size="11" text-anchor="middle">fermium</text>
+<rect x="1306" y="806" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="1310" y="822" font-size="14">101</text>
+<text x="1347" y="849" font-size="27" text-anchor="middle" font-weight="bold">Md</text>
+<text x="1347" y="867" font-size="15" text-anchor="middle">[258]</text>
+<text x="1347" y="882" font-size="11" text-anchor="middle">mendelevium</text>
+<rect x="1390" y="806" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="1394" y="822" font-size="14">102</text>
+<text x="1431" y="849" font-size="27" text-anchor="middle" font-weight="bold">No</text>
+<text x="1431" y="867" font-size="15" text-anchor="middle">[259]</text>
+<text x="1431" y="882" font-size="11" text-anchor="middle">nobelium</text>
+<rect x="1474" y="806" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="1478" y="822" font-size="14">103</text>
+<text x="1515" y="849" font-size="27" text-anchor="middle" font-weight="bold">Lr</text>
+<text x="1515" y="867" font-size="15" text-anchor="middle">[262]</text>
+<text x="1515" y="882" font-size="11" text-anchor="middle">lawrencium</text>
+<rect x="298" y="608" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="302" y="624" font-size="14">104</text>
+<text x="339" y="651" font-size="27" text-anchor="middle" font-weight="bold">Rf</text>
+<text x="339" y="669" font-size="15" text-anchor="middle">[267]</text>
+<text x="339" y="684" font-size="11" text-anchor="middle">rutherfordium</text>
+<rect x="382" y="608" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="386" y="624" font-size="14">105</text>
+<text x="423" y="651" font-size="27" text-anchor="middle" font-weight="bold">Db</text>
+<text x="423" y="669" font-size="15" text-anchor="middle">[270]</text>
+<text x="423" y="684" font-size="11" text-anchor="middle">dubnium</text>
+<rect x="466" y="608" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="470" y="624" font-size="14">106</text>
+<text x="507" y="651" font-size="27" text-anchor="middle" font-weight="bold">Sg</text>
+<text x="507" y="669" font-size="15" text-anchor="middle">[271]</text>
+<text x="507" y="684" font-size="11" text-anchor="middle">seaborgium</text>
+<rect x="550" y="608" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="554" y="624" font-size="14">107</text>
+<text x="591" y="651" font-size="27" text-anchor="middle" font-weight="bold">Bh</text>
+<text x="591" y="669" font-size="15" text-anchor="middle">[270]</text>
+<text x="591" y="684" font-size="11" text-anchor="middle">bohrium</text>
+<rect x="634" y="608" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="638" y="624" font-size="14">108</text>
+<text x="675" y="651" font-size="27" text-anchor="middle" font-weight="bold">Hs</text>
+<text x="675" y="669" font-size="15" text-anchor="middle">[277]</text>
+<text x="675" y="684" font-size="11" text-anchor="middle">hassium</text>
+<rect x="718" y="608" width="82" height="82" fill="#ffffff" stroke="#55575a"/>
+<text x="722" y="624" font-size="14">109</text>
+<text x="759" y="651" font-size="27" text-anchor="middle" font-weight="bold">Mt</text>
+<text x="759" y="669" font-size="15" text-anchor="middle">[276]</text>
+<text x="759" y="684" font-size="11" text-anchor="middle">meitnerium</text>
+<rect x="802" y="608" width="82" height="82" fill="#ffffff" stroke="#55575a"/>
+<text x="806" y="624" font-size="14">110</text>
+<text x="843" y="651" font-size="27" text-anchor="middle" font-weight="bold">Ds</text>
+<text x="843" y="669" font-size="15" text-anchor="middle">[281]</text>
+<text x="843" y="684" font-size="11" text-anchor="middle">darmstadtium</text>
+<rect x="886" y="608" width="82" height="82" fill="#ffffff" stroke="#55575a"/>
+<text x="890" y="624" font-size="14">111</text>
+<text x="927" y="651" font-size="27" text-anchor="middle" font-weight="bold">Rg</text>
+<text x="927" y="669" font-size="15" text-anchor="middle">[282]</text>
+<text x="927" y="684" font-size="11" text-anchor="middle">roentgenium</text>
+<rect x="970" y="608" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="974" y="624" font-size="14">112</text>
+<text x="1011" y="651" font-size="27" text-anchor="middle" font-weight="bold">Cn</text>
+<text x="1011" y="669" font-size="15" text-anchor="middle">[285]</text>
+<text x="1011" y="684" font-size="11" text-anchor="middle">copernicium</text>
+<rect x="1054" y="608" width="82" height="82" fill="#ffffff" stroke="#55575a"/>
+<text x="1058" y="624" font-size="14">113</text>
+<text x="1095" y="651" font-size="27" text-anchor="middle" font-weight="bold">Nh</text>
+<text x="1095" y="669" font-size="15" text-anchor="middle">[285]</text>
+<text x="1095" y="684" font-size="11" text-anchor="middle">nihonium</text>
+<rect x="1138" y="608" width="82" height="82" fill="#ffffff" stroke="#55575a"/>
+<text x="1142" y="624" font-size="14">114</text>
+<text x="1179" y="651" font-size="27" text-anchor="middle" font-weight="bold">Fl</text>
+<text x="1179" y="669" font-size="15" text-anchor="middle">[289]</text>
+<text x="1179" y="684" font-size="11" text-anchor="middle">flerovium</text>
+<rect x="1222" y="608" width="82" height="82" fill="#ffffff" stroke="#55575a"/>
+<text x="1226" y="624" font-size="14">115</text>
+<text x="1263" y="651" font-size="27" text-anchor="middle" font-weight="bold">Mc</text>
+<text x="1263" y="669" font-size="15" text-anchor="middle">[288]</text>
+<text x="1263" y="684" font-size="11" text-anchor="middle">moscovium</text>
+<rect x="1306" y="608" width="82" height="82" fill="#ffffff" stroke="#55575a"/>
+<text x="1310" y="624" font-size="14">116</text>
+<text x="1347" y="651" font-size="27" text-anchor="middle" font-weight="bold">Lv</text>
+<text x="1347" y="669" font-size="15" text-anchor="middle">[293]</text>
+<text x="1347" y="684" font-size="11" text-anchor="middle">livermorium</text>
+<rect x="1390" y="608" width="82" height="82" fill="#ffffff" stroke="#55575a"/>
+<text x="1394" y="624" font-size="14">117</text>
+<text x="1431" y="651" font-size="27" text-anchor="middle" font-weight="bold">Ts</text>
+<text x="1431" y="669" font-size="15" text-anchor="middle">[294]</text>
+<text x="1431" y="684" font-size="11" text-anchor="middle">tennessine</text>
+<rect x="1474" y="608" width="82" height="82" fill="#ffffff" stroke="#55575a"/>
+<text x="1478" y="624" font-size="14">118</text>
+<text x="1515" y="651" font-size="27" text-anchor="middle" font-weight="bold">Og</text>
+<text x="1515" y="669" font-size="15" text-anchor="middle">[294]</text>
+<text x="1515" y="684" font-size="11" text-anchor="middle">oganesson</text>
+<rect x="214" y="524" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="218" y="540" font-size="14">57–71</text>
+<text x="255" y="570" font-size="22" text-anchor="middle" font-weight="bold">La–Lu</text>
+<text x="255" y="596" font-size="22" text-anchor="middle" font-weight="bold">*</text>
+<text x="286" y="777" font-size="22" text-anchor="end" font-weight="bold">*</text>
+<rect x="214" y="608" width="82" height="82" fill="#f6efd4" stroke="#55575a"/>
+<text x="218" y="624" font-size="14">89–103</text>
+<text x="255" y="654" font-size="22" text-anchor="middle" font-weight="bold">Ac–Lr</text>
+<text x="255" y="680" font-size="22" text-anchor="middle" font-weight="bold">**</text>
+<text x="286" y="861" font-size="22" text-anchor="end" font-weight="bold">**</text>
+<rect x="213" y="523" width="84" height="168" fill="none" stroke="#c8102e" stroke-width="3"/>
+<line x1="255" y1="692" x2="255" y2="805" stroke="#c8102e" stroke-width="3" stroke-linecap="square"/>
+<line x1="255" y1="805" x2="276" y2="805" stroke="#c8102e" stroke-width="3"/><polygon points="292,805 276,798 276,812" fill="#c8102e"/>
+<rect x="250" y="936" width="190" height="190" fill="#dbe8e2" stroke="#55575a" stroke-width="2"/>
+<text x="262" y="980" font-size="40">1</text>
+<text x="345" y="1036" font-size="64" text-anchor="middle" font-weight="bold" fill="#8f1a14">H</text>
+<text x="345" y="1076" font-size="34" text-anchor="middle">1.0080</text>
+<text x="345" y="1110" font-size="28" text-anchor="middle">hydrogen</text>
+<text x="18" y="964" font-size="26">Atomic</text>
+<text x="18" y="994" font-size="26">number</text>
+<line x1="116" y1="966" x2="242" y2="966" stroke="#111111" stroke-width="3"/><polygon points="258,966 242,959 242,973" fill="#111111"/>
+<text x="18" y="1110" font-size="26">Name</text>
+<line x1="100" y1="1101" x2="264" y2="1101" stroke="#111111" stroke-width="3"/><polygon points="280,1101 264,1094 264,1108" fill="#111111"/>
+<text x="550" y="1022" font-size="26">Symbol</text>
+<line x1="540" y1="1014" x2="395" y2="1014" stroke="#111111" stroke-width="3"/><polygon points="379,1014 395,1007 395,1021" fill="#111111"/>
+<text x="550" y="1074" font-size="26">Atomic mass</text>
+<line x1="540" y1="1065" x2="423" y2="1065" stroke="#111111" stroke-width="3"/><polygon points="407,1065 423,1058 423,1072" fill="#111111"/>
+<rect x="1054" y="920" width="502" height="244" fill="#ffffff" stroke="#34549f" stroke-width="2"/>
+<rect x="1054" y="920" width="502" height="40" fill="#34549f"/>
+<text x="1305" y="949" font-size="24" text-anchor="middle" font-weight="bold" fill="#ffffff">Color Code</text>
+<rect x="1072" y="978" width="32" height="32" fill="#f6efd4" stroke="#55575a"/>
+<text x="1116" y="1003" font-size="24">Metal</text>
+<rect x="1072" y="1022" width="32" height="32" fill="#eadcee" stroke="#55575a"/>
+<text x="1116" y="1047" font-size="24">Metalloid</text>
+<rect x="1072" y="1066" width="32" height="32" fill="#dbe8e2" stroke="#55575a"/>
+<text x="1116" y="1091" font-size="24">Nonmetal</text>
+<rect x="1072" y="1110" width="32" height="32" fill="#ffffff" stroke="#55575a"/>
+<text x="1116" y="1135" font-size="24">Not classified</text>
+<text x="1316" y="994" font-size="18">Symbol color</text>
+<text x="1316" y="1032" font-size="24" font-weight="bold">Solid</text>
+<text x="1316" y="1076" font-size="24" font-weight="bold" fill="#0a5c99">Liquid</text>
+<text x="1316" y="1120" font-size="24" font-weight="bold" fill="#8f1a14">Gas</text>
+<text x="46" y="1198" font-size="16">Atomic masses: IUPAC, Abridged Standard Atomic Weights 2024. A mass in brackets is a mass number: the element has no standard atomic weight.</text>
+</svg>

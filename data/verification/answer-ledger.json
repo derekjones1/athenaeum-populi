@@ -424,14 +424,6 @@
   "00cabcd918019b5b": {
    "verdict": "ok"
   },
-  "00d7d1509dc9f462": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp61309952 part (b) (restating fs-idp16477696), mass, key 0.08644",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "00db153eb3795a1d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -1005,14 +997,6 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "01ff0cbbcb7cafed": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm27167936; stem gives 0.499935 -> 0.4999; source key 0.5000 kept by parent ruling (rounding noise: the source built it from 3.63(b) datum), tolerance:0.05% grades both correct",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "020ab1da44d710a8": {
    "verdict": "ok",
    "note": "source exercise fs-id1167661369825 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -1175,14 +1159,6 @@
   "0255e5293445f2e7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "0262ef8d5dbbc8e2": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp20009152 part (d); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -3975,14 +3951,6 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 875): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
-  "07d4ba8e806a585c": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp56656128 part (a); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "07d78d81cd037d9b": {
    "verdict": "ok",
    "note": "source exercise fs-idm130496608 part (b), %Na: 45.98/158.10 = 29.08 (source 29.08)",
@@ -4861,14 +4829,6 @@
   "09acb3dd1fcd473a": {
    "verdict": "ok",
    "note": "KC 5 24.5 § Amoebiasis (Amebiasis), m58931 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "09af1d8aaa1f3962": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp14091664 part (c); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -6020,6 +5980,14 @@
     "result": "agrees"
    }
   },
+  "0be4d15afba7af86": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp14091664 part (c); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0bed7d6c7f5a920b": {
    "verdict": "ok",
    "note": "80.92×9/5=145.656→145.7 (4 sf); +32 exact=177.7 (CHANGED key, was 177.66 sig-figs:5)",
@@ -6591,14 +6559,6 @@
     "result": "agrees"
    }
   },
-  "0d0c791bd0763e6a": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp14091664 part (d); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "0d0d8ef32ee47c03": {
    "verdict": "ok",
    "note": "author-built from § Use of Antimicrobials in Ancient Societies: \"(now found in present-day Sudan) dating from between 350 and 550 AD have shown residue of the antimicrobial agent tetracycline in high enou…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -6672,6 +6632,14 @@
   "0d27be2eeea2cb1f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "0d2b627bc0466612": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp51968592 part (a); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -8785,6 +8753,14 @@
   "119d4fce0373aeb2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "11a43f59861bf51e": {
+   "verdict": "ok",
+   "note": "author-built from § Formula Mass for Covalent Substances: \"Following the approach described above, the average molecular mass for this compound is therefore:\" — key re-derived November 12, 2026 from this book’s periodic table (data/chemistry/elements.json, IUPAC abridged standard atomic weights): Picture opened (CNX_Chem_03_01_Ex01_06a_img-325.webp): H2C=CH-CH2CH3, counted C4H8; the alt agrees with the drawing. C4 48.044 + H8 8.0640 = 56.1080 -> 56.108.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -12301,6 +12277,14 @@
    "verdict": "ok",
    "note": "Re-derived independently: (3+4i)(3-4i) = 9 - 12i + 12i - 16i^2 = 9 + 16 = 25. Conjugate pair, so the product is a^2+b^2 = 3^2+4^2 = 25. Record replaces the pre-edit hash: the answerForm was changed from \"decimal\" to \"distributed\" (same grading outcome on this item, but \"decimal\" told the learner to write a complex product as a decimal, while \"distributed\" names the step the exercise asks for). Answer text unchanged. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "18550cf3b0035e22": {
+   "verdict": "ok",
+   "note": "author-built from § The Mole: \"Check Your Learning A prospector panning for gold in a river collects 15.00 g of pure gold.\" — key re-derived November 12, 2026 from this book’s periodic table (data/chemistry/elements.json, IUPAC abridged standard atomic weights): 15.00 g / 196.97 g/mol x 6.022e23 = 4.58598e22 -> 4.586e22; with the exact constant of line 109 (6.02214076e23) 4.58608e22, same to 4 figures.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "18555b4ddb8aa077": {
    "verdict": "ok"
   },
@@ -12466,6 +12450,14 @@
   "18a4f1edb4f982ac": {
    "verdict": "ok",
    "note": "author-built from § Oxygenic and Anoxygenic Photosynthesis: \"Only PSI is used during cyclic photophosphorylation; the high-energy electron of the PSI reaction center is passed to an ETS carrier and th…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "18a5160b2357a304": {
+   "verdict": "ok",
+   "note": "author-built from § Formula Mass for Covalent Substances: \"Check Your Learning Acetaminophen, C 8 H 9 NO 2 , is a covalent compound and the active ingredient in several popular nonprescription pain…\" — key re-derived November 12, 2026 from this book’s periodic table (data/chemistry/elements.json, IUPAC abridged standard atomic weights): C8 96.088 + H9 9.0720 + N 14.007 + O2 31.998 = 151.1650 -> 151.165 (three decimals, least precise subtotal); 6 figures agrees with the form. Page check: every key, hint, answerDisplay and model answer on the masked page is masked (none left readable); the worked tables and examples on lines 29-290 were re-run against Appendix A and all hold (119.37, 180.159, 206.285, 58.44, 342.13, 0.12, 0.037, 4.74e22, 75.067/0.3777, 176.124/0.0250, 183.18/1.31e20/9.20e20).",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -14818,15 +14810,6 @@
     "result": "agrees"
    }
   },
-  "1d0921333a52b0d0": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm130496608 part (a), %N: source key 82.24 (decision 1, sig-figs:4 tolerance:0.05%); table 82.27 / unrounded 82.25 inside band; hint re-pointed to the percent composition equation (check-3.2 defect 1)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "adjudicated",
-    "note": "The key 82.24 is the source's, computed from atomic masses with more digits than this book's periodic table prints (erratum 2996). The solver's 82.25 (formula mass carried unrounded) and the body's 82.27 (formula mass rounded to 17.03) both grade correct under sig-figs:4 tolerance:0.05%, as the parent verified through the grader; the body's working of ammonia is the source's and stands, and a Source note after the exercise says the answer shown is the source's."
-   }
-  },
   "1d0c66b1ae0898d8": {
    "verdict": "ok",
    "note": "RQ6 fs-id2790910 key C parallel; body fs-id2292670",
@@ -14926,14 +14909,6 @@
   "1d462ae362226067": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "1d4dc5f37b522930": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp14091664 part (c); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -15389,14 +15364,6 @@
   "1e60d1cbe8f6b541": {
    "verdict": "ok",
    "note": "KC 2 10.3 § § Functions of RNA in Protein Synthesis, m58837",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "1e653c59ea76d41c": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp50969136 part (a); key = source solution, re-derived against the CNXML and recomputed from the periodic table",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -16430,6 +16397,14 @@
     "result": "agrees"
    }
   },
+  "20501c594acb6f91": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp42864672 part (Si mass); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm sig-figs:4 tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "205638514409ae3c": {
    "verdict": "ok",
    "note": "source exercise fs-id1172098775433 (unkeyed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -16461,14 +16436,6 @@
   "2064e6f200df0d38": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "20656eaa2a84af6e": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm73270640; source answer printed as key; recomputed from the periodic table",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -16753,14 +16720,6 @@
   "20e7236e26940eac": {
    "verdict": "ok",
    "note": "Practice #19: combine x^2*x^(2/3) and y^3*y^(5/3) exponents (cube root as 1/3 power); verified by float substitution x=2,y=3 (node) equals (8/3)log(x)+(14/3)log(y). Matches CNXML solution. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
-  },
-  "20f0f930f4944275": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp14091664 part (e); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "20f52fa96c327e8e": {
    "verdict": "ok",
@@ -20799,14 +20758,6 @@
   "29637d5a7d223337": {
    "verdict": "ok"
   },
-  "2967e97bde001942": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp51968592 part (b); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "2968f9de15082c2e": {
    "verdict": "ok",
    "note": "source exercise fs-idp147780304 part (f) (restating fs-idp166618800), moles, key 0.4580",
@@ -22917,14 +22868,6 @@
     "result": "agrees"
    }
   },
-  "2de9c1c96a3a3faf": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp51968592 part (d); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "2dee420e524c6b0f": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -23571,14 +23514,6 @@
     "result": "agrees"
    }
   },
-  "2f0dcc3d3c1e64f2": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp51968592 part (c); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "2f0e30a88be2568a": {
    "verdict": "ok",
    "note": "String has 12 symbols, #x3 @x2 $x3 %x4; 12!/(3!2!3!4!)=277200 (node BigInt), matches CNXML key ratio (source leaves the quotient unevaluated). | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -23729,6 +23664,14 @@
   "2f488760d06a2399": {
    "verdict": "ok",
    "note": "KC 3 17.5 § glossary proteome (fs-id1988758), m66515 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "2f4d7214f06dd35b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp51968592 part (d); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -24006,14 +23949,6 @@
   "2fd0fc612f7f863e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "2fd2f8bc3d40f51b": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp51968592 part (a); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -24549,6 +24484,14 @@
    "note": "source exercise fs-idp154317872 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "311bbcd1a9c906ee": {
+   "verdict": "ok",
+   "note": "author-built from § Formula Mass for Covalent Substances: \"What is the molecular mass (amu) for this compound?\" — key re-derived November 12, 2026 from this book’s periodic table (data/chemistry/elements.json, IUPAC abridged standard atomic weights): One C atom: 1 x 12.011 = 12.011 amu (5 figures). Items at lines 347 and 355 have the same answer.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -28450,6 +28393,14 @@
     "result": "agrees"
    }
   },
+  "39501e0b2d671dc3": {
+   "verdict": "ok",
+   "note": "author-built from § Formula Mass for Covalent Substances: \"What is the molecular mass (amu) for this compound?\" — key re-derived November 12, 2026 from this book’s periodic table (data/chemistry/elements.json, IUPAC abridged standard atomic weights): One C atom: 12.011 amu. The chloroform table on lines 29-34 prints this very subtotal (C, quantity 1, subtotal 12.011) for CHCl3, so the page shows this item's answer in its own worked table.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "39528be687b9e052": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | prior derivation: Practice item, source exercise fs-id1165134159676. Computed 3x3 inverse via cofactor/adjugate in exact rational arithmetic: det=209, A^-1 row1=[47/209,-57/209,69/209]. Matches source's printed (1/209)[[47,-57,69],...] exactly (unreduced fractions kept, same value).",
@@ -30319,14 +30270,6 @@
     "result": "agrees"
    }
   },
-  "3d22d9207f1d7628": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp14091664 part (b); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "3d268bacfa325fb1": {
    "verdict": "ok",
    "note": "Glossary recall built from definition fs-idp84880944 (lacuna: 'space in cartilage and bone that contains living cells'). Prompt/hint do not contain the answer.; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -31076,6 +31019,14 @@
   "3eb0344c0ca971a9": {
    "verdict": "ok",
    "note": "Try It 1: a^2=16 (foci/vertices on y-axis), c^2=15, b^2=a^2-c^2=1; x^2/1+y^2/16=1 matches CNXML solution fs-id1376848; independently re-derived, not copied. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "3eb35d8fb01c0970": {
+   "verdict": "ok",
+   "note": "author-built from § Formula Mass for Covalent Substances: \"Following the approach described above, the average molecular mass for this compound is therefore:\" — key re-derived November 12, 2026 from this book’s periodic table (data/chemistry/elements.json, IUPAC abridged standard atomic weights): Picture opened (06c): Si-Si, each Si with Cl above, H below and one outer Cl: Si2H2Cl4; the alt agrees. Si2 56.170 + H2 2.0160 + Cl4 141.80 = 199.9860 -> 199.99 (two decimals, chlorine's subtotal); 5 figures agrees.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "3eb410d49d7f0fee": {
    "verdict": "ok",
@@ -32660,6 +32611,14 @@
     "result": "agrees"
    }
   },
+  "418f5dfe50b98ba0": {
+   "verdict": "ok",
+   "note": "author-built from § Formula Mass for Covalent Substances: \"Following the approach described above, the average molecular mass for this compound is therefore:\" — key re-derived November 12, 2026 from this book’s periodic table (data/chemistry/elements.json, IUPAC abridged standard atomic weights): Picture opened (06b): H3C-C#C-CH3 in one line, six H drawn, C4H6; the alt agrees. C4 48.044 + H6 6.0480 = 54.0920 -> 54.092.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4193531043fddaa5": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -33455,14 +33414,6 @@
   "434efbe38403d0a8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "435095706a867579": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp51968592 part (b); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -34874,6 +34825,14 @@
   "4635bbf7ab69ea17": {
    "verdict": "ok",
    "note": "key-term recall from the Glossary appendix: erysipelas (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "4636b02a7bdb5036": {
+   "verdict": "ok",
+   "note": "author-built from § The Mole: \"A mole of 12 C weighs 12 g (its molar mass is 12 g/mol).\" — key re-derived November 12, 2026 from this book’s periodic table (data/chemistry/elements.json, IUPAC abridged standard atomic weights): C5 60.055 + H12 12.0960 = 72.1510 -> 72.151.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -36912,14 +36871,6 @@
    "note": "source exercise fs-id1172101784957 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "4a993003a009063e": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp14760336 part (a); key = source solution, re-derived against the CNXML and recomputed from the periodic table",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -38997,14 +38948,6 @@
     "result": "agrees"
    }
   },
-  "4ef72f7092d1b2bc": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp40890272; key = source solution, re-derived against the CNXML and recomputed from the periodic table",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "4efc4f43d7b6afc4": {
    "verdict": "ok"
   },
@@ -39270,6 +39213,14 @@
   "4f82c2954c310265": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "4f838b1ee633ad7a": {
+   "verdict": "ok",
+   "note": "author-built from § The Mole: \"A mole of 12 C weighs 12 g (its molar mass is 12 g/mol).\" — key re-derived November 12, 2026 from this book’s periodic table (data/chemistry/elements.json, IUPAC abridged standard atomic weights): C12 144.132 + H14 14.1120 + N2 28.014 + Cl2 70.90 = 257.1580 -> 257.16 (two decimals, chlorine); 5 figures agrees.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -42591,6 +42542,14 @@
     "result": "agrees"
    }
   },
+  "56749f4f3ef96494": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp14091664 part (d); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "56767b0170d4308d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -45582,6 +45541,14 @@
     "result": "agrees"
    }
   },
+  "5c54534e6c2fc86d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp14091664 part (e); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5c5580bb9a468274": {
    "verdict": "ok"
   },
@@ -47097,6 +47064,14 @@
    "verdict": "ok",
    "note": "body CYU 4, selfcheck; the three anti-AChR mechanisms (complement binding, accelerated endocytosis, functional blocking) transcribed from the module's own bulleted list under Myasthenia Gravis. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "5fb2ed96d999aee9": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp14091664 part (a); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5fb38c34c9e3f0d5": {
    "verdict": "ok",
    "note": "KC 1 3.5 § body The Cell Cycle Out of Control: Implications (fs-id1865047), m46034"
@@ -48238,14 +48213,6 @@
   "625e3e00e555782e": {
    "verdict": "ok",
    "note": "cloze of fs-id1956663",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "625eea8545fa8d45": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp20009152 part (b); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -52142,14 +52109,6 @@
     "result": "agrees"
    }
   },
-  "6bc51079295973c9": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp14091664 part (a); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "6bc54a99119273ac": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -53693,14 +53652,6 @@
   "6f2402ed3c840376": {
    "verdict": "ok"
   },
-  "6f27ee12a2bd3270": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp56656128 part (e); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "6f281449b61cb031": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -54644,6 +54595,14 @@
   "710de089135a964e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "71104a1bf5daee75": {
+   "verdict": "ok",
+   "note": "author-built from § The Mole: \"A mole of 12 C weighs 12 g (its molar mass is 12 g/mol).\" — key re-derived November 12, 2026 from this book’s periodic table (data/chemistry/elements.json, IUPAC abridged standard atomic weights): C8 96.088 + H10 10.0800 + N4 56.028 + O2 31.998 = 194.1940 -> 194.194 (6 figures).",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -56780,14 +56739,6 @@
    "verdict": "ok",
    "note": "Critical Thinking Q2 fs-idm146811344, model answer = source solution verbatim | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "75584a4fb284d609": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp14091664 part (d); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "755e1b78c7040490": {
    "verdict": "ok",
    "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -58822,14 +58773,6 @@
     "result": "agrees"
    }
   },
-  "797dfadd4b947c1e": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp14760336 part (d); key = source solution, re-derived against the CNXML and recomputed from the periodic table",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "797e38b06a6df53b": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -59427,14 +59370,6 @@
   "7a65d7631c240c88": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "7a6aa6ffeedf510d": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp56656128 part (a); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -61798,14 +61733,6 @@
   "7f4cc16d26fedcd3": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "7f4ea4eda25411ee": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp51968592 part (e); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "7f57dd43c5308dd4": {
    "verdict": "ok",
@@ -66806,14 +66733,6 @@
     "result": "agrees"
    }
   },
-  "89b666555f184fa4": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp14760336 part (b); key = source solution, re-derived against the CNXML and recomputed from the periodic table",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "89b8e957551b8bf9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -66847,14 +66766,6 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-blind-solver",
-    "result": "agrees"
-   }
-  },
-  "89ccfa38c5bc53b8": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp56656128 part (b); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -67276,14 +67187,6 @@
    "note": "MC fs-idm29405328 'Which of the following gives rise to the skin cells?' — CNXML SOL: A (ectoderm); page keys ectoderm, source options and order preserved. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "8abc84c38396e479": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp14091664 part (e); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -68801,14 +68704,6 @@
    "note": "glossary recall: frequency-dependent selection (fs-idm77374592) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "8e09fdcc5f4b60d6": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp51968592 part (a); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -70698,14 +70593,6 @@
     "result": "agrees"
    }
   },
-  "92180a62c260438a": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp56656128 part (c); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "9218f43b279c46eb": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -71217,14 +71104,6 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver-A",
-    "result": "agrees"
-   }
-  },
-  "932bdac6b14ad0e9": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp20009152 part (a); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -74177,7 +74056,8 @@
    "note": "source exercise fs-idp42864672 part (O atoms); key = source solution, re-derived against the CNXML and recomputed from the periodic table",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "agrees"
+    "result": "adjudicated",
+    "note": "Key 8.151 × 10²³ stands. The section works every count with Avogadro’s number as 6.022 × 10²³ (its worked examples and Key equations), and a constant the page states is used as stated: 0.3384 mol × 4 × 6.022 × 10²³ = 8.1514 × 10²³. The exact constant printed once in the body (6.02214076 × 10²³) gives 8.1516 × 10²³, which rounds to 8.152 × 10²³; the item is graded sig-figs:4 last-digit:1, so that answer is correct as well. The pinned CNXML (m68700, exercise fs-idp42864672) prints 8.151 × 10²³ atoms. Not a second key: one value, one unit of allowance."
    }
   },
   "9929e463581b44ad": {
@@ -77389,14 +77269,6 @@
     "result": "agrees"
    }
   },
-  "a05baad536f4926f": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp20009152 part (b); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "a05f543ad8c69549": {
    "verdict": "ok",
    "note": "body cloze from § Sex Determination: \"Sex determination in some crocodiles and turtles, for example, is often dependent on the temperature during critical periods of egg develop…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -80598,6 +80470,14 @@
   "a6816e2d8f2cb39a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "a68bfe3f60a30fd7": {
+   "verdict": "ok",
+   "note": "author-built from § The Mole: \"A mole of 12 C weighs 12 g (its molar mass is 12 g/mol).\" — key re-derived November 12, 2026 from this book’s periodic table (data/chemistry/elements.json, IUPAC abridged standard atomic weights): C2 24.022 + H 1.0080 + Br 79.904 + Cl 35.45 + F3 56.994 = 197.3780 -> 197.38 (two decimals, chlorine); 5 figures agrees.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -86894,14 +86774,6 @@
     "note": "accept already carries \"tympanic membrane|eardrum|ear drum\"; module prints tympanic membrane six times. Key stands."
    }
   },
-  "b41cb79e9b678727": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp51968592 part (d); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "b41f9ace5b5fc212": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -86941,6 +86813,14 @@
   "b43433cb5381e45a": {
    "verdict": "ok",
    "note": "KC 5 24.5 § Starvation, m46466",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "b435ee90d1850468": {
+   "verdict": "ok",
+   "note": "author-built from § The Mole: \"A mole of 12 C weighs 12 g (its molar mass is 12 g/mol).\" — key re-derived November 12, 2026 from this book’s periodic table (data/chemistry/elements.json, IUPAC abridged standard atomic weights): C18H35O2Na: C18 216.198 + H35 35.2800 + O2 31.998 + Na 22.990 = 306.4660 -> 306.466 (6 figures).",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -87327,6 +87207,14 @@
    "note": "source exercise eip-575 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "b501e7b214896f44": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp56656128 part (d); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -88768,14 +88656,6 @@
   "b7ebf2f35df915cc": {
    "verdict": "ok",
    "note": "CT fs-id1927012, source solution verbatim"
-  },
-  "b7ec49ef941b32c3": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idp17719968; source answer printed as key; recomputed from the periodic table",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "b7ef245899aeeda1": {
    "verdict": "ok",
@@ -90860,14 +90740,6 @@
     "result": "agrees"
    }
   },
-  "bc32380e101374bb": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp42864672 part (Si mass); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm sig-figs:4 tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "bc3340b2ae1a6696": {
    "verdict": "ok",
    "note": "glossary recall fs-id1812692 striatum; body fs-id1433950 'Together, the caudate and putamen are called the striatum'.",
@@ -92846,14 +92718,6 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "c041964ea3f18c46": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idp15853040; source answer printed as key; recomputed from the periodic table",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "c04756879a65cb78": {
    "verdict": "ok",
    "note": "glossary recall: ampulla of Lorenzini (fs-idp8515136) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -93556,6 +93420,14 @@
    "verdict": "ok",
    "note": "KC 2 6.3 § body Bone Markings (fs-id1183302), paragraph fs-id1239338, m46281"
   },
+  "c20d0ab84359900a": {
+   "verdict": "ok",
+   "note": "author-built from § Formula Mass for Ionic Compounds: \"Check Your Learning Calcium phosphate, Ca 3 (PO 4 ) 2 , is an ionic compound and a common anti-caking agent added to food products.\" — key re-derived November 12, 2026 from this book’s periodic table (data/chemistry/elements.json, IUPAC abridged standard atomic weights): Ca3 120.234 + P2 61.948 + O8 127.992 = 310.174; 6 figures agrees.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c20e9647aef3cc78": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -94124,14 +93996,6 @@
   "c326039448ad6cdf": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "c32a6bbccb08a2cd": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp51968592 part (e); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -95122,14 +94986,6 @@
     "result": "agrees"
    }
   },
-  "c4f212f89612a9b5": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp20009152 part (d); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "c4f43442afe1b7f5": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -95917,14 +95773,6 @@
   "c69e0fbdaaae15b1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "c6a0424735158094": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp56656128 part (e); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -98715,6 +98563,14 @@
     "result": "agrees"
    }
   },
+  "ccb58ee6c974a67d": {
+   "verdict": "ok",
+   "note": "author-built from § Formula Mass for Covalent Substances: \"What is the molecular mass (amu) for this compound?\" (low confidence) — key re-derived November 12, 2026 from this book’s periodic table (data/chemistry/elements.json, IUPAC abridged standard atomic weights): 12 x 12.011 = 144.132 amu, keeping the atomic mass's three decimals as the page's tables do (aspirin table: 9 x 12.011 = 108.099); 6 figures agrees with the form. (The multiplication rule read strictly would give 5 figures, 144.13; the page's method is the one used.)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ccb78ba7a7bd1f38": {
    "verdict": "ok",
    "note": "author-built from § Plant Tissues: \"Vascular tissue is an example of a complex tissue, and is made of two specialized conducting tissues: xylem and phloem.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -99664,6 +99520,14 @@
   "ceb2ff689a228637": {
    "verdict": "ok",
    "note": "source exercise fs-id1172100770659 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "ceb834f0cc0fc745": {
+   "verdict": "ok",
+   "note": "author-built from § The Mole: \"A mole of 12 C weighs 12 g (its molar mass is 12 g/mol).\" — key re-derived November 12, 2026 from this book’s periodic table (data/chemistry/elements.json, IUPAC abridged standard atomic weights): C6 72.066 + H12 12.0960 + O6 95.994 = 180.1560 -> 180.156 (6 figures).",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -102788,14 +102652,6 @@
     "result": "agrees"
    }
   },
-  "d59b31e2251872c0": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp56656128 part (c); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "d5ac67a67315eefa": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -103333,14 +103189,6 @@
   "d6bf0c2ede468d31": {
    "verdict": "ok",
    "note": "glossary recall: transduction (m46577 glossary); body bolds it in Sensory Receptors para 1",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "d6c34e3f6e49ed5c": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp14091664 part (b); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -104569,14 +104417,6 @@
     "result": "agrees"
    }
   },
-  "d95af7382c19eb00": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm8741648; source answer printed as key; recomputed from the periodic table",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "d95cadf6221d7ced": {
    "verdict": "ok",
    "note": "author-built from § Agglutination of Bacteria and Viruses, Check Your Understanding: \"In a latex bead assay to test for antibodies in a patient's serum, with what are the beads coated?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -104620,14 +104460,6 @@
   "d984a106e1f3c328": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "d98708e041a5a133": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp20009152 part (a); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -106139,6 +105971,14 @@
     "result": "agrees"
    }
   },
+  "dcd763db7004237e": {
+   "verdict": "ok",
+   "note": "author-built from § The Mole: \"The molar mass for this compound is computed to be 176.124 g/mol.\" — key re-derived November 12, 2026 from this book’s periodic table (data/chemistry/elements.json, IUPAC abridged standard atomic weights): Sc2 89.912 + S3 96.18 + O12 191.988 = 378.080 -> 378.08 (two decimals, sulfur's subtotal); 5 figures agrees.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "dcd90adf41532de1": {
    "verdict": "ok",
    "note": "11 labels cut from the 1914 table image top-level row cells (lifespan member dropped per ruling); re-read against the image; true of exactly one row",
@@ -106550,14 +106390,6 @@
     "result": "agrees"
    }
   },
-  "ddce128f122435bd": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp56656128 part (d); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "ddd684d577c6c717": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -106716,6 +106548,14 @@
    "note": "glossary recall: receptive field — 'region in space in which a stimulus can activate a given sensory receptor'.; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "de061cc87cb02d83": {
+   "verdict": "ok",
+   "note": "author-built from § Formula Mass for Covalent Substances: \"What is the molecular mass (amu) for this compound?\" — key re-derived November 12, 2026 from this book’s periodic table (data/chemistry/elements.json, IUPAC abridged standard atomic weights): Five C atoms: 5 x 12.011 = 60.055 amu (5 figures).",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -108501,6 +108341,14 @@
     "result": "agrees"
    }
   },
+  "e1b28a8411ccaa74": {
+   "verdict": "ok",
+   "note": "author-built from § Formula Mass for Covalent Substances: \"Following the approach described above, the average molecular mass for this compound is therefore:\" — key re-derived November 12, 2026 from this book’s periodic table (data/chemistry/elements.json, IUPAC abridged standard atomic weights): Picture opened (06d): O=P with three O-H groups, H3PO4; the alt agrees. H3 3.0240 + P 30.974 + O4 63.996 = 97.9940 -> 97.994.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e1b28fb3ee0a8428": {
    "verdict": "ok",
    "note": "KC 5 24.4 § Gastroenteritis Caused by Rotaviruses, m58930",
@@ -108835,14 +108683,6 @@
     "result": "agrees"
    }
   },
-  "e23e94087e9f76cd": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp14091664 part (a); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "e23ea75c77c0b9cb": {
    "verdict": "ok",
    "note": "author MC from glossary fs-id2288002 cortical nephrons ('of Henle' dropped from stem)",
@@ -108870,14 +108710,6 @@
   "e2491259ee34b433": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "e249e7e5c242e14f": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp56656128 part (d); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -109383,14 +109215,6 @@
   },
   "e37dc37244a32ef4": {
    "verdict": "ok"
-  },
-  "e3815c48ffa54ee0": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp20009152 part (c); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "e3826ec6e62fde59": {
    "verdict": "ok",
@@ -109983,6 +109807,14 @@
     "result": "agrees"
    }
   },
+  "e4c1fb733bfbf429": {
+   "verdict": "ok",
+   "note": "author-built from § The Mole: \"Check Your Learning What is the mass of 2.561 mol of gold?\" (low confidence) — key re-derived November 12, 2026 from this book’s periodic table (data/chemistry/elements.json, IUPAC abridged standard atomic weights): LiCl: 6.94 + 35.45 = 42.39 g/mol; 2.345 x 42.39 = 99.40455 g -> 99.40 (4 figures, the trailing zero significant).",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e4c2faf0dd09d9d1": {
    "verdict": "ok",
    "note": "source exercise fs-id1167661509076 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -110385,14 +110217,6 @@
   "e5729f6a698a2b60": {
    "verdict": "ok"
   },
-  "e5730230c2031b8e": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp56656128 part (b); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "e5742b2153e662dd": {
    "verdict": "ok"
   },
@@ -110493,14 +110317,6 @@
    "note": "glossary fs-id1712432: antiporter = two different ions/molecules, different directions.; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "e5a5b5697ae8f11e": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp172099056 part (b), 10.41 g (table 10.40) November 12, 2026 follow-up: stem corrected from \"ores such as K[Ag(CN)2]\" to \"its ores as K[Ag(CN)2]\" (erratum 3034); key unchanged, re-solved blind.",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -116189,6 +116005,14 @@
     "result": "agrees"
    }
   },
+  "f260626ecb2bce3c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp14091664 part (b); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f2617c5a3ec182d1": {
    "verdict": "ok",
    "note": "author-built from § Toxoid Vaccines: \"Like subunit vaccines, toxoid vaccines do not introduce a whole pathogen to the patient; they contain inactivated bacterial toxins , called…\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -116265,14 +116089,6 @@
    "note": "source exercise fs-idm129887328 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "f2879cadf456d636": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp172099056 part (a), 5.337 × 10²² molecules; sig-figs:4 last-digit:1 per rulings G1 (table 5.3355e22, within 1u). November 12, 2026 follow-up: stem corrected from \"ores such as K[Ag(CN)2]\" to \"its ores as K[Ag(CN)2]\" and \"molecules\" to \"formula units\" (errata 3034, 3035); key unchanged, a Source note after the item, re-solved blind.",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -117582,14 +117398,6 @@
     "result": "agrees"
    }
   },
-  "f4f64e4284f7c50a": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp14760336 part (c); key = source solution, re-derived against the CNXML and recomputed from the periodic table",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "f4f9b2eb9ef52f5c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -117660,14 +117468,6 @@
   "f518c43a8a9590f5": {
    "verdict": "ok",
    "note": "m66459 visual-exercise fs-idp41379504, solution fs-id1786520 (rendered as selfcheck): model answer \"No. We can store chemical energy because of the need to overcome the barrier to its breakdown.\" matches source verbatim. Both CHECKS clauses restate it, no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
-  },
-  "f519572df638895a": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp20009152 part (c); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "f51bc039574ad1e1": {
    "verdict": "ok",
@@ -119142,14 +118942,6 @@
     "result": "agrees"
    }
   },
-  "f7f38d5c048e931a": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp51968592 part (c); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "f7f7b8dba70fffbd": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -119546,6 +119338,14 @@
   "f8d1a6fd7905db7c": {
    "verdict": "ok",
    "note": "re-read against m46549 CNXML and the page: selfcheck model = source solution"
+  },
+  "f8d401763c076367": {
+   "verdict": "ok",
+   "note": "author-built from § The Mole: \"Given that saccharin has a molar mass of 183.18 g/mol, how many saccharin molecules are in a 40.0-mg (0.0400-g) sample of saccharin?\" (low confidence) — key re-derived November 12, 2026 from this book’s periodic table (data/chemistry/elements.json, IUPAC abridged standard atomic weights): Moles: H2O 20.0/18.02 = 1.110; CH4 77.0/16.04 = 4.800; C3H6 68.0/42.08 = 1.616; N2O 100.0/44.01 = 2.272; HF 84.0/20.01 = 4.198. Fewest moles, so fewest molecules: H2O. The five printed molar masses all match Appendix A sums rounded to two decimals. No second option is defensible.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "f8d50bbacab0931a": {
    "verdict": "ok",
@@ -120962,6 +120762,14 @@
    "verdict": "ok",
    "note": "KC 7 37.5 § body Organs with Secondary Endocrine Functions (fs-idp52508320), m66631 — parent re-read against the module"
   },
+  "fba2ddf7343843b4": {
+   "verdict": "ok",
+   "note": "author-built from § The Mole: \"Check Your Learning What is the mass of 2.561 mol of gold?\" — key re-derived November 12, 2026 from this book’s periodic table (data/chemistry/elements.json, IUPAC abridged standard atomic weights): 2.561 mol x 196.97 g/mol = 504.44017 g -> 504.4 (4 figures).",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "fba63ff3ba1671c6": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -121561,14 +121369,6 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver (blind, masked pages)",
-    "result": "agrees"
-   }
-  },
-  "fcdef935a36f3c28": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp42864672 part (Si mass); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm sig-figs:4 tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },

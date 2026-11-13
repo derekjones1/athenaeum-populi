@@ -15,7 +15,7 @@ import assert from 'node:assert/strict';
 import {
   ce, foldPrimes,
   ANSWER_FORM_TOKENS, bracketsAsParentheses, checkAnswer, checkFormAsGraded, describeAnswerForm,
-  describeFormFeedback, describeIncorrectFeedback, NEAR_MISS_FEEDBACK, measuredKeyProblem, parseAnswerForm, VALUE_ONLY_TOO_FEW_FEEDBACK, workedValueShown,
+  describeFormFeedback, describeIncorrectFeedback, NEAR_MISS_FEEDBACK, NEAR_MISS_TABLE_SENTENCE, measuredKeyProblem, parseAnswerForm, VALUE_ONLY_TOO_FEW_FEEDBACK, workedValueShown,
   preprocess,
 } from './check-answer.mjs';
 
@@ -4793,16 +4793,28 @@ test('a measured quantity a unit outside its allowance is still incorrect, and i
   // beyond "Not quite". Chemistry 2e chapter 4: rounding at each step is not
   // accommodated (Section 3.3 teaches carrying values unrounded), so these
   // stay wrong; the sentence is all that changed.
+  // Where the form allows a unit for a looked-up factor, the sentence also
+  // names the other cause: a value taken with fewer digits than its table prints.
+  const NEAR_TABLE = NEAR_MISS_FEEDBACK + NEAR_MISS_TABLE_SENTENCE;
   const rows = [
     ['34.9', '35.0', 'sig-figs:3 last-digit:0', 'incorrect', NEAR_MISS_FEEDBACK],            // 4.5: 2.62 mmol carried
     ['34.93', '35.0', 'sig-figs:3 last-digit:0', 'incorrect', NEAR_MISS_FEEDBACK],
-    ['86.53', '86.56', 'sig-figs:4 last-digit:1', 'incorrect', NEAR_MISS_FEEDBACK],          // 4.4: 0.003008 × 412.1
+    ['86.53', '86.56', 'sig-figs:4 last-digit:1', 'incorrect', NEAR_TABLE],                  // 4.4: 0.003008 × 412.1
+    // One figure short and a unit or two off at its own place: what four-figure
+    // atomic masses give where the periodic table prints five (3.1).
+    ['123.88', '123.896', 'sig-figs:6 last-digit:1', 'incorrect', NEAR_TABLE],               // 4 × 30.97
+    ['164.10', '164.086', 'sig-figs:6 last-digit:1', 'incorrect', NEAR_TABLE],               // 40.08 + 2 × 14.01 + 6 × 16.00
+    ['123.8', '123.896', 'sig-figs:6 last-digit:1', 'incorrect', ''],                        // two figures short
+    ['123.86', '123.896', 'sig-figs:6 last-digit:1', 'incorrect', ''],                       // one short, four units off
+    ['123.88', '123.896', 'sig-figs:6 last-digit:0', 'incorrect', ''],                       // nothing looked up
+    ['18.02', '18.015', 'sig-figs:5 last-digit:1', 'form', 'now give it to 5 significant figures'], // what the key rounds to is right as far as it goes
+    ['56.2', '56.48', 'sig-figs:4 last-digit:1', 'incorrect', ''],                           // three figures shown: a stem's round number is no near miss
     ['3.5\\times10^{-3}', '3.4\\times10^{-3}', 'sig-figs:2 last-digit:0', 'incorrect', NEAR_MISS_FEEDBACK],
     ['34.9\\ \\text{mL}', '35.0', 'sig-figs:3 last-digit:0', 'incorrect', NEAR_MISS_FEEDBACK],
     // 4.45(b), a key with a worked value: the zone runs two units beyond the allowance at each end
     ['0.0866', '0.08644', 'sig-figs:4 last-digit:1 worked:0.08642', 'incorrect', ''],                    // three figures: not the count asked
-    ['0.08640', '0.08644', 'sig-figs:4 last-digit:1 worked:0.08642', 'incorrect', NEAR_MISS_FEEDBACK],   // moles cut to three figures
-    ['0.08647', '0.08644', 'sig-figs:4 last-digit:1 worked:0.08642', 'incorrect', NEAR_MISS_FEEDBACK],
+    ['0.08640', '0.08644', 'sig-figs:4 last-digit:1 worked:0.08642', 'incorrect', NEAR_TABLE],           // moles cut to three figures
+    ['0.08647', '0.08644', 'sig-figs:4 last-digit:1 worked:0.08642', 'incorrect', NEAR_TABLE],
     ['0.08634', '0.08644', 'sig-figs:4 last-digit:1 worked:0.08642', 'incorrect', ''],                   // a molar mass rounded to 232: graded correct under the 0.2% band this replaced
     ['123.86', '123.896', 'worked:123.88', 'incorrect', NEAR_MISS_FEEDBACK],                             // no count graded: two units of the worked value's last place
     // far from the key, or written to another count of figures: nothing to add
@@ -4824,7 +4836,7 @@ test('a measured quantity a unit outside its allowance is still incorrect, and i
     else assert.ok(describeFormFeedback(typed, form, key).includes(said), describeFormFeedback(typed, form, key));
   }
   assert.equal(describeIncorrectFeedback('34.9', 'sig-figs:3 last-digit:0'), '', 'no key, nothing to say');
-  assert.doesNotMatch(NEAR_MISS_FEEDBACK, /\d|higher|lower|too (high|low|large|small)/, 'names no size and no direction');
+  assert.doesNotMatch(NEAR_MISS_FEEDBACK + NEAR_MISS_TABLE_SENTENCE, /\d|higher|lower|too (high|low|large|small)/, 'names no size and no direction');
 });
 test('sig-figs changes nothing where it is not declared, or where the key is no single numeral', () => {
   // The same responses under `decimal`: the 1e-9 comparison, and the

@@ -256,7 +256,10 @@ export function lastFigureExponent(key, figures) {
  * is not wider there, and a one-figure key has none (a unit of it is the
  * whole number: 10¹¹ is not "close" to 10¹²). The verdict is still
  * `incorrect` — no allowance is widened — and the caller only says why a
- * close answer is not the answer.
+ * close answer is not the answer. Under an allowance of a unit or more (a
+ * factor is looked up) the same is said of a response of four or more
+ * figures written ONE figure short and within two units of what the key
+ * rounds to there: the answer a table of coarser values gives.
  *
  * A key that does not itself show `figures` significant figures is an
  * authoring error, reported as `form` against itself by the caller's
@@ -327,6 +330,19 @@ export function compareMeasured(response, key, { figures, lastDigit = 0, worked 
         }
       }
     }
+  }
+  // One figure short and a unit or two off at its own place: what a table of
+  // coarser values gives — 123.88 from four-figure atomic masses, against
+  // 123.896 from the periodic table's five. Still `incorrect`; the caller
+  // says why. Only from four figures shown (below that a stem's round number
+  // is "close" to everything: 90 against 89.4), and only where the form says
+  // a factor is looked up.
+  if (shown >= 4 && lastDigit >= 1 && response.sigMin <= shown && shown <= response.sigMax) {
+    const coarse = ends.some((end) => rules.some((halfEven) => {
+      const rounded = { ...end, ...roundToFigures(end, shown, { halfEven }) };
+      return within(response, rounded, nearUnits(shown), Math.min(response.exponent, rounded.exponent));
+    }));
+    if (coarse) return { verdict: 'incorrect', reason: 'near' };
   }
   // The key's own number with its trailing zeros left off, however many:
   // `8` for `8.00`. Exactly the key, so nothing a stem's round number can

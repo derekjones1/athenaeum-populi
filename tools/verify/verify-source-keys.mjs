@@ -98,7 +98,7 @@
  * unrecorded gain; `npm run baseline:update` records either deliberately).
  */
 
-import { existsSync, readFileSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import {
   parseXml, descendants, elementChildren, firstElement, textContent, localName,
@@ -111,7 +111,9 @@ import { mediaBindings } from '../lib/exercise-context.mjs';
 import { parseSortbinsConfig } from '../../assets/js/lib/text/check-sortbins.mjs';
 import { foldedForms } from '../../assets/js/lib/text/check-text.mjs';
 import { chemCanon } from '../../assets/js/lib/text/check-chem.mjs';
-import { readNumeral } from '../../assets/js/lib/math/significant-figures.mjs';
+import { readNumeral, withinPercent } from '../../assets/js/lib/math/significant-figures.mjs';
+import { loadElements } from '../lib/elements.mjs';
+import { massAsk, molarMass, statesNoNumber } from './molar-mass.mjs';
 import {
   KEYED_ONLY_BOOKS, choiceLabels, glossaryAliases, keyedUnits, plain as foldedPlain, printedNumerals, unitFor, unlinked,
 } from '../lib/keyed-units.mjs';
@@ -2181,6 +2183,91 @@ function byElement(entries, closing) {
   return holding.length === 1 ? holding : null;
 }
 
+
+/* ---- keys worked from this book's own atomic masses ----------------------- */
+
+/**
+ * Books whose numeric keys are worked from a periodic table of their own.
+ *
+ * Chemistry's table is `data/chemistry/elements.json` — IUPAC's abridged
+ * standard atomic weights — where the source's figure prints four-figure
+ * masses and the source's answer key was worked from yet other values
+ * (1990s atomic weights: H 1.00794, Cl 35.4527, Zn 65.39). A key is what the
+ * book's table gives (Derek, November 12, 2026), so some keys stand a unit or
+ * two of their last place from the number the source prints. That is not a
+ * correction of the source and takes no `DISCLOSED_DEVIATIONS` entry; it is
+ * read here as its own status, `data-differs`, under three holds:
+ *
+ *   1. the item's form carries `last-digit:1` or `last-digit:2`, the
+ *      grammar's own mark that a factor is fetched from a table — an item
+ *      graded to the digit can never be one;
+ *   2. the source's print is within DATA_DISTANCE_UNITS of the key at the
+ *      coarser of the two last places, and within DATA_DISTANCE_PERCENT of
+ *      it (plus one such unit) — so a key that is simply wrong still fails;
+ *   3. every such item is a row of the register below, which this tool
+ *      writes and a person reviews: a new row, a changed row, and a row the
+ *      page no longer has all fail until the file is rewritten on purpose.
+ *
+ * A formula, molecular, or molar mass asked for itself is held tighter: the
+ * key must be exactly what `molar-mass.mjs` computes from the table
+ * (`table-differs` otherwise — no entry excuses it).
+ */
+export const ELEMENT_DATA_BOOKS = Object.freeze(['chemistry']);
+export const DATA_DISTANCE_UNITS = 2n;
+export const DATA_DISTANCE_PERCENT = '0.1';
+export const DATA_REGISTER = 'data/verification/source-print-differences.json';
+/** The opening of the one paragraph a page with register rows carries under `## Practice`. */
+export const DATA_SOURCE_NOTE = '*Source note:* the source’s answer key for some exercises of this section was worked from atomic masses other than the ones in this book’s periodic table.';
+
+/** A numeral's magnitude rounded half up to the power of ten `place` (unchanged when it is no finer). */
+function magnitudeAt(numeral, place) {
+  if (numeral.exponent >= place) return numeral.mantissa * 10n ** BigInt(numeral.exponent - place);
+  const divisor = 10n ** BigInt(place - numeral.exponent);
+  const quotient = numeral.mantissa / divisor;
+  return (numeral.mantissa % divisor) * 2n >= divisor ? quotient + 1n : quotient;
+}
+
+/**
+ * The source print a key stands beside when only the atomic masses behind
+ * the two differ: `{ numeral, units }`, units counted at the coarser of the
+ * two last places, or null when no printed number is that near.
+ */
+export function dataDifference(key, printed) {
+  for (const numeral of printed) {
+    if (numeral.negative !== key.negative || numeral.mantissa === 0n) continue;
+    const place = Math.max(key.exponent, numeral.exponent);
+    const difference = magnitudeAt(key, place) - magnitudeAt(numeral, place);
+    const units = difference < 0n ? -difference : difference;
+    if (units > DATA_DISTANCE_UNITS) continue;
+    if (!withinPercent(key, numeral, readNumeral(DATA_DISTANCE_PERCENT), { units: 1, unitExponent: place })) continue;
+    return { numeral, units: Number(units) };
+  }
+  return null;
+}
+
+const registerKey = (row) => [row.page, row.exercise, row.key, row.sourcePrint, row.units].join('\u0001');
+const sortRegister = (rows) => [...rows].sort((a, b) => registerKey(a).localeCompare(registerKey(b)));
+
+/** The register's rows, or [] when the file does not exist yet. */
+export function readDataRegister(repositoryRoot) {
+  const file = path.join(repositoryRoot, DATA_REGISTER);
+  return existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')).differences : [];
+}
+
+/** Write the register: the rows a run computed, beside the kept rows of pages it could not read. */
+export function writeDataRegister(repositoryRoot, differences, pagesRead) {
+  const kept = readDataRegister(repositoryRoot).filter((row) => !pagesRead.includes(row.page));
+  const body = {
+    schemaVersion: 1,
+    note: 'Fill-in keys that differ from the number the pinned source prints only because this book’s periodic table (data/chemistry/elements.json) carries other atomic masses than the source’s answer key was worked from. Written by `node tools/verify/verify-source-keys.mjs --write-register`; verify-source-keys fails when a run computes other rows. Review the diff of this file like a key change: `units` is the distance at the coarser of the two last places.',
+    differences: sortRegister([...kept, ...differences]),
+  };
+  const lines = body.differences.map((row) => `    ${JSON.stringify(row)}`).join(',\n');
+  writeFileSync(path.join(repositoryRoot, DATA_REGISTER),
+    `{\n  "schemaVersion": 1,\n  "note": ${JSON.stringify(body.note)},\n  "differences": [${lines ? `\n${lines}\n  ` : ''}]\n}\n`);
+  return body.differences.length;
+}
+
 /**
  * One multiplechoice, fillin, or selfcheck of a keyed-only book
  * (tools/lib/keyed-units.mjs; docs/subjects/chemistry.md "Exercises")
@@ -2208,7 +2295,7 @@ function byElement(entries, closing) {
  *   any             'unkeyed-unit'   the unit has NO printed answer — the
  *                                    book does not render it
  */
-export function judgeKeyedUnit(linkedItem, units, { aliases = [] } = {}) {
+export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = null } = {}) {
   if (!['multiplechoice', 'fillin', 'selfcheck', 'textin'].includes(linkedItem.type)) return null;
   // A link is not a word of the stem: the item is read without its targets.
   const item = { ...linkedItem, question: unlinked(linkedItem.question) };
@@ -2424,6 +2511,20 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [] } = {}) {
     const key = keyNumeral(item.answer);
     if (!key) return { status: 'symbolic', exercise };
     const printed = printedNumerals(unit.answer);
+    // A formula mass asked for itself is the table's sum, exactly: the one
+    // key of the book a tool can compute, so it is computed.
+    const formula = elements ? massAsk(item.question, elements) : null;
+    const table = formula ? molarMass(formula, elements) : null;
+    if (table) {
+      const sum = readNumeral(table.sum);
+      if (!sameNumeral(sum, key) || sum.exponent !== key.exponent) {
+        return {
+          status: 'table-differs',
+          exercise,
+          detail: `fillin keys ${JSON.stringify(item.answer)} for the mass of ${formula}, which this book’s periodic table gives as ${table.sum} (node tools/verify/molar-mass.mjs ${JSON.stringify(formula)})`,
+        };
+      }
+    }
     // A part answered with several NAMED numbers — "3 protons, 3 electrons,
     // 4 neutrons" — is carried as one item per number, and every one of
     // them is printed in the segment. The item whose closing sentence asks
@@ -2454,6 +2555,19 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [] } = {}) {
       const spelled = numberWords(unit.answer);
       if (spelled.includes(value)) return { status: 'confirmed', exercise };
       if (!printed.length && !spelled.length) return { status: 'unkeyed', exercise };
+      // The same answer from other atomic masses (see ELEMENT_DATA_BOOKS).
+      const allowance = /(?:^|\s)last-digit:[12](?:\s|$)/.test(String(item.form || ''));
+      const near = elements && allowance ? dataDifference(key, printed) : null;
+      const declared = String(item.form || '').match(/(?:^|\s)sig-figs:(\d)(?:\s|$)/);
+      // A calculation's count of figures is still the source's, set by the
+      // data its stem gives. Where the stem gives no number at all, every
+      // digit of the answer is the table's, and so is the count: a formula
+      // mass (199.99 where the source prints 199.9976), a formula that is a
+      // drawing, the mass of carbon in C₅H₁₂ (60.055 where the source, from
+      // 12.01, prints 60.05). The blind solve is such a key's reader.
+      if (near && (table || statesNoNumber(item.question) || !declared || (near.numeral.sigMin <= Number(declared[1]) && Number(declared[1]) <= near.numeral.sigMax))) {
+        return { status: 'data-differs', exercise, sourcePrint: near.numeral.printed, units: near.units };
+      }
       return {
         status: 'key-differs',
         exercise,
@@ -2599,7 +2713,7 @@ export function conditionalUnwrapped(records) {
 
 export const isLifeSciencesPage = (localPath) => localPath.startsWith('content/life-health-sciences/');
 
-export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose = false } = {}) {
+export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose = false, register = 'check' } = {}) {
   const lock = loadSourceLock(repositoryRoot);
   const map = JSON.parse(readFileSync(path.join(repositoryRoot, 'data/openstax/source-map.json'), 'utf8'));
   const prefix = contentRoot.replace(/\/+$/, '') + '/';
@@ -2616,6 +2730,10 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
   const notes = [];
   const verdicts = [];
   const used = new Set();
+  // Keys that part from the source's print by the atomic masses behind them
+  // (ELEMENT_DATA_BOOKS): the rows of the register.
+  const differences = [];
+  let elementData = null;
   const deviationFor = (page, exercise) => DISCLOSED_DEVIATIONS.find(
     (entry) => entry.page === page && entry.exercise === exercise,
   );
@@ -2657,19 +2775,34 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
     // transcribes no unit falls through to the ordinary judges below.
     const units = KEYED_ONLY_BOOKS.includes(section.book) ? keyedUnits(moduleXml) : null;
     const aliases = units ? glossaryAliases(moduleXml) : [];
+    const elements = ELEMENT_DATA_BOOKS.includes(section.book) ? (elementData ??= loadElements(repositoryRoot)) : null;
+    const pageMarkdown = readFileSync(pagePath, 'utf8');
+    const differencesBefore = differences.length;
     // This page's items by the unit each transcribes, for `conditionalUnwrapped`.
     const shape = [];
-    for (const item of pageItems(readFileSync(pagePath, 'utf8'))) {
+    for (const item of pageItems(pageMarkdown)) {
       const where = `${section.localPath}:${item.line}`;
-      const keyedVerdict = units ? judgeKeyedUnit(item, units, { aliases }) : null;
+      const keyedVerdict = units ? judgeKeyedUnit(item, units, { aliases, elements }) : null;
       if (keyedVerdict) {
-        const { status } = keyedVerdict;
+        // A key the book corrects on purpose stays a disclosed correction,
+        // with its erratum, however near the source's print it lands.
+        const status = keyedVerdict.status === 'data-differs' && deviationFor(section.localPath, keyedVerdict.exercise.id)?.kind === 'key'
+          ? 'key-differs' : keyedVerdict.status;
         shape.push({
           group: keyedVerdict.exercise.group, unit: keyedVerdict.exercise.id,
           type: item.type, line: item.line, options: item.options, followup: Boolean(item.followup),
         });
         verdicts.push({ page: section.localPath, line: item.line, type: item.type, status });
-        if (['key-differs', 'figures-differ', 'diverges', 'unkeyed-unit'].includes(status)) {
+        if (status === 'table-differs') {
+          failures.push({ page: section.localPath, line: item.line, detail: keyedVerdict.detail });
+        } else if (status === 'data-differs') {
+          counts.fillin.dataDiffers = (counts.fillin.dataDiffers ?? 0) + 1;
+          differences.push({
+            page: section.localPath, exercise: keyedVerdict.exercise.id, key: item.answer,
+            sourcePrint: keyedVerdict.sourcePrint, units: keyedVerdict.units,
+          });
+          notes.push(`${where} fillin keys ${item.answer} from this book’s atomic masses; the source prints ${keyedVerdict.sourcePrint}`);
+        } else if (['key-differs', 'figures-differ', 'diverges', 'unkeyed-unit'].includes(status)) {
           const deviation = status === 'unkeyed-unit' ? null : deviationFor(section.localPath, keyedVerdict.exercise.id);
           const wanted = status === 'diverges' ? 'solution' : 'key';
           if (deviation && deviation.kind === wanted) {
@@ -2801,6 +2934,35 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
     for (const offender of conditionalUnwrapped(shape)) {
       failures.push({ page: section.localPath, line: offender.line, detail: offender.detail });
     }
+    // A page whose keys part from the source's print by the data says so,
+    // once, and a page that says so has such keys.
+    if (elements) {
+      const rows = differences.length - differencesBefore;
+      const says = pageMarkdown.includes(DATA_SOURCE_NOTE);
+      if (rows && !says) {
+        failures.push({ page: section.localPath, line: 0, detail: `${rows} key(s) differ from the source’s print by the atomic masses behind them, and the page does not say so — under \`## Practice\`, a paragraph opening ${JSON.stringify(DATA_SOURCE_NOTE)}` });
+      } else if (!rows && says) {
+        failures.push({ page: section.localPath, line: 0, detail: 'the page carries the Source note on atomic masses under `## Practice`, but no key of the page differs from the source’s print that way — drop the paragraph' });
+      }
+    }
+  }
+
+  // The register: every data difference a run computes is a reviewed row,
+  // and every row on a page that was read is one the run computed.
+  if (register === 'check') {
+    const pagesRead = new Set(checked.map((section) => section.localPath));
+    const recorded = new Map(readDataRegister(repositoryRoot).filter((row) => pagesRead.has(row.page)).map((row) => [registerKey(row), row]));
+    const computed = new Map(differences.map((row) => [registerKey(row), row]));
+    for (const [key, row] of computed) {
+      if (!recorded.has(key)) {
+        failures.push({ page: row.page, line: 0, detail: `${row.exercise}: the key ${row.key} stands ${row.units} unit(s) of the last place from the source’s ${JSON.stringify(row.sourcePrint)}, and ${DATA_REGISTER} does not list it — check the key against this book’s periodic table, then run verify-source-keys with --write-register` });
+      }
+    }
+    for (const [key, row] of recorded) {
+      if (!computed.has(key)) {
+        failures.push({ page: row.page, line: 0, detail: `${DATA_REGISTER} lists ${row.exercise} (key ${row.key}, source ${JSON.stringify(row.sourcePrint)}) but the page no longer differs from the source that way — rewrite the register with --write-register` });
+      }
+    }
   }
 
   // Only a page that was actually read against its module can prove an entry
@@ -2830,6 +2992,8 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
     // unlettered exercise and one erratum — so the item count in
     // `counts.*.disclosed` can exceed it.
     deviationsExercised: used.size,
+    differences,
+    pagesRead: checked.map((section) => section.localPath),
     sections: checked.length,
     skipped,
     sectionsSkipped: Object.values(skipped).reduce((a, b) => a + b, 0),
@@ -2880,30 +3044,39 @@ if (process.argv[1] && path.resolve(process.argv[1]) === new URL(import.meta.url
   let contentRoot;
   let verbose;
   let minConfirmed;
+  let writeRegister;
   try {
     const cli = parseCliArgs(process.argv.slice(2), {
       valueFlags: ['min-confirmed'],
-      boolFlags: ['verbose'],
+      boolFlags: ['verbose', 'write-register'],
       positional: { max: 1, name: 'content root' },
     });
     contentRoot = cli.positional[0] ?? 'content';
     verbose = cli.bool('verbose');
+    writeRegister = cli.bool('write-register');
     minConfirmed = integerFlag(cli, 'min-confirmed');
   } catch (error) {
     console.error(`verify-source-keys: ${error.message}`);
-    console.error('usage: node tools/verify/verify-source-keys.mjs [content-root] [--min-confirmed N] [--verbose]');
+    console.error('usage: node tools/verify/verify-source-keys.mjs [content-root] [--min-confirmed N] [--verbose] [--write-register]');
     process.exit(2);
   }
 
   const repositoryRoot = process.cwd();
-  const result = checkCorpus(repositoryRoot, { contentRoot, verbose });
+  const result = checkCorpus(repositoryRoot, { contentRoot, verbose, register: writeRegister ? 'ignore' : 'check' });
   const { confirmed, failures, notes, skipped, sectionsSkipped } = result;
+  if (writeRegister) {
+    const rows = writeDataRegister(repositoryRoot, result.differences, result.pagesRead);
+    console.log(`✓ wrote ${DATA_REGISTER}: ${rows} key(s) that differ from the source’s print by the atomic masses behind them`);
+  }
 
   for (const { page, line, detail } of failures) console.error(`✗ ${page}${line ? `:${line}` : ''}\n    ${detail}`);
   for (const note of notes) console.log(`    · ${note}`);
   for (const line of skipLines(repositoryRoot, loadSourceLock(repositoryRoot), skipped)) console.error(line);
 
   console.log(summaryLine(result));
+  if (result.differences.length) {
+    console.log(`  · ${result.differences.length} fill-in key(s) stand a unit or two from the source’s print by the atomic masses behind them (${DATA_REGISTER})`);
+  }
 
   if (sectionsSkipped) {
     if (REQUIRE_SOURCES) {

@@ -1666,17 +1666,24 @@ test('a measured-quantity field keeps a two-digit exponent together, reports a t
   await expect.poll(status).toBe('correct');
 });
 
-// Chemistry 3.1: a key with a second right value (`worked:<value>`).
-// The source answers 123.896 amu for P₄ from atomic masses with more digits
-// than the book's periodic table prints; a learner on the site reaches
-// 4 × 30.97 = 123.88. The grading is unit-tested in check-answer.test.mjs;
-// the typed path — the field, its shortcode attribute, the feedback line
-// that names both answers — is only real here.
-test('a formula mass with a worked value takes the periodic table’s value as typed, and shows both answers', async ({ page }) => {
+// Chemistry 3.1: a formula mass has ONE right answer, the sum of this book's
+// periodic table (IUPAC's abridged standard atomic weights, five figures).
+// Until November 12, 2026 the table printed four figures, the source's
+// answer was the key, the table's value a second right answer, and a correct
+// response was told both ("the source’s answer is 123.896 amu; this book’s
+// own data give 123.88") — which read as two answers and no certainty. The
+// grading is unit-tested in check-answer.test.mjs; the typed path — the
+// field, its shortcode attribute, the feedback line — is only real here.
+test('a formula mass has one right answer from the periodic table, and four-figure masses are told why they are close', async ({ page }) => {
   test.setTimeout(240_000);
   await gotoBuiltPage(page, '/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept/');
-  const banded = page.locator('fill-in[data-answer-form^="worked:"]').filter({ has: page.locator('math-field') });
-  expect(await banded.count(), 'the page still carries its nineteen formula masses graded with no count of figures').toBe(19);
+  // No item of the page carries a second right value any more.
+  expect(await page.evaluate(() => [...document.querySelectorAll('fill-in')]
+    .filter((el) => (el.dataset.answerForm || '').includes('worked')).length)).toBe(0);
+  const masses = page.locator('fill-in[data-answer-form="sig-figs:5 last-digit:1"], fill-in[data-answer-form="sig-figs:6 last-digit:1"]')
+    .filter({ has: page.locator('math-field') })
+    .filter({ hasText: /(molecular|formula|molar) mass/ });
+  expect(await masses.count(), 'the page still carries its formula-mass items').toBeGreaterThanOrEqual(19);
 
   const card = page.locator('fill-in[data-answer="123.896"]');
   await expect(card).toHaveCount(1);
@@ -1689,23 +1696,28 @@ test('a formula mass with a worked value takes the periodic table’s value as t
     await page.keyboard.type(keys, { delay: 15 });
     await card.getByRole('button', { name: /check/i }).click();
   };
-  // One phosphorus atom's mass off is far outside the band.
+  // One phosphorus atom's mass off: wrong, and nothing more to say.
   await check('92.91');
   await expect.poll(status).toBe('incorrect');
+  await expect(feedback).toHaveText(/^Not quite/);
+  // What four-figure masses give (4 × 30.97): still wrong, and told the cause.
+  await check('123.88');
+  await expect.poll(status).toBe('incorrect');
+  await expect(feedback).toHaveText(/^Close, but not within rounding of the answer\..*use every digit its table prints\.$/s);
   // The right number with its unit typed after it.
-  await check('123.88 amu');
+  await check('123.896 amu');
   await expect.poll(status).toBe('unit');
   await expect(feedback).toHaveText(/enter it without the unit/i);
-  // The periodic table's value, to the places the table gives.
-  await check('123.88');
+  // The periodic table's value (4 × 30.974): correct, and ONE answer is shown.
+  await check('123.896');
   await expect.poll(status).toBe('correct');
-  // Both right answers are named: the source's, and the one the learner
-  // just reached from the book's own table.
-  await expect(feedback).toHaveText(/the source’s answer is.*123\.896.*amu.*this book’s own data give.*123\.88/s);
+  await expect(feedback).toHaveText(/^Correct — .*123\.896.*amu.*\.$/s);
+  await expect(feedback).not.toHaveText(/source|own data/);
 
-  // Every such item on the page grades its own key as typed.
-  for (let index = 0; index < 19; index += 1) {
-    const item = banded.nth(index);
+  // Every formula-mass item on the page grades its own key as typed, with one answer shown.
+  const count = await masses.count();
+  for (let index = 0; index < count; index += 1) {
+    const item = masses.nth(index);
     const answer = await item.getAttribute('data-answer');
     if (answer === '123.896') continue;
     const keys = keystrokesFor(answer);
@@ -1716,9 +1728,7 @@ test('a formula mass with a worked value takes the periodic table’s value as t
     await expect
       .poll(async () => item.evaluate((el) => el.status), { timeout: 5000, message: `key ${answer} typed as ${keys}` })
       .toBe('correct');
-    // S₈: the table reaches the source's key (8 × 32.06), so one answer is shown.
-    if (answer === '256.48') await expect(item.locator('.ap-fillin-feedback')).toHaveText(/^Correct — .*256\.48.*\.$/s);
-    if (answer === '256.48') await expect(item.locator('.ap-fillin-feedback')).not.toHaveText(/own data/);
+    await expect(item.locator('.ap-fillin-feedback')).not.toHaveText(/source|own data/);
   }
 });
 
@@ -2453,7 +2463,7 @@ test('Chemistry keeps the periodic table at hand: the rail control and a body li
   await expect(dialog.locator('.ap-figure-viewer-title')).toHaveText('Periodic table');
   await expect(image).toHaveJSProperty('complete', true);
   expect(await image.evaluate((img) => ({ file: new URL(img.src).pathname, width: img.naturalWidth, alt: img.alt.length > 40 })))
-    .toEqual({ file: '/media/chemistry/CNX_Chem_00_AA_PeriodicPU_img-1300.webp', width: 1300, alt: true });
+    .toEqual({ file: '/media/chemistry/periodic-table.svg', width: 1566, alt: true });
   // The way to the figure's own page, where its content is also a text table.
   await expect(pageLink).toHaveText('Appendix A: The Periodic Table');
   expect(await pageLink.getAttribute('href')).toBe(appendix);

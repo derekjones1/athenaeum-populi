@@ -450,7 +450,7 @@ test('the chemistry subject playbook states the rules its engine enforces', asyn
   // grader, the lock — rather than restated.
   const chem = read('docs/subjects/chemistry.md');
   const { lintLeaks } = await import('../lint/lints-leaks.mjs');
-  const { checkAnswer, describeFormFeedback, describeIncorrectFeedback, NEAR_MISS_FEEDBACK, VALUE_ONLY_TOO_FEW_FEEDBACK, WORKED_CEILING_PERCENT, measuredKeyProblem, workedValueShown } = await import('../../assets/js/lib/math/check-answer.mjs');
+  const { checkAnswer, describeFormFeedback, describeIncorrectFeedback, NEAR_MISS_FEEDBACK, NEAR_MISS_TABLE_SENTENCE, VALUE_ONLY_TOO_FEW_FEEDBACK, WORKED_CEILING_PERCENT, measuredKeyProblem, workedValueShown } = await import('../../assets/js/lib/math/check-answer.mjs');
   const page = 'content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/03-molarity.md';
 
   // Where it sits and what it inherits.
@@ -490,7 +490,7 @@ test('the chemistry subject playbook states the rules its engine enforces', asyn
   }
   // The near miss and the key written short (November 12, 2026): the table's
   // rows are the grader's, and the playbook quotes the sentence whole.
-  assert.equal(describeIncorrectFeedback('0.676', form, '0.674'), NEAR_MISS_FEEDBACK);
+  assert.equal(describeIncorrectFeedback('0.676', form, '0.674'), NEAR_MISS_FEEDBACK + NEAR_MISS_TABLE_SENTENCE);
   for (const typed of ['0.6', '0.774']) assert.equal(describeIncorrectFeedback(typed, form, '0.674'), '', typed);
   assert.ok(chem.replace(/\s+/g, ' ').includes(NEAR_MISS_FEEDBACK), 'the playbook quotes the near-miss sentence');
   for (const typed of ['8', '8.0']) assert.equal(checkAnswer(typed, '8.00', { form }), 'form', `${typed} against 8.00`);
@@ -511,7 +511,7 @@ test('the chemistry subject playbook states the rules its engine enforces', asyn
     ['0.08640', 'incorrect'], ['0.08634', 'incorrect'], ['0.086419', 'form'], ['0.0864', 'form']]) {
     assert.equal(checkAnswer(typed, '0.08644', { form: silver }), verdict, `${typed} against 0.08644`);
   }
-  assert.equal(describeIncorrectFeedback('0.08640', silver, '0.08644'), NEAR_MISS_FEEDBACK);
+  assert.equal(describeIncorrectFeedback('0.08640', silver, '0.08644'), NEAR_MISS_FEEDBACK + NEAR_MISS_TABLE_SENTENCE);
   assert.equal(describeIncorrectFeedback('0.08634', silver, '0.08644'), '');
   assert.equal(workedValueShown('0.08644', silver), '0.08642');
   assert.ok(chem.replace(/\s+/g, ' ').includes('this book’s own data give'), 'the playbook quotes the sentence a right answer is shown');

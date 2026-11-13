@@ -3882,6 +3882,24 @@
       "transparent": false,
       "alt": "An image is shown of two fish with heads removed and skin on with lemon slices placed in the body cavity. The first line of an equation below the image reads C H subscript 3 C O O H plus N H subscript 2 C H subscript 2 C H subscript 2 C H subscript 2 C H subscript 2 N H subscript 2 arrow C H subscript 3 C O O superscript negative sign plus N H subscript 3 superscript positive sign C H subscript 2 C H subscript 2 C H subscript 2 C H subscript 2 N H subscript 2. The second line of the equation reads Acetic acid plus sign Putrescine arrow Acetate ion plus sign Putrescinium ion.",
       "caption": "A neutralization reaction takes place between citric acid in lemons or acetic acid in vinegar, and the bases in the flesh of fish."
+    },
+    "periodic-table": {
+      "generated": true,
+      "generator": "tools/figures/periodic-table.mjs",
+      "data": "data/chemistry/elements.json",
+      "kind": "diagram",
+      "width": 1566,
+      "height": 1212,
+      "variants": [
+        {
+          "width": 1566,
+          "height": 1212,
+          "file": "periodic-table.svg"
+        }
+      ],
+      "transparent": false,
+      "alt": "",
+      "caption": ""
     }
   }
 }

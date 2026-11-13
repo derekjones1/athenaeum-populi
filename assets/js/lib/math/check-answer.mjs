@@ -7075,6 +7075,12 @@ export const VALUE_ONLY_TOO_FEW_FEEDBACK = 'That agrees with the answer as far a
 // of a response written to the wrong count of figures and far from the key.
 export const NEAR_MISS_FEEDBACK = 'Close, but not within rounding of the answer. If you rounded partway through, carry the extra digits through every step and round only the final result.';
 
+// What is added to it where the form allows a unit of the last figure for a
+// looked-up factor (`last-digit:1` or more): the commonest cause there is a
+// value taken with fewer digits than its table prints — an atomic mass from
+// memory, or from a table of four figures where this book's prints five.
+export const NEAR_MISS_TABLE_SENTENCE = ' If you looked up a value, such as an atomic mass, use every digit its table prints.';
+
 // The sentence for the right solution set written in the other notation
 // (notationMismatch), in the style of describeAnswerForm's.
 const NOTATION_FEEDBACK = {
@@ -7103,11 +7109,13 @@ const NUMBER_SHAPE_TOKENS = new Set(['decimal', 'whole-number', 'fraction', 'per
 /**
  * The feedback for an 'incorrect' verdict on THIS response, or '' when
  * there is nothing to add to "Not quite". Today one case: a measured
- * quantity a unit or two outside its allowance (NEAR_MISS_FEEDBACK).
+ * quantity a unit or two outside its allowance (NEAR_MISS_FEEDBACK, with
+ * NEAR_MISS_TABLE_SENTENCE where a factor is looked up).
  */
 export function describeIncorrectFeedback(studentRaw, spec, answerRaw) {
   const measured = answerRaw === undefined ? null : measuredVerdict(studentRaw, answerRaw, { form: spec });
-  return measured !== null && measured.verdict === 'incorrect' && measured.reason === 'near' ? NEAR_MISS_FEEDBACK : '';
+  if (measured === null || measured.verdict !== 'incorrect' || measured.reason !== 'near') return '';
+  return NEAR_MISS_FEEDBACK + ((measuredSpec(spec)?.lastDigit ?? 0) >= 1 ? NEAR_MISS_TABLE_SENTENCE : '');
 }
 
 export function describeFormFeedback(studentRaw, spec, answerRaw) {

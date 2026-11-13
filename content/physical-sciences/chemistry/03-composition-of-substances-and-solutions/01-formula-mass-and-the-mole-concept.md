@@ -24,30 +24,46 @@ An earlier chapter of this text described the development of the atomic mass uni
 
 ### Formula Mass for Covalent Substances
 
-For covalent substances, the formula represents the numbers and types of atoms composing a single molecule of the substance; therefore, the formula mass may be correctly referred to as a molecular mass. Consider chloroform (CHCl₃), a covalent compound once used as a surgical anesthetic and now primarily used in the production of tetrafluoroethylene, the building block for the "anti-stick" polymer, Teflon. The molecular formula of chloroform indicates that a single molecule contains one carbon atom, one hydrogen atom, and three chlorine atoms. The average molecular mass of a chloroform molecule is therefore equal to the sum of the average atomic masses of these atoms. The figure below outlines the calculations used to derive the molecular mass of chloroform, which is 119.37 amu.
+For covalent substances, the formula represents the numbers and types of atoms composing a single molecule of the substance; therefore, the formula mass may be correctly referred to as a molecular mass. Consider chloroform (CHCl₃), a covalent compound once used as a surgical anesthetic and now primarily used in the production of tetrafluoroethylene, the building block for the "anti-stick" polymer, Teflon. The molecular formula of chloroform indicates that a single molecule contains one carbon atom, one hydrogen atom, and three chlorine atoms. The average molecular mass of a chloroform molecule is therefore equal to the sum of the average atomic masses of these atoms. The table below outlines the calculations used to derive the molecular mass of chloroform, which is 119.37 amu.
 
-{{< mediafigure src="chemistry/CNX_Chem_03_01_chloroform" kind="diagram" eager="true" alt="A calculation table beside a ball-and-stick model. The table's columns are element, quantity, average atomic mass (amu), and subtotal (amu): C, 1 × 12.01 = 12.01; H, 1 × 1.008 = 1.008; Cl, 3 × 35.45 = 106.35. A rule under the last subtotal, then the row Molecular mass, 119.37. To the right of the table, the model: a black sphere with a white sphere above it and three larger green spheres below it and to either side." >}}
-The average mass of a chloroform molecule, CHCl₃, is 119.37 amu, which is the sum of the average atomic masses of each of its constituent atoms. The model shows the molecular structure of chloroform.
-{{< /mediafigure >}}
+| Element | Quantity | Average atomic mass (amu) | Subtotal (amu) |
+|---|---|---|---|
+| C | 1 | 12.011 | 12.011 |
+| H | 1 | 1.0080 | 1.0080 |
+| Cl | 3 | 35.45 | 106.35 |
+| | | **Molecular mass** | **119.37** |
 
-Likewise, the molecular mass of an aspirin molecule, C₉H₈O₄, is the sum of the atomic masses of nine carbon atoms, eight hydrogen atoms, and four oxygen atoms, which amounts to 180.15 amu (shown in the figure below).
+The average mass of a chloroform molecule, CHCl₃, is 119.37 amu, which is the sum of the average atomic masses of each of its constituent atoms.
 
-{{< mediafigure src="chemistry/CNX_Chem_03_01_aspirin" kind="diagram" alt="A calculation table and a ball-and-stick model. Columns: element, quantity, average atomic mass (amu), subtotal (amu): C, 9 × 12.01 = 108.09; H, 8 × 1.008 = 8.064; O, 4 × 16.00 = 64.00. A rule under the last subtotal, then the row Molecular mass, 180.15. To the right, the model: a ring of six black spheres, four of them carrying a white sphere; one ring sphere bonded to a black sphere with two red spheres, one of which carries a white sphere; the next ring sphere bonded to a red sphere linked to a black sphere with a second red sphere and a black sphere carrying three white spheres." >}}
-The average mass of an aspirin molecule is 180.15 amu. The model shows the molecular structure of aspirin, C₉H₈O₄.
-{{< /mediafigure >}}
+*Source note:* the source works this section’s examples with atomic masses rounded to four figures. Here they are worked with the masses this book’s periodic table prints (Appendix A), so some results differ from the source’s in their last digits.
+
+Likewise, the molecular mass of an aspirin molecule, C₉H₈O₄, is the sum of the atomic masses of nine carbon atoms, eight hydrogen atoms, and four oxygen atoms, which amounts to 180.159 amu (shown in the table below).
+
+| Element | Quantity | Average atomic mass (amu) | Subtotal (amu) |
+|---|---|---|---|
+| C | 9 | 12.011 | 108.099 |
+| H | 8 | 1.0080 | 8.0640 |
+| O | 4 | 15.999 | 63.996 |
+| | | **Molecular mass** | **180.159** |
+
+The average mass of an aspirin molecule, C₉H₈O₄, is 180.159 amu.
 
 **Example.** *Computing Molecular Mass for a Covalent Compound.* Ibuprofen, C₁₃H₁₈O₂, is a covalent compound and the active ingredient in several popular nonprescription pain medications, such as Advil and Motrin. What is the molecular mass (amu) for this compound?
 
 **Solution.** Molecules of this compound are composed of 13 carbon atoms, 18 hydrogen atoms, and 2 oxygen atoms. Following the approach described above, the average molecular mass for this compound is therefore:
 
-{{< mediafigure src="chemistry/CNX_Chem_03_01_ibuprofenmass_img" kind="diagram" alt="A calculation table beside a ball-and-stick model. The table's columns are element, quantity, average atomic mass (amu), and subtotal (amu): C, 13 × 12.01 = 156.13; H, 18 × 1.008 = 18.144; O, 2 × 16.00 = 32.00. A rule under the last subtotal, then the row Molecular mass, 206.27. To the right, the model: a ring of six black spheres with a branched chain of black and white spheres on its left and, on its right, a chain ending in a black sphere bonded to two red spheres, one of which carries a white sphere." >}}
-{{< /mediafigure >}}
+| Element | Quantity | Average atomic mass (amu) | Subtotal (amu) |
+|---|---|---|---|
+| C | 13 | 12.011 | 156.143 |
+| H | 18 | 1.0080 | 18.1440 |
+| O | 2 | 15.999 | 31.998 |
+| | | **Molecular mass** | **206.285** |
 
 {{< fillin
   question="Acetaminophen, C₈H₉NO₂, is a covalent compound and the active ingredient in several popular nonprescription pain medications, such as Tylenol. What is the molecular mass (amu) for this compound?"
-  answer="151.16"
-  answerForm="sig-figs:5 last-digit:1"
-  answerDisplay="$151.16\ \text{amu}$"
+  answer="151.165"
+  answerForm="sig-figs:6 last-digit:1"
+  answerDisplay="$151.165\ \text{amu}$"
   hint="Follow the approach of the ibuprofen solution above, with the average atomic masses from the periodic table."
 >}}
 
@@ -55,11 +71,15 @@ The average mass of an aspirin molecule is 180.15 amu. The model shows the molec
 
 Ionic compounds are composed of discrete cations and anions combined in ratios to yield electrically neutral bulk matter. The formula mass for an ionic compound is calculated in the same way as the formula mass for covalent compounds: by summing the average atomic masses of all the atoms in the compound’s formula. Keep in mind, however, that the formula for an ionic compound does not represent the composition of a discrete molecule, so it may not correctly be referred to as the “molecular mass.”
 
-As an example, consider sodium chloride, NaCl, the chemical name for common table salt. Sodium chloride is an ionic compound composed of sodium cations, Na⁺, and chloride anions, Cl⁻, combined in a 1:1 ratio. The formula mass for this compound is computed as 58.44 amu (see the figure below).
+As an example, consider sodium chloride, NaCl, the chemical name for common table salt. Sodium chloride is an ionic compound composed of sodium cations, Na⁺, and chloride anions, Cl⁻, combined in a 1:1 ratio. The formula mass for this compound is computed as 58.44 amu (see the table below).
 
-{{< mediafigure src="chemistry/CNX_Chem_03_01_saltMass" kind="diagram" alt="A calculation table beside a model of a crystal. The table's columns are element, quantity, average atomic mass (amu), and subtotal: Na, 1 × 22.99 = 22.99; Cl, 1 × 35.45 = 35.45. A rule under the last subtotal, then the row Formula mass, 58.44. To the right of the table, a cube-shaped lattice of purple and green spheres joined by sticks, the two colors alternating along every row." >}}
+| Element | Quantity | Average atomic mass (amu) | Subtotal |
+|---|---|---|---|
+| Na | 1 | 22.990 | 22.990 |
+| Cl | 1 | 35.45 | 35.45 |
+| | | **Formula mass** | **58.44** |
+
 Table salt, NaCl, contains an array of sodium and chloride ions combined in a 1:1 ratio. Its formula mass is 58.44 amu.
-{{< /mediafigure >}}
 
 Note that the average masses of neutral sodium and chlorine atoms were used in this computation, rather than the masses for sodium cations and chlorine anions. This approach is perfectly acceptable when computing the formula mass of an ionic compound. Even though a sodium cation has a slightly smaller mass than a sodium atom (since it is missing an electron), this difference will be offset by the fact that a chloride anion is slightly more massive than a chlorine atom (due to the extra electron). Moreover, the mass of an electron is negligibly small with respect to the mass of a typical atom. Even when calculating the mass of an isolated ion, the missing or additional electrons can generally be ignored, since their contribution to the overall mass is negligible, reflected only in the nonsignificant digits that will be lost when the computed mass is properly rounded. The few exceptions to this guideline are very light ions derived from elements with precisely known atomic masses.
 
@@ -67,14 +87,18 @@ Note that the average masses of neutral sodium and chlorine atoms were used in t
 
 **Solution.** The formula for this compound indicates it contains Al³⁺ and SO₄²⁻ ions combined in a 2:3 ratio. For purposes of computing a formula mass, it is helpful to rewrite the formula in the simpler format, Al₂S₃O₁₂. Following the approach outlined above, the formula mass for this compound is calculated as follows:
 
-{{< mediafigure src="chemistry/CNX_Chem_03_01_alsulfatemass_img" kind="diagram" alt="A calculation table beside a ball-and-stick model. The table's columns are element, quantity, average atomic mass (amu), and subtotal (amu): Al, 2 × 26.98 = 53.96; S, 3 × 32.06 = 96.18; O, 12 × 16.00 = 192.00. A rule under the last subtotal, then the row Formula mass, 342.14. To the right, the model: a sprawling network of gray, yellow, and red spheres, the red spheres bridging the gray and yellow ones." >}}
-{{< /mediafigure >}}
+| Element | Quantity | Average atomic mass (amu) | Subtotal (amu) |
+|---|---|---|---|
+| Al | 2 | 26.982 | 53.964 |
+| S | 3 | 32.06 | 96.18 |
+| O | 12 | 15.999 | 191.988 |
+| | | **Formula mass** | **342.13** |
 
 {{< fillin
   question="Calcium phosphate, Ca₃(PO₄)₂, is an ionic compound and a common anti-caking agent added to food products. What is the formula mass (amu) of calcium phosphate?"
-  answer="310.18"
-  answerForm="sig-figs:5 last-digit:1"
-  answerDisplay="$310.18\ \text{amu}$"
+  answer="310.174"
+  answerForm="sig-figs:6 last-digit:1"
+  answerDisplay="$310.174\ \text{amu}$"
   hint="Rewrite the formula in the simpler format, as the aluminum sulfate solution above does, then follow its approach with the average atomic masses from the periodic table."
 >}}
 
@@ -98,10 +122,10 @@ Each sample contains $6.02 \times 10^{23}$ molecules or formula units—1.00 mol
 
 | Element | Average Atomic Mass (amu) | Molar Mass (g/mol) | Atoms/Mole |
 |---|---|---|---|
-| C | 12.01 | 12.01 | $6.022 \times 10^{23}$ |
-| H | 1.008 | 1.008 | $6.022 \times 10^{23}$ |
-| O | 16.00 | 16.00 | $6.022 \times 10^{23}$ |
-| Na | 22.99 | 22.99 | $6.022 \times 10^{23}$ |
+| C | 12.011 | 12.011 | $6.022 \times 10^{23}$ |
+| H | 1.0080 | 1.0080 | $6.022 \times 10^{23}$ |
+| O | 15.999 | 15.999 | $6.022 \times 10^{23}$ |
+| Na | 22.990 | 22.990 | $6.022 \times 10^{23}$ |
 | Cl | 35.45 | 35.45 | $6.022 \times 10^{23}$ |
 
 While atomic mass and molar mass are numerically equivalent, keep in mind that they are vastly different in terms of scale, as represented by the vast difference in the magnitudes of their respective units (amu versus g). To appreciate the enormity of the mole, consider a small drop of water weighing about 0.03 g (see the photograph below). Although this represents just a tiny fraction of 1 mole of water (~18 g), it contains more water molecules than can be clearly imagined. If the molecules were distributed equally among the roughly eight billion people on earth, each person would receive more than 100 billion molecules.
@@ -120,7 +144,7 @@ The relationships between formula mass, the mole, and Avogadro’s number can be
 
 **Example.** *Deriving Moles from Grams for an Element.* According to nutritional guidelines from the US Department of Agriculture, the estimated average requirement for dietary potassium is 4.7 g. What is the estimated average requirement of potassium in moles?
 
-**Solution.** The mass of K is provided, and the corresponding amount of K in moles is requested. Referring to the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), the atomic mass of K is 39.10 amu, and so its molar mass is 39.10 g/mol. The given mass of K (4.7 g) is a bit more than one-tenth the molar mass (39.10 g), so a reasonable “ballpark” estimate of the number of moles would be slightly greater than 0.1 mol.
+**Solution.** The mass of K is provided, and the corresponding amount of K in moles is requested. Referring to the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), the atomic mass of K is 39.098 amu, and so its molar mass is 39.098 g/mol. The given mass of K (4.7 g) is a bit more than one-tenth the molar mass (39.098 g), so a reasonable “ballpark” estimate of the number of moles would be slightly greater than 0.1 mol.
 
 The molar amount of a substance may be calculated by dividing its mass (g) by its molar mass (g/mol):
 
@@ -129,7 +153,7 @@ The molar amount of a substance may be calculated by dividing its mass (g) by it
 
 The factor-label method supports this mathematical approach since the unit “g” cancels and the answer has units of “mol:”
 
-$$4.7\ \cancel{\text{g}}\ \cancel{\text{K}} \left(\frac{\text{mol K}}{39.10\ \cancel{\text{g K}}}\right) = 0.12\ \text{mol K}$$
+$$4.7\ \cancel{\text{g}}\ \cancel{\text{K}} \left(\frac{\text{mol K}}{39.098\ \cancel{\text{g K}}}\right) = 0.12\ \text{mol K}$$
 
 The calculated magnitude (0.12 mol K) is consistent with our ballpark expectation, since it is a bit greater than 0.1 mol.
 
@@ -160,9 +184,9 @@ The result is in agreement with our expectations, around 0.04 g Ar.
 
 {{< fillin
   question="What is the mass of 2.561 mol of gold? Enter the mass in grams."
-  answer="504.5"
+  answer="504.4"
   answerForm="sig-figs:4 last-digit:1"
-  answerDisplay="$504.5\ \text{g}$"
+  answerDisplay="$504.4\ \text{g}$"
   hint="Follow the argon solution above, with the molar mass of gold from the periodic table."
 >}}
 
@@ -179,15 +203,15 @@ Copper wire is composed of many, many atoms of Cu. (credit: Emilian Robert Vicol
 
 Considering that the provided sample mass (5.00 g) is a little less than one-tenth the mass of 1 mole of Cu (~64 g), a reasonable estimate for the number of atoms in the sample would be on the order of one-tenth $N_\text{A}$, or approximately $10^{22}$ Cu atoms. Carrying out the two-step computation yields:
 
-$$\begin{aligned} &5.00\ \cancel{\text{g}}\ \cancel{\text{Cu}} \left(\frac{\cancel{\text{mol Cu}}}{63.55\ \cancel{\text{g Cu}}}\right)\left(\frac{6.022 \times 10^{23}\ \text{Cu atoms}}{\cancel{\text{mol Cu}}}\right) \\ &= 4.74 \times 10^{22}\ \text{Cu atoms} \end{aligned}$$
+$$\begin{aligned} &5.00\ \cancel{\text{g}}\ \cancel{\text{Cu}} \left(\frac{\cancel{\text{mol Cu}}}{63.546\ \cancel{\text{g Cu}}}\right)\left(\frac{6.022 \times 10^{23}\ \text{Cu atoms}}{\cancel{\text{mol Cu}}}\right) \\ &= 4.74 \times 10^{22}\ \text{Cu atoms} \end{aligned}$$
 
 The factor-label method yields the desired cancellation of units, and the computed result is on the order of $10^{22}$ as expected.
 
 {{< fillin
   question="A prospector panning for gold in a river collects 15.00 g of pure gold. How many Au atoms are in this quantity of gold?"
-  answer="4.585\times10^{22}"
+  answer="4.586\times10^{22}"
   answerForm="sig-figs:4 last-digit:1"
-  answerDisplay="$4.585 \times 10^{22}\ \text{Au atoms}$"
+  answerDisplay="$4.586 \times 10^{22}\ \text{Au atoms}$"
   hint="Follow the two-step computation of the copper solution above, with the molar mass of gold from the periodic table."
 >}}
 
@@ -200,12 +224,17 @@ The factor-label method yields the desired cancellation of units, and the comput
 
 The molar mass of glycine is required for this calculation, and it is computed in the same fashion as its molecular mass. One mole of glycine, C₂H₅O₂N, contains 2 moles of carbon, 5 moles of hydrogen, 2 moles of oxygen, and 1 mole of nitrogen:
 
-{{< mediafigure src="chemistry/CNX_Chem_03_01_glycinemass_img" kind="diagram" alt="A calculation table beside a ball-and-stick model. The table's columns are element, quantity (mol element/mol compound), molar mass (g/mol element), and subtotal (g/mol compound): C, 2 × 12.01 = 24.02; H, 5 × 1.008 = 5.040; O, 2 × 16.00 = 32.00; N, 1 × 14.007 = 14.007. A rule under the last subtotal, then the row Molecular mass (g/mol compound), 75.07. To the right, the model: a black sphere bonded to two red spheres, one of them carrying a white sphere, and to a second black sphere bonded to a white sphere and to a blue sphere that carries two white spheres." >}}
-{{< /mediafigure >}}
+| Element | Quantity (mol element/mol compound) | Molar mass (g/mol element) | Subtotal (g/mol compound) |
+|---|---|---|---|
+| C | 2 | 12.011 | 24.022 |
+| H | 5 | 1.0080 | 5.0400 |
+| O | 2 | 15.999 | 31.998 |
+| N | 1 | 14.007 | 14.007 |
+| | | **Molecular mass (g/mol compound)** | **75.067** |
 
 The provided mass of glycine (~28 g) is a bit more than one-third the molar mass (~75 g/mol), so the computed result is expected to be a bit greater than one-third of a mole (~0.33 mol). Dividing the compound’s mass by its molar mass yields:
 
-$$28.35\ \cancel{\text{g glycine}} \left(\frac{\text{mol glycine}}{75.07\ \cancel{\text{g glycine}}}\right) = 0.3776\ \text{mol glycine}$$
+$$28.35\ \cancel{\text{g glycine}} \left(\frac{\text{mol glycine}}{75.067\ \cancel{\text{g glycine}}}\right) = 0.3777\ \text{mol glycine}$$
 
 This result is consistent with the rough estimate.
 
@@ -311,80 +340,80 @@ Significant progress has been made recently in directly measuring the number of 
 
 ## Practice
 
-*Source note:* the source’s answer key for some exercises of this section was computed from atomic masses with more digits than this book’s periodic table prints. An answer worked from the table is graded as correct on those items; where an item asks for a formula mass or a molar mass itself, its number of significant figures is not graded.
+*Source note:* the source’s answer key for some exercises of this section was worked from atomic masses other than the ones in this book’s periodic table. The answers here are worked from this book’s table (Appendix A), so some differ from the source’s in their last digits.
 
 ### Calculate formula masses for covalent and ionic compounds
 
 {{< fillin
   question="What is the total mass (amu) of carbon in the following molecule? CH₄."
-  answer="12.01"
-  answerForm="sig-figs:4 last-digit:1"
-  answerDisplay="$12.01\ \text{amu}$"
+  answer="12.011"
+  answerForm="sig-figs:5 last-digit:1"
+  answerDisplay="$12.011\ \text{amu}$"
   hint="Count the carbon atoms in the formula, and use the average atomic mass of carbon from the periodic table."
 >}}
 
 {{< fillin
   question="What is the total mass (amu) of carbon in the following molecule? CHCl₃."
-  answer="12.01"
-  answerForm="sig-figs:4 last-digit:1"
-  answerDisplay="$12.01\ \text{amu}$"
+  answer="12.011"
+  answerForm="sig-figs:5 last-digit:1"
+  answerDisplay="$12.011\ \text{amu}$"
   hint="Count the carbon atoms in the formula, and use the average atomic mass of carbon from the periodic table."
 >}}
 
 {{< fillin
   question="What is the total mass (amu) of carbon in the following molecule? C₁₂H₁₀O₆."
-  answer="144.12"
-  answerForm="sig-figs:5 last-digit:1"
-  answerDisplay="$144.12\ \text{amu}$"
+  answer="144.132"
+  answerForm="sig-figs:6 last-digit:1"
+  answerDisplay="$144.132\ \text{amu}$"
   hint="Count the carbon atoms in the formula, and use the average atomic mass of carbon from the periodic table."
 >}}
 
 {{< fillin
   question="What is the total mass (amu) of carbon in the following molecule? CH₃CH₂CH₂CH₂CH₃."
-  answer="60.05"
-  answerForm="sig-figs:4 last-digit:1"
-  answerDisplay="$60.05\ \text{amu}$"
+  answer="60.055"
+  answerForm="sig-figs:5 last-digit:1"
+  answerDisplay="$60.055\ \text{amu}$"
   hint="Count the carbon atoms in the formula, and use the average atomic mass of carbon from the periodic table."
 >}}
 
 {{< fillin
   question="Calculate the molecular or formula mass of the following: P₄. Enter the molecular mass in amu."
   answer="123.896"
-  answerForm="worked:123.88"
+  answerForm="sig-figs:6 last-digit:1"
   answerDisplay="$123.896\ \text{amu}$"
-  hint="Use the definition of formula mass, with the average atomic masses from the periodic table, as in the formula-mass figures above."
+  hint="Use the definition of formula mass, with the average atomic masses from the periodic table, as in the formula-mass tables above."
 >}}
 
 {{< fillin
   question="Calculate the molecular or formula mass of the following: H₂O. Enter the molecular mass in amu."
   answer="18.015"
-  answerForm="worked:18.02"
+  answerForm="sig-figs:5 last-digit:1"
   answerDisplay="$18.015\ \text{amu}$"
-  hint="Use the definition of formula mass, with the average atomic masses from the periodic table, as in the formula-mass figures above."
+  hint="Use the definition of formula mass, with the average atomic masses from the periodic table, as in the formula-mass tables above."
 >}}
 
 {{< fillin
   question="Calculate the molecular or formula mass of the following: Ca(NO₃)₂. Enter the formula mass in amu."
   answer="164.086"
-  answerForm="worked:164.10"
+  answerForm="sig-figs:6 last-digit:1"
   answerDisplay="$164.086\ \text{amu}$"
-  hint="Use the definition of formula mass, with the average atomic masses from the periodic table, as in the formula-mass figures above."
+  hint="Use the definition of formula mass, with the average atomic masses from the periodic table, as in the formula-mass tables above."
 >}}
 
 {{< fillin
   question="Calculate the molecular or formula mass of the following: CH₃CO₂H (acetic acid). Enter the molecular mass in amu."
   answer="60.052"
-  answerForm="worked:60.05"
+  answerForm="sig-figs:5 last-digit:1"
   answerDisplay="$60.052\ \text{amu}$"
-  hint="Use the definition of formula mass, with the average atomic masses from the periodic table, as in the formula-mass figures above."
+  hint="Use the definition of formula mass, with the average atomic masses from the periodic table, as in the formula-mass tables above."
 >}}
 
 {{< fillin
   question="Calculate the molecular or formula mass of the following: C₁₂H₂₂O₁₁ (sucrose, cane sugar). Enter the molecular mass in amu."
   answer="342.297"
-  answerForm="worked:342.30"
+  answerForm="sig-figs:6 last-digit:1"
   answerDisplay="$342.297\ \text{amu}$"
-  hint="Use the definition of formula mass, with the average atomic masses from the periodic table, as in the formula-mass figures above."
+  hint="Use the definition of formula mass, with the average atomic masses from the periodic table, as in the formula-mass tables above."
 >}}
 
 {{< mediafigure src="chemistry/CNX_Chem_03_01_Ex01_06a_img" kind="diagram" alt="A structural formula: two C atoms joined by a double bond. The left C atom carries two H atoms, one above and one below; the right C atom carries one H atom above and, below it, a CH₂CH₃ group written as text." >}}
@@ -392,9 +421,9 @@ Significant progress has been made recently in directly measuring the number of 
 
 {{< fillin
   question="Determine the molecular mass of the following compound, shown in the figure above. Enter the molecular mass in amu."
-  answer="56.107"
-  answerForm="worked:56.10"
-  answerDisplay="$56.107\ \text{amu}$"
+  answer="56.108"
+  answerForm="sig-figs:5 last-digit:1"
+  answerDisplay="$56.108\ \text{amu}$"
   hint="Count the atoms of each element in the structural formula, then use the definition of molecular mass with the average atomic masses from the periodic table."
 >}}
 
@@ -403,9 +432,9 @@ Significant progress has been made recently in directly measuring the number of 
 
 {{< fillin
   question="Determine the molecular mass of the following compound, shown in the figure above. Enter the molecular mass in amu."
-  answer="54.091"
-  answerForm="worked:54.09"
-  answerDisplay="$54.091\ \text{amu}$"
+  answer="54.092"
+  answerForm="sig-figs:5 last-digit:1"
+  answerDisplay="$54.092\ \text{amu}$"
   hint="Count the atoms of each element in the structural formula, then use the definition of molecular mass with the average atomic masses from the periodic table."
 >}}
 
@@ -414,9 +443,9 @@ Significant progress has been made recently in directly measuring the number of 
 
 {{< fillin
   question="Determine the molecular mass of the following compound, shown in the figure above. (The atoms in the drawing are silicon, hydrogen, and chlorine.) Enter the molecular mass in amu."
-  answer="199.9976"
-  answerForm="worked:200.00"
-  answerDisplay="$199.9976\ \text{amu}$"
+  answer="199.99"
+  answerForm="sig-figs:5 last-digit:1"
+  answerDisplay="$199.99\ \text{amu}$"
   hint="Count the atoms of each element in the structural formula, then use the definition of molecular mass with the average atomic masses from the periodic table."
 >}}
 
@@ -425,9 +454,9 @@ Significant progress has been made recently in directly measuring the number of 
 
 {{< fillin
   question="Determine the molecular mass of the following compound, shown in the figure above. Enter the molecular mass in amu."
-  answer="97.9950"
-  answerForm="worked:97.99"
-  answerDisplay="$97.9950\ \text{amu}$"
+  answer="97.994"
+  answerForm="sig-figs:5 last-digit:1"
+  answerDisplay="$97.994\ \text{amu}$"
   hint="Count the atoms of each element in the structural formula, then use the definition of molecular mass with the average atomic masses from the periodic table."
 >}}
 
@@ -444,80 +473,80 @@ the molecular mass is the mass of 1 molecule
 {{< fillin
   question="Calculate the molar mass of the following: S₈. Enter the molar mass in g/mol."
   answer="256.48"
-  answerForm="worked:256.48"
+  answerForm="sig-figs:5 last-digit:1"
   answerDisplay="$256.48\ \text{g/mol}$"
   hint="Use the definition of molar mass, with the average atomic masses from the periodic table, as in the molar-mass table of the glycine example above."
 >}}
 
 {{< fillin
   question="Calculate the molar mass of the following: C₅H₁₂. Enter the molar mass in g/mol."
-  answer="72.150"
-  answerForm="worked:72.15"
-  answerDisplay="$72.150\ \text{g/mol}$"
+  answer="72.151"
+  answerForm="sig-figs:5 last-digit:1"
+  answerDisplay="$72.151\ \text{g/mol}$"
   hint="Use the definition of molar mass, with the average atomic masses from the periodic table, as in the molar-mass table of the glycine example above."
 >}}
 
 {{< fillin
   question="Calculate the molar mass of the following: Sc₂(SO₄)₃. Enter the molar mass in g/mol."
-  answer="378.103"
-  answerForm="worked:378.10"
-  answerDisplay="$378.103\ \text{g/mol}$"
+  answer="378.08"
+  answerForm="sig-figs:5 last-digit:1"
+  answerDisplay="$378.08\ \text{g/mol}$"
   hint="Use the definition of molar mass, with the average atomic masses from the periodic table, as in the molar-mass table of the glycine example above."
 >}}
 
 {{< fillin
   question="Calculate the molar mass of the following: CH₃COCH₃ (acetone). Enter the molar mass in g/mol."
   answer="58.080"
-  answerForm="worked:58.08"
+  answerForm="sig-figs:5 last-digit:1"
   answerDisplay="$58.080\ \text{g/mol}$"
   hint="Use the definition of molar mass, with the average atomic masses from the periodic table, as in the molar-mass table of the glycine example above."
 >}}
 
 {{< fillin
   question="Calculate the molar mass of the following: C₆H₁₂O₆ (glucose). Enter the molar mass in g/mol."
-  answer="180.158"
-  answerForm="worked:180.16"
-  answerDisplay="$180.158\ \text{g/mol}$"
+  answer="180.156"
+  answerForm="sig-figs:6 last-digit:1"
+  answerDisplay="$180.156\ \text{g/mol}$"
   hint="Use the definition of molar mass, with the average atomic masses from the periodic table, as in the molar-mass table of the glycine example above."
 >}}
 
 {{< fillin
   question="Calculate the molar mass of the following: the anesthetic halothane, C₂HBrClF₃. Enter the molar mass in g/mol."
-  answer="197.382"
-  answerForm="worked:197.38"
-  answerDisplay="$197.382\ \text{g/mol}$"
+  answer="197.38"
+  answerForm="sig-figs:5 last-digit:1"
+  answerDisplay="$197.38\ \text{g/mol}$"
   hint="Use the definition of molar mass, with the average atomic masses from the periodic table, as in the molar-mass table of the glycine example above."
 >}}
 
 {{< fillin
   question="Calculate the molar mass of the following: the herbicide paraquat, C₁₂H₁₄N₂Cl₂. Enter the molar mass in g/mol."
-  answer="257.163"
-  answerForm="worked:257.15"
-  answerDisplay="$257.163\ \text{g/mol}$"
+  answer="257.16"
+  answerForm="sig-figs:5 last-digit:1"
+  answerDisplay="$257.16\ \text{g/mol}$"
   hint="Use the definition of molar mass, with the average atomic masses from the periodic table, as in the molar-mass table of the glycine example above."
 >}}
 
 {{< fillin
   question="Calculate the molar mass of the following: caffeine, C₈H₁₀N₄O₂. Enter the molar mass in g/mol."
-  answer="194.193"
-  answerForm="worked:194.20"
-  answerDisplay="$194.193\ \text{g/mol}$"
+  answer="194.194"
+  answerForm="sig-figs:6 last-digit:1"
+  answerDisplay="$194.194\ \text{g/mol}$"
   hint="Use the definition of molar mass, with the average atomic masses from the periodic table, as in the molar-mass table of the glycine example above."
 >}}
 
 {{< fillin
   question="Calculate the molar mass of the following: urea, CO(NH₂)₂. Enter the molar mass in g/mol."
   answer="60.056"
-  answerForm="worked:60.06"
+  answerForm="sig-figs:5 last-digit:1"
   answerDisplay="$60.056\ \text{g/mol}$"
   hint="Use the definition of molar mass, with the average atomic masses from the periodic table, as in the molar-mass table of the glycine example above."
 >}}
 
 {{< fillin
   question="Calculate the molar mass of the following: a typical soap, C₁₇H₃₅CO₂Na. Enter the molar mass in g/mol."
-  answer="306.464"
-  answerForm="worked:306.45"
-  answerDisplay="$306.464\ \text{g/mol}$"
+  answer="306.466"
+  answerForm="sig-figs:6 last-digit:1"
+  answerDisplay="$306.466\ \text{g/mol}$"
   hint="Use the definition of molar mass, with the average atomic masses from the periodic table, as in the molar-mass table of the glycine example above."
 >}}
 
@@ -590,9 +619,9 @@ its formula has twice as many oxygen atoms as the other two compounds
 
 {{< fillin
   question="Determine the mass of the following: 2.345 mol LiCl. Enter the mass in grams."
-  answer="99.41"
+  answer="99.40"
   answerForm="sig-figs:4 last-digit:1"
-  answerDisplay="$99.41\ \text{g}$"
+  answerDisplay="$99.40\ \text{g}$"
   hint="Find the molar mass from the formula, then convert moles to grams as in the vitamin C example above."
 >}}
 
@@ -679,7 +708,7 @@ its formula has twice as many oxygen atoms as the other two compounds
 {{< fillin
   question="Determine the number of atoms and the mass of zirconium, silicon, and oxygen found in 0.3384 mol of zircon, ZrSiO₄, a semiprecious stone. Enter the mass of silicon in grams."
   answer="9.504"
-  answerForm="sig-figs:4 last-digit:1 worked:9.506"
+  answerForm="sig-figs:4 last-digit:1"
   answerDisplay="$9.504\ \text{g}$"
   hint="Moles of zircon to moles of the element’s atoms, with the formula’s subscript, then to grams with the element’s molar mass from the periodic table."
 >}}
@@ -760,12 +789,12 @@ its formula has twice as many oxygen atoms as the other two compounds
 20.0 g of H₂O (18.02 g/mol)
 77.0 g of CH₄ (16.04 g/mol)
 68.0 g of C₃H₆ (42.08 g/mol)
-100.0 g of N₂O (44.02 g/mol)
+100.0 g of N₂O (44.01 g/mol)
 84.0 g of HF (20.01 g/mol)
 {{< /multiplechoice >}}
 
-*Source note:* the source’s stem prints 16.06 g/mol for CH₄; the molar mass computed from this book’s periodic table is 16.04 g/mol, which is printed here.
+*Source note:* the source’s stem prints 16.06 g/mol for CH₄ and 44.02 g/mol for N₂O; the molar masses computed from this book’s periodic table are 16.04 g/mol and 44.01 g/mol, which are printed here.
 
 ---
 
-<small>This section is adapted from [Chemistry 2e, Section 3.1: Formula Mass and the Mole Concept](https://openstax.org/books/chemistry-2e/pages/3-1-formula-mass-and-the-mole-concept) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the nine captioned figures and the fourteen uncaptioned images (the worked examples’ calculation tables, flow charts, and saccharin structure, and the four structures of the molecular-mass exercise) re-encoded as WebP, the photographs marked as photos and the rest as diagrams, every alt text rewritten from the artwork (the source alts place the models of the chloroform, aspirin, and table-salt figures to the left of their tables, where the images print them to the right, and read the ibuprofen table’s hydrogen subtotal as 18.114 where it prints 18.144), and the exocytosis figure given an extended description; references to numbered figures and examples written as describing phrases (“the figure below”, “the example above on deriving moles from grams for an element”); the Link to Learning and How Sciences Interconnect boxes rendered as callouts; the eight worked examples set as prose, each followed by its Check Your Learning as interactive fill-ins (nine in all, the last example’s two answers as two items), the printed answers serving as their keys rather than appearing as text, and a sentence naming what to enter added where a stem leaves it open (the gold-mass, hydrazine, and butane items); the source’s equations and powers of ten typeset as KaTeX math, with unit cancellation set with a diagonal strike, and the copper, vitamin C, and two saccharin solution lines broken into aligned rows to fit the column; the words “periodic table” in the potassium example linked to Appendix A, the source linking nothing there; the footnote on dopamine vesicles set as a parenthetical after its sentence, its journal name corrected from “Scientific Report” to “Scientific Reports”; “chloride atom” corrected to “chlorine atom” in the paragraph on the masses of ions, and the missing space restored in “approximately 18 amu” in the summary; the 16 end-of-section exercises the source keys adapted into the interactive Practice block as 53 items — 47 fill-ins, 3 multiple-choice items, and 3 self-checks — one item per lettered part and one fill-in per quantity of a multi-quantity answer, each lead-in that addresses the parts together restated in the singular for its one part, and a sentence added where a stem leaves it open saying what to enter and in what unit; each of the four structures of the molecular-mass exercise set directly above its own item; the oxygen exercise asked as a choice among its three samples and then a self-check for the explanation; the aluminum exercise asked as the mass of aluminum in each sample and then a choice among the samples, the moles its answer prints, intermediate values, not asked, and its three masses keyed to the values the stem’s data give, with a Source note, where the source’s printed values carry more figures than those data give and do not all follow from them; the zircon exercise asked as six fill-ins, one per number of atoms and per mass; the cereal exercise asked as the computed number of servings, the rounding to about one serving not asked; a Source note added under the Practice heading saying that some exercise keys were computed from atomic masses with more digits than this book’s periodic table prints, and that those items take an answer worked from the table, without grading the number of significant figures where an item asks for a formula mass or a molar mass itself; a sentence naming the elements (silicon, hydrogen, and chlorine) added to the stem of one structure item of the molecular-mass exercise, because the drawing’s lettering of chlorine is ambiguous; Source notes added, the source’s text and numbers kept, after the potassium example on the status of its dietary figure and after the argon example on its figure for argon in air; the saccharin example’s count of carbon atoms corrected, with a Source note, to the value carried without rounding the intermediate number of molecules; the key-term definitions of mole and Avogadro’s number corrected, with a Source note, to the 2019 definition the body gives; the methane option of the least-molecules exercise printed with its molar mass corrected, with a Source note; and the 15 exercises the source prints no answer for are omitted.</small>
+<small>This section is adapted from [Chemistry 2e, Section 3.1: Formula Mass and the Mole Concept](https://openstax.org/books/chemistry-2e/pages/3-1-formula-mass-and-the-mole-concept) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the worked examples and the exercise answers computed from this book’s periodic table (Appendix A, IUPAC’s abridged standard atomic weights) where the source uses four-figure atomic masses, with Source notes in the body and under the Practice heading saying so; the six calculation-table figures (chloroform, aspirin, ibuprofen, table salt, aluminum sulfate, and glycine) replaced by tables worked from that periodic table, their molecular models omitted and the three captions kept as sentences after their tables, and the atomic masses of the table of elements likewise taken from it; the six remaining captioned figures and the eleven remaining uncaptioned images (the worked examples’ flow charts and saccharin structure, and the four structures of the molecular-mass exercise) re-encoded as WebP, the photographs marked as photos and the rest as diagrams, every alt text rewritten from the artwork, and the exocytosis figure given an extended description; references to numbered figures and examples written as describing phrases (“the figure below”, “the example above on deriving moles from grams for an element”); the Link to Learning and How Sciences Interconnect boxes rendered as callouts; the eight worked examples set as prose, each followed by its Check Your Learning as interactive fill-ins (nine in all, the last example’s two answers as two items), the answers serving as their keys rather than appearing as text, and a sentence naming what to enter added where a stem leaves it open (the gold-mass, hydrazine, and butane items); the source’s equations and powers of ten typeset as KaTeX math, with unit cancellation set with a diagonal strike, and the copper, vitamin C, and two saccharin solution lines broken into aligned rows to fit the column; the words “periodic table” in the potassium example linked to Appendix A, the source linking nothing there; the footnote on dopamine vesicles set as a parenthetical after its sentence, its journal name corrected from “Scientific Report” to “Scientific Reports”; “chloride atom” corrected to “chlorine atom” in the paragraph on the masses of ions, and the missing space restored in “approximately 18 amu” in the summary; the 16 end-of-section exercises the source keys adapted into the interactive Practice block as 53 items — 47 fill-ins, 3 multiple-choice items, and 3 self-checks — one item per lettered part and one fill-in per quantity of a multi-quantity answer, each lead-in that addresses the parts together restated in the singular for its one part, and a sentence added where a stem leaves it open saying what to enter and in what unit; each of the four structures of the molecular-mass exercise set directly above its own item; the oxygen exercise asked as a choice among its three samples and then a self-check for the explanation; the aluminum exercise asked as the mass of aluminum in each sample and then a choice among the samples, the moles its answer prints, intermediate values, not asked, and its three masses keyed to the values the stem’s data give, with a Source note, where the source’s printed values carry more figures than those data give and do not all follow from them; the zircon exercise asked as six fill-ins, one per number of atoms and per mass; the cereal exercise asked as the computed number of servings, the rounding to about one serving not asked; a sentence naming the elements (silicon, hydrogen, and chlorine) added to the stem of one structure item of the molecular-mass exercise, because the drawing’s lettering of chlorine is ambiguous; Source notes added, the source’s text and numbers kept, after the potassium example on the status of its dietary figure and after the argon example on its figure for argon in air; the saccharin example’s count of carbon atoms corrected, with a Source note, to the value carried without rounding the intermediate number of molecules; the key-term definitions of mole and Avogadro’s number corrected, with a Source note, to the 2019 definition the body gives; the methane option of the least-molecules exercise printed with its molar mass corrected, with a Source note; and the 15 exercises the source prints no answer for are omitted.</small>

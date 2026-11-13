@@ -930,3 +930,58 @@ test('a selfcheck model answer that prints an equation the source does not is a 
   assert.equal(selfcheck('Na₂CO₃(aq) + H₂S(g) ⟶ NaHS(aq) + NaHCO₃(aq).').status, 'diverges');
   assert.match(selfcheck('Na₂CO₃(aq) + H₂S(g) ⟶ NaHS(aq) + NaHCO₃(aq).').detail, /an equation source fs-idp89462576\(b\) does not print/);
 });
+
+/* ---- keys worked from this book's own atomic masses ----------------------- */
+
+// Chemistry's periodic table is data/chemistry/elements.json (IUPAC's
+// abridged standard atomic weights); the source's answer key was worked from
+// other masses. A key is what the book's table gives (Derek, November 12,
+// 2026), so it may stand a unit or two of its last place from the source's
+// print — and only that far, only on an item whose form says a factor comes
+// from a table, and for a formula mass only when it is the table's own sum.
+test('a key a unit or two from the source’s print by its atomic masses is data-differs; farther, or graded to the digit, it is key-differs', async () => {
+  const { loadElements } = await import('./elements.mjs');
+  const { dataDifference, keyNumeral } = await import('../verify/verify-source-keys.mjs');
+  const elements = loadElements();
+  const masses = keyedUnits(cnxml(exercises(
+    exercise('m1', ['Calculate the molar mass of each of the following:', '(a) S<sub>8</sub>', '(b) C<sub>5</sub>H<sub>12</sub>', '(c) Sc<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub>'], '(a) 256.48 g/mol; (b) 72.150 g mol<sup>−1</sup>; (c) 378.103 g mol<sup>−1</sup>'),
+    exercise('m2', ['What mass of oxygen is formed by the decomposition of 1.252 g of silver(I) oxide?'], '0.08644 g O<sub>2</sub>'),
+    exercise('m3', ['What mass of zinc cyanide is produced by the reaction of 35.27 g of the silver complex?'], '10.41 g'),
+  )));
+  const ask = 'Calculate the molar mass of each of the following:';
+  const judge = (item) => judgeKeyedUnit(item, masses, { elements });
+
+  // The table's own sum, where the source prints the same number.
+  assert.equal(judge(fillin(`${ask} S₈. Enter the molar mass in g/mol.`, '256.48', 'sig-figs:5 last-digit:1')).status, 'confirmed');
+  // The table's sum one unit from the print, and two units at the coarser place (378.08 beside 378.103).
+  const pentane = judge(fillin(`${ask} C₅H₁₂. Enter the molar mass in g/mol.`, '72.151', 'sig-figs:5 last-digit:1'));
+  assert.deepEqual([pentane.status, pentane.sourcePrint, pentane.units], ['data-differs', '72.150', 1]);
+  const scandium = judge(fillin(`${ask} Sc₂(SO₄)₃. Enter the molar mass in g/mol.`, '378.08', 'sig-figs:5 last-digit:1'));
+  assert.deepEqual([scandium.status, scandium.sourcePrint, scandium.units], ['data-differs', '378.103', 2]);
+  // A formula mass that is NOT the table's sum fails whatever the source prints — the source's own number included.
+  const sourceKey = judge(fillin(`${ask} C₅H₁₂. Enter the molar mass in g/mol.`, '72.150', 'sig-figs:5 last-digit:1'));
+  assert.equal(sourceKey.status, 'table-differs');
+  assert.match(sourceKey.detail, /periodic table gives as 72\.151/);
+  // ...and so does the table's value written to other places.
+  assert.equal(judge(fillin(`${ask} S₈. Enter the molar mass in g/mol.`, '256.5', 'sig-figs:4 last-digit:1')).status, 'table-differs');
+
+  // A calculation: one unit away under last-digit:1 is the data; three units is a wrong key.
+  const oxygen = 'What mass of oxygen is formed by the decomposition of 1.252 g of silver(I) oxide? Enter the mass in grams.';
+  assert.equal(judge(fillin(oxygen, '0.08644', 'sig-figs:4 last-digit:1')).status, 'confirmed');
+  assert.equal(judge(fillin(oxygen, '0.08643', 'sig-figs:4 last-digit:1')).status, 'data-differs');
+  assert.equal(judge(fillin(oxygen, '0.08647', 'sig-figs:4 last-digit:1')).status, 'key-differs');
+  // No table factor declared: graded to the digit, so never the data.
+  assert.equal(judge(fillin(oxygen, '0.08643', 'sig-figs:4 last-digit:0')).status, 'key-differs');
+  // Another count of figures than the source prints is not the data either.
+  assert.equal(judge(fillin(oxygen, '0.0864', 'sig-figs:3 last-digit:1')).status, 'key-differs');
+  // Without element data (every other book) the status does not exist.
+  assert.equal(judgeKeyedUnit(fillin(oxygen, '0.08643', 'sig-figs:4 last-digit:1'), masses).status, 'key-differs');
+
+  // The distance is counted at the coarser last place, and a large value's two units are still within a tenth of a percent.
+  const zinc = 'What mass of zinc cyanide is produced by the reaction of 35.27 g of the silver complex? Enter the mass in grams.';
+  assert.deepEqual(judge(fillin(zinc, '10.40', 'sig-figs:4 last-digit:1')).units, 1);
+  assert.equal(dataDifference(keyNumeral('199.99'), printedNumerals('199.9976 amu')).units, 1);
+  assert.equal(dataDifference(keyNumeral('5.336\\times10^{22}'), printedNumerals('5.337 × 10^{22} molecules')).units, 1);
+  assert.equal(dataDifference(keyNumeral('12.3'), printedNumerals('12.6 g')), null, 'three units');
+  assert.equal(dataDifference(keyNumeral('1.2'), printedNumerals('1.4 g')), null, 'two units of a two-figure number is more than a tenth of a percent and a unit');
+});

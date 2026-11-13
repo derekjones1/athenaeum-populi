@@ -10,7 +10,7 @@ authoring_status: in-progress
 reference:
   label: Periodic table
   page: /physical-sciences/chemistry/appendices/a-the-periodic-table
-  figure: chemistry/CNX_Chem_00_AA_PeriodicPU_img
+  figure: chemistry/periodic-table
   alt: "The periodic table of the elements: each box prints an element’s atomic number, symbol, atomic mass, and name. Appendix A lists the same for all 118 elements as a table."
 cascade:
   type: docs
