@@ -261,21 +261,21 @@ $$\begin{aligned} &\ce{CO2(aq)} + \cancel{\ce{2Na+(aq)}} + \ce{2OH-(aq)} \\ &\qu
   question="Write a balanced molecular equation describing the following chemical reaction. Solid calcium carbonate is heated and decomposes to solid calcium oxide and carbon dioxide gas."
   answer="CaCO₃(s) ⟶ CaO(s) + CO₂(g)"
   answerForm="equation"
-  hint="Write the formula and state symbol of each substance the description names, reactants on the left, then balance by inspection."
+  hint="Write the formula and state symbol of each substance the description names, then balance by inspection."
 >}}
 
 {{< textin
   question="Write a balanced molecular equation describing the following chemical reaction. Gaseous butane, C₄H₁₀, reacts with diatomic oxygen gas to yield gaseous carbon dioxide and water vapor."
   answer="2C₄H₁₀(g) + 13O₂(g) ⟶ 8CO₂(g) + 10H₂O(g)"
   answerForm="equation"
-  hint="Write the formula and state symbol of each substance named, then balance by inspection."
+  hint="Write the formula and state symbol of each substance the description names, then balance by inspection."
 >}}
 
 {{< textin
   question="Write a balanced molecular equation describing the following chemical reaction. Aqueous solutions of magnesium chloride and sodium hydroxide react to produce solid magnesium hydroxide and aqueous sodium chloride."
   answer="MgCl₂(aq) + 2NaOH(aq) ⟶ Mg(OH)₂(s) + 2NaCl(aq)"
   answerForm="equation"
-  hint="Write each formula from the charges of its ions, then balance by inspection, counting a polyatomic ion as a unit."
+  hint="Write the formula and state symbol of each substance the description names, then balance by inspection."
 >}}
 
 *Source note:* the answer graded here is not the one the source prints for this reaction; the source’s equation misprints one character of a formula.
@@ -284,7 +284,7 @@ $$\begin{aligned} &\ce{CO2(aq)} + \cancel{\ce{2Na+(aq)}} + \ce{2OH-(aq)} \\ &\qu
   question="Write a balanced molecular equation describing the following chemical reaction. Water vapor reacts with sodium metal to produce solid sodium hydroxide and hydrogen gas."
   answer="2H₂O(g) + 2Na(s) ⟶ 2NaOH(s) + H₂(g)"
   answerForm="equation"
-  hint="Write the formula and state symbol of each substance named, then balance by inspection."
+  hint="Write the formula and state symbol of each substance the description names, then balance by inspection."
 >}}
 
 {{< textin
@@ -305,35 +305,35 @@ $$\begin{aligned} &\ce{CO2(aq)} + \cancel{\ce{2Na+(aq)}} + \ce{2OH-(aq)} \\ &\qu
   question="Colorful fireworks often involve the decomposition of barium nitrate and potassium chlorate and the reaction of the metals magnesium, aluminum, and iron with oxygen. The decomposition of solid potassium chlorate leads to the formation of solid potassium chloride and diatomic oxygen gas. Write an equation for the reaction."
   answer="2KClO₃(s) ⟶ 2KCl(s) + 3O₂(g)"
   answerForm="equation"
-  hint="Write the formula and state symbol of each substance named, then balance oxygen with the least common multiple of its subscripts."
+  hint="Write the formula and state symbol of each substance, building each ionic compound’s formula from the charges of its ions, then balance by inspection."
 >}}
 
 {{< textin
   question="Colorful fireworks often involve the decomposition of barium nitrate and potassium chlorate and the reaction of the metals magnesium, aluminum, and iron with oxygen. The decomposition of solid barium nitrate leads to the formation of solid barium oxide, diatomic nitrogen gas, and diatomic oxygen gas. Write an equation for the reaction."
   answer="2Ba(NO₃)₂(s) ⟶ 2BaO(s) + 2N₂(g) + 5O₂(g)"
   answerForm="equation"
-  hint="Write the formula and state symbol of each substance named; balance oxygen last, since it appears in more than one product."
+  hint="Write the formula and state symbol of each substance, building each ionic compound’s formula from the charges of its ions, then balance by inspection."
 >}}
 
 {{< textin
   question="Colorful fireworks often involve the decomposition of barium nitrate and potassium chlorate and the reaction of the metals magnesium, aluminum, and iron with oxygen. Write separate equations for the reactions of the solid metals magnesium, aluminum, and iron with diatomic oxygen gas to yield the corresponding metal oxides. (Assume the iron oxide contains Fe³⁺ ions.) Enter the equation for the reaction of magnesium."
   answer="2Mg(s) + O₂(g) ⟶ 2MgO(s)"
   answerForm="equation"
-  hint="Write the oxide’s formula from the charges of its ions, then balance by inspection."
+  hint="Write the formula and state symbol of each substance, building each ionic compound’s formula from the charges of its ions, then balance by inspection."
 >}}
 
 {{< textin
   question="Colorful fireworks often involve the decomposition of barium nitrate and potassium chlorate and the reaction of the metals magnesium, aluminum, and iron with oxygen. Write separate equations for the reactions of the solid metals magnesium, aluminum, and iron with diatomic oxygen gas to yield the corresponding metal oxides. (Assume the iron oxide contains Fe³⁺ ions.) Enter the equation for the reaction of aluminum."
   answer="4Al(s) + 3O₂(g) ⟶ 2Al₂O₃(s)"
   answerForm="equation"
-  hint="Write the oxide’s formula from the charges of its ions, then balance by inspection."
+  hint="Write the formula and state symbol of each substance, building each ionic compound’s formula from the charges of its ions, then balance by inspection."
 >}}
 
 {{< textin
   question="Colorful fireworks often involve the decomposition of barium nitrate and potassium chlorate and the reaction of the metals magnesium, aluminum, and iron with oxygen. Write separate equations for the reactions of the solid metals magnesium, aluminum, and iron with diatomic oxygen gas to yield the corresponding metal oxides. (Assume the iron oxide contains Fe³⁺ ions.) Enter the equation for the reaction of iron."
   answer="4Fe(s) + 3O₂(g) ⟶ 2Fe₂O₃(s)"
   answerForm="equation"
-  hint="Write the oxide’s formula from the charges of its ions, then balance by inspection."
+  hint="Write the formula and state symbol of each substance, building each ionic compound’s formula from the charges of its ions, then balance by inspection."
 >}}
 
 ### Write and balance chemical equations in molecular, total ionic, and net ionic formats
@@ -370,7 +370,7 @@ equations must be balanced to accurately reflect the law of conservation of matt
   question="Balance the following equation: Fe(s) + O₂(g) ⟶ Fe₂O₃(s)."
   answer="4Fe(s) + 3O₂(g) ⟶ 2Fe₂O₃(s)"
   answerForm="equation"
-  hint="Balance oxygen with the least common multiple of its subscripts, as the dinitrogen pentoxide example does, then restore the other element."
+  hint="Count each element’s atoms on both sides and change only the coefficients, never the subscripts."
 >}}
 
 {{< textin
@@ -384,7 +384,7 @@ equations must be balanced to accurately reflect the law of conservation of matt
   question="Balance the following equation: (NH₄)₂Cr₂O₇(s) ⟶ Cr₂O₃(s) + N₂(g) + H₂O(g)."
   answer="(NH₄)₂Cr₂O₇(s) ⟶ Cr₂O₃(s) + N₂(g) + 4H₂O(g)"
   answerForm="equation"
-  hint="Count the atoms inside the parentheses once for each unit the outside subscript shows, then change only the coefficients."
+  hint="Count each element’s atoms on both sides and change only the coefficients, never the subscripts."
 >}}
 
 {{< textin

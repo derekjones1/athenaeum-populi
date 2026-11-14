@@ -739,28 +739,28 @@ oxidation-reduction
   question="Complete and balance the following oxidation-reduction reaction, which gives the highest possible oxidation state for the oxidized atoms: Al(s) + F₂(g) ⟶."
   answer="2Al(s) + 3F₂(g) ⟶ 2AlF₃(s)"
   answerForm="equation"
-  hint="Find the product each reactant forms, give the oxidized element its highest common oxidation number, then balance by inspection."
+  hint="Find the oxidized element’s oxidation number from the electrons its atom loses to match the preceding noble gas, as in Section 2.6 Ionic and Molecular Compounds; give the other elements theirs from the guidelines for assigning oxidation numbers; then balance by inspection."
 >}}
 
 {{< textin
   question="Complete and balance the following oxidation-reduction reaction, which gives the highest possible oxidation state for the oxidized atoms: Al(s) + CuBr₂(aq) ⟶ (single displacement)."
   answer="2Al(s) + 3CuBr₂(aq) ⟶ 3Cu(s) + 2AlBr₃(aq)"
   answerForm="equation"
-  hint="Find the product each reactant forms, give the oxidized element its highest common oxidation number, then balance by inspection."
+  hint="Find the oxidized element’s oxidation number from the electrons its atom loses to match the preceding noble gas, as in Section 2.6 Ionic and Molecular Compounds; give the other elements theirs from the guidelines for assigning oxidation numbers; then balance by inspection."
 >}}
 
 {{< textin
   question="Complete and balance the following oxidation-reduction reaction, which gives the highest possible oxidation state for the oxidized atoms: P₄(s) + O₂(g) ⟶."
   answer="P₄(s) + 5O₂(g) ⟶ P₄O₁₀(s)"
   answerForm="equation"
-  hint="Find the product each reactant forms, give the oxidized element its highest common oxidation number, then balance by inspection."
+  hint="Find the oxidized element’s oxidation number from the electrons its atom loses to match the preceding noble gas, as in Section 2.6 Ionic and Molecular Compounds; give the other elements theirs from the guidelines for assigning oxidation numbers; then balance by inspection."
 >}}
 
 {{< textin
   question="Complete and balance the following oxidation-reduction reaction, which gives the highest possible oxidation state for the oxidized atoms: Ca(s) + H₂O(l) ⟶ (products are a strong base and a diatomic gas)."
   answer="Ca(s) + 2H₂O(l) ⟶ Ca(OH)₂(aq) + H₂(g)"
   answerForm="equation"
-  hint="Find the product each reactant forms, give the oxidized element its highest common oxidation number, then balance by inspection."
+  hint="Find the oxidized element’s oxidation number from the electrons its atom loses to match the preceding noble gas, as in Section 2.6 Ionic and Molecular Compounds; give the other elements theirs from the guidelines for assigning oxidation numbers; then balance by inspection."
 >}}
 
 {{< textin

@@ -261,6 +261,9 @@ export function prettySpecies(species) {
 
 const flatLetters = (text) => prepare(text).replace(/[\s_^()[\]·.]/g, '').toLowerCase();
 
+// Names no formula and no factor (November 14, 2026; until then a bare "Not quite").
+export const MULTIPLIED_FORMULA = 'That has the right elements in the right ratio, with every count multiplied up. Write the formula with the smallest whole numbers of atoms in that ratio.';
+
 /** @returns {{ status: 'empty'|'correct'|'form'|'incorrect', message?: string }} */
 export function checkFormula(input, answer, { accept = '' } = {}) {
   if (!String(input ?? '').trim()) return { status: 'empty' };
@@ -298,6 +301,25 @@ export function checkFormula(input, answer, { accept = '' } = {}) {
   }
   if (bare((reading, key) => Boolean(key.charge) && !reading.charge && (key.mass === null) === (reading.mass === null))) {
     return { status: 'incorrect', message: 'An ion’s symbol ends with its charge: type it after the symbol, as in Ca2+ or Cl-.' };
+  }
+  // Every count a whole-number multiple of the key's, the key itself the
+  // simplest ratio: a molecular formula typed where the empirical formula is
+  // asked (C2H2 for CH on Chemistry 2.4), or an ionic formula not reduced
+  // (Na2Cl2). The reader does not know which the item asks, so the sentence
+  // says what is true of both; it is said only against a key in lowest
+  // terms, where "the smallest whole numbers" IS the key — never against
+  // Li₂O₂ or Hg₂Cl₂, whose formulas are not their simplest ratios.
+  const multiplied = (reading, key) => {
+    if (reading.charge || key.charge || reading.mass !== null || key.mass !== null) return false;
+    const elements = Object.keys(key.atoms);
+    if (elements.length < 2 || Object.keys(reading.atoms).length !== elements.length) return false;
+    const factor = (reading.atoms[elements[0]] ?? 0) / key.atoms[elements[0]];
+    return Number.isInteger(factor) && factor >= 2
+      && elements.every((el) => reading.atoms[el] === factor * key.atoms[el])
+      && elements.map((el) => key.atoms[el]).reduce((a, b) => gcd(a, b)) === 1;
+  };
+  if (readings.some((reading) => keyReadings.some((key) => multiplied(reading, key)))) {
+    return { status: 'incorrect', message: MULTIPLIED_FORMULA };
   }
   return { status: 'incorrect' };
 }

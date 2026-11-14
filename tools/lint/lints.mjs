@@ -224,7 +224,7 @@ import { parseObjectivesCallout } from '../lib/openstax-source.mjs';
 // The real textin grading normalizer, so the word-count/retype-hazard/
 // duplicate-accept-member rules below reason about a textin answer exactly
 // the way check-text.mjs will grade it.
-import { checkText, closedForm, foldedForms, isOlderName, isPrefixName, normalizeText, pluralFolds } from '../../assets/js/lib/text/check-text.mjs';
+import { checkText, closedForm, foldedForms, isOlderName, isPrefixName, normalizeText, numeralProblem, pluralFolds } from '../../assets/js/lib/text/check-text.mjs';
 // A textin whose answer is a chemical formula or equation is validated by the
 // grader that reads it, not by the word rules.
 import { chemKeyProblem } from '../../assets/js/lib/text/check-chem.mjs';
@@ -3030,6 +3030,17 @@ export function lintHugo(src, filename = '', options = {}) {
       if (!isPrefixName(member.raw, answerRaw, { accept: otherAccept })) continue;
       err(index, `${where}: ${member.label} is a Greek-prefix name of the keyed metal compound — the grader already answers it "That name counts the atoms with Greek prefixes", so remove it (the item asks for the ionic name)`);
     }
+    // And for the keyed name without its Roman numeral ("iron chloride"),
+    // or with the charge as an ordinary number ("iron(2) chloride"): the
+    // grader says which is missing or miswritten, and an accept member would
+    // grade the name Correct with no charge shown.
+    for (const member of members) {
+      if (member.label.startsWith('answer ')) continue;
+      const otherAccept = members.filter((other) => other !== member && !other.label.startsWith('answer ')).map((other) => other.raw).join('|');
+      const problem = numeralProblem(member.raw, answerRaw, { accept: otherAccept });
+      if (!problem) continue;
+      err(index, `${where}: ${member.label} is the keyed name ${problem === 'missing' ? 'without its Roman numeral' : 'with its charge as an ordinary number'} — the grader already answers it with its own message, so remove it (the numeral is part of the name)`);
+    }
     // The grader folds the regular plural BOTH ways (check-text.mjs
     // `foldedForms`: form + s / + es, and a regular-plural-shaped form minus
     // its s / sibilant es), so an accept member that IS the plural or the
@@ -3462,6 +3473,23 @@ export function lintHugo(src, filename = '', options = {}) {
   for (const m of mediaSrc.matchAll(/\{\{< callout\b[^>]*>\}\}\n(\*\*Media\.\*\*[\s\S]*?)\{\{< \/callout >\}\}/g)) {
     if (!m[1].includes('](')) {
       err(m.index, "empty Media callout: the source's online-resource links are omitted, so remove the box");
+    }
+  }
+
+  // ---- attribution footer: one phrase per kind of item (Chemistry) ----------
+  // docs/subjects/chemistry.md "The footer": "multiple-choice items",
+  // "fill-ins", "text-recall items", "formula text-recall items",
+  // "self-checks", "sort-into-bins items". Nine footers of chapters 1, 2, and
+  // 4 — the pilot's, and pages written before the rule — said "multiple
+  // choices", "recall items (textin)", and "formula items" until the
+  // consistency pass of November 14, 2026. The hyphenated adjective ("a
+  // multiple-choice stem") is not an item's name and is left alone.
+  if (bookKeyOf(filename) === 'physical-sciences/chemistry') {
+    const ITEM_KIND_SLIP = /\bmultiple choices?\b|\(textin\)|(?<!text-)\brecall items?\b|(?<!text-recall )\bformula items?\b/g;
+    for (const m of mediaSrc.matchAll(/<small>This\b[\s\S]*?<\/small>/g)) {
+      for (const hit of m[0].matchAll(ITEM_KIND_SLIP)) {
+        err(m.index + hit.index, `footer names a kind of item as ${JSON.stringify(hit[0])} — the footer has one phrase per kind: "multiple-choice items", "fill-ins", "text-recall items", "formula text-recall items", "self-checks", "sort-into-bins items"`);
+      }
     }
   }
 

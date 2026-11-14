@@ -3487,6 +3487,36 @@ test('textin: a Greek-prefix name of the keyed metal compound is not an accept m
   assert.ok(!other.some((e) => e.includes('Greek-prefix name')), 'a wrong accept member is another rule\'s business');
 });
 
+// Chemistry footers name each kind of item one way (docs/subjects/chemistry.md
+// "The footer"); the pilot's pages said "multiple choices" and "recall items
+// (textin)" until November 14, 2026.
+test('a Chemistry footer names each kind of item by its one phrase', () => {
+  const page = (clause) => `Body.\n\n<small>This section is adapted from a source. Changes: ${clause}.</small>\n`;
+  const errorsFor = (clause, file = 'content/physical-sciences/chemistry/01-essential-ideas/01-x.md') => lintHugo(page(clause), file).errors.filter((e) => e.includes('names a kind of item'));
+  assert.equal(errorsFor('the exercises carried as six multiple-choice items, two fill-ins, and three text-recall items').length, 0);
+  assert.equal(errorsFor('every reaction in a fill-in or multiple-choice stem set as math').length, 0, 'the adjective is not an item name');
+  assert.equal(errorsFor('the check carried as two formula text-recall items').length, 0);
+  assert.ok(errorsFor('the exercises carried as six multiple choices')[0]?.includes('"multiple choices"'));
+  assert.ok(errorsFor('four recall items (textin) added').length >= 1);
+  assert.ok(errorsFor('the check carried as two formula items')[0]?.includes('"formula items"'));
+  // Another book's footers are not held to Chemistry's phrases.
+  assert.equal(errorsFor('the exercises carried as six multiple choices', 'content/life-health-sciences/biology/01-x/01-x.md').length, 0);
+});
+
+// The keyed name without its numeral, or with an ordinary number for the
+// charge, is answered by the grader with its own sentence.
+test('textin: the keyed name without its Roman numeral is not an accept member', () => {
+  const missing = lintHugo('{{< textin question="Name the following compound: FeCl₂." answer="iron(II) chloride" accept="iron chloride" hint="h" >}}', 'content/test.md').errors;
+  assert.ok(missing.some((e) => e.includes('accept member "iron chloride" is the keyed name without its Roman numeral')), missing.join('\n'));
+  const arabic = lintHugo('{{< textin question="Name the following compound: FeCl₂." answer="iron(II) chloride" accept="iron(2) chloride" hint="h" >}}', 'content/test.md').errors;
+  assert.ok(arabic.some((e) => e.includes('accept member "iron(2) chloride" is the keyed name with its charge as an ordinary number')), arabic.join('\n'));
+  // An ion keyed bare with its two-word form, and a key with no numeral, are left alone.
+  const ion = lintHugo('{{< textin question="Name the ion Fe²⁺." answer="iron(II)" accept="iron(II) ion" hint="h" >}}', 'content/test.md').errors;
+  assert.ok(!ion.some((e) => e.includes('Roman numeral') || e.includes('ordinary number')), ion.join('\n'));
+  const plain = lintHugo('{{< textin question="Name the following compound: NaCl." answer="sodium chloride" accept="table salt" hint="h" >}}', 'content/test.md').errors;
+  assert.ok(!plain.some((e) => e.includes('Roman numeral')), plain.join('\n'));
+});
+
 // An out-of-date name is not a second name (Chemistry 2.7): the grader
 // answers "ferrous chloride" with its own message, which an accept member
 // would pre-empt by grading it Correct.

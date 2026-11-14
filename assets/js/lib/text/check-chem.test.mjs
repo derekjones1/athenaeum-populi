@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  checkChem, checkEquation, checkFormula, chemCanon, chemKeyProblem, prettySpecies, previewChem, readSpecies, STATE_DIFFERS,
+  checkChem, checkEquation, checkFormula, chemCanon, chemKeyProblem, prettySpecies, previewChem, readSpecies, MULTIPLIED_FORMULA, STATE_DIFFERS,
 } from './check-chem.mjs';
 
 const formula = (typed, key, accept = '') => checkFormula(typed, key, { accept }).status;
@@ -520,4 +520,24 @@ test('an electron typed without its charge, or left out of a half-reaction, is t
   assert.equal(checkEquation('H2 + O2 -> H2O2', '2H₂(g) + O₂(g) ⟶ 2H₂O(l)').message, undefined);
   assert.match(checkEquation('hello', half).message, /does not read as an equation/);
   assert.match(checkEquation('Fe -> Fe3+ + 3e-', '8H⁺(aq) + MnO₄⁻(aq) + 5e⁻ ⟶ Mn²⁺(aq) + 4H₂O(l)').message ?? '', /^$/);
+});
+
+// A molecular formula typed where the empirical one is asked (Chemistry
+// 2.4), or an ionic formula not reduced: the right elements in the right
+// ratio. A bare "Not quite" until November 14, 2026.
+test('a formula with every count multiplied up is told so, only against a key in lowest terms', () => {
+  const multiplied = { status: 'incorrect', message: MULTIPLIED_FORMULA };
+  assert.deepEqual(checkFormula('C2H2', 'CH'), multiplied);
+  assert.deepEqual(checkFormula('C6H12O6', 'CH₂O'), multiplied);
+  assert.deepEqual(checkFormula('C8H10N4O2', 'C₄H₅N₂O'), multiplied);
+  assert.deepEqual(checkFormula('Na2Cl2', 'NaCl'), multiplied);
+  // Not every count by the same factor, or a key that is not its simplest ratio: nothing is said.
+  assert.deepEqual(checkFormula('C2H4', 'CH'), { status: 'incorrect' });
+  assert.deepEqual(checkFormula('Li4O4', 'Li₂O₂'), { status: 'incorrect' }, 'a peroxide is not its simplest ratio');
+  assert.deepEqual(checkFormula('LiO', 'Li₂O₂'), { status: 'incorrect' });
+  assert.deepEqual(checkFormula('Hg4Cl4', 'Hg₂Cl₂'), { status: 'incorrect' });
+  assert.deepEqual(checkFormula('S8', 'S'), { status: 'incorrect' }, 'one element has no ratio');
+  assert.deepEqual(checkFormula('S2O8^4-', 'SO₄²⁻'), { status: 'incorrect' }, 'an ion is not read');
+  assert.equal(checkFormula('CH', 'CH').status, 'correct');
+  assert.doesNotMatch(MULTIPLIED_FORMULA, /empirical|molecular/, 'the reader does not know which the item asks');
 });

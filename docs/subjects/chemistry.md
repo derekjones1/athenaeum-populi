@@ -240,7 +240,7 @@ The component follows the SHAPE of the source's keyed answer:
 | an SI prefix's factor ("× 10⁻²") | `fillin` keyed with the bare power of ten, `answer="10^{-2}"`, under `sig-figs:1 last-digit:0` — a bare power-of-ten key is an exact factor, so `0.010` and `1.0×10⁻²` are right too ("Measured quantities") |
 | the name of a unit that is one word or a counted word ("meters", "kilograms", "square meters", "cubic meters") or of a prefix ("centi") | `textin`; the accept list holds the symbol without operators (`m`, `kg`, `m3`) and every crossing the plural fold cannot reach, which folds the LAST word only: `meters squared\|meter squared\|metres squared\|metre squared` |
 | a unit that is a quotient or a product ("meters/second", "kilograms/cubic meter"), or one whose degree sign is the point ("kelvin", never "°K") | `multiplechoice` whose distractors are the confusions the part tests — the product, the inverse, a wrong power, "degrees kelvin" — and never another unit the body allows for the quantity. The text grader reads `/`, `·`, `×`, `*`, and `°` as spaces, so as a `textin` the product passes for the quotient: a key or accept member carrying one is a lint error in this book |
-| the name of a compound or an ion ("chromium(III) oxide", "the selenide ion") | `textin`. Capitals, the spaces around a parenthesis, and the parentheses themselves are free; the Roman numeral and every word are not. The grader reads sulph- as sulf-, aluminium as aluminum, and caesium as cesium, so those are never `accept` members. A second name the module itself prints for the compound is one — unless the STEM prints it: 2.7 asks for the IUPAC name of "ferric nitrate", and there the old name retyped must be wrong. **A name the module prints as out of date is not a second name** *(Section 2.7)*: "ferrous chloride", which the module says "was known as" and calls nomenclature "largely abandoned", is not an `accept` member of the item that asks FeCl₂'s name, and neither is a name another exercise's stem prints for the compound as the one to be replaced ("titanium tetrachloride"). The grader does not call such a name wrong: a classical -ous/-ic name of the KEYED compound is answered "That is an older name. Give the systematic name." in the tone of a right answer in the wrong form, and the field stays open (`assets/js/lib/text/older-names.mjs`, a table of nine metals; `gradeText` only — every gate still reads it as incorrect; *November 11, 2026, Derek: until then it was refused as plainly wrong*). The older name of a different compound ("ferric chloride" for FeCl₂) is incorrect. **A Greek-prefix name of the KEYED metal compound gets a sibling message** *(November 14, 2026; until then a bare "Not quite")*: "titanium tetrachloride" against `titanium(IV) chloride`, "magnesium dichloride" against `magnesium chloride`, a stem's own prefix name retyped included, is answered "That name counts the atoms with Greek prefixes, as a compound of two nonmetals is named. Name a metal’s compound as an ionic compound, without prefixes." — `form`, the field open, never correct (`assets/js/lib/text/prefix-names.mjs`; the name's counts must give the charge the key prints, so "titanium trichloride" stays plainly incorrect; `gradeText` only, as for the older names). The message does not call the name wrong — IUPAC allows it — and names neither the metal nor whether a numeral is needed. The lint refuses an older name, and a Greek-prefix name of the keyed metal compound, as an `accept` member. The item's hint still says what form the name takes — the charge as a Roman numeral in parentheses — since the message does not. The source gate holds a name key to the WHOLE name the source prints: "cobalt(II) chloride" is refused where the source answers "cobalt(II) chloride hexahydrate". **An ion's name is keyed bare** (`selenide`) with the two-word form in `accept` (`selenide ion`): the grader drops "the" and does not drop "ion", so keyed "selenide ion" it marks the bare name wrong |
+| the name of a compound or an ion ("chromium(III) oxide", "the selenide ion") | `textin`. Capitals, the spaces around a parenthesis, and the parentheses themselves are free; the Roman numeral and every word are not. The grader reads sulph- as sulf-, aluminium as aluminum, and caesium as cesium, so those are never `accept` members. A second name the module itself prints for the compound is one — unless the STEM prints it: 2.7 asks for the IUPAC name of "ferric nitrate", and there the old name retyped must be wrong. **A name the module prints as out of date is not a second name** *(Section 2.7)*: "ferrous chloride", which the module says "was known as" and calls nomenclature "largely abandoned", is not an `accept` member of the item that asks FeCl₂'s name, and neither is a name another exercise's stem prints for the compound as the one to be replaced ("titanium tetrachloride"). The grader does not call such a name wrong: a classical -ous/-ic name of the KEYED compound is answered "That is an older name. Give the systematic name." in the tone of a right answer in the wrong form, and the field stays open (`assets/js/lib/text/older-names.mjs`, a table of nine metals; `gradeText` only — every gate still reads it as incorrect; *November 11, 2026, Derek: until then it was refused as plainly wrong*). The older name of a different compound ("ferric chloride" for FeCl₂) is incorrect. **A Greek-prefix name of the KEYED metal compound gets a sibling message** *(November 14, 2026; until then a bare "Not quite")*: "titanium tetrachloride" against `titanium(IV) chloride`, "magnesium dichloride" against `magnesium chloride`, a stem's own prefix name retyped included, is answered "That name counts the atoms with Greek prefixes, as a compound of two nonmetals is named. Name a metal’s compound as an ionic compound, without prefixes." — `form`, the field open, never correct (`assets/js/lib/text/prefix-names.mjs`; the name's counts must give the charge the key prints, so "titanium trichloride" stays plainly incorrect; `gradeText` only, as for the older names). The message does not call the name wrong — IUPAC allows it — and names neither the metal nor whether a numeral is needed. **A name typed without its Roman numeral, or with the charge as an ordinary number, is told so** *(November 14, 2026; until then a bare "Not quite" on eleven items of 2.7)*: "iron chloride" against `iron(II) chloride` is incorrect with "This metal forms more than one ion, so the name must say which: add the ion’s charge as a Roman numeral in parentheses after the metal’s name.", and "iron(2) chloride" or "iron 2+ chloride" is `form` with "That is the right compound — now write the metal ion’s charge as a Roman numeral, not as an ordinary number." A wrong charge in either notation stays plainly incorrect, and neither message gives the numeral (`numeralProblem` in `check-text.mjs`, read only against a key that writes a word and then a numeral in parentheses; `gradeText` only). The lint refuses an older name, a Greek-prefix name of the keyed metal compound, and the keyed name without its numeral or with an ordinary number, as an `accept` member. The item's hint still says what form the name takes — the charge as a Roman numeral in parentheses — since the message does not. The source gate holds a name key to the WHOLE name the source prints: "cobalt(II) chloride" is refused where the source answers "cobalt(II) chloride hexahydrate". **An ion's name is keyed bare** (`selenide`) with the two-word form in `accept` (`selenide ion`): the grader drops "the" and does not drop "ion", so keyed "selenide ion" it marks the bare name wrong |
 | a formula or an ion's symbol ("Mn₃(PO₄)₂", "FeCl₃·2H₂O", "Se²⁻", "¹⁴C") | `textin` with `answerForm="formula"` ("Formulas and equations") — never a plain `textin`, which reads `CO` as `Co` (lint) |
 | a balanced equation, a half-reaction, a net ionic equation | `textin` with `answerForm="equation"` ("Formulas and equations") |
 | several of these at once ("calcium, Ca"; "ionic, Ba²⁺, O²⁻"; "molecular C₂H₂, empirical CH"; an equation and a mass) | one item per piece, each stem saying which ("Enter the molecular formula."): the classification as a `multiplechoice` first, then a formula `textin` per ion or per formula. **When only some parts have the further pieces** ("(a) covalent; (b) ionic, Ba²⁺, O²⁻" — the source keys nothing more for a covalent part, so there is nothing more to grade there), each part's further items go in a `followup` directly after its `multiplechoice`: in the open they stand under the ionic parts alone and answer the classification by being there. `verify:source-keys` refuses the shape unwrapped (`conditionalUnwrapped`) |
@@ -800,7 +800,12 @@ after the rule was written, so the line is drawn by pairs:
 - Several items may share one hint — and **a shared hint is read, key
   covered, against every item it serves**, the module's own named
   exceptions first *(chapter 2: "ask whether a metal is combined with
-  nonmetals" gave covalent for (NH₄)₂CO₃, which is ionic)*. A hint shared
+  nonmetals" gave covalent for (NH₄)₂CO₃, which is ionic)*. **The parts
+  of one exercise are a family** *(swept November 14, 2026)*: 1.2's eight
+  element-compound-mixture parts carried eight hints, the two mixtures'
+  alone generic, and three exercises of 4.1 a part or two with a hint of
+  its own; each now has one. A part that is a different kind of ask (a
+  net ionic equation among molecular ones) is not a tell. A hint shared
   across the parts of one exercise may name every table the set needs
   ("the periodic table and the table of common polyatomic ions"); it is
   never split by which part needs which table, since the split tells.
@@ -925,9 +930,12 @@ after the rule was written, so the line is drawn by pairs:
   **Identical source keys are not a departure** and take no clause. **A
   `followup`'s clause says the further item appears once the first is
   answered correctly.**
-- **One phrase per kind of item**: "multiple-choice items", "fill-ins",
-  "text-recall items", "formula text-recall items", "sort-into-bins
-  items", "self-checks".
+- **One phrase per kind of item** (lint): "multiple-choice items",
+  "fill-ins", "text-recall items", "formula text-recall items",
+  "sort-into-bins items", "self-checks" — never "multiple choices",
+  "recall items (textin)", or "formula items", which nine footers of
+  chapters 1, 2, and 4 said until November 14, 2026. The hyphenated
+  adjective ("a multiple-choice stem") is not an item's name.
 - **Which objective a keyed exercise is placed under is the page's
   structure, not a departure**, and takes no clause.
 - It names every departure from the source in one clause each: restated
@@ -1102,6 +1110,7 @@ hydrate's formula closes "Type the dot as a period, as in Na2CO3.10H2O."
 | `Co` | `CO` | incorrect | |
 | `SO4^2-`, `SO42-`, `SO4-2`, `SO₄²⁻` | `SO₄²⁻` | correct | |
 | `SO4`, `Se`, `NH4` — the right atoms, no charge | `SO₄²⁻`, `Se²⁻`, `NH₄⁺` | incorrect | "An ion’s symbol ends with its charge: type it after the symbol, as in Ca2+ or Cl-." A wrong charge, or other atoms, gets no message *(chapter 2, Sections 2.5–2.6: a bare "incorrect" sent the learner back to atoms that were right)* |
+| `C2H2`, `Na2Cl2` — every count a whole-number multiple of the key's | `CH`, `NaCl` | incorrect | "That has the right elements in the right ratio, with every count multiplied up. Write the formula with the smallest whole numbers of atoms in that ratio." Said only against a key of two or more elements that is itself the simplest ratio — never of Li₂O₂ or Hg₂Cl₂ — and it does not say "empirical": the reader does not know which formula the item asks *(November 14, 2026: a molecular formula typed where 2.4 asks the empirical one was a bare "Not quite")* |
 | `Na`, `Cs+` — the right element, no mass number | `²³₁₁Na`, `¹³³Cs⁺` | incorrect | "A symbol for one isotope carries its mass number: type it before the symbol, as in 14C." |
 | `FeCl3.2H2O`, `FeCl3*2H2O`, `FeCl₃·2H₂O` | `FeCl₃·2H₂O` | correct | |
 | `2Na + 2H2O -> 2NaOH + H2`, the species in any order within a side, with or without state symbols, `=` or `→` for the arrow | the equation above | correct | |
@@ -1431,7 +1440,11 @@ else except what a rule below adds.
     "Three exceptions"), and the table of the 118 elements under it is
     written from the same data file (`node tools/source/elements-table.mjs
     --write`); `verify:source-tables` holds both to
-    `data/chemistry/elements.json`.
+    `data/chemistry/elements.json`. The thirty elements of the two rows
+    below the main table have no group number there — "— (row of elements
+    89–103)" — since they belong to no numbered group; until November 14,
+    2026 the cell read "3 (row of …)", which the key term "transition
+    metal: element in groups 3–12" turned into a wrong answer for uranium.
 - **Notation in a table cell.** A formula in a text cell is Unicode
   (`Al³⁺(*aq*)`); a half-reaction or equilibrium the source sets in MathML
   is `$\ce{…}$`, a charge always after `^` (`$\ce{Ce^3+ + 3e^- -> Ce}$`); a
@@ -1452,7 +1465,8 @@ else except what a rule below adds.
 - **A corrected cell** is printed corrected, with a Source note directly
   under the table that names every correction (a reference table has no
   key to protect), a `TABLE_NOTES` deviation, a decisions entry, and the
-  erratum. **Two appendices follow a named authority, not the source's
+  erratum (Appendix L's six charges; Appendix C's cubic foot, 28.317 L,
+  which the source truncates and its own Section 1.6 prints rounded). **Two appendices follow a named authority, not the source's
   print** *(Derek, November 12, 2026)*: Appendix A's atomic masses are
   CIAAW's abridged standard atomic weights (`data/chemistry/elements.json`),
   and Appendix D's constants are the 2022 CODATA values as NIST lists them
@@ -1550,9 +1564,4 @@ What chapter 1 settled, and what the scan of the book counted, are in
   on one page; the fact half of the run facts and the PDF range scripted;
   a fill-in judge for `ledger:provenance` (until then a Chemistry
   fill-in's note is carried by hand — the tool labels it "author-built");
-  `run.md` §0 reordered by step;
-- two messages the November 14 readers proposed and nobody has ruled: a
-  name typed with its Roman numeral missing or as an ordinary number
-  ("iron chloride", "iron(2) chloride" against `iron(II) chloride`: a bare
-  "Not quite" on eleven items of 2.7), and a molecular formula typed where
-  the empirical formula is asked (C₂H₂ for CH on 2.4).
+  `run.md` §0 reordered by step.

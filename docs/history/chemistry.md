@@ -2961,11 +2961,12 @@ Fixed in the session, each a plain defect against a rule already written:
   Chemistry rows; a literal NUL byte in `tools/verify/solve-check.mjs`
   that made grep read the file as binary and print nothing.
 
-### Proposed, not done
+### Proposed, and done the same day
 
-Each is a choice, not a defect; listed for Derek with a recommendation in
-the session's close-out, and in the playbook's "What is still open" where
-chapter 5 depends on it.
+Each was a choice, not a defect, so each was put to Derek with a
+recommendation. He agreed to all of them ("I agree with your
+recommendations, let's implement them"); what was done is under "The
+proposals, implemented" below. As first listed:
 
 - Two grader messages: a name with its Roman numeral missing or written as
   an ordinary number (eleven items of 2.7); a molecular formula typed
@@ -2984,6 +2985,55 @@ chapter 5 depends on it.
   the page's own Source note calls incomplete.
 - The form of a symbol with its value in a stem (three rules in the
   playbook; eleven exercises of 5.3 need one).
+
+### The proposals, implemented
+
+- **A name without its Roman numeral, or with an ordinary number.**
+  "iron chloride" against `iron(II) chloride` is incorrect with "This
+  metal forms more than one ion, so the name must say which: add the
+  ion’s charge as a Roman numeral in parentheses after the metal’s name.";
+  "iron(2) chloride" is `form` with "That is the right compound — now
+  write the metal ion’s charge as a Roman numeral, not as an ordinary
+  number." (`numeralProblem`: read only against a key written
+  "metal(numeral)", so a Roman numeral in another book's key is never a
+  charge; a wrong charge stays plainly wrong.) A lint refuses either as an
+  `accept` member; a corpus test walks every charged name key.
+- **A formula with every count multiplied up.** `C8H16O4` against
+  `C₂H₄O` is incorrect with "That has the right elements in the right
+  ratio, with every count multiplied up. Write the formula with the
+  smallest whole numbers of atoms in that ratio." Said only against a key
+  of two or more elements in lowest terms — never of Li₂O₂ or Hg₂Cl₂ — and
+  without the word "empirical": the reader does not know what the item
+  asks.
+- **Hint families** (an Opus author, each new hint read against every
+  member with the key covered): 1.2's eight classification parts point at
+  the flow chart of the Classifying Matter section; three exercises of 4.1
+  each have one hint; 4.2's four "highest possible oxidation state" items
+  no longer say "highest common oxidation number" but send the learner to
+  the electrons an atom loses to match the preceding noble gas (Section
+  2.6) and to the page's guidelines for oxidation numbers. The author did
+  not point at 2.6's group-charge figure, which gives P³⁻, nor at 2.7's
+  oxide table, which prints one item's product.
+- **2.7's oxyacid recall** is built on the body's sentence ("at least one
+  other element"), not the glossary's, which the page's own Source note
+  calls incomplete. Its sibling binary-acid recall takes the same hint.
+- **Appendix C's cubic foot** is 28.317 L with a Source note, a
+  `TABLE_NOTES` deviation, a decisions entry, and erratum 3043.
+- **Appendix A's group column** prints "— (row of elements 89–103)" for
+  the thirty elements below the main table, and the sentence above the
+  table says they belong to no numbered group. Found by the blind solver:
+  the old "3 (row of …)", read against the key term "groups 3–12", made
+  uranium a transition metal on 2.5's new sort.
+- **Footers.** Nine pages said "multiple choices", "recall items
+  (textin)", or "formula items"; all use the playbook's phrases, and a
+  lint holds them (Chemistry only; the hyphenated adjective is left).
+- **Left as they are, as recommended:** 4.2's antacid callout (the
+  source's ⇌) and 1.2's nail stem under the increased-or-decreased choice
+  (the source's part order).
+
+The browser-fixture gate (`tools/build/browser-fixtures.test.mjs`) graded
+every typed text-in as words; the first spec to type into an equation
+field found by its key failed there. It now grades under the item's form.
 
 ### What the process should keep
 

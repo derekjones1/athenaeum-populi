@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { acceptedForms, checkText, closedForm, foldedForms, isOlderName, isPrefixName, matchesForm, normalizeText, pluralFolds, singularFolds, gradeText, OLDER_NAME_MESSAGE, PREFIX_NAME_MESSAGE } from './check-text.mjs';
+import { acceptedForms, checkText, closedForm, foldedForms, isOlderName, isPrefixName, matchesForm, normalizeText, numeralProblem, pluralFolds, singularFolds, gradeText, ARABIC_NUMERAL_MESSAGE, MISSING_NUMERAL_MESSAGE, OLDER_NAME_MESSAGE, PREFIX_NAME_MESSAGE } from './check-text.mjs';
 import { CLASSICAL_NAMES, systematicName } from './older-names.mjs';
 import { ionicName } from './prefix-names.mjs';
 
@@ -250,7 +250,7 @@ test('a Greek-prefix name of the keyed metal compound is answered as the other n
   assert.deepEqual(gradeText('dinitrogen tetroxide', 'dinitrogen tetroxide'), { status: 'correct' });
   // The systematic name is still the only correct one.
   assert.deepEqual(gradeText('titanium(IV) chloride', 'titanium(IV) chloride'), { status: 'correct' });
-  assert.deepEqual(gradeText('titanium chloride', 'titanium(IV) chloride'), { status: 'incorrect' }, 'no numeral and no prefix: nothing to say');
+  assert.deepEqual(gradeText('titanium chloride', 'titanium(IV) chloride'), { status: 'incorrect', message: MISSING_NUMERAL_MESSAGE }, 'no numeral and no prefix: the numeral is what is missing');
 
   // Every gate calls checkText, which must never take a prefix name for a key.
   assert.equal(checkText('titanium tetrachloride', 'titanium(IV) chloride'), 'incorrect');
@@ -267,4 +267,40 @@ test('a Greek-prefix name of the keyed metal compound is answered as the other n
 
   // The message names neither a metal nor a numeral, and does not call the name wrong.
   assert.doesNotMatch(PREFIX_NAME_MESSAGE, /titanium|roman|numeral|\(|IV|wrong|incorrect/i);
+});
+
+// The commonest slip in naming a metal's compound is the charge left out;
+// the next is the charge typed as an ordinary number. Both were a bare "Not
+// quite" on eleven items of Chemistry 2.7 until November 14, 2026.
+test('a name keyed with a charge says when the numeral is missing, and when it is typed as an ordinary number', () => {
+  const missing = { status: 'incorrect', message: MISSING_NUMERAL_MESSAGE };
+  const arabic = { status: 'form', message: ARABIC_NUMERAL_MESSAGE };
+  assert.deepEqual(gradeText('iron chloride', 'iron(II) chloride'), missing);
+  assert.deepEqual(gradeText('Iron Chloride', 'iron(II) chloride'), missing, 'capitals do not count');
+  assert.deepEqual(gradeText('titanium chloride', 'titanium(IV) chloride'), missing);
+  assert.deepEqual(gradeText('cobalt chloride hexahydrate', 'cobalt(II) chloride hexahydrate'), missing);
+  assert.deepEqual(gradeText('iron', 'iron(II)', { accept: 'iron(II) ion' }), missing, 'an ion keyed bare');
+  assert.deepEqual(gradeText('iron ion', 'iron(II)', { accept: 'iron(II) ion' }), missing);
+  assert.deepEqual(gradeText('iron(2) chloride', 'iron(II) chloride'), arabic);
+  assert.deepEqual(gradeText('iron 2+ chloride', 'iron(II) chloride'), arabic);
+  assert.deepEqual(gradeText('titanium(4) chloride', 'titanium(IV) chloride'), arabic);
+  // A wrong charge is wrong, in either notation, and so is another metal.
+  assert.deepEqual(gradeText('iron(3) chloride', 'iron(II) chloride'), { status: 'incorrect' });
+  assert.deepEqual(gradeText('iron(III) chloride', 'iron(II) chloride'), { status: 'incorrect' });
+  assert.deepEqual(gradeText('copper chloride', 'iron(II) chloride'), { status: 'incorrect' });
+  assert.deepEqual(gradeText('iron bromide', 'iron(II) chloride'), { status: 'incorrect' });
+  // The right name is still the only correct one, with or without parentheses.
+  assert.deepEqual(gradeText('iron(II) chloride', 'iron(II) chloride'), { status: 'correct' });
+  assert.deepEqual(gradeText('iron II chloride', 'iron(II) chloride'), { status: 'correct' });
+  // Only a key that writes "metal(numeral)" is read: a Roman numeral elsewhere is not a charge.
+  assert.deepEqual(gradeText('type diabetes', 'Type I diabetes'), { status: 'incorrect' });
+  assert.deepEqual(gradeText('sodium chloride', 'potassium chloride'), { status: 'incorrect' });
+  assert.equal(numeralProblem('iron chloride', 'iron(II) chloride'), 'missing');
+  assert.equal(numeralProblem('iron(2) chloride', 'iron(II) chloride'), 'arabic');
+  assert.equal(numeralProblem('iron(II) chloride', 'iron(II) chloride'), null);
+  // Every gate calls checkText, which reads neither as the key.
+  assert.equal(checkText('iron chloride', 'iron(II) chloride'), 'incorrect');
+  assert.equal(checkText('iron(2) chloride', 'iron(II) chloride'), 'incorrect');
+  // Neither message gives the numeral or names the metal.
+  for (const message of [MISSING_NUMERAL_MESSAGE, ARABIC_NUMERAL_MESSAGE]) assert.doesNotMatch(message, /iron|\(I|II\b|\b[2-8]\b/);
 });

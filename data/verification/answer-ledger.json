@@ -913,6 +913,14 @@
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "01c97c21e014d59b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp122928448 part (a); re-derived (atoms and charge balanced, lowest terms) against raw CNXML m68709 | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "01d0af40c78c35c7": {
    "verdict": "ok",
    "note": "author-built from § Immunofiltration and Immunochromatographic Assays, Check Your Understanding: \"Explain the purpose of the third strip in a lateral flow assay.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -8428,6 +8436,14 @@
     "result": "agrees"
    }
   },
+  "1105e44e9d9af5ff": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm6604608; part: Al(s) + CuBr₂(aq) ⟶ (single displacement).; key 2Al(s) + 3CuBr₂(aq) ⟶ 3Cu(s) + 2AlBr₃(aq) re-derived against the CNXML | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "110ce8957405a3ab": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) Options reordered by the parent after the mc-distribution test (key moved off the first position); key text unchanged. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -8563,14 +8579,6 @@
    "note": "author-built from § introduction: \"Note that a typical virus measures about 100 nm, 10 times smaller than a typical bacterium (~1 µm), which is at least 10 times smaller than…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "1157f50d46f441cc": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp122928448 part (b); re-derived (atoms and charge balanced, lowest terms) against raw CNXML m68709; hint rewritten after checker round (hash updated)",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -9621,14 +9629,6 @@
   "137522c5231f3903": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "137755fc61346a48": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm6604608; part: Ca(s) + H₂O(l) ⟶ (products are a strong base and a diatomic gas).; key Ca(s) + 2H₂O(l) ⟶ Ca(OH)₂(aq) + H₂(g) re-derived against the CNXML",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -12535,6 +12535,14 @@
     "result": "agrees"
    }
   },
+  "18d9a479b027de20": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp267125008 part (d); re-derived (atoms and charge balanced, lowest terms) against raw CNXML m68709 | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "18da7f347de0b7de": {
    "verdict": "ok",
    "note": "body cloze from § introduction: \"Taken together, these observations support the hypothesis that the ancient ancestors of deeply branching bacteria began evolving more than…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -13606,6 +13614,14 @@
   },
   "1ac6bce87954965f": {
    "verdict": "ok"
+  },
+  "1ac915f30bc6472b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp122928448 part (d); re-derived (atoms and charge balanced, lowest terms) against raw CNXML m68709; hint rewritten after checker round (hash updated) | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "1accae1f774bf83e": {
    "verdict": "ok",
@@ -19811,6 +19827,14 @@
     "result": "agrees"
    }
   },
+  "27913addadcfa9d7": {
+   "verdict": "ok",
+   "note": "glossary recall: oxyacid (definition fs-idp282228224) | re-stemmed November 14, 2026: the question is built on the body's sentence (\"at least one other element\") in place of the glossary's, which the page's Source note calls incomplete; key and accept unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2792d0756e32e0cb": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): 2cos(3theta)=-sqrt2 -> cos(3theta)=-sqrt2/2 -> 3theta=3pi/4+2k*pi or 5pi/4+2k*pi -> theta=pi/4+2k*pi/3 or 5pi/12+2k*pi/3; k=0,1,2 reproduces the six printed values (3pi/12=pi/4, kept unreduced as printed in the source key).",
@@ -20735,6 +20759,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-blind-solver",
+    "result": "agrees"
+   }
+  },
+  "29771cf095cda88d": {
+   "verdict": "ok",
+   "note": "CO2 has fixed composition of two elements: compound; source (e) compound. Only change: closing period. | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -22643,14 +22675,6 @@
   "2d8799734ef6af88": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "2d8a327e3b49bdb9": {
-   "verdict": "ok",
-   "note": "Baking powder is baking soda plus a solid acid and starch in varying amounts: mixture; source (h) mixture. Only change: closing period.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -25835,14 +25859,6 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "34237eeec24840ad": {
-   "verdict": "ok",
-   "note": "Mercury oxide (HgO) decomposes by heat into Hg and O2 (body text): compound; source (c) compound. Only change: closing period.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "342411861cc74c4d": {
    "verdict": "ok",
    "note": "KC 2 7.3 § summary, m58815 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -28368,14 +28384,6 @@
     "result": "agrees"
    }
   },
-  "395e8695c40be403": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp208990784 part (b); re-derived (atoms and charge balanced, lowest terms) against raw CNXML m68709",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "3966be4c30010b25": {
    "verdict": "ok",
    "solved": {
@@ -29216,14 +29224,6 @@
   },
   "3b13c8d07bbae455": {
    "verdict": "ok"
-  },
-  "3b1e91eb371471f8": {
-   "verdict": "ok",
-   "note": "CO2 has fixed composition of two elements: compound; source (e) compound. Only change: closing period.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "3b24d16f92af9093": {
    "verdict": "ok",
@@ -32040,14 +32040,6 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "40adc4d32f50750d": {
-   "verdict": "ok",
-   "note": "glossary recall: oxyacid (definition fs-idp282228224)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "40af9a4f62e7508d": {
    "verdict": "ok",
    "note": "KC 5 27.2 § Animal Characterization Based on Body Symmetry, m66578 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | Biology KC re-review Sep 24 2026 (knowledge-check-21-29.md:750): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
@@ -34536,14 +34528,6 @@
     "result": "agrees"
    }
   },
-  "45e98bcfa5f8dd20": {
-   "verdict": "ok",
-   "note": "Oxygen (O2) contains one kind of atom: element; source (b) element. Only change: closing period.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "45ebf2c1551c8cf6": {
    "verdict": "ok",
    "note": "KC 2 11.1 § Interactions of Skeletal Muscles in the Body, m46487"
@@ -36327,14 +36311,6 @@
   "499af9ad6b11e670": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"The phylogenetic tree, which Darwin first used, is the classic “tree of life” model describing phylogenetic relationships among species, an…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "499db6d3728f1b70": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp208990784 part (d), aluminum; re-derived (atoms and charge balanced, lowest terms) against raw CNXML m68709",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -38472,14 +38448,6 @@
   "4e149759a344f808": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "4e178a2172e25a19": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp208990784 part (d), iron; re-derived (atoms and charge balanced, lowest terms) against raw CNXML m68709",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -41652,6 +41620,14 @@
     "result": "agrees"
    }
   },
+  "54c31ac00f59f907": {
+   "verdict": "ok",
+   "note": "Iron is one kind of atom, cannot be broken down chemically: element; source (a) element. Only change: closing period. | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "54c4047a7d772a84": {
    "verdict": "ok"
   },
@@ -44039,6 +44015,14 @@
     "result": "agrees"
    }
   },
+  "59afdb0786387340": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp267125008 part (f); re-derived (atoms and charge balanced, lowest terms) against raw CNXML m68709 | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "59b778ccea3e131d": {
    "verdict": "ok",
    "note": "author-built from § Lenses and Refraction: \"A convex lens can be used to magnify because it can focus at closer range than the human eye, producing a larger image.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -45120,6 +45104,14 @@
    "note": "m66611 exercise fs-idm131350080: solution B = 'midsagittal'. Matches page key. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "5bca8ee1994ecfd8": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm6604608; part: Ca(s) + H₂O(l) ⟶ (products are a strong base and a diatomic gas).; key Ca(s) + 2H₂O(l) ⟶ Ca(OH)₂(aq) + H₂(g) re-derived against the CNXML | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -46284,14 +46276,6 @@
     "result": "agrees"
    }
   },
-  "5e13882848cbff5f": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm6604608; part: Al(s) + CuBr₂(aq) ⟶ (single displacement).; key 2Al(s) + 3CuBr₂(aq) ⟶ 3Cu(s) + 2AlBr₃(aq) re-derived against the CNXML",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "5e1883d3df8b4006": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -47424,6 +47408,14 @@
   "60c5a520aa175fcc": {
    "verdict": "ok",
    "note": "body cloze from § Bacteriostatic Versus Bactericidal: \"Bacteriostatic drugs cause a reversible inhibition of growth, with bacterial growth restarting after elimination of the drug.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "60c5da5b5bf4e822": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp208990784 part (d), magnesium; re-derived (atoms and charge balanced, lowest terms) against raw CNXML m68709 | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -52282,6 +52274,14 @@
    "verdict": "ok",
    "note": "6.4 author reading: source CT fs-id1514097; model answer = solution fs-id1492144 with the claim-pass correction (parent-accepted) from m46376: secondary centers form later, usually after birth, in the epiphyses, one per epiphysis typically, one in a phalanx, several in the femur; Source note inside the model answer; checkpoint 4 now \"usually after birth, in the epiphyses\""
   },
+  "6c716b9c9630b65a": {
+   "verdict": "ok",
+   "note": "Baking powder is baking soda plus a solid acid and starch in varying amounts: mixture; source (h) mixture. Only change: closing period. | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6c75409555bf6b10": {
    "verdict": "ok",
    "note": "Review Question eip-660 (carb loading): key D = stored in the muscles as glycogen; matches solution. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -52934,6 +52934,14 @@
     "result": "agrees"
    }
   },
+  "6dccf57bf804a241": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp208990784 part (d), aluminum; re-derived (atoms and charge balanced, lowest terms) against raw CNXML m68709 | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6dcd1b00eaf5baee": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -53244,6 +53252,14 @@
   "6e66edfd4b945d9a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "6e6bff8ec05877ff": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp208990784 part (d), iron; re-derived (atoms and charge balanced, lowest terms) against raw CNXML m68709 | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -55305,14 +55321,6 @@
     "result": "agrees"
    }
   },
-  "72a4d8a036c6108d": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm6604608; part: Al(s) + F₂(g) ⟶.; key 2Al(s) + 3F₂(g) ⟶ 2AlF₃(s) re-derived against the CNXML",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "72aa99dd417f6233": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -55479,6 +55487,14 @@
   "72f77cb8af3cf2f3": {
    "verdict": "ok",
    "note": "key-term recall: Adenovirus; printed in § Mechanisms and Risks of Gene Therapy: \"Gene therapy using an adenovirus vector can be used to treat or cure certain genetic diseases in which a patient has a defective gene.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "72f7a8374b2213ea": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp208990784 part (c); re-derived (atoms and charge balanced, lowest terms) against raw CNXML m68709 | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -61725,14 +61741,6 @@
    "verdict": "ok",
    "note": "Question rewritten by parent from ASCII to KaTeX; answer unchanged. P(0)=1000/(1+9)=100, so doubling means P(t)=200: 1+9e^{-0.6t}=5 -> e^{-0.6t}=4/9 -> t=ln(9/4)/0.6=1.3515503603605 -> 1.4 to the nearest tenth."
   },
-  "7f967042175a0433": {
-   "verdict": "ok",
-   "note": "Iron is one kind of atom, cannot be broken down chemically: element; source (a) element. Only change: closing period.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "7f97c4b1dff1dd16": {
    "verdict": "ok",
    "note": "source exercise fs-idp26033424 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -66251,14 +66259,6 @@
     "result": "agrees"
    }
   },
-  "890a4c87af1299e0": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp122928448 part (d); re-derived (atoms and charge balanced, lowest terms) against raw CNXML m68709; hint rewritten after checker round (hash updated)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "890d39aa1e78326b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -66821,14 +66821,6 @@
   "8a2d510e4fb656b5": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "8a3131e3e98e3f18": {
-   "verdict": "ok",
-   "note": "Baking soda is sodium bicarbonate, NaHCO3, one compound; source (g) compound. Only change: closing period.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -69824,14 +69816,6 @@
   "90c64de8d9e00a00": {
    "verdict": "ok",
    "note": "Author cloze from m46434 fs-id2396821: 'The most frequently prescribed anti-hypertensive diuretic is hydrochlorothiazide.' Key re-read against CNXML and page.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "90ca111e586b1183": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp208990784 part (c); re-derived (atoms and charge balanced, lowest terms) against raw CNXML m68709",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -74961,14 +74945,6 @@
   "9bb4cb237e447e3f": {
    "verdict": "ok"
   },
-  "9bbafaf3375afa8d": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp267125008 part (f); re-derived (atoms and charge balanced, lowest terms) against raw CNXML m68709",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "9bc3bc2b729b0b9a": {
    "verdict": "ok"
   },
@@ -75189,6 +75165,14 @@
   "9c4dc22c94903f70": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "9c4ffa5671b8125d": {
+   "verdict": "ok",
+   "note": "Each molecule HCl has two kinds of atoms, all molecules alike: compound; source (f) compound. Only change: closing period. | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "9c5271fca074b16d": {
    "verdict": "ok",
@@ -76017,6 +76001,14 @@
   "9dddbd0e1338fa5e": {
    "verdict": "ok"
   },
+  "9dde1e051d70c4b8": {
+   "verdict": "ok",
+   "note": "Pancake syrup is sugars, water, flavorings in varying amounts: mixture; source (d) mixture. Only change: closing period. | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9de380647b2be9a8": {
    "verdict": "ok",
    "note": "KC 7 42.2 § glossary clonal selection (fs-idp21067840); body B Lymphocytes (fs-idm78332688), m66664 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
@@ -76252,6 +76244,14 @@
   "9e5e366bd4b56a4d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "9e653da5d71ce8a8": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp122928448 part (c); source prints MgC1₂ (digit one), keyed MgCl₂ per parent decision; re-derived (atoms and charge balanced, lowest terms) against raw CNXML m68709 | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -78661,14 +78661,6 @@
   "a32d473086280c0a": {
    "verdict": "ok",
    "note": "Microbiology 12.1 source CYU selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the blue-white screening and lacZ reporter-gene paragraphs)"
-  },
-  "a3361dc97e242e50": {
-   "verdict": "ok",
-   "note": "glossary recall: binary acid (definition fs-idp282291040)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "a33f8e6fd62e557a": {
    "verdict": "ok",
@@ -85193,6 +85185,14 @@
   "b13d2928523a7ec8": {
    "verdict": "ok"
   },
+  "b13e422c1ccbc39f": {
+   "verdict": "ok",
+   "note": "Baking soda is sodium bicarbonate, NaHCO3, one compound; source (g) compound. Only change: closing period. | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b13f9305bda2b946": {
    "verdict": "ok",
    "note": "author-built from § Flow Cytometry, Check Your Understanding: \"In the output from a flow cytometer, the area under the histogram is equivalent to what?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -85358,14 +85358,6 @@
   "b18d2acf86792585": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "b18edb0bde03d12a": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp208990784 part (d), magnesium; re-derived (atoms and charge balanced, lowest terms) against raw CNXML m68709",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "b19013ea3ce2d6b0": {
    "verdict": "ok",
@@ -90306,6 +90298,14 @@
     "result": "agrees"
    }
   },
+  "bb92f1f81042fba2": {
+   "verdict": "ok",
+   "note": "Mercury oxide (HgO) decomposes by heat into Hg and O2 (body text): compound; source (c) compound. Only change: closing period. | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "bb9a6836d1cb772a": {
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
@@ -92675,6 +92675,14 @@
     "result": "agrees"
    }
   },
+  "c071fa3c4cbb056c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp122928448 part (b); re-derived (atoms and charge balanced, lowest terms) against raw CNXML m68709; hint rewritten after checker round (hash updated) | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c07222ff6e749332": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
@@ -94292,14 +94300,6 @@
     "result": "agrees"
    }
   },
-  "c40a482df38c72be": {
-   "verdict": "ok",
-   "note": "Each molecule HCl has two kinds of atoms, all molecules alike: compound; source (f) compound. Only change: closing period.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "c40c631b83a7a2b2": {
    "verdict": "ok",
    "note": "KC 2 10.3 § § Functions of RNA in Protein Synthesis, m58837",
@@ -94758,6 +94758,14 @@
   "c4cba90d5196ae9c": {
    "verdict": "ok",
    "note": "KC 1 2.4 § introduction (body: structural formula and models), m68693",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c4cc29f9aca1cf63": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm6604608; part: Al(s) + F₂(g) ⟶.; key 2Al(s) + 3F₂(g) ⟶ 2AlF₃(s) re-derived against the CNXML | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -97583,14 +97591,6 @@
     "result": "agrees"
    }
   },
-  "cace3c0c4e4b2c2a": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp122928448 part (c); source prints MgC1₂ (digit one), keyed MgCl₂ per parent decision; re-derived (atoms and charge balanced, lowest terms) against raw CNXML m68709",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "cad01d5843bafb26": {
    "verdict": "ok",
    "note": "author-built from § Sustaining Microbial Growth, Check Your Understanding: \"During which phase does growth occur at the fastest rate?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -97670,6 +97670,14 @@
   "caf6505970608413": {
    "verdict": "ok",
    "note": "author-built from § Antibody Classes: \"The secreted form of IgM assembles into a pentamer with five monomers of IgM bound together by a protein structure called the J chain .\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "cafa3057656719f8": {
+   "verdict": "ok",
+   "note": "glossary recall: binary acid (definition fs-idp282291040) | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -98339,14 +98347,6 @@
    "note": "Glossary definition fs-id2316354, term \"heat\", meaning \"energy transferred from one system to another that is not work (energy of the molecules' motion or particles)\" — prompt is the meaning verbatim; accept=\"heat energy\" covers the synonym the section body itself bolds and uses throughout. Question contains no word of the answer. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "cc9547c6de246ef1": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp267125008 part (d); re-derived (atoms and charge balanced, lowest terms) against raw CNXML m68709",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -105967,6 +105967,14 @@
     "result": "agrees"
    }
   },
+  "dd2b445818272f43": {
+   "verdict": "ok",
+   "note": "Oxygen (O2) contains one kind of atom: element; source (b) element. Only change: closing period. | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "dd319e4651e17ac0": {
    "verdict": "ok",
    "note": "key-term recall from the Glossary appendix: cysticerci (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -109071,6 +109079,15 @@
   "e38bc3da2ccf0d0e": {
    "verdict": "ok"
   },
+  "e39024480baa56ae": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm6604608; part: P₄(s) + O₂(g) ⟶.; key P₄(s) + 5O₂(g) ⟶ P₄O₁₀(s) re-derived against the CNXML | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "Key is the source's P₄O₁₀ (exercise fs-idm6604608 part (c)), which the solver also answered. The alternative 2P₂O₅ uses the empirical formula; the chapter prints P₄O₁₀ four times and P₂O₅ nowhere, and an equation takes no accept. It grades incorrect; key stands."
+   }
+  },
   "e391159edfe80d2f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -111247,6 +111264,14 @@
     "result": "agrees"
    }
   },
+  "e853d6b0616232c5": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp208990784 part (b); re-derived (atoms and charge balanced, lowest terms) against raw CNXML m68709 | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e86347f955c77ff3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -111502,15 +111527,6 @@
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
-   }
-  },
-  "e905f07b96b09a3e": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm6604608; part: P₄(s) + O₂(g) ⟶.; key P₄(s) + 5O₂(g) ⟶ P₄O₁₀(s) re-derived against the CNXML",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "adjudicated",
-    "note": "Key is the source's P₄O₁₀ (exercise fs-idm6604608 part (c)), which the solver also answered. The alternative 2P₂O₅ uses the empirical formula; the chapter prints P₄O₁₀ four times and P₂O₅ nowhere, and an equation takes no accept. It grades incorrect; key stands."
    }
   },
   "e913150916e4a104": {
@@ -117808,14 +117824,6 @@
     "result": "agrees"
    }
   },
-  "f635679919f9b0ae": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp122928448 part (a); re-derived (atoms and charge balanced, lowest terms) against raw CNXML m68709",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "f640287591709edf": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -121207,14 +121215,6 @@
   "fccf7f6df96b1224": {
    "verdict": "ok",
    "note": "KC 3 12.1 § Basic Functions, m46500"
-  },
-  "fcd266c92871ab3c": {
-   "verdict": "ok",
-   "note": "Pancake syrup is sugars, water, flavorings in varying amounts: mixture; source (d) mixture. Only change: closing period.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "fcd486416b0e62f2": {
    "verdict": "ok",

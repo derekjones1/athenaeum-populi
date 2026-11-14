@@ -78,6 +78,13 @@ export const TABLE_NOTES = Object.freeze({
   // The table is still read against the CNXML: `constants` supplies one
   // deviation per value the data file changes, from the source's number
   // recorded there to the number the page must print.
+  // Appendix C: the source truncates a cubic foot, 28.3168… L, to 28.316;
+  // Section 1.6's own table (m68683) prints the rounded 28.317.
+  'chemistry-bundle:m68861': {
+    deviations: [
+      ['=28.316L', '=28.317L', 'erratum 3043: 1 ft³ = (0.3048 m)³ = 28.3168… L, which is 28.317 L at five figures; the source truncates'],
+    ],
+  },
   'chemistry-bundle:m68862': { constants: true },
   // Appendix H: nine formulas are printed as images; the Lewis structures
   // leave the table and follow it as figures.

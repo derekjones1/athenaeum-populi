@@ -562,6 +562,9 @@ test('the chemistry subject playbook states the rules its engine enforces', asyn
     ...['FeCl3.2H2O', 'FeCl3*2H2O', 'FeCl₃·2H₂O'].map((shown) => ({ shown, key: 'FeCl₃·2H₂O', form: 'formula', status: 'correct' })),
     { shown: '2Na + 2H2O -> 2NaOH + H2', key: H2O_NA, form: 'equation', status: 'correct' },
     { shown: '4Na + 4H2O -> 4NaOH + 2H2', key: H2O_NA, form: 'equation', status: 'form' },
+    // Every count multiplied up, against a key in lowest terms (November 14, 2026).
+    { shown: 'C2H2', key: 'CH', form: 'formula', status: 'incorrect' },
+    { shown: 'Na2Cl2', key: 'NaCl', form: 'formula', status: 'incorrect' },
     // A state the learner typed that is not the key's (November 14, 2026).
     { shown: '2Na(s) + 2H2O(g) -> 2NaOH(aq) + H2(g)', key: H2O_NA, form: 'equation', status: 'form' },
     { shown: 'Na + H2O -> NaOH + H2', key: H2O_NA, form: 'equation', status: 'incorrect' },
@@ -1160,6 +1163,37 @@ test('every Chemistry name keyed with a charge answers its Greek-prefix name wit
     }
   }
   assert.ok(read >= 6, `the charged binary name keys are read (${read})`);
+});
+
+// A name keyed with a metal's charge, typed without the numeral or with an
+// ordinary number for it, is told which (check-text.mjs `numeralProblem`).
+// This walks every Chemistry name key written "metal(numeral) …": each must
+// get both verdicts, no gate may read either typing as the key, and the
+// next charge up, typed as a number, must get neither.
+test('every Chemistry name keyed with a charge says when its numeral is missing or typed as a number', async () => {
+  const { gradeText, checkText, ARABIC_NUMERAL_MESSAGE, MISSING_NUMERAL_MESSAGE } = await import('../../assets/js/lib/text/check-text.mjs');
+  const { pageItems } = await import('../verify/verify-source-keys.mjs');
+  const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII'];
+  let read = 0;
+  for (const file of walkMarkdown(fileURLToPath(new URL('content/physical-sciences/chemistry/', repositoryRoot)))) {
+    const markdown = readFileSync(file, 'utf8');
+    for (const item of pageItems(markdown)) {
+      if (item.type !== 'textin' || item.form) continue;
+      const named = /^([A-Za-z]+)\((I{1,3}|IV|VI{0,3}|V)\)(.*)$/.exec(item.answer.trim());
+      if (!named) continue;
+      read += 1;
+      const [, metal, numeral, rest] = named;
+      const where = `${relative(repositoryRootPath, file)}:${item.line}`;
+      const options = { accept: item.accept ?? '' };
+      const charge = ROMAN.indexOf(numeral.toUpperCase());
+      const without = `${metal}${rest}`;
+      assert.deepEqual(gradeText(without, item.answer, options), { status: 'incorrect', message: MISSING_NUMERAL_MESSAGE }, `${where}: ${without}`);
+      assert.deepEqual(gradeText(`${metal}(${charge})${rest}`, item.answer, options), { status: 'form', message: ARABIC_NUMERAL_MESSAGE }, `${where}: ${metal}(${charge})${rest}`);
+      assert.deepEqual(gradeText(`${metal}(${charge + 1})${rest}`, item.answer, options), { status: 'incorrect' }, `${where}: the next charge, as a number`);
+      for (const typed of [without, `${metal}(${charge})${rest}`]) assert.equal(checkText(typed, item.answer, options), 'incorrect', `${where}: no gate reads ${typed} as the key`);
+    }
+  }
+  assert.ok(read >= 10, `the charged name keys are read (${read})`);
 });
 
 test('the Chemistry Knowledge Check edition states what the lint, the gate, and the kit hold', () => {

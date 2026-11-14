@@ -303,7 +303,7 @@ for each product, lists the ingredients that are pure compounds
 {{< multiplechoice
   question="Classify the following as an element, a compound, or a mixture: iron."
   answer="element"
-  hint="Ask whether the sample has a constant composition and, if it does, whether a chemical change can break it down; the flow chart in the Classifying Matter section sets out the questions."
+  hint="Work through the questions of the flow chart in the Classifying Matter section, starting from the first, and answer each one for this sample."
 >}}
 element
 compound
@@ -313,7 +313,7 @@ mixture
 {{< multiplechoice
   question="Classify the following as an element, a compound, or a mixture: oxygen."
   answer="element"
-  hint="Ask whether the substance can be broken down into simpler substances by a chemical change."
+  hint="Work through the questions of the flow chart in the Classifying Matter section, starting from the first, and answer each one for this sample."
 >}}
 element
 compound
@@ -323,7 +323,7 @@ mixture
 {{< multiplechoice
   question="Classify the following as an element, a compound, or a mixture: mercury oxide."
   answer="compound"
-  hint="Ask whether the substance has a constant composition and, if it does, whether a chemical change can break it down into simpler substances."
+  hint="Work through the questions of the flow chart in the Classifying Matter section, starting from the first, and answer each one for this sample."
 >}}
 element
 compound
@@ -333,7 +333,7 @@ mixture
 {{< multiplechoice
   question="Classify the following as an element, a compound, or a mixture: pancake syrup."
   answer="mixture"
-  hint="Work through the questions of the flow chart in the Classifying Matter section, starting from the first."
+  hint="Work through the questions of the flow chart in the Classifying Matter section, starting from the first, and answer each one for this sample."
 >}}
 element
 compound
@@ -343,7 +343,7 @@ mixture
 {{< multiplechoice
   question="Classify the following as an element, a compound, or a mixture: carbon dioxide."
   answer="compound"
-  hint="Ask whether the substance has a constant composition and how many kinds of atoms make it up."
+  hint="Work through the questions of the flow chart in the Classifying Matter section, starting from the first, and answer each one for this sample."
 >}}
 element
 compound
@@ -353,7 +353,7 @@ mixture
 {{< multiplechoice
   question="Classify the following as an element, a compound, or a mixture: a substance composed of molecules each of which contains one hydrogen atom and one chlorine atom."
   answer="compound"
-  hint="Ask how many kinds of atoms make up each molecule of the substance."
+  hint="Work through the questions of the flow chart in the Classifying Matter section, starting from the first, and answer each one for this sample."
 >}}
 element
 compound
@@ -363,7 +363,7 @@ mixture
 {{< multiplechoice
   question="Classify the following as an element, a compound, or a mixture: baking soda."
   answer="compound"
-  hint="Ask whether baking soda has one constant composition and, if it does, whether a chemical change can break it down."
+  hint="Work through the questions of the flow chart in the Classifying Matter section, starting from the first, and answer each one for this sample."
 >}}
 element
 compound
@@ -373,7 +373,7 @@ mixture
 {{< multiplechoice
   question="Classify the following as an element, a compound, or a mixture: baking powder."
   answer="mixture"
-  hint="Reread the paragraphs of the Classifying Matter section that define each kind of matter, and apply them to this product."
+  hint="Work through the questions of the flow chart in the Classifying Matter section, starting from the first, and answer each one for this sample."
 >}}
 element
 compound
@@ -406,4 +406,4 @@ they differ in that the types of atoms change from one substance to the next
 
 ---
 
-<small>This section is adapted from [Chemistry 2e, Section 1.2: Phases and Classification of Matter](https://openstax.org/books/chemistry-2e/pages/1-2-phases-and-classification-of-matter) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the twelve figures re-encoded as WebP, the five photographs (the plasma torch, the mercury(II) oxide test tubes, the salad dressing and sports drink, the gold nugget and gold crystal, and the cell phone) marked as photos and the other seven as diagrams; every figure's alt text rewritten from the image (among other differences, the source alts call the three corked flasks beakers, misspell “homogeneous” and “phosphorus”, and describe the fuel cell's protons repelling electrons, which the drawing does not show), with an extended description added to the fuel cell; references to numbered figures and to the table replaced by describing phrases, the sentence opening on the cotton figure's number now beginning “The images below show”; the two Link to Learning boxes and the two Chemistry in Everyday Life boxes rendered as callouts, each box's figures inside it, and the link texts “video” and “site” extended to describe their destinations; the elemental-composition table transcribed as a Markdown table with its title as a bold line above it; the reaction for the decomposition of water and the two powers of ten set as math; the missing closing quotation mark restored in the salad-dressing figure's credit line (credit b “left”); the end-of-section exercises adapted into the interactive Practice block, with the 9 exercises the source keys carried as 21 items: 10 three-option multiple choice items, options in the stem's own order — one per lettered part of the classification exercise, its lead-in restated in the singular for each part and closed with a period, and one for the judgment each of the rusting-nail and open-container parts asks for (increased, decreased, or remained the same; less than, greater than, or the same as), followed directly by a self-check asking for the explanation; 3 fill-ins for the numeric parts of the rusting-nail and fermentation exercises, each stem ending with a sentence naming the unit; and 8 self-checks carrying the source solutions as model answers, each with rubric checkpoints decomposing that answer, the explanation parts of the rusting-nail and fermentation exercises among them, and the commercial-products exercise, whose source answer is a sample, opening with a sentence in the question's own words saying what a good answer contains, its rubric drawn from that sentence; the fermentation word equation set inline in each of its stems, closed with a period; in the two parts that rely on a number given only in an earlier part, that number restated inline in the part’s own sentence (the nail's initial mass, and the mass of glucose fully converted); the rusting-nail fill-in and the two fermentation fill-ins, whose keys carry a place the learner meets only in Section 1.5 Measurement Uncertainty, Accuracy, and Precision, asking for the mass to the nearest tenth of a gram; the 9 exercises the source prints no answer for are omitted; four filler recall items (textin) added after the keyed items of their groups: in the states-of-matter group, a recall of the key term defined as a gaseous state of matter containing charged particles; in the mass-and-weight group, a cloze on the body sentence that defines weight and a cloze on the body sentence about the more common way to determine an object’s mass; and in the atoms-and-molecules group, a cloze on the body sentence that defines a molecule; and the number of carbon-atom “dimes” needed to cover the cross-section of a spider-web strand corrected, with a Source note, where the source’s figure is the area ratio multiplied by π.</small>
+<small>This section is adapted from [Chemistry 2e, Section 1.2: Phases and Classification of Matter](https://openstax.org/books/chemistry-2e/pages/1-2-phases-and-classification-of-matter) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the twelve figures re-encoded as WebP, the five photographs (the plasma torch, the mercury(II) oxide test tubes, the salad dressing and sports drink, the gold nugget and gold crystal, and the cell phone) marked as photos and the other seven as diagrams; every figure's alt text rewritten from the image (among other differences, the source alts call the three corked flasks beakers, misspell “homogeneous” and “phosphorus”, and describe the fuel cell's protons repelling electrons, which the drawing does not show), with an extended description added to the fuel cell; references to numbered figures and to the table replaced by describing phrases, the sentence opening on the cotton figure's number now beginning “The images below show”; the two Link to Learning boxes and the two Chemistry in Everyday Life boxes rendered as callouts, each box's figures inside it, and the link texts “video” and “site” extended to describe their destinations; the elemental-composition table transcribed as a Markdown table with its title as a bold line above it; the reaction for the decomposition of water and the two powers of ten set as math; the missing closing quotation mark restored in the salad-dressing figure's credit line (credit b “left”); the end-of-section exercises adapted into the interactive Practice block, with the 9 exercises the source keys carried as 21 items: 10 three-option multiple-choice items, options in the stem's own order — one per lettered part of the classification exercise, its lead-in restated in the singular for each part and closed with a period, and one for the judgment each of the rusting-nail and open-container parts asks for (increased, decreased, or remained the same; less than, greater than, or the same as), followed directly by a self-check asking for the explanation; 3 fill-ins for the numeric parts of the rusting-nail and fermentation exercises, each stem ending with a sentence naming the unit; and 8 self-checks carrying the source solutions as model answers, each with rubric checkpoints decomposing that answer, the explanation parts of the rusting-nail and fermentation exercises among them, and the commercial-products exercise, whose source answer is a sample, opening with a sentence in the question's own words saying what a good answer contains, its rubric drawn from that sentence; the fermentation word equation set inline in each of its stems, closed with a period; in the two parts that rely on a number given only in an earlier part, that number restated inline in the part’s own sentence (the nail's initial mass, and the mass of glucose fully converted); the rusting-nail fill-in and the two fermentation fill-ins, whose keys carry a place the learner meets only in Section 1.5 Measurement Uncertainty, Accuracy, and Precision, asking for the mass to the nearest tenth of a gram; the 9 exercises the source prints no answer for are omitted; four filler text-recall items added after the keyed items of their groups: in the states-of-matter group, a recall of the key term defined as a gaseous state of matter containing charged particles; in the mass-and-weight group, a cloze on the body sentence that defines weight and a cloze on the body sentence about the more common way to determine an object’s mass; and in the atoms-and-molecules group, a cloze on the body sentence that defines a molecule; and the number of carbon-atom “dimes” needed to cover the cross-section of a spider-web strand corrected, with a Source note, where the source’s figure is the area ratio multiplied by π.</small>

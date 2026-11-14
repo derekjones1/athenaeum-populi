@@ -15,7 +15,7 @@ For a selection of accessible Periodic Tables, visit the [Perkins School for the
 
 *Source note:* the source’s periodic table prints each atomic mass rounded to four figures. The table here prints the [abridged standard atomic weights](https://www.ciaaw.org/abridged-atomic-weights.htm) of the International Union of Pure and Applied Chemistry (IUPAC, 2024): five significant figures, or fewer where an element’s isotopic composition varies too much from one sample to another for a fifth figure to mean anything. Every calculation in this book uses the masses as they are printed here.
 
-The table below lists what each box of the figure prints — the atomic number, symbol, name, and atomic mass, in square brackets where the figure prints brackets — and the group and period in which the box sits.
+The table below lists what each box of the figure prints — the atomic number, symbol, name, and atomic mass, in square brackets where the figure prints brackets — and the group and period in which the box sits. The thirty elements of the two rows set below the main table belong to no numbered group: their Group cell names the row instead.
 
 **The elements of the periodic table above**
 
@@ -77,21 +77,21 @@ The table below lists what each box of the figure prints — the atomic number, 
 | 54 | Xe | xenon | 131.29 | 18 | 5 |
 | 55 | Cs | cesium | 132.91 | 1 | 6 |
 | 56 | Ba | barium | 137.33 | 2 | 6 |
-| 57 | La | lanthanum | 138.91 | 3 (row of elements 57–71) | 6 |
-| 58 | Ce | cerium | 140.12 | 3 (row of elements 57–71) | 6 |
-| 59 | Pr | praseodymium | 140.91 | 3 (row of elements 57–71) | 6 |
-| 60 | Nd | neodymium | 144.24 | 3 (row of elements 57–71) | 6 |
-| 61 | Pm | promethium | [145] | 3 (row of elements 57–71) | 6 |
-| 62 | Sm | samarium | 150.36 | 3 (row of elements 57–71) | 6 |
-| 63 | Eu | europium | 151.96 | 3 (row of elements 57–71) | 6 |
-| 64 | Gd | gadolinium | 157.25 | 3 (row of elements 57–71) | 6 |
-| 65 | Tb | terbium | 158.93 | 3 (row of elements 57–71) | 6 |
-| 66 | Dy | dysprosium | 162.50 | 3 (row of elements 57–71) | 6 |
-| 67 | Ho | holmium | 164.93 | 3 (row of elements 57–71) | 6 |
-| 68 | Er | erbium | 167.26 | 3 (row of elements 57–71) | 6 |
-| 69 | Tm | thulium | 168.93 | 3 (row of elements 57–71) | 6 |
-| 70 | Yb | ytterbium | 173.05 | 3 (row of elements 57–71) | 6 |
-| 71 | Lu | lutetium | 174.97 | 3 (row of elements 57–71) | 6 |
+| 57 | La | lanthanum | 138.91 | — (row of elements 57–71) | 6 |
+| 58 | Ce | cerium | 140.12 | — (row of elements 57–71) | 6 |
+| 59 | Pr | praseodymium | 140.91 | — (row of elements 57–71) | 6 |
+| 60 | Nd | neodymium | 144.24 | — (row of elements 57–71) | 6 |
+| 61 | Pm | promethium | [145] | — (row of elements 57–71) | 6 |
+| 62 | Sm | samarium | 150.36 | — (row of elements 57–71) | 6 |
+| 63 | Eu | europium | 151.96 | — (row of elements 57–71) | 6 |
+| 64 | Gd | gadolinium | 157.25 | — (row of elements 57–71) | 6 |
+| 65 | Tb | terbium | 158.93 | — (row of elements 57–71) | 6 |
+| 66 | Dy | dysprosium | 162.50 | — (row of elements 57–71) | 6 |
+| 67 | Ho | holmium | 164.93 | — (row of elements 57–71) | 6 |
+| 68 | Er | erbium | 167.26 | — (row of elements 57–71) | 6 |
+| 69 | Tm | thulium | 168.93 | — (row of elements 57–71) | 6 |
+| 70 | Yb | ytterbium | 173.05 | — (row of elements 57–71) | 6 |
+| 71 | Lu | lutetium | 174.97 | — (row of elements 57–71) | 6 |
 | 72 | Hf | hafnium | 178.49 | 4 | 6 |
 | 73 | Ta | tantalum | 180.95 | 5 | 6 |
 | 74 | W | tungsten | 183.84 | 6 | 6 |
@@ -109,21 +109,21 @@ The table below lists what each box of the figure prints — the atomic number, 
 | 86 | Rn | radon | [222] | 18 | 6 |
 | 87 | Fr | francium | [223] | 1 | 7 |
 | 88 | Ra | radium | [226] | 2 | 7 |
-| 89 | Ac | actinium | [227] | 3 (row of elements 89–103) | 7 |
-| 90 | Th | thorium | 232.04 | 3 (row of elements 89–103) | 7 |
-| 91 | Pa | protactinium | 231.04 | 3 (row of elements 89–103) | 7 |
-| 92 | U | uranium | 238.03 | 3 (row of elements 89–103) | 7 |
-| 93 | Np | neptunium | [237] | 3 (row of elements 89–103) | 7 |
-| 94 | Pu | plutonium | [244] | 3 (row of elements 89–103) | 7 |
-| 95 | Am | americium | [243] | 3 (row of elements 89–103) | 7 |
-| 96 | Cm | curium | [247] | 3 (row of elements 89–103) | 7 |
-| 97 | Bk | berkelium | [247] | 3 (row of elements 89–103) | 7 |
-| 98 | Cf | californium | [251] | 3 (row of elements 89–103) | 7 |
-| 99 | Es | einsteinium | [252] | 3 (row of elements 89–103) | 7 |
-| 100 | Fm | fermium | [257] | 3 (row of elements 89–103) | 7 |
-| 101 | Md | mendelevium | [258] | 3 (row of elements 89–103) | 7 |
-| 102 | No | nobelium | [259] | 3 (row of elements 89–103) | 7 |
-| 103 | Lr | lawrencium | [262] | 3 (row of elements 89–103) | 7 |
+| 89 | Ac | actinium | [227] | — (row of elements 89–103) | 7 |
+| 90 | Th | thorium | 232.04 | — (row of elements 89–103) | 7 |
+| 91 | Pa | protactinium | 231.04 | — (row of elements 89–103) | 7 |
+| 92 | U | uranium | 238.03 | — (row of elements 89–103) | 7 |
+| 93 | Np | neptunium | [237] | — (row of elements 89–103) | 7 |
+| 94 | Pu | plutonium | [244] | — (row of elements 89–103) | 7 |
+| 95 | Am | americium | [243] | — (row of elements 89–103) | 7 |
+| 96 | Cm | curium | [247] | — (row of elements 89–103) | 7 |
+| 97 | Bk | berkelium | [247] | — (row of elements 89–103) | 7 |
+| 98 | Cf | californium | [251] | — (row of elements 89–103) | 7 |
+| 99 | Es | einsteinium | [252] | — (row of elements 89–103) | 7 |
+| 100 | Fm | fermium | [257] | — (row of elements 89–103) | 7 |
+| 101 | Md | mendelevium | [258] | — (row of elements 89–103) | 7 |
+| 102 | No | nobelium | [259] | — (row of elements 89–103) | 7 |
+| 103 | Lr | lawrencium | [262] | — (row of elements 89–103) | 7 |
 | 104 | Rf | rutherfordium | [267] | 4 | 7 |
 | 105 | Db | dubnium | [270] | 5 | 7 |
 | 106 | Sg | seaborgium | [271] | 6 | 7 |

@@ -165,6 +165,11 @@ export function matchesForm(normalized, form) {
  * right and the naming method is the one for two nonmetals, so the verdict
  * says which method the item asks for (prefix-names.mjs); the same rule —
  * `gradeText` only, never a gate — holds it.
+ *
+ * And two more, for a name keyed with a metal's charge: the name typed
+ * WITHOUT its Roman numeral is `incorrect` with a sentence that says a
+ * numeral is needed (which chloride of iron is not said), and the right
+ * charge typed as an ordinary number is `form` (`numeralProblem`).
  */
 export function gradeText(input, answer, { accept = '', form = '' } = {}) {
   if (form) return checkChem(input, answer, { accept, form });
@@ -174,6 +179,11 @@ export function gradeText(input, answer, { accept = '', form = '' } = {}) {
   }
   if (status === 'incorrect' && isPrefixName(input, answer, { accept })) {
     return { status: 'form', message: PREFIX_NAME_MESSAGE };
+  }
+  if (status === 'incorrect') {
+    const numeral = numeralProblem(input, answer, { accept });
+    if (numeral === 'arabic') return { status: 'form', message: ARABIC_NUMERAL_MESSAGE };
+    if (numeral === 'missing') return { status: 'incorrect', message: MISSING_NUMERAL_MESSAGE };
   }
   return { status };
 }
@@ -204,6 +214,44 @@ export function isPrefixName(input, answer, { accept = '' } = {}) {
   if (!ionic) return false;
   if (checkText(ionic.numeral, answer, { accept }) === 'correct') return true;
   return ionic.fixed && checkText(ionic.bare, answer, { accept }) === 'correct';
+}
+
+// A name keyed with a charge — "iron(II) chloride" — typed without the
+// numeral, or with the charge as an ordinary number. Both were a bare "Not
+// quite" on eleven items of Chemistry 2.7 until November 14, 2026, and the
+// missing numeral is the commonest slip in naming. Neither message gives
+// the numeral; `gradeText` only, so no gate reads either as the key.
+export const MISSING_NUMERAL_MESSAGE = 'This metal forms more than one ion, so the name must say which: add the ion’s charge as a Roman numeral in parentheses after the metal’s name.';
+export const ARABIC_NUMERAL_MESSAGE = 'That is the right compound — now write the metal ion’s charge as a Roman numeral, not as an ordinary number.';
+
+const ROMAN_NUMERALS = ['', 'i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii'];
+// "iron(II)", "Iron (III)": a word, then a Roman numeral in parentheses —
+// the one place this book writes a numeral, so "Type I" is never read.
+const CHARGED_METAL = /^\s*(?:the\s+)?[A-Za-z]+\s*\((I{1,3}|IV|VI{0,3}|V)\)/i;
+
+/**
+ * What is wrong with the numeral of a typed name, against a key that
+ * prints a metal's charge: `'missing'` when the name is the key's without
+ * its numeral ("iron chloride"), `'arabic'` when the right charge is typed
+ * as an ordinary number ("iron(2) chloride", "iron 2+ chloride"), else
+ * `null`. The typed name is rebuilt WITH the key's numeral and graded, so
+ * every fold the grader makes is made here too, and a wrong charge
+ * ("iron(3) chloride" for iron(II) chloride) is read as nothing.
+ */
+export function numeralProblem(input, answer, { accept = '' } = {}) {
+  const numerals = new Set([answer, ...String(accept ?? '').split('|')]
+    .map((member) => CHARGED_METAL.exec(String(member ?? ''))?.[1].toLowerCase())
+    .filter(Boolean));
+  if (!numerals.size) return null;
+  const words = normalizeText(input).split(' ').filter(Boolean);
+  // A name that already carries a numeral is not read: a wrong one is wrong.
+  if (!words.length || (words[1] && ROMAN_NUMERALS.includes(words[1]))) return null;
+  const graded = (name) => checkText(name, answer, { accept }) === 'correct';
+  for (const numeral of numerals) {
+    if (words[1] === String(ROMAN_NUMERALS.indexOf(numeral)) && graded([words[0], numeral, ...words.slice(2)].join(' '))) return 'arabic';
+    if (graded([words[0], numeral, ...words.slice(1)].join(' '))) return 'missing';
+  }
+  return null;
 }
 
 /**

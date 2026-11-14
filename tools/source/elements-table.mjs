@@ -26,11 +26,20 @@ export const ELEMENTS_PAGE = 'content/physical-sciences/chemistry/appendices/a-t
 export const ELEMENTS_TABLE_TITLE = 'The elements of the periodic table above';
 export const ELEMENTS_TABLE_HEADER = Object.freeze(['Atomic number', 'Symbol', 'Name', 'Atomic mass', 'Group', 'Period']);
 
-/** The group cell: a number, or the row of fifteen an f-block element is drawn in. */
+/**
+ * The group cell: a number, or — for an element of the two rows drawn below
+ * the main table — no number, and the row it is drawn in. Those thirty
+ * elements belong to no numbered group (IUPAC's table gives them none, and
+ * the data file's `group` is null). Until November 14, 2026 the cell read
+ * "3 (row of elements 89–103)", the column their row hangs from: read
+ * against the book's own key term, "transition metal: element in groups
+ * 3–12", that made uranium a transition metal (a blind solver's note on
+ * Section 2.5's sort of inner transition metals).
+ */
 function groupCell(element, data) {
   if (!element.series) return String(element.group);
   const row = data.elements.filter((other) => other.series === element.series);
-  return `3 (row of elements ${row[0].number}–${row.at(-1).number})`;
+  return `— (row of elements ${row[0].number}–${row.at(-1).number})`;
 }
 
 /** The table's body, one array of cells per element. */

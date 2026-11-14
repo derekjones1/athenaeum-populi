@@ -6576,6 +6576,17 @@
       "rationale": "The source prints the symbol Ha for element 105, which IUPAC named dubnium (Db) in 1997 and the book's own periodic table prints as Db. The page prints Db with a Source note under the table. Authored with the appendices, ruled by the orchestrator, November 10, 2026."
     },
     {
+      "localPath": "content/physical-sciences/chemistry/appendices/c-units-and-conversion-factors.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68861",
+      "sourceElementIds": [
+        "fs-idp47106160"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3043,
+      "rationale": "The Units of Volume table prints \"cubic foot (US) = 28.316 L\". A foot is exactly 0.3048 m, so a cubic foot is 28.316846592 L, which is 28.317 L at the five figures printed; the source truncates, and its own Section 1.6 table of common conversion factors (m68683) prints 28.317 L. The page prints 28.317 L with a visible Source note directly under the table, a footer clause, and a TABLE_NOTES deviation in verify-source-tables. No key depends on the value. Found by the cross-book consistency reader, fixed in the pass before chapter 5, ruled by the orchestrator on Derek's instruction, November 14, 2026."
+    },
+    {
       "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/03-atomic-structure-and-symbolism.md",
       "bundle": "chemistry-bundle",
       "moduleId": "m68692",

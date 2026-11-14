@@ -811,7 +811,57 @@ test('a text-in answers a Greek-prefix name of the keyed metal compound with the
     .toBe('incorrect');
   await expect(feedback).toHaveText(/^Not quite/);
 
+  // The name without its numeral is wrong, and is told what is missing; the
+  // right charge typed as an ordinary number is the right compound in the
+  // wrong notation (both a bare "Not quite" until November 14, 2026).
+  await field.fill('titanium chloride');
+  await field.press('Enter');
+  await expect
+    .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
+    .toBe('incorrect');
+  await expect(feedback).toHaveText('This metal forms more than one ion, so the name must say which: add the ion’s charge as a Roman numeral in parentheses after the metal’s name.');
+  await field.fill('titanium(4) chloride');
+  await field.press('Enter');
+  await expect
+    .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
+    .toBe('form');
+  await expect(feedback).toHaveText('That is the right compound — now write the metal ion’s charge as a Roman numeral, not as an ordinary number.');
+  expect(await field.evaluate((el) => el.readOnly)).toBe(false);
+
   await field.fill('titanium(IV) chloride');
+  await field.press('Enter');
+  await expect
+    .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
+    .toBe('correct');
+});
+
+// Section 2.4 asks for a molecular formula and then the empirical one. The
+// molecular formula typed into the empirical item was a bare "Not quite"
+// until November 14, 2026; the field now says the ratio is right and every
+// count is multiplied up, without saying which formula is which.
+test('a formula field says when every count is a multiple of the answer’s', async ({ page }) => {
+  await gotoBuiltPage(
+    page,
+    '/physical-sciences/chemistry/02-atoms-molecules-and-ions/04-chemical-formulas/',
+  );
+
+  // The metaldehyde exercise's empirical-formula item (a second item of the page shares the key).
+  const card = page.locator('text-in[data-answer="C₂H₄O"]').first();
+  await waitForUpgrade(card, (el) => (
+    Boolean(customElements.get('text-in')) && Boolean(el.querySelector('.ap-textin-check'))
+  ));
+  await card.scrollIntoViewIfNeeded();
+
+  const field = card.locator('.ap-textin-field');
+  const feedback = card.locator('.ap-textin-feedback');
+  await field.fill('C8H16O4');
+  await field.press('Enter');
+  await expect
+    .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
+    .toBe('incorrect');
+  await expect(feedback).toHaveText('That has the right elements in the right ratio, with every count multiplied up. Write the formula with the smallest whole numbers of atoms in that ratio.');
+
+  await field.fill('C2H4O');
   await field.press('Enter');
   await expect
     .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
