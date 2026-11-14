@@ -75,6 +75,11 @@ those places.
   `Na2CO3.10H2O`, `2H2 + O2 -> 2H2O` (state symbols optional, a charge
   after `^`, smallest whole-number coefficients). Check an equation's atoms
   and charge on both sides before you write it down.
+- **A `sortbins`:** the packet lists its `bins` and its `items` (the labels);
+  the masked page prints neither. `answer` is a JSON object mapping EVERY
+  label to one bin, both verbatim: `{"Uranium": "Metal", "Bromine":
+  "Nonmetal", …}`. A label the page lets you place in two bins goes in
+  `note`, naming both.
 - An item you cannot settle from the page gets your best answer plus
   `"unsure": true` and the reason in `note`.
 - Anything wrong on the page outside your item — a worked example whose

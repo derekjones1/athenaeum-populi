@@ -562,6 +562,8 @@ test('the chemistry subject playbook states the rules its engine enforces', asyn
     ...['FeCl3.2H2O', 'FeCl3*2H2O', 'FeCl₃·2H₂O'].map((shown) => ({ shown, key: 'FeCl₃·2H₂O', form: 'formula', status: 'correct' })),
     { shown: '2Na + 2H2O -> 2NaOH + H2', key: H2O_NA, form: 'equation', status: 'correct' },
     { shown: '4Na + 4H2O -> 4NaOH + 2H2', key: H2O_NA, form: 'equation', status: 'form' },
+    // A state the learner typed that is not the key's (November 14, 2026).
+    { shown: '2Na(s) + 2H2O(g) -> 2NaOH(aq) + H2(g)', key: H2O_NA, form: 'equation', status: 'form' },
     { shown: 'Na + H2O -> NaOH + H2', key: H2O_NA, form: 'equation', status: 'incorrect' },
     { shown: '8H+ + MnO4- + 5e- -> Mn2+ + 4H2O', key: '8H⁺(aq) + MnO₄⁻(aq) + 5e⁻ ⟶ Mn²⁺(aq) + 4H₂O(l)', form: 'equation', status: 'correct' },
     // November 12, 2026: the arrow, a formula divided through, electrons.
@@ -1029,7 +1031,10 @@ test('no typing example shown beside a formula field is an item\'s key', async (
   const grader = read('assets/js/lib/text/check-chem.mjs');
   const solve = /A `textin`:\*\*([\s\S]*?)\n- /.exec(read('docs/briefs/chemistry/solve.md'))[1];
   const examples = [
-    ...quoted(guide, /(?:: |, )([A-Z0-9][^,']*?)(?=,|\.')/g),
+    // An example ends at its comma, or at the period that closes it — the
+    // guide's last word or, since the equation guide gained a sentence on
+    // state symbols (November 14, 2026), the end of its first sentence.
+    ...quoted(guide, /(?:: |, )([A-Z0-9][^,']*?)(?=,|\.(?:'| ))/g),
     ...quoted(grader, /plain numbers, like ([^.']+)\./g),
     ...quoted(solve, /`([^`]+)`/g).filter((text) => /[A-Z]/.test(text) && !/answerForm/.test(text)),
   ];
@@ -1112,6 +1117,49 @@ test('every Chemistry name keyed with a charge answers its classical name as an 
     }
   }
   assert.ok(read >= 6, `the charged name keys are read (${read})`);
+});
+
+// The grader answers a Greek-prefix name of a keyed metal compound —
+// "titanium tetrachloride" for titanium(IV) chloride — with the naming
+// method the item asks for, rather than as wrong (check-text.mjs
+// `gradeText`, prefix-names.mjs). This walks every Chemistry name key of the
+// shape "metal(numeral) -ide": the prefix name its charges give must get
+// that verdict, no gate may read it as the key, and the prefix name of the
+// metal's next charge must not get it.
+test('every Chemistry name keyed with a charge answers its Greek-prefix name with the naming method', async () => {
+  const { gradeText, checkText, normalizeText, PREFIX_NAME_MESSAGE } = await import('../../assets/js/lib/text/check-text.mjs');
+  const { pageItems } = await import('../verify/verify-source-keys.mjs');
+  const NUMERAL = { i: 1, ii: 2, iii: 3, iv: 4, v: 5, vi: 6, vii: 7 };
+  const ANION = { fluoride: 1, chloride: 1, bromide: 1, iodide: 1, oxide: 2, sulfide: 2, selenide: 2, nitride: 3, phosphide: 3 };
+  const PREFIX = ['', '', 'di', 'tri', 'tetra', 'penta', 'hexa', 'hepta'];
+  const gcd = (a, b) => (b ? gcd(b, a % b) : a);
+  const prefixName = (metal, charge, anion) => {
+    const shared = gcd(charge, ANION[anion]);
+    const metals = ANION[anion] / shared;
+    const anions = charge / shared;
+    // "pentoxide": the prefix's a is dropped before oxide, as the module does.
+    const counted = anions === 1 ? `mono${anion}`.replace('monoo', 'mono') : `${PREFIX[anions]}${anion}`.replace(/a(?=oxide)/, '');
+    return `${PREFIX[metals]}${metal} ${counted}`;
+  };
+  let read = 0;
+  for (const file of walkMarkdown(fileURLToPath(new URL('content/physical-sciences/chemistry/', repositoryRoot)))) {
+    const markdown = readFileSync(file, 'utf8');
+    for (const item of pageItems(markdown)) {
+      if (item.type !== 'textin' || item.form) continue;
+      const [metal, numeral, anion, ...rest] = normalizeText(item.answer).split(' ');
+      if (!NUMERAL[numeral] || !ANION[anion]) continue;
+      read += 1;
+      const where = `${relative(repositoryRootPath, file)}:${item.line}`;
+      const options = { accept: item.accept ?? '' };
+      const tail = rest.length ? ` ${rest.join(' ')}` : '';
+      const prefixed = `${prefixName(metal, NUMERAL[numeral], anion)}${tail}`;
+      assert.deepEqual(gradeText(prefixed, item.answer, options), { status: 'form', message: PREFIX_NAME_MESSAGE }, `${where}: ${prefixed}`);
+      assert.equal(checkText(prefixed, item.answer, options), 'incorrect', `${where}: no gate reads ${prefixed} as the key`);
+      const other = `${prefixName(metal, NUMERAL[numeral] + 1, anion)}${tail}`;
+      assert.deepEqual(gradeText(other, item.answer, options), { status: 'incorrect' }, `${where}: ${other}`);
+    }
+  }
+  assert.ok(read >= 6, `the charged binary name keys are read (${read})`);
 });
 
 test('the Chemistry Knowledge Check edition states what the lint, the gate, and the kit hold', () => {

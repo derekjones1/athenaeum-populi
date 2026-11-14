@@ -2751,6 +2751,9 @@ So the next reader need not raise them again:
 
 ### For Derek
 
+*(All seven were decided and done the same day: "Seven decisions and a
+consistency pass", below.)*
+
 1. **Examples that round partway, before 3.3 teaches not to.** 2.3's
    chlorine and neon examples round an intermediate; a learner who copies
    them gets 69.16 and 30.84 for copper (keys 69.15, 30.85) and 24.30 for
@@ -2830,6 +2833,171 @@ parent re-ran three of the probes.
   chapter's "Reviewed and not errata" list.
 - **A rule learned in chapter N is swept back to chapter 1** (run.md says
   so; the Source note under 1.6's figure waited four chapters for a lint).
+
+## Seven decisions and a consistency pass (November 14, 2026)
+
+Derek took the seven items the last pass left "For Derek" and said to
+implement the best fix for each — as accurate as possible, and easy for a
+learner to use — and to look again for inconsistencies and propose fixes.
+One session, from commit `4871d09c`.
+
+### The seven, as decided
+
+1. **A worked example never reuses a value it has rounded.** 2.3's boron,
+   neon, and chlorine calculations and 3.1's saccharin step print the
+   digits they carry (1.9926 amu + 8.8184 amu; 18.3610 + 0.0987 + 1.6911;
+   1.99705x = 1.5129; 1.31499 × 10²⁰ × 7). No result changed. The chapter 4
+   reader then found the same defect after Section 3.3 teaches against it —
+   4.4's limiting-reactant and percent-yield examples, 4.5's titration and
+   gravimetric examples — and those were fixed the same way (0.071212 and
+   0.053545 mol; 0.50725 g; 8.8075 × 10⁻³ mol; 0.31809 g). 4.5's
+   combustion example keeps its rounded moles: the ratio is rounded to a
+   whole number, as 3.2's empirical-formula examples are. One Source note
+   per page, a footer clause, errata 3039–3041. The rule is in the playbook
+   ("Numeric keys") and the checker retraces every example from its printed
+   numbers.
+2. **CoCl₂ (3.3).** The stem prints 129.8 g/mol — the table's 129.83 at the
+   source's four figures, which is the playbook's rule for a molar mass a
+   stem states and how ethanol was handled — and the key is 0.670. A
+   correction (four units from the source): `DISCLOSED_DEVIATIONS`
+   `fs-idm81897840#check`, the "answer graded" Source note, erratum 2997's
+   handling rewritten. The playbook's rule that "a stated value under an
+   erratum ruling stays" is gone: a stem never states a datum the book's
+   own table contradicts.
+3. **Long runs.**
+   - **Sub-headings.** A Practice group may be divided by `####` labels
+     where its run changes kind: 1.6 (Unit conversions, Conversions to SI
+     base units, More unit conversions, Density, mass, and volume,
+     Temperature conversions), 3.1 (Mass from moles, Atoms and masses of
+     the elements in a compound, Problems that combine these steps), 4.2
+     (Acid-base or oxidation-reduction, Types of reaction, Completing and
+     balancing equations, Balancing half-reactions, Balancing equations by
+     the half-reaction method). Items keep their source order and the `###`
+     groups are still the objectives. A lint holds the form (no closing
+     punctuation, at least two items, not repeated, no deeper level); no
+     count forces a sub-heading, because a count would force a label onto a
+     run with no seam ("More unit conversions" is already the weakest of
+     the thirteen).
+   - **2.5's twenty multiple choices are two sort-into-bins items.** One
+     exercise asked ten elements two classifications; each `sortbins` is
+     the lead-in verbatim with a sentence saying which sort, the stem's
+     categories as bins, the ten parts as labels. The gates were taught the
+     form (below). The playbook's row: ten or more short parts sorted into
+     the stem's own categories; fewer, or parts with a `followup`, stay one
+     multiple choice each.
+   - **4.2's basic-solution example.** The section lists the steps for
+     basic media and works none, and its Check Your Learning and four
+     exercises ask for one. The book's own example from Section 17.1
+     (m68821, permanganate and chromium(III) hydroxide) is printed after
+     the acid example and before the check, its equations the source's and
+     its step text 4.2's nine steps, with a Source note. Not an example the
+     author wrote: its answer is the book's. Section 17.1 keeps it when it
+     is authored. Erratum 3042 records the gap.
+4. **1.6's two sentences.** After the table of conversion factors: "More
+   conversion factors are listed in Appendix C …, such as 1 qt = 32 fl oz
+   and 1 gal = 4 qt." After the first example's check: "A unit raised to a
+   power is converted with its factor raised to the same power. Because
+   1 yd = 3 ft, 1 yd² = (3 ft)² = 9 ft², and 1 yd³ = (3 ft)³ = 27 ft³." —
+   illustrated with units no exercise uses, so it works no item. The
+   playbook now says what a page may add to the source's body (item 10 of
+   "The section page, in order").
+5. **State symbols.** The equation field's guide ends "The state symbols
+   (s), (l), (g), and (aq) are optional.", and a response right in all but
+   a typed state reads "The substances and coefficients are right. A state
+   symbol you typed differs from the answer’s: check each one, or leave
+   them out — state symbols are optional." Still `form`, never correct:
+   AgCl(aq) is not the precipitate.
+6. **Greek-prefix names of a metal's compound.** "titanium tetrachloride"
+   against `titanium(IV) chloride` is `form` with "That name counts the
+   atoms with Greek prefixes, as a compound of two nonmetals is named. Name
+   a metal’s compound as an ionic compound, without prefixes."
+   (`prefix-names.mjs`: the counts must give the key's charge, so
+   "titanium trichloride" stays wrong; `gradeText` only, no gate reads it).
+   The message does not call the name wrong — IUPAC allows it. A lint
+   refuses such a name in `accept`, and a corpus test builds the prefix
+   name of every charged binary name key and holds the verdict.
+7. **Commits.** `AGENTS.md` has a "Commits" section — a run commits its own
+   files at a green close-out — and the four other documents that still
+   said "commit when asked" point at it.
+
+### The consistency pass
+
+Six read-only Opus readers on a snapshot of HEAD, while the parent edited
+the live tree: one per chapter, one across the book by script, one for the
+kit. Their brief said what an inconsistency is (seven lenses), what is NOT
+a finding (a hint that should say more, anything ruled, the source's own
+shape, what the gates assert), and that every finding ships with the
+command that reproduces it. It is now `docs/briefs/chemistry/pass-reader.md`.
+
+Forty-eight findings, **no wrong key and no example that fails its own
+arithmetic**. About a tenth re-raised something ruled, against a third on
+the pass before, whose brief had no "not a finding" section.
+
+Fixed in the session, each a plain defect against a rule already written:
+
+- 1.6: two fill-ins whose every route is exact carried `last-digit:1`
+  (120 m to feet, the cubit in feet: 1.4 and 1.6 graded right for 1.5);
+  nine SI-base-unit hints in two wordings, one of which told that the
+  base unit has a prefix; a footer clause for a rewording reverted on
+  November 9; an "Enter the area…" sentence on a stem that names its unit.
+- 1.2: the rusting-nail fill-in says "to the nearest tenth of a gram", as
+  its two siblings do (it answered `0.90` with a sentence about
+  significant figures, three sections early).
+- 2.5: the eight "Use the periodic table" stems link the words, as the
+  "Using the periodic table" stems have since November 13, and the footer
+  says so.
+- 3.1: glycine's total row read "Molecular mass (g/mol compound)" under a
+  table of molar masses; a "Subtotal" column without its unit. 3.3: the
+  body Source note the playbook requires where printed molar masses moved.
+  3.1 and 3.3: the digit-grouping commas named in the footers.
+- 4.1: three complete-ionic hints in two wordings. 4.3: the book's only
+  two section-to-section links, in a Source note, are plain text.
+- Kit: the playbook's open list had none of chapter 5's prerequisites; a
+  stale cell count; potassium at 39.10 in a notation example; a rule for
+  small print in a figure, written when the periodic table was a raster,
+  that 46 hints did not follow (narrowed: the table is the book's drawing,
+  on every page); `run.md` sending the ledger step to a tool that labels
+  Chemistry fill-ins "author-built"; `docs/re-review/README.md` with no
+  Chemistry rows; a literal NUL byte in `tools/verify/solve-check.mjs`
+  that made grep read the file as binary and print nothing.
+
+### Proposed, not done
+
+Each is a choice, not a defect; listed for Derek with a recommendation in
+the session's close-out, and in the playbook's "What is still open" where
+chapter 5 depends on it.
+
+- Two grader messages: a name with its Roman numeral missing or written as
+  an ordinary number (eleven items of 2.7); a molecular formula typed
+  where the empirical formula is asked (2.4).
+- Hint families with a member that differs: 1.2's eight classification
+  hints, 4.1's balancing families, and the four 4.2 hints that say
+  "highest common oxidation number", a term the book has not taught.
+- Appendix C's cubic foot, 28.316 L, against 1.6's 28.317 (the exact value
+  rounds to 28.317): erratum 3043 logged, the cell kept as printed.
+- 4.2's antacid callout prints H₃O⁺ + OH⁻ ⇌ 2H₂O, and the Check Your
+  Learning above it tells a learner who types ⇌ that it is the wrong arrow.
+- Footers of seven pages name item kinds outside the playbook's phrases
+  ("multiple choice items", "recall items (textin)"): a clerk's sweep and
+  a lint.
+- 2.7's oxyacid recall quotes the glossary's "one other element", which
+  the page's own Source note calls incomplete.
+- The form of a symbol with its value in a stem (three rules in the
+  playbook; eleven exercises of 5.3 need one).
+
+### What the process should keep
+
+- **Readers on a snapshot, the parent on the tree.** `git archive HEAD … |
+  tar -x` into the scratchpad: six readers ran for ten minutes while the
+  seven fixes went in, and no finding described a page in flight.
+- **Triage by kind.** A plain defect against a written rule is fixed; a
+  choice is proposed. The line was easy to hold once it was drawn, and it
+  is what Derek asked for.
+- **A fix that names a class is swept the same day.** Decision 1 named two
+  pages; the class was on four.
+- **A literal control character in a source file hides it from grep.**
+  The kit reader found it because a search it expected to hit printed
+  nothing.
 
 ## The `\dfrac` watch list
 

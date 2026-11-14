@@ -231,6 +231,20 @@ goes wrong.
   "Exercises" table; "Multiple choice stays open"). If you believe a
   source gate will not read the form, say so in your report; do not
   retreat to a `selfcheck`.
+- **Sort into bins** (`sortbins`) where an exercise sorts TEN OR MORE short
+  lettered parts into the stem's own categories: one per classification,
+  bins the stem's categories, labels the parts, the lead-in verbatim
+  (playbook "Exercises" table, the sortbins row; 2.5). Fewer than ten, or
+  parts that need a `followup`, stay one `multiplechoice` per part.
+- **A group of more than about twenty items is read for seams** and
+  divided by `#### ` labels where its run changes kind, the items left in
+  source order (playbook "Added items", "A long group is divided"; 1.6,
+  3.1, 4.2). A label names the kind in the page's own words, never the
+  method.
+- **A worked example never reuses a value it has rounded**: where a later
+  step needs an earlier result, print it there with the digits carried
+  (playbook "Numeric keys"; 2.3, 3.1, 4.4, 4.5), and report the page for
+  its Source note and erratum.
 - **`selfcheck`** carries the source solution as the model answer, its
   first letter capitalized and a closing period added and nothing else
   reworded, and 2–6 lowercase `===CHECKS===` clauses in the model answer's

@@ -773,6 +773,88 @@ test('a text-in answers an older name of the keyed compound as an older name, an
     .toBe('correct');
 });
 
+// Section 2.7 names a compound of two nonmetals with Greek prefixes and a
+// metal's compound as an ionic compound, and its own exercise prints
+// "titanium tetrachloride" as the name to replace. Typed as an answer it was
+// a bare "Not quite" until November 14, 2026: the compound is right and the
+// method is the other one, so the field says which method the item asks for.
+test('a text-in answers a Greek-prefix name of the keyed metal compound with the naming method, and leaves the field open', async ({ page }) => {
+  await gotoBuiltPage(
+    page,
+    '/physical-sciences/chemistry/02-atoms-molecules-and-ions/07-chemical-nomenclature/',
+  );
+
+  // The item that asks the name of TiCl₄ (a second item, keyed the same,
+  // prints "titanium tetrachloride" in its stem).
+  const card = page.locator('text-in[data-answer="titanium(IV) chloride"]').first();
+  await waitForUpgrade(card, (el) => (
+    Boolean(customElements.get('text-in')) && Boolean(el.querySelector('.ap-textin-check'))
+  ));
+  await card.scrollIntoViewIfNeeded();
+
+  const field = card.locator('.ap-textin-field');
+  const feedback = card.locator('.ap-textin-feedback');
+  await field.fill('titanium tetrachloride');
+  await field.press('Enter');
+  await expect
+    .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
+    .toBe('form');
+  await expect(feedback).toHaveText('That name counts the atoms with Greek prefixes, as a compound of two nonmetals is named. Name a metal’s compound as an ionic compound, without prefixes.');
+  expect(await field.evaluate((el) => el.readOnly)).toBe(false);
+  await expect(card.locator('.ap-textin-check')).toBeEnabled();
+
+  // The prefix name of ANOTHER chloride of titanium is simply wrong.
+  await field.fill('titanium trichloride');
+  await field.press('Enter');
+  await expect
+    .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
+    .toBe('incorrect');
+  await expect(feedback).toHaveText(/^Not quite/);
+
+  await field.fill('titanium(IV) chloride');
+  await field.press('Enter');
+  await expect
+    .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
+    .toBe('correct');
+});
+
+// A state symbol is optional in a typed equation, and the guide under the
+// field says so. One the learner does type is compared: calcium hydroxide
+// typed (s), as 4.2's own solubility table has it, against the source's
+// (aq), was told only "now check the state symbols, or leave them out" —
+// which read as a wrong equation. The field now says the rest is right and
+// that the states may be left out, and takes the answer without them.
+test('an equation field says a state symbol is optional, and says so again when one differs', async ({ page }) => {
+  await gotoBuiltPage(
+    page,
+    '/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/02-classifying-chemical-reactions/',
+  );
+
+  const card = page.locator('text-in[data-answer="Ca(s) + 2H₂O(l) ⟶ Ca(OH)₂(aq) + H₂(g)"]');
+  await expect(card).toHaveCount(1);
+  await waitForUpgrade(card, (el) => (
+    Boolean(customElements.get('text-in')) && Boolean(el.querySelector('.ap-textin-guide'))
+  ));
+  await card.scrollIntoViewIfNeeded();
+  await expect(card.locator('.ap-textin-guide')).toContainText('The state symbols (s), (l), (g), and (aq) are optional.');
+
+  const field = card.locator('.ap-textin-field');
+  const feedback = card.locator('.ap-textin-feedback');
+  await field.fill('Ca(s) + 2H2O(l) -> Ca(OH)2(s) + H2(g)');
+  await field.press('Enter');
+  await expect
+    .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
+    .toBe('form');
+  await expect(feedback).toHaveText('The substances and coefficients are right. A state symbol you typed differs from the answer’s: check each one, or leave them out — state symbols are optional.');
+  expect(await field.evaluate((el) => el.readOnly)).toBe(false);
+
+  await field.fill('Ca + 2H2O -> Ca(OH)2 + H2');
+  await field.press('Enter');
+  await expect
+    .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
+    .toBe('correct');
+});
+
 test('the shared hint toggle discloses a fill-in hint and a self-check hint the same way', async ({ page }) => {
   // One implementation (assets/js/lib/shared/hint-toggle.mjs) mounts every
   // component's "Show hint": the button names the hint it controls, flips
@@ -3002,7 +3084,7 @@ test('punctuation typed after an inline formula stays on the formula\'s line', a
 // (`.ap-textin-example`); the text the field is described by is unchanged.
 // tools/build/documentation.test.mjs reads the splitting pattern itself.
 test('the equation typing guide never breaks inside its arrow or an example', async ({ page }) => {
-  const GUIDE = 'Type subscripts as plain numbers, a charge after ^, and the arrow as ->: Cu^2+(aq) + 2OH^-(aq) -> Cu(OH)2(s).';
+  const GUIDE = 'Type subscripts as plain numbers, a charge after ^, and the arrow as ->: Cu^2+(aq) + 2OH^-(aq) -> Cu(OH)2(s). The state symbols (s), (l), (g), and (aq) are optional.';
   for (const width of [1280, 390]) {
     await page.setViewportSize({ width, height: 900 });
     await gotoBuiltPage(page, '/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/01-writing-and-balancing-chemical-equations/');

@@ -496,5 +496,19 @@ runs every Playwright suite in one server startup; `test:a11y` / `test:e2e`
 target a single spec). If the suite ever fails at launch again, the fix is
 the shim's candidate list or an executable path — never an install.
 
-Do not commit unless the user explicitly asks. Preserve unrelated worktree
-changes.
+## Commits
+
+**A run commits its own files at a green close-out, without asking**
+*(Derek, October 24, 2026; this replaces "do not commit unless asked",
+which this file still said until November 14, 2026, against every run
+recipe)*. A run is anything a recipe here closes out — a chapter, a
+Knowledge Check, a re-review row, a fix pass over finished pages — and green
+means that recipe's own gates (`npm test` at least; `npm run ci` where the
+change reaches the build or the browser). Stage the files the run changed
+and nothing else, by name, never `git add -A`; say in the commit what
+moved a baseline. Do not push unless asked.
+
+Outside a run — an exploratory edit, a change left half done, a red gate —
+do not commit unless the user asks. Preserve unrelated worktree changes:
+another session's uncommitted work stays uncommitted and is named in the
+close-out.

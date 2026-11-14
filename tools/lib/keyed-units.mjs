@@ -665,6 +665,14 @@ export function unitScore(unit, linkedQuestion, item = {}) {
 }
 
 function ownScore(unit, question, item = {}) {
+  // A sort into the stem's own categories (docs/subjects/chemistry.md
+  // "Exercises", 2.5): the item asks the exercise's lead-in, which addresses
+  // the parts together, and its LABELS are the parts. A part is this item's
+  // when a label is the part character for character and the question reads
+  // like the lead-in whole — a one-word label ("gold") says nothing about
+  // which exercise it belongs to, so the lead-in is held to the whole-stem
+  // floor, not the lettered part's.
+  if (item.type === 'sortbins') return sortedPartScore(unit, question, item);
   // One of a closed set (`closedSet`): the item asks the lead-in and offers
   // every part, and nothing else, as its options. A missing option is a miss.
   if (unit.choices) {
@@ -721,6 +729,51 @@ function ownScore(unit, question, item = {}) {
   const score = tokenSimilarity(question, unit.stem);
   return { score: score >= WHOLE_FLOOR ? score : 0, words: 0, near, exact: 0 };
 }
+
+/** A sortbins item's labels: `labels` (verify-source-keys `pageItems`) or `options` (verify-source-coverage `pageTexts`). */
+export const sortLabels = (item = {}) => item.labels ?? item.options ?? [];
+
+/** `ownScore` for a sortbins: score 1 when a label IS the unit's lettered part under a lead-in the question reads like whole. */
+function sortedPartScore(unit, question, item) {
+  const none = { score: 0, words: 0 };
+  if (unit.partText === null || unit.partText === undefined || !plain(unit.partText) || !unit.lead) return none;
+  const part = tight(unit.partText);
+  if (!sortLabels(item).some((label) => tight(label) === part)) return none;
+  const near = tokenSimilarity(unit.lead, question);
+  return near >= WHOLE_FLOOR ? { score: 1, words: plain(unit.partText).split(' ').length, near, exact: part.length } : none;
+}
+
+/**
+ * The lettered exercise a sortbins item sorts, as `{ group, parts }` — every
+ * unit of that exercise, in source order — or null when no exercise's part
+ * is one of its labels under a lead-in the question reads like
+ * (`sortedPartScore`). Of two exercises that pass (a keyed one and its
+ * unkeyed twin share a lead-in, 2.5), the one more of whose parts are
+ * labels, then the one whose lead-in the question reads more like, then the
+ * keyed one. The caller holds the item to the exercise: every label a part,
+ * every part a label, each label in the bin its part's answer names.
+ */
+export function sortedExercise(linkedQuestion, units, item = {}) {
+  const question = unlinked(linkedQuestion);
+  const groups = new Map();
+  for (const unit of units) {
+    const group = groups.get(unit.group) || { group: unit.group, parts: [], hits: 0, near: 0, keyed: false };
+    group.parts.push(unit);
+    group.keyed = group.keyed || Boolean(unit.keyed);
+    const reading = sortedPartScore(unit, question, item);
+    if (reading.score > 0) {
+      group.hits += 1;
+      group.near = Math.max(group.near, reading.near);
+    }
+    groups.set(unit.group, group);
+  }
+  const passing = [...groups.values()].filter((group) => group.hits > 0)
+    .sort((a, b) => b.hits - a.hits || b.near - a.near || Number(b.keyed) - Number(a.keyed));
+  return passing.length ? { group: passing[0].group, parts: passing[0].parts.filter((unit) => unit.partText !== null && unit.partText !== undefined) } : null;
+}
+
+/** Whether a label is a part's own text (`sortedExercise`'s reading, for the caller). */
+export const isPartLabel = (label, unit) => tight(label) === tight(unit.partText);
 
 /**
  * The order of two passing readings of ONE exercise's parts, best first:

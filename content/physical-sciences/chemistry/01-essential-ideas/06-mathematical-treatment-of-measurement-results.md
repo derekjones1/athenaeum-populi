@@ -54,6 +54,8 @@ Several other commonly used conversion factors are given in the table below.
 
 \* Strictly speaking, the ounce and pound are units of weight, $W$ (a force equal to the product of mass and gravitational acceleration, $W = mg$). The conversion relations in this table are commonly used to equate masses and weight assuming a nominal value for $g$ at the surface of the earth.
 
+More conversion factors are listed in [Appendix C](/physical-sciences/chemistry/appendices/c-units-and-conversion-factors/), among them exact relations between US units that this table leaves out, such as 1 qt = 32 fl oz and 1 gal = 4 qt.
+
 When a quantity (such as distance in inches) is multiplied by an appropriate unit conversion factor, the quantity is converted to an equivalent value with different units (such as distance in centimeters). For example, a basketball player’s vertical jump of 34 inches can be converted to centimeters by:
 
 $$34\ \cancel{\text{in.}} \times \frac{2.54\ \text{cm}}{1\ \cancel{\text{in.}}} = 86\ \text{cm}$$
@@ -81,6 +83,8 @@ $$\begin{aligned} x\ \text{oz} &= 125\ \cancel{\text{g}} \times \frac{1\ \text{o
   answerDisplay="$8.844\ \text{L}$"
   hint="Pick the quart–liter relationship from the table above and orient the factor so that quarts cancel."
 >}}
+
+A unit raised to a power is converted with its factor raised to the same power. Because 1 yd = 3 ft, 1 yd² = (3 ft)² = 9 ft², and 1 yd³ = (3 ft)³ = 27 ft³.
 
 Beyond simple unit conversions, the factor-label method can be used to solve more complex problems involving computations. Regardless of the details, the basic approach is the same—all the *factors* involved in the calculation must be appropriately oriented to ensure that their *labels* (units) will appropriately cancel and/or combine to yield the desired unit in the result. As your study of chemistry continues, you will encounter many opportunities to apply this approach.
 
@@ -234,7 +238,7 @@ $${}^\circ\text{F} = \frac{9}{5}\,{}^\circ\text{C} + 32.0 = \left(\frac{9}{5} \t
   hint="Use the Celsius-to-Fahrenheit equation above."
 >}}
 
-*Source note:* the answer graded here is not the one the source prints for the Fahrenheit temperature; the source's printed answer is not rounded by the significant-figure rules of Section 1.5 Measurement Uncertainty, Accuracy, and Precision.
+*Source note:* the answer graded here is not the one the source prints for the Fahrenheit temperature; the source’s printed answer is not rounded by the significant-figure rules of Section 1.5 Measurement Uncertainty, Accuracy, and Precision.
 
 **Example.** *Conversion from Fahrenheit.* Baking a ready-made pizza calls for an oven temperature of 450 °F. If you are in Europe, and your oven thermometer uses the Celsius scale, what is the setting? What is the kelvin temperature?
 
@@ -325,6 +329,8 @@ $$\begin{aligned} \text{K} &= {}^\circ\text{C} + 273.15 = \frac{5}{9}({}^\circ\t
 
 ### Use dimensional analysis to carry out unit conversions for a given property and computations involving two or more properties
 
+#### Unit conversions
+
 {{< fillin
   question="Soccer is played with a round ball having a circumference between 27 and 28 in. and a weight between 14 and 16 oz. What are these specifications in units of centimeters and grams? Enter the smallest circumference in centimeters."
   answer="69"
@@ -333,7 +339,7 @@ $$\begin{aligned} \text{K} &= {}^\circ\text{C} + 273.15 = \frac{5}{9}({}^\circ\t
   hint="Find the factor that relates inches and centimeters in the table of conversion factors, and decide which unit must cancel."
 >}}
 
-*Source note:* the answer graded here is not the one the source prints for the smallest circumference; the source's value does not follow from the stem's data.
+*Source note:* the answer graded here is not the one the source prints for the smallest circumference; the source’s value does not follow from the stem’s data.
 
 {{< fillin
   question="Soccer is played with a round ball having a circumference between 27 and 28 in. and a weight between 14 and 16 oz. What are these specifications in units of centimeters and grams? Enter the largest circumference in centimeters."
@@ -400,12 +406,14 @@ no
   hint="Microliters to liters to milliliters, with the power of ten of each prefix from the table of common unit prefixes in Section 1.4 Measurements."
 >}}
 
+#### Conversions to SI base units
+
 {{< fillin
   question="Use scientific (exponential) notation to express the following quantity in terms of the SI base units in the table of base units in Section 1.4 Measurements: 0.13 g. Enter the value without its unit."
   answer="1.3\times10^{-4}"
   answerForm="sig-figs:2 last-digit:0 scientific-notation"
   answerDisplay="$1.3 \times 10^{-4}\ \text{kg}$"
-  hint="Identify the SI base unit for this property, then convert using the power of ten of each prefix."
+  hint="Identify the SI base unit for this property, then convert with the powers of ten in the table of common unit prefixes in Section 1.4 Measurements."
 >}}
 
 {{< fillin
@@ -413,7 +421,7 @@ no
   answer="2.32\times10^{8}"
   answerForm="sig-figs:3 last-digit:0 scientific-notation"
   answerDisplay="$2.32 \times 10^{8}\ \text{kg}$"
-  hint="Identify the SI base unit for this property, then convert using the power of ten of each prefix."
+  hint="Identify the SI base unit for this property, then convert with the powers of ten in the table of common unit prefixes in Section 1.4 Measurements."
 >}}
 
 {{< fillin
@@ -421,7 +429,7 @@ no
   answer="5.23\times10^{-12}"
   answerForm="sig-figs:3 last-digit:0 scientific-notation"
   answerDisplay="$5.23 \times 10^{-12}\ \text{m}$"
-  hint="Identify the SI base unit for this property, then convert using the power of ten of the prefix."
+  hint="Identify the SI base unit for this property, then convert with the powers of ten in the table of common unit prefixes in Section 1.4 Measurements."
 >}}
 
 {{< fillin
@@ -429,7 +437,7 @@ no
   answer="8.63\times10^{-5}"
   answerForm="sig-figs:3 last-digit:0 scientific-notation"
   answerDisplay="$8.63 \times 10^{-5}\ \text{kg}$"
-  hint="Identify the SI base unit for this property, then convert using the power of ten of each prefix."
+  hint="Identify the SI base unit for this property, then convert with the powers of ten in the table of common unit prefixes in Section 1.4 Measurements."
 >}}
 
 {{< fillin
@@ -437,7 +445,7 @@ no
   answer="3.76\times10^{-1}"
   answerForm="sig-figs:3 last-digit:0 scientific-notation"
   answerDisplay="$3.76 \times 10^{-1}\ \text{m}$"
-  hint="Identify the SI base unit for this property, then convert using the power of ten of the prefix."
+  hint="Identify the SI base unit for this property, then convert with the powers of ten in the table of common unit prefixes in Section 1.4 Measurements."
 >}}
 
 {{< fillin
@@ -445,7 +453,7 @@ no
   answer="5.4\times10^{-5}"
   answerForm="sig-figs:2 last-digit:0 scientific-notation"
   answerDisplay="$5.4 \times 10^{-5}\ \text{m}$"
-  hint="Identify the SI base unit for this property, then convert using the power of ten of the prefix."
+  hint="Identify the SI base unit for this property, then convert with the powers of ten in the table of common unit prefixes in Section 1.4 Measurements."
 >}}
 
 {{< fillin
@@ -453,7 +461,7 @@ no
   answer="1\times10^{12}"
   answerForm="sig-figs:1 last-digit:0 scientific-notation"
   answerDisplay="$1 \times 10^{12}\ \text{s}$"
-  hint="Identify the SI base unit for this property, then convert using the power of ten of the prefix."
+  hint="Identify the SI base unit for this property, then convert with the powers of ten in the table of common unit prefixes in Section 1.4 Measurements."
 >}}
 
 {{< fillin
@@ -461,7 +469,7 @@ no
   answer="2.7\times10^{-11}"
   answerForm="sig-figs:2 last-digit:0 scientific-notation"
   answerDisplay="$2.7 \times 10^{-11}\ \text{s}$"
-  hint="Identify the SI base unit for this property, then convert using the power of ten of the prefix."
+  hint="Identify the SI base unit for this property, then convert with the powers of ten in the table of common unit prefixes in Section 1.4 Measurements."
 >}}
 
 {{< fillin
@@ -469,8 +477,10 @@ no
   answer="1.5\times10^{-4}"
   answerForm="sig-figs:2 last-digit:0 scientific-notation"
   answerDisplay="$1.5 \times 10^{-4}\ \text{K}$"
-  hint="Identify the SI base unit for this property, then convert using the power of ten of the prefix."
+  hint="Identify the SI base unit for this property, then convert with the powers of ten in the table of common unit prefixes in Section 1.4 Measurements."
 >}}
+
+#### More unit conversions
 
 {{< fillin
   question="Gasoline is sold by the liter in many countries. How many liters are required to fill a 12.0-gal gas tank?"
@@ -491,7 +501,7 @@ no
 {{< fillin
   question="Make the conversion indicated in the following: the length of a soccer field, 120 m (three significant figures), to feet."
   answer="394"
-  answerForm="sig-figs:3 last-digit:1"
+  answerForm="sig-figs:3 last-digit:0"
   answerDisplay="$394\ \text{ft}$"
   hint="Meters to centimeters to inches, with the inch–centimeter factor from the table of conversion factors, then inches to feet with the feet–inches relation in the Conversion of Temperature Units subsection."
 >}}
@@ -505,7 +515,7 @@ no
 >}}
 
 {{< fillin
-  question="Make the conversion indicated in the following: the area of an 8.5- × 11-inch sheet of paper in cm². Enter the area in square centimeters."
+  question="Make the conversion indicated in the following: the area of an 8.5- × 11-inch sheet of paper in cm²."
   answer="6.0\times10^{2}"
   answerForm="sig-figs:2 last-digit:0"
   answerDisplay="$6.0 \times 10^{2}\ \text{cm}^2$"
@@ -555,7 +565,7 @@ no
 {{< fillin
   question="A chemist’s 50-Trillion Angstrom Run (50 trillion Å, two significant figures) would be an archeologist’s 10,900 cubit run. How long is one cubit in meters and in feet? (1 Å = $1 \times 10^{-8}$ cm) Enter the length of one cubit in feet."
   answer="1.5"
-  answerForm="sig-figs:2 last-digit:1"
+  answerForm="sig-figs:2 last-digit:0"
   answerDisplay="$1.5\ \text{ft/cubit}$"
   hint="Convert the length of one cubit from meters to centimeters to inches, with the inch–centimeter factor from the table of conversion factors, then inches to feet with the feet–inches relation in the Conversion of Temperature Units subsection."
 >}}
@@ -625,6 +635,8 @@ no
   hint="Find the factor that relates inches and centimeters in the table of conversion factors, and decide which unit must cancel."
 >}}
 
+#### Density, mass, and volume
+
 {{< fillin
   question="Calculate the density of aluminum if 27.6 cm³ has a mass of 74.6 g. Enter the density in g/cm³."
   answer="2.70"
@@ -664,6 +676,8 @@ no
   answerDisplay="$37\ \text{L}$"
   hint="Use the definition of density and the rounding rule for division."
 >}}
+
+#### Temperature conversions
 
 {{< fillin
   question="Convert the boiling temperature of gold, 2966 °C, into degrees Fahrenheit and kelvin. Enter the temperature in degrees Fahrenheit."
@@ -723,4 +737,4 @@ no
 
 ---
 
-<small>This section is adapted from [Chemistry 2e, Section 1.6: Mathematical Treatment of Measurement Results](https://openstax.org/books/chemistry-2e/pages/1-6-mathematical-treatment-of-measurement-results) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the source's equations typeset as KaTeX math, with unit cancellation set with a diagonal strike; the five worked examples set as prose, each followed by its Check Your Learning as interactive fill-ins (eight in all, one per quantity the printed answer gives), the printed answers serving as their keys rather than appearing as text; the conversion-factor table transcribed as a Markdown table with its title as a bold line above it and its footnote, on the pound–gram row, set as an asterisked note below it; cross-references to the table and the figure written as “the table below”, “the table above”, or “the figure below”, and the reference to the SI base-units table of Section 1.4 written out as text; the temperature-scales figure re-encoded as WebP and marked as a diagram, its alt text written from the artwork; the micro prefix written with the micro sign (µ) where the source uses the Greek letter mu; the four-digit temperatures in two answer displays written with a digit-grouping comma; the four key equations listed as inline math, set in the forms the body derives them in, where the source's list writes the unit symbols °C and K in place of the temperatures in the two kelvin–Celsius equations and adds a multiplication sign to the Fahrenheit-to-Celsius equation; the two solution lines of the oven-temperature example and the kelvin line of the body-temperature example broken into aligned rows to fit the column; the body-temperature example's kelvin line written with the exact 273.15 and the sum rounded to the tenths place, where the source rounds 273.15 before adding; the 22 end-of-section exercises the source keys adapted into the interactive Practice block as 52 fill-ins and 2 multiple-choice items, every one at its source key except the one corrected below, one item per lettered part and one fill-in per quantity of a multi-quantity answer, with a sentence added after a stem that leaves it open saying which quantity to enter and in what unit — the conversion-factor ratios of the first exercise asked as the number written over one unit, the soft-drink exercise asked as the count of significant figures and then the factor, the other order from the source’s sentence, the two yes-or-no exercises asked as the computed quantity and then a yes/no choice, the fuel-cost item asked to the nearest dollar, and the SI base-units parts asked “Enter the value without its unit” rather than naming a unit, because naming the SI base unit would give it away; the cubit exercise’s cross-reference to the preceding Angstrom Run exercise, which this page omits, replaced by the data from that exercise that the keys rely on, restated in parentheses (50 trillion Å, two significant figures); the short ton the atmosphere-mass part assumes, 1 ton = 2000 lb, which neither the stem nor the module states, added to that stem in parentheses; “(two significant figures)” added to the freezer exercise’s −10 °F, the count the source’s answers assume and its sibling stems state; the physicist’s surname corrected from “Thompson” to “Thomson” (William Thomson, Lord Kelvin); the soccer-ball exercise’s smallest circumference keyed to the value the stem’s data give, with a Source note, where the source’s printed value does not follow from them; the lead-in of each lettered part that addressed the parts together restated in the singular for its one part (“Make the conversion indicated in the following”, “the following quantity”, “Write a conversion factor (as a ratio)”, “Calculate this mass”, “Calculate this volume”, “Solve this problem about lumber dimensions”); the linear-relation symbols the source prints upright in prose (y, x, m, b) set as italic math, and the quantity symbols the source italicizes (W, g, T, x, y, m, b) set as math; and the 21 exercises the source prints no answer for are omitted; two statements corrected, each with a Source note: the quarts-to-liters step of the antifreeze example and the two lines that carry it forward, where the source truncates the quotient instead of rounding it (the density is unchanged), and the sentence on the 273.15 of the kelvin–Celsius equations, which the source calls experimental and not exact and which is exact by the definition of the Celsius scale; the Fahrenheit part of the 80.92 °C Check Your Learning keyed to the significant figures the rules of Section 1.5 give, with a Source note, where the source’s printed answer is not rounded by those rules; and the second lumber part’s “This lumber” restated as “Two-by-four” lumber.</small>
+<small>This section is adapted from [Chemistry 2e, Section 1.6: Mathematical Treatment of Measurement Results](https://openstax.org/books/chemistry-2e/pages/1-6-mathematical-treatment-of-measurement-results) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the source's equations typeset as KaTeX math, with unit cancellation set with a diagonal strike; the five worked examples set as prose, each followed by its Check Your Learning as interactive fill-ins (eight in all, one per quantity the printed answer gives), the printed answers serving as their keys rather than appearing as text; the conversion-factor table transcribed as a Markdown table with its title as a bold line above it and its footnote, on the pound–gram row, set as an asterisked note below it; cross-references to the table and the figure written as “the table below”, “the table above”, or “the figure below”, and the reference to the SI base-units table of Section 1.4 written out as text; the temperature-scales figure re-encoded as WebP and marked as a diagram, its alt text written from the artwork; the micro prefix written with the micro sign (µ) where the source uses the Greek letter mu; the four-digit temperatures in two answer displays written with a digit-grouping comma; the four key equations listed as inline math, set in the forms the body derives them in, where the source's list writes the unit symbols °C and K in place of the temperatures in the two kelvin–Celsius equations and adds a multiplication sign to the Fahrenheit-to-Celsius equation; the two solution lines of the oven-temperature example and the kelvin line of the body-temperature example broken into aligned rows to fit the column; the body-temperature example's kelvin line written with the exact 273.15 and the sum rounded to the tenths place, where the source rounds 273.15 before adding; the 22 end-of-section exercises the source keys adapted into the interactive Practice block as 52 fill-ins and 2 multiple-choice items, every one at its source key except the one corrected below, one item per lettered part and one fill-in per quantity of a multi-quantity answer, with a sentence added after a stem that leaves it open saying which quantity to enter and in what unit — the conversion-factor ratios of the first exercise asked as the number written over one unit, the soft-drink exercise asked as the count of significant figures and then the factor, the other order from the source’s sentence, the two yes-or-no exercises asked as the computed quantity and then a yes/no choice, the fuel-cost item asked to the nearest dollar, and the SI base-units parts asked “Enter the value without its unit” rather than naming a unit, because naming the SI base unit would give it away; the cubit exercise’s cross-reference to the preceding Angstrom Run exercise, which this page omits, replaced by the data from that exercise that the keys rely on, restated in parentheses (50 trillion Å, two significant figures); the short ton the atmosphere-mass part assumes, 1 ton = 2000 lb, which neither the stem nor the module states, added to that stem in parentheses; “(two significant figures)” added to the freezer exercise’s −10 °F, the count the source’s answers assume and its sibling stems state; the physicist’s surname corrected from “Thompson” to “Thomson” (William Thomson, Lord Kelvin); the soccer-ball exercise’s smallest circumference keyed to the value the stem’s data give, with a Source note, where the source’s printed value does not follow from them; the lead-in of each lettered part that addressed the parts together restated in the singular for its one part (“Make the conversion indicated in the following”, “the following quantity”, “Write a conversion factor (as a ratio)”, “Calculate this mass”, “Calculate this volume”, “Solve this problem about lumber dimensions”); the linear-relation symbols the source prints upright in prose (y, x, m, b) set as italic math, and the quantity symbols the source italicizes (W, g, T, x, y, m, b) set as math; and the 21 exercises the source prints no answer for are omitted; two statements corrected, each with a Source note: the quarts-to-liters step of the antifreeze example and the two lines that carry it forward, where the source truncates the quotient instead of rounding it (the density is unchanged), and the sentence on the 273.15 of the kelvin–Celsius equations, which the source calls experimental and not exact and which is exact by the definition of the Celsius scale; the Fahrenheit part of the 80.92 °C Check Your Learning keyed to the significant figures the rules of Section 1.5 give, with a Source note, where the source’s printed answer is not rounded by those rules; two sentences added to the body, one after the table of conversion factors pointing to Appendix C for the factors the table leaves out and one, after the first worked example, on converting a unit raised to a power, which two of the exercises need and no example of the source shows.</small>

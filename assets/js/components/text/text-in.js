@@ -44,10 +44,13 @@ const MESSAGES = {
 // of a Check Your Learning item of Chemistry 2.7). The equation example
 // shows every piece a learner is unsure how to type — a subscript, a group
 // in parentheses, a charge, a coefficient, a state symbol (the first one,
-// 2H2 + O2 -> 2H2O, showed neither a charge nor a state: chapter 4).
+// 2H2 + O2 -> 2H2O, showed neither a charge nor a state: chapter 4). An
+// example that shows states reads as a demand for them, so the line says
+// they are optional, which is how the grader reads a response (check-chem:
+// a state is compared only where the learner typed one; November 14, 2026).
 const GUIDE = {
   formula: 'Type subscripts as plain numbers and a charge after ^: Ca3(PO4)2, SO4^2-.',
-  equation: 'Type subscripts as plain numbers, a charge after ^, and the arrow as ->: Cu^2+(aq) + 2OH^-(aq) -> Cu(OH)2(s).',
+  equation: 'Type subscripts as plain numbers, a charge after ^, and the arrow as ->: Cu^2+(aq) + 2OH^-(aq) -> Cu(OH)2(s). The state symbols (s), (l), (g), and (aq) are optional.',
 };
 // The pieces of a guide a line must not break inside: the arrow as typed,
 // and each example (what follows the colon, up to its comma or period).

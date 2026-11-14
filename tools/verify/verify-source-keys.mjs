@@ -115,7 +115,7 @@ import { readNumeral, withinPercent } from '../../assets/js/lib/math/significant
 import { loadElements } from '../lib/elements.mjs';
 import { massAsk, molarMass, statesNoNumber } from './molar-mass.mjs';
 import {
-  KEYED_ONLY_BOOKS, choiceLabels, glossaryAliases, keyedUnits, plain as foldedPlain, printedNumerals, unitFor, unlinked,
+  KEYED_ONLY_BOOKS, choiceLabels, glossaryAliases, isPartLabel, keyedUnits, plain as foldedPlain, printedNumerals, sortedExercise, unitFor, unlinked,
 } from '../lib/keyed-units.mjs';
 
 /** A page question must share this much of a source problem's vocabulary to
@@ -1034,6 +1034,13 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     kind: 'key',
     erratum: 2987,
     reason: 'the source answers "AlPO4: 1.000 mol, or 26.98 g Al; Al2Cl6: 1.994 mol, or 53.74 g Al; Al2S3: 3.00 mol, or 80.94 g Al" for 122 g, 266 g, and 225 g of the three compounds: four figures from three-figure data, 53.74 following from no set of atomic masses (266/266.66 × 2 × 26.98 = 53.83) and 80.94 from the moles rounded to 3.00 before multiplying (80.86); the gaps are outside the chapter\'s 0.05 percent band, so the page keys the three masses the book\'s periodic table gives at three figures (the multiple choice among the samples keeps the source\'s answer)',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/03-molarity.md',
+    exercise: 'fs-idm81897840#check',
+    kind: 'key',
+    erratum: 2997,
+    reason: 'the Check Your Learning gives "CoCl2 (128.9 g/mol)" and answers "0.674 M"; the molar mass of CoCl2 is 129.83 g/mol by the book\'s periodic table (58.933 + 2 × 35.45), so the stem prints it at the source\'s four figures, 129.8, and the key is what the stem then gives, 6.52 ÷ 129.8 ÷ 0.0750 = 0.670 (until November 14, 2026 the stem and key stood as the source prints them; a learner who took the molar mass from the table was marked wrong with nothing said)',
   },
   {
     page: 'content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/03-molarity.md',
@@ -2285,6 +2292,102 @@ export function writeDataRegister(repositoryRoot, differences, pagesRead) {
   return body.differences.length;
 }
 
+/*
+ * The options an answer names. An option is named when the answer (folded,
+ * space-padded) prints it — as a run of words, or, for an option of several
+ * words, each of its words ("symbolic, microscopic" names the option
+ * "symbolic, microscopic" and, word for word, the option "microscopic" too).
+ * Of the options named, one whose words are all inside another named option
+ * is the less specific reading and gives way to it: the answer that says
+ * "symbolic, microscopic" keys the compound option, not the bare domain;
+ * "metal, inner transition metal" names "inner transition metal", not
+ * "transition metal".
+ *
+ * Two ways the answer's word and the option's differ and are still one:
+ *   an option that prints its own second name in parentheses — the stem's
+ *   "main-group (representative) element", answered "representative
+ *   element" (2.5) — is named by either name;
+ *   an answer in the word the module's glossary gives as the option's alias
+ *   — "molecular" to a stem that asks "ionic or covalent", where the
+ *   glossary has "covalent compound — (also, molecular compound)" (2.6) —
+ *   is read through that pair (`optionsNamedThrough`), and only when the
+ *   answer names no option as printed.
+ * Shared by a keyed multiple choice and a keyed sortbins, whose options are
+ * its bins.
+ */
+const optionWords = (option) => withoutArticle(option).split(' ').filter(Boolean);
+const optionReadings = (option) => {
+  const aside = /^(.*?)\s*\(([^)]+)\)\s*(.*)$/.exec(option);
+  return [option, ...(aside ? [`${aside[1]} ${aside[3]}`, `${aside[2]} ${aside[3]}`] : [])].map(optionWords);
+};
+export function optionsNamedIn(answer, options) {
+  const printed = (option) => optionReadings(option).some((words) => words.length > 0 && (answer.includes(` ${words.join(' ')} `)
+    || (words.length > 1 && words.every((word) => answer.includes(` ${word} `)))));
+  const mentioned = options.filter(printed);
+  return mentioned.filter((option) => !mentioned.some((other) => other !== option
+    && optionWords(other).length > optionWords(option).length
+    && optionWords(option).every((word) => optionWords(other).includes(word))));
+}
+/** The options an answer names through ONE glossary alias pair (`optionsNamedIn`), or none. */
+export function optionsNamedThrough(aliases, answer, options) {
+  const through = aliases.flatMap(([a, b]) => [[a, b], [b, a]])
+    .filter(([from]) => answer.includes(` ${from} `))
+    .map(([from, to]) => optionsNamedIn(answer.split(` ${from} `).join(` ${to} `), options))
+    .filter((named) => named.length > 0);
+  return through.length === 1 ? through[0] : [];
+}
+
+/**
+ * A sortbins of a keyed-only book that sorts the parts of ONE lettered
+ * exercise into the stem's own categories (docs/subjects/chemistry.md
+ * "Exercises": 2.5 classifies ten elements as metal or nonmetal, and then
+ * as main-group element, transition metal, or inner transition metal — one
+ * sortbins per classification, the labels the parts). Returns null when no
+ * exercise's part is one of its labels (`sortedExercise`: an author-written
+ * or table-built sortbins, which `judgeSortbins` reads), else
+ *
+ *   'confirmed'     every label is a part, every part a label, and each
+ *                   label's bin is the one category the part's answer
+ *                   segment names (`optionsNamedIn` over the bins, then the
+ *                   glossary's alias pairs)
+ *   'key-differs'   a part is not a label, a label is not a part, or a
+ *                   label sits in a bin its part's answer does not name —
+ *                   or the segment names no bin, or more than one
+ *   'unkeyed-unit'  the exercise prints no answer
+ */
+export function judgeKeyedSortbins(item, units, { aliases = [] } = {}) {
+  const labels = item.items.map((entry) => entry.label);
+  const sorted = sortedExercise(item.question, units, { type: 'sortbins', labels });
+  if (!sorted) return null;
+  const exercise = { id: sorted.group, group: sorted.group };
+  if (!sorted.parts.some((unit) => unit.keyed)) {
+    return { status: 'unkeyed-unit', exercise, detail: `source ${sorted.group} prints no answer, and this book renders only keyed exercises — remove the item` };
+  }
+  const problems = [];
+  const missing = sorted.parts.filter((unit) => !labels.some((label) => isPartLabel(label, unit)));
+  if (missing.length) problems.push(`part${missing.length > 1 ? 's' : ''} ${missing.map((unit) => `(${unit.label}) ${JSON.stringify(unit.partText)}`).join(', ')} of source ${sorted.group} ${missing.length > 1 ? 'are' : 'is'} not a label`);
+  for (const entry of item.items) {
+    const unit = sorted.parts.find((candidate) => isPartLabel(entry.label, candidate));
+    if (!unit) {
+      problems.push(`label ${JSON.stringify(entry.label)} is no part of source ${sorted.group}`);
+      continue;
+    }
+    const said = ` ${foldedPlain(unit.answer)} `;
+    let named = optionsNamedIn(said, item.bins);
+    if (named.length === 0) named = optionsNamedThrough(aliases, said, item.bins);
+    const keyed = item.bins[entry.bin];
+    if (named.length === 1 && compact(named[0]) === compact(keyed)) continue;
+    problems.push(named.length === 0
+      ? `label ${JSON.stringify(entry.label)}: source ${unit.id} answers ${JSON.stringify(unit.answer)}, which names none of the bins`
+      : named.length > 1
+        ? `label ${JSON.stringify(entry.label)}: source ${unit.id} answers ${JSON.stringify(unit.answer)}, which names more than one bin (${named.join(', ')})`
+        : `label ${JSON.stringify(entry.label)} is in bin ${JSON.stringify(keyed)}, but source ${unit.id} answers ${JSON.stringify(unit.answer)} (${JSON.stringify(named[0])})`);
+  }
+  return problems.length
+    ? { status: 'key-differs', exercise, detail: `sortbins sorts source ${sorted.group}: ${problems.join('; ')}` }
+    : { status: 'confirmed', exercise };
+}
+
 /**
  * One multiplechoice, fillin, or selfcheck of a keyed-only book
  * (tools/lib/keyed-units.mjs; docs/subjects/chemistry.md "Exercises")
@@ -2467,37 +2570,7 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
       if (askedRoles.length === 1) said = askedRoles[0].who;
     }
     const said1 = ` ${foldedPlain(said)} `;
-    // An option is named when the answer prints it — as a run of words, or,
-    // for an option of several words, each of its words ("symbolic,
-    // microscopic" names the option "symbolic, microscopic" and, word for
-    // word, the option "microscopic" too). Of the options named, one whose
-    // words are all inside another named option is the less specific
-    // reading and gives way to it: the answer that says "symbolic,
-    // microscopic" keys the compound option, not the bare domain.
-    //
-    // Two ways the answer's word and the option's differ and are still one:
-    //   an option that prints its own second name in parentheses — the
-    //   stem's "main-group (representative) element", answered
-    //   "representative element" (2.5) — is named by either name;
-    //   an answer in the word the module's glossary gives as the option's
-    //   alias — "molecular" to a stem that asks "ionic or covalent", where
-    //   the glossary has "covalent compound — (also, molecular compound)"
-    //   (2.6) — is read through that pair, and only when the answer names
-    //   no option as printed.
-    const wordsOf = (option) => withoutArticle(option).split(' ').filter(Boolean);
-    const readingsOf = (option) => {
-      const aside = /^(.*?)\s*\(([^)]+)\)\s*(.*)$/.exec(option);
-      return [option, ...(aside ? [`${aside[1]} ${aside[3]}`, `${aside[2]} ${aside[3]}`] : [])].map(wordsOf);
-    };
-    const namedIn = (answer) => {
-      const printed = (option) => readingsOf(option).some((words) => words.length > 0 && (answer.includes(` ${words.join(' ')} `)
-        || (words.length > 1 && words.every((word) => answer.includes(` ${word} `)))));
-      const mentioned = item.options.filter(printed);
-      return mentioned.filter((option) => !mentioned.some((other) => other !== option
-        && wordsOf(other).length > wordsOf(option).length
-        && wordsOf(option).every((word) => wordsOf(other).includes(word))));
-    };
-    let named = namedIn(said1);
+    let named = optionsNamedIn(said1, item.options);
     // An element the answer prints as its formula and the options name in
     // words: "The limiting reactant is Cl2." to the stem's "sodium" or
     // "diatomic chlorine" (4.4) — the option that holds the element's name.
@@ -2507,13 +2580,7 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
       const holding = item.options.filter((option) => names.some((name) => ` ${foldedPlain(option)} `.includes(` ${name} `)));
       if (names.length === 1 && holding.length === 1) named = holding;
     }
-    if (named.length === 0) {
-      const through = aliases.flatMap(([a, b]) => [[a, b], [b, a]])
-        .filter(([from]) => said1.includes(` ${from} `))
-        .map(([from, to]) => namedIn(said1.split(` ${from} `).join(` ${to} `)))
-        .filter((options) => options.length > 0);
-      if (through.length === 1) named = through[0];
-    }
+    if (named.length === 0) named = optionsNamedThrough(aliases, said1, item.options);
     if (named.length === 1 && compact(named[0]) === compact(item.answer)) return { status: 'confirmed', exercise };
     if (named.length === 0) return { status: 'prose-key', exercise };
     return {
@@ -2810,7 +2877,12 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
     const shape = [];
     for (const item of pageItems(pageMarkdown)) {
       const where = `${section.localPath}:${item.line}`;
-      const keyedVerdict = units ? judgeKeyedUnit(item, units, { aliases, elements }) : null;
+      // A sortbins that sorts a lettered exercise's parts is read against
+      // that exercise (`judgeKeyedSortbins`); any other falls through to
+      // `judgeSortbins`'s table reading below.
+      const keyedVerdict = !units ? null
+        : item.type === 'sortbins' ? judgeKeyedSortbins(item, units, { aliases })
+          : judgeKeyedUnit(item, units, { aliases, elements });
       if (keyedVerdict) {
         // A key the book corrects on purpose stays a disclosed correction,
         // with its erratum, however near the source's print it lands.

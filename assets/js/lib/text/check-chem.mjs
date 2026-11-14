@@ -630,6 +630,15 @@ function missingElectrons(key, responses) {
     && [0, 1].every((i) => matchSide(bare[i], response.sides[i]) !== null));
 }
 
+// A state the learner typed is compared, and one that differs is not the
+// key's equation — AgCl(aq) is not the precipitate. But a state is never
+// required, and the old sentence ("now check the state symbols, or leave
+// them out") did not say the rest was right or that leaving them out is
+// allowed rather than a dodge: a learner who typed Ca(OH)2(s) from 4.2's own
+// solubility table, against the source's (aq), read it as a wrong equation
+// (November 14, 2026). It names no substance.
+export const STATE_DIFFERS = 'The substances and coefficients are right. A state symbol you typed differs from the answer’s: check each one, or leave them out — state symbols are optional.';
+
 /** @returns {{ status: 'empty'|'correct'|'form'|'incorrect', message?: string }} */
 export function checkEquation(input, answer) {
   if (!String(input ?? '').trim()) return { status: 'empty' };
@@ -660,7 +669,7 @@ export function checkEquation(input, answer) {
           return { status: 'form', message: key.equilibrium ? EQUILIBRIUM_ARROW : ONE_WAY_ARROW };
         }
         if (statesAgree) return { status: 'correct' };
-        best = { status: 'form', message: 'The equation is balanced — now check the state symbols, or leave them out.' };
+        best = { status: 'form', message: STATE_DIFFERS };
         continue;
       }
       if (ratios.every((ratio) => Math.abs(ratio - ratios[0]) < 1e-9)) {

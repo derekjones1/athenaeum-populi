@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  checkChem, checkEquation, checkFormula, chemCanon, chemKeyProblem, prettySpecies, previewChem, readSpecies,
+  checkChem, checkEquation, checkFormula, chemCanon, chemKeyProblem, prettySpecies, previewChem, readSpecies, STATE_DIFFERS,
 } from './check-chem.mjs';
 
 const formula = (typed, key, accept = '') => checkFormula(typed, key, { accept }).status;
@@ -136,6 +136,15 @@ test('an equation is right with the key\'s species and coefficients, in any orde
   const state = checkEquation('2Na(s) + 2H2O(g) -> 2NaOH(aq) + H2(g)', key);
   assert.equal(state.status, 'form');
   assert.match(state.message, /state symbols/);
+  // The sentence says the rest is right and that a state may be left out,
+  // and names no substance (November 14, 2026).
+  assert.equal(state.message, STATE_DIFFERS);
+  assert.match(STATE_DIFFERS, /substances and coefficients are right/);
+  assert.match(STATE_DIFFERS, /state symbols are optional/);
+  assert.doesNotMatch(STATE_DIFFERS, /H2O|H₂O|water|\(g\)|\(l\)/);
+  // With the states left out, or typed as the key has them, it is correct.
+  assert.equal(checkEquation('2Na + 2H2O -> 2NaOH + H2', key).status, 'correct');
+  assert.equal(checkEquation('2Na(s) + 2H2O -> 2NaOH + H2(g)', key).status, 'correct', 'some typed, some not');
 });
 
 test('ions and electrons are read in an equation', () => {

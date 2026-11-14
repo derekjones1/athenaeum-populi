@@ -7,11 +7,11 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  KEYED_ONLY_BOOKS, answerText, glossaryAliases, keyedUnits, plain, printedNumerals, sequentialParts, unitFor, unitScore, unlinked,
+  KEYED_ONLY_BOOKS, answerText, glossaryAliases, keyedUnits, plain, printedNumerals, sequentialParts, sortedExercise, unitFor, unitScore, unlinked,
   workedExampleUnits, workedExamples,
 } from './keyed-units.mjs';
 import { parseXml } from './openstax-source.mjs';
-import { answerEquations, conditionalUnwrapped, judgeKeyedUnit, pageItems } from '../verify/verify-source-keys.mjs';
+import { answerEquations, conditionalUnwrapped, judgeKeyedSortbins, judgeKeyedUnit, pageItems } from '../verify/verify-source-keys.mjs';
 import { coverage, sourceExercises } from '../verify/verify-source-coverage.mjs';
 
 const cnxml = (body) => `<?xml version="1.0"?><document xmlns="http://cnx.rice.edu/cnxml"><content>${body}</content></document>`;
@@ -539,6 +539,58 @@ test('a link, a second name, and a glossary alias do not hide a unit or its key 
   assert.equal(symbol(`${ions} Enter the symbol of the ion that aluminum forms.`, 'Al³⁺'), 'confirmed');
   assert.equal(symbol(`${ions} Enter the symbol of the ion that carbon forms.`, 'C⁴⁻'), 'confirmed');
   assert.equal(symbol(`${ions} Enter the symbol of the ion that carbon forms.`, 'C⁴⁺'), 'key-differs');
+});
+
+test('a sortbins whose labels are a lettered exercise\'s parts is held to each part\'s answer, and renders every part it labels (2.5)', () => {
+  const glossary = '<glossary><definition id="g2"><term>main-group element</term><meaning id="g2m">(also, representative element) element in groups 1, 2, and 13–18</meaning></definition></glossary>';
+  const lead = 'Using the periodic table, classify each of the following elements as a metal or a nonmetal, and then further classify each as a main-group (representative) element, transition metal, or inner transition metal:';
+  const xml = cnxml(exercises(
+    exercise('c1', [lead, '(a) uranium', '(b) bromine', '(c) strontium', '(d) gold'],
+      '(a) metal, inner transition metal; (b) nonmetal, representative element; (c) metal, representative element; (d) metal, transition metal'),
+    // The unkeyed twin: the same lead-in over other elements.
+    exercise('c2', [lead, '(a) cobalt', '(b) europium', '(c) iodine', '(d) indium'], null),
+  )).replace('</content>', `</content>${glossary}`);
+  const units = keyedUnits(xml);
+  const aliases = glossaryAliases(xml);
+  const table = '[periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/)';
+  const question = (closing) => `${lead.replace('periodic table', table).replace(/:$/, '.')} ${closing}`;
+  const metals = question('Sort the elements into metals and nonmetals.');
+  const further = question('Sort the elements by the further classification.');
+  const FURTHER = ['Main-group (representative) element', 'Transition metal', 'Inner transition metal'];
+  const sort = (q, bins, entries) => ({ type: 'sortbins', question: q, bins, items: entries.map(([label, bin]) => ({ label, bin })) });
+  const judge = (item) => judgeKeyedSortbins(item, units, { aliases });
+  const good1 = sort(metals, ['Metal', 'Nonmetal'], [['Uranium', 0], ['Bromine', 1], ['Strontium', 0], ['Gold', 0]]);
+  const good2 = sort(further, FURTHER, [['Uranium', 2], ['Bromine', 0], ['Strontium', 0], ['Gold', 1]]);
+  // The keyed exercise, not its unkeyed twin, by the parts its labels are.
+  assert.equal(sortedExercise(metals, units, { type: 'sortbins', labels: ['Uranium', 'Bromine', 'Strontium', 'Gold'] }).group, 'c1');
+  assert.equal(judge(good1).status, 'confirmed', '"metal" is named, "nonmetal" is not printed in "metal, inner transition metal"');
+  assert.equal(judge(good2).status, 'confirmed', '"representative element" names the stem\'s option by its second name; "inner transition metal" outranks "transition metal"');
+  // A wrong bin: key-differs, naming the part and its answer.
+  const wrong = judge(sort(further, FURTHER, [['Uranium', 1], ['Bromine', 0], ['Strontium', 0], ['Gold', 2]]));
+  assert.equal(wrong.status, 'key-differs');
+  assert.match(wrong.detail, /label "Uranium" is in bin "Transition metal", but source c1\(a\) answers "metal, inner transition metal"/);
+  // A part dropped, or a label that is no part, is key-differs too.
+  assert.match(judge(sort(metals, ['Metal', 'Nonmetal'], [['Uranium', 0], ['Bromine', 1], ['Strontium', 0]])).detail, /part \(d\) "gold" of source c1 is not a label/);
+  assert.match(judge(sort(metals, ['Metal', 'Nonmetal'], [['Uranium', 0], ['Bromine', 1], ['Strontium', 0], ['Gold', 0], ['Iron', 0]])).detail, /label "Iron" is no part of source c1/);
+  // The twin's parts as labels: the twin prints no answer.
+  assert.equal(judge(sort(metals, ['Metal', 'Nonmetal'], [['Cobalt', 0], ['Europium', 0], ['Iodine', 1], ['Indium', 0]])).status, 'unkeyed-unit');
+  // A sortbins that sorts no exercise's parts falls through to the table judge.
+  assert.equal(judge(sort('Assign each property to the cell type it describes.', ['Prokaryotes', 'Eukaryotes'], [['Uranium', 0], ['Bromine', 1]])), null);
+  // pageItems reads the shortcode as judgeKeyedSortbins takes it.
+  const shortcode = (q, bins, entries) => `{{< sortbins question="${q}" hint="h" >}}\n${JSON.stringify({ bins, items: entries.map(([label, bin]) => ({ label, bin })) })}\n{{< /sortbins >}}\n`;
+  const page = shortcode(metals, ['Metal', 'Nonmetal'], [['Uranium', 0], ['Bromine', 1], ['Strontium', 0], ['Gold', 0]])
+    // (Bromine first: four labels in source order would read as grouped by bin to the interleave rule.)
+    + '\n' + shortcode(further, FURTHER, [['Bromine', 0], ['Uranium', 2], ['Strontium', 0], ['Gold', 1]]);
+  assert.deepEqual(pageItems(page).map((item) => judge(item).status), ['confirmed', 'confirmed']);
+  // Coverage: one sortbins renders every part it labels; a part no sortbins labels is missing.
+  const statuses = (markdown) => Object.fromEntries(coverage(markdown, sourceExercises(xml), { keyedOnly: true }).map((verdict) => [verdict.id, verdict.status]));
+  assert.deepEqual(statuses(page), {
+    'c1(a)': 'rendered', 'c1(b)': 'rendered', 'c1(c)': 'rendered', 'c1(d)': 'rendered',
+    'c2(a)': 'omitted', 'c2(b)': 'omitted', 'c2(c)': 'omitted', 'c2(d)': 'omitted',
+  });
+  const short = shortcode(metals, ['Metal', 'Nonmetal'], [['Uranium', 0], ['Bromine', 1], ['Strontium', 0], ['Neon', 1]]);
+  assert.equal(statuses(short)['c1(d)'], 'missing');
+  assert.equal(statuses(short)['c1(a)'], 'rendered');
 });
 
 test('answers that hold several choices at once are read for the one a multiple choice asks', () => {

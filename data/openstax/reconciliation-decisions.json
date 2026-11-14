@@ -6610,6 +6610,19 @@
       "rationale": "The paragraph says the recommended name of a new element is based on the Latin word(s) for its atomic number. The IUPAC numerical roots are Latin and Greek (\"pent\", \"hex\", and \"enn\" are Greek; J. Chatt, Pure and Applied Chemistry 51 (1979), 381-384). The page prints that the name is built from Latin and Greek numerical roots, with a visible Source note directly after the paragraph and a footer clause. Found by the prose claim pass (F10). Authored with chapter 2, ruled by the orchestrator, November 10, 2026."
     },
     {
+      "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/03-atomic-structure-and-symbolism.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68692",
+      "sourceElementIds": [
+        "fs-idp64426960",
+        "fs-idm73306928",
+        "fs-idm50612880"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3039,
+      "rationale": "The boron, neon and chlorine calculations print rounded intermediates (1.99 amu + 8.82 amu; 18.36 + 0.099 + 1.69; 1.99705x = 1.513) and then add or divide them; the same rounding applied to the magnesium and 63Cu Check Your Learning problems misses their printed answers by a unit of the last figure. The page prints the intermediates with the digits carried (1.9926 + 8.8184; 18.3610 + 0.0987 + 1.6911; 1.99705x = 1.5129), no result changed, with one Source note after the boron calculation and a footer clause. Fixed in the pass before chapter 5, ruled by the orchestrator on Derek's instruction, November 14, 2026."
+    },
+    {
       "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/04-chemical-formulas.md",
       "bundle": "chemistry-bundle",
       "moduleId": "m68693",
@@ -6730,7 +6743,7 @@
       ],
       "status": "correct-local-source-defect",
       "errataEntry": 2981,
-      "rationale": "The saccharin example multiplies the rounded molecule count, 1.31 × 10^20, by 7 and prints 9.17 × 10^20 carbon atoms. Carried without rounding the intermediate value, 0.0400 g ÷ 183.18 g/mol × 6.022 × 10^23 = 1.315 × 10^20 molecules, and × 7 = 9.205 × 10^20, which is 9.20 × 10^20 to three figures; the module's own Section 3.3 paragraph (m68703, fs-idm75726960) says to refrain from rounding intermediate results. The page prints 9.20 × 10^20 C atoms with a visible Source note directly after the example's Solution and a footer clause. Found by the 3.1 author and the prose claim pass (F4). Authored with chapter 3, ruled by the orchestrator, November 11, 2026."
+      "rationale": "The saccharin example multiplies the rounded molecule count, 1.31 × 10^20, by 7 and prints 9.17 × 10^20 carbon atoms. Carried without rounding the intermediate value, 0.0400 g ÷ 183.18 g/mol × 6.022 × 10^23 = 1.315 × 10^20 molecules, and × 7 = 9.205 × 10^20, which is 9.20 × 10^20 to three figures; the module's own Section 3.3 paragraph (m68703, fs-idm75726960) says to refrain from rounding intermediate results. The page prints 9.20 × 10^20 C atoms with a visible Source note directly after the example's Solution and a footer clause. Found by the 3.1 author and the prose claim pass (F4). Authored with chapter 3, ruled by the orchestrator, November 11, 2026. Since November 14, 2026 the example's second step also prints the count of molecules with the digits carried, 1.31499 × 10^20, in place of the rounded 1.31 × 10^20, so that the printed line retraces to 9.20 × 10^20."
     },
     {
       "localPath": "content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md",
@@ -6813,6 +6826,17 @@
       "rationale": "The answer to exercise fs-idm62322112 (printed 3.51), part (d), prints 5.9 × 10^-7 mol FeSO4 for 325 mL of 1.8 × 10^-6 M. 0.325 L × 1.8 × 10^-6 M = 5.85 × 10^-7 mol exactly, a dropped 5 with nothing after it, which Section 1.5's round-half-to-even rule rounds to 5.8 × 10^-7; the module's own paragraph fs-idm75726960 rounds 1.325 to 1.32 the same way. The printed 5.9 is the round-half-up value; the mass 8.9 × 10^-5 g is right, from the unrounded moles. The page keys the moles fill-in 5.8 × 10^-7 with no allowance for the last digit (sig-figs:2 last-digit:0, as for erratum 2910), with a visible Source note directly after the item, a footer clause, and a disclosed deviation in verify-source-keys. Found by the 3.3 author's ledger. Authored with chapter 3, ruled by the orchestrator, November 11, 2026."
     },
     {
+      "localPath": "content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/03-molarity.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68703",
+      "sourceElementIds": [
+        "fs-idm61725600"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2997,
+      "rationale": "The Check Your Learning prints CoCl2 as 128.9 g/mol and keys 0.674 M, but the molar mass is 58.93 + 2 × 35.45 = 129.83 g/mol, which gives 0.670 M. The page prints 129.8 g/mol (this book's periodic-table value at the source's four figures) and keys what that gives, 6.52 ÷ 129.8 ÷ 0.0750 = 0.670 M, with a Source note, a footer clause and a DISCLOSED_DEVIATIONS key entry. Fixed in the pass before chapter 5, ruled by the orchestrator on Derek's instruction, November 14, 2026."
+    },
+    {
       "localPath": "content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/02-classifying-chemical-reactions.md",
       "bundle": "chemistry-bundle",
       "moduleId": "m68710",
@@ -6868,6 +6892,20 @@
       "rationale": "The Green Chemistry and Atom Economy box says \"First marketed in the early 1960s, ibuprofen was produced using a six-step synthesis\". Ibuprofen was discovered in 1961 and first marketed in 1969 in the United Kingdom (Ershad and others, \"Ibuprofen Toxicity\", StatPearls, 2024, https://www.ncbi.nlm.nih.gov/books/NBK526078/: \"was discovered by Dr. Stewart Adams in 1961. The drug was first marketed in 1969 in the United Kingdom and in 1974 in the United States\"). The page prints \"Discovered in 1961 and first marketed in 1969\", with a visible Source note directly after the callout and a footer clause. Found by the prose claim pass (F5). Authored with chapter 4, ruled by the orchestrator, November 12, 2026."
     },
     {
+      "localPath": "content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/04-reaction-yields.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68714",
+      "sourceElementIds": [
+        "fs-idp107313360",
+        "fs-idp161973712",
+        "fs-idm62043536",
+        "fs-idp182503696"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3040,
+      "rationale": "The limiting-reactant example uses the rounded 0.0712 mol Si and 0.0535 mol N2 in its later steps, and the percent-yield example divides by the rounded theoretical yield; Section 3.3 says not to round intermediates. The page prints the carried values (0.071212 mol Si, 0.053545 mol N2, 0.50725 g Cu), no result changed, with one Source note after the first changed calculation and a footer clause. Fixed in the pass before chapter 5, ruled by the orchestrator on Derek's instruction, November 14, 2026."
+    },
+    {
       "localPath": "content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/05-quantitative-chemical-analysis.md",
       "bundle": "chemistry-bundle",
       "moduleId": "m68716",
@@ -6888,6 +6926,18 @@
       "status": "correct-local-source-defect",
       "errataEntry": 3027,
       "rationale": "The Check Your Learning of example fs-idp80717680 answers 0.2648 M for 23.24 mL of 0.09113 M KMnO4 against 20.00 mL of oxalic acid. 23.24 mL × 0.09113 M × 5/2 ÷ 20.00 mL = 0.264733, which is 0.2647 M to four figures; 0.2648 follows from rounding the intermediate to 2.118 mmol. The page keys 0.2647 (sig-figs:4 last-digit:1), so the source's value is still graded right by the one-unit allowance, with a visible Source note directly after the item, footer clauses, and a disclosed deviation in verify-source-keys (exercise fs-idp80717680#check). Found by the prose claim pass (F3). Authored with chapter 4, ruled by the orchestrator, November 12, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/05-quantitative-chemical-analysis.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68716",
+      "sourceElementIds": [
+        "fs-idp180416144",
+        "fs-idp13640592"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3041,
+      "rationale": "The titration example divides by the rounded 8.81 × 10^-3 mol HCl and the gravimetric example uses the rounded mass of MgSO4; Section 3.3 says not to round intermediates. The page prints 8.8075 × 10^-3 mol HCl and 0.31809 g MgSO4 in the later steps, no result changed, with one Source note and a footer clause. Fixed in the pass before chapter 5, ruled by the orchestrator on Derek's instruction, November 14, 2026."
     },
     {
       "localPath": "content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/02-classifying-chemical-reactions.md",

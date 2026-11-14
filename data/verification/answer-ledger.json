@@ -1989,14 +1989,6 @@
     "result": "agrees"
    }
   },
-  "03d6a7774ecc3c0c": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (a): further classification inner transition metal The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "03d71cd1be00778f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -12647,14 +12639,6 @@
     "result": "agrees"
    }
   },
-  "18ffe963076f8b0e": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm101514016 part (g) key 1 × 10^12 s",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "1902b8313cf57319": {
    "verdict": "ok",
    "note": "KC 4 18.1 § body Processes and Patterns of Evolution (fs-idp116035664), m66518 — parent re-read against the module",
@@ -14609,14 +14593,6 @@
   "1cbed4002f44d679": {
    "verdict": "ok",
    "note": "cloze from fs-id2686721 'The Müllerian ducts degenerate'",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "1cc1d88317915b45": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (g): first classification metal The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -16949,14 +16925,6 @@
     "result": "agrees"
    }
   },
-  "217aaa3e255f1e59": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (b): first classification nonmetal The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "217f033cd117616a": {
    "verdict": "ok",
    "note": "source exercise fs-id2138586 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -16984,6 +16952,14 @@
   "2182c73989750fe8": {
    "verdict": "ok",
    "note": "parent re-read 2026-09-27: spec slope 1/3, intercept -1 is y = (1/3)x - 1 as asked"
+  },
+  "218a63d890dd7e50": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm81897840; stem prints 129.8 g/mol (the book's table gives 129.83; the source prints 128.9, erratum 2997) and the key is 6.52/129.8/0.0750 = 0.66975 → 0.670 (129.83 gives 0.66959 → 0.670); DISCLOSED_DEVIATIONS fs-idm81897840#check; re-keyed November 14, 2026 (until then the source's stem and key, 0.674)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "21905cf8156d6534": {
    "verdict": "ok",
@@ -17320,6 +17296,14 @@
   "223c46dac063368f": {
    "verdict": "ok",
    "note": "log_10(1,000,000)=6 is 10^6=1,000,000 by definition; matches CNXML Try It 1a. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "223ed54abe7a4a66": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp41635696 part (b), complete ionic equation; re-derived (atoms and charge balanced, lowest terms) against raw CNXML m68709 | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "22412919f55d2ac0": {
    "verdict": "ok",
@@ -19554,14 +19538,6 @@
   "26f859580ca6ef26": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "26f8bb9541e53339": {
-   "verdict": "ok",
-   "note": "Conservation of matter: oxygen gained = 24.1 g - 23.2 g = 0.9 g; tenths place obvious from the data; matches source key (b) 0.9 g. Grader: 0.9 correct, 0.90 form, 1.9 incorrect.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -24002,14 +23978,6 @@
    "verdict": "ok",
    "note": "re-read against CNXML m58913; keyed sentence/table checks out | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "30101346d126f417": {
-   "verdict": "ok",
-   "note": "8.5×2.54×11×2.54=603.2→6.0e2 cm² (display unit added)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "3015e2013d310ceb": {
    "verdict": "ok",
    "note": "node: r=sqrt(9+25)=sqrt(34)=5.8310; theta=atan2(-5,3)=-1.0304, +2pi=5.2528, rounded 5.253. Matches CNXML solution (sqrt(34), 5.253) exactly (Section Exercises, (3,-5)). | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -25216,6 +25184,14 @@
     "result": "agrees"
    }
   },
+  "32a26633cdbbfa95": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm101514016 part (e) key 3.76 × 10^−1 m | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "32a419dfdf17a4d3": {
    "verdict": "ok",
    "note": "glossary recall: circumflex artery (branch of the left coronary artery that follows coronary sulcus)",
@@ -25739,14 +25715,6 @@
   "33e19d5348d29b5c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "33e3688ced929f98": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (h): first classification nonmetal The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -27051,6 +27019,14 @@
     "result": "agrees"
    }
   },
+  "366f6c18a6a4f17f": {
+   "verdict": "ok",
+   "note": "120×1.0936×3=393.7→394 ft [Filed by the round-3 fixer under an earlier hash of this item; carried by the orchestrator after a round-3 edit that changed no key (a hint, a stem period, a datum added to a stem).] | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3672183b22c7d1b6": {
    "verdict": "ok",
    "note": "Review fs-id2269266 key A visceral and parietal pleurae",
@@ -27915,14 +27891,6 @@
     "result": "agrees"
    }
   },
-  "3866c137c368e538": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm415648752 part (a): symbol Kr",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "38671b10ae2f999f": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -27950,14 +27918,6 @@
   "386be81b4a088a7d": {
    "verdict": "ok",
    "note": "cloze of fs-id2655063 'raise blood pressure by causing widespread vasoconstriction'",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "38712ea38b900da3": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm101514016 part (e) key 3.76 × 10^−1 m",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -28775,6 +28735,14 @@
     "result": "agrees"
    }
   },
+  "3a156a21b9b84092": {
+   "verdict": "ok",
+   "note": "8.5×2.54×11×2.54=603.2→6.0e2 cm² (display unit added) | re-stemmed November 14, 2026: the added \"Enter the area in square centimeters.\" dropped (the stem names cm²); key unchanged; 600 grades correct, 603 form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3a1630cbe56aae37": {
    "verdict": "ok",
    "note": "author-built from § Anatomy and Normal Microbiota of the Oral Cavity: \"The crown is covered with enamel , which is the hardest material in the body.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -28926,14 +28894,6 @@
    "note": "m66554 exercise fs-idp237302288 (Review Q2): keyed option B 'mixotrophs' matches the CNXML solution and the Metabolism paragraph's own definition (photoautotrophic or heterotrophic routes). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "3a6df2cdfe447b0a": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm415648752 part (b): symbol Ca",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -29241,14 +29201,6 @@
   "3b0a3e35a7e64361": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "3b0b33f0eefe7517": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (e): first classification metal The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -29809,14 +29761,6 @@
    "note": "glossary recall: glycogenolysis (fs-idp9089584) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "3c2b88dad914c3f1": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm415648752 part (b): name calcium",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -31197,6 +31141,14 @@
   "3efe71bcabebfe9e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "3effe2765ddd5428": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm311640624, second quantity (key 1.5 ft/cubit); computed 1.505 [Filed by the author under an earlier hash of this item; carried by the orchestrator after a round-3 edit that changed no key (a hint, a stem period, a datum added to a stem).] | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -33390,6 +33342,14 @@
   "435d567a6ad90575": {
    "verdict": "ok",
    "note": "re-read against m46664 CNXML and page text: textin keyed junctional rhythm",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "435e559f8ad1e70c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 (m68695), parts (a)–(j): each element's bin is the category the source's answer gives that part (main-group, transition, or inner transition); one sort-into-bins item in place of ten multiple choices since November 14, 2026 (keys unchanged); verify:source-keys judgeKeyedSortbins confirms every label",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -39123,14 +39083,6 @@
     "result": "agrees"
    }
   },
-  "4f76a7edfeba4f10": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (i): further classification main-group (representative) element The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "4f76b7a807c37e61": {
    "verdict": "ok",
    "note": "both slopes 1/3, intercepts differ -> parallel; key p1279 #13"
@@ -41114,14 +41066,6 @@
    "verdict": "ok",
    "note": "ILQ fs-id1226922: source solution, anterior->posterior per module fs-id1475033/fs-id2251576 (C1), Source note after item"
   },
-  "53a35c8d5d03f2fc": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm311640624, second quantity (key 1.5 ft/cubit); computed 1.505 [Filed by the author under an earlier hash of this item; carried by the orchestrator after a round-3 edit that changed no key (a hint, a stem period, a datum added to a stem).]",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "53ae0107dab2fd3d": {
    "verdict": "ok",
    "note": "source exercise fs-id1171360229175 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -41783,14 +41727,6 @@
   },
   "5504dde457477c87": {
    "verdict": "ok"
-  },
-  "55076b50d141b43e": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm415648752 part (d): name tellurium",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "5514f160d9de626a": {
    "verdict": "ok",
@@ -44282,14 +44218,6 @@
   "5a0f35e5ed1887ef": {
    "verdict": "ok"
   },
-  "5a10ade6e2cb9e15": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (e): further classification transition metal The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "5a14a755b1e9a44e": {
    "verdict": "ok",
    "note": "Glossary textin, definition id fs-idm96582288: 'summation' = 'process of multiple presynaptic inputs creating EPSPs around the same time for the postsynaptic neuron to be sufficiently depolarized to fire an action potential' — matches. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -44504,6 +44432,14 @@
     "result": "agrees"
    }
   },
+  "5a7aa8c279909bd8": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm101514016 part (b) key 2.32 × 10^8 kg | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5a7e577ef92e5b2d": {
    "verdict": "ok",
    "note": "Body selfcheck, CYU box3 bullet1 (anti-B blood type) — kept as selfcheck rather than converted: the module's worked example only covers the A-positive/O-negative cases, so applying it to anti-B alone is an inference the module does not spell out, and the Rh type cannot be fixed from this one antiserum. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -44701,6 +44637,14 @@
     "result": "agrees"
    }
   },
+  "5ad9ad81817307b4": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm415648752 part (c): symbol F | re-stemmed November 14, 2026: the stem's words \"periodic table\" linked to Appendix A; key unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5ade6bdd6200f56d": {
    "verdict": "ok"
   },
@@ -44812,14 +44756,6 @@
   "5b0672d577d40239": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "5b0aa57ba06d9787": {
-   "verdict": "ok",
-   "note": "120×1.0936×3=393.7→394 ft [Filed by the round-3 fixer under an earlier hash of this item; carried by the orchestrator after a round-3 edit that changed no key (a hint, a stem period, a datum added to a stem).]",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -45218,6 +45154,14 @@
   "5be7a3474cf1d4da": {
    "verdict": "ok",
    "note": "source exercise fs-idm80933584 part (c) (number of electrons); key 47",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "5bedebbb8eace3e4": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp41635696 part (a), complete ionic equation; re-derived (atoms and charge balanced, lowest terms) against raw CNXML m68709 | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -46343,14 +46287,6 @@
   "5e13882848cbff5f": {
    "verdict": "ok",
    "note": "source exercise fs-idm6604608; part: Al(s) + CuBr₂(aq) ⟶ (single displacement).; key 2Al(s) + 3CuBr₂(aq) ⟶ 3Cu(s) + 2AlBr₃(aq) re-derived against the CNXML",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "5e14d469373b6999": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm101514016 part (b) key 2.32 × 10^8 kg",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -48454,14 +48390,6 @@
     "result": "agrees"
    }
   },
-  "634702d3aaa10ce5": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm101514016 part (h) key 2.7 × 10^−11 s",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "6349765b3e1c374a": {
    "verdict": "ok",
    "note": "author-built from § introduction: \"So if a bacterium was not the cause of TMD, what could be causing the disease?\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -48646,14 +48574,6 @@
   "63a27a4fc198128f": {
    "verdict": "ok",
    "note": "m66379 critical-thinking solution fs-id1986147 (MAP2K1/MEK) verbatim match, including 'Active Raf phosphorylates MEK'. All 4 CHECKS clauses trace to sentences in that solution; no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
-  },
-  "63a5dbe386dd77f9": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp41635696 part (a), complete ionic equation; re-derived (atoms and charge balanced, lowest terms) against raw CNXML m68709",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "63a79c4758717591": {
    "verdict": "ok",
@@ -49011,6 +48931,14 @@
   "64ba086f40eb45ac": {
    "verdict": "ok",
    "note": "cloze, § Suture fs-id2663393: The suture is frequently convoluted…",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "64bfc7b1423bfded": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm415648752 part (d): name tellurium | re-stemmed November 14, 2026: the stem's words \"periodic table\" linked to Appendix A; key unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -52780,14 +52708,6 @@
   "6d56c56ae20c0c63": {
    "verdict": "ok"
   },
-  "6d57d5d208616c4c": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp41635696 part (b), complete ionic equation; re-derived (atoms and charge balanced, lowest terms) against raw CNXML m68709",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "6d5d7569ae90652e": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
@@ -55145,14 +55065,6 @@
     "result": "agrees"
    }
   },
-  "721fcad121ab8585": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (a): first classification metal The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "7222be9a8a75eadc": {
    "verdict": "ok",
    "note": "textin recall of glossary term 'fluid mosaic model' (fs-id1808839); definition reworded to avoid all three answer words in the prompt. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -55344,14 +55256,6 @@
   "72894d07cdcd71ef": {
    "verdict": "ok",
    "note": "Check Your Learning of example fs-idm194224 part (c); key Mn₃(PO₄)₂ | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "72906278770dc080": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (d): further classification main-group (representative) element The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -57422,14 +57326,6 @@
   "76e4b47c67112664": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "76e5401b5636ba94": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm415648752 part (c): name fluorine",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -61400,6 +61296,14 @@
    "verdict": "ok",
    "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "7ea8e3ef7644c8eb": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm415648752 part (a): symbol Kr | re-stemmed November 14, 2026: the stem's words \"periodic table\" linked to Appendix A; key unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7ead0650b76130b8": {
    "verdict": "ok",
    "note": "x = 5 is the vertical line through 5 on the x-axis; option 1 is lines [{x:5}]. Option 0 is x = -5 and option 2 is the horizontal y = 5 (the axis-confusion error). Rendered and inspected: key is vertical crossing the x-axis at 5. | carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -63130,14 +63034,6 @@
     "result": "agrees"
    }
   },
-  "826981357410d79b": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (j): first classification metal The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "826f5037f82677a5": {
    "verdict": "ok",
    "note": "KC 5 23.3 § Syphilis > Congenital Syphilis, m58919"
@@ -63285,14 +63181,6 @@
   "82be0d6a2da9e276": {
    "verdict": "ok",
    "note": "m66648 note.visual-connection fs-idp209261040 (also printed identically as exercise fs-idp209261040 in section.visual-exercise); model answer matches the CNXML solution verbatim: 'The blood pH will drop and hemoglobin affinity for oxygen will decrease.' | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "82be15397744ae70": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (d): first classification nonmetal The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "82beeb98ff6b2301": {
    "verdict": "ok",
@@ -63973,14 +63861,6 @@
   "8438cf4c0366c9c4": {
    "verdict": "ok",
    "note": "KC 2 5.4 § Basal Cell Carcinoma, m46066"
-  },
-  "843b67832e2be723": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm415648752 part (c): symbol F",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "843b8a54d3aa2f76": {
    "verdict": "ok",
@@ -65571,14 +65451,6 @@
     "result": "agrees"
    }
   },
-  "8756061ed27bacc4": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (c): first classification metal The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "87597d5e82f7764e": {
    "verdict": "ok",
    "note": "source exercise fs-id1172098268292 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -65790,14 +65662,6 @@
   "87d4216bcb8d6d36": {
    "verdict": "ok",
    "note": "author-built from § Measuring Biodiversity: \"DNA barcoding is one molecular genetic method, which takes advantage of rapid evolution in a mitochondrial gene (cytochrome c oxidase 1) pr…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "87d9821558be19f7": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (g): further classification transition metal The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -66918,6 +66782,14 @@
   "8a195120f5ac54c1": {
    "verdict": "ok"
   },
+  "8a1c1b1f49f1fa2b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm415648752 part (a): name krypton | re-stemmed November 14, 2026: the stem's words \"periodic table\" linked to Appendix A; key unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8a1eec4af055fd86": {
    "verdict": "ok",
    "note": "source RQ fs-id757155, key C = lipids and proteins; body fs-id1170598; re-read against m46509 CNXML and the page",
@@ -67099,14 +66971,6 @@
     "result": "agrees"
    }
   },
-  "8a7e4fa8a06c2c28": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm101514016 part (i) key 1.5 × 10^−4 K",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "8a7eb3068f11b3ef": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -67245,14 +67109,6 @@
   "8aca8b47015199ff": {
    "verdict": "ok",
    "note": "cloze fs-id2021199 sentence 'The signals result in ... thicker mucus output'; key mucus printed in body; accept mucous (adjective before 'output')",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "8ad1ab9c77face8c": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (c): further classification main-group (representative) element The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -70593,14 +70449,6 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "920f02a173cde3a9": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm101514016 part (a) key 1.3 × 10^−4 kg",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "920f235c58757848": {
    "verdict": "ok",
    "note": "key-term recall: large intestine; printed in § summary: \"The digestive tract, consisting of the oral cavity, pharynx, esophagus, stomach, small intestine, and large intestine, has a normal microbi…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -71106,14 +70954,6 @@
   "931f3d971054fd87": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "9321cf5d829d31e3": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm81897840; 6.52/128.9/0.0750 = 0.6744, source 0.674 (stem molar mass 128.9 reported: table gives 129.83); Source note after item gives the table value 129.83",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "9322c32de2480d89": {
    "verdict": "ok",
@@ -72123,14 +71963,6 @@
   "9514d769157e0ab1": {
    "verdict": "ok",
    "note": "d=-4-3=-7, a_n=3-7(n-1)=10-7n; solve -60=10-7n -> n=10 (matches source key). | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
-  },
-  "9515aa7f4a145762": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (f): further classification inner transition metal The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "9518c4d08776ac6d": {
    "verdict": "ok",
@@ -73449,14 +73281,6 @@
   "97d96b8a102152ee": {
    "verdict": "ok",
    "note": "source exercise fs-idm61727056 part (c); source answer carried as the model answer; duplicate rubric clause trimmed after the fix check (parent)"
-  },
-  "97ddd571e53b6bd2": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (j): further classification main-group (representative) element The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "97dffaaec77b229e": {
    "verdict": "ok",
@@ -80175,6 +79999,14 @@
    "verdict": "ok",
    "note": "sin(t)<0 means y<0, cos(t)>0 means x>0; x>0,y<0 is QIV"
   },
+  "a5ad43ca1c70beeb": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm415648752 part (c): name fluorine | re-stemmed November 14, 2026: the stem's words \"periodic table\" linked to Appendix A; key unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a5b2aa0d19b9e551": {
    "verdict": "ok",
    "note": "glossary fs-id1435183 mucosa; mucous membrane equated in fs-id2102397",
@@ -80381,14 +80213,6 @@
   "a62ae59724cc529e": {
    "verdict": "ok",
    "note": "body cloze from § Human African Trypanosomiasis: \"The subspecies Trypanosoma brucei rhodesiense causes East African trypanosomiasis (EAT), and another subspecies, Trypanosoma brucei gambien…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "a632502d74a39f7d": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm101514016 part (d) key 8.63 × 10^−5 kg",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -81474,6 +81298,14 @@
   "a88cfa870a583e05": {
    "verdict": "ok"
   },
+  "a8929d455f58292b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm101514016 part (d) key 8.63 × 10^−5 kg | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a89c698bf1b728d1": {
    "verdict": "ok",
    "note": "m66436 Critical Thinking Q2 <solution id=fs-idm106256016>: 'Saturated triglycerides contain no double bonds between carbon atoms; they are usually solid at room temperature. Unsaturated triglycerides contain at least one double bond between carbon atoms and are usually liquid at room temperature.' Page model answer matches verbatim; all four CHECKS clauses restate this with no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -81786,6 +81618,14 @@
   },
   "a92ea734546044ef": {
    "verdict": "ok"
+  },
+  "a930c3227d65bfb4": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm415648752 part (b): symbol Ca | re-stemmed November 14, 2026: the stem's words \"periodic table\" linked to Appendix A; key unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "a9366c3039594445": {
    "verdict": "ok",
@@ -84153,6 +83993,14 @@
     "result": "agrees"
    }
   },
+  "ae858700578f1627": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 (m68695), parts (a)–(j): each element's bin is the category the source's answer gives that part (metal or nonmetal); one sort-into-bins item in place of ten multiple choices since November 14, 2026 (keys unchanged); verify:source-keys judgeKeyedSortbins confirms every label",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ae8854372e48e6ee": {
    "verdict": "ok",
    "note": "source exercise fs-id1172100936469 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -84860,6 +84708,14 @@
     "result": "agrees"
    }
   },
+  "aff2b9841b2da11e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm415648752 part (b): name calcium | re-stemmed November 14, 2026: the stem's words \"periodic table\" linked to Appendix A; key unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "affb9e0395a2761b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -85062,6 +84918,14 @@
    "note": "RQ fs-id1407667: 'Phospholipids are major plasma membrane constituents' (section text) supports option A; no other option is phospholipid-related — matches CNXML solution A. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "b0864c908b29838b": {
+   "verdict": "ok",
+   "note": "Conservation of matter: oxygen gained = 24.1 g - 23.2 g = 0.9 g; tenths place obvious from the data; matches source key (b) 0.9 g. Grader: 0.9 correct, 0.90 form, 1.9 incorrect. | re-stemmed November 14, 2026: the closing sentence now says \"to the nearest tenth of a gram\", as its two sibling fill-ins do; key unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -87038,14 +86902,6 @@
   "b4a0f0409bba9363": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "b4a8aa4107780136": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm415648752 part (a): name krypton",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -90864,14 +90720,6 @@
    "verdict": "ok",
    "note": "source CT fs-id2061794; model answer = source solution verbatim; checks are its clauses"
   },
-  "bc64ed0369430e5b": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm415648752 part (d): symbol Te",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "bc65e0370dfb7ca5": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -91614,6 +91462,14 @@
   "bde450cd271868b1": {
    "verdict": "ok",
    "note": "RQ fs-id1517312 key B; fs-id2454712 and fs-id2468186 state type O lacks A and B",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "bde4db865f468851": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm101514016 part (a) key 1.3 × 10^−4 kg | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -93986,6 +93842,14 @@
     "result": "agrees"
    }
   },
+  "c32a480f0048fe4b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm101514016 part (c) key 5.23 × 10^−12 m | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c33082a2e7277db4": {
    "verdict": "ok",
    "note": "source exercise fs-idm20960192 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -95443,14 +95307,6 @@
   "c61c6ec798f763e2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "c61db1bd8d5459b2": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (f): first classification metal The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -96944,14 +96800,6 @@
     "result": "agrees"
    }
   },
-  "c9678af474f6c2b2": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm101514016 part (c) key 5.23 × 10^−12 m",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "c96abf544c057bd2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -98205,14 +98053,6 @@
    "note": "source exercise fs-id1172100771337 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "cbc208ca54083107": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (h): further classification main-group (representative) element The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -100639,14 +100479,6 @@
   "d14c5a7dede7805d": {
    "verdict": "ok",
    "note": "16y=4, 9x-y=2. Equation 1 rewritten in standard form 0x+16y=4 -> row 1 = [0,16,4]. Matches CNXML fs-id1165135434887's printed matrix row 1 exactly. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
-  },
-  "d14fc58727a68d5b": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (b): further classification main-group (representative) element The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "d152413bb0e2bf39": {
    "verdict": "ok",
@@ -104511,14 +104343,6 @@
     "result": "agrees"
    }
   },
-  "d996d45d1aa0b9c1": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (i): first classification nonmetal The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "d9972ba63dafa1c3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -107381,6 +107205,14 @@
    "verdict": "ok",
    "note": "fs-id1812346 (CNXML solution: False). (tan x/sec x)sin(-x) = sin(x)*(-sin x) = -sin^2 x, not cos^2 x; confirmed numerically at x=1 (-0.7080734182735713 vs cos^2(1)=0.2919265817264289, not equal). | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "dfccd66002a8d742": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm101514016 part (i) key 1.5 × 10^−4 K | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "dfcd8da9a3c74307": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -107484,6 +107316,14 @@
   "dff88b1f37ba2aa4": {
    "verdict": "ok",
    "note": "model answer read against m46489 solution or named paragraph"
+  },
+  "dffae856dc7706c1": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm101514016 part (h) key 2.7 × 10^−11 s | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "e001aa64506fb50b": {
    "verdict": "ok",
@@ -110360,6 +110200,14 @@
   "e5b703f4cff70ba9": {
    "verdict": "ok",
    "note": "glossary recall: molecule (fs-id1253913) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "e5c67cbaba86c46c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm101514016 part (f) key 5.4 × 10^−5 m | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -118067,14 +117915,6 @@
     "result": "agrees"
    }
   },
-  "f67b839331184734": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm101514016 part (f) key 5.4 × 10^−5 m",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "f67c5c2db3428054": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -119065,6 +118905,14 @@
   "f81e5d00f1309730": {
    "verdict": "ok",
    "note": "Practice (Factor Theorem). Evaluated 2x^3+x^2-5x+2 at -2, 1, 0.5 via node: all 0. Matches CNXML solution for fs-id1165135349107 (-2, 1, 1/2). | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "f823e85ed41aaf7c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm415648752 part (d): symbol Te | re-stemmed November 14, 2026: the stem's words \"periodic table\" linked to Appendix A; key unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "f8248291c0319810": {
    "verdict": "ok",
@@ -121868,6 +121716,14 @@
   "fdc1bf88943d64e9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "fdc28ceef1ff56f3": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm101514016 part (g) key 1 × 10^12 s | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"

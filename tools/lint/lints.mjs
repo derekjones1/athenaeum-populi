@@ -224,7 +224,7 @@ import { parseObjectivesCallout } from '../lib/openstax-source.mjs';
 // The real textin grading normalizer, so the word-count/retype-hazard/
 // duplicate-accept-member rules below reason about a textin answer exactly
 // the way check-text.mjs will grade it.
-import { checkText, closedForm, foldedForms, isOlderName, normalizeText, pluralFolds } from '../../assets/js/lib/text/check-text.mjs';
+import { checkText, closedForm, foldedForms, isOlderName, isPrefixName, normalizeText, pluralFolds } from '../../assets/js/lib/text/check-text.mjs';
 // A textin whose answer is a chemical formula or equation is validated by the
 // grader that reads it, not by the word rules.
 import { chemKeyProblem } from '../../assets/js/lib/text/check-chem.mjs';
@@ -2409,6 +2409,41 @@ export function lintHugo(src, filename = '', options = {}) {
             err(group.index, `Practice group \`### ${group.title}\` has no auto-graded exercise (fillin, multiplechoice, graphplot, textin, or sortbins) — a group of only selfchecks does not cover its objective`);
           }
         }
+        // Sub-headings inside a group (`#### `). A long group may be divided
+        // where its run changes topic — Chemistry 1.6 asked 49 items under
+        // one objective, and 4.2 sixteen half-reaction balances under
+        // "Compute the oxidation states" (November 14, 2026). A sub-heading
+        // is a label, not an objective: it never counts as a group, it ends
+        // without a period or colon, it labels a run of at least two
+        // exercises, and no two on a page share a title.
+        const subheadings = [...mediaSrc.matchAll(/^(#{4,}) +(.+?)[ \t]*$/gm)]
+          .map((m) => ({ index: m.index, end: m.index + m[0].length, title: m[2].trim(), depth: m[1].length }))
+          .filter(inRange);
+        const boundaries = [...groups.map((g) => g.index), ...subheadings.map((h) => h.index), practiceRange[1]].sort((a, b) => a - b);
+        const seenSubheadings = new Set();
+        for (const sub of subheadings) {
+          if (sub.depth > 4) {
+            err(sub.index, `Practice heading \`${'#'.repeat(sub.depth)} ${sub.title}\` is deeper than \`#### \` — a group is divided once, by \`#### \` sub-headings`);
+            continue;
+          }
+          if (sub.index < groups[0].index) {
+            err(sub.index, `Practice sub-heading \`#### ${sub.title}\` sits above the first \`### \` group — a sub-heading divides an objective group`);
+            continue;
+          }
+          if (/[.:]$/.test(sub.title)) {
+            err(sub.index, `Practice sub-heading \`#### ${sub.title}\` ends with punctuation — a sub-heading is a label, written without a closing period or colon`);
+          }
+          const subKey = normalizeTitle(sub.title);
+          if (seenSubheadings.has(subKey)) {
+            err(sub.index, `Practice sub-heading \`#### ${sub.title}\` repeats another on this page — each sub-heading labels its own run`);
+          }
+          seenSubheadings.add(subKey);
+          const limit = boundaries.find((boundary) => boundary > sub.index);
+          const count = blockQuestions.filter(({ index }) => index >= sub.end && index < limit).length;
+          if (count < 2) {
+            err(sub.index, `Practice sub-heading \`#### ${sub.title}\` labels ${count} exercise(s) — a sub-heading divides a long group into runs of at least two`);
+          }
+        }
       }
       if (blockQuestions.length < required) {
         err(practice.index, `Practice block has ${blockQuestions.length} interactive exercise(s) — at least ${required} are required (${MIN_PER_OBJECTIVE} per objective, minimum ${MIN_PER_SECTION})`);
@@ -2982,6 +3017,18 @@ export function lintHugo(src, filename = '', options = {}) {
       if (named) {
         err(index, `${where}: ${member.label} is an older name of ${named.label} — the grader already answers it "That is an older name", so remove it (an out-of-date name is not an accepted answer)`);
       }
+    }
+    // The same for a Greek-prefix name of a keyed metal compound ("titanium
+    // tetrachloride" beside "titanium(IV) chloride"): the grader answers it
+    // with its own message (check-text.mjs `gradeText`, prefix-names.mjs),
+    // which an accept member would pre-empt by grading it Correct. A
+    // molecular compound's prefix name is its key, and is never reached here.
+    for (const member of members) {
+      if (member.label.startsWith('answer ')) continue;
+      const others = members.filter((other) => other !== member);
+      const otherAccept = others.filter((other) => !other.label.startsWith('answer ')).map((other) => other.raw).join('|');
+      if (!isPrefixName(member.raw, answerRaw, { accept: otherAccept })) continue;
+      err(index, `${where}: ${member.label} is a Greek-prefix name of the keyed metal compound — the grader already answers it "That name counts the atoms with Greek prefixes", so remove it (the item asks for the ionic name)`);
     }
     // The grader folds the regular plural BOTH ways (check-text.mjs
     // `foldedForms`: form + s / + es, and a regular-plural-shaped form minus

@@ -1557,6 +1557,25 @@ test('the section-final Practice block is enforced', () => {
     'a two-objective section still needs five exercises overall',
   );
 
+  // A long group may be divided by `#### ` sub-headings (Chemistry 1.6's
+  // 49-item group, November 14, 2026). A sub-heading is a label: it is not
+  // an objective group, it ends without punctuation, it labels at least two
+  // exercises, and it is not repeated.
+  const divided = (first, second = '#### Sums of three numbers') => `${head}\n\n${keyTerms}\n\n## Practice\n\n### Add whole numbers\n\n${first}\n\n${[fillin('a1'), fillin('a2')].join('\n\n')}\n\n${second}\n\n${[fillin('a3'), fillin('a4')].join('\n\n')}\n\n### Round whole numbers\n\n${[fillin('r1'), fillin('r2')].join('\n\n')}`;
+  const subErrors = (page) => lintHugo(page, sectionPath).errors.filter((e) => /sub-heading|deeper than/.test(e));
+  assert.deepEqual(subErrors(divided('#### Sums of two numbers')), [], 'sub-headings inside a group are not groups and pass');
+  assert(
+    !lintHugo(divided('#### Sums of two numbers'), sectionPath).errors.some((e) => e.includes('is not a section objective') || e.includes('it must be')),
+    'a sub-heading is never read as an objective group',
+  );
+  assert(subErrors(divided('#### Sums of two numbers.')).some((e) => e.includes('ends with punctuation')), 'a sub-heading with a period is an error');
+  assert(subErrors(divided('#### Sums of three numbers')).some((e) => e.includes('repeats another on this page')), 'a repeated sub-heading is an error');
+  assert(subErrors(divided('##### Sums of two numbers')).some((e) => e.includes('deeper than `#### `')), 'a fifth-level heading in Practice is an error');
+  assert(
+    subErrors(divided('#### Sums of two numbers', `#### One more\n\n${fillin('a5')}\n\n#### Sums of three numbers`)).some((e) => e.includes('`#### One more` labels 1 exercise(s)')),
+    'a sub-heading over a single exercise is an error',
+  );
+
   assert.equal(
     lintHugo(
       `${head}\n\n${keyTerms}\n\n## Practice\n\n### add whole numbers.\n\n${[fillin('a1'), fillin('a2'), fillin('a3')].join('\n\n')}\n\n### Round  whole numbers\n\n${[fillin('r1'), fillin('r2')].join('\n\n')}`,
@@ -3450,6 +3469,22 @@ test('the retired "Use the periodic table." sentence is refused; the source\'s o
     const kept = lintHugo(`{{< textin question="${source}" answer="x" hint="h" >}}`, 'content/test.md').errors;
     assert.ok(!kept.some((e) => e.includes('no longer added to an item')), kept.join('\n'));
   }
+});
+
+// A Greek-prefix name of a metal's compound is the other naming method of
+// Chemistry 2.7, answered by the grader with its own message: as an accept
+// member it would be graded Correct before the message is reached.
+test('textin: a Greek-prefix name of the keyed metal compound is not an accept member', () => {
+  const listed = lintHugo('{{< textin question="Name the following compound: TiCl₄." answer="titanium(IV) chloride" accept="titanium tetrachloride" hint="h" >}}', 'content/test.md').errors;
+  assert.ok(listed.some((e) => e.includes('accept member "titanium tetrachloride" is a Greek-prefix name of the keyed metal compound')), listed.join('\n'));
+  const fixed = lintHugo('{{< textin question="Name the following compound: MgCl₂." answer="magnesium chloride" accept="magnesium dichloride" hint="h" >}}', 'content/test.md').errors;
+  assert.ok(fixed.some((e) => e.includes('accept member "magnesium dichloride" is a Greek-prefix name')), fixed.join('\n'));
+  // A molecular compound's second prefix spelling, and the prefix name of
+  // another compound, are left alone.
+  const molecular = lintHugo('{{< textin question="Name the following compound: N₂O₄." answer="dinitrogen tetroxide" accept="dinitrogen tetraoxide" hint="h" >}}', 'content/test.md').errors;
+  assert.ok(!molecular.some((e) => e.includes('Greek-prefix name')), molecular.join('\n'));
+  const other = lintHugo('{{< textin question="Name the following compound: TiCl₄." answer="titanium(IV) chloride" accept="titanium trichloride" hint="h" >}}', 'content/test.md').errors;
+  assert.ok(!other.some((e) => e.includes('Greek-prefix name')), 'a wrong accept member is another rule\'s business');
 });
 
 // An out-of-date name is not a second name (Chemistry 2.7): the grader

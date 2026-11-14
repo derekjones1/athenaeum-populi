@@ -828,7 +828,9 @@ From the repository root:
    read those PNGs for every new exercise and figure; a full-page capture of a
    long section is unreadable and never shows a component's graded state.
 8. Run `git diff --check` and report the changed/untracked files plus the
-   source ledger and pages visually checked. Do not commit unless asked.
+   source ledger and pages visually checked. Commit as `AGENTS.md`
+   "Commits" says: a run's own files at its green close-out, nothing
+   outside a run unless asked.
 
 ## 5. Working rules
 

@@ -824,14 +824,18 @@ export function coverage(markdown, source, { listed = [], keyedOnly = false } = 
   const itemOwner = new Map();
   // A lettered part of a keyed-only book's exercise owns its item outright
   // (one component per part), except a `selfcheck`, which may carry several
-  // parts of one exercise whole as the life-sciences books' do.
+  // parts of one exercise whole as the life-sciences books' do, and a
+  // `sortbins`, whose labels ARE the parts of one exercise (2.5's ten
+  // elements, sorted by the stem's categories: keyed-units.mjs
+  // `sortedPartScore`) — every part it labels is rendered by it.
   const partOwned = new Set();
+  const SHARED_KINDS = ['selfcheck', 'sortbins'];
   for (const candidate of candidates) {
     if (unitTaken.has(candidate.unitIndex)) continue;
     const owner = itemOwner.get(candidate.itemIndex);
     if (owner !== undefined && owner !== units[candidate.unitIndex].group) continue;
     const exclusive = (candidate.how === 'part' || candidate.how === 'part-restated')
-      && items[candidate.itemIndex].type !== 'selfcheck';
+      && !SHARED_KINDS.includes(items[candidate.itemIndex].type);
     if (exclusive && partOwned.has(candidate.itemIndex)) continue;
     unitTaken.set(candidate.unitIndex, candidate);
     itemOwner.set(candidate.itemIndex, units[candidate.unitIndex].group);

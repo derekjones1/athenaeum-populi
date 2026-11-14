@@ -24,8 +24,12 @@ across the page", and "Defect classes the checkers find".
 
 ## 1. Enumerate
 
-Every `fillin`, `multiplechoice`, `textin`, `selfcheck` on the page, body
-and Practice, in order, with question, key, form, and hint. Then enumerate
+Every `fillin`, `multiplechoice`, `textin`, `selfcheck`, `sortbins` on the
+page, body and Practice, in order, with question, key, form, and hint — a
+`sortbins`' key is its label→bin map, and each label is one lettered part
+(playbook "Exercises" table, the sortbins row: ten or more short parts
+sorted into the stem's own categories; fewer stay one `multiplechoice`
+per part). Then enumerate
 the module's `<exercise>`s and worked `<example>`s from the raw CNXML and
 tick each off by hand: **every keyed exercise and every lettered part of it
 has a component; every Check Your Learning has its item or items; no unkeyed
@@ -194,6 +198,16 @@ stem shows it.
   examples is the playbook's wording for what moved (a result, or only the
   printed molar masses), directly after the first calculation that
   changed.
+- **Every worked example, mass in it or not, retraces from the numbers it
+  PRINTS** — and its method, copied onto its Check Your Learning with the
+  same rounding, reaches that item's key inside its allowance. Where a
+  later step reuses a value the example has already rounded (2.3 printed
+  1.99705x = 1.513; a learner who rounded the same way got 69.16 for a key
+  of 69.15), the later step prints the value with the digits carried, the
+  result unchanged, with the playbook's Source note ("A worked example
+  never reuses a value it has rounded"). Run it; an example whose ratio
+  is rounded to whole numbers (an empirical formula, a combustion
+  analysis) is left as printed.
 
 ## 5. Leaks, hints, footer
 

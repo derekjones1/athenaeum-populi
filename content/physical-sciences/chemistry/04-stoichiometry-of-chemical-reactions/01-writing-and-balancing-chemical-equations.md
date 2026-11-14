@@ -426,7 +426,7 @@ equations must be balanced to accurately reflect the law of conservation of matt
   question="From the balanced molecular equation, write the complete ionic and net ionic equations for the following: K₂C₂O₄(aq) + Ba(OH)₂(aq) ⟶ 2KOH(aq) + BaC₂O₄(s). Enter the complete ionic equation."
   answer="2K⁺(aq) + C₂O₄²⁻(aq) + Ba²⁺(aq) + 2OH⁻(aq) ⟶ 2K⁺(aq) + 2OH⁻(aq) + BaC₂O₄(s)"
   answerForm="equation"
-  hint="Write every dissolved compound the molecular equation marks (aq) as its dissociated ions, and keep each solid as its formula."
+  hint="Write every dissolved compound the molecular equation marks (aq) as its dissociated ions, and keep each solid, liquid, and gas as its formula."
 >}}
 
 {{< textin
@@ -440,7 +440,7 @@ equations must be balanced to accurately reflect the law of conservation of matt
   question="From the balanced molecular equation, write the complete ionic and net ionic equations for the following: Pb(NO₃)₂(aq) + H₂SO₄(aq) ⟶ PbSO₄(s) + 2HNO₃(aq). Enter the complete ionic equation."
   answer="Pb²⁺(aq) + 2NO₃⁻(aq) + 2H⁺(aq) + SO₄²⁻(aq) ⟶ PbSO₄(s) + 2H⁺(aq) + 2NO₃⁻(aq)"
   answerForm="equation"
-  hint="Write every dissolved compound the molecular equation marks (aq) as its dissociated ions, and keep each solid as its formula."
+  hint="Write every dissolved compound the molecular equation marks (aq) as its dissociated ions, and keep each solid, liquid, and gas as its formula."
 >}}
 
 {{< textin

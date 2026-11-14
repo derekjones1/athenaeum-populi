@@ -36,6 +36,7 @@
 
 import { checkChem } from './check-chem.mjs';
 import { systematicName } from './older-names.mjs';
+import { ionicName } from './prefix-names.mjs';
 
 const DIACRITICS = /[̀-ͯ]/g;
 const DASHES = /[‐‑‒–—−]/g;
@@ -158,12 +159,21 @@ export function matchesForm(normalized, form) {
  * of a different compound ("ferric chloride") is plainly incorrect. Only
  * this function reads it — `checkText`, which every gate calls, still
  * answers `incorrect`, so no gate can take an older name for a key.
+ *
+ * It has a second: a GREEK-PREFIX NAME of a keyed metal compound ("titanium
+ * tetrachloride" where the key is "titanium(IV) chloride"). The compound is
+ * right and the naming method is the one for two nonmetals, so the verdict
+ * says which method the item asks for (prefix-names.mjs); the same rule —
+ * `gradeText` only, never a gate — holds it.
  */
 export function gradeText(input, answer, { accept = '', form = '' } = {}) {
   if (form) return checkChem(input, answer, { accept, form });
   const status = checkText(input, answer, { accept });
   if (status === 'incorrect' && isOlderName(input, answer, { accept })) {
     return { status: 'form', message: OLDER_NAME_MESSAGE };
+  }
+  if (status === 'incorrect' && isPrefixName(input, answer, { accept })) {
+    return { status: 'form', message: PREFIX_NAME_MESSAGE };
   }
   return { status };
 }
@@ -175,6 +185,25 @@ export const OLDER_NAME_MESSAGE = 'That is an older name. Give the systematic na
 export function isOlderName(input, answer, { accept = '' } = {}) {
   const systematic = systematicName(normalizeText(input));
   return Boolean(systematic) && checkText(systematic, answer, { accept }) === 'correct';
+}
+
+// Says nothing of the answer — not the metal, not whether a numeral is
+// needed — and does not call the name wrong: IUPAC allows it. It says which
+// of Section 2.7's two naming methods the item asks for.
+export const PREFIX_NAME_MESSAGE = 'That name counts the atoms with Greek prefixes, as a compound of two nonmetals is named. Name a metal’s compound as an ionic compound, without prefixes.';
+
+/**
+ * Is the response a Greek-prefix name ("titanium tetrachloride") of the
+ * metal compound the item keys ("titanium(IV) chloride")? The name's counts
+ * must give the charge the key prints — or, for a key with no numeral, the
+ * one charge of a metal the book names without one — so the prefix name of
+ * another compound ("titanium trichloride") is not read as this one.
+ */
+export function isPrefixName(input, answer, { accept = '' } = {}) {
+  const ionic = ionicName(normalizeText(input));
+  if (!ionic) return false;
+  if (checkText(ionic.numeral, answer, { accept }) === 'correct') return true;
+  return ionic.fixed && checkText(ionic.bare, answer, { accept }) === 'correct';
 }
 
 /**

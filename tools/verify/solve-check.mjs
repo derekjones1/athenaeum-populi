@@ -351,7 +351,7 @@ export function compareAnswers(answersFile, root, ledger) {
     }
   }
   for (const [hash, exercise] of exercises) {
-    if (!answered.has(hash) && (exercise.path.startsWith(answersFile.scope || ' '))) {
+    if (!answered.has(hash) && (exercise.path.startsWith(answersFile.scope || '\0'))) {
       report.unanswered.push(`${exercise.path}:${exercise.line}`);
     }
   }

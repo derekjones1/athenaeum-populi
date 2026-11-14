@@ -1,6 +1,7 @@
 # Re-reviewing or editing a finished page
 
-Every book is complete and has been read to the standard below (the
+Every finished book has been read to the standard below — and so has
+every finished chapter of a book still being written (Chemistry 2e) — (the
 campaign that did it, row by row with costs and errata, is archived at
 `docs/archive/re-review.md`; Anatomy and Physiology met the standard as it
 was authored). Any later change to a finished
@@ -58,6 +59,9 @@ its border rules: `AGENTS.md` "Which model runs which agent".
 | Life-sciences fixer | `brief-life-sciences.md` |
 | Life-sciences knowledge-check fixer | `brief-life-sciences.md` + `brief-knowledge-check.md` |
 | Life-sciences blind solver (fresh Fable) | `docs/briefs/anatomy-physiology/solve.md` |
+| Chemistry fixer | `docs/briefs/chemistry/author.md` and `checker.md` for the rules, with a task brief the parent writes (a fix pass has no standing fixer brief; the November 14, 2026 pass is the model, `docs/history/chemistry.md`) |
+| Chemistry consistency reader (read-only, Opus) | `docs/briefs/chemistry/pass-reader.md` |
+| Chemistry blind solver (fresh Fable) | `docs/briefs/chemistry/solve.md` |
 
 Every brief forbids every git command, read-only ones included (one shared
 worktree), and has its agent append its report as it goes.
@@ -161,10 +165,12 @@ worktree), and has its agent append its report as it goes.
    layer refuses the flag, Derek runs it.
 7. **Close.** Record the run (pages, fixes by class, errata numbers,
    commit, cost, what the next run should know) in `docs/history/<subject>.md`;
-   commit when asked ("Re-review <Book> chapter N to the A&P standard").
+   commit the run's own files at the green close-out (`AGENTS.md`
+   "Commits"; "Re-review <Book> chapter N to the A&P standard").
    A new defect class becomes a lint, test, or playbook rule; a new grader
    behaviour goes in the `docs/subjects/math.md` token table, a new item
-   ruling in its "Rulings on item shapes".
+   ruling in its "Rulings on item shapes" — for Chemistry, in the verdict
+   tables and the "Exercises" table of `docs/subjects/chemistry.md`.
 
 ## Budget (Opus tokens unless noted, measured on the campaign)
 

@@ -323,4 +323,5 @@ before the solve.
 4. The playbook's "Knowledge checks" section records the landed unit; the
    narrative goes to `docs/history/anatomy-physiology.md`; any new rule to
    the KC playbook or this file.
-5. Commit only when asked, the check and the weight shift together.
+5. Commit the run's own files at a green close-out (`AGENTS.md`
+   "Commits"), the check and the weight shift together.

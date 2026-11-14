@@ -171,7 +171,13 @@ these differences:
    the periodic table." **Every other appendix still needs its link on
    each item that needs it**, since each item is answered on its own and
    only the periodic table is at hand. A page that shows the table itself (2.5 prints the
-   periodic table) needs no link to it.
+   periodic table) links the words all the same wherever a stem says
+   them — "Using the periodic table, classify…", "Use the periodic table
+   to give the name…" — since the link opens the table beside the item and
+   the figure is screens away *(the November 13 sweep linked 2.5's "Using
+   the periodic table" stems; its eight "Use the periodic table" stems
+   followed on November 14, and until then this paragraph still said such
+   a page "needs no link")*.
    **A link to a table appendix opens the table over the page**
    *(Derek, November 11, 2026)*: Appendices C–M declare `lookup: true`,
    and on a section page a body link to one of them opens it in a dialog
@@ -185,6 +191,30 @@ these differences:
    source linking nothing there".
    A link is not a word of the stem: the source gates read the stem
    without it (`unlinked`, `tools/lib/keyed-units.mjs`; a test holds it).
+10. **What the page adds to the source's body** *(November 14, 2026)*.
+    The body is the source's text, and three things only are added to it,
+    each named in the footer:
+    - a `*Source note:*` paragraph ("Source defects and Source notes");
+    - **a sentence the section's own exercises need and nothing on the
+      page gives**: a method no example shows, or a datum no table prints.
+      1.6 keys 161 in.³ to liters and never raises a conversion factor to
+      a power, and its table lacks the quart–ounce and gallon–quart
+      relations two exercises need; the page adds one sentence on a unit
+      raised to a power (illustrated with units no exercise uses, so it
+      works no item) and one that points to Appendix C, linked. One or two
+      plain sentences, in the body where the method belongs, never in a
+      hint ("a hint is not where a needed number lives") and never a
+      sentence that works an item's own numbers;
+    - **a worked example of the book's own, brought forward from the
+      section that prints it**, where this section's exercises ask for a
+      method its own examples never work and a later section's example
+      does: 4.2 lists the basic-solution steps and works none, its Check
+      Your Learning and four exercises ask for one, and Section 17.1's
+      example "Balancing Equations for Redox Reactions in Basic Solutions"
+      is placed after 4.2's acid example, its equations the source's, its
+      step text 4.2's, with a Source note saying where it comes from. The
+      later section keeps its example when it is authored. Never an
+      example the author writes: its answer would be author-derived.
 
 ## Exercises
 
@@ -210,13 +240,14 @@ The component follows the SHAPE of the source's keyed answer:
 | an SI prefix's factor ("× 10⁻²") | `fillin` keyed with the bare power of ten, `answer="10^{-2}"`, under `sig-figs:1 last-digit:0` — a bare power-of-ten key is an exact factor, so `0.010` and `1.0×10⁻²` are right too ("Measured quantities") |
 | the name of a unit that is one word or a counted word ("meters", "kilograms", "square meters", "cubic meters") or of a prefix ("centi") | `textin`; the accept list holds the symbol without operators (`m`, `kg`, `m3`) and every crossing the plural fold cannot reach, which folds the LAST word only: `meters squared\|meter squared\|metres squared\|metre squared` |
 | a unit that is a quotient or a product ("meters/second", "kilograms/cubic meter"), or one whose degree sign is the point ("kelvin", never "°K") | `multiplechoice` whose distractors are the confusions the part tests — the product, the inverse, a wrong power, "degrees kelvin" — and never another unit the body allows for the quantity. The text grader reads `/`, `·`, `×`, `*`, and `°` as spaces, so as a `textin` the product passes for the quotient: a key or accept member carrying one is a lint error in this book |
-| the name of a compound or an ion ("chromium(III) oxide", "the selenide ion") | `textin`. Capitals, the spaces around a parenthesis, and the parentheses themselves are free; the Roman numeral and every word are not. The grader reads sulph- as sulf-, aluminium as aluminum, and caesium as cesium, so those are never `accept` members. A second name the module itself prints for the compound is one — unless the STEM prints it: 2.7 asks for the IUPAC name of "ferric nitrate", and there the old name retyped must be wrong. **A name the module prints as out of date is not a second name** *(Section 2.7)*: "ferrous chloride", which the module says "was known as" and calls nomenclature "largely abandoned", is not an `accept` member of the item that asks FeCl₂'s name, and neither is a name another exercise's stem prints for the compound as the one to be replaced ("titanium tetrachloride"). The grader does not call such a name wrong: a classical -ous/-ic name of the KEYED compound is answered "That is an older name. Give the systematic name." in the tone of a right answer in the wrong form, and the field stays open (`assets/js/lib/text/older-names.mjs`, a table of nine metals; `gradeText` only — every gate still reads it as incorrect; *November 11, 2026, Derek: until then it was refused as plainly wrong*). The older name of a different compound ("ferric chloride" for FeCl₂) is incorrect, and so is a stem's Greek-prefix name retyped. The lint refuses an older name as an `accept` member. The item's hint still says what form the name takes — the charge as a Roman numeral in parentheses — since the message does not. The source gate holds a name key to the WHOLE name the source prints: "cobalt(II) chloride" is refused where the source answers "cobalt(II) chloride hexahydrate". **An ion's name is keyed bare** (`selenide`) with the two-word form in `accept` (`selenide ion`): the grader drops "the" and does not drop "ion", so keyed "selenide ion" it marks the bare name wrong |
+| the name of a compound or an ion ("chromium(III) oxide", "the selenide ion") | `textin`. Capitals, the spaces around a parenthesis, and the parentheses themselves are free; the Roman numeral and every word are not. The grader reads sulph- as sulf-, aluminium as aluminum, and caesium as cesium, so those are never `accept` members. A second name the module itself prints for the compound is one — unless the STEM prints it: 2.7 asks for the IUPAC name of "ferric nitrate", and there the old name retyped must be wrong. **A name the module prints as out of date is not a second name** *(Section 2.7)*: "ferrous chloride", which the module says "was known as" and calls nomenclature "largely abandoned", is not an `accept` member of the item that asks FeCl₂'s name, and neither is a name another exercise's stem prints for the compound as the one to be replaced ("titanium tetrachloride"). The grader does not call such a name wrong: a classical -ous/-ic name of the KEYED compound is answered "That is an older name. Give the systematic name." in the tone of a right answer in the wrong form, and the field stays open (`assets/js/lib/text/older-names.mjs`, a table of nine metals; `gradeText` only — every gate still reads it as incorrect; *November 11, 2026, Derek: until then it was refused as plainly wrong*). The older name of a different compound ("ferric chloride" for FeCl₂) is incorrect. **A Greek-prefix name of the KEYED metal compound gets a sibling message** *(November 14, 2026; until then a bare "Not quite")*: "titanium tetrachloride" against `titanium(IV) chloride`, "magnesium dichloride" against `magnesium chloride`, a stem's own prefix name retyped included, is answered "That name counts the atoms with Greek prefixes, as a compound of two nonmetals is named. Name a metal’s compound as an ionic compound, without prefixes." — `form`, the field open, never correct (`assets/js/lib/text/prefix-names.mjs`; the name's counts must give the charge the key prints, so "titanium trichloride" stays plainly incorrect; `gradeText` only, as for the older names). The message does not call the name wrong — IUPAC allows it — and names neither the metal nor whether a numeral is needed. The lint refuses an older name, and a Greek-prefix name of the keyed metal compound, as an `accept` member. The item's hint still says what form the name takes — the charge as a Roman numeral in parentheses — since the message does not. The source gate holds a name key to the WHOLE name the source prints: "cobalt(II) chloride" is refused where the source answers "cobalt(II) chloride hexahydrate". **An ion's name is keyed bare** (`selenide`) with the two-word form in `accept` (`selenide ion`): the grader drops "the" and does not drop "ion", so keyed "selenide ion" it marks the bare name wrong |
 | a formula or an ion's symbol ("Mn₃(PO₄)₂", "FeCl₃·2H₂O", "Se²⁻", "¹⁴C") | `textin` with `answerForm="formula"` ("Formulas and equations") — never a plain `textin`, which reads `CO` as `Co` (lint) |
 | a balanced equation, a half-reaction, a net ionic equation | `textin` with `answerForm="equation"` ("Formulas and equations") |
 | several of these at once ("calcium, Ca"; "ionic, Ba²⁺, O²⁻"; "molecular C₂H₂, empirical CH"; an equation and a mass) | one item per piece, each stem saying which ("Enter the molecular formula."): the classification as a `multiplechoice` first, then a formula `textin` per ion or per formula. **When only some parts have the further pieces** ("(a) covalent; (b) ionic, Ba²⁺, O²⁻" — the source keys nothing more for a covalent part, so there is nothing more to grade there), each part's further items go in a `followup` directly after its `multiplechoice`: in the open they stand under the ionic parts alone and answer the classification by being there. `verify:source-keys` refuses the shape unwrapped (`conditionalUnwrapped`) |
 | counts of particles ("47 protons, 47 electrons, 62 neutrons") | one `whole-number` `fillin` per number, each stem closing with a sentence that names the one it asks for in the answer's own word ("Enter the number of neutrons." — the source gate reads that sentence and refuses a swapped pair), and a name or formula `textin` for the element where the key prints one. A count the stem itself prints (the protons of an atom given by its atomic number) is right by the definition the item tests: it stands, and the parent lists it in `verify:replay`'s allowlist ("Numeric keys") |
 | a nuclide symbol with its mass number, with or without the atomic number ("¹³³Cs⁺", "²³₁₁Na") | ONE formula `textin`, keyed in print with every number the source prints (the gate refuses `²³Na` where the source prints ²³₁₁Na). A key that prints both numbers asks for both: `^23_11Na` is right, `23Na` is the right nuclide short of its atomic number (form feedback), a wrong atomic number is wrong. A key with the mass number alone leaves the atomic number free, but never wrong. The lint refuses a key whose atomic number is not its element's. The stem ends "Type the mass number, then the atomic number after an underscore, before the symbol: ^14_6C." (or, for a mass number alone, "Type the mass number before the symbol, as in 14C.") — with another nuclide where carbon-14 is the answer. Never a fill-in for a number the stem itself gives |
 | a list sorted into the stem's categories by one answer sentence, the stem unlettered ("Ionic: KCl, MgCl₂; Covalent: NCl₃, ICl, PCl₅, CCl₄") | one `multiplechoice` per member, the lead-in restated for one ("…predict whether the following chloride is ionic or covalent: KCl."), the options the stem's categories in its order. The source gate finds the category whose list holds the member the stem prints |
+| one of the stem's own categories for each of TEN OR MORE short lettered parts — names or formulas, each sorted into the categories the lead-in lists ("(a) metal, inner transition metal; (b) nonmetal, representative element; …" for ten elements) | one `sortbins` per classification the stem asks, in the stem's order (2.5: metal or nonmetal, then the further classification): the bins the stem's categories in its order, written as the stem writes them; the labels the parts in source order; the question the lead-in VERBATIM — addressed to the parts together, its colon a period — then one sentence that says which sort ("Sort the elements into metals and nonmetals."; "Sort the elements by the further classification."). Fewer than ten parts, or parts some of which carry further items in a `followup` (2.6's ionic or covalent compounds), stay one `multiplechoice` per part. `verify:source-keys` reads the sortbins as the exercise whose parts its labels are (`judgeKeyedSortbins`): every label a part, every part a label, each label in the one bin its part's answer segment names — by either name of a bin, then through the glossary's alias pairs — and a wrong bin, a missing label, or an extra one is `key-differs`; `verify:source-coverage` counts each labelled part rendered; the blind solve maps every label to a bin. The footer calls them "sort-into-bins items" *(November 14, 2026)* |
 | an answer that NAMES parts instead of answering each ("Only (b)"; "(a), (b), (c), (d), and (e)") | one `multiplechoice` per part with the options `yes` and `no`, the lead-in turned into a question about one part ("Will the following increase the percent of ammonia…? Addition of HCl"; "Does the following nucleus lie within the band of stability shown in the figure above? ²¹¹Pb"). Never one item whose options are the parts: "only" is part of the answer, and five of eight cannot be one choice |
 | an answer by role for a reaction the stem prints ("Oxidized: Sn²⁺; reduced: H₂O₂; oxidizing agent: H₂O₂; reducing agent: Sn²⁺") | ONE `multiplechoice` per reaction whose options are the reaction's reactants, the stem closing with the one role it asks in the answer's own words ("Which reactant is the oxidizing agent?"). One item, not one per role: with two reactants the second role is the first one's remainder. Not a formula `textin`: the stem prints both candidates. **Where the source prints a role's answer as an ion inside a reactant** ("P³⁻ is oxidized, O₂ is reduced" for K₃P + O₂), the item asks the role whose answer the source prints as a reactant's own formula ("Which reactant is reduced?"), so the key is the source's word *(chapter 4)* |
 | a charge ("4+") | `fillin` with `whole-number`, keyed as a signed number (`4`), the stem ending "Enter the charge as a signed number, the sign first, as +1 or −1." — the field reads a typed `4+` as unfinished arithmetic, and "with its sign" is a lint error ("Stems"). Proven through the gate for a cation (2.3's platinum ion); the source prints an anion's charge sign-last ("2−"), which the gate reads as 2, so the first negative one is probed before its wave |
@@ -233,7 +264,9 @@ The component follows the SHAPE of the source's keyed answer:
 **Multiple choice stays open** *(Derek, November 10, 2026)*. Where a keyed
 answer is a choice among things the stem itself prints — its categories,
 its lettered parts, the reactants of its reaction, yes or no to its
-question — the item is a `multiplechoice`, auto-graded, and never falls
+question — the item is a `multiplechoice` (or, for ten or more short
+parts sorted into the stem's categories, one `sortbins` per
+classification: the row above), auto-graded, and never falls
 back to a `selfcheck` because a gate cannot yet read the form: the gate is
 taught the form, with a test (`run.md` §1 step 6a). What does not change is
 where the options come from: the stem's own set, in its order, the key the
@@ -390,7 +423,8 @@ selfchecks, source defects, the footer — and each is stated once.
   pair is a prose key, and the checker's to tick. **An option the stem
   prints with its second name in parentheses** — 2.5's "main-group
   (representative) element", answered "representative element" — is
-  written as the stem writes it and is named by either name.
+  written as the stem writes it and is named by either name; so is a
+  `sortbins` bin.
 - **A count is asked before the quantity it counts.** The grader's own
   feedback names the count ("now round it to 2 significant figures"), so a
   "how many significant figures can you justify" item goes first.
@@ -404,10 +438,12 @@ selfchecks, source defects, the footer — and each is stated once.
   element’s name." and "Enter the element’s symbol." for an element;
   "Enter the ion’s symbol.", "Enter the ion’s name.", "Enter the symbol of
   the cation." for an ion *(chapter 2; 2.3's earlier "Name the element."
-  stands)*. Where one part is carried as two multiple choices under one
-  stem (2.5: metal or nonmetal, then the further classification), each
-  closes with a sentence that says which — "Select metal or nonmetal.",
-  "Select the further classification." A classification followed by
+  stands)*. Where one exercise is carried as two sorts under one lead-in
+  (2.5: metal or nonmetal, then the further classification — two
+  `sortbins` since November 14, 2026, twenty multiple choices before),
+  each closes with a sentence that says which — "Sort the elements into
+  metals and nonmetals.", "Sort the elements by the further
+  classification." A classification followed by
   formula items (2.6) needs none: its options say which.
 - **A keyed exercise whose answer comes from a linked simulation** is a
   `selfcheck` with the source's answer as the model answer; the link stays
@@ -525,11 +561,38 @@ selfchecks, source defects, the footer — and each is stated once.
     they differ in their last digits from the ones the source prints; the
     examples’ results are the same." The footer says so in one clause.
     Data an example or a stem GIVES is never changed.
+  - **A worked example never reuses a value it has rounded** *(November
+    14, 2026)*. Section 3.3 tells the learner not to round an
+    intermediate result, and the examples are what a learner copies: 2.3's
+    chlorine example printed 1.99705x = 1.513, and a learner who rounded
+    the same way got 69.16 for the copper Check Your Learning keyed 69.15.
+    A value that answers a question the example asks is printed at its
+    figures (1.31 × 10²⁰ molecules); where a LATER step uses it, that step
+    prints it with the digits carried — enough that retracing the printed
+    line gives the printed result with no tie at the last figure
+    (1.31499 × 10²⁰ × 7 = 9.20 × 10²⁰; 1.9926 amu + 8.8184 amu = 10.81
+    amu). The result does not change; one Source note directly after the
+    first such calculation on the page — "*Source note:* the source rounds
+    the intermediate values of this section’s … calculations before it adds
+    or divides them. Here each intermediate value is printed with the
+    digits that are carried, and only the result is rounded; the results
+    are the same." — a footer clause, and one erratum per module. Done on
+    2.3, 3.1, 4.4, and 4.5; the checker retraces every example from its
+    PRINTED numbers and applies its method to its Check Your Learning
+    (`checker.md`).
   - **A molar mass a stem states for a named compound** prints the table's
     value at the stem's own count of figures, with an item-level Source
     note, when the table gives another (3.4: ethanol 46.07 where the
-    source prints 46.06). A stated value under an erratum ruling stays
-    (3.3: cobalt chloride's 128.9, whose key follows from it).
+    source prints 46.06). **A stated value that is simply wrong is
+    replaced the same way, and the key is then what the printed value
+    gives** *(November 14, 2026)*: 3.3's Check Your Learning gives CoCl₂
+    128.9 g/mol, the table gives 129.83, the stem prints 129.8, and the key
+    moves four units with it — a correction, so a `DISCLOSED_DEVIATIONS`
+    key entry, the item's "the answer graded …" Source note, and the
+    erratum. Until then the source's stem and key stood, and a learner who
+    took the molar mass from the periodic table was marked wrong with
+    nothing said: a stem never states a datum the book's own table
+    contradicts.
   - **The author's rework is not the check.** A checker who has not read
     the author's notes recomputes every mass-dependent number on the page,
     moved or not, and the blind solver answers every mass-dependent item
@@ -656,6 +719,23 @@ selfchecks, source defects, the footer — and each is stated once.
   a subsection is "touched" is a reading, not something a gate can count:
   the author names the subsection in the ledger note, and the checker
   reads the claim.
+- **A long group is divided by `####` sub-headings where its run changes
+  kind** *(November 14, 2026)*. 1.6 asked 49 items under one objective,
+  and 4.2 sixteen half-reaction balances under "Compute the oxidation
+  states for elements in compounds". A sub-heading is a label for the run
+  below it — `#### Temperature conversions`, `#### Balancing
+  half-reactions` — in the page's own words for the thing (a body heading,
+  an example's title, the objective's phrase), never the method and never
+  an answer; it has no closing period, labels at least two items, and is
+  not repeated on the page (lint). The `###` groups are still the
+  objectives, one each and in order, and the items keep their source
+  order: a sub-heading goes where the source's run changes kind, items are
+  not moved to fit one, and a run that returns to an earlier kind is
+  labelled as what it is ("More unit conversions"). The group's opening
+  items may stand above the first sub-heading. No count forces one — a
+  run of thirty items of one kind has no seam to label — so whether a
+  group needs dividing is the author's reading and the checker's tick: any
+  group of more than about twenty items is read for seams.
 - **Order inside a group:** the source's keyed items first, in source
   order, then the added items — except that an added item goes above a
   keyed `selfcheck` whose model answer prints its key (1.3: the "directly
@@ -729,9 +809,17 @@ after the rule was written, so the line is drawn by pairs:
   no spectator ion had its own wording). Write one sentence true of all:
   "Compare each species on the two sides of the complete ionic equation,
   and remove any that appear unchanged on both." *(chapter 4)*
-- **A hint that sends the learner to read small print in a figure** (a
-  name or an atomic mass in a box of the periodic table) also names the
-  appendix table that lists it, in plain words.
+- **A hint that sends the learner to read small print in a RASTER figure**
+  (a name or a value in a photograph or a scanned chart) also names the
+  table that lists it, in plain words. **The periodic table is not such a
+  figure** *(November 14, 2026)*: it is the book's own drawing, opened at
+  full size from the "Periodic table" control on every page, with the
+  table of the elements under it in Appendix A — so a hint says "the
+  periodic table" and nothing more ("…with the atomic mass from the
+  periodic table", the table above). The rule was written for 2.5 when
+  the periodic table was the source's image; it was never swept to the 46
+  hints of 2.3, 2.6, 3.1, 3.3, and 4.3 that say "the periodic table"
+  alone, and those are right as they stand.
 - **The lint sees two shapes of this rule and no more** — a hint that opens
   with an arithmetic imperative (multiply, divide, add, subtract, cube,
   square), and a verdict on the number's digits — on every auto-graded
@@ -838,7 +926,8 @@ after the rule was written, so the line is drawn by pairs:
   `followup`'s clause says the further item appears once the first is
   answered correctly.**
 - **One phrase per kind of item**: "multiple-choice items", "fill-ins",
-  "text-recall items", "formula text-recall items", "self-checks".
+  "text-recall items", "formula text-recall items", "sort-into-bins
+  items", "self-checks".
 - **Which objective a keyed exercise is placed under is the page's
   structure, not a departure**, and takes no clause.
 - It names every departure from the source in one clause each: restated
@@ -944,7 +1033,7 @@ mhchem extension, so nothing is loaded:
   too, but a figure's labels are the source's raster lettering, which may
   draw a capital I and a lowercase l alike.
 - **A cancelled unit is `\cancel{\text{…}}`**:
-  `$$4.7\ \cancel{\text{g K}} \times \frac{1\ \text{mol K}}{39.10\ \cancel{\text{g K}}} = 0.12\ \text{mol K}$$`.
+  `$$4.7\ \cancel{\text{g K}} \times \frac{1\ \text{mol K}}{39.098\ \cancel{\text{g K}}} = 0.12\ \text{mol K}$$`.
   The book prints a horizontal strike, which is hard to read through two
   small letters; the diagonal one means the same and is the usual mark. The
   footer of a page that uses it says "unit cancellation set with a diagonal
@@ -995,7 +1084,9 @@ charge, hydrate, coefficients — where a plain `textin` reads words:
 
 What the learner types, and sees. The field carries its own typing guide
 ("Type subscripts as plain numbers and a charge after ^: Ca3(PO4)2,
-SO4^2-."), so no stem spends a sentence on it, and it shows what it has
+SO4^2-."; an equation field's adds the arrow, an example with charges and
+states, and "The state symbols (s), (l), (g), and (aq) are optional."), so
+no stem spends a sentence on it, and it shows what it has
 read in the book's print as the learner types ("Read as: SO₄²⁻"). The
 guide's examples are no item's key (a test holds it: the first example,
 Mn3(PO4)2, was the key of a Check Your Learning item of 2.7). **A hydrate
@@ -1014,6 +1105,7 @@ hydrate's formula closes "Type the dot as a period, as in Na2CO3.10H2O."
 | `Na`, `Cs+` — the right element, no mass number | `²³₁₁Na`, `¹³³Cs⁺` | incorrect | "A symbol for one isotope carries its mass number: type it before the symbol, as in 14C." |
 | `FeCl3.2H2O`, `FeCl3*2H2O`, `FeCl₃·2H₂O` | `FeCl₃·2H₂O` | correct | |
 | `2Na + 2H2O -> 2NaOH + H2`, the species in any order within a side, with or without state symbols, `=` or `→` for the arrow | the equation above | correct | |
+| `2Na(s) + 2H2O(g) -> 2NaOH(aq) + H2(g)` — a state typed that is not the key's | the equation above | form | "The substances and coefficients are right. A state symbol you typed differs from the answer’s: check each one, or leave them out — state symbols are optional." *(November 14, 2026)* |
 | `4Na + 4H2O -> 4NaOH + 2H2` | | form | "That is balanced — now write it with the smallest whole-number coefficients." |
 | `Na + H2O -> NaOH + H2` | | incorrect | "Those are the right substances, but the equation is not balanced…" |
 | `2Na + 2H2O <=> 2NaOH + H2`, or `⇌` typed | the equation above | form | "Those are the right substances and coefficients — now write the equation with a single arrow (->). The double arrow is for a reaction that reaches equilibrium." The arrow is part of the equation: a `⇌` key answered with `->` or `=` is told "…now write the equation with the equilibrium arrow (<=>): this reaction does not go to completion." *(November 12, 2026; until then `⇌` was correct against every `⟶` key)* |
@@ -1040,7 +1132,17 @@ Rules for the key and the stem:
   digit for the letter), and in chapter 19 "3Cl⁺" for a chloride, "MnO⁴⁻"
   for permanganate, and an iron(III) ion printed without its charge.
 - **An equation key keeps the source's state symbols**; a response may
-  leave them out, and a state the learner types is compared.
+  leave them out, and a state the learner types is compared. **The field
+  says so twice** *(November 14, 2026)*: the equation guide under it ends
+  "The state symbols (s), (l), (g), and (aq) are optional.", and a response
+  right in everything but a state it typed is `form` with "The substances
+  and coefficients are right. A state symbol you typed differs from the
+  answer’s: check each one, or leave them out — state symbols are
+  optional." (it names no substance). Until then the guide's example showed
+  states and said nothing, and the message was "now check the state
+  symbols, or leave them out": a learner who typed Ca(OH)₂(s) from 4.2's
+  own solubility table, against the source's (aq), read a wrong equation.
+  No stem adds a sentence about states.
 - **An equation key keeps the hydrogen ion the source prints, H⁺ or H₃O⁺**
   *(chapter 4)*: the module balances with H⁺ and its key prints either, so
   the grader takes both notations for one answer, and the key is not
@@ -1087,17 +1189,18 @@ key's own precision:
 
 ```
 {{</* fillin
-  question="Calculate the molarity of 6.52 g of CoCl₂ (128.9 g/mol) dissolved in an aqueous solution with a total volume of 75.0 mL. Enter the molarity in mol/L."
-  answer="0.674"
+  question="Calculate the molarity of 6.52 g of CoCl₂ (129.8 g/mol) dissolved in an aqueous solution with a total volume of 75.0 mL. Enter the molarity in mol/L."
+  answer="0.670"
   answerForm="sig-figs:3 last-digit:0"
-  answerDisplay="$0.674\ M$"
+  answerDisplay="$0.670\ M$"
   hint="Convert the mass to moles and the volume to liters first."
 */>}}
 ```
 
-(This stem prints the molar mass itself, so its allowance is `0`; the
-table below shows the same key as it would be graded had the molar mass
-been fetched from the periodic table, `last-digit:1`.)
+(This stem prints the molar mass itself, so its allowance is `0`. The
+tables below show how a three-figure key is graded when the molar mass is
+fetched from the periodic table, `last-digit:1`; their key, `0.674`, is an
+illustration and no item's.)
 
 - **`sig-figs:<n>`** (1–9): the answer is written to n significant figures.
 - **`last-digit:<k>`** (0–2): the response, rounded to n figures, may differ
@@ -1302,7 +1405,7 @@ else except what a rule below adds.
   CNXML in the house notation; the author adds the frontmatter, headers the
   source lacks, figures, and the footer.
 - **`npm run verify:source-tables` holds every cell of the finished page to
-  the CNXML** (2,704 cells; part of `npm test`): each source row is a page
+  the CNXML** (3,418 cells, the tool's `--min-cells` floor in `package.json`; part of `npm test`): each source row is a page
   row, in order, cell for cell, with the typesetting taken away, and a text
   cell's sub- and superscripts told apart. A cell the page writes
   differently on purpose is listed in the tool's `TABLE_NOTES` with its
@@ -1416,4 +1519,40 @@ What chapter 1 settled, and what the scan of the book counted, are in
   time, since no EXERCISE links a table appendix before chapter 5 (4.2
   links Appendix H once, in a Source note). That chapter's run replaces
   the added link with its first exercise that links Appendix G (`tests/browser-check.spec.mjs`, "a table appendix
-  opens over the page").
+  opens over the page");
+- **what chapter 5's answers ask of the grader and the gates, before its
+  wave** (probed against the live code November 14, 2026; the table with
+  counts is in `docs/history/chemistry.md`, "Before chapter 5"). Each is
+  taught with a test at the run's gate probe (`run.md` §1 step 6a), never
+  met by downgrading an item:
+  - a wrong sign (`802` for a key of `-802`) and a factor of a thousand
+    (an answer in J where kJ is asked, `1.31` for 1310) are a bare "Not
+    quite": two messages, no key or allowance changed;
+  - a formation equation with a fractional coefficient: a key written
+    `½O₂` reads as no equation (`1/2O₂` grades), and a doubled answer is
+    told "smallest whole-number coefficients", which is wrong advice for
+    an equation that forms one mole — `docs/briefs/chemistry/solve.md`
+    tells the solver the same;
+  - one part answered in two units ("1310 J; 313 cal"): the keys gate
+    confirms either number under either unit word;
+  - a thermochemical equation with its ΔH is not typeable as one answer;
+    split into an equation and a fill-in, the keys gate refuses the
+    equation alone;
+  - 5.3's Exercise 29 and a Check Your Learning each print part of the
+    other's key, and no gate reads one section item against another;
+  - **how a symbol with its value is written in a stem**: "Stems" allows
+    `($d$ = 0.7134 g/mL)`, "Notation" says an expression is never half
+    math and half prose, and the Notation table sets the unit inside math
+    (`\Delta H = -92.2\ \text{kJ}`). Eleven keyed exercises of 5.3 print
+    a ΔH in the stem: the run facts rule one form before the wave;
+- the kit reader's recommendations of November 14 that are not yet built:
+  a `verify-section` mode that runs both source gates and the leak reading
+  on one page; the fact half of the run facts and the PDF range scripted;
+  a fill-in judge for `ledger:provenance` (until then a Chemistry
+  fill-in's note is carried by hand — the tool labels it "author-built");
+  `run.md` §0 reordered by step;
+- two messages the November 14 readers proposed and nobody has ruled: a
+  name typed with its Roman numeral missing or as an ordinary number
+  ("iron chloride", "iron(2) chloride" against `iron(II) chloride`: a bare
+  "Not quite" on eleven items of 2.7), and a molecular formula typed where
+  the empirical formula is asked (C₂H₂ for CH on 2.4).

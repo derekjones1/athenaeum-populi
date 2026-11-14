@@ -469,6 +469,64 @@ A final check of atom and charge balance confirms the equation is balanced.
 | H | 14 | 14 |
 | charge | 24+ | 24+ |
 
+**Example.** *Balancing Equations for Redox Reactions in Basic Solutions.* Write the balanced equation representing reaction between aqueous permanganate ion, MnO₄⁻, and solid chromium(III) hydroxide, Cr(OH)₃, to yield solid manganese(IV) oxide, MnO₂, and aqueous chromate ion, CrO₄²⁻. The reaction takes place in a basic solution.
+
+**Solution.** Following the steps of the half-reaction method:
+
+1. *Write the two half-reactions representing the redox process.*
+
+   $$\begin{aligned} &\text{oxidation:} & \ce{Cr(OH)3(s) &-> CrO4^2-(aq)} \\ &\text{reduction:} & \ce{MnO4-(aq) &-> MnO2(s)} \end{aligned}$$
+
+2. *Balance all elements except oxygen and hydrogen.* Each half-reaction has one chromium or one manganese atom on each side, so both are already balanced.
+
+   $$\begin{aligned} &\text{oxidation:} & \ce{Cr(OH)3(s) &-> CrO4^2-(aq)} \\ &\text{reduction:} & \ce{MnO4-(aq) &-> MnO2(s)} \end{aligned}$$
+
+3. *Balance oxygen atoms by adding H₂O molecules.*
+
+   $$\begin{aligned} &\text{oxidation:} & \ce{H2O(l) + Cr(OH)3(s) &-> CrO4^2-(aq)} \\ &\text{reduction:} & \ce{MnO4-(aq) &-> MnO2(s) + 2H2O(l)} \end{aligned}$$
+
+4. *Balance hydrogen atoms by adding H⁺ ions.*
+
+   $$\begin{aligned} &\text{oxidation:} & \ce{H2O(l) + Cr(OH)3(s) &-> CrO4^2-(aq) + 5H+(aq)} \\ &\text{reduction:} & \ce{4H+(aq) + MnO4-(aq) &-> MnO2(s) + 2H2O(l)} \end{aligned}$$
+
+5. *Balance charge by adding electrons.*
+
+   $$\begin{aligned} &\text{oxidation:} & \ce{H2O(l) + Cr(OH)3(s) &-> CrO4^2-(aq) + 5H+(aq)} \\ & & &\quad \ce{{} + 3e-} \\[6pt] &\text{reduction:} & \ce{3e- + 4H+(aq) + MnO4-(aq) &-> MnO2(s) + 2H2O(l)} \end{aligned}$$
+
+6. *If necessary, multiply each half-reaction’s coefficients by the smallest possible integers to yield equal numbers of electrons in each.* This step is not necessary since the number of electrons is already in balance.
+
+7. *Add the balanced half-reactions together and simplify by removing species that appear on both sides of the equation.*
+
+   $$\begin{aligned} &\ce{H2O(l) + Cr(OH)3(s) + 3e- + 4H+(aq) + MnO4-(aq)} \\ &\quad \ce{-> CrO4^2-(aq) + 5H+(aq) + 3e- + MnO2(s) + 2H2O(l)} \end{aligned}$$
+
+   One H₂O, three electrons, and four H⁺ ions appear on both sides. Removing them from each side leaves one H⁺ ion and one H₂O molecule on the right:
+
+   $$\begin{aligned} &\ce{Cr(OH)3(s) + MnO4-(aq)} \\ &\quad \ce{-> CrO4^2-(aq) + H+(aq) + MnO2(s) + H2O(l)} \end{aligned}$$
+
+8. *For reactions occurring in basic media (excess hydroxide ions), carry out these additional steps:*
+
+   - (a) *Add OH⁻ ions to both sides of the equation in numbers equal to the number of H⁺ ions.* The equation has one H⁺ ion, so one OH⁻ ion is added to each side.
+
+     $$\begin{aligned} &\ce{OH-(aq) + Cr(OH)3(s) + MnO4-(aq)} \\ &\quad \ce{-> CrO4^2-(aq) + H+(aq) + OH-(aq) + MnO2(s) + H2O(l)} \end{aligned}$$
+
+   - (b) *On the side of the equation containing both H⁺ and OH⁻ ions, combine these ions to yield water molecules.* The H⁺ and OH⁻ ions on the right combine to one more H₂O molecule, two in all.
+
+     $$\begin{aligned} &\ce{OH-(aq) + Cr(OH)3(s) + MnO4-(aq)} \\ &\quad \ce{-> CrO4^2-(aq) + MnO2(s) + 2H2O(l)} \end{aligned}$$
+
+   - (c) *Simplify the equation by removing any redundant water molecules.* Water appears only on the right side, so no water molecules are redundant, and the equation above is the balanced equation.
+
+9. *Finally, check to see that both the number of atoms and the total charges are balanced.*
+
+| | Reactants | Products |
+|---|---|---|
+| Cr | 1 | 1 |
+| Mn | 1 | 1 |
+| O | 8 | 8 |
+| H | 4 | 4 |
+| charge | 2− | 2− |
+
+*Source note:* this example is not part of the source’s Section 4.2. It is the book’s own worked example from Section 17.1 Review of Redox Chemistry, placed here because the question below and four of this section’s exercises ask for an equation balanced in basic solution, which the source’s Section 4.2 lists as step 8 and does not work.
+
 {{< textin
   question="In basic solution, molecular chlorine, Cl₂, reacts with hydroxide ions, OH⁻, to yield chloride ions, Cl⁻, and chlorate ions, ClO₃⁻. HINT: This is a *disproportionation reaction* in which the element chlorine is both oxidized and reduced. Write a balanced equation for this reaction."
   answer="3Cl₂(aq) + 6OH⁻(aq) ⟶ 5Cl⁻(aq) + ClO₃⁻(aq) + 3H₂O(l)"
@@ -529,6 +587,8 @@ the oxidation state of the silver changes during the reaction
 {{< /selfcheck >}}
 
 ### Classify chemical reactions as one of these three types given appropriate descriptions or chemical equations
+
+#### Acid-base or oxidation-reduction
 
 {{< multiplechoice
   question="Classify the following as an acid-base reaction or an oxidation-reduction reaction: $\ce{Na2S(aq) + 2HCl(aq) ->}$ $\ce{2NaCl(aq) + H2S(g)}$."
@@ -620,6 +680,8 @@ acid-base
 oxidation-reduction
 {{< /multiplechoice >}}
 
+#### Types of reaction
+
 {{< multiplechoice
   question="Indicate what type, or types, of reaction the following represents: $\ce{Ca(s) + Br2(l) ->}$ $\ce{CaBr2(s)}$."
   answer="oxidation-reduction"
@@ -670,6 +732,8 @@ Oxidation-reduction (combustion).
 oxidation-reduction
 (combustion)
 {{< /selfcheck >}}
+
+#### Completing and balancing equations
 
 {{< textin
   question="Complete and balance the following oxidation-reduction reaction, which gives the highest possible oxidation state for the oxidized atoms: Al(s) + F₂(g) ⟶."
@@ -943,6 +1007,8 @@ soluble
   hint="Apply the guidelines for assigning oxidation numbers: give each element the value a guideline fixes, then use guideline 4 for the rest."
 >}}
 
+#### Balancing half-reactions
+
 {{< textin
   question="Complete and balance the following half-reaction (steps 2–5 in half-reaction method): Sn⁴⁺(aq) ⟶ Sn²⁺(aq). Type an electron as e-."
   answer="Sn⁴⁺(aq) + 2e⁻ ⟶ Sn²⁺(aq)"
@@ -998,6 +1064,8 @@ soluble
   answerForm="equation"
   hint="Follow steps 2 to 5 of the half-reaction method, with step 5 balancing the charge by adding electrons, then carry out step 8, the additional steps for reactions in basic media."
 >}}
+
+#### Balancing equations by the half-reaction method
 
 {{< textin
   question="Balance the following equation according to the half-reaction method: Sn²⁺(aq) + Cu²⁺(aq) ⟶ Sn⁴⁺(aq) + Cu⁺(aq)."
@@ -1057,4 +1125,4 @@ soluble
 
 ---
 
-<small>This section is adapted from [Chemistry 2e, Section 4.2: Classifying Chemical Reactions](https://openstax.org/books/chemistry-2e/pages/4-2-classifying-chemical-reactions) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the source’s equations typeset as KaTeX math, with the formulas in them set with the chemistry extension, and the rocket-propellant equation and the summed half-reactions of the dichromate example each broken into two aligned rows to fit the column; the fourth and fifth equations of the redox example’s list each set as two math spans, divided after the arrow, so that the line can wrap on a narrow screen; references to numbered figures and tables replaced by describing phrases, the solid rocket-fuel reference by “the image that opens this chapter”, and the bare link to the redox example by “see the example on describing redox reactions below”; the solubility-guidelines table transcribed as a Markdown table whose two blocks share one header row, each block’s name in the first column of its first row and the ions of a cell separated by commas, and the strong-acids table with its title as a bold line above it; the footnote on charge balance set as a parenthetical at the end of step 9 of the half-reaction method, and the lettered sub-steps of step 8 set as a bulleted list keeping their letters; the two Chemistry in Everyday Life boxes and the two Link to Learning boxes rendered as callouts, the fish figure inside its box; the six figures re-encoded as WebP, the lead iodide beaker, the ammonia uses, and the copper wire marked as photos and the hydrogen chloride flasks, the citrus and vinegar composite, and the fish with its printed equation as diagrams, every alt text written from the image (the source alts call the beaker a test tube, describe structural formulas where the image shows space-filling models, call the vinegar bottles clear and colorless, and leave out the household-cleaner panel); the five worked examples set as prose, each followed by its Check Your Learning as interactive items (three multiple-choice items, one formula text-recall item, two equation text-recall items, four fill-ins, and one self-check), the printed answers serving as their keys rather than appearing as text, the underlined atom of each oxidation-state item also named in words, and the tin(II) chloride check asked first as a yes-or-no question, then for the oxidant (shown once the first is answered correctly), its reaction set as math and split after the arrow, then whole as a self-check; the period after “chloride ions, Cl⁻” in the chlorine Check Your Learning corrected to a comma; the garbled “AgCl is one of insoluble” repaired to “AgCl is insoluble”, the wording of the module’s own example; the space in “lead (II) nitrate”, a source defect, kept as printed; the credit line of the ammonia figure’s first panel corrected from “National Resources Conservation Service” to “Natural Resources Conservation Service”; “starches” in the pickling paragraph of the Culinary Aspects box corrected to “sugars”; Source notes added after the solubility-guidelines table (beryllium fluoride, a fluoride of a group 2 metal, is soluble), after that pickling paragraph (the sugars the bacteria consume; harmful bacteria do not require a basic environment), after the hybrid-rocket Link to Learning box (the Space Launch System has since flown), after the bromine exercise (the company it names merged into another in 2005), and after the Key terms list, whose definition of a strong base is corrected from “reacts completely” to “dissociates completely”, as the section’s own body explains; the end-of-section exercises adapted into the interactive Practice block, with the 15 exercises the source keys carried as 65 items: 13 multiple-choice items, the reaction in each stem that prints one set as math and split after its arrow (one per part of the reaction-type exercise, whose options are the section’s three reaction types as its first objective names them, since the stem names none; one for the silver-dissolution exercise, its options the stem’s two; one per part of the acid-base or oxidation-reduction exercise, and for the three oxidation-reduction parts whose answer names a reactant, one more asking which reactant is oxidized or reduced, its options the reaction’s two reactants, shown once the classification is answered correctly), 15 fill-ins, one per element of each compound in the oxidation-state exercise, each stem closing with a sentence that names the element and asks for a signed number, 27 equation text-recall items, one per equation, each half-reaction stem closing with a sentence saying how to type an electron, and 10 self-checks carrying the source solutions as model answers with rubric checkpoints (the reaction types with their more specific names, the silver explanation, the three neutralization parts, whose stem allows more than one correct answer, the two multi-step preparations, and the sodium carbonate part of the hydrogen sulfide exercise, whose model answer corrects the source’s products, which do not form, and says why, with a Source note after it); the lead-ins restated in the singular for each part, and a part that ends in an open arrow closed with a period; the self-check that gives each reaction type’s more specific name placed after all three reaction-type multiple-choice items, and the acid-base or oxidation-reduction exercise placed before the reaction-type exercise in its group, so that no revealed model answer classifies a reaction of the same kind before it is asked; capitals and periods added to the model answers; two multiple-choice items added to the solubility group, which no keyed exercise reaches: one asking which ion of the solubility-guidelines table has the exceptions its question quotes, its options four ions of that table, and one asking which key term describes a substance by the Key terms definition of that term, its options three key terms of the solubility paragraph; and the 15 exercises the source prints no answer for are omitted.</small>
+<small>This section is adapted from [Chemistry 2e, Section 4.2: Classifying Chemical Reactions](https://openstax.org/books/chemistry-2e/pages/4-2-classifying-chemical-reactions) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the source’s equations typeset as KaTeX math, with the formulas in them set with the chemistry extension, and the rocket-propellant equation and the summed half-reactions of the dichromate example each broken into two aligned rows to fit the column, as are the longer equations of the basic-solution example below; the fourth and fifth equations of the redox example’s list each set as two math spans, divided after the arrow, so that the line can wrap on a narrow screen; references to numbered figures and tables replaced by describing phrases, the solid rocket-fuel reference by “the image that opens this chapter”, and the bare link to the redox example by “see the example on describing redox reactions below”; the solubility-guidelines table transcribed as a Markdown table whose two blocks share one header row, each block’s name in the first column of its first row and the ions of a cell separated by commas, and the strong-acids table with its title as a bold line above it; the footnote on charge balance set as a parenthetical at the end of step 9 of the half-reaction method, and the lettered sub-steps of step 8 set as a bulleted list keeping their letters; the two Chemistry in Everyday Life boxes and the two Link to Learning boxes rendered as callouts, the fish figure inside its box; the six figures re-encoded as WebP, the lead iodide beaker, the ammonia uses, and the copper wire marked as photos and the hydrogen chloride flasks, the citrus and vinegar composite, and the fish with its printed equation as diagrams, every alt text written from the image (the source alts call the beaker a test tube, describe structural formulas where the image shows space-filling models, call the vinegar bottles clear and colorless, and leave out the household-cleaner panel); the source’s five worked examples set as prose, each followed by its Check Your Learning as interactive items (the dichromate example’s, the chlorine item, after the basic-solution example brought in below it) (three multiple-choice items, one formula text-recall item, two equation text-recall items, four fill-ins, and one self-check), the printed answers serving as their keys rather than appearing as text, the underlined atom of each oxidation-state item also named in words, and the tin(II) chloride check asked first as a yes-or-no question, then for the oxidant (shown once the first is answered correctly), its reaction set as math and split after the arrow, then whole as a self-check; a worked example of balancing in basic solution, the permanganate and chromium(III) hydroxide example of Section 17.1 Review of Redox Chemistry, brought forward after the dichromate example with a Source note after it, because the chlorine item and four of the exercises ask for an equation balanced in basic solution, which step 8 of the method describes and no example of the source’s Section 4.2 works; its steps headed in this section’s wording of the method, with step 8’s three sub-steps and step 9’s check of atoms and charge shown where Section 17.1 merges or omits them, the species its step 7 strikes through named in a sentence, its half-reactions labeled as the source labels them, the period missing after “chromate ion, CrO₄²⁻” in its statement supplied, and no Check Your Learning of its own; the period after “chloride ions, Cl⁻” in the chlorine Check Your Learning corrected to a comma; the garbled “AgCl is one of insoluble” repaired to “AgCl is insoluble”, the wording of the module’s own example; the space in “lead (II) nitrate”, a source defect, kept as printed; the credit line of the ammonia figure’s first panel corrected from “National Resources Conservation Service” to “Natural Resources Conservation Service”; “starches” in the pickling paragraph of the Culinary Aspects box corrected to “sugars”; Source notes added after the solubility-guidelines table (beryllium fluoride, a fluoride of a group 2 metal, is soluble), after that pickling paragraph (the sugars the bacteria consume; harmful bacteria do not require a basic environment), after the hybrid-rocket Link to Learning box (the Space Launch System has since flown), after the basic-solution example (where it comes from, and why it is here), after the bromine exercise (the company it names merged into another in 2005), and after the Key terms list, whose definition of a strong base is corrected from “reacts completely” to “dissociates completely”, as the section’s own body explains; the end-of-section exercises adapted into the interactive Practice block, with the 15 exercises the source keys carried as 65 items: 13 multiple-choice items, the reaction in each stem that prints one set as math and split after its arrow (one per part of the reaction-type exercise, whose options are the section’s three reaction types as its first objective names them, since the stem names none; one for the silver-dissolution exercise, its options the stem’s two; one per part of the acid-base or oxidation-reduction exercise, and for the three oxidation-reduction parts whose answer names a reactant, one more asking which reactant is oxidized or reduced, its options the reaction’s two reactants, shown once the classification is answered correctly), 15 fill-ins, one per element of each compound in the oxidation-state exercise, each stem closing with a sentence that names the element and asks for a signed number, 27 equation text-recall items, one per equation, each half-reaction stem closing with a sentence saying how to type an electron, and 10 self-checks carrying the source solutions as model answers with rubric checkpoints (the reaction types with their more specific names, the silver explanation, the three neutralization parts, whose stem allows more than one correct answer, the two multi-step preparations, and the sodium carbonate part of the hydrogen sulfide exercise, whose model answer corrects the source’s products, which do not form, and says why, with a Source note after it); the lead-ins restated in the singular for each part, and a part that ends in an open arrow closed with a period; the self-check that gives each reaction type’s more specific name placed after all three reaction-type multiple-choice items, and the acid-base or oxidation-reduction exercise placed before the reaction-type exercise in its group, so that no revealed model answer classifies a reaction of the same kind before it is asked; capitals and periods added to the model answers; two multiple-choice items added to the solubility group, which no keyed exercise reaches: one asking which ion of the solubility-guidelines table has the exceptions its question quotes, its options four ions of that table, and one asking which key term describes a substance by the Key terms definition of that term, its options three key terms of the solubility paragraph; and the 15 exercises the source prints no answer for are omitted.</small>

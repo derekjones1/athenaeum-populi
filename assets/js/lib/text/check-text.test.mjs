@@ -1,7 +1,8 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { acceptedForms, checkText, closedForm, foldedForms, isOlderName, matchesForm, normalizeText, pluralFolds, singularFolds, gradeText, OLDER_NAME_MESSAGE } from './check-text.mjs';
+import { acceptedForms, checkText, closedForm, foldedForms, isOlderName, isPrefixName, matchesForm, normalizeText, pluralFolds, singularFolds, gradeText, OLDER_NAME_MESSAGE, PREFIX_NAME_MESSAGE } from './check-text.mjs';
 import { CLASSICAL_NAMES, systematicName } from './older-names.mjs';
+import { ionicName } from './prefix-names.mjs';
 
 test('normalizeText folds case, diacritics, quotes, dashes, punctuation, articles', () => {
   const cases = [
@@ -188,7 +189,6 @@ test('an older name of the keyed compound is answered as an older name, never as
   // The systematic name is still the only correct one, and a name with no
   // classical word in it is read as before.
   assert.deepEqual(gradeText('iron(II) chloride', 'iron(II) chloride'), { status: 'correct' });
-  assert.deepEqual(gradeText('titanium tetrachloride', 'titanium(IV) chloride'), { status: 'incorrect' });
   assert.deepEqual(gradeText('chromic acid', 'chromium(VI) oxide'), { status: 'incorrect' });
 
   // Every gate calls checkText, which must never take an older name for a key.
@@ -217,4 +217,54 @@ test('the classical names come in pairs, the -ous name the lower charge, and not
   assert.equal(systematicName('sulfurous acid'), null);
   assert.equal(systematicName('iron ii chloride'), null);
   assert.equal(systematicName(''), null);
+});
+
+// Chemistry 2e Section 2.7 names two nonmetals' compound with Greek prefixes
+// and a metal's compound as an ionic compound. "titanium tetrachloride" —
+// which the section's own exercise prints as the name to replace — was a
+// bare "Not quite" until November 14, 2026: the compound is right and the
+// method is the other one, so the learner is told which method is asked.
+test('a Greek-prefix name of the keyed metal compound is answered as the other naming method, never as correct and never by a gate', () => {
+  const prefixed = { status: 'form', message: PREFIX_NAME_MESSAGE };
+  assert.deepEqual(gradeText('titanium tetrachloride', 'titanium(IV) chloride'), prefixed);
+  assert.deepEqual(gradeText('Titanium Tetrachloride', 'titanium(IV) chloride'), prefixed, 'capitals do not count');
+  assert.deepEqual(gradeText('iron trichloride', 'iron(III) chloride'), prefixed);
+  assert.deepEqual(gradeText('manganese dioxide', 'manganese(IV) oxide'), prefixed);
+  assert.deepEqual(gradeText('dichromium trioxide', 'chromium(III) oxide'), prefixed, 'a prefix on the metal too');
+  assert.deepEqual(gradeText('divanadium pentoxide', 'vanadium(V) oxide'), prefixed, 'the prefix’s vowel dropped before oxide');
+  assert.deepEqual(gradeText('copper monoxide', 'copper(II) oxide'), prefixed);
+  assert.deepEqual(gradeText('cobalt dichloride hexahydrate', 'cobalt(II) chloride hexahydrate'), prefixed, 'a hydrate’s own prefix stays');
+  // A metal the book names with no numeral: the counts must give its one charge.
+  assert.deepEqual(gradeText('magnesium dichloride', 'magnesium chloride'), prefixed);
+  assert.deepEqual(gradeText('dialuminum trioxide', 'aluminum oxide'), prefixed);
+  assert.deepEqual(gradeText('magnesium trichloride', 'magnesium chloride'), { status: 'incorrect' }, 'not magnesium’s charge');
+
+  // The prefix name of a DIFFERENT compound is plainly wrong.
+  assert.deepEqual(gradeText('titanium trichloride', 'titanium(IV) chloride'), { status: 'incorrect' });
+  assert.deepEqual(gradeText('iron dichloride', 'iron(III) chloride'), { status: 'incorrect' });
+  assert.deepEqual(gradeText('titanium tetrabromide', 'titanium(IV) chloride'), { status: 'incorrect' });
+  // A molecular compound's prefix name is its name, and is graded as any word answer.
+  assert.deepEqual(gradeText('carbon tetrachloride', 'carbon tetrachloride'), { status: 'correct' });
+  assert.deepEqual(gradeText('carbon tetrachloride', 'carbon dioxide'), { status: 'incorrect' });
+  assert.deepEqual(gradeText('hydrogen monochloride', 'hydrogen chloride'), { status: 'incorrect' }, 'hydrogen is not a metal');
+  assert.deepEqual(gradeText('dinitrogen tetroxide', 'dinitrogen tetroxide'), { status: 'correct' });
+  // The systematic name is still the only correct one.
+  assert.deepEqual(gradeText('titanium(IV) chloride', 'titanium(IV) chloride'), { status: 'correct' });
+  assert.deepEqual(gradeText('titanium chloride', 'titanium(IV) chloride'), { status: 'incorrect' }, 'no numeral and no prefix: nothing to say');
+
+  // Every gate calls checkText, which must never take a prefix name for a key.
+  assert.equal(checkText('titanium tetrachloride', 'titanium(IV) chloride'), 'incorrect');
+  assert.equal(isPrefixName('titanium tetrachloride', 'titanium(IV) chloride'), true);
+  assert.equal(isPrefixName('titanium(IV) chloride', 'titanium(IV) chloride'), false);
+
+  // What the reader makes of a name, and what it does not read.
+  assert.deepEqual(ionicName('titanium tetrachloride'), { numeral: 'titanium iv chloride', bare: 'titanium chloride', fixed: false });
+  assert.equal(ionicName('titanium chloride'), null, 'no prefix');
+  assert.equal(ionicName('carbon tetrachloride'), null, 'a nonmetal first');
+  assert.equal(ionicName('tetrachloride'), null);
+  assert.equal(ionicName('triiron tetroxide'), null, 'no whole-number charge');
+  assert.equal(ionicName('copper disulfate'), null, 'only a monatomic anion');
+
+  // The message names neither a metal nor a numeral, and does not call the name wrong.
+  assert.doesNotMatch(PREFIX_NAME_MESSAGE, /titanium|roman|numeral|\(|IV|wrong|incorrect/i);
 });

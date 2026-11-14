@@ -596,7 +596,10 @@ the session.
 7. New lessons: a one-line rule into the playbook section it belongs to;
    the narrative into `docs/history/anatomy-physiology.md`; a lint or test
    where one can hold it. Then the session memory file.
-8. Commit only when asked. A large push used to fail from the session with
+8. Commit the run's own files at a green close-out (`AGENTS.md`
+   "Commits"; Derek, October 24, 2026), leaving unrelated uncommitted work
+   and saying what was left; push only when asked. A large push used to
+   fail from the session with
    `LibreSSL … bad record mac`: the system libcurl's LibreSSL backend
    corrupts a pack over ~20 MB, and `http.sslBackend secure-transport` in
    the repo's local config fixes it (set October 20, 2026; the one-off form

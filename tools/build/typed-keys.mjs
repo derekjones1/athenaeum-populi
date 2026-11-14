@@ -17,13 +17,17 @@
  * Default pass: each fill-in's key as digits, sign, point and `*10^n`; each
  * formula or equation by the field's own typing guide (`SO4^2-`, `->`,
  * `^23_11Na`); each plain text-in as keyed; each multiple choice by its
- * keyed option. Items inside a follow-up are reached by answering their
- * gate first, in page order. Exit 1 when any key is not graded correct.
+ * keyed option; each sort-into-bins by picking up every label and placing
+ * it in its keyed bin, then Check (one item per sortbins, as the solve and
+ * the ledger count it). Items inside a follow-up are reached by answering
+ * their gate first, in page order. Exit 1 when any key is not graded
+ * correct.
  *
  * --variants: a second ordinary way of writing each answer instead — the
  * letter x for the times sign, a leading "+" on an oxidation state, no
  * leading zero, a thousands comma, a charge typed bare with no state
- * symbols, a name in lower case. Not every variant must be right (that is a
+ * symbols, a name in lower case (a sortbins has no second writing: it is
+ * placed as keyed in both passes). Not every variant must be right (that is a
  * judgment); each one that is not is listed with the page's feedback, so a
  * bare "Not quite" on a reasonable writing is seen.
  */
@@ -105,23 +109,45 @@ page.on('pageerror', (err) => consoleErrors.push(`${page.url()} :: PAGEERROR ${e
 const results = [];
 for (const route of routes()) {
   await page.goto(BASE + route, { waitUntil: 'networkidle' });
-  const count = await page.locator('fill-in, text-in, multiple-choice').count();
+  const GRADED = 'fill-in, text-in, multiple-choice, sort-bins';
+  const count = await page.locator(GRADED).count();
   const started = Date.now();
   for (let index = 0; index < count; index += 1) {
-    const item = page.locator('fill-in, text-in, multiple-choice').nth(index);
+    const item = page.locator(GRADED).nth(index);
     const info = await item.evaluate((el) => ({
       tag: el.localName,
       answer: el.dataset.answer ?? '',
       form: el.dataset.answerForm ?? '',
       accept: el.dataset.accept ?? '',
-      question: (el.dataset.question ?? '').slice(0, 140),
+      config: el.dataset.config ?? '',
+      question: (el.dataset.question ?? el.querySelector('.ap-sortbins-question')?.textContent ?? '').trim().slice(0, 140),
       hidden: !el.getClientRects().length,
       inFollowup: Boolean(el.closest('ap-followup')),
     }));
-    const record = { route, index, ...info };
+    const { config, ...shown } = info;
+    const record = { route, index, ...shown };
     try {
       if (info.hidden) { record.result = 'HIDDEN'; results.push(record); continue; }
-      if (info.tag === 'multiple-choice') {
+      if (info.tag === 'sort-bins') {
+        // Each label into its keyed bin, by the component's own two-step
+        // keyboard path (pick up the label, then "Place here" under the
+        // bin), then Check. The key is the config's bin indexes.
+        const cfg = JSON.parse(config);
+        record.answer = cfg.items.map((entry) => `${entry.label} → ${cfg.bins[entry.bin]}`).join('; ');
+        record.kind = 'as-keyed';
+        await item.locator('.ap-sortbins-item:not([disabled])').first().waitFor({ timeout: 20000 });
+        for (const [at, entry] of cfg.items.entries()) {
+          const label = item.locator(`.ap-sortbins-item[data-item="${at}"]`);
+          await label.scrollIntoViewIfNeeded();
+          await label.click({ timeout: 8000 });
+          await item.locator(`.ap-sortbins-place[data-bin="${entry.bin}"]`).click({ timeout: 8000 });
+        }
+        record.typed = `${cfg.items.length} labels placed`;
+        await item.locator('.ap-sortbins-check').click();
+        await page.waitForTimeout(60);
+        record.feedback = (await item.locator('.ap-sortbins-feedback').textContent()).trim();
+        record.result = record.feedback.startsWith('Correct!') ? 'correct' : 'NOT-CORRECT';
+      } else if (info.tag === 'multiple-choice') {
         const options = item.locator('.ap-mc-option');
         const values = await options.evaluateAll((els) => els.map((b) => b.dataset.value ?? `graph:${b.dataset.index}`));
         record.options = values.length;

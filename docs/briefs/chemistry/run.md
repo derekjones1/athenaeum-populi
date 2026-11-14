@@ -420,7 +420,14 @@ the CNXML and the page.
 5. **Ledger.** Merge the authors' results and the solve results, prune,
    then provenance (`docs/briefs/anatomy-physiology/run.md` §4 step 5, with
    `--book physical-sciences/chemistry` and
-   `content/physical-sciences/chemistry`).
+   `content/physical-sciences/chemistry`). **`ledger:provenance` labels a
+   Chemistry fill-in "author-built"** (its matcher reads sentences, not
+   numbers): read its `low-confidence.json`, and for every fill-in keep the
+   author's own note — after a re-solve of a re-hashed item, carry the note
+   from the previous ledger by hand (`git show HEAD:data/verification/answer-ledger.json`,
+   `entries[<old hash>]`), matching by question. Done by hand on the
+   November 13 sweep and both November 14 passes; a fill-in judge for the
+   tool is on the playbook's open list.
 6. `npm run check:external-links`; `npm run baseline:update`; `npm test >
    $SP/test-final.log 2>&1`; `npm run verify:replay`; `npm run source:verify`;
    `npm run build && npm run check:build`; then the browser suite

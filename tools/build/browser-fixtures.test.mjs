@@ -252,7 +252,10 @@ export function fixtureProblems(fixture, readPage = (file) => readFileSync(file,
   }
   for (const { typed, expect } of fixture.fills) {
     if (!expect) continue;
-    const verdict = gradeText(typed, card.params.answer, { accept: card.params.accept ?? '' }).status;
+    // Under the item's own form: a typed equation or formula is read by the
+    // chemistry grader, not as words (November 14, 2026 — the first spec to
+    // type into an equation field found by its key was graded here as text).
+    const verdict = gradeText(typed, card.params.answer, { accept: card.params.accept ?? '', form: card.params.answerForm ?? '' }).status;
     if (verdict !== expect) {
       problems.push(`typing "${typed}" now grades ${verdict}, but the spec expects ${expect} `
         + `(answer "${card.params.answer}", accept "${card.params.accept ?? ''}")`);
