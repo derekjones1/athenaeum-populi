@@ -1666,6 +1666,42 @@ test('a measured-quantity field keeps a two-digit exponent together, reports a t
   await expect.poll(status).toBe('correct');
 });
 
+// A plain keyboard has no times sign, and the first thing a learner types
+// for 7.04 × 10² is the letter x. Until November 14, 2026 that x was read as
+// a unit after 7.04, and every one of Chemistry's 55 scientific-notation
+// fill-ins answered a right number with a bare "Not quite — try again."
+// (found by typing every key of chapters 1–4 the way a learner would). The
+// reading is unit-tested (significant-figures.test.mjs); what only the
+// browser shows is what MathLive hands over for the keystrokes — `7.04x10^2`,
+// the space dropped, a negative exponent braced.
+test('a power of ten typed with the letter x for the times sign is read as scientific notation', async ({ page }) => {
+  await gotoBuiltPage(page, '/physical-sciences/chemistry/01-essential-ideas/05-measurement-uncertainty-accuracy-and-precision/');
+  const type = async (card, keys) => {
+    const field = card.locator('math-field');
+    await clearMathField(field);
+    await focusMathField(page, field);
+    await page.keyboard.type(keys, { delay: 15 });
+    await card.getByRole('button', { name: /check/i }).click();
+  };
+  // 704 in exponential notation: the form token holds with an x as it does with ×.
+  const positive = page.locator('fill-in[data-question$="significant figures: 704"]');
+  await expect(positive).toHaveCount(1);
+  const status = (card) => card.evaluate((el) => el.status);
+  await type(positive, '70.4 x 10^1');
+  await expect.poll(() => status(positive)).toBe('form');
+  await expect(positive.locator('.ap-fillin-feedback')).toHaveText(/scientific notation/);
+  await type(positive, '7.05 x 10^2');
+  await expect.poll(() => status(positive)).toBe('incorrect');
+  await type(positive, '7.04 x 10^2');
+  expect(await positive.locator('math-field').evaluate((el) => el.value)).toMatch(/^7\.04x10\^\{?2\}?$/);
+  await expect.poll(() => status(positive)).toBe('correct');
+  // A negative exponent, and a capital X.
+  const negative = page.locator('fill-in[data-question$="significant figures: 0.03344"]');
+  await expect(negative).toHaveCount(1);
+  await type(negative, '3.344X10^-2');
+  await expect.poll(() => status(negative)).toBe('correct');
+});
+
 // Chemistry 3.1: a formula mass has ONE right answer, the sum of this book's
 // periodic table (IUPAC's abridged standard atomic weights, five figures).
 // Until November 12, 2026 the table printed four figures, the source's
@@ -2296,7 +2332,8 @@ test('a figure shown smaller than its file can be enlarged in place: fit, the fi
 // matter; layouts/_partials/utils/reference-lookups.html) now opens over the
 // page, with a field that filters its rows (assets/js/reference-lookup.js).
 //
-// No section links a table appendix before chapter 5, so this test ADDS the
+// No exercise links a table appendix before chapter 5 (4.2 links Appendix H
+// once, in a Source note), so this test ADDS the
 // link to a real section page at run time; everything else — the list of
 // lookup pages the page carries, the script, the appendix it fetches — is
 // the shipped site. Chapter 5's run replaces the added link with the first

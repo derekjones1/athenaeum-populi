@@ -3701,6 +3701,19 @@ const precalculusChapter4 = [
   ['5\\times10^{-26}', '3.77\\times10^{-26}', 'scientific-notation', 'incorrect'],
   ['0', '3.77\\times10^{-26}', 'scientific-notation', 'incorrect'],
   ['37.7\\times10^{-27}', '3.77\\times10^{-26}', 'scientific-notation', 'form'],
+  // the letter x is a plain keyboard's times sign (November 14, 2026): read
+  // as one under `scientific-notation` against a key that is one such number
+  ['3.77x10^{-26}', '3.77\\times10^{-26}', 'scientific-notation', 'correct'],
+  ['3.77 X 10^{-26}', '3.77\\times10^{-26}', 'scientific-notation', 'correct'],
+  ['37.7x10^{-27}', '3.77\\times10^{-26}', 'scientific-notation', 'form'],
+  ['3.78x10^{-26}', '3.77\\times10^{-26}', 'scientific-notation', 'incorrect'],
+  ['9.6x10^4', '9.6\\times10^4', undefined, 'incorrect'],   // no token: x keeps its reading as a variable
+  ['7.04x10^2', '7.04\\times10^{2}', 'sig-figs:3 last-digit:0 scientific-notation', 'correct'],
+  ['7.04 x 10^2', '7.04\\times10^{2}', 'sig-figs:3 last-digit:0', 'correct'],
+  ['70.4x10^1', '7.04\\times10^{2}', 'sig-figs:3 last-digit:0 scientific-notation', 'form'],
+  ['7.05x10^2', '7.04\\times10^{2}', 'sig-figs:3 last-digit:0', 'incorrect'],
+  ['x10^{-2}', '10^{-2}', 'sig-figs:1 last-digit:0', 'correct'],
+  ['704x', '704', 'sig-figs:3 last-digit:0', 'unit'],          // an x after the whole number is still a label
   ['0.0000000000000000000000000377', '3.77\\times10^{-26}', undefined, 'correct'],
   ['(0,1\\times10^{-30})', '(0,3.77\\times10^{-26})', undefined, 'incorrect'],
   // …through the engine's chop, which numericizes these to 0

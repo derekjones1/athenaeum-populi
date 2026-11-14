@@ -28,7 +28,15 @@
  */
 
 const DECIMAL = String.raw`(?:\d+\.\d*|\.\d+|\d+)`;
-const POWER_OF_TEN = String.raw`\s*(?:\\times|\\cdot|\*)\s*10\s*\^\s*(?:\{\s*([+-]?\d+)\s*\}|(\d))`;
+// The multiplication sign of scientific notation, as it reaches the reader:
+// MathLive's `\times` and `\cdot`, a typed `*`, and the LETTER x — what a
+// plain keyboard has for "×", and what a learner types first (`7.04 x 10^2`
+// arrives as `7.04x10^2`). A measured-number response holds no variable, so
+// an x between a numeral and a power of ten can be nothing else; until
+// November 14, 2026 it was read as a unit and the answer marked wrong with
+// no reason, on every scientific-notation item of Chemistry (55 of them).
+const TIMES = String.raw`(?:\\times|\\cdot|\*|[xX])`;
+const POWER_OF_TEN = String.raw`\s*${TIMES}\s*10\s*\^\s*(?:\{\s*([+-]?\d+)\s*\}|(\d))`;
 // A calculator readout, `4.585e22` or `4.585E-3`. preprocess() braces the
 // letter of a whole-number mantissa before a sign (`3{e}-2`, so that a
 // variable `e` keeps its reading in algebra); in a measured-number response
@@ -42,7 +50,7 @@ const NUMERAL = new RegExp(String.raw`^([+-]?)\s*(${DECIMAL})(?:${POWER_OF_TEN}|
 // token's question, not this reader's (Chemistry 2e 1.6, the pilot).
 // A leading multiplication sign is the same unwritten 1: the book prints an
 // SI prefix's factor as "× 10⁻²", and a learner copies it (1.4, the pilot).
-const BARE_POWER_OF_TEN = /^([+-]?)\s*(?:(?:\\times|\\cdot|\*)\s*)?10\s*\^\s*(?:\{\s*([+-]?\d+)\s*\}|(\d))/;
+const BARE_POWER_OF_TEN = new RegExp(String.raw`^([+-]?)\s*(?:${TIMES}\s*)?10\s*\^\s*(?:\{\s*([+-]?\d+)\s*\}|(\d))`);
 
 /**
  * Read the numeral that OPENS `text` — a plain decimal, scientific notation
@@ -70,7 +78,7 @@ export function readNumeral(text) {
       sigMax: 1,
       scientific: true,
       bare: true,
-      written: bare[0],
+      written: bare[0].replace(/[xX](?=\s*10\s*\^)/, '\\times'),
       rest: source.slice(bare[0].length),
     };
   }
@@ -91,7 +99,9 @@ export function readNumeral(text) {
     sigMin,
     sigMax,
     scientific: power !== undefined,
-    written: whole,
+    // The form predicates read `written` (is it scientific notation?), and
+    // they know one multiplication sign: a typed letter x is handed on as it.
+    written: whole.replace(/[xX](?=\s*10\s*\^)/, '\\times'),
     rest: source.slice(whole.length),
   };
 }

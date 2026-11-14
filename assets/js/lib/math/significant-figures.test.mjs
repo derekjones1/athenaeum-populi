@@ -28,6 +28,9 @@ test('readNumeral counts the significant figures a writing shows', async (t) => 
     ['2.15\\times10^5', 3, 3],   // MathLive leaves a one-digit exponent unbraced
     ['35\\cdot10^{1}', 2, 2],
     ['4.585e22', 4, 4],
+    ['4.585x10^{22}', 4, 4],    // the letter x: a plain keyboard's times sign
+    ['4.585X10^{-3}', 4, 4],
+    ['7.04 x 10^2', 3, 3],
     ['4.585E-3', 4, 4],
     ['3{e}-2', 1, 1],           // preprocess() braces the e of a whole-number mantissa
     ['0', 0, 0],

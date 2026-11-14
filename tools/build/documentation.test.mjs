@@ -480,7 +480,10 @@ test('the chemistry subject playbook states the rules its engine enforces', asyn
   // The worked table in the playbook is the grader's real behaviour.
   const form = 'sig-figs:3 last-digit:1';
   const verdicts = [['0.674', 'correct'], ['0.675', 'correct'], ['0.67442', 'form'], ['0.67', 'form'],
-    ['0.674M', 'unit'], ['\\frac{0.674mol}{L}', 'unit'], ['0.676', 'incorrect'], ['0.6', 'incorrect']];
+    ['0.674M', 'unit'], ['\\frac{0.674mol}{L}', 'unit'], ['0.676', 'incorrect'], ['0.6', 'incorrect'],
+    // The letter x for the times sign, as MathLive hands it over (November 14, 2026).
+    ['6.74x10^{-1}', 'correct'], ['6.74e-1', 'correct'], ['6.76x10^{-1}', 'incorrect']];
+  assert.match(chem, /`6\.74 x 10\^-1`[^|]*\| correct \| The letter x is the times sign/, 'the playbook\'s table shows the typed letter x');
   for (const [typed, verdict] of verdicts) {
     assert.equal(checkAnswer(typed, '0.674', { form }), verdict, `${typed} against 0.674`);
   }

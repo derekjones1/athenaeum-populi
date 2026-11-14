@@ -3387,6 +3387,26 @@ export function lintHugo(src, filename = '', options = {}) {
     }
   }
 
+  // ---- a Source note between a paragraph and the figure it introduces ---------
+  // "A body fact corrected against an outside source … takes its note
+  // directly after the corrected paragraph — or directly after the figure or
+  // table, when the paragraph introduces one" (docs/subjects/chemistry.md,
+  // "Source defects and Source notes"). Three Chemistry runs put the note
+  // between "The figure below shows …" and the figure, and a fix checker
+  // caught it each time (2.1–2.4, 2.7, chapter 4); a fourth, 1.6's note on
+  // 273.15, stood from the pilot until November 14, 2026. The rule's shape is
+  // mechanical: a paragraph that points at what is below, then a
+  // `*Source note:*` paragraph, then the figure or table. A reference page is
+  // exempt: an appendix's note is about the table it stands over.
+  if (!isAppendixPage) {
+    const POINTS_BELOW = /\b(?:figure|table|diagram|photograph|image|illustration|chart|graph)s?\s+below\b|\b(?:shown|given|listed|illustrated|depicted|summarized)\s+below\b|\bfollowing\s+(?:figure|table|diagram)\b/i;
+    for (const m of mediaSrc.matchAll(/(^|\n)([^\n]+)\n[ \t]*\n(\*Source note:\*[^\n]*)\n[ \t]*\n(?=\{\{<\s*(?:mediafigure|apfigure)\b|\|)/g)) {
+      if (!POINTS_BELOW.test(m[2])) continue;
+      const at = m.index + m[1].length + m[2].length + m[0].slice(m[1].length + m[2].length).indexOf('*Source note:*');
+      err(at, `a Source note stands between a paragraph that points at the figure or table below (${JSON.stringify(m[2].slice(-60))}) and that figure or table — put the note directly after the figure or table`);
+    }
+  }
+
   // ---- empty Media callout ---------------------------------------------------
   // OpenStax's "Access these online resources for additional instruction and
   // practice with ..." box is only its link list; the pages omit the links, so

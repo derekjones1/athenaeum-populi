@@ -45,6 +45,7 @@
     "solve:emit": "node tools/verify/solve-check.mjs emit",
     "solve:compare": "node tools/verify/solve-check.mjs compare",
     "verify-section": "node tools/verify/verify-section.mjs",
+    "verify:typed": "node tools/build/typed-keys.mjs",
     "source:diff": "node tools/source/source-diff.mjs",
     "baseline:update": "node tools/verify/update-baselines.mjs content",
     "source:fetch": "node tools/source/openstax-source.mjs fetch",

@@ -309,7 +309,7 @@ $$\begin{aligned} &1.31 \times 10^{20}\ \ce{C7H5NO3S}\ \text{molecules} \left(\f
   answer="9.545\times10^{22}"
   answerForm="sig-figs:4 last-digit:1"
   answerDisplay="$9.545 \times 10^{22}\ \ce{C4H10}\ \text{molecules}$"
-  hint="Follow the first step of the saccharin solution above, with a molar mass computed from the formula."
+  hint="Follow the saccharin solution above as far as its count of molecules, with a molar mass computed from the formula."
 >}}
 
 {{< fillin

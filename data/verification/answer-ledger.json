@@ -192,14 +192,6 @@
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
   },
-  "005ce13755f96b84": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp147780304 part (e) (restating fs-idp166618800), mass, key 2.330",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "005ce4d895d3b50b": {
    "verdict": "ok"
   },
@@ -3832,6 +3824,14 @@
     "result": "agrees"
    }
   },
+  "07b246a6fc605d41": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp272460112 part (b), mass 2.2 × 10² g (table 219.7) | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "07ba162bbe691f23": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -4227,14 +4227,6 @@
   "085035b18c59e80b": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "085382e7f5d85e3b": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp147780304 part (d) (restating fs-idp166618800), mass, key 73.3; last-digit:1 per rulings G1 (table carried unrounded gives 73.29)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "0859979a781512a8": {
    "verdict": "ok"
@@ -23143,6 +23135,14 @@
    "verdict": "ok",
    "note": "ILQ fs-id1495328 graded selfcheck; model answer = solution fs-id690331 verbatim; fixed by body paras fs-id755131 (Na+ concentration gradient, factor of 10) and fs-id1667874 (K+ channels open at +30 mV, concentration gradient acts on K+, K+ leaves) and fs-id1229076 (K+ equilibrium)"
   },
+  "2e63179d0f4173c2": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp13749376; source answer printed as key (first of two answers: molecules); recomputed from the periodic table | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2e64be499aa3723e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -27975,6 +27975,14 @@
     "result": "agrees"
    }
   },
+  "3881f50b672a5b91": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp147780304 part (b) (restating fs-idp166618800), mass, key 9.248\\times10^{-2} | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "388508be33c62a3a": {
    "verdict": "ok",
    "note": "glossary recall: Eumetazoa (fs-idp123108912) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -29085,14 +29093,6 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver (blind, masked pages)",
-    "result": "agrees"
-   }
-  },
-  "3ac540d32945ed76": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idp13749376; source answer printed as key (first of two answers: molecules); recomputed from the periodic table",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -32514,14 +32514,6 @@
   "417d552bebe90a93": {
    "verdict": "ok",
    "note": "Body CYU selfcheck, fs-id1172100961567 bullet 2 (\"What contributions did Rudolf Virchow and Robert Remak make...\"); model answer from § The Origins of Cell Theory (Remak fs-id1172100993338, Virchow same para). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
-  },
-  "417fade261bf46ce": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm287695728 part (b) (key 0.94635 L / 1 qt)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "41865f36f797e367": {
    "verdict": "ok",
@@ -42478,6 +42470,14 @@
     "note": "Module prints both \"electromagnetic radiation spectrum\" (summary, the cloze source) and \"electromagnetic spectrum\" (body, twice); accept added for the shorter form. Key stands."
    }
   },
+  "56563e1201e81376": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp147780304 part (c) (restating fs-idp166618800), mass, key 6.80\\times10^{2}; source prints 6.8 × 10² g, value kept, count of the data per parent decision | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "565e6d9c9ddb29f3": {
    "verdict": "ok",
    "note": "m66405 fs-idp54312992 keyed A (exciting the taste cell directly); module text: a salty tastant 'provides the sodium ions (Na+) that enter the taste neurons and excite them directly'. No departure. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -46177,14 +46177,6 @@
     "result": "agrees"
    }
   },
-  "5dd9422f6ed18a17": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp147780304 part (c) (restating fs-idp166618800), mass, key 6.80\\times10^{2}; source prints 6.8 × 10² g, value kept, count of the data per parent decision",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "5de2eade71fb5b91": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -47597,14 +47589,6 @@
     "result": "agrees"
    }
   },
-  "61029b86c35d8bd4": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp61309952 part (f) (restating fs-idp16477696), mass: 9.55 / 46.069 × 28.054 = 5.8155 → 5.82 g; the source prints 5.81, which its four-figure masses give by this book's method (9.55/46.07 × 28.05 = 5.8146) and which 0.207 mol, already rounded, × 28.05 gives as well. One unit away on an item that fetches two molar masses: a row of source-print-differences.json, erratum 3037 (November 13, 2026).",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "6104e95075235e9a": {
    "verdict": "ok",
    "note": "RQ fs-id2279372, key C withdrawal reflex (fs-id1410057); fs-id2349137 withdrawal reflex on stepping on a tack.",
@@ -48217,6 +48201,14 @@
   "6282351c275a306c": {
    "verdict": "ok",
    "note": "body cloze fs-id1864819: 'As scar tissue accumulates, the heart loses its ability to pump because of the loss of contractile power'; accept 'pump blood' (checker)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "62843e4cae5ca371": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp61309952 part (d) (restating fs-idp16477696), mass, key 13.8 | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -49565,6 +49557,14 @@
   "6629b7df76e3243f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "662b12092856893e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm287695728 part (c) (key 2.2046 lb / 1 kg) | stem re-worded November 14, 2026: the sentence naming the table of common conversion factors added; key unchanged, re-solved",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -53693,6 +53693,14 @@
    "verdict": "ok",
    "note": "parent: option order set for position balance; answer re-derived in this session (conic type from A,C / discriminant B^2-4AC; rotation effect; theta from cot 2theta) — Which conic section is represented by $4x^2-y^2+8x-1=0$? | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "6f5e110b013e64ae": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp61309952 part (f) (restating fs-idp16477696), mass: 9.55 / 46.069 × 28.054 = 5.8155 → 5.82 g; the source prints 5.81, which its four-figure masses give by this book's method (9.55/46.07 × 28.05 = 5.8146) and which 0.207 mol, already rounded, × 28.05 gives as well. One unit away on an item that fetches two molar masses: a row of source-print-differences.json, erratum 3037 (November 13, 2026). | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6f5fba2bc7eb25ff": {
    "verdict": "ok"
   },
@@ -54125,6 +54133,14 @@
   "703e32330a5a14f6": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "704b08f455685d92": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp147780304 part (f) (restating fs-idp166618800), mass, key 86.05 | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -54965,14 +54981,6 @@
   "71bf1e9461cd5f4b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "71c1c3ebcac85017": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp61309952 part (e) (restating fs-idp16477696), mass: 16.3047 mol × 169.33 g/mol (BaO₂, this book's table) = 2760.9 → 2761 g, the moles carried unrounded; the source prints 2762. A data difference, row of source-print-differences.json (November 13, 2026).",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -57075,14 +57083,6 @@
    "note": "textin 'chemical energy' — prompt paraphrases the glossary definition ('potential energy in chemical bonds that releases when those bonds are broken') without using the answer words; single correct answer, no accept needed (no common plural/abbreviation). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "76090c01e4b8a220": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm287695728 part (a) (key 1.0936 yd / 1 m), from the module's conversion table",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -64358,6 +64358,14 @@
   },
   "84c1fdae16b182ef": {
    "verdict": "ok"
+  },
+  "84c5dcd359df3ced": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp147780304 part (e) (restating fs-idp166618800), mass, key 2.330 | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "84c6ce8d21177434": {
    "verdict": "ok",
@@ -75062,6 +75070,14 @@
     "result": "agrees"
    }
   },
+  "9b84533151697164": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp61309952 part (c) (restating fs-idp16477696), mass, key 542 | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9b857e31870c25db": {
    "verdict": "ok",
    "note": "textin re-read against CNXML/page after checker fixes: DNA polymerase",
@@ -81609,6 +81625,14 @@
    "verdict": "ok",
    "note": "Categorical MC built from CNXML/PDF printed solution to Verbal exercise fs-id1394594 (\"The inverse does not exist.\"); distractors are plausible-but-false claims about what a 0 determinant implies for the inverse."
   },
+  "a8e4e5205e65e93b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp61309952 part (b) (restating fs-idp16477696), mass, key 0.08644 | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a8e61930a65c3119": {
    "verdict": "ok",
    "note": "body CYU selfcheck, model answer assembled from the three type IV subcategory paragraphs (fs-id1167663949166, fs-id1167661438668, fs-id1167663994063) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -82413,14 +82437,6 @@
     "result": "agrees"
    }
   },
-  "aad116fc6309d50a": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp147780304 part (b) (restating fs-idp166618800), mass, key 9.248\\times10^{-2}",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "aad3140325694c0c": {
    "verdict": "ok",
    "note": "3x-y=0.6 -> y=3x-0.6; x-2y=1.3 -> solving gives unique x=-0.02,y=-0.66 (different slopes 3 vs 0.5), so consistent with one solution. Node-verified substitution satisfies both equations."
@@ -82787,14 +82803,6 @@
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
-  "aba6201de305003d": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp147780304 part (a) (restating fs-idp166618800), mass, key 15.4",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -84287,14 +84295,6 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver (blind, masked pages)",
-    "result": "agrees"
-   }
-  },
-  "aec385e9c6c155d4": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp272460112 part (b), mass 2.2 × 10² g (table 219.7)",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -89064,10 +89064,6 @@
   "b89c5242fc63ef19": {
    "verdict": "ok",
    "note": "selfcheck; model answer = source solution verbatim, rubric clauses from it"
-  },
-  "b89df96c176c914f": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp89462576 part (b): selfcheck; model answer CORRECTED per rulings 4.2-3 (claims-ch04 F1, Appendix H Ka) to NaHS + NaHCO3; source prints Na2S + CO2 + H2O (erratum 3007). November 12, 2026 follow-up: two sentences added to the model answer saying why (H2S, Ka 8.9e-8, is weaker than H2CO3, 4.3e-7, and stronger than HCO3-, 4.7e-11; HS-, 1.0e-19, cannot protonate carbonate), re-read by the parent against Appendix H and the equation re-balanced by count (Na 2, C 1, O 3, H 2, S 1 on each side)"
   },
   "b8a004a7d5d92c2a": {
    "verdict": "ok",
@@ -93891,14 +93887,6 @@
    "verdict": "ok",
    "note": "Microbiology 9.4 source CT selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the hyperthermophile paragraph and the mesophile-pathogen sentence; states the section does not answer the health-care question)"
   },
-  "c2f0c46e71f450af": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp147780304 part (f) (restating fs-idp166618800), mass, key 86.05",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "c2f10fe4563e13a0": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -95564,6 +95552,14 @@
     "result": "agrees"
    }
   },
+  "c6470df1525edd68": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp147780304 part (a) (restating fs-idp166618800), mass, key 15.4 | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c64846743e9c7f69": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -96948,14 +96944,6 @@
     "result": "agrees"
    }
   },
-  "c9660d3963fefcd8": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp61309952 part (a) (restating fs-idp16477696), mass, key 1.67",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "c9678af474f6c2b2": {
    "verdict": "ok",
    "note": "source exercise fs-idm101514016 part (c) key 5.23 × 10^−12 m",
@@ -97990,6 +97978,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "cb3fcdfcf77aef05": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp89462576 part (b): selfcheck; model answer CORRECTED per rulings 4.2-3 (claims-ch04 F1, Appendix H Ka) to NaHS + NaHCO3; source prints Na2S + CO2 + H2O (erratum 3007). November 12, 2026 follow-up: two sentences added to the model answer saying why (H2S, Ka 8.9e-8, is weaker than H2CO3, 4.3e-7, and stronger than HCO3-, 4.7e-11; HS-, 1.0e-19, cannot protonate carbonate), re-read by the parent against Appendix H and the equation re-balanced by count (Na 2, C 1, O 3, H 2, S 1 on each side) | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "cb468e389571f9dd": {
    "verdict": "ok",
@@ -102236,14 +102228,6 @@
     "result": "agrees"
    }
   },
-  "d4d1a90272198e79": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp61309952 part (d) (restating fs-idp16477696), mass, key 13.8",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "d4d2de6e1d4b1c46": {
    "verdict": "ok",
    "note": "Review Question fs-idp6545232, solution A = osteoblast. Keyed as source. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -102407,6 +102391,14 @@
   "d50b98e83fcdd48f": {
    "verdict": "ok",
    "note": "x+4y-z=4, 2x+5y+8z=15, x+3y-3z=1. Checked keyed solution (1,1,1) by direct substitution into all three equations: 1+4-1=4, 2+5+8=15, 1+3-3=1. All hold. Matches CNXML lt_09_06_05. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "d51307d0d6ae649e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp61309952 part (e) (restating fs-idp16477696), mass: 16.3047 mol × 169.33 g/mol (BaO₂, this book's table) = 2760.9 → 2761 g, the moles carried unrounded; the source prints 2762. A data difference, row of source-print-differences.json (November 13, 2026). | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "d51717b163c2ed98": {
    "verdict": "ok",
@@ -103161,6 +103153,15 @@
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
+   }
+  },
+  "d6afdd51e1d6ea65": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm287695728 part (b) (key 0.94635 L / 1 qt) | stem re-worded November 14, 2026: the sentence naming the table of common conversion factors added; key unchanged, re-solved",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "The key is the row the stem asks for, as the module's table of common conversion factors prints it (1 qt = 0.94635 L); 0.94634, the other row (1 L = 1.0567 qt) inverted, is one unit away and is graded correct by the item's last-digit:1, which is why the allowance is 1. One key, both routes right."
    }
   },
   "d6b4bebd8748d1f8": {
@@ -105871,6 +105872,14 @@
   "dc6621e6fc29bc3a": {
    "verdict": "ok",
    "note": "source exercise fs-idp41635696 part (c), net ionic equation (source prints the same equation as the complete one); re-derived (atoms and charge balanced, lowest terms) against raw CNXML m68709; hint rewritten after checker round (hash updated); net-ionic hint replaced per rulings 4.1-2 (hash updated)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "dc756c3281e3e006": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm287695728 part (a) (key 1.0936 yd / 1 m), from the module's conversion table | stem re-worded November 14, 2026: the sentence naming the table of common conversion factors added; key unchanged, re-solved",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -110191,6 +110200,14 @@
     "result": "agrees"
    }
   },
+  "e568c539511e1187": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp61309952 part (a) (restating fs-idp16477696), mass, key 1.67 | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e56a815fba13065c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -110593,14 +110610,6 @@
   "e63cf16f8cda5042": {
    "verdict": "ok",
    "note": "KC 2 4.3 § body Vesicles and Vacuoles (fs-id1161247), m66449 — parent re-read against the module"
-  },
-  "e642bf1880a09836": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp61309952 part (b) (restating fs-idp16477696), mass, key 0.08644 | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "e645025ec50402f5": {
    "verdict": "ok",
@@ -113883,6 +113892,14 @@
   "ed9a1b0aa7f70d0a": {
    "verdict": "ok",
    "note": "Which of these is a vasoconstrictor? — re-read against the raw CNXML source item or the named module sentence/table row; single defensible option",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "ed9af2911cdba7a7": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp147780304 part (d) (restating fs-idp166618800), mass, key 73.3; last-digit:1 per rulings G1 (table carried unrounded gives 73.29) | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -117962,14 +117979,6 @@
   "f642c2cb79895dc9": {
    "verdict": "ok"
   },
-  "f64512abcc1de18a": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm287695728 part (c) (key 2.2046 lb / 1 kg)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "f6453f24dd8915fc": {
    "verdict": "ok",
    "note": "KC 5 23.2 § body Motility (fs-idp308677072), m66554 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
@@ -121490,14 +121499,6 @@
   "fd0dc53a23beaf31": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "fd1ceb3ce0638248": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp61309952 part (c) (restating fs-idp16477696), mass, key 542",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"

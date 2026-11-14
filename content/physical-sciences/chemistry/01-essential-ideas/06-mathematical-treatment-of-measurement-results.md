@@ -202,11 +202,11 @@ $$T_{{}^\circ\text{C}} = T_\text{K} - 273.15$$
 
 The 273.15 in these equations is exact: it is part of the definition of the Celsius scale. The figure below shows the relationship among the three temperature scales.
 
-*Source note:* the source says the 273.15 “has been determined experimentally, so it is not exact”. A Celsius temperature is defined as the kelvin temperature minus 273.15, exactly (BIPM, *The International System of Units*, 9th edition, 2019).
-
 {{< mediafigure src="chemistry/CNX_Chem_01_06_TempScales" kind="diagram" eager="true" alt="Three upright thermometers side by side, headed Fahrenheit, Celsius, and kelvin. A line labeled boiling point of water crosses all three at 212 °F, 100 °C, and 373.15 K. A line labeled freezing point of water crosses them at 32 °F, 0 °C, and 273.15 K. A bracket between the two lines on each thermometer is labeled 180 Fahrenheit degrees, 100 Celsius degrees, and 100 kelvins. A lower line joins −40 °F, −40 °C, and 233.15 K." >}}
 The Fahrenheit, Celsius, and kelvin temperature scales are compared.
 {{< /mediafigure >}}
+
+*Source note:* the source says the 273.15 “has been determined experimentally, so it is not exact”. A Celsius temperature is defined as the kelvin temperature minus 273.15, exactly (BIPM, *The International System of Units*, 9th edition, 2019).
 
 Although the kelvin (absolute) temperature scale is the official SI temperature scale, Celsius is commonly used in many scientific contexts and is the scale of choice for nonscience contexts in almost all areas of the world. Very few countries (the U.S. and its territories, the Bahamas, Belize, Cayman Islands, and Palau) still use Fahrenheit for weather, medicine, and cooking.
 
@@ -284,7 +284,7 @@ $$\begin{aligned} \text{K} &= {}^\circ\text{C} + 273.15 = \frac{5}{9}({}^\circ\t
 ### Explain the dimensional analysis (factor label) approach to mathematical calculations involving quantities
 
 {{< fillin
-  question="Write a conversion factor (as a ratio) for the number of: yards in 1 meter. Enter the number of yards that goes over 1 m."
+  question="Write a conversion factor (as a ratio) for the number of: yards in 1 meter. Use the table of common conversion factors above. Enter the number of yards that goes over 1 m."
   answer="1.0936"
   answerForm="sig-figs:5 last-digit:1"
   answerDisplay="$\tfrac{1.0936\ \text{yd}}{1\ \text{m}}$"
@@ -292,7 +292,7 @@ $$\begin{aligned} \text{K} &= {}^\circ\text{C} + 273.15 = \frac{5}{9}({}^\circ\t
 >}}
 
 {{< fillin
-  question="Write a conversion factor (as a ratio) for the number of: liters in 1 liquid quart. Enter the number of liters that goes over 1 qt."
+  question="Write a conversion factor (as a ratio) for the number of: liters in 1 liquid quart. Use the table of common conversion factors above. Enter the number of liters that goes over 1 qt."
   answer="0.94635"
   answerForm="sig-figs:5 last-digit:1"
   answerDisplay="$\tfrac{0.94635\ \text{L}}{1\ \text{qt}}$"
@@ -300,7 +300,7 @@ $$\begin{aligned} \text{K} &= {}^\circ\text{C} + 273.15 = \frac{5}{9}({}^\circ\t
 >}}
 
 {{< fillin
-  question="Write a conversion factor (as a ratio) for the number of: pounds in 1 kilogram. Enter the number of pounds that goes over 1 kg."
+  question="Write a conversion factor (as a ratio) for the number of: pounds in 1 kilogram. Use the table of common conversion factors above. Enter the number of pounds that goes over 1 kg."
   answer="2.2046"
   answerForm="sig-figs:5 last-digit:1"
   answerDisplay="$\tfrac{2.2046\ \text{lb}}{1\ \text{kg}}$"

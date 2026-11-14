@@ -216,7 +216,7 @@ coefficients
   answer="15.4"
   answerForm="sig-figs:3 last-digit:1"
   answerDisplay="$15.4\ \text{g}\ \ce{Cl2}$"
-  hint="Find the moles as in the previous item, then convert them to mass with a molar mass computed from the formula."
+  hint="Find the moles as in the previous item, keep that value unrounded, and convert it to mass with a molar mass computed from the formula."
 >}}
 
 {{< fillin
@@ -232,7 +232,7 @@ coefficients
   answer="9.248\times10^{-2}"
   answerForm="sig-figs:4 last-digit:1"
   answerDisplay="$9.248 \times 10^{-2}\ \text{g}\ \ce{O2}$"
-  hint="Find the moles as in the previous item, then convert them to mass with a molar mass computed from the formula."
+  hint="Find the moles as in the previous item, keep that value unrounded, and convert it to mass with a molar mass computed from the formula."
 >}}
 
 {{< fillin
@@ -248,7 +248,7 @@ coefficients
   answer="6.80\times10^{2}"
   answerForm="sig-figs:3 last-digit:1"
   answerDisplay="$6.80 \times 10^{2}\ \text{g}\ \ce{NaNO3}$"
-  hint="Find the moles as in the previous item, then convert them to mass with a molar mass computed from the formula."
+  hint="Find the moles as in the previous item, keep that value unrounded, and convert it to mass with a molar mass computed from the formula."
 >}}
 
 *Source note:* the answer graded here is written to the significant figures its data give; the source prints the same value to fewer.
@@ -268,7 +268,7 @@ coefficients
   answer="73.3"
   answerForm="sig-figs:3 last-digit:1"
   answerDisplay="$73.3\ \text{kg}\ \ce{CO2}$"
-  hint="Find the moles as in the previous item, then convert them to mass with a molar mass computed from the formula."
+  hint="Find the moles as in the previous item, keep that value unrounded, and convert it to mass with a molar mass computed from the formula."
 >}}
 
 {{< fillin
@@ -284,7 +284,7 @@ coefficients
   answer="2.330"
   answerForm="sig-figs:4 last-digit:1"
   answerDisplay="$2.330\ \text{kg}\ \ce{CuCO3}$"
-  hint="Find the moles as in the previous item, then convert them to mass with a molar mass computed from the formula."
+  hint="Find the moles as in the previous item, keep that value unrounded, and convert it to mass with a molar mass computed from the formula."
 >}}
 
 {{< mediafigure src="chemistry/CNX_Chem_04_03_etheneBr_img" kind="diagram" alt="A line of text with two structural formulas set into it: “The number of moles and the mass of” (a structure of two C atoms joined by a single bond, each C with one H atom above and one below, and a Br atom bonded to the outer side of each C) “formed by the reaction of 12.85 g of” (a structure of two C atoms joined by a double bond, each C bonded to two H atoms), and on a second line, “with an excess of Br₂.”" >}}
@@ -303,7 +303,7 @@ coefficients
   answer="86.05"
   answerForm="sig-figs:4 last-digit:1"
   answerDisplay="$86.05\ \text{g}\ \ce{C2H4Br2}$"
-  hint="Find the moles as in the previous item, then convert them to mass with a molar mass computed from the formula."
+  hint="Find the moles as in the previous item, keep that value unrounded, and convert it to mass with a molar mass computed from the formula."
 >}}
 
 {{< fillin
@@ -319,7 +319,7 @@ coefficients
   answer="1.67"
   answerForm="sig-figs:3 last-digit:1"
   answerDisplay="$1.67\ \text{g}\ \ce{Mg}$"
-  hint="Find the moles as in the previous item, then convert them to mass with a molar mass computed from the formula."
+  hint="Find the moles as in the previous item, keep that value unrounded, and convert it to mass with a molar mass computed from the formula."
 >}}
 
 {{< fillin
@@ -335,7 +335,7 @@ coefficients
   answer="0.08644"
   answerForm="sig-figs:4 last-digit:1"
   answerDisplay="$0.08644\ \text{g}\ \ce{O2}$"
-  hint="Find the moles as in the previous item, then convert them to mass with a molar mass computed from the formula."
+  hint="Find the moles as in the previous item, keep that value unrounded, and convert it to mass with a molar mass computed from the formula."
 >}}
 
 {{< fillin
@@ -351,7 +351,7 @@ coefficients
   answer="542"
   answerForm="sig-figs:3 last-digit:1"
   answerDisplay="$542\ \text{g}\ \ce{MgCO3}$"
-  hint="Find the moles as in the previous item, then convert them to mass with a molar mass computed from the formula."
+  hint="Find the moles as in the previous item, keep that value unrounded, and convert it to mass with a molar mass computed from the formula."
 >}}
 
 {{< fillin
@@ -367,7 +367,7 @@ coefficients
   answer="13.8"
   answerForm="sig-figs:3 last-digit:1"
   answerDisplay="$13.8\ \text{kg}\ \ce{H2O}$"
-  hint="Find the moles as in the previous item, then convert them to mass with a molar mass computed from the formula."
+  hint="Find the moles as in the previous item, keep that value unrounded, and convert it to mass with a molar mass computed from the formula."
 >}}
 
 {{< fillin
@@ -383,7 +383,7 @@ coefficients
   answer="2761"
   answerForm="sig-figs:4 last-digit:1"
   answerDisplay="$2{,}761\ \text{g}\ \ce{BaO2}$"
-  hint="Find the moles as in the previous item, then convert them to mass with a molar mass computed from the formula."
+  hint="Find the moles as in the previous item, keep that value unrounded, and convert it to mass with a molar mass computed from the formula."
 >}}
 
 {{< mediafigure src="chemistry/CNX_Chem_04_03_ethene_img" kind="diagram" alt="A line of text with two structural formulas set into it: “The number of moles and the mass of” (a structure of two C atoms joined by a double bond, each C bonded to two H atoms) “required to react with H₂O to produce 9.55 g of” (a chain H–C–C–O–H, each C with one H atom above and one below), ending with a period." >}}
@@ -402,7 +402,7 @@ coefficients
   answer="5.82"
   answerForm="sig-figs:3 last-digit:1"
   answerDisplay="$5.82\ \text{g}\ \ce{C2H4}$"
-  hint="Find the moles as in the previous item, then convert them to mass with a molar mass computed from the formula."
+  hint="Find the moles as in the previous item, keep that value unrounded, and convert it to mass with a molar mass computed from the formula."
 >}}
 
 {{< selfcheck question="Gallium chloride is formed by the reaction of 2.6 L of a 1.44 *M* solution of HCl according to the following equation: $\ce{2Ga + 6HCl -> 2GaCl3 + 3H2}$. Outline the steps necessary to determine the number of moles and mass of gallium chloride." hint="Trace a path through the reaction stoichiometry flowchart above." >}}
@@ -427,7 +427,7 @@ mol HCl ⟶ mol GaCl₃
   answer="2.2\times10^{2}"
   answerForm="sig-figs:2 last-digit:1"
   answerDisplay="$2.2 \times 10^{2}\ \text{g}\ \ce{GaCl3}$"
-  hint="Find the moles of gallium chloride as in the previous item, then convert them to mass with a molar mass computed from the formula."
+  hint="Find the moles of gallium chloride as in the previous item, keep that value unrounded, and convert it to mass with a molar mass computed from the formula."
 >}}
 
 {{< fillin

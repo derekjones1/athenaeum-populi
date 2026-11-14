@@ -8637,6 +8637,25 @@ function readMeasuredWriting(raw) {
 }
 
 /**
+ * `9.6x10^4` typed for 9.6 × 10⁴: the letter x is the times sign a plain
+ * keyboard has, and the first thing a learner types. Under
+ * `scientific-notation`, against a key that is one number in scientific
+ * notation (so no variable is in play), an x between a numeral and a power of
+ * ten is rewritten as `\times`; null when that is not the case in hand. A
+ * measured quantity (`sig-figs:<n>`) reads the same x in readNumeral.
+ * November 14, 2026: every such response was a bare 'incorrect'.
+ */
+const LETTER_TIMES = /(\d|\.)\s*[xX]\s*(?=10\s*\^)/;
+const SCIENTIFIC_KEY = /^[+-]?\s*(?:\d+\.?\d*|\.\d+)\s*(?:\\times|\\cdot)\s*10\s*\^\s*(?:\{\s*[+-]?\d+\s*\}|\d)$/;
+function letterTimes(studentRaw, answerRaw, form) {
+  const response = String(studentRaw ?? '');
+  if (!LETTER_TIMES.test(response)) return null;
+  if (!parseAnswerForm(form).tokens.includes('scientific-notation')) return null;
+  if (!SCIENTIFIC_KEY.test(bareLatex(answerRaw ?? '').trim())) return null;
+  return response.replace(LETTER_TIMES, '$1\\times');
+}
+
+/**
  * The verdict for a response to a measured-quantity key, as
  * `{ verdict, reason? }`, or null when the form declares no `sig-figs`, or
  * the key is not one nonzero numeral (then the ordinary grading applies).
@@ -8728,6 +8747,8 @@ export function measuredKeyProblem(answerRaw, spec, { mode } = {}) {
 export function checkAnswer(studentRaw, answerRaw, options = {}) {
   const measured = measuredVerdict(studentRaw, answerRaw, options);
   if (measured !== null) return measured.verdict;
+  const timesTyped = letterTimes(studentRaw, answerRaw, options.form);
+  if (timesTyped !== null) return checkAnswer(timesTyped, answerRaw, options);
   const family = integerFamilyVerdict(studentRaw, answerRaw, options);
   if (family !== null) return family;
   // A ± response is the set of its two branches (plusMinusExpansion). A key

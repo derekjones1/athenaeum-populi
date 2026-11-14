@@ -216,6 +216,12 @@ campaign, the figure-alt passes, and their kit — are archived under
   (`--shard i/n`, `--kind`, `--unverified`, `--verdict`, `--context N`)
 - `npm run ledger:merge <dir>` — fold pass result files into the ledger;
   result files that disagree about a hash fail the merge with nothing written
+- `npm run verify:typed -- [routeFilter] [--variants] [--book <path>]` —
+  with the build served on port 1315, type every graded key of a book
+  (default Chemistry) into the real fields as a learner would and fail on
+  one the page does not grade correct; `--variants` types a second ordinary
+  writing of each and lists what is refused. A chapter's close-out step
+  (`docs/briefs/chemistry/run.md` §4), not part of `test` or `ci`
 - `npm run build` — clean production build plus global Pagefind
 - `npm run check:build` — route, link, search, SEO (composed titles,
   breadcrumb/entity JSON-LD), and file-count gates

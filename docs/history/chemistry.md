@@ -2642,6 +2642,195 @@ difference with the SAME method on both tables, or do not classify it. And
 a fact handed to a verifier is a hypothesis: two of the parent's did not
 survive the CNXML.
 
+## A last pass before chapter 5 (November 14, 2026)
+
+Derek asked for one more pass over chapters 1–4, the Knowledge Check, and
+the appendices before chapter 5: anything that would stop a learner from
+reading, answering, and going on; outliers; and what would make the book
+better to use or cheaper to write. One session, from commit `1ca280fe`.
+
+### Shape
+
+- `npm run ci` first, as the baseline: green, 180 browser tests.
+- **Every key typed into the real field.** A script (now
+  `tools/build/typed-keys.mjs`, `npm run verify:typed`) answered all 702
+  graded items of the book in Chrome the way a learner with a plain
+  keyboard would — 337 fill-ins, 228 text-ins, 137 multiple choices, the
+  follow-ups reached through their gates — then typed a second ordinary
+  writing of each (`--variants`).
+- **Four Opus readers, one per chapter (chapter 3's also read the
+  Knowledge Check), read-only**, briefed as a first-year student who has
+  only this site: a blocker, a wrong statement, asked-before-taught, a hint
+  that misleads, an outlier, and at most five ideas. A fifth read the kit
+  and the history for what recurs, what is still done by hand, and what
+  chapter 5's answers will ask of the grader and the gates.
+- The parent verified each finding on the page, against the hint rules,
+  and against the errata log before acting.
+
+### What was found and fixed
+
+- **A scientific-notation answer typed with the letter x was a bare "Not
+  quite".** All 702 keys graded correct as typed with `*`; of the variants,
+  55 failed, every one a power of ten written `7.04 x 10^2`. MathLive hands
+  that over as `7.04x10^2`; the measured reader took 7.04 and read `x10^2`
+  as a unit. No stem or field says how to type a times sign, and x is what
+  a keyboard has. `readNumeral` now reads x or X between a numeral and a
+  power of ten as the times sign (and hands the form predicates `\times`);
+  under `scientific-notation` alone, against a key that is one such number,
+  `checkAnswer` does the same, so the 18 math-book items are covered too.
+  Unit rows, a browser test on 1.5, and a row of the playbook's table.
+  After the fix both passes are 702 of 702.
+- **1.6's three "write a conversion factor" items did not say which data
+  to use.** They are keyed to the five figures of 1.6's table (2.2046 lb),
+  1.4 taught "about 2.2 pounds", and only the hint named the table — "a
+  hint is not where a needed number lives". Each stem now says "Use the
+  table of common conversion factors above." Re-solved by a fresh solver
+  (3 of 3; the quart item's other row, inverted, is one unit away and is
+  inside its `last-digit:1`).
+- **4.3's moles-then-mass hint sent one learner wrong.** "Find the moles as
+  in the previous item, then convert them to mass": for carbon dioxide from
+  20.0 kg of carbon, the previous item's rounded 1.67 × 10³ mol gives
+  73.5 kg against 73.3 ± 0.1 — the only one of the thirteen pairs where the
+  rounded moles leave the allowance. The family's hint now says "keep that
+  value unrounded", on all thirteen (a member whose hint differs is a tell).
+- **3.1**: "the first step of the saccharin solution" could be read as its
+  first arrow (grams to moles); the hint now says "as far as its count of
+  molecules". **4.2**: the Na₂CO₃ + H₂S self-check sends the learner to
+  Appendix H, which nowhere says what a larger constant means; the hint
+  now does.
+- **1.6's Source note on 273.15 stood between "The figure below shows…" and
+  the figure** — the placement three later runs' fix checkers each caught,
+  never swept back to the pilot. Moved under the figure, and the rule is a
+  lint (a `*Source note:*` between a paragraph that points below and its
+  figure or table; appendices exempt). It fired on that page and no other.
+- Stale text: the playbook's open list still asked for a browser test that
+  types an equation (it exists, "chapter 4's fields say why"); "no section
+  links a table appendix before chapter 5" is true of exercises only (4.2
+  links Appendix H in a Source note); run.md's "Eight things chapter 4
+  added" heads nine.
+
+Eighteen items re-hashed (three stems, fifteen hints);
+`ledger-carry` carried the hint edits, the three stems were re-solved, and
+their provenance notes were carried from HEAD's ledger by hand
+(`ledger:provenance` still labels a Chemistry fill-in "author-built").
+
+### What the readers found sound
+
+No wrong key: about 75 numeric keys of 1.4–1.6, every key and worked
+example of chapter 3, and every mass-dependent number of 4.3–4.5 were
+recomputed, all 60 equation keys balance in atoms and charge, and nothing
+is left on the old atomic masses — text, alt, or the pixels of the six
+model crops. The Knowledge Check's calculation keys are the numbers its
+section pages print, and no item there answers another. The pager runs
+cover → chapter 1 … 3 → Knowledge Check → chapter 4 → appendices with no
+dead end.
+
+### Raised and not acted on, with the reason
+
+So the next reader need not raise them again:
+
+- **Hints the hint rules forbid.** "The dropped digit is a final 5" (1.5's
+  four half-even items), "cube the inch–centimeter factor" (1.6's engine),
+  the composition of baking soda and baking powder (1.2), silver's charge
+  on one item of a shared hint (2.7): each is the fact that decides the
+  item, or a tell. The gap the reader saw is real in three of them — see
+  "For Derek" below.
+- **Already ruled.** 2.2's "mass-to-charge" caption (reviewed twice, not
+  an erratum); 4.2's "(addition)" (erratum 3014); 4.5's "normal serum"
+  (3028); 4.4's gold-price address (handled in the footer); 3.3's CoCl₂
+  128.9 g/mol (2997 — but see below); 3.1's saccharin 9.20 × 10²⁰ (2981).
+- **The source's own shape.** "hydrate" in 2.5's Key terms and not 2.7's
+  (the source's glossaries), the nicotine ratios printed twice, FeSO₄(H₂O)₇,
+  a part's whole lead-in restated on each item (house form).
+- **From memory, not opened**: the EPA lead action level (15 ppb, a later
+  rule lowers it), D5W as percent by mass, the Cullinan's date, HgCl₂(s) in
+  4.5's serum stem against 4.2's solubility table. With chapter 3's six
+  claims the errata log still records as "no source opened", this is the
+  backlog run.md's own rule ("opens a source for every such finding")
+  says should not exist.
+
+### For Derek
+
+1. **Examples that round partway, before 3.3 teaches not to.** 2.3's
+   chlorine and neon examples round an intermediate; a learner who copies
+   them gets 69.16 and 30.84 for copper (keys 69.15, 30.85) and 24.30 for
+   magnesium (24.31), each told "Close, but not within rounding…". 3.1's
+   saccharin line prints 1.31 × 10²⁰ × 7 = 9.20 × 10²⁰. Either the
+   examples print their unrounded intermediates (as 4.4's copper was made
+   to retrace), or one sentence on carrying digits moves up to 1.5.
+2. **CoCl₂, 128.9 g/mol** (3.3): kept as the source prints it when keys
+   sat in a percent band; the band is gone, the book's table gives 129.83,
+   and a learner who uses the table gets 0.670 against 0.674 with no
+   message. Printing 129.83 and keying 0.670 is what ethanol got.
+3. **Long runs.** 1.6's second Practice group is 49 items; 3.1 has 33
+   molar-mass computations in a row before its multi-step items; 4.2 is 78
+   items, its sixteen half-reaction balances under "Compute the oxidation
+   states", the basic-solution step never worked in an example; 2.5 asks
+   one classification as 20 two- and three-option choices (two `sortbins`
+   would ask the same). Sub-headings and order are cheap; `sortbins` and a
+   worked basic-solution example are authoring.
+4. **Two body sentences**: squaring and cubing a conversion factor (1.6
+   never raises one to a power, and 161 in.³ to liters needs it), and a
+   link to Appendix C from 1.6 (1 qt = 32 fl oz is otherwise found only in
+   another item's stem).
+5. **State symbols**: a learner who types a reasonable state the stem does
+   not fix (Ca(OH)₂(s) by 4.2's own table, against the key's (aq)) is told
+   to check the states or leave them out. One line over an equation
+   Practice block, or in the field's guide, would say they are optional.
+6. **A metal compound named with Greek prefixes** ("titanium
+   tetrachloride", which 2.7's own body prints) gets a bare "Not quite";
+   the older-names message has no sibling for it.
+7. `AGENTS.md` still ends "Do not commit unless the user explicitly asks",
+   against the recipes' commit at a green close-out.
+
+### Before chapter 5: what its answers ask for
+
+The kit reader built chapter 5's keyed units against the real grader and
+gates (67 units: 43 numbers, 4 equations, 20 words and sentences); the
+parent re-ran three of the probes.
+
+| Shape | Count | Today |
+|---|---|---|
+| a negative key (ΔH) | 19 | graded right; `802` for `-802` is a bare "Not quite" — no sign message |
+| an answer in J beside answers in kJ | about 25 | `1.31` for 1310 J: no message |
+| one part, two values in two units ("1310 J; 313 cal") | 3 parts, 6 items | the keys gate confirms 313 under "in joules": it does not read the unit word |
+| a formation equation with a fractional coefficient | 2 | a key written `½O₂` reads as no equation; `1/2O₂` grades. A doubled answer is told "smallest whole-number coefficients" — wrong advice here, and `solve.md` tells the solver the same |
+| a thermochemical equation with its ΔH | 1 | not typeable as one answer; split into an equation and a fill-in, and the keys gate then refuses the equation alone |
+| Appendix G linked from an exercise | 5 + 1 example | works; the lookup test's added link becomes a real one |
+| 5.3, Exercise 29 and a Check Your Learning | 1 pair | each stem prints part of the other's key — no gate reads one section item against another (`kc leaks` does, for a check) |
+
+### What the kit reader recommends, in its order
+
+1. Teach the grader and gates the shapes above before the wave, each with
+   a test (the sign and the factor of a thousand are messages, not keys).
+2. Give `verify-section` a mode that runs both source gates and the leak
+   reading on one page: the two mistakes of every run — a ruling a gate
+   refuses, and an automatic probe that says "0 findings" — are both a
+   gate the author could not run.
+3. Script the checklist steps: the fact half of the run facts and the PDF
+   index range (`chemistry-prep.py`), a fill-in judge for
+   `ledger:provenance`, the errata-quote check that has been rewritten by
+   hand each run.
+4. Reorder run.md §0 by the step a rule applies at, not the chapter that
+   taught it (it is four dated lists, 29 bullets), and add an equation
+   text-in and a recomputed-example page to the exemplars.
+5. Cut the rendered-page reading to one reader on the page with a new
+   shape: 14 percent of chapter 4's tokens for no content finding, and
+   each thing it has found since chapter 1 is now a browser test. Every
+   other reading alone caught a defect and stays.
+
+### What the process should keep
+
+- **Type the keys.** Every Node gate grades the key as written; only a
+  browser shows what the field makes of keystrokes. One run of 702 items
+  takes about two minutes, and it is now a close-out step.
+- **A fresh reader re-raises what was ruled, and proposes what the rules
+  forbid.** About a third of the learner readers' findings were one or the
+  other. Next time the brief carries the hint rules' table and the
+  chapter's "Reviewed and not errata" list.
+- **A rule learned in chapter N is swept back to chapter 1** (run.md says
+  so; the Source note under 1.6's figure waited four chapters for a lint).
+
 ## The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under

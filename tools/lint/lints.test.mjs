@@ -3549,6 +3549,25 @@ test('a Markdown link whose target is an ellipsis, blank, or a TODO marker is a 
 });
 
 // ---------------------------------------------------------------------------
+// a Source note never separates a paragraph from the figure it introduces
+
+test('a Source note between a paragraph that points at the figure below and that figure is an error', () => {
+  const figure = '{{< mediafigure src="chemistry/x" kind="diagram" alt="Three thermometers side by side." >}}\n{{< /mediafigure >}}';
+  const note = '*Source note:* the source says the 273.15 is not exact; it is exact by definition.';
+  const footer = '<small>Adapted from [Book] by Authors, © OpenStax. Changes: none.</small>';
+  const between = (lead) => `# T\n\n${lead}\n\n${note}\n\n${figure}\n\n${footer}\n`;
+  const wanted = (src, file = 'content/physical-sciences/chemistry/01-a/06-b.md') => lintHugo(src, file).errors.filter((e) => e.includes('put the note directly after the figure or table'));
+  assert.equal(wanted(between('The 273.15 is exact. The figure below shows the relationship among the three temperature scales.')).length, 1);
+  assert.equal(wanted(between('The three scales are compared in the following figure.')).length, 1);
+  assert.equal(wanted(`# T\n\nThe values are listed below.\n\n${note}\n\n| a | b |\n|---|---|\n| 1 | 2 |\n\n${footer}\n`).length, 1, 'a table the paragraph introduces');
+  // The note after the figure is the rule; a note over a figure its paragraph
+  // does not introduce is no error; and an appendix's note stands over its table.
+  assert.deepEqual(wanted(`# T\n\nThe figure below shows the three scales.\n\n${figure}\n\n${note}\n\n${footer}\n`), []);
+  assert.deepEqual(wanted(between('The 273.15 in these equations is exact.')), []);
+  assert.deepEqual(wanted(between('The structures are shown below.'), 'content/physical-sciences/chemistry/appendices/h-ionization-constants-of-weak-acids.md'), []);
+});
+
+// ---------------------------------------------------------------------------
 // attribution footer — no run-machinery language
 
 test('an attribution footer naming run machinery (where a correction was logged or reported) is an error', () => {

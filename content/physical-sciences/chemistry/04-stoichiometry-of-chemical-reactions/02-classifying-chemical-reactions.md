@@ -789,7 +789,7 @@ SrSO₄(s) + H₂O
   hint="Identify the acid and the base, write the salt and the other products they form, and balance by inspection."
 >}}
 
-{{< selfcheck question="Complete and balance the equation of the following reaction, which could be used to remove hydrogen sulfide from natural gas: Na₂CO₃(aq) + H₂S(g) ⟶." hint="Compare the strengths of the acids H₂S and H₂CO₃, using the acid ionization constants in Appendix H." >}}
+{{< selfcheck question="Complete and balance the equation of the following reaction, which could be used to remove hydrogen sulfide from natural gas: Na₂CO₃(aq) + H₂S(g) ⟶." hint="Compare the strengths of the acids H₂S and H₂CO₃, using the acid ionization constants in Appendix H: the larger the constant, the stronger the acid." >}}
 Na₂CO₃(aq) + H₂S(g) ⟶ NaHS(aq) + NaHCO₃(aq). Hydrogen sulfide is a weaker acid than carbonic acid, so it cannot drive carbon dioxide out of a carbonate as a strong acid does. It gives one hydrogen ion to the carbonate ion, which becomes the hydrogen carbonate ion, HCO₃⁻, and what is left of the hydrogen sulfide is the ion HS⁻.
 ===CHECKS===
 Na₂CO₃(aq) + H₂S(g)

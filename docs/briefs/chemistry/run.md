@@ -108,7 +108,7 @@ Six things chapter 3 added (`docs/history/chemistry.md`, "Chapter 3"):
 - **A clerk that reports in seconds, or in one word, is read on disk**
   before its output is used.
 
-Eight things chapter 4 added (`docs/history/chemistry.md`, "Chapter 4"):
+Nine things chapter 4 added (`docs/history/chemistry.md`, "Chapter 4"):
 
 - **The PDF range is checked as INDEXES, to the last exercise page.** The
   parent rendered to index 204 after reading the printed folio 204; the
@@ -238,8 +238,8 @@ Eight things chapter 4 added (`docs/history/chemistry.md`, "Chapter 4"):
    still listed and linked, and every OTHER appendix still needs its link
    on each item that needs it. A link to a table appendix (C–M) opens the
    table over the page with a row filter (playbook, "Appendices"); the
-   author adds nothing for it. **Chapter 5 is the first chapter with such
-   a link** (five keyed exercises and one example, all Appendix G): its
+   author adds nothing for it. **Chapter 5 is the first chapter whose
+   items carry such a link** (five keyed exercises and one example, all Appendix G): its
    parent replaces the link the browser test adds at run time
    (`tests/browser-check.spec.mjs`, "a table appendix opens over the
    page") with the page and stem of the first exercise that links
@@ -427,7 +427,17 @@ the CNXML and the page.
    (`PLAYWRIGHT_SKIP_BUILD=1 npm run test:browser`). The Chemistry browser
    tests walk every section page the build has: a display row wider than
    the column, a number in scientific notation split across lines, and a
-   scaled-down figure at full width fail there and nowhere else.
+   scaled-down figure at full width fail there and nowhere else. With the
+   build served (`npm run serve:public`), **type the chapter's keys into
+   the real fields**: `npm run verify:typed -- <chapter folder>` types
+   every fill-in, formula, equation, name, and choice of the chapter as a
+   learner would and fails on a key the page does not grade correct; then
+   `-- <chapter folder> --variants` types a second ordinary writing of
+   each (the letter x for the times sign, a signed oxidation state, a bare
+   charge) and lists each one refused, with the page's feedback. Read that
+   list: a reasonable writing answered with a bare "Not quite" is a
+   finding (November 14, 2026: 55 scientific-notation items refused
+   `7.04 x 10^2`, which no Node gate types).
 7. **Lessons**: a one-line rule into the playbook section it belongs to
    (and both briefs when it is a hint or leak rule); the narrative into
    `docs/history/chemistry.md`; a lint or test where one can hold it. Every

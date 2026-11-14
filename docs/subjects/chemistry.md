@@ -807,8 +807,10 @@ after the rule was written, so the line is drawn by pairs:
 - **A body fact corrected against an outside source** is printed corrected,
   with an italic `*Source note:*` paragraph directly after the corrected
   paragraph that says what the source prints and cites the authority — or
-  directly after the figure or table, when the paragraph introduces one. A
-  corrected Key-terms definition takes its note directly after the list.
+  directly after the figure or table, when the paragraph introduces one
+  (lint: a note between a paragraph that points "below" and its figure or
+  table). A corrected Key-terms definition takes its note directly after
+  the list.
   **A claim that is loose rather than wrong keeps the source's words and
   takes a Source note that says what is missing** (2.5: "one of their
   discoveries" of Tacke and Noddack, of whose two reported elements one
@@ -1125,7 +1127,7 @@ What the learner sees, against the key `0.674` under `sig-figs:3 last-digit:1`:
 
 | Typed | Verdict | Feedback |
 |---|---|---|
-| `0.674`, `0.675`, `0.673`, `6.74×10⁻¹`, `6.74e-1` | correct | |
+| `0.674`, `0.675`, `0.673`, `6.74×10⁻¹`, `6.74e-1`, `6.74 x 10^-1` | correct | The letter x is the times sign a plain keyboard has: between a numeral and a power of ten it is read as one *(November 14, 2026: it was read as a unit, and every scientific-notation answer typed that way was a bare "Not quite")* |
 | `0.67442` | form | "That value is right — now round it to 3 significant figures." |
 | `0.67` | form | "That agrees with the answer as far as it goes — now give it to 3 significant figures." Said one figure short, when the response is what the key rounds to — and, at any count, of the key's own number with its zeros left off: `8` and `8.0` against `8.00` *(November 12, 2026: `8` was plainly incorrect)*. `0.7` and the stem's round `90` against `89.4` are still incorrect with nothing said |
 | `6.52/128.9/0.0750` written as a fraction | form | "…now finish the calculation and enter just the result, to 3 significant figures." |
@@ -1405,17 +1407,13 @@ What chapter 1 settled, and what the scan of the book counted, are in
 - the item forms the formula and equation fields do not yet read — each a
   `selfcheck` until its chapter settles it ("Formulas and equations", the
   last rule);
-- a browser test that types an EQUATION into the real field (chapter 4 is
-  the first page with one). A formula is typed now: the suite types an ion
-  and a grouped formula into 2.6's fields and reads the "Read as" line and
-  the grader's message;
 - a long table's header row scrolls out of view ON THE APPENDIX'S OWN
   PAGE (Appendix G is 403 rows): the theme sets a table `display: block`,
   so a sticky header there needs a table render hook, which would change
   every table on the site. Opened from a section the heading row does
   stay (the lookup owns its scroller);
 - the browser test of the lookup adds its link to a section page at run
-  time, since no section links a table appendix before chapter 5. That
-  chapter's run replaces the added link with its first exercise that
-  links Appendix G (`tests/browser-check.spec.mjs`, "a table appendix
+  time, since no EXERCISE links a table appendix before chapter 5 (4.2
+  links Appendix H once, in a Source note). That chapter's run replaces
+  the added link with its first exercise that links Appendix G (`tests/browser-check.spec.mjs`, "a table appendix
   opens over the page").
