@@ -15,8 +15,8 @@ weight: 4
 {{< callout type="info" >}}
   **Test yourself on Chapters 1–3.** Every calculation and formula question
   below, and a few of the others, re-asks a worked example from these
-  chapters and is graded against the answer the source prints; work each
-  one without looking back at its solution. The rest were written from the
+  chapters and is graded against the answer that example reaches on its
+  section page; work each one without looking back at its solution. The rest were written from the
   chapters' own text. No question repeats a question from the section
   pages. There are no hints: this is a self-test. Questions
   are grouped by the section they come from, so a miss points you to exactly
@@ -335,9 +335,9 @@ since the masses of the individual atoms are drastically different
 
 {{< fillin
   question="Our bodies synthesize protein from amino acids. One of these amino acids is glycine, which has the molecular formula C₂H₅O₂N. How many moles of glycine molecules are contained in 28.35 g of glycine?"
-  answer="0.3776"
+  answer="0.3777"
   answerForm="sig-figs:4 last-digit:1"
-  answerDisplay="$0.3776\ \text{mol glycine}$"
+  answerDisplay="$0.3777\ \text{mol glycine}$"
 >}}
 
 ### 3.2 Determining Empirical and Molecular Formulas
@@ -405,4 +405,4 @@ mass-volume percentage
 
 ---
 
-<small>This knowledge check is written for Chapters 1–3 of [Chemistry 2e](https://openstax.org/books/chemistry-2e/pages/1-introduction) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: every fill-in and every formula question, and the multiple-choice and name questions that give a worked example's own data, re-ask the question of a worked example of the named section and are graded against the answer the source's solution prints, with a sentence added where the question leaves open which quantity to enter or in what unit, a lettered example asked as one of its parts with its lead-in restated in the singular, an example that asks for more than one thing asked for one of them, and a parenthetical pointer to a photograph or a table dropped; every other question is locally written from the pinned text of the chapters' own modules — their key terms, summaries, and body passages — and none is transcribed from the book's exercise sets, which the section pages already carry; no question carries a hint, and every self-check carries a rubric that decomposes a model answer made of the module's own sentences.</small>
+<small>This knowledge check is written for Chapters 1–3 of [Chemistry 2e](https://openstax.org/books/chemistry-2e/pages/1-introduction) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: every fill-in and every formula question, and the multiple-choice and name questions that give a worked example's own data, re-ask the question of a worked example of the named section and are graded against the answer its solution reaches — the answer the source's solution prints, or, where that answer depends on an atomic mass, the answer the section page works from this book's periodic table (Appendix A, IUPAC's abridged standard atomic weights) — with a sentence added where the question leaves open which quantity to enter or in what unit, a lettered example asked as one of its parts with its lead-in restated in the singular, an example that asks for more than one thing asked for one of them, and a parenthetical pointer to a photograph or a table dropped; every other question is locally written from the pinned text of the chapters' own modules — their key terms, summaries, and body passages — and none is transcribed from the book's exercise sets, which the section pages already carry; no question carries a hint, and every self-check carries a rubric that decomposes a model answer made of the module's own sentences.</small>

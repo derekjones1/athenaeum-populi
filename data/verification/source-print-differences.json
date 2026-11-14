@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "note": "Fill-in keys that differ from the number the pinned source prints only because this book’s periodic table (data/chemistry/elements.json) carries other atomic masses than the source’s answer key was worked from. Written by `node tools/verify/verify-source-keys.mjs --write-register`; verify-source-keys fails when a run computes other rows. Review the diff of this file like a key change: `units` is the distance at the coarser of the two last places.",
+  "note": "Fill-in keys, on items that fetch an atomic mass, that stand a unit or two of the last place from the number the pinned source prints: this book’s periodic table (data/chemistry/elements.json) carries other atomic masses than the source’s answer key was worked from, and a key here is carried unrounded where the source sometimes rounded a step on the way. Written by `node tools/verify/verify-source-keys.mjs --write-register`; verify-source-keys fails when a run computes other rows. Review the diff of this file like a key change: `units` is the distance at the coarser of the two last places.",
   "differences": [
     {"page":"content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md","exercise":"fs-idm73270640#check","key":"310.174","sourcePrint":"310.18","units":1},
     {"page":"content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md","exercise":"fs-idm8741648#check","key":"4.586\\times10^{22}","sourcePrint":"4.585 × 10^{22}","units":1},
@@ -21,6 +21,10 @@
     {"page":"content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md","exercise":"fs-idp56656128(a)","key":"197.38","sourcePrint":"197.382","units":0},
     {"page":"content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md","exercise":"fs-idp56656128(b)","key":"257.16","sourcePrint":"257.163","units":0},
     {"page":"content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md","exercise":"fs-idp56656128(c)","key":"194.194","sourcePrint":"194.193","units":1},
-    {"page":"content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md","exercise":"fs-idp56656128(e)","key":"306.466","sourcePrint":"306.464","units":2}
+    {"page":"content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md","exercise":"fs-idp56656128(e)","key":"306.466","sourcePrint":"306.464","units":2},
+    {"page":"content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/03-reaction-stoichiometry.md","exercise":"fs-idp61309952(e)","key":"16.30","sourcePrint":"16.31","units":1},
+    {"page":"content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/03-reaction-stoichiometry.md","exercise":"fs-idp61309952(e)","key":"2761","sourcePrint":"2762","units":1},
+    {"page":"content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/03-reaction-stoichiometry.md","exercise":"fs-idp61309952(f)","key":"5.82","sourcePrint":"5.81","units":1},
+    {"page":"content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/05-quantitative-chemical-analysis.md","exercise":"fs-idp69077568#check","key":"23.77","sourcePrint":"23.76","units":1}
   ]
 }

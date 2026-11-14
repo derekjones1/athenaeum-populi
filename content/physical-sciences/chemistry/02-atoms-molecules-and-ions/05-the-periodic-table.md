@@ -29,7 +29,7 @@ Dimitri Mendeleev in Russia (1869) and Lothar Meyer in Germany (1870) independen
 
 By the twentieth century, it became apparent that the periodic relationship involved atomic numbers rather than atomic masses. The modern statement of this relationship, the **periodic law**, is as follows: *the properties of the elements are periodic functions of their atomic numbers*. A modern **periodic table** arranges the elements in increasing order of their atomic numbers and groups atoms with similar properties in the same vertical column (shown in the figure below). Each box represents an element and contains its atomic number, symbol, average atomic mass, and (sometimes) name. The elements are arranged in seven horizontal rows, called **periods** or **series**, and 18 vertical columns, called **groups**. Groups are labeled at the top of each column. In the United States, the labels traditionally were Roman numerals with capital letters. However, IUPAC recommends that the numbers 1 through 18 be used, and these labels are more common. For the table to fit on a single page, parts of two of the rows, a total of 15 columns, are usually written below the main body of the table.
 
-{{< mediafigure src="chemistry/CNX_Chem_02_05_PerTable1" kind="diagram" alt="The periodic table of the elements: a box for each of the 118 elements in 18 numbered groups (columns) and 7 numbered periods (rows), each box printing an element’s atomic number, symbol, atomic mass, and name. The boxes for elements 57–71 and 89–103 are set in two separate rows below the main table. A color-code key shades boxes as metal, metalloid, or nonmetal and colors symbols as solid, liquid, or gas. An enlarged box for hydrogen labels its atomic number, 1; symbol, H; atomic mass, 1.008; and name." longdesc="Groups are numbered 1 to 18 across the top and periods 1 to 7 down the left side. Period 1 holds hydrogen in group 1 and helium in group 18. Periods 2 and 3 each hold two elements in groups 1 and 2 and six in groups 13 to 18. Periods 4 and 5 hold one element in every group. In periods 6 and 7 the group 3 box is outlined in red and reads 57-71, La–Lu, with one asterisk, and 89-103, Ac–Lr, with two asterisks; a curved arrow leads from the two boxes to two rows of fifteen boxes below the main table, marked with the same asterisks. Shading, by the color-code key at the lower right: metalloid boxes are B, Si, Ge, As, Sb, Te, and At; nonmetal boxes are H, C, N, O, F, P, S, Cl, Se, Br, I, and the six group 18 elements; the boxes of Mt, Ds, Rg, Nh, Fl, Mc, Lv, Ts, and Og are white, a shade the key does not list; every other box is shaded as a metal. Symbol colors, by the key: red, for gas, on H, N, O, F, Cl, He, Ne, Ar, Kr, Xe, and Rn; blue, for liquid, on Br and Hg; black, for solid, on all others. The masses of Tc, Pm, the elements from Po to Ac, and those from Np on are printed in square brackets." >}}
+{{< mediafigure src="chemistry/periodic-table" kind="diagram" alt="The periodic table of the elements: 118 boxes in 18 numbered groups (columns) and 7 numbered periods (rows), each box printing an element’s atomic number, symbol, atomic mass, and name. The boxes for elements 57–71 and 89–103 are set in two separate rows below the main table. A color-code key shades boxes as metal, metalloid, nonmetal, or not classified and colors symbols as solid, liquid, or gas. An enlarged box for hydrogen labels its atomic number, 1; symbol, H; atomic mass, 1.0080; and name." longdesc="Groups are numbered 1 to 18 across the top and periods 1 to 7 down the left side. Period 1 holds hydrogen in group 1 and helium in group 18. Periods 2 and 3 each hold two elements in groups 1 and 2 and six in groups 13 to 18. Periods 4 and 5 hold one element in every group. In periods 6 and 7 the two group 3 boxes, outlined together in red, read 57–71, La–Lu, with one asterisk, and 89–103, Ac–Lr, with two asterisks; a red arrow leads from them to two rows of fifteen boxes below the main table, marked with the same asterisks. Shading, by the color-code key: metalloid boxes are B, Si, Ge, As, Sb, Te, and At; nonmetal boxes are H, C, N, O, F, P, S, Cl, Se, Br, I, and the six group 18 elements; the boxes of Mt, Ds, Rg, Nh, Fl, Mc, Lv, Ts, and Og are white, which the key labels not classified; every other box is shaded as a metal. Symbol colors, by the key: red, for gas, on H, N, O, F, Cl, He, Ne, Ar, Kr, Xe, and Rn; blue, for liquid, on Br and Hg; black, for solid, on all others. The masses of Tc, Pm, the elements from Po to Ac, and those from Np on are printed in square brackets. A line under the table says that the atomic masses are IUPAC’s Abridged Standard Atomic Weights 2024 and that a mass in brackets is a mass number, for an element with no standard atomic weight." >}}
 Elements in the periodic table are organized according to their properties.
 {{< /mediafigure >}}
 
@@ -145,28 +145,28 @@ In studying the periodic table, you might have noticed something about the atomi
 ### State the periodic law and explain the organization of elements in the periodic table
 
 {{< textin
-  question="Using the periodic table, identify the lightest member of the following group: noble gases. Enter the element’s symbol."
+  question="Using the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), identify the lightest member of the following group: noble gases. Enter the element’s symbol."
   answer="He"
   answerForm="formula"
   hint="Find the column of the named group in the periodic table above, check in the text which elements of that column the group’s name covers, then find the member with the smallest atomic mass; the table of Appendix A also lists each element’s group and atomic mass."
 >}}
 
 {{< textin
-  question="Using the periodic table, identify the lightest member of the following group: alkaline earth metals. Enter the element’s symbol."
+  question="Using the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), identify the lightest member of the following group: alkaline earth metals. Enter the element’s symbol."
   answer="Be"
   answerForm="formula"
   hint="Find the column of the named group in the periodic table above, check in the text which elements of that column the group’s name covers, then find the member with the smallest atomic mass; the table of Appendix A also lists each element’s group and atomic mass."
 >}}
 
 {{< textin
-  question="Using the periodic table, identify the lightest member of the following group: alkali metals. Enter the element’s symbol."
+  question="Using the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), identify the lightest member of the following group: alkali metals. Enter the element’s symbol."
   answer="Li"
   answerForm="formula"
   hint="Find the column of the named group in the periodic table above, check in the text which elements of that column the group’s name covers, then find the member with the smallest atomic mass; the table of Appendix A also lists each element’s group and atomic mass."
 >}}
 
 {{< textin
-  question="Using the periodic table, identify the lightest member of the following group: chalcogens. Enter the element’s symbol."
+  question="Using the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), identify the lightest member of the following group: chalcogens. Enter the element’s symbol."
   answer="O"
   answerForm="formula"
   hint="Find the column of the named group in the periodic table above, check in the text which elements of that column the group’s name covers, then find the member with the smallest atomic mass; the table of Appendix A also lists each element’s group and atomic mass."
@@ -266,7 +266,7 @@ their atomic numbers
 ### Identify metals, nonmetals, and metalloids by their properties and/or location on the periodic table
 
 {{< multiplechoice
-  question="Using the periodic table, classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: uranium. Select metal or nonmetal."
+  question="Using the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: uranium. Select metal or nonmetal."
   answer="metal"
   hint="Find the element’s box in the periodic table above and read its shading against the color code."
 >}}
@@ -275,7 +275,7 @@ nonmetal
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Using the periodic table, classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: uranium. Select the further classification."
+  question="Using the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: uranium. Select the further classification."
   answer="inner transition metal"
   hint="Ask which part of the table holds the element: the columns labeled 1, 2, and 13–18, the columns labeled 3–12, or the two rows at the bottom."
 >}}
@@ -285,7 +285,7 @@ inner transition metal
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Using the periodic table, classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: bromine. Select metal or nonmetal."
+  question="Using the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: bromine. Select metal or nonmetal."
   answer="nonmetal"
   hint="Find the element’s box in the periodic table above and read its shading against the color code."
 >}}
@@ -294,7 +294,7 @@ nonmetal
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Using the periodic table, classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: bromine. Select the further classification."
+  question="Using the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: bromine. Select the further classification."
   answer="main-group (representative) element"
   hint="Ask which part of the table holds the element: the columns labeled 1, 2, and 13–18, the columns labeled 3–12, or the two rows at the bottom."
 >}}
@@ -304,7 +304,7 @@ inner transition metal
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Using the periodic table, classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: strontium. Select metal or nonmetal."
+  question="Using the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: strontium. Select metal or nonmetal."
   answer="metal"
   hint="Find the element’s box in the periodic table above and read its shading against the color code."
 >}}
@@ -313,7 +313,7 @@ nonmetal
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Using the periodic table, classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: strontium. Select the further classification."
+  question="Using the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: strontium. Select the further classification."
   answer="main-group (representative) element"
   hint="Ask which part of the table holds the element: the columns labeled 1, 2, and 13–18, the columns labeled 3–12, or the two rows at the bottom."
 >}}
@@ -323,7 +323,7 @@ inner transition metal
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Using the periodic table, classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: neon. Select metal or nonmetal."
+  question="Using the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: neon. Select metal or nonmetal."
   answer="nonmetal"
   hint="Find the element’s box in the periodic table above and read its shading against the color code."
 >}}
@@ -332,7 +332,7 @@ nonmetal
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Using the periodic table, classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: neon. Select the further classification."
+  question="Using the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: neon. Select the further classification."
   answer="main-group (representative) element"
   hint="Ask which part of the table holds the element: the columns labeled 1, 2, and 13–18, the columns labeled 3–12, or the two rows at the bottom."
 >}}
@@ -342,7 +342,7 @@ inner transition metal
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Using the periodic table, classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: gold. Select metal or nonmetal."
+  question="Using the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: gold. Select metal or nonmetal."
   answer="metal"
   hint="Find the element’s box in the periodic table above and read its shading against the color code."
 >}}
@@ -351,7 +351,7 @@ nonmetal
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Using the periodic table, classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: gold. Select the further classification."
+  question="Using the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: gold. Select the further classification."
   answer="transition metal"
   hint="Ask which part of the table holds the element: the columns labeled 1, 2, and 13–18, the columns labeled 3–12, or the two rows at the bottom."
 >}}
@@ -361,7 +361,7 @@ inner transition metal
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Using the periodic table, classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: americium. Select metal or nonmetal."
+  question="Using the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: americium. Select metal or nonmetal."
   answer="metal"
   hint="Find the element’s box in the periodic table above and read its shading against the color code."
 >}}
@@ -370,7 +370,7 @@ nonmetal
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Using the periodic table, classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: americium. Select the further classification."
+  question="Using the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: americium. Select the further classification."
   answer="inner transition metal"
   hint="Ask which part of the table holds the element: the columns labeled 1, 2, and 13–18, the columns labeled 3–12, or the two rows at the bottom."
 >}}
@@ -380,7 +380,7 @@ inner transition metal
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Using the periodic table, classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: rhodium. Select metal or nonmetal."
+  question="Using the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: rhodium. Select metal or nonmetal."
   answer="metal"
   hint="Find the element’s box in the periodic table above and read its shading against the color code."
 >}}
@@ -389,7 +389,7 @@ nonmetal
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Using the periodic table, classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: rhodium. Select the further classification."
+  question="Using the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: rhodium. Select the further classification."
   answer="transition metal"
   hint="Ask which part of the table holds the element: the columns labeled 1, 2, and 13–18, the columns labeled 3–12, or the two rows at the bottom."
 >}}
@@ -399,7 +399,7 @@ inner transition metal
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Using the periodic table, classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: sulfur. Select metal or nonmetal."
+  question="Using the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: sulfur. Select metal or nonmetal."
   answer="nonmetal"
   hint="Find the element’s box in the periodic table above and read its shading against the color code."
 >}}
@@ -408,7 +408,7 @@ nonmetal
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Using the periodic table, classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: sulfur. Select the further classification."
+  question="Using the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: sulfur. Select the further classification."
   answer="main-group (representative) element"
   hint="Ask which part of the table holds the element: the columns labeled 1, 2, and 13–18, the columns labeled 3–12, or the two rows at the bottom."
 >}}
@@ -418,7 +418,7 @@ inner transition metal
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Using the periodic table, classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: carbon. Select metal or nonmetal."
+  question="Using the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: carbon. Select metal or nonmetal."
   answer="nonmetal"
   hint="Find the element’s box in the periodic table above and read its shading against the color code."
 >}}
@@ -427,7 +427,7 @@ nonmetal
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Using the periodic table, classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: carbon. Select the further classification."
+  question="Using the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: carbon. Select the further classification."
   answer="main-group (representative) element"
   hint="Ask which part of the table holds the element: the columns labeled 1, 2, and 13–18, the columns labeled 3–12, or the two rows at the bottom."
 >}}
@@ -437,7 +437,7 @@ inner transition metal
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Using the periodic table, classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: potassium. Select metal or nonmetal."
+  question="Using the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: potassium. Select metal or nonmetal."
   answer="metal"
   hint="Find the element’s box in the periodic table above and read its shading against the color code."
 >}}
@@ -446,7 +446,7 @@ nonmetal
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Using the periodic table, classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: potassium. Select the further classification."
+  question="Using the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), classify the following element as a metal or a nonmetal, and then further classify it as a main-group (representative) element, transition metal, or inner transition metal: potassium. Select the further classification."
   answer="main-group (representative) element"
   hint="Ask which part of the table holds the element: the columns labeled 1, 2, and 13–18, the columns labeled 3–12, or the two rows at the bottom."
 >}}
@@ -457,4 +457,4 @@ inner transition metal
 
 ---
 
-<small>This section is adapted from [Chemistry 2e, Section 2.5: The Periodic Table](https://openstax.org/books/chemistry-2e/pages/2-5-the-periodic-table) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the three figures re-encoded as WebP and all three marked as diagrams (the Mendeleev composite of a photograph and a printed table, and the two periodic tables); every figure’s alt text rewritten from the image, with an extended description added to each (the source alt of Mendeleev’s table misreads many of its entries, the source alt of the periodic table gives superseded names for four of the newest elements, which the image prints with their current names, and calls copernicium a liquid, which the image colors as a solid, and the source alt of the group-names figure says “earth alkaline metals” and counts group 12 among the main-group elements, which the drawing labels and encloses otherwise); references to numbered figures replaced by “(shown in the figure below)”; the source’s footnote on group 12 set as a parenthetical after its sentence; one sentence added after the periodic table figure saying that the contents of its boxes, with each element’s group and period, are listed as a table in Appendix A, linked to its page in this book; the Link to Learning box rendered as a callout, its link texts “link” and “one” extended over the source’s following words so that each describes its destination; the worked example set as prose, its lettered parts as separate lines, followed by its Check Your Learning as four text-recall items, one per element, the lead-in restated in the singular and the printed answers serving as their keys rather than appearing as text; the end-of-section exercises adapted into the interactive Practice block, with the 4 exercises the source keys carried as 36 items: 20 multiple-choice items for the classification exercise, two per element, metal or nonmetal first and then the further classification, the source’s answer “representative element” keyed as the stem’s own option “main-group (representative) element”; 12 formula text-recall items, for the four lightest group members, the four symbols of the name-and-symbol exercise, and the four isotope symbols, each asking for both the mass number and the atomic number; and 4 text-recall items for the names of the name-and-symbol exercise, given before each symbol; the lead-ins that address the parts together restated in the singular for one part, and each stem closed by a sentence naming what to enter or select; the 4 exercises the source prints no answer for are omitted; one filler item added to the periodic-law group, after the lightest-member and name-and-symbol exercises placed there, since no keyed exercise asks about the periodic law itself: a multiple choice on the body sentence that says what the periodic relationship was found to involve, its two options the two quantities that sentence names; the representative-element definition in the key terms and the count of columns written below the table corrected, each with a Source note; the Mendeleev figure’s caption corrected, with a Source note, to describe panel (b) as his table of 1871; the sentence saying that purines contain oxygen corrected, with a Source note; Source notes added, the text kept as printed, after the paragraph on the search for the missing elements of group 7 and after the paragraph on masses printed in square brackets; “Manganese” lowercased in the paragraph on the missing elements of group 7; “Hitchens” corrected to “Hitchings” twice in the paragraph on Gertrude Elion; a stray “a” before “main-group elements” removed from the summary; and, in the key terms, “period table” corrected to “periodic table” in the definition of series and “periodic function” to “periodic functions” in the definition of the periodic law.</small>
+<small>This section is adapted from [Chemistry 2e, Section 2.5: The Periodic Table](https://openstax.org/books/chemistry-2e/pages/2-5-the-periodic-table) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: two of the three figures re-encoded as WebP (the Mendeleev composite of a photograph and a printed table, and the group-names outline of the periodic table) and the modern periodic table replaced by this book’s own drawing of it (Appendix A), which keeps the layout, color code, and enlarged hydrogen box of the source’s image, prints each atomic mass as the abridged standard atomic weight of the International Union of Pure and Applied Chemistry where the source’s image prints a value rounded to four figures, and adds a “Not classified” entry to the color-code key for the nine boxes the source leaves unshaded; all three marked as diagrams; every figure’s alt text rewritten from the image, with an extended description added to each (the source alt of Mendeleev’s table misreads many of its entries, and the source alt of the group-names figure says “earth alkaline metals” and counts group 12 among the main-group elements, which the drawing labels and encloses otherwise); references to numbered figures replaced by “(shown in the figure below)”; the source’s footnote on group 12 set as a parenthetical after its sentence; one sentence added after the periodic table figure saying that the contents of its boxes, with each element’s group and period, are listed as a table in Appendix A, linked to its page in this book; the Link to Learning box rendered as a callout, its link texts “link” and “one” extended over the source’s following words so that each describes its destination; the worked example set as prose, its lettered parts as separate lines, followed by its Check Your Learning as four text-recall items, one per element, the lead-in restated in the singular and the printed answers serving as their keys rather than appearing as text; the end-of-section exercises adapted into the interactive Practice block, with the 4 exercises the source keys carried as 36 items: 20 multiple-choice items for the classification exercise, two per element, metal or nonmetal first and then the further classification, the source’s answer “representative element” keyed as the stem’s own option “main-group (representative) element”; 12 formula text-recall items, for the four lightest group members, the four symbols of the name-and-symbol exercise, and the four isotope symbols, each asking for both the mass number and the atomic number; and 4 text-recall items for the names of the name-and-symbol exercise, given before each symbol; the lead-ins that address the parts together restated in the singular for one part, and each stem closed by a sentence naming what to enter or select; the 4 exercises the source prints no answer for are omitted; one filler item added to the periodic-law group, after the lightest-member and name-and-symbol exercises placed there, since no keyed exercise asks about the periodic law itself: a multiple choice on the body sentence that says what the periodic relationship was found to involve, its two options the two quantities that sentence names; the representative-element definition in the key terms and the count of columns written below the table corrected, each with a Source note; the Mendeleev figure’s caption corrected, with a Source note, to describe panel (b) as his table of 1871; the sentence saying that purines contain oxygen corrected, with a Source note; Source notes added, the text kept as printed, after the paragraph on the search for the missing elements of group 7 and after the paragraph on masses printed in square brackets; “Manganese” lowercased in the paragraph on the missing elements of group 7; “Hitchens” corrected to “Hitchings” twice in the paragraph on Gertrude Elion; a stray “a” before “main-group elements” removed from the summary; and, in the key terms, “period table” corrected to “periodic table” in the definition of series and “periodic function” to “periodic functions” in the definition of the periodic law.</small>

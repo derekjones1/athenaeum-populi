@@ -28,7 +28,11 @@
  *            equivalent form counts and a value the form rule rejects still
  *            counts as agreeing on the value), prints every disagreement and every option
  *            the solver called "also defensible", and writes a ledger result
- *            file recording the outcome on each exercise
+ *            file recording the outcome on each exercise. A fill-in the
+ *            solver answered a unit or two from the key, right only by the
+ *            item's `last-digit` allowance, is listed (`≈`): the grader
+ *            cannot tell a route's rounding from a key off its data, so the
+ *            orchestrator works each one against the book's own data
  *
  * The source is the authority. A disagreement is not a page defect; it is an
  * item the orchestrator must settle against the pinned CNXML and record as
@@ -72,7 +76,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { basename, dirname, join, resolve } from 'node:path';
 import { SOLVE_NOTE, extractExercises, readLedger } from './answer-ledger.mjs';
-import { maskKeys, maskWorkedValue } from '../lib/content.mjs';
+import { maskKeys } from '../lib/content.mjs';
 import { checkText } from '../../assets/js/lib/text/check-text.mjs';
 import { normalizeText } from '../lib/openstax-source.mjs';
 import { checkSortbins, parseSortbinsConfig } from '../../assets/js/lib/text/check-sortbins.mjs';
@@ -115,8 +119,7 @@ export function packetItem(exercise) {
     // The answer's SHAPE is not the key: an unordered list, a required form
     // ("fraction", "solved:x") tell the solver how to write what they find.
     if (exercise.params.answerMode) item.answerMode = exercise.params.answerMode;
-    // The form's `worked:<value>` is a second right answer: its value never enters the packet.
-    if (exercise.params.answerForm) item.answerForm = maskWorkedValue(exercise.params.answerForm);
+    if (exercise.params.answerForm) item.answerForm = exercise.params.answerForm;
   }
   // A text-in's form says how to TYPE the answer — a formula with its
   // subscripts and charge, a balanced equation — not what it is. The solver
@@ -204,11 +207,16 @@ export function emitPackets(root, { residualFillins = null, context = 0, only = 
   return byPage;
 }
 
+/** A measured fill-in's allowance of a unit or two of the last place. */
+const ALLOWANCE = /(^|\s)last-digit:[12](\s|$)/;
+
 /**
  * Grade one written answer against the live exercise. Returns
  *   { status: 'agrees' | 'disagrees' | 'unrecognized', detail }
  * — 'unrecognized' is a multiplechoice answer that names no option, which is
- * a solver slip to fix, not a finding about the key.
+ * a solver slip to fix, not a finding about the key. An agreeing fill-in
+ * carries `allowance` when the solver's value is right only inside the
+ * item's `last-digit` allowance, not the key itself.
  */
 export function gradeAnswer(exercise, written) {
   if (exercise.kind === 'multiplechoice') {
@@ -261,7 +269,23 @@ export function gradeAnswer(exercise, written) {
     if (verdict === 'invalid' || verdict === 'empty') return { status: 'unrecognized', detail: `"${written}" does not parse (${verdict})` };
     // 'form' is the right VALUE in a form the exercise does not accept — the
     // key is confirmed; the form rule is the page's, not the solver's.
-    if (verdict === 'correct' || verdict === 'form') return { status: 'agrees', detail: `${written}${verdict === 'form' ? ' (form differs)' : ''}` };
+    if (verdict === 'correct' || verdict === 'form') {
+      const agreed = { status: 'agrees', detail: `${written}${verdict === 'form' ? ' (form differs)' : ''}` };
+      // A `last-digit:1|2` allowance takes a neighbouring value as right, so
+      // "agrees" there does not say the solver reached the KEY. Graded again
+      // to the digit, a solver's value that no longer passes is reported
+      // (`report.allowance`): a key left a unit off its data — worked from
+      // another table's masses, say — agrees with every solver otherwise.
+      const form = String(exercise.params.answerForm || '');
+      if (ALLOWANCE.test(form)) {
+        let exact;
+        try {
+          exact = checkAnswer(written, exercise.params.answer || '', { mode: exercise.params.answerMode, form: form.replace(ALLOWANCE, '$1last-digit:0$2') });
+        } catch { exact = 'correct'; }
+        if (exact !== 'correct' && exact !== 'form') agreed.allowance = `solver: "${written}"; key: "${exercise.params.answer}"`;
+      }
+      return agreed;
+    }
     return { status: 'disagrees', detail: `solver: "${written}"; key: "${exercise.params.answer}" (${verdict})` };
   }
   const verdict = checkText(written, exercise.params.answer || '', { accept: exercise.params.accept || '', form: exercise.params.answerForm });
@@ -285,7 +309,7 @@ export function compareAnswers(answersFile, root, ledger) {
     if (SOLVED_KINDS.includes(exercise.kind) && !exercises.has(exercise.hash)) exercises.set(exercise.hash, exercise);
   }
   const by = answersFile.by || 'orchestrator';
-  const report = { agrees: [], disagrees: [], flagged: [], unrecognized: [], missing: [], unanswered: [] };
+  const report = { agrees: [], disagrees: [], flagged: [], unrecognized: [], missing: [], unanswered: [], allowance: [] };
   const results = [];
   const answered = new Set();
 
@@ -309,6 +333,7 @@ export function compareAnswers(answersFile, root, ledger) {
       report.unrecognized.push(`${where}: ${graded.detail}`);
       continue;
     }
+    if (graded.allowance) report.allowance.push(`${where}: ${graded.allowance}`);
     if (graded.status === 'agrees' && !flagged) {
       report.agrees.push(where);
       results.push({ ...base, solved: { by, result: 'agrees' } });
@@ -429,9 +454,12 @@ if (process.argv[1] && resolve(process.argv[1]) === new URL(import.meta.url).pat
     for (const line of report.flagged) console.log(`⚑ ${line}`);
     for (const hash of report.missing) console.error(`? no live exercise carries hash ${hash} (edited since the packet was emitted?)`);
     for (const line of report.unanswered) console.error(`· unanswered: ${line}`);
+    // Not a disagreement and not a block: a list to read. Each row is either
+    // a route's rounding (the allowance's purpose) or a key off its data.
+    for (const line of report.allowance) console.log(`≈ ${line} — agrees only inside the last-digit allowance`);
     console.log(`solve-check: ${report.agrees.length} agree, ${report.disagrees.length} disagree, ${report.flagged.length} flagged, `
       + `${report.unrecognized.length} unrecognized, ${report.missing.length} missing, ${report.unanswered.length} unanswered; `
-      + `${unresolved} unresolved`);
+      + `${unresolved} unresolved${report.allowance.length ? `; ${report.allowance.length} inside the allowance only (≈ above — work each against the book's data)` : ''}`);
     if (out) {
       if (unresolved || report.unrecognized.length || report.missing.length) {
         console.error(`✖ not writing results: ${unresolved} unresolved disagreement(s)/flag(s), ${report.unrecognized.length} unrecognized, ${report.missing.length} missing`);

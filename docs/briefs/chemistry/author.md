@@ -164,20 +164,40 @@ goes wrong.
   part restates that part's given data inline, never in a parenthetical
   sentence and never its answer; an equation set inline ends its sentence
   with a period (lint). Playbook "Stems" has each rule once.
-- **Numeric keys.** The key is the bare number the source prints, to the
-  figures it prints; the stem names the unit. Declare `sig-figs:<n>
+- **Numeric keys.** The key is a bare number, to the figures the source's
+  answer shows; the stem names the unit. Declare `sig-figs:<n>
   last-digit:<k>` (playbook "Measured quantities" and the `last-digit` rule
-  in "Exercises"); a count takes `whole-number`. **An atomic mass comes from
-  this book's periodic table** (`appendices/a-the-periodic-table.md`), and
-  the source's value stays the key where the table does not reach it digit
-  for digit. **When the value you work from the table is not the source's
-  key, record it on the item as `worked:<value>`** — beside
-  `sig-figs:<n> last-digit:<k>`, written to the same figures; alone on a
-  formula mass or molar mass asked for itself — and put both values in
-  your ledger (playbook "Numeric keys", "The source's value is the key").
-  Never a key re-computed to the table, and never a width chosen: the
-  lint refuses a worked value more than 0.1 percent from its key, and
-  that item goes to the parent as a suspected source defect. **A real-world number in a worked example's
+  in "Exercises"); a count takes `whole-number`. **A key that depends on an
+  atomic mass is what this book's periodic table gives**
+  (`data/chemistry/elements.json`, printed in Appendix A), by the one
+  method of playbook "Numeric keys" ("A numeric key is what this book's own
+  data give: one data set, one right answer"): `node
+  tools/verify/molar-mass.mjs "<formula>"` for every molar mass, never by
+  hand; that rounded sum carried unrounded; an earlier part's rounded
+  answer not reused; only the final result rounded. One key, no second
+  value: `worked:<value>` and `tolerance:<p>%` are retired and do not
+  build. Put the tool's output and the source's print in your ledger; a
+  key a unit or two from the source's print on an item that fetches a mass
+  is the gate's `data-differs` (the parent writes the register), and one
+  further away, or on an item no mass enters, is a suspected source defect
+  for the parent. **Every worked example is recomputed from the table**:
+  each molar mass it prints is the tool's sum, every number downstream
+  follows, the result keeps the source's count of figures, and data the
+  example GIVES never changes. Directly after the first calculation that
+  changed, one paragraph — where a result moved: "*Source note:* the
+  source works this section’s examples with atomic masses rounded to four
+  figures. Here they are worked with the masses this book’s periodic table
+  prints (Appendix A), so some results differ from the source’s in their
+  last digits."; where only the printed molar masses moved: "*Source
+  note:* the molar masses in this section’s examples are computed from
+  this book’s periodic table (Appendix A), so they differ in their last
+  digits from the ones the source prints; the examples’ results are the
+  same." The footer says so in one clause. **A calculation table printed
+  as an image** becomes a Markdown table from `node
+  tools/verify/molar-mass.mjs --table "<formula>"`, its caption kept with
+  its number recomputed; a drawing that shares the image (a molecular
+  model) is kept as a crop, which the parent cuts — report the image
+  (playbook "Figures", "Three exceptions"). **A real-world number in a worked example's
   stem is a claim** (a liter of air's argon, a dietary requirement, which
   organism ferments grain), and so is every intermediate value: re-run
   each line from the line it comes from, and where the body states a

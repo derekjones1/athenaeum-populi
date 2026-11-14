@@ -27,8 +27,12 @@ before any edit that follows the solve, no git from an agent).
   Solutions end in an image or that 3.3's examples chain.
 - **A gate holds the item source.** `npm run kc -- sources <page>` refuses a
   fill-in, a formula, or an equation that is not a worked example's
-  question keyed with what its Solution prints. Authors run it on their
-  scratch page; the parent on the trial assembly and the landed page.
+  question keyed with what its Solution prints. Where the answer depends
+  on an atomic mass, that Solution is the SECTION PAGE's, recomputed from
+  this book's periodic table: a key a unit or two from the source's print
+  (`data-differs`) is confirmed only when the section page's body prints
+  it. Authors run it on their scratch page; the parent on the trial
+  assembly and the landed page.
 - **The solve is blind only if the solver computes first.** The masked
   section pages print each worked example solved. `kc-prompts/solver.md`
   has the solver work every fill-in from the stem and Appendix A before it
@@ -52,13 +56,16 @@ before any edit that follows the solve, no git from an agent).
    content/physical-sciences/chemistry X-Y > $SP/kc/examples.txt`.
 4. **Run facts**, `$SP/kc/run-facts.md`, written by the parent: per section
    its module id, objectives, and worked examples; the examples ruled
-   unusable, each with its reason; the section items that carry a `worked:<value>`
-   (`grep -n 'worked:' content/physical-sciences/chemistry`), since a check
-   item re-asking one takes the same token; the errata that touch the
+   unusable, each with its reason; the block's rows of
+   `data/verification/source-print-differences.json` (each a section key
+   that stands a unit or two from the source's print), and each usable
+   example whose section page recomputed its numbers from the table, since
+   a check item re-asking it keys what the section page prints; the errata that touch the
    block's modules (`grep -n 'm<id>' docs/openstax-errata.md`), with any
    decision a check item must follow; every Source note on the block's
    section pages (`grep -n '\*Source note' <chapter dirs>`), since an
-   example a page corrected is not used; **every usable example's
+   example a page corrected is not used (a note that the examples were
+   recomputed from the table is not a correction); **every usable example's
    substance and data grepped in its section's `## Practice` block**, since
    the source's own exercises sometimes ask a worked example again (block
    1: 2.3's iodine anion, 2.4's glucose) and such an example is not used;
@@ -128,8 +135,9 @@ All of this is before the blind solve.
    fresh Blind-solver agent with `kc-prompts/solver.md`.
    `npm run solve:compare -- $SP/kc/solve/answers.json content --out
    $SP/kc/solve-results`; adjudicate every disagreement against the
-   module, and read every `note` — above all a note that says the page's
-   worked value differs from the solver's.
+   module, read every `≈` row against the table, and read every `note` —
+   above all a note that says the section page's printed value differs
+   from the solver's.
 
 ## 4. Close-out, in this order
 

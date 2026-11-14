@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync, readdirSync } from 'node:fs';
-import { assignStems, extractModuleImages, kindOf, pamHasTransparency, parseArgs, plainXmlText, stemOf, variantWidths } from './vendor-media.mjs';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
+import { assignStems, cropProblem, extractModuleImages, kindOf, pamHasTransparency, parseArgs, plainXmlText, stemOf, variantWidths } from './vendor-media.mjs';
 
 test('variantWidths never upscales and dedupes', () => {
   assert.deepEqual(variantWidths(430), [430]);
@@ -82,7 +82,7 @@ test('parseArgs requires a book and at least one chapter or module', () => {
   assert.throws(() => parseArgs(['--book', 'biology']), /at least one/);
   assert.throws(() => parseArgs(['--book', 'biology', '--chapter', 'x']), /positive integer/);
   assert.deepEqual(parseArgs(['--book', 'biology', '--chapter', '1', '--module', 'm1', '--dry-run']),
-    { book: 'biology', chapters: [1], modules: ['m1'], dryRun: true, refreshTransparency: false });
+    { book: 'biology', chapters: [1], modules: ['m1'], dryRun: true, refreshTransparency: false, crops: false });
 });
 
 test('kindOf reads photo from a JPEG source and diagram from anything else', () => {
@@ -133,4 +133,48 @@ test('every vendored figure records whether its file is transparent', () => {
     const missing = Object.entries(manifest.figures).filter(([, e]) => typeof e.transparent !== 'boolean').map(([stem]) => stem);
     assert.deepEqual(missing, [], `data/media/${name}: run vendor-media --book ${name.replace(/\.json$/, '')} --refresh-transparency`);
   }
+});
+
+test('parseArgs takes --crops on its own', () => {
+  assert.equal(parseArgs(['--book', 'chemistry', '--crops']).crops, true);
+  assert.throws(() => parseArgs(['--book', 'chemistry', '--crops', '--chapter', '3']), /whole manifest/);
+});
+
+test('a crop names a vendored image and a rectangle inside it', () => {
+  const figures = {
+    table: { source: 'media/table.jpg', sourceSha256: 'abc', width: 1300, height: 319 },
+    drawn: { generated: true, width: 1566, height: 1212 },
+    model: { crop: { from: 'table', rect: [829, 47, 332, 225] } },
+  };
+  assert.equal(cropProblem('model', figures.model, figures), null);
+  const problem = (crop) => cropProblem('model', { crop }, figures);
+  assert.match(problem({ from: 'missing', rect: [0, 0, 10, 10] }), /is not a figure of this manifest/);
+  assert.match(problem({ from: 'drawn', rect: [0, 0, 10, 10] }), /is not a vendored source image/);
+  assert.match(problem({ from: 'model', rect: [0, 0, 10, 10] }), /is not a vendored source image/, 'a crop of a crop');
+  assert.match(problem({ from: 'table', rect: [829, 47, 332] }), /\[x, y, width, height\]/);
+  assert.match(problem({ from: 'table', rect: [829, 47.5, 332, 225] }), /whole pixels/);
+  assert.match(problem({ from: 'table', rect: [1000, 47, 332, 225] }), /does not lie inside table \(1300×319\)/);
+  assert.match(problem({ from: 'table', rect: [0, 100, 332, 225] }), /does not lie inside/);
+  assert.match(problem({ from: 'table', rect: [0, 0, 0, 10] }), /does not lie inside/);
+});
+
+test('every crop in a manifest is sound, is cut from the image it names, and ships the file it lists', () => {
+  // Chemistry 3.1 (November 13, 2026): six molecular models, each cut from
+  // an image whose other half is a calculation table the page now types.
+  let crops = 0;
+  for (const name of readdirSync('data/media').filter((n) => n.endsWith('.json'))) {
+    const book = name.replace(/\.json$/, '');
+    const { figures } = JSON.parse(readFileSync(`data/media/${name}`, 'utf8'));
+    for (const [stem, entry] of Object.entries(figures).filter(([, e]) => e.crop)) {
+      crops += 1;
+      assert.equal(cropProblem(stem, entry, figures), null);
+      const source = figures[entry.crop.from];
+      const [, , width, height] = entry.crop.rect;
+      assert.equal(entry.sourceSha256, source.sourceSha256, `${stem}: cut from the image ${entry.crop.from} is vendored from — run vendor-media --book ${book} --crops`);
+      assert.deepEqual([entry.source, entry.module, entry.width, entry.height], [source.source, source.module, width, height], stem);
+      assert.deepEqual(entry.variants, [{ width, height, file: `${stem}-${width}.webp` }], stem);
+      assert.ok(existsSync(`static/media/${book}/${entry.variants[0].file}`), `${stem}: its file is vendored`);
+    }
+  }
+  assert.ok(crops >= 6, 'the six models of Chemistry 3.1 are read');
 });

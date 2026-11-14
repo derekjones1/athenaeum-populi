@@ -1703,7 +1703,7 @@ test('a formula mass has one right answer from the periodic table, and four-figu
   // What four-figure masses give (4 × 30.97): still wrong, and told the cause.
   await check('123.88');
   await expect.poll(status).toBe('incorrect');
-  await expect(feedback).toHaveText(/^Close, but not within rounding of the answer\..*use every digit its table prints\.$/s);
+  await expect(feedback).toHaveText(/^Close, but not within rounding of the answer\..*use every digit the table prints\.$/s);
   // The right number with its unit typed after it.
   await check('123.896 amu');
   await expect.poll(status).toBe('unit');
@@ -2173,7 +2173,7 @@ test('the ion items of an ionic compound appear only once the compound is answer
   expect(await followups.evaluateAll((all) => all.filter((el) => !el.hidden).length)).toBe(1);
 });
 
-// The periodic table is 1300 px wide and set in a 704 px column: its names
+// The periodic table is 1566 px wide and set in a 704 px column: its names
 // and masses are a few pixels tall. A figure shown smaller than its file has
 // an "Enlarge figure" link — a real link to the full-size file — which the
 // viewer (assets/js/figure-enlarge.js) opens in place.
@@ -2192,13 +2192,15 @@ test('a figure shown smaller than its file can be enlarged in place: fit, the fi
   expect(links.length).toBeGreaterThan(0);
   expect(links.filter((figure) => figure.shrunk !== figure.linked).map((figure) => figure.stem), 'the link is on exactly the figures shown under their size').toEqual([]);
 
-  const figure = page.locator('.ap-mediafigure[data-stem="CNX_Chem_02_05_PerTable1"]');
+  // Section 2.5's periodic table: since November 13, 2026 this book's own
+  // drawing (1566 px wide), where the source's raster (1300 px) stood.
+  const figure = page.locator('.ap-mediafigure[data-stem="periodic-table"]');
   const link = figure.locator('a.ap-mediafigure-enlarge');
   const inline = figure.locator(':scope > img');
   await expect(link).toHaveText('Enlarge figure');
   // Without the script the link is the whole feature, so it must open the file.
   const href = await link.getAttribute('href');
-  expect(href).toMatch(/^\/media\/chemistry\/CNX_Chem_02_05_PerTable1-1300\.webp$/);
+  expect(href).toBe('/media/chemistry/periodic-table.svg');
   expect((await page.request.get(href)).ok()).toBe(true);
 
   await link.scrollIntoViewIfNeeded();
@@ -2233,10 +2235,14 @@ test('a figure shown smaller than its file can be enlarged in place: fit, the fi
   expect(fitted).toBeGreaterThan(inlineWidth * 1.3);
   await expect(dialog.locator('[data-zoom="out"]')).toBeDisabled();
 
-  // "+" goes to the file's own pixels, then past them; the stage scrolls.
+  // "+" climbs the ladder to the file's own pixels, then past them; the
+  // stage scrolls. (The drawing is 1566 × 1212, so in this window the fit is
+  // set by its height, under the 75% stop.)
+  await page.keyboard.press('+');
+  await expect(level).toHaveText('75%');
   await page.keyboard.press('+');
   await expect(level).toHaveText('100%');
-  expect(Math.round(await widthOf())).toBe(1300);
+  expect(Math.round(await widthOf())).toBe(1566);
   await dialog.locator('[data-zoom="in"]').click();
   await expect(level).toHaveText('150%');
   expect(await scrolls()).toEqual({ x: true, y: true });
@@ -2530,7 +2536,9 @@ test('the periodic table control is on Chemistry pages only, not on the table\'s
   // A sibling appendix has the control, and its pager's link to Appendix A
   // is navigation, not a pointer to the table.
   await gotoBuiltPage(page, '/physical-sciences/chemistry/appendices/b-essential-mathematics/');
-  const control = page.locator('a.ap-reference-figure');
+  // Printed twice: in the rail, and as the fixed button of narrower windows.
+  await expect(page.locator('a.ap-reference-figure')).toHaveCount(2);
+  const control = page.locator('nav#ap-toc a.ap-reference-figure');
   await expect(control).toHaveCount(1);
   expect(await control.evaluate((el) => 'figureLinks' in el.dataset), 'body links are not taken over among the appendices').toBe(false);
   await page.locator(`main a[href="${appendix}"]`).first().click();
@@ -2538,8 +2546,83 @@ test('the periodic table control is on Chemistry pages only, not on the table\'s
   await expect(page.locator('dialog.ap-figure-viewer[open]')).toHaveCount(0);
   // A landing page has the control too, and takes over no link.
   await gotoBuiltPage(page, '/physical-sciences/chemistry/02-atoms-molecules-and-ions/');
-  expect(await page.locator('a.ap-reference-figure').evaluateAll((els) => els.map((el) => 'figureLinks' in el.dataset))).toEqual([false]);
+  expect(await page.locator('a.ap-reference-figure').evaluateAll((els) => els.map((el) => 'figureLinks' in el.dataset))).toEqual([false, false]);
   // Another book names no reference figure.
+  await gotoBuiltPage(page, '/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology/');
+  await expect(page.locator('a.ap-reference-figure')).toHaveCount(0);
+});
+
+// Below the rail's breakpoint the rail is a drawer behind an icon button —
+// and a page with no headings has no drawer at all — while a Chemistry key
+// now needs the table's fifth figure (November 13, 2026). The control is
+// printed a second time as a fixed button at those widths.
+test('below the rail\'s breakpoint the periodic table is one tap away: a fixed button opens it in place, on a page with no headings too', async ({ page }) => {
+  const route = '/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/03-reaction-stoichiometry/';
+  const appendix = '/physical-sciences/chemistry/appendices/a-the-periodic-table/';
+  const floating = page.locator('a.ap-reference-figure.ap-reference-floating');
+  const dialog = page.locator('dialog.ap-figure-viewer[open]');
+
+  // From xl up the rail carries the control and the button is not shown.
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await gotoBuiltPage(page, route);
+  await expect(floating).toHaveCount(1);
+  await expect(floating).toBeHidden();
+  await expect(page.locator('nav#ap-toc a.ap-reference-figure')).toBeVisible();
+
+  for (const width of [390, 1024]) {
+    await page.setViewportSize({ width, height: 844 });
+    await expect(floating, `shown at ${width}px`).toBeVisible();
+    await expect(floating).toHaveText('Periodic table');
+    const box = await floating.boundingBox();
+    expect(box.height, 'a touch target').toBeGreaterThanOrEqual(44);
+    expect(box.x + box.width, 'inside the window').toBeLessThanOrEqual(width);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth), `no sideways scroll at ${width}px`).toBe(true);
+  }
+  await page.setViewportSize({ width: 390, height: 844 });
+  expect(await floating.getAttribute('href'), 'without the script it is a link to the page').toBe(appendix);
+
+  // It stays in view down the page; an item brought into view is clear of it; and a typed answer survives the visit.
+  const card = page.locator('fill-in').nth(8);
+  await waitForUpgrade(card, (el) => Boolean(customElements.get('fill-in')) && Boolean(el.querySelector('math-field')));
+  await card.scrollIntoViewIfNeeded();
+  await expect(floating).toBeInViewport();
+  const overlaps = await card.evaluate((el) => {
+    const button = document.querySelector('.ap-reference-floating').getBoundingClientRect();
+    el.scrollIntoView({ block: 'center' });
+    return [...el.querySelectorAll('math-field, button')].filter((part) => {
+      const box = part.getBoundingClientRect();
+      return box.width && box.left < button.right && box.right > button.left && box.top < button.bottom && box.bottom > button.top;
+    }).length;
+  });
+  expect(overlaps, 'the button covers no control of an item centred in the window').toBe(0);
+  await focusMathField(page, card.locator('math-field'));
+  await page.keyboard.type('0.5', { delay: 20 });
+  await floating.click();
+  await expect(dialog).toBeVisible();
+  expect(new URL(page.url()).pathname, 'the page was not left').toBe(route);
+  await expect(dialog.locator('.ap-figure-viewer-title')).toHaveText('Periodic table');
+  expect(await dialog.locator('.ap-figure-viewer-image').evaluate((img) => new URL(img.src).pathname)).toBe('/media/chemistry/periodic-table.svg');
+  await page.keyboard.press('Escape');
+  await expect(page.locator('dialog.ap-figure-viewer[open]')).toHaveCount(0);
+  expect(await floating.evaluate((el) => el === document.activeElement), 'focus returns to the button').toBe(true);
+  expect(await card.locator('math-field').evaluate((el) => el.value)).toBe('0.5');
+
+  // The drawer carries the control itself, so the button steps aside while it is open.
+  await page.locator('.ap-nav-toc').click();
+  await expect(floating).toBeHidden();
+  await page.keyboard.press('Escape');
+  await expect(floating).toBeVisible();
+
+  // An appendix page with no headings has no drawer: the button is the only way to the table.
+  await gotoBuiltPage(page, '/physical-sciences/chemistry/appendices/c-units-and-conversion-factors/');
+  await expect(page.locator('.ap-nav-toc')).toHaveCount(0);
+  await expect(floating).toBeVisible();
+  await floating.click();
+  await expect(dialog).toBeVisible();
+  await page.keyboard.press('Escape');
+  // The table's own page has neither copy, and another book has none.
+  await gotoBuiltPage(page, appendix);
+  await expect(page.locator('a.ap-reference-figure')).toHaveCount(0);
   await gotoBuiltPage(page, '/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology/');
   await expect(page.locator('a.ap-reference-figure')).toHaveCount(0);
 });

@@ -3721,27 +3721,15 @@ test('a measured quantity declares sig-figs and last-digit together, on one nume
   assert.match(errorsFor('0.674', 'sig-figs:3 sig-figs:4 last-digit:1')[0], /exactly one/, 'two counts');
   assert.match(errorsFor('5', 'sig-figs:1 last-digit:1')[0], /no last digit to spare/, 'one figure with an allowance');
   assert.deepEqual(errorsFor('5', 'sig-figs:1 last-digit:0'), [], 'one figure, compared exactly');
-  assert.match(errorsFor('5371,3239', 'sig-figs:4 last-digit:0')[0], /grade ONE nonzero number/, 'a list key');
-  // The worked value (November 12, 2026): what the book's own data give
-  // where the source's key cannot be reached from them — beside the pair, or
-  // alone where no count is graded. It is shown to the learner, so it stands
-  // beside an answerDisplay.
-  const shown = ' answerDisplay="$82.24\\%$"';
-  const worked = (answer, form, extra = shown) => lint(fillin(answer, form, extra)).filter((error) => /worked/.test(error) && !/name no form/.test(error));
-  assert.deepEqual(worked('123.896', 'worked:123.88'), [], 'a worked value alone on a numeral key is sound');
-  assert.deepEqual(worked('82.24', 'sig-figs:4 last-digit:1 worked:82.27'), [], 'a worked value beside the pair is sound');
-  assert.match(worked('82.24', 'sig-figs:4 worked:82.27')[0], /exactly one `sig-figs:<n>` and one `last-digit:<k>` together/, 'a worked value beside half the pair');
-  assert.match(worked('82.24', 'sig-figs:4 last-digit:1 worked:82.24')[0], /the key itself/, 'a worked value that says nothing');
-  assert.match(worked('82.24', 'sig-figs:4 last-digit:1 worked:82.3')[0], /written to the 4 significant figures/, 'a worked value at another count');
-  assert.match(worked('82.24', 'sig-figs:4 last-digit:1 worked:83.00')[0], /more than 0\.1 percent \(and a unit of the last place\) from the key/, 'another answer, not another table');
-  assert.match(worked('123.896,18.015', 'worked:123.88')[0], /grade ONE nonzero number/, 'a worked value on a list key');
-  assert.match(worked('82.24', 'sig-figs:4 last-digit:1 worked:82.27', '')[0], /declares an answerDisplay/, 'nothing to show the source\'s answer with');
-  assert.deepEqual(worked('256.48', 'worked:256.48', ''), [], 'the key\'s own number is not shown, and needs no display');
-  // The percent band it replaced is no longer a form.
+  assert.match(errorsFor('5371,3239', 'sig-figs:4 last-digit:0')[0], /grades ONE nonzero number/, 'a list key');
+  // A key has one value. The percent band (to November 12, 2026) and the
+  // second "worked" value that replaced it for a day are no longer forms.
+  assert.match(lint(fillin('0.08644', 'sig-figs:4 last-digit:1 worked:0.08642')).join('\n'), /"worked:0\.08642" name no form/);
+  assert.match(lint(fillin('123.896', 'worked:123.88')).join('\n'), /"worked:123\.88" name no form/);
   assert.match(lint(fillin('82.24', 'sig-figs:4 tolerance:0.05%')).join('\n'), /"tolerance:0\.05%" name no form/);
-  assert.match(errorsFor('(1.2,3.4)', 'sig-figs:2 last-digit:1')[0], /grade ONE nonzero number/, 'a pair key');
-  assert.match(errorsFor('2.5x', 'sig-figs:2 last-digit:1')[0], /grade ONE nonzero number/, 'an expression key');
-  assert.match(errorsFor('0', 'sig-figs:1 last-digit:0')[0], /grade ONE nonzero number/, 'zero shows no significant figures');
+  assert.match(errorsFor('(1.2,3.4)', 'sig-figs:2 last-digit:1')[0], /grades ONE nonzero number/, 'a pair key');
+  assert.match(errorsFor('2.5x', 'sig-figs:2 last-digit:1')[0], /grades ONE nonzero number/, 'an expression key');
+  assert.match(errorsFor('0', 'sig-figs:1 last-digit:0')[0], /grades ONE nonzero number/, 'zero shows no significant figures');
   assert.match(errorsFor('48.3\\%', 'sig-figs:3 last-digit:1')[0], /declares `percent` too/, 'a percent key without percent');
   assert.match(errorsFor('0.674', 'sig-figs:3 last-digit:1', ' answerMode="unordered"')[0], /can(?:not)? be declared with answerMode="unordered"/);
 

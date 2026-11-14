@@ -66,7 +66,8 @@ import { parseCliArgs } from '../lib/cli.mjs';
 import { bookKeyOf, parseFrontmatter, shortcodes } from '../lib/content.mjs';
 import { KEYED_ONLY_BOOKS, glossaryAliases, printedNumerals, unitFor, unlinked, workedExampleUnits, workedExamples } from '../lib/keyed-units.mjs';
 import { bundleSourceDirectory, loadSourceLock } from '../lib/openstax-source.mjs';
-import { judgeKeyedUnit, keyNumeral, pageItems, sameNumeral } from '../verify/verify-source-keys.mjs';
+import { ELEMENT_DATA_BOOKS, judgeKeyedUnit, keyNumeral, pageItems, sameNumeral } from '../verify/verify-source-keys.mjs';
+import { loadElements } from '../lib/elements.mjs';
 import { normalizeStem } from '../lib/practice-index.mjs';
 import { extractExercises, readLedger } from '../verify/answer-ledger.mjs';
 import { chemCanon } from '../../assets/js/lib/text/check-chem.mjs';
@@ -333,11 +334,24 @@ export function solutionPrints(solution, key, form) {
   return false;
 }
 
+/** A page's prose with every shortcode tag taken out: what its body prints, without its items' parameters. */
+const bodyOf = (markdown) => String(markdown).replace(/\{\{<[\s\S]*?>\}\}/g, ' ');
+
 /**
  * `sources` for one page. `moduleOf(section)` returns the module's CNXML for
- * a section number, or null. @returns {{ confirmed: number, failures: { line: number, detail: string }[] }}
+ * a section number, or null.
+ *
+ * A book that works its numbers from a periodic table of its own
+ * (`ELEMENT_DATA_BOOKS`) passes `elements` and `pageOf(section)`, the
+ * section page's Markdown. There the section's worked example is recomputed
+ * from the table, so its Solution can stand a unit or two of the last place
+ * from the source's print (`data-differs`). The check item keys what the
+ * SECTION PAGE prints: a key near the source's print is confirmed only when
+ * the section's body prints that very number, so the check and the section
+ * can never give two answers to one question.
+ * @returns {{ confirmed: number, failures: { line: number, detail: string }[] }}
  */
-export function checkSources(markdown, moduleOf) {
+export function checkSources(markdown, moduleOf, { elements = null, pageOf = () => null } = {}) {
   const sectionOf = sectionAtLine(markdown);
   const read = new Map();
   const unitsOf = (section) => {
@@ -366,12 +380,20 @@ export function checkSources(markdown, moduleOf) {
       } else confirmed += 1;
       continue;
     }
-    const verdict = judgeKeyedUnit(item, source.units, { aliases: source.aliases });
+    const verdict = judgeKeyedUnit(item, source.units, { aliases: source.aliases, elements });
     if (!verdict) {
       failures.push({ line: item.line, detail: notAnExample });
       continue;
     }
-    if (verdict.status !== 'confirmed') {
+    if (verdict.status === 'data-differs') {
+      const key = keyNumeral(item.answer);
+      const sectionPage = pageOf(section);
+      const printed = sectionPage ? printedNumerals(numeralText(bodyOf(sectionPage))) : [];
+      if (!printed.some((numeral) => sameNumeral(numeral, key) && numeral.exponent === key.exponent)) {
+        failures.push({ line: item.line, detail: `${what} keys ${JSON.stringify(item.answer)} where the source's Solution of worked example ${verdict.exercise.id} prints ${verdict.sourcePrint}, and the body of Section ${section}'s page does not print ${item.answer} — a check item keys what the section's own worked example prints, recomputed from this book's periodic table` });
+        continue;
+      }
+    } else if (verdict.status !== 'confirmed') {
       const why = verdict.status === 'figures-differ' ? verdict.detail
         : `keys ${JSON.stringify(item.answer)}, which the Solution of worked example ${verdict.exercise.id} does not print (${verdict.status})`;
       failures.push({ line: item.line, detail: `${what} ${why}` });
@@ -504,6 +526,13 @@ function main() {
       const result = checkSources(readFileSync(page, 'utf8'), (section) => {
         const found = sections.get(section);
         return found && existsSync(found.modulePath) ? readFileSync(found.modulePath, 'utf8') : null;
+      }, {
+        elements: ELEMENT_DATA_BOOKS.includes(book) ? loadElements(ROOT) : null,
+        pageOf: (section) => {
+          const found = sections.get(section);
+          const file = found ? path.join(ROOT, found.localPath) : '';
+          return file && existsSync(file) ? readFileSync(file, 'utf8') : null;
+        },
       });
       confirmed += result.confirmed;
       failed += result.failures.length;

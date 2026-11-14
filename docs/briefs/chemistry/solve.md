@@ -58,14 +58,15 @@ those places.
 - If the `answerForm` names `sig-figs:<n>` and your own count of the
   figures the data support is NOT n, answer with your own count and say so
   in `note` — that disagreement is what this pass exists to find.
-- If the `answerForm` names `worked:…` (its value is masked, as the key
-  is), the source's key was computed from finer data than this book prints
-  and the value the book's own data give is graded as right too. Answer
-  with the value Appendix A's masses and the stem give by the page's own
-  method, carried unrounded, and put the arithmetic in `note`: your answer
-  is the independent reading of that masked value. With no `sig-figs`
-  beside it no count of figures is asked — give the places the method
-  keeps; with `sig-figs:<n>`, the count is asked as usual.
+- **A molar mass, by the one method the masked pages assume**: take each
+  atomic mass from Appendix A exactly as printed, trailing zeros included;
+  each element's subtotal (count × mass) keeps the mass's decimal places,
+  and the sum is rounded to the place of its least precise subtotal; that
+  rounded molar mass is then used and every later step carried unrounded —
+  an earlier part's rounded answer is NOT reused in a later part; only the
+  final result is rounded. A constant the page states is used as stated.
+  **Say in `note` whenever the unrounded sum, or an earlier part's rounded
+  answer, would change your final digit**, with both values.
 - **A `multiplechoice`:** the option text verbatim. Name a second option in
   `alsoDefensible` whenever the page supports it too.
 - **A `textin`:** the word or phrase the page uses, in the page's spelling.

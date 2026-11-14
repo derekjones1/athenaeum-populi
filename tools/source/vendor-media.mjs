@@ -45,6 +45,27 @@
  *
  * recomputes the field for every entry already in the manifest from the
  * vendored files alone (no source checkout, no re-encode).
+ *
+ * A CROP is part of a source image shipped as a figure of its own. Chemistry
+ * 3.1 prints six calculation tables as images, each with a molecular model
+ * in a cell beside it; the tables are typed as Markdown (their atomic masses
+ * are no longer the book's), and each model is kept as a crop. An author
+ * adds the entry by hand —
+ *
+ *   "CNX_Chem_03_01_chloroform-model": {
+ *     "crop": { "from": "CNX_Chem_03_01_chloroform", "rect": [829, 47, 332, 225] },
+ *     "kind": "diagram", "alt": "", "caption": "…"
+ *   }
+ *
+ * (`rect` is x, y, width, height in the SOURCE image's pixels) — and
+ *
+ *   node tools/source/vendor-media.mjs --book chemistry --crops
+ *
+ * reads the source image of `from` out of the pinned commit, cuts the
+ * rectangle, encodes it once at its own size, and fills in the entry's
+ * `source`, `sourceSha256`, `module`, `width`, `height`, `variants`, and
+ * `transparent`. Idempotent like the rest. The entry named by `from` stays
+ * in the manifest: it is where the crop's source and module are read from.
  */
 import { execFileSync, spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
@@ -63,7 +84,7 @@ export const TARGET_WIDTHS = Object.freeze([800, 1600]);
 export const WEBP_QUALITY = 82;
 
 export function parseArgs(argv) {
-  const options = { book: null, chapters: [], modules: [], dryRun: false, refreshTransparency: false };
+  const options = { book: null, chapters: [], modules: [], dryRun: false, refreshTransparency: false, crops: false };
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i];
     if (arg === '--dry-run') options.dryRun = true;
@@ -71,12 +92,17 @@ export function parseArgs(argv) {
     else if (arg === '--chapter') options.chapters.push(Number(argv[++i]));
     else if (arg === '--module') options.modules.push(argv[++i]);
     else if (arg === '--refresh-transparency') options.refreshTransparency = true;
+    else if (arg === '--crops') options.crops = true;
     else throw new Error(`unknown option ${JSON.stringify(arg)}`);
   }
   if (!options.book) throw new Error('--book <key> is required');
   if (options.chapters.some((n) => !Number.isInteger(n) || n < 1)) throw new Error('--chapter takes a positive integer');
   if (options.refreshTransparency) {
     if (options.chapters.length || options.modules.length) throw new Error('--refresh-transparency works on the whole manifest; drop --chapter/--module');
+    return options;
+  }
+  if (options.crops) {
+    if (options.chapters.length || options.modules.length) throw new Error('--crops works on the whole manifest; drop --chapter/--module');
     return options;
   }
   if (!options.chapters.length && !options.modules.length) throw new Error('name at least one --chapter or --module');
@@ -234,6 +260,90 @@ function refreshTransparency(bookKey) {
   console.log(`✓ ${Object.keys(manifest.figures).length} figure(s), ${transparent} transparent → ${path.relative(repositoryRoot, manifestPath)}`);
 }
 
+/**
+ * What is wrong with a crop entry, as a sentence, or null. `figures` is the
+ * manifest's map; the rectangle must lie inside the source image the entry
+ * names, and that image must be a vendored one (not a crop, not a drawing).
+ */
+export function cropProblem(stem, entry, figures) {
+  const { from, rect } = entry.crop || {};
+  const source = figures[from];
+  if (!source) return `${stem}: crop.from ${JSON.stringify(from)} is not a figure of this manifest`;
+  if (source.crop || source.generated || !source.source) return `${stem}: crop.from ${JSON.stringify(from)} is not a vendored source image`;
+  if (!Array.isArray(rect) || rect.length !== 4 || !rect.every((n) => Number.isInteger(n) && n >= 0)) {
+    return `${stem}: crop.rect is [x, y, width, height] in whole pixels of the source image`;
+  }
+  const [x, y, width, height] = rect;
+  if (width < 1 || height < 1 || x + width > source.width || y + height > source.height) {
+    return `${stem}: crop.rect ${JSON.stringify(rect)} does not lie inside ${from} (${source.width}×${source.height})`;
+  }
+  if (width > TARGET_WIDTHS.at(-1)) return `${stem}: a crop ${width}px wide is no detail of a figure — vendor the image itself`;
+  return null;
+}
+
+/** Cut every `crop` entry of a book's manifest out of its source image. */
+function vendorCrops(bookKey) {
+  const lock = loadSourceLock(repositoryRoot);
+  const book = lock.books.get(bookKey);
+  if (!book) throw new Error(`book ${JSON.stringify(bookKey)} is not in the source lock`);
+  const bundle = lock.bundles[book.bundleKey];
+  const sourceDirectory = bundleSourceDirectory(repositoryRoot, lock, book.bundleKey);
+  const manifestPath = path.join(repositoryRoot, 'data/media', `${bookKey}.json`);
+  if (!existsSync(manifestPath)) throw new Error(`no manifest ${path.relative(repositoryRoot, manifestPath)}`);
+  const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
+  const outDir = path.join(repositoryRoot, 'static/media', bookKey);
+  const crops = Object.entries(manifest.figures).filter(([, entry]) => entry.crop);
+  for (const [stem, entry] of crops) {
+    const problem = cropProblem(stem, entry, manifest.figures);
+    if (problem) throw new Error(problem);
+  }
+  requireBinary('sips');
+  requireBinary('cwebp');
+  requireBinary('dwebp');
+  const work = mkdtempSync(path.join(tmpdir(), 'vendor-media-'));
+  let cut = 0;
+  let skipped = 0;
+  try {
+    for (const [stem, entry] of crops) {
+      const source = manifest.figures[entry.crop.from];
+      const [x, y, width, height] = entry.crop.rect;
+      const file = `${stem}-${width}.webp`;
+      const current = entry.sourceSha256 === source.sourceSha256 && entry.width === width && entry.height === height
+        && entry.variants?.length === 1 && entry.variants[0].file === file && existsSync(path.join(outDir, file));
+      if (current) { skipped += 1; continue; }
+      const blob = execFileSync('git', ['-C', sourceDirectory, 'show', `${bundle.commit}:${source.source}`], { maxBuffer: 256 * 1024 * 1024 });
+      const sourceSha256 = createHash('sha256').update(blob).digest('hex');
+      if (sourceSha256 !== source.sourceSha256) throw new Error(`${stem}: ${source.source} at the pinned commit is not the image ${entry.crop.from} was vendored from — re-vendor it first`);
+      const sourceFile = path.join(work, path.basename(source.source));
+      writeFileSync(sourceFile, blob);
+      const png = path.join(work, `${stem}.png`);
+      execFileSync('sips', ['-s', 'format', 'png', sourceFile, '--out', png], { stdio: 'ignore' });
+      execFileSync('cwebp', ['-quiet', '-q', String(WEBP_QUALITY), '-crop', String(x), String(y), String(width), String(height), png, '-o', path.join(outDir, file)], { stdio: 'ignore' });
+      const dims = sipsDimensions(path.join(outDir, file));
+      if (dims.width !== width || dims.height !== height) throw new Error(`${stem}: the crop came out ${dims.width}×${dims.height}, not ${width}×${height}`);
+      manifest.figures[stem] = {
+        crop: entry.crop,
+        source: source.source,
+        sourceSha256,
+        module: source.module,
+        kind: entry.kind || 'diagram',
+        width,
+        height,
+        variants: [{ width, height, file }],
+        transparent: webpHasTransparency(path.join(outDir, file)),
+        alt: entry.alt || '',
+        caption: entry.caption || '',
+      };
+      cut += 1;
+      console.log(`  cut ${stem} (${width}×${height} at ${x},${y} of ${entry.crop.from})`);
+    }
+  } finally {
+    rmSync(work, { recursive: true, force: true });
+  }
+  writeManifest(manifestPath, manifest);
+  console.log(`✓ ${cut} crop(s) cut, ${skipped} already current → ${path.relative(repositoryRoot, manifestPath)}`);
+}
+
 function requireBinary(name) {
   const found = spawnSync('which', [name], { encoding: 'utf8' });
   if (found.status !== 0) {
@@ -267,6 +377,10 @@ function main(argv) {
   const options = parseArgs(argv);
   if (options.refreshTransparency) {
     refreshTransparency(options.book);
+    return;
+  }
+  if (options.crops) {
+    vendorCrops(options.book);
     return;
   }
   const lock = loadSourceLock(repositoryRoot);

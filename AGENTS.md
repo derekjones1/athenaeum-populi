@@ -32,9 +32,9 @@ reference pages (`appendices/<letter>-<slug>.md`, generated from the
 CNXML's tables and held to them cell by cell); `docs/subjects/chemistry.md`
 holds the source, the page skeleton, the exercise rules (only source-keyed
 exercises reach the page), the notation, measured-quantity grading
-(`\ce{…}` formulas in math, `sig-figs:<n> last-digit:<k>` fill-ins, a
-second right value `worked:<value>` where the source's key was computed
-from finer atomic masses than the book's periodic table prints), typed
+(`\ce{…}` formulas in math, `sig-figs:<n> last-digit:<k>` fill-ins, and
+one right answer per item: a key that depends on an atomic mass is what
+the book's own periodic table, `data/chemistry/elements.json`, gives), typed
 formulas and equations (`textin` with `answerForm="formula"` or
 `"equation"`), the appendix rules, and
 the figure rules; a chapter is run from `docs/briefs/chemistry/run.md` with
@@ -118,8 +118,14 @@ campaign, the figure-alt passes, and their kit — are archived under
   and every value it keys must be one the source solution prints (rounding
   to the printed places allowed); a key that departs from the source on
   purpose must be listed in the tool's `DISCLOSED_DEVIATIONS` with its
-  erratum number; holds an EXACT `--min-confirmed` baseline (part of
-  `npm test`). Needs the pinned bundles (`npm run source:fetch`): an absent
+  erratum number. On Chemistry, a key a unit or two from the source's
+  print on an item that fetches an atomic mass is `data-differs`: it must
+  be a row of `data/verification/source-print-differences.json`, which
+  `node tools/verify/verify-source-keys.mjs content --write-register`
+  writes and every run checks both ways (review its diff like a key
+  change); a formula or molar mass asked for itself must equal the book's
+  table exactly (`table-differs`). Holds an EXACT `--min-confirmed`
+  baseline (part of `npm test`). Needs the pinned bundles (`npm run source:fetch`): an absent
   bundle is skipped by name on stderr with no floor applied, so run it
   locally, with every bundle fetched, before pushing
 - `npm run verify:source-coverage` — refuse a life-sciences page that drops
@@ -200,7 +206,10 @@ campaign, the figure-alt passes, and their kit — are archived under
   book's Knowledge Check, every `fillin` and every `textin` declaring
   `answerForm="formula"` or `"equation"` must re-ask a worked example of
   its `### N.M` section's module and key what that example's Solution
-  prints, to the figures a declared `sig-figs:<n>` names and never a number
+  prints — where the answer depends on an atomic mass, what the section
+  page's example, recomputed from the book's periodic table, prints (a
+  `data-differs` key is confirmed only when the section page's body
+  prints it) — to the figures a declared `sig-figs:<n>` names and never a number
   the question itself gives (part of `npm test`; needs the pinned bundle)
 - `npm run ledger:stats` — verified/total per shortcode kind
 - `npm run ledger:list` — emit exercises as JSON for a verification pass

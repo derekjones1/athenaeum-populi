@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "sources": {
+    "values": {
+      "publisher": "National Institute of Standards and Technology (NIST), CODATA Task Group on Fundamental Physical Constants",
+      "title": "Fundamental Physical Constants — Complete Listing, 2022 CODATA adjustment",
+      "url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
+      "retrieved": "2026-11-13",
+      "copy": "tools/fixtures/codata/allascii-2022.txt",
+      "copySha256": "77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67",
+      "note": "Each quantity is the value the listing prints, digit for digit, with its digit-group spaces removed and the three dots that close a truncated exact value dropped. The listing gives the electron charge to mass quotient its negative sign; the table prints the magnitude, as the source's row does."
+    },
+    "figures": "Each value is printed to the count of significant figures OpenStax Chemistry 2e, Appendix D prints in the same place (`sourcePrint`, the source's number), in scientific notation where the source's is and as a plain decimal where it is not.",
+    "derived": "The gas constant in L atm mol⁻¹ K⁻¹ is not listed: it is the Avogadro constant times the Boltzmann constant (both exact), divided by the standard atmosphere in pascals, times 10³ (cubic meters to liters). The molar volumes are listed in m³ mol⁻¹ and printed in L mol⁻¹ (`scale` 3)."
+  },
+  "quantities": {
+    "atomic mass constant": "1.66053906892e-27",
+    "Avogadro constant": "6.02214076e23",
+    "Boltzmann constant": "1.380649e-23",
+    "electron charge to mass quotient": "-1.75882000838e11",
+    "elementary charge": "1.602176634e-19",
+    "electron mass": "9.1093837139e-31",
+    "Faraday constant": "96485.33212",
+    "molar gas constant": "8.314462618",
+    "molar volume of ideal gas (273.15 K, 101.325 kPa)": "22.41396954e-3",
+    "molar volume of ideal gas (273.15 K, 100 kPa)": "22.71095464e-3",
+    "neutron mass": "1.67492750056e-27",
+    "Planck constant": "6.62607015e-34",
+    "proton mass": "1.67262192595e-27",
+    "Rydberg constant": "10973731.568157",
+    "Rydberg constant times hc in J": "2.1798723611030e-18",
+    "speed of light in vacuum": "299792458",
+    "standard atmosphere": "101325"
+  },
+  "constants": [
+    {"name": "atomic mass unit (amu)", "cell": "${0}$ kg", "values": [{"quantity": "atomic mass constant", "sourcePrint": "1.6605402e-27"}]},
+    {"name": "Avogadro’s number", "cell": "${0}\\ \\text{mol}^{-1}$", "values": [{"quantity": "Avogadro constant", "sourcePrint": "6.02214076e23"}]},
+    {"name": "Boltzmann’s constant ($k$)", "cell": "${0}\\ \\text{J}\\ \\text{K}^{-1}$", "values": [{"quantity": "Boltzmann constant", "sourcePrint": "1.380649e-23"}]},
+    {"name": "charge-to-mass ratio for electron ($e/m_\\text{e}$)", "cell": "${0}\\ \\text{C}\\ \\text{kg}^{-1}$", "values": [{"quantity": "electron charge to mass quotient", "sourcePrint": "1.75881962e11"}]},
+    {"name": "fundamental unit of charge ($e$)", "cell": "${0}$ C", "values": [{"quantity": "elementary charge", "sourcePrint": "1.602176634e-19"}]},
+    {"name": "electron rest mass ($m_\\text{e}$)", "cell": "${0}$ kg", "values": [{"quantity": "electron mass", "sourcePrint": "9.1093897e-31"}]},
+    {"name": "Faraday’s constant ($F$)", "cell": "${0}\\ \\text{C}\\ \\text{mol}^{-1}$", "values": [{"quantity": "Faraday constant", "sourcePrint": "9.6485309e4"}]},
+    {"name": "gas constant ($R$)", "cell": "${0}\\ \\text{L}\\ \\text{atm}\\ \\text{mol}^{-1}\\ \\text{K}^{-1}$ = ${1}\\ \\text{J}\\ \\text{mol}^{-1}\\ \\text{K}^{-1}$", "values": [{"derive": {"multiply": ["Avogadro constant", "Boltzmann constant"], "divide": ["standard atmosphere"]}, "scale": 3, "sourcePrint": "8.205784e-2"}, {"quantity": "molar gas constant", "sourcePrint": "8.314510"}]},
+    {"name": "molar volume of an ideal gas, 1 atm, 0 °C", "cell": "${0}\\ \\text{L}\\ \\text{mol}^{-1}$", "values": [{"quantity": "molar volume of ideal gas (273.15 K, 101.325 kPa)", "scale": 3, "sourcePrint": "22.41409"}]},
+    {"name": "molar volume of an ideal gas, 1 bar, 0 °C", "cell": "${0}\\ \\text{L}\\ \\text{mol}^{-1}$", "values": [{"quantity": "molar volume of ideal gas (273.15 K, 100 kPa)", "scale": 3, "sourcePrint": "22.71108"}]},
+    {"name": "neutron rest mass ($m_\\text{n}$)", "cell": "${0}$ kg", "values": [{"quantity": "neutron mass", "sourcePrint": "1.6749274e-27"}]},
+    {"name": "Planck’s constant ($h$)", "cell": "${0}$ J s", "values": [{"quantity": "Planck constant", "sourcePrint": "6.62607015e-34"}]},
+    {"name": "proton rest mass ($m_\\text{p}$)", "cell": "${0}$ kg", "values": [{"quantity": "proton mass", "sourcePrint": "1.6726231e-27"}]},
+    {"name": "Rydberg constant ($R$)", "cell": "${0}\\ \\text{m}^{-1}$ = ${1}$ J", "values": [{"quantity": "Rydberg constant", "sourcePrint": "1.0973731534e7"}, {"quantity": "Rydberg constant times hc in J", "sourcePrint": "2.1798736e-18"}]},
+    {"name": "speed of light (in vacuum) ($c$)", "cell": "${0}\\ \\text{m}\\ \\text{s}^{-1}$", "values": [{"quantity": "speed of light in vacuum", "sourcePrint": "2.99792458e8"}]}
+  ]
+}

@@ -25,7 +25,8 @@
  *
  * A BOOK'S REFERENCE FIGURE opens here too. Chemistry keeps the periodic
  * table at hand on every page: layouts/_partials/toc.html prints one control
- * in the page rail (utils/reference-figure.html — a real link to Appendix A
+ * in the page rail, and the same control as a fixed button below the rail's
+ * breakpoint (utils/reference-figure.html — a real link to Appendix A
  * that carries the figure's file and size), and it opens this dialog instead
  * of leaving the page, where a typed answer would be lost. So does a link to
  * that same page in the body of a section — "Using the periodic table, …" in
@@ -284,9 +285,12 @@ document.addEventListener('click', (event) => {
   if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
   if (typeof HTMLDialogElement !== 'function') return;
   const target = event.target instanceof Element ? event.target : null;
-  const control = document.querySelector(REFERENCE);
-  const anchor = control && target?.closest('a[href]');
-  if (anchor && opensReference(anchor, control)) {
+  // The control is printed twice — in the rail, and as a fixed button below
+  // the rail's breakpoint — so the one clicked is the one that opened it
+  // (and takes focus back); a body link reads either, their data being one.
+  const anchor = target?.closest('a[href]');
+  const control = anchor?.closest(REFERENCE) ?? document.querySelector(REFERENCE);
+  if (anchor && control && opensReference(anchor, control)) {
     if (openReference(control)) event.preventDefault();
     return;
   }

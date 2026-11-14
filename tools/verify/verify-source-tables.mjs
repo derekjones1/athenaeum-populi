@@ -57,6 +57,7 @@ import {
   mediaStem, moduleTables, pageSkeleton, pageTables, sourceFootnotes, sourceSkeleton,
 } from '../lib/source-tables.mjs';
 import { ELEMENTS_TABLE_TITLE, compareElementsTable } from '../source/elements-table.mjs';
+import { compareConstantsTable, constantDeviations, loadConstants } from '../source/constants-table.mjs';
 
 const repositoryRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 
@@ -71,6 +72,13 @@ export const TABLE_NOTES = Object.freeze({
   // own from data/chemistry/elements.json and lists the same file as a table,
   // which is read against that file (`elements`), not against the CNXML.
   'chemistry-bundle:m68859': { added: [ELEMENTS_TABLE_TITLE], elements: true },
+  // Appendix D: the source's table mixes the exact SI values of 2019 with
+  // measured values of older adjustments. The page prints one adjustment
+  // throughout, from data/chemistry/constants.json (NIST's CODATA listing).
+  // The table is still read against the CNXML: `constants` supplies one
+  // deviation per value the data file changes, from the source's number
+  // recorded there to the number the page must print.
+  'chemistry-bundle:m68862': { constants: true },
   // Appendix H: nine formulas are printed as images; the Lewis structures
   // leave the table and follow it as figures.
   'chemistry-bundle:m68866': {
@@ -289,8 +297,17 @@ function main(argv) {
     const sourceRoot = path.resolve(repositoryRoot, lock.bundles[entry.bundle].sourceDir);
     const modulePath = path.join(sourceRoot, 'modules', entry.moduleId, 'index.cnxml');
     if (!existsSync(modulePath)) { skipped.add(entry.bundle); continue; }
-    const notes = TABLE_NOTES[`${entry.bundle}:${entry.moduleId}`] || {};
+    let notes = TABLE_NOTES[`${entry.bundle}:${entry.moduleId}`] || {};
     const markdown = readFileSync(path.join(repositoryRoot, entry.localPath), 'utf8');
+    const constants = notes.constants ? loadConstants(repositoryRoot) : null;
+    if (constants) {
+      notes = {
+        ...notes,
+        deviations: [...(notes.deviations || []), ...constantDeviations(constants).map(([from, to, name]) => [
+          pageSkeleton(from), pageSkeleton(to), `2022 CODATA value of the ${name} (data/chemistry/constants.json)`,
+        ])],
+      };
+    }
     const result = compareTables(readFileSync(modulePath, 'utf8'), markdown, notes);
     cells += result.cells;
     pages += 1;
@@ -299,6 +316,11 @@ function main(argv) {
       const table = compareElementsTable(markdown, loadElements(repositoryRoot));
       cells += table.cells;
       for (const error of table.errors) failures.push(`${entry.localPath}: table of the elements, ${error} (node tools/source/elements-table.mjs --write)`);
+    }
+    if (constants) {
+      // The same cells as above, said in the data file's terms; not counted twice.
+      const table = compareConstantsTable(markdown, constants);
+      for (const error of table.errors) failures.push(`${entry.localPath}: table of constants, ${error} (node tools/source/constants-table.mjs --write)`);
     }
   }
   for (const key of Object.keys(TABLE_NOTES)) {

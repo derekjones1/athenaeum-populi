@@ -28,7 +28,7 @@
     "validate": "node tools/lint/validate-content.mjs content",
     "verify:content": "node tools/verify/verify-all.mjs content",
     "verify:answers": "node tools/verify/verify-answers.mjs content --min-verified 3194",
-    "verify:source-keys": "node tools/verify/verify-source-keys.mjs content --min-confirmed 7399",
+    "verify:source-keys": "node tools/verify/verify-source-keys.mjs content --min-confirmed 7394",
     "verify:source-coverage": "node tools/verify/verify-source-coverage.mjs content --min-covered 4501",
     "verify:kc-sources": "node tools/source/knowledge-check.mjs sources content",
     "verify:source-tables": "node tools/verify/verify-source-tables.mjs --min-cells 3418",

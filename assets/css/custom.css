@@ -1196,6 +1196,31 @@ dialog.ap-lookup { width: min(calc(100vw - 2rem), 60rem); }
 }
 .ap-reference-figure:hover { border-color: currentColor; }
 .dark .ap-reference-figure { color: #f3f4f6; }
+/* Below the rail's breakpoint the rail is a drawer, so the control is also
+   a fixed button at the lower right (layouts/_partials/toc.html prints it a
+   second time, outside the rail). 44px tall: a touch target. It sits under
+   the drawer, its scrim and the navbar (z-index 15, 14, 20). A fixed button
+   covers the corner of whatever scrolls beneath it; at the end of the page
+   that is the site footer's margin, so nothing of the page is unreachable. */
+.ap-reference-floating { display: none; }
+@media (max-width: 79.99rem) {
+  .ap-reference-floating {
+    display: inline-flex;
+    position: fixed;
+    right: calc(12px + env(safe-area-inset-right));
+    bottom: calc(12px + env(safe-area-inset-bottom));
+    z-index: 13;
+    min-height: 44px;
+    padding: 4px 14px;
+    background: #fff;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 0.18);
+  }
+  .dark .ap-reference-floating { background: #111; box-shadow: 0 1px 4px rgb(0 0 0 / 0.6); }
+  html.ap-toc-open .ap-reference-floating { display: none; }
+}
+@media print {
+  .ap-reference-floating { display: none; }
+}
 
 /* --- Figures and links inside a blue callout ------------------------------
    Hextra's info callout is a `hx:bg-blue-100` (#dbeafe) box with no class of

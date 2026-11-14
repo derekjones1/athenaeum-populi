@@ -1218,7 +1218,7 @@ test('the figure viewer opens from the keyboard, keeps focus inside, closes on E
   await assertProductionBuild(page, path);
   await waitForPageReady(page);
 
-  const link = page.locator('.ap-mediafigure[data-stem="CNX_Chem_02_05_PerTable1"] a.ap-mediafigure-enlarge');
+  const link = page.locator('.ap-mediafigure[data-stem="periodic-table"] a.ap-mediafigure-enlarge');
   await expect(link).toHaveCount(1);
   await link.scrollIntoViewIfNeeded();
   const linkBox = await link.boundingBox();

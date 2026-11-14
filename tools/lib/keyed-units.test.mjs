@@ -983,5 +983,9 @@ test('a key a unit or two from the source’s print by its atomic masses is data
   assert.equal(dataDifference(keyNumeral('199.99'), printedNumerals('199.9976 amu')).units, 1);
   assert.equal(dataDifference(keyNumeral('5.336\\times10^{22}'), printedNumerals('5.337 × 10^{22} molecules')).units, 1);
   assert.equal(dataDifference(keyNumeral('12.3'), printedNumerals('12.6 g')), null, 'three units');
+  // A worked Solution prints counts beside its result; the result is the print read at the finest place.
+  const glycine = printedNumerals('One mole of glycine contains 2 moles of carbon and 1 mole of nitrogen: 28.35 g glycine / 75.07 g = 0.3776 mol glycine');
+  assert.deepEqual([dataDifference(keyNumeral('0.3777'), glycine).numeral.printed, dataDifference(keyNumeral('0.3777'), glycine).units], ['0.3776', 1]);
+  assert.equal(dataDifference(keyNumeral('0.3777'), printedNumerals('1 mole of nitrogen')), null, 'a count the key has no figure of');
   assert.equal(dataDifference(keyNumeral('1.2'), printedNumerals('1.4 g')), null, 'two units of a two-figure number is more than a tenth of a percent and a unit');
 });

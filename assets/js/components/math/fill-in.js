@@ -71,12 +71,6 @@ class FillInElement extends HTMLElement {
     // Pull optional slotted content out of <template>s.
     const adTpl = this.querySelector('template[data-slot="answer-display"]');
     this.answerDisplayHTML = adTpl ? adTpl.innerHTML : '';
-    // A key's second value — what the book's own data give — typeset at
-    // build time; shown beside the answer only when the grader says it is
-    // another number than the key (_loadEngine).
-    const workedTpl = this.querySelector('template[data-slot="worked-value"]');
-    this.workedValueHTML = workedTpl ? workedTpl.innerHTML : '';
-    this.showsWorkedValue = false;
     const hintTpl = this.querySelector('template[data-slot="hint"]');
     this.hintHTML = hintTpl ? hintTpl.innerHTML : '';
 
@@ -145,8 +139,7 @@ class FillInElement extends HTMLElement {
     // URL is a build-time constant, so esbuild leaves this as a real import().
     try {
       const engine = await import(engineUrl);
-      const { mathlive, checkAnswer, ce, describeAnswerForm, describeFormFeedback, describeIncorrectFeedback, workedValueShown } = engine;
-      this.showsWorkedValue = Boolean(this.workedValueHTML) && workedValueShown(this.answer, this.answerForm) !== '';
+      const { mathlive, checkAnswer, ce, describeAnswerForm, describeFormFeedback, describeIncorrectFeedback } = engine;
       // The form requirement is phrased next to the predicates that enforce
       // it, so the feedback and the rule can never drift apart.
       if (this.answerForm) this._formMessage = describeAnswerForm(this.answerForm);
@@ -168,9 +161,7 @@ class FillInElement extends HTMLElement {
       // `x^2+3x` and turns a typed `6.022*10^23` into 10² followed by a 3.
       // Here every digit typed after `^` stays in the exponent. Set after the
       // import, when <math-field> is defined and the property is its own.
-      // A key with a worked value (`worked:<value>`) is a measured numeral
-      // too, with or without a count of figures beside it.
-      if (/(?:^|\s)(?:sig-figs|worked):/.test(this.answerForm)) this.field.smartSuperscript = false;
+      if (/(?:^|\s)sig-figs:/.test(this.answerForm)) this.field.smartSuperscript = false;
 
       // Replace the interim label (raw TeX minus delimiters) with spoken
       // math now the serializer is here — BEFORE the Check button enables,
@@ -314,14 +305,10 @@ class FillInElement extends HTMLElement {
       const restoreFocus = focusGuard(this);
       this.field.setAttribute('readonly', '');
       this._lockFieldForDisplay();
-      // Two right answers are both named: the source's, and the one the
-      // book's own tables or stem give. A learner who worked from the book
-      // sees their own number, not only a different one marked "the answer".
-      this.feedback.innerHTML = this.answerDisplayHTML && this.showsWorkedValue
-        ? `Correct — the source’s answer is ${this.answerDisplayHTML}; this book’s own data give ${this.workedValueHTML}.`
-        : this.answerDisplayHTML
-          ? `Correct — ${this.answerDisplayHTML}.`
-          : 'Correct!';
+      // One right answer is named: the key, as its answerDisplay writes it.
+      this.feedback.innerHTML = this.answerDisplayHTML
+        ? `Correct — ${this.answerDisplayHTML}.`
+        : 'Correct!';
       restoreFocus(this.feedback);
       this.button.disabled = true;
     } else {

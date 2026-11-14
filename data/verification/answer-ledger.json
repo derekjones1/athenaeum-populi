@@ -1236,14 +1236,6 @@
     "result": "agrees"
    }
   },
-  "02767698a7b5ba80": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (e): first classification metal",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "027874685b2db90c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -2000,6 +1992,14 @@
   "03d0b3222b9bd3b9": {
    "verdict": "ok",
    "note": "glossary recall: nonparental type — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "03d6a7774ecc3c0c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (a): further classification inner transition metal The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -7759,14 +7759,6 @@
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "0f76890fa85707fc": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (e): further classification transition metal",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "0f7714865f01bd1f": {
    "verdict": "ok",
    "note": "source exercise fs-idp17243280 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -13306,14 +13298,6 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 480): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
-  "1a3fe9d79319ffac": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm419056816 part (c): Li Hint reworded after the blind solve (parent): it now also sends the learner to the text for which elements of the column the group's name covers; question, key, and form unchanged.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "1a40eab2392380ba": {
    "verdict": "ok",
    "note": "glossary recall: urine (fs-idm117296416) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -14633,6 +14617,14 @@
   "1cbed4002f44d679": {
    "verdict": "ok",
    "note": "cloze from fs-id2686721 'The Müllerian ducts degenerate'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "1cc1d88317915b45": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (g): first classification metal The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -16965,6 +16957,14 @@
     "result": "agrees"
    }
   },
+  "217aaa3e255f1e59": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (b): first classification nonmetal The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "217f033cd117616a": {
    "verdict": "ok",
    "note": "source exercise fs-id2138586 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -19014,14 +19014,6 @@
   "25ed3fafa1648dc8": {
    "verdict": "ok"
   },
-  "25ee26c81d56c70f": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (d): further classification main-group (representative) element",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "25ee88013d4edb3f": {
    "verdict": "ok",
    "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -20685,14 +20677,6 @@
     "result": "agrees"
    }
   },
-  "293bdc821a86bb28": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (d): first classification nonmetal",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "29404dfec757fc97": {
    "verdict": "ok",
    "note": "locally authored selfcheck paraphrasing the module's migration/public-health paragraph (fs-idm171579728), no new claims — disclosed in the footer (thin-group filler). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -21629,14 +21613,6 @@
     "result": "agrees"
    }
   },
-  "2b385f9e944771bc": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (f): further classification inner transition metal",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "2b3b68829860c0c3": {
    "verdict": "ok",
    "note": "KC 3 14.4 § glossary sliding clamp (fs-id1703233), m66390 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -21987,14 +21963,6 @@
   "2c0920432bb5f2b8": {
    "verdict": "ok",
    "note": "KC 4 19.3 § introduction, m66718 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "2c0ae997566caaa7": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (a): first classification metal",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -24226,14 +24194,6 @@
    "verdict": "ok",
    "note": "Diagonal matrix det3(diag(-1,1,-3)) = (-1)(1)(-3) = 3, run in Node; matches CNXML solution 3 (fs-id1513986). | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
-  "30745c5dad6af967": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (f): first classification metal",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "30756a8c5d3de30b": {
    "verdict": "ok",
    "note": "KC 4 16.4 § Emerging and Reemerging Infectious Diseases — SARS micro-connection (fs-id1167660178916), m58874",
@@ -25779,6 +25739,14 @@
   "33e19d5348d29b5c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "33e3688ced929f98": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (h): first classification nonmetal The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -28897,14 +28865,6 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "3a481ec42a5a0535": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (c): first classification metal",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "3a4d5e3bbdcc94c1": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"When protein receptors on the plasma membrane's surface of an animal cell bind to a substance in the extracellular matrix, a chain of react…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -29240,14 +29200,6 @@
     "result": "agrees"
    }
   },
-  "3aef3860422369d1": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm419056816 part (b): Be Hint reworded after the blind solve (parent): it now also sends the learner to the text for which elements of the column the group's name covers; question, key, and form unchanged.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "3af0a4185aeaa681": {
    "verdict": "ok",
    "note": "key-term cloze; m46341 body fs-id1641272: 'Bone, or osseous tissue, is a hard, dense connective tissue that forms most of the adult skeleton, the support structure of the body.' The clause 'is a hard, dense connective tissue that' is left out of the stem (it is Review fs-id1516749's key). Glossary fs-id756448 'osseous tissue'. accept 'osseous'; grader: 'osseous-tissue', 'osseous tissues', 'the osseous tissue' correct, 'bone tissue' incorrect.",
@@ -29289,6 +29241,14 @@
   "3b0a3e35a7e64361": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "3b0b33f0eefe7517": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (e): first classification metal The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -30406,14 +30366,6 @@
     "result": "agrees"
    }
   },
-  "3d705afeffe3e489": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (j): further classification main-group (representative) element",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "3d720e3ed301cf3a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -30593,14 +30545,6 @@
   "3de7ea03d0f8bbf1": {
    "verdict": "ok",
    "note": "KC 1 5.1 § Chromalveolata, m58802 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "3df08dd8b5ea94ff": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (h): first classification nonmetal",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -36811,14 +36755,6 @@
     "result": "agrees"
    }
   },
-  "4a7550981579464e": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (h): further classification main-group (representative) element",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "4a7b9402bc69b2d4": {
    "verdict": "ok",
    "note": "body cloze fs-id2227440 sentence 2 'The IgA (and sometimes IgM) antibodies...'; stem cut after \"pathogen\" (no neutralize root); accept + immunoglobulin A",
@@ -39195,6 +39131,14 @@
     "result": "agrees"
    }
   },
+  "4f76a7edfeba4f10": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (i): further classification main-group (representative) element The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4f76b7a807c37e61": {
    "verdict": "ok",
    "note": "both slopes 1/3, intercepts differ -> parallel; key p1279 #13"
@@ -39604,6 +39548,14 @@
   "502084cc6e288d6d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "5023a0c67ec7fb10": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm419056816 part (b): Be Hint reworded after the blind solve (parent): it now also sends the learner to the text for which elements of the column the group's name covers; question, key, and form unchanged. The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -41106,6 +41058,14 @@
     "note": "The stem now asks for the category; m66699 says habituation \"is a form of non-associative learning, as the stimulus is not associated with any punishment or reward\" — habituation is a member, not the category (stem reworded after the first solver answered habituation)."
    }
   },
+  "537b6e853522b76b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp61309952 part (e) (restating fs-idp16477696), moles: 2500 g / 153.33 g/mol (BaO, this book's table) = 16.305 → 16.30; the source prints 16.31 (from Ba 137.3). A data difference, row of source-print-differences.json (November 13, 2026).",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "537b9414dceab2c2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -41679,14 +41639,6 @@
   "5496a9bc1884458c": {
    "verdict": "ok",
    "note": "m66466 critical-thinking solution fs-id1482920 (universality of glycolysis supporting its antiquity) matches the page's model answer verbatim; all three checks restate it with no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
-  },
-  "549d3c486c753c2c": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm27167936; stem gives 0.499935 -> 0.4999; source key 0.5000 kept by parent ruling (rounding noise: the source built it from 3.63(b) datum), tolerance:0.05% grades both correct | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "549e69877d9a5a93": {
    "verdict": "ok",
@@ -42599,7 +42551,8 @@
    "note": "Check Your Learning of example fs-idm150394080, chlorine: 17.81/24.81 = 71.786% -> 71.79 (source 71.79% Cl)",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "agrees"
+    "result": "adjudicated",
+    "note": "Key stands: the source prints 71.79% Cl for this Check Your Learning (m68702), by the worked example's method — the element's mass over the stated 24.81-g sample. The stem's three masses, each given to 0.01 g, sum to 24.82 g; 71.76 divides by that sum, which the stem does not ask for. Not an atomic-mass item; untouched by the November 13, 2026 sweep."
    }
   },
   "568d907f03da46b3": {
@@ -44328,6 +44281,14 @@
   },
   "5a0f35e5ed1887ef": {
    "verdict": "ok"
+  },
+  "5a10ade6e2cb9e15": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (e): further classification transition metal The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "5a14a755b1e9a44e": {
    "verdict": "ok",
@@ -46081,14 +46042,6 @@
     "result": "agrees"
    }
   },
-  "5d90a46f1a5e47fe": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp172099056 part (a), 5.337 × 10²² molecules; sig-figs:4 last-digit:1 per rulings G1 (table 5.3355e22, within 1u). November 12, 2026 follow-up: stem corrected from \"ores such as K[Ag(CN)2]\" to \"its ores as K[Ag(CN)2]\" and \"molecules\" to \"formula units\" (errata 3034, 3035); key unchanged, a Source note after the item, re-solved blind. | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "5d9115d997b23894": {
    "verdict": "ok",
    "note": "parent: r=16^(1/4)=2, theta=(120+360k)/4 -> 30,120,210,300; each root^4 recomputed | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -46229,21 +46182,12 @@
    "note": "source exercise fs-idp147780304 part (c) (restating fs-idp166618800), mass, key 6.80\\times10^{2}; source prints 6.8 × 10² g, value kept, count of the data per parent decision",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "adjudicated",
-    "note": "Key 6.80 × 10² at the data's three figures (the source prints 6.8 × 10²: erratum and disclosed deviation). The plain 680 satisfies sig-figs:3 (playbook \"Count n from the source's answer\"): both of the solver's forms grade correct."
+    "result": "agrees"
    }
   },
   "5de2eade71fb5b91": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "5de75d6c665953db": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (i): further classification main-group (representative) element",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "5de7e173c7598a2b": {
    "verdict": "ok",
@@ -47363,14 +47307,6 @@
     "result": "agrees"
    }
   },
-  "6059f335e9432ccd": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (i): first classification nonmetal",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "606fcd6ba3b0ffe4": {
    "verdict": "ok",
    "note": "body cloze fs-id2025868: ciliated epithelial cells move mucus upwards",
@@ -47658,6 +47594,14 @@
    "note": "orchestrator solve (solve-check.mjs) | prior derivation: cramer2(6,-3,2,-8,9,-1): D=30,Dx=15,Dy=10 -> (1/2,1/3), run in Node; matches CNXML solution (1/2,1/3) (fs-id1704920).",
    "solved": {
     "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
+  "61029b86c35d8bd4": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp61309952 part (f) (restating fs-idp16477696), mass: 9.55 / 46.069 × 28.054 = 5.8155 → 5.82 g; the source prints 5.81, which its four-figure masses give by this book's method (9.55/46.07 × 28.05 = 5.8146) and which 0.207 mol, already rounded, × 28.05 gives as well. One unit away on an item that fetches two molar masses: a row of source-print-differences.json, erratum 3037 (November 13, 2026).",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -52790,7 +52734,7 @@
    "solved": {
     "by": "orchestrator-solver",
     "result": "adjudicated",
-    "note": "Key is the source's 22.4 (exercise fs-idm17012464), which the solver answered by the gravimetric route. The stem's two masses do not fit GaBr₃ exactly (0.165 g would give 0.3003 g AgBr), so gallium by difference ends at 22.9: a source data defect, logged as an erratum. After the solve the parent added a Source note directly after the item that names the route the graded answer takes (no value); the item itself is unchanged. Key stands with last-digit:0 (22.5, from the formula alone, must be wrong)."
+    "note": "Key stands (ruling of the chapter 4 run, Source note under the item): the stem's two masses do not agree exactly with GaBr₃, so routes end apart; the page keys the route through the precipitate the stem weighs, 0.299 g AgBr → 22.4% Ga, which the source prints. 22.9 takes gallium by difference from the bromine found, a route the stem does not ask for. Unchanged by the new periodic table (22.43 by the table's masses)."
    }
   },
   "6d4c906cdf6b16ed": {
@@ -55026,6 +54970,14 @@
     "result": "agrees"
    }
   },
+  "71c1c3ebcac85017": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp61309952 part (e) (restating fs-idp16477696), mass: 16.3047 mol × 169.33 g/mol (BaO₂, this book's table) = 2760.9 → 2761 g, the moles carried unrounded; the source prints 2762. A data difference, row of source-print-differences.json (November 13, 2026).",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "71cea7114c2b2cbd": {
    "verdict": "ok",
    "note": "RQ fs-id1850767 key D macrophages (microphages corrected, 2528); option C complement replaced by module \"antiviral proteins\" (fs-id2760204; 2530) since 21.5 gives viruses to interferons/Tc and m46571 never ties complement to viruses; single correct option now",
@@ -55180,6 +55132,14 @@
   "721fa61afc3acbd6": {
    "verdict": "ok",
    "note": "glossary recall fs-id1138759 excitable membrane; body term-00001 in opening para fs-id1496599; accept excitable cell membrane (grader-checked)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "721fcad121ab8585": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (a): first classification metal The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -55376,6 +55336,14 @@
   "72894d07cdcd71ef": {
    "verdict": "ok",
    "note": "Check Your Learning of example fs-idm194224 part (c); key Mn₃(PO₄)₂ | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "72906278770dc080": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (d): further classification main-group (representative) element The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -55803,14 +55771,6 @@
   "738fc6e6f2c96e66": {
    "verdict": "ok",
    "note": "source exercise fs-idp56804240 part (a); key = source solution, re-derived against the CNXML and recomputed from the periodic table",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "73957cb1ba395069": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idp69077568 (para fs-idp29238016): source 23.76%; own 23.762 (AgCl 143.35 from Appendix A)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -56258,6 +56218,14 @@
   "74895e813bdd4dae": {
    "verdict": "ok",
    "note": "source RQ fs-id1268237 verbatim, source key A 'glucagon and insulin'; module: insulin levels drop and glucagon is released as glucose falls",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "7489da7263628981": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm419056816 part (c): Li Hint reworded after the blind solve (parent): it now also sends the learner to the text for which elements of the column the group's name covers; question, key, and form unchanged. The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -62146,7 +62114,8 @@
    "note": "Check Your Learning of example fs-idm64107376; 0.00375 mol / 0.05 M = 0.075 L, one figure 0.08 L = 80 mL, source 80 mL",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "agrees"
+    "result": "adjudicated",
+    "note": "Key stands: the source prints 80 mL for this Check Your Learning (m68703). From the example's printed 0.375 M the volume is 75.0 mL, 80 at the one figure 0.05 M supports; 70 needs the example's molarity carried unrounded (0.3746 M), which the page prints nowhere. Not an atomic-mass item; untouched by the November 13, 2026 sweep."
    }
   },
   "80245dfa73fe794e": {
@@ -63161,6 +63130,14 @@
     "result": "agrees"
    }
   },
+  "826981357410d79b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (j): first classification metal The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "826f5037f82677a5": {
    "verdict": "ok",
    "note": "KC 5 23.3 § Syphilis > Congenital Syphilis, m58919"
@@ -63308,6 +63285,14 @@
   "82be0d6a2da9e276": {
    "verdict": "ok",
    "note": "m66648 note.visual-connection fs-idp209261040 (also printed identically as exercise fs-idp209261040 in section.visual-exercise); model answer matches the CNXML solution verbatim: 'The blood pH will drop and hemoglobin affinity for oxygen will decrease.' | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "82be15397744ae70": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (d): first classification nonmetal The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "82beeb98ff6b2301": {
    "verdict": "ok",
@@ -63537,8 +63522,7 @@
    "note": "source exercise fs-idp52490448 (printed 4.81): source 9.6e-3 M Cl-; own 9.636e-3",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "adjudicated",
-    "note": "Key is the source's 9.6 × 10⁻³ (exercise fs-idp52490448); either notation is accepted, so 0.0096 grades correct."
+    "result": "agrees"
    }
   },
   "834335d30daeb7e9": {
@@ -64099,6 +64083,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
+  "84562caff90e63b9": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm130496608 part (a), %N: source key 82.24 (decision 1, sig-figs:4 tolerance:0.05%); table 82.27 / unrounded 82.25 inside band; hint re-pointed to the percent composition equation (check-3.2 defect 1) | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -65571,6 +65563,14 @@
     "result": "agrees"
    }
   },
+  "8756061ed27bacc4": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (c): first classification metal The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "87597d5e82f7764e": {
    "verdict": "ok",
    "note": "source exercise fs-id1172098268292 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -65782,6 +65782,14 @@
   "87d4216bcb8d6d36": {
    "verdict": "ok",
    "note": "author-built from § Measuring Biodiversity: \"DNA barcoding is one molecular genetic method, which takes advantage of rapid evolution in a mitochondrial gene (cytochrome c oxidase 1) pr…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "87d9821558be19f7": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (g): further classification transition metal The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -67234,6 +67242,14 @@
     "result": "agrees"
    }
   },
+  "8ad1ab9c77face8c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (c): further classification main-group (representative) element The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8ada270e356e4c71": {
    "verdict": "ok",
    "note": "unkeyed CYU, selfcheck: comparison needs several module sentences | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -68666,14 +68682,6 @@
   "8df4609f0bcc453d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "8df52093a63c9740": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp61309952 part (b) (restating fs-idp16477696), mass, key 0.08644 | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -72108,6 +72116,14 @@
    "verdict": "ok",
    "note": "d=-4-3=-7, a_n=3-7(n-1)=10-7n; solve -60=10-7n -> n=10 (matches source key). | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "9515aa7f4a145762": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (f): further classification inner transition metal The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9518c4d08776ac6d": {
    "verdict": "ok",
    "note": "f(x)=sqrt(x-4) requires x-4>=0, i.e. x>=4; sqrt is continuous everywhere it is defined -> continuous on [4,infty). Matches source exercise fs-id1165135693153 solution 'Continuous on [4,infty)'. | carried Oct 12 2026 (Precalculus ch11–12 re-review): re-hashed by a form, stem, or hint edit, key unchanged; re-solved blind (fable-solver, 77/77)",
@@ -73410,14 +73426,6 @@
     "result": "agrees"
    }
   },
-  "97ccdef26a132916": {
-   "verdict": "ok",
-   "note": "KC 1 3.1 § Example: Deriving Moles from Grams for a Compound, m68700",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "97d223d54b2254c2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -73433,6 +73441,14 @@
   "97d96b8a102152ee": {
    "verdict": "ok",
    "note": "source exercise fs-idm61727056 part (c); source answer carried as the model answer; duplicate rubric clause trimmed after the fix check (parent)"
+  },
+  "97ddd571e53b6bd2": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (j): further classification main-group (representative) element The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "97dffaaec77b229e": {
    "verdict": "ok",
@@ -74022,14 +74038,6 @@
   "991c74e8444c66ef": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "991f088dd4039af7": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (g): first classification metal",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -74751,6 +74759,14 @@
   "9ac9da6c0cc109a5": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"Modifications (such as phosphorylation) of proteins in this complex can prevent proper translation from occurring.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "9acb47ee200dcb30": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm1441136 (m68704): 750 × 0.12 × 0.789 / 46.07 = 1.541 → 1.5 mol; source 1.5 mol ethanol. The stem's molar mass of ethanol is the table's 46.069 at the source's four figures, 46.07, where the source prints 46.06 (November 13, 2026); the key does not move.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -76262,6 +76278,14 @@
   "9e0ce4244b8ecaa3": {
    "verdict": "ok",
    "note": "KC 2 5.2 § Sweat Glands, m46062",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "9e0f4f5613b7a372": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm27167936; the stem gives 0.1718 × 0.3556 / 0.1222 = 0.499935 → 0.4999 L; the source prints 0.5000 L. Keyed 0.4999 as a disclosed correction (erratum 2999, DISCLOSED_DEVIATIONS) since November 13, 2026 — until then the source's 0.5000 was the key and 0.4999 a second right answer. No atomic mass enters.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -83265,14 +83289,6 @@
     "result": "agrees"
    }
   },
-  "acb591b9b97d2649": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm419056816 part (d): O Hint reworded after the blind solve (parent): it now also sends the learner to the text for which elements of the column the group's name covers; question, key, and form unchanged.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "acbb73a7ac61cb57": {
    "verdict": "ok",
    "note": "key-term recall: bacteriocins; printed in § Antimicrobial Peptides: \"AMPs called bacteriocins are produced exogenously by certain members of the resident microbiota within the gastrointestinal tract.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -84279,8 +84295,7 @@
    "note": "source exercise fs-idp272460112 part (b), mass 2.2 × 10² g (table 219.7)",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "adjudicated",
-    "note": "Key is the source's 2.2 × 10² (exercise fs-idp272460112 part (b)). The plain 220 satisfies sig-figs:2: both forms grade correct."
+    "result": "agrees"
    }
   },
   "aec89d4071ffbe03": {
@@ -85427,14 +85442,6 @@
   "b16406a428cd4859": {
    "verdict": "ok",
    "note": "CT fs-id2133649, model = solution fs-id2325220 verbatim"
-  },
-  "b1656d2ca70695ec": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm1441136 (m68704): 750×0.12×0.789/46.06 = 1.542 → 1.5 mol; source 1.5 mol ethanol",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "b173d22f58251dfd": {
    "verdict": "ok",
@@ -87521,14 +87528,6 @@
     "result": "agrees"
    }
   },
-  "b595a796919e5387": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp61309952 part (f) (restating fs-idp16477696), mass, key 5.81 (table 5.815, last-digit:1)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "b5969f2298825a28": {
    "verdict": "ok",
    "note": "body cloze from § Excavata: \"They have basal bodies and modified mitochondria (kinetoplastids).\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -88480,8 +88479,7 @@
    "note": "source exercise fs-idm186096 (printed 4.79): source 3.4e-3 M H2SO4; own 3.447e-3; sig-figs:2 last-digit:0 (rulings G1)",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "adjudicated",
-    "note": "Key is the source's 3.4 × 10⁻³ (exercise fs-idm186096); either notation is accepted, so 0.0034 grades correct."
+    "result": "agrees"
    }
   },
   "b79f39b154604c8c": {
@@ -89665,8 +89663,7 @@
    "note": "source exercise fs-idm130496608 part (a), %H: 3.024/17.03 = 17.76 (source 17.76); hint re-pointed (check-3.2 defect 1)",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "adjudicated",
-    "note": "The key 17.76 is the source's and the body's own. The solver's 17.75 (formula mass carried unrounded, 3.024/17.034) grades correct under sig-figs:4 last-digit:1, which is what the allowance for a molar mass fetched from the table is for."
+    "result": "agrees"
    }
   },
   "ba06440bbb1d6f10": {
@@ -94001,14 +93998,6 @@
     "result": "agrees"
    }
   },
-  "c32fdaa849197e25": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp61309952 part (e) (restating fs-idp16477696), moles, key 16.31",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "c33082a2e7277db4": {
    "verdict": "ok",
    "note": "source exercise fs-idm20960192 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -94422,14 +94411,6 @@
   "c3fcab43609e434b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "c3fe76db5952848a": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp172099056 part (b), 10.41 g (table 10.40) November 12, 2026 follow-up: stem corrected from \"ores such as K[Ag(CN)2]\" to \"its ores as K[Ag(CN)2]\" (erratum 3034); key unchanged, re-solved blind. | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -95479,6 +95460,14 @@
     "result": "agrees"
    }
   },
+  "c61db1bd8d5459b2": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (f): first classification metal The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c6242c6c25253ab5": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -96017,6 +96006,14 @@
   "c748086745dd0a09": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c74c5302c04b6a60": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm419056816 part (a): He Hint reworded after the blind solve (parent): it now also sends the learner to the text for which elements of the column the group's name covers; question, key, and form unchanged. The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -97886,14 +97883,6 @@
     "result": "agrees"
    }
   },
-  "cb0c879869e2dccb": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (j): first classification metal",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "cb14bfb54dc00e6d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -98005,14 +97994,6 @@
   "cb468e389571f9dd": {
    "verdict": "ok",
    "note": "RQ fs-id1989047, key A = myelinated axons; body fs-id2151899 'white matter (the regions with many axons)... axons are insulated by... myelin'; glossary white matter 'mostly myelinated axons'.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "cb4b55b55e6da61f": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (b): further classification main-group (representative) element",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -98232,6 +98213,14 @@
    "note": "source exercise fs-id1172100771337 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "cbc208ca54083107": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (h): further classification main-group (representative) element The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -100208,14 +100197,6 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "d03a5fcf1e977763": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (a): further classification inner transition metal",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "d03b022c92f171e9": {
    "verdict": "ok",
    "note": "KC 7 43.4 § The Ovarian Cycle and the Menstrual Cycle, m66674 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | Biology knowledge check 33-43 author (KC) selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the corpus luteum and endometrium sentences of the ovarian-cycle paragraph)"
@@ -100666,6 +100647,14 @@
   "d14c5a7dede7805d": {
    "verdict": "ok",
    "note": "16y=4, 9x-y=2. Equation 1 rewritten in standard form 0x+16y=4 -> row 1 = [0,16,4]. Matches CNXML fs-id1165135434887's printed matrix row 1 exactly. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "d14fc58727a68d5b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (b): further classification main-group (representative) element The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "d152413bb0e2bf39": {
    "verdict": "ok",
@@ -101148,6 +101137,14 @@
   "d2890f85c5c3cdba": {
    "verdict": "ok",
    "note": "potassium: re-read against the CNXML and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d28c5494d5803186": {
+   "verdict": "ok",
+   "note": "KC 1 3.1 § Example: Deriving Moles from Grams for a Compound, m68700: 28.35 / 75.067 (glycine, this book's table) = 0.37766 → 0.3777 mol, as Section 3.1's recomputed example prints; the source's Solution prints 0.3776 (from 75.07). The kc sources gate confirms it against the section page (November 13, 2026).",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -104510,6 +104507,14 @@
    "note": "KC 5 25.3 § body Hornworts (fs-idp37789488), m66568 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "d996d45d1aa0b9c1": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm319896576 part (i): first classification nonmetal The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -108428,15 +108433,6 @@
     "result": "agrees"
    }
   },
-  "e1d595aa76b07938": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm130496608 part (a), %N: source key 82.24 (decision 1, sig-figs:4 tolerance:0.05%); table 82.27 / unrounded 82.25 inside band; hint re-pointed to the percent composition equation (check-3.2 defect 1) | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "adjudicated",
-    "note": "The key 82.24 is the source's, computed from atomic masses with more digits than this book's periodic table prints (erratum 2996). The solver's 82.25 (formula mass carried unrounded) and the body's 82.27 (formula mass rounded to 17.03) both grade correct under sig-figs:4 tolerance:0.05%, as the parent verified through the grader; the body's working of ammonia is the source's and stands, and a Source note after the exercise says the answer shown is the source's."
-   }
-  },
   "e1d79da262cfb5e8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -110320,6 +110316,14 @@
     "result": "agrees"
    }
   },
+  "e5a5b5697ae8f11e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp172099056 part (b), 10.41 g (table 10.40) November 12, 2026 follow-up: stem corrected from \"ores such as K[Ag(CN)2]\" to \"its ores as K[Ag(CN)2]\" (erratum 3034); key unchanged, re-solved blind. | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e5b09a8740fa6d18": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -110589,6 +110593,14 @@
   "e63cf16f8cda5042": {
    "verdict": "ok",
    "note": "KC 2 4.3 § body Vesicles and Vacuoles (fs-id1161247), m66449 — parent re-read against the module"
+  },
+  "e642bf1880a09836": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp61309952 part (b) (restating fs-idp16477696), mass, key 0.08644 | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "e645025ec50402f5": {
    "verdict": "ok",
@@ -110997,14 +111009,6 @@
   },
   "e74a62c39c6594ea": {
    "verdict": "ok"
-  },
-  "e74ed01d6aaf8109": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm419056816 part (a): He Hint reworded after the blind solve (parent): it now also sends the learner to the text for which elements of the column the group's name covers; question, key, and form unchanged.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "e75049350870e57f": {
    "verdict": "ok",
@@ -112031,6 +112035,14 @@
     "result": "agrees"
    }
   },
+  "e9c1b9b4df363f62": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp69077568 (para fs-idp29238016): 1.0881 / 143.32 (AgCl, this book's table) × 35.45 / 1.1324 = 23.767 → 23.77%; the source prints 23.76%. A data difference, row of source-print-differences.json (November 13, 2026).",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e9c3084f89d47f54": {
    "verdict": "ok",
    "note": "body cloze from § Macronutrients and Micronutrients: \"Potassium (K) is important because of its role in regulating stomatal opening and closing.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -112967,14 +112979,6 @@
   "ebc30b056158128c": {
    "verdict": "ok",
    "note": "Matches m66449 exercise fs-idm71000709, solution fs-idm40512364 (bilayer vs. monolayer). Reworded (would be→were, parenthetical→em dash) with no added claim; all five CHECKS clauses restate the solution's amphiphilic/hydrophobic-tail/droplet reasoning. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
-  },
-  "ebc53739a32765ff": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp61309952 part (e) (restating fs-idp16477696), mass, key 2762",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "ebc824b58bb34900": {
    "verdict": "ok",
@@ -114753,8 +114757,7 @@
    "note": "source exercise fs-idm62322112 part (d) moles; 5.85e-7 exactly, Section 1.5 half-to-even gives 5.8e-7; source 5.9e-7 corrected by parent ruling, last-digit:0 (1.6 80.92 C precedent), Source note after item | form-only edit after the blind solve: 3.51(d) moles to last-digit:1 (the solver's flag on the tie)",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "adjudicated",
-    "note": "An exact tie, 5.85e-7. The key is 5.8e-7 by Section 1.5's round-half-to-even rule, which this module applies to 1.325 mol; the source prints the half-up 5.9e-7 (erratum 2998, disclosed deviation). The solver's flag is accepted: after this solve the form is changed from last-digit:0 to last-digit:1 so that the tie rounded the other way also grades correct — the item tests molarity, not the rounding of a tie."
+    "result": "agrees"
    }
   },
   "ef8c39e5beb4a08a": {
@@ -116092,6 +116095,14 @@
     "result": "agrees"
    }
   },
+  "f2879cadf456d636": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp172099056 part (a), 5.337 × 10²² molecules; sig-figs:4 last-digit:1 per rulings G1 (table 5.3355e22, within 1u). November 12, 2026 follow-up: stem corrected from \"ores such as K[Ag(CN)2]\" to \"its ores as K[Ag(CN)2]\" and \"molecules\" to \"formula units\" (errata 3034, 3035); key unchanged, a Source note after the item, re-solved blind. | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f2892a53c476d0ad": {
    "verdict": "ok",
    "note": "fs-id2036066 key B trabecular bone; body fs-id1804989",
@@ -116753,14 +116764,6 @@
     "result": "agrees"
    }
   },
-  "f3cd348be36d23f0": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (g): further classification transition metal",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "f3d1067d69472366": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -116806,6 +116809,14 @@
   "f3dbc9f3bb29dc7b": {
    "verdict": "ok",
    "note": "Section Exercise 39 part b: b=c*sin(21deg)=17.9184, computed with node; matches CNXML solution."
+  },
+  "f3e12d99bc1f816d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm419056816 part (d): O Hint reworded after the blind solve (parent): it now also sends the learner to the text for which elements of the column the group's name covers; question, key, and form unchanged. The stem's words “periodic table” linked to Appendix A (November 13, 2026); question, options, key, and form otherwise unchanged.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "f3e1e067f19e1b33": {
    "verdict": "ok",
@@ -122786,14 +122797,6 @@
     "result": "agrees"
    }
   },
-  "ff9e6f4b44468a3c": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (b): first classification nonmetal",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "ffa1c654a1371824": {
    "verdict": "ok",
    "note": "source exercise fs-idp38309200 part (c), choice keyed hypothesis from solution fs-idp5011648",
@@ -122950,14 +122953,6 @@
   "ffd4c82711bc7a90": {
    "verdict": "ok",
    "note": "Prefix table (module m68674, Common Unit Prefixes) row for symbol m: milli; only symbol quoted.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "ffdb86b391a42f55": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm319896576 part (c): further classification main-group (representative) element",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"

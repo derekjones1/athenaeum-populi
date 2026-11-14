@@ -99,6 +99,18 @@
     </div>
   {{ end -}}
 </nav>
+{{- /* Athenaeum: the same control again, outside the rail. Below xl the rail
+     is a drawer behind an icon button (two taps, and no drawer at all on a
+     page with no headings), while a Chemistry answer needs the table's
+     fifth figure. This copy is a small fixed button, shown only at those
+     widths (assets/css/custom.css, "below the rail's breakpoint"); it is the
+     same link with the same data, so figure-enlarge.js opens the same
+     viewer. */ -}}
+{{- with $reference }}
+  <a class="ap-reference-figure ap-reference-floating hx:hextra-focus-visible-inset hx:print:hidden" href="{{ .href }}" data-pagefind-ignore
+    data-figure-src="{{ .src }}" data-figure-width="{{ .width }}" data-figure-height="{{ .height }}"
+    data-figure-kind="{{ .kind }}" data-figure-alt="{{ .alt }}" data-figure-page="{{ .title }}"{{ if .links }} data-figure-links{{ end }}>{{ .label }}</a>
+{{- end }}
 
 {{/* TOC subheadings component. This is a recursive component that renders a list of headings. */}}
 {{- define "toc-subheading" -}}

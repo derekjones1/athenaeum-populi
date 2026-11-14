@@ -22,10 +22,7 @@
                     the shape too. A measured quantity (a science answer
                     keyed to its significant figures) declares
                     `sig-figs:<n> last-digit:<k>` here, which also changes
-                    how its value is compared, and — where the book's own
-                    data give another value than the source's key —
-                    `worked:<value>`, which is graded as right too and shown
-                    beside the answer — docs/subjects/chemistry.md. For the accepted tokens read $formTokens
+                    how its value is compared — docs/subjects/chemistry.md. For the accepted tokens read $formTokens
                     below — it is the list this template validates against, and
                     tools/build/documentation.test.mjs asserts it set-equals
                     ANSWER_FORM_TOKENS in assets/js/lib/math/check-answer.mjs. Do
@@ -52,14 +49,12 @@
 {{- end -}}
 {{- $answerForm := .Get "answerForm" | default "" -}}
 {{- $formTokens := slice "fraction" "whole-number" "decimal" "percent" "rational-exponent" "radical" "exact-log" "exact-radical" "exact" "summation" "single-logarithm" "mixed-number" "improper-fraction" "fraction-or-mixed-number" "lowest-terms" "scientific-notation" "prime-product" "single-power" "expanded" "no-like-terms" "polynomial" "distributed" "simplified-radical" "single-term" "single-fraction" "reduced-fraction" "positive-exponents" "factored" "factored-completely" "gcf-factored" "point-slope-form" "slope-intercept-form" "vertex-form" "conic-standard-form" "parabola-standard-form" "circle-standard-form" "line-standard-form" "exponential-form" "logarithmic-form" "base-e" "exponential-model" "expanded-logarithms" "natural-log" "evaluated-trig" "single-trig-function" "no-trig-products" "trig-product" "evaluated-logarithm" "translation" "degrees" "radians" -}}
-{{- $worked := "" -}}
 {{- range (split $answerForm " ") -}}
   {{- $token := trim . " " -}}
   {{- if $token -}}
-    {{- if not (or (in $formTokens $token) (findRE `^denominator:\d+$` $token) (findRE `^solved:[a-zA-Z]$` $token) (findRE `^sig-figs:[1-9]$` $token) (findRE `^last-digit:[0-2]$` $token) (findRE `^worked:\S+$` $token)) -}}
+    {{- if not (or (in $formTokens $token) (findRE `^denominator:\d+$` $token) (findRE `^solved:[a-zA-Z]$` $token) (findRE `^sig-figs:[1-9]$` $token) (findRE `^last-digit:[0-2]$` $token)) -}}
       {{- errorf "fillin answerForm token %q is not a form (%s)" $token $.Position -}}
     {{- end -}}
-    {{- if hasPrefix $token "worked:" -}}{{- $worked = strings.TrimPrefix "worked:" $token -}}{{- end -}}
   {{- end -}}
 {{- end -}}
 {{- $placeholder := .Get "placeholder" | default "Your answer" -}}
@@ -79,12 +74,6 @@
     <noscript><p class="ap-noscript-notice">Interactive practice requires JavaScript.</p></noscript>
     {{- with .Get "answerDisplay" }}
       <template data-slot="answer-display">{{ partial "mathtext" . }}</template>
-    {{- end }}
-    {{- /* The value the book's own data give, typeset beside the source's
-         answer once the response is right. The component shows it only when
-         it is another number than the key (workedValueShown). */ -}}
-    {{- with $worked }}
-      <template data-slot="worked-value">{{ partial "mathtext" (printf "$%s$" .) }}</template>
     {{- end }}
     {{- with .Get "hint" }}
       <template data-slot="hint">{{ partial "mathtext" . }}</template>

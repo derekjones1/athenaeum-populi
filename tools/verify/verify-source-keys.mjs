@@ -1043,6 +1043,13 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     reason: 'the source answers "5.9 × 10^−7 mol FeSO4" for 325 mL of 1.8 × 10^−6 M FeSO4; the product is exactly 5.85 × 10^−7, a tie that Section 1.5\'s round-half-to-even rule, which this module applies to 1.325 mol ("properly rounded to 1.32 mol"), rounds to 5.8 × 10^−7; the mass keyed beside it, 8.9 × 10^−5 g, is the source\'s',
   },
   {
+    page: 'content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/03-molarity.md',
+    exercise: 'fs-idm27167936',
+    kind: 'key',
+    erratum: 2999,
+    reason: 'the source answers "0.5000 L" for 0.1718 L of a 0.3556-M solution diluted to 0.1222 M; 0.1718 × 0.3556 / 0.1222 = 0.49993, which is 0.4999 L at the four figures of the data and of the source\'s own answer — no atomic mass enters, so this is the stem\'s arithmetic and not the periodic table\'s (until November 13, 2026 the source\'s value was the key and 0.4999 a second right answer)',
+  },
+  {
     page: 'content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/01-writing-and-balancing-chemical-equations.md',
     exercise: 'fs-idp122928448(c)',
     kind: 'key',
@@ -2133,7 +2140,8 @@ const formulaChars = (value) => String(value ?? '').normalize('NFKC').replace(/[
  * A fill-in key held to the ONE number of several that its closing sentence
  * asks for, where the answer says which is which in a way the "3 protons, 4
  * neutrons" reading above does not. Returns what was asked ("the number for
- * P") when the key is not that number, else null.
+ * P") when the key is not that number — `{ what, numerals }`, the numbers
+ * the answer does give for it — else null.
  *
  *   An element's symbol before each signed number — "H +1, P +5, O −2" (4.2,
  *   oxidation states): the item that closes "Enter the oxidation state of P
@@ -2153,7 +2161,8 @@ function heldNumber(answer, question, key) {
     const asked = [...new Set(bySymbol.map((entry) => entry.symbol))]
       .filter((symbol) => new RegExp(`(?<![A-Za-z])${symbol}(?![A-Za-z])`).test(closing));
     if (asked.length === 1) {
-      return bySymbol.some((entry) => entry.symbol === asked[0] && sameNumeral(entry.numeral, key)) ? null : `the number for ${asked[0]}`;
+      const held = bySymbol.filter((entry) => entry.symbol === asked[0]);
+      return held.some((entry) => sameNumeral(entry.numeral, key)) ? null : { what: `the number for ${asked[0]}`, numerals: held.map((entry) => entry.numeral) };
     }
   }
   const KINDS = { mol: 'moles', g: 'mass', kg: 'mass', mg: 'mass' };
@@ -2173,7 +2182,8 @@ function heldNumber(answer, question, key) {
   if (!ofKind.length) return null;
   const exact = ofKind.filter((entry) => formula && entry.formula === formula);
   const candidates = exact.length ? exact : ofKind;
-  return candidates.some((entry) => sameNumeral(entry.numeral, key)) ? null : `the ${kind}${exact.length ? ` of ${ofWhat[1]}` : ''}`;
+  return candidates.some((entry) => sameNumeral(entry.numeral, key)) ? null
+    : { what: `the ${kind}${exact.length ? ` of ${ofWhat[1]}` : ''}`, numerals: candidates.map((entry) => entry.numeral) };
 }
 
 function byElement(entries, closing) {
@@ -2233,16 +2243,23 @@ function magnitudeAt(numeral, place) {
  * two last places, or null when no printed number is that near.
  */
 export function dataDifference(key, printed) {
+  // A worked Solution is a paragraph, and it prints small counts beside its
+  // result ("1 mole of nitrogen … = 0.3776 mol glycine"). Read at the units
+  // place a key of 0.3777 is 0, one unit from that "1": a number the key has
+  // no figure of at its last place is no print of the key, and of the
+  // prints that are, the one read at the finest place is the result.
+  let best = null;
   for (const numeral of printed) {
     if (numeral.negative !== key.negative || numeral.mantissa === 0n) continue;
     const place = Math.max(key.exponent, numeral.exponent);
+    if (magnitudeAt(key, place) === 0n) continue;
     const difference = magnitudeAt(key, place) - magnitudeAt(numeral, place);
     const units = difference < 0n ? -difference : difference;
     if (units > DATA_DISTANCE_UNITS) continue;
     if (!withinPercent(key, numeral, readNumeral(DATA_DISTANCE_PERCENT), { units: 1, unitExponent: place })) continue;
-    return { numeral, units: Number(units) };
+    if (!best || place < best.place) best = { numeral, units: Number(units), place };
   }
-  return null;
+  return best && { numeral: best.numeral, units: best.units };
 }
 
 const registerKey = (row) => [row.page, row.exercise, row.key, row.sourcePrint, row.units].join('\u0001');
@@ -2259,7 +2276,7 @@ export function writeDataRegister(repositoryRoot, differences, pagesRead) {
   const kept = readDataRegister(repositoryRoot).filter((row) => !pagesRead.includes(row.page));
   const body = {
     schemaVersion: 1,
-    note: 'Fill-in keys that differ from the number the pinned source prints only because this book’s periodic table (data/chemistry/elements.json) carries other atomic masses than the source’s answer key was worked from. Written by `node tools/verify/verify-source-keys.mjs --write-register`; verify-source-keys fails when a run computes other rows. Review the diff of this file like a key change: `units` is the distance at the coarser of the two last places.',
+    note: 'Fill-in keys, on items that fetch an atomic mass, that stand a unit or two of the last place from the number the pinned source prints: this book’s periodic table (data/chemistry/elements.json) carries other atomic masses than the source’s answer key was worked from, and a key here is carried unrounded where the source sometimes rounded a step on the way. Written by `node tools/verify/verify-source-keys.mjs --write-register`; verify-source-keys fails when a run computes other rows. Review the diff of this file like a key change: `units` is the distance at the coarser of the two last places.',
     differences: sortRegister([...kept, ...differences]),
   };
   const lines = body.differences.map((row) => `    ${JSON.stringify(row)}`).join(',\n');
@@ -2546,8 +2563,30 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
         };
       }
     }
+    // The same answer from other atomic masses (see ELEMENT_DATA_BOOKS).
+    const allowance = /(?:^|\s)last-digit:[12](?:\s|$)/.test(String(item.form || ''));
+    const declared = String(item.form || '').match(/(?:^|\s)sig-figs:(\d)(?:\s|$)/);
+    // A calculation's count of figures is still the source's, set by the
+    // data its stem gives. Where the stem gives no number at all, every
+    // digit of the answer is the table's, and so is the count: a formula
+    // mass (199.99 where the source prints 199.9976), a formula that is a
+    // drawing, the mass of carbon in C₅H₁₂ (60.055 where the source, from
+    // 12.01, prints 60.05). The blind solve is such a key's reader.
+    const dataDiffers = (numerals) => {
+      const near = elements && allowance ? dataDifference(key, numerals) : null;
+      if (near && (table || statesNoNumber(item.question) || !declared || (near.numeral.sigMin <= Number(declared[1]) && Number(declared[1]) <= near.numeral.sigMax))) {
+        return { status: 'data-differs', exercise, sourcePrint: near.numeral.printed, units: near.units };
+      }
+      return null;
+    };
     const held = heldNumber(unit.answer, item.question, key);
-    if (held) return { status: 'key-differs', exercise, detail: `fillin keys ${JSON.stringify(item.answer)} for ${held}, which source ${unit.id} answers ${JSON.stringify(unit.answer.slice(0, 100))}` };
+    // A named amount is held to ITS number: "16.31 mol BaO₂, 2762 g BaO₂"
+    // answers the moles asked with 16.31, and a key of 16.30 from this
+    // book's masses is a data difference from that number and no other.
+    if (held) {
+      return dataDiffers(held.numerals)
+        ?? { status: 'key-differs', exercise, detail: `fillin keys ${JSON.stringify(item.answer)} for ${held.what}, which source ${unit.id} answers ${JSON.stringify(unit.answer.slice(0, 100))}` };
+    }
     const same = printed.filter((numeral) => sameNumeral(numeral, key));
     if (!same.length) {
       // A count the source spells out: "(a) two; (b) three".
@@ -2555,19 +2594,8 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
       const spelled = numberWords(unit.answer);
       if (spelled.includes(value)) return { status: 'confirmed', exercise };
       if (!printed.length && !spelled.length) return { status: 'unkeyed', exercise };
-      // The same answer from other atomic masses (see ELEMENT_DATA_BOOKS).
-      const allowance = /(?:^|\s)last-digit:[12](?:\s|$)/.test(String(item.form || ''));
-      const near = elements && allowance ? dataDifference(key, printed) : null;
-      const declared = String(item.form || '').match(/(?:^|\s)sig-figs:(\d)(?:\s|$)/);
-      // A calculation's count of figures is still the source's, set by the
-      // data its stem gives. Where the stem gives no number at all, every
-      // digit of the answer is the table's, and so is the count: a formula
-      // mass (199.99 where the source prints 199.9976), a formula that is a
-      // drawing, the mass of carbon in C₅H₁₂ (60.055 where the source, from
-      // 12.01, prints 60.05). The blind solve is such a key's reader.
-      if (near && (table || statesNoNumber(item.question) || !declared || (near.numeral.sigMin <= Number(declared[1]) && Number(declared[1]) <= near.numeral.sigMax))) {
-        return { status: 'data-differs', exercise, sourcePrint: near.numeral.printed, units: near.units };
-      }
+      const differs = dataDiffers(printed);
+      if (differs) return differs;
       return {
         status: 'key-differs',
         exercise,

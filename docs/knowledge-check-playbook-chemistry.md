@@ -82,11 +82,17 @@ Solution prints the answer, and the section page sets it as prose, not as
 an item. So:
 
 - **A worked-example item re-asks a worked example's own question and keys
-  the answer its Solution prints.** Every `fillin`, and every `textin` that
+  the answer its Solution prints.** Where that answer depends on an atomic
+  mass, "its Solution" is the section page's, recomputed from this book's
+  periodic table (`docs/subjects/chemistry.md`, "Numeric keys", "The
+  body's worked examples are recomputed from the table"), so the check and
+  the section never give two answers to one question. Every `fillin`, and every `textin` that
   declares `answerForm="formula"` or `"equation"`, is one — `npm run kc --
   sources` (in `npm test`) refuses any other, a key the example's Solution
   does not print, a `sig-figs` count the printed answer does not show, and
-  a key the example's own question gives.
+  a key the example's own question gives; a key a unit or two from the
+  source's print (`data-differs`) it confirms only when the section page's
+  body prints that number.
   - **The stem** is the example's question as the section page prints it,
     its title dropped, then whatever "Stems" adds to a keyed exercise: the
     closing sentence that names the unit or the quantity where the question
@@ -101,14 +107,15 @@ an item. So:
     after a factor the question itself prints — is dropped, since a
     cumulative page has no figure or table to point at; nothing else of
     the question changes, and never a number.
-  - **The key** is the Solution's final value as printed. The component
-    and the `answerForm` follow the table in "Exercises" and "Numeric
-    keys", exactly as for a keyed exercise: `last-digit` by where the
-    numbers come from, and `worked:<value>` beside the pair where this
-    book's periodic table gives another value than the printed one. **Compute it
-    yourself first.** A value the arithmetic does not reach is a suspected
-    source defect, reported to the parent — and it is a defect of the
-    section page too, which prints the same example.
+  - **The key** is the Solution's final value as the section page prints
+    it. The component and the `answerForm` follow the table in "Exercises"
+    and "Numeric keys", exactly as for a keyed exercise: `last-digit` by
+    where the numbers come from, one key and no second value. **Compute it
+    yourself first**, from the stem and Appendix A by the playbook's one
+    method (`node tools/verify/molar-mass.mjs` for a molar mass). A value
+    the arithmetic does not reach is a suspected defect, reported to the
+    parent — and it is a defect of the section page too, which prints the
+    same example.
   - **A usable example** stands alone, or leans only on data that can be
     restated inline in its own sentence ("Stems", "A part that leans on an
     earlier part"); has one answer of an auto-gradable shape; prints that
@@ -127,7 +134,11 @@ an item. So:
     anchor: 3.4's hydrochloric-acid example, whose working the page
     corrected, is not used; 1.6's body-temperature example is asked for
     its Fahrenheit answer, the page having rewritten the kelvin line
-    only; a misspelling the page fixed excludes nothing); **is not one
+    only; a misspelling the page fixed excludes nothing; and a recomputation
+    from this book's periodic table, with the section's Source note on
+    recomputed examples, is not a correction — the item keys what the
+    page prints, as Knowledge Check 1's glycine item keys 3.1's 0.3777);
+    **is not one
     a section-page item already asks again** — the same substance or data
     and the same answer, as the source's own exercises sometimes do (2.4
     asks glucose's empirical formula in its worked example and again in a
@@ -135,9 +146,7 @@ an item. So:
     does not answer with a number its own question gives; and
     does not give, or take, another check item's answer (3.3's vinegar
     example answers 0.839 *M*, and a later example takes 0.839 *M* as its
-    datum: one of the two, never both). Where the section offers a choice,
-    prefer an example the periodic table reaches digit for digit, so the
-    item needs no worked value.
+    datum: one of the two, never both).
   - **A worked example whose answer is a choice or a name** — ionic or
     molecular, a group's name, a compound's name — is a `multiplechoice`
     or a plain `textin` under the same rows of the table, and its ledger
@@ -202,14 +211,12 @@ an item. So:
 
 ### The page
 
-- **A key with a worked value takes its sentence.** A check has no
-  `## Practice` heading to carry the page-level Source note of "Numeric
-  keys", so an item graded `worked:<value>` — alone, or beside the pair
-  with the two values more than one unit apart — is followed by the
-  one-sentence form: "*Source note:* the answer shown for this item is
-  the source's, which was computed from atomic masses with more digits
-  than this book's periodic table prints; an answer worked from the table
-  is graded as correct."
+- **A key that is the section page's recomputed value takes no Source
+  note on the check.** The section page carries the note; the check's
+  footer says, in one clause, that where an answer depends on an atomic
+  mass it is the one the section page works from this book's periodic
+  table. `worked:<value>` and its sentence are retired, and a page that
+  declares the token does not build.
 - **The periodic table is on the page** (the rail control resolves from
   the book root), so no sentence is added for it. **No check item needs any
   other appendix** ("A usable example": no table the check page lacks), so
@@ -217,7 +224,9 @@ an item. So:
 - **The footer** follows the section-page form — licence, deep link to
   the source book, and a `Changes:` clause that says the calculation
   questions re-ask the chapters' worked examples with the answers the
-  source prints, the others are locally written from the named chapters'
+  source prints — or, where an answer depends on an atomic mass, the
+  answer the section page works from this book's periodic table — the
+  others are locally written from the named chapters'
   modules, no question carries a hint, and every self-check carries a
   rubric. It never prints a key.
 
@@ -233,9 +242,10 @@ a committed file. For every item record:
 - for a worked-example item: the question as the CNXML prints it and as
   the item prints it, with every added sentence; the Solution's final
   value quoted; **your own computation, run and unrounded**; the
-  `last-digit` with its reason; where a molar mass enters, the value
-  Appendix A's masses give — the item's `worked:<value>` when it is not
-  the key; and why the example is usable (each test of "A usable example");
+  `last-digit` with its reason; where a molar mass enters, the tool's sum
+  and the value the section page prints, with the source's print where it
+  differs (the section's register row, if any); and why the example is
+  usable (each test of "A usable example");
 - for a written item: the exact sentence, definition, or cells, the
   independently derived answer, and for a multiple choice where the module
   prints each distractor and why none is also correct.
@@ -276,9 +286,9 @@ every ruling comes before the blind solve.
    as the solver's source. A masked page prints every worked example with
    its solution, so **the solver works each fill-in from the stem and
    Appendix A first, by running the arithmetic, and only then reads the
-   page**, and says in the item's `note` whether the page's worked value
-   agrees. `npm run solve:compare`; settle every disagreement against the
-   module, and read every `note`.
+   page**, and says in the item's `note` whether the section page's printed
+   value agrees. `npm run solve:compare`; settle every disagreement against
+   the module, read every `≈` row against the table, and read every `note`.
 6. Record each verdict and its `solved` block in the **answer ledger**
    (AGENTS.md §The answer ledger; `npm run ledger:merge` last, after every
    other edit): every item needs a record, and `npm test` fails at

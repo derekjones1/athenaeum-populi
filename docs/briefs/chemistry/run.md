@@ -84,13 +84,14 @@ Sections 2.1–2.4"):
 
 Six things chapter 3 added (`docs/history/chemistry.md`, "Chapter 3"):
 
-- **The run facts list the chapter's worked values** — every source key
-  this book's periodic table does not reach, with the table's value beside
-  it, which the item carries as `worked:<value>` (playbook "Numeric keys",
-  "The source's value is the key"). Chapters 3 and 4 set a percent band
-  here instead (`0.05%`, `0.2%`); it was retired on November 12, 2026,
-  because a chapter's width is not an item's. A key is never re-computed
-  to the table: the parent who did so was overruled.
+- **The run facts list the chapter's mass-dependent keys** — each as this
+  book's periodic table gives it, with the source's print beside it where
+  the two differ (playbook "Numeric keys", "A numeric key is what this
+  book's own data give: one data set, one right answer"). The key IS the
+  table's value: chapters 3 and 4 first kept the source's key inside a
+  percent band, then beside a `worked:<value>`; both are retired and do
+  not build (Derek, November 12, 2026; `docs/history/chemistry.md`, "One
+  data set, one right answer").
 - **A ruling that corrects a key waits for the consistency reader.** It
   sets the item beside the module's other exercises (3.59's "wrong" key
   was the next exercise's given datum). A ruling made earlier is sent
@@ -126,10 +127,13 @@ Eight things chapter 4 added (`docs/history/chemistry.md`, "Chapter 4"):
   touches** (`chemCanon` is read by the Knowledge Check sources gate): run
   `tools/source`, `tools/verify`, `tools/lib`, and `tools/lint` tests, not
   only the grader's.
-- **The table's values are computed by an agent before the wave** (every
-  numeric key from Appendix A's masses, by the module's own method,
-  carried unrounded) and the report — each key the table does not reach,
-  with the table's value — goes to the authors with the run facts.
+- **The table's values are computed by the parent before the wave**: every
+  mass-dependent key AND every body number downstream of an atomic mass,
+  each molar mass by `node tools/verify/molar-mass.mjs "<formula>"` (the
+  playbook's one method: that rounded sum carried unrounded, an earlier
+  part's rounded answer not reused). The list — each value, and each that
+  differs from the source's print — goes to the authors with the run
+  facts.
 - **One rule for one cause.** The parent graded "one unit off because
   something was rounded mid-way" five ways across three pages before the
   consistency reader set them side by side; a token ruling made for one
@@ -282,7 +286,10 @@ author reads only those items of a chapter 2 page (`author.md` §1).
 
 - **As each author reports**, launch its checker (Author kind; prompt = the
   page path + "read `$SP/checker.md`"; never name the author's report).
-  Checker defects go back to the page's author by `SendMessage`.
+  The checker recomputes every mass-dependent number on the page — keys
+  and body alike, moved or not — without the author's notes: the author's
+  rework is not the check (3.1's checker found five keys left on the old
+  masses). Checker defects go back to the page's author by `SendMessage`.
 - **As soon as the first author reports**, and again after each,
   `node tools/source/openstax-source.mjs build-map`: `verify:source-coverage`
   and `verify:source-keys` skip a chapter with no map rows, and a checker's
@@ -347,7 +354,11 @@ which carry no items) and nothing else under `content/`. Then
 npm run solve:compare -- $SP/solve/chNN/answers.json content --out $SP/solve-results/chNN > $SP/solve/chNN/compare.log 2>&1
 ```
 
-Every disagreement gets an `adjudicated` note. On this book the solver's
+Every disagreement gets an `adjudicated` note. **Read every `≈` row** of
+the log too — an answer that agrees only inside the item's `last-digit`
+allowance — against the table by the one method: the grader cannot tell a
+route's rounding from a key left on other data (playbook "Numeric keys",
+"The author's rework is not the check"). On this book the solver's
 most useful disagreements are about FORM: a `sig-figs:<n>` its own count of
 the data does not reach, a stem that does not say what place to enter, a
 unit item that does not say "no prefix added". A stem clarified after the
@@ -384,7 +395,17 @@ the CNXML and the page.
    decisions entry; a corrected body claim gets a decisions entry; an alt
    or typo erratum gets neither. Entries in
    `data/openstax/reconciliation-decisions.json` are appended with a script
-   that keeps the file's final byte.
+   that keeps the file's final byte. **A key a unit or two from the
+   source's print on an item that fetches a mass is not a correction** but
+   a row of `data/verification/source-print-differences.json`: write the
+   register with `node tools/verify/verify-source-keys.mjs content
+   --write-register`, review its diff like a key change, and check that
+   each page with a row carries the ONE Source note under `## Practice`
+   (playbook "Numeric keys") and one erratum per module records the
+   source's out-of-date masses. The `--min-confirmed` floor in
+   `package.json`'s `verify:source-keys` drops by each key that leaves
+   the source's print: trace each one to its row or its correction before
+   lowering it.
 2. `node tools/source/openstax-source.mjs build-map` (again, after the last
    page edit).
 3. **Pins.** `tools/source/openstax-source.test.mjs` hard-codes the corpus

@@ -53,12 +53,17 @@ that does not apply.
   `textin`s). Delete the lines this chapter does not need.
 - Practice floor: at least 2 exercises per objective group and 5 per
   section, each group with at least one auto-graded item.
-- **Worked values**: no band is set (playbook "Numeric keys", "The
-  source's value is the key"). List every source key the value Appendix
-  A's masses give does not reach, with that value beside it (run the keys
-  files through a molar-mass script before the wave) — each is the item's
-  `worked:<value>` — and any pair the lint's 0.1 percent ceiling refuses,
-  which is a ruling for the parent before the wave, not a window.
+- **Mass-dependent keys** (playbook "Numeric keys", "A numeric key is
+  what this book's own data give"): every key that depends on an atomic
+  mass, as the parent computed it from the table before the wave (`node
+  tools/verify/molar-mass.mjs` by the one method), with the source's print
+  beside it. Mark each key that differs from the print: a unit or two on
+  an item that fetches a mass is a register row (`data-differs`, one Source
+  note under `## Practice`); further away, or on an item no mass enters,
+  it is a correction (`DISCLOSED_DEVIATIONS`, erratum, item Source note)
+  and a ruling for the parent before the wave. List too each worked
+  example whose printed numbers move, and which of the playbook's two
+  Source-note wordings it takes.
 
 ## Per section (one block each)
 

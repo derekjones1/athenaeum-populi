@@ -2535,16 +2535,112 @@ tokens gone.
 - 20 register rows, all of 3.1. `--min-confirmed` 7,419 → 7,399: those
   twenty keys are no longer "confirmed against the source", by design.
 
-### Still to do (this entry is extended as each lands)
+### The sweep: chapters 2–4, Knowledge Check 1, the appendices (November 13, 2026)
 
-- The sweep: 2.3, 2.5 (and figures 1.3 and 2.5, the same periodic table),
-  2.6, 3.2–3.4, chapter 4, Knowledge Check 1; the five remaining `worked:`
-  items; then the token's removal from the grader, shortcode, lints, mask,
-  and tests.
-- Appendix D to CODATA.
-- The playbook, briefs, and AGENTS.md still describe the worked-value
-  rule; they are rewritten after the sweep, before chapter 5.
-- Errata 2985, 2988, 2996, 2999, 3019 "Local handling".
+One session, from commit `a82da7cb`. The four calls the pilot left were
+decided by the parent (Derek's standing instruction), and everything the
+pilot listed as still to do landed.
+
+**The four calls.** The six molecular models of 3.1 are back, each a crop
+of the source's image under its table (below). "Not classified" stays in
+the periodic table's key: the key must explain every shade. The near-miss
+sentence keeps its second sentence with one word changed, "…use every digit
+the table prints." And the question open since November 11 — below 1280 px
+the "Periodic table" control sat two taps inside a drawer, and on the nine
+appendix pages with no headings there was no drawer at all — is closed: the
+control is printed a second time as a fixed button at those widths
+(`layouts/_partials/toc.html`, `.ap-reference-floating`), 44 px tall, under
+the drawer and the navbar. A fixed button covers the corner of whatever
+scrolls under it; that was judged the smaller cost now that a right answer
+needs the table's fifth figure. Section 2.5's stems that said "Using the
+periodic table" in plain words now link it, as 2.6's do.
+
+**The sweep was small in keys and larger in prose.** An inventory read
+every page first: of about seventy fill-ins in 3.2–4.5 that depend on an
+atomic mass, the table moved five keys, and the rest of the work was the
+body. Four Opus authors reworked 3.2, 3.3 + 3.4, 4.3, and 4.4 + 4.5 from
+the pilot's brief; four Opus checkers, forbidden the authors' notes,
+recomputed about 215 numbers and disagreed with none; two fresh Fable
+solvers answered 137 items from the masked pages and the new Appendix A.
+
+| Page | What moved |
+|---|---|
+| 3.2 | about forty body numbers (ammonia 82.27 → 82.24% N, nicotine 81.13 → 81.118); no key — the ammonia key was already the table's, and lost only its second value |
+| 3.3 | the dilution key 0.5000 → 0.4999, a corrected key (no mass enters it; erratum 2999, `DISCLOSED_DEVIATIONS`); acetic acid printed 60.052 in both examples |
+| 3.4 | the wine stem's ethanol 46.06 → 46.07 g/mol (erratum 3038: the source's own masses give 46.068); no key |
+| 4.3 | BaO₂ 16.31 → 16.30 mol and 2762 → 2761 g, C₂H₄ 5.81 → 5.82 g; four printed molar masses; three second values removed from keys that were already the table's (0.08644, 5.337 × 10²², 10.41) |
+| 4.4 | four printed molar masses and the theoretical yield of copper, 0.5072 → 0.5073 g; no key |
+| 4.5 | the chloride Check Your Learning 23.76 → 23.77%; four printed molar masses |
+| Knowledge Check 1 | glycine 0.3776 → 0.3777 mol, as 3.1's recomputed example prints |
+| 1.3, 2.5 | the periodic-table figure is this book's own drawing, with Appendix A's alt |
+
+**What the readings caught.**
+
+- **The blind solve caught what author and checker both passed.** 4.4's
+  copper example printed 0.5072 g beside the molar mass 159.60; the two
+  earlier readers had divided by the unrounded sum, 159.602, and a learner
+  retracing the page divides by what it prints: 0.50725, 0.5073. Of 137
+  answers, 136 equalled the key exactly and none agreed only inside the
+  allowance; three "also defensible" flags were on items the sweep had not
+  touched and were adjudicated against their earlier rulings.
+- **Three gate gaps, each found by a key the gate refused.** A Knowledge
+  Check key could never be a data difference (`checkSources` passed no
+  element data); it now confirms one only when the SECTION PAGE's body
+  prints the key, so the check and the section cannot give two answers.
+  `dataDifference` read a Solution's "1 mole of nitrogen" as the print one
+  unit from 0.3777 (the key is 0 at the units place); a print the key has
+  no figure of is skipped, and the finest place wins. And a part whose
+  answer names its amounts ("16.31 mol BaO₂, 2762 g BaO₂") was refused
+  before the data difference was asked; a named amount is now held to its
+  own number.
+- **`solve:compare` lists what `last-digit:1` hides.** A key left one unit
+  off its data agrees with every solver, which is how the pilot's five
+  stale keys reached the checker. Each agreement that holds only inside the
+  allowance is printed (`≈`); this run had none.
+- **A row is not an attribution.** The parent first recorded C₂H₄'s 5.82
+  as a correction — the source's 5.81 is 0.207 mol, already rounded, times
+  28.05 — and the errata verifier showed that the source's four-figure
+  masses give 5.81 by this book's own method too (9.55/46.07 × 28.05 =
+  5.8146). Nobody can say which produced the print, and BaO₂'s 2762 is the
+  mirror case. The rule that came out: a unit or two on an item that
+  fetches a mass is a register row; a correction is more than two units,
+  or an item no mass enters. Erratum 3037 stays as the record, "not a
+  defect".
+- **`ledger:provenance` cannot note a Chemistry item** (it labels a source
+  exercise "author-built"): the 31 re-hashed records' notes were carried
+  from HEAD's ledger by hand, the seven re-keyed ones rewritten.
+
+**The second-answer code is gone.** `worked:<value>` is no token: the
+grader, `compareMeasured`, the fill-in component, the shortcode, the lints,
+the masks and the solve packet no longer read it, and it is refused the way
+`tolerance:<p>%` is, as an unknown form. `withinPercent` stays for the
+source-key gate.
+
+**Appendix D** prints the 2022 CODATA values (`data/chemistry/constants.json`,
+from NIST's listing kept at `tools/fixtures/codata/`), each to the count of
+figures the source prints in that place; ten rows changed and the five
+exact SI values stand. `tools/source/constants-table.mjs` writes the table,
+and `verify:source-tables` still reads the page against the CNXML, with one
+generated deviation per changed value — so the source's number, the data
+file's, and the page's are held together. No graded key moved.
+
+**The models.** `tools/source/vendor-media.mjs --crops` cuts a manifest
+entry's `crop` rectangle out of the pinned source image. The six rectangles
+were found from each image's own frame lines and the drawing's ink. The six
+whole images stay in the manifest (the crops are cut from them) and are
+used by no page; the three old periodic-table rasters likewise.
+
+**Floors.** `--min-confirmed` 7,399 → 7,394: the dilution key (disclosed),
+BaO₂'s two and C₂H₄ on 4.3 and the chloride on 4.5 (register rows; 24 rows
+in all). Errata 3037–3038 added; 2921, 2977, 2985, 2987, 2988, 2991, 2992,
+2996, 2999, 3019 and 3031 rewritten.
+
+**What the process should keep.** Read the page-level claim before
+prescribing a note: the pilot's body Source note says "some results
+differ", and on three pages only the printed molar masses did. Classify a
+difference with the SAME method on both tables, or do not classify it. And
+a fact handed to a verifier is a hypothesis: two of the parent's did not
+survive the CNXML.
 
 ## The `\dfrac` watch list
 

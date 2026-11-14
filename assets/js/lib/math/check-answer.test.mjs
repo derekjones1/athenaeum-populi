@@ -15,7 +15,7 @@ import assert from 'node:assert/strict';
 import {
   ce, foldPrimes,
   ANSWER_FORM_TOKENS, bracketsAsParentheses, checkAnswer, checkFormAsGraded, describeAnswerForm,
-  describeFormFeedback, describeIncorrectFeedback, NEAR_MISS_FEEDBACK, NEAR_MISS_TABLE_SENTENCE, measuredKeyProblem, parseAnswerForm, VALUE_ONLY_TOO_FEW_FEEDBACK, workedValueShown,
+  describeFormFeedback, describeIncorrectFeedback, NEAR_MISS_FEEDBACK, NEAR_MISS_TABLE_SENTENCE, measuredKeyProblem, parseAnswerForm,
   preprocess,
 } from './check-answer.mjs';
 
@@ -1767,10 +1767,7 @@ test('answerForm parsing and feedback wording', async (t) => {
       const spec = token === 'denominator:<n>' ? 'denominator:7'
         : token === 'solved:<variable>' ? 'solved:y'
           : token === 'sig-figs:<n>' ? 'sig-figs:3'
-            : token === 'last-digit:<k>' ? 'sig-figs:3 last-digit:1'
-              // `worked:<value>` is a second right value, and alone it asks
-              // nothing of the writing: it is worded beside the pair it can stand with.
-              : token === 'worked:<value>' ? 'sig-figs:3 last-digit:1 worked:0.677' : token;
+            : token === 'last-digit:<k>' ? 'sig-figs:3 last-digit:1' : token;
       const phrased = describeAnswerForm(spec);
       assert.notEqual(phrased, '');
       assert.ok(!phrased.includes('undefined'), phrased);
@@ -4811,12 +4808,11 @@ test('a measured quantity a unit outside its allowance is still incorrect, and i
     ['56.2', '56.48', 'sig-figs:4 last-digit:1', 'incorrect', ''],                           // three figures shown: a stem's round number is no near miss
     ['3.5\\times10^{-3}', '3.4\\times10^{-3}', 'sig-figs:2 last-digit:0', 'incorrect', NEAR_MISS_FEEDBACK],
     ['34.9\\ \\text{mL}', '35.0', 'sig-figs:3 last-digit:0', 'incorrect', NEAR_MISS_FEEDBACK],
-    // 4.45(b), a key with a worked value: the zone runs two units beyond the allowance at each end
-    ['0.0866', '0.08644', 'sig-figs:4 last-digit:1 worked:0.08642', 'incorrect', ''],                    // three figures: not the count asked
-    ['0.08640', '0.08644', 'sig-figs:4 last-digit:1 worked:0.08642', 'incorrect', NEAR_TABLE],           // moles cut to three figures
-    ['0.08647', '0.08644', 'sig-figs:4 last-digit:1 worked:0.08642', 'incorrect', NEAR_TABLE],
-    ['0.08634', '0.08644', 'sig-figs:4 last-digit:1 worked:0.08642', 'incorrect', ''],                   // a molar mass rounded to 232: graded correct under the 0.2% band this replaced
-    ['123.86', '123.896', 'worked:123.88', 'incorrect', NEAR_MISS_FEEDBACK],                             // no count graded: two units of the worked value's last place
+    // 4.3, silver(I) oxide, keyed from this book's table: what four-figure masses give is a near miss
+    ['0.0866', '0.08644', 'sig-figs:4 last-digit:1', 'incorrect', ''],                       // three figures: not the count asked
+    ['0.08642', '0.08644', 'sig-figs:4 last-digit:1', 'incorrect', NEAR_TABLE],              // Ag 107.9 for 107.87
+    ['0.08647', '0.08644', 'sig-figs:4 last-digit:1', 'incorrect', NEAR_TABLE],
+    ['0.08634', '0.08644', 'sig-figs:4 last-digit:1', 'incorrect', ''],                      // a molar mass rounded to 232: graded correct under the 0.2% band once
     // far from the key, or written to another count of figures: nothing to add
     ['36.0', '35.0', 'sig-figs:3 last-digit:0', 'incorrect', ''],
     ['17.5', '35.0', 'sig-figs:3 last-digit:0', 'incorrect', ''],
@@ -4934,61 +4930,30 @@ test('a unit MathLive wraps as a nested operator name is still a unit after the 
   assert.equal(checkAnswer('1020.0\\operatorname{\\mathrm{kg}}', key, { form }), 'incorrect');
 });
 
-test('worked:<value> gives a measured key its second right answer (Chemistry 2e chapters 3 and 4)', () => {
-  // Alone: the count of figures is not graded. The source keys P4 as 123.896
-  // amu, from atomic masses with more digits than the book's periodic table
-  // prints; a learner on the site reaches 4 × 30.97 = 123.88.
-  const alone = (response, key = '123.896') => checkAnswer(response, key, { form: 'worked:123.88' });
-  for (const right of ['123.88', '123.9', '123.896', '1.2388\\times10^{2}', '1.2388e2']) assert.equal(alone(right), 'correct', right);
-  for (const wrong of ['122.888', '123.83', '-123.88', '12.388', '123.8', '120']) assert.equal(alone(wrong), 'incorrect', wrong);
-  assert.equal(alone('123.88amu'), 'unit');
-  assert.equal(alone('4\\cdot30.97'), 'form', 'an unfinished calculation of a right value');
-  assert.equal(describeFormFeedback('4\\cdot30.97', 'worked:123.88', '123.896'),
-    'That value is right — now finish the calculation and enter just the result.');
-  // An evaluation that happens to end in zeros is a readout, not a value written short.
-  assert.equal(checkAnswer('2\\cdot28.09+2\\cdot1.008+4\\cdot35.45+0.004', '199.9976', { form: 'worked:200.00' }), 'form');
-  // Two places short and right as far as it goes: told to write its digits, never marked right.
-  assert.equal(alone('124'), 'form');
-  assert.equal(describeFormFeedback('124', 'worked:123.88', '123.896'), VALUE_ONLY_TOO_FEW_FEEDBACK);
-  assert.equal(alone(''), 'empty');
-  // Beside the pair: the count is still asked, and the allowance runs from each end.
-  const form = 'sig-figs:4 last-digit:1 worked:82.27';
-  const counted = (response) => checkAnswer(response, '82.24', { form });
-  for (const right of ['82.23', '82.24', '82.25', '82.27', '82.28']) assert.equal(counted(right), 'correct', right);
-  assert.equal(counted('82.2665'), 'form');
-  assert.match(describeFormFeedback('82.2665', form, '82.24'), /now round it to 4 significant figures/);
-  assert.equal(counted('82.29'), 'incorrect');
-  // The 0.2 percent band this replaced graded a molar mass rounded to 232 correct (4.45(b)).
-  const silver = 'sig-figs:4 last-digit:1 worked:0.08642';
-  for (const right of ['0.08641', '0.08642', '0.08643', '0.08644', '0.08645']) assert.equal(checkAnswer(right, '0.08644', { form: silver }), 'correct', right);
-  for (const wrong of ['0.08640', '0.08634', '0.08627', '0.08661']) assert.equal(checkAnswer(wrong, '0.08644', { form: silver }), 'incorrect', wrong);
-  // What the learner is shown beside the source's answer.
-  assert.equal(workedValueShown('0.08644', silver), '0.08642');
-  assert.equal(workedValueShown('5.337\\times10^{22}', 'sig-figs:4 last-digit:1 worked:5.336\\times10^{22}'), '5.336\\times10^{22}');
-  assert.equal(workedValueShown('256.48', 'worked:256.48'), '', 'the table reaches the key: one answer to show');
-  assert.equal(workedValueShown('0.674', 'sig-figs:3 last-digit:1'), '');
-  // The pairing rules the lint reads.
-  assert.equal(measuredKeyProblem('123.896', 'worked:123.88'), null);
-  assert.equal(measuredKeyProblem('256.48', 'worked:256.48'), null, 'alone, the value may be the key: it sets the place');
-  assert.equal(measuredKeyProblem('82.24', form), null);
-  assert.equal(measuredKeyProblem('0.5000', 'sig-figs:4 last-digit:0 worked:0.4999'), null);
-  assert.match(measuredKeyProblem('82.24', 'sig-figs:4 worked:82.27'), /exactly one `sig-figs:<n>` and one `last-digit:<k>` together/);
-  assert.match(measuredKeyProblem('82.24', 'sig-figs:4 last-digit:1 worked:82.27 worked:82.25'), /declared once/);
-  assert.match(measuredKeyProblem('82.24', 'sig-figs:4 last-digit:1 worked:82.24'), /the key itself/);
-  assert.match(measuredKeyProblem('82.24', 'sig-figs:4 last-digit:1 worked:82.3'), /written to the 4 significant figures/);
-  assert.match(measuredKeyProblem('82.24', 'sig-figs:4 last-digit:1 worked:83.00'), /more than 0\.1 percent \(and a unit of the last place\) from the key/);
-  assert.match(measuredKeyProblem('82.24', 'sig-figs:4 last-digit:1 worked:-82.27'), /more than 0\.1 percent/);
-  // The ceiling parts table noise from an arithmetic defect: 3.25's 53.74 g
-  // of aluminum is 53.83 by any table (0.17 percent), while one unit of a
-  // four-figure key is under it however large that unit is in percent.
-  assert.match(measuredKeyProblem('53.74', 'sig-figs:4 last-digit:1 worked:53.83'), /more than 0\.1 percent/);
-  assert.equal(measuredKeyProblem('10.41', 'sig-figs:4 last-digit:1 worked:10.40'), null);
-  assert.equal(measuredKeyProblem('1.001', 'sig-figs:4 last-digit:1 worked:1.003'), null, '0.1 percent and a unit');
-  assert.match(measuredKeyProblem('1.001', 'sig-figs:4 last-digit:1 worked:1.004'), /more than 0\.1 percent/);
-  assert.match(measuredKeyProblem('82.24', 'sig-figs:4 last-digit:1 worked:abc'), /ONE nonzero number written without a space/);
-  assert.match(measuredKeyProblem('123.896,18.015', 'worked:123.88'), /ONE nonzero number/);
-  assert.equal(parseAnswerForm('worked:abc').valid, false, 'the value is a numeral');
-  assert.equal(parseAnswerForm('worked:5.336\\times10^{22}').valid, true);
-  // The percent band is gone: a new item cannot declare one.
-  assert.equal(parseAnswerForm('sig-figs:4 tolerance:0.2%').valid, false);
+test('a key has one value: worked:<value> and tolerance:<p>% are not forms', () => {
+  // Both gave a key more than one right answer (Chemistry 2e chapters 3 and
+  // 4) and both are retired — the band on November 12, 2026, the second
+  // value a day later, when the book's periodic table became the data its
+  // keys are worked from. Neither parses, so the shortcode stops the build
+  // and the lint names the token.
+  for (const spec of ['worked:0.08642', 'sig-figs:4 last-digit:1 worked:0.08642', 'worked:5.336\\times10^{22}', 'worked:abc', 'sig-figs:4 tolerance:0.2%']) {
+    assert.equal(parseAnswerForm(spec).valid, false, spec);
+  }
+  assert.deepEqual(parseAnswerForm('sig-figs:4 last-digit:1 worked:0.08642').unknown, ['worked:0.08642']);
+  assert.ok(!ANSWER_FORM_TOKENS.some((token) => /worked|tolerance/.test(token)));
+  // The one value is graded with the one allowance: the silver(I) oxide key
+  // and its neighbours, and nothing a second value used to add.
+  const silver = (response) => checkAnswer(response, '0.08644', { form: 'sig-figs:4 last-digit:1' });
+  for (const right of ['0.08643', '0.08644', '0.08645']) assert.equal(silver(right), 'correct', right);
+  for (const wrong of ['0.08642', '0.08641', '0.08634', '0.08661']) assert.equal(silver(wrong), 'incorrect', wrong);
+  // A formula mass is a measured quantity like any other, to the table's figures.
+  const p4 = (response) => checkAnswer(response, '123.896', { form: 'sig-figs:6 last-digit:1' });
+  assert.equal(p4('123.896'), 'correct');
+  assert.equal(p4('123.88'), 'incorrect');
+  assert.equal(p4('4\\cdot30.974'), 'form', 'an unfinished calculation of the right value');
+  // The pairing rules the lint reads are the pair's alone.
+  assert.equal(measuredKeyProblem('0.08644', 'sig-figs:4 last-digit:1'), null);
+  assert.match(measuredKeyProblem('82.24', 'sig-figs:4'), /exactly one `sig-figs:<n>` and one `last-digit:<k>` together/);
+  assert.doesNotMatch(measuredKeyProblem('82.24', 'sig-figs:4'), /worked/);
+  assert.match(measuredKeyProblem('123.896,18.015', 'sig-figs:6 last-digit:1'), /grades ONE nonzero number/);
 });

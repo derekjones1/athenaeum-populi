@@ -71,12 +71,14 @@ The analysis results indicate that the compound is 61.0% C, 15.4% H, and 23.7% N
 
 ### Determining Percent Composition from Molecular or Empirical Formulas
 
-Percent composition is also useful for evaluating the relative abundance of a given element in different compounds of known formulas. As one example, consider the common nitrogen-containing fertilizers ammonia (NH₃), ammonium nitrate (NH₄NO₃), and urea (CH₄N₂O). The element nitrogen is the active ingredient for agricultural purposes, so the mass percentage of nitrogen in the compound is a practical and economic concern for consumers choosing among these fertilizers. For these sorts of applications, the percent composition of a compound is easily derived from its formula mass and the atomic masses of its constituent elements. A molecule of NH₃ contains one N atom weighing 14.01 amu and three H atoms weighing a total of (3 × 1.008 amu) = 3.024 amu. The formula mass of ammonia is therefore (14.01 amu + 3.024 amu) = 17.03 amu, and its percent composition is:
+Percent composition is also useful for evaluating the relative abundance of a given element in different compounds of known formulas. As one example, consider the common nitrogen-containing fertilizers ammonia (NH₃), ammonium nitrate (NH₄NO₃), and urea (CH₄N₂O). The element nitrogen is the active ingredient for agricultural purposes, so the mass percentage of nitrogen in the compound is a practical and economic concern for consumers choosing among these fertilizers. For these sorts of applications, the percent composition of a compound is easily derived from its formula mass and the atomic masses of its constituent elements. A molecule of NH₃ contains one N atom weighing 14.007 amu and three H atoms weighing a total of (3 × 1.0080 amu) = 3.0240 amu. The formula mass of ammonia is therefore (14.007 amu + 3.0240 amu) = 17.031 amu, and its percent composition is:
 
 $$\begin{aligned}
-\%\ \text{N} &= \frac{14.01\ \text{amu N}}{17.03\ \text{amu}\ \ce{NH3}} \times 100\% = 82.27\% \\[6pt]
-\%\ \text{H} &= \frac{3.024\ \text{amu H}}{17.03\ \text{amu}\ \ce{NH3}} \times 100\% = 17.76\%
+\%\ \text{N} &= \frac{14.007\ \text{amu N}}{17.031\ \text{amu}\ \ce{NH3}} \times 100\% = 82.24\% \\[6pt]
+\%\ \text{H} &= \frac{3.0240\ \text{amu H}}{17.031\ \text{amu}\ \ce{NH3}} \times 100\% = 17.76\%
 \end{aligned}$$
+
+*Source note:* the source works this section’s examples with atomic masses rounded to four figures. Here they are worked with the masses this book’s periodic table prints (Appendix A), so some results differ from the source’s in their last digits.
 
 This same approach may be taken considering a pair of molecules, a dozen molecules, or a mole of molecules, etc. The latter amount is most convenient and would simply involve the use of molar masses instead of atomic and formula masses, as demonstrated in the example below. As long as the molecular or empirical formula of the compound in question is known, the percent composition may be derived from the atomic or molar masses of the compound's elements.
 
@@ -86,19 +88,19 @@ This same approach may be taken considering a pair of molecules, a dozen molecul
 
 $$\begin{aligned}
 \%\ \text{C} &= \frac{9\ \text{mol C} \times \text{molar mass C}}{\text{molar mass}\ \ce{C9H8O4}} \times 100 \\[6pt]
-&= \frac{9 \times 12.01\ \text{g/mol}}{180.159\ \text{g/mol}} \times 100 = \frac{108.09\ \text{g/mol}}{180.159\ \text{g/mol}} \times 100 \\
+&= \frac{9 \times 12.011\ \text{g/mol}}{180.159\ \text{g/mol}} \times 100 = \frac{108.099\ \text{g/mol}}{180.159\ \text{g/mol}} \times 100 \\
 \%\ \text{C} &= 60.00\%\ \text{C}
 \end{aligned}$$
 
 $$\begin{aligned}
 \%\ \text{H} &= \frac{8\ \text{mol H} \times \text{molar mass H}}{\text{molar mass}\ \ce{C9H8O4}} \times 100 \\[6pt]
-&= \frac{8 \times 1.008\ \text{g/mol}}{180.159\ \text{g/mol}} \times 100 = \frac{8.064\ \text{g/mol}}{180.159\ \text{g/mol}} \times 100 \\
+&= \frac{8 \times 1.0080\ \text{g/mol}}{180.159\ \text{g/mol}} \times 100 = \frac{8.0640\ \text{g/mol}}{180.159\ \text{g/mol}} \times 100 \\
 \%\ \text{H} &= 4.476\%\ \text{H}
 \end{aligned}$$
 
 $$\begin{aligned}
 \%\ \text{O} &= \frac{4\ \text{mol O} \times \text{molar mass O}}{\text{molar mass}\ \ce{C9H8O4}} \times 100 \\[6pt]
-&= \frac{4 \times 16.00\ \text{g/mol}}{180.159\ \text{g/mol}} \times 100 = \frac{64.00\ \text{g/mol}}{180.159\ \text{g/mol}} \times 100 \\
+&= \frac{4 \times 15.999\ \text{g/mol}}{180.159\ \text{g/mol}} \times 100 = \frac{63.996\ \text{g/mol}}{180.159\ \text{g/mol}} \times 100 \\
 \%\ \text{O} &= 35.52\%
 \end{aligned}$$
 
@@ -117,8 +119,8 @@ Note that these percentages sum to equal 100.00% when appropriately rounded.
 As previously mentioned, the most common approach to determining a compound’s chemical formula is to first measure the masses of its constituent elements. However, keep in mind that chemical formulas represent the relative *numbers*, not masses, of atoms in the substance. Therefore, any experimentally derived data involving mass must be used to derive the corresponding numbers of atoms in the compound. This is accomplished using molar masses to convert the mass of each element to a number of moles. These molar amounts are used to compute whole-number ratios that can be used to derive the empirical formula of the substance. Consider a sample of compound determined to contain 1.71 g C and 0.287 g H. The corresponding numbers of atoms (in moles) are:
 
 $$\begin{aligned}
-1.71\ \text{g C} \times \frac{1\ \text{mol C}}{12.01\ \text{g C}} &= 0.142\ \text{mol C} \\[6pt]
-0.287\ \text{g H} \times \frac{1\ \text{mol H}}{1.008\ \text{g H}} &= 0.285\ \text{mol H}
+1.71\ \text{g C} \times \frac{1\ \text{mol C}}{12.011\ \text{g C}} &= 0.142\ \text{mol C} \\[6pt]
+0.287\ \text{g H} \times \frac{1\ \text{mol H}}{1.0080\ \text{g H}} &= 0.285\ \text{mol H}
 \end{aligned}$$
 
 Thus, this compound may be represented by the formula $\ce{C_{0.142}H_{0.285}}$. Per convention, formulas contain whole-number subscripts, which can be achieved by dividing each subscript by the smaller subscript:
@@ -127,7 +129,7 @@ $$\ce{C_{$\frac{0.142}{0.142}$}H_{$\frac{0.285}{0.142}$}}\ \text{or}\ \ce{CH2}$$
 
 (Recall that subscripts of “1” are not written but rather assumed if no other number is present.)
 
-*Source note:* the source prints 0.284 mol H; 0.287 divided by 1.008 rounds to 0.285, which is used here.
+*Source note:* the source prints 0.284 mol H; 0.287 divided by 1.0080 rounds to 0.285, which is used here.
 
 The empirical formula for this compound is thus CH₂. This may or may not be the compound’s *molecular formula* as well; however, additional information is needed to make that determination (as discussed later in this section).
 
@@ -158,15 +160,15 @@ Hematite is an iron oxide that is used in jewelry. (credit: Mauro Cateb)
 **Solution.** This problem provides the mass in grams of each element. Begin by finding the moles of each:
 
 $$\begin{aligned}
-34.97\ \text{g Fe}\left(\frac{\text{mol Fe}}{55.85\ \text{g}}\right) &= 0.6261\ \text{mol Fe} \\[6pt]
-15.03\ \text{g O}\left(\frac{\text{mol O}}{16.00\ \text{g}}\right) &= 0.9394\ \text{mol O}
+34.97\ \text{g Fe}\left(\frac{\text{mol Fe}}{55.845\ \text{g}}\right) &= 0.6262\ \text{mol Fe} \\[6pt]
+15.03\ \text{g O}\left(\frac{\text{mol O}}{15.999\ \text{g}}\right) &= 0.9394\ \text{mol O}
 \end{aligned}$$
 
 Next, derive the iron-to-oxygen molar ratio by dividing by the lesser number of moles:
 
 $$\begin{aligned}
-\frac{0.6261}{0.6261} &= 1.000\ \text{mol Fe} \\[6pt]
-\frac{0.9394}{0.6261} &= 1.500\ \text{mol O}
+\frac{0.6262}{0.6262} &= 1.000\ \text{mol Fe} \\[6pt]
+\frac{0.9394}{0.6262} &= 1.500\ \text{mol O}
 \end{aligned}$$
 
 The ratio is 1.000 mol of iron to 1.500 mol of oxygen ($\ce{Fe1O_{1.5}}$). Finally, multiply the ratio by two to get the smallest possible whole number subscripts while still maintaining the correct iron-to-oxygen ratio:
@@ -208,15 +210,15 @@ $$\begin{aligned}
 The molar amounts of carbon and oxygen in a 100-g sample are calculated by dividing each element’s mass by its molar mass:
 
 $$\begin{aligned}
-27.29\ \text{g C}\left(\frac{\text{mol C}}{12.01\ \text{g}}\right) &= 2.272\ \text{mol C} \\[6pt]
-72.71\ \text{g O}\left(\frac{\text{mol O}}{16.00\ \text{g}}\right) &= 4.544\ \text{mol O}
+27.29\ \text{g C}\left(\frac{\text{mol C}}{12.011\ \text{g}}\right) &= 2.272\ \text{mol C} \\[6pt]
+72.71\ \text{g O}\left(\frac{\text{mol O}}{15.999\ \text{g}}\right) &= 4.545\ \text{mol O}
 \end{aligned}$$
 
 Coefficients for the tentative empirical formula are derived by dividing each molar amount by the lesser of the two:
 
 $$\begin{aligned}
 \frac{2.272\ \text{mol C}}{2.272} &= 1 \\[6pt]
-\frac{4.544\ \text{mol O}}{2.272} &= 2
+\frac{4.545\ \text{mol O}}{2.272} &= 2
 \end{aligned}$$
 
 Since the resulting ratio is one carbon to two oxygen atoms, the empirical formula is CO₂.
@@ -260,9 +262,9 @@ Note that this same approach may be used when the molar mass (g/mol) instead of 
 **Solution.** Determining the molecular formula from the provided data will require comparison of the compound’s empirical formula mass to its molar mass. As the first step, use the percent composition to derive the compound’s empirical formula. Assuming a convenient 100-g sample of nicotine yields the following molar amounts of its elements:
 
 $$\begin{aligned}
-(74.02\ \text{g C})\left(\frac{1\ \text{mol C}}{12.01\ \text{g C}}\right) &= 6.163\ \text{mol C} \\[6pt]
-(8.710\ \text{g H})\left(\frac{1\ \text{mol H}}{1.008\ \text{g H}}\right) &= 8.641\ \text{mol H} \\[6pt]
-(17.27\ \text{g N})\left(\frac{1\ \text{mol N}}{14.01\ \text{g N}}\right) &= 1.233\ \text{mol N}
+(74.02\ \text{g C})\left(\frac{1\ \text{mol C}}{12.011\ \text{g C}}\right) &= 6.163\ \text{mol C} \\[6pt]
+(8.710\ \text{g H})\left(\frac{1\ \text{mol H}}{1.0080\ \text{g H}}\right) &= 8.641\ \text{mol H} \\[6pt]
+(17.27\ \text{g N})\left(\frac{1\ \text{mol N}}{14.007\ \text{g N}}\right) &= 1.233\ \text{mol N}
 \end{aligned}$$
 
 Next, calculate the molar ratios of these elements relative to the least abundant element, N.
@@ -279,7 +281,7 @@ $$\begin{aligned}
 \frac{8.641}{1.233} &= 7.008\ \text{mol H}
 \end{aligned}$$
 
-The C-to-N and H-to-N molar ratios are adequately close to whole numbers, and so the empirical formula is C₅H₇N. The empirical formula mass for this compound is therefore 81.13 amu/formula unit, or 81.13 g/mol formula unit.
+The C-to-N and H-to-N molar ratios are adequately close to whole numbers, and so the empirical formula is C₅H₇N. The empirical formula mass for this compound is therefore 81.118 amu/formula unit, or 81.118 g/mol formula unit.
 
 Calculate the molar mass for nicotine from the given mass and molar amount of compound:
 
@@ -287,7 +289,7 @@ $$\frac{40.57\ \text{g nicotine}}{0.2500\ \text{mol nicotine}} = \frac{162.3\ \t
 
 Comparing the molar mass and empirical formula mass indicates that each nicotine molecule contains two formula units:
 
-$$\frac{162.3\ \text{g/mol}}{81.13\ \frac{\text{g}}{\text{formula unit}}} = 2\ \text{formula units/molecule}$$
+$$\frac{162.3\ \text{g/mol}}{81.118\ \frac{\text{g}}{\text{formula unit}}} = 2\ \text{formula units/molecule}$$
 
 Finally, derive the molecular formula for nicotine from the empirical formula by multiplying each subscript by two:
 
@@ -324,7 +326,7 @@ $$\ce{(C5H7N)2} = \ce{C10H14N2}$$
 {{< fillin
   question="Calculate the following to four significant figures: the percent composition of ammonia, NH₃. Enter the percent of nitrogen by mass as a number, without the percent sign."
   answer="82.24"
-  answerForm="sig-figs:4 last-digit:1 worked:82.27"
+  answerForm="sig-figs:4 last-digit:1"
   answerDisplay="$82.24\%\ \text{N}$"
   hint="Find the formula mass from the atomic masses, then use the percent composition equation in the Key equations list."
 >}}
@@ -368,8 +370,6 @@ $$\ce{(C5H7N)2} = \ce{C10H14N2}$$
   answerDisplay="$38.76\%\ \ce{Ca^2+}$"
   hint="Find the formula mass by the method of the ammonia calculation above, then use the percent composition equation in the Key equations list."
 >}}
-
-*Source note:* the answer shown for the percent of nitrogen in ammonia above is the source’s, which was computed from atomic masses with more digits than this book’s periodic table prints; an answer worked from the table is graded as correct.
 
 {{< fillin
   question="Determine the percent ammonia, NH₃, in Co(NH₃)₆Cl₃, to three significant figures. Enter the percent of ammonia by mass as a number, without the percent sign."
@@ -427,4 +427,4 @@ $$\ce{(C5H7N)2} = \ce{C10H14N2}$$
 
 ---
 
-<small>This section is adapted from [Chemistry 2e, Section 3.2: Determining Empirical and Molecular Formulas](https://openstax.org/books/chemistry-2e/pages/3-2-determining-empirical-and-molecular-formulas) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the source’s equations typeset as KaTeX math, with the formulas in them set with the chemistry extension; the three rows of each aspirin percentage and the molecular-formula equation broken into aligned rows to fit the column; the decimal-subscript formulas of the body and the generic empirical formula written as math, its subscripts x, y, and n, which the source sets upright, set italic as quantity symbols, in the body and in the Key equations list alike; the five worked examples set as prose, each followed by its Check Your Learning as interactive items (four fill-ins, one per element of a percent composition, and three formula text-recall items), the printed answers serving as their keys rather than appearing as text; the cross-references to the flow chart, the two photographs, and the aspirin example written as describing phrases (“the figure below”, “shown in the photograph below”, “as demonstrated in the example below”, the last adding the “in” the source’s sentence lacks); three statements corrected, each with a Source note: the moles of hydrogen in the body’s first empirical-formula calculation, which the source rounds down, carried into the formula and the ratio that follow; the nicotine solution’s ratio for hydrogen, which the source computes from a mole count other than the one it found the line before; and “bacterial fermentation” of grain to ethanol, which is yeast fermentation; with a Source note after the percent-composition exercise, on the percent of nitrogen in ammonia, saying that the answer shown is the source’s, computed from atomic masses with more digits than this book’s periodic table prints, and that an answer worked from the table is graded as correct; the aspirin molar mass’s unit “g/mole” written g/mol, the symbol the rest of the page uses; the unit inside the parentheses of the second key equation written as g/mol rather than as a fraction inside the fraction; the nicotine solution’s “Assuming a convenient, a 100-g sample” repaired to “Assuming a convenient 100-g sample”; the flow chart, the hematite photograph, and the fermentation-tank photograph re-encoded as WebP and marked as a diagram and two photographs, every alt text written from the artwork; the Link to Learning box rendered as a callout; the three key equations listed as inline math; the six end-of-section exercises the source keys adapted into the interactive Practice block as 7 fill-ins and 6 formula text-recall items, one item per lettered part and one fill-in per element of a percent composition, with a sentence added after each percent stem saying which element’s, ion’s, or compound’s percent to enter, as a number without the percent sign, and after each chrysotile stem saying which formula to enter; the lead-in of the empirical-formula exercise restated in the singular for each of its two parts; and the six exercises the source prints no answer for are omitted.</small>
+<small>This section is adapted from [Chemistry 2e, Section 3.2: Determining Empirical and Molecular Formulas](https://openstax.org/books/chemistry-2e/pages/3-2-determining-empirical-and-molecular-formulas) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the source’s equations typeset as KaTeX math, with the formulas in them set with the chemistry extension; the three rows of each aspirin percentage and the molecular-formula equation broken into aligned rows to fit the column; the decimal-subscript formulas of the body and the generic empirical formula written as math, its subscripts x, y, and n, which the source sets upright, set italic as quantity symbols, in the body and in the Key equations list alike; the five worked examples set as prose, each followed by its Check Your Learning as interactive items (four fill-ins, one per element of a percent composition, and three formula text-recall items), the printed answers serving as their keys rather than appearing as text; the cross-references to the flow chart, the two photographs, and the aspirin example written as describing phrases (“the figure below”, “shown in the photograph below”, “as demonstrated in the example below”, the last adding the “in” the source’s sentence lacks); three statements corrected, each with a Source note: the moles of hydrogen in the body’s first empirical-formula calculation, which the source rounds down, carried into the formula and the ratio that follow; the nicotine solution’s ratio for hydrogen, which the source computes from a mole count other than the one it found the line before; and “bacterial fermentation” of grain to ethanol, which is yeast fermentation; the worked examples and the exercise answers computed from this book’s periodic table (Appendix A, IUPAC’s abridged standard atomic weights) where the source uses four-figure atomic masses, with a Source note in the body saying so; the aspirin molar mass’s unit “g/mole” written g/mol, the symbol the rest of the page uses; the unit inside the parentheses of the second key equation written as g/mol rather than as a fraction inside the fraction; the nicotine solution’s “Assuming a convenient, a 100-g sample” repaired to “Assuming a convenient 100-g sample”; the flow chart, the hematite photograph, and the fermentation-tank photograph re-encoded as WebP and marked as a diagram and two photographs, every alt text written from the artwork; the Link to Learning box rendered as a callout; the three key equations listed as inline math; the six end-of-section exercises the source keys adapted into the interactive Practice block as 7 fill-ins and 6 formula text-recall items, one item per lettered part and one fill-in per element of a percent composition, with a sentence added after each percent stem saying which element’s, ion’s, or compound’s percent to enter, as a number without the percent sign, and after each chrysotile stem saying which formula to enter; the lead-in of the empirical-formula exercise restated in the singular for each of its two parts; and the six exercises the source prints no answer for are omitted.</small>

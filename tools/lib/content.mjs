@@ -391,16 +391,11 @@ export function maskCode(source, { svg = false } = {}) {
 }
 
 // A fill-in's `answerForm` is not a key, and a solver must read it (the
-// count of figures asked, the shape) — but its `worked:<value>` token
-// carries a second RIGHT ANSWER, the value the book's own data give. The
-// token stays, so the solver knows the item has one; the value goes.
-/**
- * An `answerForm` as a blind solver may read it: the `worked:<value>` token
- * kept, its value blanked. `maskKeys` does this to a page; a caller that
- * hands the form over as a field of its own (a solve packet) calls this.
- */
-export const maskWorkedValue = (form) => String(form ?? '').replace(/(^|\s)worked:\S+/g, '$1worked:…');
-const WORKED_VALUE_RE = /(\banswerForm\s*=\s*(?:"[^"]*?|'[^']*?)\bworked:)[^\s"']+/g;
+// count of figures asked, the shape). No token of it carries an answer: the
+// one that did, `worked:<value>`, was retired on November 13, 2026. A new
+// param or token that can carry one is a key — mask it here AND in the solve
+// packet (solve-check.mjs), then grep an emit for the value; both masks
+// leaked that token's value on their first try.
 const KEY_PARAM_RE = new RegExp(String.raw`\b(${[...KEY_PARAMS].join('|')})\s*=\s*${PARAM_VALUE}`, 'g');
 const newlinesOf = (s) => s.replace(/[^\n]/g, '');
 
@@ -440,8 +435,7 @@ function maskShortcodeKeys(src) {
   for (const sc of found) {
     if (sc.index < cursor) continue; // inside a span already replaced
     const openEnd = sc.openIndex + sc.open.length + 3; // the ">}}"
-    const maskedOpen = sc.open.replace(KEY_PARAM_RE, (m, name, value) => `${name}="…"${newlinesOf(value)}`)
-      .replace(WORKED_VALUE_RE, '$1…');
+    const maskedOpen = sc.open.replace(KEY_PARAM_RE, (m, name, value) => `${name}="…"${newlinesOf(value)}`);
     out += src.slice(cursor, sc.openIndex) + maskedOpen + src.slice(sc.openIndex + sc.open.length, openEnd);
     if (sc.closed && KEYED_INNER[sc.name]) {
       const lead = sc.inner.startsWith('\n') ? '\n' : '';

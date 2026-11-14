@@ -450,7 +450,8 @@ test('the chemistry subject playbook states the rules its engine enforces', asyn
   // grader, the lock — rather than restated.
   const chem = read('docs/subjects/chemistry.md');
   const { lintLeaks } = await import('../lint/lints-leaks.mjs');
-  const { checkAnswer, describeFormFeedback, describeIncorrectFeedback, NEAR_MISS_FEEDBACK, NEAR_MISS_TABLE_SENTENCE, VALUE_ONLY_TOO_FEW_FEEDBACK, WORKED_CEILING_PERCENT, measuredKeyProblem, workedValueShown } = await import('../../assets/js/lib/math/check-answer.mjs');
+  const { checkAnswer, describeFormFeedback, describeIncorrectFeedback, NEAR_MISS_FEEDBACK, NEAR_MISS_TABLE_SENTENCE, measuredKeyProblem, parseAnswerForm: parseForm } = await import('../../assets/js/lib/math/check-answer.mjs');
+  const { DATA_REGISTER, DATA_SOURCE_NOTE } = await import('../verify/verify-source-keys.mjs');
   const page = 'content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/03-molarity.md';
 
   // Where it sits and what it inherits.
@@ -492,34 +493,34 @@ test('the chemistry subject playbook states the rules its engine enforces', asyn
   // rows are the grader's, and the playbook quotes the sentence whole.
   assert.equal(describeIncorrectFeedback('0.676', form, '0.674'), NEAR_MISS_FEEDBACK + NEAR_MISS_TABLE_SENTENCE);
   for (const typed of ['0.6', '0.774']) assert.equal(describeIncorrectFeedback(typed, form, '0.674'), '', typed);
-  assert.ok(chem.replace(/\s+/g, ' ').includes(NEAR_MISS_FEEDBACK), 'the playbook quotes the near-miss sentence');
+  assert.ok(chem.replace(/\s+/g, ' ').includes(NEAR_MISS_FEEDBACK + NEAR_MISS_TABLE_SENTENCE), 'the playbook quotes the near-miss sentence whole, the table sentence with it');
   for (const typed of ['8', '8.0']) assert.equal(checkAnswer(typed, '8.00', { form }), 'form', `${typed} against 8.00`);
   for (const [typed, key] of [['0.7', '0.674'], ['90', '89.4']]) assert.equal(checkAnswer(typed, key, { form }), 'incorrect', `${typed} against ${key}`);
   assert.match(chem, /Both\s+tokens\s+are\s+always\s+declared\s+together/);
-  // The worked value (November 12, 2026): the playbook's two tables are the
-  // grader's real behaviour, and the percent band they replaced is gone.
-  assert.match(chem, /`worked:<value>`/);
-  assert.doesNotMatch(chem, /answerForm="[^"]*tolerance:/, 'no example in the playbook still declares the retired band');
-  for (const [typed, verdict] of [['123.88', 'correct'], ['123.9', 'correct'], ['123.896', 'correct'], ['123.87', 'correct'],
-    ['124', 'form'], ['123.86', 'incorrect'], ['122.888', 'incorrect'], ['123.88amu', 'unit'], ['4\\cdot30.97', 'form']]) {
-    assert.equal(checkAnswer(typed, '123.896', { form: 'worked:123.88' }), verdict, `${typed} against 123.896`);
+  // One data set, one right answer (November 12–13, 2026): the playbook's
+  // table is the grader's real behaviour, and the two designs that gave a
+  // key more than one value are gone from the grader and from every example.
+  assert.doesNotMatch(chem, /answerForm="[^"]*(?:tolerance|worked):/, 'no example in the playbook still declares a retired token');
+  for (const retired of ['worked:0.08642', 'sig-figs:4 last-digit:1 worked:0.08642', 'sig-figs:4 tolerance:0.2%']) {
+    assert.equal(parseForm(retired).valid, false, `${retired} is not a form`);
   }
-  assert.equal(describeFormFeedback('124', 'worked:123.88', '123.896'), VALUE_ONLY_TOO_FEW_FEEDBACK);
-  assert.ok(chem.replace(/\s+/g, ' ').includes(VALUE_ONLY_TOO_FEW_FEEDBACK), 'the playbook quotes the written-short sentence');
-  const silver = 'sig-figs:4 last-digit:1 worked:0.08642';
-  for (const [typed, verdict] of [['0.08641', 'correct'], ['0.08642', 'correct'], ['0.08644', 'correct'], ['0.08645', 'correct'],
-    ['0.08640', 'incorrect'], ['0.08634', 'incorrect'], ['0.086419', 'form'], ['0.0864', 'form']]) {
+  const silver = 'sig-figs:4 last-digit:1';
+  for (const [typed, verdict] of [['0.08643', 'correct'], ['0.08644', 'correct'], ['0.08645', 'correct'],
+    ['0.08642', 'incorrect'], ['0.08634', 'incorrect'], ['0.086443', 'form'], ['0.0864', 'form']]) {
     assert.equal(checkAnswer(typed, '0.08644', { form: silver }), verdict, `${typed} against 0.08644`);
   }
-  assert.equal(describeIncorrectFeedback('0.08640', silver, '0.08644'), NEAR_MISS_FEEDBACK + NEAR_MISS_TABLE_SENTENCE);
+  assert.equal(describeIncorrectFeedback('0.08642', silver, '0.08644'), NEAR_MISS_FEEDBACK + NEAR_MISS_TABLE_SENTENCE);
   assert.equal(describeIncorrectFeedback('0.08634', silver, '0.08644'), '');
-  assert.equal(workedValueShown('0.08644', silver), '0.08642');
-  assert.ok(chem.replace(/\s+/g, ' ').includes('this book’s own data give'), 'the playbook quotes the sentence a right answer is shown');
-  assert.ok(read('assets/js/components/math/fill-in.js').includes('this book’s own data give'), 'and the component says it');
-  assert.ok(measuredKeyProblem('0.08644', 'sig-figs:4 worked:0.08642'), 'the lint refuses a worked value beside half the pair');
-  assert.ok(measuredKeyProblem('0.08644', 'sig-figs:4 last-digit:1 worked:0.08644'), 'the lint refuses a worked value that is the key');
-  assert.ok(measuredKeyProblem('0.08644', 'sig-figs:4 last-digit:1 worked:0.08700'), 'the lint refuses a worked value beyond the ceiling');
-  assert.match(chem, new RegExp(`${WORKED_CEILING_PERCENT.replace('.', '\\.')}\\s+percent`), 'the playbook names the ceiling the lint enforces');
+  // One figure short and a unit or two off: what a table of coarser masses gives.
+  assert.equal(describeIncorrectFeedback('123.88', 'sig-figs:6 last-digit:1', '123.896'), NEAR_MISS_FEEDBACK + NEAR_MISS_TABLE_SENTENCE);
+  assert.ok(!read('assets/js/components/math/fill-in.js').includes('own data give'), 'the component names one answer');
+  // The data, the tool, the gate's two statuses, the register and its note are named as the code names them.
+  for (const named of ['data/chemistry/elements.json', 'tools/verify/molar-mass.mjs', '`data-differs`', '`table-differs`', DATA_REGISTER, '--write-register',
+    'data/chemistry/constants.json', 'tools/source/constants-table.mjs', 'tools/figures/periodic-table.mjs']) {
+    assert.ok(chem.includes(named), `the playbook names ${named}`);
+    if (/^(?:data|tools)\//.test(named)) assert.ok(exists(named), `${named} exists`);
+  }
+  assert.ok(chem.replace(/\s+/g, ' ').includes(DATA_SOURCE_NOTE), 'the playbook quotes the Source note the gate looks for');
   assert.ok(measuredKeyProblem('0.674', 'sig-figs:3'), 'the lint refuses sig-figs without last-digit');
   assert.match(chem, /`sig-figs:1`\s+takes\s+`last-digit:0`/);
   assert.ok(measuredKeyProblem('5', 'sig-figs:1 last-digit:1'), 'the lint refuses an allowance on one figure');
@@ -669,15 +670,14 @@ test('the fillin shortcode accepts exactly the exported answerForm tokens', () =
   assert.ok(exported.delete('last-digit:<k>'), 'ANSWER_FORM_TOKENS still exports the last-digit family');
   assert.match(fillinShortcode, /findRE\s+`\^last-digit:\[0-2\]\$`/,
     'the shortcode still matches the last-digit:<k> family with findRE');
-  // The worked value (November 12, 2026): one numeral, written without a
-  // space. The template checks the token's shape; the lint reads the numeral.
-  assert.ok(exported.delete('worked:<value>'), 'ANSWER_FORM_TOKENS still exports the worked family');
-  assert.ok(fillinShortcode.includes('findRE `^worked:\\S+$`'),
-    'the shortcode still matches the worked:<value> family with findRE');
+  // Two retired families (November 12 and 13, 2026): the percent band and
+  // the second "worked" value. Neither is exported, and the template names neither.
+  assert.ok(!exported.has('worked:<value>'), 'ANSWER_FORM_TOKENS no longer exports the worked family');
+  assert.ok(!fillinShortcode.includes('worked'), 'the retired second value is gone from the template');
   assert.ok(!fillinShortcode.includes('tolerance'), 'the retired percent band is gone from the template');
   for (const [token, valid] of [['sig-figs:3', true], ['sig-figs:0', false], ['sig-figs:10', false],
     ['last-digit:0', true], ['last-digit:2', true], ['last-digit:3', false],
-    ['worked:0.08642', true], ['worked:5.336\\times10^{22}', true], ['worked:', false], ['worked:abc', false],
+    ['worked:0.08642', false], ['worked:5.336\\times10^{22}', false], ['worked:', false], ['worked:abc', false],
     ['tolerance:0.05%', false]]) {
     assert.equal(parseAnswerForm(token).valid, valid, `the grader ${valid ? 'reads' : 'refuses'} ${token}, as the template does`);
   }

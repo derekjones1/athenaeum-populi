@@ -6,6 +6,7 @@ import path from 'node:path';
 import { execFileSync, spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { assemble, bookSections, chapterBlocks, checkSources, findLeaks, plannedWeights, provenanceResults, solutionPrints } from './knowledge-check.mjs';
+import { loadElements } from '../lib/elements.mjs';
 
 // knowledge-check.mjs is the parent's kit for a Knowledge Check run
 // (docs/briefs/anatomy-physiology/kc-run.md). Earlier runs rebuilt these
@@ -172,6 +173,23 @@ test('sources refuse a key the Solution does not print, other figures than it sh
   // An item above the first section heading, or under a section the map lacks, has no module to be read against.
   assert.match(checkSources(`{{< fillin question="${SOFT_DRINK}" answer="0.375" answerForm="sig-figs:3 last-digit:0" >}}\n`, moduleOf).failures[0].detail, /no "### N\.M" heading/);
   assert.match(lines(check(`{{< fillin question="${SOFT_DRINK}" answer="0.375" answerForm="sig-figs:3 last-digit:0" >}}`).replace('### 3.3', '### 9.9'))[0], /Section 9\.9, which the source map does not hold/);
+});
+
+test('sources: on a book with its own periodic table, a key near the source\'s print is confirmed only when the section page prints it', () => {
+  const elements = loadElements();
+  const item = `{{< fillin question="${SOFT_DRINK}" answer="0.376" answerForm="sig-figs:3 last-digit:1" >}}`;
+  const section = (value) => () => `Dividing gives:\n\n$$\\frac{0.133}{0.355} = ${value}\\ M$$\n\n{{< fillin question="Another?" answer="0.376" answerForm="sig-figs:3 last-digit:1" >}}\n`;
+  // The section's worked example was recomputed and prints the check's key.
+  assert.deepEqual(checkSources(check(item), moduleOf, { elements, pageOf: section('0.376') }), { confirmed: 1, failures: [] });
+  // The section still prints the source's number: the check and the section would give two answers.
+  // (The section's own item keying 0.376 is a parameter, not its body.)
+  assert.match(checkSources(check(item), moduleOf, { elements, pageOf: section('0.375') }).failures[0].detail,
+    /keys "0\.376" where the source's Solution of worked example ex1 prints 0\.375, and the body of Section 3\.3's page does not print 0\.376/);
+  // A book with no table of its own has no such reading, and neither has an item graded to the digit.
+  assert.match(checkSources(check(item), moduleOf).failures[0].detail, /does not print \(key-differs\)/);
+  assert.match(checkSources(check(item.replace('last-digit:1', 'last-digit:0')), moduleOf, { elements, pageOf: section('0.376') }).failures[0].detail, /does not print \(key-differs\)/);
+  // A key three units away is a wrong key with any table.
+  assert.match(checkSources(check(item.replace('0.376', '0.378')), moduleOf, { elements, pageOf: section('0.378') }).failures[0].detail, /does not print \(key-differs\)/);
 });
 
 test('a Solution is prose: a formula is found as any run of its words, in the source\'s spaced subscripts', () => {

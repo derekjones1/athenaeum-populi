@@ -95,7 +95,9 @@ $$\ce{MgCl2(aq) + 2NaOH(aq) -> Mg(OH)2(s) + 2NaCl(aq)}$$
 {{< mediafigure src="chemistry/CNX_Chem_04_03_map2_img" kind="diagram" alt="Four boxes joined by arrows around three sides of a square. From a yellow box at the top left, “Mass of Mg(OH)₂,” an arrow labeled “Molar mass” points right to a pink box, “Moles of Mg(OH)₂.” From there an arrow labeled “Stoichiometric factor” points down to a pink box, “Moles of NaOH,” and from there an arrow labeled “Molar mass” points left to a yellow box at the bottom left, “Mass of NaOH.”" >}}
 {{< /mediafigure >}}
 
-$$\begin{aligned} & 16\ \cancel{\text{g}\ \ce{Mg(OH)2}} \times \frac{1\ \cancel{\text{mol}\ \ce{Mg(OH)2}}}{58.3\ \cancel{\text{g}\ \ce{Mg(OH)2}}} \times \frac{2\ \cancel{\text{mol}\ \ce{NaOH}}}{1\ \cancel{\text{mol}\ \ce{Mg(OH)2}}} \\[6pt] & \times \frac{40.0\ \text{g}\ \ce{NaOH}}{\cancel{\text{mol}\ \ce{NaOH}}} = 22\ \text{g}\ \ce{NaOH} \end{aligned}$$
+$$\begin{aligned} & 16\ \cancel{\text{g}\ \ce{Mg(OH)2}} \times \frac{1\ \cancel{\text{mol}\ \ce{Mg(OH)2}}}{58.319\ \cancel{\text{g}\ \ce{Mg(OH)2}}} \times \frac{2\ \cancel{\text{mol}\ \ce{NaOH}}}{1\ \cancel{\text{mol}\ \ce{Mg(OH)2}}} \\[6pt] & \times \frac{39.997\ \text{g}\ \ce{NaOH}}{\cancel{\text{mol}\ \ce{NaOH}}} = 22\ \text{g}\ \ce{NaOH} \end{aligned}$$
+
+*Source note:* the molar masses in this section’s examples are computed from this book’s periodic table (Appendix A), so they differ in their last digits from the ones the source prints; the examples’ results are the same.
 
 {{< fillin
   question="What mass of gallium oxide, Ga₂O₃, can be prepared from 29.0 g of gallium metal? The equation for the reaction is $\ce{4Ga + 3O2 -> 2Ga2O3}$. Enter the mass of Ga₂O₃ in grams."
@@ -114,7 +116,7 @@ $$\ce{2C8H18 + 25O2 -> 16CO2 + 18H2O}$$
 {{< mediafigure src="chemistry/CNX_Chem_04_03_map3_img" kind="diagram" alt="Four boxes joined by arrows around three sides of a square. From a yellow box at the top left, “Mass of C₈H₁₈,” an arrow labeled “Molar mass” points right to a pink box, “Moles of C₈H₁₈.” From there an arrow labeled “Stoichiometric factor” points down to a pink box, “Moles of O₂,” and from there an arrow labeled “Molar mass” points left to a yellow box at the bottom left, “Mass of O₂.”" >}}
 {{< /mediafigure >}}
 
-$$\begin{aligned} & 702\ \cancel{\text{g}\ \ce{C8H18}} \times \frac{1\ \cancel{\text{mol}\ \ce{C8H18}}}{114.23\ \cancel{\text{g}\ \ce{C8H18}}} \times \frac{25\ \cancel{\text{mol}\ \ce{O2}}}{2\ \cancel{\text{mol}\ \ce{C8H18}}} \\[6pt] & \times \frac{32.00\ \text{g}\ \ce{O2}}{\cancel{\text{mol}\ \ce{O2}}} = 2.46 \times 10^{3}\ \text{g}\ \ce{O2} \end{aligned}$$
+$$\begin{aligned} & 702\ \cancel{\text{g}\ \ce{C8H18}} \times \frac{1\ \cancel{\text{mol}\ \ce{C8H18}}}{114.232\ \cancel{\text{g}\ \ce{C8H18}}} \times \frac{25\ \cancel{\text{mol}\ \ce{O2}}}{2\ \cancel{\text{mol}\ \ce{C8H18}}} \\[6pt] & \times \frac{31.998\ \text{g}\ \ce{O2}}{\cancel{\text{mol}\ \ce{O2}}} = 2.46 \times 10^{3}\ \text{g}\ \ce{O2} \end{aligned}$$
 
 {{< fillin
   question="What mass of CO is required to react with 25.13 g of Fe₂O₃ according to the equation $\ce{Fe2O3 + 3CO -> 2Fe + 3CO2}$? Enter the mass of CO in grams."
@@ -154,6 +156,8 @@ Airbags deploy upon impact to minimize serious injuries to passengers. (credit: 
 - **stoichiometry** — relationships between the amounts of reactants and products of a chemical reaction.
 
 ## Practice
+
+*Source note:* the source’s answer key for some exercises of this section was worked from atomic masses other than the ones in this book’s periodic table. The answers here are worked from this book’s table (Appendix A), so some differ from the source’s in their last digits.
 
 ### Explain the concept of stoichiometry as it pertains to chemical reactions
 
@@ -329,12 +333,10 @@ coefficients
 {{< fillin
   question="Determine the number of moles and the mass requested for the following reaction: The number of moles and the mass of oxygen formed by the decomposition of 1.252 g of silver(I) oxide. Enter the mass of O₂ in grams."
   answer="0.08644"
-  answerForm="sig-figs:4 last-digit:1 worked:0.08642"
+  answerForm="sig-figs:4 last-digit:1"
   answerDisplay="$0.08644\ \text{g}\ \ce{O2}$"
   hint="Find the moles as in the previous item, then convert them to mass with a molar mass computed from the formula."
 >}}
-
-*Source note:* the answer shown for this item is the source’s, which was computed from atomic masses with more digits than this book’s periodic table prints; an answer worked from the table is graded as correct.
 
 {{< fillin
   question="Determine the number of moles and the mass requested for the following reaction: The number of moles and the mass of magnesium carbonate, MgCO₃, required to produce 283 g of carbon dioxide. (MgO is the other product.) Enter the number of moles of MgCO₃."
@@ -370,17 +372,17 @@ coefficients
 
 {{< fillin
   question="Determine the number of moles and the mass requested for the following reaction: The number of moles and the mass of barium peroxide, BaO₂, needed to produce 2.500 kg of barium oxide, BaO (O₂ is the other product.) Enter the number of moles of BaO₂."
-  answer="16.31"
+  answer="16.30"
   answerForm="sig-figs:4 last-digit:1"
-  answerDisplay="$16.31\ \text{mol}\ \ce{BaO2}$"
+  answerDisplay="$16.30\ \text{mol}\ \ce{BaO2}$"
   hint="Write the balanced equation, convert the given mass to moles with the atomic or molar mass, then use the stoichiometric factor from the equation."
 >}}
 
 {{< fillin
   question="Determine the number of moles and the mass requested for the following reaction: The number of moles and the mass of barium peroxide, BaO₂, needed to produce 2.500 kg of barium oxide, BaO (O₂ is the other product.) Enter the mass of BaO₂ in grams."
-  answer="2762"
+  answer="2761"
   answerForm="sig-figs:4 last-digit:1"
-  answerDisplay="$2{,}762\ \text{g}\ \ce{BaO2}$"
+  answerDisplay="$2{,}761\ \text{g}\ \ce{BaO2}$"
   hint="Find the moles as in the previous item, then convert them to mass with a molar mass computed from the formula."
 >}}
 
@@ -397,9 +399,9 @@ coefficients
 
 {{< fillin
   question="Determine the number of moles and the mass requested for the following reaction, shown in the figure above. Enter the mass of C₂H₄ in grams."
-  answer="5.81"
+  answer="5.82"
   answerForm="sig-figs:3 last-digit:1"
-  answerDisplay="$5.81\ \text{g}\ \ce{C2H4}$"
+  answerDisplay="$5.82\ \text{g}\ \ce{C2H4}$"
   hint="Find the moles as in the previous item, then convert them to mass with a molar mass computed from the formula."
 >}}
 
@@ -431,7 +433,7 @@ mol HCl ⟶ mol GaCl₃
 {{< fillin
   question="Silver is often extracted from its ores as K[Ag(CN)₂] and then recovered by the reaction $\ce{2K[Ag(CN)2](aq) + Zn(s) ->}$ $\ce{2Ag(s) + Zn(CN)2(aq) + 2KCN(aq)}$. How many formula units of Zn(CN)₂ are produced by the reaction of 35.27 g of K[Ag(CN)₂]?"
   answer="5.337\times10^{22}"
-  answerForm="sig-figs:4 last-digit:1 worked:5.336\times10^{22}"
+  answerForm="sig-figs:4 last-digit:1"
   answerDisplay="$5.337 \times 10^{22}\ \text{formula units}$"
   hint="Grams of K[Ag(CN)₂] to moles with a molar mass computed from the formula, the stoichiometric factor, then Avogadro’s number."
 >}}
@@ -441,7 +443,7 @@ mol HCl ⟶ mol GaCl₃
 {{< fillin
   question="Silver is often extracted from its ores as K[Ag(CN)₂] and then recovered by the reaction $\ce{2K[Ag(CN)2](aq) + Zn(s) ->}$ $\ce{2Ag(s) + Zn(CN)2(aq) + 2KCN(aq)}$. The reaction uses 35.27 g of K[Ag(CN)₂]. What mass of Zn(CN)₂ is produced? Enter the mass of Zn(CN)₂ in grams."
   answer="10.41"
-  answerForm="sig-figs:4 last-digit:1 worked:10.40"
+  answerForm="sig-figs:4 last-digit:1"
   answerDisplay="$10.41\ \text{g}\ \ce{Zn(CN)2}$"
   hint="Grams of K[Ag(CN)₂] to moles, the stoichiometric factor, then moles to grams of Zn(CN)₂, with molar masses computed from the formulas."
 >}}
@@ -472,4 +474,4 @@ mol HCl ⟶ mol GaCl₃
 
 ---
 
-<small>This section is adapted from [Chemistry 2e, Section 4.3: Reaction Stoichiometry](https://openstax.org/books/chemistry-2e/pages/4-3-reaction-stoichiometry) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the source's equations and powers of ten typeset as KaTeX math, the formulas inside them set with mhchem, with unit cancellation set with a diagonal strike; four display equations broken into aligned rows to fit the column — the three ammonia stoichiometric factors (the third on its own row), and the results of the propane, milk-of-magnesia, and octane examples' calculations; the four worked examples set as prose, each followed by its Check Your Learning as an interactive fill-in (four in all), the printed answers serving as their keys rather than appearing as text, with a sentence added after a stem that leaves the unit open saying which quantity to enter and in what unit, as on the Practice fill-ins whose stems leave it open; cross-references to the figures and to other examples written as describing phrases (“shown in the photographs below”, “the flowchart below”, “shown in the photograph below”, “the previous example”, “the first two examples”); the three captioned figures re-encoded as WebP, the iodine and airbag pictures marked as photos and the flowchart as a diagram, with an extended description added to the flowchart, and all nine images’ alt texts written from the images — the source alts of the four calculation maps in the examples describe their boxes as two in a row or as joined by arrows that all point right, where the propane map has three boxes and the two mass maps turn their arrows down and back to the left, and the flowchart’s source alt names the volume-of-solution box for substance B as a second “Volume of substance B”; the six images without captions (four in the examples, two in the exercises) set without captions, as the source prints them; the Airbags feature box rendered as a callout; the molar unit after a number in the gallium chloride exercise set in italics (*M*), as the module sets it elsewhere; the 9 end-of-section exercises the source keys adapted into the interactive Practice block as 35 items — 33 fill-ins, 1 equation text-recall item, and 1 self-check — one item per lettered part and one fill-in per quantity: the two exercises that ask for the moles and mass requested for each reaction of an earlier exercise asked as two fill-ins per reaction, moles first, each with the lead-in restated in the singular (“Determine the number of moles and the mass requested for the following reaction”) and the reaction restated from the omitted exercise it refers to, verbatim with its data, its two drawn parts as the source’s images directly above their items; the copper(II) carbonate part’s moles keyed with the value the source’s answer prints for copper(II) oxide, the two amounts being equal; the gallium chloride exercise asked as a self-check for its outline and then two fill-ins for its calculations; the carborundum exercise asked as an equation item and then a fill-in; the silver exercise’s second part given the first part’s mass of K[Ag(CN)₂] in a sentence of its own, its “extracted from ores such as K[Ag(CN)₂]” corrected in both parts to “extracted from its ores as K[Ag(CN)₂]”, the compound being what cyanide makes of an ore and not an ore, and the “molecules” of zinc cyanide its first part asks for corrected to “formula units”, with a Source note after the first part; “(Take the 500 miles as three significant figures.)” added to the fuel-economy exercise’s stem, the count its key assumes; the self-check’s model answer the printed answer with a capital and a period added; the source’s keys for the moles of carbon dioxide formed from carbon and the moles of gallium chloride corrected, each with a Source note, where the source’s printed answers are not rounded by the significant-figure rules of Section 1.5; the source’s key for the mass of sodium nitrate written to the three significant figures its data give, its value unchanged, with a Source note; three items whose source answers were computed from atomic masses with more digits than this book’s periodic table prints take the table’s value as correct beside the source’s and show both, one of them with a Source note; two items added where the first objective has no keyed exercise: a multiple-choice item on the opening paragraph’s sentence on what coefficients provide, its options the two parts of an equation that paragraph names, and a cloze on the same paragraph’s sentence on the origin of the word stoichiometry; and the 9 exercises the source prints no answer for are omitted.</small>
+<small>This section is adapted from [Chemistry 2e, Section 4.3: Reaction Stoichiometry](https://openstax.org/books/chemistry-2e/pages/4-3-reaction-stoichiometry) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the source's equations and powers of ten typeset as KaTeX math, the formulas inside them set with mhchem, with unit cancellation set with a diagonal strike; four display equations broken into aligned rows to fit the column — the three ammonia stoichiometric factors (the third on its own row), and the results of the propane, milk-of-magnesia, and octane examples' calculations; the four worked examples set as prose, each followed by its Check Your Learning as an interactive fill-in (four in all), the printed answers serving as their keys rather than appearing as text, with a sentence added after a stem that leaves the unit open saying which quantity to enter and in what unit, as on the Practice fill-ins whose stems leave it open; cross-references to the figures and to other examples written as describing phrases (“shown in the photographs below”, “the flowchart below”, “shown in the photograph below”, “the previous example”, “the first two examples”); the three captioned figures re-encoded as WebP, the iodine and airbag pictures marked as photos and the flowchart as a diagram, with an extended description added to the flowchart, and all nine images’ alt texts written from the images — the source alts of the four calculation maps in the examples describe their boxes as two in a row or as joined by arrows that all point right, where the propane map has three boxes and the two mass maps turn their arrows down and back to the left, and the flowchart’s source alt names the volume-of-solution box for substance B as a second “Volume of substance B”; the six images without captions (four in the examples, two in the exercises) set without captions, as the source prints them; the Airbags feature box rendered as a callout; the molar unit after a number in the gallium chloride exercise set in italics (*M*), as the module sets it elsewhere; the 9 end-of-section exercises the source keys adapted into the interactive Practice block as 35 items — 33 fill-ins, 1 equation text-recall item, and 1 self-check — one item per lettered part and one fill-in per quantity: the two exercises that ask for the moles and mass requested for each reaction of an earlier exercise asked as two fill-ins per reaction, moles first, each with the lead-in restated in the singular (“Determine the number of moles and the mass requested for the following reaction”) and the reaction restated from the omitted exercise it refers to, verbatim with its data, its two drawn parts as the source’s images directly above their items; the copper(II) carbonate part’s moles keyed with the value the source’s answer prints for copper(II) oxide, the two amounts being equal; the gallium chloride exercise asked as a self-check for its outline and then two fill-ins for its calculations; the carborundum exercise asked as an equation item and then a fill-in; the silver exercise’s second part given the first part’s mass of K[Ag(CN)₂] in a sentence of its own, its “extracted from ores such as K[Ag(CN)₂]” corrected in both parts to “extracted from its ores as K[Ag(CN)₂]”, the compound being what cyanide makes of an ore and not an ore, and the “molecules” of zinc cyanide its first part asks for corrected to “formula units”, with a Source note after the first part; “(Take the 500 miles as three significant figures.)” added to the fuel-economy exercise’s stem, the count its key assumes; the self-check’s model answer the printed answer with a capital and a period added; the source’s keys for the moles of carbon dioxide formed from carbon and the moles of gallium chloride corrected, each with a Source note, where the source’s printed answers are not rounded by the significant-figure rules of Section 1.5; the source’s key for the mass of sodium nitrate written to the three significant figures its data give, its value unchanged, with a Source note; the worked examples and the exercise answers computed from this book’s periodic table (Appendix A, IUPAC’s abridged standard atomic weights) where the source uses four-figure atomic masses, with Source notes in the body and under the Practice heading saying so; two items added where the first objective has no keyed exercise: a multiple-choice item on the opening paragraph’s sentence on what coefficients provide, its options the two parts of an equation that paragraph names, and a cloze on the same paragraph’s sentence on the origin of the word stoichiometry; and the 9 exercises the source prints no answer for are omitted.</small>

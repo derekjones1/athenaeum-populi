@@ -87,21 +87,33 @@ test('a fillin packet carries the question and the answer shape — never the ke
   assert.equal(gradeAnswer(fillin, '').status, 'unrecognized');
 });
 
-test('a fillin packet names a worked value and never prints it: the form carries a second right answer', () => {
-  // Chemistry 4.3 (November 12, 2026). The first emit after `worked:<value>`
-  // landed printed "worked:0.08642" in the packet: the page mask blanked it
-  // and the packet's own `answerForm` field did not.
+test('a fillin packet carries the form and never the key', () => {
+  // Chemistry 4.3. For a day (November 12, 2026) a form could carry a second
+  // right answer, and the first emit printed it in the packet. A form is
+  // shape and allowance only now; the key and its display stay out.
   const fillin = exercisesIn(scratch()).find((exercise) => exercise.kind === 'fillin');
-  const silver = { ...fillin, params: { question: 'Enter the mass of O₂ in grams.', answer: '0.08644', answerForm: 'sig-figs:4 last-digit:1 worked:0.08642' } };
+  const silver = { ...fillin, params: { question: 'Enter the mass of O₂ in grams.', answer: '0.08644', answerDisplay: '$0.08644\\ \\text{g}$', answerForm: 'sig-figs:4 last-digit:1' } };
   const item = packetItem(silver);
-  assert.equal(item.answerForm, 'sig-figs:4 last-digit:1 worked:…');
+  assert.equal(item.answerForm, 'sig-figs:4 last-digit:1');
   assert.doesNotMatch(JSON.stringify(item), /0\.0864/);
-  assert.equal(packetItem({ ...silver, params: { ...silver.params, answerForm: 'worked:123.88' } }).answerForm, 'worked:…');
-  // The solver's answer is the independent reading of the masked value:
-  // worked from the book's table it agrees, and so does the source's key.
-  assert.equal(gradeAnswer(silver, '0.08642').status, 'agrees');
   assert.equal(gradeAnswer(silver, '0.08644').status, 'agrees');
   assert.equal(gradeAnswer(silver, '0.08634').status, 'disagrees');
+});
+
+test('a fillin the solver answers a unit from the key agrees, and is listed as inside the allowance only', () => {
+  // Chemistry 3.1 (November 12, 2026): five keys an author left on the
+  // source's atomic masses stood one unit from the table's value, and
+  // `last-digit:1` graded every solver's answer as agreeing with them.
+  const fillin = exercisesIn(scratch()).find((exercise) => exercise.kind === 'fillin');
+  const carbon = { ...fillin, params: { question: 'Enter the mass of oxygen in grams.', answer: '16.31', answerForm: 'sig-figs:4 last-digit:1' } };
+  assert.deepEqual(gradeAnswer(carbon, '16.31'), { status: 'agrees', detail: '16.31' });
+  const near = gradeAnswer(carbon, '16.30');
+  assert.equal(near.status, 'agrees');
+  assert.equal(near.allowance, 'solver: "16.30"; key: "16.31"');
+  // The same value written to other figures is a form matter, not a distance.
+  assert.equal(gradeAnswer(carbon, '16.310').allowance, undefined);
+  // An item graded to the digit has no allowance to hide in.
+  assert.equal(gradeAnswer({ ...carbon, params: { ...carbon.params, answerForm: 'sig-figs:4 last-digit:0' } }, '16.30').status, 'disagrees');
 });
 
 test('the residual is the fill-ins no mechanical reading confirmed and no record explains', () => {

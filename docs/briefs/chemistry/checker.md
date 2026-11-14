@@ -41,15 +41,21 @@ catch.
   a `sig-figs` count that is not the key's; a `last-digit` that the
   playbook's rule would set the other way (say which numbers in the
   calculation are measured factors); a stem that does not name the unit the
-  key is in. **Take every atomic mass from this book's periodic table**
-  (`appendices/a-the-periodic-table.md`): the answer a learner reaches from
-  it must grade `correct`. Report an item where it does not; an item
-  whose table value is not the source's key and carries no
-  `worked:<value>`; a `worked:<value>` that is not the value YOU reach
-  from the table by the module's own method (compute it before you read
-  the token); and a gap between the two that the lint's ceiling refuses
-  (that is an arithmetic defect, not table noise — playbook "Numeric
-  keys", "The source's value is the key"). Grade through the real grader
+  key is in. **A key that depends on an atomic mass IS this book's table's
+  value** (`appendices/a-the-periodic-table.md`, from
+  `data/chemistry/elements.json`) by the one method of playbook "Numeric
+  keys" ("A numeric key is what this book's own data give"): every molar
+  mass from `node tools/verify/molar-mass.mjs "<formula>"`, that rounded
+  sum carried unrounded, an earlier part's rounded answer not reused, only
+  the final result rounded. Compute it yourself before you read the key,
+  and report every key that is not that value — whether or not the source
+  prints it. **Report a rounding edge with both values**: where the
+  unrounded molar-mass sum, or an earlier part's rounded answer, would
+  change the final digit, give the key by the method and the other value.
+  A key a unit or two from the source's print is not a defect by itself
+  (the gate's `data-differs`); one further away is. There is one right
+  value per item: `worked:<value>` and `tolerance:<p>%` are retired, and an
+  item that declares either is a defect. Grade through the real grader
   (`node -e 'import("./assets/js/lib/math/check-answer.mjs").then(m=>console.log(m.checkAnswer("<typed>","<key>",{form:"<form>"})))'`):
   your own answer, the key, the unrounded readout, the answer with its
   unit, and every number the stem prints. Your answer and the key must be
@@ -179,6 +185,15 @@ stem shows it.
   against the referenced exercise in the CNXML, every number and formula.
 - **On a page that teaches a rule**, apply the rule to every reason its
   worked examples state.
+- **Every mass-dependent number in the body**, moved or not, follows from
+  the page's printed numbers end to end: each molar mass an example prints
+  is the tool's sum, and each later line follows from the line before it.
+  Recompute them all yourself; the author's rework is not the check
+  (playbook "Numeric keys", "The body's worked examples are recomputed
+  from the table"). Check that the section's Source note on recomputed
+  examples is the playbook's wording for what moved (a result, or only the
+  printed molar masses), directly after the first calculation that
+  changed.
 
 ## 5. Leaks, hints, footer
 
