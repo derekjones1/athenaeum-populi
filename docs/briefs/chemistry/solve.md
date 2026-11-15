@@ -78,6 +78,8 @@ those places.
   equation) takes the fractions that puts on the others, typed `1/2` or
   `3/2` (`H2 + 1/2O2 -> H2O`). Check an equation's atoms
   and charge on both sides before you write it down.
+  When it is `configuration`, write the answer string as each subshell followed by its count, a space between subshells, every subshell written out unless the question gives a noble-gas core: `1s2 2s2 2p6 3s2 3p1`.
+  When it is `ordering`, write the answer string as the members from first to last with `<` between them, each charge after `^`: `Si^4+ < Al^3+ < Ca^2+ < K^+` (a list without `<` or `>` is graded wrong).
 - **A `sortbins`:** the packet lists its `bins` and its `items` (the labels);
   the masked page prints neither. `answer` is a JSON object mapping EVERY
   label to one bin, both verbatim: `{"Uranium": "Metal", "Bromine":

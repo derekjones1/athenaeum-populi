@@ -115,7 +115,7 @@ import { readNumeral, withinPercent } from '../../assets/js/lib/math/significant
 import { loadElements } from '../lib/elements.mjs';
 import { massAsk, molarMass, statesNoNumber } from './molar-mass.mjs';
 import {
-  KEYED_ONLY_BOOKS, answerUnits, choiceLabels, closingUnit, glossaryAliases, isPartLabel, keyedUnits, plain as foldedPlain, printedNumerals, sortedExercise, twoUnitAnswer, unitFor, unlinked,
+  KEYED_ONLY_BOOKS, answerUnits, choiceLabels, closingUnit, glossaryAliases, isPartLabel, keyedUnits, memberAsked, plain as foldedPlain, printedAbbreviations, printedNumerals, sortedExercise, twoUnitAnswer, unitFor, unlinked,
 } from '../lib/keyed-units.mjs';
 
 /** A page question must share this much of a source problem's vocabulary to
@@ -1231,6 +1231,69 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     erratum: 3086,
     reason: 'the source solution prints "25 kJ mol^−1" for the enthalpy of solution of NH4NO3 under the ice-pack example\'s conditions: it divides the example\'s rounded 1.0 kJ, where the heat carried unrounded (1023.9 J) gives 25.53 kJ/mol, so the fill-in keys 26',
   },
+  {
+    page: 'content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/01-electromagnetic-energy.md',
+    exercise: 'fs-idp28548400',
+    kind: 'key',
+    erratum: 3092,
+    reason: 'the source solution prints "E = 9.502 × 10^−15 J" for the X-ray of wavelength 2.090 × 10^−11 m: it is h times the frequency already rounded to 1.434 × 10^19 s^−1, where hc/λ carried unrounded is 9.5047 × 10^−15 J, so the energy fill-in keys 9.505; the frequency key is the source\'s',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/02-the-bohr-model.md',
+    exercise: 'fs-idp247735616#check',
+    kind: 'key',
+    erratum: 3102,
+    reason: 'the Check Your Learning answer prints "−6.053 × 10^–20 J" for the electron promoted to n = 6, from the source\'s k = 2.179 × 10^−18 J; this book\'s Rydberg constant in joules (Appendix D, 2.1798724 × 10^−18) is 2.180 × 10^−18 J at four figures, and −k/36 = −6.0556 × 10^−20, so the fill-in keys −6.056',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/02-the-bohr-model.md',
+    exercise: 'fs-idp30549440#check',
+    kind: 'key',
+    erratum: 3102,
+    reason: 'the Check Your Learning answer prints "6.198 × 10^–19 J; 3.205 × 10^−7 m" for He+ falling from n = 5 to n = 3, from the source\'s k = 2.179 × 10^−18 J; with this book\'s 2.180 × 10^−18 J the energy is 6.2009 × 10^−19 J and the wavelength 3.2035 × 10^−7 m, so the fill-ins key 6.201 and 3.204',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/02-the-bohr-model.md',
+    exercise: 'fs-idp171106816',
+    kind: 'key',
+    erratum: 3102,
+    reason: 'the source solution prints "−8.716 × 10^−18 J" for the lowest energy of the electron in He+, −4k from the source\'s k = 2.179 × 10^−18 J; with this book\'s 2.180 × 10^−18 J it is −8.720 × 10^−18, so the fill-in keys −8.720',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/02-the-bohr-model.md',
+    exercise: 'fs-idp44268800',
+    kind: 'key',
+    erratum: 3102,
+    reason: 'the source solution prints "−3.405 × 10^−20 J" for an electron with n = 8 in hydrogen, −k/64 from the source\'s k = 2.179 × 10^−18 J; with this book\'s 2.180 × 10^−18 J it is −3.40625 × 10^−20, so the fill-in keys −3.406',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/02-the-bohr-model.md',
+    exercise: 'fs-idp21050416',
+    kind: 'key',
+    erratum: 3102,
+    reason: 'the source solution prints "2.856 eV" for the photon of the n = 5 to n = 2 transition in hydrogen, from the source\'s k = 2.179 × 10^−18 J; with this book\'s 2.180 × 10^−18 J it is 4.578 × 10^−19 J, 2.8577 eV at 1.602 × 10^−19 J/eV, so the fill-in keys 2.858',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/02-the-bohr-model.md',
+    exercise: 'fs-idp90797744',
+    kind: 'key',
+    erratum: 3102,
+    reason: 'the source solution prints "1.471 × 10^−17 J" for the photon of the n = 2 to n = 1 transition in Li2+, from the source\'s k = 2.179 × 10^−18 J; with this book\'s 2.180 × 10^−18 J it is 14.715 × 10^−18 exactly, a tie that the rounding rule of Appendix B takes up to 1.472 × 10^−17, so the fill-in keys 1.472',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/02-the-bohr-model.md',
+    exercise: 'fs-idm7154736',
+    kind: 'key',
+    erratum: 3104,
+    reason: 'the source solution prints "33.9 Å" for the radius of the n = 8 orbit in hydrogen: with a0 = 5.292 × 10^−11 m and the exact n, 64 a0 = 33.8688 Å, which has four figures, so the fill-in keys 33.87',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/01-electromagnetic-energy.md',
+    exercise: 'fs-idm104859984(a)',
+    kind: 'solution',
+    erratum: 3093,
+    reason: 'the source solution prints "The color of (a) is red" for the cesium line of frequency 3.45 × 10^14 Hz, which is 869 nm, beyond the visible range of every figure in the section, so the self-check\'s model answer says the line is in the infrared and not seen as a color',
+  },
 ]);
 
 /* ---- source side ---------------------------------------------------------- */
@@ -2202,6 +2265,28 @@ export const ELEMENT_BY_NAME = new Map(('hydrogen H helium He lithium Li berylli
   + 'polonium Po astatine At radon Rn francium Fr radium Ra actinium Ac thorium Th uranium U plutonium Pu')
   .split(' ').reduce((pairs, word, index, words) => (index % 2 ? pairs : [...pairs, [word, words[index + 1]]]), []));
 
+/** A list member as its characters: "As^{−}", "As –", and "As⁻" are "as-". */
+const tightMember = (value) => String(value ?? '').normalize('NFKC').replace(/[\s${}^_.]/g, '').replace(/[−–]/g, '-').toLowerCase();
+
+/**
+ * An answer that speaks of two or more elements in turn, each sentence
+ * opening with the element's symbol — "Co has 27 protons, 27 electrons, and
+ * 33 neutrons: 1s²…3d⁷. I has 53 protons, …" (6.4) — narrowed to the
+ * sentence of the ONE element an item's closing sentence names by name
+ * ("Enter the number of neutrons in an atom of iodine-131."), or the whole
+ * answer when it is not that shape.
+ */
+export function elementSegment(answer, closing) {
+  const text = String(answer ?? '');
+  const sentences = text.split(/(?<=\.)\s+(?=[A-Z][a-z]?\s+(?:has|is|are)\b)/);
+  if (sentences.length < 2) return text;
+  const opening = sentences.map((sentence) => /^([A-Z][a-z]?)\s+(?:has|is|are)\b/.exec(sentence)?.[1] ?? null);
+  if (opening.some((symbol) => !symbol) || new Set(opening).size !== opening.length) return text;
+  const folded = ` ${foldedPlain(closing)} `;
+  const named = [...ELEMENT_BY_NAME].filter(([name, symbol]) => folded.includes(` ${name} `) && opening.includes(symbol));
+  return named.length === 1 ? sentences[opening.indexOf(named[0][1])] : text;
+}
+
 /** A label set before an equation with a colon ("complete ionic equation: …") or after it in parentheses ("… (net)", "… ( molecular )"); a state symbol, of one or two letters, is never one, nor a condition "(in base)". */
 const EQUATION_LABEL = /\(\s*([a-z]{3,}(?:\s+[a-z]{3,})*)\s*\)|\b([a-z]{3,}(?:\s+[a-z]{3,})*)\s*:/g;
 
@@ -2317,6 +2402,67 @@ function heldNumber(answer, question, key) {
   const candidates = exact.length ? exact : ofKind;
   return candidates.some((entry) => sameNumeral(entry.numeral, key)) ? null
     : { what: `the ${kind}${exact.length ? ` of ${ofWhat[1]}` : ''}`, numerals: candidates.map((entry) => entry.numeral) };
+}
+
+/**
+ * An answer with the labels that are not numbers taken out, for a fill-in's
+ * reading: a subshell's shell number before its letter and "orbital",
+ * "subshell", or a count ("3 d orbitals", "4 s^{2}" — the five degenerate 3d
+ * orbitals answer five, not three), and an old group label in parentheses
+ * ("15 (5A)").
+ */
+export function numbersOnly(answer) {
+  return String(answer ?? '')
+    .replace(/(?<![\w.])[1-7]\s?[spdf](?=\s*(?:orbitals?|subshells?)\b|\s*\^\{?\d)/g, ' ')
+    .replace(/\(\s*\d+\s*[AB]\s*\)/g, ' ');
+}
+
+const CARRIED_STOP = new Set(['the', 'a', 'an', 'of', 'is', 'are', 'it', 'its', 'this', 'that', 'and']);
+
+/**
+ * The word(s) a selfcheck's model answer carries of a multi-quantity answer
+ * (see `judgeKeyedUnit`), or null: the part's answer must print at least
+ * one number and one word piece, and every word the model answer adds to
+ * the question must be one of the part's own word pieces.
+ */
+export function carriedWord(unit, units, item) {
+  const label = unit.label;
+  const siblings = units.filter((other) => other.group === unit.group && other !== unit).map((other) => other.answer).join('; ');
+  let said = String(unit.answer ?? '');
+  if (label) {
+    // A sibling's clause leaves this part's answer; this part's clause, wherever printed, joins it.
+    said = said.replace(new RegExp(`\\((?!${label}\\))[a-z]\\)\\s+is\\s+[^;.]+`, 'g'), ' ');
+    said += ` ${[...`${unit.answer}; ${siblings}`.matchAll(new RegExp(`\\(${label}\\)\\s+is\\s+([^;.]+)`, 'g'))].map((match) => match[1]).join(' ')}`;
+  }
+  if (!printedNumerals(said).length) return null;
+  const words = (text) => foldedPlain(text).split(' ').filter((word) => word && !/^\d+$/.test(word) && !CARRIED_STOP.has(word));
+  const asked = new Set(words(item.question));
+  const added = words(item.model).filter((word) => !asked.has(word));
+  // The word pieces: the answer with each number and the unit after it taken out.
+  const pieces = new Set(words(said.replace(/[−–-]?\d[\d.,]*(?:\s*[×x]\s*10\s*\^\{[^}]*\})?(?:\s+[^\s;]+)?/g, ' ')));
+  return added.length && added.every((word) => pieces.has(word)) ? added.join(' ') : null;
+}
+
+/** The closing sentence of a question, a typing sentence set aside ("Type each subshell …"): the one that says which. */
+export function askedClosing(question) {
+  const sentences = String(question ?? '').split(/(?<=[.?!][)”’"]?)\s+/).filter((sentence) => !/^Type\b/.test(sentence.trim()));
+  return sentences.pop() ?? '';
+}
+
+/**
+ * Of several printed formulas, the one with the charge a closing sentence
+ * names — "Enter the symbol of the ion with a +1 charge." → of "Rb⁺, Se²⁻"
+ * the one with charge +1 (6.4) — when exactly one has it.
+ */
+function byCharge(entries, closing) {
+  const said = /([+−–-])\s?(\d+)\s+charge\b/.exec(String(closing));
+  if (!said) return null;
+  const charge = Number(said[2]) * (said[1] === '+' ? 1 : -1);
+  const holding = entries.filter((entry) => {
+    const tail = /\^(\d*)([+-])$/.exec(entry.canon);
+    return tail && Number(tail[1] || 1) * (tail[2] === '+' ? 1 : -1) === charge;
+  });
+  return holding.length === 1 ? holding : null;
 }
 
 function byElement(entries, closing) {
@@ -2541,7 +2687,7 @@ export function judgeKeyedSortbins(item, units, { aliases = [] } = {}) {
  *   any             'unkeyed-unit'   the unit has NO printed answer — the
  *                                    book does not render it
  */
-export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = null } = {}) {
+export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = null, abbreviations = [] } = {}) {
   if (!['multiplechoice', 'fillin', 'selfcheck', 'textin'].includes(linkedItem.type)) return null;
   // A link is not a word of the stem: the item is read without its targets.
   const item = { ...linkedItem, question: unlinked(linkedItem.question) };
@@ -2566,6 +2712,20 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
       // CH") is read without them: a word of three letters or more is never
       // an element's symbol.
       const key = chemCanon(item.answer, item.form);
+      // Several configurations to one part, each in the sentence of its
+      // element ("Co has …: 1s²…3d⁷. I has …: …5p⁵", 6.4): the item whose
+      // closing sentence names one element by name ("Enter the electron
+      // configuration of cobalt-60.") is held to THAT one's.
+      if (item.form === 'configuration') {
+        const segment = elementSegment(unit.answer, askedClosing(item.question));
+        if (segment !== unit.answer) {
+          const held = segment.split(/:\s*/).map((piece) => chemCanon(piece.replace(/\.\s*$/, ''), 'configuration')).filter(Boolean);
+          if (!held.includes(key)) {
+            return { ...differs, detail: `textin keys ${JSON.stringify(item.answer)} for the element its closing sentence names, whose configuration source ${unit.id} gives in ${JSON.stringify(segment.slice(0, 120))}` };
+          }
+          return { status: 'confirmed', exercise };
+        }
+      }
       // A piece the answer introduces with a colon ("Al will form a cation
       // with a charge of 3+: Al³⁺", 2.6) is also read after it.
       // A piece labelled AFTER its formula ("Mg₃Si₂H₃O₈ (empirical formula),
@@ -2613,15 +2773,20 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
           const canon = chemCanon(printed, 'formula');
           if (canon && !listed.some((entry) => entry.canon === canon)) listed.push({ canon, printed });
         }
-        const held = listed.length >= 2 ? byElement(listed, closing) : null;
+        const held = listed.length >= 2 ? byElement(listed, closing) ?? byCharge(listed, askedClosing(item.question)) : null;
         if (held && held[0].canon !== key) {
           return { ...differs, detail: `textin keys ${JSON.stringify(item.answer)} for the formula its closing sentence names, which source ${unit.id} gives as ${JSON.stringify(held[0].printed)}` };
         }
       }
       return { status: 'confirmed', exercise };
     }
-    // A name or a word: the answer prints it, plural fold included.
+    // A name or a word: the answer prints it, plural fold included — or
+    // prints the abbreviation the module itself gives the name in
+    // parentheses ("first ionization energy (IE₁)", 6.5's "O, IE₁"), read
+    // through `printedAbbreviations`.
+    const short = abbreviations.filter(([long]) => foldedPlain(long) === foldedPlain(item.answer)).map(([, abbreviation]) => foldedPlain(abbreviation).replace(/\s+/g, ''));
     const answer = ` ${foldedPlain(unit.answer)} `;
+    if (short.length && unit.answer.split(/[,;]/).some((piece) => short.includes(foldedPlain(piece).replace(/\s+/g, '')))) return { status: 'confirmed', exercise };
     const key = foldedPlain(item.answer);
     const forms = [key, ...foldedForms(key)].filter(Boolean);
     if (!forms.some((form) => answer.includes(` ${form} `))) return differs;
@@ -2656,6 +2821,15 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
       exercise,
       detail: `source ${unit.id} answers ${JSON.stringify(unit.answer.slice(0, 140))}, naming part (${unit.chosen}) ${JSON.stringify(chosen.text)}; page keys ${JSON.stringify(item.answer)}${keyed ? `, part (${keyed})` : ''}`,
     };
+  }
+  // One member of an unlettered list asked yes or no (6.5, isoelectronic
+  // with Br⁺): yes when the answer lists the member, no when it does not.
+  const member = item.type === 'multiplechoice' ? memberAsked(unit, item.question, item) : null;
+  if (member) {
+    const listed = unit.answer.split(/,|\s(?:and|or)\s/).map((piece) => tightMember(piece)).filter(Boolean);
+    const wanted = listed.includes(tightMember(member)) ? 'yes' : 'no';
+    if (foldedPlain(item.answer) === wanted) return { status: 'confirmed', exercise };
+    return { status: 'key-differs', exercise, detail: `source ${unit.id} answers ${JSON.stringify(unit.answer.slice(0, 100))}, which ${wanted === 'yes' ? 'lists' : 'does not list'} ${JSON.stringify(member)}; page keys ${JSON.stringify(item.answer)}` };
   }
   if (item.type === 'multiplechoice') {
     // Two answers that hold several choices at once, each narrowed to the
@@ -2720,7 +2894,27 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
   if (item.type === 'fillin') {
     const key = keyNumeral(item.answer);
     if (!key) return { status: 'symbolic', exercise };
-    const printed = printedNumerals(unit.answer);
+    // What the fill-in is held to: the sentence of the element its closing
+    // sentence names, where the answer speaks of two in turn (6.4's cobalt
+    // and iodine), with the labels that are no numbers taken out — a
+    // subshell's shell number ("The five degenerate 3d orbitals", 6.3) and
+    // an old group label ("15 (5A)", 6.5).
+    const said = numbersOnly(elementSegment(unit.answer, askedClosing(item.question)));
+    // Several counts to one part, each after a letter label ("x. 2, y. 2,
+    // z. 2", 6.3's three orbitals): the item whose closing sentence names
+    // one label ("Enter the number for the orbital of type (x).") is held to
+    // that label's number.
+    const lettered = [...said.matchAll(/(?:^|[,;]\s*)([a-z])\.\s+([−–-]?\d+(?:\.\d+)?)(?=\s*(?:[,;]|$))/g)].map((match) => ({ label: match[1], numeral: printedNumerals(match[2])[0] }));
+    if (new Set(lettered.map((entry) => entry.label)).size >= 2) {
+      const asked = [...new Set([...askedClosing(item.question).matchAll(/\(([a-z])\)/g)].map((match) => match[1]))].filter((label) => lettered.some((entry) => entry.label === label));
+      if (asked.length !== 1) {
+        return { status: 'key-differs', exercise, detail: `source ${unit.id} answers one number per label (${JSON.stringify(said.slice(0, 80))}); the item's closing sentence must name the one it keys ("Enter the number for the orbital of type (x).")` };
+      }
+      const held = lettered.find((entry) => entry.label === asked[0]);
+      return sameNumeral(held.numeral, key) ? { status: 'confirmed', exercise }
+        : { status: 'key-differs', exercise, detail: `fillin keys ${JSON.stringify(item.answer)} for (${asked[0]}), which source ${unit.id} gives as ${held.numeral.printed} (${JSON.stringify(said.slice(0, 80))})` };
+    }
+    const printed = printedNumerals(said);
     // A formula mass asked for itself is the table's sum, exactly: the one
     // key of the book a tool can compute, so it is computed.
     const formula = elements ? massAsk(item.question, elements) : null;
@@ -2740,7 +2934,7 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
     // them is printed in the segment. The item whose closing sentence asks
     // for one by name ("Enter the number of neutrons.") is keyed with THAT
     // number: a swapped pair is a wrong key the printed-number test passes.
-    const named = [...unit.answer.matchAll(/([−–-]?\d[\d.,]*)\s+([a-z]{4,})/gi)]
+    const named = [...said.matchAll(/([−–-]?\d[\d.,]*)\s+([a-z]{4,})/gi)]
       .map((match) => ({ numeral: printedNumerals(match[1])[0], name: match[2].toLowerCase().replace(/s$/, '') }))
       .filter((entry) => entry.numeral);
     const names = [...new Set(named.map((entry) => entry.name))];
@@ -2794,7 +2988,7 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
       }
       return { status: 'confirmed', exercise };
     }
-    const held = heldNumber(unit.answer, item.question, key);
+    const held = heldNumber(said, item.question, key);
     // A named amount is held to ITS number: "16.31 mol BaO₂, 2762 g BaO₂"
     // answers the moles asked with 16.31, and a key of 16.30 from this
     // book's masses is a data difference from that number and no other.
@@ -2806,7 +3000,7 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
     if (!same.length) {
       // A count the source spells out: "(a) two; (b) three".
       const value = Number(`${key.negative ? '-' : ''}${key.mantissa}e${key.exponent}`);
-      const spelled = numberWords(unit.answer);
+      const spelled = numberWords(said);
       if (spelled.includes(value)) return { status: 'confirmed', exercise };
       if (!printed.length && !spelled.length) return { status: 'unkeyed', exercise };
       const differs = dataDiffers(printed);
@@ -2853,6 +3047,25 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
       exercises: [{ id: unit.id, problem: item.question, solution: foldedPlain(unit.answer), options: [] }],
     });
     if (folded.status === 'verbatim' || folded.status === 'reworded') judged = folded;
+  }
+  // The WORD of an answer whose other pieces are quantities the fill-ins
+  // above it key ("ν = …; λ = 656.3 nm; …; red", 6.1's surgical laser; the
+  // cesium lines' "The color of (a) is red; (b) is blue."): a selfcheck that
+  // carries only the word ("The color of the emitted light is red.") is the
+  // source's answer for the piece it asks. Held to that piece: every word of
+  // the model answer that the question does not print must be one the
+  // part's own answer prints — a sibling's "(a) is red" set aside, its own
+  // "(b) is blue" fetched from the sibling segment that holds it.
+  if (item.type === 'selfcheck') {
+    const own = carriedWord(unit, units, item);
+    if (own && judged.status === 'diverges') return { status: 'reworded', exercise, coverage: judged.coverage, detail: `the word "${own}" of a multi-quantity answer, the quantities keyed by the fill-ins` };
+    // A part's segment that also answers a sibling ("(b) … The color of (a)
+    // is red; (b) is blue."): a model answer carrying the sibling's word and
+    // not its own is the sibling's answer, however many words it shares.
+    const theirs = unit.label ? [...String(unit.answer).matchAll(new RegExp(`\\((?!${unit.label}\\))[a-z]\\)\\s+is\\s+([^;.]+)`, 'g'))].map((match) => foldedPlain(match[1])) : [];
+    if (!own && theirs.some((word) => ` ${foldedPlain(item.model)} `.includes(` ${word} `))) {
+      return { status: 'key-differs', exercise, detail: `the model answer gives a sibling part's answer (${theirs.join(', ')}); source ${unit.id} answers ${JSON.stringify(unit.answer.slice(0, 120))}` };
+    }
   }
   // A model answer that prints an equation the source does not — 4.2's
   // corrected "Na₂CO₃ + H₂S ⟶ NaHS + NaHCO₃" for the source's "… ⟶ Na₂S +
@@ -3018,6 +3231,7 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
     // transcribes no unit falls through to the ordinary judges below.
     const units = KEYED_ONLY_BOOKS.includes(section.book) ? keyedUnits(moduleXml) : null;
     const aliases = units ? glossaryAliases(moduleXml) : [];
+    const abbreviations = units ? printedAbbreviations(moduleXml) : [];
     const elements = ELEMENT_DATA_BOOKS.includes(section.book) ? (elementData ??= loadElements(repositoryRoot)) : null;
     const pageMarkdown = readFileSync(pagePath, 'utf8');
     const differencesBefore = differences.length;
@@ -3030,7 +3244,7 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
       // `judgeSortbins`'s table reading below.
       const keyedVerdict = !units ? null
         : item.type === 'sortbins' ? judgeKeyedSortbins(item, units, { aliases })
-          : judgeKeyedUnit(item, units, { aliases, elements });
+          : judgeKeyedUnit(item, units, { aliases, elements, abbreviations });
       if (keyedVerdict) {
         // A key the book corrects on purpose stays a disclosed correction,
         // with its erratum, however near the source's print it lands.

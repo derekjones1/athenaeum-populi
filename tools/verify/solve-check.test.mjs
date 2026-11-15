@@ -397,3 +397,15 @@ test('a graph-mode multiple choice is keyed by answerIndex and graded by option 
   assert.equal(gradeAnswer(mc, optionsOf(mc)[1]).status, 'agrees');
   assert.equal(gradeAnswer(mc, '7').status, 'unrecognized');
 });
+
+test('a solver\'s configuration or ordering is graded by the real reader: core and order of subshells free, direction not (Chemistry 2e chapter 6)', () => {
+  const item = (answer, answerForm) => ({ kind: 'textin', params: { question: 'q', answer, answerForm } });
+  const config = item('1s²2s²2p⁶3s²3p⁶4s²3d⁶', 'configuration');
+  assert.equal(packetItem({ ...config, hash: 'h', path: 'p', line: 1 }).answerForm, 'configuration');
+  assert.equal(gradeAnswer(config, '1s2 2s2 2p6 3s2 3p6 3d6 4s2').status, 'agrees');
+  assert.equal(gradeAnswer(config, '[Ar]4s2 3d6').status, 'agrees', 'the core form is the key in another form');
+  assert.equal(gradeAnswer(config, '1s2 2s2 2p6 3s2 3p6 4s2 3d7').status, 'disagrees');
+  const order = item('Rb < Li < N < F', 'ordering');
+  assert.equal(gradeAnswer(order, 'F > N > Li > Rb').status, 'agrees');
+  assert.equal(gradeAnswer(order, 'F < N < Li < Rb').status, 'disagrees');
+});

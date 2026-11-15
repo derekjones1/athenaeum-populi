@@ -42,6 +42,13 @@ export const CONTEXT_PHRASE_RE = new RegExp(
   + `|(?:using|use|from|refer to|according to|based on) (?:(?:the|this) )?(?:(?:same|following|preceding) )?${CONTEXT_NOUN}s?\\b(?! of| that| in)`
   + `|(?:in|on) (?:the|this) (?:(?:same|following|preceding) )?${PICTURE_NOUN}s?\\b(?! of| that| in)`
   + `|(?:the|this) same ${CONTEXT_NOUN}s?\\b`
+  // A figure named by what it shows and placed AFTER its item: "the figure
+  // of the photons a hydrogen atom absorbs and emits, below" (Chemistry
+  // 6.2) — the form the Chemistry playbook gives a figure the source places
+  // after its item. "Below" only: the same form with "above" (5.2's
+  // calorimeter) would bind 18 finished items anew and strand their ledger
+  // records, measured November 15, 2026.
+  + `|(?:the|this) ${PICTURE_NOUN} of [^.?!;]{1,90}?,? below\\b`
   + ')',
   'i',
 );
@@ -100,7 +107,11 @@ export function referencesContext({ kind, params = {}, inner = '' }) {
   const text = [params.question || '', params.hint || '', scanInner ? inner : ''].join(' ');
   const m = CONTEXT_PHRASE_RE.exec(text);
   if (!m) return null;
-  const direction = /\bbelow\b/i.test(text) && !/\babove\b/i.test(text) ? 'below' : 'above';
+  // A figure named with a describing phrase says its own direction, whatever
+  // else the text says ("…, below" beside a hint's "the value of k given above").
+  const named = /^(?:the|this) \S+ of .*?(below)$/i.exec(m[0]);
+  const direction = named ? named[1].toLowerCase()
+    : /\bbelow\b/i.test(text) && !/\babove\b/i.test(text) ? 'below' : 'above';
   return { phrase: m[0], direction };
 }
 

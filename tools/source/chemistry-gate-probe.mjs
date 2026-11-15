@@ -23,8 +23,10 @@
 import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { answerUnits, keyedUnits, twoUnitAnswer } from '../lib/keyed-units.mjs';
+import { answerUnits, keyedUnits, listMembers, printedAbbreviations, twoUnitAnswer } from '../lib/keyed-units.mjs';
 import { ELEMENT_BY_NAME, answerEquations, judgeKeyedUnit, labelledFormulas } from '../verify/verify-source-keys.mjs';
+import { chemCanon } from '../../assets/js/lib/text/check-chem.mjs';
+import { CONFIGURATION_CLOSING, ORDERING_CLOSING } from '../lint/lints-leaks.mjs';
 import { coverage, sourceExercises } from '../verify/verify-source-coverage.mjs';
 import { chapters, shapeOf } from './chemistry-shapes.mjs';
 
@@ -58,9 +60,11 @@ export const askOf = (unit, units = []) => {
  * set (keyed-units.mjs `closedSet`, 3.1) as ONE multiple choice whose
  * options are the parts.
  */
-export function itemsFor(unit, units) {
+export function itemsFor(unit, units, { abbreviations = [] } = {}) {
   const answer = unit.answer.replace(/\s+/g, ' ').trim().replace(/[.;]$/, '');
   const base = { question: askOf(unit, units), figure: figureOf(unit) };
+  const chapterSix = chapterSixItems(unit, answer, base, abbreviations);
+  if (chapterSix) return chapterSix;
   if (unit.choices) {
     const options = unit.choices.map((choice) => choice.text);
     return [{ ...base, type: 'multiplechoice', options, answer: options[unit.choices.findIndex((choice) => choice.label === unit.chosen)] }];
@@ -83,6 +87,81 @@ export function itemsFor(unit, units) {
   if (several.length) return several;
   const item = itemFor(unit, answer, base);
   return item ? [item] : [];
+}
+
+/** The stem closed with its punctuation, then `closing`. */
+const closed = (question, closing) => `${/[.?!:]$/.test(question.trim()) ? question.trim() : `${question.trim()}.`} ${closing}`;
+const SYMBOL_NAME = new Map([...ELEMENT_BY_NAME].map(([name, symbol]) => [symbol, name]));
+
+/**
+ * Chapter 6's shapes (docs/subjects/chemistry.md "Exercises"), built as the
+ * page carries them, or null: an electron configuration, an ordering, a
+ * subshell, one count per label ("x. 2, y. 2, z. 2"), a count said beside
+ * labels that are no numbers ("n = 4", "the five degenerate 3d orbitals"),
+ * the members of the stem's list asked yes or no, two formulas after an
+ * "or", a formula and a quantity's symbol ("O, IE₁"), two ions told apart
+ * by charge, and counts and a configuration per element.
+ */
+function chapterSixItems(unit, answer, base, abbreviations) {
+  const { shape, key } = shapeOf(answer, unit.stem);
+  if (shape === 'ordering' && /</.test(answer)) return [{ ...base, question: closed(base.question, ORDERING_CLOSING), type: 'textin', answer, form: 'ordering' }];
+  if (shape === 'subshell') return [{ ...base, type: 'textin', answer: answer.replace(/\s/g, ''), form: '' }];
+  if (shape === 'configuration' && chemCanon(answer, 'configuration')) {
+    return [{ ...base, question: closed(base.question, CONFIGURATION_CLOSING), type: 'textin', answer, form: 'configuration' }];
+  }
+  if (shape === 'configuration') {
+    // "Co has 27 protons, 27 electrons, and 33 neutrons: 1s²…. I has …"
+    const items = [];
+    for (const sentence of answer.split(/(?<=\.)\s+(?=[A-Z][a-z]?\s+has\b)/)) {
+      const name = SYMBOL_NAME.get(/^([A-Z][a-z]?)\s+has\b/.exec(sentence)?.[1]);
+      if (!name) return null;
+      for (const [, count, what] of sentence.matchAll(/(\d+)\s+(protons|neutrons|electrons)\b/g)) {
+        items.push({ ...base, question: closed(base.question, `Enter the number of ${what} in an atom of ${name}.`), type: 'fillin', answer: count, form: 'whole-number' });
+      }
+      const configuration = sentence.split(/:\s*/).pop().replace(/\.$/, '');
+      items.push({ ...base, question: closed(base.question, `Enter the electron configuration of ${name}. ${CONFIGURATION_CLOSING}`), type: 'textin', answer: configuration, form: 'configuration' });
+    }
+    return items;
+  }
+  const labels = answer.split(/,\s*/);
+  if (labels.length >= 2 && labels.every((piece) => /^[a-z]\.\s+[−–-]?\d+$/.test(piece))) {
+    return labels.map((piece) => ({ ...base, question: closed(base.question, `Enter the number for the orbital of type (${piece[0]}).`), type: 'fillin', answer: piece.split(/\s+/).pop(), form: 'whole-number' }));
+  }
+  if (shape === 'number' && key !== undefined && /^\d+$/.test(String(key))) return [{ ...base, type: 'fillin', answer: String(key), form: 'whole-number' }];
+  const pieces = answer.split(/,|\s(?:and|or)\s/).map((piece) => piece.trim()).filter(Boolean);
+  const members = listMembers(unit.stem);
+  const named = pieces.map((piece) => chemCanon(piece, 'formula'));
+  if (members.length >= 2 && pieces.length >= 2 && pieces.length < members.length && named.every(Boolean)) {
+    const lead = unit.stem.slice(0, unit.stem.lastIndexOf(':')).replace(/^Which (atom and\/or ion|[a-z ]+?) is(?: \(are\))?/i, 'Is the following atom or ion');
+    return members.map((member) => ({
+      ...base, question: `${lead}? ${member}`, type: 'multiplechoice', options: ['yes', 'no'],
+      answer: named.includes(chemCanon(member, 'formula')) ? 'yes' : 'no',
+    }));
+  }
+  if (/\sor\s/.test(answer) && named.every(Boolean) && pieces.length >= 2) {
+    return [{ ...base, question: closed(base.question, 'Enter the element’s symbol.'), type: 'textin', answer: pieces[0], accept: pieces.slice(1).join('|'), form: 'formula' }];
+  }
+  // A formula and a quantity's symbol the module abbreviates ("O, IE₁").
+  const symbol = pieces.find((piece) => !chemCanon(piece, 'formula') && /^[A-Z]{1,3}\s*_?\s*\d$/.test(piece));
+  if (symbol && pieces.length === 2) {
+    const name = abbreviations.find(([, abbreviation]) => abbreviation === symbol.replace(/[\s_]/g, ''));
+    const formula = pieces.find((piece) => piece !== symbol);
+    if (name && chemCanon(formula, 'formula')) {
+      return [
+        { ...base, question: closed(base.question, 'Enter the element’s symbol.'), type: 'textin', answer: formula, form: 'formula' },
+        { ...base, question: closed(base.question, 'Enter the name of the energy.'), type: 'textin', answer: name[0], accept: name[1], form: '' },
+      ];
+    }
+  }
+  // Ions told apart by their charges ("Rb⁺, Se²⁻" under "Which ion with a +1 charge … Which ion with a –2 charge …").
+  const charges = named.map((canon) => /\^(\d*)([+-])$/.exec(canon ?? ''));
+  if (pieces.length >= 2 && charges.every(Boolean) && new Set(charges.map((charge) => charge[0])).size === pieces.length && /\bcharge\b/.test(unit.stem)) {
+    return pieces.map((piece, at) => {
+      const [, size, sign] = charges[at];
+      return { ...base, question: closed(base.question, `Enter the symbol of the ion with a ${sign === '+' ? '+' : '–'}${size || 1} charge.`), type: 'textin', answer: piece, form: 'formula' };
+    });
+  }
+  return null;
 }
 
 const UNIT_NAMES = { J: 'joules', kJ: 'kilojoules', cal: 'calories', kcal: 'kilocalories', Cal: 'Calories' };
@@ -132,7 +211,10 @@ function severalItems(answer, unclosed) {
 }
 
 function itemFor(unit, answer, base) {
-  const { shape, key: thermochemical } = shapeOf(answer, unit.stem);
+  const { shape, key: thermochemical, quantities } = shapeOf(answer, unit.stem);
+  // Several quantities to one part: each item's closing sentence is the
+  // author's to write ("Enter the mole fraction of CH₃OH."), so none is built.
+  if (shape === 'number' && quantities >= 2) return null;
   // A thermochemical answer under a stem that asks a number: the ΔH alone (5.3).
   if (shape === 'number' && thermochemical) return { ...base, type: 'fillin', answer: thermochemical, form: '' };
   if (shape === 'number') {
@@ -149,6 +231,7 @@ function itemFor(unit, answer, base) {
 /** Every finding for one module: `{ unit, kind, detail }`. */
 export function probeModule(xml) {
   const units = keyedUnits(xml);
+  const abbreviations = printedAbbreviations(xml);
   const keyed = units.filter((unit) => unit.keyed);
   const findings = [];
   for (const unit of keyed) {
@@ -162,17 +245,17 @@ export function probeModule(xml) {
       if (!other || other.answer !== unit.answer) findings.push({ unit: unit.id, kind: 'read as another', detail: `the keys gate reads the unit's own stem as ${seen.exercise.id}${other && !other.keyed ? ' (UNKEYED: the item would be refused)' : ''} — the two stems are one text; the page's item must differ by its restated data or its figure` });
       continue;
     }
-    const items = itemsFor(unit, units);
+    const items = itemsFor(unit, units, { abbreviations });
     for (const item of items) {
-      const verdict = judgeKeyedUnit(item, units);
+      const verdict = judgeKeyedUnit(item, units, { abbreviations });
       if (!verdict || !['confirmed', 'figures-differ', 'symbolic'].includes(verdict.status)) {
         findings.push({ unit: unit.id, kind: 'key not confirmed', detail: `${item.type}${item.form ? ` (${item.form})` : ''} keyed with the source's own ${JSON.stringify(item.answer.slice(0, 60))}: ${verdict ? verdict.status : 'no unit'} — a source defect, or an answer that is not the shape chemistry-shapes read` });
       }
       // Several keys to one part, one item each: every item must refuse its
       // siblings' keys, or the closing sentence that says which is not read.
       for (const other of items) {
-        if (other === item || other.type !== item.type || other.answer === item.answer) continue;
-        const swapped = judgeKeyedUnit({ ...item, answer: other.answer }, units);
+        if (other === item || other.type !== item.type || (other.form || '') !== (item.form || '') || other.answer === item.answer) continue;
+        const swapped = judgeKeyedUnit({ ...item, answer: other.answer }, units, { abbreviations });
         if (swapped?.status === 'confirmed') findings.push({ unit: unit.id, kind: 'swap confirmed', detail: `the item that closes ${JSON.stringify(item.question.split(/(?<=[.?!])\s+/).pop())} is confirmed keyed with its sibling's ${JSON.stringify(other.answer.slice(0, 40))}` });
       }
     }

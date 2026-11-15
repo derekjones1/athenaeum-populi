@@ -707,3 +707,53 @@ test('punctuation closing a \\ce{…} is an error in every book, body and item t
   assert(!hasError('Water is $\\ce{H2O}$.\n', /inside the braces/, CHEM));
   assert(!hasError('```\n$\\ce{H2O.}$\n```\n', /inside the braces/, CHEM));
 });
+
+test('Chemistry chapter 6: a configuration and an ordering declare their forms and close with how they are typed', async () => {
+  const { CONFIGURATION_CLOSING, ORDERING_CLOSING } = await import('./lints-leaks.mjs');
+  const page = (item) => `Body text.\n\n${item}\n`;
+  const item = (question, answer, form = '') => `{{< textin\n  question="${question}"\n  answer="${answer}"${form ? `\n  answerForm="${form}"` : ''}\n  hint="Fill the subshells in order of energy."\n>}}`;
+  const errors = (src) => errorsOf(src, CHEM);
+  const N = 'Using complete subshell notation, predict the electron configuration of the following atom: N.';
+  const RANK = 'Based on their positions in the periodic table, rank the following atoms in order of increasing first ionization energy: F, Li, N, Rb.';
+  // Graded as words, a configuration must be typed character for character, and an ordering in any order passes.
+  assert.equal(errors(page(item(N, '1s²2s²2p³'))).filter((e) => /electron configuration graded as words — declare answerForm="configuration"/.test(e)).length, 1);
+  assert.equal(errors(page(item(RANK, 'Rb < Li < N < F'))).filter((e) => /ordering graded as words .* declare answerForm="ordering"/.test(e)).length, 1);
+  // Declared, each stem closes with the sentence that says how it is typed.
+  const closing = (src) => errors(src).filter((e) => /has no typing guide/.test(e));
+  assert.equal(closing(page(item(N, '1s²2s²2p³', 'configuration'))).length, 1);
+  assert.deepEqual(closing(page(item(`${N} ${CONFIGURATION_CLOSING}`, '1s²2s²2p³', 'configuration'))), []);
+  assert.equal(closing(page(item(RANK, 'Rb < Li < N < F', 'ordering'))).length, 1);
+  assert.deepEqual(closing(page(item(`${RANK} ${ORDERING_CLOSING}`, 'Rb < Li < N < F', 'ordering'))), []);
+  // The sentences print no key: no subshell with a count, no member.
+  assert.doesNotMatch(CONFIGURATION_CLOSING, /\d/);
+  assert.doesNotMatch(ORDERING_CLOSING, /\b[A-Z][a-z]?\b(?<!\bType)/);
+  // Every lint is clean on the declared, closed items.
+  assert.deepEqual(errors(page(item(`${N} ${CONFIGURATION_CLOSING}`, '1s²2s²2p³', 'configuration'))), []);
+  assert.deepEqual(errors(page(item(`${RANK} ${ORDERING_CLOSING}`, 'Rb < Li < N < F', 'ordering'))), []);
+  // A subshell is a word: "2p" under a plain textin needs no form (6.3, "Identify the subshell …").
+  const subshell = item('Identify the subshell in which electrons with the following quantum numbers are found: n = 2, l = 1. Enter the subshell.', '2p');
+  assert.deepEqual(errors(page(subshell)), []);
+  // The footer may not print either key.
+  const footer = (key, form, question, body) => `Body text.\n\n## Practice\n\n### Explain the thing\n\n${item(question, key, form)}\n\n---\n\n<small>${body}</small>\n`;
+  const printed = (src) => errors(src).filter((e) => /the footer prints "/.test(e));
+  assert.equal(printed(footer('1s²2s²2p³', 'configuration', `${N} ${CONFIGURATION_CLOSING}`, 'Keyed 1s²2s²2p³ from the source.')).length, 1);
+  assert.equal(printed(footer('Rb < Li < N < F', 'ordering', `${RANK} ${ORDERING_CLOSING}`, 'Keyed Rb < Li < N < F from the source.')).length, 1);
+  assert.deepEqual(printed(footer('Rb < Li < N < F', 'ordering', `${RANK} ${ORDERING_CLOSING}`, 'The orderings are the source’s.')), []);
+  // A stem that lists its members in the key's order, or the reverse, answers the item.
+  const answers = (question, key) => errors(page(item(`${question} ${ORDERING_CLOSING}`, key, 'ordering'))).filter((e) => /the stem answers the item/.test(e));
+  const RADIUS = 'Based on their positions in the periodic table, list the following atoms in order of increasing radius:';
+  assert.equal(answers(`${RADIUS} Mg, Ca, Rb, Cs.`, 'Mg < Ca < Rb < Cs').length, 1, 'the key\'s order');
+  assert.equal(answers('List the following ions in order of increasing radius: K⁺, Ca²⁺, Al³⁺, Si⁴⁺.', 'Si⁴⁺ < Al³⁺ < Ca²⁺ < K⁺').length, 1, 'the reverse');
+  assert.deepEqual(answers(`${RADIUS} Ca, Cs, Mg, Rb.`, 'Mg < Ca < Rb < Cs'), [], 'alphabetical');
+  assert.deepEqual(answers(RANK, 'Rb < Li < N < F'), [], '6.5 Exercise 5 as printed: F, Li, N, Rb');
+});
+
+test('scientific-notation is declared only where the question asks for it, in every book', () => {
+  const fillin = (question, form) => `Body text.\n\n{{< fillin\n  question="${question}"\n  answer="1.23\\times10^{-4}"\n  answerForm="${form}"\n  hint="Count the places the point moves."\n>}}\n`;
+  const hit = (src, file) => errorsOf(src, file).filter((e) => /declares scientific-notation, but the question does not ask for it/.test(e));
+  assert.equal(hit(fillin('What is the energy of the photon? Enter the energy in joules.', 'sig-figs:3 last-digit:0 scientific-notation'), CHEM).length, 1);
+  assert.deepEqual(hit(fillin('Express 0.000123 in scientific notation.', 'sig-figs:3 last-digit:0 scientific-notation'), CHEM), []);
+  assert.deepEqual(hit(fillin('Write the number in exponential notation.', 'sig-figs:3 last-digit:0 scientific-notation'), CHEM), []);
+  assert.deepEqual(hit(fillin('What is the energy of the photon?', 'sig-figs:3 last-digit:0'), CHEM), [], 'no token, nothing asked');
+  assert.equal(hit(fillin('Write 0.000123 as a decimal times a power of ten.', 'scientific-notation'), MATH).length, 1, 'every book');
+});

@@ -110,3 +110,20 @@ test('dependencyOf resolves to the nearest block in the named direction, skippin
   assert.equal(dependencyOf(after, mixed, { phrase: 'the graph above', direction: 'above' }).kind, 'mediafigure');
   assert.equal(dependencyOf({ index: 10, end: 20 }, [{ kind: 'table', index: 30, end: 40, raw: 't' }], { phrase: 'the figure below', direction: 'below' }), null, 'a picture noun does not settle for a table');
 });
+
+test('"the figure of …, below" binds the next figure after the item, whatever else the text says (Chemistry 6.2)', async () => {
+  const { mediaBindings } = await import('./exercise-context.mjs');
+  const question = 'The electron in the figure of the photons a hydrogen atom absorbs and emits, below, is promoted even further to an orbit with $n = 6$. What is its new energy?';
+  // The hint's "given above" used to turn every "below" into "above".
+  const reference = referencesContext({ kind: 'fillin', params: { question, hint: 'Use the value of $k$ given above.' } });
+  assert.deepEqual(reference, { phrase: 'the figure of the photons a hydrogen atom absorbs and emits, below', direction: 'below' });
+  const page = [
+    '{{< mediafigure src="chemistry/CNX_Chem_06_02_Hlevels" kind="diagram" alt="Levels." >}}\nCaption.\n{{< /mediafigure >}}',
+    `{{< fillin question="${question}" answer="1" hint="Use the value of $k$ given above." >}}`,
+    'Body text.',
+    '{{< mediafigure src="chemistry/CNX_Chem_06_02_BohrArrows" kind="diagram" alt="Arrows." >}}\nCaption.\n{{< /mediafigure >}}',
+  ].join('\n\n');
+  assert.deepEqual([...mediaBindings(page).values()], ['CNX_Chem_06_02_BohrArrows']);
+  // "Above" in the same form is not read (5.2's calorimeter would rebind finished items).
+  assert.equal(referencesContext({ kind: 'fillin', params: { question: 'Using the figure of the polystyrene-cup calorimeter above, find q.' } })?.phrase ?? null, null);
+});

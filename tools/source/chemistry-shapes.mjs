@@ -22,8 +22,9 @@
 import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { keyedUnits, sequentialParts } from '../lib/keyed-units.mjs';
+import { keyedUnits, listMembers, sequentialParts } from '../lib/keyed-units.mjs';
 import { chemCanon, chemKeyProblem } from '../../assets/js/lib/text/check-chem.mjs';
+import { numberWords, numbersOnly } from '../verify/verify-source-keys.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const bundle = path.join(root, 'sources/openstax/osbooks-chemistry-bundle');
@@ -53,6 +54,50 @@ const NUMBER = /^[−–-]?\d[\d,.]*(?:\s*[×x]\s*10\s*\^?\s*\{?[−–-]?\d+\}?
 export function shapeOf(answer, stem = '') {
   const text = String(answer ?? '').replace(/\s+/g, ' ').trim().replace(/[.;]$/, '');
   if (!text) return { shape: 'drawing', component: 'selfcheck with the figure as the model answer' };
+  // Chapter 6's shapes (docs/subjects/chemistry.md "Exercises").
+  //   An electron configuration, alone or after a colon in each element's
+  //   sentence ("Co has 27 protons, …: 1s²…3d⁷. I has …: …").
+  if (!/^for example\b/i.test(text)) {
+    if (chemCanon(text, 'configuration')) {
+      // The source prints it spaced, so only a subshell's existence and capacity are read.
+      const found = chemKeyProblem(text, 'configuration');
+      const problem = found && !/not written in print/.test(found) ? found : null;
+      return { shape: 'configuration', component: 'textin answerForm="configuration"', ...(problem ? { flag: problem } : {}) };
+    }
+    const configurations = text.split(/[:;]\s*|\.\s+(?=[A-Z])/).map((piece) => piece.trim()).filter((piece) => chemCanon(piece, 'configuration'));
+    if (configurations.length) {
+      const counts = /\d+\s+(?:protons|neutrons|electrons)\b/.test(text);
+      return { shape: 'configuration', component: `one textin answerForm="configuration" per configuration (${configurations.length})${counts ? ', and one whole-number fillin per count' : ''}, each closing with the atom or ion it asks` };
+    }
+  }
+  //   An ordering: "Rb < Li < N < F".
+  if (/</.test(text) && chemCanon(text, 'ordering')) return { shape: 'ordering', component: 'textin answerForm="ordering"' };
+  //   A subshell: "2 p", "4 d".
+  if (/^[1-7]\s?[spdf]$/.test(text)) return { shape: 'subshell', component: `textin keyed ${text.replace(/\s/g, '')}` };
+  //   One count per label: "x. 2, y. 2, z. 2".
+  const labelled = text.split(/,\s*/);
+  if (labelled.length >= 2 && labelled.every((piece) => /^[a-z]\.\s+[−–-]?\d+$/.test(piece))) {
+    return { shape: 'number', component: `one whole-number fillin per label (${labelled.map((piece) => `(${piece[0]})`).join(', ')}), each closing with the label it asks` };
+  }
+  //   A count said in words or beside labels that are no numbers: "n = 4",
+  //   "The five degenerate 3d orbitals", "15 (5A)".
+  const counted = numbersOnly(text).replace(/^[a-z]\s*=\s*/i, '');
+  const spelled = numberWords(counted);
+  if ((counted.trim() !== text && /^\d+$/.test(counted.trim())) || (spelled.length === 1 && !/\d/.test(counted) && counted.split(' ').length <= 6)) {
+    const key = /^\d+$/.test(counted.trim()) ? Number(counted.trim()) : spelled[0];
+    return { shape: 'number', component: `whole-number fillin keyed ${key}`, key };
+  }
+  //   Two or more measured quantities, each labelled or not ("ν = 4.568 ×
+  //   10¹⁴ s⁻¹; λ = 656.3 nm; …"; "Red: 660 nm; 4.54 × 10¹⁴ Hz; …"), and a
+  //   judgment the number supports ("5.49 × 10¹⁴ s⁻¹; no").
+  const quantities = quantityPieces(text);
+  if (quantities && (quantities.numbers >= 2 || (quantities.numbers === 1 && quantities.judgments))) {
+    return {
+      shape: 'number',
+      quantities: quantities.numbers,
+      component: `${quantities.numbers >= 2 ? `one fillin per quantity (${quantities.numbers}), each closing with the quantity it asks` : 'fillin'}${quantities.judgments ? ', then a multiplechoice (yes or no) for the judgment' : ''}`,
+    };
+  }
   // "SeF₆:" is the label of a drawing that follows it, and "Yes" is not yttrium and einsteinium.
   if (/:$/.test(text) && text.split(' ').length <= 8) return { shape: 'drawing', component: 'selfcheck with the figure as the model answer (the text is the drawing\'s label)' };
   if (/^(?:yes|no)\b/i.test(text) && text.split(' ').length <= 8) return { shape: 'words', component: 'multiplechoice (yes or no), then a selfcheck for any reason' };
@@ -91,8 +136,26 @@ export function shapeOf(answer, stem = '') {
   const formulaLike = (piece) => /^[A-Z([^]/.test(piece) && /[A-Z]/.test(piece) && !/[a-z]{4,}/.test(piece) && !/[<>=]/.test(piece);
   if (pieces.length && pieces.every(formulaLike)) {
     const unread = pieces.filter((piece) => !chemCanon(piece, 'formula'));
+    // Members of the stem's own list, named by the answer ("…isoelectronic
+    // with Br⁺: Se²⁺, Se, As⁻, Kr, Ga³⁺, Cl⁻?" → "Se, As⁻"): yes or no to each.
+    const members = listMembers(stem).map((member) => chemCanon(member, 'formula')).filter(Boolean);
+    if (!unread.length && members.length >= 2 && pieces.every((piece) => members.includes(chemCanon(piece, 'formula')))) {
+      // One member is one of the stem's closed set; two or more name members.
+      if (pieces.length === 1) return { shape: 'formula', component: `multiplechoice whose options are the stem's list (${members.length}), in its order` };
+      // Every member, in an order: an ordering printed with commas.
+      if (pieces.length === members.length) return { shape: 'ordering', component: 'textin answerForm="ordering" (the answer lists every member in order, with commas: the key is written with <, and the source gate does not yet read a comma list — probe before the wave)' };
+      return { shape: 'words', component: `one multiplechoice (yes or no) per member the stem lists (${members.length})` };
+    }
+    if (!unread.length && /\sor\s/.test(text)) {
+      return { shape: 'formula', component: 'one textin answerForm="formula" keyed with the first, the others in accept' };
+    }
     if (!unread.length) {
-      return { shape: 'formula', component: pieces.length === 1 ? 'textin answerForm="formula"' : 'one textin answerForm="formula" per formula' };
+      return { shape: 'formula', component: pieces.length === 1 ? 'textin answerForm="formula"' : 'one textin answerForm="formula" per formula, each closing with whose (an element, a charge)' };
+    }
+    // A quantity's symbol beside a formula ("O, IE₁", 6.5): the formula item,
+    // then the quantity's NAME as a plain textin with the symbol in accept.
+    if (unread.every((piece) => /^[A-Z]{1,3}\s*_?\s*\d$/.test(piece)) && unread.length < pieces.length) {
+      return { shape: 'formula', component: 'textin answerForm="formula" for the formula, then a textin for the quantity\'s name, its symbol in accept' };
     }
     if (/^\[(?:He|Ne|Ar|Kr|Xe|Rn)\]|\d[spdf]\s*\^/.test(text)) return { shape: 'words', component: 'selfcheck (an electron configuration: form open)' };
     return { shape: 'formula', component: 'textin answerForm="formula"', flag: `${JSON.stringify(unread[0])} does not read as a formula (a nuclide symbol, or a source typo)` };
@@ -104,6 +167,22 @@ export function shapeOf(answer, stem = '') {
   return { shape: 'sentence', component: 'selfcheck' };
 }
 
+/** `{ numbers, judgments }` when every piece of an answer is a measured quantity or a yes/no, else null. */
+export function quantityPieces(text) {
+  const pieces = String(text).split(/;|\.\s+(?=[A-Z])/).map((piece) => piece.trim().replace(/\.$/, '')).filter(Boolean);
+  let numbers = 0;
+  let judgments = 0;
+  for (const raw of pieces) {
+    if (/^(?:yes|no)$/i.test(raw)) { judgments += 1; continue; }
+    // A label before the number: "ν =", "Energy mol^{−1} =", "Red:".
+    const piece = raw.replace(/^(?:[A-Za-zνλ][\w\s^{}−–-]*?\s*[:=]\s*)(?=[−–-]?\d)/, '');
+    if (!NUMBER.test(piece)) return null;
+    if (piece.replace(NUMBER, '').trim().split(' ').length > 4) return null;
+    numbers += 1;
+  }
+  return numbers ? { numbers, judgments } : null;
+}
+
 function main(argv) {
   const chapter = Number(argv[0]);
   const all = chapters();
@@ -112,7 +191,7 @@ function main(argv) {
     process.exit(2);
   }
   const list = argv.includes('--list');
-  const SHAPES = ['number', 'formula', 'equation', 'equation+', 'words', 'sentence', 'drawing'];
+  const SHAPES = ['number', 'formula', 'equation', 'equation+', 'configuration', 'ordering', 'subshell', 'words', 'sentence', 'drawing'];
   const flags = [];
   const notes = [];
   console.log(`Chapter ${chapter}, ${all[chapter - 1].title}: keyed answers by shape (one row per section; parts counted)`);
@@ -124,7 +203,8 @@ function main(argv) {
     const lines = [];
     for (const unit of keyedUnits(readFileSync(file, 'utf8'))) {
       if (!unit.keyed) { counts.unkeyed += 1; continue; }
-      const read = shapeOf(unit.answer, unit.stem);
+      // One of a closed set (keyed-units `closedSet`): the parts are the options.
+      const read = unit.choices ? { shape: 'words', component: `one multiplechoice whose options are the stem's lettered parts (${unit.choices.length}), keyed (${unit.chosen})` } : shapeOf(unit.answer, unit.stem);
       counts[read.shape] += 1;
       const answer = unit.answer.replace(/\s+/g, ' ').trim();
       const imageOnly = unit.label && !unit.partText && (unit.media || []).length;

@@ -260,8 +260,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 21,
       "upstreamSections": 114,
-      "localChapters": 5,
-      "mappedSections": 25,
+      "localChapters": 6,
+      "mappedSections": 30,
       "upstreamAppendices": 13,
       "mappedAppendices": 13
     }
@@ -7493,6 +7493,51 @@
       "moduleId": "m68727",
       "sourceTitle": "Enthalpy",
       "moduleSha256": "b7e68b56270cfd800abdf625cfcb3096b00b8ab74b7b09f8afa416688098081a"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/01-electromagnetic-energy.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "6.1",
+      "moduleId": "m68729",
+      "sourceTitle": "Electromagnetic Energy",
+      "moduleSha256": "2a1f634b948b15edfcdcd751a5c94b938cdb6a64bb5b7557aeacc3c43a4fdefb"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/02-the-bohr-model.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "6.2",
+      "moduleId": "m68732",
+      "sourceTitle": "The Bohr Model",
+      "moduleSha256": "a9f58a85763bad09abf081d1ced363bc2f47606b6e4b0a465b7dfda08515766f"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/03-development-of-quantum-theory.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "6.3",
+      "moduleId": "m68733",
+      "sourceTitle": "Development of Quantum Theory",
+      "moduleSha256": "3670d3ffb1e83c8d6fe17735bb2b6b2ab6d8c4e08b595286234fbfc6c0f29bad"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/04-electronic-structure-of-atoms-electron-configurations.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "6.4",
+      "moduleId": "m68734",
+      "sourceTitle": "Electronic Structure of Atoms (Electron Configurations)",
+      "moduleSha256": "7254f761bd4cd3eeef2911e2d0cca42b448febebb79cb7d1cddb0c281e82d530"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/05-periodic-variations-in-element-properties.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "6.5",
+      "moduleId": "m68735",
+      "sourceTitle": "Periodic Variations in Element Properties",
+      "moduleSha256": "03c4ccc52a0f196e63e5f877bd1a5a21db39a298ef03ad4cfcea20e2282fcb01"
     }
   ],
   "appendices": [

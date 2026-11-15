@@ -17,10 +17,10 @@
 
 ## Coverage
 
-- Mapped local sections: 803
-- Sections changed upstream: 68
-- Content-level changes: 45
-- Markup/metadata-only changes: 23
+- Mapped local sections: 808
+- Sections changed upstream: 72
+- Content-level changes: 48
+- Markup/metadata-only changes: 24
 - Changed Try It records: 3
 - Changed Try Its where local math matches the PDF-era form: 0
 - Local-impact drift decisions recorded: 4
@@ -34,7 +34,7 @@
 - biology (`biology-bundle`): `5c58838d2594bc5817127fdc47e127c30b44f2c2`
 - microbiology (`microbiology`): `633850257fbd3ccf6187b9428c55e80b69236382`
 - anatomy-physiology (`anatomy-physiology`): `716383a4c6c16037b14d75a156c65145e75e895e`
-- chemistry (`chemistry-bundle`): `7d41ed008e9b83a6690c09c26a16f63f96046ec0` — in-progress, 25 sections mapped
+- chemistry (`chemistry-bundle`): `7d41ed008e9b83a6690c09c26a16f63f96046ec0` — in-progress, 30 sections mapped
 
 ## Changed mapped sections
 
@@ -394,5 +394,25 @@ Module `m68714`; content-changed. Changed lanes: instructionalText.
 ### chemistry 5.3 — [content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md](../../content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md)
 
 Module `m68727`; content-changed. Changed lanes: instructionalText.
+
+
+### chemistry 6.1 — [content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/01-electromagnetic-energy.md](../../content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/01-electromagnetic-energy.md)
+
+Module `m68729`; content-changed. Changed lanes: instructionalText.
+
+
+### chemistry 6.2 — [content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/02-the-bohr-model.md](../../content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/02-the-bohr-model.md)
+
+Module `m68732`; markup-or-metadata-only. Changed lanes: raw XML only.
+
+
+### chemistry 6.3 — [content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/03-development-of-quantum-theory.md](../../content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/03-development-of-quantum-theory.md)
+
+Module `m68733`; content-changed. Changed lanes: instructionalText.
+
+
+### chemistry 6.5 — [content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/05-periodic-variations-in-element-properties.md](../../content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/05-periodic-variations-in-element-properties.md)
+
+Module `m68735`; content-changed. Changed lanes: instructionalText.
 
 

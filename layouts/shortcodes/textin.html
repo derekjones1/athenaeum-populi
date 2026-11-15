@@ -15,7 +15,10 @@
     answerForm optional: "formula" or "equation" — the answer is a chemical
                formula (`Mn₃(PO₄)₂`, `SO₄²⁻`) or a balanced equation, read
                by check-chem.mjs with its capitals, subscripts, charges, and
-               coefficients, where a word is read without them
+               coefficients, where a word is read without them;
+               "configuration" — an electron configuration (`1s²2s²2p⁶`,
+               `[Kr]5s²4d¹⁰`, check-config.mjs); "ordering" — members
+               ranked with `<` (`Rb < Li < N < F`)
     hint       optional hint
 
   Nothing else: `answerDisplay` and `placeholder` were accepted for a year
@@ -34,8 +37,8 @@
   {{- errorf "textin does not take \"answerMode\" — it grades words, not values; use fillin for a math answer (%s)" $.Position -}}
 {{- end -}}
 {{- $answerForm := .Get "answerForm" | default "" -}}
-{{- if and $answerForm (not (in (slice "formula" "equation") $answerForm)) -}}
-  {{- errorf "textin answerForm %q is not a text form — use \"formula\" or \"equation\"; a numeric answer is a fillin (%s)" $answerForm .Position -}}
+{{- if and $answerForm (not (in (slice "formula" "equation" "configuration" "ordering") $answerForm)) -}}
+  {{- errorf "textin answerForm %q is not a text form — use \"formula\", \"equation\", \"configuration\", or \"ordering\"; a numeric answer is a fillin (%s)" $answerForm .Position -}}
 {{- end -}}
 {{- range (slice "answerDisplay" "placeholder") -}}
   {{- with $.Get . -}}

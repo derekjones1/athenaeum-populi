@@ -174,6 +174,11 @@ export function matchesForm(normalized, form) {
 export function gradeText(input, answer, { accept = '', form = '' } = {}) {
   if (form) return checkChem(input, answer, { accept, form });
   const status = checkText(input, answer, { accept });
+  // A subshell's letter typed without its shell number: incomplete, and said so.
+  if (status === 'incorrect' && SUBSHELL.test(String(answer ?? '').trim())
+    && /^[spdf](?:\s+(?:subshells?|orbitals?))?$/.test(normalizeText(input).replace(/^the\s+/, ''))) {
+    return { status: 'incorrect', message: SUBSHELL_LETTER_ONLY };
+  }
   if (status === 'incorrect' && isOlderName(input, answer, { accept })) {
     return { status: 'form', message: OLDER_NAME_MESSAGE };
   }
@@ -258,6 +263,15 @@ export function numeralProblem(input, answer, { accept = '' } = {}) {
  * @returns {'empty'|'correct'|'incorrect'|'form'} — `form` only under a
  * chemistry `form`; an older name is `incorrect` here (see `gradeText`).
  */
+const SUBSHELL = /^[1-7][spdf]$/i;
+/** A typed subshell, its inner space and a trailing "subshell" or "orbital(s)" dropped ("2 p orbitals" → "2p"), or null. */
+const subshellTyped = (normalized) => {
+  const bare = normalized.replace(/^the\s+/, '').replace(/\s+(?:subshells?|orbitals?)$/, '').replace(/\s+/g, '');
+  return SUBSHELL.test(bare) ? bare : null;
+};
+/** Said to a bare subshell letter ("p") against a key that is a subshell (Chemistry 2e 6.3). */
+export const SUBSHELL_LETTER_ONLY = 'Give the shell number with the letter.';
+
 export function checkText(input, answer, { accept = '', form = '' } = {}) {
   if (form) return checkChem(input, answer, { accept, form }).status;
   const normalized = normalizeText(input);
@@ -272,6 +286,16 @@ export function checkText(input, answer, { accept = '', form = '' } = {}) {
     return closedForms.some((form) => matchesForm(closed, form));
   };
   if (graded(input)) return 'correct';
+  // A subshell is its shell number and its letter, and a learner may set a
+  // space between them: "2 p" for the key "2p" (Chemistry 2e 6.3, "Identify
+  // the subshell …"). Folded only against a key that IS a subshell, so no
+  // other two words are read as one.
+  // …and named with its noun: "2p subshell", "the 2p subshell", "2p orbital(s)"
+  // (the article is already dropped by the normalizer).
+  const subshell = subshellTyped(normalized);
+  if (SUBSHELL.test(String(answer ?? '').trim()) && subshell) {
+    return subshell === normalizeText(answer) ? 'correct' : 'incorrect';
+  }
   const paren = /^([^()]+)\(([^()]+)\)\s*$/.exec(String(input ?? '').trim());
   return paren && graded(paren[1]) && graded(paren[2]) ? 'correct' : 'incorrect';
 }

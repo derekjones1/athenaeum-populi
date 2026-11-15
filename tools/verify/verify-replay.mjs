@@ -85,6 +85,21 @@ import { checkText } from '../../assets/js/lib/text/check-text.mjs';
  * semicolon, or sentence end before it.
  */
 export function chemSpans(question, form) {
+  // A configuration the stem prints ("Using complete subshell notation
+  // (1s²2s²2p⁶, and so forth)", 6.4; "Which atom has the electron
+  // configuration 1s²…4d²?"): each run of subshells, a core included.
+  if (form === 'configuration') {
+    return [...new Set([...question.matchAll(/(?:\[[A-Z][a-z]\]\s*)?(?:[1-7][spdf](?:[⁰¹²³⁴-⁹]+|\^?\d{1,2}(?![spdf]))\s*)+/g)].map((m) => m[0].trim()))];
+  }
+  // An ordering's members as the stem lists them ("rank the following atoms
+  // …: F, Li, N, Rb"), copied as a list — which the field refuses, having no
+  // sign (so 6.5's "Mg, Ca, Rb, Cs", in the key's order, does not answer
+  // itself) — and any chain the stem prints with < or >.
+  if (form === 'ordering') {
+    const MEMBER = '[A-Z][a-z]?[\\d₀-₉]*(?:\\^?[\\d⁰¹²³⁴-⁹]*[+\\-⁺⁻−–])?';
+    const list = new RegExp(`${MEMBER}(?:\\s*(?:,|<|>|,?\\s+and)\\s*${MEMBER})+`, 'g');
+    return [...new Set([...question.matchAll(list)].map((m) => m[0].trim().replace(/,?\s+and\s+/g, ', ')))];
+  }
   if (form === 'equation') {
     return [...question.matchAll(/[^:;?]*(?:⟶|→|⇌|->)[^;?]*/g)]
       .map((m) => m[0].trim().replace(/\.$/, '')).filter(Boolean);

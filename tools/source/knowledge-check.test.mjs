@@ -215,3 +215,13 @@ test('the committed checks pass the sources gate', () => {
   assert.match(out.stdout, /failure\(s\)/);
 });
 
+
+test('a check\'s configuration or ordering is held to a worked Solution that prints it whole (Chemistry 2e chapter 6)', () => {
+  const sulfur = 'The electron configuration is 1 s^{2} 2 s^{2} 2 p^{6} 3 s^{2} 3 p^{4} . This is sulfur.';
+  assert.equal(solutionPrints(sulfur, '1s²2s²2p⁶3s²3p⁴', 'configuration'), true);
+  assert.equal(solutionPrints(sulfur, '1s²2s²2p⁶3s²3p⁴'.replace('3s²3p⁴', '3p⁴3s²'), 'configuration'), true, 'in another order of subshells');
+  assert.equal(solutionPrints(sulfur, '1s²2s²2p⁶3s²', 'configuration'), false, 'the first subshells of a longer configuration');
+  assert.equal(solutionPrints(sulfur, '2s²2p⁶3s²3p⁴', 'configuration'), false, 'its last subshells');
+  assert.equal(solutionPrints('so the order is Rb < Li < N < F here.', 'Rb < Li < N < F', 'ordering'), true);
+  assert.equal(solutionPrints('so the order is Rb < Li < N < F here.', 'Li < N < F', 'ordering'), false);
+});

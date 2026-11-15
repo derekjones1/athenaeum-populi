@@ -56,6 +56,9 @@ chemistry, and nuclear chemistry.
   equations, classifying reactions, reaction stoichiometry, reaction yields,
   and quantitative chemical analysis.
 - **Thermochemistry** — energy basics, calorimetry, and enthalpy.
+- **Electronic Structure and Periodic Properties of Elements** —
+  electromagnetic energy, the Bohr model, the development of quantum theory,
+  electron configurations, and periodic variations in element properties.
 
 ## Appendices
 
@@ -69,9 +72,6 @@ standard electrode potentials that the chapters refer to by letter.
 
 The remaining chapters of Chemistry 2e will appear in this order:
 
-- **Electronic Structure and Periodic Properties of Elements** —
-  electromagnetic energy, the Bohr model, the development of quantum theory,
-  electron configurations, and periodic variations in element properties.
 - **Chemical Bonding and Molecular Geometry** — ionic and covalent bonding,
   Lewis symbols and structures, formal charges and resonance, bond
   strengths, and molecular structure and polarity.

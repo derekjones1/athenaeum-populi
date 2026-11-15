@@ -214,3 +214,26 @@ test('a formula or equation a text-in stem prints is a span a learner can copy',
     ['PCl₅(s) + H₂O(l) ⟶ POCl₃(l) + HCl(aq)']);
   assert.deepEqual(chemSpans('Write a balanced equation for the decomposition of calcium carbonate.', 'equation'), []);
 });
+
+test('a configuration or an ordering a text-in stem prints is a span a learner can copy (Chemistry 2e chapter 6)', async () => {
+  const { checkText } = await import('../../assets/js/lib/text/check-text.mjs');
+  const replays = (question, key, form) => chemSpans(question, form).filter((span) => checkText(span, key, { form }) === 'correct');
+  // 6.4: the stem's example configuration is no atom's key, and replays as wrong.
+  const NOTATION = 'Using complete subshell notation (1s²2s²2p⁶, and so forth), predict the electron configuration of the following atom: N. Type each subshell followed by its number of electrons, with a space between subshells.';
+  assert.deepEqual(chemSpans(NOTATION, 'configuration'), ['1s²2s²2p⁶']);
+  assert.deepEqual(replays(NOTATION, '1s²2s²2p³', 'configuration'), []);
+  assert.deepEqual(replays(NOTATION, '1s²2s²2p⁶', 'configuration'), ['1s²2s²2p⁶'], 'neon would be answered by the stem');
+  assert.deepEqual(chemSpans('Which atom has the electron configuration [Kr]5s²4d¹⁰?', 'configuration'), ['[Kr]5s²4d¹⁰']);
+  // 6.5: the stem lists the members; copied, the list is read in the key's direction.
+  const RANK = 'Based on their positions in the periodic table, rank the following atoms in order of increasing first ionization energy: F, Li, N, Rb. Type the symbols in the order you rank them, separated by <.';
+  assert.deepEqual(chemSpans(RANK, 'ordering'), ['F, Li, N, Rb']);
+  assert.deepEqual(replays(RANK, 'Rb < Li < N < F', 'ordering'), [], 'listed in another order, the copy is wrong');
+  const IONS = 'Based on their positions in the periodic table, list the following ions in order of increasing radius: K⁺, Ca²⁺, Al³⁺, Si⁴⁺. Type the symbols in the order you rank them, separated by <.';
+  assert.deepEqual(chemSpans(IONS, 'ordering'), ['K⁺, Ca²⁺, Al³⁺, Si⁴⁺']);
+  assert.deepEqual(replays(IONS, 'Si⁴⁺ < Al³⁺ < Ca²⁺ < K⁺', 'ordering'), [], 'the stem lists the reverse');
+  // …and a stem that lists them in the key's order (6.5's Exercise 9) is not answered by its own
+  // list either: a list with no sign is refused (ruled November 15, 2026).
+  const RADIUS = 'Based on their positions in the periodic table, list the following atoms in order of increasing radius: Mg, Ca, Rb, Cs. Type the symbols in the order you rank them, separated by <.';
+  assert.deepEqual(chemSpans(RADIUS, 'ordering'), ['Mg, Ca, Rb, Cs']);
+  assert.deepEqual(replays(RADIUS, 'Mg < Ca < Rb < Cs', 'ordering'), []);
+});

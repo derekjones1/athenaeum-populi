@@ -1521,6 +1521,14 @@ word for word as `run.md` had them.
 
 From `run.md`, "What a chapter cost".
 
+Chapter 6 (five sections, 96 items; wall time about seven hours of work across
+a usage-limit pause): authors 365k, 297k, 436k, 349k, and 334k tokens each
+across all rounds (6.1 to 6.5); checkers 208k, 153k, 250k, 197k, and 187k; claim
+pass 257k; second reader 160k; consistency reader 317k; fix checker 251k; four
+rendered-page readers 213k, 219k, 217k, and 197k; blind solver 161k. Before and
+during the wave, the grader-and-gates agent 569k (five rounds). Clerks: 66k
+(landing), 142k (run facts), and the errata and pins clerks.
+
 Chapter 5 (three sections, 77 items; wall time about five and a half hours):
 authors 344k, 383k, and 467k tokens each across all rounds (5.1 to 5.3);
 checkers 237k, 227k, and 259k; claim pass 226k; consistency reader 277k; fix
@@ -3262,6 +3270,254 @@ Knowledge Check block 2 (chapters 4–5), run from
    Source note.
 4. **The trailing-zero key (459.610) stays.**
 
+## Chapter 6 (November 15, 2026)
+
+One run, one session that paused once at a usage limit and resumed, from commit
+`c9182bba`: Sections 6.1 Electromagnetic Energy (m68729), 6.2 The Bohr Model
+(m68732), 6.3 Development of Quantum Theory (m68733), 6.4 Electronic Structure
+of Atoms (Electron Configurations) (m68734), and 6.5 Periodic Variations in
+Element Properties (m68735), and the landing (m68728). 96 auto-graded items
+(21, 8, 25, 23, and 19). Blind solve: 92 agreed, 1 disagreed, and 3 were flagged
+as also defensible; all four were adjudicated with the keys standing (the
+disagreement: "ionization energy" for "first ionization energy", which the
+heading lint refused as an `accept` member). Errata 3087–3141 (55; the 6.1 to
+6.5 entries sit after chapter 5's in the same block of `docs/openstax-errata.md`,
+and "Reviewed and not errata (chapter 6)" follows them). Key deviations
+(`DISCLOSED_DEVIATIONS`, chapter 6 entries): nine entries, eight of kind `key`
+and one of kind `solution`. The 6.1 X-ray energy (erratum 3092); six entries of
+6.2 for the Rydberg constant (erratum 3102), which move seven keys because the
+He⁺ Check Your Learning has two fill-ins; the 6.2 radius (3104); and the 6.1
+cesium self-check's model answer (3093). 6.5's two widened keys have errata
+(3127, 3128) and no entry in that list: the gate reads an `accept` member as
+no change of key, and an unexercised entry fails. `baseline:update` moved
+`--min-confirmed` from 7443 to 7543 and `--min-covered` from 4569 to 4645.
+Wall time was about seven hours of
+work across the pause.
+
+Derek asked for "the next chapter", so chapter 6 was authored before Knowledge
+Check block 2 (chapters 4–5), which `run.md` §4 step 9 puts first. The check is
+still owed and is the next run.
+
+### Before the wave: two forms and the gates
+
+From the grader-and-gates agent's report (five rounds, all of them):
+
+- **Two new answer forms.** `answerForm="configuration"` reads plain digits,
+  `^`, or superscripts, spaced or not; subshell order is free; a noble-gas core
+  (`[Kr]`, also typed without brackets) is expanded; capital subshell letters
+  are folded; the same electrons per subshell is correct, a core typed against
+  a key written out in full is `form`. Its messages say why: the right
+  configuration but without the core, the right count in the wrong subshells,
+  the wrong total of electrons, a subshell that holds fewer ("A p subshell
+  holds at most 6 electrons."), a subshell the shell lacks, a subshell written
+  twice. `answerForm="ordering"` reads `<`, `>` (reversed), and members through
+  `readSpecies`, with the messages "That is the reverse of the order asked
+  for.", "Those are the right members, but not in the right order.", one sign
+  all the way, each member once, capitals, and a charge on each ion. The two
+  closing sentences, enforced by lint, are "Type each subshell followed by its
+  number of electrons, with a space between subshells." and "Type the symbols
+  in the order you rank them, separated by <."
+- **The subshell label** ("2p", "2p subshell", "2p orbitals" correct; "2s
+  subshell" wrong; a bare letter gets "Give the shell number with the
+  letter.").
+- **Nine gate misreadings fixed** on the first probe of the chapter's real item
+  shapes, among them a configuration per element in one sentence, counts per
+  lettered orbital label, one yes or no per member of an unlettered list, a
+  closed set chosen by letter, and a name the module abbreviates in
+  parentheses ("first ionization energy (IE₁)").
+- **Later fixes**: a bare comma or space list is refused with "Put < between
+  the symbols to show the order." (a list that is not symbols keeps "That does
+  not read as a list…"); two lints promoted to errors, an ordering stem that
+  prints its members in the key's order or its reverse
+  (`orderingStemAnswers`) and `scientific-notation` on a fill-in whose
+  question names neither "scientific" nor "exponential" (the scan found 34
+  fill-ins in the corpus, all clean, and 6.2's six, since removed); and the
+  ledger's "the figure of …, below", which binds the next figure after the item
+  (narrowed to "below": teaching "above" rebound 18 finished items).
+- **Three gate findings on landed pages**, all the gates' fault: a Xe item
+  matched to the Zr exercise after the agent's own change (`ownScore` reads
+  the part's `plain` form); the cesium parts that the source sets inline in
+  the lead-in (`dataRun`); and the laser colour self-check carrying the word
+  of a multi-quantity answer (`carriedWord`).
+- **New files**: `assets/js/lib/text/check-config.mjs` and
+  `check-config.test.mjs`, `tools/build/typed-writings.mjs` and its test. Tests
+  were added in `check-chem.test.mjs`, `lints-leaks.test.mjs`,
+  `keyed-units.test.mjs`, `exercise-context.test.mjs`,
+  `chemistry-gate-probe.test.mjs`, `knowledge-check.test.mjs`, and
+  `verify-replay.test.mjs`. `chemistry-shapes.mjs` gained the configuration,
+  ordering, and subshell columns, and `solve.md` gained two lines on how a
+  solver types each form.
+
+### The parent's decisions before the wave
+
+From `run-facts.md`, decisions 2 to 6:
+
+- Every key of the chapter depends on a constant, not an atomic mass; the
+  constants as the pages state them (h, c, Avogadro's number, the electron
+  volt, R∞, a₀, the electron's mass, ħ) each agree with Appendix D at four
+  figures, except one.
+- **k = 2.180 × 10⁻¹⁸ J on this site**, against the source's 2.179: Appendix D
+  gives 2.1798724 × 10⁻¹⁸ J, which is 2.180 at four figures. Every Bohr-model
+  example and key was recomputed, with one Source note where 6.2 first states
+  k.
+- 6.2's radius for n = 8 is **33.87 Å** (64 × 5.292 × 10⁻¹¹ m, four figures),
+  not the source's 33.9.
+- 6.1's dental X-ray energy is **9.505 × 10⁻¹⁵ J** (hc/λ unrounded), not the
+  source's 9.502, which is h times a frequency already rounded.
+- Every other numeric key of 6.1 to 6.3 was recomputed and found as printed.
+
+### What each reading found
+
+- Checkers: 5, 2, 4, 5, and 4 defects (6.1 to 6.5) and no wrong key. The most
+  serious: 6.1's cesium line keyed "red" where 869 nm is in the infrared;
+  Avogadro's number needed by two items and on no page; a colour hint pointing
+  at a figure that cannot give the answer.
+- Claim pass: 19 findings, from the text against outside sources. Hodgkin's
+  death in 1994, not 1993; the AM band's upper edge; the interference caption's
+  blue pattern; the standing-wave Summary; the electron's magnetic moment and
+  the energy order in a field; de Broglie's thesis year; Born's date;
+  four configurations and several cells of the data figures against NIST.
+- Second reader (a fresh reader who greps the book first, then opens a
+  source): CORRECT for the insulin claim, "orbitals" for Bohr orbits, the
+  fine-structure and Zeeman terms, the Davisson–Germer geometry, the
+  transition-element definition, and four cells of the successive ionization
+  energies; LOOSE for the radii graph, two more of those cells, the radium
+  key, and the fluorine Check Your Learning; STANDS for the slit spacing, the
+  f-orbital label, and the Shannon-radii remark.
+- Consistency reader: 14 findings. The chief ones: `scientific-notation` on
+  six keys whose stems do not ask for it; the run facts' relative links against
+  the playbook; the playbook's own "in plain text" sentence contradicting its
+  rule 9; footer clauses worded three ways.
+- Fix check: 7 changes, the parent accepted them; judgment calls ruled in
+  place.
+- Rendered-page readers (6.1 to 6.4): 0 wrong. The misleading ones: the Source
+  note and the footer giving away the cesium colour; 6.2's "the result is the
+  same" under a carried-digit line; the subshell field marking "2p subshell"
+  wrong with a bare "Not quite"; a source figure's configuration defect carried
+  silently. Cosmetic: a flipped exponent sign answered "incorrect" with no
+  message, `ml` and `ms` printed as plain letters in the rubric checkboxes.
+
+### The rulings
+
+From `rulings.md` and `rulings-2.md`, by page:
+
+- **Every page**: links are absolute site-root paths; a notation token comes
+  from the stem's words; a quotient unit in prose takes a slash; descriptive
+  subscripts are upright; a subshell label with a variable shell number is one
+  upright token; a count's `answerDisplay` is the bare digit; the eight
+  corrected keys of 6.1 and 6.2 are corrections, each with the same item note;
+  "wave–particle" takes an en dash, and a source hyphen that stands for a
+  dash is set as one.
+- **6.1**: the 1994 death year, the AM range corrected to 540–1700 kHz, each
+  with a Source note; the interference caption kept and noted; the Summary's
+  standing-wave sentence corrected to agree with the body; the cesium line (a)
+  ruled infrared with a note that gives no answer; colour items stay
+  self-checks; the insulin sentence kept, with a note about the animal
+  pancreases since 1923; the slit spacing stands.
+- **6.2**: six `scientific-notation` tokens removed; "orbitals" becomes
+  "orbits" in the body and printed 25; "Show your calculations." dropped from a
+  fill-in stem; the second example's carried-digit note rewritten.
+- **6.3**: the spin paragraph corrected with its signs re-derived and the
+  splitting in a field named the Zeeman effect; Born, de Broglie, and the
+  "1920s" fine-structure sentence each corrected with a note; the
+  Davisson–Germer sentence corrected; the f-orbital label stands.
+- **6.4**: the configuration table kept as the source's image with a note
+  listing the four cells NIST contradicts (Tc, Cm, Bk, Lr); the copper, silver,
+  and gold sentence corrected, with Section 2.5 linked; cobalt–60 and
+  iodine–131 closings agree with the stem; the half-filled 4s hint names no
+  exception.
+- **6.5**: the stem of printed 75 re-listed alphabetically, and every ordering
+  stem checked; printed 83's element stays a `multiplechoice`; the fluorine
+  Check Your Learning keeps Ne and accepts He and H, with the note that names
+  neither; a note after the electron-affinity figure and a note after the
+  first-ionization-energy figure listing the cells that differ from NIST (and
+  fluorine's −328 in the body); notes after the covalent-radius and radii-graph
+  figures; four cells of the successive ionization energies noted; the second
+  ionization energy item keys Ra and accepts Ba, with a note that names no
+  element; the Shannon-radii remark unchanged.
+
+### What the process got wrong
+
+- Run facts decisions 3, 11, and 13 asked for relative links against the
+  playbook's rule 9; the pages were right and the run facts were stale.
+- Decision 3 put `scientific-notation` on keys whose stems do not ask for it,
+  and the consistency reader caught what the lint now holds.
+- Decision 8 ruled the colour items multiple choice from a figure that names
+  no colours; withdrawn.
+- The parent's own Source-note wording for the cesium line gave the answer.
+- A ruling for math in `textin` hints and one for criteria rubrics were
+  refused by lints; an `accept` member added after the solve was refused by
+  the heading lint and reversed.
+- The run facts missed that two items need Avogadro's number.
+
+### Outside sources opened
+
+The Nobel Prize organisation's records for Hodgkin (the death date opened
+through its API), de Broglie, Lamb's and Davisson's lectures; 47 CFR 73.14;
+Crossref for the two 1926 papers; NIST CODATA (the electron g factor); the NIST
+Atomic Spectra Database (ground configurations and ionization energies); the
+NIST Chemistry WebBook (electron affinities); the FDA's insulin history; the
+IUPAC Gold Book from a Web Archive copy. Three addresses refused the parent's
+own requests (two Nobel Prize pages and the eCFR page): the saved copies were
+read, and the notes paraphrase.
+
+### Kept as printed
+
+From the "Reviewed and not errata (chapter 6)" block of
+`docs/openstax-errata.md`:
+
+- The slit-spacing sentences (6.1 body and Summary): the book's own 6.3 states
+  the rule the page uses, and nothing opened supports the first reader's physics.
+- The f-orbital label f_y(x²−z²): a convention from memory, no source opened
+  (the drawn shape cannot tell the two labels apart).
+- The ionic-radii remark (Al³⁺ 68 pm, V²⁺ 79 pm): each pair illustrates its own
+  point; Shannon 1976 was not opened.
+- Ca and Sc IE₅: NIST's values are bracketed, not measured, so the cells and the
+  "Not available" cells stand without a note.
+- Y, Zr, Nb, Os, and Ir in the first-ionization-energy figure (18–26 kJ/mol
+  from NIST): not named on the page, flagged for a ruling.
+- The unchecked electron-affinity cells (Li, K, I, Te, Po, N, At), "the second
+  element in the group most often has the most negative EA" (true in four of
+  seven groups with the corrected cells), the Crab nebula's date and
+  colours, and the Example 6.11 solutions' label for the parent atom.
+- Standard constants as rounded CODATA values, loose examples ("4G … 880 MHz"),
+  and Exercise 61's "half-filled 4s subshell" keyed K.
+
+### What typing the keys showed
+
+96 of 96 correct. The variant pass (116 items) refused only the four
+comma-written orderings of 6.5, by design, with "That does not read as a list.
+Type the symbols separated by <." The logs read are `typed-1.log` and
+`typed-var-1.log`; no `typed-final` pair existed when this was written, so the
+totals are those of the first full pass.
+
+### Next
+
+Knowledge Check block 2 (chapters 4–5), from `docs/briefs/chemistry/kc-run.md`;
+then chapter 7, after probing its configuration and ordering shapes (the
+playbook's "What is still open").
+
+### For Derek
+
+1. **k is printed as 2.180 × 10⁻¹⁸ J against the source's 2.179, and every
+   Bohr-model key and example moved.** The source's 2.179 × 10⁻¹⁸ J matches
+   the hydrogen-specific Rydberg constant, the reduced-mass value, R_H·hc ≈
+   2.1787 × 10⁻¹⁸ J, by the parent's arithmetic (no source opened). So the
+   choice is one constant across the book (Appendix D's, 2.180) against the
+   source's hydrogen value, not the correction of a slip. Restoring 2.179
+   would put the source's seven keys back.
+2. Two keys are widened beyond the source (hydrogen for the fluorine Check
+   Your Learning; barium for the second ionization energy).
+3. The source's data figures are kept as images with Source notes listing the
+   cells NIST contradicts, rather than redrawn.
+4. A "write a set of quantum numbers" self-check still shows the source's
+   particular sets in its rubric.
+5. The configuration field takes capital subshell letters and a noble-gas core
+   typed without brackets.
+6. The 6.3 outline items' closing ("Enter the number of orbitals of type (y)
+   shown in the figure above") can be read as a count of what the figure draws;
+   left as built.
+
 ## The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under
@@ -3292,3 +3548,7 @@ the ban, with its page and line. The ban is reviewed from this list.
   over 2 mol O₃): the subscript 3 is very small. 5.3 printed 63's stem, where
   mhchem sets 5/2 and 3/2 about 6 px tall, and they are what tells the asked
   reaction from the first given one. 5.1 and 5.2 reported none.
+- Chapter 6 reported two places. 6.1, the inline Rydberg key equation, barely
+  readable inline; left, since key equations are inline bullets. 6.1's second
+  example, the nested factor (1 m over 10⁹ nm inside a fraction): reset with a
+  slash inside the display. 6.2 to 6.5 reported none.

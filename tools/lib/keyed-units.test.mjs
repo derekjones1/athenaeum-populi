@@ -7,7 +7,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  KEYED_ONLY_BOOKS, answerText, glossaryAliases, keyedUnits, plain, printedNumerals, sequentialParts, sortedExercise, unitFor, unitScore, unlinked,
+  KEYED_ONLY_BOOKS, answerText, dataRun, glossaryAliases, keyedUnits, plain, printedNumerals, sequentialParts, sortedExercise, unitFor, unitScore, unlinked,
   withoutCrossReference, workedExampleUnits, workedExamples,
 } from './keyed-units.mjs';
 import { parseXml } from './openstax-source.mjs';
@@ -1178,4 +1178,175 @@ test('a stem that names another section\'s example or exercise and restates its 
     + `\n{{< selfcheck question="${heat.replace(/\\/g, '\\\\')}" hint="h" >}}\nModel.\n{{< /selfcheck >}}\n`;
   const verdicts = coverage(page, sourceExercises(module), { keyedOnly: true });
   assert.deepEqual(verdicts.map((verdict) => `${verdict.id} ${verdict.status} ${verdict.line}`), ['fs-idp167492016 rendered 5', 'fs-idp146867872 rendered 1', 'fs-idp107667280 rendered 3']);
+});
+
+// ---- Chemistry chapter 6 (November 15, 2026) -------------------------------
+
+const em = (letter) => `<emphasis effect="italics">${letter}</emphasis>`;
+/** A configuration as the CNXML prints it: 1<em>s</em><sup>2</sup>2<em>s</em><sup>2</sup>… */
+const printedConfiguration = (spaced) => spaced.split(' ').map((token) => token.replace(/^(\d)([spdf])(\d+)$/, (_, n, l, count) => `${n}${em(l)}<sup>${count}</sup>`)).join('');
+const CH6 = cnxml(
+  example('q1', `Identify the subshell in which electrons with the following quantum numbers are found: (a) ${em('n')} = 3, ${em('l')} = 1; (b) ${em('n')} = 5, ${em('l')} = 3.`, `(a) 3${em('p')} (b) 5${em('f')}`)
+  + example('q2', `If a shell contains a maximum of 32 electrons, what is the principal quantum number, ${em('n')}?`, `${em('n')} = 4`)
+  + example('q3', `How many orbitals have ${em('l')} = 2 and ${em('n')} = 3?`, `The five degenerate 3${em('d')} orbitals`)
+  + example('q4', `Which ion with a +2 charge has the electron configuration ${printedConfiguration('1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d5')}? Which ion with a +3 charge has this configuration?`, 'Tc<sup>2+</sup>, Ru<sup>3+</sup>')
+  + exercises(
+    exercise('c4', [`Using complete subshell notation (${printedConfiguration('1s2 2s2 2p6')}, and so forth), predict the electron configuration of each of the following atoms:`, '(a) N', '(b) Fe'],
+      `(a) ${printedConfiguration('1s2 2s2 2p3')}; (b) ${printedConfiguration('1s2 2s2 2p6 3s2 3p6 4s2 3d6')}`),
+    exercise('c20', ['Cobalt–60 and iodine–131 are radioactive isotopes commonly used in nuclear medicine. How many protons, neutrons, and electrons are in atoms of these isotopes? Write the complete electron configuration for each isotope.'],
+      `Co has 27 protons, 27 electrons, and 33 neutrons: ${printedConfiguration('1s2 2s2 2p6 3s2 3p6 4s2 3d7')}. I has 53 protons, 53 electrons, and 78 neutrons: ${printedConfiguration('1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2 5p5')}.`),
+    exercise('c14', ['Which of the following has two unpaired electrons?', '(a) Mg', '(b) Si', '(c) S', '(d) Both Mg and S', '(e) Both Si and S.'], 'Although both (b) and (c) are correct, (e) encompasses both and is the best answer.'),
+    exercise('c8', ['Use an orbital diagram to describe the electron configuration of the valence shell of each of the following atoms:', '(a) N', '(b) Si'],
+      '(a) <media alt="N"><image src="../../media/Diagram_a.jpg"/></media> (b) <media alt="Si"><image src="../../media/Diagram_b.jpg"/></media>'),
+    exercise('o11', ['Consider the orbitals shown here in outline.', '(a) What is the maximum number of electrons contained in an orbital of type (x)? Of type (y)? Of type (z)?', '(b) How many orbitals of type (x) are found in a shell with n = 2? How many of type (y)? How many of type (z)?'],
+      '(a) x. 2, y. 2, z. 2; (b) x. 1, y. 3, z. 0'),
+    exercise('r5', ['Based on their positions in the periodic table, rank the following atoms in order of increasing first ionization energy: F, Li, N, Rb'], 'Rb &lt; Li &lt; N &lt; F'),
+    exercise('r11', ['Based on their positions in the periodic table, list the following ions in order of increasing radius: K<sup>+</sup>, Ca<sup>2+</sup>, Al<sup>3+</sup>, Si<sup>4+</sup>.'], 'Si<sup>4+</sup> &lt; Al<sup>3+</sup> &lt; Ca<sup>2+</sup> &lt; K<sup>+</sup>'),
+    exercise('g7', [`Atoms of which group in the periodic table have a valence shell electron configuration of ${em('ns')}<sup>2</sup>${em('np')}<sup>3</sup>?`], '15 (5A)'),
+    exercise('i13', ['Which atom and/or ion is (are) isoelectronic with Br<sup>+</sup>: Se<sup>2+</sup>, Se, As<sup>–</sup>, Kr, Ga<sup>3+</sup>, Cl<sup>–</sup>?'], 'Se, As<sup>−</sup>'),
+    exercise('i14', ['Which of the following atoms and ions is (are) isoelectronic with S<sup>2+</sup>: Si<sup>4+</sup>, Cl<sup>3+</sup>, Ar, As<sup>3+</sup>, Si, Al<sup>3+</sup>?'], null),
+    exercise('e17', ['Of the five elements Sn, Si, Sb, O, Te, which has the most endothermic reaction? (E represents an atom.) What name is given to the energy for the reaction?'], 'O, IE<sub>1</sub>'),
+  )
+  + '<para>The first ionization energy (IE<sub>1</sub>) of each element.</para>',
+);
+
+test('chapter 6\'s shapes read as units: a closed set chosen by letter, image parts, a subshell folded as the source prints it', () => {
+  const units = keyedUnits(CH6);
+  const closed = units.find((unit) => unit.group === 'c14');
+  assert.equal(closed.chosen, 'e', '"(e) … is the best answer" chooses (e), not the (b) and (c) it also names');
+  assert.equal(units.filter((unit) => unit.group === 'c14').length, 1);
+  // "(a) (b)" with images between: parts with drawings, not a list of names.
+  const drawn = units.filter((unit) => unit.group === 'c8');
+  assert.deepEqual(drawn.map((unit) => [unit.answer, unit.answerMedia]), [['', ['Diagram_a']], ['', ['Diagram_b']]]);
+  assert.equal(plain('1s²2s²2p⁶ and the 3d orbitals'), plain('1 s 2 2 s 2 2 p 6 and the 3 d orbitals'));
+});
+
+test('chapter 6\'s keys: configurations, orderings, subshells, counts, members, choices, and a name the module abbreviates', async () => {
+  const { chosenLetter, listMembers, printedAbbreviations } = await import('./keyed-units.mjs');
+  const units = keyedUnits(CH6);
+  const abbreviations = printedAbbreviations(CH6);
+  assert.deepEqual(abbreviations, [['first ionization energy', 'IE1']]);
+  assert.equal(chosenLetter('Although both (b) and (c) are correct, (e) encompasses both and is the best answer.'), 'e');
+  assert.deepEqual(listMembers('Which atom and/or ion is (are) isoelectronic with Br + : Se 2+ , Se, As – , Kr, Ga 3+ , Cl – ?'), ['Se 2+', 'Se', 'As –', 'Kr', 'Ga 3+', 'Cl –']);
+  const judge = (item) => judgeKeyedUnit(item, units, { abbreviations })?.status;
+  const textin = (question, answer, form = '', accept = '') => judge({ type: 'textin', question, answer, form, accept });
+  const fillin = (question, answer) => judge({ type: 'fillin', question, answer, form: 'whole-number' });
+  const TYPE = 'Type each subshell followed by its number of electrons, with a space between subshells.';
+  const LEAD = 'Using complete subshell notation (1s²2s²2p⁶, and so forth), predict the electron configuration of the following atom:';
+  // A: the source's spaced print and the key's Unicode, in either order of subshells.
+  assert.equal(textin(`${LEAD} Fe. ${TYPE}`, '1s²2s²2p⁶3s²3p⁶4s²3d⁶', 'configuration'), 'confirmed');
+  assert.equal(textin(`${LEAD} Fe. ${TYPE}`, '1s²2s²2p⁶3s²3p⁶3d⁶4s²', 'configuration'), 'confirmed');
+  assert.equal(textin(`${LEAD} Fe. ${TYPE}`, '1s²2s²2p⁶3s²3p⁶4s²3d⁷', 'configuration'), 'key-differs');
+  assert.equal(textin(`${LEAD} Fe. ${TYPE}`, '[Ar]4s²3d⁶', 'configuration'), 'key-differs', 'a core the source does not print');
+  // …and each isotope's held to its own sentence by the element the closing names.
+  const ISO = 'Cobalt–60 and iodine–131 are radioactive isotopes commonly used in nuclear medicine. How many protons, neutrons, and electrons are in atoms of these isotopes? Write the complete electron configuration for each isotope.';
+  const COBALT = '1s²2s²2p⁶3s²3p⁶4s²3d⁷';
+  const IODINE = '1s²2s²2p⁶3s²3p⁶3d¹⁰4s²4p⁶4d¹⁰5s²5p⁵';
+  assert.equal(textin(`${ISO} Enter the electron configuration of cobalt-60. ${TYPE}`, COBALT, 'configuration'), 'confirmed');
+  assert.equal(textin(`${ISO} Enter the electron configuration of iodine-131. ${TYPE}`, IODINE, 'configuration'), 'confirmed');
+  assert.equal(textin(`${ISO} Enter the electron configuration of cobalt-60. ${TYPE}`, IODINE, 'configuration'), 'key-differs');
+  assert.equal(fillin(`${ISO} Enter the number of neutrons in an atom of iodine-131.`, '78'), 'confirmed');
+  assert.equal(fillin(`${ISO} Enter the number of neutrons in an atom of iodine-131.`, '33'), 'key-differs', 'cobalt\'s neutrons');
+  // B: an ordering, by its members and their order.
+  const ORDER = 'Type the symbols in the order you rank them, separated by <.';
+  const RANK = 'Based on their positions in the periodic table, rank the following atoms in order of increasing first ionization energy: F, Li, N, Rb.';
+  assert.equal(textin(`${RANK} ${ORDER}`, 'Rb < Li < N < F', 'ordering'), 'confirmed');
+  assert.equal(textin(`${RANK} ${ORDER}`, 'F < N < Li < Rb', 'ordering'), 'key-differs');
+  const IONS = 'Based on their positions in the periodic table, list the following ions in order of increasing radius: K⁺, Ca²⁺, Al³⁺, Si⁴⁺.';
+  assert.equal(textin(`${IONS} ${ORDER}`, 'Si⁴⁺ < Al³⁺ < Ca²⁺ < K⁺', 'ordering'), 'confirmed');
+  assert.equal(textin(`${IONS} ${ORDER}`, 'Al³⁺ < Si⁴⁺ < Ca²⁺ < K⁺', 'ordering'), 'key-differs');
+  // C1: a subshell is a word, folded as the source spaces it.
+  const SUB = 'Identify the subshell in which electrons with the following quantum numbers are found: n = 3, l = 1. Enter the subshell.';
+  assert.equal(textin(SUB, '3p'), 'confirmed');
+  assert.equal(textin(SUB, '3s'), 'key-differs');
+  // C2: one count per label, held to the label the closing names.
+  const ORB = 'Consider the orbitals shown here in outline. How many orbitals of type (x) are found in a shell with n = 2? How many of type (y)? How many of type (z)?';
+  assert.equal(fillin(`${ORB} Enter the number of orbitals of type (y).`, '3'), 'confirmed');
+  assert.equal(fillin(`${ORB} Enter the number of orbitals of type (z).`, '3'), 'key-differs', 'the y count under the z item');
+  assert.equal(fillin(ORB, '3'), 'key-differs', 'a closing that names no label');
+  // C3, C4: a count beside labels that are no numbers.
+  assert.equal(fillin('If a shell contains a maximum of 32 electrons, what is the principal quantum number, n?', '4'), 'confirmed');
+  assert.equal(fillin('How many orbitals have l = 2 and n = 3?', '5'), 'confirmed');
+  assert.equal(fillin('How many orbitals have l = 2 and n = 3?', '3'), 'key-differs', 'the 3 of "3d" is no count');
+  assert.equal(fillin('Atoms of which group in the periodic table have a valence shell electron configuration of ns²np³? Enter the group number.', '15'), 'confirmed');
+  assert.equal(fillin('Atoms of which group in the periodic table have a valence shell electron configuration of ns²np³? Enter the group number.', '5'), 'key-differs', '"(5A)" is a label');
+  // C5: one multiple choice whose options are the lettered parts, keyed by the letter the answer chooses.
+  const OPTIONS = ['Mg', 'Si', 'S', 'Both Mg and S', 'Both Si and S'];
+  assert.equal(judge({ type: 'multiplechoice', question: 'Which of the following has two unpaired electrons?', options: OPTIONS, answer: 'Both Si and S' }), 'confirmed');
+  assert.equal(judge({ type: 'multiplechoice', question: 'Which of the following has two unpaired electrons?', options: OPTIONS, answer: 'Si' }), 'key-differs');
+  // C6: yes or no to each member of the stem's list.
+  const member = (who, answer) => judge({ type: 'multiplechoice', question: `Is the following atom or ion isoelectronic with Br⁺? ${who}`, options: ['yes', 'no'], answer });
+  assert.deepEqual(['Se²⁺', 'Se', 'As⁻', 'Kr', 'Ga³⁺', 'Cl⁻'].map((who) => member(who, ['Se', 'As⁻'].includes(who) ? 'yes' : 'no')), Array(6).fill('confirmed'));
+  assert.equal(member('Kr', 'yes'), 'key-differs');
+  assert.equal(member('As⁻', 'no'), 'key-differs');
+  // C8: a formula, and the name the module abbreviates as the answer prints it.
+  const ENDO = 'Of the five elements Sn, Si, Sb, O, Te, which has the most endothermic reaction? (E represents an atom.) What name is given to the energy for the reaction?';
+  assert.equal(textin(`${ENDO} Enter the element’s symbol.`, 'O', 'formula'), 'confirmed');
+  assert.equal(textin(`${ENDO} Enter the name of the energy.`, 'first ionization energy', '', 'IE1'), 'confirmed');
+  assert.equal(textin(`${ENDO} Enter the name of the energy.`, 'second ionization energy', '', 'IE2'), 'key-differs');
+  // C9: two ions told apart by the charge the closing names.
+  const TC = 'Which ion with a +2 charge has the electron configuration 1s²2s²2p⁶3s²3p⁶4s²3d¹⁰4p⁶4d⁵? Which ion with a +3 charge has this configuration?';
+  assert.equal(textin(`${TC} Enter the symbol of the ion with a +2 charge.`, 'Tc²⁺', 'formula'), 'confirmed');
+  assert.equal(textin(`${TC} Enter the symbol of the ion with a +3 charge.`, 'Ru³⁺', 'formula'), 'confirmed');
+  assert.equal(textin(`${TC} Enter the symbol of the ion with a +2 charge.`, 'Ru³⁺', 'formula'), 'key-differs');
+  // C10: an image part's selfcheck shows its own drawing.
+  const drawing = (who, file) => judge({ type: 'selfcheck', question: `Use an orbital diagram to describe the electron configuration of the valence shell of the following atom: ${who}.`, model: 'The diagram.', figures: [file] });
+  assert.equal(drawing('Si', 'Diagram_b'), 'confirmed');
+  assert.equal(drawing('Si', 'Diagram_a'), 'key-differs');
+});
+
+test('chapter 6\'s shapes, as chemistry-shapes reads them', () => {
+  assert.equal(shapeOf('1 s^{2} 2 s^{2} 2 p^{3}').shape, 'configuration');
+  assert.equal(shapeOf('Rb < Li < N < F').shape, 'ordering');
+  assert.deepEqual(shapeOf('2 p'), { shape: 'subshell', component: 'textin keyed 2p' });
+  assert.match(shapeOf('x. 2, y. 2, z. 2').component, /one whole-number fillin per label \(\(x\), \(y\), \(z\)\)/);
+  assert.equal(shapeOf('n = 4').key, 4);
+  assert.equal(shapeOf('The five degenerate 3 d orbitals').key, 5);
+  assert.equal(shapeOf('15 (5A)').shape, 'number');
+  assert.match(shapeOf('Se, As^{−}', 'Which atom and/or ion is (are) isoelectronic with Br + : Se 2+ , Se, As – , Kr, Ga 3+ , Cl – ?').component, /yes or no\) per member/);
+  assert.match(shapeOf('Ne or He').component, /keyed with the first, the others in accept/);
+  assert.match(shapeOf('O, IE _1').component, /quantity's name, its symbol in accept/);
+  assert.match(shapeOf('Co has 27 protons, 27 electrons, and 33 neutrons: 1 s^{2} 2 s^{2} 2 p^{6} 3 s^{2} 3 p^{6} 4 s^{2} 3 d^{7} . I has 53 protons, 53 electrons, and 78 neutrons: 1 s^{2} 2 s^{2} 2 p^{6} 3 s^{2} 3 p^{6} 3 d^{10} 4 s^{2} 4 p^{6} 4 d^{10} 5 s^{2} 5 p^{5}').component, /per configuration \(2\), and one whole-number fillin per count/);
+  assert.match(shapeOf('3.233 × 10^{−19} J; 2.018 eV').component, /one fillin per quantity \(2\)/);
+  assert.match(shapeOf('5.49 × 10^{14} s^{−1} ; no').component, /then a multiplechoice \(yes or no\)/);
+  assert.equal(shapeOf('For example, Na^{+} : 1 s^{2} 2 s^{2} 2 p^{6} ; Ca^{2+} : 1 s^{2} 2 s^{2} 2 p^{6} 3 s^{2} 3 p^{6}').shape, 'sentence', 'an example answer varies');
+});
+
+test('chapter 6\'s landed pages: a configuration part is not read as a whole exercise, a datum part restated per line, and the word of a multi-quantity answer (6.1, 6.4)', () => {
+  const sup = (spaced) => spaced.split(' ').map((token) => token.replace(/^(\d)([spdf])(\d+)$/, (_, n, l, count) => `${n}${em(l)}<sup>${count}</sup>`)).join('');
+  const xml = cnxml(
+    example('k1', `Identify the atoms from the electron configurations given: (a) [Ar]${sup('4s2 3d5')} (b) [Kr]${sup('5s2 4d10 5p6')}`, '(a) Mn (b) Xe')
+    + exercises(
+      exercise('z10', [`Which atom has the electron configuration ${sup('1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d2')}?`], 'Zr'),
+      exercise('cs', ['The emission spectrum of cesium contains two lines whose frequencies are (a) 3.45 × 10<sup>14</sup> Hz and (b) 6.53 × 10<sup>14</sup> Hz. What are the wavelengths and energies per photon of the two lines? What color are the lines?'],
+        '(a) λ = 8.69 × 10<sup>−7</sup> m; E = 2.29 × 10<sup>−19</sup> J; (b) λ = 4.59 × 10<sup>−7</sup> m; E = 4.33 × 10<sup>−19</sup> J; The color of (a) is red; (b) is blue.'),
+      exercise('ls', ['A photon of light produced by a surgical laser has an energy of 3.027 × 10<sup>−19</sup> J. Calculate the frequency and wavelength of the photon. What is the total energy in 1 mole of photons? What is the color of the emitted light?'],
+        'ν = 4.568 × 10<sup>14</sup> s<sup>−1</sup>; λ = 656.3 nm; Energy mol<sup>−1</sup> = 1.823 × 10<sup>5</sup> J mol<sup>−1</sup>; red'),
+    ),
+  );
+  const units = keyedUnits(xml);
+  const judge = (item) => judgeKeyedUnit(item, units);
+  // 1. The part printed verbatim outranks a whole exercise read through `plain` (the Zr exercise shares "5s²4d").
+  const xenon = judge({ type: 'textin', question: 'Identify the atom from the electron configuration given: [Kr]5s²4d¹⁰5p⁶. Enter the element’s symbol.', answer: 'Xe', form: 'formula' });
+  assert.deepEqual([xenon.status, xenon.exercise.id], ['confirmed', 'k1#check(b)']);
+  // 2. A datum part restated per line, in the singular.
+  const line = (frequency, closing) => `The emission spectrum of cesium contains a line whose frequency is $${frequency} \\times 10^{14}$ Hz. What are the wavelength and energy per photon of the line? What color is the line?${closing}`;
+  assert.equal(unitFor(line('3.45', ' Enter the wavelength in meters.'), units, { type: 'fillin' }).id, 'cs(a)');
+  assert.equal(unitFor(line('6.53', ' Enter the wavelength in meters.'), units, { type: 'fillin' }).id, 'cs(b)');
+  assert.equal(judge({ type: 'fillin', question: line('6.53', ' Enter the wavelength in meters.'), answer: '8.69\\times10^{-7}', form: '' }).status, 'key-differs');
+  const page = ['3.45', '6.53'].map((frequency) => `{{< fillin question="${line(frequency, ' Enter the wavelength in meters.')}" answer="1" hint="h" >}}\n`).join('\n');
+  const covered = coverage(page, sourceExercises(xml), { keyedOnly: true }).filter((verdict) => verdict.id.startsWith('cs('));
+  assert.deepEqual(covered.map((verdict) => verdict.status), ['rendered', 'rendered']);
+  // A formula's subscript is no datum: 2.6's "MgCl₂" part was read as one.
+  assert.equal(dataRun('3.45 × 10 14 Hz and'), '3 45 10 14');
+  assert.equal(dataRun('MgCl 2'), null);
+  // 3. A selfcheck that carries the one word of a multi-quantity answer, held to its own part's word.
+  const colour = (question, model) => judge({ type: 'selfcheck', question, model, figures: [] }).status;
+  const LASER = 'A photon of light produced by a surgical laser has an energy of $3.027 \\times 10^{-19}$ J. Calculate the frequency and wavelength of the photon. What is the total energy in 1 mole of photons? What is the color of the emitted light?';
+  assert.equal(colour(LASER, 'The color of the emitted light is red.'), 'reworded');
+  assert.equal(colour(LASER, 'The color of the emitted light is blue.'), 'diverges');
+  assert.equal(colour(line('3.45', ''), 'The color of the line is red.'), 'reworded', '(a)\'s colour, printed in (b)\'s segment');
+  assert.equal(colour(line('3.45', ''), 'The color of the line is blue.'), 'diverges');
+  assert.equal(colour(line('6.53', ''), 'The color of the line is blue.'), 'reworded');
+  assert.equal(colour(line('6.53', ''), 'The color of the line is red.'), 'key-differs', 'the sibling\'s colour');
 });

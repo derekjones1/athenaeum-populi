@@ -44,10 +44,18 @@
  * superscripts — so a response is read every way its characters allow and
  * is right when one reading is the key's.
  *
- * Not read here: an electron configuration (`[Kr]4d¹⁰5s²`), a nuclide symbol
- * with both numbers stacked, a condensed structural formula with bonds
- * drawn. docs/subjects/chemistry.md "Exercises" gives each its component.
+ * Two more forms are dispatched from here (Chemistry 2e chapter 6): an
+ * electron CONFIGURATION (`1s²2s²2p⁶`, `[Kr]5s²4d¹⁰`), read by
+ * check-config.mjs, and an ORDERING (`Rb < Li < N < F`, `Si⁴⁺ < Al³⁺ < Ca²⁺
+ * < K⁺`), read below: its members are formulas, read by `readSpecies`.
+ *
+ * Not read here: a nuclear equation with both numbers on every nuclide, a
+ * condensed structural formula with bonds drawn. docs/subjects/chemistry.md
+ * "Exercises" gives each its component.
  */
+import {
+  checkConfiguration, configurationCanon, configurationKeyProblem, isConfiguration, previewConfiguration,
+} from './check-config.mjs';
 
 export const ELEMENTS = new Set(('H He Li Be B C N O F Ne Na Mg Al Si P S Cl Ar K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr '
   + 'Rb Sr Y Zr Nb Mo Tc Ru Rh Pd Ag Cd In Sn Sb Te I Xe Cs Ba La Ce Pr Nd Pm Sm Eu Gd Tb Dy Ho Er Tm Yb Lu Hf Ta W Re Os Ir Pt Au Hg '
@@ -62,7 +70,7 @@ const ARROW = /<=>|<->|⇌|⇄|⟷|↔|-->|->|→|⟶|=/g;
 const EQUILIBRIUM = /<=>|<->|⇌|⇄|⟷|↔/;
 const STATES = new Set(['s', 'l', 'g', 'aq']);
 
-export const CHEM_FORMS = Object.freeze(['formula', 'equation']);
+export const CHEM_FORMS = Object.freeze(['formula', 'equation', 'configuration', 'ordering']);
 
 /*
  * A fractional coefficient (Chemistry 2e 5.3: a formation equation is
@@ -770,6 +778,116 @@ export function checkEquation(input, answer) {
   return best;
 }
 
+/*
+ * An ORDERING (Chemistry 2e 6.5: "rank the following atoms in order of
+ * increasing first ionization energy: F, Li, N, Rb" → "Rb < Li < N < F").
+ * The key is printed with `<` between members, each a formula or an ion in
+ * the book's print. A response is its members separated by `<`, or by `>`
+ * (the same order written from the other end); a list with no sign is not
+ * read (a stem that lists its members in the key's order would answer
+ * itself). Each member is read by
+ * `readSpecies`, so `Ca2+`, `Ca^2+`, and `Ca²⁺` are one member. Nothing is
+ * `form`: the members and their order are the whole answer.
+ */
+export const ORDERING_REVERSED = 'That is the reverse of the order asked for.';
+export const ORDERING_MIXED = 'Use one sign all the way through: every < or every >.';
+export const ORDERING_ORDER = 'Those are the right members, but not in the right order.';
+export const ORDERING_UNREAD = 'That does not read as a list. Type the symbols separated by <.';
+// A list of formulas with no sign between them: what is missing is the sign.
+export const ORDERING_NO_SIGN = 'Put < between the symbols to show the order.';
+export const ORDERING_CAPITALS = 'Check the capitals: an element’s symbol is one capital letter, or a capital and a small letter.';
+export const ORDERING_CHARGE = 'These are ions: type each one’s charge after its symbol.';
+const orderingMembers = (count) => `Use each of the ${count} members the question lists, each once.`;
+
+/** The members of an ordering as typed, in the key's direction: `{ pieces, mixed }`, or null. */
+function orderingPieces(raw) {
+  const text = prepare(raw).trim();
+  if (!text) return null;
+  const less = text.includes('<');
+  const more = text.includes('>');
+  if (less && more) return { pieces: [], mixed: true };
+  // A list with no sign is refused (ruled November 15, 2026): read in the
+  // key's direction, a stem that lists its members in the key's order (6.5's
+  // "Mg, Ca, Rb, Cs") would be answered by its own list.
+  if (!less && !more) return null;
+  let pieces = text.split(less ? '<' : '>');
+  pieces = pieces.map((piece) => piece.trim());
+  if (pieces.some((piece) => !piece)) return null;
+  return { pieces: more ? pieces.reverse() : pieces, mixed: false };
+}
+
+/** The key's members as formula readings, or null when one does not read one way. */
+function orderingKey(answer) {
+  const read = orderingPieces(answer);
+  if (!read || read.mixed || read.pieces.length < 2) return null;
+  const members = read.pieces.map((piece) => readSpecies(piece));
+  return members.every((readings) => readings.length) ? members.map((readings) => readings[0]) : null;
+}
+
+/** @returns {{ status: 'empty'|'correct'|'incorrect', message?: string }} */
+export function checkOrdering(input, answer) {
+  if (!String(input ?? '').trim()) return { status: 'empty' };
+  const key = orderingKey(answer);
+  if (!key) return { status: 'incorrect' };
+  const typed = orderingPieces(input);
+  if (!typed) {
+    const pieces = prepare(input).trim().split(/\s*,\s*|\s+/).filter(Boolean);
+    const listed = !/[<>]/.test(input) && pieces.length >= 2 && pieces.every((piece) => readSpecies(piece).length);
+    return { status: 'incorrect', message: listed ? ORDERING_NO_SIGN : ORDERING_UNREAD };
+  }
+  if (typed.mixed) return { status: 'incorrect', message: ORDERING_MIXED };
+  const indices = typed.pieces.map((piece) => {
+    const readings = readSpecies(piece);
+    return key.findIndex((member) => readings.some((reading) => reading.canon === member.canon));
+  });
+  if (typed.pieces.length !== key.length || indices.includes(-1) || new Set(indices).size !== indices.length) {
+    // A member typed with the wrong capitals, or an ion without its charge,
+    // is told so — in sentences that print no member (the formula field's
+    // charge sentence gives Ca2+ as its example, a member of 6.5's key).
+    const atomsOf = (species) => Object.keys(species.atoms).sort().map((el) => `${el}${species.atoms[el]}`).join(' ');
+    for (const piece of typed.pieces) {
+      const readings = readSpecies(piece);
+      if (key.some((member) => readings.some((reading) => reading.canon === member.canon))) continue;
+      if (!readings.length && key.some((member) => flatLetters(member.canon) === flatLetters(piece))) return { status: 'incorrect', message: ORDERING_CAPITALS };
+      if (readings.some((reading) => !reading.charge && key.some((member) => member.charge && atomsOf(member) === atomsOf(reading)))) return { status: 'incorrect', message: ORDERING_CHARGE };
+    }
+    return { status: 'incorrect', message: orderingMembers(key.length) };
+  }
+  if (indices.every((index, at) => index === at)) return { status: 'correct' };
+  if (indices.every((index, at) => index === key.length - 1 - at)) return { status: 'incorrect', message: ORDERING_REVERSED };
+  return { status: 'incorrect', message: ORDERING_ORDER };
+}
+
+/** An ordering as the field reads it, in the book's print and the direction typed. */
+function previewOrdering(input) {
+  const text = prepare(input).trim();
+  const sign = text.includes('>') && !text.includes('<') ? ' > ' : ' < ';
+  const read = orderingPieces(input);
+  if (!read || read.mixed || read.pieces.length < 2) return '';
+  const members = read.pieces.map((piece) => readSpecies(piece)[0]);
+  if (!members.every(Boolean)) return '';
+  const shown = members.map((member) => prettySpecies(member));
+  return (sign === ' > ' ? shown.reverse() : shown).join(sign);
+}
+
+/** Why an ordering KEY cannot be graded, or null (the lint). */
+function orderingKeyProblem(answer) {
+  const text = String(answer ?? '').trim();
+  if (/>/.test(text) || !/</.test(text)) return `${JSON.stringify(answer)} is not written in print — members from first to last, separated by " < "`;
+  const pieces = text.split('<').map((piece) => piece.trim());
+  if (pieces.length < 2 || pieces.some((piece) => !piece) || !/^\S+(?: < \S+)+$/.test(text)) {
+    return `${JSON.stringify(answer)} is not written in print — members from first to last, separated by " < "`;
+  }
+  for (const piece of pieces) {
+    const readings = readSpecies(piece);
+    if (!readings.length) return `${JSON.stringify(piece)} does not read as a formula or an ion`;
+    if (readings.length > 1) return `${JSON.stringify(piece)} reads two ways — write its charge as a superscript (Ca²⁺)`;
+  }
+  const canons = pieces.map((piece) => readSpecies(piece)[0].canon);
+  if (new Set(canons).size !== canons.length) return `${JSON.stringify(answer)} lists a member twice`;
+  return null;
+}
+
 /**
  * A response without the sentence punctuation typed after it. Every stem
  * ends in a period and the typing guide under the field ends "SO4^2-.", so
@@ -785,12 +903,16 @@ const withoutClosingPunctuation = (input) => String(input ?? '').replace(/[\s.,;
 /** Grade a response under a chemistry form. */
 export function checkChem(input, answer, { accept = '', form } = {}) {
   const typed = withoutClosingPunctuation(input);
+  if (form === 'configuration') return checkConfiguration(typed, answer);
+  if (form === 'ordering') return checkOrdering(typed, answer);
   return form === 'equation' ? checkEquation(typed, answer) : checkFormula(typed, answer, { accept });
 }
 
 /** What the field shows a learner it has read, or '' when it reads nothing yet. */
 export function previewChem(rawInput, form) {
   const input = withoutClosingPunctuation(rawInput);
+  if (form === 'configuration') return previewConfiguration(input);
+  if (form === 'ordering') return previewOrdering(input);
   if (form === 'equation') {
     const equation = readEquation(input)[0];
     if (!equation) return '';
@@ -811,8 +933,14 @@ const gcd = (a, b) => (b ? gcd(b, a % b) : a);
  * whose MathML sets ½ as "( 1 )/( 2 )".
  */
 export function chemKeyProblem(answer, form, accept = '', { written = true } = {}) {
-  if (!CHEM_FORMS.includes(form)) return `answerForm "${form}" is not a text form — use ${CHEM_FORMS.map((f) => `"${f}"`).join(' or ')}`;
+  if (!CHEM_FORMS.includes(form)) return `answerForm "${form}" is not a text form — use ${CHEM_FORMS.map((f) => `"${f}"`).join(', ').replace(/, (?=[^,]*$)/, ', or ')}`;
+  if (form === 'configuration' || form === 'ordering') {
+    if (accept) return `a${form === 'ordering' ? 'n ordering' : ' configuration'} takes no accept list: ${form === 'ordering' ? 'the direction and the writing of each member are already free' : 'the order of the subshells and a noble-gas core are already free'}`;
+    return form === 'configuration' ? configurationKeyProblem(answer) : orderingKeyProblem(answer);
+  }
   if (form === 'formula') {
+    if (isConfiguration(answer)) return `${JSON.stringify(answer)} is an electron configuration — declare answerForm="configuration"`;
+    if (/</.test(String(answer)) && orderingKey(answer)) return `${JSON.stringify(answer)} is an ordering — declare answerForm="ordering"`;
     for (const member of [answer, ...String(accept || '').split('|').map((m) => m.trim()).filter(Boolean)]) {
       const readings = readSpecies(member);
       if (!readings.length) return `${JSON.stringify(member)} does not read as a formula`;
@@ -867,6 +995,12 @@ export function hasFractionalCoefficient(answer) {
 
 /** The key's canonical spelling, for a gate comparing a page key with a source answer. */
 export function chemCanon(text, form) {
+  if (form === 'configuration') return configurationCanon(text);
+  if (form === 'ordering') {
+    // An ordering printed with > is the same order read from the other end.
+    const members = orderingKey(String(text ?? '').replace(/\s*\.\s*$/, ''));
+    return members && /[<>]/.test(String(text)) ? members.map((member) => member.canon).join(' < ') : null;
+  }
   if (form === 'equation') {
     const equation = readEquation(text)[0];
     if (!equation) return null;

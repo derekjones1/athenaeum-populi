@@ -259,6 +259,16 @@ The component follows the SHAPE of the source's keyed answer:
 | the name of a compound or an ion ("chromium(III) oxide", "the selenide ion") | `textin`. Capitals, the spaces around a parenthesis, and the parentheses themselves are free; the Roman numeral and every word are not. The grader reads sulph- as sulf-, aluminium as aluminum, and caesium as cesium, so those are never `accept` members. A second name the module itself prints for the compound is one — unless the STEM prints it: 2.7 asks for the IUPAC name of "ferric nitrate", and there the old name retyped must be wrong. **A name the module prints as out of date is not a second name** *(Section 2.7)*: "ferrous chloride", which the module says "was known as" and calls nomenclature "largely abandoned", is not an `accept` member of the item that asks FeCl₂'s name, and neither is a name another exercise's stem prints for the compound as the one to be replaced ("titanium tetrachloride"). The grader does not call such a name wrong: a classical -ous/-ic name of the KEYED compound is answered "That is an older name. Give the systematic name." in the tone of a right answer in the wrong form, and the field stays open (`assets/js/lib/text/older-names.mjs`, a table of nine metals; `gradeText` only — every gate still reads it as incorrect; *November 11, 2026, Derek: until then it was refused as plainly wrong*). The older name of a different compound ("ferric chloride" for FeCl₂) is incorrect. **A Greek-prefix name of the KEYED metal compound gets a sibling message** *(November 14, 2026; until then a bare "Not quite")*: "titanium tetrachloride" against `titanium(IV) chloride`, "magnesium dichloride" against `magnesium chloride`, a stem's own prefix name retyped included, is answered "That name counts the atoms with Greek prefixes, as a compound of two nonmetals is named. Name a metal’s compound as an ionic compound, without prefixes." — `form`, the field open, never correct (`assets/js/lib/text/prefix-names.mjs`; the name's counts must give the charge the key prints, so "titanium trichloride" stays plainly incorrect; `gradeText` only, as for the older names). The message does not call the name wrong — IUPAC allows it — and names neither the metal nor whether a numeral is needed. **A name typed without its Roman numeral, or with the charge as an ordinary number, is told so** *(November 14, 2026; until then a bare "Not quite" on eleven items of 2.7)*: "iron chloride" against `iron(II) chloride` is incorrect with "This metal forms more than one ion, so the name must say which: add the ion’s charge as a Roman numeral in parentheses after the metal’s name.", and "iron(2) chloride" or "iron 2+ chloride" is `form` with "That is the right compound — now write the metal ion’s charge as a Roman numeral, not as an ordinary number." A wrong charge in either notation stays plainly incorrect, and neither message gives the numeral (`numeralProblem` in `check-text.mjs`, read only against a key that writes a word and then a numeral in parentheses; `gradeText` only). The lint refuses an older name, a Greek-prefix name of the keyed metal compound, and the keyed name without its numeral or with an ordinary number, as an `accept` member. The item's hint still says what form the name takes — the charge as a Roman numeral in parentheses — since the message does not. The source gate holds a name key to the WHOLE name the source prints: "cobalt(II) chloride" is refused where the source answers "cobalt(II) chloride hexahydrate". **An ion's name is keyed bare** (`selenide`) with the two-word form in `accept` (`selenide ion`): the grader drops "the" and does not drop "ion", so keyed "selenide ion" it marks the bare name wrong |
 | a formula or an ion's symbol ("Mn₃(PO₄)₂", "FeCl₃·2H₂O", "Se²⁻", "¹⁴C") | `textin` with `answerForm="formula"` ("Formulas and equations") — never a plain `textin`, which reads `CO` as `Co` (lint) |
 | a balanced equation, a half-reaction, a net ionic equation | `textin` with `answerForm="equation"` ("Formulas and equations") |
+| an electron configuration ("1s²2s²2p⁶3s²3p²", "[Kr]5s²4d¹⁰") | `textin` with `answerForm="configuration"` ("Electron configurations and orderings"), the stem closing "Type each subshell followed by its number of electrons, with a space between subshells." (lint). One configuration per atom or ion where an answer prints several in turn ("Co has 27 protons, 27 electrons, and 33 neutrons: 1s²…3d⁷. I has …"), each stem saying whose before the typing sentence — "Enter the electron configuration of cobalt-60." — and the counts beside them as the counts row says, "Enter the number of neutrons in an atom of iodine-131."; the gate holds each item to the sentence of the element its closing names *(November 15, 2026, chapter 6)* |
+| an ordering ("Rb < Li < N < F", "Si⁴⁺ < Al³⁺ < Ca²⁺ < K⁺") | `textin` with `answerForm="ordering"`, the stem closing "Type the symbols in the order you rank them, separated by <." (lint) *(chapter 6)* |
+| a subshell ("2 p", "4 d") | a plain `textin` keyed `2p` — no form: the word grader folds the letter's capital and, against a key that is a subshell, a space between the number and the letter, and the noun after it (`2 p`, `2P`, `the 2p subshell`, `2p orbitals` right; `2s`, `3p` wrong; a bare `p` is told "Give the shell number with the letter.") *(chapter 6)* |
+| one count per label the stem names ("x. 2, y. 2, z. 2" for three orbitals drawn (x), (y), (z)) | one `whole-number` `fillin` per label, each stem closing with the label it asks: "Enter the number for the orbital of type (x)." — the gate holds each item to its label's number and refuses an item whose closing names none *(chapter 6)* |
+| a count said beside labels that are no numbers ("n = 4", "The five degenerate 3d orbitals", "15 (5A)") | a `whole-number` `fillin` keyed with the count (4, 5, 15): the gate reads a subshell's shell number and an old group label as labels, so the 3 of "3d" or the 5 of "5A" is refused *(chapter 6)* |
+| a choice the answer names by its LETTER among the stem's lettered parts ("(a) Mg (b) Si (c) S (d) Both Mg and S (e) Both Si and S" → "Although both (b) and (c) are correct, (e) encompasses both and is the best answer.") | ONE `multiplechoice` whose options are the parts, in order, keyed with the part the answer calls THE answer ("is the best answer", "is correct") — one of a closed set *(chapter 6)* |
+| members of the stem's unlettered list, named by the answer ("…isoelectronic with Br⁺: Se²⁺, Se, As⁻, Kr, Ga³⁺, Cl⁻?" → "Se, As⁻") | one `multiplechoice` (`yes`, `no`) per member, in the stem's order, as the row for an answer that names parts: "Is the following atom or ion isoelectronic with Br⁺? Se²⁺" — the member after the question mark. The gate holds yes to the members the answer lists and no to the rest. Where the answer lists EVERY member, it is an ordering written with commas; where it names ONE (6.5's Cl, O, Ba), it is one `multiplechoice` whose options are the stem's list in its order *(chapter 6)* |
+| two formulas after an "or" ("Ne or He") | one formula `textin` keyed with the first, the others in `accept` (`accept="He"`) — each is the module's own answer *(chapter 6)* |
+| a formula and the symbol of a quantity the module abbreviates ("O, IE₁") | the element: a `multiplechoice` over the stem's list where the stem prints one (a `multiplechoice` takes no closing sentence), otherwise a formula `textin` (`O`, "Enter the element’s symbol."); then a plain `textin` for the quantity's NAME as the module spells it out beside the symbol ("first ionization energy (IE₁)"), the symbol in `accept` (`accept="IE1"`): "Enter the name of the energy." The gate reads the name through the module's own parenthesis (`printedAbbreviations`) *(chapter 6)* |
+| two ions the stem tells apart by their charges ("Which ion with a +1 charge … Which ion with a –2 charge …?" → "Rb⁺, Se²⁻") | one formula `textin` per ion, each closing "Enter the symbol of the ion with a +1 charge." — the gate holds each to the ion with the charge its closing names *(chapter 6)* |
 | several of these at once ("calcium, Ca"; "ionic, Ba²⁺, O²⁻"; "molecular C₂H₂, empirical CH"; an equation and a mass) | one item per piece, each stem saying which ("Enter the molecular formula."): the classification as a `multiplechoice` first, then a formula `textin` per ion or per formula. **When only some parts have the further pieces** ("(a) covalent; (b) ionic, Ba²⁺, O²⁻" — the source keys nothing more for a covalent part, so there is nothing more to grade there), each part's further items go in a `followup` directly after its `multiplechoice`: in the open they stand under the ionic parts alone and answer the classification by being there. `verify:source-keys` refuses the shape unwrapped (`conditionalUnwrapped`) |
 | counts of particles ("47 protons, 47 electrons, 62 neutrons") | one `whole-number` `fillin` per number, each stem closing with a sentence that names the one it asks for in the answer's own word ("Enter the number of neutrons." — the source gate reads that sentence and refuses a swapped pair), and a name or formula `textin` for the element where the key prints one. A count the stem itself prints (the protons of an atom given by its atomic number) is right by the definition the item tests: it stands, and the parent lists it in `verify:replay`'s allowlist ("Numeric keys") |
 | a nuclide symbol with its mass number, with or without the atomic number ("¹³³Cs⁺", "²³₁₁Na") | ONE formula `textin`, keyed in print with every number the source prints (the gate refuses `²³Na` where the source prints ²³₁₁Na). A key that prints both numbers asks for both: `^23_11Na` is right, `23Na` is the right nuclide short of its atomic number (form feedback), a wrong atomic number is wrong. A key with the mass number alone leaves the atomic number free, but never wrong. The lint refuses a key whose atomic number is not its element's. The stem ends "Type the mass number, then the atomic number after an underscore, before the symbol: ^14_6C." (or, for a mass number alone, "Type the mass number before the symbol, as in 14C.") — with another nuclide where carbon-14 is the answer. Never a fill-in for a number the stem itself gives |
@@ -421,9 +431,11 @@ selfchecks, source defects, the footer — and each is stated once.
   (1.6's short ton of 2,000 lb) is added to the stem in parentheses and
   named in the footer; a hint is not where a needed number lives.
 - **A stem that needs an example or an exercise of another section** keeps
-  the source's words with the reference named by title and section in plain
-  text ("the example “Heat Flow in an Instant Ice Pack” in Section 5.2
-  Calorimetry"), then restates in one parenthesis every GIVEN datum the key
+  the source's words with the reference named by title and section and
+  linked by page-skeleton rule 9 (an absolute site-root path; plain text
+  only for a section not yet on the site) ("the example “Heat Flow in an
+  Instant Ice Pack” in [Section 5.2 Calorimetry](/physical-sciences/chemistry/05-thermochemistry/02-calorimetry/)"
+  *(chapter 6)*), then restates in one parenthesis every GIVEN datum the key
   depends on — never the example's result or the exercise's answer — and
   the source gates match such a stem (`withoutCrossReference`). A table of
   another section is named by its describing phrase and section, never by a
@@ -460,7 +472,14 @@ selfchecks, source defects, the footer — and each is stated once.
   (nine exercises: 4.3 twice, 13.2, 17.1 twice, 17.2 twice, 17.7, 19.2).
   The footer says the parts were restated from the omitted exercise.
 - **An item bound to a figure or table** says "the figure above" or "the
-  table above", so the answer ledger binds them.
+  table above", so the answer ledger binds them. A figure the source places
+  AFTER its item is named by what it shows, then "below": "the figure of the
+  photons a hydrogen atom absorbs and emits, below" (6.2) — the ledger binds
+  that form to the next figure after the item *(November 15, 2026)*.
+  **Where a paragraph names two figures, each gets a describing phrase and
+  "above" or "below"**, never a bare "the figure below" twice; a stem whose
+  figure the source places after the item says "the figure of …, below",
+  and the answer ledger binds it to the next figure *(chapter 6)*.
 - **A lettered part that is only an image** ("(a) [structure] (b)
   [structure]", 2.4) has no words of its own: its `mediafigure` goes
   directly above its item or items, and each stem is the lead-in restated
@@ -490,6 +509,13 @@ selfchecks, source defects, the footer — and each is stated once.
   after it. The one exception is a part that is a bare number to be
   rounded or counted (1.5), where a period would read as part of the
   numeral.
+- **An ordering stem never lists its members in the key's order or its
+  reverse**: a list that does answers the item whatever the field
+  requires, and the replay does not see it (6.5's "Mg, Ca, Rb, Cs" for the
+  key Mg < Ca < Rb < Cs; the rendered-page reader found it). The members
+  are re-listed alphabetically by symbol (by element name where that
+  reproduces the key), with a footer clause (lint, `orderingStemAnswers`)
+  *(chapter 6)*.
 - **The closing sentence of a name or symbol item says whose**: "Enter the
   element’s name." and "Enter the element’s symbol." for an element;
   "Enter the ion’s symbol.", "Enter the ion’s name.", "Enter the symbol of
@@ -723,6 +749,22 @@ selfchecks, source defects, the footer — and each is stated once.
   masses** *(chapter 5)*: water's specific heat is the section table's
   4.184 J/g °C wherever a stem gives none (5.2's TNT exercise reaches the
   source's key only with 4.18).
+- **A constant is data like an atomic mass.** The run facts list every
+  constant a key uses, as the page states it and as Appendix D gives it,
+  whether or not the page states it (6.1's Avogadro's number was needed
+  by two items and was on no page). A constant the page states that
+  Appendix D's value does not round to is replaced on the page by
+  Appendix D's value at the page's figures, with one Source note where it
+  is first stated (6.2: the source's k = 2.179 × 10⁻¹⁸ J; Appendix D's
+  2.1798724 × 10⁻¹⁸ J is 2.180), and every example and key is
+  recomputed. Each key that moves is a correction (a `DISCLOSED_DEVIATIONS`
+  key entry, one erratum for the constant), and its item note reads
+  "*Source note:* the answer graded for this exercise is worked with this
+  book’s value of $k$; the source’s answer was worked with another
+  value." — true whether or not the source's print still falls inside
+  `last-digit:1`. A page-level test counts the notes against the
+  entries (`verify-source-keys.test.mjs`: each must open, at the start of
+  a line, with "*Source note:* the answer graded ") *(chapter 6)*.
 - **Figure counts of a key** *(chapter 5)*: an exact divisor or multiplier
   keeps every figure of the table value (−1378.83 kJ for 3 Mn is 459.610
   per mole of Mn, six figures; (66.4 + 114.1) ÷ 2 is 90.25, four), and a
@@ -733,7 +775,8 @@ selfchecks, source defects, the footer — and each is stated once.
 - **A key that is a stem number by the law the item tests** (the total mass
   of products, 200.0 g, from 200.0 g of reactant) stands as a `fillin`; the
   ledger says so.
-- **`answerDisplay`**: a count shows the bare digit; a measured value shows
+- **`answerDisplay`**: a count shows the bare digit, also where the source
+  prints it with a label ("n = 4", "15 (5A)") *(chapter 6)*; a measured value shows
   the value with its unit; a bare power-of-ten factor shows `$10^{-2}$`
   with no leading ×. It is math, so the house lint groups its digits
   ("Notation").
@@ -949,6 +992,11 @@ after the rule was written, so the line is drawn by pairs:
     prints once for the whole exercise stays in the part it closes and is
     not copied into the others; the gate holds each part to its own
     segment. The footer says the opening sentence and the label are added.
+- **A "write a set of …" answer** (quantum numbers for an orbital, for the
+  electrons of a shell): the model answer is the source's set, the
+  rubric's clauses are the source's rows (the rubric lint holds every
+  clause to the model answer's words), and the HINT says what any correct
+  set must have, since any of many sets is right *(chapter 6)*.
 
 ### Source defects and Source notes
 
@@ -1000,6 +1048,16 @@ after the rule was written, so the line is drawn by pairs:
   discoveries" of Tacke and Noddack, of whose two reported elements one
   was confirmed; a rule for bracketed atomic masses that the page's own
   table shows three exceptions to).
+- **A data figure that is the source's raster image keeps its cells; a
+  Source note directly after the figure lists each cell that differs from
+  the measured value, as the figure prints it and as measured, with one
+  threshold stated or implied for the whole list**, and the extended
+  description transcribes the figure as printed (6.4's configuration
+  table; 6.5's electron-affinity and ionization-energy figures). **A key
+  widened to accept a second answer the page's own data or a measurement
+  supports** (6.5: hydrogen; barium) carries the note "*Source note:* the
+  answer graded for this exercise is not only the one the source prints",
+  naming no element *(chapter 6)*.
 - **A Source note beside an unanswered item never lets the key be worked
   out**: no source value, no arithmetic, no direction of the error ("the
   product truncated rather than rounded" told the learner to round up).
@@ -1067,6 +1125,16 @@ math — a fraction, a conversion factor, a chain of equalities, a relation
 between two quantities (`$1\ \text{ppm} = 10^{3}\ \text{ppb}$`) — and so do
 display math and an `answerDisplay`. The lint refuses an inline span that
 is only a symbol, an equals sign, and a value with its unit.
+**A quotient unit in prose, stems, and closing sentences is written with a
+slash** (m/s, J/mol, kJ/mol); only a bare reciprocal keeps its exponent, as
+its own math span (`$\text{s}^{-1}$`, `$\text{m}^{-1}$`). Body display math
+keeps the source's form, and each change from the source's form is a
+footer clause *(chapter 6)*. **A subshell label with a variable shell
+number is one upright Unicode token**, n included: "ns", "(n − 1)d",
+"ns²np³" *(chapter 6)*. **"Wave–particle" takes an en dash**, and a
+source hyphen that stands for a dash ("wave-they", "range-wavelengths") is
+set as the dash the house uses elsewhere on the page, with a footer clause
+*(chapter 6)*.
 
 **In math** — every source `<equation>` that is mathematics, and any
 inline span that is — a formula is `\ce{…}`. (A source `<equation>` that
@@ -1085,6 +1153,8 @@ mhchem extension, so nothing is loaded:
 | `\ce{…} \qquad \Delta H = -92.2\ \text{kJ}` | a thermochemical equation in BODY display math: the formula in `\ce`, the rest ordinary math (a stem writes `$\Delta H^\circ$ = −314 kJ`: "Stems") |
 | `\begin{aligned} \ce{C(s) + O2(g) &-> CO2(g)} & \Delta H &= … \end{aligned}` | steps aligned at the arrow |
 
+- **Descriptive subscripts are upright**: `$E_\text{f}$`, `$n_\text{i}$`;
+  a subscript that is itself a variable stays italic *(chapter 6)*.
 - **A formula set by hand in math is a lint error**: bare `H_2O` (math sets
   letters italic, as variables), `\text{H}_2\text{O}`, and `\mathrm{H_2O}`
   all render, and none matches the formulas mhchem sets beside it. The rule
@@ -1286,10 +1356,10 @@ Rules for the key and the stem:
   "Determine the empirical formula: sucrose, C₁₂H₂₂O₁₁" is answered by its
   own stem, and is recorded as a sound coincidence or it fails.
 - **Not read by these forms**, and a `selfcheck` until the chapter that
-  meets them first settles a form: an electron configuration
-  (`[Kr]4d¹⁰5s²`, chapter 6), an ordering ("Rb < Li < N < F", chapter 6),
-  a nuclear equation with both numbers on every nuclide (chapter 21), a
-  condensed structural formula with its bonds drawn (chapter 20).
+  meets them first settles a form: a nuclear equation with both numbers on
+  every nuclide (chapter 21), a condensed structural formula with its bonds
+  drawn (chapter 20). An electron configuration and an ordering have their
+  own forms since chapter 6 (next section).
 - **A logarithm's answer is not asked rightly by `sig-figs:<n>`** — a pH,
   a pK, a ln k (first met in chapter 12 or 14). The figures of a logarithm
   are its decimal places (pH 4.74 from 1.8 × 10⁻⁵ has two), so the pair
@@ -1302,6 +1372,103 @@ Rules for the key and the stem:
   and its own sentences — before any item is keyed; until then such an
   item is not authored as a `fillin` with the pair. Identified November
   12, 2026; not built, there being no item to test it against.
+
+### Electron configurations and orderings: `answerForm="configuration"`, `answerForm="ordering"`
+
+*(November 15, 2026, before chapter 6.)* Two more `textin` forms. A
+configuration is read by `assets/js/lib/text/check-config.mjs`, an ordering
+by `check-chem.mjs`, whose formula reader reads each member:
+
+```
+{{</* textin
+  question="Using complete subshell notation (1s²2s²2p⁶, and so forth), predict the electron configuration of the following atom: N. Type each subshell followed by its number of electrons, with a space between subshells."
+  answer="1s²2s²2p³"
+  answerForm="configuration"
+  hint="Fill the subshells in order of increasing energy, each to its capacity."
+*/>}}
+
+{{</* textin
+  question="Based on their positions in the periodic table, rank the following atoms in order of increasing first ionization energy: F, Li, N, Rb. Type the symbols in the order you rank them, separated by <."
+  answer="Rb < Li < N < F"
+  answerForm="ordering"
+  hint="Ionization energy rises across a period and falls down a group."
+*/>}}
+```
+
+**What is free, and what is not.** A configuration may be typed with
+plain digits, `^`, or superscripts, with or without spaces (the unspaced
+`1s22s22p63s23p64s23d10` reads one way: a shell number is one digit and
+always stands before its letter, so the last digit before a letter is the
+next shell's), with the letters in capitals, and in ANY order of its
+subshells — the filling order `4s²3d⁶` and the shell order `3d⁶4s²` are one
+configuration. Against a key with a noble-gas core the core form and the
+full expansion are both right; against a key with none, the core form is
+`form`. The subshells and their counts are the answer. An ordering may be
+typed with `<`, or with `>` from the other end, each member's charge in
+any writing the formula field takes (`Ca2+`, `Ca^2+`, `Ca²⁺`); the
+members, their capitals and charges, and their order are the answer.
+**A list with no sign is refused** *(November 15, 2026)*: read in the
+key's direction, 6.5's "list the following atoms in order of increasing
+radius: Mg, Ca, Rb, Cs" would be answered by its own list. Nothing in an
+ordering is `form`.
+
+The field carries no typing guide — a configuration's would print a
+configuration, an ordering's a list — so the stem closes with the
+sentence that says how (lint), and the field reads back what it has read
+("Read as: 1s²2s²2p³", "Read as: F > N > Li > Rb").
+
+| Typed | Against | Verdict | Feedback |
+|---|---|---|---|
+| `1s2 2s2 2p6 3s2 3p6 4s2 3d6`, `1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^6`, `1s22s22p63s23p64s23d6`, `1s2 2s2 2p6 3s2 3p6 3d6 4s2` | `1s²2s²2p⁶3s²3p⁶4s²3d⁶` | correct | |
+| `[Ar]4s2 3d6` | the same key | form | "That is the right configuration — now write out every subshell, without the noble-gas core." |
+| `[Kr]4d10 5s2`, `1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10` | `[Kr]5s²4d¹⁰` | correct | |
+| `1s2 2s2 2p6 3s2 3p6 4s2 3d5 4p1` | `1s²2s²2p⁶3s²3p⁶4s²3d⁶` | incorrect | "That has the right number of electrons, but not in the subshells they occupy." |
+| `1s2 2s2 2p6 3s2 3p6 4s2 3d7` | the same key | incorrect | "That configuration does not hold the number of electrons this atom or ion has." It never prints the count |
+| `1s2 2s2 2p8 3s2 3p6 4s2 3d4` | the same key | incorrect | "A p subshell holds at most 6 electrons." (an s 2, a d 10, an f 14) |
+| `1s2 2s2 2d6` | the same key | incorrect | "There is no 2d subshell: the n = 2 shell has only s and p subshells." |
+| `1s2 2s2 2p6 2p6`, `[Ne]2p6 3s2` | the same key | incorrect | "Write each subshell once, with all of its electrons — a noble-gas core already holds its own subshells." |
+| `iron` | the same key | incorrect | "That does not read as an electron configuration. Type each subshell as its shell number and letter followed by its number of electrons, with a space between subshells." |
+| `Rb < Li < N < F`, `F > N > Li > Rb` | `Rb < Li < N < F` | correct | |
+| `Rb, Li, N, F`, `Rb Li N F` | the same key | incorrect | "Put < between the symbols to show the order." — a list with no sign, in any order |
+| `rubidium, lithium` | the same key | incorrect | "That does not read as a list. Type the symbols separated by <." — no list of symbols at all |
+| `Si4+ < Al3+ < Ca2+ < K+`, `K+ > Ca2+ > Al3+ > Si4+` | `Si⁴⁺ < Al³⁺ < Ca²⁺ < K⁺` | correct | |
+| `F < N < Li < Rb` | `Rb < Li < N < F` | incorrect | "That is the reverse of the order asked for." |
+| `Rb < N < Li < F` | the same key | incorrect | "Those are the right members, but not in the right order." |
+| `Rb < Li > N < F` | the same key | incorrect | "Use one sign all the way through: every < or every >." |
+| `Rb < Li < N` | the same key | incorrect | "Use each of the 4 members the question lists, each once." — the count, never a member |
+| `rb < Li < N < F` | the same key | incorrect | "Check the capitals: an element’s symbol is one capital letter, or a capital and a small letter." |
+| `Si < Al < Ca < K` | `Si⁴⁺ < Al³⁺ < Ca²⁺ < K⁺` | incorrect | "These are ions: type each one’s charge after its symbol." (the formula field's sentence gives Ca2+ as its example, a member of 6.5's key) |
+
+Rules for the key and the stem:
+
+- **The key is written in print**: a configuration with superscript counts
+  and no spaces, `1s²2s²2p⁶3s²3p²`, a core in square brackets,
+  `[Kr]5s²4d¹⁰`; an ordering with ` < ` between its members, first to last
+  as the source prints them, each in the book's Unicode, `Si⁴⁺ < Al³⁺ <
+  Ca²⁺ < K⁺` (lint). Neither takes an `accept` list (lint): the order of
+  the subshells, a core, the direction, and each member's writing are
+  already free. A configuration key over a subshell's capacity or with a
+  subshell that does not exist is a lint error — a suspected source defect.
+- **The key is what the source prints**: `verify:source-keys` reads the
+  CNXML's `1<em>s</em><sup>2</sup>…` and the key as one configuration in any
+  order of subshells, but a core the source does not print is a different
+  key (refused), as a wrong subshell or count is; an ordering is confirmed
+  member for member, in order, and the source's hyphen-minus or en dash in
+  a charge is a minus.
+- **The closing sentences** (lint, `CONFIGURATION_CLOSING` and
+  `ORDERING_CLOSING` in `tools/lint/lints-leaks.mjs`): "Type each subshell
+  followed by its number of electrons, with a space between subshells." and
+  "Type the symbols in the order you rank them, separated by <." Neither
+  prints a key: "Type each subshell as 1s2 2s2 …" would hand over the
+  start of every configuration in the book, and an example ordering would
+  print members. A configuration item that says whose ("Enter the electron
+  configuration of cobalt-60.") puts that sentence before the typing one.
+- **Replay** (`verify:replay`) reads each configuration a stem prints
+  (6.4's "Using complete subshell notation (1s²2s²2p⁶, and so forth)" is
+  neon's, so no atom of that exercise but neon is answered by it) and the
+  list of members an ordering's stem prints, copied as a list — which the
+  field refuses, having no sign, even where the stem lists its members in
+  the key's order (6.5's "Mg, Ca, Rb, Cs" → "Mg < Ca < Rb < Cs").
 
 ### Measured quantities: `sig-figs:<n> last-digit:<k>`
 
@@ -1384,6 +1551,11 @@ Rules for the key and the stem:
   `scientific-notation` when the stem says "in scientific notation" (a
   calculator's `4.585e22` is then `form`), or `decimal` to require a plain
   decimal.
+  **A notation token comes from the stem's words, never from how the key
+  is written**: `scientific-notation` needs "scientific" or "exponential"
+  in the question (a lint, every book; a key written with a power of ten
+  under a stem that does not name the notation declares nothing)
+  *(chapter 6)*.
 - **A percent** is keyed bare with the stem naming it ("Enter the percent
   yield as a number, without the percent sign"); a typed `%` is then a unit.
   A key ending in `\%` declares `percent` as well.
@@ -1640,9 +1812,9 @@ What chapter 1 settled, and what the scan of the book counted, are in
 - whether `verify:source-tables` should read the tables of the section
   pages too (the chapters have about 190): it reads appendix pages only,
   and a section's tables are still read by the author and the checker;
-- the item forms the formula and equation fields do not yet read — each a
-  `selfcheck` until its chapter settles it ("Formulas and equations", the
-  last rule);
+- the item forms the text fields do not yet read — each a `selfcheck`
+  until its chapter settles it ("Formulas and equations", the last rule;
+  chapter 6 settled the electron configuration and the ordering);
 - a long table's header row scrolls out of view ON THE APPENDIX'S OWN
   PAGE (Appendix G is 403 rows): the theme sets a table `display: block`,
   so a sticky header there needs a table render hook, which would change
@@ -1657,6 +1829,19 @@ What chapter 1 settled, and what the scan of the book counted, are in
   sign and thousand messages ("Measured quantities"), a fractional
   coefficient ("Formulas and equations"), two units in one part, a ΔH in a
   stem, and a second Check Your Learning ("Stems", "Exercises");
+- chapter 7's configurations come as "P: [Ne]3s²3p³; P³⁻: [Ne]3s²3p⁶" and
+  "1s²2s¹; Li⁺: 1s²", and one answer writes orderings as comma lists
+  ("H, C, N, O, F"): neither is read by the gates yet (probe before
+  chapter 7); a number field answers a flipped exponent sign or a
+  metric-prefix slip (nm typed for m) with a bare "incorrect"; an
+  uncaptioned inline diagram cannot be set at text scale (the manifest's
+  `scale` is the only size control); a rubric form for answers where any of
+  many sets is right *(chapter 6)*;
+- lints not yet written *(chapter 6)*: a colour key whose wavelength is
+  outside the visible range; a footer phrase that names a key; a hint
+  naming a figure that lacks the scale it needs; each configuration in a
+  figure description summed against its atomic number; `\$n\$[spdf]`;
+  `_[fi]\b` italics; a dash-hyphen (`[a-z]-(they|wavelengths)`);
 - lints not yet written *(chapter 5)*: a negative key under "produced /
   released / evolved"; "Table N.M" in a
   stem; an `answerDisplay` unit that differs from the stem's "Enter … in"

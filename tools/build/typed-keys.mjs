@@ -23,6 +23,10 @@
  * their gate first, in page order. Exit 1 when any key is not graded
  * correct.
  *
+ * An electron configuration or an ordering is typed as typed-writings.mjs
+ * says: pass A as its stem's closing sentence asks, --variants every second
+ * writing in turn (unspaced, caret, shell order; `>`, a comma list).
+ *
  * --variants: a second ordinary way of writing each answer instead — the
  * letter x for the times sign, a leading "+" on an oxidation state, no
  * leading zero, a thousands comma, a charge typed bare with no state
@@ -35,6 +39,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { chromium } from 'playwright';
+import { configurationWritings, orderingWritings } from './typed-writings.mjs';
 
 const REPO = fileURLToPath(new URL('../..', import.meta.url)).replace(/\/$/, '');
 const BASE = process.env.BASE_URL || 'http://127.0.0.1:1315';
@@ -166,6 +171,33 @@ for (const route of routes()) {
         await options.nth(at).click({ timeout: 8000 });
         record.feedback = (await item.locator('.ap-mc-feedback').textContent()).trim();
         record.result = record.feedback.startsWith('Correct!') ? 'correct' : 'NOT-CORRECT';
+      } else if (info.tag === 'text-in' && (info.form === 'configuration' || info.form === 'ordering')) {
+        // Each writing in turn (typed-writings.mjs), one record each. A
+        // right answer locks the field, so it is unlocked for the next
+        // writing; the key's own writing is typed last, so a follow-up opens.
+        const write = info.form === 'configuration' ? configurationWritings : orderingWritings;
+        const writings = write(info.answer, { variants: pass === 'B' });
+        await item.locator('.ap-textin-check').waitFor({ timeout: 20000 });
+        const field = item.locator('.ap-textin-field');
+        await field.scrollIntoViewIfNeeded();
+        for (const [at, writing] of writings.entries()) {
+          const one = at === 0 ? record : { ...record };
+          one.typed = writing.typed; one.kind = writing.kind;
+          await item.evaluate((el) => { el.done = false; el.field.readOnly = false; el.button.disabled = false; });
+          await field.fill(writing.typed);
+          one.reading = (await item.locator('.ap-textin-reading').textContent().catch(() => '')) ?? '';
+          await field.press('Enter');
+          await page.waitForTimeout(60);
+          one.status = await item.evaluate((el) => el.status);
+          one.feedback = (await item.locator('.ap-textin-feedback').textContent()).trim();
+          one.result = one.status === 'correct' ? 'correct' : 'NOT-CORRECT';
+          if (at > 0) results.push(one);
+        }
+        if (pass === 'B') {
+          await item.evaluate((el) => { el.done = false; el.field.readOnly = false; el.button.disabled = false; });
+          await field.fill(write(info.answer)[0].typed);
+          await field.press('Enter');
+        }
       } else if (info.tag === 'text-in') {
         let typed = info.answer;
         let kind = 'as-keyed';

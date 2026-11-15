@@ -78,7 +78,11 @@ export const plain = (value) => normalizeText(String(value ?? '')
   //   ("Pb ( N O 3 )", "Ca F 2", "K N O 3" with the N underlined);
   .replace(/(?<![A-Za-z])[A-Z][a-z]?(?: [A-Z][a-z]?)+(?= \d| \()/g, (run) => run.replace(/ /g, ''))
   //   and a coefficient is its own number ("2HNO₃" is the source's "2 HNO 3").
-  .replace(/(?<![\w.,])(\d+)(?=[A-Z[(])/g, '$1 '));
+  .replace(/(?<![\w.,])(\d+)(?=[A-Z[(])/g, '$1 ')
+  //   A subshell is its shell number and its letter (chapter 6): the page's
+  //   "1s²2s²" and "3d orbitals" are the source's "1 <em>s</em><sup>2</sup>"
+  //   and "3 <em>d</em> orbitals".
+  .replace(/(?<![\w.,])([1-7])([spdf])(?![A-Za-z])/g, '$1 $2'));
 
 const padded = (value) => ` ${value} `;
 
@@ -147,6 +151,38 @@ export function glossaryAliases(xml) {
       const a = term.slice(0, term.length - shared).join(' ');
       const b = alias.slice(0, alias.length - shared).join(' ');
       if (a && b && a !== b && !pairs.some(([x, y]) => (x === a && y === b) || (x === b && y === a))) pairs.push([a, b]);
+    }
+  }
+  return pairs;
+}
+
+/**
+ * The abbreviations a module prints for a name, in parentheses after it —
+ * "the first ionization energy (IE<sub>1</sub>)" (6.5) — as `[name,
+ * abbreviation]`, both as printed (the abbreviation's subscript run into
+ * it: "IE1"). An abbreviation is one capital, then capitals or small
+ * letters, and a subscript number; the name the run of words before the
+ * parenthesis whose initials it holds, read back to the first word whose
+ * initial is the abbreviation's first letter.
+ */
+export function printedAbbreviations(xml) {
+  const pairs = [];
+  const text = String(xml ?? '').replace(/<sub>(\d+)<\/sub>/g, '$1');
+  for (const match of text.matchAll(/((?:[A-Za-z]+\s+){0,5}[A-Za-z]+)\s+\(([A-Z][A-Za-z]{0,4}\d*)\)/g)) {
+    const words = match[1].split(/\s+/);
+    const abbreviation = match[2];
+    const initials = abbreviation.replace(/\d+$/, '').toLowerCase();
+    // The words whose initials spell the letters of the abbreviation, in order.
+    for (let from = words.length - 1; from >= 0; from -= 1) {
+      const name = words.slice(from);
+      const spelled = name.map((word) => word[0].toLowerCase()).join('');
+      if (spelled === initials || (initials.length < name.length && name[0][0].toLowerCase() === initials[0] && initials.split('').every((letter) => spelled.includes(letter)))) {
+        // A numbered abbreviation names its ordinal too: IE₁ is the FIRST ionization energy.
+        const ordinal = /\d$/.test(abbreviation) && /^(?:first|second|third|fourth|fifth|sixth|seventh)$/i.test(words[from - 1] ?? '');
+        const pair = [(ordinal ? [words[from - 1], ...name] : name).join(' ').toLowerCase(), abbreviation];
+        if (!pairs.some(([a, b]) => a === pair[0] && b === pair[1])) pairs.push(pair);
+        break;
+      }
     }
   }
   return pairs;
@@ -473,6 +509,10 @@ export function workedExamples(xml) {
 export function namedParts(answer) {
   const text = String(answer ?? '').trim().replace(/[.;]$/, '');
   if (!/^(?:only\s+)?\([a-z]\)(?:\s*,?\s*(?:and\s+)?\([a-z]\))*$/i.test(text)) return null;
+  // Labels with nothing between them — no comma, no "and", no "only" — head
+  // answers that are images ("(a) [diagram] (b) [diagram]", 6.4's orbital
+  // diagrams, read without their images): parts, not a list of names.
+  if (/\)\s*\(/.test(text) && !/,|\band\b|^only\b/i.test(text)) return null;
   return [...text.matchAll(/\(([a-z])\)/gi)].map((match) => match[1].toLowerCase());
 }
 
@@ -498,10 +538,24 @@ export function closedSet(stem, answer) {
   const lettered = sequentialParts(stem);
   if (!lettered || !/\bwhich of the following\b/i.test(lettered.lead)) return null;
   if (!answer || sequentialParts(answer, { answer: true }) || namedParts(answer)) return null;
+  const choices = lettered.parts.map(({ label, text }) => ({ label, text }));
+  // …or by its LETTER, as the one the answer calls the answer: "Although
+  // both (b) and (c) are correct, (e) encompasses both and is the best
+  // answer." (6.4, whose options are the stem's own "(d) Both Mg and S (e)
+  // Both Si and S").
+  const byLetter = chosenLetter(answer);
+  if (byLetter && choices.some((choice) => choice.label === byLetter)) return { lead: lettered.lead, choices, chosen: byLetter };
   const said = sampleWords(answer);
   const named = lettered.parts.filter((part) => sampleWords(part.text).trim() && said.includes(sampleWords(part.text)));
   if (named.length !== 1) return null;
-  return { lead: lettered.lead, choices: lettered.parts.map(({ label, text }) => ({ label, text })), chosen: named[0].label };
+  return { lead: lettered.lead, choices, chosen: named[0].label };
+}
+
+/** The one part letter an answer calls THE answer ("(e) … is the best answer", "(c) is correct"), or null. */
+export function chosenLetter(answer) {
+  const found = [...String(answer ?? '').matchAll(/\(([a-z])\)(?:[^().;]|\((?![a-z]\))[^)]*\))*?\bis\s+(?:the\s+)?(?:(?:best|correct|right)\s+)?(?:answer|correct)\b/gi)]
+    .map((match) => match[1].toLowerCase());
+  return new Set(found).size === 1 ? found[0] : null;
 }
 
 /** How alike an option must read to a part to be that part. */
@@ -752,10 +806,26 @@ function ownScore(unit, question, item = {}) {
     const near = tokenSimilarity(question, unit.lead);
     return near >= WHOLE_FLOOR ? { score: near, words: 0, near, exact: 0 } : { score: 0, words: 0 };
   }
+  // One member of an unlettered list, asked yes or no (6.5: "Which atom
+  // and/or ion is (are) isoelectronic with Br⁺: Se²⁺, Se, As⁻, Kr, Ga³⁺,
+  // Cl⁻?" → "Se, As⁻", carried as "Is the following atom or ion
+  // isoelectronic with Br⁺? Se²⁺" and five more): the member is this unit's
+  // when its list holds it, under a question that reads like the lead-in.
+  const member = memberAsked(unit, question, item);
+  if (member) {
+    const lead = tokenSimilarity(unit.stem.slice(0, unit.stem.lastIndexOf(':')), question);
+    if (lead >= LEAD_FLOOR) return { score: 1, words: 1, near: lead, exact: tight(member).length };
+  }
   // How much the question reads like THIS unit's whole stem, and whether it
   // prints the part character for character: what ranks two units that both
   // pass (`unitFor`). Sibling parts and twin exercises share most words.
-  const near = tokenSimilarity(question, unit.stem);
+  // A question that prints a configuration is also read as `plain` reads
+  // both (the page's "1s²2s²2p⁶" is one word, the source's "1 s 2 2 s 2 2 p 6"
+  // nine) — for a lettered part as for a whole exercise, or a whole exercise
+  // read that way outranks the part the question prints verbatim (6.4: "…
+  // given: [Kr]5s²4d¹⁰5p⁶" was read as the Zr exercise).
+  const configured = /\d[spdf][⁰¹²³⁴-⁹]/.test(question);
+  const near = Math.max(tokenSimilarity(question, unit.stem), configured ? tokenSimilarity(plain(question), plain(unit.stem)) : 0);
   if (unit.partText !== null && unit.partText !== undefined) {
     const part = plain(unit.partText);
     // The length of the part printed character for character, so that of
@@ -793,7 +863,20 @@ function ownScore(unit, question, item = {}) {
       // be read into an item that carries the other's lead-in.
       const underOwnLead = !unit.lead || phraseCoverage(unit.lead, question) >= RESTATED_FLOOR;
       const share = words >= RESTATED_WORDS && underOwnLead ? phraseCoverage(unit.partText, question) : 0;
-      return share >= RESTATED_FLOOR ? { score: RESTATED_SCORE * share, words, near, exact } : { score: 0, words: 0 };
+      if (share >= RESTATED_FLOOR) return { score: RESTATED_SCORE * share, words, near, exact };
+      // A part that is only a datum set inline in the lead-in's sentence —
+      // "…contains two lines whose frequencies are (a) 3.45 × 10¹⁴ Hz and (b)
+      // 6.53 × 10¹⁴ Hz. What are …?" (6.1) — restated per part in the
+      // singular ("…contains a line whose frequency is 3.45 × 10¹⁴ Hz. …"),
+      // since a stem may not print "(a)…(b)". The part is the item's when
+      // the question prints the datum's numbers as one run, under a lead-in
+      // it reads like. Below a restated part's score: siblings differ only
+      // in the datum.
+      const datum = dataRun(unit.partText);
+      if (datum && unit.lead && tokenSimilarity(unit.lead, question) >= LEAD_FLOOR && padded(plain(question)).includes(padded(datum))) {
+        return { score: RESTATED_SCORE * RESTATED_FLOOR, words: datum.split(' ').length, near, exact: 0 };
+      }
+      return { score: 0, words: 0 };
     }
     const lead = unit.lead ? tokenSimilarity(unit.lead, question) : 1;
     return lead >= LEAD_FLOOR || words >= STANDALONE_WORDS ? { score: 1, words, near, exact } : { score: 0, words: 0 };
@@ -808,8 +891,59 @@ function ownScore(unit, question, item = {}) {
   // of such an item and none is the source's, so the stem is also read
   // without them. Only an item that carries such a reference is read so.
   const own = withoutCrossReference(question);
-  const score = Math.max(tokenSimilarity(question, unit.stem), own === null ? 0 : tokenSimilarity(own, unit.stem));
+  // …and read as `plain` reads both, where the page's print and the source's
+  // markup tokenize apart: the page's "1s²2s²2p⁶" is one word, the source's
+  // "1 s 2 2 s 2 2 p 6" nine (6.4's "Which ion … has the electron
+  // configuration …?").
+  const score = Math.max(near, own === null ? 0 : tokenSimilarity(own, unit.stem));
   return { score: score >= WHOLE_FLOOR ? score : 0, words: 0, near: Math.max(near, score), exact: 0 };
+}
+
+/**
+ * A lettered part that is only a datum — its text up to its first sentence
+ * end is a number and at most a unit and a joining word ("3.45 × 10 14 Hz
+ * and", "6.53 × 10 14 Hz. What are …") — as the run of its number tokens,
+ * `plain`ed ("3 45 10 14"); else null.
+ */
+export function dataRun(partText) {
+  const own = String(partText ?? '').split(/(?<=[.?!])\s+(?=[A-Z])|\?\s*/)[0].replace(/[.,;]\s*$/, '');
+  // A measured number — a decimal, or a power of ten — never a formula's
+  // subscript: "MgCl 2" is a compound, not a datum (2.6).
+  if (!printedNumerals(own).some((numeral) => /[.×x]/.test(numeral.printed))) return null;
+  const words = plain(own).split(' ').filter(Boolean);
+  const numbers = words.filter((word) => /^\d+$/.test(word));
+  if (!numbers.length || words.length - numbers.length > 3) return null;
+  const first = words.findIndex((word) => /^\d+$/.test(word));
+  const run = [];
+  for (let at = first; at < words.length && /^\d+$/.test(words[at]); at += 1) run.push(words[at]);
+  return run.length === numbers.length ? run.join(' ') : null;
+}
+
+/**
+ * The members of an unlettered stem's list — the comma list after its last
+ * colon, up to the question mark ("…with Br⁺: Se²⁺, Se, As⁻, Kr, Ga³⁺,
+ * Cl⁻?") — as written, or [] when it has no such list of two or more.
+ */
+export function listMembers(stem) {
+  const text = String(stem ?? '');
+  const at = text.lastIndexOf(':');
+  if (at === -1) return [];
+  const members = text.slice(at + 1).replace(/[?.]\s*$/, '').split(/,|\s+or\s+/).map((member) => member.replace(/^\s*(?:or|and)\s+/, '').trim()).filter(Boolean);
+  return members.length >= 2 && members.every((member) => member.split(' ').length <= 3) ? members : [];
+}
+
+/**
+ * The member of an unlettered unit's list that a yes-or-no item asks about
+ * — the text after the question's last question mark, when the list holds
+ * it — or null.
+ */
+export function memberAsked(unit, question, item = {}) {
+  if (unit.partText !== null && unit.partText !== undefined) return null;
+  const options = (item.options || []).map((option) => plain(option));
+  if (options.length !== 2 || !options.includes('yes') || !options.includes('no')) return null;
+  const asked = String(question ?? '').split('?').pop().trim().replace(/\.$/, '');
+  if (!asked) return null;
+  return listMembers(unit.stem).find((member) => tight(member) === tight(asked)) ?? null;
 }
 
 const CROSS_REFERENCE = /\bthe (?:example|exercise|figure|table) “[^”]*” in Section \d+\.\d+|\bthe [^,.;()“”]{1,60}? (?:example|exercise) in Section \d+\.\d+/g;

@@ -591,3 +591,58 @@ test('a formation equation with a fractional coefficient is graded at the key\'s
   assert.equal(chemCanon('4 C ( s , graphite ) + 5 H 2 ( g ) + ( 1 )/( 2 ) O 2 ( g ) ⟶ C 2 H 5 OC 2 H 5 ( l )', 'equation'), chemCanon(ether, 'equation'));
   assert.equal(chemCanon('2 Na ( s ) + C ( s , graphite ) + ( 3 )/( 2 ) O 2 ( g ) ⟶ Na 2 CO 3 ( s )', 'equation'), chemCanon(soda, 'equation'));
 });
+
+test('an ordering: members separated by <, or > from the other end', async () => {
+  // Chemistry 2e 6.5, Exercises 5 and 11.
+  const { checkOrdering } = await import('./check-chem.mjs');
+  const atoms = 'Rb < Li < N < F';
+  for (const typed of ['Rb < Li < N < F', 'Rb<Li<N<F', 'F > N > Li > Rb', 'Rb < Li < N < F.']) {
+    assert.equal(checkChem(typed, atoms, { form: 'ordering' }).status, 'correct', typed);
+  }
+  const ions = 'Si⁴⁺ < Al³⁺ < Ca²⁺ < K⁺';
+  for (const typed of ['Si4+ < Al3+ < Ca2+ < K+', 'Si^4+ < Al^3+ < Ca^2+ < K^+', 'Si⁴⁺ < Al³⁺ < Ca²⁺ < K⁺', 'K+ > Ca2+ > Al3+ > Si4+']) {
+    assert.equal(checkChem(typed, ions, { form: 'ordering' }).status, 'correct', typed);
+  }
+  // The source prints a charge's minus as a hyphen-minus or an en dash (6.5, Exercise 15).
+  assert.equal(checkOrdering('Mg2+ < K+ < Br- < As3-', 'Mg²⁺ < K⁺ < Br⁻ < As³⁻').status, 'correct');
+});
+
+test('a wrong ordering is told what is wrong, and never which member goes where', async () => {
+  const { checkOrdering, ORDERING_REVERSED, ORDERING_MIXED, ORDERING_ORDER, ORDERING_CAPITALS, ORDERING_CHARGE, ORDERING_UNREAD, ORDERING_NO_SIGN } = await import('./check-chem.mjs');
+  const atoms = 'Rb < Li < N < F';
+  assert.deepEqual(checkOrdering('F < N < Li < Rb', atoms), { status: 'incorrect', message: ORDERING_REVERSED });
+  // A list with no sign is refused, in any order (ruled November 15, 2026).
+  assert.deepEqual(checkOrdering('Rb, Li, N, F', atoms), { status: 'incorrect', message: ORDERING_NO_SIGN });
+  assert.deepEqual(checkOrdering('Rb Li N F', atoms), { status: 'incorrect', message: ORDERING_NO_SIGN });
+  assert.deepEqual(checkOrdering('rubidium, lithium', atoms), { status: 'incorrect', message: ORDERING_UNREAD }, 'not a list of symbols');
+  assert.deepEqual(checkOrdering('Rb > Li > N > F', atoms), { status: 'incorrect', message: ORDERING_REVERSED });
+  assert.deepEqual(checkOrdering('Rb < N < Li < F', atoms), { status: 'incorrect', message: ORDERING_ORDER });
+  assert.deepEqual(checkOrdering('Rb < Li > N < F', atoms), { status: 'incorrect', message: ORDERING_MIXED });
+  const members = 'Use each of the 4 members the question lists, each once.';
+  assert.deepEqual(checkOrdering('Rb < Li < N', atoms), { status: 'incorrect', message: members });
+  assert.deepEqual(checkOrdering('Rb < Li < N < N', atoms), { status: 'incorrect', message: members });
+  assert.deepEqual(checkOrdering('Rb < Li < N < O', atoms), { status: 'incorrect', message: members });
+  assert.deepEqual(checkOrdering('rb < Li < N < F', atoms), { status: 'incorrect', message: ORDERING_CAPITALS });
+  assert.deepEqual(checkOrdering('Si < Al < Ca < K', 'Si⁴⁺ < Al³⁺ < Ca²⁺ < K⁺'), { status: 'incorrect', message: ORDERING_CHARGE });
+  assert.deepEqual(checkOrdering('<', atoms), { status: 'incorrect', message: ORDERING_UNREAD });
+  assert.equal(checkOrdering('', atoms).status, 'empty');
+  // No message prints a member (the formula field's charge sentence gives Ca2+, a member of 6.5's key).
+  for (const message of [ORDERING_REVERSED, ORDERING_MIXED, ORDERING_ORDER, ORDERING_CAPITALS, ORDERING_CHARGE, ORDERING_UNREAD, ORDERING_NO_SIGN, members]) {
+    assert.doesNotMatch(message, /\b(?:Rb|Li|N|F|Si|Al|Ca|K)\d*[+-]?(?=[\s,.]|$)/, message);
+  }
+});
+
+test('an ordering\'s preview, canon, and key rules', () => {
+  assert.equal(previewChem('F > N > Li > Rb', 'ordering'), 'F > N > Li > Rb');
+  assert.equal(previewChem('Si4+ < Al3+', 'ordering'), 'Si⁴⁺ < Al³⁺');
+  assert.equal(chemCanon('Mg^{2+} < K^{+} < Br^{–} < As^{3–}', 'ordering'), chemCanon('Mg²⁺ < K⁺ < Br⁻ < As³⁻', 'ordering'));
+  assert.equal(chemCanon('F > N > Li > Rb', 'ordering'), chemCanon('Rb < Li < N < F', 'ordering'));
+  assert.equal(chemCanon('Rb, Li, N, F', 'ordering'), null, 'a gate reads a sign, not a bare list');
+  assert.equal(chemKeyProblem('Si⁴⁺ < Al³⁺ < Ca²⁺ < K⁺', 'ordering'), null);
+  assert.match(chemKeyProblem('Rb<Li<N<F', 'ordering'), /not written in print/);
+  assert.match(chemKeyProblem('F > N > Li > Rb', 'ordering'), /not written in print/);
+  assert.match(chemKeyProblem('Rb < Li < Rb', 'ordering'), /twice/);
+  assert.match(chemKeyProblem('Rb < sodium', 'ordering'), /does not read/);
+  assert.match(chemKeyProblem('Rb < Li', 'ordering', 'Li < Rb'), /no accept list/);
+  assert.match(chemKeyProblem('Rb < Li < N < F', 'formula'), /declare answerForm="ordering"/);
+});

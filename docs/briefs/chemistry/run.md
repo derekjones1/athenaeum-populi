@@ -188,6 +188,42 @@ Eight things chapter 5 added (`docs/history/chemistry.md`, "Chapter 5"):
   reader that opened it, with its address**; the parent reads the file,
   then opens the address itself.
 
+Nine things chapter 6 added (`docs/history/chemistry.md`, "Chapter 6"):
+
+- **The run facts list every CONSTANT a key uses, not only the ones the
+  page states**: Avogadro's number was needed by two items of 6.1 and was
+  nowhere on the page; and each stated constant is set against Appendix D
+  before the wave (the source's k was truncated, not rounded).
+- **A ruling that asks for a FORM** (a link, a closing sentence, a rubric,
+  a hint in math) **is tried on a scratch item through `verify-section`
+  before it is sent**: the parent ruled relative links against the
+  playbook, math in a `textin` hint against the lint, a criteria rubric
+  against the rubric lint, and an `accept` member the objective heading
+  prints.
+- **A new answer form is built before the wave by one Author-kind agent
+  from a written specification** (the forms, what is free, each message,
+  the closing sentence, every caller), and the same agent is resumed for
+  each gate finding as pages land: it holds the gates' code in its
+  context.
+- **The gate agent's own change is re-run on the whole corpus each time**:
+  an intermediate version broke a chapter 2 page and the parent saw it
+  only because the gate was run after every landing.
+- **A stem that lists an ordering's members in key order answers itself**
+  whatever the field requires; the rendered-page reader found it, not the
+  replay.
+- **A Source note beside an unanswered self-check is read for its answer
+  like any other**: the parent's own wording for the cesium line gave it
+  away.
+- **A reader's finding "from memory" goes to a second reader** who greps
+  the book's own later chapters first, then opens a source; the parent
+  reads each saved page, and paraphrases without quotation marks where an
+  address refuses the parent's own request.
+- **A run paused at a usage limit resumes its agents by `SendMessage`
+  after the reset**; an agent that had written nothing is resumed the same
+  way, not replaced.
+- **`verify:typed` takes a route filter ("06-electronic"), not a content
+  path, and reads `BASE_URL`, not `PORT`.**
+
 ## 1. Before the wave
 
 `SP` is this session's scratchpad. Never a git command from an agent — say

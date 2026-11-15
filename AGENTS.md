@@ -35,8 +35,9 @@ exercises reach the page), the notation, measured-quantity grading
 (`\ce{…}` formulas in math, `sig-figs:<n> last-digit:<k>` fill-ins, and
 one right answer per item: a key that depends on an atomic mass is what
 the book's own periodic table, `data/chemistry/elements.json`, gives), typed
-formulas and equations (`textin` with `answerForm="formula"` or
-`"equation"`), the appendix rules, and
+formulas, equations, electron configurations, and orderings (`textin` with
+`answerForm="formula"`, `"equation"`, `"configuration"`, or `"ordering"`),
+the appendix rules, and
 the figure rules; a chapter is run from `docs/briefs/chemistry/run.md` with
 the agent briefs beside it, and a Knowledge Check (one per block of
 chapters, two to three items per section, its calculation items re-asking

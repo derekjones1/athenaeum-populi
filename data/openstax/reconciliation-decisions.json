@@ -7399,6 +7399,251 @@
       "status": "correct-local-source-defect",
       "errataEntry": 3086,
       "rationale": "The source solution prints \"25 kJ mol^−1\" for the enthalpy of solution of NH4NO3 under the ice-pack example's conditions: it divides the example's rounded 1.0 kJ, where the heat carried unrounded (1023.9 J) gives 25.53 kJ/mol, so the fill-in keys 26. The page keys that value with a visible Source note beside the item and a footer clause, and tools/verify/verify-source-keys.mjs lists the item (fs-idp146867872) in DISCLOSED_DEVIATIONS; the erratum holds the arithmetic. Ruled by the orchestrator after the checker, the consistency reading, and the blind solve, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/01-electromagnetic-energy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68729",
+      "sourceElementIds": [
+        "fs-idm57169680"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3087,
+      "rationale": "The Portrait of a Chemist box says Dorothy Hodgkin earned distinctions “prior to her death in 1993”. The Nobel Prize organisation's facts page (https://www.nobelprize.org/prizes/chemistry/1964/hodgkin/facts/) gives “Died: 29 July 1994”. The page prints 1994 with a visible Source note directly after the paragraph, inside the callout, and a footer clause. Found by the prose claim pass (F1), ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/01-electromagnetic-energy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68729",
+      "sourceElementIds": [
+        "fs-idm57169680"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3088,
+      "rationale": "The same box says Hodgkin's 1969 structure of insulin facilitated the mass production of the hormone. The FDA's “100 Years of Insulin” (https://www.fda.gov/about-fda/fda-history-exhibits/100-years-insulin) says insulin was produced from animal pancreases from the 1920s, with general distribution from 1923, and ties the first biosynthetic human insulin (1978–82) to the two chains. The page keeps the source's sentence and adds a second visible Source note inside the callout, and a footer clause. A loose claim: words kept, note added. Found by the prose claim pass (F6), read by the second reader, ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/01-electromagnetic-energy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68729",
+      "sourceElementIds": [
+        "fs-idm82699072"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3089,
+      "rationale": "The Wireless Communication box gives the AM band as “540-2830 kHz”. 47 CFR 73.14 (https://www.ecfr.gov/current/title-47/section-73.14) defines the AM broadcast band as 535 to 1705 kHz, with channels from 540 to 1700 kHz. The page prints “(540–1700 kHz)” with a visible Source note after the AM/FM figure and a footer clause. Found by the prose claim pass (F2), ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/01-electromagnetic-energy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68729",
+      "sourceElementIds": [
+        "CNX_Chem_06_01_LiteInterf",
+        "fs-idp197502992"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3090,
+      "rationale": "The interference photograph's caption compares its fringes with the closer fringes of “the shorter-wavelength blue light”, but the photograph is a single row of red fringes. The page keeps the caption and adds a visible Source note after the figure saying the pattern for blue light is not shown, and a footer clause. A loose claim: words kept, note added. Found by the prose claim pass (F3), ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/01-electromagnetic-energy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68729",
+      "sourceElementIds": [
+        "fs-idp168057200"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3091,
+      "rationale": "The Summary says the wavelengths of standing waves are limited to “discrete integer multiples of some characteristic lengths”; the body says a whole number of half-wavelengths must fit between the end points, so the allowed wavelengths are integer fractions of 2L. The page prints “discrete values: a whole number of half-wavelengths must fit a characteristic length” with a visible Source note after the Summary list that cites the body, and a footer clause. Found by the prose claim pass (F5), ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/02-the-bohr-model.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68732",
+      "sourceElementIds": [
+        "fs-idp56080096",
+        "fs-idp4204032",
+        "fs-idp247735616",
+        "fs-idp30549440"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3102,
+      "rationale": "The module gives k = 2.179 × 10^−18 J and works both examples with it. This book's Appendix D gives the Rydberg constant in joules as 2.1798724 × 10^−18 J, which is 2.180 × 10^−18 J at four figures, and Section 6.3 of the source prints −2.18 × 10^−18, so the page uses 2.180 × 10^−18 J everywhere (the body, both examples and their Check Your Learning answers, Key equations), with one visible Source note after the energy equation and a footer clause; the claim pass notes from memory that 2.179 may be R_H·hc, so the source's value is another constant, not a slip. The seven dependent keys are in DISCLOSED_DEVIATIONS under erratum 3102. Ruled by the orchestrator (run-facts decision 3), November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/02-the-bohr-model.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68732",
+      "sourceElementIds": [
+        "fs-idp30549440"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3103,
+      "rationale": "Example 6.5 divides hc by the rounded energy difference 7.566 × 10^−20 J. The page prints the wavelength line with the carried 7.5694 × 10^−20 J, so only the result is rounded (Section 3.3), with a visible Source note and a footer clause. Found by the 6.2 author, ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/03-development-of-quantum-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68733",
+      "sourceElementIds": [
+        "fs-idm151523216"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3110,
+      "rationale": "The paragraph gives de Broglie's doctoral dissertation as 1925. The Nobel Prize organisation's biography (https://www.nobelprize.org/prizes/physics/1929/broglie/biographical/) says he delivered the thesis in 1924. The page prints 1924 with a visible Source note after the λ = h/mv display and a footer clause. Found by the prose claim pass (F11), ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/03-development-of-quantum-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68733",
+      "sourceElementIds": [
+        "fs-idm114335872"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3111,
+      "rationale": "The paragraph has Davisson and Germer's electrons travelling through a crystal. Davisson's Nobel Lecture (https://www.nobelprize.org/uploads/2018/06/davisson-lecture.pdf) has the beam directed against a face of a nickel crystal and the scattered electrons measured in front of it. The page prints “scattered from” with a visible Source note after the electron-interference figure and a footer clause. Found by the prose claim pass (F13), read by the second reader, ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/03-development-of-quantum-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68733",
+      "sourceElementIds": [
+        "fs-idm146032560"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3112,
+      "rationale": "The paragraph has Born's interpretation of the wavefunction coming “a few years later” than Schrödinger's equation. Both papers are from 1926 (Schrödinger, Annalen der Physik 384, 361, doi:10.1002/andp.19263840404; Born, Zeitschrift für Physik 37, 863, doi:10.1007/BF01397477). The page prints “Later the same year” with a visible Source note after the equation display and a footer clause. Found by the prose claim pass (F10), ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/03-development-of-quantum-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68733",
+      "sourceElementIds": [
+        "fs-idp135680192"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3113,
+      "rationale": "The paragraph says it “was demonstrated in the 1920s” that hydrogen lines are pairs of closely spaced lines. Michelson and Morley found this fine structure in 1887 (W. E. Lamb, Nobel Lecture, 1955, https://www.nobelprize.org/uploads/2018/06/lamb-lecture.pdf); the 1920s brought the spin explanation. The page drops the phrase with a visible Source note after the paragraph and a footer clause. Found by the prose claim pass (F9), read by the second reader, ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/03-development-of-quantum-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68733",
+      "sourceElementIds": [
+        "fs-idm91739088"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3114,
+      "rationale": "The spin paragraph puts the electron's magnetic moment along its spin and the m_s = +½ state lower in a field, and calls the splitting of a line in the applied field fine structure. The electron's magnetic moment and g factor are negative in the CODATA values (https://physics.nist.gov/cgi-bin/cuu/Value?gem), so the moment is opposite to the spin and the m_s = −½ state is lower; splitting in a magnetic field is the Zeeman effect (NIST, Atomic Spectroscopy compendium, section 12). The page prints the corrected paragraph with a visible Source note after it and a footer clause; no item, hint, key term, or Summary sentence repeated the old claim. Found by the prose claim pass (F8, F9), read by the second reader, ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/04-electronic-structure-of-atoms-electron-configurations.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68734",
+      "sourceElementIds": [
+        "CNX_Chem_06_04_Ptableconf",
+        "fs-idp104721920"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3118,
+      "rationale": "The full electron-configuration table prints technetium as 5s¹4d⁶, curium as 7s²5f⁹ (one electron too many for Z = 96), berkelium as 7s²5f⁸6d¹, and lawrencium as 7s²5f¹⁴6d¹; the NIST Atomic Spectra Database (https://physics.nist.gov/PhysRefData/ASD/ionEnergy.html) gives [Kr]4d⁵5s², [Rn]5f⁷6d¹7s², [Rn]5f⁹7s², and [Rn]5f¹⁴7s²7p¹. The page keeps the image and its extended description as printed and adds a visible Source note after the figure naming the four cells, and a footer clause. No key depends on them. Found by the 6.4 author and the prose claim pass (F14), ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/04-electronic-structure-of-atoms-electron-configurations.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68734",
+      "sourceElementIds": [
+        "fs-idp170969264"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3119,
+      "rationale": "The list item says the IUPAC definition of transition elements leaves out Cu, Ag, and Au along with Zn, Cd, and Hg. The IUPAC definition (doi:10.1351/goldbook.T06456) is an element whose atom has an incomplete d sub-shell or which can give rise to cations with one, and the book's own Section 2.5 excludes only group 12 (“Per the IUPAC definition, group 12 elements are not transition metals”). The page prints the corrected sentence with a visible Source note inside the list item (Section 2.5 linked; Section 19.1, not yet on the site, in plain text) and a footer clause. Found by the prose claim pass (F15), read by the second reader, ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/05-periodic-variations-in-element-properties.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68735",
+      "sourceElementIds": [
+        "CNX_Chem_06_05_CovalradiT",
+        "fs-idm144132800",
+        "fs-idp28766560"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3129,
+      "rationale": "The covalent-radius figure draws the F–F distance as 128 pm and the halogen table gives F 64 pm; this book's table of bond lengths (Section 8.1, m68744) gives 141.2 pm, half of which is 71 pm, so the figure's 128 pm is not the distance in F₂ and 64 pm is a different, tabulated radius. The page keeps the figure and table and adds a visible Source note after them, and a footer clause. Found by the prose claim pass (F17), read by the second reader, ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/05-periodic-variations-in-element-properties.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68735",
+      "sourceElementIds": [
+        "CNX_Chem_06_05_Radiigraph",
+        "fs-idm164235920"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3130,
+      "rationale": "The atomic-radii graph puts F at about 72 pm and Al at about 143 pm, where the section's table and text give covalent radii of 64 and 118 pm; 143 pm is aluminum's radius in the metal (Section 10.6, m68773), so for the metals the graph plots radii in the metal. The page keeps the figure and adds a visible Source note after the graph, and a footer clause. A loose claim: figure kept, note added. Found by the 6.5 author and the prose claim pass, read by the second reader, ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/05-periodic-variations-in-element-properties.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68735",
+      "sourceElementIds": [
+        "CNX_Chem_06_05_Firstionen",
+        "fs-idp85824640"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3131,
+      "rationale": "The first-ionization-energy table prints Bi 800, P 1060, Hf 700, and Ta 760 kJ/mol; the NIST Atomic Spectra Database (https://physics.nist.gov/PhysRefData/ASD/ionEnergy.html) gives 703, 1012, 659, and 728. The page keeps the figure and its extended description and adds a visible Source note after the figure naming the four cells as printed and as measured, and a footer clause. Found by the prose claim pass (F18), ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/05-periodic-variations-in-element-properties.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68735",
+      "sourceElementIds": [
+        "CNX_Chem_06_05_Firstionen",
+        "fs-idp85824640",
+        "fs-idp3693744"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3132,
+      "rationale": "The first-ionization-energy table prints Ge 780 and As 960 kJ/mol, where the section's own table of successive ionization energies gives 762.2 and 944.5 for the same quantity. The page keeps the figure and names both cells in the Source note of erratum 3131, with the same footer clause. Found by the consistency reader (finding 11), ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/05-periodic-variations-in-element-properties.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68735",
+      "sourceElementIds": [
+        "fs-idp3693744"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3133,
+      "rationale": "The table of successive ionization energies prints Ga IE₄ 6180, Ge IE₃ 3302.1, Ge IE₅ 9021.4, and As IE₆ 12311.5 kJ/mol; the NIST Atomic Spectra Database evaluated values are 6101.8, 3286.1, 8731.9, and 11693.1. The page keeps the table and adds a visible Source note after it naming the four cells as printed and as measured, and a footer clause. Found by the prose claim pass (F19), read by the second reader, ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/05-periodic-variations-in-element-properties.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68735",
+      "sourceElementIds": [
+        "CNX_Chem_06_05_Elaffin",
+        "fs-idm80294800",
+        "fs-idp8026512"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3134,
+      "rationale": "The electron-affinity table prints B −23, Si −120, Ge −115, Sn −121, Pb −101, As −7, Bi −101, Tl −50, and F −322 kJ/mol, and the paragraph gives fluorine as −322; the NIST Chemistry WebBook (https://webbook.nist.gov/chemistry/) gives −27, −134, −119, −107, −35, −78, −91, −36, and −328. The page keeps the figure and its extended description, prints −328 in the paragraph, and adds a visible Source note after the figure listing each cell as printed and as measured, and a footer clause. Found by the prose claim pass (F16), ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/05-periodic-variations-in-element-properties.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68735",
+      "sourceElementIds": [
+        "CNX_Chem_06_05_Elaffin",
+        "fs-idm80294800"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3135,
+      "rationale": "The electron-affinity table gives Ca +150, Sr +160, and Ba +50 kJ/mol as calculated (endothermic) values; the NIST Chemistry WebBook gives measured values of −2, −5, and −14. The page keeps the figure and names the three in the Source note of erratum 3134, with the same footer clause. Found by the prose claim pass (F16), ruled by the orchestrator, November 15, 2026."
     }
   ]
 }

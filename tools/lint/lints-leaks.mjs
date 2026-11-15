@@ -64,7 +64,31 @@ import { bookKeyOf, blankPreservingOffsets, maskCode, mathSpans, shortcodes, SHO
 // The real textin grading normalizer, so a "printed key" here means printed
 // in exactly the sense check-text.mjs would grade a retyped copy of it.
 import { foldedForms, matchesForm, normalizeText } from '../../assets/js/lib/text/check-text.mjs';
-import { hasFractionalCoefficient, readSpecies } from '../../assets/js/lib/text/check-chem.mjs';
+import { chemCanon, hasFractionalCoefficient, readSpecies } from '../../assets/js/lib/text/check-chem.mjs';
+import { isConfiguration } from '../../assets/js/lib/text/check-config.mjs';
+import { chemSpans } from '../verify/verify-replay.mjs';
+
+/**
+ * The list of members an ordering's stem prints in the key's order or its
+ * exact reverse, or null. Either way the stem answers the item: the key's
+ * order is retyped with < between the members, the reverse with > (6.5's
+ * "list the following atoms in order of increasing radius: Mg, Ca, Rb, Cs"
+ * and "…ions …: K⁺, Ca²⁺, Al³⁺, Si⁴⁺", the consistency reading of chapter 6).
+ */
+export function orderingStemAnswers(question, answer) {
+  const key = chemCanon(answer, 'ordering');
+  if (!key) return null;
+  const reversed = key.split(' < ').reverse().join(' < ');
+  return chemSpans(String(question ?? ''), 'ordering').find((span) => {
+    const listed = chemCanon(span.replace(/\s*,\s*/g, ' < ').replace(/\s*>\s*/g, ' < '), 'ordering');
+    return listed === key || listed === reversed;
+  }) ?? null;
+}
+
+/** The sentence an electron configuration's stem closes with (Chemistry 6.4; lint). */
+export const CONFIGURATION_CLOSING = 'Type each subshell followed by its number of electrons, with a space between subshells.';
+/** The sentence an ordering's stem closes with (Chemistry 6.5; lint). */
+export const ORDERING_CLOSING = 'Type the symbols in the order you rank them, separated by <.';
 // The rubric-checkpoint coverage helper lints.mjs holds every checkpoint to.
 import { phraseCoverage } from '../lib/openstax-source.mjs';
 
@@ -446,7 +470,7 @@ export function footerKeySpellings(item) {
   const form = String(item.params.answerForm ?? '');
   if (!answer) return [];
   if (item.kind === 'textin') {
-    return ['formula', 'equation'].includes(form) ? [{ kind: form, text: answer }] : [];
+    return ['formula', 'equation', 'configuration', 'ordering'].includes(form) ? [{ kind: form, text: answer }] : [];
   }
   if (item.kind !== 'fillin' || /\bwhole-number\b/.test(form)) return [];
   const declared = /\bsig-figs:(\d+)/.exec(form);
@@ -681,6 +705,13 @@ export function lintLeaks(src, filename = '') {
       const symbol = /^[A-Z][a-z]?$/.test(key) && /\b(?:symbol|formula)/i.test(question);
       if (/⟶|→|⇌|->/.test(key)) {
         err(item.index, `${where}: its key ${JSON.stringify(key)} is an equation graded as words — declare answerForm="equation"`);
+      } else if (isConfiguration(key)) {
+        // The word grader drops the superscripts' meaning and the order:
+        // `1s22s22p6` would have to be typed as the key's characters.
+        err(item.index, `${where}: its key ${JSON.stringify(key)} is an electron configuration graded as words — declare answerForm="configuration"`);
+      } else if (/[<>]/.test(key) && chemCanon(key, 'ordering')) {
+        // The word grader drops `<`, so the members typed in ANY order pass.
+        err(item.index, `${where}: its key ${JSON.stringify(key)} is an ordering graded as words (the word grader drops "<", so any order passes) — declare answerForm="ordering"`);
       } else if ((marked || symbol) && readSpecies(key).length) {
         err(item.index, `${where}: its key ${JSON.stringify(key)} is a chemical formula graded as a word (the word grader ignores capitals, so "CO" passes for "Co") — declare answerForm="formula"`);
       }
@@ -711,6 +742,24 @@ export function lintLeaks(src, filename = '') {
     if (chemistry && item.params.answerForm === 'equation' && hasFractionalCoefficient(item.params.answer)
       && !/Type a fraction as 1\/2\./.test(String(item.params.question ?? ''))) {
       err(item.index, `${where}: its key has a fractional coefficient, and the field's guide does not say how a fraction is typed — close the stem "Type a fraction as 1/2."`);
+    }
+
+    // ---- a configuration or an ordering says how it is typed -----------------
+    // Neither field carries a typing guide (a configuration's would print a
+    // configuration, an ordering's a list), so the stem closes with the
+    // sentence — one that prints no key: "Type each subshell as 1s2 2s2 …"
+    // would hand over the start of every configuration in the book.
+    if (chemistry && item.params.answerForm === 'configuration'
+      && !String(item.params.question ?? '').includes(CONFIGURATION_CLOSING)) {
+      err(item.index, `${where}: an electron configuration's field has no typing guide — close the stem "${CONFIGURATION_CLOSING}"`);
+    }
+    if (chemistry && item.params.answerForm === 'ordering'
+      && !String(item.params.question ?? '').includes(ORDERING_CLOSING)) {
+      err(item.index, `${where}: an ordering's field has no typing guide — close the stem "${ORDERING_CLOSING}"`);
+    }
+    if (item.params.answerForm === 'ordering') {
+      const printed = orderingStemAnswers(item.params.question, item.params.answer);
+      if (printed) err(item.index, `${where}: the stem prints the members as ${JSON.stringify(printed)}, in the key's order or its reverse — the stem answers the item: list the members alphabetically`);
     }
 
     if (chemistry && item.params.answerForm === undefined) {
@@ -898,6 +947,20 @@ export function lintLeaks(src, filename = '') {
   // September 23, 2026 measurement found 13 hints, mostly topic-naming ones
   // like that, too noisy for an error. At two clauses the corpus had exactly
   // the one above, rewritten when the rule landed.
+  // ---- `scientific-notation` only where the question asks for it ------------
+  // The token refuses a plain decimal as `form` ("…now write it in
+  // scientific notation"), which is right only when the question says so.
+  // Where the stem does not, a learner who types 0.000123 for 1.23 × 10⁻⁴ is
+  // told to change the form of an answer nothing asked to be in that form
+  // (the consistency reading of chapter 6). Corpus clean when it landed
+  // (November 15, 2026: 34 such fill-ins, every stem names the notation).
+  for (const item of items) {
+    if (item.kind !== 'fillin' || !/(?:^|\s)scientific-notation(?:\s|$)/.test(String(item.params.answerForm ?? ''))) continue;
+    if (!/scientific|exponential/i.test(String(item.params.question ?? ''))) {
+      err(item.index, `${labelOf('fillin', item.params)}: answerForm declares scientific-notation, but the question does not ask for it — drop the token, or ask "in scientific notation" (or "exponential notation") as the source does`);
+    }
+  }
+
   for (const item of items) {
     if (item.kind !== 'selfcheck' || !item.closed || !(item.params.hint || '').trim()) continue;
     const parts = item.inner.split(/^[ \t]*===CHECKS===[ \t]*$/m);

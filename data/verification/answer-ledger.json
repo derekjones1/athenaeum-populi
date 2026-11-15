@@ -125,6 +125,18 @@
     "result": "agrees"
    }
   },
+  "003146f5b31cd15f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp81167248, cobalt-60 configuration: 27 e, ...4s²3d⁷; source print",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "00374ca2f64eaaa0": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp32862336: example answer; model answer carries the source sample whole (Sn²⁺ 48 e checked)"
+  },
   "003fcaef398c56d5": {
    "verdict": "ok"
   },
@@ -424,6 +436,14 @@
     "result": "agrees"
    }
   },
+  "00ea1b6166f68d4e": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp30549440 (Example 6.5), energy: 2.180e-18*4*(1/9-1/25) = 6.20089e-19 -> 6.201e-19; source 6.198e-19 (k = 2.179); correction with Source note",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "00ecceab9a68123a": {
    "verdict": "ok",
    "note": "sin(2x)=sin(x+x)=sinx cosx+cosx sinx=2 sinx cosx by the sum formula for sine; confirmed by numeric sampling of x -- functions are the Same, matching the CNXML-printed solution."
@@ -647,6 +667,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "014c59665a23dde8": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp105537776 (printed 17), model answer = source solution fs-idp131259664 verbatim"
   },
   "014cebbdb2b6b2fb": {
    "verdict": "ok",
@@ -1606,6 +1630,14 @@
    "verdict": "ok",
    "note": "TryIt2 part 1 (source ti_08_01_03, ambiguous SSA alpha=80,a=120,b=121): sin(beta)=b*sin(alpha)/a=0.9926 -> beta1=83.224 (acute); gamma1=180-80-83.224=16.776; c=a*sin(gamma1)/sin(alpha)=35.17 -> 35.2. Matches CNXML solution 1 (c approx 35.2)."
   },
+  "03254dfaf3796303": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp26092016, the +1 ion: 36 e, Z = 37, Rb⁺; source Rb⁺",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0326ce506f6d295e": {
    "verdict": "ok"
   },
@@ -1771,6 +1803,14 @@
    "verdict": "ok",
    "note": "fs-idm113313088 selfcheck. Model answer reuses the source solution verbatim; checkpoints decompose its three clauses with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "0367970699788193": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm5890656 part (b): 1s",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0367b570435aa765": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -1818,6 +1858,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "03705d8338d68c37": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm90452432, second answer paragraph (source comment) as model answer; question 'Why do we not notice…' added per parent decision 11"
   },
   "0372b45ae45c45d1": {
    "verdict": "ok",
@@ -2621,6 +2665,14 @@
     "result": "agrees"
    }
   },
+  "051ae2c899d0e752": {
+   "verdict": "ok",
+   "note": "cloze from body sentence fs-idp69243952 'A blackbody is a convenient, ideal emitter that approximates the behavior of many materials when heated.'; accept black body (ruling 4)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0524140235cb81a7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -3075,6 +3127,14 @@
   "0600e179a3e9463d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "06037eeec9a9c8f9": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm104859984 (printed 9) part (a) wavelength: 8.69e-7 m; c/3.45e14 = 8.6899e-7",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -4232,6 +4292,14 @@
     "result": "agrees"
    }
   },
+  "0849226a1ad3bbc1": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm150214960 (printed 73), solution 15 (5A); keyed 15, answerDisplay bare digit (G7)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "084e02a27173373a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -5318,6 +5386,14 @@
    "verdict": "ok",
    "note": "KC 3 13.3 § Protective Coverings of the Brain and Spinal Cord, m46719"
   },
+  "0a9bcc8212d0f9b1": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp162194832: Si 3p² and S 3p⁴ each have two unpaired electrons, Mg none; source answer keys (e) Both Si and S as the best answer",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0a9d90c6fdd9ed40": {
    "verdict": "ok",
    "note": "KC 2 5.2 § body Selective Permeability (fs-id1248539), m66374 — parent re-read against the module",
@@ -5691,6 +5767,14 @@
   "0b4fc1549bfeb551": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "0b578478abefb665": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm119922592 (printed 79), member Se; solution \"Se, As-\" lists it: yes",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "0b57a04f063ef210": {
    "verdict": "ok",
@@ -6543,6 +6627,14 @@
     "result": "agrees"
    }
   },
+  "0cf97f804b7e1108": {
+   "verdict": "ok",
+   "note": "glossary recall: Heisenberg uncertainty principle (fs-idm7039408), first sentence of the meaning; accept members printed in the body (fs-idp75105920, fs-idm139875104); hint re-pointed",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0cfcc43aada7cf9b": {
    "verdict": "ok",
    "note": "author-built from § Habituation: \"Prairie dogs typically sound an alarm call when threatened by a predator, but they become habituated to the sound of human footsteps when n…\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -6722,6 +6814,14 @@
     "result": "agrees"
    }
   },
+  "0d45181808155d05": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm139949520 part (a), type (x) s: 2",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0d45283dbc305c14": {
    "verdict": "ok",
    "note": "KC 1 2.1 § The Behavior of Electrons, m45998",
@@ -6765,6 +6865,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "0d55668dd1018d3b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp68295120 (printed 31), solution carried whole"
   },
   "0d5f7635a44dc741": {
    "verdict": "ok",
@@ -7820,6 +7924,14 @@
    "note": "source exercise fs-id1438253 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "0f8945bafc56ebd9": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm74793552 (printed 75), solution Mg < Ca < Rb < Cs; stem list reordered alphabetically (ruling 6.5-2)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -10480,6 +10592,14 @@
     "result": "agrees"
    }
   },
+  "14da7ba876f60056": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm127242304 part (a): n = 3, l = 1 → 3p",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "14dcc9f01c0d98d9": {
    "verdict": "ok",
    "note": "KC 7 37.5 § glossary isthmus (fs-idp89781968), m66631 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -12029,6 +12149,14 @@
     "result": "agrees"
    }
   },
+  "17c7058447cb4dd1": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm155159840 (printed 69), solution O",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "17c73ce99ce010a3": {
    "verdict": "ok",
    "note": "KC 3 17.5 § body, m46687"
@@ -12052,6 +12180,14 @@
   "17d33147c3c7fb65": {
    "verdict": "ok",
    "note": "eip-328 selfcheck. Model answer reuses the source solution, with \"(partial pressure of oxygen)\" corrected to \"(partial pressure of carbon dioxide)\" — the passage discusses only CO2 and never otherwise mentions oxygen; disclosed in footer as a source defect. Checkpoints decompose the corrected solution's clauses with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "17d4d9f57a32464a": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp42367872 (printed 67), solution Cl",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "17d9007e949130bc": {
    "verdict": "ok",
@@ -13844,6 +13980,10 @@
     "result": "agrees"
    }
   },
+  "1b1c17aade6f2120": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp45725024 part (e) Mo: OrbDiaSh2e_img (5s¹ 4d⁵, the module-table configuration)"
+  },
   "1b1c64bb1a07baef": {
    "verdict": "ok",
    "note": "body cloze from § Healthcare-Associated (Nosocomial) Infections: \"Health-care facilities seek to limit nosocomial infections through training and hygiene protocols such as those described in Control of Mic…\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
@@ -13997,6 +14137,14 @@
   "1b6722561bd2258c": {
    "verdict": "ok",
    "note": "author-built from § Transition Reaction, Coenzyme A, and the Krebs Cycle: \"As one turn of the cycle returns to the starting point of the four-carbon intermediate, the cycle produces two CO 2 molecules, one ATP mole…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "1b67d0f488140997": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp28548400 (printed 11) energy: CORRECTED per decision 5 to 9.505e-15 (hc/2.090e-11 = 9.50466e-15); source 9.502e-15 = h x rounded 1.434e19; item-level Source note",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -17225,6 +17373,14 @@
   "21e64b218392b31a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "21e8f41a7ef56f5e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp21050416 (printed 19): k(1/4-1/25) = 4.5780e-19 J / 1.602e-19 = 2.85768 -> 2.858 eV; source 2.856 eV (k = 2.179); correction with Source note",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -24511,6 +24667,10 @@
     "result": "agrees"
    }
   },
+  "3105f55eaab1cd50": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp45725024 part (b) Si: OrbDiaSh2b_img (3s² 3p²)"
+  },
   "310f23a71a991ce1": {
    "verdict": "ok",
    "note": "key-term recall from the Glossary appendix: otitis (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -26155,6 +26315,14 @@
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "34828ce58c0f1886": {
+   "verdict": "ok",
+   "note": "glossary recall: s orbital (fs-idm144189680); key printed in body para fs-idm13232848",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3482baeb155ea3b9": {
    "verdict": "ok",
    "note": "CNXML eip-281 (Critical Thinking Q28); preamble kept in full. Model answer is the source solution verbatim (isotopes as Unicode superscript). Independently re-derived: conservative replication keeps the original 15N/15N duplex intact each round while only synthesizing new 14N/14N duplexes; after 2 rounds from a single 15N/15N molecule you get 1 (15N/15N) + 3 (14N/14N) = 4 molecules, i.e. 25%/75%, matching the source solution's percentages exactly. Checkpoints restate its five clauses. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -26730,6 +26898,14 @@
   "359e5aeb18221e2f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "359ec2463042770f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm119922592 (printed 79), member Ga³⁺; solution \"Se, As-\" lists it: no",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -32704,6 +32880,14 @@
     "result": "agrees"
    }
   },
+  "419b586c862689e5": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp32131696: Tl Z = 81, Tl⁺ 80 e, loses 6p¹; source configuration matches",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "41a50b2ba4586a65": {
    "verdict": "ok",
    "note": "parent re-read 2026-09-24 (Biology re-review ch46–47 + KC 1–17): model answer from the module's own sentences, rubric clauses decompose it with no new claim, no nearby key printed"
@@ -33084,6 +33268,14 @@
   "427bc6051c4010ed": {
    "verdict": "ok",
    "note": "KC 5 24.2 § Chytridiomycota: The Chytrids, m66559 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "427e98c1d9f592aa": {
+   "verdict": "ok",
+   "note": "select-the-term filler from body para fs-idp8026512: \"Group 2 (2A) has a filled ns subshell...\"; options the paragraph's three features (completely filled shell, filled ns subshell, half-filled np subshell)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -34927,6 +35119,14 @@
     "result": "agrees"
    }
   },
+  "4646492736a46f72": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp81167248, iodine-131 protons: Z = 53; source 53",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4646af9ec9e9ecf3": {
    "verdict": "ok",
    "note": "author-built from § summary: \"Prokaryotic cells range in diameter from 0.1 to 5.0 μm.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -35289,6 +35489,10 @@
     "result": "agrees"
    }
   },
+  "4715bcfdf684a226": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm24126560 (printed 45): source table carried whole as the model answer (source's answer, +½ sign form); rubric is the source's sets"
+  },
   "4716075057e727c3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -35395,6 +35599,14 @@
   "475f06c8dfabf407": {
    "verdict": "ok",
    "note": "KC 4 18.2 § Antigen-Presenting Cells (APCs), m58885 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "47651ac40e1c6309": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm139949520 part (a), type (y) p: 2",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -35964,6 +36176,14 @@
   "4897593028466f97": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "489db22de6cdec41": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm104859984 (printed 9) part (a) energy: 2.29e-19 J; h*3.45e14 = 2.28597e-19",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -37358,6 +37578,14 @@
    "note": "key-term recall: cryptobiosis; printed in § summary: \"Specialized proteins enable them to enter cryptobiosis, a kind of suspended animation during which they can resist a number of adverse envi…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "4b8f6999e50774e8": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp31411280, the +3 ion: 41 electrons, Z = 44, Ru³⁺; source answer Ru³⁺",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -40006,6 +40234,14 @@
     "result": "agrees"
    }
   },
+  "50f26530c171a171": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm115982512 (printed 15) judgment: 'no' (orange ~600 nm -> ~5.0e14 Hz, below threshold)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "50f70bce9cd9a044": {
    "verdict": "ok",
    "note": "New summary cloze. m66378 Section Summary: 'Small hydrophobic ligands (like steroids) are able to penetrate the plasma membrane and bind to internal receptors.' Question and answer 'internal receptors' are an exact excerpt; accept list covers the singular variant; neither 'internal receptor(s)' phrase appears in the prompt itself. Disclosed in footer as the summary-derived recall item under the third objective. | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -40532,6 +40768,14 @@
   "522fdc99ba4bcd0b": {
    "verdict": "ok",
    "note": "cloze of fs-id1507328; accept Frank-Starling principle (head noun) and Frank-Starling mechanism (19.4 term); grader checked. Accept adds Starling’s law and Starling’s law of the heart (19.4).",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "52374c4baa80a50e": {
+   "verdict": "ok",
+   "note": "glossary recall: electromagnetic radiation (fs-idm80443200)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -43911,6 +44155,14 @@
     "result": "agrees"
    }
   },
+  "590bf3401b9b4630": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm169030688: 2n² = 32 → n = 4 (source 'n = 4')",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5914d031a182f417": {
    "verdict": "ok",
    "note": "body CYU, selfcheck; model answer assembled from § Ribosomes. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -43962,6 +44214,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver (blind, masked pages)",
+    "result": "agrees"
+   }
+  },
+  "59247a1c12fa48b8": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm139949520 part (b), type (z) d in n = 2: 0 (l ≤ n − 1 = 1)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -44722,6 +44982,14 @@
   },
   "5a9f6756b024566c": {
    "verdict": "ok"
+  },
+  "5aa695da0f5e2cbc": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp81167248, iodine-131 electrons: 53; source 53",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "5aa7c0f8ab2ab314": {
    "verdict": "ok",
@@ -46613,6 +46881,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "5e46d4e39baa938c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm139949520 part (a), type (z) d: 2",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5e477266fc1522fb": {
    "verdict": "ok",
    "note": "KC 1 1.6 § Mathematical Treatment of Measurement Results, m68683"
@@ -46992,6 +47268,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "5f411bfcfef4fb9a": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp24507936 (printed 29), model answer = source solution fs-idp40695152 verbatim (italic n set as math)"
   },
   "5f42cbf163f9eddd": {
    "verdict": "ok",
@@ -47449,6 +47729,14 @@
     "result": "agrees"
    }
   },
+  "6044b9a57e539d97": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm7154736 (printed 25): r = 64 a0 = 64*5.292e-11 m = 33.8688 A -> 33.87 (a0 four figures, n exact; decision 4); source 33.9 A (three figures); Source note; stem orbital corrected to orbit (rulings-2 F7)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "604b992658f9746a": {
    "verdict": "ok"
   },
@@ -47774,6 +48062,14 @@
     "result": "agrees"
    }
   },
+  "610cca3f65bbaf64": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm119922592 (printed 79), member Kr; solution \"Se, As-\" lists it: no",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "610d0ee49088151b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -47900,6 +48196,14 @@
   "615d991455c3e4f3": {
    "verdict": "ok",
    "note": "exercise fs-idm271075408 (Critical Thinking), model answer is the source solution verbatim — matches. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "615e649d80dc5b4e": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm90452432 (softball): source 1.9 × 10⁻³⁴ m; recomputed 6.626e-34/(0.100 × 35) = 1.893e-34 → 1.9e-34 (2 figures, 35 m/s)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "6162c399c7814746": {
    "verdict": "ok",
@@ -49301,6 +49605,14 @@
    "note": "key-term recall from the Glossary appendix: bioremediation (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "652b25caa78188cb": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm60446336 (printed 7) energy per mole: 1.823e5 J/mol; 3.027e-19*6.022e23 = 182285.9; Appendix D Avogadro parenthesis added (ruling 3)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -51514,6 +51826,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "6a2712682608d4be": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm127368704 (printed 33), solution with m₁ corrected to m_l (one-character typo)"
   },
   "6a293d49189ed51e": {
    "verdict": "ok",
@@ -55726,6 +56042,14 @@
   "72ce1d1942dade05": {
    "verdict": "ok"
   },
+  "72d3071928236ab6": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp203400832: 40 e, Zr; source Zr",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "72d93b85501e1582": {
    "verdict": "ok",
    "note": "source exercise fs-idm53491072 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -56005,6 +56329,14 @@
   "737a49d2048ac226": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "738c75137e7ae57a": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp30549440 (Example 6.5), wavelength: hc/6.20089e-19 = 3.20353e-7 -> 3.204e-7 (h 6.626e-34, c 2.998e8 as printed in the example); source 3.205e-7 (k = 2.179), within last-digit:1; correction with Source note",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -57688,6 +58020,14 @@
   "76e8e1cef6ca003d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "76ea7c49a04d2fc1": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm65177120 (answer note fs-idm148104624: Ba)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -59985,6 +60325,14 @@
     "result": "agrees"
    }
   },
+  "7b48d35913959e86": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp165789584 part (c) Fe: 26 e, 4s²3d⁶; source key matches",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7b4a65832f933f7a": {
    "verdict": "ok",
    "note": "KC 7 35.5 § body Attention Deficit Hyperactivity Disorder (ADHD) (fs-idm91984784), m66624 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
@@ -61107,6 +61455,14 @@
   "7d7460ee251a3871": {
    "verdict": "ok",
    "note": "RQ fs-id1378888, key A (fs-id1909687 last two sentences)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "7d772c2dcf0fbb7d": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp25345424 part (b): [Kr]5s²4d¹⁰5p⁶ is 54 electrons, Xe; source answer Xe",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -62773,6 +63129,14 @@
     "result": "agrees"
    }
   },
+  "8108032305e4ec7c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm139949520 part (b), type (y) p in n = 2: 3",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "810fb617ab42853b": {
    "verdict": "ok"
   },
@@ -64059,6 +64423,14 @@
    "verdict": "ok",
    "note": "m66383 visual-exercise fs-idp66941504, solution fs-id2177113 ('S. aureus produces a biofilm because the higher cell density in the biofilm permits the formation of a dense surface that helps protect the bacteria from antibiotics.') verbatim match to page model answer (rendered as selfcheck per footer, since source keys a prose solution). Both CHECKS clauses restate the solution with no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "83c685b56964d187": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm68979552 (printed 83), element part of solution \"O, IE1\"; reaction as Unicode text, no added closing (ruling 6.5-3)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "83c6c9d1dda58aae": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -64638,6 +65010,10 @@
     "result": "agrees"
    }
   },
+  "84cbaaa8e170586d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm27661840 (printed 1): source solution verbatim"
+  },
   "84cd62a1788287e5": {
    "verdict": "ok",
    "note": "key-term recall from the Glossary appendix: redox potential (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -65161,6 +65537,10 @@
     "result": "agrees"
    }
   },
+  "85de050a410a7f84": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm153995968 (printed 39), drawing answer CNX_Chem_06_03_Ex9soln_img in model answer + two sentences read off it"
+  },
   "85de9fe6cc0a1f5b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -65368,6 +65748,14 @@
   "864e383b8bb6abb3": {
    "verdict": "ok",
    "note": "Try It 3 (ti_09_02_03), CNXML system {x+y+z=7;3x-2y-z=4;x+6y+5z=24}. Independently derived general solution (x,4x-11,-5x+18) by elimination; substituted into all three equations symbolically and via node at x=0,1,2,-5,27 -- all residuals match RHS exactly. Matches CNXML solution. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "8654dcfec556b6e2": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm161581600: 2l + 1 = 5 (source 'The five degenerate 3d orbitals')",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "865ab5cd4079aaed": {
    "verdict": "ok",
@@ -65846,6 +66234,14 @@
     "result": "agrees"
    }
   },
+  "8761dfd5c1af955f": {
+   "verdict": "ok",
+   "note": "cloze from body sentence of para fs-idm114335872 'Davisson and Germer used a crystalline nickel target for their “slits,” …'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "876391470aa29280": {
    "verdict": "ok",
    "note": "sortbins from table fs-id1172099575807 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -66228,6 +66624,15 @@
     "result": "agrees"
    }
   },
+  "88441f3a6169be35": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm177180640 (printed 85), solution Ra; accept Ba per parent ruling (NIST ASD IE2 Ba 10.0038 eV < Ra 10.1472 eV), Source note after the item",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "Key Ra is the source's (m68735 fs-idm177180640) and what the trend predicts; Ba is in accept as a disclosed widening (erratum): NIST ASD gives Ba II 10.0038 eV below Ra II 10.1472 eV."
+   }
+  },
   "8845893c22c583a1": {
    "verdict": "ok",
    "note": "body cloze from § Euryarchaeota: \"For example, in 2004, Lepp et al. presented evidence that an archaean called Methanobrevibacter oralis inhabits the gums of patients with p…\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -66421,6 +66826,10 @@
   "8896ec0d5dd64f7e": {
    "verdict": "ok",
    "note": "m66620 Critical Thinking eip-80, model answer reuses the source solution verbatim (single axon = one signal at a time / multiple terminals reach several cells / rapid propagation); checkpoints decompose it with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "889869aecb68bb48": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm104859984 (printed 9) part (b) color: source 'blue' (459 nm)"
   },
   "88a244bd52fc2c0d": {
    "verdict": "ok",
@@ -67025,6 +67434,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-blind-solver",
+    "result": "agrees"
+   }
+  },
+  "89cf686ec5909d40": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp81167248, iodine-131 neutrons: 131 − 53 = 78; source 78",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -67963,6 +68380,14 @@
    "note": "source exercise fs-idp45719456 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "8bfa5476937f2ba9": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm115982512 (printed 15) threshold frequency: 5.49e14; 6.66e14 - 7.74e-20/h = 5.49187e14",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -68931,6 +69356,14 @@
    "note": "source exercise fs-id1172100494753 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "8df9c58f01626814": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm74775376 (printed 5) energy in J: 3.233e-19; hc/614.5e-9 = 3.23267e-19",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -70005,6 +70438,14 @@
    "verdict": "ok",
    "note": "Practice: x=2t+1,y=3sqrt(t) -> t=(x-1)/2, y=3sqrt((x-1)/2); node-verified residual ~0 over t=0..5; matches CNXML solution."
   },
+  "904cc83666843feb": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm80944240 (0.353 m = 35.3 cm; meters asked). c/850e6 = 0.35271 -> 0.353; c from body, last-digit:1",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "905026097fac1963": {
    "verdict": "ok",
    "note": "source SA fs-id1167662481603, unkeyed, author-written model answer | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -70930,6 +71371,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "924676fa5e2aa91a": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp108900240: model answer the source solution \"The charge on the ion.\" verbatim; rubric split from its words"
   },
   "92468a885eb693dd": {
    "verdict": "ok",
@@ -72697,6 +73142,14 @@
     "result": "agrees"
    }
   },
+  "95e20de314c9c640": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm226431552 part (c): 6s",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "95e34a363c3ca0a2": {
    "verdict": "ok",
    "note": "A(3)=125*e^{ln(0.7)*3}=42.875, rounds to 43 mg (node computed); matches CNXML solution 'A≈43 mg'. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -72959,6 +73412,10 @@
    "verdict": "ok",
    "note": "Selfcheck fs-idm197495200: model answer is the CNXML solution fs-idm223774464 verbatim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "96688aeed87b5241": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp45725024 part (d) Te: OrbDiaSh2d_img (5s² 5p⁴)"
+  },
   "96695eac55864f57": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
@@ -73123,6 +73580,15 @@
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
+   }
+  },
+  "96b1ead2d5f35c31": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm68979552 (printed 83), name part of solution \"O, IE1\"; name spelled out from the body \"first ionization energy (IE1)\" (para fs-idm65502944) (hint rewritten)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "Key \"first ionization energy\" stands: the source answers IE₁ (m68735 fs-idm68979552) and the reaction removes the first electron from a neutral atom. The solver's \"ionization energy\" is the general term and the page's own objective heading prints it, so the lint refuses it as an accept member (tried and reversed by the parent, November 15, 2026); the item's hint asks how many electrons are removed and from what."
    }
   },
   "96b4a26e869ace98": {
@@ -73304,6 +73770,22 @@
    "note": "Review Q7 (fs-id1433213), solution A = prophase; matches the Prophase paragraph ('now become visible under a light microscope'). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "9716165ce297000a": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm130545344 (printed 43): 4 orbitals × 3 = 12",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "9716bd47c0b3d2fe": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm14736000 (printed 3): 3.15 m; c/9.51e7 = 3.1525",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -73869,6 +74351,14 @@
   "9855643e86d0ff29": {
    "verdict": "ok",
    "note": "CNXML eip-50/eip-756 solution transcribed verbatim as model answer. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "9855f02771d902b6": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp171106816 (printed 21): -k*Z^2/1 with Z = 2 = -8.720e-18 J; source -8.716e-18 (k = 2.179); correction with Source note",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "9859d032eca5fbc3": {
    "verdict": "ok",
@@ -74438,6 +74928,14 @@
   "997d3ba70829f569": {
    "verdict": "ok",
    "note": "cloze of fs-id2506359 sentence 1; lighter in color (accept + lighter coloured)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "997e70319051c1df": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm139949520 part (b), type (x) s in n = 2: 1",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -75462,6 +75960,14 @@
     "result": "agrees"
    }
   },
+  "9be45cf9b1d1a5a0": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp44268800 (printed 23): -k/64 = -3.40625e-20 -> -3.406e-20; source -3.405e-20 (k = 2.179); correction with Source note",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9be694ff8a0e6905": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -75951,6 +76457,14 @@
   "9cd0fb2f65cf9d53": {
    "verdict": "ok",
    "note": "KC 2 7.4 § Protein Structure, m58816 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "9cd6dbb5a796f55c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp165789584 part (d) Te: 52 e, ...5p⁴; source key matches",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -76481,6 +76995,14 @@
    "note": "glossary recall: hypophyseal portal system (fs-idm18157552) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "9dfacca61fa8c1e2": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp28548400 (printed 11) frequency: 1.434e19 s^-1; c/2.090e-11 = 1.43445e19",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -81254,6 +81776,14 @@
     "result": "agrees"
    }
   },
+  "a777bd4bbf41b3d0": {
+   "verdict": "ok",
+   "note": "[hash rebuilt after a parent edit; was 83eb219044d63b08] Check Your Learning of example fs-idp247735616 (Example 6.4): E6 = -k/36 with k = 2.180e-18 J (decision 3) = -6.0556e-20 -> -6.056e-20; source prints -6.053e-20 (k = 2.179); correction with item Source note",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a77f2680fc289065": {
    "verdict": "ok",
    "note": "sin^2(theta)=2cos(theta)+2 -> substitute 1-cos^2 -> (cos theta+1)^2=0 -> cos theta=-1 -> theta=pi on [0,2pi]; algebra re-derived independently. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -81268,6 +81798,10 @@
   },
   "a782c9f91de3a145": {
    "verdict": "ok"
+  },
+  "a7851201cc650592": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm139949520 part (c): source sets 4 0 0 ½, 2 1 0 ½, 3 2 0 ½ carried whole as the model answer (source's answer, +½ sign form); rubric is the source's sets"
   },
   "a78a9b90f9d4fc75": {
    "verdict": "ok",
@@ -81388,6 +81922,14 @@
   "a7cb4fc966932d59": {
    "verdict": "ok",
    "note": "KC 7 34.2 § Organic Precursors, m66616 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "a7cdf01790a5fd1c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp165789584 part (e) Tb: 65 e, Aufbau ...6s²4f⁹; source key matches",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -81675,6 +82217,14 @@
   "a84c8e09845fa83d": {
    "verdict": "ok",
    "note": "m66434 Critical Thinking Q2 <solution id=fs-idm199022944>: 'Some insects can walk on water... because of the surface tension of water. Surface tension results from cohesion, or the attraction between water molecules at the surface of the body of water...' Page model answer matches verbatim; both CHECKS clauses restate this with no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "a8551c7341d8de63": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm74775376 (printed 5) energy in eV: 2.018; 3.23267e-19/1.602e-19 = 2.01790",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "a856e472c6a2b3e2": {
    "verdict": "ok",
@@ -82271,6 +82821,15 @@
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
+   }
+  },
+  "a994c84d1ffb5025": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp3240128: predicted order puts 4s¹ at K; source K",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "Key K stands: the stem asks which atom \"would be expected\" to have a half-filled 4s subshell, the predicted filling order, and the source keys K (m68734 fs-idp3240128). Cr and Cu are the exceptions the page names; the hint points to the predicted order."
    }
   },
   "a99549b43d245a27": {
@@ -86984,6 +87543,14 @@
     "result": "agrees"
    }
   },
+  "b3d602cc92a7843e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp165789584 part (b) Si: 14 e; source key matches",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b3d7a3dc3aae85f7": {
    "verdict": "ok"
   },
@@ -87004,6 +87571,14 @@
    "note": "source exercise fs-id1321696 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "b3e42684f54a3076": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm104859984 (printed 9) part (b) wavelength: 4.59e-7 m; c/6.53e14 = 4.5911e-7",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -87293,6 +87868,14 @@
   "b475d22ebce95d81": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "b4793b7a3c2adbc4": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm139949520 part (d), type (y): 2",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -87629,6 +88212,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "b52cf472a51c72b2": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm83382672 (printed 13): source answer carried whole after opening sentence and 'Sample answer:' label (answers-will-vary form; decision 9)"
   },
   "b52f5550f2e5db05": {
    "verdict": "ok",
@@ -90136,6 +90723,14 @@
     "result": "agrees"
    }
   },
+  "ba356030a5e236d3": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm64525920 (printed 81), solution Mg2+ < K+ < Br- < As3-; stem list reordered by element name (alphabetical by symbol is the reverse of the key)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ba3693e12de37704": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): 7*Math.cos(pi/6)=6.062177826491071=7*sqrt(3)/2; 7*Math.sin(pi/6)=3.5=7/2.",
@@ -92542,6 +93137,14 @@
    "verdict": "ok",
    "note": "fs-idm132388848 selfcheck; model answer is the source solution verbatim (two sentences), three-clause rubric decomposes both sentences with no new claim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "bf216d198647b209": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp26092016, the −2 ion: 36 e, Z = 34, Se²⁻; source Se²⁻",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "bf2a42c2003f3d56": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -92658,6 +93261,14 @@
    "note": "MC eip-549 (promoter-length hypothesis); source solution B = 'Transcription of Gene A involves fewer transcription factors.' matches CNXML options verbatim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "bf6e02c3ae4f000b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm5890656 part (a): 3d",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -92905,6 +93516,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "bfe703364d65d204": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp45725024 part (a) N: model answer shows OrbDiaSh2a_img (2s² 2p³), the part own image"
   },
   "bfe8359f42cf3585": {
    "verdict": "ok",
@@ -94247,6 +94862,14 @@
     "result": "agrees"
    }
   },
+  "c2d542ad69ba665e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm139949520 part (d), type (z): 3",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c2d5ae89dc115b96": {
    "verdict": "ok",
    "note": "fs-id2608612 CT, source solution fs-id1905827 verbatim as model answer"
@@ -94553,6 +95176,10 @@
     "result": "agrees"
    }
   },
+  "c37fbf4b988bc246": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm60446336 (printed 7) color: source 'red' (656.3 nm, red per 2spectra H line); bare value named in question's words; MC per decision 8 not built: no figure names colours"
+  },
   "c384966d0478e1b3": {
    "verdict": "ok",
    "note": "body cloze from § Lipid Catabolism: \"The four fused rings are sequentially broken in a multistep process facilitated by specific enzymes, and the resulting products, including…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -94795,6 +95422,14 @@
     "result": "agrees"
    }
   },
+  "c3f973f9cb2da9d0": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp81167248, iodine-131 configuration: 53 e, ...5s²5p⁵; source print",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c3fcab43609e434b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -95026,6 +95661,14 @@
   },
   "c48866e77a5dc5fb": {
    "verdict": "ok"
+  },
+  "c48a170abb56580c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm119922592 (printed 79), member Se²⁺; solution \"Se, As-\" lists it: no",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "c48a5d6f5bc1a5e5": {
    "verdict": "ok",
@@ -95597,6 +96240,14 @@
     "result": "agrees"
    }
   },
+  "c55b73835e63901f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm60446336 (printed 7) frequency: 4.568e14 s^-1; 3.027e-19/h = 4.56837e14",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c56b1c4740484ba8": {
    "verdict": "ok",
    "note": "(2sinxcosx)/(2cos²x-1)=sin(2x)/cos(2x)=tan(2x); confirmed as an identity numerically at x=0.4123. Retype of the printed subject fails single-trig-function (2 applications vs. 1), confirmed against the real grader. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -95628,6 +96279,14 @@
   "c57a3631cea1fab0": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c57ed20606b69808": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm49104768: 394 kJ/mol; h*9.87e14*6.022e23 = 393.83 kJ/mol; Appendix D Avogadro parenthesis added (ruling 3)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -98806,6 +99465,14 @@
     "result": "agrees"
    }
   },
+  "cc4f5e982f6fad25": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm60446336 (printed 7) wavelength: 656.3 nm; hc/E = 656.252 nm",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "cc4f658a9eaad8f2": {
    "verdict": "ok",
    "note": "RQ fs-id1661528 key D '-80 mv' (set as −80 mV, one-word case fix); body fs-id1517328 relative phase during K+ outflow / hyperpolarization below −70 mV (fs-id1229076)",
@@ -100149,6 +100816,14 @@
     "result": "agrees"
    }
   },
+  "cf422b46f7a7e3f3": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm119922592 (printed 79), member Cl⁻; solution \"Se, As-\" lists it: no",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "cf45659d6641fc5f": {
    "verdict": "ok",
    "note": "Author-written sortbins from fs-id2225935: ventral identifies stimuli/significance, uses temporal lobe structures, memories; dorsal locates objects in space, enters parietal lobe, influences frontal lobe activity.",
@@ -100680,6 +101355,14 @@
    "verdict": "ok",
    "note": "Body CYU2b. Model answer is the module's own sentence verbatim: 'Viruses can be transmitted through direct contact, indirect contact with fomites, or through a vector.'"
   },
+  "d067c9aba75b2a40": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp81167248, cobalt-60 neutrons: 60 − 27 = 33; source 33",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d06c4d2ca9fb0160": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -100901,6 +101584,14 @@
   "d0ec4feba33c7d5d": {
    "verdict": "ok",
    "note": "KC 2 8.7 § Other Biogeochemical Cycles, m58825",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d0ef0250db93e5cb": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp25345424 part (a): [Ar]4s²3d⁵ is 25 electrons, Mn; source answer Mn",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -101614,6 +102305,14 @@
    "note": "body cloze from § Amoebozoa: \"The Eumycetozoa are an unusual group of organisms called slime molds , which have previously been classified as animals, fungi, and plants…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "d2b39f54534b930e": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm127242304 part (b): n = 5, l = 3 → 5f",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -102990,6 +103689,14 @@
     "result": "agrees"
    }
   },
+  "d5923f2394d80501": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp31411280, the +2 ion: 41 electrons, Z = 43, Tc²⁺; source answer Tc²⁺",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d5938ecf05ef4d1b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -103896,6 +104603,14 @@
     "result": "agrees"
    }
   },
+  "d745bc55c2594d4e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm107831680 (printed 77), solution Si4+ < Al3+ < Ca2+ < K+; stem list reordered alphabetically (ruling 6.5-2)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d74d7944dc42cfa2": {
    "verdict": "ok",
    "note": "sum_{k=1}^{10}(5-6k) evaluated by loop = -280; matches CNXML ti_11_04_04."
@@ -104220,6 +104935,14 @@
     "result": "agrees"
    }
   },
+  "d7d56471c99cf212": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp90797744 (printed 27): k*9*(1-1/4) = 1.4715e-17 exactly, a tie; Appendix B rule (5 after odd digit rounds up) -> 1.472e-17 (decision 3); source 1.471e-17 (k = 2.179), within last-digit:1; correction with Source note",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d7db3bb4ac8673cc": {
    "verdict": "ok",
    "solved": {
@@ -104531,6 +105254,14 @@
   "d89dff07b7ee715f": {
    "verdict": "ok",
    "note": "KC 5 25.9 § Diuretics and Fluid Volume, m46434",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d89fa1577fb4aa17": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp81167248, cobalt-60 protons: Z = 27; source 27",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -104864,6 +105595,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "d98386a147de6305": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm226431552 part (b): 4d",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d984a106e1f3c328": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -105176,6 +105915,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "da2e644aad2594a0": {
+   "verdict": "ok",
+   "note": "glossary recall: quantization (fs-idm27187616)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "da32fc344e0cafbd": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -105290,6 +106037,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "da693915f6199935": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm104859984 (printed 9) part (a) color: FINAL ruling (rulings.md 6.1 #6) — model answer from the page's emission-spectra figure (869 nm, infrared), source prints 'red'; Source note after the block"
   },
   "da6a46ed903c49b2": {
    "verdict": "ok",
@@ -106350,6 +107101,10 @@
     "result": "agrees"
    }
   },
+  "dcac5b44a3e9f08e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp45725024 part (c) Fe: OrbDiaSh2c_img (4s² 3d⁶)"
+  },
   "dcafdac3d7ae2787": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -106650,6 +107405,14 @@
    "verdict": "ok",
    "note": "Matches m66449 exercise fs-id909432, solution fs-id1433806 (mitochondria vs. chloroplasts). 'Stacks (grana) surrounded by the stroma' is not an added claim: the same section's Chloroplasts prose states 'We call the fluid enclosed by the inner membrane that surrounds the grana the stroma.' 'own DNA' likewise grounded in the section's own 'chloroplasts have their own DNA and ribosomes.' All six CHECKS restate solution/section content. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "dd5e76ce03dd7c91": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm119922592 (printed 79), member As⁻; solution \"Se, As-\" lists it: yes",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "dd5f28afda19ac32": {
    "verdict": "ok",
    "note": "author-built from § Chromalveolata: \"The supergroup Chromalveolata is united by similar origins of its members’ plastids and includes the apicomplexans, ciliates, diatoms , and…\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -106912,6 +107675,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "ddeec37e5ec77bd3": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm139949520 part (e): l and m_l sets carried whole, framed in the question's words"
   },
   "ddf4549bdb84c0a2": {
    "verdict": "ok",
@@ -107910,6 +108677,14 @@
   "dff88b1f37ba2aa4": {
    "verdict": "ok",
    "note": "model answer read against m46489 solution or named paragraph"
+  },
+  "dff96152d2d0c050": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm5890656 part (c): 4f",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "e001aa64506fb50b": {
    "verdict": "ok",
@@ -111529,6 +112304,14 @@
    "verdict": "ok",
    "note": "Matches m66452 exercise fs-id1755641, solution fs-id1953693 ('form follows function' / arm-bat wing example). Model answer verbatim; CHECKS restate it. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "e76cfccd525b2b19": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm104859984 (printed 9) part (b) energy: 4.33e-19 J; h*6.53e14 = 4.32678e-19",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e76d7be755972078": {
    "verdict": "ok",
    "note": "re-read against CNXML m46023 and current page",
@@ -112785,6 +113568,14 @@
   "ea5c8cea764e8a20": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "ea65411932f32b5d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm226431552 part (a): 2p",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -114358,6 +115149,14 @@
   "ed884478a7b9e5e6": {
    "verdict": "ok",
    "note": "Source Review fs-id2068349, key A (fs-id1905850) = anaerobic metabolism in the muscles of the sprinter; options verbatim in source order.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "ed8c2a46d7e9587b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm155125392 (printed 71), solution Rb < Li < N < F",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -117672,6 +118471,14 @@
     "result": "agrees"
    }
   },
+  "f4721abd569e3adb": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp81167248, cobalt-60 electrons: 27; source 27",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f4727cc85bff974e": {
    "verdict": "ok",
    "note": "source exercise fs-id2607216 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
@@ -118159,6 +118966,14 @@
   "f571b140b57ef388": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "f572e08daebb6447": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm127242304 part (c): n = 2, l = 0 → 2s",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -119334,6 +120149,15 @@
   "f7acadcdf3415a19": {
    "verdict": "ok"
   },
+  "f7b157d0e70cf711": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm167417008 (answer note fs-idm123362928: \"Ne or He\"); key Ne, accept He, plus H (PROVISIONAL parent correction: smallest sphere in the page figure CovalradiT (b); source answer not exhaustive)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "Key Ne is the source's (m68735 fs-idm167417008#check, \"Ne or He\"); He and H are in accept, H as a disclosed widening (erratum) because the page's own radii figure shows it smaller."
+   }
+  },
   "f7b9f5b77559ed4d": {
    "verdict": "ok",
    "note": "CT fs-id1517525 source solution verbatim; checks are its clauses"
@@ -119626,6 +120450,14 @@
    "note": "glossary recall: spongocoel (fs-idp13848512) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "f838780a314fac2d": {
+   "verdict": "ok",
+   "note": "glossary recall: amplitude (fs-idp173255696)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -120427,6 +121259,14 @@
     "result": "agrees"
    }
   },
+  "f9d60e20f3b84841": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp165789584 part (a) N: 1s²2s²2p³ (7 e); source key matches",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f9e9a2695b090e0c": {
    "verdict": "ok",
    "note": "KC 1 3.2 § The Germ Theory of Disease, m58791"
@@ -120896,6 +121736,14 @@
   "faebcc7057ebb403": {
    "verdict": "ok",
    "note": "RQ fs-id1363683 key D vagus",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "faebd65547c8c631": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm50724640: 2 x 10^-24 J; h*3e9 = 1.9878e-24 -> 2e-24, sig-figs:1 last-digit:0; stem hyphen set as em dash (ruling G9)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -121509,6 +122357,14 @@
    "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): Graph-mode MC: correct option is the exact r=3cos(3θ) sampled polyline (3 petals, index 0 after reorder — verified visually via svgshot: 3-petal rose vs distractors 4-petal (n confusion), rotated 3-petal (cos vs sin), and shorter 3-petal (a=2 not 3)); matches source's printed answer image and the 'Rose curve, n odd' text. | Re-read October 6, 2026 after the polar grid was re-authored faint: rings consolidated, spokes faint; every plotted object, the window, and the key compared identical spec by spec.",
    "solved": {
     "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
+  "fc002fccb817f11b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm139949520 part (d), type (x): 1",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },

@@ -4559,6 +4559,1063 @@
       "caption": "The internal energy, U , of a system can be changed by heat flow and work. If heat flows into the system, q in , or work is done on the system, w on , its internal energy increases, Δ U > 0. If heat flows out of the system, q out , or work is done by the system, w by , its internal energy decreases, Δ U < 0.",
       "scale": "scaled-down"
     },
+    "CNX_Chem_06_00_CrabNeb": {
+      "source": "media/CNX_Chem_06_00_CrabNeb.jpg",
+      "sourceSha256": "09a1dbb25a85d52771d7ee655c8f9a713c9738d9f609136d88cac02459b162d1",
+      "module": "m68728",
+      "kind": "photo",
+      "width": 2400,
+      "height": 1200,
+      "variants": [
+        {
+          "width": 800,
+          "height": 400,
+          "file": "CNX_Chem_06_00_CrabNeb-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 800,
+          "file": "CNX_Chem_06_00_CrabNeb-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A photo is shown of the Crab Nebula.",
+      "caption": "The Crab Nebula consists of remnants of a supernova (the explosion of a star). NASA’s Hubble Space Telescope produced this composite image. Measurements of the emitted light wavelengths enabled astronomers to identify the elements in the nebula, determining that it contains specific ions including S + (green filaments) and O 2+ (red filaments). (credit: modification of work by NASA and ESA)"
+    },
+    "CNX_Chem_06_01_2spectra": {
+      "source": "media/CNX_Chem_06_01_2spectra.jpg",
+      "sourceSha256": "217fcf990dc36d7ef1af75d2fd285dac4c95324d0d5e210c173612354c64a378",
+      "module": "m68729",
+      "kind": "photo",
+      "width": 1240,
+      "height": 856,
+      "variants": [
+        {
+          "width": 800,
+          "height": 552,
+          "file": "CNX_Chem_06_01_2spectra-800.webp"
+        },
+        {
+          "width": 1240,
+          "height": 856,
+          "file": "CNX_Chem_06_01_2spectra-1240.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "An image is shown with 5 rows. Across the top and bottom of the image is a scale that begins at 4000 angstroms at the left and extends to 740 angstroms at the far right. The top row is a continuous band of the visible spectrum, showing the colors from violet at the far left through indigo, blue, green, yellow, orange, and red at the far right. The second row, labeled, “N a,” shows the emission spectrum for the element sodium, which includes two narrow vertical bands in the blue range, two narrow bands in the yellow-green range, two narrow bands in the yellow range, and one narrow band in the orange range. The third row, labeled, “H,” shows the emission spectrum for hydrogen. This spectrum shows single bands in the violet, indigo, blue, and orange regions. The fourth row, labeled, “C a,” shows the emission spectrum for calcium. This spectrum shows bands in the following colors and frequencies; one violet, five indigo, one blue, two green, two yellow-green, one yellow, two yellow-orange, one orange, and one red. The fifth row, labeled, “H g,” shows the emission spectrum for mercury. This spectrum shows bands in the following colors and frequencies; two violet, one indigo, two blue, one green, two yellow, two orange, and one orange-red. It is important to note that each of the color bands for the emission spectra of the elements matches to a specific wavelength of light. Extending a vertical line from the bands to the scale above or below the diagram will match the band to a specific measurement on the scale.",
+      "caption": "Compare the two types of emission spectra: continuous spectrum of white light (top) and the line spectra of the light from excited sodium, hydrogen, calcium, and mercury atoms. Note: The wavelength axis of these spectra use the angstrom length unit (1 Å = 0.1 nm)."
+    },
+    "CNX_Chem_06_01_AMFM": {
+      "source": "media/CNX_Chem_06_01_AMFM.jpg",
+      "sourceSha256": "caa56e0ba8a74a4fd2e2c0c271dd2309d432f203d4ffe71126ba71f54f6c8ef2",
+      "module": "m68729",
+      "kind": "photo",
+      "width": 847,
+      "height": 680,
+      "variants": [
+        {
+          "width": 800,
+          "height": 642,
+          "file": "CNX_Chem_06_01_AMFM-800.webp"
+        },
+        {
+          "width": 847,
+          "height": 680,
+          "file": "CNX_Chem_06_01_AMFM-847.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows 3 wave diagrams. The first wave diagram is in black and shows two crests, indicates a consistent distance from peak to trough, and has one trough in its span across the page. The label, “Signal,” appears to the right. Just below this, a wave diagram is shown in red. The wave includes sixteen crests, but the distance from the peaks to troughs of consecutive waves varies moving across the page. The peak to trough distance is greatest in the region below the peaks of the black wave diagram, and the distance from peak to trough is similarly least below the trough of the black wave diagram. This red wave diagram is labeled, “A M.” The third wave diagram is shown in blue. The distance from peak to trough of consecutive waves is constant across the page, but the peaks and troughs are more closely packed in the region below the peaks of the black wave diagram at the top of the figure. The peaks and troughs are relatively widely spaced below the trough region of the black wave diagram. This blue wave diagram is labeled “F M.”",
+      "caption": "This schematic depicts how amplitude modulation (AM) and frequency modulation (FM) can be used to transmit a radio wave."
+    },
+    "CNX_Chem_06_01_Blackbody": {
+      "source": "media/CNX_Chem_06_01_Blackbody.jpg",
+      "sourceSha256": "1fd5a48e9b8c944a39de15d51b152eaddffbdc70ce55c2bd25d93c5a151dcc17",
+      "module": "m68729",
+      "kind": "photo",
+      "width": 1194,
+      "height": 701,
+      "variants": [
+        {
+          "width": 800,
+          "height": 469,
+          "file": "CNX_Chem_06_01_Blackbody-800.webp"
+        },
+        {
+          "width": 1194,
+          "height": 701,
+          "file": "CNX_Chem_06_01_Blackbody-1194.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A graph is shown with a horizontal axis labeled, “Wavelength lambda (micrometers)” and a vertical axis labeled, “Intensity I (a r b. units).” The horizontal axis begins at 0 and extends to 3.0 with markings provided every 0.1 micrometer. Similarly, the vertical axis begins at 0 and extends to 10 with markings every 1 unit. Two vertical dashed lines are drawn. The first appears at about 0.39 micrometers and the second at about 0.72 micrometers. To the left of the first of these lines, the label, “Ultraviolet,” appears at the top of the graph. Between these lines, the label, “Visible,” appears at the top of the graph. To the right of the second of these lines, the label, “Infrared,” appears at the top of the graph. To the far right of the graph in open space a purple dot is placed which is labeled, “lambda maximum.” A “Temperature” label is located in a central region of the graph. A blue curve begins on the horizontal axis at about 0.05 micrometers. This curve increases steeply to a maximum value between the two vertical line segments of approximately 9.5 at about 0.55 micrometers. This curve decreases rapidly at first, then tapers off to reach a value of about 1.5 at the far right end of the graph. This blue curve is labeled 6000 K beneath the “Temperature” label. Curves are similarly drawn in green for 5000 K, orange for 4000 K, and red for 3000 K. As the temperature decreases, the height of the peak is lower and shifted right on the graph. The maximum value for the green curve is around 4.5 at 7.2 micrometers. This curve tapers at the right end of the graph to a value around 0.6. The maximum for the orange curve is around 2 at about 0.9 micrometers. This curve tapers at the right end of the graph to a value around 0.2. The maximum for the red curve is around 0.7 at about 1.2 micrometers. This curve tapers at the right end of the graph to a value around 0.1. The entire region under the blue curve that is between the two dashed lines, indicating the visible region, is shaded with vertical bands of color. The colors extending left to right across this region are violet, indigo, blue, green, yellow, orange, and red. A purple dot is placed at the peak of each of the four colored curves. These peaks are connected with a dashed curve.",
+      "caption": "Blackbody spectral distribution curves are shown for some representative temperatures."
+    },
+    "CNX_Chem_06_01_Ephoton": {
+      "source": "media/CNX_Chem_06_01_Ephoton.jpg",
+      "sourceSha256": "ea6f8d8f4d02e54cd1afd72872bc0a52b338b4c26ddc028f1a8a93110fb45596",
+      "module": "m68729",
+      "kind": "photo",
+      "width": 1292,
+      "height": 384,
+      "variants": [
+        {
+          "width": 800,
+          "height": 237,
+          "file": "CNX_Chem_06_01_Ephoton-800.webp"
+        },
+        {
+          "width": 1292,
+          "height": 384,
+          "file": "CNX_Chem_06_01_Ephoton-1292.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The figure includes three diagrams of waves approaching a flat, horizontal surface that is labeled, “Metal,” from an angle around 45 degrees above and to the left relative to the surface. At the top of the diagram at the center is the label, “E equals h nu.” At the left, a sinusoidal wave reaches the surface and stops. The portion of the diagram near the flat metal surface is labeled, “No electrons ejected,” and the wave is labeled, “700 n m.” To the right, a second similar, more compressed wave, which is labeled, “550 n m,” reaches the flat surface. This time, an arrow extends up and to the right at an angle of approximately 45 degrees. A tiny yellow circle with a negative sign in it is at the center of the arrow shaft. Above this arrow is the equation, “v subscript max equals 2.96 times 10 superscript 5 m per s.” To the far right, a third similar, even more compressed wave, which is labeled “400 n m” reaches the flat surface. This time, an arrow extends up and to the right at an angle of approximately 45 degrees. A tiny yellow circle with a negative sign in it is at the center of the arrow shaft. Above this arrow is the equation “v subscript max equals 6.22 times 10 superscript 5 m per s.”",
+      "caption": "Photons with low frequencies do not have enough energy to cause electrons to be ejected via the photoelectric effect. For any frequency of light above the threshold frequency, the kinetic energy of an ejected electron will increase linearly with the energy of the incoming photon."
+    },
+    "CNX_Chem_06_01_Frequency": {
+      "source": "media/CNX_Chem_06_01_Frequency.jpg",
+      "sourceSha256": "e0bc19b53ef2851b7d6e1a6511ea8657d2ebac8f3492b903c19fba63bd04ea97",
+      "module": "m68729",
+      "kind": "photo",
+      "width": 1300,
+      "height": 633,
+      "variants": [
+        {
+          "width": 800,
+          "height": 389,
+          "file": "CNX_Chem_06_01_Frequency-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 633,
+          "file": "CNX_Chem_06_01_Frequency-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure includes 5 one-dimensional sinusoidal waves in two columns. The column on the left includes three waves, and the column on the right includes two waves. In each column, dashed vertical line segments extend down the left and right sides of the column. A right pointing arrow extends from the left dashed line to the right dashed line in both columns and is labeled, “Distance traveled in 1 second.” The waves all begin on the left side at a crest. The wave at the upper left shows 3 peaks to the right of the starting point. A bracket labeled, “lambda subscript 1,” extends upward from the second and third peaks. Beneath this wave is the label, “nu subscript 1 equals 4 cycles per second equals 3 hertz.” The wave below has six peaks to the right of the starting point with a bracket similarly connecting the third and fourth peaks which is labeled, “lambda subscript 2.” Beneath this wave is the label, “nu subscript 2 equals 8 cycles per second equals 6 hertz” The third wave in the column has twelve peaks to the right of the starting point with a bracket similarly connecting the seventh and eighth peaks which is labeled, “lambda subscript 3.” Beneath this wave is the label, “nu subscript 3 equals 12 cycles per second equals 12 hertz.” All waves in this column appear to have the same vertical distance from peak to trough. In the second column, the two waves are similarly shown, but lack the lambda labels. The top wave in this column has a greater vertical distance between the peaks and troughs and is labeled, “Higher amplitude.” The wave beneath it has a lesser distance between the peaks and troughs and is labeled, “Lower amplitude.”",
+      "caption": "One-dimensional sinusoidal waves show the relationship among wavelength, frequency, and speed. The wave with the shortest wavelength has the highest frequency. Amplitude is one-half the height of the wave from peak to trough.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_06_01_LiteInterf": {
+      "source": "media/CNX_Chem_06_01_LiteInterf.jpg",
+      "sourceSha256": "d6bf367150383b67d2a2d7a098d80e31798d64d75b8ca58001a1e60b94e8589b",
+      "module": "m68729",
+      "kind": "photo",
+      "width": 650,
+      "height": 127,
+      "variants": [
+        {
+          "width": 650,
+          "height": 127,
+          "file": "CNX_Chem_06_01_LiteInterf-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows interference patterns for light passing through a narrow slit. Four distinct colored bands are arranged from top to bottom. The top band shows white light, the second red, the third green, and the fourth is blue. Each band shows a central square of color with narrower vertically oriented bands extending left and right on a black background.",
+      "caption": "Interference fringe patterns are shown for light passing through two closely spaced, narrow slits. The spacing of the fringes depends on the wavelength, with the fringes being more closely spaced for the shorter-wavelength blue light. (credit: PASCO)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_06_01_RadioCell": {
+      "source": "media/CNX_Chem_06_01_RadioCell.jpg",
+      "sourceSha256": "02afd8b53f6dd96cd47aba7e95cd19e54efe3dc968bee5863cf87012681c8a9b",
+      "module": "m68729",
+      "kind": "photo",
+      "width": 1200,
+      "height": 530,
+      "variants": [
+        {
+          "width": 800,
+          "height": 353,
+          "file": "CNX_Chem_06_01_RadioCell-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 530,
+          "file": "CNX_Chem_06_01_RadioCell-1200.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure consists of three cell phone tower images. The first involves a structure that uses a significant degree of scaffolding. The second image includes a tower with what appears to be a base that is essentially a large pole that branches out at the very top. The third image shows a cell phone tower that appears to be disguised as a palm tree.",
+      "caption": "Radio and cell towers are typically used to transmit long-wavelength electromagnetic radiation. Increasingly, cell towers are designed to blend in with the landscape, as with the Tucson, Arizona, cell tower (right) disguised as a palm tree. (credit left: modification of work by Sir Mildred Pierce; credit middle: modification of work by M.O. Stevens)"
+    },
+    "CNX_Chem_06_01_Solardist": {
+      "source": "media/CNX_Chem_06_01_Solardist.jpg",
+      "sourceSha256": "d5eb6528e74ebaa92883a1e626557c948cdb698795bd079f2ad46f5f6efe75e8",
+      "module": "m68729",
+      "kind": "photo",
+      "width": 1300,
+      "height": 850,
+      "variants": [
+        {
+          "width": 800,
+          "height": 523,
+          "file": "CNX_Chem_06_01_Solardist-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 850,
+          "file": "CNX_Chem_06_01_Solardist-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A graph is shown with a horizontal axis labeled, “Wavelength ( n m ),” and a vertical axis labeled, “Spectral irradiance ( W divided by m superscript 2 divided by n m ).” The horizontal axis begins at 250 and extends to 4000 with markings provided every 250 n m. Similarly, the vertical axis begins at 0.00 and extends to 2.00 with markings every 0.25 units. Two vertical dashed lines are drawn. The first appears at about 400 nanometers and the second at nearly 700 nanometers. To the left of the first of these lines, the label, “U V,” appears at the top of the graph. Between these lines, the label, “Visible,” appears at the top of the graph. To the right of the second of these lines, the label, “Infrared,” appears at the top of the graph. A grey curve begins on the vertical axis at about 0.10. This curve increases steeply to a maximum value between the two vertical line segments of approximately 1.75 at about 625 nanometers. This curve decreases rapidly at first, then tapers off to reach a value of about 0 at the far right end of the graph. A golden colored curve traces along the same path as the grey curve, but shows a significant degree of variation in the region of the peak of the graph. In this general region, the gold curve is jagged and somewhat erratic. This curve reaches a maximum over 2.00 at around 475 nanometers. A key provided in the open space of the graph shows that the gold graph represents sunlight at the top of the atmosphere, and the grey curve represents the 5250 degrees C Blackbody spectrum.",
+      "caption": "The spectral distribution (light intensity vs. wavelength) of sunlight reaches the Earth's atmosphere as UV light, visible light, and IR light. The unabsorbed sunlight at the top of the atmosphere has a distribution that approximately matches the theoretical distribution of a blackbody at 5250 °C, represented by the blue curve. (credit: modification of work by American Society for Testing and Materials (ASTM) Terrestrial Reference Spectra for Photovoltaic Performance Evaluation)"
+    },
+    "CNX_Chem_06_01_Vibratdrum": {
+      "source": "media/CNX_Chem_06_01_Vibratdrum.jpg",
+      "sourceSha256": "16e11c78c8f5892eabcf24d208ebd8f06cd197dbf83471055dff74a025bdba77",
+      "module": "m68729",
+      "kind": "photo",
+      "width": 700,
+      "height": 480,
+      "variants": [
+        {
+          "width": 700,
+          "height": 480,
+          "file": "CNX_Chem_06_01_Vibratdrum-700.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure includes four images. In each image, a brown circular platform has been sprinkled with a tan powder, yellow wires connect to a cylindrical base beneath the platform. To the right of the platform is a white box with a blue front which is labeled, “5.289 k H z Function Generator.” The image in the top left shows three distinct rings formed from the tan powder evenly spaced from the center of the platform, with the first ring very close to the center of the platform. The box reads, “2.434 k H z.” The image in the top right is similar except that the rings are closer together and the central ring has a significantly greater radius than in the first diagram. In this photo, the box reads, “3.986 k H z.” The image at the lower left is similar to the image in the upper left except that more of the powder is present, and 8 evenly-spaced radii are formed from the tan powder on the platform, making a web-like image. In this photo, the box reads, “5.289 k H z.” In the lower right of the figure, the image is similar to what is shown in the upper right except that four evenly spaced radii are shown composed of the tan powder on the platform. In this photo, the box reads, “5.670 K H z.”",
+      "caption": "Two-dimensional standing waves can be visualized on a vibrating surface. The surface has been sprinkled with a powder that collects near the nodal lines. There are two types of nodes visible: radial nodes (circles) and angular nodes (radii)."
+    },
+    "CNX_Chem_06_01_Vibrstring": {
+      "source": "media/CNX_Chem_06_01_Vibrstring.jpg",
+      "sourceSha256": "7752e44f10182fc3e22286222b3e59725b0fa49902e1bcbcbfd59a7668a51a64",
+      "module": "m68729",
+      "kind": "photo",
+      "width": 700,
+      "height": 342,
+      "variants": [
+        {
+          "width": 700,
+          "height": 342,
+          "file": "CNX_Chem_06_01_Vibrstring-700.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows four one-dimensional standing waves. The waves are shown in a tan color and are composed of curves to represent standing waves that can be generated using string. The first image at the top of the figure shows a single long wave with no nodes, or points where the string appears to cross between the endpoints at the left and right sides of the figure. The second diagram just below shows a single node at the center of the wave, which divides the wave into two identical halves to the left and right. The third diagram shows two nodes, dividing the image into three identical parts to the left, center, and right. Similarly, the last image at the bottom of the figure shows three nodes, dividing the image into four identical parts.",
+      "caption": "A vibrating string shows some one-dimensional standing waves. Since the two end points of the string are held fixed, only waves having an integer number of half-wavelengths can form. The points on the string between the end points that are not moving are called the nodes."
+    },
+    "CNX_Chem_06_01_emspectrum": {
+      "source": "media/CNX_Chem_06_01_emspectrum.jpg",
+      "sourceSha256": "088678b7bda4b34cb572f8d4d4fc63098dafa4bd1c7da4eb0e805673a3314572",
+      "module": "m68729",
+      "kind": "photo",
+      "width": 1288,
+      "height": 831,
+      "variants": [
+        {
+          "width": 800,
+          "height": 516,
+          "file": "CNX_Chem_06_01_emspectrum-800.webp"
+        },
+        {
+          "width": 1288,
+          "height": 831,
+          "file": "CNX_Chem_06_01_emspectrum-1288.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The figure includes a portion of the electromagnetic spectrum which extends from gamma radiation at the far left through x-ray, ultraviolet, visible, infrared, terahertz, and microwave to broadcast and wireless radio at the far right. At the top of the figure, inside a grey box, are three arrows. The first points left and is labeled, “Increasing energy E.” A second arrow is placed just below the first which also points left and is labeled, “Increasing frequency nu.” A third arrow is placed just below which points right and is labeled, “Increasing wavelength lambda.” Inside the grey box near the bottom is a blue sinusoidal wave pattern that moves horizontally through the box. At the far left end, the waves are short and tightly packed. They gradually lengthen moving left to right across the figure, resulting in significantly longer waves at the right end of the diagram. Beneath the grey box are a variety of photos aligned above the names of the radiation types and a numerical scale that is labeled, “Wavelength lambda ( m ).” This scale runs from 10 superscript negative 12 meters under gamma radiation increasing by powers of ten to a value of 10 superscript 3 meters at the far right under broadcast and wireless radio. X-ray appears around 10 superscript negative 10 meters, ultraviolet appears in the 10 superscript negative 8 to 10 superscript negative 7 range, visible light appears between 10 superscript negative 7 and 10 superscript negative 6, infrared appears in the 10 superscript negative 6 to 10 superscript negative 5 range, teraherz appears in the 10 superscript negative 4 to 10 superscript negative 3 range, microwave infrared appears in the 10 superscript negative 2 to 10 superscript negative 1 range, and broadcast and wireless radio extend from 10 to 10 superscript 3 meters. Labels above the scale are placed to indicate 1 n m at 10 superscript negative 9 meters, 1 micron at 10 superscript negative 6 meters, 1 millimeter at 10 superscript negative 3 meters, 1 centimeter at 10 superscript negative 2 meters, and 1 foot between 10 superscript negative 1 meter and 10 superscript 0 meters. A variety of images are placed beneath the grey box and above the scale in the figure to provide examples of related applications that use the electromagnetic radiation in the range of the scale beneath each image. The photos on the left above gamma radiation show cosmic rays and a multicolor PET scan image of a brain. A black and white x-ray image of a hand appears above x-rays. An image of a patient undergoing dental work, with a blue light being directed into the patient's mouth is labeled, “dental curing,” and is shown above ultraviolet radiation. Between the ultraviolet and infrared labels is a narrow band of violet, indigo, blue, green, yellow, orange, and red colors in narrow, vertical strips. From this narrow band, two dashed lines extend a short distance above to the left and right of an image of the visible spectrum. The image, which is labeled, “visible light,” is just a broader version of the narrow bands of color in the label area. Above infrared are images of a television remote and a black and green night vision image. At the left end of the microwave region, a satellite radar image is shown. Just right of this and still above the microwave region are images of a cell phone, a wireless router that is labeled, “wireless data,” and a microwave oven. Above broadcast and wireless radio are two images. The left most image is a black and white medical ultrasound image. A wireless AM radio is positioned at the far right in the image, also above broadcast and wireless radio.",
+      "caption": "Portions of the electromagnetic spectrum are shown in order of decreasing frequency and increasing wavelength. (credit “Cosmic ray\": modification of work by NASA; credit “PET scan\": modification of work by the National Institute of Health; credit “X-ray\": modification of work by Dr. Jochen Lengerke; credit “Dental curing\": modification of work by the Department of the Navy; credit “Night vision\": modification of work by the Department of the Army; credit “Remote\": modification of work by Emilian Robert Vicol; credit “Cell phone\": modification of work by Brett Jordan; credit “Microwave oven\": modification of work by Billy Mabray; credit “AM radio\": modification of work by Dave Clausen)"
+    },
+    "CNX_Chem_06_01_neon": {
+      "source": "media/CNX_Chem_06_01_neon.jpg",
+      "sourceSha256": "c593b7f845f0c4c580df42799f8e89f3a5970852ca52e7ccba2c669d843e1bf6",
+      "module": "m68729",
+      "kind": "photo",
+      "width": 650,
+      "height": 468,
+      "variants": [
+        {
+          "width": 650,
+          "height": 468,
+          "file": "CNX_Chem_06_01_neon-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a colorful neon sign. The tubes are bent into various shapes.",
+      "caption": "Neon signs operate by exciting a gas at low partial pressure using an electrical current. This sign shows the elaborate artistic effects that can be achieved. (credit: Dave Shaver)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_06_02_BohrArrows": {
+      "source": "media/CNX_Chem_06_02_BohrArrows.jpg",
+      "sourceSha256": "f6fa8ad3b0548d62634476ef4dc67fc4f88eb27237db304b4169473938e194f9",
+      "module": "m68732",
+      "kind": "photo",
+      "width": 1300,
+      "height": 900,
+      "variants": [
+        {
+          "width": 800,
+          "height": 554,
+          "file": "CNX_Chem_06_02_BohrArrows-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 900,
+          "file": "CNX_Chem_06_02_BohrArrows-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The figure includes a diagram representing the relative energy levels of the quantum numbers of the hydrogen atom. An upward pointing arrow at the left of the diagram is labeled, “E.” A grey shaded vertically oriented rectangle is placed just right of the arrow. The rectangle height matches the arrow length. Colored, horizontal line segments are placed inside the rectangle and labels are placed to the right of the box, arranged in a column with the heading, “Energy, n.” At the very base of the rectangle, a purple horizontal line segment is drawn. A black line extends to the right to the label, “1.” At a level approximately three-quarters of the distance to the top of the rectangle, a blue horizontal line segment is drawn. A black line extends to the right to the label, “2.” At a level approximately seven-eighths the distance from the base of the rectangle, a green horizontal line segment is drawn. A black line extends to the right to the label, “3.” Just a short distance above this segment, an orange horizontal line segment is drawn. A black line segment extends to the right to the label, “4.” Just above this segment, a red horizontal line segment is drawn. A black line extends to the right to the label, “5.” Just a short distance above this segment, a brown horizontal line segment is drawn. A black line extends to the right to the label, “infinity.” Arrows are drawn to depict energies of photons absorbed, as shown by upward pointing arrows on the left, or released as shown by downward pointing arrows on the right side of the diagram between the colored line segments. The label, “Electron moves to higher energy as light is absorbed,” is placed beneath the upward pointing arrows. Similarly, the label, “Electron moves to lower energy as light is emitted,” appears beneath the downward pointing arrows. Moving left to right across the diagram, arrows extend from one colored line segment to the next in the following order: purple to blue, purple to green, purple to orange, purple to red, purple to brown, blue to green, blue to orange, and blue to red. The arrows originating from the same colored segment are grouped together by close placement of the arrows. Similarly, the downward arrows follow in this sequence; brown to purple, red to purple, orange to purple, green to purple, blue to purple, red to blue, orange to blue, and green to blue. Arrows are again grouped by close placement according to the color at which the arrows end.",
+      "caption": "The horizontal lines show the relative energy of orbits in the Bohr model of the hydrogen atom, and the vertical arrows depict the energy of photons absorbed (left) or emitted (right) as electrons move between these orbits.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_06_02_Hlevels": {
+      "source": "media/CNX_Chem_06_02_Hlevels.jpg",
+      "sourceSha256": "5bcad52ae4b0f2e6a10747a281c5c1752cd290ee7bde232d7b882baa05c8efd0",
+      "module": "m68732",
+      "kind": "photo",
+      "width": 650,
+      "height": 546,
+      "variants": [
+        {
+          "width": 650,
+          "height": 546,
+          "file": "CNX_Chem_06_02_Hlevels-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The figure includes a diagram representing the relative energy levels of the quantum numbers of the hydrogen atom. An upward pointing arrow at the left of the diagram is labeled, “E.” A grey shaded vertically-oriented rectangle is placed just right of the arrow. The rectangle height matches the arrow length. Colored horizontal line segments are placed inside the rectangle and labels are placed to the right of the box and arranged in a column with the heading, “Energy, n.” At the very base of the rectangle, a purple horizontal line segment is drawn. A black line segment extends to the right to the label, “negative 2.18 times 10 superscript negative 18 J, 1.” At a level approximately three-quarters of the distance to the top of the rectangle, a blue horizontal line segment is drawn. A black line segment extends to the right to the label, “negative 5.45 times 10 superscript negative 19 J, 2.” At a level approximately seven-eighths the distance from the base of the rectangle, a green horizontal line segment is drawn. A black line segment extends to the right to the label, “negative 2.42 times 10 superscript negative 19 J, 3.” Just a short distance above this segment, an orange horizontal line segment is drawn. A black line segment extends to the right to the label, “negative 1.36 times 10 superscript negative 19 J, 4.” Just above this segment, a red horizontal line segment is drawn. A black line segment extends to the right to the label, “negative 8.72 times 10 superscript negative 20 J, 5.” Just a short distance above this segment, a brown horizontal line segment is drawn. A black line segment extends to the right to the label, “0.00 J, infinity.”",
+      "caption": "Quantum numbers and energy levels in a hydrogen atom. The more negative the calculated value, the lower the energy.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_06_03_Electrnin": {
+      "source": "media/CNX_Chem_06_03_Electrnin.jpg",
+      "sourceSha256": "27b2e11b6b6cd759240403c1a0f8a4bd4e6d72ecf66247ee8ac41fb7674c55db",
+      "module": "m68733",
+      "kind": "photo",
+      "width": 1300,
+      "height": 983,
+      "variants": [
+        {
+          "width": 800,
+          "height": 605,
+          "file": "CNX_Chem_06_03_Electrnin-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 983,
+          "file": "CNX_Chem_06_03_Electrnin-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure has two parts. Part a shows a diagram of an electron source emitting waves that pass through two narrow slits in a barrier. A wave interference pattern results on the opposite side of the barrier that result in evenly spaced, relatively wide horizontal grey lines on a black surface. The black surface is placed at a distance beyond the barrier. Part b shows an electron source at the far left. Two gold arrows point toward two narrow horizontal slits in a barrier. Around these arrows are many small golden dots. On the right side of the barrier, the gold dots are more widely dispersed. A black surface a distance beyond the barrier shows evenly, yet widely dispersed gold dots. An arrow is present below this black surface and is labeled, “Time.” A second black surface is shown to the right that has many more golden dots that appear to be organizing into a pattern of evenly spaced horizontal line segments. A third black surface is shown even further to the right in which many more gold dots are shown in a very clearly established, evenly spaced pattern of horizontal line segments.",
+      "caption": "(a) The interference pattern for electrons passing through very closely spaced slits demonstrates that quantum particles such as electrons can exhibit wavelike behavior. (b) The experimental results illustrated here demonstrate the wave–particle duality in electrons."
+    },
+    "CNX_Chem_06_03_Ex9soln_img": {
+      "source": "media/CNX_Chem_06_03_Ex9soln_img.jpg",
+      "sourceSha256": "fc9db07b88aa4f4387a7093a9496708fb80744bcb81d76347c435df05b772f75",
+      "module": "m68733",
+      "kind": "photo",
+      "width": 650,
+      "height": 287,
+      "variants": [
+        {
+          "width": 650,
+          "height": 287,
+          "file": "CNX_Chem_06_03_Ex9soln_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure contains two diagrams. The first is of a 2 p subscript y orbital. The second is of a d subscript x squared minus y squared orbital. The first diagram has two spherical shapes joined at the origin when oriented along the y axis on an x y and z coordinate plane. The second diagram shows four ellipsoid lobes with ends centered around the origin. Two of these ellipsoid lobes are oriented along the x axis and two are oriented along the y axis on the x y and z coordinate plane.",
+      "caption": ""
+    },
+    "CNX_Chem_06_03_OrbOutline_img": {
+      "source": "media/CNX_Chem_06_03_OrbOutline_img.jpg",
+      "sourceSha256": "70655fae7a45d6bf7f25c61553238dc494c2b972ae662267a43c43d580afb56f",
+      "module": "m68733",
+      "kind": "photo",
+      "width": 650,
+      "height": 212,
+      "variants": [
+        {
+          "width": 650,
+          "height": 212,
+          "file": "CNX_Chem_06_03_OrbOutline_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure contains three diagrams. In x, a circle is drawn with a dot at the center. In y, two nearly ellipsoid shapes are oriented horizontally with a dot between them. In z, four shapes like those in y are oriented in an x shape with a dot at the center.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_06_03_Oshapes": {
+      "source": "media/CNX_Chem_06_03_Oshapes.jpg",
+      "sourceSha256": "f98d409fe9949da6d6f85c02acd7b5da224353b9c986d89fd77451e6cda31cb0",
+      "module": "m68733",
+      "kind": "photo",
+      "width": 1300,
+      "height": 1600,
+      "variants": [
+        {
+          "width": 800,
+          "height": 984,
+          "file": "CNX_Chem_06_03_Oshapes-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 1600,
+          "file": "CNX_Chem_06_03_Oshapes-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram illustrates the shapes and quantities of all s, p, d, and f orbitals. The s sublevel is composed of a single spherical orbital. The p sublevel is composed of 3 dumbbell shaped orbitals oriented along the x, y, and z axes. The five d sublevels and seven f sublevels are considerably more complex.",
+      "caption": "Shapes of s , p , d , and f orbitals."
+    },
+    "CNX_Chem_06_03_Qnumbers": {
+      "source": "media/CNX_Chem_06_03_Qnumbers.jpg",
+      "sourceSha256": "cdf8e9346fb4159cbfcd55f865279b149313ff88435cfdb2e9a46f70f99b4544",
+      "module": "m68733",
+      "kind": "photo",
+      "width": 650,
+      "height": 442,
+      "variants": [
+        {
+          "width": 650,
+          "height": 442,
+          "file": "CNX_Chem_06_03_Qnumbers-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure contains a central green sphere labeled “nucleus.” There is a plus sign in the middle of the sphere. This sphere is encircled by 3 concentric, evenly spaced rings. The first and closest to the center is labeled, “n equals 1.” The second ring is labeled, “n equals 2,” and the third ring is labeled, “n equals 3.” An arrow is drawn from the edge of the central sphere to the right extending out of the concentric rings. It is labeled, “increasing energy.”",
+      "caption": "Different shells are numbered by principal quantum numbers.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_06_03_elecw": {
+      "source": "media/CNX_Chem_06_03_elecw.jpg",
+      "sourceSha256": "7f9763070d77cfc941f00ed97d4321a083073db2e5040537a2cab20153ac278b",
+      "module": "m68733",
+      "kind": "photo",
+      "width": 650,
+      "height": 284,
+      "variants": [
+        {
+          "width": 650,
+          "height": 284,
+          "file": "CNX_Chem_06_03_elecw-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure includes a circle formed from a dashed line. A sinusoidal wave pattern indicated with a solid red line is wrapped around the circle, centered about the edge of the circle. Line segments extend outward from the circle extending through 2 wave crests along the circle. A double ended arrow is drawn between these segments and is labeled, “wavelength, lambda.” A dashed double headed arrow is drawn from the center to the edge of the circle and is labeled, “radius r.”",
+      "caption": "If an electron is viewed as a wave circling around the nucleus, an integer number of wavelengths must fit into the orbit for this standing wave behavior to be possible.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_06_03_sorbit": {
+      "source": "media/CNX_Chem_06_03_sorbit.jpg",
+      "sourceSha256": "2a1ea1cd77a0790eaa01e79914251db0f0914fa00c062c122ee030700bf0ac7c",
+      "module": "m68733",
+      "kind": "photo",
+      "width": 1307,
+      "height": 950,
+      "variants": [
+        {
+          "width": 800,
+          "height": 581,
+          "file": "CNX_Chem_06_03_sorbit-800.webp"
+        },
+        {
+          "width": 1307,
+          "height": 950,
+          "file": "CNX_Chem_06_03_sorbit-1307.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure provides images and graphs to illustrate the probability of finding an electron in 1 s, 2 s, and 3 s orbitals as a function of the distance from the nucleus. The 1 s orbital is shown as a sphere with a chunk missing. The graph below it has x axis labeled “distance from nucleus” and y axis labeled “probability density”. The related curve quickly reaches a maximum height and rapidly declines. The label, “1 s” appears below the graph. The 2 s orbital is shown as a red sphere with a blue middle. A chunk is missing from the sphere. The graph below it has x axis labeled “distance from nucleus” and y axis labeled “probability density”. The related curve quickly reaches a relative maximum height, a significantly higher absolute maximum height, and then rapidly declines. The label “2s” appears below it. The 3 s orbital is a blue sphere with a red sphere and another blue sphere at its core. The graph below it has x axis labeled “distance from nucleus” and y axis labeled “probability density”. The related curve quickly reaches a relative maximum height, a second relative maximum height, a significantly higher absolute maximum, and then declines more gradually than illustrated in the previous 2 graphs. The label, “3 s,” appears below the graph.",
+      "caption": "The graphs show the probability ( y axis) of finding an electron for the 1 s , 2 s , 3 s orbitals as a function of distance from the nucleus."
+    },
+    "CNX_Chem_06_03_spin": {
+      "source": "media/CNX_Chem_06_03_spin.jpg",
+      "sourceSha256": "496c95d7d261c92c8f71eebc8f00bc91a77d85bb6602f5d74566d38baa0fb07c",
+      "module": "m68733",
+      "kind": "photo",
+      "width": 650,
+      "height": 406,
+      "variants": [
+        {
+          "width": 650,
+          "height": 406,
+          "file": "CNX_Chem_06_03_spin-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram has an upward pointing arrow at the left which is labeled, “B subscript 0.” To the right, two spheres are shown. The first has a gray square at the top labeled, “N,” and a second gray square at the bottom labeled, “S.” A curved arrow is pointing right across the surface of the sphere and a gray arrow points upward through the center of the sphere. This sphere is labeled, “Spin plus one-half, spin-up.” The sphere just to the right has a gray square above it labeled, “S,” and a gray square below it labeled, “N.” This sphere has a curved arrow on its surface that is directed to the left and a gray arrow through the center of the sphere that points downward. This sphere is labeled, “Spin negative one-half spin-down.”",
+      "caption": "Electrons with spin values ± 1 2 in an external magnetic field.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_06_03_subshells": {
+      "source": "media/CNX_Chem_06_03_subshells.jpg",
+      "sourceSha256": "15dac0ee6cc150e3bfb504c40c7d4aca25201a352db3a5fb3d126af1d5324c5a",
+      "module": "m68733",
+      "kind": "photo",
+      "width": 1300,
+      "height": 478,
+      "variants": [
+        {
+          "width": 800,
+          "height": 294,
+          "file": "CNX_Chem_06_03_subshells-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 478,
+          "file": "CNX_Chem_06_03_subshells-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shown has an upward pointing arrow at the left which is labeled “E.” To the right of this arrow near the bottom of the image is a single line which is labeled, “1 s.” Above and just to the right is another black line that is labeled, “2 s.” Slightly up and to the right is a grouping of three black lines labeled, “2 p.” Above and to the right is a single black line labeled, “3 s.” Slightly up and to the right is a grouping of three black lines that are labeled, “3 p.” Just above and to the right is a grouping of 5 black lines labeled, “3 d.” Slightly below and to the right is a single black line which is labeled, “4 s.” Just above and to the right, at a level slightly higher than the previous black lines, is a grouping of three black lines all labeled, “4 p.”",
+      "caption": "The chart shows the energies of electron orbitals in a multi-electron atom."
+    },
+    "CNX_Chem_06_03_waterw": {
+      "source": "media/CNX_Chem_06_03_waterw.jpg",
+      "sourceSha256": "ea35c436fa031c5724495f147120aa0315e70fed6398a423179e6298dff2e21e",
+      "module": "m68733",
+      "kind": "photo",
+      "width": 325,
+      "height": 269,
+      "variants": [
+        {
+          "width": 325,
+          "height": 269,
+          "file": "CNX_Chem_06_03_waterw-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A photograph is shown of ripples in water. The ripples display an interference pattern with each other.",
+      "caption": "An interference pattern on the water surface is formed by interacting waves. The waves are caused by reflection of water from the rocks. (credit: modification of work by Sukanto Debnath)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_06_04_Beryll12_img": {
+      "source": "media/CNX_Chem_06_04_Beryll12_img.jpg",
+      "sourceSha256": "cd2a445deb9f8e83e59f2cd08e989d3d9100b654df0e1d2d03845f3ee19feaca",
+      "module": "m68734",
+      "kind": "photo",
+      "width": 650,
+      "height": 114,
+      "variants": [
+        {
+          "width": 650,
+          "height": 114,
+          "file": "CNX_Chem_06_04_Beryll12_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "In this figure, the element symbol B e is followed by the electron configuration, “1 s superscript 2 2 s superscript 2.” An orbital diagram is provided that consists of two individual squares. The first square is labeled below as, “1 s.” The second square is similarly labeled, “2 s.” Both squares contain a pair of half arrows: one pointing up and the other down.",
+      "caption": ""
+    },
+    "CNX_Chem_06_04_Boron122_img": {
+      "source": "media/CNX_Chem_06_04_Boron122_img.jpg",
+      "sourceSha256": "5ccd268d0e2bd8064560ba263a9ddb2594b033753d83946dab2316b22f208b90",
+      "module": "m68734",
+      "kind": "photo",
+      "width": 650,
+      "height": 114,
+      "variants": [
+        {
+          "width": 650,
+          "height": 114,
+          "file": "CNX_Chem_06_04_Boron122_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "In this figure, the element symbol B is followed by the electron configuration, “1 s superscript 2 2 s superscript 2 2 p superscript 1.” The orbital diagram consists of two individual squares followed by 3 connected squares in a single row. The first square is labeled below as, “1 s.” The second is similarly labeled, “2 s.” The connected squares are labeled below as, “2 p.” All squares not connected contain a pair of half arrows: one pointing up and the other down. The first square in the group of 3 contains a single upward pointing arrow.",
+      "caption": ""
+    },
+    "CNX_Chem_06_04_Carbon122_img": {
+      "source": "media/CNX_Chem_06_04_Carbon122_img.jpg",
+      "sourceSha256": "e9ae8d020398aeb4bb448b02ecbe88139ba1d3a1c827baae1f861136a97435cd",
+      "module": "m68734",
+      "kind": "photo",
+      "width": 650,
+      "height": 114,
+      "variants": [
+        {
+          "width": 650,
+          "height": 114,
+          "file": "CNX_Chem_06_04_Carbon122_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "In this figure, the element symbol C is followed by the electron configuration, “1 s superscript 2 2 s superscript 2 2 p superscript 2.” The orbital diagram consists of two individual squares followed by 3 connected squares in a single row. The first blue square is labeled below as, “1 s.” The second is similarly labeled, “2 s.” The connected squares are labeled below as, “2 p.” All squares not connected to each other contain a pair of half arrows: one pointing up and the other down. The first two squares in the group of 3 each contain a single upward pointing arrow.",
+      "caption": ""
+    },
+    "CNX_Chem_06_04_Econfig": {
+      "source": "media/CNX_Chem_06_04_Econfig.jpg",
+      "sourceSha256": "1514a25afb07fbcbe0b346bd7e017bca031f8869009c0a8b3b8502265c19ff4f",
+      "module": "m68734",
+      "kind": "photo",
+      "width": 975,
+      "height": 186,
+      "variants": [
+        {
+          "width": 800,
+          "height": 152,
+          "file": "CNX_Chem_06_04_Econfig-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 186,
+          "file": "CNX_Chem_06_04_Econfig-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A light blue hemisphere is labeled H. At a location about midway between the center and outer edge of the hemisphere, a small yellow-orange sphere is shown that is labeled with a negative sign. To the right of this diagram is the electron configuration 1 s superscript 1. The superscript is shown in a small yellow-orange circle. This superscript is labeled, “Number of electrons in subshell,” and the s is labeled, “Subshell.”",
+      "caption": "The diagram of an electron configuration specifies the subshell ( n and l value, with letter symbol) and superscript number of electrons.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_06_04_Econtable": {
+      "source": "media/CNX_Chem_06_04_Econtable.jpg",
+      "sourceSha256": "8efb3e5c7a0b446cc7398ee145e60c02f268b72e3aaadad6f734262f3df2752b",
+      "module": "m68734",
+      "kind": "photo",
+      "width": 1316,
+      "height": 857,
+      "variants": [
+        {
+          "width": 800,
+          "height": 521,
+          "file": "CNX_Chem_06_04_Econtable-800.webp"
+        },
+        {
+          "width": 1316,
+          "height": 857,
+          "file": "CNX_Chem_06_04_Econtable-1316.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "In this figure, a periodic table is shown that is entitled, “Electron Configuration Table.” Beneath the table, a square for the element hydrogen is shown enlarged to provide detail. The element symbol, H, is placed in the upper left corner. In the upper right is the number of electrons, 1. The lower central portion of the element square contains the subshell, 1s. Helium and elements in groups 1 and 2 are shaded blue. In this region, the rows are labeled 1s through 7s moving down the table. Groups 3 through 12 are shaded orange, and the rows are labeled 3d through 6d moving down the table. Groups 13 through 18, except helium, are shaded pink and are labeled 2p through 6p moving down the table.",
+      "caption": "This partial periodic table shows electron configurations for the valence subshells of atoms. By “building up” from hydrogen, this table can be used to determine the electron configuration for atoms of most elements in the periodic table. (Electron configurations of the lanthanides and actinides are not accurately predicted by this simple approach. See .)"
+    },
+    "CNX_Chem_06_04_Efillorder": {
+      "source": "media/CNX_Chem_06_04_Efillorder.jpg",
+      "sourceSha256": "40fe5914c49e2fc3a6e88f4928668e3fbd40956ff4d37e0d521f96554b9f3ce8",
+      "module": "m68734",
+      "kind": "photo",
+      "width": 650,
+      "height": 469,
+      "variants": [
+        {
+          "width": 650,
+          "height": 469,
+          "file": "CNX_Chem_06_04_Efillorder-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure includes a chart used to order the filling of electrons into atoms. At the top is a blue circle labeled “1 s.” In a row beneath this circle are 6 additional blue circles labeled “2 s” through “7 s.” A column to the right begins just right of 2 s and contains pink circles labeled 2 p through 7 p. A column to the right begins just right of 3 p and contains yellow circles labeled 3 d through 6 d. No circles are placed to the right of the 7 s and 7 p circles. A final column on the right begins right of 4 d. It includes grey circles labeled, “4 f” and, “5 f.” No circles are placed right of 6 d. Through these circles, arrows are included in the figure pointing down and to the left. The first arrow begins in the upper right and passes through 1 s. The second arrow begins just below and passes through 2 s. The third arrow passes through 2 p and 3 s. The fourth arrow passes through 3 p and 4 s. This pattern of parallel arrows pointing downward to the left continues through all circles completing the pattern 1 s 2 s 2 p 3 s 3 p 4 s 3 d 4 p 5 s 4 d 5 p 6 s 4 f 5 d 6 p 7 s 5 f 6 d 7 p.",
+      "caption": "This diagram depicts the energy order for atomic orbitals and is useful for deriving ground-state electron configurations.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_06_04_Helium1_img": {
+      "source": "media/CNX_Chem_06_04_Helium1_img.jpg",
+      "sourceSha256": "b5daf10040bf8b788e193d03b3c4cb006ffb873b1a4430caf0d343d61834ceb1",
+      "module": "m68734",
+      "kind": "photo",
+      "width": 325,
+      "height": 114,
+      "variants": [
+        {
+          "width": 325,
+          "height": 114,
+          "file": "CNX_Chem_06_04_Helium1_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "In this figure, the element symbol H e is followed by the electron configuration, “1 s superscript 2.” An orbital diagram is provided that consists of a single square. The square is labeled below as “1 s.” It contains a pair of half arrows: one pointing up and the other down.",
+      "caption": ""
+    },
+    "CNX_Chem_06_04_Hydrog1_img": {
+      "source": "media/CNX_Chem_06_04_Hydrog1_img.jpg",
+      "sourceSha256": "10a9aa372665aef1426aefc5720990585d5a478ea968061fc734e6e4d8ba888e",
+      "module": "m68734",
+      "kind": "photo",
+      "width": 325,
+      "height": 114,
+      "variants": [
+        {
+          "width": 325,
+          "height": 114,
+          "file": "CNX_Chem_06_04_Hydrog1_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "In this figure, the element symbol H is followed by the electron configuration is 1 s superscript 1. An orbital diagram is provided that consists of a single square. The square is labeled below as, “1 s.” It contains a single upward pointing half arrow.",
+      "caption": ""
+    },
+    "CNX_Chem_06_04_Lithium12_img": {
+      "source": "media/CNX_Chem_06_04_Lithium12_img.jpg",
+      "sourceSha256": "0268328ad1926efd3205574634b2648caee58e840256ec01dca4534782dfc09c",
+      "module": "m68734",
+      "kind": "photo",
+      "width": 650,
+      "height": 114,
+      "variants": [
+        {
+          "width": 650,
+          "height": 114,
+          "file": "CNX_Chem_06_04_Lithium12_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "In this figure, the element symbol L i is followed by the electron configuration, “1 s superscript 2 2 s superscript 1.” An orbital diagram is provided that consists of two individual squares. The first square is labeled below as, “1 s.” The second square is similarly labeled, “2 s.” The first square contains a pair of half arrows: one pointing up and the other down. The second square contains a single upward pointing arrow.",
+      "caption": ""
+    },
+    "CNX_Chem_06_04_NOFNe_img": {
+      "source": "media/CNX_Chem_06_04_NOFNe_img.jpg",
+      "sourceSha256": "9d0289f88503de76009f0767749505d104bb929c0ffe7659dae2310178c91b8f",
+      "module": "m68734",
+      "kind": "photo",
+      "width": 650,
+      "height": 637,
+      "variants": [
+        {
+          "width": 650,
+          "height": 637,
+          "file": "CNX_Chem_06_04_NOFNe_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure includes electron configurations and orbital diagrams for four elements, N, O, F, and N e. Each diagram consists of two individual squares followed by 3 connected squares in a single row. The first square is labeled below as, “1 s.” The second is similarly labeled, “2 s.” The connected squares are labeled below as, “2 p.” All squares not connected to each other contain a pair of half arrows: one pointing up and the other down. For the element N, the electron configuration is 1 s superscript 2 2 s superscript 2 2 p superscript 3. Each of the squares in the group of 3 contains a single upward pointing arrow for this element. For the element O, the electron configuration is 1 s superscript 2 2 s superscript 2 2 p superscript 4. The first square in the group of 3 contains a pair of arrows and the last two squares contain single upward pointing arrows. For the element F, the electron configuration is 1 s superscript 2 2 s superscript 2 2 p superscript 5. The first two squares in the group of 3 each contain a pair of arrows and the last square contains a single upward pointing arrow. For the element N e, the electron configuration is 1 s superscript 2 2 s superscript 2 2 p superscript 6. The squares in the group of 3 each contains a pair of arrows.",
+      "caption": ""
+    },
+    "CNX_Chem_06_04_OrbDiaSh2a_img": {
+      "source": "media/CNX_Chem_06_04_OrbDiaSh2a_img.jpg",
+      "sourceSha256": "d0f28c077a0398c6e84df447d11ce733d6fe2888175b6bf3ea28906dd7f9dece",
+      "module": "m68734",
+      "kind": "photo",
+      "width": 650,
+      "height": 126,
+      "variants": [
+        {
+          "width": 650,
+          "height": 126,
+          "file": "CNX_Chem_06_04_OrbDiaSh2a_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure includes a square followed by 3 squares all connected in a single row. The first square is labeled below as, “2 s.” The connected squares are labeled below as, “2 p.” The first square has a pair of half arrows: one pointing up, and the other down. Each of the remaining squares contains a single upward pointing arrow.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_06_04_OrbDiaSh2b_img": {
+      "source": "media/CNX_Chem_06_04_OrbDiaSh2b_img.jpg",
+      "sourceSha256": "39bd155e9a947d6efb9cdc375b914216bce481def6d742e2548e60c173777ac1",
+      "module": "m68734",
+      "kind": "photo",
+      "width": 650,
+      "height": 120,
+      "variants": [
+        {
+          "width": 650,
+          "height": 120,
+          "file": "CNX_Chem_06_04_OrbDiaSh2b_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure includes a square followed by 3 squares all connected in a single row. The first square is labeled below as, “2 s.” The connected squares are labeled below as, “2 p.” The first square has a pair of half arrows: one pointing up and the other down. The first two squares in the row of connected squares contain a single upward pointing arrow. The third square is empty.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_06_04_OrbDiaSh2c_img": {
+      "source": "media/CNX_Chem_06_04_OrbDiaSh2c_img.jpg",
+      "sourceSha256": "5a12fbacd2c9deabf0f172384eb302bf2dd7c6d17735b5a20827b34b131ef80a",
+      "module": "m68734",
+      "kind": "photo",
+      "width": 650,
+      "height": 117,
+      "variants": [
+        {
+          "width": 650,
+          "height": 117,
+          "file": "CNX_Chem_06_04_OrbDiaSh2c_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure includes a square followed by 5 squares all connected in a single row. The first square is labeled below as, “4 s.” The connected squares are labeled below as, “3 d.” The first square and the left-most square in the row of connected squares each has a pair of half arrows: one pointing up and the other down. Each of the remaining squares contains a single upward pointing arrow.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_06_04_OrbDiaSh2d_img": {
+      "source": "media/CNX_Chem_06_04_OrbDiaSh2d_img.jpg",
+      "sourceSha256": "faed3c988f887ea62bb866e0e736ca85f1db6749ebd3e7123d1e1364267b6edd",
+      "module": "m68734",
+      "kind": "photo",
+      "width": 650,
+      "height": 119,
+      "variants": [
+        {
+          "width": 650,
+          "height": 119,
+          "file": "CNX_Chem_06_04_OrbDiaSh2d_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure includes a square followed by 3 squares all connected in a single row. The first square is labeled below as, “5 s superscript 2.” The connected squares are labeled below as, “5 p. superscript 4.” The first square and the left-most square in the row of connect squares each has a pair of half arrows: one pointing up and the other down. Each of the remaining squares contains a single upward pointing arrow.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_06_04_OrbDiaSh2e_img": {
+      "source": "media/CNX_Chem_06_04_OrbDiaSh2e_img.jpg",
+      "sourceSha256": "8869bd7921b9d015afec9b2d6a7b84e15c1b621ee9a3968fee68b80c8b1d6d88",
+      "module": "m68734",
+      "kind": "photo",
+      "width": 650,
+      "height": 116,
+      "variants": [
+        {
+          "width": 650,
+          "height": 116,
+          "file": "CNX_Chem_06_04_OrbDiaSh2e_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure includes a square followed by 5 squares all connected in a single row. The first square is labeled below as, “5 s.” The connected squares are labeled below as, “4 d superscript 5.” Each of the squares contains a single upward pointing arrow.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_06_04_PhosphOrb_img": {
+      "source": "media/CNX_Chem_06_04_PhosphOrb_img.jpg",
+      "sourceSha256": "8ee272c9c70ce2c3a6782c152c0bdd4d6699df3bea2edc1adc34a2ca03e1f613",
+      "module": "m68734",
+      "kind": "photo",
+      "width": 1000,
+      "height": 114,
+      "variants": [
+        {
+          "width": 800,
+          "height": 91,
+          "file": "CNX_Chem_06_04_PhosphOrb_img-800.webp"
+        },
+        {
+          "width": 1000,
+          "height": 114,
+          "file": "CNX_Chem_06_04_PhosphOrb_img-1000.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure provides the electron configuration 1 s superscript 2 2 s superscript 2 2 p superscript 6 3 s superscript 2 3 p superscript 3. It includes a diagram with two individual squares followed by 3 connected squares, a single square, and another connected group of 3 squares all in a single row. The first square is labeled below as, “1 s.” The second is similarly labeled, “2 s.” The first group of connected squares is labeled below as, “2 p.” The square that follows is labeled, “3 s,” and the final group of three squares is labeled, “3 p.” All squares except the last group of three squares has a pair of half arrows: one pointing up and the other down. Each of the squares in the last group of 3 contains a single upward pointing arrow.",
+      "caption": ""
+    },
+    "CNX_Chem_06_04_Ptableconf": {
+      "source": "media/CNX_Chem_06_04_Ptableconf.jpg",
+      "sourceSha256": "bd04a566df5885646d5c0cf742c7b7eb738b3f7ab343b68d2888681dd6908bc2",
+      "module": "m68734",
+      "kind": "photo",
+      "width": 1300,
+      "height": 1016,
+      "variants": [
+        {
+          "width": 800,
+          "height": 625,
+          "file": "CNX_Chem_06_04_Ptableconf-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 1016,
+          "file": "CNX_Chem_06_04_Ptableconf-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A periodic table, entitled, “Electron Configuration Table” is shown. The table includes the outer electron configuration information, atomic numbers, and element symbols for all elements. A square for the element hydrogen is pulled out beneath the table to provide detail. The blue shaded square includes the atomic number in the upper left corner, which is 1; the element symbol, H, in the upper right corner; and the outer electron configuration in the lower, central portion of the square. For H, this is 1s superscript 1.",
+      "caption": "This version of the periodic table shows the outer-shell electron configuration of each element. Note that down each group, the configuration is often similar."
+    },
+    "CNX_Chem_06_04_Valence": {
+      "source": "media/CNX_Chem_06_04_Valence.jpg",
+      "sourceSha256": "bae237852d5cd520962ab6af24a51a51a645475f3683ebd1b1ad5e0f7cc4bbfc",
+      "module": "m68734",
+      "kind": "photo",
+      "width": 650,
+      "height": 111,
+      "variants": [
+        {
+          "width": 650,
+          "height": 111,
+          "file": "CNX_Chem_06_04_Valence-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure includes the element symbol N a, followed by the electron configuration for the element. The first part of the electron configuration, 1 s superscript 2 2 s superscript 2 2 p superscript 6, is shaded in purple and is labeled, “core electrons.” The last portion, 3 s superscript 1, is shaded orange and is labeled, “valence electron.” To the right of this configuration is the word “Abbreviation” followed by [ N e ] 3 s superscript 1.",
+      "caption": "A core-abbreviated electron configuration (right) replaces the core electrons with the noble gas symbol whose configuration matches the core electron configuration of the other element."
+    },
+    "CNX_Chem_06_04_eLeveldiag": {
+      "source": "media/CNX_Chem_06_04_eLeveldiag.jpg",
+      "sourceSha256": "22181351937f61fb302c166acdb591b4992d9d506a9bba6d8ac70735517f0d17",
+      "module": "m68734",
+      "kind": "photo",
+      "width": 1300,
+      "height": 666,
+      "variants": [
+        {
+          "width": 800,
+          "height": 410,
+          "file": "CNX_Chem_06_04_eLeveldiag-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 666,
+          "file": "CNX_Chem_06_04_eLeveldiag-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A table entitled, “Subshell electron capacity,” is shown. Along the left side of the table, an upward pointing arrow labeled, “E,” is drawn. The table includes three columns. The first column is narrow and is labeled, “2.” The second is slightly wider and is labeled, “6.” The third is slightly wider yet and is labeled, “10.” The fourth is the widest and is labeled, “14.” The first column begins at the very bottom with a horizontal line segment labeled “1 s.” Evenly spaced line segments continue up to 7 s near the top of the column. In the second column, a horizontal dashed line segment labeled, “2 p,” appears at a level between the 2 s and 3 s levels. Similarly 3 p appears at a level between 3 s and 4 s, 4 p appears just below 5 s, 5 p appears just below 6 s, and 6 p appears just below 7 s. In the third column, a dashed line labeled, “3 d,” appears just below the level of 4 p. Similarly, 4 d appears just below 5 p and 5 d appears just below 6 p. Six d however appears above the levels of both 6 p and 7 s. The far right column entries begin with a dashed line labeled, “4 f,” positioned at a level just below 5 d. Similarly, a second dashed line segment appears just below the level of 6 d, which is labeled, “5 f.”",
+      "caption": "Generalized energy-level diagram for atomic orbitals in an atom with two or more electrons (not to scale)."
+    },
+    "CNX_Chem_06_05_CovalradiT": {
+      "source": "media/CNX_Chem_06_05_CovalradiT.jpg",
+      "sourceSha256": "914920850423a4b4e06d190a607249ef5d21bf71ff76bbad8d6eaa16b6ab804d",
+      "module": "m68735",
+      "kind": "photo",
+      "width": 1300,
+      "height": 1050,
+      "variants": [
+        {
+          "width": 800,
+          "height": 646,
+          "file": "CNX_Chem_06_05_CovalradiT-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 1050,
+          "file": "CNX_Chem_06_05_CovalradiT-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure has two parts: a and b. In figure a, four diatomic molecules are shown to illustrate the method of determining the atomic radius of an atom. The first model, in light green, is used to find the F atom radius. Two spheres are pushed very tightly together. The distance between the centers of the two atoms is indicated above the diagram with a double-headed arrow labeled “128 picometers (pm).” The end points of this arrow connect to line segments that extend to the atomic radii below. Beneath the molecule is the label, “F radius equals 128 pm divided by 2 equals 64 pm.” The next three models are similarly used to show the atomic radii of additional atoms. The second diatomic molecule is in a darker shade of green. The distance between the radii is 198 pm. Beneath the molecule is the label, “Cl radius equals 198 pm divided by 2 equals 99 pm.” The third diatomic molecule is in red. The distance between the radii is 228 pm. Beneath the molecule is the label, “Br radius equals 228 pm divided by 2 equals 114 pm.” The fourth diatomic molecule is in purple. The distance between the radii is 266 pm. Beneath the molecule is the label, “I radius equals 266 pm divided by 2 equals 133 pm.” In figure b, a periodic table layout is used to compare relative sizes of atoms, using green spheres. No spheres are provided for the noble or inert gas—group 18 elements. General trends noted are increasing circle size moving from top to bottom in a group, with a general tendency toward increasing atomic radii toward the lower left corner of the periodic table.",
+      "caption": "(a) The radius of an atom is defined as one-half the distance between the nuclei in a molecule consisting of two identical atoms joined by a covalent bond. The atomic radius for the halogens increases down the group as n increases. (b) Covalent radii of the elements are shown to scale. The general trend is that radii increase down a group and decrease across a period."
+    },
+    "CNX_Chem_06_05_Elaffin": {
+      "source": "media/CNX_Chem_06_05_Elaffin.jpg",
+      "sourceSha256": "62ca6b2d3ae4732bf0d90fd1ae520648b165ab7e5d05f53c066de5660feb03ea",
+      "module": "m68735",
+      "kind": "photo",
+      "width": 1300,
+      "height": 648,
+      "variants": [
+        {
+          "width": 800,
+          "height": 398,
+          "file": "CNX_Chem_06_05_Elaffin-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 648,
+          "file": "CNX_Chem_06_05_Elaffin-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The figure includes a periodic table with the title, “Electron Affinity Values for Selected Elements (k J per mol).” The table identifies the row or period number at the left in purple, and group or column numbers in blue above each column. Electron affinity values for representative elements are indicated with values marked with asterisks identifying calculated values. The electron affinity values for group 1 (column 1) elements are provided with the element symbols in the table as follows: H negative 72, L i negative 60, N a negative 53, K negative 48, R b negative 46, and C s negative 45. In group 2, the values are: B e positive 240 asterisk, M g positive 230 asterisk, C a positive 150 asterisk, S r positive 160 asterisk, and B a positive 50 asterisk. In group 13, the values are: B negative 23, A l negative 44, G a negative 40 asterisk, I n negative 40 asterisk, and T l negative 50. In group 14, the values are: C negative 123, S i negative 120, G e negative 115, S n negative 121, and P b negative 101. In group 15 the values are: N 0, P negative 74, A s negative 7, S b negative 101, and B i negative 101. In group 16, the values are: O negative 141, S negative 20, S e negative 195, T e negative 190, and P o negative 170. In group 17, the values are: F negative 322, C l negative 348, B r negative 324, I negative 295, and A t negative 270 asterisk. In group 18, the values are: H e positive 20 asterisk, N e negative 30, A r positive 35 asterisk, K r positive 40 asterisk, X e positive 40 asterisk, and R n positive 40 asterisk.",
+      "caption": "This version of the periodic table displays the electron affinity values (in kJ/mol) for selected elements."
+    },
+    "CNX_Chem_06_05_Firstionen": {
+      "source": "media/CNX_Chem_06_05_Firstionen.jpg",
+      "sourceSha256": "b2e31ee15d6f222acf4d7a0c28032647585b30b5260ca39296f6cacdc1da0cf8",
+      "module": "m68735",
+      "kind": "photo",
+      "width": 1300,
+      "height": 627,
+      "variants": [
+        {
+          "width": 800,
+          "height": 386,
+          "file": "CNX_Chem_06_05_Firstionen-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 627,
+          "file": "CNX_Chem_06_05_Firstionen-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The figure includes a periodic table with the title, “First Ionization Energies of Some Elements (k J per mol).” The table identifies the row or period number at the left in purple, and group or column numbers in blue above each column. First ionization energies listed top to bottom for group 1 are: H 1310, L i 520, N a 490, K 420, R b 400, C s 380, and three dots are placed in the box for F r. In group 2 the values are: B e 900, M g 730, C a 590, S r 550, and B a 500. In group 3 the values are: S c 630, Y 620, and L a 540. In group 4, the values are: T i 660, Z r 660, H f 700. In group 5, the values are: V 650, N b 670, and T a 760. In group 6, the values are: C r 660, M o 680, and W 770. In group 7, the values are: M n 710, T c 700, and R e 760. In group 8, the values are: F e 760, R u 720, and O s 840. In group 9, the values are: C o 760, R h 720, and I r 890. In group 10, the values are: N i 730, P d 800, and P t 870. In group 11, the values are: C u 740, A g 730, and A u 890. In group 12, the values are: Z n 910, C d 870, and H g 1000. In group 13, the values are: B 800, A l 580, G a 580, I n 560, and T l 590. In group 14, the values are: C 1090, S i 780, G e 780, S n 700, and P b 710. In group 15, the values are: N 1400, P 1060, A s 960, S b 830, and B i 800. In group 16, the values are: O 1310, S 1000, S e 950, T e 870, and P o 810. In group 17, the values are: F 1680, C l 1250, B r 1140, I 1010, and A t has three dots. In group 18, the values listed are: B e 2370, N e 2080, A r 1520, K r 1350, X e 1170, and R n 1030.",
+      "caption": "This version of the periodic table shows the first ionization energy (IE 1 ), in kJ/mol, of selected elements."
+    },
+    "CNX_Chem_06_05_Firstiongr": {
+      "source": "media/CNX_Chem_06_05_Firstiongr.jpg",
+      "sourceSha256": "2d83a0ff37ccdf58974859314512255f739247582facc43435a643901e67a13e",
+      "module": "m68735",
+      "kind": "photo",
+      "width": 1300,
+      "height": 919,
+      "variants": [
+        {
+          "width": 800,
+          "height": 565,
+          "file": "CNX_Chem_06_05_Firstiongr-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 919,
+          "file": "CNX_Chem_06_05_Firstiongr-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure includes a graph labeled, “Atomic Number,” on the horizontal axis and, “Ionization Energy (k J divided by mol),” on the vertical axis. Markings are provided on the horizontal axis at 10, 18, 36, 54, and 86. Vertical lines extend from the horizontal axis upward at each of these values. The vertical axis begins at 0 and increases by 500’s up to 2500. Horizontal lines are drawn across the graph at multiples of 500. A red jagged line connects the ionization energies for elements with atomic numbers 1 through 86 on the graph. Peaks are evident at the locations of the noble or inert gases: H e, N e, A r, K r, X e, and R n. Similarly, minima exist at the locations of the alkali metals: L i, N a, K, R b, and C s. Elements labeled on the graph and their associated ionization energies are as follows: H 1310, H e 2370, L i 520, B e 900, B 800, C 1090, N 1400, O 1310, F 1680, N e 2080, N a 490, M g 730, P 1060, A r 1520, K 420, Z n 910, A s 960, B r 1140, K r 1350, R b 400, C d 870, X e 1170, T l 590, and R n 1030.",
+      "caption": "The first ionization energy of the elements in the first six periods are plotted against their atomic number."
+    },
+    "CNX_Chem_06_05_Ionradii": {
+      "source": "media/CNX_Chem_06_05_Ionradii.jpg",
+      "sourceSha256": "6aa483fb3a827f0be6a2d27cfd680f6c1f42b1bd6b9febfca1bd278c810ceb77",
+      "module": "m68735",
+      "kind": "photo",
+      "width": 650,
+      "height": 91,
+      "variants": [
+        {
+          "width": 650,
+          "height": 91,
+          "file": "CNX_Chem_06_05_Ionradii-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The figure includes spheres in green to represent the relative sizes of A l and S atoms. The relatively large A l sphere in the upper left is labeled 118. The significantly smaller S sphere in the upper right is labeled 104. Beneath each of these spheres is a red sphere. The red sphere in the lower left is very small in comparison to the other spheres and is labeled, “A l superscript 3 plus 68.” The red sphere in the lower right is significantly larger than the other spheres and is labeled, “S superscript 2 negative 170. “",
+      "caption": "The radius for a cation is smaller than the parent atom (Al), due to the lost electrons; the radius for an anion is larger than the parent (S), due to the gained electrons.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_06_05_Oxygen122_img": {
+      "source": "media/CNX_Chem_06_05_Oxygen122_img.jpg",
+      "sourceSha256": "1dc7616d5c63f209c8613df236e04dd80fc6406e19a9ed09d1ba477b80833a01",
+      "module": "m68735",
+      "kind": "photo",
+      "width": 650,
+      "height": 114,
+      "variants": [
+        {
+          "width": 650,
+          "height": 114,
+          "file": "CNX_Chem_06_05_Oxygen122_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure includes the element symbol O followed by the electron configuration 1 s superscript 2 2 s superscript 2 2 p superscript 4. An orbital diagram follows, which consists of two individual squares, labeled as, “1 s,” and, “2 s,” below followed by a grouping of three connected squares which are labeled, “2 p.” All boxes are oriented in a row. The two individual squares and the first square in the row of connected squares contain a pair of half arrows. One half arrow in each pair points up, and one points down. The downward pointing arrow in the first square in the row of connected squares is red. The remaining two squares each contain single upward pointing half arrows.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_06_05_Radiigraph": {
+      "source": "media/CNX_Chem_06_05_Radiigraph.jpg",
+      "sourceSha256": "fd8b99cb9c565a074fe25d74ea8ce644d0b148de8a7bdfd4c34ae969aef09f8e",
+      "module": "m68735",
+      "kind": "photo",
+      "width": 1300,
+      "height": 956,
+      "variants": [
+        {
+          "width": 800,
+          "height": 588,
+          "file": "CNX_Chem_06_05_Radiigraph-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 956,
+          "file": "CNX_Chem_06_05_Radiigraph-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This graph entitled, “Atomic Radii,” is labeled, “Atomic Number,” on the horizontal axis and, “Radius (p m),” on the vertical axis. Markings are provided every 10 units up to 60 on the horizontal axis beginning at zero. Vertical lines extend from the horizontal axis upward at each of these markings. The vertical axis begins at 0 and increases by 50’s up to 300. Horizontal lines are drawn across the graph at multiples of 50. A black jagged line connects the radii values for elements with atomic numbers 1 through 60 on the graph. Peaks are evident at the locations of the alkali metals: L i, N a, K, R b, and C s, at which points on the graph purple dots are placed and elements are labeled in purple. Similarly, minima exist at the locations of noble or inert gases: H e, N e, A r, K r, X e, and R n, at which points blue dots are placed and element symbols are provided in blue. The locations of period 4 and period 5 transition elements are provided with green dots. These points are clustered together in two locations on the graph which are circled in red and labeled accordingly. The green dots for the transition elements along with the line that connects them form a U shape on the graph within each of the red circles drawn. The atomic radii for the alkali metals in picometers are: L i 167, N a 190, K 243, R b 265, and C s 298. The atomic radii of the noble or inert gases included in the graph in picometers are: H e 31, N e 38, A r 71, K r 88, and X e 108.",
+      "caption": "Within each period, the trend in atomic radius decreases as Z increases; for example, from K to Kr. Within each group (e.g., the alkali metals shown in purple), the trend is that atomic radius increases as Z increases."
+    },
     "CNX_Chem_14_03_FishLemon": {
       "source": "media/CNX_Chem_14_03_FishLemon.jpg",
       "sourceSha256": "9fe70f7dee5ca566696b82f94fedfec8565ba53869510e7b90ab66dcf31f6fd0",

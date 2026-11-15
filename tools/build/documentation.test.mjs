@@ -1311,3 +1311,44 @@ test('the docs layouts are the theme\'s, with the content passed through glue-ma
   assert.match(css, /\.ap-math-glue \{\s*white-space: nowrap;/);
   assert.match(css, /\.ap-math-glue > \.katex wbr \{\s*display: inline;/);
 });
+
+test('the playbook\'s configuration and ordering table is what the grader does, and its closing sentences are the lint\'s', async () => {
+  const chem = read('docs/subjects/chemistry.md');
+  const { checkChem, chemKeyProblem } = await import('../../assets/js/lib/text/check-chem.mjs');
+  const { CONFIGURATION_CLOSING, ORDERING_CLOSING } = await import('../lint/lints-leaks.mjs');
+  const flat = chem.replace(/\s+/g, ' ');
+  const heading = chem.indexOf('### Electron configurations and orderings: `answerForm="configuration"`, `answerForm="ordering"`');
+  assert.ok(heading > 0, 'the section is found');
+  const section = chem.slice(heading, chem.indexOf('\n### ', heading + 10));
+  const tableStart = section.indexOf('| Typed | Against | Verdict | Feedback |');
+  const after = section.slice(tableStart).split('\n').slice(2);
+  const rows = after.slice(0, after.findIndex((line) => !line.startsWith('|')));
+  assert.ok(rows.length >= 15, `the table's rows are read (${rows.length})`);
+  // "the same key" is the last key a row named.
+  let key = null;
+  let typedRead = 0;
+  for (const row of rows) {
+    const [typedCell, againstCell, verdictCell, feedbackCell] = row.split(/(?<!\\)\|/).slice(1, -1).map((cell) => cell.trim());
+    const named = /^`([^`]+)`$/.exec(againstCell);
+    if (named) key = named[1];
+    else assert.equal(againstCell, 'the same key', row.slice(0, 60));
+    const form = /[spdf][²⁶³⁰¹⁴⁵⁷⁸⁹]|\]/.test(key) ? 'configuration' : 'ordering';
+    for (const [, typed] of typedCell.matchAll(/`([^`]+)`/g)) {
+      const verdict = checkChem(typed, key, { form });
+      assert.equal(verdict.status, verdictCell, `${typed} against ${key}`);
+      if (verdict.message) assert.ok(feedbackCell.includes(verdict.message.slice(0, 40)), `the row quotes the feedback for ${typed}: ${verdict.message}`);
+      typedRead += 1;
+    }
+  }
+  assert.ok(typedRead >= 25, `the table's typed responses are read (${typedRead})`);
+  // The closing sentences the lint enforces are the ones the playbook quotes.
+  assert.ok(flat.includes(CONFIGURATION_CLOSING) && flat.includes(ORDERING_CLOSING));
+  // The key rules the playbook states are the lint's.
+  assert.ok(chemKeyProblem('1s2 2s2 2p6', 'configuration'), 'a key written in print');
+  assert.ok(chemKeyProblem('1s²2s²2p⁸', 'configuration'), 'a subshell over its capacity');
+  assert.ok(chemKeyProblem('Rb<Li', 'ordering'), 'an ordering written in print');
+  assert.ok(chemKeyProblem('Rb < Li', 'ordering', 'Li < Rb'), 'no accept list');
+  // The last rule of "Formulas and equations" no longer lists them.
+  const notRead = /\*\*Not read by these forms\*\*[^\n]*(?:\n {2}[^\n]*)*/.exec(chem)[0];
+  assert.doesNotMatch(notRead.split('An electron configuration and an ordering have')[0], /electron configuration|ordering/);
+});
