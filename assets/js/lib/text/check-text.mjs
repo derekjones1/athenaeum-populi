@@ -78,7 +78,10 @@ export function closedForm(value) {
 }
 
 function canonical(value, hyphen) {
-  let text = String(value ?? '').normalize('NFKD').replace(DIACRITICS, '');
+  // The increment sign (U+2206, what Option-J types on a Mac) is a math
+  // symbol, not a letter, and would be dropped below with the punctuation;
+  // read it as the Greek capital delta it stands for.
+  let text = String(value ?? '').replace(/\u2206/g, '\u0394').normalize('NFKD').replace(DIACRITICS, '');
   text = text.toLowerCase();
   text = text.replace(QUOTES, '').replace(/'/g, '');
   text = text.replace(DASHES, '-').replace(/-+/g, hyphen).replace(/[_/]+/g, ' ');

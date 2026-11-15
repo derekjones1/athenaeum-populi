@@ -304,3 +304,11 @@ test('a name keyed with a charge says when the numeral is missing, and when it i
   // Neither message gives the numeral or names the metal.
   for (const message of [MISSING_NUMERAL_MESSAGE, ARABIC_NUMERAL_MESSAGE]) assert.doesNotMatch(message, /iron|\(I|II\b|\b[2-8]\b/);
 });
+
+test('the increment sign a Mac keyboard types is read as the Greek capital delta', () => {
+  assert.equal(normalizeText('\u2206'), normalizeText('\u0394'));
+  assert.notEqual(normalizeText('\u2206'), '');
+  assert.equal(checkText('\u2206', 'delta', { accept: '\u0394' }), 'correct');
+  assert.equal(checkText('\u0394', 'delta', { accept: '\u0394' }), 'correct');
+  assert.equal(checkText('\u2207', 'delta', { accept: '\u0394' }), 'empty');
+});

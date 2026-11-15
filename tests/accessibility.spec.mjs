@@ -77,6 +77,11 @@ const REPRESENTATIVE_PAGES = [
     path: '/physical-sciences/chemistry/knowledge-check-01-03/',
   },
   {
+    // The first check with typed equations and signed enthalpies.
+    name: 'chemistry block 2 knowledge check (chapters 04–05)',
+    path: '/physical-sciences/chemistry/knowledge-check-04-05/',
+  },
+  {
     name: 'biology unit 1 knowledge check (chapters 01–03)',
     path: '/life-health-sciences/biology/knowledge-check-01-03/',
   },

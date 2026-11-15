@@ -1886,6 +1886,13 @@ moving to 5; chapter 4 took weight 5 and the appendices weight 6; each new
 chapter moves them (`npm run kc -- weights … --write`)
 (`docs/history/chemistry.md`, "Knowledge Check 1").
 
+Block 2 landed November 15, 2026, after chapter 6 was already on the site:
+`knowledge-check-04-05.md`, 22 items over 8 sections (15 of them
+worked-example items), weight 7, chapter 6 moving to 8 and the appendices
+to 9. Section 5.2 carries written items only: every worked example of it
+needs the specific heat of water, which no stem prints
+(`docs/history/chemistry.md`, "Knowledge Check 2").
+
 ## What is still open
 
 What chapter 1 settled, and what the scan of the book counted, are in

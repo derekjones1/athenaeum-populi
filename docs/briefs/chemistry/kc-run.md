@@ -208,3 +208,41 @@ the six accepted; the second checker failed 5 of 14 replacements.
 - **Costs**: three authors about 240–300 thousand tokens each over three
   rounds of fixes, three checkers 140–170, the sweep 195 (22 minutes — the
   slowest single agent), the second checker 150.
+
+**Block 2, chapters 4–5 (November 15, 2026;
+`docs/history/chemistry.md`, "Knowledge Check 2").** Two authors wrote 22
+items and 22 landed (9 fill-ins, 5 equation text-ins, 1 formula text-in, 3
+recall text-ins, 4 multiple choices, no selfcheck; 15 of them
+worked-example items); 4.3 and 5.2 stand at two. Both checkers answered
+every item key-covered with no disagreement, 0 hard and 6 soft; the sweep
+0 hard and 5 soft; nothing was replaced; the solver agreed on 21 and
+flagged one form (Δ beside "delta").
+
+- **Ruling the examples before the wave is what kept the block clean.**
+  The run facts ruled 11 of 31 examples out — six for a constant no stem
+  prints (the specific heat of water, Avogadro's number), which the
+  inventory tool cannot see — and gave each usable example's value
+  computed by the one method. No author keyed an example a reader
+  rejected. The authors still found three echoes the parent's Practice
+  grep missed, because the echo was in ANOTHER section's page (4.3's
+  Mg(OH)₂ equation is a 4.1 Practice key; 4.5's gravimetric stem prints a
+  formula of a 4.2 key): grep each usable example's equation and formulas
+  across the chapter's pages, not only its own section's Practice block.
+- **A calculation section can end with no calculation item.** 5.2
+  Calorimetry is written items only, because "no table, no item" covers
+  the section's own specific-heat table too. The playbook now says so.
+- **An `accept` member that is a symbol is typed on a real keyboard
+  before it is trusted.** `accept="Δ"` was right and still marked a Mac's
+  Option-J character (U+2206, the increment sign) as an empty answer; the
+  second checker typed it. The text grader now reads U+2206 as Δ
+  (`check-text.mjs`, with a test).
+- **`kc leaks` reads a LaTeX command as a word**: the key "delta" matched
+  `\Delta H` in two 5.3 stems. Shared notation, read and accepted.
+- **A browser test of a check names each status outright.**
+  `tools/build/browser-fixtures.test.mjs` reads the spec as text: a
+  `.not.toBe('correct')` is read as expecting correct, and a `\u2206`
+  escape is typed as six characters. Write `.toBe('incorrect')` and the
+  literal character.
+- **Costs**: two authors about 240 and 260 thousand tokens, two checkers
+  about 150 each, the sweep 175, the second checker 80, the solver 82;
+  about 25 minutes of agent wall time to the solve.

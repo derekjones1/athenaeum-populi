@@ -2,7 +2,7 @@
 title: Electronic Structure and Periodic Properties of Elements
 description: Electronic structure and periodic properties of elements — electromagnetic energy and the wave and particle nature of light; the Bohr model; the development of quantum theory; electron configurations; and periodic variations in atomic size, ionization energy, and electron affinity.
 source_chapter: "6"
-weight: 7
+weight: 8
 ---
 
 {{< mediafigure src="chemistry/CNX_Chem_06_00_CrabNeb" kind="photo" alt="A telescope image of a glowing cloud of gas that fills the frame against black space dotted with a few stars. The middle of the cloud is a soft blue-white glow. Across it and around it runs a tangled web of thin bright filaments: orange and red-orange ones are thickest toward the outer edge, yellow-green and green ones lie mostly at the lower left and along the top, and pale pink strands cross the blue center." eager="true" >}}

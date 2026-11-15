@@ -3383,3 +3383,61 @@ test('the Chemistry Knowledge Check follows its block, has no hints, keeps the p
   await saltField.press('Enter');
   await expect.poll(saltStatus).toBe('correct');
 });
+
+// The second Chemistry Knowledge Check (November 15, 2026): the first with
+// typed equations and a signed enthalpy, and with a recall field whose
+// accepted answer is a Greek letter a Mac keyboard types as another character.
+test('the Chemistry Knowledge Check for chapters 4–5 follows chapter 5, has no hints, and grades an equation, a signed enthalpy, and a typed delta', async ({ page }) => {
+  await gotoBuiltPage(page, '/physical-sciences/chemistry/knowledge-check-04-05/');
+
+  const book = await page.locator('aside a[href^="/physical-sciences/chemistry/"]').evaluateAll(
+    (links) => [...new Set(links.map((a) => a.getAttribute('href')))],
+  );
+  const at = book.findIndex((href) => href.endsWith('/chemistry/knowledge-check-04-05/'));
+  expect(at, 'the check is in the sidebar').toBeGreaterThan(0);
+  expect(book[at - 1]).toMatch(/^\/physical-sciences\/chemistry\/05-[^/]+\/\d\d-[^/]+\/$/);
+  expect(book[at + 1]).toBe('/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/');
+
+  await expect(page.locator('[class*="hint"]')).toHaveCount(0);
+  await expect(page.locator('nav#ap-toc a.ap-reference-figure')).toHaveText('Periodic table');
+
+  // A typed equation: unbalanced is not right, balanced is.
+  const upgraded = (el) => Boolean(customElements.get('text-in')) && Boolean(el.querySelector('.ap-textin-check'));
+  const oxide = page.locator('text-in[data-answer="2N₂ + 5O₂ ⟶ 2N₂O₅"]');
+  await expect(oxide).toHaveCount(1);
+  await waitForUpgrade(oxide, upgraded);
+  await oxide.scrollIntoViewIfNeeded();
+  const oxideField = oxide.locator('.ap-textin-field');
+  const oxideStatus = () => oxide.evaluate((el) => el.status);
+  await oxideField.fill('N2 + O2 -> N2O5');
+  await oxideField.press('Enter');
+  await expect.poll(oxideStatus).toBe('incorrect');
+  await oxideField.fill('2N2 + 5O2 -> 2N2O5');
+  await oxideField.press('Enter');
+  await expect.poll(oxideStatus).toBe('correct');
+
+  // The increment sign Option-J types is read as the capital delta.
+  const delta = page.locator('text-in[data-answer="delta"]');
+  await expect(delta).toHaveCount(1);
+  await waitForUpgrade(delta, upgraded);
+  const deltaField = delta.locator('.ap-textin-field');
+  await deltaField.fill('∆');
+  await deltaField.press('Enter');
+  await expect.poll(() => delta.evaluate((el) => el.status)).toBe('correct');
+
+  // A signed enthalpy: the magnitude without its sign is not the answer.
+  const iron = page.locator('fill-in[data-question^="Determine the enthalpy of formation"]');
+  await expect(iron).toHaveCount(1);
+  const field = iron.locator('math-field');
+  const status = () => iron.evaluate((el) => el.status);
+  const check = async (keys) => {
+    await clearMathField(field);
+    await focusMathField(page, field);
+    await page.keyboard.type(keys, { delay: 15 });
+    await iron.getByRole('button', { name: /check/i }).click();
+  };
+  await check('399.5');
+  await expect.poll(status).not.toBe('correct');
+  await check('-399.5');
+  await expect.poll(status).toBe('correct');
+});

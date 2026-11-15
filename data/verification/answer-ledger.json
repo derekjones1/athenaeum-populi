@@ -8019,6 +8019,14 @@
     "result": "agrees"
    }
   },
+  "0fb046bc64544151": {
+   "verdict": "ok",
+   "note": "KC 2 5.1 § Thermal Energy, Temperature, and Heat (fs-idm67028192), figure caption CNX_Chem_05_01_HeatTrans1, m68724",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0fb349eda74ebd91": {
    "verdict": "ok",
    "note": "author-built from § Elongation: \"DNA polymerase III can only extend in the 5’ to 3’ direction, which poses a problem at the replication fork.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -17505,6 +17513,14 @@
     "result": "agrees"
    }
   },
+  "222ae0e3077a69d4": {
+   "verdict": "ok",
+   "note": "KC 2 5.2 § glossary bomb calorimeter (fs-idm56360448), m68726",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "222ba4d771bde928": {
    "verdict": "ok",
    "note": "KC 5 28.4 § body Classification of Phylum Annelida (fs-idp5894017), m66397 — parent re-read against the module"
@@ -22812,6 +22828,14 @@
   "2d45a3934d94ea72": {
    "verdict": "ok",
    "note": "selfcheck = CNXML fs-idm139425264 (critical thinking); model answer is the CNXML solution verbatim, decomposed into three checkpoint clauses with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "2d4b9ff3a9c41720": {
+   "verdict": "ok",
+   "note": "KC 2 4.4 § Example: Calculation of Percent Yield, m68714",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "2d50a033ba8a3cb0": {
    "verdict": "ok",
@@ -40246,6 +40270,14 @@
     "result": "agrees"
    }
   },
+  "50ec3abb07820d8c": {
+   "verdict": "ok",
+   "note": "KC 2 4.2 § Example: Predicting Precipitation Reactions, m68710",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "50ef65a3cc2652e4": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -40644,6 +40676,14 @@
   "51d4337a3eb2ce0a": {
    "verdict": "ok",
    "note": "x=36y^2 divided by 36: y^2=(1/36)x; matches source exercise fs-id1980920's key y^2=1/36x. Self-checked correct under the token. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "51d657aa32827014": {
+   "verdict": "ok",
+   "note": "KC 2 4.5 § Example: Titration Analysis, m68716",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "51d80d7b5c6a0bd6": {
    "verdict": "ok",
@@ -46124,6 +46164,14 @@
   "5ca759b2a9b390f9": {
    "verdict": "ok"
   },
+  "5ca9efcfdfe92e49": {
+   "verdict": "ok",
+   "note": "KC 2 5.3 § Example: Stepwise Calculation of ΔH°f Using Hess’s Law, m68727",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5cb0998eef79df81": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -49385,6 +49433,14 @@
     "result": "agrees"
    }
   },
+  "6457284f5c6dd418": {
+   "verdict": "ok",
+   "note": "KC 2 5.3 § Example: Evaluating an Enthalpy of Formation, m68727",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "646239f576f1cf81": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -51587,6 +51643,14 @@
     "result": "agrees"
    }
   },
+  "6963c698d5ae16bb": {
+   "verdict": "ok",
+   "note": "KC 2 4.5 § Example: Combustion Analysis, m68716",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "69652abd8b36e045": {
    "verdict": "ok",
    "note": "glossary recall: effector (fs-id1471808) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
@@ -53050,6 +53114,14 @@
   "6ccd7089a4aeeda2": {
    "verdict": "ok",
    "note": "author-built from § Dosage and Route of Administration: \"Therefore, the goal is to select the optimum dosage that will minimize the risk of side effects while still achieving clinical cure, and th…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "6ccfceaac9abe33a": {
+   "verdict": "ok",
+   "note": "KC 2 4.1 § Example: Ionic and Molecular Equations, m68709",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -58065,6 +58137,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "76ef2543389697e8": {
+   "verdict": "ok",
+   "note": "KC 2 5.1 § Example: Determining Other Quantities, m68724",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "76f4df9a513effd9": {
    "verdict": "ok",
    "note": "body cloze from § Building Phylogenetic Trees: \"For example, in , all the organisms in the orange region evolved from a single ancestor that had amniotic eggs.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -59075,6 +59155,14 @@
   "78efe345533547b0": {
    "verdict": "ok",
    "note": "author-built from § introduction: \"Their DNA sequences show a higher proportion of guanine–cytosine nitrogenous bases, which are held together by three hydrogen bonds in cont…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "78f0b4235706f854": {
+   "verdict": "ok",
+   "note": "KC 2 4.5 § Titration, m68716",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -68339,6 +68427,14 @@
    "verdict": "ok",
    "note": "m66626 fs-idm4431424: model answer is the source solution verbatim; checkpoints decompose its two clauses (stored in vesicles in synthesizing cells; released in response to stimuli such as high blood glucose). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "8bd5cc4234c269ec": {
+   "verdict": "ok",
+   "note": "KC 2 4.1 § Example: Balancing Chemical Equations, m68709",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8bdde1919212e38d": {
    "verdict": "ok",
    "note": "KC 5 26.1 § Meningitis and Encephalitis § Micro Connections, Guillain-Barré Syndrome, m58940"
@@ -69161,6 +69257,14 @@
    "note": "m66378 exercise fs-id1804619: keyed A, 'the ligands are transported through the bloodstream and travel greater distances,' matches the source solution. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "8d578075f2c8b84e": {
+   "verdict": "ok",
+   "note": "KC 2 5.3 § Example: Writing Thermochemical Equations, m68727",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -99619,6 +99723,14 @@
   "ccaed0f10d431f56": {
    "verdict": "ok"
   },
+  "ccb1e9127eb120d8": {
+   "verdict": "ok",
+   "note": "KC 2 5.1 § glossary kinetic energy (fs-idp25509680), m68724",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ccb56aaabfb9417d": {
    "verdict": "ok",
    "note": "glossary fs-id1297024.",
@@ -99821,6 +99933,14 @@
   "cd19ead006158a1c": {
    "verdict": "ok",
    "note": "glossary recall fs-id1379084; accept members equated by fs-id1514207",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "cd203125a013f64a": {
+   "verdict": "ok",
+   "note": "KC 2 4.2 § Example: Assigning Oxidation Numbers, m68710",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -104683,6 +104803,14 @@
     "result": "agrees"
    }
   },
+  "d7636c5277033ab2": {
+   "verdict": "ok",
+   "note": "KC 2 4.3 § Example: Moles of Reactant Required in a Reaction, m68713",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d76cce78f03b3f3e": {
    "verdict": "ok",
    "note": "glossary recall: Nematoda (fs-idp38535680) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -105198,6 +105326,14 @@
   "d8666c11b385adec": {
    "verdict": "ok",
    "note": "Body CYU selfcheck, unkeyed upstream; model answer assembled from § Enzyme Structure and Function's catalyst, activation-energy, and substrate/active-site sentences; stays a selfcheck because the honest answer needs several sentences, and a single-fact conversion would duplicate the Practice MC keyed 'reducing the activation energy'. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "d86dea968c493144": {
+   "verdict": "ok",
+   "note": "KC 2 4.3 § Example: Relating Masses of Reactants, m68713",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "d87038a422c6515c": {
    "verdict": "ok",
@@ -105919,6 +106055,15 @@
     "result": "agrees"
    }
   },
+  "da25f6fa9ddc8fa3": {
+   "verdict": "ok",
+   "note": "KC 2 4.1 § Additional Information in Chemical Equations, m68709",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "The key stands: m68709 prints \"the uppercase Greek letter delta (Δ) over the arrow\", so the name is the answer and the symbol is the same answer in another form. The item accepts Δ, and the grader now reads the increment sign U+2206 as Δ."
+   }
+  },
   "da2ab1c2c27c5f55": {
    "verdict": "ok",
    "note": "source exercise fs-id1256328 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -106449,6 +106594,14 @@
   "db1fb2a1513e7fba": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "db27c62c184d8650": {
+   "verdict": "ok",
+   "note": "KC 2 4.4 § Percent Yield, m68714",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -107082,6 +107235,14 @@
    "note": "KC 7 33.3 § body Negative Feedback Mechanisms (fs-idm5619632), m66613 — parent re-read against the module",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "dc7d644527def50f": {
+   "verdict": "ok",
+   "note": "KC 2 5.2 § body, figure caption CNX_Chem_05_02_HeatMeas, m68726",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -115954,6 +116115,14 @@
   "ef3c10ade00b63c5": {
    "verdict": "ok"
   },
+  "ef40cba63f5395b1": {
+   "verdict": "ok",
+   "note": "KC 2 4.2 § Example: Writing Equations for Acid-Base Reactions, m68710",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ef4e946899b92da7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): Practice: x=4-t,y=3t+2 -> t=4-x, y=3(4-x)+2=-3x+14; node-verified residual ~0 over t=-2..5; matches CNXML solution.",
@@ -120670,6 +120839,14 @@
   "f8ab5757e3fe1ae6": {
    "verdict": "ok",
    "note": "source exercise fs-idm57514192 part (c); model answer = source solution"
+  },
+  "f8b0007867bb64a9": {
+   "verdict": "ok",
+   "note": "KC 2 4.4 § Example: Identifying the Limiting Reactant, m68714",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "f8b41e16ec6f757d": {
    "verdict": "ok",

@@ -3581,6 +3581,99 @@ rules are in the playbook's "Sets of quantum numbers".
 - **Blind solve:** a fresh Fable solver on the masked page answered all three
   with the source's sets (3 agreed, 0 flagged); merged into the ledger.
 
+## Knowledge Check 2: chapters 4–5 (November 15, 2026)
+
+Derek: "Let's author the unit 2 knowledge check". Run from
+`docs/briefs/chemistry/kc-run.md`; HEAD at the start was 06a7c510 with a
+green baseline, and the last erratum was 3141. The check was owed before
+chapter 6 and landed after it. No erratum: no reader found a source defect.
+
+### The parent's rulings before the wave
+
+`npm run kc -- examples` lists 31 worked examples in the block. Ruled out,
+in the run facts:
+
+- 4.2's basic-solution example: Section 17.1's, placed on the page under a
+  Source note; it is block 6's.
+- 4.3's propane example: needs Avogadro's number, which its question does
+  not print.
+- 5.1's "Measuring Heat" and all five examples of 5.2: each needs the
+  specific heat of water, which its question does not print (the rebar
+  example iron's too). So **5.2 Calorimetry has no calculation item**:
+  two written multiple choices.
+- 5.3's gasoline example (the page corrected isooctane's enthalpy of
+  combustion) and its nitric acid example (Appendix G; a corrected result).
+
+Ruled in: 4.2's precipitation and oxidation-number examples. The
+solubility guidelines and the oxidation-number guidelines are rules the
+section teaches, not a table of measured factors. The playbook's "A usable
+example" now states both rulings.
+
+A gate probe put the block's new shapes through `verify-section`, `kc
+sources`, `kc leaks`, `solve:emit`, and `verify-replay` before the wave:
+an `equation` text-in, a net ionic equation with states and charges, an
+oxidation number, a negative enthalpy. Every gate read all of them.
+
+### What landed
+
+`knowledge-check-04-05.md`, weight 7 (chapter 6 to 8, the appendices to
+9): 22 items over 8 sections — 9 fill-ins, 5 equation text-ins, 1 formula
+text-in, 3 recall text-ins, 4 multiple choices, no selfcheck; 15 are
+worked-example items. 4.3 and 5.2 stand at two items. 4.4's two multiple
+choices both serve the first objective, by the parent's ruling: the
+second objective's term is printed with its definition in the page's
+objective heading. The built page is 206 kB.
+
+The authors turned down three usable examples for echoes on other
+sections' pages: 4.2's precipitation parts (a) and (b), 4.3's Mg(OH)₂
+example (its equation is a 4.1 Practice key), 4.5's gravimetric example
+(its stem prints a formula of a 4.2 key). In 5.3 the FeCl₃ example was
+chosen over ClF₃, whose −104.5 is also the key of a Practice item.
+
+### What each reading found
+
+| Reading | Items | Hard | Soft |
+|---|---|---|---|
+| Chapter 4 checker | 14, key-covered, 0 disagreements | 0 | 3 |
+| Chapter 5 checker | 8, key-covered, 0 disagreements | 0 | 3 |
+| Sweep | 22 | 0 | 5 |
+| Second checker (2 rewrites) | 2 | 1, in the grader | 0 |
+| Blind solve | 22: 21 agree, 0 disagree, 1 flagged | | |
+
+- The parent applied two rewrites after the checkers: `accept="Δ"` on
+  4.1's "delta" item, and 4.2's oxidation-number stem, whose pointer to
+  the guidelines is now a link to Section 4.2.
+- The second checker typed Δ as a Mac keyboard does (Option-J, U+2206)
+  and the grader read it as an empty answer. `check-text.mjs` now reads
+  U+2206 as Δ, with a test.
+- The solver worked all nine fill-ins before opening a page; each agrees
+  with what its section page prints. Its one flag, Δ beside "delta", is
+  the form the item accepts.
+- `kc leaks` raised two candidates on the landed page, both `\Delta H`
+  in 5.3 stems beside the key "delta": notation, accepted.
+- Typed into the built page: 22 of 22 keys correct, and 22 of 22 in the
+  variants pass.
+
+### Left as it is
+
+- 5.2's sign item is a two-option multiple choice, and 5.3's ozone stem
+  prints "endothermic" beside +286 kJ, the other half of the same
+  convention. Two readers noted it as soft; the module prints exactly
+  two signs.
+
+### For Derek
+
+1. **5.2 has no calculation item**, by "no table, no item". Printing the
+   specific heat of water in a stem would put a calorimetry calculation
+   back, and would be a change to the rule that a stem adds no datum.
+2. **The solubility and oxidation-number guidelines are treated as
+   rules, not tables**, so 4.2's examples are asked without them on the
+   page.
+
+### Next
+
+Chapter 7, after probing its configuration and ordering shapes.
+
 ## The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under

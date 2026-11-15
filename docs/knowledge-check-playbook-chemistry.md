@@ -127,7 +127,15 @@ an item. So:
     included: an example that sends the reader to an appendix other than A
     is not used, and the rule costs little — 18 of the book's 289 worked
     examples do (one in chapter 5, five in chapter 16), counted from the
-    CNXML's links and its "Appendix X" on November 11, 2026. Is, **in the part the item asks**, as the
+    CNXML's links and its "Appendix X" on November 11, 2026. **A constant
+    or a measured factor the section states in its text or its own table
+    counts the same** (block 2): all five worked examples of 5.2 and the
+    first of 5.1 need the specific heat of water, and 4.3's propane example
+    needs Avogadro's number; none prints it in its question, so none is
+    used, and 5.2 is written items only. That count is not in the 18. A
+    set of RULES the section teaches — the solubility guidelines, the
+    guidelines for oxidation numbers — is not such a table: the learner is
+    asked to know them, and 4.2's examples are used. Is, **in the part the item asks**, as the
     source prints it — the section page corrected nothing in that part's
     question, its data, the working that leads to its answer, or the
     answer, and no Source note is about it (a known defect is not an
