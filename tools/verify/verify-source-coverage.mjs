@@ -118,7 +118,7 @@ import { integerFlag, parseCliArgs } from '../lib/cli.mjs';
 import { shortcodes } from '../lib/content.mjs';
 import { mediaBindings } from '../lib/exercise-context.mjs';
 import {
-  KEYED_EXERCISE_CLASS, KEYED_ONLY_BOOKS, answerText, checkYourLearning, closedSet, plain, readingRank, sequentialParts, splittingStem, unitScore, unlinked,
+  KEYED_EXERCISE_CLASS, KEYED_ONLY_BOOKS, answerText, checkYourLearning, closedSet, closingUnit, plain, readingRank, sequentialParts, splittingStem, twoUnitAnswer, unitScore, unlinked,
 } from '../lib/keyed-units.mjs';
 import { MATCH_FLOOR } from './verify-source-keys.mjs';
 
@@ -841,6 +841,23 @@ export function coverage(markdown, source, { listed = [], keyedOnly = false } = 
     itemOwner.set(candidate.itemIndex, units[candidate.unitIndex].group);
     if (exclusive) partOwned.add(candidate.itemIndex);
   }
+  // Each item's best-reading unit: an item stands for the unit it reads most like.
+  const bestUnitOf = new Map();
+  for (const candidate of candidates) {
+    const held = bestUnitOf.get(candidate.itemIndex);
+    if (!held || candidate.score > held.score) bestUnitOf.set(candidate.itemIndex, candidate);
+  }
+  // A part answered in two units ("1310 J; 313 cal", Chemistry 2e 5.1) is
+  // carried as one fill-in per unit, each closing with a sentence that names
+  // its unit; the part is rendered only when every unit has its item.
+  const unitsLacking = (unit, unitIndex) => {
+    const segment = unit.partText !== undefined && unit.answer
+      ? (sequentialParts(unit.answer, { answer: true })?.parts.find((part) => `${unit.group}(${part.label})` === unit.id)?.text ?? unit.answer)
+      : unit.answer;
+    const needed = twoUnitAnswer(segment, unit.stem);
+    return { needed, lacking: needed.filter((wanted) => !items.some((item, itemIndex) => bestUnitOf.get(itemIndex)?.unitIndex === unitIndex
+      && closingUnit(item.question) === wanted)) };
+  };
   return units.map((unit, unitIndex) => {
     const verdict = { id: unit.id, group: unit.group, cls: unit.cls, stem: unit.stem };
     if (omittable(unit)) {
@@ -877,6 +894,10 @@ export function coverage(markdown, source, { listed = [], keyedOnly = false } = 
       // item (not a verbatim transcription of the exercise) is a fold the
       // matcher could see; it counts as rendered and is named for audit.
       const item = items[taken.itemIndex];
+      const { needed, lacking } = unitsLacking(unit, unitIndex);
+      if (lacking.length) {
+        return { ...verdict, status: 'missing', how: 'unit', detail: `the source answers it in ${needed.join(' and ')}, and no item for it closes naming ${lacking.join(' or ')} ("Enter the heat in calories.") — one fill-in per unit` };
+      }
       const folded = taken.score < 0.9 && isCheckQuestion(item.question, source.checkQuestions);
       return {
         ...verdict, status: folded ? 'folded' : 'rendered', how: taken.how, score: Number(taken.score.toFixed(2)), line: item.line,
@@ -917,7 +938,7 @@ export function checkCoverage(repositoryRoot, { contentRoot = 'content' } = {}) 
       if (verdict.status === 'missing') {
         failures.push({
           page: section.localPath,
-          detail: `${section.sourceSection} ${section.moduleId} ${verdict.id} (${verdict.cls}) has no rendered counterpart: ${JSON.stringify(verdict.stem.slice(0, 160))}`,
+          detail: `${section.sourceSection} ${section.moduleId} ${verdict.id} (${verdict.cls}) has no rendered counterpart${verdict.detail ? ` for every unit: ${verdict.detail}` : ''}: ${JSON.stringify(verdict.stem.slice(0, 160))}`,
         });
       }
       if (verdict.status === 'unkeyed-rendered') {

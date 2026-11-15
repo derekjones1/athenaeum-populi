@@ -55,6 +55,7 @@ chemistry, and nuclear chemistry.
 - **Stoichiometry of Chemical Reactions** — writing and balancing chemical
   equations, classifying reactions, reaction stoichiometry, reaction yields,
   and quantitative chemical analysis.
+- **Thermochemistry** — energy basics, calorimetry, and enthalpy.
 
 ## Appendices
 
@@ -68,7 +69,6 @@ standard electrode potentials that the chapters refer to by letter.
 
 The remaining chapters of Chemistry 2e will appear in this order:
 
-- **Thermochemistry** — energy basics, calorimetry, and enthalpy.
 - **Electronic Structure and Periodic Properties of Elements** —
   electromagnetic energy, the Bohr model, the development of quantum theory,
   electron configurations, and periodic variations in element properties.

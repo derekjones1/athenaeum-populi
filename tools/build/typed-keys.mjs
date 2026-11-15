@@ -26,7 +26,7 @@
  * --variants: a second ordinary way of writing each answer instead — the
  * letter x for the times sign, a leading "+" on an oxidation state, no
  * leading zero, a thousands comma, a charge typed bare with no state
- * symbols, a name in lower case (a sortbins has no second writing: it is
+ * symbols (and a fractional coefficient as its decimal, 1.5 for 3⁄2), a name in lower case (a sortbins has no second writing: it is
  * placed as keyed in both passes). Not every variant must be right (that is a
  * judgment); each one that is not is listed with the page's feedback, so a
  * bare "Not quite" on a reasonable writing is seen.
@@ -63,8 +63,14 @@ function routes() {
 const SUB = '₀₁₂₃₄₅₆₇₈₉';
 const SUP = '⁰¹²³⁴⁵⁶⁷⁸⁹';
 /** A formula or equation key in Unicode print, typed on a plain keyboard. */
-function asciiChem(key, { caret = true, states = true } = {}) {
+// A fractional coefficient (5.3's formation equations) is typed as the
+// equation field's stem says, "1/2"; the variant pass types its decimal.
+const GLYPHS = { '½': [1, 2], '⅓': [1, 3], '⅔': [2, 3], '¼': [1, 4], '¾': [3, 4] };
+function asciiChem(key, { caret = true, states = true, decimal = false } = {}) {
+  const fraction = (top, bottom) => (decimal ? String(Number(top) / Number(bottom)) : `${top}/${bottom}`);
   let text = key
+    .replace(/[½⅓⅔¼¾]/g, (glyph) => fraction(...GLYPHS[glyph]))
+    .replace(/(\d+)\u2044(\d+)/g, (_, top, bottom) => fraction(top, bottom))
     // A nuclide with both numbers: ²³₁₁Na is typed ^23_11Na.
     .replace(/([⁰¹²³⁴-⁹]+)([₀-₉]+)(?=[A-Z])/g, (_, a, b) => '^' + [...a].map((c) => SUP.indexOf(c)).join('') + '_' + [...b].map((c) => SUB.indexOf(c)).join(''))
     .replace(/[₀-₉]/g, (c) => SUB.indexOf(c))
@@ -76,7 +82,7 @@ function asciiChem(key, { caret = true, states = true } = {}) {
       return (caret ? '^' : '') + plain;
     })
     .replace(/⟶|→/g, '->').replace(/⇌/g, '<=>').replace(/[·•]/g, '.').replace(/−/g, '-');
-  if (!states) text = text.replace(/\((?:s|l|g|aq)\)/g, '');
+  if (!states) text = text.replace(/\((?:s|l|g|aq)(?:, ?[a-z]+)?\)/g, '');
   return text;
 }
 
@@ -164,7 +170,7 @@ for (const route of routes()) {
         let typed = info.answer;
         let kind = 'as-keyed';
         if (info.form === 'formula' || info.form === 'equation') {
-          typed = pass === 'A' ? asciiChem(info.answer) : asciiChem(info.answer, { caret: false, states: false });
+          typed = pass === 'A' ? asciiChem(info.answer) : asciiChem(info.answer, { caret: false, states: false, decimal: true });
           kind = pass === 'A' ? 'guide-style' : 'bare-charge-no-states';
         } else if (pass === 'B') {
           typed = info.answer.toLowerCase(); kind = 'lowercase';

@@ -240,7 +240,42 @@ export function lastFigureExponent(key, figures) {
 /** Units of the last figure, beyond the allowance, that still count as a near miss. */
 export const nearUnits = (figures) => (figures <= 1 ? 0 : figures === 2 ? 1 : 2);
 
-export function compareMeasured(response, key, { figures, lastDigit = 0 }) {
+/**
+ * Two more reasons an `incorrect` verdict may carry (Chemistry 2e chapter 5,
+ * November 14, 2026), asked only of a response that is neither right nor a
+ * near miss, and never changing the verdict:
+ *
+ *   'sign'      the response with its sign flipped is right — `802` for a key
+ *               of `-802`, `-265` for `265` (an enthalpy change of the wrong
+ *               direction). Right means `correct`, or the unrounded readout
+ *               of a right value (`too-many`).
+ *   'thousand'  the response times 10³ or 10⁻³ is right — `1.31` for 1310 J
+ *               (an answer in kJ where J is asked), `1310` for 1.31. Exactly a
+ *               thousand: 10¹, 10², and 10⁶ are not a unit's prefix step a
+ *               learner takes between J and kJ, g and kg, mL and L, and a value
+ *               merely NEAR a thousandfold one is not the key's digits.
+ *
+ * A response both a thousand off and of the wrong sign (`0.802` for −802) is
+ * 'thousand': every word of that sentence is true of it ("the digits are
+ * right, the value is a thousand times off"), while the sign sentence would
+ * say "the size is right", which it is not. Once the unit is fixed the sign
+ * sentence follows.
+ */
+export function compareMeasured(response, key, spec) {
+  const compared = compareAtKeyPrecision(response, key, spec);
+  if (compared.verdict !== 'incorrect' || compared.reason || response.mantissa === 0n || key.mantissa === 0n) return compared;
+  const right = (numeral) => {
+    const verdict = compareAtKeyPrecision(numeral, key, spec);
+    return verdict.verdict === 'correct' || (verdict.verdict === 'form' && verdict.reason === 'too-many');
+  };
+  const flipped = { ...response, negative: !response.negative };
+  if (right(flipped)) return { verdict: 'incorrect', reason: 'sign' };
+  const thousandfold = (numeral) => [3, -3].some((step) => right({ ...numeral, exponent: numeral.exponent + step }));
+  if (thousandfold(response) || thousandfold(flipped)) return { verdict: 'incorrect', reason: 'thousand' };
+  return compared;
+}
+
+function compareAtKeyPrecision(response, key, { figures, lastDigit = 0 }) {
   if (key.mantissa === 0n || response.mantissa === 0n) return { verdict: 'incorrect' };
   const rules = [false, true];
 

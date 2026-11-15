@@ -268,11 +268,11 @@ test('formatTriesCoverage reports n/a rather than 0/0 for a book with no note.tr
   assert.equal(formatTriesCoverage(3, 5), '3/5');
 });
 
-test('committed provenance maps all 800 local sections exactly once', () => {
+test('committed provenance maps all 803 local sections exactly once', () => {
   const result = verifyCommittedSourceMap(repositoryRoot);
   assert.deepEqual(result.errors, []);
-  assert.equal(result.expectedCount, 800);
-  assert.equal(result.actualCount, 800);
+  assert.equal(result.expectedCount, 803);
+  assert.equal(result.actualCount, 803);
   const counts = Object.groupBy(result.map.sections, (entry) => entry.book);
   assert.equal(counts.prealgebra.length, 60);
   assert.equal(counts['elementary-algebra'].length, 71);
@@ -281,7 +281,7 @@ test('committed provenance maps all 800 local sections exactly once', () => {
   assert.equal(counts.biology.length, 208);
   assert.equal(counts.microbiology.length, 127);
   assert.equal(counts['anatomy-physiology'].length, 169);
-  assert.equal(counts.chemistry.length, 22);
+  assert.equal(counts.chemistry.length, 25);
   const representative = result.map.sections.find((entry) => (
     entry.book === 'intermediate-algebra' && entry.sourceSection === '3.1'
   ));

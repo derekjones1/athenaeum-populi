@@ -1,0 +1,34 @@
+{{- /*
+  Athenaeum Populi — the prose that is held on one line with an inline
+  formula, beside the punctuation `_partials/glue-math.html` (body) and
+  `_partials/mathtext.html` (item text) already hold there.
+
+  A Hess's-law stem gives its reactions as "(ii) $\ce{…}$ $\Delta H$ = −74.8
+  kJ;" (the Chemistry playbook's "Stems" form): the label, the reaction, the
+  symbol and its value are four pieces, and a browser may break between any
+  prose token and a KaTeX span. The rendered-page reading of Chemistry 5.3
+  saw "(ii)" end a line with its reaction on the next, and "ΔH" end a line
+  with "= 180.5 kJ" on the next. So both partials also take into the
+  formula's `.ap-math-glue` span:
+
+    label   a parenthesised roman numeral or letter typed straight before the
+            formula, "(ii) " — set in `.ap-math-label`, so it scrolls and
+            wraps with the formula after it;
+    value   a run typed straight after it, " = <number> <unit>" or " = ?",
+            before any punctuation that follows.
+
+  The breaks inside the formula itself (its <wbr>s) are untouched, so a long
+  reaction still wraps after its arrow, and the space before the label and
+  after the value still break.
+
+  Call:  {{ $re := partialCached "math-glue-patterns.html" "math-glue" }}
+  Returns a dict of RE2 patterns, unanchored: label, value.
+*/ -}}
+{{- $super := `[⁻⁰¹²³⁴⁵⁶⁷⁸⁹]` -}}
+{{- $unitWord := printf `[A-Za-zµΩ°][A-Za-z°]{0,3}(?:%s+|\b)` $super -}}
+{{- $unit := printf `%s(?:/[A-Za-z°]{1,4}(?:%s+|\b))?(?: [A-Za-z]{1,4}%s+)?` $unitWord $super $super -}}
+{{- $number := `[−+-]?[0-9]+(?:[.,][0-9]+)*` -}}
+{{- return (dict
+  "label" `\((?:[ivx]{1,4}|[a-z])\)`
+  "value" (printf ` ?= ?(?:\?|%s(?: %s)?)` $number $unit)
+) -}}

@@ -6,7 +6,9 @@
   with `<!--m-->…<!--/m-->` (it says why, and why not CSS alone). Here the
   formula and the punctuation typed straight after it — `. , ; : ? ! )` and a
   closing quote, any run of them — become one `.ap-math-glue` span, and
-  every marker is removed.
+  every marker is removed. A label typed before the formula, "(ii) ", and a
+  value typed after it, " = 180.5 kJ", join the same span
+  (`_partials/math-glue-patterns.html` says which and why).
 
   The pattern must never run from one formula's start to a LATER formula's
   end. RE2 has no lookahead, so the body is written as "no comment inside":
@@ -18,6 +20,14 @@
 */ -}}
 {{- $html := printf "%s" . -}}
 {{- if in $html "<!--m-->" -}}
+  {{- $re := partialCached "math-glue-patterns.html" "math-glue" -}}
+  {{- $math := `<!--m-->((?:[^<]|<[^!])*)<!--/m-->` -}}
+  {{- $punct := `(?:[.,;:?!)’”]|&rsquo;|&rdquo;)` -}}
+  {{- /* A label before the formula, with any value and punctuation after it. */ -}}
+  {{- $html = replaceRE (printf `(^|[\s>])(%s) %s((?:%s)?%s*)` $re.label $math $re.value $punct) `${1}<span class="ap-math-glue"><span class="ap-math-label">${2} </span>${3}${4}</span>` $html -}}
+  {{- /* A value after the formula, with any punctuation after that. */ -}}
+  {{- $html = replaceRE (printf `%s(%s%s*)` $math $re.value $punct) `<span class="ap-math-glue">${1}${2}</span>` $html -}}
+  {{- /* Punctuation alone. */ -}}
   {{- $html = replaceRE `<!--m-->((?:[^<]|<[^!])*)<!--/m-->((?:[.,;:?!)’”]|&rsquo;|&rdquo;)+)` `<span class="ap-math-glue">$1$2</span>` $html -}}
   {{- $html = replace (replace $html "<!--m-->" "") "<!--/m-->" "" -}}
 {{- end -}}

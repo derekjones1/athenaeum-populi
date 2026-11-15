@@ -314,6 +314,66 @@ export function printedNumerals(text) {
   return numerals;
 }
 
+/*
+ * One part answered in two units (Chemistry 2e 5.1: "(a) 47.6 J/°C; 11.38
+ * cal °C⁻¹", "1310 J; 313 cal"). The page carries one fill-in per unit, each
+ * closing with a sentence that names its unit ("Enter the heat capacity in
+ * J/°C.", "Enter the heat in calories."), and both source gates read the
+ * unit word: the keys gate holds each item to the number printed under the
+ * unit its closing names, the coverage gate requires an item per unit.
+ *
+ * A unit is read by its leading energy unit — what tells the two numbers of
+ * such an answer apart — J, kJ, cal, kcal, and the food Calorie (capital C),
+ * by symbol or name.
+ */
+const UNIT_FAMILIES = [
+  ['kJ', /^(?:kJ\b|kilojoules?\b)/i],
+  ['kcal', /^(?:kcal\b|kilocalories?\b)/i],
+  ['J', /^(?:J\b|joules?\b)/i],
+  ['Cal', /^Cal(?:ories?)?\b/],
+  ['cal', /^(?:cal\b|calories?\b)/i],
+];
+/** The energy unit a text opens with ("J/°C", "calories per degree"), or null. */
+export function unitFamily(text) {
+  const opening = String(text ?? '').trim();
+  const found = UNIT_FAMILIES.find(([, pattern]) => pattern.test(opening));
+  return found ? found[0] : null;
+}
+
+/** Each number of an answer with the energy unit printed after it: [{ numeral, unit }]. */
+export function answerUnits(answer) {
+  const out = [];
+  for (const piece of String(answer ?? '').split(/[;,]|\s(?:or|and)\s/)) {
+    const [numeral] = printedNumerals(piece);
+    if (!numeral) continue;
+    const unit = unitFamily(piece.slice(piece.indexOf(numeral.printed) + numeral.printed.length));
+    if (unit) out.push({ numeral, unit });
+  }
+  return out;
+}
+
+/**
+ * The units of a part the source asks in two units and answers in both
+ * ("How much heat, in joules and in calories, …?" → "1310 J; 313 cal"), else
+ * []. The stem must name both: "41,360 J/mol or 41.4 kJ/mol" (10.3) is one
+ * value written twice under a stem that asks it once, and either number is
+ * the key.
+ */
+export function twoUnitAnswer(answer, stem) {
+  const asked = new Set([...String(stem ?? '').matchAll(/\bin\s+(?:the\s+)?(\S+)/gi)].map((match) => unitFamily(match[1])).filter(Boolean));
+  const units = [...new Set(answerUnits(answer).map((entry) => entry.unit))].filter((unit) => asked.has(unit));
+  return units.length >= 2 ? units : [];
+}
+
+/** The energy unit an item's closing sentence names ("Enter the heat in calories."), or null. */
+export function closingUnit(question) {
+  const closing = String(question ?? '').trim().split(/(?<=[.?!][)”’"]?)\s+/).pop();
+  // Only an added "Enter … in <unit>." sentence: the source's own question
+  // names both units ("How much heat, in joules and in calories, …?").
+  const named = /^Enter\b.*\bin\s+(\S.*?)\.?$/.exec(closing);
+  return named ? unitFamily(named[1]) : null;
+}
+
 /**
  * Each Check Your Learning of a module, whole: the question a worked
  * `<example>` ends with — the titled paragraph and any paragraph between it
@@ -325,24 +385,36 @@ export function checkYourLearning(document) {
   for (const example of descendants(document, (node) => localName(node) === 'example')) {
     const children = (example.children || []).filter((child) => typeof child !== 'string');
     const titleOf = (node) => normalizeWhitespace(stemText(firstElement(node, 'title') || { children: [] }));
-    const at = children.findIndex((child) => localName(child) === 'para' && /^check your learning$/i.test(titleOf(child)));
-    if (at === -1) continue;
-    const answerAt = children.findIndex((child, index) => index > at && localName(child) === 'note' && /^answer:?$/i.test(titleOf(child)));
-    const paragraphs = children.slice(at, answerAt === -1 ? at + 1 : answerAt).filter((child) => localName(child) === 'para');
-    const read = (options) => normalizeWhitespace(paragraphs.map((para) => stemText(para, options)).join(' ')).replace(/^check your learning\s*/i, '');
-    const stem = read();
-    if (!stem) continue;
-    // The example whose Check Your Learning this one leans on ("the sweetened
-    // tea described in [Example 3.14]", 3.3): the page restates that one's
-    // given data (`unitFor`; the gate probe builds the item so).
-    const leans = paragraphs.flatMap((para) => descendants(para, (node) => localName(node) === 'link' && node.attributes['target-id']))
-      .map((link) => link.attributes['target-id']).find((target) => target !== example.attributes.id
-        && descendants(document, (node) => localName(node) === 'example' && node.attributes.id === target).length);
-    found.push({
-      ...(leans ? { leansOn: `${leans}#check` } : {}),
-      id: `${example.attributes.id || ''}#check`, cls: 'check-your-learning', stem, marked: read({ marked: true }),
-      keyed: answerAt !== -1, answer: answerAt === -1 ? '' : answerText(children[answerAt]),
-      answerMarked: answerAt === -1 ? '' : markedStemText(children[answerAt]),
+    // An example may end with more than one Check Your Learning, each with
+    // its own Answer note (5.2's fs-idp13199280: the copper's initial
+    // temperature, then the final temperature). The first keeps the id
+    // `<example id>#check` every page and ledger already cites; the second is
+    // `#check2`, the third `#check3`.
+    const starts = children.map((child, index) => (localName(child) === 'para' && /^check your learning$/i.test(titleOf(child)) ? index : -1)).filter((index) => index !== -1);
+    starts.forEach((at, ordinal) => {
+      const next = starts[ordinal + 1] ?? children.length;
+      const answerAt = children.findIndex((child, index) => index > at && index < next && localName(child) === 'note' && /^answer:?$/i.test(titleOf(child)));
+      // Its paragraphs and the display equations between them: a Hess's-law
+      // Check Your Learning prints its reactions as <equation>s (5.3's
+      // "Calculate ΔH for the process: [equation] from the following
+      // information: [two equations]"), and without them the stem is eight
+      // words that read like any exercise that prints one of those reactions.
+      const paragraphs = children.slice(at, answerAt === -1 ? at + 1 : answerAt).filter((child) => localName(child) === 'para' || localName(child) === 'equation');
+      const read = (options) => normalizeWhitespace(paragraphs.map((para) => stemText(para, options)).join(' ')).replace(/^check your learning\s*/i, '');
+      const stem = read();
+      if (!stem) return;
+      // The example whose Check Your Learning this one leans on ("the sweetened
+      // tea described in [Example 3.14]", 3.3): the page restates that one's
+      // given data (`unitFor`; the gate probe builds the item so).
+      const leans = paragraphs.flatMap((para) => descendants(para, (node) => localName(node) === 'link' && node.attributes['target-id']))
+        .map((link) => link.attributes['target-id']).find((target) => target !== example.attributes.id
+          && descendants(document, (node) => localName(node) === 'example' && node.attributes.id === target).length);
+      found.push({
+        ...(leans ? { leansOn: `${leans}#check` } : {}),
+        id: `${example.attributes.id || ''}#check${ordinal ? ordinal + 1 : ''}`, cls: 'check-your-learning', stem, marked: read({ marked: true }),
+        keyed: answerAt !== -1, answer: answerAt === -1 ? '' : answerText(children[answerAt]),
+        answerMarked: answerAt === -1 ? '' : markedStemText(children[answerAt]),
+      });
     });
   }
   return found;
@@ -726,8 +798,35 @@ function ownScore(unit, question, item = {}) {
     const lead = unit.lead ? tokenSimilarity(unit.lead, question) : 1;
     return lead >= LEAD_FLOOR || words >= STANDALONE_WORDS ? { score: 1, words, near, exact } : { score: 0, words: 0 };
   }
-  const score = tokenSimilarity(question, unit.stem);
-  return { score: score >= WHOLE_FLOOR ? score : 0, words: 0, near, exact: 0 };
+  // A stem that names an example or exercise of ANOTHER section (the
+  // source's link, whose text the gates never read) as the page must —
+  // "the example “Heat Flow in an Instant Ice Pack” in [Section 5.2](…)",
+  // "the calcium chloride calorimetry exercise in [Section 5.2](…)" — and
+  // restates that one's given data in a closing parenthesis "(In that
+  // example, …)" before its "Enter …" sentence (docs/subjects/chemistry.md
+  // "Stems"; chapter 5's run facts, decision 6). The added words are a third
+  // of such an item and none is the source's, so the stem is also read
+  // without them. Only an item that carries such a reference is read so.
+  const own = withoutCrossReference(question);
+  const score = Math.max(tokenSimilarity(question, unit.stem), own === null ? 0 : tokenSimilarity(own, unit.stem));
+  return { score: score >= WHOLE_FLOOR ? score : 0, words: 0, near: Math.max(near, score), exact: 0 };
+}
+
+const CROSS_REFERENCE = /\bthe (?:example|exercise|figure|table) “[^”]*” in Section \d+\.\d+|\bthe [^,.;()“”]{1,60}? (?:example|exercise) in Section \d+\.\d+/g;
+/**
+ * A question without what the page adds when it names another section's
+ * example or exercise: the reference itself, the parenthesis that restates
+ * that one's given data ("(In that example, …)"), and a closing "Enter …"
+ * sentence. Null when the question names no other section's example or
+ * exercise. The question arrives unlinked ("Section 5.2", not its link).
+ */
+export function withoutCrossReference(question) {
+  const text = String(question ?? '');
+  if (!text.match(CROSS_REFERENCE)) return null;
+  return text.replace(CROSS_REFERENCE, ' ')
+    .replace(/\s*\(In th(?:at|is|ose) [^()]*(?:\([^()]*\)[^()]*)*\)/g, '')
+    .replace(/(?:^|\s)Enter [^.]*\.\s*$/, '')
+    .replace(/\s+/g, ' ').trim();
 }
 
 /** A sortbins item's labels: `labels` (verify-source-keys `pageItems`) or `options` (verify-source-coverage `pageTexts`). */

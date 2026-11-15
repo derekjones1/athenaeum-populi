@@ -29,6 +29,12 @@
      between a formula's pieces is for). `$glued` is that punctuation, taken
      off the front of the prose part that follows. */ -}}
 {{- $glued := "" -}}
+{{- /* A label typed straight before a math run, "(ii) ", and a value typed
+     straight after it, " = 180.5 kJ", join the same span
+     (`_partials/math-glue-patterns.html` says which and why). `$label` is
+     the label, taken off the end of the prose part before the run. */ -}}
+{{- $re := partialCached "math-glue-patterns.html" "math-glue" -}}
+{{- $label := "" -}}
 {{- range $i, $p := $parts -}}
   {{- if eq (mod $i 2) 1 -}}
     {{- $tex := replace $p $NUL "\\$" -}}
@@ -49,10 +55,14 @@
           {{- /* A straight quote here is an apostrophe or a closing quote
                ("$b$'s"); markdownify would have curled it, so it is curled
                by hand. */ -}}
-          {{- with findRE `^[.,;:?!)’”']+` (index $parts (add $i 1)) 1 -}}
+          {{- with findRE (printf `^(?:%s)?[.,;:?!)’”']*` $re.value) (index $parts (add $i 1)) 1 -}}
             {{- $glued = index . 0 -}}
-            {{- $math = printf `<span class="ap-math-glue">%s%s</span>` $math (replace $glued "'" "’") -}}
           {{- end -}}
+        {{- end -}}
+        {{- if or $glued $label -}}
+          {{- $lead := cond (ne $label "") (printf `<span class="ap-math-label">%s </span>` $label) "" -}}
+          {{- $math = printf `<span class="ap-math-glue">%s%s%s</span>` $lead $math (replace $glued "'" "’" | htmlEscape) -}}
+          {{- $label = "" -}}
         {{- end -}}
         {{- $sb = $sb | append $math -}}
       {{- end -}}
@@ -67,6 +77,12 @@
     {{- if $glued -}}
       {{- $p = strings.TrimPrefix $glued $p -}}
       {{- $glued = "" -}}
+    {{- end -}}
+    {{- if lt (add $i 1) (len $parts) -}}
+      {{- with findRE (printf `(?:^|\s)%s $` $re.label) $p 1 -}}
+        {{- $label = trim (index . 0) " \t\n\r" -}}
+        {{- $p = strings.TrimSuffix (printf "%s " $label) $p -}}
+      {{- end -}}
     {{- end -}}
     {{- if eq (trim $p " \t\n\r") "" -}}
       {{- $sb = $sb | append $p -}}

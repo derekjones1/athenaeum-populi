@@ -242,7 +242,9 @@ th .katex {
    in a table cell, or a number in scientific notation, still never breaks)
    and shown only here, where it gives the formula back the breaks the
    no-wrap box took. A long formula still wraps on a phone; only its last
-   piece holds the period. */
+   piece holds the period. A label typed before the formula, "(ii) " in
+   `.ap-math-label`, and a " = 180.5 kJ" run typed after it share the span
+   (layouts/_partials/math-glue-patterns.html). */
 .katex wbr {
   display: none;
 }

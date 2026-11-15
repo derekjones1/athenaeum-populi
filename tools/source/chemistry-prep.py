@@ -91,7 +91,9 @@ def inventory(bundle, chapter, json_path):
         exercises = re.findall(r"<exercise\b.*?</exercise>", source, flags=re.S)
         keyed = [exercise for exercise in exercises if "<solution" in exercise]
         examples = re.findall(r"<example\b.*?</example>", source, flags=re.S)
-        check_your_learning = [example for example in examples if "Check Your Learning" in example]
+        # An example may end with more than one Check Your Learning (5.2's
+        # fs-idp13199280 has two, each with its Answer note): count each.
+        check_your_learning = [example for example in examples for _ in re.findall(r"<title>Check Your Learning</title>", example)]
         notes = collections.Counter(re.findall(r'<note[^>]*class="([^"]*)"', source))
         headings = re.findall(r"<section[^>]*>\s*<title>([^<]*)</title>", source)
         info = dict(
@@ -125,13 +127,12 @@ def inventory(bundle, chapter, json_path):
                 if "<solution" in exercise:
                     problem, solution = exercise.split("<solution", 1)
                     print(f"    K{number}: Q: {inventory_text(problem)[:150]}\n         A: {inventory_text('<' + solution)[:170]}")
-            for example in check_your_learning:
-                match = re.search(
+            for example in examples:
+                for match in re.finditer(
                     r"<title>Check Your Learning</title>(.*?)<note[^>]*>\s*<title>Answer:?</title>(.*?)</note>",
                     example,
                     flags=re.S,
-                )
-                if match:
+                ):
                     print(f"    CYL: Q: {inventory_text(match.group(1))[:150]}\n         A: {inventory_text(match.group(2))[:120]}")
     if json_path:
         with open(json_path, "w") as handle:
@@ -234,14 +235,17 @@ def keys(bundle, module_id):
         title = re.search(r"<title>(.*?)</title>", example, flags=re.S)
         example_id = attribute_or_default(match.group(1), "id", "?")
         emit(f" - Example {number} | id", example_id, "| title:", keys_text(title.group(1)) if title else "?")
-        check = re.search(
+        # Every Check Your Learning of the example: the first is the gates'
+        # `<id>#check`, a second `<id>#check2` (keyed-units.mjs).
+        checks = list(re.finditer(
             r"<title>Check Your Learning</title>(.*?)<note[^>]*>\s*<title>Answer:?</title>(.*?)</note>",
             example,
             flags=re.S,
-        )
-        if check:
-            emit("     CHECK YOUR LEARNING:", keys_text(check.group(1)), "\n     ANSWER (source key):", keys_text(check.group(2)))
-        else:
+        ))
+        for ordinal, check in enumerate(checks):
+            suffix = f" ({example_id}#check{ordinal + 1 if ordinal else ''})" if len(checks) > 1 else ""
+            emit(f"     CHECK YOUR LEARNING{suffix}:", keys_text(check.group(1)), "\n     ANSWER (source key):", keys_text(check.group(2)))
+        if not checks:
             emit("     (no Check Your Learning / Answer pair found by this extractor — read the CNXML)")
 
     emit("\n## SUMMARY section")

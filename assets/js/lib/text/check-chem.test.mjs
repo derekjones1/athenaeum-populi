@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  checkChem, checkEquation, checkFormula, chemCanon, chemKeyProblem, prettySpecies, previewChem, readSpecies, MULTIPLIED_FORMULA, STATE_DIFFERS,
+  checkChem, checkEquation, checkFormula, chemCanon, chemKeyProblem, fractionText, prettySpecies, previewChem, readSpecies, MULTIPLIED_FORMULA, ONE_MOLE, STATE_DIFFERS,
 } from './check-chem.mjs';
 
 const formula = (typed, key, accept = '') => checkFormula(typed, key, { accept }).status;
@@ -540,4 +540,54 @@ test('a formula with every count multiplied up is told so, only against a key in
   assert.deepEqual(checkFormula('S2O8^4-', 'SO₄²⁻'), { status: 'incorrect' }, 'an ion is not read');
   assert.equal(checkFormula('CH', 'CH').status, 'correct');
   assert.doesNotMatch(MULTIPLIED_FORMULA, /empirical|molecular/, 'the reader does not know which the item asks');
+});
+
+test('a formation equation with a fractional coefficient is graded at the key\'s own scale (Chemistry 2e 5.3)', () => {
+  // The two Check Your Learning keys of 5.3's formation-equation example, in the book's print.
+  const ether = '4C(s, graphite) + 5H₂(g) + ½O₂(g) ⟶ C₂H₅OC₂H₅(l)';
+  const soda = '2Na(s) + C(s, graphite) + 3⁄2O₂(g) ⟶ Na₂CO₃(s)';
+  assert.equal(chemKeyProblem(ether, 'equation'), null, 'the lowest-terms lint admits a fractional key');
+  assert.equal(chemKeyProblem(soda, 'equation'), null);
+  // The learner types the fraction any way a keyboard gives.
+  for (const typed of ['4C + 5H2 + 1/2O2 -> C2H5OC2H5', '4C + 5H2 + 1/2 O2 -> C2H5OC2H5', '4C + 5H2 + ½O2 -> C2H5OC2H5', '4C + 5H2 + 0.5O2 -> C2H5OC2H5',
+    '4C + 5H2 + .5O2 -> C2H5OC2H5', '4C + 5H2 + 1⁄2O2 -> C2H5OC2H5', '5H2 + 1/2O2 + 4C -> C2H5OC2H5', '4C+5H2+1/2O2->C2H5OC2H5',
+    '4C(s, graphite) + 5H2(g) + 1/2O2(g) -> C2H5OC2H5(l)']) {
+    assert.equal(equation(typed, ether), 'correct', typed);
+  }
+  for (const typed of ['2Na + C + 3/2O2 -> Na2CO3', '2Na + C + 3/2 O2 -> Na2CO3', '2Na + C + 1.5O2 -> Na2CO3', '2Na + C + 1½O2 -> Na2CO3', '2Na + C + 1 1/2O2 -> Na2CO3'.replace('1 1/2', '3/2')]) {
+    assert.equal(equation(typed, soda), 'correct', typed);
+  }
+  // The doubled whole-number equation balances: form, and told why a fraction is asked.
+  for (const [typed, key] of [['8C + 10H2 + O2 -> 2C2H5OC2H5', ether], ['4Na + 2C + 3O2 -> 2Na2CO3', soda], ['4Na(s) + 2C(s) + 3O2(g) -> 2Na2CO3(s)', soda]]) {
+    const graded = checkEquation(typed, key);
+    assert.equal(graded.status, 'form', typed);
+    assert.equal(graded.message, ONE_MOLE, typed);
+  }
+  assert.doesNotMatch(ONE_MOLE, /smallest whole-number/, 'never the whole-number advice');
+  assert.doesNotMatch(ONE_MOLE, /[A-Z][a-z]?\d|ether|carbonate|product/i, 'names no substance');
+  // A whole-number key keeps its own message.
+  assert.match(checkEquation('4H2 + 2O2 -> 4H2O', '2H₂(g) + O₂(g) ⟶ 2H₂O(l)').message, /smallest whole-number coefficients/);
+  // Unbalanced or another coefficient: not the key.
+  assert.equal(equation('4C + 5H2 + O2 -> C2H5OC2H5', ether), 'incorrect');
+  assert.equal(equation('2Na + C + 1/2O2 -> Na2CO3', soda), 'incorrect');
+  // (s, graphite) is a state: optional; (s) typed for it is right (leaving every
+  // state out is right, so typing the state without the allotrope cannot be
+  // less right); an allotrope typed is compared.
+  assert.equal(equation('2Na(s) + C(s) + 3/2O2(g) -> Na2CO3(s)', soda), 'correct');
+  assert.equal(equation('2Na(s) + C(s, graphite) + 3/2O2(g) -> Na2CO3(s)', soda), 'correct');
+  assert.equal(equation('2Na(s) + C(S, Graphite) + 3/2O2(g) -> Na2CO3(s)', soda), 'correct');
+  assert.deepEqual(checkEquation('2Na(s) + C(s, diamond) + 3/2O2(g) -> Na2CO3(s)', soda), { status: 'form', message: STATE_DIFFERS });
+  assert.deepEqual(checkEquation('2Na(s) + C(g) + 3/2O2(g) -> Na2CO3(s)', soda), { status: 'form', message: STATE_DIFFERS });
+  // "Read as:" prints the fraction as the key does.
+  assert.equal(previewChem('2Na + C(s, graphite) + 1.5O2 -> Na2CO3', 'equation'), '2Na + C(s, graphite) + 3⁄2O₂ ⟶ Na₂CO₃');
+  assert.equal(previewChem('4C + 5H2 + 1/2O2 -> C2H5OC2H5', 'equation'), '4C + 5H₂ + ½O₂ ⟶ C₂H₅OC₂H₅');
+  assert.deepEqual([0.5, 1.5, 0.25, 2.5, 1 / 3, 3].map(fractionText), ['½', '3⁄2', '¼', '5⁄2', '⅓', '3']);
+  // The key's fraction is written one way (lint): the glyph, else digits around U+2044.
+  for (const [key, wanted] of [['2Na(s) + C(s, graphite) + 3/2O₂(g) ⟶ Na₂CO₃(s)', '3⁄2'], ['4C(s, graphite) + 5H₂(g) + 0.5O₂(g) ⟶ C₂H₅OC₂H₅(l)', '½'],
+    ['4C(s, graphite) + 5H₂(g) + 1⁄2O₂(g) ⟶ C₂H₅OC₂H₅(l)', '½'], ['2Na(s) + C(s, graphite) + 1½O₂(g) ⟶ Na₂CO₃(s)', '3⁄2']]) {
+    assert.match(chemKeyProblem(key, 'equation') ?? '', new RegExp(`is written "${wanted}"`), key);
+  }
+  // The source's MathML print reads as the key (the source gates).
+  assert.equal(chemCanon('4 C ( s , graphite ) + 5 H 2 ( g ) + ( 1 )/( 2 ) O 2 ( g ) ⟶ C 2 H 5 OC 2 H 5 ( l )', 'equation'), chemCanon(ether, 'equation'));
+  assert.equal(chemCanon('2 Na ( s ) + C ( s , graphite ) + ( 3 )/( 2 ) O 2 ( g ) ⟶ Na 2 CO 3 ( s )', 'equation'), chemCanon(soda, 'equation'));
 });

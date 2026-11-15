@@ -64,9 +64,45 @@ const STATES = new Set(['s', 'l', 'g', 'aq']);
 
 export const CHEM_FORMS = Object.freeze(['formula', 'equation']);
 
+/*
+ * A fractional coefficient (Chemistry 2e 5.3: a formation equation is
+ * written for ONE mole of its product, "4C(s, graphite) + 5H₂(g) + ½O₂(g) ⟶
+ * C₂H₅OC₂H₅(l)"). A KEY prints it as the book does: the vulgar-fraction
+ * glyph where Unicode has one (½, ¼, ¾, ⅓, …), otherwise its digits around
+ * the fraction slash U+2044 (3⁄2) — `fractionText`, which the lint holds a
+ * key to and the "Read as:" preview prints. A learner may type it any of
+ * the ways a keyboard gives: 1/2, ½, 0.5, 3/2, 1.5, 1½.
+ */
+const FRACTION_GLYPHS = Object.freeze({
+  '½': [1, 2], '⅓': [1, 3], '⅔': [2, 3], '¼': [1, 4], '¾': [3, 4], '⅕': [1, 5], '⅖': [2, 5], '⅗': [3, 5], '⅘': [4, 5],
+  '⅙': [1, 6], '⅚': [5, 6], '⅐': [1, 7], '⅛': [1, 8], '⅜': [3, 8], '⅝': [5, 8], '⅞': [7, 8], '⅑': [1, 9], '⅒': [1, 10],
+});
+const GLYPH_OF = new Map(Object.entries(FRACTION_GLYPHS).map(([glyph, [top, bottom]]) => [`${top}/${bottom}`, glyph]));
+const GLYPH_RE = new RegExp(`(\\d*)([${Object.keys(FRACTION_GLYPHS).join('')}])`, 'g');
+
+/** A coefficient as the book prints it: `2`, `½`, `3⁄2`. */
+export function fractionText(value) {
+  if (Number.isInteger(value)) return String(value);
+  for (let bottom = 2; bottom <= 12; bottom += 1) {
+    const top = Math.round(value * bottom);
+    if (Math.abs(top / bottom - value) < 1e-9) {
+      const divisor = gcd(top, bottom);
+      const key = `${top / divisor}/${bottom / divisor}`;
+      return GLYPH_OF.get(key) ?? `${top / divisor}\u2044${bottom / divisor}`;
+    }
+  }
+  return String(value);
+}
+
 /** One spelling for every way the characters of a formula are typed or printed. */
 function prepare(raw) {
   return String(raw ?? '').normalize('NFC')
+    // ½ and 1½ as n/d (a whole number before a glyph is a mixed number), the fraction slash as /.
+    .replace(GLYPH_RE, (_, whole, glyph) => {
+      const [top, bottom] = FRACTION_GLYPHS[glyph];
+      return `${(Number(whole || 0) * bottom) + top}/${bottom}`;
+    })
+    .replace(/\u2044/g, '/')
     .replace(/[‐‑‒–—−]/g, '-')
     .replace(/[₀-₉]+/g, (run) => `_${[...run].map((c) => SUBSCRIPTS.indexOf(c)).join('')}`)
     .replace(/[⁰¹²³⁴-⁹⁺⁻]+/g, (run) => `^${[...run].map((c) => (c === '⁺' ? '+' : c === '⁻' ? '-' : SUPERSCRIPTS.indexOf(c))).join('')}`)
@@ -156,17 +192,22 @@ export function readSpecies(raw, { equation = false } = {}) {
   let text = prepare(raw).replace(/\s+/g, '');
   if (!text) return [];
   let state = null;
-  // "(s, graphite)": the allotrope rides with the state.
+  let allotrope = null;
+  // "(s, graphite)": the allotrope rides with the state, and is compared
+  // where both the key and the response name one (graphite is not diamond).
   // A state typed in capitals, (S) or (AQ), is the same state.
-  const stateMatch = /\((s|l|g|aq)(?:,[a-z]+)?\)$/i.exec(text);
+  const stateMatch = /\((s|l|g|aq)(?:,([a-z]+))?\)$/i.exec(text);
   if (stateMatch && STATES.has(stateMatch[1].toLowerCase())) {
     state = stateMatch[1].toLowerCase();
+    allotrope = stateMatch[2] ? stateMatch[2].toLowerCase() : null;
     text = text.slice(0, stateMatch.index);
   }
   let coef = 1;
   let mass = null;
   if (equation) {
-    const leading = /^(\d+\/\d+|\d+)/.exec(text);
+    // A coefficient: a whole number, a fraction (1/2, and ½ or 3⁄2 as
+    // prepare() spells them), or a decimal (0.5, 1.5, .5).
+    const leading = /^(\d+\/\d+|\d+\.\d+|\.\d+|\d+)/.exec(text);
     if (leading) {
       coef = fraction(leading[1]);
       text = text.slice(leading[0].length);
@@ -174,7 +215,7 @@ export function readSpecies(raw, { equation = false } = {}) {
     }
   }
   // An electron: e-, e^-, e⁻.
-  if (equation && /^e\^?-$/.test(text)) return [{ canon: 'e^-', loose: 'e^-', atoms: {}, charge: -1, mass: null, state, coef }];
+  if (equation && /^e\^?-$/.test(text)) return [{ canon: 'e^-', loose: 'e^-', atoms: {}, charge: -1, mass: null, state, allotrope, coef }];
   // A nuclide's prescripts: the mass number, and below it the atomic number
   // where one is written (`^23_11Na`, `²³₁₁Na`).
   let atomic = null;
@@ -241,7 +282,7 @@ export function readSpecies(raw, { equation = false } = {}) {
     // element: what a written atomic number is held to.
     const symbols = Object.keys(atoms);
     const expected = symbols.length === 1 ? ATOMIC_NUMBER.get(symbols[0]) ?? null : null;
-    return { canon, loose, shown, atoms, charge, mass, atomic, expected, state, coef };
+    return { canon, loose, shown, atoms, charge, mass, atomic, expected, state, allotrope, coef };
   });
 }
 
@@ -255,8 +296,9 @@ export function prettySpecies(species) {
     .replace(/·(\d*)/, (_, n) => `·\u0000${n}\u0000`)
     .replace(/(?<![\u0000\d])(\d+)(?!\d*\u0000)/g, (_, n) => sub(n))
     .replace(/\u0000/g, '');
-  const coef = species.coef === 1 ? '' : Number.isInteger(species.coef) ? String(species.coef) : String(species.coef);
-  return `${coef}${species.canon === 'e^-' ? 'e⁻' : body}${species.state ? `(${species.state})` : ''}`;
+  const coef = species.coef === 1 ? '' : fractionText(species.coef);
+  const state = species.state ? `(${species.state}${species.allotrope ? `, ${species.allotrope}` : ''})` : '';
+  return `${coef}${species.canon === 'e^-' ? 'e⁻' : body}${state}`;
 }
 
 const flatLetters = (text) => prepare(text).replace(/[\s_^()[\]·.]/g, '').toLowerCase();
@@ -661,6 +703,12 @@ function missingElectrons(key, responses) {
 // (November 14, 2026). It names no substance.
 export const STATE_DIFFERS = 'The substances and coefficients are right. A state symbol you typed differs from the answer’s: check each one, or leave them out — state symbols are optional.';
 
+// A response that balances as a whole-number multiple of a key with a
+// fractional coefficient (Chemistry 2e 5.3, a formation equation: 8C + 10H₂
+// + O₂ ⟶ 2C₂H₅OC₂H₅ for the key's 4C + 5H₂ + ½O₂ ⟶ C₂H₅OC₂H₅). It names no
+// substance (the grader does not know which one the question counts).
+export const ONE_MOLE = 'That balances, but the question asks for the equation written for one mole, so a coefficient may be a fraction. Type a fraction as 1/2.';
+
 /** @returns {{ status: 'empty'|'correct'|'form'|'incorrect', message?: string }} */
 export function checkEquation(input, answer) {
   if (!String(input ?? '').trim()) return { status: 'empty' };
@@ -685,7 +733,12 @@ export function checkEquation(input, answer) {
     if (left && right) {
       const pairs = [...left, ...right];
       const ratios = pairs.map(({ key: k, reading }) => reading.coef / k.coef);
-      const statesAgree = pairs.every(({ key: k, reading }) => !reading.state || !k.state || reading.state === k.state);
+      // `(s)` typed for the key's `(s, graphite)` agrees: the state symbol
+      // is s, and a response that leaves every state out is right, so one
+      // that types the state without the allotrope is no less right. An
+      // allotrope typed is compared: `(s, diamond)` is not graphite.
+      const statesAgree = pairs.every(({ key: k, reading }) => !reading.state || !k.state
+        || (reading.state === k.state && (!reading.allotrope || !k.allotrope || reading.allotrope === k.allotrope)));
       if (ratios.every((ratio) => Math.abs(ratio - 1) < 1e-9)) {
         if (statesAgree && typed.equilibrium !== key.equilibrium) {
           return { status: 'form', message: key.equilibrium ? EQUILIBRIUM_ARROW : ONE_WAY_ARROW };
@@ -695,7 +748,10 @@ export function checkEquation(input, answer) {
         continue;
       }
       if (ratios.every((ratio) => Math.abs(ratio - ratios[0]) < 1e-9)) {
-        if (best.status !== 'form') best = { status: 'form', message: 'That is balanced — now write it with the smallest whole-number coefficients.' };
+        // A key with a fractional coefficient is written for one mole, so
+        // "smallest whole-number coefficients" is the wrong advice there.
+        const fractional = pairs.some(({ key: k }) => !Number.isInteger(k.coef));
+        if (best.status !== 'form') best = { status: 'form', message: fractional ? ONE_MOLE : 'That is balanced — now write it with the smallest whole-number coefficients.' };
         continue;
       }
     }
@@ -750,9 +806,11 @@ const gcd = (a, b) => (b ? gcd(b, a % b) : a);
  * Why a KEY cannot be graded under its form, or null. The lint calls this: a
  * key is one unambiguous reading (charges written as superscripts), and an
  * equation key is balanced in atoms and charge with coefficients in lowest
- * terms.
+ * terms, a fractional one written as the book prints it. `written: false`
+ * skips that last rule, for a reader of the SOURCE's print (chemistry-shapes),
+ * whose MathML sets ½ as "( 1 )/( 2 )".
  */
-export function chemKeyProblem(answer, form, accept = '') {
+export function chemKeyProblem(answer, form, accept = '', { written = true } = {}) {
   if (!CHEM_FORMS.includes(form)) return `answerForm "${form}" is not a text form — use ${CHEM_FORMS.map((f) => `"${f}"`).join(' or ')}`;
   if (form === 'formula') {
     for (const member of [answer, ...String(accept || '').split('|').map((m) => m.trim()).filter(Boolean)]) {
@@ -778,7 +836,33 @@ export function chemKeyProblem(answer, form, accept = '') {
   }
   const coefs = equation.sides.flat().map(([species]) => species.coef);
   if (coefs.every(Number.isInteger) && coefs.reduce(gcd) > 1) return 'the coefficients are not in lowest terms';
+  // A fractional coefficient is written ONE way, as the book prints it:
+  // the glyph where Unicode has one, else digits around U+2044 (fractionText).
+  for (const [printed, value] of written ? keyCoefficients(answer) : []) {
+    if (Number.isInteger(value)) continue;
+    const wanted = fractionText(value);
+    if (printed !== wanted) return `the coefficient ${JSON.stringify(printed)} is written ${JSON.stringify(wanted)} — a fraction in a key is the glyph where Unicode has one (½, ¼, ¾), otherwise its digits around the fraction slash U+2044 (3⁄2), never a slash, a decimal, or a mixed number`;
+  }
   return null;
+}
+
+/** Each species' leading coefficient in a key as printed, with its value: [['½', 0.5], ['4', 4]]. */
+function keyCoefficients(answer) {
+  const text = String(answer ?? '').normalize('NFC');
+  const arrow = text.match(ARROW);
+  if (!arrow) return [];
+  const at = text.indexOf(arrow[0]);
+  return [text.slice(0, at), text.slice(at + arrow[0].length)]
+    .flatMap((side) => side.split(/\s+\+\s+/))
+    .map((species) => /^\s*((?:\d*[½⅓⅔¼¾⅕⅖⅗⅘⅙⅚⅐⅛⅜⅝⅞⅑⅒])|\d+\s*[\u2044/]\s*\d+|\(\s*\d+\s*\)\s*\/\s*\(\s*\d+\s*\)|\d+\.\d+|\.\d+|\d+)/.exec(species))
+    .filter(Boolean)
+    .map((match) => [match[1], readSpecies(`${match[1]}H`, { equation: true })[0]?.coef ?? NaN]);
+}
+
+/** Whether an equation key has a fractional coefficient (its item closes "Type a fraction as 1/2.", lint). */
+export function hasFractionalCoefficient(answer) {
+  const equation = readEquation(answer)[0];
+  return Boolean(equation) && equation.sides.flat().some(([species]) => !Number.isInteger(species.coef));
 }
 
 /** The key's canonical spelling, for a gate comparing a page key with a source answer. */

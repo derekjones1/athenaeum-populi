@@ -115,7 +115,7 @@ import { readNumeral, withinPercent } from '../../assets/js/lib/math/significant
 import { loadElements } from '../lib/elements.mjs';
 import { massAsk, molarMass, statesNoNumber } from './molar-mass.mjs';
 import {
-  KEYED_ONLY_BOOKS, choiceLabels, glossaryAliases, isPartLabel, keyedUnits, plain as foldedPlain, printedNumerals, sortedExercise, unitFor, unlinked,
+  KEYED_ONLY_BOOKS, answerUnits, choiceLabels, closingUnit, glossaryAliases, isPartLabel, keyedUnits, plain as foldedPlain, printedNumerals, sortedExercise, twoUnitAnswer, unitFor, unlinked,
 } from '../lib/keyed-units.mjs';
 
 /** A page question must share this much of a source problem's vocabulary to
@@ -1104,6 +1104,132 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     kind: 'key',
     erratum: 3027,
     reason: 'the Check Your Learning answer prints "0.2648 M" for 23.24 mL of 0.09113 M KMnO4 against 20.00 mL of oxalic acid; the data give 23.24 × 0.09113 × 5/2 ÷ 20.00 = 0.264733, which is 0.2647 M to four figures (0.2648 follows from rounding the intermediate to 2.118 mmol), so the fill-in keys 0.2647 with the one-unit allowance, which still grades the source\'s 0.2648 right',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/05-thermochemistry/01-energy-basics.md',
+    exercise: 'fs-idm11773136(a)',
+    kind: 'key',
+    erratum: 3047,
+    reason: 'the source solution prints "11.38 cal °C^−1" for the heat capacity of 45.8 g of nitrogen gas in calories: four figures from data that give three, the same answer\'s other values (47.6, 407, 97.3) having three (47.632 ÷ 4.184 = 11.384), so the fill-in keys 11.4',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/05-thermochemistry/01-energy-basics.md',
+    exercise: 'fs-idm11773136(b)',
+    kind: 'key',
+    erratum: 3048,
+    reason: 'the source solution prints "97.3 cal °C^−1" for the heat capacity of 1.00 pound of aluminum: the rounded 407 J/°C divided by 4.184, where the carried value is 406.87 ÷ 4.184 = 97.245, so the fill-in keys 97.2',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/05-thermochemistry/01-energy-basics.md',
+    exercise: 'fs-idp23764656',
+    kind: 'key',
+    erratum: 3049,
+    reason: 'the source solution prints "Energy required = 7.47 kWh" for 892 L of water cooling 13 °F: 7.47 follows from no route on the page (the data give 7.487 kWh) and carries three figures where 1.0 g/mL and a 13 °F change give two, so the fill-in keys 7.5',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/05-thermochemistry/02-calorimetry.md',
+    exercise: 'fs-idp13199280#check',
+    kind: 'key',
+    erratum: 3053,
+    reason: 'the Check Your Learning answer prints "335.6 °C" for 248 g of copper dropped into 390 mL of water at 22.6 °C reaching 39.9 °C: four figures from a three-figure change (17.3 °C; the worked example prints 248 °C), so the fill-in keys 336',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/05-thermochemistry/02-calorimetry.md',
+    exercise: 'fs-idm19242032#check',
+    kind: 'key',
+    erratum: 3054,
+    reason: 'the Check Your Learning answer prints "1.34 × 10^3 kJ, or 1.34 kJ" for 200 g of solution warming 1.6 °C: the first value carries the unit of the second, and a change of 1.6 °C has two figures, so the fill-in keys 1.3',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/05-thermochemistry/02-calorimetry.md',
+    exercise: 'fs-idm50720272',
+    kind: 'key',
+    erratum: 3055,
+    reason: 'the source solution prints "The temperature of the coffee will drop 1 degree" for 180 g of coffee at 95 °C and a 45 g silver spoon at 25 °C: the data (0.24 J/g °C, 45 g) give two figures and the drop is 0.990 °C, so the fill-in keys 0.99',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/05-thermochemistry/02-calorimetry.md',
+    exercise: 'fs-idp22524928',
+    kind: 'key',
+    erratum: 3058,
+    reason: 'the source solution prints "22.6" for the 3.21 g of NH4NO3 dissolved in 100.0 g of water, where the question asks how much the temperature would change: 22.6 is the final temperature (24.9 − 2.3), the change from the example\'s heat is −2.4 °C, so the fill-in keys −2.4',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/05-thermochemistry/02-calorimetry.md',
+    exercise: 'fs-idp40934400',
+    kind: 'key',
+    erratum: 3056,
+    reason: 'the source solution prints "11.7 kJ" for the 0.740 g of TNT burned in a calorimeter of 534 J/°C holding 675 mL of water, warming 3.5 °C: it follows only from 4.18 J/g °C (this book\'s 4.184 gives 11.75) and carries three figures from a two-figure change, so the fill-in keys 12',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md',
+    exercise: 'fs-idp107667280',
+    kind: 'key',
+    erratum: 3076,
+    reason: 'the source solution prints "81 kJ mol^−1" for the enthalpy of solution of 3.0 g of CaCl2 in 150.0 g of water warming 3.4 °C: it prints no sign for an exothermic dissolution and divides the rounded 2.2 kJ (4.18 × 153.0 × 3.4 = 2174 J gives 80.4 kJ/mol), so the fill-in keys −80',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md',
+    exercise: 'fs-idp103280960',
+    kind: 'key',
+    erratum: 3077,
+    reason: 'the source solution prints "5204.4 kJ" for the heat from burning 4.00 moles of acetylene: five figures from a three-figure amount, so the fill-in keys 5.20 × 10^3',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md',
+    exercise: 'fs-idp28899760',
+    kind: 'key',
+    erratum: 3078,
+    reason: 'the source solution prints "90.3 kJ/mol" for the enthalpy of formation of NO from 66.4 kJ and −114.1 kJ: the sum 180.5 has four figures and the 2 is exact, so (66.4 + 114.1) ÷ 2 = 90.25, and the fill-in keys 90.25',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md',
+    exercise: 'fs-idp184430560',
+    kind: 'key',
+    erratum: 3079,
+    reason: 'the source solution prints "−54.04 kJ mol^−1" for how much heat is produced by the decomposition of 1 mole of H2O2: that is the enthalpy change, and "how much heat is produced" asks an amount (the source\'s own prose gives the heat of an exothermic change as a positive number), so the fill-in keys 54.04',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md',
+    exercise: 'fs-idp86137744',
+    kind: 'key',
+    erratum: 3080,
+    reason: 'the source solution prints "−2660 kJ mol^−1" for the enthalpy of combustion of butane: 4(−393.51) + 5(−241.82) + 126 = −2657.14 is good to the units place, as every other Appendix G sum on the page is carried, so the fill-in keys −2657',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md',
+    exercise: 'fs-idp214849200',
+    kind: 'key',
+    erratum: 3081,
+    reason: 'the source solution prints "–66.4 kJ" for how much heat is evolved in the production of 1 mole of TiO2: that is the enthalpy change (−66.388 kJ from Appendix G), and "how much heat is evolved" asks an amount, so the fill-in keys 66.4',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md',
+    exercise: 'fs-idp211817568(d)',
+    kind: 'key',
+    erratum: 3082,
+    reason: 'the source solution prints "75.4 °C" for the temperature rise of 4.00 kg of water heated by 25.0 g of propane burning at −2,219.2 kJ/mol: it follows only from a molar mass of 44.0 and 4.18 J/g °C (this book\'s 44.097 and 4.184 give 75.175), so the fill-in keys 75.2',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md',
+    exercise: 'fs-idp140766896',
+    kind: 'key',
+    erratum: 3084,
+    reason: 'the source solution prints "7.43 g" for the mass of water that gives the heat of 100 g of steam cooled from 110 °C to 100 °C: the 10 °C change has two figures (the value is 7.425), so the fill-in keys 7.4',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md',
+    exercise: 'fs-idp161282368',
+    kind: 'key',
+    erratum: 3085,
+    reason: 'the source solution prints "459.6 kJ" for the heat released when 1 mole of manganese is burned to Mn3O4: Appendix G\'s −1378.83 has six figures and the 3 in 3 Mn is exact, so −1378.83 ÷ 3 = −459.610 and the fill-in keys 459.610',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md',
+    exercise: 'fs-idp146867872',
+    kind: 'key',
+    erratum: 3086,
+    reason: 'the source solution prints "25 kJ mol^−1" for the enthalpy of solution of NH4NO3 under the ice-pack example\'s conditions: it divides the example\'s rounded 1.0 kJ, where the heat carried unrounded (1023.9 J) gives 25.53 kJ/mol, so the fill-in keys 26',
   },
 ]);
 
@@ -2646,6 +2772,28 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
       }
       return null;
     };
+    // One part answered in two units ("1310 J; 313 cal", 5.1): the page
+    // carries one fill-in per unit, and each is held to the number printed
+    // under the unit its closing sentence names — 313 under "Enter the heat
+    // in joules." is refused, and so is an item whose closing names neither.
+    const units = twoUnitAnswer(unit.answer, unit.stem);
+    if (units.length) {
+      const asked = closingUnit(item.question);
+      if (!asked || !units.includes(asked)) {
+        return { status: 'key-differs', exercise, detail: `source ${unit.id} answers in ${units.join(' and ')} (${JSON.stringify(unit.answer.slice(0, 100))}); the item's closing sentence must name the one it keys ("Enter the heat in joules.")${asked ? `, and it names ${asked}` : ''}` };
+      }
+      const under = answerUnits(unit.answer).filter((entry) => entry.unit === asked).map((entry) => entry.numeral);
+      if (!under.some((numeral) => sameNumeral(numeral, key))) {
+        return dataDiffers(under)
+          ?? { status: 'key-differs', exercise, detail: `fillin keys ${JSON.stringify(item.answer)} for the value in ${asked}, which source ${unit.id} gives as ${under.map((numeral) => numeral.printed).join(' or ')} (${JSON.stringify(unit.answer.slice(0, 100))})` };
+      }
+      const figures = String(item.form || '').match(/(?:^|\s)sig-figs:(\d)(?:\s|$)/);
+      const same = under.filter((numeral) => sameNumeral(numeral, key));
+      if (figures && !same.some((numeral) => numeral.sigMin <= Number(figures[1]) && Number(figures[1]) <= numeral.sigMax)) {
+        return { status: 'figures-differ', exercise, detail: `fillin declares sig-figs:${figures[1]}, but source ${unit.id} prints ${JSON.stringify(same[0].printed)} in ${asked}` };
+      }
+      return { status: 'confirmed', exercise };
+    }
     const held = heldNumber(unit.answer, item.question, key);
     // A named amount is held to ITS number: "16.31 mol BaO₂, 2762 g BaO₂"
     // answers the moles asked with 16.31, and a key of 16.30 from this

@@ -64,7 +64,7 @@ import { bookKeyOf, blankPreservingOffsets, maskCode, mathSpans, shortcodes, SHO
 // The real textin grading normalizer, so a "printed key" here means printed
 // in exactly the sense check-text.mjs would grade a retyped copy of it.
 import { foldedForms, matchesForm, normalizeText } from '../../assets/js/lib/text/check-text.mjs';
-import { readSpecies } from '../../assets/js/lib/text/check-chem.mjs';
+import { hasFractionalCoefficient, readSpecies } from '../../assets/js/lib/text/check-chem.mjs';
 // The rubric-checkpoint coverage helper lints.mjs holds every checkpoint to.
 import { phraseCoverage } from '../lib/openstax-source.mjs';
 
@@ -480,8 +480,34 @@ function footerPrints(footer, spelling) {
 
 /** A power of ten in a stem's inline math followed, inside the same span, by a unit set as text. */
 export const STEM_POWER_UNIT = /\\times\s*10\s*\^\s*(?:\{[^{}]*\}|-?\d)\s*(?:\\ |\\,)\s*\\(?:text|mathrm)\s*\{/;
+/** Any number in a stem's inline math followed, inside the same span, by a unit set as text: `$\Delta H = -314\ \text{kJ}$` (chapter 5). */
+export const STEM_NUMBER_UNIT = /\d(?:\{,\}\d)*\s*(?:\\ |\\,)\s*\\(?:text|mathrm)\s*\{(?!\s*(?:and|or|of|for|to|in)\b)/;
 
 // ---- the lint ----------------------------------------------------------------
+
+/**
+ * Every `\ce{…}` in `tex` whose last character before its closing brace is a
+ * period, comma, or semicolon, as `{ index, written, mark }` (index of the
+ * `\ce`). Braces nest (`\ce{X_{(l)}}`), and a backslash escapes the next
+ * character.
+ */
+export function ceTrailingPunctuation(tex) {
+  const hits = [];
+  for (const m of tex.matchAll(/\\ce\s*\{/g)) {
+    let depth = 1;
+    let at = m.index + m[0].length;
+    for (; at < tex.length && depth; at++) {
+      if (tex[at] === '\\') { at++; continue; }
+      if (tex[at] === '{') depth++;
+      else if (tex[at] === '}') depth--;
+    }
+    if (depth) continue;
+    const close = at - 1;
+    const mark = tex[close - 1];
+    if (/[.,;]/.test(mark) && tex[close - 2] !== '\\') hits.push({ index: m.index, written: tex.slice(m.index, close + 1), mark });
+  }
+  return hits;
+}
 
 export function lintLeaks(src, filename = '') {
   const errors = [];
@@ -558,6 +584,20 @@ export function lintLeaks(src, filename = '') {
     }
   }
 
+  // ---- punctuation closing a \ce{…} ------------------------------------------
+  // mhchem reads a period, comma, or semicolon typed last inside `\ce{…}` as
+  // part of the formula and draws a period as a raised dot (the hydrate
+  // dot), so `\ce{H2O.}` prints "H₂O·". The sentence's punctuation goes
+  // after the closing `$`, where the glue span holds it on the formula's line.
+  // Every book: `\ce` is the Chemistry book's, but a formula anywhere is read
+  // the same way.
+  for (const span of mathSpans(src, { maskCode: true })) {
+    const texStart = span.index + (span.display ? 2 : 1);
+    for (const hit of ceTrailingPunctuation(span.tex)) {
+      err(texStart + hit.index, `\`${hit.written}\` ends with \`${hit.mark}\` inside the braces — mhchem draws it as part of the formula (a period as a raised dot); put the punctuation after the closing \`$\``);
+    }
+  }
+
   // ---- items in page order -----------------------
   const KINDS = ['fillin', 'multiplechoice', 'graphplot', 'textin', 'selfcheck', 'sortbins'];
   const items = KINDS.flatMap((kind) => [...shortcodes(text, kind)].map((sc) => ({ kind, ...sc })))
@@ -624,6 +664,15 @@ export function lintLeaks(src, filename = '') {
     if (chemistry && item.params.answerForm === 'equation' && /(?:^|[\s+⟶])\d*\s*e⁻/.test(String(item.params.answer ?? ''))
       && !/Type an electron as e-\./.test(String(item.params.question ?? ''))) {
       err(item.index, `${where}: its key is a half-reaction, and the field's guide does not say how an electron is typed — close the stem "Type an electron as e-."`);
+    }
+
+    // ---- a key with a fractional coefficient says how a fraction is typed --
+    // A formation equation is written for one mole of its product (Chemistry
+    // 2e 5.3: "4C(s, graphite) + 5H₂(g) + ½O₂(g) ⟶ C₂H₅OC₂H₅(l)"), and the
+    // equation field's guide says nothing of fractions: ½ is on no keyboard.
+    if (chemistry && item.params.answerForm === 'equation' && hasFractionalCoefficient(item.params.answer)
+      && !/Type a fraction as 1\/2\./.test(String(item.params.question ?? ''))) {
+      err(item.index, `${where}: its key has a fractional coefficient, and the field's guide does not say how a fraction is typed — close the stem "Type a fraction as 1/2."`);
     }
 
     if (chemistry && item.params.answerForm === undefined) {
@@ -944,6 +993,11 @@ export function lintLeaks(src, filename = '') {
         const unit = STEM_POWER_UNIT.exec(span[1]);
         if (unit) {
           err(item.index, `${labelOf(item.kind, item.params)}: the stem's math \`${span[1].slice(0, 50)}\` sets a unit after its power of ten inside the math — close the math before the unit: \`$1.00 \\times 10^{3}$ kg\``);
+        } else if (STEM_NUMBER_UNIT.test(span[1])) {
+          // The same for any value (chapter 5's ΔH): a symbol with its value
+          // is the symbol in math and the value and unit in prose,
+          // `$\Delta H^\circ$ = −314 kJ`, as `($d$ = 0.7134 g/mL)`.
+          err(item.index, `${labelOf(item.kind, item.params)}: the stem's math \`${span[1].slice(0, 50)}\` sets a unit after its value inside the math — a symbol with its value is the symbol in math and the value and unit in prose: \`$\\Delta H^\\circ$ = −314 kJ\``);
         }
       }
     }

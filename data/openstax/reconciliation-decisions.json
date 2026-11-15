@@ -6972,6 +6972,433 @@
       "status": "correct-local-source-defect",
       "errataEntry": 3034,
       "rationale": "Exercise fs-idp172099056 opens \"Silver is often extracted from ores such as K[Ag(CN)2]\" and its part (a) asks \"How many molecules of Zn(CN)2 are produced\". K[Ag(CN)2] is not an ore but the soluble compound cyanide makes of one, by the book's own m68842 (Section 19.1): \"a process called hydrometallurgy to separate silver from its ores … alkali metal cyanides readily form the soluble dicyanoargentate(I) ion, [Ag(CN)2]−, from silver metal or silver-containing compounds such as Ag2S and AgCl\". Zinc cyanide is an ionic compound, and by m68696 (Section 2.6) \"an ionic compound is not made up of single, discrete molecules\" (errata 3034 and 3035). Both items of the exercise read \"extracted from its ores as K[Ag(CN)2]\" and the first asks for \"formula units\", its answer display likewise, with a visible Source note directly after the first item and a footer clause; neither key changes. Suspected by the prose claim pass (F11) from memory and kept as printed with chapter 4; the book's own module was opened in the follow-up, ruled by the orchestrator, November 12, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/_index.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68723",
+      "sourceElementIds": [
+        "fs-idm19082352"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3044,
+      "rationale": "The chapter introduction says \"In 2012, about 85% of US energy consumption came from the combustion of petroleum products, coal, wood, and garbage\". In the US Energy Information Administration's Monthly Energy Review, Table 1.3 (annual 2012), petroleum (33.83 quadrillion Btu), coal (17.38), and biomass (4.52) total 55.7, 61% of the 91.68 total; natural gas (26.09, 28%) is the fuel the sentence omits, and with it the sum reaches 89% (about 86% on the fossil-fuel-equivalence total the 2014 edition used, the book's \"about 85%\"), so the percentage stands and the list is wrong. The page prints \"petroleum products, natural gas, coal, wood, and garbage\" with a visible Source note directly after the paragraph linking the Monthly Energy Review, and a footer clause. Found by the prose claim pass, ruled by the orchestrator, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/01-energy-basics.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68724",
+      "sourceElementIds": [
+        "fs-idm68801008"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3045,
+      "rationale": "The table of specific heats prints ethanol 2.376, carbon dioxide 0.853, and argon 0.522 J/g °C at 25 °C. The NIST Chemistry WebBook gives, at 298.15 K, 112.4 J/mol K for liquid ethanol (2.440 J/g K with this book's molar mass), and the gas-phase Shomate equations give 37.13 J/mol K for carbon dioxide (0.844) and 20.786 J/mol K for argon (0.520); the other thirteen rows agree. The page prints 2.440, 0.844, and 0.520 with a visible Source note directly after the table linking the WebBook, and a footer clause. No example or exercise on the page uses the three cells. Found by the prose claim pass, ruled by the orchestrator, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/01-energy-basics.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68724",
+      "sourceElementIds": [
+        "fs-idm11773136"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3047,
+      "rationale": "The source solution prints \"11.38 cal °C^−1\" for the heat capacity of 45.8 g of nitrogen gas in calories: four figures from data that give three, the same answer's other values (47.6, 407, 97.3) having three (47.632 ÷ 4.184 = 11.384), so the fill-in keys 11.4. The page keys that value with a visible Source note beside the item and a footer clause, and tools/verify/verify-source-keys.mjs lists the item (fs-idm11773136(a)) in DISCLOSED_DEVIATIONS; the erratum holds the arithmetic. Ruled by the orchestrator after the checker, the consistency reading, and the blind solve, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/01-energy-basics.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68724",
+      "sourceElementIds": [
+        "fs-idm11773136"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3048,
+      "rationale": "The source solution prints \"97.3 cal °C^−1\" for the heat capacity of 1.00 pound of aluminum: the rounded 407 J/°C divided by 4.184, where the carried value is 406.87 ÷ 4.184 = 97.245, so the fill-in keys 97.2. The page keys that value with a visible Source note beside the item and a footer clause, and tools/verify/verify-source-keys.mjs lists the item (fs-idm11773136(b)) in DISCLOSED_DEVIATIONS; the erratum holds the arithmetic. Ruled by the orchestrator after the checker, the consistency reading, and the blind solve, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/01-energy-basics.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68724",
+      "sourceElementIds": [
+        "fs-idp23764656"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3049,
+      "rationale": "The source solution prints \"Energy required = 7.47 kWh\" for 892 L of water cooling 13 °F: 7.47 follows from no route on the page (the data give 7.487 kWh) and carries three figures where 1.0 g/mL and a 13 °F change give two, so the fill-in keys 7.5. The page keys that value with a visible Source note beside the item and a footer clause, and tools/verify/verify-source-keys.mjs lists the item (fs-idp23764656) in DISCLOSED_DEVIATIONS; the erratum holds the arithmetic. Ruled by the orchestrator after the checker, the consistency reading, and the blind solve, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/01-energy-basics.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68724",
+      "sourceElementIds": [
+        "fs-idp59324528"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3050,
+      "rationale": "The first worked example's equation prints the letter x for the times sign in \"8.0 x 10²\" on two rows, beside correct × signs. The page sets ×, and the footer says so. Found by the 5.1 author, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/02-calorimetry.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68726",
+      "sourceElementIds": [
+        "fs-idm51688848"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3052,
+      "rationale": "The Bomb Calorimetry example closes \"This reaction released 48.7 kJ of heat when 3.12 g of glucose was burned\", but its own calculation sums 38 262.7 J for the water and 10 537.4 J for the calorimeter to 48 800.1 J, which is 48.8 kJ. The page prints 48.8 kJ with a visible Source note directly after the sentence and a footer clause. Found by the 5.2 author, ruled by the orchestrator, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/02-calorimetry.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68726",
+      "sourceElementIds": [
+        "fs-idp13199280"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3053,
+      "rationale": "The Check Your Learning answer prints \"335.6 °C\" for 248 g of copper dropped into 390 mL of water at 22.6 °C reaching 39.9 °C: four figures from a three-figure change (17.3 °C; the worked example prints 248 °C), so the fill-in keys 336. The page keys that value with a visible Source note beside the item and a footer clause, and tools/verify/verify-source-keys.mjs lists the item (fs-idp13199280#check) in DISCLOSED_DEVIATIONS; the erratum holds the arithmetic. Ruled by the orchestrator after the checker, the consistency reading, and the blind solve, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/02-calorimetry.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68726",
+      "sourceElementIds": [
+        "fs-idm19242032"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3054,
+      "rationale": "The Check Your Learning answer prints \"1.34 × 10^3 kJ, or 1.34 kJ\" for 200 g of solution warming 1.6 °C: the first value carries the unit of the second, and a change of 1.6 °C has two figures, so the fill-in keys 1.3. The page keys that value with a visible Source note beside the item and a footer clause, and tools/verify/verify-source-keys.mjs lists the item (fs-idm19242032#check) in DISCLOSED_DEVIATIONS; the erratum holds the arithmetic. Ruled by the orchestrator after the checker, the consistency reading, and the blind solve, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/02-calorimetry.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68726",
+      "sourceElementIds": [
+        "fs-idm50720272"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3055,
+      "rationale": "The source solution prints \"The temperature of the coffee will drop 1 degree\" for 180 g of coffee at 95 °C and a 45 g silver spoon at 25 °C: the data (0.24 J/g °C, 45 g) give two figures and the drop is 0.990 °C, so the fill-in keys 0.99. The page keys that value with a visible Source note beside the item and a footer clause, and tools/verify/verify-source-keys.mjs lists the item (fs-idm50720272) in DISCLOSED_DEVIATIONS; the erratum holds the arithmetic. Ruled by the orchestrator after the checker, the consistency reading, and the blind solve, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/02-calorimetry.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68726",
+      "sourceElementIds": [
+        "fs-idp40934400"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3056,
+      "rationale": "The source solution prints \"11.7 kJ\" for the 0.740 g of TNT burned in a calorimeter of 534 J/°C holding 675 mL of water, warming 3.5 °C: it follows only from 4.18 J/g °C (this book's 4.184 gives 11.75) and carries three figures from a two-figure change, so the fill-in keys 12. The page keys that value with a visible Source note beside the item and a footer clause, and tools/verify/verify-source-keys.mjs lists the item (fs-idp40934400) in DISCLOSED_DEVIATIONS; the erratum holds the arithmetic. Ruled by the orchestrator after the checker, the consistency reading, and the blind solve, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/02-calorimetry.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68726",
+      "sourceElementIds": [
+        "fs-idp40934912"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3057,
+      "rationale": "Exercise 5.31's stem gives trinitrotoluene the formula C7H5N2O6; the compound has three nitro groups by its name and its formula is C7H5N3O6. No mass enters the key. The page's stem prints C7H5N3O6 with a visible Source note directly after the item and a footer clause. Found by the 5.2 author, ruled by the orchestrator, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/02-calorimetry.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68726",
+      "sourceElementIds": [
+        "fs-idp22524928"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3058,
+      "rationale": "The source solution prints \"22.6\" for the 3.21 g of NH4NO3 dissolved in 100.0 g of water, where the question asks how much the temperature would change: 22.6 is the final temperature (24.9 − 2.3), the change from the example's heat is −2.4 °C, so the fill-in keys −2.4. The page keys that value with a visible Source note beside the item and a footer clause, and tools/verify/verify-source-keys.mjs lists the item (fs-idp22524928) in DISCLOSED_DEVIATIONS; the erratum holds the arithmetic. Ruled by the orchestrator after the checker, the consistency reading, and the blind solve, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/02-calorimetry.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68726",
+      "sourceElementIds": [
+        "fs-idp32758784"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3059,
+      "rationale": "Exercise 5.17's model answer says that, in q_rxn = −(q_solution + q_calorimeter), \"including the latter term (q_rxn) will yield a greater value for the heat of the dissolution\"; the latter term is q_calorimeter and q_rxn is the left-hand side. The page's model answer prints q_calorimeter, with a visible Source note directly after the block and a footer clause. Found by the 5.2 author, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/02-calorimetry.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68726",
+      "sourceElementIds": [
+        "fs-idm127022128",
+        "fs-idm13040064"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3060,
+      "rationale": "The metal-identification example substitutes 4.18 J/g °C for the specific heat of water in one line and divides by 4.184 J/g °C in the next, against the section's table and every other example (4.184). Both give 0.38 J/g °C (0.3819 and 0.3823), so the result stands; the working does not reproduce from the line above. The page prints 4.184 in the substitution line with a visible Source note after the example's working and a footer clause. Found by the prose claim pass, ruled by the orchestrator, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/02-calorimetry.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68726",
+      "sourceElementIds": [
+        "fs-idm55601792"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3061,
+      "rationale": "The whole-body-calorimeter footnote cites Medical and Biological Engineering and Computing \"8 (2006)721–28\". Crossref's metadata for DOI 10.1007/s11517-006-0086-5 gives volume 44, issue 8, pages 721–728, so 8 is the issue. The page prints \"44, no. 8 (2006): 721–28\" in a parenthetical after its sentence, with a footer clause. Found by the prose claim pass, Crossref opened by the orchestrator, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68727",
+      "sourceElementIds": [
+        "fs-idm329792512"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3063,
+      "rationale": "The gummy-bear example calls the ratio of potassium chlorate (KClO3) to sucrose a \"perchlorate-to-sucrose\" ratio; perchlorate is KClO4. The page prints \"chlorate-to-sucrose\", and the footer says so. Found by the 5.3 author, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68727",
+      "sourceElementIds": [
+        "fs-idm27865968"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3064,
+      "rationale": "The ethanol combustion equation prints \"2CO2(g+3H2O(l)\", missing the closing parenthesis after g (the PDF too). The page prints 2CO2(g) + 3H2O(l), and the footer says so. Found by the 5.3 author, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68727",
+      "sourceElementIds": [
+        "fs-idp194526576"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3065,
+      "rationale": "In the Using Hess's Law example the bracket beside the formation of NO reads \"[1 × (NO)]\", where its two siblings carry ΔHf°. The page prints [1 × ΔHf°(NO)], and the footer says so. Found by the 5.3 author, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68727",
+      "sourceElementIds": [
+        "fs-idp167503872"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3066,
+      "rationale": "The model answer of exercise 5.39 writes \"1 mol HCL\"; the formula is HCl, as the same sentence prints it later. The page prints HCl, and the footer says so. Found by the 5.3 author, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68727",
+      "sourceElementIds": [
+        "fs-idp146140160",
+        "fs-idp155662864"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3067,
+      "rationale": "The Using Hess's Law example rounds 2(−207.4) + 90.25 = −324.55 to −324.6 and 3(33.2) − 285.83 = −186.23 to −186.2 before adding, and its second solution rounds −285.83 and 90.25 to one decimal place; both print −138.4 kJ where the carried values give −324.55 + 186.23 = −138.32, which is −138.3 kJ. Section 3.3 says not to round intermediates. The page carries the digits in both solutions and prints −138.3 kJ with a visible Source note after the example and a footer clause. The Check Your Learning's −1368 is unchanged. Found by the 5.3 author and the prose claim pass, ruled by the orchestrator, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68727",
+      "sourceElementIds": [
+        "fs-idm378911456",
+        "fs-idm352441488",
+        "fs-idm389610336",
+        "fs-idp94999984"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3068,
+      "rationale": "The gummy-bear example prints 0.0587 mol KClO3 / 0.00780 mol sucrose = 7.52, then divides 43.7 kJ by the rounded 0.0587 mol for −744 kJ/mol and multiplies by 8 for −5960 kJ (−744 × 8 = −5952; the unrounded 744.84 × 8 = 5958.8 gives the printed −5960); the isooctane example's step list prints 692 g ⟶ 6.07 mol and multiplies the rounded count. Section 3.3 says not to round intermediates. The page prints 0.058670 and 0.0078002, −745 kJ/mol and −744.84 × 8 = −5,960 kJ, and the step list with the digits carried, no result changed, with one visible Source note and a footer clause. Found by the 5.3 author, ruled by the orchestrator, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68727",
+      "sourceElementIds": [
+        "fs-idm378999344",
+        "fs-idm372152464",
+        "fs-idp6149744",
+        "fs-idp120447376"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3069,
+      "rationale": "The source works the section's examples with atomic masses rounded to four figures (sucrose 342.3, potassium chlorate 122.5, isooctane 114, its answer to the iron-and-chlorine Check Your Learning −338 kJ from the excess reactant's moles) where this book's periodic table, Appendix A, gives 342.297, 122.545, and 114.232; the limiting reactant, chlorine, gives −339 kJ/mol FeCl2. As for erratum 2985 these are the size a finer table makes, not slips. The page prints the masses its periodic table gives, keys the Check Your Learning −339 (still grading −338 right), and has one visible Source note after the first changed example and a footer clause. Ruled by Derek, November 13, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68727",
+      "sourceElementIds": [
+        "fs-idp98710048"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3070,
+      "rationale": "The table of standard molar enthalpies of combustion prints −5465.5 kJ/mol for isooctane. The NIST Chemistry WebBook (2,2,4-trimethylpentane, C540841) gives Δc H° (liquid) −5461.3 ± 1.3 kJ/mol (Prosen and Rossini, 1945); from Δf H° = −259.3 and Appendix G's CO2 and H2O(l), 8(−393.51) + 9(−285.83) + 259.3 = −5461.3. The example's own \"−5460\" is the measured value rounded. The page prints −5461.3 with a visible Source note directly after the table linking the WebBook and a footer clause; the example keeps −5460, the table's value to three figures. No key moves. Found by the prose claim pass, ruled by the orchestrator, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68727",
+      "sourceElementIds": [
+        "fs-idp173432432"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3072,
+      "rationale": "The Appendix G paragraph gives \"+226.7 kJ/mol for the formation of acetylene\", where this book's Appendix G prints 227.4 (NIST adopts 227.4 ± 0.8 from Manion 2002; 226.7 is a 1945 value), and says standard conditions are \"1 atm for gases\", against the section's own definition of the IUPAC standard state as 1 bar and its Summary's \"1 bar and 298.15 K\". The page prints +227.4 and 1 bar for gases, with one visible Source note after the paragraph and a footer clause. Found by the prose claim pass, ruled by the orchestrator, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68727",
+      "sourceElementIds": [
+        "fs-idp173432432"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3073,
+      "rationale": "The Appendix G paragraph gives \"+226.7 kJ/mol for the formation of acetylene\", where this book's Appendix G prints 227.4 (NIST adopts 227.4 ± 0.8 from Manion 2002; 226.7 is a 1945 value), and says standard conditions are \"1 atm for gases\", against the section's own definition of the IUPAC standard state as 1 bar and its Summary's \"1 bar and 298.15 K\". The page prints +227.4 and 1 bar for gases, with one visible Source note after the paragraph and a footer clause. Found by the prose claim pass, ruled by the orchestrator, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68727",
+      "sourceElementIds": [
+        "fs-idp145151008"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3074,
+      "rationale": "The isooctane example says 99.2 kg of ice is \"about 218 lbs\"; 99.2 kg ÷ 0.45359237 kg/lb = 218.70 lb, about 219. The page prints 219 with a visible Source note directly after the paragraph and a footer clause. Found by the prose claim pass, ruled by the orchestrator, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68727",
+      "sourceElementIds": [
+        "fs-idp90130976",
+        "fs-idp167162288"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3075,
+      "rationale": "The algae box says \"the US Air Force is producing jet fuel from algae at a total cost of under $5 per gallon\" and cites a 2010 Guardian article (https://www.theguardian.com/environment/2010/feb/13/algae-solve-pentagon-fuel-problem). That article reports a DARPA projection of refining algal oil into jet fuel \"at a cost of less than $3 a gallon\" and carries a correction that testing would begin the next year, with production not planned until 2013. The page prints that the cost was projected to become more competitive, with DARPA's 2010 projection of less than $3 per gallon, though production had not begun, with a visible Source note after the paragraph (the flow-chart figure) and a footer clause. Found by the prose claim pass, article opened by the checker, ruled by the orchestrator, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68727",
+      "sourceElementIds": [
+        "fs-idp107667280"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3076,
+      "rationale": "The source solution prints \"81 kJ mol^−1\" for the enthalpy of solution of 3.0 g of CaCl2 in 150.0 g of water warming 3.4 °C: it prints no sign for an exothermic dissolution and divides the rounded 2.2 kJ (4.18 × 153.0 × 3.4 = 2174 J gives 80.4 kJ/mol), so the fill-in keys −80. The page keys that value with a visible Source note beside the item and a footer clause, and tools/verify/verify-source-keys.mjs lists the item (fs-idp107667280) in DISCLOSED_DEVIATIONS; the erratum holds the arithmetic. Ruled by the orchestrator after the checker, the consistency reading, and the blind solve, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68727",
+      "sourceElementIds": [
+        "fs-idp103280960"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3077,
+      "rationale": "The source solution prints \"5204.4 kJ\" for the heat from burning 4.00 moles of acetylene: five figures from a three-figure amount, so the fill-in keys 5.20 × 10^3. The page keys that value with a visible Source note beside the item and a footer clause, and tools/verify/verify-source-keys.mjs lists the item (fs-idp103280960) in DISCLOSED_DEVIATIONS; the erratum holds the arithmetic. Ruled by the orchestrator after the checker, the consistency reading, and the blind solve, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68727",
+      "sourceElementIds": [
+        "fs-idp28899760"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3078,
+      "rationale": "The source solution prints \"90.3 kJ/mol\" for the enthalpy of formation of NO from 66.4 kJ and −114.1 kJ: the sum 180.5 has four figures and the 2 is exact, so (66.4 + 114.1) ÷ 2 = 90.25, and the fill-in keys 90.25. The page keys that value with a visible Source note beside the item and a footer clause, and tools/verify/verify-source-keys.mjs lists the item (fs-idp28899760) in DISCLOSED_DEVIATIONS; the erratum holds the arithmetic. Ruled by the orchestrator after the checker, the consistency reading, and the blind solve, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68727",
+      "sourceElementIds": [
+        "fs-idp184430560"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3079,
+      "rationale": "The source solution prints \"−54.04 kJ mol^−1\" for how much heat is produced by the decomposition of 1 mole of H2O2: that is the enthalpy change, and \"how much heat is produced\" asks an amount (the source's own prose gives the heat of an exothermic change as a positive number), so the fill-in keys 54.04. The page keys that value with a visible Source note beside the item and a footer clause, and tools/verify/verify-source-keys.mjs lists the item (fs-idp184430560) in DISCLOSED_DEVIATIONS; the erratum holds the arithmetic. Ruled by the orchestrator after the checker, the consistency reading, and the blind solve, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68727",
+      "sourceElementIds": [
+        "fs-idp86137744"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3080,
+      "rationale": "The source solution prints \"−2660 kJ mol^−1\" for the enthalpy of combustion of butane: 4(−393.51) + 5(−241.82) + 126 = −2657.14 is good to the units place, as every other Appendix G sum on the page is carried, so the fill-in keys −2657. The page keys that value with a visible Source note beside the item and a footer clause, and tools/verify/verify-source-keys.mjs lists the item (fs-idp86137744) in DISCLOSED_DEVIATIONS; the erratum holds the arithmetic. Ruled by the orchestrator after the checker, the consistency reading, and the blind solve, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68727",
+      "sourceElementIds": [
+        "fs-idp214849200"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3081,
+      "rationale": "The source solution prints \"–66.4 kJ\" for how much heat is evolved in the production of 1 mole of TiO2: that is the enthalpy change (−66.388 kJ from Appendix G), and \"how much heat is evolved\" asks an amount, so the fill-in keys 66.4. The page keys that value with a visible Source note beside the item and a footer clause, and tools/verify/verify-source-keys.mjs lists the item (fs-idp214849200) in DISCLOSED_DEVIATIONS; the erratum holds the arithmetic. Ruled by the orchestrator after the checker, the consistency reading, and the blind solve, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68727",
+      "sourceElementIds": [
+        "fs-idp211817568"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3082,
+      "rationale": "The source solution prints \"75.4 °C\" for the temperature rise of 4.00 kg of water heated by 25.0 g of propane burning at −2,219.2 kJ/mol: it follows only from a molar mass of 44.0 and 4.18 J/g °C (this book's 44.097 and 4.184 give 75.175), so the fill-in keys 75.2. The page keys that value with a visible Source note beside the item and a footer clause, and tools/verify/verify-source-keys.mjs lists the item (fs-idp211817568(d)) in DISCLOSED_DEVIATIONS; the erratum holds the arithmetic. Ruled by the orchestrator after the checker, the consistency reading, and the blind solve, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68727",
+      "sourceElementIds": [
+        "fs-idp140766896"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3084,
+      "rationale": "The source solution prints \"7.43 g\" for the mass of water that gives the heat of 100 g of steam cooled from 110 °C to 100 °C: the 10 °C change has two figures (the value is 7.425), so the fill-in keys 7.4. The page keys that value with a visible Source note beside the item and a footer clause, and tools/verify/verify-source-keys.mjs lists the item (fs-idp140766896) in DISCLOSED_DEVIATIONS; the erratum holds the arithmetic. Ruled by the orchestrator after the checker, the consistency reading, and the blind solve, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68727",
+      "sourceElementIds": [
+        "fs-idp161282368"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3085,
+      "rationale": "The source solution prints \"459.6 kJ\" for the heat released when 1 mole of manganese is burned to Mn3O4: Appendix G's −1378.83 has six figures and the 3 in 3 Mn is exact, so −1378.83 ÷ 3 = −459.610 and the fill-in keys 459.610. The page keys that value with a visible Source note beside the item and a footer clause, and tools/verify/verify-source-keys.mjs lists the item (fs-idp161282368) in DISCLOSED_DEVIATIONS; the erratum holds the arithmetic. Ruled by the orchestrator after the checker, the consistency reading, and the blind solve, November 14, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68727",
+      "sourceElementIds": [
+        "fs-idp146867872"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3086,
+      "rationale": "The source solution prints \"25 kJ mol^−1\" for the enthalpy of solution of NH4NO3 under the ice-pack example's conditions: it divides the example's rounded 1.0 kJ, where the heat carried unrounded (1023.9 J) gives 25.53 kJ/mol, so the fill-in keys 26. The page keys that value with a visible Source note beside the item and a footer clause, and tools/verify/verify-source-keys.mjs lists the item (fs-idp146867872) in DISCLOSED_DEVIATIONS; the erratum holds the arithmetic. Ruled by the orchestrator after the checker, the consistency reading, and the blind solve, November 14, 2026."
     }
   ]
 }

@@ -225,6 +225,13 @@ part, in source order within its objective group. The unkeyed exercises are
 omitted, and the footer says how many.** The source keys the odd-numbered
 exercises and every Check Your Learning; an item is built on those and on
 the module's glossary and summary, never on an answer the author derived.
+An example may end with more than one Check Your Learning, each with its
+own Answer note — three in the book (5.2's copper example, 12.3, 13.4) —
+and each is a keyed unit the page carries: the first is
+`<example id>#check`, the second `#check2` *(November 14, 2026, chapter 5;
+until then every reader took the first and lost the second)*. A Check Your
+Learning's stem includes the display equations between its paragraphs (a
+Hess's-law check prints its reactions as equations).
 
 The component follows the SHAPE of the source's keyed answer:
 
@@ -235,6 +242,8 @@ The component follows the SHAPE of the source's keyed answer:
 | a number in a named notation ("in exponential notation") | `fillin` adding `scientific-notation` |
 | one of a closed set the stem or its figure names (physical or chemical; element, compound, or mixture; exact or uncertain; an inch, a foot, a yard, or a mile; Archer W, X, Y, or Z) | `multiplechoice` whose options are that set, in its own order — a two-option set is a two-option item |
 | a judgment the key supports with a number ("yes; weight = 89.4 kg") | the number as a `fillin` first, then the judgment as a `multiplechoice` |
+| a thermochemical equation and its ΔH ("For the reaction H₂(g) + Cl₂(g) ⟶ 2HCl(g) ΔH° = −184.6 kJ") under a stem that asks a number ("What is the enthalpy change …?") | ONE `fillin` keyed with the ΔH; both source gates take it as the whole unit, and `chemistry-shapes` reads the answer as a number. Under a stem that asks the equation as well, an equation `textin` and a ΔH `fillin` (the tool flags it) *(November 14, 2026, chapter 5)* |
+| a number in each of two units the stem asks ("1310 J; 313 cal") | one `fillin` per unit, each closing with its unit ("Stems") |
 | a choice from the stem's set with a reason ("law (states a consistently observed phenomenon…)"; "increased, because…") | the choice as a `multiplechoice` first, then a `selfcheck` for the explanation with the source's answer as the model — in that order, so the reveal does not hand over the key |
 | a choice that can name two of the stem's categories ("symbolic, microscopic") | one `multiplechoice` whose options are every answer the stem allows, the compound ones written as the key writes them, and the SAME option list on every part of the exercise |
 | an SI prefix's factor ("× 10⁻²") | `fillin` keyed with the bare power of ten, `answer="10^{-2}"`, under `sig-figs:1 last-digit:0` — a bare power-of-ten key is an exact factor, so `0.010` and `1.0×10⁻²` are right too ("Measured quantities") |
@@ -320,6 +329,32 @@ selfchecks, source defects, the footer — and each is stated once.
   either form). A unit is never inside a stem's math span
   (`$1.00 \times 10^{3}$ kg` — lint), and a symbol with its value is
   `($d$ = 0.7134 g/mL)` *(chapter 4)*.
+- **A symbol with its value in a stem is the symbol in math and the value
+  and unit in prose**, the minus sign U+2212: `$\Delta H^\circ$ = −314 kJ`
+  *(November 14, 2026, chapter 5)*. A Hess's-law stem therefore reads
+  "…from the following information: `$\ce{Sb(s) + 3/2Cl2(g) -> SbCl3(s)}$
+  $\Delta H^\circ$ = −314 kJ; $\ce{SbCl3(s) + Cl2(g) -> SbCl5(s)}$
+  $\Delta H^\circ$ = −80 kJ`." — each reaction and its ΔH, a semicolon
+  between the pairs. The stem's math is spoken whole and a unit inside it
+  is read as a product, so a value and its unit inside a stem's math span
+  is a lint error (`$\Delta H = -314\ \text{kJ}$`, as `$12.0\ \text{kg}$`).
+  Body display math keeps the Notation table's
+  `\ce{…} \qquad \Delta H = -92.2\ \text{kJ}`.
+- **One part asked in two units and answered in both** ("Calculate the heat
+  capacity, in joules and in calories per degree, of the following: …" →
+  "47.6 J/°C; 11.38 cal °C⁻¹"; "How much heat, in joules and in calories,
+  …" → "1310 J; 313 cal", 5.1) is one fill-in per unit, each closing with a
+  sentence that names its unit: "Enter the heat capacity in J/°C.", "Enter
+  the heat in calories." `verify:source-keys` holds each item to the number
+  printed under the unit its closing sentence names (an item that names
+  neither is refused), and `verify:source-coverage` requires both items for
+  the part *(November 14, 2026, chapter 5)*. One value printed twice under a
+  stem that asks it once ("41,360 J/mol or 41.4 kJ/mol") is one item, keyed
+  with either.
+- **A key with a fractional coefficient closes "Type a fraction as 1/2."**
+  (lint), as a half-reaction item closes "Type an electron as e-.": the
+  equation field's guide says nothing of fractions *(November 14, 2026,
+  chapter 5)*.
 - **A half-reaction item closes "Type an electron as e-."** (lint): the
   equation field's guide does not say an electron is typed *(chapter 4)*.
 - **A lettered part that names an earlier part by what it produced**
@@ -377,6 +412,19 @@ selfchecks, source defects, the footer — and each is stated once.
 - **A datum the source assumes and neither the stem nor the module states**
   (1.6's short ton of 2,000 lb) is added to the stem in parentheses and
   named in the footer; a hint is not where a needed number lives.
+- **A stem that needs an example or an exercise of another section** keeps
+  the source's words with the reference named by title and section in plain
+  text ("the example “Heat Flow in an Instant Ice Pack” in Section 5.2
+  Calorimetry"), then restates in one parenthesis every GIVEN datum the key
+  depends on — never the example's result or the exercise's answer — and
+  the source gates match such a stem (`withoutCrossReference`). A table of
+  another section is named by its describing phrase and section, never by a
+  table number *(chapter 5)*.
+- **A reaction inline in BODY text too long for a phone's line is split
+  after its arrow into two math spans**, as a stem's is (5.3's two
+  formation equations made the page scroll sideways at 390 px), and **no
+  period, comma, or semicolon stands inside `\ce{…}`**: mhchem draws it as
+  a raised dot (lint) *(chapter 5)*.
 - **A cross-reference to an exercise** is read against what the page
   renders. A body reference ("see Exercise 1.42 and Exercise 1.43") names
   only the keyed exercises on the page, by describing them ("see the
@@ -477,6 +525,12 @@ selfchecks, source defects, the footer — and each is stated once.
     exact — with every route computed in the ledger (1.6: Kilimanjaro's
     19,565 ft, 5.9632 to 5.9635 km by the table's routes). Every route is
     this book's own data and the key is one of them.
+  - **Any measured value the learner fetches from a table is `1`** — a
+    section's table of specific heats, Appendix G, Appendix C's measured
+    factors, an atomic mass — whether or not the stem names the table; a key
+    every number of which is in the stem takes `0`. `2` needs two routes
+    through this book's own tables that end more than a unit apart; it is
+    never the way to accept a source's print (5.1's waterbed) *(chapter 5)*.
 - **A numeric key is what this book's own data give: one data set, one
   right answer** *(Derek, November 12, 2026; this supersedes the November
   11 ruling that the source's value stays the key, and the second "worked"
@@ -519,8 +573,10 @@ selfchecks, source defects, the footer — and each is stated once.
   - **Where the key stands a unit or two of its last place from the
     source's print, the gate reads a data difference** (`data-differs`,
     `verify:source-keys`): the item carries `last-digit:1` or `2`, and the
-    source's number is within two units of the key at the coarser of the
-    two last places and within 0.1 percent of it. Every such item is a row
+    source's number is within 0.1 percent of its print plus one unit of the
+    last place, and never more than two units, counted at the coarser of
+    the two last places (`dataDifference`; the gate's reading, *chapter 5*).
+    Every such item is a row
     of `data/verification/source-print-differences.json`, which the gate
     writes on request (`node tools/verify/verify-source-keys.mjs content
     --write-register`) and otherwise checks in both directions; review a
@@ -545,7 +601,10 @@ selfchecks, source defects, the footer — and each is stated once.
     neither. A key is a CORRECTION — a `DISCLOSED_DEVIATIONS` key entry,
     an erratum, an item-level Source note ("Source defects") — when it is
     more than two units from the source's print, or when no atomic mass
-    enters the item at all (3.3's dilution, below).
+    enters the item at all (3.3's dilution, below). **A difference no atomic
+    mass causes is a correction, never a row**: 5.3's propane part (d), and
+    5.3's ammonium nitrate, whose source key divides a heat it had rounded
+    *(chapter 5)*.
   - **The body's worked examples are recomputed from the table**: every
     molar mass an example prints is the tool's rounded sum (58.319 for
     Mg(OH)₂, not 58.3, whatever figures the example's data have) and every
@@ -643,6 +702,26 @@ selfchecks, source defects, the footer — and each is stated once.
     "the source’s answer is …; this book’s own data give …", which read as
     the book disagreeing with itself. Both tokens are gone from the
     grader; a page that declares either does not build.
+- **The question's words decide a heat key's sign** *(chapter 5)*. "How
+  much heat is produced / released / evolved / given off" asks an amount: a
+  positive number. "q", "ΔH", "enthalpy change", "enthalpy of solution /
+  combustion / formation", and "heat of combustion / formation" ask a signed
+  quantity; "heat involved" is signed too, and its item closes "Enter the
+  heat, $q$, in kilojoules." so the stem says so. A source key that goes
+  against its own question's words is a correction (5.3: −54.04 and −66.4
+  under "produced" and "evolved"; +81 for an exothermic dissolution). A hint
+  on a "heat produced" item does not end at a negative number.
+- **"One data set" covers every table of the book, not only the atomic
+  masses** *(chapter 5)*: water's specific heat is the section table's
+  4.184 J/g °C wherever a stem gives none (5.2's TNT exercise reaches the
+  source's key only with 4.18).
+- **Figure counts of a key** *(chapter 5)*: an exact divisor or multiplier
+  keeps every figure of the table value (−1378.83 kJ for 3 Mn is 459.610
+  per mole of Mn, six figures; (66.4 + 114.1) ÷ 2 is 90.25, four), and a
+  difference of two temperatures has the figures its last place gives
+  (110 °C − 100 °C is 10 °C, two figures). A key ruled after the blind solve
+  has its figure count read again by the solver's note, not by the parent
+  alone.
 - **A key that is a stem number by the law the item tests** (the total mass
   of products, 200.0 g, from 200.0 g of reactant) stands as a `fillin`; the
   ledger says so.
@@ -814,6 +893,10 @@ after the rule was written, so the line is drawn by pairs:
   no spectator ion had its own wording). Write one sentence true of all:
   "Compare each species on the two sides of the complete ionic equation,
   and remove any that appear unchanged on both." *(chapter 4)*
+- **A hint for a calorimetry item whose solution's mass is the water plus
+  what dissolved says so** ("the mass of the water and the dissolved solid
+  together"), with no number: the water's mass alone gives a neighbouring
+  value the item marks wrong *(chapter 5)*.
 - **A hint that sends the learner to read small print in a RASTER figure**
   (a name or a value in a photograph or a scanned chart) also names the
   table that lists it, in plain words. **The periodic table is not such a
@@ -925,6 +1008,9 @@ after the rule was written, so the line is drawn by pairs:
   corrected"). An added item is named by where its sentence is ("a cloze on
   the Summary sentence that defines weight"), never "(blank: gravity)"
   (lint) and never a quoted sentence that contains the answer.
+- **An `answerForm="equation"` item is counted as an "equation text-recall
+  item"**, and a footer never prints a key, a corrected one included
+  *(chapter 5)*.
 - **A footer never prints a key's value** (lint): it names the value ("the
   value the source's answer prints for copper(II) oxide") *(chapter 4)*.
   **Identical source keys are not a departure** and take no clause. **A
@@ -960,7 +1046,11 @@ an exercise string is spoken as "15.00g". A minus sign, and the sign of a
 negative charge, is U+2212 (−) wherever it stands — prose, stems, model
 answers, table cells — whatever dash the source typed (2.3's source
 writes "[53 – (1–) = 54]" with en dashes). An expression is all math or
-all prose, never half: `$Z = 11$`, not "$Z$ = 11".
+all prose, never half: `$Z = 11$`, not "$Z$ = 11". The one exception is a
+symbol with its value in an exercise stem, `$\Delta H^\circ$ = −314 kJ`
+("Stems"): a stem's math is spoken whole, so its unit stays in prose, and a
+value with no unit beside a symbol in math would set the number one way and
+its unit another *(November 14, 2026, chapter 5)*.
 
 **In math** — every source `<equation>` that is mathematics, and any
 inline span that is — a formula is `\ce{…}`. (A source `<equation>` that
@@ -976,7 +1066,7 @@ mhchem extension, so nothing is loaded:
 | `\ce{Ag+(aq) + Cl-(aq) -> AgCl(s)}`, `\ce{SO4^2-}`, `\ce{Mn^2+}` | charges: a trailing sign, or `^` before a numbered one |
 | `\ce{^{238}_{92}U -> ^{234}_{90}Th + ^{4}_{2}He}` | a nuclide with both numbers (inline too: Unicode cannot stack them) |
 | `\ce{CuSO4*5H2O}` | a hydrate |
-| `\ce{…} \qquad \Delta H = -92.2\ \text{kJ}` | a thermochemical equation: the formula in `\ce`, the rest ordinary math |
+| `\ce{…} \qquad \Delta H = -92.2\ \text{kJ}` | a thermochemical equation in BODY display math: the formula in `\ce`, the rest ordinary math (a stem writes `$\Delta H^\circ$ = −314 kJ`: "Stems") |
 | `\begin{aligned} \ce{C(s) + O2(g) &-> CO2(g)} & \Delta H &= … \end{aligned}` | steps aligned at the arrow |
 
 - **A formula set by hand in math is a lint error**: bare `H_2O` (math sets
@@ -1127,6 +1217,10 @@ hydrate's formula closes "Type the dot as a period, as in Na2CO3.10H2O."
 | `2IO3- + 12H+ + 10e- -> I2 + 6H2O` | `6H₂O(l) + 2IO₃⁻(aq) + 10e⁻ ⟶ I₂(s) + 12OH⁻(aq)`, and an acid key answered with OH⁻ | form | "That is balanced — now write it for the solution the question names: an acidic solution has H⁺ (or H₃O⁺), a basic solution OH⁻." Only for a balanced response that becomes the key by H⁺ + OH⁻ ⟶ H₂O, where one equation holds OH⁻ and the other H⁺ in its place *(chapter 4)* |
 | `Pb2+ + SO4^2- -> PbSO4` | the complete ionic equation | incorrect | No message: only water cancels, so spectator ions stay |
 | `Ag(NH3)2+`, `[Ag(NH3)2]+` | `[Ag(NH₃)₂]⁺` in an equation | correct | In an equation a group taken once is only grouping; a formula item gives `Ag(NH3)2+` the "usual order and grouping" message *(chapter 4)* |
+| `4C + 5H2 + 1/2O2 -> C2H5OC2H5`, `4C + 5H2 + 0.5O2 -> C2H5OC2H5`, `2Na + C + 3/2O2 -> Na2CO3`, `2Na + C + 1.5O2 -> Na2CO3` | `4C(s, graphite) + 5H₂(g) + ½O₂(g) ⟶ C₂H₅OC₂H₅(l)`, `2Na(s) + C(s, graphite) + 3⁄2O₂(g) ⟶ Na₂CO₃(s)` | correct | A fraction is read typed as 1/2, ½, 0.5, 3/2, 1.5, or 1½, and "Read as:" prints it as the key does *(November 14, 2026, chapter 5)* |
+| `8C + 10H2 + O2 -> 2C2H5OC2H5`, `4Na + 2C + 3O2 -> 2Na2CO3` | the same keys | form | "That balances, but the question asks for the equation written for one mole, so a coefficient may be a fraction. Type a fraction as 1/2." A key with a fractional coefficient is graded at its own scale; the message names no substance and never says "smallest whole-number coefficients" *(November 14, 2026)* |
+| `2Na(s) + C(s) + 3/2O2(g) -> Na2CO3(s)` | `2Na(s) + C(s, graphite) + 3⁄2O₂(g) ⟶ Na₂CO₃(s)` | correct | `(s, graphite)` is a state: `(s)` typed for it is right, since a response with no states at all is right; an allotrope typed is compared |
+| `2Na(s) + C(s, diamond) + 3/2O2(g) -> Na2CO3(s)` | the same key | form | the state-symbol sentence above *(November 14, 2026)* |
 
 Rules for the key and the stem:
 
@@ -1136,7 +1230,14 @@ Rules for the key and the stem:
   key reads one way (lint); the learner's bare `SO42-` is read every way it
   can be and is right when one reading is the key.
 - **An equation key balances, in atoms and in charge, in lowest terms**
-  (lint). A source key that fails is a suspected source defect: the scan
+  (lint); a key with a fractional coefficient — a formation equation,
+  written for one mole of its product (5.3) — is admitted, and must still
+  balance. **Its fraction is written one way** (lint, and the field's "Read
+  as:" prints the same): the vulgar-fraction glyph where Unicode has one,
+  `½`, `¼`, `¾`; otherwise its digits around the fraction slash U+2044,
+  `3⁄2` — never a slash, a decimal, a mixed number, or `1⁄2` for `½`
+  *(November 14, 2026, chapter 5)*. A state with its allotrope is printed as
+  the source prints it, `C(s, graphite)`. A source key that fails is a suspected source defect: the scan
   that sized this form found four in the book: chapter 4's "MgC1₂" (a
   digit for the letter), and in chapter 19 "3Cl⁺" for a chloride, "MnO⁴⁻"
   for permanganate, and an iron(III) ion printed without its charge.
@@ -1246,6 +1347,8 @@ What the learner sees, against the key `0.674` under `sig-figs:3 last-digit:1`:
 | `0.674 M`, `0.674 mol/L` | unit | "Right number — enter it without the unit." |
 | `0.676` | incorrect | "Close, but not within rounding of the answer. If you rounded partway through, carry the extra digits through every step and round only the final result. If you looked up a value, such as an atomic mass, use every digit the table prints." Said of a response written to the right count of figures (or a readout that rounds to one) that misses the allowance by one unit of the last figure of a two-figure key, or by up to two of a longer one; never at one figure. The second sentence is added only under `last-digit:1` or `2`, where a factor is looked up, and the whole is also said of a response of four or more figures written ONE figure short and within two units of what the key rounds to there (`123.88` against `123.896`): what a table of coarser masses gives *(November 12–13, 2026)* |
 | `0.6`, `0.774` | incorrect | |
+| `802` against `-802`; `-265` against `265` | incorrect | "The size is right, but the sign is not. Check whether the value should be positive or negative." Said of a response right but for its sign, inside the item's own allowance (or the readout of such a value); no key or allowance changes, and it names no quantity *(November 14, 2026, chapter 5: an enthalpy change of the wrong direction was a bare "Not quite")* |
+| `1.31` against `1310`; `1310` against `1.31` | incorrect | "The digits are right, but the value is a thousand times off. Check the unit the question asks for." Exactly 10³ or 10⁻³ times a right value (J typed where kJ is asked); never for 10¹, 10², or 10⁶, nor a value merely near; the near-miss zone is read first and cannot hold such a value. A response a thousand off AND of the wrong sign (`0.802` against `-802`) gets this sentence: every word of it is true, where the sign sentence's "the size is right" is not *(November 14, 2026)* |
 
 Rules for the key and the stem:
 
@@ -1529,36 +1632,23 @@ What chapter 1 settled, and what the scan of the book counted, are in
   so a sticky header there needs a table render hook, which would change
   every table on the site. Opened from a section the heading row does
   stay (the lookup owns its scroller);
-- the browser test of the lookup adds its link to a section page at run
-  time, since no EXERCISE links a table appendix before chapter 5 (4.2
-  links Appendix H once, in a Source note). That chapter's run replaces
-  the added link with its first exercise that links Appendix G (`tests/browser-check.spec.mjs`, "a table appendix
-  opens over the page");
-- **what chapter 5's answers ask of the grader and the gates, before its
-  wave** (probed against the live code November 14, 2026; the table with
-  counts is in `docs/history/chemistry.md`, "Before chapter 5"). Each is
-  taught with a test at the run's gate probe (`run.md` §1 step 6a), never
-  met by downgrading an item:
-  - a wrong sign (`802` for a key of `-802`) and a factor of a thousand
-    (an answer in J where kJ is asked, `1.31` for 1310) are a bare "Not
-    quite": two messages, no key or allowance changed;
-  - a formation equation with a fractional coefficient: a key written
-    `½O₂` reads as no equation (`1/2O₂` grades), and a doubled answer is
-    told "smallest whole-number coefficients", which is wrong advice for
-    an equation that forms one mole — `docs/briefs/chemistry/solve.md`
-    tells the solver the same;
-  - one part answered in two units ("1310 J; 313 cal"): the keys gate
-    confirms either number under either unit word;
-  - a thermochemical equation with its ΔH is not typeable as one answer;
-    split into an equation and a fill-in, the keys gate refuses the
-    equation alone;
-  - 5.3's Exercise 29 and a Check Your Learning each print part of the
-    other's key, and no gate reads one section item against another;
-  - **how a symbol with its value is written in a stem**: "Stems" allows
-    `($d$ = 0.7134 g/mL)`, "Notation" says an expression is never half
-    math and half prose, and the Notation table sets the unit inside math
-    (`\Delta H = -92.2\ \text{kJ}`). Eleven keyed exercises of 5.3 print
-    a ΔH in the stem: the run facts rule one form before the wave;
+- 5.3's Exercise 29 and a Check Your Learning each print part of the
+  other's key (the 66.4 kJ of N₂ + 2O₂ ⟶ 2NO₂), and no gate reads one
+  section item against another; the run facts rule where the two items sit.
+  The rest of what chapter 5's answers asked of the grader and the gates
+  (probed November 14, 2026; `docs/history/chemistry.md`, "Before chapter
+  5") was taught with tests the same day and is now in its sections: the
+  sign and thousand messages ("Measured quantities"), a fractional
+  coefficient ("Formulas and equations"), two units in one part, a ΔH in a
+  stem, and a second Check Your Learning ("Stems", "Exercises");
+- lints not yet written *(chapter 5)*: a negative key under "produced /
+  released / evolved"; a `](../` link between sections or "Table N.M" in a
+  stem; an `answerDisplay` unit that differs from the stem's "Enter … in"
+  unit; a hint whose signed equation disagrees with its key's sign; a
+  figure count on every numeric key at the run facts (an automatic screen);
+  and "the answer ledger binds an item to the nearest figure above it when
+  the stem says 'above' of a table or another figure" (nine items of 5.1
+  are bound to a photograph none of them uses);
 - the kit reader's recommendations of November 14 that are not yet built:
   a `verify-section` mode that runs both source gates and the leak reading
   on one page; the fact half of the run facts and the PDF range scripted;

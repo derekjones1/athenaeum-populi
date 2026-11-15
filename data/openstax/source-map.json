@@ -260,8 +260,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 21,
       "upstreamSections": 114,
-      "localChapters": 4,
-      "mappedSections": 22,
+      "localChapters": 5,
+      "mappedSections": 25,
       "upstreamAppendices": 13,
       "mappedAppendices": 13
     }
@@ -7466,6 +7466,33 @@
       "moduleId": "m68716",
       "sourceTitle": "Quantitative Chemical Analysis",
       "moduleSha256": "aa1a13d50dd0d66cb49ec48cd79d832df9ad74eed9cc1895d9d56f674bdbe8f8"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/01-energy-basics.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "5.1",
+      "moduleId": "m68724",
+      "sourceTitle": "Energy Basics",
+      "moduleSha256": "2b0ef256a1bffa70683c4597a7dd5c23356b45d9c46741180e7f4fbcdf674708"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/02-calorimetry.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "5.2",
+      "moduleId": "m68726",
+      "sourceTitle": "Calorimetry",
+      "moduleSha256": "d92091e8fdb9cab6955c83bc05f8613389758e1ff7c6907ab72ab529045c4edf"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "5.3",
+      "moduleId": "m68727",
+      "sourceTitle": "Enthalpy",
+      "moduleSha256": "b7e68b56270cfd800abdf625cfcb3096b00b8ab74b7b09f8afa416688098081a"
     }
   ],
   "appendices": [

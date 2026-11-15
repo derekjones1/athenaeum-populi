@@ -4022,6 +4022,543 @@
       "caption": "(a) A student fills a buret in preparation for a titration analysis. (b) A typical buret permits volume measurements to the nearest 0.01 mL. (credit a: modification of work by Mark Blaser and Matt Evans; credit b: modification of work by Mark Blaser and Matt Evans)",
       "scale": "scaled-down"
     },
+    "CNX_Chem_05_00_Match": {
+      "source": "media/CNX_Chem_05_00_Match.jpg",
+      "sourceSha256": "4259f2cbbb32ca08f3744f294ffcb27f7e98e1b97fc17565302cdfbfe64e7481",
+      "module": "m68723",
+      "kind": "photo",
+      "width": 1200,
+      "height": 600,
+      "variants": [
+        {
+          "width": 800,
+          "height": 400,
+          "file": "CNX_Chem_05_00_Match-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 600,
+          "file": "CNX_Chem_05_00_Match-1200.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A match held in a person’s hand is ignited as it is scratched along the rough surface of a match box.",
+      "caption": "Sliding a match head along a rough surface initiates a combustion reaction that produces energy in the form of heat and light. (credit: modification of work by Laszlo Ilyes)"
+    },
+    "CNX_Chem_05_01_HeatCapacity": {
+      "source": "media/CNX_Chem_05_01_HeatCapacity.jpg",
+      "sourceSha256": "385826fb4ee4010a5dc468d4add4dd1a50f30c6a4c70aa1b84cc09b5c7f80025",
+      "module": "m68724",
+      "kind": "photo",
+      "width": 650,
+      "height": 313,
+      "variants": [
+        {
+          "width": 650,
+          "height": 313,
+          "file": "CNX_Chem_05_01_HeatCapacity-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The picture shows two black metal frying pans sitting on a flat surface. The left pan is about half the size of the right pan.",
+      "caption": "Because of its larger mass, a large frying pan has a larger heat capacity than a small frying pan. Because they are made of the same material, both frying pans have the same specific heat. (credit: Mark Blaser)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_05_01_HeatTrans1": {
+      "source": "media/CNX_Chem_05_01_HeatTrans1.jpg",
+      "sourceSha256": "c835a1b2c5ee646c58cc32f9f85d8b88d33ce4aad16fa077c2bd12fe3d633db8",
+      "module": "m68724",
+      "kind": "photo",
+      "width": 1272,
+      "height": 318,
+      "variants": [
+        {
+          "width": 800,
+          "height": 200,
+          "file": "CNX_Chem_05_01_HeatTrans1-800.webp"
+        },
+        {
+          "width": 1272,
+          "height": 318,
+          "file": "CNX_Chem_05_01_HeatTrans1-1272.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Three drawings are shown and labeled a, b, and c, respectively. The first drawing labeled a depicts two boxes, with a space in between and the pair is captioned “Different temperatures.” The left hand box is labeled H and holds fourteen well-spaced red spheres with lines drawn around them to indicate rapid motion. The right hand box is labeled L and depicts fourteen blue spheres that are closer together than the red spheres and have smaller lines around them showing less particle motion. The second drawing labeled b depicts two boxes that are touching one another. The left box is labeled H and contains fourteen maroon spheres that are spaced evenly apart. There are tiny lines around each sphere depicting particle movement. The right box is labeled L and holds fourteen purple spheres that are slightly closer together than the maroon spheres. There are also tiny lines around each sphere depicting particle movement. A black arrow points from the left box to the right box and the pair of diagrams is captioned “Contact.” The third drawing labeled c, is labeled “Thermal equilibrium.” There are two boxes shown in contact with one another. Both boxes contain fourteen purple spheres with small lines around them depicting moderate movement. The left box is labeled H and the right box is labeled L.",
+      "caption": "(a) Substances H and L are initially at different temperatures, and their atoms have different average kinetic energies. (b) When they contact each other, collisions between the molecules result in the transfer of kinetic (thermal) energy from the hotter to the cooler matter. (c) The two objects reach “thermal equilibrium” when both substances are at the same temperature and their molecules have the same average kinetic energy."
+    },
+    "CNX_Chem_05_01_HotCold": {
+      "source": "media/CNX_Chem_05_01_HotCold.jpg",
+      "sourceSha256": "b0ccf0f6077497d0063a2c7d308b408e16893c0af6339ae83ad34075fb897ac8",
+      "module": "m68724",
+      "kind": "photo",
+      "width": 720,
+      "height": 424,
+      "variants": [
+        {
+          "width": 720,
+          "height": 424,
+          "file": "CNX_Chem_05_01_HotCold-720.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two molecular drawings are shown and labeled a and b. Drawing a is a box containing fourteen red spheres that are surrounded by lines indicating that the particles are moving rapidly. This drawing has a label that reads “Hot liquid.” Drawing b depicts another box of equal size that also contains fourteen spheres, but these are blue. They are all surrounded by smaller lines that depict some particle motion, but not as much as in drawing a. This drawing has a label that reads “Cold liquid.”",
+      "caption": "(a) The molecules in a sample of hot water move more rapidly than (b) those in a sample of cold water.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_05_01_OxyacTorch": {
+      "source": "media/CNX_Chem_05_01_OxyacTorch.jpg",
+      "sourceSha256": "af8fe909621941ac48b587096086353dc893e323b525aa1b7a695565ce1fac3c",
+      "module": "m68724",
+      "kind": "photo",
+      "width": 1300,
+      "height": 544,
+      "variants": [
+        {
+          "width": 800,
+          "height": 334,
+          "file": "CNX_Chem_05_01_OxyacTorch-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 544,
+          "file": "CNX_Chem_05_01_OxyacTorch-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two pictures are shown and labeled a and b. Picture a shows a metal railroad tie being cut with the flame of an acetylene torch. Picture b shows a chemical cold pack containing ammonium nitrate.",
+      "caption": "(a) An oxyacetylene torch produces heat by the combustion of acetylene in oxygen. The energy released by this exothermic reaction heats and then melts the metal being cut. The sparks are tiny bits of the molten metal flying away. (b) A cold pack uses an endothermic process to create the sensation of cold. (credit a: modification of work by “Skatebiker”/Wikimedia commons)"
+    },
+    "CNX_Chem_05_01_SolTherm1": {
+      "source": "media/CNX_Chem_05_01_SolTherm1.jpg",
+      "sourceSha256": "b002a2f39a98017e164ae9386c0b352f8aafabcd4ba36f9252087f8f8d1b017b",
+      "module": "m68724",
+      "kind": "photo",
+      "width": 1200,
+      "height": 512,
+      "variants": [
+        {
+          "width": 800,
+          "height": 341,
+          "file": "CNX_Chem_05_01_SolTherm1-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 512,
+          "file": "CNX_Chem_05_01_SolTherm1-1200.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure has two parts labeled a and b. Part a shows rows and rows of trough mirrors. Part b shows how a solar thermal plant works. Heat transfer fluid enters a tank via pipes. The tank contains water which is heated. As the heat is exchanged from the pipes to the water, the water becomes steam. The steam travels to a steam turbine. The steam turbine begins to turn which powers a generator. Exhaust steam exits the steam turbine and enters a cooling tower.",
+      "caption": "This solar thermal plant uses parabolic trough mirrors to concentrate sunlight. (credit a: modification of work by Bureau of Land Management)"
+    },
+    "CNX_Chem_05_01_SolTherm2": {
+      "source": "media/CNX_Chem_05_01_SolTherm2.jpg",
+      "sourceSha256": "c5a442818afd43716a0092b8ea13c5d20ec5584b6a305bea828cb07497693c8f",
+      "module": "m68724",
+      "kind": "photo",
+      "width": 1200,
+      "height": 480,
+      "variants": [
+        {
+          "width": 800,
+          "height": 320,
+          "file": "CNX_Chem_05_01_SolTherm2-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 480,
+          "file": "CNX_Chem_05_01_SolTherm2-1200.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two pictures are shown and labeled a and b. Picture a shows a thermal plant with three tall metal towers. Picture b is an arial picture of the mirrors used at the plant. They are arranged in rows.",
+      "caption": "(a) The Ivanpah solar thermal plant uses 170,000 mirrors to concentrate sunlight on water-filled towers. (b) It covers 4000 acres of public land near the Mojave Desert and the California-Nevada border. (credit a: modification of work by Craig Dietrich; credit b: modification of work by “USFWS Pacific Southwest Region”/Flickr)"
+    },
+    "CNX_Chem_05_01_Thermochem": {
+      "source": "media/CNX_Chem_05_01_Thermochem.jpg",
+      "sourceSha256": "85493f40f4a3d60b45b27c2f3341fbd038fbc967b5ec4586db101ca7cac50147",
+      "module": "m68724",
+      "kind": "photo",
+      "width": 1300,
+      "height": 351,
+      "variants": [
+        {
+          "width": 800,
+          "height": 216,
+          "file": "CNX_Chem_05_01_Thermochem-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 351,
+          "file": "CNX_Chem_05_01_Thermochem-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Three pictures are shown and labeled a, b, and c. Picture a is a cheeseburger. Picture b depicts a highway that is full of traffic. Picture c is a view into an industrial metal furnace. The view into the furnace shows a hot fire burning inside.",
+      "caption": "The energy involved in chemical changes is important to our daily lives: (a) A cheeseburger for lunch provides the energy you need to get through the rest of the day; (b) the combustion of gasoline provides the energy that moves your car (and you) between home, work, and school; and (c) coke, a processed form of coal, provides the energy needed to convert iron ore into iron, which is essential for making many of the products we use daily. (credit a: modification of work by “Pink Sherbet Photography”/Flickr; credit b: modification of work by Jeffery Turner)"
+    },
+    "CNX_Chem_05_01_Thermom": {
+      "source": "media/CNX_Chem_05_01_Thermom.jpg",
+      "sourceSha256": "adf32909579a61eaa6fc2ab1595ade3a4754e10cab22b3b07618a75907dc6ddc",
+      "module": "m68724",
+      "kind": "photo",
+      "width": 1296,
+      "height": 552,
+      "variants": [
+        {
+          "width": 800,
+          "height": 340,
+          "file": "CNX_Chem_05_01_Thermom-800.webp"
+        },
+        {
+          "width": 1296,
+          "height": 552,
+          "file": "CNX_Chem_05_01_Thermom-1296.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A picture labeled a is shown as well as a pair of drawings labeled b. Picture a shows the lower portion of an alcohol thermometer. The thermometer has a printed scale to the left of the tube in the center that reads from negative forty degrees at the bottom to forty degrees at the top. It also has a scale printed to the right of the tube that reads from negative thirty degrees at the bottom to thirty five degrees at the top. On both scales, the volume of the alcohol in the tube reads between nine and ten degrees. The two images labeled b both depict a metal strip coiled into a spiral and composed of brass and steel. The left coil, which is loosely coiled, is labeled along its upper edge with the 30 degrees C and 10 degrees C. The end of the coil is near the 30 degrees C label. The right hand coil is much more tightly wound and the end is near the 10 degree C label.",
+      "caption": "(a) In an alcohol or mercury thermometer, the liquid (dyed red for visibility) expands when heated and contracts when cooled, much more so than the glass tube that contains the liquid. (b) In a bimetallic thermometer, two different metals (such as brass and steel) form a two-layered strip. When heated or cooled, one of the metals (brass) expands or contracts more than the other metal (steel), causing the strip to coil or uncoil. Both types of thermometers have a calibrated scale that indicates the temperature. (credit a: modification of work by “dwstucke”/Flickr)"
+    },
+    "CNX_Chem_05_01_Waterfall": {
+      "source": "media/CNX_Chem_05_01_Waterfall.jpg",
+      "sourceSha256": "f54623c8b098b39b7650dab03b905848624cd08cbaa815e998cab4bcd8e85c47",
+      "module": "m68724",
+      "kind": "photo",
+      "width": 975,
+      "height": 499,
+      "variants": [
+        {
+          "width": 800,
+          "height": 409,
+          "file": "CNX_Chem_05_01_Waterfall-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 499,
+          "file": "CNX_Chem_05_01_Waterfall-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two pictures are shown and labeled a and b. Picture a shows a large waterfall with water falling from a high elevation at the top of the falls to a lower elevation. The second picture is a view looking down into the Hoover Dam. Water is shown behind the high wall of the dam on one side and at the base of the dam on the other.",
+      "caption": "(a) Water at a higher elevation, for example, at the top of Victoria Falls, has a higher potential energy than water at a lower elevation. As the water falls, some of its potential energy is converted into kinetic energy. (b) If the water flows through generators at the bottom of a dam, such as the Hoover Dam shown here, its kinetic energy is converted into electrical energy. (credit a: modification of work by Steve Jurvetson; credit b: modification of work by “curimedia”/Wikimedia commons)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_05_02_BombCalor": {
+      "source": "media/CNX_Chem_05_02_BombCalor.jpg",
+      "sourceSha256": "012b1a7aaa83a4025f1ad8f7b6361231d5c6f766122bcab8da67a14af1c0106a",
+      "module": "m68726",
+      "kind": "photo",
+      "width": 1300,
+      "height": 653,
+      "variants": [
+        {
+          "width": 800,
+          "height": 402,
+          "file": "CNX_Chem_05_02_BombCalor-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 653,
+          "file": "CNX_Chem_05_02_BombCalor-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A picture and a diagram are shown, labeled a and b, respectively. Picture a depicts a bomb calorimeter. It is a cube-shaped machine with a cavity in the top, a metal cylinder that is above the cavity, and a read-out panel attached to the top-right side. Diagram b depicts a cut away figure of a cube with a cylindrical container full of water in the middle of it. Another container, labeled “bomb,” sits inside of a smaller cylinder which holds a sample cup and is nested in the cylindrical container surrounded by the water. A black line extends into the water and is labeled “Precision thermometer.” Two wires labeled “Electrodes” extend away from a cover that sits on top of the interior container. A read-out panel is located at the top right of the cube.",
+      "caption": "(a) A bomb calorimeter is used to measure heat produced by reactions involving gaseous reactants or products, such as combustion. (b) The reactants are contained in the gas-tight “bomb,” which is submerged in water and surrounded by insulating materials. (credit a: modification of work by “Harbor1”/Wikimedia commons)"
+    },
+    "CNX_Chem_05_02_Calorim": {
+      "source": "media/CNX_Chem_05_02_Calorim.jpg",
+      "sourceSha256": "76e2653a299d345d216ff4e0b2eebe208c611fa4482c25370161788c8b5d5364",
+      "module": "m68726",
+      "kind": "photo",
+      "width": 650,
+      "height": 1041,
+      "variants": [
+        {
+          "width": 650,
+          "height": 1041,
+          "file": "CNX_Chem_05_02_Calorim-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two Styrofoam cups are shown nested in one another with a cover over the top. A thermometer and stirring rod are inserted through the cover and into the solution inside the cup, which is shown as a cut-away. The stirring rod has a double headed arrow next to it facing up and down. The liquid mixture inside the cup is labeled “Reaction mixture.”",
+      "caption": "A simple calorimeter can be constructed from two polystyrene cups. A thermometer and stirrer extend through the cover into the reaction mixture.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_05_02_Calorim2": {
+      "source": "media/CNX_Chem_05_02_Calorim2.jpg",
+      "sourceSha256": "b561542b84d8a32ee06c77b03d9a8775ae11d2cccce79339cd8c6810ef8ad2ea",
+      "module": "m68726",
+      "kind": "photo",
+      "width": 1300,
+      "height": 840,
+      "variants": [
+        {
+          "width": 800,
+          "height": 517,
+          "file": "CNX_Chem_05_02_Calorim2-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 840,
+          "file": "CNX_Chem_05_02_Calorim2-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two diagrams are shown and labeled a and b. Diagram a depicts a thermometer which passes through a disk-like insulating cover and into a metal cylinder which is labeled “metal inner vessel,” which is in turn nested in a metal cylinder labeled “metal outer vessel.” The inner cylinder rests on an insulating support ring. A stirrer passes through the insulating cover and into the inner cylinder as well. Diagram b shows an inner metal vessel half full of liquid resting on an insulating support ring and nested in a metal outer vessel. A precision temperature probe and motorized stirring rod are placed into the solution in the inner vessel and connected by wires to equipment exterior to the set-up.",
+      "caption": "Commercial solution calorimeters range from (a) simple, inexpensive models for student use to (b) expensive, more accurate models for industry and research."
+    },
+    "CNX_Chem_05_02_FoodLabel": {
+      "source": "media/CNX_Chem_05_02_FoodLabel.jpg",
+      "sourceSha256": "95f6e30fa5b44d147b0ef79e7a3f99c6c9248004dd10e22bc6bdd8646d73e732",
+      "module": "m68726",
+      "kind": "photo",
+      "width": 1200,
+      "height": 678,
+      "variants": [
+        {
+          "width": 800,
+          "height": 452,
+          "file": "CNX_Chem_05_02_FoodLabel-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 678,
+          "file": "CNX_Chem_05_02_FoodLabel-1200.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two pictures are shown and labeled a and b. Picture a shows a close-up of a bowl of macaroni and cheese. Picture b is a food label that contains highlighted information in a table format. The top of the label reads “Sample label for macaroni and cheese.” Below this are the words “Nutrition facts.” Below this are two lines of highlighted text that read “Serving size one cup (228 g)” and “Servings per container 2.” A label to the left of these lines reads “Start here” and a right-facing arrow is beside these words. Below this are the words “check calories” which lie to the left of the phrases “Amount per serving” which is above the words “Calories 250” and “Calories from fat 210.” The next segment of the label is highlighted and contains five phrases “Total fat 12 g,” “Saturated fat 3 g,” “Trans fat 3 g,” “Cholesterol 30 m g,” and “Sodium 470 m g.” The phrase “Limit these nutrients” lies to the left of these five phrases. The phrase below these is “Total carbohydrates 31 g” and is followed by a highlighted phrase, “Dietary fiber 0 g.” Below this are the phrases “Sugars 5 g” and “Proteins 5 g.” Below this is a highlighted portion containing the phrases “Vitamin A,” “Vitamin C,” “Calcium,” and “Iron.” A label to the left of these terms states “Get enough of these nutrients.” The bottom of the label is labeled “Footnote” and reads “Percent daily values are based on a 2,000 calorie diet. Your daily values may be higher or lower depending on your calorie needs.” Each of the highlighted terms in the table are in line with a percentage value to the right of the table. A note on the outer right of the table states “Quick guide to % DV”, “5% or less is low” and “20% or more is high. The daily value for total fat is 18%, for saturated fat is 15%, for cholesterol is 10%, for sodium is 20%, for total carbohydrates is 10%, for dietary fiber is 0%, for vitamin A is 4%, for vitamin C is 2%, for calcium is 20%, and for iron is 4%.” At the very bottom is a table that indicates calories at 2,000 and 2,500. For total fat the table indicates less than 65 g for 2,000 calories and 80 g from 2,500 calories. For saturated fat the table indicates less than 20 g for 2,000 calories and 25 g for 2,500 calories. For cholesterol the table indicates less than 300 m g for 2,000 calories and 300 m g for 2,500 calories. For sodium the table indicates less than 2,400 m g for 2,000 calories and 2,400 m g for 2,500 calories. For total carbohydrate the table indicates 300 g for 2,000 calories and 375 g for 2,500 calories. For dietary fiber the table indicates 25 g for 2,000 calories and 30 g for 2,500 calories.",
+      "caption": "(a) Macaroni and cheese contain energy in the form of the macronutrients in the food. (b) The food’s nutritional information is shown on the package label. In the US, the energy content is given in Calories (per serving); the rest of the world usually uses kilojoules. (credit a: modification of work by “Rex Roof”/Flickr)"
+    },
+    "CNX_Chem_05_02_HandWarmer": {
+      "source": "media/CNX_Chem_05_02_HandWarmer.jpg",
+      "sourceSha256": "cb4120fc5bcfcb932d86077272e1fafa17320456ec89a3586b961ea8483ee5a6",
+      "module": "m68726",
+      "kind": "photo",
+      "width": 1200,
+      "height": 249,
+      "variants": [
+        {
+          "width": 800,
+          "height": 166,
+          "file": "CNX_Chem_05_02_HandWarmer-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 249,
+          "file": "CNX_Chem_05_02_HandWarmer-1200.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A series of three photos is shown. There are two right-facing arrows connecting one photo to the next. The first photo shows a chemical hand warmer. It is a bag that contains a clear, colorless liquid. There is a white disk located to the right inside the bag. The second photo shows the same thing, except the white disc has become a white, cloudy substance. The third photo shows the entire bag filled with this white substance.",
+      "caption": "Chemical hand warmers produce heat that warms your hand on a cold day. In this one, you can see the metal disc that initiates the exothermic precipitation reaction. (credit: modification of work by Science Buddies TV/YouTube)"
+    },
+    "CNX_Chem_05_02_HeatMeas": {
+      "source": "media/CNX_Chem_05_02_HeatMeas.jpg",
+      "sourceSha256": "b493100c2af28d0f74ed0f83061e83f333dee0a40d61a057f6824f406d03cee4",
+      "module": "m68726",
+      "kind": "photo",
+      "width": 1300,
+      "height": 650,
+      "variants": [
+        {
+          "width": 800,
+          "height": 400,
+          "file": "CNX_Chem_05_02_HeatMeas-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 650,
+          "file": "CNX_Chem_05_02_HeatMeas-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two diagrams labeled a and b are shown. Each is made up of two rectangular containers with a thermometer inserted into the top right and extending inside. There is a right facing arrow connecting each box in each diagram. The left container in diagram a depicts a pink and green swirling solution with the terms “Exothermic process” and “System” written in the center with arrows facing away from the terms pointing to “q.” The labels “Solution” and “Surroundings” are written at the bottom of the container. The right container in diagram a has the term “Solution” written at the bottom of the container and a red arrow facing up near the thermometer with the phrase “Temperature increased” next to it. The pink and green swirls are more blended in this container. The left container in diagram b depicts a purple and blue swirling solution with the terms “Endothermic process” and “System” written in the center with arrows facing away from the terms and “Solution” and “Surroundings” written at the bottom. The arrows point away from the letter “q.” The right container in diagram b has the term “Solution” written at the bottom and a red arrow facing down near the thermometer with the phrase “Temperature decreased” next to it. The blue and purple swirls are more blended in this container.",
+      "caption": "In a calorimetric determination, either (a) an exothermic process occurs and heat, q , is negative, indicating that thermal energy is transferred from the system to its surroundings, or (b) an endothermic process occurs and heat, q , is positive, indicating that thermal energy is transferred from the surroundings to the system."
+    },
+    "CNX_Chem_05_02_HeatTrans2": {
+      "source": "media/CNX_Chem_05_02_HeatTrans2.jpg",
+      "sourceSha256": "aeb3ee4a4fb7ae484b89cde8ef8cacc4220732d78bb68655b2203a448d64424f",
+      "module": "m68726",
+      "kind": "photo",
+      "width": 650,
+      "height": 647,
+      "variants": [
+        {
+          "width": 650,
+          "height": 647,
+          "file": "CNX_Chem_05_02_HeatTrans2-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two diagrams are shown and labeled a and b. Each diagram is composed of a rectangular container with a thermometer inserted inside from the top right corner. Both containers are connected by a right-facing arrow. Both containers are full of water, which is depicted by the letter “W,” and each container has a square in the middle which represents a metal which is labeled with a letter “M.” In diagram a, the metal is drawn in brown and has three arrows facing away from it. Each arrow has the letter “q” at its end. The metal is labeled “system” and the water is labeled “surroundings.” The thermometer in this diagram has a relatively low reading. In diagram b, the metal is depicted in purple and the thermometer has a relatively high reading.",
+      "caption": "In a simple calorimetry process, (a) heat, q , is transferred from the hot metal, M, to the cool water, W, until (b) both are at the same temperature.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_05_02_IcePack": {
+      "source": "media/CNX_Chem_05_02_IcePack.jpg",
+      "sourceSha256": "642a201c9ab4e20c6ef4e244e12c7eaa5bc6207c9b2ed6ef5578e79c1f26eb5b",
+      "module": "m68726",
+      "kind": "photo",
+      "width": 975,
+      "height": 796,
+      "variants": [
+        {
+          "width": 800,
+          "height": 653,
+          "file": "CNX_Chem_05_02_IcePack-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 796,
+          "file": "CNX_Chem_05_02_IcePack-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram depicts a rectangular pack containing a white, solid substance and an interior bag full of water. The white solid is labeled “ammonium nitrate.” The top of the packet has the words “Instant Cold Pack” written on it. It also has three pictograms, which from right to left, show a hand squeezing the pack, agitating the pack and placing the pack on a person’s body. The bottom of the pack has printed words that read “single use only.”",
+      "caption": "An instant cold pack consists of a bag containing solid ammonium nitrate and a second bag of water. When the bag of water is broken, the pack becomes cold because the dissolution of ammonium nitrate is an endothermic process that removes thermal energy from the water. The cold pack then removes thermal energy from your body.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_05_03_AlgalFuel1": {
+      "source": "media/CNX_Chem_05_03_AlgalFuel1.jpg",
+      "sourceSha256": "58c921409d7c8c3cd5f6411b72cc3f5503b403bb536643fadddb532f0ee2991c",
+      "module": "m68727",
+      "kind": "photo",
+      "width": 1200,
+      "height": 425,
+      "variants": [
+        {
+          "width": 800,
+          "height": 283,
+          "file": "CNX_Chem_05_03_AlgalFuel1-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 425,
+          "file": "CNX_Chem_05_03_AlgalFuel1-1200.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Three pictures are shown and labeled a, b, and c. Picture a shows a microscopic view of algal organisms. They are brown, multipart strands and net-like structures on a background of light violet. Picture b shows five large tubs full of a brown liquid containing these algal organisms. Picture c depicts a cylinder full of green liquid in the foreground and a poster in the background that has the title “From Field to Fleet.”",
+      "caption": "(a) Tiny algal organisms can be (b) grown in large quantities and eventually (c) turned into a useful fuel such as biodiesel. (credit a: modification of work by Micah Sittig; credit b: modification of work by Robert Kerton; credit c: modification of work by John F. Williams)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_05_03_AlgalFuel2": {
+      "source": "media/CNX_Chem_05_03_AlgalFuel2.jpg",
+      "sourceSha256": "65f1ab2e83afacaee8daf552efe99996ed9d260555591965cd65335c74d4a942",
+      "module": "m68727",
+      "kind": "photo",
+      "width": 1008,
+      "height": 365,
+      "variants": [
+        {
+          "width": 800,
+          "height": 289,
+          "file": "CNX_Chem_05_03_AlgalFuel2-800.webp"
+        },
+        {
+          "width": 1008,
+          "height": 365,
+          "file": "CNX_Chem_05_03_AlgalFuel2-1008.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A flowchart is shown that contains pictures and words. Reading from left to right, the terms “Grow,” “Harvest,” “Extract,” “Process and purify,” and “Jet fuel gasoline diesel” are shown with right-facing arrows in between each. Above each term, respectively, are diagrams of three containers, three cylinders lying side-by-side, a pyramid-like container with liquid inside, a factory, and a fuel pump. In the space above all of the diagrams and to the left of the images is a diagram of the sun.",
+      "caption": "Algae convert sunlight and carbon dioxide into oil that is harvested, extracted, purified, and transformed into a variety of renewable fuels."
+    },
+    "CNX_Chem_05_03_GasBurning": {
+      "source": "media/CNX_Chem_05_03_GasBurning.jpg",
+      "sourceSha256": "e123f60cf965ad8a95217fa9bd75c9d04afa37a8b0854dc8f7e2eca2591938b3",
+      "module": "m68727",
+      "kind": "photo",
+      "width": 1200,
+      "height": 313,
+      "variants": [
+        {
+          "width": 800,
+          "height": 208,
+          "file": "CNX_Chem_05_03_GasBurning-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 313,
+          "file": "CNX_Chem_05_03_GasBurning-1200.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A picture shows a large ball of fire burning on a road. A fire truck and fireman are shown in the foreground.",
+      "caption": "The combustion of gasoline is very exothermic. (credit: modification of work by “AlexEagle”/Flickr)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_05_03_HessCO2": {
+      "source": "media/CNX_Chem_05_03_HessCO2.jpg",
+      "sourceSha256": "7858128103224cc9d3b8856280eabcc8b87a3b71a6f2a2b5a1f4b1300570ecbc",
+      "module": "m68727",
+      "kind": "photo",
+      "width": 975,
+      "height": 537,
+      "variants": [
+        {
+          "width": 800,
+          "height": 440,
+          "file": "CNX_Chem_05_03_HessCO2-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 537,
+          "file": "CNX_Chem_05_03_HessCO2-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram is shown. A long arrow faces upward on the left with the phrase “H increasing.” A horizontal line at the bottom of the diagram is shown with the formula “C O subscript 2 (g)” below it. A horizontal line at the top of the diagram has the formulas “C (s) + O subscript 2 (g)” above it. The top and bottom lines are connected by a downward facing arrow with the value “Δ H = –394 k J” written beside it. Below and to the right of the top horizontal line is a second horizontal line with the equations “C O (g) + one half O subscript 2 (g)” above it. This line and the bottom line are connected by a downward facing arrow with the value “Δ H = –283 k J” written beside it. The same line and the top line are connected by a downward facing arrow with the value “Δ H = –111 k J” written beside it. There are three brackets to the right of the diagram. The first bracket runs from the top horizontal line to the second horizontal line. It is labeled, “Enthalpy of reactants.” The second bracket runs from the second horizontal line to the bottom horizontal line. It is labeled, “Enthalpy of products.” Both of these brackets are included in the third bracket which runs from the top to the bottom of the diagram. It is labeled, “Enthalpy change of exothermic reaction in 1 or 2 steps.”",
+      "caption": "The formation of CO 2 ( g ) from its elements can be thought of as occurring in two steps, which sum to the overall reaction, as described by Hess’s law. The horizontal blue lines represent enthalpies. For an exothermic process, the products are at lower enthalpy than are the reactants."
+    },
+    "CNX_Chem_05_03_Summit": {
+      "source": "media/CNX_Chem_05_03_Summit.jpg",
+      "sourceSha256": "d366077cd87fa135763520b27b73f9cb35139f821306f6c9d3bb8594aa9742fc",
+      "module": "m68727",
+      "kind": "photo",
+      "width": 975,
+      "height": 525,
+      "variants": [
+        {
+          "width": 800,
+          "height": 430,
+          "file": "CNX_Chem_05_03_Summit-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 525,
+          "file": "CNX_Chem_05_03_Summit-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "An aerial photo depicts a view of Mount Kilimanjaro. A straight, green arrow labeled X is drawn from the term “base,” written at the bottom of the mountain, to the term “Summit,” written at the top of the mountain. Another arrow labeled Y is draw from the base to the summit alongside the green arrow, but this arrow is pink and has three large S-shaped curves along its length.",
+      "caption": "Paths X and Y represent two different routes to the summit of Mt. Kilimanjaro. Both have the same change in elevation (altitude or elevation on a mountain is a state function; it does not depend on path), but they have very different distances traveled (distance walked is not a state function; it depends on the path). (credit: modification of work by Paul Shaffner)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_05_03_Systemqw": {
+      "source": "media/CNX_Chem_05_03_Systemqw.jpg",
+      "sourceSha256": "449333663bbec84ddfb23777490adad337f3440438ad0caed07073077a4767bd",
+      "module": "m68727",
+      "kind": "photo",
+      "width": 650,
+      "height": 437,
+      "variants": [
+        {
+          "width": 650,
+          "height": 437,
+          "file": "CNX_Chem_05_03_Systemqw-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "",
+      "caption": "The internal energy, U , of a system can be changed by heat flow and work. If heat flows into the system, q in , or work is done on the system, w on , its internal energy increases, Δ U > 0. If heat flows out of the system, q out , or work is done by the system, w by , its internal energy decreases, Δ U < 0.",
+      "scale": "scaled-down"
+    },
     "CNX_Chem_14_03_FishLemon": {
       "source": "media/CNX_Chem_14_03_FishLemon.jpg",
       "sourceSha256": "9fe70f7dee5ca566696b82f94fedfec8565ba53869510e7b90ab66dcf31f6fd0",

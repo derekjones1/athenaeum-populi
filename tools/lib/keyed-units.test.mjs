@@ -8,11 +8,12 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
   KEYED_ONLY_BOOKS, answerText, glossaryAliases, keyedUnits, plain, printedNumerals, sequentialParts, sortedExercise, unitFor, unitScore, unlinked,
-  workedExampleUnits, workedExamples,
+  withoutCrossReference, workedExampleUnits, workedExamples,
 } from './keyed-units.mjs';
 import { parseXml } from './openstax-source.mjs';
 import { answerEquations, conditionalUnwrapped, judgeKeyedSortbins, judgeKeyedUnit, pageItems } from '../verify/verify-source-keys.mjs';
 import { coverage, sourceExercises } from '../verify/verify-source-coverage.mjs';
+import { shapeOf } from '../source/chemistry-shapes.mjs';
 
 const cnxml = (body) => `<?xml version="1.0"?><document xmlns="http://cnx.rice.edu/cnxml"><content>${body}</content></document>`;
 const exercise = (id, paragraphs, solution) => `<exercise id="${id}"><problem>${
@@ -1040,4 +1041,141 @@ test('a key a unit or two from the source’s print by its atomic masses is data
   assert.deepEqual([dataDifference(keyNumeral('0.3777'), glycine).numeral.printed, dataDifference(keyNumeral('0.3777'), glycine).units], ['0.3776', 1]);
   assert.equal(dataDifference(keyNumeral('0.3777'), printedNumerals('1 mole of nitrogen')), null, 'a count the key has no figure of');
   assert.equal(dataDifference(keyNumeral('1.2'), printedNumerals('1.4 g')), null, 'two units of a two-figure number is more than a tenth of a percent and a unit');
+});
+
+test('an example that ends with two Check Your Learning items is two keyed units, and both gates require both (5.2)', () => {
+  // Chemistry 2e 5.2, example fs-idp13199280, as the CNXML prints it: two
+  // Check Your Learning paragraphs, each followed by its Answer note. Until
+  // November 14, 2026 every reader took the first and lost the second.
+  const first = 'A 248-g piece of copper is dropped into 390 mL of water at 22.6 °C. The final temperature of the water was measured as 39.9 °C. Calculate the initial temperature of the piece of copper. Assume that all heat transfer occurs between the copper and the water.';
+  const second = 'A 248-g piece of copper initially at 314 °C is dropped into 390 mL of water initially at 22.6 °C. Assuming that all heat transfer occurs between the copper and the water, calculate the final temperature.';
+  const module = cnxml('<example id="fs-idp13199280"><para><title>T</title>Problem.</para><para><title>Solution</title>Worked.</para>'
+    + `<para><title>Check Your Learning</title>${first}</para><note><title>Answer:</title><para>The initial temperature of the copper was 335.6 °C.</para></note>`
+    + `<para><title>Check Your Learning</title>${second}</para><note><title>Answer:</title><para>The final temperature (reached by both copper and water) is 38.7 °C.</para></note></example>`);
+  const checks = keyedUnits(module);
+  assert.deepEqual(checks.map((entry) => entry.id), ['fs-idp13199280#check', 'fs-idp13199280#check2'], 'the first keeps its id; the second is #check2');
+  assert.match(checks[1].answer, /38\.7/);
+  const one = fillin(`${first} Enter the temperature in degrees Celsius.`, '335.6', 'sig-figs:4 last-digit:1');
+  const two = fillin(`${second} Enter the temperature in degrees Celsius.`, '38.7', 'sig-figs:3 last-digit:1');
+  assert.equal(judgeKeyedUnit(one, checks).exercise.id, 'fs-idp13199280#check');
+  assert.equal(judgeKeyedUnit(one, checks).status, 'confirmed');
+  assert.equal(judgeKeyedUnit(two, checks).exercise.id, 'fs-idp13199280#check2');
+  assert.equal(judgeKeyedUnit(two, checks).status, 'confirmed');
+  assert.equal(judgeKeyedUnit({ ...two, answer: '335.6', form: 'sig-figs:4 last-digit:1' }, checks).status, 'key-differs', 'the second keyed with the first\'s answer');
+  const page = (...items) => items.map((item) => `{{< fillin question="${item.question}" answer="${item.answer}" answerForm="${item.form}" hint="h" >}}\n`).join('\n');
+  const statuses = (markdown) => coverage(markdown, sourceExercises(module), { keyedOnly: true }).map((verdict) => `${verdict.id} ${verdict.status}`);
+  assert.deepEqual(statuses(page(one, two)), ['fs-idp13199280#check rendered', 'fs-idp13199280#check2 rendered']);
+  assert.deepEqual(statuses(page(one)), ['fs-idp13199280#check rendered', 'fs-idp13199280#check2 missing'], 'a page without the second is refused');
+});
+
+test('one part asked and answered in two units: each item is held to the number under the unit its closing names, and coverage requires both (5.1)', () => {
+  // Chemistry 2e 5.1, exercises fs-idm11773136 and fs-idm34686800, as the CNXML prints them.
+  const module = cnxml(exercises(
+    exercise('fs-idm11773136', ['Calculate the heat capacity, in joules and in calories per degree, of the following:', '(a) 45.8 g of nitrogen gas', '(b) 1.00 pound of aluminum metal'],
+      '(a) 47.6 J/°C; 11.38 cal °C<sup>−1</sup> (b) 407 J/°C; 97.3 cal °C<sup>−1</sup>'),
+    exercise('fs-idm34686800', ['How much heat, in joules and in calories, is required to heat a 28.4-g (1-oz) ice cube from −23.0 °C to −1.0 °C?'], '1310 J; 313 cal'),
+  ));
+  const parts = keyedUnits(module);
+  const ice = 'How much heat, in joules and in calories, is required to heat a 28.4-g (1-oz) ice cube from −23.0 °C to −1.0 °C?';
+  const judge = (question, answer, form = 'sig-figs:3 last-digit:1') => judgeKeyedUnit(fillin(question, answer, form), parts).status;
+  assert.equal(judge(`${ice} Enter the heat in joules.`, '1310'), 'confirmed');
+  assert.equal(judge(`${ice} Enter the heat in calories.`, '313'), 'confirmed');
+  assert.equal(judge(`${ice} Enter the heat in joules.`, '313'), 'key-differs', 'the calories under "in joules"');
+  assert.equal(judge(`${ice} Enter the heat in calories.`, '1310'), 'key-differs', 'the joules under "in calories"');
+  assert.equal(judge(ice, '1310'), 'key-differs', 'a closing that names neither unit');
+  const lead = 'Calculate the heat capacity, in joules and in calories per degree, of the following: 45.8 g of nitrogen gas.';
+  assert.equal(judge(`${lead} Enter the heat capacity in J/°C.`, '47.6'), 'confirmed');
+  assert.equal(judge(`${lead} Enter the heat capacity in cal/°C.`, '11.38', 'sig-figs:4 last-digit:1'), 'confirmed');
+  assert.equal(judge(`${lead} Enter the heat capacity in cal/°C.`, '47.6'), 'key-differs');
+  assert.equal(judge(`${lead} Enter the heat capacity in J/°C.`, '407'), 'key-differs', 'part (b)\'s joules under part (a)');
+  // One value written twice under a stem that asks it once is either number (10.3's "41,360 J/mol or 41.4 kJ/mol").
+  const once = keyedUnits(cnxml(exercises(exercise('x1', ['What is the enthalpy of vaporization of water?'], '41,360 J/mol or 41.4 kJ/mol'))));
+  assert.equal(judgeKeyedUnit(fillin('What is the enthalpy of vaporization of water? Enter it in kJ/mol.', '41.4', 'sig-figs:3 last-digit:1'), once).status, 'confirmed');
+  // Coverage: the part is rendered only when each unit has its item.
+  const item = (question, answer) => `{{< fillin question="${question}" answer="${answer}" answerForm="sig-figs:3 last-digit:1" hint="h" >}}\n`;
+  const status = (markdown, id) => coverage(markdown, sourceExercises(module), { keyedOnly: true }).find((verdict) => verdict.id === id);
+  const both = [item(`${ice} Enter the heat in joules.`, '1310'), item(`${ice} Enter the heat in calories.`, '313')].join('\n');
+  assert.equal(status(both, 'fs-idm34686800').status, 'rendered');
+  const one = status(item(`${ice} Enter the heat in joules.`, '1310'), 'fs-idm34686800');
+  assert.equal(one.status, 'missing');
+  assert.match(one.detail, /no item for it closes naming cal/);
+  assert.equal(status(item(ice, '1310'), 'fs-idm34686800').status, 'missing', 'one item naming no unit');
+  const capacity = [item(`${lead} Enter the heat capacity in J/°C.`, '47.6'), item(`${lead} Enter the heat capacity in cal/°C.`, '11.38')].join('\n');
+  assert.equal(status(capacity, 'fs-idm11773136(a)').status, 'rendered');
+  assert.equal(status(item(`${lead} Enter the heat capacity in J/°C.`, '47.6'), 'fs-idm11773136(a)').status, 'missing');
+});
+
+test('an answer that prints a thermochemical equation and its ΔH under a stem that asks a number is one fill-in (5.3)', () => {
+  const stem = 'Hydrogen gas, H₂, reacts explosively with gaseous chlorine, Cl₂, to form hydrogen chloride, HCl(g). What is the enthalpy change for the reaction of 1 mole of H₂(g) with 1 mole of Cl₂(g) if both the reactants and products are at standard state conditions? The standard enthalpy of formation of HCl(g) is −92.3 kJ/mol.';
+  const module = cnxml(example('fs-idp167759616', stem, 'For the reaction H<sub>2</sub>(<emphasis effect="italics">g</emphasis>) + Cl<sub>2</sub>(<emphasis effect="italics">g</emphasis>) ⟶ 2HCl(<emphasis effect="italics">g</emphasis>) ΔH° = −184.6 kJ'));
+  const checks = keyedUnits(module);
+  const page = `${stem.replace('H₂(g) with', '$\\\\ce{H2(g)}$ with')} Enter the enthalpy change in kilojoules.`;
+  assert.equal(judgeKeyedUnit(fillin(page, '-184.6', 'sig-figs:4 last-digit:0'), checks).status, 'confirmed');
+  assert.equal(judgeKeyedUnit(fillin(page, '-92.3', 'sig-figs:3 last-digit:0'), checks).status, 'key-differs', 'the stem\'s own −92.3 is not the key');
+  const markdown = `{{< fillin question="${page.replace(/\\/g, '\\\\')}" answer="-184.6" answerForm="sig-figs:4 last-digit:0" hint="h" >}}\n`;
+  assert.deepEqual(coverage(markdown, sourceExercises(module), { keyedOnly: true }).map((verdict) => verdict.status), ['rendered']);
+  // The shapes tool reads it as a number under this stem, and flags it as two items under one that asks the equation.
+  assert.deepEqual(shapeOf(checks[0].answer, stem).shape, 'number');
+  assert.match(shapeOf(checks[0].answer, stem).component, /fillin keyed -184\.6/);
+  assert.match(shapeOf(checks[0].answer, 'Write the thermochemical equation for the reaction.').flag, /a thermochemical equation and its ΔH/);
+});
+
+test('a Check Your Learning whose reactions are display equations reads them as its stem (5.3, Hess\'s law)', () => {
+  // Chemistry 2e 5.3, example fs-idp185548816's Check Your Learning: the
+  // three reactions are <equation>s between the paragraphs, and an unkeyed
+  // exercise (fs-idp149472576(a)) prints one of them. Read without them, the
+  // stem was "Calculate ΔH for the process: from the following information:"
+  // and the page's item was refused as that unkeyed exercise.
+  const eq = (id, text) => `<equation id="${id}" class="unnumbered">${text}</equation>`;
+  const module = cnxml(exercises(
+    exercise('fs-idp149472576', ['Using the data in Appendix G, calculate the standard enthalpy change for each of the following reactions:', '(a) N<sub>2</sub>(g) + O<sub>2</sub>(g) ⟶ 2NO(g)', '(b) Si(s) + 2Cl<sub>2</sub>(g) ⟶ SiCl<sub>4</sub>(g)']),
+  ) + '<example id="fs-idp185548816"><para><title>T</title>Problem.</para><para><title>Solution</title>Worked.</para>'
+    + '<para><title>Check Your Learning</title>Calculate ΔH for the process:</para>' + eq('e1', 'N<sub>2</sub>(g) + 2O<sub>2</sub>(g) ⟶ 2NO<sub>2</sub>(g)')
+    + '<para>from the following information:</para>' + eq('e2', 'N<sub>2</sub>(g) + O<sub>2</sub>(g) ⟶ 2NO(g) ΔH = 180.5 kJ') + eq('e3', 'NO(g) + 1/2O<sub>2</sub>(g) ⟶ NO<sub>2</sub>(g) ΔH = −57.06 kJ')
+    + '<note><title>Answer:</title><para>66.4 kJ</para></note></example>');
+  const units = keyedUnits(module);
+  assert.match(units.find((entry) => entry.id === 'fs-idp185548816#check').stem, /180\.5 kJ/);
+  const item = fillin('Calculate $\\Delta H$ for the process: $\\ce{N2(g) + 2O2(g) -> 2NO2(g)}$ from the following information: $\\ce{N2(g) + O2(g) -> 2NO(g)}$ $\\Delta H$ = 180.5 kJ; $\\ce{NO(g) + 1/2O2(g) -> NO2(g)}$ $\\Delta H$ = −57.06 kJ. Enter the enthalpy change in kilojoules.', '66.4', 'sig-figs:3 last-digit:0');
+  const verdict = judgeKeyedUnit(item, units);
+  assert.equal(verdict.exercise.id, 'fs-idp185548816#check');
+  assert.equal(verdict.status, 'confirmed');
+  assert.equal(judgeKeyedUnit({ ...item, answer: '180.5', form: 'sig-figs:4 last-digit:0' }, units).status, 'key-differs', 'a ΔH the stem gives is not the key');
+});
+
+test('a stem that names another section\'s example or exercise and restates its data is read as its own exercise (5.3, printed 39, 41, 43)', () => {
+  // Chemistry 2e 5.3's three exercises as the CNXML prints them (their links
+  // to 5.2's examples and exercise carry no text), and the three stems as
+  // content/…/05-thermochemistry/03-enthalpy.md carries them under chapter 5's
+  // run-facts decision 6: the reference named and linked, the given data
+  // restated in "(In that example, …)", an "Enter …" sentence. Until November
+  // 14, 2026 the added words left each under the match floor, and its key was
+  // never compared.
+  const link = (target) => `<link target-id="${target}" document="m68726"/>`;
+  const module = cnxml(exercises(
+    exercise('fs-idp167492016', [`Explain how the heat measured in ${link('fs-idm7765')} differs from the enthalpy change for the exothermic reaction described by the following equation:`, 'HCl(<emphasis effect="italics">aq</emphasis>) + NaOH(<emphasis effect="italics">aq</emphasis>) ⟶ NaCl(<emphasis effect="italics">aq</emphasis>) + H<sub>2</sub>O(<emphasis effect="italics">l</emphasis>)'],
+      'The enthalpy change of the indicated reaction is for exactly 1 mol HCL and 1 mol NaOH; the heat in the example is produced by 0.0500 mol HCl and 0.0500 mol NaOH.'),
+    exercise('fs-idp146867872', [`Calculate the enthalpy of solution (Δ<emphasis effect="italics">H</emphasis> for the dissolution) per mole of NH<sub>4</sub>NO<sub>3</sub> under the conditions described in ${link('fs-idp325184')}.`], '25 kJ mol<sup>−1</sup>'),
+    exercise('fs-idp107667280', [`Calculate the enthalpy of solution (Δ<emphasis effect="italics">H</emphasis> for the dissolution) per mole of CaCl<sub>2</sub> (refer to ${link('fs-idm68277040')}).`], '81 kJ mol<sup>−1</sup>'),
+  ));
+  const units = keyedUnits(module);
+  const ice = 'Calculate the enthalpy of solution ($\\Delta H$ for the dissolution) per mole of NH₄NO₃ under the conditions described in the example “Heat Flow in an Instant Ice Pack” in [Section 5.2](../02-calorimetry/). (In that example, 3.21 g of solid NH₄NO₃ dissolves in 50.0 g of water at 24.9 °C in a calorimeter, the temperature decreases to 20.3 °C, and the specific heat of the solution is taken to be that of water, 4.184 J/g °C.) Enter the enthalpy of solution in kJ/mol.';
+  const chloride = 'Calculate the enthalpy of solution ($\\Delta H$ for the dissolution) per mole of CaCl₂ (refer to the calcium chloride calorimetry exercise in [Section 5.2](../02-calorimetry/)). (In that exercise, 3.0 g of CaCl₂(*s*) dissolves in 150.0 g of water in a calorimeter at 22.4 °C, the temperature rises to 25.8 °C, and the specific heat of the resulting solution is 4.18 J/g °C.) Enter the enthalpy of solution in kJ/mol.';
+  const heat = 'Explain how the heat measured in the example “Heat Produced by an Exothermic Reaction” in [Section 5.2](../02-calorimetry/) differs from the enthalpy change for the exothermic reaction described by the following equation: $\\ce{HCl(aq) + NaOH(aq) -> NaCl(aq) + H2O(l)}$. (In that example, 50.0 mL of 1.00 *M* HCl(*aq*) and 50.0 mL of 1.00 *M* NaOH(*aq*), both at 22.0 °C, are added to a coffee cup calorimeter, and the temperature of the mixture reaches a maximum of 28.9 °C.)';
+  const judged = (question, answer) => judgeKeyedUnit(fillin(question, answer, 'sig-figs:2 last-digit:0'), units);
+  assert.equal(judged(ice, '25').exercise.id, 'fs-idp146867872');
+  assert.equal(judged(ice, '25').status, 'confirmed');
+  assert.equal(judged(ice, '81').status, 'key-differs', 'its sibling\'s key is refused: the key is now compared');
+  assert.equal(judged(chloride, '81').exercise.id, 'fs-idp107667280');
+  assert.equal(judged(chloride, '81').status, 'confirmed');
+  assert.equal(judged(chloride, '25').status, 'key-differs');
+  const explain = judgeKeyedUnit({ type: 'selfcheck', question: heat, model: 'The enthalpy change of the indicated reaction is for exactly 1 mol HCL and 1 mol NaOH; the heat in the example is produced by 0.0500 mol HCl and 0.0500 mol NaOH.' }, units);
+  assert.equal(explain.exercise.id, 'fs-idp167492016');
+  assert.equal(explain.status, 'verbatim');
+  // Read so only where the question names another section's example or exercise.
+  assert.equal(withoutCrossReference('Calculate the enthalpy of solution. Enter it in kJ/mol.'), null);
+  // Coverage: each its own item.
+  const page = [ice, chloride].map((question, at) => `{{< fillin question="${question.replace(/\\/g, '\\\\')}" answer="${['25', '81'][at]}" answerForm="sig-figs:2 last-digit:0" hint="h" >}}\n`).join('\n')
+    + `\n{{< selfcheck question="${heat.replace(/\\/g, '\\\\')}" hint="h" >}}\nModel.\n{{< /selfcheck >}}\n`;
+  const verdicts = coverage(page, sourceExercises(module), { keyedOnly: true });
+  assert.deepEqual(verdicts.map((verdict) => `${verdict.id} ${verdict.status} ${verdict.line}`), ['fs-idp167492016 rendered 5', 'fs-idp146867872 rendered 1', 'fs-idp107667280 rendered 3']);
 });

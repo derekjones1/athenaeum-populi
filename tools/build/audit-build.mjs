@@ -635,7 +635,7 @@ function ungluedMath(content) {
   const open = /<span class="?katex"?>/g;
   let found;
   while ((found = open.exec(content))) {
-    let lead = content.slice(Math.max(0, found.index - 80), found.index);
+    let lead = content.slice(Math.max(0, found.index - 160), found.index);
     const tag = /<span\b|<\/span>/g;
     tag.lastIndex = found.index;
     let depth = 0;
@@ -654,6 +654,8 @@ function ungluedMath(content) {
       after = after.slice('</span>'.length);
       lead = lead.replace(/<span class="?ap-math-keep"?>$/, '');
     }
+    // A label typed before the formula sits in the glue span ahead of it.
+    lead = lead.replace(/<span class="?ap-math-label"?>[^<]*<\/span>$/, '');
     if (PUNCTUATION_AFTER_MATH.test(after) && !/<span class="?ap-math-glue"?>$/.test(lead)) {
       return content.slice(Math.max(0, found.index - 40), found.index).replace(/<[^>]*>/g, '').trim().slice(-30) + ' [formula]' + after.slice(0, 1);
     }

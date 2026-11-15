@@ -450,7 +450,7 @@ test('the chemistry subject playbook states the rules its engine enforces', asyn
   // grader, the lock — rather than restated.
   const chem = read('docs/subjects/chemistry.md');
   const { lintLeaks } = await import('../lint/lints-leaks.mjs');
-  const { checkAnswer, describeFormFeedback, describeIncorrectFeedback, NEAR_MISS_FEEDBACK, NEAR_MISS_TABLE_SENTENCE, measuredKeyProblem, parseAnswerForm: parseForm } = await import('../../assets/js/lib/math/check-answer.mjs');
+  const { checkAnswer, describeFormFeedback, describeIncorrectFeedback, NEAR_MISS_FEEDBACK, NEAR_MISS_TABLE_SENTENCE, WRONG_SIGN_FEEDBACK, THOUSAND_FEEDBACK, measuredKeyProblem, parseAnswerForm: parseForm } = await import('../../assets/js/lib/math/check-answer.mjs');
   const { DATA_REGISTER, DATA_SOURCE_NOTE } = await import('../verify/verify-source-keys.mjs');
   const page = 'content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/03-molarity.md';
 
@@ -498,6 +498,13 @@ test('the chemistry subject playbook states the rules its engine enforces', asyn
   for (const typed of ['0.6', '0.774']) assert.equal(describeIncorrectFeedback(typed, form, '0.674'), '', typed);
   assert.ok(chem.replace(/\s+/g, ' ').includes(NEAR_MISS_FEEDBACK + NEAR_MISS_TABLE_SENTENCE), 'the playbook quotes the near-miss sentence whole, the table sentence with it');
   for (const typed of ['8', '8.0']) assert.equal(checkAnswer(typed, '8.00', { form }), 'form', `${typed} against 8.00`);
+  // A wrong sign and a factor of a thousand (November 14, 2026, chapter 5): the rows are the grader's, quoted whole.
+  for (const [typed, key, sentence] of [['802', '-802', WRONG_SIGN_FEEDBACK], ['-265', '265', WRONG_SIGN_FEEDBACK],
+    ['1.31', '1310', THOUSAND_FEEDBACK], ['1310', '1.31', THOUSAND_FEEDBACK], ['0.802', '-802', THOUSAND_FEEDBACK]]) {
+    assert.equal(checkAnswer(typed, key, { form }), 'incorrect', `${typed} against ${key}`);
+    assert.equal(describeIncorrectFeedback(typed, form, key), sentence, `${typed} against ${key}`);
+    assert.ok(chem.replace(/\s+/g, ' ').includes(sentence), `the playbook quotes "${sentence}"`);
+  }
   for (const [typed, key] of [['0.7', '0.674'], ['90', '89.4']]) assert.equal(checkAnswer(typed, key, { form }), 'incorrect', `${typed} against ${key}`);
   assert.match(chem, /Both\s+tokens\s+are\s+always\s+declared\s+together/);
   // One data set, one right answer (November 12–13, 2026): the playbook's
@@ -544,6 +551,8 @@ test('the chemistry subject playbook states the rules its engine enforces', asyn
   const H2O_NA = '2Na(s) + 2H₂O(l) ⟶ 2NaOH(aq) + H₂(g)';
   const OXYGEN = '2H₂O(l) ⟶ O₂(g) + 4H⁺(aq) + 4e⁻';
   const AMMINE = 'AgCl(s) + 2NH₃(aq) ⟶ [Ag(NH₃)₂]⁺(aq) + Cl⁻(aq)';
+  const ETHER = '4C(s, graphite) + 5H₂(g) + ½O₂(g) ⟶ C₂H₅OC₂H₅(l)';
+  const SODA = '2Na(s) + C(s, graphite) + 3⁄2O₂(g) ⟶ Na₂CO₃(s)';
   const cases = [
     { shown: 'Mn3(PO4)2', key: 'Mn₃(PO₄)₂', form: 'formula', status: 'correct' },
     { shown: 'Mn_3(PO_4)_2', key: 'Mn₃(PO₄)₂', form: 'formula', status: 'correct' },
@@ -587,6 +596,15 @@ test('the chemistry subject playbook states the rules its engine enforces', asyn
     { shown: 'Ag(NH3)2+', typed: 'AgCl + 2NH3 -> Ag(NH3)2+ + Cl-', key: AMMINE, form: 'equation', status: 'correct' },
     { shown: '[Ag(NH3)2]+', typed: 'AgCl + 2NH3 -> [Ag(NH3)2]+ + Cl-', key: AMMINE, form: 'equation', status: 'correct' },
     { shown: 'Ag(NH3)2+', key: '[Ag(NH₃)₂]⁺', form: 'formula', status: 'form', aside: true },
+    // Chapter 5: a fractional coefficient, the doubled equation, and (s, graphite) (November 14, 2026).
+    { shown: '4C + 5H2 + 1/2O2 -> C2H5OC2H5', key: ETHER, form: 'equation', status: 'correct' },
+    { shown: '4C + 5H2 + 0.5O2 -> C2H5OC2H5', key: ETHER, form: 'equation', status: 'correct' },
+    { shown: '2Na + C + 3/2O2 -> Na2CO3', key: SODA, form: 'equation', status: 'correct' },
+    { shown: '2Na + C + 1.5O2 -> Na2CO3', key: SODA, form: 'equation', status: 'correct' },
+    { shown: '8C + 10H2 + O2 -> 2C2H5OC2H5', key: ETHER, form: 'equation', status: 'form' },
+    { shown: '4Na + 2C + 3O2 -> 2Na2CO3', key: SODA, form: 'equation', status: 'form' },
+    { shown: '2Na(s) + C(s) + 3/2O2(g) -> Na2CO3(s)', key: SODA, form: 'equation', status: 'correct' },
+    { shown: '2Na(s) + C(s, diamond) + 3/2O2(g) -> Na2CO3(s)', key: SODA, form: 'equation', status: 'form' },
   ];
   // The table, row by row: the backticked responses of its Typed cell (not
   // "for `NaCl`", which names a key, nor `=` or `→`, which name an arrow).
@@ -1281,7 +1299,13 @@ test('the docs layouts are the theme\'s, with the content passed through glue-ma
   for (const [name, text] of [['render-passthrough.html', hook], ['mathtext.html', mathtext]]) {
     assert.match(text, /`<\/span><span class="base">` `<\/span><wbr><span class="base">`/, `${name} marks the breaks between a formula's pieces`);
   }
-  assert.match(mathtext, /<span class="ap-math-glue">%s%s<\/span>/, 'mathtext glues in place: its output also reaches the rail and the sidebar');
+  assert.match(mathtext, /<span class="ap-math-glue">%s%s%s<\/span>/, 'mathtext glues in place: its output also reaches the rail and the sidebar');
+  // A label before the formula and a value after it are one pattern in both partials.
+  for (const [name, text] of [['glue-math.html', partial], ['mathtext.html', mathtext]]) {
+    assert.match(text, /partialCached "math-glue-patterns\.html" "math-glue"/, `${name} reads the label and value patterns from the one partial`);
+    assert.match(text, /\$re\.label/, `${name} glues a label`);
+    assert.match(text, /\$re\.value/, `${name} glues a value`);
+  }
   const css = read('assets/css/custom.css');
   assert.match(css, /\.katex wbr \{\s*display: none;/);
   assert.match(css, /\.ap-math-glue \{\s*white-space: nowrap;/);

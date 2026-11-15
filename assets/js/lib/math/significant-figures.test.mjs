@@ -147,7 +147,7 @@ test('compareMeasured grades value and figures together', async (t) => {
     ['10.00', '9.99', 3, 1, 'correct'],                // four figures, the same hundredths
     // sign, scientific notation, zero
     ['-494', '-494', 3, 1, 'correct'],
-    ['494', '-494', 3, 1, 'incorrect'],
+    ['494', '-494', 3, 1, 'incorrect', 'sign'],                 // right but for its sign (chapter 5)
     ['-493', '-494', 3, 1, 'correct'],
     ['4.586\\times10^{22}', '4.585\\times10^{22}', 4, 1, 'correct'],
     ['4.585\\times10^{21}', '4.585\\times10^{22}', 4, 1, 'incorrect'],

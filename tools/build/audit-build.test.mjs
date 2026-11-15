@@ -144,6 +144,9 @@ test('build audit: content images, duplicated chrome, and missing no-JavaScript 
       [`<p>The measure ${K} is next, and ${K} (too).</p>`, 'no punctuation straight after the formula'],
       [`<p>Then</p><span class=katex-display>${K}</span>.`, 'a display block is not inline math'],
       [`<p>About <span class=ap-math-keep>${K}</span> grams.</p>`, 'a kept number with a word after it'],
+      [`<p>Then <span class=ap-math-glue><span class=ap-math-label>(ii) </span>${K};</span> next.</p>`, 'glued behind a label'],
+      [`<p>So <span class=ap-math-glue>${K} = 180.5 kJ;</span> next.</p>`, 'glued with its value'],
+      [`<p>Then <span class=ap-math-glue><span class=ap-math-label>(b) </span><span class=ap-math-keep>${K}</span>.</span></p>`, 'a label and a scientific-notation span, past an 80-character look-back'],
     ]) {
       prepare(html);
       assert.doesNotMatch(audit().stderr, /outside its \.ap-math-glue/, why);

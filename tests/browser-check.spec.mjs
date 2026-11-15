@@ -905,6 +905,40 @@ test('an equation field says a state symbol is optional, and says so again when 
     .toBe('correct');
 });
 
+// A formation equation is written for one mole of its product, with a
+// fractional coefficient (Chemistry 2e 5.3; docs/subjects/chemistry.md
+// "Formulas and equations"). The grader is unit-tested; what only a browser
+// shows is the field: the keys a learner types for ½ and 3⁄2 (1/2, 1.5), the
+// "Read as" line printing the fraction as the key does, and the doubled
+// whole-number equation told why a fraction is asked. No page carries such a
+// key before chapter 5, so the item is added to 4.2's page at run time, as
+// the shortcode renders one; chapter 5's run moves this test to its own item.
+test('an equation field reads a fractional coefficient typed as 1/2 or a decimal, and prints it as the key does', async ({ page }) => {
+  // The real item: Section 5.3's Check Your Learning that asks the formation
+  // equation of sodium carbonate, keyed with 3⁄2 O₂.
+  await gotoBuiltPage(page, '/physical-sciences/chemistry/05-thermochemistry/03-enthalpy/');
+  const card = page.locator('text-in', { hasText: 'Na₂CO₃(s). Type a fraction as 1/2.' });
+  await expect(card).toHaveCount(1);
+  expect(await card.getAttribute('data-answer')).toBe('2Na(s) + C(s, graphite) + 3⁄2O₂(g) ⟶ Na₂CO₃(s)');
+  await waitForUpgrade(card, (el) => Boolean(customElements.get('text-in')) && Boolean(el.querySelector('.ap-textin-guide')));
+  await card.scrollIntoViewIfNeeded();
+  const field = card.locator('.ap-textin-field');
+  const status = () => expect.poll(async () => card.evaluate((el) => el.status), { timeout: 5000 });
+
+  await field.fill('4Na + 2C + 3O2 -> 2Na2CO3');
+  await field.press('Enter');
+  await status().toBe('form');
+  await expect(card.locator('.ap-textin-feedback')).toHaveText('That balances, but the question asks for the equation written for one mole, so a coefficient may be a fraction. Type a fraction as 1/2.');
+
+  await field.fill('2Na + C(s, graphite) + 1.5O2 -> Na2CO3');
+  await expect(card.locator('.ap-textin-reading')).toHaveText('Read as: 2Na + C(s, graphite) + 3⁄2O₂ ⟶ Na₂CO₃');
+
+  await field.fill('2Na + C + 3/2O2 -> Na2CO3');
+  await expect(card.locator('.ap-textin-reading')).toHaveText('Read as: 2Na + C + 3⁄2O₂ ⟶ Na₂CO₃');
+  await field.press('Enter');
+  await status().toBe('correct');
+});
+
 test('the shared hint toggle discloses a fill-in hint and a self-check hint the same way', async ({ page }) => {
   // One implementation (assets/js/lib/shared/hint-toggle.mjs) mounts every
   // component's "Show hint": the button names the hint it controls, flips
@@ -2464,17 +2498,15 @@ test('a figure shown smaller than its file can be enlarged in place: fit, the fi
 // matter; layouts/_partials/utils/reference-lookups.html) now opens over the
 // page, with a field that filters its rows (assets/js/reference-lookup.js).
 //
-// No exercise links a table appendix before chapter 5 (4.2 links Appendix H
-// once, in a Source note), so this test ADDS the
-// link to a real section page at run time; everything else — the list of
-// lookup pages the page carries, the script, the appendix it fetches — is
-// the shipped site. Chapter 5's run replaces the added link with the first
-// exercise that links Appendix G.
+// The link is a real one: the first exercise of Section 5.3 whose stem
+// links Appendix G (the silicon tetrafluoride formation enthalpy sum). The
+// short table and the unreachable page further down are links this test
+// adds, since no exercise links those appendices yet.
 test('a table appendix opens over the page: its rows filter as typed, the heading row stays, and a typed answer survives', async ({ page }) => {
   const appendix = '/physical-sciences/chemistry/appendices/g-standard-thermodynamic-properties-for-selected-substances/';
   const title = 'Appendix G: Standard Thermodynamic Properties for Selected Substances';
   await page.setViewportSize({ width: 1280, height: 900 });
-  await gotoBuiltPage(page, '/physical-sciences/chemistry/02-atoms-molecules-and-ions/06-ionic-and-molecular-compounds/');
+  await gotoBuiltPage(page, '/physical-sciences/chemistry/05-thermochemistry/03-enthalpy/');
   const route = new URL(page.url()).pathname;
 
   // The page names the appendices that open in place: the table appendices,
@@ -2496,8 +2528,8 @@ test('a table appendix opens over the page: its rows filter as typed, the headin
     link.textContent = 'Appendix G';
     document.querySelector('main .content p').append(' ', link);
   }, [href, id]);
-  await addLink(appendix, 'lookup-link');
-  const link = page.locator('#lookup-link');
+  const link = page.locator(`fill-in:has-text("SiF") a[href="${appendix}"]`).first();
+  await expect(link, 'the exercise that sums SiF₄’s formation enthalpy links Appendix G').toHaveCount(1);
   await link.scrollIntoViewIfNeeded();
   await link.click();
 
@@ -3088,8 +3120,12 @@ test('punctuation typed after an inline formula stays on the formula\'s line', a
           if (glue.closest('[class$="-question"]')) out.inStems += 1;
           if (math.getClientRects().length > 1) out.wrapped += 1;
           if (glue.classList.contains('ap-katex-wide')) out.wideWithPunctuation += 1;
+          // A label before the formula, "(ii) ", or a value after it, " = 180.5 kJ",
+          // also holds the formula in a glue span (the next test measures those).
           const tail = glue.lastChild;
-          if (!tail || tail.nodeType !== Node.TEXT_NODE || !PUNCTUATION.test(tail.textContent)) {
+          const VALUE = /^ ?= ?/;
+          if (tail && tail.nodeType !== Node.TEXT_NODE && glue.querySelector(':scope > .ap-math-label')) continue;
+          if (!tail || tail.nodeType !== Node.TEXT_NODE || !(PUNCTUATION.test(tail.textContent) || VALUE.test(tail.textContent))) {
             out.unglued.push(`${name(math)} (a glue span that does not end in its punctuation)`);
             continue;
           }
@@ -3126,6 +3162,98 @@ test('punctuation typed after an inline formula stays on the formula\'s line', a
   expect(totals.wrapped, 'on a phone a glued formula still wraps between its pieces').toBeGreaterThanOrEqual(10);
   // …and a stem formula too wide for its card scrolls together with its question mark.
   expect(totals.wideWithPunctuation, 'on a phone a wide stem formula scrolls with its punctuation').toBeGreaterThanOrEqual(3);
+});
+
+// A Hess's-law stem gives each reaction as "(ii) $\ce{…}$ $\Delta H$ =
+// −74.8 kJ;" (the Chemistry playbook's "Stems" form), and the rendered-page
+// reading of Chemistry 5.3 saw "(ii)" end a line with its reaction on the
+// next, and "ΔH" end a line with "= 180.5 kJ" on the next. The templates take
+// a label typed straight before an inline formula and a " = value unit" run
+// typed straight after it into the formula's `.ap-math-glue` span
+// (layouts/_partials/math-glue-patterns.html). Measured on the real 5.3
+// stems from the text alone, so a build that drops the glue fails here: each
+// label shares a line with the start of its reaction, each "=" with the end
+// of its symbol; a label holds only the first span of a reaction split after
+// its arrow, and the page does not scroll sideways (a long formula inside a
+// glue span keeps its own breaks: the test above measures that).
+test('a stem label and a "= value unit" run stay on the line of their formula', async ({ page }) => {
+  const route = '/physical-sciences/chemistry/05-thermochemistry/03-enthalpy/';
+  const widths = [1280, 1024, 900, 768, 640, 520, 390];
+  test.setTimeout(30_000 + widths.length * 8_000);
+  for (const width of widths) {
+    await page.setViewportSize({ width, height: 900 });
+    await gotoBuiltPage(page, route);
+    await page.evaluate(() => document.fonts.ready);
+    await page.evaluate(() => new Promise((done) => requestAnimationFrame(() => requestAnimationFrame(done))));
+    const audit = await page.evaluate(() => {
+      const LABEL = /\((?:[ivx]{1,4}|[a-z])\)\s*$/;
+      const VALUE = /^\s?=\s?(?:\?|[−+-]?\d)/;
+      const isMath = (node) => node?.nodeType === Node.ELEMENT_NODE && (node.matches('.katex, .ap-math-keep') || node.matches('.ap-math-glue'));
+      const formulaOf = (node) => (node.matches('.katex') ? node : node.querySelector('.katex'));
+      // The node after (or before) `node` in reading order, past empty text and up out of spans.
+      const step = (node, forward) => {
+        for (let at = node; at && !at.matches?.('[class$="-question"]'); at = at.parentNode) {
+          let next = forward ? at.nextSibling : at.previousSibling;
+          while (next && next.nodeType === Node.TEXT_NODE && next.textContent === '') next = forward ? next.nextSibling : next.previousSibling;
+          if (next) return next;
+        }
+        return null;
+      };
+      const charRect = (text, index) => {
+        const range = document.createRange();
+        range.setStart(text, index);
+        range.setEnd(text, index + 1);
+        return range.getBoundingClientRect();
+      };
+      const sameLine = (a, b) => Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top) > 4;
+      const out = { labels: [], values: [], parted: [] };
+      for (const question of document.querySelectorAll('.content [class$="-question"]')) {
+        if (!question.getClientRects().length) continue;
+        const walker = document.createTreeWalker(question, NodeFilter.SHOW_TEXT, {
+          acceptNode: (node) => (node.parentElement.closest('.katex') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT),
+        });
+        for (let text = walker.nextNode(); text; text = walker.nextNode()) {
+          const words = text.textContent;
+          const label = LABEL.exec(words);
+          const after = step(text, true);
+          if (label && isMath(after)) {
+            const math = formulaOf(after);
+            const name = `${label[0].trim()} ${math.querySelector('annotation')?.textContent.slice(0, 30)}`;
+            out.labels.push(name);
+            const close = words.lastIndexOf(')');
+            if (!sameLine(charRect(text, close), math.getClientRects()[0])) out.parted.push(`label ${name}`);
+            // The glue holds this one formula: the space before the next (the second
+            // span of a reaction split after its arrow) is still a break.
+            const glue = math.closest('.ap-math-glue');
+            if (glue && glue.querySelectorAll('.katex:not(.katex .katex)').length !== 1) out.parted.push(`label ${name} (its glue holds more than its own formula)`);
+          }
+          const value = VALUE.exec(words);
+          const before = step(text, false);
+          if (value && isMath(before)) {
+            const math = formulaOf(before);
+            const rects = math.getClientRects();
+            const name = `${math.querySelector('annotation')?.textContent.slice(0, 30)} ${words.trim().slice(0, 16)}`;
+            out.values.push(name);
+            const equals = words.indexOf('=');
+            const unitEnd = words.search(/[;.,]|\s[A-Z]|$/) - 1;
+            if (!sameLine(charRect(text, equals), rects[rects.length - 1])) out.parted.push(`value ${name}`);
+            else if (unitEnd > equals && !sameLine(charRect(text, equals), charRect(text, unitEnd))) out.parted.push(`unit ${name}`);
+          }
+        }
+      }
+      out.sideways = document.documentElement.scrollWidth - window.innerWidth;
+      return out;
+    });
+    // The aluminum chloride stem's five labels, and the seven symbols with a value in the two Hess's stems.
+    for (const label of ['(i)', '(ii)', '(iii)', '(iv)', '(v)']) {
+      expect(audit.labels.some((name) => name.startsWith(`${label} \\ce`)), `at ${width} px: the label ${label} before a reaction was measured`).toBe(true);
+    }
+    for (const value of ['= 180.5 kJ', '= −57.06 kJ', '= −74.8 kJ', '= −185 kJ', '= +323 kJ/mol', '= −1049 kJ', '= ?']) {
+      expect(audit.values.some((name) => name.includes(value)), `at ${width} px: "${value}" after its symbol was measured`).toBe(true);
+    }
+    expect(audit.parted, `${route} at ${width} px: a label, a value, or a unit is on another line than its formula`).toEqual([]);
+    expect(audit.sideways, `${route} at ${width} px: the page scrolls sideways`).toBeLessThanOrEqual(0);
+  }
 });
 
 // The typing guide under an equation field once wrapped inside its arrow,

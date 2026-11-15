@@ -15,7 +15,7 @@ import assert from 'node:assert/strict';
 import {
   ce, foldPrimes,
   ANSWER_FORM_TOKENS, bracketsAsParentheses, checkAnswer, checkFormAsGraded, describeAnswerForm,
-  describeFormFeedback, describeIncorrectFeedback, NEAR_MISS_FEEDBACK, NEAR_MISS_TABLE_SENTENCE, measuredKeyProblem, parseAnswerForm,
+  describeFormFeedback, describeIncorrectFeedback, NEAR_MISS_FEEDBACK, NEAR_MISS_TABLE_SENTENCE, WRONG_SIGN_FEEDBACK, THOUSAND_FEEDBACK, measuredKeyProblem, parseAnswerForm,
   preprocess,
 } from './check-answer.mjs';
 
@@ -4846,6 +4846,49 @@ test('a measured quantity a unit outside its allowance is still incorrect, and i
   }
   assert.equal(describeIncorrectFeedback('34.9', 'sig-figs:3 last-digit:0'), '', 'no key, nothing to say');
   assert.doesNotMatch(NEAR_MISS_FEEDBACK + NEAR_MISS_TABLE_SENTENCE, /\d|higher|lower|too (high|low|large|small)/, 'names no size and no direction');
+});
+test('a measured quantity right but for its sign, or a thousand times off, stays incorrect and is told which (Chemistry 2e chapter 5)', () => {
+  // [typed, key, form, said]: every row is 'incorrect'; `said` is the
+  // fill-in's sentence for it ('' = a bare "Not quite").
+  const NEAR_TABLE = NEAR_MISS_FEEDBACK + NEAR_MISS_TABLE_SENTENCE;
+  const rows = [
+    // a wrong sign: an enthalpy change of the wrong direction (5.3)
+    ['802', '-802', 'sig-figs:3 last-digit:1', WRONG_SIGN_FEEDBACK],
+    ['803', '-802', 'sig-figs:3 last-digit:1', WRONG_SIGN_FEEDBACK],                    // inside the allowance, wrong sign
+    ['802.4', '-802', 'sig-figs:3 last-digit:1', WRONG_SIGN_FEEDBACK],                  // the readout of a right value, wrong sign
+    ['-265', '265', 'sig-figs:3 last-digit:0', WRONG_SIGN_FEEDBACK],
+    ['-1.4\\times10^{2}', '1.4\\times10^{2}', 'sig-figs:2 last-digit:0', WRONG_SIGN_FEEDBACK],
+    ['805', '-802', 'sig-figs:3 last-digit:1', ''],                                     // the size is not right either
+    ['-805', '-802', 'sig-figs:3 last-digit:1', NEAR_TABLE],                            // the near miss is unchanged
+    ['804', '-802', 'sig-figs:3 last-digit:1', ''],                                     // a near miss of the other sign is no sign message
+    // a factor of a thousand: J where kJ is asked, and the reverse (5.1)
+    ['1.31', '1310', 'sig-figs:3 last-digit:1', THOUSAND_FEEDBACK],
+    ['1.31\\ \\text{kJ}', '1310', 'sig-figs:3 last-digit:1', THOUSAND_FEEDBACK],          // its unit typed too
+    ['1310', '1.31', 'sig-figs:3 last-digit:1', THOUSAND_FEEDBACK],
+    ['1.31\\times10^{6}', '1.31\\times10^{3}', 'sig-figs:3 last-digit:1', THOUSAND_FEEDBACK],
+    ['0.0313', '31.3', 'sig-figs:3 last-digit:0', THOUSAND_FEEDBACK],
+    ['1.312', '1310', 'sig-figs:3 last-digit:1', THOUSAND_FEEDBACK],                    // an unrounded readout, a thousand off
+    ['131', '1310', 'sig-figs:3 last-digit:1', ''],                                     // 10¹ is no unit's step
+    ['13.1', '1310', 'sig-figs:3 last-digit:1', ''],                                    // 10²
+    ['1.31\\times10^{9}', '1310', 'sig-figs:3 last-digit:1', ''],                       // 10⁶
+    ['1.35', '1310', 'sig-figs:3 last-digit:1', ''],                                    // merely near a thousandth
+    ['1.3', '1310', 'sig-figs:3 last-digit:1', ''],                                     // digits short: not "the digits are right"
+    // both at once: the thousand sentence, every word of which is true
+    ['0.802', '-802', 'sig-figs:3 last-digit:1', THOUSAND_FEEDBACK],
+    ['-1.31', '1310', 'sig-figs:3 last-digit:1', THOUSAND_FEEDBACK],
+  ];
+  for (const [typed, key, form, said] of rows) {
+    assert.equal(checkAnswer(typed, key, { form }), 'incorrect', `${typed} against ${key}`);
+    assert.equal(describeIncorrectFeedback(typed, form, key), said, `${typed} against ${key}`);
+  }
+  // Right answers are untouched.
+  assert.equal(checkAnswer('-802', '-802', { form: 'sig-figs:3 last-digit:1' }), 'correct');
+  assert.equal(checkAnswer('-801', '-802', { form: 'sig-figs:3 last-digit:1' }), 'correct');
+  // Not a measured quantity: nothing said.
+  assert.equal(describeIncorrectFeedback('802', 'decimal', '-802'), '');
+  for (const sentence of [WRONG_SIGN_FEEDBACK, THOUSAND_FEEDBACK]) {
+    assert.doesNotMatch(sentence, /\d|heat|enthalpy|joule|kJ|\bJ\b/, 'names no quantity, no unit, and no number');
+  }
 });
 test('sig-figs changes nothing where it is not declared, or where the key is no single numeral', () => {
   // The same responses under `decimal`: the 1e-9 comparison, and the

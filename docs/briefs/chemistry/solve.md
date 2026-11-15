@@ -73,7 +73,10 @@ those places.
   When the packet's `answerForm` is `formula` or `equation`, type it as a
   learner would on a plain keyboard, capitals exact: `Ca3(PO4)2`, `SO4^2-`,
   `Na2CO3.10H2O`, `2H2 + O2 -> 2H2O` (state symbols optional, a charge
-  after `^`, smallest whole-number coefficients). Check an equation's atoms
+  after `^`, smallest whole-number coefficients). The exception: an
+  equation the question asks for one mole of a substance (a formation
+  equation) takes the fractions that puts on the others, typed `1/2` or
+  `3/2` (`H2 + 1/2O2 -> H2O`). Check an equation's atoms
   and charge on both sides before you write it down.
 - **A `sortbins`:** the packet lists its `bins` and its `items` (the labels);
   the masked page prints neither. `answer` is a JSON object mapping EVERY

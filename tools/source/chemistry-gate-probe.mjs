@@ -23,7 +23,7 @@
 import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { keyedUnits } from '../lib/keyed-units.mjs';
+import { answerUnits, keyedUnits, twoUnitAnswer } from '../lib/keyed-units.mjs';
 import { ELEMENT_BY_NAME, answerEquations, judgeKeyedUnit, labelledFormulas } from '../verify/verify-source-keys.mjs';
 import { coverage, sourceExercises } from '../verify/verify-source-coverage.mjs';
 import { chapters, shapeOf } from './chemistry-shapes.mjs';
@@ -69,11 +69,23 @@ export function itemsFor(unit, units) {
   if (labelled.length) {
     return labelled.map((entry) => ({ ...base, question: `${base.question} Enter the ${entry.label}${/formula$/.test(entry.label) ? '' : ' formula'}.`, type: 'textin', answer: entry.printed, form: 'formula' }));
   }
+  // One part asked and answered in two units ("1310 J; 313 cal", 5.1): one
+  // fill-in per unit, each closing with a sentence that names its unit.
+  const inUnits = twoUnitAnswer(answer, unit.stem);
+  if (inUnits.length) {
+    const asked = /[.?!:]$/.test(base.question.trim()) ? base.question.trim() : `${base.question.trim()}.`;
+    return inUnits.map((name) => ({
+      ...base, question: `${asked} Enter the value in ${UNIT_NAMES[name]}.`, type: 'fillin', form: '',
+      answer: answerUnits(answer).find((entry) => entry.unit === name).numeral.printed.replace(/[−–]/g, '-').replace(/,(?=\d{3})/g, ''),
+    }));
+  }
   const several = severalItems(answer, base);
   if (several.length) return several;
   const item = itemFor(unit, answer, base);
   return item ? [item] : [];
 }
+
+const UNIT_NAMES = { J: 'joules', kJ: 'kilojoules', cal: 'calories', kcal: 'kilocalories', Cal: 'Calories' };
 
 /**
  * Chapter 4's answers that print several keys to one part, carried one item
@@ -120,7 +132,9 @@ function severalItems(answer, unclosed) {
 }
 
 function itemFor(unit, answer, base) {
-  const { shape } = shapeOf(answer);
+  const { shape, key: thermochemical } = shapeOf(answer, unit.stem);
+  // A thermochemical answer under a stem that asks a number: the ΔH alone (5.3).
+  if (shape === 'number' && thermochemical) return { ...base, type: 'fillin', answer: thermochemical, form: '' };
   if (shape === 'number') {
     const numeral = /[−–-]?\d[\d,]*(?:\.\d+)?(?:\s*[×x]\s*10\s*\^\{[−–-]?\d+\})?/.exec(answer);
     if (!numeral) return null;
@@ -169,6 +183,9 @@ export function probeModule(xml) {
     if (unit.choices) {
       const [item] = itemsFor(unit, units);
       return `{{< multiplechoice question="${quoted(item.question)}" answer="${quoted(item.answer)}" hint="h" >}}\n${item.options.join('\n')}\n{{< /multiplechoice >}}\n`;
+    }
+    if (twoUnitAnswer(unit.answer, unit.stem).length) {
+      return itemsFor(unit, units).map((item) => `{{< fillin question="${quoted(item.question)}" answer="${item.answer}" hint="h" >}}\n`).join('\n');
     }
     return `${figure ? `{{< mediafigure src="chemistry/${figure}" kind="diagram" alt="A structure." >}}\n{{< /mediafigure >}}\n\n` : ''}`
       + `{{< selfcheck question="${quoted(askOf(unit, units))}" hint="h" >}}\nModel answer.\n{{< /selfcheck >}}\n`;

@@ -41,30 +41,44 @@ export function chapters() {
 }
 
 const ARROW = /⟶|→|⇌/;
+// "[For the reaction] <equation> ΔH[°] = <number> kJ": the equation, the number.
+const THERMOCHEMICAL = /^(?:for the reaction\s+)?(.+?(?:⟶|→|⇌).+?)\s+Δ\s*H\s*°?\s*=\s*([−–-]?\d[\d,]*(?:\.\d+)?)\s*k?J(?:\/mol)?$/i;
+const ASKS_EQUATION = /\bequations?\b|\bwrite\b/i;
 const NUMBER = /^[−–-]?\d[\d,.]*(?:\s*[×x]\s*10\s*\^?\s*\{?[−–-]?\d+\}?)?/;
 
 /**
  * `{ shape, component, flag? }` for one keyed answer segment.
  * Shapes: number, formula, equation, equation+, words, sentence, drawing.
  */
-export function shapeOf(answer) {
+export function shapeOf(answer, stem = '') {
   const text = String(answer ?? '').replace(/\s+/g, ' ').trim().replace(/[.;]$/, '');
   if (!text) return { shape: 'drawing', component: 'selfcheck with the figure as the model answer' };
   // "SeF₆:" is the label of a drawing that follows it, and "Yes" is not yttrium and einsteinium.
   if (/:$/.test(text) && text.split(' ').length <= 8) return { shape: 'drawing', component: 'selfcheck with the figure as the model answer (the text is the drawing\'s label)' };
   if (/^(?:yes|no)\b/i.test(text) && text.split(' ').length <= 8) return { shape: 'words', component: 'multiplechoice (yes or no), then a selfcheck for any reason' };
   const words = text.split(' ').length;
+  // A thermochemical equation: an equation and its ΔH ("For the reaction
+  // H₂(g) + Cl₂(g) ⟶ 2HCl(g) ΔH° = −184.6 kJ", 5.3). Its `=` is not an
+  // arrow. Under a stem that asks a number and no equation ("What is the
+  // enthalpy change …?") the page carries ONE fill-in keyed with the ΔH;
+  // under one that asks the equation too, an equation text-in and a fill-in.
+  const thermo = THERMOCHEMICAL.exec(text);
+  if (thermo && chemCanon(thermo[1], 'equation')) {
+    const key = thermo[2].replace(/[−–]/g, '-').replace(/,(?=\d{3})/g, '');
+    if (!ASKS_EQUATION.test(stem)) return { shape: 'number', component: `fillin keyed ${key} (the ΔH: the stem asks a number, not the equation)`, key };
+    return { shape: 'equation+', component: `textin answerForm="equation" for the equation, and a fillin keyed ${key} for its ΔH`, flag: 'a thermochemical equation and its ΔH under a stem that asks the equation: two items, an equation text-in and a ΔH fill-in' };
+  }
   if (ARROW.test(text)) {
     const arrows = (text.match(/⟶|→|⇌/g) || []).length;
     if (arrows === 1 && chemCanon(text, 'equation')) {
-      const problem = chemKeyProblem(text, 'equation');
+      const problem = chemKeyProblem(text, 'equation', '', { written: false });
       return { shape: 'equation', component: 'textin answerForm="equation"', ...(problem ? { flag: problem } : {}) };
     }
     // One readable equation among other things: an equation and a mass, two equations.
     const pieces = text.split(/[,;]/).map((piece) => piece.trim()).filter((piece) => ARROW.test(piece));
     const readable = pieces.filter((piece) => chemCanon(piece, 'equation'));
     if (readable.length) {
-      const problems = readable.map((piece) => chemKeyProblem(piece, 'equation')).filter(Boolean);
+      const problems = readable.map((piece) => chemKeyProblem(piece, 'equation', '', { written: false })).filter(Boolean);
       return { shape: 'equation+', component: 'one item per piece (textin answerForm="equation" for each equation)', ...(problems.length ? { flag: problems[0] } : {}) };
     }
     return { shape: 'equation+', component: 'selfcheck, or split by hand', flag: 'the equation does not read (a condition over the arrow, a nuclide, a structural formula, or a source typo)' };
@@ -110,7 +124,7 @@ function main(argv) {
     const lines = [];
     for (const unit of keyedUnits(readFileSync(file, 'utf8'))) {
       if (!unit.keyed) { counts.unkeyed += 1; continue; }
-      const read = shapeOf(unit.answer);
+      const read = shapeOf(unit.answer, unit.stem);
       counts[read.shape] += 1;
       const answer = unit.answer.replace(/\s+/g, ' ').trim();
       const imageOnly = unit.label && !unit.partText && (unit.media || []).length;

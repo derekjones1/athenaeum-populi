@@ -7057,6 +7057,15 @@ export const NEAR_MISS_FEEDBACK = 'Close, but not within rounding of the answer.
 // memory, or from a table of four figures where this book's prints five.
 export const NEAR_MISS_TABLE_SENTENCE = ' If you looked up a value, such as an atomic mass, use every digit the table prints.';
 
+// The sentences for a measured quantity right but for its sign, or right in
+// its digits and a thousand times off (compareMeasured's `sign` and
+// `thousand`; Chemistry 2e chapter 5, November 14, 2026: `802` for −802 and
+// `1.31` for 1310 J were a bare "Not quite"). Still incorrect, no key or
+// allowance changed. Neither names a quantity — the grader does not know the
+// item asks a heat — nor gives the sign or the unit.
+export const WRONG_SIGN_FEEDBACK = 'The size is right, but the sign is not. Check whether the value should be positive or negative.';
+export const THOUSAND_FEEDBACK = 'The digits are right, but the value is a thousand times off. Check the unit the question asks for.';
+
 // The sentence for the right solution set written in the other notation
 // (notationMismatch), in the style of describeAnswerForm's.
 const NOTATION_FEEDBACK = {
@@ -7084,13 +7093,18 @@ const NUMBER_SHAPE_TOKENS = new Set(['decimal', 'whole-number', 'fraction', 'per
  */
 /**
  * The feedback for an 'incorrect' verdict on THIS response, or '' when
- * there is nothing to add to "Not quite". Today one case: a measured
- * quantity a unit or two outside its allowance (NEAR_MISS_FEEDBACK, with
- * NEAR_MISS_TABLE_SENTENCE where a factor is looked up).
+ * there is nothing to add to "Not quite". Three cases, all of a measured
+ * quantity: a unit or two outside its allowance (NEAR_MISS_FEEDBACK, with
+ * NEAR_MISS_TABLE_SENTENCE where a factor is looked up); right but for its
+ * sign (WRONG_SIGN_FEEDBACK); its digits right and a thousand times off
+ * (THOUSAND_FEEDBACK).
  */
 export function describeIncorrectFeedback(studentRaw, spec, answerRaw) {
   const measured = answerRaw === undefined ? null : measuredVerdict(studentRaw, answerRaw, { form: spec });
-  if (measured === null || measured.verdict !== 'incorrect' || measured.reason !== 'near') return '';
+  if (measured === null || measured.verdict !== 'incorrect') return '';
+  if (measured.reason === 'sign') return WRONG_SIGN_FEEDBACK;
+  if (measured.reason === 'thousand') return THOUSAND_FEEDBACK;
+  if (measured.reason !== 'near') return '';
   return NEAR_MISS_FEEDBACK + ((measuredSpec(spec)?.lastDigit ?? 0) >= 1 ? NEAR_MISS_TABLE_SENTENCE : '');
 }
 

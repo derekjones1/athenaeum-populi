@@ -17,9 +17,9 @@
 
 ## Coverage
 
-- Mapped local sections: 800
-- Sections changed upstream: 67
-- Content-level changes: 44
+- Mapped local sections: 803
+- Sections changed upstream: 68
+- Content-level changes: 45
 - Markup/metadata-only changes: 23
 - Changed Try It records: 3
 - Changed Try Its where local math matches the PDF-era form: 0
@@ -34,7 +34,7 @@
 - biology (`biology-bundle`): `5c58838d2594bc5817127fdc47e127c30b44f2c2`
 - microbiology (`microbiology`): `633850257fbd3ccf6187b9428c55e80b69236382`
 - anatomy-physiology (`anatomy-physiology`): `716383a4c6c16037b14d75a156c65145e75e895e`
-- chemistry (`chemistry-bundle`): `7d41ed008e9b83a6690c09c26a16f63f96046ec0` — in-progress, 22 sections mapped
+- chemistry (`chemistry-bundle`): `7d41ed008e9b83a6690c09c26a16f63f96046ec0` — in-progress, 25 sections mapped
 
 ## Changed mapped sections
 
@@ -389,5 +389,10 @@ Module `m68700`; content-changed. Changed lanes: instructionalText.
 ### chemistry 4.4 — [content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/04-reaction-yields.md](../../content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/04-reaction-yields.md)
 
 Module `m68714`; content-changed. Changed lanes: instructionalText.
+
+
+### chemistry 5.3 — [content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md](../../content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md)
+
+Module `m68727`; content-changed. Changed lanes: instructionalText.
 
 

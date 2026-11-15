@@ -1521,6 +1521,13 @@ word for word as `run.md` had them.
 
 From `run.md`, "What a chapter cost".
 
+Chapter 5 (three sections, 77 items; wall time about five and a half hours):
+authors 344k, 383k, and 467k tokens each across all rounds (5.1 to 5.3);
+checkers 237k, 227k, and 259k; claim pass 226k; consistency reader 277k; fix
+checker 206k; two rendered-page readers 170k and 180k; blind solver 154k and a
+four-item re-solve 108k. Before the wave, the grader-and-gates agent 399k (two
+rounds). Clerks: 57k (landing), 118k (run facts), 252k (errata, two rounds).
+
 Chapter 4 (five sections, 182 items; wall time not measured): authors 276k,
 362k, 323k, 308k, and 300k tokens each across three rounds (4.1 to 4.5);
 checkers 187k, 257k, 177k, 170k, and 178k; claim pass 190k; consistency
@@ -3049,6 +3056,190 @@ field found by its key failed there. It now grades under the item's form.
   The kit reader found it because a search it expected to hit printed
   nothing.
 
+## Chapter 5 (November 14, 2026)
+
+One run, one session, from commit `d6c6b91d`: Sections 5.1 Energy Basics
+(m68724), 5.2 Calorimetry (m68726), and 5.3 Enthalpy (m68727), and the landing
+(m68723). 77 graded items (16, 19, and 42). Blind solve: 66 agreed, 0
+disagreed, and 11 were flagged as also defensible and adjudicated; four items
+were re-stemmed or re-keyed after the solve and solved again by a fresh
+solver, and the solver overturned one parent ruling (manganese: 459.610, six
+figures, not the 459.61 the parent had ruled). Errata 3044–3086 (43). 18 key
+corrections (`DISCLOSED_DEVIATIONS`) and 1 register row (the iron-and-chlorine
+Check Your Learning, covered by erratum 3069). Baselines: keys 7,375 to 7,443
+(7,376 mid-run, when the gate work confirmed one more chapter 4 item),
+coverage 4,501 to 4,569, exercises 18,056 to 18,145, replay 8,864 to 8,967.
+Wall time was about five and a half hours.
+
+### Before the wave: the grader and the gates
+
+The grader and the gates were taught chapter 5's shapes first (the list, the
+function names, and the exact strings are in the gate agent's report, two
+rounds):
+
+- the wrong-sign message, "The size is right, but the sign is not. Check
+  whether the value should be positive or negative.", and the thousand-times
+  message, "The digits are right, but the value is a thousand times off. Check
+  the unit the question asks for." (`compareMeasured`, reasons `sign` and
+  `thousand`; the near-miss zone is read first);
+- fractional coefficients in equation keys: one written form (`½`, `3⁄2`),
+  every ordinary typing read, the "one mole" message ("That balances, but the
+  question asks for the equation written for one mole, so a coefficient may be
+  a fraction. Type a fraction as 1/2."), and `(s, graphite)` compared only
+  where both name an allotrope;
+- the part asked and answered in two units (`twoUnitAnswer`,
+  `closingUnit`): one fill-in per unit, each held to the number printed under
+  the unit its closing sentence names;
+- the thermochemical answer under a stem that asks a number (an equation and
+  its ΔH is one fill-in keyed with the ΔH);
+- the second Check Your Learning of an example (`#check2`; the bundle has
+  three such examples: 5.2, 12.3, and 13.4);
+- the display equations of a Check Your Learning's stem, read as part of it
+  (the Hess's-law Check Your Learning whose reactions are display equations);
+- the cross-section stem matcher (`withoutCrossReference`), after printed 39,
+  41, and 43 fell below the 0.5 similarity floor and were never compared.
+
+### What the run holds
+
+5.1 holds 16 items, 5.2 holds 19, and 5.3 holds 42. Every page's footer census
+agreed with the checkers' counts. The authors and the checkers worked from the
+run facts; the readings after them are below.
+
+### What each reading found
+
+- Checkers: 7, 6, and 9 defects (5.1, 5.2, 5.3). The most serious on 5.1: the
+  waterbed key 7.47 under `last-digit:2` where the data give 7.487; 5(a)'s
+  11.38 in four figures from three-figure data; the solar-thermal schematic's
+  long description routing the two tank pipes wrongly. On 5.2: the TNT key
+  11.7, which reproduces only with 4.18 and carries too many figures; the
+  "heat produced" family keyed both positive and negative, with hints that led
+  to the wrong sign; keys with more figures than their data. On 5.3: printed
+  85(d)'s 75.2 filed as a register row when it is a correction; 67's 90.25
+  tie; butane's −2660 where the data give −2657.
+- Claim pass: 14 findings (11 corrected, 2 kept with a Source note, 1 a key).
+  The most serious: three cells of 5.1's specific-heat table against NIST
+  (ethanol, carbon dioxide, argon); the Ivanpah paragraph and caption (the
+  record, the mirror count, the area); the algae box against the *Guardian*
+  article it cites, with its correction.
+- Consistency reader: 13 findings. The chief ones: one table sent to by three
+  forms, "Table 5.1" (a number no page prints) and section links the playbook
+  forbids; the sign of keys whose verb bears on it, set side by side; keys the
+  data do not give, which no gate catches because the key is the source's
+  print.
+- Fix check: 3 changes and 7 judgment calls (A to G); the parent accepted the
+  changes and ruled the calls (`rulings-fixcheck.md`).
+- Rendered-page readers (5.3, two readers): 0 wrong, 4 misleading, and a few
+  cosmetic. The misleading ones: a sentence's full stop inside `\ce{…}` drawn
+  as a raised dot; the isooctane solution still saying −5460 under a table
+  that now prints −5461.3; the Hess's-law Check Your Learning labels
+  "(i)" to "(v)" ending a line with the reaction on the next; a combustion
+  equation field that tells a learner who types H₂O(g) that a state differs.
+
+### The rulings
+
+- **The sign rule** (four keys moved: 5.2's benzene item, and 5.3's printed 43,
+  71, and 75).
+- **Figures**: 5.1's 11.4, 97.2, and 7.5; 5.2's 336, 1.3, 12, 0.99, and −2.4;
+  5.3's 5.20 × 10³, 90.25, −2657, and 75.2, each a correction with its Source
+  note.
+- **Section links removed**: the parent's own run facts decisions 6 and 8
+  were overturned by the playbook rule they cited.
+- **`last-digit:1` for every table-fetched value.**
+- **After the solve**: "Enter the heat, $q$, in kilojoules." on two items;
+  the steam item 7.4 (the parent had ruled 7.43 stays; the solver and the
+  consistency reader both counted two figures); manganese 459.610; the ammonium
+  nitrate item a correction, not a register row.
+
+### What the process got wrong
+
+- Decisions 6 and 8 of the run facts ruled the opposite of the playbook rule
+  they cited; six links were written and then removed.
+- The run facts' value for printed 41 (25) came from a rounded heat; the
+  method gives 26.
+- Printed 85(d) was called a register row; the gate calls it a correction.
+- The parent ruled 7.43 and then 459.61, and the solver and the figure rule
+  overturned both.
+- A first address for one outside source returned 404 (the reader's address
+  worked).
+
+### Outside sources opened and seen quoted
+
+EIA Monthly Energy Review Table 1.3; the NIST Chemistry WebBook (ethanol,
+carbon dioxide, argon, isooctane, acetylene); Crossref (the calorimeter
+paper); the *Guardian* article the algae box cites, with its correction;
+*POWER* magazine and ACWA Power (Ivanpah, Noor Energy 1).
+
+### Kept as printed
+
+From the "Reviewed and not errata (chapter 5)" block of
+`docs/openstax-errata.md` and the claim pass's "Reviewed, stands":
+
+- Kilimanjaro's 5895 m: the common figure (a 2008 survey gives about 5892 m);
+  the Department of Energy's 39,000 square kilometers (about 0.4 percent of
+  the land mass) recomputes to 0.43 percent.
+- "Sonora Desert", and the specific-heat table's silicon row printed last: an
+  accepted name, and the order of a table.
+- The benzene Check Your Learning's "the reaction produced 39.0 kJ of heat":
+  the answer's own parenthesis gives the key; no Source note, not a deviation.
+- The iron-and-chlorine Check Your Learning's −339 (source −338): the one
+  register row, covered by erratum 3069.
+- The frying-pan example's 1814 (four figures from three-figure data), "nickel
+  fuse wire", Reatha Clark King, the USDA "over 8000 foods", Carla Prado, the
+  "almost 10,000 times" solar input, Solana's 280 MW: from memory, defensible,
+  kept.
+- KClO₃'s 122.545 g/mol, which round-half-to-even writes 122.54 where the page
+  prints 122.55: the result is unchanged.
+
+Not opened by anyone: the EIA sector split (38/27/21/10), "35 calorimeters",
+the 26,000 gallons per hectare, and ice's 2.093 J/g °C "at −10 °C".
+
+### Tests and lints the run added
+
+- `keyed-units.test.mjs`: the example with two Check Your Learning items (both
+  gates require both); a Check Your Learning whose reactions are display
+  equations; the thermochemical answer under a stem that asks a number; the
+  part asked and answered in two units; the stem that names another section's
+  example and restates its data (printed 39, 41, 43).
+- `check-answer.test.mjs` and `significant-figures.test.mjs`: the wrong-sign
+  and thousand-times messages (the `494` against `-494` row now carries
+  reason `sign`).
+- `check-chem.test.mjs`: a formation equation with a fractional coefficient
+  graded at the key's own scale; the `(s, graphite)` rule.
+- `lints-leaks.test.mjs`: a key with a fractional coefficient must close "Type
+  a fraction as 1/2."; a value followed by `\ \text{…}` inside a stem's math is
+  an error (`STEM_NUMBER_UNIT`).
+- `browser-check.spec.mjs`: an equation field reads a fractional coefficient
+  typed as 1/2 or a decimal; the appendix-lookup test now follows 5.3's real
+  Appendix G link; a stem label and a "= value unit" run stay on the line of
+  their formula (the label-and-value glue,
+  `layouts/_partials/math-glue-patterns.html`, read by `glue-math.html` and
+  `mathtext.html`). The glue agent left no written report.
+- `tools/build/documentation.test.mjs` reads every new grader row of the
+  playbook (the sign and thousand rows quoted whole).
+
+### What typing the keys showed
+
+77 of 77 correct in both passes.
+
+### Next
+
+Knowledge Check block 2 (chapters 4–5), run from
+`docs/briefs/chemistry/kc-run.md`, then chapter 6.
+
+### For Derek
+
+1. Section-to-section links: the playbook forbids them and this run kept to
+   it, but a learner sent to another section's table or example would be
+   helped by a link, as with appendices. A proposal, not done.
+2. The stem form `$\Delta H^\circ$ = −314 kJ` (symbol in math, value in
+   prose) was chosen over all-math to match chapter 4 and the lint that keeps
+   units out of stem math.
+3. Four cells of source DATA tables were corrected against NIST (three
+   specific heats, one enthalpy of combustion) with Source notes. Say if data
+   tables should stay as the source prints them.
+4. A key with a trailing zero (459.610) is what the figures give and reads
+   oddly.
+
 ## The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under
@@ -3075,3 +3266,7 @@ the ban, with its page and line. The ban is reviewed from this list.
   solution): an inline word fraction, small but legible. 3.4 lines
   151–153: three Key equations as inline word fractions.
 - Chapter 4 reported none: every author and checker reported none.
+- Chapter 5 reported two places. 5.3, the ozone example's inline ratio (286 kJ
+  over 2 mol O₃): the subscript 3 is very small. 5.3 printed 63's stem, where
+  mhchem sets 5/2 and 3/2 about 6 px tall, and they are what tells the asked
+  reaction from the first given one. 5.1 and 5.2 reported none.

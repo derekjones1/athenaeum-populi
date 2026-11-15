@@ -1,7 +1,7 @@
 import test from 'node:test';
 import { normalizeText } from '../../assets/js/lib/text/check-text.mjs';
 import assert from 'node:assert/strict';
-import { directlyAboveLeak, handSetFormulas, lintLeaks, numericKey, selfcheckForwardLeak, unicodeFormula } from './lints-leaks.mjs';
+import { ceTrailingPunctuation, directlyAboveLeak, handSetFormulas, lintLeaks, numericKey, selfcheckForwardLeak, unicodeFormula } from './lints-leaks.mjs';
 
 const BIO = 'content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md';
 const AP = 'content/life-health-sciences/anatomy-physiology/01-an-introduction-to-the-human-body/07-medical-imaging.md';
@@ -498,6 +498,16 @@ test('in the Chemistry book a formula or an equation is never keyed as a word', 
   assert.deepEqual(errorsOf(page(typed), CHEM).filter((e) => /ASCII chemistry/.test(e)), [], 'the typed electron is not ASCII chemistry');
   const whole = half.replace('+ 2e⁻ ⟶ Sn²⁺', '+ 2Fe²⁺(aq) ⟶ Sn²⁺').replace('+ 2e⁻ ⟶ Sn²⁺', '+ 2Fe²⁺(aq) ⟶ Sn²⁺');
   assert.deepEqual(electron(page(whole)), [], 'an equation with no electron needs no sentence');
+  // A key with a fractional coefficient says how a fraction is typed (Chemistry 2e 5.3).
+  const fraction = (src) => errorsOf(src, CHEM).filter((e) => /how a fraction is typed/.test(e));
+  const formation = formula('2Na(s) + C(s, graphite) + 3⁄2O₂(g) ⟶ Na₂CO₃(s)', 'Write the heat of formation reaction equation for: Na₂CO₃(s).')
+    .replace('answer="2Na(s) + C(s, graphite) + 3⁄2O₂(g) ⟶ Na₂CO₃(s)"', 'answer="2Na(s) + C(s, graphite) + 3⁄2O₂(g) ⟶ Na₂CO₃(s)" answerForm="equation"');
+  assert.equal(fraction(page(formation)).length, 1);
+  const told2 = formation.replace('for: Na₂CO₃(s).', 'for: Na₂CO₃(s). Type a fraction as 1/2.');
+  assert.deepEqual(fraction(page(told2)), []);
+  assert.deepEqual(errorsOf(page(told2), CHEM).filter((e) => /ASCII chemistry|not balanced|lowest terms|is written/.test(e)), [], 'the typed fraction is no ASCII chemistry, and the key is admitted');
+  assert.equal(fraction(page(formation.replace(/3⁄2/g, '½').replace('2Na(s) + C', 'Na(s) + C').replace('Na₂CO₃(s)"', 'Na₂CO₃(s)"'))).length, 1, 'a ½ key too');
+  assert.deepEqual(fraction(page(half)), [], 'a whole-number equation needs no sentence');
 });
 
 test('in the Chemistry book a textin key never carries an operator the text grader drops', () => {
@@ -637,4 +647,34 @@ test('in the Chemistry book a stem never sets a unit inside its math after a pow
   assert.deepEqual(unit(fillin('What mass of ore holds $\\ce{CuCO3}$ of copper, $12.0\\ \\text{kg}$?')), []);
   assert.deepEqual(unit(fillin('What mass of ore holds $1.00 \\times 10^{3}$ kg of copper?', '$1.00 \\times 10^{3}\\ \\text{kg}$')), [], 'an answer display is not a stem');
   assert.deepEqual(unit(fillin('What mass of ore holds $1.00 \\times 10^{3}\\ \\text{kg}$ of copper?'), MATH), []);
+  // Any value (chapter 5, November 14, 2026): a symbol with its value is the
+  // symbol in math and the value and unit in prose.
+  const value = (src) => errorsOf(`Body text.\n\n${src}\n`, CHEM).filter((e) => /after its value inside the math/.test(e));
+  assert.equal(value(fillin('What mass of ore holds $12.0\\ \\text{kg}$ of copper?')).length, 1, 'a unit without a power of ten');
+  assert.equal(value(fillin('Use $\\ce{SbCl3(s) + Cl2(g) -> SbCl5(s)}$ $\\Delta H^\\circ = -80\\ \\text{kJ}$ to find the change.')).length, 1);
+  assert.deepEqual(value(fillin('Use $\\ce{SbCl3(s) + Cl2(g) -> SbCl5(s)}$ $\\Delta H^\\circ$ = −80 kJ to find the change.')), [], 'the ruled form');
+  assert.deepEqual(value(fillin('What mass of ore holds $1.00 \\times 10^{3}\\ \\text{kg}$ of copper?')), [], 'the power-of-ten sentence alone');
+});
+
+// ---- punctuation closing a \ce{…} -------------------------------------------
+
+test('ceTrailingPunctuation finds a period, comma, or semicolon before a \\ce closing brace', () => {
+  assert.deepEqual(ceTrailingPunctuation(String.raw`\ce{H2O.}`), [{ index: 0, written: String.raw`\ce{H2O.}`, mark: '.' }]);
+  assert.deepEqual(ceTrailingPunctuation(String.raw`x + \ce{NaCl(s),}`).map((h) => [h.index, h.mark]), [[4, ',']]);
+  assert.deepEqual(ceTrailingPunctuation(String.raw`\ce{A -> B;} \ce{C_{(l)}.}`).map((h) => h.written), [String.raw`\ce{A -> B;}`, String.raw`\ce{C_{(l)}.}`]);
+  // A hydrate dot inside, punctuation after the brace, an escaped mark, and an unclosed \ce are not.
+  for (const tex of [String.raw`\ce{CuSO4.5H2O}`, String.raw`\ce{H2O}.`, String.raw`\ce{A\;}`, String.raw`\ce{H2O.`, String.raw`\ce{2H2 + O2 -> 2H2O}`]) {
+    assert.deepEqual(ceTrailingPunctuation(tex), [], tex);
+  }
+});
+
+test('punctuation closing a \\ce{…} is an error in every book, body and item text alike', () => {
+  const body = 'Water is $\\ce{H2O.}$\n';
+  const errors = errorsOf(body, CHEM);
+  assert.equal(errors.length, 1);
+  assert.match(errors[0], /^L1: `\\ce\{H2O\.\}` ends with `\.` inside the braces — mhchem draws it as part of the formula/);
+  assert(hasError('{{< textin\n  question="Balance $\\ce{H2 + O2 -> H2O;}$ then go on."\n  answer="x"\n  hint="h"\n>}}\n', /ends with `;` inside the braces/, CHEM));
+  assert(hasError('$$\\ce{A -> B,}$$\n', /ends with `,` inside the braces/, MATH));
+  assert(!hasError('Water is $\\ce{H2O}$.\n', /inside the braces/, CHEM));
+  assert(!hasError('```\n$\\ce{H2O.}$\n```\n', /inside the braces/, CHEM));
 });

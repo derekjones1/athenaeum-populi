@@ -157,6 +157,35 @@ Nine things chapter 4 added (`docs/history/chemistry.md`, "Chapter 4"):
   then re-files the records it re-hashed (§0, chapter 2's last bullet):
   take the ledger snapshot first.
 
+Eight things chapter 5 added (`docs/history/chemistry.md`, "Chapter 5"):
+
+- **A parent decision that names a playbook rule is written with the rule
+  open.** Run facts decisions 6 and 8 cited the cross-reference rule and
+  ruled the opposite of it (links between sections); the consistency
+  reader caught it and six links were removed.
+- **The run facts screen EVERY numeric key for its figure count and its
+  sign against the question's verb before the wave**, not a list of
+  candidates from a first read: the candidates named 4 of the 13 keys that
+  moved.
+- **The parent's own table of mass-dependent values is recomputed by the
+  one method before it is sent.** One row used an example's rounded heat
+  and was a unit off (the author keyed it rightly).
+- **An example with two Check Your Learning items** was read only for the
+  first by `chemistry-prep.py`, the shapes tool, and the gates until this
+  run; the Clerk's element count found it. A count that disagrees with a
+  tool's is the tool's defect until shown otherwise.
+- **The browser tests that a kit note says "this chapter moves to a real
+  item" are moved as soon as the pages verify, not at close-out.** Moving
+  the appendix-lookup test to 5.3 is what showed the page scrolling
+  sideways on a phone.
+- **The errata drafter starts after the blind solve's edits are in**, or is
+  told to re-read the pages: three keys moved after its first draft.
+- **A key the solve changes is carried to its new hash only when the stem
+  is byte-for-byte unchanged**; say so in the record's note.
+- **A source page the parent cannot open is saved to `$SP/fetch/` by the
+  reader that opened it, with its address**; the parent reads the file,
+  then opens the address itself.
+
 ## 1. Before the wave
 
 `SP` is this session's scratchpad. Never a git command from an agent — say
