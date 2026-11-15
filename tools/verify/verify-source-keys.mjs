@@ -1777,6 +1777,9 @@ const OPEN_ANSWER_RE = /^(?:the )?(?:answers?|responses?) (?:is open|are open|wi
 /** A solution that says, anywhere in it, that its answer is one of several a learner could give. */
 const VARYING_EXERCISE_RE = /\b(?:answers?|responses?) (?:may|will) vary\b|\bother answers\b[^.]*\bpossible\b/i;
 
+/** A question that asks for one of many correct answers by its own words: "Write a set of quantum numbers for …". */
+const ASKS_FOR_A_SET_RE = /\bwrite a set of\b/i;
+
 /** Whether a model answer carries a part's sample whole — its segment less any sentence that only says answers vary. */
 function sampleCarried(segment, model) {
   const sample = segment.split(/(?<=[.!?])\s+/).filter((sentence) => !VARYING_EXERCISE_RE.test(sentence)).join(' ').trim();
@@ -3104,6 +3107,15 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
     // happens to close: the part's sample is its segment without it.
     && sampleCarried(unit.answer, item.model)) {
     return { status: 'reworded', exercise, coverage: judged.coverage, detail: 'varying-answer exercise: the part\'s sample carried whole in the model answer' };
+  }
+  // "Write a set of quantum numbers for …" (6.3): the QUESTION asks for a
+  // set, one of many, and the source answers with one and says nothing of the
+  // others. The same form — what every correct set has, then "Sample
+  // answer:" and the source's set whole — so the rubric is the criteria and
+  // not the source's own rows, which only the source's set can meet.
+  if (judged.status === 'diverges' && item.type === 'selfcheck' && /\bSample answer:/.test(item.model)
+    && ASKS_FOR_A_SET_RE.test(item.question) && sampleCarried(unit.answer, item.model)) {
+    return { status: 'reworded', exercise, coverage: judged.coverage, detail: 'a "write a set of" exercise: the source\'s set carried whole as the sample in the model answer' };
   }
   return { ...judged, exercise };
 }

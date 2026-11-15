@@ -32900,6 +32900,14 @@
     "result": "agrees"
    }
   },
+  "41b0b3e9d9037f90": {
+   "verdict": "ok",
+   "note": "orbital-outline exercise, quantum-number part: model answer rewritten Nov 15 2026 to the sample-answer form (opening sentence of what every correct set has, then the source's sets whole); parent re-read against the CNXML solution and the sibling l and m_l part: x is s (l = 0, m_l = 0), y is p (l = 1, m_l −1..+1), z is d (l = 2, m_l −2..+2), either spin; source sets 4 0 0 +1/2, 2 1 0 +1/2, 3 2 0 +1/2 unchanged",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "41b4afebe1ecba0f": {
    "verdict": "ok",
    "note": "Unkeyed Short Answer fs-id1172100744408, REVERTED to selfcheck per checker finding D1 — the module never mentions canned, sealed food, or botulism, so a graded key is dishonest. Model answer now states only what the module gives (obligate-anaerobe habitat sentence; the *Clostridioides*/*Clostridium* genus + endospore sentence) and explicitly says the module does not discuss canned foods. Objective 3's group keeps its four source MCs as its graded floor; no filler added. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -35488,10 +35496,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "4715bcfdf684a226": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm24126560 (printed 45): source table carried whole as the model answer (source's answer, +½ sign form); rubric is the source's sets"
   },
   "4716075057e727c3": {
    "verdict": "ok",
@@ -81799,10 +81803,6 @@
   "a782c9f91de3a145": {
    "verdict": "ok"
   },
-  "a7851201cc650592": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm139949520 part (c): source sets 4 0 0 ½, 2 1 0 ½, 3 2 0 ½ carried whole as the model answer (source's answer, +½ sign form); rubric is the source's sets"
-  },
   "a78a9b90f9d4fc75": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -110366,6 +110366,14 @@
   "e34c019cd210a953": {
    "verdict": "ok",
    "note": "key-term recall from the Glossary appendix: optimum growth temperature (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "e3522918430f4d95": {
+   "verdict": "ok",
+   "note": "selenium exercise: model answer rewritten Nov 15 2026 to the sample-answer form; parent re-read: Se is [Ar]3d10 4s2 4p4, so six electrons have n = 4 (two 4s with l = 0, m_l = 0 and opposite spins; four 4p with l = 1, m_l −1..+1), no two sets alike; the source's six rows unchanged",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"

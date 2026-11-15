@@ -3511,12 +3511,43 @@ playbook's "What is still open").
 3. The source's data figures are kept as images with Source notes listing the
    cells NIST contradicts, rather than redrawn.
 4. A "write a set of quantum numbers" self-check still shows the source's
-   particular sets in its rubric.
+   particular sets in its rubric. **Closed November 15, 2026** (see "The
+   quantum-number rubrics" below).
 5. The configuration field takes capital subshell letters and a noble-gas core
    typed without brackets.
 6. The 6.3 outline items' closing ("Enter the number of orbitals of type (y)
    shown in the figure above") can be read as a count of what the figure draws;
    left as built.
+
+### The quantum-number rubrics (November 15, 2026)
+
+Item 4 of the list above, closed the same day. Section 6.3's two "write a
+set of quantum numbers" self-checks (the orbital-outline exercise's
+quantum-number part and the selenium exercise) listed the source's own
+sets as their rubric, so a learner who wrote another correct set, the
+other spin or another m_l, could tick nothing. No new rubric form was
+needed: the "one possible case" form chapter 2 already uses fits. Each
+model answer now opens with a sentence saying what every correct set has
+(the n and l the question fixes, the m_l values allowed, either spin; for
+selenium, six sets, no two alike, two 4s and four 4p), then the added
+label "Sample answer:" and the source's sets, whole. The rubric is that
+sentence's clauses. Hints unchanged.
+
+- `verify:source-keys` read both as diverging, since the source says
+  nothing of other answers: it now takes the sample form where the
+  QUESTION asks to "write a set of" and the source's set is carried whole
+  (`ASKS_FOR_A_SET_RE`, a test in `tools/lib/keyed-units.test.mjs`). Its
+  measure is the source's tokens, so it cannot tell a sample that differs
+  from the source only in a sign.
+- The playbook's "write a set of …" rule is rewritten to this form; the
+  footer of 6.3 discloses the added sentences and the label.
+- Ledger: both self-checks re-read by the parent against the CNXML (hashes
+  74b0fb4e… and e3522918… at the first edit, re-hashed once by a shorter
+  rubric wording). `npm test` green.
+- Not done, and offered to Derek: a graded field that accepts any valid
+  set (n and l held to the key, any allowed m_l, either spin) for the
+  three outline parts. It would be a new `answerForm` with its gates, for
+  three items.
 
 ## The `\dfrac` watch list
 

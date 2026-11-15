@@ -455,6 +455,24 @@ test('a part of an exercise whose answers vary carries its own sample whole', ()
   assert.equal(judgeKeyedUnit(predict('Open the Build an Atom simulation.', 'A good answer predicts whether the atom will be stable or unstable and states a reason, naming the isotope and what is known of it. Sample answer: The atom will be stable since Li-6 is a stable isotope of lithium.'), atom).status, 'diverges');
 });
 
+test('a "write a set of" exercise carries the source\'s set whole as its sample', () => {
+  // 6.3: the question asks for A set, the source answers with one of many
+  // and says nothing of the others. (A solution of four words or fewer is
+  // already read as carried whole; these are longer.)
+  const answer = '3 0 0 +1/2 and 3 0 0 −1/2';
+  const stated = 'State the quantum numbers of the two outermost electrons of a Mg atom, as the text assigns them.';
+  const asks = 'Write a set of quantum numbers for each of the electrons with an n of 3 in a Mg atom.';
+  const sets = keyedUnits(cnxml(exercises(exercise('q1', [asks], answer), exercise('q2', [stated], answer))));
+  const item = (question, model) => ({ type: 'selfcheck', question, model });
+  const criteria = 'A correct answer gives two sets, no two alike, each with a principal value of three, an angular momentum value and a magnetic value of zero, and one of the two spins, written in the order the section gives them.';
+  assert.equal(judgeKeyedUnit(item(asks, `${criteria} Sample answer: ${answer}`), sets).status, 'reworded');
+  // The sample is the source's set, not the author's own (the measure is
+  // the source's tokens, so a set that differs only in a sign reads alike).
+  assert.equal(judgeKeyedUnit(item(asks, `${criteria} Sample answer: 4 1 −1 +1/2 with 4 1 −1 −1/2`), sets).status, 'diverges');
+  // A question that does not ask for "a set of" takes no such frame.
+  assert.equal(judgeKeyedUnit(item(stated, `${criteria} Sample answer: ${answer}`), sets).status, 'diverges');
+});
+
 test('an answer that is only a drawing is confirmed by the selfcheck that shows the source\'s image', () => {
   const picture = (name) => `<media alt="a Lewis structure"><image mime-type="image/jpeg" src="../../media/${name}.jpg"/></media>`;
   const drawn = keyedUnits(cnxml(exercises(

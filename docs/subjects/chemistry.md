@@ -993,10 +993,15 @@ after the rule was written, so the line is drawn by pairs:
     not copied into the others; the gate holds each part to its own
     segment. The footer says the opening sentence and the label are added.
 - **A "write a set of …" answer** (quantum numbers for an orbital, for the
-  electrons of a shell): the model answer is the source's set, the
-  rubric's clauses are the source's rows (the rubric lint holds every
-  clause to the model answer's words), and the HINT says what any correct
-  set must have, since any of many sets is right *(chapter 6)*.
+  electrons of a shell) is one possible case too, and takes the same form:
+  an opening sentence that says what EVERY correct set has (the values the
+  question fixes, and the range each free value may take), the added label
+  "Sample answer:", and the source's set, whole. The rubric is the opening
+  sentence's clauses, so a learner who wrote a different correct set can
+  tick every box; a rubric of the source's own rows is one only the
+  source's set can meet. The hint may still say which values are free
+  *(chapter 6; first written with the source's rows as the rubric, and
+  rewritten November 15, 2026)*.
 
 ### Source defects and Source notes
 
