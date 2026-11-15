@@ -338,7 +338,8 @@ selfchecks, source defects, the footer — and each is stated once.
   `($d$ = 0.7134 g/mL)` *(chapter 4)*.
 - **A symbol with its value in a stem is the symbol in math and the value
   and unit in prose**, the minus sign U+2212: `$\Delta H^\circ$ = −314 kJ`
-  *(November 14, 2026, chapter 5)*. A Hess's-law stem therefore reads
+  *(November 14, 2026, chapter 5)* — the form of all running text
+  ("Notation"). A Hess's-law stem therefore reads
   "…from the following information: `$\ce{Sb(s) + 3/2Cl2(g) -> SbCl3(s)}$
   $\Delta H^\circ$ = −314 kJ; $\ce{SbCl3(s) + Cl2(g) -> SbCl5(s)}$
   $\Delta H^\circ$ = −80 kJ`." — each reaction and its ΔH, a semicolon
@@ -1052,12 +1053,20 @@ life-sciences books read a short element list. A quantity is prose too:
 an exercise string is spoken as "15.00g". A minus sign, and the sign of a
 negative charge, is U+2212 (−) wherever it stands — prose, stems, model
 answers, table cells — whatever dash the source typed (2.3's source
-writes "[53 – (1–) = 54]" with en dashes). An expression is all math or
-all prose, never half: `$Z = 11$`, not "$Z$ = 11". The one exception is a
-symbol with its value in an exercise stem, `$\Delta H^\circ$ = −314 kJ`
-("Stems"): a stem's math is spoken whole, so its unit stays in prose, and a
-value with no unit beside a symbol in math would set the number one way and
-its unit another *(November 14, 2026, chapter 5)*.
+writes "[53 – (1–) = 54]" with en dashes). An expression with no
+unit is all math or all prose, never half: `$Z = 11$`, not "$Z$ = 11".
+**A symbol given a measured value in running text is the symbol in math
+and the equals sign, value, and unit in prose** — `$q$ = −2.9 kJ`,
+`$T_\text{i,rebar}$ = 248 °C`, `$\Delta H^\circ$ = −314 kJ` — in a body
+sentence, a solution, a model answer, and an exercise stem alike *(Derek,
+November 14, 2026: one ruling for text; until then the body set it whole
+in math and only stems split it)*. The quantity is prose like every other
+quantity, a worked example reads as the exercise under it does, and the
+templates hold the symbol and its value on one line. Arithmetic stays in
+math — a fraction, a conversion factor, a chain of equalities, a relation
+between two quantities (`$1\ \text{ppm} = 10^{3}\ \text{ppb}$`) — and so do
+display math and an `answerDisplay`. The lint refuses an inline span that
+is only a symbol, an equals sign, and a value with its unit.
 
 **In math** — every source `<equation>` that is mathematics, and any
 inline span that is — a formula is `\ce{…}`. (A source `<equation>` that

@@ -3250,7 +3250,14 @@ Knowledge Check block 2 (chapters 4–5), run from
    lint holds the form in stems. What is not uniform is the BODY: three
    sentences of 1.4 and two cells of Appendix E use the stem's split form
    (`$m$ = 18.58 g`), while the solutions of chapter 5 set the same kind
-   of statement whole in math (`$q = -2.9\ \text{kJ}$`). Put to Derek.
+   of statement whole in math (`$q = -2.9\ \text{kJ}$`). Put to Derek,
+   who ruled one form for all running text the same day: the symbol in
+   math, the equals sign, value, and unit in prose (playbook "Notation";
+   `author.md` step 4). Six body sentences of 5.2 and 5.3 were the whole
+   of the other form and were rewritten; arithmetic, display math, and
+   answer displays stay in math. `symbolValueUnit` in
+   `tools/lint/lints-leaks.mjs` is the lint (Chemistry only, test beside
+   it), and the glue's value pattern now takes "J/g °C".
 3. **Corrected cells of source data tables stay corrected**, each with its
    Source note.
 4. **The trailing-zero key (459.610) stays.**

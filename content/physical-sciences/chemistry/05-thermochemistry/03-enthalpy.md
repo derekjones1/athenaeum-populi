@@ -101,7 +101,7 @@ The following conventions apply when using $\Delta H$:
 
 $$\ce{HCl(aq) + NaOH(aq) -> NaCl(aq) + H2O(l)}$$
 
-**Solution.** For the reaction of 0.0500 mol acid (HCl), $q = -2.9\ \text{kJ}$. The reactants are provided in stoichiometric amounts (same molar ratio as in the balanced equation), and so the amount of acid may be used to calculate a molar enthalpy change. Since $\Delta H$ is an extensive property, it is proportional to the amount of acid neutralized:
+**Solution.** For the reaction of 0.0500 mol acid (HCl), $q$ = −2.9 kJ. The reactants are provided in stoichiometric amounts (same molar ratio as in the balanced equation), and so the amount of acid may be used to calculate a molar enthalpy change. Since $\Delta H$ is an extensive property, it is proportional to the amount of acid neutralized:
 
 $$\Delta H = 1\ \cancel{\text{mol HCl}} \times \frac{-2.9\ \text{kJ}}{0.0500\ \cancel{\text{mol HCl}}} = -58\ \text{kJ}$$
 
@@ -284,11 +284,11 @@ $$\ce{3O2(g) -> 2O3(g)} \qquad \Delta H^\circ = +286\ \text{kJ}$$
 
 $$\ce{3/2O2(g) -> O3(g)}$$
 
-For the formation of 2 mol of O₃(*g*), $\Delta H^\circ = +286\ \text{kJ}$. This ratio, $\left(\frac{286\ \text{kJ}}{2\ \text{mol}\ \ce{O3}}\right)$, can be used as a conversion factor to find the heat produced when 1 mole of O₃(*g*) is formed, which is the enthalpy of formation for O₃(*g*):
+For the formation of 2 mol of O₃(*g*), $\Delta H^\circ$ = +286 kJ. This ratio, $\left(\frac{286\ \text{kJ}}{2\ \text{mol}\ \ce{O3}}\right)$, can be used as a conversion factor to find the heat produced when 1 mole of O₃(*g*) is formed, which is the enthalpy of formation for O₃(*g*):
 
 $$\Delta H^\circ\ \text{for 1 mole of}\ \ce{O3(g)} = 1\ \cancel{\text{mol}\ \ce{O3}} \times \frac{286\ \text{kJ}}{2\ \cancel{\text{mol}\ \ce{O3}}} = 143\ \text{kJ}$$
 
-Therefore, $\Delta H^\circ_\text{f}[\ce{O3(g)}] = +143\ \text{kJ/mol}$.
+Therefore, $\Delta H^\circ_\text{f}[\ce{O3(g)}]$ = +143 kJ/mol.
 
 {{< fillin
   question="Hydrogen gas, H₂, reacts explosively with gaseous chlorine, Cl₂, to form hydrogen chloride, HCl(*g*). What is the enthalpy change for the reaction of 1 mole of H₂(*g*) with 1 mole of Cl₂(*g*) if both the reactants and products are at standard state conditions? The standard enthalpy of formation of HCl(*g*) is −92.3 kJ/mol. Enter the enthalpy change in kilojoules."
@@ -547,7 +547,7 @@ $$\begin{aligned}
 &= -138.3\ \text{kJ}
 \end{aligned}$$
 
-So the standard enthalpy change for this reaction is $\Delta H^\circ = -138.3\ \text{kJ}$.
+So the standard enthalpy change for this reaction is $\Delta H^\circ$ = −138.3 kJ.
 
 Note that this result was obtained by (1) multiplying the $\Delta H^\circ_\text{f}$ of each product by its stoichiometric coefficient and summing those values, (2) multiplying the $\Delta H^\circ_\text{f}$ of each reactant by its stoichiometric coefficient and summing those values, and then (3) subtracting the result found in (2) from the result found in (1). This is also the procedure in using the general equation, as shown.
 

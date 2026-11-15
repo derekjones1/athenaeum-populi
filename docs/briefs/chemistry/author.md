@@ -102,7 +102,10 @@ goes wrong.
    note, and named in the footer and your ledger.
 4. **Notation** (playbook "Notation") — the rule is one line: a formula in a
    sentence is Unicode text, a formula inside math is `\ce{…}`. A quantity
-   in a sentence is prose (`15.00 g`, `−28.1 °F`, `1,000 mL`); a numeric
+   in a sentence is prose (`15.00 g`, `−28.1 °F`, `1,000 mL`), and a symbol
+   given its value there — body, solution, model answer, or stem — is the
+   symbol in math and the rest prose (`$q$ = −2.9 kJ`, never
+   `$q = -2.9\ \text{kJ}$`; the lint refuses it); a numeric
    exponent is math (`$1.2 \times 10^{-3}$`); a source display `<equation>`
    is `$$…$$` with `\text{…}` units and `\cancel{\text{…}}` for a
    struck-through unit. Transcribe each MathML expression from the raw

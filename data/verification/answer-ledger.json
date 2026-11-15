@@ -11847,6 +11847,10 @@
     "result": "agrees"
    }
   },
+  "1765fcc2e40f8598": {
+   "verdict": "ok",
+   "note": "CYL fs-idm80667088#check identity; source sentences as model | re-read by the parent 2026-11-14: the model answer's first line rewritten from inline math to the running-text form ($c_\\text{metal}$ = 0.13 J/g °C), the value, unit, and every other word unchanged"
+  },
   "1769252054679cf6": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -122186,10 +122190,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "fd6e6e4f627e0b1d": {
-   "verdict": "ok",
-   "note": "CYL fs-idm80667088#check identity; source sentences as model | carried 2026-11-14 (ledger-carry): re-hashed when a reference to another section became a link; the stem's words, options, key, and dependency unchanged"
   },
   "fd7445bdd6eecc2e": {
    "verdict": "ok",

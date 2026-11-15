@@ -1,7 +1,7 @@
 import test from 'node:test';
 import { normalizeText } from '../../assets/js/lib/text/check-text.mjs';
 import assert from 'node:assert/strict';
-import { ceTrailingPunctuation, directlyAboveLeak, handSetFormulas, lintLeaks, numericKey, selfcheckForwardLeak, unicodeFormula } from './lints-leaks.mjs';
+import { ceTrailingPunctuation, directlyAboveLeak, handSetFormulas, lintLeaks, numericKey, selfcheckForwardLeak, symbolValueUnit, unicodeFormula } from './lints-leaks.mjs';
 
 const BIO = 'content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md';
 const AP = 'content/life-health-sciences/anatomy-physiology/01-an-introduction-to-the-human-body/07-medical-imaging.md';
@@ -654,6 +654,35 @@ test('in the Chemistry book a stem never sets a unit inside its math after a pow
   assert.equal(value(fillin('Use $\\ce{SbCl3(s) + Cl2(g) -> SbCl5(s)}$ $\\Delta H^\\circ = -80\\ \\text{kJ}$ to find the change.')).length, 1);
   assert.deepEqual(value(fillin('Use $\\ce{SbCl3(s) + Cl2(g) -> SbCl5(s)}$ $\\Delta H^\\circ$ = −80 kJ to find the change.')), [], 'the ruled form');
   assert.deepEqual(value(fillin('What mass of ore holds $1.00 \\times 10^{3}\\ \\text{kg}$ of copper?')), [], 'the power-of-ten sentence alone');
+});
+
+test('in the Chemistry book a sentence gives a symbol its value with the symbol in math and the value in prose', () => {
+  const hits = (src, file = CHEM) => errorsOf(`${src}\n`, file).filter((e) => /symbol's value and unit inside inline math/.test(e));
+  for (const tex of [
+    String.raw`q = -2.9\ \text{kJ}`,
+    String.raw`T_\text{i,rebar} = 248\ {}^\circ\text{C}`,
+    String.raw`c_\text{metal} = 0.13\ \text{J/g}\ {}^\circ\text{C}`,
+    String.raw`\Delta H^\circ_\text{f}[\ce{O3(g)}] = +143\ \text{kJ/mol}`,
+    String.raw`N = 6.022 \times 10^{23}\ \text{mol}^{-1}`,
+  ]) {
+    assert.equal(symbolValueUnit(tex), true, tex);
+    assert.equal(hits(`Solving this gives $${tex}$, so it is settled.`).length, 1, tex);
+  }
+  // The ruled form; a number with no unit; arithmetic; a relation between
+  // two quantities; a formula in words; a chain of equalities; display math.
+  for (const body of [
+    'Solving this gives $q$ = −2.9 kJ, so it is settled.',
+    'Sodium has $Z = 11$.',
+    String.raw`The ratio $\frac{14.82\ \text{g carbon}}{2.78\ \text{g hydrogen}} = \frac{5.33\ \text{g carbon}}{1.00\ \text{g hydrogen}}$ holds.`,
+    String.raw`Since $1\ \text{ppm} = 10^{3}\ \text{ppb}$, multiply.`,
+    String.raw`Here $\text{ppm} = \frac{\text{mass solute}}{\text{mass solution}} \times 10^{6}\ \text{ppm}$.`,
+    String.raw`So $q = c \times m \times \Delta T = 4.184\ \text{J}$ per degree.`,
+    String.raw`$$\ce{H2 + Cl2 -> 2HCl} \qquad \Delta H = -184.6\ \text{kJ}$$`,
+  ]) assert.deepEqual(hits(body), [], body);
+  // An answer display is a math display, and another book is not held to the form.
+  const fillin = `{{< fillin\n  question="Find the enthalpy change. Enter it in kilojoules."\n  answer="-153"\n  answerForm="sig-figs:3 last-digit:0"\n  answerDisplay="$\\Delta H = -153\\ \\text{kJ}$"\n  hint="Scale the molar value."\n>}}`;
+  assert.deepEqual(hits(`Body text.\n\n${fillin}`), []);
+  assert.deepEqual(hits(String.raw`Solving this gives $q = -2.9\ \text{kJ}$.`, MATH), []);
 });
 
 // ---- punctuation closing a \ce{…} -------------------------------------------

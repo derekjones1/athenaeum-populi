@@ -483,6 +483,27 @@ export const STEM_POWER_UNIT = /\\times\s*10\s*\^\s*(?:\{[^{}]*\}|-?\d)\s*(?:\\ 
 /** Any number in a stem's inline math followed, inside the same span, by a unit set as text: `$\Delta H = -314\ \text{kJ}$` (chapter 5). */
 export const STEM_NUMBER_UNIT = /\d(?:\{,\}\d)*\s*(?:\\ |\\,)\s*\\(?:text|mathrm)\s*\{(?!\s*(?:and|or|of|for|to|in)\b)/;
 
+/**
+ * Is this inline math nothing but a symbol set equal to a value with its
+ * unit — `q = -2.9\ \text{kJ}`, `T_\text{i} = 248\ {}^\circ\text{C}`? In
+ * running text that is the symbol in math and the value and unit in prose
+ * (`$q$ = −2.9 kJ`), body and stem alike (Derek, November 14, 2026).
+ * Arithmetic stays math: a fraction, a product, a relation between two
+ * quantities (`1\ \text{ppm} = 10^{3}\ \text{ppb}`), a formula in words.
+ */
+export function symbolValueUnit(tex) {
+  const sides = String(tex).split('=');
+  if (sides.length !== 2) return false;
+  const [left, right] = sides.map((side) => side.trim());
+  if (!left || /^[\d+\-−(]|\\t?frac|\\times|\\div|\\cdot/.test(left) || STEM_NUMBER_UNIT.test(left)) return false;
+  // A symbol, not a quantity named in words ("percent yield = …").
+  if (/^\\(?:text|mathrm)\s*\{/.test(left) || /^\\%/.test(left)) return false;
+  const value = /^[+\-−]?\d[\d.]*(?:\{,\}\d+)*\s*(?:\\times\s*10\s*\^\s*(?:\{[^{}]*\}|-?\d)\s*)?(?:\\ |\\,)\s*(.+)$/.exec(right);
+  if (!value) return false;
+  const unit = value[1];
+  return /^(?:\\(?:text|mathrm)\s*\{|\{\}\^\\circ)/.test(unit) && !/\\t?frac|\\times|\\div|[+=]|\\left|\\right/.test(unit);
+}
+
 // ---- the lint ----------------------------------------------------------------
 
 /**
@@ -581,6 +602,23 @@ export function lintLeaks(src, filename = '') {
           : 'a formula spaced by hand never matches the ones mhchem sets beside it';
         err(texStart + hit.index, `formula \`${hit.written}\` is set by hand inside math — write \`\\ce{${ceSpelling(hit.written)}}\` (${reason})`);
       }
+    }
+  }
+
+  // ---- a symbol with its value, in running text ------------------------------
+  // One form wherever a sentence gives a symbol its value: the symbol in
+  // math, the equals sign, value, and unit in prose — `$q$ = −2.9 kJ` — so a
+  // worked example and the exercise under it read alike (the stem half of
+  // the rule is the unit lint further down; a stem's math is also spoken
+  // whole). An `answerDisplay` is a math display, not a sentence, and
+  // display math keeps `\Delta H = -92.2\ \text{kJ}`.
+  if (chemistry) {
+    for (const span of mathSpans(src, { maskCode: true })) {
+      if (span.display || !symbolValueUnit(span.tex)) continue;
+      const lineStart = src.lastIndexOf('\n', span.index) + 1;
+      const param = /(\w+)="(?:[^"\\]|\\.)*$/.exec(src.slice(lineStart, span.index))?.[1];
+      if (param === 'answerDisplay' || param === 'answer' || param === 'question') continue;
+      err(span.index, `\`$${span.tex.slice(0, 50)}$\` sets a symbol's value and unit inside inline math — in running text the symbol is math and the value and unit are prose: \`$q$ = −2.9 kJ\` (the minus sign U+2212)`);
     }
   }
 

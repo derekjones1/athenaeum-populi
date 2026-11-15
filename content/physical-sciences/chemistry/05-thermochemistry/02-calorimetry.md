@@ -71,7 +71,7 @@ $$\begin{aligned} &(0.449\ \text{J/g}\ {}^\circ\text{C})(360.0\ \text{g})(42.7\ 
 
 $$\begin{aligned} T_\text{i,rebar} = {} &\frac{(4.184\ \text{J/g}\ {}^\circ\text{C})(425\ \text{g})(42.7\ {}^\circ\text{C} - 24.0\ {}^\circ\text{C})}{(0.449\ \text{J/g}\ {}^\circ\text{C})(360.0\ \text{g})} \\[6pt] &+ 42.7\ {}^\circ\text{C} \end{aligned}$$
 
-Solving this gives $T_\text{i,rebar} = 248\ {}^\circ\text{C}$, so the initial temperature of the rebar was 248 °C.
+Solving this gives $T_\text{i,rebar}$ = 248 °C, so the initial temperature of the rebar was 248 °C.
 
 {{< fillin
   question="A 248-g piece of copper is dropped into 390 mL of water at 22.6 °C. The final temperature of the water was measured as 39.9 °C. Calculate the initial temperature of the piece of copper. Assume that all heat transfer occurs between the copper and the water. (Specific heats are in the table of specific heats of common substances in [Section 5.1 Energy Basics](/physical-sciences/chemistry/05-thermochemistry/01-energy-basics/).) Enter the temperature in degrees Celsius."
@@ -124,7 +124,7 @@ Comparing this with values in the table of specific heats of common substances i
 >}}
 
 {{< selfcheck question="A 92.9-g piece of a silver/gray metal is heated to 178.0 °C, and then quickly transferred into 75.0 mL of water initially at 24.0 °C. After 5 minutes, both the metal and the water have reached the same temperature: 29.7 °C. Determine the specific heat and the identity of the metal. (Note: You should find that the specific heat is close to that of two different metals. Explain how you can confidently determine the identity of the metal). (Specific heats are in the table of specific heats of common substances in [Section 5.1 Energy Basics](/physical-sciences/chemistry/05-thermochemistry/01-energy-basics/).)" hint="Compare your specific heat with the metals in the table of specific heats of common substances in Section 5.1 Energy Basics, then decide how the close candidates can be told apart." >}}
-$c_\text{metal} = 0.13\ \text{J/g}\ {}^\circ\text{C}$.
+$c_\text{metal}$ = 0.13 J/g °C.
 
 This specific heat is close to that of either gold or lead. It would be difficult to determine which metal this was based solely on the numerical values. However, the observation that the metal is silver/gray in addition to the value for the specific heat indicates that the metal is lead.
 ===CHECKS===
