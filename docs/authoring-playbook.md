@@ -857,6 +857,23 @@ grandfather. The working rules:
   ordinary authoring; only a drop means a gate went quiet). A deliberate
   drop — a replaced duplicate, a disclosed deviation, a mirror-rule
   conversion — is traced to its item and named in the commit.
+- **A decision left to Derek is shown, not only described** *(Derek,
+  November 15, 2026)*. Whenever a handoff says something is "up to Derek",
+  "for Derek", "needs review", or a ruling he may want to overrule, the
+  same message shows him an example of it:
+  - **On the page**: build, serve the build (`PORT=1315 npm run
+    serve:public`), and open the page in his browser (`open <url>`), saying
+    which heading and which item to look at. Where the spot is hard to
+    find, open a scratch copy or a small comparison page with the spot
+    highlighted instead; a scratch page is never committed.
+  - **In the chat**: the item as the learner sees it — stem, options, key —
+    and, for a ruling, what the page would carry if he decided the other
+    way, with the difference marked.
+  - Either or both, by what the decision needs: a rendering question needs
+    the page; a wording or rule question can be settled from the chat
+    alone. A bare description ("5.2 has no calculation item") is not
+    enough for him to decide on.
+  - Stop the server when he says he is done.
 
 ## Done checklist
 
@@ -882,3 +899,5 @@ grandfather. The working rules:
 - [ ] Browser check confirms math appears once, spacing is correct, components
       work, and figures match the source.
 - [ ] Handoff lists source evidence, visual pages, and all uncommitted files.
+- [ ] Every decision left to Derek is shown with an example — the page opened
+      at the spot, the item quoted in the chat, or both (§5).
