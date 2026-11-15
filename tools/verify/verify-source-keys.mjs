@@ -2663,6 +2663,32 @@ export function judgeKeyedSortbins(item, units, { aliases = [] } = {}) {
     : { status: 'confirmed', exercise };
 }
 
+/** The sets of quantum numbers an answer prints after letter labels ("x. 4 0 0 ½, y. …"), as `{ label, canon }`; [] when it labels none. */
+export function letteredSets(answer) {
+  const pieces = String(answer ?? '').trim().replace(/[\s,;.]+$/, '').split(/\s*[,;]\s*(?=[a-z]\.\s)/);
+  const sets = pieces.map((piece) => /^([a-z])\.\s+(.+)$/.exec(piece.trim())).filter(Boolean)
+    .map(([, label, set]) => ({ label, canon: chemCanon(set, 'quantum-numbers') }));
+  return sets.length === pieces.length && sets.every((entry) => entry.canon) ? sets : [];
+}
+
+/** A quantum-number textin against its unit (judgeKeyedUnit). */
+function judgeQuantumSet(item, unit, key, exercise, differs) {
+  if (!key) return differs;
+  const lettered = letteredSets(unit.answer);
+  if (new Set(lettered.map((entry) => entry.label)).size >= 2) {
+    const asked = [...new Set([...askedClosing(item.question).matchAll(/\(([a-z])\)/g)].map((match) => match[1]))]
+      .filter((label) => lettered.some((entry) => entry.label === label));
+    if (asked.length !== 1) {
+      return { ...differs, detail: `source ${unit.id} answers one set per label (${JSON.stringify(unit.answer.slice(0, 80))}); the item's closing sentence must name the one it keys ("Enter the set for the orbital of type (x) shown in the figure above.")` };
+    }
+    const held = lettered.find((entry) => entry.label === asked[0]);
+    return held.canon === key ? { status: 'confirmed', exercise }
+      : { ...differs, detail: `textin keys ${JSON.stringify(item.answer)} for (${asked[0]}), whose set source ${unit.id} prints as ${JSON.stringify(held.canon)} — the key is the source's set, not another possible one` };
+  }
+  const sets = String(unit.answer).split(/[,;]/).map((piece) => chemCanon(piece.replace(/^\s*[a-z]\.\s+/, ''), 'quantum-numbers')).filter(Boolean);
+  return sets.includes(key) || chemCanon(unit.answer, 'quantum-numbers') === key ? { status: 'confirmed', exercise } : differs;
+}
+
 /**
  * One multiplechoice, fillin, or selfcheck of a keyed-only book
  * (tools/lib/keyed-units.mjs; docs/subjects/chemistry.md "Exercises")
@@ -2715,6 +2741,15 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
       // CH") is read without them: a word of three letters or more is never
       // an element's symbol.
       const key = chemCanon(item.answer, item.form);
+      // A set of quantum numbers (6.3): the key is the source's set, read by
+      // the grader's own reader — "4 0 0 ( 1 )/( 2 )", the positive spin
+      // unsigned, and the page's "4 0 0 +1/2" are one set; another possible
+      // set of the same n and l is another key. Several sets to one part,
+      // each after a letter label ("x. 4 0 0 ½, y. 2 1 0 ½, z. 3 2 0 ½"): the
+      // item whose closing sentence names one label ("Enter the set for the
+      // orbital of type (y) shown in the figure above.") is held to that
+      // label's set, as the sibling fill-ins are held to their numbers.
+      if (item.form === 'quantum-numbers') return judgeQuantumSet(item, unit, key, exercise, differs);
       // Several configurations to one part, each in the sentence of its
       // element ("Co has …: 1s²…3d⁷. I has …: …5p⁵", 6.4): the item whose
       // closing sentence names one element by name ("Enter the electron

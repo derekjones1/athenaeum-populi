@@ -1312,6 +1312,40 @@ test('the docs layouts are the theme\'s, with the content passed through glue-ma
   assert.match(css, /\.ap-math-glue > \.katex wbr \{\s*display: inline;/);
 });
 
+test('the playbook\'s quantum-number table is what the grader does, and its closing sentence is the lint\'s', async () => {
+  const chem = read('docs/subjects/chemistry.md');
+  const { checkChem, chemKeyProblem } = await import('../../assets/js/lib/text/check-chem.mjs');
+  const { QUANTUM_CLOSING } = await import('../lint/lints-leaks.mjs');
+  const flat = chem.replace(/\s+/g, ' ');
+  const heading = chem.indexOf('### Sets of quantum numbers: `answerForm="quantum-numbers"`');
+  assert.ok(heading > 0, 'the section is found');
+  const section = chem.slice(heading, chem.indexOf('\n### ', heading + 10));
+  const tableStart = section.indexOf('| Typed | Against | Verdict | Feedback |');
+  const after = section.slice(tableStart).split('\n').slice(2);
+  const rows = after.slice(0, after.findIndex((line) => !line.startsWith('|')));
+  assert.ok(rows.length >= 11, `the table's rows are read (${rows.length})`);
+  let key = null;
+  let typedRead = 0;
+  for (const row of rows) {
+    const [typedCell, againstCell, verdictCell, feedbackCell] = row.split(/(?<!\\)\|/).slice(1, -1).map((cell) => cell.trim());
+    const named = /^`([^`]+)`$/.exec(againstCell);
+    if (named) key = named[1];
+    else assert.equal(againstCell, 'the same key', row.slice(0, 60));
+    for (const [, typed] of typedCell.matchAll(/`([^`]+)`/g)) {
+      const verdict = checkChem(typed, key, { form: 'quantum-numbers' });
+      assert.equal(verdict.status, verdictCell, `${typed} against ${key}`);
+      if (verdict.message) assert.ok(feedbackCell.includes(verdict.message), `the row quotes the feedback for ${typed}: ${verdict.message}`);
+      typedRead += 1;
+    }
+  }
+  assert.ok(typedRead >= 20, `the table's typed responses are read (${typedRead})`);
+  assert.ok(flat.includes(QUANTUM_CLOSING), 'the closing sentence the lint enforces is the one the playbook quotes');
+  assert.ok(chemKeyProblem('4 0 0 1/2', 'quantum-numbers'), 'a key written in print');
+  assert.ok(chemKeyProblem('2 2 0 +1/2', 'quantum-numbers'), 'a possible set');
+  assert.ok(chemKeyProblem('4 0 0 +1/2', 'quantum-numbers', '4 0 0 −1/2'), 'no accept list');
+  assert.match(flat, /\| a set of quantum numbers for ONE orbital or electron .*`answerForm="quantum-numbers"`/, 'the Exercises table names the form');
+});
+
 test('the playbook\'s configuration and ordering table is what the grader does, and its closing sentences are the lint\'s', async () => {
   const chem = read('docs/subjects/chemistry.md');
   const { checkChem, chemKeyProblem } = await import('../../assets/js/lib/text/check-chem.mjs');

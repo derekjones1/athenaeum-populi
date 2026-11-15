@@ -307,12 +307,12 @@ function sectionAtLine(markdown) {
   return (line) => at[line - 1] ?? '';
 }
 
-const SOURCED_FORMS = /^(?:formula|equation|configuration|ordering)$/;
+const SOURCED_FORMS = /^(?:formula|equation|configuration|ordering|quantum-numbers)$/;
 /** The items of a keyed-only book's check that must re-ask a worked example. */
 const mustBeSourced = (item) => item.type === 'fillin' || (item.type === 'textin' && SOURCED_FORMS.test(item.form || ''));
 
 /** The longest run of a Solution's words read as one formula, and as one equation. */
-const WINDOW = { formula: 14, equation: 48, configuration: 48, ordering: 24 };
+const WINDOW = { formula: 14, equation: 48, configuration: 48, ordering: 24, 'quantum-numbers': 32 };
 
 /**
  * Whether a worked Solution prints a formula or an equation. A Solution is
@@ -326,14 +326,17 @@ export function solutionPrints(solution, key, form) {
   if (!wanted) return false;
   const words = String(solution).split(/\s+/).filter(Boolean);
   for (let from = 0; from < words.length; from += 1) {
-    if (!/^[\[(]?[A-Z0-9]/.test(words[from])) continue;
-    // A configuration or an ordering is read whole: the first subshells of
-    // a longer configuration, or the first members of a longer ranking, are
-    // not one the Solution prints.
-    const goesOn = { configuration: /^(?:[1-7]|[1-7]?[spdf]\^)/, ordering: /^[<>]/ }[form];
+    // A set of quantum numbers may open with its first label ("n = 4, l = 0, …").
+    if (!/^[\[(]?[A-Z0-9]/.test(words[from]) && !(form === 'quantum-numbers' && /^[(\[{]?(?:n|[+−–-]?[\d.½])/.test(words[from]))) continue;
+    // A configuration, an ordering, or a set of quantum numbers is read
+    // whole: the first subshells of a longer configuration, the first
+    // members of a longer ranking, or four values of a longer run of
+    // numbers (a table of several sets) are not one the Solution prints.
+    const goesOn = { configuration: /^(?:[1-7]|[1-7]?[spdf]\^)/, ordering: /^[<>]/, 'quantum-numbers': /^[+−–-]?(?:\d|\.\d|\(|½)/ }[form];
     if (goesOn && from > 0 && (goesOn.test(words[from - 1]) || /^[spdf]\^/.test(words[from - 1]))) continue;
     for (let to = from + 1; to <= Math.min(words.length, from + WINDOW[form]); to += 1) {
-      if (goesOn && to < words.length && !/[.,;:]$/.test(words[to - 1]) && goesOn.test(words[to])) continue;
+      // (A set ends with its spin, so a number after it starts the next row.)
+      if (goesOn && form !== 'quantum-numbers' && to < words.length && !/[.,;:]$/.test(words[to - 1]) && goesOn.test(words[to])) continue;
       if (chemCanon(words.slice(from, to).join(' ').replace(/[.,;:]+$/, ''), form) === wanted) return true;
     }
   }

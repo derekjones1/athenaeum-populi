@@ -92,13 +92,15 @@ test('the probe builds chapter 4\'s several-keys parts one item per key, and fin
 test('chapter 6\'s shapes are built as the page carries them, and the gates read every one (Chemistry 2e 6.3–6.5)', () => {
   const em = (letter) => `<emphasis effect="italics">${letter}</emphasis>`;
   const printed = (spaced) => spaced.split(' ').map((token) => token.replace(/^(\d)([spdf])(\d+)$/, (_, n, l, count) => `${n}${em(l)}<sup>${count}</sup>`)).join('');
+  // 6.3's spin, ½ in MathML with the separator inside the math.
+  const half = (mark) => `<m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>${mark}</m:mo></m:mrow></m:math>`;
   const xml = cnxml(
     exercise('c4', ['Predict the electron configuration of each of the following atoms:', '(a) N', '(b) Fe'], `(a) ${printed('1s2 2s2 2p3')}; (b) ${printed('1s2 2s2 2p6 3s2 3p6 4s2 3d6')}`)
     + exercise('c20', ['Cobalt–60 and iodine–131 are radioactive isotopes commonly used in nuclear medicine. How many protons, neutrons, and electrons are in atoms of these isotopes? Write the complete electron configuration for each isotope.'],
       `Co has 27 protons, 27 electrons, and 33 neutrons: ${printed('1s2 2s2 2p6 3s2 3p6 4s2 3d7')}. I has 53 protons, 53 electrons, and 78 neutrons: ${printed('1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2 5p5')}.`)
     + exercise('r5', ['Based on their positions in the periodic table, rank the following atoms in order of increasing first ionization energy: F, Li, N, Rb'], 'Rb &lt; Li &lt; N &lt; F')
     + exercise('s5', [`Identify the subshell in which electrons with the following quantum numbers are found:`, `(a) ${em('n')} = 2, ${em('l')} = 1`, `(b) ${em('n')} = 4, ${em('l')} = 2`], `(a) 2${em('p')}; (b) 4${em('d')}`)
-    + exercise('o11', ['Consider the orbitals shown here in outline.', '(a) What is the maximum number of electrons contained in an orbital of type (x)? Of type (y)? Of type (z)?', '(b) How many orbitals of type (x) are found in a shell with n = 2? How many of type (y)? How many of type (z)?'], '(a) x. 2, y. 2, z. 2; (b) x. 1, y. 3, z. 0')
+    + exercise('o11', ['Consider the orbitals shown here in outline.', '(a) What is the maximum number of electrons contained in an orbital of type (x)? Of type (y)? Of type (z)?', '(b) How many orbitals of type (x) are found in a shell with n = 2? How many of type (y)? How many of type (z)?', '(c) Write a set of quantum numbers for an electron in an orbital of type (x) in a shell with n = 4. Of an orbital of type (y) in a shell with n = 2. Of an orbital of type (z) in a shell with n = 3.'], `(a) x. 2, y. 2, z. 2; (b) x. 1, y. 3, z. 0; (c) x. 4 0 0 ${half(',')} y. 2 1 0 ${half(',')} z. 3 2 0 ${half(';')}`)
     + exercise('i13', ['Which atom and/or ion is (are) isoelectronic with Br<sup>+</sup>: Se<sup>2+</sup>, Se, As<sup>–</sup>, Kr, Ga<sup>3+</sup>, Cl<sup>–</sup>?'], 'Se, As<sup>−</sup>')
     + exercise('p12', [`Which ion with a +1 charge has the electron configuration ${printed('1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6')}? Which ion with a –2 charge has this configuration?`], 'Rb<sup>+</sup>, Se<sup>2−</sup>'),
   );
@@ -110,6 +112,9 @@ test('chapter 6\'s shapes are built as the page carries them, and the gates read
   assert.match(built('r5')[0].question, /separated by <\.$/);
   assert.deepEqual(built('s5(a)').map(({ answer, form }) => [answer, form]), [['2p', '']]);
   assert.deepEqual(built('o11(b)').map(({ answer }) => answer), ['1', '3', '0']);
+  // One set of quantum numbers per orbital type, keyed in the page's print, each closing with its type and how a set is typed.
+  assert.deepEqual(built('o11(c)').map(({ answer, form }) => [answer, form]), [['4 0 0 +1/2', 'quantum-numbers'], ['2 1 0 +1/2', 'quantum-numbers'], ['3 2 0 +1/2', 'quantum-numbers']]);
+  assert.match(built('o11(c)')[1].question, /Enter the set for the orbital of type \(y\) shown in the figure above\. Type the four values in the order n, l, mₗ, mₛ, separated by spaces\.$/);
   assert.deepEqual(built('i13').map(({ answer }) => answer), ['no', 'yes', 'yes', 'no', 'no', 'no']);
   assert.deepEqual(built('p12').map(({ question }) => question.split('? ').pop()), ['Enter the symbol of the ion with a +1 charge.', 'Enter the symbol of the ion with a –2 charge.']);
   assert.deepEqual(probeModule(xml).findings, []);

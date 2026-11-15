@@ -23,9 +23,12 @@
  * their gate first, in page order. Exit 1 when any key is not graded
  * correct.
  *
- * An electron configuration or an ordering is typed as typed-writings.mjs
- * says: pass A as its stem's closing sentence asks, --variants every second
- * writing in turn (unspaced, caret, shell order; `>`, a comma list).
+ * An electron configuration, an ordering, or a set of quantum numbers is
+ * typed as typed-writings.mjs says: pass A as its stem's closing sentence
+ * asks, --variants every second writing in turn (unspaced, caret, shell
+ * order; `>`, a comma list; the other spin, another mₗ, a comma list, the
+ * labelled writing, a decimal spin, and four wrong sets whose messages are
+ * listed — a kind that starts "wrong-").
  *
  * --variants: a second ordinary way of writing each answer instead — the
  * letter x for the times sign, a leading "+" on an oxidation state, no
@@ -39,8 +42,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { chromium } from 'playwright';
-import { configurationWritings, orderingWritings } from './typed-writings.mjs';
+import { configurationWritings, orderingWritings, quantumWritings } from './typed-writings.mjs';
 
+/** The forms typed in several writings, each by its writer. */
+const WRITINGS = { configuration: configurationWritings, ordering: orderingWritings, 'quantum-numbers': quantumWritings };
 const REPO = fileURLToPath(new URL('../..', import.meta.url)).replace(/\/$/, '');
 const BASE = process.env.BASE_URL || 'http://127.0.0.1:1315';
 const args = process.argv.slice(2);
@@ -171,11 +176,11 @@ for (const route of routes()) {
         await options.nth(at).click({ timeout: 8000 });
         record.feedback = (await item.locator('.ap-mc-feedback').textContent()).trim();
         record.result = record.feedback.startsWith('Correct!') ? 'correct' : 'NOT-CORRECT';
-      } else if (info.tag === 'text-in' && (info.form === 'configuration' || info.form === 'ordering')) {
+      } else if (info.tag === 'text-in' && WRITINGS[info.form]) {
         // Each writing in turn (typed-writings.mjs), one record each. A
         // right answer locks the field, so it is unlocked for the next
         // writing; the key's own writing is typed last, so a follow-up opens.
-        const write = info.form === 'configuration' ? configurationWritings : orderingWritings;
+        const write = WRITINGS[info.form];
         const writings = write(info.answer, { variants: pass === 'B' });
         await item.locator('.ap-textin-check').waitFor({ timeout: 20000 });
         const field = item.locator('.ap-textin-field');

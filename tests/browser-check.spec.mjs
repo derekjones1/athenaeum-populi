@@ -2159,6 +2159,34 @@ test('a Chemistry formula field reads back what is typed, says what a bare symbo
   await statusOf(salt).toBe('correct');
 });
 
+// A set of quantum numbers (docs/subjects/chemistry.md "Sets of quantum
+// numbers"; Chemistry 6.3). The grader is unit-tested; what only the page
+// shows is the field wired to it: no typing guide (the stem says how), the
+// "Read as" line, a message in place of a bare "Not quite", and a set other
+// than the source's graded right.
+test('a Chemistry quantum-number field reads a set back, says why a set is wrong, and takes any correct set', async ({ page }) => {
+  await gotoBuiltPage(page, '/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/03-development-of-quantum-theory/');
+  const upgraded = (el) => Boolean(customElements.get('text-in')) && Boolean(el.querySelector('.ap-textin-check'));
+  const statusOf = (card) => expect.poll(async () => card.evaluate((el) => el.status), { timeout: 5000 });
+  const y = page.locator('text-in[data-answer-form="quantum-numbers"][data-answer="2 1 0 +1/2"]');
+  await expect(y).toHaveCount(1);
+  await waitForUpgrade(y, upgraded);
+  await y.scrollIntoViewIfNeeded();
+  const field = y.locator('.ap-textin-field');
+  await expect(y.locator('.ap-textin-guide')).toHaveCount(0);
+  // A possible set of the shell, in another subshell: wrong, told why, never the l.
+  await field.fill('2 0 0 1/2');
+  await expect(y.locator('.ap-textin-reading')).toHaveText('Read as: n = 2, l = 0, mₗ = 0, mₛ = +1/2');
+  await field.press('Enter');
+  await statusOf(y).toBe('incorrect');
+  await expect(y.locator('.ap-textin-feedback')).toHaveText('That is a possible set for this shell, but not for this type of orbital.');
+  // Another set than the source's, typed as a comma list: right.
+  await field.fill('2, 1, -1, -1/2');
+  await expect(y.locator('.ap-textin-reading')).toHaveText('Read as: n = 2, l = 1, mₗ = −1, mₛ = −1/2');
+  await field.press('Enter');
+  await statusOf(y).toBe('correct');
+});
+
 // A charge or a subscript written in Unicode is drawn by the subset face
 // "AP SupSub" (assets/css/custom.css, tools/build/gen-body-font.py), not by
 // the body face, whose own `⁻` is two or three pixels across. Three things can

@@ -170,6 +170,7 @@ function renderedElements(markdown) {
       attrs: {
         'data-answer': p.answer,
         ...(p.accept ? { 'data-accept': p.accept } : {}),
+        ...(p.answerForm ? { 'data-answer-form': p.answerForm } : {}),
         'data-question': p.question,
       },
     });

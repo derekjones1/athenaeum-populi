@@ -53,7 +53,7 @@ const GUIDE = {
   equation: 'Type subscripts as plain numbers, a charge after ^, and the arrow as ->: Cu^2+(aq) + 2OH^-(aq) -> Cu(OH)2(s). The state symbols (s), (l), (g), and (aq) are optional.',
 };
 // Every form whose field reads back what it has read ("Read as: 1s²2s²2p⁶").
-const READ_BACK = ['formula', 'equation', 'configuration', 'ordering'];
+const READ_BACK = ['formula', 'equation', 'configuration', 'ordering', 'quantum-numbers'];
 // The pieces of a guide a line must not break inside: the arrow as typed,
 // and each example (what follows the colon, up to its comma or period).
 const GUIDE_UNBROKEN = /->(?=:)|(?<=: |, )[A-Z0-9][^,]*?[,.](?= |$)/g;
@@ -120,9 +120,10 @@ class TextInElement extends HTMLElement {
 
     wrap.append(form);
     if (READ_BACK.includes(this.form) && !GUIDE[this.form]) {
-      // A configuration or an ordering field has no guide: its stem closes
-      // with how to type it (the lint holds the sentence), and the field
-      // reads back what it has read, as a formula field does.
+      // A configuration, an ordering, or a set of quantum numbers has no
+      // guide: its stem closes with how to type it (the lint holds the
+      // sentence), and the field reads back what it has read, as a formula
+      // field does ("Read as: n = 4, l = 0, mₗ = 0, mₛ = +1/2").
       field.autocorrect = 'off';
       const reading = document.createElement('p');
       reading.className = 'ap-textin-reading';

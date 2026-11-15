@@ -1,7 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { configurationWritings, orderingWritings } from './typed-writings.mjs';
+import { configurationWritings, orderingWritings, quantumWritings } from './typed-writings.mjs';
 import { checkChem, ORDERING_NO_SIGN } from '../../assets/js/lib/text/check-chem.mjs';
+import { QUANTUM_L_RANGE, QUANTUM_ML_RANGE, QUANTUM_SHELL, QUANTUM_SUBSHELL } from '../../assets/js/lib/text/check-quantum.mjs';
 
 // verify:typed types these into the real field; here each is graded in Node,
 // so a writing the grader refuses is found before a browser is started.
@@ -30,6 +31,20 @@ test('an ordering is typed with <, then from the other end with >, then as a com
       const verdict = checkChem(typed, key, { form: 'ordering' });
       if (kind === 'comma-list') assert.deepEqual(verdict, { status: 'incorrect', message: ORDERING_NO_SIGN }, `${key}: ${typed}`);
       else assert.equal(verdict.status, 'correct', `${key}: ${typed}`);
+    }
+  }
+});
+
+test('a set of quantum numbers is typed as its stem asks, then in every other writing, and four wrong sets show their messages', () => {
+  assert.deepEqual(quantumWritings('4 0 0 +1/2'), [{ typed: '4 0 0 1/2', kind: 'spaced' }]);
+  assert.deepEqual(quantumWritings('2 1 0 +1/2', { variants: true }).map(({ kind }) => kind),
+    ['other-spin', 'other-ml', 'comma-list', 'labelled', 'decimal-spin', 'wrong-l-for-n', 'wrong-ml-for-l', 'wrong-shell', 'wrong-subshell']);
+  const expected = { 'wrong-l-for-n': QUANTUM_L_RANGE, 'wrong-ml-for-l': QUANTUM_ML_RANGE, 'wrong-shell': QUANTUM_SHELL, 'wrong-subshell': QUANTUM_SUBSHELL };
+  for (const key of ['4 0 0 +1/2', '2 1 0 +1/2', '3 2 0 +1/2', '2 1 −1 −1/2', '1 0 0 −1/2']) {
+    for (const { typed, kind } of [...quantumWritings(key), ...quantumWritings(key, { variants: true })]) {
+      const verdict = checkChem(typed, key, { form: 'quantum-numbers' });
+      if (expected[kind]) assert.deepEqual(verdict, { status: 'incorrect', message: expected[kind] }, `${key}: ${typed}`);
+      else assert.equal(verdict.status, 'correct', `${key}: ${typed} (${kind})`);
     }
   }
 });

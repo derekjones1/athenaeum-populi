@@ -80,6 +80,7 @@ those places.
   and charge on both sides before you write it down.
   When it is `configuration`, write the answer string as each subshell followed by its count, a space between subshells, every subshell written out unless the question gives a noble-gas core: `1s2 2s2 2p6 3s2 3p1`.
   When it is `ordering`, write the answer string as the members from first to last with `<` between them, each charge after `^`: `Si^4+ < Al^3+ < Ca^2+ < K^+` (a list without `<` or `>` is graded wrong).
+  When it is `quantum-numbers`, write the answer string as one set, the four values n, l, mₗ, mₛ in that order with a space between them: `3 1 -1 -1/2` (any correct set of the shell and subshell asked is graded right).
 - **A `sortbins`:** the packet lists its `bins` and its `items` (the labels);
   the masked page prints neither. `answer` is a JSON object mapping EVERY
   label to one bin, both verbatim: `{"Uranium": "Metal", "Bromine":

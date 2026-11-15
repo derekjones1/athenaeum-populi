@@ -18,7 +18,9 @@
                coefficients, where a word is read without them;
                "configuration" — an electron configuration (`1s²2s²2p⁶`,
                `[Kr]5s²4d¹⁰`, check-config.mjs); "ordering" — members
-               ranked with `<` (`Rb < Li < N < F`)
+               ranked with `<` (`Rb < Li < N < F`); "quantum-numbers" — a
+               set n, l, mₗ, mₛ (`4 0 0 +1/2`, check-quantum.mjs), any
+               mₗ and spin of the key's n and l right; no `accept`
     hint       optional hint
 
   Nothing else: `answerDisplay` and `placeholder` were accepted for a year
@@ -37,8 +39,11 @@
   {{- errorf "textin does not take \"answerMode\" — it grades words, not values; use fillin for a math answer (%s)" $.Position -}}
 {{- end -}}
 {{- $answerForm := .Get "answerForm" | default "" -}}
-{{- if and $answerForm (not (in (slice "formula" "equation" "configuration" "ordering") $answerForm)) -}}
-  {{- errorf "textin answerForm %q is not a text form — use \"formula\", \"equation\", \"configuration\", or \"ordering\"; a numeric answer is a fillin (%s)" $answerForm .Position -}}
+{{- if and $answerForm (not (in (slice "formula" "equation" "configuration" "ordering" "quantum-numbers") $answerForm)) -}}
+  {{- errorf "textin answerForm %q is not a text form — use \"formula\", \"equation\", \"configuration\", \"ordering\", or \"quantum-numbers\"; a numeric answer is a fillin (%s)" $answerForm .Position -}}
+{{- end -}}
+{{- if and (eq $answerForm "quantum-numbers") (.Get "accept") -}}
+  {{- errorf "textin answerForm \"quantum-numbers\" takes no accept list — mₗ and mₛ are already free (%s)" .Position -}}
 {{- end -}}
 {{- range (slice "answerDisplay" "placeholder") -}}
   {{- with $.Get . -}}

@@ -409,3 +409,15 @@ test('a solver\'s configuration or ordering is graded by the real reader: core a
   assert.equal(gradeAnswer(order, 'F > N > Li > Rb').status, 'agrees');
   assert.equal(gradeAnswer(order, 'F < N < Li < Rb').status, 'disagrees');
 });
+
+test('a solver\'s set of quantum numbers is graded by the real reader: any mₗ and spin of the key\'s n and l agrees (Chemistry 2e 6.3)', async () => {
+  const { maskKeys } = await import('../lib/content.mjs');
+  const item = { kind: 'textin', params: { question: 'q', answer: '2 1 0 +1/2', answerForm: 'quantum-numbers' } };
+  assert.equal(packetItem({ ...item, hash: 'h', path: 'p', line: 1 }).answerForm, 'quantum-numbers');
+  for (const written of ['2 1 0 +1/2', '2 1 -1 -1/2', 'n = 2, l = 1, ml = +1, ms = 1/2']) assert.equal(gradeAnswer(item, written).status, 'agrees', written);
+  assert.equal(gradeAnswer(item, '2 0 0 +1/2').status, 'disagrees', 'another type of orbital');
+  assert.equal(gradeAnswer(item, '3 1 0 +1/2').status, 'disagrees', 'another shell');
+  // The masked page hides the key as every other form's is hidden.
+  const masked = maskKeys('{{< textin\n  question="Enter the set. Type the four values in the order n, l, mₗ, mₛ, separated by spaces."\n  answer="2 1 0 +1/2"\n  answerForm="quantum-numbers"\n  hint="Look at the outline."\n>}}\n');
+  assert.doesNotMatch(masked, /2 1 0/);
+});

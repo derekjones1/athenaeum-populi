@@ -261,6 +261,7 @@ The component follows the SHAPE of the source's keyed answer:
 | a balanced equation, a half-reaction, a net ionic equation | `textin` with `answerForm="equation"` ("Formulas and equations") |
 | an electron configuration ("1s²2s²2p⁶3s²3p²", "[Kr]5s²4d¹⁰") | `textin` with `answerForm="configuration"` ("Electron configurations and orderings"), the stem closing "Type each subshell followed by its number of electrons, with a space between subshells." (lint). One configuration per atom or ion where an answer prints several in turn ("Co has 27 protons, 27 electrons, and 33 neutrons: 1s²…3d⁷. I has …"), each stem saying whose before the typing sentence — "Enter the electron configuration of cobalt-60." — and the counts beside them as the counts row says, "Enter the number of neutrons in an atom of iodine-131."; the gate holds each item to the sentence of the element its closing names *(November 15, 2026, chapter 6)* |
 | an ordering ("Rb < Li < N < F", "Si⁴⁺ < Al³⁺ < Ca²⁺ < K⁺") | `textin` with `answerForm="ordering"`, the stem closing "Type the symbols in the order you rank them, separated by <." (lint) *(chapter 6)* |
+| a set of quantum numbers for ONE orbital or electron ("4 0 0 ½"; one per label, "x. 4 0 0 ½, y. 2 1 0 ½, z. 3 2 0 ½") | `textin` with `answerForm="quantum-numbers"` keyed with the source's set in the page's print, `4 0 0 +1/2` ("Sets of quantum numbers"), the stem closing "Type the four values in the order n, l, mₗ, mₛ, separated by spaces." (lint); one item per label, each closing first with the label it asks — "Enter the set for the orbital of type (x) shown in the figure above." — which the gate holds to that label's set. Any mₗ and either spin of the key's n and l is graded right. The sets of SEVERAL electrons at once (6.3's selenium) stay a `selfcheck` ("Selfchecks") *(November 15, 2026)* |
 | a subshell ("2 p", "4 d") | a plain `textin` keyed `2p` — no form: the word grader folds the letter's capital and, against a key that is a subshell, a space between the number and the letter, and the noun after it (`2 p`, `2P`, `the 2p subshell`, `2p orbitals` right; `2s`, `3p` wrong; a bare `p` is told "Give the shell number with the letter.") *(chapter 6)* |
 | one count per label the stem names ("x. 2, y. 2, z. 2" for three orbitals drawn (x), (y), (z)) | one `whole-number` `fillin` per label, each stem closing with the label it asks: "Enter the number for the orbital of type (x)." — the gate holds each item to its label's number and refuses an item whose closing names none *(chapter 6)* |
 | a count said beside labels that are no numbers ("n = 4", "The five degenerate 3d orbitals", "15 (5A)") | a `whole-number` `fillin` keyed with the count (4, 5, 15): the gate reads a subshell's shell number and an old group label as labels, so the 3 of "3d" or the 5 of "5A" is refused *(chapter 6)* |
@@ -992,8 +993,12 @@ after the rule was written, so the line is drawn by pairs:
     prints once for the whole exercise stays in the part it closes and is
     not copied into the others; the gate holds each part to its own
     segment. The footer says the opening sentence and the label are added.
-- **A "write a set of …" answer** (quantum numbers for an orbital, for the
-  electrons of a shell) is one possible case too, and takes the same form:
+- **A "write a set of …" answer** for ONE orbital or electron is a graded
+  `textin` with `answerForm="quantum-numbers"` ("Sets of quantum numbers"),
+  which takes any correct set *(November 15, 2026, Derek)*. A set for
+  SEVERAL electrons at once (6.3's six for selenium's n = 4 electrons) is
+  one possible case of an arrangement, and stays a `selfcheck` in the
+  same form as above:
   an opening sentence that says what EVERY correct set has (the values the
   question fixes, and the range each free value may take), the added label
   "Sample answer:", and the source's set, whole. The rubric is the opening
@@ -1474,6 +1479,78 @@ Rules for the key and the stem:
   list of members an ordering's stem prints, copied as a list — which the
   field refuses, having no sign, even where the stem lists its members in
   the key's order (6.5's "Mg, Ca, Rb, Cs" → "Mg < Ca < Rb < Cs").
+
+### Sets of quantum numbers: `answerForm="quantum-numbers"`
+
+*(November 15, 2026, Section 6.3; Derek asked that a "write a set of
+quantum numbers" item be graded and take ANY correct set, not only the
+source's.)* A set is read by `assets/js/lib/text/check-quantum.mjs`:
+
+```
+{{</* textin
+  question="Consider the orbitals shown here in outline. Write a set of quantum numbers for an electron in an orbital of type (x) in a shell with n = 4. Of an orbital of type (y) in a shell with n = 2. Of an orbital of type (z) in a shell with n = 3. Enter the set for the orbital of type (y) shown in the figure above. Type the four values in the order n, l, mₗ, mₛ, separated by spaces."
+  answer="2 1 0 +1/2"
+  answerForm="quantum-numbers"
+  hint="Identify the kind of orbital the outline shows and the value of the angular momentum quantum number that kind of orbital has, then take n from the shell the question names: any magnetic quantum number that value allows, and either spin, is right."
+*/>}}
+```
+
+**What is free, and what is not.** The key fixes the shell and the
+subshell: n and l must be the key's. mₗ is free from −l to +l, and mₛ is
++1/2 or −1/2, so against `2 1 0 +1/2` all six of `2 1 −1 ±1/2`,
+`2 1 0 ±1/2`, `2 1 +1 ±1/2` are right. A learner types the four values in
+the order n, l, mₗ, mₛ, separated by spaces, commas, or semicolons, with or
+without parentheses or braces around them, or each labelled in any order
+(`n = 4, l = 0, ml = 0, ms = +1/2`; the labels `m_l`, `mₗ`, `ml`, `m l` and
+`m_s`, `mₛ`, `ms`, `s`, capitals folded); a spin as `+1/2`, `1/2`, `-1/2`,
+`½`, `0.5`, `.5`, signed or not; a minus as a hyphen, an en dash, or U+2212.
+Nothing is `form`. The field reads back what it has read ("Read as: n = 4,
+l = 0, mₗ = 0, mₛ = +1/2") and has no typing guide: the stem closes with
+how to type a set (lint). No message prints the key's n or l, or names the
+type of orbital.
+
+| Typed | Against | Verdict | Feedback |
+|---|---|---|---|
+| `4 0 0 +1/2`, `4, 0, 0, 1/2`, `(4, 0, 0, −1/2)`, `n = 4, l = 0, ml = 0, ms = +1/2`, `ms = -½, m_l = 0, L = 0, N = 4`, `4 0 0 .5` | `4 0 0 +1/2` | correct | |
+| `2 1 -1 -1/2`, `2 1 +1 1/2`, `2 1 0 -0.5` | `2 1 0 +1/2` | correct | |
+| `iron`, `2 1 0` | the same key | incorrect | "That does not read as a set of quantum numbers. Type the four values in the order n, l, mₗ, mₛ, separated by spaces." |
+| `2 1 0 1` | the same key | incorrect | "The spin quantum number mₛ is +1/2 or −1/2." |
+| `0 0 0 1/2`, `2.5 1 0 1/2` | the same key | incorrect | "The principal quantum number n is a whole number, 1 or greater." |
+| `2 -1 0 1/2` | the same key | incorrect | "The angular momentum quantum number l is a whole number, 0 or greater." |
+| `2 1 0.5 1/2` | the same key | incorrect | "The magnetic quantum number mₗ is a whole number." |
+| `2 2 0 1/2` | the same key | incorrect | "In a shell, l runs from 0 to n − 1: the set you entered has an l its own n does not allow." |
+| `2 1 2 1/2` | the same key | incorrect | "mₗ runs from −l to +l: the set you entered has an mₗ its own l does not allow." |
+| `3 1 0 1/2` | the same key | incorrect | "That is a possible set of quantum numbers, but not for the shell the question names." |
+| `2 0 0 1/2` | the same key | incorrect | "That is a possible set for this shell, but not for this type of orbital." |
+
+The messages are taken in that order: a value that does not read, then the
+spin, then a value that is not the kind of number it must be, then an l or
+an mₗ the set's own n or l does not allow, then the shell, then the
+subshell.
+
+Rules for the key and the stem:
+
+- **The key is written in print**: n, l, mₗ, mₛ in that order, one space
+  between them, a negative value with U+2212, the spin signed: `4 0 0
+  +1/2`, `2 1 −1 −1/2` (lint). It is a possible set (l < n, |mₗ| ≤ l), and
+  it takes no `accept` list (lint and shortcode): mₗ and the spin are
+  already free.
+- **The key is what the source prints**: `verify:source-keys` reads the
+  source's MathML ½, unsigned (`4 0 0 ( 1 )/( 2 )`), and the key as one
+  set; another possible set of the same n and l is a different key
+  (refused). Where the answer prints one set per label ("x. … , y. … ,
+  z. …"), the item is held to the set of the label its closing sentence
+  names.
+- **The closing sentence** (lint, `QUANTUM_CLOSING` in
+  `tools/lint/lints-leaks.mjs`): "Type the four values in the order n, l,
+  mₗ, mₛ, separated by spaces." — plain letters, since a `textin` stem takes
+  no `$` math. An item that says which orbital puts that sentence before
+  the typing one. The hint, in words, says where to look and what is free,
+  never the l.
+- **The stem prints no set of the key's n and l** (lint; `verify:replay`
+  replays every set a stem prints, bare or labelled, and the stem itself).
+  A later item's reveal that prints l per orbital type (6.3's "possible l
+  and mₗ values" self-check) sits AFTER the sets.
 
 ### Measured quantities: `sig-figs:<n> last-digit:<k>`
 

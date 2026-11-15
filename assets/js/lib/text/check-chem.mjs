@@ -48,6 +48,9 @@
  * electron CONFIGURATION (`1s²2s²2p⁶`, `[Kr]5s²4d¹⁰`), read by
  * check-config.mjs, and an ORDERING (`Rb < Li < N < F`, `Si⁴⁺ < Al³⁺ < Ca²⁺
  * < K⁺`), read below: its members are formulas, read by `readSpecies`.
+ * And one more (Section 6.3): a SET OF QUANTUM NUMBERS (`4 0 0 +1/2`), read
+ * by check-quantum.mjs — not a formula at all, dispatched here so that every
+ * caller of the chemistry forms (the field, the lint, the gates) meets it.
  *
  * Not read here: a nuclear equation with both numbers on every nuclide, a
  * condensed structural formula with bonds drawn. docs/subjects/chemistry.md
@@ -56,6 +59,7 @@
 import {
   checkConfiguration, configurationCanon, configurationKeyProblem, isConfiguration, previewConfiguration,
 } from './check-config.mjs';
+import { checkQuantum, previewQuantum, quantumCanon, quantumKeyProblem } from './check-quantum.mjs';
 
 export const ELEMENTS = new Set(('H He Li Be B C N O F Ne Na Mg Al Si P S Cl Ar K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr '
   + 'Rb Sr Y Zr Nb Mo Tc Ru Rh Pd Ag Cd In Sn Sb Te I Xe Cs Ba La Ce Pr Nd Pm Sm Eu Gd Tb Dy Ho Er Tm Yb Lu Hf Ta W Re Os Ir Pt Au Hg '
@@ -70,7 +74,7 @@ const ARROW = /<=>|<->|⇌|⇄|⟷|↔|-->|->|→|⟶|=/g;
 const EQUILIBRIUM = /<=>|<->|⇌|⇄|⟷|↔/;
 const STATES = new Set(['s', 'l', 'g', 'aq']);
 
-export const CHEM_FORMS = Object.freeze(['formula', 'equation', 'configuration', 'ordering']);
+export const CHEM_FORMS = Object.freeze(['formula', 'equation', 'configuration', 'ordering', 'quantum-numbers']);
 
 /*
  * A fractional coefficient (Chemistry 2e 5.3: a formation equation is
@@ -905,6 +909,7 @@ export function checkChem(input, answer, { accept = '', form } = {}) {
   const typed = withoutClosingPunctuation(input);
   if (form === 'configuration') return checkConfiguration(typed, answer);
   if (form === 'ordering') return checkOrdering(typed, answer);
+  if (form === 'quantum-numbers') return checkQuantum(typed, answer);
   return form === 'equation' ? checkEquation(typed, answer) : checkFormula(typed, answer, { accept });
 }
 
@@ -913,6 +918,7 @@ export function previewChem(rawInput, form) {
   const input = withoutClosingPunctuation(rawInput);
   if (form === 'configuration') return previewConfiguration(input);
   if (form === 'ordering') return previewOrdering(input);
+  if (form === 'quantum-numbers') return previewQuantum(input);
   if (form === 'equation') {
     const equation = readEquation(input)[0];
     if (!equation) return '';
@@ -937,6 +943,10 @@ export function chemKeyProblem(answer, form, accept = '', { written = true } = {
   if (form === 'configuration' || form === 'ordering') {
     if (accept) return `a${form === 'ordering' ? 'n ordering' : ' configuration'} takes no accept list: ${form === 'ordering' ? 'the direction and the writing of each member are already free' : 'the order of the subshells and a noble-gas core are already free'}`;
     return form === 'configuration' ? configurationKeyProblem(answer) : orderingKeyProblem(answer);
+  }
+  if (form === 'quantum-numbers') {
+    if (accept) return 'a set of quantum numbers takes no accept list: mₗ and mₛ are already free';
+    return quantumKeyProblem(answer);
   }
   if (form === 'formula') {
     if (isConfiguration(answer)) return `${JSON.stringify(answer)} is an electron configuration — declare answerForm="configuration"`;
@@ -996,6 +1006,7 @@ export function hasFractionalCoefficient(answer) {
 /** The key's canonical spelling, for a gate comparing a page key with a source answer. */
 export function chemCanon(text, form) {
   if (form === 'configuration') return configurationCanon(text);
+  if (form === 'quantum-numbers') return quantumCanon(text);
   if (form === 'ordering') {
     // An ordering printed with > is the same order read from the other end.
     const members = orderingKey(String(text ?? '').replace(/\s*\.\s*$/, ''));

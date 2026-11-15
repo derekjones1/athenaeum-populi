@@ -100,6 +100,20 @@ export function chemSpans(question, form) {
     const list = new RegExp(`${MEMBER}(?:\\s*(?:,|<|>|,?\\s+and)\\s*${MEMBER})+`, 'g');
     return [...new Set([...question.matchAll(list)].map((m) => m[0].trim().replace(/,?\s+and\s+/g, ', ')))];
   }
+  // A set of quantum numbers the stem prints, four values in a row ("4 0 0
+  // ½") or each labelled ("n = 4, l = 0, mₗ = 0, and mₛ = +½") — 6.3's
+  // stems print n alone ("in a shell with n = 4"), which is no set — and,
+  // last, the whole stem retyped, as a word item's is: the reader must
+  // refuse it, so every such item is replayed at least once.
+  if (form === 'quantum-numbers') {
+    const VALUE = '[+−–-]?\\s*(?:\\d+(?:\\.\\d+)?|\\.\\d+)(?:\\s*/\\s*\\d+)?½?|[+−–-]?½';
+    const LABEL = '(?:[nl]|m\\s*_?\\s*[lsₗₛ]|mₗ|mₛ|s)\\s*=\\s*';
+    const runs = [
+      new RegExp(`(?<![\\w.])(?:${VALUE})(?:[\\s,;]+(?:${VALUE})){3}`, 'g'),
+      new RegExp(`(?<!\\w)${LABEL}(?:${VALUE})(?:[\\s,;]+(?:and\\s+)?${LABEL}(?:${VALUE})){3}`, 'gi'),
+    ];
+    return [...new Set([...runs.flatMap((run) => [...question.matchAll(run)].map((m) => m[0].trim().replace(/\band\s+/g, ''))), question])];
+  }
   if (form === 'equation') {
     return [...question.matchAll(/[^:;?]*(?:⟶|→|⇌|->)[^;?]*/g)]
       .map((m) => m[0].trim().replace(/\.$/, '')).filter(Boolean);

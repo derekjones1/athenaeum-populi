@@ -24,7 +24,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { keyedUnits, listMembers, sequentialParts } from '../lib/keyed-units.mjs';
 import { chemCanon, chemKeyProblem } from '../../assets/js/lib/text/check-chem.mjs';
-import { numberWords, numbersOnly } from '../verify/verify-source-keys.mjs';
+import { letteredSets, numberWords, numbersOnly } from '../verify/verify-source-keys.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const bundle = path.join(root, 'sources/openstax/osbooks-chemistry-bundle');
@@ -49,7 +49,8 @@ const NUMBER = /^[−–-]?\d[\d,.]*(?:\s*[×x]\s*10\s*\^?\s*\{?[−–-]?\d+\}?
 
 /**
  * `{ shape, component, flag? }` for one keyed answer segment.
- * Shapes: number, formula, equation, equation+, words, sentence, drawing.
+ * Shapes: number, formula, equation, equation+, configuration, ordering,
+ * quantum-numbers, subshell, words, sentence, drawing.
  */
 export function shapeOf(answer, stem = '') {
   const text = String(answer ?? '').replace(/\s+/g, ' ').trim().replace(/[.;]$/, '');
@@ -72,6 +73,19 @@ export function shapeOf(answer, stem = '') {
   }
   //   An ordering: "Rb < Li < N < F".
   if (/</.test(text) && chemCanon(text, 'ordering')) return { shape: 'ordering', component: 'textin answerForm="ordering"' };
+  //   A set of quantum numbers, alone or one per label ("x. 4 0 0 ½, y. 2 1
+  //   0 ½, z. 3 2 0 ½", 6.3 — the MathML ½ reads "( 1 )/( 2 )"): a graded
+  //   set per orbital. The sets of SEVERAL electrons at once, a table with
+  //   its header ("n l m _l s 4 0 0 + ½ 4 0 0 − ½ …", 6.3's selenium), is a
+  //   self-check in the sample-answer form.
+  if (chemCanon(text, 'quantum-numbers')) return { shape: 'quantum-numbers', component: 'textin answerForm="quantum-numbers"' };
+  const sets = letteredSets(text);
+  if (sets.length >= 2) {
+    return { shape: 'quantum-numbers', component: `one textin answerForm="quantum-numbers" per label (${sets.map((entry) => `(${entry.label})`).join(', ')}), each closing with the label it asks` };
+  }
+  if (/^n\s+l\s+m\s*_?\s*l\s+(?:m\s*_?\s*)?s\b/.test(text)) {
+    return { shape: 'quantum-numbers', component: 'selfcheck in the sample-answer form: the sets of several electrons, one answer of many' };
+  }
   //   A subshell: "2 p", "4 d".
   if (/^[1-7]\s?[spdf]$/.test(text)) return { shape: 'subshell', component: `textin keyed ${text.replace(/\s/g, '')}` };
   //   One count per label: "x. 2, y. 2, z. 2".
@@ -191,7 +205,7 @@ function main(argv) {
     process.exit(2);
   }
   const list = argv.includes('--list');
-  const SHAPES = ['number', 'formula', 'equation', 'equation+', 'configuration', 'ordering', 'subshell', 'words', 'sentence', 'drawing'];
+  const SHAPES = ['number', 'formula', 'equation', 'equation+', 'configuration', 'ordering', 'quantum-numbers', 'subshell', 'words', 'sentence', 'drawing'];
   const flags = [];
   const notes = [];
   console.log(`Chapter ${chapter}, ${all[chapter - 1].title}: keyed answers by shape (one row per section; parts counted)`);

@@ -170,6 +170,7 @@ stem shows it.
   `node -e 'import("./assets/js/lib/text/check-text.mjs").then(m=>console.log(m.gradeText("<typed>","<key>",{form:"formula"})))'`
   (`form:"equation"` for an equation).
 - **A `textin` with `answerForm="configuration"` or `"ordering"`:** count the key's electrons (or check its members against the stem's list) yourself and grade the near-misses — the core form, the next subshell over, the reverse order, a member without its charge — through `gradeText` with the item's form, as above.
+- **A `textin` with `answerForm="quantum-numbers"`:** check the key against the source's set for the orbital its closing names, and grade another allowed mₗ, the other spin (both right), and a set of the next shell or another subshell (both wrong, with their messages) through `gradeText`; read the hint and every earlier reveal for the item's l.
 - **Every other `textin`:** grade the rivals a learner would type: the
   product for a quotient, the degree-marked symbol, the wrong-case symbol,
   each singular/plural and meter/metre crossing of a multi-word unit, an

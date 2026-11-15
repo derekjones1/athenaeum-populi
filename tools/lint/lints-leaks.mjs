@@ -66,6 +66,7 @@ import { bookKeyOf, blankPreservingOffsets, maskCode, mathSpans, shortcodes, SHO
 import { foldedForms, matchesForm, normalizeText } from '../../assets/js/lib/text/check-text.mjs';
 import { chemCanon, hasFractionalCoefficient, readSpecies } from '../../assets/js/lib/text/check-chem.mjs';
 import { isConfiguration } from '../../assets/js/lib/text/check-config.mjs';
+import { isPossibleSet, isQuantumSet, readQuantum } from '../../assets/js/lib/text/check-quantum.mjs';
 import { chemSpans } from '../verify/verify-replay.mjs';
 
 /**
@@ -89,6 +90,28 @@ export function orderingStemAnswers(question, answer) {
 export const CONFIGURATION_CLOSING = 'Type each subshell followed by its number of electrons, with a space between subshells.';
 /** The sentence an ordering's stem closes with (Chemistry 6.5; lint). */
 export const ORDERING_CLOSING = 'Type the symbols in the order you rank them, separated by <.';
+/**
+ * The sentence a set of quantum numbers' stem closes with (Chemistry 6.3;
+ * lint). Plain letters, not math: a `textin` stem takes no `$` (the
+ * shortcode and the lint refuse it), so mₗ and mₛ are the Unicode
+ * subscripts the page's rubrics already print.
+ */
+export const QUANTUM_CLOSING = 'Type the four values in the order n, l, mₗ, mₛ, separated by spaces.';
+
+/**
+ * A full possible set of quantum numbers of the key's n and l that a stem
+ * prints, as it prints it, or null: four values in a row ("4 0 0 ½") or
+ * labelled ("n = 4, l = 0, mₗ = 0, mₛ = +½"). Such a stem answers its item.
+ */
+export function quantumStemAnswers(question, answer) {
+  const key = readQuantum(answer);
+  if (!isPossibleSet(key)) return null;
+  return chemSpans(String(question ?? ''), 'quantum-numbers').find((span) => {
+    const set = readQuantum(span);
+    return isPossibleSet(set) && set.n === key.n && set.l === key.l;
+  }) ?? null;
+}
+
 // The rubric-checkpoint coverage helper lints.mjs holds every checkpoint to.
 import { phraseCoverage } from '../lib/openstax-source.mjs';
 
@@ -470,7 +493,7 @@ export function footerKeySpellings(item) {
   const form = String(item.params.answerForm ?? '');
   if (!answer) return [];
   if (item.kind === 'textin') {
-    return ['formula', 'equation', 'configuration', 'ordering'].includes(form) ? [{ kind: form, text: answer }] : [];
+    return ['formula', 'equation', 'configuration', 'ordering', 'quantum-numbers'].includes(form) ? [{ kind: form, text: answer }] : [];
   }
   if (item.kind !== 'fillin' || /\bwhole-number\b/.test(form)) return [];
   const declared = /\bsig-figs:(\d+)/.exec(form);
@@ -709,6 +732,10 @@ export function lintLeaks(src, filename = '') {
         // The word grader drops the superscripts' meaning and the order:
         // `1s22s22p6` would have to be typed as the key's characters.
         err(item.index, `${where}: its key ${JSON.stringify(key)} is an electron configuration graded as words — declare answerForm="configuration"`);
+      } else if (isQuantumSet(key)) {
+        // The word grader reads "4 0 0 +1/2" as four words: another possible
+        // set of the shell and subshell (any mₗ, either spin) is refused.
+        err(item.index, `${where}: its key ${JSON.stringify(key)} is a set of quantum numbers graded as words (only the key's own set passes) — declare answerForm="quantum-numbers"`);
       } else if (/[<>]/.test(key) && chemCanon(key, 'ordering')) {
         // The word grader drops `<`, so the members typed in ANY order pass.
         err(item.index, `${where}: its key ${JSON.stringify(key)} is an ordering graded as words (the word grader drops "<", so any order passes) — declare answerForm="ordering"`);
@@ -756,6 +783,14 @@ export function lintLeaks(src, filename = '') {
     if (chemistry && item.params.answerForm === 'ordering'
       && !String(item.params.question ?? '').includes(ORDERING_CLOSING)) {
       err(item.index, `${where}: an ordering's field has no typing guide — close the stem "${ORDERING_CLOSING}"`);
+    }
+    if (chemistry && item.params.answerForm === 'quantum-numbers'
+      && !String(item.params.question ?? '').includes(QUANTUM_CLOSING)) {
+      err(item.index, `${where}: a set of quantum numbers' field has no typing guide — close the stem "${QUANTUM_CLOSING}"`);
+    }
+    if (item.params.answerForm === 'quantum-numbers') {
+      const printed = quantumStemAnswers(item.params.question, item.params.answer);
+      if (printed) err(item.index, `${where}: the stem prints ${JSON.stringify(printed)}, a set of quantum numbers for the key's own n and l — the stem answers the item`);
     }
     if (item.params.answerForm === 'ordering') {
       const printed = orderingStemAnswers(item.params.question, item.params.answer);
@@ -895,8 +930,10 @@ export function lintLeaks(src, filename = '') {
     // rule landed on September 23 with Microbiology 26.2's "every 10 years"
     // Check Your Understanding converted. Fix: blank a different phrase, or
     // make the item a `multiplechoice` whose options are module-printed or
-    // adjacent values, disclosed in the footer.
-    if (numericKey(normalizeText(item.params.answer || ''))) {
+    // adjacent values, disclosed in the footer. A set of quantum numbers
+    // (`answerForm="quantum-numbers"`, Chemistry 6.3) is four numbers read
+    // as values by its own grader, never compared as a string.
+    if (item.params.answerForm !== 'quantum-numbers' && numericKey(normalizeText(item.params.answer || ''))) {
       err(item.index, `${where}: the answer ${JSON.stringify(item.params.answer)} is a number (or a number with a unit) — a numeric key is never graded as typed text; blank a different phrase, or make it a multiplechoice whose options are module-printed or adjacent values, disclosed in the footer`);
     }
 

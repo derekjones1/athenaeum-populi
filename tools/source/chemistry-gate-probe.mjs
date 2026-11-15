@@ -24,9 +24,9 @@ import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { answerUnits, keyedUnits, listMembers, printedAbbreviations, twoUnitAnswer } from '../lib/keyed-units.mjs';
-import { ELEMENT_BY_NAME, answerEquations, judgeKeyedUnit, labelledFormulas } from '../verify/verify-source-keys.mjs';
+import { ELEMENT_BY_NAME, answerEquations, judgeKeyedUnit, labelledFormulas, letteredSets } from '../verify/verify-source-keys.mjs';
 import { chemCanon } from '../../assets/js/lib/text/check-chem.mjs';
-import { CONFIGURATION_CLOSING, ORDERING_CLOSING } from '../lint/lints-leaks.mjs';
+import { CONFIGURATION_CLOSING, ORDERING_CLOSING, QUANTUM_CLOSING } from '../lint/lints-leaks.mjs';
 import { coverage, sourceExercises } from '../verify/verify-source-coverage.mjs';
 import { chapters, shapeOf } from './chemistry-shapes.mjs';
 
@@ -106,6 +106,18 @@ function chapterSixItems(unit, answer, base, abbreviations) {
   const { shape, key } = shapeOf(answer, unit.stem);
   if (shape === 'ordering' && /</.test(answer)) return [{ ...base, question: closed(base.question, ORDERING_CLOSING), type: 'textin', answer, form: 'ordering' }];
   if (shape === 'subshell') return [{ ...base, type: 'textin', answer: answer.replace(/\s/g, ''), form: '' }];
+  // A set of quantum numbers, keyed in the page's print ("4 0 0 +1/2"); one
+  // per label where the answer prints one per orbital type (6.3).
+  if (shape === 'quantum-numbers') {
+    const print = (canon) => canon.replace(/-/g, '−');
+    const one = chemCanon(answer, 'quantum-numbers');
+    if (one) return [{ ...base, question: closed(base.question, QUANTUM_CLOSING), type: 'textin', answer: print(one), form: 'quantum-numbers' }];
+    const sets = letteredSets(answer);
+    if (sets.length) {
+      return sets.map((entry) => ({ ...base, question: closed(base.question, `Enter the set for the orbital of type (${entry.label}) shown in the figure above. ${QUANTUM_CLOSING}`), type: 'textin', answer: print(entry.canon), form: 'quantum-numbers' }));
+    }
+    return null; // the sets of several electrons: a selfcheck, read by the selfcheck probe
+  }
   if (shape === 'configuration' && chemCanon(answer, 'configuration')) {
     return [{ ...base, question: closed(base.question, CONFIGURATION_CLOSING), type: 'textin', answer, form: 'configuration' }];
   }

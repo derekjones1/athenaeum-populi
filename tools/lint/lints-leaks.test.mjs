@@ -748,6 +748,42 @@ test('Chemistry chapter 6: a configuration and an ordering declare their forms a
   assert.deepEqual(answers(RANK, 'Rb < Li < N < F'), [], '6.5 Exercise 5 as printed: F, Li, N, Rb');
 });
 
+test('Chemistry 6.3: a set of quantum numbers declares its form, closes with how it is typed, and is not printed by its stem', async () => {
+  const { QUANTUM_CLOSING, quantumStemAnswers } = await import('./lints-leaks.mjs');
+  const page = (item) => `Body text.\n\n${item}\n`;
+  const item = (question, answer, form = '', accept = '') => `{{< textin\n  question="${question}"\n  answer="${answer}"${form ? `\n  answerForm="${form}"` : ''}${accept ? `\n  accept="${accept}"` : ''}\n  hint="Identify the kind of orbital the outline shows."\n>}}`;
+  const errors = (src) => errorsOf(src, CHEM);
+  const ASK = 'Consider the orbitals shown here in outline. Write a set of quantum numbers for an electron in an orbital of type (x) in a shell with n = 4. Enter the set for the orbital of type (x).';
+  // Graded as words, only the key's own set would pass.
+  assert.equal(errors(page(item(ASK, '4 0 0 +1/2'))).filter((e) => /set of quantum numbers graded as words .* declare answerForm="quantum-numbers"/.test(e)).length, 1);
+  // Declared, the stem closes with the sentence that says how it is typed.
+  const closing = (src) => errors(src).filter((e) => /has no typing guide/.test(e));
+  assert.equal(closing(page(item(ASK, '4 0 0 +1/2', 'quantum-numbers'))).length, 1);
+  assert.deepEqual(closing(page(item(`${ASK} ${QUANTUM_CLOSING}`, '4 0 0 +1/2', 'quantum-numbers'))), []);
+  // The sentence names the values, never a value; and it carries no math (a textin stem takes no $).
+  assert.doesNotMatch(QUANTUM_CLOSING, /\d|\$/);
+  // Every lint is clean on the declared, closed item.
+  assert.deepEqual(errors(page(item(`${ASK} ${QUANTUM_CLOSING}`, '4 0 0 +1/2', 'quantum-numbers'))), []);
+  // The key is written in print and is a possible set; no accept list (lints.mjs, through chemKeyProblem).
+  const { lintHugo } = await import('./lints.mjs');
+  const keyRule = (answer, accept, pattern) => lintHugo(page(item(`${ASK} ${QUANTUM_CLOSING}`, answer, 'quantum-numbers', accept)), CHEM).errors.filter((e) => pattern.test(e)).length;
+  assert.equal(keyRule('4 0 0 1/2', '', /not written in print/), 1);
+  assert.equal(keyRule('4 4 0 +1/2', '', /l runs from 0 to n − 1/), 1);
+  assert.equal(keyRule('4 0 0 +1/2', '4 0 0 −1/2', /no accept list/), 1);
+  assert.equal(keyRule('4 0 0 +1/2', '', /./), 0);
+  // A stem that prints a possible set of the key's n and l answers the item; one of another subshell does not.
+  const answers = (question, key) => errors(page(item(`${question} ${QUANTUM_CLOSING}`, key, 'quantum-numbers'))).filter((e) => /the stem answers the item/.test(e));
+  assert.equal(answers(`${ASK} For example, 4 0 0 ½ is one.`, '4 0 0 +1/2').length, 1);
+  assert.equal(answers(`${ASK} For example, n = 4, l = 0, mₗ = 0, and mₛ = −1/2.`, '4 0 0 +1/2').length, 1, 'labelled, the other spin');
+  assert.deepEqual(answers(`${ASK} Not 4 1 0 ½.`, '4 0 0 +1/2'), [], 'another subshell');
+  assert.equal(quantumStemAnswers(ASK, '4 0 0 +1/2'), null, 'the source stem prints n alone');
+  // The footer may not print the key.
+  const footer = (body) => `Body text.\n\n## Practice\n\n### Explain the thing\n\n${item(`${ASK} ${QUANTUM_CLOSING}`, '4 0 0 +1/2', 'quantum-numbers')}\n\n---\n\n<small>${body}</small>\n`;
+  const printed = (src) => errors(src).filter((e) => /the footer prints "/.test(e));
+  assert.equal(printed(footer('Keyed 4 0 0 +1/2 from the source.')).length, 1);
+  assert.deepEqual(printed(footer('Any correct set of the shell and orbital type is accepted.')), []);
+});
+
 test('scientific-notation is declared only where the question asks for it, in every book', () => {
   const fillin = (question, form) => `Body text.\n\n{{< fillin\n  question="${question}"\n  answer="1.23\\times10^{-4}"\n  answerForm="${form}"\n  hint="Count the places the point moves."\n>}}\n`;
   const hit = (src, file) => errorsOf(src, file).filter((e) => /declares scientific-notation, but the question does not ask for it/.test(e));

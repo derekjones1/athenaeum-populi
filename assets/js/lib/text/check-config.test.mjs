@@ -97,7 +97,7 @@ test('the lint: a key is written in print and is a configuration that can exist'
   assert.match(configurationKeyProblem('1s²1s²'), /twice/);
   assert.match(chemKeyProblem(FE, 'configuration', '1s2'), /no accept list/);
   assert.match(chemKeyProblem(FE, 'formula'), /declare answerForm="configuration"/);
-  assert.match(chemKeyProblem('x', 'exact'), /"configuration", or "ordering"/);
+  assert.match(chemKeyProblem('x', 'exact'), /"configuration", "ordering", or "quantum-numbers"/);
 });
 
 test('the text grader hands a configuration to this reader; a subshell label stays a word', () => {

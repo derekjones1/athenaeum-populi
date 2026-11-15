@@ -253,7 +253,8 @@ Nine things chapter 6 added (`docs/history/chemistry.md`, "Chapter 6"):
    and, per module, `keys <moduleId> > $SP/keys-N.M.txt`. Then
    `node tools/source/chemistry-shapes.mjs N > $SP/chN-shapes.txt` (add
    `--list` for every keyed unit): each section's keyed answers by shape —
-   number, formula, equation, words, sentence, drawing — with the
+   number, formula, equation, configuration, ordering, quantum-numbers,
+   subshell, words, sentence, drawing — with the
    component the playbook's table gives it, and a FLAG on every keyed
    formula the grader cannot read and every keyed equation that does not
    balance. A flag is a source defect or a shape the forms do not take;

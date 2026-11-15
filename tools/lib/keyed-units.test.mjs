@@ -1203,6 +1203,8 @@ test('a stem that names another section\'s example or exercise and restates its 
 const em = (letter) => `<emphasis effect="italics">${letter}</emphasis>`;
 /** A configuration as the CNXML prints it: 1<em>s</em><sup>2</sup>2<em>s</em><sup>2</sup>… */
 const printedConfiguration = (spaced) => spaced.split(' ').map((token) => token.replace(/^(\d)([spdf])(\d+)$/, (_, n, l, count) => `${n}${em(l)}<sup>${count}</sup>`)).join('');
+// The source's spin: ½ in MathML, unsigned, with the separator inside the math (6.3, fs-idm139949520).
+const HALF = (mark) => `<m:math><m:mrow><m:mspace width="0.2em"/><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>${mark}</m:mo></m:mrow></m:math>`;
 const CH6 = cnxml(
   example('q1', `Identify the subshell in which electrons with the following quantum numbers are found: (a) ${em('n')} = 3, ${em('l')} = 1; (b) ${em('n')} = 5, ${em('l')} = 3.`, `(a) 3${em('p')} (b) 5${em('f')}`)
   + example('q2', `If a shell contains a maximum of 32 electrons, what is the principal quantum number, ${em('n')}?`, `${em('n')} = 4`)
@@ -1216,8 +1218,8 @@ const CH6 = cnxml(
     exercise('c14', ['Which of the following has two unpaired electrons?', '(a) Mg', '(b) Si', '(c) S', '(d) Both Mg and S', '(e) Both Si and S.'], 'Although both (b) and (c) are correct, (e) encompasses both and is the best answer.'),
     exercise('c8', ['Use an orbital diagram to describe the electron configuration of the valence shell of each of the following atoms:', '(a) N', '(b) Si'],
       '(a) <media alt="N"><image src="../../media/Diagram_a.jpg"/></media> (b) <media alt="Si"><image src="../../media/Diagram_b.jpg"/></media>'),
-    exercise('o11', ['Consider the orbitals shown here in outline.', '(a) What is the maximum number of electrons contained in an orbital of type (x)? Of type (y)? Of type (z)?', '(b) How many orbitals of type (x) are found in a shell with n = 2? How many of type (y)? How many of type (z)?'],
-      '(a) x. 2, y. 2, z. 2; (b) x. 1, y. 3, z. 0'),
+    exercise('o11', ['Consider the orbitals shown here in outline.', '(a) What is the maximum number of electrons contained in an orbital of type (x)? Of type (y)? Of type (z)?', '(b) How many orbitals of type (x) are found in a shell with n = 2? How many of type (y)? How many of type (z)?', '(c) Write a set of quantum numbers for an electron in an orbital of type (x) in a shell with n = 4. Of an orbital of type (y) in a shell with n = 2. Of an orbital of type (z) in a shell with n = 3.'],
+      `(a) x. 2, y. 2, z. 2; (b) x. 1, y. 3, z. 0; (c) x. 4 0 0 ${HALF(',')} y. 2 1 0 ${HALF(',')} z. 3 2 0 ${HALF(';')}`),
     exercise('r5', ['Based on their positions in the periodic table, rank the following atoms in order of increasing first ionization energy: F, Li, N, Rb'], 'Rb &lt; Li &lt; N &lt; F'),
     exercise('r11', ['Based on their positions in the periodic table, list the following ions in order of increasing radius: K<sup>+</sup>, Ca<sup>2+</sup>, Al<sup>3+</sup>, Si<sup>4+</sup>.'], 'Si<sup>4+</sup> &lt; Al<sup>3+</sup> &lt; Ca<sup>2+</sup> &lt; K<sup>+</sup>'),
     exercise('g7', [`Atoms of which group in the periodic table have a valence shell electron configuration of ${em('ns')}<sup>2</sup>${em('np')}<sup>3</sup>?`], '15 (5A)'),
@@ -1282,6 +1284,18 @@ test('chapter 6\'s keys: configurations, orderings, subshells, counts, members, 
   assert.equal(fillin(`${ORB} Enter the number of orbitals of type (y).`, '3'), 'confirmed');
   assert.equal(fillin(`${ORB} Enter the number of orbitals of type (z).`, '3'), 'key-differs', 'the y count under the z item');
   assert.equal(fillin(ORB, '3'), 'key-differs', 'a closing that names no label');
+  // C2a: a set of quantum numbers per label (6.3's part (c), the spin printed ½ in MathML), held to
+  // the label the closing names; the key is the source's set, not another possible one.
+  const SETS = 'Consider the orbitals shown here in outline. Write a set of quantum numbers for an electron in an orbital of type (x) in a shell with n = 4. Of an orbital of type (y) in a shell with n = 2. Of an orbital of type (z) in a shell with n = 3.';
+  const QN = 'Type the four values in the order n, l, mₗ, mₛ, separated by spaces.';
+  const set = (type, key) => textin(`${SETS} Enter the set for the orbital of type (${type}) shown in the figure above. ${QN}`, key, 'quantum-numbers');
+  assert.equal(set('x', '4 0 0 +1/2'), 'confirmed');
+  assert.equal(set('y', '2 1 0 +1/2'), 'confirmed');
+  assert.equal(set('z', '3 2 0 +1/2'), 'confirmed');
+  assert.equal(set('y', '4 0 0 +1/2'), 'key-differs', 'the (x) set under the (y) item');
+  assert.equal(set('y', '2 1 −1 +1/2'), 'key-differs', 'another possible set is not the source\'s');
+  assert.equal(set('z', '3 2 0 −1/2'), 'key-differs', 'the other spin is not the source\'s');
+  assert.equal(textin(`${SETS} ${QN}`, '4 0 0 +1/2', 'quantum-numbers'), 'key-differs', 'a closing that names no label');
   // C3, C4: a count beside labels that are no numbers.
   assert.equal(fillin('If a shell contains a maximum of 32 electrons, what is the principal quantum number, n?', '4'), 'confirmed');
   assert.equal(fillin('How many orbitals have l = 2 and n = 3?', '5'), 'confirmed');
@@ -1316,6 +1330,9 @@ test('chapter 6\'s keys: configurations, orderings, subshells, counts, members, 
 test('chapter 6\'s shapes, as chemistry-shapes reads them', () => {
   assert.equal(shapeOf('1 s^{2} 2 s^{2} 2 p^{3}').shape, 'configuration');
   assert.equal(shapeOf('Rb < Li < N < F').shape, 'ordering');
+  assert.match(shapeOf('x. 4 0 0 ( 1 )/( 2 ) , y. 2 1 0 ( 1 )/( 2 ) , z. 3 2 0 ( 1 )/( 2 )').component, /one textin answerForm="quantum-numbers" per label \(\(x\), \(y\), \(z\)\)/);
+  assert.equal(shapeOf('4 0 0 ( 1 )/( 2 )').shape, 'quantum-numbers');
+  assert.match(shapeOf('n l m _l s 4 0 0 + ( 1 )/( 2 ) 4 0 0 − ( 1 )/( 2 ) 4 1 −1 + ( 1 )/( 2 )').component, /^selfcheck in the sample-answer form/);
   assert.deepEqual(shapeOf('2 p'), { shape: 'subshell', component: 'textin keyed 2p' });
   assert.match(shapeOf('x. 2, y. 2, z. 2').component, /one whole-number fillin per label \(\(x\), \(y\), \(z\)\)/);
   assert.equal(shapeOf('n = 4').key, 4);

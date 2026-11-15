@@ -224,4 +224,10 @@ test('a check\'s configuration or ordering is held to a worked Solution that pri
   assert.equal(solutionPrints(sulfur, '2s²2p⁶3s²3p⁴', 'configuration'), false, 'its last subshells');
   assert.equal(solutionPrints('so the order is Rb < Li < N < F here.', 'Rb < Li < N < F', 'ordering'), true);
   assert.equal(solutionPrints('so the order is Rb < Li < N < F here.', 'Li < N < F', 'ordering'), false);
+  // A set of quantum numbers (6.3), bare or labelled, the spin in the source's MathML; a set read out of a longer run of numbers is not one.
+  assert.equal(solutionPrints('One possible set is 4 0 0 ( 1 )/( 2 ) for that electron.', '4 0 0 +1/2', 'quantum-numbers'), true);
+  assert.equal(solutionPrints('The set is n = 2, l = 1, m _l = −1, m _s = + ( 1 )/( 2 ) .', '2 1 −1 +1/2', 'quantum-numbers'), true);
+  assert.equal(solutionPrints('n l m _l s 4 0 0 + ( 1 )/( 2 ) 4 1 −1 − ( 1 )/( 2 )', '4 1 −1 −1/2', 'quantum-numbers'), true, 'a row of the table');
+  assert.equal(solutionPrints('One possible set is 4 0 0 ( 1 )/( 2 ) for that electron.', '4 0 0 −1/2', 'quantum-numbers'), false, 'the other spin');
+  assert.equal(solutionPrints('The values 3 4 0 0 ( 1 )/( 2 ) run on.', '4 0 0 +1/2', 'quantum-numbers'), false, 'the last four of five values');
 });

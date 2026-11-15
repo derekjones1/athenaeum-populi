@@ -3544,10 +3544,42 @@ sentence's clauses. Hints unchanged.
 - Ledger: both self-checks re-read by the parent against the CNXML (hashes
   74b0fb4e… and e3522918… at the first edit, re-hashed once by a shorter
   rubric wording). `npm test` green.
-- Not done, and offered to Derek: a graded field that accepts any valid
-  set (n and l held to the key, any allowed m_l, either spin) for the
-  three outline parts. It would be a new `answerForm` with its gates, for
-  three items.
+- Offered to Derek: a graded field that accepts any valid set for the
+  three outline parts. He asked for it the same day (next section).
+
+### The quantum-number field (November 15, 2026)
+
+Derek: "the autograding would be good here instead of a self check. Let's
+build the answer form." Built by one Opus agent from a written
+specification (about 300k tokens, 20 minutes), as `run.md` prescribes for
+a new form: `answerForm="quantum-numbers"` on `textin`, read by
+`assets/js/lib/text/check-quantum.mjs`. The key is the source's set
+(`4 0 0 +1/2`); n and l are held to it, any mₗ from −l to +l and either
+spin is right. Nine messages say why a set is wrong (not four values, the
+spin, a value of the wrong kind, an l its n does not allow, an mₗ its l
+does not allow, another shell, another type of orbital) and none prints
+the key's n or l. The forms, the verdict table, and the key and stem
+rules are in the playbook's "Sets of quantum numbers".
+
+- **6.3:** the orbital-outline exercise's quantum-number part is three
+  graded items, one per orbital type, in place of the morning's
+  self-check; the selenium exercise stays a self-check in the
+  sample-answer form, since it asks six sets at once. Practice block: 24
+  items (10 fill-ins, 9 text items, 5 self-checks).
+- **A `textin` stem takes no math**, so the three stems and the closing
+  sentence print n, l, mₗ, mₛ as plain letters with Unicode subscripts:
+  "Type the four values in the order n, l, mₗ, mₛ, separated by spaces."
+  (lint, word for word).
+- **Gates taught:** replay, source keys (each item held to the set of the
+  label its closing names; another valid set as the KEY is refused),
+  the Knowledge Check sources gate, the shape scan and gate probe, the
+  typed-key and typed-writing lists, a browser test. The solve comparison
+  and `verify-section` already grade through the field's own reader.
+  Floors: `--min-confirmed` 7543 → 7545, `--min-replayed` 9058 → 9061.
+- **The agent added one message the specification lacked** (a non-whole
+  mₗ) and the form's name to the list in `AGENTS.md`.
+- **Blind solve:** a fresh Fable solver on the masked page answered all three
+  with the source's sets (3 agreed, 0 flagged); merged into the ledger.
 
 ## The `\dfrac` watch list
 

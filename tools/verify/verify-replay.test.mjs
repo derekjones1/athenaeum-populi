@@ -237,3 +237,17 @@ test('a configuration or an ordering a text-in stem prints is a span a learner c
   assert.deepEqual(chemSpans(RADIUS, 'ordering'), ['Mg, Ca, Rb, Cs']);
   assert.deepEqual(replays(RADIUS, 'Mg < Ca < Rb < Cs', 'ordering'), []);
 });
+
+test('a set of quantum numbers a text-in stem prints is a span a learner can copy (Chemistry 2e 6.3)', async () => {
+  const { checkText } = await import('../../assets/js/lib/text/check-text.mjs');
+  const replays = (question, key) => chemSpans(question, 'quantum-numbers').filter((span) => checkText(span, key, { form: 'quantum-numbers' }) === 'correct');
+  const CLOSE = 'Type the four values in the order n, l, mₗ, mₛ, separated by spaces.';
+  // 6.3's stem prints n alone: the only span is the stem itself, which the reader refuses.
+  const X = `Consider the orbitals shown here in outline. Write a set of quantum numbers for an electron in an orbital of type (x) in a shell with n = 4. Of an orbital of type (y) in a shell with n = 2. Of an orbital of type (z) in a shell with n = 3. Enter the set for the orbital of type (x) shown in the figure above. ${CLOSE}`;
+  assert.deepEqual(chemSpans(X, 'quantum-numbers'), [X]);
+  assert.deepEqual(replays(X, '4 0 0 +1/2'), []);
+  // A stem that printed a set of the key's shell and subshell would be answered by it, in either writing.
+  assert.deepEqual(replays(`Is 4 0 0 ½ a possible set? ${CLOSE}`, '4 0 0 +1/2'), ['4 0 0 ½']);
+  assert.deepEqual(replays(`Is n = 2, l = 1, mₗ = −1, and mₛ = −½ a possible set? ${CLOSE}`, '2 1 0 +1/2'), ['n = 2, l = 1, mₗ = −1, mₛ = −½']);
+  assert.deepEqual(replays(`Is 2 0 0 ½ a possible set? ${CLOSE}`, '2 1 0 +1/2'), [], 'another subshell');
+});

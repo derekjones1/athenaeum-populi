@@ -125,6 +125,14 @@
     "result": "agrees"
    }
   },
+  "002d79ab945a42dc": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm139949520 part (c), type (z): source set 3 2 0 ½ is the key (+½ sign form), any mₗ and either spin of its n and l graded right (answerForm quantum-numbers, Nov 15 2026) | orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "003146f5b31cd15f": {
    "verdict": "ok",
    "note": "source exercise fs-idp81167248, cobalt-60 configuration: 27 e, ...4s²3d⁷; source print",
@@ -7320,6 +7328,14 @@
   "0e4e0a51e7f82164": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "0e5030e7f44b1bc4": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm139949520 part (c), type (x): source set 4 0 0 ½ is the key (+½ sign form), any mₗ and either spin of its n and l graded right (answerForm quantum-numbers, Nov 15 2026) | orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -22176,6 +22192,14 @@
     "result": "agrees"
    }
   },
+  "2c03a566fd120e43": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm139949520 part (c), type (y): source set 2 1 0 ½ is the key (+½ sign form), any mₗ and either spin of its n and l graded right (answerForm quantum-numbers, Nov 15 2026) | orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2c041fe3b59542d5": {
    "verdict": "ok",
    "note": "author-built from § introduction, Check Your Understanding: \"What property makes antibodies useful for research and clinical diagnosis?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -32897,14 +32921,6 @@
    "note": "glossary fs-id1989824 meaning; body fs-id1357426",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "41b0b3e9d9037f90": {
-   "verdict": "ok",
-   "note": "orbital-outline exercise, quantum-number part: model answer rewritten Nov 15 2026 to the sample-answer form (opening sentence of what every correct set has, then the source's sets whole); parent re-read against the CNXML solution and the sibling l and m_l part: x is s (l = 0, m_l = 0), y is p (l = 1, m_l −1..+1), z is d (l = 2, m_l −2..+2), either spin; source sets 4 0 0 +1/2, 2 1 0 +1/2, 3 2 0 +1/2 unchanged",
-   "solved": {
-    "by": "orchestrator",
     "result": "agrees"
    }
   },

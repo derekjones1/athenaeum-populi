@@ -330,7 +330,7 @@ goes wrong.
 - **A name, a formula, an equation** (playbook "Exercises" table and
   "Formulas and equations"): a name is a plain `textin`; a formula or an
   ion's symbol is a `textin` with `answerForm="formula"`; a balanced
-  equation is a `textin` with `answerForm="equation"`; an electron configuration is `answerForm="configuration"` and an ordering `answerForm="ordering"`, each stem closing with the sentence the lint names (playbook "Electron configurations and orderings"). Write the key in the
+  equation is a `textin` with `answerForm="equation"`; an electron configuration is `answerForm="configuration"` and an ordering `answerForm="ordering"`, each stem closing with the sentence the lint names (playbook "Electron configurations and orderings"); a set of quantum numbers for one orbital or electron is `answerForm="quantum-numbers"`, keyed with the source's set (`4 0 0 +1/2`), its stem closing with the lint's sentence and its hint in words never giving the l (playbook "Sets of quantum numbers"). Write the key in the
   book's Unicode print (`Mn₃(PO₄)₂`, `SO₄²⁻`), state symbols as the source
   prints them. Grade the key, the natural near-misses, and the stem's own
   formula or equation through the real grader before you file:
