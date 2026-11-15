@@ -19,7 +19,12 @@
  * carries to the new hash only when all of these hold:
  *
  *   - same page, same kind, and every param except `hint` and `accept`
- *     identical after whitespace collapse — the stem, the options, the key;
+ *     identical after whitespace collapse — the stem, the options, the key
+ *     (a link to a page of this site added around unchanged words, or taken
+ *     off them, is not a change: `the table in [Section 5.1 Energy
+ *     Basics](/…/01-energy-basics/)` asks what the plain words asked, and the
+ *     solver read the words; November 14, 2026, when references to other
+ *     sections became links);
  *   - the same inner content (a multiple choice's options, a selfcheck's
  *     model answer);
  *   - the same dependency block — the figure or table the item names —
@@ -48,6 +53,10 @@ import { LedgerFormatError } from '../lib/ledger.mjs';
 import { LEDGER_PATH, exerciseHash, extractExercises, readLedger } from './answer-ledger.mjs';
 
 const norm = (value) => String(value ?? '').replace(/\s+/g, ' ').trim();
+// A site-root Markdown link read as its words: the link is where the words
+// lead, not part of what the item asks.
+const SITE_LINK = /\[([^\]\[]+)\]\(\/[^()\s]*\)/g;
+const words = (value) => norm(value).replace(SITE_LINK, '$1');
 
 /** The comparable shape of every exercise under `root`. */
 export function snapshot(root) {
@@ -66,7 +75,7 @@ export function snapshot(root) {
 function signature(item) {
   const { hint, accept, answerForm, ...rest } = item.params ?? {};
   return JSON.stringify([
-    item.path, item.kind, Object.keys(rest).sort().map((key) => [key, norm(rest[key])]), norm(item.inner),
+    item.path, item.kind, Object.keys(rest).sort().map((key) => [key, words(rest[key])]), words(item.inner),
   ]);
 }
 

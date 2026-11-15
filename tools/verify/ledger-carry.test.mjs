@@ -10,7 +10,7 @@ import { planCarry, snapshot } from './ledger-carry.mjs';
 const TOOL = new URL('./ledger-carry.mjs', import.meta.url).pathname;
 
 const page = ({
-  hint = 'Think about energy.', accept = 'mitochondrion', answer = 'mitochondria', mcHint = 'Count its factors.', row = '| 0 | 3 |',
+  hint = 'Think about energy.', accept = 'mitochondrion', answer = 'mitochondria', mcHint = 'Count its factors.', row = '| 0 | 3 |', stem = 'Which is prime?',
 } = {}) => `---
 title: Sample
 ---
@@ -19,7 +19,7 @@ title: Sample
 
 {{< textin question="Name the organelle that makes ATP." answer="${answer}" accept="${accept}" hint="${hint}" >}}
 
-{{< multiplechoice question="Which is prime?" answer="7" hint="${mcHint}" >}}
+{{< multiplechoice question="${stem}" answer="7" hint="${mcHint}" >}}
 7
 9
 {{< /multiplechoice >}}
@@ -107,6 +107,19 @@ test('an accept member the closed hyphen fold still grades is not a narrowing', 
   writeFileSync(join(dir, 'content', 'a.md'), page({ accept: '' }));
   const { results } = planCarry({ before, now: snapshot(join(dir, 'content')), entries: recorded(before), note: 'n' });
   assert.equal(results.length, 1);
+});
+
+test('a site link added around a stem\'s unchanged words carries; changed words or an outside link do not', () => {
+  const linked = plan({ stem: 'Which is [prime](/math/prealgebra/02-primes/)?' });
+  assert.equal(linked.resolve.length, 0);
+  assert.equal(linked.results.length, 1);
+  assert.equal(linked.results[0].hash, linked.now[1].hash);
+  assert.notEqual(linked.now[1].hash, linked.before[1].hash, 'the link re-hashed the item');
+  for (const stem of ['Which is [a prime](/math/prealgebra/02-primes/)?', 'Which is [prime](https://example.org/primes)?']) {
+    const { results, resolve } = plan({ stem });
+    assert.equal(results.length, 0, stem);
+    assert.deepEqual(resolve.map((r) => r.why), ['changed'], stem);
+  }
 });
 
 test('a hint edit made together with a table edit is re-read, not carried', () => {

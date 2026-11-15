@@ -41,7 +41,7 @@ weight: 3
 | dry quart | = 1.1012 L |
 | cubic foot (US) | = 28.317 L |
 
-*Source note:* the source prints the cubic foot as 28.316 L. A foot is exactly 0.3048 m, so a cubic foot is 28.3168… L, which is 28.317 L to the five figures printed here, the value the table of common conversion factors in Section 1.6 Mathematical Treatment of Measurement Results gives.
+*Source note:* the source prints the cubic foot as 28.316 L. A foot is exactly 0.3048 m, so a cubic foot is 28.3168… L, which is 28.317 L to the five figures printed here, the value the table of common conversion factors in [Section 1.6 Mathematical Treatment of Measurement Results](/physical-sciences/chemistry/01-essential-ideas/06-mathematical-treatment-of-measurement-results/) gives.
 
 **Units of Mass**
 
@@ -92,4 +92,4 @@ weight: 3
 
 ---
 
-<small>This appendix is adapted from [Chemistry 2e, Appendix C: Units and Conversion Factors](https://openstax.org/books/chemistry-2e/pages/c-units-and-conversion-factors) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the five tables transcribed as Markdown tables with their titles as bold lines above them and the column headings “Unit” and “Equivalents” added; a unit with several equivalents, which the source stacks in one cell, given one row for each; powers of ten and units with negative exponents typeset as KaTeX math; the two table footnotes marked with an asterisk and set below their tables; and the cubic foot, which the source prints one unit low in its last figure, corrected with a Source note under its table.</small>
+<small>This appendix is adapted from [Chemistry 2e, Appendix C: Units and Conversion Factors](https://openstax.org/books/chemistry-2e/pages/c-units-and-conversion-factors) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: each reference to another section of this book linked to that section’s page; the five tables transcribed as Markdown tables with their titles as bold lines above them and the column headings “Unit” and “Equivalents” added; a unit with several equivalents, which the source stacks in one cell, given one row for each; powers of ten and units with negative exponents typeset as KaTeX math; the two table footnotes marked with an asterisk and set below their tables; and the cubic foot, which the source prints one unit low in its last figure, corrected with a Source note under its table.</small>

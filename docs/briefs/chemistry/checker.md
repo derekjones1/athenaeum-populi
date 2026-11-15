@@ -101,8 +101,9 @@ catch.
   order", rule 9), ticked one by one: the frontmatter description ends
   "— adapted from OpenStax Chemistry 2e, Section N.M."; the first figure,
   and only it, is `eager="true"`; a numbered figure or table in running
-  text is a describing phrase; a reference to another section is plain
-  text.
+  text is a describing phrase; a reference to another section is a
+  link to its page (plain text only in a hint, or while that page is not
+  written), and the footer says so.
 
 ## 4. Figures
 
@@ -131,7 +132,7 @@ stem shows it.
   exceptions first (a metal-and-nonmetal test on a compound of polyatomic
   ions); on a two-option item a hint that says what one option was
   replaced by, or is "instead", decides it. A hint that needs another
-  section's table names the table and the section in plain words; one
+  section's table names the table and the section in words (a hint holds no link); one
   that states the observation a two-name substance turns on ("the
   formula prints no state") decides the item, whatever the run facts say.
   **A member of a family of items whose hint differs from the others' is a

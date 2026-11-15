@@ -132,18 +132,25 @@ these differences:
    table in running text becomes a describing phrase ("the table of
    densities of common substances"), and a bare parenthetical one —
    the source's "(Figure 2.16)" — is "(shown in the figure below)", or "the
-   photograph", "the table"; a cross-reference to another section is plain text, the
-   source's wording where the source wrote it and "Section 1.4
-   Measurements" where the page did (no book in the library links between
-   its sections). **A reference to an appendix is the exception: it is a
-   link to the appendix's page**,
-   `[Appendix G](/physical-sciences/chemistry/appendices/g-standard-thermodynamic-properties-for-selected-substances/)`,
-   in the body, in an example, and in an exercise stem alike — the source
-   links them (73 times; 36 to Appendix G), and a learner sent to a table
-   for a value must reach it in one step. The footer says "the references
+   photograph", "the table". **A reference to another section is a link
+   to that section's page** *(Derek, November 14, 2026; until then it was
+   plain text)*: the section named by number and title, the absolute
+   site-root path as its target,
+   `[Section 5.1 Energy Basics](/physical-sciences/chemistry/05-thermochemistry/01-energy-basics/)`,
+   in the body, in an example, in a Source note, and in an exercise stem
+   alike, with what is meant there named in words beside it ("the table of
+   specific heats of common substances in [Section 5.1 Energy Basics](…)").
+   A section whose page is not written yet is named the same way in plain
+   text, and linked by the run that writes it. The footer says "each
+   reference to another section of this book linked to that section's
+   page". **A reference to an appendix is a link to the appendix's page**
+   in the same places,
+   `[Appendix G](/physical-sciences/chemistry/appendices/g-standard-thermodynamic-properties-for-selected-substances/)`
+   — the source links them (73 times; 36 to Appendix G), and a learner sent
+   to a table for a value must reach it in one step. The footer says "the references
    to Appendix G linked to its page in this book". A hint may name an
-   appendix ("Find the standard enthalpies of formation in Appendix G.")
-   but takes no link: a hint is plain text.
+   appendix or a section ("Find the standard enthalpies of formation in
+   Appendix G.") but takes no link: a hint is plain text.
 
    **Where the content asks the learner to consult what an appendix
    holds, the words are linked to that appendix even where the source
@@ -867,7 +874,7 @@ after the rule was written, so the line is drawn by pairs:
   composition, and printed 3.33(a) asks it — "the method of the ammonia
   calculation above" is the answer. Name the equation.
 - **A hint that needs a table of another section names the table and the
-  section**, in plain words and with no link: "the table of common
+  section** in words (a hint is plain text and holds no link): "the table of common
   polyatomic ions in Section 2.6 Ionic and Molecular Compounds", never
   "the common polyatomic ions" on a page that prints none *(Section 2.7)*.
 - **Where the module names one substance two ways by its state** (HBr the
@@ -1642,7 +1649,7 @@ What chapter 1 settled, and what the scan of the book counted, are in
   coefficient ("Formulas and equations"), two units in one part, a ΔH in a
   stem, and a second Check Your Learning ("Stems", "Exercises");
 - lints not yet written *(chapter 5)*: a negative key under "produced /
-  released / evolved"; a `](../` link between sections or "Table N.M" in a
+  released / evolved"; "Table N.M" in a
   stem; an `answerDisplay` unit that differs from the stem's "Enter … in"
   unit; a hint whose signed equation disagrees with its key's sign; a
   figure count on every numeric key at the run facts (an automatic screen);

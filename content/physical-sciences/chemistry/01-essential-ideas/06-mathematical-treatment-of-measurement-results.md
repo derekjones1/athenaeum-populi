@@ -238,7 +238,7 @@ $${}^\circ\text{F} = \frac{9}{5}\,{}^\circ\text{C} + 32.0 = \left(\frac{9}{5} \t
   hint="Use the Celsius-to-Fahrenheit equation above."
 >}}
 
-*Source note:* the answer graded here is not the one the source prints for the Fahrenheit temperature; the source’s printed answer is not rounded by the significant-figure rules of Section 1.5 Measurement Uncertainty, Accuracy, and Precision.
+*Source note:* the answer graded here is not the one the source prints for the Fahrenheit temperature; the source’s printed answer is not rounded by the significant-figure rules of [Section 1.5 Measurement Uncertainty, Accuracy, and Precision](/physical-sciences/chemistry/01-essential-ideas/05-measurement-uncertainty-accuracy-and-precision/).
 
 **Example.** *Conversion from Fahrenheit.* Baking a ready-made pizza calls for an oven temperature of 450 °F. If you are in Europe, and your oven thermometer uses the Celsius scale, what is the setting? What is the kelvin temperature?
 
@@ -409,7 +409,7 @@ no
 #### Conversions to SI base units
 
 {{< fillin
-  question="Use scientific (exponential) notation to express the following quantity in terms of the SI base units in the table of base units in Section 1.4 Measurements: 0.13 g. Enter the value without its unit."
+  question="Use scientific (exponential) notation to express the following quantity in terms of the SI base units in the table of base units in [Section 1.4 Measurements](/physical-sciences/chemistry/01-essential-ideas/04-measurements/): 0.13 g. Enter the value without its unit."
   answer="1.3\times10^{-4}"
   answerForm="sig-figs:2 last-digit:0 scientific-notation"
   answerDisplay="$1.3 \times 10^{-4}\ \text{kg}$"
@@ -417,7 +417,7 @@ no
 >}}
 
 {{< fillin
-  question="Use scientific (exponential) notation to express the following quantity in terms of the SI base units in the table of base units in Section 1.4 Measurements: 232 Gg. Enter the value without its unit."
+  question="Use scientific (exponential) notation to express the following quantity in terms of the SI base units in the table of base units in [Section 1.4 Measurements](/physical-sciences/chemistry/01-essential-ideas/04-measurements/): 232 Gg. Enter the value without its unit."
   answer="2.32\times10^{8}"
   answerForm="sig-figs:3 last-digit:0 scientific-notation"
   answerDisplay="$2.32 \times 10^{8}\ \text{kg}$"
@@ -425,7 +425,7 @@ no
 >}}
 
 {{< fillin
-  question="Use scientific (exponential) notation to express the following quantity in terms of the SI base units in the table of base units in Section 1.4 Measurements: 5.23 pm. Enter the value without its unit."
+  question="Use scientific (exponential) notation to express the following quantity in terms of the SI base units in the table of base units in [Section 1.4 Measurements](/physical-sciences/chemistry/01-essential-ideas/04-measurements/): 5.23 pm. Enter the value without its unit."
   answer="5.23\times10^{-12}"
   answerForm="sig-figs:3 last-digit:0 scientific-notation"
   answerDisplay="$5.23 \times 10^{-12}\ \text{m}$"
@@ -433,7 +433,7 @@ no
 >}}
 
 {{< fillin
-  question="Use scientific (exponential) notation to express the following quantity in terms of the SI base units in the table of base units in Section 1.4 Measurements: 86.3 mg. Enter the value without its unit."
+  question="Use scientific (exponential) notation to express the following quantity in terms of the SI base units in the table of base units in [Section 1.4 Measurements](/physical-sciences/chemistry/01-essential-ideas/04-measurements/): 86.3 mg. Enter the value without its unit."
   answer="8.63\times10^{-5}"
   answerForm="sig-figs:3 last-digit:0 scientific-notation"
   answerDisplay="$8.63 \times 10^{-5}\ \text{kg}$"
@@ -441,7 +441,7 @@ no
 >}}
 
 {{< fillin
-  question="Use scientific (exponential) notation to express the following quantity in terms of the SI base units in the table of base units in Section 1.4 Measurements: 37.6 cm. Enter the value without its unit."
+  question="Use scientific (exponential) notation to express the following quantity in terms of the SI base units in the table of base units in [Section 1.4 Measurements](/physical-sciences/chemistry/01-essential-ideas/04-measurements/): 37.6 cm. Enter the value without its unit."
   answer="3.76\times10^{-1}"
   answerForm="sig-figs:3 last-digit:0 scientific-notation"
   answerDisplay="$3.76 \times 10^{-1}\ \text{m}$"
@@ -449,7 +449,7 @@ no
 >}}
 
 {{< fillin
-  question="Use scientific (exponential) notation to express the following quantity in terms of the SI base units in the table of base units in Section 1.4 Measurements: 54 µm. Enter the value without its unit."
+  question="Use scientific (exponential) notation to express the following quantity in terms of the SI base units in the table of base units in [Section 1.4 Measurements](/physical-sciences/chemistry/01-essential-ideas/04-measurements/): 54 µm. Enter the value without its unit."
   answer="5.4\times10^{-5}"
   answerForm="sig-figs:2 last-digit:0 scientific-notation"
   answerDisplay="$5.4 \times 10^{-5}\ \text{m}$"
@@ -457,7 +457,7 @@ no
 >}}
 
 {{< fillin
-  question="Use scientific (exponential) notation to express the following quantity in terms of the SI base units in the table of base units in Section 1.4 Measurements: 1 Ts. Enter the value without its unit."
+  question="Use scientific (exponential) notation to express the following quantity in terms of the SI base units in the table of base units in [Section 1.4 Measurements](/physical-sciences/chemistry/01-essential-ideas/04-measurements/): 1 Ts. Enter the value without its unit."
   answer="1\times10^{12}"
   answerForm="sig-figs:1 last-digit:0 scientific-notation"
   answerDisplay="$1 \times 10^{12}\ \text{s}$"
@@ -465,7 +465,7 @@ no
 >}}
 
 {{< fillin
-  question="Use scientific (exponential) notation to express the following quantity in terms of the SI base units in the table of base units in Section 1.4 Measurements: 27 ps. Enter the value without its unit."
+  question="Use scientific (exponential) notation to express the following quantity in terms of the SI base units in the table of base units in [Section 1.4 Measurements](/physical-sciences/chemistry/01-essential-ideas/04-measurements/): 27 ps. Enter the value without its unit."
   answer="2.7\times10^{-11}"
   answerForm="sig-figs:2 last-digit:0 scientific-notation"
   answerDisplay="$2.7 \times 10^{-11}\ \text{s}$"
@@ -473,7 +473,7 @@ no
 >}}
 
 {{< fillin
-  question="Use scientific (exponential) notation to express the following quantity in terms of the SI base units in the table of base units in Section 1.4 Measurements: 0.15 mK. Enter the value without its unit."
+  question="Use scientific (exponential) notation to express the following quantity in terms of the SI base units in the table of base units in [Section 1.4 Measurements](/physical-sciences/chemistry/01-essential-ideas/04-measurements/): 0.15 mK. Enter the value without its unit."
   answer="1.5\times10^{-4}"
   answerForm="sig-figs:2 last-digit:0 scientific-notation"
   answerDisplay="$1.5 \times 10^{-4}\ \text{K}$"
@@ -737,4 +737,4 @@ no
 
 ---
 
-<small>This section is adapted from [Chemistry 2e, Section 1.6: Mathematical Treatment of Measurement Results](https://openstax.org/books/chemistry-2e/pages/1-6-mathematical-treatment-of-measurement-results) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the source's equations typeset as KaTeX math, with unit cancellation set with a diagonal strike; the five worked examples set as prose, each followed by its Check Your Learning as interactive fill-ins (eight in all, one per quantity the printed answer gives), the printed answers serving as their keys rather than appearing as text; the conversion-factor table transcribed as a Markdown table with its title as a bold line above it and its footnote, on the pound–gram row, set as an asterisked note below it; cross-references to the table and the figure written as “the table below”, “the table above”, or “the figure below”, and the reference to the SI base-units table of Section 1.4 written out as text; the temperature-scales figure re-encoded as WebP and marked as a diagram, its alt text written from the artwork; the micro prefix written with the micro sign (µ) where the source uses the Greek letter mu; the four-digit temperatures in two answer displays written with a digit-grouping comma; the four key equations listed as inline math, set in the forms the body derives them in, where the source's list writes the unit symbols °C and K in place of the temperatures in the two kelvin–Celsius equations and adds a multiplication sign to the Fahrenheit-to-Celsius equation; the two solution lines of the oven-temperature example and the kelvin line of the body-temperature example broken into aligned rows to fit the column; the body-temperature example's kelvin line written with the exact 273.15 and the sum rounded to the tenths place, where the source rounds 273.15 before adding; the 22 end-of-section exercises the source keys adapted into the interactive Practice block as 52 fill-ins and 2 multiple-choice items, every one at its source key except the one corrected below, one item per lettered part and one fill-in per quantity of a multi-quantity answer, with a sentence added after a stem that leaves it open saying which quantity to enter and in what unit — the conversion-factor ratios of the first exercise asked as the number written over one unit, the soft-drink exercise asked as the count of significant figures and then the factor, the other order from the source’s sentence, the two yes-or-no exercises asked as the computed quantity and then a yes/no choice, the fuel-cost item asked to the nearest dollar, and the SI base-units parts asked “Enter the value without its unit” rather than naming a unit, because naming the SI base unit would give it away; the cubit exercise’s cross-reference to the preceding Angstrom Run exercise, which this page omits, replaced by the data from that exercise that the keys rely on, restated in parentheses (50 trillion Å, two significant figures); the short ton the atmosphere-mass part assumes, 1 ton = 2000 lb, which neither the stem nor the module states, added to that stem in parentheses; “(two significant figures)” added to the freezer exercise’s −10 °F, the count the source’s answers assume and its sibling stems state; the physicist’s surname corrected from “Thompson” to “Thomson” (William Thomson, Lord Kelvin); the soccer-ball exercise’s smallest circumference keyed to the value the stem’s data give, with a Source note, where the source’s printed value does not follow from them; the lead-in of each lettered part that addressed the parts together restated in the singular for its one part (“Make the conversion indicated in the following”, “the following quantity”, “Write a conversion factor (as a ratio)”, “Calculate this mass”, “Calculate this volume”, “Solve this problem about lumber dimensions”); the linear-relation symbols the source prints upright in prose (y, x, m, b) set as italic math, and the quantity symbols the source italicizes (W, g, T, x, y, m, b) set as math; and the 21 exercises the source prints no answer for are omitted; two statements corrected, each with a Source note: the quarts-to-liters step of the antifreeze example and the two lines that carry it forward, where the source truncates the quotient instead of rounding it (the density is unchanged), and the sentence on the 273.15 of the kelvin–Celsius equations, which the source calls experimental and not exact and which is exact by the definition of the Celsius scale; the Fahrenheit part of the 80.92 °C Check Your Learning keyed to the significant figures the rules of Section 1.5 give, with a Source note, where the source’s printed answer is not rounded by those rules; two sentences added to the body, one after the table of conversion factors pointing to Appendix C for the factors the table leaves out and one, after the first worked example, on converting a unit raised to a power, which two of the exercises need and no example of the source shows.</small>
+<small>This section is adapted from [Chemistry 2e, Section 1.6: Mathematical Treatment of Measurement Results](https://openstax.org/books/chemistry-2e/pages/1-6-mathematical-treatment-of-measurement-results) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: each reference to another section of this book linked to that section’s page; the source's equations typeset as KaTeX math, with unit cancellation set with a diagonal strike; the five worked examples set as prose, each followed by its Check Your Learning as interactive fill-ins (eight in all, one per quantity the printed answer gives), the printed answers serving as their keys rather than appearing as text; the conversion-factor table transcribed as a Markdown table with its title as a bold line above it and its footnote, on the pound–gram row, set as an asterisked note below it; cross-references to the table and the figure written as “the table below”, “the table above”, or “the figure below”, and the reference to the SI base-units table of Section 1.4 written out in words; the temperature-scales figure re-encoded as WebP and marked as a diagram, its alt text written from the artwork; the micro prefix written with the micro sign (µ) where the source uses the Greek letter mu; the four-digit temperatures in two answer displays written with a digit-grouping comma; the four key equations listed as inline math, set in the forms the body derives them in, where the source's list writes the unit symbols °C and K in place of the temperatures in the two kelvin–Celsius equations and adds a multiplication sign to the Fahrenheit-to-Celsius equation; the two solution lines of the oven-temperature example and the kelvin line of the body-temperature example broken into aligned rows to fit the column; the body-temperature example's kelvin line written with the exact 273.15 and the sum rounded to the tenths place, where the source rounds 273.15 before adding; the 22 end-of-section exercises the source keys adapted into the interactive Practice block as 52 fill-ins and 2 multiple-choice items, every one at its source key except the one corrected below, one item per lettered part and one fill-in per quantity of a multi-quantity answer, with a sentence added after a stem that leaves it open saying which quantity to enter and in what unit — the conversion-factor ratios of the first exercise asked as the number written over one unit, the soft-drink exercise asked as the count of significant figures and then the factor, the other order from the source’s sentence, the two yes-or-no exercises asked as the computed quantity and then a yes/no choice, the fuel-cost item asked to the nearest dollar, and the SI base-units parts asked “Enter the value without its unit” rather than naming a unit, because naming the SI base unit would give it away; the cubit exercise’s cross-reference to the preceding Angstrom Run exercise, which this page omits, replaced by the data from that exercise that the keys rely on, restated in parentheses (50 trillion Å, two significant figures); the short ton the atmosphere-mass part assumes, 1 ton = 2000 lb, which neither the stem nor the module states, added to that stem in parentheses; “(two significant figures)” added to the freezer exercise’s −10 °F, the count the source’s answers assume and its sibling stems state; the physicist’s surname corrected from “Thompson” to “Thomson” (William Thomson, Lord Kelvin); the soccer-ball exercise’s smallest circumference keyed to the value the stem’s data give, with a Source note, where the source’s printed value does not follow from them; the lead-in of each lettered part that addressed the parts together restated in the singular for its one part (“Make the conversion indicated in the following”, “the following quantity”, “Write a conversion factor (as a ratio)”, “Calculate this mass”, “Calculate this volume”, “Solve this problem about lumber dimensions”); the linear-relation symbols the source prints upright in prose (y, x, m, b) set as italic math, and the quantity symbols the source italicizes (W, g, T, x, y, m, b) set as math; and the 21 exercises the source prints no answer for are omitted; two statements corrected, each with a Source note: the quarts-to-liters step of the antifreeze example and the two lines that carry it forward, where the source truncates the quotient instead of rounding it (the density is unchanged), and the sentence on the 273.15 of the kelvin–Celsius equations, which the source calls experimental and not exact and which is exact by the definition of the Celsius scale; the Fahrenheit part of the 80.92 °C Check Your Learning keyed to the significant figures the rules of Section 1.5 give, with a Source note, where the source’s printed answer is not rounded by those rules; two sentences added to the body, one after the table of conversion factors pointing to Appendix C for the factors the table leaves out and one, after the first worked example, on converting a unit raised to a power, which two of the exercises need and no example of the source shows.</small>

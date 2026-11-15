@@ -142,8 +142,14 @@ goes wrong.
    table gets nothing** — a molar mass, a percent composition, an element
    for an atomic number: every page of the book carries the table as a
    control in the rail. Never add a sentence that points to it ("Use the
-   periodic table."); the lint refuses it. Every other
-   cross-reference stays plain text.
+   periodic table."); the lint refuses it. **A reference to another
+   section is a link to that section's page** (same playbook rule; the
+   run facts list the path of every section page on disk and of your
+   chapter's): the section by number and title, what is meant named in
+   words beside it — "the table of specific heats of common substances in
+   [Section 5.1 Energy Basics](/physical-sciences/chemistry/05-thermochemistry/01-energy-basics/)".
+   A section not written yet is plain text, and the footer says the
+   references are linked.
 8. `## Summary`, `## Key equations` (only if the module has that section),
    `## Key terms` (the module's `<glossary>`, source order), `## Practice`,
    then `---` and the `<small>` footer whose `Changes:` clause names every
@@ -295,7 +301,7 @@ goes wrong.
   nonmetals" gave covalent for (NH₄)₂CO₃); on a two-option item a hint
   never says what one option was replaced by or is "instead". A table the
   item needs that another section prints is named with its section, in
-  plain words ("the table of common polyatomic ions in Section 2.6 Ionic
+  words — a hint holds no link ("the table of common polyatomic ions in Section 2.6 Ionic
   and Molecular Compounds"); where the module names one substance two
   ways by its state, the hint names the subsection whose rule decides,
   never the observation that decides it.

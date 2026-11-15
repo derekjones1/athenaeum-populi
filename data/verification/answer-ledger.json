@@ -4641,6 +4641,14 @@
     "result": "agrees"
    }
   },
+  "092fc335a3f39974": {
+   "verdict": "ok",
+   "note": "CYL fs-idp13199280#check; 335.558 -> 336 (3 figures, ruling 3; source 335.6) | carried 2026-11-14 (ledger-carry): re-hashed when a reference to another section became a link; the stem's words, options, key, and dependency unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "092fdd0a127b2b58": {
    "verdict": "ok",
    "note": "source fs-id2253367, solution fs-id1707039 verbatim as model answer"
@@ -18031,6 +18039,14 @@
     "result": "agrees"
    }
   },
+  "23d7a0e1edd20565": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp211817568 part (d); 75.175 → 75.2, ruling 6 — correction | carried 2026-11-14 (ledger-carry): re-hashed when a reference to another section became a link; the stem's words, options, key, and dependency unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "23d968e280f2369e": {
    "verdict": "ok",
    "note": "IA KC 07-12 §11.4, converted from prose options to rendered figures. Re-derived: dividing 64x^2-9y^2=576 by 576 gives x^2/9 - y^2/64 = 1; the positive term is in x, so the hyperbola opens left and right with a=3 and vertices (±3,0) — option 2. The distractors render the printed prose distractors exactly: the same hyperbola opening up and down with vertices (0,±3) (0), an ellipse with vertices (±3,0) (1), and vertices at (±8,0), i.e. a and b swapped (3). Order and answer position unchanged."
@@ -23096,10 +23112,6 @@
    "verdict": "ok",
    "note": "CT fs-id2639955; model answer = solution fs-id2260103 verbatim."
   },
-  "2e321f6d7a93a538": {
-   "verdict": "ok",
-   "note": "CYL fs-idm80667088#check identity; source sentences as model"
-  },
   "2e32bf23c8341147": {
    "verdict": "ok",
    "note": "(3+2i)+(5-3i)=(3+5)+(2-3)i=8-i; recomputed independently, matches CNXML end-of-section answer key. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -25284,14 +25296,6 @@
     "result": "agrees"
    }
   },
-  "32a26633cdbbfa95": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm101514016 part (e) key 3.76 × 10^−1 m | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "32a419dfdf17a4d3": {
    "verdict": "ok",
    "note": "glossary recall: circumflex artery (branch of the left coronary artery that follows coronary sulcus)",
@@ -25359,10 +25363,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "32c464bd4883e18c": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp167492016 (printed 39) solution, HCL→HCl"
   },
   "32c550f75f81e1d5": {
    "verdict": "ok",
@@ -27412,6 +27412,14 @@
   "36f9212060ff48bf": {
    "verdict": "ok"
   },
+  "36fb24df6312a189": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm101514016 part (c) key 5.23 × 10^−12 m | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | carried 2026-11-14 (ledger-carry): re-hashed when a reference to another section became a link; the stem's words, options, key, and dependency unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "36ffa600a6ead718": {
    "verdict": "ok",
    "note": "source exercise fs-id1172100830414 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -28994,15 +29002,6 @@
     "result": "agrees"
    }
   },
-  "3a5f240ee24986d2": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp146867872 (printed 41); one method 25.53 → 26, source 25 (register row candidate)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "adjudicated",
-    "note": "The example's heat carried unrounded, 1023.9 J ÷ (3.21 ÷ 80.043 mol) = 25.5 kJ/mol → 26; the source's 25 uses its rounded 1.0 kJ. A register row; last-digit:1 grades both."
-   }
-  },
   "3a5f41c3bae5eabe": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -29445,10 +29444,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "3b63784455be743d": {
-   "verdict": "ok",
-   "note": "Gold selfcheck: volume 19.8 - 17.1 = 2.7 mL; 51.842 g / 2.7 cm3 = 19.2 -> 19 g/cm3, close to gold's 19.3 g/cm3 in the Section 1.4 density table; yellow and shiny. Model answer = source solution (already capitalized) + closing period, the table named as 'the table of densities of common substances in Section 1.4 Measurements' (G17); first rubric clause lowercased (G9); hint names the section in full. [Filed by the round-3 fixer under an earlier hash of this item; carried by the orchestrator after a round-3 edit that changed no key (a hint, a stem period, a datum added to a stem).]"
   },
   "3b68961a6e1104e0": {
    "verdict": "ok",
@@ -31554,6 +31549,14 @@
   "3f6b9ee221a7a29f": {
    "verdict": "ok",
    "note": "Practice #21 (fs-id1165134282176): B=[[3,6,4],[-8,0,12]], D=[[2,-3,12],[9,3,1],[0,8,-10]]; BD computed in Node = [[60,41,2],[-16,120,-216]], row 2 = -16,120,-216. Matches CNXML solution. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "3f6bda0585d1e0f8": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm101514016 part (f) key 5.4 × 10^−5 m | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | carried 2026-11-14 (ledger-carry): re-hashed when a reference to another section became a link; the stem's words, options, key, and dependency unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "3f6e80427440a0e4": {
    "verdict": "ok",
@@ -41694,6 +41697,14 @@
     "result": "agrees"
    }
   },
+  "5489f9dd1a511d97": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp140766896 (printed 53); 7.425 → 7.4 at two figures (ΔT 10 °C), correction | carried 2026-11-14 (ledger-carry): re-hashed when a reference to another section became a link; the stem's words, options, key, and dependency unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "548a55d32576469c": {
    "verdict": "ok",
    "note": "KC 1 1.3 § Physical and Chemical Properties, m68670",
@@ -43236,6 +43247,14 @@
     "result": "agrees"
    }
   },
+  "57bb5704c17ca7fa": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm101514016 part (g) key 1 × 10^12 s | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | carried 2026-11-14 (ledger-carry): re-hashed when a reference to another section became a link; the stem's words, options, key, and dependency unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "57bb99fa4f27198c": {
    "verdict": "ok",
    "note": "m66427 visual-exercise fs-id1889238, solution fs-id1470941: '1: C; 2: F; 3: A; 4: B; 5: D; 6: E. The original hypothesis is incorrect, as the coffeemaker works when plugged into the outlet. Alternative hypotheses include that the toaster might be broken or that the toaster wasn't turned on.' Page model answer matches all six pairings and the incorrect-hypothesis conclusion; every ===CHECKS=== clause (step 1/c, step 3/a, step 4/b, step 6/e, hypothesis incorrect, toaster-broken-or-not-turned-on alternative) restates the source solution with no added claim."
@@ -43707,14 +43726,6 @@
    "note": "Review Question fs-idm257702896; CNXML solution keys B = 'carrying capacity', matches page answer. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "58adcbb0d00971f8": {
-   "verdict": "ok",
-   "note": "CYL fs-idp13199280#check2; 38.708 -> 38.7",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -44619,14 +44630,6 @@
    "note": "RQ3 (fs-idp45747584): CNXML solution keys A = 'cyanobacteria', matching 'It was the ancestral cyanobacteria that began the oxygenation of the atmosphere.' | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "5a7aa8c279909bd8": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm101514016 part (b) key 2.32 × 10^8 kg | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -45733,6 +45736,14 @@
   "5c704fc3d2ff18ba": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "5c81029e7f15c0a7": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm101514016 part (e) key 3.76 × 10^−1 m | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | carried 2026-11-14 (ledger-carry): re-hashed when a reference to another section became a link; the stem's words, options, key, and dependency unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "5c8133d201b6b1ad": {
    "verdict": "ok",
@@ -48211,15 +48222,6 @@
   "620b58f3a85e551b": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "6225696f5bc1b27d": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp107667280 (printed 43); 80.44 → −80, ruling 1 (G1 sign) — correction",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "adjudicated",
-    "note": "153.0 g × 4.18 × 3.4 = 2174 J carried, ÷ (3.0 ÷ 110.98 mol) = 80.4 → −80, negative for a dissolution that releases heat; the source prints 81 with no sign (erratum). last-digit:1 grades −79 and −81."
-   }
   },
   "622d70e6476c283f": {
    "verdict": "ok",
@@ -54531,6 +54533,14 @@
   "70a428d9402a4734": {
    "verdict": "ok",
    "note": "glossary recall fs-id1707465 intrinsic factor; body fs-id1959017",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "70a48de107c14dc9": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm101514016 part (h) key 2.7 × 10^−11 s | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | carried 2026-11-14 (ledger-carry): re-hashed when a reference to another section became a link; the stem's words, options, key, and dependency unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -63188,6 +63198,15 @@
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
+   }
+  },
+  "820774b69fca18a4": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp107667280 (printed 43); 80.44 → −80, ruling 1 (G1 sign) — correction | carried 2026-11-14 (ledger-carry): re-hashed when a reference to another section became a link; the stem's words, options, key, and dependency unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "153.0 g × 4.18 × 3.4 = 2174 J carried, ÷ (3.0 ÷ 110.98 mol) = 80.4 → −80, negative for a dissolution that releases heat; the source prints 81 with no sign (erratum). last-digit:1 grades −79 and −81."
    }
   },
   "820853d9cf790dc1": {
@@ -72387,14 +72406,6 @@
    "verdict": "ok",
    "note": "re-read against CNXML m58913; keyed sentence/table checks out | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "953b2d711d1192ab": {
-   "verdict": "ok",
-   "note": "CYL fs-idp13199280#check; 335.558 -> 336 (3 figures, ruling 3; source 335.6)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "953b688267315fb4": {
    "verdict": "ok",
    "note": "body cloze from § Plant Viruses: \"For a plant virus to enter a new host plant, some type of mechanical damage must occur.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -79753,14 +79764,6 @@
     "result": "agrees"
    }
   },
-  "a45f7b89379f83af": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp140766896 (printed 53); 7.425 → 7.4 at two figures (ΔT 10 °C), correction",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "a4689d507ebdc487": {
    "verdict": "ok",
    "note": "m58800 § Crenarchaeota: aquatic distribution, ocean abundance, qualified hyperthermophily, and Sulfolobus conditions all trace to the module. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -81759,9 +81762,9 @@
   "a88cfa870a583e05": {
    "verdict": "ok"
   },
-  "a8929d455f58292b": {
+  "a88fb1ed5497d46b": {
    "verdict": "ok",
-   "note": "source exercise fs-idm101514016 part (d) key 8.63 × 10^−5 kg | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "note": "source exercise fs-idm101514016 part (d) key 8.63 × 10^−5 kg | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | carried 2026-11-14 (ledger-carry): re-hashed when a reference to another section became a link; the stem's words, options, key, and dependency unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -85963,6 +85966,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "b1c8df39c70c0e7f": {
+   "verdict": "ok",
+   "note": "Gold selfcheck: volume 19.8 - 17.1 = 2.7 mL; 51.842 g / 2.7 cm3 = 19.2 -> 19 g/cm3, close to gold's 19.3 g/cm3 in the Section 1.4 density table; yellow and shiny. Model answer = source solution (already capitalized) + closing period, the table named as 'the table of densities of common substances in Section 1.4 Measurements' (G17); first rubric clause lowercased (G9); hint names the section in full. [Filed by the round-3 fixer under an earlier hash of this item; carried by the orchestrator after a round-3 edit that changed no key (a hint, a stem period, a datum added to a stem).] | carried 2026-11-14 (ledger-carry): re-hashed when a reference to another section became a link; the stem's words, options, key, and dependency unchanged"
   },
   "b1cea9f43421b04f": {
    "verdict": "ok",
@@ -91990,14 +91997,6 @@
     "result": "agrees"
    }
   },
-  "bde4db865f468851": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm101514016 part (a) key 1.3 × 10^−4 kg | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "bde9b5d6ada912ee": {
    "verdict": "ok",
    "note": "KC 1 4.1 § Taxonomy and Systematics, Micro Connection: Human Microbiome Project (fs-id1172100921608), m58795",
@@ -94377,14 +94376,6 @@
   "c326039448ad6cdf": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "c32a480f0048fe4b": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm101514016 part (c) key 5.23 × 10^−12 m | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -102582,6 +102573,15 @@
     "result": "agrees"
    }
   },
+  "d4aee5218e4891d6": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp146867872 (printed 41); one method 25.53 → 26, source 25 (register row candidate) | carried 2026-11-14 (ledger-carry): re-hashed when a reference to another section became a link; the stem's words, options, key, and dependency unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "The example's heat carried unrounded, 1023.9 J ÷ (3.21 ÷ 80.043 mol) = 25.5 kJ/mol → 26; the source's 25 uses its rounded 1.0 kJ. A register row; last-digit:1 grades both."
+   }
+  },
   "d4b2fafb8acd61c3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -107803,14 +107803,6 @@
    "verdict": "ok",
    "note": "fs-id1812346 (CNXML solution: False). (tan x/sec x)sin(-x) = sin(x)*(-sin x) = -sin^2 x, not cos^2 x; confirmed numerically at x=1 (-0.7080734182735713 vs cos^2(1)=0.2919265817264289, not equal). | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
-  "dfccd66002a8d742": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm101514016 part (i) key 1.5 × 10^−4 K | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "dfcd8da9a3c74307": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -107914,14 +107906,6 @@
   "dff88b1f37ba2aa4": {
    "verdict": "ok",
    "note": "model answer read against m46489 solution or named paragraph"
-  },
-  "dffae856dc7706c1": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm101514016 part (h) key 2.7 × 10^−11 s | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "e001aa64506fb50b": {
    "verdict": "ok",
@@ -110832,14 +110816,6 @@
     "result": "agrees"
    }
   },
-  "e5c67cbaba86c46c": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm101514016 part (f) key 5.4 × 10^−5 m | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "e5c89289fddb7a8e": {
    "verdict": "ok",
    "note": "Critical Thinking fs-idm35360400 (diabetes); model answer is the source solution verbatim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -112353,6 +112329,14 @@
   "e9702b91fb26ecc4": {
    "verdict": "ok",
    "note": "source Short Answer fs-id1167741460473, unkeyed, model answer from the risks paragraph | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "e972368d07bb807b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm101514016 part (a) key 1.3 × 10^−4 kg | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | carried 2026-11-14 (ledger-carry): re-hashed when a reference to another section became a link; the stem's words, options, key, and dependency unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "e9727954efaa3b27": {
    "verdict": "ok",
@@ -113884,6 +113868,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "ec864958183cf481": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp167492016 (printed 39) solution, HCL→HCl | carried 2026-11-14 (ledger-carry): re-hashed when a reference to another section became a link; the stem's words, options, key, and dependency unchanged"
   },
   "ec871b427fe7fc6e": {
    "verdict": "ok"
@@ -117287,6 +117275,14 @@
     "result": "agrees"
    }
   },
+  "f3ce69c324081f14": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm101514016 part (i) key 1.5 × 10^−4 K | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | carried 2026-11-14 (ledger-carry): re-hashed when a reference to another section became a link; the stem's words, options, key, and dependency unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f3d1067d69472366": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -119742,14 +119738,6 @@
     "result": "agrees"
    }
   },
-  "f878b8802ce35d19": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp211817568 part (d); 75.175 → 75.2, ruling 6 — correction",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "f87ac91d238089fa": {
    "verdict": "ok",
    "note": "Practice long-division item 2 (remainder): same division as above; remainder 16, matching the CNXML solution. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -121003,6 +120991,14 @@
     "result": "agrees"
    }
   },
+  "fb181f6f3d4f3f65": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm101514016 part (b) key 2.32 × 10^8 kg | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | carried 2026-11-14 (ledger-carry): re-hashed when a reference to another section became a link; the stem's words, options, key, and dependency unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "fb1aa7fbad200fc5": {
    "verdict": "ok"
   },
@@ -121443,6 +121439,14 @@
   "fbda50b6c6595360": {
    "verdict": "ok",
    "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "fbe5d647776b6631": {
+   "verdict": "ok",
+   "note": "CYL fs-idp13199280#check2; 38.708 -> 38.7 | carried 2026-11-14 (ledger-carry): re-hashed when a reference to another section became a link; the stem's words, options, key, and dependency unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "fbe6e4249ab23ca0": {
    "verdict": "ok",
@@ -122183,6 +122187,10 @@
     "result": "agrees"
    }
   },
+  "fd6e6e4f627e0b1d": {
+   "verdict": "ok",
+   "note": "CYL fs-idm80667088#check identity; source sentences as model | carried 2026-11-14 (ledger-carry): re-hashed when a reference to another section became a link; the stem's words, options, key, and dependency unchanged"
+  },
   "fd7445bdd6eecc2e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -122383,14 +122391,6 @@
   "fdc1bf88943d64e9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "fdc28ceef1ff56f3": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm101514016 part (g) key 1 × 10^12 s | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"

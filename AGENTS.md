@@ -299,7 +299,9 @@ hash when the stem, options, and key are unchanged and every previously
 graded form still grades correct (so `accept` ADDITIONS carry, and a
 removal carries only when the grader still reads the removed spelling —
 a regular plural, or since October 27, 2026 a hyphenated or closed
-respelling — while a new key does not); a fill-in's `answerForm` change carries
+respelling — while a new key does not); a link to a page of this site put
+around a stem's unchanged words, or taken off them, is not a change to the
+stem (November 14, 2026); a fill-in's `answerForm` change carries
 while the key still grades correct under the new form, since `solve:compare`
 judges a solver on value, not form (October 4, 2026); an item whose `dependency` block — the
 figure or table it names — changed is re-solved, since the solver read

@@ -3226,19 +3226,34 @@ the 26,000 gallons per hectare, and ice's 2.093 J/g °C "at −10 °C".
 Knowledge Check block 2 (chapters 4–5), run from
 `docs/briefs/chemistry/kc-run.md`, then chapter 6.
 
-### For Derek
+### For Derek — answered November 14, 2026
 
-1. Section-to-section links: the playbook forbids them and this run kept to
-   it, but a learner sent to another section's table or example would be
-   helped by a link, as with appendices. A proposal, not done.
-2. The stem form `$\Delta H^\circ$ = −314 kJ` (symbol in math, value in
-   prose) was chosen over all-math to match chapter 4 and the lint that keeps
-   units out of stem math.
-3. Four cells of source DATA tables were corrected against NIST (three
-   specific heats, one enthalpy of combustion) with Source notes. Say if data
-   tables should stay as the source prints them.
-4. A key with a trailing zero (459.610) is what the figures give and reads
-   oddly.
+1. **Section-to-section links: allowed, and the plain-text rule removed.**
+   A reference to another section is now a link to that section's page
+   (playbook, page skeleton rule 9; `author.md` step 7; `checker.md` §3;
+   `run.md` step 6, where the run facts list the references and the
+   paths). Swept the same day over every page on disk: 35 references on 13
+   pages (chapters 1–5 and Appendix C) became
+   `[Section N.M Title](/physical-sciences/chemistry/…/)`, each footer
+   says so, and three footer clauses that said "plain text" were reworded.
+   Not linked: a hint (plain text, as with an appendix), and the three
+   references to sections not yet written (17.1, 17.6, 19.1) — the run
+   that writes each page links what points to it. 18 items were re-hashed
+   by a link in their stem; `ledger-carry.mjs` now reads a site link
+   around unchanged words as no change to the stem (test beside it;
+   AGENTS.md, "Re-solving after a sweep"), and all 18 records carried.
+   A section link opens the section's page, not the table or example
+   named: the page has no anchor for either.
+2. **The stem form `$\Delta H^\circ$ = −314 kJ` stays.** Checked in a
+   browser at 390 and 1280 px: all 15 such quantities of 5.3 sit on one
+   line with their symbol (the `.ap-math-glue` value pattern), and the
+   lint holds the form in stems. What is not uniform is the BODY: three
+   sentences of 1.4 and two cells of Appendix E use the stem's split form
+   (`$m$ = 18.58 g`), while the solutions of chapter 5 set the same kind
+   of statement whole in math (`$q = -2.9\ \text{kJ}$`). Put to Derek.
+3. **Corrected cells of source data tables stay corrected**, each with its
+   Source note.
+4. **The trailing-zero key (459.610) stays.**
 
 ## The `\dfrac` watch list
 

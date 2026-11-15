@@ -162,7 +162,9 @@ Eight things chapter 5 added (`docs/history/chemistry.md`, "Chapter 5"):
 - **A parent decision that names a playbook rule is written with the rule
   open.** Run facts decisions 6 and 8 cited the cross-reference rule and
   ruled the opposite of it (links between sections); the consistency
-  reader caught it and six links were removed.
+  reader caught it and six links were removed. (The rule itself changed
+  the same day, on Derek's word: a reference to another section is now a
+  link. The lesson is the open rule, not the links.)
 - **The run facts screen EVERY numeric key for its figure count and its
   sign against the question's verb before the wave**, not a list of
   candidates from a first read: the candidates named 4 of the 13 keys that
@@ -273,6 +275,16 @@ Eight things chapter 5 added (`docs/history/chemistry.md`, "Chapter 5"):
    (`tests/browser-check.spec.mjs`, "a table appendix opens over the
    page") with the page and stem of the first exercise that links
    Appendix G, and opens that exercise's lookup in a real browser.
+   The facts list **every reference to another section** too *(Derek,
+   November 14, 2026)*: the modules' links to other modules
+   (`grep -oE 'document="m[0-9]+"'`, less the appendices) and to another
+   module's figure, table, or example, with the site path of each target —
+   every section page on disk, and the paths this chapter's pages will
+   have, since a section links a sibling written in the same wave. A
+   reference to a section is a link (playbook, page skeleton rule 9); a
+   target the book has not reached is plain text, and the run that writes
+   that page links what points to it (`grep -rn 'Section N\.' content/physical-sciences/chemistry`
+   at close-out).
 6a. **Gate probe.** `node tools/source/chemistry-gate-probe.mjs N >
    $SP/chN-probe.txt`. The source gates were written from the shapes of
    the chapters already on the site, and a shape they have not met fails
