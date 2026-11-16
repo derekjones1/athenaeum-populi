@@ -9,6 +9,7 @@
 // Usage:
 //   node tools/source/chemistry-shapes.mjs <chapter>            the table and the flags
 //   node tools/source/chemistry-shapes.mjs <chapter> --list     every keyed unit, one line each
+//   node tools/source/chemistry-shapes.mjs <chapter> --figures  and every numeric key's figures and sign
 //
 // After the flags come NOTES: the units whose STRUCTURE the page must shape
 // for the source gates — a part that is only an image, an answer that is
@@ -22,7 +23,8 @@
 import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { keyedUnits, listMembers, sequentialParts } from '../lib/keyed-units.mjs';
+import { keyedUnits, listMembers, printedNumerals, sequentialParts } from '../lib/keyed-units.mjs';
+import { heatAsk, isNegativeKey } from '../lib/heat-ask.mjs';
 import { chemCanon, chemKeyProblem } from '../../assets/js/lib/text/check-chem.mjs';
 import { letteredSets, numberWords, numbersOnly } from '../verify/verify-source-keys.mjs';
 
@@ -200,14 +202,187 @@ export function quantityPieces(text) {
   return numbers ? { numbers, judgments } : null;
 }
 
+/*
+ * Figure counts and signs (--figures): a screen of every numeric source key
+ * before the wave. Chapter 5's run facts named, from a first read, 4 of the
+ * 13 keys that later moved for their figure count or their sign
+ * (docs/briefs/chemistry/run.md, "The run facts screen EVERY numeric key").
+ * Each row is a key beside the figures its stem's data carry and the heat
+ * its question asks; a flag is a row the parent rules on, never a verdict:
+ * an exact multiplier keeps a table value's figures (docs/subjects/chemistry.md
+ * "Figure counts of a key"), and a table value is data this cannot see.
+ */
+
+/*
+ * The measured data a stem prints. A numeral is a datum when it is written
+ * with a decimal point ("1.00 pound") or in scientific notation ("3.00 ×
+ * 10² g"), or when an integer is directly followed by a unit ("502 g",
+ * "25 °C", "28.4-g", "−907 kJ"). A bare integer is not: "2 NH₃", "the 50
+ * chemical compounds", "n = 5" are counts as often as measurements. Of the
+ * integers followed by a unit three are left out: one after "exactly"
+ * (chapter 5's "exactly 1 mole of H₂O₂"), a 1 ("1 Calorie per can", "1
+ * kilowatt-hour (kWh) = …", "(1-oz)": a per-one statement or a definition),
+ * and a count of moles or a nominal molarity ("2 moles", "1 M") — an amount
+ * the equation fixes. A numeral named as a label ("Example 5.3", "Table 4")
+ * is no datum. An integer's trailing zeros count as figures ("100 g" is
+ * three): reading them as placeholders would flag nearly every key under
+ * "100 g of water" or "2000 Calories".
+ */
+const DATA_UNIT = String.raw`(?:°\s?[CF]|º\s?[CF]|K\b(?!\s*[[(])|kWh\b|k?J\b|k?cal\b|Cal(?:orie)?s?\b|calories?\b|(?:kilo)?joules?\b|[kmµμ]?g\b|(?:kilo|milli)?grams?\b|m?L\b|lit(?:er|re)s?\b|mol(?:es?)?\b|M\b|atm\b|torr\b|mm\s?Hg\b|k?Pa\b|bar\b|oz\b|ounces?\b|lb\b|pounds?\b|gal(?:lons?)?\b|qt\b|quarts?\b|[kcmnµμp]?m\b|met(?:er|re)s?\b|in\.|inch(?:es)?\b|ft\b|feet\b|miles?\b|seconds?\b|min\b|minutes?\b|hours?\b|days?\b|years?\b|%|percent\b|amu\b|Hz\b|Å|ppm\b|ppb\b)`;
+const FOLLOWED_BY_UNIT = new RegExp(String.raw`^[\s-]*${DATA_UNIT}`);
+const MOLE_COUNT = /^[\s-]*(?:mol(?:es?)?\b|M\b)/;
+const TEMPERATURE_UNIT = /^[\s-]*(°\s?[CF]|º\s?[CF]|K\b(?!\s*[[(]))/;
+const LABEL_BEFORE = /\b(?:Example|Figure|Table|Exercise|Section|Appendix|Chapter|Equation|exactly)\s*$/i;
+// keyedUnits flattens a stem's superscript: "1.28 × 10 5 kJ/gal".
+const flatPower = (text) => String(text ?? '').replace(/([×x])\s*10\s+([−–-]?\d+)\b/g, '$1 10^{$2}');
+// A unit's own exponent ("cm^{3}") blanked to its length, so a numeral's place in the text is kept.
+const blankUnitExponents = (text) => text.replace(/(?<!(?:^|[\s×x(])10\s*)\^\{[^}]*\}/g, (match) => ' '.repeat(match.length));
+
+/** Every numeral of a text with what follows it: [{ numeral, before, after }]. */
+function numeralsInPlace(text) {
+  const blanked = blankUnitExponents(flatPower(text).replace(/\s+/g, ' '));
+  const out = [];
+  let cursor = 0;
+  for (const numeral of printedNumerals(blanked)) {
+    const at = blanked.indexOf(numeral.printed, cursor);
+    if (at < 0) continue;
+    cursor = at + numeral.printed.length;
+    out.push({ numeral, before: blanked.slice(0, at), after: blanked.slice(cursor) });
+  }
+  return out;
+}
+
+/** The figures a numeral is taken to carry as a datum: its trailing zeros counted. */
+const datumFigures = (numeral) => numeral.sigMax;
+
+/*
+ * A difference of two temperatures has the figures its last place gives
+ * (docs/subjects/chemistry.md "Figure counts of a key": 110 °C − 100 °C is
+ * 10 °C, two figures). Three chapter 5 keys moved for it — the TNT item's
+ * 11.7 (26.9 − 23.4), the precipitation item's 1.34 kJ (23.5 − 21.9), the
+ * steam item's 7.43 g (110 − 100) — and no datum the stem prints has so few
+ * figures, so a change of temperature the stem prints is a datum too: two
+ * temperatures in a row, in one unit, the words between them ending in "to"
+ * ("from 23.4 °C to 26.9 °C", "at 22.4 °C causes the temperature to rise to
+ * 25.8 °C"). "from 95.0 to 35.0 °C" names its unit once. Two temperatures
+ * not joined so are not paired: the steam item's "35.0 °C, as the heat
+ * provided when 100 g of steam is cooled from 110 °C" is no change.
+ */
+function temperatureDifferences(placed) {
+  const between = (a, b) => b.before.slice(a.before.length + a.numeral.printed.length);
+  const temperatures = [];
+  placed.forEach((entry, index) => {
+    const next = placed[index + 1];
+    const unit = TEMPERATURE_UNIT.exec(entry.after)?.[1]
+      ?? (next && /^\s*to\s*$/.test(between(entry, next)) ? TEMPERATURE_UNIT.exec(next.after)?.[1] : undefined);
+    if (unit) temperatures.push({ ...entry, unit: unit.replace(/\s/g, '').replace('º', '°') });
+  });
+  const out = [];
+  for (let index = 1; index < temperatures.length; index += 1) {
+    const [a, b] = [temperatures[index - 1], temperatures[index]];
+    if (a.unit !== b.unit || !/\bto\s*$/.test(between(a, b))) continue;
+    const low = Math.min(a.numeral.exponent, b.numeral.exponent);
+    const value = (numeral) => (numeral.negative ? -1n : 1n) * numeral.mantissa * 10n ** BigInt(numeral.exponent - low);
+    let difference = value(a.numeral) - value(b.numeral);
+    if (difference < 0n) difference = -difference;
+    const scale = 10n ** BigInt(Math.max(a.numeral.exponent, b.numeral.exponent) - low);
+    const atPlace = (difference + scale / 2n) / scale;
+    if (atPlace === 0n) continue;
+    out.push({ figures: atPlace.toString().length, printed: `${a.numeral.printed} → ${b.numeral.printed}` });
+  }
+  return out;
+}
+
+/** The stem's measured data, each `{ figures, printed }`, temperature differences last. */
+export function stemData(stem) {
+  const placed = numeralsInPlace(stem);
+  const data = [];
+  for (const { numeral, before, after } of placed) {
+    if (LABEL_BEFORE.test(before)) continue;
+    const integer = !numeral.scientific && !/\./.test(numeral.printed);
+    if (integer) {
+      if (!FOLLOWED_BY_UNIT.test(after) || MOLE_COUNT.test(after)) continue;
+      if (numeral.mantissa === 1n && numeral.exponent === 0) continue;
+    }
+    data.push({ figures: datumFigures(numeral), printed: numeral.printed });
+  }
+  return [...data, ...temperatureDifferences(placed)];
+}
+
+/*
+ * The numerals a keyed answer gives as its keys. A number-shaped answer: one
+ * per quantity, the first numeral of each (a formula after a unit, "mol H 2
+ * O", is never read). A sentence or words answer whose key is a number —
+ * chapter 5 moved six such keys: "The initial temperature of the copper was
+ * 335.6 °C.", "1.34 × 10³ kJ, or 1.34 kJ; assume …", "q_rx = –39.0 kJ (the
+ * reaction produced …)", "22.6. Since …", "… Energy required = 7.47 kWh",
+ * "The temperature of the coffee will drop 1 degree." — gives the numeral it
+ * opens with (after a short "label ="), else the one after an "=", else the
+ * one a short sentence ends on.
+ */
+const LEADING_NUMERAL = /^\s*(?:[^=\d.;]{1,24}?=\s*)?(?=[−–-]?(?:\d|\.\d))/;
+function keyNumerals(answer, read) {
+  const text = String(answer ?? '').replace(/\s+/g, ' ').trim();
+  if (read.shape === 'number') {
+    if (read.key !== undefined) return printedNumerals(String(read.key)).slice(0, 1);
+    const pieces = read.quantities ? text.split(/;|\.\s+(?=[A-Z])/) : [text];
+    return pieces.map((piece) => printedNumerals(piece.replace(/^(?:[A-Za-zνλ][\w\s^{}−–-]*?\s*[:=]\s*)(?=[−–-]?\d)/, ''))[0]).filter(Boolean);
+  }
+  if (read.shape !== 'sentence' && read.shape !== 'words') return [];
+  const opening = LEADING_NUMERAL.exec(text);
+  if (opening) return printedNumerals(text.slice(opening[0].length)).slice(0, 1);
+  const equals = /=\s*(?=[−–-]?(?:\d|\.\d))/.exec(text);
+  if (equals) return printedNumerals(text.slice(equals.index + equals[0].length)).slice(0, 1);
+  const ending = text.split(/(?<=\.)\s+(?=[A-Z])/).find((sentence) => sentence.split(' ').length <= 16
+    && new RegExp(String.raw`[−–-]?\d[\d.,]*\s*(?:${DATA_UNIT}|degrees?\b)\s*\.?$`).test(sentence));
+  return ending ? printedNumerals(ending).slice(-1) : [];
+}
+
+const figuresOf = (numeral) => (numeral.sigMin === numeral.sigMax ? String(numeral.sigMax) : `${numeral.sigMin}–${numeral.sigMax}`);
+
+/**
+ * The --figures rows of one keyed unit: one per key numeral, each
+ * `{ key, figures, ambiguous, data: { figures, printed } | null, sign, heat,
+ * flags, sentence }`, or [] for a unit whose key is no number.
+ */
+export function figureRows(unit) {
+  if (!unit?.keyed || unit.choices) return [];
+  const read = shapeOf(unit.answer, unit.stem);
+  const keys = keyNumerals(unit.answer, read);
+  if (!keys.length) return [];
+  const data = stemData(unit.stem);
+  const fewest = data.reduce((least, datum) => (!least || datum.figures < least.figures ? datum : least), null);
+  const heat = heatAsk(unit.stem);
+  return keys.map((numeral) => {
+    const ambiguous = numeral.sigMin !== numeral.sigMax;
+    const flags = [];
+    if (!ambiguous && fewest && numeral.sigMax !== fewest.figures) flags.push('figures');
+    if (ambiguous) flags.push('zeros');
+    const negative = isNegativeKey(numeral.printed);
+    if (negative && heat === 'amount') flags.push('sign');
+    return {
+      key: numeral.printed.trim(),
+      figures: figuresOf(numeral),
+      ambiguous,
+      data: fewest,
+      sign: negative ? '−' : '+',
+      heat: heat ?? '',
+      flags,
+      sentence: read.shape !== 'number',
+    };
+  });
+}
+
 function main(argv) {
   const chapter = Number(argv[0]);
   const all = chapters();
   if (!Number.isInteger(chapter) || !all[chapter - 1]) {
-    console.error('usage: node tools/source/chemistry-shapes.mjs <chapter 1–21> [--list]');
+    console.error('usage: node tools/source/chemistry-shapes.mjs <chapter 1–21> [--list] [--figures]');
     process.exit(2);
   }
   const list = argv.includes('--list');
+  const figures = argv.includes('--figures');
+  const figureLines = [];
   const SHAPES = ['number', 'formula', 'equation', 'equation+', 'configuration', 'ordering', 'quantum-numbers', 'subshell', 'words', 'sentence', 'drawing'];
   const flags = [];
   const notes = [];
@@ -228,6 +403,7 @@ function main(argv) {
       lines.push(`  ${unit.id}\t${read.shape}\t${answer.slice(0, 90) || '(an image)'}\t→ ${read.component}${imageOnly ? ' — the part is only an image' : ''}`);
       if (read.flag) flags.push(`${chapter}.${index} ${moduleId} ${unit.id}: ${read.flag}\n    ${answer.slice(0, 160)}`);
       const where = `${chapter}.${index} ${moduleId} ${unit.id}`;
+      if (figures) figureLines.push(...figureRows(unit).map((row) => ({ where, ...row })));
       // What the source gates need the page, or the parent, to do for this unit.
       if (imageOnly) {
         notes.push(`${where}: the part is only an image (${unit.media.join(', ')}) — its item sits under that mediafigure and says "the figure above"; the gates tell the parts apart by the figure`);
@@ -248,6 +424,19 @@ function main(argv) {
     ? `\nFlags — rule on each before the wave (a source defect, or a shape the forms do not read):\n${flags.join('\n')}`
     : '\nNo flags: every keyed formula reads and every keyed equation balances.');
   if (notes.length) console.log(`\nNotes — units the page must shape for the source gates:\n${notes.join('\n')}`);
+  if (figures) printFigureRows(figureLines);
+}
+
+/** The --figures section: one row per numeric key, then the tally. */
+function printFigureRows(rows) {
+  console.log('\nFigure counts and signs — rule on every flagged row before the wave (a screen: a flag is a question, not a defect):');
+  console.log(['where', 'key', 'figures', 'data (fewest)', 'sign', 'heat', 'flags'].join('\t'));
+  for (const row of rows) {
+    const data = row.data ? `${row.data.figures} (${row.data.printed})` : '–';
+    console.log([row.where, row.key, row.figures, data, row.sign, row.heat, row.flags.join(' '), row.sentence ? '(read from a sentence answer)' : ''].join('\t').trimEnd());
+  }
+  const count = (flag) => rows.filter((row) => row.flags.includes(flag)).length;
+  console.log(`${rows.length} rows; flagged: figures ${count('figures')}, zeros ${count('zeros')}, sign ${count('sign')}; ${rows.filter((row) => row.flags.length).length} rows carry a flag.`);
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) main(process.argv.slice(2));

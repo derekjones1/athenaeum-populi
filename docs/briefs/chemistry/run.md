@@ -168,7 +168,8 @@ Eight things chapter 5 added (`docs/history/chemistry.md`, "Chapter 5"):
 - **The run facts screen EVERY numeric key for its figure count and its
   sign against the question's verb before the wave**, not a list of
   candidates from a first read: the candidates named 4 of the 13 keys that
-  moved.
+  moved. The screen is now `node tools/source/chemistry-shapes.mjs
+  <chapter> --figures`, and the parent rules on every row it flags.
 - **The parent's own table of mass-dependent values is recomputed by the
   one method before it is sent.** One row used an example's rounded heat
   and was a unit off (the author keyed it rightly).
@@ -313,7 +314,10 @@ Ten things chapter 7 added (`docs/history/chemistry.md`, "Chapter 7"):
    one of the stem's own set (2.6 asks "ionic or covalent" and answers
    "molecular"); a simulation exercise; a datum a stem assumes. **Every
    keyed-answer shape that is new to the book is probed through the source
-   gates before the wave** (step 6a). The facts
+   gates before the wave** (step 6a). Every numeric key's figures and
+   sign come from `node tools/source/chemistry-shapes.mjs <chapter>
+   --figures`; the Clerk pastes its section into the facts, and the
+   parent rules on each flagged row. The facts
    also list **every appendix the chapter's modules link**
    (`grep -oE 'document="m688(59|6[0-9]|7[01])"'` over the modules;
    `m68859` is Appendix A … `m68871` Appendix M — the bare `m688[5-7][0-9]`

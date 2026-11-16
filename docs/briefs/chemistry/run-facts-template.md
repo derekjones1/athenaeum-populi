@@ -64,6 +64,18 @@ that does not apply.
   and a ruling for the parent before the wave. List too each worked
   example whose printed numbers move, and which of the playbook's two
   Source-note wordings it takes.
+- **Figure counts and signs** (playbook "Figure counts of a key" and the
+  sign rule, "The question's words decide a heat key's sign"): the
+  section `node tools/source/chemistry-shapes.mjs <chapter> --figures`
+  prints after its notes, pasted whole by the Clerk — one row per
+  numeric source key with its figures, the fewest figures among the
+  stem's data, its sign, and what the stem asks about heat, then the
+  tally. A row flagged `figures`, `zeros`, or `sign` is a question, not a
+  defect: the parent rules on every flagged row before the wave and
+  writes the ruling beside it (the key stands, with the rule that keeps
+  it; or it moves, as a correction). A key the screen cannot see (a table
+  value with no stem data, an arithmetic slip at the right figure count)
+  is still the mass-dependent table's and the solve's to find.
 
 ## Per section (one block each)
 
