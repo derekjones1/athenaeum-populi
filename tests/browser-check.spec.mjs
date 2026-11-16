@@ -2880,10 +2880,14 @@ test('on every Chemistry page a display row fits the column, scientific notation
             .map((el) => `${short(el.querySelector('annotation') ?? el)} (${el.scrollWidth} > ${el.clientWidth})`),
           split: kept.filter((el) => el.getClientRects().length > 1).map(short),
           // Half (or three tenths) of the native width, and never under
-          // 26rem (14rem): assets/css/custom.css, `.ap-mediafigure[data-scale]`.
+          // 26rem (14rem) — or, for a half-scale drawing narrower than that
+          // floor, three quarters of native: assets/css/custom.css,
+          // `.ap-mediafigure[data-scale]`.
           wide: scaled.filter((img) => {
             const third = img.closest('figure').dataset.scale === 'scaled-down-30';
-            const cap = Math.max((third ? 14 : 26) * 16, Number(img.getAttribute('width')) * (third ? 0.3 : 0.5));
+            const native = Number(img.getAttribute('width'));
+            const floor = third ? 14 * 16 : Math.min(26 * 16, native * 0.75);
+            const cap = Math.max(floor, native * (third ? 0.3 : 0.5));
             return img.getBoundingClientRect().width > cap + 1;
           }).map((img) => `${img.closest('figure').dataset.stem} at ${Math.round(img.getBoundingClientRect().width)} px`),
           // …and a wide one is not squeezed under its share: the 26rem cap

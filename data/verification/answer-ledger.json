@@ -30402,10 +30402,6 @@
     "result": "agrees"
    }
   },
-  "3beb6353fa0dafca": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp73458400 — model answer the source solution; ains 85.7% carbon and 14.3% hydrogen. What is its molecular structure?"
-  },
   "3bf003424d598b4b": {
    "verdict": "ok",
    "note": "KC 4 21.5 § Evasion of the Immune System by Pathogens, m46569"
@@ -32561,6 +32557,14 @@
   "40301486a8f29b94": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "4032eba07194e686": {
+   "verdict": "ok",
+   "note": "glossary recall: linear (fs-idp35872064) — provenance backfilled 2026-11-16 (ledger-provenance.mjs)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -43560,6 +43564,14 @@
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "568baaa815e0d416": {
+   "verdict": "ok",
+   "note": "glossary recall: linear (fs-idp35872064) — provenance backfilled 2026-11-16 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "568d303754a5427d": {
    "verdict": "ok",
    "note": "Check Your Learning of example fs-idm150394080, chlorine: 17.81/24.81 = 71.786% -> 71.79 (source 71.79% Cl)",
@@ -47232,6 +47244,10 @@
   "5d9f002d2fd6b954": {
    "verdict": "ok",
    "note": "Body Check Your Understanding bullet 2 (note fs-id1167793982327), § Early Microscopes; model answer assembled from the van Leeuwenhoek, Hooke, and Galileo sentences earlier in the same subsection. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "5da327055f97ea0a": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp73458400 — model answer the source solution after an added opening sentence and the label \"Sample answer:\"; parent re-read November 15, 2026: 85.7/12.011 : 14.3/1.008 = 1 : 1.99, CH2 (14.03 g/mol), 42/14.03 = 3, C3H6, whose two structures are the source's chain (propene) and a three-carbon ring (cyclopropane); the rubric is what both have"
   },
   "5da3287f60f97ea0": {
    "verdict": "ok",
@@ -61831,6 +61847,14 @@
     "result": "agrees"
    }
   },
+  "7c40d2446582f760": {
+   "verdict": "ok",
+   "note": "glossary recall: trigonal planar (fs-idp36467056) — provenance backfilled 2026-11-16 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7c4100e492bda361": {
    "verdict": "ok",
    "note": "KC 1 4.4 § body opening paragraph (fs-id1524010), m46055"
@@ -72685,10 +72709,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "927b915a5da4a959": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp16503888 — model answer the source solution; around the indicated atom or atoms: each of the carbon atoms in propyne, CH₃CCH."
   },
   "9280e6a4252b5ed3": {
    "verdict": "ok",
@@ -93810,6 +93830,14 @@
     "result": "agrees"
    }
   },
+  "bd7cbd1032c5db70": {
+   "verdict": "ok",
+   "note": "glossary recall: tetrahedral (fs-idp51917808) — provenance backfilled 2026-11-16 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "bd7dcf13f02eb323": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -107061,10 +107089,6 @@
     "result": "agrees"
    }
   },
-  "d9068c9fe61d00d5": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm74511072"
-  },
   "d909640c946a92e4": {
    "verdict": "ok",
    "note": "Review Question fs-id1472236; source solution keys B, \"regulation of gene expression after translation,\" matching options transcribed verbatim in source order. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -118277,10 +118301,6 @@
     "result": "agrees"
    }
   },
-  "f078e453eb1e0079": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp16503888 — model answer the source solution; around the indicated atom or atoms: each of the carbon atoms in allene, H₂CCCH₂."
-  },
   "f07dbe4c3359077d": {
    "verdict": "ok",
    "note": "Review fs-id1643864, key B matches solution fs-id1647989; options verbatim, source order",
@@ -118563,6 +118583,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "f10f98daf644d908": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm74511072 — model answer the source solution after an added opening sentence and the label \"Sample answer:\"; parent re-read November 15, 2026: 85.7/12.011 : 14.3/1.008 = 1 : 1.99, CH2 (14.03 g/mol), 42/14.03 = 3, C3H6, whose two structures are the source's chain (propene) and a three-carbon ring (cyclopropane); the rubric is what both have"
   },
   "f111347fe4fcc030": {
    "verdict": "ok",

@@ -982,9 +982,14 @@ self-check:not(:defined) .ap-selfcheck-checkpoint input { pointer-events: none; 
    less than 26rem (14rem), below which a small drawing's labels cannot be
    read on a screen. A flat 26rem cap, the rule until chapter 2, set the
    wide ones at a third of native with 7 px labels. On a phone the figure
-   has the whole column again: a third of 340 px is unreadable. */
+   has the whole column again: a third of 340 px is unreadable. A drawing
+   NARROWER than the floor is not held at its native size by it: the art's
+   letters are drawn about one and a half times the body text (they are
+   meant to be halved), so a 116 px carbon monoxide at full size shouted
+   beside the prose. It is set at three quarters of native, where its
+   letters match the body text (chapter 7). */
 @media (min-width: 48rem) {
-  .ap-mediafigure[data-scale="scaled-down"] img { max-width: min(100%, max(26rem, calc(var(--ap-native-width, 0px) * 0.5))); }
+  .ap-mediafigure[data-scale="scaled-down"] img { max-width: min(100%, max(min(26rem, calc(var(--ap-native-width, 0px) * 0.75)), calc(var(--ap-native-width, 0px) * 0.5))); }
   .ap-mediafigure[data-scale="scaled-down-30"] img { max-width: min(100%, max(14rem, calc(var(--ap-native-width, 0px) * 0.3))); }
 }
 /* An uncaptioned figure directly above an item is that item's own picture —

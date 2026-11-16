@@ -3958,6 +3958,51 @@ drawings and orbital diagrams: probe its shapes before the wave.
 6. The C₃H₆ self-checks (7.3 printed 41, 7.6 printed 111) carry the source's
    chain; a ring answers the same data and no note says so.
 
+### The six, answered (November 15, 2026)
+
+Derek asked for solutions where any were needed. Three changed the tree;
+three need none. The run followed `docs/re-review/README.md` (snapshot
+rebuilt from HEAD, carry plan, a fresh Fable solve of the four new fields:
+4 of 4 agree; the two changed self-checks re-read by the parent).
+
+1. **NaCl, 769 kJ: no change.** No item uses the number. The book's own
+   values (Appendix G: NaCl(s) −411.2, Na(g) 107.5, Cl(g) 121.3; 6.5's
+   figures: Na 490, Cl −348) put the cycle at about 782 kJ, since 6.5 prints
+   the ionization energy to two figures; that agrees with the note's
+   "about" and replaces nothing.
+2. **PH₂⁻: no change.** The self-check with its Source note is the
+   playbook's own ruling for a yes/no that turns on a tie in the table.
+3. **Marked atoms: two of three graded.** 7.6's propyne and allene parts
+   are two text fields each, the atom named in words by a closing sentence
+   ("around the carbon atom of the CH₃ group", "around each of the other
+   two carbon atoms"; "the central carbon atom", "each of the two end
+   carbon atoms"). The source gate confirms all four. Their self-checks
+   are gone (they re-asked the fields, as the solver noted), and the Freon
+   part is back in the source's order. The alanine Check Your Learning
+   stays a self-check: its answer is ten values, and a body set holds
+   three items at most; two sort-into-bins were tried and the source gate
+   cannot bind them (the bins are not the stem's). 7.6 now has 71 Practice
+   items: 45 text fields, 13 multiple choice, 13 self-checks.
+4. **Small drawings: fixed in the stylesheet.** A half-scale figure
+   narrower than 26rem is set at three quarters of its native width
+   (`max(min(26rem, 0.75 × native), 0.5 × native)`), where its letters
+   match the body text; wider figures are unchanged, and so is
+   `scaled-down-30`. Only Chemistry carries `scale`; five figures of
+   chapters 1 to 6 are narrower than 555 px and shrink with chapter 7's
+   (the kilogram, the sapphire, the copper wire, saccharin, the water
+   waves). The browser test's cap follows the rule.
+5. **Formal charges: no change.** The claim was incomplete: 7.4's carbon
+   monoxide Check Your Learning is two fields keyed −1 and +1, so a
+   learner who types 0 everywhere is caught on the page.
+6. **C₃H₆: both self-checks in the "Sample answer:" form.** An opening
+   sentence says what every correct structure has and names the two
+   arrangements (the chain and the three-carbon ring); the rubric is that
+   sentence's clauses; the source's drawing follows the label. Both
+   footers say so.
+
+Baselines: replay 9197 → 9201, exercises 18544 → 18546, confirmed
+7751 → 7753.
+
 ## The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under
