@@ -272,9 +272,9 @@ metalloids
 {{< selfcheck question="Why is an ionic compound not electrically conductive in solid form, and why can it conduct electricity when molten?" >}}
 In solid form, an ionic compound is not electrically conductive because its ions are unable to flow (“electricity” is the flow of charged particles). When molten, however, it can conduct electricity because its ions are able to move freely through the liquid.
 ===CHECKS===
-in solid form, its ions are unable to flow
+its ions are unable to flow
 electricity is the flow of charged particles
-when molten, its ions are able to move freely through the liquid
+its ions are able to move freely through the liquid
 {{< /selfcheck >}}
 
 {{< multiplechoice

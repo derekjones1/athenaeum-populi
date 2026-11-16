@@ -2943,6 +2943,32 @@ test("practice floors are per book — biology's landed floor is 3/8, math keeps
   );
 });
 
+test('a Chemistry checkpoint is a run of the model answer’s words; the life-sciences books keep the overlap bar', () => {
+  const chem = 'content/physical-sciences/chemistry/04-x/04-y.md';
+  const bio = 'content/life-health-sciences/biology/01-x/01-y.md';
+  const runError = (src, file) => lintHugo(src, file).errors.filter((e) => e.includes('is not a run of the model answer'));
+  // 4.4's gold atoms, as written before November 15, 2026: every word of the
+  // second clause is the model answer's, so the overlap bar passes it.
+  const joined = checkpointed('This amount cannot be weighed by ordinary balances and is worthless.\n===CHECKS===\nthis amount cannot be weighed by ordinary balances\nthis amount is worthless');
+  assert.equal(runError(joined, chem).length, 1, 'two runs joined over the words between them are refused in Chemistry');
+  assert(runError(joined, chem)[0].includes('"this amount is worthless"'), 'the message names the clause');
+  assert.equal(lintHugo(joined, bio).errors.length, 0, `a life-sciences book keeps the overlap bar: ${lintHugo(joined, bio).errors.join('; ')}`);
+  const copied = checkpointed('This amount cannot be weighed by ordinary balances and is worthless.\n===CHECKS===\nthis amount cannot be weighed by ordinary balances\nis worthless');
+  assert.equal(lintHugo(copied, chem).errors.length, 0, `copied clauses lint clean: ${lintHugo(copied, chem).errors.join('; ')}`);
+  // A checkpoint is plain text and the model answer is TeX: the same words.
+  const notation = checkpointed('$m_l$ determines the orientation of the orbitals, and $\\Delta H^\\circ$ is twice the value for H₂O(*g*).\n===CHECKS===\nmₗ determines the orientation of the orbitals\nΔH° is twice the value for H₂O(g)');
+  assert.equal(lintHugo(notation, chem).errors.length, 0, `notation is not a rewording: ${lintHugo(notation, chem).errors.join('; ')}`);
+  // The overlap bar would refuse this one for its notation alone: it finds
+  // three of the second clause's four tokens, 0.75 against the bar of 0.8.
+  const symbols = checkpointed('For an orbital of type (y): $l = 1$, $m_l = -1, 0, \\text{ or } +1$.\n===CHECKS===\nfor an orbital of type (y)\nmₗ = −1, 0, or +1');
+  assert.equal(lintHugo(symbols, chem).errors.length, 0, `Chemistry is held to the run alone: ${lintHugo(symbols, chem).errors.join('; ')}`);
+  const turned = checkpointed('For an orbital of type (y): $l = 1$, $m_l = -1, 0, \\text{ or } +1$.\n===CHECKS===\nfor an orbital of type (y)\nmₗ = +1, 0, or −1');
+  assert.equal(runError(turned, chem).length, 1, 'a clause that turns a sign is not the model answer’s');
+  // A Knowledge Check page of the book is held to it too.
+  const kc = '{{< selfcheck question="Why?" >}}\nIn solid form its ions are unable to flow.\n===CHECKS===\nin solid form\nits ions cannot flow\n{{< /selfcheck >}}';
+  assert.equal(runError(kc, 'content/physical-sciences/chemistry/knowledge-check-01-03.md').length, 1, 'a reworded Knowledge Check clause is refused');
+});
+
 test('bookRulesFor merges an override key by key over the published profile', () => {
   assert.deepEqual(bookRulesFor('math/prealgebra'), BOOK_RULES.default, 'an unlisted book gets the defaults');
   assert.deepEqual(bookRulesFor(''), BOOK_RULES.default, 'a page outside any book gets the defaults');

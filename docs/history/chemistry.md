@@ -4003,6 +4003,82 @@ rebuilt from HEAD, carry plan, a fresh Fable solve of the four new fields:
 Baselines: replay 9197 → 9201, exercises 18544 → 18546, confirmed
 7751 → 7753.
 
+## The rubric-clause lint (November 15, 2026)
+
+Derek, after chapter 7: the stricter rubric check that run measured and left
+unwritten is a lint for Chemistry. The run's note had it waiting "until [the
+life-sciences clauses] are swept"; Derek ruled on September 21, 2026 that
+those books are not swept, so the note parked the check for good. It is now
+scoped to this book and the life-sciences bar is untouched. From commit
+`415c2d32`, following `docs/re-review/README.md` (snapshot, carry plan,
+self-checks re-read by the parent); no agents.
+
+### What the measurement was made of
+
+Of 586 rubric clauses in 201 self-checks, 36 were not a literal run of their
+model answer's words. Read one by one:
+
+- **21 copy the model answer and differ only in notation.** A checkpoint is
+  plain text and the model answer is TeX: `$m_l$` against "mₗ", a `\frac`
+  against "14.13 g C/2.96 g H", `4*s*` against "4s", `<u>C</u>O₂` against
+  "CO₂". No clause could have been written to pass a literal comparison, so
+  the lint reads the model answer as it prints (`tools/lib/rubric-run.mjs`).
+- **15, in 12 self-checks, reworded.** Ten left words out of the middle of
+  a sentence (six of them a parenthesis), two carried a verb over a list,
+  two compressed a chain of equations, and one put a noun in place of the
+  source's "these".
+
+None of the 15 added a claim. The old bar (80% of a clause's words found in
+the model answer) passed all 36.
+
+### What changed
+
+- **The lint**, in `lintHugo`, for `physical-sciences/chemistry` only, in
+  place of the overlap bar: a checkpoint is a run of the model answer's
+  words, starting and ending on a word. Capitals, punctuation, and spacing
+  are folded; a plus or minus sign is not, so "δ−" cannot be copied as
+  "δ+". Tests: `tools/lib/rubric-run.test.mjs` (the book's own clauses as
+  fixtures) and one in `tools/lint/lints.test.mjs` (Chemistry refused,
+  Biology passed, on the same clause).
+- **Twelve self-checks**, nine pages (2.1, 2.3 ×2, 4.4, 5.2, 6.2, 6.3 ×2,
+  7.5, 7.6 ×2, Knowledge Check 1). Ten changed only clauses. Two changed a
+  sentence the page had written itself so that its clauses are runs of it:
+  2.3's "Build an Atom" opening sentence ("…states its net charge, and
+  states its mass number") and the sentence under 6.3's orbital drawing
+  ("For $p_y$, the p orbital along the $y$ axis is drawn as…"). No source
+  solution was touched.
+- **The playbook** ("Selfchecks") states the rule and its three cases; the
+  line is gone from "What is still open"; the author, checker, and
+  fix-check briefs name the lint.
+- **Ledger**: 12 records re-filed by the parent with the earlier note kept,
+  12 stranded records pruned; no baseline moved.
+
+### Left for Derek
+
+A clause must also be a whole statement (author brief), and a source
+sentence that gives one subject two predicates cannot give two whole
+statements as runs. Two clauses now start at their verb: 4.4's "is
+worthless" (the model answer is "This amount cannot be weighed by ordinary
+balances and is worthless.") and 5.2's "will yield a greater value for the
+heat of the dissolution" (its subject is followed by a parenthesis holding
+$q_\text{calorimeter}$, which a plain-text checkpoint cannot spell). Two
+others are long because the whole sentence is the only whole run: 6.2's
+Bohr clause and 7.6's HBeH clause. The alternative is a looser lint that
+lets a clause skip words inside one sentence, which would pass three of the
+four as they were (not the Bohr clause, which changed a word) — and would
+pass a clause that skips a "not".
+
+### What the process should keep
+
+- A measured count is read before it is believed: 21 of the 36 were the
+  measurement comparing TeX with plain text.
+- A check deferred "until another book is swept" is checked against whether
+  that sweep is ever coming; if not, scope the check to the book it was
+  found in.
+- A rule's fix is read against the neighbouring rule: the first fixes here
+  wrote "its net charge", the author brief's own example of a clause that
+  checks nothing, and were redone.
+
 ## The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under

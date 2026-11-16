@@ -283,7 +283,7 @@ Electron-pair geometries: nitrogen––tetrahedral; carbon (<u>C</u>H)—tetrah
 electron-pair geometries: nitrogen––tetrahedral
 local structures: nitrogen—trigonal pyramidal
 carbon (CO₂)—trigonal planar
-oxygen—bent (109°)
+oxygen (OH)—bent (109°)
 {{< /selfcheck >}}
 
 {{< callout type="info" >}}
@@ -421,7 +421,7 @@ The placement of the two lone pairs of electrons in water forces the bonds to as
 ===CHECKS===
 the placement of the two lone pairs of electrons in water forces the bonds to assume a tetrahedral arrangement
 the resulting HOH molecule is bent
-the HBeH molecule must have the electron pairs as far from one another as possible and is therefore linear
+the HBeH molecule (in which Be has only two electrons to bond with the two electrons from the hydrogens) must have the electron pairs as far from one another as possible and is therefore linear
 {{< /selfcheck >}}
 
 *Source note:* the model answer above is not the source’s in one phrase: the source’s answer misnames the electrons on the oxygen atom.

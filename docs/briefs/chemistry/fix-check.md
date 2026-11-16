@@ -29,7 +29,8 @@ defects and Source notes", and "The footer".
    item(s)" reference point at the right items, counted on the page as it
    stands; is an added sentence only on the items that need it?
 3. **Every selfcheck rubric that was rewritten**: each clause a whole
-   statement in the model answer's own words that checks something; can
+   statement that checks something, copied as a run of the model answer's
+   words (the lint refuses a reworded or joined clause); can
    the page's own model answer meet every clause; for a "Sample answer:"
    model answer, the rubric is the criteria sentence's, not the sample's
    details.

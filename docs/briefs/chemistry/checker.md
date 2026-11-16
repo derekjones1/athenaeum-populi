@@ -74,7 +74,8 @@ catch.
 - **A multiple choice:** the options are exactly the set the source stem
   names, in its order; the key is the source's.
 - **A `selfcheck`:** the model answer is the source solution; each rubric
-  clause is in the model answer's words.
+  clause is a run of the model answer's words (the lint holds that; read
+  for what it cannot — a clause that checks nothing).
 - **A filler beyond the floor is not a finding** when it is the ONE item
   of a headed body subsection no source item touches and the footer says
   so (playbook "Added items"); a second one for that subsection, or one

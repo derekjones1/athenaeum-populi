@@ -504,8 +504,9 @@ challenge and reproduce the work
 ```
 
 Checkpoints come from the model answer, never extend it — the lint holds
-each clause to the model answer's own words — and contain no `$` math (they
-are checkbox labels).
+each clause to the model answer's own words (in Chemistry, to a run of
+them: `docs/subjects/chemistry.md`, "Selfchecks") — and contain no `$` math
+(they are checkbox labels).
 
 **Sort into bins (`sortbins`)** — categorize 4–12 items into 2–4 labelled
 bins, graded in the browser as the label→bin mapping. Built from a source

@@ -196,7 +196,7 @@ Both involve a relatively heavy nucleus with electrons moving around it, althoug
 both involve a relatively heavy nucleus with electrons moving around it
 the Bohr model works only for one-electron atoms or ions
 the Rutherford atom would emit electromagnetic radiation of continually increasing frequency
-the Bohr model restricts circular orbits to quantized values dependent on a single quantum number
+the Bohr model retains the classical mechanics view of circular orbits confined to planes having constant energy and angular momentum, but restricts these to quantized values dependent on a single quantum number
 the atom can emit or absorb electromagnetic radiation when the electron changes from one orbit to another
 such quantum jumps will produce discrete spectra
 {{< /selfcheck >}}

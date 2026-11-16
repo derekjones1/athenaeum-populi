@@ -85,7 +85,7 @@ We never think of a thrown softball having a wavelength, since this wavelength i
 we never think of a thrown softball having a wavelength
 this wavelength is so small it is impossible for our senses or any known instrument to detect
 de Broglie wavelength is inversely proportional to both particle mass and velocity
-the particle’s momentum must be sufficiently small to yield a detectably large wavelength
+the particle’s momentum (mathematical product of mass and velocity) must be sufficiently small to yield a detectably large wavelength
 {{< /selfcheck >}}
 
 Werner Heisenberg considered the limits of how accurately we can measure properties of an electron or other microscopic particles. He determined that there is a fundamental limit to how accurately one can measure both a particle’s position and its momentum simultaneously. The more accurately we measure the momentum of a particle, the less accurately we can determine its position at that time, and vice versa. This is summed up in what we now call the **Heisenberg uncertainty principle**: *It is fundamentally impossible to determine simultaneously and exactly both the momentum and the position of a particle*. For a particle of mass $m$ moving with velocity $v_x$ in the $x$ direction (or equivalently with momentum $p_x$), the product of the uncertainty in the position, $\Delta x$, and the uncertainty in the momentum, $\Delta p_x$, must be greater than or equal to $\frac{\hbar}{2}$ (where $\hbar = \frac{h}{2\pi}$, the value of Planck’s constant divided by $2\pi$).
@@ -340,7 +340,7 @@ gives the wrong expression for the angular momentum
 {{< mediafigure src="chemistry/CNX_Chem_06_03_Ex9soln_img" kind="diagram" alt="Two orbitals, each drawn at the origin of a set of x, y, and z axes with every axis labeled. On the left, labeled 2p sub y: two rounded lobes, one red and one blue, on opposite sides of the origin along the y axis. On the right, labeled d sub x squared minus y squared: four lobes around the origin, two blue lobes on opposite sides along the x axis and two red lobes on opposite sides along the y axis." >}}
 {{< /mediafigure >}}
 
-The p orbital along the $y$ axis ($p_y$) is drawn as two lobes on opposite sides of the origin, and the d orbital along the $x$ and $y$ axes ($d_{x^2-y^2}$) is drawn as four lobes, two along the $x$ axis and two along the $y$ axis. The $x$, $y$, and $z$ axes are drawn and labeled.
+For $p_y$, the p orbital along the $y$ axis is drawn as two lobes on opposite sides of the origin; for $d_{x^2-y^2}$, the d orbital along the $x$ and $y$ axes is drawn as four lobes, two along the $x$ axis and two along the $y$ axis. The $x$, $y$, and $z$ axes are drawn and labeled.
 ===CHECKS===
 the p orbital along the y axis is drawn as two lobes on opposite sides of the origin
 the d orbital along the x and y axes is drawn as four lobes, two along the x axis and two along the y axis

@@ -311,7 +311,7 @@ states its symbol
 {{< /selfcheck >}}
 
 {{< selfcheck question="Open the [Build an Atom simulation](http://openstax.org/l/16PhetAtomBld) and click on the Atom icon. Drag protons, neutrons, and electrons onto the atom template to make an atom of your element. State the numbers of protons, neutrons, and electrons in your atom, as well as the net charge and mass number." hint="Use the definitions of atomic number, mass number, and atomic charge." >}}
-A good answer states the numbers of protons, neutrons, and electrons in the atom, as well as its net charge and its mass number. Sample answer: This atom contains six protons and six neutrons. There are six electrons in a neutral ¹²C atom. The net charge of such a neutral atom is zero, and the mass number is 12.
+A good answer states the numbers of protons, neutrons, and electrons in the atom, states its net charge, and states its mass number. Sample answer: This atom contains six protons and six neutrons. There are six electrons in a neutral ¹²C atom. The net charge of such a neutral atom is zero, and the mass number is 12.
 ===CHECKS===
 states the numbers of protons, neutrons, and electrons in the atom
 states its net charge
@@ -349,8 +349,8 @@ the isotope symbol is ⁶Li or ⁶₃Li
 {{< selfcheck question="Open the [Build an Atom simulation](http://openstax.org/l/16PhetAtomBld). Drag protons, neutrons, and electrons onto the atom template to make a neutral atom of Lithium-6. Now remove one electron to make an ion and give the symbol for the ion you have created." hint="Use the definition of atomic charge, and write the charge where the isotope-symbol figure places it." >}}
 The symbol for the ion you have created is ⁶Li⁺ or $\ce{^{6}_{3}Li+}$.
 ===CHECKS===
-the ion you have created
-the symbol is ⁶Li⁺ or ⁶₃Li⁺
+the symbol for the ion you have created
+⁶Li⁺ or ⁶₃Li⁺
 {{< /selfcheck >}}
 
 {{< textin

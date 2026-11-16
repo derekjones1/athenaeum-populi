@@ -256,9 +256,12 @@ goes wrong.
   its Source note and erratum.
 - **`selfcheck`** carries the source solution as the model answer, its
   first letter capitalized and a closing period added and nothing else
-  reworded, and 2–6 lowercase `===CHECKS===` clauses in the model answer's
-  own words, each a whole statement that checks something (not "its net
-  charge"; not the question again; not the clause above it reworded); the
+  reworded, and 2–6 lowercase `===CHECKS===` clauses, each COPIED from the
+  model answer as a run of its words (a lint error: no rewording, no two
+  runs joined over the words between them, a middle parenthesis copied
+  too; playbook "Selfchecks"), each a whole statement that checks
+  something (not "its net charge"; not the question again; not the clause
+  above it reworded); the
   bare-value and "Answers will vary" forms are the playbook's
   ("Selfchecks") — the second also for a simulation or example answer that
   is one possible case, with the added label "Sample answer:".

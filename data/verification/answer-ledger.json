@@ -819,10 +819,6 @@
     "result": "agrees"
    }
   },
-  "0176950e7fa81a6d": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp14744000 (corrected wording, ruling 7.6-6) — model answer the source solution"
-  },
   "017e120177275a3d": {
    "verdict": "ok",
    "note": "fs-id1409033 solution verbatim; fs-id1592604 dermatomes"
@@ -1604,6 +1600,10 @@
     "result": "agrees"
    }
   },
+  "03088d42143105c1": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp14744000 (corrected wording, ruling 7.6-6) — model answer the source solution | re-read November 15, 2026: rubric clauses rewritten as runs of the model answer’s words; question, hint, and model answer unchanged"
+  },
   "030bd1b545eef82a": {
    "verdict": "ok",
    "note": "source Multiple Choice fs-id1167663630739, key B 'herpes simplex virus 1' verbatim; distractor C corrected from source's 'parvovirus 19' to 'parvovirus B19' (missing-letter typo, does not affect the key) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -1886,10 +1886,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "03705d8338d68c37": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm90452432, second answer paragraph (source comment) as model answer; question 'Why do we not notice…' added per parent decision 11"
   },
   "0372b45ae45c45d1": {
    "verdict": "ok",
@@ -7888,6 +7884,10 @@
     "result": "agrees"
    }
   },
+  "0f258bae84e8bbc3": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp24507936 (printed 29), model answer = source solution fs-idp40695152 verbatim (italic n set as math) | re-read November 15, 2026: rubric clauses rewritten as runs of the model answer’s words; question, hint, and model answer unchanged"
+  },
   "0f29cfad5c4e9126": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -8010,6 +8010,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "0f7cfca1b292c43c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm103886288 part (b); rubric covers both printed symbol forms | re-read November 15, 2026: rubric clauses rewritten as runs of the model answer’s words; question, hint, and model answer unchanged"
   },
   "0f7f1de9ecff6662": {
    "verdict": "ok",
@@ -18377,10 +18381,6 @@
     "result": "agrees"
    }
   },
-  "23a30ad5f8fa2299": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm103886288 part (b); rubric covers both printed symbol forms"
-  },
   "23a39bcd24c5aaa6": {
    "verdict": "ok",
    "note": "author-built from § Oxygenic and Anoxygenic Photosynthesis, Check Your Understanding: \"Why would a photosynthetic bacterium have different pigments?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -20556,10 +20556,6 @@
     "result": "agrees"
    }
   },
-  "280ce208a5f80de2": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm164758784 part (b); sample answer is the source segment whole; rubric clauses made statements after the fix check (parent)"
-  },
   "280d2f53f595fde8": {
    "verdict": "ok",
    "note": "model answer is CNXML solution fs-id1234957 (m66478) verbatim; rubric checkpoints are clauses of that solution (G₀ spelling mirrored from the model) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -21306,6 +21302,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "29963828090f9664": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp116942080 — model answer the source solution; m, the three carbon atoms, and the oxygen atom with hydrogen attached. | re-read November 15, 2026: rubric clauses rewritten as runs of the model answer’s words; question, hint, and model answer unchanged"
   },
   "2999ffb4a7e305d0": {
    "verdict": "ok",
@@ -48003,10 +48003,6 @@
     "result": "agrees"
    }
   },
-  "5f411bfcfef4fb9a": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp24507936 (printed 29), model answer = source solution fs-idp40695152 verbatim (italic n set as math)"
-  },
   "5f42cbf163f9eddd": {
    "verdict": "ok",
    "note": "KC 5 23.1 § body Endosymbiotic Theory (fs-idp100923312), m66552 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
@@ -48695,10 +48691,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "60c5f185c22d9756": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idp116942080 — model answer the source solution; m, the three carbon atoms, and the oxygen atom with hydrogen attached."
   },
   "60c85ecd40548f4d": {
    "verdict": "ok",
@@ -51679,10 +51671,6 @@
     "result": "agrees"
    }
   },
-  "67e15aaf0c75fe9b": {
-   "verdict": "ok",
-   "note": "KC 1 2.6 § Ionic Compounds, m68696"
-  },
   "67e336865cea9ac0": {
    "verdict": "ok",
    "note": "Critical Thinking fs-id1426300, model answer is the source solution verbatim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -53602,6 +53590,10 @@
   "6c253ff394962942": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "6c28a321100e28b5": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp19159472 (printed 69); model answer = source equations with the minus restored before ΔHf[HCl(g)] on the D_HCl line (parent ruling, erratum 3146, Source note); rubric from the equations; 92.307+217.97+121.3 = 431.6 from Appendix G; the cycle's rows stacked by the parent on November 15, 2026 so the display fits the column — content unchanged | re-read November 15, 2026: rubric clauses rewritten as runs of the model answer’s words; question, hint, and model answer unchanged"
   },
   "6c2fb8909d14a5dc": {
    "verdict": "ok",
@@ -55696,6 +55688,10 @@
     "result": "agrees"
    }
   },
+  "70806477aa2ea2e4": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp28025040; source answer carried as the model answer; rubric clause split after the fix check (parent), model answer unchanged | re-read November 15, 2026: rubric clauses rewritten as runs of the model answer’s words; question, hint, and model answer unchanged"
+  },
   "7083486a7e85ab6e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -56472,6 +56468,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "71cc0ebb35768b4c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm19471568, model answer the source solution with 'weighted' corrected to 'weighed' | re-read November 15, 2026: rubric clauses rewritten as runs of the model answer’s words; question, hint, and model answer unchanged"
   },
   "71cea7114c2b2cbd": {
    "verdict": "ok",
@@ -58690,6 +58690,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "761b329fd3c9858d": {
+   "verdict": "ok",
+   "note": "KC 1 2.6 § Ionic Compounds, m68696 | re-read November 15, 2026: rubric clauses rewritten as runs of the model answer’s words; question, hint, and model answer unchanged"
   },
   "761c57f5bd38b5d5": {
    "verdict": "ok",
@@ -66595,10 +66599,6 @@
     "result": "agrees"
    }
   },
-  "85de050a410a7f84": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm153995968 (printed 39), drawing answer CNX_Chem_06_03_Ex9soln_img in model answer + two sentences read off it"
-  },
   "85de9fe6cc0a1f5b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -71710,10 +71710,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "909a6dccf21de072": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idp28025040; source answer carried as the model answer; rubric clause split after the fix check (parent), model answer unchanged"
   },
   "909d9e73b78a6292": {
    "verdict": "ok",
@@ -79183,10 +79179,6 @@
    "verdict": "ok",
    "note": "Matches m66454 exercise fs-id1649129, solution fs-id1448091 (cilia vs. flagella). Model answer verbatim; all four CHECKS restate it. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
-  "9ff9f9774651d599": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm40185072 explanation; model with latter term corrected to q_calorimeter (ruling 7)"
-  },
   "9ffacd5e82dc7f40": {
    "verdict": "ok",
    "note": "author-built from § Flagella: \"Flagella that cover the entire surface of a bacterial cell are called peritrichous flagella.\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -84928,6 +84920,10 @@
   "ab635a78fa91fa37": {
    "verdict": "ok",
    "note": "KC 5 21.2 § body Animal Viruses (fs-idm53380352), m66535 — parent re-read against the module"
+  },
+  "ab701b42250b6b2f": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm90452432, second answer paragraph (source comment) as model answer; question 'Why do we not notice…' added per parent decision 11 | re-read November 15, 2026: rubric clauses rewritten as runs of the model answer’s words; question, hint, and model answer unchanged"
   },
   "ab73769214c088b8": {
    "verdict": "ok",
@@ -93723,10 +93719,6 @@
   "bd3c920bede08eec": {
    "verdict": "ok",
    "note": "Critical Thinking fs-id2515935, model answer = solution fs-id2612229 verbatim; rubric = its clauses"
-  },
-  "bd3d09473fe112fb": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm19471568, model answer the source solution with 'weighted' corrected to 'weighed'"
   },
   "bd3e00759a6e48bd": {
    "verdict": "ok"
@@ -117615,6 +117607,10 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "eeea4cea6ed918d0": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm153995968 (printed 39), drawing answer CNX_Chem_06_03_Ex9soln_img in model answer + two sentences read off it | re-read November 15, 2026: the added sentence under the drawing reordered so each rubric clause is a run of its words (each orbital’s label now opens its clause); the drawing and its alt unchanged"
+  },
   "eef5fb4e1705938c": {
    "verdict": "ok",
    "note": "author-built from § Enzyme-linked Immunosorbent Assays (ELISAs), Check Your Understanding: \"What do the direct and indirect ELISAs quantify?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -118030,6 +118026,10 @@
   "efd8d3b37890ca3d": {
    "verdict": "ok",
    "note": "Body CYU 1/2, § Fermented Foods and Beverages: model answer and both checkpoints assembled from the section's own sentences (bread/yeast, wine/fermentation)."
+  },
+  "efd9f0562b882126": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm40185072 explanation; model with latter term corrected to q_calorimeter (ruling 7) | re-read November 15, 2026: rubric clauses rewritten as runs of the model answer’s words; question, hint, and model answer unchanged"
   },
   "efdaf72f6959eb31": {
    "verdict": "ok",
@@ -123896,10 +123896,6 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "fb5c2ccd3a0dd3b1": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp19159472 (printed 69); model answer = source equations with the minus restored before ΔHf[HCl(g)] on the D_HCl line (parent ruling, erratum 3146, Source note); rubric from the equations; 92.307+217.97+121.3 = 431.6 from Appendix G; the cycle's rows stacked by the parent on November 15, 2026 so the display fits the column — content unchanged"
-  },
   "fb60f3bdefbe5704": {
    "verdict": "ok",
    "note": "KC 3 16.3 § Gaze Control, m46607",
@@ -124873,6 +124869,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "fd4745f347394ee3": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm164758784 part (b); sample answer is the source segment whole; rubric clauses made statements after the fix check (parent) | re-read November 15, 2026: the added opening sentence now repeats its verb (\"states its net charge, and states its mass number\") so each rubric clause is a run of its words; the source’s sample answer unchanged"
   },
   "fd474ee73cd369d3": {
    "verdict": "ok",

@@ -230,7 +230,7 @@ percent yield = 48.3%
 This amount cannot be weighed by ordinary balances and is worthless.
 ===CHECKS===
 this amount cannot be weighed by ordinary balances
-this amount is worthless
+is worthless
 {{< /selfcheck >}}
 
 ### Calculate the percent yield for a reaction

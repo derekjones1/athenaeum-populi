@@ -362,7 +362,7 @@ Greater, since taking the calorimeter’s heat capacity into account will compen
 greater
 taking the calorimeter’s heat capacity into account will compensate for the thermal energy transferred to the solution from the calorimeter
 this approach includes the calorimeter itself, along with the solution, as “surroundings”
-including the latter term will yield a greater value for the heat of the dissolution
+will yield a greater value for the heat of the dissolution
 {{< /selfcheck >}}
 
 *Source note:* the source’s answer names the latter term as the reaction’s heat; the latter term of the equation it gives is the calorimeter’s heat, as printed above.

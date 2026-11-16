@@ -130,7 +130,7 @@ This small, whole-number ratio supports the law of multiple proportions. This me
 ===CHECKS===
 in compound X, the mass ratio of carbon to hydrogen is 14.13 g C/2.96 g H
 in compound Y, the mass ratio of carbon to hydrogen is 19.91 g C/3.34 g H
-the ratio of these ratios is 0.800 = 4/5
+0.800 = 4/5
 this small, whole-number ratio supports the law of multiple proportions
 this means that X and Y are different compounds
 {{< /selfcheck >}}

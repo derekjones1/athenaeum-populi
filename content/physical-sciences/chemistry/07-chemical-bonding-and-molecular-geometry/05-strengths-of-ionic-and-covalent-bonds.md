@@ -277,8 +277,8 @@ D_\text{HCl} = \Delta H^\circ &= -\Delta H^\circ_{\text{f}[\ce{HCl(g)}]} + \Delt
 
 ===CHECKS===
 HCl(g) ⟶ H(g) + Cl(g)
-−(−92.307 kJ) + 217.97 kJ + 121.3 kJ
-D(HCl) = 431.6 kJ
+D(HCl) = ΔH°
+−(−92.307 kJ) + 217.97 kJ + 121.3 kJ = 431.6 kJ
 {{< /selfcheck >}}
 
 *Source note:* the model answer above is not the source’s in one sign of its bond-energy sum; the source’s next line applies that sign correctly.

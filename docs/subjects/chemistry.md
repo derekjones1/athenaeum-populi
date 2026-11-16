@@ -1040,6 +1040,32 @@ after the rule was written, so the line is drawn by pairs:
   source's set can meet. The hint may still say which values are free
   *(chapter 6; first written with the source's rows as the rubric, and
   rewritten November 15, 2026)*.
+- **Every rubric clause is a run of the model answer's words** *(November
+  15, 2026, Derek; a lint error in this book)*: copied, never reworded,
+  and never two runs joined over the words between them. "This amount is
+  worthless" from "This amount cannot be weighed by ordinary balances and
+  is worthless" was refused: a clause that leaves words out is how a "not"
+  gets dropped. Capitals and punctuation are not compared. The model
+  answer is read as it prints, so a clause's plain text is its TeX and
+  markup: `$m_l$` is "mₗ", `$\frac{4}{5}$` is "4/5", `4*s*` is "4s",
+  `\ce{^{6}_{3}Li+}` is "⁶₃Li⁺", `D_\text{HCl}` may be "D(HCl)", and a
+  `mediafigure`'s alt is not read at all. A plus or a minus sign IS
+  compared ("δ−" is not "δ+"). Where a whole statement is not a run:
+  - **a parenthesis in the middle is copied with the clause** ("the
+    particle's momentum (mathematical product of mass and velocity) must
+    be sufficiently small…");
+  - **a sentence the page wrote itself** — the opening sentence of a
+    "Sample answer" form, the sentence under a drawing — **is written so
+    each clause is a run of it** ("A good answer states the numbers…,
+    states its net charge, and states its mass number"; "For $p_y$, the p
+    orbital along the $y$ axis is drawn as…");
+  - **a source sentence that gives one subject two predicates** leaves the
+    second clause starting at its verb ("is worthless", 4.4); the subject
+    is not supplied again.
+
+  The reading is `tools/lib/rubric-run.mjs`. The life-sciences books keep
+  their word-overlap bar (`docs/subjects/life-sciences.md`: "there is no
+  rubric sweep").
 
 ### Source defects and Source notes
 
@@ -1990,10 +2016,6 @@ What chapter 1 settled, and what the scan of the book counted, are in
   uncaptioned inline diagram cannot be set at text scale (the manifest's
   `scale` is the only size control); a rubric form for answers where any of
   many sets is right *(chapter 6)*;
-- lints not yet written *(chapter 7)*: a `selfcheck` rubric clause that is
-  not a run of words of its model answer (capitals and punctuation folded)
-  — measured November 15, 2026 at 36 clauses in Chemistry and about 1,650
-  in the life-sciences books, so it stays unwritten until those are swept;
 - lints not yet written *(chapter 6)*: a colour key whose wavelength is
   outside the visible range; a footer phrase that names a key; a hint
   naming a figure that lacks the scale it needs; each configuration in a

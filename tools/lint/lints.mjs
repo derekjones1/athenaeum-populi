@@ -232,6 +232,9 @@ import { systematicName } from '../../assets/js/lib/text/older-names.mjs';
 // Coverage measure for selfcheck rubric checkpoints — the same token-set
 // coverage verify-source-keys holds model answers to.
 import { phraseCoverage } from '../lib/openstax-source.mjs';
+// Chemistry holds a checkpoint to the stricter reading: a run of the model
+// answer's words, read through its TeX and markup.
+import { isWordRun } from '../lib/rubric-run.mjs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -3126,6 +3129,7 @@ export function lintHugo(src, filename = '', options = {}) {
     // covered by the model part's own words — a checkpoint that brings new
     // words is a new claim in disguise.
     const checkParts = inner.split(/^[ \t]*===CHECKS===[ \t]*$/m);
+    const rubricIsWordRun = bookKeyOf(filename) === 'physical-sciences/chemistry';
     // Every regular-section selfcheck carries a rubric — the corpus was clean
     // (663 of 663) before this became unconditional, so it is a rule, not a
     // retrofit. A Knowledge Check selfcheck needs one too: with no hint
@@ -3154,6 +3158,20 @@ export function lintHugo(src, filename = '', options = {}) {
           // (p<sup>2</sup> printed verbatim). Use a Unicode glyph (p²) or
           // reword the clause; the model answer above may keep its HTML.
           err(index, `${where}: checkpoint ${JSON.stringify(checkpoint)} contains a raw HTML tag — checkpoints render as plain text, so use a Unicode glyph or reword`);
+        } else if (rubricIsWordRun) {
+          // Chemistry 2e (November 15, 2026, Derek): a checkpoint is COPIED
+          // from the model answer, a run of its words — never reworded, and
+          // never two runs joined over the words between them ("this amount
+          // is worthless" from "This amount cannot be weighed by ordinary
+          // balances and is worthless"). The overlap bar below let 15 such
+          // clauses through in chapters 2–7. The model answer is read as it
+          // prints (`$m_l$` is the checkpoint's "mₗ"), so notation is not a
+          // rewording; a sign is read, so "δ−" cannot be copied as "δ+".
+          // The life-sciences books keep the overlap bar: their compressed
+          // clauses were measured and ruled sound on September 21, 2026.
+          if (!isWordRun(checkpoint, modelPart)) {
+            err(index, `${where}: checkpoint ${JSON.stringify(checkpoint)} is not a run of the model answer's words — copy the clause from the model answer (capitals, punctuation, and the plain-text spelling of its math aside); do not reword it, and do not join two runs over the words between them`);
+          }
         } else if (phraseCoverage(checkpoint, modelPart) < 0.8) {
           err(index, `${where}: checkpoint ${JSON.stringify(checkpoint)} is not covered by the model answer's own words — a checkpoint restates a clause of the model answer, never adds one`);
         }
