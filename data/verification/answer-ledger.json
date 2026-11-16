@@ -4246,14 +4246,6 @@
    "verdict": "ok",
    "note": "m46456 fs-id2870043 solution fs-id2022151 verbatim"
   },
-  "082510a5712679f7": {
-   "verdict": "ok",
-   "note": "author-built from § introduction: \"Organisms carrying out fermentation, called fermenters, produce a maximum of two ATP molecules per glucose during glycolysis. compares the…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "082ce02878be8717": {
    "verdict": "ok",
    "note": "CT fs-id2571630, stem verbatim; model answer = solution fs-id2512188 verbatim"
@@ -4490,14 +4482,6 @@
   "08886cb6f3168fb4": {
    "verdict": "ok",
    "note": "fs-id2044663 sentence 2; key chemical",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "088e403038a00e00": {
-   "verdict": "ok",
-   "note": "author-written from tbl-ch14_01 Location(s)/Stimuli cells of four rows (Part C), 7 items; each read against every cell; Dermis, joint capsules dropped as true of two rows",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -12977,6 +12961,10 @@
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "18e7028a38433a94": {
+   "verdict": "ok",
+   "note": "rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged"
+  },
   "18ed0efd6ffb88f8": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"The phylum includes free-living species like Caenorhabditis elegans as well as many species of endoparasitic organisms such as Ascaris spp.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -14649,6 +14637,14 @@
     "result": "agrees"
    }
   },
+  "1bfa2b0acebc9a1d": {
+   "verdict": "ok",
+   "note": "author-built from § summary: \"Fermentation is used to produce chemical solvents (acetone-butanol-ethanol fermentation) and pharmaceuticals (mixed acid fermentation).\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1bfb352b7407b98d": {
    "verdict": "ok",
    "note": "Glossary recall, term id fs-id1771864 (\"lysis buffer\"), meaning fs-id1920763 used as prompt.; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -14798,6 +14794,14 @@
   "1c51fe86901a0a3c": {
    "verdict": "ok",
    "note": "source RQ fs-id1435918, key A = microglia; body fs-id1490290 CNS-resident macrophages; re-read against m46509 CNXML and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "1c5331041455fbb3": {
+   "verdict": "ok",
+   "note": "author-built from § Fungal Diversity: \"Because of their medical importance, we will focus on Zygomycota, Ascomycota, Basidiomycota, and Microsporidia. summarizes the characterist…\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -15034,9 +15038,6 @@
   "1cc3d2294b58801d": {
    "verdict": "ok",
    "note": "selfcheck, body CYU after Cryptococcosis; model = the PCP-AIDS/premature-infant sentence and the cryptococcosis-immunocompromised/AIDS sentence, both this module | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "1cc670328a6cdc13": {
-   "verdict": "ok"
   },
   "1cd30f852f856e13": {
    "verdict": "ok",
@@ -16647,6 +16648,14 @@
     "result": "agrees"
    }
   },
+  "20029a6864c189cf": {
+   "verdict": "ok",
+   "note": "45.8×2.2046=100.97→101 lb | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "20069174e0861a6e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -16793,14 +16802,6 @@
   "20501c594acb6f91": {
    "verdict": "ok",
    "note": "source exercise fs-idp42864672 part (Si mass); key = source solution, re-derived against the CNXML and recomputed from the periodic table; graded by answerForm sig-figs:4 tolerance:0.05% (decision 1): source key and the periodic-table value both correct, one hydrogen miscounted incorrect | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | carried 2026-11-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "205638514409ae3c": {
-   "verdict": "ok",
-   "note": "source exercise fs-id1172098775433 (unkeyed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -17061,14 +17062,6 @@
   "20e0b3830f1dcab2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "20e123406069509a": {
-   "verdict": "ok",
-   "note": "author-built from § The Three Eukaryotic RNA Polymerases: \"RNA polymerase III is moderately sensitive to the toxin.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -17363,14 +17356,6 @@
    "note": "source exercise fs-id2138586 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "217f6988392dedfa": {
-   "verdict": "ok",
-   "note": "author-built from § Excavata: \"The trichomonads (a subgroup of the Parabasalia) include pathogens such as Trichomonas vaginalis , which causes the human sexually transmit…\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
-   "solved": {
-    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -18105,14 +18090,6 @@
    "verdict": "ok",
    "note": "CNXML fs-id1172101768000 SA, source prints no key; selfcheck assembled from § Indirect Cell Counts spectrophotometer paragraph and figure caption"
   },
-  "231cc3046e6f7607": {
-   "verdict": "ok",
-   "note": "author-built from § Fungal Diversity, Check Your Understanding: \"Which group of fungi appears to be associated with the greatest number of human diseases?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "23212861d58adf8b": {
    "verdict": "ok",
    "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L381 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
@@ -18392,6 +18369,14 @@
   "23acbfc7427636f6": {
    "verdict": "ok",
    "note": "KC 1 3.1 § glossary interstitial fluid (IF) (fs-id1543027), body Structure and Composition of the Cell Membrane (fs-id2259833), m46021",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "23b5820548528d4b": {
+   "verdict": "ok",
+   "note": "source exercise fs-id1172098775433 (unkeyed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -20772,6 +20757,14 @@
   "288dbc3d81b18864": {
    "verdict": "ok"
   },
+  "288f135b6a07f239": {
+   "verdict": "ok",
+   "note": "glossary recall: anti-diuretic hormone — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "28909fa13024701e": {
    "verdict": "ok",
    "note": "source exercise fs-idm69463840 (printed 7) part (j): [Ar]3d⁷ as printed; electron count re-derived",
@@ -21499,6 +21492,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "29f101c1ee3253b1": {
+   "verdict": "ok",
+   "note": "author-built from § The lac Operon: Activation by Catabolite Activator Protein: \"Thus, in the case of the lac operon, for transcription to occur, lactose must be present (removing the lac repressor protein) and glucose l…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -23616,6 +23617,14 @@
     "result": "agrees"
    }
   },
+  "2e469638e8746cb5": {
+   "verdict": "ok",
+   "note": "author-built from § The Three Eukaryotic RNA Polymerases: \"RNA polymerase III is moderately sensitive to the toxin.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2e4887e4f5b520ac": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -23772,6 +23781,14 @@
     "result": "agrees"
    }
   },
+  "2e7ebc23e2f7c9bf": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp16780032 part (c); 611 + 4(415) + 3(498) - 4(741) - 4(464) = -1055; source -1055 kJ | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2e8c20c6472ef6b7": {
    "verdict": "ok",
    "note": "author sortbins: epidermis items fs-id1511323 (keratinized stratified squamous; four or five layers), fs-id1059498 (Merkel cells, melanocytes in stratum basale); dermis items fs-id1146438 (hair follicles, sweat glands; elastin/collagenous mesh by fibroblasts), fs-id1198448 (Meissner corpuscles)",
@@ -23801,14 +23818,6 @@
    "note": "KC 7 43.6 § body Cleavage and Blastula Stage (fs-idp147099472), m66678 — parent re-read against the module",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "2e96214f3a915de6": {
-   "verdict": "ok",
-   "note": "author MC from tbl-ch26_04 Urine row 'It is the GFR times the fraction of the filtrate that is not reabsorbed'; replaces the disputed 'renal capsule' item",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -24905,6 +24914,14 @@
     "result": "agrees"
    }
   },
+  "30cc31eec62830c5": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm287695728 part (a) (key 1.0936 yd / 1 m), from the module's conversion table | stem re-worded November 14, 2026: the sentence naming the table of common conversion factors added; key unchanged, re-solved | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "30cc53ae8016ba63": {
    "verdict": "ok",
    "note": "Visual Connection (fs-idm56180128/fs-idm100402144): source keys 'Water' (A). Section text: P680's missing electron is replaced by extracting a low-energy electron from water; the figure's own caption states PSII extracts electrons from water. Correct as keyed. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -25103,6 +25120,14 @@
   "314b3a23065753e3": {
    "verdict": "ok",
    "note": "RQ fs-id2017162, key B 'in the eye socket'; body fs-id2454763 'located inside the eye socket'; options source order",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "314f232a85c7dabf": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm34686800 (printed 7), joules; 2.093 x 28.4 x 22.0 = 1307.7 -> 1310, source 1310 J | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -25613,14 +25638,6 @@
    "verdict": "ok",
    "note": "m66722 critical-thinking exercise fs-idp19557504. Model answer is the source solution verbatim (lightly split into two sentences, no new claims): morphological similarities can be superficial rather than evolutionary, and similar traits can evolve independently for similar ecological reasons (convergent evolution). Rubric checkpoints are the solution's own two clauses. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "323a047ba25748e0": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp16780032 part (c); 611 + 4(415) + 3(498) - 4(741) - 4(464) = -1055; source -1055 kJ",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "323b06ee88dee176": {
    "verdict": "ok",
    "note": "author-built from § Cell Sorting Using Immunofluorescence: \"The sorting is accomplished by an electrostatic deflector that moves the charged droplet containing the cell into one collecting vessel or…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -25776,14 +25793,6 @@
   "329348aed680ba5b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "3293c9ac37348961": {
-   "verdict": "ok",
-   "note": "Author sortbins from tbl-ch13_01: Primary vesicle bins vs Adult structures/Ventricles cells, each item checked against every cell; posterior row and secondary column excluded (Part C).",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -27853,6 +27862,14 @@
     "result": "agrees"
    }
   },
+  "36acd9c0e21586d2": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm11773136 part (a), cal/°C; 47.632/4.184 = 11.384 -> 11.4 at the data's 3 figures; source prints 11.38 — corrected per ruling 5.1-1 (G4), Source note | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "36af825525b8fc23": {
    "verdict": "ok",
    "note": "m66474 critical-thinking solution fs-idm123143120 (roles of ATP/NADPH). Page model answer is a faithful paraphrase; three CHECKS clauses (both carry energy, NADPH has reducing power, fuels light-independent carbohydrate synthesis) restate it with no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -29241,6 +29258,14 @@
   "39ab63c0d831f462": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "39adc23834701f1a": {
+   "verdict": "ok",
+   "note": "197/2.2046=89.36→89.4 kg | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "39b59ae75d327099": {
    "verdict": "ok",
@@ -31056,6 +31081,14 @@
     "result": "agrees"
    }
   },
+  "3d5a6cb6ac7cfaa5": {
+   "verdict": "ok",
+   "note": "author-built from § Excavata: \"The trichomonads (a subgroup of the Parabasalia) include pathogens such as Trichomonas vaginalis , which causes the human sexually transmit…\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "3d5e6c6b1ae6ae31": {
    "verdict": "ok",
    "note": "Verified numerically for x=0.6: Math.acos(-0.6)=2.214297435588181 equals Math.PI-Math.acos(0.6)=2.214297435588181; matches source's own True verdict and geometric (reference-angle) argument. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -32638,14 +32671,6 @@
     "result": "agrees"
    }
   },
-  "40504b397d44f948": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm11773136 part (b), J/°C; 453.59 x 0.897 = 406.87 -> 407, source 407 J/°C",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "4052084756e2012d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -33063,6 +33088,14 @@
   "411ed7172d3fa7da": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "41250777c89a1223": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp36064736 part (b); source 'Copper is a likely candidate.'; options the Table 5.1 metals in table order | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -33808,14 +33841,6 @@
   "428c917277293e67": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "428d353929ce9909": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm11773136 part (a), J/°C; 45.8 x 1.040 = 47.632 -> 47.6, source 47.6 J/°C",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "428e5cccd745c649": {
    "verdict": "ok",
@@ -36432,6 +36457,15 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "4806cc5310c8f0ea": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm11773136 part (b), cal/°C; 406.87/4.184 = 97.244 -> 97.2 carried; source 97.3 from its rounded 407 — corrected per ruling 5.1-2, last-digit:1 keeps 97.3 right, Source note | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "The key is the pound's mass times aluminum's specific heat carried unrounded, 453.5924 g × 0.897 ÷ 4.184 = 97.24; the solver's alternative 97.3 is the source's print, reached by reusing the rounded 407 J/°C (m68724 fs-idm11773136(b), erratum). The item's last-digit:1 grades both."
+   }
+  },
   "4809c495ec333fd6": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -37776,14 +37810,6 @@
     "result": "agrees"
    }
   },
-  "4ac6a9013e24c899": {
-   "verdict": "ok",
-   "note": "author-built from § summary: \"Fermentation is used to produce chemical solvents (acetone-butanol-ethanol fermentation) and pharmaceuticals (mixed acid fermentation).\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "4ac9bb3baf9ce2ca": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -38777,14 +38803,6 @@
    "verdict": "ok",
    "note": "Bio 21.2 influenza egress selfcheck: dependency re-hashed only; model answer = source solution (m66535); parent re-read Sep 23 2026"
   },
-  "4cd4b644396423f8": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp16780032 part (b); 415 + 150 - 240 - 295 = 30; source 30 kJ",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "4cd52796ad1cc317": {
    "verdict": "ok",
    "note": "x-2y+3z=9, -x+3y=-4, 2x-5y+5z=17. Re-derived independently via node (own elimination order, pivot row 1 unchanged): z=2, y=-1, x=1; verified against all three equations. CNXML's own printed row-echelon matrix uses a DIFFERENT elimination order (effectively pivoting on original eq3) and back-substitutes to the SAME triple (1,-1,2) -- confirmed both paths agree on the unique solution, which is why this Try It was re-posed to ask for the solution triple rather than a specific row (row-echelon form is not unique here, so no single row has one correct answer). | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -39566,6 +39584,14 @@
   "4e66cecb8821696e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "4e687b2e5b4c4e4f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm11773136 part (b), J/°C; 453.59 x 0.897 = 406.87 -> 407, source 407 J/°C | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -42913,10 +42939,6 @@
     "result": "agrees"
    }
   },
-  "554e66cf7e289b3e": {
-   "verdict": "ok",
-   "note": "parent re-read 2026-09-24 (Microbiology ch14.5-18 re-review): model answer and rubric checked against the module; checks quote module sentences, no new claims"
-  },
   "55505afccff0541b": {
    "verdict": "ok",
    "note": "Visual Connection part 2 (fs-idp7053584): chloramphenicol blocks peptidyl transfer, which forms the peptide bond that grows the chain; matches source solution 'Chloramphenicol: c' = growth of the protein chain. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -44945,6 +44967,14 @@
   "5942d7965b728f66": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "59442237a38e6b9e": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp90124816 (acetylene, 125 g); 6246 kJ | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -49525,6 +49555,14 @@
    "verdict": "ok",
    "note": "m66486 solution fs-id1485770 (reciprocal cross, stem height) matches page model answer verbatim; CHECKS clauses (two sets of P0 parents, tall-to-dwarf pollen transfer, dwarf-to-tall pollen transfer, F1/F2 analysis) each restate a clause with no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "62b5b48791e6dd39": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm287695728 part (c) (key 2.2046 lb / 1 kg) | stem re-worded November 14, 2026: the sentence naming the table of common conversion factors added; key unchanged, re-solved | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "62b93c5df12d55c3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -50828,14 +50866,6 @@
   "6629b7df76e3243f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "662b12092856893e": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm287695728 part (c) (key 2.2046 lb / 1 kg) | stem re-worded November 14, 2026: the sentence naming the table of common conversion factors added; key unchanged, re-solved",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -53180,14 +53210,6 @@
    "verdict": "ok",
    "note": "KC 5 26.3 § Roles of Electrolytes, m46414"
   },
-  "6b2f975189a1890c": {
-   "verdict": "ok",
-   "note": "45.8×2.2046=100.97→101 lb",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "6b322006f2c3cb33": {
    "verdict": "ok",
    "note": "IL fs-id1906424 graded selfcheck; model = source solution verbatim; fixed by Summary fs-id2237266 and body fs-id1761752"
@@ -55386,6 +55408,14 @@
     "result": "agrees"
    }
   },
+  "6fda74cddd14837d": {
+   "verdict": "ok",
+   "note": "body cloze from § Triglycerides: \"These fatty acids have their first double carbon bond at the third hydrocarbon from the methyl group (referred to as the omega end of the m…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6fdaf94852049761": {
    "verdict": "ok",
    "note": "source exercise fs-idp23764656 (printed 13), assumptions; solution fs-idp23772560, last sentence corrected to 'Energy required = 7.5 kWh.' per ruling 5.1-3, Source note after the block"
@@ -56110,14 +56140,6 @@
   "7139e7b6421703f9": {
    "verdict": "ok",
    "note": "source fs-id2444302, solution fs-id1720124 verbatim as model answer"
-  },
-  "713a78bf0f1c277e": {
-   "verdict": "ok",
-   "note": "author-built from § The lac Operon: Activation by Catabolite Activator Protein: \"Thus, in the case of the lac operon, for transcription to occur, lactose must be present (removing the lac repressor protein) and glucose l…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "713d1ba5bc2d8d9c": {
    "verdict": "ok",
@@ -60054,6 +60076,14 @@
    "verdict": "ok",
    "note": "selfcheck, Practice filler (source Short Answer fs-id1172100966893, unkeyed upstream). Stays a selfcheck: the honest answer assembles the compaction-necessity sentence and the supercoiling/packaging process sentences across two subsections. Model answer traces only to this module. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "78fffb61619c7e70": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp28899760 (printed 67); exactly 90.25, ruling 4 — correction | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "79022ecfe389f3a1": {
    "verdict": "ok",
    "note": "Check Your Learning of example fs-idp72915680 (para fs-idp3642976): source CH; own C 1.650e-4 mol, H 1.643e-4 mol, ratio 1.00",
@@ -60754,6 +60784,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
+  "7a392e91f29270b3": {
+   "verdict": "ok",
+   "note": "author MC from tbl-ch26_04 Renal plasma flow row '(1 minus the hematocrit)'; distractors the hematocrit, 60 minutes times 24 hours, 21 percent of the cardiac output (Renal blood flow row) | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -62262,22 +62300,6 @@
   "7d0041e2de703ea0": {
    "verdict": "ok",
    "note": "f(x)={1/x,x<=2; 9x-11.5,x>2}. f(2)=1/2 exists (Condition 1 holds). left-limit=1/2, right-limit=9*2-11.5=6.5. Unequal -> Condition 2 fails -> not continuous. Matches source Try It 2 solution text (left-hand limit 1/2, right-hand limit 6.5). | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
-  },
-  "7d02fa4d187779a6": {
-   "verdict": "ok",
-   "note": "sortbins from table fs-id1167660204994 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "7d0b38a445a8732d": {
-   "verdict": "ok",
-   "note": "author-built from § Vector Transmission: \"Other arthropod vectors can include arachnids, primarily ticks , which transmit Lyme disease and other diseases, and mites , which transmit…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "7d0c85cff5ab2e9d": {
    "verdict": "ok",
@@ -64234,6 +64256,14 @@
   "813171ec69cd2f6a": {
    "verdict": "ok",
    "note": "glossary recall: thoracic cavity (fs-id2236953) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "81371d6003230df3": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp23764656 (printed 13), energy; 4.184 x 892000 x 7.222/3.6e6 = 7.487 -> 7.5 at the data's 2 figures; source 7.47 — corrected per ruling 5.1-3, Source note | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -66539,14 +66569,6 @@
    "verdict": "ok",
    "note": "Body selfcheck, CYU bullet 3 (vaginal microbiota factors). Model answer assembled from the Normal Microbiota subsection's paragraph on establishment, estrogen regulation, and dominant organisms."
   },
-  "859e82dd7831b325": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp36064736 part (b); source 'Copper is a likely candidate.'; options the Table 5.1 metals in table order",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "85a7a4e123d53937": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -66974,14 +66996,6 @@
   "86a80031ba9cf6b5": {
    "verdict": "ok",
    "note": "source exercise fs-id1167660256138 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "86ac49fc4e6e001f": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp13559760 (printed 9); 14500/(485 x 4.184) = 7.1455 -> 7.15, source 7.15 °C",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -67924,14 +67938,6 @@
   "88ab98fdcb63f936": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "88ac0af1842a6ddf": {
-   "verdict": "ok",
-   "note": "author MC from tbl-ch26_04 Renal plasma flow row '(1 minus the hematocrit)'; distractors the hematocrit, 60 minutes times 24 hours, 21 percent of the cardiac output (Renal blood flow row)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "88ac9cdf5b80e94f": {
    "verdict": "ok",
@@ -74180,14 +74186,6 @@
     "result": "agrees"
    }
   },
-  "957a3a696dbcbd1a": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm11773136 part (a), cal/°C; 47.632/4.184 = 11.384 -> 11.4 at the data's 3 figures; source prints 11.38 — corrected per ruling 5.1-1 (G4), Source note",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "9580b484dc4f1d26": {
    "verdict": "ok",
    "note": "model answer is CNXML solution fs-id2890552 (m66481) verbatim; rubric checkpoints are clauses of that solution | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -74541,6 +74539,14 @@
   "963008fcf5f7939a": {
    "verdict": "ok",
    "note": "source fs-id1652176 key A fundus and body; fs-id810540 'glands of the fundus and body of the stomach, the site of most chemical digestion'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "963174ad83a2b404": {
+   "verdict": "ok",
+   "note": "sortbins from table fs-id1167660204994 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -76340,14 +76346,6 @@
     "result": "agrees"
    }
   },
-  "9a0c8cc536e1e049": {
-   "verdict": "ok",
-   "note": "sortbins from table fs-id1167662875651 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "9a127e6779b14195": {
    "verdict": "ok",
    "note": "glossary recall fs-id1387600 hindmilk (appetite clause omitted)",
@@ -76474,14 +76472,6 @@
   "9a3e2039d5b60e9a": {
    "verdict": "ok",
    "note": "source FIB fs-id1167660322954, key 'stratum corneum' matches CNXML solution | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "9a424991d2cdbc5f": {
-   "verdict": "ok",
-   "note": "author-built from § The Chemistry of Carbon: \"They are involved in dehydration synthesis and hydrolysis reactions.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -77276,6 +77266,14 @@
   "9c0e40bb26d24a19": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "9c1080f6f15d9ec1": {
+   "verdict": "ok",
+   "note": "author-built from § introduction: \"Organisms carrying out fermentation, called fermenters, produce a maximum of two ATP molecules per glucose during glycolysis. compares the…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -78848,14 +78846,6 @@
     "result": "agrees"
    }
   },
-  "9f5135cf586c315c": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp23764656 (printed 13), energy; 4.184 x 892000 x 7.222/3.6e6 = 7.487 -> 7.5 at the data's 2 figures; source 7.47 — corrected per ruling 5.1-3, Source note",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "9f5166db0a9c43f4": {
    "verdict": "ok",
    "note": "author-built from § Halogens: \"Chloramines are relatively stable, releasing chlorine over long periods time.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -79356,14 +79346,6 @@
    "verdict": "ok",
    "note": "KC 7 43.6 § Fertilization, m66678 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | Biology KC re-review Sep 24 2026 (knowledge-check-33-43.md:1304): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
   },
-  "a072818259e92dad": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm41581920 (identity); source 'the metal is likely to be iron'; options the Table 5.1 metals in table order (run facts decision 9)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "a0743fb2388dcb9a": {
    "verdict": "ok"
   },
@@ -79395,6 +79377,14 @@
    "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): |b|=sqrt(4+25)=sqrt(29); unit = (-2/sqrt29, 5/sqrt29) = (-2*sqrt29/29, 5*sqrt29/29). node -e confirmed -0.37139=-2/sqrt(29) and 0.92848=5/sqrt(29), matching source's own answer.",
    "solved": {
     "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
+  "a085c2dffac42c4a": {
+   "verdict": "ok",
+   "note": "Author sortbins from tbl-ch13_01: Primary vesicle bins vs Adult structures/Ventricles cells, each item checked against every cell; posterior row and secondary column excluded (Part C). | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -79573,14 +79563,6 @@
   "a0d8d5244ea54d59": {
    "verdict": "ok",
    "note": "source exercise fs-idm69463840 (printed 7) part (b): [Kr]4d¹⁰5s²5p⁶ as printed; electron count re-derived",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "a0db87a2955553fb": {
-   "verdict": "ok",
-   "note": "32.0/2.2046=14.52→14.5 kg",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -81785,14 +81767,6 @@
   "a4da6fb2b788bbed": {
    "verdict": "ok",
    "note": "RQ1 fs-id1435493 key B macrophage; fs-id1976682 macrophages phagocytic",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "a4ddd034192bc3b2": {
-   "verdict": "ok",
-   "note": "glossary recall: anti-diuretic hormone — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -86941,6 +86915,14 @@
     "result": "agrees"
    }
   },
+  "af9cb9e8ffca5bd8": {
+   "verdict": "ok",
+   "note": "author-written from tbl-ch14_01 Location(s)/Stimuli cells of four rows (Part C), 7 items; each read against every cell; Dermis, joint capsules dropped as true of two rows | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "afa55af885a7f4c2": {
    "verdict": "ok",
    "note": "x^2=8y: p=2, latus endpoints (2p,p)=(4,2) and (-2p,p)=(-4,2); matches source TI2. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -87397,15 +87379,6 @@
   "b0bd347dbd945790": {
    "verdict": "ok",
    "note": "body CYU (Alkylating Agents, bullet 2); selfcheck, synthesizes two sibling sentences (formaldehyde, glutaraldehyde), stays selfcheck | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
-  },
-  "b0be1cd37673cdd8": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm11773136 part (b), cal/°C; 406.87/4.184 = 97.244 -> 97.2 carried; source 97.3 from its rounded 407 — corrected per ruling 5.1-2, last-digit:1 keeps 97.3 right, Source note",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "adjudicated",
-    "note": "The key is the pound's mass times aluminum's specific heat carried unrounded, 453.5924 g × 0.897 ÷ 4.184 = 97.24; the solver's alternative 97.3 is the source's print, reached by reusing the rounded 407 J/°C (m68724 fs-idm11773136(b), erratum). The item's last-digit:1 grades both."
-   }
   },
   "b0c1d3167e3adec2": {
    "verdict": "ok",
@@ -89377,6 +89350,14 @@
     "result": "agrees"
    }
   },
+  "b4b961753f718837": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp16780032 part (a); 436 + 190 - 2(370) = -114 from the page's table; source -114 kJ | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b4b96f55b92d2874": {
    "verdict": "ok",
    "note": "body cloze, Skin fs-id1400782: 'When cholesterol present in the epidermis is exposed to ultraviolet radiation, it is converted to cholecalciferol' | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
@@ -90017,14 +89998,6 @@
   "b5eeb8c8173b0c1e": {
    "verdict": "ok",
    "note": "KC 3 13.2 § Autoclaves, m58854",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "b5ef3631aba7a6fe": {
-   "verdict": "ok",
-   "note": "body cloze from § Triglycerides: \"These fatty acids have their first double carbon bond at the third hydrocarbon from the methyl group (referred to as the omega end of the m…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -91121,14 +91094,6 @@
   "b8260672031a275d": {
    "verdict": "ok",
    "note": "In-page Try It (ti_11_07_01, construct a probability model for a fair coin): categorical, recast as multiplechoice; source solution gives Heads 1/2, Tails 1/2, which sums to 1 as every valid model must — the three distractors do not. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
-  },
-  "b82a48abfa6ca025": {
-   "verdict": "ok",
-   "note": "body cloze from § introduction: \"The class Actinobacteria comprises the high G+C gram-positive bacteria , which have more than 50% guanine and cytosine nucleotides in their…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "b8306d04b6c3e8a5": {
    "verdict": "ok",
@@ -93239,14 +93204,6 @@
     "result": "agrees"
    }
   },
-  "bc59d4c7e6c3b7df": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idp90124816 (acetylene, 125 g); 6246 kJ",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "bc5d29ceab57a976": {
    "verdict": "ok",
    "note": "body cloze from § Mucous Membranes: \"The epithelial cells lining the upper parts of the respiratory tract are called ciliated epithelial cells because they have hair-like appen…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -94145,6 +94102,14 @@
   "be1fcaf7192b2ffa": {
    "verdict": "ok",
    "note": "glossary recall: trochophore (fs-idp5617408) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "be2013b5b34ded81": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp13559760 (printed 9); 14500/(485 x 4.184) = 7.1455 -> 7.15, source 7.15 °C | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -95123,6 +95088,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "c0294948efe06052": {
+   "verdict": "ok",
+   "note": "author-built from § Fungal Diversity, Check Your Understanding: \"Which group of fungi appears to be associated with the greatest number of human diseases?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "c029bca3bfb93317": {
    "verdict": "ok",
    "note": "source exercise fs-id1167663911623 (prose-key) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -95978,6 +95951,14 @@
     "result": "agrees"
    }
   },
+  "c22cd62f9984c440": {
+   "verdict": "ok",
+   "note": "sortbins from table fs-id1167662875651 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c233d98b0aed476f": {
    "verdict": "ok",
    "note": "body CYU, unmatched; no single sentence differentiates phagosome from lysosome — model answer combines the phagosome-formation sentence and the lysosome/enzyme sentence. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -96746,6 +96727,14 @@
   "c3b2df2c7c6d5002": {
    "verdict": "ok",
    "note": "KC 2 9.1 § Sustaining Microbial Growth, m58828 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c3b827906c325457": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm11773136 part (a), J/°C; 45.8 x 1.040 = 47.632 -> 47.6, source 47.6 J/°C | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -98399,6 +98388,14 @@
    "verdict": "ok",
    "note": "source exercise fs-idp15556576 part (j)"
   },
+  "c6dbf12c0545fe8f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp16780032 part (b); 415 + 150 - 240 - 295 = 30; source 30 kJ | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c6e991ceca29b2c0": {
    "verdict": "ok",
    "note": "source exercise fs-idm69463840 (printed 7) part (f): [Ar]3d¹⁰ as printed; electron count re-derived",
@@ -98738,14 +98735,6 @@
   "c7990f8edbb39c44": {
    "verdict": "ok",
    "note": "parent re-read 2026-09-24 (Microbiology ch14.5-18 re-review): model answer and rubric checked against the module; checks quote module sentences, no new claims"
-  },
-  "c79c043063e794db": {
-   "verdict": "ok",
-   "note": "author sortbins from image table 1128 (fig-ch11_04_06): Bulbospongiosus and Ischiocavernosus under 'Superficial muscles'; External urethral sphincter and External anal sphincter under 'Deep muscles' (read from the 1600 px WebP and PDF p-0451)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "c7a03eec692f8802": {
    "verdict": "ok",
@@ -99449,6 +99438,22 @@
   "c935e538ad1de0df": {
    "verdict": "ok",
    "note": "KC 3 17.4 § glossary polygenic (fs-id1693409), m66514 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c9375a1fc85884f0": {
+   "verdict": "ok",
+   "note": "author-built from § The Chemistry of Carbon: \"They are involved in dehydration synthesis and hydrolysis reactions.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c939fe9828e70b00": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm41581920 (identity); source 'the metal is likely to be iron'; options the Table 5.1 metals in table order (run facts decision 9) | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -100379,14 +100384,6 @@
   "cadc847d94be9583": {
    "verdict": "ok",
    "note": "module m66702 Critical Thinking Question eip-433; model answer is the source solution verbatim; checkpoints decompose it clause by clause with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "cade83f3c63eb0d2": {
-   "verdict": "ok",
-   "note": "author-built from § HGT in Eukaryotes: \"Transposons or “jumping genes” have shown a transfer between rice and millet plant species.\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "cae0d4d07b4d5f25": {
    "verdict": "ok",
@@ -102103,6 +102100,14 @@
     "result": "agrees"
    }
   },
+  "ce7c3961aebf5087": {
+   "verdict": "ok",
+   "note": "author-built from § Chromalveolata: \"The supergroup Chromalveolata is united by similar origins of its members’ plastids and includes the apicomplexans, ciliates, diatoms , and…\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "ce7c8291217a713c": {
    "verdict": "ok",
    "note": "Glossary recall: endocrine system, prompt uses glossary meaning verbatim, referent matches keyed term (system, not a gland). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -103223,6 +103228,14 @@
     "result": "agrees"
    }
   },
+  "d0f75b73534d8f23": {
+   "verdict": "ok",
+   "note": "author-built from § Vector Transmission: \"Other arthropod vectors can include arachnids, primarily ticks , which transmit Lyme disease and other diseases, and mites , which transmit…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d0f84a78e6f2b9dd": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -103505,6 +103518,14 @@
   "d1d1f334a12981e1": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 173): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "d1d2a7570996097c": {
+   "verdict": "ok",
+   "note": "author-built from § HGT in Eukaryotes: \"Transposons or “jumping genes” have shown a transfer between rice and millet plant species.\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "d1d31bde5e8966de": {
    "verdict": "ok",
@@ -105901,15 +105922,6 @@
     "result": "agrees"
    }
   },
-  "d6afdd51e1d6ea65": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm287695728 part (b) (key 0.94635 L / 1 qt) | stem re-worded November 14, 2026: the sentence naming the table of common conversion factors added; key unchanged, re-solved",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "adjudicated",
-    "note": "The key is the row the stem asks for, as the module's table of common conversion factors prints it (1 qt = 0.94635 L); 0.94634, the other row (1 L = 1.0567 qt) inverted, is one unit away and is graded correct by the item's last-digit:1, which is why the allowance is 1. One key, both routes right."
-   }
-  },
   "d6b4bebd8748d1f8": {
    "verdict": "ok",
    "note": "KC 4 17.5 § Chronic Inflammation, m58881"
@@ -107001,14 +107013,6 @@
     "result": "agrees"
    }
   },
-  "d8d26a3ca0a41614": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm34686800 (printed 7), calories; 1307.7/4.184 = 312.55 -> 313, source 313 cal",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "d8d3fa76814364b5": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -107988,14 +107992,6 @@
     "result": "agrees"
    }
   },
-  "dae15fb758e0206e": {
-   "verdict": "ok",
-   "note": "197/2.2046=89.36→89.4 kg",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "dae21d4a465ba539": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -108736,14 +108732,6 @@
     "result": "agrees"
    }
   },
-  "dc756c3281e3e006": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm287695728 part (a) (key 1.0936 yd / 1 m), from the module's conversion table | stem re-worded November 14, 2026: the sentence naming the table of common conversion factors added; key unchanged, re-solved",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "dc757bb54dbf43b0": {
    "verdict": "ok",
    "note": "KC 7 33.2 § body Adipose Tissue (fs-idp181657376), m66612 — parent re-read against the module",
@@ -108879,6 +108867,14 @@
   "dcd98f01f94765ed": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "dcda636642a0636b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm34686800 (printed 7), calories; 1307.7/4.184 = 312.55 -> 313, source 313 cal | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -109113,14 +109109,6 @@
    "note": "source exercise fs-idm119922592 (printed 79), member As⁻; solution \"Se, As-\" lists it: yes",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "dd5f28afda19ac32": {
-   "verdict": "ok",
-   "note": "author-built from § Chromalveolata: \"The supergroup Chromalveolata is united by similar origins of its members’ plastids and includes the apicomplexans, ciliates, diatoms , and…\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
-   "solved": {
-    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -110321,14 +110309,6 @@
     "result": "agrees"
    }
   },
-  "dfdfd629732e1086": {
-   "verdict": "ok",
-   "note": "author-built from § Fungal Diversity: \"Because of their medical importance, we will focus on Zygomycota, Ascomycota, Basidiomycota, and Microsporidia. summarizes the characterist…\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "dfe47559de949eb3": {
    "verdict": "ok",
    "note": "Keyed option 'condensation' matches CNXML solution fs-idm40512354 = A (m66438 Review Q3, ethyl ethanoate). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -110689,14 +110669,6 @@
     "result": "agrees"
    }
   },
-  "e075719e2acec556": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "e077e5ab085893a6": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -110730,6 +110702,14 @@
    "note": "key-term recall from the Glossary appendix: operator (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "e0958f538aac85df": {
+   "verdict": "ok",
+   "note": "author sortbins from image table 1128 (fig-ch11_04_06): Bulbospongiosus and Ischiocavernosus under 'Superficial muscles'; External urethral sphincter and External anal sphincter under 'Deep muscles' (read from the 1600 px WebP and PDF p-0451) | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -112305,14 +112285,6 @@
   "e3c532f7a0cae30c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "e3ccc8de939f11a3": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp28899760 (printed 67); exactly 90.25, ruling 4 — correction",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -114723,6 +114695,14 @@
     "result": "agrees"
    }
   },
+  "e929576358b2f90d": {
+   "verdict": "ok",
+   "note": "author MC from tbl-ch26_04 Urine row 'It is the GFR times the fraction of the filtrate that is not reabsorbed'; replaces the disputed 'renal capsule' item | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e92ac29ad3465c64": {
    "verdict": "ok",
    "note": "Review Question fs-idm178498368, solution D (archaea). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -115961,14 +115941,6 @@
     "result": "agrees"
    }
   },
-  "eba820649079cab5": {
-   "verdict": "ok",
-   "note": "author-built from § summary: \"Nonionizing radiation like ultraviolet light may introduce pyrimidine (thymine) dimers, which, during DNA replication and transcription, ma…\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "eba91b941ae64683": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -116123,6 +116095,14 @@
   "ebdbd20fa0bca9cb": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "ebde73c20924ef6d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -116323,14 +116303,6 @@
   "ec4d6d25215fbf8c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "ec5008b31f36fa99": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm34686800 (printed 7), joules; 2.093 x 28.4 x 22.0 = 1307.7 -> 1310, source 1310 J",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -117434,6 +117406,15 @@
     "note": "Key stands. The pinned CNXML Fill-in-the-Blank key for m58915 is \"aspergillomas\"; the solver wrote the singular, which the text grader folds as a regular plural (plural folding, Sep 6 2026)."
    }
   },
+  "ee793ff0a0575f84": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm287695728 part (b) (key 0.94635 L / 1 qt) | stem re-worded November 14, 2026: the sentence naming the table of common conversion factors added; key unchanged, re-solved | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "The key is the row the stem asks for, as the module's table of common conversion factors prints it (1 qt = 0.94635 L); 0.94634, the other row (1 L = 1.0567 qt) inverted, is one unit away and is graded correct by the item's last-digit:1, which is why the allowance is 1. One key, both routes right."
+   }
+  },
   "ee7ac09829c2fad6": {
    "verdict": "ok",
    "note": "m66626 eip-303: model answer is the source solution verbatim; checkpoints decompose its four clauses (opposes insulin; insulin's role; falling blood sugar triggers release; liver catabolizes glycogen). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -117841,6 +117822,14 @@
     "result": "agrees"
    }
   },
+  "ef757609de6c4a43": {
+   "verdict": "ok",
+   "note": "author-built from § summary: \"Nonionizing radiation like ultraviolet light may introduce pyrimidine (thymine) dimers, which, during DNA replication and transcription, ma…\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ef792efa43e466c2": {
    "verdict": "ok",
    "note": "glossary recall: taxis (fs-idm74449152) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -118150,14 +118139,6 @@
    "note": "glossary recall: microvilli (fs-idp75043008) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "f03639a32b2e6734": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp16780032 part (a); 436 + 190 - 2(370) = -114 from the page's table; source -114 kJ",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -122069,6 +122050,14 @@
     "result": "agrees"
    }
   },
+  "f7c45e76b1a0d93a": {
+   "verdict": "ok",
+   "note": "body cloze from § introduction: \"The class Actinobacteria comprises the high G+C gram-positive bacteria , which have more than 50% guanine and cytosine nucleotides in their…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "f7c7c1e80a2d7608": {
    "verdict": "ok",
    "note": "body cloze fs-id1389642: 'This joining is called electric coupling'; preceding sentence kept as referent; accept 'electrical coupling' natural variant",
@@ -123285,6 +123274,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "fa3617566935bb66": {
+   "verdict": "ok",
+   "note": "parent re-read 2026-09-24 (Microbiology ch14.5-18 re-review): model answer and rubric checked against the module; checks quote module sentences, no new claims | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged"
   },
   "fa385c9cacca3bdb": {
    "verdict": "ok",
@@ -125197,6 +125190,14 @@
   "fddfeaaaeb9e78f0": {
    "verdict": "ok",
    "note": "body cloze from § Pre-mRNA Splicing: \"If the process errs by even a single nucleotide, the reading frame of the rejoined exons would shift, and the resulting protein would be dy…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "fde3e6b62708134a": {
+   "verdict": "ok",
+   "note": "32.0/2.2046=14.52→14.5 kg | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"

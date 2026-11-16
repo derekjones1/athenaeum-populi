@@ -7,6 +7,12 @@
  *   node tools/verify/ledger-carry.mjs plan $SP/ledger-before.json content --out $SP/carry [--note "…"]
  *   npm run ledger:merge -- $SP/carry/results
  *
+ * and, for a change to the BINDING RULE (tools/lib/exercise-context.mjs),
+ *
+ *   node tools/verify/ledger-carry.mjs rebind $SP/ledger-before.json content            (lists, writes nothing)
+ *   node tools/verify/ledger-carry.mjs rebind $SP/ledger-before.json content --out $SP/rebind
+ *   npm run ledger:merge -- $SP/rebind/results && node tools/verify/answer-ledger.mjs prune content
+ *
  * `plan` writes `<out>/results/carried.json` (a merge-ready result file) and
  * `<out>/resolve-list.json` (every unrecorded exercise it would not carry,
  * with the reason) — the resolve list is what gets re-solved or re-read.
@@ -43,14 +49,29 @@
  * The snapshot is this tool's own format, not `ledger:list` output: `list`
  * prints a dependency's kind and line but not its source, and a hint edit
  * made together with a table edit would then carry a solve of the old table.
+ *
+ * REBIND. An item's identity covers the block it is bound to, so a change to
+ * which block a phrase binds re-hashes every item it moves, with not a
+ * character of any page changed. `plan` refuses those (`dependency-changed`):
+ * it cannot tell a new binding from an edited table. `rebind` can, because
+ * the snapshot also holds every figure and table block of every page: it
+ * carries a record to an item whose stem, options, and key are unchanged and
+ * whose NEW block stood on the page, byte for byte, when the snapshot was
+ * taken (or which is now bound to nothing). The solver read that page; only
+ * the ledger's idea of which block the item names has moved. Each move is
+ * printed with the block it now reads, to be read against the page before
+ * `--out` writes anything (November 16, 2026: "the table above" stopped
+ * binding to the nearest photograph, 47 items in five books).
  */
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { join, resolve } from 'node:path';
+import { join, relative, resolve } from 'node:path';
 import { checkAnswer } from '../../assets/js/lib/math/check-answer.mjs';
 import { checkText } from '../../assets/js/lib/text/check-text.mjs';
 import { parseCliArgs } from '../lib/cli.mjs';
+import { maskCode, shortcodes, walkMarkdown } from '../lib/content.mjs';
+import { figureLikeBlocks } from '../lib/exercise-context.mjs';
 import { LedgerFormatError } from '../lib/ledger.mjs';
-import { LEDGER_PATH, exerciseHash, extractExercises, readLedger } from './answer-ledger.mjs';
+import { EXERCISE_KINDS, LEDGER_PATH, exerciseHash, extractExercises, readLedger } from './answer-ledger.mjs';
 
 const norm = (value) => String(value ?? '').replace(/\s+/g, ' ').trim();
 // A site-root Markdown link read as its words: the link is where the words
@@ -70,6 +91,25 @@ export function snapshot(root) {
     dependency: e.dependency ? exerciseHash(e.dependency.raw) : null,
   }));
 }
+
+/**
+ * Every figure and table block under `root`, as `{ <path>: [hash, …] }` —
+ * the blocks `extractExercises` binds items to, found the same way. `rebind`
+ * reads it to know a block an item is newly bound to was already on the page.
+ */
+export function pageBlocks(root) {
+  const blocks = {};
+  for (const file of walkMarkdown(resolve(root))) {
+    const cleaned = maskCode(readFileSync(file, 'utf8'));
+    const exercises = EXERCISE_KINDS.flatMap((kind) => [...shortcodes(cleaned, kind)]);
+    const found = figureLikeBlocks(cleaned, { exerciseSpans: exercises });
+    if (found.length) blocks[relative(process.cwd(), file)] = found.map((block) => exerciseHash(block.raw));
+  }
+  return blocks;
+}
+
+/** A snapshot file's exercises: the list itself (before November 16, 2026), or its `exercises`. */
+const exercisesOf = (data) => (Array.isArray(data) ? data : data.exercises);
 
 /** Everything a solver reads except the hint, plus the key; `accept` and `answerForm` are judged separately. */
 function signature(item) {
@@ -153,9 +193,56 @@ export function planCarry({ before, now, entries, note }) {
   return { results, resolve: toResolve };
 }
 
+/**
+ * The records a changed binding rule moves: for each unrecorded exercise now
+ * bound to a different block than the one recorded exercise it matches.
+ * @returns {{ results: object[], moves: object[], refused: object[] }}
+ */
+export function planRebind({ before, blocks, now, entries, note }) {
+  const bySignature = new Map();
+  for (const item of before) {
+    if (!entries[item.hash]) continue;
+    const key = signature(item);
+    if (!bySignature.has(key)) bySignature.set(key, []);
+    if (!bySignature.get(key).some((other) => other.hash === item.hash)) bySignature.get(key).push(item);
+  }
+  const results = [];
+  const moves = [];
+  const refused = [];
+  const seen = new Set();
+  for (const item of now) {
+    if (entries[item.hash] || seen.has(item.hash)) continue;
+    seen.add(item.hash);
+    const dependency = item.dependency ? exerciseHash(item.dependency.raw) : null;
+    const matches = bySignature.get(signature(item)) ?? [];
+    // The same block as before is `plan`'s case, not this one's.
+    if (!matches.length || matches.some((m) => m.dependency === dependency)) continue;
+    const neutral = matches.filter((m) => acceptNeutral(m, item) && formNeutral(m, item));
+    const where = { hash: item.hash, path: item.path, line: item.line, kind: item.kind, phrase: item.reference?.phrase ?? null };
+    let why = null;
+    if (!neutral.length) why = 'accept-or-form-changed';
+    else if (neutral.length > 1) why = 'ambiguous';
+    else if (dependency && !(blocks[item.path] ?? []).includes(dependency)) why = 'block-edited';
+    if (why) { refused.push({ ...where, why }); continue; }
+    const old = entries[neutral[0].hash];
+    moves.push({
+      ...where,
+      from: neutral[0].dependency ? 'another block' : 'nothing',
+      to: item.dependency ? { kind: item.dependency.kind, line: item.dependency.line, opens: norm(item.dependency.raw).slice(0, 110) } : null,
+    });
+    results.push({
+      hash: item.hash,
+      verdict: old.verdict,
+      note: old.note ? `${old.note} | ${note}` : note,
+      ...(old.solved ? { solved: old.solved } : {}),
+    });
+  }
+  return { results, moves, refused };
+}
+
 function usage(detail) {
   console.error(`ledger-carry: ${detail}`);
-  console.error('usage: node tools/verify/ledger-carry.mjs snapshot [root]\n       node tools/verify/ledger-carry.mjs plan <snapshot.json> [root] --out <dir> [--note text] [--ledger path]');
+  console.error('usage: node tools/verify/ledger-carry.mjs snapshot [root]\n       node tools/verify/ledger-carry.mjs plan <snapshot.json> [root] --out <dir> [--note text] [--ledger path]\n       node tools/verify/ledger-carry.mjs rebind <snapshot.json> [root] [--out <dir>] [--note text] [--ledger path]');
   process.exit(2);
 }
 
@@ -163,7 +250,7 @@ function main() {
   let cli;
   try {
     cli = parseCliArgs(process.argv.slice(2), {
-      commands: ['snapshot', 'plan'], valueFlags: ['out', 'note', 'ledger'], positional: { max: 2 },
+      commands: ['snapshot', 'plan', 'rebind'], valueFlags: ['out', 'note', 'ledger'], positional: { max: 2 },
     });
   } catch (error) {
     usage(error.message);
@@ -171,18 +258,36 @@ function main() {
   }
   const { command, positional, flag } = cli;
   if (command === 'snapshot') {
-    process.stdout.write(`${JSON.stringify(snapshot(positional[0] || 'content'))}\n`);
+    const root = positional[0] || 'content';
+    process.stdout.write(`${JSON.stringify({ exercises: snapshot(root), blocks: pageBlocks(root) })}\n`);
     return;
   }
   const [snapshotFile, root = 'content'] = positional;
   const out = flag('out');
-  if (!snapshotFile) usage('plan needs the pre-edit snapshot file');
-  if (!out) usage('plan needs --out <dir>');
+  if (!snapshotFile) usage(`${command} needs the pre-edit snapshot file`);
   const date = new Date().toISOString().slice(0, 10);
+  if (command === 'rebind') {
+    const taken = JSON.parse(readFileSync(snapshotFile, 'utf8'));
+    if (Array.isArray(taken) || !taken.blocks) usage('rebind needs a snapshot that holds each page\'s blocks (taken on or after November 16, 2026)');
+    const note = norm(flag('note')) || `rebound ${date} (ledger-carry): the binding rule changed which block this item names; stem, options, key, and the page's blocks unchanged`;
+    const { entries } = readLedger(flag('ledger') ?? LEDGER_PATH);
+    const rebound = planRebind({ before: taken.exercises, blocks: taken.blocks, now: extractExercises(resolve(root)), entries, note });
+    for (const move of rebound.moves) {
+      console.log(`${move.path}:${move.line} ${move.kind} ${JSON.stringify(move.phrase)} — was bound to ${move.from}; now ${move.to ? `${move.to.kind} L${move.to.line}: ${move.to.opens}` : 'bound to nothing'}`);
+    }
+    for (const item of rebound.refused) console.log(`REFUSED (${item.why}) ${item.path}:${item.line} ${item.kind} ${JSON.stringify(item.phrase)}`);
+    console.log(`${rebound.moves.length} record(s) to move; ${rebound.refused.length} refused`);
+    if (!out) { console.log('  nothing written: read each move against its page, then rerun with --out <dir>'); return; }
+    mkdirSync(join(out, 'results'), { recursive: true });
+    writeFileSync(join(out, 'results', 'rebound.json'), `${JSON.stringify({ results: rebound.results }, null, 1)}\n`);
+    console.log(`  merge: npm run ledger:merge -- ${join(out, 'results')}`);
+    return;
+  }
+  if (!out) usage('plan needs --out <dir>');
   const note = norm(flag('note')) || `carried ${date} (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form`;
   const { entries } = readLedger(flag('ledger') ?? LEDGER_PATH);
   const plan = planCarry({
-    before: JSON.parse(readFileSync(snapshotFile, 'utf8')), now: snapshot(root), entries, note,
+    before: exercisesOf(JSON.parse(readFileSync(snapshotFile, 'utf8'))), now: snapshot(root), entries, note,
   });
   mkdirSync(join(out, 'results'), { recursive: true });
   writeFileSync(join(out, 'results', 'carried.json'), `${JSON.stringify({ results: plan.results }, null, 1)}\n`);

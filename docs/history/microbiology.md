@@ -1597,3 +1597,15 @@ Four objective headings under `## Practice` ended with the source's period, wher
 period, so every `#…` link is what it was, and the ledger is untouched. The
 rule (`practicePeriodHeadings` in `tools/lint/lints-leaks.mjs`) left the
 Chemistry block the same day and is an error in every book.
+
+## "The table" binds to the table (November 16, 2026)
+
+The answer ledger used to bind "the table" to the nearest block of any
+kind, so twelve Microbiology items were bound to a photograph or diagram
+with the table they read further up the page. The rule and the measurement
+are in `docs/history/chemistry.md` under the same heading. Fourteen records
+moved, each read against its page. Four hints were reworded so the phrase
+names the table it means: 8.4's two items on the types of metabolism, 11.2's
+enzyme sort, and 15.2's self-check on molecular Koch's postulates. 4.4's
+Cutibacterium item stays bound to the nearer of the page's two tables: the
+right one cannot be named without giving the answer.

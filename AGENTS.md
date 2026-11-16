@@ -286,7 +286,12 @@ collapsed, plus — when the stem, hint, or options name a figure, graph, or
 table on the page ("the graph above", "the table below", "according to the
 table", "shown above") — the source of the nearest such block in that
 direction (an `apfigure`, `mediafigure`, inline `<svg>`, Markdown table, or
-image). Reflowing a shortcode keeps its verdict; changing any semantic
+image). "The table" is the nearest Markdown table (or a picture whose
+description opens by calling it a table), never a nearer photograph, and a
+table named by what it shows — "the table of bond energies above" — is the
+table whose title or header row says so; on a page with several tables,
+name the one meant *(November 16, 2026; `tools/lib/exercise-context.mjs`)*.
+Reflowing a shortcode keeps its verdict; changing any semantic
 character — question, answer, option, hint, config, or the figure/table it
 depends on — drops it out of the ledger and fails `npm run verify:ledger`
 until it is read again. **Editing a figure or table an answer was read
@@ -362,6 +367,12 @@ Commands that drive a re-run:
 - `npm run ledger:carry -- snapshot|plan` carries records across a
   sweep's hint, accept-addition, and answerForm edits ("Re-solving after a sweep"
   above) and lists what it would not carry.
+- `npm run ledger:carry -- rebind $SP/ledger-before.json content` is for a
+  change to the binding rule itself, which re-hashes every item it moves
+  with no page edited: it lists each item now bound to a different block,
+  with the block, and with `--out` writes merge-ready records for those
+  whose text is unchanged and whose new block was on the page when the
+  snapshot was taken. Read every move against its page before writing.
 
 A pass writes result files, each shaped
 `{"results": [{"hash": "…", "verdict": "…", "note": "…"?}]}`, and

@@ -70,7 +70,7 @@ As with Koch's original postulates, the molecular Koch's postulates have limitat
 
 **Check Your Understanding**
 
-{{< selfcheck question="Explain the differences between Koch's original postulates and the molecular Koch's postulates." hint="Reread the first paragraph of the Molecular Koch's Postulates subsection and the table below it." >}}
+{{< selfcheck question="Explain the differences between Koch's original postulates and the molecular Koch's postulates." hint="Reread the first paragraph of the Molecular Koch's Postulates subsection and the table above." >}}
 The premise for molecular Koch's postulates is not in the ability to isolate a particular pathogen but rather to identify a gene that may cause the organism to be pathogenic. Koch's original postulates instead ask whether a whole microorganism can be found in every diseased individual, isolated and cultured, and shown to reproduce the disease. Molecular Koch's postulates extend this logic to a single gene: inactivating a suspected gene should measurably reduce pathogenicity, and restoring the gene should restore it.
 ===CHECKS===
 the premise for molecular Koch's postulates is not in the ability to isolate a particular pathogen but rather to identify a gene

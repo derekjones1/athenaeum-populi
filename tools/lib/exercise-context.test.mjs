@@ -98,8 +98,8 @@ test('dependencyOf resolves to the nearest block in the named direction, skippin
   assert.equal(dependencyOf({ index: 960, end: 999 }, blocks, { direction: 'below' }), null);
   assert.equal(dependencyOf(first, blocks, null), null);
   // The noun narrows the kind: a photograph is never a Markdown table, so
-  // "in the photograph" reaches past the nearer table to the mediafigure;
-  // a "table" may be an image, so it takes whichever is nearest.
+  // "in the photograph" reaches past the nearer table to the mediafigure,
+  // and "the table" takes the Markdown table.
   const mixed = [
     { kind: 'mediafigure', index: 100, end: 200, raw: 'photo' },
     { kind: 'table', index: 300, end: 350, raw: 'tab' },
@@ -126,4 +126,70 @@ test('"the figure of …, below" binds the next figure after the item, whatever 
   assert.deepEqual([...mediaBindings(page).values()], ['CNX_Chem_06_02_BohrArrows']);
   // "Above" in the same form is not read (5.2's calorimeter would rebind finished items).
   assert.equal(referencesContext({ kind: 'fillin', params: { question: 'Using the figure of the polystyrene-cup calorimeter above, find q.' } })?.phrase ?? null, null);
+});
+
+test('"the table" binds to the Markdown table, not to a picture that stands nearer (Chemistry 5.1)', () => {
+  // Eight items of 5.1 said "take each specific heat from the table above"
+  // and were bound to the photograph of a solar plant between them and the table.
+  const page = [
+    '**Specific Heats of Common Substances at 25 °C and 1 bar**\n\n| Substance | Specific Heat (J/g °C) |\n|---|---|\n| water | 4.184 |',
+    '{{< mediafigure src="chemistry/CNX_Chem_05_01_SolTherm2" kind="photo" alt="Two photographs. (a) Three tall lattice towers." >}}\nThe Ivanpah solar thermal plant.\n{{< /mediafigure >}}',
+    '{{< fillin question="How much heat warms 5.00 g of water by 10.0 °C? Enter the heat in joules." answer="209" hint="Use the specific heat of liquid water from the table above." >}}',
+  ].join('\n\n');
+  const [exercise] = [...page.matchAll(/\{\{< fillin[^\n]*>\}\}/g)].map((m) => ({ index: m.index, end: m.index + m[0].length }));
+  const blocks = figureLikeBlocks(page, { exerciseSpans: [exercise] });
+  assert.deepEqual(blocks.map((b) => b.kind), ['table', 'mediafigure']);
+  assert.equal(blocks[0].title, 'Specific Heats of Common Substances at 25 °C and 1 bar', 'a table carries the bold line above it as its title');
+  const reference = referencesContext({ kind: 'fillin', params: { question: 'How much heat?', hint: 'Use the specific heat of liquid water from the table above.' } });
+  assert.equal(dependencyOf(exercise, blocks, reference).kind, 'table');
+  // "Data" and "chart" may be a figure: they still take the nearest block.
+  assert.equal(dependencyOf(exercise, blocks, { phrase: 'From this data', direction: 'above' }).kind, 'mediafigure');
+});
+
+test('a picture whose description opens by calling it a table is one, and where the page has no table the nearest block stands', () => {
+  const at = (index) => ({ index, end: index + 50 });
+  const tableImage = { kind: 'mediafigure', ...at(300), raw: '{{< mediafigure src="microbiology/OSC_Microbio_17_05_FormElem" alt="A six-column table of the formed elements of blood." >}}' };
+  const photo = { kind: 'mediafigure', ...at(500), raw: '{{< mediafigure src="microbiology/OSC_Microbio_04_06_TB" alt="A photograph of colonies." >}}' };
+  const item = at(900);
+  const table = { phrase: 'According to the table', direction: 'above' };
+  assert.equal(dependencyOf(item, [tableImage, photo], table), tableImage, 'the table printed as an image, past the photograph');
+  assert.equal(dependencyOf(item, [photo], table), photo, 'no table in that direction: the nearest block, as before, so nothing un-binds');
+  // A file name is not a description: `…_TaxaTable` is four pictures from one column of the table above it.
+  const columnPictures = { kind: 'mediafigure', ...at(500), raw: '{{< mediafigure src="microbiology/OSC_Microbio_05_03_TaxaTable" alt="Four images from the Image column of the table above." >}}' };
+  const markdown = { kind: 'table', ...at(300), raw: '| Group | Characteristics |\n|---|---|' };
+  assert.equal(dependencyOf(item, [markdown, columnPictures], table), markdown);
+});
+
+test('a table named by what it shows binds to the table of that name, above (Chemistry 7.5, Microbiology 17.3)', () => {
+  const named = (question) => referencesContext({ kind: 'fillin', params: { question } });
+  assert.deepEqual(named('Using the bond energies in the table of bond energies above, determine the enthalpy change.'), { phrase: 'the table of bond energies above', direction: 'above' });
+  // "Above" in the name is the direction, whatever a later sentence says.
+  assert.equal(named('Refer to the table of formed elements above. Which leukocyte is listed below the neutrophil?').direction, 'above');
+  assert.equal(named('The table of contents lists twelve chapters.'), null);
+  const at = (index) => ({ index, end: index + 50 });
+  const energies = { kind: 'table', ...at(100), title: 'Bond Energies (kJ/mol)', raw: '| Bond | Bond Energy | Bond | Bond Energy |\n|---|---|---|---|\n| H–H | 436 | C–S | 260 |' };
+  const lengths = { kind: 'table', ...at(200), title: 'Average Bond Lengths and Bond Energies for Some Common Bonds', raw: '| Bond | Bond Length (Å) | Bond Energy (kJ/mol) |\n|---|---|---|' };
+  const cycle = { kind: 'table', ...at(300), raw: '| Step | Equation | Enthalpy change |\n|---|---|---|\n| Bond energy of fluorine | … | 79.4 |' };
+  const item = at(900);
+  const reference = { phrase: 'the table of bond energies above', direction: 'above' };
+  assert.equal(dependencyOf(item, [energies, lengths, cycle], reference), energies, 'both titles say "bond energies"; the one that says the least else is the one named');
+  assert.equal(dependencyOf(item, [lengths, cycle], reference), lengths);
+  assert.equal(dependencyOf(item, [cycle], reference), cycle, 'no title or header shares a word: the nearest table stands');
+  // The name is read, never the body: a row that says "bond energy" does not make the Born–Haber table the one named.
+  assert.equal(dependencyOf(item, [energies, cycle], reference), energies);
+  // Microbiology prints the source's picture of a table under its transcription: the table is taken first.
+  const formed = { kind: 'table', ...at(100), raw: '| Formed Element | Major Subtypes | Numbers per µL (Range) |\n|---|---|---|' };
+  const picture = { kind: 'mediafigure', ...at(200), raw: '{{< mediafigure src="microbiology/OSC_Microbio_17_05_FormElem" alt="A six-column table of the formed elements of blood." >}}' };
+  const macrophages = { kind: 'table', ...at(300), raw: '| Tissue | Macrophage |\n|---|---|' };
+  assert.equal(dependencyOf(item, [formed, picture, macrophages], { phrase: 'the table of formed elements above', direction: 'above' }), formed);
+  assert.equal(dependencyOf(item, [formed, picture, macrophages], { phrase: 'in the table', direction: 'above' }), macrophages, 'unnamed, it is still the nearest table');
+});
+
+test('"the following data:" introduces data the stem itself prints, and is not page context (Chemistry 5.3)', () => {
+  const stem = 'Calculate the enthalpy of formation of NO from the following data: $\\ce{N2(g) + 2O2(g) -> 2NO2(g)}$ $\\Delta H^\\circ$ = 66.4 kJ.';
+  assert.equal(referencesContext({ kind: 'fillin', params: { question: stem } }), null);
+  // A later phrase in the same item still binds.
+  assert.equal(referencesContext({ kind: 'fillin', params: { question: stem, hint: 'Add the equations as the figure above does.' } }).phrase, 'the figure above');
+  // No colon: the drawing is on the page (Chemistry 2.1).
+  assert.ok(referencesContext({ kind: 'fillin', params: { question: 'In the following drawing, the green spheres represent atoms of a certain element.' } }));
 });

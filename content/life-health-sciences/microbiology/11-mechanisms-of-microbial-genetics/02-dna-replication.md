@@ -404,7 +404,7 @@ it cannot add nucleotides if a free 3′-OH group is not available
 DNA polymerase would be unable to attach the next nucleotide, and elongation of that strand would stop at that point
 {{< /selfcheck >}}
 
-{{< sortbins question="Sort each function below under the enzyme of bacterial DNA replication it describes." hint="Match each function phrase to that enzyme's row in the table above, or to the body paragraph describing it." >}}
+{{< sortbins question="Sort each function below under the enzyme of bacterial DNA replication it describes." hint="Match each function phrase to that enzyme's row in the table of enzymes and factors above, or to the body paragraph describing it." >}}
 {"bins": ["DNA polymerase I", "DNA polymerase III", "Helicase", "DNA ligase"],
  "items": [
   {"label": "Removes RNA primers from the lagging strand", "bin": 0},

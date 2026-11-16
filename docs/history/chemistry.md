@@ -4079,6 +4079,74 @@ pass a clause that skips a "not".
   wrote "its net charge", the author brief's own example of a clause that
   checks nothing, and were redone.
 
+## "The table" binds to the table (November 16, 2026)
+
+The last entry of the chapter 5 open list: "the answer ledger binds an item
+to the nearest figure above it when the stem says 'above' of a table" (nine
+items bound to a photograph none of them uses). It was a rule of
+`tools/lib/exercise-context.mjs`, shared by every book: a "table" noun
+admitted a block of any kind, on the ground that a life-sciences table can
+be an image, so "take each specific heat from the table above" took the
+photograph of the Ivanpah solar plant that stands between 5.1's items and
+its table.
+
+**Measured first.** 37 items in five books bound a "table" or "data"
+reference to a picture with a Markdown table further up the page: Chemistry
+13 (9 to photographs: eight in 5.1, one in 5.3), Microbiology 12, Anatomy
+and Physiology 7, Biology 4, Precalculus 1. Derek chose the fix for every
+book, each re-bind read (the alternative was Chemistry alone).
+
+**The rule now.**
+
+- "The table" is the nearest Markdown table in the named direction, or a
+  picture whose description opens by calling it a table. Where neither lies
+  that way, the nearest block stands, so nothing un-binds. A file name is
+  not read: Microbiology's `…_TaxaTable` is four pictures from one column of
+  the table above it.
+- A table named by what it shows — "the table of bond energies above" —
+  binds, where the `(?! of)` guard used to leave it unread (twelve items
+  were bound to nothing), and binds to the table whose title or header row
+  says the name. Chemistry titles a table with a bold line above it, and
+  `figureLikeBlocks` now reads that line as the block's `title`. Of two
+  titles that both say the name (7.5's "Bond Energies (kJ/mol)" and "Average
+  Bond Lengths and Bond Energies for Some Common Bonds") the one that says
+  the least else is taken; a Markdown table is taken before the source's
+  picture of it.
+- "…from the following data: <the data>" is the stem's own data, not page
+  context (5.3's Hess's-law item was bound to a diagram 500 lines up).
+
+**Rejected, with the measurement.** Choosing the table by the words of the
+whole item: of 47 items with two or more tables in their direction it moved
+11, and 5 of those were wrong (math items under "the table above" that share
+a stray word with a table far up the page). Only the name is read. A binding
+that moved with a reworded hint would also re-hash the item.
+
+**The moves.** 47 records, every one read against its page: Chemistry 21
+(1.6 six, 5.1 ten, 5.3 two, 7.5 three), Microbiology 14, Anatomy and
+Physiology 7, Biology 3, Precalculus 2. `ledger-carry.mjs` has a `rebind`
+mode for this: `plan` refuses a changed dependency because it cannot tell a
+new binding from an edited table; `rebind` carries a record only when the
+item's text is unchanged and its new block stood on the page, byte for byte,
+when the snapshot was taken (the snapshot now holds every page's blocks). It
+lists the moves and writes nothing without `--out`. The ledger still holds
+18,546 records; no floor moved.
+
+**Four Microbiology hints reworded** so the phrase names the table it means
+(the nearest table on those pages is another one): 8.4's two items on the
+types of metabolism ("the table of types of metabolism above"), 11.2's
+enzyme sort ("the table of enzymes and factors above"), and 15.2's
+self-check, whose "the table below it" pointed below the item at a table
+that is above it ("the table above").
+
+**One binding the rule cannot make right:** Microbiology 4.4, "Find
+Cutibacterium in the table headed by its taxonomic class." The page has two
+such tables, the item is bound to the nearer (the Bacilli table), and the
+one that lists Cutibacterium cannot be named without giving the answer. It
+was bound to a photograph before.
+
+**For the next run.** On a page with several tables, name the one a stem or
+hint means ("the table of … above"); "the table above" is the nearest one.
+
 ## The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under

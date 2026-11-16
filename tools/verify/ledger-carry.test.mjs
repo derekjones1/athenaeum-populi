@@ -4,8 +4,8 @@ import { mkdtempSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { spawnSync } from 'node:child_process';
-import { validateRecord } from './answer-ledger.mjs';
-import { planCarry, snapshot } from './ledger-carry.mjs';
+import { extractExercises, validateRecord } from './answer-ledger.mjs';
+import { pageBlocks, planCarry, planRebind, snapshot } from './ledger-carry.mjs';
 
 const TOOL = new URL('./ledger-carry.mjs', import.meta.url).pathname;
 
@@ -146,7 +146,8 @@ test('the CLI writes a merge-ready results directory and a resolve list', () => 
   assert.equal(snap.status, 0, snap.stderr);
   writeFileSync(join(dir, 'before.json'), snap.stdout);
   mkdirSync(join(dir, 'data', 'verification'), { recursive: true });
-  writeFileSync(join(dir, 'data', 'verification', 'answer-ledger.json'), JSON.stringify({ schemaVersion: 1, entries: recorded(JSON.parse(snap.stdout)) }));
+  writeFileSync(join(dir, 'data', 'verification', 'answer-ledger.json'), JSON.stringify({ schemaVersion: 1, entries: recorded(JSON.parse(snap.stdout).exercises) }));
+  assert.equal(JSON.parse(snap.stdout).blocks['content/a.md'].length, 1, 'the snapshot holds each page\'s blocks');
   writeFileSync(join(dir, 'content', 'a.md'), page({ mcHint: 'Two factors.', answer: 'ribosome', accept: '' }));
   const out = run(['plan', 'before.json', 'content', '--out', 'carry']);
   assert.equal(out.status, 0, out.stderr);
@@ -156,4 +157,70 @@ test('the CLI writes a merge-ready results directory and a resolve list', () => 
   const resolveList = JSON.parse(readFileSync(join(dir, 'carry', 'resolve-list.json'), 'utf8'));
   assert.deepEqual(resolveList.map((r) => r.why), ['changed']);
   assert.equal(run(['plan', 'before.json']).status, 2, '--out is required');
+});
+
+// A change to the binding RULE moves an item to another block with no page
+// edited: "take each specific heat from the table above" was bound to the
+// photograph between the item and the table (Chemistry 5.1).
+const rebound = ({ edit = {}, blocks } = {}) => {
+  const dir = site(page());
+  const root = join(dir, 'content');
+  const table = extractExercises(root)[2];
+  // What the snapshot held under the old rule: the same item, bound to another block.
+  const before = snapshot(root).map((e) => (e.hash === table.hash ? { ...e, hash: '0'.repeat(16), dependency: 'f'.repeat(16) } : e));
+  const onPage = pageBlocks(root);
+  writeFileSync(join(dir, 'content', 'a.md'), page(edit));
+  const now = extractExercises(root);
+  return { before, now, table: now[2], ...planRebind({ before, blocks: blocks ?? onPage, now, entries: recorded(before), note: 'rebound by test' }) };
+};
+
+test('rebind carries a record to the block a changed binding rule now names, when that block stood on the page', () => {
+  const { table, results, moves, refused } = rebound();
+  assert.deepEqual(refused, []);
+  assert.deepEqual(results.map((r) => r.hash), [table.hash]);
+  assert.equal(results[0].note, 'read textin | rebound by test');
+  assert.deepEqual(results[0].solved, { by: 'fable', result: 'agrees' });
+  assert.equal(validateRecord(results[0], { requireHash: true }), null, 'the record is merge-ready');
+  assert.equal(moves[0].to.kind, 'table');
+  assert.match(moves[0].to.opens, /^\| x \| y \|/, 'each move prints the block it now reads');
+  // A hint reworded so the phrase names its table is still the same item.
+  assert.equal(rebound({ edit: { hint: 'Read along the row.' } }).results.length, 2 - 1, 'the bound item carries; the other textin\'s hint edit is plan\'s to carry');
+});
+
+test('rebind refuses a block that was edited, and an item whose key changed is not its case', () => {
+  // The table changed with the rule: the solver never read this block.
+  const edited = rebound({ edit: { row: '| 0 | 4 |' } });
+  assert.deepEqual(edited.results, []);
+  assert.deepEqual(edited.refused.map((r) => r.why), ['block-edited']);
+  assert.deepEqual(rebound({ blocks: {} }).refused.map((r) => r.why), ['block-edited'], 'a page with no recorded blocks proves nothing');
+  // An item bound to the same block as before is plan's case; rebind leaves it.
+  const dir = site(page());
+  const root = join(dir, 'content');
+  const before = snapshot(root);
+  const same = planRebind({ before, blocks: pageBlocks(root), now: extractExercises(root), entries: {}, note: 'n' });
+  assert.deepEqual(same, { results: [], moves: [], refused: [] });
+});
+
+test('the CLI lists the moves without writing, writes them with --out, and refuses a snapshot without blocks', () => {
+  const dir = site(page());
+  const run = (args) => spawnSync(process.execPath, [TOOL, ...args], { cwd: dir, encoding: 'utf8' });
+  const snap = JSON.parse(run(['snapshot', 'content']).stdout);
+  // The old rule's binding: the table item recorded under another identity.
+  const table = snap.exercises[2];
+  const old = { ...table, hash: '0'.repeat(16), dependency: 'f'.repeat(16) };
+  snap.exercises[2] = old;
+  writeFileSync(join(dir, 'before.json'), JSON.stringify(snap));
+  mkdirSync(join(dir, 'data', 'verification'), { recursive: true });
+  writeFileSync(join(dir, 'data', 'verification', 'answer-ledger.json'), JSON.stringify({ schemaVersion: 1, entries: recorded(snap.exercises) }));
+  const listed = run(['rebind', 'before.json', 'content']);
+  assert.equal(listed.status, 0, listed.stderr);
+  assert.match(listed.stdout, /content\/a\.md:\d+ textin "in the table" — was bound to another block; now table L\d+: \| x \| y \|/);
+  assert.match(listed.stdout, /1 record\(s\) to move; 0 refused\n\s+nothing written/);
+  assert.equal(run(['rebind', 'before.json', 'content', '--out', 'rebind']).status, 0);
+  const written = JSON.parse(readFileSync(join(dir, 'rebind', 'results', 'rebound.json'), 'utf8')).results;
+  assert.deepEqual(written.map((r) => r.hash), [table.hash]);
+  assert.match(written[0].note, /\| rebound \d{4}-\d{2}-\d{2} \(ledger-carry\)/);
+  writeFileSync(join(dir, 'old.json'), JSON.stringify(snap.exercises));
+  assert.equal(run(['rebind', 'old.json', 'content']).status, 2, 'a snapshot from before the blocks were recorded cannot prove a block was on the page');
+  assert.equal(run(['plan', 'old.json', 'content', '--out', 'carry']).status, 0, 'plan still reads the older snapshot');
 });

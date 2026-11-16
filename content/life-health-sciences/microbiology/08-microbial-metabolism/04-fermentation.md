@@ -285,7 +285,7 @@ mannitol fermentation differentiates the mannitol-fermenting Staphylococcus aure
 
 ### Compare and contrast fermentation and anaerobic respiration
 
-{{< sortbins question="Sort each fact about a final electron acceptor or an example microbe under the type of metabolism it describes." hint="Match the final electron acceptor and the example microbe named in the table above for each type of metabolism." >}}
+{{< sortbins question="Sort each fact about a final electron acceptor or an example microbe under the type of metabolism it describes." hint="Match the final electron acceptor and the example microbe named for each type in the table of types of metabolism above." >}}
 {"bins": ["Aerobic respiration", "Anaerobic respiration", "Fermentation"],
  "items": [
   {"label": "Final electron acceptor is O₂", "bin": 0},
@@ -299,7 +299,7 @@ mannitol fermentation differentiates the mannitol-fermenting Staphylococcus aure
 {{< multiplechoice
   question="Which statement correctly compares the maximum ATP yield of fermentation to that of anaerobic respiration?"
   answer="Fermentation yields far less ATP per glucose molecule (2) than anaerobic respiration (5–36)."
-  hint="Compare the Maximum Yield of ATP Molecules column of the table above for the fermentation row and the anaerobic respiration row."
+  hint="Compare the Maximum Yield of ATP Molecules column of the table of types of metabolism above for the fermentation row and the anaerobic respiration row."
 >}}
 Fermentation yields far less ATP per glucose molecule (2) than anaerobic respiration (5–36).
 Fermentation and anaerobic respiration yield the same maximum ATP per glucose molecule.
