@@ -52,7 +52,9 @@ or serve the site. Do not spawn sub-agents.**
 - Practice: every rendered exercise against its printed stem (data values,
   units, figures). Can the learner tell what to type — the unit, the place,
   the form? Is anything on screen a give-away: a Source note, a footer, a
-  hint, the item above?
+  hint, the item above? Where a hint sends the learner to a figure, look
+  at the figure as rendered: can the value be read off it (a scale, marked
+  where the answer falls)?
 - **The widgets' own words**: the typing guide under a formula or
   equation field, a field's placeholder, the message a wrong response
   gets. Each is the same on every item of the book, so read it against

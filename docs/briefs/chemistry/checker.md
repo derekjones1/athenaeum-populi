@@ -136,7 +136,13 @@ stem shows it.
   digits, the shape of the result, the observation a judgment turns on — it
   is a defect. So is a hint that points at a table or equation that is not
   on the page or does not hold what the learner needs, and a hint so
-  general it helps nobody where a real pointer exists. **A hint shared by
+  general it helps nobody where a real pointer exists. **For every hint
+  that names a figure, open the image** and confirm the value can be read
+  off it: the scale is there, it is marked where the answer falls, and its
+  unit is one the learner can use. No lint reads a picture: 6.1's hint sent
+  the wavelengths of red, green, and blue to a figure whose color strip
+  carries no wavelength marks, and the figure's description, which says
+  truthfully that it has a wavelength scale, could not show it. **A hint shared by
   several items is read against every one of them**, the module's named
   exceptions first (a metal-and-nonmetal test on a compound of polyatomic
   ions); on a two-option item a hint that says what one option was

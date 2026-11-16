@@ -4147,6 +4147,87 @@ was bound to a photograph before.
 **For the next run.** On a page with several tables, name the one a stem or
 hint means ("the table of … above"); "the table above" is the nearest one.
 
+## The chapter 5 and 6 lints (November 16, 2026)
+
+The thirteen checks chapters 5 and 6 left under "lints not yet written".
+Each was a defect a reader caught after every gate had passed its page. Ten
+became lints, one a reading, one a prep screen, and one the ledger fix above.
+
+**The plan was measured before it was written**, and three of its items
+changed for it: the ledger defect was eight items of 5.1, not nine (the
+ninth photograph binding is in 5.3); the Python prep tool has no numeric
+layer, so the screen went into `chemistry-shapes.mjs`; and the proposed
+dash pattern `[a-z]-(they|wavelengths)` fired five times on
+"half-wavelengths".
+
+**The ten lints** (Chemistry only, errors, in `lintLeaks`; the readings in
+`tools/lint/chemistry-readings.mjs`, `tools/lib/heat-ask.mjs`, and
+`tools/lib/item-units.mjs`, each tested on its own incident):
+
+| Rule | Corpus when it landed |
+|---|---|
+| a negative key under "how much heat is produced / released / evolved" | 0 hits (28 fill-ins with a heat verb read) |
+| a hint on such an item that writes a negative relation without "is the size of", or ends at a negative number | 0 hits |
+| an answer display whose unit is not the one the closing asks for | 246 closings, 230 read as a unit, 16 name none ("in the figure above", "an atom of cobalt–60"); 1 hit, fixed |
+| a colour keyed to light outside 380–750 nm | 2 colour keys read (656 nm red, 459 nm blue), 0 hits |
+| `$n$s`, `$(n - 1)$d`, `n\text{s}` | 0 hits |
+| a bare `f` or `i` subscript | 0 hits |
+| a hyphen for a dash (before a clause-opening word; in a unit range) | 0 hits |
+| "Table N.M", "Figure N.M" outside the footer and Source notes | 0 hits |
+| a figure description's configuration that miscounts its element | 124 read; 6.4's curium, passed because the Source note quotes it |
+| a rubric clause of three or more words in the footer or a Source note | 0 hits (two-word clauses: 8 hits, none a leak, so the floor is three) |
+
+**Changed on a page.**
+
+- 1.6, the cubit's length in feet: the answer display `1.5 ft/cubit` is now
+  `1.5 ft`, as its closing asks and as its sibling in meters shows; the
+  source's answer prints "0.46 m; 1.5 ft/cubit". Footer clause added; the
+  ledger record re-filed by hand (display only).
+- 7.6's footer named an item by its answer ("the bent-water answer's name
+  for the oxygen atom's nonbonding electrons"); it now says "the name the
+  answer on the shape of water gives …". Found by the measurement below,
+  not by a rule.
+
+**Measured and rejected: a plain word key in a footer or Source note.** 17
+distinct hits. Sixteen are a topic word ("the plasma torch"), a figure's
+name ("the seesaw figure's caption"), a table's title, or a name a stem
+prints ("aluminum fluoride trihydrate"); one was a leak (7.6, above). No
+narrowing separated them, so it is not a lint, and the open list says so.
+
+**Item 3 is a reading** (Derek's choice of three): a hint that sends the
+learner to a figure is checked against the image by the checker and the
+render reader. A lint reads text, and the figure's description said
+truthfully that it has a wavelength scale; the defect was that the color
+strip has no marks inside it. A declared-scale sentence with a lint, and a
+text lint on "the scale of", were the alternatives; the second would not
+have caught its own incident.
+
+**The run-facts screen** (`node tools/source/chemistry-shapes.mjs <chapter>
+--figures`, built by an Opus agent in its own files and read by the parent):
+one row per numeric source key with its figures, the fewest figures among
+the stem's data, its sign, and what the stem asks about heat; flags
+`figures`, `zeros`, `sign`. On chapter 5 it flags 12 of the 18 keys the
+history names as moved; the six it misses changed value at the same figure
+count or are table values under a stem with no data. Rows and flags:
+chapter 3, 101 rows and 2 flagged; chapter 4, 37 and 4; chapter 5, 60 and
+27. Chapter 4 under-reads: an answer that mixes an equation and a mass, and
+the second quantity of a sentence answer, get no row. Two things the agent
+added that the brief did not ask for, both kept: number keys inside
+sentence answers get a row (six of the moved keys, benzene's among them,
+are printed that way), and a change of temperature the stem prints counts
+as a datum.
+
+**Lessons.**
+
+- A proposed pattern is run on the book before it is planned around: two of
+  the thirteen descriptions were wrong in a way one command showed.
+- A rule that cannot catch its own incident is not written; say what reads
+  it instead.
+- When a reading is shared by a lint and a prep tool (`heatAsk`), it is one
+  module under `tools/lib`, and the agent that uses it is told not to edit
+  it: its report named a gap (a plain "q" in a source stem) and the parent
+  closed it.
+
 ## The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under

@@ -461,7 +461,9 @@ selfchecks, source defects, the footer — and each is stated once.
   depends on — never the example's result or the exercise's answer — and
   the source gates match such a stem (`withoutCrossReference`). A table of
   another section is named by its describing phrase and section, never by a
-  table number *(chapter 5)*.
+  table number *(chapter 5)*. "Table N.M" and "Figure N.M" are the source's
+  numbers and are refused everywhere but the footer and the Source notes
+  (lint).
 - **A reaction inline in BODY text too long for a phone's line is split
   after its arrow into two math spans**, as a stem's is (5.3's two
   formation equations made the page scroll sideways at 390 px), and **no
@@ -774,7 +776,18 @@ selfchecks, source defects, the footer — and each is stated once.
   heat, $q$, in kilojoules." so the stem says so. A source key that goes
   against its own question's words is a correction (5.3: −54.04 and −66.4
   under "produced" and "evolved"; +81 for an exothermic dissolution). A hint
-  on a "heat produced" item does not end at a negative number.
+  on a "heat produced" item does not end at a negative number, and one that
+  writes a relation with a negative side ($q_\text{rxn} = -q_\text{soln}$)
+  closes "the heat produced is the size of …". The lint refuses a negative
+  key on an amount and a hint that breaks either half
+  (`tools/lib/heat-ask.mjs` reads the question; the run facts' figure
+  screen reads the source's stems with it).
+- **A colour is keyed only to light the eye sees** (lint) *(chapter 6)*.
+  Where a stem states its light (a wavelength, a frequency, a photon's
+  energy) and that light falls outside the visible range, the answer is the
+  region it falls in, read from the page's own spectrum; a source answer
+  that names a colour there is a correction with a Source note (6.1's
+  cesium line, "red" at 869 nm).
 - **"One data set" covers every table of the book, not only the atomic
   masses** *(chapter 5)*: water's specific heat is the section table's
   4.184 J/g °C wherever a stem gives none (5.2's TNT exercise reaches the
@@ -807,7 +820,9 @@ selfchecks, source defects, the footer — and each is stated once.
   ledger says so.
 - **`answerDisplay`**: a count shows the bare digit, also where the source
   prints it with a label ("n = 4", "15 (5A)") *(chapter 6)*; a measured value shows
-  the value with its unit; a bare power-of-ten factor shows `$10^{-2}$`
+  the value with its unit, and that unit is the one the closing asks for,
+  written the same way (lint: "Enter … in feet." over a display of
+  ft/cubit, 1.6; "in cal/°C" over cal °C⁻¹, 5.1); a bare power-of-ten factor shows `$10^{-2}$`
   with no leading ×. It is math, so the house lint groups its digits
   ("Notation").
 
@@ -997,6 +1012,13 @@ after the rule was written, so the line is drawn by pairs:
   with an arithmetic imperative (multiply, divide, add, subtract, cube,
   square), and a verdict on the number's digits — on every auto-graded
   item. Everything else in the table is the checker's to read, key covered.
+- **A hint that sends the learner to a figure is checked against the
+  image, not its description** *(chapter 6; a reading, not a lint)*: the
+  checker and the render reader open the figure and confirm the value can
+  be read off it. 6.1's hint sent three wavelengths to a figure whose
+  color strip has no marks inside it; the figure's description says,
+  truthfully, that it has a wavelength scale, so no pattern over the text
+  can see the defect (Derek, November 16, 2026).
 
 ### Selfchecks
 
@@ -1072,7 +1094,9 @@ after the rule was written, so the line is drawn by pairs:
 - **A Source note beside an item the learner has not yet answered says
   THAT the source's answer differs, never what the corrected fact is** —
   it sits above the field, and the corrected value or name answers the
-  item *(chapter 7)*.
+  item *(chapter 7)*. The lint refuses a Source note, or a footer, that
+  repeats a clause of three or more words from a self-check's rubric
+  (6.1's footer said the cesium line fell "outside the visible range").
 - **A source key the arithmetic does not reach** is a suspected defect: the
   author transcribes the source key, reports it, and the parent rules. Once
   the CNXML, the PDF, and the computation are compared and the defect is
@@ -1204,10 +1228,15 @@ its own math span (`$\text{s}^{-1}$`, `$\text{m}^{-1}$`). Body display math
 keeps the source's form, and each change from the source's form is a
 footer clause *(chapter 6)*. **A subshell label with a variable shell
 number is one upright Unicode token**, n included: "ns", "(n − 1)d",
-"ns²np³" *(chapter 6)*. **"Wave–particle" takes an en dash**, and a
+"ns²np³" *(chapter 6; lint: `$n$s`, `$(n - 1)$d`, and `n\text{s}` in math
+are refused)*. **"Wave–particle" takes an en dash**, and a
 source hyphen that stands for a dash ("wave-they", "range-wavelengths") is
 set as the dash the house uses elsewhere on the page, with a footer clause
-*(chapter 6)*.
+*(chapter 6)*. The lint reads two shapes of it: a hyphen before a word that
+opens a clause and ends no compound (they, it, these, which, but, …), and a
+hyphen between the numbers of a range with a unit ("3 kHz-300 GHz"). A
+dash-hyphen before any other word ("range-wavelengths") reads as a compound
+to a pattern and stays with the reader.
 
 **In math** — every source `<equation>` that is mathematics, and any
 inline span that is — a formula is `\ce{…}`. (A source `<equation>` that
@@ -1227,7 +1256,9 @@ mhchem extension, so nothing is loaded:
 | `\begin{aligned} \ce{C(s) + O2(g) &-> CO2(g)} & \Delta H &= … \end{aligned}` | steps aligned at the arrow |
 
 - **Descriptive subscripts are upright**: `$E_\text{f}$`, `$n_\text{i}$`;
-  a subscript that is itself a variable stays italic *(chapter 6)*.
+  a subscript that is itself a variable stays italic *(chapter 6)*. The
+  lint refuses a bare `f` or `i` subscript (`E_f`, `n_{i}`), and passes
+  `_i` in a span that sums or multiplies over it (`\sum_i`).
 - **A formula set by hand in math is a lint error**: bare `H_2O` (math sets
   letters italic, as variables), `\text{H}_2\text{O}`, and `\mathrm{H_2O}`
   all render, and none matches the formulas mhchem sets beside it. The rule
@@ -1747,6 +1778,15 @@ books' analytic-primitive rule governs figures this project draws, and a
 Lewis structure redrawn by hand is a chance to move an electron pair,
 several hundred times over.
 
+**A configuration in a figure description holds its element's electrons**
+(lint) *(chapter 6)*: each one a description attaches to an element —
+"96 Cm 7s²5f⁹", "N, 1s²2s²2p³", "the symbol O and the configuration …" — is
+summed against the atomic number (an outer configuration on the noble gas
+below, an ion less its charge). Where the figure itself prints the
+miscount, the description says what the figure prints and a Source note on
+the page quotes the configuration (6.4's curium, 97 electrons for element
+96, which a count found at once and three readings had passed).
+
 **Three exceptions, each because the source's pixels print data this book
 has replaced** *(November 12–13, 2026)*:
 
@@ -2016,19 +2056,16 @@ What chapter 1 settled, and what the scan of the book counted, are in
   uncaptioned inline diagram cannot be set at text scale (the manifest's
   `scale` is the only size control); a rubric form for answers where any of
   many sets is right *(chapter 6)*;
-- lints not yet written *(chapter 6)*: a colour key whose wavelength is
-  outside the visible range; a footer phrase that names a key; a hint
-  naming a figure that lacks the scale it needs; each configuration in a
-  figure description summed against its atomic number; `\$n\$[spdf]`;
-  `_[fi]\b` italics; a dash-hyphen (`[a-z]-(they|wavelengths)`);
-- lints not yet written *(chapter 5)*: a negative key under "produced /
-  released / evolved"; "Table N.M" in a
-  stem; an `answerDisplay` unit that differs from the stem's "Enter … in"
-  unit; a hint whose signed equation disagrees with its key's sign; a
-  figure count on every numeric key at the run facts (an automatic screen);
-  and "the answer ledger binds an item to the nearest figure above it when
-  the stem says 'above' of a table or another figure" (nine items of 5.1
-  are bound to a photograph none of them uses);
+- what the lints of November 16, 2026 do not read (`docs/history/chemistry.md`,
+  "The chapter 5 and 6 lints"): a text-in's plain word key repeated in a
+  footer or a Source note (measured: 17 hits, 16 of them a topic word, a
+  figure's name, or a name a stem prints; rejected as a rule, so naming an
+  item by its key in a footer is still the checker's to catch); a hint whose
+  equation gives the wrong sign in a way no pattern shows ("the same heat as
+  in the example"); a dash-hyphen before an ordinary word; a figure that
+  lacks the scale a hint needs; a key the figure screen cannot see (a table
+  value under a stem with no data, an arithmetic slip at the right figure
+  count);
 - the kit reader's recommendations of November 14 that are not yet built:
   a `verify-section` mode that runs both source gates and the leak reading
   on one page; the fact half of the run facts and the PDF range scripted;

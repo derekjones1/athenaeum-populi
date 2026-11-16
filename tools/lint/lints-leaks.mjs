@@ -59,6 +59,28 @@
  *   - a unit set inside a stem's math after a power of ten,
  *     `$1.00 \times 10^{3}\ \text{kg}$` (Chemistry; an answer display is
  *     not a stem)
+ *
+ * Landed November 16, 2026: the checks chapters 5 and 6 left on the
+ * playbook's open list, each a defect a reader caught and no gate could
+ * (Chemistry; the readings are in chemistry-readings.mjs and tools/lib, the
+ * measurements in docs/history/chemistry.md, "The chapter 5 and 6 lints"):
+ *
+ *   - a negative key under "how much heat is produced / released / evolved"
+ *     (5.2's benzene, −39.0), and a hint on such an item that leads to a
+ *     negative number (0 hits: chapter 5's fix pass had cleared them)
+ *   - an answer display whose unit is not the unit the closing asks for (246
+ *     closings, 230 read; 1 hit, 1.6's "in feet" over ft/cubit, fixed)
+ *   - a colour keyed to light outside the visible range (6.1's cesium line)
+ *   - a subshell label with an italic shell number, `$n$s` (0 hits)
+ *   - a bare `f` or `i` subscript in math, `E_f` (0 hits)
+ *   - a hyphen where the source means a dash: before a word that opens a
+ *     clause, or between the numbers of a unit range (0 hits)
+ *   - "Table N.M" or "Figure N.M" outside the footer and Source notes (0 hits)
+ *   - a configuration in a figure description that does not hold its
+ *     element's electrons (124 read; 1 miscount, 6.4's curium, which is the
+ *     source figure's own and is quoted by the page's Source note)
+ *   - a rubric clause of three or more words repeated in the footer or a
+ *     Source note (0 hits; 6.1's footer had said "outside the visible range")
  */
 import { bookKeyOf, blankPreservingOffsets, maskCode, mathSpans, shortcodes, SHORTCODE_PARAMS } from '../lib/content.mjs';
 import { strictTextProblems } from '../lib/katex.mjs';
@@ -69,6 +91,12 @@ import { chemCanon, hasFractionalCoefficient, readSpecies } from '../../assets/j
 import { isConfiguration } from '../../assets/js/lib/text/check-config.mjs';
 import { isPossibleSet, isQuantumSet, readQuantum } from '../../assets/js/lib/text/check-quantum.mjs';
 import { chemSpans } from '../verify/verify-replay.mjs';
+import { amountHintProblem, heatAsk, isNegativeKey } from '../lib/heat-ask.mjs';
+import { askedUnit, shownUnit, showsAskedUnit } from '../lib/item-units.mjs';
+import { isWordRun, readWords } from '../lib/rubric-run.mjs';
+import {
+  colourOutsideVisible, dashHyphens, italicDescriptiveSubscripts, miscountedConfigurations, proseOnly, sourceNumberReferences, subshellLabelSlips,
+} from './chemistry-readings.mjs';
 
 /**
  * The list of members an ordering's stem prints in the key's order or its
@@ -1134,6 +1162,84 @@ export function lintLeaks(src, filename = '') {
   for (const { index, heading } of practicePeriodHeadings(text)) {
     err(index, `Practice heading \`### ${heading}\` ends with a period — the objectives callout keeps the source's period; the heading drops it`);
   }
+  // ---- Chemistry: the checks chapters 5 and 6 left open ----------------------
+  // Each was a defect a reader caught after every gate had passed the page
+  // (docs/subjects/chemistry.md listed them as "lints not yet written" until
+  // November 16, 2026). The readings and their incidents are in
+  // chemistry-readings.mjs, tools/lib/heat-ask.mjs, and tools/lib/item-units.mjs.
+  if (chemistry) {
+    for (const item of items) {
+      const question = String(item.params.question ?? '');
+      const where = labelOf(item.kind, item.params);
+      if (item.kind === 'fillin' && heatAsk(question) === 'amount') {
+        // 5.2's benzene item was keyed −39.0 from its source's "q_rx = −39.0 kJ".
+        if (isNegativeKey(item.params.answer)) {
+          err(item.index, `${where}: keyed ${item.params.answer}, a negative number, under a question that asks how much heat is produced, released, or evolved — the verb already says which way the heat goes, so the amount is positive; a signed key belongs to a stem that asks q, ΔH, or the heat involved (playbook "Numeric keys")`);
+        }
+        // Two positive items of 5.2 carried "q_reaction = −q_solution" in the
+        // hint: a learner who followed it typed −1.34 and was marked wrong.
+        const leads = amountHintProblem(item.params.hint);
+        if (leads) {
+          err(item.index, `${where}: the question asks an amount of heat, a positive number, and its hint leads to a negative one: ${leads} — close the hint with "the heat produced is the size of …", or name the heat balance without the signed equation`);
+        }
+      }
+      if (item.kind === 'fillin') {
+        const asked = askedUnit(question);
+        const shown = shownUnit(item.params.answerDisplay);
+        if (asked && shown && !showsAskedUnit(asked, shown)) {
+          err(item.index, `${where}: the closing asks for the answer in ${asked}, and the answer display shows ${shown} — the learner types a bare number, so the closing and the display name one unit, written one way`);
+        }
+      }
+      const key = item.kind === 'selfcheck' ? item.inner.split(/^[ \t]*===CHECKS===[ \t]*$/m)[0] : item.params.answer;
+      const colour = colourOutsideVisible(question, key);
+      if (colour) err(item.index, `${where}: ${colour} — the answer is the region the light falls in, read from the page's own spectrum; where the source's answer names a colour, that is a correction with a Source note`);
+    }
+    for (const hit of subshellLabelSlips(text)) {
+      err(hit.index, `\`${hit.written}\` sets the shell number italic and the subshell letter upright — a subshell label with a variable shell number is one upright token, n included: \`${hit.upright}\` (\`$n$\` alone, the quantum number, stays math)`);
+    }
+    for (const span of mathSpans(src, { maskCode: true })) {
+      const texStart = span.index + (span.display ? 2 : 1);
+      for (const hit of italicDescriptiveSubscripts(span.tex)) {
+        err(texStart + hit.index, `\`${hit.written}\` in \`$${span.tex.slice(0, 40)}$\` is an italic subscript — "final" and "initial" are words, and a descriptive subscript is upright: \`${hit.upright}\` (an index a sum runs over stays italic)`);
+      }
+    }
+    for (const hit of dashHyphens(proseOnly(text))) {
+      err(hit.index, `"${hit.written}" is the source's hyphen where it means a dash — write "${hit.dash}" (an em dash between clauses, an en dash in a range), and say so in the footer`);
+    }
+    for (const hit of sourceNumberReferences(text)) {
+      err(hit.index, `"${hit.written}" is the source's number, and the site numbers no table or figure — name it by what it shows and where it is ("the table of specific heats of common substances in Section 5.1")`);
+    }
+    const sourceNotes = [...text.matchAll(/\*Source note:\*[^\n]*|\*\(Source note:[\s\S]*?\)\*/g)];
+    const quoted = sourceNotes.map((note) => note[0]).join('\n');
+    for (const figure of shortcodes(text, 'mediafigure')) {
+      const description = [figure.params.alt, figure.params.longdesc, figure.inner].join('\n');
+      for (const hit of miscountedConfigurations(description, quoted)) {
+        const number = hit.number ? `, and ${hit.symbol} is element ${hit.number}` : '';
+        err(figure.index, `mediafigure: its description gives \`${hit.written}\`, which holds ${hit.counted} electrons where ${hit.symbol} has ${hit.expected}${number} — re-read the figure; if the figure itself prints it, a Source note on the page quotes the configuration and says what it should be`);
+      }
+    }
+    // The footer and the Source notes are read on the page the item is
+    // answered on. 6.1's footer said the cesium line fell "outside the
+    // visible range", which is a clause of that self-check's rubric. Three
+    // words or more: a two-word clause ("the volume", "no electrons") is in
+    // any sentence about its item (8 such hits measured, none a leak).
+    const clauses = items.filter((item) => item.kind === 'selfcheck' && item.closed).flatMap((item) => {
+      const rubric = item.inner.split(/^[ \t]*===CHECKS===[ \t]*$/m)[1] ?? '';
+      return rubric.split('\n').map((clause) => clause.trim()).filter((clause) => readWords(clause).length >= 3).map((clause) => ({ item, clause }));
+    });
+    const said = [
+      ...[...text.matchAll(/<small>[\s\S]*?<\/small>/g)].map((match) => ({ what: 'the footer', index: match.index, words: match[0] })),
+      ...sourceNotes.map((match) => ({ what: 'a Source note', index: match.index, words: match[0] })),
+    ];
+    for (const { what, index, words } of said) {
+      for (const { item, clause } of clauses) {
+        if (isWordRun(clause, words)) {
+          err(index, `${what} repeats ${JSON.stringify(clause)}, a point of the rubric of ${labelOf('selfcheck', item.params)} — it is read on the page the item is answered on; say THAT the answer differs from the source's, or where the item is, never what the answer is`);
+        }
+      }
+    }
+  }
+
   // ---- Chemistry: what only reading the pilot's six pages together found ----
   // Each page had passed its own author and checker; these four shapes were
   // legal on any one page and wrong across them (November 9, 2026).

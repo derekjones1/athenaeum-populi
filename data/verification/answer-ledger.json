@@ -31961,14 +31961,6 @@
     "result": "agrees"
    }
   },
-  "3effe2765ddd5428": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm311640624, second quantity (key 1.5 ft/cubit); computed 1.505 [Filed by the author under an earlier hash of this item; carried by the orchestrator after a round-3 edit that changed no key (a hint, a stem period, a datum added to a stem).] | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "3f06793962cbe0e1": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -102363,6 +102355,14 @@
   "cf1df7fb78b2131f": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "cf1eb2a4ff122bf3": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm311640624, second quantity (key 1.5 ft/cubit); computed 1.505 [Filed by the author under an earlier hash of this item; carried by the orchestrator after a round-3 edit that changed no key (a hint, a stem period, a datum added to a stem).] | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | display re-read 2026-11-16: the answer display's unit changed from ft/cubit to ft to match the closing; stem, key, form, and hint unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "cf257b34f79737b0": {
    "verdict": "ok"
