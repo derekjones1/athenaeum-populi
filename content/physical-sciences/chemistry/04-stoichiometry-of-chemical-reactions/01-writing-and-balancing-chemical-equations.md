@@ -338,7 +338,7 @@ $$\begin{aligned} &\ce{CO2(aq)} + \cancel{\ce{2Na+(aq)}} + \ce{2OH-(aq)} \\ &\qu
 
 ### Write and balance chemical equations in molecular, total ionic, and net ionic formats
 
-{{< selfcheck question="What does it mean to say an equation is balanced? Why is it important for an equation to be balanced?" hint="Reread the opening paragraph of the Balancing Equations section." >}}
+{{< selfcheck question="What does it mean to say an equation is balanced? Why is it important for an equation to be balanced?" hint="Reread the opening paragraph of the Balancing Equations subsection." >}}
 An equation is balanced when the same number of each element is represented on the reactant and product sides. Equations must be balanced to accurately reflect the law of conservation of matter.
 ===CHECKS===
 an equation is balanced when the same number of each element is represented on the reactant and product sides

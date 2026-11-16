@@ -24,7 +24,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { answerUnits, keyedUnits, listMembers, printedAbbreviations, twoUnitAnswer } from '../lib/keyed-units.mjs';
-import { ELEMENT_BY_NAME, answerEquations, judgeKeyedUnit, labelledFormulas, letteredSets } from '../verify/verify-source-keys.mjs';
+import { ELEMENT_BY_NAME, answerEquations, judgeKeyedUnit, labelledConfigurations, labelledFormulas, letteredSets } from '../verify/verify-source-keys.mjs';
 import { chemCanon } from '../../assets/js/lib/text/check-chem.mjs';
 import { CONFIGURATION_CLOSING, ORDERING_CLOSING, QUANTUM_CLOSING } from '../lint/lints-leaks.mjs';
 import { coverage, sourceExercises } from '../verify/verify-source-coverage.mjs';
@@ -105,6 +105,22 @@ const SYMBOL_NAME = new Map([...ELEMENT_BY_NAME].map(([name, symbol]) => [symbol
 function chapterSixItems(unit, answer, base, abbreviations) {
   const { shape, key } = shapeOf(answer, unit.stem);
   if (shape === 'ordering' && /</.test(answer)) return [{ ...base, question: closed(base.question, ORDERING_CLOSING), type: 'textin', answer, form: 'ordering' }];
+  // An ordering printed with commas (7.2's "H, C, N, O, F"): keyed with <, first to last.
+  if (shape === 'ordering') return [{ ...base, question: closed(base.question, ORDERING_CLOSING), type: 'textin', answer: answer.split(/,\s*|\s+and\s+/).map((member) => member.trim()).filter(Boolean).join(' < '), form: 'ordering' }];
+  // An atom's configuration and its ion's, or two ions' (7.1): one item each,
+  // closing with whose — "of the atom." / "of the ion.", or, for two ions of
+  // two elements, "of the potassium ion." — keyed as printed.
+  const configurations = shape === 'configuration' ? labelledConfigurations(answer) : [];
+  if (configurations.length) {
+    const symbols = new Set(configurations.map((entry) => entry.symbol).filter(Boolean));
+    const ions = configurations.every((entry) => entry.charged);
+    const whose = configurations.map((entry, index) => (ions && symbols.size === configurations.length
+      ? `${SYMBOL_NAME.get(entry.symbol)} ion`
+      : (entry.charged ?? (configurations.some((other) => other.charged) ? false : index > 0)) ? 'ion' : 'atom'));
+    if (new Set(whose).size === whose.length) {
+      return configurations.map((entry, index) => ({ ...base, question: closed(base.question, `Enter the electron configuration of the ${whose[index]}. ${CONFIGURATION_CLOSING}`), type: 'textin', answer: entry.printed, form: 'configuration' }));
+    }
+  }
   if (shape === 'subshell') return [{ ...base, type: 'textin', answer: answer.replace(/\s/g, ''), form: '' }];
   // A set of quantum numbers, keyed in the page's print ("4 0 0 +1/2"); one
   // per label where the answer prints one per orbital type (6.3).

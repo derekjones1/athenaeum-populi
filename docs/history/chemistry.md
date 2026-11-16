@@ -1521,6 +1521,15 @@ word for word as `run.md` had them.
 
 From `run.md`, "What a chapter cost".
 
+Chapter 7 (six sections, 163 items; wall time about nine hours across a
+usage-limit pause): authors 268k, 290k, 462k, 322k, 387k, and 384k tokens each
+across all rounds (7.1 to 7.6); checkers 186k, 205k, 204k, 158k, 187k, and 271k;
+claim pass 235k; second reader 134k; consistency reader 325k; fix checker 249k;
+the 7.3 alt verifier 172k; eight rendered-page readers between 140k and 172k
+each; blind solver 186k. Before and during the wave, the gates agent 674k (six
+rounds). Clerks: 63k (landing), 226k (run facts), 60k (pins), and the errata
+clerk.
+
 Chapter 6 (five sections, 96 items; wall time about seven hours of work across
 a usage-limit pause): authors 365k, 297k, 436k, 349k, and 334k tokens each
 across all rounds (6.1 to 6.5); checkers 208k, 153k, 250k, 197k, and 187k; claim
@@ -3674,6 +3683,281 @@ chosen over ClF₃, whose −104.5 is also the key of a Practice item.
 
 Chapter 7, after probing its configuration and ordering shapes.
 
+## Chapter 7 (November 15, 2026)
+
+One run, one session that paused once at a usage limit (the fix check and the
+7.3 alt verifier were cut off and resumed by message), from commit `7617fed4`:
+Sections 7.1 Ionic Bonding (m68737), 7.2 Covalent Bonding (m68738), 7.3 Lewis
+Symbols and Structures (m68739), 7.4 Formal Charges and Resonance (m68740), 7.5
+Strengths of Ionic and Covalent Bonds (m68741), 7.6 Molecular Structure and
+Polarity (m68742), and the landing (m68736). 163 auto-graded items (45, 22, 2,
+19, 13, and 62) and 95 self-checks (2, 3, 41, 16, 13, 20); 149 figures (2, 5,
+73, 30, 7, 32), 46 of the self-checks a drawing answer. Blind solve: 161
+agreed, none disagreed, and 2 were flagged as also defensible (7.2's two tied
+orderings, already taking both orders); adjudicated with the keys standing.
+Errata 3142–3176 (35). Key deviations (`DISCLOSED_DEVIATIONS`, chapter 7
+entries): three, two of kind `key` (7.6's SeF₄ geometry, erratum 3142, and 7.2's
+printed 17(e), erratum 3143) and one of kind `solution` (7.5's printed 75(d),
+erratum 3145). The other corrected model answers (3144, 3146, 3168, 3173) the
+gate reads as agreeing, and an unexercised entry fails. No key depends on an
+atomic mass, so the source-print register is unchanged. `baseline:update` moved
+`--min-confirmed` from 7546 to 7751 and `--min-covered` from 4645 to 4852.
+
+### Before the wave: the gates
+
+From the gates agent's report (`engine-report.md`, six rounds, all of them).
+The automatic probe of the chapter's shapes said 215 keyed units and no
+findings. The hand probe did what the automatic one cannot: one Author-kind
+agent built each of the parent's 24 shape decisions as the page would carry it,
+and the gates refused or did not hold eleven of them. They were taught in 16
+changes, each with a test and a corpus re-run. One result of chapters 1 to 6
+moved: 3.1's sucrose fill-in went from unmatched to confirmed (the Unicode
+formula in its question is now read through its plain form).
+
+Six of the parent's decisions changed on the agent's word, each a decision that
+broke a gate or a rule: D8 (the bonds of 7.2's printed 21 are written as the source's
+stem writes them, `HF or HCl`, not with dashes added), D16 (no separate
+sentence self-check for 7.4's printed 49, which binds to part (a) and fails),
+D17 (`last-digit:1`, because a value fetched from 7.5's own table is a table
+value), D20 (7.6's printed 91(b) is keyed as the source prints it, `trigonal
+bipyramid`, with the longer form accepted; no `answerDisplay` on a `textin`,
+which also changed D9), D2 (the closing is the playbook's "Enter the ion’s
+symbol."), and D22 (the closing
+self-check asks the lead-in alone). The forms and messages the rounds added:
+
+- **Round 1, the gates (16 changes).** Atom and ion configurations held each to
+  the one its closing names; a bare noble-gas core as a configuration key
+  (`[Ar]`); the charge printed only as a superscript; a comma ordering read as
+  `<`; a Unicode formula read through its plain form; a short Check Your
+  Learning plus its closing; formal-charge pairs (`H: 0`, `Cl 0`); two named
+  geometry values and the angle after a shape; yes/no parts listed by formula;
+  a list sorted by sentences; letters per category; a label before a drawing; a
+  lone letter under a superlative; and coverage's reading of a Check Your
+  Learning against an unkeyed twin.
+- **Round 2.** The formal-charge closing, word for word, as a lint; the
+  whole-number sign messages ("The size is right, but the sign is not."; a sign
+  typed last is `form`); a trailing angle dropped after a shape name.
+- **Round 3.** The ion message's example pair chosen to share no element with
+  the key (the checker's first defect: the grader printed the key as its own
+  example); "A charge carries its sign: type + or - after its number."; one
+  `accept` member on a configuration, the noble-gas core that is the whole key;
+  display math read as what it prints; ties in an ordering through `accept`.
+- **Round 4.** A charge typed on its own: "That is a charge on its own. An
+  ion’s symbol is the element’s symbol with the charge after it."
+- **Round 5.** Three lints now on: math text rendered with the build's strict
+  KaTeX setting (a `≡` inside `\text{}` passed `verify-section` and failed the
+  build), geometry pairs asked geometry first, and a footer that says "kept as
+  printed" with no Source note on the page. The playbook gained fourteen
+  Exercises rows and message rows, each dated chapter 7.
+- **Round 6.** The subsection lint, which reports a heading of the page called
+  "the … section".
+
+Two checks were measured and left unwritten: a self-check rubric clause that is
+not a run of its model answer's words (36 clauses in Chemistry and about 1,650
+in the life-sciences books, so it stays a list in "What is still open"), and a
+page's own heading called "the … section" as a standalone check (11 hits, folded
+into the Round 6 lint).
+
+### The parent's decisions before the wave
+
+From `run-facts.md`, G1–G6 and D1–D24. The chapter is one wave of six sections;
+no key depends on an atomic mass; 7.5's keys are sums of the section's own
+tables and Appendix G. The decisions that are new shapes: **paired
+configurations** (an atom's and its ion's, or two ions', each its own field,
+closing "of the atom" or "of the ion"); **bare-core keys** (`[Ar]`, `[Ne]`);
+**the first negative charge** (`-3`, signed, the sign first); **comma orderings
+keyed with `<`**; **formal-charge fill-ins** (one per element, closing word for
+word, most keyed 0); **two text fields for an electron-pair geometry and a
+molecular structure**; **one sort-into-bins** (7.2's eleven compounds); and
+**drawing self-checks** for every Lewis structure, each electron-counted against
+the species' valence electrons (G6).
+
+### What each reading found
+
+- **Checkers**, defects and concerns: 7.1 2 and 5, 7.2 5 and 8, 7.3 2 and 4, 7.4
+  none and 3, 7.5 3 and 6, 7.6 5 and 10. No wrong key. The chief ones: the
+  grader handing the learner its own key as an example (7.1); 17(e)'s key
+  against the page's own electronegativity figure and two keys tied in it (7.2);
+  "six steps" over a five-step list (7.3); two model answers whose source errors
+  stood with a footer clause and no Source note (7.5); PH₂⁻ against the book's
+  own table (7.6).
+- **Claim pass**: nine findings, F1–F9: the NaCl lattice energy, "conductors of
+  electricity and heat", noble-gas compounds "only under extreme conditions",
+  the 90 billion pounds, the C=N bond length, the "unpairing" explanations of
+  7.5's printed 75, OCS's electronegativities, PH₂⁻'s polar bonds, and "two
+  sets of unpaired electrons in water".
+- **Second reader**: six confirmed against opened sources (F1, F2, F4, F5, F7,
+  F8), and two evidence lines of the first reader corrected (the chlorine
+  electron affinity is printed as −348 in Chapter 6, and 496 is printed
+  nowhere in the book).
+- **Consistency reader**: fourteen findings, F1 to F14: keys that depend on 7.2's
+  electronegativity figure (the highest, and the one that set the ruling on
+  tables), the rulebook stale on `accept` for configurations and orderings, two
+  vocabularies for Lewis alts and sentences, 7.6's yes/no stem punctuation,
+  "section" against "subsection", how a page names its figures, geometry items,
+  author-derived working in a model answer, how a bond is written, Source note
+  and footer wording, formal charges, items another page answers, terms defined
+  twice, and small conventions.
+- **Rendered-page readers**: eight readers over 116 tiles. 7.6's two Check Your
+  Learning pairs asked the fields in the reverse order, and the lead-in
+  self-check of printed 97 had drifted under printed 99, so "the following"
+  named the wrong molecules and its answer contradicted three keys (both from
+  the parent's own checker-round rulings); 7.1's bare charge got no message
+  that said what was missing; 7.2's Check Your Learning rubric left out half of
+  what its question asks; 7.3's Cl₂BBCl₂ hint sent the learner to a procedure
+  that yields the wrong structure, and its third-period table shows twice;
+  7.4 and 7.5 found only cosmetic items.
+- **7.3 alt verifier**: 72 of 73 alts right after a rewrite done without
+  reopening the images; one fixed (Question18's "1 ethanol", the source prints
+  no coefficient). Every Lewis structure's electron count matched its species.
+- **Fix check**: 15 changes and 8 calls. The most serious: Source notes that
+  printed the corrected fact beside an unanswered self-check (75(c), 75(d),
+  printed 69, printed 85).
+- **Blind solver**: 161 agreed, 2 flagged. It also found a source misprint,
+  "for fluoride, CsF".
+
+### The rulings
+
+From `rulings.md`. The general ones: **G-a**, a heading of the same page is a
+"subsection", never a "section"; **G-b**, Lewis alts and the sentences under a
+drawing use the playbook's form (atoms named, "single-bonded", "lone pairs",
+"has"), and the same molecule on two pages is described the same way; **G-c**,
+a bond between two atoms is written with the en dash; **G-d**, a hint that
+needs electronegativities names the table and its section in words, with no
+link. The ones that settle a principle:
+
+- **A key that depends on a table of values is what the table gives through the
+  module's own rule.** 7.2's printed 17(e) is corrected (As 2.0 and H 2.1 in the
+  page's figure); the P/H ties accept both orders (`accept`, with a Source note
+  that names no atom); bromine is added to printed 19. The three provisional
+  rulings were confirmed by the consistency reading. PH₂⁻ is held as a
+  self-check, because a yes/no turns on the tie (the page's table gives P and H
+  one value) while the source's "yes" is right physically.
+- **A value no single source replaces is kept as printed with a Source note**:
+  NaCl's 769 kJ beside the cycle's about 787 kJ (7.1 and 7.5, the same wording
+  bar the cross-reference); C=N's 1.38 Å beside methanimine's 1.273 Å; the 90
+  billion pounds beside the 2019 figure.
+- **7.5's "unpairing" explanations of printed 75 are corrected** by the book's
+  own Section 6.5, with the rubric clauses to match.
+- The corrected sentences of 7.1 (electricity, not heat), 7.2 (xenon difluoride
+  exists), 7.3 ("five steps"), and 7.6 ("lone pairs" for water) each carry a
+  Source note and a footer clause.
+
+### What the process got wrong
+
+- Decision D21 said the source marks atoms in bold; the CNXML underlines them. A
+  decision about markup is checked against the CNXML.
+- Decision D22 printed the yes/no stem without its closing period, against the
+  playbook's "Stems"; twelve stems were written that way and corrected in the
+  rulings round.
+- Checker-round ruling 7 for 7.6 (move the field whose key the caption above
+  names) reversed two pairs of fields against every other pair on the page; two
+  rendered-page readers caught it.
+- The parent ruled an added sentence into the NF₃ model answer, then out of
+  printed 69's; the consistency reader set them side by side. The NF₃ sentence
+  stayed as a disclosed addition.
+- Source notes the parent's rulings worded printed the corrected fact beside the
+  unanswered item (75(c), 75(d), printed 69, printed 85); the fix check caught
+  all four.
+- The site build was first run after the checker rounds, and failed on a `≡`
+  inside `\text{}` that `verify-section` had passed; the tiles taken from that
+  failed build were retaken. A lint now renders math text with the build's
+  strict setting.
+- 7.3's 72 alts were rewritten to the house wording without the images being
+  reopened; a separate reader then read every one against its image.
+- A clerk reported the landing in 33 seconds; the parent read it on disk before
+  using it (it was right).
+
+### Outside sources opened
+
+Each saved under the scratchpad's `fetch/` and opened by the parent, the
+addresses as `second-reader.md` gives them: the NIST CCCBDB, experimental
+geometry of methanimine (rCN 1.273 Å) and the dipole moment of phosphine (0.58
+D); the USGS Minerals Yearbook 2019, sulfur chapter (26 million metric tons of
+sulfuric acid); PubChem's periodic table (electronegativities H 2.2, C 2.55, P
+2.19, S 2.58). For the lattice energy of NaCl only encyclopedia and open-textbook
+pages (786–787 kJ/mol by the cycle), which is why 769 kJ is kept with a note and
+not replaced.
+
+### Kept as printed
+
+From the "Reviewed and not errata (chapter 7)" block of
+`docs/openstax-errata.md`:
+
+- 7.1 exercise 9(e), "the monatomic ion found … containing the element: As": the
+  key is As³⁻, and exercise 7(l) twelve items earlier asks for As³⁺, so a learner
+  may carry the cation over; ruled to stand, no clarification added.
+- 7.1's "relatively low ionization potentials", "at least 14 elements
+  categorized as 'essential trace elements'", and "Most ionic solids, however,
+  dissolve readily in water".
+- 7.2's "most covalent compounds are insoluble in water … poor conductors", the
+  436 kJ/mol of the Morse graph, "calculated, not measured … scale 0 to 4", and
+  Pauling's fallout claim.
+- 7.6 printed 99, SeS₂ (Se 2.4, S 2.5): the key "yes" follows 7.6's own
+  definition and not 7.2's table of bond types.
+- 7.3 printed 29(d) ClNO's hint at "least electronegative element" (Cl and N
+  tie at 3.0).
+- 7.3's "hydrogen is almost never a central atom" against "H is never", the
+  hypervalence "empty d orbitals", BeH₂ and BF₃ as "central atoms with only two
+  and three valence electrons", "the other halogen molecules (F₂, Br₂, I₂, and
+  At₂)", and the Fullerene box's history.
+- 7.4's "the lowest number of atoms with nonzero formal charges (Guideline 2)",
+  "The number of atoms with formal charges are minimized", and Wheland's
+  rhinoceros analogy.
+- 7.5's printed 75(b) lattice energies of CaO and K₂O, "Ro … about 200 pm for
+  both", the AP table's Ca second ionization energy 1140 against 6.5's 1145.4,
+  "covalent single bonds typically 150–400 kJ/mol", and the lattice values for
+  LiF, MgO, MgF₂, and MgI₂.
+- 7.5's printed 75(b) stem and the body's MgO about 3900 kJ/mol, each nearly
+  answering a later item: no rule asks for a footer clause for a partial overlap.
+- 7.6's C₃H₆ exercise (printed 111, "a chain of three carbon atoms"), the AB₂
+  rubric, the Example 7.12 rubric, and the alanine rubric's three checked atoms.
+- 7.6's "Of all the noble gases, xenon is the most reactive", "Two of the top 50
+  chemicals produced in the United States", and the formaldehyde, NH₃, and H₂O
+  angles and lengths.
+- 7.6's raster "Cl" reading as "CI" in three figures, the two Link to Learning
+  boxes, the two structure tables kept as figures with extended descriptions,
+  and the underline of the propyne and allene answers.
+- The landing's C₆₀ caption (Fuller 1895–1983, "1985"): the claim pass found
+  nothing.
+
+### What typing the keys showed
+
+163 of 163 keys typed into the built pages grade correct. Of the second
+writings, five are refused, the comma-separated orderings of 7.2, each with "Put
+< between the symbols to show the order." The browser suite then found one row no reading had: the Hess's-law cycle in
+7.5's printed 69 self-check was 16 px wider than its card (503 against 487),
+and its rows were stacked by the parent, the record re-filed.
+
+### Next
+
+Chapter 8 (Advanced Theories of Covalent Bonding), which closes Knowledge Check
+block 3 (chapters 6–8); the check follows it. Chapter 8's answers are mostly
+drawings and orbital diagrams: probe its shapes before the wave.
+
+### For Derek
+
+1. NaCl's lattice energy is printed as the source's 769 kJ with a Source note
+   giving the cycle's about 787 kJ, not replaced
+   (`content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/01-ionic-bonding/`,
+   the paragraph after the photograph of sodium and chlorine; and 7.5, "Ionic
+   Bond Strength and Lattice Energy").
+2. PH₂⁻'s dipole-moment part is a self-check, not a yes/no, with a Source note
+   (7.6, Practice, after the XeF₂ item): the section's own table ties P and H,
+   and the source's "yes" is right physically.
+3. Answers that tell atoms apart by a marked symbol inside a formula are
+   self-checks (7.6 printed 105 (g) and (i); the alanine Check Your Learning),
+   not fields.
+4. Small Lewis drawings render at one and a half to two times their printed
+   size: the stylesheet's 26rem floor (`assets/css/custom.css`, about line 987)
+   keeps a narrow image from being scaled down. Two rendered-page readers noted
+   it (7.3's step drawings, 7.6's OCS); changing it would change every page of
+   the site.
+5. Thirteen formal-charge fields of 7.4 are keyed 0 (the source's exercises); the
+   page adds no item of its own with another value.
+6. The C₃H₆ self-checks (7.3 printed 41, 7.6 printed 111) carry the source's
+   chain; a ring answers the same data and no note says so.
+
 ## The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under
@@ -3708,3 +3992,9 @@ the ban, with its page and line. The ban is reviewed from this list.
   readable inline; left, since key equations are inline bullets. 6.1's second
   example, the nested factor (1 m over 10⁹ nm inside a fraction): reset with a
   slash inside the display. 6.2 to 6.5 reported none.
+- Chapter 7 reported one place. 7.5, the Key equations' inline lattice-energy
+  fraction `\frac{C(Z^+)(Z^-)}{R_\text{o}}` (line 238 of
+  `07-chemical-bonding-and-molecular-geometry/05-strengths-of-ionic-and-covalent-bonds.md`):
+  its charges shrink to script size; reported by the author, the checker, and
+  the rendered-page reader. The same fraction stands as a display equation at
+  line 170, where it is full size.

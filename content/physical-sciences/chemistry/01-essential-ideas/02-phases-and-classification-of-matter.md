@@ -285,7 +285,7 @@ would leave the container
 
 ### Classify matter as an element, compound, homogeneous mixture, or heterogeneous mixture with regard to its physical state and composition
 
-{{< selfcheck question="How does a homogeneous mixture differ from a pure substance? How are they similar?" hint="Reread the paragraph that opens the Classifying Matter section and the sports-drink paragraph, comparing what each says about composition." >}}
+{{< selfcheck question="How does a homogeneous mixture differ from a pure substance? How are they similar?" hint="Reread the paragraph that opens the Classifying Matter subsection and the sports-drink paragraph, comparing what each says about composition." >}}
 The mixture can have a variety of compositions; a pure substance has a definite composition. Both have the same composition from point to point.
 ===CHECKS===
 the mixture can have a variety of compositions
@@ -303,7 +303,7 @@ for each product, lists the ingredients that are pure compounds
 {{< multiplechoice
   question="Classify the following as an element, a compound, or a mixture: iron."
   answer="element"
-  hint="Work through the questions of the flow chart in the Classifying Matter section, starting from the first, and answer each one for this sample."
+  hint="Work through the questions of the flow chart in the Classifying Matter subsection, starting from the first, and answer each one for this sample."
 >}}
 element
 compound
@@ -313,7 +313,7 @@ mixture
 {{< multiplechoice
   question="Classify the following as an element, a compound, or a mixture: oxygen."
   answer="element"
-  hint="Work through the questions of the flow chart in the Classifying Matter section, starting from the first, and answer each one for this sample."
+  hint="Work through the questions of the flow chart in the Classifying Matter subsection, starting from the first, and answer each one for this sample."
 >}}
 element
 compound
@@ -323,7 +323,7 @@ mixture
 {{< multiplechoice
   question="Classify the following as an element, a compound, or a mixture: mercury oxide."
   answer="compound"
-  hint="Work through the questions of the flow chart in the Classifying Matter section, starting from the first, and answer each one for this sample."
+  hint="Work through the questions of the flow chart in the Classifying Matter subsection, starting from the first, and answer each one for this sample."
 >}}
 element
 compound
@@ -333,7 +333,7 @@ mixture
 {{< multiplechoice
   question="Classify the following as an element, a compound, or a mixture: pancake syrup."
   answer="mixture"
-  hint="Work through the questions of the flow chart in the Classifying Matter section, starting from the first, and answer each one for this sample."
+  hint="Work through the questions of the flow chart in the Classifying Matter subsection, starting from the first, and answer each one for this sample."
 >}}
 element
 compound
@@ -343,7 +343,7 @@ mixture
 {{< multiplechoice
   question="Classify the following as an element, a compound, or a mixture: carbon dioxide."
   answer="compound"
-  hint="Work through the questions of the flow chart in the Classifying Matter section, starting from the first, and answer each one for this sample."
+  hint="Work through the questions of the flow chart in the Classifying Matter subsection, starting from the first, and answer each one for this sample."
 >}}
 element
 compound
@@ -353,7 +353,7 @@ mixture
 {{< multiplechoice
   question="Classify the following as an element, a compound, or a mixture: a substance composed of molecules each of which contains one hydrogen atom and one chlorine atom."
   answer="compound"
-  hint="Work through the questions of the flow chart in the Classifying Matter section, starting from the first, and answer each one for this sample."
+  hint="Work through the questions of the flow chart in the Classifying Matter subsection, starting from the first, and answer each one for this sample."
 >}}
 element
 compound
@@ -363,7 +363,7 @@ mixture
 {{< multiplechoice
   question="Classify the following as an element, a compound, or a mixture: baking soda."
   answer="compound"
-  hint="Work through the questions of the flow chart in the Classifying Matter section, starting from the first, and answer each one for this sample."
+  hint="Work through the questions of the flow chart in the Classifying Matter subsection, starting from the first, and answer each one for this sample."
 >}}
 element
 compound
@@ -373,7 +373,7 @@ mixture
 {{< multiplechoice
   question="Classify the following as an element, a compound, or a mixture: baking powder."
   answer="mixture"
-  hint="Work through the questions of the flow chart in the Classifying Matter section, starting from the first, and answer each one for this sample."
+  hint="Work through the questions of the flow chart in the Classifying Matter subsection, starting from the first, and answer each one for this sample."
 >}}
 element
 compound

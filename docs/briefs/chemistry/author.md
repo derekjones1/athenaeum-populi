@@ -319,8 +319,9 @@ goes wrong.
   source order, then your added items (an added item goes above a keyed
   `selfcheck` whose model answer prints its key).
 - **Source notes and the footer never give a key away.** A Source note
-  beside an unanswered item prints no source value and no direction of the
-  error; the footer names a corrected value without giving it and names an
+  beside an unanswered item says THAT the source's answer differs, never
+  what the corrected fact is *(chapter 7)*, and prints no source value and
+  no direction of the error; the footer names a corrected value without giving it and names an
   added item by where its sentence is, never "(blank: …)" (lint) and never
   a quoted sentence that holds the answer.
 - **A display equation row fits the column** — about 60 rendered

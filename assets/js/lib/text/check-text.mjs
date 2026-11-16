@@ -275,8 +275,20 @@ const subshellTyped = (normalized) => {
 /** Said to a bare subshell letter ("p") against a key that is a subshell (Chemistry 2e 6.3). */
 export const SUBSHELL_LETTER_ONLY = 'Give the shell number with the letter.';
 
+/**
+ * A molecular shape's name (Chemistry 2e 7.6), the keys an angle may follow:
+ * the source prints "bent (109°)", "bent (<120°)", and a learner copying the
+ * book's print is right. Only against such a key, and only a parenthesis
+ * that holds a number and a degree sign, optionally after < or ≈.
+ */
+const SHAPE_NAME = /^(?:linear|bent|angular|trigonal planar|trigonal pyramidal|trigonal pyramid|tetrahedral|trigonal bipyramidal|trigonal bipyramid|seesaw|sawhorse|t shaped|square planar|square pyramidal|octahedral)$/;
+const ANGLE_AFTER = /\s*\(\s*[<≈]?\s*\d+(?:\.\d+)?\s*°\s*\)\s*$/;
+
 export function checkText(input, answer, { accept = '', form = '' } = {}) {
   if (form) return checkChem(input, answer, { accept, form }).status;
+  if (ANGLE_AFTER.test(String(input ?? '')) && acceptedForms(answer, accept).some((member) => SHAPE_NAME.test(member))) {
+    input = String(input).replace(ANGLE_AFTER, '');
+  }
   const normalized = normalizeText(input);
   if (!normalized) return 'empty';
   const forms = acceptedForms(answer, accept);

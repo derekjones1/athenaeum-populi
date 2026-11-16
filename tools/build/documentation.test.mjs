@@ -566,6 +566,8 @@ test('the chemistry subject playbook states the rules its engine enforces', asyn
     { shown: 'SO4', key: 'SO₄²⁻', form: 'formula', status: 'incorrect' },
     { shown: 'Se', key: 'Se²⁻', form: 'formula', status: 'incorrect' },
     { shown: 'NH4', key: 'NH₄⁺', form: 'formula', status: 'incorrect' },
+    // Chapter 7: the charge's size with no sign, and a charge with no symbol.
+    ...[['O2', 'O²⁻'], ['O^2', 'O²⁻'], ['Al3', 'Al³⁺'], ['SO42', 'SO₄²⁻'], ['3-', 'P³⁻'], ['-3', 'P³⁻'], ['+2', 'Mg²⁺']].map(([shown, key]) => ({ shown, key, form: 'formula', status: 'incorrect' })),
     { shown: 'Na', key: '²³₁₁Na', form: 'formula', status: 'incorrect' },
     { shown: 'Cs+', key: '¹³³Cs⁺', form: 'formula', status: 'incorrect' },
     ...['FeCl3.2H2O', 'FeCl3*2H2O', 'FeCl₃·2H₂O'].map((shown) => ({ shown, key: 'FeCl₃·2H₂O', form: 'formula', status: 'correct' })),
@@ -616,7 +618,7 @@ test('the chemistry subject playbook states the rules its engine enforces', asyn
   let shownRead = 0;
   for (const row of rows) {
     const [typedCell, , verdictCell] = row.split(/(?<!\\)\|/).slice(1, -1).map((cell) => cell.trim());
-    const shownHere = [...typedCell.matchAll(/(?<!for )`([^`]+)`/g)].map((m) => m[1]).filter((s) => /[A-Za-z]/.test(s));
+    const shownHere = [...typedCell.matchAll(/(?<!for )`([^`]+)`/g)].map((m) => m[1]).filter((s) => /[A-Za-z]/.test(s) || /^[+\-−]?\d+[+\-−]?$/.test(s));
     assert.ok(shownHere.length, `a table row shows a typed response: ${row.slice(0, 60)}`);
     for (const shown of shownHere) {
       const mine = cases.filter((c) => c.shown === shown);
@@ -1363,12 +1365,15 @@ test('the playbook\'s configuration and ordering table is what the grader does, 
   let typedRead = 0;
   for (const row of rows) {
     const [typedCell, againstCell, verdictCell, feedbackCell] = row.split(/(?<!\\)\|/).slice(1, -1).map((cell) => cell.trim());
-    const named = /^`([^`]+)`$/.exec(againstCell);
-    if (named) key = named[1];
+    // A key with an accept member names it: "`1s²` with `accept="[He]"`" (chapter 7).
+    const named = /^`([^`]+)`(?: with `accept="([^"]*)"`)?$/.exec(againstCell);
+    let accept = '';
+    if (named) [key, accept] = [named[1], named[2] ?? ''];
     else assert.equal(againstCell, 'the same key', row.slice(0, 60));
     const form = /[spdf][²⁶³⁰¹⁴⁵⁷⁸⁹]|\]/.test(key) ? 'configuration' : 'ordering';
+    if (accept) assert.equal(chemKeyProblem(key, form, accept), null, `the row's accept member is one the lint allows: ${accept}`);
     for (const [, typed] of typedCell.matchAll(/`([^`]+)`/g)) {
-      const verdict = checkChem(typed, key, { form });
+      const verdict = checkChem(typed, key, { form, accept });
       assert.equal(verdict.status, verdictCell, `${typed} against ${key}`);
       if (verdict.message) assert.ok(feedbackCell.includes(verdict.message.slice(0, 40)), `the row quotes the feedback for ${typed}: ${verdict.message}`);
       typedRead += 1;
@@ -1381,7 +1386,7 @@ test('the playbook\'s configuration and ordering table is what the grader does, 
   assert.ok(chemKeyProblem('1s2 2s2 2p6', 'configuration'), 'a key written in print');
   assert.ok(chemKeyProblem('1s²2s²2p⁸', 'configuration'), 'a subshell over its capacity');
   assert.ok(chemKeyProblem('Rb<Li', 'ordering'), 'an ordering written in print');
-  assert.ok(chemKeyProblem('Rb < Li', 'ordering', 'Li < Rb'), 'no accept list');
+  assert.ok(chemKeyProblem('Rb < Li', 'ordering', 'Li < Na'), 'an accept member is another order of the key\'s own members');
   // The last rule of "Formulas and equations" no longer lists them.
   const notRead = /\*\*Not read by these forms\*\*[^\n]*(?:\n {2}[^\n]*)*/.exec(chem)[0];
   assert.doesNotMatch(notRead.split('An electron configuration and an ordering have')[0], /electron configuration|ordering/);

@@ -7644,6 +7644,187 @@
       "status": "correct-local-source-defect",
       "errataEntry": 3135,
       "rationale": "The electron-affinity table gives Ca +150, Sr +160, and Ba +50 kJ/mol as calculated (endothermic) values; the NIST Chemistry WebBook gives measured values of −2, −5, and −14. The page keeps the figure and names the three in the Source note of erratum 3134, with the same footer clause. Found by the prose claim pass (F16), ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/01-ionic-bonding.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68737",
+      "sourceElementIds": [
+        "fs-idm91147568"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3150,
+      "rationale": "The paragraph calls dissolved or melted ionic compounds excellent conductors of electricity and heat because the ions move freely. Mobile ions account for electrical conduction only; the module's own chapter 10 (m68770) credits only electricity of molten or dissolved ionic solids, and the thermal conductivity of a sodium chloride melt is measured in Golyshev and Gonik (High Temperatures–High Pressures 33(6) 639–646, 2001). The page prints “excellent conductors of electricity”, with a visible Source note after the paragraph and a footer clause. Found by the 7.1 author and the prose claim pass (F2), read by the second reader, ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/01-ionic-bonding.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68737",
+      "sourceElementIds": [
+        "fs-idm8803008",
+        "fs-idm29135648"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3151,
+      "rationale": "The paragraph and equation give 769 kJ to dissociate a mole of NaCl; Section 7.5's thermochemical cycle with the book's own values (Appendix G: Na(g) 107.5, Cl(g) 121.3, NaCl(s) −411.2 kJ/mol; Section 6.5: Cl electron affinity −348; Na first ionization energy 496, not printed in 6.5) gives 788.0 kJ (782.0 with 6.5's figure value 490), and the experimental value on the outside pages the second reader opened is 786 to 787 kJ/mol (Wikipedia, Lattice energy; Born–Landé equation), against model values of 756 (Born–Landé) and 766.5 (a Born-Mayer calculation, LibreTexts 9.04). The page keeps 769 kJ, with a visible Source note after the equation (about 787 kJ from the cycle, Section 7.5 linked) and a footer clause. Found by the prose claim pass (F1), read by the second reader, ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/05-strengths-of-ionic-and-covalent-bonds.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68741",
+      "sourceElementIds": [
+        "fs-idm45000976"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3166,
+      "rationale": "The paragraph gives the lattice energy of sodium chloride as 769 kJ three times; the cycle the section describes gives about 787 kJ (as 3151). The page keeps 769 kJ, with a visible Source note after the paragraph in 7.1's words (the cycle described below) and a footer clause. Found by the prose claim pass (F1), ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/02-covalent-bonding.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68738",
+      "sourceElementIds": [
+        "fs-idm49461456"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3154,
+      "rationale": "The paragraph's closing parenthesis gives XeO₂ as a noble gas compound that “can only be formed under extreme conditions”; the book's own Section 18.13 (m68840) says xenon difluoride, XeF₂, forms on heating an excess of xenon with fluorine and cooling, as colorless crystals stable at room temperature in a dry atmosphere, Section 7.3 says xenon forms a number of stable compounds, and the book never mentions XeO₂. The page prints XeF₂ and “form only with very electronegative elements”, with a visible Source note after the periodic table (Section 18.13 named in plain text) and a footer clause. Found by the prose claim pass (F3), ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/02-covalent-bonding.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68738",
+      "sourceElementIds": [
+        "fs-idp31566784",
+        "fs-idm121823728"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3144,
+      "rationale": "The answer to the sulfur exercise omits bromine; the module's table gives Br 2.8 against S 2.5, so bromine leaves sulfur δ+ like N, O, F, and Cl. The page's model answer names Br, with a Source note after the block and a footer clause. Found by the 7.2 author, ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/03-lewis-symbols-and-structures.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68739",
+      "sourceElementIds": [
+        "fs-idm125111536"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3149,
+      "rationale": "Example 7.5's solution says the Lewis-structure procedure has “six steps”; the procedure (`fs-idp55317056`) has five, and the module's own passage on odd-electron molecules (`fs-idm51238992`) says “the same five steps”. The page prints “five steps”, with a Source note after the paragraph and a footer clause. Found by the 7.3 author and checker, ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/04-formal-charges-and-resonance.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68740",
+      "sourceElementIds": [
+        "fs-idp142093872"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3161,
+      "rationale": "The thiocyanate paragraph says the preferred structure puts the least electronegative atom in the center; the book's table of electronegativities (Section 7.2) gives carbon and sulfur the same value, 2.5, while on the Pauling scale to three figures carbon is slightly lower (2.55 against 2.58; PubChem's periodic table; Wikipedia's data page). The page keeps the words, with a visible Source note after the paragraph and a footer clause. Found by the 7.4 author and the prose claim pass (F7), ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/04-formal-charges-and-resonance.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68740",
+      "sourceElementIds": [
+        "fs-idp101954928"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3163,
+      "rationale": "The sulfuric acid exercise's stem says about 90 billion pounds are produced each year in the United States; the U.S. Geological Survey's Minerals Yearbook for 2019 (https://pubs.usgs.gov/myb/vol1/2019/myb1-2019-sulfur.pdf) reports 26 million metric tons produced in 2019, about 57 billion pounds. The page keeps the stem, with a visible Source note after the item citing the Yearbook and a footer clause. Found by the 7.4 author and the prose claim pass (F4), read by the second reader, ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/05-strengths-of-ionic-and-covalent-bonds.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68741",
+      "sourceElementIds": [
+        "fs-idm44464336"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3165,
+      "rationale": "The table of bond lengths gives C=N 1.38 Å, 0.05 Å below its own C–N single bond (1.43) while C=C and C=O drop 0.20 Å from theirs; NIST CCCBDB gives 1.273 Å for methanimine (https://cccbdb.nist.gov/expgeom2x.asp?casno=2053294&charge=0) and typical imines are 1.29 to 1.31 Å (Wikipedia, Imine). The page keeps the cell, with a visible Source note under the table and a footer clause. Found by the prose claim pass (F5), read by the second reader, ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/05-strengths-of-ionic-and-covalent-bonds.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68741",
+      "sourceElementIds": [
+        "fs-idm33428592",
+        "fs-idp71590928",
+        "fs-idp53734416",
+        "fs-idp27645248"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3147,
+      "rationale": "The example, its solution, and its Check Your Learning send the reader for bond energies to the table of average bond lengths and bond energies (`fs-idm44464336`, Table 7.3), which lists no H–H, C–H, or O–H bond; those are in the bond-energy table (`fs-idp13638832`, Table 7.2). The page names “the table of bond energies” in all three, with a Source note after the example's problem and a footer clause. Found by the 7.5 author, ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/05-strengths-of-ionic-and-covalent-bonds.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68741",
+      "sourceElementIds": [
+        "fs-idm85832672"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3146,
+      "rationale": "The first line of the HCl bond-energy sum prints +ΔH°f[HCl(g)] where the step above defines −ΔH°f[HCl(g)] and the next line applies −(−92.307 kJ) (431.6 kJ is right). The page's model answer prints the minus sign, with a Source note after the block and a footer clause. Found by the 7.5 author, ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/05-strengths-of-ionic-and-covalent-bonds.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68741",
+      "sourceElementIds": [
+        "fs-idp77726880"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3145,
+      "rationale": "The Mg and Al answer explains magnesium's higher first ionization energy by “the unpairing of the 2s electron”; the electron removed from magnesium is a 3s electron, and removing one electron of a pair removes the pair's repulsion and makes removal easier (Section 6.5, m68735), while an s electron is harder to remove than a p electron of the same shell. The page's model answer gives that reason, with a Source note after the block and a footer clause. Found by the 7.5 author and the prose claim pass (F6), ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/05-strengths-of-ionic-and-covalent-bonds.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68741",
+      "sourceElementIds": [
+        "fs-idp77726880"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3168,
+      "rationale": "The Ca and K answer explains their ionization energies partly by “the extra energy required to break the pairing of the electrons” and “energy is required to unpair two electrons in a full orbital”, the reverse of Section 6.5's account (removing one electron of a pair removes the repulsion and makes removal easier); the reasons are the nuclear charge (K 419, Ca 590 in the page's table) and the lower energy level (3p) from which K's second electron is removed. The page's model answer gives only the reasons Section 6.5 gives, with a Source note after the block and a footer clause. Found by the prose claim pass (F6), ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/06-molecular-structure-and-polarity.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68742",
+      "sourceElementIds": [
+        "fs-idp225382864"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3172,
+      "rationale": "The OCS paragraph says S is slightly more electronegative than C; the book's table of electronegativities (Section 7.2) gives both 2.5, though on the Pauling scale to three figures sulfur is slightly higher (2.58 against 2.55; PubChem's periodic table; Wikipedia's data page). The page keeps the words, with a visible Source note after the paragraph and a footer clause. Found by the prose claim pass (F7), ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/06-molecular-structure-and-polarity.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68742",
+      "sourceElementIds": [
+        "fs-idp56108944"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3173,
+      "rationale": "The answer to the HOH and HBeH exercise calls the two sets of nonbonding electrons on oxygen “two sets of unpaired electrons”; they are lone pairs (the book's key term, Section 7.3), and water has no unpaired electron. The page's model answer and rubric say “two lone pairs of electrons”, with a Source note after the block and a footer clause. Found by the 7.6 author and the prose claim pass (F9), ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/06-molecular-structure-and-polarity.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68742",
+      "sourceElementIds": [
+        "fs-idp118872384"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3174,
+      "rationale": "The polar-bonds answer says all the molecules and ions contain polar bonds and that PH₂⁻ has a dipole moment; the book's table gives P and H the same electronegativity (2.1), so the section's two conditions do not decide PH₂⁻, while the dipole moment of phosphine, 0.58 D (NIST CCCBDB; Wikipedia, Phosphine), shows the source's “yes” is physically right. The page keeps the answer, holds the PH₂⁻ part as a self-check, and adds a Source note after it and after the lead-in self-check, with a footer clause each. Found by the 7.6 author and the prose claim pass (F8), read by the second reader, ruled by the orchestrator, November 15, 2026."
     }
   ]
 }

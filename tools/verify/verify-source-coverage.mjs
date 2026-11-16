@@ -684,6 +684,14 @@ export function scoreItem(unit, item) {
     const { score } = reading;
     return score > 0 ? { score, how: score === 1 ? 'part' : 'part-restated', tie: readingRank(reading) } : { score: 0, how: null, tie: 0 };
   }
+  // One member of an unlettered list asked as a multiple choice (6.5's yes
+  // or no; 7.1's categories, the member after the question's last colon):
+  // the member printed under the exercise's lead-in is this exercise's,
+  // whatever an unkeyed twin's lettered part of the same symbol reads.
+  if (item.type === 'multiplechoice' && unit.partText === undefined) {
+    const reading = unitScore(unit, item.question, item);
+    if (reading.score === 1 && reading.exact > 0) return { score: 1, how: 'member', tie: readingRank(reading) };
+  }
   const stem = plain(unit.stem);
   const run = transcribed(unit.stem, item.text);
   const similar = item.question ? tokenSimilarity(unit.stem, item.question) : 0;
@@ -820,6 +828,18 @@ export function coverage(markdown, source, { listed = [], keyedOnly = false } = 
   for (const candidate of candidates.filter((entry) => entry.how === 'part' || entry.how === 'part-restated')) {
     keyedClaim.set(candidate.itemIndex, Math.max(keyedClaim.get(candidate.itemIndex) ?? 0, candidate.score));
   }
+  // …and the best ANY keyed unit reads it, which an unkeyed lettered part
+  // must beat: a whole exercise or Check Your Learning carried as several
+  // items owns one of them, and 7.6's hydronium Check Your Learning (two
+  // text-ins, the electron-pair geometry and the molecular structure) left
+  // the other unowned, printing the unkeyed twin's part "H₃O⁺" under a
+  // lead-in like the twin's — read as that part rendered. An unkeyed WHOLE
+  // exercise keeps the part-only claim: an even twin transcribed whole
+  // shares its ask sentence with the odd one (1.6) and must still be caught.
+  const anyKeyedClaim = new Map();
+  for (const candidate of candidates) {
+    anyKeyedClaim.set(candidate.itemIndex, Math.max(anyKeyedClaim.get(candidate.itemIndex) ?? 0, candidate.score));
+  }
   const unitTaken = new Map();
   const itemOwner = new Map();
   // A lettered part of a keyed-only book's exercise owns its item outright
@@ -873,8 +893,9 @@ export function coverage(markdown, source, { listed = [], keyedOnly = false } = 
       // is that part's: 4.3's (2) borrows the parts of the unkeyed (1) it refers to,
       // and carries each as two items (the moles, then the mass), the second
       // of which no unit owns — it is still (2)'s, not (1) rendered.
+      const claim = unit.partText !== undefined ? anyKeyedClaim : keyedClaim;
       const rendered = items.findIndex((item, itemIndex) => !itemOwner.has(itemIndex) && wholeStem(item) >= UNKEYED_RENDERED_FLOOR
-        && !(keyedClaim.get(itemIndex) >= wholeStem(item)));
+        && !(claim.get(itemIndex) >= wholeStem(item)));
       return rendered === -1
         ? { ...verdict, status: 'omitted', how: 'unkeyed' }
         : { ...verdict, status: 'unkeyed-rendered', how: 'item', line: items[rendered].line };

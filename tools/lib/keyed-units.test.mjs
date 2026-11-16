@@ -1385,3 +1385,298 @@ test('chapter 6\'s landed pages: a configuration part is not read as a whole exe
   assert.equal(colour(line('6.53', ''), 'The color of the line is blue.'), 'reworded');
   assert.equal(colour(line('6.53', ''), 'The color of the line is red.'), 'key-differs', 'the sibling\'s colour');
 });
+
+/* ---- chapter 7 (probed November 15, 2026, before the wave) ---------------- */
+
+const config7 = (spaced) => spaced.split(' ').map((token) => token.replace(/^(\d)([spdf])(\d+)$/, (_, n, l, count) => `${n}${em(l)}<sup>${count}</sup>`)).join('');
+const CH7 = cnxml(
+  example('k7', 'Potassium and magnesium are required in our diet. Write the electron configurations of the ions expected from these elements.', 'K<sup>+</sup>: [Ar], Mg<sup>2+</sup>: [Ne]')
+  + example('p7', 'Write the electron configurations of a phosphorus atom and its negative ion. Give the charge on the anion.', `P: [Ne]${config7('3s2 3p3')}; P<sup>3–</sup>: [Ne]${config7('3s2 3p6')}`)
+  + exercises(
+    exercise('a9', ['Write out the full electron configuration for each of the following atoms and for the monatomic ion found in binary ionic compounds containing the element:', '(a) Al', '(b) Br'],
+      `(a) ${config7('1s2 2s2 2p6 3s2 3p1')}; Al<sup>3+</sup>: ${config7('1s2 2s2 2p6')}; (b) ${config7('1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p5')}; ${config7('1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6')}`),
+  ),
+);
+
+test('chapter 7\'s configurations: an atom\'s and its ion\'s, two ions\' bare cores, each held to the one its closing names (7.1)', () => {
+  const units = keyedUnits(CH7);
+  const textin = (question, answer) => judgeKeyedUnit({ type: 'textin', question, answer, form: 'configuration' }, units)?.status;
+  const TYPE = 'Type each subshell followed by its number of electrons, with a space between subshells.';
+  const FULL = 'Write out the full electron configuration for the following atom and for the monatomic ion found in binary ionic compounds containing the element:';
+  const atom = (symbol) => `${FULL} ${symbol}. Enter the electron configuration of the atom. ${TYPE}`;
+  const ion = (symbol) => `${FULL} ${symbol}. Enter the electron configuration of the ion. ${TYPE}`;
+  // The ion labelled ("Al³⁺: …"): each item its own, the swapped pair refused.
+  assert.equal(textin(atom('Al'), '1s²2s²2p⁶3s²3p¹'), 'confirmed');
+  assert.equal(textin(ion('Al'), '1s²2s²2p⁶'), 'confirmed');
+  assert.equal(textin(ion('Al'), '1s²2s²2p⁶3s²3p¹'), 'key-differs', 'the atom\'s under the ion\'s closing');
+  assert.equal(textin(atom('Al'), '1s²2s²2p⁶'), 'key-differs', 'the ion\'s under the atom\'s closing');
+  // Neither labelled (bromine): the stem's order, the atom first.
+  assert.equal(textin(atom('Br'), '1s²2s²2p⁶3s²3p⁶3d¹⁰4s²4p⁵'), 'confirmed');
+  assert.equal(textin(ion('Br'), '1s²2s²2p⁶3s²3p⁶3d¹⁰4s²4p⁶'), 'confirmed');
+  assert.equal(textin(ion('Br'), '1s²2s²2p⁶3s²3p⁶3d¹⁰4s²4p⁵'), 'key-differs');
+  assert.equal(textin(`${FULL} Br. ${TYPE}`, '1s²2s²2p⁶3s²3p⁶3d¹⁰4s²4p⁵'), 'key-differs', 'a closing that names neither');
+  // Two ions, each a bare noble-gas core, told apart by the element the closing names.
+  const DIET = 'Potassium and magnesium are required in our diet. Write the electron configurations of the ions expected from these elements.';
+  assert.equal(textin(`${DIET} Enter the electron configuration of the potassium ion. ${TYPE}`, '[Ar]'), 'confirmed');
+  assert.equal(textin(`${DIET} Enter the electron configuration of the magnesium ion. ${TYPE}`, '[Ne]'), 'confirmed');
+  assert.equal(textin(`${DIET} Enter the electron configuration of the magnesium ion. ${TYPE}`, '[Ar]'), 'key-differs');
+  assert.equal(textin(`${DIET} Enter the electron configuration of the potassium ion. ${TYPE}`, '1s²2s²2p⁶3s²3p⁶'), 'key-differs', 'the expansion is right for a learner, not as the key');
+  // An atom and its ion, both labelled with one symbol: "atom" and "ion" decide, by name or not.
+  const P = 'Write the electron configurations of a phosphorus atom and its negative ion. Give the charge on the anion.';
+  assert.equal(textin(`${P} Enter the electron configuration of the atom. ${TYPE}`, '[Ne]3s²3p³'), 'confirmed');
+  assert.equal(textin(`${P} Enter the electron configuration of the phosphorus ion. ${TYPE}`, '[Ne]3s²3p⁶'), 'confirmed');
+  assert.equal(textin(`${P} Enter the electron configuration of the ion. ${TYPE}`, '[Ne]3s²3p³'), 'key-differs');
+});
+
+test('chapter 7\'s charge: a fill-in "Enter the charge …" is held to the ion\'s superscript the answer prints, sign-last (7.1)', () => {
+  const units = keyedUnits(CH7);
+  const fillin = (answer) => judgeKeyedUnit({ type: 'fillin', question: 'Write the electron configurations of a phosphorus atom and its negative ion. Give the charge on the anion. Enter the charge as a signed number, the sign first, as +1 or −1.', answer, form: 'whole-number' }, units)?.status;
+  assert.equal(fillin('-3'), 'confirmed');
+  assert.equal(fillin('3'), 'key-differs', 'the sign is the answer\'s');
+  assert.equal(fillin('-2'), 'key-differs');
+});
+
+const CH7_BONDS = cnxml(exercises(
+  exercise('o7', ['From their positions in the periodic table, arrange the atoms in each of the following series in order of increasing electronegativity:', '(a) C, F, H, N, O', '(b) Al, H, Na, O, P'], '(a) H, C, N, O, F; (b) Na, Al, H, P, O'),
+));
+
+test('chapter 7\'s ordering printed with commas is read as the ordering the page keys with < (7.2)', () => {
+  const units = keyedUnits(CH7_BONDS);
+  const ORDER = 'Type the symbols in the order you rank them, separated by <.';
+  const textin = (series, answer) => judgeKeyedUnit({ type: 'textin', question: `From their positions in the periodic table, arrange the atoms in the following series in order of increasing electronegativity: ${series}. ${ORDER}`, answer, form: 'ordering' }, units)?.status;
+  assert.equal(textin('C, F, H, N, O', 'H < C < N < O < F'), 'confirmed');
+  assert.equal(textin('C, F, H, N, O', 'F > O > N > C > H'), 'confirmed', 'the same order read from the other end');
+  assert.equal(textin('C, F, H, N, O', 'F < O < N < C < H'), 'key-differs', 'reversed');
+  assert.equal(textin('C, F, H, N, O', 'H < N < C < O < F'), 'key-differs', 'two members swapped');
+  assert.equal(textin('Al, H, Na, O, P', 'Na < Al < H < P < O'), 'confirmed');
+  assert.equal(textin('Al, H, Na, O, P', 'H < C < N < O < F'), 'key-differs', 'another part\'s ordering');
+});
+
+const CH7_FORMAL = cnxml(
+  example('fc1', 'Calculate the formal charge for each atom in the carbon monoxide molecule:', 'C −1, O +1')
+  + example('fc2', 'Determine the formal charge for each atom in NCl<sub>3</sub>.', 'N: 0; all three Cl atoms: 0')
+  + exercises(exercise('fc8', ['Determine the formal charge of each element in the following:', '(a) HCl', '(b) PCl<sub>3</sub>'], '(a) H: 0, Cl: 0; (b) P: 0, Cl 0')),
+);
+
+test('chapter 7\'s formal charges: a short Check Your Learning is read past its closing, and each fill-in is held to its element\'s number (7.4)', () => {
+  const units = keyedUnits(CH7_FORMAL);
+  const close = (symbol) => `Enter the formal charge of ${symbol} as a signed number, the sign first, as +2 or −2.`;
+  const fillin = (question, answer) => judgeKeyedUnit({ type: 'fillin', question, answer, form: 'whole-number' }, units);
+  // Nine words of stem and fourteen of closing: read without the closing, the item is its Check Your Learning.
+  const CO = 'Calculate the formal charge for each atom in the carbon monoxide molecule, shown in the figure above.';
+  assert.equal(fillin(`${CO} ${close('C')}`, '-1').exercise.id, 'fc1#check');
+  assert.equal(fillin(`${CO} ${close('C')}`, '-1').status, 'confirmed');
+  assert.equal(fillin(`${CO} ${close('O')}`, '1').status, 'confirmed');
+  assert.equal(fillin(`${CO} ${close('C')}`, '1').status, 'key-differs', 'O\'s charge under C\'s closing');
+  assert.equal(fillin(`${CO} ${close('O')}`, '-1').status, 'key-differs');
+  // "all three Cl atoms: 0" — the count is no charge.
+  const N = 'Determine the formal charge for each atom in NCl₃.';
+  assert.equal(fillin(`${N} ${close('Cl')}`, '0').status, 'confirmed');
+  assert.equal(fillin(`${N} ${close('Cl')}`, '3').status, 'key-differs');
+  // "H: 0, Cl: 0" and the source's "Cl 0" without its colon.
+  const part = (formula, symbol) => `Determine the formal charge of each element in the following: ${formula}. ${close(symbol)}`;
+  assert.equal(fillin(part('HCl', 'H'), '0').status, 'confirmed');
+  assert.equal(fillin(part('HCl', 'Cl'), '-1').status, 'key-differs');
+  assert.equal(fillin(part('PCl₃', 'Cl'), '0').status, 'confirmed');
+  assert.equal(fillin(part('PCl₃', 'P'), '1').status, 'key-differs');
+});
+
+const CH7_SHAPES = cnxml(
+  example('g3', 'The hydronium ion, H<sub>3</sub>O<sup>+</sup>, forms when acids are dissolved in water. Predict the electron-pair geometry and molecular structure of this cation.', 'electron pair geometry: tetrahedral; molecular structure: trigonal pyramidal')
+  + example('g4', 'Predict the electron pair geometry and molecular structure for molecules of XeF<sub>2</sub>.', 'The electron-pair geometry is trigonal bipyramidal. The molecular structure is linear.')
+  + exercises(
+    exercise('g7', ['Predict the electron pair geometry and the molecular structure of each of the following molecules or ions:', '(a) SF<sub>6</sub>', '(b) PCl<sub>5</sub>'], '(a) Both the electron geometry and the molecular structure are octahedral. (b) Both the electron geometry and the molecular structure are trigonal bipyramid.'),
+    exercise('g9', ['What are the electron-pair geometry and the molecular structure of each of the following molecules or ions?', '(a) ClF<sub>5</sub>', '(b) PH<sub>2</sub><sup>−</sup>'], '(a) electron-pair geometry: octahedral, molecular structure: square pyramidal; (b) electron-pair geometry: tetrahedral, molecular structure: bent (109°)'),
+    exercise('g21', ['Describe the molecular structure around the indicated atom or atoms:', '(a) the oxygen atom in hydrogen peroxide, HOOH', '(b) the oxygen atom in the OH group in nitric acid, HNO<sub>3</sub> [HONO<sub>2</sub>]'], '(a) bent (109°); (b) bent (&lt;120°)'),
+  ),
+);
+
+test('chapter 7\'s geometries: two names in one answer, each item held to the one its closing asks; an angle after a shape is no part of it (7.6)', () => {
+  const units = keyedUnits(CH7_SHAPES);
+  const textin = (question, answer) => judgeKeyedUnit({ type: 'textin', question, answer, form: '' }, units)?.status;
+  const EP = 'Enter the electron-pair geometry.';
+  const MS = 'Enter the molecular structure.';
+  const ask = (lead, part, closing) => `${lead} ${part}. ${closing}`;
+  const G9 = 'What are the electron-pair geometry and the molecular structure of the following molecule or ion?';
+  assert.equal(textin(ask(G9, 'ClF₅', EP), 'octahedral'), 'confirmed');
+  assert.equal(textin(ask(G9, 'ClF₅', MS), 'square pyramidal'), 'confirmed');
+  assert.equal(textin(ask(G9, 'ClF₅', EP), 'square pyramidal'), 'key-differs', 'swapped');
+  assert.equal(textin(ask(G9, 'ClF₅', MS), 'octahedral'), 'key-differs', 'swapped');
+  assert.equal(textin(ask(G9, 'PH₂⁻', MS), 'bent'), 'confirmed', '"bent (109°)" keyed bent');
+  // "…: X; …: Y" and two sentences, in a Check Your Learning.
+  const H3O = 'The hydronium ion, H₃O⁺, forms when acids are dissolved in water. Predict the electron-pair geometry and molecular structure of this cation.';
+  assert.equal(textin(`${H3O} ${MS}`, 'trigonal pyramidal'), 'confirmed');
+  assert.equal(textin(`${H3O} ${MS}`, 'tetrahedral'), 'key-differs');
+  const XE = 'Predict the electron pair geometry and molecular structure for molecules of XeF₂.';
+  assert.equal(textin(`${XE} ${EP}`, 'trigonal bipyramidal'), 'confirmed');
+  assert.equal(textin(`${XE} ${MS}`, 'linear'), 'confirmed');
+  assert.equal(textin(`${XE} ${EP}`, 'linear'), 'key-differs');
+  // "Both … are X": one value for both names.
+  const G7 = 'Predict the electron pair geometry and the molecular structure of the following molecule or ion:';
+  assert.equal(textin(ask(G7, 'SF₆', EP), 'octahedral'), 'confirmed');
+  assert.equal(textin(ask(G7, 'SF₆', MS), 'octahedral'), 'confirmed');
+  // The source's noun "trigonal bipyramid" is its key; the adjective is another key (a disclosed deviation, or the noun keyed).
+  assert.equal(textin(ask(G7, 'PCl₅', MS), 'trigonal bipyramid'), 'confirmed');
+  assert.equal(textin(ask(G7, 'PCl₅', MS), 'trigonal bipyramidal'), 'key-differs');
+  // A one-name answer with an angle after it.
+  const G21 = 'Describe the molecular structure around the indicated atom or atoms:';
+  assert.equal(textin(`${G21} the oxygen atom in hydrogen peroxide, HOOH. ${MS}`, 'bent'), 'confirmed');
+  assert.equal(textin(`${G21} the oxygen atom in the OH group in nitric acid, HNO₃ [HONO₂]. ${MS}`, 'bent'), 'confirmed', '"bent (<120°)"');
+  assert.equal(textin(`${G21} the oxygen atom in hydrogen peroxide, HOOH. ${MS}`, 'linear'), 'key-differs');
+});
+
+test('a Check Your Learning carried as two items keeps both from an unkeyed twin that prints its formula as a part (7.6, coverage)', () => {
+  const xml = cnxml(
+    example('h3', 'The hydronium ion, H<sub>3</sub>O<sup>+</sup>, forms when acids are dissolved in water. Predict the electron-pair geometry and molecular structure of this cation.', 'electron pair geometry: tetrahedral; molecular structure: trigonal pyramidal')
+    + exercises(exercise('t8', ['Predict the electron pair geometry and the molecular structure of each of the following ions:', '(a) H<sub>3</sub>O<sup>+</sup>', '(b) PCl<sub>4</sub><sup>−</sup>'], null)),
+  );
+  const ASK = 'The hydronium ion, H₃O⁺, forms when acids are dissolved in water. Predict the electron-pair geometry and molecular structure of this cation.';
+  const page = ['Enter the electron-pair geometry.', 'Enter the molecular structure.']
+    .map((closing, at) => `{{< textin question="${ASK} ${closing}" answer="${at ? 'trigonal pyramidal' : 'tetrahedral'}" hint="h" >}}\n`).join('\n');
+  const verdicts = coverage(page, sourceExercises(xml), { keyedOnly: true });
+  assert.deepEqual(verdicts.map((verdict) => [verdict.id, verdict.status]), [['t8(a)', 'omitted'], ['t8(b)', 'omitted'], ['h3#check', 'rendered']]);
+  // The twin's part transcribed is still caught.
+  const twin = '{{< textin question="Predict the electron pair geometry and the molecular structure of the following ion: H₃O⁺. Enter the molecular structure." answer="trigonal pyramidal" hint="h" >}}\n';
+  assert.equal(coverage(page + twin, sourceExercises(xml), { keyedOnly: true }).find((verdict) => verdict.id === 't8(a)').status, 'unkeyed-rendered');
+});
+
+test('chapter 7\'s parts asked yes or no, where the answer lists the ones that are by formula in a sentence (7.6)', () => {
+  const xml = cnxml(exercises(
+    exercise('d13', ['Which of the following molecules and ions contain polar bonds? Which of these molecules and ions have dipole moments?', '(a) ClF<sub>5</sub>', '(b) ClO<sub>2</sub><sup>−</sup>', '(c) TeCl<sub>4</sub><sup>2−</sup>', '(d) XeF<sub>2</sub>'],
+      'All of these molecules and ions contain polar bonds. Only ClF<sub>5</sub>, ClO<sub>2</sub><sup>−</sup>, and PCl<sub>3</sub> have dipole moments.'),
+    exercise('d15', ['Which of the following molecules have dipole moments?', '(a) CS<sub>2</sub>', '(b) SeS<sub>2</sub>', '(c) PCl<sub>3</sub> (P is the central atom)', '(d) ClNO (N is the central atom)'], 'SeS<sub>2</sub>, PCl<sub>3</sub>, and ClNO all have dipole moments.'),
+  ));
+  const units = keyedUnits(xml);
+  const mc = (question, answer) => judgeKeyedUnit({ type: 'multiplechoice', question, answer, options: ['yes', 'no'] }, units)?.status;
+  const Q = 'Does the following molecule or ion have a dipole moment?';
+  assert.equal(mc(`${Q} ClF₅`, 'yes'), 'confirmed');
+  assert.equal(mc(`${Q} ClO₂⁻`, 'yes'), 'confirmed');
+  assert.equal(mc(`${Q} TeCl₄²⁻`, 'no'), 'confirmed', 'every part has polar bonds; the dipole sentence is the one asked');
+  assert.equal(mc(`${Q} XeF₂`, 'yes'), 'key-differs');
+  assert.equal(mc(`${Q} ClF₅`, 'no'), 'key-differs');
+  assert.equal(mc('Does the following molecule have a dipole moment? CS₂', 'no'), 'confirmed');
+  assert.equal(mc('Does the following molecule have a dipole moment? PCl₃ (P is the central atom)', 'yes'), 'confirmed');
+  assert.equal(mc('Does the following molecule have a dipole moment? PCl₃ (P is the central atom)', 'no'), 'key-differs');
+});
+
+test('chapter 7\'s list sorted into the stem\'s categories by sentences, its category words the module\'s other names for the options (7.1)', async () => {
+  const { moduleAliases, printedGlosses } = await import('./keyed-units.mjs');
+  const xml = cnxml(
+    '<para>A cation (a positive ion) forms when a neutral atom loses one or more electrons from its valence shell, and an anion (a negative ion) forms when a neutral atom gains one or more electrons in its valence shell.</para>'
+    + exercises(exercise('s3', ['Which of the following atoms would be expected to form negative ions in binary ionic compounds and which would be expected to form positive ions: P, I, Mg, Cl, In, Cs, O, Pb, Co?'],
+      'P, I, Cl, and O would form anions because they are nonmetals. Mg, In, Cs, Pb, and Co would form cations because they are metals.')),
+  );
+  assert.deepEqual(printedGlosses(xml), [['cation', 'positive ion'], ['cations', 'positive ion'], ['anion', 'negative ion'], ['anions', 'negative ion']]);
+  const units = keyedUnits(xml);
+  const aliases = moduleAliases(xml);
+  const mc = (member, answer, withAliases = aliases) => judgeKeyedUnit({ type: 'multiplechoice', question: `Would the following atom be expected to form a negative ion or a positive ion in binary ionic compounds: ${member}?`, answer, options: ['negative ion', 'positive ion'] }, units, { aliases: withAliases })?.status;
+  assert.equal(mc('P', 'negative ion'), 'confirmed');
+  assert.equal(mc('Mg', 'positive ion'), 'confirmed');
+  assert.equal(mc('Co', 'positive ion'), 'confirmed');
+  assert.equal(mc('Co', 'negative ion'), 'key-differs');
+  assert.equal(mc('I', 'positive ion'), 'key-differs', 'the one-letter member read as a whole member, not a word');
+  assert.equal(mc('P', 'negative ion', []), 'prose-key', 'without the module\'s own pairs the category words name no option');
+});
+
+test('chapter 7\'s parts sorted by letter under the stem\'s categories: each part\'s answer is its category, and one sortbins is held to it (7.2)', async () => {
+  const { categoryLetterParts } = await import('./keyed-units.mjs');
+  assert.deepEqual([...categoryLetterParts('ionic: (b), (d), and (e); covalent: (a), (c)')], [['b', 'ionic'], ['d', 'ionic'], ['e', 'ionic'], ['a', 'covalent'], ['c', 'covalent']]);
+  assert.equal(categoryLetterParts('Oxidized: (a) Sn²⁺; (b) Hg'), null, 'values per part are roleFirstParts\' shape');
+  assert.equal(categoryLetterParts('ionic: (b); covalent: (b)'), null, 'a part in two categories');
+  const formulas = ['Cl<sub>2</sub>CO', 'MnO', 'NCl<sub>3</sub>', 'CoBr<sub>2</sub>', 'K<sub>2</sub>S', 'CO', 'CaF<sub>2</sub>', 'HI', 'CaO', 'IBr', 'CO<sub>2</sub>'];
+  const xml = cnxml(exercises(exercise('b3', ['Predict which of the following compounds are ionic and which are covalent, based on the location of their constituent atoms in the periodic table:', ...formulas.map((formula, at) => `(${'abcdefghijk'[at]}) ${formula}`)],
+    'ionic: (b), (d), (e), (g), and (i); covalent: (a), (c), (f), (h), (j), and (k)')));
+  const units = keyedUnits(xml);
+  assert.deepEqual(units.map((unit) => unit.answer), ['covalent', 'ionic', 'covalent', 'ionic', 'ionic', 'covalent', 'ionic', 'covalent', 'ionic', 'covalent', 'covalent']);
+  const labels = ['Cl₂CO', 'MnO', 'NCl₃', 'CoBr₂', 'K₂S', 'CO', 'CaF₂', 'HI', 'CaO', 'IBr', 'CO₂'];
+  const sort = (bins) => judgeKeyedSortbins({ type: 'sortbins', question: 'Predict which of the following compounds are ionic and which are covalent, based on the location of their constituent atoms in the periodic table. Sort the compounds into ionic and covalent.', bins: ['Ionic', 'Covalent'], items: labels.map((label, at) => ({ label, bin: bins[at] })) }, units).status;
+  assert.equal(sort([1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1]), 'confirmed');
+  assert.equal(sort([1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0]), 'key-differs', 'CO₂ sorted as ionic');
+  // …and each part's own multiple choice, where a page carries fewer than ten.
+  assert.equal(judgeKeyedUnit({ type: 'multiplechoice', question: 'Predict whether the following compound is ionic or covalent, based on the location of its constituent atoms in the periodic table: MnO.', answer: 'ionic', options: ['ionic', 'covalent'] }, units).status, 'confirmed');
+});
+
+test('chapter 7\'s drawings: a part\'s formula printed as its drawing\'s label is no word to carry; a Unicode formula reads as the source\'s spaced one (7.3)', () => {
+  const image = (name) => `<media alt="a structure"><image mime-type="image/jpg" src="../../media/${name}.jpg"/></media>`;
+  const xml = cnxml(exercises(
+    exercise('w6', ['Write Lewis structures for the following:', '(a) H<sub>2</sub>', '(b) HBr'], null),
+    exercise('w7', ['Write Lewis structures for the following:', '(a) O<sub>2</sub>', '(b) H<sub>2</sub>CO'], `(a) ${image('Q7a')} In this case, the Lewis structure is inadequate. (b) ${image('Q7b')}`),
+    exercise('w9', ['Write Lewis structures for the following:', '(a) SeF<sub>6</sub>', '(b) Cl<sub>2</sub>BBCl<sub>2</sub> (contains a B–B bond)'], `(a) SeF<sub>6</sub>: ${image('Q9a')} (b) Cl<sub>2</sub>BBCl<sub>2</sub>: ${image('Q9b')}`),
+  ));
+  const units = keyedUnits(xml);
+  const judge = (question, model, figures) => judgeKeyedUnit({ type: 'selfcheck', question, model, figures }, units);
+  // "H₂CO" is the keyed (b), not the unkeyed twin's "H₂" read as a prefix.
+  const h2co = judge('Write Lewis structures for the following: H₂CO.', 'Carbon is the central atom.', ['Q7b']);
+  assert.deepEqual([h2co.exercise.id, h2co.status], ['w7(b)', 'confirmed']);
+  assert.equal(judge('Write Lewis structures for the following: SeF₆.', 'Selenium is the central atom, bonded to six fluorine atoms.', ['Q9a']).status, 'confirmed', 'the label need not be repeated');
+  assert.equal(judge('Write Lewis structures for the following: Cl₂BBCl₂ (contains a B–B bond).', 'Each boron atom is bonded to the other and to two chlorine atoms.', ['Q9b']).status, 'confirmed');
+  assert.equal(judge('Write Lewis structures for the following: SeF₆.', 'Selenium is the central atom.', ['Q9b']).status, 'key-differs', 'a sibling\'s drawing');
+  // Words beside a drawing are still carried: (a)'s sentence.
+  assert.equal(judge('Write Lewis structures for the following: O₂.', 'The atoms share a double bond.', ['Q7a']).status, 'diverges');
+});
+
+test('chapter 7\'s pair of formulas with a reason: a formula option is not named by its pieces scattered through the reason (7.5)', () => {
+  const xml = cnxml(exercises(exercise('l18', ['Which compound in each of the following pairs has the larger lattice energy? Note: Ba<sup>2+</sup> and K<sup>+</sup> have similar radii; S<sup>2–</sup> and Cl<sup>–</sup> have similar radii. Explain your choices.', '(a) K<sub>2</sub>O or Na<sub>2</sub>O', '(b) K<sub>2</sub>S or BaS'],
+    '(a) Na<sub>2</sub>O; Na<sup>+</sup> has a smaller radius than K<sup>+</sup>; (b) BaS; Ba has a larger charge than K')));
+  const units = keyedUnits(xml);
+  const NOTE = 'Which compound in the following pair has the larger lattice energy? Note: Ba²⁺ and K⁺ have similar radii; S²⁻ and Cl⁻ have similar radii.';
+  const mc = (pair, answer) => judgeKeyedUnit({ type: 'multiplechoice', question: `${NOTE} ${pair.join(' or ')}`, answer, options: pair }, units)?.status;
+  assert.equal(mc(['K₂O', 'Na₂O'], 'Na₂O'), 'confirmed');
+  assert.equal(mc(['K₂O', 'Na₂O'], 'K₂O'), 'key-differs');
+  assert.equal(mc(['K₂S', 'BaS'], 'BaS'), 'confirmed');
+});
+
+test('chapter 7\'s lone letter under a lead-in that asks for the most or least is one closed choice; "Only (b)" stays yes or no (7.5)', () => {
+  const xml = cnxml(exercises(
+    exercise('q14', ['For which of the following substances is the least energy required to convert one mole of the solid into separate ions?', '(a) MgO', '(b) SrO', '(c) KF', '(d) CsF', '(e) MgF<sub>2</sub>'], '(d)'),
+    exercise('q15', ['Which of the following will increase the percent of ammonia?', '(a) Addition of HCl', '(b) Removal of heat'], 'Only (b)'),
+    exercise('q16', ['Which of the following lie within the band?', '(a) X', '(b) Y'], '(a)'),
+  ));
+  const units = keyedUnits(xml);
+  const closed = units.find((unit) => unit.group === 'q14');
+  assert.deepEqual([closed.chosen, closed.choices.length], ['d', 5]);
+  assert.equal(units.filter((unit) => unit.group === 'q15').length, 2, '"Only (b)": a yes or no per part');
+  assert.equal(units.filter((unit) => unit.group === 'q16').length, 2, 'a lone letter with no superlative: a yes or no per part');
+  const mc = (answer) => judgeKeyedUnit({ type: 'multiplechoice', question: 'For which of the following substances is the least energy required to convert one mole of the solid into separate ions?', answer, options: ['MgO', 'SrO', 'KF', 'CsF', 'MgF₂'] }, units)?.status;
+  assert.equal(mc('CsF'), 'confirmed');
+  assert.equal(mc('KF'), 'key-differs');
+});
+
+test('chapter 7\'s list member asked after a colon is its exercise\'s, not an unkeyed twin\'s lettered part of the same symbol (7.1, both gates)', () => {
+  const xml = cnxml(exercises(
+    exercise('s3', ['Which of the following atoms would be expected to form negative ions in binary ionic compounds and which would be expected to form positive ions: P, I, Mg, Cl, In, Cs, O, Pb, Co?'],
+      'P, I, Cl, and O would form anions because they are nonmetals. Mg, In, Cs, Pb, and Co would form cations because they are metals.'),
+    exercise('s6', ['Predict the charge on the monatomic ions formed from the following atoms in binary ionic compounds:', '(a) I', '(b) Sr', '(c) In'], null),
+  ));
+  const units = keyedUnits(xml);
+  const ask = (member) => `Would the following atom be expected to form a negative ion or a positive ion in binary ionic compounds: ${member}?`;
+  for (const member of ['In', 'I']) {
+    assert.equal(unitFor(ask(member), units, { type: 'multiplechoice', options: ['negative ion', 'positive ion'] }).id, 's3', member);
+  }
+  const page = ['P', 'I', 'In'].map((member) => `{{< multiplechoice question="${ask(member)}" answer="negative ion" hint="h" >}}\nnegative ion\npositive ion\n{{< /multiplechoice >}}\n`).join('\n');
+  const verdicts = coverage(page, sourceExercises(xml), { keyedOnly: true });
+  assert.deepEqual(verdicts.map((verdict) => verdict.status), ['rendered', 'omitted', 'omitted', 'omitted']);
+});
+
+test('chapter 7\'s shapes, as chemistry-shapes reads them: two ions\' bare cores, an atom and its ion, a comma-list ordering', () => {
+  assert.match(shapeOf('K^{+} : [Ar], Mg^{2+} : [Ne]').component, /per configuration \(2\), each closing with the atom or ion it asks/);
+  assert.equal(shapeOf('K^{+} : [Ar], Mg^{2+} : [Ne]').flag, undefined, 'a bare core reads; no unreadable-formula flag');
+  assert.match(shapeOf('1 s^{2} 2 s^{1} ; Li^{+} : 1 s^{2}').component, /per configuration \(2\)/);
+  const ordering = shapeOf('H, C, N, O, F', 'From their positions in the periodic table, arrange the atoms in each of the following series in order of increasing electronegativity: C, F, H, N, O');
+  assert.equal(ordering.shape, 'ordering');
+  assert.match(ordering.component, /key is written with <, first to last as printed\)$/);
+  assert.doesNotMatch(ordering.component, /does not yet read/);
+});
+
+test('a selfcheck whose model answer is the source\'s derivation set as display math is read as what the math prints (7.5)', async () => {
+  const { texAsText } = await import('./keyed-units.mjs');
+  assert.equal(texAsText('$$\\begin{array}{ll}\\ce{HCl(g) -> H(g) + Cl(g)} & \\Delta H^\\circ_{\\text{f}} \\\\[4pt] \\hline x\\end{array}$$').replace(/\s+/g, ' ').trim(), 'HCl(g) ⟶ H(g) + Cl(g) Δ H°  f x'.replace(/\s+/g, ' '));
+  const xml = cnxml(exercises(exercise('b6', ['Using the standard enthalpy of formation data in Appendix G, show how the standard enthalpy of formation of HCl(<emphasis effect="italics">g</emphasis>) can be used to determine the bond energy.'],
+    'HCl(<emphasis effect="italics">g</emphasis>) ⟶ H(<emphasis effect="italics">g</emphasis>) + Cl(<emphasis effect="italics">g</emphasis>) Δ<emphasis effect="italics">H</emphasis>° = −(−92.307 kJ) + 217.97 kJ + 121.3 kJ = 431.6 kJ')));
+  const units = keyedUnits(xml);
+  const QUESTION = 'Using the standard enthalpy of formation data in Appendix G, show how the standard enthalpy of formation of HCl(*g*) can be used to determine the bond energy.';
+  const MATH = '$$\\begin{array}{ll}\n\\ce{HCl(g) -> H(g) + Cl(g)} & \\Delta H^\\circ = -(-92.307\\ \\text{kJ}) + 217.97\\ \\text{kJ} + 121.3\\ \\text{kJ} \\\\[4pt] \\hline\n & = 431.6\\ \\text{kJ}\n\\end{array}$$';
+  const judge = (model) => judgeKeyedUnit({ type: 'selfcheck', question: QUESTION, model, figures: [] }, units).status;
+  assert.equal(judge(MATH), 'verbatim', 'the layout words (begin, array, hline, text, circ) are no words of the answer');
+  assert.equal(judge(`${MATH}\n\nThe formation reaction is reversed and added to the formation reactions of the atoms; the sum breaks the bond, so its enthalpy change is the bond energy of HCl.`), 'diverges', 'a sentence the source does not print still diverges');
+});

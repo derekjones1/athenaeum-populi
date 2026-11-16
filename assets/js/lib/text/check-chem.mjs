@@ -319,10 +319,41 @@ const flatLetters = (text) => prepare(text).replace(/[\s_^()[\]·.]/g, '').toLow
 export const MULTIPLIED_FORMULA = 'That has the right elements in the right ratio, with every count multiplied up. Write the formula with the smallest whole numbers of atoms in that ratio.';
 
 /** @returns {{ status: 'empty'|'correct'|'form'|'incorrect', message?: string }} */
+/**
+ * The examples an ion's charge message gives — a cation and an anion — chosen
+ * so that neither is the item's key nor shares an element with it: "as in
+ * Ca2+ or Cl-" was said to a bare "Cl" against the key Cl⁻ (Chemistry 7.1).
+ */
+const ION_EXAMPLES = Object.freeze([['Ca2+', 'Cl-', ['Ca', 'Cl']], ['Mg2+', 'F-', ['Mg', 'F']], ['Na+', 'Br-', ['Na', 'Br']], ['K+', 'I-', ['K', 'I']]]);
+export const ION_CHARGE_MESSAGE = 'An ion’s symbol ends with its charge: type it after the symbol, as in <cation> or <anion>.';
+export const BARE_CHARGE_MESSAGE = 'That is a charge on its own. An ion’s symbol is the element’s symbol with the charge after it.';
+export const UNSIGNED_CHARGE_MESSAGE = 'A charge carries its sign: type + or - after its number.';
+/** The ion-charge sentence with examples that share no element with any key reading. */
+export function ionChargeMessage(keyReadings) {
+  const used = new Set(keyReadings.flatMap((key) => Object.keys(key.atoms)));
+  const [cation, anion] = ION_EXAMPLES.find(([, , elements]) => elements.every((element) => !used.has(element))) ?? ION_EXAMPLES[ION_EXAMPLES.length - 1];
+  return ION_CHARGE_MESSAGE.replace('<cation>', cation).replace('<anion>', anion);
+}
+/** Whether a response is a charged key's atoms followed by the charge's size with no sign ("O2" for O²⁻). */
+function unsignedCharge(input, keyReadings) {
+  const typed = String(input ?? '').normalize('NFKC').replace(/[\s^_]/g, '');
+  return keyReadings.some((key) => key.charge && key.mass === null && typed === `${key.canon.split('^')[0]}${Math.abs(key.charge)}`);
+}
+
 export function checkFormula(input, answer, { accept = '' } = {}) {
   if (!String(input ?? '').trim()) return { status: 'empty' };
   const keys = [answer, ...String(accept || '').split('|')].map((member) => member.trim()).filter(Boolean);
   const keyReadings = keys.flatMap((member) => readSpecies(member).slice(0, 1));
+  // The key's atoms followed by its charge's size with no sign — "O2" for
+  // O²⁻, "Al3" or "Al^3" for Al³⁺ (Chemistry 7.1's checker): read as O₂, or
+  // as nothing, it was a bare "incorrect". Said what is missing, never which sign.
+  if (unsignedCharge(input, keyReadings)) return { status: 'incorrect', message: UNSIGNED_CHARGE_MESSAGE };
+  // A charge typed alone — "3-", "-3", "2+", "+2", "3−" — against an ion's
+  // symbol (7.1: "Predict the charge … Enter the ion’s symbol."): told the
+  // symbol is missing, never which element or charge.
+  if (/^\s*[+\-−–]?\s*\d*\s*[+\-−–]?\s*$/.test(String(input ?? '')) && /[+\-−–]/.test(String(input)) && keyReadings.some((key) => key.charge)) {
+    return { status: 'incorrect', message: BARE_CHARGE_MESSAGE };
+  }
   const readings = readSpecies(input);
   if (!readings.length) {
     if (keys.some((member) => flatLetters(member) === flatLetters(input))) {
@@ -354,8 +385,9 @@ export function checkFormula(input, answer, { accept = '' } = {}) {
     return { status: 'incorrect', message: 'A symbol for one isotope carries its mass number: type it before the symbol, as in 14C.' };
   }
   if (bare((reading, key) => Boolean(key.charge) && !reading.charge && (key.mass === null) === (reading.mass === null))) {
-    return { status: 'incorrect', message: 'An ion’s symbol ends with its charge: type it after the symbol, as in Ca2+ or Cl-.' };
+    return { status: 'incorrect', message: ionChargeMessage(keyReadings) };
   }
+
   // Every count a whole-number multiple of the key's, the key itself the
   // simplest ratio: a molecular formula typed where the empirical formula is
   // asked (C2H2 for CH on Chemistry 2.4), or an ionic formula not reduced
@@ -875,6 +907,37 @@ function previewOrdering(input) {
 }
 
 /** Why an ordering KEY cannot be graded, or null (the lint). */
+/**
+ * Why `member` cannot be an `accept` member of a configuration key, or
+ * null: only the noble-gas core, alone and in brackets, whose electrons ARE
+ * the key's — `[He]` beside `1s²` (7.1: an ion with no valence shell left,
+ * printed in full where its siblings print a core). Anything else a
+ * configuration field already folds, or is another answer.
+ */
+function configurationAcceptProblem(member, answer) {
+  const core = /^\[(He|Ne|Ar|Kr|Xe|Rn)\]$/.exec(member);
+  if (!core) return `a configuration's accept member is only the noble-gas core that is the whole key, in brackets ([He] beside 1s²); ${JSON.stringify(member)} is not one — the order of the subshells is already free`;
+  if (/^\[/.test(String(answer).trim())) return `the key ${JSON.stringify(answer)} already prints a core, which the field takes with its expansion`;
+  if (checkConfiguration(member, answer).status !== 'form') return `${JSON.stringify(member)} is not the key's configuration: its electrons are not ${JSON.stringify(answer)}'s`;
+  return null;
+}
+
+/**
+ * Why `member` cannot be an `accept` member of an ordering key, or null:
+ * another full ordering of the same members, written in print with " < " —
+ * where the page's own data tie two members (7.2: H and P both 2.1 in the
+ * electronegativity figure), so both orders are right. The source gate still
+ * holds `answer` to the source's order.
+ */
+function orderingAcceptProblem(member, answer) {
+  const own = orderingKeyProblem(member);
+  if (own) return `accept member: ${own}`;
+  const set = (text) => orderingKey(text).map((entry) => entry.canon).sort().join(' ');
+  if (set(member) !== set(answer)) return `the accept member ${JSON.stringify(member)} does not list exactly the key's members`;
+  if (orderingKey(member).map((entry) => entry.canon).join(' ') === orderingKey(answer).map((entry) => entry.canon).join(' ')) return `the accept member ${JSON.stringify(member)} is the key itself`;
+  return null;
+}
+
 function orderingKeyProblem(answer) {
   const text = String(answer ?? '').trim();
   if (/>/.test(text) || !/</.test(text)) return `${JSON.stringify(answer)} is not written in print — members from first to last, separated by " < "`;
@@ -907,8 +970,19 @@ const withoutClosingPunctuation = (input) => String(input ?? '').replace(/[\s.,;
 /** Grade a response under a chemistry form. */
 export function checkChem(input, answer, { accept = '', form } = {}) {
   const typed = withoutClosingPunctuation(input);
-  if (form === 'configuration') return checkConfiguration(typed, answer);
-  if (form === 'ordering') return checkOrdering(typed, answer);
+  // A configuration or an ordering takes an `accept` member only in two
+  // narrow shapes (chemKeyProblem): the noble-gas core that IS the whole key
+  // (7.1's Li⁺ and Be²⁺, keyed 1s² as printed, beside sibling ions keyed with
+  // a core), and another full ordering of the key's members where the page's
+  // data tie (7.2: H and P both 2.1). A member graded correct makes the
+  // response correct; otherwise the key's own verdict and message stand.
+  if (form === 'configuration' || form === 'ordering') {
+    const check = form === 'configuration' ? checkConfiguration : checkOrdering;
+    const verdict = check(typed, answer);
+    if (verdict.status === 'correct' || verdict.status === 'empty') return verdict;
+    const members = String(accept || '').split('|').map((member) => member.trim()).filter(Boolean);
+    return members.some((member) => check(typed, member).status === 'correct') ? { status: 'correct' } : verdict;
+  }
   if (form === 'quantum-numbers') return checkQuantum(typed, answer);
   return form === 'equation' ? checkEquation(typed, answer) : checkFormula(typed, answer, { accept });
 }
@@ -941,8 +1015,13 @@ const gcd = (a, b) => (b ? gcd(b, a % b) : a);
 export function chemKeyProblem(answer, form, accept = '', { written = true } = {}) {
   if (!CHEM_FORMS.includes(form)) return `answerForm "${form}" is not a text form — use ${CHEM_FORMS.map((f) => `"${f}"`).join(', ').replace(/, (?=[^,]*$)/, ', or ')}`;
   if (form === 'configuration' || form === 'ordering') {
-    if (accept) return `a${form === 'ordering' ? 'n ordering' : ' configuration'} takes no accept list: ${form === 'ordering' ? 'the direction and the writing of each member are already free' : 'the order of the subshells and a noble-gas core are already free'}`;
-    return form === 'configuration' ? configurationKeyProblem(answer) : orderingKeyProblem(answer);
+    const own = form === 'configuration' ? configurationKeyProblem(answer) : orderingKeyProblem(answer);
+    if (own) return own;
+    for (const member of String(accept || '').split('|').map((entry) => entry.trim()).filter(Boolean)) {
+      const problem = form === 'configuration' ? configurationAcceptProblem(member, answer) : orderingAcceptProblem(member, answer);
+      if (problem) return problem;
+    }
+    return null;
   }
   if (form === 'quantum-numbers') {
     if (accept) return 'a set of quantum numbers takes no accept list: mₗ and mₛ are already free';

@@ -170,20 +170,27 @@ export function prettyConfiguration(config) {
   return `${config.core ? `[${config.core}]` : ''}${config.subshells.map(({ label, count }) => `${label}${sup(count)}`).join('')}`;
 }
 
+/** A core written alone, in its brackets: `[Ar]` — a configuration whole (Chemistry 2e 7.1, "K⁺: [Ar]"), where a bare `Ar` is first a symbol. */
+const CORE_ALONE = /^\s*\[\s*(?:He|Ne|Ar|Kr|Xe|Rn)\s*\]\s*$/i;
+
 /** What the field shows it has read, or ''. */
 export function previewConfiguration(input) {
   const config = readConfiguration(input);
-  return config && config.subshells.length ? prettyConfiguration(config) : '';
+  return config && (config.subshells.length || CORE_ALONE.test(String(input))) ? prettyConfiguration(config) : '';
 }
 
 /**
  * The key's canonical spelling for a gate: its core, if it prints one, then
  * its subshells in shell order — a key printed in filling order and the
  * source's shell order are one key; `[Ne]3s²` and `1s²2s²2p⁶3s²` are two.
+ * A core alone in its brackets is a configuration too — an ion that has
+ * lost its valence shell ("K⁺: [Ar]", 7.1) — and is `[Ar]`; unbracketed,
+ * "Ar" is argon's symbol and no configuration.
  */
 export function configurationCanon(text) {
   const config = readConfiguration(text);
-  if (!config || !config.subshells.length || !expanded(config)) return null;
+  if (!config || !expanded(config)) return null;
+  if (!config.subshells.length && !CORE_ALONE.test(String(text).replace(/[$*]/g, ''))) return null;
   const sorted = [...config.subshells].sort((a, b) => ORDER(a.label) - ORDER(b.label));
   return `${config.core ? `[${config.core}]` : ''}${sorted.map(({ label, count }) => `${label}${count}`).join(' ')}`;
 }
@@ -191,12 +198,14 @@ export function configurationCanon(text) {
 /** Whether a text reads as a configuration of two or more subshells, or a core and one (what the lint calls a configuration key). */
 export function isConfiguration(text) {
   const config = readConfiguration(text);
-  return Boolean(config) && (config.subshells.length >= 2 || (config.core && config.subshells.length >= 1));
+  return Boolean(config) && (config.subshells.length >= 2 || (config.core && config.subshells.length >= 1) || CORE_ALONE.test(String(text)));
 }
 
 /** Why a configuration KEY cannot be graded, or null (the lint). */
 export function configurationKeyProblem(answer) {
   const config = readConfiguration(answer);
+  // A core alone, as the source prints an ion's ("[Ar]"): its full expansion is graded right too.
+  if (config && !config.subshells.length && /^\[(?:He|Ne|Ar|Kr|Xe|Rn)\]$/.test(String(answer).trim())) return null;
   if (!config || !config.subshells.length) return `${JSON.stringify(answer)} does not read as an electron configuration`;
   if (!/^(?:\[(?:He|Ne|Ar|Kr|Xe|Rn)\])?(?:[1-7][spdf][⁰¹²³⁴⁵⁶⁷⁸⁹]+)+$/.test(String(answer).trim())) {
     return `${JSON.stringify(answer)} is not written in print — each subshell followed by its count in superscript digits, no spaces: 1s²2s²2p⁶ (a core in square brackets, [Ne]3s²)`;

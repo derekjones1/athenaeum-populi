@@ -224,6 +224,37 @@ Nine things chapter 6 added (`docs/history/chemistry.md`, "Chapter 6"):
 - **`verify:typed` takes a route filter ("06-electronic"), not a content
   path, and reads `BASE_URL`, not `PORT`.**
 
+Ten things chapter 7 added (`docs/history/chemistry.md`, "Chapter 7"):
+
+- **The site is built once before the first reading is launched**, not
+  first for the tiles: `verify-section` passed a page the build refused.
+- **A decision that names the source's markup is checked against the
+  CNXML** (bold or underline, a colon, a closing period), and a decision
+  that prints a stem is checked against the playbook's "Stems" with the
+  section open.
+- **The gate agent's forms files go to the authors** (`engine-forms/`):
+  every decided shape as a passing item; an author who departs from one
+  runs `engine-gate.mjs` read-only on the page.
+- **A key that depends on a table of values is re-derived from the
+  page's own table before the wave** — comparisons, orderings, polarity —
+  ties included; the run facts list each key the table decides against
+  the source and each it ties.
+- **A ruling that moves an item for a leak is read against the page's
+  other items of the same shape** before it is sent: a fix for one pair
+  must not make a second form.
+- **A Source note the parent words is read as the learner meets it**: it
+  says that the answer differs, never what the corrected fact is.
+- **A round that rewrites alts reopens the images, or a reader does**:
+  one Author-kind verifier, every figure, appended in batches.
+- **A value no single source replaces is kept as printed with a Source
+  note** that prints only a number the parent has opened.
+- **A rule promoted in the rulings round is swept across the earlier
+  chapters by its lint's own list**, the hint-only edits carried with
+  `ledger-carry.mjs plan`.
+- **The errata numbers a deviation entry cites are reserved in the
+  parent's notes as they are filed**, and the drafter numbers the rest
+  after them.
+
 ## 1. Before the wave
 
 `SP` is this session's scratchpad. Never a git command from an agent — say

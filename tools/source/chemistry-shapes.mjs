@@ -65,7 +65,9 @@ export function shapeOf(answer, stem = '') {
       const problem = found && !/not written in print/.test(found) ? found : null;
       return { shape: 'configuration', component: 'textin answerForm="configuration"', ...(problem ? { flag: problem } : {}) };
     }
-    const configurations = text.split(/[:;]\s*|\.\s+(?=[A-Z])/).map((piece) => piece.trim()).filter((piece) => chemCanon(piece, 'configuration'));
+    // …or one per atom and ion, labelled or not ("…3p¹; Al³⁺: 1s²2s²2p⁶";
+    // "K⁺: [Ar], Mg²⁺: [Ne]", 7.1 — an ion's bare noble-gas core is one).
+    const configurations = text.split(/[:;,]\s*|\.\s+(?=[A-Z])/).map((piece) => piece.trim()).filter((piece) => chemCanon(piece, 'configuration'));
     if (configurations.length) {
       const counts = /\d+\s+(?:protons|neutrons|electrons)\b/.test(text);
       return { shape: 'configuration', component: `one textin answerForm="configuration" per configuration (${configurations.length})${counts ? ', and one whole-number fillin per count' : ''}, each closing with the atom or ion it asks` };
@@ -157,7 +159,8 @@ export function shapeOf(answer, stem = '') {
       // One member is one of the stem's closed set; two or more name members.
       if (pieces.length === 1) return { shape: 'formula', component: `multiplechoice whose options are the stem's list (${members.length}), in its order` };
       // Every member, in an order: an ordering printed with commas.
-      if (pieces.length === members.length) return { shape: 'ordering', component: 'textin answerForm="ordering" (the answer lists every member in order, with commas: the key is written with <, and the source gate does not yet read a comma list — probe before the wave)' };
+      // The key is written with <, first to last as printed; the source gate reads the comma list so (7.2).
+      if (pieces.length === members.length) return { shape: 'ordering', component: 'textin answerForm="ordering" (the answer lists every member in order, with commas: the key is written with <, first to last as printed)' };
       return { shape: 'words', component: `one multiplechoice (yes or no) per member the stem lists (${members.length})` };
     }
     if (!unread.length && /\sor\s/.test(text)) {

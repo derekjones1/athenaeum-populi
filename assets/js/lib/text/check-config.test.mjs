@@ -95,7 +95,7 @@ test('the lint: a key is written in print and is a configuration that can exist'
   assert.match(configurationKeyProblem('1s²2s²2p⁸'), /holds at most 6/);
   assert.match(configurationKeyProblem('1s²2d²'), /There is no 2d subshell/);
   assert.match(configurationKeyProblem('1s²1s²'), /twice/);
-  assert.match(chemKeyProblem(FE, 'configuration', '1s2'), /no accept list/);
+  assert.match(chemKeyProblem(FE, 'configuration', '1s2'), /only the noble-gas core that is the whole key/);
   assert.match(chemKeyProblem(FE, 'formula'), /declare answerForm="configuration"/);
   assert.match(chemKeyProblem('x', 'exact'), /"configuration", "ordering", or "quantum-numbers"/);
 });
@@ -117,4 +117,24 @@ test('the text grader hands a configuration to this reader; a subshell label sta
   }
   assert.deepEqual(gradeText('q', '2p'), { status: 'incorrect' });
   assert.deepEqual(gradeText('p', 'proton'), { status: 'incorrect' }, 'only against a key that is a subshell');
+});
+
+test('a key that is a noble-gas core alone (7.1: "K⁺: [Ar]") grades the core, its expansion, and any core-plus-rest that holds the same electrons', () => {
+  for (const typed of ['[Ar]', '[ar]', 'Ar', '1s2 2s2 2p6 3s2 3p6', '[Ne]3s2 3p6', '[Ne] 3s² 3p⁶']) assert.equal(status(typed, '[Ar]'), 'correct', typed);
+  // The atom's configuration, or another core, is told the count is wrong — never the count itself.
+  assert.deepEqual(checkConfiguration('[Ar]4s1', '[Ar]'), { status: 'incorrect', message: CONFIGURATION_COUNT });
+  assert.deepEqual(checkConfiguration('[Ne]', '[Ar]'), { status: 'incorrect', message: CONFIGURATION_COUNT });
+  // A key, a gate's canon, and a read-back: bracketed it is a configuration; bare "Ar" is argon's symbol.
+  assert.equal(configurationKeyProblem('[Ar]'), null);
+  assert.equal(chemKeyProblem('[Ne]', 'configuration'), null);
+  assert.match(configurationKeyProblem('Ar'), /does not read as an electron configuration/);
+  assert.equal(configurationCanon('[Ar]'), '[Ar]');
+  assert.equal(chemCanon('[Ne]', 'configuration'), '[Ne]');
+  assert.equal(configurationCanon('Ar'), null);
+  assert.notEqual(configurationCanon('[Ar]'), configurationCanon('1s²2s²2p⁶3s²3p⁶'), 'a core the source prints is the key\'s');
+  assert.equal(isConfiguration('[Ar]'), true);
+  assert.equal(isConfiguration('Ar'), false);
+  assert.equal(previewConfiguration('[Ar]'), '[Ar]');
+  assert.equal(previewChem('[kr]', 'configuration'), '[Kr]');
+  assert.equal(previewConfiguration('Ar'), '');
 });

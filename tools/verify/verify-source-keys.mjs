@@ -115,7 +115,7 @@ import { readNumeral, withinPercent } from '../../assets/js/lib/math/significant
 import { loadElements } from '../lib/elements.mjs';
 import { massAsk, molarMass, statesNoNumber } from './molar-mass.mjs';
 import {
-  KEYED_ONLY_BOOKS, answerUnits, choiceLabels, closingUnit, glossaryAliases, isPartLabel, keyedUnits, memberAsked, plain as foldedPlain, printedAbbreviations, printedNumerals, sortedExercise, twoUnitAnswer, unitFor, unlinked,
+  KEYED_ONLY_BOOKS, answerUnits, choiceLabels, closingUnit, isPartLabel, keyedUnits, listMembers, memberAsked, moduleAliases, plain as foldedPlain, texAsText, printedAbbreviations, printedNumerals, sortedExercise, twoUnitAnswer, unitFor, unlinked,
 } from '../lib/keyed-units.mjs';
 
 /** A page question must share this much of a source problem's vocabulary to
@@ -1294,6 +1294,27 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     erratum: 3093,
     reason: 'the source solution prints "The color of (a) is red" for the cesium line of frequency 3.45 × 10^14 Hz, which is 869 nm, beyond the visible range of every figure in the section, so the self-check\'s model answer says the line is in the infrared and not seen as a color',
   },
+  {
+    page: 'content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/06-molecular-structure-and-polarity.md',
+    exercise: 'fs-idp67177072(e)',
+    kind: 'key',
+    erratum: 3142,
+    reason: 'the source solution prints the electron-pair geometry of SeF₄ as "trigonal bypyramidal"; the word is "trigonal bipyramidal" in the module\'s own text, its glossary, and its figure of electron-pair geometries, so the item keys the name as the module spells it',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/02-covalent-bonding.md',
+    exercise: 'fs-idm28148800(e)',
+    kind: 'key',
+    erratum: 3143,
+    reason: 'the source solution orders the series "Ba, H, As, N, O" by increasing electronegativity; the module\'s own figure of electronegativity values gives arsenic 2.0 and hydrogen 2.1, so arsenic comes before hydrogen and the item keys the order the figure gives',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/05-strengths-of-ionic-and-covalent-bonds.md',
+    exercise: 'fs-idp12625232(d)',
+    kind: 'solution',
+    erratum: 3145,
+    reason: 'the source solution says magnesium\'s higher first ionization energy "mainly reflects the unpairing of the 2s electron"; the electron removed from magnesium is a 3s electron, and Section 6.5 of the book gives the reason for the order of such a pair — an s electron is harder to remove than a p electron of the same shell — and says that removing one electron of a pair removes the pair\'s repulsion, so the model answer gives the reason Section 6.5 gives',
+  },
 ]);
 
 /* ---- source side ---------------------------------------------------------- */
@@ -2290,6 +2311,140 @@ export function elementSegment(answer, closing) {
   return named.length === 1 ? sentences[opening.indexOf(named[0][1])] : text;
 }
 
+/**
+ * The configurations an answer prints for an atom and its ion, or for two
+ * ions, each after an optional label (Chemistry 2e 7.1): "1s²…3p¹; Al³⁺:
+ * 1s²2s²2p⁶", "…4p⁵; …4p⁶" (Br and its ion, unlabelled), "P: [Ne]3s²3p³;
+ * P³⁻: [Ne]3s²3p⁶", "K⁺: [Ar], Mg²⁺: [Ne]" — as `{ symbol, charged, canon,
+ * printed }`, `symbol` null and `charged` null where no label stands before
+ * it. [] unless two or more pieces read as configurations.
+ */
+export function labelledConfigurations(answer) {
+  const entries = [];
+  for (const raw of String(answer ?? '').split(/[;,]/)) {
+    const piece = raw.trim().replace(/\.\s*$/, '');
+    const label = /^([A-Z][a-z]?)\s*(?:\^\s*\{?\s*(\d*\s*[+−–-])\s*\}?)?\s*:\s*/.exec(piece);
+    const printed = label ? piece.slice(label[0].length) : piece;
+    const canon = printed ? chemCanon(printed, 'configuration') : null;
+    if (canon) entries.push({ symbol: label ? label[1] : null, charged: label ? Boolean(label[2]) : null, canon, printed });
+  }
+  return entries.length >= 2 ? entries : [];
+}
+
+/**
+ * Of an answer's labelled configurations, the one an item's closing sentence
+ * asks for: by the element it names ("…of the potassium ion." → the K⁺
+ * entry), then by "atom" or "ion" ("…of the atom." → the entry labelled with
+ * a neutral symbol, or unlabelled beside an ion's; "…of the ion." → the
+ * entry labelled with a charge, or unlabelled beside an atom's). Two
+ * unlabelled configurations under a stem that asks for "each … atom and
+ * … the … ion" are the atom's, then the ion's: the source answers in the
+ * stem's order (7.1's bromine and arsenic). Returns the entries it could
+ * be — one when the closing says which.
+ */
+function askedConfigurations(entries, question, stem) {
+  const closing = ` ${foldedPlain(askedClosing(question))} `;
+  const named = [...ELEMENT_BY_NAME].filter(([name]) => closing.includes(` ${name} `)).map(([, symbol]) => symbol);
+  let candidates = named.length === 1 && entries.some((entry) => entry.symbol === named[0])
+    ? entries.filter((entry) => entry.symbol === named[0]) : entries;
+  const role = / ion /.test(closing) ? 'ion' : / atom /.test(closing) ? 'atom' : null;
+  if (!role || candidates.length < 2) return candidates;
+  const roles = candidates.map((entry, index) => {
+    if (entry.charged !== null) return entry.charged ? 'ion' : 'atom';
+    const labelled = candidates.filter((other) => other.charged !== null);
+    if (labelled.length) return labelled.every((other) => other.charged) ? 'atom' : labelled.every((other) => !other.charged) ? 'ion' : null;
+    return candidates.length === 2 && /\batoms?\b/i.test(stem) && /\bions?\b/i.test(stem) ? (index === 0 ? 'atom' : 'ion') : null;
+  });
+  candidates = candidates.filter((entry, index) => roles[index] === role);
+  return candidates;
+}
+
+/** An angle printed after a shape's name — "bent (109°)", "bent (<120°)" (7.6) — which is no part of the name. */
+const ANGLE_AFTER = /\s*\(\s*[<>≈~]?\s*\d+(?:\.\d+)?\s*°\s*\)/g;
+
+/**
+ * The values an answer gives under names it prints (7.6's geometries), as
+ * `{ label, value }` folded, `value` with any angle after it dropped:
+ *   "electron-pair geometry: octahedral, molecular structure: square
+ *   pyramidal" (a name, a colon, the value; commas or semicolons between);
+ *   "The electron-pair geometry is trigonal bipyramidal. The molecular
+ *   structure is linear." (and "… is X and the … is Y");
+ *   "Both the electron geometry and the molecular structure are
+ *   octahedral." (one value for both names).
+ * A name is two or three words; [] unless two different names are read.
+ */
+export function labelledValues(answer) {
+  const text = String(answer ?? '').replace(ANGLE_AFTER, '');
+  const entries = [];
+  const NAME = '([a-z]+(?:[\\s-]+[a-z]+){1,2})';
+  for (const match of text.matchAll(new RegExp(`(?:^|[,;.]\\s*)${NAME}\\s*:\\s*([a-z][a-z\\s-]*?)\\s*(?=[,;.]|$)`, 'gi'))) {
+    entries.push({ label: foldedPlain(match[1]), value: foldedPlain(match[2]) });
+  }
+  for (const match of text.matchAll(new RegExp(`\\bthe\\s+${NAME}\\s+is\\s+([a-z][a-z\\s-]*?)\\s*(?=[,;.]|\\sand\\s|$)`, 'gi'))) {
+    entries.push({ label: foldedPlain(match[1]), value: foldedPlain(match[2]) });
+  }
+  const both = new RegExp(`\\bboth\\s+the\\s+${NAME}\\s+and\\s+the\\s+${NAME}\\s+are\\s+([a-z][a-z\\s-]*?)\\s*(?=[,;.]|$)`, 'i').exec(text);
+  if (both) entries.push({ label: foldedPlain(both[1]), value: foldedPlain(both[3]) }, { label: foldedPlain(both[2]), value: foldedPlain(both[3]) });
+  return new Set(entries.map((entry) => entry.label)).size >= 2 ? entries : [];
+}
+
+/** Of `labelledValues`, the name an item's closing sentence asks ("Enter the molecular structure.") by a word no other name has, with its values; null when it names none, or more than one. */
+function askedLabel(entries, question) {
+  const closing = ` ${foldedPlain(askedClosing(question))} `;
+  const labels = [...new Set(entries.map((entry) => entry.label))];
+  const words = (label) => label.split(' ').filter(Boolean);
+  const own = (label) => words(label).filter((word) => labels.filter((other) => words(other).includes(word)).length === 1);
+  const asked = labels.filter((label) => own(label).some((word) => closing.includes(` ${word} `)));
+  return asked.length === 1 ? { label: asked[0], values: entries.filter((entry) => entry.label === asked[0]).map((entry) => entry.value) } : null;
+}
+
+/**
+ * A yes-or-no item on a lettered part whose formula the answer lists, or
+ * not, in a sentence (`judgeKeyedUnit`): `{ wanted, sentence }`, or null
+ * when the item is not yes or no, the part is no formula, or no sentence of
+ * the answer lists two or more formulas. A part's own aside ("PCl₃ (P is
+ * the central atom)") is no part of its formula.
+ */
+export function listedPart(unit, item) {
+  const options = (item.options || []).map((option) => foldedPlain(option));
+  if (options.length !== 2 || !options.includes('yes') || !options.includes('no')) return null;
+  if (unit.partText === null || unit.partText === undefined) return null;
+  // The part as the question prints it, after its question mark ("…a dipole
+  // moment? ClO₂⁻"), where the source's MathML part ("ClO 2 −") reads two ways.
+  const asFormula = (text) => chemCanon(String(text ?? '').replace(/\([^)]*\)/g, ' ').replace(/[.\s]+$/, '').trim(), 'formula');
+  const part = asFormula(String(item.question).split('?').pop()) ?? asFormula(unit.partText);
+  if (!part) return null;
+  const formulaOf = (piece) => chemCanon(piece.replace(/^\s*(?:(?:only|and|also|both)\s+)+/i, '').replace(/(?:\s+[a-z]+)+\s*\.?\s*$/, '').trim(), 'formula');
+  const lists = String(unit.answer).split(/(?<=\.)\s+(?=[A-Z])/).map((sentence) => ({
+    sentence, formulas: sentence.split(/,|\s+and\s+/).map(formulaOf).filter(Boolean),
+  })).filter((entry) => entry.formulas.length >= 2);
+  if (!lists.length) return null;
+  const asked = new Set(foldedPlain(item.question).split(' ').filter((word) => word.length > 3));
+  const shared = (sentence) => foldedPlain(sentence).split(' ').filter((word) => asked.has(word) || asked.has(word.replace(/s$/, ''))).length;
+  const [best] = [...lists].sort((a, b) => shared(b.sentence) - shared(a.sentence));
+  return { wanted: best.formulas.includes(part) ? 'yes' : 'no', sentence: best.sentence };
+}
+
+/**
+ * The sentence of an unlettered unit's answer that lists the ONE member of
+ * the stem's list an item asks about — the text after the question's last
+ * colon ("…in binary ionic compounds: Mg?") — where the answer sorts the
+ * list in sentences, each opening with its members ("Mg, In, Cs, Pb, and Co
+ * would form cations …"); null otherwise.
+ */
+function sortedSentence(unit, question) {
+  if (unit.partText !== null && unit.partText !== undefined) return null;
+  const members = listMembers(unit.stem);
+  const at = String(question).lastIndexOf(':');
+  if (members.length < 2 || at === -1) return null;
+  const asked = tightMember(String(question).slice(at + 1).replace(/[?.]\s*$/, ''));
+  if (!members.some((member) => tightMember(member) === asked)) return null;
+  const sentences = String(unit.answer).split(/(?<=\.)\s+(?=[A-Z])/);
+  const opening = (sentence) => sentence.split(/,|\s+and\s+/).map((piece) => tightMember(piece.trim().split(/\s+/)[0] ?? ''));
+  const holding = sentences.filter((sentence) => opening(sentence).includes(asked));
+  return sentences.length >= 2 && holding.length === 1 ? holding[0] : null;
+}
+
 /** A label set before an equation with a colon ("complete ionic equation: …") or after it in parentheses ("… (net)", "… ( molecular )"); a state symbol, of one or two letters, is never one, nor a condition "(in base)". */
 const EQUATION_LABEL = /\(\s*([a-z]{3,}(?:\s+[a-z]{3,})*)\s*\)|\b([a-z]{3,}(?:\s+[a-z]{3,})*)\s*:/g;
 
@@ -2376,7 +2531,12 @@ const formulaChars = (value) => String(value ?? '').normalize('NFKC').replace(/[
  */
 function heldNumber(answer, question, key) {
   const closing = String(question).split(/(?<=[.?!][)”’"]?)\s+/).pop();
-  const bySymbol = [...String(answer).matchAll(/(?:^|[\s,;])([A-Z][a-z]?)\s*,?\s+([+−–-]\s?\d+)(?=\s*(?:[,;.]|$))/g)]
+  // …or an answer that is nothing but such pairs, a zero unsigned and a
+  // colon or none between: "H: 0, Cl: 0", "P: 0, Cl 0", "N: 0; all three Cl
+  // atoms: 0" (7.4, formal charges) — "three" is no charge.
+  const PAIR = /^\s*(?:all\s+[a-z]+\s+)?([A-Z][a-z]?)(?:\s+atoms?)?\s*:?\s*([+−–-]?\s?\d+)\s*$/;
+  const pairs = String(answer).replace(/\.\s*$/, '').split(/[,;]/).map((piece) => PAIR.exec(piece));
+  const bySymbol = (pairs.length >= 2 && pairs.every(Boolean) ? pairs : [...String(answer).matchAll(/(?:^|[\s,;])([A-Z][a-z]?)\s*,?\s+([+−–-]\s?\d+)(?=\s*(?:[,;.]|$))/g)])
     .map((match) => ({ symbol: match[1], numeral: printedNumerals(match[2].replace(/\s/g, ''))[0] })).filter((entry) => entry.numeral);
   if (new Set(bySymbol.map((entry) => entry.symbol)).size >= 2) {
     const asked = [...new Set(bySymbol.map((entry) => entry.symbol))]
@@ -2596,8 +2756,11 @@ const optionReadings = (option) => {
   return [option, ...(aside ? [`${aside[1]} ${aside[3]}`, `${aside[2]} ${aside[3]}`] : [])].map(optionWords);
 };
 export function optionsNamedIn(answer, options) {
+  // Word by word only for words: a formula's pieces are no words — "K₂O"
+  // folds to "k 2 o", which "Na₂O; Na⁺ has a smaller radius than K⁺" prints
+  // one by one (7.5).
   const printed = (option) => optionReadings(option).some((words) => words.length > 0 && (answer.includes(` ${words.join(' ')} `)
-    || (words.length > 1 && words.every((word) => answer.includes(` ${word} `)))));
+    || (words.length > 1 && words.every((word) => /^[a-z]{2,}$/.test(word)) && words.every((word) => answer.includes(` ${word} `)))));
   const mentioned = options.filter(printed);
   return mentioned.filter((option) => !mentioned.some((other) => other !== option
     && optionWords(other).length > optionWords(option).length
@@ -2763,6 +2926,20 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
           }
           return { status: 'confirmed', exercise };
         }
+        // An atom's configuration and its ion's, or two ions', in one answer
+        // ("…3p¹; Al³⁺: 1s²2s²2p⁶"; "K⁺: [Ar], Mg²⁺: [Ne]", 7.1): one item
+        // each, and the item is held to the one its closing sentence names —
+        // "Enter the electron configuration of the ion." keyed with the
+        // atom's is refused, and so is a closing that names neither.
+        const configurations = labelledConfigurations(unit.answer);
+        if (configurations.length) {
+          const asked = askedConfigurations(configurations, item.question, unit.stem);
+          if (asked.length !== 1) {
+            return { ...differs, detail: `source ${unit.id} answers ${configurations.length} configurations (${JSON.stringify(unit.answer.slice(0, 120))}); the item's closing sentence must name the one it keys ("Enter the electron configuration of the atom.", "… of the ion.", "… of the potassium ion.")` };
+          }
+          return asked[0].canon === key ? { status: 'confirmed', exercise }
+            : { ...differs, detail: `textin keys ${JSON.stringify(item.answer)} for the configuration its closing sentence names, which source ${unit.id} prints as ${JSON.stringify(asked[0].printed)}` };
+        }
       }
       // A piece the answer introduces with a colon ("Al will form a cation
       // with a charge of 3+: Al³⁺", 2.6) is also read after it.
@@ -2781,6 +2958,17 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
       // ionic key under "Enter the complete ionic equation." is refused.
       const equations = item.form === 'equation' ? answerEquations(unit.answer) : [];
       pieces.push(...equations.map((entry) => entry.canon));
+      // An ordering the source prints with commas ("H, C, N, O, F" for "…in
+      // order of increasing electronegativity: C, F, H, N, O", 7.2): the
+      // page keys it with <, first to last as printed, so the comma list is
+      // read as that ordering — when its members are the stem's own, each
+      // once. The reverse, or any other order, is another key.
+      if (item.form === 'ordering' && !/[<>]/.test(unit.answer)) {
+        const listed = unit.answer.replace(/\s*\.\s*$/, '').split(/,|\s+and\s+/).map((member) => member.replace(/^\s*and\s+/, '').trim()).filter(Boolean);
+        const asked = (unit.partText ? String(unit.partText).split(/,|\s+and\s+/) : listMembers(unit.stem)).map((member) => chemCanon(member.replace(/^\s*and\s+/, '').trim(), 'formula'));
+        const read = listed.length >= 2 ? chemCanon(listed.join(' < '), 'ordering') : null;
+        if (read && asked.length === listed.length && [...asked].sort().join() === read.split(' < ').sort().join()) pieces.push(read);
+      }
       if (!key || !pieces.includes(key)) return differs;
       if (equations.length >= 2) {
         const asked = askedEquations(equations, item.question);
@@ -2828,6 +3016,22 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
     const key = foldedPlain(item.answer);
     const forms = [key, ...foldedForms(key)].filter(Boolean);
     if (!forms.some((form) => answer.includes(` ${form} `))) return differs;
+    // Two named values in one answer — "electron-pair geometry: octahedral,
+    // molecular structure: square pyramidal"; "The electron-pair geometry is
+    // trigonal bipyramidal. The molecular structure is linear."; "Both the
+    // electron geometry and the molecular structure are octahedral." (7.6)
+    // — carried one text-in per value, each closing with the name it asks
+    // ("Enter the molecular structure."): the item is held to THAT value, so
+    // a swapped pair is refused. An angle printed after a shape ("bent
+    // (109°)") is no part of its name.
+    const named = labelledValues(unit.answer);
+    if (named.length >= 2) {
+      const asked = askedLabel(named, item.question);
+      if (asked) {
+        return asked.values.some((value) => [value, ...foldedForms(value)].includes(key)) ? { status: 'confirmed', exercise }
+          : { ...differs, detail: `textin keys ${JSON.stringify(item.answer)} for the ${asked.label}, which source ${unit.id} answers ${JSON.stringify(asked.values.join(' or '))} (${JSON.stringify(unit.answer.slice(0, 120))})` };
+      }
+    }
     // A name cut short is another compound's name: "cobalt(II) chloride"
     // is printed in "cobalt(II) chloride hexahydrate" and is not its answer
     // (2.7). Where the answer is a list of names and symbols — every piece
@@ -2835,7 +3039,7 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
     // key is one whole piece, the article and the word "ion" aside ("Se²⁻,
     // the selenide ion" keys "selenide"). An answer in sentences is read as
     // before: there the key is a word the sentence prints.
-    const pieces = unit.answer.split(/[,;]/).map((piece) => withoutArticle(piece)).filter(Boolean);
+    const pieces = unit.answer.split(/[,;]/).map((piece) => withoutArticle(piece.replace(ANGLE_AFTER, ''))).filter(Boolean);
     const listed = pieces.length > 0 && pieces.every((piece) => piece.split(' ').length <= 4);
     if (listed) {
       const whole = pieces.flatMap((piece) => [piece, piece.replace(/ ions?$/, '')]);
@@ -2869,6 +3073,16 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
     if (foldedPlain(item.answer) === wanted) return { status: 'confirmed', exercise };
     return { status: 'key-differs', exercise, detail: `source ${unit.id} answers ${JSON.stringify(unit.answer.slice(0, 100))}, which ${wanted === 'yes' ? 'lists' : 'does not list'} ${JSON.stringify(member)}; page keys ${JSON.stringify(item.answer)}` };
   }
+  // A lettered part asked yes or no where the answer lists the parts that
+  // are, by formula, in a sentence — "Only ClF₅, ClO₂⁻, PCl₃, SeF₄, and
+  // PH₂⁻ have dipole moments." (7.6): yes when the list holds the part's
+  // formula, no when it does not. Of several sentences, the list is the one
+  // that shares the most words with the question ("…have a dipole moment?").
+  const listed = item.type === 'multiplechoice' ? listedPart(unit, item) : null;
+  if (listed) {
+    if (foldedPlain(item.answer) === listed.wanted) return { status: 'confirmed', exercise };
+    return { status: 'key-differs', exercise, detail: `source ${unit.id} answers ${JSON.stringify(listed.sentence.slice(0, 120))}, which ${listed.wanted === 'yes' ? 'lists' : 'does not list'} the part ${JSON.stringify(unit.partText)}; page keys ${JSON.stringify(item.answer)}` };
+  }
   if (item.type === 'multiplechoice') {
     // Two answers that hold several choices at once, each narrowed to the
     // one THIS item asks for before the options are read against it:
@@ -2880,6 +3094,16 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
     const segments = unit.answer.split(';').map((segment) => /^\s*([^:]+):\s*(.+)$/s.exec(segment)).filter(Boolean)
       .map((match) => ({ head: foldedPlain(match[1]), body: match[2].trim() }));
     let said = unit.answer;
+    // …and a list sorted into the options by SENTENCES, each listing its
+    // members and then their category: "P, I, Cl, and O would form anions
+    // because they are nonmetals. Mg, In, Cs, Pb, and Co would form cations
+    // because they are metals." (7.1, one multiple choice per member of the
+    // stem's list, the member after the question's last colon): the item's
+    // is the one sentence that lists its member. Its category word may be
+    // another name of an option ("anions" for "negative ion"), read through
+    // the module's own pairs (`moduleAliases`).
+    const sorted = sortedSentence(unit, item.question);
+    if (sorted) said = sorted;
     if (segments.length >= 2) {
       const asked = ` ${foldedPlain(item.question)} `;
       const sorted = segments.filter((segment) => item.options.some((option) => foldedPlain(option) === segment.head));
@@ -2951,6 +3175,24 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
       const held = lettered.find((entry) => entry.label === asked[0]);
       return sameNumeral(held.numeral, key) ? { status: 'confirmed', exercise }
         : { status: 'key-differs', exercise, detail: `fillin keys ${JSON.stringify(item.answer)} for (${asked[0]}), which source ${unit.id} gives as ${held.numeral.printed} (${JSON.stringify(said.slice(0, 80))})` };
+    }
+    // A charge asked as a signed number ("Enter the charge as a signed
+    // number, …") where the answer prints it only on an ion's symbol — "P:
+    // [Ne]3s²3p³; P³⁻: [Ne]3s²3p⁶" under "Give the charge on the anion"
+    // (7.1): the key is that superscript, sign and all, read sign-last as
+    // the source prints it. Of several ions, the stem's "anion" or
+    // "cation" names the sign. The digits of the configurations around it
+    // are no charge.
+    if (/\bcharge\b/i.test(askedClosing(item.question))) {
+      const ions = [...String(unit.answer).matchAll(/(?<![A-Za-z])[A-Z][a-z]?(?:\s*_?\s*\d+)?\s*\^\s*\{?\s*(\d*)\s*([+−–-])\s*\}?/g)]
+        .map((match) => Number(match[1] || 1) * (match[2] === '+' ? 1 : -1));
+      const sign = /\banion\b/i.test(unit.stem) ? -1 : /\bcation\b/i.test(unit.stem) ? 1 : 0;
+      const charges = [...new Set(ions.filter((charge) => !sign || Math.sign(charge) === sign))];
+      if (charges.length) {
+        const value = Number(`${key.negative ? '-' : ''}${key.mantissa}e${key.exponent}`);
+        if (charges.length === 1 && charges[0] === value) return { status: 'confirmed', exercise };
+        return { status: 'key-differs', exercise, detail: `fillin keys ${JSON.stringify(item.answer)} for the charge, which source ${unit.id} prints on its ion${charges.length > 1 ? 's' : ''} as ${charges.map((charge) => (charge > 0 ? `+${charge}` : `${charge}`)).join(' or ')} (${JSON.stringify(unit.answer.slice(0, 100))})${charges.length > 1 ? ' — the stem must say which ion' : ''}` };
+      }
     }
     const printed = printedNumerals(said);
     // A formula mass asked for itself is the table's sum, exactly: the one
@@ -3065,7 +3307,11 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
   // to the picture — the selfcheck shows the source's own image
   // (docs/subjects/chemistry.md "Figures"). Words beside an image are
   // judged as words; an image table is transcribed, not shown.
-  if (!unit.answer.trim() && (unit.answerMedia || []).length) {
+  // A part's own formula printed as the drawing's label ("SeF₆: [structure]";
+  // "Cl₂BBCl₂: [structure]" for the part "Cl₂BBCl₂ (contains a B–B bond)",
+  // 7.3) is no word of the answer: the drawing is.
+  const labelOnly = unit.partText && /:\s*$/.test(unit.answer) && tightMember(unit.answer.replace(/:\s*$/, '')) === tightMember(unit.partText.replace(/\([^)]*\)/g, ''));
+  if ((!unit.answer.trim() || labelOnly) && (unit.answerMedia || []).length) {
     const missing = unit.answerMedia.filter((file) => !(item.figures || []).includes(file));
     return missing.length
       ? { status: 'key-differs', exercise, detail: `source ${unit.id} answers with a drawing (${missing.join(', ')}) that the selfcheck's model answer does not show` }
@@ -3080,7 +3326,9 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
   // HClO 4 ( a q ) ⟶ …", 4.2) is read with both sides folded as the part
   // matcher folds them (`plain`): formulas, charges, and states then read alike.
   if (judged.status === 'diverges') {
-    const folded = judgeSelfcheck({ ...item, model: foldedPlain(item.model) }, {
+    // …and its display math read as what it prints (`texAsText`): a source's
+    // derivation set as `$$\begin{array}…\ce{…}…$$` (7.5's H–Cl cycle).
+    const folded = judgeSelfcheck({ ...item, model: foldedPlain(texAsText(item.model)) }, {
       checkQuestions: null,
       exercises: [{ id: unit.id, problem: item.question, solution: foldedPlain(unit.answer), options: [] }],
     });
@@ -3277,7 +3525,7 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
     // first (an exercise part and its own answer segment); only an item that
     // transcribes no unit falls through to the ordinary judges below.
     const units = KEYED_ONLY_BOOKS.includes(section.book) ? keyedUnits(moduleXml) : null;
-    const aliases = units ? glossaryAliases(moduleXml) : [];
+    const aliases = units ? moduleAliases(moduleXml) : [];
     const abbreviations = units ? printedAbbreviations(moduleXml) : [];
     const elements = ELEMENT_DATA_BOOKS.includes(section.book) ? (elementData ??= loadElements(repositoryRoot)) : null;
     const pageMarkdown = readFileSync(pagePath, 'utf8');

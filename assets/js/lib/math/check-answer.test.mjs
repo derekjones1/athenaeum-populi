@@ -5013,3 +5013,26 @@ test('a key has one value: worked:<value> and tolerance:<p>% are not forms', () 
   assert.doesNotMatch(measuredKeyProblem('82.24', 'sig-figs:4'), /worked/);
   assert.match(measuredKeyProblem('123.896,18.015', 'sig-figs:6 last-digit:1'), /grades ONE nonzero number/);
 });
+
+test('a whole-number key with a sign: the other sign is told so, and a sign typed after the number is a form to fix (Chemistry 7.1, 7.4)', async () => {
+  const { SIGN_LAST_FEEDBACK } = await import('./check-answer.mjs');
+  const grade = (typed, key) => {
+    const status = checkAnswer(typed, key, { form: 'whole-number' });
+    const message = status === 'incorrect' ? describeIncorrectFeedback(typed, 'whole-number', key) : status === 'form' ? describeFormFeedback(typed, 'whole-number', key) : '';
+    return [status, message];
+  };
+  assert.deepEqual(grade('3', '-3'), ['incorrect', WRONG_SIGN_FEEDBACK]);
+  assert.deepEqual(grade('-1', '1'), ['incorrect', WRONG_SIGN_FEEDBACK]);
+  assert.deepEqual(grade('+1', '-1'), ['incorrect', WRONG_SIGN_FEEDBACK]);
+  assert.deepEqual(grade('3-', '-3'), ['form', SIGN_LAST_FEEDBACK], 'the source\'s sign-last print, right value');
+  assert.deepEqual(grade('4+', '4'), ['form', SIGN_LAST_FEEDBACK]);
+  assert.deepEqual(grade('2-', '-3'), ['incorrect', ''], 'sign last and the wrong size: no sentence');
+  assert.deepEqual(grade('3+', '-3'), ['incorrect', ''], 'sign last and the wrong sign');
+  assert.deepEqual(grade('-4', '5'), ['incorrect', ''], 'another size: no sentence');
+  assert.equal(checkAnswer('-3', '-3', { form: 'whole-number' }), 'correct');
+  assert.equal(checkAnswer('-0', '0', { form: 'whole-number' }), 'correct', 'a key of 0 has no sign to flip');
+  assert.equal(describeIncorrectFeedback('1', 'whole-number', '0'), '');
+  assert.doesNotMatch(SIGN_LAST_FEEDBACK, /\d/, 'the sentence prints no number, so no key');
+  // Without the whole-number form nothing changes.
+  assert.equal(checkAnswer('3-', '-3', {}), 'invalid');
+});

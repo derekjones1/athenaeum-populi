@@ -131,6 +131,29 @@ export function cePrinted(text) {
 }
 
 /**
+ * Text with its TeX math read as the words and symbols it prints: `\ce{…}`
+ * in the book's Unicode print, `\text{f}` as "f", `\Delta` as Δ, `^\circ`
+ * as °, and the layout a display sets — `\begin{array}{ll}`, `&`, `\\[4pt]`,
+ * `\hline`, `\begin{aligned}` — dropped. A selfcheck whose model answer is a
+ * source's derivation set as display math (7.5's Hess's-law cycle for the
+ * H–Cl bond energy) was read as "begin array ll ce delta circ hline", none of
+ * which the source prints, and diverged at 28%.
+ */
+export function texAsText(text) {
+  return String(text ?? '').replace(/\$\$([\s\S]*?)\$\$|\$([^$]*)\$/g, (match, display, inline) => ` ${cePrinted(display ?? inline)
+    .replace(/\\(?:begin|end)\{[^}]*\}(?:\{[lcr|\s]*\})?/g, ' ')
+    .replace(/\\\\(?:\[[^\]]*\])?/g, ' ')
+    .replace(/\\(?:hline|quad|qquad|left|right|,|;|!|\s)/g, ' ')
+    .replace(/&/g, ' ')
+    .replace(/\\(?:text|mathrm|textrm|mathit|operatorname|cancel)\s*\{([^{}]*)\}/g, ' $1 ')
+    .replace(/\^\s*\{?\\circ\}?|\\circ/g, '°')
+    .replace(/\\Delta/g, 'Δ')
+    .replace(/\\(?:cdot|times)/g, '×')
+    .replace(/\\[A-Za-z]+/g, ' ')
+    .replace(/[{}^_]/g, ' ')} `);
+}
+
+/**
  * The word pairs a module's own glossary makes one: "covalent compound —
  * (also, molecular compound)" gives ["covalent", "molecular"], the shared
  * head noun dropped; "main-group element — (also, representative element)"
@@ -155,6 +178,30 @@ export function glossaryAliases(xml) {
   }
   return pairs;
 }
+
+/**
+ * The second names a module's own text gives a word in parentheses, "a
+ * cation (a positive ion)", "an anion (a negative ion)" (7.1), as alias
+ * pairs `glossaryAliases` gives: [word, name], and the word's regular plural
+ * beside the name ("anions" → "negative ion"), since an answer sorts its
+ * members in the plural ("P, I, Cl, and O would form anions"). Folded as
+ * `plain` folds; one word before the parenthesis, two to four inside it,
+ * each with its article.
+ */
+export function printedGlosses(xml) {
+  const pairs = [];
+  const text = String(xml ?? '').replace(/<[^>]+>/g, ' ');
+  for (const match of text.matchAll(/\b(?:[Aa]n?|[Tt]he)\s+([a-z]{3,})\s+\((?:an?|the)\s+([a-z]+(?:\s+[a-z]+){1,3})\)/g)) {
+    const [word, name] = [plain(match[1]), plain(match[2])];
+    for (const pair of [[word, name], [`${word}s`, name]]) {
+      if (!pairs.some(([a, b]) => a === pair[0] && b === pair[1])) pairs.push(pair);
+    }
+  }
+  return pairs;
+}
+
+/** Every alias pair a module gives: its glossary's "(also, …)" and its text's "a cation (a positive ion)". */
+export const moduleAliases = (xml) => [...glossaryAliases(xml), ...printedGlosses(xml)];
 
 /**
  * The abbreviations a module prints for a name, in parentheses after it —
@@ -537,8 +584,16 @@ const sampleWords = (text) => padded(plain(String(text ?? '').replace(/\([^)]*\)
 export function closedSet(stem, answer) {
   const lettered = sequentialParts(stem);
   if (!lettered || !/\bwhich of the following\b/i.test(lettered.lead)) return null;
-  if (!answer || sequentialParts(answer, { answer: true }) || namedParts(answer)) return null;
   const choices = lettered.parts.map(({ label, text }) => ({ label, text }));
+  // A lone letter under a lead-in that asks for THE one part with the most
+  // or least of something ("For which of the following substances is the
+  // least energy required …?" → "(d)", 7.5): one choice, not one part named
+  // among several — "Only (b)" or a list of letters stays yes or no per part.
+  const lone = namedParts(answer);
+  if (lone?.length === 1 && !/^\s*only\b/i.test(answer) && SUPERLATIVE.test(lettered.lead) && choices.some((choice) => choice.label === lone[0])) {
+    return { lead: lettered.lead, choices, chosen: lone[0] };
+  }
+  if (!answer || sequentialParts(answer, { answer: true }) || namedParts(answer)) return null;
   // …or by its LETTER, as the one the answer calls the answer: "Although
   // both (b) and (c) are correct, (e) encompasses both and is the best
   // answer." (6.4, whose options are the stem's own "(d) Both Mg and S (e)
@@ -550,6 +605,9 @@ export function closedSet(stem, answer) {
   if (named.length !== 1) return null;
   return { lead: lettered.lead, choices, chosen: named[0].label };
 }
+
+/** A lead-in that asks for the one part at an extreme: "the least energy", "the most energy", "the largest", "the highest". */
+const SUPERLATIVE = /\bthe\s+(?:most|least|largest|smallest|greatest|highest|lowest|strongest|weakest|longest|shortest|best)\b/i;
 
 /** The one part letter an answer calls THE answer ("(e) … is the best answer", "(c) is correct"), or null. */
 export function chosenLetter(answer) {
@@ -580,6 +638,27 @@ export function choiceLabels(choices, options = []) {
     return ranked[0].score >= CHOICE_FLOOR && ranked[0].score > (ranked[1]?.score ?? 0) ? ranked[0].label : null;
   });
   return labels.every(Boolean) && new Set(labels).size === choices.length ? labels : null;
+}
+
+/**
+ * An answer that sorts the parts by LETTER under the stem's categories —
+ * "ionic: (b), (d), (e), (g), and (i); covalent: (a), (c), (f), (h), (j),
+ * and (k)" (7.2) — regrouped by part: a Map from label to its category
+ * ("ionic"), or null unless every segment is a category and a list of
+ * labels only, two segments or more, and no label is in two.
+ */
+export function categoryLetterParts(answer) {
+  const segments = String(answer ?? '').trim().replace(/[.;]$/, '').split(';')
+    .map((segment) => /^\s*([A-Za-z][A-Za-z -]*?)\s*:\s*((?:\(\s*[a-z]\s*\)\s*,?\s*(?:and\s+)?)+)$/.exec(segment));
+  if (segments.length < 2 || !segments.every(Boolean)) return null;
+  const byPart = new Map();
+  for (const [, category, labels] of segments) {
+    for (const [, label] of labels.matchAll(/\(\s*([a-z])\s*\)/g)) {
+      if (byPart.has(label)) return null;
+      byPart.set(label, category.trim());
+    }
+  }
+  return byPart;
 }
 
 /**
@@ -697,7 +776,7 @@ function splitUnits(whole) {
       units.push({ ...unit, group: unit.id, label: null, lead: '', partText: null, answerMedia: marksIn(answerMarked ?? '') });
       continue;
     }
-    const byRole = roleFirstParts(unit.answer);
+    const byRole = roleFirstParts(unit.answer) ?? categoryLetterParts(unit.answer);
     const named = byRole ? null : namedParts(unit.answer);
     const answers = byRole
       ? { parts: [...byRole].map(([label, text]) => ({ label, text })) }
@@ -811,7 +890,7 @@ function ownScore(unit, question, item = {}) {
   // Cl⁻?" → "Se, As⁻", carried as "Is the following atom or ion
   // isoelectronic with Br⁺? Se²⁺" and five more): the member is this unit's
   // when its list holds it, under a question that reads like the lead-in.
-  const member = memberAsked(unit, question, item);
+  const member = memberAsked(unit, question, item) ?? (item.type === 'multiplechoice' ? memberAfterColon(unit, question) : null);
   if (member) {
     const lead = tokenSimilarity(unit.stem.slice(0, unit.stem.lastIndexOf(':')), question);
     if (lead >= LEAD_FLOOR) return { score: 1, words: 1, near: lead, exact: tight(member).length };
@@ -824,7 +903,10 @@ function ownScore(unit, question, item = {}) {
   // nine) — for a lettered part as for a whole exercise, or a whole exercise
   // read that way outranks the part the question prints verbatim (6.4: "…
   // given: [Kr]5s²4d¹⁰5p⁶" was read as the Zr exercise).
-  const configured = /\d[spdf][⁰¹²³⁴-⁹]/.test(question);
+  // So is a question that prints a formula in the book's Unicode (7.3: the
+  // page's "H₂CO" is one word, the source's "H 2 CO" two — and read raw, the
+  // unkeyed twin's part "H 2" under the same lead-in read more like it).
+  const configured = /\d[spdf][⁰¹²³⁴-⁹]/.test(question) || /[A-Za-z)][₀-₉⁰¹²³⁴-⁹⁺⁻]/.test(question);
   const near = Math.max(tokenSimilarity(question, unit.stem), configured ? tokenSimilarity(plain(question), plain(unit.stem)) : 0);
   if (unit.partText !== null && unit.partText !== undefined) {
     const part = plain(unit.partText);
@@ -895,7 +977,15 @@ function ownScore(unit, question, item = {}) {
   // markup tokenize apart: the page's "1s²2s²2p⁶" is one word, the source's
   // "1 s 2 2 s 2 2 p 6" nine (6.4's "Which ion … has the electron
   // configuration …?").
-  const score = Math.max(near, own === null ? 0 : tokenSimilarity(own, unit.stem));
+  // …and read without the sentences the page adds after the source's stem
+  // to say what to enter ("Enter the formal charge of C as a signed number,
+  // the sign first, as +2 or −2."): fourteen words of closing put a nine-word
+  // Check Your Learning ("Calculate the formal charge for each atom in the
+  // carbon monoxide molecule:", 7.4) under the floor of its own stem.
+  const bare = question.replace(/(?:\s+(?:Enter|Type)\b[^.?!]*[.?!])+\s*$/, '');
+  const unclosed = bare !== question && bare.trim()
+    ? Math.max(tokenSimilarity(bare, unit.stem), configured ? tokenSimilarity(plain(bare), plain(unit.stem)) : 0) : 0;
+  const score = Math.max(near, own === null ? 0 : tokenSimilarity(own, unit.stem), unclosed);
   return { score: score >= WHOLE_FLOOR ? score : 0, words: 0, near: Math.max(near, score), exact: 0 };
 }
 
@@ -944,6 +1034,22 @@ export function memberAsked(unit, question, item = {}) {
   const asked = String(question ?? '').split('?').pop().trim().replace(/\.$/, '');
   if (!asked) return null;
   return listMembers(unit.stem).find((member) => tight(member) === tight(asked)) ?? null;
+}
+
+/**
+ * The member of an unlettered unit's list that a multiple choice asks about
+ * after its last colon — "Would the following atom be expected to form a
+ * negative ion or a positive ion in binary ionic compounds: In?" (7.1, the
+ * stem's list sorted into its categories one member at a time) — or null.
+ * Read so, the member is this exercise's, not the unkeyed twin's lettered
+ * part "In" under a lead-in that also says "in binary ionic compounds".
+ */
+export function memberAfterColon(unit, question) {
+  if (unit.partText !== null && unit.partText !== undefined) return null;
+  const at = String(question ?? '').lastIndexOf(':');
+  if (at === -1) return null;
+  const asked = String(question).slice(at + 1).replace(/[?.]\s*$/, '').trim();
+  return asked ? listMembers(unit.stem).find((member) => tight(member) === tight(asked)) ?? null : null;
 }
 
 const CROSS_REFERENCE = /\bthe (?:example|exercise|figure|table) “[^”]*” in Section \d+\.\d+|\bthe [^,.;()“”]{1,60}? (?:example|exercise) in Section \d+\.\d+/g;

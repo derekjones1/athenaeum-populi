@@ -260,8 +260,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 21,
       "upstreamSections": 114,
-      "localChapters": 6,
-      "mappedSections": 30,
+      "localChapters": 7,
+      "mappedSections": 36,
       "upstreamAppendices": 13,
       "mappedAppendices": 13
     }
@@ -7538,6 +7538,60 @@
       "moduleId": "m68735",
       "sourceTitle": "Periodic Variations in Element Properties",
       "moduleSha256": "03c4ccc52a0f196e63e5f877bd1a5a21db39a298ef03ad4cfcea20e2282fcb01"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/01-ionic-bonding.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "7.1",
+      "moduleId": "m68737",
+      "sourceTitle": "Ionic Bonding",
+      "moduleSha256": "eb590aff2c430ac376f868afdf5433ce4a30d2e22e675be1b5d09b978feea65f"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/02-covalent-bonding.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "7.2",
+      "moduleId": "m68738",
+      "sourceTitle": "Covalent Bonding",
+      "moduleSha256": "b65237de72ccd578cf3d3d02798221636274c0943dc4f696f30628fad097174c"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/03-lewis-symbols-and-structures.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "7.3",
+      "moduleId": "m68739",
+      "sourceTitle": "Lewis Symbols and Structures",
+      "moduleSha256": "9feac6d504af9d46fd0de95938e708695bb414a9141eb6bda59c9165af3c05d3"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/04-formal-charges-and-resonance.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "7.4",
+      "moduleId": "m68740",
+      "sourceTitle": "Formal Charges and Resonance",
+      "moduleSha256": "7512393de4a04cb8428d905cc9418ca30b9de7f64a878219646216940d223f79"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/05-strengths-of-ionic-and-covalent-bonds.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "7.5",
+      "moduleId": "m68741",
+      "sourceTitle": "Strengths of Ionic and Covalent Bonds",
+      "moduleSha256": "9b88c64f39a560a8bb2ebda7dc18ee476b67d667c488e5e00b3a154315ef6f9a"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/06-molecular-structure-and-polarity.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "7.6",
+      "moduleId": "m68742",
+      "sourceTitle": "Molecular Structure and Polarity",
+      "moduleSha256": "522195d80aa86fd18eb44c4c0d23217125f7e735526ae9db3895c1e6c9c56265"
     }
   ],
   "appendices": [

@@ -312,3 +312,13 @@ test('the increment sign a Mac keyboard types is read as the Greek capital delta
   assert.equal(checkText('\u0394', 'delta', { accept: '\u0394' }), 'correct');
   assert.equal(checkText('\u2207', 'delta', { accept: '\u0394' }), 'empty');
 });
+
+test('a shape name typed with the source\'s angle after it is the shape (Chemistry 7.6: "bent (109°)")', () => {
+  for (const typed of ['bent (109°)', 'bent (120°)', 'bent (<120°)', 'Bent (≈ 104.5 °)', 'bent']) assert.equal(checkText(typed, 'bent'), 'correct', typed);
+  assert.equal(checkText('trigonal pyramidal (107°)', 'trigonal pyramidal'), 'correct');
+  assert.equal(checkText('trigonal bipyramidal (90°)', 'trigonal bipyramid', { accept: 'trigonal bipyramidal' }), 'correct', 'through an accept member');
+  // Narrow: a number AND a degree sign, once, against a shape's name only.
+  for (const typed of ['bent (109)', 'bent (tetrahedral)', 'linear (180°)', 'bent (109°) (120°)']) assert.equal(checkText(typed, 'bent'), 'incorrect', typed);
+  assert.equal(checkText('nitrogen (109°)', 'nitrogen'), 'incorrect');
+  assert.equal(gradeText('bent (109°)', 'bent').status, 'correct');
+});

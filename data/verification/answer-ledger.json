@@ -89,6 +89,14 @@
     "result": "agrees"
    }
   },
+  "00250fbab1f90d77": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp67177072 — key square pyramidal; part: ClF₅. Enter the molecular structure.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "002630f4208e851e": {
    "verdict": "ok",
    "note": "key-term recall: horizontal gene transfer; printed in § summary: \"Drug resistance genes are often carried on plasmids or in transposons that can undergo vertical transfer easily and between microbes throug…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -360,6 +368,14 @@
   "00a6a6d69e641c24": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "00a8bee2c140bf24": {
+   "verdict": "ok",
+   "note": "Each molecule HCl has two kinds of atoms, all molecules alike: compound; source (f) compound. Only change: closing period. | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | hint-only edit, November 15, 2026: a heading of the same page is called a subsection; stem, key, and options unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -802,6 +818,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "0176950e7fa81a6d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp14744000 (corrected wording, ruling 7.6-6) — model answer the source solution"
   },
   "017e120177275a3d": {
    "verdict": "ok",
@@ -2266,6 +2286,14 @@
     "result": "agrees"
    }
   },
+  "045bd05da35050ab": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp173506592 (printed 21) part (a); key HF (solution fs-idm3310160); dEN 1.9 vs 0.9",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "045facbd415717fe": {
    "verdict": "ok",
    "note": "author-built from § Alkylating Agents, Check Your Understanding: \"What chemical reaction do alkylating agents participate in?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -2590,6 +2618,14 @@
    "note": "glossary recall: somatic cell (fs-id801372) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "0503267c7ec6d7bd": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp47136656 — key trigonal bipyramidal; part: Enter the electron-pair geometry.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -3050,6 +3086,14 @@
     "result": "agrees"
    }
   },
+  "05d07304dc936164": {
+   "verdict": "ok",
+   "note": "cloze from body sentence fs-idp51725632 'The Born-Haber cycle is an application of Hess’s law that breaks down the formation of an ionic solid into a series of individual steps' (beyond-floor filler for subsection The Born-Haber Cycle)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "05d4b1d151430bf4": {
    "verdict": "ok",
    "note": "m66671 fs-idp77492064; model answer is the source CT solution verbatim, checkpoints decompose its own clauses with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -3299,6 +3343,14 @@
    "note": "a_n=n!/n^2 for n=1..4, computed with BigInt-safe factorials: 1,1/2,2/3,3/2 (source Algebraic #43, printed solution matches). | carried Oct 12 2026 (Precalculus ch11–12 re-review): re-hashed by a form, stem, or hint edit, key unchanged; re-solved blind (fable-solver, 77/77)",
    "solved": {
     "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
+  "066b9235bfe09391": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp67177072 — key tetrahedral; part: PH₂⁻. Enter the electron-pair geometry.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -4455,6 +4507,14 @@
     "result": "agrees"
    }
   },
+  "088fae053d9074f0": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm117401984 (printed 9) part (d), ion configuration: 1s² as printed; electron count re-derived",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0894d833ae21cb08": {
    "verdict": "ok"
   },
@@ -4557,6 +4617,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "08ce4329e02e1ebc": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp822144 (answer image CNX_Chem_07_03_Interhal_img)"
   },
   "08e21cbf9e026393": {
    "verdict": "ok",
@@ -4855,6 +4919,14 @@
    "note": "glossary recall: mycelium (fs-idp34007872) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "0980f00fbb3db8b1": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp25221456 (one item per molecule), key 0",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -5740,6 +5812,10 @@
     "result": "agrees"
    }
   },
+  "0b3cebf31f6a0e47": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm49800144 part (c)"
+  },
   "0b3e238bf275355f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -5747,6 +5823,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "0b444ab7f473a27d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp49074848 (printed 11), solution fs-idm21247904 whole"
   },
   "0b471a5fd459d594": {
    "verdict": "ok",
@@ -5867,6 +5947,14 @@
    "note": "KC 7 37.1 § body Lipid-Derived Hormones (or Lipid-soluble Hormones) (remainsteroid), m66626 — parent re-read against the module",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "0b6c8ae74b9d6149": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp123628080 — key trigonal pyramidal; part: ClOF₂⁺ (Cl is the central atom). Enter the molecular structure.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -6916,6 +7004,14 @@
     "result": "agrees"
    }
   },
+  "0d8a808f8de18a94": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm94727984 (printed 5) part (b): Mg²⁺ as printed",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0d8b5bdf31077fff": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -7257,6 +7353,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "0e31676c4e6652e5": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp122940912 — model answer the source solution; owing molecule, including resonance structures where appropriate: CS₂."
   },
   "0e335c2d79f05c63": {
    "verdict": "ok",
@@ -8177,6 +8277,10 @@
     "result": "agrees"
    }
   },
+  "0feb0ceb6f92ba25": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp17356704 — model answer the source solution; Identify a molecule with trigonal bipyramidal molecular structure."
+  },
   "0fec5acacfbb9a97": {
    "verdict": "ok"
   },
@@ -8855,6 +8959,14 @@
     "result": "agrees"
    }
   },
+  "1193e6ae644bad1b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp32930976 — key phosphorus; The molecule XF₃ has a dipole moment. Is X boron or phosphorus?",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "119672d49f41f16f": {
    "verdict": "ok",
    "note": "Body CYU 1/2, § The Iceman and Evidence of Early Treatments + § Early Notions of Disease, Contagion, and Containment (both preceding subsections): model answer assembled from Ötzi's treatments, the Bible quarantine passage, and Ibn Sina's isolation practice. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -9271,6 +9383,10 @@
     "result": "agrees"
    }
   },
+  "1264acef77fe3abb": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm49800144 part (a)"
+  },
   "1269a094511cee54": {
    "verdict": "ok",
    "note": "selfcheck kept deliberately: reverse-recall of neurocysticercosis/epilepsy MC (avoid distinctItems collision) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -9512,6 +9628,14 @@
    "verdict": "ok",
    "note": "KC 2 8.4 § body (Lactic Acid Fermentation), m58822"
   },
+  "12f2a2990a51488d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp87226080 — key yes; Does the following molecule or ion have a dipole moment? ClF₅.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "12f2e7f33952ca45": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -9700,6 +9824,14 @@
     "result": "agrees"
    }
   },
+  "134412d62c23661a": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp57252544 — key linear; part: BeH₂. Enter the electron-pair geometry.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "134eb7a8e965fa6f": {
    "verdict": "ok",
    "note": "KC 4 17.4 § Pathogen Recognition, m58880 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | Microbiology KC re-review Sep 24 2026 (KC 13-14, 15-20, 21-26): parent re-read of the replacement/reworded self-check; model answer is the module sentences, rubric decomposes it"
@@ -9860,6 +9992,10 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
+  },
+  "139f23e38bfa9c24": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp52580272 part (b)"
   },
   "13a22beb7190d289": {
    "verdict": "ok",
@@ -10948,6 +11084,14 @@
   "159f6a89ab30bdf8": {
    "verdict": "ok"
   },
+  "15a06df4873d7659": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm2891376 — key trigonal planar; part: Enter the molecular structure.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "15a1c8e5bece900d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -10990,6 +11134,14 @@
   "15b5ac836962c53e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "15b8d9f9285bf60e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp16503888 — key trigonal pyramidal; part: the chlorine atom in chloric acid, HClO₃ [HOClO₂]. Enter the molecular structure.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -11464,6 +11616,14 @@
   "169b28ec7d983d2d": {
    "verdict": "ok",
    "note": "cloze of fs-id1318518 first sentence; key anabolism printed verbatim in the parenthesis",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "16a0635595eee794": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp57252544 — key trigonal bipyramid; part: PCl₅. Enter the electron-pair geometry.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -12197,6 +12357,15 @@
    "verdict": "ok",
    "note": "m58798 § Low G+C Gram-positive Bacteria: the module classifies streptococci by Lancefield groups and hemolysis on blood agar. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "17d02ded3c879b39": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm28148800 part (c); key 'H, P, S, O, F'; Figure 7.6 prints H and P both 2.1 (a tie the key orders H first; modern Pauling H 2.20 > P 2.19) -- parent ruling: tie to be accepted via an ordering accept attribute (accept=\"P < H < S < O < F\" added)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "The page's own electronegativity figure gives H and P the same value (2.1), so both orders of that pair follow; the key is the source's order (m68738, exercise fs-idm28148800) and the item's `accept` takes the tied order, with the widened-key Source note. The solver's answer agrees with the key; the flag re-raises a recorded ruling."
+   }
+  },
   "17d13a8cd1dbe8b6": {
    "verdict": "ok",
    "note": "KC 5 23.5 § introduction, m58921 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | Microbiology KC re-review Sep 24 2026 (KC 13-14, 15-20, 21-26): parent re-read of the replacement/reworded self-check; model answer is the module sentences, rubric decomposes it"
@@ -12842,6 +13011,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "18fad2c88880df78": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp29388832 part (b); model answer = source segment (b)"
   },
   "18fc264009d85d72": {
    "verdict": "ok",
@@ -15261,6 +15434,14 @@
     "result": "agrees"
    }
   },
+  "1da1c358c9891f48": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp173506592 part (c); key OH; SH 0.4 vs OH 1.4",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1da6c446c4fecca3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -17497,6 +17678,14 @@
     "result": "agrees"
    }
   },
+  "2211a3ef32c9b216": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm121789856 (printed 15) part (a); key Cl (solution fs-idm10691120); Figure 7.6 Br 2.8 < Cl 3.0",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2223a8e7d76f8f73": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -17682,6 +17871,14 @@
     "result": "agrees"
    }
   },
+  "2288578bb3e78dda": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm117401984 (printed 9) part (f), atom configuration: 1s²2s²2p⁶3s²3p⁴ as printed; electron count re-derived",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "22892410f36ec9a7": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -17816,6 +18013,14 @@
   },
   "22c914aabdec495f": {
    "verdict": "ok"
+  },
+  "22ccd509d7d21e10": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm69463840 (printed 7) part (l): [Ar]3d¹⁰4s² as printed; electron count re-derived",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "22d9bb115a33dc0e": {
    "verdict": "ok",
@@ -18650,6 +18855,14 @@
   "24c6511d7b0b0dc8": {
    "verdict": "ok",
    "note": "Critical Thinking fs-id2024053 solution fs-id1423119 verbatim; checkpoints are its own clauses"
+  },
+  "24c93d37a5e99d10": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp30217376, answer sentence: CO has the strongest carbon-oxygen bond",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "24ce0db3517896b9": {
    "verdict": "ok",
@@ -20563,6 +20776,14 @@
   "288dbc3d81b18864": {
    "verdict": "ok"
   },
+  "28909fa13024701e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm69463840 (printed 7) part (j): [Ar]3d⁷ as printed; electron count re-derived",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2890a29e9040fd62": {
    "verdict": "ok",
    "note": "Review fs-id1804706, solution fs-id1812183 key B calcitonin; body fs-id1569683",
@@ -21034,14 +21255,6 @@
     "result": "agrees"
    }
   },
-  "29771cf095cda88d": {
-   "verdict": "ok",
-   "note": "CO2 has fixed composition of two elements: compound; source (e) compound. Only change: closing period. | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "297cb8db0ddc9c97": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -21178,6 +21391,14 @@
    "note": "Summary-derived textin (disclosed in footer). m66445 Section Summary states verbatim 'A cell is the smallest unit of life.' Answer 'smallest' matches; the word does not appear in the prompt. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "29bc2b1048a49d26": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp123628080 — key tetrahedral; part: SO₂F₂ (S is the central atom). Enter the electron-pair geometry.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -21933,6 +22154,14 @@
    "verdict": "ok",
    "note": "TI9: f(x)=5x^2-x+4 at x=2: f'(x)=10x-1, f'(2)=19; f(2)=20-2+4=22; tangent y=19(x-2)+22=19x-16. Confirmed numerically node: slope 19.0000000018, intercept -16.0000000035. Matches source Try It solution y=19x-16."
   },
+  "2b413df3add1dca1": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp60611664 — key yes; Does the following molecule have a dipole moment? CCl₂F₂.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2b44c99afa63cd03": {
    "verdict": "ok",
    "note": "author-built from § Secondary Immunodeficiency, Check Your Understanding: \"What is the most common cause of secondary immunodeficiencies?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -21998,6 +22227,14 @@
    "note": "summary-sourced cloze on the module's own section.summary sentence fs-idp51599040 (\"...it may mean the release of sperm and eggs into the environment\"); no new claim, blanked phrase is a single content word not appearing elsewhere in the surviving prompt. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "2b6bf266941a65fc": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp26472064, formula NF₃ (mole ratio 3.005 recomputed; molar mass 71.001)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -22113,6 +22350,14 @@
     "note": "Key stands. The pinned CNXML key is \"the desert southwest\" and the module says the fungus is found \"in the desert southwest\"; the San Joaquin Valley is where the microbe is endemic (Valley fever), not where most US cases occur. accept extended with \"the southwestern United States|the Southwest\" (solver alsoDefensible)."
    }
   },
+  "2bc15b9ecd1f4d1c": {
+   "verdict": "ok",
+   "note": "Oxygen (O2) contains one kind of atom: element; source (b) element. Only change: closing period. | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | hint-only edit, November 15, 2026: a heading of the same page is called a subsection; stem, key, and options unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2bc58b1466895442": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -22164,6 +22409,18 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "2bdab559293202df": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp67177072 — key seesaw; structure of the following molecule or ion? SeF₄. Enter the molecular structure.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "2be1bb93199a3604": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp11428640 part (c), drawing Ques2ansc_img"
   },
   "2be6a6ae970ca211": {
    "verdict": "ok",
@@ -22283,6 +22540,14 @@
   "2c10fd7f90ff1991": {
    "verdict": "ok",
    "note": "glossary recall: trypsin (fs-idp54026480) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "2c1228a384d5e1e9": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp60611664 — key yes; following molecule have a dipole moment? ClNO (N is the central atom).",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -23103,6 +23368,14 @@
   "2dd9593d5ffe8fd8": {
    "verdict": "ok",
    "note": "author-built from § Glycolysis: \"Pyruvate may be broken down further after glycolysis to harness more energy through aerobic or anaerobic respiration, but many organisms, i…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "2de5238ca2bf96ae": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm117401984 (printed 9) part (f), ion configuration: 1s²2s²2p⁶3s²3p⁶ as printed; electron count re-derived",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -25328,9 +25601,25 @@
     "result": "agrees"
    }
   },
+  "3238815c284d7e71": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp23408944 part (a), key 0",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3238ab8112f60379": {
    "verdict": "ok",
    "note": "m66722 critical-thinking exercise fs-idp19557504. Model answer is the source solution verbatim (lightly split into two sentences, no new claims): morphological similarities can be superficial rather than evolutionary, and similar traits can evolve independently for similar ecological reasons (convergent evolution). Rubric checkpoints are the solution's own two clauses. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "323a047ba25748e0": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp16780032 part (c); 611 + 4(415) + 3(498) - 4(741) - 4(464) = -1055; source -1055 kJ",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "323b06ee88dee176": {
    "verdict": "ok",
@@ -25543,6 +25832,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "32b887669532fb1d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp15556576 part (k)"
   },
   "32bb2182b48b152c": {
    "verdict": "ok",
@@ -25779,6 +26072,14 @@
   "33339b8f89a4becb": {
    "verdict": "ok"
   },
+  "33347d6bd9246dbd": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp173506592 part (b); key CO; NO 0.5 vs CO 1.0",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3334b49ae4668504": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -25903,6 +26204,10 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
+  },
+  "337977c3a5fed9ec": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp59620704, source answer whole with its drawing Ex070402_img"
   },
   "337f05ecfcb6d673": {
    "verdict": "ok",
@@ -26300,6 +26605,14 @@
     "result": "agrees"
    }
   },
+  "34561a8fad4bb8f6": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp123628080 — key trigonal planar; part: Cl₂CO (C is the central atom). Enter the molecular structure.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3459323365bf5df6": {
    "verdict": "ok",
    "note": "source exercise fs-idp117088800 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -26338,6 +26651,14 @@
   },
   "3470422a0d4fdf84": {
    "verdict": "ok"
+  },
+  "3470d056dda11e3b": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm33428592 (para fs-idp36454672); key -35 = 611 + 464 - 345 - 415 - 350 from the page's bond-energy table; source prints –35 kJ",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "3473405b112626e3": {
    "verdict": "ok",
@@ -26478,6 +26799,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "34a78c078836fa9c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm2043120 — model answer the source solution; part: Explain the difference between electron-pair geometry and molecular structure."
   },
   "34ac13ee82cfe379": {
    "verdict": "ok",
@@ -26658,6 +26983,14 @@
   "3514f138a9f48e52": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "35191f7e453c19c5": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp87226080 — key no; Does the following molecule or ion have a dipole moment? TeCl₄²⁻.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -26901,6 +27234,10 @@
   "35807000ddce2ce4": {
    "verdict": "ok",
    "note": "Biology 7.4 source visual-connection selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (proton pumping into the intermembrane space per the chemiosmosis caption; visible Source note corrects the source's 'electrons')"
+  },
+  "358a40a25891f976": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp37438640 part (a)"
   },
   "358c5c527c9a3c2d": {
    "verdict": "ok",
@@ -27189,6 +27526,14 @@
     "result": "agrees"
    }
   },
+  "361ccda9db90aac0": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp29388832 part (a); source key Na2O",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "36201e6e51aa7293": {
    "verdict": "ok",
    "note": "author-built from § Microbes and Viruses in Genetic Research, Check Your Understanding: \"What did Hämmerling prove with his experiments on Acetabularia ?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -27384,6 +27729,10 @@
     "result": "agrees"
    }
   },
+  "3673047488286b96": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp137881216 part (d), drawing Exercis12d_img with its printed formal charges"
+  },
   "3673637f087b8295": {
    "verdict": "ok",
    "note": "author-built from § Essential Nutrients: \"Deficiencies Can Lead To\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -27415,6 +27764,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "368da965ef50c306": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp52580272 part (c)"
   },
   "368e9a1b2beb9cb2": {
    "verdict": "ok",
@@ -28117,6 +28470,10 @@
    "verdict": "ok",
    "note": "KC 7 40.4 § How Blood Flows Through the Body, m66654 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | Biology knowledge check 33-43 author (KC) selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the capillary flow-rate paragraph, Section 40.4)"
   },
+  "380c808bd53e2b64": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp52580272 part (e)"
+  },
   "3812bf755c115bad": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -28140,6 +28497,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "382da18f3935aecc": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm75285152"
   },
   "3832a3faa0df9ee8": {
    "verdict": "ok",
@@ -28224,6 +28585,10 @@
     "result": "agrees"
    }
   },
+  "3851ef89b18ca91f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp170194320 — model answer the source solution; Explain how a molecule that contains polar bonds can be nonpolar."
+  },
   "3852ac8369f15c1e": {
    "verdict": "ok",
    "note": "cloze from body sentence fs-idm60561504 \"Solutions have previously been defined as homogeneous mixtures...\"",
@@ -28255,6 +28620,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "38614e6cb255ac22": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp28520976 (printed 67); model answer = source solution; left structure 2(390)+200+464 = 1444 vs right 3(390)+200 = 1370"
   },
   "38671b10ae2f999f": {
    "verdict": "ok",
@@ -28295,6 +28664,14 @@
   "387ca6fe9154606e": {
    "verdict": "ok",
    "note": "source exercise fs-idm80933584 part (e) (number of neutrons); key 16",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "38814f68472f9b46": {
+   "verdict": "ok",
+   "note": "cloze from body sentence fs-idp40754368 (also Summary); accept monatomic ions (head noun)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -28398,6 +28775,14 @@
   "38bd07fe12e1151f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "38c2dfa01d186f83": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp23408944 part (c), key 0",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -28666,6 +29051,10 @@
     "note": "Key 105 stands: the pinned CNXML solution (m82455 fs-id Try It after the Mustangs example) reads \"The Bears lost 105 yards.\" The ask is \"the number of yards lost\", a magnitude; the example above ends the same way (3(-15) = -45, \"The team lost 45 yards\") and the hint says to answer with the number of yards lost."
    }
   },
+  "39392bf9568fa98d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp149682416 — model answer the source solution; ecule might have. Give an example of a molecule or ion for each shape."
+  },
   "393b6b128a062f5c": {
    "verdict": "ok",
    "note": "log_a(b)=c converts to a^c=b by definition; matches CNXML Section Exercise 7 (fs-id1165137473551)."
@@ -28761,6 +29150,10 @@
   },
   "3970a521965b7f74": {
    "verdict": "ok"
+  },
+  "3971bef6f92cb6ca": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp122940912 — model answer the source solution; ollowing ion, including resonance structures where appropriate: CS₃²⁻."
   },
   "3972effd9ae8cd1d": {
    "verdict": "ok",
@@ -28903,6 +29296,14 @@
   "39c7f20abe1c3fea": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "39c94398b786adbe": {
+   "verdict": "ok",
+   "note": "glossary recall: free radical (definition fs-idm4719424); accept odd-electron molecule from Summary fs-idm18966656",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -29638,6 +30039,10 @@
     "result": "agrees"
    }
   },
+  "3b51a455af030b26": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp12625232 part (d); model answer corrected per rulings 7.5-1 (claims F6, Section 6.5: s electron harder to remove than p of same shell; 3s not 2s), Source note"
+  },
   "3b55c86150682141": {
    "verdict": "ok",
    "note": "KC 5 26.4 § table Plant Origin of Medicinal Compounds and Medical Applications (tab-ch26_04_02), m66575 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
@@ -29726,6 +30131,14 @@
    "note": "source exercise fs-id2186982 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "3b77e0c741e43942": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp57252544 — key octahedral; part: SF₆. Enter the electron-pair geometry.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -29957,6 +30370,10 @@
     "result": "agrees"
    }
   },
+  "3be2249af43c8394": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp15556576 part (d)"
+  },
   "3be24d36cb8266eb": {
    "verdict": "ok",
    "note": "CT fs-id1180174 source solution verbatim; checks are its clauses"
@@ -29984,6 +30401,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "3beb6353fa0dafca": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp73458400 — model answer the source solution; ains 85.7% carbon and 14.3% hydrogen. What is its molecular structure?"
   },
   "3bf003424d598b4b": {
    "verdict": "ok",
@@ -30843,6 +31264,10 @@
     "result": "agrees"
    }
   },
+  "3de4bbb9543fad31": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm22310960 (printed 73); model answer = source image C6H8ans_img + source sentence + added description; 32 valence electrons counted"
+  },
   "3de54bccde332de8": {
    "verdict": "ok",
    "note": "Reflect f(x)=10^x about x-axis (multiply by -1) then shift up 7: g(x)=-10^x+7; matches CNXML solution exactly. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -31689,6 +32114,14 @@
   "3f4a2820ca5da2b8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "3f4a82373ae5151f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm69463840 (printed 7) part (c) Be²⁺: 1s² as printed, [He] accepted as the core form the module uses for ions; electron count re-derived",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -33166,6 +33599,10 @@
     "result": "agrees"
    }
   },
+  "423058d707da2d2e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm764384"
+  },
   "42337e3b7f2d5094": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -33579,6 +34016,10 @@
     "result": "agrees"
    }
   },
+  "4307dd1c006dc545": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp56829344 — model answer the source solution; it will point. Check the molecular dipole box to test your hypothesis."
+  },
   "4309e57293088e5a": {
    "verdict": "ok",
    "note": "KC 4 21.4 § T cell-dependent versus T cell-independent Antigens, m46558",
@@ -33874,6 +34315,14 @@
   "439d8a3d4fbdb6a1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "43a9cdcf744a1a80": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm117401984 (printed 9) part (a), atom configuration: 1s²2s²2p⁶3s²3p¹ as printed; electron count re-derived",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -34362,6 +34811,14 @@
    "verdict": "ok",
    "note": "m66374 solution fs-idm200102079 (decreasing temperature's two effects on diffusion): model answer verbatim match. Four CHECKS clauses restate kinetic energy decrease, slower molecular speed, membrane compression/density increase, and slowed diffusion — all present in the solution. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "44a99fbf6cd543bf": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp123628080 — key tetrahedral; part: Cl₂SO (S is the central atom). Enter the electron-pair geometry.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "44acbcf312afdcca": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -34471,6 +34928,14 @@
   "44d436cbaf3728e3": {
    "verdict": "ok",
    "note": "glossary recall: nephridiopore (fs-idm52288368) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "44e5004d5cdb59c3": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp57252544 — key trigonal planar; part: CH₃⁺. Enter the molecular structure.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -35183,6 +35648,14 @@
     "result": "agrees"
    }
   },
+  "46487c8fd5767756": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm21031296 (answer C −1, O +1); this item: O",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "464ee70d412dfb0c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -35331,6 +35804,14 @@
    "note": "glossary recall: secondary succession (fs-idp68798992) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "468f6dbccbfa97ee": {
+   "verdict": "ok",
+   "note": "glossary recall: bond length (definition fs-idm4648560); body term-00002 in Formation of Covalent Bonds",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -35836,6 +36317,14 @@
     "result": "agrees"
    }
   },
+  "47d130168c4fe185": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm121789856 part (d); key S; P 2.1 < S 2.5",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "47d307e3c0e120c5": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -35902,6 +36391,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "47ef7fcaeb18440d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp37438640 part (b)"
   },
   "47f13cb190fe45c9": {
    "verdict": "ok",
@@ -36434,6 +36927,14 @@
     "result": "agrees"
    }
   },
+  "48ffa4802815fb1f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp57252544 — key trigonal planar; part: CH₃⁺. Enter the electron-pair geometry.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "48fffd7032e62b4b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -36774,6 +37275,14 @@
   "49bef6d436700b8a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "49c3570f22793d06": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm94727984 (printed 5) part (f): Cs⁺ as printed",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -38089,6 +38598,14 @@
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
   },
+  "4c7f86f2edd95003": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp63165504 (printed 3), member Cs: answer lists it under cations (metals)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4c80e196ca6dd6fe": {
    "verdict": "ok",
    "note": "Biology 14.6 source CT selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (mismatch-repair paragraph; visible Source note drops the xeroderma example the section assigns to nucleotide excision repair)"
@@ -38255,6 +38772,14 @@
   "4cd0c9b392e99f57": {
    "verdict": "ok",
    "note": "Bio 21.2 influenza egress selfcheck: dependency re-hashed only; model answer = source solution (m66535); parent re-read Sep 23 2026"
+  },
+  "4cd4b644396423f8": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp16780032 part (b); 415 + 150 - 240 - 295 = 30; source 30 kJ",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "4cd52796ad1cc317": {
    "verdict": "ok",
@@ -38926,6 +39451,14 @@
     "result": "agrees"
    }
   },
+  "4e284eef8711cd08": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp29388832 part (c); source key BaS",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4e2971ea7127f3c6": {
    "verdict": "ok",
    "note": "KC 7-12 (multiplechoice, line 339): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
@@ -39590,6 +40123,14 @@
     "result": "agrees"
    }
   },
+  "4f9baf1b45e51804": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm94727984 (printed 5) part (e): Cl⁻ as printed",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4f9f35ed364d3a93": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"The body’s basal metabolic rate is controlled by the thyroid hormones thyroxine (T 4 ) and triiodothyronine (T 3 ).\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -39849,6 +40390,14 @@
   "500ad2dd4a2e780d": {
    "verdict": "ok",
    "note": "spermatogonia recall, stem rebuilt from body (checker finding): fs-id2212393 'Spermatogonia are the stem cells of the testis' + fs-id2919041 'begins with mitosis of the diploid spermatogonia'; accept spermatogonium; glossary meaning also fit primary spermatocytes",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "500c34411f3c89be": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp56478288, key ONO⁻; options the two structures of NO2ion_img in its order",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -40446,6 +40995,10 @@
     "result": "agrees"
    }
   },
+  "5158d2e680e5b5a0": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp52580272 part (d)"
+  },
   "515ae1e1830bc2a6": {
    "verdict": "ok",
    "note": "source exercise fs-id1167661641169 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -40525,6 +41078,14 @@
   "5181bd0d0aa321a2": {
    "verdict": "ok",
    "note": "source exercise fs-idp13191008 (printed 4.95): source WCl4; own Cl:W = 4.855e-3/1.2144e-3 = 4.00",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "5185d75a82f88666": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp59620704 (N: 0; all three Cl atoms: 0)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -41284,10 +41845,6 @@
   "53261cd1a3a6acb1": {
    "verdict": "ok"
   },
-  "532ae8095c62d926": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp56139840 (solution fs-idm15480208); re-derived (atoms and charge balanced, lowest terms) against raw CNXML m68709"
-  },
   "532eec19a1da1a85": {
    "verdict": "ok",
    "note": "glossary recall internuclear ophthalmoplegia fs-id2002281, stem from the corrected definition (claim correction)",
@@ -41407,6 +41964,14 @@
     "result": "agrees"
    }
   },
+  "5361ccb8096c7eaf": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp173506592 part (f); key PO; SO 1.0 vs PO 1.4",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "53634a11352a7343": {
    "verdict": "ok"
   },
@@ -41486,6 +42051,14 @@
   "537c3c6b64b5ff42": {
    "verdict": "ok",
    "note": "glossary recall: covalent bond (fs-id1886622) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "537e415020871328": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp63165504 (printed 3), member Pb: answer lists it under cations (metals)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -41670,6 +42243,14 @@
    "note": "KC 2 7.4 § body Complex I (fs-id2186394), m66468 — parent re-read against the module",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "53ded651067a5bd1": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm121789856 part (e); key N; Si 1.8 < N 3.0",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -42089,6 +42670,14 @@
     "result": "agrees"
    }
   },
+  "54af0e778478eb0c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp19660960 (printed 71); Appendix G: SF4 (278.81+4*79.4+728.43)/4 = 331.2, SF6 (278.81+6*79.4+1220.5)/6 = 329.3; source 'The S–F bond in SF4 is stronger'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "54afe9a30363ef92": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -42128,14 +42717,6 @@
   "54c05fcaacc27a08": {
    "verdict": "ok",
    "note": "source exercise fs-idm187202528 part (b) (number of neutrons); key 74",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "54c31ac00f59f907": {
-   "verdict": "ok",
-   "note": "Iron is one kind of atom, cannot be broken down chemically: element; source (a) element. Only change: closing period. | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -42650,6 +43231,10 @@
     "result": "agrees"
    }
   },
+  "55e3624295152aad": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp15556576 part (i)"
+  },
   "55e58dd20ed0fd04": {
    "verdict": "ok"
   },
@@ -42723,6 +43308,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "560d87facadb903f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp11428640 part (e), drawing Ques2anse_img"
   },
   "560efc496e707b84": {
    "verdict": "ok",
@@ -43294,6 +43883,10 @@
     "result": "agrees"
    }
   },
+  "57402365612833b1": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm49800144 part (e)"
+  },
   "57440bca1068b7af": {
    "verdict": "ok",
    "note": "Review fs-id1909786 key C; fs-id1397163 epiphyseal plate growth lengthens bone",
@@ -43416,6 +44009,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "57843d99918c487d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp30217376 part (b), drawing Ques13ansc_img and the answer sentence whole"
   },
   "578460c54e08f689": {
    "verdict": "ok",
@@ -44301,6 +44898,10 @@
     "result": "agrees"
    }
   },
+  "59306bd237d4363d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp55219680 (printed 79); model answer = source solution whole"
+  },
   "59310878a9c19226": {
    "verdict": "ok",
    "note": "Glossary textin for initiation complex (fs-id2746232); prompt is the glossary meaning, accept includes the body's own 'translation initiation complex' phrasing. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -44316,6 +44917,14 @@
   "593fe2d89e9aca56": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "5942623bd5f4958f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp57252544 — key octahedral; part: SF₆. Enter the molecular structure.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -44715,6 +45324,14 @@
   "59f6b11c6f5589ed": {
    "verdict": "ok",
    "note": "source exercise fs-idm98103760 part (d); hydrate 322.20, 10500/322.20/18.60 = 1.752, source 1.75",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "59fb9259f7111fbf": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp60611664 — key yes; following molecule have a dipole moment? PCl₃ (P is the central atom).",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -45122,6 +45739,14 @@
   "5ac0d1b92066a19f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "5ac17d72f230b7c4": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp63165504 (printed 3), member Co: answer lists it under cations (metals)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -46212,6 +46837,15 @@
     "result": "agrees"
    }
   },
+  "5cd917be80f4912b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm28148800 part (d); key 'Na, Al, H, P, O'; Figure 7.6 H = P = 2.1 tie, as part (c) -- parent ruling: tie to be accepted via an ordering accept attribute (accept=\"Na < Al < P < H < O\" added)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "The page's own electronegativity figure gives H and P the same value (2.1), so both orders of that pair follow; the key is the source's order (m68738, exercise fs-idm28148800) and the item's `accept` takes the tied order, with the widened-key Source note. The solver's answer agrees with the key; the flag re-raises a recorded ruling."
+   }
+  },
   "5cd9a5e7dd7476a2": {
    "verdict": "ok",
    "note": "C(10,3)*C(6,5)*C(5,2)=120*6*10=7200 (node BigInt), matches CNXML key. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -46484,6 +47118,14 @@
   "5d6efb7723905dd7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "5d6fc76444b917e9": {
+   "verdict": "ok",
+   "note": "Baking powder is baking soda plus a solid acid and starch in varying amounts: mixture; source (h) mixture. Only change: closing period. | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | hint-only edit, November 15, 2026: a heading of the same page is called a subsection; stem, key, and options unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -47249,6 +47891,14 @@
    "verdict": "ok",
    "note": "Cancelled factor (x-1) gives a hole at x=1; reduced value (1+3)/(1+1)=2, so (1,2); matches CNXML source answer. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "5f1b55db26a1415f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp87226080 — key no; Does the following molecule or ion have a dipole moment? XeF₂.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5f1d7c02c88f3180": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
@@ -47816,6 +48466,10 @@
     "result": "agrees"
    }
   },
+  "6062befda0196d6d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp37438640 part (d)"
+  },
   "606fcd6ba3b0ffe4": {
    "verdict": "ok",
    "note": "body cloze fs-id2025868: ciliated epithelial cells move mucus upwards",
@@ -47894,6 +48548,14 @@
   "609a7fa54da3d573": {
    "verdict": "ok",
    "note": "Body selfcheck, author-written from § Characteristics of Fungi ('Some fungi are dimorphic... growing as a mold, for example, at 25 °C (77 °F), and as yeast cells at 37 °C (98.6 °F)'); 'explain' needs two module sentences assembled, so it stays a selfcheck per the unkeyed-question rule."
+  },
+  "609b3ce383229ef6": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp123628080 — key tetrahedral; part: SO₂F₂ (S is the central atom). Enter the molecular structure.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "609eda3ec8b3f1e9": {
    "verdict": "ok",
@@ -48017,6 +48679,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "60c5f185c22d9756": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp116942080 — model answer the source solution; m, the three carbon atoms, and the oxygen atom with hydrogen attached."
   },
   "60c85ecd40548f4d": {
    "verdict": "ok",
@@ -48152,6 +48818,10 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
+  },
+  "611519a1cbb48e21": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp63165504: stem and source answer whole"
   },
   "611ac738e35ce9f7": {
    "verdict": "ok",
@@ -48336,6 +49006,10 @@
   "617ad0c00b135a47": {
    "verdict": "ok",
    "note": "m58800 § Euryarchaeota: the module defines methanogens as archaea that reduce carbon dioxide with hydrogen and produce methane, explaining the bog bubbles. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "617db301d3fd5feb": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp29388832 part (d); model answer = source segment (d)"
   },
   "61802c7c014b7b8c": {
    "verdict": "ok",
@@ -48579,6 +49253,14 @@
     "result": "agrees"
    }
   },
+  "6202c6a06c500c7e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp23408944 part (c), key 0",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "620486180163a678": {
    "verdict": "ok",
    "note": "source exercise fs-idm169041360 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -48679,6 +49361,10 @@
    "verdict": "ok",
    "note": "Try It 2: 3*4*5=60, multiplication principle. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "6259be6188bb6060": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp122940912 — model answer the source solution; lowing molecule, including resonance structures where appropriate: CS."
+  },
   "625e3e00e555782e": {
    "verdict": "ok",
    "note": "cloze of fs-id1956663",
@@ -48690,6 +49376,10 @@
   "6264843e175554ac": {
    "verdict": "ok",
    "note": "Try It 10: CARRIER has 7 letters, R x3; 7!/3!=840 (node BigInt). | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "62657c4d630ec0cc": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp137881216 part (a), drawing Exercis12a_img with its printed formal charges"
   },
   "6267cf8a0f876447": {
    "verdict": "ok",
@@ -48966,6 +49656,14 @@
   "631375b4737764a9": {
    "verdict": "ok",
    "note": "Try It 5 part b: opposite = 20*sin(pi/3) = 10*sqrt(3) = 17.320508..., computed with node; matches CNXML solution 'opposite=10 sqrt3'."
+  },
+  "6319542ac7b30ec7": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm117401984 (printed 9) part (c), atom configuration: 1s²2s²2p⁶3s²3p⁶3d¹⁰4s²4p⁶5s² as printed; electron count re-derived",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "63216904e854bdf1": {
    "verdict": "ok",
@@ -49620,6 +50318,10 @@
     "result": "agrees"
    }
   },
+  "64d774be8d6007ea": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp37438640 part (c)"
+  },
   "64da425d5909e13b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -49655,6 +50357,14 @@
   "6505d9e74371aef7": {
    "verdict": "ok",
    "note": "Practice selfcheck, unkeyed SA fs-id1167663712531 — model answer assembles the direct-HA titer sentence and the HIA titer sentence, contrasting what is diluted (virus vs. antibody) in each. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "650799d3f372023f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm94727984 (printed 5) part (d): O²⁻ as printed",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "650b5431cdae254e": {
    "verdict": "ok",
@@ -49785,10 +50495,6 @@
   },
   "6564c74082e383f1": {
    "verdict": "ok"
-  },
-  "6564dfb6525d31a5": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp135248192 (module ex 4, printed 11); model answer = source solution verbatim"
   },
   "656767c3d736a64c": {
    "verdict": "ok",
@@ -50355,6 +51061,14 @@
     "result": "agrees"
    }
   },
+  "669a1d78d4f64f3e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp123628080 — key trigonal planar; part: ClNO (N is the central atom). Enter the electron-pair geometry.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "669fc706663a2655": {
    "verdict": "ok",
    "note": "author-built from § Listeriosis, Check Your Understanding: \"How does Listeria enter the nervous system?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -50409,6 +51123,14 @@
   "66cea3ddc3781ca1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "66d3a0bf93d92db9": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm28148800 part (b); key 'H, I, Br, Cl, F'; 2.1<2.5<2.8<3.0<4.0",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -50817,6 +51539,10 @@
     "result": "agrees"
    }
   },
+  "679e03b5293bb3bd": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm8464272 part (a)"
+  },
   "67a19be9021c5911": {
    "verdict": "ok",
    "note": "P(11,5)=11*10*9*8*7=55440 (node BigInt); confirmed retyping 'P(11,5)' grades incorrect via checkAnswer. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -51027,6 +51753,10 @@
     "result": "agrees"
    }
   },
+  "680dea8bc4c196aa": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp87226080 part (f), selfcheck per ruling 7.6-4 — model answer the source solution; Does the following molecule or ion have a dipole moment? PH₂⁻."
+  },
   "680ead2c796c0762": {
    "verdict": "ok",
    "note": "body cloze fs-id2760204 constitutively; accept always|continuously|constantly",
@@ -51063,6 +51793,14 @@
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "68217ec317d5f197": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp16503888 — key bent; part: the oxygen atom in the OH group in nitric acid, HNO₃ [HONO₂]. Enter the molecular structur",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -51663,6 +52401,10 @@
    "verdict": "ok",
    "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "696959be8779d422": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp135248192 (module ex 4, printed 11); model answer = source solution verbatim | hint-only edit, November 15, 2026: a heading of the same page is called a subsection; stem, key, and options unchanged"
+  },
   "696b50e8f5329b29": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -51866,6 +52608,14 @@
   "6a080fc24c4e2d53": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "6a0c02c15878d59e": {
+   "verdict": "ok",
+   "note": "Iron is one kind of atom, cannot be broken down chemically: element; source (a) element. Only change: closing period. | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | hint-only edit, November 15, 2026: a heading of the same page is called a subsection; stem, key, and options unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "6a0e2baf8a8c7b3d": {
    "verdict": "ok",
@@ -52306,6 +53056,14 @@
    "verdict": "ok",
    "note": "199e^(-.625t)=1 -> t=ln199/.625=8.469 -> 8.5; key p1316 #59"
   },
+  "6ae29c555a4f6171": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp60611664 — key no; Does the following molecule have a dipole moment? CS₂.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6ae941f037ed541a": {
    "verdict": "ok",
    "note": "summary cloze fs-id1999423 herniated disc; accepts module-printed variants",
@@ -52714,6 +53472,14 @@
    "verdict": "ok",
    "note": "source CT fs-id1321298, solution fs-id2266356 verbatim"
   },
+  "6bf319baf70ad662": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp25221456 (one item per molecule), key 0",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6bf33cf8598e1a8e": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
@@ -52863,6 +53629,10 @@
   "6c40d13175ccfe09": {
    "verdict": "ok"
   },
+  "6c429e1b80e5a176": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm8464272 part (b)"
+  },
   "6c4471f1f457b831": {
    "verdict": "ok",
    "note": "key-term recall from the Glossary appendix: aflatoxin (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -52886,6 +53656,14 @@
   "6c525b2985752c10": {
    "verdict": "ok",
    "note": "KC 2 9.5 § Dorsiflexion and Plantar Flexion, m46398",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "6c5565f1e541dd46": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp67177072 — key bent; part: ClO₂⁻. Enter the molecular structure.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -52958,14 +53736,6 @@
   "6c6f2404b97a67b6": {
    "verdict": "ok",
    "note": "6.4 author reading: source CT fs-id1514097; model answer = solution fs-id1492144 with the claim-pass correction (parent-accepted) from m46376: secondary centers form later, usually after birth, in the epiphyses, one per epiphysis typically, one in a phalanx, several in the femur; Source note inside the model answer; checkpoint 4 now \"usually after birth, in the epiphyses\""
-  },
-  "6c716b9c9630b65a": {
-   "verdict": "ok",
-   "note": "Baking powder is baking soda plus a solid acid and starch in varying amounts: mixture; source (h) mixture. Only change: closing period. | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "6c75409555bf6b10": {
    "verdict": "ok",
@@ -53683,6 +54453,14 @@
     "result": "agrees"
    }
   },
+  "6df427adeed7839c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm121789856 part (g); key N; K 0.8 < N 3.0",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6df5b132cc20829a": {
    "verdict": "ok",
    "note": "KC 4 18.1 § body Charles Darwin and Natural Selection (fs-idp168381568), m66518 — parent re-read against the module",
@@ -53725,6 +54503,14 @@
   "6e12f5ea065dc59d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "6e131aaea465e30f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm69463840 (printed 7) part (g) Li⁺: 1s² as printed, [He] accepted as the core form the module uses for ions; electron count re-derived",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -53958,6 +54744,10 @@
     "result": "agrees"
    }
   },
+  "6e6e0c39ea06c090": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm36798944 (answer image CNX_Chem_07_03_COCO2_img)"
+  },
   "6e6fd312f39a1497": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -54013,6 +54803,10 @@
   "6e9d8a7d85c6db61": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "6eb1ce79eea1d591": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm8464272 part (e)"
   },
   "6eb1fe25cfa93f64": {
    "verdict": "ok"
@@ -54102,6 +54896,14 @@
   "6ee6bbdd3d4ccadc": {
    "verdict": "ok",
    "note": "source exercise fs-id1172098756700 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "6ee7930df99740d3": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp23408944 part (b), key 0",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -54958,6 +55760,10 @@
     "result": "agrees"
    }
   },
+  "70a574c3d04f187c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp17379424 — model answer the source solution; part: Use the [Molecule Shape simulator](http://openstax.org/l/16MolecShape) to explore real mol"
+  },
   "70a5e658352695c7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -55493,6 +56299,14 @@
     "result": "agrees"
    }
   },
+  "718531672432f310": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm28148800 (printed 17) part (a); key from solution fs-idm60378112 'H, C, N, O, F'; Figure 7.6 2.1<2.5<3.0<3.5<4.0",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "718ad38d1a1aa079": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -55651,6 +56465,10 @@
     "result": "agrees"
    }
   },
+  "71d02c1b046a2a51": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp52580272 part (f)"
+  },
   "71d6f81905359ad7": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -55781,6 +56599,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "7219c85fe7cd0e3b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp30217376 part (a), drawing Ques13ansb_img"
   },
   "721a3a2aaa053aa2": {
    "verdict": "ok",
@@ -56458,6 +57280,14 @@
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "73973532fd15c1ee": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp67177072 — key tetrahedral; part: ClO₂⁻. Enter the electron-pair geometry.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "73994b4fb506f65c": {
    "verdict": "ok",
    "note": "source FIB fs-id1167661329857 as textin, key 'capsules'; accept 'capsule' (plural key lists singular) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -56943,6 +57773,14 @@
   },
   "749b96044b87822a": {
    "verdict": "ok"
+  },
+  "749bf1dfd32146e1": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm121789856 part (f); key P; Ba 0.9 < P 2.1",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "749f00787c305ae1": {
    "verdict": "ok"
@@ -57792,6 +58630,14 @@
   "7612903a8463c6bb": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "7614d97e5ac343fc": {
+   "verdict": "ok",
+   "note": "cloze from body sentence of para fs-idp19127744 \"The electron affinity of an element is a measurable physical quantity, ...\"; rivals ionization energy, electronegativity graded incorrect",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -58739,6 +59585,14 @@
   "7802d8a0f7e736dd": {
    "verdict": "ok"
   },
+  "7805e4f768e0afe2": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm69463840 (printed 7) part (e): [He]2s²2p⁶ as printed; electron count re-derived",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "780fcfc09982af84": {
    "verdict": "ok",
    "note": "author-built from § Discovering the Double Helix, Check Your Understanding: \"Which scientists are given most of the credit for describing the molecular structure of DNA?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -59668,6 +60522,10 @@
     "result": "agrees"
    }
   },
+  "79e29a1ee2ca7288": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp15556576 part (b)"
+  },
   "79eef584ea39546b": {
    "verdict": "ok",
    "note": "Critical Thinking eip-923; model answer is the source solution near-verbatim (rhizome weathering rock, network preventing erosion). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -60489,6 +61347,14 @@
    "verdict": "ok",
    "note": "body selfcheck, CYU box 1 bullet 2 (end of § The Theory of Spontaneous Generation). Model answer from the Redi six-containers sentence and the Spallanzani heated-sealed-flasks sentence, both earlier in the same subsection. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "7b6046679a2e280e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp67177072 — key octahedral; part: ClF₅. Enter the electron-pair geometry.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7b66ee0bf94f6b13": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -60662,6 +61528,14 @@
   "7bca2b8b4ab94dd0": {
    "verdict": "ok",
    "note": "RQ fs-id2587679 key C bladder; fs-id2338701 peritoneal covering only over the dome",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "7bd1370940c4a14d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm94727984 (printed 5) part (c): Al³⁺ as printed",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -61896,6 +62770,10 @@
   "7e18c9cdc2fd09a7": {
    "verdict": "ok"
   },
+  "7e18fb71e2c45aa5": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm118463568: source solution whole as model answer"
+  },
   "7e2ecbcc12c1250a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -62428,9 +63306,25 @@
     "result": "agrees"
    }
   },
+  "7f4be96d2da0bca0": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp123628080 — key bent; part: ClNO (N is the central atom). Enter the molecular structure.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7f4cc16d26fedcd3": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "7f51339b7fe8a418": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm91310448 (CYL para fs-idp6456720), Mg²⁺ segment of answer \"K+: [Ar], Mg2+: [Ne]\"; key [Ne] as printed",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "7f57dd43c5308dd4": {
    "verdict": "ok",
@@ -62790,6 +63684,10 @@
   "8008e767508909cc": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "800b93b648fdd23a": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm708128 — model answer the source solution; molecule polarity simulation](http://openstax.org/l/16MolecPolarity).)"
   },
   "800fd8cf4ba8dffc": {
    "verdict": "ok",
@@ -63433,6 +64331,14 @@
   "819bc5429e232d67": {
    "verdict": "ok",
    "note": "SI temperature unit is kelvin, never degrees kelvin (Temperature subsection) -> kelvin (source key 37(e)); only stem period added.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "819d4b841c68abbc": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm121789856 part (c); key O; S 2.5 < O 3.5",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -64240,6 +65146,14 @@
     "result": "agrees"
    }
   },
+  "833f26989a2fe69d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp123628080 — key seesaw; lowing molecule: XeO₂F₂ (Xe is the central atom). Enter the molecular structure.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "833f3fb92aedc43a": {
    "verdict": "ok",
    "note": "source exercise fs-idp52490448 (printed 4.81): source 9.6e-3 M Cl-; own 9.636e-3",
@@ -64595,6 +65509,10 @@
     "result": "agrees"
    }
   },
+  "83eec2f8f72d2be3": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp54012352 — model answer the source solution; find a chemical formula that would match the structure you have drawn."
+  },
   "83f06d87ded7cd2f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -64630,6 +65548,14 @@
   "8407fc48451e3a04": {
    "verdict": "ok",
    "note": "source RQ: stem, options, order, key match CNXML",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "84090fc9ee8e6d14": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm28148800 part (e); key corrected per parent ruling (erratum 3143) to the module's Figure 7.6 order Ba 0.9 < As 2.0 < H 2.1 < N 3.0 < O 3.5; source prints 'Ba, H, As, N, O'; Source note after the item",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -65745,6 +66671,14 @@
    "verdict": "ok",
    "note": "KC 4 21.1 § Lymph Nodes, m46563"
   },
+  "8605986cb9e4aa7e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp236067168 (printed 77); source key '(d)' = CsF, options the five parts in order",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "86090c389e6b2c14": {
    "verdict": "ok"
   },
@@ -65916,6 +66850,14 @@
   "866c642f8bbcfa1e": {
    "verdict": "ok",
    "note": "source exercise fs-id1167585782208 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "86739c743fb8f7ea": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp55219680 (printed 79); source key '4008 kJ/mol', options the stem's five values in order",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -66222,6 +67164,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "870dce7fbb49ba5a": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp15556576 part (g)"
   },
   "871697c2626292dc": {
    "verdict": "ok",
@@ -66652,6 +67598,10 @@
   "87fbceb1005a1e68": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "87fdc3ca54549d8b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm30783968, drawing H2SO4"
   },
   "880851069957cc58": {
    "verdict": "ok",
@@ -67108,6 +68058,10 @@
     "result": "agrees"
    }
   },
+  "88f512037bd67c83": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp27867056, source answer whole with drawing OHamine_img"
+  },
   "88f5310133ef9d1c": {
    "verdict": "ok",
    "note": "Figure-reading selfcheck built from the Eye on Ethics bar graph (OSC_Microbio_14_01_FDAAntibio); 14 and 7 confirmed against the vendored image. Made a selfcheck rather than graded because the figure's own source caption already states which period had the fewest approvals (2008-2012), so a graded item was written about two OTHER bars the caption does not name."
@@ -67170,6 +68124,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "8912e3de7ae3a896": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm8119280 (para fs-idp64846816); model answer is the source Answer table fs-idm25109184 whole; differences re-derived from Figure 7.6 (Si 1.8, C 2.5, H 2.1, O 3.5): 0.0, 0.4, 0.7, 1.7; rubric clauses now carry each bond's δ marks (C δ−, H δ+; Si δ+, C δ−; Si δ+, O δ−), matching the table"
   },
   "8916f0741899591d": {
    "verdict": "ok",
@@ -67504,6 +68462,14 @@
   "89b083ccf0932f47": {
    "verdict": "ok",
    "note": "source exercise fs-id1167583612623 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "89b0c1782ec846c1": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp57252544 — key linear; part: BeH₂. Enter the molecular structure.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -67949,6 +68915,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "8ab460a752960dd8": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp15556576 part (a)"
   },
   "8ab8f5b66a539771": {
    "verdict": "ok",
@@ -68889,6 +69859,10 @@
     "result": "agrees"
    }
   },
+  "8cace1862f1c0342": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp52580272 part (g)"
+  },
   "8cadd46e1e85e5e8": {
    "verdict": "ok",
    "note": "KC 3 14.2 § DNA Sequencing Techniques, m66387 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | parent re-read 2026-09-24 (Biology re-review ch46–47 + KC 1–17): model answer from the module's own sentences, rubric clauses decompose it with no new claim, no nearby key printed"
@@ -69002,6 +69976,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver-A",
+    "result": "agrees"
+   }
+  },
+  "8cdcab9ba19f5ef9": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm117401984 (printed 9) part (d), atom configuration: 1s²2s¹ as printed; electron count re-derived",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -69311,6 +70293,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "8d971c12d9cb90be": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp16503888 — key tetrahedral; part: the sulfur atom in sulfuric acid, H₂SO₄ [(HO)₂SO₂]. Enter the molecular structure.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -69849,6 +70839,10 @@
     "result": "agrees"
    }
   },
+  "8eba02f229ba9047": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp87226080 (lead-in, scope parenthesis added) — model answer the source solution"
+  },
   "8ebe2ad446602f39": {
    "verdict": "ok",
    "note": "KC 1 1.1 § body introduction, form-and-function paragraph (fs-id2104406), m45983"
@@ -69856,6 +70850,14 @@
   "8ec2a42eafe91d23": {
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
+  },
+  "8ec6a469cd6d1413": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp173506592 part (e); key NH; CH 0.4 vs NH 0.9",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "8ec74a5f45bf1de1": {
    "verdict": "ok",
@@ -70008,6 +71010,14 @@
   "8f184c7536e9fc80": {
    "verdict": "ok",
    "note": "KC 5 21.3 § Roseola and Fifth Disease, m58908",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "8f18db8e3bbf74a0": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp87226080 — key yes; Does the following molecule or ion have a dipole moment? PCl₃.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -70646,6 +71656,10 @@
    "verdict": "ok",
    "note": "source Short Answer fs-id1171360234778 (source prints no key); model author-written from the section's opening paragraph and the sizes figure caption."
   },
+  "9086e2d584c25879": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm2891376 — model answer the source solution; part: Carbonate, CO₃²⁻, is a common polyatomic ion found in various materials from eggshells to "
+  },
   "908a8472547e2bb3": {
    "verdict": "ok",
    "solved": {
@@ -70982,6 +71996,14 @@
    "note": "source exercise fs-idm109687888 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "9133deaa15ab0a43": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp63594560: P³⁻ segment of the answer, key [Ne]3s²3p⁶ as printed",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -71456,6 +72478,14 @@
    "verdict": "ok",
    "note": "f(x)=2ln(x+3)-1: asymptote x=-3 matches the graphed asymptote; checked f(0)=2ln3-1≈1.2, f(5)=2ln8-1≈3.16 against the plotted curve's height at those x-values (visually consistent with the source PDF figure). Matches CNXML eip-id1525883/ti_04_04_11 solution f(x)=2ln(x+3)-1. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "92376fe516c3c066": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp123628080 — key tetrahedral; part: ClOF₂⁺ (Cl is the central atom). Enter the electron-pair geometry.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "923d4a623b2cfc80": {
    "verdict": "ok",
    "note": "glossary recall fs-id1374982 ribs; body-bolded in fs-id2228791",
@@ -71620,6 +72650,14 @@
     "result": "agrees"
    }
   },
+  "926655d5e5008b7e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm94727984 (printed 5) part (a): P³⁻ as printed",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9267b10dccf57b40": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
@@ -71647,6 +72685,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "927b915a5da4a959": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp16503888 — model answer the source solution; around the indicated atom or atoms: each of the carbon atoms in propyne, CH₃CCH."
   },
   "9280e6a4252b5ed3": {
    "verdict": "ok",
@@ -71902,6 +72944,10 @@
     "by": "fable-solver-A",
     "result": "agrees"
    }
+  },
+  "9326c8a2c993f468": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm49800144 part (d)"
   },
   "932e8b866ee2e2a2": {
    "verdict": "ok",
@@ -72381,6 +73427,14 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 196): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
+  "942215560986cccb": {
+   "verdict": "ok",
+   "note": "Mercury oxide (HgO) decomposes by heat into Hg and O2 (body text): compound; source (c) compound. Only change: closing period. | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | hint-only edit, November 15, 2026: a heading of the same page is called a subsection; stem, key, and options unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "942553e7aab8a90d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -72424,6 +73478,14 @@
   "9434ec4c4667d344": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "94382f349f97031e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp63165504 (printed 3), member P: answer lists it under anions (nonmetals)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -72512,6 +73574,14 @@
   "94745d825d33e9fb": {
    "verdict": "ok",
    "note": "source exercise fs-idp38309200 part (c), model answer = solution segment (c) verbatim: hypothesis (a tentative explanation, can be investigated by experimentation) [Filed by the author under an earlier hash of this item; carried by the orchestrator after a round-3 edit that changed no key (a hint, a stem period, a datum added to a stem).]"
+  },
+  "9474f28c0fec91af": {
+   "verdict": "ok",
+   "note": "filler select-the-term multiple choice from body sentence in para fs-idm10305952 (Covalent bonds are the attractive forces between...); options ionic bonds / covalent bonds | hint-only edit, November 15, 2026: a heading of the same page is called a subsection; stem, key, and options unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "94754facc5caa8ad": {
    "verdict": "ok",
@@ -73189,6 +74259,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "95bff0fde60c595d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp29388832 part (c); model answer = source segment (c)"
   },
   "95c2a26195888b4d": {
    "verdict": "ok",
@@ -74540,6 +75614,10 @@
     "result": "agrees"
    }
   },
+  "98872cfad0b1a74c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp122940912 part (d) — model answer the source solution; pes for CS₃²⁻ and CS₂ and explain how you arrived at your predictions."
+  },
   "98886ac8cff19f9e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -75318,6 +76396,14 @@
     "result": "agrees"
    }
   },
+  "9a24edbed057483f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp164286384 — key nonpolar; Is the Cl₂BBCl₂ molecule polar or nonpolar?",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9a27d0c2ed0b762d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -75624,6 +76710,14 @@
   "9acb47ee200dcb30": {
    "verdict": "ok",
    "note": "Check Your Learning of example fs-idm1441136 (m68704): 750 × 0.12 × 0.789 / 46.07 = 1.541 → 1.5 mol; source 1.5 mol ethanol. The stem's molar mass of ethanol is the table's 46.069 at the source's four figures, 46.07, where the source prints 46.06 (November 13, 2026); the key does not move.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "9acd85a57efce0b8": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm117401984 (printed 9) part (b), ion configuration: 1s²2s²2p⁶3s²3p⁶3d¹⁰4s²4p⁶ as printed; electron count re-derived",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -76215,14 +77309,6 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "9c4ffa5671b8125d": {
-   "verdict": "ok",
-   "note": "Each molecule HCl has two kinds of atoms, all molecules alike: compound; source (f) compound. Only change: closing period. | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "9c5271fca074b16d": {
    "verdict": "ok",
    "note": "Glossary fs-idm258258032 'basal ganglia' = 'interconnected collections of cells in the brain that are involved in movement and motivation; also known as basal nuclei'. Prompt matches ('movement control, posture, and motivation' — posture from the body text's 'play important roles in movement control and posture'); accept 'basal nuclei' per the glossary's own alternate name. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -76357,14 +77443,6 @@
   },
   "9c82b131937402b9": {
    "verdict": "ok"
-  },
-  "9c84583889f99509": {
-   "verdict": "ok",
-   "note": "filler select-the-term multiple choice from body sentence in para fs-idm10305952 (Covalent bonds are the attractive forces between...); options ionic bonds / covalent bonds",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "9c8895a169d6fd29": {
    "verdict": "ok",
@@ -77058,14 +78136,6 @@
   "9dddbd0e1338fa5e": {
    "verdict": "ok"
   },
-  "9dde1e051d70c4b8": {
-   "verdict": "ok",
-   "note": "Pancake syrup is sugars, water, flavorings in varying amounts: mixture; source (d) mixture. Only change: closing period. | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "9de380647b2be9a8": {
    "verdict": "ok",
    "note": "KC 7 42.2 § glossary clonal selection (fs-idp21067840); body B Lymphocytes (fs-idm78332688), m66664 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
@@ -77230,6 +78300,14 @@
   "9e279196542e6289": {
    "verdict": "ok",
    "note": "re-read against m46032 CNXML and page text",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "9e2cba117212b9d0": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm21031296 (answer C −1, O +1); this item: C",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -77493,6 +78571,14 @@
     "result": "agrees"
    }
   },
+  "9ed1e314c1691dde": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp57252544 — key trigonal bipyramid; part: PCl₅. Enter the molecular structure.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9ed4b7025f87b1e2": {
    "verdict": "ok",
    "note": "KC 1 4.1 § body Epithelial Membranes (fs-id1514999) + glossary lamina propria (fs-id961853), m46046",
@@ -77520,6 +78606,14 @@
   "9edb85a5dd6e83ac": {
    "verdict": "ok",
    "note": "Bio 30.5 water-potential selfcheck: dependency re-hash only; model answer = source solution (m66600); parent re-read Sep 23 2026"
+  },
+  "9edf0e7e4fbc84bc": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm69463840 (printed 7) part (i): [Kr]4d¹⁰5s² as printed; electron count re-derived",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "9edf55f4f9d247a0": {
    "verdict": "ok",
@@ -77721,6 +78815,14 @@
   },
   "9f47017fab8f84ac": {
    "verdict": "ok"
+  },
+  "9f48673218332579": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp59620704 (N: 0; all three Cl atoms: 0)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "9f4f5a79b4f3d145": {
    "verdict": "ok",
@@ -78227,6 +79329,10 @@
     "result": "agrees"
    }
   },
+  "a0674e4ad03a0d31": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp15556576 part (e)"
+  },
   "a068cb78128d3513": {
    "verdict": "ok"
   },
@@ -78449,6 +79555,14 @@
    "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): 2 sin theta=sqrt3 -> sin theta=sqrt3/2 -> theta=pi/3,2pi/3 on [0,2pi); standard.",
    "solved": {
     "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
+  "a0d8d5244ea54d59": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm69463840 (printed 7) part (b): [Kr]4d¹⁰5s²5p⁶ as printed; electron count re-derived",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -78864,6 +79978,14 @@
     "result": "agrees"
    }
   },
+  "a1a2d542fd901ad3": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp7647248, key HOCl",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a1a3b58ff0748d66": {
    "verdict": "ok",
    "note": "Review Question fs-idp48720512, solution C = osteoclast. Keyed as source. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -79019,6 +80141,10 @@
     "result": "agrees"
    }
   },
+  "a1df0f3ad86cb665": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp15556576 part (c)"
+  },
   "a1e1a948c2e185e9": {
    "verdict": "ok"
   },
@@ -79033,6 +80159,14 @@
   "a1f0163363e08b4e": {
    "verdict": "ok",
    "note": "Prefix table (module m68674, Common Unit Prefixes) row for symbol c: centi; only symbol quoted.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "a1f17f172153966b": {
+   "verdict": "ok",
+   "note": "Baking soda is sodium bicarbonate, NaHCO3, one compound; source (g) compound. Only change: closing period. | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | hint-only edit, November 15, 2026: a heading of the same page is called a subsection; stem, key, and options unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -79559,6 +80693,14 @@
   "a2c9dc7576793ff6": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "a2d07e4edd59022b": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp63594560 (CYL para fs-idm44394960): charge of P³⁻ as printed in the answer, keyed -3",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "a2d4cca8fda18f0c": {
    "verdict": "ok",
@@ -81009,6 +82151,14 @@
     "result": "agrees"
    }
   },
+  "a583d8125fe40a32": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp123628080 — key trigonal pyramidal; part: Cl₂SO (S is the central atom). Enter the molecular structure.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a587ffad944cc307": {
    "verdict": "ok",
    "note": "source exercise fs-idm250352 part (e); key HF | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
@@ -81493,6 +82643,14 @@
     "result": "agrees"
    }
   },
+  "a69a761a143cfb9f": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp82124112 — key trigonal bipyramidal; part: Predict the electron pair geometry and molecular structure for molecules of XeF₂. Enter th",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a6a83334bfbfe687": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -81564,6 +82722,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "a6c8a10adb3ba630": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm70503056"
   },
   "a6d48ea4ef9b7f2a": {
    "verdict": "ok",
@@ -81682,6 +82844,14 @@
    "note": "source exercise fs-idp170922736 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "a700fd196b519d60": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp67177072 — key bent; part: PH₂⁻. Enter the molecular structure.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -82103,6 +83273,14 @@
     "result": "agrees"
    }
   },
+  "a7de7ccf3fe94f02": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp87226080 — key yes; Does the following molecule or ion have a dipole moment? SeF₄.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a7e8b7ba578bc176": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -82238,6 +83416,14 @@
     "result": "agrees"
    }
   },
+  "a81e65a7e0cbb22b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp16503888 — key bent; part: the central oxygen atom in the ozone molecule, O₃. Enter the molecular structure.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a81f515e11255c34": {
    "verdict": "ok",
    "note": "KC 7-12 (multiplechoice, line 857): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
@@ -82253,6 +83439,10 @@
   "a824aab390e9ff48": {
    "verdict": "ok",
    "note": "body CYU selfcheck, unmatched (note is not an exercise); model answer from § Microbes and Viruses in Genetic Research (Morgan/Drosophila melanogaster paragraph). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "a825c8b9c807b495": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp15556576 part (h)"
   },
   "a82aea864efc403b": {
    "verdict": "ok",
@@ -82373,6 +83563,14 @@
     "result": "agrees"
    }
   },
+  "a85fbee9b710b67b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp63165504 (printed 3), member I: answer lists it under anions (nonmetals)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a8616553012ebef6": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -82439,6 +83637,14 @@
   "a88fb1ed5497d46b": {
    "verdict": "ok",
    "note": "source exercise fs-idm101514016 part (d) key 8.63 × 10^−5 kg | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | carried 2026-11-14 (ledger-carry): re-hashed when a reference to another section became a link; the stem's words, options, key, and dependency unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "a894285b76cc1815": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp16503888 — key trigonal planar; part: the nitrogen atom in nitric acid, HNO₃ [HONO₂]. Enter the molecular structure.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -83135,6 +84341,14 @@
     "result": "agrees"
    }
   },
+  "aa1abe4b36fdd845": {
+   "verdict": "ok",
+   "note": "CO2 has fixed composition of two elements: compound; source (e) compound. Only change: closing period. | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | hint-only edit, November 15, 2026: a heading of the same page is called a subsection; stem, key, and options unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "aa1d364c54098e61": {
    "verdict": "ok",
    "note": "glossary recall: cardiac notch; body fs-id1892589",
@@ -83431,6 +84645,10 @@
   "aad50287335c5581": {
    "verdict": "ok",
    "note": "parent re-read 2026-09-24 (Microbiology ch14.5-18 re-review): model answer and rubric checked against the module; checks quote module sentences, no new claims"
+  },
+  "aad63a542c525e46": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm8464272 part (d)"
   },
   "aad649c9d2db7a20": {
    "verdict": "ok",
@@ -84533,6 +85751,14 @@
   "ad59d70a9ac49ee1": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "ad63edae9bb0eed0": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp25221456 (one item per molecule), key 0",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "ad66c80e3ee7c38a": {
    "verdict": "ok",
@@ -85919,6 +87145,14 @@
     "result": "agrees"
    }
   },
+  "b033243f19dc314c": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm16663792 — key tetrahedral; part: The hydronium ion, H₃O⁺, forms when acids are dissolved in water. Predict the electron-pai",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b0366ee6bb3ac4db": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -86348,14 +87582,6 @@
   },
   "b13d2928523a7ec8": {
    "verdict": "ok"
-  },
-  "b13e422c1ccbc39f": {
-   "verdict": "ok",
-   "note": "Baking soda is sodium bicarbonate, NaHCO3, one compound; source (g) compound. Only change: closing period. | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "b13f9305bda2b946": {
    "verdict": "ok",
@@ -87079,6 +88305,14 @@
   "b28a7a488db88ecd": {
    "verdict": "ok",
    "note": "Review fs-id2614454 key B fissure; § Gross Anatomy 'Fissures separate these lobes from each other.'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "b28af40ebdd54f1e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp60611664 — key yes; Does the following molecule have a dipole moment? SeS₂.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -88269,6 +89503,14 @@
     "result": "agrees"
    }
   },
+  "b5043a88ea04154f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp173506592 part (d); key PCl; PCl 0.9 vs SCl 0.5",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b5059a51aaa953eb": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | prior derivation: parent: add -> 4x^2-25x+6=0 -> x=6 (rejected, y^2<0) or 1/4; y^2=31/32 -> +-sqrt62/8",
@@ -88320,6 +89562,14 @@
   "b51c156b880cb7fd": {
    "verdict": "ok",
    "note": "KC 2 9.2 § body Second Messengers (fs-id2726979), m66379 — parent re-read against the module"
+  },
+  "b51f07e191ae9069": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm117401984 (printed 9) part (a), ion configuration: 1s²2s²2p⁶ as printed; electron count re-derived",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "b5296f21017e2a4d": {
    "verdict": "ok",
@@ -90178,6 +91428,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "b8b0107c9a26270d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp23408944 part (a), key 0",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b8b42d6738dcc444": {
    "verdict": "ok",
    "note": "source exercise fs-idm5875280 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -90506,6 +91764,14 @@
     "result": "agrees"
    }
   },
+  "b95ddb53ccdd3ce4": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm117401984 (printed 9) part (c), ion configuration: 1s²2s²2p⁶3s²3p⁶3d¹⁰4s²4p⁶ as printed; electron count re-derived",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b96f07b340a1f414": {
    "verdict": "ok",
    "note": "Solved y=(x+1)^2-3 (x>=-1) for x: x=-1+sqrt(y+3) (positive root since x+1>=0), so f^{-1}(x)=sqrt(x+3)-1. Matches CNXML exercise fs-id1165137405850 (source #7), which has a solution. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -90631,6 +91897,10 @@
   "b9d09e03901a1686": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "b9d2a5570f35c6d3": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp12625232 part (c); model answer corrected per rulings 7.5-1 (claims F6, Section 6.5: nuclear charge, energy level of the electron removed), Source note; table fs-idm30060832 above"
   },
   "b9d32a09a74d670d": {
    "verdict": "ok",
@@ -91271,6 +92541,14 @@
    "verdict": "ok",
    "note": "re-read against CNXML m58913; keyed sentence/table checks out | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "bb1d2c864a98b0db": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp123628080 — key linear; part: CS₂. Enter the molecular structure.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "bb1de3f721e394f8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -91511,6 +92789,10 @@
     "result": "agrees"
    }
   },
+  "bb844c9b38e255c6": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp26472064, source answer whole with drawing NF3_img; formal charges worked from the drawing (N 5−2−3=0, F 7−6−1=0)"
+  },
   "bb8acee9b7843e9d": {
    "verdict": "ok",
    "note": "KC 7 38.2 § body Thickening of Long Bones (fs-idm166160432), m66638 — parent re-read against the module"
@@ -91526,14 +92808,6 @@
   "bb92ed4ce89cf3b2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "bb92f1f81042fba2": {
-   "verdict": "ok",
-   "note": "Mercury oxide (HgO) decomposes by heat into Hg and O2 (body text): compound; source (c) compound. Only change: closing period. | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -91574,6 +92848,14 @@
   "bba5f1cbd54da563": {
    "verdict": "ok",
    "note": "body cloze from § Flow Cytometry: \"A laser excites the fluorogen, and the fluorescence intensity of each cell is measured by a detector.\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "bba9125c8a9516f0": {
+   "verdict": "ok",
+   "note": "Pancake syrup is sugars, water, flavorings in varying amounts: mixture; source (d) mixture. Only change: closing period. | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form | hint-only edit, November 15, 2026: a heading of the same page is called a subsection; stem, key, and options unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -92366,6 +93648,14 @@
     "result": "agrees"
    }
   },
+  "bd2f5f2bd4379338": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp56209472 (printed 83); source key '(e)' = CaO, options the five parts in order",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "bd2fad0869e5468a": {
    "verdict": "ok",
    "note": "m66518 Critical Thinking fs-idm14597648; model answer is the source solution verbatim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -92559,6 +93849,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "bd8ba379fdbc3f69": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm49800144 part (b)"
   },
   "bd8e537cefb11c9e": {
    "verdict": "ok",
@@ -92807,6 +94101,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "be1cc3f7a2f8fdca": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp52580272 part (a)"
   },
   "be1d4eabb378ddc1": {
    "verdict": "ok",
@@ -93693,6 +94991,10 @@
    "verdict": "ok",
    "note": "m66651 fs-idm32162688 CTQ, model answer reuses source solution fs-idm85451968 verbatim; 3 checkpoints each a clause of it. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "c00aeb887e4b759d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp12625232 part (a); model answer = source solution segment (a)"
+  },
   "c00e048a93ea91ca": {
    "verdict": "ok",
    "note": "ILQ fs-id1639687 graded selfcheck; model = solution fs-id2543284 verbatim; fixing sentences fs-id1966997 (Summation) per Part C"
@@ -94166,6 +95468,14 @@
     "result": "agrees"
    }
   },
+  "c0fce1fe1aec41fd": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm2891376 — key trigonal planar; nd molecular structure of this polyatomic ion? Enter the electron-pair geometry.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c0fd3e5c0959d2a3": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
@@ -94327,6 +95637,10 @@
   },
   "c177cb845fb04a31": {
    "verdict": "ok"
+  },
+  "c1800ee4c72488e2": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm8464272 part (c)"
   },
   "c18256031046dd1f": {
    "verdict": "ok",
@@ -94738,6 +96052,14 @@
   "c263003aae77da69": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "c264033482cbfc77": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp29388832 part (b); source key BaS",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "c264851be4a5ca40": {
    "verdict": "ok",
@@ -95316,6 +96638,14 @@
     "result": "agrees"
    }
   },
+  "c390152cbd03b4d8": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm91310448 (CYL para fs-idp6456720), K⁺ segment of answer \"K+: [Ar], Mg2+: [Ne]\"; key [Ar] as printed",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c391b866bada286f": {
    "verdict": "ok",
    "note": "KC 5 25.3 § Renal Hilum, m46429"
@@ -95617,6 +96947,10 @@
   "c428907195700c9d": {
    "verdict": "ok",
    "note": "Degree 3 polynomial has at most 3-1=2 turning points. Matches CNXML ti_03_03_09. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "c42cba35116ba226": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp137881216 part (b), drawing Exercis12b_img with its printed formal charges"
   },
   "c4303d5377111cf2": {
    "verdict": "ok",
@@ -96723,6 +98057,14 @@
     "result": "agrees"
    }
   },
+  "c6411e03ef387795": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp67177072 — key tetrahedral; part: PCl₃. Enter the electron-pair geometry.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c643bf879fbcd97b": {
    "verdict": "ok",
    "note": "KC 6 28.4 § Effects of Hormones, m46353",
@@ -96846,6 +98188,14 @@
   "c6751e976af77adf": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c677dfccc4f8cb65": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm69463840 (printed 7) part (h): [He]2s²2p⁶ as printed; electron count re-derived",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -97025,6 +98375,18 @@
     "result": "agrees"
    }
   },
+  "c6d89a89eeb2f073": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp15556576 part (j)"
+  },
+  "c6e991ceca29b2c0": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm69463840 (printed 7) part (f): [Ar]3d¹⁰ as printed; electron count re-derived",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c6eb3a6f85c1ec03": {
    "verdict": "ok",
    "note": "Review fs-id1398516 key B high cortisol; body fs-id1475149 'caused by hypersecretion of cortisol'",
@@ -97068,6 +98430,14 @@
   "c6f8a0a65e1aa404": {
    "verdict": "ok",
    "note": "Review fs-id1959452 key D erythropoietin, solution fs-id2112029; fs-id1406372",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c6fa40d2b017709c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp119456432 (printed 13) parts (a)-(k); bins from solution fs-idm92647632: ionic (b)(d)(e)(g)(i), covalent (a)(c)(f)(h)(j)(k); metal+nonmetal reading agrees for every part",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -97337,6 +98707,14 @@
     "result": "agrees"
    }
   },
+  "c797bb92f76d3c9d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp123628080 — key trigonal planar; part: Cl₂CO (C is the central atom). Enter the electron-pair geometry.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c7990f8edbb39c44": {
    "verdict": "ok",
    "note": "parent re-read 2026-09-24 (Microbiology ch14.5-18 re-review): model answer and rubric checked against the module; checks quote module sentences, no new claims"
@@ -97429,6 +98807,10 @@
     "result": "agrees"
    }
   },
+  "c7c52ec9fa5837a2": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm29150896, drawing Ques11ans_img"
+  },
   "c7c66013105fa40a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -97442,6 +98824,14 @@
   },
   "c7c83b8e19b1d446": {
    "verdict": "ok"
+  },
+  "c7ce0ae735b36747": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp67177072 — key square planar; part: TeCl₄²⁻. Enter the molecular structure.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "c7d36d92e4770b13": {
    "verdict": "ok",
@@ -97470,6 +98860,14 @@
   "c7e362a52d29cb61": {
    "verdict": "ok",
    "note": "1+29e^(-.62t)=4/3 -> t=ln87/.62=7.203 -> 7.2; key p1316 #65"
+  },
+  "c7e46373be8fdd73": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp16503888 — key bent; part: the oxygen atom in hydrogen peroxide, HOOH. Enter the molecular structure.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "c7e87d4ebbba8984": {
    "verdict": "ok",
@@ -99507,6 +100905,14 @@
     "result": "agrees"
    }
   },
+  "cc245834a67822b5": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp173506592 part (g); key CN; CN 0.5 vs NN 0",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "cc2957880ff69e48": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -99552,6 +100958,14 @@
   },
   "cc3fdfb36fe87246": {
    "verdict": "ok"
+  },
+  "cc4044973fc61114": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp63165504 (printed 3), member In: answer lists it under cations (metals)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "cc419cf61499b76c": {
    "verdict": "ok",
@@ -99837,6 +101251,14 @@
   "cce48d583cdaae78": {
    "verdict": "ok",
    "note": "selfcheck model answer is the source solution for fs-idm75528944 (Critical Thinking Q1) verbatim; checkpoints are its three clauses restated with no new claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "cce5a8285fe23ad2": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm117401984 (printed 9) part (b), atom configuration: 1s²2s²2p⁶3s²3p⁶3d¹⁰4s²4p⁵ as printed; electron count re-derived",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "cce5cada5fd51462": {
    "verdict": "ok",
@@ -100213,6 +101635,14 @@
     "result": "agrees"
    }
   },
+  "cd93fab19933dbe4": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm117401984 (printed 9) part (e), atom configuration: 1s²2s²2p⁶3s²3p⁶3d¹⁰4s²4p³ as printed; electron count re-derived",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "cd996d5619152ea2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -100293,6 +101723,14 @@
    "note": "source exercise fs-idm88520640 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "cdbcb69f80a886a7": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm117401984 (printed 9) part (e), ion configuration: 1s²2s²2p⁶3s²3p⁶3d¹⁰4s²4p⁶ as printed; electron count re-derived",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -100753,6 +102191,14 @@
     "result": "agrees"
    }
   },
+  "cecf652c5eb91de2": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp29388832 part (d); source key BaS",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ced650bb0c40766b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -100915,6 +102361,14 @@
   "cf2f02300a4d09f5": {
    "verdict": "ok",
    "note": "glossary recall: colloid (fs-id2291866) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "cf2fc16c9461dc2a": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp123628080 — key trigonal bipyramidal; part: XeO₂F₂ (Xe is the central atom). Enter the electron-pair geometry.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -101220,6 +102674,14 @@
   "cfca61b1b8da321b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "cfd0345bceb131cc": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm118463568 (printed 1): choice from the stem (gain protons / lose electrons); answer \"Positive charges form when electrons are lost\" → lose electrons",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -102112,6 +103574,14 @@
     "result": "agrees"
    }
   },
+  "d1e613bd9e379f13": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp63165504 (printed 3), member Mg: answer lists it under cations (metals)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d1ece4161c10e196": {
    "verdict": "ok",
    "note": "ln(x^2)=ln1 => x^2=1 => x=1 or x=-1; both satisfy domain x^2>0. Unordered pair, verified with checkAnswer {unordered:true}. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -102986,6 +104456,10 @@
     "result": "agrees"
    }
   },
+  "d3f4c10f4b3df2a2": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp56139840 (solution fs-idm15480208); re-derived (atoms and charge balanced, lowest terms) against raw CNXML m68709 | hint-only edit, November 15, 2026: a heading of the same page is called a subsection; stem, key, and options unchanged"
+  },
   "d3f7367d91c9c973": {
    "verdict": "ok",
    "note": "glossary recall fs-id2317903 substantia nigra pars compacta; SNc from caption fs ch13_02_05, 'substantia nigra compacta' caption form.",
@@ -103761,6 +105235,14 @@
   "d56b6a9ededb6003": {
    "verdict": "ok"
   },
+  "d56e49e0234ba440": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp123628080 — key linear; part: CS₂. Enter the electron-pair geometry.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d56f9aeb0a95c628": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -104499,6 +105981,14 @@
     "result": "agrees"
    }
   },
+  "d6dd7b52a3677ea2": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp63165504 (printed 3), member O: answer lists it under anions (nonmetals)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d6e0cebb67702f0e": {
    "verdict": "ok",
    "note": "m66624 eip-72, solution D (Dysfunction in the brain can affect many aspects of the body); the other three options are each contradicted or unsupported by the section's text (comorbidity is not attributed to a specific gene, a specific medication, or a limit on behavioral therapy). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -104794,6 +106284,14 @@
   "d75daf1505a40cd5": {
    "verdict": "ok",
    "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
+  },
+  "d7602f0ac0a0185b": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp47136656 — key linear; part: Enter the molecular structure.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "d760ed51549800bc": {
    "verdict": "ok",
@@ -105563,6 +107061,10 @@
     "result": "agrees"
    }
   },
+  "d9068c9fe61d00d5": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm74511072"
+  },
   "d909640c946a92e4": {
    "verdict": "ok",
    "note": "Review Question fs-id1472236; source solution keys B, \"regulation of gene expression after translation,\" matching options transcribed verbatim in source order. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -105968,6 +107470,10 @@
     "result": "agrees"
    }
   },
+  "da0152d445c22f23": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp145119536"
+  },
   "da0261fd4f67c068": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -106036,6 +107542,14 @@
    "note": "source exercise fs-idp168517216 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "da1c381876d1de0d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm121789856 part (b); key O; Figure 7.6 N 3.0 < O 3.5",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -107294,6 +108808,10 @@
     "result": "agrees"
    }
   },
+  "dcc28d15b9aa491b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp11428640 part (a), drawing Ques2ansa_img"
+  },
   "dcc941a2184746ee": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -107479,14 +108997,6 @@
   "dd293ebd83794f32": {
    "verdict": "ok",
    "note": "source exercise fs-id1167663887046 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "dd2b445818272f43": {
-   "verdict": "ok",
-   "note": "Oxygen (O2) contains one kind of atom: element; source (b) element. Only change: closing period. | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -107853,6 +109363,14 @@
     "result": "agrees"
    }
   },
+  "ddeb1dcb51653424": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm16663792 — key trigonal pyramidal; part: The hydronium ion, H₃O⁺, forms when acids are dissolved in water. Predict the electron-pai",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ddeec37e5ec77bd3": {
    "verdict": "ok",
    "note": "source exercise fs-idm139949520 part (e): l and m_l sets carried whole, framed in the question's words"
@@ -107994,6 +109512,14 @@
     "by": "orchestrator-solver",
     "result": "adjudicated",
     "note": "The example's heat carried unrounded (1023.9 J) over 103.21 g of solution gives −2.37 → −2.4; −2.3 comes from halving the example's rounded 4.6 °C. last-digit:1 grades both; the source prints the final temperature, 22.6 (erratum)."
+   }
+  },
+  "de381feb17c0d1bb": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp87226080 — key yes; Does the following molecule or ion have a dipole moment? ClO₂⁻.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
    }
   },
   "de41467a00e089de": {
@@ -108887,6 +110413,10 @@
     "result": "agrees"
    }
   },
+  "e0065c2d80caa54b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm49800144 part (f)"
+  },
   "e006f264984e0f4f": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -109456,6 +110986,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "e117fa8b3aff49f8": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp12625232 part (b); model answer = source solution segment (b)"
   },
   "e127516a3dcb3746": {
    "verdict": "ok",
@@ -110607,6 +112141,14 @@
   "e37dc37244a32ef4": {
    "verdict": "ok"
   },
+  "e380ec60b34a1fd1": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp67177072 — key trigonal bipyramidal; part: SeF₄. Enter the electron-pair geometry.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e3826ec6e62fde59": {
    "verdict": "ok",
    "note": "selfcheck = source exercise fs-idp223910576 (Critical Thinking); model answer is the source solution verbatim, rubric checkpoints decompose its three clauses with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -111066,6 +112608,14 @@
   "e46c4cf9c6cc6fae": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "e46fbb61d26cbf30": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp23408944 part (b), key 0",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -111747,6 +113297,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "e5a3098fe6fb7d27": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm12035200"
   },
   "e5a5b5697ae8f11e": {
    "verdict": "ok",
@@ -112750,6 +114304,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "e80ac8b289f03b9b": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp82124112 — key linear; part: Predict the electron pair geometry and molecular structure for molecules of XeF₂. Enter th",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e80d57de7bd96c2a": {
    "verdict": "ok",
    "note": "KC 3 15.4 § body Pre-mRNA Splicing (fs-id2117424), m66500 — parent re-read against the module",
@@ -112859,6 +114421,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver-B",
+    "result": "agrees"
+   }
+  },
+  "e86d69694ecfeda8": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm69463840 (printed 7) part (d): [Kr]4d¹⁰ as printed; electron count re-derived",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -113578,6 +115148,14 @@
    "verdict": "ok",
    "note": "Critical Thinking fs-idp197210288. Model answer is the CNXML solution verbatim, naming the salivary glands, liver, pancreas, and gallbladder as the accessory organs, matching the Accessory Organs subsection. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "e9f9a2e9596d19e7": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp16503888 — key tetrahedral; part: the carbon atom in Freon, CCl₂F₂. Enter the molecular structure.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e9fb4780b76c9584": {
    "verdict": "ok",
    "note": "cramer2(2,-3,-1,4,5,9): D=22,Dx=22,Dy=22 -> (1,1), run in Node; matches CNXML solution (1,1) (fs-id1891699). | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -113673,6 +115251,22 @@
   "ea23e51422638c8a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "ea2aa45a71b0e2b5": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp63594560: P segment of the answer, key [Ne]3s²3p³ as printed",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "ea2b9a718f55d298": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp23408944 part (d), key 0",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -113816,6 +115410,14 @@
   },
   "ea81d24ea3421756": {
    "verdict": "ok"
+  },
+  "ea84998ef5628f02": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp67177072 — key trigonal pyramidal; part: PCl₃. Enter the molecular structure.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "ea84b3f65087c468": {
    "verdict": "ok",
@@ -115095,6 +116697,10 @@
     "result": "agrees"
    }
   },
+  "ecfdb108d3c15055": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp15556576 part (f)"
+  },
   "ed05219ea0e933bc": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -115382,6 +116988,14 @@
   "eda08fea49a786c1": {
    "verdict": "ok",
    "note": "glossary recall bile canaliculus; accept irregular plural and head-noun forms, grader-checked",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "eda4b010179b4bfd": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp67177072 — key octahedral; part: TeCl₄²⁻. Enter the electron-pair geometry.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -116341,6 +117955,10 @@
     "result": "agrees"
    }
   },
+  "efc6e27ef3d7b554": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp31566784, solution 'N, O, F, and Cl' corrected per parent ruling (erratum 3144) to add Br (2.8 > S 2.5 in Figure 7.6): every element the figure places above sulfur; Source note after the block"
+  },
   "efcfa2c975ac2154": {
    "verdict": "ok"
   },
@@ -116511,6 +118129,14 @@
     "result": "agrees"
    }
   },
+  "f03639a32b2e6734": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp16780032 part (a); 436 + 190 - 2(370) = -114 from the page's table; source -114 kJ",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f0367c6110ae55a8": {
    "verdict": "ok",
    "note": "source exercise fs-idm86403968 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -116650,6 +118276,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "f078e453eb1e0079": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp16503888 — model answer the source solution; around the indicated atom or atoms: each of the carbon atoms in allene, H₂CCCH₂."
   },
   "f07dbe4c3359077d": {
    "verdict": "ok",
@@ -116822,6 +118452,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "f0e5b47c5b8e5b2a": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp29388832 part (a); model answer = source segment (a)"
   },
   "f0e6d25aa04675dd": {
    "verdict": "ok",
@@ -117152,6 +118786,14 @@
   "f186394da949dc70": {
    "verdict": "ok",
    "note": "body cloze from § Preparing Specimens for Light Microscopy: \"In simple staining , a single dye is used to emphasize particular structures in the specimen.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "f18b9f7012b22cac": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm69463840 (printed 7) part (a): [Ar]4s²3d¹⁰4p⁶ as printed; electron count re-derived",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -117518,6 +119160,14 @@
   "f2617c5a3ec182d1": {
    "verdict": "ok",
    "note": "author-built from § Toxoid Vaccines: \"Like subunit vaccines, toxoid vaccines do not introduce a whole pathogen to the patient; they contain inactivated bacterial toxins , called…\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "f267d01c0b69940a": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp63165504 (printed 3), member Cl: answer lists it under anions (nonmetals)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -120031,6 +121681,14 @@
    "verdict": "ok",
    "note": "Try It 2 (ti_09_02_02), CNXML system {x+y+z=2;y-3z=1;2x+y+5z=0}. Independently eliminated x from eqs (1) and (3) to get y-3z=4, which contradicts printed eq (2) y-3z=1 (4≠1) -- confirmed inconsistent via node. Matches CNXML 'No solution.' | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "f73b74259f0c7faa": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm69463840 (printed 7) part (k): [Ar]3d⁶ as printed; electron count re-derived",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f73be1257e28ecb3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -120848,6 +122506,10 @@
     "result": "agrees"
    }
   },
+  "f8b267737df69bae": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp16649648 (para fs-idp49595360); model answer = source Answer note fs-idp821600 whole"
+  },
   "f8b41e16ec6f757d": {
    "verdict": "ok",
    "note": "sortbins from table fs-id1167584986614 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -121452,6 +123114,10 @@
     "result": "agrees"
    }
   },
+  "f9d202808ea72ed2": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp11428640 part (d), drawing Ques2ansd_img"
+  },
   "f9d2b3d5085cc6fb": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -121730,6 +123396,10 @@
   "faa09a135b4d5552": {
    "verdict": "ok",
    "note": "m66470 critical-thinking solution fs-id1240070 (pathways as economical, feedback-tuned, fluid intermediates) matches the page's model answer verbatim; all five checks restate it faithfully. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "faa2365d4ba36888": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp11428640 part (b), drawing Ques2ansb_img"
   },
   "faa75eae1c50cf36": {
    "verdict": "ok",
@@ -122201,6 +123871,10 @@
   "fb5bff2a35227087": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "fb5c2ccd3a0dd3b1": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp19159472 (printed 69); model answer = source equations with the minus restored before ΔHf[HCl(g)] on the D_HCl line (parent ruling, erratum 3146, Source note); rubric from the equations; 92.307+217.97+121.3 = 431.6 from Appendix G; the cycle's rows stacked by the parent on November 15, 2026 so the display fits the column — content unchanged"
   },
   "fb60f3bdefbe5704": {
    "verdict": "ok",
@@ -122932,6 +124606,14 @@
     "result": "agrees"
    }
   },
+  "fccb4d0911ba00d3": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp23408944 part (d), key 0",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "fcccb151865f5a67": {
    "verdict": "ok",
    "note": "Body CYU selfcheck; model answer names meningitis and encephalitis from their two separate defining sentences (not meningoencephalitis, which is both together). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -122995,6 +124677,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "fcef60d88edb5c5b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp137881216 part (c), drawing Exercis12c_img with its printed formal charges"
   },
   "fcf0dbfa9bc8bb56": {
    "verdict": "ok",

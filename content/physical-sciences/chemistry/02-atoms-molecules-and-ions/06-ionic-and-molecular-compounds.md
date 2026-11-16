@@ -261,7 +261,7 @@ molecular compound
 {{< multiplechoice
   question="Which bonds are the attractive forces between the positively charged nuclei of the bonded atoms and one or more pairs of electrons that are located between the atoms?"
   answer="covalent bonds"
-  hint="Reread the paragraph that classifies chemical bonding by the nature of the attractive forces, just before the Ionic Compounds section."
+  hint="Reread the paragraph that classifies chemical bonding by the nature of the attractive forces, just before the Ionic Compounds subsection."
 >}}
 ionic bonds
 covalent bonds

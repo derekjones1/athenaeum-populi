@@ -38,6 +38,11 @@ catch.
 
 ## 2. Answer every graded item yourself, key covered
 
+- **A comparison or an ordering key is re-derived from the page's own
+  table of values** (electronegativities, bond energies, radii), ties
+  included: where two members tie, both orders must be graded right (an
+  ordering's `accept`), and a yes-or-no that turns on the tie is a defect
+  to report *(chapter 7)*.
 - **A numeric fill-in:** solve it from the stem and the book's own
   conversion factors, running the arithmetic (`python3 -c`), BEFORE reading
   the page's key or the source's. Then compare all three. Report: a key the
@@ -107,6 +112,9 @@ catch.
 
 ## 4. Figures
 
+- **Zoom before reporting a missing lone pair** (or bond, or charge) in a
+  Lewis structure: open the image at full size; a pair of dots at the
+  drawing's edge is easy to miss at page scale *(chapter 7)*.
 Open every vendored image the page uses. The alt and any `longdesc` say what
 is drawn — counts, labels, directions read off the image, not the source
 alt — and print no answer of an item beside it. Recount every number an alt
@@ -227,7 +235,9 @@ stem shows it.
   exercise's stem prints the product another asks for), and the footer
   discloses an overlap it cannot move.
 - A Source note beside an unanswered item: could a learner work the key
-  out from it (the source's value, "truncated rather than rounded")?
+  out from it (the source's value, "truncated rather than rounded")? It says
+  THAT the source's answer differs, never what the corrected fact is
+  *(chapter 7)*.
 - A select-the-term multiple choice under an objective heading that names
   its key: does the heading name at least one other option too? (No lint
   reads this; the heading-word lint is for `textin`.) A stem or model

@@ -27,3 +27,26 @@ import 'katex/contrib/mhchem';
 export function renderMath(tex, { display = false } = {}) {
   return katex.renderToString(tex, { displayMode: display, throwOnError: true, strict: 'ignore' });
 }
+
+/**
+ * The characters inside `\text{…}` (and `\textrm`, `\mathrm`, `\textbf`,
+ * `\textit`) that KaTeX's strict mode refuses — the build's mode: Hugo's
+ * `transform.ToMath` renders with `strict: 'error'`, the gates above with
+ * `'ignore'`. 7.5's `D_\text{C≡O}` passed `verify-section` and broke the
+ * site build. Each text group is rendered alone under strict mode, so a
+ * dollar pair the gates read as math that the build does not (an em dash
+ * between two money amounts in a graph's JSON) is not judged here. Returns
+ * `[{ group, character }]`.
+ */
+export function strictTextProblems(tex) {
+  const problems = [];
+  for (const match of String(tex).matchAll(/\\(?:text|textrm|mathrm|textbf|textit)\s*\{((?:[^{}]|\{[^{}]*\})*)\}/g)) {
+    try {
+      katex.renderToString(`\\text{${match[1]}}`, { throwOnError: true, strict: 'error' });
+    } catch (error) {
+      const character = /Unicode character "(.)"/u.exec(error.message)?.[1];
+      if (character) problems.push({ group: match[0], character });
+    }
+  }
+  return problems;
+}

@@ -64,7 +64,7 @@ import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 
 import path from 'node:path';
 import { parseCliArgs } from '../lib/cli.mjs';
 import { bookKeyOf, parseFrontmatter, shortcodes } from '../lib/content.mjs';
-import { KEYED_ONLY_BOOKS, glossaryAliases, printedNumerals, unitFor, unlinked, workedExampleUnits, workedExamples } from '../lib/keyed-units.mjs';
+import { KEYED_ONLY_BOOKS, moduleAliases, printedNumerals, unitFor, unlinked, workedExampleUnits, workedExamples } from '../lib/keyed-units.mjs';
 import { bundleSourceDirectory, loadSourceLock } from '../lib/openstax-source.mjs';
 import { ELEMENT_DATA_BOOKS, judgeKeyedUnit, keyNumeral, pageItems, sameNumeral } from '../verify/verify-source-keys.mjs';
 import { loadElements } from '../lib/elements.mjs';
@@ -366,7 +366,7 @@ export function checkSources(markdown, moduleOf, { elements = null, pageOf = () 
   const unitsOf = (section) => {
     if (!read.has(section)) {
       const xml = moduleOf(section);
-      read.set(section, xml ? { units: workedExampleUnits(xml), aliases: glossaryAliases(xml) } : null);
+      read.set(section, xml ? { units: workedExampleUnits(xml), aliases: moduleAliases(xml) } : null);
     }
     return read.get(section);
   };

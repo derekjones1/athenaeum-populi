@@ -59,6 +59,9 @@ chemistry, and nuclear chemistry.
 - **Electronic Structure and Periodic Properties of Elements** —
   electromagnetic energy, the Bohr model, the development of quantum theory,
   electron configurations, and periodic variations in element properties.
+- **Chemical Bonding and Molecular Geometry** — ionic and covalent bonding,
+  Lewis symbols and structures, formal charges and resonance, bond
+  strengths, and molecular structure and polarity.
 
 ## Appendices
 
@@ -72,9 +75,6 @@ standard electrode potentials that the chapters refer to by letter.
 
 The remaining chapters of Chemistry 2e will appear in this order:
 
-- **Chemical Bonding and Molecular Geometry** — ionic and covalent bonding,
-  Lewis symbols and structures, formal charges and resonance, bond
-  strengths, and molecular structure and polarity.
 - **Advanced Theories of Covalent Bonding** — valence bond theory, hybrid
   atomic orbitals, multiple bonds, and molecular orbital theory.
 - **Gases** — gas pressure, the ideal gas law, the stoichiometry of gaseous

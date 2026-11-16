@@ -7066,6 +7066,42 @@ export const NEAR_MISS_TABLE_SENTENCE = ' If you looked up a value, such as an a
 export const WRONG_SIGN_FEEDBACK = 'The size is right, but the sign is not. Check whether the value should be positive or negative.';
 export const THOUSAND_FEEDBACK = 'The digits are right, but the value is a thousand times off. Check the unit the question asks for.';
 
+// A whole-number key with a sign — a charge, an oxidation state, a formal
+// charge (Chemistry 2e 2.3, 4.2, 7.1, 7.4) — answered with its size and the
+// other sign (`3` for −3, `-1` for +1) is told WRONG_SIGN_FEEDBACK, as a
+// measured quantity is; never for a key of 0. A sign typed after the number
+// (`3-`, the way the source prints a charge, "P³⁻") does not read as math:
+// against such a key it is `form` when the value is right, told to put the
+// sign first, and otherwise incorrect. The message gives no digit, so it
+// prints no key (Chemistry 7.1 gate probe, November 15, 2026).
+export const SIGN_LAST_FEEDBACK = 'That has its sign after the number. Type the sign first.';
+const WHOLE_NUMBER_FORM = /(?:^|\s)whole-number(?:\s|$)/;
+/** A typed or keyed whole number with an optional leading sign, as a number; null when it is not one. */
+const signedInteger = (raw) => {
+  const match = /^\s*([+\-−–]?)\s*(\d+)\s*$/.exec(String(raw ?? ''));
+  return match ? (match[1] && match[1] !== '+' ? -1 : 1) * Number(match[2]) : null;
+};
+/** A whole number typed with its sign AFTER it ("3-", "4+"), as a number; null otherwise. */
+const signAfter = (raw) => {
+  const match = /^\s*(\d+)\s*([+\-−–])\s*$/.exec(String(raw ?? ''));
+  return match ? (match[2] === '+' ? 1 : -1) * Number(match[1]) : null;
+};
+/** For a whole-number key: 'form' or 'incorrect' for a sign typed last, null for anything else. */
+function signLastVerdict(studentRaw, answerRaw, form) {
+  if (!WHOLE_NUMBER_FORM.test(String(form ?? ''))) return null;
+  const typed = signAfter(studentRaw);
+  const key = signedInteger(answerRaw);
+  if (typed === null || key === null) return null;
+  return typed === key ? 'form' : 'incorrect';
+}
+/** For a whole-number key with a sign: whether the response is its size with the other sign. */
+function wholeNumberSignFlipped(studentRaw, answerRaw, form) {
+  if (!WHOLE_NUMBER_FORM.test(String(form ?? ''))) return false;
+  const typed = signedInteger(studentRaw);
+  const key = signedInteger(answerRaw);
+  return typed !== null && key !== null && key !== 0 && typed === -key;
+}
+
 // The sentence for the right solution set written in the other notation
 // (notationMismatch), in the style of describeAnswerForm's.
 const NOTATION_FEEDBACK = {
@@ -7100,6 +7136,7 @@ const NUMBER_SHAPE_TOKENS = new Set(['decimal', 'whole-number', 'fraction', 'per
  * (THOUSAND_FEEDBACK).
  */
 export function describeIncorrectFeedback(studentRaw, spec, answerRaw) {
+  if (answerRaw !== undefined && wholeNumberSignFlipped(studentRaw, answerRaw, spec)) return WRONG_SIGN_FEEDBACK;
   const measured = answerRaw === undefined ? null : measuredVerdict(studentRaw, answerRaw, { form: spec });
   if (measured === null || measured.verdict !== 'incorrect') return '';
   if (measured.reason === 'sign') return WRONG_SIGN_FEEDBACK;
@@ -7109,6 +7146,7 @@ export function describeIncorrectFeedback(studentRaw, spec, answerRaw) {
 }
 
 export function describeFormFeedback(studentRaw, spec, answerRaw) {
+  if (answerRaw !== undefined && signLastVerdict(studentRaw, answerRaw, spec) === 'form') return SIGN_LAST_FEEDBACK;
   // A measured quantity is told what its digits still need, before any other
   // reading: its `form` reasons are its own.
   const measured = answerRaw === undefined ? null : measuredVerdict(studentRaw, answerRaw, { form: spec });
@@ -8759,6 +8797,8 @@ export function measuredKeyProblem(answerRaw, spec, { mode } = {}) {
 }
 
 export function checkAnswer(studentRaw, answerRaw, options = {}) {
+  const signLast = signLastVerdict(studentRaw, answerRaw, options.form);
+  if (signLast !== null) return signLast;
   const measured = measuredVerdict(studentRaw, answerRaw, options);
   if (measured !== null) return measured.verdict;
   const timesTyped = letterTimes(studentRaw, answerRaw, options.form);

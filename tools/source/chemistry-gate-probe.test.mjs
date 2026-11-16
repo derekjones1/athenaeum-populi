@@ -119,3 +119,23 @@ test('chapter 6\'s shapes are built as the page carries them, and the gates read
   assert.deepEqual(built('p12').map(({ question }) => question.split('? ').pop()), ['Enter the symbol of the ion with a +1 charge.', 'Enter the symbol of the ion with a –2 charge.']);
   assert.deepEqual(probeModule(xml).findings, []);
 });
+
+test('chapter 7\'s configuration pairs and comma-list orderings are built as the page carries them, and the gates read every one (7.1, 7.2)', () => {
+  const em = (letter) => `<emphasis effect="italics">${letter}</emphasis>`;
+  const printed = (spaced) => spaced.split(' ').map((token) => token.replace(/^(\d)([spdf])(\d+)$/, (_, n, l, count) => `${n}${em(l)}<sup>${count}</sup>`)).join('');
+  const xml = cnxml(
+    exercise('f9', ['Write out the full electron configuration for each of the following atoms and for the monatomic ion found in binary ionic compounds containing the element:', '(a) Al', '(b) Br'],
+      `(a) ${printed('1s2 2s2 2p6 3s2 3p1')}; Al<sup>3+</sup>: ${printed('1s2 2s2 2p6')}; (b) ${printed('1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p5')}; ${printed('1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6')}`)
+    + exercise('k1', ['Potassium and magnesium are required in our diet. Write the electron configurations of the ions expected from these elements.'], 'K<sup>+</sup>: [Ar], Mg<sup>2+</sup>: [Ne]')
+    + exercise('n7', ['From their positions in the periodic table, arrange the atoms in each of the following series in order of increasing electronegativity:', '(a) C, F, H, N, O', '(b) Al, H, Na, O, P'], '(a) H, C, N, O, F; (b) Na, Al, H, P, O'),
+  );
+  const units = keyedUnits(xml);
+  const built = (id) => itemsFor(units.find((unit) => unit.id === id), units);
+  const closing = (item) => item.question.split(/(?<=\.)\s+(?=Enter)/).pop().replace(/ Type each.*$/, '');
+  assert.deepEqual(built('f9(a)').map((item) => [closing(item), item.form]), [['Enter the electron configuration of the atom.', 'configuration'], ['Enter the electron configuration of the ion.', 'configuration']]);
+  assert.deepEqual(built('f9(b)').map(closing), ['Enter the electron configuration of the atom.', 'Enter the electron configuration of the ion.']);
+  assert.deepEqual(built('k1').map((item) => [closing(item), item.answer]), [['Enter the electron configuration of the potassium ion.', '[Ar]'], ['Enter the electron configuration of the magnesium ion.', '[Ne]']]);
+  assert.deepEqual(built('n7(a)').map(({ answer, form }) => [answer, form]), [['H < C < N < O < F', 'ordering']]);
+  // Every item confirmed, and every swapped sibling refused: no finding.
+  assert.deepEqual(probeModule(xml).findings, []);
+});

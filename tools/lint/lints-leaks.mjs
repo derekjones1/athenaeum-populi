@@ -61,6 +61,7 @@
  *     not a stem)
  */
 import { bookKeyOf, blankPreservingOffsets, maskCode, mathSpans, shortcodes, SHORTCODE_PARAMS } from '../lib/content.mjs';
+import { strictTextProblems } from '../lib/katex.mjs';
 // The real textin grading normalizer, so a "printed key" here means printed
 // in exactly the sense check-text.mjs would grade a retyped copy of it.
 import { foldedForms, matchesForm, normalizeText } from '../../assets/js/lib/text/check-text.mjs';
@@ -97,6 +98,60 @@ export const ORDERING_CLOSING = 'Type the symbols in the order you rank them, se
  * subscripts the page's rubrics already print.
  */
 export const QUANTUM_CLOSING = 'Type the four values in the order n, l, mₗ, mₛ, separated by spaces.';
+
+/**
+ * The sentence a formal-charge fill-in closes with (Chemistry 7.4; lint),
+ * the element's SYMBOL in place of `<Symbol>`: the source gate holds the item
+ * to that element's number ("C −1, O +1"), and the example pair is no key of
+ * the chapter (its keys are 0, −1, and +1).
+ */
+export const FORMAL_CHARGE_CLOSING = 'Enter the formal charge of <Symbol> as a signed number, the sign first, as +2 or −2.';
+// No oxidation-state twin yet: Knowledge Check 4–5 closes one item "Enter the
+// oxidation number of S …" (measured November 15, 2026: 1 of 20 fill-ins).
+
+/**
+ * A page's own heading called "the … section" ("the Lewis Symbols section",
+ * Chemistry 7.3): a heading of the same page is a subsection, and a Section
+ * is a numbered page of the book ("Section 7.3"). Returns the phrases (lint, Chemistry; the 11 in chapters 1, 2 and 4 were
+ * swept to "subsection" November 15, 2026).
+ */
+export function ownHeadingCalledSection(src) {
+  const headings = new Set([...String(src).matchAll(/^##+ (.+)$/gm)].map((match) => match[1].trim().toLowerCase()));
+  return [...String(src).matchAll(/\bthe ([A-Z][^.;:,()[\]]{2,60}?) section\b/g)].filter((match) => headings.has(match[1].toLowerCase())).map((match) => match[0]);
+}
+
+/** The elements a formal-charge stem may name in words: [name, the root of its -ide name]. */
+const NAMED_ELEMENTS = Object.freeze({
+  H: ['hydrogen', 'hydr'], B: ['boron', 'bor'], Be: ['beryllium', null], C: ['carbon', 'carb'], N: ['nitrogen', 'nitr'], O: ['oxygen', 'ox'],
+  F: ['fluorine', 'fluor'], P: ['phosphorus', 'phosph'], S: ['sulfur', 'sulf'], Cl: ['chlorine', 'chlor'], Se: ['selenium', 'selen'],
+  Br: ['bromine', 'brom'], I: ['iodine', 'iod'], Xe: ['xenon', null],
+});
+
+/**
+ * Why a whole-number fill-in's stem that asks `asked` ("formal charge")
+ * does not close with `closing` word for word about an element the stem
+ * prints — or null. `closing` holds `<Symbol>`.
+ */
+export function signedClosingProblem(question, closing) {
+  const text = String(question ?? '').trim();
+  const [head, tail] = closing.split('<Symbol>');
+  const escape = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const match = new RegExp(`(?:^|\\s)${escape(head)}([A-Z][a-z]?)${escape(tail)}$`).exec(text);
+  if (!match) return `close the stem word for word "${closing}", the element's symbol in place of <Symbol>`;
+  const symbol = match[1];
+  const before = text.slice(0, match.index);
+  if (!ALL_ELEMENTS.has(symbol)) return `"${symbol}" in the closing is no element's symbol`;
+  // The symbols of every formula the stem prints ("Al(OH)₃" prints Al, O, H; "NCl₃" N and Cl).
+  const printed = before.split(/\s+/).map((token) => token.replace(/^[^A-Z(\[]+|[.,;:?!)”’]+$/g, ''))
+    .filter((token) => /^(?:[A-Z][a-z]?|[\d₀-₉⁰¹²³⁴-⁹⁺⁻()[\]·])+$/.test(token))
+    .flatMap((token) => token.match(/[A-Z][a-z]?/g) ?? []);
+  // …or by name, as 7.4's Check Your Learning prints "the carbon monoxide
+  // molecule" (its structure in the figure): "carbon" is C, "-oxide" is O.
+  const words = before.toLowerCase().split(/[^a-z]+/).filter(Boolean);
+  const named = Object.entries(NAMED_ELEMENTS).filter(([, [name, root]]) => words.some((word) => word === name || (root && word.endsWith(`${root}ide`)))).map(([named]) => named);
+  if (!printed.includes(symbol) && !named.includes(symbol)) return `the closing names ${symbol}, which the stem does not print (as a symbol in a formula, or by the element's name)`;
+  return null;
+}
 
 /**
  * A full possible set of quantum numbers of the key's n and l that a stem
@@ -669,6 +724,18 @@ export function lintLeaks(src, filename = '') {
     }
   }
 
+  // ---- a character the build's KaTeX refuses inside \text{…} --------------
+  // The gates render math with `strict: 'ignore'`; Hugo's build renders with
+  // strict mode on, which refuses some Unicode inside a text group — ≡, ×,
+  // −, Greek letters — and fails the whole build (7.5's `D_\text{C≡O}`, which
+  // `verify-section` passed). Every book: the build is one.
+  for (const span of mathSpans(src, { maskCode: true })) {
+    const texStart = span.index + (span.display ? 2 : 1);
+    for (const { group, character } of strictTextProblems(span.tex)) {
+      err(texStart, `\`${group}\` holds "${character}" (U+${character.codePointAt(0).toString(16).toUpperCase().padStart(4, '0')}), which the build's KaTeX (strict mode) refuses inside a text group and fails the site build on — write it as math outside the group (\\equiv, \\times, -, \\alpha), or in \\ce{…}`);
+    }
+  }
+
   // ---- punctuation closing a \ce{…} ------------------------------------------
   // mhchem reads a period, comma, or semicolon typed last inside `\ce{…}` as
   // part of the formula and draws a period as a raised dot (the hydrate
@@ -1095,11 +1162,44 @@ export function lintLeaks(src, filename = '') {
           err(item.index, `${where}: the hint ${JSON.stringify(hint.slice(0, 60))} does the item ("${does[0]}") — a hint names the tool (the equation by name, the rule, the table), never the arithmetic on this item's numbers or a verdict on its digits (playbook "Hints")`);
         }
       }
+      // A formal charge per element (7.4) closes with the one sentence the
+      // source gate reads, about an element the stem prints.
+      if (item.kind === 'fillin' && /(?:^|\s)whole-number(?:\s|$)/.test(String(item.params.answerForm ?? '')) && /\bformal charges?\b/i.test(question)) {
+        const problem = signedClosingProblem(question, FORMAL_CHARGE_CLOSING);
+        if (problem) err(item.index, `${where}: a formal charge — ${problem}`);
+      }
       // A display equation set inline in a stem and run into the next
       // sentence: "…$d = \frac{m}{V}$ Considering that…" (1.3).
       const run = /\$[^$]*=[^$]*\$[ \t]+([A-Z][a-z]{2,})/.exec(question);
       if (run) {
         err(item.index, `${where}: the inline equation runs into the next sentence ("… ${run[1]}") with no punctuation — an equation set inline in a stem ends its sentence with a period`);
+      }
+    }
+    // A heading of this page called "the … section" (7.3's "the Lewis
+    // Symbols section"): it is a subsection; a Section is a numbered page.
+    for (const phrase of ownHeadingCalledSection(text)) {
+      err(text.indexOf(phrase), `"${phrase}" names a heading of this page — call it a subsection ("${phrase.replace(/section$/, 'subsection')}"); "Section" is a numbered page of the book`);
+    }
+    // Two text-ins for one stem's electron-pair geometry and molecular
+    // structure (7.6) come in the stem's order: the geometry first.
+    const geometrySeen = new Map();
+    for (const item of items.filter((entry) => entry.kind === 'textin')) {
+      const question = String(item.params.question ?? '');
+      const half = /\s*Enter the (electron-pair geometry|molecular structure)\.\s*$/.exec(question);
+      if (!half) continue;
+      const stem = question.slice(0, half.index);
+      if (half[1] === 'electron-pair geometry' && geometrySeen.get(stem) === 'molecular structure') {
+        err(item.index, `${labelOf('textin', item.params)}: the electron-pair geometry is asked after the molecular structure of the same stem — the stem asks the geometry first; put this item first`);
+      }
+      if (!geometrySeen.has(stem)) geometrySeen.set(stem, half[1]);
+    }
+    // A footer that says a defect was "kept as printed" on a page that
+    // carries no Source note (7.5 said it twice): the learner meets the
+    // defect on the page, so the page says so where it stands.
+    for (const footer of text.matchAll(/<small>[\s\S]*?<\/small>/g)) {
+      const kept = /\b(?:kept|left|stands?) as (?:the source )?printed\b/i.exec(footer[0]);
+      if (kept && !src.includes('*Source note:*')) {
+        err(footer.index + kept.index, `the footer says a defect was "${kept[0]}", and the page carries no \`*Source note:*\` — a defect kept on the page is noted where it stands`);
       }
     }
     // The footer is on the page the learner answers on. 1.2's said

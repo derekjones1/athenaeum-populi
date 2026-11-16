@@ -793,3 +793,64 @@ test('scientific-notation is declared only where the question asks for it, in ev
   assert.deepEqual(hit(fillin('What is the energy of the photon?', 'sig-figs:3 last-digit:0'), CHEM), [], 'no token, nothing asked');
   assert.equal(hit(fillin('Write 0.000123 as a decimal times a power of ten.', 'scientific-notation'), MATH).length, 1, 'every book');
 });
+
+test('Chemistry chapter 7: a formal-charge fill-in closes word for word about an element its stem prints', async () => {
+  const { FORMAL_CHARGE_CLOSING } = await import('./lints-leaks.mjs');
+  const close = (symbol) => FORMAL_CHARGE_CLOSING.replace('<Symbol>', symbol);
+  const fillin = (question, form = 'whole-number') => `Body text.\n\n{{< fillin\n  question="${question}"\n  answer="0"\n  answerForm="${form}"\n  hint="Use the formal-charge equation."\n>}}\n`;
+  const rule = (src, file = CHEM) => errorsOf(src, file).filter((e) => /a formal charge — /.test(e));
+  const CO = 'Calculate the formal charge for each atom in the carbon monoxide molecule, shown in the figure above.';
+  const NCL = 'Determine the formal charge for each atom in NCl₃.';
+  assert.deepEqual(rule(fillin(`${NCL} ${close('Cl')}`)), []);
+  assert.deepEqual(rule(fillin(`${NCL} ${close('N')}`)), []);
+  assert.deepEqual(rule(fillin(`Calculate the formal charge of chlorine in the molecule BeCl₂. ${close('Cl')}`)), [], 'Cl inside BeCl₂');
+  assert.equal(rule(fillin(`${NCL} ${close('O')}`)).length, 1, 'an element the stem does not print');
+  assert.match(rule(fillin(`${NCL} ${close('O')}`))[0], /which the stem does not print/);
+  assert.deepEqual(rule(fillin(`${CO} ${close('C')}`)), [], 'carbon, named in words');
+  assert.deepEqual(rule(fillin(`${CO} ${close('O')}`)), [], 'oxygen, as "monoxide"');
+  assert.equal(rule(fillin(`${CO} ${close('N')}`)).length, 1);
+  assert.equal(rule(fillin(`${NCL} Enter the formal charge of Cl as a signed number, the sign first, as +1 or −1.`)).length, 1, 'another example pair');
+  assert.equal(rule(fillin(`${NCL} Enter the formal charge of chlorine.`)).length, 1);
+  assert.equal(rule(fillin(NCL)).length, 1, 'no closing');
+  assert.equal(rule(fillin(`${NCL} ${close('Xx')}`)).length, 1, 'no element');
+  assert.deepEqual(rule(fillin(`${NCL} Enter the charge.`, 'sig-figs:2 last-digit:0')), [], 'only a whole-number fill-in');
+  assert.deepEqual(rule(fillin(`${NCL} Enter it.`), BIO), [], 'only the Chemistry book');
+});
+
+test('a character the build\'s strict KaTeX refuses inside \\text{…} is an error at the page, in every book (7.5\'s D_\\text{C≡O} broke the build)', () => {
+  const rule = (src, file = CHEM) => errorsOf(src, file).filter((e) => /strict mode\) refuses inside a text group/.test(e));
+  assert.equal(rule('The energy $D_\\text{C≡O}$ is large.\n').length, 1);
+  assert.match(rule('The energy $D_\\text{C≡O}$ is large.\n')[0], /holds "≡" \(U\+2261\)/);
+  assert.equal(rule('$$\\Delta H = D_\\text{2×H}$$\n').length, 1, 'display math, a times sign');
+  assert.equal(rule('A $\\text{−3}$ charge.\n', MATH).length, 1, 'every book');
+  // What strict mode takes inside a group stays legal: an en dash, a degree sign, an accent.
+  assert.deepEqual(rule('Bond $D_\\text{H–H}$ at 25 $\\text{°C}$, $\\text{café}$, and $\\ce{C#O}$ outside a group.\n'), []);
+});
+
+test('Chemistry chapter 7: a stem\'s electron-pair geometry is asked before its molecular structure', () => {
+  const t = (closing) => `{{< textin\n  question="What are the electron-pair geometry and the molecular structure of the following molecule or ion? ClF₅. ${closing}"\n  answer="octahedral"\n  hint="Count the regions of electron density."\n>}}\n`;
+  const rule = (src) => errorsOf(src, CHEM).filter((e) => /asked after the molecular structure/.test(e));
+  const EP = 'Enter the electron-pair geometry.';
+  const MS = 'Enter the molecular structure.';
+  assert.deepEqual(rule(`Body.\n\n${t(EP)}\n${t(MS)}`), []);
+  assert.equal(rule(`Body.\n\n${t(MS)}\n${t(EP)}`).length, 1);
+  assert.deepEqual(rule(`Body.\n\n${t(MS)}`), [], 'a molecular structure alone (7.6 [21])');
+});
+
+test('Chemistry chapter 7: a footer that keeps a defect "as printed" needs a Source note on the page', () => {
+  const rule = (src) => errorsOf(src, CHEM).filter((e) => /no `\*Source note:\*`/.test(e));
+  const footer = '\n---\n\n<small>Changes: the dropped minus sign in the last line kept as printed.</small>\n';
+  assert.equal(rule(`Body text.\n${footer}`).length, 1);
+  assert.deepEqual(rule(`Body text.\n\n*Source note:* the source drops a minus sign here.\n${footer}`), []);
+  assert.deepEqual(rule('Body text.\n\n<small>Changes: none.</small>\n'), []);
+});
+
+test('Chemistry: a heading of the page called "the … section" is a subsection (7.3)', () => {
+  const rule = (src, file = CHEM) => errorsOf(src, file).filter((e) => /names a heading of this page/.test(e));
+  const page = (sentence) => `## Lewis Symbols\n\nText.\n\n## Formal Charge\n\n${sentence}\n`;
+  assert.equal(rule(page('As the Lewis Symbols section above shows, the dots are electrons.')).length, 1);
+  assert.match(rule(page('See the Lewis Symbols section above.'))[0], /the Lewis Symbols subsection/);
+  assert.deepEqual(rule(page('See the Lewis Symbols subsection above.')), []);
+  assert.deepEqual(rule(page('See [Section 7.3 Lewis Symbols and Structures](/x/) and the Bond Energies section of that page.')), [], 'a numbered Section, a heading of another page');
+  assert.deepEqual(rule(page('See the Lewis Symbols section above.'), BIO), [], 'Chemistry only');
+});

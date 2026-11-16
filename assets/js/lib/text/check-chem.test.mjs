@@ -643,6 +643,86 @@ test('an ordering\'s preview, canon, and key rules', () => {
   assert.match(chemKeyProblem('F > N > Li > Rb', 'ordering'), /not written in print/);
   assert.match(chemKeyProblem('Rb < Li < Rb', 'ordering'), /twice/);
   assert.match(chemKeyProblem('Rb < sodium', 'ordering'), /does not read/);
-  assert.match(chemKeyProblem('Rb < Li', 'ordering', 'Li < Rb'), /no accept list/);
+  assert.match(chemKeyProblem('Rb < Li', 'ordering', 'Li < Na'), /does not list exactly the key's members/);
   assert.match(chemKeyProblem('Rb < Li < N < F', 'formula'), /declare answerForm="ordering"/);
+});
+
+test('no ion-form message prints the key or an element of it, over every ion key of the corpus; a charge typed without its sign is told so (Chemistry 7.1)', async () => {
+  const { readdirSync, readFileSync, statSync } = await import('node:fs');
+  const path = await import('node:path');
+  const { checkFormula: grade, readSpecies: read, ionChargeMessage, UNSIGNED_CHARGE_MESSAGE } = await import('./check-chem.mjs');
+  const root = new URL('../../../../content/physical-sciences/chemistry/', import.meta.url).pathname;
+  const files = [];
+  const walk = (dir) => { for (const name of readdirSync(dir)) { const full = path.join(dir, name); if (statSync(full).isDirectory()) walk(full); else if (name.endsWith('.md')) files.push(full); } };
+  walk(root);
+  const keys = new Set();
+  for (const file of files) {
+    for (const [, body] of readFileSync(file, 'utf8').matchAll(/\{\{< textin([\s\S]*?)>\}\}/g)) {
+      if (!/answerForm="formula"/.test(body)) continue;
+      const key = /answer="([^"]*)"/.exec(body)?.[1];
+      const [reading] = read(key ?? '');
+      if (reading?.charge && reading.mass === null) keys.add(key);
+    }
+  }
+  assert(keys.size >= 15, `the corpus's ion keys were read (${keys.size})`);
+  const ascii = (text) => text.normalize('NFKC').replace(/\s/g, '');
+  for (const key of keys) {
+    const [reading] = read(key);
+    const bare = reading.canon.split('^')[0];
+    const { message = '' } = grade(bare, key);
+    assert.match(message, /^An ion’s symbol ends with its charge/, `${key}: ${bare} is told its charge is missing`);
+    const examples = [...message.matchAll(/as in (\S+) or (\S+?)\.$/g)].flatMap((match) => [match[1], match[2]]);
+    assert.equal(examples.length, 2, key);
+    for (const example of examples) {
+      assert.notEqual(ascii(example), ascii(key), `${key}: the example is the key`);
+      for (const element of Object.keys(reading.atoms)) assert(!new RegExp(`${element}(?![a-z])`).test(example), `${key}: the example ${example} shares ${element}`);
+    }
+    // The key's atoms and its charge's size, no sign: told so, never the sign.
+    const unsigned = `${bare}${Math.abs(reading.charge)}`;
+    assert.deepEqual(grade(unsigned, key), { status: 'incorrect', message: UNSIGNED_CHARGE_MESSAGE }, `${key}: ${unsigned}`);
+  }
+  assert.doesNotMatch(UNSIGNED_CHARGE_MESSAGE, /\d/);
+  assert.match(ionChargeMessage(read('Cl⁻')), /as in Mg2\+ or F-\.$/);
+  assert.match(ionChargeMessage(read('Se²⁻')), /as in Ca2\+ or Cl-\.$/, 'the old pair where it shares nothing');
+  // A neutral key is untouched: O2 against O₂ is right, against O²⁻ it is told the sign.
+  assert.equal(grade('O2', 'O₂').status, 'correct');
+  assert.equal(grade('O2-', 'O²⁻').status, 'correct');
+  assert.equal(grade('O^2', 'O²⁻').message, UNSIGNED_CHARGE_MESSAGE);
+});
+
+test('a configuration takes as accept only its own whole key\'s core; an ordering, another full order of its members (Chemistry 7.1, 7.2)', async () => {
+  const { checkChem: chem, chemKeyProblem: problem } = await import('./check-chem.mjs');
+  const grade = (typed, answer, accept, form) => chem(typed, answer, { accept, form });
+  // 7.1 printed 7(c), (g): Be²⁺ and Li⁺ keyed 1s² as the source prints them.
+  assert.equal(problem('1s²', 'configuration', '[He]'), null);
+  assert.equal(grade('[He]', '1s²', '[He]', 'configuration').status, 'correct');
+  assert.equal(grade('1s2', '1s²', '[He]', 'configuration').status, 'correct');
+  assert.equal(grade('[He]', '1s²', '', 'configuration').status, 'form', 'without the member, the full-configuration message stands');
+  assert.equal(grade('[He]2s1', '1s²', '[He]', 'configuration').status, 'incorrect');
+  assert.match(problem('1s²2s²2p⁶', 'configuration', '[He]'), /not the key's configuration/);
+  assert.match(problem('[Ne]3s²', 'configuration', '[Ne]'), /only the noble-gas core|already prints a core/);
+  assert.match(problem('1s²', 'configuration', '1s2'), /only the noble-gas core/);
+  // 7.2 printed 17(c): H and P tie at 2.1 in the page's figure.
+  const KEY = 'H < P < S < O < F';
+  const TIE = 'P < H < S < O < F';
+  assert.equal(problem(KEY, 'ordering', TIE), null);
+  for (const typed of ['H < P < S < O < F', 'P < H < S < O < F', 'F > O > S > H > P']) assert.equal(grade(typed, KEY, TIE, 'ordering').status, 'correct', typed);
+  assert.equal(grade('P < H < S < O < F', KEY, '', 'ordering').status, 'incorrect', 'without the member the tie is refused');
+  assert.equal(grade('H < P < O < S < F', KEY, TIE, 'ordering').status, 'incorrect');
+  assert.match(grade('H < P < O < S < F', KEY, TIE, 'ordering').message, /not in the right order/, 'the key\'s own message stands');
+  assert.match(problem(KEY, 'ordering', 'P < H < S < O'), /exactly the key's members/);
+  assert.match(problem(KEY, 'ordering', 'P<H<S<O<F'), /not written in print/);
+  assert.match(problem(KEY, 'ordering', KEY), /the key itself/);
+});
+
+test('a charge typed alone against an ion\'s symbol is told the symbol is missing, never which (Chemistry 7.1)', async () => {
+  const { checkFormula: grade, BARE_CHARGE_MESSAGE } = await import('./check-chem.mjs');
+  for (const [typed, key] of [['3-', 'P³⁻'], ['-3', 'P³⁻'], ['3−', 'P³⁻'], ['2+', 'Mg²⁺'], ['+2', 'Mg²⁺'], ['+', 'Na⁺'], ['-', 'Cl⁻'], ['2-', 'SO₄²⁻']]) {
+    assert.deepEqual(grade(typed, key), { status: 'incorrect', message: BARE_CHARGE_MESSAGE }, `${typed} against ${key}`);
+  }
+  assert.doesNotMatch(BARE_CHARGE_MESSAGE, /\d|[A-Z][a-z]?\d|\b(?:P|Mg|Na|Cl)\b/, 'no number, no element');
+  // Not against a neutral key, and not for a number with no sign.
+  assert.notEqual(grade('2-', 'CO₂').message, BARE_CHARGE_MESSAGE);
+  assert.notEqual(grade('3', 'P³⁻').message, BARE_CHARGE_MESSAGE);
+  assert.equal(grade('P3-', 'P³⁻').status, 'correct');
 });

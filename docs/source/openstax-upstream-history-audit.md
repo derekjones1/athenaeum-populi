@@ -17,9 +17,9 @@
 
 ## Coverage
 
-- Mapped local sections: 808
-- Sections changed upstream: 72
-- Content-level changes: 48
+- Mapped local sections: 814
+- Sections changed upstream: 73
+- Content-level changes: 49
 - Markup/metadata-only changes: 24
 - Changed Try It records: 3
 - Changed Try Its where local math matches the PDF-era form: 0
@@ -34,7 +34,7 @@
 - biology (`biology-bundle`): `5c58838d2594bc5817127fdc47e127c30b44f2c2`
 - microbiology (`microbiology`): `633850257fbd3ccf6187b9428c55e80b69236382`
 - anatomy-physiology (`anatomy-physiology`): `716383a4c6c16037b14d75a156c65145e75e895e`
-- chemistry (`chemistry-bundle`): `7d41ed008e9b83a6690c09c26a16f63f96046ec0` — in-progress, 30 sections mapped
+- chemistry (`chemistry-bundle`): `7d41ed008e9b83a6690c09c26a16f63f96046ec0` — in-progress, 36 sections mapped
 
 ## Changed mapped sections
 
@@ -414,5 +414,10 @@ Module `m68733`; content-changed. Changed lanes: instructionalText.
 ### chemistry 6.5 — [content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/05-periodic-variations-in-element-properties.md](../../content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/05-periodic-variations-in-element-properties.md)
 
 Module `m68735`; content-changed. Changed lanes: instructionalText.
+
+
+### chemistry 7.5 — [content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/05-strengths-of-ionic-and-covalent-bonds.md](../../content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/05-strengths-of-ionic-and-covalent-bonds.md)
+
+Module `m68741`; content-changed. Changed lanes: instructionalText.
 
 
