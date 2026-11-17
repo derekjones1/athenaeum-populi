@@ -57,6 +57,52 @@ export function bareGreekMath(text) {
     .map((match) => ({ index: match.index, written: match[0], letter: match[1] === 'pi' ? 'π' : 'σ' }));
 }
 
+/** The item shortcodes whose every word — question, options, hint, model answer, rubric — is the item's. */
+const ITEM_SHORTCODES = ['multiplechoice', 'fillin', 'textin', 'selfcheck', 'sortbins', 'graphplot'];
+
+/**
+ * g. A bare σ or π in running prose that names a kind of bond or orbital
+ * and is not written with its name, "sigma (σ)" / "pi (π)" (GR2, November
+ * 16, 2026, Derek). Read: body paragraphs, list items, table cells,
+ * headings, captions, callouts, Summary, Key terms, Source notes, the
+ * footer. Not read: item text (every multiple choice, fill-in, text-in,
+ * self-check, sort-bins, graph plot — stems are the source's verbatim), a
+ * shortcode's attributes (`alt`, `longdesc`: a screen reader says the
+ * letter's name), HTML attributes, math, code, front matter. Not a hit: a
+ * letter already beside its name ("sigma bonds (σ bonds)", "pi (π)"); a
+ * label — the letter followed at once by a subscript, superscript, star,
+ * letter, or digit (σ₂ₛ, π*, σ2s, πp); and π the number ("multiplied by
+ * π", "2π", "π × r").
+ */
+export function bareSigmaPi(text) {
+  let prose = body(text);
+  for (const name of ITEM_SHORTCODES) {
+    for (const sc of shortcodes(prose, name)) prose = prose.slice(0, sc.index) + blankPreservingOffsets(prose.slice(sc.index, sc.end)) + prose.slice(sc.end);
+  }
+  prose = proseOnly(prose)
+    .replace(/\{\{<[\s\S]*?>\}\}/g, blankPreservingOffsets)
+    .replace(/\b(?:alt|title|aria-label)="[^"]*"/g, blankPreservingOffsets);
+  const hits = [];
+  for (const match of prose.matchAll(/[σπ]/g)) {
+    const at = match.index;
+    const letter = match[0];
+    const name = letter === 'σ' ? 'sigma' : 'pi';
+    const before = prose.slice(Math.max(0, at - 40), at);
+    const after = prose.slice(at + 1, at + 4);
+    // A label: σ₂ₛ, σ*, π*, σ2s, πp, σ¹.
+    if (/^[*∗\p{L}\p{N}₀-₉ₐ-ₜ⁰-⁹⁺⁻]/u.test(after)) continue;
+    // π the number: after a digit, an operator, or "by", and before no word.
+    if (letter === 'π' && (/(?:\d|[×·=/+−]\s*|\bby\s)$/u.test(before) || /^\s*[×·=/+−\d]/u.test(after)) && !/^[\s-]+(?:bond|orbital|electron|overlap|system|character|cloud)/u.test(prose.slice(at + 1, at + 20))) continue;
+    // The letter named as a letter, not a bond: a footer's "σ and π set as
+    // math", "σ and π written with their names".
+    if (/^(?:\s+(?:and|or)\s+[σπ])?\s+(?:set|written|typed)\b/u.test(prose.slice(at + 1, at + 24))) continue;
+    // Beside its name: "sigma (σ)", "Pi (π)", "sigma bonds (σ bonds)", "pi (π) bonding orbital".
+    if (new RegExp(`\\b${name}\\b[^.()\\n]{0,24}\\(\\s*$`, 'i').test(before)) continue;
+    hits.push({ index: at, written: prose.slice(Math.max(0, at - 12), at + 12).replace(/\s+/g, ' ').trim(), letter, name });
+  }
+  return hits;
+}
+
 /**
  * c. A clause of one rubric wholly contained in another clause of the same
  * rubric (GR4), read as the rubric-run lint reads a clause

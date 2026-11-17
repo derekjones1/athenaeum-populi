@@ -95,7 +95,7 @@ import { amountHintProblem, heatAsk, isNegativeKey } from '../lib/heat-ask.mjs';
 import { askedUnit, shownUnit, showsAskedUnit } from '../lib/item-units.mjs';
 import { isWordRun, readWords } from '../lib/rubric-run.mjs';
 import { cePrinted } from '../lib/keyed-units.mjs';
-import { bareGreekMath, britishSpellingAndStraightApostrophes, italicOrbitalLetters, minusAsBond, overlappingRubricClauses, plainAnswerDisplays, straightApostrophes } from './chemistry-notation.mjs';
+import { bareGreekMath, bareSigmaPi, britishSpellingAndStraightApostrophes, italicOrbitalLetters, minusAsBond, overlappingRubricClauses, plainAnswerDisplays, straightApostrophes } from './chemistry-notation.mjs';
 import {
   colourOutsideVisible, dashHyphens, italicDescriptiveSubscripts, miscountedConfigurations, proseOnly, sourceNumberReferences, subshellLabelSlips,
 } from './chemistry-readings.mjs';
@@ -1263,6 +1263,9 @@ export function lintLeaks(src, filename = '') {
     }
     for (const hit of bareGreekMath(text)) {
       err(hit.index, `\`${hit.written}\` is a bare ${hit.letter} set as math outside a multiple choice or fill-in — write the letter (${hit.letter}) in the body, a caption, an alt, a text-in, or a self-check; math is for a multiple-choice or fill-in question, option, or hint (and the self-check that shares its stem), and for an orbital symbol with a subscript, superscript, or star`);
+    }
+    for (const hit of bareSigmaPi(text)) {
+      err(hit.index, `"${hit.written}": a bare ${hit.letter} names a bond or orbital in running prose — write it with its name, "${hit.name} (${hit.letter})" ("a sigma (σ) bond", "pi (π) bonding"); item text, alts and longdescs, math, and a label with a subscript, superscript, or star stay as they are (playbook "Notation", σ and π)`);
     }
     for (const hit of minusAsBond(text)) {
       err(hit.index, `"${hit.written}" draws a bond with the minus sign U+2212 — a single bond between symbols is an en dash (H–C≡C–H)`);

@@ -1314,14 +1314,35 @@ mhchem extension, so nothing is loaded:
   y-, z-axis letters keep their italics (lint: an italic orbital letter after
   a shell number, before "orbital", "subshell", "electron", "hybrid", or
   "bond", and `*sp*`).
-- **σ and π** *(chapter 8)*. A bare σ or π is Unicode in the body, a
-  caption, the Summary, Key terms, an alt, and in a `textin` or `selfcheck`
-  (question, model answer, hint, rubric). It is math (`$\sigma$`, `$\pi$`)
-  in a `multiplechoice` or `fillin` question, option, or hint — the lint
-  requires math for π there, and σ goes with it — and in a `selfcheck` that
-  shares a `multiplechoice`'s stem (lint: a bare `$\sigma$` or `$\pi$`
-  anywhere else). A molecular-orbital symbol with a subscript, a
-  superscript, or a star is math wherever math is allowed.
+- **σ and π in running prose are written with their names** *(November
+  16, 2026, Derek)*: "a sigma (σ) bond", "pi (π) bonds", "sigma (σ) and pi
+  (π) bonds", the symbol in parentheses after its name and the rest of the
+  phrase unchanged; a hyphenated form is judged so it reads as English
+  ("π-bonding" → "pi (π) bonding"), and a σ already glossing a word keeps
+  its parentheses ("single (sigma (σ)) bonds"). Running prose is body
+  paragraphs, list items, table cells, `##`/`###` headings (the Practice
+  headings with the objectives they equal), figure captions, callouts and
+  feature boxes, the objectives callout, the Summary, Key terms (headword
+  and definition: "**pi (π) bonding orbital**"), `*Source note:*`
+  paragraphs, and the footer, which says so ("σ and π written with their
+  names, as sigma (σ) and pi (π), in running text"). What stays: a place
+  that already gives the name beside the symbol ("sigma bonds (σ bonds)",
+  "pi (π) bonding molecular orbital"); a symbol with a subscript, a
+  superscript, or a star — σ₂ₛ, π*, `$\sigma_{2\text{s}}$`, `$\pi^*$`, a
+  starred headword ("$\pi^*$ antibonding orbital") — which is a label; π the
+  number ("multiplied by π"); the letters named as letters ("σ and π set as
+  math"); `alt` and `longdesc` (a screen reader says the letter's name; a
+  figure's printed label is quoted as printed); math; and ALL item text.
+  In items a bare σ or π stays as the source prints it: Unicode in a
+  `textin` or `selfcheck` (question, model answer, hint, rubric), math
+  (`$\sigma$`, `$\pi$`) in a `multiplechoice` or `fillin` question, option,
+  or hint — the lint requires math for π there, and σ goes with it — and in
+  a `selfcheck` that shares a `multiplechoice`'s stem (lint: a bare
+  `$\sigma$` or `$\pi$` anywhere else). Lint: a bare σ or π in running
+  prose, not beside its name and not a label or the number
+  (`bareSigmaPi`, `tools/lint/chemistry-notation.mjs`; 116 in chapter 8
+  when it went on, 0 after). A molecular-orbital symbol with a subscript, a
+  superscript, or a star is math wherever math is allowed *(chapter 8)*.
 - **In a molecular-orbital symbol the orbital letters are upright**
   *(chapter 8)*: `$\sigma_{2\text{s}}$`, `$\sigma_\text{s}^*$`,
   `$\pi_{2\text{p}}$` — a descriptive subscript, as the next rule says; an

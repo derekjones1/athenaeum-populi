@@ -5,7 +5,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  straightApostrophes, bareGreekMath, britishSpellingAndStraightApostrophes, italicOrbitalLetters, minusAsBond, overlappingRubricClauses, plainAnswerDisplays,
+  straightApostrophes, bareGreekMath, bareSigmaPi, britishSpellingAndStraightApostrophes, italicOrbitalLetters, minusAsBond, overlappingRubricClauses, plainAnswerDisplays,
 } from './chemistry-notation.mjs';
 import { lintLeaks } from './lints-leaks.mjs';
 
@@ -71,12 +71,45 @@ test('f. an answerDisplay with no math', () => {
   assert.deepEqual(plainAnswerDisplays(fillin('$2+$')), []);
 });
 
-test('the five lints are errors in the Chemistry book only', () => {
-  const page = '{{< selfcheck question="Q?" hint="h" >}}\nLesser; the calculated q would be lesser.\n===CHECKS===\nq would be lesser\nthe calculated q would be lesser\n{{< /selfcheck >}}\n\nBody: Hund\'s rule; the 4*s* electron; the $\\sigma$ bond; H−C≡C−H; a labelled drawing.\n\n{{< fillin\n  question="How many?"\n  answer="4"\n  answerForm="whole-number"\n  answerDisplay="4"\n  hint="Count them."\n>}}\n';
+test('g. a bare σ or π naming a bond or orbital in prose is written with its name (Derek, November 16, 2026)', () => {
+  const letters = (text) => bareSigmaPi(text).map((hit) => hit.letter);
+  // Hits: body, list item, table cell, caption, heading, Key-terms headword, Source note, footer.
+  assert.deepEqual(letters('A σ bond is stronger than a π bond.\n'), ['σ', 'π']);
+  assert.deepEqual(letters('- Multiple bonds consist of σ and π bonds.\n'), ['σ', 'π']);
+  assert.deepEqual(letters('| forms σ or π bonds | creates bonding interactions |\n'), ['σ', 'π']);
+  assert.deepEqual(letters('{{< mediafigure src="chemistry/x" kind="diagram" alt="A σ bond." >}}\nThe π bond lies above the plane.\n{{< /mediafigure >}}\n'), ['π'], 'the caption is read, the alt is not');
+  assert.deepEqual(letters('### Define and give examples of σ and π bonds\n'), ['σ', 'π']);
+  assert.deepEqual(letters('- **π bonding orbital** — molecular orbital formed by side-by-side overlap.\n'), ['π']);
+  assert.deepEqual(letters('*Source note:* the source prints a σ bond here.\n'), ['σ']);
+  assert.deepEqual(letters('<small>Changes: the π bond drawn in grey.</small>\n'), ['π']);
+  assert.deepEqual(letters('Resonance and π-bonding.\n'), ['π'], 'a hyphenated form');
+  // Written with its name.
+  assert.deepEqual(letters('A sigma (σ) bond and pi (π) bonds; Sigma (σ) bonds form; pi (π) bonding.\n'), []);
+  assert.deepEqual(letters('produce **sigma bonds (σ bonds)**; a **pi bond (π bond)**.\n'), [], 'case (a): the name already beside it');
+  // Labels: subscript, superscript, star, or a letter or digit run on.
+  assert.deepEqual(letters('The σ₂ₛ and π* orbitals, σ*2s, σ2px, πp, and π¹.\n'), [], 'case (b): a label');
+  assert.deepEqual(letters('- **π* antibonding orbital** — antibonding molecular orbital.\n'), [], 'a starred headword is a label');
+  // Item text, every kind.
+  assert.deepEqual(letters('{{< multiplechoice question="Is it a σ or a π bond?" answer="π" hint="The π overlap." >}}\nσ\nπ\n{{< /multiplechoice >}}\n'), [], 'case (c): multiple choice');
+  assert.deepEqual(letters('{{< fillin\n  question="How many π bonds?"\n  answer="2"\n  hint="Count the π bonds."\n>}}\n'), [], 'case (c): fill-in');
+  assert.deepEqual(letters('{{< textin question="Name the σ bond." answer="sigma" hint="The σ bond." >}}\n'), [], 'case (c): text-in');
+  assert.deepEqual(letters('{{< selfcheck question="Explain σ and π bonds." hint="h" >}}\nσ bonds are stronger.\n===CHECKS===\nσ bonds are stronger\n{{< /selfcheck >}}\n'), [], 'case (c): self-check, model answer and rubric');
+  // Alts and longdescs; math; code; front matter.
+  assert.deepEqual(letters('{{< mediafigure src="chemistry/x" kind="diagram" alt="One σ bond, no π bonds." longdesc="A region labeled π bond." >}}\n'), [], 'case (d): alt and longdesc');
+  assert.deepEqual(letters('<img src="x.webp" alt="A σ bond.">\n'), [], 'case (d): an HTML alt');
+  assert.deepEqual(letters('The $\\sigma$ bond and $$\\pi_{2\\text{p}}$$, and `σ bond` in code.\n'), [], 'case (e): math and code');
+  assert.deepEqual(letters('---\ntitle: "σ and π"\n---\nBody.\n'), [], 'front matter');
+  // π the number, and the letters named as letters.
+  assert.deepEqual(letters('150 million is that number multiplied by π. The circumference is 2π r, and π × r² the area.\n'), [], 'π the number');
+  assert.deepEqual(letters('<small>Changes: σ and π set as math in the stems; σ and π written with their names, as sigma (σ) and pi (π), in running text.</small>\n'), [], 'the letters named as letters in a footer');
+});
+
+test('the lints are errors in the Chemistry book only', () => {
+  const page = '{{< selfcheck question="Q?" hint="h" >}}\nLesser; the calculated q would be lesser.\n===CHECKS===\nq would be lesser\nthe calculated q would be lesser\n{{< /selfcheck >}}\n\nBody: Hund\'s rule; the 4*s* electron; the $\\sigma$ bond; a π bond; H−C≡C−H; a labelled drawing.\n\n{{< fillin\n  question="How many?"\n  answer="4"\n  answerForm="whole-number"\n  answerDisplay="4"\n  hint="Count them."\n>}}\n';
   const errors = lintLeaks(page, CHEM).errors;
-  for (const pattern of [/a straight ' in a word/, /is wholly inside the clause/, /sets an orbital letter italic/, /bare σ set as math/, /draws a bond with the minus sign/, /American spelling/, /answerDisplay="4" has no math/]) {
+  for (const pattern of [/a straight ' in a word/, /is wholly inside the clause/, /sets an orbital letter italic/, /bare σ set as math/, /a bare π names a bond or orbital/, /draws a bond with the minus sign/, /American spelling/, /answerDisplay="4" has no math/]) {
     assert.ok(errors.some((error) => pattern.test(error)), String(pattern));
   }
   const elsewhere = lintLeaks(page, 'content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md').errors;
-  assert.ok(!elsewhere.some((error) => /orbital letter italic|bare σ|minus sign U\+2212|American spelling|has no math/.test(error)));
+  assert.ok(!elsewhere.some((error) => /orbital letter italic|bare σ|bare π|minus sign U\+2212|American spelling|has no math/.test(error)));
 });

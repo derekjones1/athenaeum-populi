@@ -4487,8 +4487,8 @@ then chapter 9.
 
 ### For Derek
 
-Items 1 and 4 were answered the same day ("The two lints and the charge",
-below).
+Items 1, 2, and 4 were answered the same day ("The two lints and the charge",
+below), and items 3 and 5 were put to Derek with what was measured.
 
 1. A charge is typed the sign first (`+2`), and Section 4.2 of the book says a
    charge is written number first (2+) and an oxidation number sign first, to
@@ -4555,6 +4555,30 @@ A follow-up pass after the chapter's commit (`b7a49764`), by the gate agent
   snapshot taken at the commit, each with its change asserted (apostrophes
   only; the charge closing and token only; rubric clauses only).
   `--min-replayed` 9253 → 9256.
+
+- **σ and π carry their names in running prose** (Derek, the same day: "show
+  the symbols next to the word in parentheses when in prose"): a bare σ or π
+  that names a bond or an orbital is written "sigma (σ)" or "pi (π)" in the
+  body, captions, objectives and the headings that repeat them, the Summary,
+  Key terms, Source notes, and footers — 116 places on chapter 8's five pages
+  (8.1 40, 8.2 9, 8.3 43, 8.4 21, the landing 3). A symbol with a subscript,
+  superscript, or star is a label and stays; item text, alts, and extended
+  descriptions stay as they were, so no item re-hashed. A lint holds it
+  (`bareSigmaPi`, 116 hits before and none after; the number π is left
+  alone). Two places where the rule's form nested parentheses were reworded
+  by the parent (8.3's "single (σ) bonds" is "single sigma (σ) bonds"; a
+  table cell of 8.4 lists the orbitals after a colon).
+- **The lavender backgrounds, measured**: 72 of the book's 494 vendored
+  images have the source's flat lavender example-box fill in all four corners
+  (chapter 7 33, chapter 8 11, chapter 3 9, chapter 4 7, and a few each in
+  chapters 1, 2, 5, 6) — a property of the source's rasters for drawings
+  inside worked examples, not of 8.2. Left as it is, for Derek to decide.
+- **Phosphate's key stands**: "delocalized" is what the source keys and is
+  sound — the four P–O bonds of the ion are equivalent, and a study of
+  phosphate bonding represents the terminal P–O bond with a P=O π bond
+  (Gamoke, Neff, and Simons, "Nature of PO bonds in phosphates", J. Phys.
+  Chem. A, 2009; abstract read through PubMed's E-utilities), which in an ion
+  of four equivalent oxygen atoms is spread over the four positions.
 
 What the follow-up got wrong: the parent first turned the two lints into an
 open-list entry instead of doing them, against a standing rule; and the first
