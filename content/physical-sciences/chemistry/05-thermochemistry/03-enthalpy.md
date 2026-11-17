@@ -208,7 +208,7 @@ The combustion of gasoline is very exothermic. (credit: modification of work by 
 Using these data,
 
 $$\begin{aligned}
-&1.00\ \cancel{\text{L}\ \ce{C8H18}} \times \frac{1000\ \cancel{\text{mL}\ \ce{C8H18}}}{1\ \cancel{\text{L}\ \ce{C8H18}}} \times \frac{0.692\ \cancel{\text{g}\ \ce{C8H18}}}{1\ \cancel{\text{mL}\ \ce{C8H18}}} \\[6pt]
+&1.00\ \cancel{\text{L}\ \ce{C8H18}} \times \frac{1{,}000\ \cancel{\text{mL}\ \ce{C8H18}}}{1\ \cancel{\text{L}\ \ce{C8H18}}} \times \frac{0.692\ \cancel{\text{g}\ \ce{C8H18}}}{1\ \cancel{\text{mL}\ \ce{C8H18}}} \\[6pt]
 &\quad \times \frac{1\ \cancel{\text{mol}\ \ce{C8H18}}}{114.232\ \cancel{\text{g}\ \ce{C8H18}}} \times \frac{-5{,}460\ \text{kJ}}{1\ \cancel{\text{mol}\ \ce{C8H18}}} \\[6pt]
 &= -3.31 \times 10^{4}\ \text{kJ}
 \end{aligned}$$
@@ -476,7 +476,7 @@ $$\begin{aligned}
   question="Aluminum chloride can be formed from its elements: (i) $\ce{2Al(s) + 3Cl2(g) -> 2AlCl3(s)}$ $\Delta H^\circ$ = ? Use the reactions here to determine the $\Delta H^\circ$ for reaction (i): (ii) $\ce{HCl(g) -> HCl(aq)}$ $\Delta H^\circ_\text{(ii)}$ = −74.8 kJ; (iii) $\ce{H2(g) + Cl2(g) -> 2HCl(g)}$ $\Delta H^\circ_\text{(iii)}$ = −185 kJ; (iv) $\ce{AlCl3(aq) -> AlCl3(s)}$ $\Delta H^\circ_\text{(iv)}$ = +323 kJ/mol; (v) $\ce{2Al(s) + 6HCl(aq) ->}$ $\ce{2AlCl3(aq) + 3H2(g)}$ $\Delta H^\circ_\text{(v)}$ = −1049 kJ. Enter the enthalpy change in kilojoules."
   answer="-1407"
   answerForm="sig-figs:4 last-digit:0"
-  answerDisplay="$-1407\ \text{kJ}$"
+  answerDisplay="$-1{,}407\ \text{kJ}$"
   hint="Use Hess’s law: arrange the given equations so that they add up to the reaction asked for, changing each $\Delta H$ as its equation is multiplied or reversed."
 >}}
 
@@ -555,7 +555,7 @@ Note that this result was obtained by (1) multiplying the $\Delta H^\circ_\text{
   question="Calculate the heat of combustion of 1 mole of ethanol, C₂H₅OH(*l*), when H₂O(*l*) and CO₂(*g*) are formed. Use the following enthalpies of formation: C₂H₅OH(*l*), −278 kJ/mol; H₂O(*l*), −286 kJ/mol; and CO₂(*g*), −394 kJ/mol. Enter the heat of combustion in kJ/mol."
   answer="-1368"
   answerForm="sig-figs:4 last-digit:0"
-  answerDisplay="$-1368\ \text{kJ/mol}$"
+  answerDisplay="$-1{,}368\ \text{kJ/mol}$"
   hint="Write the balanced combustion equation, then use the form of Hess’s law that sums enthalpies of formation."
 >}}
 

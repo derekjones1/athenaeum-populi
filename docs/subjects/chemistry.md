@@ -303,6 +303,8 @@ The component follows the SHAPE of the source's keyed answer:
 | two or more quantities ("5371 °F, 3239 K"; a range; a ratio) | one `fillin` per quantity, each stem saying which |
 | a sentence or two that hold symbols among their words ("Al will form a cation with a charge of 3+: Al³⁺, an aluminum ion. Carbon will form an anion with a charge of 4−: C⁴⁻, a carbide ion.") | a formula `textin` per symbol, each stem closing with a sentence that says whose ("Enter the symbol of the ion that carbon forms."), then ONE `selfcheck` with the source's stem and its answer whole — last, so its reveal does not hand over the keys. The gate reads a formula the answer introduces with a colon |
 | an explanation, a list, a description, "answers will vary" | `selfcheck` with the source solution as the model answer and a rubric |
+| a value estimated from a graph ("About 12.5 L", "about 17–18 mL", "~18 mL") | `selfcheck` with the source's answer as the model answer and the figure named in the stem: a reading from a graph is a range, a measured `fillin` grades one number, and a multiple choice would need numbers the author invented. Where one part of the same question is calculated (9.2's syringe: "(c) 17.7 mL"), that part is a `fillin` placed FIRST, so the readings' answers do not give it *(chapter 9)* |
+| several quantities asked in one sentence with no lettered parts ("What is this pressure in atmospheres, in millimeters of mercury, in kilopascals, and in bar?") | one `fillin` per quantity, each repeating the source's stem whole and closing with the one it asks for ("Enter the pressure in kilopascals."); the lint reads fill-ins that share one stem up to the closing sentence as parts of one question *(chapter 9)* |
 | a drawing | `selfcheck` with the figure in the model answer ("Figures") |
 | a drawing labelled with the part's own formula ("SeF₆: [structure]") | the drawing row: the label is no word of the answer, and the model answer need not print it *(chapter 7)* |
 | a drawing and words ("eight electrons: [symbol]"; "[structure] In this case, the Lewis structure is inadequate …") | the drawing row, the source's words carried whole beside the figure ("Eight electrons:", the figure, then the SOURCE's sentence about it). An added describing sentence is written only where the drawing holds something the source's words do not describe (8.1's N₂ answer: the words speak of orbitals, the drawing is a Lewis structure); where the source's words already say what the drawing shows (8.1's O₂ sketch, 8.4's labelled σ* drawing), nothing is added *(chapter 8)*; a part answered in words only ("no electrons Be²⁺") is a `selfcheck` whose model answer is those words ("No electrons: Be²⁺.") *(chapter 7)* |
@@ -606,6 +608,9 @@ selfchecks, source defects, the footer — and each is stated once.
     The same holds where `1` would grade a value reachable WITHOUT the
     stem's data (4.5: the percent of gallium from the formula alone, 22.5,
     beside the data's 22.4) *(chapter 4)*.
+    And where `1` would grade the value ANOTHER datum of the stem gives
+    (9.1: a pressure printed in inches of mercury and in millibars that
+    are not the same pressure, 101.5 kPa beside 101.4) *(chapter 9)*.
   - `2` only when THIS book's own conversion table offers more than one
     route and the routes end more than one unit apart — one of them may be
     exact — with every route computed in the ledger (1.6: Kilimanjaro's
@@ -835,6 +840,27 @@ selfchecks, source defects, the footer — and each is stated once.
   (110 °C − 100 °C is 10 °C, two figures). A key ruled after the blind solve
   has its figure count read again by the solver's note, not by the parent
   alone.
+- **A kelvin temperature has the figures its last place gives** *(chapter
+  9; the blind solver)*: every key is worked with $T_\text{K} =
+  T_{°\text{C}} + 273.15$, exact, and a Celsius temperature to the units
+  place gives a kelvin temperature to the units place — three figures from
+  23 °C (296 K), two from −196 °C (77 K). The figure screen reads the
+  Celsius digits, not the kelvin: the parent converts every temperature
+  of the chapter before ruling on its rows (9.2's hydrogen warmed from
+  −196 °C is 12 L, where the source prints 12.1; the parent's first ruling
+  said every temperature of the module carried three).
+- **A whole-number key whose trailing zeros hide its count is written
+  plain, and so is its display** (`35200` at `sig-figs:3`,
+  `$35{,}200\ \text{Pa}$`; `10` at `sig-figs:2`), as chapters 1–8 write
+  them; the declared count is the one the source's answer needs (350 bar
+  from a 180-L tank: two, since three would be 349; 0.974 atm from 740
+  torr: three), and where the answer fits every count (400 torr from 600
+  torr), the count of the stem's other data *(chapter 9)*.
+- **A worked example converts to kelvin with 273.15 and prints the carried
+  value** where a later step uses it (297.15 K, not the source's 297 K),
+  under the Source note for rounded intermediates with one clause added
+  for the 273 *(chapter 9)*. A result that moves is a correction (9.2's
+  gas thermometer, −33.3 °C for the source's −33.4).
 - **A key that is a stem number by the law the item tests** (the total mass
   of products, 200.0 g, from 200.0 g of reactant) stands as a `fillin`; the
   ledger says so.
@@ -1203,6 +1229,31 @@ after the rule was written, so the line is drawn by pairs:
   Form: "*Source note:* the answer graded here is not the one the source
   prints for the smallest circumference; the source's value does not follow
   from the stem's data." The erratum holds the numbers.
+- **A stem that prints one quantity twice, in two units that disagree**
+  (9.1: "29.97 in. Hg, 1013.9 mbar"), keeps its words; the closing
+  sentence names the reading to convert ("Enter the pressure in
+  kilopascals, converted from the reading in inches of mercury."), the item
+  takes `last-digit:0`, and a Source note after it says only that the two
+  readings are not the same pressure — it does not open "the answer
+  graded", since the key is the source's *(chapter 9)*.
+- **"A key the source's own arithmetic misrounds" needs every number in
+  the stem.** Where the factor is a table's (9.1's Venus: 88.8 atm × the
+  table's ~14.7 psi is 1.31 × 10³, and the source's 1.30 × 10³ is what the
+  exact factor's product, on the rounding edge, can give), the key is still
+  the book's table's, with the deviation, the note, and `last-digit:1` —
+  but the erratum says "the book's table against the source's factor",
+  not a slip, and the note says "does not follow from the stem's pressure
+  and the table's factor" *(chapter 9)*.
+- **A drawing answer that draws something the law forbids** (9.2: a
+  pressure–volume curve that turns upward at its end) ships as the
+  source's image with an alt that says what is drawn, one sentence inside
+  the model answer that names the flaw, and a Source note directly after
+  the block that says only where the drawing is inexact *(chapter 9)*.
+- **A Source note the parent words from a reader's finding is read against
+  the page's own numbers before it is sent**: the first note on 9.1's
+  "100–125 km thick" said the thermosphere lay above that thickness, and
+  the same sentence gives the thermosphere as starting at 80 km; the fix
+  check caught it *(chapter 9)*.
 
 ### The footer
 
@@ -1275,7 +1326,10 @@ is only a symbol, an equals sign, and a value with its unit.
 slash** (m/s, J/mol, kJ/mol); only a bare reciprocal keeps its exponent, as
 its own math span (`$\text{s}^{-1}$`, `$\text{m}^{-1}$`). Body display math
 keeps the source's form, and each change from the source's form is a
-footer clause *(chapter 6)*. **A subshell label with a variable shell
+footer clause *(chapter 6)*. The gas constant is the case with two
+reciprocal units: in prose, hints, stems, and Key terms it is
+`$R$` = 0.08206 L atm/(mol K) and 8.314 kPa L/(mol K), and display math
+keeps the source's mol⁻¹ K⁻¹ *(chapter 9)*. **A subshell label with a variable shell
 number is one upright Unicode token**, n included: "ns", "(n − 1)d",
 "ns²np³" *(chapter 6; lint: `$n$s`, `$(n - 1)$d`, and `n\text{s}` in math
 are refused)*. **"Wave–particle" takes an en dash**, and a
@@ -1403,11 +1457,17 @@ mhchem extension, so nothing is loaded:
   (`$8{,}119$`, an `answerDisplay` of `$5{,}371\ \text{°F}$`), whatever
   the source prints. The grader reads a typed `5,371` as 5371. The lint
   lets 1000–2099 through as possible years; the rule does not:
-  `1{,}000\ \text{mL}` *(chapter 3)*.
+  `1{,}000\ \text{mL}` *(chapter 3)*, and a second lint refuses a number
+  in that band set in math before a spacing command and a unit, which is
+  never a year *(November 17, 2026)*.
 - **Rows of an `aligned` display that each hold a fraction are separated
   by `\\[6pt]`** *(chapter 3, the rendered-page readers)*: with a bare
   `\\` one row's denominator sits on the next row's numerator and the
-  column reads as one tall fraction.
+  column reads as one tall fraction. A lint refuses a bare `\\` between
+  two such rows *(November 17, 2026)*.
+- **A proportionality sign is math, `$\propto$`**: a bare ∝ in prose or
+  item text renders as a speck in the body face, and a lint refuses it
+  outside math *(chapter 9, November 17, 2026)*.
 - **The molar unit after a number is `*M*` in prose and stems** ("0.30 *M*
   glucose", "5.3 m*M*") and `M` inside math (`$0.674\ M$`); the quantity
   symbol named in a parenthetical is math, "**Molarity ($M$)**". The
@@ -2239,3 +2299,17 @@ What chapter 1 settled, and what the scan of the book counted, are in
   a fill-in judge for `ledger:provenance` (until then a Chemistry
   fill-in's note is carried by hand — the tool labels it "author-built");
   `run.md` §0 reordered by step.
+- from chapter 9, Sections 9.1–9.2 (November 17, 2026;
+  `docs/history/chemistry.md`): an opening parenthesis typed straight
+  before inline math can end a line alone (9.2, "the volume ($V$)": the
+  glue partial holds closing punctuation and labels, not a leading
+  bracket); Appendix C prints "torr = 1 mm Hg (exact, definition)" where
+  9.1 says the two no longer correspond exactly (the appendix needs a
+  re-review row); no gate reads a self-check's model answer against a
+  later fill-in's key on the same page (9.2's syringe readings, found by
+  the checker); no lint reads a quantity symbol set in Markdown italics
+  (`*h*`, `*P*`) where the page sets its symbols as math; the landing
+  footer's standing clauses (chapter outline, splash pointer) are held by
+  no template; `solve:compare` counts an answer written one figure short
+  of the form as agreeing, so a figure-count disagreement is only in the
+  solver's note.

@@ -1329,6 +1329,41 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     erratum: 3181,
     reason: 'the source solution says "the pairing of the two bonding electrons lowers the energy of the system"; the question asks why one electron in the bonding orbital of H₂ is lower in energy than in a 1s atomic orbital, and the module\'s own text gives the reason — electrons in a σs orbital are attracted by both nuclei at the same time and are more stable than in the isolated atoms — so the model answer is that sentence, turned to the question\'s one electron',
   },
+  {
+    page: 'content/physical-sciences/chemistry/09-gases/01-gas-pressure.md',
+    exercise: 'fs-idm5509408#check',
+    kind: 'key',
+    erratum: 3205,
+    reason: 'the Check Your Learning answer prints "10.3 m" for the height of a water column at normal atmospheric pressure; the stem gives the density of water as 1.0 g/cm³, two figures, and 101,325 Pa ÷ (1.0 × 10³ kg/m³ × 9.81 m/s²) = 10.33 m keeps two, as the module\'s other keys keep the figures of their data (32 psi gives 2.2 × 10² kPa), so the fill-in keys 10 at two significant figures',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/09-gases/01-gas-pressure.md',
+    exercise: 'fs-idm51193840',
+    kind: 'key',
+    erratum: 3210,
+    reason: 'the source answer prints "Venus: 1.30 × 10³ lb in⁻²" for 88.8 atm; the module\'s table gives 14.7 psi for 1 atm and 88.8 × 14.7 = 1305.36, which is 1.31 × 10³ at the three figures the answer shows; the source\'s print is what a factor a little under the table\'s gives (the exact 14.69595 puts the product at 1305.0003, on the rounding edge), so this is the book\'s table against the source\'s factor, not an arithmetic slip: the Venus fill-in keys 1.31 × 10³ and its last-digit allowance still grades the source\'s print right; the Earth fill-in keeps the source\'s 14.7',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/09-gases/02-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law.md',
+    exercise: 'fs-idp10418864#check(c)',
+    kind: 'key',
+    erratum: 3206,
+    reason: 'the Check Your Learning answer prints "(c) 17.7 mL" for 30.0 mL × 6.5 psi ÷ 11.0 psi = 17.73 mL; the stem\'s 6.5 psi has two figures, and the example this item follows rounds its own 13.0 psi × 15.0 mL ÷ 7.5 mL to 26 psi, two figures, so the fill-in keys 18',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/09-gases/02-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law.md',
+    exercise: 'fs-idm221278704',
+    kind: 'key',
+    erratum: 3220,
+    reason: 'the source answer prints "12.1 L", three figures, for 2.50 L × 373.15 K ÷ 77.15 K = 12.09 L; −196 °C is given to the units place, so the kelvin temperature is 77 K, two figures (the addition rule of Section 1.5), and the quotient keeps two: the fill-in keys 12. Every other temperature of the module is 200 K or more and carries three figures, which is why its other keys keep three. Found by the blind solver, November 17, 2026',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/09-gases/02-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law.md',
+    exercise: 'fs-idm71892416',
+    kind: 'key',
+    erratum: 3207,
+    reason: 'the source answer prints "5561 L", four figures, for 35.4 L × 151 atm × 310.15 K ÷ 298.15 K = 5560.5 L; the stem\'s volume and pressure have three figures each and every other key of the module keeps the figures of its data, so the fill-in keys 5.56 × 10³ at three significant figures',
+  },
 ]);
 
 /* ---- source side ---------------------------------------------------------- */

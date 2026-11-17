@@ -17,7 +17,7 @@
 
 ## Coverage
 
-- Mapped local sections: 818
+- Mapped local sections: 820
 - Sections changed upstream: 73
 - Content-level changes: 49
 - Markup/metadata-only changes: 24
@@ -34,7 +34,7 @@
 - biology (`biology-bundle`): `5c58838d2594bc5817127fdc47e127c30b44f2c2`
 - microbiology (`microbiology`): `633850257fbd3ccf6187b9428c55e80b69236382`
 - anatomy-physiology (`anatomy-physiology`): `716383a4c6c16037b14d75a156c65145e75e895e`
-- chemistry (`chemistry-bundle`): `7d41ed008e9b83a6690c09c26a16f63f96046ec0` — in-progress, 40 sections mapped
+- chemistry (`chemistry-bundle`): `7d41ed008e9b83a6690c09c26a16f63f96046ec0` — in-progress, 42 sections mapped
 
 ## Changed mapped sections
 

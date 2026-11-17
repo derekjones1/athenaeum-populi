@@ -780,6 +780,14 @@
    "verdict": "ok",
    "note": "Critical Thinking exercise fs-id1259369; selfcheck model answer matches the CNXML solution verbatim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "015fe6dfe90c1241": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp156787120 (atm): 740/760 = 0.97368 -> 0.974, source 0.974",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0160928d5a3a2969": {
    "verdict": "ok"
   },
@@ -6353,6 +6361,14 @@
     "result": "agrees"
    }
   },
+  "0c3b91e6d7bbc777": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm24946256 (printed 31): 8.80 x 0.08206 x 298.15 / 0.992 = 217.04 -> 217 L, source 217 L",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0c3bfc540df200e7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -8302,6 +8318,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "0fe602009acc91a9": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp10418864 part (c): 6.5 psi x 30.0 mL / 11.0 psi = 17.727 -> 18 mL (two figures, 6.5 psi); source prints 17.7, corrected per decision 14 (erratum 3206)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -11357,6 +11381,14 @@
     "result": "agrees"
    }
   },
+  "15f2be258462afec": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm23005472 (printed 45): 0.981 x 100.21 x 278.39/(294.15 x 144.53) = 0.64373 -> 0.644 atm, source 0.644",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "15f4761aed5cabab": {
    "verdict": "ok",
    "note": "body cloze from § Epigenetic Control: Regulating Access to Genes within the Chromosome: \"Some chemical groups (phosphate, methyl, or acetyl groups) are attached to specific amino acids in histone \"tails\" at the N-terminus of the…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -13315,6 +13347,14 @@
   "194a1f084cf97f07": {
    "verdict": "ok"
   },
+  "194ae6db62e2de7d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm77194176 part (b): 623.0/760 = 0.81974 -> 0.820, source 0.820",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "194c6f87d949e804": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -13806,6 +13846,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "1a527e9314ab75d3": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp10418864 closing comment: source answer text after (c), (a)/(b) named as the two graph readings above"
   },
   "1a55d5aec55d1300": {
    "verdict": "ok",
@@ -14535,6 +14579,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
+  "1b89f677f242fab3": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm71892416 (printed 37): 151 x 35.4 x 310.15 /(298.15 x 1) = 5560.5 -> 5.56e3 L (3 figures); source 5561 L, corrected per decision 14 (erratum 3207)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -18647,14 +18699,6 @@
     "result": "agrees"
    }
   },
-  "240330114bbb0a05": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idp146901200 (AlCl3); −1406.8",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "240bd9d50ef6abad": {
    "verdict": "ok",
    "note": "body selfcheck (Antiviral CYU): model answer and three rubric clauses reproduce the module's three-reason HIV paragraph verbatim."
@@ -18734,6 +18778,14 @@
   "243d1f467bd65daa": {
    "verdict": "ok",
    "note": "author-built from § The Levels of Organization: \"This book covers eleven distinct organ systems in the human body ( and ).\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "2440867470434900": {
+   "verdict": "ok",
+   "note": "glossary recall: barometer (definition fs-idp128557152)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -20185,6 +20237,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "26ef1d6bde602bbf": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm221278704 (printed 29): 2.50 L × 373.15 K ÷ 77.15 K = 12.09 L; −196 °C is 77 K to the units place, two figures, so the key is 12 (the source prints 12.1; DISCLOSED_DEVIATIONS, erratum 3220). Key corrected by the parent after the blind solve, whose answer was 12; stem unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "26f1453dd6c351ee": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -21169,6 +21229,14 @@
   "28fc96954c0d04e8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "29006f27d2e08a14": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp156787120 (mm Hg): 1 torr = 1 mm Hg, 740 -> 740 (stem number by the definition tested; decision 7), source 740; hint set to the family wording (fix check J1)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -24537,6 +24605,14 @@
    "verdict": "ok",
    "note": "Critical Thinking Q fs-idm40145904: model answer transcribes the source solution verbatim (island dispersal into distinct niches). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "2f909667e13e2d4b": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm76587328 part (c): 0.84526 x 101.325 = 85.646 -> 85.6, source 85.6",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2f90a1017dcc6904": {
    "verdict": "ok",
    "note": "glossary recall: innate immunity (fs-idp43882912) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -26162,6 +26238,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "32f39081dacd698c": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm76587328 part (a): 760 - 4.63 x 25.4 = 642.398 -> 642, source 642 (mercury higher on gas side, image read)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "32f809ffd6a50dc7": {
    "verdict": "ok",
    "note": "multiplechoice: answer 'all of the above' matches CNXML solution fs-id1570289 (D) for exercise fs-id1425631, source option order preserved. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -26701,6 +26785,14 @@
   "343c3d321e8ea7cf": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "343cb9464a88cb01": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm32613120 (kPa): 615 x 101.325/760 = 81.993 -> 82.0, source 82.0",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -31457,6 +31549,14 @@
     "result": "agrees"
    }
   },
+  "3db4ab60a043151d": {
+   "verdict": "ok",
+   "note": "cloze from summary sentence \"Gases exert pressure, which is force per unit area.\"",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3db4e6a8d768b759": {
    "verdict": "ok",
    "note": "m66442 CT solution fs-idm40512361 (aquaporin structure/chemistry) verbatim; five CHECKS clauses restate its sentences. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -33422,6 +33522,14 @@
     "result": "agrees"
    }
   },
+  "415d02deb6201251": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm51193840 (Earth): table value ~14.7 psi, source 14.7 lb in^-2; hint reworded to point at the table only (checker C4)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "415db6957ed69fcb": {
    "verdict": "ok",
    "note": "2x-3y=-9, 5x+4y=58. Solved independently: 4*eq1=8x-12y=-36, 3*eq2=15x+12y=174, sum: 23x=138 -> x=6; back into eq1: 12-3y=-9 -> y=7. Verified against both original equations. Matches CNXML fs-id1165137433552 (6,7). | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -34461,6 +34569,14 @@
   "437c1d2c4c334282": {
    "verdict": "ok",
    "note": "glossary recall protraction (fs-id1413843); body fs-id1909134",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "437ce14e4006918e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm192798240 part (b): 378.3 x 8.75 /(8.314 x 483) x 28.054 = 23.125 -> 23.1 g, source 23.1",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -36331,6 +36447,10 @@
    "verdict": "ok",
    "note": "KC 2 9.5 § Superior Rotation and Inferior Rotation, m46398"
   },
+  "4758eccc9aac521d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm162722032 (printed 25): About 12.5 L read from CNX_Chem_09_02_Charles2 (graph gives ~12.2 L at 150 K), bare-value form, decision 5"
+  },
   "475afbfbe8de300d": {
    "verdict": "ok"
   },
@@ -37707,6 +37827,14 @@
   "4a1c18d861e461cb": {
    "verdict": "ok",
    "note": "source exercise fs-id1167742719037 (prose-key) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "4a20355f6d2b0203": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm247077296 (printed 39): 0.983 x 20.0/(0.08206 x 300.15) = 0.79820 mol x 58.124 = 46.395 -> 46.4 g, source 46.4",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -39340,6 +39468,14 @@
    "verdict": "ok",
    "note": "Reflection about y-axis of f(x)=1.25^x replaces x with -x: g(x)=1.25^{-x}, matches CNXML Try It ti_04_02_05's method (same reflection type as the worked Example 5, mirrored about the other axis). | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "4d51c8cff640b40d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm211017328 (printed 27): 1344 torr x 748.15/296.15 = 3395.3 -> 3.40e3 torr, source 3.40e3 torr",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4d56bbd836fc8b3f": {
    "verdict": "ok",
    "note": "body cloze from § Root Modifications: \"Tap roots, such as carrots, turnips, and beets, are examples of roots that are modified for food storage ( ).\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -39572,6 +39708,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "4df3482fecfb56cf": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp28025040; source answer carried as the model answer; rubric clause split after the fix check (parent), model answer unchanged | re-read November 15, 2026: rubric clauses rewritten as runs of the model answer’s words; question, hint, and model answer unchanged | carried November 17, 2026 (notation-lint sweep): re-hashed by a row gap (\\\\[6pt]) in the model answer’s display; the question and the key are byte-for-byte unchanged"
   },
   "4df64da10d01dd4b": {
    "verdict": "ok",
@@ -41060,6 +41200,14 @@
   "50e17ca823da4f87": {
    "verdict": "ok",
    "note": "selfcheck line 125: model answer — model answer re-read against m46058 solution"
+  },
+  "50e4053ceab82a11": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm192798240 part (c): (0.23/760)(0.221)/(0.08206 x 219.15) x 39.95 = 1.4858e-4 -> 1.5e-4 g, source 1.5e-4",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "50ea75f8f7f693ee": {
    "verdict": "ok",
@@ -42781,6 +42929,14 @@
   "544100c177b59069": {
    "verdict": "ok",
    "note": "selfcheck; multi-paragraph T-dependent activation process, kept ungraded per one-sentence-test. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "5445e7f26cba9d4a": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm55768576 part (a): 26.4 cm Hg = 264 mm Hg = 264 torr, source 264 (closed-end, image read)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "544b8cede0afaf75": {
    "verdict": "ok",
@@ -45221,6 +45377,14 @@
     "note": "glossary term is 'initiation complex'; the fuller phrase is descriptive; grader agreed"
    }
   },
+  "593806b3a8b842d8": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm32613120 (atm): 615/760 = 0.80921 -> 0.809, source 0.809",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "593f938c8beafdda": {
    "verdict": "ok"
   },
@@ -46870,6 +47034,14 @@
     "result": "agrees"
    }
   },
+  "5c34dd403f077ea8": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp25675936 part (a) (printed 43): 10.0/120.91 x 0.08206 x 273.15 / 1 = 1.8538 (22.4 L route 1.8526) -> 1.85 L, source 1.85",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5c381bad3a235f33": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -47657,6 +47829,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "5dde75cf5cd28ffd": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp44372288, model answer = source solution verbatim"
   },
   "5de2eade71fb5b91": {
    "verdict": "ok",
@@ -49602,6 +49778,14 @@
   "620b58f3a85e551b": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "6229141f4165d885": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm35019472 part (a): 29.97 x 3386 = 101.478 kPa (25.4 route 101.490) -> 101.5, source 101.5; last-digit:0 per parent ruling so the mbar reading (101.39 -> 101.4) is refused; closing and Source note per decision 10 (erratum 3208)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "622d70e6476c283f": {
    "verdict": "ok",
@@ -56039,6 +56223,14 @@
     "result": "agrees"
    }
   },
+  "706b2d4831da87d1": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm31201088 part (c): 0.20318 bar -> 0.20, source ~0.20",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "706bc473583c505f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -56066,10 +56258,6 @@
     "by": "fable-solver-A",
     "result": "agrees"
    }
-  },
-  "70806477aa2ea2e4": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idp28025040; source answer carried as the model answer; rubric clause split after the fix check (parent), model answer unchanged | re-read November 15, 2026: rubric clauses rewritten as runs of the model answer’s words; question, hint, and model answer unchanged"
   },
   "7083486a7e85ab6e": {
    "verdict": "ok",
@@ -58239,6 +58427,14 @@
   "74b13314d0258351": {
    "verdict": "ok",
    "note": "KC 3 14.4 § Antihelminthic Drugs, m58861",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "74b5d6d8e607db11": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp146901200 (AlCl3); −1406.8 | carried November 17, 2026 (notation-lint sweep): re-hashed by a grouping comma in the answerDisplay; the question and the key are byte-for-byte unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -61097,6 +61293,10 @@
    "verdict": "ok",
    "note": "body selfcheck, CYU box 2 bullet 1 (end of § Disproving Spontaneous Generation). Model answer from the swan-neck design sentence (air exchanged, microorganisms caught in the twists and bends) and the life-force-access sentence, both earlier in the same subsection. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "7a2502cb20532ffe": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm188679440 (printed 41): drawing answer CNX_Chem_09_02_Exercise25_img in model answer, describing sentences checked against the image"
+  },
   "7a294e1073d4a538": {
    "verdict": "ok"
   },
@@ -61484,14 +61684,6 @@
   },
   "7ad20f04645fd002": {
    "verdict": "ok"
-  },
-  "7ad77e31c9306ca0": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idp120730208 (ethanol); −1368",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "7ada0fadd8345503": {
    "verdict": "ok",
@@ -64631,6 +64823,10 @@
    "verdict": "ok",
    "note": "source exercise fs-idm77916144, solution fs-idm55824656 verbatim"
   },
+  "8125091659d223fb": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm153017968 part (b): source answer temperature, pressure, bare-value form"
+  },
   "81281ac5ad78ce6a": {
    "verdict": "ok",
    "note": "Practice ex23/Fig26 (fs-id1165137658354): amplitude read from the plotted f(x)=2sin(pi/2 x)-3, node scanExtrema confirms max -1 at x=-3,1 and min -5 at x=-1,3, matching CNXML's printed amplitude 2. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -65274,6 +65470,14 @@
     "result": "agrees"
    }
   },
+  "8289a538bb973f7b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm192798240 part (a) (printed 35): (307/760 atm)(0.100 L)/(0.08206 x 299.15) x 44.009 = 0.072418 -> 7.24e-2 g, source 7.24e-2",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "829189ceba14f17b": {
    "verdict": "ok",
    "note": "source exercise fs-idm50582272 (module ex 14, printed 21); model answer = source solution verbatim"
@@ -65584,6 +65788,14 @@
   "8336a8f53e95533c": {
    "verdict": "ok",
    "note": "Source Review fs-id1394945, key D (fs-id1279730) = none of the above; source option kept (not added locally); glycogen use still requires regenerating ATP from ADP and phosphate, so C is not a second key.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "83371d6dbeeb23f9": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm45782128 (Charles): 32.2 mL x 203.15/303.15 = 21.578 -> 21.6 mL, source 21.6 mL",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -68093,6 +68305,14 @@
     "result": "agrees"
    }
   },
+  "882c94bfdf1b7229": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm77194176 part (c): 0.81974 x 101.325 = 83.060 -> 83.1, source 83.1",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "88318dcb4ba5fe12": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -70486,6 +70706,14 @@
     "result": "agrees"
    }
   },
+  "8cf633c103decbb1": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm66260928 (Amontons): 600 torr x 200.15 K / 300.15 K = 400.10 -> 400 torr, source 400 torr; sig-figs:3 per run-facts decision 14",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8cf7cab662996dc3": {
    "verdict": "ok",
    "note": "Check Your Learning of example fs-idp113495744 (source 39.0 g; table 38.98)",
@@ -71085,6 +71313,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "8e56982e22f222e0": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm153017968 part (a) (printed 21): solution carried whole"
   },
   "8e5a047e07158d04": {
    "verdict": "ok",
@@ -72597,6 +72829,14 @@
   "91757ca492b2cf8e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "9176c96fbbcf1a92": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm35019472 part (b): 2.0 in x 25.4 = 50.8 torr (3386 route 50.79) -> 51, source 51",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -74960,6 +75200,14 @@
   "961d983341cf9ad4": {
    "verdict": "ok",
    "note": "source exercise fs-idp178456496 (printed 2.49) part (a) — solution fs-idp3249008",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "961e998dbcf9bef8": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm95690800 grams: 0.0819015 mol x 67.80 g/mol (molar-mass.mjs) = 5.5529 -> 5.553 g, source 5.553",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -77603,6 +77851,14 @@
   "9bb4cb237e447e3f": {
    "verdict": "ok"
   },
+  "9bbf6cf43b500349": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm87042080: 32/14.7 x 101.325 = 220.57 -> 2.2e2 kPa, source 2.2 x 10^2",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9bc3bc2b729b0b9a": {
    "verdict": "ok"
   },
@@ -77799,6 +78055,14 @@
   "9c11b8e463b363c2": {
    "verdict": "ok",
    "note": "KC 6 31.3 § Plant Parasites, m66605 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "9c12093e110aae6a": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm76587328 part (b): 642.398/760 = 0.84526 -> 0.845, source 0.845",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -78010,6 +78274,10 @@
   "9c9ca3c97a06c39a": {
    "verdict": "ok",
    "note": "m66609 CT exercise fs-idm126240912: model answer is the source solution verbatim (annuals/biennials/perennials definitions), checkpoints decompose its four clauses with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "9c9e28e3767a4522": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm136587680 (printed 47): solution carried whole"
   },
   "9ca18f926471d263": {
    "verdict": "ok",
@@ -78618,6 +78886,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "9dc3db1ed23bc238": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm25727664, model answer = source solution verbatim (subscripted P's set as math)"
   },
   "9dc4158102522e63": {
    "verdict": "ok",
@@ -82917,6 +83189,14 @@
   "a5f8d9f9de968b13": {
    "verdict": "ok",
    "note": "re-derived: 'Which graph shows x = 4?' — option index 1 (0-based) is {x:4}, a vertical line crossing the x-axis at 4, matching authored answerIndex=1; option 0 is the sign-flipped vertical line at x=-4 and option 2 is the vertical/horizontal-confusion distractor y=4; all three share the same -7..7 grid. | carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "a5ffe6bb0cecf17d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm77194176 part (a): 760.0 - 137 = 623.0 -> 623 (mercury higher on gas side, image read), source 623",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "a600d6f555cc234a": {
    "verdict": "ok",
@@ -87572,6 +87852,14 @@
     "result": "agrees"
    }
   },
+  "afd5fd12c4c45dd6": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm5509408: 101325/(1000 x 9.81) = 10.33 m -> 10 at two figures (density 1.0 g/cm3); source prints 10.3, corrected per run-facts decision 8 (erratum 3205)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "afd6413494384498": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -87880,6 +88168,14 @@
   "b0a22234c72a2c54": {
    "verdict": "ok",
    "note": "unkeyed SA fs-id1167663929849; model answer assembled from the Ehrlich 'magic bullet' sentence plus the Compound 606/Salvarsan sentences, no new claim | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "b0a4294e19a23348": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm51193840 (Venus): 88.8 x 14.7 = 1305.36 and 88.8 x 14.69595 = 1305.0003, both 1.31e3; source prints 1.30e3 (misround), corrected per parent ruling (erratum 3210, DISCLOSED_DEVIATIONS), last-digit:1 keeps 1.30 inside the allowance; Source note after the item",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "b0a6af8877316882": {
    "verdict": "ok",
@@ -89172,6 +89468,14 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 94): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "b32646268827a766": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm95690800 (printed 33) moles: 1.220 x 4.3410 / (0.08206 x 788.0) = 0.081902 -> 8.190e-2 mol, source 8.190e-2",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b331b6667223364e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -90334,6 +90638,14 @@
   "b5790508e25a7f00": {
    "verdict": "ok",
    "note": "Re-derived: 2^(x-1)>0 for all x, so f(x)=2^(x-1)+3>3 with infimum 3 not attained; range (3,infinity). Matches source answer 'the range is (3,∞)'. Question reworded from the pre-graphplot combined form; answer unchanged. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "b579990061f1145e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp25675936 part (b): 10.0/48.060 x 0.08206 x 273.15 = 4.6639 (22.4 L route 4.6608) -> 4.66 L, source 4.66",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "b57b0cb9ae706635": {
    "verdict": "ok",
@@ -94480,6 +94792,10 @@
     "result": "agrees"
    }
   },
+  "bda9eea670b1f049": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp16137760 (printed 19): solution carried whole as model answer"
+  },
   "bdaaf5d48207d1c4": {
    "verdict": "ok",
    "note": "Body fs-id1569493: Steroid hormones are derived from the lipid cholesterol.",
@@ -95422,6 +95738,14 @@
   "bfb15f5c8ab93910": {
    "verdict": "ok",
    "note": "selfcheck: How do cancer cells suppress the immune system? — model answer and CHECKS trace to m58896's leukemia/apoptosis-resistance paragraph (immune cells becoming cancerous in leukemia; resistance to apoptosis via membrane proteins shutting off cytotoxic T cells or inducing regulatory T cells); stays selfcheck per run facts (no single fixing sentence). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "bfb4f990fe483e29": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm31201088 part (b): 152.4/760 x 101325 = 20318 Pa -> 2.0e4, source ~20,000; keyed plain 20000 at sig-figs:2 per ruling G2",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "bfb7d431d032a72e": {
    "verdict": "ok",
@@ -99531,6 +99855,10 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "c7f9342405cb0cf1": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm21197344, model answer = source solution verbatim"
+  },
   "c7f96b8d9c8ed1d4": {
    "verdict": "ok",
    "note": "source exercise fs-id1167742647825 (unkeyed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -99805,6 +100133,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "c88f1319b73b3450": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp10418864 part (a): source answer about 17-18 mL, read from the P-V graph of CNX_Chem_09_03_BoylesLaw1 (selfcheck, decision 5)"
   },
   "c890d7a3c89723bc": {
    "verdict": "ok",
@@ -100560,6 +100892,14 @@
     "result": "agrees"
    }
   },
+  "c9f86d127699775a": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp120730208 (ethanol); −1368 | carried November 17, 2026 (notation-lint sweep): re-hashed by a grouping comma in the answerDisplay; the question and the key are byte-for-byte unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c9fa154390673e01": {
    "verdict": "ok",
    "note": "KC 7 43.6 § Gastrulation, m66678 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -100777,6 +101117,14 @@
   "ca5ad7661cd911e2": {
    "verdict": "ok",
    "note": "unkeyed SA fs-id1167583686786, selfcheck, model answer from autoclave/freezing paragraphs | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "ca6063ae29a002a7": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm51209248: 405 mL x 467/298 = 634.68 -> 635 mL, source 635 mL",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "ca611e96896ce7dc": {
    "verdict": "ok",
@@ -101153,6 +101501,14 @@
   "cb0882fca044b5d6": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "cb08deeea0bc3b90": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp156787120 (bar): 98.659 kPa / 100 = 0.98659 -> 0.987, source 0.987",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -106854,6 +107210,14 @@
     "result": "agrees"
    }
   },
+  "d7183c7d044a72d7": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp23616944: 0.250 L x 0.850 atm x 273.15 / (300.15 x 1.00) = 0.19338 -> 0.193 L, source 0.193 L",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d71beaffbd799a28": {
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
@@ -108638,6 +109002,14 @@
     "result": "agrees"
    }
   },
+  "dac9c23cad123b38": {
+   "verdict": "ok",
+   "note": "glossary recall: absolute zero (glossary fs-idp80443824)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "dacda047f7f50359": {
    "verdict": "ok",
    "note": "m66631 eip-22: model answer is the source solution verbatim; checkpoints are its own clauses. | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged"
@@ -109932,6 +110304,14 @@
    "verdict": "ok",
    "note": "source exercise fs-idm21893728 (printed 3), model answer = solution fs-idm5881648 verbatim"
   },
+  "ddb3c0e4f07540a0": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp156787120 (kPa): 740 x 101.325/760 = 98.659 -> 98.7, source 98.7",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ddb5568b86ff235a": {
    "verdict": "ok",
    "note": "KC 3 14.2 § body DNA structure and base pairing (fs-id2317138), m66387 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
@@ -110869,6 +111249,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "dfa5728189ac8f48": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm150329120 (printed 23): solution carried whole"
   },
   "dfa75dea5efea825": {
    "verdict": "ok",
@@ -112827,6 +113211,10 @@
     "result": "agrees"
    }
   },
+  "e354fe7f2b826c94": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp10418864 part (b): source answer ~18 mL from the 1/P vs V graph (selfcheck, decision 5)"
+  },
   "e3584a82dfa0b02a": {
    "verdict": "ok",
    "note": "RQ fs-id2752988, key a; body fs-id2524917 'newly formed sperm continue to mature … stored in the tail of the epididymis'",
@@ -113204,6 +113592,14 @@
   "e416ab9fdc52d037": {
    "verdict": "ok",
    "note": "author-built from § Reservoirs and Carriers: \"For example, active carriers may transmit the disease during the incubation period (before they show signs and symptoms) or the period of c…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "e41d40e8abfa70d7": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm31201088 part (a): 6.0 in x 25.4 = 152.4 torr -> 150 (2 sf), source ~150",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -115013,6 +115409,14 @@
     "result": "agrees"
    }
   },
+  "e7f7052cd1196607": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm55768576 part (c): 0.35197 bar -> 0.352, source 0.352",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e7f8aed74e60770d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -115636,6 +116040,14 @@
   "e9727954efaa3b27": {
    "verdict": "ok",
    "note": "textin line 137: necrosis — re-read against m46058 and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "e973d0068992ab42": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm72969744: 2520 mol x 8.314 x 300.15 K / 180 L = 34936 kPa = 349.36 bar -> 3.5e2 bar, source 350 bar",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -118459,6 +118871,14 @@
   "ef2996707ef5298c": {
    "verdict": "ok",
    "note": "KC 3 15.1 § body The Genetic Code Is Degenerate and Universal (fs-id913366), m66497 — parent re-read against the module"
+  },
+  "ef3158691dfe5ea7": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm55768576 part (b): 264/760 x 101325 = 35197 Pa -> 3.52e4, source 35,200; keyed plain 35200 at sig-figs:3 per ruling G2",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "ef322cf64aefa19f": {
    "verdict": "ok",

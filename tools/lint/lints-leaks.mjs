@@ -95,7 +95,7 @@ import { amountHintProblem, heatAsk, isNegativeKey } from '../lib/heat-ask.mjs';
 import { askedUnit, shownUnit, showsAskedUnit } from '../lib/item-units.mjs';
 import { isWordRun, readWords } from '../lib/rubric-run.mjs';
 import { cePrinted } from '../lib/keyed-units.mjs';
-import { bareGreekMath, bareSigmaPi, britishSpellingAndStraightApostrophes, italicOrbitalLetters, minusAsBond, overlappingRubricClauses, plainAnswerDisplays, straightApostrophes } from './chemistry-notation.mjs';
+import { bareGreekMath, bareProportionality, bareSigmaPi, crowdedFractionRows, ungroupedNumberBeforeUnit, britishSpellingAndStraightApostrophes, italicOrbitalLetters, minusAsBond, overlappingRubricClauses, plainAnswerDisplays, straightApostrophes } from './chemistry-notation.mjs';
 import {
   colourOutsideVisible, dashHyphens, italicDescriptiveSubscripts, miscountedConfigurations, proseOnly, sourceNumberReferences, subshellLabelSlips,
 } from './chemistry-readings.mjs';
@@ -1278,6 +1278,17 @@ export function lintLeaks(src, filename = '') {
     }
     for (const hit of straightApostrophes(text)) {
       err(hit.index, `a straight ' ${hit.kind === 'opening' ? 'opening a quotation' : 'in a word'} ("${text.slice(Math.max(0, hit.index - 8), hit.index + 3).replace(/\s+/g, ' ')}") — the house writes the curly ${hit.kind === 'opening' ? '‘' : '’'} in prose, alts, and item text (the grader reads either as typed)`);
+    }
+    // Chapter 9's notation readings (November 17, 2026; measured on the
+    // whole book, every hit fixed before they were turned on).
+    for (const hit of bareProportionality(text)) {
+      err(hit.index, `"${hit.written}": a bare ∝ outside math renders as a speck in the body face — write \`$\\propto$\` (playbook "Notation")`);
+    }
+    for (const hit of ungroupedNumberBeforeUnit(text)) {
+      err(hit.index, `\`${hit.written}\`: ${hit.value} stands before a unit in math, so it is no year — group it: \`${hit.grouped}\` (playbook "Notation", digit grouping)`);
+    }
+    for (const hit of crowdedFractionRows(text)) {
+      err(hit.index, `\`${hit.written}\`: two rows of an aligned display that each hold a fraction are separated by a bare \`\\\\\` — write \`\\\\[6pt]\` so one row's denominator does not sit on the next row's numerator (playbook "Notation")`);
     }
     for (const hit of plainAnswerDisplays(text)) {
       err(hit.index, `${hit.kind}: answerDisplay="${hit.written}" has no math — every answerDisplay is math, the value as the book prints it (\`$4$\`, \`$2+$\`, \`$-2$\`)`);

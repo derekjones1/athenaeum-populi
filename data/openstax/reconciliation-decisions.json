@@ -7994,6 +7994,203 @@
       "status": "correct-local-source-defect",
       "errataEntry": 3200,
       "rationale": "The Band Theory box says a conductor has a “very small” band gap; in a metal the highest band holding electrons is only partly filled (or overlaps an empty band), so there is no gap, and a small non-zero gap makes a semiconductor (University Physics Volume 3, Section 9.5). The words, caption, and figure stay as printed, with a Source note after the paragraph and a footer clause. Found by the prose claim pass (F2), ruled by the orchestrator, November 16, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/01-gas-pressure.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68750",
+      "sourceElementIds": [
+        "fs-idm5509408"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3205,
+      "rationale": "The Check Your Learning answer prints \"10.3 m\" for the height of a water column at normal atmospheric pressure; the stem gives the density of water as 1.0 g/cm³, two figures, and 101,325 Pa ÷ (1.0 × 10³ kg/m³ × 9.81 m/s²) = 10.33 m keeps two. The page keys 10 with a visible Source note and a footer clause, and tools/verify/verify-source-keys.mjs lists the item (fs-idm5509408#check) in DISCLOSED_DEVIATIONS; the erratum holds the arithmetic. Ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/02-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68751",
+      "sourceElementIds": [
+        "fs-idp10418864"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3206,
+      "rationale": "The Check Your Learning answer prints \"(c) 17.7 mL\" for 30.0 mL × 6.5 psi ÷ 11.0 psi = 17.73 mL; the stem's 6.5 psi has two figures, and the example the item follows rounds its own result to 26 psi. The page keys 18 with a visible Source note and a footer clause, and tools/verify/verify-source-keys.mjs lists the item (fs-idp10418864#check(c)) in DISCLOSED_DEVIATIONS. Ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/02-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68751",
+      "sourceElementIds": [
+        "fs-idm71892416"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3207,
+      "rationale": "The answer to the medical-oxygen exercise prints \"5561 L\", four figures, for 35.4 L × 151 atm × 310.15 K ÷ 298.15 K = 5560.5 L; the stem's volume and pressure have three figures each. The page keys 5.56 × 10³ with a visible Source note and a footer clause, and tools/verify/verify-source-keys.mjs lists the item (fs-idm71892416) in DISCLOSED_DEVIATIONS. Ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/01-gas-pressure.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68750",
+      "sourceElementIds": [
+        "fs-idm35019472"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3208,
+      "rationale": "The newspaper exercise prints both 29.97 in. Hg and 1013.9 mbar as the one sea-level pressure; 29.97 in. Hg is 101.5 kPa (the source's key) and 1014.9 mbar, while 1013.9 mbar is 101.39 kPa. The page keeps the stem and the source's key, closes part (a)'s question with a sentence naming the reading to convert, and adds a Source note and a footer clause. Ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/02-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68751",
+      "sourceElementIds": [
+        "fs-idm51209248"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3209,
+      "rationale": "The solution subtracts 273.15 from the rounded 239.8 K and prints \"–33.4 °C\"; carried, 239.826 − 273.15 = −33.32, so −33.3 °C. The page prints −33.3 °C, with the module's one Source note (extended with this example's clause) and a footer clause. Ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/01-gas-pressure.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68750",
+      "sourceElementIds": [
+        "fs-idm51193840"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3210,
+      "rationale": "The answer prints Venus as \"1.30 × 10³ lb in⁻²\"; the module's table gives about 14.7 psi per atm and 88.8 × 14.7 = 1305.36 = 1.31 × 10³, so the source's print is what a slightly smaller factor gives (the book's table against the source's factor, not an arithmetic slip). The page keys 1.31 × 10³, still grading 1.30 × 10³ right, with a visible Source note and a footer clause, and tools/verify/verify-source-keys.mjs lists the item (fs-idm51193840) in DISCLOSED_DEVIATIONS. Ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/02-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68751",
+      "sourceElementIds": [
+        "fs-idm188679440",
+        "fs-idm159072736"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3211,
+      "rationale": "In graph (a) of the answer to the graph-drawing exercise the P–V curve reaches a minimum near its right end and turns slightly upward, which an isotherm never does, and the source alt labels all four graphs \"n, P cons\" where the image prints four different pairs of constant quantities. The page writes the alt from the image, says in the model answer that the upturn is a flaw of the drawing, and adds a Source note after the block and a footer clause. Ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/02-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68751",
+      "sourceElementIds": [
+        "fs-idp10418864"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3212,
+      "rationale": "Solution (c) calls P₂ \"the pressure at which the volume is unknown\" and V₂ \"the unknown volume\", but V₂ = 7.5 mL is given and P₂ is the unknown. The page swaps the roles back, with a visible Source note after the equation and a footer clause. Ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/02-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68751",
+      "sourceElementIds": [
+        "fs-idm72969744",
+        "fs-idm36042832",
+        "fs-idm139345632"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3213,
+      "rationale": "The methane example says one gallon of gasoline could be replaced by 655 g of CH₄; the U.S. Department of Energy's Alternative Fuels Data Center gives 5.66 lb (2.57 kg) of compressed natural gas per gasoline gallon equivalent, about four times as much. The page says \"about a quart\" in the opening and closing sentences, keeps 655 g and every result, and adds a Source note linking the Department's page and a footer clause. Found by the prose claim pass, and ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/02-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68751",
+      "sourceElementIds": [
+        "fs-idp12374848"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3214,
+      "rationale": "The Amontons's-law constant is said to depend on \"the identity, amount, and volume of the gas\"; by the section's own ideal gas law k = nR/V, so identity does not enter. The page drops \"identity\" with a visible Source note after the paragraph and a footer clause. Ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/02-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68751",
+      "sourceElementIds": [
+        "fs-idp128156112"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3215,
+      "rationale": "The scuba box says \"the pressure changes most rapidly as divers reach the surface\" while the same paragraph gives 1 ATA for every 33 feet of salt water, a change per foot that is the same at every depth; only the fractional change is greatest near the surface. The words stay as printed, with a Source note after the paragraph and a footer clause. Ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/01-gas-pressure.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68750",
+      "sourceElementIds": [
+        "fs-idm49021728"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3216,
+      "rationale": "The paragraph gives the atmosphere as \"roughly 100–125 km thick\" in the sentence that lists the thermosphere as 80–700 km and the exosphere as above 700 km, so the stated thickness ends partway up the thermosphere and leaves out the exosphere. The words stay as printed, with a Source note after the figure and a footer clause. Ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/02-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68751",
+      "sourceElementIds": [
+        "fs-idp25675936",
+        "fs-idm180268096"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3217,
+      "rationale": "The chlorofluorocarbon stem says a substitute \"has largely corrected the problem\"; the 2022 WMO/UNEP Scientific Assessment of Ozone Depletion, Executive Summary, expects total column ozone to return to 1980 values around 2066 in the Antarctic, around 2045 in the Arctic, and around 2040 for the near-global average. The stem stays as printed in both items, with a Source note after the pair linking the Assessment and a footer clause. Found by the prose claim pass, and ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/02-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68751",
+      "sourceElementIds": [
+        "fs-idm66260928",
+        "fs-idp96109888"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3218,
+      "rationale": "The hair-spray example quotes the can as \"below 120 °F (48.8 °C)\"; (120 − 32) × 5/9 = 48.89, which is 48.9 °C. The page prints 48.9 with a visible Source note after the paragraph and a footer clause. Ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/02-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68751",
+      "sourceElementIds": [
+        "fs-idm221278704"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3220,
+      "rationale": "The answer prints \"12.1 L\", three figures, for 2.50 L × 373.15 K ÷ 77.15 K = 12.09 L; −196 °C is given to the units place, so 77 K has two figures and the quotient keeps two. The page keys 12 with a visible Source note and a footer clause, and tools/verify/verify-source-keys.mjs lists the item (fs-idm221278704) in DISCLOSED_DEVIATIONS. Found by the blind solver, and ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/01-gas-pressure.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68750",
+      "sourceElementIds": [
+        "fs-idp156787120",
+        "fs-idm31201088",
+        "fs-idm76587328"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3221,
+      "rationale": "The unit-conversion examples round intermediate values (742 torr, 98.9 kPa, 35,200 Pa, 1.18 atm) and use the rounded values in the next step; the carried values (741.68 torr, 98.883 kPa, 35,197 Pa, 1.1803 atm) give the same final results. The page prints the carried digits with one visible Source note after Example 1 and a footer clause; no result changes. Found by the 9.1 author, and ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/02-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68751",
+      "sourceElementIds": [
+        "fs-idm66260928",
+        "fs-idm45782128",
+        "fs-idm72969744",
+        "fs-idp23616944"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3225,
+      "rationale": "The four examples convert Celsius to kelvin by adding 273 and reuse rounded intermediates (297 K, 323 K, 283 K, 303 K, 298 K, 300 K, 310 K, 40.8 mol, 0.980 atm), where the module's own gas-thermometer example uses 273.15. The page converts with 273.15 and prints carried digits, with one visible Source note after Example 1 and a footer clause; one result moves, the Celsius temperature of erratum 3209, and the others are the same. Ruled by the orchestrator, November 17, 2026."
     }
   ]
 }

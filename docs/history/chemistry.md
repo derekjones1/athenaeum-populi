@@ -1521,6 +1521,15 @@ word for word as `run.md` had them.
 
 From `run.md`, "What a chapter cost".
 
+Chapter 9, Sections 9.1–9.2 (two sections, 46 auto-graded items and 13
+self-checks; one session with no pause): authors 335k and 373k tokens each
+across all rounds; checkers 162k and 240k; claim pass 188k; consistency reader
+259k; fix checker 163k; three rendered-page readers 168k, 148k, and 139k; blind
+solver 136k. The gate agent 139k (one round) and the lint agent 108k. Clerks:
+83k (landing and the facts half of the run facts) and 177k (errata and
+decisions entries). The parent did the pins, the ledger carries, the history,
+and the playbook lines itself.
+
 Chapter 8 (four sections, 82 auto-graded items and 28 self-checks; wall time
 about two hours, one session with no pause): authors 272k, 386k, 269k, and 373k
 tokens each across all rounds (8.1 to 8.4); checkers 160k, 214k, 165k, and 222k;
@@ -4585,6 +4594,180 @@ open-list entry instead of doing them, against a standing rule; and the first
 rubric fixes were accepted by the lint and the tests while making the rubrics
 worse, which only reading the diff showed.
 
+## Chapter 9, Sections 9.1–9.2 (November 16–17, 2026)
+
+The first of two runs on chapter 9 (Gases), from commit `9c11d9e0`, at Derek's
+word ("the next 2 sections of the next chapter"): Sections 9.1 Gas Pressure
+(m68750) and 9.2 Relating Pressure, Volume, Amount, and Temperature: The Ideal
+Gas Law (m68751), and the landing (m68748). **Knowledge Check block 3
+(chapters 6–8) was owed before this chapter by `run.md` §4 step 9 and is still
+owed**; Derek asked for the chapter, and the check does not depend on it. Prep
+(media, PDF pages 419–476 and the answer key 1155–1158, inventory, shapes,
+figure screen, gate probe) was done once for the whole chapter. The landing
+lists the two sections and says the other four are being written; the cover
+moved Gases into `## Chapters` with the same sentence.
+
+59 ledger records (29 and 30), of which 46 are auto-graded and blind-solved
+(26 and 20) and 13 are self-checks (3 and 10); 25 figures (13 and 12) and one
+on the landing; two author fillers on 9.1 ("area", "barometer") and one on 9.2
+("absolute zero"). Blind solve (Fable, 3.7 minutes): 46 agreed, none
+disagreed, none flagged — and one of the 46 was a figure-count disagreement
+that `solve:compare` counts as agreement (below). Errata 3205–3231 (27). Key
+deviations (`DISCLOSED_DEVIATIONS`, all kind `key`): five — 9.1's water column
+(3205) and Venus (3210); 9.2's Boyle's-law part (3206), medical oxygen (3207),
+and hydrogen warmed from −196 °C (3220). No key that fetches an atomic mass
+leaves the source's print, so the source-print register is unchanged (25
+rows). `--min-confirmed` 7858 → 7912, `--min-covered` 4916 → 4968,
+`--min-replayed` 9256 → 9305, `--min-exercises` 18656 → 18715; the map test
+went from 818 to 820 sections and Chemistry from 40 to 42.
+
+### The parent's decisions before the wave
+
+Sixteen, in the run facts. Those that set a principle are in the
+playbook: every key worked with 273.15, a kelvin temperature's figures read
+from its last place, and the examples printed with 273.15 and carried digits
+("Numeric keys"); estimates read from a graph as self-checks, and one question
+asked in several units as one fill-in per unit ("Exercises"); a stem that
+prints one pressure twice, in two units that disagree, keeps its words and
+names the reading to convert ("Source defects"). Three source keys were
+corrected before the wave for carrying more figures than their data (10.3 m,
+17.7 mL, 5561 L), each with its deviation filed first.
+
+### What the gates and the tools had to be taught
+
+- **The consecutive-questions lint** refused 9.1's Kansas City Check Your
+  Learning — one question, four units, four fill-ins with no lead-in colon.
+  Fill-ins that repeat one stem word for word up to their closing sentence are
+  now read as parts of one question (`tools/lint/lints.mjs`, with a test).
+- **Both source gates bound 9.2's corrected Boyle's-law part to an unkeyed
+  end-of-chapter exercise**, and the keys gate called its deviation stale. One
+  cause: the Check Your Learning prints "Comment on the likely accuracy of
+  each method." after its last lettered part, the gates joined the stem's
+  paragraphs before splitting the parts, and the sentence became part (c)'s
+  text. `tools/lib/keyed-units.mjs` now marks the paragraphs after the last
+  lettered one as a closing (four tests from the module's real stems; one
+  Author-kind gate agent, 139k tokens). No other page's reading changed.
+- **A dash between two math runs of a question string rendered as an empty
+  bullet** — "the P", a bullet, "V graph" — on 9.2 and, unnoticed until now,
+  on Precalculus 8.6 ("x-y"). `layouts/_partials/mathtext.html` escapes a block
+  marker at the start of a prose piece that follows math, and the build audit
+  fails on an empty list inside an exercise (with a test). Found by a
+  rendered-page reader.
+- **Three notation lints went on for the book with their ten hits on chapters
+  1, 2, and 5 fixed** (`tools/lint/chemistry-notation.mjs`): a bare ∝ in
+  prose; a four-digit number of the "possible year" band directly before a
+  unit in math (`1000\ \text{mL}`); fraction rows of an `aligned` display
+  split by a bare `\\`. Three items were re-hashed (two `answerDisplay`s on
+  5.3, one model answer on 2.1); `ledger-carry plan` does not carry those, and
+  the parent carried them from the snapshot with a script that asserts the
+  question and the key byte for byte.
+
+### What each reading found
+
+- **Authors.** 9.1's found the Venus key (88.8 atm × the table's 14.7 psi is
+  1.31 × 10³; the parent's own table said 1.30) and that `last-digit:1` on the
+  newspaper exercise graded the reading its closing sentence rules out. 9.2's
+  found four source alts that describe something else, the upturned curve in
+  the graph-drawing answer, α printed for ∝ in two equations, and the methane
+  example's premise.
+- **Checkers** agreed with every key (9.1 all; 9.2 19 of 19) and found: on
+  9.1 a symbol in Markdown italics, an alt that could be read backwards, a hint
+  that named the row holding its key; on 9.2 a leak — the two graph-reading
+  self-checks revealed "~18 mL" above the fill-in keyed 18 (the calculated
+  part now comes first) — and symbols outside math.
+- **Claim pass** (one reader, eight findings): four corrected on the pages (the
+  methane example's "one gallon of gasoline" for 655 g, against the Department
+  of Energy's 5.66 lb per gallon equivalent; the Amontons constant's
+  "identity"; 120 °F as 48.9 °C; "kg/ms²"), three kept with a Source note (the
+  atmosphere's "100–125 km thick"; the scuba box's "changes most rapidly"; the
+  CFC stem's "has largely corrected the problem", against the 2022 WMO/UNEP
+  assessment), one kept as printed.
+- **Consistency reader** (13 findings): the gas constant's units in prose (now
+  with a slash, as the playbook's rule has it), a stem parenthesis that
+  pointed at 9.1's table (removed), two unnamed "later module" references (now
+  named as Sections 9.5 and 9.6, in plain text), trailing-zero keys written two
+  ways (now plain), 9.1's display rows, the landing footer's two standing
+  clauses, and that the erratum for the Venus key called a table-factor
+  difference a misrounding.
+- **Rendered-page readers** (three; 39 tiles): the bullet above; a bare ∝ that
+  rendered as a speck; a hint that sent the learner to a value its axis does
+  not carry; the Boyle example's swapped roles of P₂ and V₂ (the source's);
+  three inline fractions whose struck units could not be read (now displays).
+- **Fix check**: the parent's own Source note on the atmosphere's thickness was
+  untrue by the sentence it annotated (the thermosphere starts at 80 km, inside
+  the stated thickness), and one footer clause the rulings had made false.
+- **Blind solver**: answered `12` where the form asked three figures — −196 °C
+  is 77 K, two figures. The parent's decision had said every temperature of
+  the module carried three. The key moved (erratum 3220), and the solver's
+  answer was filed under the new hash with the stem unchanged.
+
+### What the process got wrong
+
+- The parent's table of keys was read, not run, for one row: "1305.4 → 1.30 ×
+  10³" stood beside the Venus key until the author recomputed it.
+- "A Celsius temperature to the units place gives three figures" was ruled
+  without converting the module's temperatures; five readings recomputed the
+  hydrogen key at three figures before the solver counted two.
+- The page ranges ended one page short for both sections (the body's last page
+  is the next section's first).
+- Decision 10 set `last-digit:1` without asking what else it graded right.
+- A Source note worded by the parent from a claim-pass finding contradicted the
+  page; a ruling asked for a link in a stem that the playbook has no form for.
+- `rebuild-ledger-results.py` and `ledger-carry plan` were assumed to cover an
+  `answerDisplay` edit; they do not.
+
+All of these are rules in `run.md` §0 ("Ten things chapter 9's first run
+added").
+
+### Outside sources opened
+
+By the claim pass and then by the parent, November 17, 2026: the U.S.
+Department of Energy's Alternative Fuels Data Center, "Gasoline and Diesel
+Gallon Equivalency Methodology" (5.66 lb/gge); the 2022 WMO/UNEP Scientific
+Assessment of Ozone Depletion, Executive Summary, on NOAA's site (the three
+recovery dates). By the claim pass alone: two Science Museum Group object
+records for the 1783 balloon flights, which did not identify the print.
+
+### Kept as printed
+
+- 9.2's ballooning figure, panel (b), "manned hot air balloon flight": the
+  print could not be identified, and a search by the parent was inconclusive.
+- 9.2's "relatively high pressures and low temperatures" of the scuba example.
+- 9.2's "About 12.5 L" (the figure's own table gives 12.2 L at 150 K).
+- 9.2's Example 1 result, 390 kPa: the two-figure reading of 360 kPa.
+- 9.2's example title "Volume of a Gas Sample" over an example that finds a
+  pressure.
+- 9.1's exercise 13 repeats Example 3 (same picture, same answers); the footer
+  says so.
+- 9.2's Amontons figure plots its six points about 8 K right of its table's
+  values: an image erratum (3231), nothing on the page.
+
+### For Derek
+
+1. **Knowledge Check block 3 (chapters 6–8) is still owed**, before or after
+   the rest of chapter 9.
+2. The gas constant in prose is `$R$` = 0.08206 L atm/(mol K), by the
+   playbook's slash rule; displays keep mol⁻¹ K⁻¹. It will be copied through
+   chapters 9–17 (9.2, the paragraph after the ideal gas law).
+3. Estimates read from a graph are self-checks (9.2: "About 12.5 L", and two
+   parts of the syringe Check Your Learning). A graded form would need a
+   tolerance band the grader no longer has.
+4. A rule-following learner who types 12.1 for the hydrogen exercise is told
+   "That value is right — now round it to 2 significant figures" (9.2, the
+   item after the spray can). Five keys of the two pages are corrected this
+   way for their figure count.
+5. Appendix C prints "torr = 1 mm Hg (exact, definition)"; 9.1 says the two no
+   longer correspond exactly. The appendix needs a re-review row.
+6. An opening parenthesis typed straight before inline math can end a line
+   alone (9.2, "the volume ($V$)"); the glue partial would have to learn it.
+
+### Next
+
+Sections 9.3–9.6 in one run (`run.md`; prep is done — re-check the PDF ranges
+as indexes to each body's last page), which removes the landing's and the
+cover's "being written" sentences; then Knowledge Check block 3 if it has not
+been run, and block 4 (chapters 9–11) after chapter 11.
+
 ## The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under
@@ -4628,3 +4811,9 @@ the ban, with its page and line. The ban is reviewed from this list.
 - Chapter 8 reported no fraction that needed `\dfrac`. One line is on watch
   for width, not size: 8.4's Key equation (an inline `\frac` with a long
   numerator).
+- Chapter 9, Sections 9.1–9.2: three inline "Rearranging … gives" fractions
+  of 9.2's first three examples carried struck units at text size and could
+  not be read (the rendered-page reader: the "3" of cm³ lost under the
+  stroke); they are display equations now, where `\frac` is full size.
+  9.1's inline `\frac{1}{13.6}` and `\frac{1}{760}` are readable. Nothing
+  needed `\dfrac`.

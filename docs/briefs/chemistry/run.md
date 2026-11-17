@@ -318,6 +318,47 @@ Thirteen things chapter 8 added (`docs/history/chemistry.md`, "Chapter 8"):
   sentence about how a page looks is written after looking: the parent
   wrote that a line fit at phone width, then measured it, and it did not.
 
+Ten things chapter 9's first run added (`docs/history/chemistry.md`,
+"Chapter 9, Sections 9.1–9.2"):
+
+- **The figure screen reads Celsius digits; the parent converts every
+  temperature to kelvin before ruling on its rows.** "Every temperature of
+  the module carries three figures" was written without the conversion,
+  and −196 °C is 77 K: the blind solver found the key (12 L for the
+  source's 12.1) that author, checker, claim pass, and consistency reader
+  had all recomputed at three.
+- **Every numeric key is run, not read, before the run facts are
+  written**: the parent wrote "1305.4 → 1.30 × 10³" beside the Venus key
+  and passed a misrounded source value that the author then caught.
+- **A stem with two data for one quantity is checked for whether they
+  agree** (9.1's 29.97 in. Hg beside 1013.9 mbar): the figure screen shows
+  one of them.
+- **A Source note the parent words is read against the page's own numbers
+  before it is sent** (playbook "Source defects"): the fix check found the
+  parent's atmosphere note untrue.
+- **A ruling's `last-digit` is tested for what else it grades right**: `1`
+  on the newspaper exercise took the reading the closing sentence rules
+  out.
+- **The page range of a section is its body's LAST page, which is the next
+  section's first** (9.1 ends on p-0428 and 9.2 on p-0440; the facts said
+  0427 and 0439). Give each author the shared page.
+- **The gates join a stem's paragraphs before they split its parts**: a
+  sentence printed after the last lettered part ("Comment on the likely
+  accuracy of each method.") is a closing, not part (c)
+  (`tools/lib/keyed-units.mjs`). A part that is corrected is probed with
+  its deviation filed, since "stale entry" is how a missed binding reads.
+- **A question string is looked at rendered**: `$P$-$V$` in a stem was an
+  empty bullet until a rendered-page reader saw it (the template and a
+  build check now hold it); the tiles are the only reading of what
+  `mathtext` makes of a string.
+- **`solve:compare` reports a figure-count disagreement as agreement**
+  (an answer one figure short "agrees as far as it goes"): read every
+  solver note that names the form, whatever the tally says.
+- **A lint sweep's re-hashed items are carried by a script that asserts the
+  question and the key byte for byte** when `ledger-carry plan` refuses
+  them (it carries hint, accept, and form edits only; an `answerDisplay`
+  or a model answer's spacing is carried by hand from the snapshot).
+
 ## 1. Before the wave
 
 `SP` is this session's scratchpad. Never a git command from an agent — say

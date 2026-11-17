@@ -64,6 +64,10 @@ chemistry, and nuclear chemistry.
   strengths, and molecular structure and polarity.
 - **Advanced Theories of Covalent Bonding** — valence bond theory, hybrid
   atomic orbitals, multiple bonds, and molecular orbital theory.
+- **Gases** — gas pressure and the ideal gas law. The chapter’s last four
+  sections — the stoichiometry of gaseous substances, mixtures, and
+  reactions, effusion and diffusion, the kinetic-molecular theory, and
+  non-ideal gas behavior — are being written.
 
 ## Appendices
 
@@ -77,9 +81,6 @@ standard electrode potentials that the chapters refer to by letter.
 
 The remaining chapters of Chemistry 2e will appear in this order:
 
-- **Gases** — gas pressure, the ideal gas law, the stoichiometry of gaseous
-  substances, mixtures, and reactions, effusion and diffusion, the
-  kinetic-molecular theory, and non-ideal gas behavior.
 - **Liquids and Solids** — intermolecular forces, properties of liquids,
   phase transitions, phase diagrams, the solid state of matter, and lattice
   structures in crystalline solids.

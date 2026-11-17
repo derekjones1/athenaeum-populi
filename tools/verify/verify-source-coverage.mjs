@@ -118,7 +118,7 @@ import { integerFlag, parseCliArgs } from '../lib/cli.mjs';
 import { shortcodes } from '../lib/content.mjs';
 import { mediaBindings } from '../lib/exercise-context.mjs';
 import {
-  KEYED_EXERCISE_CLASS, KEYED_ONLY_BOOKS, answerText, checkYourLearning, closedSet, closingUnit, plain, readingRank, sequentialParts, splittingStem, twoUnitAnswer, unitScore, unlinked,
+  KEYED_EXERCISE_CLASS, KEYED_ONLY_BOOKS, answerText, checkYourLearning, closedSet, closingStem, closingUnit, plain, readingRank, sequentialParts, splittingStem, twoUnitAnswer, unitScore, unlinked,
 } from '../lib/keyed-units.mjs';
 import { MATCH_FLOOR } from './verify-source-keys.mjs';
 
@@ -759,7 +759,7 @@ function unitsOf(exercise, orientation = 0) {
     return lettered.parts.map((part) => ({
       ...exercise,
       id: `${exercise.id}(${part.label})`,
-      stem: `${lettered.lead} ${part.text}`.trim(),
+      stem: closingStem(lettered, part),
       lead: lettered.lead,
       partText: part.text,
       media: part.media,

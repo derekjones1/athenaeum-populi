@@ -10228,6 +10228,1079 @@
       "alt": "A pair of diagrams are shown and labeled, “a” and “b.” Diagram a shows two identical waves with two crests and two troughs. They are drawn one above the other with a plus sign in between and an equal sign to the right. To the right of the equal sign is a much taller wave with a same number of troughs and crests. Diagram b shows two waves with two crests and two troughs, but they are mirror images of one another rotated over a horizontal axis. They are drawn one above the other with a plus sign in between and an equal sign to the right. To the right of the equal sign is a flat line.",
       "caption": "(a) When in-phase waves combine, constructive interference produces a wave with greater amplitude. (b) When out-of-phase waves combine, destructive interference produces a wave with less (or no) amplitude."
     },
+    "CNX_Chem_09_00_HotAirBall": {
+      "source": "media/CNX_Chem_09_00_HotAirBall.jpg",
+      "sourceSha256": "7453c9ef45062dab467b672933bb6800c6368171c72d59cab83ad0c2b85d0702",
+      "module": "m68748",
+      "kind": "photo",
+      "width": 1300,
+      "height": 600,
+      "variants": [
+        {
+          "width": 800,
+          "height": 369,
+          "file": "CNX_Chem_09_00_HotAirBall-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 600,
+          "file": "CNX_Chem_09_00_HotAirBall-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A photograph shows about twenty colorful hot air balloons at varying stages of inflation. Some are deflated, while others are inflated. Three of the balloons are off the ground and are visible against a bright blue sky.",
+      "caption": "The hot air inside these balloons is less dense than the surrounding cool air. This results in a buoyant force that causes the balloons to rise when their guy lines are untied. (credit: modification of work by Anthony Quintano)"
+    },
+    "CNX_Chem_09_01_Amontons1": {
+      "source": "media/CNX_Chem_09_01_Amontons1.jpg",
+      "sourceSha256": "89106e0453aaecea8466792f075d47160d7e1c2fcdcd59c5cffb8f5f95f5b68a",
+      "module": "m68751",
+      "kind": "photo",
+      "width": 1300,
+      "height": 622,
+      "variants": [
+        {
+          "width": 800,
+          "height": 382,
+          "file": "CNX_Chem_09_01_Amontons1-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 622,
+          "file": "CNX_Chem_09_01_Amontons1-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure includes three similar diagrams. In the first diagram to the left, a rigid spherical container of a gas to which a pressure gauge is attached at the top is placed in a large beaker of water, indicated in light blue, atop a hot plate. The needle on the pressure gauge points to the far left on the gauge. The diagram is labeled “low P” above and “hot plate off” below. The second similar diagram also has the rigid spherical container of gas placed in a large beaker from which light blue wavy line segments extend from the top of the liquid in the beaker. The beaker is situated on top of a slightly reddened circular area. The needle on the pressure gauge points straight up, or to the middle on the gauge. The diagram is labeled “medium P” above and “hot plate on medium” below. The third diagram also has the rigid spherical container of gas placed in a large beaker in which bubbles appear near the liquid surface and several wavy light blue line segments extend from the surface out of the beaker. The beaker is situated on top of a bright red circular area. The needle on the pressure gauge points to the far right on the gauge. The diagram is labeled “high P” above and “hot plate on high” below.",
+      "caption": "The effect of temperature on gas pressure: When the hot plate is off, the pressure of the gas in the sphere is relatively low. As the gas is heated, the pressure of the gas in the sphere increases."
+    },
+    "CNX_Chem_09_01_Atmosphere": {
+      "source": "media/CNX_Chem_09_01_Atmosphere.jpg",
+      "sourceSha256": "65e5b926bbaa223c5246d23d877cb491249826ad9a87038ca84bdf9a15f19e97",
+      "module": "m68750",
+      "kind": "photo",
+      "width": 1200,
+      "height": 547,
+      "variants": [
+        {
+          "width": 800,
+          "height": 364,
+          "file": "CNX_Chem_09_01_Atmosphere-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 547,
+          "file": "CNX_Chem_09_01_Atmosphere-1200.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows half of a two dimensional view of the earth in blue and green. A narrow white layer, labeled “troposphere 0 dash 12 k m” covers this hemisphere. This layer is also labeled “layer where most weather events originate.” Next, a thicker light blue layer labeled “Stratosphere 12 dash 50 k m” is shown. This is followed by a slightly thinner layer also in light blue labeled “Mesosphere 50 dash 80 k m.” Following this layer is a relatively thick light blue layer labeled “Thermosphere 80 dash 700 k m.” A blue layer appears that covers the rightmost two thirds of the diagram. This region gradually darkens from a lighter blue at the left to a dark blue at the right. This region of the diagram is labeled “exosphere greater than 700 k m.”",
+      "caption": "Earth’s atmosphere has five layers: the troposphere, the stratosphere, the mesosphere, the thermosphere, and the exosphere.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_09_01_Barometer": {
+      "source": "media/CNX_Chem_09_01_Barometer.jpg",
+      "sourceSha256": "604538c91ee468f2b6d10254f3083f3b6cbece5298d4b9870d9e33e528f81174",
+      "module": "m68750",
+      "kind": "photo",
+      "width": 650,
+      "height": 648,
+      "variants": [
+        {
+          "width": 650,
+          "height": 648,
+          "file": "CNX_Chem_09_01_Barometer-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows two barometers. The barometer to the left contains a shallow reservoir, or open container, of mercury. A narrow tube extends upward from the reservoir above the reservoir. This tube is sealed at the top. To the right, a second similar setup is shown with a reservoir filled with water. Line segments connect the label “vacuum” to the tops of the two narrow tubes. The tube on the left shows the mercury in the reservoir extending in a column upward in the narrow tube. Similarly, the tube on the right shows the water in the reservoir extending upward into the related narrow tube. Double-headed arrows extend from the surface of each liquid in the reservoir to the top of the liquid in each tube. A narrow column or bar extends from the surface of the reservoir to the same height. This bar is labeled “atmospheric pressure.” The level of the water in its tube is significantly higher than the level of mercury in its tube.",
+      "caption": "In a barometer, the height, h , of the column of liquid is used as a measurement of the air pressure. Using very dense liquid mercury (left) permits the construction of reasonably sized barometers, whereas using water (right) would require a barometer more than 30 feet tall.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_09_01_Manometer": {
+      "source": "media/CNX_Chem_09_01_Manometer.jpg",
+      "sourceSha256": "dd01e582b19303a3de2ce7bcde3776e568b23e750fd14f84754087c1484f109e",
+      "module": "m68750",
+      "kind": "photo",
+      "width": 1239,
+      "height": 448,
+      "variants": [
+        {
+          "width": 800,
+          "height": 289,
+          "file": "CNX_Chem_09_01_Manometer-800.webp"
+        },
+        {
+          "width": 1239,
+          "height": 448,
+          "file": "CNX_Chem_09_01_Manometer-1239.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Three diagrams of manometers are shown. Each manometer consists of a spherical pink container filled with gas on the left that is connected to a U-shaped, sealed tube by a valve on its right. The top of the U aligns with the gas-filled sphere and the U, which extends below, contains mercury. The first manometer has a sealed tube. The sealed end to the upper right in the diagram is labeled “closed end” and “vacuum.” The mercury level is higher in the right side of the tube than in the left. The difference in height is labeled “h.” Beneath this manometer illustration appears the label P subscript gas equal sign h rho g. The second manometer has an open-ended tube, which is labeled “open end.” At this opening in the upper right of the diagram is the label P subscript atm. The mercury level is higher in the left side of the tube than in the right. This difference in height is labeled “h.” Beneath this manometer illustration appears the label P subscript gas equal sign P subscript atm minus sign h rho g. The third manometer has an open-ended tube and is similar to the second manometer except that the mercury level is higher in the right side of the tube than in the left. This difference in height is labeled “h.” Beneath this manometer illustration appears the label P subscript gas equal sign P subscript a t m plus h rho g.",
+      "caption": "A manometer can be used to measure the pressure of a gas. The (difference in) height between the liquid levels ( h ) is a measure of the pressure. Mercury is usually used because of its large density.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_09_01_Manometer1_img": {
+      "source": "media/CNX_Chem_09_01_Manometer1_img.jpg",
+      "sourceSha256": "601672f4a489addaef87729b3bca52cd1c851afdfe8180c1519cec6b4e0a6abc",
+      "module": "m68750",
+      "kind": "photo",
+      "width": 1000,
+      "height": 393,
+      "variants": [
+        {
+          "width": 800,
+          "height": 314,
+          "file": "CNX_Chem_09_01_Manometer1_img-800.webp"
+        },
+        {
+          "width": 1000,
+          "height": 393,
+          "file": "CNX_Chem_09_01_Manometer1_img-1000.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram of a closed-end manometer is shown. To the upper left is a spherical container labeled, “gas.” This container is connected by a valve to a U-shaped tube which is labeled “closed end” at the upper right end. The container and a portion of tube that follows are shaded pink. The lower portion of the U-shaped tube is shaded grey with the height of the gray region being greater on the right side than on the left. The difference in height between the left side and right side is 26.4 c m which is indicated with horizontal line segments and arrows.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_09_01_Manometer2_img": {
+      "source": "media/CNX_Chem_09_01_Manometer2_img.jpg",
+      "sourceSha256": "cf8519b4e955c1f51795fda9f5d39113d8789e824d4cc16bb6b87424f4cba0c7",
+      "module": "m68750",
+      "kind": "photo",
+      "width": 1000,
+      "height": 393,
+      "variants": [
+        {
+          "width": 800,
+          "height": 314,
+          "file": "CNX_Chem_09_01_Manometer2_img-800.webp"
+        },
+        {
+          "width": 1000,
+          "height": 393,
+          "file": "CNX_Chem_09_01_Manometer2_img-1000.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram of a closed-end manometer is shown. To the upper left is a spherical container labeled, “gas.” This container is connected by a valve to a U-shaped tube which is labeled “closed end” at the upper right end. The container and a portion of tube that follows are shaded pink. The lower portion of the U-shaped tube is shaded grey with the height of the gray region being greater on the right side than on the left. The difference in height of 6.0 i n is indicated with horizontal line segments and arrows.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_09_01_Manometer3_img": {
+      "source": "media/CNX_Chem_09_01_Manometer3_img.jpg",
+      "sourceSha256": "5892e237e2306226909978d254cc2a77f5ee059f3ed8b924455739b695685f57",
+      "module": "m68750",
+      "kind": "photo",
+      "width": 1000,
+      "height": 393,
+      "variants": [
+        {
+          "width": 800,
+          "height": 314,
+          "file": "CNX_Chem_09_01_Manometer3_img-800.webp"
+        },
+        {
+          "width": 1000,
+          "height": 393,
+          "file": "CNX_Chem_09_01_Manometer3_img-1000.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram of an opne-end manometer is shown. To the upper left is a spherical container labeled, “gas.” This container is connected by a valve to a U-shaped tube which is labeled “open end” at the upper right end. The container and a portion of tube that follows are shaded pink. The lower portion of the U-shaped tube is shaded grey with the height of the gray region being greater on the right side than on the left. The difference in height of 13.7 c m is indicated with horizontal line segments and arrows.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_09_01_Manometer5_img": {
+      "source": "media/CNX_Chem_09_01_Manometer5_img.jpg",
+      "sourceSha256": "bca81b358f0d4ccc872e013a446ee598dab34d1d85b7ea9b3bd70600b44d3586",
+      "module": "m68750",
+      "kind": "photo",
+      "width": 1000,
+      "height": 393,
+      "variants": [
+        {
+          "width": 800,
+          "height": 314,
+          "file": "CNX_Chem_09_01_Manometer5_img-800.webp"
+        },
+        {
+          "width": 1000,
+          "height": 393,
+          "file": "CNX_Chem_09_01_Manometer5_img-1000.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram of a closed-end manometer is shown. To the upper left is a spherical container labeled, “gas.” This container is connected by a valve to a U-shaped tube which is labeled “closed end” at the upper right end. The container and a portion of tube that follows are shaded pink. The lower portion of the U-shaped tube is shaded grey with the height of the gray region being greater on the right side than on the left. The difference in height of 26.4 c m is indicated with horizontal line segments and arrows.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_09_01_Manometer6_img": {
+      "source": "media/CNX_Chem_09_01_Manometer6_img.jpg",
+      "sourceSha256": "cf415d6a45264ddf1de40f7c7daff6cc93ee1144208416855cb91e0c0ba708e0",
+      "module": "m68750",
+      "kind": "photo",
+      "width": 325,
+      "height": 356,
+      "variants": [
+        {
+          "width": 325,
+          "height": 356,
+          "file": "CNX_Chem_09_01_Manometer6_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram of an open-end manometer is shown. To the upper left is a spherical container labeled, “gas.” This container is connected by a valve to a U-shaped tube which is labeled “open end” at the upper right end. The container and a portion of tube that follows are shaded pink. The lower portion of the U-shaped tube is shaded grey with the height of the gray region being greater on the left side than on the right. The difference in height of 6.00 i n is indicated with horizontal line segments and arrows.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_09_01_Manometer7_img": {
+      "source": "media/CNX_Chem_09_01_Manometer7_img.jpg",
+      "sourceSha256": "61ec4932c5af262570a0444b0f93fa067215517aa39a01f09bbc5c2b6c9173fa",
+      "module": "m68750",
+      "kind": "photo",
+      "width": 325,
+      "height": 356,
+      "variants": [
+        {
+          "width": 325,
+          "height": 356,
+          "file": "CNX_Chem_09_01_Manometer7_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram of an open-end manometer is shown. To the upper left is a spherical container labeled, “gas.” This container is connected by a valve to a U-shaped tube which is labeled “open end” at the upper right end. The container and a portion of tube that follows are shaded pink. The lower portion of the U-shaped tube is shaded grey with the height of the gray region being greater on the left side than on the right. The difference in height of 13.7 c m is indicated with horizontal line segments and arrows.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_09_01_Manometer8_img": {
+      "source": "media/CNX_Chem_09_01_Manometer8_img.jpg",
+      "sourceSha256": "fa9d9653e9cc706327e6cdc1e0c7e66a08260fc268491aed34915ea8578a09e3",
+      "module": "m68750",
+      "kind": "photo",
+      "width": 325,
+      "height": 356,
+      "variants": [
+        {
+          "width": 325,
+          "height": 356,
+          "file": "CNX_Chem_09_01_Manometer8_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram of an open-end manometer is shown. To the upper left is a spherical container labeled, “gas.” This container is connected by a valve to a U-shaped tube which is labeled “open end” at the upper right end. The container and a portion of tube that follows are shaded pink. The lower portion of the U-shaped tube is shaded grey with the height of the gray region being greater on the right side than on the left. The difference in height of 26.4 c m is indicated with horizontal line segments and arrows.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_09_01_Pressure1": {
+      "source": "media/CNX_Chem_09_01_Pressure1.jpg",
+      "sourceSha256": "8edd36abd8e47e5d86e7a36e34bbbbafd677a939108c6ce13705f79bc0c8f7ba",
+      "module": "m68750",
+      "kind": "photo",
+      "width": 975,
+      "height": 458,
+      "variants": [
+        {
+          "width": 800,
+          "height": 375,
+          "file": "CNX_Chem_09_01_Pressure1-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 458,
+          "file": "CNX_Chem_09_01_Pressure1-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left side of this figure includes a graphic of the earth with an inverted rectangular prism extending from a point on it. Near the top of the image, the label, “square inch column of air molecules” is connected to the prism with a line segment. This label is also connected with a line segment to a downward pointing arrow at the right side of the figure. Beneath the arrow is a red circle labeled, “atmospheric pressure.” A narrow rectangle with a dashed line border extends from the bottom of the arrow vertically through the circle. Directly beneath this rectangle at the lower edge of the circle is a hand with a thumb appearing to be resting on a tabletop. The thumb is connected with a line segment to the label, “14.7 lbs of pressure on 1 square inch.” The red circle is sitting on top of the thumb.",
+      "caption": "The atmosphere above us exerts a large pressure on objects at the surface of the earth, roughly equal to the weight of a bowling ball pressing on an area the size of a human thumbnail.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_09_01_Pressure2": {
+      "source": "media/CNX_Chem_09_01_Pressure2.jpg",
+      "sourceSha256": "8c041806942f3490842dfeded4c25a37fde1320d0bef4f42b84ff36b039d430e",
+      "module": "m68750",
+      "kind": "photo",
+      "width": 975,
+      "height": 376,
+      "variants": [
+        {
+          "width": 800,
+          "height": 308,
+          "file": "CNX_Chem_09_01_Pressure2-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 376,
+          "file": "CNX_Chem_09_01_Pressure2-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure includes two photographs. Figure a is a photo of a large gray elephant on grassy, beige terrain. Figure b is a photo of a figure skater with her right skate on the ice, upper torso lowered, arms extended upward behind her chest, and left leg extended upward behind her.",
+      "caption": "Although (a) an elephant’s weight is large, creating a very large force on the ground, (b) the figure skater exerts a much higher pressure on the ice due to the small surface area of the skates. (credit a: modification of work by Guido da Rozze; credit b: modification of work by Ryosuke Yagi)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_09_01_Spygmo": {
+      "source": "media/CNX_Chem_09_01_Spygmo.jpg",
+      "sourceSha256": "ee9c0ac147a0fc6def9e485d3778cbf45586b87280e3236a9f8f0d0c48ce2bcf",
+      "module": "m68750",
+      "kind": "photo",
+      "width": 975,
+      "height": 313,
+      "variants": [
+        {
+          "width": 800,
+          "height": 257,
+          "file": "CNX_Chem_09_01_Spygmo-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 313,
+          "file": "CNX_Chem_09_01_Spygmo-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure includes two photographs. The first photo shows a young adult male placing a blood pressure cuff on the upper arm of a young adult female. The second image shows a typical sphygmomanometer, which includes a black blood pressure cuff, tubing, pump, and pressure gauge.",
+      "caption": "(a) A medical technician prepares to measure a patient’s blood pressure with a sphygmomanometer. (b) A typical sphygmomanometer uses a valved rubber bulb to inflate the cuff and a diaphragm gauge to measure pressure. (credit a: modification of work by Master Sgt. Jeffrey Allen)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_09_01_WeatherMap": {
+      "source": "media/CNX_Chem_09_01_WeatherMap.jpg",
+      "sourceSha256": "08aa3964c6ea9c128d32318d4d6bb075a875881ffa44e525a05103f4fb050b0e",
+      "module": "m68750",
+      "kind": "photo",
+      "width": 650,
+      "height": 402,
+      "variants": [
+        {
+          "width": 650,
+          "height": 402,
+          "file": "CNX_Chem_09_01_WeatherMap-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A weather map of the United States is shown which points out areas of high and low pressure with the letters H in blue and L in red. Curved lines in grey, orange, blue, and red are shown. The orange lines are segmented. The red and blue lines have small red or blue semi-circles and triangles attached along their lengths. In dashed white lines, latitude and longitude are indicated. Underlined three and four digit numbers also appear across the map.",
+      "caption": "Meteorologists use weather maps to describe and predict weather. Regions of high (H) and low (L) pressure have large effects on weather conditions. The gray lines represent locations of constant pressure known as isobars. (credit: modification of work by National Oceanic and Atmospheric Administration)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_09_01_manometer4_img": {
+      "source": "media/CNX_Chem_09_01_manometer4_img.jpg",
+      "sourceSha256": "31187da4406e514cd57409f780aab57271596c18be9e4797c2f21dd375b4e877",
+      "module": "m68750",
+      "kind": "photo",
+      "width": 1000,
+      "height": 393,
+      "variants": [
+        {
+          "width": 800,
+          "height": 314,
+          "file": "CNX_Chem_09_01_manometer4_img-800.webp"
+        },
+        {
+          "width": 1000,
+          "height": 393,
+          "file": "CNX_Chem_09_01_manometer4_img-1000.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram of an open-end manometer is shown. To the upper left is a spherical container labeled, “gas.” This container is connected by a valve to a U-shaped tube which is labeled “open end” at the upper right end. The container and a portion of tube that follows are shaded pink. The lower portion of the U-shaped tube is shaded grey with the height of the gray region being greater on the left side than on the right. The difference in height of 4.63 i n is indicated with horizontal line segments and arrows.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_09_02_Amontons2": {
+      "source": "media/CNX_Chem_09_02_Amontons2.jpg",
+      "sourceSha256": "6c28d2365dd36e4bc5453b457bb987b7a791b4481925463150c56c4ae3889ba0",
+      "module": "m68751",
+      "kind": "photo",
+      "width": 1300,
+      "height": 418,
+      "variants": [
+        {
+          "width": 800,
+          "height": 257,
+          "file": "CNX_Chem_09_02_Amontons2-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 418,
+          "file": "CNX_Chem_09_02_Amontons2-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure includes a table and a graph. The table has 3 columns and 7 rows. The first row is a header, which labels the columns “Temperature, degrees C,” “Temperature, K,” and “Pressure, kPa.” The first column contains the following values from top to bottom: negative 100, negative 50, 0, 50, 100, and 150. The second column contains the values, from top to bottom, 173, 223, 273, 323, 373, and 423. The third column contains the values 36.0, 46.4, 56.7, 67.1, 77.5, and 88.0. A graph appears to the right of the table. The horizontal axis is labeled “Temperature ( K ).” with markings and labels provided for multiples of 100 beginning at 0 and ending at 500. The vertical axis is labeled “Pressure ( kPa )” with markings and labels provided for multiples of 10, beginning at 0 and ending at 100. Six data points from the table are plotted on the graph with black dots. These dots are connected with a solid black line. A dashed line extends from the data point furthest to the left to the origin. The graph shows a positive linear trend.",
+      "caption": "For a constant volume and amount of air, the pressure and temperature are directly proportional, provided the temperature is in kelvin. (Measurements cannot be made at lower temperatures because of the condensation of the gas.) When this line is extrapolated to lower pressures, it reaches a pressure of 0 at –273 °C, which is 0 on the kelvin scale and the lowest possible temperature, called absolute zero."
+    },
+    "CNX_Chem_09_02_Ballooning": {
+      "source": "media/CNX_Chem_09_02_Ballooning.jpg",
+      "sourceSha256": "91ec9fbbf8351943343deb1d950c19b9aec45dde04c5a6603874bb817778839b",
+      "module": "m68751",
+      "kind": "photo",
+      "width": 1300,
+      "height": 355,
+      "variants": [
+        {
+          "width": 800,
+          "height": 218,
+          "file": "CNX_Chem_09_02_Ballooning-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 355,
+          "file": "CNX_Chem_09_02_Ballooning-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure includes three images. Image a is a black and white image of a hydrogen balloon apparently being deflated by a mob of people. In image b, a blue, gold, and red balloon is being held to the ground with ropes while positioned above a platform from which smoke is rising beneath the balloon. In c, an image is shown in grey on a peach-colored background of an inflated balloon with vertical striping in the air. It appears to have a basket attached to its lower side. A large stately building appears in the background.",
+      "caption": "In 1783, the first (a) hydrogen-filled balloon flight, (b) manned hot air balloon flight, and (c) manned hydrogen-filled balloon flight occurred. When the hydrogen-filled balloon depicted in (a) landed, the frightened villagers of Gonesse reportedly destroyed it with pitchforks and knives. The launch of the latter was reportedly viewed by 400,000 people in Paris."
+    },
+    "CNX_Chem_09_02_BoylesLaw4": {
+      "source": "media/CNX_Chem_09_02_BoylesLaw4.jpg",
+      "sourceSha256": "444b4edb5a1efa15b029c413ae3d988a1917f50ff6df77b00b8bdabf27756a85",
+      "module": "m68751",
+      "kind": "photo",
+      "width": 1200,
+      "height": 902,
+      "variants": [
+        {
+          "width": 800,
+          "height": 601,
+          "file": "CNX_Chem_09_02_BoylesLaw4-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 902,
+          "file": "CNX_Chem_09_02_BoylesLaw4-1200.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure contains two diagrams of a cross section of the human head and torso. The first diagram on the left is labeled “Inspiration.” It shows curved arrows in gray proceeding through the nasal passages and mouth to the lungs. An arrow points downward from the diaphragm, which is relatively flat, just beneath the lungs. This arrow is labeled “Diaphragm contracts.” At the entrance to the mouth and nasal passages, a label of P subscript lungs equals 1 dash 3 torr lower” is provided. The second, similar diagram, which is labeled “Expiration,” reverses the direction of both arrows. Arrows extend from the lungs out through the nasal passages and mouth. Similarly, an arrow points up to the diaphragm, showing a curved diaphragm and lungs reduced in size from the previous image. This arrow is labeled “Diaphragm relaxes.” At the entrance to the mouth and nasal passages, a label of P subscript lungs equals 1 dash 3 torr higher” is provided.",
+      "caption": "Breathing occurs because expanding and contracting lung volume creates small pressure differences between your lungs and your surroundings, causing air to be drawn into and forced out of your lungs."
+    },
+    "CNX_Chem_09_02_Boyleslaw2": {
+      "source": "media/CNX_Chem_09_02_Boyleslaw2.jpg",
+      "sourceSha256": "a291641bea7024e7df90fa5c76f66745be2b2cd79500369382781d86226c0122",
+      "module": "m68751",
+      "kind": "photo",
+      "width": 650,
+      "height": 331,
+      "variants": [
+        {
+          "width": 650,
+          "height": 331,
+          "file": "CNX_Chem_09_02_Boyleslaw2-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows two graphs. In a, a graph is shown with volume on the horizontal axis and pressure on the vertical axis. A curved line is shown on the graph showing a decreasing trend with a decreasing rate of change. In b, a graph is shown with volume on the horizontal axis and one divided by pressure on the vertical axis. A line segment, beginning at the origin of the graph, shows a positive, linear trend.",
+      "caption": "The relationship between pressure and volume is inversely proportional. (a) The graph of P vs. V is a hyperbola, whereas (b) the graph of ( 1 P ) vs. V is linear.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_09_02_Charles2": {
+      "source": "media/CNX_Chem_09_02_Charles2.jpg",
+      "sourceSha256": "00449fbb1b06caf06f090a3ce103fa447ea0162143861925f08777bb8a2eebee",
+      "module": "m68751",
+      "kind": "photo",
+      "width": 1300,
+      "height": 482,
+      "variants": [
+        {
+          "width": 800,
+          "height": 296,
+          "file": "CNX_Chem_09_02_Charles2-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 482,
+          "file": "CNX_Chem_09_02_Charles2-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure includes a table and a graph. The table has 3 columns and 6 rows. The first row is a header, which labels the columns “Temperature, degrees C,” “Temperature, K,” and “Pressure, k P a.” The first column contains the values from top to bottom negative 100, negative 50, 0, 100, and 200. The second column contains the values from top to bottom 173, 223, 273, 373, and 473. The third column contains the values 14.10, 18.26, 22.40, 30.65, and 38.88. A graph appears to the right of the table. The horizontal axis is labeled “Temperature ( K ).” with markings and labels provided for multiples of 100 beginning at 0 and ending at 300. The vertical axis is labeled “Volume ( L )” with marking and labels provided for multiples of 10, beginning at 0 and ending at 30. Five data points from the table are plotted on the graph with black dots. These dots are connected with a solid black line. The graph shows a positive linear trend.",
+      "caption": "The volume and temperature are linearly related for 1 mole of methane gas at a constant pressure of 1 atm. If the temperature is in kelvin, volume and temperature are directly proportional. The line stops at 111 K because methane liquefies at this temperature; when extrapolated, it intersects the graph’s origin, representing a temperature of absolute zero."
+    },
+    "CNX_Chem_09_02_Exercise25_img": {
+      "source": "media/CNX_Chem_09_02_Exercise25_img.jpg",
+      "sourceSha256": "f57e76688e289d9e34103c76edf4b7049bdc67befcdb4dcf0649e3320e1093be",
+      "module": "m68751",
+      "kind": "photo",
+      "width": 1300,
+      "height": 1102,
+      "variants": [
+        {
+          "width": 800,
+          "height": 678,
+          "file": "CNX_Chem_09_02_Exercise25_img-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 1102,
+          "file": "CNX_Chem_09_02_Exercise25_img-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Four graphs are shown. In a, Volume is on the horizontal axis and Pressure is on the vertical axis. A downward trend with a decreasing rate of change is shown by a curved line. The label n, P cons is shown on the graph. In b, Temperature is on the horizontal axis and Volume is on the vertical axis. An increasing linear trend is shown by a straight line segment. The label n, P cons is shown on the graph. In c, Temperature is on the horizontal axis and Pressure is on the vertical axis. An increasing linear trend is shown by a straight line segment. The label n, P cons is shown on the graph. In d, Volume is on the horizontal axis and 1 divided by Pressure is on the vertical axis. An increasing linear trend is shown by a straight line segment on the graph. The label n, P cons is shown on the graph.",
+      "caption": ""
+    },
+    "CNX_Chem_09_02_GreatBarri": {
+      "source": "media/CNX_Chem_09_02_GreatBarri.jpg",
+      "sourceSha256": "f2fa3226a4543a5d1a5d6af647493d656d307baeddcfff131511af1f6fc78b14",
+      "module": "m68751",
+      "kind": "photo",
+      "width": 650,
+      "height": 487,
+      "variants": [
+        {
+          "width": 650,
+          "height": 487,
+          "file": "CNX_Chem_09_02_GreatBarri-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This picture shows colorful underwater corals and anemones in hues of yellow, orange, green, and brown, surrounded by water that appears blue in color.",
+      "caption": "Scuba divers, whether at the Great Barrier Reef or in the Caribbean, must be aware of buoyancy, pressure equalization, and the amount of time they spend underwater, to avoid the risks associated with pressurized gases in the body. (credit: Kyle Taylor)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_09_02_HENH3O2": {
+      "source": "media/CNX_Chem_09_02_HENH3O2.jpg",
+      "sourceSha256": "f9e57e19c6964a1dbcf1322048a075500eaa54c1293a59a3dfed0eaa0005d5b2",
+      "module": "m68751",
+      "kind": "photo",
+      "width": 1300,
+      "height": 750,
+      "variants": [
+        {
+          "width": 800,
+          "height": 461,
+          "file": "CNX_Chem_09_02_HENH3O2-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 750,
+          "file": "CNX_Chem_09_02_HENH3O2-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows three balloons each filled with He, NH subscript 2, and O subscript 2, respectively. Beneath the first balloon is the label “4 g of He” Beneath the second balloon is the label, “17 g of NH subscript 2.” Beneath the third balloon is the label “32 g of O subscript 2.” Each balloon contains the same number of molecules of their respective gases.",
+      "caption": "Regardless of its chemical identity, one mole of gas behaving ideally occupies a volume of ~22.4 L at STP."
+    },
+    "CNX_Chem_09_02_Scuba": {
+      "source": "media/CNX_Chem_09_02_Scuba.jpg",
+      "sourceSha256": "15d93da7309885fe62b5c826c8b3e6ec1e0ef599896029ee38ecf943031539ab",
+      "module": "m68751",
+      "kind": "photo",
+      "width": 650,
+      "height": 472,
+      "variants": [
+        {
+          "width": 650,
+          "height": 472,
+          "file": "CNX_Chem_09_02_Scuba-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photograph shows a scuba diver underwater with a tank on his or her back and bubbles ascending from the breathing apparatus.",
+      "caption": "Scuba divers use compressed air to breathe while underwater. (credit: modification of work by Mark Goodchild)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_09_02_WeatherBall_img": {
+      "source": "media/CNX_Chem_09_02_WeatherBall_img.jpg",
+      "sourceSha256": "d2292a7a1793a6b5a1b4e7a9d20cc851d196efecaa2ab25f4e1b6fcf57a856e2",
+      "module": "m68751",
+      "kind": "photo",
+      "width": 325,
+      "height": 244,
+      "variants": [
+        {
+          "width": 325,
+          "height": 244,
+          "file": "CNX_Chem_09_02_WeatherBall_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows a white balloon that appears to have an attached white card. The balloon is being held by a person in an outdoor setting.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_09_03_Ammonia": {
+      "source": "media/CNX_Chem_09_03_Ammonia.jpg",
+      "sourceSha256": "2ccddcff55ec0c5aa28c4345faf77d040aa5e677127247df658adc669f2d819d",
+      "module": "m68752",
+      "kind": "photo",
+      "width": 1300,
+      "height": 647,
+      "variants": [
+        {
+          "width": 800,
+          "height": 398,
+          "file": "CNX_Chem_09_03_Ammonia-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 647,
+          "file": "CNX_Chem_09_03_Ammonia-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram provided models of the chemical reaction written with formulas across the bottom of the figure. The reaction is written; N subscript 2 plus 3H subscript 2 followed by an arrow pointing right to NH subscript 3. Just above the formulas, space-filling models are provided. Above NH subscript 2, two blue spheres are bonded. Above 3H subscript 2, three pairs of two slightly smaller white spheres are bonded. Above NH subscript 3, two molecules are shown composed each of a central blue sphere to which three slightly smaller white spheres are bonded. Across the top of the diagram, the reaction is illustrated with balloons. To the left is a light blue balloon, which is labeled “N subscript 2”. This balloon contains a single space-filling model composed of two bonded blue spheres. This balloon is followed by a plus sign, then three grey balloons which are each labeled “H subscript 2.” Each of these balloons similarly contain a single space-filling model composed of two bonded white spheres. These white spheres are slightly smaller than the blue spheres. An arrow follows that points right to two light-green balloons, which are each labeled “2 NH subscript 3.” Each light-green balloon contains a space-filling model composed of a single central blue sphere to which three slightly smaller white spheres are bonded.",
+      "caption": "One volume of N 2 combines with three volumes of H 2 to form two volumes of NH 3 ."
+    },
+    "CNX_Chem_09_03_BoylesLaw1": {
+      "source": "media/CNX_Chem_09_03_BoylesLaw1.jpg",
+      "sourceSha256": "8177e2df895a9d591287faf3c03a2b1803d81b57c295116f63497853ed2dbfb2",
+      "module": "m68751",
+      "kind": "photo",
+      "width": 1300,
+      "height": 1157,
+      "variants": [
+        {
+          "width": 800,
+          "height": 712,
+          "file": "CNX_Chem_09_03_BoylesLaw1-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 1157,
+          "file": "CNX_Chem_09_03_BoylesLaw1-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure contains a diagram and two graphs. The diagram shows a syringe labeled with a scale in m l or c c with multiples of 5 labeled beginning at 5 and ending at 30. The markings halfway between these measurements are also provided. Attached at the top of the syringe is a pressure gauge with a scale marked by fives from 40 on the left to 5 on the right. The gauge needle rests between 10 and 15, slightly closer to 15. The syringe plunger position indicates a volume measurement about halfway between 10 and 15 m l or c c. The first graph is labeled “V ( m L )” on the horizontal axis and “P ( p s i )” on the vertical axis. Points are labeled at 5, 10, 15, 20, and 25 m L with corresponding values of 39.0, 19.5, 13.0, 9.8, and 6.5 p s i. The points are connected with a smooth curve that is declining at a decreasing rate of change. The second graph is labeled “V ( m L )” on the horizontal axis and “1 divided by P ( p s i )” on the vertical axis. The horizontal axis is labeled at multiples of 5, beginning at zero and extending up to 35 m L. The vertical axis is labeled by multiples of 0.02, beginning at 0 and extending up to 0.18. Six points indicated by black dots on this graph are connected with a black line segment showing a positive linear trend.",
+      "caption": "When a gas occupies a smaller volume, it exerts a higher pressure; when it occupies a larger volume, it exerts a lower pressure (assuming the amount of gas and the temperature do not change). Since P and V are inversely proportional, a graph of 1 P vs. V is linear.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_09_03_DaltonLaw1-f981": {
+      "source": "media/CNX_Chem_09_03_DaltonLaw1-f981.jpg",
+      "sourceSha256": "ad37bb0dfb3539482441f370d94f1afbd9e9aa88e1e7db2a67c8cc421e8f718e",
+      "module": "m68752",
+      "kind": "photo",
+      "width": 1300,
+      "height": 583,
+      "variants": [
+        {
+          "width": 800,
+          "height": 358,
+          "file": "CNX_Chem_09_03_DaltonLaw1-f981-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 583,
+          "file": "CNX_Chem_09_03_DaltonLaw1-f981-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure includes images of four gas-filled cylinders or tanks. Each has a valve at the top. The interior of the first cylinder is shaded blue. This region contains 5 small blue circles that are evenly distributed. The label “300 k P a” is on the cylinder. The second cylinder is shaded lavender. This region contains 8 small purple circles that are evenly distributed. The label “450 k P a” is on the cylinder. To the right of these cylinders is a third cylinder. Its interior is shaded pale yellow. This region contains 12 small yellow circles that are evenly distributed. The label “6000 k P a” is on this region of the cylinder. An arrow labeled “Total pressure combined” appears to the right of these three cylinders. This arrow points to a fourth cylinder. The interior of this cylinder is shaded a pale green. It contains evenly distributed small circles in the following quantities and colors; 5 blue, 8 purple, and 12 yellow. This cylinder is labeled “1350 k P a.”",
+      "caption": "If equal-volume cylinders containing gasses at pressures of 300 kPa, 450 kPa, and 600 kPa are all combined in the same-size cylinder, the total pressure of the gas mixture is 1350 kPa."
+    },
+    "CNX_Chem_09_03_GlobalWarming-b740": {
+      "source": "media/CNX_Chem_09_03_GlobalWarming-b740.jpg",
+      "sourceSha256": "f5baee6f7baaa27a5547b3c67bbaf9cbfec7eaf12f8a574dfaa8fc3991d951cb",
+      "module": "m68752",
+      "kind": "photo",
+      "width": 654,
+      "height": 437,
+      "variants": [
+        {
+          "width": 654,
+          "height": 437,
+          "file": "CNX_Chem_09_03_GlobalWarming-b740-654.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows half of a two dimensional view of the earth in blue and green at the left of the image. A slight distance outside the hemisphere is a grey arc. A line segment connects the label “Atmosphere” to the region between the hemisphere and the grey arc. In this region, near the surface of the earth the chemical formulas C O subscript 2, C H subscript 3, and N subscript 2 O appear. Five red arrows formed from wavy lines extend from green regions on the earth out into and just beyond the region labeled “Atmosphere.” The label “Infrared radiation” points to one of these red arrows. At a fair distance outside of the grey arc appears a yellow circle with a jagged boundary. This circle is labeled “Sun.” From it extend yellow arrows with wavy lines which extend toward the earth. Three of the arrows extend to the green region on the earth. One of the arrows appears to be reflected off the grey arc, causing its path to turn away from the earth.",
+      "caption": "Greenhouse gases trap enough of the sun’s energy to make the planet habitable—this is known as the greenhouse effect. Human activities are increasing greenhouse gas levels, warming the planet and causing more extreme weather events.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_09_03_GlobalWarming2": {
+      "source": "media/CNX_Chem_09_03_GlobalWarming2.jpg",
+      "sourceSha256": "d5db43c5eaafa4f9f8b99b7b7c4aa5b269ae801d4c5a1d38a5e9335e03d4a729",
+      "module": "m68752",
+      "kind": "photo",
+      "width": 1200,
+      "height": 449,
+      "variants": [
+        {
+          "width": 800,
+          "height": 299,
+          "file": "CNX_Chem_09_03_GlobalWarming2-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 449,
+          "file": "CNX_Chem_09_03_GlobalWarming2-1200.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure has the heading “Carbon Dioxide in the Atmosphere.” The first graph has a horizontal axis label “Year ( B C )” and a vertical axis label “Carbon dioxide concentration ( p p m ).” The horizontal axis labels begin at 700,000 on the left and increases by multiples of 100,000 up to 0 on the right. The vertical axis begins at 0 and increases by multiples of 50 extending up to 400. A jagged, cyclical pattern is shown that begins before 600,000 B C at under 200 p p m. Up to 0 B C values appear to vary cyclically up to a high of about 300 p p m. Extending beyond 0 B C to the right, the carbon dioxide concentration appears to be on a steady increase, having reached nearly 400 p p m in recent years. The second graph is shown to magnify the portion of the graph that is most recent. This graph begins just before the year 1960 and includes markings for multiples of 10 up to the year 2010. The vertical axis begins just below 320 p p m and includes markings for all multiples of 20 up to 400 p p m. A smooth black line is shown extending through a jagged red data pattern. The trend is a steady, nearly linear increase from the lower left to the upper right on the graph.",
+      "caption": "CO 2 levels over the past 700,000 years were typically from 200–300 ppm, with a steep, unprecedented increase over the past 50 years."
+    },
+    "CNX_Chem_09_03_SusanSolom": {
+      "source": "media/CNX_Chem_09_03_SusanSolom.jpg",
+      "sourceSha256": "25d5019a674c4242853de086b40c7fcb939c3470bb7237d777d2c3e290aab412",
+      "module": "m68752",
+      "kind": "photo",
+      "width": 325,
+      "height": 274,
+      "variants": [
+        {
+          "width": 325,
+          "height": 274,
+          "file": "CNX_Chem_09_03_SusanSolom-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A photograph is shown of Susan Solomon sitting next to a globe.",
+      "caption": "Susan Solomon’s research focuses on climate change and has been instrumental in determining the cause of the ozone hole over Antarctica. (credit: National Oceanic and Atmospheric Administration)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_09_03_WaterVapor": {
+      "source": "media/CNX_Chem_09_03_WaterVapor.jpg",
+      "sourceSha256": "6be3fd8c1c2d8aad45e7e0a1fdf3dd9bc572e4e3011b03c93e63525fb69c92fc",
+      "module": "m68752",
+      "kind": "photo",
+      "width": 650,
+      "height": 556,
+      "variants": [
+        {
+          "width": 650,
+          "height": 556,
+          "file": "CNX_Chem_09_03_WaterVapor-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a diagram of equipment used for collecting a gas over water. To the left is an Erlenmeyer flask. It is approximately two thirds full of a lavender colored liquid. Bubbles are evident in the liquid. The label “Reaction Producing Gas” appears below the flask. A line segment connects this label to the liquid in the flask. The flask has a stopper in it through which a single glass tube extends from the open region above the liquid in the flask up, through the stopper, to the right, then angles down into a pan that is nearly full of light blue water. This tube again extends right once it is well beneath the water’s surface. It then bends up into an inverted flask which is labeled “Collection Flask.” This collection flask is positioned with its mouth beneath the surface of the light blue water and appears approximately half full. Bubbles are evident in the water in the inverted flask. The open space above the water in the inverted flask is labeled “collected gas.”",
+      "caption": "When a reaction produces a gas that is collected above water, the trapped gas is a mixture of the gas produced by the reaction and water vapor. If the collection flask is appropriately positioned to equalize the water levels both within and outside the flask, the pressure of the trapped gas mixture will equal the atmospheric pressure outside the flask (see the earlier discussion of manometers).",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_09_03_WaterVapor2": {
+      "source": "media/CNX_Chem_09_03_WaterVapor2.jpg",
+      "sourceSha256": "e8110f31426a27205a571c587bb3d9f7fc0c3c5a8a942277a4b4b6b5d5507728",
+      "module": "m68752",
+      "kind": "photo",
+      "width": 650,
+      "height": 506,
+      "variants": [
+        {
+          "width": 650,
+          "height": 506,
+          "file": "CNX_Chem_09_03_WaterVapor2-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A graph is shown. The horizontal axis is labeled “Temperature ( degrees C )” with markings and labels provided for multiples of 20 beginning at 0 and ending at 100. The vertical axis is labeled “Vapor pressure ( torr )” with marking and labels provided for multiples of 200, beginning at 0 and ending at 800. A smooth solid black curve extends from the origin up and to the right across the graph. The graph shows a positive trend with an increasing rate of change. On the vertical axis is ( 7 60) and an arrow pointing to it. The arrow is labeled, “Vapor pressure at ( 100 degrees C ).”",
+      "caption": "This graph shows the vapor pressure of water at sea level as a function of temperature.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_09_03_liquidgas": {
+      "source": "media/CNX_Chem_09_03_liquidgas.jpg",
+      "sourceSha256": "0bd482fa069ac8a7a5cdd3a387827225c04563b21915adc06ebfe705777cf63c",
+      "module": "m68752",
+      "kind": "photo",
+      "width": 1000,
+      "height": 242,
+      "variants": [
+        {
+          "width": 800,
+          "height": 193,
+          "file": "CNX_Chem_09_03_liquidgas-800.webp"
+        },
+        {
+          "width": 1000,
+          "height": 242,
+          "file": "CNX_Chem_09_03_liquidgas-1000.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows four photos each connected by a right-facing arrow. The first photo shows a glass flask with aluminum foil covering the top sitting on a scale. The second photo shows a syringe being inserted into the flask through the aluminum foil covering. The third photo shows the glass flask being inserted into a beaker of water. The water appears to be heated at 100. The fourth photo shows the glass flask being weighed again.",
+      "caption": "When the volatile liquid in the flask is heated past its boiling point, it becomes gas and drives air out of the flask. At t l ⟶ g , the flask is filled with volatile liquid gas at the same pressure as the atmosphere. If the flask is then cooled to room temperature, the gas condenses and the mass of the gas that filled the flask, and is now liquid, can be measured. (credit: modification of work by Mark Ott)"
+    },
+    "CNX_Chem_09_04_DiffEff": {
+      "source": "media/CNX_Chem_09_04_DiffEff.jpg",
+      "sourceSha256": "99c6edbcdf44d3f3ed08cfb20d851e8345234b678291cd6f4428ad5205644479",
+      "module": "m68754",
+      "kind": "photo",
+      "width": 1300,
+      "height": 354,
+      "variants": [
+        {
+          "width": 800,
+          "height": 218,
+          "file": "CNX_Chem_09_04_DiffEff-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 354,
+          "file": "CNX_Chem_09_04_DiffEff-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure contains two cylindrical containers which are oriented horizontally. The first is labeled “Diffusion.” In this container, approximately 25 purple and 25 green circles are shown, evenly distributed throughout the container. “Trails” behind some of the circles indicate motion. In the second container, which is labeled “Effusion,” a boundary layer is evident across the center of the cylindrical container, dividing the cylinder into two halves. A black arrow is drawn pointing through this boundary from left to right. To the left of the boundary, approximately 16 green circles and 20 purple circles are shown again with motion indicated by “trails” behind some of the circles. To the right of the boundary, only 4 purple and 16 green circles are shown.",
+      "caption": "Diffusion involves the unrestricted dispersal of molecules throughout space due to their random motion. When this process is restricted to passage of molecules through very small openings in a physical barrier, the process is called effusion."
+    },
+    "CNX_Chem_09_04_Diffusion": {
+      "source": "media/CNX_Chem_09_04_Diffusion.jpg",
+      "sourceSha256": "c31f7717897ce8c596975c14b6d5c617e4288dac693a1919ecfddc55cbfed2de",
+      "module": "m68754",
+      "kind": "photo",
+      "width": 1300,
+      "height": 344,
+      "variants": [
+        {
+          "width": 800,
+          "height": 211,
+          "file": "CNX_Chem_09_04_Diffusion-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 344,
+          "file": "CNX_Chem_09_04_Diffusion-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "In this figure, three pairs of gas filled spheres or vessels are shown connected with a stopcock between them. In a, the figure is labeled, “Stopcock closed.” Above, the left sphere is labeled, “H subscript 2.” It contains approximately 30 small, white, evenly distributed circles. The sphere to its right is labeled, “O subscript 2.” It contains approximately 30 small red evenly distributed circles. In b, the figure is labeled, “Stopcock open.” The stopcock valve handle is now parallel to the tube connecting the two spheres. On the left, approximately 9 small, white circles and 4 small, red circles are present, with the red spheres appearing slightly closer to the stopcock. On the right side, approximately 25 small, red spheres and 21 small, white spheres are present, with the concentration of white spheres slightly greater near the stopcock. In c, the figure is labeled “Some time after Stopcock open.” In this situation, the red and white spheres appear evenly mixed and uniformly distributed throughout both spheres.",
+      "caption": "(a) Two gases, H 2 and O 2 , are initially separated. (b) When the stopcock is opened, they mix together. The lighter gas, H 2 , passes through the opening faster than O 2 , so just after the stopcock is opened, more H 2 molecules move to the O 2 side than O 2 molecules move to the H 2 side. (c) After a short time, both the slower-moving O 2 molecules and the faster-moving H 2 molecules have distributed themselves evenly on both sides of the vessel."
+    },
+    "CNX_Chem_09_04_Effusion2": {
+      "source": "media/CNX_Chem_09_04_Effusion2.jpg",
+      "sourceSha256": "84178b726091049df57112d47fe2a2e551fbb1055424758e8c8c360ff809c577",
+      "module": "m68754",
+      "kind": "photo",
+      "width": 975,
+      "height": 303,
+      "variants": [
+        {
+          "width": 800,
+          "height": 248,
+          "file": "CNX_Chem_09_04_Effusion2-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 303,
+          "file": "CNX_Chem_09_04_Effusion2-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows two photos. The first photo shows an inflated orange balloon and an inflated blue balloon. Both balloons are about the same size. The second photo shows the same two balloons, but the orange one is now smaller than the blue one.",
+      "caption": "The left photograph shows two balloons inflated with different gases, helium (orange) and argon (blue).The right-side photograph shows the balloons approximately 12 hours after being filled, at which time the helium balloon has become noticeably more deflated than the argon balloon, due to the greater effusion rate of the lighter helium gas. (credit: modification of work by Paul Flowers)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_09_04_GasDiff": {
+      "source": "media/CNX_Chem_09_04_GasDiff.jpg",
+      "sourceSha256": "177d517e263f0e1f012794725fdcb317d1a3fff4e70811be14126b281a088629",
+      "module": "m68754",
+      "kind": "photo",
+      "width": 1200,
+      "height": 582,
+      "variants": [
+        {
+          "width": 800,
+          "height": 388,
+          "file": "CNX_Chem_09_04_GasDiff-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 582,
+          "file": "CNX_Chem_09_04_GasDiff-1200.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a large cylindrical container oriented horizontally. A narrow tube or pipe which is labeled “porous barrier” runs horizontally through the center of the tube and extends a short distance out from the left and right ends of the cylinder. At the far left, an arrow points right into the tube. This arrow is labele, “Uranium hexafluoride ( U F subscript 6 ).” A line segment connects the label, “High pressure feed tube,” to the tube where it enters the cylinder. In the short region of tube outside the cylinder, 5 small, purple circles and 4 small, green circles are present. Inside the cylinder, an arrow points right through the tube which contains many evenly distributed, purple circles and a handful of green circles which decrease in quantity moving left to right through the cylinder. Curved arrows extend from the inner area of the tube into the outer region of the cylinder. Three of these arrows point into the area above the tube and three point into the area below. Two line segments extend from the label, “Higher speed superscript 235 U F subscript 6 diffuses through barrier faster than superscript 238 U F subscript 6,” to two green circles in the space above the tube. In the short section of tubing just outside the cylinder, 8 small, purple circles are present. An arrow labeled, “Depleted superscript 238 U F subscript 6,” points right extending from the end of this tube. The larger space outside the tube contains approximately 100 evenly distributed small green circles and only 5 purple circles. Eight of the purple circles appear at the left end of the cylinder. A tube exits the lower right end of the cylinder. It has 5 green circles followed by a right pointing arrow and the label, “Enriched superscript 235 U F subscript 6.”",
+      "caption": "In a diffuser, gaseous UF 6 is pumped through a porous barrier, which partially separates 235 UF 6 from 238 UF 6 The UF 6 must pass through many large diffuser units to achieve sufficient enrichment in 235 U."
+    },
+    "CNX_Chem_09_04_KMT2": {
+      "source": "media/CNX_Chem_09_04_KMT2.jpg",
+      "sourceSha256": "3e165e582b21500ab2bc976b572f3dd65f2db2f71a548acbfbc86cc5ceb5e072",
+      "module": "m68758",
+      "kind": "photo",
+      "width": 1301,
+      "height": 640,
+      "variants": [
+        {
+          "width": 800,
+          "height": 393,
+          "file": "CNX_Chem_09_04_KMT2-800.webp"
+        },
+        {
+          "width": 1301,
+          "height": 640,
+          "file": "CNX_Chem_09_04_KMT2-1301.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows 3 pairs of pistons and cylinders. In a, which is labeled, “Charles’s Law,” the piston is positioned for the first cylinder so that just over half of the available volume contains 6 purple spheres with trails behind them. The trails indicate movement. Orange dashes extend from the interior surface of the cylinder where the spheres have collided. This cylinder is labeled, “Baseline.” In the second cylinder, the piston is in the same position, and the label, “Heat” is indicated in red capitalized text. Four red arrows with wavy stems are pointing upward to the base of the cylinder. The six purple spheres have longer trails behind them and the number of orange dashes indicating points of collision with the container walls has increased. A rectangle beneath the diagram states, “Temperature increased, Volume constant equals Increased pressure.” In b, which is labeled, “Boyle’s Law,” the first, baseline cylinder shown is identical to the first cylinder in a. In the second cylinder, the piston has been moved, decreasing the volume available to the 6 purple spheres to half of the initial volume. The orange dashes indicating points of collision with the container walls has increased. This second cylinder is labeled, “Volume decreased.” A rectangle beneath the diagram states, “Volume decreased, Wall area decreased equals Increased pressure.” In c, which is labeled “Avogadro’s Law,” the first, baseline cylinder shown is identical to the first cylinder in a. In the second cylinder, the number of purple spheres has changed from 6 to 12 and volume has doubled. This second cylinder is labeled “Increased gas.” A rectangle beneath the diagram states, “At constant pressure, More gas molecules added equals Increased volume.”",
+      "caption": "(a) When gas temperature increases, gas pressure increases due to increased force and frequency of molecular collisions. (b) When volume decreases, gas pressure increases due to increased frequency of molecular collisions. (c) When the amount of gas increases at a constant pressure, volume increases to yield a constant number of collisions per unit wall area per unit time."
+    },
+    "CNX_Chem_09_05_MolSpeed1": {
+      "source": "media/CNX_Chem_09_05_MolSpeed1.jpg",
+      "sourceSha256": "b1445e0aa7975ca814eb81712a7ab4038b4d32b5fbf3f31c53cc8bdfb71564fa",
+      "module": "m68758",
+      "kind": "photo",
+      "width": 650,
+      "height": 511,
+      "variants": [
+        {
+          "width": 650,
+          "height": 511,
+          "file": "CNX_Chem_09_05_MolSpeed1-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A graph is shown. The horizontal axis is labeled, “Speed u ( m divided by s ).” This axis is marked by increments of 20 beginning at 0 and extending up to 120. The vertical axis is labeled, “Fraction of molecules.” A positively or right-skewed curve is shown in red which begins at the origin and approaches the horizontal axis around 120 m per s. At the peak of the curve, a point is indicated with a black dot and is labeled, “v subscript p.” A vertical dashed line extends from this point to the horizontal axis at which point the intersection is labeled, “v subscript p.” Slightly to the right of the peak a second black dot is placed on the curve. This point is labeled, “v subscript r m s.” A vertical dashed line extends from this point to the horizontal axis at which point the intersection is labeled, “v subscript r m s.” The label, “O subscript 2 at T equals 300 K” appears in the open space to the right of the curve.",
+      "caption": "The molecular speed distribution for oxygen gas at 300 K is shown here. Very few molecules move at either very low or very high speeds. The number of molecules with intermediate speeds increases rapidly up to a maximum, which is the most probable speed, then drops off rapidly. Note that the most probable speed, ν p , is a little less than 400 m/s, while the root mean square speed, u rms , is closer to 500 m/s.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_09_05_MolSpeed2": {
+      "source": "media/CNX_Chem_09_05_MolSpeed2.jpg",
+      "sourceSha256": "295887d083806475fada9a1091529c303032d0ccc372c40902be24a5a74e0946",
+      "module": "m68758",
+      "kind": "photo",
+      "width": 650,
+      "height": 511,
+      "variants": [
+        {
+          "width": 650,
+          "height": 511,
+          "file": "CNX_Chem_09_05_MolSpeed2-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A graph with four positively or right-skewed curves of varying heights is shown. The horizontal axis is labeled, “Speed u ( m divided by s ).” This axis is marked by increments of 500 beginning at 0 and extending up to 1500. The vertical axis is labeled, “Fraction of molecules.” The label, “N subscript 2,” appears in the open space in the upper right area of the graph. The tallest and narrowest of these curves is labeled, “100 K.” Its right end appears to touch the horizontal axis around 700 m per s. It is followed by a slightly wider curve which is labeled, “200 K,” that is about three quarters of the height of the initial curve. Its right end appears to touch the horizontal axis around 850 m per s. The third curve is significantly wider and only about half the height of the initial curve. It is labeled, “500 K.” Its right end appears to touch the horizontal axis around 1450 m per s. The final curve is only about one third the height of the initial curve. It is much wider than the others, so much so that its right end has not yet reached the horizontal axis. This curve is labeled, “1000 K.”",
+      "caption": "The molecular speed distribution for nitrogen gas (N 2 ) shifts to the right and flattens as the temperature increases; it shifts to the left and heightens as the temperature decreases.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_09_05_MolSpeed3": {
+      "source": "media/CNX_Chem_09_05_MolSpeed3.jpg",
+      "sourceSha256": "b18a088b0024ffc290d584d957361db55272bed8713b36bceedccb582600afcb",
+      "module": "m68758",
+      "kind": "photo",
+      "width": 650,
+      "height": 386,
+      "variants": [
+        {
+          "width": 650,
+          "height": 386,
+          "file": "CNX_Chem_09_05_MolSpeed3-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A graph is shown with four positively or right-skewed curves of varying heights. The horizontal axis is labeled, “Speed u ( m divided by s ).” This axis is marked by increments of 500 beginning at 0 and extending up to 3000. The vertical axis is labeled, “Fraction of molecules.” The tallest and narrowest of these curves is labeled, “X e.” Its right end appears to touch the horizontal axis around 600 m per s. It is followed by a slightly wider curve which is labeled, “A r,” that is about half the height of the initial curve. Its right end appears to touch the horizontal axis around 900 m per s. The third curve is significantly wider and just over a third of the height of the initial curve. It is labeled, “N e.” Its right end appears to touch the horizontal axis around 1200 m per s. The final curve is only about one fourth the height of the initial curve. It is much wider than the others, so much so that its right reaches the horizontal axis around 2500 m per s. This curve is labeled, “H e.”",
+      "caption": "molecular speed is directly related to molecular mass. At a given temperature, lighter molecules move faster on average than heavier molecules.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_09_06_Exercise1_img": {
+      "source": "media/CNX_Chem_09_06_Exercise1_img.jpg",
+      "sourceSha256": "a8bfa20b284998d79af00cc2769db59eea5b01248361c38b1c85ea6e21073881",
+      "module": "m68759",
+      "kind": "photo",
+      "width": 1301,
+      "height": 1414,
+      "variants": [
+        {
+          "width": 800,
+          "height": 869,
+          "file": "CNX_Chem_09_06_Exercise1_img-800.webp"
+        },
+        {
+          "width": 1301,
+          "height": 1414,
+          "file": "CNX_Chem_09_06_Exercise1_img-1301.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure includes 6 graphs. The first, which is labeled, “Gas A,” has a horizontal axis labeled, “Temperature,” and a vertical axis labeled, “Volume.” A straight blue line segment extends from the lower left to the upper right of this graph. The open area in the lower right portion of the graph contains the label, “n, P constant.” The second, which is labeled, “Gas B,” has a horizontal axis labeled, “P,” and a vertical axis labeled, “P V.” A straight blue line segment extends horizontally across the center of this graph. The open area in the lower right portion of the graph contains the label, “n, T constant.” The third, which is labeled, “Gas C,” has a horizontal axis labeled,“P V divided by R T,” and a vertical axis labeled, “Moles.” A blue curve begins about halfway up the vertical axis, dips slightly, then increases steadily to the upper right region of the graph. The fourth, which is labeled, “Gas D,” has a horizontal axis labeled, “P V divided by R T,” and a vertical axis labeled, “Moles.” A straight blue line segment extends horizontally across the center of this graph. The open area in the lower right portion of the graph contains the label “n, P constant.” The fifth, which is labeled, “Gas E,” has a horizontal axis labeled, “Temperature,” and a vertical axis labeled, “Volume.” A blue curve extends from the lower left to the upper right of this graph. The open area in the lower right portion of the graph contains the label “n, P constant.” The sixth graph, which is labeled, “Gas F,” has a horizontal axis labeled, “Temperature,” and a vertical axis labeled, “Pressure.” A blue curve begins toward the lower left region of the graph, increases at a rapid rate, then continues to increase at a relatively slow rate moving left to right across the graph. The open area in the lower right portion of the graph contains the label, “n, V constant.”",
+      "caption": ""
+    },
+    "CNX_Chem_09_06_RealGas2": {
+      "source": "media/CNX_Chem_09_06_RealGas2.jpg",
+      "sourceSha256": "c999959e2b0049c65105ce0bc7daea1d24807e62af40faa2ae4bdef3d84d9a93",
+      "module": "m68759",
+      "kind": "photo",
+      "width": 1250,
+      "height": 413,
+      "variants": [
+        {
+          "width": 800,
+          "height": 264,
+          "file": "CNX_Chem_09_06_RealGas2-800.webp"
+        },
+        {
+          "width": 1250,
+          "height": 413,
+          "file": "CNX_Chem_09_06_RealGas2-1250.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure includes two diagrams. Each involves two lavender shaded boxes that contain 14 relatively evenly distributed, purple spheres. The first box in a on the left is labeled “ideal.” In the second slightly smaller box, on the right, a nearly centrally located purple sphere has 6 double-headed arrows extending outward from it to nearby spheres. This box is labeled “real.” In b, in the first box on the left, a single arrow points to a purple sphere at the right side that appears to be moving and impacting the right side of the box. There are no other spheres positioned near the right edge. This box is labeled “ideal.” The second box, on the right, shows the same image but has 5 double-headed arrows radiating out to the top, bottom, and left to other spheres. This box is labeled “real.”",
+      "caption": "(a) Attractions between gas molecules serve to decrease the gas volume at constant pressure compared to an ideal gas whose molecules experience no attractive forces. (b) These attractive forces will decrease the force of collisions between the molecules and container walls, therefore reducing the pressure exerted at constant volume compared to an ideal gas."
+    },
+    "CNX_Chem_09_06_RealGases": {
+      "source": "media/CNX_Chem_09_06_RealGases.jpg",
+      "sourceSha256": "c871f66e88c0734b8c6b91950fd52bef7d72ba217f74bdc6fdcf691206ba2123",
+      "module": "m68759",
+      "kind": "photo",
+      "width": 650,
+      "height": 544,
+      "variants": [
+        {
+          "width": 650,
+          "height": 544,
+          "file": "CNX_Chem_09_06_RealGases-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A graph is shown. The horizontal axis is labeled, “P ( a t m ).” Its scale is marked at 0, 1, and 2. The vertical axis is labeled, “P V ( a t m L ).” This scale includes markings at 0, 22.4, 22.5, and 22.6. Two curves and two lines are drawn of varying colors. One line is a horizontal, blue line extending right from about 22.42 a t m L on the vertical axis, and is labeled, “Ideal gas.” The remaining two curves and one line start at the same point on the vertical axis. A green line extends up and to the right slightly on the graph, reaching a value of approximately 22.46 a t m L at 2 a t m. This green line is labeled, “H e.” An orange curve dips below the horizontal ideal gas line initially, then increases to cross the line just past 1 a t m. This curve reaches a value of about 22.52 a t m L at 2 a t m. This curve is labeled, “C H subscript 4.” A purple curve dips below the horizontal ideal gas line initially, then increases to cross the line at about 0.8 a t m. This curve reaches a value of nearly 22.62 a t m L at nearly 1.2 a t m. This curve is labeled, “C O subscript 2.”",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_09_06_ZvsPgraph": {
+      "source": "media/CNX_Chem_09_06_ZvsPgraph.jpg",
+      "sourceSha256": "95281c856db28cfa0dcb7e77e761470e3cf0e7c7cf48529b82c9352c76f8e880",
+      "module": "m68759",
+      "kind": "photo",
+      "width": 917,
+      "height": 641,
+      "variants": [
+        {
+          "width": 800,
+          "height": 559,
+          "file": "CNX_Chem_09_06_ZvsPgraph-800.webp"
+        },
+        {
+          "width": 917,
+          "height": 641,
+          "file": "CNX_Chem_09_06_ZvsPgraph-917.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A graph is shown. The horizontal axis is labeled, “P ( a t m ).” Its scale begins at zero with markings provided by multiples of 200 up to 1000. The vertical axis is labeled, “Z le( k P a ).” This scale begins at zero and includes multiples of 0.5 up to 2.0. Six curves are drawn of varying colors. One of these curves is a horizontal, light purple line extending right from 1.0 k P a on the vertical axis, which is labeled “Ideal gas.” The region of the graph beneath this line is shaded tan. The remaining curves also start at the same point on the vertical axis. An orange line extends to the upper right corner of the graph, reaching a value of approximately 1.7 k P a at 1000 a t m. This orange curve is labeled, “H subscript 2.” A blue curve dips below the horizontal ideal gas line initially, then increases to cross the line just past 200 a t m. This curve reaches a value of nearly 2.0 k P a at about 800 a t m. This curve is labeled, “N subscript 2.” A red curve dips below the horizontal ideal gas line initially, then increases to cross the line just past 400 a t m. This curve reaches a value of nearly 1.5 k P a at about 750 a t m. This curve is labeled, “O subscript 2.” A purple curve dips below the horizontal ideal gas line, dipping even lower than the O subscript 2 curve initially, then increases to cross the ideal gas line at about 400 a t m. This curve reaches a value of nearly 2.0 k P a at about 850 a t m. This curve is labeled, “C H subscript 4.” A yellow curve dips below the horizontal ideal gas line, dipping lower than the other curves to a minimum of about 0.4 k P a at about 0.75 a t m, then increases to cross the ideal gas line at about 500 a t m. This curve reaches a value of about 1.6 k P a at about 900 a t m. This curve is labeled, “C O subscript 2.”",
+      "caption": "A graph of the compressibility factor (Z) vs. pressure shows that gases can exhibit significant deviations from the behavior predicted by the ideal gas law.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_09_06_vanderWaals_img": {
+      "source": "media/CNX_Chem_09_06_vanderWaals_img.jpg",
+      "sourceSha256": "ee7b5d0fe56bd6ca499cee619ca6d59588d8306a2e508c9f6cb5151ba02a33e9",
+      "module": "m68759",
+      "kind": "photo",
+      "width": 975,
+      "height": 194,
+      "variants": [
+        {
+          "width": 800,
+          "height": 159,
+          "file": "CNX_Chem_09_06_vanderWaals_img-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 194,
+          "file": "CNX_Chem_09_06_vanderWaals_img-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the equation P V equals n R T, with the P in blue text and the V in red text. This equation is followed by a right pointing arrow. Following this arrow, to the right in blue text appears the equation ( P minus a n superscript 2 divided by V squared ),” which is followed by the red text ( V minus n b ). This is followed in black text with equals n R T. Beneath the second equation appears the label, “Correction for molecular attraction” which is connected with a line segment to V squared. A second label, “Correction for volume of molecules,” is similarly connected to n b which appears in red.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
     "CNX_Chem_14_03_FishLemon": {
       "source": "media/CNX_Chem_14_03_FishLemon.jpg",
       "sourceSha256": "9fe70f7dee5ca566696b82f94fedfec8565ba53869510e7b90ab66dcf31f6fd0",

@@ -124,7 +124,7 @@ neither
 {{< selfcheck question="A sample of compound X (a clear, colorless, combustible liquid with a noticeable odor) is analyzed and found to contain 14.13 g carbon and 2.96 g hydrogen. A sample of compound Y (a clear, colorless, combustible liquid with a noticeable odor that is slightly different from X’s odor) is analyzed and found to contain 19.91 g carbon and 3.34 g hydrogen. Are these data an example of the law of definite proportions, the law of multiple proportions, or neither? What do these data tell you about substances X and Y?" hint="Work as the example above does, then ask what the comparison means for X and Y." >}}
 In compound X, the mass ratio of carbon to hydrogen is $\frac{14.13\ \text{g C}}{2.96\ \text{g H}}$. In compound Y, the mass ratio of carbon to hydrogen is $\frac{19.91\ \text{g C}}{3.34\ \text{g H}}$. The ratio of these ratios is
 
-$$\begin{aligned} \frac{\frac{14.13\ \text{g C}}{2.96\ \text{g H}}}{\frac{19.91\ \text{g C}}{3.34\ \text{g H}}} &= \frac{4.77\ \text{g C/g H}}{5.96\ \text{g C/g H}} \\ &= 0.800 = \frac{4}{5}. \end{aligned}$$
+$$\begin{aligned} \frac{\frac{14.13\ \text{g C}}{2.96\ \text{g H}}}{\frac{19.91\ \text{g C}}{3.34\ \text{g H}}} &= \frac{4.77\ \text{g C/g H}}{5.96\ \text{g C/g H}} \\[6pt] &= 0.800 = \frac{4}{5}. \end{aligned}$$
 
 This small, whole-number ratio supports the law of multiple proportions. This means that X and Y are different compounds.
 ===CHECKS===

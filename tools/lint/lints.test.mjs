@@ -119,6 +119,20 @@ test('an interactive practice set caps at three consecutive questions', () => {
   );
 });
 
+test('one source question asked in several units is one question, however many fill-ins it takes', () => {
+  const stem = 'A typical barometric pressure in Kansas City is 740 torr. What is this pressure in atmospheres, in millimeters of mercury, in kilopascals, and in bar?';
+  const asked = ['Enter the pressure in atmospheres.', 'Enter the pressure in millimeters of mercury.', 'Enter the pressure in kilopascals.', 'Enter the pressure in bar.'];
+  const page = 'content/physical-sciences/chemistry/09-gases/01-gas-pressure.md';
+  const consecutive = (source) => lintHugo(source, page).errors
+    .filter((error) => error.includes('more than three consecutive interactive questions'));
+  assert.deepEqual(consecutive(asked.map((closing) => fillin(`${stem} ${closing}`)).join('\n\n')), [],
+    'four fill-ins that repeat one stem up to their closing sentence are parts of one question');
+  assert.equal(consecutive(asked.map((closing, n) => fillin(`A pressure is ${n + 700} torr and is typical of a city at some height. ${closing}`)).join('\n\n')).length, 1,
+    'four questions that merely close alike are still four');
+  assert.equal(consecutive(asked.map((closing) => fillin(`Convert it. ${closing}`)).join('\n\n')).length, 1,
+    'a shared stem of a few words is no stem');
+});
+
 test('a print-source “Try It” label is rejected in a learner-facing field', () => {
   for (const source of [
     fillin('Try It 10.17. Find the inverse.'),

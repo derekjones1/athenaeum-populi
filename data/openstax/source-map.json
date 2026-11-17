@@ -260,8 +260,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 21,
       "upstreamSections": 114,
-      "localChapters": 8,
-      "mappedSections": 40,
+      "localChapters": 9,
+      "mappedSections": 42,
       "upstreamAppendices": 13,
       "mappedAppendices": 13
     }
@@ -7628,6 +7628,24 @@
       "moduleId": "m68747",
       "sourceTitle": "Molecular Orbital Theory",
       "moduleSha256": "72267d71555a9c124c41b0452139684b29f947be8f0bbf0b4d4a9895b12966fb"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/01-gas-pressure.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "9.1",
+      "moduleId": "m68750",
+      "sourceTitle": "Gas Pressure",
+      "moduleSha256": "21ab34fa0d6d4ebb41c320a3180c726d0f72e4953692f8cd7d5ac2173eef4fb8"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/02-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "9.2",
+      "moduleId": "m68751",
+      "sourceTitle": "Relating Pressure, Volume, Amount, and Temperature: The Ideal Gas Law",
+      "moduleSha256": "e7c4694bae8e34ee9bb7991edde888be1d0f7c8a6dbd18d0926d90fbc6a7d85a"
     }
   ],
   "appendices": [

@@ -3,7 +3,7 @@
 // 10, 11). Each takes a page's Markdown and returns its hits as
 // `[{ index, written, … }]`, offsets into the page, so the lint can place
 // them and a measurement can count them over the book.
-import { blankPreservingOffsets, shortcodes } from '../lib/content.mjs';
+import { blankPreservingOffsets, mathSpans, shortcodes } from '../lib/content.mjs';
 import { proseOnly } from './chemistry-readings.mjs';
 import { isWordRun, readWords } from '../lib/rubric-run.mjs';
 
@@ -181,6 +181,70 @@ export function straightApostrophes(text) {
     else if (/\p{L}s$/u.test(before) && /^(?:[\s.,;:!?)”]|$)/u.test(after)) hits.push({ index: match.index, kind: 'apostrophe' });
     else if (/\p{L}$/u.test(before) && /^(?:[\s.,;:!?)”]|$)/u.test(after)) hits.push({ index: match.index, kind: 'closing' });
     else if ((/(?:^|[\s(“\[])$/u.test(before) || match.index === 0) && letterAfter) hits.push({ index: match.index, kind: 'opening' });
+  }
+  return hits;
+}
+
+/** Every math span of the page (front matter and code blanked), with the offset of its TeX. */
+const texSpans = (text) => mathSpans(body(text))
+  .map((span) => ({ ...span, at: span.index + (span.display ? 2 : 1) }));
+
+/**
+ * h. A bare proportionality sign ∝ (U+221D) outside math (chapter 9
+ * readings, November 17, 2026): body, list, table, caption, Source note,
+ * footer, and item text. In the body face it renders as a speck; write
+ * `$\propto$`. Not read: math, code, front matter, and an `alt`,
+ * `longdesc`, or `title` attribute (plain text, where math does not set).
+ */
+export function bareProportionality(text) {
+  let prose = body(text).replace(/\b(?:alt|longdesc|title|aria-label)="[^"]*"/g, blankPreservingOffsets);
+  for (const span of mathSpans(prose)) {
+    prose = prose.slice(0, span.index) + ' '.repeat(span.length) + prose.slice(span.index + span.length);
+  }
+  return [...prose.matchAll(/∝/g)].map((match) => ({ index: match.index, written: String(text).slice(Math.max(0, match.index - 12), match.index + 12).replace(/\s+/g, ' ').trim() }));
+}
+
+/**
+ * i. A four-digit number in the 1000–2099 band set in math directly before
+ * a spacing command and a unit — `1000\ \text{mL}`, `1250\ \cancel{\text{km}}`,
+ * `-1407\ \text{kJ}` — ungrouped (chapter 9 readings, November 17, 2026).
+ * The house grouping lint lets that band through as possible years; a year
+ * is never followed by a unit, so this one is refused: `1{,}000\ \text{mL}`.
+ * Display and inline math alike, item text included. Not a hit: a grouped
+ * number, a number with more digits or a decimal part, a year with no unit
+ * after it, and an `answer=` key (no math).
+ */
+export function ungroupedNumberBeforeUnit(text) {
+  const hits = [];
+  for (const span of texSpans(text)) {
+    for (const match of span.tex.matchAll(/(?<![\d.,}])(1\d{3}|20\d{2})(?![\d.,{])\s*(?:\\[ ,;:!]|~|\\quad\b|\\enspace\b)\s*(?:\\(?:text|mathrm|cancel|mu)\b|[A-Za-z°])/g)) {
+      hits.push({ index: span.at + match.index, written: span.tex.slice(match.index, match.index + match[0].length + 8), value: match[1], grouped: `${match[1][0]}{,}${match[1].slice(1)}` });
+    }
+  }
+  return hits;
+}
+
+/**
+ * j. A bare `\\` between two rows of an `aligned` display that each hold a
+ * fraction (playbook "Notation", chapter 3): one row's denominator sits on
+ * the next row's numerator and the column reads as one tall fraction. The
+ * rows are separated by `\\[6pt]`. Not a hit: a bare `\\` beside a row with
+ * no fraction, and a `\\[…]` with any spacing.
+ */
+export function crowdedFractionRows(text) {
+  const hits = [];
+  for (const span of texSpans(text)) {
+    for (const env of span.tex.matchAll(/\\begin\{aligned\}([\s\S]*?)\\end\{aligned\}/g)) {
+      const start = span.at + env.index + '\\begin{aligned}'.length;
+      const parts = env[1].split(/(\\\\(?:\s*\[[^\]]*\])?)/);
+      let offset = parts[0].length;
+      for (let i = 1; i < parts.length - 1; i += 2) {
+        if (parts[i] === '\\\\' && /\\[dt]?frac\b/.test(parts[i - 1]) && /\\[dt]?frac\b/.test(parts[i + 1])) {
+          hits.push({ index: start + offset, written: `${parts[i - 1].trim().slice(-30)} \\\\ ${parts[i + 1].trim().slice(0, 30)}` });
+        }
+        offset += parts[i].length + parts[i + 1].length;
+      }
+    }
   }
   return hits;
 }

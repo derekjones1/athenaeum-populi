@@ -1680,3 +1680,68 @@ test('a selfcheck whose model answer is the source\'s derivation set as display 
   assert.equal(judge(MATH), 'verbatim', 'the layout words (begin, array, hline, text, circ) are no words of the answer');
   assert.equal(judge(`${MATH}\n\nThe formation reaction is reversed and added to the formation reactions of the atoms; the sum breaks the bond, so its enthalpy change is the bond energy of HCl.`), 'diverges', 'a sentence the source does not print still diverges');
 });
+
+/*
+ * 9.2's "Volume of a Gas Sample": a Check Your Learning lettered by paragraph,
+ * (a)–(c), then a paragraph of its own that asks about all three, and an
+ * Answer note that is one sentence; the chapter's unkeyed exercise 9 asks
+ * the same syringe "using: (a) the appropriate graph (b) Boyle's law". The
+ * CNXML is the pinned module's (m68751), its links and math as printed.
+ */
+const SYRINGE_CHECK = '<example id="fs-idp10418864"><para><title>Volume of a Gas Sample</title>Problem.</para><para><title>Solution</title>Worked.</para>'
+  + '<para id="fs-idm111326864"><title>Check Your Learning</title>The sample of gas in <link target-id="CNX_Chem_09_03_BoylesLaw1"/> has a volume of 30.0 mL at a pressure of 6.5 psi. Determine the volume of the gas at a pressure of 11.0 psi, using:</para>'
+  + '<para id="fs-idm161358576">(a) the <emphasis effect="italics">P</emphasis>-<emphasis effect="italics">V</emphasis> graph in <link target-id="CNX_Chem_09_03_BoylesLaw1"/></para>'
+  + '<para id="fs-idm130543696">(b) the <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>P</m:mi></m:mfrac></m:mrow></m:math> vs. <emphasis effect="italics">V</emphasis> graph in <link target-id="CNX_Chem_09_03_BoylesLaw1"/></para>'
+  + '<para id="fs-idm208892896">(c) the Boyle’s law equation</para>'
+  + '<para id="fs-idm265464784">Comment on the likely accuracy of each method.</para>'
+  + '<note id="fs-idp7933296"><title>Answer:</title><para id="fs-idm53855168">(a) about 17–18 mL; (b) ~18 mL; (c) 17.7 mL; it was more difficult to estimate well from the <emphasis effect="italics">P</emphasis>-<emphasis effect="italics">V</emphasis> graph, so (a) is likely more inaccurate than (b); the calculation will be as accurate as the equation and measurements allow</para></note></example>';
+const SYRINGE_EXERCISE = '<exercise id="fs-idm179450656"><problem id="fs-idm235612144">'
+  + '<para id="fs-idm118272896">Determine the pressure of the gas in the syringe shown in <link target-id="CNX_Chem_09_03_BoylesLaw1"/> when its volume is 12.5 mL, using:</para>'
+  + '<para id="fs-idm163780992">(a) the appropriate graph</para><para id="fs-idm234849104">(b) Boyle’s law</para></problem></exercise>';
+const SYRINGE = cnxml(SYRINGE_CHECK + exercises(SYRINGE_EXERCISE));
+const SYRINGE_LEAD = 'The sample of gas in the figure of the syringe and its two graphs above has a volume of 30.0 mL at a pressure of 6.5 psi. Determine the volume of the gas at a pressure of 11.0 psi, using:';
+const BOYLE_ITEM = `${SYRINGE_LEAD} the Boyle’s law equation. Enter the volume in milliliters.`;
+
+test('a paragraph after the last lettered one closes the stem: it is no words of the last part (9.2)', async () => {
+  const { markedParagraphs } = await import('./keyed-units.mjs');
+  const syringe = keyedUnits(SYRINGE);
+  const part = (id) => syringe.find((candidate) => candidate.id === id);
+  assert.equal(part('fs-idp10418864#check(c)').partText, 'the Boyle’s law equation');
+  assert.match(part('fs-idp10418864#check(c)').stem, /the Boyle’s law equation Comment on the likely accuracy of each method\.$/, 'the stem still runs on as the source prints it');
+  assert.equal(part('fs-idp10418864#check(c)').answer, '17.7 mL; it was more difficult to estimate well from the P - V graph, so (a) is likely more inaccurate than (b); the calculation will be as accurate as the equation and measurements allow');
+  assert.equal(part('fs-idm179450656(b)').partText, 'Boyle’s law', 'a stem that ends on its last lettered paragraph has no closing');
+  // A stem lettered inside one paragraph is not split by paragraph.
+  const inline = parseXml(cnxml('<para>(a) Add 2.334 mL and 0.31 mL. (b) Subtract 55.8752 m from 56.533 m.</para><para>Explain.</para>'));
+  assert.doesNotMatch(markedParagraphs(inline.children[0].children[0].children.filter((child) => typeof child !== 'string')), /⟦closing⟧/);
+  assert.equal(sequentialParts('Lead: (a) one (b) two ⟦closing⟧ Explain (c) nothing.').parts.length, 2, 'no label is looked for in a closing');
+  assert.equal(sequentialParts('Lead: (a) one (b) two ⟦closing⟧ Explain.').closing, 'Explain.');
+});
+
+test('the item that asks a Check Your Learning\'s part (c) is that part, not the unkeyed exercise that shares "Boyle’s law" (9.2)', () => {
+  const syringe = keyedUnits(SYRINGE);
+  assert.equal(unitFor(BOYLE_ITEM, syringe, { type: 'fillin' }).id, 'fs-idp10418864#check(c)');
+  assert.equal(unitFor(BOYLE_ITEM.replace('the figure of the syringe and its two graphs above', 'the figure above'), syringe, { type: 'fillin' }).id, 'fs-idp10418864#check(c)');
+  // The exercise's own part still reads as itself.
+  assert.equal(unitFor('Determine the pressure of the gas in the syringe shown in the figure above when its volume is 12.5 mL, using: Boyle’s law. Enter the pressure in psi.', syringe, { type: 'fillin' }).id, 'fs-idm179450656(b)');
+});
+
+test('the fill-in for part (c) is held to "(c) 17.7 mL", not to the "~18 mL" of part (b) (9.2)', () => {
+  const syringe = keyedUnits(SYRINGE);
+  const judge = (answer, form) => judgeKeyedUnit({ type: 'fillin', question: BOYLE_ITEM, answer, form }, syringe);
+  assert.equal(judge('17.7', 'sig-figs:3 last-digit:1').status, 'confirmed');
+  const corrected = judge('18', 'sig-figs:2 last-digit:0');
+  assert.equal(corrected.status, 'key-differs', 'a key the source does not print for (c) needs its deviation entry');
+  assert.equal(corrected.exercise.id, 'fs-idp10418864#check(c)', 'the entry it needs is the one filed: fs-idp10418864#check(c)');
+});
+
+test('coverage reads the page\'s three items and its comment as the Check Your Learning, never as unkeyed exercise 9 (9.2)', () => {
+  const graph = (which) => `{{< selfcheck question="${SYRINGE_LEAD} ${which} in the figure of the syringe and its two graphs above." hint="h" >}}\nmodel\n{{< /selfcheck >}}\n`;
+  const page = `${graph('the $P$-$V$ graph')}\n${graph('the $\\frac{1}{P}$ vs. $V$ graph')}\n`
+    + `{{< fillin question="${BOYLE_ITEM}" answer="18" answerForm="sig-figs:2 last-digit:0" hint="h" >}}\n\n`
+    + `{{< selfcheck question="${SYRINGE_LEAD.replace(/:$/, '')} the $P$-$V$ graph, the $\\frac{1}{P}$ vs. $V$ graph, and the Boyle’s law equation. Comment on the likely accuracy of each method." hint="h" >}}\nmodel\n{{< /selfcheck >}}\n`;
+  const verdicts = coverage(page, sourceExercises(SYRINGE), { keyedOnly: true });
+  const status = (id) => verdicts.find((verdict) => verdict.id === id)?.status;
+  assert.equal(status('fs-idp10418864#check(c)'), 'rendered');
+  assert.notEqual(status('fs-idm179450656(b)'), 'unkeyed-rendered');
+  assert.notEqual(status('fs-idm179450656(a)'), 'unkeyed-rendered');
+});

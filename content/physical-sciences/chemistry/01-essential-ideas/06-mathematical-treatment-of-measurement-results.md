@@ -74,7 +74,7 @@ $$\frac{1\ \text{oz}}{28.349\ \text{g}}\ \text{and}\ \frac{28.349\ \text{g}}{1\ 
 
 The correct unit conversion factor is the ratio that cancels the units of grams and leaves ounces.
 
-$$\begin{aligned} x\ \text{oz} &= 125\ \cancel{\text{g}} \times \frac{1\ \text{oz}}{28.349\ \cancel{\text{g}}} \\ &= \left(\frac{125}{28.349}\right)\ \text{oz} \\ &= 4.41\ \text{oz (three significant figures)} \end{aligned}$$
+$$\begin{aligned} x\ \text{oz} &= 125\ \cancel{\text{g}} \times \frac{1\ \text{oz}}{28.349\ \cancel{\text{g}}} \\[6pt] &= \left(\frac{125}{28.349}\right)\ \text{oz} \\ &= 4.41\ \text{oz (three significant figures)} \end{aligned}$$
 
 {{< fillin
   question="Convert a volume of 9.345 qt to liters."
@@ -102,7 +102,7 @@ Volume may be converted from quarts to milliliters via two steps:
 
 2. *Convert liters to milliliters.*
 
-   $$3.79\ \cancel{\text{L}} \times \frac{1000\ \text{mL}}{1\ \cancel{\text{L}}} = 3.79 \times 10^{3}\ \text{mL}$$
+   $$3.79\ \cancel{\text{L}} \times \frac{1{,}000\ \text{mL}}{1\ \cancel{\text{L}}} = 3.79 \times 10^{3}\ \text{mL}$$
 
 Then,
 
@@ -112,7 +112,7 @@ $$\text{density} = \frac{4.20 \times 10^{3}\ \text{g}}{3.79 \times 10^{3}\ \text
 
 Alternatively, the calculation could be set up in a way that uses three unit conversion factors sequentially as follows:
 
-$$\frac{9.26\ \cancel{\text{lb}}}{4.00\ \cancel{\text{qt}}} \times \frac{453.59\ \text{g}}{1\ \cancel{\text{lb}}} \times \frac{1.0567\ \cancel{\text{qt}}}{1\ \cancel{\text{L}}} \times \frac{1\ \cancel{\text{L}}}{1000\ \text{mL}} = 1.11\ \text{g/mL}$$
+$$\frac{9.26\ \cancel{\text{lb}}}{4.00\ \cancel{\text{qt}}} \times \frac{453.59\ \text{g}}{1\ \cancel{\text{lb}}} \times \frac{1.0567\ \cancel{\text{qt}}}{1\ \cancel{\text{L}}} \times \frac{1\ \cancel{\text{L}}}{1{,}000\ \text{mL}} = 1.11\ \text{g/mL}$$
 
 {{< fillin
   question="What is the volume in liters of 1.000 oz, given that 1 L = 1.0567 qt and 1 qt = 32 oz (exactly)?"
@@ -130,7 +130,7 @@ $$\frac{9.26\ \cancel{\text{lb}}}{4.00\ \cancel{\text{qt}}} \times \frac{453.59\
 
 **Solution.** (a) First convert distance from kilometers to miles:
 
-$$1250\ \cancel{\text{km}} \times \frac{0.62137\ \text{mi}}{1\ \cancel{\text{km}}} = 777\ \text{mi}$$
+$$1{,}250\ \cancel{\text{km}} \times \frac{0.62137\ \text{mi}}{1\ \cancel{\text{km}}} = 777\ \text{mi}$$
 
 and then convert volume from liters to gallons:
 
@@ -142,7 +142,7 @@ $$\text{(average) mileage} = \frac{777\ \text{mi}}{56.3\ \text{gal}} = 13.8\ \te
 
 Alternatively, the calculation could be set up in a way that uses all the conversion factors sequentially, as follows:
 
-$$\frac{1250\ \cancel{\text{km}}}{213\ \cancel{\text{L}}} \times \frac{0.62137\ \text{mi}}{1\ \cancel{\text{km}}} \times \frac{1\ \cancel{\text{L}}}{1.0567\ \cancel{\text{qt}}} \times \frac{4\ \cancel{\text{qt}}}{1\ \text{gal}} = 13.8\ \text{mpg}$$
+$$\frac{1{,}250\ \cancel{\text{km}}}{213\ \cancel{\text{L}}} \times \frac{0.62137\ \text{mi}}{1\ \cancel{\text{km}}} \times \frac{1\ \cancel{\text{L}}}{1.0567\ \cancel{\text{qt}}} \times \frac{4\ \cancel{\text{qt}}}{1\ \text{gal}} = 13.8\ \text{mpg}$$
 
 (b) Using the previously calculated volume in gallons, we find:
 
@@ -246,7 +246,7 @@ $${}^\circ\text{F} = \frac{9}{5}\,{}^\circ\text{C} + 32.0 = \left(\frac{9}{5} \t
 
 $$\begin{aligned} {}^\circ\text{C} &= \frac{5}{9}({}^\circ\text{F} - 32) = \frac{5}{9}(450 - 32) = \frac{5}{9} \times 418 = 232\ {}^\circ\text{C} \\ &\longrightarrow \text{set oven to } 230\ {}^\circ\text{C} \qquad \text{(two significant figures)} \end{aligned}$$
 
-$$\begin{aligned} \text{K} &= {}^\circ\text{C} + 273.15 = \frac{5}{9}({}^\circ\text{F} - 32) + 273.15 \\ &= \frac{5}{9}(450 - 32) + 273.15 = 505.4\ \text{K} \\ &\longrightarrow 5.1 \times 10^{2}\ \text{K} \end{aligned}$$
+$$\begin{aligned} \text{K} &= {}^\circ\text{C} + 273.15 = \frac{5}{9}({}^\circ\text{F} - 32) + 273.15 \\[6pt] &= \frac{5}{9}(450 - 32) + 273.15 = 505.4\ \text{K} \\ &\longrightarrow 5.1 \times 10^{2}\ \text{K} \end{aligned}$$
 
 {{< fillin
   question="Convert 50 °F to °C and K. (two significant figures) Enter the temperature in degrees Celsius."

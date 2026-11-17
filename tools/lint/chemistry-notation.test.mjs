@@ -5,7 +5,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  straightApostrophes, bareGreekMath, bareSigmaPi, britishSpellingAndStraightApostrophes, italicOrbitalLetters, minusAsBond, overlappingRubricClauses, plainAnswerDisplays,
+  straightApostrophes, bareGreekMath, bareProportionality, bareSigmaPi, crowdedFractionRows, ungroupedNumberBeforeUnit, britishSpellingAndStraightApostrophes, italicOrbitalLetters, minusAsBond, overlappingRubricClauses, plainAnswerDisplays,
 } from './chemistry-notation.mjs';
 import { lintLeaks } from './lints-leaks.mjs';
 
@@ -104,12 +104,36 @@ test('g. a bare σ or π naming a bond or orbital in prose is written with its n
   assert.deepEqual(letters('<small>Changes: σ and π set as math in the stems; σ and π written with their names, as sigma (σ) and pi (π), in running text.</small>\n'), [], 'the letters named as letters in a footer');
 });
 
+test('h. a bare ∝ outside math is refused; $\\propto$, an alt, and code are not read (November 17, 2026)', () => {
+  assert.equal(bareProportionality('Boyle’s law: V ∝ 1/P at constant T.\n').length, 1, 'body');
+  assert.equal(bareProportionality('{{< fillin\n  question="If V ∝ T, what is V?"\n  answer="2"\n  hint="h"\n>}}\n').length, 1, 'item text');
+  assert.equal(bareProportionality('<small>Changes: V ∝ T set as math.</small>\n').length, 1, 'footer');
+  assert.deepEqual(bareProportionality('Boyle’s law: $V \\propto \\frac{1}{P}$, and $V ∝ T$ in math.\n'), []);
+  assert.deepEqual(bareProportionality('{{< mediafigure src="chemistry/x" alt="A graph of V ∝ T." >}}\n`V ∝ T` in code.\n---\n'), [], 'an alt and code');
+});
+
+test('i. a 1000–2099 number before a unit in math is grouped; a year, a grouped number, and an answer key are not hits (November 17, 2026)', () => {
+  const values = (text) => ungroupedNumberBeforeUnit(text).map((hit) => hit.grouped);
+  assert.deepEqual(values('$$\\frac{1000\\ \\text{mL}}{1\\ \\cancel{\\text{L}}} \\times 1250\\ \\cancel{\\text{km}}$$\n'), ['1{,}000', '1{,}250'], 'display, \\text and \\cancel');
+  assert.deepEqual(values('{{< fillin\n  question="Q?"\n  answer="-1407"\n  answerDisplay="$-1407\\ \\text{kJ}$"\n  hint="h"\n>}}\n'), ['1{,}407'], 'an answerDisplay, signed');
+  assert.deepEqual(values('In 1808, Dalton wrote; in $1808$ and $2012-2009$ too.\n'), [], 'years, in prose and in math');
+  assert.deepEqual(values('$1{,}000\\ \\text{mL}$, $1000.0\\ \\text{g}$, $10000$, $12{,}000\\ \\text{m}$.\n'), [], 'grouped, decimal, five digits');
+  assert.deepEqual(values('{{< fillin\n  question="How many mL?"\n  answer="1000"\n  hint="h"\n>}}\n'), [], 'an answer= key is no math');
+});
+
+test('j. a bare \\\\ between aligned rows that each hold a fraction; \\\\[6pt] and a row with no fraction are sound (chapter 3 rule, lint November 17, 2026)', () => {
+  assert.equal(crowdedFractionRows('$$\\begin{aligned} x &= \\frac{1}{2} \\\\ &= \\frac{2}{4} \\end{aligned}$$\n').length, 1);
+  assert.deepEqual(crowdedFractionRows('$$\\begin{aligned} x &= \\frac{1}{2} \\\\[6pt] &= \\frac{2}{4} \\end{aligned}$$\n'), []);
+  assert.deepEqual(crowdedFractionRows('$$\\begin{aligned} x &= \\frac{1}{2} \\\\ &= 0.5 \\\\ &= \\frac{2}{4} \\end{aligned}$$\n'), [], 'no two neighbouring rows both hold a fraction');
+  assert.deepEqual(crowdedFractionRows('$$\\begin{aligned} x &= 1 + 2 \\\\ &= 3 \\end{aligned}$$\n'), [], 'rows without fractions');
+});
+
 test('the lints are errors in the Chemistry book only', () => {
-  const page = '{{< selfcheck question="Q?" hint="h" >}}\nLesser; the calculated q would be lesser.\n===CHECKS===\nq would be lesser\nthe calculated q would be lesser\n{{< /selfcheck >}}\n\nBody: Hund\'s rule; the 4*s* electron; the $\\sigma$ bond; a π bond; H−C≡C−H; a labelled drawing.\n\n{{< fillin\n  question="How many?"\n  answer="4"\n  answerForm="whole-number"\n  answerDisplay="4"\n  hint="Count them."\n>}}\n';
+  const page = '{{< selfcheck question="Q?" hint="h" >}}\nLesser; the calculated q would be lesser.\n===CHECKS===\nq would be lesser\nthe calculated q would be lesser\n{{< /selfcheck >}}\n\nBody: Hund\'s rule; the 4*s* electron; the $\\sigma$ bond; a π bond; H−C≡C−H; a labelled drawing; V ∝ T; $1000\\ \\text{mL}$.\n\n$$\\begin{aligned} a &= \\frac{1}{2} \\\\ &= \\frac{2}{4} \\end{aligned}$$\n\n{{< fillin\n  question="How many?"\n  answer="4"\n  answerForm="whole-number"\n  answerDisplay="4"\n  hint="Count them."\n>}}\n';
   const errors = lintLeaks(page, CHEM).errors;
-  for (const pattern of [/a straight ' in a word/, /is wholly inside the clause/, /sets an orbital letter italic/, /bare σ set as math/, /a bare π names a bond or orbital/, /draws a bond with the minus sign/, /American spelling/, /answerDisplay="4" has no math/]) {
+  for (const pattern of [/a straight ' in a word/, /is wholly inside the clause/, /sets an orbital letter italic/, /bare σ set as math/, /a bare π names a bond or orbital/, /draws a bond with the minus sign/, /American spelling/, /answerDisplay="4" has no math/, /a bare ∝ outside math/, /1000 stands before a unit/, /each hold a fraction/]) {
     assert.ok(errors.some((error) => pattern.test(error)), String(pattern));
   }
   const elsewhere = lintLeaks(page, 'content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md').errors;
-  assert.ok(!elsewhere.some((error) => /orbital letter italic|bare σ|bare π|minus sign U\+2212|American spelling|has no math/.test(error)));
+  assert.ok(!elsewhere.some((error) => /orbital letter italic|bare σ|bare π|minus sign U\+2212|American spelling|has no math|bare ∝|stands before a unit|each hold a fraction/.test(error)));
 });

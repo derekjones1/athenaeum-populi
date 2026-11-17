@@ -2471,19 +2471,35 @@ export function lintHugo(src, filename = '', options = {}) {
     const lead = colon === -1 ? '' : text.slice(0, colon).split(/\s+/).filter(Boolean).join(' ');
     return lead.split(' ').length >= 4 ? lead : '';
   };
+  // One source question that asks for several quantities and has no lettered
+  // parts ("What is this pressure in atmospheres, in millimeters of mercury,
+  // in kilopascals, and in bar?", Chemistry 2e Section 9.1) is one fill-in
+  // per quantity, each repeating the source's stem whole and closing with the
+  // sentence that names the one it asks for. Those are parts too: the same
+  // stem, word for word, up to the closing sentence (November 16, 2026).
+  const sharedStemOf = (question) => {
+    const text = String(question ?? '').split(/\s+/).filter(Boolean).join(' ');
+    const cut = Math.max(text.lastIndexOf('. ', text.length - 2), text.lastIndexOf('? ', text.length - 2));
+    const stem = cut === -1 ? '' : text.slice(0, cut + 1);
+    return stem.split(' ').length >= 8 ? stem : '';
+  };
   let previousQuestionEnd = -1;
   let previousLeadIn = '';
+  let previousSharedStem = '';
   let consecutiveQuestions = 0;
   for (const { index, end, params } of practiceQuestions) {
     const adjacent = previousQuestionEnd >= 0 && src.slice(previousQuestionEnd, index).trim() === '';
     const leadIn = leadInOf(params?.question);
-    const samePart = adjacent && leadIn !== '' && leadIn === previousLeadIn;
+    const sharedStem = sharedStemOf(params?.question);
+    const samePart = adjacent && ((leadIn !== '' && leadIn === previousLeadIn)
+      || (sharedStem !== '' && sharedStem === previousSharedStem));
     if (!samePart) consecutiveQuestions = adjacent ? consecutiveQuestions + 1 : 1;
     if (!isKnowledgeCheck && !samePart && consecutiveQuestions === 4 && !inPracticeBlock(index)) {
       err(index, 'more than three consecutive interactive questions — keep each practice set to 2–3 questions');
     }
     previousQuestionEnd = end;
     previousLeadIn = leadIn;
+    previousSharedStem = sharedStem;
   }
 
   // ---- fillin shortcode rules ----------------------------------------------

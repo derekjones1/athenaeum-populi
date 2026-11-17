@@ -240,7 +240,15 @@ export function printedAbbreviations(xml) {
  * image's file stem between marks no source text contains.
  */
 const MEDIA_MARK = /\s*⟦media:([^⟧]*)⟧\s*/g;
-const withoutMarks = (text) => text.replace(MEDIA_MARK, ' ').replace(/\s+/g, ' ').trim();
+/**
+ * Where a marked stem's CLOSING begins: the paragraphs after its last
+ * lettered paragraph that carry no label of their own — "(c) the Boyle’s law
+ * equation" then "Comment on the likely accuracy of each method." (9.2's
+ * Check Your Learning). The closing asks something of every part, or of the
+ * parts together; it is no words of the last part (`markedParagraphs`).
+ */
+const CLOSING_MARK = '⟦closing⟧';
+const withoutMarks = (text) => text.replace(MEDIA_MARK, ' ').split(CLOSING_MARK).join(' ').replace(/\s+/g, ' ').trim();
 const marksIn = (text) => [...text.matchAll(MEDIA_MARK)].map((match) => match[1]);
 
 /**
@@ -259,7 +267,11 @@ const marksIn = (text) => [...text.matchAll(MEDIA_MARK)].map((match) => match[1]
  * a part with an empty text and one image — and the last of them, which has
  * nothing but its image after the label, is still found.
  */
-export function sequentialParts(stem, { answer = false } = {}) {
+export function sequentialParts(whole, { answer = false } = {}) {
+  // A closing marked after the last lettered paragraph (`CLOSING_MARK`) is
+  // read apart: no label is looked for in it, and it is no part's text.
+  const [stem, ...closed] = String(whole ?? '').split(CLOSING_MARK);
+  const closing = closed.length ? withoutMarks(closed.join(' ')) : '';
   const marks = [];
   let from = 0;
   // A solution is typed more loosely than a stem: a label may follow a
@@ -287,8 +299,28 @@ export function sequentialParts(stem, { answer = false } = {}) {
   // (Labels with nothing between them and no "and" or comma are parts whose
   // answers are images — "(a) (b) (c)" — and stay parts.)
   if (answer && /,|\band\b/.test(stem) && parts.every((part) => !part.media.length && !part.text.replace(/\band\b|[.,;]/g, '').trim())) return null;
-  return { lead: withoutMarks(stem.slice(0, marks[0].start)), parts };
+  return { lead: withoutMarks(stem.slice(0, marks[0].start)), parts, ...(closing ? { closing } : {}) };
 }
+
+/**
+ * Paragraphs (and display equations) as one marked stem, a `CLOSING_MARK`
+ * before the paragraphs that follow the last LETTERED one — a paragraph that
+ * opens "(a) ", "(b) ", … — when at least two are lettered and something
+ * follows the last. Without lettered paragraphs, the stem as
+ * `markedStemText` reads it.
+ */
+export function markedParagraphs(nodes) {
+  const texts = nodes.map((node) => markedStemText(node));
+  const lettered = texts.map((text, index) => (/^\([a-z]\)\s/.test(text) ? index : -1)).filter((index) => index !== -1);
+  const last = lettered.at(-1);
+  if (lettered.length < 2 || last === texts.length - 1 || !texts.slice(last + 1).some((text) => withoutMarks(text))) {
+    return normalizeWhitespace(texts.join(' '));
+  }
+  return normalizeWhitespace(`${texts.slice(0, last + 1).join(' ')} ${CLOSING_MARK} ${texts.slice(last + 1).join(' ')}`);
+}
+
+/** A problem's stem marked as `markedParagraphs` marks it: its child elements, each read whole. */
+const markedProblem = (problem) => markedParagraphs((problem.children || []).filter((child) => typeof child !== 'string'));
 
 /**
  * A nuclide's prescripts: MathML `msubsup` on an EMPTY base, the atomic
@@ -486,6 +518,9 @@ export function checkYourLearning(document) {
       const read = (options) => normalizeWhitespace(paragraphs.map((para) => stemText(para, options)).join(' ')).replace(/^check your learning\s*/i, '');
       const stem = read();
       if (!stem) return;
+      // Marked by paragraph, so a closing after the last lettered paragraph
+      // is told from that part (`markedParagraphs`).
+      const marked = markedParagraphs(paragraphs).replace(/^check your learning\s*/i, '');
       // The example whose Check Your Learning this one leans on ("the sweetened
       // tea described in [Example 3.14]", 3.3): the page restates that one's
       // given data (`unitFor`; the gate probe builds the item so).
@@ -494,7 +529,7 @@ export function checkYourLearning(document) {
           && descendants(document, (node) => localName(node) === 'example' && node.attributes.id === target).length);
       found.push({
         ...(leans ? { leansOn: `${leans}#check` } : {}),
-        id: `${example.attributes.id || ''}#check${ordinal ? ordinal + 1 : ''}`, cls: 'check-your-learning', stem, marked: read({ marked: true }),
+        id: `${example.attributes.id || ''}#check${ordinal ? ordinal + 1 : ''}`, cls: 'check-your-learning', stem, marked,
         keyed: answerAt !== -1, answer: answerAt === -1 ? '' : answerText(children[answerAt]),
         answerMarked: answerAt === -1 ? '' : markedStemText(children[answerAt]),
       });
@@ -711,7 +746,7 @@ export function referencedExercise(exercise, document) {
 
 export function splittingStem(exercise, document) {
   const problem = firstElement(exercise, 'problem');
-  const own = markedStemText(problem);
+  const own = markedProblem(problem);
   const solution = firstElement(exercise, 'solution');
   if (sequentialParts(own) || !solution || !sequentialParts(answerText(solution), { answer: true })) return own;
   const referenced = referencedExercise(exercise, document);
@@ -761,6 +796,10 @@ export function keyedUnits(xml) {
   return splitUnits(whole);
 }
 
+/** A lettered part's whole stem: the lead-in, the part, and — for the last part — the closing after it (`markedParagraphs`). */
+export const closingStem = (lettered, part) => [lettered.lead, part.text, part === lettered.parts.at(-1) ? lettered.closing : '']
+  .filter(Boolean).join(' ').trim();
+
 /** Whole exercises as units: one each, or one per lettered part (`keyedUnits`). */
 function splitUnits(whole) {
   const units = [];
@@ -794,7 +833,8 @@ function splitUnits(whole) {
         lead: lettered.lead,
         partText: part.text,
         media: part.media,
-        stem: `${lettered.lead} ${part.text}`.trim(),
+        // The closing stays in the last part's stem, as the source runs on.
+        stem: closingStem(lettered, part),
         // A lettered stem whose solution is not lettered answers every part
         // with the whole solution.
         answer: answers ? (segment ? segment.text.replace(/[;,]\s*$/, '') : '') : unit.answer,
