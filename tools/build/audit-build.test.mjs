@@ -121,6 +121,10 @@ test('build audit: content images, duplicated chrome, and missing no-JavaScript 
     assert.match(audit().stderr, /exercise text glues a word to inline math/, 'mathtext dropping the space before math must fail the build');
     prepare('<fill-in data-question="Evaluate $x$"><p class=ap-fillin-question>Evaluate <span class=katex>x</span></p></fill-in><p>$3$ R<span class=katex>4</span></p><text-in><p>3 R<span class=katex>4</span></p></text-in>');
     assert.doesNotMatch(audit().stderr, /exercise text glues/, 'remainder notation and body prose may abut math');
+    prepare('<self-check><p>the <span class=katex>P</span><ul><li></li></ul><span class=katex>V</span> graph</p></self-check>');
+    assert.match(audit().stderr, /exercise text holds an empty list/, 'a dash between two math runs rendered as a bullet must fail the build');
+    prepare('<self-check><p>the <span class=katex>P</span>-<span class=katex>V</span> graph</p></self-check><ul><li></li></ul>');
+    assert.doesNotMatch(audit().stderr, /exercise text holds an empty list/, 'the dash kept as text passes, and a list outside an exercise is not this check’s');
 
     // Punctuation after inline math sits in the formula's own no-wrap span
     // (layouts/_partials/glue-math.html); a layout that prints .Content bare

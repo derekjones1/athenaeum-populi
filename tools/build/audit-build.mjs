@@ -621,6 +621,15 @@ const EXERCISE_RE = /<(fill-in|multiple-choice|self-check|sort-bins|text-in)\b[\
 if ([...contentHtml.matchAll(EXERCISE_RE)].some(([block]) => /[A-Za-z]{2}<span class="?katex"?>/.test(block))) {
   problems.push('exercise text glues a word to inline math (mathtext dropped the space before a $...$ run)');
 }
+// A dash typed between two math runs of an exercise string ("$P$-$V$ graph",
+// "$x$ - $y$") reached markdownify as a prose piece of its own and came back
+// an empty bullet list, so the stem printed "the P", a bullet, "V graph"
+// (Chemistry 9.2 and Precalculus 8.6, November 17, 2026). The mathtext
+// partial now escapes a block marker at the start of such a piece; no
+// exercise holds an empty list for any other reason.
+if ([...contentHtml.matchAll(EXERCISE_RE)].some(([block]) => /<[uo]l>\s*<li>\s*(?:<\/li>)?\s*<\/[uo]l>/.test(block))) {
+  problems.push('exercise text holds an empty list (a dash or other block marker between two $...$ runs was rendered as Markdown; the mathtext partial must leave it as text)');
+}
 // Punctuation typed straight after an inline formula is set with it in one
 // `.ap-math-glue` span, or a browser may start the next line with the period
 // alone (layouts/_markup/render-passthrough.html). Body math is glued by

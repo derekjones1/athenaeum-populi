@@ -89,7 +89,19 @@
     {{- else -}}
       {{- $lead := replaceRE `^(\s*)[\s\S]*$` "$1" $p -}}
       {{- $trail := replaceRE `^[\s\S]*?(\s*)$` "$1" $p -}}
-      {{- $rendered := printf "%s" ($p | markdownify) -}}
+      {{- /* A prose piece that follows a math run is the middle of a sentence,
+           never the start of a block: "$P$-$V$ graph" leaves the piece "-",
+           and "$x$ - $y$" the piece " - ", which goldmark read as an empty
+           bullet-list item (Chemistry 9.2's "P-V graph" stems and Precalculus
+           8.6's "x-y" stems rendered "the P", a bullet, "V graph" — found by
+           the rendered-page reading, November 17, 2026). A leading list,
+           heading, or quote marker there is escaped so it stays text. */ -}}
+      {{- $md := $p -}}
+      {{- if gt $i 0 -}}
+        {{- $md = replaceRE `^(\s*)([-+*>#])(\s|$)` `${1}\${2}${3}` $md -}}
+        {{- $md = replaceRE `^(\s*\d+)([.)])(\s|$)` `${1}\${2}${3}` $md -}}
+      {{- end -}}
+      {{- $rendered := printf "%s" ($md | markdownify) -}}
       {{- $sb = $sb | append (printf "%s%s%s" $lead (replace $rendered $NUL "$") $trail) -}}
     {{- end -}}
   {{- end -}}
