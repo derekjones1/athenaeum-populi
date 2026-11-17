@@ -26,7 +26,7 @@ import { fileURLToPath } from 'node:url';
 import { answerUnits, keyedUnits, listMembers, printedAbbreviations, twoUnitAnswer } from '../lib/keyed-units.mjs';
 import { ELEMENT_BY_NAME, answerEquations, judgeKeyedUnit, labelledConfigurations, labelledFormulas, letteredSets } from '../verify/verify-source-keys.mjs';
 import { chemCanon } from '../../assets/js/lib/text/check-chem.mjs';
-import { CONFIGURATION_CLOSING, ORDERING_CLOSING, QUANTUM_CLOSING } from '../lint/lints-leaks.mjs';
+import { CONFIGURATION_CLOSING, FORMAL_CHARGE_CLOSING, ORDERING_CLOSING, OXIDATION_STATE_CLOSING, QUANTUM_CLOSING } from '../lint/lints-leaks.mjs';
 import { coverage, sourceExercises } from '../verify/verify-source-coverage.mjs';
 import { chapters, shapeOf } from './chemistry-shapes.mjs';
 
@@ -220,6 +220,17 @@ function severalItems(answer, unclosed) {
       return own ? { closing: `Enter the equation for the reaction of ${own[0]}.`, entry } : null;
     });
     if (items.every(Boolean)) return items.map(({ closing, entry }) => ({ ...base, question: `${base.question} ${closing}`, type: 'textin', answer: entry.printed, form: 'equation' }));
+  }
+  // Oxidation states AND formal charges, each list after its heading
+  // ("Oxidation states P +1, … O –2. Formal charges: P 0; S 0; Cl +2: O –1",
+  // 8.2): one fill-in per entry, each closing with its own list's sentence.
+  const headed = /\boxidation states?\b/i.exec(answer) && /\bformal charges?\b/i.exec(answer);
+  if (headed) {
+    const at = answer.search(/\bformal charges?\b/i);
+    const lists = [[answer.slice(0, at), OXIDATION_STATE_CLOSING], [answer.slice(at), FORMAL_CHARGE_CLOSING]];
+    return lists.flatMap(([text, closing]) => [...text.replace(/^\s*(?:oxidation states?|formal charges?)\s*:?/i, ' ')
+      .matchAll(/(?:^|[\s,;:])([A-Z][a-z]?)\s*:?\s*([+−–-]?\s?\d+)(?=\s*(?:[,;:.]|$))/g)]
+      .map((match) => ({ ...base, question: `${base.question} ${closing.replace('<Symbol>', match[1]).replace(/as \+\d+ or −\d+\.$/, 'as +3 or −3.')}`, type: 'fillin', answer: match[2].replace(/[−–]/g, '-').replace(/[+\s]/g, ''), form: 'whole-number' })));
   }
   const states = [...answer.matchAll(/(?:^|[\s,;])([A-Z][a-z]?)\s*,?\s+([+−–-]\s?\d+)(?=\s*(?:[,;.]|$))/g)];
   if (new Set(states.map((match) => match[1])).size >= 2) {

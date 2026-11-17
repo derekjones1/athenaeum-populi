@@ -109,7 +109,7 @@ import { integerFlag, parseCliArgs } from '../lib/cli.mjs';
 import { shortcodes } from '../lib/content.mjs';
 import { mediaBindings } from '../lib/exercise-context.mjs';
 import { parseSortbinsConfig } from '../../assets/js/lib/text/check-sortbins.mjs';
-import { foldedForms } from '../../assets/js/lib/text/check-text.mjs';
+import { foldedForms, hybridLabel, isHybridKey } from '../../assets/js/lib/text/check-text.mjs';
 import { chemCanon } from '../../assets/js/lib/text/check-chem.mjs';
 import { readNumeral, withinPercent } from '../../assets/js/lib/math/significant-figures.mjs';
 import { loadElements } from '../lib/elements.mjs';
@@ -1315,6 +1315,20 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     erratum: 3145,
     reason: 'the source solution says magnesium\'s higher first ionization energy "mainly reflects the unpairing of the 2s electron"; the electron removed from magnesium is a 3s electron, and Section 6.5 of the book gives the reason for the order of such a pair — an s electron is harder to remove than a p electron of the same shell — and says that removing one electron of a pair removes the pair\'s repulsion, so the model answer gives the reason Section 6.5 gives',
   },
+  {
+    page: 'content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/02-hybrid-atomic-orbitals.md',
+    exercise: 'fs-idm32929264(d)',
+    kind: 'solution',
+    erratum: 3179,
+    reason: 'the source solution gives the oxidation states of P₄S₃ as "P +1, S −1⅓"; by the definition in Section 4.2 (the charge an atom would have if the compound were ionic), the electronegativities in Section 7.2\'s figure (S 2.5, P 2.1), and the structure the source\'s own answer draws, each sulfur atom is −2, the phosphorus atom bonded to three sulfur atoms is +3, and each of the other three phosphorus atoms is +1; the model answer gives those values and keeps the source\'s chlorate values and formal charges',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/04-molecular-orbital-theory.md',
+    exercise: 'fs-idm63124960',
+    kind: 'solution',
+    erratum: 3181,
+    reason: 'the source solution says "the pairing of the two bonding electrons lowers the energy of the system"; the question asks why one electron in the bonding orbital of H₂ is lower in energy than in a 1s atomic orbital, and the module\'s own text gives the reason — electrons in a σs orbital are attracted by both nuclei at the same time and are more stable than in the isolated atoms — so the model answer is that sentence, turned to the question\'s one electron',
+  },
 ]);
 
 /* ---- source side ---------------------------------------------------------- */
@@ -2278,6 +2292,9 @@ export function labelledFormulas(answer, form) {
 
 const withoutArticle = (value) => foldedPlain(value).replace(/^(?:an?|the) /, '');
 
+/** Every element symbol of `ELEMENT_BY_NAME`, for reading a symbol a closing sentence prints. */
+const ALL_SYMBOLS = { has: (symbol) => [...ELEMENT_BY_NAME.values()].includes(symbol) };
+
 /** Each element's English name and symbol, for a closing sentence that names an element ("Enter the equation for the reaction of magnesium."). */
 export const ELEMENT_BY_NAME = new Map(('hydrogen H helium He lithium Li beryllium Be boron B carbon C nitrogen N oxygen O fluorine F neon Ne '
   + 'sodium Na magnesium Mg aluminum Al silicon Si phosphorus P sulfur S chlorine Cl argon Ar potassium K calcium Ca '
@@ -2531,6 +2548,30 @@ const formulaChars = (value) => String(value ?? '').normalize('NFKC').replace(/[
  */
 function heldNumber(answer, question, key) {
   const closing = String(question).split(/(?<=[.?!][)”’"]?)\s+/).pop();
+  // An answer that gives oxidation states AND formal charges, each list
+  // after its own heading — "Oxidation states P +1, S −1⅓, Cl +5, O –2.
+  // Formal charges: P 0; S 0; Cl +2: O –1" (8.2): an item that closes
+  // "Enter the oxidation state of O …" is held to the number after O in the
+  // first list, and "Enter the formal charge of P …" to the second — O's
+  // formal charge −1 is no key of its oxidation state. A symbol its list
+  // does not give (S's mixed number) is refused.
+  const headed = [['oxidation state', /\boxidation (?:states?|numbers?)\b/i], ['formal charge', /\bformal charges?\b/i]]
+    .map(([what, pattern]) => ({ what, pattern, at: pattern.exec(String(answer))?.index ?? -1 }));
+  const askedHead = headed.filter((entry) => entry.pattern.test(closing));
+  if (headed.every((entry) => entry.at >= 0) && askedHead.length === 1) {
+    const from = askedHead[0].at;
+    const to = Math.min(...headed.map((entry) => entry.at).filter((at) => at > from), String(answer).length);
+    const list = [...String(answer).slice(from, to).replace(askedHead[0].pattern, ' ')
+      .matchAll(/(?:^|[\s,;:])([A-Z][a-z]?)\s*:?\s*([+−–-]?\s?\d+)(?=\s*(?:[,;:.]|$))/g)]
+      .map((match) => ({ symbol: match[1], numeral: printedNumerals(match[2].replace(/\s/g, ''))[0] })).filter((entry) => entry.numeral);
+    const symbol = [...new Set([...String(answer).matchAll(/(?<![A-Za-z])([A-Z][a-z]?)(?![a-z])/g)].map((match) => match[1]))]
+      .filter((candidate) => ALL_SYMBOLS.has(candidate) && new RegExp(`(?<![A-Za-z])${candidate}(?![A-Za-z])`).test(closing));
+    if (symbol.length === 1) {
+      const held = list.filter((entry) => entry.symbol === symbol[0]);
+      return held.some((entry) => sameNumeral(entry.numeral, key)) ? null
+        : { what: `the ${askedHead[0].what} of ${symbol[0]}`, numerals: held.map((entry) => entry.numeral) };
+    }
+  }
   // …or an answer that is nothing but such pairs, a zero unsigned and a
   // colon or none between: "H: 0, Cl: 0", "P: 0, Cl 0", "N: 0; all three Cl
   // atoms: 0" (7.4, formal charges) — "three" is no charge.
@@ -2834,6 +2875,75 @@ export function letteredSets(answer) {
   return sets.length === pieces.length && sets.every((entry) => entry.canon) ? sets : [];
 }
 
+/**
+ * The hybridization labels an answer prints, by clause, as `{ label, words }`
+ * — `label` in print order with digits ("sp3d"), `words` the clause's other
+ * words. A clause ends at a comma, a semicolon, a sentence, or "while" /
+ * "whereas" ("The terminal carbon atom uses sp³ hybrid orbitals, while the
+ * central carbon atom is sp hybridized.", 8.3).
+ */
+const HYBRID_IN_TEXT = /(?<![a-z0-9])sp(?: ([23]))?(?: (d)(?: (2))?)?(?![a-z0-9])/g;
+const HYBRID_VOCABULARY = new Set(['hybrid', 'hybrids', 'hybridized', 'hybridization', 'orbital', 'orbitals', 'enter', 'type', 'the', 'a', 'an', 'of', 'is', 'are', 'by', 'and', 'in', 'to', 'atom', 'atoms']);
+export function hybridClauses(answer) {
+  const clauses = [];
+  for (const raw of String(answer ?? '').split(/[;,]|\.\s+|\s+(?:while|whereas)\s+/)) {
+    const folded = foldedPlain(raw);
+    const labels = [...folded.matchAll(HYBRID_IN_TEXT)].map((match) => `sp${match[1] ?? ''}${match[2] ?? ''}${match[3] ?? ''}`);
+    const words = folded.replace(HYBRID_IN_TEXT, ' ').split(' ').filter((word) => word && !HYBRID_VOCABULARY.has(word));
+    for (const label of labels) clauses.push({ label, words });
+  }
+  return clauses;
+}
+
+/** A hybridization-label textin against its unit (judgeKeyedUnit). */
+const HYBRID_ASK = /\bhybrid/i;
+function judgeHybridization(item, unit, exercise, differs) {
+  const key = hybridLabel(item.answer);
+  // A label keyed under a closing that asks for a shape ("Enter the molecular
+  // geometry.") is the sibling's key, however whole the answer prints it.
+  const closing = askedClosing(item.question);
+  if (!HYBRID_ASK.test(closing) && /\b(?:geometry|shape|structure)\b/i.test(closing)) {
+    return { ...differs, detail: `textin keys the hybridization label ${JSON.stringify(item.answer)} where its closing sentence asks for a shape (${JSON.stringify(closing)})` };
+  }
+  const clauses = hybridClauses(unit.answer);
+  if (!clauses.some((clause) => clause.label === key)) {
+    return { ...differs, detail: `textin keys ${JSON.stringify(item.answer)}, a hybridization label source ${unit.id} does not print whole (it prints ${clauses.map((clause) => clause.label).join(', ') || 'none'}: ${JSON.stringify(unit.answer.slice(0, 120))})` };
+  }
+  const labels = [...new Set(clauses.map((clause) => clause.label))];
+  if (labels.length < 2) return { status: 'confirmed', exercise };
+  // Two or more labels: the one whose clauses alone hold a word the closing
+  // prints. A closing that names none (the acetic-acid carbons, told apart
+  // by an underline the answer cannot hold, 8.2) is the parent's to check.
+  const words = ` ${foldedPlain(closing)} `;
+  const own = (label) => clauses.filter((clause) => clause.label === label).flatMap((clause) => clause.words)
+    .filter((word) => !clauses.some((clause) => clause.label !== label && clause.words.includes(word)));
+  const asked = labels.filter((label) => own(label).some((word) => words.includes(` ${word} `)));
+  if (asked.length !== 1 || asked[0] === key) return { status: 'confirmed', exercise };
+  return { ...differs, detail: `textin keys ${JSON.stringify(item.answer)} for the atom its closing sentence names, whose hybridization source ${unit.id} prints as ${asked[0]} (${JSON.stringify(unit.answer.slice(0, 120))})` };
+}
+
+/** Segments of a word answer each opening with an atom's symbol ("P atoms, trigonal pyramidal; S atoms, bent, …", 8.2), as `{ symbol, said, printed }`; [] unless two or more atoms. */
+export function atomSegments(answer) {
+  const entries = String(answer ?? '').split(';').map((piece) => /^\s*([A-Z][a-z]?)\s+atoms?\s*,\s*(.+?)\s*\.?\s*$/.exec(piece)).filter(Boolean)
+    .map(([, symbol, value]) => ({ symbol, said: foldedPlain(value.replace(ANGLE_AFTER, '')), printed: value }));
+  return new Set(entries.map((entry) => entry.symbol)).size >= 2 ? entries : [];
+}
+
+/**
+ * The bond orders an answer prints, each after its species — "H _2 bond
+ * order = 1, H 2^{+} bond order = 0.5, …" (8.4's printed 41); "N _2 has a
+ * bond order of 3 and is diamagnetic." — as `{ printed, canon, numeral }`,
+ * `canon` the species as the formula grader reads it.
+ */
+export function bondOrders(answer) {
+  const SPECIES = '([A-Z][a-z]?(?:\\s*_?\\s*\\d+)?(?:\\s*\\^\\s*\\{[^}]*\\})?)';
+  return [...String(answer ?? '').matchAll(new RegExp(`${SPECIES}\\s+(?:bond order\\s*=|has a bond order of)\\s*(\\d+(?:\\.\\d+)?)`, 'g'))]
+    .map((match) => ({ printed: match[1].trim(), canon: chemCanon(match[1], 'formula'), numeral: printedNumerals(match[2])[0] }))
+    .filter((entry) => entry.canon && entry.numeral);
+}
+
+const GREEK = Object.freeze({ alpha: 'α', beta: 'β', gamma: 'γ', delta: 'δ', epsilon: 'ε', lambda: 'λ', mu: 'μ', nu: 'ν', pi: 'π', sigma: 'σ', psi: 'ψ', phi: 'φ', omega: 'ω', chi: 'χ' });
+
 /** A quantum-number textin against its unit (judgeKeyedUnit). */
 function judgeQuantumSet(item, unit, key, exercise, differs) {
   if (!key) return differs;
@@ -2882,7 +2992,16 @@ function judgeQuantumSet(item, unit, key, exercise, differs) {
 export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = null, abbreviations = [] } = {}) {
   if (!['multiplechoice', 'fillin', 'selfcheck', 'textin'].includes(linkedItem.type)) return null;
   // A link is not a word of the stem: the item is read without its targets.
-  const item = { ...linkedItem, question: unlinked(linkedItem.question) };
+  // A Greek letter set as math — "$\\pi$ bond", which the lint asks for
+  // (8.1, 8.4) — is the letter the source prints ("π bond"): the folds below
+  // drop every TeX command, and "$\\sigma$ bond" and "$\\pi$ bond" would
+  // both read as "bond".
+  const greek = (text) => String(text ?? '').replace(/\$\s*\\(alpha|beta|gamma|delta|epsilon|lambda|mu|nu|pi|sigma|psi|phi|omega|chi)\s*\$/g, (match, name) => GREEK[name]);
+  const item = {
+    ...linkedItem,
+    question: greek(unlinked(linkedItem.question)),
+    ...(linkedItem.type === 'multiplechoice' ? { answer: greek(linkedItem.answer), options: (linkedItem.options || []).map(greek) } : {}),
+  };
   const unit = unitFor(item.question, units, item);
   if (!unit) return null;
   const exercise = { id: unit.id, group: unit.group };
@@ -3010,6 +3129,31 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
     // prints the abbreviation the module itself gives the name in
     // parentheses ("first ionization energy (IE₁)", 6.5's "O, IE₁"), read
     // through `printedAbbreviations`.
+    // A hybridization label (chapter 8): the key is one whole label the
+    // answer prints — `sp³` is no reading of "sp³d hybridized" — and, where
+    // the answer prints two labels, the one its closing sentence asks for
+    // ("Enter the hybrid orbitals used by the terminal carbon atom.").
+    if (isHybridKey(item.answer)) return judgeHybridization(item, unit, exercise, differs);
+    // …and an item whose closing asks for the hybridization, over an answer
+    // that prints one, is keyed with a label: "bent" is a word of "Each S
+    // has a bent (109°) geometry, sp³" and not its hybridization (8.2).
+    if (HYBRID_ASK.test(askedClosing(item.question)) && hybridClauses(unit.answer).length) {
+      return { ...differs, detail: `textin keys ${JSON.stringify(item.answer)} where its closing sentence asks for a hybridization, which source ${unit.id} prints as a label (${JSON.stringify(unit.answer.slice(0, 120))})` };
+    }
+    // Values sorted by atom, each segment opening with the atom's symbol —
+    // "P atoms, trigonal pyramidal; S atoms, bent, with two lone pairs; Cl
+    // atoms, trigonal pyramidal" (8.2) — carried one text-in per atom, each
+    // closing with the atom it asks ("Enter the geometry about the S
+    // atoms."): the item is held to that atom's segment.
+    const byAtom = atomSegments(unit.answer);
+    if (byAtom.length) {
+      const asked = byAtom.filter((entry) => new RegExp(`(?<![A-Za-z])${entry.symbol}(?![a-z])`).test(askedClosing(item.question)));
+      if (asked.length === 1) {
+        const key = foldedPlain(item.answer);
+        return [key, ...foldedForms(key)].some((form) => ` ${asked[0].said} `.includes(` ${form} `)) ? { status: 'confirmed', exercise }
+          : { ...differs, detail: `textin keys ${JSON.stringify(item.answer)} for the ${asked[0].symbol} atoms, which source ${unit.id} answers ${JSON.stringify(asked[0].printed)}` };
+      }
+    }
     const short = abbreviations.filter(([long]) => foldedPlain(long) === foldedPlain(item.answer)).map(([, abbreviation]) => foldedPlain(abbreviation).replace(/\s+/g, ''));
     const answer = ` ${foldedPlain(unit.answer)} `;
     if (short.length && unit.answer.split(/[,;]/).some((piece) => short.includes(foldedPlain(piece).replace(/\s+/g, '')))) return { status: 'confirmed', exercise };
@@ -3104,6 +3248,21 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
     // the module's own pairs (`moduleAliases`).
     const sorted = sortedSentence(unit, item.question);
     if (sorted) said = sorted;
+    // A choice the answer names after a superlative its question asks —
+    // "…, strongest bond is O₂²⁺" (8.4's printed 41, after the bond orders
+    // the fill-ins key): the item's is the species after "is".
+    const superlative = /\b(strongest|weakest|highest|lowest|largest|smallest|longest|shortest)\s+[a-z ]*?\bis\s+([^,;]+?)\s*\.?\s*$/i.exec(unit.answer);
+    if (superlative && new RegExp(`\\b${superlative[1]}\\b`, 'i').test(item.question)) said = superlative[2];
+    // Options that are formulas — "H₂", "H₂⁺", "H₂⁻", which fold to one
+    // word run — are read by the formula grader: the option that IS the one
+    // formula the answer says (8.4's printed 41 and 43: "H _2", "O").
+    const formulas = item.options.map((option) => chemCanon(option, 'formula'));
+    const saidFormula = chemCanon(said.trim().replace(/\.$/, ''), 'formula');
+    if (formulas.every(Boolean) && new Set(formulas).size === formulas.length && saidFormula) {
+      const at = formulas.indexOf(saidFormula);
+      if (at !== -1 && chemCanon(item.answer, 'formula') === formulas[at]) return { status: 'confirmed', exercise };
+      return { status: 'key-differs', exercise, detail: `source ${unit.id} answers ${JSON.stringify(said.trim())}${at === -1 ? ', which is none of the options' : `, option ${JSON.stringify(item.options[at])}`}; page keys ${JSON.stringify(item.answer)}` };
+    }
     if (segments.length >= 2) {
       const asked = ` ${foldedPlain(item.question)} `;
       const sorted = segments.filter((segment) => item.options.some((option) => foldedPlain(option) === segment.head));
@@ -3143,6 +3302,26 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
       if (names.length === 1 && holding.length === 1) named = holding;
     }
     if (named.length === 0) named = optionsNamedThrough(aliases, said1, item.options);
+    // An option the answer prints in the plural ("(b) and (c) are σ bonds",
+    // 8.1, against the option "σ bond"): the option's last word plus s.
+    const pluralNamed = (text) => {
+      const plurals = item.options.map((option) => `${option}s`);
+      const hit = optionsNamedIn(text, plurals);
+      return hit.map((plural) => item.options[plurals.indexOf(plural)]);
+    };
+    if (named.length === 0) named = pluralNamed(said1);
+    // One sentence over several letters — "(a) is a π bond … while (b) and
+    // (c) are σ bonds that overlap along the axis." (8.1): a part whose own
+    // segment is only a joining word ("and") says what the next part's says.
+    if (named.length === 0 && unit.label && /^(?:and|or|both|as well as)$/.test(foldedPlain(unit.answer))) {
+      const siblings = units.filter((other) => other.group === unit.group && other.label > unit.label).sort((a, b) => a.label.localeCompare(b.label));
+      for (const sibling of siblings) {
+        const text = ` ${foldedPlain(sibling.answer)} `;
+        const next = optionsNamedIn(text, item.options).length ? optionsNamedIn(text, item.options) : pluralNamed(text);
+        if (next.length) { named = next; break; }
+        if (!/^(?:and|or|both|as well as)$/.test(foldedPlain(sibling.answer))) break;
+      }
+    }
     if (named.length === 1 && compact(named[0]) === compact(item.answer)) return { status: 'confirmed', exercise };
     if (named.length === 0) return { status: 'prose-key', exercise };
     return {
@@ -3156,6 +3335,23 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
   if (item.type === 'fillin') {
     const key = keyNumeral(item.answer);
     if (!key) return { status: 'symbolic', exercise };
+    // A bond order (8.4): held to the number the answer prints after "bond
+    // order" — never a subscript of the species ("H₂ bond order = 1" keys 1,
+    // not 2) — and, where the answer gives several species' orders, to the
+    // species its closing sentence names ("Enter the bond order of H₂⁺.").
+    if (/\bbond order\b/i.test(askedClosing(item.question))) {
+      const orders = bondOrders(unit.answer);
+      if (orders.length) {
+        const species = /\bbond order of\s+(.+?)\s*\.?\s*$/i.exec(askedClosing(item.question));
+        const canon = species ? chemCanon(species[1], 'formula') : null;
+        const held = orders.length === 1 && !canon ? orders : orders.filter((entry) => entry.canon === canon);
+        if (!held.length) {
+          return { status: 'key-differs', exercise, detail: `source ${unit.id} gives ${orders.length} bond orders (${JSON.stringify(unit.answer.slice(0, 100))}); the item's closing sentence must name the species it keys ("Enter the bond order of H₂⁺.")${canon ? `, and source ${unit.id} gives none for ${species[1]}` : ''}` };
+        }
+        return held.some((entry) => sameNumeral(entry.numeral, key)) ? { status: 'confirmed', exercise }
+          : { status: 'key-differs', exercise, detail: `fillin keys ${JSON.stringify(item.answer)} for the bond order of ${held[0].printed}, which source ${unit.id} gives as ${held[0].numeral.printed}` };
+      }
+    }
     // What the fill-in is held to: the sentence of the element its closing
     // sentence names, where the answer speaks of two in turn (6.4's cobalt
     // and iodine), with the labels that are no numbers taken out — a

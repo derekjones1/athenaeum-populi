@@ -267,6 +267,12 @@ The component follows the SHAPE of the source's keyed answer:
 | an ordering whose members the page's own data tie (7.2: H and P, both 2.1 in the electronegativity figure) | the ordering row, keyed as the source prints it, with the other full order in `accept` (`accept="P < H < S < O < F"` beside `H < P < S < O < F`): graded exactly as the key; the gate still holds `answer` to the source's order ("Electron configurations and orderings") *(chapter 7)* |
 | a set of quantum numbers for ONE orbital or electron ("4 0 0 ½"; one per label, "x. 4 0 0 ½, y. 2 1 0 ½, z. 3 2 0 ½") | `textin` with `answerForm="quantum-numbers"` keyed with the source's set in the page's print, `4 0 0 +1/2` ("Sets of quantum numbers"), the stem closing "Type the four values in the order n, l, mₗ, mₛ, separated by spaces." (lint); one item per label, each closing first with the label it asks — "Enter the set for the orbital of type (x) shown in the figure above." — which the gate holds to that label's set. Any mₗ and either spin of the key's n and l is graded right. The sets of SEVERAL electrons at once (6.3's selenium) stay a `selfcheck` ("Selfchecks") *(November 15, 2026)* |
 | a subshell ("2 p", "4 d") | a plain `textin` keyed `2p` — no form: the word grader folds the letter's capital and, against a key that is a subshell, a space between the number and the letter, and the noun after it (`2 p`, `2P`, `the 2p subshell`, `2p orbitals` right; `2s`, `3p` wrong; a bare `p` is told "Give the shell number with the letter.") *(chapter 6)* |
+| a hybridization ("sp³d", "The selenium atom is sp³d hybridized.") | a plain `textin` keyed with the label in print, Unicode superscripts — `sp`, `sp²`, `sp³`, `sp³d`, `sp³d²` — no `accept`, no `answerForm`, the stem closing LAST, word for word, "Type any superscript as an ordinary number." (lint `HYBRID_CLOSING`); where the part must say whose, that sentence comes first: "Enter the hybridization of sulfur." ("Graded items", "Hybridization labels"). The gate holds the key to one WHOLE label the answer prints (`sp³` is no reading of "sp³d hybridized"); where the answer prints two labels, to the clause whose own words the closing names ("Enter the hybrid orbitals used by the terminal carbon atom." → "The terminal carbon atom uses sp³ hybrid orbitals, while the central carbon atom is sp hybridized."); a label keyed under a closing that asks a shape, or a shape under one that asks a hybridization, is refused *(chapter 8)* |
+| a bond order, or one per species ("H₂ bond order = 1, H₂⁺ bond order = 0.5, …"; "N₂ has a bond order of 3") | a `fillin` keyed as a decimal (`0`, `0.5`, `1`, `1.5`, `2`, `2.5`, `3`) with `answerForm="decimal-or-fraction"` — one number written plainly: `0.5`, `.5`, `1/2`, `0.50` right against `0.5`, `5/2` and `2 1/2` against `2.5`; no significant figures (a bond order is exact) — the stem closing "Enter the bond order of H₂⁺." where the stem names several species — a lone formula in a stem is Unicode ("Notation"; `$\ce{…}$` is for a reaction): "…to have the strongest bond: H₂, H₂⁺, H₂⁻. Enter the bond order of H₂⁺.", "Enter the bond order." where it names one. The gate holds the key to the number after "bond order" of the species the closing names, never a subscript ("H₂ bond order = 1" keys 1, not 2) *(chapter 8)* |
+| bond orders of a group and its member with "the strongest bond" ("…, strongest bond is O₂²⁺") | the bond-order fill-ins in the group's order, then ONE `multiplechoice` whose options are the group's members in its order, written in print (`O₂`, `O₂²⁺`, `O₂²⁻`): the gate reads the species after "strongest bond is" (any superlative the question prints) and options that are formulas through the formula grader, so `O₂²⁻` is not `O₂²⁺` *(chapter 8)* |
+| one sentence answering several lettered parts ("(a) is a π bond with a node along the axis connecting the nuclei while (b) and (c) are σ bonds that overlap along the axis.") | one `multiplechoice` per part, as the closed-set row: a part whose own segment is only a joining word ("and") is read with the next part's ("are σ bonds"), and an option printed in the plural ("σ bonds" for `$\sigma$ bond`) names it. A bare σ or π in a `multiplechoice` or `fillin` question, option, or hint is `$\sigma$`, `$\pi$` (lint; "Notation", "σ and π"); the gate reads it as the letter *(chapter 8)* |
+| values sorted by atom, each segment opening with its symbol ("P atoms, trigonal pyramidal; S atoms, bent, with two lone pairs; Cl atoms, trigonal pyramidal") | one plain `textin` per atom, closing "Enter the geometry about the S atoms."; the gate holds each item to its atom's segment, so P's shape under S is refused. What the segment adds after the name ("with two lone pairs") is no part of the key (`bent`) *(chapter 8)* |
+| a yes or no that opens the answer ("No, two of the p orbitals …"; "Yes, fluorine is …") | the row "a choice from the stem's set with a reason": a `multiplechoice` (`yes`, `no`), then a `selfcheck` with the stem as printed and the source's answer whole. A question whose answer prints no yes or no ("Can a molecule with an odd number of electrons ever be diamagnetic? Explain why or why not.") is a `selfcheck` alone *(chapter 8)* |
 | one count per label the stem names ("x. 2, y. 2, z. 2" for three orbitals drawn (x), (y), (z)) | one `whole-number` `fillin` per label, each stem closing with the label it asks: "Enter the number for the orbital of type (x)." — the gate holds each item to its label's number and refuses an item whose closing names none *(chapter 6)* |
 | a count said beside labels that are no numbers ("n = 4", "The five degenerate 3d orbitals", "15 (5A)") | a `whole-number` `fillin` keyed with the count (4, 5, 15): the gate reads a subshell's shell number and an old group label as labels, so the 3 of "3d" or the 5 of "5A" is refused *(chapter 6)* |
 | a choice the answer names by its LETTER among the stem's lettered parts ("(a) Mg (b) Si (c) S (d) Both Mg and S (e) Both Si and S" → "Although both (b) and (c) are correct, (e) encompasses both and is the best answer.") | ONE `multiplechoice` whose options are the parts, in order, keyed with the part the answer calls THE answer ("is the best answer", "is correct") — one of a closed set *(chapter 6)* |
@@ -287,8 +293,9 @@ The component follows the SHAPE of the source's keyed answer:
 | an answer by role for a reaction the stem prints ("Oxidized: Sn²⁺; reduced: H₂O₂; oxidizing agent: H₂O₂; reducing agent: Sn²⁺") | ONE `multiplechoice` per reaction whose options are the reaction's reactants, the stem closing with the one role it asks in the answer's own words ("Which reactant is the oxidizing agent?"). One item, not one per role: with two reactants the second role is the first one's remainder. Not a formula `textin`: the stem prints both candidates. **Where the source prints a role's answer as an ion inside a reactant** ("P³⁻ is oxidized, O₂ is reduced" for K₃P + O₂), the item asks the role whose answer the source prints as a reactant's own formula ("Which reactant is reduced?"), so the key is the source's word *(chapter 4)* |
 | an answer that tells atoms of one element apart by MARKING a symbol inside the formula (underlined in the source: "C̲H₃CCH tetrahedral, CH₃C̲C̲H linear") | one `textin` per distinct value, the atom named in WORDS by a closing sentence ("Enter the molecular structure around the carbon atom of the CH₃ group.", "…around each of the other two carbon atoms.", "…around the central carbon atom."), no self-check after them: a field cannot show a mark, and words need none. The gate finds each value in the answer but does not hold it to its atom, so the parent checks each field against the marked symbol. In the BODY, where a set holds three items at most, an answer of more values than that stays a `selfcheck` (7.6’s alanine: ten values) *(chapter 7, November 15, 2026)* |
 | a charge ("4+") | `fillin` with `whole-number`, keyed as a signed number (`4`), the stem ending "Enter the charge as a signed number, the sign first, as +1 or −1." — a typed `4+` is `form` and told to put the sign first ("Measured quantities"), and "with its sign" is a lint error ("Stems"). Proven through the gate for a cation (2.3's platinum ion) and an anion (7.1: the gate reads the charge off the ion's superscript, sign last — "P³⁻" keys `-3` — and the stem's "anion" or "cation" chooses among several ions). The field tells `3` against `-3` "The size is right, but the sign is not. …", and `3-` (the sign typed last, as the source prints it) "That has its sign after the number. Type the sign first." *(chapter 7)* |
-| an oxidation state, or one per element of a compound ("H +1, P +5, O −2"; "N, +5") | one `fillin` `whole-number` per element, keyed as a signed number (`5`, `-2`), `answerDisplay` as the source prints it, the stem closing "Enter the oxidation state of P as a signed number, the sign first, as +2 or −1." — the element's SYMBOL, which the source gate reads, and an example pair that is no key of the page *(chapter 4)* |
+| an oxidation state, or one per element of a compound ("H +1, P +5, O −2"; "N, +5") | one `fillin` `whole-number` per element, keyed as a signed number (`5`, `-2`), `answerDisplay` as the source prints it, the stem closing "Enter the oxidation state of P as a signed number, the sign first, as +2 or −1." — the element's SYMBOL, which the source gate reads, and an example pair that is no key of the page *(chapter 4)*. Word for word since chapter 8 (lint `OXIDATION_STATE_CLOSING`; "oxidation number" is the same closing), the symbol one the stem prints (a lone formula in a stem is Unicode, "Notation") *(chapter 8)* |
 | a formal charge per element ("H: 0, Cl: 0"; "P: 0, Cl 0"; "C −1, O +1"; "N: 0; all three Cl atoms: 0") | the oxidation-state row: one `fillin` `whole-number` per element, keyed as a signed number, `answerDisplay` as the source prints it, the stem closing word for word "Enter the formal charge of Cl as a signed number, the sign first, as +2 or −2." — the element's SYMBOL, one the stem prints in a formula or names ("the carbon monoxide molecule"; lint `FORMAL_CHARGE_CLOSING`). The gate holds each item to its element's number. A figure the answer adds after the numbers is required by no gate; a `selfcheck` that shows it carries the numbers whole, after the fill-ins *(chapter 7)* |
+| oxidation states AND formal charges in one answer, each list after its heading ("Oxidation states P +1, S −1⅓, Cl +5, O –2. Formal charges: P 0; S 0; Cl +2: O –1", 8.2) | the two rows above, one `fillin` per whole number asked, each closing with its own row's sentence: the gate holds an "Enter the oxidation state of O …" item to the number after O in the oxidation-state list and an "Enter the formal charge of P …" item to the formal-charge list, so O's −1 under its oxidation state is refused, and a symbol its list gives no whole number for (S −1⅓) is refused. **The example pair of a signed closing is the author's to choose** — one positive number and one negative, "as +3 or −3." — **and neither is a key of a whole-number fill-in on the page** (lint, every signed closing: the formal-charge default "+2 or −2" beside an oxidation state keyed −2 prints that key). On 8.2's matches exercise both closings take "+3 or −3": no number its answer prints *(chapter 8)* |
 | several equations in one answer ("(complete) … (net)"; an equation for each of three metals; molecular, complete ionic, and net ionic) | one equation `textin` per equation, in the source's order, each stem closing with the sentence that says which: "Enter the complete ionic equation.", "Enter the net ionic equation.", "Enter the equation for the reaction of magnesium." Two of them may share one key (4.1: a reaction with no spectator ion); both stand, and the footer does NOT say so — it would hand over the second key *(chapter 4)* |
 | a type of reaction where the stem names no set ("oxidation-reduction (addition)") | a `multiplechoice` whose options are the types the section's own objective names, in its order, then a `selfcheck` with the source's answer whole; the footer says where the options come from *(chapter 4)* |
 | an equation the stem itself says may have more than one correct answer, or one that leaves a reactant to the learner ("an appropriate acid"), or two steps with a chained arrow | `selfcheck`, the source's equation the model answer: an equation `textin` takes one answer *(chapter 4)* |
@@ -298,8 +305,9 @@ The component follows the SHAPE of the source's keyed answer:
 | an explanation, a list, a description, "answers will vary" | `selfcheck` with the source solution as the model answer and a rubric |
 | a drawing | `selfcheck` with the figure in the model answer ("Figures") |
 | a drawing labelled with the part's own formula ("SeF₆: [structure]") | the drawing row: the label is no word of the answer, and the model answer need not print it *(chapter 7)* |
-| a drawing and words ("eight electrons: [symbol]"; "[structure] In this case, the Lewis structure is inadequate …") | the drawing row, the source's words carried whole beside the figure ("Eight electrons:", the figure, then the sentence about it); a part answered in words only ("no electrons Be²⁺") is a `selfcheck` whose model answer is those words ("No electrons: Be²⁺.") *(chapter 7)* |
+| a drawing and words ("eight electrons: [symbol]"; "[structure] In this case, the Lewis structure is inadequate …") | the drawing row, the source's words carried whole beside the figure ("Eight electrons:", the figure, then the SOURCE's sentence about it). An added describing sentence is written only where the drawing holds something the source's words do not describe (8.1's N₂ answer: the words speak of orbitals, the drawing is a Lewis structure); where the source's words already say what the drawing shows (8.1's O₂ sketch, 8.4's labelled σ* drawing), nothing is added *(chapter 8)*; a part answered in words only ("no electrons Be²⁺") is a `selfcheck` whose model answer is those words ("No electrons: Be²⁺.") *(chapter 7)* |
 | drawings for each part and a choice among the parts named in the last part's answer (7.4: "(a) [CO₂] (b) [CO] CO has the strongest carbon-oxygen bond …") | (a)'s drawing `selfcheck`, then ONE `multiplechoice` over the parts ("…Indicate which has the strongest carbon-oxygen bond: CO₂ or CO?"), then (b)'s drawing `selfcheck` carrying the source's sentence whole. Not a separate last sentence `selfcheck`: under the choice's question it binds to (a) and lacks (a)'s drawing *(chapter 7)* |
+| a geometry asked alone ("predict the molecular geometry", "Predict the shape", "Describe the geometry about …") | one plain `textin` keyed with the source's word, closing with the stem's own noun: "Enter the molecular geometry.", "Enter the shape.", "Enter the geometry about the P atoms." An angle or a count of lone pairs printed after the name is no part of the key, and the grader takes either typed after the name — "bent (109°)", "bent, with two lone pairs" (the source's own answer to 8.2's printed 19(b)), "bent with 2 lone pairs" — while a different name stays wrong. **Where a drawing `selfcheck` closes each part of an exercise whose parts key the same words** (8.2's printed 15: "Each S has a bent (109°) geometry, sp³", then "Bent (120°), sp²"), the fields of every part come first and the drawings after them, in part order: a part's reveal directly above the next part's field prints its key (the lint's "directly above" leak) *(chapter 8)* |
 | two values named in one answer ("electron-pair geometry: octahedral, molecular structure: square pyramidal"; "The electron-pair geometry is trigonal bipyramidal. The molecular structure is linear."; "Both the electron geometry and the molecular structure are octahedral.") | two plain `textin`s, the geometry first (lint), closing "Enter the electron-pair geometry." and "Enter the molecular structure."; the gate holds each to its own value. An angle the source prints after a shape ("bent (109°)") is no part of the key (`bent`), and the grader takes it typed after the name. A geometry key takes as `accept` only a form the module prints (`trigonal bipyramid` beside `trigonal bipyramidal`; the source's own word is the key where it prints the noun) *(chapter 7)* |
 | a part told apart from its siblings only by bold type inside a formula ("**C**H₃CCH tetrahedral, CH₃**CC**H linear") | one `selfcheck` whose model answer is the source's answer with its bold and nothing added; the rubric clauses are its own runs ("**C**H₃CCH tetrahedral") *(chapter 7)* |
 
@@ -404,6 +412,14 @@ selfchecks, source defects, the footer — and each is stated once.
 - **A plain-text address in a stem that no longer answers** is printed
   without its scheme, so the page does not link a dead page; the footer
   says what it returned and when, and the erratum the same *(chapter 4)*.
+- **A `multiplechoice` that follows a typed field under one shared stem
+  closes with the question it keys** *(chapter 8)*: 8.3's printed 29 asks
+  "indicate the hybridization requested and whether or not the electrons
+  will be delocalized"; its hybridization field closes "Enter the
+  hybridization. …", and the choice after it closes "Are the electrons
+  delocalized or localized?" — four of 8.3's choices first printed only the
+  stem, which never asked what their buttons answer (the rendered-page
+  reading).
 - **"with its sign" is never written** (lint). A negative answer is typed
   with its minus sign as a matter of course, and the phrase on the negative
   keys alone tells the learner the answer is negative.
@@ -823,8 +839,11 @@ selfchecks, source defects, the footer — and each is stated once.
   the value with its unit, and that unit is the one the closing asks for,
   written the same way (lint: "Enter … in feet." over a display of
   ft/cubit, 1.6; "in cal/°C" over cal °C⁻¹, 5.1); a bare power-of-ten factor shows `$10^{-2}$`
-  with no leading ×. It is math, so the house lint groups its digits
-  ("Notation").
+  with no leading ×. **Every `answerDisplay` is math** (lint, *chapter 8*:
+  43 plain displays of chapters 1, 2, 4, 6, and 7 — counts and two charges —
+  were set in math November 16, 2026), so the house lint groups its digits
+  ("Notation"); a charge is written as the book prints it, number first:
+  `$2+$`, `$3-$`.
 
 ### Added items
 
@@ -907,7 +926,11 @@ selfchecks, source defects, the footer — and each is stated once.
   order: a sub-heading goes where the source's run changes kind, items are
   not moved to fit one, and a run that returns to an earlier kind is
   labelled as what it is ("More unit conversions"). The group's opening
-  items may stand above the first sub-heading. No count forces one — a
+  items may stand above the first sub-heading. **A sub-heading is never
+  placed inside one exercise** *(chapter 8: 8.2's stood between parts (c)
+  and (d) of the matches exercise, below the figure its items say is
+  "above")*: the seam is between exercises, and an exercise's stem figure
+  stands under the same sub-heading as all its items. No count forces one — a
   run of thirty items of one kind has no seam to label — so whether a
   group needs dividing is the author's reading and the checker's tick: any
   group of more than about twenty items is read for seams.
@@ -1062,6 +1085,17 @@ after the rule was written, so the line is drawn by pairs:
   source's set can meet. The hint may still say which values are free
   *(chapter 6; first written with the source's rows as the rubric, and
   rewritten November 15, 2026)*.
+- **The clauses of one rubric do not overlap** *(chapter 8)*: a
+  one-sentence answer reaches its clauses by splitting the source's own
+  words at a seam ("hybridization is introduced" / "to explain the geometry
+  of bonding orbitals in valence bond theory"), and no clause is a run of
+  another or repeats a run of another's words — a clause inside another is
+  ticked by the same words twice. Not a lint: measured November 16, 2026,
+  a clause contained in another stands six times in five rubrics of
+  chapters 1–7 (1.1, 3.1, 5.2 ×2, 7.6), each a one-word choice beside its sentence, and a
+  shared run of four words in 27 more, most of them parallel sentences
+  ("the value of an extensive property …" / "the value of an intensive
+  property …") that are sound; the checker reads it.
 - **Every rubric clause is a run of the model answer's words** *(November
   15, 2026, Derek; a lint error in this book)*: copied, never reworded,
   and never two runs joined over the words between them. "This amount is
@@ -1187,6 +1221,13 @@ after the rule was written, so the line is drawn by pairs:
   adjective ("a multiple-choice stem") is not an item's name.
 - **Which objective a keyed exercise is placed under is the page's
   structure, not a departure**, and takes no clause.
+- **A body table or figure that prints the key of a later item the page
+  cannot move** (8.4's table of the electron configurations and bond orders
+  of the second-period diatomic molecules, above the bond-order exercises)
+  is disclosed in ONE clause that names the items and prints no value: "the
+  table of configurations and bond orders above the Practice block prints
+  the keys of the bond-order fill-ins of the printed-41 exercise, which
+  remain as the source asks them" *(chapter 8)*.
 - It names every departure from the source in one clause each: restated
   lead-ins, a datum added to a stem, a dropped cross-reference, an alt
   rewritten against a wrong source alt, a Key equation set in the body's
@@ -1255,6 +1296,39 @@ mhchem extension, so nothing is loaded:
 | `\ce{…} \qquad \Delta H = -92.2\ \text{kJ}` | a thermochemical equation in BODY display math: the formula in `\ce`, the rest ordinary math (a stem writes `$\Delta H^\circ$ = −314 kJ`: "Stems") |
 | `\begin{aligned} \ce{C(s) + O2(g) &-> CO2(g)} & \Delta H &= … \end{aligned}` | steps aligned at the arrow |
 
+- **Orbital, subshell, and hybridization labels are upright Unicode in
+  prose** *(chapter 8; the practice of chapters 6 and 7, unstated until
+  then)* — body, captions, alts, stems, options, hints, model answers, Key
+  terms: `2p`, `4s`, `sp³d²`, "an s orbital", "a p orbital" — whatever the
+  source italicizes, with a footer clause ("orbital and hybridization labels
+  written as upright Unicode text where the source italicizes their
+  letters"). State symbols (`(*s*)`, and 4.1's "*s* for solids") and the x-,
+  y-, z-axis letters keep their italics (lint: an italic orbital letter after
+  a shell number, before "orbital", "subshell", "electron", "hybrid", or
+  "bond", and `*sp*`).
+- **σ and π** *(chapter 8)*. A bare σ or π is Unicode in the body, a
+  caption, the Summary, Key terms, an alt, and in a `textin` or `selfcheck`
+  (question, model answer, hint, rubric). It is math (`$\sigma$`, `$\pi$`)
+  in a `multiplechoice` or `fillin` question, option, or hint — the lint
+  requires math for π there, and σ goes with it — and in a `selfcheck` that
+  shares a `multiplechoice`'s stem (lint: a bare `$\sigma$` or `$\pi$`
+  anywhere else). A molecular-orbital symbol with a subscript, a
+  superscript, or a star is math wherever math is allowed.
+- **In a molecular-orbital symbol the orbital letters are upright**
+  *(chapter 8)*: `$\sigma_{2\text{s}}$`, `$\sigma_\text{s}^*$`,
+  `$\pi_{2\text{p}}$` — a descriptive subscript, as the next rule says; an
+  axis letter stays italic, `$\pi_{2\text{p}_y}$`.
+- **A single bond between symbols in prose is an en dash** — H–H, O–H,
+  H–C≡C–H — never the minus sign U+2212, which is the sign of a number or a
+  charge (lint: U+2212 between two symbols, or between a symbol and = or ≡)
+  *(chapter 8)*.
+- **American spelling and the curly apostrophe** in prose and alts —
+  "labeled", "color", "gray", "Oxygen’s" *(chapter 8)*. The spelling is a
+  lint (a word the source itself spells otherwise — 6.5's “silver-grey” — is
+  quoted, in curly quotation marks, in the footer clause that names the
+  change). The straight apostrophe is NOT yet a lint: measured November 16,
+  2026, 234 on 34 pages of chapters 1–7, many inside items whose text a
+  sweep would re-hash; the checker reads it.
 - **Descriptive subscripts are upright**: `$E_\text{f}$`, `$n_\text{i}$`;
   a subscript that is itself a variable stays italic *(chapter 6)*. The
   lint refuses a bare `f` or `i` subscript (`E_f`, `n_{i}`), and passes
@@ -1665,6 +1739,61 @@ Rules for the key and the stem:
   A later item's reveal that prints l per orbital type (6.3's "possible l
   and mₗ values" self-check) sits AFTER the sets.
 
+### Hybridization labels: a plain `textin`
+
+*(November 16, 2026, before chapter 8.)* A hybridization is a plain
+`textin` keyed with the label in print — `sp`, `sp²`, `sp³`, `sp³d`,
+`sp³d²` — read by `checkText` (`hybridOrbitals` in
+`assets/js/lib/text/check-text.mjs`), in the manner of the subshell fold and
+only against a key that is such a label. **What is free**: capitals, a
+superscript typed as a digit, `^`, braces, spaces and hyphens inside the
+label, a count of 1 written out, a leading "the", and a trailing
+"hybridized", "hybridization", "hybrid", or "hybrid orbital(s)". **What is
+not**: the letters and their counts — and their order, s, then p, then d,
+as the book prints them. The stem closes with how a superscript is typed,
+and the closing names no label (lint):
+
+```
+{{</* textin
+  question="What is the hybridization of the selenium atom in SeF₄, shown in the figure above? Type any superscript as an ordinary number."
+  answer="sp³d"
+  hint="Count the regions of electron density around the selenium atom in its Lewis structure."
+*/>}}
+```
+
+| Typed (hybridization) | Against | Verdict | Feedback |
+|---|---|---|---|
+| `sp3d`, `sp³d`, `sp^3d`, `sp^{3}d`, `sp 3 d`, `SP3D`, `sp3d hybridized`, `sp3d-hybridized`, `the sp3d hybrid orbitals` | `sp³d` | correct | |
+| `sp`, `s p`, `sp1` | `sp` | correct | |
+| `dsp3` | `sp³d` | form | "Write the orbitals in the order s, p, d." — the key's own orbitals in another order; the field stays open (`gradeText` only: every gate reads it as incorrect) |
+| `d2sp3` | `sp³d²` | form | the same sentence |
+| `tetrahedral`, `bent (109°)` | `sp³` | incorrect | "That names a shape. The question asks for the hybridization: which atomic orbitals mix, and how many of each." — a shape typed for the label, the commonest confusion of a part that asks both (8.2's printed 15); it gives no label |
+| `sp3` | `sp³d` | incorrect | |
+| `sp2` | `sp³` | incorrect | |
+
+No message prints a label, the key's or another. A response that hedges
+("sp3 (tetrahedral)") is incorrect.
+
+Rules for the key and the stem:
+
+- **The key is the label in print**, Unicode superscripts (lint: `sp3d` and
+  `sp^3d` are refused as keys), and takes no `accept` and no `answerForm`
+  (lint): every writing a learner types is folded, and the module prints no
+  second writing of a label (never `dsp³`).
+- **The closing sentence** (lint, `HYBRID_CLOSING` in
+  `tools/lint/lints-leaks.mjs`): "Type any superscript as an ordinary
+  number." — LAST. A part that must say whose puts that sentence first:
+  "Enter the hybridization of sulfur. Type any superscript as an ordinary
+  number." The closing uses the stem's own noun, as the geometry row does:
+  under 8.3's "Identify the hybrid orbitals used by the carbon atoms", "Enter
+  the hybrid orbitals used by the terminal carbon atom." *(chapter 8)*
+- **The key is what the source prints** (`verify:source-keys`): one whole
+  label of the answer, held to the clause the closing names where the
+  answer prints two ("Exercises", the hybridization row).
+- **A label is upright Unicode everywhere** — running text, a `selfcheck`
+  answer, a `textin` question — as "Notation" writes an orbital label
+  ("Orbital, subshell, and hybridization labels").
+
 ### Measured quantities: `sig-figs:<n> last-digit:<k>`
 
 A computed quantity is keyed with the digits its data support (`0.674 M`,
@@ -2066,6 +2195,20 @@ What chapter 1 settled, and what the scan of the book counted, are in
   lacks the scale a hint needs; a key the figure screen cannot see (a table
   value under a stem with no data, an arithmetic slip at the right figure
   count);
+- two lints chapter 8's readings asked for, measured on November 16, 2026
+  and left off (`docs/history/chemistry.md`, "Chapter 8"): a rubric clause
+  that is a run of, or shares four or more words with, another clause of
+  its rubric (33 pairs on chapters 1–7, six of them one clause inside
+  another — 1.1, 3.1, 5.2 three times, 7.6 — each a rubric to rewrite, the
+  rest mostly sound parallel sentences), and a straight apostrophe in
+  prose or an alt (234 on 34 pages, many inside item text, where the
+  change re-hashes the item); until they are on, both are the checker's
+  and the consistency reader's to catch;
+- a charge is typed "the sign first" (`+2`), while Section 4.2 of the book
+  says a charge is written number first (2+) and an oxidation number sign
+  first, to tell the two apart; the grader already reads `2+` and answers
+  it with a form message. Whether a charge field should take `2+` as right
+  is open *(chapter 8, the consistency reading)*;
 - the kit reader's recommendations of November 14 that are not yet built:
   a `verify-section` mode that runs both source gates and the leak reading
   on one page; the fact half of the run facts and the PDF range scripted;

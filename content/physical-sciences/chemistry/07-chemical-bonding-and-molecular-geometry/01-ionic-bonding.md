@@ -111,7 +111,7 @@ I⁻: [Kr]4d¹⁰5s²5p⁶
   question="Write the electron configurations of a phosphorus atom and its negative ion. Give the charge on the anion. Enter the charge as a signed number, the sign first, as +1 or −1."
   answer="-3"
   answerForm="whole-number"
-  answerDisplay="3−"
+  answerDisplay="$3-$"
   hint="Use the rule in the paragraph above the example for the charge on a negative ion."
 >}}
 

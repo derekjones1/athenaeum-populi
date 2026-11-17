@@ -260,8 +260,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 21,
       "upstreamSections": 114,
-      "localChapters": 7,
-      "mappedSections": 36,
+      "localChapters": 8,
+      "mappedSections": 40,
       "upstreamAppendices": 13,
       "mappedAppendices": 13
     }
@@ -7592,6 +7592,42 @@
       "moduleId": "m68742",
       "sourceTitle": "Molecular Structure and Polarity",
       "moduleSha256": "522195d80aa86fd18eb44c4c0d23217125f7e735526ae9db3895c1e6c9c56265"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/01-valence-bond-theory.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "8.1",
+      "moduleId": "m68744",
+      "sourceTitle": "Valence Bond Theory",
+      "moduleSha256": "7ff528c3fcf120927d8d815d3e4cc4ceb68e5fac973d75e45139c1ad9f73caca"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/02-hybrid-atomic-orbitals.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "8.2",
+      "moduleId": "m68745",
+      "sourceTitle": "Hybrid Atomic Orbitals",
+      "moduleSha256": "122bad10c0440c04593d7abac7d5a115f292ebdb089d53bb5fbbe016ffa8bfe1"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/03-multiple-bonds.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "8.3",
+      "moduleId": "m68746",
+      "sourceTitle": "Multiple Bonds",
+      "moduleSha256": "4a1cd6339729a80ad905fce454b5524f725f8458df47cb6b1dae77e4f825ecec"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/04-molecular-orbital-theory.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "8.4",
+      "moduleId": "m68747",
+      "sourceTitle": "Molecular Orbital Theory",
+      "moduleSha256": "72267d71555a9c124c41b0452139684b29f947be8f0bbf0b4d4a9895b12966fb"
     }
   ],
   "appendices": [

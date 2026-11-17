@@ -322,3 +322,42 @@ test('a shape name typed with the source\'s angle after it is the shape (Chemist
   assert.equal(checkText('nitrogen (109°)', 'nitrogen'), 'incorrect');
   assert.equal(gradeText('bent (109°)', 'bent').status, 'correct');
 });
+
+test('a hybridization label (Chemistry 2e chapter 8): its writings fold, another order is form, a shape is told so', async () => {
+  const { hybridLabel, HYBRID_ORDER_MESSAGE, HYBRID_SHAPE_MESSAGE } = await import('./check-text.mjs');
+  const right = (typed, key) => assert.deepEqual(gradeText(typed, key), { status: 'correct' }, `${typed} against ${key}`);
+  for (const typed of ['sp3d', 'sp³d', 'sp^3d', 'sp^{3}d', 'sp 3 d', 'sp3 d', 'SP3D', 'Sp3d', 'sp3d hybridized', 'sp3d-hybridized', 'sp3d hybridization', 'sp3d hybrid', 'sp3d hybrid orbitals', 'the sp3d hybrid orbital', 'sp3d.']) right(typed, 'sp³d');
+  for (const typed of ['sp', 'SP', 's p', 'sp hybridized', 'sp1']) right(typed, 'sp');
+  right('sp3d2', 'sp³d²');
+  right('sp^3d^2', 'sp³d²');
+  right('sp2', 'sp²');
+  right('s1p3', 'sp³');
+  // The key's own orbitals in another order: form, the field open, no label given.
+  for (const [typed, key] of [['dsp3', 'sp³d'], ['d2sp3', 'sp³d²'], ['p3s', 'sp³'], ['dsp3 hybridized', 'sp³d']]) {
+    assert.deepEqual(gradeText(typed, key), { status: 'form', message: HYBRID_ORDER_MESSAGE }, typed);
+    assert.equal(checkText(typed, key), 'incorrect', `${typed}: every gate still reads it as incorrect`);
+  }
+  // Another label: plainly incorrect, nothing said.
+  for (const [typed, key] of [['sp3', 'sp³d'], ['sp3d', 'sp³d²'], ['sp2', 'sp³'], ['sp3', 'sp'], ['d2sp3', 'sp³d'], ['sp32', 'sp³d²'], ['sp3 (tetrahedral)', 'sp³']]) {
+    assert.deepEqual(gradeText(typed, key), { status: 'incorrect' }, `${typed} against ${key}`);
+  }
+  // A shape's name typed for the hybridization.
+  for (const typed of ['tetrahedral', 'bent (109°)', 'Trigonal planar']) {
+    assert.deepEqual(gradeText(typed, 'sp³'), { status: 'incorrect', message: HYBRID_SHAPE_MESSAGE }, typed);
+  }
+  assert.ok(!/sp/.test(HYBRID_ORDER_MESSAGE) && !/sp/.test(HYBRID_SHAPE_MESSAGE), 'no message gives a label');
+  // Read only against a hybridization key: "sp 3" is no word of another key.
+  assert.equal(checkText('sp 3', 'spectroscopy'), 'incorrect');
+  assert.equal(hybridLabel('d2sp3'), 'sp3d2');
+  assert.equal(hybridLabel('tetrahedral'), null);
+});
+
+test('a shape typed with the source\'s own qualifier after it is the shape (Chemistry 2e 8.2, printed 19(b))', () => {
+  for (const typed of ['bent, with two lone pairs', 'bent with two lone pairs', 'Bent, with 2 lone pairs', 'bent (109°), with two lone pairs', 'bent, with one lone pair']) {
+    assert.equal(checkText(typed, 'bent'), 'correct', typed);
+  }
+  assert.equal(checkText('trigonal pyramidal, with one lone pair', 'trigonal pyramidal'), 'correct');
+  assert.equal(checkText('linear, with two lone pairs', 'bent'), 'incorrect', 'a different name stays wrong');
+  assert.equal(checkText('with two lone pairs', 'bent'), 'incorrect', 'the qualifier alone');
+  assert.equal(checkText('chlorine, with two lone pairs', 'chlorine'), 'incorrect', 'only against a shape key');
+});

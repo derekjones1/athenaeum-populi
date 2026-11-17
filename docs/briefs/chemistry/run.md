@@ -256,6 +256,59 @@ Ten things chapter 7 added (`docs/history/chemistry.md`, "Chapter 7"):
   parent's notes as they are filed**, and the drafter numbers the rest
   after them.
 
+Twelve things chapter 8 added (`docs/history/chemistry.md`, "Chapter 8"):
+
+- **A decision that prints a stem is checked against "Notation" as well as
+  "Stems".** Two decisions set a lone formula in `$\ce{…}$` in a stem; the
+  gate agent built them, three authors copied the forms files, and the
+  first checker caught it. A lone formula in a stem is Unicode.
+- **A forms file that departs from a playbook rule says so and why**, and
+  the parent reads each forms file against "Notation" and "Stems" before
+  the authors get it: a form that passes the gates is not thereby right.
+- **A `multiplechoice` that follows a typed field under one shared stem
+  closes with the question it keys.** Four stems ended "… central O
+  hybridization." above the buttons `delocalized` and `localized`; only
+  the rendered-page reader saw it.
+- **The answer-key range is checked to its LAST page**, as the exercise
+  range is: chapter 8's last answers are on the page where chapter 9's
+  begin.
+- **A ruling that corrects a model answer files its `DISCLOSED_DEVIATIONS`
+  line BEFORE the ruling is sent**, and says the gate script will read
+  "diverges" until the real gate is run: an author told to leave an item
+  alone when a gate refuses a ruling will, rightly, revert it.
+  `$SP/engine-gate.mjs` does not read the deviations; `node
+  tools/verify/verify-source-keys.mjs <page> --verbose` does.
+- **The landing is a page of the chapter**: every general ruling of the
+  rulings round is applied to it by the parent, who wrote it.
+- **A source ANSWER IMAGE is opened by the parent before the wave**, with
+  the images inside exercise stems: chapter 8's "chlorate ion" drawing has
+  a carbon atom at its centre, and the decision for that exercise changed
+  when the parent looked.
+- **Where a caption contrasts two panels, the alt says what differs between
+  them in the image**: the wave-addition figure draws its two cases alike,
+  the page's first alt repeated the source's "upside down", and one
+  rendered-page reader caught it.
+- **A hint that names a body passage or a figure is read against what that
+  passage or figure says of THIS item's species.** Three hints pointed at
+  the one figure or sentence that prints the answer; the checker and the
+  fix check each found one the other had passed.
+- **A footer-audit question about an image is answered with the image
+  open.** Two authors answered the close-out audit in seconds from memory;
+  the parent opened the images. Say "re-open the image and quote what you
+  see" and read the tool count of the reply.
+- **A lint the readings ask for is measured on the whole book and turned on
+  with its hits fixed in the same run, or left off with its count in the
+  playbook's open list** — never an exemption list. Five went on (the hits
+  on chapters 1–7 fixed; 45 items re-hashed and carried by the parent from
+  a snapshot taken before the sweep, each carry asserting that the
+  question and key are byte-for-byte unchanged); two stayed off.
+- **`verify:typed` types what a learner types, so a new answer shape is
+  given its writings in `tools/build/typed-keys.mjs` before the close-out
+  run is believed**: the tool typed chapter 8's hybridization keys with
+  their Unicode superscripts, and "82 of 82" said nothing of `sp3d`. And a
+  sentence about how a page looks is written after looking: the parent
+  wrote that a line fit at phone width, then measured it, and it did not.
+
 ## 1. Before the wave
 
 `SP` is this session's scratchpad. Never a git command from an agent — say
@@ -275,7 +328,8 @@ Ten things chapter 7 added (`docs/history/chemistry.md`, "Chapter 7"):
    `pdftoppm -f A -l B -r 110 -png sources/chemistry-2e_-_WEB.pdf $SP/pdf/chNN/p`.
    The chapter's end matter is pooled after its last section (Key Terms,
    Key Equations, Summary, Exercises numbered through the chapter); the
-   answer key is at the back of the book, rendered as `key-NNNN.png`
+   answer key is at the back of the book (open its LAST page: a chapter's
+   answers end on the page where the next chapter's begin), rendered as `key-NNNN.png`
    (chapter 1's at indexes 1135–1137 and chapter 2's at 1137–1138; the
    run facts carry this chapter's). **Every module was corrected upstream after
    the PDF was made**: where they differ, the CNXML is the text.

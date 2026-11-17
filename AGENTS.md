@@ -37,7 +37,9 @@ one right answer per item: a key that depends on an atomic mass is what
 the book's own periodic table, `data/chemistry/elements.json`, gives), typed
 formulas, equations, electron configurations, orderings, and sets of quantum
 numbers (`textin` with `answerForm="formula"`, `"equation"`,
-`"configuration"`, `"ordering"`, or `"quantum-numbers"`),
+`"configuration"`, `"ordering"`, or `"quantum-numbers"`), hybridization
+labels (a plain `textin` keyed `sp³d`) and bond orders (a `fillin` with
+`answerForm="decimal-or-fraction"`),
 the appendix rules, and
 the figure rules; a chapter is run from `docs/briefs/chemistry/run.md` with
 the agent briefs beside it, and a Knowledge Check (one per block of

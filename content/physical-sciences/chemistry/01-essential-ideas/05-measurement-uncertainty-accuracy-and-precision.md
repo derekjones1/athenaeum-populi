@@ -23,7 +23,7 @@ Counting is the only type of measurement that is free from uncertainty, provided
 
 The numbers of measured quantities, unlike defined or directly counted quantities, are not exact. To measure the volume of liquid in a graduated cylinder, you should make a reading at the bottom of the meniscus, the lowest point on the curved surface of the liquid.
 
-{{< mediafigure src="chemistry/CNX_Chem_01_05_Measure" kind="diagram" eager="true" alt="A 25-mL graduated cylinder marked every 1 mL and numbered every 5 mL, filled with blue liquid to between the 21-mL and 22-mL marks. The region around the liquid surface is boxed and enlarged twice. In the second enlargement, dashed lines run along the 21-mL and 22-mL marks, the liquid surface curves down between them with its lowest point nearer the upper line, and an arrow labelled “Make reading here” points to the bottom of the curve." >}}
+{{< mediafigure src="chemistry/CNX_Chem_01_05_Measure" kind="diagram" eager="true" alt="A 25-mL graduated cylinder marked every 1 mL and numbered every 5 mL, filled with blue liquid to between the 21-mL and 22-mL marks. The region around the liquid surface is boxed and enlarged twice. In the second enlargement, dashed lines run along the 21-mL and 22-mL marks, the liquid surface curves down between them with its lowest point nearer the upper line, and an arrow labeled “Make reading here” points to the bottom of the curve." >}}
 To measure the volume of liquid in this graduated cylinder, you must mentally subdivide the distance between the 21 and 22 mL marks into tenths of a milliliter, and then make a reading (estimate) at the bottom of the meniscus.
 {{< /mediafigure >}}
 
@@ -35,24 +35,24 @@ This concept holds true for all measurements, even if you do not actively make a
 
 A measurement result is properly reported when its significant digits accurately represent the certainty of the measurement process. But what if you were analyzing a reported value and trying to determine what is significant and what is not? Well, for starters, all nonzero digits are significant, and it is only zeros that require some thought. We will use the terms “leading,” “trailing,” and “captive” for the zeros and will consider how to deal with them.
 
-{{< mediafigure src="chemistry/CNX_Chem_01_05_SigDigits5_img" kind="diagram" alt="Two numbers with their zeros labelled. In 3090, an arrow labelled Captive points to the zero between the 3 and the 9, and an arrow labelled Trailing points to the final zero. In 0.008020, three arrows labelled Leading point to the three zeros before the 8, an arrow labelled Captive points to the zero between the 8 and the 2, and an arrow labelled Trailing points to the final zero." >}}
+{{< mediafigure src="chemistry/CNX_Chem_01_05_SigDigits5_img" kind="diagram" alt="Two numbers with their zeros labeled. In 3090, an arrow labeled Captive points to the zero between the 3 and the 9, and an arrow labeled Trailing points to the final zero. In 0.008020, three arrows labeled Leading point to the three zeros before the 8, an arrow labeled Captive points to the zero between the 8 and the 2, and an arrow labeled Trailing points to the final zero." >}}
 {{< /mediafigure >}}
 
 Starting with the first nonzero digit on the left, count this digit and all remaining digits to the right. This is the number of significant figures in the measurement unless the last digit is a trailing zero lying to the left of the decimal point.
 
-{{< mediafigure src="chemistry/CNX_Chem_01_05_SigDigits1_img" kind="diagram" alt="Two counts of significant figures. In 1267 m, an arrow marks the 1 as the first nonzero figure on the left, and four arrows under the 1, 2, 6, and 7 are labelled Four significant figures. In 55.0 g, an arrow marks the first 5 as the first nonzero figure on the left, and three arrows under the 5, 5, and 0 are labelled: three significant figures; note that the zero is to the right of the decimal point and therefore a significant figure." >}}
+{{< mediafigure src="chemistry/CNX_Chem_01_05_SigDigits1_img" kind="diagram" alt="Two counts of significant figures. In 1267 m, an arrow marks the 1 as the first nonzero figure on the left, and four arrows under the 1, 2, 6, and 7 are labeled Four significant figures. In 55.0 g, an arrow marks the first 5 as the first nonzero figure on the left, and three arrows under the 5, 5, and 0 are labeled: three significant figures; note that the zero is to the right of the decimal point and therefore a significant figure." >}}
 {{< /mediafigure >}}
 
 Captive zeros result from measurement and are therefore always significant. Leading zeros, however, are never significant—they merely tell us where the decimal point is located.
 
-{{< mediafigure src="chemistry/CNX_Chem_01_05_SigDigits2_img" kind="diagram" alt="Two more counts. In 70.607 mL, an arrow marks the 7 as the first nonzero figure on the left, and five arrows under the 7, 0, 6, 0, and 7 are labelled: five significant figures; all figures are measured including the two zeros. In 0.00832407 mL, an arrow marks the 8 as the first nonzero figure on the left, and six arrows under the 8, 3, 2, 4, 0, and 7 are labelled Six significant figures; the zeros before the 8 carry no arrow." >}}
+{{< mediafigure src="chemistry/CNX_Chem_01_05_SigDigits2_img" kind="diagram" alt="Two more counts. In 70.607 mL, an arrow marks the 7 as the first nonzero figure on the left, and five arrows under the 7, 0, 6, 0, and 7 are labeled: five significant figures; all figures are measured including the two zeros. In 0.00832407 mL, an arrow marks the 8 as the first nonzero figure on the left, and six arrows under the 8, 3, 2, 4, 0, and 7 are labeled Six significant figures; the zeros before the 8 carry no arrow." >}}
 {{< /mediafigure >}}
 
 The leading zeros in this example are not significant. We could use exponential notation (as described in [Appendix B](/physical-sciences/chemistry/appendices/b-essential-mathematics/)) and express the number as $8.32407 \times 10^{-3}$; then the number 8.32407 contains all of the significant figures, and $10^{-3}$ locates the decimal point.
 
 The number of significant figures is uncertain in a number that ends with a zero to the left of the decimal point location. The zeros in the measurement 1,300 grams could be significant or they could simply indicate where the decimal point is located. The ambiguity can be resolved with the use of exponential notation: $1.3 \times 10^{3}$ (two significant figures), $1.30 \times 10^{3}$ (three significant figures, if the tens place was measured), or $1.300 \times 10^{3}$ (four significant figures, if the ones place was also measured). In cases where only the decimal-formatted number is available, it is prudent to assume that all trailing zeros are not significant.
 
-{{< mediafigure src="chemistry/CNX_Chem_01_05_SigDigits3_img" kind="diagram" alt="The measurement 1300 g. Two arrows point to the 1 and the 3, labelled: significant figures, clearly result of measurement. Two arrows point to the two zeros, labelled: these zeros could be significant (measured), or they could be placeholders." >}}
+{{< mediafigure src="chemistry/CNX_Chem_01_05_SigDigits3_img" kind="diagram" alt="The measurement 1300 g. Two arrows point to the 1 and the 3, labeled: significant figures, clearly result of measurement. Two arrows point to the two zeros, labeled: these zeros could be significant (measured), or they could be placeholders." >}}
 {{< /mediafigure >}}
 
 When determining significant figures, be sure to pay attention to reported values and think about the measurement and significant figures in terms of what is reasonable or likely when evaluating whether the value makes sense. For example, the US Census Bureau projected the resident population of the US on January 1, 2014, as 317,297,938. Do you think the US population was correctly determined to the reported nine significant figures, that is, to the exact number of people? People are constantly being born, dying, or moving into or out of the country, and assumptions are made to account for the large number of people who are not actually counted. Because of these uncertainties, it might be more reasonable to expect that we know the population to within perhaps a million or so, in which case the population should be reported as $3.17 \times 10^{8}$ people.
@@ -217,7 +217,7 @@ $$\begin{aligned} V &= l \times w \times d \\ &= 13.44\ \text{dm} \times 5.920\ 
 
 **Example.** *Experimental Determination of Density Using Water Displacement.* A piece of rebar is weighed and then submerged in a graduated cylinder partially filled with water, with results as shown.
 
-{{< mediafigure src="chemistry/CNX_Chem_01_04_CylRebar" kind="diagram" alt="Two 25-mL graduated cylinders with 1-mL markings, numbered every 5 mL. The left holds water to about 13.5 mL. In the right, a ribbed grey metal rod stands submerged and the water reaches about 22.4 mL. Beside them, a drawing of the rod sits above the printed values: Rebar mass = 69.658 g, “Final” volume = 22.4 mL, “Initial” volume = 13.5 mL." >}}
+{{< mediafigure src="chemistry/CNX_Chem_01_04_CylRebar" kind="diagram" alt="Two 25-mL graduated cylinders with 1-mL markings, numbered every 5 mL. The left holds water to about 13.5 mL. In the right, a ribbed gray metal rod stands submerged and the water reaches about 22.4 mL. Beside them, a drawing of the rod sits above the printed values: Rebar mass = 69.658 g, “Final” volume = 22.4 mL, “Initial” volume = 13.5 mL." >}}
 {{< /mediafigure >}}
 
 (a) Use these values to determine the density of this piece of rebar.
@@ -261,7 +261,7 @@ very close to the density given for gold
 
 Scientists typically make repeated measurements of a quantity to ensure the quality of their findings and to evaluate both the **precision** and the **accuracy** of their results. Measurements are said to be precise if they yield very similar results when repeated in the same manner. A measurement is considered accurate if it yields a result that is very close to the true or accepted value. Precise values agree with each other; accurate values agree with a true value. These characterizations can be extended to other contexts, such as the results of an archery competition (the figure below).
 
-{{< mediafigure src="chemistry/CNX_Chem_01_05_Archery" kind="diagram" alt="Three round targets, each a blue bull’s-eye inside a white ring inside a blue outer ring, with three black arrow holes and a printed label beneath. (a) Labelled “Accurate and precise”: the three holes overlap at the middle of the bull’s-eye. (b) Labelled “Precise, not accurate”: the three holes sit together in the white ring, above and to the right of the bull’s-eye. (c) Labelled “Not accurate, not precise”: the three holes are spaced apart in the outer blue ring, one at the upper right and two on the right." >}}
+{{< mediafigure src="chemistry/CNX_Chem_01_05_Archery" kind="diagram" alt="Three round targets, each a blue bull’s-eye inside a white ring inside a blue outer ring, with three black arrow holes and a printed label beneath. (a) Labeled “Accurate and precise”: the three holes overlap at the middle of the bull’s-eye. (b) Labeled “Precise, not accurate”: the three holes sit together in the white ring, above and to the right of the bull’s-eye. (c) Labeled “Not accurate, not precise”: the three holes are spaced apart in the outer blue ring, one at the upper right and two on the right." >}}
 (a) These arrows are close to both the bull’s eye and one another, so they are both accurate and precise. (b) These arrows are close to one another but not on target, so they are precise but not accurate. (c) These arrows are neither on target nor close to one another, so they are neither accurate nor precise.
 {{< /mediafigure >}}
 
@@ -451,7 +451,7 @@ uncertain
   question="How many significant figures are contained in the following measurement? 53 cm"
   answer="2"
   answerForm="whole-number"
-  answerDisplay="2"
+  answerDisplay="$2$"
   hint="Recall which digits are significant, and test any zero against the rules for leading, captive, and trailing zeros."
 >}}
 
@@ -459,7 +459,7 @@ uncertain
   question="How many significant figures are contained in the following measurement? $2.05 \times 10^{8}$ m"
   answer="3"
   answerForm="whole-number"
-  answerDisplay="3"
+  answerDisplay="$3$"
   hint="Recall what the power of ten does in exponential notation, and test any zero against the rules for leading, captive, and trailing zeros."
 >}}
 
@@ -467,7 +467,7 @@ uncertain
   question="How many significant figures are contained in the following measurement? 86,002 J"
   answer="5"
   answerForm="whole-number"
-  answerDisplay="5"
+  answerDisplay="$5$"
   hint="Recall which digits are significant, and test any zero against the rules for leading, captive, and trailing zeros."
 >}}
 
@@ -475,7 +475,7 @@ uncertain
   question="How many significant figures are contained in the following measurement? $9.740 \times 10^{4}$ m/s"
   answer="4"
   answerForm="whole-number"
-  answerDisplay="4"
+  answerDisplay="$4$"
   hint="Recall what the power of ten does in exponential notation, and test any zero against the rules for leading, captive, and trailing zeros."
 >}}
 
@@ -483,7 +483,7 @@ uncertain
   question="How many significant figures are contained in the following measurement? 10.0613 m³"
   answer="6"
   answerForm="whole-number"
-  answerDisplay="6"
+  answerDisplay="$6$"
   hint="Recall which digits are significant, and test any zero against the rules for leading, captive, and trailing zeros."
 >}}
 
@@ -491,7 +491,7 @@ uncertain
   question="How many significant figures are contained in the following measurement? 0.17 g/mL"
   answer="2"
   answerForm="whole-number"
-  answerDisplay="2"
+  answerDisplay="$2$"
   hint="Recall which digits are significant, and test any zero against the rules for leading, captive, and trailing zeros."
 >}}
 
@@ -499,7 +499,7 @@ uncertain
   question="How many significant figures are contained in the following measurement? 0.88400 s"
   answer="5"
   answerForm="whole-number"
-  answerDisplay="5"
+  answerDisplay="$5$"
   hint="Recall which digits are significant, and test any zero against the rules for leading, captive, and trailing zeros."
 >}}
 

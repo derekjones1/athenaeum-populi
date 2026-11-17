@@ -1391,3 +1391,25 @@ test('the playbook\'s configuration and ordering table is what the grader does, 
   const notRead = /\*\*Not read by these forms\*\*[^\n]*(?:\n {2}[^\n]*)*/.exec(chem)[0];
   assert.doesNotMatch(notRead.split('An electron configuration and an ordering have')[0], /electron configuration|ordering/);
 });
+
+test('the chemistry playbook\'s hybridization table is what the grader does (chapter 8)', async () => {
+  const { gradeText } = await import('../../assets/js/lib/text/check-text.mjs');
+  const chem = read('docs/subjects/chemistry.md');
+  const start = chem.indexOf('| Typed (hybridization) | Against | Verdict | Feedback |');
+  assert.ok(start > 0, 'the table is found');
+  const lines = chem.slice(start).split('\n').slice(2);
+  const rows = lines.slice(0, lines.findIndex((line) => !line.startsWith('|')));
+  assert.ok(rows.length >= 7, `the rows are read (${rows.length})`);
+  let typedRead = 0;
+  for (const row of rows) {
+    const [typedCell, againstCell, verdict, feedback] = row.split('|').slice(1, -1).map((cell) => cell.trim());
+    const key = /`([^`]+)`/.exec(againstCell)[1];
+    for (const [, typed] of typedCell.matchAll(/`([^`]+)`/g)) {
+      const graded = gradeText(typed, key);
+      assert.equal(graded.status, verdict, `${typed} against ${key}`);
+      if (graded.message) assert.ok(chem.includes(graded.message) && (feedback.includes(graded.message) || /the same sentence/.test(feedback)), `the table quotes the message for ${typed}`);
+      typedRead += 1;
+    }
+  }
+  assert.ok(typedRead >= 18, `the typed responses are read (${typedRead})`);
+});

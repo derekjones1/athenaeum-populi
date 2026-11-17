@@ -5210,6 +5210,15 @@ const FORM_PREDICATES = {
   // "Write 6.07 as a fraction or mixed number" — the source offers the choice,
   // so the only thing to rule out is the decimal the question already prints.
   'fraction-or-mixed-number': (latex) => asFraction(latex) !== null || asMixedNumber(latex) !== null,
+  // An EXACT number that may be a half — a bond order (Chemistry 2e 8.4:
+  // 0.5, 1.5, 2.5, keyed as decimals): one number written plainly, as a
+  // decimal, a fraction, or a mixed number (`0.5`, `.5`, `1/2`, `\frac12`,
+  // `2\frac12`), never arithmetic left undone (`1+1-1`). `decimal` alone
+  // would send `1/2` back as "write it as a decimal", which asks the learner
+  // for nothing the value lacks; a measured quantity's `sig-figs` would ask
+  // for figures an exact count has not got.
+  'decimal-or-fraction': (latex) => asDecimal(latex) !== null || asFraction(latex) !== null || asMixedNumber(latex) !== null
+    || /^[+-]?\d+\s*\/\s*[1-9]\d*$/.test(bareLatex(latex)),
   // Lowest terms is also the sign reduced: at most one minus, never in the
   // denominator — `\frac{-23}{-4}` and `\frac{23}{-4}` are unfinished
   // (Intermediate Algebra 2.5, September 27, 2026), `\frac{-23}{4}` and
@@ -6965,6 +6974,7 @@ const FORM_PHRASES = {
   'mixed-number': 'as a mixed number',
   'improper-fraction': 'as an improper fraction',
   'fraction-or-mixed-number': 'as a fraction or mixed number',
+  'decimal-or-fraction': 'as one number, a decimal or a fraction',
   'lowest-terms': 'in lowest terms',
   'scientific-notation': 'in scientific notation',
   'prime-product': 'as a product of prime factors',
@@ -7112,7 +7122,7 @@ const NOTATION_FEEDBACK = {
 // The tokens whose shape is a number: a response refused under only these,
 // written with no letter in it, is arithmetic the learner left undone.
 const NUMBER_SHAPE_TOKENS = new Set(['decimal', 'whole-number', 'fraction', 'percent', 'lowest-terms', 'mixed-number',
-  'improper-fraction', 'fraction-or-mixed-number']);
+  'improper-fraction', 'fraction-or-mixed-number', 'decimal-or-fraction']);
 
 /**
  * The feedback for a 'form' verdict on THIS response. A right value typed as

@@ -8748,6 +8748,1486 @@
       "alt": "A table is shown that is comprised of six rows and six columns. The header row reads: “Number of Electron Regions,” “Electron region geometries; 0 lone pair,” “1 lone pair,” “2 lone pairs,” “3 lone pairs,” and “4 lone pairs.” The first column contains the numbers 2, 3, 4, 5, and 6. The first space in the second column contains a structure in which the letter E is single bonded to the letter X on each side. The angle of the bonds is labeled with a curved, double headed arrow and the value, “180 degrees.” The structure is labeled, “Linear.” The second space in the second column contains a structure in which the letter E is single bonded to the letter X on three sides. The angle between the bonds is labeled with a curved, double headed arrow and the value, “120 degrees.” The structure is labeled, “Trigonal planar.” The third space in the second column contains a structure in which the letter E is single bonded to the letter X four times. The angle between the bonds is labeled with a curved, double headed arrow and the value, “109 degrees.” The structure is labeled, “Tetrahedral.” The fourth space in the second column contains a structure in which the letter E is single bonded to the letter X on five sides. The angle between the bonds is labeled with a curved, double headed arrow and the values “90 and 120 degrees.” The structure is labeled, “Trigonal bipyramid.” The fifth space in the second column contains a structure in which the letter E is single bonded to the letter X on six sides. The angle between the bonds is labeled with a curved, double headed arrow and the value, “90 degrees.” The structure is labeled, “Octahedral.” The first space in the third column is empty while the second contains a structure in which the letter E is single bonded to the letter X on each side and has a lone pair of electrons. The angle between the bonds is labeled with a curved, double headed arrow and the value, “less than 120 degrees.” The structure is labeled, “Bent or angular.” The third space in the third column contains a structure in which the letter E is single bonded to the letter X three times and to a lone pair of electrons. It is labeled with a curved, double headed arrow and the value, “less than 109 degrees.” The structure is labeled, “Trigonal pyramid.” The fourth space in the third column contains a structure in which the letter E is single bonded to the letter X on four sides and has a lone pair of electrons. The bond angle is labeled with a curved, double headed arrow and the values, “less than 90 and less than 120 degrees.” The structure is labeled, “Sawhorse or seesaw.” The fifth space in the third column contains a structure in which the letter E is single bonded to the letter X on five sides and has a lone pair of electrons. The bond angle is labeled with a curved, double headed arrow and the value, “less than 90 degrees.” The structure is labeled, “Square pyramidal.” The first and second spaces in the fourth column are empty while the third contains a structure in which the letter E is single bonded to the letter X on each side and has two lone pairs of electrons. The bond angle is labeled with a curved, double headed arrow and the value, “less than less than 109 degrees.” The structure is labeled, “Bent or angular.” The fourth space in the fourth column contains a structure in which the letter E is single bonded to the letter X three times and to two lone pairs of electrons. The bond angle is labeled with a curved, double headed arrow and the value, “less than 90 degrees.” The structure is labeled, “T - shape.” The fifth space in the fourth column contains a structure in which the letter E is single bonded to the letter X on four sides and has two lone pairs of electrons. The bond angle is labeled with a curved, double headed arrow and the value “90 degrees.” The structure is labeled, “Square planar.” The first, second and third spaces in the fifth column are empty while the fourth contains a structure in which the letter E is single bonded to the letter X on each side and has three lone pairs of electrons. The bond angle is labeled with a curved, double headed arrow and the value, “180 degrees.” The structure is labeled, “Linear.” The fifth space in the fifth column contains a structure in which the letter E is single bonded to the letter X three times and to three lone pairs of electrons. The bond angle is labeled with a curved, double headed arrow and the value, “less than 90 degrees.” The structure is labeled, “T - shape.” The first, second, third, and fourth spaces in the sixth column are empty while the fifth contains a structure in which the letter E is single bonded to the letter X on each side and has four lone pairs of electrons. The bond angle is labeled with a curved, double headed arrow and the value “180 degrees.” The structure is labeled, “Linear.” All the structures use wedges and dashes to give them three dimensional appearances.",
       "caption": "The molecular structures are identical to the electron-pair geometries when there are no lone pairs present (first column). For a particular number of electron pairs (row), the molecular structures for one or more lone pairs are determined based on modifications of the corresponding electron-pair geometry."
     },
+    "CNX_Chem_08_00_LiqO2": {
+      "source": "media/CNX_Chem_08_00_LiqO2.jpg",
+      "sourceSha256": "743a93aa362193823376ae4db26ac93060a1c4f740c90d6a6ec094006ce8cf4d",
+      "module": "m68743",
+      "kind": "photo",
+      "width": 1300,
+      "height": 600,
+      "variants": [
+        {
+          "width": 800,
+          "height": 369,
+          "file": "CNX_Chem_08_00_LiqO2-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 600,
+          "file": "CNX_Chem_08_00_LiqO2-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A pitcher is shown pouring liquid oxygen through the gap between two magnets, where it has formed a solid disk. A call out box near the stream of liquid oxygen shows an image of six pairs of spheres, spread apart from one another. Another call out box near the solid disk shows ten pairs of spheres much closer together.",
+      "caption": "Oxygen molecules orient randomly most of the time, as shown in the top magnified view. However, when we pour liquid oxygen through a magnet, the molecules line up with the magnetic field, and the attraction allows them to stay suspended between the poles of the magnet where the magnetic field is strongest. Other diatomic molecules (like N 2 ) flow past the magnet. The detailed explanation of bonding described in this chapter allows us to understand this phenomenon. (credit: modification of work by Jefferson Lab)"
+    },
+    "CNX_Chem_08_00_N2O2Lewis_img": {
+      "source": "media/CNX_Chem_08_00_N2O2Lewis_img.jpg",
+      "sourceSha256": "89ddd68a7d2f6f6c05486891c2d93c7681f76cbc2bc82b7dffadfb4af0cca696",
+      "module": "m68743",
+      "kind": "photo",
+      "width": 325,
+      "height": 53,
+      "variants": [
+        {
+          "width": 325,
+          "height": 53,
+          "file": "CNX_Chem_08_00_N2O2Lewis_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two Lewis diagrams are shown. The diagram on the left shows two nitrogen atoms, represented by the letter N connected by three lines and with a lone pair of electrons on each end of the structure. The diagram on the right shows two oxygen atoms, depicted by the letter O, connected by two lines. Two pairs of electrons surround each oxygen to the top and ends of the structure.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_01_C4H6_img": {
+      "source": "media/CNX_Chem_08_01_C4H6_img.jpg",
+      "sourceSha256": "cc36bc922989f604ded2f3073751ec446b1b245a23cbbacc52e0d08210c4505e",
+      "module": "m68744",
+      "kind": "photo",
+      "width": 325,
+      "height": 172,
+      "variants": [
+        {
+          "width": 325,
+          "height": 172,
+          "file": "CNX_Chem_08_01_C4H6_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a molecule composed of four carbon atoms. There is a double bond between carbons one and two and three and four, while a single bond holds carbon two and three together. Carbons one and four are also bonded to two hydrogens with a single bond while carbons two and three are each bonded to one hydrogen each by a single bond.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_01_Exover_img": {
+      "source": "media/CNX_Chem_08_01_Exover_img.jpg",
+      "sourceSha256": "0ed954a718dab3a1c3e72930db95121ac02040db933046ee0703d9fd41a43ac0",
+      "module": "m68744",
+      "kind": "photo",
+      "width": 975,
+      "height": 153,
+      "variants": [
+        {
+          "width": 800,
+          "height": 125,
+          "file": "CNX_Chem_08_01_Exover_img-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 153,
+          "file": "CNX_Chem_08_01_Exover_img-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Three diagrams are shown and labeled “a,” “b,” and “c.” Diagram a depicts two peanut-shaped orbitals lying vertically side-by-side and overlapping. One orbital is smaller than the other. Diagram b shows two peanut-shaped orbitals lying end-to-end and overlapping. Diagram c shows two unequally sized peanut-shaped orbitals lying end-to-end and overlapping.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_01_Morse-3a8e": {
+      "source": "media/CNX_Chem_08_01_Morse-3a8e.jpg",
+      "sourceSha256": "3b13f24645b4b83463d2cd79268991e0a135cb282a4fd3b517a50e4adeddf58d",
+      "module": "m68744",
+      "kind": "photo",
+      "width": 975,
+      "height": 828,
+      "variants": [
+        {
+          "width": 800,
+          "height": 679,
+          "file": "CNX_Chem_08_01_Morse-3a8e-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 828,
+          "file": "CNX_Chem_08_01_Morse-3a8e-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A pair of diagrams are shown and labeled “a” and “b”. Diagram a shows three consecutive images. The first image depicts two separated blurry circles, each labeled with a positive sign and the term “H atom.” The phrase written under them reads, “Sufficiently far apart to have no interaction.” The second image shows the same two circles, but this time they are much closer together and are labeled, “Atoms begin to interact as they move closer together.” The third image shows the two circles overlapping, labeled, “H subscript 2,” and, “Optimum distance to achieve lowest overall energy of system.” Diagram b shows a graph on which the y-axis is labeled “Energy ( J ),” and the x-axis is labeled, “Internuclear distance ( p m ).” The midpoint of the y-axis is labeled as zero. The curve on the graph begins at zero p m and high on the y-axis. The graph slopes downward steeply to a point far below the zero joule line on the y-axis and the lowest point reads “0.74 p m” and “H bonded to H bond length.” It is also labeled “ negative 7.24 times 10 superscript negative 19 J.” The graph then rises again to zero J. The graph is accompanied by the same images from diagram a; the first image correlates to the point in the graph where it crosses the zero point on the y-axis, the third image where the graph is lowest.",
+      "caption": "(a) The interaction of two hydrogen atoms changes as a function of distance. (b) The energy of the system changes as the atoms interact. The lowest (most stable) energy occurs at a distance of 74 pm, which is the bond length observed for the H 2 molecule.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_01_N2LewStru_img": {
+      "source": "media/CNX_Chem_08_01_N2LewStru_img.jpg",
+      "sourceSha256": "ef6267a43cc84a26babbe86f34c3958d9ba80bb37e669969cc221e9e84728946",
+      "module": "m68744",
+      "kind": "photo",
+      "width": 650,
+      "height": 256,
+      "variants": [
+        {
+          "width": 650,
+          "height": 256,
+          "file": "CNX_Chem_08_01_N2LewStru_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two nitrogen atoms are shown both in a Lewis structure and as a diagram. The Lewis structure depicts the two nitrogen atoms bonded by a triple bond. The diagram shows two nitrogen atoms and their three peanut-shaped p-orbitals. One of the orbitals lies horizontally and overlaps between the two nuclei. It is labeled, “sigma bond.” The other two lie vertically and in the z-plane of the page. They overlap above and below and into and out of the page in relation to the nuclei. They are each labeled, “pi bond.”",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_01_O2bonds_img": {
+      "source": "media/CNX_Chem_08_01_O2bonds_img.jpg",
+      "sourceSha256": "41b7a6ba76de00d6152ad19cff2b88f1264b214e917dceecb50fc4e0da341860",
+      "module": "m68744",
+      "kind": "photo",
+      "width": 975,
+      "height": 255,
+      "variants": [
+        {
+          "width": 800,
+          "height": 209,
+          "file": "CNX_Chem_08_01_O2bonds_img-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 255,
+          "file": "CNX_Chem_08_01_O2bonds_img-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the orbitals of two atoms being added together as they form bonds. The two atoms are shown separately on the right, each having two peanut-shaped orbitals lying perpendicularly to one another. A right-facing arrow shows that the two have moved closer together and now the upper and lower portions of the vertical peanut-shaped orbitals are shown as merging together above and below the plane of the molecule while the horizontal peanut-shaped orbitals are overlapping between the two nuclei.",
+      "caption": ""
+    },
+    "CNX_Chem_08_01_bondtype_img": {
+      "source": "media/CNX_Chem_08_01_bondtype_img.jpg",
+      "sourceSha256": "7d318e5ad1209e418a12a05deb03836552c3b2cabff0bd35e723d4e80990caaf",
+      "module": "m68744",
+      "kind": "photo",
+      "width": 650,
+      "height": 144,
+      "variants": [
+        {
+          "width": 650,
+          "height": 144,
+          "file": "CNX_Chem_08_01_bondtype_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram contains three Lewis structures. The left most structure shows an H atom bonded to a C l atom by a single bond. The C l atom has three lone pairs of electrons. The phrase “One sigma bond No pi bonds” is written below the drawing. The center structure shows two O atoms bonded by a double bond. The O atoms each have two lone pairs of electrons. The phrase “One sigma bond One pi bond” is written below the drawing. The right most structure shows two N atoms bonded by a triple bond. Each N atom has a lone pairs of electrons. The phrase “One sigma bond Two pi bonds” is written below the drawing.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_01_overlap": {
+      "source": "media/CNX_Chem_08_01_overlap.jpg",
+      "sourceSha256": "b47544daf093553efb041305802fd68a92bae289a59cfd5cd1f6d826c00de009",
+      "module": "m68744",
+      "kind": "photo",
+      "width": 650,
+      "height": 158,
+      "variants": [
+        {
+          "width": 650,
+          "height": 158,
+          "file": "CNX_Chem_08_01_overlap-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two diagrams are shown. Diagram a contains two molecules whose p orbitals, which are depicted as two balloon-shaped structures that meet together to form a peanut shape, are laid end over end, creating an area of overlap. In diagram b, the same two molecules are shown, but this time, they are laid out in a way so as to form a near-ninety degree angle. In this diagram, the ends of two of these peanut-shaped orbitals do not overlap nearly as much.",
+      "caption": "(a) The overlap of two p orbitals is greatest when the orbitals are directed end to end. (b) Any other arrangement results in less overlap. The dots indicate the locations of the nuclei.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_01_pi": {
+      "source": "media/CNX_Chem_08_01_pi.jpg",
+      "sourceSha256": "554f5d9f2d239cf06ec1ce206b6b935429183b0cf7e32edc2787fbc85b0e860c",
+      "module": "m68744",
+      "kind": "photo",
+      "width": 325,
+      "height": 115,
+      "variants": [
+        {
+          "width": 325,
+          "height": 115,
+          "file": "CNX_Chem_08_01_pi-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two peanut-shaped orbitals are shown, lying vertically and parallel with one another. They overlap one another along the top and bottom of the orbital.",
+      "caption": "Pi (π) bonds form from the side-by-side overlap of two p orbitals. The dots indicate the location of the nuclei.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_01_sigma": {
+      "source": "media/CNX_Chem_08_01_sigma.jpg",
+      "sourceSha256": "33dd137756461ad804fac3b3295ca6fcb0def791a99a80b5b0117bf1bfa690a4",
+      "module": "m68744",
+      "kind": "photo",
+      "width": 650,
+      "height": 131,
+      "variants": [
+        {
+          "width": 650,
+          "height": 131,
+          "file": "CNX_Chem_08_01_sigma-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Three diagrams are shown and labeled “a,” “b,” and “c.” Diagram a shows two spherical orbitals lying side by side and overlapping. Diagram b shows one spherical and one peanut-shaped orbital lying near one another so that the spherical orbital overlaps with one end of the peanut-shaped orbital. Diagram c shows two peanut-shaped orbitals lying end to end so that one end of each orbital overlaps the other.",
+      "caption": "Sigma (σ) bonds form from the overlap of the following: (a) two s orbitals, (b) an s orbital and a p orbital, and (c) two p orbitals. The dots indicate the locations of the nuclei.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_02_BH3": {
+      "source": "media/CNX_Chem_08_02_BH3.jpg",
+      "sourceSha256": "25eb1b21aa828e01ea0af1cb58d24f902fd0fc05c4f40a5e3b66a3ef911220d4",
+      "module": "m68745",
+      "kind": "photo",
+      "width": 325,
+      "height": 118,
+      "variants": [
+        {
+          "width": 325,
+          "height": 118,
+          "file": "CNX_Chem_08_02_BH3-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A boron atom is shown connected to three hydrogen atoms, which are arranged around it like a pyramid. The angle from one line connecting the boron atom to a hydrogen atom to another line connecting the boron atom to a hydrogen atom is labeled, “120 degrees.”",
+      "caption": "BH 3 is an electron-deficient molecule with a trigonal planar structure.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_02_BH3Diag": {
+      "source": "media/CNX_Chem_08_02_BH3Diag.jpg",
+      "sourceSha256": "2c81b5b7cc1d953d4093e71d238161c2e40951e25de5e92dce595e9ace14a794",
+      "module": "m68745",
+      "kind": "photo",
+      "width": 1300,
+      "height": 402,
+      "variants": [
+        {
+          "width": 800,
+          "height": 247,
+          "file": "CNX_Chem_08_02_BH3Diag-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 402,
+          "file": "CNX_Chem_08_02_BH3Diag-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram is shown in two parts, connected by a right facing arrow labeled, “Hybridization.” The left diagram shows an up-facing arrow labeled “E.” To the lower right of the arrow is a short, horizontal line labeled, “2 s,” that has two vertical half-arrows facing up and down on it. To the upper right of the arrow are a series of three short, horizontal lines labeled, “2 p.” Above both sets of these lines is the phrase, “Orbitals in an isolated B atom.” One of the lines has a vertical, up-facing arrow drawn on it. The right side of the diagram shows three short, horizontal lines placed halfway up the space and each labeled, “s p superscript 2.” An upward-facing half arrow is drawn vertically on each line. Above these lines is one other short, horizontal line, labeled, “2 p.” Above both sets of lines is the phrase, “Orbitals in the s p superscript 2 hybridized B atom in B H subscript 3.”",
+      "caption": "In an isolated B atom, there are one 2 s and three 2 p valence orbitals. When boron is in a molecule with three regions of electron density, three of the orbitals hybridize and create a set of three sp 2 orbitals and one unhybridized 2 p orbital. The three half-filled hybrid orbitals each overlap with an orbital from a hydrogen atom to form three σ bonds in BH 3 ."
+    },
+    "CNX_Chem_08_02_CO2Diag": {
+      "source": "media/CNX_Chem_08_02_CO2Diag.jpg",
+      "sourceSha256": "f406965eea77ee22a21c5ff12f3531a37c7d341e23338fe7fd0abef5dea0b2d2",
+      "module": "m68746",
+      "kind": "photo",
+      "width": 1300,
+      "height": 402,
+      "variants": [
+        {
+          "width": 800,
+          "height": 247,
+          "file": "CNX_Chem_08_02_CO2Diag-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 402,
+          "file": "CNX_Chem_08_02_CO2Diag-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram is shown in two parts, connected by a right facing arrow labeled, “Hybridization.” The left diagram shows an up-facing arrow labeled, “E.” To the lower right of the arrow is a short, horizontal line labeled, “2 s,” that has two vertical half-arrows facing up and down on it. To the upper right of the arrow are a series of three short, horizontal lines labeled, “2 p.” Above both sets of lines is the phrase, “Orbitals in an isolated C atom.” There are two upward facing arrows on two of these lines. The right side of the diagram shows two short, horizontal lines placed halfway up the space and each labeled, “s p.” An upward-facing half arrow is drawn vertically on each line. Above these lines are two other short, horizontal lines, each labeled, “2 p,” and which have two upward facing arrows on them. Above both sets of lines is the phrase, “Orbitals in the s p hybridized C in C O subscript 2.”",
+      "caption": ""
+    },
+    "CNX_Chem_08_02_H2Otet": {
+      "source": "media/CNX_Chem_08_02_H2Otet.jpg",
+      "sourceSha256": "43a7fdce75b88a8b8ae4b8a6b10495c6a1b16fc52c441ef4109cba68dd028e9d",
+      "module": "m68745",
+      "kind": "photo",
+      "width": 650,
+      "height": 286,
+      "variants": [
+        {
+          "width": 650,
+          "height": 286,
+          "file": "CNX_Chem_08_02_H2Otet-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two diagrams are shown and labeled “a” and “b.” Diagram a shows two peanut-shaped orbitals lying in a tetrahedral arrangement around the letter “O.” Diagram b shows the same two orbitals, but they now overlap to the top and to the left with two spherical orbitals, each labeled “H.” A pair of electrons occupies each lobe of the peanut-shaped orbitals.",
+      "caption": "(a) A water molecule has four regions of electron density, so VSEPR theory predicts a tetrahedral arrangement of hybrid orbitals. (b) Two of the hybrid orbitals on oxygen contain lone pairs, and the other two overlap with the 1 s orbitals of hydrogen atoms to form the O–H bonds in H 2 O. This description is more consistent with the experimental structure.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_02_H2Ovb": {
+      "source": "media/CNX_Chem_08_02_H2Ovb.jpg",
+      "sourceSha256": "6e72b4c34988eba0012af2cafda108888e6e3950778eb1678cae1074091afef3",
+      "module": "m68745",
+      "kind": "photo",
+      "width": 325,
+      "height": 217,
+      "variants": [
+        {
+          "width": 325,
+          "height": 217,
+          "file": "CNX_Chem_08_02_H2Ovb-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two peanut-shaped orbitals lie perpendicular to one another. They overlap with spherical orbitals to the left and top of the diagram.",
+      "caption": "The hypothetical overlap of two of the 2 p orbitals on an oxygen atom (red) with the 1 s orbitals of two hydrogen atoms (blue) would produce a bond angle of 90°. This is not consistent with experimental evidence. Note that orbitals may sometimes be drawn in an elongated “balloon” shape rather than in a more realistic “plump” shape in order to make the geometry easier to visualize.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_02_HybrdOrbit": {
+      "source": "media/CNX_Chem_08_02_HybrdOrbit.jpg",
+      "sourceSha256": "cac208e88a87491384d8056cc7d75e6a9d3ba3a8077a82c133ddc704c7434ff2",
+      "module": "m68745",
+      "kind": "photo",
+      "width": 1300,
+      "height": 1217,
+      "variants": [
+        {
+          "width": 800,
+          "height": 749,
+          "file": "CNX_Chem_08_02_HybrdOrbit-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 1217,
+          "file": "CNX_Chem_08_02_HybrdOrbit-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A table is shown that is composed of five columns and six rows. The header row contains the phrases, “Regions of electron density,” “Arrangement,” (which has two columns below it), and “Hybridization,” (which has two columns below it). The first column contains the numbers “2,” “3,” “4,” “5,” and “6.” The second column contains images of a line, a triangle, a three sided pyramid, a trigonal bipyramid, and an eight-faced ocatahedron. The third column contains the terms, “Linear,” “Trigonal planar,” “Tetrahedral,” “Trigonal bipyramidal,” and “Octahedral.” The fourth column contains the terms “s p,” “s p superscript 2,” “s p superscript 3,” “s p superscript 3 d,” and “s p superscript 3 d superscript 2.” The last column contains drawings of the molecules beginning with a peanut-shaped structure marked with an angle of “180 degrees.” The second structure is made up of three equal-sized, rounded structures connected at one point with an angle of “120 degrees,” while the third structure is a three-dimensional arrangement of four equal-sized, rounded structures labeled as “109.5 degrees.” The fourth structure is made up of five equal-sized, rounded structures connected at “120 and 90 degrees,” while the fifth structure has six equal-sized, rounded structures connected at “90 degrees.”",
+      "caption": "The shapes of hybridized orbital sets are consistent with the electron-pair geometries. For example, an atom surrounded by three regions of electron density is sp 2 hybridized, and the three sp 2 orbitals are arranged in a trigonal planar fashion."
+    },
+    "CNX_Chem_08_02_SF4_img": {
+      "source": "media/CNX_Chem_08_02_SF4_img.jpg",
+      "sourceSha256": "c20c9eb453a686cafa37b8fe4fdd7d7e35f78de4eb1fb7765da22999c944b66a",
+      "module": "m68745",
+      "kind": "photo",
+      "width": 325,
+      "height": 144,
+      "variants": [
+        {
+          "width": 325,
+          "height": 144,
+          "file": "CNX_Chem_08_02_SF4_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A Lewis structure is shown in which four fluorine atoms are each attached to one sulfur atom. Two of the attached fluorine atoms are vertically attached up and down, while two are attached into and out of the page to the right. The sulfur also has one lone pair of electrons attached to the left of the structure.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_02_SF6": {
+      "source": "media/CNX_Chem_08_02_SF6.jpg",
+      "sourceSha256": "0ee0837e1a69d1570b4059c63384814ca75fba99eb601c23e06238ea4f3ac0d2",
+      "module": "m68745",
+      "kind": "photo",
+      "width": 650,
+      "height": 294,
+      "variants": [
+        {
+          "width": 650,
+          "height": 294,
+          "file": "CNX_Chem_08_02_SF6-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two images are shown and labeled “a” and “b.” Image a depicts a ball-and-stick model in an octahedral arrangement. Image b depicts the hybrid orbitals in the same arrangement and each is labeled, “s p superscript three d superscript two.”",
+      "caption": "(a) Sulfur hexafluoride, SF 6 , has an octahedral structure that requires sp 3 d 2 hybridization. (b) The six sp 3 d 2 orbitals form an octahedral structure around sulfur. Again, the minor lobe of each orbital is not shown for clarity.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_02_SulfManuf1_img": {
+      "source": "media/CNX_Chem_08_02_SulfManuf1_img.jpg",
+      "sourceSha256": "a7aec2cd254d304ad5d2f14775c80bb19dc47b7ca97553ef9095256a6869683b",
+      "module": "m68745",
+      "kind": "photo",
+      "width": 325,
+      "height": 229,
+      "variants": [
+        {
+          "width": 325,
+          "height": 229,
+          "file": "CNX_Chem_08_02_SulfManuf1_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A Lewis structure is shown in which eight sulfur atoms, each with two lone pairs of eletrons, are single bonded together into an eight-sided ring.",
+      "caption": ""
+    },
+    "CNX_Chem_08_02_SulfManuf2_img": {
+      "source": "media/CNX_Chem_08_02_SulfManuf2_img.jpg",
+      "sourceSha256": "b0ad85271a030ef22bf2bf182de6a6fae1bc4ff0ed7237ccd25b3cde854b20d1",
+      "module": "m68745",
+      "kind": "photo",
+      "width": 650,
+      "height": 67,
+      "variants": [
+        {
+          "width": 650,
+          "height": 67,
+          "file": "CNX_Chem_08_02_SulfManuf2_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two Lewis structure are shown, connected by a double-ended arrow. The left structure shows a sulfur atom with one lone pair of electrons double bonded to an oxygen atom with two lone pairs of electrons on the left and single bonded to an oxygen atom with three lone pairs of electrons on the right. The right structure shows the same molecule, except that the double bonded oxygen is on the right side of the sulfur and the single bonded oxygen is to the left of the sulfur.",
+      "caption": ""
+    },
+    "CNX_Chem_08_02_SulfManuf3_img": {
+      "source": "media/CNX_Chem_08_02_SulfManuf3_img.jpg",
+      "sourceSha256": "d025412598953a9f65497370c370a20eb8b93d19d42f21951447c6461c681695",
+      "module": "m68745",
+      "kind": "photo",
+      "width": 325,
+      "height": 175,
+      "variants": [
+        {
+          "width": 325,
+          "height": 175,
+          "file": "CNX_Chem_08_02_SulfManuf3_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A Lewis structure of a sulfur atom singly bonded to two oxygen atoms, each with three lone pairs of electrons, and double bonded to a third oxygen atom with two lone pairs of electrons is shown.",
+      "caption": ""
+    },
+    "CNX_Chem_08_02_SulfManuf4_img": {
+      "source": "media/CNX_Chem_08_02_SulfManuf4_img.jpg",
+      "sourceSha256": "b688d8d1145b704e8903915eaec4ec1de6a15e3b0dd14d9c08a6cd5617f5979c",
+      "module": "m68745",
+      "kind": "photo",
+      "width": 325,
+      "height": 149,
+      "variants": [
+        {
+          "width": 325,
+          "height": 149,
+          "file": "CNX_Chem_08_02_SulfManuf4_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A Lewis structure is shown in which a sulfur atom is single bonded to four oxygen atoms. Two of the oxygen atoms have three lone pairs of electrons while the other two each have two lone pairs of electrons and are each singly bonded to a hydrogen atom.",
+      "caption": ""
+    },
+    "CNX_Chem_08_02_acetic_img": {
+      "source": "media/CNX_Chem_08_02_acetic_img.jpg",
+      "sourceSha256": "9c143d56ca7183e9b64f56fa5b33113314c746d3242eed3c9b8d9874c4382733",
+      "module": "m68745",
+      "kind": "photo",
+      "width": 325,
+      "height": 172,
+      "variants": [
+        {
+          "width": 325,
+          "height": 172,
+          "file": "CNX_Chem_08_02_acetic_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A Lewis structure is shown in which a carbon atom is double bonded to an oxygen atom that has two lone pairs of electrons and single bonded to another oxygen atom that is single boned to a hydrogen atom. This second oxygen atom has two lone pairs of electrons. The carbon is also single bonded to a carbon atom that is single bonded to three hydrogen atoms.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_02_enyne_img": {
+      "source": "media/CNX_Chem_08_02_enyne_img.jpg",
+      "sourceSha256": "e78a8edde1587ff5cfdee897f56c2482115804279b470c83ba501f656d7d35f1",
+      "module": "m68745",
+      "kind": "photo",
+      "width": 650,
+      "height": 144,
+      "variants": [
+        {
+          "width": 650,
+          "height": 144,
+          "file": "CNX_Chem_08_02_enyne_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A Lewis structure is shown that is missing all of its bonds. Six carbon atoms form a chain. There are three hydrogen atoms located around the first carbon, two located around the second, one located near the fifth, and two located around the sixth carbon.",
+      "caption": ""
+    },
+    "CNX_Chem_08_02_ethane": {
+      "source": "media/CNX_Chem_08_02_ethane.jpg",
+      "sourceSha256": "adc3b94b6e5476ccc0b166ba039902210a425610489e9b520811fc2f094a5e7f",
+      "module": "m68745",
+      "kind": "photo",
+      "width": 1300,
+      "height": 363,
+      "variants": [
+        {
+          "width": 800,
+          "height": 223,
+          "file": "CNX_Chem_08_02_ethane-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 363,
+          "file": "CNX_Chem_08_02_ethane-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two diagrams are shown and labeled “a” and “b.” Diagram a shows two carbon atoms, each surrounded by their four s p subscript three hybridized orbitals in a three dimensional arrangement. Each of the orbitals is shown overlapping with a spherical hydrogen atom. Diagram b shows the same general arrangement, but the hydrogen atoms are just represented by an, “H” and their spherical orbitals are not shown.",
+      "caption": "(a) In the ethane molecule, C 2 H 6 , each carbon has four sp 3 orbitals. (b) These four orbitals overlap to form seven σ bonds."
+    },
+    "CNX_Chem_08_02_hybrid_img": {
+      "source": "media/CNX_Chem_08_02_hybrid_img.jpg",
+      "sourceSha256": "2aee71ae0099bafd140e15a86ea119934094f8723743baae7f5656fb63485a67",
+      "module": "m68745",
+      "kind": "photo",
+      "width": 1300,
+      "height": 337,
+      "variants": [
+        {
+          "width": 800,
+          "height": 207,
+          "file": "CNX_Chem_08_02_hybrid_img-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 337,
+          "file": "CNX_Chem_08_02_hybrid_img-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Three Lewis structures are shown. The left structure shows an oxygen atom with two lone pairs of electrons single bonded to two hydrogen atoms. The middle structure is made up of a sulfur atom with two lone pairs of electrons single bonded to two hydrogen atoms. The right structure is made up of a tellurium atom with two lone pairs of electrons single bonded to two hydrogen atoms. From left to right, the bond angles of each molecule decrease.",
+      "caption": ""
+    },
+    "CNX_Chem_08_02_methionine_img": {
+      "source": "media/CNX_Chem_08_02_methionine_img.jpg",
+      "sourceSha256": "78266cc6af90c73950e4686dd6248541deb7c0e4f0c59a6c38f6e00424123528",
+      "module": "m68745",
+      "kind": "photo",
+      "width": 500,
+      "height": 211,
+      "variants": [
+        {
+          "width": 500,
+          "height": 211,
+          "file": "CNX_Chem_08_02_methionine_img-500.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A Lewis structure is shown in which a carbon atom is single bonded to three hydrogen atoms and single bonded to a sulfur atom with two lone pairs of electrons. The sulfur atom is attached to a chain of four singly bonded carbon atoms, the first two of which are single bonded to two hydrogen atoms each, and the third of which is single bonded to a hydrogen atom and single bonded to a nitrogen atom which has one lone electron pair. The nitrogen atom is also single bonded to two hydrogen atoms. The fourth andfinal carbon in the chain is double bonded to an oxygen with two lone pairs of electrons and single bonded to an oxygen atom with two lone pairs of electrons. The second oxygen atom is single bonded to a hydrogen atom.",
+      "caption": ""
+    },
+    "CNX_Chem_08_02_phosnitro_img": {
+      "source": "media/CNX_Chem_08_02_phosnitro_img.jpg",
+      "sourceSha256": "78a6d6bc35afa8ab6dfd433d2236377c8f19f28cb5262294cacc3868f830afd2",
+      "module": "m68745",
+      "kind": "photo",
+      "width": 650,
+      "height": 171,
+      "variants": [
+        {
+          "width": 650,
+          "height": 171,
+          "file": "CNX_Chem_08_02_phosnitro_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two Lewis structures are shown. The left structure shows a nitrogen atom with one lone pair of electrons single bonded to three fluorine atoms, each of which has three lone pairs of electrons. The right structure shows a phosphorus atoms single bonded to five fluorine atoms, each of which has three lone pairs of electrons.",
+      "caption": ""
+    },
+    "CNX_Chem_08_02_phsphorus1_img": {
+      "source": "media/CNX_Chem_08_02_phsphorus1_img.jpg",
+      "sourceSha256": "974801419a6e9e3cf316672786067f03d8ee3bc44c5707058177d2848f7c61a1",
+      "module": "m68745",
+      "kind": "photo",
+      "width": 325,
+      "height": 181,
+      "variants": [
+        {
+          "width": 325,
+          "height": 181,
+          "file": "CNX_Chem_08_02_phsphorus1_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A Lewis structure is shown in which three phosphorus atoms are single bonded together to form a triangle. Each phosphorus is bonded to a sulfur atom by a vertical single bond and each of those sulfur atoms is then bonded to a single phosphorus atom so that a six-sided ring is created with a sulfur in the middle.",
+      "caption": ""
+    },
+    "CNX_Chem_08_02_phsphorus2_img": {
+      "source": "media/CNX_Chem_08_02_phsphorus2_img.jpg",
+      "sourceSha256": "853d59d46c64ac04d85e149a720df5aad4cbddb11e9e8a2d98b80f98a4a88af8",
+      "module": "m68745",
+      "kind": "photo",
+      "width": 651,
+      "height": 207,
+      "variants": [
+        {
+          "width": 651,
+          "height": 207,
+          "file": "CNX_Chem_08_02_phsphorus2_img-651.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two Lewis structure are shown, the left of which depicts three phosphorus atoms single bonded together to form a triangle. Each phosphorus is bonded to a sulfur atom by a vertical single bond and each of those sulfur atoms is then bonded to a single phosphorus atom so that a six-sided ring is created with a sulfur in the middle. Each sulfur atom in this structure has two lone pairs of electrons while each phosphorus has one lone pair. The second Lewis structure shows a chlorate atom single bonded to two oxygen atoms, each of which has three lone pairs of electrons, and double bonded to an oxygen atom, which has two lone pairs of electrons.",
+      "caption": ""
+    },
+    "CNX_Chem_08_02_sp2Conv": {
+      "source": "media/CNX_Chem_08_02_sp2Conv.jpg",
+      "sourceSha256": "530521909b69426afb614f09ea6b76f11338eaa28343fa0f3e0e7d7ad36fb71e",
+      "module": "m68745",
+      "kind": "photo",
+      "width": 325,
+      "height": 197,
+      "variants": [
+        {
+          "width": 325,
+          "height": 197,
+          "file": "CNX_Chem_08_02_sp2Conv-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Three balloon-like orbitals are shown, and connect together near their narrower ends in one plane. The angle between a pair of lobes is labeled, “120 degrees.”",
+      "caption": "This alternate way of drawing the trigonal planar sp 2 hybrid orbitals is sometimes used in more crowded figures.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_02_sp2Ex": {
+      "source": "media/CNX_Chem_08_02_sp2Ex.jpg",
+      "sourceSha256": "4601537dbc47303d3ae1831605f14a7063023d71e7280cbf3f20e3a5f785cd04",
+      "module": "m68745",
+      "kind": "photo",
+      "width": 650,
+      "height": 134,
+      "variants": [
+        {
+          "width": 650,
+          "height": 134,
+          "file": "CNX_Chem_08_02_sp2Ex-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Three Lewis structures are shown. The left-hand structure shows a chlorine atom surrounded by three lone pairs of electrons single bonded to a nitrogen atom with one lone pair of electrons and double bonded to an oxygen atom with two lone pairs of electrons. The middle structure shows a carbon atom single bonded to two hydrogen atoms and double bonded to an oxygen atom that has two lone pairs of electrons. The right-hand structure shows two carbon atoms, double bonded to one another and each single bonded to two hydrogen atoms.",
+      "caption": "The central atom(s) in each of the structures shown contain three regions of electron density and are sp 2 hybridized. As we know from the discussion of VSEPR theory, a region of electron density contains all of the electrons that point in one direction. A lone pair, an unpaired electron, a single bond, or a multiple bond would each count as one region of electron density.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_02_sp2Geom": {
+      "source": "media/CNX_Chem_08_02_sp2Geom.jpg",
+      "sourceSha256": "350d62c9b99f65612eee4a8f59fca084c1bee2ca576520430f3e321929b97548",
+      "module": "m68745",
+      "kind": "photo",
+      "width": 1300,
+      "height": 843,
+      "variants": [
+        {
+          "width": 800,
+          "height": 518,
+          "file": "CNX_Chem_08_02_sp2Geom-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 843,
+          "file": "CNX_Chem_08_02_sp2Geom-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This shows a series of three diagrams with one on the left connected to one on the right by a right-facing arrow that is labeled, “Hybridization.” Below the one on the right is a downward-facing arrow labeled, “Gives a trigonal planar arrangement,” connecting to the last diagram. The first diagram shows a blue spherical orbital labeled “S” and then two red and blue, peanut-shaped orbitals, each placed on an X, Y, Z axis system, labeled “P subscript x” and “P subscript y.” The two red and blue orbitals are located on the x and z axes, respectively. The second diagram shows the three orbitals again on an X, Y, Z axis system, but they are yellow and have one enlarged lobe and one smaller lobe. Each lies in a different axis in the drawing. The third diagram shows the same three orbitals, but their smaller lobes now overlap while their larger lobes are located at and labeled as “120 degrees” from one another.",
+      "caption": "The hybridization of an s orbital (blue) and two p orbitals (red) produces three equivalent sp 2 hybridized orbitals (yellow) oriented at 120° with respect to each other. The remaining unhybridized p orbital is not shown here, but is located along the z axis.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_02_sp3Diag": {
+      "source": "media/CNX_Chem_08_02_sp3Diag.jpg",
+      "sourceSha256": "e52ec46e1a8805bfca4683e0353e704ac3da906ca5c86e9a1767bc3fb93ae4eb",
+      "module": "m68745",
+      "kind": "photo",
+      "width": 1300,
+      "height": 402,
+      "variants": [
+        {
+          "width": 800,
+          "height": 247,
+          "file": "CNX_Chem_08_02_sp3Diag-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 402,
+          "file": "CNX_Chem_08_02_sp3Diag-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram is shown in two parts, connected by a right facing arrow labeled, “Hybridization.” The left diagram shows an up-facing arrow labeled “E.” To the lower right of the arrow is a short, horizontal line labeled, “2 s,” that has two vertical half-arrows facing up and down on it. To the upper right of the arrow are a series of three short, horizontal lines labeled, “2 p.” Two of the lines have a vertical, up-facing arrow drawn on them. Above both sets of lines is the phrase, “Orbitals in an isolated C atom.” The right side of the diagram shows four short, horizontal lines placed halfway up the space and each labeled, “s p superscript 3.” An upward-facing half arrow is drawn vertically on each line. Above these lines is the phrase, “Orbitals in the s p superscript 3 hybridized C atom in C H subscript 4.”",
+      "caption": "The four valence atomic orbitals from an isolated carbon atom all hybridize when the carbon bonds in a molecule like CH 4 with four regions of electron density. This creates four equivalent sp 3 hybridized orbitals. Overlap of each of the hybrid orbitals with a hydrogen orbital creates a C–H σ bond."
+    },
+    "CNX_Chem_08_02_sp3Geom": {
+      "source": "media/CNX_Chem_08_02_sp3Geom.jpg",
+      "sourceSha256": "e86708ad473dda533eed060a4b2924a0ec7ba671f7658e7d4b0748c73242148b",
+      "module": "m68745",
+      "kind": "photo",
+      "width": 1300,
+      "height": 1117,
+      "variants": [
+        {
+          "width": 800,
+          "height": 687,
+          "file": "CNX_Chem_08_02_sp3Geom-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 1117,
+          "file": "CNX_Chem_08_02_sp3Geom-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A series of three diagrams connected by a right-facing arrow that is labeled, “Hybridization,” and a downward-facing arrow labeled, “Gives a tetrahedral arrangement,” are shown. The first diagram shows a blue spherical orbital and three red, peanut-shaped orbitals, each placed on an x, y, z axis system. The three red orbitals are located on the x , y and z axes, respectively. The second diagram shows the same four orbitals, but they are now purple and have one enlarged lobe and one smaller lobe. Each lies in a different axis in the drawing. The third diagram shows the same four orbitals, but their smaller lobes now overlap to form a tetrahedral structure.",
+      "caption": "The hybridization of an s orbital (blue) and three p orbitals (red) produces four equivalent sp 3 hybridized orbitals (yellow) oriented at 109.5° with respect to each other."
+    },
+    "CNX_Chem_08_02_sp3d": {
+      "source": "media/CNX_Chem_08_02_sp3d.jpg",
+      "sourceSha256": "e62bbeef6b7ed9f394e9ac907565a470b3ec9951551f0e78988a3287b12665df",
+      "module": "m68745",
+      "kind": "photo",
+      "width": 650,
+      "height": 321,
+      "variants": [
+        {
+          "width": 650,
+          "height": 321,
+          "file": "CNX_Chem_08_02_sp3d-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two images are shown and labeled “a” and “b.” Image a depicts a ball-and-stick model in a trigonal bipyramidal arrangement. Image b depicts the hybrid orbitals in the same arrangement and each is labeled, “s p superscript three d.”",
+      "caption": "(a) The five regions of electron density around phosphorus in PCl 5 require five hybrid sp 3 d orbitals. (b) These orbitals combine to form a trigonal bipyramidal structure with each large lobe of the hybrid orbital pointing at a vertex. As before, there are also small lobes pointing in the opposite direction for each orbital (not shown for clarity).",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_02_sp3d_img": {
+      "source": "media/CNX_Chem_08_02_sp3d_img.jpg",
+      "sourceSha256": "d22f116eb6b9516a4333e7472362a2cb472d875d43a5e37fd45bacea9daac596",
+      "module": "m68745",
+      "kind": "photo",
+      "width": 650,
+      "height": 165,
+      "variants": [
+        {
+          "width": 650,
+          "height": 165,
+          "file": "CNX_Chem_08_02_sp3d_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Three Lewis structures are shown along with designations of molecular shape. The left image shows a sulfur atom singly bonded to four fluorine atoms. The sulfur atom has one lone pair of electrons while each fluorine has three. Two fluorine atoms are drawn vertically up and down from the sulfur while the other two are shown going into and out of the page. The second structure shows one chlorine atom singly bonded to three fluorine atoms. The chlorine has two lone pairs of electrons while each fluorine has three. Two fluorine atoms are drawn vertically up and down from the sulfur while the other is shown horizontally. The right structure shows a chlorine atom singly bonded to four fluorine atoms. The chlorine atom has one lone pair of electrons and a superscript plus sign, while each fluorine has three lone pairs of electrons. Two fluorine atoms are drawn vertically up and down from the sulfur while the other two are shown going into and out of the page.",
+      "caption": "The three compounds pictured exhibit sp 3 d hybridization in the central atom and a trigonal bipyramid form. SF 4 and ClF 4 + have one lone pair of electrons on the central atom, and ClF 3 has two lone pairs giving it the T-shape shown.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_02_spDiag": {
+      "source": "media/CNX_Chem_08_02_spDiag.jpg",
+      "sourceSha256": "e0eb3f63760d774c86cae914e63871908ac42f4d38c38e186e88b375199e1f57",
+      "module": "m68745",
+      "kind": "photo",
+      "width": 1300,
+      "height": 402,
+      "variants": [
+        {
+          "width": 800,
+          "height": 247,
+          "file": "CNX_Chem_08_02_spDiag-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 402,
+          "file": "CNX_Chem_08_02_spDiag-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram is shown in two parts, connected by a right facing arrow labeled, “Hybridization.” The left diagram shows an up-facing arrow labeled, “E.” To the lower right of the arrow is a short, horizontal line labeled, “2 s,” that has two vertical half-arrows facing up and down on it. To the upper right of the arrow are a series of three short, horizontal lines labeled, “2 p.” Above these two sets of lines is the phrase, “Orbitals in an isolated B e atom.” The right side of the diagram shows two short, horizontal lines placed halfway up the space and each labeled, “s p.” An upward-facing half arrow is drawn vertically on each line. Above these lines are two other short, horizontal lines, each labeled, “2 p.” Above these two sets of lines is the phrase, “Orbitals in the s p hybridized B e in B e C l subscript 2.”",
+      "caption": "This orbital energy-level diagram shows the sp hybridized orbitals on Be in the linear BeCl 2 molecule. Each of the two sp hybrid orbitals holds one electron and is thus half filled and available for bonding via overlap with a Cl 3 p orbital."
+    },
+    "CNX_Chem_08_02_spGeom": {
+      "source": "media/CNX_Chem_08_02_spGeom.jpg",
+      "sourceSha256": "e65571ebb78107922510c37fe14c7e32d1ae59243196002626075560bd04d339",
+      "module": "m68745",
+      "kind": "photo",
+      "width": 1300,
+      "height": 615,
+      "variants": [
+        {
+          "width": 800,
+          "height": 378,
+          "file": "CNX_Chem_08_02_spGeom-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 615,
+          "file": "CNX_Chem_08_02_spGeom-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A series of three diagrams connected by a right-facing arrow that is labeled, “Hybridization,” and a downward-facing arrow labeled, “Gives a linear arrangement,” are shown. The first diagram shows a blue spherical orbital and a red, peanut-shaped orbital, each placed on an X, Y, Z axis system. The second diagram shows the same two orbitals, but they are now purple and have one enlarged lobe and one smaller lobe. Each lies along the x-axis in the drawing. The third diagram shows the same two orbitals, but their smaller lobes now overlap along the x-axis while their larger lobes are located at and labeled as “180 degrees” from one another.",
+      "caption": "Hybridization of an s orbital (blue) and a p orbital (red) of the same atom produces two sp hybrid orbitals (yellow). Each hybrid orbital is oriented primarily in just one direction. Note that each sp orbital contains one lobe that is significantly larger than the other. The set of two sp orbitals are oriented at 180°, which is consistent with the geometry for two domains."
+    },
+    "CNX_Chem_08_02_sulfate_img": {
+      "source": "media/CNX_Chem_08_02_sulfate_img.jpg",
+      "sourceSha256": "6241cca579e2981b42dcccf87dea406173ba541fa820c8451af7f12e752e0a2c",
+      "module": "m68745",
+      "kind": "photo",
+      "width": 650,
+      "height": 379,
+      "variants": [
+        {
+          "width": 650,
+          "height": 379,
+          "file": "CNX_Chem_08_02_sulfate_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A structure is shown in which a sulfur atom is bonded to four oxygen atoms in a tetrahedral arrangement. Two of the oxygen atoms have a negative charge.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_02_urea_img": {
+      "source": "media/CNX_Chem_08_02_urea_img.jpg",
+      "sourceSha256": "eb1eda163beb010d7364b1f2fffabab1fc5f36141303fce6467800edff44e563",
+      "module": "m68745",
+      "kind": "photo",
+      "width": 325,
+      "height": 158,
+      "variants": [
+        {
+          "width": 325,
+          "height": 158,
+          "file": "CNX_Chem_08_02_urea_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A Lewis structure is shown in which a carbon atom is double bonded to an oxygen atom that has two lone pairs of electrons. The carbon atom forms single bonds to two nitrogen atoms. Each nitrogen is single bonded to two hydrogen atoms, and each nitrogen atoms has one lone pair of electrons.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_02_xefluoride_img": {
+      "source": "media/CNX_Chem_08_02_xefluoride_img.jpg",
+      "sourceSha256": "da60bff1f5b0ac61b693782fdd81e05f02ddd81a1e1c43e0618faeb0679e791f",
+      "module": "m68745",
+      "kind": "photo",
+      "width": 325,
+      "height": 53,
+      "variants": [
+        {
+          "width": 325,
+          "height": 53,
+          "file": "CNX_Chem_08_02_xefluoride_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A Lewis structure is shown in which a xenon atom that has three lone pairs of electrons is single bonded to two fluorine atoms, each of which has three lone pairs of electrons.",
+      "caption": ""
+    },
+    "CNX_Chem_08_03_Acetonitri_img": {
+      "source": "media/CNX_Chem_08_03_Acetonitri_img.jpg",
+      "sourceSha256": "58d20987afe840e3bf470ce4d85523837719876f0665255467ae935200bd64ba",
+      "module": "m68746",
+      "kind": "photo",
+      "width": 650,
+      "height": 157,
+      "variants": [
+        {
+          "width": 650,
+          "height": 157,
+          "file": "CNX_Chem_08_03_Acetonitri_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A Lewis structure is shown in which a carbon atom is attached by single bonds to three hydrogen atoms. It is also attached by a single bond to a carbon atom that is triple bonded to a nitrogen atom with one lone electron pair. Below the structure is a right facing arrow with its head near the nitrogen and its tail, which looks like a plus sign, located near the carbon atoms. The arrow is labeled, “dipole moment.”",
+      "caption": ""
+    },
+    "CNX_Chem_08_03_C2H2": {
+      "source": "media/CNX_Chem_08_03_C2H2.jpg",
+      "sourceSha256": "6c4a4b43a9a794d6f4913cf89fa7f86765c2a5aec6a38aaf1e7a0d5aee9ad730",
+      "module": "m68746",
+      "kind": "photo",
+      "width": 975,
+      "height": 312,
+      "variants": [
+        {
+          "width": 800,
+          "height": 256,
+          "file": "CNX_Chem_08_03_C2H2-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 312,
+          "file": "CNX_Chem_08_03_C2H2-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two diagrams are shown and labeled, “a” and “b.” Diagram a shows two carbon atoms with two purple balloon-like orbitals arranged in a plane around each of them, and four red balloon-like orbitals arranged along the y and z axes perpendicular to the plane of the molecule. There is an overlap of two of the purple orbitals in between the two carbon atoms. The other two purple orbitals that face the outside of the molecule are shown interacting with spherical blue orbitals from two hydrogen atoms. Diagram b depicts a similar image to diagram a, but the red, vertical orbitals are interacting above and below and to the front and back of the plane of the molecule to form two areas labeled, “One pi bond,” and, “Second pi bond,” each respectively.",
+      "caption": "(a) In the acetylene molecule, C 2 H 2, there are two C–H σ bonds and a C ≡ C triple bond involving one C–C σ bond and two C–C π bonds. The dashed lines, each connecting two lobes, indicate the side-by-side overlap of the four unhybridized p orbitals. (b) This shows the overall outline of the bonds in C 2 H 2 . The two lobes of each of the π bonds are positioned across from each other around the line of the C–C σ bond.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_03_C2H4orbit": {
+      "source": "media/CNX_Chem_08_03_C2H4orbit.jpg",
+      "sourceSha256": "8e599e928f9e02c0f79f692e73a09c3714ecafb9b0f1aadc793d5eb6de91e942",
+      "module": "m68746",
+      "kind": "photo",
+      "width": 975,
+      "height": 312,
+      "variants": [
+        {
+          "width": 800,
+          "height": 256,
+          "file": "CNX_Chem_08_03_C2H4orbit-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 312,
+          "file": "CNX_Chem_08_03_C2H4orbit-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two diagrams are shown labeled, “a” and “b.” Diagram a shows two carbon atoms with three purple balloon-like orbitals arranged in a plane around them and two red balloon-like orbitals arranged vertically and perpendicularly to the plane. There is an overlap of two of the purple orbitals in between the two carbon atoms, and the other four purple orbitals that face the outside of the molecule are shown interacting with spherical blue orbitals from four hydrogen atoms. Diagram b depicts a similar image to diagram a, but the red, vertical orbitals are interacting above and below the plane of the molecule to form two areas labeled, “One pi bond.”",
+      "caption": "In the ethene molecule, C 2 H 4, there are (a) five σ bonds. One C–C σ bond results from overlap of sp 2 hybrid orbitals on the carbon atom with one sp 2 hybrid orbital on the other carbon atom. Four C–H bonds result from the overlap between the C atoms' sp 2 orbitals with s orbitals on the hydrogen atoms. (b) The π bond is formed by the side-by-side overlap of the two unhybridized p orbitals in the two carbon atoms. The two lobes of the π bond are above and below the plane of the σ system.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_03_C4H4Lewis_img": {
+      "source": "media/CNX_Chem_08_03_C4H4Lewis_img.jpg",
+      "sourceSha256": "b815c643ba00a5fd104889d992febcb2ea3fd16da06130b3d7b67ab8036625d5",
+      "module": "m68746",
+      "kind": "photo",
+      "width": 325,
+      "height": 131,
+      "variants": [
+        {
+          "width": 325,
+          "height": 131,
+          "file": "CNX_Chem_08_03_C4H4Lewis_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A Lewis structure is shown in which two carbon atoms are bonded together by a double bond. Each carbon atom is bonded to two hydrogen atoms by a single bond.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_03_C6H6": {
+      "source": "media/CNX_Chem_08_03_C6H6.jpg",
+      "sourceSha256": "e5d3b5709eb3ee5a58d50c9821789ced097327c29cb049efd058f1310c50a74f",
+      "module": "m68746",
+      "kind": "photo",
+      "width": 650,
+      "height": 256,
+      "variants": [
+        {
+          "width": 650,
+          "height": 256,
+          "file": "CNX_Chem_08_03_C6H6-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram is shown that is made up of two Lewis structures connected by a double ended arrow. The left image shows six carbon atoms bonded together with alternating double and single bonds to form a six-sided ring. Each carbon is also bonded to a hydrogen atom by a single bond. The right image shows the same structure, but the double and single bonds in between the carbon atoms have changed positions.",
+      "caption": "Each carbon atom in benzene, C 6 H 6 , is sp 2 hybridized, independently of which resonance form is considered. The electrons in the π bonds are not located in one set of p orbitals or the other, but rather delocalized throughout the molecule.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_03_HybridAll_img": {
+      "source": "media/CNX_Chem_08_03_HybridAll_img.jpg",
+      "sourceSha256": "cd236ef85d7e077f496546331fb0307f5760186cd28e9b95ff6847c443d94b67",
+      "module": "m68746",
+      "kind": "photo",
+      "width": 325,
+      "height": 257,
+      "variants": [
+        {
+          "width": 325,
+          "height": 257,
+          "file": "CNX_Chem_08_03_HybridAll_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A Lewis structure is shown in which a hexagonal ring structure is made up of five carbon atoms and one nitrogen atom with a lone pair of electrons. There are alternating double and single bonds in between each carbon atom. Each carbon atom is also single bonded to one hydrogen atom.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_08_03_HybridCarb_img": {
+      "source": "media/CNX_Chem_08_03_HybridCarb_img.jpg",
+      "sourceSha256": "cbdb40d6c358d0383b1cf4220b9ac6f9ac9b39cfe5d36391c8aad49d09e356c5",
+      "module": "m68746",
+      "kind": "photo",
+      "width": 325,
+      "height": 144,
+      "variants": [
+        {
+          "width": 325,
+          "height": 144,
+          "file": "CNX_Chem_08_03_HybridCarb_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A Lewis structure is shown in which a carbon atom is single bonded to three hydrogen atoms and a second carbon atom. This second carbon atom is, in turn, double bonded to an oxygen atom with two lone pairs of electrons. The second carbon atom is also single bonded to another carbon atom that is single bonded to three hydrogen atoms.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_08_03_HybridSulf_img": {
+      "source": "media/CNX_Chem_08_03_HybridSulf_img.jpg",
+      "sourceSha256": "d7dbe2eb07152a3b5fe997e2bc3dbb9065a47513fac6d2c4a6cc63a70f3d5362",
+      "module": "m68746",
+      "kind": "photo",
+      "width": 325,
+      "height": 96,
+      "variants": [
+        {
+          "width": 325,
+          "height": 96,
+          "file": "CNX_Chem_08_03_HybridSulf_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A Lewis structure is shown in which a sulfur atom with two lone pairs of electrons and a positive sign is double bonded to an oxygen with two lone pairs of electrons. The sulfur atom is also single bonded to an oxygen with three lone pairs of electrons with a negative sign. It is drawn in an angular shape.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_08_03_SO2_img": {
+      "source": "media/CNX_Chem_08_03_SO2_img.jpg",
+      "sourceSha256": "179f05909b8a67e7d14d4e84f65f0846335b644dfa21c6002ec60ae8b7ef417d",
+      "module": "m68746",
+      "kind": "photo",
+      "width": 650,
+      "height": 93,
+      "variants": [
+        {
+          "width": 650,
+          "height": 93,
+          "file": "CNX_Chem_08_03_SO2_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two Lewis structures connected by a double-ended arrow are shown. The left structure shows a sulfur atom with one lone pair of electrons and a positive sign which is single bonded on one side to an oxygen atom with three lone pairs of electrons and a negative sign. The sulfur atom is double bonded on the other side to another oxygen atom with two lone pairs of electrons. The right-hand structure is the same as the left except that the position of the double bonded oxygen atom is switched. In both structures the attached oxygen atoms form an acute angle in terms of the sulfur atom.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_03_sp3config": {
+      "source": "media/CNX_Chem_08_03_sp3config.jpg",
+      "sourceSha256": "6e0e5195ed2558df4fd8199d0e553aca12398bf0d59b44db3eb34913f4447c36",
+      "module": "m68746",
+      "kind": "photo",
+      "width": 1300,
+      "height": 402,
+      "variants": [
+        {
+          "width": 800,
+          "height": 247,
+          "file": "CNX_Chem_08_03_sp3config-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 402,
+          "file": "CNX_Chem_08_03_sp3config-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram is shown in two parts, connected by a right facing arrow labeled, “Hybridization.” The left diagram shows an up-facing arrow labeled, “E.” To the lower right of the arrow is a short, horizontal line labeled, “2 s,” that has two vertical half-arrows facing up and down on it. To the upper right of the arrow are a series of three short, horizontal lines labeled, “2 p.” Above both sets of lines is the phrase, “Orbitals in an isolated C atom.” Two of the lines have vertical, up-facing arrows drawn on them. The right side of the diagram shows three short, horizontal lines placed halfway up the space and each labeled, “s p superscript 2.” An upward-facing half arrow is drawn vertically on each line. Above these lines is one other short, horizontal line, labeled, “p.” Above both sets of lines is the phrase, “Orbitals in the s p superscript 2 hybridized C atom in C subscript 2 H subscript 4.”",
+      "caption": "In ethene, each carbon atom is sp 2 hybridized, and the sp 2 orbitals and the p orbital are singly occupied. The hybrid orbitals overlap to form σ bonds, while the p orbitals on each carbon atom overlap to form a π bond.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_03_spC": {
+      "source": "media/CNX_Chem_08_03_spC.jpg",
+      "sourceSha256": "213fcd350db313d0fc5205eb4c75c2fd37b57115b7512a471df9db8221136c0a",
+      "module": "m68746",
+      "kind": "photo",
+      "width": 650,
+      "height": 312,
+      "variants": [
+        {
+          "width": 650,
+          "height": 312,
+          "file": "CNX_Chem_08_03_spC-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram of a carbon atom with two balloon-like purple orbitals labeled, “sp” arranged in a linear fashion around it is shown. Four red balloon-like orbitals are aligned in pairs in the y and z axes around the carbon and are labeled, “unhybridized p orbital,” and, “Second unhybridized p orbital.”",
+      "caption": "Diagram of the two linear sp hybrid orbitals of a carbon atom, which lie in a straight line, and the two unhybridized p orbitals at perpendicular angles.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_04_AOtype_img": {
+      "source": "media/CNX_Chem_08_04_AOtype_img.jpg",
+      "sourceSha256": "ee4e74b963a343523e3ece708815b5539918f7ada8bb8b61da825fa6911b966b",
+      "module": "m68747",
+      "kind": "photo",
+      "width": 1000,
+      "height": 309,
+      "variants": [
+        {
+          "width": 800,
+          "height": 247,
+          "file": "CNX_Chem_08_04_AOtype_img-800.webp"
+        },
+        {
+          "width": 1000,
+          "height": 309,
+          "file": "CNX_Chem_08_04_AOtype_img-1000.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Three diagrams are shown and labeled “a,” “b,” and “c.” Diagram a shows two horizontal peanut-shaped orbitals laying side-by-side. They are labeled, “3 p subscript x and 3 p subscript x.” Diagram b shows one vertical and one horizontal peanut-shaped orbital which are at right angles to one another. They are labeled, “3 p subscript x and 3 p subscript y.” Diagram c shows two vertical peanut-shaped orbitals laying side-by-side and labeled, “3 p subscript y and 3 p subscript y.”",
+      "caption": ""
+    },
+    "CNX_Chem_08_04_Band": {
+      "source": "media/CNX_Chem_08_04_Band.jpg",
+      "sourceSha256": "bdae446b719bf5e2745adcc3c2c6b89f3d9acaa795744c02a5e0ec94e7c1599a",
+      "module": "m68747",
+      "kind": "photo",
+      "width": 975,
+      "height": 378,
+      "variants": [
+        {
+          "width": 800,
+          "height": 310,
+          "file": "CNX_Chem_08_04_Band-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 378,
+          "file": "CNX_Chem_08_04_Band-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows three diagrams. The first is labeled, “Insulator,” and it consists of two boxes. The “conduction” box is above and the “valence” box is below. A large gap marked by 4 dashed lines contains a double-headed arrow. One head pointing towards the “conduction box” and the other towards the “valence” box. The arrow is labeled, “Band gap.” The second diagram is similar to the first, but the band gap is about half as large. This diagram is labeled, “Semiconductor.” The third diagram is similar to the other two, but the band gap is about a fifth that of the “Semiconductor” diagram. This diagram is labeled, “Conductor.”",
+      "caption": "Molecular orbitals in solids are so closely spaced that they are described as bands. The valence band is lower in energy and the conduction band is higher in energy. The type of solid is determined by the size of the “band gap” between the valence and conduction bands. Only a very small amount of energy is required to move electrons from the valence band to the conduction band in a conductor, and so they conduct electricity well. In an insulator, the band gap is large, so that very few electrons move, and they are poor conductors of electricity. Semiconductors are in between: they conduct electricity better than insulators, but not as well as conductors.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_04_FillMo": {
+      "source": "media/CNX_Chem_08_04_FillMo.jpg",
+      "sourceSha256": "47ca0cff2f6204413fc726353067018e5982b4b5eec5ebaf45d1516a909bf7e3",
+      "module": "m68747",
+      "kind": "photo",
+      "width": 1300,
+      "height": 331,
+      "variants": [
+        {
+          "width": 800,
+          "height": 203,
+          "file": "CNX_Chem_08_04_FillMo-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 331,
+          "file": "CNX_Chem_08_04_FillMo-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram is shown that has an upward-facing vertical arrow running along the left side labeled, “E.” At the bottom center of the diagram is a horizontal line labeled, “sigma subscript 2 s,” that has two vertical half arrows drawn on it, one facing up and one facing down. This line is connected to the right and left by upward-facing, dotted lines to two more horizontal lines, each labeled, “2 s.” The line on the left has two vertical half arrows drawn on it, one facing up and one facing down while the line of the right has one half arrow facing up drawn on it. These two lines are connected by upward-facing dotted lines to another line in the center of the diagram, but further up from the first. It is labeled, “sigma subscript 2 s superscript asterisk.” This horizontal line has one upward-facing vertical half-arrow drawn on it. The left and right sides of the diagram have headers that read, ”Atomic orbitals,” while the center is header reads “Molecular orbitals”.",
+      "caption": "This is the molecular orbital diagram for the homonuclear diatomic Be 2 + , showing the molecular orbitals of the valence shell only. The molecular orbitals are filled in the same manner as atomic orbitals, using the Aufbau principle and Hund’s rule."
+    },
+    "CNX_Chem_08_04_Gouy": {
+      "source": "media/CNX_Chem_08_04_Gouy.jpg",
+      "sourceSha256": "9f89e786ad3eecae3f610bb25b518980146fdad84894b5b8652ba512a68067e3",
+      "module": "m68747",
+      "kind": "photo",
+      "width": 975,
+      "height": 733,
+      "variants": [
+        {
+          "width": 800,
+          "height": 601,
+          "file": "CNX_Chem_08_04_Gouy-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 733,
+          "file": "CNX_Chem_08_04_Gouy-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram depicts a stand supporting two objects that are held in balance by a horizontal bar. On the right, the bar supports a dish that is holding two weights. On the left there is a line attached to a test tube labeled, “Sample tube.” The test tube has been lowered into the space labeled, “Magnetic field,” between two structures labeled, “Electromagnets.”",
+      "caption": "A Gouy balance compares the mass of a sample in the presence of a magnetic field with the mass with the electromagnet turned off to determine the number of unpaired electrons in a sample.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_04_H2MO-a7a1": {
+      "source": "media/CNX_Chem_08_04_H2MO-a7a1.jpg",
+      "sourceSha256": "12ec99027c5015d7963f3f46dbb09365ea1d124cc0fa71f01d8139bffbb6e664",
+      "module": "m68747",
+      "kind": "photo",
+      "width": 1300,
+      "height": 374,
+      "variants": [
+        {
+          "width": 800,
+          "height": 230,
+          "file": "CNX_Chem_08_04_H2MO-a7a1-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 374,
+          "file": "CNX_Chem_08_04_H2MO-a7a1-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram is shown that has an upward-facing vertical arrow running along the left side labeled “E.” At the bottom center of the diagram is a horizontal line labeled, “sigma subscript 1 s,” that has two vertical half arrows drawn on it, one facing up and one facing down. This line is connected to the right and left by upward-facing, dotted lines to two more horizontal lines, each labeled, “1 s,” and each with one vertical half-arrow facing up drawn on it. These two lines are connected by upward-facing dotted lines to another line in the center of the diagram, but farther up from the first, and labeled, “sigma subscript 1 s superscript asterisk.” The left and right sides of the diagram have headers that read, ”Atomic orbitals,” while the center header reads, “Molecular orbitals.” The bottom left and right are labeled “H” while the center is labeled “H subscript 2.”",
+      "caption": "The molecular orbital energy diagram predicts that H 2 will be a stable molecule with lower energy than the separated atoms."
+    },
+    "CNX_Chem_08_04_HIVProteas": {
+      "source": "media/CNX_Chem_08_04_HIVProteas.jpg",
+      "sourceSha256": "507193ad02ab329c3ec7cdf4024cb70523c52dbc817e8c44a14f225fe9422e7a",
+      "module": "m68747",
+      "kind": "photo",
+      "width": 650,
+      "height": 353,
+      "variants": [
+        {
+          "width": 650,
+          "height": 353,
+          "file": "CNX_Chem_08_04_HIVProteas-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram of a molecule is shown. The image shows a tangle of ribbon-like, intertwined, pink and green curling lines with a complex ball and stick model in the center.",
+      "caption": "The molecule shown, HIV-1 protease, is an important target for pharmaceutical research. By designing molecules that bind to this protein, scientists are able to drastically inhibit the progress of the disease.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_04_He2MO-cf1f": {
+      "source": "media/CNX_Chem_08_04_He2MO-cf1f.jpg",
+      "sourceSha256": "c3c8a116c63705b162fedfe6bfe3c98792484e9b948a59f3fcb190b88c104389",
+      "module": "m68747",
+      "kind": "photo",
+      "width": 1300,
+      "height": 439,
+      "variants": [
+        {
+          "width": 800,
+          "height": 270,
+          "file": "CNX_Chem_08_04_He2MO-cf1f-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 439,
+          "file": "CNX_Chem_08_04_He2MO-cf1f-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram is shown that has an upward-facing vertical arrow running along the left side labeled, “E.” At the bottom center of the diagram is a horizontal line labeled, “sigma subscript 1 s,” that has two vertical half arrows drawn on it, one facing up and one facing down. This line is connected to the right and left by upward-facing, dotted lines to two more horizontal lines, each labeled, “1 s,” and each with one vertical half-arrow facing up and one facing down drawn on it. These two lines are connected by upward-facing dotted lines to another line in the center of the diagram, but farther up from the first, and labeled, “sigma subscript 1 s superscript asterisk.” This line has one upward-facing and one downward-facing vertical arrow drawn on it. The left and right sides of the diagram have headers that read, “Atomic orbitals,” while the center header reads, “Molecular orbitals.” The bottom left and right are labeled, “H e,” while the center is labeled, “H e subscript 2.”",
+      "caption": "The molecular orbital energy diagram predicts that He 2 will not be a stable molecule, since it has equal numbers of bonding and antibonding electrons."
+    },
+    "CNX_Chem_08_04_Kohn": {
+      "source": "media/CNX_Chem_08_04_Kohn.jpg",
+      "sourceSha256": "e4de793d5943ee2c59b1a3ae25bea74ffcceba3f8b0a13b91e77432c43b27020",
+      "module": "m68747",
+      "kind": "photo",
+      "width": 650,
+      "height": 757,
+      "variants": [
+        {
+          "width": 650,
+          "height": 757,
+          "file": "CNX_Chem_08_04_Kohn-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A photograph of Walter Kohn is shown.",
+      "caption": "Walter Kohn developed methods to describe molecular orbitals. (credit: image courtesy of Walter Kohn)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_04_O2MO-912b": {
+      "source": "media/CNX_Chem_08_04_O2MO-912b.jpg",
+      "sourceSha256": "4a1bae58e5fcceae7e37696866db4391d18b7365cf173269d3b1c496c279c071",
+      "module": "m68747",
+      "kind": "photo",
+      "width": 1200,
+      "height": 898,
+      "variants": [
+        {
+          "width": 800,
+          "height": 598,
+          "file": "CNX_Chem_08_04_O2MO-912b-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 898,
+          "file": "CNX_Chem_08_04_O2MO-912b-1200.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram is shown that has an upward-facing vertical arrow running along the left side labeled, “E.” At the bottom center of the diagram is a horizontal line labeled, “sigma subscript 2 s,” that has two vertical half arrows drawn on it, one facing up and one facing down. This line is connected to the right and left by upward-facing, dotted lines to two more horizontal lines, each labeled, “2 s,” and with two vertical half arrows drawn on them, one facing up and one facing down. These two lines are connected by upward-facing dotted lines to another line in the center of the diagram, but farther up from the first and labeled, “sigma subscript 2 s superscript asterisk.” This horizontal line has two vertical half-arrow drawn on it, one facing up and one facing down. Moving further up the center of the diagram is a horizontal line labeled, “sigma subscript 2 p subscript x,” which lies below two horizontal lines, lying side-by-side, and labeled “pi subscript 2 p subscript y,” and “pi subscript 2 p subscript z.” Both the bottom and top lines are connected to the right and left by upward-facing, dotted lines to three more horizontal lines, each labeled, “2 p,” on either side. These sets of lines each hold three upward-facing and one downward-facing half-arrow. They are connected by upward-facing dotted lines to another single line and then pair of double lines in the center of the diagram, but farther up from the lower lines. They are labeled, “sigma subscript 2 p subscript x superscript asterisk,” “pi subscript 2 p subscript y superscript asterisk,” and “pi subscript 2 p subscript z superscript asterisk,” respectively. The lower of these two central, horizontal lines each contain one upward-facing half-arrow. The left and right sides of the diagram have headers that read, ”Atomic orbitals,” while the center header reads, “Molecular orbitals.”",
+      "caption": "The molecular orbital energy diagram for O 2 predicts two unpaired electrons."
+    },
+    "CNX_Chem_08_04_O2_img": {
+      "source": "media/CNX_Chem_08_04_O2_img.jpg",
+      "sourceSha256": "0dc715fb669f5b0403e7ada8bec5099946f4f3739a3cf7f1caaf52793eeeefd0",
+      "module": "m68747",
+      "kind": "photo",
+      "width": 325,
+      "height": 48,
+      "variants": [
+        {
+          "width": 325,
+          "height": 48,
+          "file": "CNX_Chem_08_04_O2_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A Lewis structure is shown. It is made up of two oxygen atoms, each with two lone pairs of electrons, bonded together with a double bond.",
+      "caption": ""
+    },
+    "CNX_Chem_08_04_X2MOs-bb74": {
+      "source": "media/CNX_Chem_08_04_X2MOs-bb74.jpg",
+      "sourceSha256": "1452a73e9730b8b3e337fd752917dffd1ebe026b0bd39929009cd9797d9ac0a6",
+      "module": "m68747",
+      "kind": "photo",
+      "width": 1300,
+      "height": 528,
+      "variants": [
+        {
+          "width": 800,
+          "height": 325,
+          "file": "CNX_Chem_08_04_X2MOs-bb74-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 528,
+          "file": "CNX_Chem_08_04_X2MOs-bb74-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A graph is shown in which the y-axis is labeled, “E,” and appears as a vertical, upward-facing arrow. Across the top, the graph reads, “L i subscript 2,” “B e subscript 2,” “B subscript 2,” “C subscript 2,” “N subscript 2,” “O subscript 2,” “F subscript 2,” and “Ne subscript 2.” Directly below each of these element terms is a single pink line, and all lines are connected to one another by a dashed line, to create an overall line that decreases in height as it moves from left to right across the graph. This line is labeled, “sigma subscript 2 p x superscript asterisk”. Directly below each of these lines is a set of two pink lines, and all lines are connected to one another by a dashed line, to create an overall line that decreases in height as it moves from left to right across the graph. It is consistently lower than the first line. This line is labeled, “pi subscript 2 p y superscript asterisk,” and, “pi subscript 2 p z superscript asterisk.” Directly below each of these double lines is a single pink line, and all lines are connected to one another by a dashed line, to create an overall line that decreases in height as it moves from left to right across the graph. It has a distinctive drop at the label, “O subscript 2.” This line is labeled, “sigma subscript 2 p x.” Directly below each of these lines is a set of two pink lines, and all lines are connected to one another by a dashed line to create an overall line that decreases very slightly in height as it moves from left to right across the graph. It is consistently lower than the third line until it reaches the point labeled, “O subscript 2.” This line is labeled, “pi subscript 2 p y,” and, “pi subscript 2 p z.” Directly below each of these lines is a single blue line, and all lines are connected to one another by a dashed line to create an overall line that decreases in height as it moves from left to right across the graph. This line is labeled, “sigma subscript 2 s superscript asterisk.” Finally, directly below each of these lines is a single blue line, and all lines are connected to one another by a dashed line to create an overall line that decreases in height as it moves from left to right across the graph. This line is labeled. “sigma subscript 2 s.”",
+      "caption": "This shows the MO diagrams for each homonuclear diatomic molecule in the second period. The orbital energies decrease across the period as the effective nuclear charge increases and atomic radius decreases. Between N 2 and O 2 , the order of the orbitals changes."
+    },
+    "CNX_Chem_08_04_pMOpi": {
+      "source": "media/CNX_Chem_08_04_pMOpi.jpg",
+      "sourceSha256": "3fd7918f1f1d6dec99b707505195d92e0f7000e2334a645de1ef8a4a14d44c76",
+      "module": "m68747",
+      "kind": "photo",
+      "width": 650,
+      "height": 511,
+      "variants": [
+        {
+          "width": 650,
+          "height": 511,
+          "file": "CNX_Chem_08_04_pMOpi-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two horizontal rows of diagrams are shown. The upper and lower diagrams both begin with two vertical peanut-shaped orbitals with a plus sign in between followed by a right-facing arrow. The upper diagram shows the same vertical peanut orbitals bending slightly away from one another and separated by a dotted line. It is labeled, “pi subscript p superscript asterisk.” The lower diagram shows the horizontal overlap of the two orbitals and is labeled, “pi subscript p.”",
+      "caption": "Side-by-side overlap of each two p orbitals results in the formation of two π molecular orbitals. Combining the out-of-phase orbitals results in an antibonding molecular orbital with two nodes. One contains the internuclear axis, and one is perpendicular to the axis. Combining the in-phase orbitals results in a bonding orbital. There is a node (blue) containing the internuclear axis with the two lobes of the orbital located above and below this node.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_04_pMOsigma": {
+      "source": "media/CNX_Chem_08_04_pMOsigma.jpg",
+      "sourceSha256": "c10b997dee3ffb0418e1a4c6e67e073dfeea87a6a4f5cf28984c4367e23ccb6d",
+      "module": "m68747",
+      "kind": "photo",
+      "width": 975,
+      "height": 260,
+      "variants": [
+        {
+          "width": 800,
+          "height": 213,
+          "file": "CNX_Chem_08_04_pMOsigma-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 260,
+          "file": "CNX_Chem_08_04_pMOsigma-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two horizontal rows of diagrams are shown. The upper diagram shows two equally-sized peanut-shaped orbitals with a plus sign in between them connected to a merged orbital diagram by a right facing arrow. The merged diagram has a much larger oval at the center and much smaller ovular orbitals on the edge. It is labeled, “sigma subscript p x.” The lower diagram shows two equally-sized peanut-shaped orbitals with a plus sign in between them connected to a split orbital diagram by a right facing arrow. The split diagram has a much larger oval at the outer ends and much smaller ovular orbitals on the inner edges. It is labeled, “sigma subscript p x superscript asterisk”.",
+      "caption": "Combining wave functions of two p atomic orbitals along the internuclear axis creates two molecular orbitals, σ p and σ p * .",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_04_salabel_img": {
+      "source": "media/CNX_Chem_08_04_salabel_img.jpg",
+      "sourceSha256": "9ffcca7886e6f5ccd9bebfd1683a1f0ad6642d167db30aa409929009445ff07e",
+      "module": "m68747",
+      "kind": "photo",
+      "width": 650,
+      "height": 67,
+      "variants": [
+        {
+          "width": 650,
+          "height": 67,
+          "file": "CNX_Chem_08_04_salabel_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two orbitals are shown lying end-to-end. Each has one enlarged and one small side. The small sides are facing one another and are separated by a vertical dotted line.",
+      "caption": ""
+    },
+    "CNX_Chem_08_04_siganti_img": {
+      "source": "media/CNX_Chem_08_04_siganti_img.jpg",
+      "sourceSha256": "4e5df03c033bbc3a0c4a2c0fc5ce6ff35ee4b959995a22bf697ace2ceb4de89a",
+      "module": "m68747",
+      "kind": "photo",
+      "width": 650,
+      "height": 67,
+      "variants": [
+        {
+          "width": 650,
+          "height": 67,
+          "file": "CNX_Chem_08_04_siganti_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two orbitals are shown lying end-to-end. Each has one enlarged and one small side. The small sides are facing one another",
+      "caption": ""
+    },
+    "CNX_Chem_08_04_spmix-78e6": {
+      "source": "media/CNX_Chem_08_04_spmix-78e6.jpg",
+      "sourceSha256": "3c0a05fc7b825c54d40289be0a930c39211754f4e4e19d9b7b84254ed97f072b",
+      "module": "m68747",
+      "kind": "photo",
+      "width": 1300,
+      "height": 872,
+      "variants": [
+        {
+          "width": 800,
+          "height": 536,
+          "file": "CNX_Chem_08_04_spmix-78e6-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 872,
+          "file": "CNX_Chem_08_04_spmix-78e6-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram is shown. At the bottom left of the diagram is a horizontal line that is connected to the right and left by upward-facing, dotted lines to two more horizontal lines. Those two lines are connected by upward-facing dotted lines to another line in the center of the diagram but farther up from the first. Each of the bottom two central lines has a vertical downward-facing arrow. Above this structure is a horizontal line that is connected to the right and left by upward-facing, dotted lines to two sets of three horizontal lines and those two lines are connected by upward-facing dotted lines to another line in the center of the diagram, but further up from the first. In between the horizontal lines of this structure are two pairs of horizontal lines that are above the first line but below the second and connected by dotted lines to the side horizontal lines. The bottom and top central lines each have an upward-facing vertical arrow. These two structures are redrawn on the right side of the diagram, but this time, the central lines of the bottom structure are moved downward in relation to the side lines. The upper portion of the structure has its central lines shifted upward in relation to the side lines. This structure also shows the bottom line appearing above the set of two lines.",
+      "caption": "Without mixing, the MO pattern occurs as expected, with the σ p orbital lower in energy than the π p orbitals. When s-p mixing occurs, the orbitals shift as shown, with the σ p orbital higher in energy than the π p orbitals."
+    },
+    "CNX_Chem_08_04_ssigma": {
+      "source": "media/CNX_Chem_08_04_ssigma.jpg",
+      "sourceSha256": "5e7be2ab8f8755ed283a2403b3f0f0b5da07cd44b17b10ee5a73725efe9d9143",
+      "module": "m68747",
+      "kind": "photo",
+      "width": 975,
+      "height": 397,
+      "variants": [
+        {
+          "width": 800,
+          "height": 325,
+          "file": "CNX_Chem_08_04_ssigma-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 397,
+          "file": "CNX_Chem_08_04_ssigma-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram is shown that depicts a vertical upward-facing arrow that lies to the left of all the other portions of the diagram and is labeled, “E.” To the immediate right of the midpoint of the arrow are two circles each labeled with a positive sign, the letter S, and the phrase, “Atomic orbitals.” These are followed by a right-facing horizontal arrow that points to the same two circles labeled with plus signs, but they are now touching and are labeled, “Combine atomic orbitals.” Two right-facing arrows lead to the last portion of the diagram, one facing upward and one facing downward. The upper arrow is labeled, “Subtract,” and points to two oblong ovals labeled with plus signs, and the phrase, “Antibonding orbitals sigma subscript s superscript asterisk.” The lower arrow is labeled, “Add,” and points to an elongated oval with two plus signs that is labeled, “Bonding orbital sigma subscript s.” The heading over the last section of the diagram are the words, “Molecular orbitals.”",
+      "caption": "Sigma (σ) and sigma-star (σ*) molecular orbitals are formed by the combination of two s atomic orbitals. The dots (·) indicate the locations of nuclei.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_08_04_waveadd": {
+      "source": "media/CNX_Chem_08_04_waveadd.jpg",
+      "sourceSha256": "5dd9bda96cd73d05eecb1f8c5e5e744df8637083e117ece900a2de4fde9fd797",
+      "module": "m68747",
+      "kind": "photo",
+      "width": 1300,
+      "height": 274,
+      "variants": [
+        {
+          "width": 800,
+          "height": 168,
+          "file": "CNX_Chem_08_04_waveadd-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 274,
+          "file": "CNX_Chem_08_04_waveadd-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A pair of diagrams are shown and labeled, “a” and “b.” Diagram a shows two identical waves with two crests and two troughs. They are drawn one above the other with a plus sign in between and an equal sign to the right. To the right of the equal sign is a much taller wave with a same number of troughs and crests. Diagram b shows two waves with two crests and two troughs, but they are mirror images of one another rotated over a horizontal axis. They are drawn one above the other with a plus sign in between and an equal sign to the right. To the right of the equal sign is a flat line.",
+      "caption": "(a) When in-phase waves combine, constructive interference produces a wave with greater amplitude. (b) When out-of-phase waves combine, destructive interference produces a wave with less (or no) amplitude."
+    },
     "CNX_Chem_14_03_FishLemon": {
       "source": "media/CNX_Chem_14_03_FishLemon.jpg",
       "sourceSha256": "9fe70f7dee5ca566696b82f94fedfec8565ba53869510e7b90ab66dcf31f6fd0",

@@ -526,6 +526,10 @@ const formCases = [
   ['6\\frac{7}{100}', '6\\frac{7}{100}', 'fraction-or-mixed-number', 'correct'],
   ['\\frac{607}{100}', '6\\frac{7}{100}', 'fraction-or-mixed-number', 'correct'],
   ['6.07', '6\\frac{7}{100}', 'fraction-or-mixed-number', 'form'],
+  // A bond order (Chemistry 2e 8.4): one number written plainly, never unworked.
+  ['0.5+0', '0.5', 'decimal-or-fraction', 'form'],
+  ['1+1-1', '1', 'decimal-or-fraction', 'form'],
+  ['1/2', '0.5', 'decimal-or-fraction', 'correct'],
   ['\\frac{8}{3}', '\\frac{8}{3}', 'improper-fraction lowest-terms', 'correct'],
   ['2\\frac{2}{3}', '\\frac{8}{3}', 'improper-fraction lowest-terms', 'form'],
   ['\\frac{24}{9}', '\\frac{8}{3}', 'improper-fraction lowest-terms', 'form'],
@@ -5035,4 +5039,15 @@ test('a whole-number key with a sign: the other sign is told so, and a sign type
   assert.doesNotMatch(SIGN_LAST_FEEDBACK, /\d/, 'the sentence prints no number, so no key');
   // Without the whole-number form nothing changes.
   assert.equal(checkAnswer('3-', '-3', {}), 'invalid');
+});
+
+test('decimal-or-fraction: an exact number that may be a half, written plainly any way, never unworked (Chemistry 2e 8.4 bond orders)', () => {
+  const form = 'decimal-or-fraction';
+  for (const typed of ['0.5', '.5', '1/2', '\\frac{1}{2}', '\\frac12', '0.50', '\\frac{2}{4}']) assert.equal(checkAnswer(typed, '0.5', { form }), 'correct', typed);
+  for (const typed of ['2.5', '5/2', '\\frac{5}{2}', '2\\frac{1}{2}']) assert.equal(checkAnswer(typed, '2.5', { form }), 'correct', typed);
+  for (const typed of ['1', '1.0']) assert.equal(checkAnswer(typed, '1', { form }), 'correct', typed);
+  assert.equal(checkAnswer('0', '0', { form }), 'correct');
+  assert.equal(checkAnswer('1+1-1', '1', { form }), 'form', 'arithmetic left undone');
+  assert.match(describeFormFeedback('1+1-1', form, '1'), /finish the calculation/);
+  for (const [typed, key] of [['1.5', '0.5'], ['-0.5', '0.5'], ['1/2', '2.5'], ['0.5', '0'], ['3/2', '2.5']]) assert.equal(checkAnswer(typed, key, { form }), 'incorrect', `${typed} against ${key}`);
 });

@@ -58,7 +58,7 @@ The addition of small amounts of iodine to table salt (iodized salt) has essenti
   question="An ion of platinum has a mass number of 195 and contains 74 electrons. How many protons and neutrons does it contain, and what is its charge? Enter the number of protons."
   answer="78"
   answerForm="whole-number"
-  answerDisplay="78"
+  answerDisplay="$78$"
   hint="Find platinum’s atomic number in the periodic table."
 >}}
 
@@ -66,7 +66,7 @@ The addition of small amounts of iodine to table salt (iodized salt) has essenti
   question="An ion of platinum has a mass number of 195 and contains 74 electrons. How many protons and neutrons does it contain, and what is its charge? Enter the number of neutrons."
   answer="117"
   answerForm="whole-number"
-  answerDisplay="117"
+  answerDisplay="$117$"
   hint="Use the equation that relates the mass number, the atomic number, and the number of neutrons."
 >}}
 
@@ -74,7 +74,7 @@ The addition of small amounts of iodine to table salt (iodized salt) has essenti
   question="An ion of platinum has a mass number of 195 and contains 74 electrons. How many protons and neutrons does it contain, and what is its charge? Enter the charge as a signed number, the sign first, as +1 or −1."
   answer="4"
   answerForm="whole-number"
-  answerDisplay="4+"
+  answerDisplay="$4+$"
   hint="Use the definition of atomic charge given before the example."
 >}}
 
@@ -363,7 +363,7 @@ the symbol for the ion you have created
   question="The following are properties of an isotope of an element that is essential in our diet. Determine the number of protons, neutrons and electrons in it and name it: atomic number 26, mass number 58, charge of 2+. Enter the number of protons."
   answer="26"
   answerForm="whole-number"
-  answerDisplay="26"
+  answerDisplay="$26$"
   hint="Recall what the atomic number of an atom counts."
 >}}
 
@@ -371,7 +371,7 @@ the symbol for the ion you have created
   question="The following are properties of an isotope of an element that is essential in our diet. Determine the number of protons, neutrons and electrons in it and name it: atomic number 26, mass number 58, charge of 2+. Enter the number of electrons."
   answer="24"
   answerForm="whole-number"
-  answerDisplay="24"
+  answerDisplay="$24$"
   hint="Use the definition of atomic charge."
 >}}
 
@@ -379,7 +379,7 @@ the symbol for the ion you have created
   question="The following are properties of an isotope of an element that is essential in our diet. Determine the number of protons, neutrons and electrons in it and name it: atomic number 26, mass number 58, charge of 2+. Enter the number of neutrons."
   answer="32"
   answerForm="whole-number"
-  answerDisplay="32"
+  answerDisplay="$32$"
   hint="Use the equation that relates the mass number, the atomic number, and the number of neutrons."
 >}}
 
@@ -393,7 +393,7 @@ the symbol for the ion you have created
   question="The following are properties of an isotope of an element that is essential in our diet. Determine the number of protons, neutrons and electrons in it and name it: atomic number 53, mass number 127, charge of 1−. Enter the number of protons."
   answer="53"
   answerForm="whole-number"
-  answerDisplay="53"
+  answerDisplay="$53$"
   hint="Recall what the atomic number of an atom counts."
 >}}
 
@@ -401,7 +401,7 @@ the symbol for the ion you have created
   question="The following are properties of an isotope of an element that is essential in our diet. Determine the number of protons, neutrons and electrons in it and name it: atomic number 53, mass number 127, charge of 1−. Enter the number of electrons."
   answer="54"
   answerForm="whole-number"
-  answerDisplay="54"
+  answerDisplay="$54$"
   hint="Use the definition of atomic charge."
 >}}
 
@@ -409,7 +409,7 @@ the symbol for the ion you have created
   question="The following are properties of an isotope of an element that is essential in our diet. Determine the number of protons, neutrons and electrons in it and name it: atomic number 53, mass number 127, charge of 1−. Enter the number of neutrons."
   answer="74"
   answerForm="whole-number"
-  answerDisplay="74"
+  answerDisplay="$74$"
   hint="Use the equation that relates the mass number, the atomic number, and the number of neutrons."
 >}}
 
@@ -417,7 +417,7 @@ the symbol for the ion you have created
   question="Give the number of protons, electrons, and neutrons in neutral atoms of the following isotope: $\ce{^{7}_{3}Li}$. Enter the number of protons."
   answer="3"
   answerForm="whole-number"
-  answerDisplay="3"
+  answerDisplay="$3$"
   hint="Recall what the atomic number of an atom counts."
 >}}
 
@@ -425,7 +425,7 @@ the symbol for the ion you have created
   question="Give the number of protons, electrons, and neutrons in neutral atoms of the following isotope: $\ce{^{7}_{3}Li}$. Enter the number of electrons."
   answer="3"
   answerForm="whole-number"
-  answerDisplay="3"
+  answerDisplay="$3$"
   hint="Recall what makes an atom electrically neutral."
 >}}
 
@@ -433,7 +433,7 @@ the symbol for the ion you have created
   question="Give the number of protons, electrons, and neutrons in neutral atoms of the following isotope: $\ce{^{7}_{3}Li}$. Enter the number of neutrons."
   answer="4"
   answerForm="whole-number"
-  answerDisplay="4"
+  answerDisplay="$4$"
   hint="Use the equation that relates the mass number, the atomic number, and the number of neutrons."
 >}}
 
@@ -441,7 +441,7 @@ the symbol for the ion you have created
   question="Give the number of protons, electrons, and neutrons in neutral atoms of the following isotope: $\ce{^{125}_{52}Te}$. Enter the number of protons."
   answer="52"
   answerForm="whole-number"
-  answerDisplay="52"
+  answerDisplay="$52$"
   hint="Recall what the atomic number of an atom counts."
 >}}
 
@@ -449,7 +449,7 @@ the symbol for the ion you have created
   question="Give the number of protons, electrons, and neutrons in neutral atoms of the following isotope: $\ce{^{125}_{52}Te}$. Enter the number of electrons."
   answer="52"
   answerForm="whole-number"
-  answerDisplay="52"
+  answerDisplay="$52$"
   hint="Recall what makes an atom electrically neutral."
 >}}
 
@@ -457,7 +457,7 @@ the symbol for the ion you have created
   question="Give the number of protons, electrons, and neutrons in neutral atoms of the following isotope: $\ce{^{125}_{52}Te}$. Enter the number of neutrons."
   answer="73"
   answerForm="whole-number"
-  answerDisplay="73"
+  answerDisplay="$73$"
   hint="Use the equation that relates the mass number, the atomic number, and the number of neutrons."
 >}}
 
@@ -465,7 +465,7 @@ the symbol for the ion you have created
   question="Give the number of protons, electrons, and neutrons in neutral atoms of the following isotope: $\ce{^{109}_{47}Ag}$. Enter the number of protons."
   answer="47"
   answerForm="whole-number"
-  answerDisplay="47"
+  answerDisplay="$47$"
   hint="Recall what the atomic number of an atom counts."
 >}}
 
@@ -473,7 +473,7 @@ the symbol for the ion you have created
   question="Give the number of protons, electrons, and neutrons in neutral atoms of the following isotope: $\ce{^{109}_{47}Ag}$. Enter the number of electrons."
   answer="47"
   answerForm="whole-number"
-  answerDisplay="47"
+  answerDisplay="$47$"
   hint="Recall what makes an atom electrically neutral."
 >}}
 
@@ -481,7 +481,7 @@ the symbol for the ion you have created
   question="Give the number of protons, electrons, and neutrons in neutral atoms of the following isotope: $\ce{^{109}_{47}Ag}$. Enter the number of neutrons."
   answer="62"
   answerForm="whole-number"
-  answerDisplay="62"
+  answerDisplay="$62$"
   hint="Use the equation that relates the mass number, the atomic number, and the number of neutrons."
 >}}
 
@@ -489,7 +489,7 @@ the symbol for the ion you have created
   question="Give the number of protons, electrons, and neutrons in neutral atoms of the following isotope: $\ce{^{15}_{7}N}$. Enter the number of protons."
   answer="7"
   answerForm="whole-number"
-  answerDisplay="7"
+  answerDisplay="$7$"
   hint="Recall what the atomic number of an atom counts."
 >}}
 
@@ -497,7 +497,7 @@ the symbol for the ion you have created
   question="Give the number of protons, electrons, and neutrons in neutral atoms of the following isotope: $\ce{^{15}_{7}N}$. Enter the number of electrons."
   answer="7"
   answerForm="whole-number"
-  answerDisplay="7"
+  answerDisplay="$7$"
   hint="Recall what makes an atom electrically neutral."
 >}}
 
@@ -505,7 +505,7 @@ the symbol for the ion you have created
   question="Give the number of protons, electrons, and neutrons in neutral atoms of the following isotope: $\ce{^{15}_{7}N}$. Enter the number of neutrons."
   answer="8"
   answerForm="whole-number"
-  answerDisplay="8"
+  answerDisplay="$8$"
   hint="Use the equation that relates the mass number, the atomic number, and the number of neutrons."
 >}}
 
@@ -513,7 +513,7 @@ the symbol for the ion you have created
   question="Give the number of protons, electrons, and neutrons in neutral atoms of the following isotope: $\ce{^{31}_{15}P}$. Enter the number of protons."
   answer="15"
   answerForm="whole-number"
-  answerDisplay="15"
+  answerDisplay="$15$"
   hint="Recall what the atomic number of an atom counts."
 >}}
 
@@ -521,7 +521,7 @@ the symbol for the ion you have created
   question="Give the number of protons, electrons, and neutrons in neutral atoms of the following isotope: $\ce{^{31}_{15}P}$. Enter the number of electrons."
   answer="15"
   answerForm="whole-number"
-  answerDisplay="15"
+  answerDisplay="$15$"
   hint="Recall what makes an atom electrically neutral."
 >}}
 
@@ -529,7 +529,7 @@ the symbol for the ion you have created
   question="Give the number of protons, electrons, and neutrons in neutral atoms of the following isotope: $\ce{^{31}_{15}P}$. Enter the number of neutrons."
   answer="16"
   answerForm="whole-number"
-  answerDisplay="16"
+  answerDisplay="$16$"
   hint="Use the equation that relates the mass number, the atomic number, and the number of neutrons."
 >}}
 

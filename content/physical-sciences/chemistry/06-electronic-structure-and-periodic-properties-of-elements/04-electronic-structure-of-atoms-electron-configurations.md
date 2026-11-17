@@ -271,7 +271,7 @@ Both Si and S
   question="Cobalt–60 and iodine–131 are radioactive isotopes commonly used in nuclear medicine. How many protons, neutrons, and electrons are in atoms of these isotopes? Write the complete electron configuration for each isotope. Enter the number of protons in an atom of cobalt–60."
   answer="27"
   answerForm="whole-number"
-  answerDisplay="27"
+  answerDisplay="$27$"
   hint="Use the definitions of atomic number and mass number, with the periodic table."
 >}}
 
@@ -279,7 +279,7 @@ Both Si and S
   question="Cobalt–60 and iodine–131 are radioactive isotopes commonly used in nuclear medicine. How many protons, neutrons, and electrons are in atoms of these isotopes? Write the complete electron configuration for each isotope. Enter the number of neutrons in an atom of cobalt–60."
   answer="33"
   answerForm="whole-number"
-  answerDisplay="33"
+  answerDisplay="$33$"
   hint="Use the definitions of atomic number and mass number, with the periodic table."
 >}}
 
@@ -287,7 +287,7 @@ Both Si and S
   question="Cobalt–60 and iodine–131 are radioactive isotopes commonly used in nuclear medicine. How many protons, neutrons, and electrons are in atoms of these isotopes? Write the complete electron configuration for each isotope. Enter the number of electrons in an atom of cobalt–60."
   answer="27"
   answerForm="whole-number"
-  answerDisplay="27"
+  answerDisplay="$27$"
   hint="Use the definitions of atomic number and mass number, with the periodic table."
 >}}
 
@@ -302,7 +302,7 @@ Both Si and S
   question="Cobalt–60 and iodine–131 are radioactive isotopes commonly used in nuclear medicine. How many protons, neutrons, and electrons are in atoms of these isotopes? Write the complete electron configuration for each isotope. Enter the number of protons in an atom of iodine–131."
   answer="53"
   answerForm="whole-number"
-  answerDisplay="53"
+  answerDisplay="$53$"
   hint="Use the definitions of atomic number and mass number, with the periodic table."
 >}}
 
@@ -310,7 +310,7 @@ Both Si and S
   question="Cobalt–60 and iodine–131 are radioactive isotopes commonly used in nuclear medicine. How many protons, neutrons, and electrons are in atoms of these isotopes? Write the complete electron configuration for each isotope. Enter the number of neutrons in an atom of iodine–131."
   answer="78"
   answerForm="whole-number"
-  answerDisplay="78"
+  answerDisplay="$78$"
   hint="Use the definitions of atomic number and mass number, with the periodic table."
 >}}
 
@@ -318,7 +318,7 @@ Both Si and S
   question="Cobalt–60 and iodine–131 are radioactive isotopes commonly used in nuclear medicine. How many protons, neutrons, and electrons are in atoms of these isotopes? Write the complete electron configuration for each isotope. Enter the number of electrons in an atom of iodine–131."
   answer="53"
   answerForm="whole-number"
-  answerDisplay="53"
+  answerDisplay="$53$"
   hint="Use the definitions of atomic number and mass number, with the periodic table."
 >}}
 

@@ -96,6 +96,9 @@ function asciiChem(key, { caret = true, states = true, decimal = false } = {}) {
   return text;
 }
 
+/** A hybridization label as the page keys it: sp, sp², sp³, sp³d, sp³d². */
+const HYBRID_LABEL = /^sp[²³]?(?:d²?)?$/;
+
 /** MathLive keystrokes for a numeric key. */
 function keysFor(answer) {
   let m = answer.match(/^(-?[\d.]+)\\times10\^\{(-?\d+)\}$/);
@@ -105,9 +108,11 @@ function keysFor(answer) {
   return /^-?[\d.]+$/.test(answer) ? answer : null;
 }
 /** A second way an ordinary learner writes the same number, or null. */
-function variantFor(answer, question) {
+function variantFor(answer, question, form = '') {
   let m = answer.match(/^(-?[\d.]+)\\times10\^\{(-?\d+)\}$/);
   if (m) return { keys: `${m[1]} x 10^${m[2]}`, kind: 'letter-x' };
+  // A bond order's half typed as the fraction it is: 0.5 as 1/2, 2.5 as 5/2.
+  if (/decimal-or-fraction/.test(form) && /^\d*\.5$/.test(answer)) return { keys: `${Math.round(Number(answer) * 2)}/2`, kind: 'fraction' };
   if (/^\d+$/.test(answer) && /oxidation/i.test(question)) return { keys: `+${answer}`, kind: 'plus-sign' };
   if (/^0\.\d+$/.test(answer)) return { keys: answer.slice(1), kind: 'no-leading-zero' };
   if (/^\d{5,}$/.test(answer)) return { keys: answer.replace(/\B(?=(\d{3})+$)/g, ','), kind: 'thousands-comma' };
@@ -209,6 +214,12 @@ for (const route of routes()) {
         if (info.form === 'formula' || info.form === 'equation') {
           typed = pass === 'A' ? asciiChem(info.answer) : asciiChem(info.answer, { caret: false, states: false, decimal: true });
           kind = pass === 'A' ? 'guide-style' : 'bare-charge-no-states';
+        } else if (HYBRID_LABEL.test(info.answer)) {
+          // A hybridization label is keyed in print (sp³d); a learner types
+          // its superscripts as digits (pass A) or after a caret (pass B).
+          const plain = info.answer.replace(/²/g, '2').replace(/³/g, '3');
+          typed = pass === 'A' ? plain : plain.replace(/(\d)/g, '^$1');
+          kind = pass === 'A' ? 'plain-digits' : 'caret';
         } else if (pass === 'B') {
           typed = info.answer.toLowerCase(); kind = 'lowercase';
         }
@@ -230,7 +241,7 @@ for (const route of routes()) {
         }
       } else {
         const canonical = keysFor(info.answer);
-        const variant = pass === 'B' ? variantFor(info.answer, info.question) : null;
+        const variant = pass === 'B' ? variantFor(info.answer, info.question, info.form) : null;
         const keys = variant ? variant.keys : canonical;
         record.kind = variant ? variant.kind : 'as-keyed';
         if (keys === null) { record.result = 'UNTYPEABLE-KEY'; results.push(record); continue; }

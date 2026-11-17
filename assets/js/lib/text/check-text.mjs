@@ -182,6 +182,14 @@ export function gradeText(input, answer, { accept = '', form = '' } = {}) {
     && /^[spdf](?:\s+(?:subshells?|orbitals?))?$/.test(normalizeText(input).replace(/^the\s+/, ''))) {
     return { status: 'incorrect', message: SUBSHELL_LETTER_ONLY };
   }
+  // A hybridization key answered with its own orbitals in another order, or
+  // with a molecular shape's name: said, and the label not given.
+  if (status === 'incorrect' && isHybridKey(answer)) {
+    const typed = hybridOrbitals(input);
+    if (typed && hybridLabel(input) === hybridLabel(answer)) return { status: 'form', message: HYBRID_ORDER_MESSAGE };
+    if (SHAPE_NAME.test(normalizeText(String(input ?? '').replace(ANGLE_AFTER, '')))) return { status: 'incorrect', message: HYBRID_SHAPE_MESSAGE };
+    return { status };
+  }
   if (status === 'incorrect' && isOlderName(input, answer, { accept })) {
     return { status: 'form', message: OLDER_NAME_MESSAGE };
   }
@@ -276,6 +284,53 @@ const subshellTyped = (normalized) => {
 export const SUBSHELL_LETTER_ONLY = 'Give the shell number with the letter.';
 
 /**
+ * A hybridization label (Chemistry 2e chapter 8): `sp`, `sp²`, `sp³`, `sp³d`,
+ * `sp³d²`, as the page keys it. `hybridOrbitals` reads a key or a typed
+ * response as the orbitals it mixes — `{ s, p, d, order }`, each count, and
+ * the letters in the order typed — or null when it is no such label. What it
+ * folds, in the manner of the subshell fold: capitals, a superscript typed as
+ * a digit, `^`, braces, spaces and hyphens inside the label (`sp^3d`,
+ * `sp^{3}d`, `sp 3`, `SP3D`), a count of 1 written out (`s1p3`), a leading
+ * "the", and a trailing "hybridized", "hybridization", "hybrid", or "hybrid
+ * orbital(s)" (`sp3 hybridized`, `sp3-hybridized`, `sp3 hybrid orbitals`).
+ * Each letter is written once.
+ */
+const HYBRID_KEY = /^sp(?:[23](?:d2?)?)?$/;
+const HYBRID_WORDS = /(?:\s|-)+(?:hybridi[sz]ed|hybridi[sz]ation|hybrids?(?:\s+(?:atomic\s+)?orbitals?)?|orbitals?)$/;
+export function hybridOrbitals(value) {
+  let text = String(value ?? '').normalize('NFKC').toLowerCase().trim().replace(/[.!]+$/, '').trim();
+  text = text.replace(/^the\s+/, '');
+  for (let again = true; again;) {
+    const shorter = text.replace(HYBRID_WORDS, '').trim();
+    again = shorter !== text;
+    text = shorter;
+  }
+  text = text.replace(/[\s^{}\-‐‑–—_]+/g, '');
+  if (!/^(?:[spd]\d?){1,3}$/.test(text)) return null;
+  const counts = { s: 0, p: 0, d: 0 };
+  const order = [];
+  for (const [, letter, count] of text.matchAll(/([spd])(\d?)/g)) {
+    if (counts[letter]) return null;
+    counts[letter] = Number(count || 1);
+    order.push(letter);
+  }
+  if (!counts.s || !counts.p || counts.s !== 1 || counts.p > 3 || counts.d > 5) return null;
+  return { ...counts, order: order.join('') };
+}
+/** The label in print order, s then p then d, superscripts as digits ("sp3d2"), or null. */
+export function hybridLabel(value) {
+  const orbitals = hybridOrbitals(value);
+  if (!orbitals) return null;
+  return `s${orbitals.p > 1 ? `p${orbitals.p}` : 'p'}${orbitals.d ? (orbitals.d > 1 ? `d${orbitals.d}` : 'd') : ''}`;
+}
+/** Is the keyed answer a hybridization label (sp, sp², sp³, sp³d, sp³d²)? */
+export const isHybridKey = (answer) => HYBRID_KEY.test(String(answer ?? '').normalize('NFKC').trim());
+/** Said to the key's own orbitals in another order: `dsp3` against `sp³d`, `d2sp3` against `sp³d²`. Gives no label. */
+export const HYBRID_ORDER_MESSAGE = 'Write the orbitals in the order s, p, d.';
+/** Said to a molecular shape's name typed against a hybridization key. Gives no label. */
+export const HYBRID_SHAPE_MESSAGE = 'That names a shape. The question asks for the hybridization: which atomic orbitals mix, and how many of each.';
+
+/**
  * A molecular shape's name (Chemistry 2e 7.6), the keys an angle may follow:
  * the source prints "bent (109°)", "bent (<120°)", and a learner copying the
  * book's print is right. Only against such a key, and only a parenthesis
@@ -283,11 +338,16 @@ export const SUBSHELL_LETTER_ONLY = 'Give the shell number with the letter.';
  */
 const SHAPE_NAME = /^(?:linear|bent|angular|trigonal planar|trigonal pyramidal|trigonal pyramid|tetrahedral|trigonal bipyramidal|trigonal bipyramid|seesaw|sawhorse|t shaped|square planar|square pyramidal|octahedral)$/;
 const ANGLE_AFTER = /\s*\(\s*[<≈]?\s*\d+(?:\.\d+)?\s*°\s*\)\s*$/;
+// …and the source's own qualifier after a shape: "bent, with two lone
+// pairs" (Chemistry 2e 8.2, printed 19(b), the source's answer verbatim).
+const LONE_PAIRS_AFTER = /\s*,?\s*with\s+(?:a|an|one|two|three|four|\d+)\s+lone\s+pairs?\s*\.?\s*$/i;
 
 export function checkText(input, answer, { accept = '', form = '' } = {}) {
   if (form) return checkChem(input, answer, { accept, form }).status;
-  if (ANGLE_AFTER.test(String(input ?? '')) && acceptedForms(answer, accept).some((member) => SHAPE_NAME.test(member))) {
-    input = String(input).replace(ANGLE_AFTER, '');
+  if (acceptedForms(answer, accept).some((member) => SHAPE_NAME.test(member))) {
+    const bare = String(input ?? '').replace(LONE_PAIRS_AFTER, '');
+    if (bare.trim() && bare !== String(input ?? '')) input = bare;
+    if (ANGLE_AFTER.test(String(input ?? ''))) input = String(input).replace(ANGLE_AFTER, '');
   }
   const normalized = normalizeText(input);
   if (!normalized) return 'empty';
@@ -301,6 +361,14 @@ export function checkText(input, answer, { accept = '', form = '' } = {}) {
     return closedForms.some((form) => matchesForm(closed, form));
   };
   if (graded(input)) return 'correct';
+  // A hybridization label (Chemistry 2e chapter 8) is its orbitals and their
+  // counts: `sp^3d`, `sp 3 d`, `sp3d hybridized` against `sp³d` (see
+  // `hybridOrbitals`). Read only against a key that IS such a label, and the
+  // letters must stand in the key's order — `dsp3` is `form` in `gradeText`.
+  if (isHybridKey(answer)) {
+    const typed = hybridOrbitals(input);
+    return typed && typed.order === 'spd'.slice(0, typed.order.length) && hybridLabel(input) === hybridLabel(answer) ? 'correct' : 'incorrect';
+  }
   // A subshell is its shell number and its letter, and a learner may set a
   // space between them: "2 p" for the key "2p" (Chemistry 2e 6.3, "Identify
   // the subshell …"). Folded only against a key that IS a subshell, so no

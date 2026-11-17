@@ -809,12 +809,50 @@ test('Chemistry chapter 7: a formal-charge fill-in closes word for word about an
   assert.deepEqual(rule(fillin(`${CO} ${close('C')}`)), [], 'carbon, named in words');
   assert.deepEqual(rule(fillin(`${CO} ${close('O')}`)), [], 'oxygen, as "monoxide"');
   assert.equal(rule(fillin(`${CO} ${close('N')}`)).length, 1);
-  assert.equal(rule(fillin(`${NCL} Enter the formal charge of Cl as a signed number, the sign first, as +1 or −1.`)).length, 1, 'another example pair');
+  assert.deepEqual(rule(fillin(`${NCL} Enter the formal charge of Cl as a signed number, the sign first, as +1 or −1.`)), [], 'another example pair (chapter 8): free, if no key of the page');
+  assert.equal(rule(fillin(`${NCL} Enter the formal charge of Cl as a signed number, the sign first, as 1 or −1.`)).length, 1, 'a pair is signed');
+  assert.equal(rule(fillin(`${NCL} Enter the formal charge of Cl as a number, the sign first, as +2 or −2.`)).length, 1, 'the other words are word for word');
   assert.equal(rule(fillin(`${NCL} Enter the formal charge of chlorine.`)).length, 1);
   assert.equal(rule(fillin(NCL)).length, 1, 'no closing');
   assert.equal(rule(fillin(`${NCL} ${close('Xx')}`)).length, 1, 'no element');
   assert.deepEqual(rule(fillin(`${NCL} Enter the charge.`, 'sig-figs:2 last-digit:0')), [], 'only a whole-number fill-in');
   assert.deepEqual(rule(fillin(`${NCL} Enter it.`), BIO), [], 'only the Chemistry book');
+});
+
+test('Chemistry chapter 8: an oxidation-state fill-in closes word for word, and no example pair prints a key of the page', async () => {
+  const { OXIDATION_STATE_CLOSING, FORMAL_CHARGE_CLOSING } = await import('./lints-leaks.mjs');
+  const fillin = (question, answer) => `{{< fillin\n  question="${question}"\n  answer="${answer}"\n  answerForm="whole-number"\n  hint="Use the rules."\n>}}\n`;
+  const STEM = 'Determine the oxidation states and formal charge of the atoms in P₄S₃ and the ClO₃⁻ ion.';
+  const ox = (symbol, pair = '+2 or −1') => `${STEM} ${OXIDATION_STATE_CLOSING.replace('<Symbol>', symbol).replace('+2 or −1', pair)}`;
+  const fc = (symbol, pair = '+2 or −2') => `${STEM} ${FORMAL_CHARGE_CLOSING.replace('<Symbol>', symbol).replace('+2 or −2', pair)}`;
+  const closing = (src) => errorsOf(src, CHEM).filter((e) => /an oxidation state — |a formal charge — /.test(e));
+  const pairs = (src) => errorsOf(src, CHEM).filter((e) => /example pair/.test(e));
+  // 8.2's four fill-ins: two oxidation states, two formal charges, one stem.
+  const page = (fcPair) => `Body.\n\n${fillin(ox('Cl'), '5')}\n${fillin(ox('O'), '-2')}\n${fillin(fc('P', fcPair), '0')}\n${fillin(fc('S', fcPair), '0')}`;
+  assert.deepEqual(closing(page('+3 or −3')), [], 'each item read against its own closing, though the stem names both');
+  assert.deepEqual(pairs(page('+3 or −3')), []);
+  assert.equal(pairs(page('+2 or −2')).length, 2, 'the default formal-charge pair prints O\'s oxidation state −2');
+  assert.match(pairs(page('+2 or −2'))[0], /prints −2, a key of a whole-number fill-in/);
+  assert.equal(closing(`Body.\n\n${fillin(ox('Xe'), '5')}`).length, 1, 'an element the stem does not print');
+  assert.equal(closing(`Body.\n\n${fillin(`${STEM} Enter the oxidation state of Cl.`, '5')}`).length, 1, 'not word for word');
+  assert.deepEqual(closing(`Body.\n\n${fillin(`Assign oxidation numbers to the elements in Na₂SO₄. Enter the oxidation number of S as a signed number, the sign first, as +2 or −1.`, '6')}`), [], '"oxidation number" (Knowledge Check 4–5)');
+  assert.equal(pairs(`Body.\n\n${fillin(`What is the charge on the ion? Enter the charge as a signed number, the sign first, as +1 or −1.`, '1')}`).length, 1, 'every signed closing, a charge too');
+});
+
+test('Chemistry chapter 8: a hybridization label is a plain text-in keyed in print, closing with how a superscript is typed', async () => {
+  const { HYBRID_CLOSING } = await import('./lints-leaks.mjs');
+  const ASK = 'What is the hybridization of the selenium atom in SeF₄?';
+  const t = (question, answer, extra = '') => `Body.\n\n{{< textin\n  question="${question}"\n  answer="${answer}"${extra}\n  hint="Count the regions of electron density."\n>}}\n`;
+  const rule = (src, file = CHEM) => errorsOf(src, file).filter((e) => /a hybridization label — /.test(e));
+  for (const key of ['sp', 'sp²', 'sp³', 'sp³d', 'sp³d²']) assert.deepEqual(rule(t(`${ASK} ${HYBRID_CLOSING}`, key)), [], key);
+  assert.match(rule(t(`${ASK} ${HYBRID_CLOSING}`, 'sp3d'))[0], /Unicode superscripts/);
+  assert.match(rule(t(`${ASK} ${HYBRID_CLOSING}`, 'sp^3d'))[0], /Unicode superscripts/);
+  assert.match(rule(t(ASK, 'sp³d'))[0], /closes, last/);
+  assert.match(rule(t(`${ASK} ${HYBRID_CLOSING} Enter the hybridization.`, 'sp³d'))[0], /closes, last/, 'the typing sentence is the last');
+  assert.match(rule(t(`${ASK} ${HYBRID_CLOSING}`, 'sp³d', '\n  accept="dsp3"'))[0], /no `accept`/);
+  assert.match(rule(t(`${ASK} ${HYBRID_CLOSING}`, 'sp³d', '\n  answerForm="formula"'))[0], /no `answerForm`/);
+  assert.deepEqual(rule(t(ASK, 'sp3d'), BIO), [], 'the Chemistry book only');
+  assert.deepEqual(rule(t('Name the subshell.', '2p')), [], 'no other key');
 });
 
 test('a character the build\'s strict KaTeX refuses inside \\text{…} is an error at the page, in every book (7.5\'s D_\\text{C≡O} broke the build)', () => {

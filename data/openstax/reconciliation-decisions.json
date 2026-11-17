@@ -7825,6 +7825,175 @@
       "status": "correct-local-source-defect",
       "errataEntry": 3174,
       "rationale": "The polar-bonds answer says all the molecules and ions contain polar bonds and that PH₂⁻ has a dipole moment; the book's table gives P and H the same electronegativity (2.1), so the section's two conditions do not decide PH₂⁻, while the dipole moment of phosphine, 0.58 D (NIST CCCBDB; Wikipedia, Phosphine), shows the source's “yes” is physically right. The page keeps the answer, holds the PH₂⁻ part as a self-check, and adds a Source note after it and after the lead-in self-check, with a footer clause each. Found by the 7.6 author and the prose claim pass (F8), read by the second reader, ruled by the orchestrator, November 15, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/02-hybrid-atomic-orbitals.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68745",
+      "sourceElementIds": [
+        "fs-idp50482432",
+        "fs-idm62815664"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3177,
+      "rationale": "The answer to exercise 8.2.19(a) draws the second structure as the chlorate ion, but the drawing (CNX_Chem_08_02_phsphorus2_img) labels its central atom C, has one double bond, and gives the central atom no lone pair; chlorate is a chlorine atom single-bonded to three oxygen atoms with one lone pair on the chlorine and three on each oxygen, the structure part (d)'s formal charges assume. The page keeps the image in the self-check's model answer with an alt written from the drawing, describes the chlorate structure in words, and adds a Source note after the block and a footer clause. Found by the 8.2 author, ruled by the orchestrator, November 16, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/04-molecular-orbital-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68747",
+      "sourceElementIds": [
+        "fs-idm149192752"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3178,
+      "rationale": "The answer to exercise 8.4.45 says “atoms in the 2s orbital are closer to the nucleus and more stable”; an orbital holds electrons, not atoms. The page's model answer and rubric say “electrons in the 2s orbital”, with a Source note after the block and a footer clause. Found by the 8.4 checker and author, ruled by the orchestrator, November 16, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/02-hybrid-atomic-orbitals.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68745",
+      "sourceElementIds": [
+        "fs-idp50482432"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3179,
+      "rationale": "Part (d) of exercise 8.2.19 gives the oxidation states of P₄S₃ as P +1, S −1⅓; the values sum to zero but do not follow Section 4.2's rule with the Section 7.2 electronegativities (S 2.5, P 2.1), which give S −2, P +3 for the phosphorus bonded to three sulfur atoms and +1 for each of the other three. The page's self-check model answer gives those states with the source's chlorate values and formal charges, a Source note after the block, a footer clause, and a DISCLOSED_DEVIATIONS line (kind solution). Found by the 8.2 author, the prose claim pass (F1), and the consistency reading, ruled by the orchestrator, November 16, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/04-molecular-orbital-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68747",
+      "sourceElementIds": [
+        "fs-idm181597760"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3180,
+      "rationale": "The wave-addition figure's caption says out-of-phase waves in panel (b) give destructive interference, but the drawing shows the two waves alike (crest under crest) with a flat sum; for a flat sum the second wave must be the first turned upside down, and the source alt describes what should be drawn, not what is. The page keeps the image with an alt written from it, a Source note after the figure, and a footer clause. Found by the 8.4a render reader and the parent, ruled by the orchestrator, November 16, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/04-molecular-orbital-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68747",
+      "sourceElementIds": [
+        "fs-idm175049680"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3181,
+      "rationale": "The answer to exercise 8.4.39 says the pairing of the two bonding electrons lowers the energy; pairing does not lower energy, and the reason in the module is that an electron in a σs orbital is attracted by both nuclei at once, so even the single electron of H₂⁺ is lower than in 1s. The page's self-check model answer gives that reason, with a Source note after the block, a footer clause, and a DISCLOSED_DEVIATIONS line (kind solution). Found by the prose claim pass (F6), ruled by the orchestrator, November 16, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/04-molecular-orbital-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68747",
+      "sourceElementIds": [
+        "fs-idm101918992"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3182,
+      "rationale": "Part (b) of exercise 8.4.33 says ψ and the molecular wave function represent the probability of finding the electron; ψ is the wave function and its square gives the probability. The page's model answer says the constructs' squares represent the probability, with a Source note after the block and a footer clause. Found by the prose claim pass (F7), ruled by the orchestrator, November 16, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/04-molecular-orbital-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68747",
+      "sourceElementIds": [
+        "fs-idm18620192",
+        "fs-idm169269152"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3183,
+      "rationale": "The glossary heads two definitions “π* bonding orbital” and “σ* bonding orbital”, while each definition calls the orbital antibonding and the body says “antibonding”. The page's Key terms print “π* antibonding orbital” and “σ* antibonding orbital”, with a Source note after the list and a footer clause. Found by the 8.4 author and the prose claim pass (F8), ruled by the orchestrator, November 16, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/04-molecular-orbital-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68747",
+      "sourceElementIds": [
+        "fs-idm51386912",
+        "fs-idm150138816"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3184,
+      "rationale": "The Walter Kohn box says his summer jobs included helping Polaroid explain how its instant film worked, while Kohn's own account (NobelPrize.org) says he worked in the Polaroid laboratory on how charged particles falling on a photographic plate form an image; it also describes him in the present tense and later says he died in 2016. The page corrects the Polaroid description with a Source note after the paragraph and a footer clause, and keeps the present tense as printed. Found by the prose claim pass (F5), ruled by the orchestrator, November 16, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/02-hybrid-atomic-orbitals.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68745",
+      "sourceElementIds": [
+        "fs-idp158687664"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3185,
+      "rationale": "The paragraph gives the observed angle in ammonia as 107.3°; the measured H–N–H angle is 106.67° (NIST CCCBDB, citing Herzberg, 1966), and the book's own Section 7.6 figure prints 106.8°. The page prints 106.7°, with a Source note after the paragraph and a footer clause. Found by the 8.2 author and the prose claim pass (F4), ruled by the orchestrator, November 16, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/01-valence-bond-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68744",
+      "sourceElementIds": [
+        "fs-idp39719248"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3188,
+      "rationale": "The caption of the hydrogen energy graph names parts (a) and (b), but the drawing is one graph with the atoms set beside its curve and no letters. The page keeps the caption as printed, writes the alt from the drawing, and adds a Source note after the figure and a footer clause. Found by the 8.1 author, kept as printed by the orchestrator, November 16, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/01-valence-bond-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68744",
+      "sourceElementIds": [
+        "fs-idp50252080"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3189,
+      "rationale": "The Lewis structure of N₂ in the answer to exercise 8.1.7 is drawn as N≡N without the lone pair on each nitrogen, unlike the module's own bond-type figure; the words answer the question asked, so the key is unaffected. The page keeps the drawing after the model answer's words, adds a sentence saying it is drawn without lone pairs, writes the alt and a longdesc from the drawing, and adds a Source note and a footer clause. Found by the 8.1 author, kept as printed by the orchestrator, November 16, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/01-valence-bond-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68744",
+      "sourceElementIds": [
+        "fs-idp43355056"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3190,
+      "rationale": "The table “Representative Bond Energies and Lengths” prints lengths and energies that differ from the book's Section 7.5 table (C–C 150.6 pm against 154, C–O 140.1 pm against 143, and different energies for seven of the nine shared bonds). The page keeps the cells as printed, with a Source note after the table naming C–C and C–O and linking Section 7.5, and a footer clause. Found by the prose claim pass (F3), ruled by the orchestrator, November 16, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/02-hybrid-atomic-orbitals.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68745",
+      "sourceElementIds": [
+        "fs-idm26101008"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3194,
+      "rationale": "The fourth idea about hybridization says all orbitals in a set of hybrid orbitals are equivalent in shape and energy; this is true of the sp, sp², sp³, and sp³d² sets but not of the sp³d set, whose axial and equatorial orbitals differ. The words stay as printed, with a Source note after the list and a footer clause. Found by the prose claim pass (F9), ruled by the orchestrator, November 16, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/04-molecular-orbital-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68747",
+      "sourceElementIds": [
+        "fs-idm130710736"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3199,
+      "rationale": "The paragraph says the order is consistent with “the generic diagram shown in the previous section”, but no earlier diagram in the section shows the 2p molecular-orbital order; the generic order is the left-hand diagram of the s-p mixing figure below it. The page writes “the previous subsection” with a Source note after the paragraph's figure and a footer clause. Found by the 8.4 author and the fix check (J1), ruled by the orchestrator, November 16, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/04-molecular-orbital-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68747",
+      "sourceElementIds": [
+        "fs-idp263742416",
+        "fs-idp22163776"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3200,
+      "rationale": "The Band Theory box says a conductor has a “very small” band gap; in a metal the highest band holding electrons is only partly filled (or overlaps an empty band), so there is no gap, and a small non-zero gap makes a semiconductor (University Physics Volume 3, Section 9.5). The words, caption, and figure stay as printed, with a Source note after the paragraph and a footer clause. Found by the prose claim pass (F2), ruled by the orchestrator, November 16, 2026."
     }
   ]
 }

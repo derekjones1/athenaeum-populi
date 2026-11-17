@@ -241,7 +241,7 @@ Again, each orbital holds two electrons, so 50 electrons can fit in this shell.
   question="If a shell contains a maximum of 32 electrons, what is the principal quantum number, $n$?"
   answer="4"
   answerForm="whole-number"
-  answerDisplay="4"
+  answerDisplay="$4$"
   hint="Use the expression for the maximum number of electrons in any shell from the solution above."
 >}}
 
@@ -271,7 +271,7 @@ Again, each orbital holds two electrons, so 50 electrons can fit in this shell.
   question="How many orbitals have $l = 2$ and $n = 3$?"
   answer="5"
   answerForm="whole-number"
-  answerDisplay="5"
+  answerDisplay="$5$"
   hint="Use the rule for the number of orbitals in a subshell."
 >}}
 

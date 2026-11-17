@@ -84,9 +84,20 @@ test('the probe builds chapter 4\'s several-keys parts one item per key, and fin
     ['fillin', '5', 'Enter the oxidation state of P as a signed number, the sign first, as +2 or −1.'], ['fillin', '-2', 'Enter the oxidation state of O as a signed number, the sign first, as +2 or −1.']]);
   assert.deepEqual(built('c2'), [['fillin', '0.217', 'Enter the number of moles of Cl_2.'], ['fillin', '15.4', 'Enter the mass of Cl_2 in grams.']]);
   assert.deepEqual(probeModule(xml).findings, []);
-  // 8.2 prints oxidation states AND formal charges by symbol: two numbers for O, which no closing sentence about O tells apart.
+  // 8.2 prints oxidation states AND formal charges by symbol, each list after
+  // its heading: until chapter 8 the probe built all four as oxidation
+  // states, and the gate confirmed O's formal charge −1 under "Enter the
+  // oxidation state of O …" (a swap). Now one item per entry, each closing
+  // with its own list's sentence, and every sibling's key refused.
   const both = cnxml(exercise('f1', ['Determine the oxidation states and formal charge of the atoms in the ClO<sub>3</sub><sup>–</sup> ion.'], 'Oxidation states Cl +5, O –2. Formal charges: Cl +2: O –1'));
-  assert.ok(probeModule(both).findings.some((finding) => finding.kind === 'swap confirmed'));
+  const f1 = keyedUnits(both);
+  assert.deepEqual(itemsFor(f1[0], f1).map((item) => [item.answer, item.question.split(/(?<=[.?!])\s+/).pop()]), [
+    ['5', 'Enter the oxidation state of Cl as a signed number, the sign first, as +3 or −3.'],
+    ['-2', 'Enter the oxidation state of O as a signed number, the sign first, as +3 or −3.'],
+    ['2', 'Enter the formal charge of Cl as a signed number, the sign first, as +3 or −3.'],
+    ['-1', 'Enter the formal charge of O as a signed number, the sign first, as +3 or −3.'],
+  ]);
+  assert.deepEqual(probeModule(both).findings, []);
 });
 
 test('chapter 6\'s shapes are built as the page carries them, and the gates read every one (Chemistry 2e 6.3–6.5)', () => {

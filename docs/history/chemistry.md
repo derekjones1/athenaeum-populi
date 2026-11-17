@@ -1521,6 +1521,15 @@ word for word as `run.md` had them.
 
 From `run.md`, "What a chapter cost".
 
+Chapter 8 (four sections, 82 auto-graded items and 28 self-checks; wall time
+about two hours, one session with no pause): authors 272k, 386k, 269k, and 373k
+tokens each across all rounds (8.1 to 8.4); checkers 160k, 214k, 165k, and 222k;
+claim pass 179k; consistency reader 305k; fix checker 210k; five rendered-page
+readers between 134k and 175k each; blind solver 152k. Before and during the
+wave, the gates agent 506k (three rounds). Clerks: 63k (landing), 117k (run
+facts), 209k (errata), 70k (decisions entries), and 115k (history). The parent
+did the pins, the ledger carries, and the fix check's accepted changes itself.
+
 Chapter 7 (six sections, 163 items; wall time about nine hours across a
 usage-limit pause): authors 268k, 290k, 462k, 322k, 387k, and 384k tokens each
 across all rounds (7.1 to 7.6); checkers 186k, 205k, 204k, 158k, 187k, and 271k;
@@ -4228,6 +4237,285 @@ as a datum.
   it: its report named a gap (a plain "q" in a source stem) and the parent
   closed it.
 
+## Chapter 8 (November 16, 2026)
+
+One run, one session with no pause, from commit `a740d741`: Sections 8.1
+Valence Bond Theory (m68744), 8.2 Hybrid Atomic Orbitals (m68745), 8.3 Multiple
+Bonds (m68746), 8.4 Molecular Orbital Theory (m68747), and the landing
+(m68743). 110 ledger records (9, 36, 22, and 43), of which 82 are auto-graded
+and blind-solved (5, 25, 18, and 34) and 28 are self-checks (4, 11, 4, and 9);
+65 figures (9, 29, 9, and 18) and 2 on the landing; three author fillers (8.1
+"electron pair", 8.2 "unhybridized", 8.4 "degenerate"). Blind solve (Fable, 3.4
+minutes): 81 agreed, none disagreed, and 1 was flagged as also defensible
+(8.3's phosphate delocalization, "localized" from the octet structure);
+adjudicated with the key standing, and the four hints of that exercise now say
+to draw the structure with the smallest formal charges. One closing was
+clarified after the solve on the solver's note (8.2's S₈ geometry: "about each
+sulfur atom"). Five answers were carried to new hashes (hint-only or
+closing-only edits). Errata 3177–3204 (28). Key deviations
+(`DISCLOSED_DEVIATIONS`, chapter 8 entries): two, both of kind `solution`:
+8.2's printed 19(d) (erratum 3179) and 8.4's printed 39 (erratum 3181). No key
+depends on an atomic mass, so the source-print register is unchanged.
+`baseline:update` moved `--min-confirmed` from 7753 to 7858, `--min-covered`
+from 4852 to 4916, `--min-replayed` from 9201 to 9253, and `--min-exercises`
+from 18546 to 18656. The map test went from 814 to 818 sections and Chemistry
+from 36 to 40.
+
+### Before the wave: the gates
+
+From the gates agent's report (`engine-report.md`): one Author-kind agent, three
+rounds. Round 1: the automatic probe of the chapter found one thing (an
+oxidation-state item confirmed with a formal charge). The hand probe then built
+the parent's decisions G1–G11 and D1–D22 as the pages would carry them, and the
+gates were taught what they refused or did not hold: a hybridization key held
+to one whole printed label; geometry and hybridization keys each held to its
+own closing; values sorted by atom; bond orders held to their species (the
+subscript 2 had been confirmed everywhere); "strongest bond is …"; one sentence
+answering several lettered parts; oxidation states and formal charges read from
+their own lists. The grader reads hybridization labels (`sp3d`, `sp^3d`, "sp3d
+hybridized"; `dsp3` is form) and tells a learner who types a shape's name for a
+label that it names a shape. A new fill-in form, `decimal-or-fraction`, takes a
+bond order. Three lints: the hybridization closing, the oxidation-state closing,
+and an example pair that is a key of the page. Before and after, every gate
+verdict of the book was identical.
+
+Round 2, after the 8.3 checker: lone formulas in stems are Unicode, so the
+forms files and the playbook rows were corrected; no gate change was needed.
+Round 3, after the readings: the grader folds "bent, with two lone pairs". Lints
+were turned on for an italic orbital letter, a bare σ or π in math outside a
+multiple-choice or fill-in, a bond written with a minus sign, British spelling,
+and an `answerDisplay` with no math, with 8, 66, and 43 hits fixed on earlier
+chapters' pages (45 items re-hashed and carried by the parent). Two lints were
+measured and left off: overlapping rubric clauses (33 pairs outside chapter 8,
+six of them a clause inside another) and straight apostrophes (234 on 34 pages).
+
+### The parent's decisions before the wave
+
+From `run-facts.md`, G1–G11, D1–D22, and amendments A1–A5. The decisions that are
+new shapes: **a hybridization is a plain text-in** (G2: `sp²`, `sp³d`, typed
+with any superscript as an ordinary number, one closing sentence word for
+word); **one atom among several named in words** (G3: 8.2's acetic acid carbons,
+which the source marks by underline); **a bond order is a fill-in** (G4,
+`decimal-or-fraction`, each closing naming its species); **a yes-or-no question
+whose answer opens with the word** is a multiple-choice first and then a
+self-check with the source's answer (G5); **a geometry asked alone** is one
+text-in keyed with the source's word, an angle or lone-pair count after it no
+part of the key (G7); **drawing self-checks**, each Lewis structure's alt
+electron-counted against the species' valence electrons (G11). Three decisions
+changed on the gate agent's word or a reading: D4 (the eight fields of 8.2's
+printed 15 come before its four drawings, because a reveal directly above a
+field it answers trips the leak lint); D6 (the ion's formal charges are no
+fields, since they belong to one Lewis structure among several, and the
+source's own drawing of the ion is wrong, D6a); and the example pair of the
+signed closings ("+3 or −3").
+
+### What each reading found
+
+- **Checkers**, defects and concerns: 8.1 3 and 6, 8.2 1 and 8, 8.3 2 and 6, 8.4
+  3 and 7 (`check-8.1.md` to `check-8.4.md`). The chief defects: 8.1's nitrogen
+  hint quoted the paragraph that works its own question; 8.2's mixed number
+  written as a vulgar fraction in the model answer of printed 19(d); 8.3's
+  printed 31 reveal answering the later item 29(b) and its Check Your Learning
+  hint pointing at the example that reaches the key; 8.4's F₂ charge item
+  accepting its own printed "2", a rubric clause that checked nothing (printed
+  39), and the model answer's "atoms in the 2s orbital" (printed 45). The 8.3
+  checker also caught the lone formulas set in `\ce` in stems.
+- **Claim pass**: nine findings, F1–F9, all nine acted on: the P₄S₃ oxidation
+  states of printed 19(d) not reproducible from electronegativities (the most
+  serious); a conductor's "very small" band gap; the 8.1 table of bond lengths
+  against 7.5's; ammonia's 107.3°; the Walter Kohn box's present tense and
+  Polaroid job; "the pairing of the two bonding electrons lowers the energy";
+  ψ "represent the probability"; two glossary headwords naming antibonding
+  orbitals "bonding"; and "all orbitals in a set of hybrid orbitals are
+  equivalent".
+- **Consistency reader**: 17 findings (`consistency-ch08.md`). The ones that
+  would have cost a later chapter most: italic orbital letters on 8.1 and 8.3
+  against upright ones everywhere else, with the playbook's cited rule not
+  existing; σ and π in Unicode on 8.1 to 8.3 and in math on 8.4; the P₄S₃
+  oxidation states (the claim pass's F1 from the other side); rubric clauses
+  that are a run of another clause of the same rubric (four self-checks on
+  three pages); the describing sentence on a drawing answer added on 8.2 and
+  8.3 and not on 8.1 and 8.4; molecular-orbital symbols italic in math against
+  upright in prose; a `####` sub-heading inside one exercise; and a bond
+  written with a minus sign.
+- **Rendered-page readers**: five readers over 66 tiles. 8.4b none; 8.2b 1
+  cosmetic (the P₄S₃ figure uncaptioned and far from the items that point to
+  it); 8.2a 3 cosmetic (two Check Your Learning drawings that stand directly
+  under the example's drawing, before any words about them; the lavender
+  example-box background kept in the rasters; and "Cl" in two figures'
+  lettering reading as "CI"); 8.4a 1 misleading (the
+  wave-addition figure's panel (b) draws its two waves alike though the sum is a
+  flat line); 8.1 and 8.3 together 1 misleading (the four delocalization stems
+  never asked their question).
+- **Fix check**: 6 changes and 5 judgment calls (`fix-check-ch08.md`). The
+  changes: the nitrogen yes/no hint, two footer clauses made untrue by the
+  19(d) correction, a British spelling in a footer, a footer clause for
+  "previous subsection" that gave the wrong reason, the 33(a) hint, and the
+  landing, where GR1 and GR6 had not been applied. The judgment calls included
+  8.4's "generic diagram … in the previous subsection" pointing at nothing, and
+  three hints that point at the sentence holding the answer.
+
+### The rulings
+
+From `rulings.md`, one round after the claim pass, the consistency reading, and
+the rendered-page readings. The general ones: **GR1**, orbital, subshell, and
+hybridization labels are upright Unicode in prose, whatever the source
+italicizes (62 italic spans on 8.1 and 8.3), with a footer clause; **GR2**, a
+bare σ or π is Unicode in the body, captions, Summary, Key terms, alts, and in
+text-ins and self-checks, and math in a multiple-choice or fill-in; **GR3**, the
+orbital letters of a molecular-orbital symbol are upright (8.4 only); **GR4**,
+the clauses of one rubric do not overlap; **GR5**, a drawing answer carries an
+added describing sentence only where the drawing holds something the source's
+words do not describe; **GR6**, American spelling and the curly apostrophe;
+**GR7**, a single bond between symbols in prose is an en dash; **GR8**, a `####`
+sub-heading is never placed inside one exercise; **GR9**, a Source note beside
+an unanswered item says that the answer differs and never what the corrected
+fact is, and the footer prints no key, no model-answer sentence, and no rubric
+clause. The corrections that carry an erratum number:
+
+- **8.2's printed 19(d)** (3179, with 3177 for the source's drawing of the
+  "chlorate ion" and 3193 for the colon in "Cl +2: O –1"): the model answer
+  takes the oxidation states the book's definition gives from the structure, a
+  Source note after the block, a footer clause with no value; the hold on the
+  item was lifted.
+- **8.4's printed 39** (3181): the model answer becomes the section's own
+  statement about a bonding orbital, with a Source note after the block.
+- **8.4's printed 33(b)** (3182): "constructs whose squares represent the
+  probability", with a Source note after the block.
+- **8.4's printed 45** (3178): "electrons" for "atoms" in the 2s sentence.
+- **8.4's glossary** (3183): the headwords become "π* antibonding orbital" and
+  "σ* antibonding orbital", with a Source note.
+- **8.4's Kohn box** (3184): the Polaroid sentence corrected and a Source note;
+  the present tense stays as the source's.
+- **8.4's Band Theory box** (3200): the words and the caption stay, with a
+  Source note citing OpenStax University Physics Volume 3, Section 9.5.
+- **8.4's wave-addition figure** (3180): the alt rewritten from the image and a
+  Source note after the figure.
+- **8.4's "generic diagram … in the previous section"** (3199): written "the
+  previous subsection", with a footer clause.
+- **8.2's ammonia angle** (3185): the page prints 106.7° with a Source note
+  (NIST CCCBDB, citing Herzberg, 1966; 7.6's figure prints 106.8°).
+- **8.2's fourth statement of the hybrid-orbital list** (3194): words kept, a
+  Source note after the list.
+- **8.1's table of representative bond energies and lengths** (3190): cells kept
+  as printed, a Source note naming the two values that differ from Section 7.5's
+  table.
+
+Also ruled: 8.1's printed 7 model answer gains one sentence saying what the Lewis
+half of the drawing shows (3189); 8.2's matches-exercise stems were to name "the
+figure of P₄S₃ above", but the answer ledger then bound none of the twelve
+items to the figure, so the author restored "the figure above"; 8.3's four delocalization stems
+close "Are the electrons delocalized or localized?"; the 8.3 footer clause about
+where the orbital-diagram exercise sits is removed; and 8.4's two references to
+other pages are links.
+
+### What the process got wrong
+
+- D16 and G4 put lone formulas in `$\ce{}$` in stems, against "Notation"; the
+  8.3 checker caught it, and three authors and the forms files were corrected
+  mid-wave.
+- D10's multiple-choice shape never asked the question its buttons answer; the
+  rendered-page reader caught it.
+- The run facts gave the answer-key pages as 1153–1154; the chapter's last
+  answers are on 1155 (two readers said so).
+- The rulings file told an author to leave an item as it was if a gate refused a
+  ruling, and the 8.2 author rightly reverted the corrected model answer when
+  `engine-gate` said "diverges". A corrected model answer is expected to
+  diverge until its deviation is filed, so the deviation is filed before the
+  ruling is sent, or the ruling says so.
+- `engine-gate.mjs` does not read `DISCLOSED_DEVIATIONS`.
+- The landing was left out of the general rulings (GR1, GR6); the fix check
+  caught it.
+- Two authors answered the close-out footer audit from memory of the images in
+  seconds; the parent opened two of the images itself.
+
+### Outside sources opened
+
+By the parent: the NIST Computational Chemistry Comparison and Benchmark
+Database, ammonia (H–N–H 106.67°, Herzberg 1966); OpenStax University Physics
+Volume 3, Section 9.5 (a conductor's highest occupied band is partly filled).
+Walter Kohn's Nobel biographical page refused the parent's request (403) and was
+read from the copy the claim reader saved, so its words are paraphrased on the
+page.
+
+### Kept as printed
+
+From the "Reviewed and not errata (chapter 8)" block of
+`docs/openstax-errata.md`:
+
+- 8.2 printed 13's "one of four different shapes" (the answer names three), and
+  printed 19's stem, which ends before its image (the page adds "shown in the
+  figure above").
+- 8.4's 33(a) "Both are bonding orbitals that can contain a maximum of two
+  electrons" (σ* and π* are antibonding), and the Summary's "Hund's rule and the
+  Aufbau principle tell us …", whose last clause is the Pauli exclusion
+  principle.
+- 8.4's "Kohn and mathematician John Pople" and "As of December 2014, up to 46%
+  of the energy in sunlight": from memory, not opened; the date protects the
+  second.
+- 8.4's "combining the six 2p atomic orbitals results in three bonding orbitals
+  (one σ and two π)", which cites the Be₂⁺ diagram that shows only 2s levels
+  (print p-0404 the same).
+- The raster "Cl" reading as "CI" in several drawings of 8.2 and 8.3, and the
+  lavender background of the example drawings (8.2).
+- The smaller claims the claim pass reviewed: the H₂ energy (436 kJ/mol is the
+  bond enthalpy and not the well depth), CH₃–H and PhCH₂–H, XeF₂'s 77.55%/22.45%,
+  H₂Te 90°, S₈ 108° printed "109°", SO₂ 119.5° printed "120°", hybridization
+  with d orbitals, He₂, the ionization-energy pairs of printed 43, SO₂ "a major
+  component of volcanic gases", and "interhalogens" for ions: no note.
+- 8.2's printed 11 "no d orbitals" and the other transcribed answers whose
+  rubric clauses were rewritten to be disjoint runs: rubric design, not a source
+  defect.
+
+### What typing the keys showed
+
+82 of 82 keys typed into the built pages grade correct, and so do 82 second
+writings. The tool had typed a hybridization key as the page keys it, with its
+Unicode superscripts, which no learner types; it now types the label's digits
+plainly (`sp3d`, 25 fields) and, as the second writing, after a caret (`sp^3d`),
+and a half-integer bond order as its fraction (`1/2`, `5/2`, seven fields)
+(`tools/build/typed-keys.mjs`). The browser suite passed (190 tests). At phone width the
+Key-equation line of 8.4 was wider than the column and scrolled inside itself,
+as the stylesheet provides for a Key equation; the parent, who had written
+here that it fit before looking, then measured it, and set its numerator on
+two lines as the body's display has it, so that it fits.
+
+### Next
+
+Knowledge Check block 3 (chapters 6–8), from `docs/briefs/chemistry/kc-run.md`;
+then chapter 9.
+
+### For Derek
+
+1. A charge is typed the sign first (`+2`), and Section 4.2 of the book says a
+   charge is written number first (2+) and an oxidation number sign first, to
+   tell the two apart. The field answers `2+` with "That has its sign after the
+   number. Type the sign first." Whether a charge field should take `2+` as
+   right is open
+   (`content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/04-molecular-orbital-theory.md`,
+   the last Practice item, "What charge would be needed on F₂ …"; the rule is
+   the playbook's charge row, set in chapters 2 and 7).
+2. σ and π are math in a multiple-choice stem and its buttons, because the lint
+   requires math for π there, and plain text in the prose beside them
+   (8.1, the Check Your Learning after the butadiene example: the stem's
+   "$\sigma$ or $\pi$ bond" above the body's "σ bonds"). Narrowing the lint for
+   a π that names a bond would make them one form.
+3. The worked-example drawings of 8.2 keep the source's lavender example-box
+   fill, so each shows as a tinted rectangle on the page (8.2, the sulfate and
+   urea examples). It is in the source's rasters; a rendered-page reader noted
+   it and nothing was changed.
+4. Two lints were measured and left off rather than turned on with a backlog:
+   overlapping rubric clauses (33 pairs on chapters 1–7, six of them a rubric
+   to rewrite) and straight apostrophes (234 on 34 pages, many inside item
+   text). Each is a sweep of the finished chapters with a re-hash of every
+   item it touches.
+5. Phosphate's delocalization (8.3, the last pair of Practice items before
+   the CO₂ orbital diagram) is keyed "delocalized" as the source keys it; the
+   octet structure with four single bonds gives "localized". The hint now says
+   to draw the structure with the smallest formal charges; the source's own
+   chlorate answer in 8.2 uses the octet structure instead, and the page says
+   which structure that answer assumes.
+
 ## The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under
@@ -4268,3 +4556,6 @@ the ban, with its page and line. The ban is reviewed from this list.
   its charges shrink to script size; reported by the author, the checker, and
   the rendered-page reader. The same fraction stands as a display equation at
   line 170, where it is full size.
+- Chapter 8 reported no fraction that needed `\dfrac`. One line is on watch
+  for width, not size: 8.4's Key equation (an inline `\frac` with a long
+  numerator).

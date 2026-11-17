@@ -315,7 +315,7 @@ $$\begin{aligned} \text{K} &= {}^\circ\text{C} + 273.15 = \frac{5}{9}({}^\circ\t
   question="The label on a soft drink bottle gives the volume in two units: 2.0 L and 67.6 fl oz. Use this information to derive a conversion factor between the English and metric units. How many significant figures can you justify in your conversion factor? Enter the number of significant figures."
   answer="2"
   answerForm="whole-number"
-  answerDisplay="2"
+  answerDisplay="$2$"
   hint="A quotient keeps as many significant figures as the measured value with the fewest."
 >}}
 

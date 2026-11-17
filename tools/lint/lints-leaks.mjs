@@ -94,6 +94,8 @@ import { chemSpans } from '../verify/verify-replay.mjs';
 import { amountHintProblem, heatAsk, isNegativeKey } from '../lib/heat-ask.mjs';
 import { askedUnit, shownUnit, showsAskedUnit } from '../lib/item-units.mjs';
 import { isWordRun, readWords } from '../lib/rubric-run.mjs';
+import { cePrinted } from '../lib/keyed-units.mjs';
+import { bareGreekMath, britishSpellingAndStraightApostrophes, italicOrbitalLetters, minusAsBond, plainAnswerDisplays } from './chemistry-notation.mjs';
 import {
   colourOutsideVisible, dashHyphens, italicDescriptiveSubscripts, miscountedConfigurations, proseOnly, sourceNumberReferences, subshellLabelSlips,
 } from './chemistry-readings.mjs';
@@ -128,14 +130,36 @@ export const ORDERING_CLOSING = 'Type the symbols in the order you rank them, se
 export const QUANTUM_CLOSING = 'Type the four values in the order n, l, mₗ, mₛ, separated by spaces.';
 
 /**
+ * The sentence a hybridization label's text-in closes with (Chemistry
+ * chapter 8; lint): the field has no typing guide and a learner's keyboard
+ * has no superscript. It names no label.
+ */
+export const HYBRID_CLOSING = 'Type any superscript as an ordinary number.';
+/** The labels a hybridization key may be, in the book's print. */
+export const HYBRID_KEYS = Object.freeze(['sp', 'sp²', 'sp³', 'sp³d', 'sp³d²']);
+
+/**
  * The sentence a formal-charge fill-in closes with (Chemistry 7.4; lint),
  * the element's SYMBOL in place of `<Symbol>`: the source gate holds the item
  * to that element's number ("C −1, O +1"), and the example pair is no key of
  * the chapter (its keys are 0, −1, and +1).
  */
 export const FORMAL_CHARGE_CLOSING = 'Enter the formal charge of <Symbol> as a signed number, the sign first, as +2 or −2.';
-// No oxidation-state twin yet: Knowledge Check 4–5 closes one item "Enter the
-// oxidation number of S …" (measured November 15, 2026: 1 of 20 fill-ins).
+/**
+ * Its twin for an oxidation state (Chemistry 4.2; lint since chapter 8, when
+ * one exercise asked both — 8.2's strike-anywhere matches — and the gate
+ * learned to hold each item to its own list). "oxidation number", which the
+ * book also prints (Knowledge Check 4–5), is the same closing.
+ */
+export const OXIDATION_STATE_CLOSING = 'Enter the oxidation state of <Symbol> as a signed number, the sign first, as +2 or −1.';
+/**
+ * The example pair any signed closing ends with ("…, the sign first, as +2
+ * or −1."). Its two numbers are the author's to choose — one positive, one
+ * negative — and neither may be a key of a whole-number fill-in on the page
+ * (lint): 8.2 keys an oxidation state of −2 beside two formal charges, whose
+ * default pair "+2 or −2" would print it.
+ */
+export const EXAMPLE_PAIR = /, the sign first, as \+([1-9]\d*) or −([1-9]\d*)\.$/;
 
 /**
  * A page's own heading called "the … section" ("the Lewis Symbols section",
@@ -161,11 +185,17 @@ const NAMED_ELEMENTS = Object.freeze({
  * prints — or null. `closing` holds `<Symbol>`.
  */
 export function signedClosingProblem(question, closing) {
-  const text = String(question ?? '').trim();
+  // A formula the stem sets as `$\\ce{ClO3-}$` (a fill-in stem may hold
+  // math, 8.2) is read as it prints: ClO₃⁻.
+  const text = cePrinted(String(question ?? '')).trim();
   const [head, tail] = closing.split('<Symbol>');
   const escape = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const match = new RegExp(`(?:^|\\s)${escape(head)}([A-Z][a-z]?)${escape(tail)}$`).exec(text);
-  if (!match) return `close the stem word for word "${closing}", the element's symbol in place of <Symbol>`;
+  // The example pair is free (EXAMPLE_PAIR); the words around it are not.
+  const pair = /as \+\d+ or −\d+\.$/;
+  const tailPattern = escape(tail.replace(pair, '')) + 'as \\+[1-9]\\d* or −[1-9]\\d*\\.';
+  const heads = [head, ...(/oxidation state/.test(head) ? [head.replace('oxidation state', 'oxidation number')] : [])];
+  const match = heads.map((one) => new RegExp(`(?:^|\\s)${escape(one)}([A-Z][a-z]?)${tailPattern}$`).exec(text)).find(Boolean);
+  if (!match) return `close the stem word for word "${closing}", the element's symbol in place of <Symbol> (the example pair may be another, neither number a key of the page)`;
   const symbol = match[1];
   const before = text.slice(0, match.index);
   if (!ALL_ELEMENTS.has(symbol)) return `"${symbol}" in the closing is no element's symbol`;
@@ -879,6 +909,19 @@ export function lintLeaks(src, filename = '') {
       && !String(item.params.question ?? '').includes(ORDERING_CLOSING)) {
       err(item.index, `${where}: an ordering's field has no typing guide — close the stem "${ORDERING_CLOSING}"`);
     }
+    // ---- a hybridization label (Chemistry chapter 8) ------------------------
+    // A plain text-in whose grader folds the label's writings (`sp3d`,
+    // `sp^3d`, "sp3d hybridized"): no accept, no form, the key in the book's
+    // print, and the stem closing with how a superscript is typed.
+    const hybridKey = String(item.params.answer ?? '').normalize('NFKC').toLowerCase().replace(/[\s^{}]/g, '');
+    if (chemistry && /^sp\d?(?:d\d?)?$/.test(hybridKey)) {
+      const problems = [];
+      if (!HYBRID_KEYS.includes(item.params.answer)) problems.push(`its key ${JSON.stringify(item.params.answer)} is written in print, with Unicode superscripts (${HYBRID_KEYS.join(', ')})`);
+      if (!String(item.params.question ?? '').trim().endsWith(HYBRID_CLOSING)) problems.push(`the stem closes, last, "${HYBRID_CLOSING}"`);
+      if (item.params.accept !== undefined) problems.push('it takes no `accept` (the grader folds every writing of the label)');
+      if (item.params.answerForm !== undefined) problems.push('it declares no `answerForm`');
+      if (problems.length) err(item.index, `${where}: a hybridization label — ${problems.join('; ')}`);
+    }
     if (chemistry && item.params.answerForm === 'quantum-numbers'
       && !String(item.params.question ?? '').includes(QUANTUM_CLOSING)) {
       err(item.index, `${where}: a set of quantum numbers' field has no typing guide — close the stem "${QUANTUM_CLOSING}"`);
@@ -1203,6 +1246,23 @@ export function lintLeaks(src, filename = '') {
         err(texStart + hit.index, `\`${hit.written}\` in \`$${span.tex.slice(0, 40)}$\` is an italic subscript — "final" and "initial" are words, and a descriptive subscript is upright: \`${hit.upright}\` (an index a sum runs over stays italic)`);
       }
     }
+    // Chapter 8's notation rulings (docs/subjects/chemistry.md "Notation";
+    // each measured on the whole book before it was turned on).
+    for (const hit of italicOrbitalLetters(text)) {
+      err(hit.index, `\`${hit.written}\` sets an orbital letter italic — an orbital, subshell, or hybridization label is upright Unicode in prose (\`2p\`, \`sp³d²\`, "an s orbital"), whatever the source italicizes; state symbols and axis letters keep their italics`);
+    }
+    for (const hit of bareGreekMath(text)) {
+      err(hit.index, `\`${hit.written}\` is a bare ${hit.letter} set as math outside a multiple choice or fill-in — write the letter (${hit.letter}) in the body, a caption, an alt, a text-in, or a self-check; math is for a multiple-choice or fill-in question, option, or hint (and the self-check that shares its stem), and for an orbital symbol with a subscript, superscript, or star`);
+    }
+    for (const hit of minusAsBond(text)) {
+      err(hit.index, `"${hit.written}" draws a bond with the minus sign U+2212 — a single bond between symbols is an en dash (H–C≡C–H)`);
+    }
+    for (const hit of britishSpellingAndStraightApostrophes(text).filter((one) => one.kind === 'spelling')) {
+      err(hit.index, `"${hit.written}" — American spelling, the source's: labeled, color, gray (a word the source itself spells otherwise is quoted in curly quotation marks)`);
+    }
+    for (const hit of plainAnswerDisplays(text)) {
+      err(hit.index, `${hit.kind}: answerDisplay="${hit.written}" has no math — every answerDisplay is math, the value as the book prints it (\`$4$\`, \`$2+$\`, \`$-2$\`)`);
+    }
     for (const hit of dashHyphens(proseOnly(text))) {
       err(hit.index, `"${hit.written}" is the source's hyphen where it means a dash — write "${hit.dash}" (an em dash between clauses, an en dash in a range), and say so in the footer`);
     }
@@ -1270,9 +1330,28 @@ export function lintLeaks(src, filename = '') {
       }
       // A formal charge per element (7.4) closes with the one sentence the
       // source gate reads, about an element the stem prints.
-      if (item.kind === 'fillin' && /(?:^|\s)whole-number(?:\s|$)/.test(String(item.params.answerForm ?? '')) && /\bformal charges?\b/i.test(question)) {
+      const wholeNumber = item.kind === 'fillin' && /(?:^|\s)whole-number(?:\s|$)/.test(String(item.params.answerForm ?? ''));
+      const closingSentence = question.split(/(?<=[.?!])\s+/).pop();
+      // An item of an exercise that asks oxidation states AND formal charges
+      // (8.2) is the closing's: an oxidation-state closing is read below.
+      if (wholeNumber && /\bformal charges?\b/i.test(question) && !/\boxidation (?:states?|numbers?)\b/i.test(closingSentence)) {
         const problem = signedClosingProblem(question, FORMAL_CHARGE_CLOSING);
         if (problem) err(item.index, `${where}: a formal charge — ${problem}`);
+      }
+      // …and an oxidation state (chapter 8): the gate holds each item to the
+      // list its closing names where one answer gives both.
+      if (wholeNumber && /\boxidation (?:states?|numbers?)\b/i.test(closingSentence)) {
+        const problem = signedClosingProblem(question, OXIDATION_STATE_CLOSING);
+        if (problem) err(item.index, `${where}: an oxidation state — ${problem}`);
+      }
+      // The example pair a signed closing prints is no key of the page: a
+      // learner reads "as +2 or −2" beside an item keyed −2.
+      const pair = EXAMPLE_PAIR.exec(question);
+      if (wholeNumber && pair) {
+        const keys = new Set(items.filter((other) => other.kind === 'fillin' && /(?:^|\s)whole-number(?:\s|$)/.test(String(other.params.answerForm ?? '')))
+          .map((other) => Number(String(other.params.answer ?? '').replace(/[−–]/g, '-').replace(/^\+/, ''))));
+        const printed = [Number(pair[1]), -Number(pair[2])].filter((value) => keys.has(value));
+        if (printed.length) err(item.index, `${where}: its closing's example pair ("as +${pair[1]} or −${pair[2]}.") prints ${printed.map((value) => (value > 0 ? `+${value}` : `−${-value}`)).join(' and ')}, a key of a whole-number fill-in on this page — choose a pair neither number of which is a key here`);
       }
       // A display equation set inline in a stem and run into the next
       // sentence: "…$d = \frac{m}{V}$ Considering that…" (1.3).
