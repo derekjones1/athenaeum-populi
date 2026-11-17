@@ -892,3 +892,16 @@ test('Chemistry: a heading of the page called "the … section" is a subsection 
   assert.deepEqual(rule(page('See [Section 7.3 Lewis Symbols and Structures](/x/) and the Bond Energies section of that page.')), [], 'a numbered Section, a heading of another page');
   assert.deepEqual(rule(page('See the Lewis Symbols section above.'), BIO), [], 'Chemistry only');
 });
+
+test('Chemistry: a charge closes number first and declares `charge`, each only with the other (Derek, November 16, 2026)', async () => {
+  const { CHARGE_CLOSING } = await import('./lints-leaks.mjs');
+  const fillin = (question, form, answer = '4') => `Body.\n\n{{< fillin\n  question="${question}"\n  answer="${answer}"\n  answerForm="${form}"\n  hint="Use the definition of charge."\n>}}\n`;
+  const ASK = 'An ion of platinum has a mass number of 195 and contains 74 electrons. What is its charge?';
+  const rule = (src) => errorsOf(src, CHEM).filter((e) => /a charge closes|charge closing|`charge` is declared|asks a charge sign first|example pair/.test(e));
+  assert.deepEqual(rule(fillin(`${ASK} ${CHARGE_CLOSING}`, 'whole-number charge')), []);
+  assert.equal(rule(fillin(`${ASK} Enter the charge as a signed number, the sign first, as +1 or −1.`, 'whole-number')).length, 1, 'the old closing');
+  assert.equal(rule(fillin(`${ASK} ${CHARGE_CLOSING}`, 'whole-number')).length, 1, 'the closing without the token');
+  assert.equal(rule(fillin(`${ASK} Enter the charge.`, 'whole-number charge')).length, 1, 'the token without the closing');
+  assert.equal(rule(fillin(`${ASK} ${CHARGE_CLOSING}`, 'charge')).length, 1, 'the token alone');
+  assert.equal(rule(fillin(`${ASK} ${CHARGE_CLOSING}`, 'whole-number charge', '1')).length, 1, 'the example pair prints the key 1+');
+});

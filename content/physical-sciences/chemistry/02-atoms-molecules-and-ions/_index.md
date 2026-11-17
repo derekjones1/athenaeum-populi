@@ -1,6 +1,6 @@
 ---
 title: Atoms, Molecules, and Ions
-description: Atoms, molecules, and ions — Dalton's atomic theory and the laws of definite and multiple proportions; the experiments that revealed the subatomic particles and the nuclear atom; atomic number, mass number, isotopes, and average atomic mass; molecular, empirical, and structural formulas; the periodic table; ionic and molecular compounds; and chemical nomenclature.
+description: Atoms, molecules, and ions — Dalton’s atomic theory and the laws of definite and multiple proportions; the experiments that revealed the subatomic particles and the nuclear atom; atomic number, mass number, isotopes, and average atomic mass; molecular, empirical, and structural formulas; the periodic table; ionic and molecular compounds; and chemical nomenclature.
 source_chapter: "2"
 weight: 2
 ---
@@ -9,9 +9,9 @@ weight: 2
 Analysis of molecules in an exhaled breath can provide valuable information, leading to early diagnosis of diseases or detection of environmental exposure to harmful substances. (credit: modification of work by Paul Flowers)
 {{< /mediafigure >}}
 
-Lung diseases and lung cancers are among the world's most devastating
+Lung diseases and lung cancers are among the world’s most devastating
 illnesses partly due to delayed detection and diagnosis. Most noninvasive
-screening procedures aren't reliable, and patients often resist more
+screening procedures aren’t reliable, and patients often resist more
 accurate methods due to discomfort with the procedures or with the
 potential danger that the procedures cause. But what if you could be
 accurately diagnosed through a simple breath test?
@@ -24,7 +24,7 @@ exposure to environmental contaminants or for pathological conditions
 ranging from asthma to lung cancer. Scientists are working to develop
 biomarker “fingerprints” that could be used to diagnose a specific disease
 based on the amounts and identities of certain molecules in a patient’s
-exhaled breath. In Sangeeta Bhatia's lab at MIT, a team used substances
+exhaled breath. In Sangeeta Bhatia’s lab at MIT, a team used substances
 that react specifically inside diseased lung tissue; the products of the
 reactions will be present as biomarkers that can be identified through mass
 spectrometry (an analytical method discussed later in the chapter). A
@@ -50,4 +50,4 @@ the concept of molecular identity.
 
 ---
 
-<small>This chapter is adapted from [Chemistry 2e, Chapter 2: Atoms, Molecules, and Ions](https://openstax.org/books/chemistry-2e/pages/2-introduction) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Each section page records its own changes from the source. Changes: the chapter-opening image is the source's, re-encoded for the web with its alt text rewritten to describe what the image shows; the source's chapter outline is rendered here as the list of sections.</small>
+<small>This chapter is adapted from [Chemistry 2e, Chapter 2: Atoms, Molecules, and Ions](https://openstax.org/books/chemistry-2e/pages/2-introduction) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Each section page records its own changes from the source. Changes: the chapter-opening image is the source’s, re-encoded for the web with its alt text rewritten to describe what the image shows; the source’s chapter outline is rendered here as the list of sections.</small>

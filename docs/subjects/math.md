@@ -153,6 +153,7 @@ names):
 | `improper-fraction` | $\tfrac{a}{b}$ with $\lvert a\rvert \ge \lvert b\rvert$ |
 | `fraction-or-mixed-number` | either shape — for a source ask that offers the choice |
 | `decimal-or-fraction` | one number written plainly — a decimal, a fraction, a slash quotient of two integers, or a mixed number (`0.5`, `.5`, `1/2`, `\frac12`, `2\frac12`) — never arithmetic left undone; for an EXACT number that may be a half and asks for no figures (Chemistry 2e's bond orders, chapter 8) *(November 16, 2026)* |
+| `charge` | only beside `whole-number` (`answerForm="whole-number charge"`): a charge typed as Chemistry 2e Section 4.2 writes it, number first and then sign (`2+`, `3-`) — the key stays the signed number (`2`, `-3`); sign first (`+2`) and the bare size (`2`) are `form` with their own sentences, the other sign incorrect *(November 16, 2026, Derek)* |
 | `lowest-terms` | numerator and denominator share no factor, and the sign is reduced: at most one minus, never in the denominator ($\tfrac{-23}{-4}$, $\tfrac{23}{-4}$, $-\tfrac{-23}{4}$ fail; $\tfrac{-23}{4}$ and $-\tfrac{23}{4}$ pass); a fraction over 1 fails, and a slash quotient (`15/17`) and a rationalized radical fraction (`\frac{6\sqrt5}{5}`, which takes `simplified-radical` instead) grade `form` against themselves |
 | `scientific-notation` | $a \times 10^{n}$ with $1 \le \lvert a\rvert < 10$; a whole-number coefficient, `e`, then a sign (`110e+360d`, `3e-2`) is algebra, so a variable `e` keeps its letter |
 | `prime-product` | a product of prime powers |

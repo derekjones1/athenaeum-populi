@@ -292,7 +292,7 @@ The component follows the SHAPE of the source's keyed answer:
 | parts named by FORMULA in a sentence of the answer ("All of these molecules and ions contain polar bonds. Only ClF₅, ClO₂⁻, PCl₃, SeF₄, and PH₂⁻ have dipole moments.") | the row above, one `multiplechoice` (`yes`, `no`) per part ("Does the following molecule or ion have a dipole moment? ClF₅"): the gate says yes to the parts the sentence sharing most words with the question lists. A `selfcheck` with the answer whole comes last, its question the lead-in ALONE: listing the parts binds it to one part, and the gate's `conditionalUnwrapped` refuses it *(chapter 7)* |
 | an answer by role for a reaction the stem prints ("Oxidized: Sn²⁺; reduced: H₂O₂; oxidizing agent: H₂O₂; reducing agent: Sn²⁺") | ONE `multiplechoice` per reaction whose options are the reaction's reactants, the stem closing with the one role it asks in the answer's own words ("Which reactant is the oxidizing agent?"). One item, not one per role: with two reactants the second role is the first one's remainder. Not a formula `textin`: the stem prints both candidates. **Where the source prints a role's answer as an ion inside a reactant** ("P³⁻ is oxidized, O₂ is reduced" for K₃P + O₂), the item asks the role whose answer the source prints as a reactant's own formula ("Which reactant is reduced?"), so the key is the source's word *(chapter 4)* |
 | an answer that tells atoms of one element apart by MARKING a symbol inside the formula (underlined in the source: "C̲H₃CCH tetrahedral, CH₃C̲C̲H linear") | one `textin` per distinct value, the atom named in WORDS by a closing sentence ("Enter the molecular structure around the carbon atom of the CH₃ group.", "…around each of the other two carbon atoms.", "…around the central carbon atom."), no self-check after them: a field cannot show a mark, and words need none. The gate finds each value in the answer but does not hold it to its atom, so the parent checks each field against the marked symbol. In the BODY, where a set holds three items at most, an answer of more values than that stays a `selfcheck` (7.6’s alanine: ten values) *(chapter 7, November 15, 2026)* |
-| a charge ("4+") | `fillin` with `whole-number`, keyed as a signed number (`4`), the stem ending "Enter the charge as a signed number, the sign first, as +1 or −1." — a typed `4+` is `form` and told to put the sign first ("Measured quantities"), and "with its sign" is a lint error ("Stems"). Proven through the gate for a cation (2.3's platinum ion) and an anion (7.1: the gate reads the charge off the ion's superscript, sign last — "P³⁻" keys `-3` — and the stem's "anion" or "cation" chooses among several ions). The field tells `3` against `-3` "The size is right, but the sign is not. …", and `3-` (the sign typed last, as the source prints it) "That has its sign after the number. Type the sign first." *(chapter 7)* |
+| a charge ("4+", "P³⁻") | `fillin` with `answerForm="whole-number charge"`, keyed as a signed number (`4`, `-3`) — the source gates, the solve, and the ledger read the value as before — `answerDisplay` as the book prints a charge (`$4+$`, `$3-$`), the stem closing word for word "Enter the charge with its number first and then its sign, as 1+ or 1−." (lint `CHARGE_CLOSING`; the old "…as a signed number, the sign first, …" is refused, and the token and the closing each require the other). Section 4.2 of the book: "The proper convention for reporting charge is to write the number first, followed by the sign (e.g., 2+), while oxidation number is written with the reversed sequence." So the field takes `4+`, `3-`, `3−` as right; `+4` is `form`, told it is an oxidation number's writing; a bare `4` is `form`, told to add the sign after the number; the other sign in either order is incorrect, told the size is right ("Measured quantities"). The example pair is no key of the page. Proven through the gate for a cation (2.3's platinum ion), an anion (7.1: the gate reads the charge off the ion's superscript — "P³⁻" keys `-3` — and the stem's "anion" or "cation" chooses among several ions), and a molecule ion (8.4's F₂). An oxidation state and a formal charge are not charges of ions and stay sign first (the rows below) *(November 16, 2026, Derek: a charge is written as Section 4.2 says)* |
 | an oxidation state, or one per element of a compound ("H +1, P +5, O −2"; "N, +5") | one `fillin` `whole-number` per element, keyed as a signed number (`5`, `-2`), `answerDisplay` as the source prints it, the stem closing "Enter the oxidation state of P as a signed number, the sign first, as +2 or −1." — the element's SYMBOL, which the source gate reads, and an example pair that is no key of the page *(chapter 4)*. Word for word since chapter 8 (lint `OXIDATION_STATE_CLOSING`; "oxidation number" is the same closing), the symbol one the stem prints (a lone formula in a stem is Unicode, "Notation") *(chapter 8)* |
 | a formal charge per element ("H: 0, Cl: 0"; "P: 0, Cl 0"; "C −1, O +1"; "N: 0; all three Cl atoms: 0") | the oxidation-state row: one `fillin` `whole-number` per element, keyed as a signed number, `answerDisplay` as the source prints it, the stem closing word for word "Enter the formal charge of Cl as a signed number, the sign first, as +2 or −2." — the element's SYMBOL, one the stem prints in a formula or names ("the carbon monoxide molecule"; lint `FORMAL_CHARGE_CLOSING`). The gate holds each item to its element's number. A figure the answer adds after the numbers is required by no gate; a `selfcheck` that shows it carries the numbers whole, after the fill-ins *(chapter 7)* |
 | oxidation states AND formal charges in one answer, each list after its heading ("Oxidation states P +1, S −1⅓, Cl +5, O –2. Formal charges: P 0; S 0; Cl +2: O –1", 8.2) | the two rows above, one `fillin` per whole number asked, each closing with its own row's sentence: the gate holds an "Enter the oxidation state of O …" item to the number after O in the oxidation-state list and an "Enter the formal charge of P …" item to the formal-charge list, so O's −1 under its oxidation state is refused, and a symbol its list gives no whole number for (S −1⅓) is refused. **The example pair of a signed closing is the author's to choose** — one positive number and one negative, "as +3 or −3." — **and neither is a key of a whole-number fill-in on the page** (lint, every signed closing: the formal-charge default "+2 or −2" beside an oxidation state keyed −2 prints that key). On 8.2's matches exercise both closings take "+3 or −3": no number its answer prints *(chapter 8)* |
@@ -420,6 +420,10 @@ selfchecks, source defects, the footer — and each is stated once.
   delocalized or localized?" — four of 8.3's choices first printed only the
   stem, which never asked what their buttons answer (the rendered-page
   reading).
+- **A charge's closing asks the number first**, "Enter the charge with its
+  number first and then its sign, as 1+ or 1−." (lint), and an oxidation
+  state's and a formal charge's ask the sign first — the book writes the
+  two each its own way (Section 4.2) *(November 16, 2026, Derek: a charge is written as Section 4.2 says)*.
 - **"with its sign" is never written** (lint). A negative answer is typed
   with its minus sign as a matter of course, and the phrase on the negative
   keys alone tells the learner the answer is negative.
@@ -1088,14 +1092,18 @@ after the rule was written, so the line is drawn by pairs:
 - **The clauses of one rubric do not overlap** *(chapter 8)*: a
   one-sentence answer reaches its clauses by splitting the source's own
   words at a seam ("hybridization is introduced" / "to explain the geometry
-  of bonding orbitals in valence bond theory"), and no clause is a run of
-  another or repeats a run of another's words — a clause inside another is
-  ticked by the same words twice. Not a lint: measured November 16, 2026,
-  a clause contained in another stands six times in five rubrics of
-  chapters 1–7 (1.1, 3.1, 5.2 ×2, 7.6), each a one-word choice beside its sentence, and a
-  shared run of four words in 27 more, most of them parallel sentences
-  ("the value of an extensive property …" / "the value of an intensive
-  property …") that are sound; the checker reads it.
+  of bonding orbitals in valence bond theory"), and no clause of three or
+  more words lies wholly inside another — the same words would tick both
+  boxes. **A lint error in this book** *(chapter 8)*, read as the rubric-run
+  lint reads a clause. Two things are sound and pass: parallel clauses that
+  share a run of words ("the value of an extensive property …" / "the value
+  of an intensive property …"), and a choice of one or two words that its
+  reason repeats ("lesser" / "the calculated q would be lesser"; "formic
+  acid" / "0.60 mol of formic acid would be equivalent …") — the choice and
+  the reason are two checks, and joining them to pass a lint made four
+  rubrics worse before the rule was narrowed. The one rubric of chapters
+  1–7 it refuses (7.6's PH₂⁻ self-check) was split at a seam November 16,
+  2026.
 - **Every rubric clause is a run of the model answer's words** *(November
   15, 2026, Derek; a lint error in this book)*: copied, never reworded,
   and never two runs joined over the words between them. "This amount is
@@ -1326,9 +1334,14 @@ mhchem extension, so nothing is loaded:
   "labeled", "color", "gray", "Oxygen’s" *(chapter 8)*. The spelling is a
   lint (a word the source itself spells otherwise — 6.5's “silver-grey” — is
   quoted, in curly quotation marks, in the footer clause that names the
-  change). The straight apostrophe is NOT yet a lint: measured November 16,
-  2026, 234 on 34 pages of chapters 1–7, many inside items whose text a
-  sweep would re-hash; the checker reads it.
+  change). The curly apostrophe is a lint too *(chapter 8)*: a straight '
+  in a word, after a plural's s, or opening a quotation, in prose, alts,
+  and item text — never in front matter, code, math (a prime), a link
+  target, an HTML attribute, or a foot or minute mark after a digit. The
+  234 of chapters 1–7 were swept November 16, 2026. The grader, the
+  multiple-choice and sort-bins readers, and both source gates read a
+  straight and a curly apostrophe as one (tests), so a learner who types
+  the straight one is right.
 - **Descriptive subscripts are upright**: `$E_\text{f}$`, `$n_\text{i}$`;
   a subscript that is itself a variable stays italic *(chapter 6)*. The
   lint refuses a bare `f` or `i` subscript (`E_f`, `n_{i}`), and passes
@@ -1856,8 +1869,12 @@ What the learner sees, against the key `0.674` under `sig-figs:3 last-digit:1`:
 | `0.6`, `0.774` | incorrect | |
 | `802` against `-802`; `-265` against `265` | incorrect | "The size is right, but the sign is not. Check whether the value should be positive or negative." Said of a response right but for its sign, inside the item's own allowance (or the readout of such a value); no key or allowance changes, and it names no quantity *(November 14, 2026, chapter 5: an enthalpy change of the wrong direction was a bare "Not quite")* |
 | `1.31` against `1310`; `1310` against `1.31` | incorrect | "The digits are right, but the value is a thousand times off. Check the unit the question asks for." Exactly 10³ or 10⁻³ times a right value (J typed where kJ is asked); never for 10¹, 10², or 10⁶, nor a value merely near; the near-miss zone is read first and cannot hold such a value. A response a thousand off AND of the wrong sign (`0.802` against `-802`) gets this sentence: every word of it is true, where the sign sentence's "the size is right" is not *(November 14, 2026)* |
-| `3` against `-3`; `-1` against `1`, under `whole-number` (a charge, an oxidation state, a formal charge) | incorrect | "The size is right, but the sign is not. Check whether the value should be positive or negative." — never against a key of 0 *(chapter 7)* |
-| `3-` against `-3`; `4+` against `4`, under `whole-number` — the sign typed after the number, as the source prints a charge | form | "That has its sign after the number. Type the sign first." A sign typed last on another size is plainly incorrect *(chapter 7)* |
+| `3` against `-3`; `-1` against `1`, under `whole-number` (an oxidation state, a formal charge) | incorrect | "The size is right, but the sign is not. Check whether the value should be positive or negative." — never against a key of 0 *(chapter 7)* |
+| `3-` against `-3`; `4+` against `4`, under `whole-number` (an oxidation state, a formal charge) — the sign typed after the number, as a charge is written | form | "That has its sign after the number. Type the sign first." A sign typed last on another size is plainly incorrect *(chapter 7)* |
+| `4+` against `4`; `3-`, `3−` against `-3`, under `whole-number charge` | correct | a charge written number first, as Section 4.2 writes it *(November 16, 2026, Derek: a charge is written as Section 4.2 says)* |
+| `+4` against `4`; `-3` against `-3`, under `whole-number charge` | form | "That is how an oxidation number is written. A charge is written with its number first, then its sign." *(November 16, 2026, Derek: a charge is written as Section 4.2 says)* |
+| `4` against `4`; `3` against `-3`, under `whole-number charge` | form | "A charge carries its sign: type + or - after its number." — the ion-symbol field's sentence *(November 16, 2026, Derek: a charge is written as Section 4.2 says)* |
+| `4-` or `-4` against `4`; `3+` or `+3` against `-3`, under `whole-number charge` | incorrect | "The size is right, but the sign is not. Check whether the value should be positive or negative." Any other size is plainly incorrect; no message prints a number or a sign *(November 16, 2026, Derek: a charge is written as Section 4.2 says)* |
 
 Rules for the key and the stem:
 
@@ -2195,20 +2212,6 @@ What chapter 1 settled, and what the scan of the book counted, are in
   lacks the scale a hint needs; a key the figure screen cannot see (a table
   value under a stem with no data, an arithmetic slip at the right figure
   count);
-- two lints chapter 8's readings asked for, measured on November 16, 2026
-  and left off (`docs/history/chemistry.md`, "Chapter 8"): a rubric clause
-  that is a run of, or shares four or more words with, another clause of
-  its rubric (33 pairs on chapters 1–7, six of them one clause inside
-  another — 1.1, 3.1, 5.2 three times, 7.6 — each a rubric to rewrite, the
-  rest mostly sound parallel sentences), and a straight apostrophe in
-  prose or an alt (234 on 34 pages, many inside item text, where the
-  change re-hashes the item); until they are on, both are the checker's
-  and the consistency reader's to catch;
-- a charge is typed "the sign first" (`+2`), while Section 4.2 of the book
-  says a charge is written number first (2+) and an oxidation number sign
-  first, to tell the two apart; the grader already reads `2+` and answers
-  it with a form message. Whether a charge field should take `2+` as right
-  is open *(chapter 8, the consistency reading)*;
 - the kit reader's recommendations of November 14 that are not yet built:
   a `verify-section` mode that runs both source gates and the leak reading
   on one page; the fact half of the run facts and the PDF range scripted;

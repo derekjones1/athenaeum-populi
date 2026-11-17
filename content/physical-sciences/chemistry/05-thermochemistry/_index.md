@@ -30,7 +30,7 @@ reactions. This chapter introduces many of the basic ideas necessary to
 explore the relationships between chemical changes and energy, with a focus
 on thermal energy.
 
-*Source note:* the source's list of fuels leaves out natural gas, which the 85% includes: in the US Energy Information Administration's figures for 2012, petroleum, coal, and biomass together supplied about 61% of primary energy consumption and natural gas about 28% ([Monthly Energy Review, Table 1.3](https://www.eia.gov/totalenergy/data/monthly/)).
+*Source note:* the source’s list of fuels leaves out natural gas, which the 85% includes: in the US Energy Information Administration’s figures for 2012, petroleum, coal, and biomass together supplied about 61% of primary energy consumption and natural gas about 28% ([Monthly Energy Review, Table 1.3](https://www.eia.gov/totalenergy/data/monthly/)).
 
 ## Sections
 
@@ -40,4 +40,4 @@ on thermal energy.
 
 ---
 
-<small>This chapter is adapted from [Chemistry 2e, Chapter 5: Thermochemistry](https://openstax.org/books/chemistry-2e/pages/5-introduction) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Each section page records its own changes from the source. Changes: the chapter-opening image is the source's, re-encoded for the web with its alt text rewritten to describe what the image shows; the source's footnote, a citation, moved into the text as a parenthetical after the sentence it supports, with its bare web address dropped; natural gas added to the list of fuels behind the 85% figure, with a Source note; the source's chapter outline is rendered here as the list of sections.</small>
+<small>This chapter is adapted from [Chemistry 2e, Chapter 5: Thermochemistry](https://openstax.org/books/chemistry-2e/pages/5-introduction) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Each section page records its own changes from the source. Changes: the chapter-opening image is the source’s, re-encoded for the web with its alt text rewritten to describe what the image shows; the source’s footnote, a citation, moved into the text as a parenthetical after the sentence it supports, with its bare web address dropped; natural gas added to the list of fuels behind the 85% figure, with a Source note; the source’s chapter outline is rendered here as the list of sections.</small>

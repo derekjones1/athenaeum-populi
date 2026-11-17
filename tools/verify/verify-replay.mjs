@@ -231,6 +231,11 @@ function replayFile(file) {
       prose = prose.slice(0, s.index) + ' '.repeat(s.length) + prose.slice(s.index + s.length);
     }
     for (const m of prose.matchAll(/(?<![\w.,−-])[−-]?\d+(?:\.\d+)?(?!\.?\d|\w)/g)) spans.push(m[0]);
+    // A charge (`whole-number charge`) is typed number first, so its closing's
+    // "as 1+ or 1−" prints two answers a learner could copy as written.
+    if (/(?:^|\s)charge(?:\s|$)/.test(sc.params.answerForm || '')) {
+      for (const m of prose.matchAll(/(?<![\w.])\d+[+−-](?![\w\d])/g)) spans.push(m[0].replace(/−/g, '-'));
+    }
     const seen = new Set();
     for (const raw of spans) {
       const value = raw.trim();

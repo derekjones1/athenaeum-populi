@@ -361,3 +361,11 @@ test('a shape typed with the source\'s own qualifier after it is the shape (Chem
   assert.equal(checkText('with two lone pairs', 'bent'), 'incorrect', 'the qualifier alone');
   assert.equal(checkText('chlorine, with two lone pairs', 'chlorine'), 'incorrect', 'only against a shape key');
 });
+
+test('a straight apostrophe and the curly one are one character to the grader, either way round (Chemistry, chapter 8 sweep)', () => {
+  for (const [typed, key] of [["Hund's rule", 'Hund’s rule'], ['Hund’s rule', "Hund's rule"], ['Hunds rule', 'Hund’s rule'], ["Le Châtelier's principle", 'Le Châtelier’s principle']]) {
+    assert.deepEqual(gradeText(typed, key), { status: 'correct' }, `${typed} against ${key}`);
+  }
+  assert.equal(checkText("Avogadro's number", 'mole', { accept: 'Avogadro’s number' }), 'correct', 'an accept member written curly');
+  assert.equal(normalizeText("Planck's constant"), normalizeText('Planck’s constant'));
+});

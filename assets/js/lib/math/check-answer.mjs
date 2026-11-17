@@ -5210,6 +5210,9 @@ const FORM_PREDICATES = {
   // "Write 6.07 as a fraction or mixed number" — the source offers the choice,
   // so the only thing to rule out is the decimal the question already prints.
   'fraction-or-mixed-number': (latex) => asFraction(latex) !== null || asMixedNumber(latex) !== null,
+  // A charge, written number first (Chemistry 2e 4.2): valid only beside
+  // `whole-number`; `checkAnswer` reads the whole response (`chargeVerdict`).
+  charge: (latex) => /^\s*\d+\s*[+\-−–]\s*$/.test(bareLatex(latex)) || /^\s*[+\-−–]?\s*\d+\s*$/.test(bareLatex(latex)),
   // An EXACT number that may be a half — a bond order (Chemistry 2e 8.4:
   // 0.5, 1.5, 2.5, keyed as decimals): one number written plainly, as a
   // decimal, a fraction, or a mixed number (`0.5`, `.5`, `1/2`, `\frac12`,
@@ -6975,6 +6978,7 @@ const FORM_PHRASES = {
   'improper-fraction': 'as an improper fraction',
   'fraction-or-mixed-number': 'as a fraction or mixed number',
   'decimal-or-fraction': 'as one number, a decimal or a fraction',
+  charge: 'as a charge, its number first and then its sign',
   'lowest-terms': 'in lowest terms',
   'scientific-notation': 'in scientific notation',
   'prime-product': 'as a product of prime factors',
@@ -7076,8 +7080,9 @@ export const NEAR_MISS_TABLE_SENTENCE = ' If you looked up a value, such as an a
 export const WRONG_SIGN_FEEDBACK = 'The size is right, but the sign is not. Check whether the value should be positive or negative.';
 export const THOUSAND_FEEDBACK = 'The digits are right, but the value is a thousand times off. Check the unit the question asks for.';
 
-// A whole-number key with a sign — a charge, an oxidation state, a formal
-// charge (Chemistry 2e 2.3, 4.2, 7.1, 7.4) — answered with its size and the
+// A whole-number key with a sign — an oxidation state or a formal charge
+// (Chemistry 2e 4.2, 7.4; a charge of an ion is `whole-number charge` since
+// November 16, 2026, `chargeVerdict` below) — answered with its size and the
 // other sign (`3` for −3, `-1` for +1) is told WRONG_SIGN_FEEDBACK, as a
 // measured quantity is; never for a key of 0. A sign typed after the number
 // (`3-`, the way the source prints a charge, "P³⁻") does not read as math:
@@ -7103,6 +7108,58 @@ function signLastVerdict(studentRaw, answerRaw, form) {
   const key = signedInteger(answerRaw);
   if (typed === null || key === null) return null;
   return typed === key ? 'form' : 'incorrect';
+}
+// A CHARGE (`answerForm="whole-number charge"`; Derek, November 16, 2026):
+// written as Section 4.2 of Chemistry 2e says, "the number first, followed
+// by the sign (e.g., 2+), while oxidation number is written with the
+// reversed sequence". The key stays the signed number (`4`, `-3`), read by
+// the gates and the ledger as before; the learner types `4+`, `3-`.
+//   number then sign, the key's value          correct
+//   sign then number, the key's value          form, CHARGE_SIGN_FIRST_FEEDBACK
+//   the bare size, no sign                     form, CHARGE_NO_SIGN_FEEDBACK
+//   the size with the other sign, either order incorrect, WRONG_SIGN_FEEDBACK
+//   anything else                              incorrect
+// No message prints the number or the sign. Without `charge` a whole-number
+// key (an oxidation state, a formal charge, a count) is graded as before.
+export const CHARGE_SIGN_FIRST_FEEDBACK = 'That is how an oxidation number is written. A charge is written with its number first, then its sign.';
+export const CHARGE_NO_SIGN_FEEDBACK = 'A charge carries its sign: type + or - after its number.';
+const CHARGE_FORM = /(?:^|\s)charge(?:\s|$)/;
+/** Under `charge`: `{ verdict, message }` for any response, or null when the item is no charge. */
+function chargeVerdict(studentRaw, answerRaw, form) {
+  if (!CHARGE_FORM.test(String(form ?? '')) || !WHOLE_NUMBER_FORM.test(String(form ?? ''))) return null;
+  const key = signedInteger(answerRaw);
+  if (key === null) return null;
+  const raw = String(studentRaw ?? '').replace(/\\(?:,|;|:|!|\s)/g, ' ').replace(/[{}]/g, '').trim();
+  if (!raw) return { verdict: 'empty', message: '' };
+  const after = signAfter(raw);
+  if (after !== null) {
+    if (after === key) return { verdict: 'correct', message: '' };
+    if (key !== 0 && after === -key) return { verdict: 'incorrect', message: WRONG_SIGN_FEEDBACK };
+    return { verdict: 'incorrect', message: '' };
+  }
+  const signed = /^\s*([+\-−–])\s*(\d+)\s*$/.exec(raw);
+  if (signed) {
+    const value = (signed[1] === '+' ? 1 : -1) * Number(signed[2]);
+    if (value === key) return { verdict: key === 0 ? 'correct' : 'form', message: key === 0 ? '' : CHARGE_SIGN_FIRST_FEEDBACK };
+    if (key !== 0 && value === -key) return { verdict: 'incorrect', message: WRONG_SIGN_FEEDBACK };
+    return { verdict: 'incorrect', message: '' };
+  }
+  const bare = /^\s*(\d+)\s*$/.exec(raw);
+  if (bare) {
+    if (Number(bare[1]) === Math.abs(key)) return key === 0 ? { verdict: 'correct', message: '' } : { verdict: 'form', message: CHARGE_NO_SIGN_FEEDBACK };
+    return { verdict: 'incorrect', message: '' };
+  }
+  return { verdict: 'incorrect', message: '' };
+}
+/**
+ * The key as a learner types it: a charge's signed key (`-3`) is typed number
+ * first (`3-`); every other key as written. Tools that grade a key against
+ * itself (verify-section, ledger-carry) grade this writing.
+ */
+export function keyAsTyped(answerRaw, form) {
+  if (!CHARGE_FORM.test(String(form ?? '')) || !WHOLE_NUMBER_FORM.test(String(form ?? ''))) return answerRaw;
+  const key = signedInteger(answerRaw);
+  return key === null || key === 0 ? answerRaw : `${Math.abs(key)}${key < 0 ? '-' : '+'}`;
 }
 /** For a whole-number key with a sign: whether the response is its size with the other sign. */
 function wholeNumberSignFlipped(studentRaw, answerRaw, form) {
@@ -7146,6 +7203,8 @@ const NUMBER_SHAPE_TOKENS = new Set(['decimal', 'whole-number', 'fraction', 'per
  * (THOUSAND_FEEDBACK).
  */
 export function describeIncorrectFeedback(studentRaw, spec, answerRaw) {
+  const charge = answerRaw === undefined ? null : chargeVerdict(studentRaw, answerRaw, spec);
+  if (charge) return charge.verdict === 'incorrect' ? charge.message : '';
   if (answerRaw !== undefined && wholeNumberSignFlipped(studentRaw, answerRaw, spec)) return WRONG_SIGN_FEEDBACK;
   const measured = answerRaw === undefined ? null : measuredVerdict(studentRaw, answerRaw, { form: spec });
   if (measured === null || measured.verdict !== 'incorrect') return '';
@@ -7156,6 +7215,8 @@ export function describeIncorrectFeedback(studentRaw, spec, answerRaw) {
 }
 
 export function describeFormFeedback(studentRaw, spec, answerRaw) {
+  const charge = answerRaw === undefined ? null : chargeVerdict(studentRaw, answerRaw, spec);
+  if (charge) return charge.verdict === 'form' ? charge.message : '';
   if (answerRaw !== undefined && signLastVerdict(studentRaw, answerRaw, spec) === 'form') return SIGN_LAST_FEEDBACK;
   // A measured quantity is told what its digits still need, before any other
   // reading: its `form` reasons are its own.
@@ -8274,6 +8335,11 @@ function variableLabelValue(preprocessed, spec) {
 }
 
 export function checkFormAsGraded(raw, spec, answerRaw) {
+  // A charge is read whole by `chargeVerdict`: every writing it grades — a
+  // number then a sign, a sign then a number, a bare size — is one a learner
+  // can submit, so the replay grades a printed "1+" rather than calling it a
+  // shape the form refuses.
+  if (answerRaw !== undefined && chargeVerdict(raw, answerRaw, spec)) return /^\s*[+\-−–]?\s*\d+\s*[+\-−–]?\s*$/.test(String(raw ?? ''));
   return formAcceptedAsWritten(preprocess(raw ?? ''), spec, answerRaw);
 }
 
@@ -8807,6 +8873,8 @@ export function measuredKeyProblem(answerRaw, spec, { mode } = {}) {
 }
 
 export function checkAnswer(studentRaw, answerRaw, options = {}) {
+  const charge = chargeVerdict(studentRaw, answerRaw, options.form);
+  if (charge) return charge.verdict;
   const signLast = signLastVerdict(studentRaw, answerRaw, options.form);
   if (signLast !== null) return signLast;
   const measured = measuredVerdict(studentRaw, answerRaw, options);

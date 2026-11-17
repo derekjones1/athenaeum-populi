@@ -256,7 +256,7 @@ Ten things chapter 7 added (`docs/history/chemistry.md`, "Chapter 7"):
   parent's notes as they are filed**, and the drafter numbers the rest
   after them.
 
-Twelve things chapter 8 added (`docs/history/chemistry.md`, "Chapter 8"):
+Thirteen things chapter 8 added (`docs/history/chemistry.md`, "Chapter 8"):
 
 - **A decision that prints a stem is checked against "Notation" as well as
   "Stems".** Two decisions set a lone formula in `$\ce{…}$` in a stem; the
@@ -301,7 +301,16 @@ Twelve things chapter 8 added (`docs/history/chemistry.md`, "Chapter 8"):
   playbook's open list** — never an exemption list. Five went on (the hits
   on chapters 1–7 fixed; 45 items re-hashed and carried by the parent from
   a snapshot taken before the sweep, each carry asserting that the
-  question and key are byte-for-byte unchanged); two stayed off.
+  question and key are byte-for-byte unchanged); two stayed off, and were
+  turned on the same day in a follow-up pass, which is what the rule asks:
+  a stricter check found in a book goes on for that book.
+- **A lint's fixes are read before they are kept.** Turning on "a rubric
+  clause inside another" joined a one-word choice to its reason in four
+  sound rubrics ("lesser" beside "the calculated q would be lesser") and
+  dropped one checkpoint; the parent read the diff, narrowed the rule to a
+  contained clause of three or more words, and put the four back. After any
+  sweep, diff the content with the swept character folded: what is left is
+  what the sweep really changed.
 - **`verify:typed` types what a learner types, so a new answer shape is
   given its writings in `tools/build/typed-keys.mjs` before the close-out
   run is believed**: the tool typed chapter 8's hybridization keys with

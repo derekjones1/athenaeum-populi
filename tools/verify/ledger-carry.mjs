@@ -65,7 +65,7 @@
  */
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join, relative, resolve } from 'node:path';
-import { checkAnswer } from '../../assets/js/lib/math/check-answer.mjs';
+import { checkAnswer, keyAsTyped } from '../../assets/js/lib/math/check-answer.mjs';
 import { checkText } from '../../assets/js/lib/text/check-text.mjs';
 import { parseCliArgs } from '../lib/cli.mjs';
 import { maskCode, shortcodes, walkMarkdown } from '../lib/content.mjs';
@@ -141,7 +141,7 @@ export function formNeutral(before, now) {
   if (now.kind !== 'fillin') return false;
   const answer = now.params?.answer ?? '';
   try {
-    return checkAnswer(answer, answer, { mode: now.params?.answerMode, form }) === 'correct';
+    return checkAnswer(keyAsTyped(answer, form), answer, { mode: now.params?.answerMode, form }) === 'correct';
   } catch {
     return false;
   }

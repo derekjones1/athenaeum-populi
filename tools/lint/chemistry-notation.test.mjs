@@ -5,7 +5,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  bareGreekMath, britishSpellingAndStraightApostrophes, italicOrbitalLetters, minusAsBond, overlappingRubricClauses, plainAnswerDisplays,
+  straightApostrophes, bareGreekMath, britishSpellingAndStraightApostrophes, italicOrbitalLetters, minusAsBond, overlappingRubricClauses, plainAnswerDisplays,
 } from './chemistry-notation.mjs';
 import { lintLeaks } from './lints-leaks.mjs';
 
@@ -28,11 +28,17 @@ test('b. a bare σ or π in math only inside a multiple choice, a fill-in, or a 
   assert.deepEqual(bareGreekMath('The $\\sigma_{2\\text{s}}$ and $\\pi^*$ orbitals.\n'), [], 'an MO symbol with a subscript or star is math');
 });
 
-test('c. clauses of one rubric that overlap (measured: left off, see the playbook)', () => {
+test('c. a rubric clause wholly inside another is refused; parallel clauses sharing a run are not', () => {
   const sc = (clauses) => `{{< selfcheck question="Q?" hint="h" >}}\nModel.\n===CHECKS===\n${clauses.join('\n')}\n{{< /selfcheck >}}\n`;
   const [inside] = overlappingRubricClauses(sc(['there are no d orbitals in the valence shell of carbon', 'no d orbitals in the valence shell']));
-  assert.equal(inside.contained, true);
-  assert.equal(overlappingRubricClauses(sc(['hybridization is introduced', 'to explain the geometry of bonding orbitals'])).length, 0, 'split at a seam');
+  assert.equal(inside.inner, 'no d orbitals in the valence shell');
+  assert.deepEqual(overlappingRubricClauses(sc(['lesser', 'the calculated q would be lesser'])), [], 'a one-word choice and the reason that repeats it are two checks');
+  assert.deepEqual(overlappingRubricClauses(sc(['formic acid', '0.60 mol of formic acid would be equivalent to 1.20 mol'])), [], 'a two-word choice');
+  assert.equal(overlappingRubricClauses(sc(['and PH₂⁻ have dipole moments', 'only ClF₅, ClO₂⁻, PCl₃, SeF₄, and PH₂⁻ have dipole moments'])).length, 1, 'three words or more inside another clause');
+  assert.equal(overlappingRubricClauses(sc(['the 4*s* electron', 'removal of the 4s electron in Ca'])).length, 1, 'read as the rubric-run lint reads');
+  assert.deepEqual(overlappingRubricClauses(sc(['hybridization is introduced', 'to explain the geometry of bonding orbitals'])), [], 'split at a seam');
+  assert.deepEqual(overlappingRubricClauses(sc(['the value of an extensive property depends upon the amount of matter', 'the value of an intensive property is the same regardless of the amount of matter'])), [], 'parallel clauses share a four-word run and are sound');
+  assert.deepEqual(overlappingRubricClauses(sc(['lesser; more heat would be lost', 'and so ΔT for the water would be lesser'])), [], 'the choice joined to its first statement');
 });
 
 test('d. a bond drawn with the minus sign', () => {
@@ -49,6 +55,14 @@ test('e. British spelling (lint) and the straight apostrophe (measured, left off
   assert.equal(kinds("Oxygen's lone pairs.").filter((one) => one.startsWith('apostrophe')).length, 1);
 });
 
+test('the straight apostrophe: a word\'s, a plural\'s, an opening quote — never markup, math, code, a link, or a foot mark', () => {
+  const kinds = (text) => straightApostrophes(text).map((hit) => hit.kind);
+  assert.deepEqual(kinds("Hund's rule; the electrons' spins; don't; 'quoted"), ['apostrophe', 'apostrophe', 'apostrophe', 'opening']);
+  assert.deepEqual(kinds("---\ndescription: Bohr's model\n---\nBody."), [], 'front matter');
+  assert.deepEqual(kinds("A prime $f'(x)$, code `it's`, a [link](/a's/), <img alt='x'>, a 6' board and 5'10\"."), [], 'math, code, link target, HTML attribute, foot marks');
+  assert.deepEqual(kinds('{{< mediafigure src="chemistry/x" alt="The cathode\'s face." >}}'), ['apostrophe'], 'an alt');
+});
+
 test('f. an answerDisplay with no math', () => {
   const fillin = (display) => `{{< fillin\n  question="How many?"\n  answer="4"\n  answerForm="whole-number"\n  answerDisplay="${display}"\n  hint="h"\n>}}\n`;
   assert.equal(plainAnswerDisplays(fillin('4')).length, 1);
@@ -58,9 +72,9 @@ test('f. an answerDisplay with no math', () => {
 });
 
 test('the five lints are errors in the Chemistry book only', () => {
-  const page = 'Body: the 4*s* electron; the $\\sigma$ bond; H−C≡C−H; a labelled drawing.\n\n{{< fillin\n  question="How many?"\n  answer="4"\n  answerForm="whole-number"\n  answerDisplay="4"\n  hint="Count them."\n>}}\n';
+  const page = '{{< selfcheck question="Q?" hint="h" >}}\nLesser; the calculated q would be lesser.\n===CHECKS===\nq would be lesser\nthe calculated q would be lesser\n{{< /selfcheck >}}\n\nBody: Hund\'s rule; the 4*s* electron; the $\\sigma$ bond; H−C≡C−H; a labelled drawing.\n\n{{< fillin\n  question="How many?"\n  answer="4"\n  answerForm="whole-number"\n  answerDisplay="4"\n  hint="Count them."\n>}}\n';
   const errors = lintLeaks(page, CHEM).errors;
-  for (const pattern of [/sets an orbital letter italic/, /bare σ set as math/, /draws a bond with the minus sign/, /American spelling/, /answerDisplay="4" has no math/]) {
+  for (const pattern of [/a straight ' in a word/, /is wholly inside the clause/, /sets an orbital letter italic/, /bare σ set as math/, /draws a bond with the minus sign/, /American spelling/, /answerDisplay="4" has no math/]) {
     assert.ok(errors.some((error) => pattern.test(error)), String(pattern));
   }
   const elsewhere = lintLeaks(page, 'content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md').errors;

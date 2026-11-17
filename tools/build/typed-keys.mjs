@@ -30,6 +30,10 @@
  * labelled writing, a decimal spin, and four wrong sets whose messages are
  * listed — a kind that starts "wrong-").
  *
+ * A charge fill-in (`whole-number charge`) is typed number first ("4+");
+ * --variants types it sign first ("+4"), which the field calls an oxidation
+ * number's writing (form).
+ *
  * --variants: a second ordinary way of writing each answer instead — the
  * letter x for the times sign, a leading "+" on an oxidation state, no
  * leading zero, a thousands comma, a charge typed bare with no state
@@ -42,7 +46,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { chromium } from 'playwright';
-import { configurationWritings, orderingWritings, quantumWritings } from './typed-writings.mjs';
+import { chargeWritings, configurationWritings, orderingWritings, quantumWritings } from './typed-writings.mjs';
 
 /** The forms typed in several writings, each by its writer. */
 const WRITINGS = { configuration: configurationWritings, ordering: orderingWritings, 'quantum-numbers': quantumWritings };
@@ -240,8 +244,12 @@ for (const route of routes()) {
           await field.press('Enter');
         }
       } else {
-        const canonical = keysFor(info.answer);
-        const variant = pass === 'B' ? variantFor(info.answer, info.question, info.form) : null;
+        // A charge (`whole-number charge`) is typed as Section 4.2 writes it,
+        // number first ("4+", "3-"); pass B types it sign first ("+4"), the
+        // oxidation-number writing, which the field answers with a form message.
+        const charge = /(?:^|\s)charge(?:\s|$)/.test(info.form) ? chargeWritings(info.answer) : null;
+        const canonical = charge ? charge.numberFirst : keysFor(info.answer);
+        const variant = pass === 'B' ? (charge ? { keys: charge.signFirst, kind: 'sign-first' } : variantFor(info.answer, info.question, info.form)) : null;
         const keys = variant ? variant.keys : canonical;
         record.kind = variant ? variant.kind : 'as-keyed';
         if (keys === null) { record.result = 'UNTYPEABLE-KEY'; results.push(record); continue; }

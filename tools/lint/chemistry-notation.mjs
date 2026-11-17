@@ -5,6 +5,7 @@
 // them and a measurement can count them over the book.
 import { blankPreservingOffsets, shortcodes } from '../lib/content.mjs';
 import { proseOnly } from './chemistry-readings.mjs';
+import { isWordRun, readWords } from '../lib/rubric-run.mjs';
 
 /** The page with front matter and code blanked (offsets kept). */
 const body = (text) => String(text)
@@ -56,22 +57,16 @@ export function bareGreekMath(text) {
     .map((match) => ({ index: match.index, written: match[0], letter: match[1] === 'pi' ? 'π' : 'σ' }));
 }
 
-const words = (clause) => clause.toLowerCase().replace(/\$[^$]*\$/g, (math) => math.replace(/[\\{}^_$]/g, ' '))
-  .replace(/[^\p{L}\p{N}\s]/gu, ' ').split(/\s+/).filter(Boolean);
-const sharedRun = (a, b, length) => {
-  for (let i = 0; i + length <= a.length; i += 1) {
-    const run = a.slice(i, i + length).join(' ');
-    if (` ${b.join(' ')} `.includes(` ${run} `)) return run;
-  }
-  return null;
-};
-
 /**
- * c. Two clauses of one rubric that overlap (GR4): one is a run of the
- * other, or they share a run of four or more words. A clause inside another
- * is ticked twice by the same words.
+ * c. A clause of one rubric wholly contained in another clause of the same
+ * rubric (GR4), read as the rubric-run lint reads a clause
+ * (`tools/lib/rubric-run.mjs`): the same words tick both boxes. Two parallel
+ * clauses that share a run of words ("the value of an extensive property …"
+ * / "the value of an intensive property …") are sound and not refused, and
+ * so is a clause of one or two words — the answer's choice ("lesser",
+ * "formic acid") — that its reason repeats: the choice and the reason are
+ * two checks.
  */
-export const RUBRIC_OVERLAP_WORDS = 4;
 export function overlappingRubricClauses(text) {
   const hits = [];
   for (const sc of shortcodes(String(text), 'selfcheck')) {
@@ -79,12 +74,11 @@ export function overlappingRubricClauses(text) {
     if (!tail) continue;
     const clauses = tail.split('\n').map((line) => line.trim()).filter(Boolean);
     for (let i = 0; i < clauses.length; i += 1) {
-      for (let j = i + 1; j < clauses.length; j += 1) {
-        const [a, b] = [words(clauses[i]), words(clauses[j])];
-        const [short, long] = a.length <= b.length ? [a, b] : [b, a];
-        const contained = short.length && ` ${long.join(' ')} `.includes(` ${short.join(' ')} `);
-        const run = contained ? short.join(' ') : sharedRun(a, b, RUBRIC_OVERLAP_WORDS);
-        if (run) hits.push({ index: sc.index, written: `${clauses[i]} | ${clauses[j]}`, run, contained: Boolean(contained) });
+      for (let j = 0; j < clauses.length; j += 1) {
+        if (i === j || (j < i && readWords(clauses[i]).join(' ') === readWords(clauses[j]).join(' '))) continue;
+        if (readWords(clauses[i]).length >= 3 && isWordRun(clauses[i], clauses[j])) {
+          hits.push({ index: sc.index, written: `${clauses[i]} | ${clauses[j]}`, inner: clauses[i], outer: clauses[j], contained: true });
+        }
       }
     }
   }
@@ -113,10 +107,36 @@ export function britishSpellingAndStraightApostrophes(text) {
   const prose = proseOnly(body(text)).replace(/“[^”\n]*”/g, blankPreservingOffsets);
   const hits = [...prose.matchAll(/\b(?:labell(?:ed|ing)|colour(?:ed|ing|ful|less|s)?|grey(?:s|ed|ish)?)\b/gi)]
     .map((match) => ({ index: match.index, written: match[0], kind: 'spelling' }));
-  for (const match of prose.matchAll(/(?<=\p{L})'(?=\p{L})|(?<=\p{L}s)'(?=\s)/gu)) {
-    hits.push({ index: match.index, written: prose.slice(Math.max(0, match.index - 6), match.index + 3), kind: 'apostrophe' });
+  for (const hit of straightApostrophes(text)) {
+    hits.push({ index: hit.index, written: String(text).slice(Math.max(0, hit.index - 6), hit.index + 3), kind: hit.kind === 'opening' ? 'opening quote' : 'apostrophe' });
   }
   return hits.sort((a, b) => a.index - b.index);
+}
+
+/**
+ * The straight apostrophes of a page's prose, alts, and item text that are
+ * typographic: `[{ index, kind }]`, `kind` 'apostrophe' (inside a word —
+ * "Hund's", "don't", "1990's" — or after a plural's s: "electrons' "),
+ * 'closing' (after a word, before punctuation or space: a closing single
+ * quotation mark, the same ’), or 'opening' (before a word, after a space
+ * or a bracket: ‘). Never read: front matter, code, math (a prime),
+ * Markdown link targets, URLs, HTML tags with their attributes, and a mark
+ * after a digit (a foot or a minute) unless a letter follows.
+ */
+export function straightApostrophes(text) {
+  const masked = proseOnly(body(text)).replace(/<\/?[a-zA-Z][^>\n]*>/g, blankPreservingOffsets);
+  const hits = [];
+  for (const match of masked.matchAll(/'/g)) {
+    const before = masked.slice(Math.max(0, match.index - 2), match.index);
+    const after = masked.slice(match.index + 1, match.index + 2);
+    const letterAfter = /\p{L}/u.test(after);
+    const wordBefore = /[\p{L}\p{N}]$/u.test(before);
+    if (wordBefore && letterAfter) hits.push({ index: match.index, kind: 'apostrophe' });
+    else if (/\p{L}s$/u.test(before) && /^(?:[\s.,;:!?)”]|$)/u.test(after)) hits.push({ index: match.index, kind: 'apostrophe' });
+    else if (/\p{L}$/u.test(before) && /^(?:[\s.,;:!?)”]|$)/u.test(after)) hits.push({ index: match.index, kind: 'closing' });
+    else if ((/(?:^|[\s(“\[])$/u.test(before) || match.index === 0) && letterAfter) hits.push({ index: match.index, kind: 'opening' });
+  }
+  return hits;
 }
 
 /** f. An `answerDisplay` with no math: every display is math (playbook "Added items"). */

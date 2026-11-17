@@ -95,7 +95,7 @@ import { amountHintProblem, heatAsk, isNegativeKey } from '../lib/heat-ask.mjs';
 import { askedUnit, shownUnit, showsAskedUnit } from '../lib/item-units.mjs';
 import { isWordRun, readWords } from '../lib/rubric-run.mjs';
 import { cePrinted } from '../lib/keyed-units.mjs';
-import { bareGreekMath, britishSpellingAndStraightApostrophes, italicOrbitalLetters, minusAsBond, plainAnswerDisplays } from './chemistry-notation.mjs';
+import { bareGreekMath, britishSpellingAndStraightApostrophes, italicOrbitalLetters, minusAsBond, overlappingRubricClauses, plainAnswerDisplays, straightApostrophes } from './chemistry-notation.mjs';
 import {
   colourOutsideVisible, dashHyphens, italicDescriptiveSubscripts, miscountedConfigurations, proseOnly, sourceNumberReferences, subshellLabelSlips,
 } from './chemistry-readings.mjs';
@@ -160,6 +160,16 @@ export const OXIDATION_STATE_CLOSING = 'Enter the oxidation state of <Symbol> as
  * default pair "+2 or −2" would print it.
  */
 export const EXAMPLE_PAIR = /, the sign first, as \+([1-9]\d*) or −([1-9]\d*)\.$/;
+/**
+ * The sentence a CHARGE fill-in closes with (Derek, November 16, 2026: a
+ * charge is written as Section 4.2 says, number first, then sign), with its
+ * `answerForm="whole-number charge"`. Its example pair, read by
+ * CHARGE_PAIR, is no key of the page either.
+ */
+export const CHARGE_CLOSING = 'Enter the charge with its number first and then its sign, as 1+ or 1−.';
+export const CHARGE_PAIR = /, as ([1-9]\d*)\+ or ([1-9]\d*)−\.$/;
+/** The closing a charge item had until November 16, 2026 (sign first): refused. */
+const OLD_CHARGE_CLOSING = /Enter the charge as a signed number, the sign first/;
 
 /**
  * A page's own heading called "the … section" ("the Lewis Symbols section",
@@ -1260,6 +1270,12 @@ export function lintLeaks(src, filename = '') {
     for (const hit of britishSpellingAndStraightApostrophes(text).filter((one) => one.kind === 'spelling')) {
       err(hit.index, `"${hit.written}" — American spelling, the source's: labeled, color, gray (a word the source itself spells otherwise is quoted in curly quotation marks)`);
     }
+    for (const hit of overlappingRubricClauses(text)) {
+      err(hit.index, `selfcheck: the rubric clause ${JSON.stringify(hit.inner)} is wholly inside the clause ${JSON.stringify(hit.outer)} — the same words tick both boxes; split the model answer's words at a seam so the clauses are disjoint runs ("lesser; more heat would be lost …" / "and so ΔT … would be lesser")`);
+    }
+    for (const hit of straightApostrophes(text)) {
+      err(hit.index, `a straight ' ${hit.kind === 'opening' ? 'opening a quotation' : 'in a word'} ("${text.slice(Math.max(0, hit.index - 8), hit.index + 3).replace(/\s+/g, ' ')}") — the house writes the curly ${hit.kind === 'opening' ? '‘' : '’'} in prose, alts, and item text (the grader reads either as typed)`);
+    }
     for (const hit of plainAnswerDisplays(text)) {
       err(hit.index, `${hit.kind}: answerDisplay="${hit.written}" has no math — every answerDisplay is math, the value as the book prints it (\`$4$\`, \`$2+$\`, \`$-2$\`)`);
     }
@@ -1346,7 +1362,19 @@ export function lintLeaks(src, filename = '') {
       }
       // The example pair a signed closing prints is no key of the page: a
       // learner reads "as +2 or −2" beside an item keyed −2.
-      const pair = EXAMPLE_PAIR.exec(question);
+      // A charge (Derek, November 16, 2026): number first, its own closing
+      // and its own token, each only with the other.
+      if (item.kind === 'fillin') {
+        const form = String(item.params.answerForm ?? '');
+        const isCharge = /(?:^|\s)charge(?:\s|$)/.test(form);
+        const closes = question.trim().endsWith(CHARGE_CLOSING);
+        if (OLD_CHARGE_CLOSING.test(question)) err(item.index, `${where}: "Enter the charge as a signed number, the sign first …" asks a charge sign first — a charge is written number first, then sign (Section 4.2): close "${CHARGE_CLOSING}" and declare answerForm="whole-number charge"`);
+        if (isCharge && !wholeNumber) err(item.index, `${where}: \`charge\` is declared only beside \`whole-number\` (answerForm="whole-number charge")`);
+        if (isCharge && !closes) err(item.index, `${where}: a charge closes word for word "${CHARGE_CLOSING}"`);
+        if (closes && !isCharge) err(item.index, `${where}: the charge closing asks for the number first — declare answerForm="whole-number charge", or the field answers \`2+\` as a sign typed last`);
+      }
+      const chargePair = CHARGE_PAIR.exec(question);
+      const pair = EXAMPLE_PAIR.exec(question) ?? (chargePair ? [chargePair[0], chargePair[1], chargePair[2]] : null);
       if (wholeNumber && pair) {
         const keys = new Set(items.filter((other) => other.kind === 'fillin' && /(?:^|\s)whole-number(?:\s|$)/.test(String(other.params.answerForm ?? '')))
           .map((other) => Number(String(other.params.answer ?? '').replace(/[−–]/g, '-').replace(/^\+/, ''))));

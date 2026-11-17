@@ -530,6 +530,9 @@ const formCases = [
   ['0.5+0', '0.5', 'decimal-or-fraction', 'form'],
   ['1+1-1', '1', 'decimal-or-fraction', 'form'],
   ['1/2', '0.5', 'decimal-or-fraction', 'correct'],
+  // A charge (Chemistry 2e 4.2): number first; sign first is an oxidation number's writing.
+  ['+4', '4', 'whole-number charge', 'form'],
+  ['4+', '4', 'whole-number charge', 'correct'],
   ['\\frac{8}{3}', '\\frac{8}{3}', 'improper-fraction lowest-terms', 'correct'],
   ['2\\frac{2}{3}', '\\frac{8}{3}', 'improper-fraction lowest-terms', 'form'],
   ['\\frac{24}{9}', '\\frac{8}{3}', 'improper-fraction lowest-terms', 'form'],
@@ -5050,4 +5053,34 @@ test('decimal-or-fraction: an exact number that may be a half, written plainly a
   assert.equal(checkAnswer('1+1-1', '1', { form }), 'form', 'arithmetic left undone');
   assert.match(describeFormFeedback('1+1-1', form, '1'), /finish the calculation/);
   for (const [typed, key] of [['1.5', '0.5'], ['-0.5', '0.5'], ['1/2', '2.5'], ['0.5', '0'], ['3/2', '2.5']]) assert.equal(checkAnswer(typed, key, { form }), 'incorrect', `${typed} against ${key}`);
+});
+
+test('charge: a charge is typed number first, as Section 4.2 writes it (Derek, November 16, 2026)', async () => {
+  const { CHARGE_SIGN_FIRST_FEEDBACK, CHARGE_NO_SIGN_FEEDBACK } = await import('./check-answer.mjs');
+  const form = 'whole-number charge';
+  const grade = (typed, key) => {
+    const status = checkAnswer(typed, key, { form });
+    const message = status === 'form' ? describeFormFeedback(typed, form, key) : status === 'incorrect' ? describeIncorrectFeedback(typed, form, key) : '';
+    return [status, message];
+  };
+  // The table the playbook prints.
+  const table = {
+    2: { '2+': ['correct', ''], '+2': ['form', CHARGE_SIGN_FIRST_FEEDBACK], 2: ['form', CHARGE_NO_SIGN_FEEDBACK], '2-': ['incorrect', WRONG_SIGN_FEEDBACK], '3+': ['incorrect', ''] },
+    '-3': { '2+': ['incorrect', ''], '+2': ['incorrect', ''], 2: ['incorrect', ''], '2-': ['incorrect', ''], '3+': ['incorrect', WRONG_SIGN_FEEDBACK], '3-': ['correct', ''], '3−': ['correct', ''], '-3': ['form', CHARGE_SIGN_FIRST_FEEDBACK], 3: ['form', CHARGE_NO_SIGN_FEEDBACK], '+3': ['incorrect', WRONG_SIGN_FEEDBACK] },
+  };
+  for (const [key, rows] of Object.entries(table)) for (const [typed, want] of Object.entries(rows)) assert.deepEqual(grade(String(typed), key), want, `${typed} against ${key}`);
+  for (const message of [CHARGE_SIGN_FIRST_FEEDBACK, CHARGE_NO_SIGN_FEEDBACK]) assert.ok(!/\d/.test(message), 'no message prints a number');
+  // Without `charge` a whole-number key is graded as before (an oxidation state).
+  assert.equal(checkAnswer('-3', '-3', { form: 'whole-number' }), 'correct');
+  assert.equal(checkAnswer('3-', '-3', { form: 'whole-number' }), 'form');
+  assert.ok(parseAnswerForm(form).valid);
+});
+
+test('keyAsTyped: a charge key is self-graded as typed, number first; every other key as written', async () => {
+  const { keyAsTyped } = await import('./check-answer.mjs');
+  assert.equal(keyAsTyped('-3', 'whole-number charge'), '3-');
+  assert.equal(keyAsTyped('4', 'whole-number charge'), '4+');
+  assert.equal(checkAnswer(keyAsTyped('-3', 'whole-number charge'), '-3', { form: 'whole-number charge' }), 'correct');
+  assert.equal(keyAsTyped('-3', 'whole-number'), '-3');
+  assert.equal(keyAsTyped('0.5', 'decimal-or-fraction'), '0.5');
 });

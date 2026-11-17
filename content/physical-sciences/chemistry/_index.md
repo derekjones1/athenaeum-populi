@@ -67,7 +67,7 @@ chemistry, and nuclear chemistry.
 
 ## Appendices
 
-The book's thirteen [appendices](/physical-sciences/chemistry/appendices/)
+The book’s thirteen [appendices](/physical-sciences/chemistry/appendices/)
 are complete: the periodic table, a review of the mathematics the book uses,
 and eleven tables of units, constants, and data — among them the standard
 thermodynamic properties, ionization constants, solubility products, and
@@ -89,7 +89,7 @@ The remaining chapters of Chemistry 2e will appear in this order:
   rate laws, integrated rate laws, collision theory, reaction mechanisms,
   and catalysis.
 - **Fundamental Equilibrium Concepts** — chemical equilibria, equilibrium
-  constants, Le Châtelier's principle, and equilibrium calculations.
+  constants, Le Châtelier’s principle, and equilibrium calculations.
 - **Acid-Base Equilibria** — Brønsted-Lowry acids and bases, pH and pOH,
   relative strengths of acids and bases, hydrolysis of salts, polyprotic
   acids, buffers, and acid-base titrations.

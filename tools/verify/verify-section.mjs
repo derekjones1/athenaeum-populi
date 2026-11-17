@@ -34,7 +34,7 @@
  */
 import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { ce, checkAnswer, preprocess } from '../../assets/js/lib/math/check-answer.mjs';
+import { ce, checkAnswer, keyAsTyped, preprocess } from '../../assets/js/lib/math/check-answer.mjs';
 import { parseGraphPlotConfig } from '../../assets/js/lib/math/graph-plot-config.mjs';
 import { checkText } from '../../assets/js/lib/text/check-text.mjs';
 import { checkSortbins, parseSortbinsConfig } from '../../assets/js/lib/text/check-sortbins.mjs';
@@ -201,7 +201,7 @@ for (const f of files) {
       // mistagged form: an answer that does not satisfy the shape it declares
       // is one no learner could ever submit, and it fails here rather than in
       // the browser.
-      try { status = checkAnswer(p.answer, p.answer, { mode: p.answerMode, form: p.answerForm }); } catch (e) { status = 'threw: ' + e.message.slice(0, 40); }
+      try { status = checkAnswer(keyAsTyped(p.answer, p.answerForm), p.answer, { mode: p.answerMode, form: p.answerForm }); } catch (e) { status = 'threw: ' + e.message.slice(0, 40); }
       if (status === 'form') {
         bad(`${where}: answer ${JSON.stringify(p.answer)} is not written in its own answerForm ${JSON.stringify(p.answerForm)} — the exercise would reject its own answer`);
       } else if (status !== 'correct') {

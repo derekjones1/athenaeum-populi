@@ -6,8 +6,8 @@ description: >-
   oxidation-reduction reactions; reaction stoichiometry, limiting reactants,
   and percent yield; titration and gravimetric analysis; energy, heat, and
   specific heat; calorimetry; and enthalpy and Hess’s law — with its
-  calculation, formula, and equation questions re-asking the chapters' worked
-  examples and the rest written from the chapters' own text.
+  calculation, formula, and equation questions re-asking the chapters’ worked
+  examples and the rest written from the chapters’ own text.
 source_chapters: "4-5"
 weight: 7
 ---
@@ -17,7 +17,7 @@ weight: 7
   below, and a few of the others, re-asks a worked example from these
   chapters and is graded against the answer that example reaches on its
   section page; work each one without looking back at its solution. The rest were written from the
-  chapters' own text. No question repeats a question from the section
+  chapters’ own text. No question repeats a question from the section
   pages. There are no hints: this is a self-test. Questions
   are grouped by the section they come from, so a miss points you to exactly
   one section to review.
@@ -195,4 +195,4 @@ positive
 
 ---
 
-<small>This knowledge check is written for Chapters 4–5 of [Chemistry 2e](https://openstax.org/books/chemistry-2e/pages/1-introduction) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: every fill-in and every formula and equation question, and the multiple-choice and name questions that give a worked example's own data, re-ask the question of a worked example of the named section and are graded against the answer its solution reaches — the answer the source's solution prints, or, where that answer depends on an atomic mass, the answer the section page works from this book's periodic table (Appendix A, IUPAC's abridged standard atomic weights) — with a sentence added where the question leaves open which quantity to enter or in what unit, a lettered example asked as one of its parts with its lead-in restated in the singular, an example that asks for more than one thing asked for one of them, and a parenthetical pointer to a photograph or a table dropped; every other question is locally written from the pinned text of the chapters' own modules — their key terms, summaries, and body passages — and none is transcribed from the book's exercise sets, which the section pages already carry; no question carries a hint, and every self-check carries a rubric that decomposes a model answer made of the module's own sentences.</small>
+<small>This knowledge check is written for Chapters 4–5 of [Chemistry 2e](https://openstax.org/books/chemistry-2e/pages/1-introduction) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: every fill-in and every formula and equation question, and the multiple-choice and name questions that give a worked example’s own data, re-ask the question of a worked example of the named section and are graded against the answer its solution reaches — the answer the source’s solution prints, or, where that answer depends on an atomic mass, the answer the section page works from this book’s periodic table (Appendix A, IUPAC’s abridged standard atomic weights) — with a sentence added where the question leaves open which quantity to enter or in what unit, a lettered example asked as one of its parts with its lead-in restated in the singular, an example that asks for more than one thing asked for one of them, and a parenthetical pointer to a photograph or a table dropped; every other question is locally written from the pinned text of the chapters’ own modules — their key terms, summaries, and body passages — and none is transcribed from the book’s exercise sets, which the section pages already carry; no question carries a hint, and every self-check carries a rubric that decomposes a model answer made of the module’s own sentences.</small>

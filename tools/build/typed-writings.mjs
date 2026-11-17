@@ -83,3 +83,10 @@ export function quantumWritings(key, { variants = false } = {}) {
   if (N >= 2) out.push({ typed: set(n, String(L === 0 ? 1 : 0), '0', ms), kind: 'wrong-subshell' });
   return out;
 }
+
+/** A charge key ("4", "-3") as typed number first ("4+", "3-") and sign first ("+4", "-3"). */
+export function chargeWritings(answer) {
+  const value = Number(String(answer).replace(/−/g, '-'));
+  const sign = value < 0 ? '-' : '+';
+  return { numberFirst: `${Math.abs(value)}${sign}`, signFirst: `${sign}${Math.abs(value)}` };
+}

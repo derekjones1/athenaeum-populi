@@ -584,14 +584,6 @@
     "result": "agrees"
    }
   },
-  "011d2faffe201166": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm16458944, solution fs-idm46527040 “2+”: key 2 (F₂²⁺ has 12 valence electrons, bond order (8 − 4)/2 = 2)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "011de1b7ad094b7f": {
    "verdict": "ok",
    "note": "source exercise fs-idp20638384 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -10431,6 +10423,14 @@
     "result": "agrees"
    }
   },
+  "1428ee570d45e268": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm5511728 (charge); key 78 protons; 117 neutrons; charge is 4+ | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page) | carried Nov 16 2026 (chapter 8 run, lint sweep): answerDisplay set as math (display only; question, key, form, and hint unchanged) | carried Nov 16 2026 (after chapter 8): the charge is now typed number first, as Section 4.2 of the book writes a charge (Derek, November 16, 2026): the closing sentence and the form token changed; the question before the closing, the key, and the hint are unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "142b0bda347c5282": {
    "verdict": "ok",
    "note": "KC 3 15.1 § The Genetic Code Is Degenerate and Universal, m66497 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -14471,14 +14471,6 @@
     "result": "agrees"
    }
   },
-  "1b67d0f488140997": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp28548400 (printed 11) energy: CORRECTED per decision 5 to 9.505e-15 (hc/2.090e-11 = 9.50466e-15); source 9.502e-15 = h x rounded 1.434e19; item-level Source note",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "1b6812a65200a9d0": {
    "verdict": "ok"
   },
@@ -16392,6 +16384,14 @@
     "result": "agrees"
    }
   },
+  "1f4b045b969efdaf": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp28548400 (printed 11) frequency: 1.434e19 s^-1; c/2.090e-11 = 1.43445e19 | carried Nov 16 2026 (after chapter 8): straight apostrophes set curly in question (typography only; every word, the key, and the options unchanged)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1f4b7f9ed1729de4": {
    "verdict": "ok",
    "note": "source exercise fs-idp29778752 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -16887,14 +16887,6 @@
   },
   "202bc150e8cc4a5c": {
    "verdict": "ok"
-  },
-  "202de5ed1db2ce53": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm5511728 (charge); key 78 protons; 117 neutrons; charge is 4+ | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page) | carried Nov 16 2026 (chapter 8 run, lint sweep): answerDisplay set as math (display only; question, key, form, and hint unchanged)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "2039da1b345474e9": {
    "verdict": "ok",
@@ -25751,14 +25743,6 @@
    "verdict": "ok",
    "note": "4800 RPM = 4800*2*pi/60 = 160*pi rad/s = 502.6548... rad/s; d=120mm so r=60mm=0.06m; v = r*omega = 0.06*502.6548 = 30.159289474462014 m/s, rounds to 30.16 at 2dp (node computed); matches pinned CNXML solution '30.16 m/s' (line 3413)"
   },
-  "32160217a91da630": {
-   "verdict": "ok",
-   "note": "Stem gained a closing period only (G15). Melting gold: solid Au -> liquid Au, change of state only -> physical; matches key-1135 ex 27(e).",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "321b159691b8c6be": {
    "verdict": "ok",
    "note": "Review Question fs-id1730970; CNXML solution fs-id1805502 keys B, the 2nd option 'cellulose' — matches. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -29088,6 +29072,14 @@
   "38e614535cb4e053": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "38e61a51392c3dad": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp28548400 (printed 11) energy: CORRECTED per decision 5 to 9.505e-15 (hc/2.090e-11 = 9.50466e-15); source 9.502e-15 = h x rounded 1.434e19; item-level Source note | carried Nov 16 2026 (after chapter 8): straight apostrophes set curly in question (typography only; every word, the key, and the options unchanged)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -32694,6 +32686,14 @@
   "3fe7fddbcf5096a8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "3ff0964ee5bab3b1": {
+   "verdict": "ok",
+   "note": "Stem gained a closing period only (G15). Melting gold: solid Au -> liquid Au, change of state only -> physical; matches key-1135 ex 27(e). | carried Nov 16 2026 (after chapter 8): straight apostrophes set curly in hint (typography only; every word, the key, and the options unchanged)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -42143,6 +42143,14 @@
   "53261cd1a3a6acb1": {
    "verdict": "ok"
   },
+  "532852d173838139": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm16458944, solution fs-idm46527040 “2+”: key 2 (F₂²⁺ has 12 valence electrons, bond order (8 − 4)/2 = 2) | carried Nov 16 2026 (after chapter 8): the charge is now typed number first, as Section 4.2 of the book writes a charge (Derek, November 16, 2026): the closing sentence and the form token changed; the question before the closing, the key, and the hint are unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "532eec19a1da1a85": {
    "verdict": "ok",
    "note": "glossary recall internuclear ophthalmoplegia fs-id2002281, stem from the corrected definition (claim correction)",
@@ -43237,14 +43245,6 @@
   "5566cc99d0ae4d6b": {
    "verdict": "ok",
    "note": "KC 2 10.2 § Karyokinesis (Mitosis), m66478 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "55678da752cc9e34": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idp63594560 (CYL para fs-idm44394960): charge of P³⁻ as printed in the answer, keyed -3 | carried Nov 16 2026 (chapter 8 run, lint sweep): answerDisplay set as math (display only; question, key, form, and hint unchanged)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -52098,10 +52098,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "680dea8bc4c196aa": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp87226080 part (f), selfcheck per ruling 7.6-4 — model answer the source solution; Does the following molecule or ion have a dipole moment? PH₂⁻."
   },
   "680ead2c796c0762": {
    "verdict": "ok",
@@ -62654,6 +62650,10 @@
     "result": "agrees"
    }
   },
+  "7cf590a2d3c2c560": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp87226080 part (f), selfcheck per ruling 7.6-4 — model answer the source solution; Does the following molecule or ion have a dipole moment? PH₂⁻. | carried Nov 16 2026 (after chapter 8): rubric clauses split so that none of three or more words lies inside another (the clauses below ===CHECKS=== only; question, hint, and model answer unchanged)"
+  },
   "7cf6c6caec6571ce": {
    "verdict": "ok",
    "note": "cloze of fs-id2655063 'stimulates the adrenal cortex to release the steroid hormone aldosterone'",
@@ -66590,14 +66590,6 @@
   "84e6f9ec1b5138ec": {
    "verdict": "ok",
    "note": "KC 7 41.5 § Atrial Natriuretic Peptide Hormone, m66661 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | Biology knowledge check 33-43 author (KC) selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the ANP paragraph, Section 41.5)"
-  },
-  "84e7ad3b933ca49f": {
-   "verdict": "ok",
-   "note": "Stem gained a closing period only (G15). Souring milk: bacteria convert lactose to lactic acid, a new substance -> chemical; matches key-1135 ex 27(c).",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "84e913200827fca1": {
    "verdict": "ok",
@@ -78330,6 +78322,14 @@
     "result": "agrees"
    }
   },
+  "9d0c2cb90add6140": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp63594560 (CYL para fs-idm44394960): charge of P³⁻ as printed in the answer, keyed -3 | carried Nov 16 2026 (chapter 8 run, lint sweep): answerDisplay set as math (display only; question, key, form, and hint unchanged) | carried Nov 16 2026 (after chapter 8): the charge is now typed number first, as Section 4.2 of the book writes a charge (Derek, November 16, 2026): the closing sentence and the form token changed; the question before the closing, the key, and the hint are unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9d14f7ad56b91009": {
    "verdict": "ok",
    "note": "cloze of body fs-id2344495 'This creates a pressure gradient that causes oxygen to dissociate from hemoglobin, diffuse out of the blood, cross the interstitial space, and enter the tissue'; accept detach (fig 2320 label 'Detached from hemoglobin'); replaces the burgundy colour cloze per checker",
@@ -78736,14 +78736,6 @@
    "note": "glossary recall: hypophyseal portal system (fs-idm18157552) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "9dfacca61fa8c1e2": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp28548400 (printed 11) frequency: 1.434e19 s^-1; c/2.090e-11 = 1.43445e19",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -107557,6 +107549,14 @@
   "d8666c11b385adec": {
    "verdict": "ok",
    "note": "Body CYU selfcheck, unkeyed upstream; model answer assembled from § Enzyme Structure and Function's catalyst, activation-energy, and substrate/active-site sentences; stays a selfcheck because the honest answer needs several sentences, and a single-fact conversion would duplicate the Practice MC keyed 'reducing the activation energy'. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "d86c6958ab3b0ca0": {
+   "verdict": "ok",
+   "note": "Stem gained a closing period only (G15). Souring milk: bacteria convert lactose to lactic acid, a new substance -> chemical; matches key-1135 ex 27(c). | carried Nov 16 2026 (after chapter 8): straight apostrophes set curly in hint (typography only; every word, the key, and the options unchanged)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "d86dea968c493144": {
    "verdict": "ok",

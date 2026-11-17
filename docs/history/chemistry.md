@@ -4487,6 +4487,9 @@ then chapter 9.
 
 ### For Derek
 
+Items 1 and 4 were answered the same day ("The two lints and the charge",
+below).
+
 1. A charge is typed the sign first (`+2`), and Section 4.2 of the book says a
    charge is written number first (2+) and an oxidation number sign first, to
    tell the two apart. The field answers `2+` with "That has its sign after the
@@ -4515,6 +4518,48 @@ then chapter 9.
    to draw the structure with the smallest formal charges; the source's own
    chlorate answer in 8.2 uses the octet structure instead, and the page says
    which structure that answer assumes.
+
+### The two lints and the charge (November 16, 2026)
+
+A follow-up pass after the chapter's commit (`b7a49764`), by the gate agent
+(two more rounds) and the parent.
+
+- **Both lints left off are on.** *A straight apostrophe*: 234 set curly on
+  78 lines of 34 pages (chapters 1–7, the book landing, and both Knowledge
+  Checks; none on chapter 8), each an apostrophe inside a word, and nine more
+  in front-matter descriptions by the parent. Two questions (6.1) and two
+  hints (1.3) changed; no key, accept member, or option did, and every reader
+  of the grader and the gates already took the two characters as one (tests
+  now hold it). *A rubric clause inside another*: the first version refused
+  any contained clause, and its fixes joined a one-word choice to its reason
+  in four sound rubrics (1.1, 3.1, 5.2 twice) and dropped one checkpoint. The
+  parent read the diff, narrowed the rule to a contained clause of three or
+  more words — the choice and the reason are two checks — and restored the
+  four. One rubric was a real overlap and stays split (7.6's PH₂⁻ self-check).
+- **A charge is typed number first**, as Section 4.2 says a charge is written
+  (Derek: "fix the charge sign issue based on what the book says to do"). A
+  charge fill-in declares `answerForm="whole-number charge"` and closes "Enter
+  the charge with its number first and then its sign, as 1+ or 1−." (lint);
+  its key is still the signed number, so the gates and the ledger read the
+  value as before. `2+` is right; `+2` is answered "That is how an oxidation
+  number is written. A charge is written with its number first, then its
+  sign."; a bare `2` "A charge carries its sign: type + or - after its
+  number."; the other sign gets the sign sentence. Oxidation states and formal
+  charges stay sign first, as the book prints them. Three items changed (2.3's
+  platinum ion, 7.1, 8.4's F₂), and two footer clauses that the change made
+  false. Three tools graded a key against itself as typed and were taught the
+  number-first writing (`verify-section`, `ledger-carry`, the replay, which
+  now replays the closing's "1+" and "1−"), and `verify:typed` types a charge
+  number first.
+- **Ledger and baselines.** Eight records carried by the parent from a
+  snapshot taken at the commit, each with its change asserted (apostrophes
+  only; the charge closing and token only; rubric clauses only).
+  `--min-replayed` 9253 → 9256.
+
+What the follow-up got wrong: the parent first turned the two lints into an
+open-list entry instead of doing them, against a standing rule; and the first
+rubric fixes were accepted by the lint and the tests while making the rubrics
+worse, which only reading the diff showed.
 
 ## The `\dfrac` watch list
 

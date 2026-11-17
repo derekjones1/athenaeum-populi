@@ -48,3 +48,9 @@ test('a set of quantum numbers is typed as its stem asks, then in every other wr
     }
   }
 });
+
+test('a charge key is typed number first (pass A) and sign first (pass B)', async () => {
+  const { chargeWritings } = await import('./typed-writings.mjs');
+  assert.deepEqual(chargeWritings('4'), { numberFirst: '4+', signFirst: '+4' });
+  assert.deepEqual(chargeWritings('-3'), { numberFirst: '3-', signFirst: '-3' });
+});

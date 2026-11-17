@@ -885,8 +885,8 @@ no
 {{< selfcheck question="Does the following molecule or ion have a dipole moment? PH₂⁻." hint="Write the Lewis structure and find the molecular structure; use the periodic table of electronegativities in Section 7.2 Covalent Bonding to judge each bond, and ask whether the bond moments cancel." >}}
 Only ClF₅, ClO₂⁻, PCl₃, SeF₄, and PH₂⁻ have dipole moments.
 ===CHECKS===
+only ClF₅, ClO₂⁻, PCl₃, SeF₄,
 and PH₂⁻ have dipole moments
-only ClF₅, ClO₂⁻, PCl₃, SeF₄, and PH₂⁻ have dipole moments
 {{< /selfcheck >}}
 
 *Source note:* the periodic table of electronegativities in [Section 7.2 Covalent Bonding](/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/02-covalent-bonding/) gives phosphorus and hydrogen the same value, so the two conditions above do not decide this ion. The model answer is the source’s.

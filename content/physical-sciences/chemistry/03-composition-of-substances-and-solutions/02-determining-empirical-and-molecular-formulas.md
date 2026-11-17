@@ -80,7 +80,7 @@ $$\begin{aligned}
 
 *Source note:* the source works this section’s examples with atomic masses rounded to four figures. Here they are worked with the masses this book’s periodic table prints (Appendix A), so some results differ from the source’s in their last digits.
 
-This same approach may be taken considering a pair of molecules, a dozen molecules, or a mole of molecules, etc. The latter amount is most convenient and would simply involve the use of molar masses instead of atomic and formula masses, as demonstrated in the example below. As long as the molecular or empirical formula of the compound in question is known, the percent composition may be derived from the atomic or molar masses of the compound's elements.
+This same approach may be taken considering a pair of molecules, a dozen molecules, or a mole of molecules, etc. The latter amount is most convenient and would simply involve the use of molar masses instead of atomic and formula masses, as demonstrated in the example below. As long as the molecular or empirical formula of the compound in question is known, the percent composition may be derived from the atomic or molar masses of the compound’s elements.
 
 **Example.** *Determining Percent Composition from a Molecular Formula.* Aspirin is a compound with the molecular formula C₉H₈O₄. What is its percent composition?
 

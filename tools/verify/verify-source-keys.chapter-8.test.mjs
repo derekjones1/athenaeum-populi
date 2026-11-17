@@ -151,3 +151,17 @@ test('the coverage gate renders each new shape\'s unit by its items', { skip }, 
   assert.equal(of('fs-idm32929264(d)'), 'rendered');
   assert.ok(!verdicts.some((verdict) => verdict.status === 'unkeyed-rendered'));
 });
+
+test('the source gates read a straight and a curly apostrophe alike (the curly-apostrophe sweep)', async () => {
+  const { compact } = await import('./verify-source-keys.mjs');
+  const { plain } = await import('../lib/keyed-units.mjs');
+  assert.equal(compact("Hund's rule"), compact('Hund’s rule'), 'a multiple-choice option and its key');
+  assert.equal(plain("the source's answer"), plain('the source’s answer'), 'a stem read against the CNXML');
+});
+
+test('a charge item closing number first is held to the charge the source prints (Derek, November 16, 2026)', { skip }, () => {
+  const ask = 'What charge would be needed on F₂ to generate an ion with a bond order of 2? Enter the charge with its number first and then its sign, as 1+ or 1−.';
+  assert.equal(status(4, fillin(ask, '2', 'whole-number charge')), 'confirmed');
+  assert.equal(status(4, fillin(ask, '-2', 'whole-number charge')), 'key-differs');
+  assert.equal(status(4, fillin(ask, '1', 'whole-number charge')), 'key-differs');
+});
