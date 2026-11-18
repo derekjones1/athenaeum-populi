@@ -155,6 +155,13 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     reason: 'the source solution prints "68–71 cm" for a ball of 27 to 28 in.; 27 in × 2.54 cm/in (exact) = 68.58 cm, which rounds to 69 cm at two significant figures, so the lower-circumference fill-in keys 69; the other three bounds (71 cm, 400 g, 450 g) are the source\'s',
   },
   {
+    page: 'content/physical-sciences/chemistry/02-atoms-molecules-and-ions/03-atomic-structure-and-symbolism.md',
+    exercise: 'fs-idm112612912',
+    kind: 'solution',
+    erratum: 2931,
+    reason: 'the sample answer prints "The average mass would be 20.18 amu" for a guessed neon mixture of 91% Ne-20 and 9% Ne-22; 20.18 comes from the mass numbers, and the isotopic masses in the section\'s table give 0.91 × 19.9924 + 0.09 × 21.9914 = 20.172, so the model answer prints 20.17 amu',
+  },
+  {
     page: 'content/physical-sciences/chemistry/02-atoms-molecules-and-ions/07-chemical-nomenclature.md',
     exercise: 'fs-idp268321696(e)',
     kind: 'key',
@@ -1162,6 +1169,13 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     reason: 'the source solution prints "11.7 kJ" for the 0.740 g of TNT burned in a calorimeter of 534 J/°C holding 675 mL of water, warming 3.5 °C: it follows only from 4.18 J/g °C (this book\'s 4.184 gives 11.75) and carries three figures from a two-figure change, so the fill-in keys 12',
   },
   {
+    page: 'content/physical-sciences/chemistry/05-thermochemistry/02-calorimetry.md',
+    exercise: 'fs-idm40185072',
+    kind: 'solution',
+    erratum: 3059,
+    reason: 'the source solution gives q_rxn = −(q_solution + q_calorimeter) and then names "the latter term (q_rxn)"; the latter term of that equation is q_calorimeter, and q_rxn is its left-hand side, so the model answer prints "the latter term (q_calorimeter)"',
+  },
+  {
     page: 'content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md',
     exercise: 'fs-idp107667280',
     kind: 'key',
@@ -1295,6 +1309,13 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     reason: 'the source solution prints "The color of (a) is red" for the cesium line of frequency 3.45 × 10^14 Hz, which is 869 nm, beyond the visible range of every figure in the section, so the self-check\'s model answer says the line is in the infrared and not seen as a color',
   },
   {
+    page: 'content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/03-development-of-quantum-theory.md',
+    exercise: 'fs-idm127368704',
+    kind: 'solution',
+    erratum: 3116,
+    reason: 'the source solution sets the magnetic quantum number as "m₁", with the digit 1 for its subscript; the symbol is m_l, the letter l, as the exercise\'s own question and the rest of the module write it, so the model answer prints m_l',
+  },
+  {
     page: 'content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/06-molecular-structure-and-polarity.md',
     exercise: 'fs-idp67177072(e)',
     kind: 'key',
@@ -1307,6 +1328,20 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     kind: 'key',
     erratum: 3143,
     reason: 'the source solution orders the series "Ba, H, As, N, O" by increasing electronegativity; the module\'s own figure of electronegativity values gives arsenic 2.0 and hydrogen 2.1, so arsenic comes before hydrogen and the item keys the order the figure gives',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/02-covalent-bonding.md',
+    exercise: 'fs-idp31566784',
+    kind: 'solution',
+    erratum: 3144,
+    reason: 'the source answers "N, O, F, and Cl" to which atoms leave sulfur with a positive partial charge; bromine, 2.8 in the module\'s table of electronegativities against sulfur\'s 2.5, belongs in the list, so the model answer names N, O, F, Cl, and Br',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/05-strengths-of-ionic-and-covalent-bonds.md',
+    exercise: 'fs-idp12625232(c)',
+    kind: 'solution',
+    erratum: 3168,
+    reason: 'the source solution explains the first and second ionization energies of Ca and K partly by "the extra energy required to break the pairing of the electrons" and says Ca\'s second ionization removes "a lone electron"; Section 6.5 says that removing one electron of a pair removes the pair\'s repulsion and makes removal easier, so the model answer gives only the reasons that section gives — the one more proton of Ca, the lower 3p level of K⁺ — and Ca\'s second electron as the remaining electron in the outer 4s level',
   },
   {
     page: 'content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/05-strengths-of-ionic-and-covalent-bonds.md',
@@ -1328,6 +1363,20 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     kind: 'solution',
     erratum: 3181,
     reason: 'the source solution says "the pairing of the two bonding electrons lowers the energy of the system"; the question asks why one electron in the bonding orbital of H₂ is lower in energy than in a 1s atomic orbital, and the module\'s own text gives the reason — electrons in a σs orbital are attracted by both nuclei at the same time and are more stable than in the isolated atoms — so the model answer is that sentence, turned to the question\'s one electron',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/04-molecular-orbital-theory.md',
+    exercise: 'fs-idm165679168(b)',
+    kind: 'solution',
+    erratum: 3182,
+    reason: 'the source solution says ψ for an atomic orbital and ψ for a molecular orbital "are quantum-mechanical constructs that represent the probability of finding the electron"; ψ is the wave function and its square gives the probability, as the module\'s own text names the molecular orbital by Ψ², so the model answer prints "constructs whose squares represent the probability"',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/04-molecular-orbital-theory.md',
+    exercise: 'fs-idm76747104',
+    kind: 'solution',
+    erratum: 3178,
+    reason: 'the source solution says that in fluorine "atoms in the 2s orbital are closer to the nucleus and more stable"; an orbital holds electrons, not atoms, and the sentence explains why fluorine\'s 2s electrons are more stable than lithium\'s, so the model answer prints "electrons in the 2s orbital"',
   },
   {
     page: 'content/physical-sciences/chemistry/09-gases/01-gas-pressure.md',
@@ -1461,6 +1510,118 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     kind: 'solution',
     erratum: 3253,
     reason: 'the source solution to part (c) says "The greater the compressibility, the more the volume matters. At low pressures … the effect of the volume of the gas molecules on Z would be a small lowering compressibility. At higher pressures, the effect of the volume of the gas molecules themselves on Z would increase compressibility"; the module\'s own text says the volume of the molecules makes a gas less compressible, so that Z increases with pressure, and it never lowers Z, so the model answer says that the volume of the molecules raises Z, by little at low pressures and by more at high pressures',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/10-liquids-and-solids/01-intermolecular-forces.md',
+    exercise: 'fs-idp57460448',
+    kind: 'solution',
+    erratum: 3301,
+    reason: 'the source solution says "H-bonding is the principle IMF holding the protein strands together"; the word that means "chief" is "principal" ("principle" is a rule or law), so the model answer prints "the principal IMF"',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/10-liquids-and-solids/01-intermolecular-forces.md',
+    exercise: 'fs-idp19547744',
+    kind: 'solution',
+    erratum: 3302,
+    reason: 'the answer says "Only rather small dipole-dipole interactions from C-H bonds are available to hold n-butane in the liquid state"; n-butane is nonpolar and, as the module itself says of hydrocarbons, has only dispersion forces, so the model answer names dispersion forces',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/10-liquids-and-solids/02-properties-of-liquids.md',
+    exercise: 'fs-idm183311984',
+    kind: 'solution',
+    erratum: 3288,
+    reason: 'the answer ends "The lower the temperature, the less the intermolecular forces are overcome, and so the less viscous the liquid"; a colder liquid is more viscous, as the answer\'s own first half says of a hotter one, so the model answer prints "the more viscous the liquid"',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/10-liquids-and-solids/02-properties-of-liquids.md',
+    exercise: 'fs-idp7578512#check',
+    kind: 'key',
+    erratum: 3289,
+    reason: 'the Check Your Learning answer prints "diameter = 0.36 mm" for a rise of 8.4 cm; the example\'s own data (T = 71.99 mN/m, 1.0 g/cm³, 9.8 m/s²) give 0.3498 mm, and 0.36 is the example\'s rounded 12 cm scaled (0.25 mm × 12/8.4), so the fill-in keys 0.35',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/10-liquids-and-solids/03-phase-transitions.md',
+    exercise: 'fs-idm143693744#check',
+    kind: 'key',
+    erratum: 3290,
+    reason: 'the Check Your Learning answer prints 30.1 kPa for acetone at 25.0 °C, which takes 25.0 °C as 298 K; with T = t + 273.15 (329.65 K and 298.15 K) the Clausius-Clapeyron equation gives 30.31 kPa, so the fill-in keys 30.3',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/10-liquids-and-solids/03-phase-transitions.md',
+    exercise: 'fs-idm69576896',
+    kind: 'key',
+    erratum: 3291,
+    reason: 'the answer prints 1125 kJ for 422 g of water from 23.5 °C to steam at 150 °C; this book\'s data for water (4.184 and 1.864 J/g °C, 40.656 kJ/mol, 18.015 g/mol) give 1126.8 kJ and the section example\'s own values give 1126.6 to 1126.9, so the fill-in keys 1127; 1125 needs an enthalpy of vaporization printed nowhere in the book',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/10-liquids-and-solids/04-phase-diagrams.md',
+    exercise: 'fs-idm135170880',
+    kind: 'solution',
+    erratum: 3292,
+    reason: 'part (d) asks the reader to circle each triple point; the answer image circles only the graphite-liquid-gas point, and the diagram has a second triple point where the diamond, graphite, and liquid regions meet, so the model answer names it in words after the source\'s image',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/10-liquids-and-solids/04-phase-diagrams.md',
+    exercise: 'fs-idm163161056',
+    kind: 'solution',
+    erratum: 3293,
+    reason: 'the answer says water at 40 °C becomes a liquid "at pressures higher than about 75 torr"; Appendix E gives the vapor pressure of water at 40 °C as 55.3 torr, so the model answer prints "about 55 torr"',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/10-liquids-and-solids/04-phase-diagrams.md',
+    exercise: 'fs-idm211145632#check',
+    kind: 'solution',
+    erratum: 3294,
+    reason: 'the Check Your Learning answer prints "s ⟶ g at −58 °C" at 0.3 kPa and "l ⟶ g at 78 °C" at 50 kPa; ice has a vapor pressure of about 0.26 kPa at −10 °C (the module prints 0.20, erratum 3303) and the triple point is 0.6 kPa at 0.01 °C, so ice at 0.3 kPa sublimes between −10 °C and 0 °C, and Appendix E\'s vapor pressures put the boiling point at 50 kPa near 81 °C; the model answer prints those',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/10-liquids-and-solids/04-phase-diagrams.md',
+    exercise: 'fs-idm81431296#check',
+    kind: 'solution',
+    erratum: 3295,
+    reason: 'the Check Your Learning answer prints "l ⟶ g at −10 °C" at 1500 kPa and "s ⟶ g at −60 °C" at 50 kPa; the carbon dioxide phase diagram the question reads, as drawn, gives about −35 °C and about −84 °C, so the model answer prints the figure\'s readings',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/10-liquids-and-solids/06-lattice-structures-in-crystalline-solids.md',
+    exercise: 'fs-idp184563440',
+    kind: 'key',
+    erratum: 3296,
+    reason: 'the answer prints 20.2° from a spacing of 0.4164 nm and a wavelength of 0.2879 nm, both of four figures; the sibling exercise keys four (2.874 Å), so the fill-in keys 20.22',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/10-liquids-and-solids/06-lattice-structures-in-crystalline-solids.md',
+    exercise: 'fs-idp79703472#check',
+    kind: 'key',
+    erratum: 3297,
+    reason: 'part (a) prints 144 pm for silver from an edge of 409 pm; 409 × √2 / 4 = 144.60, which rounds to 145, so the fill-in keys 145',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/10-liquids-and-solids/06-lattice-structures-in-crystalline-solids.md',
+    exercise: 'fs-idp160437296#check',
+    kind: 'key',
+    erratum: 3298,
+    reason: 'the Check Your Learning answer prints 1.33 Å for the potassium ion; the stem gives an edge of 6.28 Å and a chloride radius of 1.82 Å, and 6.28/2 − 1.82 = 1.32, so the fill-in keys 1.32',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/10-liquids-and-solids/06-lattice-structures-in-crystalline-solids.md',
+    exercise: 'fs-idm39353008#check',
+    kind: 'key',
+    erratum: 3304,
+    reason: 'the Check Your Learning answer prints 2.23 g/cm³ for the density nickel would have in a simple cubic cell; its data (an edge of 0.3524 nm, 58.693 g/mol, 6.022 × 10²³) carry four figures and its own printed 9.746 × 10⁻²³ g over 4.376 × 10⁻²³ cm³ is 2.227, so the fill-in keys 2.227 and the model answer prints it; the density of 8.90 g/cm³ in the stem is the value compared against, not a datum of the calculation',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/10-liquids-and-solids/06-lattice-structures-in-crystalline-solids.md',
+    exercise: 'fs-idm39353008#check',
+    kind: 'solution',
+    erratum: 3304,
+    reason: 'the model answer prints 2.227 g/cm³ where the source prints 2.23, the same correction as the fill-in above it',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/10-liquids-and-solids/06-lattice-structures-in-crystalline-solids.md',
+    exercise: 'fs-idp122808832',
+    kind: 'solution',
+    erratum: 3300,
+    reason: 'the answer prints "can be occupied be a cation" and "the formula for thallium is TlI"; the model answer prints "by a cation" and "the formula for thallium iodide is TlI"',
   },
 ]);
 
@@ -2710,6 +2871,43 @@ function measuredUnits(answer) {
 
 function heldNumber(answer, question, key) {
   const closing = String(question).split(/(?<=[.?!][)”’"]?)\s+/).pop();
+  // An oxidation number stated in words beside another quantity — "59.95%;
+  // The oxidation number of titanium is +4." (10.6's rutile, one fill-in
+  // each): an item whose closing asks the oxidation state or number is held
+  // to the number the sentence gives, and one whose closing asks a percent
+  // to the number printed with "%" — the percent under the oxidation-state
+  // closing, or the 4 under the percent's, is refused.
+  const stated = [...String(answer).matchAll(/\boxidation (?:numbers?|states?) of (?:the\s+)?[a-z]+(?:\s+[a-z]+)?\s+(?:is|are)\s+([+−–-]?)\s?(\d+)\b/gi)]
+    .map((match) => printedNumerals(`${match[1].replace('+', '')}${match[2]}`)[0]).filter(Boolean);
+  // A worked answer that prints its steps — "No. If Ni was simple cubic, its
+  // density would be given by: … = 9.746 × 10^{−23} g … = 4.376 × 10^{−23}
+  // cm^{3} … = 2.23 g/cm^{3} …" (10.6's Check Your Learning) — under a
+  // closing that names a quotient unit ("…, in g/cm³."): the item is held to
+  // the numbers printed with THAT unit, so a step's mass or volume is no key
+  // of the density.
+  const quotient = /\bin\s+([A-Za-zµ°]+\/[A-Za-z]+(?:\^?\{?[23²³]\}?)?)\s*\.?\s*$/.exec(closing);
+  if (quotient) {
+    const unitOf = (text) => String(text).replace(/\s+/g, '').replace(/\^\{?([23])\}?/g, '$1').replace(/²/g, '2').replace(/³/g, '3');
+    const wanted = unitOf(quotient[1]);
+    const numerals = printedNumerals(answer);
+    const under = numerals.filter((numeral) => {
+      const after = String(answer).slice(String(answer).indexOf(numeral.printed) + numeral.printed.length);
+      const unitText = unitOf(after.slice(0, 16));
+      return unitText.startsWith(wanted) && !/^[0-9]/.test(unitText.slice(wanted.length));
+    });
+    if (numerals.length >= 2 && under.length) {
+      return under.some((numeral) => sameNumeral(numeral, key)) ? null : { what: `the value in ${quotient[1]}`, numerals: under };
+    }
+  }
+  if (stated.length) {
+    if (/\boxidation (?:states?|numbers?)\b/i.test(closing)) {
+      return stated.some((numeral) => sameNumeral(numeral, key)) ? null : { what: 'the oxidation number the answer states', numerals: stated };
+    }
+    const percents = [...String(answer).matchAll(/(\d[\d.,]*)\s*%/g)].map((match) => printedNumerals(match[1])[0]).filter(Boolean);
+    if (percents.length && /\bpercent\b/i.test(closing)) {
+      return percents.some((numeral) => sameNumeral(numeral, key)) ? null : { what: 'the percent', numerals: percents };
+    }
+  }
   // A value per substance, each after its formula and a colon — "CH _4 :
   // 276 kPa; C _2 H _6 : 27 kPa; C _3 H _8 : 3.4 kPa" (9.3, partial
   // pressures): "Enter the partial pressure of C₂H₆ in kilopascals." is
@@ -2857,6 +3055,170 @@ export function carriedWord(unit, units, item) {
 }
 
 /** The closing sentence of a question, a typing sentence set aside ("Type each subshell …"): the one that says which. */
+/**
+ * The units a graph is read in, by symbol or name, for `readingInAskedUnit`.
+ * Longest names first: "millimeters of mercury" before "meters".
+ */
+const READING_UNITS = [
+  ['mmHg', /\bmillimeters? of mercury\b|\bmm\s?Hg\b/i],
+  ['kPa', /\bkilopascals?\b|\bkPa\b/],
+  ['atm', /\batmospheres?\b|\batm\b/],
+  ['torr', /\btorr\b/i],
+  ['°C', /\bdegrees? Celsius\b|°\s?C\b/],
+  ['K', /\bkelvin\b|(?<=\d\s?)K\b/],
+  ['mL', /\bmilliliters?\b|\bmL\b/],
+  ['L', /\bliters?\b|(?<=\d\s?)L\b/],
+];
+const readingUnit = (text) => {
+  let best = null;
+  for (const [name, pattern] of READING_UNITS) {
+    const match = pattern.exec(text);
+    if (match && (!best || match.index < best.index)) best = { name, index: match.index };
+  }
+  return best?.name ?? null;
+};
+
+/**
+ * A graph reading's printed answer, with any value it restates in ANOTHER
+ * unit dropped — "Approximately 40 kPa (0.4 atm)" (10.3's Check Your
+ * Learning) under a closing that asks kilopascals is "Approximately 40 kPa":
+ * the 0.4 is the same reading, in atmospheres, and would fall outside the
+ * interval of a key in kilopascals. Only a parenthesis is dropped, and only
+ * when the rest prints the unit the closing names.
+ */
+export function readingInAskedUnit(answer, question) {
+  const text = String(answer ?? '');
+  const asked = readingUnit(askedClosing(question));
+  if (!asked) return text;
+  const pieces = text.split(/(\([^()]*\))/);
+  const kept = pieces.filter((piece) => !piece.startsWith('(') || [asked, null].includes(readingUnit(piece)));
+  return kept.some((piece) => !piece.startsWith('(') && readingUnit(piece) === asked) ? kept.join(' ') : text;
+}
+
+/**
+ * The words a model answer puts in place of the source's inside a run it
+ * otherwise carries word for word: [[source words, model words]]. Both are
+ * read folded (`plain` of `texAsText`), aligned word by word (a longest
+ * common subsequence), and a hunk counts only where one or two words stand
+ * for one or two, with at least three carried words on each side — the same
+ * sentence, one word of it changed ("less viscous" → "more viscous", 10.2).
+ * A word added or dropped, or a sentence rewritten, is not such a hunk.
+ */
+const FUNCTION_WORDS = new Set('a an the of and or to in on at by for with as is are was were be been it its this that these those which so also then than there their'.split(' '));
+
+function editDistance(a, b) {
+  let row = Array.from({ length: b.length + 1 }, (_, at) => at);
+  for (let i = 1; i <= a.length; i += 1) {
+    const next = [i];
+    for (let j = 1; j <= b.length; j += 1) next.push(Math.min(row[j] + 1, next[j - 1] + 1, row[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)));
+    row = next;
+  }
+  return row[b.length];
+}
+
+/**
+ * The sentences of a self-check's model answer that are the page's own, not
+ * the source's: fewer than half of a sentence's content words (two letters
+ * or more, `FUNCTION_WORDS` aside) stand anywhere in the source solution.
+ * The coverage floor lets up to 30% of the answer's words be new, so an
+ * added sentence that contradicts the source can pass ("Viscosity increases
+ * as temperature increases." beside 10.2's 27(b)); `checkCorpus --verbose`
+ * lists each one for the checker to read against the source.
+ */
+export function addedSentences(model, solution, question = '') {
+  const prose = String(model ?? '').replace(/\{\{<\s*mediafigure\b[\s\S]*?\{\{<\s*\/mediafigure\s*>\}\}/g, ' ').replace(/\{\{<[^>]*>\}\}/g, ' ');
+  // Math symbols read as words: `$m_l$` is "m l", `$l = 0$` holds "l" — a
+  // one-letter word counts here (6.3's "For an orbital of type (x): $l = 0$, $m_l = 0$.").
+  const words = (text) => foldedPlain(texAsText(text)).split(' ').filter((word) => word && !FUNCTION_WORDS.has(word));
+  const source = new Set(words(solution));
+  // …but only where the source has it too: a stray "c" of °C is no word.
+  const content = (text) => words(text).filter((word) => word.length >= 2 || source.has(word));
+  const asked = new Set(words(question));
+  // A source answer that sends the reader to a figure — "See <link
+  // target-id=…/>." (9.6), its link text dropped, so only "See" is read —
+  // is carried by the page's "See the graph of … above.": a cross-reference.
+  const seeFigure = /\bSee\s*(?:[.;)]|$)/.test(String(solution ?? ''));
+  // A label the source ends with a colon ("Eight electrons:", 7.3) is a
+  // sentence of its own, never joined to the describing sentence after it.
+  // Only a short label (three words at most) stands alone; a clause that
+  // ends at a colon ("…has a formal charge of zero: N 5 − 2 − 3 = 0") is
+  // joined to what follows.
+  const pieces = [];
+  for (const piece of prose.split(/(?<=[.?!])\s+(?=\S)|(?<=:)\s+(?=[A-Z])/).map((sentence) => sentence.trim()).filter(Boolean)) {
+    const last = pieces[pieces.length - 1];
+    if (last && /:$/.test(last) && last.split(/\s+/).length > 3) pieces[pieces.length - 1] = `${last} ${piece}`;
+    else pieces.push(piece);
+  }
+  return pieces.filter((sentence) => {
+    // A label the page sets before a sample ("Sample answer:") claims nothing.
+    if (/:$/.test(sentence) && sentence.split(/\s+/).length <= 3) return false;
+    const read = content(sentence);
+    if (!read.length || read.filter((word) => source.has(word)).length / read.length >= 0.5) return false;
+    // The source's bare answer set in a sentence in the question's own
+    // words ("The density of the foam sample is 0.230 g/mL.", 1.4): every
+    // word outside the solution is the question's.
+    if (read.every((word) => source.has(word) || asked.has(word))) return false;
+    if (seeFigure && /^See\b/.test(sentence)) return false;
+    return true;
+  });
+}
+
+export function swappedWords(model, solution, { all = false } = {}) {
+  const words = (text) => foldedPlain(texAsText(String(text ?? ''))).split(' ').filter(Boolean);
+  const a = words(solution);
+  const b = words(model);
+  if (!a.length || !b.length || a.length * b.length > 4e6) return [];
+  const lcs = Array.from({ length: a.length + 1 }, () => new Uint16Array(b.length + 1));
+  for (let i = a.length - 1; i >= 0; i -= 1) {
+    for (let j = b.length - 1; j >= 0; j -= 1) {
+      lcs[i][j] = a[i] === b[j] ? lcs[i + 1][j + 1] + 1 : Math.max(lcs[i + 1][j], lcs[i][j + 1]);
+    }
+  }
+  // Walk the alignment: runs of matched words, and the hunks between them.
+  const steps = [];
+  let i = 0;
+  let j = 0;
+  while (i < a.length || j < b.length) {
+    if (i < a.length && j < b.length && a[i] === b[j]) { steps.push({ match: true }); i += 1; j += 1; } else if (j < b.length && (i === a.length || lcs[i][j + 1] >= lcs[i + 1][j])) {
+      steps.push({ model: b[j] }); j += 1;
+    } else { steps.push({ source: a[i] }); i += 1; }
+  }
+  const swaps = [];
+  for (let at = 0; at < steps.length;) {
+    if (steps[at].match) { at += 1; continue; }
+    let end = at;
+    while (end < steps.length && !steps[end].match) end += 1;
+    const hunk = steps.slice(at, end);
+    const from = hunk.filter((step) => step.source).map((step) => step.source);
+    const to = hunk.filter((step) => step.model).map((step) => step.model);
+    let before = 0;
+    for (let k = at - 1; k >= 0 && steps[k].match; k -= 1) before += 1;
+    let after = 0;
+    for (let k = end; k < steps.length && steps[k].match; k += 1) after += 1;
+    // Not a change of substance: the same letters spaced otherwise ("c h"
+    // for "ch", a formula the source spaces), a part named by its position
+    // for its letter ("(b)" → "the second", "Stems"), or one letter of a
+    // word that is no number ("weighted" → "weighed", "be" → "by": a typo
+    // set right). A number changed by one digit is a change.
+    const joined = from.join('') === to.join('');
+    const position = from.length === 1 && /^[a-h]$/.test(from[0]) && to[0] === 'the';
+    const typo = from.length === 1 && to.length === 1 && !/\d/.test(from[0] + to[0]) && editDistance(from[0], to[0]) <= 1;
+    const small = from.length <= 2 && to.length <= 2;
+    const benign = joined || (!all && (position || typo));
+    if (from.length && to.length && small && before >= 3 && after >= 3 && !benign) swaps.push([from.join(' '), to.join(' ')]);
+    // …or a longer run of the source sentence's CONTENT words dropped or
+    // replaced inside a sentence the model answer otherwise carries — "Only
+    // rather small dipole-dipole interactions from C-H bonds are available
+    // to hold n-butane …" printed "Only dispersion forces are available to
+    // hold n-butane …" (10.1, erratum 3302): carried words on both sides,
+    // three or more on one.
+    else if (!small && !benign && before >= 1 && after >= 1 && before + after >= 4
+      && from.some((word) => !FUNCTION_WORDS.has(word))) swaps.push([from.join(' '), to.join(' ')]);
+    at = end;
+  }
+  return swaps;
+}
+
 export function askedClosing(question) {
   const sentences = String(question ?? '').split(/(?<=[.?!][)”’"]?)\s+/).filter((sentence) => !/^Type\b/.test(sentence.trim()));
   return sentences.pop() ?? '';
@@ -3001,9 +3363,19 @@ export function writeDataRegister(repositoryRoot, differences, pagesRead) {
  * its bins.
  */
 const optionWords = (option) => withoutArticle(option).split(' ').filter(Boolean);
+// An enthalpy written as its symbol — the option `$\Delta H_\text{vaporization}$`
+// (10.3's titanium tetrachloride: "which will likely have the larger
+// magnitude: ΔH fusion or ΔH vaporization?") — is named in the answer's words
+// as "the heat of vaporization" or "the enthalpy of vaporization"; folded, the
+// symbol is only "h vaporization".
+const ENTHALPY_SYMBOL = /^\s*\$?\s*(?:\\Delta|Δ)\s*H\s*(?:\^\s*\{?\\circ\}?\s*)?_?\s*(?:\\(?:text|mathrm)\s*)?\{?\s*([a-z]+)\s*\}?\s*\$?\s*$/;
+const ENTHALPY_WORD = { vap: 'vaporization', fus: 'fusion', sub: 'sublimation' };
 const optionReadings = (option) => {
   const aside = /^(.*?)\s*\(([^)]+)\)\s*(.*)$/.exec(option);
-  return [option, ...(aside ? [`${aside[1]} ${aside[3]}`, `${aside[2]} ${aside[3]}`] : [])].map(optionWords);
+  const enthalpy = ENTHALPY_SYMBOL.exec(option);
+  const change = enthalpy ? ENTHALPY_WORD[enthalpy[1]] ?? enthalpy[1] : null;
+  return [option, ...(aside ? [`${aside[1]} ${aside[3]}`, `${aside[2]} ${aside[3]}`] : []),
+    ...(change ? [`heat of ${change}`, `enthalpy of ${change}`] : [])].map(optionWords);
 };
 export function optionsNamedIn(answer, options) {
   // Word by word only for words: a formula's pieces are no words — "K₂O"
@@ -3462,7 +3834,11 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
     //   its question prints (2.6, one multiple choice per compound);
     //   "Oxidized: Sn²⁺; reduced: H₂O₂; oxidizing agent: H₂O₂; …" — one value
     //   per role; the item's is the role its closing sentence names (17.1).
-    const segments = unit.answer.split(';').map((segment) => /^\s*([^:]+):\s*(.+)$/s.exec(segment)).filter(Boolean)
+    //   "X = ionic; Y = metallic; Z = covalent network" — one value per
+    //   substance of the stem's table, "=" for the colon (10.5): the item's is
+    //   the one its question closes with ("…covalent network solid: X.").
+    const segments = unit.answer.split(';').map((segment) => /^\s*([^:]+):\s*(.+)$/s.exec(segment)
+      ?? /^\s*([A-Z][A-Za-z0-9]{0,3})\s*=\s*([a-z].*)$/s.exec(segment)).filter(Boolean)
       .map((match) => ({ head: foldedPlain(match[1]), body: match[2].trim() }));
     let said = unit.answer;
     // …and a list sorted into the options by SENTENCES, each listing its
@@ -3559,6 +3935,32 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
         if (!/^(?:and|or|both|as well as)$/.test(foldedPlain(sibling.answer))) break;
       }
     }
+    // A choice the answer says FIRST, as a sentence of its own, before the
+    // reason — "ICl. ICl and Br₂ have similar masses …" (10.1's Check Your
+    // Learning; the row "a choice from the stem's set with a reason"): the
+    // reason names the other options too, so the choice is the one the
+    // opening sentence names, and nothing else.
+    if (named.length > 1 && said === unit.answer) {
+      const opening = unit.answer.split(/(?<=[.!?])\s+(?=[A-Z0-9−–-])/)[0].replace(/[.!?]\s*$/, '').trim();
+      const openingFormula = chemCanon(opening, 'formula');
+      const hit = formulas.every(Boolean) && openingFormula
+        ? item.options.filter((option, at) => formulas[at] === openingFormula)
+        : optionsNamedIn(` ${foldedPlain(opening)} `, item.options);
+      if (opening !== unit.answer.trim() && hit.length === 1) named = hit;
+    }
+    // A choice among values the stem offers, answered by weighing each —
+    // "Would you expect … to be 28 kJ/mol, 9.8 kJ/mol, or −8.4 kJ/mol?
+    // Discuss the plausibility of each …" → "… A value of 28 kJ/mol would
+    // seem reasonable. A value of −8.4 kJ/mol would indicate …, which is
+    // clearly implausible." (10.3): the choice is the one option named by
+    // the one sentence that calls it reasonable or plausible.
+    if (named.length > 1 && said === unit.answer) {
+      const judged = unit.answer.split(/(?<=[.!?])\s+/)
+        .filter((sentence) => /\b(?:reasonable|plausible)\b/i.test(sentence) && !/\b(?:implausible|unreasonable|not)\b/i.test(sentence))
+        .map((sentence) => optionsNamedIn(` ${foldedPlain(sentence)} `, item.options))
+        .filter((hit) => hit.length === 1);
+      if (judged.length === 1) named = judged[0];
+    }
     if (named.length === 1 && compact(named[0]) === compact(item.answer)) return { status: 'confirmed', exercise };
     if (named.length === 0) return { status: 'prose-key', exercise };
     return {
@@ -3582,7 +3984,7 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
     const reading = /(?:^|\s)reading:(\d+(?:\.\d+)?|\.\d+)(?:\s|$)/.exec(String(item.form || ''));
     if (reading) {
       const division = readNumeral(reading[1]);
-      const printed = (String(unit.answer).replace(/(\d)\s*[\u2013\u2212-]\s*(?=\d)/g, '$1 ').match(/\d+(?:\.\d+)?/g) || []).map((text) => readNumeral(text));
+      const printed = (readingInAskedUnit(unit.answer, item.question).replace(/(\d)\s*[\u2013\u2212-]\s*(?=\d)/g, '$1 ').match(/\d+(?:\.\d+)?/g) || []).map((text) => readNumeral(text));
       if (!printed.length) {
         return { status: 'key-differs', exercise, detail: `fillin declares ${reading[0].trim()}, but source ${unit.id} answers ${JSON.stringify(unit.answer.slice(0, 140))}, which prints no number to hold the reading to` };
       }
@@ -3775,14 +4177,47 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
   const labelOnly = unit.partText && /:\s*$/.test(unit.answer) && tightMember(unit.answer.replace(/:\s*$/, '')) === tightMember(unit.partText.replace(/\([^)]*\)/g, ''));
   if ((!unit.answer.trim() || labelOnly) && (unit.answerMedia || []).length) {
     const missing = unit.answerMedia.filter((file) => !(item.figures || []).includes(file));
+    // Words beside the source's image (a describing sentence, or 10.4's
+    // second triple point the image does not circle, erratum 3292) are the
+    // page's: `added` lets a `solution` deviation for the exercise count as
+    // in use; a describing sentence needs none.
+    const words = String(item.model ?? '').replace(/\{\{<\s*mediafigure\b[\s\S]*?\{\{<\s*\/mediafigure\s*>\}\}/g, ' ').replace(/\{\{<[^>]*>\}\}/g, ' ');
     return missing.length
       ? { status: 'key-differs', exercise, detail: `source ${unit.id} answers with a drawing (${missing.join(', ')}) that the selfcheck's model answer does not show` }
-      : { status: 'confirmed', exercise };
+      : { status: 'confirmed', exercise, ...(/\p{L}{2,}/u.test(words) ? { added: true, describing: addedSentences(item.model, unit.answer, item.question) } : {}) };
   }
   let judged = judgeSelfcheck(item, {
     checkQuestions: null,
     exercises: [{ id: unit.id, problem: item.question, solution: unit.answer, options: [] }],
   });
+  // A model answer that carries the source's sentence with a WORD of it
+  // changed — "…and so the less viscous the liquid" printed "…the more
+  // viscous the liquid" (10.2, erratum 3288); "about 75 torr" printed "about
+  // 55 torr" (10.4, 3293) — shares every word with the source, so its
+  // coverage reads verbatim. The changed words ride on the verdict
+  // (`swaps`): `checkCorpus` counts a `solution` deviation for the exercise
+  // as in use, and reports a change no deviation discloses.
+  if (judged.status === 'verbatim' || judged.status === 'reworded') {
+    // …and a typo set right ("be" → "by", "weighted" → "weighed") or a part
+    // named by its position, which needs no disclosure, still puts a filed
+    // `solution` deviation in use (`edits`): 10.6's TlI answer, erratum 3300.
+    const swaps = swappedWords(item.model, unit.answer);
+    const edits = swappedWords(item.model, unit.answer, { all: true });
+    if (swaps.length) judged = { ...judged, swaps };
+    if (edits.length) judged = { ...judged, edits };
+    // Beside a figure the source answers with as well as words (2.4's
+    // "(a) ethanol" and its drawing; 7.3's "Eight electrons:" and its
+    // symbol), the page's sentences describe the drawing: their own label.
+    const added = addedSentences(item.model, unit.answer, item.question);
+    const drawn = (unit.answerMedia || []).length > 0 && /\{\{<\s*mediafigure\b/.test(String(item.model ?? ''));
+    // The FIRST added sentence describes the drawing; one after it is an
+    // addition of its own (7.4's NF₃: the formal charges worked from it).
+    if (added.length) {
+      judged = drawn
+        ? { ...judged, describing: added.slice(0, 1), ...(added.length > 1 ? { addedSentences: added.slice(1) } : {}) }
+        : { ...judged, addedSentences: added };
+    }
+  }
   // A model answer that prints the source's equations in the book's print
   // ("Mg(OH)₂(s) + 2HClO₄(aq) ⟶ …" for the source's "Mg (OH) 2 ( s ) + 2
   // HClO 4 ( a q ) ⟶ …", 4.2) is read with both sides folded as the part
@@ -3926,7 +4361,7 @@ export function conditionalUnwrapped(records) {
 
 export const isLifeSciencesPage = (localPath) => localPath.startsWith('content/life-health-sciences/');
 
-export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose = false, register = 'check' } = {}) {
+export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose = false, register = 'check', deviations = DISCLOSED_DEVIATIONS } = {}) {
   const lock = loadSourceLock(repositoryRoot);
   const map = JSON.parse(readFileSync(path.join(repositoryRoot, 'data/openstax/source-map.json'), 'utf8'));
   const prefix = contentRoot.replace(/\/+$/, '') + '/';
@@ -3947,8 +4382,18 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
   // (ELEMENT_DATA_BOOKS): the rows of the register.
   const differences = [];
   let elementData = null;
-  const deviationFor = (page, exercise) => DISCLOSED_DEVIATIONS.find(
-    (entry) => entry.page === page && entry.exercise === exercise,
+  // Model answers that change a word of the source's answer with no
+  // `solution` deviation to disclose it (`swappedWords`): each is a failure.
+  // `deviations` is the register read (a test reads the corpus with one
+  // entry withheld).
+  const undisclosed = [];
+  const addedCount = { added: 0, describing: 0 };
+  // The entry of the KIND the item needs: one exercise may carry a `key`
+  // entry for its fill-in and a `solution` entry for the self-check under it
+  // (10.6's nickel Check Your Learning, both erratum 3304), and each is in
+  // use by its own item. Without a kind, the first entry for the exercise.
+  const deviationFor = (page, exercise, kind) => deviations.find(
+    (entry) => entry.page === page && entry.exercise === exercise && (!kind || entry.kind === kind),
   );
 
   // A bundle with no checkout directory at all is skipped wholesale (see the
@@ -4005,13 +4450,56 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
       if (keyedVerdict) {
         // A key the book corrects on purpose stays a disclosed correction,
         // with its erratum, however near the source's print it lands.
-        const status = keyedVerdict.status === 'data-differs' && deviationFor(section.localPath, keyedVerdict.exercise.id)?.kind === 'key'
+        // A deviation filed on a lettered exercise (or a Check Your
+        // Learning with parts) covers its parts: 10.6's silver radius,
+        // part (a) of fs-idp79703472#check, is filed on the #check (3297).
+        // A `key` deviation wins over the data-differs reading — a
+        // misrounded key is a correction, never a register row.
+        const unitDeviation = (kind) => deviationFor(section.localPath, keyedVerdict.exercise.id, kind)
+          ?? deviationFor(section.localPath, keyedVerdict.exercise.group, kind);
+        const status = keyedVerdict.status === 'data-differs' && unitDeviation('key')?.kind === 'key'
           ? 'key-differs' : keyedVerdict.status;
         shape.push({
           group: keyedVerdict.exercise.group, unit: keyedVerdict.exercise.id,
           type: item.type, line: item.line, options: item.options, followup: Boolean(item.followup),
         });
         verdicts.push({ page: section.localPath, line: item.line, type: item.type, status });
+        // The page's own sentences in a model answer, listed for the checker
+        // (never a failure): added ones, and a drawing's describing ones.
+        // An added sentence under a filed `solution` entry is that entry's
+        // correction (it is in use, below), and says so.
+        const filedSolution = unitDeviation('solution');
+        for (const sentence of keyedVerdict.addedSentences ?? []) {
+          addedCount.added += 1;
+          notes.push(`${where} added sentence (${filedSolution ? `disclosed, erratum ${filedSolution.erratum}` : 'read it against the source'}): ${sentence}`);
+        }
+        for (const sentence of keyedVerdict.describing ?? []) {
+          addedCount.describing += 1;
+          notes.push(`${where} drawing's describing sentence (beside the source's image): ${sentence}`);
+        }
+        // A model answer that changes the source's words, or adds words
+        // beside its image (`judgeKeyedUnit`'s `swaps`, `added`): a `solution`
+        // deviation for the exercise (or its whole lettered exercise) is the
+        // disclosure, and is in use; a word changed with none is reported.
+        if ((keyedVerdict.swaps || keyedVerdict.edits || keyedVerdict.added || keyedVerdict.addedSentences) && ['confirmed', 'verbatim', 'reworded'].includes(status)) {
+          const deviation = unitDeviation('solution');
+          const solution = deviation?.kind === 'solution' ? deviation : null;
+          if (solution) {
+            used.add(solution);
+            counts.selfcheck.disclosed += 1;
+            notes.push(`${where} model answer corrects the source solution on purpose (erratum ${solution.erratum})`);
+            continue;
+          }
+          if (keyedVerdict.swaps) {
+            const swapped = keyedVerdict.swaps.map(([from, to]) => `"${from}" → "${to}"`).join(', ');
+            undisclosed.push({ page: section.localPath, line: item.line, exercise: keyedVerdict.exercise.id, swaps: keyedVerdict.swaps });
+            failures.push({
+              page: section.localPath,
+              line: item.line,
+              detail: `${keyedVerdict.exercise.id}: the selfcheck's model answer changes a word of the source's answer (${swapped}) with no DISCLOSED_DEVIATIONS line (kind "solution")\n    a correction needs an errata entry and that line; otherwise restore the source's words`,
+            });
+          }
+        }
         if (status === 'table-differs') {
           failures.push({ page: section.localPath, line: item.line, detail: keyedVerdict.detail });
         } else if (status === 'data-differs') {
@@ -4022,8 +4510,8 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
           });
           notes.push(`${where} fillin keys ${item.answer} from this book’s atomic masses; the source prints ${keyedVerdict.sourcePrint}`);
         } else if (['key-differs', 'figures-differ', 'diverges', 'unkeyed-unit'].includes(status)) {
-          const deviation = status === 'unkeyed-unit' ? null : deviationFor(section.localPath, keyedVerdict.exercise.id);
           const wanted = status === 'diverges' ? 'solution' : 'key';
+          const deviation = status === 'unkeyed-unit' ? null : unitDeviation(wanted);
           if (deviation && deviation.kind === wanted) {
             used.add(deviation);
             // A text-in's tally is summed whole into the confirmed count, so
@@ -4048,8 +4536,8 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
       if (item.type === 'multiplechoice') {
         const verdict = judgeMultipleChoice(item, source);
         if (verdict.status === 'key-differs' || verdict.status === 'options-differ') {
-          const deviation = deviationFor(section.localPath, verdict.exercise.id);
           const wanted = verdict.status === 'key-differs' ? 'key' : 'options';
+          const deviation = deviationFor(section.localPath, verdict.exercise.id, wanted);
           if (deviation && deviation.kind === wanted) {
             used.add(deviation);
             // A text-in's tally is summed whole into the confirmed count, so
@@ -4072,7 +4560,7 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
         const verdict = judgeFillin(item, source);
         verdicts.push({ page: section.localPath, line: item.line, type: 'fillin', status: verdict.status });
         if (verdict.status === 'key-differs') {
-          const deviation = deviationFor(section.localPath, verdict.exercise.id);
+          const deviation = deviationFor(section.localPath, verdict.exercise.id, 'key');
           if (deviation && deviation.kind === 'key') {
             used.add(deviation);
             counts.fillin.disclosed += 1;
@@ -4113,7 +4601,7 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
       } else if (item.type === 'sortbins') {
         const verdict = judgeSortbins(item, source);
         if (verdict.status === 'assignment-differs') {
-          const deviation = deviationFor(section.localPath, verdict.table.id);
+          const deviation = deviationFor(section.localPath, verdict.table.id, 'assignment');
           if (deviation && deviation.kind === 'assignment') {
             used.add(deviation);
             counts.sortbins.disclosed += 1;
@@ -4132,7 +4620,7 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
       } else {
         const verdict = judgeSelfcheck(item, source);
         if (verdict.status === 'diverges') {
-          const deviation = deviationFor(section.localPath, verdict.exercise.id);
+          const deviation = deviationFor(section.localPath, verdict.exercise.id, 'solution');
           if (deviation && deviation.kind === 'solution') {
             used.add(deviation);
             counts.selfcheck.disclosed += 1;
@@ -4186,7 +4674,7 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
 
   // Only a page that was actually read against its module can prove an entry
   // stale; a deviation on a skipped bundle's page is neither used nor stale.
-  for (const deviation of DISCLOSED_DEVIATIONS) {
+  for (const deviation of deviations) {
     if (!used.has(deviation) && checked.some((section) => section.localPath === deviation.page)) {
       failures.push({
         page: deviation.page,
@@ -4212,6 +4700,8 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
     // `counts.*.disclosed` can exceed it.
     deviationsExercised: used.size,
     differences,
+    undisclosed,
+    addedCount,
     pagesRead: checked.map((section) => section.localPath),
     sections: checked.length,
     skipped,
@@ -4293,6 +4783,9 @@ if (process.argv[1] && path.resolve(process.argv[1]) === new URL(import.meta.url
   for (const line of skipLines(repositoryRoot, loadSourceLock(repositoryRoot), skipped)) console.error(line);
 
   console.log(summaryLine(result));
+  if (result.addedCount.added || result.addedCount.describing) {
+    console.log(`  · ${result.addedCount.added} added sentence(s) in self-check model answers, ${result.addedCount.describing} drawing describing sentence(s)${verbose ? '' : ' (--verbose lists them)'}`);
+  }
   if (result.differences.length) {
     console.log(`  · ${result.differences.length} fill-in key(s) stand a unit or two from the source’s print by the atomic masses behind them (${DATA_REGISTER})`);
   }

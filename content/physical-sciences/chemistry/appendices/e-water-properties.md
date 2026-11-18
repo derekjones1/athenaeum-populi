@@ -95,8 +95,10 @@ weight: 5
 
 | Transition | Temperature (K) | $\Delta H$ (kJ/mol) |
 |---|---|---|
-| melting | 273.15 | 6.088 |
+| melting | 273.15 | 6.01 |
 | boiling | 373.15 | 40.656 (44.016 at 298 K) |
+
+*Source note:* the source prints 6.088 kJ/mol for the enthalpy of melting. The International Association for the Properties of Water and Steam’s [equation of state for ice](https://iapws.org/technical-guidance/release/Ice-2009) gives about 333.4 J/g at the normal melting point, which is 6.01 kJ/mol, the value [Section 10.3 Phase Transitions](/physical-sciences/chemistry/10-liquids-and-solids/03-phase-transitions/) of this book uses.
 
 | Water Cryoscopic (Freezing Point Depression) and Ebullioscopic (Boiling Point Elevation) Constants |
 |---|
@@ -109,4 +111,4 @@ The plot shows the extent of light absorption versus wavelength for water. Absor
 
 ---
 
-<small>This appendix is adapted from [Chemistry 2e, Appendix E: Water Properties](https://openstax.org/books/chemistry-2e/pages/e-water-properties) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the six tables transcribed as Markdown tables with their titles as bold lines above them, the heading “Transition” added over the first column of the melting and boiling table; symbols, powers of ten, and units with negative exponents typeset as KaTeX math; the footnote that defines p$K_\text{w}$ marked with an asterisk and set below its table; the four graphs are the source’s images, re-encoded for the web, their alt text written from the images.</small>
+<small>This appendix is adapted from [Chemistry 2e, Appendix E: Water Properties](https://openstax.org/books/chemistry-2e/pages/e-water-properties) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the six tables transcribed as Markdown tables with their titles as bold lines above them, the heading “Transition” added over the first column of the melting and boiling table, and its enthalpy of melting corrected from the source’s 6.088 kJ/mol to 6.01 kJ/mol; symbols, powers of ten, and units with negative exponents typeset as KaTeX math; the footnote that defines p$K_\text{w}$ marked with an asterisk and set below its table; the four graphs are the source’s images, re-encoded for the web, their alt text written from the images.</small>

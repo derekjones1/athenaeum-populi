@@ -1521,6 +1521,20 @@ word for word as `run.md` had them.
 
 From `run.md`, "What a chapter cost".
 
+Chapter 10 (six sections, 77 auto-graded items and 47 self-checks; two
+working days in one session, across one usage-limit pause): authors 378k,
+335k, 403k, 354k, 285k, and 420k tokens each across all rounds (10.1 to
+10.6); checkers 198k, 189k, 248k, 258k, 210k, and 239k; claim pass 265k;
+consistency reader 325k; fix checker 272k; six rendered-page readers between
+159k and 207k each; blind solver 199k. Before the wave, the values agent
+220k and the gate agent 332k; the gate agent ran eight more short rounds as
+pages landed (421k in all). After the solve: the lint agent 176k, the sweep
+of chapters 1–9 148k, the undisclosed-changes agent 118k, the added-sentence
+reader 138k. Clerks: 60k (landing), 124k (the facts half of the run facts),
+406k (errata, 80 entries, and 40 decisions entries), and 79k (pins). The
+parent wrote the decisions, the rulings, the fix check's accepted text, the
+ledger records, the playbook lines, and this entry.
+
 Chapter 9, Sections 9.3–9.6 (four sections, 73 auto-graded items and 16
 self-checks; about two hours and a quarter of wall time in one session, of
 which the first thirty-five minutes were spent reading four other sessions'
@@ -5148,8 +5162,154 @@ for the same plane, became an accept member of 8.1's `node`.
 
 ### Next
 
-Chapter 10 (probe its shapes first); block 4 (chapters 9–11) after
-chapter 11.
+Chapter 10 (probe its shapes first): the next entry. Block 4 (chapters
+9–11) after chapter 11.
+
+## Chapter 10 (November 18–19, 2026)
+
+Chapter 10, Liquids and Solids, authored in one run from commit `83152b2c`:
+10.1 Intermolecular Forces (m68761), 10.2 Properties of Liquids (m68764),
+10.3 Phase Transitions (m68768), 10.4 Phase Diagrams (m68769), 10.5 The
+Solid State of Matter (m68770), and 10.6 Lattice Structures in Crystalline
+Solids (m68773): 77 auto-graded items and 47 self-checks, from 53 keyed
+exercises and 19 Check Your Learning items. Errata 3288–3367. The session
+opened with Derek's answers to Knowledge Check 3's two open items (both in
+that entry, above, and committed as `83152b2c` before the run).
+
+### Before the wave
+
+- **Prep.** 82 images vendored; PDF indexes 477–546, answer key
+  1158–1162; the automatic gate probe read 110 units with no finding. The
+  parent's printed-exercise offsets for 10.5 and 10.6 were one too high
+  (added in its head); the run-facts Clerk's element count corrected them.
+- **Every number run, by an Author-kind agent, before the decisions**
+  (`ch10-values.md`, 89 rows): 59 agreed with the source; the rest were the
+  source's arithmetic, a rounding route, a figure count, or this book's
+  data. It set each constant beside its appendix and found **Appendix E
+  printing 6.088 kJ/mol for water's enthalpy of melting** — a misprint the
+  live OpenStax page still carries. The appendix prints 6.01 with a Source
+  note citing IAPWS (erratum 3299; a `deviations` entry in
+  `verify-source-tables.mjs`).
+- **The hand gate probe** built seventeen shapes as the pages would carry
+  them. The gates were taught: an answer that is one lettered part and its
+  own words ("(e) molecular crystals") as one choice; "X = ionic; Y =
+  metallic; Z = covalent network" by the substance a closing names; an
+  option written as its symbol; a reading's restatement in another unit
+  ("(0.4 atm)"); a percent beside an oxidation state; a worked answer's
+  intermediate values refused as the key.
+- **46 decisions**, eleven of them corrections filed with their
+  `DISCLOSED_DEVIATIONS` entries before the wave (3288–3298).
+
+### The wave and the readings
+
+Six authors; six checkers (no wrong key on any page; two to five defects
+each, mostly alts against their images and footers against the page); the
+claim pass (17 findings and one unconfirmed); the consistency reader (10
+findings, 6 gaps in the playbook); six rendered-page readers over 97 tiles
+(no wrong key or number); the fix check (2 changes, 8 judgment calls, all
+accepted). A usage limit killed the claim pass, the consistency reader, and
+one rendered-page reader together; all three resumed by `SendMessage`.
+
+### Rulings
+
+- **Corrected keys** (each with a Source note and an entry): 10.2's
+  capillary Check Your Learning 0.35 mm (source 0.36, scaled from a rounded
+  height); 10.3's acetone 30.3 kPa (30.1, from 298 K) and printed 51's
+  1127 kJ (1125, which needs an enthalpy of vaporization printed nowhere);
+  10.6's printed 103 at 20.22° (20.2° from four-figure data), silver 145 pm
+  (144, truncated), the potassium ion 1.32 Å (1.33, from another chloride
+  radius than the stem's), and — **found by the blind solver** — the
+  nickel Check Your Learning at 2.227 g/cm³ (2.23: the 8.90 in its stem is
+  the value compared against, not a datum).
+- **Corrected model answers**: 10.2's "the less viscous the liquid" for a
+  colder liquid; 10.1's n-butane held by "dipole-dipole interactions from
+  C–H bonds"; 10.4's water at 40 °C (55 torr by Appendix E, not 75), its
+  two Check Your Learning answers (water: between −10 °C and 0 °C and about
+  81 °C, from the page's own data and Appendix E; carbon dioxide: −35 °C
+  and −84 °C, the figure's readings, for the source's −10 and −60), and the
+  second triple point of carbon, which the source's drawing does not
+  circle; 10.6's thallium iodide answer.
+- **Water's data are Appendix E's** in 10.3 (4.184, 2.093, 1.864 J/g °C;
+  40.656 kJ/mol), with 6.01 kJ/mol for melting: the heating-curve example
+  totals 415 kJ (source 416). Kelvin is carried with 273.15: benzene in
+  Denver 346.8 K, 73.7 °C. Polonium's density 9.15 g/cm³ (9.16).
+- **Claims corrected on the page**: hydrogen chloride "a liquid" at 150 K
+  (170 K); the hydride sentence against its own figure; London's 1928
+  (1930); Autumn's 2000 (2002); "spiders and some other insects"; ethanol's
+  78.5 °C beside 78.4; mercury's surface tension with two digits exchanged;
+  ice's 0.20 kPa at −10 °C (0.26, IAPWS); carbon dioxide's "melting point"
+  of −78 °C; "the transition metals melt above 1000 °C"; "as shown in the
+  figure below" for ice and sucrose; lithium and sodium among the
+  hexagonal closest-packed metals; the Bragg equation credited to the
+  father alone; the CaF₂ caption's "red" ions; "a later discussion of
+  lattice energies".
+- **Stem data kept as printed with a Source note** (Derek, November 17):
+  ammonia's 4.8 kJ/mol, liquid carbon dioxide's 9.8 kJ/mol, the alcohol
+  vapor pressures, the cylinder at 65 atm and 20 °C.
+- **Kept as printed, no note**: chlorine's 238 K, isopentane's 27 °C,
+  fluorine's 72 pm, SO₂'s 7800 kPa, the carbon dioxide figure's critical
+  point drawn at 25 °C, the Bragg example's 0.154 nm.
+- **Forms** (all now in the playbook): an appendix a stem does not name is
+  a linked parenthesis in the stem; a chapter reference resolves to its
+  section; a group's bond is an en dash; a choice and the self-check under
+  it share the stem and one hint; a power of ten a `textin` cannot print
+  is written out in digits.
+
+### The blind solve
+
+76 of 77 agreed, none disagreed, one flagged: carbon at 5000 K and 10⁸ Pa,
+"liquid" with "gas" as also defensible on an unlabeled diagram — the key
+stands (the point is above the liquid–gas line by three readings). The
+solver's count of four figures re-keyed the nickel density. It also
+reported that printed 41's packet binds to the heating curve, the figure
+nearest above it, not the vapor-pressure graph its stem names (the same
+binding 9.2's syringe items have; on the open list).
+
+### What the gates learned
+
+- `verify-source-keys` reads **a changed word or number, a rewritten run,
+  or a sentence added beside a drawing** in a model answer: undisclosed, it
+  fails; disclosed, its entry is in use. Seven such corrections on
+  chapters 2–8 had errata and footer clauses but no entry; each has one.
+  An entry is found by the KIND an item needs, so a fill-in and the
+  self-check under it can each carry one.
+- `--verbose` lists **every sentence a model answer adds**. A reader went
+  through the 32 it first printed: 14 real, true, and disclosed; 18 false
+  positives, which the reading no longer prints.
+- **Four lints went on**, their hits fixed in the run: a group's bond; a
+  choice and its self-check (18 pairs of chapters 1–9: 12 stems regained
+  "Explain…", every pair one hint; 5.3's two self-checks lost an "Explain."
+  the source does not print); a body link to a chapter landing; the fixed
+  "figures from the data" note. With the geometry-twin lint of the
+  morning, five.
+
+### What the process got wrong
+
+- **The parent ruled a Source-note opening onto three pages without
+  counting the book**: "the answer graded for this exercise is not the one
+  the source prints", from chapter 9's use, where the book had "graded
+  here" 28 times to 4 and the playbook gave it. All nine were put back.
+- **The parent told a Clerk "16 corrected"** for the claim-pass ledger; the
+  Clerk counted 12 and wrote what it counted.
+- The first run of the final tests failed on one character: the dots of a
+  hydrogen bond (U+22EF), which Inter does not draw; it is a recorded
+  fall-through.
+- Port 1315 was held by a server this session did not start; the tiles
+  were captured from 1325.
+
+### Outside sources opened
+
+NIST Chemistry WebBook (hydrogen chloride, ammonia, carbon dioxide and its
+saturation table, ethanol, methanol, 1-propanol, zinc); IAPWS R14-08
+(sublimation pressure of ice) and R10-06 (ice Ih); Autumn et al., PNAS 99,
+12252 (2002); NobelPrize.org on W. L. Bragg; the surface-tension table from
+Adamson and Gast; WebElements and Britannica on the alkali metals' crystal
+structure. The claim pass saved each under the run's `fetch/`.
+
+### Next
+
+Chapter 11, Solutions and Colloids; Knowledge Check block 4 (chapters 9–11)
+after it.
 
 ## The `\dfrac` watch list
 
@@ -5210,3 +5370,12 @@ the ban, with its page and line. The ban is reviewed from this list.
   $V_\text{m}$ at about 3 px (the rendered-page reader, with a crop). 9.3,
   two inline fractions with subscripts (lines ~201 and ~398): small, legible
   (the checker). The authors of all four pages reported none.
+- Chapter 10 reported three places. 10.3, Key equations, the two-point
+  Clausius-Clapeyron line (line ~267): the inline fractions set their
+  subscripts at script size, where the body's display copy is full size
+  (the checker and the author). 10.2, the inline $h = \frac{2T\cos\theta}{r\rho g}$
+  in the example's Solution line and in Key equations: small, legible, and
+  set the same way in print (the rendered-page reader). 10.6,
+  `\ce{Al_{2/3}O}`: the 2/3 rendered as a stacked fraction about 5 px tall;
+  resolved by writing `$\mathrm{Al}_{2/3}\mathrm{O}$`, which sets the slash
+  (the rendered-page reader). 10.1, 10.4, and 10.5 reported none.

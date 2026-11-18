@@ -137,7 +137,7 @@ gain protons
 lose electrons
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Does a cation gain protons to form a positive charge or does it lose electrons?" hint="Compare what happens to the nucleus with what happens to the electrons when an atom forms an ion." >}}
+{{< selfcheck question="Does a cation gain protons to form a positive charge or does it lose electrons?" hint="Ask which part of an atom changes when it takes part in a chemical reaction." >}}
 The protons in the nucleus do not change during normal chemical reactions. Only the outer electrons move. Positive charges form when electrons are lost.
 ===CHECKS===
 the protons in the nucleus do not change during normal chemical reactions

@@ -1870,3 +1870,24 @@ test('a stray period after an answer label, and a closing shared by a list that 
   assert.equal(sequentialParts('What is the configuration of: (a) Na + (b) Al 2+. Explain.').shared, undefined);
   assert.equal(sequentialParts('Find the value for (a) n = 2 (b) n = 5. Explain.').shared, undefined);
 });
+
+test('chapter 10: an answer that is one part\'s letter and words is a closed set; an ordering\'s part re-listed is still its part', async () => {
+  const { closedSet, relistedPart } = await import('./keyed-units.mjs');
+  // 10.5: "(e) molecular crystals" under a lead-in that asks no "which of the following".
+  const crystals = closedSet('At very low temperatures oxygen, O 2 , freezes and forms a crystalline solid. Which best describes these crystals? (a) ionic (b) covalent network (c) metallic (d) amorphous (e) molecular crystals', '(e) molecular crystals');
+  assert.equal(crystals?.chosen, 'e');
+  assert.equal(closedSet('Substance A is shiny, conducts electricity well, and melts at 975 °C. Substance A is likely a(n): (a) ionic solid (b) metallic solid (c) molecular solid (d) covalent network solid', '(b) metallic solid')?.chosen, 'b');
+  assert.equal(closedSet('Which best describes these crystals? (a) ionic (b) covalent network', '(b) ionic'), null, 'a letter beside ANOTHER part\'s words is no choice');
+  assert.equal(closedSet('Which best describes these crystals? (a) ionic (b) covalent network', '(a) ionic, because the ions are held by charge'), null, 'more than the part\'s own words');
+  // 10.1: an ordering stem never lists its members in the key's order, so the page re-lists them.
+  assert.equal(relistedPart('CH 4 , C 2 H 6 , C 3 H 8', 'Arrange the following set of compounds in order of increasing boiling point temperature: C₂H₆, C₃H₈, CH₄. Type the symbols in the order you rank them, separated by <.'), true);
+  assert.equal(relistedPart('CH 4 , C 2 H 6 , C 3 H 8', 'Order the following hydrocarbons from lowest to highest boiling point: C₂H₆, C₃H₈, and C₄H₁₀.'), false, 'another member');
+  assert.equal(relistedPart('CH 4 , C 2 H 6 , C 3 H 8', 'Arrange: C₂H₆, CH₄.'), false, 'a member missing');
+  const xml = cnxml(exercises(exercise('o1', ['Arrange each of the following sets of compounds in order of increasing boiling point temperature:', '(a) HCl, H 2 O, SiH 4', '(b) CH 4 , C 2 H 6 , C 3 H 8'], '(a) SiH _4 &lt; HCl &lt; H _2 O (b) CH _4 &lt; C _2 H _6 &lt; C _3 H _8'))
+    + example('o2', 'Order the following hydrocarbons from lowest to highest boiling point: C 2 H 6 , C 3 H 8 , and C 4 H 10 .', 'C _2 H _6 &lt; C _3 H _8 &lt; C _4 H _10 . All of these compounds are nonpolar.'));
+  const units = keyedUnits(xml);
+  const asked = 'Arrange the following set of compounds in order of increasing boiling point temperature: C₂H₆, C₃H₈, CH₄. Type the symbols in the order you rank them, separated by <.';
+  assert.equal(unitFor(asked, units, { type: 'textin' })?.id, 'o1(b)', 'the re-listed part, not the Check Your Learning that shares two members');
+  assert.equal(judgeKeyedUnit({ type: 'textin', question: asked, answer: 'CH₄ < C₂H₆ < C₃H₈', form: 'ordering' }, units)?.status, 'confirmed');
+  assert.equal(judgeKeyedUnit({ type: 'textin', question: asked, answer: 'C₂H₆ < C₃H₈ < CH₄', form: 'ordering' }, units)?.status, 'key-differs', 'the order as the stem lists it');
+});

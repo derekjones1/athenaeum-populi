@@ -100,7 +100,7 @@ $$\begin{aligned} u_\text{rms} &= \sqrt{\frac{3(8.314\ \text{J/mol K})(303.15\ \
   hint="Use the root-mean-square speed equation with the temperature on the kelvin scale, $R$ in J/(mol K), and the molar mass in kilograms per mole."
 >}}
 
-*Source note:* the answer graded for this exercise is not the one the source prints; the source’s value does not follow from the stem’s temperature by the conversion this book uses.
+*Source note:* the answer graded here is not the one the source prints; the source’s value does not follow from the stem’s temperature by the conversion this book uses.
 
 If the temperature of a gas increases, its $\text{KE}_\text{avg}$ increases, more molecules have higher speeds and fewer molecules have lower speeds, and the distribution shifts toward higher speeds overall, that is, to the right. If temperature decreases, $\text{KE}_\text{avg}$ decreases, more molecules have lower speeds and fewer molecules have higher speeds, and the distribution shifts toward lower speeds overall, that is, to the left. This behavior is illustrated for nitrogen gas in the figure below.
 

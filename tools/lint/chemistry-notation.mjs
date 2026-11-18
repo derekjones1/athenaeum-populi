@@ -6,6 +6,7 @@
 import { blankPreservingOffsets, mathSpans, shortcodes } from '../lib/content.mjs';
 import { proseOnly } from './chemistry-readings.mjs';
 import { isWordRun, readWords } from '../lib/rubric-run.mjs';
+import { loadElements } from '../lib/elements.mjs';
 
 /** The page with front matter and code blanked (offsets kept). */
 const body = (text) => String(text)
@@ -140,6 +141,35 @@ export function minusAsBond(text) {
   const prose = proseOnly(body(text));
   return [...prose.matchAll(/(?<=[A-Z][a-z]?[₀-₉]*)−(?=[A-Z]|[=≡])|(?<=[=≡])−(?=[A-Z])/g)]
     .map((match) => ({ index: match.index, written: prose.slice(Math.max(0, match.index - 3), match.index + 4) }));
+}
+
+let elementSymbols = null;
+const isElementSymbol = (symbol) => {
+  elementSymbols ??= loadElements().bySymbol;
+  return elementSymbols.has(symbol);
+};
+
+/**
+ * d2. A group's bond written with the minus sign U+2212 in prose (chapter 10
+ * readings, F3, November 18, 2026): the minus directly before an element
+ * symbol or a group formula with nothing bonded on its left — "−OH groups",
+ * "−NH₂", "−COOH", "−CH₃". The bond is an en dash, "–OH"; 10.2 and 10.3
+ * copied the source's U+2212 where 10.1 wrote the dash. The symbol must be
+ * an element's and not run on into a lower-case letter ("−In" of a word is
+ * no indium). Not a hit: a charge (O²⁻ is a superscript), a signed number
+ * or temperature ("−1", "−85 °C"), math, and a bond between two symbols,
+ * which `minusAsBond` reads.
+ */
+export function minusAsGroupBond(text) {
+  const prose = proseOnly(body(text));
+  const between = new Set(minusAsBond(text).map((hit) => hit.index));
+  const hits = [];
+  for (const match of prose.matchAll(/−(?=([A-Z][a-z]?)(?![a-z]))/g)) {
+    if (between.has(match.index) || !isElementSymbol(match[1])) continue;
+    const group = /^−[A-Z][A-Za-z₀-₉]*/.exec(prose.slice(match.index))[0];
+    hits.push({ index: match.index, written: group, dash: group.replace('−', '–') });
+  }
+  return hits;
 }
 
 /**

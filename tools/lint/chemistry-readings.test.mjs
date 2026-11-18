@@ -119,3 +119,74 @@ test('a configuration in a figure description holds its element\'s electrons (6.
   // A configuration no element is attached to is not judged.
   assert.deepEqual(wrong('the notation 1s¹, and the configuration 1s²2s²2p⁶3s¹ with its last part mauve'), []);
 });
+
+// ---- chapter 10's consistency readings ----------------------------------------
+import { chapterLandingLinks, choiceSelfcheckStems, DATA_FIGURES_NOTE, dataFiguresNoteVariants, hintAppendixUnlinked, sharedStemPair } from './chemistry-readings.mjs';
+import { lintLeaks } from './lints-leaks.mjs';
+
+const CH10 = 'content/physical-sciences/chemistry/10-liquids-and-solids/04-phase-diagrams.md';
+const LAUNDRY = 'If a severe storm results in the loss of electricity, it may be necessary to use a clothesline to dry laundry. If it does not snow, will they dry anyway?';
+const mcItem = (question, hint, options = ['yes', 'no']) => `{{< multiplechoice question="${question}" answer="${options[0]}" hint="${hint}" >}}\n${options.join('\n')}\n{{< /multiplechoice >}}`;
+const scItem = (question, hint) => `{{< selfcheck question="${question}" hint="${hint}" >}}\nModel.\n===CHECKS===\none\n{{< /selfcheck >}}`;
+
+test('a choice and the self-check after it under one stem share every sentence and the hint (F4, 10.4\'s frozen laundry)', () => {
+  const H = 'Ask which phase changes the phase diagram of water allows below 0 °C.';
+  const pair = (mcq, mch, scq, sch, options) => choiceSelfcheckStems(`${mcItem(mcq, mch, options)}\n\n${scItem(scq, sch)}\n`);
+  // The incident: the choice dropped "Explain your answer." and carried its own hint.
+  const [hit] = pair(LAUNDRY, 'Reread the paragraph on the solid-vapor curve.', `${LAUNDRY} Explain your answer.`, H);
+  assert.deepEqual(hit.dropped, ['Explain your answer.']);
+  assert.equal(hit.hintDiffers, true);
+  // The fix, and a choice that adds its own closing after the shared stem (4.2's "Which reactant is the oxidant?").
+  assert.deepEqual(pair(`${LAUNDRY} Explain your answer.`, H, `${LAUNDRY} Explain your answer.`, H), []);
+  assert.deepEqual(pair('Is this a redox reaction? Identify the oxidant. Which reactant is the oxidant?', H, 'Is this a redox reaction? Identify the oxidant.', H), []);
+  assert.equal(pair('Is this a redox reaction? Which reactant is the oxidant?', 'Other.', 'Is this a redox reaction?', H).length, 1, 'a differing hint under an added closing');
+  // "Explain your reasoning." in the middle (1.1), and the stem's lettered list its options carry (9.6).
+  assert.deepEqual(pair('Identify the statement. The pressure rises.', H, 'Identify the statement. Explain your reasoning. The pressure rises.', H)[0].dropped, ['Explain your reasoning.']);
+  const [gas] = pair('Under which conditions is a gas ideal? Which set gives ideal behavior?', H, 'Under which conditions is a gas ideal? Explain. (a) high pressure; (b) low pressure', H, ['high pressure', 'low pressure']);
+  assert.deepEqual(gas.dropped, ['Explain.']);
+  // Not one stem: two lettered parts of one lead-in (7.6), two questions after one opening (9.6), unrelated neighbours.
+  assert.deepEqual(pair('Does the following molecule or ion have a dipole moment? XeF₂.', H, 'Does the following molecule or ion have a dipole moment? PH₂⁻.', 'Other.'), []);
+  assert.deepEqual(pair('In the example above, a flask holds CO₂. Which equation gives the higher pressure?', H, 'In the example above, a flask holds CO₂. Why are the pressures not very different, and why do they differ at all?', 'Other.'), []);
+  assert.deepEqual(pair('Which property does the statement describe?', H, 'Why would you not sit around a burning match?', 'Other.'), []);
+  // Only a self-check DIRECTLY after the choice is its pair.
+  const between = `${mcItem(LAUNDRY, 'Other.')}\n\n{{< textin question="Name it." answer="x" hint="h" >}}\n\n${scItem(`${LAUNDRY} Explain your answer.`, H)}\n`;
+  assert.deepEqual(choiceSelfcheckStems(between), []);
+  assert.equal(sharedStemPair({ question: 'A. B?', hint: H }, { question: 'C. D?', hint: H }), null);
+  // The lint, on Chemistry only.
+  const page = `Body.\n\n${mcItem(LAUNDRY, 'Other.')}\n\n${scItem(`${LAUNDRY} Explain your answer.`, H)}\n`;
+  const errors = lintLeaks(page, CH10).errors;
+  assert.ok(errors.some((error) => /the choice's question drops "Explain your answer\."/.test(error)));
+  assert.ok(errors.some((error) => /its hint and the hint of the self-check after it, under the same stem, differ/.test(error)));
+  assert.ok(!lintLeaks(page, 'content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md').errors.some((error) => /same stem/.test(error)));
+});
+
+test('a section page links a chapter reference to the section meant, not the chapter landing (F2, 10.1)', () => {
+  const incident = 'Applying the skills acquired in the [chapter on chemical bonding and molecular geometry](/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/), all of these compounds';
+  assert.deepEqual(chapterLandingLinks(incident).map((hit) => hit.target), ['/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/']);
+  assert.deepEqual(chapterLandingLinks('the chapter on chemical bonding and molecular geometry ([Section 7.6 Molecular Structure and Polarity](/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/06-molecular-structure-and-polarity/))'), [], 'the section meant');
+  assert.deepEqual(chapterLandingLinks('[Appendix E](/physical-sciences/chemistry/appendices/e-water-properties/) and [OpenStax](https://openstax.org/books/chemistry-2e/pages/10-1)'), []);
+  assert.deepEqual(chapterLandingLinks('<small>Changes: [Chapter 7](/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/)</small>'), [], 'the footer');
+  assert.deepEqual(chapterLandingLinks('the C₆₀ molecule (shown in the opening figure of [Chapter 7 Chemical Bonding and Molecular Geometry](/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/))'), [], '7.3: the opening figure is on the landing');
+  assert.deepEqual(chapterLandingLinks('as in the [photograph of liquid oxygen held between the poles of a magnet](/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/) that opens this chapter'), [], '8.4');
+  // The lint reads section pages only: a landing's own links are its business.
+  assert.ok(lintLeaks(`${incident}.\n`, 'content/physical-sciences/chemistry/10-liquids-and-solids/01-intermolecular-forces.md').errors.some((error) => /goes to a chapter's landing/.test(error)));
+  assert.ok(!lintLeaks(`${incident}.\n`, 'content/physical-sciences/chemistry/10-liquids-and-solids/_index.md').errors.some((error) => /goes to a chapter's landing/.test(error)));
+});
+
+test('the "figures from the data" Source note is chapter 9\'s one sentence (F6, 10.6)', () => {
+  assert.deepEqual(dataFiguresNoteVariants(`Text.\n\n${DATA_FIGURES_NOTE}\n`), []);
+  const variant = '*Source note:* the answer graded here is written to the significant figures its data give.';
+  assert.deepEqual(dataFiguresNoteVariants(`Text.\n\n${variant}\n`).map((hit) => hit.written), [variant]);
+  assert.equal(dataFiguresNoteVariants(`${DATA_FIGURES_NOTE} The source rounds early.\n`).length, 1, 'one sentence, nothing after it');
+  assert.equal(dataFiguresNoteVariants('*(Source note: the answer is written to the significant figures its data give.)*').length, 1, 'the parenthesis form');
+  assert.deepEqual(dataFiguresNoteVariants('<small>Changes: the Check Your Learning keyed to the significant figures its data give, with a Source note</small>'), [], 'the footer');
+  assert.deepEqual(dataFiguresNoteVariants('*Source note:* the answer graded for this exercise is not the one the source prints.'), [], 'another note');
+  assert.ok(lintLeaks(`Text.\n\n${variant}\n`, CH10).errors.some((error) => /word for word/.test(error)));
+});
+
+test('an item whose hint names an appendix its question does not link is measured (F1)', () => {
+  const t = (question, hint) => `{{< fillin question="${question}" answer="1" hint="${hint}" >}}`;
+  assert.deepEqual(hintAppendixUnlinked(t('What is the vapor pressure of water at 40 °C?', 'Find the value in Appendix E.')).map((hit) => hit.appendix), ['E']);
+  assert.deepEqual(hintAppendixUnlinked(t('(The properties of water are in [Appendix E](/physical-sciences/chemistry/appendices/e-water-properties/).)', 'Find the value in Appendix E.')), []);
+  assert.deepEqual(hintAppendixUnlinked(t('Use [Appendix D](/physical-sciences/chemistry/appendices/d-fundamental-physical-constants/).', 'Appendix E and Appendix D.'))[0].linksOther, ['D']);
+});

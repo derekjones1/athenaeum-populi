@@ -397,7 +397,7 @@ is blue
   hint="Use Planck’s formula in terms of wavelength."
 >}}
 
-*Source note:* the answer graded for this exercise is not the one the source prints; the source’s value is worked from a rounded intermediate result, not from the stem’s data carried unrounded.
+*Source note:* the answer graded here is not the one the source prints; the source’s value is worked from a rounded intermediate result, not from the stem’s data carried unrounded.
 
 {{< fillin
   question="One of the radiographic devices used in a dentist’s office emits an X-ray of wavelength $2.090 \times 10^{-11}$ m. What is the energy, in joules, and frequency of this X-ray? Enter the frequency in $\text{s}^{-1}$."

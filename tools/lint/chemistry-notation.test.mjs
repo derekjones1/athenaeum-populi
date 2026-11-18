@@ -5,7 +5,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  straightApostrophes, bareGreekMath, bareProportionality, bareSigmaPi, crowdedFractionRows, ungroupedNumberBeforeUnit, britishSpellingAndStraightApostrophes, italicOrbitalLetters, minusAsBond, overlappingRubricClauses, plainAnswerDisplays,
+  straightApostrophes, bareGreekMath, bareProportionality, bareSigmaPi, crowdedFractionRows, ungroupedNumberBeforeUnit, britishSpellingAndStraightApostrophes, italicOrbitalLetters, minusAsBond, minusAsGroupBond, overlappingRubricClauses, plainAnswerDisplays,
 } from './chemistry-notation.mjs';
 import { lintLeaks } from './lints-leaks.mjs';
 
@@ -136,4 +136,16 @@ test('the lints are errors in the Chemistry book only', () => {
   }
   const elsewhere = lintLeaks(page, 'content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md').errors;
   assert.ok(!elsewhere.some((error) => /orbital letter italic|bare σ|bare π|minus sign U\+2212|American spelling|has no math|bare ∝|stands before a unit|each hold a fraction/.test(error)));
+});
+
+test('d2. a group\'s bond drawn with the minus sign (chapter 10, F3: 10.2\'s "−OH groups")', () => {
+  assert.deepEqual(written(minusAsGroupBond('cellulose molecules contain many −OH groups; water bonds to these −OH groups')), ['−OH', '−OH']);
+  assert.deepEqual(written(minusAsGroupBond('the −NH₂ group, the −COOH group, a −CH₃ group, and −Cl')), ['−NH₂', '−COOH', '−CH₃', '−Cl']);
+  assert.equal(minusAsGroupBond('the −NH₂ group')[0].dash, '–NH₂');
+  assert.deepEqual(minusAsGroupBond('the –OH groups (en dash); O²⁻ and Cl⁻; a charge of −1; −85 °C; ΔH = −92 kJ; $-OH$; −Infinity'), [], 'en dash, charges, signed numbers, math, a word');
+  assert.deepEqual(minusAsGroupBond('D(HCl) = ΔH° −(−92.307 kJ) and −ΔH and −R/T'), [], 'a minus before a bracket, a Greek letter, or no element');
+  assert.deepEqual(minusAsGroupBond('acetylene, H−C≡C−H'), [], 'between two symbols is minusAsBond\'s, read once');
+  const errors = lintLeaks('Body: many −OH groups.\n', CHEM).errors;
+  assert.ok(errors.some((error) => /"−OH" draws a group's bond with the minus sign U\+2212 .* "–OH"/.test(error)));
+  assert.ok(!lintLeaks('Body: many −OH groups.\n', 'content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md').errors.some((error) => /group's bond/.test(error)), 'Chemistry only');
 });

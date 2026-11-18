@@ -30,6 +30,7 @@ export const FALLS_THROUGH = new Map([
   ['\u21C4', 'reversible-reaction arrows ⇄ (A&P 2.3)'],
   ['\u2261', 'the triple bond \u2261 of a bond written in prose or a table cell, C\u2261C (Chemistry 7.5)'],
   ['\u2219', 'bullet operator ∙ in "liter∙atmosphere" (Chemistry Appendix C)'],
+  ['\u22EF', 'the dots of a hydrogen bond written in prose, HF\u22EFHF (Chemistry 10.1); Inter 4.1 has no U+22EF'],
   ['\u221D', '"∝" as the source artwork prints it, quoted in figure descriptions (Biology 3.4, 9.1)'],
   ['\u2A2F', 'the source\'s "10⨯" magnification glyph, quoted (Microbiology 2.1, 2.3, 17.1)'],
   ['\u1D42', 'modifier capital W ᵂ in the allele Xᵂ (Biology 12.2)'],

@@ -362,7 +362,7 @@ MgF₂
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="The lattice energy of LiF is 1023 kJ/mol, and the Li–F distance is 201 pm. MgO crystallizes in the same structure as LiF but with a Mg–O distance of 205 pm. Which of the following values most closely approximates the lattice energy of MgO: 256 kJ/mol, 512 kJ/mol, 1023 kJ/mol, 2046 kJ/mol, or 4008 kJ/mol?"
+  question="The lattice energy of LiF is 1023 kJ/mol, and the Li–F distance is 201 pm. MgO crystallizes in the same structure as LiF but with a Mg–O distance of 205 pm. Which of the following values most closely approximates the lattice energy of MgO: 256 kJ/mol, 512 kJ/mol, 1023 kJ/mol, 2046 kJ/mol, or 4008 kJ/mol? Explain your choice."
   answer="4008 kJ/mol"
   hint="Compare the charges of the ions and the interionic distances of the two compounds, using the equation for lattice energy."
 >}}
@@ -373,7 +373,7 @@ MgF₂
 4008 kJ/mol
 {{< /multiplechoice >}}
 
-{{< selfcheck question="The lattice energy of LiF is 1023 kJ/mol, and the Li–F distance is 201 pm. MgO crystallizes in the same structure as LiF but with a Mg–O distance of 205 pm. Which of the following values most closely approximates the lattice energy of MgO: 256 kJ/mol, 512 kJ/mol, 1023 kJ/mol, 2046 kJ/mol, or 4008 kJ/mol? Explain your choice." hint="Explain with the equation for lattice energy." >}}
+{{< selfcheck question="The lattice energy of LiF is 1023 kJ/mol, and the Li–F distance is 201 pm. MgO crystallizes in the same structure as LiF but with a Mg–O distance of 205 pm. Which of the following values most closely approximates the lattice energy of MgO: 256 kJ/mol, 512 kJ/mol, 1023 kJ/mol, 2046 kJ/mol, or 4008 kJ/mol? Explain your choice." hint="Compare the charges of the ions and the interionic distances of the two compounds, using the equation for lattice energy." >}}
 4008 kJ/mol; both ions in MgO have twice the charge of the ions in LiF; the bond length is very similar and both have the same structure; a quadrupling of the energy is expected based on the equation for lattice energy.
 ===CHECKS===
 both ions in MgO have twice the charge of the ions in LiF

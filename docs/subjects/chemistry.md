@@ -151,6 +151,13 @@ these differences:
    to Appendix G linked to its page in this book". A hint may name an
    appendix or a section ("Find the standard enthalpies of formation in
    Appendix G.") but takes no link: a hint is plain text.
+   **A reference to a whole chapter is resolved to the section meant**
+   *(chapter 10)*: the source's words stay and the section follows in
+   parentheses as a link — "the chapter on thermochemistry
+   ([Section 5.3 Enthalpy](…))" — never a link to the chapter's landing
+   page, which holds no content (lint; a link that names the chapter's
+   opening figure, which is only on the landing, is the exception). The
+   run that writes a chapter links what earlier pages say of it.
 
    **Where the content asks the learner to consult what an appendix
    holds, the words are linked to that appendix even where the source
@@ -164,6 +171,14 @@ these differences:
    constant the page's own tables lack (C, D) — links the phrase that
    names the thing, in the source's words and nothing added:
    `Using the [periodic table](/physical-sciences/chemistry/appendices/a-the-periodic-table/), predict…`.
+   **Where the stem has no words that name the thing, it takes one linked
+   parenthesis** after the source's stem and before the closing sentence,
+   the form every chapter from 5 on uses: "(Standard enthalpies of
+   formation are in [Appendix G](…).)", "(The properties of water are in
+   [Appendix E](…).)". The hint may name the appendix in plain words; a
+   hint alone is not where the pointer lives (10.3 and 10.4 first named
+   Appendix E only in hints; the consistency reader set them beside 10.6)
+   *(chapter 10)*.
    **The periodic table is on every page of the book, so no sentence is
    added for it** *(Derek, November 11, 2026)*: the page rail carries a
    "Periodic table" control (the book's `reference` entry in its
@@ -568,7 +583,9 @@ selfchecks, source defects, the footer — and each is stated once.
   key Mg < Ca < Rb < Cs; the rendered-page reader found it). The members
   are re-listed alphabetically by symbol (by element name where that
   reproduces the key), with a footer clause (lint, `orderingStemAnswers`)
-  *(chapter 6)*.
+  *(chapter 6)*. Where both alphabetical orders give the key or its
+  reverse — a homologous series, the halogens (10.1: F₂, Cl₂, Br₂) — the
+  middle member is moved to the front, which is neither *(chapter 10)*.
 - **The closing sentence of a name or symbol item says whose**: "Enter the
   element’s name." and "Enter the element’s symbol." for an element;
   "Enter the ion’s symbol.", "Enter the ion’s name.", "Enter the symbol of
@@ -1063,6 +1080,14 @@ after the rule was written, so the line is drawn by pairs:
   it ("the formula prints no state") *(Section 2.7: a parent decision
   allowed that sentence, and the checker and the consistency reader both
   read it as the answer)*.
+- **A choice and the self-check under it are one question** *(chapter
+  10)*: the `multiplechoice` keeps the stem whole, its "Explain your
+  answer." included — it is what tells the learner a reason is coming —
+  and the two items carry ONE hint, word for word (lint: a sentence of the
+  self-check's question missing from the choice, or two hints). A formula
+  or number field before its self-check may drop the closing "Explain your
+  answer." with a footer clause, since its own closing sentence follows.
+  Eighteen pairs of chapters 1–9 were swept to this.
 - Several items may share one hint — and **a shared hint is read, key
   covered, against every item it serves**, the module's own named
   exceptions first *(chapter 2: "ask whether a metal is combined with
@@ -1270,7 +1295,17 @@ after the rule was written, so the line is drawn by pairs:
   product truncated rather than rounded" told the learner to round up).
   Form: "*Source note:* the answer graded here is not the one the source
   prints for the smallest circumference; the source's value does not follow
-  from the stem's data." The erratum holds the numbers.
+  from the stem's data." The erratum holds the numbers. This is the ONE
+  opening for a corrected key ("the answer graded here is not the one the
+  source prints"); "for this exercise" opens only the fixed sentences this
+  section gives word for word — a key worked with this book's constant, a
+  key widened, and a key written to its data's figures, which is always
+  "*Source note:* the answer graded for this exercise is written to the
+  number of significant figures its data give, which is not the number
+  the source prints." (lint), whether the source prints more figures or
+  fewer *(chapter 10: the parent ruled the other opening onto three pages
+  from chapter 9's sentence without counting the book — 28 notes to 4 —
+  and put them back)*.
 - **A stem that prints one quantity twice, in two units that disagree**
   (9.1: "29.97 in. Hg, 1013.9 mbar"), keeps its words; the closing
   sentence names the reading to convert ("Enter the pressure in
@@ -1283,7 +1318,12 @@ after the rule was written, so the line is drawn by pairs:
   propane's density printed in g/L; dry air's density at 20 °C printed as
   the value near 15 °C). A Source note after the item cites a source the
   parent has opened and closes "The answer graded here follows the stem as
-  printed." — it never says what the answer would otherwise be.
+  printed." — it never says what the answer would otherwise be. Chapter 10
+  has four: ammonia's enthalpy of vaporization printed as 4.8 kJ/mol,
+  liquid carbon dioxide's as 9.8 kJ/mol, a table of alcohol vapor
+  pressures, and a cylinder of carbon dioxide at 65 atm and 20 °C. A note
+  that follows a choice item is placed after the self-check under it and
+  does not say which option the measured value favours.
 - **A part that leans on an earlier part restates that part's GIVEN data,
   never its result — and not a datum that answers an earlier part** (9.5's
   balloon: parts (d)–(f) restate the cool air's density and the hot air's
@@ -1472,7 +1512,10 @@ mhchem extension, so nothing is loaded:
 - **A single bond between symbols in prose is an en dash** — H–H, O–H,
   H–C≡C–H — never the minus sign U+2212, which is the sign of a number or a
   charge (lint: U+2212 between two symbols, or between a symbol and = or ≡)
-  *(chapter 8)*.
+  *(chapter 8)*. A bond drawn from a group is the same dash: –OH, –NH₂,
+  –COOH (lint: U+2212 directly before a symbol or a group formula in
+  prose; the source types the minus sign, and three pages of chapter 10
+  wrote it two ways) *(chapter 10)*.
 - **American spelling and the curly apostrophe** in prose and alts —
   "labeled", "color", "gray", "Oxygen’s" *(chapter 8)*. The spelling is a
   lint (a word the source itself spells otherwise — 6.5's “silver-grey” — is
@@ -1574,7 +1617,10 @@ mhchem extension, so nothing is loaded:
   in a sentence and in a label.
 - **A `textin` question cannot print a power of ten**: it takes no `$…$`
   math, and a Unicode exponent (`10²³`) is a lint error. Word the stem
-  without the number, or use `multiplechoice`.
+  without the number, write the number out in digits with a footer clause
+  (10.4: "a constant pressure of 1,000,000 Pa" for the source's 10⁶ Pa),
+  or use `multiplechoice` where the stem names a set — never options the
+  author invents *(chapter 10)*.
 
 ## Graded items
 

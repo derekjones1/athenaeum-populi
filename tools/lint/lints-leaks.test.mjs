@@ -836,6 +836,8 @@ test('Chemistry chapter 8: an oxidation-state fill-in closes word for word, and 
   assert.equal(closing(`Body.\n\n${fillin(ox('Xe'), '5')}`).length, 1, 'an element the stem does not print');
   assert.equal(closing(`Body.\n\n${fillin(`${STEM} Enter the oxidation state of Cl.`, '5')}`).length, 1, 'not word for word');
   assert.deepEqual(closing(`Body.\n\n${fillin(`Assign oxidation numbers to the elements in Na₂SO₄. Enter the oxidation number of S as a signed number, the sign first, as +2 or −1.`, '6')}`), [], '"oxidation number" (Knowledge Check 4–5)');
+  const RUTILE = 'What is the percent by mass of titanium in rutile, a mineral that contains titanium and oxygen, if structure can be described as a closest packed array of oxide ions with titanium ions in one-half of the octahedral holes? What is the oxidation number of titanium?';
+  assert.deepEqual(closing(`Body.\n\n${fillin(`${RUTILE} ${OXIDATION_STATE_CLOSING.replace('<Symbol>', 'Ti')}`, '4')}`), [], 'titanium, named in words (10.6)');
   assert.equal(pairs(`Body.\n\n${fillin(`What is the charge on the ion? Enter the charge as a signed number, the sign first, as +1 or −1.`, '1')}`).length, 1, 'every signed closing, a charge too');
 });
 

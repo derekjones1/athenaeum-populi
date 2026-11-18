@@ -188,7 +188,7 @@ Cr
 H₃PO₄
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Outline the steps needed to determine the limiting reactant when 0.50 mol of Cr and 0.75 mol of H₃PO₄ react according to the following chemical equation. $\ce{2Cr + 2H3PO4 -> 2CrPO4 + 3H2}$. Determine the limiting reactant." hint="Think about which amount must be converted, and with which ratio, before the two amounts can be compared." >}}
+{{< selfcheck question="Outline the steps needed to determine the limiting reactant when 0.50 mol of Cr and 0.75 mol of H₃PO₄ react according to the following chemical equation. $\ce{2Cr + 2H3PO4 -> 2CrPO4 + 3H2}$. Determine the limiting reactant." hint="Compare the ratio of the amounts provided with the stoichiometric ratio in the balanced equation." >}}
 The conversion needed is mol Cr ⟶ mol H₃PO₄. Then compare the amount of Cr to the amount of acid present. Cr is the limiting reactant.
 ===CHECKS===
 the conversion needed is mol Cr ⟶ mol H₃PO₄

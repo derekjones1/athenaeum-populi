@@ -260,8 +260,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 21,
       "upstreamSections": 114,
-      "localChapters": 9,
-      "mappedSections": 46,
+      "localChapters": 10,
+      "mappedSections": 52,
       "upstreamAppendices": 13,
       "mappedAppendices": 13
     }
@@ -7682,6 +7682,60 @@
       "moduleId": "m68759",
       "sourceTitle": "Non-Ideal Gas Behavior",
       "moduleSha256": "9904067d1f31a38740fd728b8aa24566bdbbef3a05840214f478561a65561296"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/01-intermolecular-forces.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "10.1",
+      "moduleId": "m68761",
+      "sourceTitle": "Intermolecular Forces",
+      "moduleSha256": "7d2e3bcf65d19389ae5f1a3bb426b3a1896b2422076002f9388ecccfe37c566d"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/02-properties-of-liquids.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "10.2",
+      "moduleId": "m68764",
+      "sourceTitle": "Properties of Liquids",
+      "moduleSha256": "f9d31768d53329a2b60d01b0642e1e20e7cff727af033b3f3c7c93e80558250f"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/03-phase-transitions.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "10.3",
+      "moduleId": "m68768",
+      "sourceTitle": "Phase Transitions",
+      "moduleSha256": "8b1de869fbb9fe9adf315536599ef87de0f00f22d5398c2a688ad70e883bd61d"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/04-phase-diagrams.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "10.4",
+      "moduleId": "m68769",
+      "sourceTitle": "Phase Diagrams",
+      "moduleSha256": "bd9019710d664f19bffacf545a6d13dbdf8b4e66be1d8d77bc8badc36388476e"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/05-the-solid-state-of-matter.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "10.5",
+      "moduleId": "m68770",
+      "sourceTitle": "The Solid State of Matter",
+      "moduleSha256": "7872bddb1833636a3c4cbd1408146e64b9bb54906e44f91dcc3413fe4b8f4739"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/06-lattice-structures-in-crystalline-solids.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "10.6",
+      "moduleId": "m68773",
+      "sourceTitle": "Lattice Structures in Crystalline Solids",
+      "moduleSha256": "c6557ea5b08791f2227e027a902cce74234cdc593f56313d0890dedb789e923a"
     }
   ],
   "appendices": [

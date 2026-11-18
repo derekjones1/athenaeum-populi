@@ -575,7 +575,7 @@ divide the mass of compound by the molar mass of the compound expressed in grams
 {{< /selfcheck >}}
 
 {{< multiplechoice
-  question="Which contains the greatest mass of oxygen: 0.75 mol of ethanol (C₂H₅OH), 0.60 mol of formic acid (HCO₂H), or 1.0 mol of water (H₂O)?"
+  question="Which contains the greatest mass of oxygen: 0.75 mol of ethanol (C₂H₅OH), 0.60 mol of formic acid (HCO₂H), or 1.0 mol of water (H₂O)? Explain why."
   answer="0.60 mol of formic acid (HCO₂H)"
   hint="Use each compound’s formula and the definition of the mole."
 >}}
@@ -584,7 +584,7 @@ divide the mass of compound by the molar mass of the compound expressed in grams
 1.0 mol of water (H₂O)
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Which contains the greatest mass of oxygen: 0.75 mol of ethanol (C₂H₅OH), 0.60 mol of formic acid (HCO₂H), or 1.0 mol of water (H₂O)? Explain why." hint="Relate each sample’s amount of compound to the oxygen atoms its formula shows." >}}
+{{< selfcheck question="Which contains the greatest mass of oxygen: 0.75 mol of ethanol (C₂H₅OH), 0.60 mol of formic acid (HCO₂H), or 1.0 mol of water (H₂O)? Explain why." hint="Use each compound’s formula and the definition of the mole." >}}
 Formic acid. Its formula has twice as many oxygen atoms as the other two compounds (one each). Therefore, 0.60 mol of formic acid would be equivalent to 1.20 mol of a compound containing a single oxygen atom.
 ===CHECKS===
 formic acid

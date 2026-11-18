@@ -48,7 +48,7 @@ The quantum mechanical picture makes it difficult to establish a definite size o
 Within each period, the trend in atomic radius decreases as $Z$ increases; for example, from K to Kr. Within each group (e.g., the alkali metals shown in purple), the trend is that atomic radius increases as $Z$ increases.
 {{< /mediafigure >}}
 
-*Source note:* the graph plots atomic radii that, for the metals, are radii in the metal (aluminum’s 143 pm, as in Section 10.6 Lattice Structures in Crystalline Solids), so its values differ from the covalent radii in this section’s table and text (F 64 pm, Al 118 pm).
+*Source note:* the graph plots atomic radii that, for the metals, are radii in the metal (aluminum’s 143 pm, as in [Section 10.6 Lattice Structures in Crystalline Solids](/physical-sciences/chemistry/10-liquids-and-solids/06-lattice-structures-in-crystalline-solids/)), so its values differ from the covalent radii in this section’s table and text (F 64 pm, Al 118 pm).
 
 As shown in the graph above, as we move across a period from left to right, we generally find that each element has a smaller covalent radius than the element preceding it. This might seem counterintuitive because it implies that atoms with more electrons have a smaller atomic radius. This can be explained with the concept of **effective nuclear charge, $Z_\text{eff}$**. This is the pull exerted on a specific electron by the nucleus, taking into account any electron–electron repulsions. For hydrogen, there is only one electron and so the nuclear charge ($Z$) and the effective nuclear charge ($Z_\text{eff}$) are equal. For all other atoms, the inner electrons partially *shield* the outer electrons from the pull of the nucleus, and thus:
 

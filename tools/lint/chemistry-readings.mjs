@@ -13,10 +13,18 @@
  *   sourceNumberReferences   "Table 5.1" (5.2): a table is named by what it shows
  *   miscountedConfigurations a figure description's "96 Cm 7s²5f⁹" (6.4): 97 electrons
  *
+ * Chapter 10's consistency reading (November 18, 2026) added three:
+ *
+ *   choiceSelfcheckStems     10.4's laundry choice dropped "Explain your answer." and its hint
+ *   chapterLandingLinks      10.1 linked "the chapter on chemical bonding" to the landing
+ *   dataFiguresNoteVariants  10.6 reworded chapter 9's "figures its data give" Source note
+ *
+ * and hintAppendixUnlinked, a measurement the parent reads (F1), no lint.
+ *
  * The heat-question and unit readings are in tools/lib (heat-ask.mjs,
  * item-units.mjs): the run-facts screen shares the first.
  */
-import { blankPreservingOffsets } from '../lib/content.mjs';
+import { blankPreservingOffsets, shortcodes } from '../lib/content.mjs';
 import { loadElements } from '../lib/elements.mjs';
 import { readConfiguration } from '../../assets/js/lib/text/check-config.mjs';
 
@@ -237,4 +245,151 @@ export function miscountedConfigurations(description, sourceNotes = '') {
     wrong.push({ written: `${printedNumber ? `${printedNumber} ` : ''}${symbol}${charge ?? ''} ${written}`, symbol, expected, counted, ...(numberWrong ? { number: element.number } : {}) });
   }
   return wrong;
+}
+
+// ---- chapter 10's consistency readings (November 18, 2026) ----------------------
+
+/** A question's sentences, whitespace folded: the units two stems are compared in. */
+export function stemSentences(question) {
+  return String(question ?? '').replace(/\s+/g, ' ').trim()
+    .split(/(?<=[.?!])\s+(?=\S)/).map((sentence) => sentence.trim()).filter(Boolean);
+}
+
+/**
+ * A sentence that asks for the reason: "Explain your answer.", "Explain
+ * why.", "Discuss …", "Justify …", a bare "Why?" or "Why not?". A whole
+ * question that opens "Why" ("Why are the pressures … not very different?",
+ * 9.6) is a question of its own, not a demand for the choice's reason.
+ */
+const REASON_DEMAND = /^(?:explain|discuss|justify|why(?: not)?\?$|give (?:a |the |your )?reasons?\b|support your|illustrate your)/i;
+
+/**
+ * Whether a `multiplechoice` and the `selfcheck` after it ask ONE source
+ * stem, and if so what differs (F4, chapter 10). The rule settled on the
+ * whole book (47 adjacent choice/self-check pairs read):
+ *
+ *   the self-check's every sentence is in the choice's question, or is a
+ *   demand for the reason ("Explain your answer.", "Explain why.",
+ *   "Discuss …"), or is the stem's lettered list whose parts are the
+ *   choice's options (9.6's "(a) high pressure, small volume; (b) …");
+ *   and the choice's every sentence is in the self-check's, except at most
+ *   its LAST — the closing a choice adds to say what its buttons answer
+ *   ("Which reactant is the oxidant?", "Select the limiting reactant.").
+ *
+ * Two lettered parts restated from one lead-in ("Does the following
+ * molecule or ion have a dipole moment? XeF₂." / "… PH₂⁻.") differ in a
+ * sentence each side and are no pair, nor two questions after one shared
+ * opening sentence (9.6's "Answer the following question: …").
+ *
+ * Returns null where the two are not one stem, else `{ dropped, hintDiffers }`:
+ * `dropped` the self-check's sentences the choice's question leaves out (the
+ * lettered list its options carry is not one), `hintDiffers` whether the two
+ * hints differ in any character.
+ */
+export function sharedStemPair(choice, selfcheck) {
+  const ours = stemSentences(choice.question);
+  const theirs = stemSentences(selfcheck.question);
+  if (!ours.length || !theirs.length) return null;
+  const options = (choice.options ?? []).map((option) => String(option).trim()).filter(Boolean);
+  const isOptionList = (sentence) => /^\(a\)/.test(sentence) && options.length > 1 && options.every((option) => sentence.includes(option));
+  const unmatched = theirs.filter((sentence) => !ours.includes(sentence));
+  if (!unmatched.every((sentence) => REASON_DEMAND.test(sentence) || isOptionList(sentence))) return null;
+  const added = ours.filter((sentence) => !theirs.includes(sentence));
+  if (added.length > 1 || (added.length === 1 && added[0] !== ours[ours.length - 1])) return null;
+  // Nothing shared but sentences the choice may add or drop is no pair.
+  if (!ours.some((sentence) => theirs.includes(sentence))) return null;
+  return {
+    dropped: unmatched.filter((sentence) => !isOptionList(sentence)),
+    hintDiffers: String(choice.hint ?? '').trim() !== String(selfcheck.hint ?? '').trim(),
+  };
+}
+
+const PAIR_KINDS = ['fillin', 'multiplechoice', 'graphplot', 'textin', 'selfcheck', 'sortbins'];
+
+/**
+ * Every `multiplechoice` directly followed (the next item of the page) by a
+ * `selfcheck` of the same stem, with what the pair breaks: `[{ index,
+ * selfcheckIndex, question, dropped, hintDiffers }]`, only pairs that break
+ * something. `index` is the choice's offset.
+ */
+export function choiceSelfcheckStems(text) {
+  const items = PAIR_KINDS.flatMap((kind) => [...shortcodes(String(text), kind)].map((sc) => ({ kind, ...sc })))
+    .sort((a, b) => a.index - b.index);
+  const hits = [];
+  for (let i = 0; i + 1 < items.length; i += 1) {
+    const [choice, next] = [items[i], items[i + 1]];
+    if (choice.kind !== 'multiplechoice' || next.kind !== 'selfcheck') continue;
+    const pair = sharedStemPair(
+      { question: choice.params.question, hint: choice.params.hint, options: String(choice.inner ?? '').split('\n') },
+      { question: next.params.question, hint: next.params.hint },
+    );
+    if (pair && (pair.dropped.length || pair.hintDiffers)) {
+      hits.push({ index: choice.index, selfcheckIndex: next.index, question: String(choice.params.question ?? ''), ...pair });
+    }
+  }
+  return hits;
+}
+
+/**
+ * A Markdown link from a Chemistry section page to a chapter landing
+ * (`/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/`,
+ * no section segment; F2, chapter 10). A reference to another chapter is
+ * resolved to the section meant and linked there, as a section reference is
+ * (playbook, page-skeleton rule 9). The footer (`<small>`) is not read; a
+ * landing page and a Knowledge Check are not section pages and the caller
+ * does not ask. A link to the chapter's OPENING FIGURE is not a hit: that
+ * figure is on the landing and nowhere else (7.3's "the opening figure of
+ * [Chapter 7 …]", 8.4's "[photograph of liquid oxygen …] that opens this
+ * chapter"), so the landing is the right target; the sentence says so
+ * within 60 characters of the link. Returns `[{ index, written, target }]`.
+ */
+const OPENING_FIGURE = /\bopening (?:figure|photograph|image)\b|\bopens (?:this|the|that) chapter\b/i;
+
+export function chapterLandingLinks(text) {
+  const visible = String(text).replace(/<small>[\s\S]*?<\/small>/g, blankPreservingOffsets);
+  return [...visible.matchAll(/\[([^\]\n]*)\]\((\/physical-sciences\/chemistry\/\d{2}-[a-z0-9-]+\/?)(?:#[^)\s]*)?\)/g)]
+    .filter((match) => !OPENING_FIGURE.test(visible.slice(Math.max(0, match.index - 60), match.index + match[0].length + 40)))
+    .map((match) => ({ index: match.index, written: match[1], target: match[2] }));
+}
+
+/**
+ * The one sentence of the "figures from the data" Source note — chapter 9's
+ * form, word for word, on six of its exercises (9.1, 9.2 three times, 9.3,
+ * 9.4; F6, chapter 10).
+ */
+export const DATA_FIGURES_NOTE = '*Source note:* the answer graded for this exercise is written to the number of significant figures its data give, which is not the number the source prints.';
+
+/**
+ * Each Source note that says its answer is written to "the significant
+ * figures its data give" and is not `DATA_FIGURES_NOTE` word for word:
+ * `[{ index, written }]`. Both shapes of a note are read — the
+ * `*Source note:*` paragraph and the `*(Source note: …)*` parenthesis. The
+ * footer (`<small>`) describes the change in its own words and is not read.
+ */
+export function dataFiguresNoteVariants(text) {
+  const visible = String(text).replace(/<small>[\s\S]*?<\/small>/g, blankPreservingOffsets);
+  return [...visible.matchAll(/\*Source note:\*[^\n]*|\*\(Source note:[\s\S]*?\)\*/g)]
+    .filter((note) => /significant figures its data give/.test(note[0]) && note[0].trim() !== DATA_FIGURES_NOTE)
+    .map((note) => ({ index: note.index, written: note[0].trim() }));
+}
+
+/**
+ * Items whose hint names an appendix ("Appendix E") while the question
+ * holds no link to that appendix's page (F1, chapter 10; a measurement, not
+ * a lint): `[{ index, kind, appendix, linksOther }]`. `linksOther` lists the
+ * appendices the question does link.
+ */
+export function hintAppendixUnlinked(text) {
+  const hits = [];
+  for (const kind of PAIR_KINDS) {
+    for (const sc of shortcodes(String(text), kind)) {
+      const question = String(sc.params.question ?? '');
+      const linked = new Set([...question.matchAll(/\]\(\/physical-sciences\/chemistry\/appendices\/([a-m])-/g)].map((match) => match[1].toUpperCase()));
+      const named = new Set([...String(sc.params.hint ?? '').matchAll(/\bAppendix ([A-M])\b/g)].map((match) => match[1]));
+      for (const appendix of named) {
+        if (!linked.has(appendix)) hits.push({ index: sc.index, kind, appendix, linksOther: [...linked] });
+      }
+    }
+  }
+  return hits.sort((a, b) => a.index - b.index);
 }

@@ -90,6 +90,11 @@ export const TABLE_NOTES = Object.freeze({
     ],
   },
   'chemistry-bundle:m68862': { constants: true },
+  'chemistry-bundle:m68863': {
+    deviations: [
+      ['6.088', '6.01', 'erratum 3299: the enthalpy of melting of ice is 6.01 kJ/mol, the value Section 10.3 of the source itself prints; 6.088 is a misprint'],
+    ],
+  },
   // Appendix H: nine formulas are printed as images; the Lewis structures
   // leave the table and follow it as figures.
   'chemistry-bundle:m68866': {

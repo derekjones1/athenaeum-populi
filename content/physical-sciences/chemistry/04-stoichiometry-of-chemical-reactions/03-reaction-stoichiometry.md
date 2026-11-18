@@ -251,7 +251,7 @@ coefficients
   hint="Find the moles as in the previous item, keep that value unrounded, and convert it to mass with a molar mass computed from the formula."
 >}}
 
-*Source note:* the answer graded here is written to the significant figures its data give; the source prints the same value to fewer.
+*Source note:* the answer graded for this exercise is written to the number of significant figures its data give, which is not the number the source prints.
 
 {{< fillin
   question="Determine the number of moles and the mass requested for the following reaction: The number of moles and the mass of carbon dioxide formed by the combustion of 20.0 kg of carbon in an excess of oxygen. Enter the number of moles of CO₂."

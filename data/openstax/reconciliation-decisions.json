@@ -8513,6 +8513,449 @@
       "status": "correct-local-source-defect",
       "errataEntry": 3287,
       "rationale": "The van der Waals example converts 229 °C to 502 K by adding 273; the page prints 502.15 K, with a visible Source note and a footer clause, and the results (33.5 and 32.4 atm) are the same. Found by the 9.6 author, ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/02-properties-of-liquids.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68764",
+      "sourceElementIds": [
+        "fs-idm183311984"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3288,
+      "rationale": "The answer to exercise 10.2.25 ends “The lower the temperature, the less the intermolecular forces are overcome, and so the less viscous the liquid”; a colder liquid is more viscous, as the answer’s own first half says of a hotter one. The page’s model answer prints “the more viscous the liquid”, with a Source note after the block, a footer clause, and a DISCLOSED_DEVIATIONS line (fs-idm183311984, kind solution). Found by the 10.2 author, ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/02-properties-of-liquids.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68764",
+      "sourceElementIds": [
+        "fs-idp7578512"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3289,
+      "rationale": "The capillary-rise Check Your Learning prints “diameter = 0.36 mm” for a rise of 8.4 cm; the example’s own data give 0.3498 mm, and 0.36 is the example’s rounded 12 cm scaled (0.25 mm × 12/8.4). The page keys the fill-in 0.35 (sig-figs:2 last-digit:1, which still grades 0.36 right), with an item Source note, a footer clause, and a DISCLOSED_DEVIATIONS line (fs-idp7578512#check, kind key). Found by the 10.2 author, ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/03-phase-transitions.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68768",
+      "sourceElementIds": [
+        "fs-idm143693744"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3290,
+      "rationale": "The acetone Check Your Learning prints “30.1 kPa”, which takes 25.0 °C as 298 K; with T = t + 273.15 the Clausius-Clapeyron equation gives 30.31 kPa. The page keys the fill-in 30.3 (sig-figs:3 last-digit:1), with an item Source note, a footer clause, and a DISCLOSED_DEVIATIONS line (fs-idm143693744#check, kind key). Found by the 10.3 author, ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/03-phase-transitions.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68768",
+      "sourceElementIds": [
+        "fs-idm69576896"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3291,
+      "rationale": "The answer to exercise 10.3.51 prints 1125 kJ for 422 g of water from 23.5 °C to steam at 150 °C; Appendix E’s data give 1126.8 kJ and the section example’s own values 1126.6 to 1126.9, and 1125 needs an enthalpy of vaporization printed nowhere. The page keys the fill-in 1127 (sig-figs:4 last-digit:1), the stem pointing at Appendix E, with an item Source note, a footer clause, and a DISCLOSED_DEVIATIONS line (fs-idm69576896, kind key). Found by the 10.3 author, ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/04-phase-diagrams.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68769",
+      "sourceElementIds": [
+        "fs-idm135170880"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3292,
+      "rationale": "Part (d) of exercise 10.4.63 asks to circle each triple point; the answer image circles only the graphite-liquid-gas point, and the diagram has a second triple point where the diamond, graphite, and liquid regions meet (about 4230 K and 10¹⁰ Pa). The page’s model answer shows the source’s image and adds one sentence naming the second, with a Source note after the block, a footer clause, and a DISCLOSED_DEVIATIONS line (fs-idm135170880, kind solution). Found by the 10.4 author, ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/04-phase-diagrams.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68769",
+      "sourceElementIds": [
+        "fs-idm163161056"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3293,
+      "rationale": "The answer to exercise 10.4.55 says water at 40 °C becomes a liquid “at pressures higher than about 75 torr”; Appendix E gives its vapor pressure at 40 °C as 55.3 torr. The page’s model answer prints “about 55 torr”, the stem pointing at Appendix E, with a Source note after the block, a footer clause, and a DISCLOSED_DEVIATIONS line (fs-idm163161056, kind solution). Found by the 10.4 author, ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/04-phase-diagrams.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68769",
+      "sourceElementIds": [
+        "fs-idm211145632"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3294,
+      "rationale": "The water Check Your Learning answers “s ⟶ g at −58 °C” at 0.3 kPa and “l ⟶ g at 78 °C” at 50 kPa; the module’s vapor pressure of ice and its triple point put sublimation at 0.3 kPa between −10 °C and 0 °C, and Appendix E’s vapor pressures put the boiling point at 50 kPa near 81 °C. The page’s model answer prints those, with a Source note after the block, a footer clause, and a DISCLOSED_DEVIATIONS line (fs-idm211145632#check, kind solution). Found by the 10.4 author, ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/04-phase-diagrams.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68769",
+      "sourceElementIds": [
+        "fs-idm81431296"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3295,
+      "rationale": "The carbon dioxide Check Your Learning answers “l ⟶ g at −10 °C” at 1500 kPa and “s ⟶ g at −60 °C” at 50 kPa; the phase diagram the question reads, as drawn, gives about −35 °C and about −84 °C. The page’s model answer prints the figure’s readings, with a Source note after the block, a footer clause, and a DISCLOSED_DEVIATIONS line (fs-idm81431296#check, kind solution). Found by the 10.4 author, ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/06-lattice-structures-in-crystalline-solids.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68773",
+      "sourceElementIds": [
+        "fs-idp184563440"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3296,
+      "rationale": "The answer to exercise 10.6.103 prints 20.2° from a spacing of 0.4164 nm and a wavelength of 0.2879 nm, both of four figures; the angle is 20.2246°. The page keys the fill-in 20.22 (sig-figs:4 last-digit:0), with an item Source note, a footer clause, and a DISCLOSED_DEVIATIONS line (fs-idp184563440, kind key). Found by the 10.6 author, ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/06-lattice-structures-in-crystalline-solids.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68773",
+      "sourceElementIds": [
+        "fs-idp79703472"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3297,
+      "rationale": "The silver Check Your Learning prints “(a) 144 pm” for an edge of 409 pm; 409 × √2 / 4 = 144.60, which rounds to 145. The page keys part (a) 145 (sig-figs:3 last-digit:1, which still grades 144 right), with an item Source note, a footer clause, and a DISCLOSED_DEVIATIONS line (fs-idp79703472#check, kind key). Found by the 10.6 author, ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/06-lattice-structures-in-crystalline-solids.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68773",
+      "sourceElementIds": [
+        "fs-idp160437296"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3298,
+      "rationale": "The potassium chloride Check Your Learning prints 1.33 Å for the potassium ion; the stem’s edge of 6.28 Å and chloride radius of 1.82 Å give 6.28/2 − 1.82 = 1.32. The page keys the fill-in 1.32 (sig-figs:3 last-digit:0), with an item Source note, a footer clause, and a DISCLOSED_DEVIATIONS line (fs-idp160437296#check, kind key). Found by the 10.6 author, ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/e-water-properties.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68863",
+      "sourceElementIds": [
+        "fs-idm404907328"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3299,
+      "rationale": "Appendix E’s table prints the enthalpy of melting of water as 6.088 kJ/mol; the enthalpy of fusion of ice is 6.01 kJ/mol (IAPWS R10-06(2009), Table 6: about 333.4 J/g at the normal melting point), and Section 10.3 of the same source prints 6.01 kJ/mol twice. The page’s row prints 6.01, with a Source note after the table, a footer clause, and a TABLE_NOTES deviation in tools/verify/verify-source-tables.mjs. Found by the 10.3 run, corrected by the parent, verified by the claim pass, ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/06-lattice-structures-in-crystalline-solids.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68773",
+      "sourceElementIds": [
+        "fs-idm34692448"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3300,
+      "rationale": "The answer to exercise 10.6.91 prints “can be occupied be a cation” and “the formula for thallium is TlI”; the page’s model answer prints “by a cation” and “the formula for thallium iodide is TlI”, with a footer clause and a DISCLOSED_DEVIATIONS line (fs-idp122808832, kind solution). Found by the 10.6 author, ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/01-intermolecular-forces.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68761",
+      "sourceElementIds": [
+        "fs-idp31448880"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3301,
+      "rationale": "The answer to exercise 10.1.19 says hydrogen bonding is “the principle IMF”; the word that means “chief” is “principal”. The page’s model answer prints “principal”, with a footer clause and a DISCLOSED_DEVIATIONS line (fs-idp57460448, kind solution). Found by the 10.1 author, ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/01-intermolecular-forces.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68761",
+      "sourceElementIds": [
+        "fs-idp4184176"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3302,
+      "rationale": "The answer to exercise 10.1.13 says “Only rather small dipole-dipole interactions from C-H bonds are available to hold n-butane in the liquid state”; n-butane is nonpolar and, as the section says of hydrocarbons, has only dispersion forces. The page’s model answer names dispersion forces and keeps the second sentence with “also” added, with a Source note after the block, a footer clause, and a DISCLOSED_DEVIATIONS line (fs-idp19547744, kind solution). Found by the claim pass (F17), ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/04-phase-diagrams.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68769",
+      "sourceElementIds": [
+        "fs-idm23251664"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3303,
+      "rationale": "The paragraph on the solid-vapor curve says ice has a vapor pressure of “about 0.20 kPa at −10 °C” (twice); the IAPWS sublimation-pressure equation (R14-08(2011)) gives 259.9 Pa at 263.15 K, so 0.26 kPa. The page prints 0.26 kPa, with a Source note after the freeze-dried photograph and a footer clause; no key rests on the sentence, and the water Check Your Learning (erratum 3294) still holds. Found by the claim pass (F2), ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/06-lattice-structures-in-crystalline-solids.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68773",
+      "sourceElementIds": [
+        "fs-idm39353008"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3304,
+      "rationale": "The nickel Check Your Learning prints 2.23 g/cm³ for the density nickel would have in a simple cubic cell; its data (0.3524 nm, 58.693 g/mol, 6.022 × 10²³) carry four figures and its own printed 9.746 × 10⁻²³ g over 4.376 × 10⁻²³ cm³ is 2.227. The page keys the fill-in 2.227 and prints it in the model answer’s last line, with an item Source note, a footer clause, and two DISCLOSED_DEVIATIONS lines (fs-idm39353008#check, kinds key and solution). Found by the 10.6 author, ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/01-intermolecular-forces.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68761",
+      "sourceElementIds": [
+        "fs-idp26129792"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3307,
+      "rationale": "The paragraph on the London dispersion force says Fritz London first explained it “in 1928”; his papers on it are of 1930 (Eisenschitz and London, Z. Phys. 60, 491; London, Z. Phys. 63, 245). The page prints “in 1930”, with a Source note after the dispersion-force figure and a footer clause. Found by the claim pass (an unopened possibility the parent confirmed), ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/01-intermolecular-forces.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68761",
+      "sourceElementIds": [
+        "fs-idm15049248"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3310,
+      "rationale": "The Geckos box says geckos are like “spiders and some other insects”; spiders are arachnids, not insects. The page prints “spiders and some insects”, with a footer clause and no Source note. Found by the claim pass (F9), ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/01-intermolecular-forces.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68761",
+      "sourceElementIds": [
+        "fs-idp29466368"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3311,
+      "rationale": "The Geckos box dates Kellar Autumn’s finding that geckos adhere equally well to polar silicon dioxide and nonpolar gallium arsenide to “2000”; it is Autumn et al., Proc. Natl. Acad. Sci. USA 99, 12252 (2002), DOI 10.1073/pnas.192252799. The page prints “In 2002”, with a Source note after the gecko figure and a footer clause. Found by the claim pass (F8), ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/01-intermolecular-forces.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68761",
+      "sourceElementIds": [
+        "fs-idp108426992"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3312,
+      "rationale": "The paragraph comparing HCl with F₂ does so “at a temperature of 150 K” and says HCl forms a liquid; HCl melts at 161.15 K (NIST Chemistry WebBook), so at 150 K it is a solid. The page prints 170 K, between HCl’s melting point and its 188 K boiling point, where F₂ is a gas, with a Source note after the paragraph and a footer clause. Found by the claim pass (F1), ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/01-intermolecular-forces.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68761",
+      "sourceElementIds": [
+        "fs-idp26510624"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3314,
+      "rationale": "The sentence predicting the boiling points of the lightest hydrides says NH₃ at about −120 °C and HF at about −110 °C; the graph it reads (HydrideBP1) draws the predicted points at about −130 °C and −120 °C (H₂O’s −80 °C agrees). The page prints the graph’s values, with a Source note after the paragraph and a footer clause. Found by the 10.1 author and checker, ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/01-intermolecular-forces.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68761",
+      "sourceElementIds": [
+        "fs-idm50766656"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3315,
+      "rationale": "Example 3 gives ethanol’s boiling point as 78.4 °C in its problem and 78.5 °C in its solution; NIST gives 351.5 K, 78.35 °C, which is 78.4 °C. The solution prints 78.4 °C, with a footer clause and no Source note. Found by the 10.1 author and the claim pass (F10), ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/02-properties-of-liquids.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68764",
+      "sourceElementIds": [
+        "fs-idm139826368"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3322,
+      "rationale": "The table of surface tensions prints mercury’s value as 458.48 mN/m; every other row matches the standard table to the hundredth and mercury’s value at 25 °C there is 485.5 mN/m, so two digits are exchanged. The page prints 485.48, with a Source note under the table and a footer clause. Found by the claim pass (F5), confirmed by the parent, ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/03-phase-transitions.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68768",
+      "sourceElementIds": [
+        "fs-idm60218336"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3328,
+      "rationale": "The table of the alcohols’ vapor pressures at 20 °C prints methanol 11.9 kPa and propanol 2.67 kPa; Antoine constants in the NIST Chemistry WebBook give about 13.0 and 2.03 kPa; the order, and the answer, are the same. The table is kept as printed (stem data are kept), with a Source note after the item and a footer clause. Found by the claim pass (F13), ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/03-phase-transitions.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68768",
+      "sourceElementIds": [
+        "fs-idm96861632",
+        "fs-idm143693744",
+        "fs-idm57843872",
+        "fs-idm143749376"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3331,
+      "rationale": "The section’s Clausius-Clapeyron examples convert Celsius to kelvin by adding 273.15 and round to tenths (307.2, 372.0, 353.3 K; 346.9 K and 73.8 °C for benzene); the sweat example uses 18 g/mol; the heating-curve example uses 2.09, 4.18, and 1.86 J/g °C, 40.67 kJ/mol, and 18.02 g/mol and adds rounded terms (416 kJ). The page converts with 273.15 and carries the digits (benzene 346.8 K, 73.7 °C), computes the molar mass of water from this book’s periodic table, and works the heating-curve example with Appendix E’s values and only the total rounded (415 kJ), each with a Source note and a footer clause; the isooctane and sweat results are the same. Found by the 10.3 author, ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/03-phase-transitions.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68768",
+      "sourceElementIds": [
+        "fs-idm119901584"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3332,
+      "rationale": "The ammonia Check Your Learning gives liquid ammonia’s enthalpy of vaporization as 4.8 kJ/mol; the NIST Chemistry WebBook gives 23.4 kJ/mol at its boiling point. The stem and the key 28 are kept as printed (stem data are kept), with a Source note after the item that gives the measured value and says the answer follows the stem, and a footer clause. Found by the claim pass (F3), ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/03-phase-transitions.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68768",
+      "sourceElementIds": [
+        "fs-idm213205104"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3334,
+      "rationale": "The heating-curve example prints the water term as 56,500 J; 135 g × 4.18 J/g °C × 100 °C is 56,430 J, and the printed total, 416 kJ, adds rounded terms (the source’s own carried data give 415.4). The page prints the carried term (56,484 J with Appendix E’s specific heat) and the total 415 kJ, with the example’s Source note. Found by the 10.3 author, ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/03-phase-transitions.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68768",
+      "sourceElementIds": [
+        "fs-idm198895584"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3335,
+      "rationale": "The exercise on carbon disulfide gives the enthalpy of vaporization of CO₂(l) as 9.8 kJ/mol; the NIST Chemistry WebBook gives 16.4 kJ/mol at 258 K and 16.7 kJ/mol at 288 K. The stem, the options, and the model answer are kept as printed (stem data are kept), with a Source note after the self-check and a footer clause. Found by the claim pass (F15), ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/04-phase-diagrams.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68769",
+      "sourceElementIds": [
+        "fs-idm132186736"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3340,
+      "rationale": "The cylinder exercise puts liquid and gaseous carbon dioxide in equilibrium “at an initial pressure of 65 atm and a temperature of 20 °C”; the NIST saturation table gives 56.5 atm at 20 °C, and 65 atm is the pressure at 26 °C. The stem and the model answer keep 65 atm (the answer drawing prints it), with a Source note after the self-check and a footer clause. Found by the claim pass (F14), ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/05-the-solid-state-of-matter.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68770",
+      "sourceElementIds": [
+        "fs-idp61138560"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3345,
+      "rationale": "The ionic-solids paragraph defers lattice energies to “a later discussion”; they are discussed in Section 7.5, earlier in the book. The page says the matter “is looked at in more detail in the discussion of lattice energies”, linked to Section 7.5, with a footer clause. Found by the 10.5 author and checker, ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/05-the-solid-state-of-matter.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68770",
+      "sourceElementIds": [
+        "fs-idp89753840"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3346,
+      "rationale": "The metallic-solids paragraph says “the transition metals melt at temperatures above 1000 °C”; zinc and cadmium, group 12 metals, melt far below (zinc at 419.5 °C). The page prints “most transition metals”, with a footer clause and no Source note. Found by the claim pass (F16), ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/05-the-solid-state-of-matter.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68770",
+      "sourceElementIds": [
+        "fs-idm41841264"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3348,
+      "rationale": "The molecular-solids sentence names ice, sucrose, and iodine “as shown in” a figure that shows carbon dioxide and iodine. The page keeps the sentence without the reference and adds “the figure below shows carbon dioxide and iodine”, with a footer clause. Found by the render reader, ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/05-the-solid-state-of-matter.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68770",
+      "sourceElementIds": [
+        "CNX_Chem_10_05_MolSolids"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3349,
+      "rationale": "The molecular-solids caption gives carbon dioxide “a melting point of −78 °C”; solid carbon dioxide sublimes at −78 °C at 1 atm and melts only above its triple point, as Section 10.4 says. The page’s caption says it sublimes at −78 °C under normal pressure, with a Source note after the figure and a footer clause. Found by the claim pass (F4), ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/05-the-solid-state-of-matter.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68770",
+      "sourceElementIds": [
+        "CNX_Chem_10_05_Carbon"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3350,
+      "rationale": "The carbon figure’s graphite-surface inset labels the distance between “the centers of adjacent carbon atoms” as 1.4 × 10⁻¹⁰ m, but its bracket spans the centers of two neighboring rings (about 1.75 times the drawn bond). The figure and caption are kept, with a Source note after the figure that says where the bracket is drawn and prints no distance, and a footer clause. Found by the 10.5 author and checker, ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/06-lattice-structures-in-crystalline-solids.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68773",
+      "sourceElementIds": [
+        "CNX_Chem_10_06_SimpleCub1"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3353,
+      "rationale": "The simple cubic figure’s caption says “Note that the spheres are in contact”; the middle drawing draws small spheres well apart at the corners of the cell. The caption is kept, with a Source note after the figure that says the drawing spaces the spheres and that in the structure the atoms touch along each edge, and a footer clause. Found by the 10.6 checker and the render reader, ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/06-lattice-structures-in-crystalline-solids.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68773",
+      "sourceElementIds": [
+        "fs-idm39353008"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3354,
+      "rationale": "The polonium example works with the molar mass 208.998 and divides 3.471 × 10⁻²² g by the volume rounded to 3.79 × 10⁻²³ cm³, printing 9.16 g/cm³; with this book’s molar mass (209) and the digits carried the density is 9.149, 9.15 g/cm³. The page prints the carried values and 9.15, with one Source note after the density line and a footer clause. Found by the 10.6 author, ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/06-lattice-structures-in-crystalline-solids.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68773",
+      "sourceElementIds": [
+        "fs-idp178963488"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3355,
+      "rationale": "The closest-packing paragraph lists lithium and sodium among the metals that crystallize in a hexagonal closest-packed structure; both are body-centered cubic at room temperature. The page leaves them out of the list, with a Source note after the figure and a footer clause. Found by the claim pass (F6), ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/06-lattice-structures-in-crystalline-solids.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68773",
+      "sourceElementIds": [
+        "CNX_Chem_10_07_CaF2Strctr"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3359,
+      "rationale": "The calcium fluoride caption names “fluoride ions (red)”; the unit-cell drawing colors every sphere green (the larger, paler green spheres inside are the fluoride ions). The page’s caption says “fluoride ions (light green)”, with a footer clause. Found by the 10.6 checker and the render readers, ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/06-lattice-structures-in-crystalline-solids.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68773",
+      "sourceElementIds": [
+        "fs-idp173470256"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3361,
+      "rationale": "The Bragg equation is said to be named “in honor of W. H. Bragg, the English physicist who first explained this phenomenon”; the explanation was the work of William Henry Bragg and his son William Lawrence Bragg. The page prints both names, with a Source note after the diffraction figure and a footer clause. Found by the claim pass (F7), ruled by the orchestrator, November 18, 2026."
     }
   ]
 }

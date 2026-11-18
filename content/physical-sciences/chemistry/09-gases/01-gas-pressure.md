@@ -371,7 +371,7 @@ if you exert less pressure, you are less likely to break through thin ice
   hint="Atmospheres to psi, with the sea-level relations in the table of pressure units."
 >}}
 
-*Source note:* the answer graded for this exercise is not the one the source prints; the source’s value does not follow from the stem’s pressure and the table’s factor.
+*Source note:* the answer graded here is not the one the source prints; the source’s value does not follow from the stem’s pressure and the table’s factor.
 
 {{< fillin
   question="Consider this scenario and answer the following question: On a mid-August day in the northeastern United States, the following information appeared in the local newspaper: atmospheric pressure at sea level 29.97 in. Hg, 1013.9 mbar. What was the pressure in kPa? Enter the pressure in kilopascals, converted from the reading in inches of mercury."

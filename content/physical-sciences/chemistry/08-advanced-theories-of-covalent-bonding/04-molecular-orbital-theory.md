@@ -109,12 +109,12 @@ $\sigma$
 $\pi$
 {{< /multiplechoice >}}
 
-{{< multiplechoice question="Label the molecular orbital shown in the figure above as $\sigma$ or $\pi$, bonding or antibonding and indicate where the node occurs." answer="antibonding" hint="Compare the phases of the two lobes that face each other between the nuclei." >}}
+{{< multiplechoice question="Label the molecular orbital shown in the figure above as $\sigma$ or $\pi$, bonding or antibonding and indicate where the node occurs." answer="antibonding" hint="Ask where the orbital’s lobes lie relative to the line through the two nuclei, and compare the phases of the two lobes that face each other between the nuclei." >}}
 bonding
 antibonding
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Label the molecular orbital shown in the figure above as $\sigma$ or $\pi$, bonding or antibonding and indicate where the node occurs." hint="Look along the line through the two nuclei, and at the region between them." >}}
+{{< selfcheck question="Label the molecular orbital shown in the figure above as $\sigma$ or $\pi$, bonding or antibonding and indicate where the node occurs." hint="Ask where the orbital’s lobes lie relative to the line through the two nuclei, and compare the phases of the two lobes that face each other between the nuclei." >}}
 The orbital is located along the internuclear axis, so it is a $\sigma$ orbital. There is a node bisecting the internuclear axis, so it is an antibonding orbital.
 
 {{< mediafigure src="chemistry/CNX_Chem_08_04_salabel_img" kind="diagram" alt="The same two pieces, with a vertical dashed line drawn through the gap between the two small lobes, midway between the two dots." >}}

@@ -95,9 +95,10 @@ import { amountHintProblem, heatAsk, isNegativeKey } from '../lib/heat-ask.mjs';
 import { askedUnit, shownUnit, showsAskedUnit } from '../lib/item-units.mjs';
 import { isWordRun, readWords } from '../lib/rubric-run.mjs';
 import { cePrinted } from '../lib/keyed-units.mjs';
-import { bareGreekMath, bareProportionality, bareSigmaPi, crowdedFractionRows, ungroupedNumberBeforeUnit, britishSpellingAndStraightApostrophes, italicOrbitalLetters, minusAsBond, overlappingRubricClauses, plainAnswerDisplays, straightApostrophes } from './chemistry-notation.mjs';
+import { bareGreekMath, bareProportionality, bareSigmaPi, crowdedFractionRows, ungroupedNumberBeforeUnit, britishSpellingAndStraightApostrophes, italicOrbitalLetters, minusAsBond, minusAsGroupBond, overlappingRubricClauses, plainAnswerDisplays, straightApostrophes } from './chemistry-notation.mjs';
 import {
-  colourOutsideVisible, dashHyphens, italicDescriptiveSubscripts, miscountedConfigurations, proseOnly, sourceNumberReferences, subshellLabelSlips,
+  chapterLandingLinks, choiceSelfcheckStems, colourOutsideVisible, dashHyphens, dataFiguresNoteVariants, DATA_FIGURES_NOTE, italicDescriptiveSubscripts,
+  miscountedConfigurations, proseOnly, sourceNumberReferences, subshellLabelSlips,
 } from './chemistry-readings.mjs';
 
 /**
@@ -197,6 +198,8 @@ const NAMED_ELEMENTS = Object.freeze({
   H: ['hydrogen', 'hydr'], B: ['boron', 'bor'], Be: ['beryllium', null], C: ['carbon', 'carb'], N: ['nitrogen', 'nitr'], O: ['oxygen', 'ox'],
   F: ['fluorine', 'fluor'], P: ['phosphorus', 'phosph'], S: ['sulfur', 'sulf'], Cl: ['chlorine', 'chlor'], Se: ['selenium', 'selen'],
   Br: ['bromine', 'brom'], I: ['iodine', 'iod'], Xe: ['xenon', null],
+  // 10.6's rutile: "What is the oxidation number of titanium?"
+  Ti: ['titanium', null],
 });
 
 /**
@@ -1280,6 +1283,10 @@ export function lintLeaks(src, filename = '') {
     for (const hit of minusAsBond(text)) {
       err(hit.index, `"${hit.written}" draws a bond with the minus sign U+2212 — a single bond between symbols is an en dash (H–C≡C–H)`);
     }
+    // Chapter 10's reading (F3): 10.2 and 10.3 copied the source's "−OH".
+    for (const hit of minusAsGroupBond(text)) {
+      err(hit.index, `"${hit.written}" draws a group's bond with the minus sign U+2212 — the bond is an en dash: "${hit.dash}" (playbook "Notation"; a charge, a signed number, and a temperature keep the minus sign), and the footer says the source's minus sign was written as a dash`);
+    }
     for (const hit of britishSpellingAndStraightApostrophes(text).filter((one) => one.kind === 'spelling')) {
       err(hit.index, `"${hit.written}" — American spelling, the source's: labeled, color, gray (a word the source itself spells otherwise is quoted in curly quotation marks)`);
     }
@@ -1442,6 +1449,31 @@ export function lintLeaks(src, filename = '') {
       if (!members.includes(twin)) {
         err(item.index, `${labelOf('textin', item.params)}: the geometry key "${key}" takes accept="${twin}" — the shape's other form is the same answer on every page`);
       }
+    }
+    // Chapter 10's consistency reading (November 18, 2026; each measured on
+    // the whole book before it went on). F4: a choice and the self-check
+    // after it under one source stem share the stem — the choice drops no
+    // sentence of it, "Explain your answer." included — and one hint (10.4's
+    // frozen-laundry pair did both).
+    for (const hit of choiceSelfcheckStems(text)) {
+      if (hit.dropped.length) {
+        err(hit.index, `multiplechoice: the self-check after it asks the same stem, and the choice's question drops ${hit.dropped.map((sentence) => JSON.stringify(sentence)).join(' and ')} — a choice keeps every sentence of the stem it shares, closing with its own question after them`);
+      }
+      if (hit.hintDiffers) {
+        err(hit.index, `multiplechoice: its hint and the hint of the self-check after it, under the same stem, differ — the two items of one stem share one hint word for word (a member whose hint differs is a tell; playbook "Hints")`);
+      }
+    }
+    // F2: a section page links a reference to another chapter to the
+    // section meant, never to the chapter's landing (10.1's "[chapter on
+    // chemical bonding and molecular geometry](/…/07-…/)").
+    if (/\/chemistry\/\d{2}-[^/]+\/\d{2}-[^/]+\.md$/.test(filename)) {
+      for (const hit of chapterLandingLinks(text)) {
+        err(hit.index, `the link [${hit.written}](${hit.target}) goes to a chapter's landing — resolve the reference to the section meant and link that section, "the chapter on thermochemistry ([Section 5.3 Enthalpy](…))" (playbook, page-skeleton rule 9)`);
+      }
+    }
+    // F6: the "figures from the data" Source note is chapter 9's sentence.
+    for (const hit of dataFiguresNoteVariants(text)) {
+      err(hit.index, `the Source note ${JSON.stringify(hit.written.slice(0, 80))}… says its answer is written to the figures its data give in its own words — the note is one sentence, word for word: ${JSON.stringify(DATA_FIGURES_NOTE)}`);
     }
     // A footer that says a defect was "kept as printed" on a page that
     // carries no Source note (7.5 said it twice): the learner meets the

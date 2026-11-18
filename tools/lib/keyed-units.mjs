@@ -25,6 +25,7 @@ import {
   descendants, firstElement, localName, normalizeText, normalizeWhitespace, parseXml, phraseCoverage, tokenSimilarity,
 } from './openstax-source.mjs';
 import { readNumeral } from '../../assets/js/lib/math/significant-figures.mjs';
+import { chemCanon } from '../../assets/js/lib/text/check-chem.mjs';
 
 /** Books that render only keyed exercises, by source-map book key. */
 export const KEYED_ONLY_BOOKS = Object.freeze(['chemistry']);
@@ -643,8 +644,19 @@ const sampleWords = (text) => padded(plain(String(text ?? '').replace(/\([^)]*\)
  */
 export function closedSet(stem, answer) {
   const lettered = sequentialParts(stem);
-  if (!lettered || !/\bwhich of the following\b/i.test(lettered.lead)) return null;
+  if (!lettered) return null;
   const choices = lettered.parts.map(({ label, text }) => ({ label, text }));
+  // An answer that is ONE part's letter and that part's own words, and
+  // nothing else — "(e) molecular crystals" under "Which best describes these
+  // crystals? (a) ionic (b) covalent network … (e) molecular crystals";
+  // "(b) metallic solid" under "Substance A is likely a(n): (a) ionic solid
+  // (b) metallic solid …" (10.5) — chooses that part, whatever the lead-in
+  // asks: the parts are the options.
+  const echoed = /^\s*\(([a-z])\)\s*(.+?)\s*\.?\s*$/.exec(String(answer ?? ''));
+  if (echoed && lettered.parts.some((part) => part.label === echoed[1] && tight(part.text).replace(/\.$/, '') === tight(echoed[2]))) {
+    return { lead: lettered.lead, choices, chosen: echoed[1] };
+  }
+  if (!/\bwhich of the following\b/i.test(lettered.lead)) return null;
   // A lone letter under a lead-in that asks for THE one part with the most
   // or least of something ("For which of the following substances is the
   // least energy required …?" → "(d)", 7.5): one choice, not one part named
@@ -1052,6 +1064,15 @@ function ownScore(unit, question, item = {}) {
       if (datum && unit.lead && tokenSimilarity(unit.lead, question) >= LEAD_FLOOR && padded(plain(question)).includes(padded(datum))) {
         return { score: RESTATED_SCORE * RESTATED_FLOOR, words: datum.split(' ').length, near, exact: 0 };
       }
+      // A part that is a list of formulas, re-listed in another order — an
+      // ordering's stem never lists its members in the key's order or its
+      // reverse (docs/subjects/chemistry.md "Stems"), so 10.1's "CH 4 , C 2
+      // H 6 , C 3 H 8" is printed "C₂H₆, C₃H₈, CH₄": the part is the item's
+      // when the question's list after a colon holds the same members, under
+      // a lead-in it reads like.
+      if (unit.lead && tokenSimilarity(unit.lead, question) >= LEAD_FLOOR && relistedPart(unit.partText, question)) {
+        return { score: 1, words, near, exact: 0 };
+      }
       return { score: 0, words: 0 };
     }
     const lead = unit.lead ? tokenSimilarity(unit.lead, question) : 1;
@@ -1081,6 +1102,26 @@ function ownScore(unit, question, item = {}) {
     ? Math.max(tokenSimilarity(bare, unit.stem), configured ? tokenSimilarity(plain(bare), plain(unit.stem)) : 0) : 0;
   const score = Math.max(near, own === null ? 0 : tokenSimilarity(own, unit.stem), unclosed);
   return { score: score >= WHOLE_FLOOR ? score : 0, words: 0, near: Math.max(near, score), exact: 0 };
+}
+
+/** A comma list's members as formulas, sorted, or null where any member is no formula or there are fewer than two. */
+function formulaSet(text) {
+  const members = String(text ?? '').split(/,|\s+and\s+/).map((member) => member.replace(/^\s*and\s+/, '').trim()).filter(Boolean);
+  if (members.length < 2) return null;
+  const canon = members.map((member) => chemCanon(member, 'formula'));
+  return canon.every(Boolean) ? canon.sort().join(' ') : null;
+}
+
+/**
+ * Whether `question` prints a part that is a list of formulas ("CH 4 , C 2 H
+ * 6 , C 3 H 8") with its members in another order: a list after one of its
+ * colons, up to that sentence's end, holding the same formulas each once.
+ */
+export function relistedPart(partText, question) {
+  const part = formulaSet(partText);
+  if (!part) return false;
+  return String(question ?? '').split(':').slice(1)
+    .some((after) => formulaSet(after.split(/[.?!](?:\s|$)/)[0]) === part);
 }
 
 /**

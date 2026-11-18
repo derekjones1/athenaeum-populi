@@ -150,7 +150,7 @@ Hypothesis becomes theory
 ### Differentiate among hypotheses, theories, and laws
 
 {{< multiplechoice
-  question="Identify the following statement as being most similar to a hypothesis, a law, or a theory. The pressure of a sample of gas is directly proportional to the temperature of the gas."
+  question="Identify the following statement as being most similar to a hypothesis, a law, or a theory. Explain your reasoning. The pressure of a sample of gas is directly proportional to the temperature of the gas."
   answer="law"
   hint="Ask whether the statement summarizes what is observed, explains it in a well-tested way, or proposes a tentative explanation still to be tested."
 >}}
@@ -159,7 +159,7 @@ law
 theory
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Identify the following statement as being most similar to a hypothesis, a law, or a theory. Explain your reasoning. The pressure of a sample of gas is directly proportional to the temperature of the gas." hint="Compare the statement with the paragraph that sets out what each of the three kinds of statement does." >}}
+{{< selfcheck question="Identify the following statement as being most similar to a hypothesis, a law, or a theory. Explain your reasoning. The pressure of a sample of gas is directly proportional to the temperature of the gas." hint="Ask whether the statement summarizes what is observed, explains it in a well-tested way, or proposes a tentative explanation still to be tested." >}}
 Law (states a consistently observed phenomenon, can be used for prediction).
 ===CHECKS===
 law
@@ -168,7 +168,7 @@ can be used for prediction
 {{< /selfcheck >}}
 
 {{< multiplechoice
-  question="Identify the following statement as being most similar to a hypothesis, a law, or a theory. Matter consists of tiny particles that can combine in specific ratios to form substances with specific properties."
+  question="Identify the following statement as being most similar to a hypothesis, a law, or a theory. Explain your reasoning. Matter consists of tiny particles that can combine in specific ratios to form substances with specific properties."
   answer="theory"
   hint="Ask whether the statement summarizes what is observed, explains it in a well-tested way, or proposes a tentative explanation still to be tested."
 >}}
@@ -177,7 +177,7 @@ law
 theory
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Identify the following statement as being most similar to a hypothesis, a law, or a theory. Explain your reasoning. Matter consists of tiny particles that can combine in specific ratios to form substances with specific properties." hint="Compare the statement with the paragraph that sets out what each of the three kinds of statement does." >}}
+{{< selfcheck question="Identify the following statement as being most similar to a hypothesis, a law, or a theory. Explain your reasoning. Matter consists of tiny particles that can combine in specific ratios to form substances with specific properties." hint="Ask whether the statement summarizes what is observed, explains it in a well-tested way, or proposes a tentative explanation still to be tested." >}}
 Theory (a widely accepted explanation of the behavior of matter).
 ===CHECKS===
 theory
@@ -185,7 +185,7 @@ a widely accepted explanation of the behavior of matter
 {{< /selfcheck >}}
 
 {{< multiplechoice
-  question="Identify the following statement as being most similar to a hypothesis, a law, or a theory. At a higher temperature, solids (such as salt or sugar) will dissolve better in water."
+  question="Identify the following statement as being most similar to a hypothesis, a law, or a theory. Explain your reasoning. At a higher temperature, solids (such as salt or sugar) will dissolve better in water."
   answer="hypothesis"
   hint="Ask whether the statement summarizes what is observed, explains it in a well-tested way, or proposes a tentative explanation still to be tested."
 >}}
@@ -194,7 +194,7 @@ law
 theory
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Identify the following statement as being most similar to a hypothesis, a law, or a theory. Explain your reasoning. At a higher temperature, solids (such as salt or sugar) will dissolve better in water." hint="Compare the statement with the paragraph that sets out what each of the three kinds of statement does." >}}
+{{< selfcheck question="Identify the following statement as being most similar to a hypothesis, a law, or a theory. Explain your reasoning. At a higher temperature, solids (such as salt or sugar) will dissolve better in water." hint="Ask whether the statement summarizes what is observed, explains it in a well-tested way, or proposes a tentative explanation still to be tested." >}}
 Hypothesis (a tentative explanation, can be investigated by experimentation).
 ===CHECKS===
 hypothesis
@@ -249,7 +249,7 @@ symbolic, microscopic
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="The amount of heat required to melt 2 lbs of ice is twice the amount of heat required to melt 1 lb of ice. Is this observation a macroscopic or microscopic description of chemical behavior?"
+  question="The amount of heat required to melt 2 lbs of ice is twice the amount of heat required to melt 1 lb of ice. Is this observation a macroscopic or microscopic description of chemical behavior? Explain your answer."
   answer="macroscopic"
   hint="Ask what the observation measures, and whether that measurement is made on a sample or on its particles."
 >}}
@@ -257,7 +257,7 @@ macroscopic
 microscopic
 {{< /multiplechoice >}}
 
-{{< selfcheck question="The amount of heat required to melt 2 lbs of ice is twice the amount of heat required to melt 1 lb of ice. Is this observation a macroscopic or microscopic description of chemical behavior? Explain your answer." hint="Reread the paragraphs that describe the three domains of chemistry." >}}
+{{< selfcheck question="The amount of heat required to melt 2 lbs of ice is twice the amount of heat required to melt 1 lb of ice. Is this observation a macroscopic or microscopic description of chemical behavior? Explain your answer." hint="Ask what the observation measures, and whether that measurement is made on a sample or on its particles." >}}
 Macroscopic. The heat required is determined from macroscopic properties.
 ===CHECKS===
 macroscopic
@@ -266,4 +266,4 @@ the heat required is determined from macroscopic properties
 
 ---
 
-<small>This section is adapted from [Chemistry 2e, Section 1.1: Chemistry in Context](https://openstax.org/books/chemistry-2e/pages/1-1-chemistry-in-context) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the four figures re-encoded as WebP, the alchemist’s-workshop pair (a woodcut and a photograph) kept as a photo and the web of fields, the scientific-method flowchart, and the water figure marked as diagrams; every figure’s alt text rewritten from the image (the flowchart’s and the water figure’s source alts exceed the length limit, the water figure’s spells the formula out letter by letter and does not present the phase labels as part (c), and the web diagram’s calls the web a flowchart and says each of the ten fields joined to chemistry is further connected to the outer fields, when three of them join none), with extended descriptions added to the web diagram listing every line and to the flowchart walking every arrow; references to numbered figures replaced by describing phrases; the end-of-section exercises adapted into the interactive Practice block — the four exercises the source keys are carried as thirteen items (eight multiple-choice items, five self-checks): the hypothesis-law-theory exercise and the heat-to-melt-ice exercise each ask their choice as a multiple-choice item whose options are the stem’s own alternatives in the stem’s order, followed by a self-check that asks the whole question with its “Explain” sentence and carries the source solution (capitals and periods added), the “Explain” sentence being left out of the multiple-choice item, which cannot take an explanation; the domains exercise’s four parts are multiple-choice items over the same four options on every part — the stem’s three domains, with the symbolic domain split into “symbolic, macroscopic” and “symbolic, microscopic” as the stem’s second sentence asks — keyed as the source answers; the thermometer exercise is a self-check carrying the source solution; each lettered part’s lead-in restated in the singular for that part (“Identify the following statement as…”, “Identify the underlined item as…; If it is in the symbolic domain, indicate whether it is a symbol for…”), with the source’s underlining kept and the underlined words also named in a closing parenthesis, since a screen reader does not announce an underline; every self-check given rubric checkpoints decomposing its model answer; the 3 exercises the source prints no answer for are omitted; six filler items added: four text-recall items, each a cloze on one body sentence — the sentence in the paragraph tracing attempts to understand matter back more than 2500 years naming who spread chemical technologies and speculations from Egypt, China, and the eastern Mediterranean, the sentence in the drug-sources paragraph naming the plentiful source Percy Lavon Julian turned to, the sentence in the central-science paragraph naming where biology and chemistry converge, and the opening sentence of the scientific-method subsection — and two multiple-choice items: one asking which field helps provide sustenance in the form of food and drink, its options four fields the central-science paragraph names, and one asking which box the flowchart’s arrow from “Form hypothesis; make prediction” leads to, its options four of the flowchart’s own boxes.</small>
+<small>This section is adapted from [Chemistry 2e, Section 1.1: Chemistry in Context](https://openstax.org/books/chemistry-2e/pages/1-1-chemistry-in-context) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the four figures re-encoded as WebP, the alchemist’s-workshop pair (a woodcut and a photograph) kept as a photo and the web of fields, the scientific-method flowchart, and the water figure marked as diagrams; every figure’s alt text rewritten from the image (the flowchart’s and the water figure’s source alts exceed the length limit, the water figure’s spells the formula out letter by letter and does not present the phase labels as part (c), and the web diagram’s calls the web a flowchart and says each of the ten fields joined to chemistry is further connected to the outer fields, when three of them join none), with extended descriptions added to the web diagram listing every line and to the flowchart walking every arrow; references to numbered figures replaced by describing phrases; the end-of-section exercises adapted into the interactive Practice block — the four exercises the source keys are carried as thirteen items (eight multiple-choice items, five self-checks): the hypothesis-law-theory exercise and the heat-to-melt-ice exercise each ask their choice as a multiple-choice item whose options are the stem’s own alternatives in the stem’s order and whose stem is the whole question with its “Explain” sentence, followed by a self-check that asks the same question with the same hint and carries the source solution (capitals and periods added); the domains exercise’s four parts are multiple-choice items over the same four options on every part — the stem’s three domains, with the symbolic domain split into “symbolic, macroscopic” and “symbolic, microscopic” as the stem’s second sentence asks — keyed as the source answers; the thermometer exercise is a self-check carrying the source solution; each lettered part’s lead-in restated in the singular for that part (“Identify the following statement as…”, “Identify the underlined item as…; If it is in the symbolic domain, indicate whether it is a symbol for…”), with the source’s underlining kept and the underlined words also named in a closing parenthesis, since a screen reader does not announce an underline; every self-check given rubric checkpoints decomposing its model answer; the 3 exercises the source prints no answer for are omitted; six filler items added: four text-recall items, each a cloze on one body sentence — the sentence in the paragraph tracing attempts to understand matter back more than 2500 years naming who spread chemical technologies and speculations from Egypt, China, and the eastern Mediterranean, the sentence in the drug-sources paragraph naming the plentiful source Percy Lavon Julian turned to, the sentence in the central-science paragraph naming where biology and chemistry converge, and the opening sentence of the scientific-method subsection — and two multiple-choice items: one asking which field helps provide sustenance in the form of food and drink, its options four fields the central-science paragraph names, and one asking which box the flowchart’s arrow from “Form hypothesis; make prediction” leads to, its options four of the flowchart’s own boxes.</small>

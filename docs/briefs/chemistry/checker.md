@@ -8,7 +8,7 @@ false "all clean" is worse than a false alarm. `SP` is the directory this
 brief is in.
 
 Repository root: `/Users/derek/GolandProjects/athenaeum-populi`. **Do not
-edit any file** except your report `$SP/check-N.M.md`, which you append to as
+edit any file** except your report (`$SP/checker-N.M.md`, or the name your task gives), which you append to as
 you go. **Never run a git command. Do not spawn sub-agents.** No `npm test`,
 `npm run build`, `npm run ci`, `ledger:merge`, `baseline:update`,
 `source:*` except `npm run source:diff -- <page>`. **Do not read the
@@ -100,6 +100,14 @@ catch.
 - Read the page beside the module, paragraph by paragraph: nothing dropped,
   condensed, reordered, or added. Run `npm run source:diff -- <page>` and
   explain every ADDED sentence and NEAR-MISS word.
+- Run `node tools/verify/verify-source-keys.mjs <page> --verbose` and read
+  every line it labels "added sentence (read it against the source)": a
+  sentence a model answer adds to the source's must be true, must not
+  contradict the sentence beside it, and is named in the footer — the gate
+  counts shared words and cannot tell an addition that contradicts the
+  source from one that explains it *(chapter 10)*. A gate that crashes
+  inside tool code while another session is editing the tools is re-run
+  once before it is reported.
 - **Every display equation and every inline math span against its MathML**:
   each number, exponent, unit, and struck-through unit. A dropped
   cancellation or a unit moved across a fraction bar is a defect.
@@ -135,6 +143,17 @@ that part's `mediafigure` and says "the figure above": open the CNXML part
 and the figure's `src` and confirm they are the same image — an item under
 its neighbour's figure is keyed to the wrong structure, and nothing in the
 stem shows it.
+
+- **Read every caption against its image, and every figure label that
+  states a physical value** *(chapter 10)*: a caption stays verbatim, so
+  what it says of the drawing — a colour, "the spheres are in contact", a
+  count — is checked against the picture, and a label's value against the
+  page's own text and tables (10.6's fluoride ions "red" in an all-green
+  drawing; 10.5's bracket labeled as an atomic spacing across two ring
+  centres; 10.4's critical point drawn off its own table). Report each
+  mismatch as a suspected source defect; the alt says what is drawn.
+- **A model for a molecule is read by its sticks**, not by the formula's
+  bond orders: count the sticks drawn between two atoms *(chapter 10)*.
 
 ## 4a. Hints, text answers, taught rules
 
@@ -295,7 +314,7 @@ stem shows it.
 
 ## 6. Report
 
-`$SP/check-N.M.md`: a numbered list of DEFECTS, each with the line, the
+`$SP/checker-N.M.md` (or the name your task gives): a numbered list of DEFECTS, each with the line, the
 evidence (the CNXML element id or the image), and the exact fix; then
 CONCERNS (judgment calls); then **LESSONS — anything the playbook, the
 brief, the lint, or the grader should have caught or said and did not**.

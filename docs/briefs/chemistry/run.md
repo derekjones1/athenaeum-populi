@@ -396,6 +396,61 @@ Ten things chapter 9's second run added (`docs/history/chemistry.md`,
   prune, one full `npm test`, build, `check:build`, the browser suite,
   then the commits.
 
+Twelve things chapter 10 added (`docs/history/chemistry.md`, "Chapter 10"):
+
+- **The source-keys gate reads a corrected word, number, or sentence in a
+  model answer** (`swappedWords`, the per-kind deviation lookup, the added
+  words beside a drawing): an undisclosed change FAILS, and a filed entry
+  the page no longer needs is stale. So a ruling that corrects a model
+  answer still files its entry first — and the parent runs the real gate
+  on the first page that lands with one, since the gate was taught each of
+  these readings only when a chapter 10 page failed it.
+- **`--verbose` lists every sentence a model answer ADDS to the source's**:
+  the gate cannot tell an addition that contradicts the source from one
+  that explains it, so the checker reads each line (`checker.md` §3).
+- **The parent adds the exercise counts on a calculator, not in its
+  head**: two printed-exercise offsets were one too high, the values agent
+  was sent them, and the run-facts Clerk's element count caught it.
+- **A ruling that fixes a WORDING is counted across the book before it is
+  sent** (`grep -rhoE` the two forms, `sort | uniq -c`): the parent ruled a
+  Source-note opening onto three pages from one chapter's use and the
+  consistency reader's word; the book had it 4 times and the other form
+  28, and the playbook gave the other. §0 already says a decision that
+  names a playbook rule is written with the rule open.
+- **An appendix whose value an example fetches is read for that value
+  before the wave.** Appendix E's enthalpy of melting was a source
+  misprint (6.088 for 6.01 kJ/mol); the values agent found it only because
+  it listed every constant beside the appendix. A corrected appendix cell
+  is a `deviations` entry in `tools/verify/verify-source-tables.mjs`, a
+  Source note under the table that cites an authority, and an erratum.
+- **A figure the page calls "to scale" is read against the page's own
+  table before a ruling leans on it**, and the ruling says which is the
+  authority for what: 10.4's carbon dioxide diagram is the authority for a
+  reading off it and draws its critical point off the module's table.
+- **A hint that points at a figure is read with the figure as the learner
+  has it at that item**: the carbon diagram's regions are unlabeled until
+  the drawing parts that follow, so "read the region" said nothing.
+- **Stem data that are not the substance's real value are found by the
+  claim pass, not the checker**: four in this chapter. The claim pass's
+  brief need not change; the parent expects them and rules by "Source
+  defects", "A stem datum that is physically off is not changed".
+- **A sweep that restores a sentence to a choice's stem is carried by the
+  parent with assertions** (key and options byte for byte, the old
+  question's sentences all present in the new): `ledger-carry plan` lists
+  it as changed, and a re-solve of an unchanged question is waste. A
+  self-check whose question changed takes a parent record that carries the
+  old note.
+- **A second usage limit killed three readers at once; all three resumed
+  by `SendMessage`.** Two had written only their report's header: tell
+  every reader "append after each page" in the launch prompt as well as
+  the brief.
+- **Port 1315 may be held by a server this session did not start**: serve
+  on another (`PORT=1325 npm run serve:public`, `SHOT_BASE=http://localhost:1325`)
+  and leave the other alone.
+- **The lints the readings ask for are written while the solve runs** (no
+  content edits), measured on the whole book, and their hits swept after
+  the solve's records are merged, from a snapshot — four went on this run.
+
 ## 1. Before the wave
 
 `SP` is this session's scratchpad. Never a git command from an agent — say

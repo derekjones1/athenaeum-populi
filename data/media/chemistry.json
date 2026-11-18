@@ -11301,6 +11301,1769 @@
       "caption": "",
       "scale": "scaled-down"
     },
+    "CNX_Chem_10_00_Punch": {
+      "source": "media/CNX_Chem_10_00_Punch.jpg",
+      "sourceSha256": "905cc65dbdba49f55a51ab56faeda3a59fb91cf1e99919d247c2fe7abb295858",
+      "module": "m68760",
+      "kind": "photo",
+      "width": 1500,
+      "height": 605,
+      "variants": [
+        {
+          "width": 800,
+          "height": 322,
+          "file": "CNX_Chem_10_00_Punch-800.webp"
+        },
+        {
+          "width": 1500,
+          "height": 605,
+          "file": "CNX_Chem_10_00_Punch-1500.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows pieces of a white substance which appear to be sublimating. To the right of these pieces are three graduated cylinders. Each cylinder holds a different color liquid, and above the liquid, the cylinders are filled with a fog-like substance. This fog-like substance swirls out of the top and around the outside of the cylinders.",
+      "caption": "Solid carbon dioxide (“dry ice”, left) sublimes vigorously when placed in a liquid (right), cooling the liquid and generating a dense mist of water above the cylinder. (credit: modification of work by Paul Flowers)"
+    },
+    "CNX_Chem_10_01_AceticAcid_img": {
+      "source": "media/CNX_Chem_10_01_AceticAcid_img.jpg",
+      "sourceSha256": "cfa36788a77a9ac17398c50e9a47989fc063cc235521fc3d13adc5177acef536",
+      "module": "m68761",
+      "kind": "photo",
+      "width": 221,
+      "height": 140,
+      "variants": [
+        {
+          "width": 221,
+          "height": 140,
+          "file": "CNX_Chem_10_01_AceticAcid_img-221.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A Lewis structure shows a carbon atom single bonded to three hydrogen atoms and one other carbon atom, that is in turn double bonded to an oxygen atom and single bonded to another oxygen atom that is single bonded to a hydrogen atom. Dotted lines connect the terminal oxygen and hydrogen atoms to a reciprocal lewis structure to the right, rotated 180 degrees. Each dotted line is labeled “hydrogen bond.”",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_10_01_Aminacidch_img": {
+      "source": "media/CNX_Chem_10_01_Aminacidch_img.jpg",
+      "sourceSha256": "344fbe03c5be11d7cf7734a7572d763eb4a3ab33b6fc70408573d4f434414e47",
+      "module": "m68761",
+      "kind": "photo",
+      "width": 320,
+      "height": 138,
+      "variants": [
+        {
+          "width": 320,
+          "height": 138,
+          "file": "CNX_Chem_10_01_Aminacidch_img-320.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two turns of a helical structure are shown horizontally. Three Lewis structures are superimposed on the helix. The first shows horizontally stacked dashes next to an oxygen atom, with three dots connecting to a hydrogen atom, and a single dash connecting the hydrogen atom to a nitrogen atom. The second shows a carbon atom double bonded to an oxygen atom, then three dots connecting to a hydrogen atom which is bonded to a nitrogen atom. The third shows a carbon atom double bonded to an oxygen atom with three dots extending to the right of the oxygen atom.",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_10_01_BoilPoints_img": {
+      "source": "media/CNX_Chem_10_01_BoilPoints_img.jpg",
+      "sourceSha256": "e4c64e1a8bbdda91fc71139bf937a0d76c02d4191137fd95a8e9a4915b8220d3",
+      "module": "m68761",
+      "kind": "photo",
+      "width": 1000,
+      "height": 648,
+      "variants": [
+        {
+          "width": 800,
+          "height": 518,
+          "file": "CNX_Chem_10_01_BoilPoints_img-800.webp"
+        },
+        {
+          "width": 1000,
+          "height": 648,
+          "file": "CNX_Chem_10_01_BoilPoints_img-1000.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A line graph, titled “Carbon Family,” is shown where the y-axis is labeled “Temperature, ( degree sign C )” and has values of “negative 200” to “negative 40” from bottom to top in increments of 20. The x-axis is labeled “Period” and has values of “0” to “5” in increments of 1. The first point on the graph is labeled “C H subscript 4” and is at point “2, negative 160.” The second point on the graph is labeled “S i H subscript 4” and is at point “3, negative 120” while the third point on the graph is labeled “G e H subscript 4” and is at point “4, negative 100.” The fourth point on the graph is labeled “S n H subscript 4” and is at point “5, negative 60.”",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_01_ButanePhase": {
+      "source": "media/CNX_Chem_10_01_ButanePhase.jpg",
+      "sourceSha256": "be9fcdd8570212c6db0a81c54d51f7e1c2377407fe8f76807bea99b3e71828d3",
+      "module": "m68761",
+      "kind": "photo",
+      "width": 325,
+      "height": 680,
+      "variants": [
+        {
+          "width": 325,
+          "height": 680,
+          "file": "CNX_Chem_10_01_ButanePhase-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A butane lighter is shown.",
+      "caption": "Gaseous butane is compressed within the storage compartment of a disposable lighter, resulting in its condensation to the liquid state. (credit: modification of work by “Sam-Cat”/Flickr)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_01_DNA": {
+      "source": "media/CNX_Chem_10_01_DNA.jpg",
+      "sourceSha256": "1dfd75c0b622fe07d51392850ee8e3d5d6de902726171fcd0674ef376d0e85c9",
+      "module": "m68761",
+      "kind": "photo",
+      "width": 325,
+      "height": 503,
+      "variants": [
+        {
+          "width": 325,
+          "height": 503,
+          "file": "CNX_Chem_10_01_DNA-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two images are shown. The first lies on the left side of the page and shows a helical structure like a twisted ladder where the rungs of the ladder, labeled “Base pair” are red, yellow, green and blue paired bars. The red and yellow bars, which are always paired together, are labeled in the legend, which is titled “Nitrogenous bases” as “adenine” and “thymine,” respectively. The blue and green bars, which are always paired together, are labeled in the legend as “guanine” and “cytosine,” respectively. At the top of the helical structure, the left-hand side rail, or “Sugar, dash, phosphate backbone,” is labeled as “3, prime” while the right is labeled as “5, prime.” These labels are reversed at the bottom of the helix. To the right of the page is a large Lewis structure. The top left corner of this structure, labeled “5, prime,” shows a phosphorus atom single bonded to three oxygen atoms, one of which has a superscripted negative charge, and double bonded to a fourth oxygen atom. One of the single bonded oxygen atoms is single bonded to the left corner of a five-membered ring with an oxygen atom at its top point and which is single bonded to an oxygen atom on the bottom left. This oxygen atom is single bonded to a phosphorus atom that is single bonded to two other hydrogen atoms and double bonded to a fourth oxygen atom. The lower left of these oxygen atoms is single bonded to another oxygen atom that is single bonded to a five-membered ring with an oxygen in the upper bonding site. The bottom left of this ring has a hydroxyl group attached to it while the upper right carbon is single bonded to a nitrogen atom that is part of a five-membered ring bonded to a six-membered ring. Both of these rings have points of unsaturation and nitrogen atoms bonded into their structures. On the right side of the six-membered ring are two single bonded amine groups and a double bonded oxygen. Three separate dotted lines extend from these sites to corresponding sites on a second six-membered ring. This ring has points of unsaturation and a nitrogen atom in the bottom right bonding position that is single bonded to a five-membered ring on the right side of the image. This ring is single bonded to a carbon that is single bonded to an oxygen that is single bonded to a phosphorus. The phosphorus is single bonded to two other oxygen atoms and double bonded to a fourth oxygen atom. This group is labeled “5, prime.” The five-membered ring is also bonded on the top side to an oxygen that is bonded to a phosphorus single bonded to two other oxygen atoms and double bonded to a fourth oxygen atom. The upper left oxygen of this group is single bonded to a carbon that is single bonded to a five-membered ring with an oxygen in the bottom bonding position. This ring has a hydroxyl group on its upper right side that is labeled “3, prime” and is bonded on the left side to a nitrogen that is a member of a five-membered ring. This ring is bonded to a six-membered ring and both have points of unsaturation. This ring has a nitrogen on the left side, as well as an amine group, that have two dotted lines leading from them to an oxygen and amine group on a six membered ring. These dotted lines are labeled “Hydrogen bonds.” The six membered ring also has a double bonded oxygen on its lower side and a nitrogen atom on its left side that is single bonded to a five-membered ring. This ring connects to the two phosphate groups mentioned at the start of this to form a large circle. The name “guanine” is written below the lower left side of this image while the name “cytosine” is written on the lower right. The name “thymine” is written above the right side of the image and “adenine” is written on the top right. Three sections are indicated below the images where the left is labeled “Sugar, dash, phosphate backbone,” the middle is labeled “Bases” and the right is labeled “Sugar, dash, phosphate backbone.”",
+      "caption": "Two separate DNA molecules form a double-stranded helix in which the molecules are held together via hydrogen bonding. (credit: modification of work by Jerome Walker, Dennis Myts)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_01_DNA2": {
+      "source": "media/CNX_Chem_10_01_DNA2.jpg",
+      "sourceSha256": "7ff775ba3690af982c323be9dde648557dea53f8390e278bd862f48f0d4e282c",
+      "module": "m68761",
+      "kind": "photo",
+      "width": 975,
+      "height": 664,
+      "variants": [
+        {
+          "width": 800,
+          "height": 545,
+          "file": "CNX_Chem_10_01_DNA2-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 664,
+          "file": "CNX_Chem_10_01_DNA2-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A large Lewis structure is shown. The top left corner of this structure, labeled “5, prime,” shows a phosphorus atom single bonded to three oxygen atoms, one of which has a superscripted negative charge, and double bonded to a fourth oxygen atom. One of the single bonded oxygen atoms is single bonded to the left corner of a five-membered ring with an oxygen atom at its top point and which is single bonded to an oxygen atom on the bottom left. This oxygen atom is single bonded to a phosphorus atom that is single bonded to two other hydrogen atoms and double bonded to a fourth oxygen atom. The lower left of these oxygen atoms is single bonded to another oxygen atom that is single bonded to a five-membered ring with an oxygen in the upper bonding site. The bottom left of this ring has a hydroxyl group attached to it while the upper right carbon is single bonded to a nitrogen atom that is part of a five-membered ring bonded to a six-membered ring. Both of these rings have points of unsaturation and nitrogen atoms bonded into their structures. On the right side of the six-membered ring are two single bonded amine groups and a double bonded oxygen. Three separate dotted lines extend from these sites to corresponding sites on a second six-membered ring. This ring has points of unsaturation and a nitrogen atom in the bottom right bonding position that is single bonded to a five-membered ring on the right side of the image. This ring is single bonded to a carbon that is single bonded to an oxygen that is single bonded to a phosphorus. The phosphorus is single bonded to two other oxygen atoms and double bonded to a fourth oxygen atom. This group is labeled “5, prime.” The five-membered ring is also bonded on the top side to an oxygen that is bonded to a phosphorus single bonded to two other oxygen atoms and double bonded to a fourth oxygen atom. The upper left oxygen of this group is single bonded to a carbon that is single bonded to a five-membered ring with an oxygen in the bottom bonding position. This ring has a hydroxyl group on its upper right side that is labeled “3, prime” and is bonded on the left side to a nitrogen that is a member of a five-membered ring. This ring is bonded to a six-membered ring and both have points of unsaturation. This ring has a nitrogen on the left side, as well as an amine group, that have two dotted lines leading from them to an oxygen and amine group on a six membered ring. These dotted lines are labeled “Hydrogen bonds.” The six membered ring also has a double bonded oxygen on its lower side and a nitrogen atom on its left side that is single bonded to a five-membered ring. This ring connects to the two phosphate groups mentioned at the start of this to form a large circle. The name “guanine” is written below the lower left side of this image while the name “cytosine” is written on the lower right. The name “thymine” is written above the right side of the image and “adenine” is written on the top right. Three sections are indicated below the images where the left is labeled “Sugar, dash, phosphate backbone,” the middle is labeled “Bases” and the right is labeled “Sugar, dash, phosphate backbone.”",
+      "caption": "The geometries of the base molecules result in maximum hydrogen bonding between adenine and thymine (AT) and between guanine and cytosine (GC), so-called “complementary base pairs.”"
+    },
+    "CNX_Chem_10_01_DipDip": {
+      "source": "media/CNX_Chem_10_01_DipDip.jpg",
+      "sourceSha256": "01b3866e9ea2c1012f0fea64c552693bfe931bdf370ecc0a7a229a51083e9b5c",
+      "module": "m68761",
+      "kind": "photo",
+      "width": 975,
+      "height": 234,
+      "variants": [
+        {
+          "width": 800,
+          "height": 192,
+          "file": "CNX_Chem_10_01_DipDip-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 234,
+          "file": "CNX_Chem_10_01_DipDip-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two pairs of molecules are shown where each molecule has one larger blue side labeled “delta sign, negative sign” and a smaller red side labeled “delta sign, positive sign. In the first pair, the red sides of the two molecules both face to the left and the blue side to the right. A horizontal dotted line lies in between the two. In the second pair, the molecules face up and down, with the red and blue ends aligning. A horizontal dotted line lies between the red and blue ends facing upward and another lies between the red and blue ends facing downward.",
+      "caption": "This image shows two arrangements of polar molecules, such as HCl, that allow an attraction between the partial negative end of one molecule and the partial positive end of another.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_01_DispForces": {
+      "source": "media/CNX_Chem_10_01_DispForces.jpg",
+      "sourceSha256": "da446f8a3ce0134b4332ca617b315ed9dc69e618e1d343527e76f111bd6a6192",
+      "module": "m68761",
+      "kind": "photo",
+      "width": 556,
+      "height": 414,
+      "variants": [
+        {
+          "width": 556,
+          "height": 414,
+          "file": "CNX_Chem_10_01_DispForces-556.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two pairs of molecules are shown where each molecule has one larger blue side labeled “delta sign, negative sign” and a smaller red side labeled “delta sign, positive sign.” Toward the middle of the both molecules, but still on each distinct side, is a black dot. Between the two images is a dotted line labeled, “Attractive force.” In the first image, the red and blue sides are labeled, “Unequal distribution of electrons.” Below both images are brackets. The brackets are labeled, “Temporary dipoles.”",
+      "caption": "Dispersion forces result from the formation of temporary dipoles, as illustrated here for two nonpolar diatomic molecules.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_01_Geckos": {
+      "source": "media/CNX_Chem_10_01_Geckos.jpg",
+      "sourceSha256": "7ca3c47ba509cf2e84715311b6f6e033afe379786949b4c84b4d968d7bfc3e80",
+      "module": "m68761",
+      "kind": "photo",
+      "width": 1142,
+      "height": 397,
+      "variants": [
+        {
+          "width": 800,
+          "height": 278,
+          "file": "CNX_Chem_10_01_Geckos-800.webp"
+        },
+        {
+          "width": 1142,
+          "height": 397,
+          "file": "CNX_Chem_10_01_Geckos-1142.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Three figures are shown. The first is a photo of the bottom of a gecko’s foot. The second is bigger version which shows the setae. The third is a bigger version of the setae and shows the spatulae.",
+      "caption": "Geckos’ toes contain large numbers of tiny hairs (setae), which branch into many triangular tips (spatulae). Geckos adhere to surfaces because of van der Waals attractions between the surface and a gecko’s millions of spatulae. By changing how the spatulae contact the surface, geckos can turn their stickiness “on” and “off.” (credit photo: modification of work by “JC*+A!”/Flickr)"
+    },
+    "CNX_Chem_10_01_HBonding": {
+      "source": "media/CNX_Chem_10_01_HBonding.jpg",
+      "sourceSha256": "61cdcbeb1007036ea1a433ae1cb3ffeaacfd8b9d34e99ca3dc859a956b6ad24a",
+      "module": "m68761",
+      "kind": "photo",
+      "width": 941,
+      "height": 463,
+      "variants": [
+        {
+          "width": 800,
+          "height": 393,
+          "file": "CNX_Chem_10_01_HBonding-800.webp"
+        },
+        {
+          "width": 941,
+          "height": 463,
+          "file": "CNX_Chem_10_01_HBonding-941.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Five water molecules are shown near one another, but not touching. A dotted line lies between many of the hydrogen atoms on one molecule and the oxygen atom on another molecule.",
+      "caption": "Water molecules participate in multiple hydrogen-bonding interactions with nearby water molecules.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_01_HydrideBP1": {
+      "source": "media/CNX_Chem_10_01_HydrideBP1.jpg",
+      "sourceSha256": "d77c654d256387042eb70d9fe164e28681b43bddff761f2a6be9545d70df8b2b",
+      "module": "m68761",
+      "kind": "photo",
+      "width": 975,
+      "height": 837,
+      "variants": [
+        {
+          "width": 800,
+          "height": 686,
+          "file": "CNX_Chem_10_01_HydrideBP1-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 837,
+          "file": "CNX_Chem_10_01_HydrideBP1-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A line graph is shown where the y-axis is labeled “Boiling point (, degree sign, C )” and has values of “ negative 150” to “150” from bottom to top in increments of 50. The x-axis is labeled “Period” and has values of “0” to “5” in increments of 1. Three lines are shown on the graph and are labeled in the legend. The red line is labeled as “halogen family,” the blue is “oxygen family” and the green is “nitrogen family.” The first point on the red line is labeled “question mark” and is at point “2, negative 120”. The second point on the line is labeled “H C l” and is at point “3, negative 80” while the third point on the line is labeled “H B r” and is at point “4, negative 60”. The fourth point on the line is labeled “H I” and is at point “5, negative 40.” The first point on the green line is labeled “question mark” and is at point “2, negative 125.” The second point on the line is labeled “P H, subscript 3” and is at point “3, negative 80” while the third point on the line is labeled “A s H, subscript 3” and is at point “4, negative 55.” The fourth point on the line is labeled “S b H, subscript 3” and is at point “5, negative 10.” The first point on the blue line is labeled “question mark” and is at point “2, negative 80.” The second point on the line is labeled “H, subscript 2, S” and is at point “3, negative 55” while the third point on the line is labeled “H, subscript 2, S e” and is at point “4, negative 45.” The fourth point on the line is labeled “H, subscript 2, T e” and is at point “5, negative 3.”",
+      "caption": "For the group 15, 16, and 17 hydrides, the boiling points for each class of compounds increase with increasing molecular mass for elements in periods 3, 4, and 5.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_01_HydrideBP2": {
+      "source": "media/CNX_Chem_10_01_HydrideBP2.jpg",
+      "sourceSha256": "52b89fbd3f4f22c4bac3758530c8936691074c0b39719689fe165f59a74611c2",
+      "module": "m68761",
+      "kind": "photo",
+      "width": 976,
+      "height": 834,
+      "variants": [
+        {
+          "width": 800,
+          "height": 683,
+          "file": "CNX_Chem_10_01_HydrideBP2-800.webp"
+        },
+        {
+          "width": 976,
+          "height": 834,
+          "file": "CNX_Chem_10_01_HydrideBP2-976.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A line graph is shown where the y-axis is labeled “Boiling point, ( degree sign, C )” and has values of “negative 150” to “150” from bottom to top in increments of 50. The x-axis is labeled “Period” and has values of “0” to “5” in increments of 1. Three lines are shown on the graph and are labeled in the legend. The red line is labeled as “halogen family,” the blue is “oxygen family” and the green is “nitrogen family.” The first point on the red line is labeled “H F” and is at point “2, 25.” The second point on the line is labeled “H C l” and is at point “3, negative 80” while the third point on the line is labeled “H B r” and is at point “4, negative 60.” The fourth point on the line is labeled “H I” and is at point “5, negative 40.” The first point on the green line is labeled “N H, subscript 3” and is at point “2, negative 40.” The second point on the line is labeled “P H, subscript 3” and is at point “3, negative 80” while the third point on the line is labeled “A s H, subscript 3” and is at point “4, negative 55.” The fourth point on the line is labeled “S b H, subscript 3” and is at point “5, negative 10.” The first point on the blue line is labeled “H, subscript 2, O” and is at point “2, 100.” The second point on the line is labeled “H, subscript 2, S” and is at point “3, negative 55” while the third point on the line is labeled “H, subscript 2, S e” and is at point “4, negative 45.” The fourth point on the line is labeled “H, subscript 2, T e” and is at point “5, negative 3.”",
+      "caption": "In comparison to periods 3−5, the binary hydrides of period 2 elements in groups 17, 16 and 15 (F, O and N, respectively) exhibit anomalously high boiling points due to hydrogen bonding.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_01_IntravInter": {
+      "source": "media/CNX_Chem_10_01_IntravInter.jpg",
+      "sourceSha256": "3547c4bc99e096df851439c66b84b8643ba29a8174ca02b943d996640db1a175",
+      "module": "m68761",
+      "kind": "photo",
+      "width": 650,
+      "height": 255,
+      "variants": [
+        {
+          "width": 650,
+          "height": 255,
+          "file": "CNX_Chem_10_01_IntravInter-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "An image is shown in which two molecules composed of a green sphere labeled “C l” connected on the right to a white sphere labeled “H” are near one another with a dotted line labeled “Intermolecular force ( weak )” drawn between them. A line connects the two spheres in each molecule and the line is labeled “Intramolecular force ( strong ).”",
+      "caption": "Intra molecular forces keep a molecule intact. Inter molecular forces hold multiple molecules together and determine many of a substance’s properties.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_01_KMTPhases1": {
+      "source": "media/CNX_Chem_10_01_KMTPhases1.jpg",
+      "sourceSha256": "3e5243bb70415265fa826b00385e51158f396737bc70cab09bf16aafe67430c4",
+      "module": "m68761",
+      "kind": "photo",
+      "width": 1000,
+      "height": 567,
+      "variants": [
+        {
+          "width": 800,
+          "height": 453,
+          "file": "CNX_Chem_10_01_KMTPhases1-800.webp"
+        },
+        {
+          "width": 1000,
+          "height": 567,
+          "file": "CNX_Chem_10_01_KMTPhases1-1000.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Three sealed flasks are labeled, “Crystalline solid,” “Liquid,” and “Gas,” from left to right. The first flask holds a cube composed of small spheres sitting on the bottom while the second flask shows a lot of small spheres in the bottom that are spaced a small distance apart from one another and have lines around them to indicate motion. The third flask shows a few spheres spread far from one another with larger lines to indicate motion. There is a right-facing arrow that spans the top of all three flasks. The arrow is labeled, “Increasing K E ( temperature ).” There is a left-facing arrow that spans the bottom of all three flasks. The arrow is labeled, “Increasing I M F.”",
+      "caption": "Transitions between solid, liquid, and gaseous states of a substance occur when conditions of temperature or pressure favor the associated changes in intermolecular forces. (Note: The space between particles in the gas phase is much greater than shown.)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_01_PentIso": {
+      "source": "media/CNX_Chem_10_01_PentIso.jpg",
+      "sourceSha256": "7411e4c52f284bbe46a05b6e60748d58e39e7c5471b3cb80bb5fe431c39df739",
+      "module": "m68761",
+      "kind": "photo",
+      "width": 986,
+      "height": 683,
+      "variants": [
+        {
+          "width": 800,
+          "height": 554,
+          "file": "CNX_Chem_10_01_PentIso-800.webp"
+        },
+        {
+          "width": 986,
+          "height": 683,
+          "file": "CNX_Chem_10_01_PentIso-986.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Three images of molecules are shown. The first shows a cluster of large, gray spheres each bonded together and to several smaller, white spheres. There is a gray, jagged line and then the mirror image of the first cluster of spheres is shown. Above these two clusters is the label, “Small contact area, weakest attraction,” and below is the label, “neopentane boiling point: 9.5 degrees C.” The second shows a chain of three gray spheres bonded by the middle sphere to a fourth gray sphere. Each gray sphere is bonded to several smaller, white spheres. There is a jagged, gray line and then the mirror image of the first chain appears. Above these two chains is the label, “Less surface area, less attraction,” and below is the label, “isopentane boiling point: 27 degrees C.” The third image shows a chain of five gray spheres bonded together and to several smaller, white spheres. There is a jagged gray line and then the mirror image of the first chain appears. Above these chains is the label, “Large contact area, strong attraction,” and below is the label, “n-pentane boiling point 36 degrees C.”",
+      "caption": "The strength of the dispersion forces increases with the contact area between molecules, as demonstrated by the boiling points of these pentane isomers.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_01_WaterPhase": {
+      "source": "media/CNX_Chem_10_01_WaterPhase.jpg",
+      "sourceSha256": "4d0c3741d856a06647d45609220c975d563bc489a1d92096575c91593212ecbc",
+      "module": "m68761",
+      "kind": "photo",
+      "width": 975,
+      "height": 406,
+      "variants": [
+        {
+          "width": 800,
+          "height": 333,
+          "file": "CNX_Chem_10_01_WaterPhase-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 406,
+          "file": "CNX_Chem_10_01_WaterPhase-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Image a shows a brown colored beverage in a glass with condensation on the outside. Image b shows a body of water with fog hovering above the surface of the water.",
+      "caption": "Condensation forms when water vapor in the air is cooled enough to form liquid water, such as (a) on the outside of a cold beverage glass or (b) in the form of fog. (credit a: modification of work by Jenny Downing; credit b: modification of work by Cory Zanker)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_02_BloodDraw": {
+      "source": "media/CNX_Chem_10_02_BloodDraw.jpg",
+      "sourceSha256": "7b51379f208da53be49c17b48312f99265203d1a535db44607152c469d95e395",
+      "module": "m68764",
+      "kind": "photo",
+      "width": 325,
+      "height": 245,
+      "variants": [
+        {
+          "width": 325,
+          "height": 245,
+          "file": "CNX_Chem_10_02_BloodDraw-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A photograph shows a person’s hand being held by a person wearing medical gloves. A thin glass tube is pressed against the persons finger and blood is moving up the tube.",
+      "caption": "Blood is collected for medical analysis by capillary action, which draws blood into a small diameter glass tube. (credit: modification of work by Centers for Disease Control and Prevention)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_02_CapRise": {
+      "source": "media/CNX_Chem_10_02_CapRise.jpg",
+      "sourceSha256": "c21eb16171755572fe4ce22f5986be132762bea6b13a36dd3c76630c2f76b040",
+      "module": "m68764",
+      "kind": "photo",
+      "width": 975,
+      "height": 453,
+      "variants": [
+        {
+          "width": 800,
+          "height": 371,
+          "file": "CNX_Chem_10_02_CapRise-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 453,
+          "file": "CNX_Chem_10_02_CapRise-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "An image of two beakers and a tube is shown. The first beaker, drawn on the left and labeled “Water,” is drawn half-full of a blue liquid. Two open-ended capillary tubes are placed vertically in the beaker and inserted into the liquid. The liquid is shown higher in the tubes than in the beaker and is labeled “Capillary attraction.” The second beaker, drawn in the middle and labeled “Mercury,” is drawn half-full of a gray liquid. Two open-ended capillary tubes are placed vertically in the beaker and inserted into the liquid. The liquid is shown lower in the tubes than in the beaker and is labeled “Capillary repulsion.” Lines point to the vertical tubes and label them “Capillary tubes.” A separate drawing of one of the vertical tubes from the first beaker is shown on the right. A right-facing arrow leads from the liquid in the tube to a square call-out box that shows a close-up view of the liquid’s surface. The distance across the tube is labeled “2 r” in this image.",
+      "caption": "Depending upon the relative strengths of adhesive and cohesive forces, a liquid may rise (such as water) or fall (such as mercury) in a glass capillary tube. The extent of the rise (or fall) is directly proportional to the surface tension of the liquid and inversely proportional to the density of the liquid and the radius of the tube."
+    },
+    "CNX_Chem_10_02_Droplet": {
+      "source": "media/CNX_Chem_10_02_Droplet.jpg",
+      "sourceSha256": "157f69cc578893798b6cb4dce05440504ebb474e031aea30389a972f07e2788b",
+      "module": "m68764",
+      "kind": "photo",
+      "width": 975,
+      "height": 454,
+      "variants": [
+        {
+          "width": 800,
+          "height": 372,
+          "file": "CNX_Chem_10_02_Droplet-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 454,
+          "file": "CNX_Chem_10_02_Droplet-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A photo of a spider’s web with droplets of water attached to it is shown. Two images are shown the right of the photo and arrows lead from the photo to the images. The upper image shows twenty eight blue spheres stacked one atop the other in the bottom of a circular background. Five arrows are drawn pointing to the sides and downward from the sphere in the top middle of the drawing. The lower image shows another circular background of the same size as the first, but this time the blue spheres fill the image and are packed closely together. A sphere in the middle has six arrows pointing in all directions away from it.",
+      "caption": "Attractive forces result in a spherical water drop that minimizes surface area; cohesive forces hold the sphere together; adhesive forces keep the drop attached to the web. (credit photo: modification of work by “OliBac”/Flickr)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_02_Meniscus": {
+      "source": "media/CNX_Chem_10_02_Meniscus.jpg",
+      "sourceSha256": "d9b220e0fbcbb91bff52b21c6e3ef9cabc84b5f31e7faa64fe9b04a531845e5b",
+      "module": "m68764",
+      "kind": "photo",
+      "width": 650,
+      "height": 433,
+      "variants": [
+        {
+          "width": 650,
+          "height": 433,
+          "file": "CNX_Chem_10_02_Meniscus-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows two test tubes. The test tube on the left contains mercury with a meniscus that rounds up. The test tube on the right contains water with a meniscus that rounds down.",
+      "caption": "Differences in the relative strengths of cohesive and adhesive forces result in different meniscus shapes for mercury (left) and water (right) in glass tubes. (credit: Mark Ott)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_02_Needlefloa_img": {
+      "source": "media/CNX_Chem_10_02_Needlefloa_img.jpg",
+      "sourceSha256": "748f488d37df29c4f636140446e67ef66d00a015cd07b77e554708e300e17754",
+      "module": "m68764",
+      "kind": "photo",
+      "width": 650,
+      "height": 481,
+      "variants": [
+        {
+          "width": 650,
+          "height": 481,
+          "file": "CNX_Chem_10_02_Needlefloa_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A photo shows a close-up, above-view, of a needle lying on the surface of a sample of water.",
+      "caption": "(credit: Cory Zanker)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_02_Question4_img": {
+      "source": "media/CNX_Chem_10_02_Question4_img.jpg",
+      "sourceSha256": "15146a007adbdaf526c91a094e3862ec71014778bff01fb504cdbd678b692532",
+      "module": "m68764",
+      "kind": "photo",
+      "width": 1300,
+      "height": 550,
+      "variants": [
+        {
+          "width": 800,
+          "height": 338,
+          "file": "CNX_Chem_10_02_Question4_img-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 550,
+          "file": "CNX_Chem_10_02_Question4_img-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This table has four columns and five rows. The first row is a header row, and it labels each column: “Compound,” “Molecule,” “Surface Tension ( m N / m ),” and “Viscosity ( m P a dot s ).” Under the “compound” column are the following: diethyl ether C subscript 2 H subscript 5 O C subscript 2 H subscript 5; acetone C subscript 2 H subscript 5 O C subscript 2 H subscript 5; ethanol C subscript 2 H subscript 5 O H; ethylene glycol C H subscript 2 ( O H ) C H subscript 2 ( O H ). Under the “Molecule” column are ball-and-stick representations of each compound. The first shows two grey spheres bonded together. The first grey sphere is also bonded to three white spheres. The second grey sphere is bonded to two white spheres and a red sphere. The red sphere is bonded to another grey sphere. The grey sphere is bonded to two white spheres and another grey sphere. The last grey sphere is bonded to three white spheres. The second shows three grey spheres bonded tighter. The two grey spheres on the end are each bonded to three white spheres. The grey sphere in the middle is bonded to one red sphere. The third shows two grey spheres bonded together. The first grey sphere is bonded to three white spheres and the second grey sphere is bonded to two white spheres and a red sphere. The red sphere is bonded to a white sphere. The fourth shows two grey spheres bonded together. Each grey sphere is bonded to two white spheres and a red sphere. Each red sphere is also bonded to one white sphere. Under the “Surface Tension ( m N / m )” column are the following: 17, 23, 22 and 48. Under the “Viscosity ( m P a dot s )” column are the following: 0.22, 0.31, 1.07, and 16.1.",
+      "caption": ""
+    },
+    "CNX_Chem_10_02_Strider": {
+      "source": "media/CNX_Chem_10_02_Strider.jpg",
+      "sourceSha256": "260639283cba456dc50c1ed494fe7a7c550d843a29ddfe33773d0d80d6f3ae96",
+      "module": "m68764",
+      "kind": "photo",
+      "width": 975,
+      "height": 234,
+      "variants": [
+        {
+          "width": 800,
+          "height": 192,
+          "file": "CNX_Chem_10_02_Strider-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 234,
+          "file": "CNX_Chem_10_02_Strider-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A photo and a diagram as shown and a right-facing arrow leads from the photo to the image. The photo shows an insect standing on the surface of a sample of water. The image shows a square background that is two thirds covered in blue spheres that are closely packet together. A brown line starts at the upper left corner of the background and rests on top of the first row of spheres. The sphere directly under this low point of the line has four arrows drawn on it that face to both sides and downward. A sphere in the bottom center of the image has six arrows drawn on it that all face outward in different directions.",
+      "caption": "Surface tension (right) prevents this insect, a “water strider,” from sinking into the water.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_02_Testtubeoi_img": {
+      "source": "media/CNX_Chem_10_02_Testtubeoi_img.jpg",
+      "sourceSha256": "e0f8501352096417e026f4570a0898ca20ead52266d18ecc6df6999e1b798c46",
+      "module": "m68764",
+      "kind": "photo",
+      "width": 975,
+      "height": 511,
+      "variants": [
+        {
+          "width": 800,
+          "height": 419,
+          "file": "CNX_Chem_10_02_Testtubeoi_img-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 511,
+          "file": "CNX_Chem_10_02_Testtubeoi_img-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "An image of four graduated cylinders sitting on a table labeled “Oil viscosity ( S A E )” is shown. The left-hand cylinder, labeled “20,” is mostly filled with light tan liquid and a metal ball is drawn in the lower fifth of the cylinder, but not on the bottom. The second cylinder, labeled “30,” is mostly filled with light brown liquid and a metal ball is drawn about three-fourths of the way down cylinder. The third cylinder, labeled “40,” is mostly filled with medium brown liquid and a metal ball is drawn halfway down the cylinder. The right-hand cylinder, labeled “50,” is mostly filled with brown liquid and a metal ball is drawn near the top of the liquid in the cylinder.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_02_Viscosity": {
+      "source": "media/CNX_Chem_10_02_Viscosity.jpg",
+      "sourceSha256": "2e6d3862dd05ba2c6caabc4508d10353f3a4c4699ef3d47770a1031a4c4c614e",
+      "module": "m68764",
+      "kind": "photo",
+      "width": 975,
+      "height": 501,
+      "variants": [
+        {
+          "width": 800,
+          "height": 411,
+          "file": "CNX_Chem_10_02_Viscosity-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 501,
+          "file": "CNX_Chem_10_02_Viscosity-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two photographs are shown and labeled “a” and “b.” Photo a shows a jar of honey with a dipper drizzling it onto a biscuit. More biscuits are shown in a basket in the background. Photo b shows the engine of a car and a person adding motor oil to the engine.",
+      "caption": "(a) Honey and (b) motor oil are examples of liquids with high viscosities; they flow slowly. (credit a: modification of work by Scott Bauer; credit b: modification of work by David Nagy)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_02_Wicking": {
+      "source": "media/CNX_Chem_10_02_Wicking.jpg",
+      "sourceSha256": "cb78bc3a06a99e37790955fa491976272964c30d0156a7c6e67be52bc11953b1",
+      "module": "m68764",
+      "kind": "photo",
+      "width": 1180,
+      "height": 594,
+      "variants": [
+        {
+          "width": 800,
+          "height": 402,
+          "file": "CNX_Chem_10_02_Wicking-800.webp"
+        },
+        {
+          "width": 1180,
+          "height": 594,
+          "file": "CNX_Chem_10_02_Wicking-1180.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A photo and a diagram are shown. In the photo, a paper towel is dipped into a bowl full of a red liquid sitting on a countertop. The red liquid is traveling up the lower part of the paper towel, and this section of the photo has a square drawn around it. A right-facing arrow leads from this square to the image. The image is square and has a background of two types of molecules, mixed together. The first type of molecule is composed of two bonded black spheres, one of which is single bonded to three white spheres and one of which is single bonded to two white spheres and a red sphere that is itself bonded to a white sphere. The other type of molecule is composed of six black spheres bonded together in a row and bonded to other red and white spheres. Six upward-facing arrows are drawn on top of this background. They have positive signs on their lower ends and negative signs on their heads. Four upward-facing arrows are drawn with their signs reversed.",
+      "caption": "Wine wicks up a paper towel (left) because of the strong attractions of water (and ethanol) molecules to the −OH groups on the towel’s cellulose fibers and the strong attractions of water molecules to other water (and ethanol) molecules (right). (credit photo: modification of work by Mark Blaser)"
+    },
+    "CNX_Chem_10_03_Ethanol_img": {
+      "source": "media/CNX_Chem_10_03_Ethanol_img.jpg",
+      "sourceSha256": "0480b85e57a7068d5bdc6c04bcd755bf1654e5495b731fe4fca77f3b642f2f83",
+      "module": "m68768",
+      "kind": "photo",
+      "width": 1000,
+      "height": 146,
+      "variants": [
+        {
+          "width": 800,
+          "height": 117,
+          "file": "CNX_Chem_10_03_Ethanol_img-800.webp"
+        },
+        {
+          "width": 1000,
+          "height": 146,
+          "file": "CNX_Chem_10_03_Ethanol_img-1000.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Four Lewis structures are shown. The first structure, labeled “ethanol,” shows a carbon bonded to three hydrogen atoms that is single bonded to a second carbon that is bonded to two hydrogen atoms and a hydroxyl group. The second structure, labeled “ethylene glycol, shows two carbon atoms, single bonded to one another, single bonded each to two hydrogen atoms, and each single bonded to a hydroxyl group. The third image, labeled “diethyl ether,” shows an oxygen atom single bonded on both sides to a carbon that is bonded to two hydrogens, and a second carbon, that is itself bonded to three hydrogen atoms. The fourth image, labeled “water,” shows an oxygen atom that is single bonded on both sides to hydrogen atoms.",
+      "caption": ""
+    },
+    "CNX_Chem_10_03_Evap": {
+      "source": "media/CNX_Chem_10_03_Evap.jpg",
+      "sourceSha256": "661d06e0baca035afa28e4ab81390b839699b2086e7f6f6109662f632f71074a",
+      "module": "m68768",
+      "kind": "photo",
+      "width": 650,
+      "height": 432,
+      "variants": [
+        {
+          "width": 650,
+          "height": 432,
+          "file": "CNX_Chem_10_03_Evap-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A person’s shoulder and neck are shown and their skin is covered in beads of liquid.",
+      "caption": "Evaporation of sweat helps cool the body. (credit: “Kullez”/Flickr)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_03_HeatCurve": {
+      "source": "media/CNX_Chem_10_03_HeatCurve.jpg",
+      "sourceSha256": "cb74426b61e21e3d5c7e34e60c9b13b3c4260cf6776bcfa68bc2e86018e58601",
+      "module": "m68768",
+      "kind": "photo",
+      "width": 1300,
+      "height": 894,
+      "variants": [
+        {
+          "width": 800,
+          "height": 550,
+          "file": "CNX_Chem_10_03_HeatCurve-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 894,
+          "file": "CNX_Chem_10_03_HeatCurve-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A graph is shown where the x-axis is labeled “Amount of heat added” and the y-axis is labeled “Temperature ( degree sign C )” and has values of negative 10 to 100 in increments of 20. A right-facing horizontal arrow extends from point “0, 0” to the right side of the graph. A line graph begins at the lower left of the graph and moves to point “0” on the y-axis. This segment of the line is labeled “H, subscript 2, O ( s ).” The line then flattens and travels horizontally for a small distance. This segment is labeled “Solid begins to melt” on its left side and “All solid melted” on its right side. The line then goes steeply upward in a linear fashion until it hits point “100” on the y-axis. This segment of the line is labeled “H, subscript 2, O,( l ).” The line then flattens and travels horizontally for a moderate distance. This segment is labeled “Liquid begins to boil” on its left side and “All liquid evaporated” on its right side. The line then rises to a point above “100” on the y-axis. This segment of the line is labeled “H, subscript 2, O ( g ).”",
+      "caption": "A typical heating curve for a substance depicts changes in temperature that result as the substance absorbs increasing amounts of heat. Plateaus in the curve (regions of constant temperature) are exhibited when the substance undergoes phase transitions."
+    },
+    "CNX_Chem_10_03_MeltingIce": {
+      "source": "media/CNX_Chem_10_03_MeltingIce.jpg",
+      "sourceSha256": "4c229302b0011b94258e8dc73b0492243541c827ab70031bec2ba0354750b6ae",
+      "module": "m68768",
+      "kind": "photo",
+      "width": 1300,
+      "height": 288,
+      "variants": [
+        {
+          "width": 800,
+          "height": 177,
+          "file": "CNX_Chem_10_03_MeltingIce-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 288,
+          "file": "CNX_Chem_10_03_MeltingIce-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows four photos each labeled, “a,” “b,” “c,” and, “d.” Each photo shows a beaker with ice and a digital thermometer. The first photo shows ice cubes in the beaker, and the thermometer reads negative 12.0 degrees C. The second photo shows slightly melted ice, and the thermometer reads 0.0 degrees C. The third photo shows more water than ice in the beaker. The thermometer reads 0.0 degrees C. The fourth photo shows the ice completely melted, and the thermometer reads 22.2 degrees C.",
+      "caption": "(a) This beaker of ice has a temperature of −12.0 °C. (b) After 10 minutes the ice has absorbed enough heat from the air to warm to 0 °C. A small amount has melted. (c) Thirty minutes later, the ice has absorbed more heat, but its temperature is still 0 °C. The ice melts without changing its temperature. (d) Only after all the ice has melted does the heat absorbed cause the temperature to increase to 22.2 °C. (credit: modification of work by Mark Ott)"
+    },
+    "CNX_Chem_10_03_PhaseChng": {
+      "source": "media/CNX_Chem_10_03_PhaseChng.jpg",
+      "sourceSha256": "2d8c9034603f8e7876d778990c4e4a2ff22918b5ccb4d7a9bc88416f6d81736f",
+      "module": "m68768",
+      "kind": "photo",
+      "width": 650,
+      "height": 486,
+      "variants": [
+        {
+          "width": 650,
+          "height": 486,
+          "file": "CNX_Chem_10_03_PhaseChng-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram is shown with a vertical line drawn on the left side and labeled “Energy” and three horizontal lines drawn near the bottom, lower third and top of the diagram. These three lines are labeled, from bottom to top, “Solid,” “Liquid” and “Gas.” Near the middle of the diagram, a vertical, upward-facing arrow is drawn from the solid line to the gas line and labeled “Sublimation, delta sign, H, subscript sub.” To the right of this arrow is a second vertical, upward-facing arrow that is drawn from the solid line to the liquid line and labeled “Fusion, delta sign, H, subscript fus.” Above the second arrow is a third arrow drawn from the liquid line to the gas line and labeled, “Vaporization, delta sign, H, subscript vap.”",
+      "caption": "For a given substance, the sum of its enthalpy of fusion and enthalpy of vaporization is approximately equal to its enthalpy of sublimation.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_03_Sublimtn": {
+      "source": "media/CNX_Chem_10_03_Sublimtn.jpg",
+      "sourceSha256": "b81f6b614708b3acc3263404bbe3db78b27e98c833105e934a1676f9a14723e4",
+      "module": "m68768",
+      "kind": "photo",
+      "width": 650,
+      "height": 1084,
+      "variants": [
+        {
+          "width": 650,
+          "height": 1084,
+          "file": "CNX_Chem_10_03_Sublimtn-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a test tube. In the bottom is a dark substance which breaks up into a purple gas at the top.",
+      "caption": "Sublimation of solid iodine in the bottom of the tube produces a purple gas that subsequently deposits as solid iodine on the colder part of the tube above. (credit: modification of work by Mark Ott)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_03_VapPress1": {
+      "source": "media/CNX_Chem_10_03_VapPress1.jpg",
+      "sourceSha256": "ce090ce9831e9caf4454178fda14a24ae8b4936be04924a192e35bfc5fb6aeb3",
+      "module": "m68768",
+      "kind": "photo",
+      "width": 1086,
+      "height": 347,
+      "variants": [
+        {
+          "width": 800,
+          "height": 255,
+          "file": "CNX_Chem_10_03_VapPress1-800.webp"
+        },
+        {
+          "width": 1086,
+          "height": 347,
+          "file": "CNX_Chem_10_03_VapPress1-1086.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Three images are shown and labeled “a,” “b,” and “c.” Each image shows a round bulb connected on the right to a tube that is horizontal, then is bent vertically, curves, and then is vertical again to make a u-shape. A valve is located in the horizontal portion of the tube. Image a depicts a liquid in the bulb, labeled, “Liquid,” and upward-facing arrows leading away from the surface of the liquid. The phrase, “Molecules escape surface and form vapor” is written below the bulb, and a gray liquid in the u-shaped portion of the tube is shown at equal heights on the right and left sides. Image b depicts a liquid in the bulb, labeled, “Liquid,” and upward-facing arrows leading away from the surface of the liquid to molecules drawn in the upper portion of the bulb. A gray liquid in the u-shaped portion of the tube is shown slightly higher on the right side than on the left side. Image c depicts a liquid in the bulb, labeled, “Liquid,” and upward-facing arrows leading away from the surface of the liquid to molecules drawn in the upper portion of the bulb. There are more molecules present in c than in b. The phrase “Equilibrium reached, vapor pressure determined,” is written below the bulb and a gray liquid in the u-shaped portion of the tube is shown higher on the right side. A horizontal line is drawn level with each of these liquid levels and the distance between the lines is labeled with a double-headed arrow. This section is labeled with the phrase, “Vapor pressure.”",
+      "caption": "In a closed container, dynamic equilibrium is reached when (a) the rate of molecules escaping from the liquid to become the gas (b) increases and eventually (c) equals the rate of gas molecules entering the liquid. When this equilibrium is reached, the vapor pressure of the gas is constant, although the vaporization and condensation processes continue."
+    },
+    "CNX_Chem_10_03_VapPress2": {
+      "source": "media/CNX_Chem_10_03_VapPress2.jpg",
+      "sourceSha256": "b379dda9bddc4a15f2121fe9953c8c81e5455031409809a60317441a9204a9bc",
+      "module": "m68768",
+      "kind": "photo",
+      "width": 975,
+      "height": 681,
+      "variants": [
+        {
+          "width": 800,
+          "height": 558,
+          "file": "CNX_Chem_10_03_VapPress2-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 681,
+          "file": "CNX_Chem_10_03_VapPress2-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A graph is shown where the x-axis is labeled “Temperature ( degree sign, C )” and has values of 200 to 1000 in increments of 200 and the y-axis is labeled “Pressure ( k P a )” and has values of 20 to 120 in increments of 20. A horizontal dotted line extends across the graph at point 780 on the y-axis while three vertical dotted lines extend from points 35, 78, and 100 to meet the horizontal dotted line. Four lines are graphed. The first line, labeled “ethyl ether,” begins at the point “0 , 200” and extends in a slight curve to point “45, 1000” while the second line, labeled “ethanol”, extends from point “0, 20” to point “88, 1000” in a more extreme curve. The third line, labeled “water,” begins at the point “0, 0” and extends in a curve to point “108, 1000” while the fourth line, labeled “ethylene glycol,” extends from point “80, 0” to point “140, 100” in a very shallow curve.",
+      "caption": "The boiling points of liquids are the temperatures at which their equilibrium vapor pressures equal the pressure of the surrounding atmosphere. Normal boiling points are those corresponding to a pressure of 1 atm (101.3 kPa.)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_03_VapPress3": {
+      "source": "media/CNX_Chem_10_03_VapPress3.jpg",
+      "sourceSha256": "67eaa76d3b0a1d990eb38e69bed19fa51dee3a83823b346c30c4b536d0232e7d",
+      "module": "m68768",
+      "kind": "photo",
+      "width": 650,
+      "height": 389,
+      "variants": [
+        {
+          "width": 650,
+          "height": 389,
+          "file": "CNX_Chem_10_03_VapPress3-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A graph is shown where the y-axis is labeled “Number of molecules” and the x-axis is labeled “Kinetic Energy.” Two lines are graphed and a vertical dotted line, labeled “Minimum K E needed to escape,” is drawn halfway across the x-axis. The first line move sharply upward and has a high peak near the left side of the x-axis. It drops just as steeply and ends about 60 percent of the way across the x-axis. This line is labeled “Low T.” A second line, labeled “High T,” begins at the same point as the first, but does not go to such a high point, is wider, and ends slightly further to the right on the x-axis.",
+      "caption": "Temperature affects the distribution of kinetic energies for the molecules in a liquid. At the higher temperature, more molecules have the necessary kinetic energy, KE, to escape from the liquid into the gas phase.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_04_CO2PhasDi": {
+      "source": "media/CNX_Chem_10_04_CO2PhasDi.jpg",
+      "sourceSha256": "ccb1e60bf57a7c8afa0aa963b68c3dfdfe9532d488796b1c287519bda0bf32ea",
+      "module": "m68769",
+      "kind": "photo",
+      "width": 975,
+      "height": 594,
+      "variants": [
+        {
+          "width": 800,
+          "height": 487,
+          "file": "CNX_Chem_10_04_CO2PhasDi-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 594,
+          "file": "CNX_Chem_10_04_CO2PhasDi-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A graph is shown where the x-axis is labeled “Temperature ( degree sign, C )” and has values of negative 100 to 100 in increments of 25 and the y-axis is labeled “Pressure ( k P a )” and has values of 10 to 1,000,000. A line extends from the lower left bottom of the graph upward to a point around“27, 9000,” where it ends. The space under this curve is labeled “Gas.” A second line extends in a curve from point around “-55, 500” to “27, 1,000,000.” The area to the left of this line and above the first line is labeled “Solid” while the area to the right is labeled “Liquid.” A section on the graph under the second line and past the point “28” on the x-axis is labeled “S C F.”",
+      "caption": "A phase diagram for carbon dioxide is shown. The pressure axis is plotted on a logarithmic scale to accommodate the large range of values.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_04_CPhaseDi_img": {
+      "source": "media/CNX_Chem_10_04_CPhaseDi_img.jpg",
+      "sourceSha256": "8d3312a6efbcc2422855d576ca558e153a12c0cd23e59a60d52f50dcf84119a9",
+      "module": "m68769",
+      "kind": "photo",
+      "width": 650,
+      "height": 733,
+      "variants": [
+        {
+          "width": 650,
+          "height": 733,
+          "file": "CNX_Chem_10_04_CPhaseDi_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows an x-axis that is labeled, “Temperature ( K ),” and a y-axis labeled, “Pressure ( P a ).” The x-axis is marked off in increments of 2000 starting from 0. The y-axis is marked off at 0, 10 to the 7, ten to the 9, and ten to the 11. There is a slightly negatively sloped line that passes through the x-axis at about 3800. From this line there is a line that curves up and then down to the left to pass through the y-axis at ten to the 9. There is another line that goes up and to the right.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_04_CritFluid": {
+      "source": "media/CNX_Chem_10_04_CritFluid.jpg",
+      "sourceSha256": "ae700874c01be46b80723b9a21eaa5ce910aa12d883163335286185e6d42648b",
+      "module": "m68769",
+      "kind": "photo",
+      "width": 1300,
+      "height": 306,
+      "variants": [
+        {
+          "width": 800,
+          "height": 188,
+          "file": "CNX_Chem_10_04_CritFluid-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 306,
+          "file": "CNX_Chem_10_04_CritFluid-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Four photographs are shown where each shows a circular container with a green and red float in each. In the left diagram, the container is half filled with a colorless liquid and the floats sit on the surface of the liquid. In the second photo, the green float is near the top and the red float lies near the bottom of the container. In the third photo, the fluid is darker and the green float sits halfway up the container while the red is sitting at the bottom. In the right photo, the liquid is colorless again and the two floats sit on the surface.",
+      "caption": "(a) A sealed container of liquid carbon dioxide slightly below its critical point is heated, resulting in (b) the formation of the supercritical fluid phase. Cooling the supercritical fluid lowers its temperature and pressure below the critical point, resulting in the reestablishment of separate liquid and gaseous phases (c and d). Colored floats illustrate differences in density between the liquid, gaseous, and supercritical fluid states. (credit: modification of work by “mrmrobin”/YouTube)"
+    },
+    "CNX_Chem_10_04_Ex06answer_img": {
+      "source": "media/CNX_Chem_10_04_Ex06answer_img.jpg",
+      "sourceSha256": "e5dcbfbc00cf8fa451801921ee3641d7e98d514554d65f9f0e9a647fde52e9bf",
+      "module": "m68769",
+      "kind": "photo",
+      "width": 650,
+      "height": 358,
+      "variants": [
+        {
+          "width": 650,
+          "height": 358,
+          "file": "CNX_Chem_10_04_Ex06answer_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "An x-axis is labeled at the left as “Full” and at the right as “Empty.” A y-axis is labeled at the top as “P.” Beneath the x-axis is the label “Amount released.” A horizontal line that then slopes downward is drawn about halfway up the vertical line and labeled on the left as “65 a t m.” About two-thirds of the way across the x-axis, it slopes downward in a straight line to meet the “empty” label on the bottom right of the axis.",
+      "caption": ""
+    },
+    "CNX_Chem_10_04_Exercise10a_img": {
+      "source": "media/CNX_Chem_10_04_Exercise10a_img.jpg",
+      "sourceSha256": "6cbdc74d88203584340628b68082b6900761eccb94e6a7d52ff45b05243faeb6",
+      "module": "m68769",
+      "kind": "photo",
+      "width": 488,
+      "height": 550,
+      "variants": [
+        {
+          "width": 488,
+          "height": 550,
+          "file": "CNX_Chem_10_04_Exercise10a_img-488.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows an x-axis that is labeled, “Temperature ( K ),” and a y-axis labeled, “Pressure ( P a ).” The x-axis is marked off in increments of 2000 starting from 0. The y-axis is marked off at 0, 10 to the 7, ten to the 9, and ten to the 11. There is a slightly negatively sloped line that passes through the x-axis at about 3800. From this line there is a line that curves up and then down to the left to pass through the y-axis at ten to the 9. There is another line that goes up and to the right. The two quadrants to the right are labeled, “Water ( liquid )” and “Water vapor ( gas ).”",
+      "caption": ""
+    },
+    "CNX_Chem_10_04_Exercise10b_img": {
+      "source": "media/CNX_Chem_10_04_Exercise10b_img.jpg",
+      "sourceSha256": "411d434e4aeed5f7716790c8c1da06d1f8f3eac80348990c48a9028817cfd2af",
+      "module": "m68769",
+      "kind": "photo",
+      "width": 650,
+      "height": 733,
+      "variants": [
+        {
+          "width": 650,
+          "height": 733,
+          "file": "CNX_Chem_10_04_Exercise10b_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows an x-axis that is labeled, “Temperature ( K ),” and a y-axis labeled, “Pressure ( P a ).” The x-axis is marked off in increments of 2000 starting from 0. The y-axis is marked off at 0, 10 to the 7, ten to the 9, and ten to the 11. There is a slightly negatively sloped line that passes through the x-axis at about 3800. From this line there is a line that curves up and then down to the left to pass through the y-axis at ten to the 9. There is another line that goes up and to the right. The quadrant to the left is labeled, “Graphite.”",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_10_04_Exercise10c_img": {
+      "source": "media/CNX_Chem_10_04_Exercise10c_img.jpg",
+      "sourceSha256": "908826be5b74c166eef9b80cd71df3f14fbc7133f06550a46125a50f24f1e5eb",
+      "module": "m68769",
+      "kind": "photo",
+      "width": 650,
+      "height": 733,
+      "variants": [
+        {
+          "width": 650,
+          "height": 733,
+          "file": "CNX_Chem_10_04_Exercise10c_img-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows an x-axis that is labeled, “Temperature ( K ),” and a y-axis labeled, “Pressure ( P a ).” The x-axis is marked off in increments of 2000 starting from 0. The y-axis is marked off at 0, 10 to the 7, ten to the 9, and ten to the 11. There is a slightly negatively sloped line that passes through the x-axis at about 3800. From this line there is a line that curves up and then down to the left to pass through the y-axis at ten to the 9. There is another line that goes up and to the right. The top quadrant is labeled, “Diamond.”",
+      "caption": "",
+      "scale": "scaled-down-30"
+    },
+    "CNX_Chem_10_04_Exercise10d_img": {
+      "source": "media/CNX_Chem_10_04_Exercise10d_img.jpg",
+      "sourceSha256": "a55941247436482c72601ef051188b56bf303767b6b3de20220531d265212532",
+      "module": "m68769",
+      "kind": "photo",
+      "width": 488,
+      "height": 551,
+      "variants": [
+        {
+          "width": 488,
+          "height": 551,
+          "file": "CNX_Chem_10_04_Exercise10d_img-488.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows an x-axis that is labeled, “Temperature ( K ),” and a y-axis labeled, “Pressure ( P a ).” The x-axis is marked off in increments of 2000 starting from 0. The y-axis is marked off at 0, 10 to the 7, ten to the 9, and ten to the 11. There is a slightly negatively sloped line that passes through the x-axis at about 3800. From this line there is a line that curves up and then down to the left to pass through the y-axis at ten to the 9. There is another line that goes up and to the right. The four quadrants are labeled, “Diamond” at the top, “Graphite”, to the left, “water ( liquid )” to the top right, and “water vapor ( gas ),” to the bottom right. There is a red circle where the liquid, gas, and graphite lines intersect.",
+      "caption": ""
+    },
+    "CNX_Chem_10_04_FreezeDry": {
+      "source": "media/CNX_Chem_10_04_FreezeDry.jpg",
+      "sourceSha256": "7e2563e374acd7973c30fdf31bb8655df1bc455156e28a6b478c087a6b0bea30",
+      "module": "m68769",
+      "kind": "photo",
+      "width": 650,
+      "height": 488,
+      "variants": [
+        {
+          "width": 650,
+          "height": 488,
+          "file": "CNX_Chem_10_04_FreezeDry-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A photograph shows a package with a rocket being launched on the front and a block of pink, white and brown striped solid in a wrapper next to it.",
+      "caption": "Freeze-dried foods, like this ice cream, are dehydrated by sublimation at pressures below the triple point for water. (credit: ʺlwaoʺ/Flickr)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_04_H2OPhasDi2": {
+      "source": "media/CNX_Chem_10_04_H2OPhasDi2.jpg",
+      "sourceSha256": "cf1d4a118fd54cc838d7a8d009c3c0fc58d16b5bf8c4ae5cc0ea28343e203964",
+      "module": "m68769",
+      "kind": "photo",
+      "width": 975,
+      "height": 632,
+      "variants": [
+        {
+          "width": 800,
+          "height": 518,
+          "file": "CNX_Chem_10_04_H2OPhasDi2-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 632,
+          "file": "CNX_Chem_10_04_H2OPhasDi2-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A graph is shown where the x-axis is labeled “Temperature in degrees Celsius” and the y-axis is labeled “Pressure ( k P a ).” A line extends from the origin of the graph which is labeled “A” sharply upward to a point in the bottom third of the diagram labeled “B” where it branches into a line that slants slightly backward until it hits the highest point on the y-axis labeled “D” and a second line that extends to the upper right corner of the graph labeled “C”. C is labeled “Critical point, with a dotted line extending downward to the x-axis labeled 374 degrees Celsius, and another dotted line extending to the y-axis labeled 22,089 k P a. The two lines bisect the graph area to create three sections, labeled “Ice (solid)” near the middle left, “Water (liquid)” in the top middle and “Water vapor (gas)” near the bottom middle. Point B is labeled “Triple point” and has a dotted line extending downward to the x-axis labeled 0.01, and another dotted line extending to the y-axis labeled 0.6. Halfway between points B and C a dotted line extends from the originally discussed line downward to the point 100 degrees Celsius on the x-axis, and another dotted line extends to the y-axis at 101 k P a. Another dotted line extends from this dotted line downward at 0 degrees Celsius.",
+      "caption": "The pressure and temperature axes on this phase diagram of water are not drawn to constant scale in order to illustrate several important properties.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_04_IceMelt": {
+      "source": "media/CNX_Chem_10_04_IceMelt.jpg",
+      "sourceSha256": "22c50ebf94c9c27f4125300eef3ba4794270f46f1b3adf0610fecfb4ba5ecb5e",
+      "module": "m68769",
+      "kind": "photo",
+      "width": 650,
+      "height": 432,
+      "variants": [
+        {
+          "width": 650,
+          "height": 432,
+          "file": "CNX_Chem_10_04_IceMelt-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A photograph shows an aerial view of a land mass. The white mass of a glacier is shown near the top left quadrant of the photo and leads to two branching blue rivers. The open land is shown in brown.",
+      "caption": "The immense pressures beneath glaciers result in partial melting to produce a layer of water that provides lubrication to assist glacial movement. This satellite photograph shows the advancing edge of the Perito Moreno glacier in Argentina. (credit: NASA)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_04_PhaseDi": {
+      "source": "media/CNX_Chem_10_04_PhaseDi.jpg",
+      "sourceSha256": "e893f99e3dffffc4509e5ae88892a3bb09361d70284f9ff80811d78c1c7c76d0",
+      "module": "m68769",
+      "kind": "photo",
+      "width": 650,
+      "height": 592,
+      "variants": [
+        {
+          "width": 650,
+          "height": 592,
+          "file": "CNX_Chem_10_04_PhaseDi-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A graph is shown where the x-axis is labeled “Temperature” and the y-axis is labeled “Pressure.” A line extends from the lower left bottom of the graph sharply upward to a point that is a third across the x-axis. A second line begins at the lower third of the first line at a point labeled “triple point” and extends to the upper right corner of the graph where it is labeled “critical point.” The two lines bisect the graph area to create three sections, labeled “solid” near the top left, “liquid” in the top middle and “gas” near the bottom right. A pair of horizontal arrows, one left-facing and labeled “deposition” and one right-facing and labeled” sublimation,” are drawn on top of the bottom section of the first line. A second pair of horizontal arrows, one left-facing and labeled “freezing” and one right-facing and labeled “melting”, are drawn on top of the upper section of the first line. A third pair of horizontal arrows, one left-facing and labeled “condensation” and one right-facing and labeled ”vaporization,” are drawn on top of the middle section of the second line.",
+      "caption": "The physical state of a substance and its phase-transition temperatures are represented graphically in a phase diagram.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_04_SupCritCof": {
+      "source": "media/CNX_Chem_10_04_SupCritCof.jpg",
+      "sourceSha256": "3b42222b63821af96ac87c6fce970fba5edb4e4ea1f2f71fa62b72283b9dd608",
+      "module": "m68769",
+      "kind": "photo",
+      "width": 1200,
+      "height": 811,
+      "variants": [
+        {
+          "width": 800,
+          "height": 540,
+          "file": "CNX_Chem_10_04_SupCritCof-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 811,
+          "file": "CNX_Chem_10_04_SupCritCof-1200.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two images are shown and labeled “a” and “b.” Image a shows a molecule composed of a five member ring composed of two blue spheres and three black spheres. One of the blue spheres is bonded to a black sphere bonded to three white spheres and one of the black spheres is bonded to a white sphere. The other two black spheres are double bonded together and make up one side of a six-membered ring that is also composed of two more black spheres and two blue spheres, both of which are bonded to a black sphere bonded to three white spheres. The black spheres are each double bonded to red spheres. Image b shows a diagram of two vertical tubes that lie next to one another. The left-hand tube is labeled “Extraction vessel.” A small tube labeled “Soaked beans” leads into the top of the tube and a label at the bottom of the tube reads “Decaffeinated beans.” The right tube is labeled “Absorption vessel.” A tube near the top of this tube is labeled “Water” and another tube leads from the right tube to the left. This tube is labeled with a left-facing arrow and the phrase “supercritical carbon dioxide.” There is a tube leading away from the bottom which is labeled, “Caffeine and water.” There is another tube that leads from the extraction vessel to the absorption vessel which is labeled, “supercritical C O subscript 2 plus caffeine.”",
+      "caption": "(a) Caffeine molecules have both polar and nonpolar regions, making it soluble in solvents of varying polarities. (b) The schematic shows a typical decaffeination process involving supercritical carbon dioxide."
+    },
+    "CNX_Chem_10_05_BoronOxide": {
+      "source": "media/CNX_Chem_10_05_BoronOxide.jpg",
+      "sourceSha256": "938cab365199131d09bb4c244c410f2e9842e283dfa78c23e5d60f1cb5fc1761",
+      "module": "m68770",
+      "kind": "photo",
+      "width": 1278,
+      "height": 489,
+      "variants": [
+        {
+          "width": 800,
+          "height": 306,
+          "file": "CNX_Chem_10_05_BoronOxide-800.webp"
+        },
+        {
+          "width": 1278,
+          "height": 489,
+          "file": "CNX_Chem_10_05_BoronOxide-1278.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two sets of molecules are shown. The first set of molecules contains five identical, hexagonal rings composed of alternating red and maroon spheres single bonded together and with a red spheres extending outward from each maroon sphere. The second set of molecules shows four rings with twelve sides each that are joined together. Each ring is composed of alternating red and maroon spheres single bonded together and with a red spheres extending outward from each maroon sphere.",
+      "caption": "(a) Silicon dioxide, SiO 2 , is abundant in nature as one of several crystalline forms of the mineral quartz. (b) Rapid cooling of molten SiO 2 yields an amorphous solid known as “fused silica”.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_05_Carbon": {
+      "source": "media/CNX_Chem_10_05_Carbon.jpg",
+      "sourceSha256": "d2def1243996be6afc8a61b5cefed68d70be292276b13943f2f7a24529203a92",
+      "module": "m68770",
+      "kind": "photo",
+      "width": 1200,
+      "height": 677,
+      "variants": [
+        {
+          "width": 800,
+          "height": 451,
+          "file": "CNX_Chem_10_05_Carbon-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 677,
+          "file": "CNX_Chem_10_05_Carbon-1200.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Three pairs of images are shown, each composed of a photo and a diagram. In the first pair, the photo shows a close-up view of a colorless, multi-faceted crystal and the diagram shows many gray spheres bonded together in a net-like structure. The caption below this pair reads “diamond.” In the second pair, the photo shows a rough textured, dark gray solid while the image shows four horizontal sheets, composed of interlocking black spheres, lying atop one another. This pair has a caption that reads “graphite.” The third pair shows a photo of twelve black hexagons on a yellow background where two of the hexagons are encircled by a gray border and a caption of “1.4 times 10, superscript negative 10, m, Distance between center of atoms” and an image of many black hexagons evenly arranged on a yellow background. The caption below this pair of images reads “Graphite surface.”",
+      "caption": "Diamond is extremely hard because of the strong bonding between carbon atoms in all directions. Graphite (in pencil lead) rubs off onto paper due to the weak attractions between the carbon layers. An image of a graphite surface shows the distance between the centers of adjacent carbon atoms. (credit left photo: modification of work by Steve Jurvetson; credit middle photo: modification of work by United States Geological Survey)"
+    },
+    "CNX_Chem_10_05_CrystDfcts": {
+      "source": "media/CNX_Chem_10_05_CrystDfcts.jpg",
+      "sourceSha256": "339724a7c90a5fee050b95ebf7264acb565255cdcefcdf3c48b6505d7cc725d1",
+      "module": "m68770",
+      "kind": "photo",
+      "width": 650,
+      "height": 477,
+      "variants": [
+        {
+          "width": 650,
+          "height": 477,
+          "file": "CNX_Chem_10_05_CrystDfcts-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram is shown in which one hundred and forty four spheres are arranged in a twelve by twelve square. A gap in the square is labeled “Vacancy” while one sphere that is a different color from all the rest is labeled “Interstitial impurity.” The top right corner of the square is disturbed and has a larger sphere inserted that is labeled “Substitution impurity atom.”",
+      "caption": "Types of crystal defects include vacancies, interstitial atoms, and substitutions impurities.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_05_Graphene": {
+      "source": "media/CNX_Chem_10_05_Graphene.jpg",
+      "sourceSha256": "e86acc3ccc191a0e81eb7e8d885c82349b1831a0113d90622c566cc46ddcb6ba",
+      "module": "m68770",
+      "kind": "photo",
+      "width": 1117,
+      "height": 845,
+      "variants": [
+        {
+          "width": 800,
+          "height": 605,
+          "file": "CNX_Chem_10_05_Graphene-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 845,
+          "file": "CNX_Chem_10_05_Graphene-1117.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Four images are shown. In the upper image, labeled “Graphene sheet,” a box is drawn around a sheet of interconnected hexagonal rings. In the lower left image, a sphere is composed of hexagonal rings linked together and is labeled “Buckyball.” In the lower middle image, a tube is shown that is composed of many hexagonal rings joined together and is labeled “Nanotube.” In the lower right image, four horizontal sheets composed of joined, hexagonal rings is shown and labeled “Stacked sheets.”",
+      "caption": "Graphene sheets can be formed into buckyballs, nanotubes, and stacked layers."
+    },
+    "CNX_Chem_10_05_IonicSolid": {
+      "source": "media/CNX_Chem_10_05_IonicSolid.jpg",
+      "sourceSha256": "2934ee127a30fbc1b88ae1c53dfd315697e36c94399064cf466847500d4f749e",
+      "module": "m68770",
+      "kind": "photo",
+      "width": 207,
+      "height": 202,
+      "variants": [
+        {
+          "width": 207,
+          "height": 202,
+          "file": "CNX_Chem_10_05_IonicSolid-207.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows large purple spheres bonded to smaller green spheres in an alternating pattern. The spheres are arranged in a cube.",
+      "caption": "Sodium chloride is an ionic solid.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_05_Metallic": {
+      "source": "media/CNX_Chem_10_05_Metallic.jpg",
+      "sourceSha256": "e5681e229a578df82f3b407b0d1feb3aa825ffb6b9d435565e50473f82736fd4",
+      "module": "m68770",
+      "kind": "photo",
+      "width": 241,
+      "height": 241,
+      "variants": [
+        {
+          "width": 241,
+          "height": 241,
+          "file": "CNX_Chem_10_05_Metallic-241.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows large brown spheres arranged in a cube.",
+      "caption": "Copper is a metallic solid.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_05_MolSolids": {
+      "source": "media/CNX_Chem_10_05_MolSolids.jpg",
+      "sourceSha256": "51fad0c83c52a70c306772d8085433d332d10554d0ba8a9cfa7246eb435a2c2d",
+      "module": "m68770",
+      "kind": "photo",
+      "width": 650,
+      "height": 333,
+      "variants": [
+        {
+          "width": 650,
+          "height": 333,
+          "file": "CNX_Chem_10_05_MolSolids-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two images are shown and labeled “carbon dioxide” and “iodine.” The carbon dioxide structure is composed of molecules, each made up of one gray and two red atoms, stacked together into a cube. The image of iodine shows pairs of purple atoms arranged near one another, but not touching.",
+      "caption": "Carbon dioxide (CO 2 ) consists of small, nonpolar molecules and forms a molecular solid with a melting point of −78 °C. Iodine (I 2 ) consists of larger, nonpolar molecules and forms a molecular solid that melts at 114 °C.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_05_NtwrkSolid": {
+      "source": "media/CNX_Chem_10_05_NtwrkSolid.jpg",
+      "sourceSha256": "354e2ea4e84778958dee58ec5216c9952bdd4be11084b9b6a288ffafc644f00b",
+      "module": "m68770",
+      "kind": "photo",
+      "width": 1300,
+      "height": 608,
+      "variants": [
+        {
+          "width": 800,
+          "height": 374,
+          "file": "CNX_Chem_10_05_NtwrkSolid-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 608,
+          "file": "CNX_Chem_10_05_NtwrkSolid-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Four pairs of images are shown. In the first pair, a square box containing a black atom bonded to four other black atoms is shown above a structure composed of many black atoms, each bonded to four other black atoms, where one of the upper atoms is labeled “carbon” and the whole structure is labeled “diamond.” In the second pair, a square box containing a white atom bonded to four red atoms is shown above a structure composed of many white atoms, each bonded to four red atoms, where one of the red atoms is labeled “oxygen” and one of the white atoms is labeled “silicon.” The whole structure is labeled “silicon dioxide.” In the third pair, a square box containing a blue atom bonded to four white atoms is shown above a structure composed of many blue atoms, each bonded to four white atoms, where one of the blue atoms is labeled “carbon” and one of the white atoms is labeled “silicon.” The whole structure is labeled “silicon carbide.” In the fourth pair, a square box containing six black atoms bonded into a ring is shown above a structure composed of many rings, arranged into sheets layered one atop the other, where one of the black atoms is labeled “carbon.” The whole structure is labeled “graphite.”",
+      "caption": "A covalent crystal contains a three-dimensional network of covalent bonds, as illustrated by the structures of diamond, silicon dioxide, silicon carbide, and graphite. Graphite is an exceptional example, composed of planar sheets of covalent crystals that are held together in layers by noncovalent forces. Unlike typical covalent solids, graphite is very soft and electrically conductive."
+    },
+    "CNX_Chem_10_05_TypesSol": {
+      "source": "media/CNX_Chem_10_05_TypesSol.jpg",
+      "sourceSha256": "4fb3d0d680c0d93e11dffa4d79b5061646bc68111523f6030d3bda223439feb8",
+      "module": "m68770",
+      "kind": "photo",
+      "width": 611,
+      "height": 288,
+      "variants": [
+        {
+          "width": 611,
+          "height": 288,
+          "file": "CNX_Chem_10_05_TypesSol-611.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two images are shown and labeled, from left to right, “Crystalline” and “Amorphous.” The crystalline diagram shows many circles drawn in rows and stacked together tightly. The amorphous diagram shows many circles spread slightly apart and in no organized pattern.",
+      "caption": "The entities of a solid phase may be arranged in a regular, repeating pattern (crystalline solids) or randomly (amorphous).",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_06_BdyCntrdCb": {
+      "source": "media/CNX_Chem_10_06_BdyCntrdCb.jpg",
+      "sourceSha256": "d632217e1f5a58f30ebc76af1446089374d4b7ebc5607452014af8dcfae08343",
+      "module": "m68773",
+      "kind": "photo",
+      "width": 975,
+      "height": 355,
+      "variants": [
+        {
+          "width": 800,
+          "height": 291,
+          "file": "CNX_Chem_10_06_BdyCntrdCb-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 355,
+          "file": "CNX_Chem_10_06_BdyCntrdCb-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Three images are shown. The first image shows a cube with black dots at each corner and a red dot in the center while the second image is composed of eight spheres that are stacked together to form a cube with one sphere in the center of the cube and dots at the center of each corner sphere connected to form a cube shape. The name under this image reads “Body-centered cubic structure.” The third image is the same as the second, but only shows the portions of the spheres that lie inside the cube shape.",
+      "caption": "In a body-centered cubic structure, atoms in a specific layer do not touch each other. Each atom touches four atoms in the layer above it and four atoms in the layer below it.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_06_CbcCltPckd": {
+      "source": "media/CNX_Chem_10_06_CbcCltPckd.jpg",
+      "sourceSha256": "e5f21938623c5b618af36f3db6ecad4f6ba1be691d77d744b7e2c1e4a2684440",
+      "module": "m68773",
+      "kind": "photo",
+      "width": 1006,
+      "height": 434,
+      "variants": [
+        {
+          "width": 800,
+          "height": 345,
+          "file": "CNX_Chem_10_06_CbcCltPckd-800.webp"
+        },
+        {
+          "width": 1006,
+          "height": 434,
+          "file": "CNX_Chem_10_06_CbcCltPckd-1006.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Three images are shown. In the first image, a side view shows a layer of blue spheres, labeled “C” stacked on top of, and sitting in between the gaps in a second layer that is composed of green spheres, labeled “B,” which are sitting atop a purple layer of spheres labeled “A.” A label below this image reads “Side view.” The second image shows a top view of the same layers of spheres, where the top layer is “C,” the second layer is “B” and the lowest layer is “C.” This image is labeled “Top view” and written under this is the phrase “Cubic closest packed structure.” The third image shows an upper view of the side of a cube composed of two sets of the repeating layers shown in the other images. The layers are arranged “C, B, A, C, B, A, C” and the phrase written under this image reads “Rotated view.”",
+      "caption": "A CCP arrangement consists of three repeating layers (ABCABC…) of hexagonally arranged atoms. Atoms in a CCP structure have a coordination number of 12 because they contact six atoms in their layer, plus three atoms in the layer above and three atoms in the layer below. By rotating our perspective, we can see that a CCP structure has a unit cell with a face containing an atom from layer A at one corner, atoms from layer B across a diagonal (at two corners and in the middle of the face), and an atom from layer C at the remaining corner. This is the same as a face-centered cubic arrangement.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_06_ClstPckng2": {
+      "source": "media/CNX_Chem_10_06_ClstPckng2.jpg",
+      "sourceSha256": "b6f4118d8ff4940872bace893664ff6285f92f71a77da207a84bf7b026d2acec",
+      "module": "m68773",
+      "kind": "photo",
+      "width": 889,
+      "height": 477,
+      "variants": [
+        {
+          "width": 800,
+          "height": 429,
+          "file": "CNX_Chem_10_06_ClstPckng2-800.webp"
+        },
+        {
+          "width": 889,
+          "height": 477,
+          "file": "CNX_Chem_10_06_ClstPckng2-889.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two images are shown. The first image, labeled “Hexagonal closest packed,” shows seven green spheres arranged in a circular sheet lying atop another sheet that is the same except the spheres are purple. The second sheet is offset just a bit so that the spheres of the top sheet lie in the grooves of the second sheet. Two more alternating green and purple layers of spheres lie below the first pair. The second image shows seven blue spheres, labeled “Layer C,” arranged in a circular sheet laying atop another sheet, labeled “Layer B” that is the same except the spheres are green. The second sheet is offset just a bit so that the spheres of the top sheet lie in the grooves of the second sheet. Two more alternating purple and then blue layers of spheres lie below the first pair. The purple layer is labeled “Layer A” and the phrase written below this image reads “Cubic closest packed.”",
+      "caption": "In both types of closest packing, atoms are packed as compactly as possible. Hexagonal closest packing consists of two alternating layers (ABABAB…). Cubic closest packing consists of three alternating layers (ABCABCABC…).",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_06_ConDec": {
+      "source": "media/CNX_Chem_10_06_ConDec.jpg",
+      "sourceSha256": "1dea3e2804d5e8d152c3775cf01565f21d91e4e025543c47c4ac1ba5307e2a68",
+      "module": "m68773",
+      "kind": "photo",
+      "width": 975,
+      "height": 276,
+      "variants": [
+        {
+          "width": 800,
+          "height": 226,
+          "file": "CNX_Chem_10_06_ConDec-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 276,
+          "file": "CNX_Chem_10_06_ConDec-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A pair of images is shown that has four sections. In the first section, two sinusoidal waves are shown, one drawn above the other, and a section from the top of one curve to the top of the next curve is labeled “lambda.” The curves align with one another. The phrase below this reads “Constructive interference.” A right facing arrow leads from the first section to the second, which shows one larger sinusoidal curve that has higher and lower peaks and troughs. A section from the top of one curve to the top of the next curve is labeled “lambda” and the phrase below this reads “Maxima and minima reinforce.” In the second section, two sinusoidal waves are shown, one drawn above the other, and a section from the top of one curve to the top of the next curve is labeled “lambda.” The curves do not align with one another. The phrase below this reads “Destructive interference.” A right facing arrow leads from the first section to the second, which shows one flat line. The phrase below this reads “Maxima and minima cancel.”",
+      "caption": "Light waves occupying the same space experience interference, combining to yield waves of greater (a) or lesser (b) intensity, depending upon the separation of their maxima and minima.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_06_CrystalSys": {
+      "source": "media/CNX_Chem_10_06_CrystalSys.jpg",
+      "sourceSha256": "362aed47e1adba5277ca496306d4e2fa7f611489f29d8e3609c5be77e7604c1a",
+      "module": "m68773",
+      "kind": "photo",
+      "width": 1297,
+      "height": 1600,
+      "variants": [
+        {
+          "width": 800,
+          "height": 987,
+          "file": "CNX_Chem_10_06_CrystalSys-800.webp"
+        },
+        {
+          "width": 1297,
+          "height": 1600,
+          "file": "CNX_Chem_10_06_CrystalSys-1297.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A table is composed of two columns and eight rows. The header row reads “System / Axes / Angles” and “Unit Cells .” The first column reads “Cubic, a equals b equals c, alpha equals beta equals gamma equals 90 degrees,” “Tetragonal, a equals b does not equal c, alpha equals beta equals gamma equals 90 degrees,” “Orthorhombic, a does not equal b does not equal c, alpha equals beta equals gamma equals 90 degrees,” “Monoclinic, a does not equal b does not equal c, alpha equals gamma equals 90 degrees, beta does not equal 90 degrees,” “Triclinic, a does not equal b does not equal c, alpha does not equal beta does not equal gamma does not equal 90 degrees,” “Hexagonal, a equals b does not equal c, alpha equals beta equals 90 degrees, gamma equals 120 degrees,” “Rhombohedral, a equals b equals c, alpha equals beta equals gamma does not equal 90 degrees.” The second column is composed of diagrams. The first set of diagrams in the first cell show a cube with spheres at each corner labeled “Simple,” a cube with spheres in each corner and on each face labeled “Face-centered” and a cube with spheres in each corner and one in the center labeled “Body-centered.” The second set of diagrams in the second cell show a vertical rectangle with spheres at each corner labeled “Simple” and a vertical rectangle with spheres in each corner and one in the center labeled “Body-centered.” The third set of diagrams in the third cell show a vertical rectangle with spheres at each corner labeled “Simple,” a vertical rectangle with spheres in each corner and one in the center labeled “Body-centered,” a vertical rectangle with spheres in each corner and one on the top and bottom faces labeled “Base-centered,” and a vertical rectangle with spheres in each corner and one on each face labeled “Face-centered.” The fourth set of diagrams in the fourth cell show a vertical rectangle with spheres at each corner that is slanted to one side labeled “Simple” and a vertical rectangle with spheres in each corner that is slanted to one side and has two spheres in the center is labeled “Body-centered.” The fifth diagrams in the fifth cell show a cube that is slanted with spheres at each corner while the sixth diagram in the sixth cell shows a pair of hexagonal rings that are connected together to form a six-sided shape with spheres at each corner. The seventh diagram in the seventh cell shows a rectangle that is slanted with spheres at each corner.",
+      "caption": "There are seven different lattice systems and 14 different unit cells."
+    },
+    "CNX_Chem_10_06_CubUntCll": {
+      "source": "media/CNX_Chem_10_06_CubUntCll.jpg",
+      "sourceSha256": "1f884216f98e842488828e0e7fcd10410c5b98086fe8676dd3a98265034977a9",
+      "module": "m68773",
+      "kind": "photo",
+      "width": 1300,
+      "height": 808,
+      "variants": [
+        {
+          "width": 800,
+          "height": 497,
+          "file": "CNX_Chem_10_06_CubUntCll-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 808,
+          "file": "CNX_Chem_10_06_CubUntCll-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Three pairs of images are shown. The first three images are in a row and are labeled “Lattice point locations” while the second three images are in a row labeled “Cubic unit cells.” The first image in the top row shows a cube with black dots at each corner while the first image in the second row is composed of eight spheres that are stacked together to form a cube and dots at the center of each sphere are connected to form a cube shape. The name under this image reads “Simple cubic.” The second image in the top row shows a cube with black dots at each corner and a red dot in the center while the second image in the second row is composed of eight spheres that are stacked together to form a cube with one sphere in the center of the cube and dots at the center of each corner sphere connected to form a cube shape. The name under this image reads “Body-centered cubic.” The third image in the top row shows a cube with black dots at each corner and red dots in the center of each face while the third image in the second row is composed of eight spheres that are stacked together to form a cube with six more spheres located in the center of each face of the cube. Dots at the center of each corner sphere are connected to form a cube shape. The name under this image reads “Face-centered cubic.”",
+      "caption": "Cubic unit cells of metals show (in the upper figures) the locations of lattice points and (in the lower figures) metal atoms located in the unit cell.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_06_Ex100602_img": {
+      "source": "media/CNX_Chem_10_06_Ex100602_img.jpg",
+      "sourceSha256": "92b46b576d6d5c4aef8a2e4d16c19d6f70597b08390b83ba4abdaffdb4ae55ed",
+      "module": "m68773",
+      "kind": "photo",
+      "width": 325,
+      "height": 324,
+      "variants": [
+        {
+          "width": 325,
+          "height": 324,
+          "file": "CNX_Chem_10_06_Ex100602_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "An image of a cube is shown. A one-eighth section of a sphere is shown inside each corner of the cube and a full sphere is shown in the middle of the cube. A line stretched across the front face of the cube from the top left corner to the bottom right corner is labeled “4 r.” The left and bottom sides of the cube are labeled “a.”",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_06_FcCntrdCbc": {
+      "source": "media/CNX_Chem_10_06_FcCntrdCbc.jpg",
+      "sourceSha256": "b4922c59d2207a7e4d79c7262890dff4b0bb796b4e295a768fe15e36ac1002a2",
+      "module": "m68773",
+      "kind": "photo",
+      "width": 975,
+      "height": 355,
+      "variants": [
+        {
+          "width": 800,
+          "height": 291,
+          "file": "CNX_Chem_10_06_FcCntrdCbc-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 355,
+          "file": "CNX_Chem_10_06_FcCntrdCbc-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Three images are shown. The first image shows a cube with black dots at each corner and red dots in the center of each face of the cube while the second image is composed of eight spheres that are stacked together to form a cube with six more spheres, one located on each face of the structure. Dots at the center of each corner sphere are connected to form a cube shape. The name under this image reads “Face-centered cubic structure.” The third image is the same as the second, but only shows the portions of the spheres that lie inside the cube shape.",
+      "caption": "A face-centered cubic solid has atoms at the corners and, as the name implies, at the centers of the faces of its unit cells.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_06_GenUnitCll": {
+      "source": "media/CNX_Chem_10_06_GenUnitCll.jpg",
+      "sourceSha256": "60f49ced1e498b8bc9ecff6cb407efe2ff1732a33527e419082d94fedbd4446d",
+      "module": "m68773",
+      "kind": "photo",
+      "width": 325,
+      "height": 293,
+      "variants": [
+        {
+          "width": 325,
+          "height": 293,
+          "file": "CNX_Chem_10_06_GenUnitCll-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A cube is shown where each corner has a black dot drawn on it. A circle in the bottom of the cube is composed of three double-ended arrows. The left top of this circle is labeled “alpha,” the top right is labeled “beta” and the bottom is labeled “gamma.” The bottom left corner of the cube is labeled “a” while the bottom of the back face is labeled “b” and the top, back, left corner is labeled “c.”",
+      "caption": "A unit cell is defined by the lengths of its three axes ( a , b , and c ) and the angles ( α , β , and γ ) between the axes.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_06_IntIonst": {
+      "source": "media/CNX_Chem_10_06_IntIonst.jpg",
+      "sourceSha256": "04efd4568be097f62465bab55e18764259842352dd6a5cacdc0c8ad10c974e72",
+      "module": "m68773",
+      "kind": "photo",
+      "width": 1300,
+      "height": 443,
+      "variants": [
+        {
+          "width": 800,
+          "height": 272,
+          "file": "CNX_Chem_10_06_IntIonst-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 443,
+          "file": "CNX_Chem_10_06_IntIonst-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram of three images is shown. In the first image, eight stacked cubes, with purple spheres at each corner, that make up one large cube are shown. The bottom left cube is different. It has green spheres at each corner and has four orange and six light purple spheres located on the faces of the cube. Labels below this structure read “Tetrahedral hole” and “Cation radius is about 22.5 to 41.4 percent of the anion radius. In the second image, eight stacked cubes, with alternating orange and green spheres at each corner, make up one large cube that is shown. The bottom left cube has darker lines that connect the spheres together. Labels below this structure read “Octahedral hole” and “Cation radius is about 41.4 to 73.2 percent of the anion radius. In the third image, eight stacked cubes, with purple spheres at each corner and light purple spheres on their interior faces, make up one large cube that is shown. Labels below this structure read “Cubic hole” and “Cation radius is about 73.2 to 100 percent of the anion radius.”",
+      "caption": "A cation’s size and the shape of the hole occupied by the compound are directly related."
+    },
+    "CNX_Chem_10_06_LiClstrctr": {
+      "source": "media/CNX_Chem_10_06_LiClstrctr.jpg",
+      "sourceSha256": "60ff3b5e2fb485192bc2fb4c1d321f0a318b5294289051802766e7e2e06e87d5",
+      "module": "m68773",
+      "kind": "photo",
+      "width": 907,
+      "height": 336,
+      "variants": [
+        {
+          "width": 800,
+          "height": 296,
+          "file": "CNX_Chem_10_06_LiClstrctr-800.webp"
+        },
+        {
+          "width": 907,
+          "height": 336,
+          "file": "CNX_Chem_10_06_LiClstrctr-907.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Three images are shown. The first shows a cube of alternating green and purple spheres. A smaller cube within that cube is outlined and a larger version of it appears next. This figure is a grey cube that appears to be made up of spheres. There are small spaces between each sphere. There is a right triangle outlined in this cube and a larger version of it appears next. This right triangle has two sides labeled “a,” and the hypotenuse, which spans two half-circles and one full one is labeled, “r, 2 r, and r.”",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_06_RFranklin": {
+      "source": "media/CNX_Chem_10_06_RFranklin.jpg",
+      "sourceSha256": "7ad2f16b838304bc3d82e83f6b0113b0a2cde3976ff6ce2cd7527a03150a9540",
+      "module": "m68773",
+      "kind": "photo",
+      "width": 325,
+      "height": 381,
+      "variants": [
+        {
+          "width": 325,
+          "height": 381,
+          "file": "CNX_Chem_10_06_RFranklin-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "An image shows a circular illustration with rings of dots that are blurred together.",
+      "caption": "This illustration shows an X-ray diffraction image similar to the one Franklin found in her research. (credit: National Institutes of Health)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_06_SimpCube_img": {
+      "source": "media/CNX_Chem_10_06_SimpCube_img.jpg",
+      "sourceSha256": "24922348fcae6bad8e91f1733c434b69217fe45d5c48256e9a384542df5d9bcb",
+      "module": "m68773",
+      "kind": "photo",
+      "width": 325,
+      "height": 340,
+      "variants": [
+        {
+          "width": 325,
+          "height": 340,
+          "file": "CNX_Chem_10_06_SimpCube_img-325.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram shows a cube with a one eighth portion of eight spheres inside the cube, one section in each corner. Along the bottom right side of the cube are two double ended arrows that each stretch along half of the total distance across the cube. Each arrow is labeled “r.”",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_06_SimpleCub1": {
+      "source": "media/CNX_Chem_10_06_SimpleCub1.jpg",
+      "sourceSha256": "599e9c56bf52e9d5765447dbaf1d636ac2eea2e2cd016d68b818c160d163e178",
+      "module": "m68773",
+      "kind": "photo",
+      "width": 1300,
+      "height": 316,
+      "variants": [
+        {
+          "width": 800,
+          "height": 194,
+          "file": "CNX_Chem_10_06_SimpleCub1-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 316,
+          "file": "CNX_Chem_10_06_SimpleCub1-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram of three images is shown. In the first image, a cube with a sphere at each corner is shown. The spheres at the corners are circled. The second image shows the same cube, but this time the spheres at the corners are larger and shaded in. In the third image, the cube is one cube amongst eight that make up a larger cube. The original cube is shaded a color while the other cubes are not.",
+      "caption": "When metal atoms are arranged with spheres in one layer directly above or below spheres in another layer, the lattice structure is called simple cubic. Note that the spheres are in contact.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_06_SimpleCub2": {
+      "source": "media/CNX_Chem_10_06_SimpleCub2.jpg",
+      "sourceSha256": "2571e83dbc048ffe4f845d70c098960e356c46b0dc76c512c685b1ab5a5ab6cd",
+      "module": "m68773",
+      "kind": "photo",
+      "width": 650,
+      "height": 281,
+      "variants": [
+        {
+          "width": 650,
+          "height": 281,
+          "file": "CNX_Chem_10_06_SimpleCub2-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram of two images is shown. In the first image, eight stacked cubes that make up one large cube are shown. Three lines that run from top to bottom, front to back and sided to side in the middle of the structure are shaded darker than the rest of the lines. The second image shows the same set of cubes, but this time spheres at the end of each line are numbered; the horizontal line that goes left to right is labeled with a “2” and a “5,” the vertical line is labeled with a “1” and a “6” and the line that goes horizontally front to back is labeled with a “3” and a “4.”",
+      "caption": "An atom in a simple cubic lattice structure contacts six other atoms, so it has a coordination number of six.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_06_SimpleCub3": {
+      "source": "media/CNX_Chem_10_06_SimpleCub3.jpg",
+      "sourceSha256": "f227133c3ef56b71968aba33ba568e386f0ba18ba456c16310e504b69cc798ee",
+      "module": "m68773",
+      "kind": "photo",
+      "width": 650,
+      "height": 358,
+      "variants": [
+        {
+          "width": 650,
+          "height": 358,
+          "file": "CNX_Chem_10_06_SimpleCub3-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram of two images is shown. In the first image, eight spheres are stacked together to form a cube and dots at the center of each sphere are connected to form a cube shape. The dots are labeled “Lattice points” while a label under the image reads “Simple cubic lattice cell.” The second image shows the portion of each sphere that lie inside the cube. The corners of the cube are shown with small circles labeled “Lattice points” and the phrase “8 corners” is written below the image.",
+      "caption": "A simple cubic lattice unit cell contains one-eighth of an atom at each of its eight corners, so it contains one atom total.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_06_TetOctHole": {
+      "source": "media/CNX_Chem_10_06_TetOctHole.jpg",
+      "sourceSha256": "6c5ef3afda156cefb74bbd5b67155d6744423d1c878ad22dc3d84ff4d8fb9a0e",
+      "module": "m68773",
+      "kind": "photo",
+      "width": 650,
+      "height": 548,
+      "variants": [
+        {
+          "width": 650,
+          "height": 548,
+          "file": "CNX_Chem_10_06_TetOctHole-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "An image shows a top-view of a layer of blue spheres arranged in a sheet lying atop another sheet that is the same except the spheres are green. The second sheet is offset just a bit so that the spheres of the top sheet lie in the grooves of the second sheet. A third sheet composed of purple spheres lies at the bottom. The spaces created between the spheres in each layer are labeled “Octahedral holes” and “Tetrahedral holes.”",
+      "caption": "Cations may occupy two types of holes between anions: octahedral holes or tetrahedral holes.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_06_UnitCell1": {
+      "source": "media/CNX_Chem_10_06_UnitCell1.jpg",
+      "sourceSha256": "df4ef2819a56ebd7849f420deca590c71081084e0e90af41f5da3727fbd4750e",
+      "module": "m68773",
+      "kind": "photo",
+      "width": 650,
+      "height": 314,
+      "variants": [
+        {
+          "width": 650,
+          "height": 314,
+          "file": "CNX_Chem_10_06_UnitCell1-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram of two images is shown. In the first image, a cube with a sphere at each corner is shown. The cube is labeled “Unit cell” and the spheres at the corners are labeled “Lattice points.” The second image shows the same cube, but this time it is one cube amongst eight that make up a larger cube. The original cube is shaded a color while the other cubes are not.",
+      "caption": "A unit cell shows the locations of lattice points repeating in all directions.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_06_XRyDiff1": {
+      "source": "media/CNX_Chem_10_06_XRyDiff1.jpg",
+      "sourceSha256": "b0d19cfc6380143b32f10fdb0f7b5a89aa77f8f96f167d283ced5a80b8c42d37",
+      "module": "m68773",
+      "kind": "photo",
+      "width": 904,
+      "height": 1011,
+      "variants": [
+        {
+          "width": 800,
+          "height": 894,
+          "file": "CNX_Chem_10_06_XRyDiff1-800.webp"
+        },
+        {
+          "width": 904,
+          "height": 1011,
+          "file": "CNX_Chem_10_06_XRyDiff1-904.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two similar figures are shown. The first figure, labeled “Constructive Interference,” shows two horizontal rows of seven black dots with a line passing through them. The fourth dots of each row have a vertical line connecting them. The distance between these rows is labeled “d.” A beam labeled “Incident beam” descends at an angle labeled “theta” until it hits the line connecting the fourth dots, after which a diffracted beam ascends at the same angle “theta.” A dotted line is drawn across the diffracted beam. The second figure, labeled “Destructive interference,” is very similar, except that the angles “theta” are far more acute, making the slopes of the beams more shallow.",
+      "caption": "The diffraction of X-rays scattered by the atoms within a crystal permits the determination of the distance between the atoms. The top image depicts constructive interference between two scattered waves and a resultant diffracted wave of high intensity. The bottom image depicts destructive interference and a low intensity diffracted wave.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_06_ZnSStrctr": {
+      "source": "media/CNX_Chem_10_06_ZnSStrctr.jpg",
+      "sourceSha256": "f4b1327352e2bd09b90c9a3ce677e50d4fce94458cae154d0f04f74e008a7d81",
+      "module": "m68773",
+      "kind": "photo",
+      "width": 650,
+      "height": 349,
+      "variants": [
+        {
+          "width": 650,
+          "height": 349,
+          "file": "CNX_Chem_10_06_ZnSStrctr-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two images are shown. The first image shows a cube with black dots at each corner and a red dot in the center of each face of the cube. This cube is stacked with seven others that are not colored to form a larger cube. The second image is composed of eight spheres that form the corners of a cube with six other spheres located in the face of the cube. The spheres are connected to one another by lines. The name under this image reads “Z n S, face-centered unit cell.”",
+      "caption": "ZnS, zinc sulfide (or zinc blende) forms an FCC unit cell with sulfide ions at the lattice points and much smaller zinc ions occupying half of the tetrahedral holes in the structure.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_07_CaF2Strctr": {
+      "source": "media/CNX_Chem_10_07_CaF2Strctr.jpg",
+      "sourceSha256": "cd7270cd5401ad594cd1776b617adca8e1a0b1342d644f2fbb5795b448d4a820",
+      "module": "m68773",
+      "kind": "photo",
+      "width": 650,
+      "height": 349,
+      "variants": [
+        {
+          "width": 650,
+          "height": 349,
+          "file": "CNX_Chem_10_07_CaF2Strctr-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two images are shown. The first image shows a cube with black dots at each corner and a red dot in the center of each face of the cube. This cube is stacked with seven others that are not colored to form a larger cube. The second image is composed of eight small green spheres that form the corners of a cube with six other small green spheres located in the faces of the cube. Eight larger green spheres are spaced inside the cube and all of the spheres are connect to one another by lines. The name under this image reads “C a F, subscript 2, face-centered unit cell.”",
+      "caption": "Calcium fluoride, CaF 2 , forms an FCC unit cell with calcium ions (green) at the lattice points and fluoride ions (red) occupying all of the tetrahedral sites between them.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_07_CsClStrctr": {
+      "source": "media/CNX_Chem_10_07_CsClStrctr.jpg",
+      "sourceSha256": "40c0e58816f7ef587988a33dc772c8a51a4c655aed5a0805f1f2f9dc07d4445b",
+      "module": "m68773",
+      "kind": "photo",
+      "width": 973,
+      "height": 405,
+      "variants": [
+        {
+          "width": 800,
+          "height": 333,
+          "file": "CNX_Chem_10_07_CsClStrctr-800.webp"
+        },
+        {
+          "width": 973,
+          "height": 405,
+          "file": "CNX_Chem_10_07_CsClStrctr-973.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Three images are shown. The first image shows a cube with black dots at each corner and a red dot in the center. This cube is stacked with seven others that are not colored to form a larger cube. The second image is composed of eight spheres that are grouped together to form a cube with one smaller sphere in the center. The name under this image reads “simple cubic structure.” The third image shows five horizontal layers of purple spheres with layers of smaller green spheres in between.",
+      "caption": "Ionic compounds with similar-sized cations and anions, such as CsCl, usually form a simple cubic structure. They can be described by unit cells with either cations at the corners or anions at the corners.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_07_NaClStrctr": {
+      "source": "media/CNX_Chem_10_07_NaClStrctr.jpg",
+      "sourceSha256": "b9b20336f94364ead43a6bf020768c0f4a9830a8df2d628a3aca3731c12a2551",
+      "module": "m68773",
+      "kind": "photo",
+      "width": 1300,
+      "height": 447,
+      "variants": [
+        {
+          "width": 800,
+          "height": 275,
+          "file": "CNX_Chem_10_07_NaClStrctr-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 447,
+          "file": "CNX_Chem_10_07_NaClStrctr-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Three images are shown. The first image shows a cube with black dots at each corner and a red dot in the center. This cube is stacked with seven others that are not colored to form a larger cube. The second image is composed of eight spheres that are grouped together to form a cube with one much larger sphere in the center. The name under this image reads “Body-centered simple cubic structure.” The third image shows seven horizontal layers of alternating purple and green spheres that are slightly offset with one another and form a large cube.",
+      "caption": "Ionic compounds with anions that are much larger than cations, such as NaCl, usually form an FCC structure. They can be described by FCC unit cells with cations in the octahedral holes.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_10_07_XRyDiff2": {
+      "source": "media/CNX_Chem_10_07_XRyDiff2.jpg",
+      "sourceSha256": "bb980eb8af5374236ad65e9b0523f5865c61c00057833f1662a84781897d687d",
+      "module": "m68773",
+      "kind": "photo",
+      "width": 975,
+      "height": 493,
+      "variants": [
+        {
+          "width": 800,
+          "height": 404,
+          "file": "CNX_Chem_10_07_XRyDiff2-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 493,
+          "file": "CNX_Chem_10_07_XRyDiff2-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A diagram, labeled “a” shows a cube on the left with a channel bored into its right side labeled “X dash ray source.” A beam is leaving from this channel and traveling in a horizontal line toward an oval-shaped, short tube, labeled “Collimator to focus beam” and “X dash ray diffraction,” where it passes through a cube labeled “Crystalline material” and scatters onto a vertical sheet labeled “Imaging surface.” A second diagram, labeled “b,” shows a square sheet with a large dot in the center labeled “X dash ray beam,” that is surrounded by smaller dots arranged in rings and labeled “Diffracted X dash rays.”",
+      "caption": "(a) In a diffractometer, a beam of X-rays strikes a crystalline material, producing (b) an X-ray diffraction pattern that can be analyzed to determine the crystal structure.",
+      "scale": "scaled-down"
+    },
     "CNX_Chem_14_03_FishLemon": {
       "source": "media/CNX_Chem_14_03_FishLemon.jpg",
       "sourceSha256": "9fe70f7dee5ca566696b82f94fedfec8565ba53869510e7b90ab66dcf31f6fd0",

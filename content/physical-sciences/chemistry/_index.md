@@ -67,6 +67,9 @@ chemistry, and nuclear chemistry.
 - **Gases** — gas pressure, the ideal gas law, the stoichiometry of gaseous
   substances, mixtures, and reactions, effusion and diffusion, the
   kinetic-molecular theory, and non-ideal gas behavior.
+- **Liquids and Solids** — intermolecular forces, properties of liquids,
+  phase transitions, phase diagrams, the solid state of matter, and lattice
+  structures in crystalline solids.
 
 ## Appendices
 
@@ -80,9 +83,6 @@ standard electrode potentials that the chapters refer to by letter.
 
 The remaining chapters of Chemistry 2e will appear in this order:
 
-- **Liquids and Solids** — intermolecular forces, properties of liquids,
-  phase transitions, phase diagrams, the solid state of matter, and lattice
-  structures in crystalline solids.
 - **Solutions and Colloids** — the dissolution process, electrolytes,
   solubility, colligative properties, and colloids.
 - **Kinetics** — chemical reaction rates and the factors that affect them,
