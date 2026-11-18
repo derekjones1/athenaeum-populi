@@ -243,7 +243,9 @@ th .katex {
    and shown only here, where it gives the formula back the breaks the
    no-wrap box took. A long formula still wraps on a phone; only its last
    piece holds the period. A label typed before the formula, "(ii) " in
-   `.ap-math-label`, and a " = 180.5 kJ" run typed after it share the span
+   `.ap-math-label`, and a " = 180.5 kJ" run typed after it share the span,
+   and so does an opening bracket or quote typed straight before it — "("
+   in "the volume ($V$)", which could end a line alone
    (layouts/_partials/math-glue-patterns.html). */
 .katex wbr {
   display: none;

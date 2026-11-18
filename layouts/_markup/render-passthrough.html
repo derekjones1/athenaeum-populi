@@ -20,7 +20,9 @@
   begins and ends, with two comments; `_partials/glue-math.html`, called on
   the page's whole content by `layouts/docs/single.html` and `list.html`,
   moves the formula and its punctuation into `.ap-math-glue`
-  (white-space: nowrap) and takes the comments out. A comment left behind by
+  (white-space: nowrap) and takes the comments out — with an opening bracket
+  or quote typed straight before the formula, which could end a line alone
+  the same way (426 formulas in the library follow one). A comment left behind by
   a template that does not call the partial is inert; `check:build` refuses
   one all the same.
 

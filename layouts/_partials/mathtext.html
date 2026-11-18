@@ -35,6 +35,11 @@
      the label, taken off the end of the prose part before the run. */ -}}
 {{- $re := partialCached "math-glue-patterns.html" "math-glue" -}}
 {{- $label := "" -}}
+{{- /* An opening bracket or quote typed straight before a math run, "(" in
+     "the volume ($V$)", joins the span too, so it cannot end a line alone.
+     `$open` is that run of openers, taken off the end of the prose part
+     before the math run. */ -}}
+{{- $open := "" -}}
 {{- range $i, $p := $parts -}}
   {{- if eq (mod $i 2) 1 -}}
     {{- $tex := replace $p $NUL "\\$" -}}
@@ -59,10 +64,11 @@
             {{- $glued = index . 0 -}}
           {{- end -}}
         {{- end -}}
-        {{- if or $glued $label -}}
-          {{- $lead := cond (ne $label "") (printf `<span class="ap-math-label">%s </span>` $label) "" -}}
+        {{- if or $glued $label $open -}}
+          {{- $lead := cond (ne $label "") (printf `<span class="ap-math-label">%s </span>` $label) (htmlEscape $open) -}}
           {{- $math = printf `<span class="ap-math-glue">%s%s%s</span>` $lead $math (replace $glued "'" "’" | htmlEscape) -}}
           {{- $label = "" -}}
+          {{- $open = "" -}}
         {{- end -}}
         {{- $sb = $sb | append $math -}}
       {{- end -}}
@@ -82,6 +88,10 @@
       {{- with findRE (printf `(?:^|\s)%s $` $re.label) $p 1 -}}
         {{- $label = trim (index . 0) " \t\n\r" -}}
         {{- $p = strings.TrimSuffix (printf "%s " $label) $p -}}
+      {{- end -}}
+      {{- with findRE `[(\[“‘]+$` $p 1 -}}
+        {{- $open = index . 0 -}}
+        {{- $p = strings.TrimSuffix $open $p -}}
       {{- end -}}
     {{- end -}}
     {{- if eq (trim $p " \t\n\r") "" -}}

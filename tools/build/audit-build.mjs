@@ -639,7 +639,13 @@ if ([...contentHtml.matchAll(EXERCISE_RE)].some(([block]) => /<[uo]l>\s*<li>\s*(
 // the time the HTML is minified. Each inline formula of main#content is
 // found, its end reached by counting <span>s, and the character after it
 // read; a formula inside a display block is not inline.
+//
+// An opening bracket or quote typed straight before the formula is held the
+// same way, as plain text at the front of the span: "the volume ($V$)" ended
+// a line at "(" with "V)" on the next (Chemistry 9.2's rendered-page
+// reading, November 17, 2026).
 const PUNCTUATION_AFTER_MATH = /^(?:[.,;:?!)’”]|&rsquo;|&rdquo;)/;
+const OPENER_BEFORE_MATH = /(?:[(\[“‘]|&ldquo;|&lsquo;)+$/;
 function ungluedMath(content) {
   const open = /<span class="?katex"?>/g;
   let found;
@@ -664,16 +670,25 @@ function ungluedMath(content) {
       lead = lead.replace(/<span class="?ap-math-keep"?>$/, '');
     }
     // A label typed before the formula sits in the glue span ahead of it.
+    const labelled = /<span class="?ap-math-label"?>[^<]*<\/span>$/.test(lead);
     lead = lead.replace(/<span class="?ap-math-label"?>[^<]*<\/span>$/, '');
-    if (PUNCTUATION_AFTER_MATH.test(after) && !/<span class="?ap-math-glue"?>$/.test(lead)) {
-      return content.slice(Math.max(0, found.index - 40), found.index).replace(/<[^>]*>/g, '').trim().slice(-30) + ' [formula]' + after.slice(0, 1);
+    // An opener inside the span sits between the span's tag and the formula;
+    // one left outside sits before the tag, where it can still end a line
+    // (a label is text, and no line breaks between a bracket and a letter).
+    const GLUE_OPEN = /<span class="?ap-math-glue"?>$/;
+    const opener = OPENER_BEFORE_MATH.test(lead);
+    lead = lead.replace(OPENER_BEFORE_MATH, '');
+    const glued = GLUE_OPEN.test(lead);
+    const outside = glued && !labelled && OPENER_BEFORE_MATH.test(lead.replace(GLUE_OPEN, ''));
+    if (((opener || PUNCTUATION_AFTER_MATH.test(after)) && !glued) || outside) {
+      return content.slice(Math.max(0, found.index - 40), found.index).replace(/<[^>]*>/g, '').trim().slice(-30) + ' [formula]' + (PUNCTUATION_AFTER_MATH.test(after) ? after.slice(0, 1) : '');
     }
   }
   return null;
 }
 const unglued = contentDocuments.map(({ content }) => (content ? ungluedMath(content) : null)).filter(Boolean);
 if (unglued.length) {
-  problems.push(`punctuation after inline math is outside its .ap-math-glue span on ${unglued.length} page(s), so it can start a line alone (a layout that prints .Content without the glue-math partial, or a template that renders math around the mathtext partial): "${unglued[0]}"`);
+  problems.push(`punctuation after inline math, or an opening bracket before it, is outside its .ap-math-glue span on ${unglued.length} page(s), so it can start or end a line alone (a layout that prints .Content without the glue-math partial, or a template that renders math around the mathtext partial): "${unglued[0]}"`);
 }
 // Media elements remain active even when nested in raw <pre>/<code>.
 // `<img>` is handled separately below — mediafigure's own well-formed `<img>`

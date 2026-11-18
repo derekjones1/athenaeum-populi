@@ -130,7 +130,7 @@ test('build audit: content images, duplicated chrome, and missing no-JavaScript 
     // (layouts/_partials/glue-math.html); a layout that prints .Content bare
     // ships it outside, and the period can start a line alone.
     const K = '<span class=katex><span class=katex-mathml>x</span><span class=katex-html aria-hidden=true><span class=base><span class=mord>x</span></span></span></span>';
-    const outside = /punctuation after inline math is outside its \.ap-math-glue span on 1 page/;
+    const outside = /punctuation after inline math, or an opening bracket before it, is outside its \.ap-math-glue span on 1 page/;
     for (const [html, why] of [
       [`<p>The measure is ${K}. Next.</p>`, 'a period after bare inline math'],
       [`<p>Like ${K}, it is.</p>`, 'a comma'],
@@ -138,6 +138,11 @@ test('build audit: content images, duplicated chrome, and missing no-JavaScript 
       [`<p>All of ${K}&rsquo;s terms.</p>`, 'an apostrophe'],
       [`<p>About <span class=ap-math-keep>${K}</span>.</p>`, 'a number in scientific notation outside the glue span'],
       [`<p>One <span class=ap-math-glue>${K}.</span> and ${K}; two.</p>`, 'the second formula of a paragraph'],
+      [`<p>The volume (${K} and more).</p>`, 'an opening parenthesis before bare inline math'],
+      [`<p>The volume (<span class=ap-math-glue>${K})</span>.</p>`, 'an opening parenthesis left outside the span that holds the closing one'],
+      [`<p>Read &ldquo;${K} is&rdquo; aloud.</p>`, 'an opening quote, as an entity'],
+      [`<p>Read “${K} is” aloud.</p>`, 'an opening quote, as a character'],
+      [`<p>Frequency [<span class=ap-math-keep>${K}</span> per second].</p>`, 'a square bracket before a number in scientific notation'],
     ]) {
       prepare(html);
       assert.match(audit().stderr, outside, why);
@@ -150,6 +155,10 @@ test('build audit: content images, duplicated chrome, and missing no-JavaScript 
       [`<p>About <span class=ap-math-keep>${K}</span> grams.</p>`, 'a kept number with a word after it'],
       [`<p>Then <span class=ap-math-glue><span class=ap-math-label>(ii) </span>${K};</span> next.</p>`, 'glued behind a label'],
       [`<p>So <span class=ap-math-glue>${K} = 180.5 kJ;</span> next.</p>`, 'glued with its value'],
+      [`<p>The volume <span class=ap-math-glue>(${K})</span>.</p>`, 'glued between its brackets'],
+      [`<p>The volume <span class=ap-math-glue>(${K}</span> and more).</p>`, 'glued behind an opening bracket alone'],
+      [`<p>Read <span class=ap-math-glue>&ldquo;<span class=ap-math-keep>${K}</span>&rdquo;</span> aloud.</p>`, 'quotes around a scientific-notation span'],
+      [`<p>A function f(x) of ${K} and (see above) ${K} here.</p>`, 'a bracket elsewhere in the sentence'],
       [`<p>Then <span class=ap-math-glue><span class=ap-math-label>(b) </span><span class=ap-math-keep>${K}</span>.</span></p>`, 'a label and a scientific-notation span, past an 80-character look-back'],
     ]) {
       prepare(html);

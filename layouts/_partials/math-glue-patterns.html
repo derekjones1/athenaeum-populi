@@ -15,14 +15,20 @@
             formula, "(ii) " — set in `.ap-math-label`, so it scrolls and
             wraps with the formula after it;
     value   a run typed straight after it, " = <number> <unit>" or " = ?",
-            before any punctuation that follows.
+            before any punctuation that follows;
+    open    an opening bracket or quote typed straight before it, "(" in
+            "the volume ($V$)" — plain text at the front of the span. The
+            rendered-page reading of Chemistry 9.2 saw "(" end a line with
+            its "V)" on the next; 399 formulas in the library follow an
+            opening parenthesis, 22 an opening quote, 6 a square bracket.
 
   The breaks inside the formula itself (its <wbr>s) are untouched, so a long
   reaction still wraps after its arrow, and the space before the label and
   after the value still break.
 
   Call:  {{ $re := partialCached "math-glue-patterns.html" "math-glue" }}
-  Returns a dict of RE2 patterns, unanchored: label, value.
+  Returns a dict of RE2 patterns, unanchored: label, value, open (open is
+  written for rendered HTML; `mathtext` reads source and keeps its own).
 */ -}}
 {{- $super := `[⁻⁰¹²³⁴⁵⁶⁷⁸⁹]` -}}
 {{- $unitWord := printf `[A-Za-zµΩ°][A-Za-z°]{0,3}(?:%s+|\b)` $super -}}
@@ -31,4 +37,5 @@
 {{- return (dict
   "label" `\((?:[ivx]{1,4}|[a-z])\)`
   "value" (printf ` ?= ?(?:\?|%s(?: %s)?)` $number $unit)
+  "open" `(?:[(\[“‘]|&ldquo;|&lsquo;)+`
 ) -}}

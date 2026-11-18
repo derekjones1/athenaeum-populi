@@ -8,7 +8,9 @@
   closing quote, any run of them — become one `.ap-math-glue` span, and
   every marker is removed. A label typed before the formula, "(ii) ", and a
   value typed after it, " = 180.5 kJ", join the same span
-  (`_partials/math-glue-patterns.html` says which and why).
+  (`_partials/math-glue-patterns.html` says which and why), and so does an
+  opening bracket or quote typed straight before it: "(" in "the volume
+  ($V$)" could end a line alone, as the period could start one.
 
   The pattern must never run from one formula's start to a LATER formula's
   end. RE2 has no lookahead, so the body is written as "no comment inside":
@@ -26,9 +28,11 @@
   {{- /* A label before the formula, with any value and punctuation after it. */ -}}
   {{- $html = replaceRE (printf `(^|[\s>])(%s) %s((?:%s)?%s*)` $re.label $math $re.value $punct) `${1}<span class="ap-math-glue"><span class="ap-math-label">${2} </span>${3}${4}</span>` $html -}}
   {{- /* A value after the formula, with any punctuation after that. */ -}}
-  {{- $html = replaceRE (printf `%s(%s%s*)` $math $re.value $punct) `<span class="ap-math-glue">${1}${2}</span>` $html -}}
+  {{- $html = replaceRE (printf `(%s)?%s(%s%s*)` $re.open $math $re.value $punct) `<span class="ap-math-glue">${1}${2}${3}</span>` $html -}}
   {{- /* Punctuation alone. */ -}}
-  {{- $html = replaceRE `<!--m-->((?:[^<]|<[^!])*)<!--/m-->((?:[.,;:?!)’”]|&rsquo;|&rdquo;)+)` `<span class="ap-math-glue">$1$2</span>` $html -}}
+  {{- $html = replaceRE (printf `(%s)?%s(%s+)` $re.open $math $punct) `<span class="ap-math-glue">${1}${2}${3}</span>` $html -}}
+  {{- /* An opening bracket or quote alone: "($V$ and $n$)". */ -}}
+  {{- $html = replaceRE (printf `(%s)%s` $re.open $math) `<span class="ap-math-glue">${1}${2}</span>` $html -}}
   {{- $html = replace (replace $html "<!--m-->" "") "<!--/m-->" "" -}}
 {{- end -}}
 {{- return ($html | safeHTML) -}}
