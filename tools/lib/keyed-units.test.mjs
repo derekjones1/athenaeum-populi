@@ -1745,3 +1745,114 @@ test('coverage reads the page\'s three items and its comment as the Check Your L
   assert.notEqual(status('fs-idm179450656(b)'), 'unkeyed-rendered');
   assert.notEqual(status('fs-idm179450656(a)'), 'unkeyed-rendered');
 });
+
+/* ---- chapter 9, Sections 9.3–9.6 (run B gate probe, November 17, 2026) -- */
+
+const RUN_B = cnxml(
+  example('x4', 'A 36.0-L cylinder contains 350 g CO<sub>2</sub>. What are the molar mass and molecular formula of phosphorus vapor?', '124 g/mol P<sub>4</sub>')
+  + example('x2', 'Acetylene is composed of 92.3% C and 7.7% H by mass. Find the empirical formula. What is the molecular formula for acetylene?', 'Empirical formula, CH; Molecular formula, C<sub>2</sub>H<sub>2</sub>')
+  + example('x7', 'An acetylene tank provides 9340 L of acetylene gas, C<sub>2</sub>H<sub>2</sub>, at 0 °C and 1 atm. How many tanks of oxygen, each providing 7.00 × 10<sup>3</sup> L of O<sub>2</sub> at 0 °C and 1 atm, will be required to burn the acetylene?', '3.34 tanks (2.34 × 10<sup>4</sup> L)')
+  + '<example id="x9"><para><title>T</title>Problem.</para><para><title>Solution</title>Worked.</para>'
+  + '<para><title>Check your Learning</title>A 560-mL flask contains 21.3 g N<sub>2</sub> at 145 °C. Calculate the pressure of N<sub>2</sub>:</para>'
+  + '<para>(a) from the ideal gas law</para><para>(b) from the van der Waals equation</para><para>(c) Explain the reason(s) for the difference.</para>'
+  + '<note><title>Answer:</title><para>(a) 46.562 atm; (b) 46.594 atm; (c) The van der Waals equation takes into account the volume of the gas molecules themselves as well as intermolecular attractions.</para></note></example>'
+  + exercises(
+    exercise('p10', ['A 36.0–L cylinder of a gas used for calibration of blood gas analyzers in medical laboratories contains 350 g CO<sub>2</sub>, 805 g O<sub>2</sub>, and 4,880 g N<sub>2</sub>. At 25 degrees C, what is the pressure in the cylinder in atmospheres?'], '141 atm, 107,000 torr, 14,300 kPa'),
+    exercise('p12', ['A sample of gas isolated from unrefined petroleum contains 90.0% CH<sub>4</sub>, 8.9% C<sub>2</sub>H<sub>6</sub>, and 1.1% C<sub>3</sub>H<sub>8</sub> at a total pressure of 307.2 kPa. What is the partial pressure of each component of this gas?'], 'CH<sub>4</sub>: 276 kPa; C<sub>2</sub>H<sub>6</sub>: 27 kPa; C<sub>3</sub>H<sub>8</sub>: 3.4 kPa'),
+    exercise('p18', ['Joseph Priestley first prepared pure oxygen by heating mercuric oxide, HgO.', '(a) Outline the steps necessary to answer the following question: What volume of O<sub>2</sub> at 23 °C and 0.975 atm is produced by the decomposition of 5.36 g of HgO?', '(b) Answer the question.'],
+      '(a) Determine the moles of HgO that decompose; using the chemical equation, determine the moles of O<sub>2</sub> produced by decomposition of this amount of HgO; and determine the volume of O<sub>2</sub> from the moles of O<sub>2</sub>, temperature, and pressure. (b) 0.308 L'),
+    exercise('d5', ['Which of the following gases diffuse more slowly than oxygen? F<sub>2</sub>, Ne, N<sub>2</sub>O, C<sub>2</sub>H<sub>2</sub>, NO, Cl<sub>2</sub>, H<sub>2</sub>S'], 'F<sub>2</sub>, N<sub>2</sub>O, Cl<sub>2</sub>, H<sub>2</sub>S'),
+    exercise('k8', ['Answer the following questions:', '(a) Is the pressure of the gas in the hot-air balloon shown at the opening of this chapter greater than, less than, or equal to that of the atmosphere outside the balloon?', '(b) Is the density of the gas in the hot-air balloon shown at the opening of this chapter greater than, less than, or equal to that of the atmosphere outside the balloon?'], '(a) equal; (b) less than'),
+    exercise('n1', ['Graphs showing the behavior of several different gases follow. Which of these gases exhibit behavior significantly different from that expected for ideal gases?'], 'Gases C, E, and F'),
+    exercise('n3', ['Under which of the following sets of conditions does a real gas behave most like an ideal gas, and for which conditions is a real gas expected to deviate from ideal behavior? Explain.', '(a) high pressure, small volume', '(b) high temperature, low pressure', '(c) low temperature, high pressure'],
+      'The gas behavior most like an ideal gas will occur under the conditions that minimize the chances of significant interactions between the gaseous atoms/molecules, namely, low pressures and high temperatures. The conditions described in (b), high temperature and low pressure, are therefore most likely to yield ideal gas behavior.'),
+  ),
+);
+const runB = keyedUnits(RUN_B);
+const judgeB = (item) => judgeKeyedUnit(item, runB);
+const yesNo = (question, answer) => judgeB({ type: 'multiplechoice', question, answer, options: ['yes', 'no'] });
+
+test('9.4: a member of a list printed AFTER the stem\'s question mark is asked yes or no, both gates', async () => {
+  const { listMembers } = await import('./keyed-units.mjs');
+  assert.deepEqual(listMembers(runB.find((unit) => unit.id === 'd5').stem), ['F 2', 'Ne', 'N 2 O', 'C 2 H 2', 'NO', 'Cl 2', 'H 2 S'], 'a formula\'s subscripts are no words of it');
+  const ask = (member) => `Does the following gas diffuse more slowly than oxygen? ${member}`;
+  assert.equal(yesNo(ask('F₂'), 'yes').status, 'confirmed');
+  assert.equal(yesNo(ask('C₂H₂'), 'no').status, 'confirmed');
+  assert.equal(yesNo(ask('Cl₂'), 'no').status, 'key-differs', 'a member the answer lists is yes');
+  assert.equal(yesNo(ask('Ne'), 'yes').status, 'key-differs', 'a member it does not list is no');
+  const page = ['F₂', 'Ne'].map((member) => `{{< multiplechoice question="${ask(member)}" answer="yes" hint="h" >}}\nyes\nno\n{{< /multiplechoice >}}\n`).join('\n');
+  assert.equal(coverage(page, sourceExercises(RUN_B), { keyedOnly: true }).find((verdict) => verdict.id === 'd5')?.status, 'rendered');
+});
+
+test('9.6: a labelled panel of the stem\'s image asked yes or no is held to the labels the answer lists', () => {
+  const ask = (label) => `Graphs showing the behavior of several different gases follow. Does the following gas, graphed in the figure above, exhibit behavior significantly different from that expected for ideal gases? ${label}`;
+  assert.equal(yesNo(ask('Gas C'), 'yes').status, 'confirmed');
+  assert.equal(yesNo(ask('Gas A'), 'no').status, 'confirmed');
+  assert.equal(yesNo(ask('Gas E'), 'no').status, 'key-differs');
+  assert.equal(yesNo(ask('Gas B'), 'yes').status, 'key-differs');
+});
+
+test('9.6: a lone letter in the sentence that answers the lead-in\'s "most" is one closed choice, and the reason\'s self-check is its own', () => {
+  const unit = runB.find((candidate) => candidate.group === 'n3');
+  assert.equal(unit.chosen, 'b');
+  const options = ['high pressure, small volume', 'high temperature, low pressure', 'low temperature, high pressure'];
+  const question = 'Under which of the following sets of conditions does a real gas behave most like an ideal gas, and for which conditions is a real gas expected to deviate from ideal behavior? Explain. Which set of conditions gives behavior most like an ideal gas?';
+  assert.equal(judgeB({ type: 'multiplechoice', question, answer: options[1], options }).status, 'confirmed');
+  assert.equal(judgeB({ type: 'multiplechoice', question, answer: options[2], options }).status, 'key-differs');
+  const self = judgeB({ type: 'selfcheck', question: `${question.replace(/ Which set.*$/, '')} (a) high pressure, small volume (b) high temperature, low pressure (c) low temperature, high pressure`, model: unit.answer });
+  assert.equal(self.exercise.id, 'n3');
+  assert.equal(self.status, 'verbatim');
+});
+
+test('9.5: an option the stem prints with its joining word ("equal to") is named by the comparison alone ("equal")', () => {
+  const options = ['greater than', 'less than', 'equal to'];
+  const ask = 'Answer the following question: Is the pressure of the gas in the hot-air balloon shown at [the opening of this chapter](/physical-sciences/chemistry/09-gases/) greater than, less than, or equal to that of the atmosphere outside the balloon?';
+  assert.equal(judgeB({ type: 'multiplechoice', question: ask, answer: 'equal to', options }).status, 'confirmed', 'the link is no word of the stem');
+  assert.equal(judgeB({ type: 'multiplechoice', question: ask, answer: 'less than', options }).status, 'key-differs');
+});
+
+test('9.3: a formula after a number and its unit, and two formulas each after its label and a comma', () => {
+  const textin = (question, answer) => judgeB({ type: 'textin', question, answer, form: 'formula' });
+  const p4 = 'A 36.0-L cylinder contains 350 g CO₂. What are the molar mass and molecular formula of phosphorus vapor? Enter the molecular formula.';
+  assert.equal(textin(p4, 'P₄').status, 'confirmed');
+  assert.equal(textin(p4, 'P₂').status, 'key-differs');
+  const lead = 'Acetylene is composed of 92.3% C and 7.7% H by mass. Find the empirical formula. What is the molecular formula for acetylene?';
+  assert.equal(textin(`${lead} Enter the empirical formula.`, 'CH').status, 'confirmed');
+  assert.equal(textin(`${lead} Enter the molecular formula.`, 'C₂H₂').status, 'confirmed');
+  assert.equal(textin(`${lead} Enter the empirical formula.`, 'C₂H₂').status, 'key-differs', 'a swapped pair is refused');
+  assert.equal(textin(`${lead} Enter the molecular formula.`, 'CH').status, 'key-differs');
+});
+
+test('9.3: a fill-in is held to its gas\'s value, to the unit its question asks, and to the count its closing names', () => {
+  const fillin = (question, answer, form) => judgeB({ type: 'fillin', question, answer, form });
+  const gas = (formula) => `A sample of gas isolated from unrefined petroleum contains 90.0% CH₄, 8.9% C₂H₆, and 1.1% C₃H₈ at a total pressure of 307.2 kPa. What is the partial pressure of each component of this gas? Enter the partial pressure of ${formula} in kilopascals.`;
+  assert.equal(fillin(gas('CH₄'), '276', 'sig-figs:3 last-digit:0').status, 'confirmed');
+  assert.equal(fillin(gas('C₂H₆'), '27', 'sig-figs:2 last-digit:0').status, 'confirmed');
+  assert.equal(fillin(gas('CH₄'), '27', 'sig-figs:2 last-digit:0').status, 'key-differs', 'a swapped pair is refused, however the figures are declared');
+  assert.equal(fillin(gas('C₂H₆'), '276', 'sig-figs:3 last-digit:0').status, 'key-differs');
+  const cylinder = 'A 36.0-L cylinder of a gas used for calibration of blood gas analyzers in medical laboratories contains 350 g CO₂, 805 g O₂, and 4,880 g N₂. At 25 °C, what is the pressure in the cylinder in atmospheres?';
+  for (const question of [cylinder, `${cylinder} Enter the pressure in atmospheres.`]) {
+    assert.equal(fillin(question, '141', 'sig-figs:3 last-digit:1').status, 'confirmed');
+    assert.equal(fillin(question, '1.07\\times10^{5}', 'sig-figs:3 last-digit:1').status, 'key-differs', 'the torr value is no key of a question that asks atmospheres');
+  }
+  const tanks = 'An acetylene tank provides 9340 L of acetylene gas, C₂H₂, at 0 °C and 1 atm. How many tanks of oxygen, each providing $7.00 \\times 10^{3}$ L of O₂ at 0 °C and 1 atm, will be required to burn the acetylene? Enter the number of tanks, to three significant figures.';
+  assert.equal(fillin(tanks, '3.34', 'sig-figs:3 last-digit:0').status, 'confirmed');
+  assert.equal(fillin(tanks, '2.34\\times10^{4}', 'sig-figs:3 last-digit:0').status, 'key-differs', 'the volume beside the count is no key');
+});
+
+test('9.3: the fill-in of an outline-then-answer exercise is part (b), which prints the number', () => {
+  const lead = 'Joseph Priestley first prepared pure oxygen by heating mercuric oxide, HgO. Outline the steps necessary to answer the following question: What volume of O₂ at 23 °C and 0.975 atm is produced by the decomposition of 5.36 g of HgO?';
+  const fill = judgeB({ type: 'fillin', question: `${lead} Answer the question. Enter the volume in liters.`, answer: '0.308', form: 'sig-figs:3 last-digit:1' });
+  assert.equal(fill.exercise.id, 'p18(b)');
+  assert.equal(fill.status, 'confirmed');
+  assert.equal(unitFor(lead, runB, { type: 'selfcheck' }).id, 'p18(a)', 'the outline\'s self-check is still part (a)');
+});
+
+test('9.6: a "Check your Learning" in lower case is a lettered unit, two fill-ins of one key each held to its own part', () => {
+  const lead = 'A 560-mL flask contains 21.3 g N₂ at 145 °C. Calculate the pressure of N₂:';
+  const a = judgeB({ type: 'fillin', question: `${lead} from the ideal gas law. Enter the pressure in atmospheres.`, answer: '46.6', form: 'sig-figs:3 last-digit:1' });
+  const b = judgeB({ type: 'fillin', question: `${lead} from the van der Waals equation. Enter the pressure in atmospheres.`, answer: '46.6', form: 'sig-figs:3 last-digit:1' });
+  assert.deepEqual([a.exercise.id, a.status], ['x9#check(a)', 'key-differs'], 'the corrected key needs the deviation of (a)');
+  assert.deepEqual([b.exercise.id, b.status], ['x9#check(b)', 'key-differs'], '…and the one of (b)');
+  assert.equal(judgeB({ type: 'fillin', question: `${lead} from the van der Waals equation. Enter the pressure in atmospheres.`, answer: '46.594', form: 'sig-figs:5 last-digit:1' }).status, 'confirmed');
+});

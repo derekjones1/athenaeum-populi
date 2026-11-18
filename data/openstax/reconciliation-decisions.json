@@ -8213,6 +8213,306 @@
       "status": "correct-local-source-defect",
       "errataEntry": 3225,
       "rationale": "The four examples convert Celsius to kelvin by adding 273 and reuse rounded intermediates (297 K, 323 K, 283 K, 303 K, 298 K, 300 K, 310 K, 40.8 mol, 0.980 atm), where the module's own gas-thermometer example uses 273.15. The page converts with 273.15 and prints carried digits, with one visible Source note after Example 1 and a footer clause; one result moves, the Celsius temperature of erratum 3209, and the others are the same. Ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/03-stoichiometry-of-gaseous-substances-mixtures-and-reactions.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68752",
+      "sourceElementIds": [
+        "fs-idp143452448"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3235,
+      "rationale": "The Check Your Learning answer prints \"1.137 atm\", four figures, for 0.2661 mol in 5.73 L at 25 °C; 0.2661 mol × 0.08206 L atm/(mol K) × 298.15 K ÷ 5.73 L = 1.1362 atm, and the data have three figures, so the answer is 1.14 atm. The page keys 1.14 with a visible Source note and a footer clause, and tools/verify/verify-source-keys.mjs lists the item (fs-idp143452448#check) in DISCLOSED_DEVIATIONS. Found by the orchestrator before the wave, ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/03-stoichiometry-of-gaseous-substances-mixtures-and-reactions.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68752",
+      "sourceElementIds": [
+        "fs-idp46681200"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3236,
+      "rationale": "The Check Your Learning answer prints \"0.537 L\" for oxygen collected over water at 29.0 °C and 764 torr; the module's table gives 30.0 torr at 29 °C, so 0.560 L × 734.0 torr ÷ 764 torr = 0.5380 L, and 0.537 is what the 30 °C row (31.8 torr) gives. The page keys 0.538 with a visible Source note and a footer clause, and tools/verify/verify-source-keys.mjs lists the item (fs-idp46681200#check) in DISCLOSED_DEVIATIONS. Found by the orchestrator before the wave, ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/04-effusion-and-diffusion-of-gases.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68754",
+      "sourceElementIds": [
+        "fs-idp190361360"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3237,
+      "rationale": "The answer to the helium-and-hydrogen balloon exercise (printed 81) prints \"4.2 hours\", two figures, from a stem that gives 6 hours; 6 h × √(2.0160 ÷ 4.0026) = 4.26 h keeps one figure. The page keys 4 with a visible Source note and a footer clause, and tools/verify/verify-source-keys.mjs lists the item (fs-idp190361360) in DISCLOSED_DEVIATIONS. Found by the orchestrator before the wave, ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/05-the-kinetic-molecular-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68758",
+      "sourceElementIds": [
+        "fs-idm203397264"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3238,
+      "rationale": "The Check Your Learning answer prints \"441 m/s\" for oxygen at −23 °C, which is what 273 added to give 250 K produces (441.4); this book converts with 273.15, so the temperature is 250.15 K and the speed is 441.58 m/s. The page keys 442 with a visible Source note and a footer clause, and tools/verify/verify-source-keys.mjs lists the item (fs-idm203397264#check) in DISCLOSED_DEVIATIONS. Found by the orchestrator before the wave, ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/05-the-kinetic-molecular-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68758",
+      "sourceElementIds": [
+        "fs-idm150122880"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3239,
+      "rationale": "The answers to the hot-air-balloon exercise (printed 97) print guard digits for parts (c), (d), (e), (f), and (h) (29.48, 1.0966, 0.129, 4.01 × 10⁵ and 384, 39.1), and part (e)'s answer says g/L for a mass. The page keys each part to the figures its data give (29.5, 1.10, 0.13, 4.0 × 10⁵ and 380, 39), asks (e) in grams, and adds a visible Source note for each part and footer clauses; tools/verify/verify-source-keys.mjs lists five deviations (parts c, d, e, f, and h, the one for (f) covering both items). Found by the orchestrator before the wave, ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/06-non-ideal-gas-behavior.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68759",
+      "sourceElementIds": [
+        "fs-idp133812128",
+        "fs-idp6517264"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3240,
+      "rationale": "The Check Your Learning answer prints \"(a) 46.562 atm; (b) 46.594 atm\", five figures, from data of three figures; this book's data give 46.589 and 46.638 atm, both 46.6 at three figures. The page keys both fill-ins 46.6, keeps the source's answer to part (c) whole and adds one sentence to its model answer on how the two results compare at those figures, each with a visible Source note and footer clauses; tools/verify/verify-source-keys.mjs lists three deviations (#check(a) and #check(b), kind key, and #check(c), kind solution). Found by the orchestrator before the wave, ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/03-stoichiometry-of-gaseous-substances-mixtures-and-reactions.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68752",
+      "sourceElementIds": [
+        "fs-idp143452448"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3241,
+      "rationale": "Example 4 prints P(Ne) = 7.58 × 10⁻⁴ atm from 308 K (35 °C plus 273); with this book's 308.15 K the value is 7.586 × 10⁻⁴, which is 7.59 × 10⁻⁴. The page prints 7.59 × 10⁻⁴ under the module's one Source note and a footer clause; the H₂, He, and total pressures are the same. Found by the orchestrator before the wave, ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/03-stoichiometry-of-gaseous-substances-mixtures-and-reactions.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68752",
+      "sourceElementIds": [
+        "fs-idp107854880"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3242,
+      "rationale": "Example 5 prints P(O₂) = 48.4 kPa from the mole fraction rounded to 0.252; carried, 0.25178 × 192 kPa = 48.34, which is 48.3 kPa. The page prints 48.3 under the module's one Source note and a footer clause; the N₂O result is the same. Found by the orchestrator before the wave, ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/03-stoichiometry-of-gaseous-substances-mixtures-and-reactions.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68752",
+      "sourceElementIds": [
+        "fs-idp13049024",
+        "fs-idp48121168"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3243,
+      "rationale": "The gallium example prints 4.94 L from the rounded 0.191 mol, 300 K, and 0.951 atm; carried, with 300.15 K and 0.95132 atm, the volume is 4.946 L, which is 4.95 L. The source's display also strikes K⁻¹ of the gas constant and leaves the K of the temperature unstruck; the page strikes both. The page prints 4.95 under the module's one Source note and footer clauses. Found by the orchestrator before the wave (the result) and by the rendered-page reader (the unstruck kelvin), ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/05-the-kinetic-molecular-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68758",
+      "sourceElementIds": [
+        "fs-idm203397264",
+        "fs-idm230973056"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3244,
+      "rationale": "The nitrogen example prints \"519 m/s\" as the square root of 2.70 × 10⁵ m² s⁻², which is 519.6; the unrounded value's root is 519.5, so the result is 520 m/s at three figures. The slip is the source's own rounding of its last step, not an effect of the 273.15 conversion. The page prints 520 under the example's Source note, which says so, and a footer clause. The changed result was found by the orchestrator before the wave and its cause by the 9.5 checker, ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/05-the-kinetic-molecular-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68758",
+      "sourceElementIds": [
+        "fs-idm150122880"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3245,
+      "rationale": "The balloon exercise's stems give liquid propane's density as 0.5005 g/L, where the NIST Chemistry WebBook's saturation table gives 0.505 g/mL at 290 K and 0.497 g/mL at 295 K, and dry air's as 1.2256 g/L at 20 °C, where NASA Glenn gives 1.229 kg/m³ at 15 °C. The stems, data, and keys stay as printed; the page adds a Source note after the propane-volume part and one after the molar-mass part, each linking its record, and footer clauses. The propane density was found by the orchestrator before the wave and the dry-air density by the prose claim pass; sources opened and ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/03-stoichiometry-of-gaseous-substances-mixtures-and-reactions.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68752",
+      "sourceElementIds": [
+        "fs-idp46681200",
+        "fs-idm68841392"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3247,
+      "rationale": "The argon example cites Appendix E for the vapor pressure of water at 26 °C; Appendix E's table has rows at 20, 22, 25, and 30 °C and none at 26 °C, while the module's own table gives 25.2 torr at 26 °C, the figure the example uses. The page cites the module's own table, and the footer says so. Found by the orchestrator before the wave, ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/03-stoichiometry-of-gaseous-substances-mixtures-and-reactions.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68752",
+      "sourceElementIds": [
+        "fs-idp89809920",
+        "fs-idp57291280"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3248,
+      "rationale": "The propane example's volume table prints \"4 volumes\" under 4H₂O(l); volume ratios hold only for gases at the same temperature and pressure. The page sets the table as an array with no volume under the liquid water, with a visible Source note and a footer clause. Found by the prose claim pass, and ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/03-stoichiometry-of-gaseous-substances-mixtures-and-reactions.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68752",
+      "sourceElementIds": [
+        "fs-idp89809920",
+        "fs-idp8505312",
+        "fs-idp78474976"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3249,
+      "rationale": "The propane example prints 13.5 L, three figures, from 2.7 L, which has two. The page prints 14 L in the display and the sentence, with a visible Source note and a footer clause; Found by the prose claim pass, and ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/05-the-kinetic-molecular-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68758",
+      "sourceElementIds": [
+        "fs-idp30560352"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3250,
+      "rationale": "The paragraph says \"According to Graham's law, the molecules of a gas are in rapid motion and the molecules themselves are small\"; these are postulates of the kinetic-molecular theory, listed in the section's opening, and the paragraph begins a derivation of Graham's law from the theory. The page says \"According to the kinetic-molecular theory\", with a visible Source note after the paragraph and a footer clause. Found by the prose claim pass, and ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/05-the-kinetic-molecular-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68758",
+      "sourceElementIds": [
+        "fs-idm197441248"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3251,
+      "rationale": "The equation sets 3RT/u_rms² equal to 3RT/ū² with the bar over u alone, the square of the mean speed, where the section defines u_rms as the root of the mean of the squared speeds. The page sets the bar over u², with a visible Source note after the equation and a footer clause. Found by the prose claim pass, and ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/06-non-ideal-gas-behavior.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68759",
+      "sourceElementIds": [
+        "fs-idm16170960"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3252,
+      "rationale": "The paragraph says the van der Waals equation was developed \"in 1879\"; the Nobel Foundation's biography (its page refused the orchestrator's own request; the claim pass's saved copy was used) gives 1873 as the year he obtained his doctor's degree for the thesis in which he put forward the equation of state. The page prints 1873 with a visible Source note linking the biography and a footer clause. Found by the prose claim pass, and ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/06-non-ideal-gas-behavior.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68759",
+      "sourceElementIds": [
+        "fs-idm89275552"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3253,
+      "rationale": "The source's answer to part (c) of the compressibility exercise says the volume of the molecules gives \"a small lowering compressibility\" at low pressures and \"would increase compressibility\" at higher pressures, against the module's own text (the gas becomes less compressible and Z increases with P). The page's model answer says the volume of the molecules raises Z, by little at low pressures and by more at high pressures, with a Source note after the block, a footer clause, and a DISCLOSED_DEVIATIONS line (fs-idm89275552(c), kind solution). Found by the prose claim pass, and ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/03-stoichiometry-of-gaseous-substances-mixtures-and-reactions.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68752",
+      "sourceElementIds": [
+        "fs-idp128586304",
+        "fs-idp74274064",
+        "fs-idp207136496",
+        "fs-idp143452448",
+        "fs-idp107854880",
+        "fs-idp13049024"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3261,
+      "rationale": "The module's examples use rounded atomic masses, R = 0.0821 in the first two, 273 added to each Celsius temperature, and rounded intermediate values; with this book's masses, R = 0.08206, 273.15 K, and carried digits, three final results move in the last digit (neon's partial pressure, oxygen's partial pressure, the volume of hydrogen) and the cyclopropane example's intermediate ratio moves from 1.98 to 1.99, and every other result is the same. The page prints the carried values with one visible Source note after Example 1 and a footer clause. Found by the 9.3 author, ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/03-stoichiometry-of-gaseous-substances-mixtures-and-reactions.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68752",
+      "sourceElementIds": [
+        "fs-idp97050544"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3265,
+      "rationale": "The Portrait of a Chemist says Susan Solomon \"is now at MIT, and continues to work at NOAA\"; MIT's Earth, Atmospheric and Planetary Sciences page says she was a scientist at NOAA in Boulder before coming to MIT in 2012 and an adjunct professor at the University of Colorado from 1982 to 2011. The words stay as printed, with a visible Source note after the paragraph citing MIT's page and a footer clause. Found by the prose claim pass, and ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/04-effusion-and-diffusion-of-gases.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68754",
+      "sourceElementIds": [
+        "fs-idp125892592"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3270,
+      "rationale": "The uranium box says gaseous diffusion \"is now being replaced by gas centrifuge technology\"; the U.S. Department of Energy's Paducah Site page says commercial enrichment there was conducted until 2013, when operations ceased. The words stay as printed, with a visible Source note after the sentence citing the Department's page and a footer clause. Found by the prose claim pass, and ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/05-the-kinetic-molecular-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68758",
+      "sourceElementIds": [
+        "CNX_Chem_09_05_MolSpeed3"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3272,
+      "rationale": "The noble-gas graph's caption begins in lower case and says \"molecular speed is directly related to molecular mass\", where speed falls as mass rises and the caption's own second sentence says the lighter molecules are faster. The page capitalizes the first letter and keeps the words \"directly related\", with a visible Source note after the figure and footer clauses. Found by the 9.5 author, and ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/06-non-ideal-gas-behavior.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68759",
+      "sourceElementIds": [
+        "fs-idp95888368"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3284,
+      "rationale": "The paragraph says that at low pressures the correction for intermolecular attraction, a, is more important than the one for molecular volume, b; with the module's table at 300 K, helium's a/RT is 0.0014 L/mol against b = 0.0237 L/mol, and the module's own graph of Z draws hydrogen rising above 1 from the lowest pressures. The words stay as printed, with a visible Source note after the paragraph saying this holds for most gases near room temperature and a footer clause. Found by the prose claim pass, and ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/04-effusion-and-diffusion-of-gases.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68754",
+      "sourceElementIds": [
+        "fs-idp118691776",
+        "fs-idm54710976",
+        "fs-idp23019808"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3285,
+      "rationale": "The module's examples use rounded molar masses (32 and 2 g mol⁻¹; 20.2 and 131.3; 44.0) and the effusion-time example rounds its ratio to 0.392 before using it again. The page computes the masses from this book's periodic table (31.998 and 2.0160; 20.180 and 131.29; 44.009) and prints the carried 0.39205, with one visible Source note after Example 1 and a footer clause; the final results (4 to 1, 95.3 s, 16.0 g/mol) are the same. Found by the 9.4 author, ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/05-the-kinetic-molecular-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68758",
+      "sourceElementIds": [
+        "fs-idm203397264"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3286,
+      "rationale": "The nitrogen example converts 30 °C by adding 273, takes the molar mass of nitrogen as 28.0 g, and rounds the value under the root sign to 2.70 × 10⁵; the page converts with 273.15, takes 28.014 g/mol from the periodic table, and carries 2.6991 × 10⁵, with the example's Source note and a footer clause. The changed result, 519 against 520 m/s, is not an effect of these choices and is entry 3244. Found by the 9.5 author, ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/06-non-ideal-gas-behavior.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68759",
+      "sourceElementIds": [
+        "fs-idp133812128"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3287,
+      "rationale": "The van der Waals example converts 229 °C to 502 K by adding 273; the page prints 502.15 K, with a visible Source note and a footer clause, and the results (33.5 and 32.4 atm) are the same. Found by the 9.6 author, ruled by the orchestrator, November 17, 2026."
     }
   ]
 }

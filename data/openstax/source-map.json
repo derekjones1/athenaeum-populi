@@ -261,7 +261,7 @@
       "upstreamChapters": 21,
       "upstreamSections": 114,
       "localChapters": 9,
-      "mappedSections": 42,
+      "mappedSections": 46,
       "upstreamAppendices": 13,
       "mappedAppendices": 13
     }
@@ -7646,6 +7646,42 @@
       "moduleId": "m68751",
       "sourceTitle": "Relating Pressure, Volume, Amount, and Temperature: The Ideal Gas Law",
       "moduleSha256": "e7c4694bae8e34ee9bb7991edde888be1d0f7c8a6dbd18d0926d90fbc6a7d85a"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/03-stoichiometry-of-gaseous-substances-mixtures-and-reactions.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "9.3",
+      "moduleId": "m68752",
+      "sourceTitle": "Stoichiometry of Gaseous Substances, Mixtures, and Reactions",
+      "moduleSha256": "87f7d7641d0838c1a5be15cc986ae88917c3ae15ba5a9d773d93579530f79b59"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/04-effusion-and-diffusion-of-gases.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "9.4",
+      "moduleId": "m68754",
+      "sourceTitle": "Effusion and Diffusion of Gases",
+      "moduleSha256": "9d7b1e2c162765f35e8720fa5881b5a1d911efc46b97472ac556ad62b49db34c"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/05-the-kinetic-molecular-theory.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "9.5",
+      "moduleId": "m68758",
+      "sourceTitle": "The Kinetic-Molecular Theory",
+      "moduleSha256": "f02e7fd6b4b7ba2b3ee8e862d53e8ab18d111b2867f2352b43d1e6fa6afa3405"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/06-non-ideal-gas-behavior.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "9.6",
+      "moduleId": "m68759",
+      "sourceTitle": "Non-Ideal Gas Behavior",
+      "moduleSha256": "9904067d1f31a38740fd728b8aa24566bdbbef3a05840214f478561a65561296"
     }
   ],
   "appendices": [

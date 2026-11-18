@@ -93,7 +93,10 @@ def inventory(bundle, chapter, json_path):
         examples = re.findall(r"<example\b.*?</example>", source, flags=re.S)
         # An example may end with more than one Check Your Learning (5.2's
         # fs-idp13199280 has two, each with its Answer note): count each.
-        check_your_learning = [example for example in examples for _ in re.findall(r"<title>Check Your Learning</title>", example)]
+        # The title's capitals vary: 9.6's is "Check your Learning", which
+        # the gates read (keyed-units.mjs matches it without case) and this
+        # extractor, matching it exactly, did not.
+        check_your_learning = [example for example in examples for _ in re.findall(r"<title>(?i:Check Your Learning)</title>", example)]
         notes = collections.Counter(re.findall(r'<note[^>]*class="([^"]*)"', source))
         headings = re.findall(r"<section[^>]*>\s*<title>([^<]*)</title>", source)
         info = dict(
@@ -129,7 +132,7 @@ def inventory(bundle, chapter, json_path):
                     print(f"    K{number}: Q: {inventory_text(problem)[:150]}\n         A: {inventory_text('<' + solution)[:170]}")
             for example in examples:
                 for match in re.finditer(
-                    r"<title>Check Your Learning</title>(.*?)<note[^>]*>\s*<title>Answer:?</title>(.*?)</note>",
+                    r"<title>(?i:Check Your Learning)</title>(.*?)<note[^>]*>\s*<title>Answer:?</title>(.*?)</note>",
                     example,
                     flags=re.S,
                 ):
@@ -238,7 +241,7 @@ def keys(bundle, module_id):
         # Every Check Your Learning of the example: the first is the gates'
         # `<id>#check`, a second `<id>#check2` (keyed-units.mjs).
         checks = list(re.finditer(
-            r"<title>Check Your Learning</title>(.*?)<note[^>]*>\s*<title>Answer:?</title>(.*?)</note>",
+            r"<title>(?i:Check Your Learning)</title>(.*?)<note[^>]*>\s*<title>Answer:?</title>(.*?)</note>",
             example,
             flags=re.S,
         ))

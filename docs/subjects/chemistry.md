@@ -860,7 +860,28 @@ selfchecks, source defects, the footer — and each is stated once.
   value** where a later step uses it (297.15 K, not the source's 297 K),
   under the Source note for rounded intermediates with one clause added
   for the 273 *(chapter 9)*. A result that moves is a correction (9.2's
-  gas thermometer, −33.3 °C for the source's −33.4).
+  gas thermometer, −33.3 °C for the source's −33.4). **Before a moved
+  result is blamed on the conversion, it is re-run from the source's own
+  printed numbers**: 9.5's 520 m/s is what the source's own 2.70 × 10⁵
+  m² s⁻² gives, so its 519 m/s is a rounding slip, and the note says that
+  (the parent first wrote "273.15"; the checker found it).
+- **A worked example's result with more figures than its data give is
+  corrected as a key is** *(chapter 9)*: 9.3's propane example prints 13.5 L
+  of O₂ from 2.7 L of propane; the page prints 14 L, with a Source note
+  directly after that says what the source prints. The examples are what
+  a learner copies, and the same over-count typed into a field is told to
+  round. (A result whose count is only ambiguous — 9.2's 390 kPa — stands.)
+- **Where two routes of this book end one unit apart, the key is the ideal
+  gas law's and `last-digit:1` takes the other** *(chapter 9)*: at STP,
+  $nRT/P$ with the book's $R$ against the standard molar volume, 22.4 L
+  (9.3: 88.1 against 88.0 g/mol; 9.5: 270 against 269 L). The hint names
+  both routes, and the ledger note records both values.
+- **A value fetched from the page's own table takes `1` even where a
+  neighbouring row's value is then graded right** (9.3's oxygen collected
+  over water, 0.538 L, where 0.537 is what the next row gives): the `0`
+  exceptions are for a number the STEM prints, or a value reachable without
+  the stem's data *(chapter 9; the consistency reader overturned the
+  parent's `0` by setting the item beside its sibling on the same table)*.
 - **A key that is a stem number by the law the item tests** (the total mass
   of products, 200.0 g, from 200.0 g of reactant) stands as a `fillin`; the
   ledger says so.
@@ -982,8 +1003,14 @@ selfchecks, source defects, the footer — and each is stated once.
 ### Hints
 
 - **A heading of the same page is a "subsection"** ("see the Lewis Symbols
-  subsection above"); "Section" is a numbered page of the book, linked
-  ("Section 7.3") *(chapter 7)*.
+  subsection above"); "Section" is a numbered page of the book, named by
+  its number and title and NOT linked — a hint is plain text ("the value
+  of R in kPa L/(mol K) from Section 9.2 Relating Pressure, Volume, Amount,
+  and Temperature: The Ideal Gas Law") *(chapter 7; "linked" stood here
+  until chapter 9's consistency reader set it beside page-skeleton rule 9,
+  and 80 of the book's 83 hints already wrote it so)*. A hint that relies
+  on a constant or a table only another section prints names that
+  section.
 
 **A hint names the tool — the equation by its name, the table, the rule or
 definition to recall, the unit chain of a multi-step conversion — and never
@@ -1236,6 +1263,32 @@ after the rule was written, so the line is drawn by pairs:
   takes `last-digit:0`, and a Source note after it says only that the two
   readings are not the same pressure — it does not open "the answer
   graded", since the key is the source's *(chapter 9)*.
+- **A stem datum that is physically off is not changed** *(chapter 9)*: the
+  stem's words stand and the key follows them (9.5's balloon: liquid
+  propane's density printed in g/L; dry air's density at 20 °C printed as
+  the value near 15 °C). A Source note after the item cites a source the
+  parent has opened and closes "The answer graded here follows the stem as
+  printed." — it never says what the answer would otherwise be.
+- **A part that leans on an earlier part restates that part's GIVEN data,
+  never its result — and not a datum that answers an earlier part** (9.5's
+  balloon: parts (d)–(f) restate the cool air's density and the hot air's
+  temperature, and do not state the balloon's pressure, which part (a)
+  asks) *(chapter 9)*.
+- **A stem's link never leads to a page that prints the item's key**
+  *(chapter 9)*: 9.5's "the hot-air balloon shown at the opening of this
+  chapter" is left unlinked, because the landing's caption answers part
+  (b); the footer says the reference is left unlinked and why, without the
+  caption's words. A ruling that puts a link in a stem is made with the
+  target page open.
+- **A self-check whose question presumes what the corrected keys erase**
+  (9.6: "Explain the reason(s) for the difference" after two parts both
+  keyed 46.6 atm) keeps the source's answer whole and adds one sentence
+  saying so, disclosed as a `solution` deviation under the keys' erratum,
+  with a Source note after the block that says a sentence was added and
+  not what it says. The gate measures how much of a model answer is the
+  source's: an addition is run through `verify-source-keys` before it is
+  kept, and disclosed, never trimmed to pass *(chapter 9; the blind
+  solver's note)*.
 - **"A key the source's own arithmetic misrounds" needs every number in
   the stem.** Where the factor is a table's (9.1's Venus: 88.8 atm × the
   table's ~14.7 psi is 1.31 × 10³, and the source's 1.30 × 10³ is what the
@@ -2389,3 +2442,16 @@ What chapter 1 settled, and what the scan of the book counted, are in
   no template; `solve:compare` counts an answer written one figure short
   of the form as agreeing, so a figure-count disagreement is only in the
   solver's note.
+- from chapter 9, Sections 9.3–9.6 (November 17, 2026;
+  `docs/history/chemistry.md`): no lint reads a hint that relies on a
+  constant only another section prints; no lint reads a display that
+  strikes K⁻¹ and leaves its partner K unstruck (9.3's gallium example,
+  found on the rendered page); no lint compares a symbol's notation between
+  a self-check's question and its model answer (`$Z$` against Z); no gate
+  evaluates the numbers of a display chain (9.4's √15.872 = 4);
+  `verify:replay` passes a stem number typed back with fewer figures (40
+  for the stem's 40.0) as a coincidence; `chemistry-prep.py inventory`
+  counted no Check Your Learning for a note headed "Check your Learning"
+  until this run's gate agent fixed its match; and "the book's own
+  rounding rule" for a tie (740.5) is Section 1.5's round-half-to-even,
+  which this playbook does not yet name where it speaks of ties.

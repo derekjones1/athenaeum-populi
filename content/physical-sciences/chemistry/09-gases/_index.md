@@ -29,8 +29,10 @@ will show us the limitations of the theory and how to improve on it.
 
 - **Gas Pressure** — defining the property of pressure; defining and converting among the units of pressure measurements; describing the operation of common tools for measuring gas pressure; and calculating pressure from manometer data.
 - **Relating Pressure, Volume, Amount, and Temperature: The Ideal Gas Law** — identifying the mathematical relationships between the various properties of gases; and using the ideal gas law, and related gas laws, to compute the values of various gas properties under specified conditions.
-
-The chapter’s remaining sections — Stoichiometry of Gaseous Substances, Mixtures, and Reactions; Effusion and Diffusion of Gases; The Kinetic-Molecular Theory; and Non-Ideal Gas Behavior — are being written and will appear here when they are finished and verified.
+- **Stoichiometry of Gaseous Substances, Mixtures, and Reactions** — using the ideal gas law to compute gas densities and molar masses; performing stoichiometric calculations involving gaseous substances; and stating Dalton’s law of partial pressures and using it in calculations involving gaseous mixtures.
+- **Effusion and Diffusion of Gases** — defining and explaining effusion and diffusion; and stating Graham’s law and using it to compute relevant gas properties.
+- **The Kinetic-Molecular Theory** — stating the postulates of the kinetic-molecular theory; and using this theory’s postulates to explain the gas laws.
+- **Non-Ideal Gas Behavior** — describing the physical factors that lead to deviations from ideal gas behavior; explaining how these factors are represented in the van der Waals equation; defining compressibility (Z) and describing how its variation with pressure reflects non-ideal behavior; and quantifying non-ideal behavior by comparing computations of gas properties using the ideal gas law and the van der Waals equation.
 
 ---
 

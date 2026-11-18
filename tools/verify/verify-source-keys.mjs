@@ -115,7 +115,7 @@ import { readNumeral, withinPercent, withinReading } from '../../assets/js/lib/m
 import { loadElements } from '../lib/elements.mjs';
 import { massAsk, molarMass, statesNoNumber } from './molar-mass.mjs';
 import {
-  KEYED_ONLY_BOOKS, answerUnits, choiceLabels, closingUnit, isPartLabel, keyedUnits, listMembers, memberAsked, moduleAliases, plain as foldedPlain, texAsText, printedAbbreviations, printedNumerals, sortedExercise, twoUnitAnswer, unitFor, unlinked,
+  KEYED_ONLY_BOOKS, answerUnits, choiceLabels, closingUnit, isPartLabel, keyedUnits, listMembers, memberAsked, moduleAliases, panelAsked, plain as foldedPlain, texAsText, printedAbbreviations, printedNumerals, sortedExercise, twoUnitAnswer, unitFor, unlinked,
 } from '../lib/keyed-units.mjs';
 
 /** A page question must share this much of a source problem's vocabulary to
@@ -1371,6 +1371,97 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     erratum: 3207,
     reason: 'the source answer prints "5561 L", four figures, for 35.4 L × 151 atm × 310.15 K ÷ 298.15 K = 5560.5 L; the stem\'s volume and pressure have three figures each and every other key of the module keeps the figures of its data, so the fill-in keys 5.56 × 10³ at three significant figures',
   },
+  {
+    page: 'content/physical-sciences/chemistry/09-gases/03-stoichiometry-of-gaseous-substances-mixtures-and-reactions.md',
+    exercise: 'fs-idp143452448#check',
+    kind: 'key',
+    erratum: 3235,
+    reason: 'the Check Your Learning answer prints "1.137 atm", four figures, for 0.0388 + 0.147 + 0.0803 = 0.2661 mol in 5.73 L at 25 °C; the sum of moles is good to the thousandths place, the volume and the kelvin temperature (298 K) have three figures each, and 0.2661 mol × 0.08206 L atm/(mol K) × 298.15 K ÷ 5.73 L = 1.136 atm, so the fill-in keys 1.14 at three significant figures, as the module\'s other keys keep the figures of their data (1.87 atm for the next example\'s check)',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/09-gases/03-stoichiometry-of-gaseous-substances-mixtures-and-reactions.md',
+    exercise: 'fs-idp46681200#check',
+    kind: 'key',
+    erratum: 3236,
+    reason: 'the Check Your Learning answer prints "0.537 L" for oxygen collected over water at 29.0 °C and 764 torr with a volume of 0.560 L; the module\'s table gives the vapor pressure of water at 29 °C as 30.0 torr, so the dry oxygen is at 734.0 torr and 0.560 L × 734.0 torr ÷ 764 torr = 0.5380 L; the source\'s 0.537 is what the table\'s next row (30 °C, 31.8 torr) gives, 0.5367 L, so the fill-in keys 0.538',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/09-gases/04-effusion-and-diffusion-of-gases.md',
+    exercise: 'fs-idp190361360',
+    kind: 'key',
+    erratum: 3237,
+    reason: 'the source answer prints "4.2 hours", two figures, for a hydrogen balloon beside a helium balloon that takes 6 hours; 6 hours has one figure, 6 h × √(2.0160 ÷ 4.0026) = 4.26 h, and the module\'s other keys keep the figures of their data (52 mL/s from 79 mL/s, 32 h from 8.0 h), so the fill-in keys 4 at one significant figure',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/09-gases/05-the-kinetic-molecular-theory.md',
+    exercise: 'fs-idm203397264#check',
+    kind: 'key',
+    erratum: 3238,
+    reason: 'the Check Your Learning answer prints "441 m/s" for the root-mean-square speed of oxygen molecules at −23 °C, which is what 250 K gives; this book converts with 273.15 (Section 1.6), so the temperature is 250.15 K and √(3 × 8.314 J/(mol K) × 250.15 K ÷ 0.031998 kg/mol) = 441.58 m/s: the fill-in keys 442',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/09-gases/05-the-kinetic-molecular-theory.md',
+    exercise: 'fs-idm150122880(c)',
+    kind: 'key',
+    erratum: 3239,
+    reason: 'the source answer prints "(c) 29.48 g mol⁻¹", four figures, for the molar mass of dry air of density 1.2256 g/L at 1 atm and 20 °C; 20 °C is 293 K, three figures, and 1.2256 g/L × 0.08206 L atm/(mol K) × 293.15 K ÷ 1 atm = 29.483 g/mol, so the fill-in keys 29.5. The source carries guard digits from part to part of this exercise and prints them as its answers; each part is keyed to the figures its own data give',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/09-gases/05-the-kinetic-molecular-theory.md',
+    exercise: 'fs-idm150122880(d)',
+    kind: 'key',
+    erratum: 3239,
+    reason: 'the source answer prints "(d) 1.0966 g L⁻¹", five figures, for the density of air at 1.30 × 10² °F; that temperature has three figures (54.4 °C, 327.59 K carried) and 1.2256 g/L × 293.15 K ÷ 327.59 K = 1.0967 g/L, so the fill-in keys 1.10 at three significant figures',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/09-gases/05-the-kinetic-molecular-theory.md',
+    exercise: 'fs-idm150122880(e)',
+    kind: 'key',
+    erratum: 3239,
+    reason: 'the source answer prints "(e) 0.129 g/L", three figures, for the difference in mass of 1.00 L of the cool and the hot air; the hot air\'s density is good to the hundredths place (1.10 g/L), so the difference 1.2256 g − 1.0967 g = 0.1289 g is too, and the fill-in keys 0.13 g at two significant figures',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/09-gases/05-the-kinetic-molecular-theory.md',
+    exercise: 'fs-idm150122880(f)',
+    kind: 'key',
+    erratum: 3239,
+    reason: 'the source answer prints "(f) 4.01 × 10⁵ g; net lifting capacity = 384 lb", three figures each, for a balloon of 1.1 × 10⁵ ft³; the volume has two figures, so 1.1 × 10⁵ ft³ × 28.317 L/ft³ × 0.12886 g/L = 4.014 × 10⁵ g is keyed 4.0 × 10⁵ g, and that lifting power in pounds (884.9 lb, good to the tens place) less 500 lb is 385 lb, keyed 380 lb at two significant figures',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/09-gases/05-the-kinetic-molecular-theory.md',
+    exercise: 'fs-idm150122880(h)',
+    kind: 'key',
+    erratum: 3239,
+    reason: 'the source answer prints "(h) 39.1 kJ min⁻¹", three figures, for the heat of burning the propane of part (g) spread over a flight of "about 90 minutes"; 90 minutes has two figures at most, and 1.7186 mol × 2044.0 kJ/mol (Appendix G, water formed as a gas) ÷ 90 min = 39.03 kJ/min, so the fill-in keys 39 at two significant figures',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/09-gases/06-non-ideal-gas-behavior.md',
+    exercise: 'fs-idp133812128#check(a)',
+    kind: 'key',
+    erratum: 3240,
+    reason: 'the Check Your Learning answer prints "(a) 46.562 atm", five figures, for 21.3 g of N₂ in a 560-mL flask at 145 °C by the ideal gas law; the data have three figures, and with this book\'s molar mass (28.014 g/mol, 0.76033 mol) and 418.15 K the pressure is 46.589 atm — the source\'s digits are what 28.02 g/mol and 418 K give — so the fill-in keys 46.6 at three significant figures',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/09-gases/06-non-ideal-gas-behavior.md',
+    exercise: 'fs-idp133812128#check(b)',
+    kind: 'key',
+    erratum: 3240,
+    reason: 'the Check Your Learning answer prints "(b) 46.594 atm", five figures, for the same sample by the van der Waals equation (a = 1.39 L² atm/mol², b = 0.0391 L/mol); with 0.76033 mol and 418.15 K the pressure is 49.200 atm − 2.562 atm = 46.638 atm, and the data have three figures, so the fill-in keys 46.6 at three significant figures',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/09-gases/06-non-ideal-gas-behavior.md',
+    exercise: 'fs-idp133812128#check(c)',
+    kind: 'solution',
+    erratum: 3240,
+    reason: 'the Check Your Learning answer to part (c), "The van der Waals equation takes into account the volume of the gas molecules themselves as well as intermolecular attractions", is kept whole, and the model answer adds one sentence: with parts (a) and (b) keyed to the three figures their data give, both are 46.6 atm, so the "difference" the part asks about is 0.05 atm in the digits carried, and the model answer says so',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/09-gases/06-non-ideal-gas-behavior.md',
+    exercise: 'fs-idm89275552(c)',
+    kind: 'solution',
+    erratum: 3253,
+    reason: 'the source solution to part (c) says "The greater the compressibility, the more the volume matters. At low pressures … the effect of the volume of the gas molecules on Z would be a small lowering compressibility. At higher pressures, the effect of the volume of the gas molecules themselves on Z would increase compressibility"; the module\'s own text says the volume of the molecules makes a gas less compressible, so that Z increases with pressure, and it never lowers Z, so the model answer says that the volume of the molecules raises Z, by little at low pressures and by more at high pressures',
+  },
 ]);
 
 /* ---- source side ---------------------------------------------------------- */
@@ -2313,7 +2404,10 @@ const ANSWER_PIECES_SENTENCES = /[,;]|\s*\.\s+(?=[A-Z])/;
 export function labelledFormulas(answer, form) {
   const entries = [];
   // …or in sentences: "The empirical formula is BH₃. The molecular formula is B₂H₆." (4.5).
-  for (const raw of String(answer ?? '').split(ANSWER_PIECES_SENTENCES)) {
+  // …or each label followed by a comma: "Empirical formula, CH; Molecular
+  // formula, C₂H₂" (9.3's Check Your Learning) — the comma joins the label
+  // to its formula, and does not part them.
+  for (const raw of String(answer ?? '').replace(/\b(formulas?),\s+(?=[A-Z])/g, '$1 ').split(ANSWER_PIECES_SENTENCES)) {
     const piece = raw.trim().replace(/[.:]$/, '');
     const after = LABEL_AFTER.exec(piece);
     const before = after ? null : /^((?:[A-Za-z][a-z]{2,}\s+)+)(?:(?:is|are)\s+)?(?=\S)/.exec(piece);
@@ -2588,8 +2682,67 @@ const formulaChars = (value) => String(value ?? '').normalize('NFKC').replace(/[
  *   alone: 4.3's "18.86 mol CuO, 2.330 kg CuCO₃" answers the moles of
  *   CuCO₃ asked with the moles of CuO, which equal them (1:1).
  */
+/** The pressure unit a text opens with ("atm", "atmospheres", "kilopascals", "mm Hg"), or null. */
+const PRESSURE_FAMILIES = [
+  ['atm', /^(?:atm\b|atmospheres?\b)/i],
+  ['torr', /^torr\b/i],
+  ['kPa', /^(?:kPa\b|kilopascals?\b)/i],
+  ['mm Hg', /^(?:mm\s*Hg\b|millimeters?\s+of\s+mercury\b)/i],
+  ['bar', /^bars?\b/i],
+  ['psi', /^(?:psi\b|lb\s*in\b|pounds\s+per\s+square\s+inch\b)/i],
+  ['Pa', /^(?:Pa\b|pascals?\b)/],
+];
+function pressureFamily(text) {
+  const opening = String(text ?? '').trim();
+  return PRESSURE_FAMILIES.find(([, pattern]) => pattern.test(opening))?.[0] ?? null;
+}
+/** Each number of an answer with the pressure unit printed after it: [{ numeral, unit }]. */
+function measuredUnits(answer) {
+  const out = [];
+  for (const piece of String(answer ?? '').split(/[;]|,(?!\d{3})|\s(?:or|and)\s/)) {
+    const [numeral] = printedNumerals(piece);
+    if (!numeral) continue;
+    const unit = pressureFamily(piece.slice(piece.indexOf(numeral.printed) + numeral.printed.length));
+    if (unit) out.push({ numeral, unit });
+  }
+  return out;
+}
+
 function heldNumber(answer, question, key) {
   const closing = String(question).split(/(?<=[.?!][)”’"]?)\s+/).pop();
+  // A value per substance, each after its formula and a colon — "CH _4 :
+  // 276 kPa; C _2 H _6 : 27 kPa; C _3 H _8 : 3.4 kPa" (9.3, partial
+  // pressures): "Enter the partial pressure of C₂H₆ in kilopascals." is
+  // keyed with C₂H₆'s number, so a swapped pair is refused.
+  const perFormula = String(answer).split(';').map((piece) => /^\s*([A-Z][A-Za-z0-9 _()]*?)\s*:\s*(.+)$/.exec(piece))
+    .filter(Boolean).map((match) => ({ formula: formulaChars(match[1]), numeral: printedNumerals(match[2])[0] }))
+    .filter((entry) => entry.numeral && /\d/.test(entry.formula));
+  if (perFormula.length >= 2) {
+    const words = new Set(String(closing).split(/\s+/).map((word) => formulaChars(word.replace(/[.,;:?]+$/, ''))));
+    const asked = perFormula.filter((entry) => words.has(entry.formula));
+    if (asked.length === 1) {
+      return sameNumeral(asked[0].numeral, key) ? null : { what: `the value for ${asked[0].formula}`, numerals: [asked[0].numeral] };
+    }
+  }
+  // One quantity printed in several units — "141 atm, 107,000 torr, 14,300
+  // kPa" (9.3) — under a question that asks it in one ("…what is the
+  // pressure in the cylinder in atmospheres?", or an added "Enter the
+  // pressure in atmospheres."): the item is held to the number under THAT
+  // unit, so the torr value under the atmospheres stem is refused.
+  const measured = measuredUnits(answer);
+  if (new Set(measured.map((entry) => entry.unit)).size >= 2) {
+    const unitsIn = (text) => [...new Set([...String(text).matchAll(/\bin\s+(?:the\s+)?([^\s.,;?]+(?:\s+of\s+mercury)?)/gi)]
+      .map((match) => pressureFamily(match[1])).filter((unit) => unit && measured.some((entry) => entry.unit === unit)))];
+    // The added closing names the one asked where the stem names several
+    // ("…in atmospheres, in millimeters of mercury, in kilopascals, and in
+    // bar?", 9.1); otherwise the question as a whole must name one.
+    const closed = /^Enter\b/.test(closing.trim()) ? unitsIn(closing) : [];
+    const asked = closed.length === 1 ? closed : unitsIn(question);
+    if (asked.length === 1) {
+      const under = measured.filter((entry) => entry.unit === asked[0]).map((entry) => entry.numeral);
+      return under.some((numeral) => sameNumeral(numeral, key)) ? null : { what: `the value in ${asked[0]}`, numerals: under };
+    }
+  }
   // An answer that gives oxidation states AND formal charges, each list
   // after its own heading — "Oxidation states P +1, S −1⅓, Cl +5, O –2.
   // Formal charges: P 0; S 0; Cl +2: O –1" (8.2): an item that closes
@@ -3113,6 +3266,10 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
         .flatMap((piece) => [piece, piece.replace(LABEL_AFTER, '').replace(/\s*\(in [a-z ]+\)\s*$/, '')])
         .flatMap((piece) => (piece.includes(':') ? [piece, piece.slice(piece.lastIndexOf(':') + 1).trim()] : [piece]))
         .flatMap((piece) => [piece, piece.replace(/^(?:[A-Za-z][a-z]{2,}\s+)+(?:(?:is|are)\s+)?/, '')])
+        // A formula printed after a number and its unit ("124 g/mol P _4",
+        // 9.3's Check Your Learning: the molar mass and the formula it
+        // gives) is read without them.
+        .flatMap((piece) => [piece, piece.replace(/^[-−]?\d[\d.,]*(?:\s*×\s*10\^\{[^}]*\})?\s+[A-Za-z]+(?:\/[A-Za-z]+)?\s+(?=[A-Z])/, '')])
         .map((piece) => chemCanon(piece, item.form)).filter(Boolean);
       // Several equations to one part (4.1): read one by one, and the item
       // whose closing sentence asks for one is held to THAT one — the net
@@ -3259,6 +3416,13 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
     if (foldedPlain(item.answer) === wanted) return { status: 'confirmed', exercise };
     return { status: 'key-differs', exercise, detail: `source ${unit.id} answers ${JSON.stringify(unit.answer.slice(0, 100))}, which ${wanted === 'yes' ? 'lists' : 'does not list'} ${JSON.stringify(member)}; page keys ${JSON.stringify(item.answer)}` };
   }
+  // One labelled panel of the stem's image asked yes or no (9.6: six graphs,
+  // "Gases C, E, and F"): yes when the answer lists the item's label.
+  const panel = item.type === 'multiplechoice' ? panelAsked(unit, item.question, item) : null;
+  if (panel) {
+    if (foldedPlain(item.answer) === panel.wanted) return { status: 'confirmed', exercise };
+    return { status: 'key-differs', exercise, detail: `source ${unit.id} answers ${JSON.stringify(unit.answer.slice(0, 100))}, which ${panel.wanted === 'yes' ? 'lists' : 'does not list'} ${JSON.stringify(panel.label)}; page keys ${JSON.stringify(item.answer)}` };
+  }
   // A lettered part asked yes or no where the answer lists the parts that
   // are, by formula, in a sentence — "Only ClF₅, ClO₂⁻, PCl₃, SeF₄, and
   // PH₂⁻ have dipole moments." (7.6): yes when the list holds the part's
@@ -3352,6 +3516,16 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
       return hit.map((plural) => item.options[plurals.indexOf(plural)]);
     };
     if (named.length === 0) named = pluralNamed(said1);
+    // An option the stem prints with the word that joins it to what it is
+    // compared with — "greater than, less than, or equal to that of the
+    // atmosphere outside the balloon" — answered by the comparison alone
+    // ("equal", 9.5's hot-air balloon): the one option that is that word and
+    // its joining word.
+    if (named.length === 0) {
+      const bare = item.options.map((option) => option.replace(/\s+(?:to|than|as|with)\s*$/i, ''));
+      const hit = optionsNamedIn(said1, bare).filter((option) => bare.indexOf(option) === bare.lastIndexOf(option));
+      if (hit.length === 1 && bare[bare.indexOf(hit[0])] !== item.options[bare.indexOf(hit[0])]) named = [item.options[bare.indexOf(hit[0])]];
+    }
     // One sentence over several letters — "(a) is a π bond … while (b) and
     // (c) are σ bonds that overlap along the axis." (8.1): a part whose own
     // segment is only a joining word ("and") says what the next part's says.
@@ -3474,7 +3648,12 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
       .map((match) => ({ numeral: printedNumerals(match[1])[0], name: match[2].toLowerCase().replace(/s$/, '') }))
       .filter((entry) => entry.numeral);
     const names = [...new Set(named.map((entry) => entry.name))];
-    if (names.length >= 2) {
+    // …and ONE named count beside another quantity — "3.34 tanks (2.34 × 10⁴
+    // L)" (9.3) — under a closing that asks for "the number of" it: the
+    // item is held to the count, and the volume beside it is no key.
+    const countAsked = names.length === 1 && printed.length >= 2
+      && new RegExp(`\\bnumber of ${names[0]}s?\\b`).test(item.question.split(/(?<=[.?!:])\s+/).pop().toLowerCase());
+    if (names.length >= 2 || countAsked) {
       const ask = item.question.split(/(?<=[.?!:])\s+/).pop().toLowerCase();
       const asked = names.filter((name) => new RegExp(`\\b${name}s?\\b`).test(ask));
       if (asked.length === 1 && !named.some((entry) => entry.name === asked[0] && sameNumeral(entry.numeral, key))) {

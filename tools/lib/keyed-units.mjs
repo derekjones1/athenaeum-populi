@@ -635,6 +635,17 @@ export function closedSet(stem, answer) {
   // Both Si and S").
   const byLetter = chosenLetter(answer);
   if (byLetter && choices.some((choice) => choice.label === byLetter)) return { lead: lettered.lead, choices, chosen: byLetter };
+  // …or by the one letter the answer prints, in the sentence that answers
+  // the lead-in's "most" or "least": "Under which of the following sets of
+  // conditions does a real gas behave most like an ideal gas …?" → "… The
+  // conditions described in (b), high temperature and low pressure, are
+  // therefore most likely to yield ideal gas behavior." (9.6).
+  const letters = [...new Set([...String(answer).matchAll(/\(([a-z])\)/g)].map((match) => match[1]))];
+  const extreme = /\b(?:most|least)\b/i;
+  if (letters.length === 1 && extreme.test(lettered.lead) && choices.some((choice) => choice.label === letters[0])
+    && String(answer).split(/(?<=[.?!])\s+/).some((sentence) => sentence.includes(`(${letters[0]})`) && extreme.test(sentence))) {
+    return { lead: lettered.lead, choices, chosen: letters[0] };
+  }
   const said = sampleWords(answer);
   const named = lettered.parts.filter((part) => sampleWords(part.text).trim() && said.includes(sampleWords(part.text)));
   if (named.length !== 1) return null;
@@ -921,6 +932,13 @@ function ownScore(unit, question, item = {}) {
   // One of a closed set (`closedSet`): the item asks the lead-in and offers
   // every part, and nothing else, as its options. A missing option is a miss.
   if (unit.choices) {
+    // The self-check that carries the answer's reason after the choice ("a
+    // choice from the stem's set with a reason", 9.6's ideal-gas conditions)
+    // prints the stem whole, parts and all, and has no options to read.
+    if (item.type === 'selfcheck') {
+      const whole = tokenSimilarity(question, unit.stem);
+      return whole >= WHOLE_FLOOR ? { score: whole, words: 0, near: whole, exact: 0 } : { score: 0, words: 0 };
+    }
     if (!choiceLabels(unit.choices, item.options)) return { score: 0, words: 0 };
     const near = tokenSimilarity(question, unit.lead);
     return near >= WHOLE_FLOOR ? { score: near, words: 0, near, exact: 0 } : { score: 0, words: 0 };
@@ -932,8 +950,15 @@ function ownScore(unit, question, item = {}) {
   // when its list holds it, under a question that reads like the lead-in.
   const member = memberAsked(unit, question, item) ?? (item.type === 'multiplechoice' ? memberAfterColon(unit, question) : null);
   if (member) {
-    const lead = tokenSimilarity(unit.stem.slice(0, unit.stem.lastIndexOf(':')), question);
+    const lead = tokenSimilarity(unit.stem.slice(0, listStart(unit.stem) - 1), question);
     if (lead >= LEAD_FLOOR) return { score: 1, words: 1, near: lead, exact: tight(member).length };
+  }
+  // One labelled panel of the stem's image, asked yes or no (`panelAsked`,
+  // 9.6's six graphs): the item's under a question that reads like the stem.
+  const panel = item.type === 'multiplechoice' ? panelAsked(unit, question, item) : null;
+  if (panel) {
+    const lead = tokenSimilarity(unit.stem, question);
+    if (lead >= LEAD_FLOOR) return { score: 1, words: 1, near: lead, exact: 0 };
   }
   // How much the question reads like THIS unit's whole stem, and whether it
   // prints the part character for character: what ranks two units that both
@@ -1056,10 +1081,48 @@ export function dataRun(partText) {
  */
 export function listMembers(stem) {
   const text = String(stem ?? '');
-  const at = text.lastIndexOf(':');
+  const at = listStart(text);
   if (at === -1) return [];
-  const members = text.slice(at + 1).replace(/[?.]\s*$/, '').split(/,|\s+or\s+/).map((member) => member.replace(/^\s*(?:or|and)\s+/, '').trim()).filter(Boolean);
-  return members.length >= 2 && members.every((member) => member.split(' ').length <= 3) ? members : [];
+  const members = text.slice(at).replace(/[?.]\s*$/, '').split(/,|\s+or\s+/).map((member) => member.replace(/^\s*(?:or|and)\s+/, '').trim()).filter(Boolean);
+  // A formula's subscripts are no words of it: the source's "C 2 H 2" is
+  // one member, as "Se 2+" is.
+  const words = (member) => member.split(' ').filter((word) => !/^[\d+−–-]+$/.test(word)).length;
+  return members.length >= 2 && members.every((member) => words(member) <= 3) ? members : [];
+}
+
+/**
+ * Where an unlettered stem's list begins: after its last colon ("…with
+ * Br⁺: Se²⁺, Se, …?"), or, in a stem with no colon, after the question the
+ * list follows ("Which of the following gases diffuse more slowly than
+ * oxygen? F₂, Ne, N₂O, C₂H₂, NO, Cl₂, H₂S", 9.4). -1 when neither.
+ */
+export function listStart(stem) {
+  const text = String(stem ?? '');
+  const colon = text.lastIndexOf(':');
+  if (colon !== -1) return colon + 1;
+  const asked = text.lastIndexOf('?');
+  return asked !== -1 && text.slice(asked + 1).trim() ? asked + 1 : -1;
+}
+
+/**
+ * A panel of the stem's image that a yes-or-no item asks about, by the label
+ * the image prints — "Which of these gases exhibit behavior significantly
+ * different from that expected for ideal gases?" over six graphs labelled
+ * Gas A to Gas F, answered "Gases C, E, and F" (9.6), carried as one item per
+ * panel ending "…? Gas A" — as `{ label, wanted }`, or null. The answer must
+ * be nothing but the labels' noun, in the plural, and their letters.
+ */
+export function panelAsked(unit, question, item = {}) {
+  if (unit.partText !== null && unit.partText !== undefined) return null;
+  const options = (item.options || []).map((option) => plain(option));
+  if (options.length !== 2 || !options.includes('yes') || !options.includes('no')) return null;
+  const asked = /^([A-Za-z]+)\s+([A-Z])$/.exec(String(question ?? '').split('?').pop().trim().replace(/\.$/, ''));
+  const listed = /^\s*([A-Za-z]+)\s+([A-Z](?:\s*,\s*(?:and\s+)?[A-Z])*(?:\s*,?\s+and\s+[A-Z])?)\s*\.?\s*$/.exec(String(unit.answer ?? ''));
+  if (!asked || !listed) return null;
+  const noun = asked[1].toLowerCase();
+  if (![`${noun}s`, `${noun}es`].includes(listed[1].toLowerCase())) return null;
+  const letters = listed[2].match(/[A-Z]/g);
+  return { label: `${asked[1]} ${asked[2]}`, wanted: letters.includes(asked[2]) ? 'yes' : 'no' };
 }
 
 /**
@@ -1245,5 +1308,18 @@ export function unitFor(linkedQuestion, units, item = {}) {
     const better = group.near - best?.near || group.score - best?.score || Number(group.keyed) - Number(best?.keyed);
     if (!best || better > 0) best = group;
   }
-  return best ? best.readings.sort(compareReadings)[0].unit : null;
+  if (!best) return null;
+  const ranked = best.readings.sort(compareReadings);
+  // An outline-then-answer exercise (9.3: "(a) Outline the steps necessary
+  // to answer the following question: What volume of O₂ …? (b) Answer the
+  // question."): the fill-in for (b) must print (a)'s question to be
+  // answerable, so it prints both parts and reads most like (a), whose
+  // answer is an outline with no number. A fill-in asks a number: of the
+  // parts it prints verbatim, it is the one whose answer prints one.
+  if (item.type === 'fillin' && ranked[0].unit.label && !printedNumerals(ranked[0].unit.answer).length) {
+    const numeric = ranked.find((reading) => reading.score === ranked[0].score && reading.unit.group === ranked[0].unit.group
+      && printedNumerals(reading.unit.answer).length);
+    if (numeric) return numeric.unit;
+  }
+  return ranked[0].unit;
 }

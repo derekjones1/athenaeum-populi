@@ -359,6 +359,43 @@ Ten things chapter 9's first run added (`docs/history/chemistry.md`,
   them (it carries hint, accept, and form edits only; an `answerDisplay`
   or a model answer's spacing is carried by hand from the snapshot).
 
+Ten things chapter 9's second run added (`docs/history/chemistry.md`,
+"Chapter 9, Sections 9.3–9.6"):
+
+- **A "moved" example result is re-run from the source's OWN printed
+  numbers before the run facts say why it moved**: the parent blamed 273.15
+  for 9.5's 520 m/s, and the source's own 2.70 × 10⁵ m² s⁻² gives 520.
+- **Run-fact values are written with two digits beyond the key's**, so a
+  double rounding shows: "269.5 → 270" stood in the facts for a value that
+  is 269.46 by one route and 269.64 by the other.
+- **A `last-digit` exception is set beside the page's other items on the
+  same table before it is sent** (decision 8's `0` beside exercise 16's
+  `1`): the consistency reader should not be the first to compare them.
+- **A link ruled into a stem is opened by the parent**: the landing's
+  caption answered the balloon exercise's part (b).
+- **The gate agent's forms files carry the source's wording to every page
+  that copies them** — "follow" beside "the figure above", "occupies of
+  volume", a hint that listed the key's formula. The parent reads each
+  forms file against "Stems" and "Hints" before the wave (chapter 8 said
+  "Notation" and "Stems"; add "Hints").
+- **An author who applies a round of rulings in under a minute is read on
+  disk** before the next reader is launched.
+- **An addition to a self-check's model answer goes through the real
+  source-keys gate before it is kept**: the gate measures the share of the
+  answer that is the source's, and an addition is disclosed, not trimmed.
+- **The parent opens every outside page a Source note cites, and where a
+  site refuses the parent's own request the note quotes nothing** (the
+  Nobel Foundation's page; the claim pass's saved copy was read instead).
+- **A rendered-page reader's "clean" is spot-checked on one tile**: the
+  first tile the parent opened showed a Source note cutting a solution in
+  two and a nested fraction for the `\dfrac` watch list.
+- **When other sessions are finishing fixes in the same tree, the run's
+  prep is read-only until they are idle and their work is committed**
+  (PDF pages, inventory, shapes, the keys run by the one method, the run
+  facts in the scratchpad), and ONE session lands the combined tree: one
+  prune, one full `npm test`, build, `check:build`, the browser suite,
+  then the commits.
+
 ## 1. Before the wave
 
 `SP` is this session's scratchpad. Never a git command from an agent — say

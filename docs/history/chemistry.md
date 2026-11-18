@@ -1521,6 +1521,18 @@ word for word as `run.md` had them.
 
 From `run.md`, "What a chapter cost".
 
+Chapter 9, Sections 9.3–9.6 (four sections, 73 auto-graded items and 16
+self-checks; about two hours and a quarter of wall time in one session, of
+which the first thirty-five minutes were spent reading four other sessions'
+fixes and landing them): authors 380k, 317k, 316k, and 339k tokens each across all
+rounds; checkers 189k, 169k, 168k, and 153k; claim pass 150k; consistency
+reader 280k; fix checker 214k; five rendered-page readers 149k, 154k, 141k,
+163k, and 142k; blind solver 166k. The gate agent 454k (one round, eight
+shapes taught). Clerks: 110k (the facts half of the run facts) and about 400k
+(errata, 53 entries, and decisions entries). The parent did the landing and
+cover lines, the pins, the ledger mapping, the history, and the playbook
+lines itself.
+
 Chapter 9, Sections 9.1–9.2 (two sections, 46 auto-graded items and 13
 self-checks; one session with no pause): authors 335k and 373k tokens each
 across all rounds; checkers 162k and 240k; claim pass 188k; consistency reader
@@ -4870,10 +4882,162 @@ Learning 8 fill-ins and 1 self-check, Practice 14 and 6).
 
 ### Next
 
-Sections 9.3–9.6 in one run (`run.md`; prep is done — re-check the PDF ranges
-as indexes to each body's last page), which removes the landing's and the
-cover's "being written" sentences; then Knowledge Check block 3 if it has not
-been run, and block 4 (chapters 9–11) after chapter 11.
+Sections 9.3–9.6, written the same day: the next entry.
+
+## Chapter 9, Sections 9.3–9.6 (November 17, 2026)
+
+The second run on chapter 9 (Gases), from commit `739f1a79`: Sections 9.3
+Stoichiometry of Gaseous Substances, Mixtures, and Reactions (m68752), 9.4
+Effusion and Diffusion of Gases (m68754), 9.5 The Kinetic-Molecular Theory
+(m68758), and 9.6 Non-Ideal Gas Behavior (m68759). The chapter is complete:
+the landing lists six sections and the cover's "being written" sentence is
+gone. **Knowledge Check block 3 (chapters 6–8) is still owed**, and block 4
+(chapters 9–11) follows chapter 11.
+
+Derek's instruction was to watch four sessions that were finishing the "For
+Derek" items of the first run, confirm their fixes, and then start this run.
+The four worked in one tree at once; this session read each diff as it grew,
+found one defect (all eight new hints of 9.2 carried a double-encoded
+apostrophe, and their ledger records were filed against the garbled text —
+repaired by that session), added the decisions entry erratum 3234 lacked,
+pruned 19 stranded ledger records, and landed the combined tree in three
+commits (`1ec5522a`, `bdf638ce`, `739f1a79`) after one full `npm test`, the
+build audit, and the browser suite. Until then this run's prep was read-only:
+PDF pages, inventory, shapes, the figure screen, every numeric key run by the
+one method, and the run facts in the scratchpad.
+
+89 ledger records (34, 17, 18, 20), of which 73 are auto-graded and
+blind-solved (31, 16, 13, 13) and 16 are self-checks (3, 1, 5, 7); 20 figures
+(8, 4, 4, 4); added items: none on 9.3, two on 9.4, one on 9.5, three on 9.6.
+Blind solve (Fable, 5.2 minutes): 69 agreed, none disagreed, 4 flagged "also
+defensible" and adjudicated — no key moved. Errata 3235–3287
+(53). Deviations: thirteen lines — eleven of kind `key` (9.3's two
+Check Your Learning keys, 3235 and 3236; 9.4's hydrogen balloon, 3237; 9.5's
+oxygen speed, 3238, and five parts of its balloon exercise, 3239; 9.6's two
+Check Your Learning pressures, 3240) and two of kind `solution` on 9.6 (the
+third part of that Check Your Learning, 3240; exercise 105(c), 3253). No key
+leaves the source's print for an atomic mass alone, so the source-print
+register is unchanged. `--min-confirmed` 7911 → 7982, `--min-covered` 4968 →
+5030, `--min-replayed` 9305 → 9447, `--min-exercises` 18715 → 18804; the map
+test went from 820 to 824 sections and Chemistry from 42 to 46.
+
+### The parent's decisions before the wave
+
+Twenty, in the run facts, with ten amendments. Every numeric key and every
+worked example was run before the wave with 273.15, the page's own constants,
+and the table's molar masses. Keys corrected before the wave, each with its
+deviation filed first: 9.3's 1.137 atm (1.14, three figures) and 0.537 L
+(0.538; the source used the table's next row); 9.4's 4.2 hours from "6 hours"
+(4); 9.5's 441 m/s (442 with 273.15) and the balloon exercise's guard digits
+(29.5 g/mol, 1.10 g/L, 0.13 g, 4.0 × 10⁵ g and 380 lb, 39 kJ/min); 9.6's
+46.562 and 46.594 atm (both 46.6). Example results that moved: 9.3's neon
+pressure (7.59 × 10⁻⁴ atm), oxygen pressure (48.3 kPa), and hydrogen volume
+(4.95 L), and 9.5's 520 m/s.
+
+### What the gates and the tools had to be taught
+
+One Author-kind gate agent (454k tokens, 24 minutes) built every new shape as
+the page would carry it and found the automatic probe's "0 findings" hid eight
+gaps: a formula after a number and its unit ("124 g/mol P₄") was refused, and
+a swapped CH / C₂H₂ pair confirmed; the torr value of a three-unit answer and
+the "2.34 × 10⁴ L" beside "3.34 tanks" were confirmed as keys; three gases'
+partial pressures were told apart only by their figure counts; "equal" did not
+name the option "equal to"; a choice among three lettered sets of conditions
+and a subset of a printed list bound to no unit; a six-panel image's "Gases C,
+E, and F" was never read; and each part (b) of an outline-then-answer exercise
+bound to part (a) and went unchecked. `tools/lib/keyed-units.mjs` and
+`tools/verify/verify-source-keys.mjs` read them now (eight tests), and
+`chemistry-prep.py` finds a Check Your Learning headed "Check your Learning".
+No earlier page's reading changed.
+
+### What each reading found
+
+- **Checkers** (four): 9.3 clean but for six concerns; 9.4 a display that
+  said √15.872 = 4, an alt, and a hint that answered a two-option item; 9.5
+  the two parent mistakes below and a hint shared by two parts; 9.6 a text
+  field for "low temperatures" that graded "low" wrong and whose key an
+  earlier option printed (now a two-option choice).
+- **Claim pass**: eleven findings. Corrected on the pages: liquid water given
+  "4 volumes" in the propane example; 13.5 L from 2.7 L (14 L); "According
+  to Graham's law" for two postulates of the kinetic-molecular theory; a bar
+  over u where the mean of u² is meant; van der Waals's equation dated 1879
+  (1873); a model answer that had molecular volume lower Z. Kept with a
+  Source note: Susan Solomon's affiliations, the gas-centrifuge sentence,
+  "a matters more than b at low pressures" (helium, by the page's own
+  table), "directly related", and the stem's densities of dry air and of
+  liquid propane.
+- **Consistency reader**: overturned the parent's `last-digit:0` on 9.3's
+  oxygen-over-water item (its sibling on the same table took `1`); found the
+  playbook saying both that a section named in a hint is linked and that a
+  hint holds no link; found the balloon exercise linking the landing page,
+  whose caption answers part (b); and two added items of 9.6 that tested
+  other objectives.
+- **Rendered-page readers** (five): nothing wrong or misleading beyond one
+  low item; a kelvin left unstruck beside a struck K⁻¹, an upright l that
+  read as 1 in a caption, a self-check whose three lettered sets ran
+  together, and three fractions for the watch list.
+- **Fix check**: five changes, among them two hints that still decided their
+  items and "in Kentucky" in a note cited to a page that does not say it.
+- **Blind solver**: both parts of 9.6's Check Your Learning are 46.6 atm, and
+  the part that follows asks for "the difference". The source's answer is
+  kept whole and the model answer gains one sentence, disclosed as a
+  `solution` deviation — the gate refused the addition undisclosed, as it
+  should.
+
+### What the process got wrong
+
+- The parent's run facts blamed 273.15 for 9.5's 520 m/s; the source's own
+  printed 2.70 × 10⁵ m² s⁻² gives 520, and its 519 is a slip. The checker
+  found it.
+- "269.5 → 270" stood in the facts for the propane volume: it is 269.46 by
+  the standard molar volume and 269.64 by the ideal gas law. The key stands
+  on the second route; the note was a double rounding.
+- Decision 8 set `0` on one item of a table whose other item took `1`.
+- Decision 16 put a link in a stem without opening its target.
+- Decision 4 let 13.5 L stand "as an example's result"; the claim pass set it
+  beside Section 1.5.
+- The forms files' source wording ("follow", "occupies of volume") and one
+  hint that listed the key reached the pages before a reader caught them.
+
+All of these are rules in `run.md` §0 ("Ten things chapter 9's second run
+added") or in the playbook's "Numeric keys" and "Source defects".
+
+### Outside sources opened
+
+By the parent: NIST Chemistry WebBook, saturation properties of propane
+(0.50478 g/mL at 290 K, 0.49724 at 295 K); NASA Glenn Research Center,
+"Properties of Air" (1.229 kg/m³ at 15 °C); MIT EAPS, Susan Solomon's page;
+the Department of Energy's Paducah site page (enrichment ended in 2013). The
+Nobel Foundation's biography of van der Waals refused the parent's request;
+the claim pass's saved copy was read, and the page's note quotes nothing.
+
+### Kept as printed
+
+"At sea level" on 9.3's vapor-pressure graph and table; "In 1832, Thomas
+Graham studied the rates of effusion" (not opened); the molar mass of air,
+28.2 g/mol, in a 9.4 stem; the Iran sentence of the enrichment box; the
+balloon exercise's silence on the balloon's pressure in parts (d)–(f) (part
+(a) asks it); "amount of A = amount of B" in 9.4's xenon example.
+
+### For Derek
+
+1. **Knowledge Check block 3 (chapters 6–8) is still owed.**
+2. 9.6's Check Your Learning: both pressures are 46.6 atm at the figures the
+   data give (the source prints 46.562 and 46.594). A learner who types
+   46.59 is told to round to three figures; the "difference" the third part
+   asks about is said, inside its model answer, to be below what the data
+   show.
+3. 9.5's balloon exercise carries six "the answer graded …" notes, one per
+   corrected part; the test wants one per deviation.
+4. 9.3's propane example now ends at 14 L where the source prints 13.5 L:
+   the first worked-example result corrected for its figure count alone.
+5. A stem datum that is physically off (liquid propane in g/L; dry air's
+   density) is kept, with a Source note; the keys follow the stem.
+
+### Next
+
+Knowledge Check block 3 (chapters 6–8), then chapter 10 (probe its shapes
+first), with block 4 (chapters 9–11) after chapter 11.
 
 ## The `\dfrac` watch list
 
@@ -4924,3 +5088,13 @@ the ban, with its page and line. The ban is reviewed from this list.
   stroke); they are display equations now, where `\frac` is full size.
   9.1's inline `\frac{1}{13.6}` and `\frac{1}{760}` are readable. Nothing
   needed `\dfrac`.
+- Chapter 9, Sections 9.3–9.6 reported four places. 9.4, the effusion-time
+  example's "To get:" display (line ~76): a fraction of two word fractions,
+  the inner words at script size (the parent's reading of the tile). 9.5,
+  Key equations, the first $u_\text{rms}$ equation (line ~147): the fraction
+  under the root sets its subscripts and superscripts about 6 px tall (the
+  rendered-page reader). 9.6, Key equations, the compressibility-factor line:
+  the words read at about three-quarters of body size and the m of
+  $V_\text{m}$ at about 3 px (the rendered-page reader, with a crop). 9.3,
+  two inline fractions with subscripts (lines ~201 and ~398): small, legible
+  (the checker). The authors of all four pages reported none.
