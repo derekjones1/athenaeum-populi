@@ -260,8 +260,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 21,
       "upstreamSections": 114,
-      "localChapters": 10,
-      "mappedSections": 52,
+      "localChapters": 11,
+      "mappedSections": 54,
       "upstreamAppendices": 13,
       "mappedAppendices": 13
     }
@@ -7736,6 +7736,24 @@
       "moduleId": "m68773",
       "sourceTitle": "Lattice Structures in Crystalline Solids",
       "moduleSha256": "c6557ea5b08791f2227e027a902cce74234cdc593f56313d0890dedb789e923a"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/11-solutions-and-colloids/01-the-dissolution-process.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "11.1",
+      "moduleId": "m68778",
+      "sourceTitle": "The Dissolution Process",
+      "moduleSha256": "3267e3d0d2c6fa9a5f44fb534bd902b44503452dd9afa9de21ae8f5093f90aff"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/11-solutions-and-colloids/02-electrolytes.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "11.2",
+      "moduleId": "m68781",
+      "sourceTitle": "Electrolytes",
+      "moduleSha256": "ff364296c2eb15ecfc2c7454f0c22f6ffc32e0701c9b96e5be44e001a99d6716"
     }
   ],
   "appendices": [

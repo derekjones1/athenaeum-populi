@@ -1535,6 +1535,15 @@ reader 138k. Clerks: 60k (landing), 124k (the facts half of the run facts),
 parent wrote the decisions, the rulings, the fix check's accepted text, the
 ledger records, the playbook lines, and this entry.
 
+Chapter 11, Sections 11.1–11.2 (two sections of prose and classification, 19
+auto-graded items and 11 self-checks; one session): authors 237k and 247k
+tokens each across all rounds; checkers 143k and 124k; claim pass 105k;
+consistency reader 232k; fix checker 126k; blind solver 77k; before the
+wave, the gate agent 262k. Clerks: 105k (errata, nine entries and two
+decisions entries) and 65k (pins). No rendered-page reader, no values agent,
+no facts Clerk: the parent wrote the landing, the run facts, the rulings,
+the playbook lines, and this entry.
+
 Chapter 9, Sections 9.3–9.6 (four sections, 73 auto-graded items and 16
 self-checks; about two hours and a quarter of wall time in one session, of
 which the first thirty-five minutes were spent reading four other sessions'
@@ -5311,6 +5320,127 @@ structure. The claim pass saved each under the run's `fetch/`.
 Chapter 11, Solutions and Colloids; Knowledge Check block 4 (chapters 9–11)
 after it.
 
+## Chapter 11, Sections 11.1–11.2 (November 18, 2026)
+
+The first run on chapter 11 (Solutions and Colloids), from commit `ba67e632`,
+at Derek's word ("continue authoring the next chapter … just do two
+sections"): Sections 11.1 The Dissolution Process (m68778) and 11.2
+Electrolytes (m68781), and the landing (m68776). Prep (media, PDF pages
+547–598 and the answer key 1162–1164, inventory, shapes, figure screen, gate
+probe) was done once for the whole chapter; the automatic probe's one finding
+is 11.4's (`fs-idp5504000#check`, two Check Your Learning stems of one text)
+and waits for the next run. The landing lists the two sections and says the
+other three are being written; the cover moved Solutions and Colloids into
+`## Chapters` with the same sentence.
+
+30 ledger records (13 and 17), of which 19 are auto-graded and blind-solved (8
+and 11) and 11 are self-checks (5 and 6); 8 figures (4 and 4) and one on the
+landing; one author filler on 11.1 ("alloy"). Both pages are prose and
+classification: no worked example, no numeric key, no Key equations. Blind
+solve (Fable, under a minute): 17 agreed, none disagreed, 2 flagged — the
+solver gave the key for NO in CO and for HCl in benzene and called a second
+option defensible; both adjudicated to the source's keys. Errata 3368–3376
+(9). No key deviation; two decisions entries (3368, 3369). `--min-confirmed`
+8075 → 8106 (30 for the pages and one 7.6 self-check the gate newly reads),
+`--min-covered` 5133 → 5155, `--min-replayed` 9532 → 9533, `--min-exercises`
+18967 → 18997; the map test went from 830 to 832 sections and Chemistry from
+52 to 54.
+
+### The parent's decisions before the wave
+
+Fifteen, in the run facts, and four after the probe. The force-name
+exercises (11.1 printed 5, 11.2 printed 15) are one `multiplechoice` per
+part over the exercise's own answer set, as 10.1's are; the conductivity
+exercise (printed 13) the same, with its reasons in self-checks; the
+iron(III) nitrate exercise a choice over the figure's three labels, an
+equation field, and last the self-check whose answer names the ions. "The
+previous chapter on thermochemistry" is printed "the chapter on
+thermochemistry" with the link to Section 5.1, as 10.3 prints the same
+words.
+
+### What the gates had to be taught
+
+One Author-kind gate agent built every shape as the page carries it, right
+key and wrong key, before the wave (262k tokens), and found five gaps in
+`tools/verify/verify-source-keys.mjs`, each fixed with a test in
+`verify-source-keys.chapter-11.test.mjs`: the right key `ion-dipole forces`
+was refused beside the option `dipole-dipole forces` (a word an option
+repeats must appear that often in the answer); a model answer whose FIRST
+word was changed ("Yes, …" for "No, …") passed; a single letter for another
+("(y)" for "(z)") passed as a typo; an equation key with `(s)` for the
+source's `(aq)` on a product was confirmed; and no gate read a self-check
+that asks a whole lettered exercise by its lead-in (`leadInExercise`). The
+last also reads one self-check of 7.6 that no gate had read.
+
+### What each reading found
+
+- **Checkers** (one per page): no defect; four concerns about hints on 11.1
+  and three notes on 11.2, ruled in the one round.
+- **Claim pass**: two findings. 11.1 gives calcium carbonate as "one example
+  of such an 'insoluble' ionic compound" — one whose dissolution is
+  significantly endothermic; calcite's dissolution is exothermic. The page
+  prints "one example of an" with a Source note that cites the U.S.
+  Geological Survey's PHREEQC database (−3.15 kcal/mol; the parent opened the
+  saved file). 11.2's Summary says ionic substances "ionize": kept, with a
+  Source note.
+- **Consistency reader**: the conductivity exercise's whole-answer
+  self-check, with its parts renamed by position, against 4.2's per-part
+  self-checks (ruled to 4.2's form: choices first, then a self-check per
+  part); 3.3 and 4.1 naming "the chapter on solutions" in plain text (linked
+  to 11.1 and 11.2 by the parent, 4.1's footer saying so); the cover; two
+  footers that disclosed the same change in different words.
+- **Fix check**: the rewritten shared hint on the ten force-name items sent
+  the learner to Section 10.1 alone, which never teaches the attraction the
+  first part of each is keyed to; the hint now names Section 11.2 as well.
+- **Rendered pages**: no reader (no new shape); the parent read three tiles.
+
+### What the process got wrong
+
+- The parent ruled the conductivity exercise into "4.2's form" without 4.2
+  open, as a choice directly followed by its self-check. The lint refused it;
+  the author restored the block and proposed the form 4.2 really has.
+- The parent's ruling 1 named a fallback address for the Source note's
+  citation that it had not opened; the link printed is the file it read.
+
+### Outside sources opened
+
+- `https://raw.githubusercontent.com/usgs-coupled/phreeqc3/master/database/phreeqc.dat`
+  (USGS PHREEQC database; Calcite, `-delta_h -3.15 kcal`), saved by the claim
+  pass and read by the parent.
+- NOAA Office for Coastal Management, Fast Facts: Coral Reefs (the landing's
+  25%; read by the claim pass, quoted in its report, not cited on the page).
+
+### Kept as printed
+
+- The keys "dipole-dipole forces" for NO in CO (11.1) and "dipole-dipole
+  attractions" for CF₂Cl₂ in CF₂ClCFCl₂ (11.2): both molecules are weakly
+  polar and dispersion forces are the larger in fact; the source's keys, and
+  the second stem calls both "polar". The solver flagged the first.
+- "a decrease in the internal energy of the system (an exothermic change …)";
+  the equation answer's Fe(NO₃)₃(s) beside the stem's Fe(NO₃)₃(aq) (a learner
+  who types (aq) is told a state symbol differs, not marked wrong); "the
+  solutions in the figure" for a figure of one solution.
+
+### For Derek
+
+- **Appendix G's calcite row looks like a source misprint** (ΔH°f −1220.0,
+  ΔG°f −1081.4 kJ/mol): with the appendix's own ions it gives a solubility
+  product near 0.8 where Appendix J prints 8.7 × 10⁻⁹. The claim pass gave
+  the usual values from memory (−1206.9, −1128.8); no source was opened, so
+  nothing was changed. It matters from chapter 15 on, and wants a
+  re-review row for the appendix before then.
+
+### Next
+
+Sections 11.3–11.5 in one run (prep is in this session's scratchpad and must
+be re-rendered by a new session: pages 547–598, key 1162–1164; printed
+exercise offsets by element count: 11.3 +15, 11.4 +25, 11.5 +70 — recount
+with a tool). That run rules on the 11.4 probe finding, links 4.2's "a later
+chapter on solutions" and 5.2's "a later chapter on solutions" to Section
+11.3 and 11.1's "discussed in detail later in this chapter", and removes the
+"being written" sentences from the landing and the cover. Knowledge Check
+block 4 (chapters 9–11) follows it.
+
 ## The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under
@@ -5379,3 +5509,5 @@ the ban, with its page and line. The ban is reviewed from this list.
   `\ce{Al_{2/3}O}`: the 2/3 rendered as a stacked fraction about 5 px tall;
   resolved by writing `$\mathrm{Al}_{2/3}\mathrm{O}$`, which sets the slash
   (the rendered-page reader). 10.1, 10.4, and 10.5 reported none.
+- Chapter 11, Sections 11.1 and 11.2: none this run (neither page sets a
+  fraction).

@@ -451,6 +451,41 @@ Twelve things chapter 10 added (`docs/history/chemistry.md`, "Chapter 10"):
   content edits), measured on the whole book, and their hits swept after
   the solve's records are merged, from a snapshot — four went on this run.
 
+Seven things chapter 11's first run added (`docs/history/chemistry.md`,
+"Chapter 11, Sections 11.1–11.2"):
+
+- **A ruling that gives an exercise "the form of page X" is written with
+  page X open.** The parent ruled 11.2's conductivity exercise into "4.2's
+  form" as a choice directly followed by its self-check; 4.2 puts all its
+  choices first, and the lint refused the ruling (a reveal directly above
+  the next part's choice printed its key).
+- **An example a sentence gives for a MECHANISM is checked against the
+  mechanism, not only against its class** (claim pass): calcium carbonate
+  is insoluble, and not because its dissolution is endothermic. Where the
+  claim is energetic, the reader computes it from Appendix G and opens an
+  outside value.
+- **An appendix row a reader leans on is set beside its sister appendix**
+  (ΔG°f against Appendix J's K_sp): Appendix G's calcite row gives a
+  solubility product near 1. A row that fails is not cited in a Source
+  note; it is listed for the appendix's own correction.
+- **The earlier pages' words for this chapter are found by the chapter's
+  topic, not only the placeholder phrases**: `grep -rn -i "chapter on
+  <topic>" content/physical-sciences/chemistry` (3.3 and 4.1 named "the
+  chapter on solutions" in plain text; the consistency reader found them).
+- **A hint shared by the parts of an exercise is read against the part
+  whose answer the page does not teach**: 11.1's first force-name item is
+  keyed to an attraction Section 11.2 defines; the fix check caught a hint
+  that sent the learner to Section 10.1 alone.
+- **The keys gate reads a model answer's first and last word, a single
+  letter, and a state symbol as swaps** (`verify-source-keys.chapter-11.test.mjs`):
+  until this run "Yes, …" for the source's "No, …", "(y)" for "(z)", and
+  `(s)` for `(aq)` on a product passed. A self-check that asks a whole
+  exercise by its lead-in alone is now read against the whole answer
+  (`leadInExercise`).
+- **A two-section run of prose pages needs no rendered-page reader**: the
+  parent read three tiles (no new shape); the Clerks were the errata
+  drafter and the pins.
+
 ## 1. Before the wave
 
 `SP` is this session's scratchpad. Never a git command from an agent — say

@@ -110,7 +110,7 @@ import { shortcodes } from '../lib/content.mjs';
 import { mediaBindings } from '../lib/exercise-context.mjs';
 import { parseSortbinsConfig } from '../../assets/js/lib/text/check-sortbins.mjs';
 import { foldedForms, hybridLabel, isHybridKey } from '../../assets/js/lib/text/check-text.mjs';
-import { chemCanon } from '../../assets/js/lib/text/check-chem.mjs';
+import { STATE_DIFFERS, chemCanon, checkEquation } from '../../assets/js/lib/text/check-chem.mjs';
 import { readNumeral, withinPercent, withinReading } from '../../assets/js/lib/math/significant-figures.mjs';
 import { loadElements } from '../lib/elements.mjs';
 import { massAsk, molarMass, statesNoNumber } from './molar-mass.mjs';
@@ -2115,9 +2115,29 @@ function sampleCarried(segment, model) {
   return Boolean(sample) && phraseCoverage(sample, model) >= 0.95;
 }
 
-export function judgeSelfcheck(item, source) {
+/**
+ * The lettered exercise whose LEAD-IN — its problem before part (a) — a
+ * question reads like, or null. The self-check that carries a lettered
+ * answer whole after one choice per part asks the lead-in alone
+ * (docs/subjects/chemistry.md, "parts named by FORMULA": listing the parts
+ * binds it to one), and 11.2's "What is the expected electrical
+ * conductivity of the following solutions?" shares too few words with a
+ * problem that prints four formulas after it for `bestExercise` to read it.
+ */
+export function leadInExercise(question, exercises) {
+  let best = null;
+  for (const exercise of exercises) {
+    const at = exercise.problem.search(/\(a\)/);
+    if (at <= 0 || !/\(b\)/.test(exercise.problem.slice(at))) continue;
+    const score = tokenSimilarity(question, exercise.problem.slice(0, at));
+    if (!best || score > best.score) best = { score, exercise };
+  }
+  return best && best.score >= MATCH_FLOOR ? best.exercise : null;
+}
+
+export function judgeSelfcheck(item, source, { leadIn = false } = {}) {
   if (isCheckQuestion(item.question, source)) return { status: 'unmatched' };
-  const exercise = bestExercise(item.question, source.exercises);
+  const exercise = bestExercise(item.question, source.exercises) ?? (leadIn ? leadInExercise(item.question, source.exercises) : null);
   if (!exercise) return { status: 'unmatched' };
   if (!normalizeWhitespace(exercise.solution)) return { status: 'unkeyed', exercise };
   // "Answer is open and will vary." keys nothing: the page's model answer
@@ -3202,10 +3222,17 @@ export function swappedWords(model, solution, { all = false } = {}) {
     // set right). A number changed by one digit is a change.
     const joined = from.join('') === to.join('');
     const position = from.length === 1 && /^[a-h]$/.test(from[0]) && to[0] === 'the';
-    const typo = from.length === 1 && to.length === 1 && !/\d/.test(from[0] + to[0]) && editDistance(from[0], to[0]) <= 1;
+    // One letter for another is a label changed, never a typo: "(z) best
+    // represents the solution" printed "(y) …" (11.2) changes the answer.
+    const typo = from.length === 1 && to.length === 1 && !/\d/.test(from[0] + to[0]) && Math.max(from[0].length, to[0].length) > 1
+      && editDistance(from[0], to[0]) <= 1;
     const small = from.length <= 2 && to.length <= 2;
     const benign = joined || (!all && (position || typo));
-    if (from.length && to.length && small && before >= 3 && after >= 3 && !benign) swaps.push([from.join(' '), to.join(' ')]);
+    // A word changed at the very start or end of the answer has no carried
+    // words on that side: "Yes, an ideal solution is formed …" for the
+    // source's "No, …" (11.1) is a change, the other side carried.
+    const edge = (at === 0 && after >= 3) || (end === steps.length && before >= 3);
+    if (from.length && to.length && small && ((before >= 3 && after >= 3) || edge) && !benign) swaps.push([from.join(' '), to.join(' ')]);
     // …or a longer run of the source sentence's CONTENT words dropped or
     // replaced inside a sentence the model answer otherwise carries — "Only
     // rather small dipole-dipole interactions from C-H bonds are available
@@ -3381,8 +3408,13 @@ export function optionsNamedIn(answer, options) {
   // Word by word only for words: a formula's pieces are no words — "K₂O"
   // folds to "k 2 o", which "Na₂O; Na⁺ has a smaller radius than K⁺" prints
   // one by one (7.5).
+  // A word the option repeats is printed as often in the answer: "ion-dipole
+  // forces" (11.1) holds "dipole" once, and is no reading of the option
+  // "dipole-dipole forces".
+  const times = (text, word) => text.split(' ').filter((token) => token === word).length;
   const printed = (option) => optionReadings(option).some((words) => words.length > 0 && (answer.includes(` ${words.join(' ')} `)
-    || (words.length > 1 && words.every((word) => /^[a-z]{2,}$/.test(word)) && words.every((word) => answer.includes(` ${word} `)))));
+    || (words.length > 1 && words.every((word) => /^[a-z]{2,}$/.test(word))
+      && words.every((word) => times(answer, word) >= words.filter((other) => other === word).length))));
   const mentioned = options.filter(printed);
   return mentioned.filter((option) => !mentioned.some((other) => other !== option
     && optionWords(other).length > optionWords(option).length
@@ -3681,6 +3713,17 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
         if (read && asked.length === listed.length && [...asked].sort().join() === read.split(' < ').sort().join()) pieces.push(read);
       }
       if (!key || !pieces.includes(key)) return differs;
+      // The canonical reading drops state symbols, and the grader compares
+      // every one a learner types: a key whose state is not the one the
+      // source prints for that species ("3NO₃⁻(s)" for 11.2's "3NO₃⁻(aq)")
+      // marks the source's own equation "a state symbol differs". Held by
+      // the grader itself, the source's equation typed against the key.
+      if (item.form === 'equation') {
+        const same = [unit.answer, ...equations.map((entry) => entry.printed)].filter((text) => chemCanon(text, 'equation') === key);
+        if (same.length && same.every((text) => checkEquation(text, item.answer).message === STATE_DIFFERS)) {
+          return { ...differs, detail: `textin keys ${JSON.stringify(item.answer)}, a state symbol of which differs from the one source ${unit.id} prints (${JSON.stringify(same[0].slice(0, 120))})` };
+        }
+      }
       if (equations.length >= 2) {
         const asked = askedEquations(equations, item.question);
         if (asked && !asked.some((entry) => entry.canon === key)) {
@@ -4618,7 +4661,25 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
           if (verdict.status !== 'confirmed') notes.push(`${where} sortbins ${verdict.status}: ${item.question.slice(0, 80)}`);
         }
       } else {
-        const verdict = judgeSelfcheck(item, source);
+        const verdict = judgeSelfcheck(item, source, { leadIn: Boolean(units) });
+        // A keyed-only book's self-check read against a WHOLE exercise (a
+        // lettered exercise's answer carried whole under its lead-in, 11.2)
+        // is held to the source's words as a unit's is (`judgeKeyedUnit`'s
+        // `swaps`): "high conductivity" printed for (d)'s "low
+        // conductivity" shares every word with the source.
+        if (units && ['verbatim', 'reworded'].includes(verdict.status)) {
+          const swaps = swappedWords(item.model, verdict.exercise.solution);
+          if (swaps.length && deviationFor(section.localPath, verdict.exercise.id, 'solution')?.kind !== 'solution') {
+            const swapped = swaps.map(([from, to]) => `"${from}" → "${to}"`).join(', ');
+            undisclosed.push({ page: section.localPath, line: item.line, exercise: verdict.exercise.id, swaps });
+            failures.push({
+              page: section.localPath,
+              line: item.line,
+              detail: `${verdict.exercise.id}: the selfcheck's model answer changes a word of the source's answer (${swapped}) with no DISCLOSED_DEVIATIONS line (kind "solution")\n    a correction needs an errata entry and that line; otherwise restore the source's words`,
+            });
+            continue;
+          }
+        }
         if (verdict.status === 'diverges') {
           const deviation = deviationFor(section.localPath, verdict.exercise.id, 'solution');
           if (deviation && deviation.kind === 'solution') {

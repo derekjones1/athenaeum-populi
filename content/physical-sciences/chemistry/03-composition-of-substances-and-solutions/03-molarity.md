@@ -24,7 +24,7 @@ Sugar is one of many components in the complex mixture known as coffee. The amou
 
 ## Solutions
 
-Solutions have previously been defined as homogeneous mixtures, meaning that the composition of the mixture (and therefore its properties) is uniform throughout its entire volume. Solutions occur frequently in nature and have also been implemented in many forms of manmade technology. A more thorough treatment of solution properties is provided in the chapter on solutions and colloids, but provided here is an introduction to some of the basic properties of solutions.
+Solutions have previously been defined as homogeneous mixtures, meaning that the composition of the mixture (and therefore its properties) is uniform throughout its entire volume. Solutions occur frequently in nature and have also been implemented in many forms of manmade technology. A more thorough treatment of solution properties is provided in the chapter on solutions and colloids ([Section 11.1 The Dissolution Process](/physical-sciences/chemistry/11-solutions-and-colloids/01-the-dissolution-process/)), but provided here is an introduction to some of the basic properties of solutions.
 
 The relative amount of a given solution component is known as its **concentration**. Often, though not always, a solution contains one component with a concentration that is significantly greater than that of all other components. This component is called the **solvent** and may be viewed as the medium in which the other components are dispersed, or **dissolved**. Solutions in which water is the solvent are, of course, very common on our planet. A solution in which water is the solvent is called an **aqueous solution**.
 

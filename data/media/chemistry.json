@@ -13064,6 +13064,1047 @@
       "caption": "(a) In a diffractometer, a beam of X-rays strikes a crystalline material, producing (b) an X-ray diffraction pattern that can be analyzed to determine the crystal structure.",
       "scale": "scaled-down"
     },
+    "CNX_Chem_11_00_coralreef": {
+      "source": "media/CNX_Chem_11_00_coralreef.jpg",
+      "sourceSha256": "10e0dec878a89c6a02dada56f5e07e893460161897b0817a80472c6f2e66509d",
+      "module": "m68776",
+      "kind": "photo",
+      "width": 1300,
+      "height": 571,
+      "variants": [
+        {
+          "width": 800,
+          "height": 351,
+          "file": "CNX_Chem_11_00_coralreef-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 571,
+          "file": "CNX_Chem_11_00_coralreef-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows an underwater photo of a colorful coral reef.",
+      "caption": "Coral reefs, such as this one at the Palmyra Atoll National Wildlife Refuge, are vital to the ecosystem of earth’s oceans. The health of coral reefs and all marine life depends on the specific chemical composition of the complex mixture known as seawater. (credit: modification of work by “USFWS – Pacific Region”/Wikimedia Commons)"
+    },
+    "CNX_Chem_11_01_HeArsol": {
+      "source": "media/CNX_Chem_11_01_HeArsol.jpg",
+      "sourceSha256": "3c6c42008c5c55ce6d72ed1ca6f2e2c020ab9ac85cd79be19d2a280436723a6f",
+      "module": "m68778",
+      "kind": "photo",
+      "width": 1300,
+      "height": 333,
+      "variants": [
+        {
+          "width": 800,
+          "height": 205,
+          "file": "CNX_Chem_11_01_HeArsol-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 333,
+          "file": "CNX_Chem_11_01_HeArsol-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two figures are shown. The first contains two spherical containers joined by a closed stopcock. The container to the left is labeled H e. It holds about thirty evenly dispersed, small, light blue spheres. The container on the right is labeled A r and contains about thirty slightly larger blue-green spheres. The second, similar figure has an open stopcock between the two spherical containers. The light blue and green spheres are evenly dispersed and present in both containers.",
+      "caption": "Samples of helium and argon spontaneously mix to give a solution."
+    },
+    "CNX_Chem_11_01_Icepack": {
+      "source": "media/CNX_Chem_11_01_Icepack.jpg",
+      "sourceSha256": "b5014a8065d72943a3a99fb4510275f792d544679f060d4bbf8598b97522ffe1",
+      "module": "m68778",
+      "kind": "photo",
+      "width": 975,
+      "height": 800,
+      "variants": [
+        {
+          "width": 800,
+          "height": 656,
+          "file": "CNX_Chem_11_01_Icepack-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 800,
+          "file": "CNX_Chem_11_01_Icepack-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a single use instant cold pack with labels indicating an inner bag of water surrounded by white particulate ammonium nitrate.",
+      "caption": "An instant cold pack gets cold when certain salts, such as ammonium nitrate, dissolve in water—an endothermic process.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_11_01_K2Cr2O7_1": {
+      "source": "media/CNX_Chem_11_01_K2Cr2O7_1.jpg",
+      "sourceSha256": "cd10fa0e49b4f09d0e939aa721e2b850211c143439d3a8b4109e47a82f4ec633",
+      "module": "m68778",
+      "kind": "photo",
+      "width": 975,
+      "height": 190,
+      "variants": [
+        {
+          "width": 800,
+          "height": 156,
+          "file": "CNX_Chem_11_01_K2Cr2O7_1-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 190,
+          "file": "CNX_Chem_11_01_K2Cr2O7_1-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The first photo shows a small mound of an orange crystalline solid. There is a right-facing arrow. The second photo shows a translucent, colorless liquid in a clear container. There is a right-facing arrow. The third photo shows a translucent orange liquid in a clear, covered container.",
+      "caption": "When potassium dichromate (K 2 Cr 2 O 7 ) is mixed with water, it forms a homogeneous orange solution. (credit: modification of work by Mark Ott)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_11_01_solusolv": {
+      "source": "media/CNX_Chem_11_01_solusolv.jpg",
+      "sourceSha256": "141c539098da5e5558415359fdb05df6a62ec6b5297c60b84f1c743a26682d70",
+      "module": "m68778",
+      "kind": "photo",
+      "width": 1300,
+      "height": 836,
+      "variants": [
+        {
+          "width": 800,
+          "height": 514,
+          "file": "CNX_Chem_11_01_solusolv-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 836,
+          "file": "CNX_Chem_11_01_solusolv-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top, central region of the figure shows solute particles as seven blue spheres and solvent particles as 16 red spheres in separate, labeled boxes. The particles in these boxes are touching. An arrow labeled “Step 1” points left of the solute box, and shows the blue spheres no longer touching in another box labeled “expanded solute.” An arrow labeled “Step 2” points right from the solvent box and shows the red spheres no longer touching in another box labeled “expanded solvent.” Arrows proceed from the bottom of the expanded solute and expanded solvent boxes and join at the bottom of the figure where a step 3 label is shown. The joined arrows point to a box just above in which the red and blue spheres are mixed together and touching. The solute and solvent boxes are joined by another arrow labeled “direct formation of solution” which points downward at the center of the figure. This arrow also points to the box containing mixed red and blue spheres near the bottom of the figure.",
+      "caption": "This schematic represents the direct formation of a solution as a hypothetical stepwise process. Steps 1 and 2 involve separation/expansion of the solute and solvent molecules, both of which require an input of energy to overcome intermolecular attractions and are thus endothermic. Step 3 involves establishing intermolecular attractive forces between solute and solvent molecules (solvation), and is thus exothermic."
+    },
+    "CNX_Chem_11_02_Fe-NO33_img": {
+      "source": "media/CNX_Chem_11_02_Fe(NO3)3_img.jpg",
+      "sourceSha256": "40c22eb326931ce869212e38d25963f4dad0717f40eb6a850837865ee1933d51",
+      "module": "m68781",
+      "kind": "photo",
+      "width": 1300,
+      "height": 436,
+      "variants": [
+        {
+          "width": 800,
+          "height": 268,
+          "file": "CNX_Chem_11_02_Fe-NO33_img-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 436,
+          "file": "CNX_Chem_11_02_Fe-NO33_img-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "In this figure, three beakers labeled x, y, and z are shown containing various arrangements of blue and red spheres suspended in solution. In beaker x, three small red spheres surround a single central blue sphere in small clusters which in turn are grouped in threes around a single red sphere, forming four larger clusters. In beaker y, the four large clusters are present without the central red spheres. Four individual red spheres are now present. In beaker z, the large clusters are not present. Twelve of the small clusters of three red and one blue sphere are present along with four single red spheres.",
+      "caption": ""
+    },
+    "CNX_Chem_11_02_H3O_CL_img": {
+      "source": "media/CNX_Chem_11_02_H3O_CL_img.jpg",
+      "sourceSha256": "c2fefdf1e54b663d3f649f8d9b8026f6541b3a228fe2fbd4f8cf1c47161c179f",
+      "module": "m68781",
+      "kind": "photo",
+      "width": 975,
+      "height": 132,
+      "variants": [
+        {
+          "width": 800,
+          "height": 108,
+          "file": "CNX_Chem_11_02_H3O_CL_img-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 132,
+          "file": "CNX_Chem_11_02_H3O_CL_img-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A chemical equation is shown. To the left, two hydrogen atoms are linked, each with a single dash to a central oxygen atom to the left and below the oxygen symbol, which has two pairs of dots, above and to the right of the atom. A plus sign is shown to the right, then a hydrogen atom linked to the left side of chlorine atom by a single dash with three pairs of dots, above, to the right, and below the element symbol. An arrow points to the products which are three hydrogen atoms linked by single dashes to a central oxygen atom shown in brackets with superscript plus. The oxygen atom has a single pair of dots above the element symbol. This is followed by a plus and C l superscript minus. This symbol is surrounded by four pairs of dots, above and below and to the left and right of the element symbol.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_11_02_ammonia1_img": {
+      "source": "media/CNX_Chem_11_02_ammonia1_img.jpg",
+      "sourceSha256": "866b0eeb457ad62c91f093f75662b4e23b0e253d8b1a6ba22be3544ffebabe67",
+      "module": "m68782",
+      "kind": "photo",
+      "width": 975,
+      "height": 189,
+      "variants": [
+        {
+          "width": 800,
+          "height": 155,
+          "file": "CNX_Chem_11_02_ammonia1_img-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 189,
+          "file": "CNX_Chem_11_02_ammonia1_img-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This reaction diagram shows three H atoms bonded to an N atom above, below, and two the left of the N. A single pair of dots is present on the right side of the N. This is followed by a plus, then two H atoms bonded to an O atom to the left and below the O. Two pairs of dots are present on the O, one above and the other to the right of the O. A double arrow, with a top arrow pointing right and a bottom arrow pointing left follows. To the right of the double arrow, four H atoms are shown bonded to a central N atom. These 5 atoms are enclosed in brackets with a superscript plus outside. A plus follows, then an O atom linked by a bond to an H atom on its right. The O atom has pairs of dots above, to the left, and below the atom. The linked O and H are enclosed in brackets with superscript minus outside.",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_11_02_electrolyt": {
+      "source": "media/CNX_Chem_11_02_electrolyt.jpg",
+      "sourceSha256": "79c27c686d24a898850d64b21d1132e606a8ede0c0ab8f0fa4d269b473ec8871",
+      "module": "m68781",
+      "kind": "photo",
+      "width": 1300,
+      "height": 647,
+      "variants": [
+        {
+          "width": 800,
+          "height": 398,
+          "file": "CNX_Chem_11_02_electrolyt-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 647,
+          "file": "CNX_Chem_11_02_electrolyt-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows three separate beakers. Each has a wire plugged into a wall outlet. In each case, the wire leads from the wall to the beaker and is split resulting in two ends. One end leads to a light bulb and continues on to a rectangle labeled with a plus sign. The other end leads to a rectangle labeled with a minus sign. The rectangles are in a solution. In the first beaker, labeled “Ethanol No Conductivity,” four pairs of linked small green spheres suspended in the solution between the rectangles. In the second beaker, labeled “K C l Strong Conductivity,” six individual green spheres, three labeled plus and three labeled minus are suspended in the solution. Each of the six spheres has an arrow extending from it pointing to the rectangle labeled with the opposite sign. In the third beaker, labeled “Acetic acid solution Weak conductivity,” two pairs of joined green spheres and two individual spheres, one labeled plus and one labeled minus are shown suspended between the two rectangles. The plus labeled sphere has an arrow pointing to the rectangle labeled minus and the minus labeled sphere has an arrow pointing to the rectangle labeled plus.",
+      "caption": "Solutions of nonelectrolytes such as ethanol do not contain dissolved ions and cannot conduct electricity. Solutions of electrolytes contain ions that permit the passage of electricity. The conductivity of an electrolyte solution is related to the strength of the electrolyte."
+    },
+    "CNX_Chem_11_02_waterions": {
+      "source": "media/CNX_Chem_11_02_waterions.jpg",
+      "sourceSha256": "a385540fd4ff6631b6c8e9c5033df5ebf1f33b51ba79685dc0eac22f6e17a534",
+      "module": "m68781",
+      "kind": "photo",
+      "width": 975,
+      "height": 850,
+      "variants": [
+        {
+          "width": 800,
+          "height": 697,
+          "file": "CNX_Chem_11_02_waterions-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 850,
+          "file": "CNX_Chem_11_02_waterions-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The diagram shows eight purple spheres labeled K superscript plus and eight green spheres labeled C l superscript minus mixed and touching near the center of the diagram. Outside of this cluster of spheres are seventeen clusters of three spheres, which include one red and two white spheres. A red sphere in one of these clusters is labeled O. A white sphere is labeled H. Two of the green C l superscript minus spheres are surrounded by three of the red and white clusters, with the red spheres closer to the green spheres than the white spheres. One of the K superscript plus purple spheres is surrounded by four of the red and white clusters. The white spheres of these clusters are closest to the purple spheres.",
+      "caption": "As potassium chloride (KCl) dissolves in water, the ions are hydrated. The polar water molecules are attracted by the charges on the K + and Cl − ions. Water molecules in front of and behind the ions are not shown.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_11_03_LakeNyos": {
+      "source": "media/CNX_Chem_11_03_LakeNyos.jpg",
+      "sourceSha256": "e66c8b0c295a401e866ecb23852fd0cb3a70226970ef9318a7dfd4fbf80c4276",
+      "module": "m68782",
+      "kind": "photo",
+      "width": 1300,
+      "height": 481,
+      "variants": [
+        {
+          "width": 800,
+          "height": 296,
+          "file": "CNX_Chem_11_03_LakeNyos-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 481,
+          "file": "CNX_Chem_11_03_LakeNyos-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two photos are shown. The first is an aerial view of a lake surrounded by green hills. The second shows a large body of water with a fountain sending liquid up into the air several yards or meters above the surface of the water.",
+      "caption": "(a) It is believed that the 1986 disaster that killed more than 1700 people near Lake Nyos in Cameroon resulted when a large volume of carbon dioxide gas was released from the lake. (b) A CO 2 vent has since been installed to help outgas the lake in a slow, controlled fashion and prevent a similar catastrophe from happening in the future. (credit a: modification of work by Jack Lockwood; credit b: modification of work by Bill Evans)"
+    },
+    "CNX_Chem_11_03_O2dissolv": {
+      "source": "media/CNX_Chem_11_03_O2dissolv.jpg",
+      "sourceSha256": "235eee3a30bed53e2091ca8092a858e2502b62899d73cf9cec9d9daa709fd87a",
+      "module": "m68782",
+      "kind": "photo",
+      "width": 1300,
+      "height": 454,
+      "variants": [
+        {
+          "width": 800,
+          "height": 279,
+          "file": "CNX_Chem_11_03_O2dissolv-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 454,
+          "file": "CNX_Chem_11_03_O2dissolv-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two photos are shown. The first shows the top portion of a transparent colorless glass of a clear colorless liquid with small bubbles near the interface of the liquid with the container. The second photo shows a portion of a partially frozen body of water with dead fish appearing on in the water and on an icy surface.",
+      "caption": "(a) The small bubbles of air in this glass of chilled water formed when the water warmed to room temperature and the solubility of its dissolved air decreased. (b) The decreased solubility of oxygen in natural waters subjected to thermal pollution can result in large-scale fish kills. (credit a: modification of work by Liz West; credit b: modification of work by U.S. Fish and Wildlife Service)"
+    },
+    "CNX_Chem_11_03_antifreeze": {
+      "source": "media/CNX_Chem_11_03_antifreeze.jpg",
+      "sourceSha256": "a39a5931ddab4d146af4df55a1758e320a8f73996d0b8c6a6e95e72e6ef06e5f",
+      "module": "m68782",
+      "kind": "photo",
+      "width": 615,
+      "height": 766,
+      "variants": [
+        {
+          "width": 615,
+          "height": 766,
+          "file": "CNX_Chem_11_03_antifreeze-615.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This is a photo of a 1 gallon yellow plastic jug of Preston 50/50 Prediluted Antifreeze/Coolant.",
+      "caption": "Water and antifreeze are miscible; mixtures of the two are homogeneous in all proportions. (credit: “dno1967”/Wikimedia commons)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_11_03_beverage": {
+      "source": "media/CNX_Chem_11_03_beverage.jpg",
+      "sourceSha256": "09dbff7fbe0929bb76659734bed6d0842a298f4a777c0ff0fabf4962315f7451",
+      "module": "m68782",
+      "kind": "photo",
+      "width": 975,
+      "height": 670,
+      "variants": [
+        {
+          "width": 800,
+          "height": 549,
+          "file": "CNX_Chem_11_03_beverage-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 670,
+          "file": "CNX_Chem_11_03_beverage-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A dark brown liquid is shown in a clear, colorless container. A thick layer of beige bubbles appear at the surface of the liquid. In the liquid, thirteen small clusters of single black spheres with two red spheres attached to the left and right are shown. Red spheres represent oxygen atoms and black represent carbon atoms. Seven white arrows point upward in the container from these clusters to the bubble layer at the top of the liquid.",
+      "caption": "Opening the bottle of carbonated beverage reduces the pressure of the gaseous carbon dioxide above the beverage. The solubility of CO 2 is thus lowered, and some dissolved carbon dioxide may be seen leaving the solution as small gas bubbles. (credit: modification of work by Derrick Coetzee)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_11_03_bromine": {
+      "source": "media/CNX_Chem_11_03_bromine.jpg",
+      "sourceSha256": "eac0e7c55d418d0433965811d8c63f622ecba7ff2e3ae95e4bd72515911287b1",
+      "module": "m68782",
+      "kind": "photo",
+      "width": 650,
+      "height": 693,
+      "variants": [
+        {
+          "width": 650,
+          "height": 693,
+          "file": "CNX_Chem_11_03_bromine-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows three test tubes. The first test tube holds a dark orange-brown substance. The second test tube holds a clear substance. The amount of substance in both test tubes is the same. The third test tube holds a dark orange-brown substance on the bottom with a lighter orange substance on top. The amount of substance in the third test tube is almost double of the first two.",
+      "caption": "Bromine (the deep orange liquid on the left) and water (the clear liquid in the middle) are partially miscible. The top layer in the mixture on the right is a saturated solution of bromine in water; the bottom layer is a saturated solution of water in bromine. (credit: Paul Flowers)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_11_03_gasdissolv": {
+      "source": "media/CNX_Chem_11_03_gasdissolv.jpg",
+      "sourceSha256": "58bd8c1a8861a279d4ed4165fe5d0249efe20c72e95bfac5edbbe8bae667a5ea",
+      "module": "m68782",
+      "kind": "photo",
+      "width": 650,
+      "height": 677,
+      "variants": [
+        {
+          "width": 650,
+          "height": 677,
+          "file": "CNX_Chem_11_03_gasdissolv-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This graph shows solubilities of methane, oxygen, carbon monoxide, nitrogen, and helium in 10 superscript negative 3 mol L superscript negative 1 at temperatures ranging from 0 to 30 degrees Celsius. Solubilities as indicated on the graph in decreasing order are methane, oxygen, carbon monoxide, nitrogen, and helium. At ten degrees, solubilities in 10 superscript negative 3mol L superscript negative 1 are approximately as follows; methane 1.9, oxygen 1.8, carbon monoxide 1.2, nitrogen 0.7, and helium 0.4. At twenty degrees, solubilities in 10 superscript negative 3 mol L superscript negative 1 are approximately as follows; methane 1.2, oxygen 1.1, carbon monoxide 0.9, nitrogen 0.5, and helium 0.35.",
+      "caption": "The solubilities of these gases in water decrease as the temperature increases. All solubilities were measured with a constant pressure of 101.3 kPa (1 atm) of gas above the solutions.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_11_03_handwarmer": {
+      "source": "media/CNX_Chem_11_03_handwarmer.jpg",
+      "sourceSha256": "8872a95382437dbd754764dc2c68dc0999b92cc14fc662528b3b5372e8f4e0c0",
+      "module": "m68782",
+      "kind": "photo",
+      "width": 1200,
+      "height": 249,
+      "variants": [
+        {
+          "width": 800,
+          "height": 166,
+          "file": "CNX_Chem_11_03_handwarmer-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 249,
+          "file": "CNX_Chem_11_03_handwarmer-1200.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Three photos of hand warmers are shown side by side with an arrow pointing from the first photo to the second, and another arrow pointing from the second photo to the third. The first packet contains a clear colorless liquid and a small metal disc can be seen. In the second packet, the disc can’t be seen and a dispersion of white liquid is beginning. In the third packet, all of the liquid is white.",
+      "caption": "This hand warmer produces heat when the sodium acetate in a supersaturated solution precipitates. Precipitation of the solute is initiated by a mechanical shockwave generated when the flexible metal disk within the solution is “clicked.” (credit: modification of work by “Velela”/Wikimedia Commons)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_11_03_oilwater2": {
+      "source": "media/CNX_Chem_11_03_oilwater2.jpg",
+      "sourceSha256": "4c0e5d7521f46286d2b5497fc54592f097c817b1e4adafe9b033bb25119a1e40",
+      "module": "m68782",
+      "kind": "photo",
+      "width": 650,
+      "height": 939,
+      "variants": [
+        {
+          "width": 650,
+          "height": 939,
+          "file": "CNX_Chem_11_03_oilwater2-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This is a photo of a clear, colorless martini glass containing a golden colored liquid layer resting on top of a clear, colorless liquid.",
+      "caption": "Water and oil are immiscible. Mixtures of these two substances will form two separate layers with the less dense oil floating on top of the water. (credit: “Yortw”/Flickr)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_11_03_recompress": {
+      "source": "media/CNX_Chem_11_03_recompress.jpg",
+      "sourceSha256": "a797feff2dea90e36b7d07488c48b461bb94a39680b50736c2088b5d20c9241c",
+      "module": "m68782",
+      "kind": "photo",
+      "width": 975,
+      "height": 417,
+      "variants": [
+        {
+          "width": 800,
+          "height": 342,
+          "file": "CNX_Chem_11_03_recompress-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 417,
+          "file": "CNX_Chem_11_03_recompress-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Two photos are shown. The first shows two people seated in a steel chamber on benches that run length of the chamber on each side. The chamber has a couple of small circular windows and an open hatch-type door. One of the two people is giving a thumbs up gesture. The second image provides a view through a small, circular window. Inside the two people can be seen with masks over their mouths and noses. The people appear to be reading.",
+      "caption": "(a) US Navy divers undergo training in a recompression chamber. (b) Divers receive hyperbaric oxygen therapy.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_11_03_solubility": {
+      "source": "media/CNX_Chem_11_03_solubility.jpg",
+      "sourceSha256": "3ad249f26a9f1320e4dfbc2f2c84b1619213798720c020a749e5e1b302985d02",
+      "module": "m68782",
+      "kind": "photo",
+      "width": 650,
+      "height": 821,
+      "variants": [
+        {
+          "width": 650,
+          "height": 821,
+          "file": "CNX_Chem_11_03_solubility-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This shows a graph of the solubility of sugar C subscript 12 H subscript 22 O subscript 11, K N O subscript 3, N a N O subscript 3, N a B r, K B r, N a subscript 2 S O subscript 4, K C l, and C e subscript 2 left parenthesis S O subscript 4 right parenthesis subscript 3 in g solute per 100 g H subscript 2 O at temperatures ranging from 0 degrees Celsius to 100 degrees Celsius. At 0 degrees Celsius, solubilities are approximately 180 for sugar C subscript 12 H subscript 22 O subscript 11, 115 for K N O subscript 3, 75 for N a N O subscript 3, 115 for N a B r, 55 for K B r, 7 for N a subscript 2 S O subscript 4, 25 for K C l, and 20 for C e subscript 2 left parenthesis S O subscript 4 right parenthesis subscript 3. At 0 degrees Celsius, solubilities are approximately 180 for sugar C subscript 12 H subscript 22 O subscript 11, 115 for K N O subscript 3, 75 for N a N O subscript 3, 115 for N a B r, 55 for K B r, 7 for N a subscript 2 S O subscript 4, 25 for K C l, and 20 for C e subscript 2 left parenthesis S O subscript 4 right parenthesis subscript 3. At 100 degrees Celsius, sugar C subscript 12 H subscript 22 O subscript 11 has exceeded the upper limit of solubility indicated on the graph, 240 for K N O subscript 3, 178 for N a N O subscript 3, 123 for N a B r, 105 for K B r, 52 for N a subscript 2 S O subscript 4, 58 for K C l, and the graph for C e subscript 2 left parenthesis S O subscript 4 right parenthesis subscript 3 stops at about 92 degrees Celsius where the solubility is nearly zero. The graph for N a subscript 2 S O subscript 4 is shown in red. All others substances are shown in blue. The solubility of this substance increases until about 30 degrees Celsius and declines beyond that point with increasing temperature.",
+      "caption": "This graph shows how the solubility of several solids changes with temperature.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_11_04_EX03Steps_img": {
+      "source": "media/CNX_Chem_11_04_EX03Steps_img.jpg",
+      "sourceSha256": "c05c1fb1bf84f06d097990d9c2838ef1bf6721947f8751e73aef65e881545b71",
+      "module": "m68783",
+      "kind": "photo",
+      "width": 1000,
+      "height": 178,
+      "variants": [
+        {
+          "width": 800,
+          "height": 142,
+          "file": "CNX_Chem_11_04_EX03Steps_img-800.webp"
+        },
+        {
+          "width": 1000,
+          "height": 178,
+          "file": "CNX_Chem_11_04_EX03Steps_img-1000.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This is a diagram with five boxes oriented horizontally and linked together with arrows numbered 1 to 4 pointing from each box in succession to the next one to the right. The first box is labeled, “Mass of iodine.” Arrow 1 points from this box to a second box labeled, “Moles of iodine.” Arrow 2 points from this box to to a third box labeled, “Molality of solution.” Arrow labeled 3 points from this box to a fourth box labeled, “Change in boiling point.” Arrow 4 points to a fifth box labeled, “New boiling point.”",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_11_04_Ex02Steps_img": {
+      "source": "media/CNX_Chem_11_04_Ex02Steps_img.jpg",
+      "sourceSha256": "bdbaed08787469f761ea9a7379bd94a37b48532f4647ece6b7a31429639dbf6e",
+      "module": "m68783",
+      "kind": "photo",
+      "width": 975,
+      "height": 175,
+      "variants": [
+        {
+          "width": 800,
+          "height": 143,
+          "file": "CNX_Chem_11_04_Ex02Steps_img-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 175,
+          "file": "CNX_Chem_11_04_Ex02Steps_img-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This is a diagram with three boxes connected with two arrows pointing to the right. The first box is labeled, “Molality of solution,” followed by an arrow labeled, “1,” pointing to a second box labeled, “Change in boiling point,” followed by an arrow labeled, “2,” pointing to a third box labeled, “New boiling point.”",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_11_04_Ex04Steps_img": {
+      "source": "media/CNX_Chem_11_04_Ex04Steps_img.jpg",
+      "sourceSha256": "227b57068642bb1825f2c6708a1939636cb87e64cb669baa9b479fa968c0f602",
+      "module": "m68783",
+      "kind": "photo",
+      "width": 975,
+      "height": 175,
+      "variants": [
+        {
+          "width": 800,
+          "height": 143,
+          "file": "CNX_Chem_11_04_Ex04Steps_img-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 175,
+          "file": "CNX_Chem_11_04_Ex04Steps_img-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This is a diagram with three boxes connected with two arrows pointing to the right. The first box is labeled, “Molality of solution,” followed by an arrow labeled, “1,” pointing to a second box labeled, “Change in freezing point,” followed by an arrow labeled, “2” pointing to a third box labeled, “New freezing point.”",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_11_04_Ex07Steps_img": {
+      "source": "media/CNX_Chem_11_04_Ex07Steps_img.jpg",
+      "sourceSha256": "0805dff00dd90ac1e47eef46e761916fae5df983900b8def970ed947cfd91051",
+      "module": "m68783",
+      "kind": "photo",
+      "width": 1000,
+      "height": 406,
+      "variants": [
+        {
+          "width": 800,
+          "height": 325,
+          "file": "CNX_Chem_11_04_Ex07Steps_img-800.webp"
+        },
+        {
+          "width": 1000,
+          "height": 406,
+          "file": "CNX_Chem_11_04_Ex07Steps_img-1000.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This is diagram with five boxes oriented horizontally and linked together with arrows numbered 1 to 4 pointing from each box in succession to the next one to the right. The first box is labeled, “Freezing point of solution.” Arrow 1 points from this box to a second box labeled, “delta T subscript f.” Arrow 2 points from this box to to a third box labeled “Molal concentration of compound.” Arrow labeled 3 points from this box to a fourth box labeled, “Moles of compound in sample.” Arrow 4 points to a fifth box labeled, “Molar mass of compound.”",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_11_04_Ex08Steps_img": {
+      "source": "media/CNX_Chem_11_04_Ex08Steps_img.jpg",
+      "sourceSha256": "7e30b499803715c429fa9bfea2a495d04770834c8ed72bae117688925d271579",
+      "module": "m68783",
+      "kind": "photo",
+      "width": 1000,
+      "height": 178,
+      "variants": [
+        {
+          "width": 800,
+          "height": 142,
+          "file": "CNX_Chem_11_04_Ex08Steps_img-800.webp"
+        },
+        {
+          "width": 1000,
+          "height": 178,
+          "file": "CNX_Chem_11_04_Ex08Steps_img-1000.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This is a diagram with four boxes oriented horizontally and linked together with arrows numbered 1 to 3 pointing from each box in succession to the next one to the right. The first box is labeled, “Osmotic pressure.” Arrow 1 points from this box to a second box labeled, “Molar concentration.” Arrow 2 points from this box to to a third box labeled, “Moles of hemoglobin in sample.” Arrow labeled 3 points from this box to a fourth box labeled, “Molar mass of hemoglobin.”",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_11_04_Ex09Steps_img": {
+      "source": "media/CNX_Chem_11_04_Ex09Steps_img.jpg",
+      "sourceSha256": "5b8ba779f7b3a49876849f6b64eed9bda2e84916bb16340734b45b9055266cd7",
+      "module": "m68783",
+      "kind": "photo",
+      "width": 1000,
+      "height": 369,
+      "variants": [
+        {
+          "width": 800,
+          "height": 295,
+          "file": "CNX_Chem_11_04_Ex09Steps_img-800.webp"
+        },
+        {
+          "width": 1000,
+          "height": 369,
+          "file": "CNX_Chem_11_04_Ex09Steps_img-1000.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This is a diagram with six boxes oriented horizontally and linked together with arrows numbered 1 to 5 pointing from each box in succession to the next one to the right. The first box is labeled, “Mass of N a C l.” Arrow 1 points from this box to a second box labeled, “Moles of N a C l.” Arrow 2 points from this box to to a third box labeled, Moles of ions.” Arrow labeled 3 points from this box to a fourth box labeled, “Molality of solution.” Arrow 4 points to a fifth box labeled, “Change in freezing point.” Arrow 5 points to a sixth box labeled, “New freezing point.”",
+      "caption": "",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_11_04_LabDistill": {
+      "source": "media/CNX_Chem_11_04_LabDistill.jpg",
+      "sourceSha256": "ddfd4658c91c0a01dd15cc6ec070fb9ee50534a25b15b1fe339f04be858675cc",
+      "module": "m68783",
+      "kind": "photo",
+      "width": 1300,
+      "height": 872,
+      "variants": [
+        {
+          "width": 800,
+          "height": 536,
+          "file": "CNX_Chem_11_04_LabDistill-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 872,
+          "file": "CNX_Chem_11_04_LabDistill-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Figure a contains a photograph of a common laboratory distillation unit. Figure b provides a diagram labeling typical components of a laboratory distillation unit, including a stirrer/heat plate with heat and stirrer speed control, a heating bath of oil or sand, stirring means such as boiling chips, a still pot, a still head, a thermometer for boiling point temperature reading, a condenser with a cool water inlet and outlet, a still receiver with a vacuum or gas inlet, a receiving flask for holding distillate, and a cooling bath.",
+      "caption": "A typical laboratory distillation unit is shown in (a) a photograph and (b) a schematic diagram of the components. (credit a: modification of work by “Rifleman82”/Wikimedia commons; credit b: modification of work by “Slashme”/Wikimedia Commons)"
+    },
+    "CNX_Chem_11_04_RaoultLaw": {
+      "source": "media/CNX_Chem_11_04_RaoultLaw.jpg",
+      "sourceSha256": "36fbf1c6bcbc3a6cee36640970f4a7c35122275bacd4a168f3786d58b2c3c4dc",
+      "module": "m68783",
+      "kind": "photo",
+      "width": 1300,
+      "height": 892,
+      "variants": [
+        {
+          "width": 800,
+          "height": 549,
+          "file": "CNX_Chem_11_04_RaoultLaw-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 892,
+          "file": "CNX_Chem_11_04_RaoultLaw-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure contains two images. Figure a is labeled “pure water.” It shows a beaker half-filled with liquid. In the liquid, eleven molecules are evenly dispersed in the liquid each consisting of one central red sphere and two slightly smaller white spheres are shown. Four molecules near the surface of the liquid have curved arrows drawn from them pointing to the space above the liquid in the beaker. Above the liquid, twelve molecules are shown, with arrows pointing from three of them into the liquid below. Figure b is labeled “Aqueous solution.” It is similar to figure a except that eleven blue spheres, slightly larger in size than the molecules, are dispersed evenly in the liquid. Only four curved arrows appear in this diagram with two from the molecules in the liquid pointing to the space above and two from molecules in the space above the liquid pointing into the liquid below.",
+      "caption": "The presence of nonvolatile solutes lowers the vapor pressure of a solution by impeding the evaporation of solvent molecules."
+    },
+    "CNX_Chem_11_04_bloodcell": {
+      "source": "media/CNX_Chem_11_04_bloodcell.jpg",
+      "sourceSha256": "22fd259b8e7887305e9ac6fd027955c867805a7da47e2d7e9ed3155c8d9d78c6",
+      "module": "m68783",
+      "kind": "photo",
+      "width": 1300,
+      "height": 639,
+      "variants": [
+        {
+          "width": 800,
+          "height": 393,
+          "file": "CNX_Chem_11_04_bloodcell-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 639,
+          "file": "CNX_Chem_11_04_bloodcell-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows three scenarios relating to red blood cell membranes. In a, H subscript 2 O has two arrows drawn from it pointing into a red disk. Beneath it in a circle are eleven similar disks with a bulging appearance, one of which appears to have burst with blue liquid erupting from it. In b, the image is similar except that rather than having two arrows pointing into the red disk, one points in and a second points out toward the H subscript 2 O. In the circle beneath, twelve of the red disks are present. In c, both arrows are drawn from a red shriveled disk toward the H subscript 2 O. In the circle below, twelve shriveled disks are shown.",
+      "caption": "Red blood cell membranes are water permeable and will (a) swell and possibly rupture in a hypotonic solution; (b) maintain normal volume and shape in an isotonic solution; and (c) shrivel and possibly die in a hypertonic solution. (credit a/b/c: modifications of work by “LadyofHats”/Wikimedia commons)"
+    },
+    "CNX_Chem_11_04_deice": {
+      "source": "media/CNX_Chem_11_04_deice.jpg",
+      "sourceSha256": "945faaf8421e9947b20dcc21124fda61238bf043ec26ab7c5e0384eb5c596c47",
+      "module": "m68783",
+      "kind": "photo",
+      "width": 975,
+      "height": 365,
+      "variants": [
+        {
+          "width": 800,
+          "height": 299,
+          "file": "CNX_Chem_11_04_deice-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 365,
+          "file": "CNX_Chem_11_04_deice-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure contains two photos. The first photo is a rear view of a large highway maintenance truck carrying a bright orange de-icer sign. A white material appears to be deposited at the rear of the truck onto the roadway. The second image is of an airplane being sprayed with a solution to remove ice prior to take off.",
+      "caption": "Freezing point depression is exploited to remove ice from (a) roadways and (b) the control surfaces of aircraft.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_11_04_ionpair": {
+      "source": "media/CNX_Chem_11_04_ionpair.jpg",
+      "sourceSha256": "e1a61cfca4cb6df8f28053ee17dc89f95e76739b9f9dd755d79b2fff12169ab5",
+      "module": "m68783",
+      "kind": "photo",
+      "width": 975,
+      "height": 861,
+      "variants": [
+        {
+          "width": 800,
+          "height": 706,
+          "file": "CNX_Chem_11_04_ionpair-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 861,
+          "file": "CNX_Chem_11_04_ionpair-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The diagram shows four purple spheres labeled K superscript plus and four green spheres labeled C l superscript minus dispersed in H subscript 2 O as shown by clusters of single red spheres with two white spheres attached. Red spheres represent oxygen and white represent hydrogen. In two locations, the purple and green spheres are touching. In these two locations, the diagram is labeled ion pair. All red and green spheres are surrounded by the white and red H subscript 2 O clusters. The white spheres are attracted to the purple spheres and the red spheres are attracted to the green spheres.",
+      "caption": "Dissociation of ionic compounds in water is not always complete due to the formation of ion pairs.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_11_04_osmosis": {
+      "source": "media/CNX_Chem_11_04_osmosis.jpg",
+      "sourceSha256": "820a54c857e116fed4fa8fbca6e2f90c90ae26695d76063772c90cd73245ba87",
+      "module": "m68783",
+      "kind": "photo",
+      "width": 1300,
+      "height": 805,
+      "variants": [
+        {
+          "width": 800,
+          "height": 495,
+          "file": "CNX_Chem_11_04_osmosis-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 805,
+          "file": "CNX_Chem_11_04_osmosis-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The figure shows two U shaped tubes with a semi permeable membrane placed at the base of the U. In figure a, pure solvent is present and indicated by small yellow spheres to the left of the membrane. To the right, a solution exists with larger blue spheres intermingled with some small yellow spheres. At the membrane, arrows pointing from three small yellow spheres on both sides of the membrane cross over the membrane. An arrow drawn from one of the large blue spheres does not cross the membrane, but rather is reflected back from the surface of the membrane. The levels of liquid in both sides of the U shaped tube are equal. In figure b, arrows again point from small yellow spheres across the semipermeable membrane from both sides. This diagram shows the level of liquid in the left, pure solvent, side to be significantly lower than the liquid level on the right. Dashed lines are drawn from these two liquid levels into the middle of the U-shaped tube and between them is a red, double-headed, vertical arrow next to the term osmotic pressure.",
+      "caption": "(a) A solution and pure solvent are initially separated by an osmotic membrane. (b) Net transfer of solvent molecules to the solution occurs until its osmotic pressure yields equal rates of transfer in both directions.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_11_04_phasediag": {
+      "source": "media/CNX_Chem_11_04_phasediag.jpg",
+      "sourceSha256": "7630315f7945dedda65abe3b220c0f896e3300f407bdec48347d0709facc7c0e",
+      "module": "m68783",
+      "kind": "photo",
+      "width": 1300,
+      "height": 785,
+      "variants": [
+        {
+          "width": 800,
+          "height": 483,
+          "file": "CNX_Chem_11_04_phasediag-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 785,
+          "file": "CNX_Chem_11_04_phasediag-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This phase diagram indicates the pressure in atmospheres of water and a solution at various temperatures. The graph shows the freezing point of water and the freezing point of the solution, with the difference between these two values identified as delta T subscript f. The graph shows the boiling point of water and the boiling point of the solution, with the difference between these two values identified as delta T subscript b. Similarly, the difference in the pressure of water and the solution at the boiling point of water is shown and identified as delta P. This difference in pressure is labeled vapor pressure lowering. The lower level of the vapor pressure curve for the solution as opposed to that of pure water shows vapor pressure lowering in the solution. Background colors on the diagram indicate the presence of water and the solution in the solid state to the left, liquid state in the central upper region, and gas to the right.",
+      "caption": "Phase diagrams for a pure solvent (solid curves) and a solution formed by dissolving nonvolatile solute in the solvent (dashed curves)."
+    },
+    "CNX_Chem_11_04_refinery": {
+      "source": "media/CNX_Chem_11_04_refinery.jpg",
+      "sourceSha256": "a25ac09191e5f001d1032b5268ee8e39a9ec49dcd3ed75120ae737f405ca7631",
+      "module": "m68783",
+      "kind": "photo",
+      "width": 1300,
+      "height": 906,
+      "variants": [
+        {
+          "width": 800,
+          "height": 557,
+          "file": "CNX_Chem_11_04_refinery-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 906,
+          "file": "CNX_Chem_11_04_refinery-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure contains a photo of a refinery, showing large columnar structures. A diagram of a fractional distillation column used in separating crude oil is also shown. Near the bottom of the column, an arrow pointing into the column shows a point of entry for heated crude oil. The column contains several layers at which different components are removed. At the very bottom, residue materials are removed as indicated by an arrow out of the column. At each successive level, different materials are removed proceeding from the bottom to the top of the column. The materials are fuel oil, followed by diesel oil, kerosene, naptha, gasoline, and refinery gas at the very top. To the right of the column diagram, a double sided arrow is shown that is blue at the top and gradually changes color to red moving downward. The blue top of the arrow is labeled, “small molecules: low boiling point, very volatile, flows easily, ignites easily.” The red bottom of the arrow is labeled, “large molecules: high boiling point, not very volatile, does not flow easily, does not ignite easily.”",
+      "caption": "Crude oil is a complex mixture that is separated by large-scale fractional distillation to isolate various simpler mixtures."
+    },
+    "CNX_Chem_11_04_rocksalt": {
+      "source": "media/CNX_Chem_11_04_rocksalt.jpg",
+      "sourceSha256": "15ff77eeae7624d95844784864efdb7c3bd1638b1501620ccdf46d15cc540b00",
+      "module": "m68783",
+      "kind": "photo",
+      "width": 975,
+      "height": 475,
+      "variants": [
+        {
+          "width": 800,
+          "height": 389,
+          "file": "CNX_Chem_11_04_rocksalt-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 475,
+          "file": "CNX_Chem_11_04_rocksalt-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This is a photo of damp brick pavement on which a white crystalline material has been spread.",
+      "caption": "Rock salt (NaCl), calcium chloride (CaCl 2 ), or a mixture of the two are used to melt ice. (credit: modification of work by Eddie Welker)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_11_04_rvosmosis": {
+      "source": "media/CNX_Chem_11_04_rvosmosis.jpg",
+      "sourceSha256": "7ccc96259028ef60d6d93c61fd3b6d32f2e8ca78398848789962b6c25d2113c5",
+      "module": "m68783",
+      "kind": "photo",
+      "width": 650,
+      "height": 850,
+      "variants": [
+        {
+          "width": 650,
+          "height": 850,
+          "file": "CNX_Chem_11_04_rvosmosis-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The figure shows a U shaped tube with a semi permeable membrane placed at the base of the U. Pure solvent is present and indicated by small yellow spheres to the left of the membrane. To the right, a solution exists with larger blue spheres intermingled with some small yellow spheres. At the membrane, arrows point from four small yellow spheres to the left of the membrane. On the right side of the U, there is a disk that is the same width of the tube and appears to block it. The disk is at the same level as the solution. An arrow points down from the top of the tube to the disk and is labeled, “Pressure greater than Π subscript solution.”",
+      "caption": "Applying a pressure greater than the osmotic pressure of a solution will reverse osmosis. Solvent molecules from the solution are pushed into the pure solvent.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_11_04_waterpur": {
+      "source": "media/CNX_Chem_11_04_waterpur.jpg",
+      "sourceSha256": "10fd75e9b0cce4c518a09aa8aafa5ce53f457a56e923d084dd85fff02a8f3e39",
+      "module": "m68783",
+      "kind": "photo",
+      "width": 1200,
+      "height": 419,
+      "variants": [
+        {
+          "width": 800,
+          "height": 279,
+          "file": "CNX_Chem_11_04_waterpur-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 419,
+          "file": "CNX_Chem_11_04_waterpur-1200.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows two photos of reverse osmosis systems. The first is a small system that appears easily portable. The second is larger and situated outdoors.",
+      "caption": "Reverse osmosis systems for purifying drinking water are shown here on (a) small and (b) large scales. (credit a: modification of work by Jerry Kirkhart; credit b: modification of work by Willard J. Lathrop)"
+    },
+    "CNX_Chem_11_05_Colloid": {
+      "source": "media/CNX_Chem_11_05_Colloid.jpg",
+      "sourceSha256": "0a64ee54e4e5a49372aec50e297fabefa486f9166368f0088da629b47047bb33",
+      "module": "m68784",
+      "kind": "photo",
+      "width": 1300,
+      "height": 799,
+      "variants": [
+        {
+          "width": 800,
+          "height": 491,
+          "file": "CNX_Chem_11_05_Colloid-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 799,
+          "file": "CNX_Chem_11_05_Colloid-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure contains three photos and corresponding particle diagrams. In a, a photo of an aquarium containing fish is shown. The particle diagram beneath it shows 90 tiny red spheres. In b, a photo is shown of milk being poured into a cup. The corresponding particle diagram shows about 25 medium sized red spheres.In c, a photo is shown of two pairs of sandal clad feet in mud. The particle diagram below shows 10 fairly large red spheres.",
+      "caption": "(a) A solution is a homogeneous mixture that appears clear, such as the saltwater in this aquarium. (b) In a colloid, such as milk, the particles are much larger but remain dispersed and do not settle. (c) A suspension, such as mud, is a heterogeneous mixture of suspended particles that appears cloudy and in which the particles can settle. (credit a photo: modification of work by Adam Wimsatt; credit b photo: modification of work by Melissa Wiese; credit c photo: modification of work by Peter Burgess)"
+    },
+    "CNX_Chem_11_05_Cottrellp": {
+      "source": "media/CNX_Chem_11_05_Cottrellp.jpg",
+      "sourceSha256": "c76c4038d3953199e2e47a5290f79c86b50740cf859647714a2450fd74d84de2",
+      "module": "m68784",
+      "kind": "photo",
+      "width": 650,
+      "height": 843,
+      "variants": [
+        {
+          "width": 650,
+          "height": 843,
+          "file": "CNX_Chem_11_05_Cottrellp-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a diagram of a Cottrell precipitator. An arrow pointing into a cylindrical chamber shows the path of soot laden smoke. In the presence of high DC voltage and both point and plate electrodes, soot particles are removed at the bottom of the chamber and soot free air exits the top. A photo shows the honeycomb electrodes of a modern electrostatic precipitator.",
+      "caption": "In a Cottrell precipitator, positively and negatively charged particles are attracted to highly charged electrodes, where they are neutralized and deposited as dust.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_11_05_FredCottre": {
+      "source": "media/CNX_Chem_11_05_FredCottre.jpg",
+      "sourceSha256": "66c9aaf21668046b2ee7fc1d27e778225482342d05c3cd1a3653688ef3686a1c",
+      "module": "m68784",
+      "kind": "photo",
+      "width": 606,
+      "height": 421,
+      "variants": [
+        {
+          "width": 606,
+          "height": 421,
+          "file": "CNX_Chem_11_05_FredCottre-606.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This is a photo of Frederick Cottrell.",
+      "caption": "(a) Frederick Cottrell developed (b) the electrostatic precipitator, a device designed to curb air pollution by removing colloidal particles from air. (credit b: modification of work by “SpLot”/Wikimedia Commons)",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_11_05_Gel": {
+      "source": "media/CNX_Chem_11_05_Gel.jpg",
+      "sourceSha256": "c75e0a5d2e934a8aa58eb48e515fe2b23f9dd2f7ba341cf14445f063394c1af8",
+      "module": "m68784",
+      "kind": "photo",
+      "width": 1300,
+      "height": 750,
+      "variants": [
+        {
+          "width": 800,
+          "height": 461,
+          "file": "CNX_Chem_11_05_Gel-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 750,
+          "file": "CNX_Chem_11_05_Gel-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "In this figure, a large molecular model of gelatin is shown with black carbon atoms, red oxygen atoms, white hydrogen atoms, and blue nitrogen atoms. A photo is shown of gelatin dessert cut into colorful rectangles.",
+      "caption": "Gelatin desserts are colloids in which an aqueous solution of sweeteners and flavors is dispersed throughout a medium of solid proteins. (credit photo: modification of work by Steven Depolo)"
+    },
+    "CNX_Chem_11_05_detrg": {
+      "source": "media/CNX_Chem_11_05_detrg.jpg",
+      "sourceSha256": "e6785d4a447ccc5ada412f331fe6ad529d632b73df9c35dde05584a50513f760",
+      "module": "m68784",
+      "kind": "photo",
+      "width": 1300,
+      "height": 121,
+      "variants": [
+        {
+          "width": 800,
+          "height": 74,
+          "file": "CNX_Chem_11_05_detrg-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 121,
+          "file": "CNX_Chem_11_05_detrg-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a structural formula for a detergent known as sodium lauryl sulfate. A hydrocarbon chain composed of 12 carbon atoms and 25 hydrogen atoms is shown with an ionic end involving a negatively charged sulfur and four oxygen atoms at the ionic end of the chain. A positively charged N a superscript plus is also shown at the ionic end.",
+      "caption": "Detergents contain a nonpolar hydrocarbon end (blue) and an ionic end (red). The ionic end can be either a sulfate or a sulfonate. The length of the hydrocarbon end can vary from detergent to detergent."
+    },
+    "CNX_Chem_11_05_emulsoil": {
+      "source": "media/CNX_Chem_11_05_emulsoil.jpg",
+      "sourceSha256": "4c1c863695fea5da5666e531a89d3c4e49695b55ad5928fbdfd1749e6ec4d452",
+      "module": "m68784",
+      "kind": "photo",
+      "width": 650,
+      "height": 544,
+      "variants": [
+        {
+          "width": 650,
+          "height": 544,
+          "file": "CNX_Chem_11_05_emulsoil-650.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a drop of oil in which approximately thirty hydrocarbon tails are oriented toward the center of the drop with ionic ends indicated as tiny red spheres on the surface of the oil drop. Solvated cations are indicated as purple spheres surrounded by clusters of H subscript 2 subscript O molecules shown as tiny clusters of red central oxygen spheres with two white hydrogen spheres attached.",
+      "caption": "This diagrammatic cross section of an emulsified drop of oil in water shows how soap or detergent acts as an emulsifier.",
+      "scale": "scaled-down"
+    },
+    "CNX_Chem_11_05_oilspill": {
+      "source": "media/CNX_Chem_11_05_oilspill.jpg",
+      "sourceSha256": "8733a24e2ee8bdd922ac371afea4ba7d45fed2ccb7dd1751661847661787cf15",
+      "module": "m68784",
+      "kind": "photo",
+      "width": 1200,
+      "height": 325,
+      "variants": [
+        {
+          "width": 800,
+          "height": 216,
+          "file": "CNX_Chem_11_05_oilspill-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 325,
+          "file": "CNX_Chem_11_05_oilspill-1200.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "In figure a, a satellite image is shown with an inset pointing out the Gulf Coast of the southern United States. In figure b, a photo of a plane is shown spraying over water contaminated with oil. In figure c, a molecule composed of 6 black carbon atoms, 2 red oxygen atoms, and 14 white hydrogen atoms is shown.",
+      "caption": "(a) This NASA satellite image shows the oil slick from the Deepwater Horizon spill. (b) A US Air Force plane sprays Corexit, a dispersant. (c) The molecular structure of 2-butoxyethanol is shown. (credit a: modification of work by “NASA, FT2, demis.nl”/Wikimedia Commons; credit b: modification of work by “NASA/MODIS Rapid Response Team”/Wikimedia Commons)"
+    },
+    "CNX_Chem_11_05_soap": {
+      "source": "media/CNX_Chem_11_05_soap.jpg",
+      "sourceSha256": "df389dd9291d149e9558b560c5327be407860c4e745ed683201456e0d677995d",
+      "module": "m68784",
+      "kind": "photo",
+      "width": 1300,
+      "height": 157,
+      "variants": [
+        {
+          "width": 800,
+          "height": 96,
+          "file": "CNX_Chem_11_05_soap-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 157,
+          "file": "CNX_Chem_11_05_soap-1300.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a structural formula for soap known as sodium stearate. A hydrocarbon chain composed of 18 carbon atoms and 35 hydrogen atoms is shown with an ionic end with 2 oxygen atoms and a negative charge. A positively charged N a superscript plus is also shown at the ionic end.",
+      "caption": "Soaps contain a nonpolar hydrocarbon end (blue) and an ionic end (red). The ionic end is a carboxylate group. The length of the hydrocarbon end can vary from soap to soap."
+    },
+    "CNX_Chem_11_05_srchlight": {
+      "source": "media/CNX_Chem_11_05_srchlight.jpg",
+      "sourceSha256": "8225c04a3f7680a8a595beb4bd86da002180a7dfc8a9db60cab11485299c145c",
+      "module": "m68784",
+      "kind": "photo",
+      "width": 975,
+      "height": 738,
+      "variants": [
+        {
+          "width": 800,
+          "height": 605,
+          "file": "CNX_Chem_11_05_srchlight-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 738,
+          "file": "CNX_Chem_11_05_srchlight-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This is a photo of searchlight beams in the night sky of a city scene.",
+      "caption": "The paths of searchlight beams are made visible when light is scattered by colloidal-size particles in the air (fog, smoke, etc.). (credit: “Bahman”/Wikimedia Commons)",
+      "scale": "scaled-down"
+    },
     "CNX_Chem_14_03_FishLemon": {
       "source": "media/CNX_Chem_14_03_FishLemon.jpg",
       "sourceSha256": "9fe70f7dee5ca566696b82f94fedfec8565ba53869510e7b90ab66dcf31f6fd0",

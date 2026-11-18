@@ -1034,6 +1034,10 @@
     "note": "both names are on the item: the key is the module sentence’s “ground electronic state” and “ground state”, which the same sentence prints, is its accept member; both grade correct"
    }
   },
+  "01d47e803900c733": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm84066432 part (c); model answer is solution (c) verbatim"
+  },
   "01d53325fe122871": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | prior derivation: r(1+cosθ)=5 → r=5/(1+cosθ), θ=0 → r=5/2, vertex (5/2,0); matches Algebraic 'graph the conic' exercise fs-id1703944 (solution is figure-only in source; vertex independently derived by script).",
@@ -5588,6 +5592,15 @@
     "result": "agrees"
    }
   },
+  "0a80f15b75e4ce7c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm6481344 part (d); key 'dispersion forces'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "The solver answered the key. The pinned CNXML (m68778, exercise fs-idm6481344, part (d)) keys \"dispersion forces\" for HCl(g) in benzene: benzene is nonpolar, so no dipole-dipole attraction is possible between the two, and the options hold no dipole-induced dipole. Source key stands; the hint says the attraction must be one both substances can take part in."
+   }
+  },
   "0a81ed4d4a9e601a": {
    "verdict": "ok",
    "note": "m66629 fs-idp6887408 critical-thinking; model answer is the source solution verbatim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -5614,6 +5627,14 @@
   "0a905e84588b9482": {
    "verdict": "ok",
    "note": "KC 3 13.3 § Protective Coverings of the Brain and Spinal Cord, m46719"
+  },
+  "0a9648754f0718f5": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm39772000 part (d): 'dipole-dipole attractions'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "0a9bcc8212d0f9b1": {
    "verdict": "ok",
@@ -7830,6 +7851,10 @@
   "0ebc1f7691a9ce58": {
    "verdict": "ok",
    "note": "source CT fs-id2444175, solution fs-id2252064 verbatim"
+  },
+  "0ebf1e025ed88d88": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm71361392 (printed 1); model answer is solution fs-idm54101280 verbatim"
   },
   "0ec17ead5192712a": {
    "verdict": "ok",
@@ -16614,6 +16639,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "1f066c8ada2f6640": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm39772000 part (e): 'dispersion forces'",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -26922,6 +26955,14 @@
     "result": "agrees"
    }
   },
+  "3386cc8adb6b62ff": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm39772000 part (c): 'dispersion forces'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "339700795710e5bf": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -27903,6 +27944,10 @@
     "by": "fable-solver-B",
     "result": "agrees"
    }
+  },
+  "35751530c018ba67": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm84066432 part (a); model answer is solution (a) verbatim"
   },
   "357a4cf2571266df": {
    "verdict": "ok",
@@ -44579,6 +44624,14 @@
     "result": "agrees"
    }
   },
+  "5665376759e6e9ac": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm39772000 part (b): 'hydrogen bonds'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5669efa174aa862f": {
    "verdict": "ok",
    "note": "KC 3 13.1 § The Neural Tube, m46535",
@@ -48605,6 +48658,14 @@
   "5df9d22afe0d06f7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "5dfa2f6350d91e7e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm84066432 part (a); key 'endothermic' from solution fs-idm53013312 (a)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -64527,6 +64588,10 @@
     "result": "agrees"
    }
   },
+  "7e9b5097f8c4adaf": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp1366224 solution verbatim"
+  },
   "7e9d149d8fdc89c0": {
    "verdict": "ok",
    "note": "body cloze from § introduction: \"In this way, the concentration of hormones in blood is maintained within a narrow range.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -67420,6 +67485,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "846532b15f9da040": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp40604768 part (c): that part's source answer whole, capital and period added"
   },
   "8469226fd1f2824e": {
    "verdict": "ok",
@@ -72079,6 +72148,14 @@
   "8de3e438e802ba0f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "8de452ff6bc9e44f": {
+   "verdict": "ok",
+   "note": "glossary recall: alloy (definition fs-idm104294208); body term-00001 prints 'alloys'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -77465,6 +77542,14 @@
     "result": "agrees"
    }
   },
+  "987ef9b0cdb75ec6": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp608736 part (b): Fe(NO3)3(s) -> Fe3+(aq) + 3NO3-(aq), balances in atoms and charge",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "98846bfe17b4c690": {
    "verdict": "ok",
    "note": "glossary recall fs-id1352107 pacesetter cell; accept pacesetter | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
@@ -79630,6 +79715,14 @@
     "result": "agrees"
    }
   },
+  "9cf1dca2d609c75d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm6481344 part (a); key 'ion-dipole forces' from solution fs-idm55414080",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9cf810076a9f58d5": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -81575,6 +81668,14 @@
   "a10a3464a94a2e57": {
    "verdict": "ok",
    "note": "author-built from § Strongyloidiasis: \"The larvae may be excreted in the stool or can reinfect the host by entering the tissue of the intestines and skin around the anus, which c…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "a10b2ffc34ffd7a1": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm84066432 part (c); key 'no' from solution (c) 'No, an ideal solution ...'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -83883,6 +83984,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "a50b6d622b37a20b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm95777520 (printed 7); model answer is solution fs-idm21267712 verbatim"
   },
   "a51000336a7a8168": {
    "verdict": "ok",
@@ -90239,6 +90344,14 @@
   "b25668b3681e3908": {
    "verdict": "ok",
    "note": "glossary recall: photomorphogenesis (fs-idp151500928) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "b257a177f9732e96": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm39772000 part (a): 'ion-dipole'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -98037,6 +98150,15 @@
    "verdict": "ok",
    "note": "body CYU, spoilage onset; selfcheck, needs HTST+UHT sentences combined | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "c1c14ea4fa1f57b4": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm6481344 part (b); key 'dipole-dipole forces'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "The solver answered the key. The pinned CNXML (m68778, exercise fs-idm6481344, part (b)) keys \"dipole-dipole forces\" for NO(l) in CO(l): both molecules are polar, and the book teaches polar molecules as attracting by dipole-dipole forces; that dispersion forces are larger for molecules this weakly polar is beyond the page. Source key stands; recorded under \"Reviewed and not errata\"."
+   }
+  },
   "c1c5d85c3c9621a7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -100510,6 +100632,10 @@
   "c6670d6fae4c810f": {
    "verdict": "ok",
    "note": "20.1 selfcheck false-negative definition + two module reasons (detection threshold, immunocompromised)."
+  },
+  "c668c69771ac37e3": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm84066432 part (b); model answer is solution (b) verbatim, NO3- as NO₃⁻"
   },
   "c669820570f8cfd0": {
    "verdict": "ok",
@@ -111634,6 +111760,10 @@
   "dd49f8fdc69c75f8": {
    "verdict": "ok"
   },
+  "dd4b7f2e869aae54": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp40604768 part (b): that part's source answer whole, capital and period added"
+  },
   "dd4d8fa8c545614a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -114955,6 +115085,10 @@
     "result": "agrees"
    }
   },
+  "e3c3b02d6f099669": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp40604768 part (a): that part's source answer whole, capital and period added"
+  },
   "e3c532f7a0cae30c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -117921,6 +118055,14 @@
     "result": "agrees"
    }
   },
+  "ea065946d8750549": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp40604768 part (c): 'nonconductive'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ea09fdf0a5969631": {
    "verdict": "ok",
    "note": "KC 3 17.11 § body, m46658",
@@ -120084,6 +120226,14 @@
   "ee1b337bf5069849": {
    "verdict": "ok",
    "note": "body cloze fs-id1493116 'A T cell-independent antigen usually is in the form of repeated carbohydrate moieties...'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "ee20ba390ab5edbe": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm6481344 part (c); key 'dispersion forces'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -122415,6 +122565,10 @@
     "result": "agrees"
    }
   },
+  "f31f5b1f7e201c65": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp40604768 part (d): that part's source answer whole, capital and period added"
+  },
   "f31f7ea501f86d63": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -122891,6 +123045,14 @@
     "result": "agrees"
    }
   },
+  "f3e35042b8e2e81f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp608736 part (a): '(z) best represents the solution'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f3e4c08d6085ea37": {
    "verdict": "ok",
    "note": "Review Question fs-id2904762: matches source solution 'C' = nucleolus. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -123261,6 +123423,14 @@
   "f487befa76045367": {
    "verdict": "ok",
    "note": "CT fs-id2336089 model = fs-id2254240"
+  },
+  "f489970e4d7d7fe3": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm6481344 part (e); key 'hydrogen bonding'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "f489c04aced9f8f8": {
    "verdict": "ok",
@@ -123947,6 +124117,14 @@
   },
   "f60a9c61277b2d5d": {
    "verdict": "ok"
+  },
+  "f60b63e4a343ee02": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp40604768 part (a): 'high conductivity'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "f60c41f759addf96": {
    "verdict": "ok",
@@ -125015,6 +125193,14 @@
   "f7e3446074f0b800": {
    "verdict": "ok",
    "note": "source exercise fs-idp178456496 (printed 2.49) part (c) — solution fs-idp3249008",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "f7e5165cd1dc04f5": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp40604768 part (b): 'high conductivity'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -128613,6 +128799,10 @@
     "result": "agrees"
    }
   },
+  "fed01cf933817058": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp608736 part (a) solution verbatim"
+  },
   "fed9adab5a930dee": {
    "verdict": "ok",
    "note": "KC 2 9.2 § Syndesmosis, m46403",
@@ -128747,6 +128937,14 @@
   "ff11a89962764c30": {
    "verdict": "ok",
    "note": "author-built from § summary: \"T cell-independent activation of B cells involves cross-linkage of BCRs by repetitive nonprotein antigen epitopes.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "ff12190135199a7d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp40604768 part (d): 'low conductivity'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"

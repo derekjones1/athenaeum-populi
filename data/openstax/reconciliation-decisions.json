@@ -8956,6 +8956,28 @@
       "status": "correct-local-source-defect",
       "errataEntry": 3361,
       "rationale": "The Bragg equation is said to be named “in honor of W. H. Bragg, the English physicist who first explained this phenomenon”; the explanation was the work of William Henry Bragg and his son William Lawrence Bragg. The page prints both names, with a Source note after the diffraction figure and a footer clause. Found by the claim pass (F7), ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/11-solutions-and-colloids/01-the-dissolution-process.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68778",
+      "sourceElementIds": [
+        "fs-idm96486640"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3368,
+      "rationale": "The paragraph on an ionic compound dissolving in water gives calcium carbonate as “one example of such an ‘insoluble’ ionic compound”, that is, one whose dissolution is significantly endothermic; the dissolution of calcite is exothermic (the USGS PHREEQC database lists −3.15 kcal/mol), and its low solubility comes from a decrease in entropy. The page prints “one example of an” with a visible Source note after the paragraph and a footer clause. Found by the claim pass (Finding 1), ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/11-solutions-and-colloids/02-electrolytes.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68781",
+      "sourceElementIds": [
+        "fs-idp18654544"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3369,
+      "rationale": "The Summary says “Soluble ionic substances and strong acids ionize completely”; the section calls what an ionic substance does in water dissociation, a physical change, and reserves ionization for acids. The page keeps the sentence as printed and adds a visible Source note after the Summary and a footer clause. A loose claim: wording kept, note added. Found by the claim pass (Finding 2), ruled by the orchestrator, November 18, 2026."
     }
   ]
 }

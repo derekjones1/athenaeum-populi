@@ -151,12 +151,21 @@ these differences:
    to Appendix G linked to its page in this book". A hint may name an
    appendix or a section ("Find the standard enthalpies of formation in
    Appendix G.") but takes no link: a hint is plain text.
+   **A hint names the section that teaches what the item needs and this
+   page does not** — a definition as well as a constant or a table
+   (11.1's force-name items need Section 10.1's forces, and the attraction
+   of an ion for a polar molecule, which Section 11.2 defines) *(chapter
+   11)*.
    **A reference to a whole chapter is resolved to the section meant**
    *(chapter 10)*: the source's words stay and the section follows in
    parentheses as a link — "the chapter on thermochemistry
    ([Section 5.3 Enthalpy](…))" — never a link to the chapter's landing
    page, which holds no content (lint; a link that names the chapter's
-   opening figure, which is only on the landing, is the exception). The
+   opening figure, which is only on the landing, is the exception). Where
+   the reference already stands inside a parenthesis, the link follows a
+   comma instead of a second parenthesis ("(an exothermic change, as
+   discussed in the chapter on thermochemistry, [Section 5.1 Energy
+   Basics](…))") *(chapter 11)*. The
    run that writes a chapter links what earlier pages say of it.
 
    **Where the content asks the learner to consult what an appendix
@@ -313,6 +322,7 @@ The component follows the SHAPE of the source's keyed answer:
 | oxidation states AND formal charges in one answer, each list after its heading ("Oxidation states P +1, S −1⅓, Cl +5, O –2. Formal charges: P 0; S 0; Cl +2: O –1", 8.2) | the two rows above, one `fillin` per whole number asked, each closing with its own row's sentence: the gate holds an "Enter the oxidation state of O …" item to the number after O in the oxidation-state list and an "Enter the formal charge of P …" item to the formal-charge list, so O's −1 under its oxidation state is refused, and a symbol its list gives no whole number for (S −1⅓) is refused. **The example pair of a signed closing is the author's to choose** — one positive number and one negative, "as +3 or −3." — **and neither is a key of a whole-number fill-in on the page** (lint, every signed closing: the formal-charge default "+2 or −2" beside an oxidation state keyed −2 prints that key). On 8.2's matches exercise both closings take "+3 or −3": no number its answer prints *(chapter 8)* |
 | several equations in one answer ("(complete) … (net)"; an equation for each of three metals; molecular, complete ionic, and net ionic) | one equation `textin` per equation, in the source's order, each stem closing with the sentence that says which: "Enter the complete ionic equation.", "Enter the net ionic equation.", "Enter the equation for the reaction of magnesium." Two of them may share one key (4.1: a reaction with no spectator ion); both stand, and the footer does NOT say so — it would hand over the second key *(chapter 4)* |
 | a type of reaction where the stem names no set ("oxidation-reduction (addition)") | a `multiplechoice` whose options are the types the section's own objective names, in its order, then a `selfcheck` with the source's answer whole; the footer says where the options come from *(chapter 4)* |
+| a name or a level for each lettered part where the stem names no set ("ion-dipole forces; dipole-dipole forces; dispersion forces; …" for "Indicate the most important types of intermolecular attractions…"; "high conductivity (solute is an ionic compound …); … nonconductive (…); low conductivity (…)") | one `multiplechoice` per part, the SAME options on every part: the exercise's OWN answer set, written as that exercise's key writes it — so two exercises may spell one force two ways (10.1, 11.1, 11.2) — the forces in the order the book introduces them (dispersion, dipole-dipole, hydrogen bonding, ion-dipole); the footer says where the options come from. Where each part's answer carries a reason in parentheses, ALL the choices come first and then one `selfcheck` per part in part order, each with its part's stem and hint word for word and its part's source answer whole — the form of 4.2's type-of-reaction exercise; a self-check directly under its own choice prints the next part's key where two parts share one (lint), and one self-check for the whole answer must rename the parts *(chapter 11)* |
 | an equation the stem itself says may have more than one correct answer, or one that leaves a reactant to the learner ("an appropriate acid"), or two steps with a chained arrow | `selfcheck`, the source's equation the model answer: an equation `textin` takes one answer *(chapter 4)* |
 | amounts answered for each part of another exercise ("0.435 mol Na, 0.217 mol Cl₂, 15.4 g Cl₂") | one `fillin` per amount the part ASKS for — an intermediate amount the answer also prints is not asked — each stem closing "Enter the number of moles of Cl₂." or "Enter the mass of Cl₂ in grams.", the substance named by the FORMULA the answer prints (the gate holds each item to its number by that formula) *(chapter 4)* |
 | two or more quantities ("5371 °F, 3239 K"; a range; a ratio) | one `fillin` per quantity, each stem saying which |

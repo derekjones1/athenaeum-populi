@@ -70,6 +70,9 @@ chemistry, and nuclear chemistry.
 - **Liquids and Solids** — intermolecular forces, properties of liquids,
   phase transitions, phase diagrams, the solid state of matter, and lattice
   structures in crystalline solids.
+- **Solutions and Colloids** — the dissolution process and electrolytes. The
+  chapter’s last three sections — solubility, colligative properties, and
+  colloids — are being written.
 
 ## Appendices
 
@@ -83,8 +86,6 @@ standard electrode potentials that the chapters refer to by letter.
 
 The remaining chapters of Chemistry 2e will appear in this order:
 
-- **Solutions and Colloids** — the dissolution process, electrolytes,
-  solubility, colligative properties, and colloids.
 - **Kinetics** — chemical reaction rates and the factors that affect them,
   rate laws, integrated rate laws, collision theory, reaction mechanisms,
   and catalysis.
