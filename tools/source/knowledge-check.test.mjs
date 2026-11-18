@@ -1,11 +1,11 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtempSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdtempSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { execFileSync, spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
-import { assemble, bookSections, chapterBlocks, checkSources, findLeaks, plannedWeights, provenanceResults, solutionPrints } from './knowledge-check.mjs';
+import { assemble, bookSections, chapterBlocks, checkSources, findLeaks, plannedWeights, printedOrderings, proseConfigurations, proseQuantumSets, provenanceResults, solutionPrints } from './knowledge-check.mjs';
 import { loadElements } from '../lib/elements.mjs';
 
 // knowledge-check.mjs is the parent's kit for a Knowledge Check run
@@ -231,3 +231,85 @@ test('a check\'s configuration or ordering is held to a worked Solution that pri
   assert.equal(solutionPrints('One possible set is 4 0 0 ( 1 )/( 2 ) for that electron.', '4 0 0 −1/2', 'quantum-numbers'), false, 'the other spin');
   assert.equal(solutionPrints('The values 3 4 0 0 ( 1 )/( 2 ) run on.', '4 0 0 +1/2', 'quantum-numbers'), false, 'the last four of five values');
 });
+
+
+test('a worked Solution in prose: labelled configurations, the whole ranking, a set given label by label (Chemistry 2e chapters 6–7)', () => {
+  const cations = 'First, write the electron configuration for the neutral atoms: Zn: [Ar]3 d^{10} 4 s^{2} Cr: [Ar]3 d^{5} 4 s^{1} Next, remove electrons from the highest energy orbital. Thus, we find the following electron configurations of the ions: Zn^{2+} : [Ar]3 d^{10} Cr^{3+} : [Ar]3 d^{3}';
+  assert.deepEqual(proseConfigurations(cations).map((entry) => [entry.symbol, entry.charged, entry.printed]), [
+    ['Zn', false, '[Ar]3 d^{10} 4 s^{2}'], ['Cr', false, '[Ar]3 d^{5} 4 s^{1}'], ['Zn', true, '[Ar]3 d^{10}'], ['Cr', true, '[Ar]3 d^{3}'],
+  ]);
+  assert.deepEqual(proseConfigurations('Se^{2–} : [Ar]3 d^{10} 4 s^{2} 4 p^{6} I^{–} : [Kr]4 d^{10} 5 s^{2} 5 p^{6}').map((entry) => entry.symbol), ['Se', 'I']);
+  assert.deepEqual(proseConfigurations('The configuration is 1 s^{2} 2 s^{2} .'), [], 'one configuration is no list');
+  const radii = 'Radius increases as we move down a group, so Ge < Fl (Note: Fl is the symbol for flerovium). Radius decreases as we move across a period, so Kr < Br < Ge. Putting the trends together, we obtain Kr < Br < Ge < Fl.';
+  assert.equal(Math.max(...printedOrderings(radii).map((canon) => canon.split(' < ').length)), 4);
+  const phosphorus = 'The last electron added is a 3 p electron. Therefore, n = 3 and, for a p -type orbital, l = 1. The m _l value could be –1, 0, or +1. The three p orbitals are degenerate, so any of these m _l values is correct. For unpaired electrons, convention assigns the value of + ( 1 )/( 2 ) for the spin quantum number; thus, m s = + ( 1 )/( 2 ) .';
+  assert.deepEqual(proseQuantumSets(phosphorus), ['3 1 -1 +1/2', '3 1 0 +1/2', '3 1 1 +1/2']);
+  assert.deepEqual(proseQuantumSets('Therefore, n = 3 and l = 1.'), [], 'a set needs all four labels');
+});
+
+{
+  const CHEM = path.join(ROOT, 'sources/openstax/osbooks-chemistry-bundle/modules');
+  const ids = { '6.4': 'm68734', '6.5': 'm68735', '7.1': 'm68737', '7.4': 'm68740', '8.4': 'm68747' };
+  const skip = !Object.values(ids).every((id) => existsSync(path.join(CHEM, id, 'index.cnxml')));
+  const realModule = (section) => (ids[section] ? readFileSync(path.join(CHEM, ids[section], 'index.cnxml'), 'utf8') : null);
+  const heading = { '6.4': '### 6.4 Electronic Structure of Atoms', '6.5': '### 6.5 Periodic Variations', '7.1': '### 7.1 Ionic Bonding', '7.4': '### 7.4 Formal Charges', '8.4': '### 8.4 Molecular Orbital Theory' };
+  const one = (section, item) => checkSources(['## Chapter N: Title', '', heading[section], '', item, ''].join('\n'), realModule);
+  const TYPE_CONFIG = 'Type each subshell followed by its number of electrons, with a space between subshells.';
+  const CATIONS = `There are at least 14 elements categorized as “essential trace elements” for the human body. They are called “essential” because they are required for healthy bodily functions, “trace” because they are required only in small amounts, and “elements” in spite of the fact that they are really ions. Two of these essential trace elements, chromium and zinc, are required as Cr³⁺ and Zn²⁺. Write the electron configurations of these cations. Enter the electron configuration of the chromium ion. ${TYPE_CONFIG}`;
+  const ANIONS = `Selenium and iodine are two essential trace elements that form anions. Write the electron configurations of the anions. Enter the electron configuration of the selenium ion. ${TYPE_CONFIG}`;
+  const RADII = 'Predict the order of increasing covalent radius for Ge, Fl, Br, Kr. Type the symbols in the order you rank them, separated by <.';
+  const PHOSPHORUS = 'What is the electron configuration and orbital diagram for a phosphorus atom? What are the four quantum numbers for the last electron added? Enter the four quantum numbers. Type the four values in the order n, l, mₗ, mₛ, separated by spaces.';
+  const ICL4 = 'Assign formal charges to each atom in the interhalogen ion ICl₄⁻. Enter the formal charge of I as a signed number, the sign first, as +2 or −2.';
+  const O2 = 'Draw the molecular orbital diagram for the oxygen molecule, O₂. From this diagram, calculate the bond order for O₂. How does this diagram account for the paramagnetism of O₂? Enter the bond order.';
+  const textin = (question, answer, form) => `{{< textin question="${question}" answer="${answer}" answerForm="${form}" >}}`;
+  const fillin = (question, answer, form) => `{{< fillin question="${question}" answer="${answer}" answerForm="${form}" >}}`;
+
+  test('sources read Knowledge Check block 3\'s shapes against the worked Solution, and refuse a sibling\'s key (Chemistry 2e chapters 6–8)', { skip }, () => {
+    const ok = (section, item) => assert.deepEqual(one(section, item), { confirmed: 1, failures: [] }, item);
+    const refused = (section, item, pattern) => assert.match(one(section, item).failures[0]?.detail ?? '(confirmed)', pattern, item);
+    ok('7.1', textin(CATIONS, '[Ar]3d³', 'configuration'));
+    refused('7.1', textin(CATIONS, '[Ar]3d¹⁰', 'configuration'), /for the configuration its closing sentence names/);
+    refused('7.1', textin(CATIONS, '[Ar]3d⁵4s¹', 'configuration'), /for the configuration its closing sentence names/);
+    ok('7.1', textin(ANIONS, '[Ar]3d¹⁰4s²4p⁶', 'configuration'));
+    refused('7.1', textin(ANIONS, '[Kr]4d¹⁰5s²5p⁶', 'configuration'), /for the configuration its closing sentence names/);
+    ok('6.5', textin(RADII, 'Kr < Br < Ge < Fl', 'ordering'));
+    refused('6.5', textin(RADII, 'Ge < Fl', 'ordering'), /a step of the Solution/);
+    refused('6.5', textin(RADII, 'Kr < Br < Ge', 'ordering'), /a step of the Solution/);
+    ok('6.4', textin(PHOSPHORUS, '3 1 0 +1/2', 'quantum-numbers'));
+    refused('6.4', textin(PHOSPHORUS, '3 0 0 +1/2', 'quantum-numbers'), /does not print as one quantum-numbers/);
+    refused('6.4', textin(PHOSPHORUS, '3 1 0 -1/2', 'quantum-numbers'), /does not print as one quantum-numbers/);
+    ok('7.4', fillin(ICL4, '-1', 'whole-number'));
+    refused('7.4', fillin(ICL4, '0', 'whole-number'), /does not print/);
+    // O₂'s subscript is no number the question gives; the 4 inside the fraction is no bond order.
+    ok('8.4', fillin(O2, '2', 'decimal-or-fraction'));
+    refused('8.4', fillin(O2, '4', 'decimal-or-fraction'), /does not print/);
+  });
+}
+
+{
+  const CHEM = path.join(ROOT, 'sources/openstax/osbooks-chemistry-bundle/modules');
+  const ids = { '6.3': 'm68733', '6.4': 'm68734' };
+  const skip = !Object.values(ids).every((id) => existsSync(path.join(CHEM, id, 'index.cnxml')));
+  const realModule = (section) => (ids[section] ? readFileSync(path.join(CHEM, ids[section], 'index.cnxml'), 'utf8') : null);
+  const one = (section, item) => checkSources(['## Chapter 6: Title', '', `### ${section} Title`, '', item, ''].join('\n'), realModule);
+  const TYPE_CONFIG = 'Type each subshell followed by its number of electrons, with a space between subshells.';
+  const ion = (symbol, answer) => `{{< textin question="What is the electron configuration of ${symbol}? ${TYPE_CONFIG}" answer="${answer}" answerForm="configuration" >}}`;
+  const SHELL = 'Calculate the maximum number of electrons that can occupy a shell with $n = 5$. Note you are only looking at the orbitals with the specified $n$ value, not those at lower energies.';
+  const shell = (answer) => `{{< fillin question="${SHELL}" answer="${answer}" answerForm="whole-number" >}}`;
+
+  test('one part of a lettered worked example: its lead-in restated for the one, held to that part\'s answer (Chemistry 6.4\'s ions, 6.3\'s shells)', { skip }, () => {
+    const ok = (section, item) => assert.deepEqual(one(section, item), { confirmed: 1, failures: [] }, item);
+    const refused = (section, item, pattern) => assert.match(one(section, item).failures[0]?.detail ?? '(confirmed)', pattern, item);
+    // (e) Sm³⁺ after the source's stray "(e).": the last form after "=", not the first, and no other part's.
+    ok('6.4', ion('Sm³⁺', '1s²2s²2p⁶3s²3p⁶4s²3d¹⁰4p⁶5s²4d¹⁰5p⁶4f⁵'));
+    refused('6.4', ion('Sm³⁺', '1s²2s²2p⁶3s²3p⁶4s²3d¹⁰4p⁶5s²4d¹⁰5p⁶6s²4f⁶'), /for the configuration its closing sentence names/);
+    refused('6.4', ion('Sm³⁺', '1s²2s²2p⁶'), /does not print as one configuration/);
+    refused('6.4', ion('Sm³⁺', '1s²2s²2p⁶3s²3p⁶3d⁶'), /does not print as one configuration/);
+    ok('6.4', ion('Fe²⁺', '1s²2s²2p⁶3s²3p⁶3d⁶'));
+    ok('6.4', ion('Al²⁺', '1s²2s²2p⁶3s¹'));
+    // (b) n = 5 with the question's shared closing: 50 electrons, not (a)'s 8 or (b)'s 25 orbitals.
+    ok('6.3', shell('50'));
+    refused('6.3', shell('8'), /does not print/);
+    refused('6.3', shell('25'), /does not print/);
+  });
+}

@@ -223,6 +223,14 @@
   "005ce4d895d3b50b": {
    "verdict": "ok"
   },
+  "005df3afbce84f1f": {
+   "verdict": "ok",
+   "note": "KC 3 7.2 § glossary, m68738",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "005f923957ae27bf": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -1007,6 +1015,15 @@
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
+   }
+  },
+  "01d0ea27b633ab38": {
+   "verdict": "ok",
+   "note": "KC 3 6.2 § The Bohr Model, m68732",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "both names are on the item: the key is the module sentence’s “ground electronic state” and “ground state”, which the same sentence prints, is its accept member; both grade correct"
    }
   },
   "01d53325fe122871": {
@@ -2924,6 +2941,14 @@
     "result": "agrees"
    }
   },
+  "05501fbaf6aafe25": {
+   "verdict": "ok",
+   "note": "KC 3 6.3 § Example: Maximum Number of Electrons, m68733",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0550cf73175b9e34": {
    "verdict": "ok",
    "note": "cloze bladder; fs-id2309996 last sentence",
@@ -4143,6 +4168,14 @@
     "result": "agrees"
    }
   },
+  "07d804b8d5d0c962": {
+   "verdict": "ok",
+   "note": "KC 3 7.4 § Resonance, m68740",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "07dc37bbfaf85f17": {
    "verdict": "ok",
    "note": "source exercise fs-id1167660249776 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -4178,6 +4211,14 @@
   "07e7f261a37d74b5": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "07e9b6a7607ec1e8": {
+   "verdict": "ok",
+   "note": "KC 3 8.4 § Molecular Orbital Theory, m68747",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -8409,6 +8450,14 @@
     "result": "agrees"
    }
   },
+  "0ff8663d0349731f": {
+   "verdict": "ok",
+   "note": "KC 3 6.5 § Example: Sorting Atomic Radii, m68735",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0ff8ebcefad32f9b": {
    "verdict": "ok",
    "note": "RQ fs-id1688445 key D renal columns; options verbatim",
@@ -12098,6 +12147,15 @@
    "verdict": "ok",
    "note": "model answer = source solution verbatim; rubric clauses from it"
   },
+  "16f8bfe0dfe50b71": {
+   "verdict": "ok",
+   "note": "KC 3 7.1 § Example: Determining the Electronic Structures of Cations, m68737",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "the key is [Ar]3d³, the only form the 7.1 Solution prints, and the grader takes the full form 1s²2s²2p⁶3s²3p⁶3d³ as correct too"
+   }
+  },
   "16f91d6b289399ca": {
    "verdict": "ok"
   },
@@ -15585,6 +15643,15 @@
    "verdict": "ok",
    "note": "m66374 solution fs-id1777919 (normal saline/lactated Ringer's isotonicity importance): model answer verbatim match. Two CHECKS clauses restate no osmotic-balance perturbation and no water taken from/added to tissues. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "1d640ca6937119ee": {
+   "verdict": "ok",
+   "note": "KC 3 8.1 § Valence Bond Theory, m68744",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "“nodal plane” is what Section 8.4 calls the same plane of a π orbital; added as an accept member after the solve (the checker and the author had raised it too), the key “node” unchanged"
+   }
+  },
   "1d6a3f0d468c76b1": {
    "verdict": "ok",
    "note": "RQ fs-id1492729 key B structure (fs-id1490919 'Collagen fibers provide structure')",
@@ -17067,6 +17134,14 @@
   "20472ea5a85d5c54": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "2048ce260587659e": {
+   "verdict": "ok",
+   "note": "KC 3 7.6 § Molecular Polarity and Dipole Moment, m68742",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -24098,6 +24173,14 @@
     "result": "agrees"
    }
   },
+  "2e692025b3c832ee": {
+   "verdict": "ok",
+   "note": "KC 3 7.6 § Example: Predicting Electron-pair Geometry and Molecular Structure: SF₄, m68742",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2e6b5f31dbedd9f1": {
    "verdict": "ok",
    "note": "source exercise fs-idm133690944, solution fs-idm119081680 whole"
@@ -25679,6 +25762,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "31a63013c29499ef": {
+   "verdict": "ok",
+   "note": "KC 3 6.5 § Variation in Ionization Energies, m68735"
   },
   "31a8252da1e93aff": {
    "verdict": "ok",
@@ -27874,6 +27961,14 @@
     "result": "agrees"
    }
   },
+  "35ed7402c2d5229b": {
+   "verdict": "ok",
+   "note": "KC 3 8.3 § Multiple Bonds, m68746",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "35f8cbfc4c2e737f": {
    "verdict": "ok",
    "note": "cloze of fs-id2396137 bullet 3; key kidneys as printed",
@@ -29728,6 +29823,14 @@
     "result": "agrees"
    }
   },
+  "39ba6b49ea9e3dd0": {
+   "verdict": "ok",
+   "note": "KC 3 7.3 § glossary, m68739",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "39bbe7b09ea45bdf": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -31530,6 +31633,14 @@
     "result": "agrees"
    }
   },
+  "3d5e4af14fc14571": {
+   "verdict": "ok",
+   "note": "KC 3 6.4 § Electron Configurations and the Periodic Table, m68734",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3d5e6c6b1ae6ae31": {
    "verdict": "ok",
    "note": "Verified numerically for x=0.6: Math.acos(-0.6)=2.214297435588181 equals Math.PI-Math.acos(0.6)=2.214297435588181; matches source's own True verdict and geometric (reference-angle) argument. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -32728,6 +32839,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "3f905966d8ed9e9a": {
+   "verdict": "ok",
+   "note": "KC 3 8.3 § Multiple Bonds, m68746"
   },
   "3f934f1cc87f20c6": {
    "verdict": "ok",
@@ -34619,6 +34734,14 @@
     "result": "agrees"
    }
   },
+  "4350773abf8feeea": {
+   "verdict": "ok",
+   "note": "KC 3 7.1 § glossary, m68737",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4350eb03dc3162d3": {
    "verdict": "ok",
    "note": "Critical Thinking fs-idp149773760. Model answer is the CNXML solution verbatim, naming the four ruminant stomach compartments (rumen, reticulum, omasum, abomasum) and their microbial fermentation role, matching the Ruminants subsection prose. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -36221,6 +36344,14 @@
   "466476b8a1c45839": {
    "verdict": "ok",
    "note": "fs-id2041955 sentence verbatim.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "46647b3f3897dc7b": {
+   "verdict": "ok",
+   "note": "KC 3 8.2 § Example: Assigning Hybridization, m68745",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -41462,6 +41593,14 @@
     "note": "accept gap: the glossary keys \"species dispersion pattern\" and the section also says \"dispersion pattern\"; accept widened"
    }
   },
+  "5124828bbe974dfe": {
+   "verdict": "ok",
+   "note": "KC 3 7.1 § The Formation of Ionic Compounds, m68737",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5126c6f6b2d05cc5": {
    "verdict": "ok",
    "note": "author-built from § Stationary Phase: \"The total number of live cells reaches a plateau referred to as the stationary phase ( ).\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -42478,6 +42617,15 @@
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
+   }
+  },
+  "533c03bbb85daea4": {
+   "verdict": "ok",
+   "note": "KC 3 6.3 § The Quantum–Mechanical Model of an Atom, m68733",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "the key is “Max Born” and “Born” is its accept member; both grade correct"
    }
   },
   "533e0682d4182507": {
@@ -44129,6 +44277,15 @@
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
+   }
+  },
+  "567377e8f460540f": {
+   "verdict": "ok",
+   "note": "KC 3 6.4 § Example: Predicting Electron Configurations of Ions, m68734",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "the key is the full form the Solution of the worked example prints; the core form grades `form` with “That is the right configuration — now write out every subshell, without the noble-gas core.”, so the learner is told and not marked wrong (the lint allows no core accept beside a full key)"
    }
   },
   "56749f4f3ef96494": {
@@ -45832,6 +45989,10 @@
     "result": "agrees"
    }
   },
+  "59b73fe5bb9aac2c": {
+   "verdict": "ok",
+   "note": "KC 3 7.4 § Using Formal Charge to Predict Molecular Structure, m68740"
+  },
   "59b778ccea3e131d": {
    "verdict": "ok",
    "note": "author-built from § Lenses and Refraction: \"A convex lens can be used to magnify because it can focus at closer range than the human eye, producing a larger image.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -46097,6 +46258,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "5a3d0195b3241ea4": {
+   "verdict": "ok",
+   "note": "KC 3 6.3 § Behavior in the Microscopic World, m68733"
   },
   "5a3e6afe56c13027": {
    "verdict": "ok",
@@ -52721,6 +52886,14 @@
   "686929be50ae1d8b": {
    "verdict": "ok",
    "note": "source exercise fs-id1167663644101 (options-differ) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "68695de67ff72fd8": {
+   "verdict": "ok",
+   "note": "KC 3 6.2 § The Bohr Model, m68732",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -60617,6 +60790,10 @@
    "verdict": "ok",
    "note": "As x->-infinity, 4^x->0 so f->-1 (the asymptote); matches CNXML solution exactly. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "783152e850576c13": {
+   "verdict": "ok",
+   "note": "KC 3 8.1 § Valence Bond Theory, m68744"
+  },
   "783251d247569e4f": {
    "verdict": "ok",
    "note": "cloze from opening para fs-id2344365, sentence 3; key 'womb' printed verbatim",
@@ -66473,6 +66650,10 @@
     "result": "agrees"
    }
   },
+  "83c23f6d506e12b0": {
+   "verdict": "ok",
+   "note": "KC 3 7.2 § Covalent Bonding, m68738"
+  },
   "83c5e41f7e291384": {
    "verdict": "ok"
   },
@@ -68406,6 +68587,14 @@
   "87a186cc3b125c54": {
    "verdict": "ok",
    "note": "Arithmetic series a1=13,d=8,an=69,n=8; Sn=328 (node); matches CNXML ti_11_04_03."
+  },
+  "87a28716361f060a": {
+   "verdict": "ok",
+   "note": "KC 3 7.6 § Example: Predicting Electron-pair Geometry and Molecular Structure: Ammonium, m68742",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "87af09011c371fd5": {
    "verdict": "ok",
@@ -72826,6 +73015,10 @@
     "result": "agrees"
    }
   },
+  "90b7a1e2b3c890c5": {
+   "verdict": "ok",
+   "note": "KC 3 7.3 § Writing Lewis Structures with the Octet Rule, m68739"
+  },
   "90baf288e9cf7dab": {
    "verdict": "ok",
    "note": "author-built from § Classes of Vaccines: \"Various types of vaccines have been developed with these goals in mind.\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -73955,6 +74148,14 @@
   "92cfb9d1a4842c05": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "92d31194f2b40770": {
+   "verdict": "ok",
+   "note": "KC 3 8.4 § summary, m68747",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -80331,6 +80532,14 @@
    "verdict": "ok",
    "note": "latus endpoints (h+p,k+2p)=(9,1) and (h+p,k-2p)=(9,-3); matches source TI4. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "9fda23625c369133": {
+   "verdict": "ok",
+   "note": "KC 3 8.2 § Assignment of Hybrid Orbitals to Central Atoms, m68745",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9fdb9dfa67418a3c": {
    "verdict": "ok",
    "note": "author-built from § Analyzing Disease in a Population: \"Prevalence is the number, or proportion, of individuals with a particular illness in a given population at a point in time.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -85254,6 +85463,14 @@
     "result": "agrees"
    }
   },
+  "a935f81e92f30545": {
+   "verdict": "ok",
+   "note": "KC 3 8.4 § Molecular Orbital Theory, m68747",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a9366c3039594445": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -86160,6 +86377,10 @@
    "verdict": "ok",
    "note": "source exercise fs-idp108425904 (printed 7), model answer = solution fs-idp75120720 verbatim plus its image CNX_Chem_08_01_N2LewStru_img and an added sentence describing its Lewis structure (rulings 8.1 item 3) | hint reworded by the parent after the fix check or the blind solve (hint-only edit); stem, options, key, and model answer unchanged"
   },
+  "ab448d5a61c54819": {
+   "verdict": "ok",
+   "note": "KC 3 7.5 § Bond Strength: Covalent Bonds, m68741"
+  },
   "ab493bb7b2c20c73": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -86369,6 +86590,14 @@
   "abbf63d8d42bc4f3": {
    "verdict": "ok",
    "note": "KC 6 31.1 § The Chemical Composition of Plants, m66603 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "abc4f5054d0a00bd": {
+   "verdict": "ok",
+   "note": "KC 3 6.4 § Example: Quantum Numbers and Electron Configurations, m68734",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -95411,6 +95640,14 @@
   "bdefa3324ea11b4b": {
    "verdict": "ok",
    "note": "source exercise fs-idm157365408 part (d) (molecular); counted from the drawing, matches key",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "bdfa184bb3628370": {
+   "verdict": "ok",
+   "note": "KC 3 6.5 § Variation in Electron Affinities, m68735",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -106232,6 +106469,14 @@
     "result": "agrees"
    }
   },
+  "d41b544fb88dc8aa": {
+   "verdict": "ok",
+   "note": "KC 3 7.3 § glossary, m68739",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d423c655e985779d": {
    "verdict": "ok",
    "note": "glossary recall: polyp (fs-idm244410240) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -106757,6 +107002,14 @@
   "d50b98e83fcdd48f": {
    "verdict": "ok",
    "note": "x+4y-z=4, 2x+5y+8z=15, x+3y-3z=1. Checked keyed solution (1,1,1) by direct substitution into all three equations: 1+4-1=4, 2+5+8=15, 1+3-3=1. All hold. Matches CNXML lt_09_06_05. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "d510939f654f69cd": {
+   "verdict": "ok",
+   "note": "KC 3 7.4 § Example: Calculating Formal Charge from Lewis Structures, m68740",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "d51307d0d6ae649e": {
    "verdict": "ok",
@@ -112040,6 +112293,14 @@
     "result": "agrees"
    }
   },
+  "dff113c46fb71124": {
+   "verdict": "ok",
+   "note": "KC 3 8.2 § sp³d and sp³d² Hybridization, m68745",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "dff33968d79008c3": {
    "verdict": "ok",
    "note": "Review Question fs-idm220121616, solution B (Gram-negative bacteria). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -115738,6 +115999,14 @@
     "result": "agrees"
    }
   },
+  "e761c8d6ff71dfec": {
+   "verdict": "ok",
+   "note": "KC 3 6.1 § glossary, m68729",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e763cbcea3603170": {
    "verdict": "ok",
    "note": "Check Your Learning of example fs-idp411086368 part (d) (answer fs-idm16446416)",
@@ -116537,6 +116806,14 @@
   "e94ca0e44456d0b4": {
    "verdict": "ok",
    "note": "source exercise fs-idp107697296; model = source solution fs-idm61224992 verbatim"
+  },
+  "e951150708b6db7f": {
+   "verdict": "ok",
+   "note": "KC 3 6.1 § glossary, m68729",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "e954fd1972e0d6ac": {
    "verdict": "ok",
@@ -120837,6 +121114,14 @@
   "f216a4e66f0e129c": {
    "verdict": "ok",
    "note": "Check Your Learning of example fs-idm22950992 (m68704), second quantity: ×1e9 = 9600 ppb (two figures); source 9600 ppb",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "f218a38fa70e88b1": {
+   "verdict": "ok",
+   "note": "KC 3 7.5 § Example: Lattice Energy Comparisons, m68741",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"

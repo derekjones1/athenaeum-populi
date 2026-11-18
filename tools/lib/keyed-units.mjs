@@ -280,7 +280,10 @@ export function sequentialParts(whole, { answer = false } = {}) {
   // lost every part after the slip and looked half-keyed.
   const before = answer ? '(?:^|[\\s;,])' : '(?:^|\\s)';
   // …and the last label may close the text, its answer being only an image.
-  const after = answer ? '(?:[,:]?\\s+|$|(?=\\^\\{))' : '(?:\\s+|(?=\\^\\{))';
+  // A stray period after a label is read as a comma is: "… 3 d^{6} . (e).
+  // Sm: 1 s^{2} …" (6.4's ions, erratum 3120) left part (e) unanswered and
+  // its answer inside (d)'s.
+  const after = answer ? '(?:[,:.]?\\s+|$|(?=\\^\\{))' : '(?:\\s+|(?=\\^\\{))';
   for (let code = 97; code <= 122; code += 1) {
     const label = String.fromCharCode(code);
     const found = new RegExp(`${before}\\(${label}\\)${after}`).exec(stem.slice(from));
@@ -299,7 +302,24 @@ export function sequentialParts(whole, { answer = false } = {}) {
   // (Labels with nothing between them and no "and" or comma are parts whose
   // answers are images — "(a) (b) (c)" — and stay parts.)
   if (answer && /,|\band\b/.test(stem) && parts.every((part) => !part.media.length && !part.text.replace(/\band\b|[.,;]/g, '').trim())) return null;
-  return { lead: withoutMarks(stem.slice(0, marks[0].start)), parts, ...(closing ? { closing } : {}) };
+  const lead = withoutMarks(stem.slice(0, marks[0].start));
+  // A stem whose parts finish its lead-in's sentence as a list — "…a shell
+  // with (a) n = 2, (b) n = 5, and (c) n as a variable. Note you are only
+  // looking at the orbitals with the specified n value, not those at lower
+  // energies." (6.3) — ends that sentence in its last part; a sentence after
+  // it belongs to the whole question, and every part shares it (`shared`).
+  // Each part is the list item, without the comma and "and" that join it.
+  if (!answer && !closing && lead && !/[.?!:]$/.test(lead) && parts.slice(0, -1).every((part) => /,(?:\s+(?:and|or))?$/.test(part.text))) {
+    const last = parts.at(-1);
+    const end = /^(.*?[.?!])\s+(?=[A-Z])/.exec(last.text);
+    if (end) {
+      for (const part of parts.slice(0, -1)) part.text = part.text.replace(/,(?:\s+(?:and|or))?$/, '');
+      const shared = last.text.slice(end[0].length).trim();
+      last.text = end[1];
+      return { lead, parts, closing: shared, shared: true };
+    }
+  }
+  return { lead, parts, ...(closing ? { closing } : {}) };
 }
 
 /**
@@ -571,9 +591,14 @@ export function workedExamples(xml) {
       .map((link) => link.attributes['target-id']).find((target) => target !== example.attributes.id
         && descendants(document, (node) => localName(node) === 'example' && node.attributes.id === target).length);
     const marked = read({ marked: true });
+    // The question as `answerText` writes it: a subscript is ` _2 ` and an
+    // exponent `^{−9}`, so the numbers it GIVES can be told from the digits
+    // of a formula ("the bond order for O 2" gives no 2, 8.4) and a power of
+    // ten is one number, not a 10 and a −9 (6.1).
+    const stemPrint = normalizeWhitespace(asked.map((child) => answerText(child)).join(' '));
     found.push({
       ...(leans ? { leansOn: leans } : {}),
-      id: example.attributes.id || '', cls: 'worked-example', title, stem, marked,
+      id: example.attributes.id || '', cls: 'worked-example', title, stem, marked, stemPrint,
       keyed: true, answer: normalizeWhitespace(worked.map((child) => answerText(child)).join(' ')),
       answerMarked: normalizeWhitespace(worked.map((child) => markedStemText(child)).join(' ')),
       figures: marksIn(marked).length + asked.filter((child) => localName(child) === 'figure').length,
@@ -808,7 +833,8 @@ export function keyedUnits(xml) {
 }
 
 /** A lettered part's whole stem: the lead-in, the part, and — for the last part — the closing after it (`markedParagraphs`). */
-export const closingStem = (lettered, part) => [lettered.lead, part.text, part === lettered.parts.at(-1) ? lettered.closing : '']
+export const closingStem = (lettered, part) => [lettered.lead, lettered.shared && !/[.?!]$/.test(part.text) ? `${part.text}.` : part.text,
+  lettered.shared || part === lettered.parts.at(-1) ? lettered.closing : '']
   .filter(Boolean).join(' ').trim();
 
 /** Whole exercises as units: one each, or one per lettered part (`keyedUnits`). */
@@ -844,8 +870,11 @@ function splitUnits(whole) {
         lead: lettered.lead,
         partText: part.text,
         media: part.media,
-        // The closing stays in the last part's stem, as the source runs on.
+        // The closing stays in the last part's stem, as the source runs on —
+        // in every part's where it follows a list that ends the lead-in's
+        // sentence (`sequentialParts`, `shared`).
         stem: closingStem(lettered, part),
+        ...(lettered.shared ? { sharedClosing: lettered.closing } : {}),
         // A lettered stem whose solution is not lettered answers every part
         // with the whole solution.
         answer: answers ? (segment ? segment.text.replace(/[;,]\s*$/, '') : '') : unit.answer,

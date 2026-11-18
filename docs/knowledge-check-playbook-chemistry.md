@@ -177,7 +177,11 @@ an item. So:
   module names in one breath ("such as density and color") leave the key
   as the odd one out; and option names must not answer the stem by their
   own prefixes (protium, deuterium, tritium under "hydrogen-2" — asked as
-  a `textin` instead).
+  a `textin` instead). **An `accept` member may be a name another section
+  of the same block prints for the same thing** *(block 3)*: 8.1's `node`
+  takes "nodal plane", which Section 8.4 prints for that plane of a π
+  orbital and which the author, the checker, and the blind solver each
+  typed.
 - **A `selfcheck`** asks for an explanation the module gives. Its model
   answer is made of the module's own sentences and its `===CHECKS===`
   rubric lists two to six clauses of that answer (required on a check:

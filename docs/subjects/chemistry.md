@@ -2394,6 +2394,15 @@ to 9. Section 5.2 carries written items only: every worked example of it
 needs the specific heat of water, which no stem prints
 (`docs/history/chemistry.md`, "Knowledge Check 2").
 
+Block 3 landed November 17, 2026, after chapter 9 was already on the site:
+`knowledge-check-06-08.md`, 39 items over 15 sections (10 of them
+worked-example items), weight 11, chapter 9 moving to 12 and the appendices
+to 13. Seven sections carry written items only — 6.1, 6.2, 7.2, 7.3, 8.1,
+8.3, 8.4 — because their worked examples need a constant no stem prints
+(*h*, *c*, the Rydberg constant), answer with a drawing, or are asked again
+by a Practice item of the block (`docs/history/chemistry.md`, "Knowledge
+Check 3").
+
 ## What is still open
 
 What chapter 1 settled, and what the scan of the book counted, are in

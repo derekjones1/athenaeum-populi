@@ -1856,3 +1856,17 @@ test('9.6: a "Check your Learning" in lower case is a lettered unit, two fill-in
   assert.deepEqual([b.exercise.id, b.status], ['x9#check(b)', 'key-differs'], '…and the one of (b)');
   assert.equal(judgeB({ type: 'fillin', question: `${lead} from the van der Waals equation. Enter the pressure in atmospheres.`, answer: '46.594', form: 'sig-figs:5 last-digit:1' }).status, 'confirmed');
 });
+
+test('a stray period after an answer label, and a closing shared by a list that ends the lead-in\'s sentence (Chemistry 6.4, 6.3)', () => {
+  // 6.4's ions: "(e). Sm:" (erratum 3120) is part (e), not part of (d)'s answer.
+  const ions = sequentialParts('(a) Fe: 1 s^{2} 3 d^{6} . (b). Sm: 1 s^{2} 4 f^{6} .', { answer: true });
+  assert.deepEqual(ions.parts.map((part) => [part.label, part.text]), [['a', 'Fe: 1 s^{2} 3 d^{6} .'], ['b', 'Sm: 1 s^{2} 4 f^{6} .']]);
+  // 6.3: the parts finish "…a shell with" as a list; the sentence after the last is every part's.
+  const shells = sequentialParts('Calculate the maximum number of electrons that can occupy a shell with (a) n = 2, (b) n = 5, and (c) n as a variable. Note you are only looking at the orbitals with the specified n value, not those at lower energies.');
+  assert.deepEqual(shells.parts.map((part) => part.text), ['n = 2', 'n = 5', 'n as a variable.']);
+  assert.equal(shells.closing, 'Note you are only looking at the orbitals with the specified n value, not those at lower energies.');
+  assert.equal(shells.shared, true);
+  // A lead-in that is a whole sentence, or parts that are not one list, keep the old reading.
+  assert.equal(sequentialParts('What is the configuration of: (a) Na + (b) Al 2+. Explain.').shared, undefined);
+  assert.equal(sequentialParts('Find the value for (a) n = 2 (b) n = 5. Explain.').shared, undefined);
+});

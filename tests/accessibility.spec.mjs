@@ -82,6 +82,12 @@ const REPRESENTATIVE_PAGES = [
     path: '/physical-sciences/chemistry/knowledge-check-04-05/',
   },
   {
+    // The first check with typed electron configurations, an ordering, and
+    // a set of quantum numbers.
+    name: 'chemistry block 3 knowledge check (chapters 06–08)',
+    path: '/physical-sciences/chemistry/knowledge-check-06-08/',
+  },
+  {
     name: 'biology unit 1 knowledge check (chapters 01–03)',
     path: '/life-health-sciences/biology/knowledge-check-01-03/',
   },

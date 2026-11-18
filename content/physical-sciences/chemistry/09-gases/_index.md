@@ -2,7 +2,7 @@
 title: Gases
 description: Gases — gas pressure; the ideal gas law; stoichiometry of gaseous substances, mixtures, and reactions; effusion and diffusion; the kinetic-molecular theory; and non-ideal gas behavior.
 source_chapter: "9"
-weight: 11
+weight: 12
 ---
 
 {{< mediafigure src="chemistry/CNX_Chem_09_00_HotAirBall" kind="photo" alt="A photograph of a grassy field of hot air balloons under a clear blue sky. At the right edge, part of one large inflated balloon fills the frame, its panels yellow, green, blue, purple, and orange. Across the field, more than a dozen balloons in bright stripes and patterns are at different stages of inflation: some lie flat or half-filled on the grass, and others stand upright. Three balloons are in the air, two not far above the field and one small and high in the distance." eager="true" >}}

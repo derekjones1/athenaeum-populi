@@ -209,6 +209,47 @@ the six accepted; the second checker failed 5 of 14 replacements.
   rounds of fixes, three checkers 140–170, the sweep 195 (22 minutes — the
   slowest single agent), the second checker 150.
 
+**Block 3, chapters 6–8 (November 17, 2026;
+`docs/history/chemistry.md`, "Knowledge Check 3").** Three authors wrote 42
+items and 39 landed (2 fill-ins, 2 configurations, 1 ordering, 1 set of
+quantum numbers, 16 plain text-ins, 9 multiple choices, 8 selfchecks; 10 of
+them worked-example items); six sections stand at two. The checkers
+disagreed with no key and found 6 hard; the sweep 0 hard; the second
+checker failed 1 of 8; the solver agreed on 26 and flagged 5 forms.
+
+- **The gate probe (§1 step 7) is not optional on a block of new shapes.**
+  On hand-built items `kc sources` CONFIRMED wrong keys for three of the
+  block's shapes and refused a right one. Probe a wrong key for every
+  shape, not only the right one — and probe one LETTERED example, whose
+  parts have no lead-in of their own: both parser limits of this run were
+  there, and the probe's unlettered items could not show them.
+- **A chapter of drawings is a chapter of written items.** 13 of 38
+  examples were usable; seven sections of fifteen carry none. The run
+  facts' proposed rulings, with each echo's file and line, are Author-kind
+  work the parent rules on in one pass (one agent, about nine minutes).
+- **An echo is usually on another section's page**, as block 2 found: five
+  of this block's seven echo rulings were.
+- **An author bends a stem to pass a gate.** The 6.3 author joined the
+  question's closing sentence with ", and note" because the parser read
+  the source's full stop as the start of part (c). A stem changed to
+  satisfy a tool is a tool defect: the brief's "report it" covers it, and
+  the parent asks for the source's punctuation back.
+- **A term three readers type is a term a learner types.** "Nodal plane"
+  was raised by the author, the checker, and the solver before it was
+  accepted; it is printed by another section of the block. An accept
+  member a sibling section of the same block prints for the same thing is
+  allowed on a check.
+- **Every agent command runs under a wall-clock limit.** A test run with a
+  synchronous endless loop held the parent for three hours.
+  `--test-timeout` does not stop it; `perl -e 'alarm 120; exec @ARGV' …`
+  does. Say so in every launch note, and when an agent "waits on its own
+  background work" for more than ten minutes, look at `ps`.
+- **Costs**: run-facts drafter 274 thousand tokens, probe and gate fixes
+  about 310, three authors 275–335 each over two or three rounds, three
+  checkers 180–200, the sweep 213, the second checker 156, the solver 92;
+  about 25 minutes of agent wall time to the solve once the gates read the
+  block's shapes.
+
 **Block 2, chapters 4–5 (November 15, 2026;
 `docs/history/chemistry.md`, "Knowledge Check 2").** Two authors wrote 22
 items and 22 landed (9 fill-ins, 5 equation text-ins, 1 formula text-in, 3

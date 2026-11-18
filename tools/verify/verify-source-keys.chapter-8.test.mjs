@@ -165,3 +165,8 @@ test('a charge item closing number first is held to the charge the source prints
   assert.equal(status(4, fillin(ask, '-2', 'whole-number charge')), 'key-differs');
   assert.equal(status(4, fillin(ask, '1', 'whole-number charge')), 'key-differs');
 });
+
+
+test('a bond order a worked Solution sets out as a calculation is the number after the last equals sign (8.4\'s O₂ example)', () => {
+  assert.deepEqual(bondOrders('We calculate the bond order as O 2 = ( ( 8 − 4 ) )/( 2 ) = 2 Oxygen\'s paramagnetism is explained by …').map((entry) => [entry.canon, entry.numeral.printed]), [['O2', '2']]);
+});

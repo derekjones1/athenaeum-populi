@@ -2495,7 +2495,7 @@ export function labelledConfigurations(answer) {
  * stem's order (7.1's bromine and arsenic). Returns the entries it could
  * be — one when the closing says which.
  */
-function askedConfigurations(entries, question, stem) {
+export function askedConfigurations(entries, question, stem) {
   const closing = ` ${foldedPlain(askedClosing(question))} `;
   const named = [...ELEMENT_BY_NAME].filter(([name]) => closing.includes(` ${name} `)).map(([, symbol]) => symbol);
   let candidates = named.length === 1 && entries.some((entry) => entry.symbol === named[0])
@@ -2765,6 +2765,20 @@ function heldNumber(answer, question, key) {
       const held = list.filter((entry) => entry.symbol === symbol[0]);
       return held.some((entry) => sameNumeral(entry.numeral, key)) ? null
         : { what: `the ${askedHead[0].what} of ${symbol[0]}`, numerals: held.map((entry) => entry.numeral) };
+    }
+  }
+  // …or a worked Solution that sets each atom's value out as its own
+  // calculation, the number after the equals sign the atom's — "I: 7 – 8 =
+  // –1 Cl: 7 – 7 = 0" (7.4's ICl₄⁻ example, re-asked on a Knowledge Check):
+  // "Enter the formal charge of I …" keyed with Cl's 0 is refused.
+  const workedPairs = [...String(answer).matchAll(/(?<![\w])([A-Z][a-z]?)\s*:\s*\d+(?:\s*[+−–-]\s*\d+)+\s*=\s*([+−–-]?\s?\d+)(?![\d.])/g)]
+    .map((match) => ({ symbol: match[1], numeral: printedNumerals(match[2].replace(/\s/g, ''))[0] })).filter((entry) => entry.numeral);
+  if (new Set(workedPairs.map((entry) => entry.symbol)).size >= 2) {
+    const asked = [...new Set(workedPairs.map((entry) => entry.symbol))]
+      .filter((symbol) => new RegExp(`(?<![A-Za-z])${symbol}(?![A-Za-z])`).test(closing));
+    if (asked.length === 1) {
+      const held = workedPairs.filter((entry) => entry.symbol === asked[0]);
+      return held.some((entry) => sameNumeral(entry.numeral, key)) ? null : { what: `the number for ${asked[0]}`, numerals: held.map((entry) => entry.numeral) };
     }
   }
   // …or an answer that is nothing but such pairs, a zero unsigned and a
@@ -3132,9 +3146,16 @@ export function atomSegments(answer) {
  */
 export function bondOrders(answer) {
   const SPECIES = '([A-Z][a-z]?(?:\\s*_?\\s*\\d+)?(?:\\s*\\^\\s*\\{[^}]*\\})?)';
-  return [...String(answer ?? '').matchAll(new RegExp(`${SPECIES}\\s+(?:bond order\\s*=|has a bond order of)\\s*(\\d+(?:\\.\\d+)?)`, 'g'))]
-    .map((match) => ({ printed: match[1].trim(), canon: chemCanon(match[1], 'formula'), numeral: printedNumerals(match[2])[0] }))
-    .filter((entry) => entry.canon && entry.numeral);
+  const text = String(answer ?? '');
+  const read = (match) => ({ printed: match[1].trim(), canon: chemCanon(match[1], 'formula'), numeral: printedNumerals(match[2])[0] });
+  return [
+    ...[...text.matchAll(new RegExp(`${SPECIES}\\s+(?:bond order\\s*=|has a bond order of)\\s*(\\d+(?:\\.\\d+)?)`, 'g'))].map(read),
+    // A worked Solution sets the order out as a calculation — "We calculate
+    // the bond order as O 2 = ( ( 8 − 4 ) )/( 2 ) = 2" (8.4's O₂ example):
+    // the order is the number after the LAST equals sign, never a count of
+    // electrons inside the fraction.
+    ...[...text.matchAll(new RegExp(`\\bbond order (?:as|for|of)\\s+${SPECIES}\\s*=\\s*(?:[^=.]*?=\\s*)?(\\d+(?:\\.\\d+)?)(?![\\d.]*\\s*[)/])`, 'g'))].map(read),
+  ].filter((entry) => entry.canon && entry.numeral);
 }
 
 const GREEK = Object.freeze({ alpha: 'α', beta: 'β', gamma: 'γ', delta: 'δ', epsilon: 'ε', lambda: 'λ', mu: 'μ', nu: 'ν', pi: 'π', sigma: 'σ', psi: 'ψ', phi: 'φ', omega: 'ω', chi: 'χ' });
@@ -3651,10 +3672,16 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
     // …and ONE named count beside another quantity — "3.34 tanks (2.34 × 10⁴
     // L)" (9.3) — under a closing that asks for "the number of" it: the
     // item is held to the count, and the volume beside it is no key.
+    // The sentence that asks: the question's last, unless that is a closing
+    // the source shares among all its parts ("Note you are only looking at
+    // the orbitals …", 6.3), which names no count of its own.
+    const sentences = item.question.split(/(?<=[.?!:])\s+/);
+    const sharedLast = unit.sharedClosing && sentences.length >= 2 && tightMember(sentences.at(-1)) === tightMember(unit.sharedClosing);
+    const askSentence = (sharedLast ? sentences.at(-2) : sentences.at(-1)).toLowerCase();
     const countAsked = names.length === 1 && printed.length >= 2
-      && new RegExp(`\\bnumber of ${names[0]}s?\\b`).test(item.question.split(/(?<=[.?!:])\s+/).pop().toLowerCase());
+      && new RegExp(`\\bnumber of ${names[0]}s?\\b`).test(askSentence);
     if (names.length >= 2 || countAsked) {
-      const ask = item.question.split(/(?<=[.?!:])\s+/).pop().toLowerCase();
+      const ask = askSentence;
       const asked = names.filter((name) => new RegExp(`\\b${name}s?\\b`).test(ask));
       if (asked.length === 1 && !named.some((entry) => entry.name === asked[0] && sameNumeral(entry.numeral, key))) {
         const given = named.filter((entry) => entry.name === asked[0]).map((entry) => entry.numeral.printed).join(' or ');

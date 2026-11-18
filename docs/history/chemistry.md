@@ -5050,6 +5050,99 @@ progress".
 Knowledge Check block 3 (chapters 6–8), then chapter 10 (probe its shapes
 first), with block 4 (chapters 9–11) after chapter 11.
 
+## Knowledge Check 3: chapters 6–8 (November 17, 2026)
+
+Run from `docs/briefs/chemistry/kc-run.md` in the session that first closed
+chapter 9's open items. `knowledge-check-06-08.md`: 39 items over 15
+sections — 2 fill-ins, 20 text-ins (two electron configurations, one
+ordering, one set of quantum numbers, sixteen plain), 9 multiple choices, 8
+self-checks; 10 are worked-example items. Six sections stand at two items
+(6.1, 6.2, 7.2, 7.5, 8.1, 8.3). Weight 11; chapter 9 moved to 12 and the
+appendices to 13.
+
+### Before the wave
+
+- **Run facts by an Author-kind drafter, ruled by the parent.** Of the
+  block's 38 worked examples 13 were ruled usable. The rest need a constant
+  the stem does not print (both of 6.1's calculations, both of 6.2's, 6.3's
+  de Broglie example: *h*, *c*, *k*), answer with a drawing (7.3, 8.1, 8.4),
+  need a table (7.2, 7.5's methanol), or are asked again on a section page —
+  most often on ANOTHER section's page (6.4's P³⁻ and Fe²⁺ in 7.1 Practice;
+  7.1's Se²⁻ in reverse in 6.4; 8.3's SO₂ in 8.2; 8.4's O₂ bond order in its
+  own Practice). 6.5's ionization-energy ranking has no gradable form: the
+  ordering grader reads formulas, not "IE₁(In)".
+- **The gate probe paid for itself.** One hand-built item per new shape
+  showed `kc sources` confirming WRONG keys for a configuration (another
+  ion's, under "…of the chromium ion"), an ordering (a step of the ranking),
+  and a formal charge (the other atom's), and refusing the quantum-number
+  set the Solution gives one label at a time. The gate now holds a
+  configuration to the species its closing sentence names, an ordering to
+  the Solution's whole ranking, a formal charge to the atom named, reads a
+  set given label by label, and does not take a formula's subscript for a
+  datum of the question (`tools/source/knowledge-check.mjs`,
+  `tools/verify/verify-source-keys.mjs`, `tools/lib/keyed-units.mjs`, with
+  tests on the pinned modules). The full source-keys gate was byte-identical
+  before and after (7,982 confirmed).
+- **Two parser limits found by the chapter 6 author**, fixed the same way:
+  a stray period after an answer label ("(e). Sm:", erratum 3120) left part
+  (e) with no Solution; and a sentence that follows the last lettered part
+  of a question and belongs to all of them ("Note you are only looking at
+  the orbitals with the specified n value…", 6.3) was read as part (c)'s.
+  The author had changed the source's punctuation to pass the gate; the
+  parent had the gate fixed and the punctuation restored.
+
+### The readings
+
+Three authors wrote 42 items. The three checkers answered every item
+key-covered with no disagreement and found 6 hard (one of them the twin
+below, found three times) and 13 soft. Every hard finding was a section
+page already printing a written item's fact — four 6.1 hints (photon), a
+6.4 hint (main group elements), 7.5's objective heading — or a stem
+printing a word of its key (ground state). `node` was keyed in both 6.1
+and 8.1; 6.1's went. The sweep found 0 hard and 20 soft; one soft became a
+rewrite (6.3's Max Born multiple choice, two of whose options the page
+rules out, is a name text-in). The second checker read 8 replacements and
+rewrites and failed one, below. The blind solver agreed on 26 of 31 and
+flagged 5, every one a second form of the same answer; "nodal plane", which
+the author, the checker, and the solver each raised and Section 8.4 prints
+for the same plane, became an accept member of 8.1's `node`.
+
+### Rulings
+
+- **6.4, Sm³⁺.** Keyed with the full configuration its Solution prints. The
+  Solution also says a core-abbreviated configuration is acceptable; the
+  lint allows no core accept beside a full key, and `kc sources` refuses a
+  core key and a stem with a notation sentence added (the lead-in match
+  falls under its floor). A core answer grades `form` — "That is the right
+  configuration — now write out every subshell, without the noble-gas
+  core." — so the learner is told, not marked wrong. The second checker's
+  FAIL stands as a judgment call, put to Derek.
+- **7.6 accepts.** The check follows the playbook: NH₄⁺'s `tetrahedral`
+  takes no `tetrahedron`, SF₄'s `seesaw` takes `sawhorse` only. The 7.6
+  page accepts `tetrahedron` on 11 items and `see saw|saw horse` on 2,
+  against "A geometry name's `accept` members are the forms the module
+  prints". Put to Derek: sweep the page to the rule, or change the rule.
+- **Objectives without an item**, recorded: 7.3's Lewis symbols (thirteen
+  page self-checks spend it), 8.3's resonance (its example echoes 8.2), 8.4's
+  bond order (its example echoes its own Practice).
+
+### What the process got wrong
+
+- **An agent's test run spun for three hours.** The gate-fix agent's loop
+  over a configuration rewritten after "=" never advanced its index, and
+  its `node --test` ran at full CPU in the background while the parent
+  waited on it. Derek asked what was taking so long. A `--test-timeout`
+  does not stop a synchronous loop; a wall-clock alarm does
+  (`perl -e 'alarm 120; exec @ARGV' node --test …`).
+- The parent ruled Sm³⁺ usable without running the gate on a lettered
+  example whose parts have no lead-in of their own; the probe had tried
+  only unlettered examples.
+
+### Next
+
+Chapter 10 (probe its shapes first); block 4 (chapters 9–11) after
+chapter 11.
+
 ## The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under

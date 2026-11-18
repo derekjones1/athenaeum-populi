@@ -3509,3 +3509,69 @@ test('the Chemistry Knowledge Check for chapters 4–5 follows chapter 5, has no
   await check('-399.5');
   await expect.poll(status).toBe('correct');
 });
+
+// The third Chemistry Knowledge Check (November 17, 2026): the first with a
+// typed electron configuration, an ordering, a set of quantum numbers the
+// field takes in any allowed form, and a signed whole number.
+test('the Chemistry Knowledge Check for chapters 6–8 follows chapter 8, has no hints, and grades a configuration, an ordering, quantum numbers, and a formal charge', async ({ page }) => {
+  await gotoBuiltPage(page, '/physical-sciences/chemistry/knowledge-check-06-08/');
+
+  const book = await page.locator('aside a[href^="/physical-sciences/chemistry/"]').evaluateAll(
+    (links) => [...new Set(links.map((a) => a.getAttribute('href')))],
+  );
+  const at = book.findIndex((href) => href.endsWith('/chemistry/knowledge-check-06-08/'));
+  expect(at, 'the check is in the sidebar').toBeGreaterThan(0);
+  expect(book[at - 1]).toMatch(/^\/physical-sciences\/chemistry\/08-[^/]+\/\d\d-[^/]+\/$/);
+  expect(book[at + 1]).toBe('/physical-sciences/chemistry/09-gases/');
+
+  await expect(page.locator('[class*="hint"]')).toHaveCount(0);
+  await expect(page.locator('nav#ap-toc a.ap-reference-figure')).toHaveText('Periodic table');
+
+  const upgraded = (el) => Boolean(customElements.get('text-in')) && Boolean(el.querySelector('.ap-textin-check'));
+  const typeInto = async (item, typed, wanted) => {
+    const field = item.locator('.ap-textin-field');
+    await field.fill(typed);
+    await field.press('Enter');
+    await expect.poll(() => item.evaluate((el) => el.status)).toBe(wanted);
+  };
+
+  // A configuration of an ion: the neutral atom's is not it; the subshells in another order are.
+  const chromium = page.locator('text-in[data-answer="[Ar]3d³"]');
+  await expect(chromium).toHaveCount(1);
+  await waitForUpgrade(chromium, upgraded);
+  await chromium.scrollIntoViewIfNeeded();
+  await typeInto(chromium, '[Ar]3d5 4s1', 'incorrect');
+  // (A field locks once it is right, so each takes one right answer: here
+  // the configuration written out in full beside a core-notation key.)
+  await typeInto(chromium, '1s2 2s2 2p6 3s2 3p6 3d3', 'correct');
+
+  // An ordering: the stem's own order is not the answer.
+  const radii = page.locator('text-in[data-answer="Kr < Br < Ge < Fl"]');
+  await expect(radii).toHaveCount(1);
+  await waitForUpgrade(radii, upgraded);
+  await typeInto(radii, 'Ge < Fl < Br < Kr', 'incorrect');
+  await typeInto(radii, 'Kr < Br < Ge < Fl', 'correct');
+
+  // Quantum numbers of a 3p electron: any allowed m_l and either spin, never an l of 2.
+  const phosphorus = page.locator('text-in[data-answer="3 1 0 +1/2"]');
+  await expect(phosphorus).toHaveCount(1);
+  await waitForUpgrade(phosphorus, upgraded);
+  await typeInto(phosphorus, '3 2 0 +1/2', 'incorrect');
+  await typeInto(phosphorus, '3 1 -1 -1/2', 'correct');
+
+  // A signed whole number: the magnitude without its sign is not the answer.
+  const iodine = page.locator('fill-in[data-question^="Assign formal charges to each atom in the interhalogen ion"]');
+  await expect(iodine).toHaveCount(1);
+  const field = iodine.locator('math-field');
+  const status = () => iodine.evaluate((el) => el.status);
+  const check = async (keys) => {
+    await clearMathField(field);
+    await focusMathField(page, field);
+    await page.keyboard.type(keys, { delay: 15 });
+    await iodine.getByRole('button', { name: /check/i }).click();
+  };
+  await check('1');
+  await expect.poll(status).not.toBe('correct');
+  await check('-1');
+  await expect.poll(status).toBe('correct');
+});

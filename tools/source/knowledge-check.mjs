@@ -66,7 +66,7 @@ import { parseCliArgs } from '../lib/cli.mjs';
 import { bookKeyOf, parseFrontmatter, shortcodes } from '../lib/content.mjs';
 import { KEYED_ONLY_BOOKS, moduleAliases, printedNumerals, unitFor, unlinked, workedExampleUnits, workedExamples } from '../lib/keyed-units.mjs';
 import { bundleSourceDirectory, loadSourceLock } from '../lib/openstax-source.mjs';
-import { ELEMENT_DATA_BOOKS, judgeKeyedUnit, keyNumeral, pageItems, sameNumeral } from '../verify/verify-source-keys.mjs';
+import { ELEMENT_DATA_BOOKS, askedConfigurations, judgeKeyedUnit, keyNumeral, pageItems, sameNumeral } from '../verify/verify-source-keys.mjs';
 import { loadElements } from '../lib/elements.mjs';
 import { normalizeStem } from '../lib/practice-index.mjs';
 import { extractExercises, readLedger } from '../verify/answer-ledger.mjs';
@@ -343,6 +343,89 @@ export function solutionPrints(solution, key, form) {
   return false;
 }
 
+/**
+ * Every ranking a worked Solution prints, as the grader's canonical
+ * orderings. A Solution reasons in steps and prints the pieces before the
+ * whole — "so Ge < Fl … so Kr < Br < Ge. Putting the trends together, we
+ * obtain Kr < Br < Ge < Fl." (6.5) — so a key is held to the LONGEST: a
+ * step is no answer to the question.
+ */
+export function printedOrderings(solution) {
+  const words = String(solution).split(/\s+/).filter(Boolean);
+  const found = new Set();
+  for (let from = 0; from < words.length; from += 1) {
+    for (let to = from + 3; to <= Math.min(words.length, from + WINDOW.ordering); to += 1) {
+      const canon = chemCanon(words.slice(from, to).join(' ').replace(/[.,;:]+$/, ''), 'ordering');
+      if (canon) found.add(canon);
+    }
+  }
+  return [...found];
+}
+
+/** A species label as its characters: the source's "Sm 3+" part and its Solution's "Sm^{3+}" label are one. */
+const tightLabel = (value) => String(value ?? '').normalize('NFKC').replace(/[\s{}^_]/g, '').replace(/[−–]/g, '-');
+
+/**
+ * The configurations a worked Solution prints each after its label, with
+ * nothing between them but the next label — "Zn: [Ar]3 d^{10} 4 s^{2} Cr:
+ * [Ar]3 d^{5} 4 s^{1} … Zn^{2+} : [Ar]3 d^{10} Cr^{3+} : [Ar]3 d^{3}" (7.1's
+ * cations), "Se^{2–} : [Ar]3 d^{10} 4 s^{2} 4 p^{6} I^{–} : [Kr]4 d^{10} …"
+ * (7.1's anions) — as verify-source-keys' `labelledConfigurations` entries
+ * (`{ symbol, charged, canon, printed }`), each the longest run of words
+ * after its label that reads as one configuration. [] unless two or more.
+ */
+export function proseConfigurations(solution) {
+  const text = String(solution);
+  const labels = [...text.matchAll(/(?<![\w^{}\]])([A-Z][a-z]?)\s*(?:\^\s*\{\s*(\d*\s*[+−–-])\s*\})?\s*:\s*/g)];
+  const entries = [];
+  labels.forEach((label, index) => {
+    const end = index + 1 < labels.length ? labels[index + 1].index : text.length;
+    const words = text.slice(label.index + label[0].length, end).split(/\s+/).filter(Boolean);
+    const longest = (from) => {
+      for (let count = Math.min(words.length - from, WINDOW.configuration); count >= 1; count -= 1) {
+        const printed = words.slice(from, from + count).join(' ').replace(/[.,;:]+$/, '');
+        const canon = chemCanon(printed, 'configuration');
+        if (canon) return { canon, printed, end: from + count };
+      }
+      return null;
+    };
+    let read = longest(0);
+    // A configuration rewritten after "=" — "Fe^{2+} : …4 s^{2} 3 d^{6} =
+    // …3 d^{6}", "Sm^{3+} : …6 s^{2} 4 f^{6} = …4 f^{5}" (6.4's ions) — is
+    // the label's answer as the last form it is given in.
+    // `end` is the word after the form, counted from the label: each pass
+    // moves past one "=", and a "=" no configuration follows ends the walk.
+    while (read && words[read.end] === '=') {
+      const next = longest(read.end + 1);
+      if (!next) break;
+      read = next;
+    }
+    if (read) entries.push({ symbol: label[1], charged: Boolean(label[2]), label: label[0].replace(/\s*:\s*$/, ''), canon: read.canon, printed: read.printed });
+  });
+  return entries.length >= 2 ? entries : [];
+}
+
+/**
+ * The sets of quantum numbers a worked Solution gives one label at a time,
+ * in prose — "Therefore, n = 3 and, for a p-type orbital, l = 1. The m _l
+ * value could be –1, 0, or +1. … thus, m s = + ( 1 )/( 2 ) ." (6.4's
+ * phosphorus) — one canonical set per m_l value it allows; [] unless all
+ * four labels are read.
+ */
+export function proseQuantumSets(solution) {
+  const text = String(solution).replace(/[−–]/g, '-');
+  const last = (pattern) => [...text.matchAll(pattern)].pop()?.[1];
+  const n = last(/(?<![\w])n\s*=\s*(\d+)/g);
+  const l = last(/(?<![\w])l\s*=\s*(\d+)/g);
+  const mlAt = text.search(/(?<![\w])m\s*_?\s*l\b/);
+  const mlSentence = mlAt === -1 ? '' : text.slice(mlAt).split(/\.\s/)[0];
+  const ml = [...mlSentence.replace(/^m\s*_?\s*l/, '').matchAll(/(?<![\w.])([+-]?\d+)(?![\w.])/g)].map((match) => Number(match[1]));
+  const spin = /(?<![\w])m\s*_?\s*s\s*=\s*([+-])?\s*(?:\(\s*1\s*\)\s*\/\s*\(\s*2\s*\)|1\s*\/\s*2|½)/.exec(text);
+  if (n == null || l == null || !ml.length || !spin) return [];
+  const ms = spin[1] === '-' ? '-1/2' : '+1/2';
+  return [...new Set(ml)].map((value) => chemCanon(`${n} ${l} ${value} ${ms}`, 'quantum-numbers')).filter(Boolean);
+}
+
 /** A page's prose with every shortcode tag taken out: what its body prints, without its items' parameters. */
 const bodyOf = (markdown) => String(markdown).replace(/\{\{<[\s\S]*?>\}\}/g, ' ');
 
@@ -383,10 +466,41 @@ export function checkSources(markdown, moduleOf, { elements = null, pageOf = () 
     const notAnExample = `${what} is not the question of a worked example of Section ${section} — on this book's checks a fill-in, a formula, or an equation re-asks a worked example and keys what its Solution prints`;
     if (item.type === 'textin') {
       const unit = unitFor(unlinked(item.question), source.units, item);
-      if (!unit) failures.push({ line: item.line, detail: notAnExample });
-      else if (!solutionPrints(unit.answer, item.answer, item.form)) {
+      if (!unit) { failures.push({ line: item.line, detail: notAnExample }); continue; }
+      const key = chemCanon(item.answer, item.form);
+      // A set given one label at a time in prose (6.4) is a set the Solution prints.
+      const printed = solutionPrints(unit.answer, item.answer, item.form)
+        || (item.form === 'quantum-numbers' && Boolean(key) && proseQuantumSets(unit.answer).includes(key));
+      if (!printed) {
         failures.push({ line: item.line, detail: `${what} keys ${JSON.stringify(item.answer)}, which the Solution of worked example ${unit.id} does not print as one ${item.form}` });
-      } else confirmed += 1;
+        continue;
+      }
+      // A configuration is held to the one its closing sentence names, where
+      // the Solution prints several after labels (7.1: the neutral atoms
+      // first, then each ion) — the gate the section pages already apply.
+      if (item.form === 'configuration') {
+        const entries = proseConfigurations(unit.answer);
+        // A lettered part names its species itself ("(e) Sm³⁺", 6.4): the
+        // item is held to the last configuration the part's answer gives
+        // under that label, the atom's before it and a first form set aside.
+        const own = unit.partText ? entries.filter((entry) => tightLabel(entry.label) === tightLabel(unit.partText)).slice(-1) : [];
+        const asked = own.length ? own : entries.length ? askedConfigurations(entries, item.question, unit.stem) : null;
+        if (asked && (asked.length !== 1 || asked[0].canon !== key)) {
+          failures.push({ line: item.line, detail: asked.length === 1
+            ? `${what} keys ${JSON.stringify(item.answer)} for the configuration its closing sentence names, which the Solution of worked example ${unit.id} prints as ${JSON.stringify(asked[0].printed)}`
+            : `${what}: the Solution of worked example ${unit.id} prints ${entries.length} configurations; the closing sentence must name the one it keys ("Enter the electron configuration of the chromium ion.")` });
+          continue;
+        }
+      }
+      // An ordering is the Solution's whole ranking, not a step toward it (6.5).
+      if (item.form === 'ordering') {
+        const longest = Math.max(0, ...printedOrderings(unit.answer).map((canon) => canon.split(' < ').length));
+        if (key && key.split(' < ').length < longest) {
+          failures.push({ line: item.line, detail: `${what} keys ${JSON.stringify(item.answer)}, a step of the Solution of worked example ${unit.id}, which ranks ${longest} members — key its whole ranking` });
+          continue;
+        }
+      }
+      confirmed += 1;
       continue;
     }
     const verdict = judgeKeyedUnit(item, source.units, { aliases: source.aliases, elements });
@@ -410,7 +524,11 @@ export function checkSources(markdown, moduleOf, { elements = null, pageOf = () 
     }
     const unit = source.units.find((candidate) => candidate.id === verdict.exercise.id);
     const key = item.type === 'fillin' ? keyNumeral(item.answer) : null;
-    if (key && unit && printedNumerals(unit.stem).some((numeral) => sameNumeral(numeral, key))) {
+    // An unlettered example's question is read as printed, its subscripts
+    // marked (`stemPrint`): O₂'s 2 is no datum. A lettered part's own stem
+    // has no such reading and is read as before.
+    const given = unit ? printedNumerals(unit.label == null && unit.stemPrint ? unit.stemPrint : unit.stem) : [];
+    if (key && given.some((numeral) => sameNumeral(numeral, key))) {
       failures.push({ line: item.line, detail: `${what} keys ${JSON.stringify(item.answer)}, a number worked example ${unit.id}'s own question prints — choose an example whose answer its question does not give` });
       continue;
     }
