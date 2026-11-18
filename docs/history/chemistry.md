@@ -4761,6 +4761,17 @@ records for the 1783 balloon flights, which did not identify the print.
 6. An opening parenthesis typed straight before inline math can end a line
    alone (9.2, "the volume ($V$)"); the glue partial would have to learn it.
 
+### After the run (November 17, 2026)
+
+Derek asked whether item 2's form is right. It is: one slash, a
+parenthesized denominator, spaces for products. The form stays. Reading the
+page for it found the second value written two ways — kPa L in the body, L kPa
+in Key terms — and the raw CNXML has the same split (body paragraph against
+the glossary meaning `fs-idp47757200`). Derek: be consistent. The Key terms
+bullet now reads 8.314 kPa L/(mol K), with a footer clause and erratum 3232
+(the chapter's errata are 3205–3232, 28). "mol K" is also Chapter 3's "moles
+of potassium"; inside `/(mol K)` it was left as is.
+
 ### Next
 
 Sections 9.3–9.6 in one run (`run.md`; prep is done — re-check the PDF ranges
