@@ -909,15 +909,21 @@ function previewOrdering(input) {
 /** Why an ordering KEY cannot be graded, or null (the lint). */
 /**
  * Why `member` cannot be an `accept` member of a configuration key, or
- * null: only the noble-gas core, alone and in brackets, whose electrons ARE
- * the key's — `[He]` beside `1s²` (7.1: an ion with no valence shell left,
- * printed in full where its siblings print a core). Anything else a
- * configuration field already folds, or is another answer.
+ * null: only the key's own configuration written with a noble-gas core, in
+ * print — the core alone where its electrons ARE the key's, `[He]` beside
+ * `1s²` (7.1: an ion with no valence shell left, printed in full where its
+ * siblings print a core), or the core and the rest, `[Xe]4f⁵` beside Sm³⁺'s
+ * full configuration (the check for chapters 6–8: the Solution prints every
+ * subshell and says the core form is acceptable). With the member a core
+ * answer is right and not told to write out every subshell. Anything else
+ * a configuration field already folds, or is another answer.
  */
 function configurationAcceptProblem(member, answer) {
-  const core = /^\[(He|Ne|Ar|Kr|Xe|Rn)\]$/.exec(member);
-  if (!core) return `a configuration's accept member is only the noble-gas core that is the whole key, in brackets ([He] beside 1s²); ${JSON.stringify(member)} is not one — the order of the subshells is already free`;
+  const core = /^\[(He|Ne|Ar|Kr|Xe|Rn)\]/.exec(member);
+  if (!core) return `a configuration's accept member is only the key's configuration written with a noble-gas core, in brackets ([He] beside 1s², [Xe]4f⁵ beside the full configuration); ${JSON.stringify(member)} is not one — the order of the subshells is already free`;
   if (/^\[/.test(String(answer).trim())) return `the key ${JSON.stringify(answer)} already prints a core, which the field takes with its expansion`;
+  const print = configurationKeyProblem(member);
+  if (print) return `accept member: ${print}`;
   if (checkConfiguration(member, answer).status !== 'form') return `${JSON.stringify(member)} is not the key's configuration: its electrons are not ${JSON.stringify(answer)}'s`;
   return null;
 }
@@ -971,7 +977,7 @@ const withoutClosingPunctuation = (input) => String(input ?? '').replace(/[\s.,;
 export function checkChem(input, answer, { accept = '', form } = {}) {
   const typed = withoutClosingPunctuation(input);
   // A configuration or an ordering takes an `accept` member only in two
-  // narrow shapes (chemKeyProblem): the noble-gas core that IS the whole key
+  // narrow shapes (chemKeyProblem): the key's configuration written with a core
   // (7.1's Li⁺ and Be²⁺, keyed 1s² as printed, beside sibling ions keyed with
   // a core), and another full ordering of the key's members where the page's
   // data tie (7.2: H and P both 2.1). A member graded correct makes the

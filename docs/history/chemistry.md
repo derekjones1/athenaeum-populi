@@ -5122,6 +5122,14 @@ for the same plane, became an accept member of 8.1's `node`.
   page accepts `tetrahedron` on 11 items and `see saw|saw horse` on 2,
   against "A geometry name's `accept` members are the forms the module
   prints". Put to Derek: sweep the page to the rule, or change the rule.
+- **Both answered, November 18, 2026.** Derek relaxed the lint for Sm³⁺ and
+  changed the geometry rule. A configuration key now takes its own
+  configuration written with a core as an accept member (`[Xe]4f⁵`), where
+  the source's answer says the core form is acceptable; the check's item
+  carries it. A geometry key takes its shape's other form — `tetrahedron`
+  beside `tetrahedral`, `see saw` beside `seesaw` — and a lint requires
+  the pair on every page: the check's two items and three items of 8.2
+  gained theirs, and 7.6 stands as written.
 - **Objectives without an item**, recorded: 7.3's Lewis symbols (thirteen
   page self-checks spend it), 8.3's resonance (its example echoes 8.2), 8.4's
   bond order (its example echoes its own Practice).

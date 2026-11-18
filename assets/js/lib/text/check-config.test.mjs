@@ -95,7 +95,7 @@ test('the lint: a key is written in print and is a configuration that can exist'
   assert.match(configurationKeyProblem('1s²2s²2p⁸'), /holds at most 6/);
   assert.match(configurationKeyProblem('1s²2d²'), /There is no 2d subshell/);
   assert.match(configurationKeyProblem('1s²1s²'), /twice/);
-  assert.match(chemKeyProblem(FE, 'configuration', '1s2'), /only the noble-gas core that is the whole key/);
+  assert.match(chemKeyProblem(FE, 'configuration', '1s2'), /only the key's configuration written with a noble-gas core/);
   assert.match(chemKeyProblem(FE, 'formula'), /declare answerForm="configuration"/);
   assert.match(chemKeyProblem('x', 'exact'), /"configuration", "ordering", or "quantum-numbers"/);
 });

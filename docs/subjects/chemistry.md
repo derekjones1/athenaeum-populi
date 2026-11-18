@@ -310,7 +310,7 @@ The component follows the SHAPE of the source's keyed answer:
 | a drawing and words ("eight electrons: [symbol]"; "[structure] In this case, the Lewis structure is inadequate …") | the drawing row, the source's words carried whole beside the figure ("Eight electrons:", the figure, then the SOURCE's sentence about it). An added describing sentence is written only where the drawing holds something the source's words do not describe (8.1's N₂ answer: the words speak of orbitals, the drawing is a Lewis structure); where the source's words already say what the drawing shows (8.1's O₂ sketch, 8.4's labelled σ* drawing), nothing is added *(chapter 8)*; a part answered in words only ("no electrons Be²⁺") is a `selfcheck` whose model answer is those words ("No electrons: Be²⁺.") *(chapter 7)* |
 | drawings for each part and a choice among the parts named in the last part's answer (7.4: "(a) [CO₂] (b) [CO] CO has the strongest carbon-oxygen bond …") | (a)'s drawing `selfcheck`, then ONE `multiplechoice` over the parts ("…Indicate which has the strongest carbon-oxygen bond: CO₂ or CO?"), then (b)'s drawing `selfcheck` carrying the source's sentence whole. Not a separate last sentence `selfcheck`: under the choice's question it binds to (a) and lacks (a)'s drawing *(chapter 7)* |
 | a geometry asked alone ("predict the molecular geometry", "Predict the shape", "Describe the geometry about …") | one plain `textin` keyed with the source's word, closing with the stem's own noun: "Enter the molecular geometry.", "Enter the shape.", "Enter the geometry about the P atoms." An angle or a count of lone pairs printed after the name is no part of the key, and the grader takes either typed after the name — "bent (109°)", "bent, with two lone pairs" (the source's own answer to 8.2's printed 19(b)), "bent with 2 lone pairs" — while a different name stays wrong. **Where a drawing `selfcheck` closes each part of an exercise whose parts key the same words** (8.2's printed 15: "Each S has a bent (109°) geometry, sp³", then "Bent (120°), sp²"), the fields of every part come first and the drawings after them, in part order: a part's reveal directly above the next part's field prints its key (the lint's "directly above" leak) *(chapter 8)* |
-| two values named in one answer ("electron-pair geometry: octahedral, molecular structure: square pyramidal"; "The electron-pair geometry is trigonal bipyramidal. The molecular structure is linear."; "Both the electron geometry and the molecular structure are octahedral.") | two plain `textin`s, the geometry first (lint), closing "Enter the electron-pair geometry." and "Enter the molecular structure."; the gate holds each to its own value. An angle the source prints after a shape ("bent (109°)") is no part of the key (`bent`), and the grader takes it typed after the name. A geometry key takes as `accept` only a form the module prints (`trigonal bipyramid` beside `trigonal bipyramidal`; the source's own word is the key where it prints the noun) *(chapter 7)* |
+| two values named in one answer ("electron-pair geometry: octahedral, molecular structure: square pyramidal"; "The electron-pair geometry is trigonal bipyramidal. The molecular structure is linear."; "Both the electron geometry and the molecular structure are octahedral.") | two plain `textin`s, the geometry first (lint), closing "Enter the electron-pair geometry." and "Enter the molecular structure."; the gate holds each to its own value. An angle the source prints after a shape ("bent (109°)") is no part of the key (`bent`), and the grader takes it typed after the name. A geometry key takes as `accept` the shape's other form and any other name the module prints (`tetrahedron` beside `tetrahedral`, `trigonal bipyramid` beside `trigonal bipyramidal`; the source's own word is the key where it prints the noun; lint) *(chapter 7)* |
 | a part told apart from its siblings only by bold type inside a formula ("**C**H₃CCH tetrahedral, CH₃**CC**H linear") | one `selfcheck` whose model answer is the source's answer with its bold and nothing added; the rubric clauses are its own runs ("**C**H₃CCH tetrahedral") *(chapter 7)* |
 
 **Multiple choice stays open** *(Derek, November 10, 2026)*. Where a keyed
@@ -343,12 +343,19 @@ key's own word that completes the stem's sentence as well (`soy` beside
 already reads — capitals, a hyphen, a regular plural, sulph- — is never a
 member. The life-sciences rule that `accept` lists "a standard
 abbreviation" is narrowed here to an abbreviation the module prints.
-**A geometry name's `accept` members are the forms the module prints**
-*(chapter 7)*: `trigonal bipyramid` beside `trigonal bipyramidal` (7.6's
-text and caption print both); never a solid's name the module does not
-print as the shape (octahedron, tetrahedron, square pyramid), and never
-an open form ("see saw") — the grader already folds the hyphen
-(`see-saw`), capitals, and an angle typed after the name ("bent (109°)").
+**A geometry name's `accept` members are the forms the module prints,
+and the shape's other form** *(chapter 7; changed November 18, 2026)*: a
+learner who types "tetrahedron" for "tetrahedral" knows the answer, so a
+key that is the adjective takes the solid's noun and a key that is the
+noun takes the adjective — `tetrahedron` beside `tetrahedral`,
+`octahedron` beside `octahedral`, `trigonal pyramid`, `trigonal
+bipyramid`, `square pyramid` beside theirs — and `seesaw` takes its open
+form, `see saw` (lint: the pair is required on every page and every
+check, so one name is graded one way everywhere). A second name the
+module prints for the shape is a member too (`sawhorse` and its open form
+beside `seesaw`, `angular` beside `bent`). The grader already folds the
+hyphen (`see-saw`), capitals, and an angle typed after the name ("bent
+(109°)"), and those are never members.
 
 The rules below are grouped — stems, numeric keys, added items, hints,
 selfchecks, source defects, the footer — and each is stated once.
@@ -1777,6 +1784,7 @@ sentence that says how (lint), and the field reads back what it has read
 | `rb < Li < N < F` | the same key | incorrect | "Check the capitals: an element’s symbol is one capital letter, or a capital and a small letter." |
 | `Si < Al < Ca < K` | `Si⁴⁺ < Al³⁺ < Ca²⁺ < K⁺` | incorrect | "These are ions: type each one’s charge after its symbol." (the formula field's sentence gives Ca2+ as its example, a member of 6.5's key) |
 | `[He]`, `1s2` | `1s²` with `accept="[He]"` | correct | where the stem does not ask for the full configuration (7.1's Be²⁺ and Li⁺); without the member `[He]` is the `form` above *(chapter 7)* |
+| `[Xe]4f5`, `[Kr]5s2 4d10 5p6 4f5`, `1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f5` | `1s²2s²2p⁶3s²3p⁶4s²3d¹⁰4p⁶5s²4d¹⁰5p⁶4f⁵` with `accept="[Xe]4f⁵"` | correct | Sm³⁺ on the check for chapters 6–8, where the source's answer says the core form is acceptable; without the member the core forms are the `form` above *(November 18, 2026)* |
 | `[Ar]`, `Ar`, `1s2 2s2 2p6 3s2 3p6`, `[Ne]3s2 3p6` | `[Ar]` | correct | the atom's `[Ar]4s1` is told the count is wrong *(chapter 7)* |
 | `P < H < S < O < F` | `H < P < S < O < F` with `accept="P < H < S < O < F"` | correct | the tie the page's data give; without the member, "not in the right order" *(chapter 7)* |
 
@@ -1787,11 +1795,15 @@ Rules for the key and the stem:
   `[Kr]5s²4d¹⁰`; an ordering with ` < ` between its members, first to last
   as the source prints them, each in the book's Unicode, `Si⁴⁺ < Al³⁺ <
   Ca²⁺ < K⁺` (lint). Each takes an `accept` list in one shape only (lint):
-  a configuration, the noble-gas core that is the whole key, in brackets —
-  `accept="[He]"` beside `1s²` — where the stem does not ask for the full
+  a configuration, the key's own configuration written with a noble-gas
+  core, in print — the core alone where it is the whole key,
+  `accept="[He]"` beside `1s²`, where the stem does not ask for the full
   configuration and the exercise keys its other ions with a core (7.1's
-  Be²⁺ and Li⁺), so that the core is right and not told "write out every
-  subshell"; an ordering, another full ordering of exactly the key's
+  Be²⁺ and Li⁺); the core and the rest, `accept="[Xe]4f⁵"` beside Sm³⁺'s
+  full configuration, where the source's own answer says the core form is
+  acceptable (the check for chapters 6–8; relaxed November 18, 2026) — so
+  that the core is right and not told "write out every subshell"; an
+  ordering, another full ordering of exactly the key's
   members written in print with ` < ` — `accept="P < H < S < O < F"` beside
   `H < P < S < O < F` — only where the page's own data tie two members
   (7.2: H and P, both 2.1 in the electronegativity figure). A response is

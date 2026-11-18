@@ -690,7 +690,7 @@ test('no ion-form message prints the key or an element of it, over every ion key
   assert.equal(grade('O^2', 'O²⁻').message, UNSIGNED_CHARGE_MESSAGE);
 });
 
-test('a configuration takes as accept only its own whole key\'s core; an ordering, another full order of its members (Chemistry 7.1, 7.2)', async () => {
+test('a configuration takes as accept only its own configuration written with a core; an ordering, another full order of its members (Chemistry 7.1, 7.2)', async () => {
   const { checkChem: chem, chemKeyProblem: problem } = await import('./check-chem.mjs');
   const grade = (typed, answer, accept, form) => chem(typed, answer, { accept, form });
   // 7.1 printed 7(c), (g): Be²⁺ and Li⁺ keyed 1s² as the source prints them.
@@ -701,7 +701,16 @@ test('a configuration takes as accept only its own whole key\'s core; an orderin
   assert.equal(grade('[He]2s1', '1s²', '[He]', 'configuration').status, 'incorrect');
   assert.match(problem('1s²2s²2p⁶', 'configuration', '[He]'), /not the key's configuration/);
   assert.match(problem('[Ne]3s²', 'configuration', '[Ne]'), /only the noble-gas core|already prints a core/);
-  assert.match(problem('1s²', 'configuration', '1s2'), /only the noble-gas core/);
+  assert.match(problem('1s²', 'configuration', '1s2'), /written with a noble-gas core/);
+  // The check for chapters 6–8, Sm³⁺: the Solution prints every subshell and
+  // says the core form is acceptable.
+  const SM = '1s²2s²2p⁶3s²3p⁶4s²3d¹⁰4p⁶5s²4d¹⁰5p⁶4f⁵';
+  assert.equal(problem(SM, 'configuration', '[Xe]4f⁵'), null);
+  for (const typed of ['[Xe]4f5', '[Xe] 4f^5', '[Kr]5s2 4d10 5p6 4f5', '1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f5']) assert.equal(grade(typed, SM, '[Xe]4f⁵', 'configuration').status, 'correct', typed);
+  assert.equal(grade('[Xe]4f5', SM, '', 'configuration').status, 'form', 'without the member, the full-configuration message stands');
+  assert.equal(grade('[Xe]4f6', SM, '[Xe]4f⁵', 'configuration').status, 'incorrect');
+  assert.match(problem(SM, 'configuration', '[Xe]4f⁶'), /not the key's configuration/);
+  assert.match(problem(SM, 'configuration', '[Xe]4f5'), /not written in print/);
   // 7.2 printed 17(c): H and P tie at 2.1 in the page's figure.
   const KEY = 'H < P < S < O < F';
   const TIE = 'P < H < S < O < F';

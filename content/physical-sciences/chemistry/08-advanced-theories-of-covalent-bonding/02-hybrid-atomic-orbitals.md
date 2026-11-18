@@ -302,6 +302,7 @@ T-shaped (two lone pairs on A) sp³d
 {{< textin
   question="Sulfuric acid is manufactured by a series of reactions represented by the following equations: S₈(s) + 8O₂(g) ⟶ 8SO₂(g); 2SO₂(g) + O₂(g) ⟶ 2SO₃(g); SO₃(g) + H₂O(l) ⟶ H₂SO₄(l). Draw a Lewis structure, predict the molecular geometry by VSEPR, and determine the hybridization of sulfur for the following: H₂SO₄ molecule (the hydrogen atoms are bonded to oxygen atoms). Enter the molecular geometry."
   answer="tetrahedral"
+  accept="tetrahedron"
   hint="Count the bonding pairs and lone pairs around a sulfur atom in the Lewis structure, then apply VSEPR theory as in Section 7.6 Molecular Structure and Polarity."
 >}}
 
@@ -414,6 +415,7 @@ with one lone pair on the chlorine atom and three on each oxygen atom
 {{< textin
   question="Strike-anywhere matches contain a layer of KClO₃ and a layer of P₄S₃. The heat produced by the friction of striking the match causes these two compounds to react vigorously, which sets fire to the wooden stem of the match. KClO₃ contains the ClO₃⁻ ion. P₄S₃ is an unusual molecule with the skeletal structure shown in the figure above. Describe the geometry about the P atoms, the S atom, and the Cl atom in these species. Enter the geometry about the P atoms."
   answer="trigonal pyramidal"
+  accept="trigonal pyramid"
   hint="Count the bonding pairs and lone pairs on the atom in its Lewis structure, then apply VSEPR theory as in Section 7.6 Molecular Structure and Polarity."
 >}}
 
@@ -426,6 +428,7 @@ with one lone pair on the chlorine atom and three on each oxygen atom
 {{< textin
   question="Strike-anywhere matches contain a layer of KClO₃ and a layer of P₄S₃. The heat produced by the friction of striking the match causes these two compounds to react vigorously, which sets fire to the wooden stem of the match. KClO₃ contains the ClO₃⁻ ion. P₄S₃ is an unusual molecule with the skeletal structure shown in the figure above. Describe the geometry about the P atoms, the S atom, and the Cl atom in these species. Enter the geometry about the Cl atom."
   answer="trigonal pyramidal"
+  accept="trigonal pyramid"
   hint="Count the bonding pairs and lone pairs on the atom in its Lewis structure, then apply VSEPR theory as in Section 7.6 Molecular Structure and Polarity."
 >}}
 

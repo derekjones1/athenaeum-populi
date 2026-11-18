@@ -169,6 +169,16 @@ export const EXAMPLE_PAIR = /, the sign first, as \+([1-9]\d*) or −([1-9]\d*)\
 export const CHARGE_CLOSING = 'Enter the charge with its number first and then its sign, as 1+ or 1−.';
 export const CHARGE_PAIR = /, as ([1-9]\d*)\+ or ([1-9]\d*)−\.$/;
 /** The closing a charge item had until November 16, 2026 (sign first): refused. */
+/**
+ * A geometry name's two forms — the adjective and the solid's noun — and
+ * seesaw's open form: each key takes the other as an `accept` member
+ * (docs/subjects/chemistry.md, "A geometry name's `accept` members").
+ */
+const GEOMETRY_TWINS = new Map([
+  ['tetrahedral', 'tetrahedron'], ['octahedral', 'octahedron'],
+  ['trigonal pyramidal', 'trigonal pyramid'], ['trigonal bipyramidal', 'trigonal bipyramid'],
+  ['square pyramidal', 'square pyramid'],
+].flatMap(([adjective, noun]) => [[adjective, noun], [noun, adjective]]).concat([['seesaw', 'see saw']]));
 const OLD_CHARGE_CLOSING = /Enter the charge as a signed number, the sign first/;
 
 /**
@@ -1419,6 +1429,19 @@ export function lintLeaks(src, filename = '') {
         err(item.index, `${labelOf('textin', item.params)}: the electron-pair geometry is asked after the molecular structure of the same stem — the stem asks the geometry first; put this item first`);
       }
       if (!geometrySeen.has(stem)) geometrySeen.set(stem, half[1]);
+    }
+    // A geometry name keyed as the adjective takes the solid's noun, and
+    // the noun the adjective; "seesaw" takes its open form (Derek, November
+    // 18, 2026: a learner typing "tetrahedron" for "tetrahedral" knows the
+    // answer). One name is graded one way on every page and every check.
+    for (const item of items.filter((entry) => entry.kind === 'textin' && !entry.params.answerForm)) {
+      const key = String(item.params.answer ?? '').trim().toLowerCase();
+      const twin = GEOMETRY_TWINS.get(key);
+      if (!twin) continue;
+      const members = String(item.params.accept ?? '').split('|').map((member) => member.trim().toLowerCase());
+      if (!members.includes(twin)) {
+        err(item.index, `${labelOf('textin', item.params)}: the geometry key "${key}" takes accept="${twin}" — the shape's other form is the same answer on every page`);
+      }
     }
     // A footer that says a defect was "kept as printed" on a page that
     // carries no Source note (7.5 said it twice): the learner meets the

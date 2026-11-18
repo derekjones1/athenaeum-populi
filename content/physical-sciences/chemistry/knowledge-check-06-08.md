@@ -90,6 +90,7 @@ only an integer number of wavelengths could fit exactly within the orbit
 {{< textin
   question="What is the electron configuration of Sm³⁺? Type each subshell followed by its number of electrons, with a space between subshells."
   answer="1s²2s²2p⁶3s²3p⁶4s²3d¹⁰4p⁶5s²4d¹⁰5p⁶4f⁵"
+  accept="[Xe]4f⁵"
   answerForm="configuration"
 >}}
 
@@ -236,12 +237,13 @@ an endothermic reaction (ΔH positive, heat absorbed) results when the bonds in 
 {{< textin
   question="Two of the top 50 chemicals produced in the United States, ammonium nitrate and ammonium sulfate, both used as fertilizers, contain the ammonium ion. Predict the electron-pair geometry and molecular structure of the NH₄⁺ cation. Enter the electron-pair geometry."
   answer="tetrahedral"
+  accept="tetrahedron"
 >}}
 
 {{< textin
   question="Sulfur tetrafluoride, SF₄, is extremely valuable for the preparation of fluorine-containing compounds used as herbicides (i.e., SF₄ is used as a fluorinating agent). Predict the electron-pair geometry and molecular structure of a SF₄ molecule. Enter the molecular structure."
   answer="seesaw"
-  accept="sawhorse"
+  accept="sawhorse|see saw|saw horse"
 >}}
 
 {{< textin

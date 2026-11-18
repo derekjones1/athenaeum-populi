@@ -2024,6 +2024,14 @@
     "result": "agrees"
    }
   },
+  "0399fa193b0bda65": {
+   "verdict": "ok",
+   "note": "KC 3 7.6 § Example: Predicting Electron-pair Geometry and Molecular Structure: SF₄, m68742 | accept members added November 18, 2026: geometry twins and Sm³⁺ core form (Derek's rulings)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0399fc25b75681e7": {
    "verdict": "ok",
    "note": "selfcheck, CT fs-id1167658066298, module does not compare to bacterial infections (stated in model answer) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -12540,6 +12548,14 @@
   "178dbf3c7f12cc11": {
    "verdict": "ok",
    "note": "glossary recall sciatic nerve fs-id1531254; body fs-id1472046; sciatica graded incorrect.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "1796ece4e172f07d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm9916608 part (d): Tetrahedral | accept members added November 18, 2026: geometry twins and Sm³⁺ core form (Derek's rulings)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -41234,6 +41250,14 @@
   "504f21ff24621dd7": {
    "verdict": "ok",
    "note": "KC 6 31.1 § body Macronutrients and Micronutrients (fs-idp63966864), m66603 — parent re-read against the module"
+  },
+  "50502d2182e727ef": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm32929264 part (b): 'Cl atoms, trigonal pyramidal' | accept members added November 18, 2026: geometry twins and Sm³⁺ core form (Derek's rulings)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "5050eecd25abf3aa": {
    "verdict": "ok",
@@ -72079,6 +72103,14 @@
     "result": "agrees"
    }
   },
+  "8eb84f88ed5b309a": {
+   "verdict": "ok",
+   "note": "KC 3 7.6 § Example: Predicting Electron-pair Geometry and Molecular Structure: Ammonium, m68742 | accept members added November 18, 2026: geometry twins and Sm³⁺ core form (Derek's rulings)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8eba02f229ba9047": {
    "verdict": "ok",
    "note": "source exercise fs-idp87226080 (lead-in, scope parenthesis added) — model answer the source solution"
@@ -77902,6 +77934,14 @@
   "9a56855699cbf02d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "9a56c49ac0c08d11": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm32929264 part (b): 'P atoms, trigonal pyramidal' | accept members added November 18, 2026: geometry twins and Sm³⁺ core form (Derek's rulings)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -121067,6 +121107,15 @@
   "f2013fbbf11d1455": {
    "verdict": "ok",
    "note": "Critical Thinking fs-id1473044, model answer = solution fs-id2081069 verbatim"
+  },
+  "f2032059c5fbbb5d": {
+   "verdict": "ok",
+   "note": "KC 3 6.4 § Example: Predicting Electron Configurations of Ions, m68734 | accept members added November 18, 2026: geometry twins and Sm³⁺ core form (Derek's rulings)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "the key is the full form the Solution of the worked example prints; the core form grades `form` with “That is the right configuration — now write out every subshell, without the noble-gas core.”, so the learner is told and not marked wrong (the lint allows no core accept beside a full key)"
+   }
   },
   "f20c2f5f13565778": {
    "verdict": "ok"

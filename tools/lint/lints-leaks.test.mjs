@@ -875,6 +875,19 @@ test('Chemistry chapter 7: a stem\'s electron-pair geometry is asked before its 
   assert.deepEqual(rule(`Body.\n\n${t(MS)}`), [], 'a molecular structure alone (7.6 [21])');
 });
 
+test('Chemistry: a geometry key takes its shape\'s other form as an accept member', () => {
+  const t = (answer, accept) => `Body.\n\n{{< textin\n  question="Predict the molecular structure of SF₄. Enter the molecular structure."\n  answer="${answer}"${accept ? `\n  accept="${accept}"` : ''}\n  hint="Count the regions of electron density."\n>}}\n`;
+  const rule = (src, file = CHEM) => errorsOf(src, file).filter((e) => /the geometry key/.test(e));
+  assert.equal(rule(t('tetrahedral')).length, 1);
+  assert.match(rule(t('tetrahedral'))[0], /accept="tetrahedron"/);
+  assert.deepEqual(rule(t('tetrahedral', 'tetrahedron')), []);
+  assert.equal(rule(t('trigonal bipyramid')).length, 1, 'the noun takes the adjective');
+  assert.deepEqual(rule(t('trigonal bipyramid', 'trigonal bipyramidal')), []);
+  assert.equal(rule(t('seesaw', 'sawhorse')).length, 1);
+  assert.deepEqual(rule(t('seesaw', 'sawhorse|see saw|saw horse')), []);
+  assert.deepEqual(rule(t('linear')), [], 'a name with one form');
+});
+
 test('Chemistry chapter 7: a footer that keeps a defect "as printed" needs a Source note on the page', () => {
   const rule = (src) => errorsOf(src, CHEM).filter((e) => /no `\*Source note:\*`/.test(e));
   const footer = '\n---\n\n<small>Changes: the dropped minus sign in the last line kept as printed.</small>\n';
