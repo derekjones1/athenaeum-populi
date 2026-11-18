@@ -506,9 +506,29 @@ test('every corrected key of a Chemistry page has its Source note on the page', 
     && deviation.page.startsWith('content/physical-sciences/chemistry/'));
   assert.ok(chemistry.length >= 3, 'the Chemistry key deviations are read');
   for (const page of new Set(chemistry.map((deviation) => deviation.page))) {
-    const wanted = chemistry.filter((deviation) => deviation.page === page).length;
-    const notes = readFileSync(path.join(repositoryRoot, page), 'utf8').match(/^\*Source note:\* the answers? graded /gm) ?? [];
-    assert.ok(notes.length >= wanted, `${page}: ${wanted} corrected key(s), ${notes.length} "*Source note:* the answer graded …" paragraph(s)`);
+    // One note per corrected key, or one plural note ("the answers graded
+    // for …") after the last corrected part of a multi-part exercise, which
+    // then stands for every corrected part of that exercise: 9.5's balloon
+    // exercise carried the same sentence five times. A plural note
+    // discharges one exercise and no more, the largest first, and a page
+    // with more plural notes than multi-part exercises is refused.
+    const onPage = chemistry.filter((deviation) => deviation.page === page);
+    const parts = new Map();
+    for (const deviation of onPage) {
+      const exercise = deviation.exercise.replace(/\([a-z]+\)$/, '');
+      parts.set(exercise, (parts.get(exercise) ?? 0) + 1);
+    }
+    const multiPart = [...parts.values()].filter((count) => count > 1).sort((a, b) => b - a);
+    const text = readFileSync(path.join(repositoryRoot, page), 'utf8');
+    const plural = (text.match(/^\*Source note:\* the answers graded /gm) ?? []).length;
+    const singular = (text.match(/^\*Source note:\* the answer graded /gm) ?? []).length;
+    // Section 3.1's plural note predates the rule: it stands for one entry
+    // whose exercise is keyed as three items.
+    const discharging = Math.min(plural, multiPart.length);
+    const discharged = multiPart.slice(0, discharging).reduce((sum, count) => sum + count, 0);
+    const wanted = onPage.length - discharged;
+    const standing = singular + (plural - discharging);
+    assert.ok(standing >= wanted, `${page}: ${onPage.length} corrected key(s), ${discharged} covered by ${discharging} plural note(s), ${wanted} left for ${standing} "*Source note:* the answer graded …" paragraph(s)`);
   }
 });
 

@@ -5034,6 +5034,17 @@ balloon exercise's silence on the balloon's pressure in parts (d)–(f) (part
 5. A stem datum that is physically off (liquid propane in g/L; dry air's
    density) is kept, with a Source note; the keys follow the stem.
 
+**Answered November 17, 2026.** Derek accepted items 2, 4, and 5 as they
+stand (both 46.6 atm; 14 L; the stem data kept with their Source notes, the
+propane density included). Item 3 changed: corrected parts of one exercise
+that share a reason take one plural note after the last of them, the test
+counts it for every corrected part of that exercise
+(`verify-source-keys.test.mjs`), and 9.5's balloon exercise (five notes to
+one) and 9.6's Check Your Learning (two to one) were collapsed. The other
+multi-part exercises of the book give each part a different reason and keep
+a note each. README.md's "pinned and not yet authored" now reads "in
+progress".
+
 ### Next
 
 Knowledge Check block 3 (chapters 6–8), then chapter 10 (probe its shapes

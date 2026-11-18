@@ -52,7 +52,7 @@ hierarchy Subject → Book → Chapter → Section.
 
 Every book — the four OpenStax math books, Biology 2e, OpenStax
 Microbiology, and Anatomy and Physiology 2e, all complete, and Chemistry 2e,
-pinned and not yet authored — has a pinned,
+in progress — has a pinned,
 report-only source reconciliation workflow. See
 [docs/source/openstax-source-workflow.md](docs/source/openstax-source-workflow.md) before
 changing a book. `npm run source:verify` checks the committed section map

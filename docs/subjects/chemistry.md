@@ -1211,7 +1211,15 @@ after the rule was written, so the line is drawn by pairs:
   disclosed key deviation of this book carries a "the answer graded …"
   Source note** — a misprinted letter in a formula included (2.7's "AIF₃",
   4.1's "MgC1₂") — and a test counts them: the chapter 4 run facts ruled
-  "no note" for both of these and the test refused the page.
+  "no note" for both of these and the test refused the page. **Corrected
+  parts of one exercise that share a reason and stand together take ONE
+  note, plural, after the last of them** ("*Source note:* the answers
+  graded for the two items above are written to …"; 9.5's balloon exercise
+  carried the same sentence five times, 9.6's Check Your Learning twice),
+  and the test counts a plural note for every corrected part of that
+  exercise. The note says which items it covers in words a reader of the
+  page can follow — the page prints no part letters — and parts with
+  different reasons keep a note each *(November 17, 2026)*.
 - **A source equation that cannot be right by the book's own tables** (4.2:
   Na₂S and CO₂ from Na₂CO₃ and H₂S, against Appendix H's ionization
   constants) becomes a `selfcheck` whose model answer is the corrected

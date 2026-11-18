@@ -239,8 +239,6 @@ equal to
   hint="Rearrange the ideal gas law to give the molar mass from the density, with the temperature on the kelvin scale."
 >}}
 
-*Source note:* the answer graded for this exercise is written to the number of significant figures its data give, which is not the number the source prints.
-
 *Source note:* NASA’s Glenn Research Center [gives 1.229 kg/m³](https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/properties-of-air-text-version) (1.229 g/L) as a typical density of air at sea level at 15 °C; the stem gives nearly that density at 20 °C. The answers graded for this exercise follow the stem as printed.
 
 {{< fillin
@@ -251,8 +249,6 @@ equal to
   hint="Use the ideal gas law rearranged for density, with the temperature taken from Fahrenheit to Celsius to kelvin."
 >}}
 
-*Source note:* the answer graded for this exercise is written to the number of significant figures its data give, which is not the number the source prints.
-
 {{< fillin
   question="Answer the following question: The lifting capacity of a hot-air balloon is equal to the difference in the mass of the cool air displaced by the balloon and the mass of the gas in the balloon. What is the difference in the mass of 1.00 L of the cool air at 20 °C and 1 atm, of density 1.2256 g/L, and the hot air at $1.30 \times 10^{2}$ °F, whose molar mass equals that of dry air? Enter the difference in grams."
   answer="0.13"
@@ -260,8 +256,6 @@ equal to
   answerDisplay="$0.13\ \text{g}$"
   hint="Use the definition of density for each gas, with the hot air’s density from the ideal gas law."
 >}}
-
-*Source note:* the answer graded for this exercise is written to the number of significant figures its data give, which is not the number the source prints.
 
 {{< fillin
   question="Answer the following question: At a pressure of 1 atm and a temperature of 20 °C, dry air has a density of 1.2256 g/L, and the average temperature of the gas in a hot-air balloon is $1.30 \times 10^{2}$ °F. An average balloon has a diameter of 60 feet and a volume of $1.1 \times 10^{5}$ ft³. What is the lifting power of such a balloon? If the weight of the balloon and its rigging is 500 pounds, what is its capacity for carrying passengers and cargo? (The factors for cubic feet and pounds are in [Appendix C](/physical-sciences/chemistry/appendices/c-units-and-conversion-factors/).) Enter the lifting power in grams."
@@ -278,8 +272,6 @@ equal to
   answerDisplay="$380\ \text{lb}$"
   hint="The capacity is what the lifting power can carry beyond the balloon and its rigging: express the lifting power in pounds first."
 >}}
-
-*Source note:* the answer graded for this exercise is written to the number of significant figures its data give, which is not the number the source prints.
 
 {{< fillin
   question="Answer the following question: A balloon carries 40.0 gallons of liquid propane (density 0.5005 g/L). What volume of CO₂ and H₂O gas is produced by the combustion of this propane at STP? (The factor for gallons is in [Appendix C](/physical-sciences/chemistry/appendices/c-units-and-conversion-factors/), and STP and the standard molar volume are defined in [Section 9.2 Relating Pressure, Volume, Amount, and Temperature: The Ideal Gas Law](/physical-sciences/chemistry/09-gases/02-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law/).) Enter the total volume in liters, counting the water as a gas."
@@ -299,7 +291,7 @@ equal to
   hint="Find the enthalpy of combustion of propane from the enthalpies of formation, then the heat released by all the propane the balloon carries, per minute of flight."
 >}}
 
-*Source note:* the answer graded for this exercise is written to the number of significant figures its data give, which is not the number the source prints.
+*Source note:* the answers graded for the hot-air balloon items above are written to the number of significant figures their data give, which is not the number the source prints for any of them but the volume of gas from the propane.
 
 {{< textin
   question="The ratio of the rates of effusion is derived to be ________ proportional to the ratio of the square roots of their masses."

@@ -96,8 +96,6 @@ This finally yields $P$ = 32.4 atm.
   hint="Convert the mass to moles with a molar mass computed from the formula and the temperature to kelvin, then use the ideal gas law."
 >}}
 
-*Source note:* the answer graded for this exercise is written to the number of significant figures its data give, which is not the number the source prints.
-
 {{< fillin
   question="A 560-mL flask contains 21.3 g N₂ at 145 °C. Calculate the pressure of N₂: from the van der Waals equation. Enter the pressure in atmospheres."
   answer="46.6"
@@ -106,7 +104,7 @@ This finally yields $P$ = 32.4 atm.
   hint="Take the van der Waals constants for N₂ from the table of van der Waals constants above, and solve the equation for the pressure."
 >}}
 
-*Source note:* the answer graded for this exercise is written to the number of significant figures its data give, which is not the number the source prints.
+*Source note:* the answers graded for the two items above are written to the number of significant figures their data give, which is not the number the source prints.
 
 {{< selfcheck question="A 560-mL flask contains 21.3 g N₂ at 145 °C. Calculate the pressure of N₂: Explain the reason(s) for the difference." hint="Compare what each equation assumes about the molecules of a gas." >}}
 The van der Waals equation takes into account the volume of the gas molecules themselves as well as intermolecular attractions. At the three significant figures the data give, the two pressures are the same: the equations differ here by about 0.05 atm, less than the data can show.
