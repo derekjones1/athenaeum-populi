@@ -79,10 +79,14 @@ export const TABLE_NOTES = Object.freeze({
   // deviation per value the data file changes, from the source's number
   // recorded there to the number the page must print.
   // Appendix C: the source truncates a cubic foot, 28.3168… L, to 28.316;
-  // Section 1.6's own table (m68683) prints the rounded 28.317.
+  // Section 1.6's own table (m68683) prints the rounded 28.317. It also marks
+  // two relations to the millimeter of mercury "(exact, definition)" that
+  // are not exact; the page prints them without the mark.
   'chemistry-bundle:m68861': {
     deviations: [
       ['=28.316L', '=28.317L', 'erratum 3043: 1 ft³ = (0.3048 m)³ = 28.3168… L, which is 28.317 L at five figures; the source truncates'],
+      ['=1mmHg(exact,definition)', '=1mmHg', 'erratum 3233: a torr is 1/760 atm, a millimeter of mercury about one part in seven million more; Section 9.1 says the two no longer correspond exactly'],
+      ['=760mmHg(exact,definition)', '=760mmHg', 'erratum 3233: an atmosphere is exactly 760 torr, not exactly 760 mm Hg'],
     ],
   },
   'chemistry-bundle:m68862': { constants: true },

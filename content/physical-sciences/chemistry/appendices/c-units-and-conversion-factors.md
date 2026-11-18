@@ -80,16 +80,18 @@ weight: 3
 
 | Unit | Equivalents |
 |---|---|
-| torr | = 1 mm Hg (exact, definition) |
+| torr | = 1 mm Hg |
 | pascal (Pa) | = $\text{N}\ \text{m}^{-2}$ (exact, definition) |
 | pascal (Pa) | = $\text{kg}\ \text{m}^{-1}\ \text{s}^{-2}$ (exact, definition) |
-| atmosphere (atm) | = 760 mm Hg (exact, definition) |
+| atmosphere (atm) | = 760 mm Hg |
 | atmosphere (atm) | = 760 torr (exact, definition) |
 | atmosphere (atm) | = 101,325 $\text{N}\ \text{m}^{-2}$ (exact, definition) |
 | atmosphere (atm) | = 101,325 Pa (exact, definition) |
 | bar | = $10^{5}$ Pa (exact, definition) |
 | bar | = $10^{5}\ \text{kg}\ \text{m}^{-1}\ \text{s}^{-2}$ (exact, definition) |
 
+*Source note:* the source marks the torr’s 1 mm Hg and the atmosphere’s 760 mm Hg “(exact, definition)”. Neither is exact. An atmosphere is defined as 101,325 Pa and a torr as $\frac{1}{760}$ of an atmosphere, while a millimeter of mercury is worked out separately, from the density of mercury and the acceleration of gravity, and comes out greater than a torr by about one part in seven million. The two rows stand here without the mark, as rounded relations like the others that carry none; [Section 9.1 Gas Pressure](/physical-sciences/chemistry/09-gases/01-gas-pressure/) says of the torr that it “no longer corresponds exactly” to a millimeter of mercury.
+
 ---
 
-<small>This appendix is adapted from [Chemistry 2e, Appendix C: Units and Conversion Factors](https://openstax.org/books/chemistry-2e/pages/c-units-and-conversion-factors) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: each reference to another section of this book linked to that section’s page; the five tables transcribed as Markdown tables with their titles as bold lines above them and the column headings “Unit” and “Equivalents” added; a unit with several equivalents, which the source stacks in one cell, given one row for each; powers of ten and units with negative exponents typeset as KaTeX math; the two table footnotes marked with an asterisk and set below their tables; and the cubic foot, which the source prints one unit low in its last figure, corrected with a Source note under its table.</small>
+<small>This appendix is adapted from [Chemistry 2e, Appendix C: Units and Conversion Factors](https://openstax.org/books/chemistry-2e/pages/c-units-and-conversion-factors) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: each reference to another section of this book linked to that section’s page; the five tables transcribed as Markdown tables with their titles as bold lines above them and the column headings “Unit” and “Equivalents” added; a unit with several equivalents, which the source stacks in one cell, given one row for each; powers of ten and units with negative exponents typeset as KaTeX math; the two table footnotes marked with an asterisk and set below their tables; the cubic foot, which the source prints one unit low in its last figure, corrected with a Source note under its table; and the words “(exact, definition)” removed from the two relations to the millimeter of mercury, the torr’s and the atmosphere’s, which are not exact, with a Source note under the table of pressure units.</small>
