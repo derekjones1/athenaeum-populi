@@ -4772,6 +4772,102 @@ bullet now reads 8.314 kPa L/(mol K), with a footer clause and erratum 3232
 (the chapter's errata are 3205–3232, 28). "mol K" is also Chapter 3's "moles
 of potassium"; inside `/(mol K)` it was left as is.
 
+Derek asked for item 5's review the same day. Appendix C's Units of Pressure
+table marked two relations "(exact, definition)" that are not: torr = 1 mm Hg
+and atmosphere = 760 mm Hg (the review found the second; item 5 named only
+the first). A torr is 1/760 of an atmosphere; a millimeter of mercury is
+computed from a density of mercury and standard gravity and is about 1.4
+parts in ten million more (NIST SP 811, Appendix B.8, opened: the
+atmosphere's pascal value is marked exact, the torr's and the millimeter of
+mercury's are not). Both rows now print without the mark, as the table's
+other rounded relations do, with a Source note under the table that links
+9.1, a footer clause, two `TABLE_NOTES` deviations, a decisions entry, and
+erratum 3233. The November 10 "not an erratum at the book's precision" line
+is withdrawn: the number was right, the label was not. Every other "(exact,
+definition)" on the page was read and holds. No item reads the label; 9.1's
+items convert torr and mm Hg one for one at three figures, and 9.1's "1 mm Hg
+~1 torr" stands. Nothing graded changed, so no ledger step and no solve. The
+playbook's "A corrected cell" rule now says a cell's label is a claim like
+its number.
+
+Derek asked whether item 4 is right: a learner who types the source's 12.1 on
+the hydrogen exercise is told the value is right and to round it to two
+figures. It is — the verdict is `form`, the same message any over-precise
+answer gets, and the source's print is never shown. The message does not say
+why two, so Derek had a clause added: each of 9.2's eight hints that names
+the kelvin scale now ends "and count each temperature’s significant figures
+from its kelvin value" (all eight, so that the clause is not a tell on the
+one item it decides). Stems, keys, and forms are unchanged; the eight ledger
+records were carried. Two mistakes of the parent: no ledger snapshot before
+the edit (the edit was reversed to take one), and `perl -CSD` with a literal
+’ and no `use utf8` wrote the apostrophe double-encoded on all eight hints —
+two parallel sessions caught it; the bytes were repaired and the records
+carried a second time, which leaves eight stale hashes for the next prune.
+
+Derek asked for item 6's review the same day. The bracket is held now, in
+every book: an opening parenthesis, square bracket, or opening quote typed
+straight before an inline formula goes into the formula's `.ap-math-glue`
+span as plain text at its front, by the same two partials that hold the
+punctuation after it (`glue-math.html` for body prose, `mathtext.html` for
+item text; the pattern is `open` in `math-glue-patterns.html`). Measured in
+source: 399 formulas follow an opening parenthesis (172 of them in
+Chemistry), 22 an opening quote, 6 a square bracket. `audit:build` now
+refuses an opener left outside the span — bare, or before a span that holds
+only the closing bracket — on every page of the build, and the browser test
+that measures the punctuation measures the opener too, with 9.2 among its
+pages (19 openers at three widths, none ending a line). A straight quote
+typed before a formula in an item string is not read (none exists; the
+curly-quote lints hold that). No content changed, so no ledger step.
+
+Derek asked whether a self-check is the proper form for an answer read off a
+graph — item 1 of the chapter's open list, in other words, taken the other
+way round. It is not: the row's own reason was that the grader had no band,
+and his standing rule is to teach the grader a form. The form is
+`reading:<division>` (playbook "Graph readings"): the token states the
+smallest marked division of the axis the answer is read from, the key is
+what the figure's plotted data give, and a response is right within two
+tenths of the division either side. This is not the `tolerance:<p>%` retired
+on November 12 — that was a width chosen per chapter for computed values;
+this is a fact read from the figure, and the fraction is the grader's. One
+tenth was weighed against two and Derek chose two. Both figures were opened:
+the syringe's volume axis is marked every 5 mL, and the methane graph has a
+gridline every 5 L (labels every 10); the drawn methane line was measured
+from the image at 12.4 L at 150 K, the table's proportion and the ideal gas
+law give 12.2 to 12.3, and the source prints "About 12.5 L" — inside
+11.3–13.3. Three items changed form: the syringe Check Your Learning's two
+graph readings and the methane exercise (key 12.3), each `reading:5`.
+
+The blind solve changed one of them. The parent had keyed both syringe
+readings 17.7, what the six labeled points give (PV = 195), and told Derek
+that two tenths "takes the whole printed range", 17 to 18. The solver, told
+to read the picture, read 18.5 off the upper graph and said why: the figure
+draws its point (15.0, 13.0) at about 15.8 mL. Measured by the parent on
+the 1300-pixel image, the curve's stroke runs 18.0 to 18.7 mL at 11.0 psi.
+Keyed 17.7, the item would have told a learner who read 19 off that curve
+that the graph could not be read so far from it. The rule is now that a
+reading's key is the curve as drawn, measured, and the data's value only
+where the two agree within a tenth of a division: the upper graph keys 18.4
+(17.4–19.4, which refuses the source's 17), with erratum 3234, a Source note
+that prints no value, and a disclosed deviation; the lower graph (17.6
+measured) keeps 17.7 and shows the source's "about 18 mL"; methane keeps
+12.3. Two of the parent's statements to Derek were wrong and are withdrawn:
+the printed range is not all taken, and the argument against one tenth used
+a 5 psi division for the pressure axis, from the alt text, where the figure
+has a line every 1 psi. Two tenths stands on what the figure does show: a
+stroke 0.7 mL wide over an axis with ticks and no grid, where the solver's
+"by eye, 18 or 19" needs more than half a milliliter either side. The
+solver also reported that the packet binds the two syringe items to the
+figure nearest above them (the two unnumbered Boyle's-law sketches), not to
+the syringe figure their stems name; the (c) fill-in has carried that
+binding since the run. The
+accuracy comment stays a self-check, and so will any estimate that needs a
+hand-drawn tangent (chapter 12). An unworked expression is `form`, by the
+unworked-key lint's rule that every key refuses one. `verify:source-keys`
+holds the source's printed numbers to the same interval, so a print outside
+it is an erratum, never a wider interval. The author, checker, and solver
+briefs each have a reading paragraph; the footer's counts moved (Check Your
+Learning 8 fill-ins and 1 self-check, Practice 14 and 6).
+
 ### Next
 
 Sections 9.3–9.6 in one run (`run.md`; prep is done — re-check the PDF ranges

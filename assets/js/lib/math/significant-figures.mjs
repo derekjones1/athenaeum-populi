@@ -160,6 +160,22 @@ function within(a, b, units, unitExponent) {
 }
 
 /**
+ * Is a graph reading within what its scale can be read to: |response − key|
+ * at most TWO TENTHS of `division`, the smallest marked division of the axis
+ * the value is read from? Exact, like every comparison here: a response on
+ * the edge of the interval is on it. The fraction is the grader's, not the
+ * item's (check-answer.mjs, "Graph readings").
+ */
+export function withinReading(response, key, division) {
+  return within(response, key, 2n * division.mantissa, division.exponent - 1);
+}
+
+/** …and within `divisions` whole divisions of it: a near miss. */
+export function withinDivisions(response, key, division, divisions = 1) {
+  return within(response, key, BigInt(divisions) * division.mantissa, division.exponent);
+}
+
+/**
  * Is |a − b| at most `percent` percent of |b| — plus, where given, `units` ·
  * 10^unitExponent? Exact: `percent` is itself a numeral (`0.1`), so the test
  * is one integer comparison and a value sitting on the edge is on it, not

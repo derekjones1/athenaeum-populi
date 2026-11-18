@@ -52,7 +52,7 @@
 {{- range (split $answerForm " ") -}}
   {{- $token := trim . " " -}}
   {{- if $token -}}
-    {{- if not (or (in $formTokens $token) (findRE `^denominator:\d+$` $token) (findRE `^solved:[a-zA-Z]$` $token) (findRE `^sig-figs:[1-9]$` $token) (findRE `^last-digit:[0-2]$` $token)) -}}
+    {{- if not (or (in $formTokens $token) (findRE `^denominator:\d+$` $token) (findRE `^solved:[a-zA-Z]$` $token) (findRE `^sig-figs:[1-9]$` $token) (findRE `^last-digit:[0-2]$` $token) (findRE `^reading:(\d+(\.\d+)?|\.\d+)$` $token)) -}}
       {{- errorf "fillin answerForm token %q is not a form (%s)" $token $.Position -}}
     {{- end -}}
   {{- end -}}

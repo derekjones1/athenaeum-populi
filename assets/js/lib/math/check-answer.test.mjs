@@ -15,7 +15,7 @@ import assert from 'node:assert/strict';
 import {
   ce, foldPrimes,
   ANSWER_FORM_TOKENS, bracketsAsParentheses, checkAnswer, checkFormAsGraded, describeAnswerForm,
-  describeFormFeedback, describeIncorrectFeedback, NEAR_MISS_FEEDBACK, NEAR_MISS_TABLE_SENTENCE, WRONG_SIGN_FEEDBACK, THOUSAND_FEEDBACK, measuredKeyProblem, parseAnswerForm,
+  describeFormFeedback, describeIncorrectFeedback, READING_NEAR_MISS_FEEDBACK, READING_UNWORKED_FEEDBACK, readingKeyProblem, NEAR_MISS_FEEDBACK, NEAR_MISS_TABLE_SENTENCE, WRONG_SIGN_FEEDBACK, THOUSAND_FEEDBACK, measuredKeyProblem, parseAnswerForm,
   preprocess,
 } from './check-answer.mjs';
 
@@ -1769,6 +1769,12 @@ test('answerForm parsing and feedback wording', async (t) => {
   // undefined" — a defect only a reader of the rendered page would ever catch.
   for (const token of ANSWER_FORM_TOKENS) {
     await t.test(`the ${token} token has feedback wording`, () => {
+      // A graph reading asks no shape, so it has no "now write it …" phrase;
+      // its one `form` is the value left as a calculation.
+      if (token === 'reading:<division>') {
+        assert.equal(describeFormFeedback('\\frac{195}{11}', 'reading:5', '17.7'), READING_UNWORKED_FEEDBACK);
+        return;
+      }
       // `last-digit:<k>` is the allowance beside `sig-figs:<n>` and has no
       // phrase of its own, so it is worded as the pair it is always declared in.
       const spec = token === 'denominator:<n>' ? 'denominator:7'
@@ -5083,4 +5089,48 @@ test('keyAsTyped: a charge key is self-graded as typed, number first; every othe
   assert.equal(checkAnswer(keyAsTyped('-3', 'whole-number charge'), '-3', { form: 'whole-number charge' }), 'correct');
   assert.equal(keyAsTyped('-3', 'whole-number'), '-3');
   assert.equal(keyAsTyped('0.5', 'decimal-or-fraction'), '0.5');
+});
+
+test('reading:<division>: a value read off a graph is right within two tenths of the axis division (Chemistry 2e 9.2, November 17, 2026)', () => {
+  // The syringe's P-V graph: the volume axis is marked every 5 mL, and the
+  // plotted points (PV = 195) give 17.7 mL at 11.0 psi. The source prints
+  // "about 17–18 mL" for one graph and "~18 mL" for the other.
+  const syringe = (response) => checkAnswer(response, '17.7', { form: 'reading:5' });
+  for (const right of ['17', '17.5', '17.7', '18', '18.0', '16.7', '18.7', '1.8\\times10^{1}']) assert.equal(syringe(right), 'correct', right);
+  for (const wrong of ['16.6', '18.8', '19', '20', '12.7', '23', '-17.7', '177', 'x', '17.7\\%']) assert.equal(syringe(wrong), 'incorrect', wrong);
+  assert.equal(syringe('18\\text{ mL}'), 'unit');
+  assert.equal(syringe('18mL'), 'unit');
+  assert.equal(syringe(''), 'empty');
+  // A calculation is not a reading: right in value, and told to enter the number.
+  assert.equal(syringe('\\frac{195}{11}'), 'form');
+  assert.equal(describeFormFeedback('\\frac{195}{11}', 'reading:5', '17.7'), READING_UNWORKED_FEEDBACK);
+  assert.equal(syringe('\\frac{195}{5}'), 'incorrect');
+  // Within one whole division of the key, a miss is told to read again; farther, it is plain wrong.
+  for (const near of ['16.6', '18.8', '20', '22.7', '12.7']) assert.equal(describeIncorrectFeedback(near, 'reading:5', '17.7'), READING_NEAR_MISS_FEEDBACK, near);
+  for (const far of ['23', '12.6', '5', '177']) assert.equal(describeIncorrectFeedback(far, 'reading:5', '17.7'), '', far);
+  assert.equal(describeIncorrectFeedback('18', 'reading:5', '17.7'), '');
+  // The methane line: gridlines every 5 L, 12.3 L at 150 K; the source prints "About 12.5 L".
+  const methane = (response) => checkAnswer(response, '12.3', { form: 'reading:5' });
+  for (const right of ['12.5', '12', '13', '11.3', '13.3']) assert.equal(methane(right), 'correct', right);
+  for (const wrong of ['11.2', '13.4', '22', '9']) assert.equal(methane(wrong), 'incorrect', wrong);
+  // The division is the axis's, in the answer's units, and may be a decimal;
+  // the edge of the interval is on it (exact arithmetic).
+  const fine = (response) => checkAnswer(response, '0.05', { form: 'reading:0.02' });
+  for (const right of ['0.05', '0.046', '0.054', '.054']) assert.equal(fine(right), 'correct', right);
+  for (const wrong of ['0.0541', '0.0459', '0.06']) assert.equal(fine(wrong), 'incorrect', wrong);
+  assert.equal(checkAnswer('0.1', '0', { form: 'reading:0.5' }), 'correct', 'a zero key is a reading too');
+  // The token parses with a positive decimal only, and is declared alone on one numeral.
+  for (const [spec, valid] of [['reading:5', true], ['reading:0.02', true], ['reading:.5', true], ['reading:', false], ['reading:-5', false], ['reading:5mL', false], ['reading:5%', false]]) {
+    assert.equal(parseAnswerForm(spec).valid, valid, spec);
+  }
+  assert.ok(ANSWER_FORM_TOKENS.includes('reading:<division>'));
+  assert.equal(readingKeyProblem('17.7', 'reading:5'), null);
+  assert.equal(readingKeyProblem('17.7', 'sig-figs:3 last-digit:0'), null, 'no reading declared');
+  assert.match(readingKeyProblem('17.7', 'reading:5 sig-figs:3 last-digit:1'), /declared alone/);
+  assert.match(readingKeyProblem('17.7', 'reading:5 decimal'), /declared alone/);
+  assert.match(readingKeyProblem('17.7', 'reading:0'), /not zero/);
+  assert.match(readingKeyProblem('17,18', 'reading:5'), /grades ONE number/);
+  assert.match(readingKeyProblem('17.7', 'reading:5', { mode: 'unordered' }), /unordered/);
+  // Declared beside another token it grades nothing as a reading: the value is compared exactly.
+  assert.equal(checkAnswer('18', '17.7', { form: 'reading:5 decimal' }), 'incorrect');
 });

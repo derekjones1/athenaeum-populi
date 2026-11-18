@@ -303,7 +303,7 @@ The component follows the SHAPE of the source's keyed answer:
 | two or more quantities ("5371 °F, 3239 K"; a range; a ratio) | one `fillin` per quantity, each stem saying which |
 | a sentence or two that hold symbols among their words ("Al will form a cation with a charge of 3+: Al³⁺, an aluminum ion. Carbon will form an anion with a charge of 4−: C⁴⁻, a carbide ion.") | a formula `textin` per symbol, each stem closing with a sentence that says whose ("Enter the symbol of the ion that carbon forms."), then ONE `selfcheck` with the source's stem and its answer whole — last, so its reveal does not hand over the keys. The gate reads a formula the answer introduces with a colon |
 | an explanation, a list, a description, "answers will vary" | `selfcheck` with the source solution as the model answer and a rubric |
-| a value estimated from a graph ("About 12.5 L", "about 17–18 mL", "~18 mL") | `selfcheck` with the source's answer as the model answer and the figure named in the stem: a reading from a graph is a range, a measured `fillin` grades one number, and a multiple choice would need numbers the author invented. Where one part of the same question is calculated (9.2's syringe: "(c) 17.7 mL"), that part is a `fillin` placed FIRST, so the readings' answers do not give it *(chapter 9)* |
+| a value estimated from a graph ("About 12.5 L", "about 17–18 mL", "~18 mL") | a `fillin` with `answerForm="reading:<division>"` ("Graph readings"), the figure named in the stem, the stem closing "Enter the volume you read from the graph, in milliliters.", and the source's answer as the `answerDisplay` (`$\text{about }17\text{–}18\ \text{mL}$`). Where one part of the same question is calculated (9.2's syringe: "(c) 17.7 mL"), that part is a measured `fillin` placed FIRST, so the readings' answers do not give it. A value that needs a construction drawn by hand — a tangent's slope, a rate "estimated from a graph" of data the learner plots — stays a `selfcheck`: two careful drawings differ by more than any scale's reading *(chapter 9; a self-check until November 17, 2026)* |
 | several quantities asked in one sentence with no lettered parts ("What is this pressure in atmospheres, in millimeters of mercury, in kilopascals, and in bar?") | one `fillin` per quantity, each repeating the source's stem whole and closing with the one it asks for ("Enter the pressure in kilopascals."); the lint reads fill-ins that share one stem up to the closing sentence as parts of one question *(chapter 9)* |
 | a drawing | `selfcheck` with the figure in the model answer ("Figures") |
 | a drawing labelled with the part's own formula ("SeF₆: [structure]") | the drawing row: the label is no word of the answer, and the model answer need not print it *(chapter 7)* |
@@ -1923,7 +1923,8 @@ illustration and no item's.)
     judgment the pair asks of an author, so neither value is a default —
     and `sig-figs:1` takes `last-digit:0` (lint).
 
-- **Nothing else changes how a value is compared.** `tolerance:<p>%` (a
+- **Nothing else changes how a computed value is compared** (a value read
+  off a graph has its own form, "Graph readings" below). `tolerance:<p>%` (a
   relative band) and `worked:<value>` (a second right value) were forms
   until November 12 and 13, 2026; the shortcode and the lint now refuse
   both ("Numeric keys", "No width is chosen"). A key worked from this
@@ -1994,6 +1995,79 @@ Rules for the key and the stem:
 - **Typing a two-digit exponent works.** In a measured-quantity field every
   digit typed after `^` stays in the exponent, where the math books' fields
   leap out after one.
+
+### Graph readings: `reading:<division>`
+
+A question that asks for a value read off a graph has a range for its
+answer: the source prints "about 17–18 mL" for one graph of 9.2's syringe
+and "~18 mL" for the other. It is graded, in a `fillin` that declares one
+token:
+
+```
+{{</* fillin
+  question="… Determine the volume of the gas at a pressure of 11.0 psi, using: the $\frac{1}{P}$ vs. $V$ graph in the figure of the syringe and its two graphs above. Enter the volume you read from the graph, in milliliters."
+  answer="17.7"
+  answerForm="reading:5"
+  answerDisplay="$\text{about }18\ \text{mL}$"
+  hint="The lower graph plots 1/P, not P: find the height on its axis that corresponds to the stated pressure, and read the volume there."
+*/>}}
+```
+
+- **The key is what the curve AS DRAWN shows** at the point asked for —
+  a reading is of the picture, and the learner has nothing else to read.
+  The parent MEASURES it on the largest image (pixels: the axis's ticks
+  give the scale, the stroke's two edges the value), and works the same
+  point from the figure's labeled points or table. Where the two agree
+  within a tenth of the division, the key is the data's value (the
+  syringe's lower graph: 17.6 measured, 17.7 from PV = 195; the methane
+  line: 12.4 measured, 12.3 from the table and the ideal gas law). Where
+  they do not, the FIGURE is defective and the key is the measured
+  reading, with an erratum, a Source note after the item that prints no
+  value, and a disclosed deviation: the syringe's upper graph draws its
+  point (15.0, 13.0) at 15.8 mL, so its curve reads 18.4 mL at 11.0 psi
+  where the labels give 17.7 (erratum 3234). Keyed 17.7, the item told a
+  learner who read 19 off that curve that the graph could not be read so
+  far from it — found by the blind solver, who read 18.5. Never the
+  source's printed estimate, and never a calculation alone.
+- **`reading:<division>` is a fact about the figure**: the smallest MARKED
+  division — a gridline or a tick, labeled or not — of the axis the answer
+  is read from, in the answer's unit. Both 9.2 figures mark every 5 (mL,
+  L): `reading:5`. Look at the figure as rendered; an alt text is not the
+  authority.
+- **A response is right within two tenths of that division** either side of
+  the key (`reading:5` on 17.7: 16.7 to 18.7). The fraction is the
+  grader's, the same for every item, so no width is chosen: a scale is read
+  to a tenth of its smallest division ([Section 1.5](/physical-sciences/chemistry/01-essential-ideas/05-measurement-uncertainty-accuracy-and-precision/)),
+  and a reading off a curve uses two scales and a stroke with a width of
+  its own. One tenth was weighed and refused (Derek, November 17, 2026).
+  What the figures bear out: the syringe's curve is 0.7 mL wide where it is
+  read and its volume axis has ticks and no grid, so the blind solver's
+  "by eye, 18 or 19" brackets a curve at 18.4, and one tenth (17.9–18.9)
+  would refuse the 19. (The parent's first argument, that a tenth of the
+  pressure axis's division moves the volume 0.8 mL, took that axis's
+  division for 5 psi from the alt text; the figure has a line every 1
+  psi.)
+- **The source's printed answer is held to the same interval** (gate,
+  `verify:source-keys`): every number it prints is a response the item
+  grades right. One that falls outside is a source defect — an erratum and
+  a disclosed deviation — never a wider interval or a moved key (the
+  upper graph's "about 17–18 mL": 17 is outside 17.4–19.4).
+- **The blind solve READS the figure** (solver brief): its reading inside
+  the interval is the item's solve, and its note gives the division it
+  found and what the data give.
+- **The token is declared alone**, on a key that is one number (lint). No
+  count of significant figures is asked: `17`, `17.5`, and `18` are all
+  readings. The `answerDisplay` is the source's answer in its own words.
+
+Against the key `17.7` under `reading:5`:
+
+| Typed | Verdict | Why |
+|---|---|---|
+| `17`, `17.5`, `18`, `16.7`, `18.7` | correct | within 1 mL of the key, two tenths of the 5 mL division |
+| `18 mL` | unit | the right number with its unit: the question names the unit |
+| `195/11` | form | "That value agrees with the graph — now enter it as one number, the value you read." |
+| `19`, `16.6`, `20` | incorrect | within one division: "Close, but farther from the curve than the graph can be read. Find the given value on its axis again, follow it to the curve, and estimate where that point falls between the marked lines of the other axis." |
+| `23`, `39` | incorrect | "Not quite": another gridline, or another point of the curve |
 
 ## Figures
 
@@ -2199,7 +2273,13 @@ else except what a rule below adds.
   under the table that names every correction (a reference table has no
   key to protect), a `TABLE_NOTES` deviation, a decisions entry, and the
   erratum (Appendix L's six charges; Appendix C's cubic foot, 28.317 L,
-  which the source truncates and its own Section 1.6 prints rounded). **Two appendices follow a named authority, not the source's
+  which the source truncates and its own Section 1.6 prints rounded; its
+  "(exact, definition)" on torr = 1 mm Hg and atmosphere = 760 mm Hg,
+  removed November 17, 2026, since Section 9.1 says the torr no longer
+  corresponds exactly to a millimeter of mercury — erratum 3233). **A label
+  on a cell is a claim like its number**: "exact", "definition", or
+  "approximately" is read against the section that teaches the unit, and
+  "right at the book's precision" does not make a false "exact" stand. **Two appendices follow a named authority, not the source's
   print** *(Derek, November 12, 2026)*: Appendix A's atomic masses are
   CIAAW's abridged standard atomic weights (`data/chemistry/elements.json`),
   and Appendix D's constants are the 2022 CODATA values as NIST lists them
@@ -2300,14 +2380,10 @@ What chapter 1 settled, and what the scan of the book counted, are in
   fill-in's note is carried by hand — the tool labels it "author-built");
   `run.md` §0 reordered by step.
 - from chapter 9, Sections 9.1–9.2 (November 17, 2026;
-  `docs/history/chemistry.md`): an opening parenthesis typed straight
-  before inline math can end a line alone (9.2, "the volume ($V$)": the
-  glue partial holds closing punctuation and labels, not a leading
-  bracket); Appendix C prints "torr = 1 mm Hg (exact, definition)" where
-  9.1 says the two no longer correspond exactly (the appendix needs a
-  re-review row); no gate reads a self-check's model answer against a
+  `docs/history/chemistry.md`): no gate reads a self-check's model answer against a
   later fill-in's key on the same page (9.2's syringe readings, found by
-  the checker); no lint reads a quantity symbol set in Markdown italics
+  the checker; fill-ins themselves since the reading form, "Graph
+  readings"); no lint reads a quantity symbol set in Markdown italics
   (`*h*`, `*P*`) where the page sets its symbols as math; the landing
   footer's standing clauses (chapter outline, splash pointer) are held by
   no template; `solve:compare` counts an answer written one figure short

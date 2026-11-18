@@ -111,7 +111,7 @@ import { mediaBindings } from '../lib/exercise-context.mjs';
 import { parseSortbinsConfig } from '../../assets/js/lib/text/check-sortbins.mjs';
 import { foldedForms, hybridLabel, isHybridKey } from '../../assets/js/lib/text/check-text.mjs';
 import { chemCanon } from '../../assets/js/lib/text/check-chem.mjs';
-import { readNumeral, withinPercent } from '../../assets/js/lib/math/significant-figures.mjs';
+import { readNumeral, withinPercent, withinReading } from '../../assets/js/lib/math/significant-figures.mjs';
 import { loadElements } from '../lib/elements.mjs';
 import { massAsk, molarMass, statesNoNumber } from './molar-mass.mjs';
 import {
@@ -1342,6 +1342,13 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     kind: 'key',
     erratum: 3210,
     reason: 'the source answer prints "Venus: 1.30 × 10³ lb in⁻²" for 88.8 atm; the module\'s table gives 14.7 psi for 1 atm and 88.8 × 14.7 = 1305.36, which is 1.31 × 10³ at the three figures the answer shows; the source\'s print is what a factor a little under the table\'s gives (the exact 14.69595 puts the product at 1305.0003, on the rounding edge), so this is the book\'s table against the source\'s factor, not an arithmetic slip: the Venus fill-in keys 1.31 × 10³ and its last-digit allowance still grades the source\'s print right; the Earth fill-in keeps the source\'s 14.7',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/09-gases/02-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law.md',
+    exercise: 'fs-idp10418864#check(a)',
+    kind: 'key',
+    erratum: 3234,
+    reason: 'the Check Your Learning answer prints "(a) about 17–18 mL" for the volume at 11.0 psi read from the P-V graph; the figure (CNX_Chem_09_03_BoylesLaw1) draws its point labeled (15.0, 13.0) at about 15.8 mL, so the curve as drawn reaches 11.0 psi at 18.4 mL (measured on the 1300-pixel image: the stroke spans 18.0 to 18.7), where the labeled points give 17.7. A reading is of the curve that is drawn: the fill-in keys 18.4 under reading:5, 17.4 to 19.4, which takes the source\'s 18 and the calculated 17.7 and not its 17. Found by the blind solver, who read 18.5, November 17, 2026',
   },
   {
     page: 'content/physical-sciences/chemistry/09-gases/02-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law.md',
@@ -3370,6 +3377,24 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
   if (item.type === 'fillin') {
     const key = keyNumeral(item.answer);
     if (!key) return { status: 'symbolic', exercise };
+    // A value read off a graph (`reading:<division>`, 9.2's syringe): the
+    // key is what the figure's plotted data give, not the source's print —
+    // "about 17–18 mL" is a reading, and so is every response within two
+    // tenths of the axis's division. The source's answer is held to the
+    // same interval the learner is: every number it prints is a response
+    // the item grades correct. One that falls outside is a source defect
+    // (an erratum and a disclosed deviation), never a wider interval.
+    const reading = /(?:^|\s)reading:(\d+(?:\.\d+)?|\.\d+)(?:\s|$)/.exec(String(item.form || ''));
+    if (reading) {
+      const division = readNumeral(reading[1]);
+      const printed = (String(unit.answer).replace(/(\d)\s*[\u2013\u2212-]\s*(?=\d)/g, '$1 ').match(/\d+(?:\.\d+)?/g) || []).map((text) => readNumeral(text));
+      if (!printed.length) {
+        return { status: 'key-differs', exercise, detail: `fillin declares ${reading[0].trim()}, but source ${unit.id} answers ${JSON.stringify(unit.answer.slice(0, 140))}, which prints no number to hold the reading to` };
+      }
+      const outside = printed.filter((numeral) => !withinReading(numeral, key, division));
+      return outside.length === 0 ? { status: 'confirmed', exercise }
+        : { status: 'key-differs', exercise, detail: `fillin keys the reading ${JSON.stringify(item.answer)} (${reading[0].trim()}: two tenths of the division either side), but source ${unit.id} answers ${JSON.stringify(unit.answer.slice(0, 140))}, outside it` };
+    }
     // A bond order (8.4): held to the number the answer prints after "bond
     // order" — never a subscript of the species ("H₂ bond order = 1" keys 1,
     // not 2) — and, where the answer gives several species' orders, to the

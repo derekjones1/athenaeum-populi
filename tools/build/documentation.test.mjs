@@ -511,6 +511,14 @@ test('the chemistry subject playbook states the rules its engine enforces', asyn
   // table is the grader's real behaviour, and the two designs that gave a
   // key more than one value are gone from the grader and from every example.
   assert.doesNotMatch(chem, /answerForm="[^"]*(?:tolerance|worked):/, 'no example in the playbook still declares a retired token');
+  // A graph reading (November 17, 2026): the playbook's table is the grader's behaviour.
+  assert.match(chem, /### Graph readings: `reading:<division>`/);
+  for (const [typed, verdict] of [['17', 'correct'], ['18', 'correct'], ['16.7', 'correct'], ['18.7', 'correct'], ['19', 'incorrect'], ['23', 'incorrect'], ['\\frac{195}{11}', 'form'], ['18\\text{ mL}', 'unit']]) {
+    assert.equal(checkAnswer(typed, '17.7', { form: 'reading:5' }), verdict, `${typed} against the reading 17.7`);
+  }
+  for (const sentence of [describeIncorrectFeedback('19', 'reading:5', '17.7'), describeFormFeedback('\\frac{195}{11}', 'reading:5', '17.7')]) {
+    assert.ok(sentence && chem.replace(/\s+/g, ' ').includes(sentence), `the playbook quotes "${sentence}"`);
+  }
   for (const retired of ['worked:0.08642', 'sig-figs:4 last-digit:1 worked:0.08642', 'sig-figs:4 tolerance:0.2%']) {
     assert.equal(parseForm(retired).valid, false, `${retired} is not a form`);
   }
@@ -698,6 +706,13 @@ test('the fillin shortcode accepts exactly the exported answerForm tokens', () =
   assert.ok(exported.delete('last-digit:<k>'), 'ANSWER_FORM_TOKENS still exports the last-digit family');
   assert.match(fillinShortcode, /findRE\s+`\^last-digit:\[0-2\]\$`/,
     'the shortcode still matches the last-digit:<k> family with findRE');
+  // A graph reading (November 17, 2026): the axis's division, a positive decimal.
+  assert.ok(exported.delete('reading:<division>'), 'ANSWER_FORM_TOKENS still exports the reading family');
+  assert.ok(fillinShortcode.includes('findRE `^reading:(\\d+(\\.\\d+)?|\\.\\d+)$`'),
+    'the shortcode still matches the reading:<division> family with findRE');
+  for (const [token, valid] of [['reading:5', true], ['reading:0.02', true], ['reading:', false], ['reading:5%', false]]) {
+    assert.equal(parseAnswerForm(token).valid, valid, `the grader ${valid ? 'reads' : 'refuses'} ${token}, as the template does`);
+  }
   // Two retired families (November 12 and 13, 2026): the percent band and
   // the second "worked" value. Neither is exported, and the template names neither.
   assert.ok(!exported.has('worked:<value>'), 'ANSWER_FORM_TOKENS no longer exports the worked family');

@@ -32,7 +32,8 @@ reference pages (`appendices/<letter>-<slug>.md`, generated from the
 CNXML's tables and held to them cell by cell); `docs/subjects/chemistry.md`
 holds the source, the page skeleton, the exercise rules (only source-keyed
 exercises reach the page), the notation, measured-quantity grading
-(`\ce{…}` formulas in math, `sig-figs:<n> last-digit:<k>` fill-ins, and
+(`\ce{…}` formulas in math, `sig-figs:<n> last-digit:<k>` fill-ins,
+`reading:<division>` fill-ins for a value read off a graph, and
 one right answer per item: a key that depends on an atomic mass is what
 the book's own periodic table, `data/chemistry/elements.json`, gives), typed
 formulas, equations, electron configurations, orderings, and sets of quantum

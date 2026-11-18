@@ -3954,3 +3954,13 @@ test('a followup directly follows the graded item it waits for and holds items o
   assert.match(messages(`${choice}\n\n{{< followup after="correct" >}}\n${ion('cation', 'Ba²⁺')}\n{{< /followup >}}\n`), /followup does not take "after".*it takes no parameters/);
 });
 
+test('a graph reading declares reading:<division> alone, on one numeral key, and needs no value form', () => {
+  const lint = (source) => lintHugo(source, 'content/physical-sciences/chemistry/09-gases/02-ideal-gas-law.md').errors;
+  const fillin = (answer, form, extra = '') => `---\ntitle: T\nweight: 2\n---\n\n## Practice\n\n{{< fillin question="Determine the volume of the gas at a pressure of 11.0 psi, using the graph above. Enter the volume you read from the graph, in milliliters." answer="${answer}" answerForm="${form}"${extra} answerDisplay="$\\text{about }18\\ \\text{mL}$" hint="Read the curve." >}}\n`;
+  const about = (errors) => errors.filter((e) => /reading|unworked|name no form/.test(e));
+  assert.deepEqual(about(lint(fillin('17.7', 'reading:5'))), [], 'the form is a value form: the key restated unworked is refused');
+  assert.match(about(lint(fillin('17.7', 'reading:5 sig-figs:3 last-digit:1'))).join('\n'), /declared alone/);
+  assert.match(about(lint(fillin('17, 18', 'reading:5'))).join('\n'), /grades ONE number/);
+  assert.match(about(lint(fillin('17.7', 'reading:0'))).join('\n'), /not zero/);
+  assert.match(about(lint(fillin('17.7', 'reading:5mL'))).join('\n'), /"reading:5mL" name no form/);
+});

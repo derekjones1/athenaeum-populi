@@ -1790,6 +1790,43 @@ test('every measured-quantity fill-in on Chemistry 1.6 grades its own key as typ
   expect(powersOfTen, 'at least one key is a power of ten with a typed exponent').toBeGreaterThan(3);
 });
 
+// A value read off a graph (`reading:<division>`, November 17, 2026): the
+// field takes any number within two tenths of the axis's division of the
+// key, tells a near miss to read again, and holds back a calculation.
+test('a graph-reading field takes a reading inside its interval, and says why one outside is not', async ({ page }) => {
+  await gotoBuiltPage(page, '/physical-sciences/chemistry/09-gases/02-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law/');
+  // The syringe's P-V graph: the curve as drawn reads 18.4 mL (the figure
+  // draws one labeled point off its coordinates), a tick every 5 mL.
+  const card = page.locator('fill-in[data-question*="using: the $P$-$V$ graph in the figure of the syringe"]');
+  await expect(card).toHaveCount(1);
+  expect(await card.getAttribute('data-answer')).toBe('18.4');
+  expect(await card.getAttribute('data-answer-form')).toBe('reading:5');
+  const field = card.locator('math-field');
+  const status = () => card.evaluate((el) => el.status);
+  const feedback = card.locator('.ap-fillin-feedback');
+  const check = async (keys) => {
+    await clearMathField(field);
+    await focusMathField(page, field);
+    await page.keyboard.type(keys, { delay: 15 });
+    await card.getByRole('button', { name: /check/i }).click();
+  };
+  await check('17');
+  await expect.poll(status).toBe('incorrect');
+  await expect(feedback).toHaveText(/farther from the curve than the graph can be read/);
+  await check('39');
+  await expect.poll(status).toBe('incorrect');
+  await expect(feedback).not.toHaveText(/farther from the curve/);
+  await check('195/11');
+  await expect.poll(status).toBe('form');
+  await expect(feedback).toHaveText(/enter it as one number, the value you read/);
+  await check('18 mL');
+  await expect.poll(status).toBe('unit');
+  await check('19');
+  await expect.poll(status).toBe('correct');
+  await expect(card).toContainText('about');
+  await expect(card).toContainText('18.4');
+});
+
 test('a measured-quantity field keeps a two-digit exponent together, reports a typed unit, and holds back the unrounded readout', async ({ page }) => {
   await gotoBuiltPage(page, '/physical-sciences/chemistry/01-essential-ideas/06-mathematical-treatment-of-measurement-results/');
   // The long-ton exercise: 1.0160 × 10³ kg, five significant figures.
@@ -3114,6 +3151,11 @@ test('chapter 4\'s fields say why: a short or near-miss number, the wrong arrow,
 // formula still breaks inside, and the page does not scroll sideways.
 // tools/build/audit-build.mjs holds "every such formula is glued" for every
 // page of the build; this is the layout no static check can read.
+//
+// An opening bracket or quote typed straight before the formula is held the
+// same way, at the front of the span: Chemistry 9.2's "the volume ($V$)"
+// ended a line at "(" with "V)" on the next (rendered-page reading, November
+// 17, 2026). Every such formula is glued, and no opener ends a line.
 test('punctuation typed after an inline formula stays on the formula\'s line', async ({ page }) => {
   const routes = [
     '/math/precalculus/07-trigonometric-identities-and-equations/02-sum-and-difference-identities/',
@@ -3122,9 +3164,10 @@ test('punctuation typed after an inline formula stays on the formula\'s line', a
     '/math/prealgebra/01-whole-numbers/02-add-whole-numbers/',
     '/physical-sciences/chemistry/03-composition-of-substances-and-solutions/02-determining-empirical-and-molecular-formulas/',
     '/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/03-reaction-stoichiometry/',
+    '/physical-sciences/chemistry/09-gases/02-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law/',
   ];
   test.setTimeout(60_000 + routes.length * 12_000);
-  const totals = { glued: 0, inStems: 0, wrapped: 0, wideWithPunctuation: 0 };
+  const totals = { glued: 0, inStems: 0, wrapped: 0, wideWithPunctuation: 0, opened: 0, openedInStems: 0 };
   for (const width of [1280, 520, 390]) {
     await page.setViewportSize({ width, height: 900 });
     for (const route of routes) {
@@ -3135,7 +3178,8 @@ test('punctuation typed after an inline formula stays on the formula\'s line', a
       const audit = await page.evaluate(() => {
         const PUNCTUATION = /^[.,;:?!)’”]/;
         const name = (math) => `${(math.querySelector('annotation')?.textContent ?? math.textContent).slice(0, 40)}`;
-        const out = { glued: 0, inStems: 0, wrapped: 0, wideWithPunctuation: 0, unglued: [], stranded: [], breaksShown: [] };
+        const OPENER = /[(\[“‘]$/;
+        const out = { glued: 0, inStems: 0, wrapped: 0, wideWithPunctuation: 0, opened: 0, openedInStems: 0, unglued: [], stranded: [], breaksShown: [] };
         for (const math of document.querySelectorAll('.content .katex')) {
           if (math.closest('.katex-display') || math.parentElement.closest('.katex')) continue;
           if (!math.getClientRects().length) continue; // inside a hidden follow-up
@@ -3144,6 +3188,8 @@ test('punctuation typed after an inline formula stays on the formula\'s line', a
             const host = math.parentElement.classList.contains('ap-math-keep') ? math.parentElement : math;
             const next = host.nextSibling;
             if (next && next.nodeType === Node.TEXT_NODE && PUNCTUATION.test(next.textContent)) out.unglued.push(name(math));
+            const before = host.previousSibling;
+            if (before && before.nodeType === Node.TEXT_NODE && OPENER.test(before.textContent)) out.unglued.push(`${name(math)} (an opening bracket before it)`);
             // A formula that is not glued shows none of its <wbr>s: its breaks are the browser's own.
             if ([...math.querySelectorAll('wbr')].some((wbr) => getComputedStyle(wbr).display !== 'none')) out.breaksShown.push(name(math));
             continue;
@@ -3156,7 +3202,20 @@ test('punctuation typed after an inline formula stays on the formula\'s line', a
           // also holds the formula in a glue span (the next test measures those).
           const tail = glue.lastChild;
           const VALUE = /^ ?= ?/;
-          if (tail && tail.nodeType !== Node.TEXT_NODE && glue.querySelector(':scope > .ap-math-label')) continue;
+          // An opener at the front of the span: its last character against the formula's first line box.
+          const head = glue.firstChild;
+          const opened = head && head.nodeType === Node.TEXT_NODE && OPENER.test(head.textContent);
+          if (opened) {
+            out.opened += 1;
+            if (glue.closest('[class$="-question"]')) out.openedInStems += 1;
+            const range = document.createRange();
+            range.setStart(head, head.textContent.length - 1);
+            range.setEnd(head, head.textContent.length);
+            const mark = range.getBoundingClientRect();
+            const first = math.getClientRects()[0];
+            if (mark.width && mark.bottom < first.top + 2) out.stranded.push(`${head.textContent} ${name(math)}`);
+          }
+          if (tail && tail.nodeType !== Node.TEXT_NODE && (opened || glue.querySelector(':scope > .ap-math-label'))) continue;
           if (!tail || tail.nodeType !== Node.TEXT_NODE || !(PUNCTUATION.test(tail.textContent) || VALUE.test(tail.textContent))) {
             out.unglued.push(`${name(math)} (a glue span that does not end in its punctuation)`);
             continue;
@@ -3174,12 +3233,14 @@ test('punctuation typed after an inline formula stays on the formula\'s line', a
         return out;
       });
       expect(audit.unglued, `${route} at ${width} px: punctuation follows an inline formula outside its glue span`).toEqual([]);
-      expect(audit.stranded, `${route} at ${width} px: the punctuation after a formula starts a line`).toEqual([]);
+      expect(audit.stranded, `${route} at ${width} px: the punctuation after a formula starts a line, or the bracket before it ends one`).toEqual([]);
       expect(audit.breaksShown, `${route} at ${width} px: a formula outside a glue span shows a <wbr>`).toEqual([]);
       expect(audit.sideways, `${route} at ${width} px: the page scrolls sideways`).toBeLessThanOrEqual(0);
       if (width === 1280) {
         totals.glued += audit.glued;
         totals.inStems += audit.inStems;
+        totals.opened += audit.opened;
+        totals.openedInStems += audit.openedInStems;
       }
       if (width === 390) {
         totals.wrapped += audit.wrapped;
@@ -3190,6 +3251,9 @@ test('punctuation typed after an inline formula stays on the formula\'s line', a
   // Body prose is glued by the layout's partial and a stem by `mathtext`: both are counted.
   expect(totals.glued, 'formulas followed by punctuation were measured').toBeGreaterThanOrEqual(250);
   expect(totals.inStems, 'formulas in item stems were measured').toBeGreaterThanOrEqual(20);
+  // An opener is glued by the same two partials (19 and 1 on November 17, 2026; Chemistry 9.2 holds 10).
+  expect(totals.opened, 'formulas behind an opening bracket or quote were measured').toBeGreaterThanOrEqual(12);
+  expect(totals.openedInStems, 'one of them in an item stem').toBeGreaterThanOrEqual(1);
   // The no-wrap span took nothing from a long formula: on a phone some still break inside…
   expect(totals.wrapped, 'on a phone a glued formula still wraps between its pieces').toBeGreaterThanOrEqual(10);
   // …and a stem formula too wide for its card scrolls together with its question mark.

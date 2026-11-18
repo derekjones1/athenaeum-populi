@@ -43,6 +43,14 @@ catch.
   included: where two members tie, both orders must be graded right (an
   ordering's `accept`), and a yes-or-no that turns on the tie is a defect
   to report *(chapter 7)*.
+- **A graph reading (`reading:<division>`):** open the figure itself. Read
+  the value off it yourself BEFORE looking at the key; then check that the
+  key is what the figure's labeled points or table give at the point asked
+  for, that the division declared is the smallest marked one of the axis
+  the answer is read from, in the answer's unit, and that your own reading
+  and every number of the source's answer fall within two tenths of that
+  division of the key. Report a figure too coarse or too small on the page
+  to be read that closely.
 - **A numeric fill-in:** solve it from the stem and the book's own
   conversion factors, running the arithmetic (`python3 -c`), BEFORE reading
   the page's key or the source's. Then compare all three. Report: a key the

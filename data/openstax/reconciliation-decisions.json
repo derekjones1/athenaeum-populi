@@ -6587,6 +6587,17 @@
       "rationale": "The Units of Volume table prints \"cubic foot (US) = 28.316 L\". A foot is exactly 0.3048 m, so a cubic foot is 28.316846592 L, which is 28.317 L at the five figures printed; the source truncates, and its own Section 1.6 table of common conversion factors (m68683) prints 28.317 L. The page prints 28.317 L with a visible Source note directly under the table, a footer clause, and a TABLE_NOTES deviation in verify-source-tables. No key depends on the value. Found by the cross-book consistency reader, fixed in the pass before chapter 5, ruled by the orchestrator on Derek's instruction, November 14, 2026."
     },
     {
+      "localPath": "content/physical-sciences/chemistry/appendices/c-units-and-conversion-factors.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68861",
+      "sourceElementIds": [
+        "fs-idp115347744"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3233,
+      "rationale": "The Units of Pressure table marks \"torr = 1 mm Hg\" and \"atmosphere = 760 mm Hg\" as \"(exact, definition)\". A torr is 1/760 of an atmosphere (101,325 Pa exactly); the conventional millimeter of mercury is computed from a density of mercury and standard gravity and is about 1.4 parts in ten million greater (NIST SP 811, Appendix B.8, marks neither factor exact), and the book's own Section 9.1 says the torr no longer corresponds exactly to a millimeter of mercury. The page prints both relations without the mark, with a visible Source note directly under the table, a footer clause, and two TABLE_NOTES deviations in verify-source-tables. No key depends on the label. Found by the chapter 9 run, reviewed and ruled by the orchestrator on Derek's instruction, November 17, 2026."
+    },
+    {
       "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/03-atomic-structure-and-symbolism.md",
       "bundle": "chemistry-bundle",
       "moduleId": "m68692",
@@ -8164,6 +8175,17 @@
       "status": "correct-local-source-defect",
       "errataEntry": 3220,
       "rationale": "The answer prints \"12.1 L\", three figures, for 2.50 L × 373.15 K ÷ 77.15 K = 12.09 L; −196 °C is given to the units place, so 77 K has two figures and the quotient keeps two. The page keys 12 with a visible Source note and a footer clause, and tools/verify/verify-source-keys.mjs lists the item (fs-idm221278704) in DISCLOSED_DEVIATIONS. Found by the blind solver, and ruled by the orchestrator, November 17, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/02-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68751",
+      "sourceElementIds": [
+        "fs-idp10418864"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3234,
+      "rationale": "The Check Your Learning answer prints \"(a) about 17–18 mL\" for the volume at 11.0 psi read from the P-V graph of the syringe figure (CNX_Chem_09_03_BoylesLaw1). The figure draws its point labeled (15.0, 13.0) at about 15.8 mL, so the curve as drawn reaches 11.0 psi at about 18.4 mL, where the labeled points give 17.7 mL. The item is a graph reading (reading:5) keyed 18.4, the curve as drawn, which takes 17.4 to 19.4 mL: the source's 18 and the calculated 17.7, not its 17. The page shows the figure as the source draws it, with a visible Source note after the item and a footer clause, and tools/verify/verify-source-keys.mjs lists the part (fs-idp10418864#check(a)) in DISCLOSED_DEVIATIONS. Found by the blind solver of the reading items, measured on the image and ruled by the session that built the reading form on Derek's instruction, November 17, 2026."
     },
     {
       "localPath": "content/physical-sciences/chemistry/09-gases/01-gas-pressure.md",

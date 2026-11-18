@@ -4376,6 +4376,14 @@
     "result": "agrees"
    }
   },
+  "084bb9ce657a4481": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm24946256 (printed 31): 8.80 x 0.08206 x 298.15 / 0.992 = 217.04 -> 217 L, source 217 L | Hint clause added November 17, 2026 (count each temperature's significant figures from its kelvin value); stem, key, and form unchanged | Hint clause added November 17, 2026 (count each temperature's significant figures from its kelvin value); stem, key, and form unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "084e02a27173373a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -6361,14 +6369,6 @@
     "result": "agrees"
    }
   },
-  "0c3b91e6d7bbc777": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm24946256 (printed 31): 8.80 x 0.08206 x 298.15 / 0.992 = 217.04 -> 217 L, source 217 L",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "0c3bfc540df200e7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -7388,6 +7388,15 @@
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
+   }
+  },
+  "0e2d9905f559dbce": {
+   "verdict": "ok",
+   "note": "source-keyed: m68751 Check Your Learning fs-idp10418864 part (b), answer \"~18 mL\"; a graph reading (reading:5) keyed 17.7 mL — the 1/P line as drawn measures 17.6 at 1/11.0 psi and the figure's labeled points (PV = 195) give 17.7; the source's 18 is inside 16.7 to 18.7. A self-check until November 17, 2026. Provenance written by hand.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "Parent, November 17, 2026: a graph reading (reading:5), an interval by its form. The key is 17.7 mL (the line as drawn measures 17.6 at 1/P = 0.0909; the labeled points give 17.7); the solver's 18 and its measured 17.8 both lie in 16.7 to 18.7 and grade correct, as does the source's \"~18 mL\" (CNXML fs-idp10418864, part (b))."
    }
   },
   "0e31676c4e6652e5": {
@@ -11381,14 +11390,6 @@
     "result": "agrees"
    }
   },
-  "15f2be258462afec": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm23005472 (printed 45): 0.981 x 100.21 x 278.39/(294.15 x 144.53) = 0.64373 -> 0.644 atm, source 0.644",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "15f4761aed5cabab": {
    "verdict": "ok",
    "note": "body cloze from § Epigenetic Control: Regulating Access to Genes within the Chromosome: \"Some chemical groups (phosphate, methyl, or acetyl groups) are attached to specific amino acids in histone \"tails\" at the N-terminus of the…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -11864,6 +11865,14 @@
   "16d31e4c28774711": {
    "verdict": "ok",
    "note": "body CYU (Copper/Nickel/Zinc); selfcheck, two-paragraph synthesis (binding mechanism + non-selective toxicity), no new claim | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "16d37e4cbb22f351": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm211017328 (printed 27): 1344 torr x 748.15/296.15 = 3395.3 -> 3.40e3 torr, source 3.40e3 torr | Hint clause added November 17, 2026 (count each temperature's significant figures from its kelvin value); stem, key, and form unchanged | Hint clause added November 17, 2026 (count each temperature's significant figures from its kelvin value); stem, key, and form unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "16d3c943c5e54081": {
    "verdict": "ok",
@@ -14579,14 +14588,6 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver",
-    "result": "agrees"
-   }
-  },
-  "1b89f677f242fab3": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm71892416 (printed 37): 151 x 35.4 x 310.15 /(298.15 x 1) = 5560.5 -> 5.56e3 L (3 figures); source 5561 L, corrected per decision 14 (erratum 3207)",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -20236,14 +20237,6 @@
   "26ef116b35ab3de4": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "26ef1d6bde602bbf": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm221278704 (printed 29): 2.50 L × 373.15 K ÷ 77.15 K = 12.09 L; −196 °C is 77 K to the units place, two figures, so the key is 12 (the source prints 12.1; DISCLOSED_DEVIATIONS, erratum 3220). Key corrected by the parent after the blind solve, whose answer was 12; stem unchanged",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "26f1453dd6c351ee": {
    "verdict": "ok",
@@ -26274,6 +26267,14 @@
    "verdict": "ok",
    "note": "5.1 CT selfcheck; Sep 23 2026 close-out: apicomplexans restated as \"intra- or extracellular parasites\" per the module in model answer and rubric line 1; hint now names the three supergroup subsections; model answer, rubric, and hint re-read against the module"
   },
+  "33072a8b73967a6c": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm66260928 (Amontons): 600 torr x 200.15 K / 300.15 K = 400.10 -> 400 torr, source 400 torr; sig-figs:3 per run-facts decision 14 | Hint clause added November 17, 2026 (count each temperature's significant figures from its kelvin value); stem, key, and form unchanged | Hint clause added November 17, 2026 (count each temperature's significant figures from its kelvin value); stem, key, and form unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "330c9c5892bf3517": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -27493,6 +27494,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver-B",
+    "result": "agrees"
+   }
+  },
+  "357a4cf2571266df": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp23616944: 0.250 L x 0.850 atm x 273.15 / (300.15 x 1.00) = 0.19338 -> 0.193 L, source 0.193 L | Hint clause added November 17, 2026 (count each temperature's significant figures from its kelvin value); stem, key, and form unchanged | Hint clause added November 17, 2026 (count each temperature's significant figures from its kelvin value); stem, key, and form unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -30722,6 +30731,14 @@
   "3be94f7c18acf514": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "3be9ff3823a82441": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm71892416 (printed 37): 151 x 35.4 x 310.15 /(298.15 x 1) = 5560.5 -> 5.56e3 L (3 figures); source 5561 L, corrected per decision 14 (erratum 3207) | Hint clause added November 17, 2026 (count each temperature's significant figures from its kelvin value); stem, key, and form unchanged | Hint clause added November 17, 2026 (count each temperature's significant figures from its kelvin value); stem, key, and form unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -36447,10 +36464,6 @@
    "verdict": "ok",
    "note": "KC 2 9.5 § Superior Rotation and Inferior Rotation, m46398"
   },
-  "4758eccc9aac521d": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm162722032 (printed 25): About 12.5 L read from CNX_Chem_09_02_Charles2 (graph gives ~12.2 L at 150 K), bare-value form, decision 5"
-  },
   "475afbfbe8de300d": {
    "verdict": "ok"
   },
@@ -39467,14 +39480,6 @@
   "4d4c1a71f7a00e41": {
    "verdict": "ok",
    "note": "Reflection about y-axis of f(x)=1.25^x replaces x with -x: g(x)=1.25^{-x}, matches CNXML Try It ti_04_02_05's method (same reflection type as the worked Example 5, mirrored about the other axis). | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
-  },
-  "4d51c8cff640b40d": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm211017328 (printed 27): 1344 torr x 748.15/296.15 = 3395.3 -> 3.40e3 torr, source 3.40e3 torr",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "4d56bbd836fc8b3f": {
    "verdict": "ok",
@@ -49855,6 +49860,15 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "6257a00ba5914e6c": {
+   "verdict": "ok",
+   "note": "source-keyed: m68751 Check Your Learning fs-idp10418864 part (a), answer \"about 17–18 mL\"; a graph reading (reading:5) keyed 18.4 mL, the P-V curve as the figure draws it at 11.0 psi (measured on CNX_Chem_09_03_BoylesLaw1-1300.webp: stroke 18.0 to 18.7), not the labeled points' 17.7 — disclosed deviation, erratum 3234 (the point (15.0, 13.0) is drawn at 15.8 mL). A self-check until November 17, 2026. Provenance written by hand (ledger:provenance labels a Chemistry fill-in author-built).",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "Parent, November 17, 2026: the item is a graph reading (reading:5), whose answer is an interval by its form. The key is 18.4 mL, the curve as drawn (parent's pixel measurement: stroke 18.0 to 18.7 at 11.0 psi); the solver's 18.5 and its second reading 18 both lie in 17.4 to 19.4 and both grade correct. The source's \"about 17–18 mL\" is the disclosed deviation fs-idp10418864#check(a), erratum 3234 (the figure draws its point (15.0, 13.0) at 15.8 mL). The figure binding the solver reports (nearest figure above, not the syringe figure the stem names) is recorded in docs/history/chemistry.md."
+   }
+  },
   "62590154933e41e1": {
    "verdict": "ok",
    "note": "Try It 2: 3*4*5=60, multiplication principle. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -51172,6 +51186,14 @@
   "65ab6c3efa73895e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "65ac79886fef6b5a": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm45782128 (Charles): 32.2 mL x 203.15/303.15 = 21.578 -> 21.6 mL, source 21.6 mL | Hint clause added November 17, 2026 (count each temperature's significant figures from its kelvin value); stem, key, and form unchanged | Hint clause added November 17, 2026 (count each temperature's significant figures from its kelvin value); stem, key, and form unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -65793,14 +65815,6 @@
     "result": "agrees"
    }
   },
-  "83371d6dbeeb23f9": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm45782128 (Charles): 32.2 mL x 203.15/303.15 = 21.578 -> 21.6 mL, source 21.6 mL",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "83375c4912fa22db": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -70701,14 +70715,6 @@
   "8cf44d26f353627e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "8cf633c103decbb1": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm66260928 (Amontons): 600 torr x 200.15 K / 300.15 K = 400.10 -> 400 torr, source 400 torr; sig-figs:3 per run-facts decision 14",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -100134,10 +100140,6 @@
     "result": "agrees"
    }
   },
-  "c88f1319b73b3450": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idp10418864 part (a): source answer about 17-18 mL, read from the P-V graph of CNX_Chem_09_03_BoylesLaw1 (selfcheck, decision 5)"
-  },
   "c890d7a3c89723bc": {
    "verdict": "ok",
    "note": "Cushing syndrome: re-read against m46489 body sentence named in the ledger; key printed verbatim",
@@ -100153,6 +100155,14 @@
   "c8928890ff921d31": {
    "verdict": "ok",
    "note": "author-built from § Toxins, Check Your Understanding: \"Name the three classes of exotoxins.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c892fc9033978f39": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm23005472 (printed 45): 0.981 x 100.21 x 278.39/(294.15 x 144.53) = 0.64373 -> 0.644 atm, source 0.644 | Hint clause added November 17, 2026 (count each temperature's significant figures from its kelvin value); stem, key, and form unchanged | Hint clause added November 17, 2026 (count each temperature's significant figures from its kelvin value); stem, key, and form unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -107210,14 +107220,6 @@
     "result": "agrees"
    }
   },
-  "d7183c7d044a72d7": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idp23616944: 0.250 L x 0.850 atm x 273.15 / (300.15 x 1.00) = 0.19338 -> 0.193 L, source 0.193 L",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "d71beaffbd799a28": {
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
@@ -113211,10 +113213,6 @@
     "result": "agrees"
    }
   },
-  "e354fe7f2b826c94": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idp10418864 part (b): source answer ~18 mL from the 1/P vs V graph (selfcheck, decision 5)"
-  },
   "e3584a82dfa0b02a": {
    "verdict": "ok",
    "note": "RQ fs-id2752988, key a; body fs-id2524917 'newly formed sperm continue to mature … stored in the tail of the epididymis'",
@@ -117928,6 +117926,15 @@
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
+   }
+  },
+  "ed20f274724dec68": {
+   "verdict": "ok",
+   "note": "source-keyed: m68751 exercise fs-idm162722032, answer \"About 12.5 L\"; a graph reading (reading:5) keyed 12.3 L — the methane line as drawn measures 12.4 at 150 K (CNX_Chem_09_02_Charles2-1300.webp) and the figure's table and the ideal gas law give 12.2 to 12.3; the source's 12.5 is inside 11.3 to 13.3. A self-check until November 17, 2026. Provenance written by hand.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "Parent, November 17, 2026: a graph reading (reading:5), an interval by its form. The key is 12.3 L (the line as drawn measures 12.4 at 150 K; the table's proportion and the ideal gas law give 12.2 to 12.3); the solver's 12 and its second reading 12.5 both lie in 11.3 to 13.3 and grade correct, as does the source's \"About 12.5 L\" (CNXML fs-idm162722032)."
    }
   },
   "ed27c822f4232df7": {
@@ -124546,6 +124553,14 @@
   },
   "fa878f7c3c302afd": {
    "verdict": "ok"
+  },
+  "fa8d2a2da8cc1fdd": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm221278704 (printed 29): 2.50 L × 373.15 K ÷ 77.15 K = 12.09 L; −196 °C is 77 K to the units place, two figures, so the key is 12 (the source prints 12.1; DISCLOSED_DEVIATIONS, erratum 3220). Key corrected by the parent after the blind solve, whose answer was 12; stem unchanged | Hint clause added November 17, 2026 (count each temperature's significant figures from its kelvin value); stem, key, and form unchanged | Hint clause added November 17, 2026 (count each temperature's significant figures from its kelvin value); stem, key, and form unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "fa91d626e2c8f786": {
    "verdict": "ok",

@@ -176,7 +176,11 @@ goes wrong.
 - **Numeric keys.** The key is a bare number, to the figures the source's
   answer shows; the stem names the unit. Declare `sig-figs:<n>
   last-digit:<k>` (playbook "Measured quantities" and the `last-digit` rule
-  in "Exercises"); a count takes `whole-number`. **A key that depends on an
+  in "Exercises"); a count takes `whole-number`; a value the question has
+  the learner read off a graph takes `reading:<division>` alone (playbook
+  "Graph readings": the key is what the figure's plotted data give, the
+  division is the answer axis's smallest marked one, read from the figure
+  as rendered — report both numbers and where you read them). **A key that depends on an
   atomic mass is what this book's periodic table gives**
   (`data/chemistry/elements.json`, printed in Appendix A), by the one
   method of playbook "Numeric keys" ("A numeric key is what this book's own

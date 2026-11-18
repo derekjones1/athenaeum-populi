@@ -55,6 +55,16 @@ those places.
   author; it is not your source. Where the alt and the picture disagree,
   answer from the picture and say so in `note` — an alt that miscounts is
   a defect this pass can catch and no other does.
+- **A graph reading** (`answerForm="reading:<division>"`): open the figure
+  and READ the value off the graph the stem names, as a careful learner
+  would — find the given value on its axis, follow it to the curve, and
+  estimate where that point falls between the marked lines of the other
+  axis. Answer with the one number you read; no count of figures is asked.
+  Do not calculate it instead: in `note`, give your reading, the smallest
+  marked division of the axis you read it from (in the answer's unit), and,
+  separately, what the figure's labeled points or table give at that point.
+  A division that is not the form's, or a figure that cannot be read to two
+  tenths of it, is what this pass is for.
 - If the `answerForm` names `sig-figs:<n>` and your own count of the
   figures the data support is NOT n, answer with your own count and say so
   in `note` — that disagreement is what this pass exists to find.

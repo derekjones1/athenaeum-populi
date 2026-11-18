@@ -26,7 +26,9 @@
  */
 
 import { ComputeEngine } from '@cortex-js/compute-engine';
-import { compareMeasured, numeralFromNumber, readNumeral, sameNumber } from './significant-figures.mjs';
+import {
+  compareMeasured, numeralFromNumber, readNumeral, sameNumber, withinDivisions, withinReading,
+} from './significant-figures.mjs';
 
 // One engine for the whole page. FillIn hands this same instance to
 // MathLive (MathfieldElement.computeEngine) so the field and the grader
@@ -6940,8 +6942,11 @@ const LAST_DIGIT_TOKEN = /^last-digit:([0-2])$/;
 // November 12 to 13, 2026, and is no longer a form: a key is the one value the
 // book's own data give. It is refused like any unknown token.)
 const isMeasuredToken = (token) => SIG_FIGS_TOKEN.test(token) || LAST_DIGIT_TOKEN.test(token);
+// A value read off a graph (see "Graph readings" above checkAnswer): the
+// token carries the smallest marked division of the axis it is read from.
+const READING_TOKEN = /^reading:(\d+(?:\.\d+)?|\.\d+)$/;
 const isParameterizedToken = (token) => DENOMINATOR_TOKEN.test(token) || SOLVED_TOKEN.test(token)
-  || isMeasuredToken(token);
+  || isMeasuredToken(token) || READING_TOKEN.test(token);
 
 /**
  * Split an `answerForm` spec into its tokens, reporting any that name no
@@ -6955,7 +6960,7 @@ export function parseAnswerForm(spec) {
 }
 
 export const ANSWER_FORM_TOKENS = Object.freeze([...Object.keys(FORM_PREDICATES), 'denominator:<n>', 'solved:<variable>',
-  'sig-figs:<n>', 'last-digit:<k>']);
+  'sig-figs:<n>', 'last-digit:<k>', 'reading:<division>']);
 
 /**
  * Feedback for a right value in the wrong shape. It names the shape rather
@@ -7031,6 +7036,8 @@ export function describeAnswerForm(spec) {
     // The last-digit allowance is how the value is compared, not a shape
     // the learner writes: it has no phrase.
     if (LAST_DIGIT_TOKEN.test(token)) return null;
+    // Nor has a graph reading: any number its scale allows is the answer.
+    if (READING_TOKEN.test(token)) return null;
     return FORM_PHRASES[token];
   }).filter(Boolean);
   // The number of figures reads last: "in scientific notation to 3
@@ -7069,6 +7076,13 @@ export const NEAR_MISS_FEEDBACK = 'Close, but not within rounding of the answer.
 // looked-up factor (`last-digit:1` or more): the commonest cause there is a
 // value taken with fewer digits than its table prints — an atomic mass from
 // memory, or from a table of four figures where this book's prints five.
+// The sentence for a graph reading that misses what the scale can be read to
+// by less than one of its divisions (readingVerdict's `near`): the learner
+// is on the right part of the right curve, and reads it again.
+export const READING_NEAR_MISS_FEEDBACK = 'Close, but farther from the curve than the graph can be read. Find the given value on its axis again, follow it to the curve, and estimate where that point falls between the marked lines of the other axis.';
+
+export const READING_UNWORKED_FEEDBACK = 'That value agrees with the graph — now enter it as one number, the value you read.';
+
 export const NEAR_MISS_TABLE_SENTENCE = ' If you looked up a value, such as an atomic mass, use every digit the table prints.';
 
 // The sentences for a measured quantity right but for its sign, or right in
@@ -7206,6 +7220,8 @@ export function describeIncorrectFeedback(studentRaw, spec, answerRaw) {
   const charge = answerRaw === undefined ? null : chargeVerdict(studentRaw, answerRaw, spec);
   if (charge) return charge.verdict === 'incorrect' ? charge.message : '';
   if (answerRaw !== undefined && wholeNumberSignFlipped(studentRaw, answerRaw, spec)) return WRONG_SIGN_FEEDBACK;
+  const reading = answerRaw === undefined ? null : readingVerdict(studentRaw, answerRaw, { form: spec });
+  if (reading !== null) return reading.verdict === 'incorrect' && reading.reason === 'near' ? READING_NEAR_MISS_FEEDBACK : '';
   const measured = answerRaw === undefined ? null : measuredVerdict(studentRaw, answerRaw, { form: spec });
   if (measured === null || measured.verdict !== 'incorrect') return '';
   if (measured.reason === 'sign') return WRONG_SIGN_FEEDBACK;
@@ -7222,6 +7238,7 @@ export function describeFormFeedback(studentRaw, spec, answerRaw) {
   // reading: its `form` reasons are its own.
   const measured = answerRaw === undefined ? null : measuredVerdict(studentRaw, answerRaw, { form: spec });
   if (measured !== null && measured.verdict === 'form') return measuredFormFeedback(measured.reason, spec);
+  if (answerRaw !== undefined && readingVerdict(studentRaw, answerRaw, { form: spec })?.verdict === 'form') return READING_UNWORKED_FEEDBACK;
   // The right solution set in the other notation is told which notation the
   // key uses, before any token's sentence: with no answerForm declared this
   // is the only 'form' a response can earn.
@@ -7914,6 +7931,8 @@ function checkFormToken(studentRaw, token, answerRaw) {
       && numeral.sigMin <= wanted && wanted <= numeral.sigMax;
   }
   if (LAST_DIGIT_TOKEN.test(token)) return true;
+  // A graph reading asks no shape of the writing: readingVerdict grades it.
+  if (READING_TOKEN.test(token)) return true;
   return FORM_PREDICATES[token](studentRaw, answerRaw);
 }
 
@@ -8872,6 +8891,86 @@ export function measuredKeyProblem(answerRaw, spec, { mode } = {}) {
   return null;
 }
 
+/* ---------------------------------------------------------------------------
+ * Graph readings: `reading:<division>`
+ *
+ * A question that asks for a value read off a graph ("Determine the volume
+ * at 11.0 psi, using the P-V graph") has a range for its answer: two careful
+ * learners read 17 and 18 from one curve, and the source prints "about 17–18
+ * mL". A measured fill-in grades one number, so until November 17, 2026 such
+ * a part was a self-check.
+ *
+ * The token declares a FACT about the figure — the smallest marked division
+ * of the axis the value is read from, in the units of the answer (`reading:5`
+ * for an axis with a line every 5 mL) — and the key is the value the
+ * figure's own plotted data give at the point asked for. A response is right
+ * within two tenths of that division either side of the key. The fraction is
+ * fixed here, for every item: a scale is read to a tenth of its smallest
+ * division (Chemistry 2e, Section 1.5), and a reading off a curve uses two
+ * scales, the one the given value is found on and the one the answer is read
+ * from. So no width is chosen by an author, which is what retired the
+ * relative band `tolerance:<p>%` ("Measured quantities" above).
+ *
+ * No count of significant figures is asked: `17`, `17.5`, and `18` are all
+ * readings. A unit after a right number reports `unit`, as for a measured
+ * quantity, and an expression left unworked (`\frac{195}{11}`) reports `form`. A response outside the interval is `incorrect`, with `near` for
+ * its reason when it is within one whole division of the key.
+ *
+ * The token is declared alone, on a key that is one numeral.
+ * ------------------------------------------------------------------------ */
+function readingSpec(spec) {
+  const { tokens, valid } = parseAnswerForm(spec);
+  if (!valid) return null;
+  const token = tokens.find((candidate) => READING_TOKEN.test(candidate));
+  if (!token || tokens.length !== 1) return null;
+  const division = readNumeral(token.match(READING_TOKEN)[1]);
+  return division === null || division.mantissa === 0n ? null : { division };
+}
+
+function readingVerdict(studentRaw, answerRaw, options = {}) {
+  const spec = readingSpec(options.form);
+  if (spec === null || options.unordered === true || options.mode === 'unordered') return null;
+  const key = readNumeral(bareLatex(answerRaw ?? ''));
+  if (key === null || key.rest.trim() !== '') return null;
+  if (!preprocess(studentRaw ?? '')) return { verdict: 'empty' };
+  if (String(studentRaw).includes('\\placeholder')) return { verdict: 'invalid' };
+  const writing = readMeasuredWriting(studentRaw);
+  if (writing.verdict) return writing;
+  if (writing.percent) return { verdict: 'incorrect' };
+  const response = writing.value ?? writing.numeral;
+  if (withinReading(response, key, spec.division)) {
+    // An expression is a calculation, not a reading: its value is right, and
+    // the learner enters the number (the unworked-key rule of the lint).
+    if (writing.value) return { verdict: 'form', reason: 'unworked' };
+    return { verdict: writing.unit ? 'unit' : 'correct' };
+  }
+  return withinDivisions(response, key, spec.division) ? { verdict: 'incorrect', reason: 'near' } : { verdict: 'incorrect' };
+}
+
+/**
+ * What is wrong with declaring `reading:<division>` in `spec` on the key
+ * `answerRaw`, as a sentence for the content lint — or null when nothing is,
+ * or the form names no reading. Beside the grading it protects, like
+ * measuredKeyProblem.
+ */
+export function readingKeyProblem(answerRaw, spec, { mode } = {}) {
+  const { tokens } = parseAnswerForm(spec);
+  const readings = tokens.filter((token) => READING_TOKEN.test(token));
+  if (readings.length === 0) return null;
+  if (tokens.length !== 1) {
+    return '`reading:<division>` is declared alone: a value read off a graph is any number its scale allows, so no count of figures (`sig-figs`, `last-digit`) and no shape is asked of it';
+  }
+  if (readNumeral(readings[0].match(READING_TOKEN)[1]).mantissa === 0n) {
+    return '`reading:<division>` names the smallest marked division of the axis the value is read from, which is not zero';
+  }
+  if (mode === 'unordered') return '`reading` grades one number; it cannot be declared with answerMode="unordered"';
+  const key = readNumeral(bareLatex(answerRaw ?? ''));
+  if (key === null || key.rest.trim() !== '') {
+    return '`reading` grades ONE number — the value the figure’s plotted data give at the point asked for — so a list, a pair, a range, or a labelled key cannot declare it; give each reading its own fill-in';
+  }
+  return null;
+}
+
 export function checkAnswer(studentRaw, answerRaw, options = {}) {
   const charge = chargeVerdict(studentRaw, answerRaw, options.form);
   if (charge) return charge.verdict;
@@ -8879,6 +8978,8 @@ export function checkAnswer(studentRaw, answerRaw, options = {}) {
   if (signLast !== null) return signLast;
   const measured = measuredVerdict(studentRaw, answerRaw, options);
   if (measured !== null) return measured.verdict;
+  const reading = readingVerdict(studentRaw, answerRaw, options);
+  if (reading !== null) return reading.verdict;
   const timesTyped = letterTimes(studentRaw, answerRaw, options.form);
   if (timesTyped !== null) return checkAnswer(timesTyped, answerRaw, options);
   const family = integerFamilyVerdict(studentRaw, answerRaw, options);

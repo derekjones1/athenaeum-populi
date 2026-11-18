@@ -264,7 +264,9 @@ commas, braced exponents, `\\` outside environments) are documented per
 subject; for math, see `docs/subjects/math.md`. A measured quantity in a
 science book — a number keyed to its significant figures — declares
 `sig-figs:<n> last-digit:<k>`, which compares the value at the key's own
-precision; see `docs/subjects/chemistry.md`.
+precision, and a value read off a graph declares `reading:<division>`,
+which takes any number within two tenths of the axis's smallest marked
+division of the key; see `docs/subjects/chemistry.md`.
 
 **A categorical answer is never a number.** "Is $7{,}248$ divisible by $5$?
 Answer $1$ for yes or $0$ for no" grades a legend rather than the choice and
