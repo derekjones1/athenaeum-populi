@@ -21,8 +21,8 @@ weight: 7
 | AlF₃(*s*) | −1510.4 | −1425 | 66.5 |
 | AlCl₃(*s*) | −704.2 | −628.8 | 110.67 |
 | AlCl₃·6H₂O(*s*) | −2691.57 | −2269.40 | 376.56 |
-| Al₂S₃(*s*) | −724.0 | −492.4 | 116.9 |
-| Al₂(SO₄)₃(*s*) | −3445.06 | −3506.61 | 239.32 |
+| Al₂S₃(*s*) | −724.0 | — | 116.9 |
+| Al₂(SO₄)₃(*s*) | −3440.84 | −3099.94 | 239.32 |
 | **antimony** |  |  |  |
 | Sb(*s*) | 0 | 0 | 45.69 |
 | Sb(*g*) | 262.34 | 222.17 | 180.16 |
@@ -93,7 +93,7 @@ weight: 7
 | CaSO₄(s) | −1434.5 | −1322.0 | 106.5 |
 | CaSO₄·2H₂O(*s*) | −2022.63 | −1797.45 | 194.14 |
 | CaCO₃(*s*) (calcite) | −1206.9 | −1128.8 | 92.9 |
-| CaSO₃·H₂O(*s*) | −1752.68 | −1555.19 | 184.10 |
+| CaSO₃·2H₂O(*s*) | −1752.68 | −1555.19 | 184.10 |
 | **carbon** |  |  |  |
 | C(*s*) (graphite) | 0 | 0 | 5.740 |
 | C(*s*) (diamond) | 1.89 | 2.90 | 2.38 |
@@ -195,8 +195,8 @@ weight: 7
 | I₂(*s*) | 0 | 0 | 116.14 |
 | I₂(*g*) | 62.438 | 19.3 | 260.7 |
 | I(*g*) | 106.84 | 70.2 | 180.8 |
-| I⁻(*aq*) | −55.19 | −51.57 | 11.13 |
-| IF(*g*) | 95.65 | −118.49 | 236.06 |
+| I⁻(*aq*) | −55.19 | −51.57 | 111.3 |
+| IF(*g*) | −95.65 | −118.49 | 236.06 |
 | ICl(*g*) | 17.78 | −5.44 | 247.44 |
 | IBr(*g*) | 40.84 | 3.72 | 258.66 |
 | IF₇(*g*) | −943.91 | −818.39 | 346.44 |
@@ -252,7 +252,7 @@ weight: 7
 | Hg(*l*) | 0 | 0 | 75.9 |
 | Hg(*g*) | 61.4 | 31.8 | 175.0 |
 | Hg²⁺(*aq*) |  | 164.8 |  |
-| Hg²⁺(*aq*) | 172.4 | 153.9 | 84.5 |
+| Hg₂²⁺(*aq*) | 172.4 | 153.9 | 84.5 |
 | HgO(*s*) (red) | −90.83 | −58.5 | 70.29 |
 | HgO(*s*) (yellow) | −90.46 | −58.43 | 71.13 |
 | HgCl₂(*s*) | −224.3 | −178.6 | 146.0 |
@@ -300,7 +300,7 @@ weight: 7
 | PO₄³⁻(*aq*) | −1277 | −1019 | −222 |
 | HPO₃(*s*) | −948.5 | — | — |
 | HPO₄²⁻(*aq*) | −1292.1 | −1089.3 | −33 |
-| H₂PO₄²⁻(*aq*) | −1296.3 | −1130.4 | 90.4 |
+| H₂PO₄⁻(*aq*) | −1296.3 | −1130.4 | 90.4 |
 | H₃PO₂(*s*) | −604.6 | — | — |
 | H₃PO₃(*s*) | −964.4 | — | — |
 | H₃PO₄(*s*) | −1279.0 | −1119.1 | 110.50 |
@@ -417,6 +417,8 @@ weight: 7
 
 *Source note:* the source prints −1220.0, −1081.4, and 110.0 for calcite. Those are the values of calcium carbonate as ions dissolved in water, with the minus sign of the entropy left off: the National Bureau of Standards’ [tables of chemical thermodynamic properties](https://srd.nist.gov/JPCRD/jpcrdS2Vol11.pdf) list −1219.97, −1081.39, and −110.0 for the dissolved ions and, one row above, −1206.92, −1128.79, and 92.9 for calcite, the values printed here.
 
+*Source note:* seven more rows differ from the source, each checked against the same tables. The source prints an entropy of 11.13 for I⁻(*aq*) and an enthalpy of 95.65 for IF(*g*); the tables give 111.3 and −95.65. It labels the row 172.4, 153.9, 84.5 as Hg²⁺(*aq*) and the row −1296.3, −1130.4, 90.4 as H₂PO₄²⁻(*aq*); the values are those of Hg₂²⁺(*aq*) and H₂PO₄⁻(*aq*). For Al₂(SO₄)₃(*s*) it prints −3445.06 and −3506.61; the tables give −3440.84 and −3099.94. For Al₂S₃(*s*) it prints a free energy of −492.4, which does not agree with the row’s own enthalpy and entropy; the tables give no free energy for this compound, and none is printed here. It labels the row −1752.68, −1555.19, 184.10 as CaSO₃·H₂O(*s*); the three values agree with one another only for the dihydrate, CaSO₃·2H₂O(*s*).
+
 ---
 
-<small>This appendix is adapted from [Chemistry 2e, Appendix G: Standard Thermodynamic Properties for Selected Substances](https://openstax.org/books/chemistry-2e/pages/g-standard-thermodynamic-properties-for-selected-substances) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the table transcribed as a Markdown table with its title as a bold line above it, each full-width row that names an element set in bold in the first column, and the calcite row corrected from the source’s −1220.0, −1081.4, and 110.0 to −1206.9, −1128.8, and 92.9; the column headings’ symbols and units typeset as KaTeX math; the en dashes the source prints before negative values set as minus signs.</small>
+<small>This appendix is adapted from [Chemistry 2e, Appendix G: Standard Thermodynamic Properties for Selected Substances](https://openstax.org/books/chemistry-2e/pages/g-standard-thermodynamic-properties-for-selected-substances) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the table transcribed as a Markdown table with its title as a bold line above it, each full-width row that names an element set in bold in the first column, and the calcite row corrected from the source’s −1220.0, −1081.4, and 110.0 to −1206.9, −1128.8, and 92.9, the entropy of I⁻(*aq*) corrected from 11.13 to 111.3, the enthalpy of IF(*g*) from 95.65 to −95.65, the enthalpy and free energy of Al₂(SO₄)₃(*s*) from −3445.06 and −3506.61 to −3440.84 and −3099.94, the free energy of Al₂S₃(*s*), −492.4 in the source, left out, and three rows relabeled, the source’s second Hg²⁺(*aq*) as Hg₂²⁺(*aq*), H₂PO₄²⁻(*aq*) as H₂PO₄⁻(*aq*), and CaSO₃·H₂O(*s*) as CaSO₃·2H₂O(*s*); the column headings’ symbols and units typeset as KaTeX math; the en dashes the source prints before negative values set as minus signs.</small>

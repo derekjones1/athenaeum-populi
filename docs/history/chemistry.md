@@ -5486,9 +5486,50 @@ the cause is known.
 
 ### For Derek
 
+- **Closed the same day** (“Appendix G's seven self-inconsistent rows” below, errata 3378–3384).
 - The seven rows above want the same treatment as calcite (open the NBS page,
   correct, erratum) before chapters 15 and 16 read the appendix. No finished page
   prints any of their values (a search of the book's pages for each number).
+
+## Appendix G's seven self-inconsistent rows (November 18, 2026)
+
+Derek asked for the seven rows the calcite scan left open to be checked
+against a scientific source, then, after a second look at the two rows that
+needed a decision, for the fixes to be applied and the errata submitted.
+
+- **All seven are source defects.** The pinned CNXML prints each row as the
+  page did. Each was read on its page of the NBS tables (Wagman et al., 1982;
+  the scan is page number + 8 in the PDF).
+
+  | Row as the source prints it | NBS tables | Page now prints | Erratum |
+  |---|---|---|---|
+  | I⁻(*aq*) −55.19, −51.57, 11.13 | −55.19, −51.57, 111.3 (p. 2-52) | entropy 111.3 | 3378 |
+  | IF(*g*) 95.65, −118.49, 236.06 | −95.65, −118.51, 236.17 (p. 2-53) | enthalpy −95.65 | 3379 |
+  | H₂PO₄²⁻(*aq*) −1296.3, −1130.4, 90.4 | H₂PO₄⁻: −1296.29, −1130.28, 90.4 (p. 2-73) | label H₂PO₄⁻ | 3380 |
+  | Hg²⁺(*aq*) 172.4, 153.9, 84.5 (second row) | Hg₂²⁺: 172.4, 153.52, 84.5 (p. 2-150) | label Hg₂²⁺ | 3381 |
+  | Al₂(SO₄)₃(*s*) −3445.06, −3506.61, 239.32 | −3440.84, −3099.94, 239.3 (p. 2-129) | −3440.84, −3099.94, 239.32 | 3382 |
+  | Al₂S₃(*s*) −724.0, −492.4, 116.9 | −724. only (p. 2-129) | free energy a dash | 3383 |
+  | CaSO₃·H₂O(*s*) −1752.68, −1555.19, 184.10 | not listed (hemihydrate only, p. 2-269) | label CaSO₃·2H₂O | 3384 |
+
+- **The two rulings (Derek approved both).** Al₂S₃: no source read prints
+  −492.4; the entropy is the Bureau of Mines value (RI 8203), the enthalpy
+  the NBS one, and the NBS tables give no free energy, so the page prints a
+  dash and not the −713.3 computed here. CaSO₃·H₂O: the three values give
+  −1554.7 for the dihydrate and −1624.3 for the monohydrate, and an
+  independent compilation lists −1753 and 184 under calcium sulfite
+  dihydrate; no primary table with the dihydrate row was opened. Before
+  applying either, every module of the book was searched: none uses Al₂S₃'s
+  or calcium sulfite's thermodynamic values.
+- **Small differences left alone.** 153.9 against 153.52, 164.8 against
+  164.40, −118.49 and 236.06 against −118.51 and 236.17, and the entropy
+  239.32 against 239.3 are another edition's digits, not defects.
+- **Changed:** seven rows, a second Source note, the footer clause, eight
+  `TABLE_NOTES` deviations for m68865, seven decisions entries, errata
+  3378–3384. Nothing graded reads these rows; no ledger change. Next free
+  erratum: 3385.
+- **Still open from the scan:** the seven rows off by 5 to 9 kJ/mol (Mn₃O₄,
+  AlCl₃·6H₂O, KF, CH₂Cl₂(*l*), AlF₃, CCl₄ twice) and the seventeen rows the
+  scan could not read.
 
 ## The `\dfrac` watch list
 

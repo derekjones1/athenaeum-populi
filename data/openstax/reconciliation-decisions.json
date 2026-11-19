@@ -8989,6 +8989,83 @@
       "status": "correct-local-source-defect",
       "errataEntry": 3377,
       "rationale": "Appendix G’s calcite row prints −1220.0, −1081.4, and 110.0, the values of dissolved calcium carbonate (the “ai” row of the NBS tables, 1982, p. 2-272: −1219.97, −1081.39, −110.0) with the entropy’s sign dropped; the tables’ calcite row is −1206.92, −1128.79, 92.9, and U.S. Geological Survey Bulletin 2131 gives −1207.4, −1128.5, 91.7. The printed row gives a solubility product near 0.8 against Appendix J’s 8.7 × 10⁻⁹. The page’s row prints −1206.9, −1128.8, and 92.9, with a Source note after the table, a footer clause, and a TABLE_NOTES entry in tools/verify/verify-source-tables.mjs. Raised by the 11.1 claim pass, both sources opened and ruled by the orchestrator, November 18, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/g-standard-thermodynamic-properties-for-selected-substances.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68865",
+      "sourceElementIds": [
+        "fs-idp78188768"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3378,
+      "rationale": "Appendix G’s I⁻(aq) row prints an entropy of 11.13; the NBS tables (Wagman et al., 1982, p. 2-52) give −55.19, −51.57, 111.3, and 111.3 reproduces the row’s own free energy (−51.6 against −51.57) where 11.13 gives −21.7. The decimal point slipped. The page prints 111.3. Disclosed by a Source note after the table, a footer clause, and a TABLE_NOTES deviation in tools/verify/verify-source-tables.mjs."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/g-standard-thermodynamic-properties-for-selected-substances.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68865",
+      "sourceElementIds": [
+        "fs-idp78188768"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3379,
+      "rationale": "Appendix G’s IF(g) row prints an enthalpy of formation of 95.65; the NBS tables (p. 2-53) give −95.65, −118.51, 236.17, and the negative value reproduces the row’s own free energy (−118.5 against −118.49) where 95.65 gives +72.8. The sign was dropped. The page prints −95.65. Disclosed by a Source note after the table, a footer clause, and a TABLE_NOTES deviation in tools/verify/verify-source-tables.mjs."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/g-standard-thermodynamic-properties-for-selected-substances.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68865",
+      "sourceElementIds": [
+        "fs-idp78188768"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3380,
+      "rationale": "Appendix G labels the row −1296.3, −1130.4, 90.4 as H₂PO₄²⁻(aq). Dihydrogen phosphate carries one negative charge, and the NBS tables (p. 2-73) list H₂PO₄⁻ at −1296.29, −1130.28, 90.4. The page labels the row H₂PO₄⁻(aq); the values are kept. Disclosed by a Source note after the table, a footer clause, and a TABLE_NOTES deviation in tools/verify/verify-source-tables.mjs."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/g-standard-thermodynamic-properties-for-selected-substances.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68865",
+      "sourceElementIds": [
+        "fs-idp78188768"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3381,
+      "rationale": "Appendix G has two rows labeled Hg²⁺(aq). The second, 172.4, 153.9, 84.5, is the mercury(I) ion: the NBS tables (p. 2-150) list Hg₂²⁺ at 172.4, 153.52, 84.5 and Hg²⁺ at 171.1, 164.40, −32.2 (the first row’s 164.8). The page labels the second row Hg₂²⁺(aq); the values are kept. Disclosed by a Source note after the table, a footer clause, and a TABLE_NOTES deviation in tools/verify/verify-source-tables.mjs."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/g-standard-thermodynamic-properties-for-selected-substances.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68865",
+      "sourceElementIds": [
+        "fs-idp78188768"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3382,
+      "rationale": "Appendix G’s Al₂(SO₄)₃(s) row prints −3445.06, −3506.61, 239.32: a free energy more negative than the enthalpy for a compound formed from six moles of gas, about 400 kJ/mol from the −3103.7 the row’s own enthalpy and entropy give. The NBS tables (p. 2-129) list −3440.84, −3099.94, 239.3. The page prints −3440.84 and −3099.94; the entropy, the same value at one more digit, is kept. Disclosed by a Source note after the table, a footer clause, and a TABLE_NOTES deviation in tools/verify/verify-source-tables.mjs."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/g-standard-thermodynamic-properties-for-selected-substances.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68865",
+      "sourceElementIds": [
+        "fs-idp78188768"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3383,
+      "rationale": "Appendix G’s Al₂S₃(s) row prints −724.0, −492.4, 116.9; the row’s own enthalpy and entropy give a free energy of −713.3, 221 kJ/mol away. The NBS tables (p. 2-129) print the enthalpy −724. and no free energy or entropy; the entropy 116.9 is the Bureau of Mines value (RI 8203, 1976, 27.93 cal/(K·mol)). No source read supports −492.4, and no module of the book uses it. The page prints a dash for the free energy, as the table does for other values a source does not give, rather than a value computed here. Recommended by the orchestrator and approved by Derek, November 18, 2026. Disclosed by a Source note after the table, a footer clause, and a TABLE_NOTES deviation in tools/verify/verify-source-tables.mjs."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/g-standard-thermodynamic-properties-for-selected-substances.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68865",
+      "sourceElementIds": [
+        "fs-idp78188768"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3384,
+      "rationale": "Appendix G labels the row −1752.68, −1555.19, 184.10 as CaSO₃·H₂O(s). With the table’s own element entropies the three values give a free energy of −1554.7 for the dihydrate and −1624.3 for the monohydrate; an independent compilation (chemister.ru, calcium sulfite dihydrate) lists −1753 and 184 for CaSO₃·2H₂O. The NBS tables of 1982 (p. 2-269) list only the anhydrous salt and the hemihydrate. The page labels the row CaSO₃·2H₂O(s); the values are kept. No module of the book uses the row. Recommended by the orchestrator and approved by Derek, November 18, 2026. Disclosed by a Source note after the table, a footer clause, and a TABLE_NOTES deviation in tools/verify/verify-source-tables.mjs."
     }
   ]
 }

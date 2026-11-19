@@ -98,11 +98,21 @@ export const TABLE_NOTES = Object.freeze({
   // Appendix G: the calcite row prints the values of dissolved calcium
   // carbonate (the NBS tables' "ai" row, the entropy's sign dropped); the
   // page prints the tables' calcite row.
+  // Seven more rows disagree with themselves (free energy recomputed from
+  // the row's enthalpy and entropy) and are corrected from the same tables.
   'chemistry-bundle:m68865': {
     deviations: [
       ['-1220.0', '-1206.9', 'erratum 3377: −1219.97 kJ/mol is the enthalpy of formation of the dissolved ions; calcite is −1206.92 (NBS tables, 1982, p. 2-272)'],
       ['-1081.4', '-1128.8', 'erratum 3377: −1081.39 kJ/mol is the free energy of formation of the dissolved ions; calcite is −1128.79'],
       ['110.0', '92.9', 'erratum 3377: −110.0 J/(K·mol) is the entropy of the dissolved ions, printed without its sign; calcite is 92.9'],
+      ['11.13', '111.3', 'erratum 3378: the entropy of I⁻(aq) is 111.3 J/(K·mol) (NBS tables, 1982, p. 2-52); the decimal point slipped'],
+      ['95.65', '-95.65', 'erratum 3379: the enthalpy of formation of IF(g) is −95.65 kJ/mol (NBS tables, p. 2-53); the sign was dropped'],
+      ['H_2PO_4^2-(aq)', 'H_2PO_4^-(aq)', 'erratum 3380: dihydrogen phosphate carries one negative charge; the values are those of H₂PO₄⁻ (NBS tables, p. 2-73)'],
+      ['Hg^2+(aq)', 'Hg_2^2+(aq)', 'erratum 3381: 172.4, 153.9, 84.5 are the values of the mercury(I) ion Hg₂²⁺ (NBS tables, p. 2-150); the row above is Hg²⁺'],
+      ['-3445.06', '-3440.84', 'erratum 3382: the enthalpy of formation of Al₂(SO₄)₃(s) is −3440.84 kJ/mol (NBS tables, p. 2-129)'],
+      ['-3506.61', '-3099.94', 'erratum 3382: the free energy of formation of Al₂(SO₄)₃(s) is −3099.94 kJ/mol; the printed value is about 400 kJ/mol from the row’s own enthalpy and entropy'],
+      ['-492.4', '-', 'erratum 3383: −492.4 is 221 kJ/mol from the free energy the Al₂S₃ row’s own enthalpy and entropy give; the NBS tables (p. 2-129) print no free energy, and the page prints a dash'],
+      ['CaSO_3·H_2O(s)', 'CaSO_3·2H_2O(s)', 'erratum 3384: −1752.68, −1555.19, 184.10 are self-consistent only for the dihydrate (−1554.7 computed), not the monohydrate (−1624.3)'],
     ],
   },
   // Appendix H: nine formulas are printed as images; the Lewis structures
