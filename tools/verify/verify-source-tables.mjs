@@ -95,6 +95,16 @@ export const TABLE_NOTES = Object.freeze({
       ['6.088', '6.01', 'erratum 3299: the enthalpy of melting of ice is 6.01 kJ/mol, the value Section 10.3 of the source itself prints; 6.088 is a misprint'],
     ],
   },
+  // Appendix G: the calcite row prints the values of dissolved calcium
+  // carbonate (the NBS tables' "ai" row, the entropy's sign dropped); the
+  // page prints the tables' calcite row.
+  'chemistry-bundle:m68865': {
+    deviations: [
+      ['-1220.0', '-1206.9', 'erratum 3377: −1219.97 kJ/mol is the enthalpy of formation of the dissolved ions; calcite is −1206.92 (NBS tables, 1982, p. 2-272)'],
+      ['-1081.4', '-1128.8', 'erratum 3377: −1081.39 kJ/mol is the free energy of formation of the dissolved ions; calcite is −1128.79'],
+      ['110.0', '92.9', 'erratum 3377: −110.0 J/(K·mol) is the entropy of the dissolved ions, printed without its sign; calcite is 92.9'],
+    ],
+  },
   // Appendix H: nine formulas are printed as images; the Lewis structures
   // leave the table and follow it as figures.
   'chemistry-bundle:m68866': {

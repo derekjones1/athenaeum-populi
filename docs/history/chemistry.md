@@ -5429,6 +5429,7 @@ last also reads one self-check of 7.6 that no gate had read.
   the usual values from memory (−1206.9, −1128.8); no source was opened, so
   nothing was changed. It matters from chapter 15 on, and wants a
   re-review row for the appendix before then.
+  **Closed the same day:** “Appendix G's calcite row” below (erratum 3377).
 
 ### Next
 
@@ -5440,6 +5441,54 @@ chapter on solutions" and 5.2's "a later chapter on solutions" to Section
 11.3 and 11.1's "discussed in detail later in this chapter", and removes the
 "being written" sentences from the landing and the cover. Knowledge Check
 block 4 (chapters 9–11) follows it.
+
+## Appendix G's calcite row (November 18, 2026)
+
+Derek asked for the row the 11.1 run left open to be reviewed, the correct
+values found, and an erratum written if the source is wrong. It is wrong, and
+the cause is known.
+
+- **The source printed the wrong row of its own reference.** The NBS tables
+  (Wagman et al., 1982, p. 2-272) list three rows under CaCO₃: calcite
+  (−1206.92, −1128.79, 92.9), aragonite, and “ai”, the dissolved ions
+  (−1219.97, −1081.39, −110.0). Appendix G's −1220.0, −1081.4, 110.0 is the
+  third, rounded, with the entropy's sign dropped. That is why the row gave a
+  solubility product near 1: the free energy it prints *is* that of the
+  dissolved ions.
+- **What was opened.** The NBS volume (a scan with no text layer; page 280 of
+  the PDF rendered with `pdftoppm` and read) and U.S. Geological Survey
+  Bulletin 2131 (calcite −1207.4, −1128.5, 91.7). The page takes the NBS
+  calcite row at the source's one decimal, the row the misprint came from.
+  The first edition and the live openstax.org page print the same wrong row.
+- **Changed:** the row, a Source note after the table, a footer clause, a
+  `TABLE_NOTES` entry for m68865 (three deviations), a decisions entry,
+  erratum 3377. Nothing graded reads the row; no ledger change.
+- **A scan of the whole table** recomputed each row's free energy from its own
+  enthalpy and entropy and the table's element rows (264 rows read). Besides
+  calcite, seven rows are off by 19 kJ/mol or more and are NOT yet checked
+  against an outside source or changed:
+
+  | Row | Printed (ΔH°f, ΔG°f, S°) | ΔG°f from its own ΔH°f and S° |
+  |---|---|---|
+  | Al₂(SO₄)₃(*s*) | −3445.06, −3506.61, 239.32 | −3103.7 |
+  | Al₂S₃(*s*) | −724.0, −492.4, 116.9 | −713.3 |
+  | IF(*g*) | 95.65, −118.49, 236.06 | 72.8 |
+  | CaSO₃·H₂O(*s*) | −1752.68, −1555.19, 184.10 | −1624.3 |
+  | I⁻(*aq*) | −55.19, −51.57, 11.13 | −21.7 |
+  | Hg²⁺(*aq*) | 172.4, 153.9, 84.5 | 130.9 |
+  | H₂PO₄²⁻(*aq*) | −1296.3, −1130.4, 90.4 | −1110.7 |
+
+  Seven more are off by 5 to 9 kJ/mol (Mn₃O₄, AlCl₃·6H₂O, KF, CH₂Cl₂(*l*),
+  AlF₃, CCl₄ twice), which may be only a mix of data sources. Seventeen rows
+  were not read (ions of an element with no row; rows whose phase is typeset
+  as math; the cobalt complexes). The scan catches a row whose three values
+  disagree; it cannot catch a row copied whole from the wrong substance.
+
+### For Derek
+
+- The seven rows above want the same treatment as calcite (open the NBS page,
+  correct, erratum) before chapters 15 and 16 read the appendix. No finished page
+  prints any of their values (a search of the book's pages for each number).
 
 ## The `\dfrac` watch list
 

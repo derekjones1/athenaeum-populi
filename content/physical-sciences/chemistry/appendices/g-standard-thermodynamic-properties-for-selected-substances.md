@@ -92,7 +92,7 @@ weight: 7
 | Ca(OH)₂(*s*) | −985.2 | −897.5 | 83.4 |
 | CaSO₄(s) | −1434.5 | −1322.0 | 106.5 |
 | CaSO₄·2H₂O(*s*) | −2022.63 | −1797.45 | 194.14 |
-| CaCO₃(*s*) (calcite) | −1220.0 | −1081.4 | 110.0 |
+| CaCO₃(*s*) (calcite) | −1206.9 | −1128.8 | 92.9 |
 | CaSO₃·H₂O(*s*) | −1752.68 | −1555.19 | 184.10 |
 | **carbon** |  |  |  |
 | C(*s*) (graphite) | 0 | 0 | 5.740 |
@@ -415,6 +415,8 @@ weight: 7
 | \[Ni(NH₃)₆\]Br₂ | −923.8 | — | — |
 | \[Ni(NH₃)₆\]I₂ | −808.3 | — | — |
 
+*Source note:* the source prints −1220.0, −1081.4, and 110.0 for calcite. Those are the values of calcium carbonate as ions dissolved in water, with the minus sign of the entropy left off: the National Bureau of Standards’ [tables of chemical thermodynamic properties](https://srd.nist.gov/JPCRD/jpcrdS2Vol11.pdf) list −1219.97, −1081.39, and −110.0 for the dissolved ions and, one row above, −1206.92, −1128.79, and 92.9 for calcite, the values printed here.
+
 ---
 
-<small>This appendix is adapted from [Chemistry 2e, Appendix G: Standard Thermodynamic Properties for Selected Substances](https://openstax.org/books/chemistry-2e/pages/g-standard-thermodynamic-properties-for-selected-substances) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the table transcribed as a Markdown table with its title as a bold line above it, each full-width row that names an element set in bold in the first column; the column headings’ symbols and units typeset as KaTeX math; the en dashes the source prints before negative values set as minus signs.</small>
+<small>This appendix is adapted from [Chemistry 2e, Appendix G: Standard Thermodynamic Properties for Selected Substances](https://openstax.org/books/chemistry-2e/pages/g-standard-thermodynamic-properties-for-selected-substances) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the table transcribed as a Markdown table with its title as a bold line above it, each full-width row that names an element set in bold in the first column, and the calcite row corrected from the source’s −1220.0, −1081.4, and 110.0 to −1206.9, −1128.8, and 92.9; the column headings’ symbols and units typeset as KaTeX math; the en dashes the source prints before negative values set as minus signs.</small>
