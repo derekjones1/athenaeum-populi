@@ -868,7 +868,7 @@ selfchecks, source defects, the footer — and each is stated once.
   entries (`verify-source-keys.test.mjs`: each must open, at the start of
   a line, with "*Source note:* the answer graded ") *(chapter 6)*.
 - **Figure counts of a key** *(chapter 5)*: an exact divisor or multiplier
-  keeps every figure of the table value (−1378.83 kJ for 3 Mn is 459.610
+  keeps every figure of the table value (−1387.83 kJ for 3 Mn is 462.610
   per mole of Mn, six figures; (66.4 + 114.1) ÷ 2 is 90.25, four), and a
   difference of two temperatures has the figures its last place gives
   (110 °C − 100 °C is 10 °C, two figures). A key ruled after the blind solve

@@ -245,7 +245,7 @@ weight: 7
 | MnO(*s*) | −385.2 | −362.9 | 59.71 |
 | MnO₂(*s*) | −520.03 | −465.1 | 53.05 |
 | Mn₂O₃(*s*) | −958.97 | −881.15 | 110.46 |
-| Mn₃O₄(*s*) | −1378.83 | −1283.23 | 155.64 |
+| Mn₃O₄(*s*) | −1387.83 | −1283.23 | 155.64 |
 | MnO₄⁻(*aq*) | −541.4 | −447.2 | 191.2 |
 | MnO₄²⁻(*aq*) | −653.0 | −500.7 | 59 |
 | **mercury** |  |  |  |
@@ -259,7 +259,7 @@ weight: 7
 | Hg₂Cl₂(*s*) | −265.4 | −210.7 | 191.6 |
 | HgS(*s*) (red) | −58.16 | −50.6 | 82.4 |
 | HgS(*s*) (black) | −53.56 | −47.70 | 88.28 |
-| HgSO₄($s)$ | −707.51 | −594.13 | 0.00 |
+| HgSO₄($s)$ | −707.51 | −594.13 | — |
 | **nickel** |  |  |  |
 | Ni²⁺(*aq*) | −64.0 | −46.4 | −159 |
 | **nitrogen** |  |  |  |
@@ -304,7 +304,7 @@ weight: 7
 | H₃PO₂(*s*) | −604.6 | — | — |
 | H₃PO₃(*s*) | −964.4 | — | — |
 | H₃PO₄(*s*) | −1279.0 | −1119.1 | 110.50 |
-| H₃PO₄$(l$) | −1266.9 | −1124.3 | 110.5 |
+| H₃PO₄$(l$) | −1266.9 | — | — |
 | H₄P₂O₇(*s*) | −2241.0 | — | — |
 | POCl₃(*l*) | −597.1 | −520.8 | 222.5 |
 | POCl₃(*g*) | −558.5 | −512.9 | 325.5 |
@@ -312,7 +312,7 @@ weight: 7
 | K(*s*) | 0 | 0 | 64.7 |
 | K(*g*) | 89.0 | 60.5 | 160.3 |
 | K⁺(*aq*) | −252.4 | −283.3 | 102.5 |
-| KF(*s*) | −576.27 | −537.75 | 66.57 |
+| KF(*s*) | −567.27 | −537.75 | 66.57 |
 | KCl(*s*) | −436.5 | −408.5 | 82.6 |
 | **rubidium** |  |  |  |
 | Rb⁺(*aq*) | −246 | −282.2 | 124 |
@@ -419,6 +419,8 @@ weight: 7
 
 *Source note:* seven more rows differ from the source, each checked against the same tables. The source prints an entropy of 11.13 for I⁻(*aq*) and an enthalpy of 95.65 for IF(*g*); the tables give 111.3 and −95.65. It labels the row 172.4, 153.9, 84.5 as Hg²⁺(*aq*) and the row −1296.3, −1130.4, 90.4 as H₂PO₄²⁻(*aq*); the values are those of Hg₂²⁺(*aq*) and H₂PO₄⁻(*aq*). For Al₂(SO₄)₃(*s*) it prints −3445.06 and −3506.61; the tables give −3440.84 and −3099.94. For Al₂S₃(*s*) it prints a free energy of −492.4, which does not agree with the row’s own enthalpy and entropy; the tables give no free energy for this compound, and none is printed here. It labels the row −1752.68, −1555.19, 184.10 as CaSO₃·H₂O(*s*); the three values agree with one another only for the dihydrate, CaSO₃·2H₂O(*s*).
 
+*Source note:* four more rows differ from the source, each checked against the same tables. The source prints an enthalpy of −576.27 for KF(*s*) and of −1378.83 for Mn₃O₄(*s*); the tables give −567.27 and −1387.8. Each of the source’s values has two neighboring digits exchanged, and the values printed here, −567.27 and −1387.83, are the source’s digits in their right order. For HgSO₄(*s*) it prints an entropy of 0.00; the tables give no entropy for this compound, and none is printed here. For H₃PO₄(*l*) it prints a free energy of −1124.3 and an entropy of 110.5; the entropy is that of the solid, the free energy does not agree with the row’s enthalpy, and the tables give neither value for the liquid, so neither is printed here.
+
 ---
 
-<small>This appendix is adapted from [Chemistry 2e, Appendix G: Standard Thermodynamic Properties for Selected Substances](https://openstax.org/books/chemistry-2e/pages/g-standard-thermodynamic-properties-for-selected-substances) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the table transcribed as a Markdown table with its title as a bold line above it, each full-width row that names an element set in bold in the first column, and the calcite row corrected from the source’s −1220.0, −1081.4, and 110.0 to −1206.9, −1128.8, and 92.9, the entropy of I⁻(*aq*) corrected from 11.13 to 111.3, the enthalpy of IF(*g*) from 95.65 to −95.65, the enthalpy and free energy of Al₂(SO₄)₃(*s*) from −3445.06 and −3506.61 to −3440.84 and −3099.94, the free energy of Al₂S₃(*s*), −492.4 in the source, left out, and three rows relabeled, the source’s second Hg²⁺(*aq*) as Hg₂²⁺(*aq*), H₂PO₄²⁻(*aq*) as H₂PO₄⁻(*aq*), and CaSO₃·H₂O(*s*) as CaSO₃·2H₂O(*s*); the column headings’ symbols and units typeset as KaTeX math; the en dashes the source prints before negative values set as minus signs.</small>
+<small>This appendix is adapted from [Chemistry 2e, Appendix G: Standard Thermodynamic Properties for Selected Substances](https://openstax.org/books/chemistry-2e/pages/g-standard-thermodynamic-properties-for-selected-substances) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the table transcribed as a Markdown table with its title as a bold line above it, each full-width row that names an element set in bold in the first column, and the calcite row corrected from the source’s −1220.0, −1081.4, and 110.0 to −1206.9, −1128.8, and 92.9, the entropy of I⁻(*aq*) corrected from 11.13 to 111.3, the enthalpy of IF(*g*) from 95.65 to −95.65, the enthalpy and free energy of Al₂(SO₄)₃(*s*) from −3445.06 and −3506.61 to −3440.84 and −3099.94, the free energy of Al₂S₃(*s*), −492.4 in the source, left out, and three rows relabeled, the source’s second Hg²⁺(*aq*) as Hg₂²⁺(*aq*), H₂PO₄²⁻(*aq*) as H₂PO₄⁻(*aq*), and CaSO₃·H₂O(*s*) as CaSO₃·2H₂O(*s*), the enthalpy of KF(*s*) corrected from −576.27 to −567.27 and that of Mn₃O₄(*s*) from −1378.83 to −1387.83, and the entropy of HgSO₄(*s*), 0.00 in the source, and the free energy and entropy of H₃PO₄(*l*), −1124.3 and 110.5 in the source, left out; the column headings’ symbols and units typeset as KaTeX math; the en dashes the source prints before negative values set as minus signs.</small>

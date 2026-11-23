@@ -100,6 +100,8 @@ export const TABLE_NOTES = Object.freeze({
   // page prints the tables' calcite row.
   // Seven more rows disagree with themselves (free energy recomputed from
   // the row's enthalpy and entropy) and are corrected from the same tables.
+  // Four more (November 23, 2026): two transposed enthalpies, an entropy of
+  // 0.00, and a liquid's row carrying the solid's entropy.
   'chemistry-bundle:m68865': {
     deviations: [
       ['-1220.0', '-1206.9', 'erratum 3377: −1219.97 kJ/mol is the enthalpy of formation of the dissolved ions; calcite is −1206.92 (NBS tables, 1982, p. 2-272)'],
@@ -113,6 +115,11 @@ export const TABLE_NOTES = Object.freeze({
       ['-3506.61', '-3099.94', 'erratum 3382: the free energy of formation of Al₂(SO₄)₃(s) is −3099.94 kJ/mol; the printed value is about 400 kJ/mol from the row’s own enthalpy and entropy'],
       ['-492.4', '-', 'erratum 3383: −492.4 is 221 kJ/mol from the free energy the Al₂S₃ row’s own enthalpy and entropy give; the NBS tables (p. 2-129) print no free energy, and the page prints a dash'],
       ['CaSO_3·H_2O(s)', 'CaSO_3·2H_2O(s)', 'erratum 3384: −1752.68, −1555.19, 184.10 are self-consistent only for the dihydrate (−1554.7 computed), not the monohydrate (−1624.3)'],
+      ['-576.27', '-567.27', 'erratum 3385: the enthalpy of formation of KF(s) is −567.27 kJ/mol (NBS tables, p. 2-329); two digits are exchanged'],
+      ['-1378.83', '-1387.83', 'erratum 3386: the enthalpy of formation of Mn₃O₄(s) is −1387.8 kJ/mol (NBS tables, p. 2-191); two digits are exchanged'],
+      ['0.00', '-', 'erratum 3387: an entropy of 0.00 for HgSO₄(s) is impossible for a compound at 298 K; the NBS tables (p. 2-151) print no entropy, and the page prints a dash'],
+      ['-1124.3', '-', 'erratum 3388: −1124.3 is 17.5 kJ/mol from the free energy the H₃PO₄(l) row’s own enthalpy and entropy give; the NBS tables (p. 2-73) print no free energy for the liquid'],
+      ['110.5', '-', 'erratum 3388: 110.5 J/(K·mol) is the entropy of solid H₃PO₄ (110.50, the row above); the NBS tables print no entropy for the liquid'],
     ],
   },
   // Appendix H: nine formulas are printed as images; the Lewis structures

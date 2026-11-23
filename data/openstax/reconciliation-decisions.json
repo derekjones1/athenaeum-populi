@@ -7398,7 +7398,7 @@
       ],
       "status": "correct-local-source-defect",
       "errataEntry": 3085,
-      "rationale": "The source solution prints \"459.6 kJ\" for the heat released when 1 mole of manganese is burned to Mn3O4: Appendix G's −1378.83 has six figures and the 3 in 3 Mn is exact, so −1378.83 ÷ 3 = −459.610 and the fill-in keys 459.610. The page keys that value with a visible Source note beside the item and a footer clause, and tools/verify/verify-source-keys.mjs lists the item (fs-idp161282368) in DISCLOSED_DEVIATIONS; the erratum holds the arithmetic. Ruled by the orchestrator after the checker, the consistency reading, and the blind solve, November 14, 2026."
+      "rationale": "The source solution prints \"459.6 kJ\" for the heat released when 1 mole of manganese is burned to Mn3O4: it follows from Appendix G's −1378.83, which has two digits exchanged (erratum 3386; the NBS tables give −1387.8, and the page's appendix prints −1387.83). The value has six figures and the 3 in 3 Mn is exact, so −1387.83 ÷ 3 = −462.610 and the fill-in keys 462.610 (re-keyed from 459.610 on November 23, 2026, when the appendix row was corrected). The page keys that value with a visible Source note beside the item and a footer clause, and tools/verify/verify-source-keys.mjs lists the item (fs-idp161282368) in DISCLOSED_DEVIATIONS; the erratum holds the arithmetic. Ruled by the orchestrator after the checker, the consistency reading, and the blind solve, November 14, 2026."
     },
     {
       "localPath": "content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md",
@@ -9066,6 +9066,50 @@
       "status": "correct-local-source-defect",
       "errataEntry": 3384,
       "rationale": "Appendix G labels the row −1752.68, −1555.19, 184.10 as CaSO₃·H₂O(s). With the table’s own element entropies the three values give a free energy of −1554.7 for the dihydrate and −1624.3 for the monohydrate; an independent compilation (chemister.ru, calcium sulfite dihydrate) lists −1753 and 184 for CaSO₃·2H₂O. The NBS tables of 1982 (p. 2-269) list only the anhydrous salt and the hemihydrate. The page labels the row CaSO₃·2H₂O(s); the values are kept. No module of the book uses the row. Recommended by the orchestrator and approved by Derek, November 18, 2026. Disclosed by a Source note after the table, a footer clause, and a TABLE_NOTES deviation in tools/verify/verify-source-tables.mjs."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/g-standard-thermodynamic-properties-for-selected-substances.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68865",
+      "sourceElementIds": [
+        "fs-idp78188768"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3385,
+      "rationale": "Appendix G’s KF(s) row prints an enthalpy of formation of −576.27; the NBS tables (Wagman et al., 1982, p. 2-329) give −567.27, −537.75, 66.57, and −567.27 reproduces the row’s own free energy (−537.6 against −537.75) where −576.27 gives −546.6. Two digits are exchanged. The page prints −567.27. Disclosed by a Source note after the table, a footer clause, and a TABLE_NOTES deviation in tools/verify/verify-source-tables.mjs. NBS page read by the orchestrator, November 23, 2026; approved by Derek."
+    },
+{
+      "localPath": "content/physical-sciences/chemistry/appendices/g-standard-thermodynamic-properties-for-selected-substances.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68865",
+      "sourceElementIds": [
+        "fs-idp78188768"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3386,
+      "rationale": "Appendix G’s Mn₃O₄(s) row prints an enthalpy of formation of −1378.83; the NBS tables (p. 2-191) give −1387.8, −1283.2, 155.6, and −1387.83 (−331.7 kcal, the value the row’s other digits come from) reproduces the row’s own free energy (−1283.3 against −1283.23) where −1378.83 gives −1274.3. Two digits are exchanged. The page prints −1387.83 (Derek chose the source’s digits with the exchange undone over the tables’ −1387.8). Section 5.3’s exercise fs-idp161282368 reads this row and is re-keyed from 459.610 to 462.610. Disclosed by a Source note after the table, a footer clause, and a TABLE_NOTES deviation in tools/verify/verify-source-tables.mjs. NBS page read by the orchestrator, November 23, 2026; approved by Derek."
+    },
+{
+      "localPath": "content/physical-sciences/chemistry/appendices/g-standard-thermodynamic-properties-for-selected-substances.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68865",
+      "sourceElementIds": [
+        "fs-idp78188768"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3387,
+      "rationale": "Appendix G’s HgSO₄(s) row prints an entropy of 0.00, which no compound has at 298 K; the row’s enthalpy and free energy imply about 138. The NBS tables (p. 2-151) print only the enthalpy, −707.5, for crystalline HgSO₄. The page prints a dash for the entropy and keeps the enthalpy and the free energy. Disclosed by a Source note after the table, a footer clause, and a TABLE_NOTES deviation in tools/verify/verify-source-tables.mjs. NBS page read by the orchestrator, November 23, 2026; approved by Derek."
+    },
+{
+      "localPath": "content/physical-sciences/chemistry/appendices/g-standard-thermodynamic-properties-for-selected-substances.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68865",
+      "sourceElementIds": [
+        "fs-idp78188768"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3388,
+      "rationale": "Appendix G’s H₃PO₄(l) row prints −1266.9, −1124.3, 110.5. The enthalpy is the liquid’s (NBS tables, p. 2-73: −1266.9, no free energy, no entropy); 110.5 is the entropy of the solid (110.50, the row above), and −1124.3 is 17.5 kJ/mol from the free energy the row’s enthalpy and entropy give (−1106.8). The page prints dashes for the free energy and the entropy. Disclosed by a Source note after the table, a footer clause, and a TABLE_NOTES deviation in tools/verify/verify-source-tables.mjs. NBS page read by the orchestrator, November 23, 2026; approved by Derek."
     }
   ]
 }

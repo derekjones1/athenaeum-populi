@@ -717,13 +717,13 @@ its ΔH° is twice the standard enthalpy of formation of H₂O(g)
 
 {{< fillin
   question="How many kilojoules of heat will be released when exactly 1 mole of manganese, Mn, is burned to form Mn₃O₄(*s*) at standard state conditions? (Standard enthalpies of formation are in [Appendix G](/physical-sciences/chemistry/appendices/g-standard-thermodynamic-properties-for-selected-substances/).)"
-  answer="459.610"
+  answer="462.610"
   answerForm="sig-figs:6 last-digit:1"
-  answerDisplay="$459.610\ \text{kJ}$"
+  answerDisplay="$462.610\ \text{kJ}$"
   hint="Find the standard enthalpy of formation of Mn₃O₄(s) in Appendix G, and recall what amount of substance it refers to; the heat released is the size of the enthalpy change."
 >}}
 
-*Source note:* the answer graded here is not the one the source prints for this exercise; the graded answer is written to the figures its data give.
+*Source note:* the answer graded here is not the one the source prints for this exercise; the source works it from −1378.83 kJ/mol, the enthalpy of formation its Appendix G prints for Mn₃O₄(*s*) with two digits exchanged, where the graded answer is worked from the corrected −1387.83 kJ/mol that Appendix G of this book prints, and is written to the figures that value gives.
 
 {{< fillin
   question="From the molar heats of formation in [Appendix G](/physical-sciences/chemistry/appendices/g-standard-thermodynamic-properties-for-selected-substances/), determine how much heat is required to evaporate one mole of water: $\ce{H2O(l) -> H2O(g)}$. Enter the heat in kJ/mol."

@@ -39454,14 +39454,6 @@
    "verdict": "ok",
    "note": "Practice obj4-1b: substitute y=6 into x^2/400+y^2/144=1 -> x^2=400*(1-36/144)=300 -> x=sqrt300=17.3205...->17.32; matches CNXML fs-id1377350 solution 'Distance = 17.32 feet'; full precision and rounded-intermediate paths agree. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
-  "4c39674e05760269": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp161282368 (printed 57); 1378.83/3 = 459.610 (six figures), correction",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "4c441089d504ab5b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -77283,6 +77275,15 @@
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
+   }
+  },
+  "97e71642f6825ce8": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp161282368 (printed 57); 1387.83/3 = 462.610 (six figures), correction: the source's 459.6 follows Appendix G's misprinted -1378.83 (errata 3085, 3386); re-keyed November 23, 2026",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "462.61 is the same value with the trailing zero untyped; the grader takes it under sig-figs:6 last-digit:1 (probed November 23, 2026: 462.610 and 462.61 correct, 462.6 and 462.60 incorrect), so the form refuses no right answer and the key stays 462.610, as ruled for 459.610 on November 14. The Source-note ambiguity the solver reports (-1387.8 against -1387.83) was a wording gap in the appendix note, reworded the same day; the row value -1387.83 is the authority (erratum 3386)."
    }
   },
   "97e9770a20aa2f02": {

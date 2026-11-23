@@ -5490,6 +5490,7 @@ the cause is known.
 - The seven rows above want the same treatment as calcite (open the NBS page,
   correct, erratum) before chapters 15 and 16 read the appendix. No finished page
   prints any of their values (a search of the book's pages for each number).
+  *(Wrong for Mn₃O₄: Section 5.3 keyed an exercise from it; see November 23.)*
 
 ## Appendix G's seven self-inconsistent rows (November 18, 2026)
 
@@ -5529,7 +5530,71 @@ needed a decision, for the fixes to be applied and the errata submitted.
   erratum: 3385.
 - **Still open from the scan:** the seven rows off by 5 to 9 kJ/mol (Mn₃O₄,
   AlCl₃·6H₂O, KF, CH₂Cl₂(*l*), AlF₃, CCl₄ twice) and the seventeen rows the
-  scan could not read.
+  scan could not read. **Closed November 23, 2026** (the next section).
+
+## Appendix G's four further rows, and the scan's open list closed (November 23, 2026)
+
+Derek asked what to do with the rows the November 18 scan left open. The
+scan was rebuilt to read every row (phases typeset as math, the cobalt
+complexes, ions of an element with no row of its own, checked with the NBS
+element entropies), and each flagged row was read on its page of the NBS
+tables.
+
+- **Four source defects, corrected (Derek approved; errata 3385–3388).**
+
+  | Row as the source prints it | NBS tables | Page now prints | Erratum |
+  |---|---|---|---|
+  | KF(*s*) −576.27, −537.75, 66.57 | −567.27, −537.75, 66.57 (p. 2-329) | enthalpy −567.27 | 3385 |
+  | Mn₃O₄(*s*) −1378.83, −1283.23, 155.64 | −1387.8, −1283.2, 155.6 (p. 2-191) | enthalpy −1387.83 | 3386 |
+  | HgSO₄(*s*) −707.51, −594.13, 0.00 | −707.5 only (p. 2-151) | entropy a dash | 3387 |
+  | H₃PO₄(*l*) −1266.9, −1124.3, 110.5 | −1266.9 only (p. 2-73) | free energy and entropy dashes | 3388 |
+
+  KF and Mn₃O₄ have two neighboring digits exchanged. Derek chose −1387.83
+  (the source's digits with the exchange undone; it is −331.7 kcal, the
+  conversion the row's other values come from) over the tables' −1387.8.
+  HgSO₄ and H₃PO₄(*l*) were new finds of the rebuilt scan: the old one could
+  not read a phase typeset as math.
+- **A finished graded item read one of the rows.** Section 5.3's manganese
+  exercise (`fs-idp161282368`, printed 5.57) keyed 459.610 from the
+  misprinted −1378.83; the source's own 459.6 follows the same misprint. It
+  is re-keyed to 462.610, its Source note says why, erratum 3085 and its
+  decisions and `DISCLOSED_DEVIATIONS` entries are rewritten, and the item
+  was blind-solved again. The November 18 note “No finished page prints any
+  of their values” was wrong: it searched the pages for each printed number,
+  and a key is the number divided by three. **The search that works is by
+  substance in the source's exercises** (the formula in the CNXML of every
+  module), not by value in the pages.
+- **Mixed data sources, left as printed (Derek agreed).** AlF₃(*s*)
+  (source −1510.4, −1425, 66.5; NBS −1504.1, −1425.0, 66.44, p. 2-127),
+  AlCl₃·6H₂O(*s*) (−2691.57, −2269.40, 376.56; NBS −2691.6, −2261.1, 318.0,
+  p. 2-128), CH₂Cl₂(*l*) (−124.2, −63.2, 177.8; NBS −121.46, −67.26, 177.8,
+  p. 2-86), CCl₄(*l*) (−128.2, −62.5, 214.4; NBS −135.44, −65.21, 216.40) and
+  CCl₄(*g*) (−95.7, −58.2, 309.7; NBS −102.9, −60.59, 309.85, p. 2-85). Each
+  value is a published one from another compilation; the three do not agree
+  to better than 5 to 9 kJ/mol because they were not measured together. No
+  single misprint, so no correction. FeO(*s*) and S₂O₃²⁻(*aq*) are off by
+  about 4 kJ/mol the same way; their NBS pages were not opened.
+- **The rows corrected on November 18 stay corrected.** Derek asked whether
+  to revert them, both sources being “accurate”. They are a different case:
+  a dropped sign, a slipped decimal point, a wrong charge, a row 400 kJ/mol
+  from its own values. The source row was wrong against every compilation
+  and against itself, where a mixed-source row is right against the
+  compilation it came from.
+- **For chapter 16:** the source's exercise on the normal boiling point of
+  dichloromethane (m68819) reads the CH₂Cl₂(*l*) and (*g*) rows, one of which
+  is mixed-source. It is keyed from the rows as printed (one data set, one
+  answer); the checker should expect a boiling point some way from the
+  measured 313 K and say so in the model answer.
+- **What the scan cannot see** is unchanged: a row whose three values agree
+  but belong to another substance. Reading all 316 rows against the NBS
+  tables would close that; not done.
+- NBS scan index (PDF page = printed 2-N + 8): carbon chlorides 93–95,
+  aluminum 135–136, mercury 158–160, manganese 199, potassium 336–337.
+- **Changed:** four appendix rows, a third Source note, the footer clause,
+  five `TABLE_NOTES` deviations, four decisions entries; Section 5.3's key,
+  Source note, gate reason, decisions rationale; `docs/subjects/chemistry.md`
+  “Figure counts of a key”. Next free erratum: 3389.
+
 
 ## The `\dfrac` watch list
 

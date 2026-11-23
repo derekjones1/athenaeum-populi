@@ -1236,7 +1236,7 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     exercise: 'fs-idp161282368',
     kind: 'key',
     erratum: 3085,
-    reason: 'the source solution prints "459.6 kJ" for the heat released when 1 mole of manganese is burned to Mn3O4: Appendix G\'s −1378.83 has six figures and the 3 in 3 Mn is exact, so −1378.83 ÷ 3 = −459.610 and the fill-in keys 459.610',
+    reason: 'the source solution prints "459.6 kJ" for the heat released when 1 mole of manganese is burned to Mn3O4: it follows from −1378.83, the enthalpy of formation Appendix G prints with two digits exchanged (erratum 3386; the page\'s appendix prints −1387.83), which has six figures, and the 3 in 3 Mn is exact, so −1387.83 ÷ 3 = −462.610 and the fill-in keys 462.610',
   },
   {
     page: 'content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md',
