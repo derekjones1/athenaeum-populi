@@ -2821,7 +2821,9 @@ So the next reader need not raise them again:
   a part's whole lead-in restated on each item (house form).
 - **From memory, not opened**: the EPA lead action level (15 ppb, a later
   rule lowers it), D5W as percent by mass, the Cullinan's date, HgCl₂(s) in
-  4.5's serum stem against 4.2's solubility table. With chapter 3's six
+  4.5's serum stem against 4.2's solubility table [November 23, 2026: opened
+  in the correctness audit's fix pass (ICSC 0979, 69 g/L at 20 °C); the stem
+  prints HgCl₂(*aq*) with a Source note, erratum 3392]. With chapter 3's six
   claims the errata log still records as "no source opened", this is the
   backlog run.md's own rule ("opens a source for every such finding")
   says should not exist.
@@ -3537,8 +3539,14 @@ From the "Reviewed and not errata (chapter 6)" block of
 - Ca and Sc IE₅: NIST's values are bracketed, not measured, so the cells and the
   "Not available" cells stand without a note.
 - Y, Zr, Nb, Os, and Ir in the first-ionization-energy figure (18–26 kJ/mol
-  from NIST): not named on the page, flagged for a ruling.
-- The unchecked electron-affinity cells (Li, K, I, Te, Po, N, At), "the second
+  from NIST): not named on the page, flagged for a ruling. [November 23,
+  2026: the ruling never came, and the cells were not the only ones. Every
+  cell was read against the NIST ASD in the correctness audit's fix pass:
+  26 of 72 differ by more than rounding, all now named in the Source note;
+  the twenty not in errata 3131–3132 are erratum 3395.]
+- The unchecked electron-affinity cells (Li, K, I, Te, Po, N, At) [November
+  23, 2026: At is now checked, measured −233 (Leimbach et al. 2020), named in
+  the Source note, erratum 3396; the other six remain unchecked], "the second
   element in the group most often has the most negative EA" (true in four of
   seven groups with the corrected cells), the Crab nebula's date and
   colours, and the Example 6.11 solutions' label for the parent atom.
@@ -5037,7 +5045,9 @@ the claim pass's saved copy was read, and the page's note quotes nothing.
 ### Kept as printed
 
 "At sea level" on 9.3's vapor-pressure graph and table; "In 1832, Thomas
-Graham studied the rates of effusion" (not opened); the molar mass of air,
+Graham studied the rates of effusion" (not opened) [November 23, 2026: opened
+in the correctness audit's fix pass; Graham's effusion paper is of 1846, the
+page prints 1846 with a Source note, erratum 3400]; the molar mass of air,
 28.2 g/mol, in a 9.4 stem; the Iran sentence of the enrichment box; the
 balloon exercise's silence on the balloon's pressure in parts (d)–(f) (part
 (a) asks it); "amount of A = amount of B" in 9.4's xenon example.
@@ -5254,7 +5264,12 @@ one rendered-page reader together; all three resumed by `SendMessage`.
   lattice energies".
 - **Stem data kept as printed with a Source note** (Derek, November 17):
   ammonia's 4.8 kJ/mol, liquid carbon dioxide's 9.8 kJ/mol, the alcohol
-  vapor pressures, the cylinder at 65 atm and 20 °C.
+  vapor pressures, the cylinder at 65 atm and 20 °C. [November 23, 2026:
+  the carbon dioxide note was wrong. The WebBook rows it cited (16.4 at
+  258 K, 16.7 at 288 K) are slopes of vapor-pressure fits over wide
+  ranges, and the saturation properties give 9.8 kJ/mol at about 276 K, a
+  sound value for the liquid. The note and its footer clause were removed
+  and erratum 3335 withdrawn.]
 - **Kept as printed, no note**: chlorine's 238 K, isopentane's 27 °C,
   fluorine's 72 pm, SO₂'s 7800 kPa, the carbon dioxide figure's critical
   point drawn at 25 °C, the Bragg example's 0.154 nm.
@@ -5694,6 +5709,147 @@ scan (all eleven agree to the digit).
   | Li(OH)(*s*) | −487.5, −441.5, 42.8 | -484.93, -438.95, 42.80 | 2-290 | DIFF |
   | Rb⁺(*aq*) | −246, −282.2, 124 | -251.17, -283.98, 121.50 | 2-356 | DIFF |
   | Cs⁺(*aq*) | −248, −282.0, 133 | -258.28, -292.02, 133.05 | 2-367 | DIFF |
+
+## Correctness audit and fix pass (November 23, 2026)
+
+With chapters 1–11 (to 11.2) and three Knowledge Checks finished, the parent
+ran a correctness audit of everything published so far, then a fix pass on
+what it found.
+
+### The audit
+
+- **Twenty Opus reviewers** read the 57 section pages and the three
+  Knowledge Checks in groups, each re-solving every key on its pages and
+  reading the prose for claims.
+- **A seeded blind solve of 248 items** by four Opus solvers, keys hidden:
+  234 agree, 0 disagree, 14 flags. Every flag was adjudicated, and none is a
+  defect.
+- The findings went to four Opus fixers (A: 1.4 and 1.6; B: 4.2, 4.5, 5.3;
+  C: 6.4, 6.5, 7.5, 7.6, 8.4; D: 9.2, 9.4, 9.6, 10.3), each told to open a
+  reference for every claim it changed. The parent read every edit and
+  ruled on each draft; a records agent filed the errata and the decisions
+  entries.
+
+### Fixed, with errata 3390–3401
+
+| Page | Change | Erratum |
+|---|---|---|
+| 1.4 | the kilogram paragraph: the liter of water set as the original definition, before the CGPM's prototype; Source note and footer clause extended | 2894 (addendum) |
+| 1.4 | dry air in the gas column, 1.20 → 1.18 g/L (the column is headed 25 °C and 1 atm; 1.20 is the value near 20 °C) | 3390 |
+| 1.6 | “0 °C is defined as the freezing temperature” → “was formerly defined” | 3391 |
+| 4.5 | the serum chloride stem's HgCl₂(*s*) → HgCl₂(*aq*) (69 g/L at 20 °C); key unchanged | 3392 |
+| 5.3 | the ozone example's “heat produced” → “heat absorbed” | 3393 |
+| 6.4 | the unpaired-electrons item: a closing sentence asks for the option naming every atom, since the source's answer calls Si and S each correct | 3394 |
+| 6.5 | the first-ionization-energy Source note names all 26 cells that differ from NIST by more than rounding, not four plus Ge and As | 3395 (with 3131, 3132) |
+| 6.5 | the electron-affinity Source note adds astatine's measured −233 (the table's −270 is calculated) | 3396 |
+| 6.5 | the aluminum 143 pm note cited Section 10.6, which prints no such value; it now cites the source's Exercise 84 of Chapter 10, which the book leaves out | none (ours) |
+| 7.5 | “the remaining bonds are easier to break” → the four successive C–H bond energies, 439, 459, 426, 341 kJ/mol | 3397 |
+| 7.6 | the HCN Lewis structure given its lone pair on nitrogen (kept as printed on November 15) | 3171 (updated) |
+| 8.4 | “O₂ = (8 − 4)/2 = 2” → “bond order in O₂ = …” | 3398 |
+| 9.2 | the “directly proportional” model answer completed: both change by the same factor | 3399 |
+| 9.4 | Graham's effusion study, 1832 → 1846 | 3400 |
+| 9.6 | the “Was this justified?” model answer: high pressure and *low* temperature | 3401 |
+| 10.3 | the CO₂ enthalpy-of-vaporization Source note removed (see below) | 3335 withdrawn |
+
+Each correction carries a visible Source note and a footer clause, and each
+erratum a `reconciliation-decisions.json` entry; 3171 gained one, and the
+rationales of 2894, 3131, and 3134 say what changed. None of the twelve new
+errata has been checked against the live edition or the public errata list.
+
+### Withdrawn: erratum 3335
+
+The 10.3 note said the source's 9.8 kJ/mol for liquid CO₂ was wrong, citing
+the WebBook's 16.4 kJ/mol at 258 K and 16.7 at 288 K. Those rows carry
+method code A, “calculated from the vapor pressure data … by the method of
+least squares”, over 216–273 K and 273–304 K: slopes of fits, not values at
+a temperature. The WebBook's saturation properties give ΔvapH falling from
+15.2 kJ/mol at 220 K to 4.6 at 300 K, and 9.8 at about 276 K. The source is
+right. The note, its footer clause, and the decisions entry are gone; the
+erratum stays numbered, marked WITHDRAWN and “do not submit”.
+
+### Declined, or left for Derek
+
+- **4.2, Ca(OH)₂(*aq*) in the Ca + H₂O equation key.** By the page's own
+  solubility table Ca(OH)₂ is insoluble; the key is the source's. The ruling
+  in `docs/subjects/chemistry.md` (~line 1728, “An equation key keeps the
+  source's state symbols”) settled this case with the `form` message, and
+  the grader ignores `accept` on equations. A key with no state on Ca(OH)₂
+  would grade (s), (aq), and none correct, but it breaks the ruling: **for
+  Derek.** No change.
+- **4.2, the pickling sentence** (“harmful bacteria, which require a basic
+  environment”): the body keeps the source's false clause, corrected only by
+  the Source note below it, while the same paragraph's “starches” was
+  corrected in the body (erratum 3032). Inconsistent; no change this pass.
+- **9.1, “the approximate latitude of Paris (45°)”.** The finding holds
+  (Paris is at 48°50′ N; 45° is the latitude at which the standard gravity
+  under the 760 mm column was believed to hold, NBS Monograph 8). A
+  corrected sentence, Source note, footer clause, and erratum are drafted;
+  **awaiting Derek**. The errata file's “Reviewed and not errata” line
+  stands until then.
+- **10.6, SrH₂ listed among the fluorite-type compounds** (it is
+  cotunnite-type): not opened, kept as printed, as before.
+- **10.6, calcium's 1.53 g/cm³** and its significant figures: kept.
+- **3.1, the Summary's Avogadro sentence**: kept.
+- **1.4, nitrogen 1.14, carbon dioxide 1.80, neon 0.83 g/L.** Fixer A
+  corrected these with dry air; the parent reverted them. Each is one unit
+  in the last digit from the WebBook's 1.145, 1.808, 0.824 g/L, defensible
+  rounding, and the November 9 ruling stands for them. Only dry air, two
+  units off and at the wrong temperature, is filed.
+
+### Items re-opened
+
+- **6.4, line ~258**, the unpaired-electrons `multiplechoice`: a closing
+  sentence added to the stem and the hint reworded; key and options
+  unchanged.
+- **4.5, line ~199**, the serum chloride `fillin`: the stem's HgCl₂(*s*) →
+  HgCl₂(*aq*); key unchanged.
+
+Both stems are re-hashed and need the blind re-solve. The 9.2 and 9.6
+changes are self-check model answers and rubrics, not keyed items.
+
+### What the process got wrong
+
+- **A Source note cited NIST rows without reading their method column.**
+  The 10.3 note (erratum 3335) took two WebBook enthalpies of vaporization
+  at face value; they were vapor-pressure fits over 60–90 K ranges, and the
+  288 K value is not even physically possible at 288 K. A cited table row is
+  read with its method and its range, and a value checked against the
+  saturation table where one exists.
+- **“Not opened; kept as printed” rulings were never revisited.** Graham's
+  1832, astatine's −270, HgCl₂(*s*), and Paris's 45° sat as “not opened”
+  or “from memory”, and the five ionization-energy cells as “flagged for a
+  ruling”, from November 14–17 until this audit; each finding held once a
+  source was opened. An unopened or unruled line is an open item, not a
+  closed one.
+- **A both/and option set was keyed without judging each option alone.**
+  The 6.4 item followed the playbook's rule (key the part the answer calls
+  best) while the source's own answer called two other options correct.
+  Every option of a choice item is judged on its own against the stem.
+- **The first audit was fast.** Its reviewers spent two to four minutes a
+  group and opened few figures, so a figure's cells, labels, and alt text
+  were barely read. A slower second pass, figures opened, follows.
+- Erratum 3131 said “every other cell is within 15 kJ/mol” of NIST; 15 is
+  not the rounding bound, and As (15.6) was outside it. Corrected in place
+  with a dated note.
+
+### Records changed
+
+`docs/openstax-errata.md`: errata 3390–3401 under their own heading;
+2894's addendum; 3335 withdrawn; 3131, 3132, 3134, 3171 updated with dated
+sentences; the 1.4 gas-column, 6.5 ionization-energy and electron-affinity,
+and 9.4 Graham “Reviewed and not errata” bullets updated.
+`data/openstax/reconciliation-decisions.json`: the 3335 entry removed,
+entries for 3171 and 3390–3401 added, three rationales extended. In this
+file, the November 15 (chapter 6), November 17 (9.4 Graham), November 18
+(10.3 CO₂) and November 14 (4.5 HgCl₂) lines carry dated corrections.
+
+### Next
+
+The parent's open items: a `DISCLOSED_DEVIATIONS` line for 9.2's
+`fs-idm153017968(a)` (the source-keys gate fails the model answer at 64 %
+coverage without one); the blind re-solve of the two re-opened items; the
+6.5 Source note's “Cu 740 and 746” (NIST 7.726380 eV × 96.485 is 745.5,
+745 to the unit); the 9.1 Paris ruling; then the slower second audit.
 
 ## The `\dfrac` watch list
 

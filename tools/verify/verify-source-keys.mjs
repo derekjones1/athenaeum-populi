@@ -1421,6 +1421,13 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     reason: 'the source answer prints "5561 L", four figures, for 35.4 L × 151 atm × 310.15 K ÷ 298.15 K = 5560.5 L; the stem\'s volume and pressure have three figures each and every other key of the module keeps the figures of its data, so the fill-in keys 5.56 × 10³ at three significant figures',
   },
   {
+    page: 'content/physical-sciences/chemistry/09-gases/02-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law.md',
+    exercise: 'fs-idm153017968(a)',
+    kind: 'solution',
+    erratum: 3399,
+    reason: 'the source solution to part (a) says only "The number of particles in the gas increases as the volume increases", which any increasing relation satisfies; the model answer adds "if the volume increases by a certain factor, the number of particles increases by the same factor", as the section says of direct proportion',
+  },
+  {
     page: 'content/physical-sciences/chemistry/09-gases/03-stoichiometry-of-gaseous-substances-mixtures-and-reactions.md',
     exercise: 'fs-idp143452448#check',
     kind: 'key',

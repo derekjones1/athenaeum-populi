@@ -6437,7 +6437,7 @@
       ],
       "status": "correct-local-source-defect",
       "errataEntry": 2894,
-      "rationale": "The paragraph says the kilogram was previously defined by the International Union of Pure and Applied Chemistry (IUPAC). The SI units are defined by the General Conference on Weights and Measures (CGPM) under the Metre Convention (BIPM, The International System of Units, 9th edition, 2019). The page prints the CGPM with a visible Source note directly after the paragraph and a footer clause; only the attribution is changed. Found by the prose claim pass (F8), ruled by the orchestrator, November 9, 2026."
+      "rationale": "The paragraph says the kilogram was previously defined by the International Union of Pure and Applied Chemistry (IUPAC). The SI units are defined by the General Conference on Weights and Measures (CGPM) under the Metre Convention (BIPM, The International System of Units, 9th edition, 2019). The page prints the CGPM with a visible Source note directly after the paragraph and a footer clause; only the attribution is changed. Found by the prose claim pass (F8), ruled by the orchestrator, November 9, 2026. November 23, 2026 (addendum to erratum 2894, correctness audit A1): the paragraph's next sentence made the liter of water the defining body's reference object; the page now prints “The kilogram was originally defined as the mass of one liter of pure water. It was later defined by the General Conference on Weights and Measures (CGPM) as the mass of a specific reference object, a metal cylinder …”, the Source note covering both sentences (NIST, SI Units – Mass; BIPM SI Brochure, 9th edition) and the footer clause extended."
     },
     {
       "localPath": "content/physical-sciences/chemistry/01-essential-ideas/05-measurement-uncertainty-accuracy-and-precision.md",
@@ -7605,7 +7605,7 @@
       ],
       "status": "correct-local-source-defect",
       "errataEntry": 3131,
-      "rationale": "The first-ionization-energy table prints Bi 800, P 1060, Hf 700, and Ta 760 kJ/mol; the NIST Atomic Spectra Database (https://physics.nist.gov/PhysRefData/ASD/ionEnergy.html) gives 703, 1012, 659, and 728. The page keeps the figure and its extended description and adds a visible Source note after the figure naming the four cells as printed and as measured, and a footer clause. Found by the prose claim pass (F18), ruled by the orchestrator, November 15, 2026."
+      "rationale": "The first-ionization-energy table prints Bi 800, P 1060, Hf 700, and Ta 760 kJ/mol; the NIST Atomic Spectra Database (https://physics.nist.gov/PhysRefData/ASD/ionEnergy.html) gives 703, 1012, 659, and 728. The page keeps the figure and its extended description and adds a visible Source note after the figure naming the four cells as printed and as measured, and a footer clause. Found by the prose claim pass (F18), ruled by the orchestrator, November 15, 2026. Since November 23, 2026 the note names all 26 cells that differ from NIST by more than rounding (erratum 3395)."
     },
     {
       "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/05-periodic-variations-in-element-properties.md",
@@ -7642,7 +7642,7 @@
       ],
       "status": "correct-local-source-defect",
       "errataEntry": 3134,
-      "rationale": "The electron-affinity table prints B −23, Si −120, Ge −115, Sn −121, Pb −101, As −7, Bi −101, Tl −50, and F −322 kJ/mol, and the paragraph gives fluorine as −322; the NIST Chemistry WebBook (https://webbook.nist.gov/chemistry/) gives −27, −134, −119, −107, −35, −78, −91, −36, and −328. The page keeps the figure and its extended description, prints −328 in the paragraph, and adds a visible Source note after the figure listing each cell as printed and as measured, and a footer clause. Found by the prose claim pass (F16), ruled by the orchestrator, November 15, 2026."
+      "rationale": "The electron-affinity table prints B −23, Si −120, Ge −115, Sn −121, Pb −101, As −7, Bi −101, Tl −50, and F −322 kJ/mol, and the paragraph gives fluorine as −322; the NIST Chemistry WebBook (https://webbook.nist.gov/chemistry/) gives −27, −134, −119, −107, −35, −78, −91, −36, and −328. The page keeps the figure and its extended description, prints −328 in the paragraph, and adds a visible Source note after the figure listing each cell as printed and as measured, and a footer clause. Found by the prose claim pass (F16), ruled by the orchestrator, November 15, 2026. Since November 23, 2026 the note also gives astatine's measured −233 (erratum 3396)."
     },
     {
       "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/05-periodic-variations-in-element-properties.md",
@@ -8826,17 +8826,6 @@
       "rationale": "The heating-curve example prints the water term as 56,500 J; 135 g × 4.18 J/g °C × 100 °C is 56,430 J, and the printed total, 416 kJ, adds rounded terms (the source’s own carried data give 415.4). The page prints the carried term (56,484 J with Appendix E’s specific heat) and the total 415 kJ, with the example’s Source note. Found by the 10.3 author, ruled by the orchestrator, November 18, 2026."
     },
     {
-      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/03-phase-transitions.md",
-      "bundle": "chemistry-bundle",
-      "moduleId": "m68768",
-      "sourceElementIds": [
-        "fs-idm198895584"
-      ],
-      "status": "correct-local-source-defect",
-      "errataEntry": 3335,
-      "rationale": "The exercise on carbon disulfide gives the enthalpy of vaporization of CO₂(l) as 9.8 kJ/mol; the NIST Chemistry WebBook gives 16.4 kJ/mol at 258 K and 16.7 kJ/mol at 288 K. The stem, the options, and the model answer are kept as printed (stem data are kept), with a Source note after the self-check and a footer clause. Found by the claim pass (F15), ruled by the orchestrator, November 18, 2026."
-    },
-    {
       "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/04-phase-diagrams.md",
       "bundle": "chemistry-bundle",
       "moduleId": "m68769",
@@ -9121,6 +9110,155 @@
       "status": "correct-local-source-defect",
       "errataEntry": 3389,
       "rationale": "Appendix G’s Al(g) row prints an enthalpy of formation of 324.4; the NBS tables (Wagman et al., 1982, p. 2-127) give 326.4, 285.7, 164.54, the free energy and entropy matching the row to the digit. With 326.4 the row’s enthalpy and entropy give a free energy of 285.8 against the printed 285.7; with 324.4 they give 283.8. One digit differs. The page prints 326.4. Found by the reading of every row against the tables; disclosed by a Source note after the table, a footer clause, and a TABLE_NOTES deviation in tools/verify/verify-source-tables.mjs. NBS page read by the orchestrator, November 23, 2026; approved by Derek."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/06-molecular-structure-and-polarity.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68742",
+      "sourceElementIds": [
+        "fs-idp102593872"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3171,
+      "rationale": "The Molecular Simulation example draws the Lewis structure of HCN as H–C≡N, without the lone pair on nitrogen that Section 7.3 draws. Kept as printed on November 15, 2026; since November 23, 2026 the page draws the pair (H−C≡N with two dots after N), with a visible Source note after it and a footer clause. Reversed by the correctness audit's fix pass (C6), the parent accepting."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/01-essential-ideas/04-measurements.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68674",
+      "sourceElementIds": [
+        "fs-idm45639696"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3390,
+      "rationale": "The Densities of Common Substances table gives dry air 1.20 g/L in a gas column headed “at 25 °C and 1 atm”; with dry air’s molar mass of 28.9586 g/mol (Lemmon et al., J. Phys. Chem. Ref. Data 29, 331, 2000) the density at 25 °C and 1 atm is 1.18 g/L, 1.20 being its density near 20 °C. The page prints 1.18 with a visible Source note after the table and a footer clause. Nitrogen 1.14, carbon dioxide 1.80, and neon 0.83 differ from the NIST WebBook by one unit in the last digit and are kept as printed (the parent’s ruling). Found by the November 23, 2026 correctness audit (A2)."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/01-essential-ideas/06-mathematical-treatment-of-measurement-results.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68683",
+      "sourceElementIds": [
+        "fs-idm308860096"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3391,
+      "rationale": "The paragraph says that on the Celsius scale 0 °C “is defined as” the freezing temperature of water and 100 °C as its boiling temperature; that is how the scale used to be defined (BIPM, The International System of Units, 9th edition, 2019, §2.3.1: the Celsius temperature is t = T − 273.15 K). The page prints “was formerly defined”, with a visible Source note after the paragraph and a footer clause. Found by the November 23, 2026 correctness audit (A3)."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/05-quantitative-chemical-analysis.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68716",
+      "sourceElementIds": [
+        "fs-idp52490448",
+        "fs-idm49690448"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3392,
+      "rationale": "The serum chloride exercise’s equation prints the product as HgCl₂(s); mercury(II) chloride dissolves in water (69 g/L at 20 °C, ICSC 0979 via PubChem), and Section 4.2’s solubility guidelines make a chloride of Hg²⁺ soluble. The stem prints HgCl₂(aq), with a visible Source note after the item and the footer clause extended; the key, 9.6 × 10⁻³ M, is unchanged and the item was re-opened for a blind re-solve. Found by the November 23, 2026 correctness audit (B2)."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68727",
+      "sourceElementIds": [
+        "fs-idp95008768"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3393,
+      "rationale": "The ozone example says the ratio 286 kJ / 2 mol O₃ finds “the heat produced” when 1 mole of O₃(g) is formed; the example’s own first sentence calls the formation endothermic and ΔH° is +286 kJ. The page prints “the heat absorbed”, with a visible Source note after the example and a footer clause. Found by the November 23, 2026 correctness audit (B3)."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/04-electronic-structure-of-atoms-electron-configurations.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68734",
+      "sourceElementIds": [
+        "fs-idp162194832",
+        "fs-idm40971904"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3394,
+      "rationale": "The unpaired-electrons exercise offers (b) Si, (c) S, and (e) Both Si and S, and its answer says (b) and (c) are correct and (e) is the best answer, so three options answer the stem as printed. The page keeps the stem and adds the closing sentence “Choose the option that names every atom listed with two unpaired electrons.”, keyed “Both Si and S”, with a visible Source note after the item and the footer clause extended; the item was re-opened for a blind re-solve. Found by the November 23, 2026 correctness audit (C1)."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/05-periodic-variations-in-element-properties.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68735",
+      "sourceElementIds": [
+        "CNX_Chem_06_05_Firstionen",
+        "fs-idp85824640"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3395,
+      "rationale": "Twenty more cells of the first-ionization-energy table than errata 3131 and 3132 name differ from the NIST Atomic Spectra Database by more than rounding to the nearest 10 kJ/mol (Y, Zr, Nb, Os, Ir, Tc, W, Na, Mg, Cr, Mn, Ni, Cu, Pt, Hg, Si, Sn, Pb, Se, Rn; 5.5 to 26 kJ/mol). The figure and its extended description stay as printed; the Source note after the figure names all 26 cells as printed and as measured, and the footer clause says so. Found by the November 23, 2026 correctness audit (C2)."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/05-periodic-variations-in-element-properties.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68735",
+      "sourceElementIds": [
+        "CNX_Chem_06_05_Elaffin",
+        "fs-idm80294800"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3396,
+      "rationale": "The electron-affinity table gives astatine a calculated −270 kJ/mol; it was measured in 2020 at 2.41578 eV, −233 kJ/mol (Leimbach et al., Nature Communications 11, 3824). The figure stays as printed; the Source note after it gives the measured value and the footer clause names it. Found by the November 23, 2026 correctness audit (C4)."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/05-strengths-of-ionic-and-covalent-bonds.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68741",
+      "sourceElementIds": [
+        "fs-idp85707472"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3397,
+      "rationale": "The paragraph says that once the first C–H bond of methane is broken (439 kJ/mol) the remaining bonds are easier to break; the NIST WebBook enthalpies of formation (Chase, 1998) give successive bond energies of 438.6, 458.7, 425.7, and 340.5 kJ/mol, the second larger than the first. The page prints “breaking them one after another requires about 439, 459, 426, and 341 kJ/mol”, with a visible Source note after the paragraph and a footer clause. Found by the November 23, 2026 correctness audit (C5)."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/04-molecular-orbital-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68747",
+      "sourceElementIds": [
+        "fs-idm75364784"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3398,
+      "rationale": "The oxygen example’s equation reads “O₂ = (8 − 4)/2 = 2”, setting the molecule equal to a number, where the section’s equations for H₂ and He₂ begin “bond order in”. The page prints “bond order in O₂ = (8 − 4)/2 = 2”, with a visible Source note after it and a footer clause. Found by the November 23, 2026 correctness audit (C7)."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/02-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68751",
+      "sourceElementIds": [
+        "fs-idm153017968",
+        "fs-idm224240624"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3399,
+      "rationale": "The answer to “What is the meaning of the term ‘directly proportional’?” says only that the number of particles increases as the volume increases, which any increasing relation satisfies. The self-check’s model answer adds “if the volume increases by a certain factor, the number of particles increases by the same factor”, with a rubric clause, a visible Source note after the self-check, and a footer clause. Found by the November 23, 2026 correctness audit (D4)."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/04-effusion-and-diffusion-of-gases.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68754",
+      "sourceElementIds": [
+        "fs-idp161500496"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3400,
+      "rationale": "The paragraph dates Graham’s study of the rates of effusion to 1832; his effusion measurements are in “On the Motion of Gases”, Philosophical Transactions 136, 573–631 (1846), and his 1833 paper measured diffusion. The page prints 1846, with a visible Source note citing the 1846 paper and a footer clause. Found by the November 23, 2026 correctness audit (D3)."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/06-non-ideal-gas-behavior.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68759",
+      "sourceElementIds": [
+        "fs-idm46435024",
+        "fs-idp26561024"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3401,
+      "rationale": "The answer to part (b) of the compressibility exercise says the ideal gas approximation breaks down “at a high pressure and temperature”; the section and the same answer’s part (e) put the breakdown at low temperature. The self-check’s model answer and its second rubric clause read “at a high pressure and low temperature”, with a visible Source note after the self-check and a footer clause. Found by the November 23, 2026 correctness audit (D2)."
     }
   ]
 }

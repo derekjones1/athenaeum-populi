@@ -5636,14 +5636,6 @@
     "result": "agrees"
    }
   },
-  "0a9bcc8212d0f9b1": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp162194832: Si 3p² and S 3p⁴ each have two unpaired electrons, Mg none; source answer keys (e) Both Si and S as the best answer",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "0a9d90c6fdd9ed40": {
    "verdict": "ok",
    "note": "KC 2 5.2 § body Selective Permeability (fs-id1248539), m66374 — parent re-read against the module",
@@ -6212,6 +6204,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver (blind, masked pages)",
+    "result": "agrees"
+   }
+  },
+  "0b8d0c3db5a3c205": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp162194832: Si 3p² and S 3p⁴ each have two unpaired electrons, Mg none; source answer keys (e) Both Si and S as the best answer | re-hashed November 23, 2026 (correctness-audit fix pass): a closing sentence added to the stem so that only the combined option answers it (the single options Si and S are each true under the source's stem), disclosed by a Source note; key and options unchanged; blind re-solve agrees, no second defensible option",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -66842,14 +66842,6 @@
     "result": "agrees"
    }
   },
-  "833f3fb92aedc43a": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp52490448 (printed 4.81): source 9.6e-3 M Cl-; own 9.636e-3",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "834335d30daeb7e9": {
    "verdict": "ok",
    "note": "author-built from § Halogens: \"Other chemicals commonly used for disinfection are the halogens iodine , chlorine , and fluorine .\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -72378,10 +72370,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "8e56982e22f222e0": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm153017968 part (a) (printed 21): solution carried whole"
   },
   "8e5a047e07158d04": {
    "verdict": "ok",
@@ -100998,6 +100986,10 @@
     "result": "agrees"
    }
   },
+  "c7263bb2b853f6e7": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm89275552 part (b): the source's answer with one word added (high pressure and LOW temperature, as the section teaches), in the model answer and its rubric clause, disclosed by a Source note; erratum filed November 23, 2026 (correctness-audit fix pass); re-read by the parent"
+  },
   "c72cddade143f2ca": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -104119,6 +104111,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "cd69cffa9557639a": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm153017968 part (a) (printed 21): the source's solution plus one added sentence (the same-factor statement of direct proportion, from this section's own body) and a rubric clause for it, disclosed by a Source note; erratum filed November 23, 2026 (correctness-audit fix pass); re-read by the parent"
   },
   "cd6dc8c1dcf1b412": {
    "verdict": "ok",
@@ -112703,10 +112699,6 @@
     "result": "agrees"
    }
   },
-  "df5c72aa8357056d": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm89275552 part (b), answer verbatim"
-  },
   "df608af5427ca444": {
    "verdict": "ok",
    "note": "glossary recall: pleura (fs-id2345834) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -118127,6 +118119,14 @@
   "ea1c3772f0a831dc": {
    "verdict": "ok",
    "note": "Section exercise fs-id1165137676536: k=45/(100*3^3)=1/60; solve 60=(1/60)*150*d^3 => d^3=24 => d=cbrt(24)=2.884499... rounds to 2.88 inches. Verified with node arithmetic; matches CNXML solution '≈2.88 inches'; rounding disclosed in the question text. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "ea1c405201dd344c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp52490448 (printed 4.81): source 9.6e-3 M Cl-; own 9.636e-3 | re-hashed November 23, 2026 (correctness-audit fix pass): the stem's equation prints HgCl2(aq) where the source prints HgCl2(s), disclosed by a Source note; key and form unchanged; blind re-solve agrees",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "ea23cd519420f6c9": {
    "verdict": "ok",
