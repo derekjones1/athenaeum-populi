@@ -101,7 +101,8 @@ export const TABLE_NOTES = Object.freeze({
   // Seven more rows disagree with themselves (free energy recomputed from
   // the row's enthalpy and entropy) and are corrected from the same tables.
   // Four more (November 23, 2026): two transposed enthalpies, an entropy of
-  // 0.00, and a liquid's row carrying the solid's entropy.
+  // 0.00, and a liquid's row carrying the solid's entropy; and Al(g), one
+  // digit of the enthalpy, found by reading every row against the tables.
   'chemistry-bundle:m68865': {
     deviations: [
       ['-1220.0', '-1206.9', 'erratum 3377: −1219.97 kJ/mol is the enthalpy of formation of the dissolved ions; calcite is −1206.92 (NBS tables, 1982, p. 2-272)'],
@@ -120,6 +121,7 @@ export const TABLE_NOTES = Object.freeze({
       ['0.00', '-', 'erratum 3387: an entropy of 0.00 for HgSO₄(s) is impossible for a compound at 298 K; the NBS tables (p. 2-151) print no entropy, and the page prints a dash'],
       ['-1124.3', '-', 'erratum 3388: −1124.3 is 17.5 kJ/mol from the free energy the H₃PO₄(l) row’s own enthalpy and entropy give; the NBS tables (p. 2-73) print no free energy for the liquid'],
       ['110.5', '-', 'erratum 3388: 110.5 J/(K·mol) is the entropy of solid H₃PO₄ (110.50, the row above); the NBS tables print no entropy for the liquid'],
+      ['324.4', '326.4', 'erratum 3389: the enthalpy of formation of Al(g) is 326.4 kJ/mol (NBS tables, p. 2-127); the row’s own free energy and entropy give 326.3'],
     ],
   },
   // Appendix H: nine formulas are printed as images; the Lewis structures

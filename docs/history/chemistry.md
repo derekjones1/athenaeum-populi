@@ -5600,7 +5600,7 @@ tables.
 - **Changed:** four appendix rows, a third Source note, the footer clause,
   five `TABLE_NOTES` deviations, four decisions entries; Section 5.3's key,
   Source note, gate reason, decisions rationale; `docs/subjects/chemistry.md`
-  “Figure counts of a key”. Next free erratum: 3389.
+  “Figure counts of a key”. Next free erratum: 3390 (3389 is Al(*g*), below).
 
 
 ### Every row read against the NBS tables (November 23, 2026)
@@ -5626,7 +5626,9 @@ scan (all eleven agree to the digit).
   The rows that do not agree with themselves are the ones already ruled
   above (AlF₃, AlCl₃·6H₂O, CH₂Cl₂(*l*), CCl₄ twice, FeO, S₂O₃²⁻). Left as
   printed.
-- **One candidate, for Derek:** Al(*g*) prints 324.4, 285.7, 164.54; the
+- **One correction (Derek approved; erratum 3389):** the page now prints
+  326.4 for Al(*g*), with the Source note, footer clause, `TABLE_NOTES`
+  deviation, and decisions entry. The source prints 324.4, 285.7, 164.54; the
   tables print 326.4, 285.7, 164.54 (p. 2-127). The free energy and entropy
   are the tables' to the digit, the enthalpy differs in one digit, and the
   row gives its own free energy as 283.8 with 324.4 and 285.8 with 326.4. No

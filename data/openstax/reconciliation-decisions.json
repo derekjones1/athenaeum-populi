@@ -9110,6 +9110,17 @@
       "status": "correct-local-source-defect",
       "errataEntry": 3388,
       "rationale": "Appendix G’s H₃PO₄(l) row prints −1266.9, −1124.3, 110.5. The enthalpy is the liquid’s (NBS tables, p. 2-73: −1266.9, no free energy, no entropy); 110.5 is the entropy of the solid (110.50, the row above), and −1124.3 is 17.5 kJ/mol from the free energy the row’s enthalpy and entropy give (−1106.8). The page prints dashes for the free energy and the entropy. Disclosed by a Source note after the table, a footer clause, and a TABLE_NOTES deviation in tools/verify/verify-source-tables.mjs. NBS page read by the orchestrator, November 23, 2026; approved by Derek."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/g-standard-thermodynamic-properties-for-selected-substances.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68865",
+      "sourceElementIds": [
+        "fs-idp78188768"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3389,
+      "rationale": "Appendix G’s Al(g) row prints an enthalpy of formation of 324.4; the NBS tables (Wagman et al., 1982, p. 2-127) give 326.4, 285.7, 164.54, the free energy and entropy matching the row to the digit. With 326.4 the row’s enthalpy and entropy give a free energy of 285.8 against the printed 285.7; with 324.4 they give 283.8. One digit differs. The page prints 326.4. Found by the reading of every row against the tables; disclosed by a Source note after the table, a footer clause, and a TABLE_NOTES deviation in tools/verify/verify-source-tables.mjs. NBS page read by the orchestrator, November 23, 2026; approved by Derek."
     }
   ]
 }
