@@ -5580,14 +5580,21 @@ tables.
   from its own values. The source row was wrong against every compilation
   and against itself, where a mixed-source row is right against the
   compilation it came from.
-- **For chapter 16:** the source's exercise on the normal boiling point of
-  dichloromethane (m68819) reads the CH₂Cl₂(*l*) and (*g*) rows, one of which
-  is mixed-source. It is keyed from the rows as printed (one data set, one
-  answer); the checker should expect a boiling point some way from the
-  measured 313 K and say so in the model answer.
-- **What the scan cannot see** is unchanged: a row whose three values agree
-  but belong to another substance. Reading all 316 rows against the NBS
-  tables would close that; not done.
+- **For chapter 16 (checked November 23; nothing to fix):** the source's
+  exercise on the normal boiling point of dichloromethane (m68819, no printed
+  solution) reads the CH₂Cl₂(*l*) and (*g*) rows. It uses the enthalpies and
+  entropies, and those give ΔH° = 28.8 kJ and ΔS° = 92.4 J/K, so 311.7 K
+  (312 K), against a measured 313 K and 313.6 K from the NBS rows: under half
+  a percent. The row's disagreement sits in its free energy (−63.2), which
+  this method does not read; the two printed free energies would wrongly make
+  the gas the stable form at 25 °C, so the model answer works from ΔH° and
+  ΔS° and never from the ΔG°f column. No other source exercise reads a
+  thermodynamic value of AlF₃, AlCl₃·6H₂O, CCl₄, FeO, or S₂O₃²⁻ (every
+  module's exercises searched by formula; CCl₄'s one hit, in 10.3, gives its
+  own data in the stem).
+- **What the scan cannot see**, a row whose three values agree but belong
+  to another substance, was closed the same day by reading every row against
+  the NBS tables (below).
 - NBS scan index (PDF page = printed 2-N + 8): carbon chlorides 93–95,
   aluminum 135–136, mercury 158–160, manganese 199, potassium 336–337.
 - **Changed:** four appendix rows, a third Source note, the footer clause,
@@ -5595,6 +5602,96 @@ tables.
   Source note, gate reason, decisions rationale; `docs/subjects/chemistry.md`
   “Figure counts of a key”. Next free erratum: 3389.
 
+
+### Every row read against the NBS tables (November 23, 2026)
+
+Derek asked for the check the arithmetic scan cannot make: a row whose three
+values agree with one another but belong to another substance. Six Opus
+readers took the appendix's 360 rows in batches by NBS table, found each
+substance on the scan, and recorded the tables' three values, the page, and
+a verdict (brief and results: the session scratchpad, `nbs/BRIEF.md`,
+`nbs/result-<k>.tsv`). The parent checked every verdict against its own
+numbers by script and eleven rows against its own earlier reading of the
+scan (all eleven agree to the digit).
+
+- **No row carries another substance's values** (0 of 360): no other phase,
+  hydrate, charge, or neighbor.
+- **304 rows agree** with the tables to within 1.0 in every value.
+- **48 differ by more than 1.0 in some value; 3 print a value where the
+  tables print a dash; 5 are not in the tables** (propane, benzene twice,
+  H₃O⁺(*aq*), CaSO₃·2H₂O). They are listed below. In nearly all of the 48 the
+  enthalpy and the free energy move together and the row still agrees with
+  itself: another compilation's values (older NBS circulars in kcal, CODATA,
+  JANAF — the readers' attributions, from memory, not opened), not misprints.
+  The rows that do not agree with themselves are the ones already ruled
+  above (AlF₃, AlCl₃·6H₂O, CH₂Cl₂(*l*), CCl₄ twice, FeO, S₂O₃²⁻). Left as
+  printed.
+- **One candidate, for Derek:** Al(*g*) prints 324.4, 285.7, 164.54; the
+  tables print 326.4, 285.7, 164.54 (p. 2-127). The free energy and entropy
+  are the tables' to the digit, the enthalpy differs in one digit, and the
+  row gives its own free energy as 283.8 with 324.4 and 285.8 with 326.4. No
+  source exercise reads Al(*g*).
+- Small things seen and left: N₂H₄(*l*) free energy 149.43 against the
+  tables' 149.34; the label “Li(OH)(*s*)” (the source's).
+
+  | Row | Appendix G (ΔH°f, ΔG°f, S°) | NBS tables | Page | Verdict |
+  |---|---|---|---|---|
+  | H₃O⁺(*aq*) | −285.8, , 69.91 | -285.830, -237.129, 69.91 | 2-38 | ABSENT |
+  | HF(*g*) | −273.3, −275.4, 173.8 | -271.1, -273.2, 173.779 | 2-45 | DIFF |
+  | HF(*g*) | −273.3, −275.4, 173.8 | -271.1, -273.2, 173.779 | 2-45 | DIFF |
+  | ClF₃(*g*) | −158.99, −118.83, 281.50 | -163.2, -123.0, 281.61 | 2-49 | DIFF |
+  | Br⁻(*aq*) | −120.9, −102.82, 80.71 | -121.55, -103.96, 82.4 | 2-50 | DIFF |
+  | S₈(*s*) (rhombic) | 0, 0, 256.8 | 0, 0, 31.80 | 2-56 | DIFF |
+  | S²⁻(*aq*) | 41.8, 83.7, 22 | 33.1, 85.8, -14.6 | 2-56 | DIFF |
+  | HS⁻(*aq*) | −17.7, 12.6, 61.1 | -17.6, 12.08, 62.8 | 2-57 | DIFF |
+  | HSO₄⁻(*aq*) | −885.75, −752.87, 126.9 | -887.34, -755.91, 131.8 | 2-57 | DIFF |
+  | SF₄(*g*) | −728.43, −684.84, 291.12 | -774.9, -731.3, 292.03 | 2-60 | DIFF |
+  | SF₆(*g*) | −1220.5, −1116.5, 291.5 | -1209., -1105.3, 291.82 | 2-60 | DIFF |
+  | S₂Cl₂(*g*) | −19.50, −29.25, 319.45 | -18.4, -31.8, 331.5 | 2-60 | DIFF |
+  | SO₂Cl₂(g) | −354.80, −310.45, 311.83 | -364.0, -320.0, 311.94 | 2-60 | DIFF |
+  | NO(*g*) | 90.25, 87.6, 210.8 | 90.25, 86.55, 210.761 | 2-64 | DIFF |
+  | N₂O₄(*g*) | 11.1, 99.8, 304.4 | 9.16, 97.89, 304.29 | 2-64 | DIFF |
+  | HNO₃(*g*) | −133.9, −73.5, 266.9 | -135.06, -74.72, 266.38 | 2-65 | DIFF |
+  | CCl₄(*l*) | −128.2, −62.5, 214.4 | -135.44, -65.21, 216.40 | 2-85 | DIFF |
+  | CCl₄(*g*) | −95.7, −58.2, 309.7 | -102.9, -60.59, 309.85 | 2-85 | DIFF |
+  | CH₃CO₂H(*g*) | −434.84, −376.69, 282.50 | -432.25, -374.0, 282.5 | 2-93 | DIFF |
+  | C₂H₅OH(*g*) | −234.8, −167.9, 281.6 | -235.10, -168.49, 282.70 | 2-95 | DIFF |
+  | HCO₃⁻(*aq*) | −691.11, −587.06, 95 | -691.99, -586.77, 91.2 | 2-83 | DIFF |
+  | C₃H₈(*g*) | −103.8, −23.4, 270.3 | -, -, - | - | ABSENT |
+  | C₆H₆(*g*) | 82.927, 129.66, 269.2 | -, -, - | - | ABSENT |
+  | C₆H₆(*l*) | 49.1, 124.50, 173.4 | -, -, - | - | ABSENT |
+  | CH₂Cl₂(*l*) | −124.2, −63.2, 177.8 | -121.46, -67.26, 177.8 | 2-86 | DIFF |
+  | CH₂Cl₂(*g*) | −95.4, −65.90, 270.2 | -92.47, -65.87, 270.23 | 2-86 | DIFF |
+  | CH₃Cl(*g*) | −81.9, −60.2, 234.6 | -80.83, -57.37, 234.58 | 2-86 | DIFF |
+  | Si($g)$ | 450.0, 405.5, 168.0 | 455.6, 411.3, 167.97 | 2-111 | DIFF |
+  | SiCl₄(*g*) | −662.75, −622.58, 330.62 | -657.01, -616.98, 330.73 | 2-112 | DIFF |
+  | SiC($s, beta cubic$) | −73.22, −70.71, 16.61 | -65.3, -62.8, 16.61 | 2-112 | DIFF |
+  | SiC($s, alpha hexagonal$) | −71.55, −69.04, 16.48 | -62.8, -60.2, 16.48 | 2-112 | DIFF |
+  | Sn(*g*) | 301.2, 266.2, 168.5 | 302.1, 267.3, 168.486 | 2-116 | DIFF |
+  | SnO₂(*s*) | −577.6, −515.8, 49.0 | -580.7, -519.6, 52.3 | 2-116 | DIFF |
+  | B(*g*) | 565.0, 521.0, 153.4 | 562.7, 518.8, 153.45 | 2-123 | DIFF |
+  | Al(*g*) | 324.4, 285.7, 164.54 | 326.4, 285.7, 164.54 | 2-127 | DIFF |
+  | AlF₃(*s*) | −1510.4, −1425, 66.5 | -1504.1, -1425.0, 66.44 | 2-127 | DIFF |
+  | AlCl₃·6H₂O(*s*) | −2691.57, −2269.40, 376.56 | -2691.6, -2261.1, 318.0 | 2-128 | DIFF |
+  | Al₂S₃(*s*) | −724.0, —, 116.9 | -724., —, — | 2-129 | NBS-BLANK |
+  | ZnO(*s*) | −350.5, −320.5, 43.7 | -348.28, -318.30, 43.64 | 2-138 | DIFF |
+  | HgSO₄($s)$ | −707.51, −594.13, — | -707.5, —, — | 2-151 | NBS-BLANK |
+  | Cu⁺(*aq*) | 51.9, 50.2, −26 | 71.67, 49.98, 40.6 | 2-154 | DIFF |
+  | Ni²⁺(*aq*) | −64.0, −46.4, −159 | -54.0, -45.6, -128.9 | 2-166 | DIFF |
+  | Co²⁺(*aq*) | −67.4, −51.5, −155 | -58.2, -54.4, -113. | 2-170 | DIFF |
+  | Co₃O₄(*s*) | −910.02, −794.98, 114.22 | -891., -774., 102.5 | 2-170 | DIFF |
+  | FeO(*s*) | −272.0, −255.2, 60.75 | -272.0, —, — | 2-177 | NBS-BLANK |
+  | Ti(*g*) | 473.0, 428.4, 180.3 | 469.9, 425.1, 180.298 | 2-209 | DIFF |
+  | TiCl₄(*g*) | −763.2, −726.3, 353.2 | -763.2, -726.7, 354.9 | 2-209 | DIFF |
+  | Ca²⁺(*aq*) | −542.96, −553.04, −55.2 | -542.83, -553.58, -53.1 | 2-267 | DIFF |
+  | CaO(*s*) | −634.9, −603.3, 38.1 | -635.09, -604.03, 39.75 | 2-267 | DIFF |
+  | CaSO₃·2H₂O(*s*) | −1752.68, −1555.19, 184.10 | —, —, — | 2-269 | ABSENT |
+  | Sr²⁺(*aq*) | −545.8, −557.3, −32.6 | -545.80, -559.48, -32.6 | 2-276 | DIFF |
+  | BaO(*s*) | −548.0, −520.3, 72.1 | -553.5, -525.1, 70.42 | 2-282 | DIFF |
+  | BaCl₂(*s*) | −855.0, −806.7, 123.7 | -858.6, -810.4, 123.68 | 2-282 | DIFF |
+  | Li(OH)(*s*) | −487.5, −441.5, 42.8 | -484.93, -438.95, 42.80 | 2-290 | DIFF |
+  | Rb⁺(*aq*) | −246, −282.2, 124 | -251.17, -283.98, 121.50 | 2-356 | DIFF |
+  | Cs⁺(*aq*) | −248, −282.0, 133 | -258.28, -292.02, 133.05 | 2-367 | DIFF |
 
 ## The `\dfrac` watch list
 
