@@ -132,8 +132,9 @@ test('compareMeasured grades value and figures together', async (t) => {
     ['355', '350', 2, 1, 'form', 'too-many'],
     ['350.', '350', 2, 1, 'form', 'too-many'],
     ['350', '350', 3, 0, 'correct'],
-    ['1300', '1250', 4, 0, 'incorrect'],               // 1250 at two figures: two short of four
-    ['1200', '1250', 4, 0, 'incorrect'],
+    // two short of four, from two figures shown: both neighbours of a key ending in 5 (audit G3/G4, November 24, 2026)
+    ['1300', '1250', 4, 0, 'form', 'too-few'],
+    ['1200', '1250', 4, 0, 'form', 'too-few'],
     ['1250', '1254', 4, 0, 'form', 'too-few'],         // one short, and what 1254 rounds to
     ['1260', '1255', 4, 0, 'form', 'too-few'],         // half up of 1255 at three figures
     ['1260', '1265', 4, 0, 'form', 'too-few'],         // half to even of 1265
@@ -152,10 +153,51 @@ test('compareMeasured grades value and figures together', async (t) => {
     ['4.586\\times10^{22}', '4.585\\times10^{22}', 4, 1, 'correct'],
     ['4.585\\times10^{21}', '4.585\\times10^{22}', 4, 1, 'incorrect'],
     ['4.5857\\times10^{22}', '4.585\\times10^{22}', 4, 1, 'form', 'too-many'],
-    ['4.6\\times10^{22}', '4.585\\times10^{22}', 4, 1, 'incorrect'],
+    ['4.6\\times10^{22}', '4.585\\times10^{22}', 4, 1, 'form', 'too-few'],   // two short, from two figures (audit G3)
+    ['4.7\\times10^{22}', '4.585\\times10^{22}', 4, 1, 'incorrect'],
+    // the key is itself rounded: both neighbours of a dropped 5 are right as far as they go (audit G4)
+    ['7.1', '7.15', 3, 1, 'form', 'too-few'],
+    ['7.2', '7.15', 3, 1, 'form', 'too-few'],
+    ['7.0', '7.15', 3, 1, 'incorrect'],
+    ['1.7\\times10^{-3}', '1.75\\times10^{-3}', 3, 1, 'form', 'too-few'],
+    ['0.0017', '1.75\\times10^{-3}', 3, 1, 'form', 'too-few'],
+    ['59.93', '59.935', 5, 1, 'form', 'too-few'],
+    ['3.59', '3.595', 4, 1, 'form', 'too-few'],
+    // two or more figures short, from two figures shown (audit G3): a molar mass to four figures
+    ['180.2', '180.156', 6, 1, 'form', 'too-few'],
+    ['463', '462.610', 6, 1, 'form', 'too-few'],
+    ['18.0', '18.015', 5, 1, 'form', 'too-few'],
+    ['18.1', '18.015', 5, 1, 'incorrect'],
+    ['5', '4.585', 4, 1, 'incorrect'],                 // one figure shown: never
+    // a power of ten one place coarser is no rounding (audit round 2, D1)
+    ['10', '7.5', 2, 1, 'incorrect'],
+    ['-100', '-80', 2, 1, 'incorrect'],
+    ['0.1', '0.075', 2, 0, 'incorrect'],
+    ['10', '9.0', 2, 0, 'incorrect'],
+    ['1', '0.51', 2, 0, 'incorrect'],
+    ['1.0', '0.974', 3, 1, 'incorrect'],
+    ['100', '98.7', 3, 1, 'form', 'too-few'],          // 98.7 to one figure (an ambiguous whole number)
+    ['100.', '98.7', 3, 1, 'incorrect'],
+    ['1.0\\times10^{2}', '98.6', 3, 0, 'incorrect'],
+    ['10', '9.92', 3, 1, 'form', 'too-few'],           // 9.92 to one figure
+    ['10.', '9.92', 3, 1, 'incorrect'],
+    ['10', '9.551', 4, 0, 'form', 'too-few'],          // 9.551 to one figure
+    ['1.0\\times10^{1}', '9.551', 4, 0, 'incorrect'],
+    ['-1.0', '-0.962', 3, 0, 'incorrect'],
+    ['10', '9.96', 3, 0, 'form', 'too-few'],          // 9.96 to two figures IS 10
+    // a tie at one figure: both neighbours (D2, accepted)
+    ['100', '150', 2, 0, 'form', 'too-few'],
+    ['200', '150', 2, 0, 'form', 'too-few'],
+    ['300', '150', 2, 0, 'incorrect'],
+    ['7', '7.5', 2, 1, 'form', 'too-few'],
+    ['8', '7.5', 2, 1, 'form', 'too-few'],
+    // an ambiguous whole number is tried at every count (D3): 1040 to one figure
+    ['1000', '1040', 4, 0, 'form', 'too-few'],
+    ['1000.', '1040', 4, 0, 'incorrect'],
+    ['1100', '1040', 4, 0, 'incorrect'],
     ['4.59\\times10^{22}', '4.585\\times10^{22}', 4, 1, 'form', 'too-few'],
     // the stem's own round number is not "right as far as it goes" (1.6: a 90 kg class limit, key 89.4)
-    ['90', '89.4', 3, 1, 'incorrect'],
+    ['90', '89.4', 3, 1, 'form', 'too-few'],             // 89.4 to one figure: a whole number with zeros is tried at every count (audit round 2)
     ['89', '89.4', 3, 1, 'form', 'too-few'],
     // the key's own number with its zeros left off is the answer written short, at any count (4.3: 8.00 mol)
     ['8', '8.00', 3, 1, 'form', 'too-few'],

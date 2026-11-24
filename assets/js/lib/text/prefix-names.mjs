@@ -48,7 +48,7 @@ const NOT_METALS = new Set(('hydrogen helium boron carbon nitrogen oxygen fluori
 
 // Metals the book names with no numeral, and the one charge each takes
 // (Section 2.6: groups 1 and 2, aluminum; 2.7 adds zinc, cadmium, silver).
-const FIXED_CHARGE = new Map([
+export const FIXED_CHARGE = new Map([
   ...'lithium sodium potassium rubidium cesium silver'.split(' ').map((metal) => [metal, 1]),
   ...'beryllium magnesium calcium strontium barium radium zinc cadmium'.split(' ').map((metal) => [metal, 2]),
   ['aluminum', 3],

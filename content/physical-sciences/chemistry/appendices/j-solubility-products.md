@@ -68,7 +68,7 @@ weight: 10
 | PbCl₂ | $1.6 \times 10^{-5}$ |
 | PbBr₂ | $4.6 \times 10^{-6}$ |
 | PbI₂ | $1.4 \times 10^{-8}$ |
-| PbCO₃ | $1.5 \times 10^{-15}$ |
+| PbCO₃ | $7.40 \times 10^{-14}$ |
 | PbS | $7 \times 10^{-29}$ |
 | PbCrO₄ | $2 \times 10^{-16}$ |
 | PbSO₄ | $1.3 \times 10^{-8}$ |
@@ -88,7 +88,7 @@ weight: 10
 | Hg₂Cl₂ | $1.1 \times 10^{-18}$ |
 | Hg₂Br₂ | $1.3 \times 10^{-22}$ |
 | Hg₂I₂ | $4.5 \times 10^{-29}$ |
-| Hg₂CO₃ | $9 \times 10^{-15}$ |
+| Hg₂CO₃ | $3.6 \times 10^{-17}$ |
 | Hg₂SO₄ | $7.4 \times 10^{-7}$ |
 | Hg₂S | $1.0 \times 10^{-47}$ |
 | Hg₂CrO₄ | $2 \times 10^{-9}$ |
@@ -133,6 +133,8 @@ weight: 10
 | **zinc** |  |
 | ZnCO₃ | $2 \times 10^{-10}$ |
 
+*Source note:* two solubility products are corrected here. The source prints $1.5 \times 10^{-15}$ for lead(II) carbonate and $9 \times 10^{-15}$ for mercury(I) carbonate, the first about fifty times smaller and the second about two hundred fifty times larger than the measured value; the [CRC Handbook of Chemistry and Physics](https://chem.libretexts.org/Ancillary_Materials/Reference/Reference_Tables/Equilibrium_Constants/E3._Solubility_Constants_for_Compounds_at_25C) (84th edition) gives $7.40 \times 10^{-14}$ and $3.6 \times 10^{-17}$.
+
 ---
 
-<small>This appendix is adapted from [Chemistry 2e, Appendix J: Solubility Products](https://openstax.org/books/chemistry-2e/pages/j-solubility-products) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the table transcribed as a Markdown table with its title as a bold line above it, each full-width row that names a metal set in bold in the first column; the solubility products typeset as KaTeX math.</small>
+<small>This appendix is adapted from [Chemistry 2e, Appendix J: Solubility Products](https://openstax.org/books/chemistry-2e/pages/j-solubility-products) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the table transcribed as a Markdown table with its title as a bold line above it, each full-width row that names a metal set in bold in the first column; the solubility products typeset as KaTeX math; two solubility products corrected, as the Source note says.</small>

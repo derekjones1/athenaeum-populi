@@ -78,7 +78,7 @@ Click on this [link for an interactive periodic table](https://openstax.org/l/16
 {{< textin
   question="Give the group name for the following element: krypton."
   answer="noble gas"
-  accept="inert gas"
+  accept="inert gas|helium group|helium family"
   hint="Find the element’s column in the periodic table above or its group in the table of Appendix A, then recall the name the section gives that group."
 >}}
 
@@ -92,6 +92,7 @@ Click on this [link for an interactive periodic table](https://openstax.org/l/16
 {{< textin
   question="Give the group name for the following element: barium."
   answer="alkaline earth metal"
+  accept="beryllium group|beryllium family"
   hint="Find the element’s column in the periodic table above or its group in the table of Appendix A, then recall the name the section gives that group."
 >}}
 
@@ -107,7 +108,7 @@ As you will learn in your further study of chemistry, elements in groups often b
 
 In studying the periodic table, you might have noticed something about the atomic masses of some of the elements. Element 43 (technetium), element 61 (promethium), and most of the elements with atomic number 84 (polonium) and higher have their atomic mass given in square brackets. This is done for elements that consist entirely of unstable, radioactive isotopes (you will learn more about radioactivity in the nuclear chemistry chapter). An average atomic weight cannot be determined for these elements because their radioisotopes may vary significantly in relative abundance, depending on the source, or may not even exist in nature. The number in square brackets is the atomic mass number (an approximate atomic mass) of the most stable isotope of that element.
 
-*Source note:* thorium, protactinium, and uranium also consist entirely of radioactive isotopes, yet the full periodic table above prints an average atomic mass for each without brackets: each occurs in nature with a characteristic isotopic composition, so an average can be given (IUPAC Commission on Isotopic Abundances and Atomic Weights, standard atomic weights).
+*Source note:* thorium, protactinium, and uranium also consist entirely of radioactive isotopes, yet the full periodic table above prints an average atomic mass for each without brackets: each occurs in nature with a characteristic isotopic composition, so an average can be given (IUPAC Commission on Isotopic Abundances and Atomic Weights, standard atomic weights). For several of the heaviest elements, the bracketed number, which the table above keeps from the source, is no longer the mass number of the longest-lived isotope known: lawrencium-266, half-life about 11 hours, outlives lawrencium-262, about 4 hours, and meitnerium-278, 4.5 seconds, outlives meitnerium-276, 0.69 second (IAEA Nuclear Data Section, ground-state half-lives from the Evaluated Nuclear Structure Data File). Only a few atoms of these elements have ever been made, and their longest-lived known isotopes change as new ones are found.
 
 ## Summary
 

@@ -23,6 +23,8 @@ Thus far, we have used two-dimensional Lewis structures to represent molecules. 
 Bond distances (lengths) and angles are shown for the formaldehyde molecule, H₂CO.
 {{< /mediafigure >}}
 
+*Source note:* the figure labels the angle between the two C–H bonds 118°; the measured angle in gaseous formaldehyde is 116.1° (NIST Computational Chemistry Comparison and Benchmark Database, citing Gurvich, Veyts, and Alcock, 1989).
+
 ## VSEPR Theory
 
 **Valence shell electron-pair repulsion theory (VSEPR theory)** enables us to predict the molecular structure, including approximate bond angles around a central atom, of a molecule from an examination of the number of bonds and lone electron pairs in its Lewis structure. The VSEPR model assumes that electron pairs in the valence shell of a central atom will adopt an arrangement that minimizes repulsions between these electron pairs by maximizing the distance between them. The electrons in the valence shell of a central atom form either bonding pairs of electrons, located primarily between bonded atoms, or lone pairs. The electrostatic repulsion of these electrons is reduced when the various regions of high electron density assume positions as far from each other as possible.
@@ -57,6 +59,8 @@ The molecular structure of the methane molecule, CH₄, is shown with a tetrahed
 (a) The electron-pair geometry for the ammonia molecule is tetrahedral with one lone pair and three single bonds. (b) The trigonal pyramidal molecular structure is determined from the electron-pair geometry. (c) The actual bond angles deviate slightly from the idealized angles because the lone pair takes up a larger region of space than do the single bonds, causing the HNH angle to be slightly smaller than 109.5°.
 {{< /mediafigure >}}
 
+*Source note:* the figure prints 106.8° for the H–N–H angle; the measured angle of gaseous ammonia is 106.67° (NIST Computational Chemistry Comparison and Benchmark Database, citing Herzberg, 1966), 106.7° to a tenth.
+
 As seen in the ammonia figure above, small distortions from the ideal angles in the figure of electron-pair geometries can result from differences in repulsion between various regions of electron density. VSEPR theory predicts these distortions by establishing an order of repulsions and an order of the amount of space occupied by different kinds of electron pairs. The order of electron-pair repulsions from greatest to least repulsion is:
 
 $$
@@ -71,7 +75,9 @@ This order of repulsions determines the amount of space occupied by different re
 
 $$\text{lone pair} > \text{triple bond} > \text{double bond} > \text{single bond}$$
 
-Consider formaldehyde, H₂CO, which is used as a preservative for biological and anatomical specimens (shown in the first figure of this section). This molecule has regions of high electron density that consist of two single bonds and one double bond. The basic geometry is trigonal planar with 120° bond angles, but we see that the double bond causes slightly larger angles (121°), and the angle between the single bonds is slightly smaller (118°).
+Consider formaldehyde, H₂CO, which is used as a preservative for biological and anatomical specimens (shown in the first figure of this section). This molecule has regions of high electron density that consist of two single bonds and one double bond. The basic geometry is trigonal planar with 120° bond angles, but we see that the double bond causes slightly larger angles (122°), and the angle between the single bonds is slightly smaller (116°).
+
+*Source note:* the source prints 121° and 118° here. The measured angles of gaseous formaldehyde are 121.9° between each C–H bond and the C=O bond and 116.1° between the two C–H bonds (NIST Computational Chemistry Comparison and Benchmark Database, citing Gurvich, Veyts, and Alcock, 1989).
 
 In the ammonia molecule, the three hydrogen atoms attached to the central nitrogen are not arranged in a flat, trigonal planar molecular structure, but rather in a three-dimensional trigonal pyramid (shown in the ammonia figure above) with the nitrogen atom at the apex and the three hydrogen atoms forming the base. The ideal bond angles in a trigonal pyramid are based on the tetrahedral electron pair geometry. Again, there are slight deviations from the ideal because lone pairs occupy larger regions of space than do bonding electrons. The H–N–H bond angles in NH₃ are slightly smaller than the 109.5° angle in a regular tetrahedron (shown in the figure of electron-pair geometries above) because the lone pair-bonding pair repulsion is greater than the bonding pair-bonding pair repulsion (shown in the ammonia figure above). The figure below illustrates the ideal molecular structures, which are predicted based on the electron-pair geometries for various combinations of lone pairs and bonding pairs.
 
@@ -140,9 +146,8 @@ The electron-pair geometry and molecular structure of BCl₃ are both trigonal p
 {{< selfcheck question="Carbonate, CO₃²⁻, is a common polyatomic ion found in various materials from eggshells to antacids. What are the electron-pair geometry and molecular structure of this polyatomic ion?" hint="Recall how the procedure above counts a single, double, or triple bond." >}}
 The electron-pair geometry is trigonal planar and the molecular structure is trigonal planar. Due to resonance, all three C–O bonds are identical. Whether they are single, double, or an average of the two, each bond counts as one region of electron density.
 ===CHECKS===
-the electron-pair geometry is trigonal planar and the molecular structure is trigonal planar
-due to resonance, all three C–O bonds are identical
-each bond counts as one region of electron density
+the electron-pair geometry is trigonal planar
+the molecular structure is trigonal planar
 {{< /selfcheck >}}
 
 **Example.** *Predicting Electron-pair Geometry and Molecular Structure: Ammonium.* Two of the top 50 chemicals produced in the United States, ammonium nitrate and ammonium sulfate, both used as fertilizers, contain the ammonium ion. Predict the electron-pair geometry and molecular structure of the NH₄⁺ cation.
@@ -159,10 +164,10 @@ The ammonium ion displays a tetrahedral electron-pair geometry as well as a tetr
 {{< /mediafigure >}}
 
 {{< selfcheck question="Identify a molecule with trigonal bipyramidal molecular structure." hint="Use the procedure above: ask how many regions of electron density, and how many of them lone pairs, give that molecular structure." >}}
-Any molecule with five electron pairs around the central atoms including no lone pairs will be trigonal bipyramidal. PF₅ is a common example.
+A good answer identifies a molecule whose central atom has five regions of electron density and no lone pairs. Sample answer: Any molecule with five electron pairs around the central atoms including no lone pairs will be trigonal bipyramidal. PF₅ is a common example.
 ===CHECKS===
-any molecule with five electron pairs around the central atoms
-including no lone pairs will be trigonal bipyramidal
+identifies a molecule
+whose central atom has five regions of electron density and no lone pairs
 {{< /selfcheck >}}
 
 The next several examples illustrate the effect of lone pairs of electrons on molecular structure.
@@ -183,7 +188,7 @@ We predict that these four regions are arranged in a tetrahedral fashion (shown 
 {{< textin
   question="The hydronium ion, H₃O⁺, forms when acids are dissolved in water. Predict the electron-pair geometry and molecular structure of this cation. Enter the electron-pair geometry."
   answer="tetrahedral"
-  accept="tetrahedron"
+  accept="tetrahedron|tetrahedral geometry"
   hint="Write the Lewis structure of the ion, and count the regions of electron density around the central atom."
 >}}
 
@@ -305,11 +310,13 @@ Click on each bond type or lone pair at right to add that group to the central a
 **Solution.** The molecular structure is linear.
 
 {{< selfcheck question="Build a more complex molecule in the [simulator](http://openstax.org/l/16MolecShape). Identify the electron-group geometry, molecular structure, and bond angles. Then try to find a chemical formula that would match the structure you have drawn." hint="Add bonds and lone pairs to the central atom in the simulator, and turn on the name and angle displays to check your reading." >}}
-A good answer names the electron-group geometry, the molecular structure, and the bond angles of the molecule built, and gives a chemical formula that matches the structure. Answers will vary. For example, an atom with four single bonds, a double bond, and a lone pair has an octahedral electron-group geometry and a square pyramidal molecular structure. XeOF₄ is a molecule that adopts this structure.
+A good answer names the electron-group geometry, the molecular structure, and the bond angles of the molecule built, and gives a chemical formula that matches the structure. Answers will vary. For example, an atom with four single bonds, a double bond, and a lone pair has an octahedral electron-group geometry and a square pyramidal molecular structure. XeOF₄ is a molecule that adopts this structure. The angles between its neighboring bonds are about 90°.
 ===CHECKS===
 names the electron-group geometry, the molecular structure, and the bond angles of the molecule built
 gives a chemical formula that matches the structure
 {{< /selfcheck >}}
+
+*Source note:* the source’s sample answer names the geometry and the structure but gives no bond angles, which the question asks for; the last sentence of the sample is added here.
 
 ## Molecular Polarity and Dipole Moment
 
@@ -349,7 +356,7 @@ Chloromethane, CH₃Cl, is a tetrahedral molecule with three slightly polar C–
 
 For molecules of high symmetry such as BF₃ (trigonal planar), CH₄ (tetrahedral), PF₅ (trigonal bipyramidal), and SF₆ (octahedral), all the bonds are of identical polarity (same bond moment) and they are oriented in geometries that yield nonpolar molecules (dipole moment is zero). Molecules of less geometric symmetry, however, may be polar even when all bond moments are identical. For these molecules, the directions of the equal bond moments are such that they sum to give a nonzero dipole moment and a polar molecule. Examples of such molecules include hydrogen sulfide, H₂S (nonlinear), and ammonia, NH₃ (trigonal pyramidal).
 
-{{< mediafigure src="chemistry/CNX_Chem_07_06_SH2NH3_img" kind="diagram" alt="Two Lewis structures with partial charges. Left: a sulfur atom single-bonded to two hydrogen atoms, one up to the left and one down to the left; the sulfur atom has two lone pairs, on its right, and is marked δ−, and each hydrogen atom is marked δ+. Right: a nitrogen atom single-bonded to three hydrogen atoms, above, to the left, and below; the nitrogen atom has one lone pair, on its right, and is marked δ−, and each hydrogen atom is marked δ+." >}}
+{{< mediafigure src="chemistry/CNX_Chem_07_06_SH2NH3_img" kind="diagram" alt="Two Lewis structures with partial charges. Left: a sulfur atom single-bonded to two hydrogen atoms, one up to the left and one down to the left; the sulfur atom has two lone pairs, on its right, and is marked δ−, and each hydrogen atom is marked δ+. Right: a nitrogen atom single-bonded to three hydrogen atoms, up to the left, to the left, and down to the left; the nitrogen atom has one lone pair, on its right, and is marked δ−, and each hydrogen atom is marked δ+." >}}
 {{< /mediafigure >}}
 
 To summarize, to be polar, a molecule must:
@@ -507,14 +514,14 @@ molecular structure considers only the bonding-pair geometry
 {{< textin
   question="What are the electron-pair geometry and the molecular structure of the following molecule or ion? ClO₂⁻. Enter the electron-pair geometry."
   answer="tetrahedral"
-  accept="tetrahedron"
+  accept="tetrahedron|tetrahedral geometry"
   hint="Write the Lewis structure, and count the regions of electron density around the central atom; a single, double, or triple bond counts as one region."
 >}}
 
 {{< textin
   question="What are the electron-pair geometry and the molecular structure of the following molecule or ion? ClO₂⁻. Enter the molecular structure."
   answer="bent"
-  accept="angular"
+  accept="angular|bent or angular"
   hint="Write the Lewis structure, then use the number of lone pairs on the central atom with the figure of molecular structures in the body of this section."
 >}}
 
@@ -534,7 +541,7 @@ molecular structure considers only the bonding-pair geometry
 {{< textin
   question="What are the electron-pair geometry and the molecular structure of the following molecule or ion? PCl₃. Enter the electron-pair geometry."
   answer="tetrahedral"
-  accept="tetrahedron"
+  accept="tetrahedron|tetrahedral geometry"
   hint="Write the Lewis structure, and count the regions of electron density around the central atom; a single, double, or triple bond counts as one region."
 >}}
 
@@ -555,7 +562,7 @@ molecular structure considers only the bonding-pair geometry
 {{< textin
   question="What are the electron-pair geometry and the molecular structure of the following molecule or ion? SeF₄. Enter the molecular structure."
   answer="seesaw"
-  accept="sawhorse|see saw|saw horse"
+  accept="sawhorse|see saw|saw horse|sawhorse or seesaw|seesaw shaped"
   hint="Write the Lewis structure, then use the number of lone pairs on the central atom with the figure of molecular structures in the body of this section."
 >}}
 
@@ -564,14 +571,14 @@ molecular structure considers only the bonding-pair geometry
 {{< textin
   question="What are the electron-pair geometry and the molecular structure of the following molecule or ion? PH₂⁻. Enter the electron-pair geometry."
   answer="tetrahedral"
-  accept="tetrahedron"
+  accept="tetrahedron|tetrahedral geometry"
   hint="Write the Lewis structure, and count the regions of electron density around the central atom; a single, double, or triple bond counts as one region."
 >}}
 
 {{< textin
   question="What are the electron-pair geometry and the molecular structure of the following molecule or ion? PH₂⁻. Enter the molecular structure."
   answer="bent"
-  accept="angular"
+  accept="angular|bent or angular"
   hint="Write the Lewis structure, then use the number of lone pairs on the central atom with the figure of molecular structures in the body of this section."
 >}}
 
@@ -584,7 +591,7 @@ molecular structure considers only the bonding-pair geometry
 {{< textin
   question="Identify the electron pair geometry and the molecular structure of the following molecule: ClNO (N is the central atom). Enter the molecular structure."
   answer="bent"
-  accept="angular"
+  accept="angular|bent or angular"
   hint="Write the Lewis structure, then use the number of lone pairs on the central atom with the figure of molecular structures in the body of this section."
 >}}
 
@@ -615,7 +622,7 @@ molecular structure considers only the bonding-pair geometry
 {{< textin
   question="Identify the electron pair geometry and the molecular structure of the following molecule: Cl₂SO (S is the central atom). Enter the electron-pair geometry."
   answer="tetrahedral"
-  accept="tetrahedron"
+  accept="tetrahedron|tetrahedral geometry"
   hint="Write the Lewis structure, and count the regions of electron density around the central atom; a single, double, or triple bond counts as one region."
 >}}
 
@@ -629,14 +636,14 @@ molecular structure considers only the bonding-pair geometry
 {{< textin
   question="Identify the electron pair geometry and the molecular structure of the following molecule: SO₂F₂ (S is the central atom). Enter the electron-pair geometry."
   answer="tetrahedral"
-  accept="tetrahedron"
+  accept="tetrahedron|tetrahedral geometry"
   hint="Write the Lewis structure, and count the regions of electron density around the central atom; a single, double, or triple bond counts as one region."
 >}}
 
 {{< textin
   question="Identify the electron pair geometry and the molecular structure of the following molecule: SO₂F₂ (S is the central atom). Enter the molecular structure."
   answer="tetrahedral"
-  accept="tetrahedron"
+  accept="tetrahedron|tetrahedral geometry"
   hint="Write the Lewis structure, then use the number of lone pairs on the central atom with the figure of molecular structures in the body of this section."
 >}}
 
@@ -650,14 +657,14 @@ molecular structure considers only the bonding-pair geometry
 {{< textin
   question="Identify the electron pair geometry and the molecular structure of the following molecule: XeO₂F₂ (Xe is the central atom). Enter the molecular structure."
   answer="seesaw"
-  accept="sawhorse|see saw|saw horse"
+  accept="sawhorse|see saw|saw horse|sawhorse or seesaw|seesaw shaped"
   hint="Write the Lewis structure, then use the number of lone pairs on the central atom with the figure of molecular structures in the body of this section."
 >}}
 
 {{< textin
   question="Identify the electron pair geometry and the molecular structure of the following molecule: ClOF₂⁺ (Cl is the central atom). Enter the electron-pair geometry."
   answer="tetrahedral"
-  accept="tetrahedron"
+  accept="tetrahedron|tetrahedral geometry"
   hint="Write the Lewis structure, and count the regions of electron density around the central atom; a single, double, or triple bond counts as one region."
 >}}
 
@@ -673,7 +680,7 @@ molecular structure considers only the bonding-pair geometry
 {{< textin
   question="Describe the molecular structure around the indicated atom or atoms: the sulfur atom in sulfuric acid, H₂SO₄ [(HO)₂SO₂]. Enter the molecular structure."
   answer="tetrahedral"
-  accept="tetrahedron"
+  accept="tetrahedron|tetrahedral geometry"
   hint="Write the Lewis structure, count the bonds and lone pairs on the indicated atom, and use the figure of molecular structures in the body of this section."
 >}}
 
@@ -687,7 +694,7 @@ molecular structure considers only the bonding-pair geometry
 {{< textin
   question="Describe the molecular structure around the indicated atom or atoms: the oxygen atom in hydrogen peroxide, HOOH. Enter the molecular structure."
   answer="bent"
-  accept="angular"
+  accept="angular|bent or angular"
   hint="Write the Lewis structure, count the bonds and lone pairs on the indicated atom, and use the figure of molecular structures in the body of this section."
 >}}
 
@@ -700,21 +707,21 @@ molecular structure considers only the bonding-pair geometry
 {{< textin
   question="Describe the molecular structure around the indicated atom or atoms: the oxygen atom in the OH group in nitric acid, HNO₃ [HONO₂]. Enter the molecular structure."
   answer="bent"
-  accept="angular"
+  accept="angular|bent or angular"
   hint="Write the Lewis structure, count the bonds and lone pairs on the indicated atom, and use the figure of molecular structures in the body of this section."
 >}}
 
 {{< textin
   question="Describe the molecular structure around the indicated atom or atoms: the central oxygen atom in the ozone molecule, O₃. Enter the molecular structure."
   answer="bent"
-  accept="angular"
+  accept="angular|bent or angular"
   hint="Write the Lewis structure, count the bonds and lone pairs on the indicated atom, and use the figure of molecular structures in the body of this section."
 >}}
 
 {{< textin
   question="Describe the molecular structure around the indicated atom or atoms: each of the carbon atoms in propyne, CH₃CCH. Enter the molecular structure around the carbon atom of the CH₃ group."
   answer="tetrahedral"
-  accept="tetrahedron"
+  accept="tetrahedron|tetrahedral geometry"
   hint="Write the Lewis structure, count the bonds and lone pairs on the indicated atom, and use the figure of molecular structures in the body of this section."
 >}}
 
@@ -727,7 +734,7 @@ molecular structure considers only the bonding-pair geometry
 {{< textin
   question="Describe the molecular structure around the indicated atom or atoms: the carbon atom in Freon, CCl₂F₂. Enter the molecular structure."
   answer="tetrahedral"
-  accept="tetrahedron"
+  accept="tetrahedron|tetrahedral geometry"
   hint="Write the Lewis structure, count the bonds and lone pairs on the indicated atom, and use the figure of molecular structures in the body of this section."
 >}}
 
@@ -749,9 +756,10 @@ molecular structure considers only the bonding-pair geometry
 {{< mediafigure src="chemistry/CNX_Chem_07_06_Ques23ans_img" kind="diagram" alt="Three sketches, one above another, each with a label. First: A single-bonded to two B atoms in a straight line, B–A–B; A has no lone pairs; labeled “CO₂, linear”. Second: A single-bonded to one B atom on its left and one below to the right; A has two lone pairs; labeled “H₂O, bent with an approximately 109° angle”. Third: the same bent arrangement, A has one lone pair; labeled “SO₂, bent with an approximately 120° angle”." >}}
 {{< /mediafigure >}}
 
-The first shape is linear, and A has no lone pairs; its example is CO₂. The second is bent with an approximately 109° angle, and A has two lone pairs; its example is H₂O. The third is bent with an approximately 120° angle, and A has one lone pair; its example is SO₂.
+The drawing names each shape with an example molecule or ion. The first shape is linear, and A has no lone pairs; its example is CO₂. The second is bent with an approximately 109° angle, and A has two lone pairs; its example is H₂O. The third is bent with an approximately 120° angle, and A has one lone pair; its example is SO₂.
 ===CHECKS===
-the first shape is linear, and A has no lone pairs
+names each shape with an example molecule or ion
+the first shape is linear
 the second is bent with an approximately 109° angle, and A has two lone pairs
 the third is bent with an approximately 120° angle, and A has one lone pair
 {{< /selfcheck >}}
@@ -826,7 +834,6 @@ this leads to the smaller angle of 104.5°
 As long as the polar bonds are compensated (for example, two identical atoms are found directly across the central atom from one another), the molecule can be nonpolar.
 ===CHECKS===
 as long as the polar bonds are compensated
-two identical atoms are found directly across the central atom from one another
 the molecule can be nonpolar
 {{< /selfcheck >}}
 
@@ -885,22 +892,22 @@ no
 {{< /multiplechoice >}}
 
 {{< selfcheck question="Does the following molecule or ion have a dipole moment? PH₂⁻." hint="Write the Lewis structure and find the molecular structure; use the periodic table of electronegativities in Section 7.2 Covalent Bonding to judge each bond, and ask whether the bond moments cancel." >}}
-Only ClF₅, ClO₂⁻, PCl₃, SeF₄, and PH₂⁻ have dipole moments.
+The ion PH₂⁻ has a dipole moment. Only ClF₅, ClO₂⁻, PCl₃, SeF₄, and PH₂⁻ have dipole moments.
 ===CHECKS===
-only ClF₅, ClO₂⁻, PCl₃, SeF₄,
-and PH₂⁻ have dipole moments
+the ion PH₂⁻
+has a dipole moment
 {{< /selfcheck >}}
 
-*Source note:* the periodic table of electronegativities in [Section 7.2 Covalent Bonding](/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/02-covalent-bonding/) gives phosphorus and hydrogen the same value, so the two conditions above do not decide this ion. The model answer is the source’s.
+*Source note:* the periodic table of electronegativities in [Section 7.2 Covalent Bonding](/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/02-covalent-bonding/) gives phosphorus and hydrogen the same value, 2.1, so by the two conditions in the body this ion would have no dipole moment. The source’s answer agrees instead with what is measured for a related molecule: phosphine, PH₃, whose bonds are all P–H bonds, has a measured dipole moment of 0.58 D (NIST Computational Chemistry Comparison and Benchmark Database), which comes from its shape and its lone pair rather than from the polarity of its bonds. The model answer’s second sentence is the source’s.
 
 {{< selfcheck question="Which of the following molecules and ions contain polar bonds? Which of these molecules and ions have dipole moments? (The seven molecules and ions of the items above.)" hint="For the first question compare the electronegativities of the bonded atoms in the periodic table of electronegativities in Section 7.2 Covalent Bonding; for the second, find each molecular structure and ask whether the bond moments cancel." >}}
-All of these molecules and ions contain polar bonds. Only ClF₅, ClO₂⁻, PCl₃, SeF₄, and PH₂⁻ have dipole moments.
+All of these molecules and ions contain polar bonds except PH₂⁻, whose phosphorus and hydrogen atoms have the same electronegativity. Only ClF₅, ClO₂⁻, PCl₃, SeF₄, and PH₂⁻ have dipole moments. The dipole moment of PH₂⁻ comes from its bent shape and its lone pairs, not from its bonds.
 ===CHECKS===
-all of these molecules and ions contain polar bonds
+all of these molecules and ions contain polar bonds except PH₂⁻
 only ClF₅, ClO₂⁻, PCl₃, SeF₄, and PH₂⁻ have dipole moments
 {{< /selfcheck >}}
 
-*Source note:* by the periodic table of electronegativities in [Section 7.2 Covalent Bonding](/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/02-covalent-bonding/) the P–H bond is not polar, and that table prints no value for xenon.
+*Source note:* the source’s answer says that every one of these molecules and ions contains polar bonds; by the periodic table of electronegativities in [Section 7.2 Covalent Bonding](/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/02-covalent-bonding/) the P–H bond is not polar, and the model answer above says so and says where the dipole moment of PH₂⁻ comes from. That table prints no value for xenon; fluorine has the highest value in it, so the Xe–F bond is polar.
 
 {{< multiplechoice
   question="Does the following molecule have a dipole moment? CS₂."
@@ -948,11 +955,15 @@ no
 {{< /multiplechoice >}}
 
 {{< selfcheck question="Use the [simulation](http://openstax.org/l/16MolecPolarity) to perform the following exercises for a real molecule. You may need to rotate the molecules in three dimensions to see certain dipoles. Sketch the bond dipoles and molecular dipole (if any) for O₃. Explain your observations. Look at the bond dipoles for NH₃. Use these dipoles to predict whether N or H is more electronegative. Predict whether there should be a molecular dipole for NH₃ and, if so, in which direction it will point. Check the molecular dipole box to test your hypothesis." hint="Turn on the bond dipoles and the molecular dipole in the simulation, and rotate each molecule to see them from the side." >}}
-The molecular dipole points away from the hydrogen atoms.
+For O₃, the molecule is bent, and its central oxygen atom differs from the two end atoms: in each of its resonance structures the central atom carries a formal charge of +1. The bonds therefore have dipoles even though they join atoms of one element, and the bent molecule has a molecular dipole. For NH₃, the bond dipoles point from the hydrogen atoms toward the nitrogen atom, so N is more electronegative than H. The molecular dipole points away from the hydrogen atoms.
 ===CHECKS===
-the molecular dipole points away
-away from the hydrogen atoms
+the bonds therefore have dipoles even though they join atoms of one element
+the bent molecule has a molecular dipole
+N is more electronegative than H
+the molecular dipole points away from the hydrogen atoms
 {{< /selfcheck >}}
+
+*Source note:* the source’s answer answers only the last part of this exercise, the direction of the molecular dipole of NH₃; the sentences on ozone and on the bond dipoles of ammonia are added here. Ozone’s measured dipole moment is 0.53 D (NIST Computational Chemistry Comparison and Benchmark Database), and its formal charges are worked in [Section 7.4 Formal Charges and Resonance](/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/04-formal-charges-and-resonance/).
 
 ### Assess the polarity of a molecule based on its bonding and structure
 
@@ -976,4 +987,4 @@ nonpolar
 
 ---
 
-<small>This section is adapted from [Chemistry 2e, Section 7.6: Molecular Structure and Polarity](https://openstax.org/books/chemistry-2e/pages/7-6-molecular-structure-and-polarity) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the 32 images re-encoded as WebP and all marked as diagrams; every alt text written from the artwork (among other differences, the source alt for alanine gives the nitrogen two lone pairs and the carbonyl oxygen a single bond, where the drawing shows one lone pair and a double bond; the source alt for chloromethane calls the C–Cl arrow longer, which the drawing does not show; and the source alt for glycine leaves out the lone pairs on the double-bonded oxygen), with extended descriptions added to the two figures drawn as tables, the electron-pair geometries and the molecular structures, which are kept as figures; references to numbered figures replaced by describing phrases; the two Link to Learning boxes rendered as callouts; the order of electron-pair repulsions broken into three aligned rows to fit the column, the bond-dipole formula set as math with its symbols in italics where the source sets Qr upright, the Lewis structure of HCN set with the chemistry typesetting, and the powers of ten in the bond-distance units set as math; the formula SF₄ in the seesaw figure’s caption, which the source prints without its subscript, written with it; the partial negative charge written with a minus sign; the underlined atoms of the glycine and alanine examples kept underlined; the hyphens the source prints in the C–O, C–S, C–H, and C–Cl bonds of the OCS and chloromethane paragraphs set as en dashes; the eight worked examples set as prose, each followed by its Check Your Learning as interactive items with the printed answers as their keys — the electron-pair geometry and the molecular structure asked as two text-recall items for each of the carbonate, hydronium, xenon difluoride, and three-lone-pair checks — the captions of the water and sulfur tetrafluoride figures, directly above the hydronium and xenon difluoride checks, naming the electron-pair geometry of those examples’ molecules — the carbonate check followed by a self-check carrying its whole answer, and the other four checks as self-checks; the alanine check’s “shown here” written “shown above”, its structure placed above the item; the molecular-simulation check, whose source answer is a sample, opening with a sentence in the question’s own words saying what a good answer contains; the end-of-section exercises adapted into the interactive Practice block, with the 16 exercises the source keys carried as 71 items: 45 text-recall items, one for the electron-pair geometry and one for the molecular structure of each part of the three geometry exercises one for each single-structure part of the indicated-atom exercise, and two for each of its propyne and allene parts; 13 multiple-choice items, a yes-or-no item for each part of the two dipole-moment exercises but the PH₂⁻ part, options in the stem’s own order, and one each for the boron-or-phosphorus and polar-or-nonpolar exercises; and 13 self-checks carrying the source solutions as model answers, each with rubric checkpoints, the drawings of the AB₂ shapes, the three carbon–sulfur species, and the 42 g/mol compound each followed by sentences saying what the drawing shows, the 42 g/mol exercise, whose source answer is one of two structures the data fit, given an added opening sentence saying what a correct answer contains and the added label “Sample answer:” before the source’s answer, whole, its rubric drawn from that sentence; the lead-in of each lettered part that addressed the parts together restated in the singular for its one part; in the polar-bonds exercise, a self-check asking the lead-in alone placed after the yes-or-no items, with a closing parenthesis added saying that it asks of the seven molecules and ions of the items above, with a Source note that the P–H bond is not polar by this book’s table of electronegativities, which prints no value for xenon; the PH₂⁻ part asked as a self-check, with a Source note, since that table gives phosphorus and hydrogen the same value, and placed after the last yes-or-no item because its model answer is the source’s whole sentence; the next dipole-moment exercise placed in the same group after that self-check, whose answer also answers that exercise’s PCl₃ item, the same question as the earlier PCl₃ item, both carried; in the indicated-atom exercise, the propyne and allene parts each asked as two fields, the atoms the source’s answer marks in the formula named in words in a closing sentence added to the stem; each shape name accepted in the other forms the module prints for it, and a compound shape name in its open spelling; capitals and periods added; the full stop after “for example” in the nonpolar-molecule answer corrected to a comma; the name the answer on the shape of water gives the oxygen atom’s nonbonding electrons corrected, with a Source note; the last part of the carbon–sulfur exercise asked by its own words, without the drawing lead-in, and its first part’s species called an ion; a Source note after the OCS paragraph giving the two elements’ values in this book’s table of electronegativities and on a three-figure scale; the links to the two simulators added to the questions of the two simulation checks, the second in a closing parenthesis; the misprinted electron-pair geometry of SeF₄ corrected, with a Source note after the two SeF₄ items; the source’s Lewis structure of HCN, drawn without the lone pair on nitrogen, given the lone pair, with a Source note; the source’s bond angles for the hydroxyl oxygen of nitric acid and the central oxygen of ozone, which look exchanged, not printed, the names alone keyed; and the 16 exercises the source prints no answer for are omitted.</small>
+<small>This section is adapted from [Chemistry 2e, Section 7.6: Molecular Structure and Polarity](https://openstax.org/books/chemistry-2e/pages/7-6-molecular-structure-and-polarity) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the 32 images re-encoded as WebP and all marked as diagrams; every alt text written from the artwork (among other differences, the source alt for alanine gives the nitrogen two lone pairs and the carbonyl oxygen a single bond, where the drawing shows one lone pair and a double bond; the source alt for chloromethane calls the C–Cl arrow longer, which the drawing does not show; and the source alt for glycine leaves out the lone pairs on the double-bonded oxygen), with extended descriptions added to the two figures drawn as tables, the electron-pair geometries and the molecular structures, which are kept as figures; references to numbered figures replaced by describing phrases; the two Link to Learning boxes rendered as callouts; the order of electron-pair repulsions broken into three aligned rows to fit the column, the bond-dipole formula set as math with its symbols in italics where the source sets Qr upright, the Lewis structure of HCN set with the chemistry typesetting, and the powers of ten in the bond-distance units set as math; the formula SF₄ in the seesaw figure’s caption, which the source prints without its subscript, written with it; the partial negative charge written with a minus sign; the underlined atoms of the glycine and alanine examples kept underlined; the hyphens the source prints in the C–O, C–S, C–H, and C–Cl bonds of the OCS and chloromethane paragraphs set as en dashes; the eight worked examples set as prose, each followed by its Check Your Learning as interactive items with the printed answers as their keys — the electron-pair geometry and the molecular structure asked as two text-recall items for each of the carbonate, hydronium, xenon difluoride, and three-lone-pair checks — the captions of the water and sulfur tetrafluoride figures, directly above the hydronium and xenon difluoride checks, naming the electron-pair geometry of those examples’ molecules — the carbonate check followed by a self-check carrying its whole answer, and the other four checks as self-checks; the alanine check’s “shown here” written “shown above”, its structure placed above the item; the molecular-simulation check, whose source answer is a sample, opening with a sentence in the question’s own words saying what a good answer contains, and its sample, which gives no bond angles, given a closing sentence that gives them, with a Source note; the trigonal bipyramidal check, whose source answer is one possible case, given an added opening sentence saying what a good answer contains and the added label “Sample answer:” before the source’s answer, whole; the end-of-section exercises adapted into the interactive Practice block, with the 16 exercises the source keys carried as 71 items: 45 text-recall items, one for the electron-pair geometry and one for the molecular structure of each part of the three geometry exercises, one for each single-structure part of the indicated-atom exercise, and two for each of its propyne and allene parts; 13 multiple-choice items, a yes-or-no item for each part of the two dipole-moment exercises but the PH₂⁻ part, options in the stem’s own order, and one each for the boron-or-phosphorus and polar-or-nonpolar exercises; and 13 self-checks carrying the source solutions as model answers, each with rubric checkpoints, the drawings of the AB₂ shapes, the three carbon–sulfur species, and the 42 g/mol compound each followed by sentences saying what the drawing shows, the 42 g/mol exercise, whose source answer is one of two structures the data fit, given an added opening sentence saying what a correct answer contains and the added label “Sample answer:” before the source’s answer, whole, its rubric drawn from that sentence; the lead-in of each lettered part that addressed the parts together restated in the singular for its one part; in the polar-bonds exercise, a self-check asking the lead-in alone placed after the yes-or-no items, with a closing parenthesis added saying that it asks of the seven molecules and ions of the items above, its model answer’s claim that all of them contain polar bonds corrected to leave out PH₂⁻, and a sentence added on where the dipole moment of PH₂⁻ comes from, with a Source note that the P–H bond is not polar by this book’s table of electronegativities, which prints no value for xenon; the PH₂⁻ part asked as a self-check, its model answer opening with an added sentence that answers the part in the question’s own words, with a Source note giving phosphine’s measured dipole moment, since that table gives phosphorus and hydrogen the same value, and placed after the last yes-or-no item because its model answer is the source’s whole sentence; the next dipole-moment exercise placed in the same group after that self-check, whose answer also answers that exercise’s PCl₃ item, the same question as the earlier PCl₃ item, both carried; in the indicated-atom exercise, the propyne and allene parts each asked as two fields, the atoms the source’s answer marks in the formula named in words in a closing sentence added to the stem; each shape name accepted in the other forms the module prints for it, and a compound shape name in its open spelling, and “tetrahedral” also as “tetrahedral geometry”; capitals and periods added; the full stop after “for example” in the nonpolar-molecule answer corrected to a comma; the name the answer on the shape of water gives the oxygen atom’s nonbonding electrons corrected, with a Source note; the last part of the carbon–sulfur exercise asked by its own words, without the drawing lead-in, and its first part’s species called an ion; a Source note after the OCS paragraph giving the two elements’ values in this book’s table of electronegativities and on a three-figure scale; the links to the two simulators added to the questions of the two simulation checks, the second in a closing parenthesis; the misprinted electron-pair geometry of SeF₄ corrected, with a Source note after the two SeF₄ items; the source’s Lewis structure of HCN, drawn without the lone pair on nitrogen, given the lone pair, with a Source note; the source’s bond angles for the hydroxyl oxygen of nitric acid and the central oxygen of ozone, which look exchanged, not printed, the names alone keyed; the answer to the ozone and ammonia simulation exercise, which the source gives for its last part only, completed for the other two parts, with a Source note; the formaldehyde paragraph’s two bond angles corrected to the measured values, with a Source note, and a Source note after the formaldehyde figure saying that its 118° label is not the measured angle; a Source note after the ammonia figure giving the measured angle where the figure prints 106.8°; and the 16 exercises the source prints no answer for are omitted.</small>

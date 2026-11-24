@@ -7143,7 +7143,10 @@ function chargeVerdict(studentRaw, answerRaw, form) {
   if (!CHARGE_FORM.test(String(form ?? '')) || !WHOLE_NUMBER_FORM.test(String(form ?? ''))) return null;
   const key = signedInteger(answerRaw);
   if (key === null) return null;
-  const raw = String(studentRaw ?? '').replace(/\\(?:,|;|:|!|\s)/g, ' ').replace(/[{}]/g, '').trim();
+  // A charge typed as the superscript the page prints it as (`4^{+}`, `^{3-}`)
+  // is the same charge: the caret is dropped with the braces (audit G1,
+  // November 24, 2026).
+  const raw = String(studentRaw ?? '').replace(/\\(?:,|;|:|!|\s)/g, ' ').replace(/[{}]/g, '').replace(/\^/g, '').trim();
   if (!raw) return { verdict: 'empty', message: '' };
   const after = signAfter(raw);
   if (after !== null) {

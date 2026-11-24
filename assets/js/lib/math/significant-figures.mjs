@@ -220,18 +220,21 @@ export function lastFigureExponent(key, figures) {
  * `correct` — the response shows `figures` significant figures and sits
  * within the allowance. `too-many` — it shows more, and rounded to `figures`
  * (by either rounding rule) it sits within the allowance: the unrounded
- * readout of a right calculation. `too-few` — it shows ONE figure fewer, and
- * it is what the key rounds to at that count: right as
- * far as it goes. Everything else is `incorrect`; the allowance is never
- * widened for a response written to fewer figures, or `0.6` would stand for
- * `0.674`. A response two or more figures short is `incorrect` as well: at
- * one figure the round numbers a stem prints start to "agree" — typing the
- * stem's own class limit, 90, against the key 89.4 was told it "agrees as
- * far as it goes" (Chemistry 2e 1.6, the pilot) — and the sentence would be
- * a hint. The one exception is the key's own number written short: `8` for
- * `8.00` IS the answer, lacking only its zeros, and is `too-few` at any
- * count (Chemistry 2e 4.3) — exact equality, so 90 against 89.4 is still
- * refused.
+ * readout of a right calculation. `too-few` — it shows fewer figures, and it
+ * EQUALS the key rounded to its own count of figures; where the digits the
+ * key drops there are exactly a 5 (a tie: the key is itself rounded), either
+ * neighbour (7.1 and 7.2 for 7.15; 100 and 200 for 150). A whole number
+ * ending in zeros is tried at every count it may show (`1000` for 1040).
+ * Nothing else: the allowance is never widened for a response written to
+ * fewer figures, or `0.6` would stand for `0.674`, and a power of ten one
+ * place coarser is no rounding (`10` for 7.5, `1.0` for 0.974). Since round
+ * 2 of the November 24, 2026 audit a true rounding one figure short is
+ * `too-few` at any count; two or more short it is `too-few` from two figures
+ * shown (`0.7` for 0.674 is refused), except a whole number ending in zeros,
+ * tried at every count it may show — so `90` against 89.4, 89.4 to one
+ * figure, is now `too-few` (the 1.6 pilot refused it as a stem's round
+ * number). The key's own number written short — `8` for `8.00` — is
+ * `too-few` too (Chemistry 2e 4.3).
  *
  * An `incorrect` verdict carries `reason: 'near'` when the response is
  * written to the right count of figures (or is an unrounded readout that
@@ -291,6 +294,23 @@ export function compareMeasured(response, key, spec) {
   return compared;
 }
 
+/**
+ * The key rounded to `count` significant figures: one value, or — where the
+ * dropped digits are exactly a 5 followed by zeros, a tie — its two
+ * neighbours, the value cut down and the value rounded up.
+ */
+function roundingsAt(key, count) {
+  const length = digitCount(key.mantissa);
+  if (length <= count) return [key];
+  const cut = length - count;
+  const unit = pow10(cut);
+  const quotient = key.mantissa / unit;
+  const remainder = key.mantissa % unit;
+  const at = (mantissa) => ({ ...key, mantissa, exponent: key.exponent + cut });
+  if (remainder * 2n === unit) return [at(quotient), at(quotient + 1n)];
+  return [at(quotient + (remainder * 2n > unit ? 1n : 0n))];
+}
+
 function compareAtKeyPrecision(response, key, { figures, lastDigit = 0 }) {
   if (key.mantissa === 0n || response.mantissa === 0n) return { verdict: 'incorrect' };
   const rules = [false, true];
@@ -313,20 +333,19 @@ function compareAtKeyPrecision(response, key, { figures, lastDigit = 0 }) {
     const rounded = rules.map((halfEven) => ({ ...response, ...roundToFigures(response, figures, { halfEven }) }));
     return rounded.some(near) ? { verdict: 'form', reason: 'too-many' } : miss(rounded);
   }
-  // One figure fewer than asked: the response must be exactly what the KEY
-  // rounds to at that count, by either rounding rule.
-  // The last-digit allowance is not carried down — an allowed neighbour of
-  // 89.4 is 89.5, which rounds to 90, and 90 is the round number the stem
-  // itself prints.
+  // Fewer figures than asked: the response must EQUAL the key rounded to the
+  // response's own count of figures. Where the digits dropped from the key are
+  // exactly a 5 — a tie, since the key may itself have been rounded up or down
+  // to that 5 — either neighbour is that rounding: 7.1 and 7.2 for 7.15, 100
+  // and 200 for 150 (audit G4, round 2, November 24, 2026). Nothing else: a
+  // distance test let a power of ten through (`10` for 7.5, `1.0` for 0.974).
+  // A whole number ending in zeros, whose count is ambiguous, is tried at
+  // every count its digits allow (`1000` for 1040 is the key to one figure).
+  // The last-digit allowance is not carried down.
+  const shortBy = (count) => response.sigMin <= count && count <= response.sigMax
+    && roundingsAt(key, count).some((rounded) => sameNumber(response, rounded));
   const shown = figures - 1;
-  if (shown >= 1 && response.sigMin <= shown && shown <= response.sigMax) {
-    for (const halfEven of rules) {
-      const rounded = { ...key, ...roundToFigures(key, shown, { halfEven }) };
-      if (within(response, rounded, 0, Math.min(response.exponent, rounded.exponent))) {
-        return { verdict: 'form', reason: 'too-few' };
-      }
-    }
-  }
+  if (shown >= 1 && shortBy(shown)) return { verdict: 'form', reason: 'too-few' };
   // One figure short and a unit or two off at its own place: what a table of
   // coarser values gives — 123.88 from four-figure atomic masses, against
   // 123.896 from the periodic table's five. Still `incorrect`; the caller
@@ -339,6 +358,14 @@ function compareAtKeyPrecision(response, key, { figures, lastDigit = 0 }) {
       return within(response, rounded, nearUnits(shown), Math.min(response.exponent, rounded.exponent));
     });
     if (coarse) return { verdict: 'incorrect', reason: 'near' };
+  }
+  // Two or more figures fewer, by the same test (audit G3 and round 2):
+  // 180.2 or 180 for 180.16, 463 for 462.610. From two figures shown — `0.7`
+  // for 0.674 stays refused — except a whole number ending in zeros, which is
+  // tried at every count it may show: `1000` for 1040 (the parent's ruling).
+  const ambiguous = response.sigMin < response.sigMax;
+  for (let count = shown - 1; count >= (ambiguous ? 1 : 2); count -= 1) {
+    if (shortBy(count)) return { verdict: 'form', reason: 'too-few' };
   }
   // The key's own number with its trailing zeros left off, however many:
   // `8` for `8.00`. Exactly the key, so nothing a stem's round number can

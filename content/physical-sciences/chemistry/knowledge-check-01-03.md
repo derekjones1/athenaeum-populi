@@ -62,10 +62,10 @@ heterogeneous mixture
   question="Which of the following elements consists of a collection of individual atoms that move about independently of one another?"
   answer="argon"
 >}}
+gold
 argon
-hydrogen
 nitrogen
-chlorine
+phosphorus
 {{< /multiplechoice >}}
 
 {{< selfcheck question="The law of conservation of matter holds true for all conversions of matter, yet convincing examples of it are few and far between. Why? Illustrate your answer with what happens to the matter in the food you eat." >}}
@@ -84,9 +84,9 @@ some of the matter is incorporated into your body, and much is excreted as vario
   answer="toxicity"
 >}}
 density
-hardness
 toxicity
-electrical conductivity
+melting temperature
+mass
 {{< /multiplechoice >}}
 
 {{< multiplechoice

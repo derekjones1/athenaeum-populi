@@ -4763,7 +4763,7 @@ const measuredQuantities = [
   ['1\\times10^{12}', '1\\times10^{12}', 'sig-figs:1 last-digit:0 scientific-notation', 'correct'],
   // two figures short is not "right as far as it goes"
   ['0.7', '0.674', M, 'incorrect'],
-  ['90', '89.4', M, 'incorrect'],
+  ['90', '89.4', M, 'form'],   // 89.4 to one figure: an ambiguous whole number is tried at every count (audit round 2, November 24, 2026)
   ['0.0296', '0.0296', 'sig-figs:3 last-digit:0 decimal', 'correct'],
   ['2.96\\times10^{-2}', '0.0296', 'sig-figs:3 last-digit:0 decimal', 'form', 'as a decimal to 3 significant figures'],
   // a rounding drill: the last digit is determined (Chemistry 2e 1.5)
@@ -4842,7 +4842,8 @@ test('a measured quantity a unit outside its allowance is still incorrect, and i
     // far from the key, or written to another count of figures: nothing to add
     ['36.0', '35.0', 'sig-figs:3 last-digit:0', 'incorrect', ''],
     ['17.5', '35.0', 'sig-figs:3 last-digit:0', 'incorrect', ''],
-    ['90', '89.4', 'sig-figs:3 last-digit:1', 'incorrect', ''],
+    ['90', '89.4', 'sig-figs:3 last-digit:1', 'form', 'as far as it goes'],   // audit round 2: 89.4 to one figure
+    ['10', '7.5', 'sig-figs:2 last-digit:1', 'incorrect', ''],                    // a power of ten one place coarser is no rounding (D1)
     ['10^{11}', '1\\times10^{12}', 'sig-figs:1 last-digit:0', 'incorrect', ''],
     // the key's own number written short is told to write its figures, at any count
     ['8', '8.00', 'sig-figs:3 last-digit:1', 'form', 'now give it to 3 significant figures'],
@@ -5076,6 +5077,9 @@ test('charge: a charge is typed number first, as Section 4.2 writes it (Derek, N
   };
   for (const [key, rows] of Object.entries(table)) for (const [typed, want] of Object.entries(rows)) assert.deepEqual(grade(String(typed), key), want, `${typed} against ${key}`);
   for (const message of [CHARGE_SIGN_FIRST_FEEDBACK, CHARGE_NO_SIGN_FEEDBACK]) assert.ok(!/\d/.test(message), 'no message prints a number');
+  // A charge typed as the superscript the page prints is the same charge (audit G1, November 24, 2026).
+  for (const [typed, want] of [['4^{+}', ['correct', '']], ['4^+', ['correct', '']], ['^{4+}', ['correct', '']], ['4^{-}', ['incorrect', WRONG_SIGN_FEEDBACK]], ['^{+}4', ['form', CHARGE_SIGN_FIRST_FEEDBACK]]]) assert.deepEqual(grade(typed, '4'), want, `${typed} against 4`);
+  assert.deepEqual(grade('3^{-}', '-3'), ['correct', '']);
   // Without `charge` a whole-number key is graded as before (an oxidation state).
   assert.equal(checkAnswer('-3', '-3', { form: 'whole-number' }), 'correct');
   assert.equal(checkAnswer('3-', '-3', { form: 'whole-number' }), 'form');

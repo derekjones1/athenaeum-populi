@@ -110,7 +110,7 @@ The electron configurations of silicon (14 electrons), phosphorus (15 electrons)
 This version of the periodic table shows the outer-shell electron configuration of each element. Note that down each group, the configuration is often similar.
 {{< /mediafigure >}}
 
-*Source note:* four cells of the source’s table differ from the ground-state configurations in the [NIST Atomic Spectra Database](https://physics.nist.gov/PhysRefData/ASD/ionEnergy.html). The table prints technetium as 5s¹4d⁶, where the database gives [Kr]5s²4d⁵; curium as 7s²5f⁹, where it gives [Rn]7s²5f⁷6d¹; berkelium as 7s²5f⁸6d¹, where it gives [Rn]7s²5f⁹; and lawrencium as 7s²5f¹⁴6d¹, where it gives [Rn]7s²5f¹⁴7p¹.
+*Source note:* four cells of the source’s table differ from the ground-state configurations in the [NIST Atomic Spectra Database](https://physics.nist.gov/cgi-bin/ASD/ie.pl?spectra=Tc+I%3B+Cm+I%3B+Bk+I%3B+Lr+I&units=1&format=0&order=0&at_num_out=on&sp_name_out=on&conf_out=on&level_out=on&e_out=0). The table prints technetium as 5s¹4d⁶, where the database gives [Kr]5s²4d⁵; curium as 7s²5f⁹, where it gives [Rn]7s²5f⁷6d¹; berkelium as 7s²5f⁸6d¹, where it gives [Rn]7s²5f⁹; and lawrencium as 7s²5f¹⁴6d¹, where it gives [Rn]7s²5f¹⁴7p¹.
 
 When we come to the next element in the periodic table, the alkali metal potassium (atomic number 19), we might expect that we would begin to add electrons to the 3d subshell. However, all available chemical and physical evidence indicates that potassium is like lithium and sodium, and that the next electron is not added to the 3d level but is, instead, added to the 4s level (shown in the electron configuration table above). As discussed previously, the 3d orbital with no radial nodes is higher in energy because it is less penetrating and more shielded from the nucleus than the 4s, which has three radial nodes. Thus, potassium has an electron configuration of [Ar]4s¹. Hence, potassium corresponds to Li and Na in its valence shell configuration. The next electron is added to complete the 4s subshell and calcium has an electron configuration of [Ar]4s². This gives calcium an outer-shell electron configuration corresponding to that of beryllium and magnesium.
 
@@ -374,53 +374,58 @@ on the ion
 {{< mediafigure src="chemistry/CNX_Chem_06_04_OrbDiaSh2a_img" kind="diagram" alt="An orbital diagram: a box labeled 2s holding an upward and a downward half-arrow, then three joined boxes labeled 2p, each holding a single upward half-arrow." >}}
 {{< /mediafigure >}}
 
-The diagram shows one 2s box holding a pair of arrows of opposite spin and three 2p boxes each holding a single upward arrow.
+The diagram shows one 2s box holding a pair of arrows of opposite spin and three 2p boxes each holding a single arrow, all three with the same spin.
 ===CHECKS===
 one 2s box holding a pair of arrows of opposite spin
-three 2p boxes each holding a single upward arrow
+three 2p boxes each holding a single arrow
+all three with the same spin
 {{< /selfcheck >}}
 
 {{< selfcheck question="Use an orbital diagram to describe the electron configuration of the valence shell of the following atom: Si." hint="Read the atom’s outer configuration from the electron configuration table, keep only the subshells its category counts in the valence shell (a completely filled d subshell counts as core), then draw one box for each of their orbitals and fill them by Hund’s rule." >}}
 {{< mediafigure src="chemistry/CNX_Chem_06_04_OrbDiaSh2b_img" kind="diagram" alt="An orbital diagram: a box labeled 3s holding an upward and a downward half-arrow, then three joined boxes labeled 3p, the first two each holding a single upward half-arrow and the third empty." >}}
 {{< /mediafigure >}}
 
-The diagram shows one 3s box holding a pair of arrows of opposite spin and three 3p boxes, the first two each holding a single upward arrow and the third empty.
+The diagram shows one 3s box holding a pair of arrows of opposite spin and three 3p boxes, one of them empty and the other two each holding a single arrow, both with the same spin.
 ===CHECKS===
 one 3s box holding a pair of arrows of opposite spin
-three 3p boxes, the first two each holding a single upward arrow
-the third empty
+three 3p boxes, one of them empty
+the other two each holding a single arrow
+both with the same spin
 {{< /selfcheck >}}
 
 {{< selfcheck question="Use an orbital diagram to describe the electron configuration of the valence shell of the following atom: Fe." hint="Read the atom’s outer configuration from the electron configuration table, keep only the subshells its category counts in the valence shell (a completely filled d subshell counts as core), then draw one box for each of their orbitals and fill them by Hund’s rule." >}}
 {{< mediafigure src="chemistry/CNX_Chem_06_04_OrbDiaSh2c_img" kind="diagram" alt="An orbital diagram: a box labeled 4s holding an upward and a downward half-arrow, then five joined boxes labeled 3d, the first holding an upward and a downward half-arrow and the other four each a single upward half-arrow." >}}
 {{< /mediafigure >}}
 
-The diagram shows one 4s box holding a pair of arrows of opposite spin and five 3d boxes, the first holding a pair of arrows and the other four each holding a single upward arrow.
+The diagram shows one 4s box holding a pair of arrows of opposite spin and five 3d boxes, one holding a pair of arrows and the other four each holding a single arrow, all four with the same spin.
 ===CHECKS===
 one 4s box holding a pair of arrows of opposite spin
-five 3d boxes, the first holding a pair of arrows
-the other four each holding a single upward arrow
+five 3d boxes, one holding a pair of arrows
+the other four each holding a single arrow
+all four with the same spin
 {{< /selfcheck >}}
 
 {{< selfcheck question="Use an orbital diagram to describe the electron configuration of the valence shell of the following atom: Te." hint="Read the atom’s outer configuration from the electron configuration table, keep only the subshells its category counts in the valence shell (a completely filled d subshell counts as core), then draw one box for each of their orbitals and fill them by Hund’s rule." >}}
 {{< mediafigure src="chemistry/CNX_Chem_06_04_OrbDiaSh2d_img" kind="diagram" alt="An orbital diagram: a box labeled 5s holding an upward and a downward half-arrow, then three joined boxes labeled 5p, the first holding an upward and a downward half-arrow and the other two each a single upward half-arrow." >}}
 {{< /mediafigure >}}
 
-The diagram shows one 5s box holding a pair of arrows of opposite spin and three 5p boxes, the first holding a pair of arrows and the other two each holding a single upward arrow.
+The diagram shows one 5s box holding a pair of arrows of opposite spin and three 5p boxes, one holding a pair of arrows and the other two each holding a single arrow, both with the same spin.
 ===CHECKS===
 one 5s box holding a pair of arrows of opposite spin
-three 5p boxes, the first holding a pair of arrows
-the other two each holding a single upward arrow
+three 5p boxes, one holding a pair of arrows
+the other two each holding a single arrow
+both with the same spin
 {{< /selfcheck >}}
 
 {{< selfcheck question="Use an orbital diagram to describe the electron configuration of the valence shell of the following atom: Mo." hint="Read the atom’s outer configuration from the electron configuration table, keep only the subshells its category counts in the valence shell (a completely filled d subshell counts as core), then draw one box for each of their orbitals and fill them by Hund’s rule." >}}
 {{< mediafigure src="chemistry/CNX_Chem_06_04_OrbDiaSh2e_img" kind="diagram" alt="An orbital diagram: a box labeled 5s holding a single upward half-arrow, then five joined boxes labeled 4d, each holding a single upward half-arrow." >}}
 {{< /mediafigure >}}
 
-The diagram shows one 5s box holding a single upward arrow and five 4d boxes each holding a single upward arrow, so all six valence electrons are unpaired.
+The diagram shows one 5s box holding a single arrow and five 4d boxes each holding a single arrow, all six with the same spin, so all six valence electrons are unpaired.
 ===CHECKS===
-one 5s box holding a single upward arrow
-five 4d boxes each holding a single upward arrow
+one 5s box holding a single arrow
+five 4d boxes each holding a single arrow
+all six with the same spin
 all six valence electrons are unpaired
 {{< /selfcheck >}}
 

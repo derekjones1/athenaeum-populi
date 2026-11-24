@@ -7876,17 +7876,6 @@
       "bundle": "chemistry-bundle",
       "moduleId": "m68747",
       "sourceElementIds": [
-        "fs-idm181597760"
-      ],
-      "status": "correct-local-source-defect",
-      "errataEntry": 3180,
-      "rationale": "The wave-addition figure's caption says out-of-phase waves in panel (b) give destructive interference, but the drawing shows the two waves alike (crest under crest) with a flat sum; for a flat sum the second wave must be the first turned upside down, and the source alt describes what should be drawn, not what is. The page keeps the image with an alt written from it, a Source note after the figure, and a footer clause. Found by the 8.4a render reader and the parent, ruled by the orchestrator, November 16, 2026."
-    },
-    {
-      "localPath": "content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/04-molecular-orbital-theory.md",
-      "bundle": "chemistry-bundle",
-      "moduleId": "m68747",
-      "sourceElementIds": [
         "fs-idm175049680"
       ],
       "status": "correct-local-source-defect",
@@ -9067,7 +9056,7 @@
       "errataEntry": 3385,
       "rationale": "Appendix G’s KF(s) row prints an enthalpy of formation of −576.27; the NBS tables (Wagman et al., 1982, p. 2-329) give −567.27, −537.75, 66.57, and −567.27 reproduces the row’s own free energy (−537.6 against −537.75) where −576.27 gives −546.6. Two digits are exchanged. The page prints −567.27. Disclosed by a Source note after the table, a footer clause, and a TABLE_NOTES deviation in tools/verify/verify-source-tables.mjs. NBS page read by the orchestrator, November 23, 2026; approved by Derek."
     },
-{
+    {
       "localPath": "content/physical-sciences/chemistry/appendices/g-standard-thermodynamic-properties-for-selected-substances.md",
       "bundle": "chemistry-bundle",
       "moduleId": "m68865",
@@ -9078,7 +9067,7 @@
       "errataEntry": 3386,
       "rationale": "Appendix G’s Mn₃O₄(s) row prints an enthalpy of formation of −1378.83; the NBS tables (p. 2-191) give −1387.8, −1283.2, 155.6, and −1387.83 (−331.7 kcal, the value the row’s other digits come from) reproduces the row’s own free energy (−1283.3 against −1283.23) where −1378.83 gives −1274.3. Two digits are exchanged. The page prints −1387.83 (Derek chose the source’s digits with the exchange undone over the tables’ −1387.8). Section 5.3’s exercise fs-idp161282368 reads this row and is re-keyed from 459.610 to 462.610. Disclosed by a Source note after the table, a footer clause, and a TABLE_NOTES deviation in tools/verify/verify-source-tables.mjs. NBS page read by the orchestrator, November 23, 2026; approved by Derek."
     },
-{
+    {
       "localPath": "content/physical-sciences/chemistry/appendices/g-standard-thermodynamic-properties-for-selected-substances.md",
       "bundle": "chemistry-bundle",
       "moduleId": "m68865",
@@ -9089,7 +9078,7 @@
       "errataEntry": 3387,
       "rationale": "Appendix G’s HgSO₄(s) row prints an entropy of 0.00, which no compound has at 298 K; the row’s enthalpy and free energy imply about 138. The NBS tables (p. 2-151) print only the enthalpy, −707.5, for crystalline HgSO₄. The page prints a dash for the entropy and keeps the enthalpy and the free energy. Disclosed by a Source note after the table, a footer clause, and a TABLE_NOTES deviation in tools/verify/verify-source-tables.mjs. NBS page read by the orchestrator, November 23, 2026; approved by Derek."
     },
-{
+    {
       "localPath": "content/physical-sciences/chemistry/appendices/g-standard-thermodynamic-properties-for-selected-substances.md",
       "bundle": "chemistry-bundle",
       "moduleId": "m68865",
@@ -9131,7 +9120,7 @@
       ],
       "status": "correct-local-source-defect",
       "errataEntry": 3390,
-      "rationale": "The Densities of Common Substances table gives dry air 1.20 g/L in a gas column headed “at 25 °C and 1 atm”; with dry air’s molar mass of 28.9586 g/mol (Lemmon et al., J. Phys. Chem. Ref. Data 29, 331, 2000) the density at 25 °C and 1 atm is 1.18 g/L, 1.20 being its density near 20 °C. The page prints 1.18 with a visible Source note after the table and a footer clause. Nitrogen 1.14, carbon dioxide 1.80, and neon 0.83 differ from the NIST WebBook by one unit in the last digit and are kept as printed (the parent’s ruling). Found by the November 23, 2026 correctness audit (A2)."
+      "rationale": "The Densities of Common Substances table gives dry air 1.20 g/L in a gas column headed “at 25 °C and 1 atm”; with dry air’s molar mass of 28.9586 g/mol (Lemmon et al., J. Phys. Chem. Ref. Data 29, 331, 2000) the density at 25 °C and 1 atm is 1.18 g/L, 1.20 being its density near 20 °C. The page prints 1.18 with a visible Source note after the table and a footer clause. Since November 24, 2026 nitrogen, carbon dioxide, and neon are corrected too, to the NIST WebBook’s 1.15, 1.81, and 0.82 g/L at 298.15 K and 1 atm (ruling R7 of that fix pass), and the Source note names all four cells. Found by the November 23, 2026 correctness audit (A2)."
     },
     {
       "localPath": "content/physical-sciences/chemistry/01-essential-ideas/06-mathematical-treatment-of-measurement-results.md",
@@ -9142,7 +9131,7 @@
       ],
       "status": "correct-local-source-defect",
       "errataEntry": 3391,
-      "rationale": "The paragraph says that on the Celsius scale 0 °C “is defined as” the freezing temperature of water and 100 °C as its boiling temperature; that is how the scale used to be defined (BIPM, The International System of Units, 9th edition, 2019, §2.3.1: the Celsius temperature is t = T − 273.15 K). The page prints “was formerly defined”, with a visible Source note after the paragraph and a footer clause. Found by the November 23, 2026 correctness audit (A3)."
+      "rationale": "The paragraph says that on the Celsius scale 0 °C “is defined as” the freezing temperature of water and 100 °C as its boiling temperature; that is how the scale used to be defined (BIPM, The International System of Units, 9th edition, 2019, §2.3.1: the Celsius temperature is t = T − 273.15 K). The page prints “was formerly defined”, with a visible Source note after the paragraph and a footer clause. Found by the November 23, 2026 correctness audit (A3). Since November 24, 2026 the paragraph’s Fahrenheit sentence is corrected the same way (“was likewise defined as 32 °F”), citing NIST SP 811."
     },
     {
       "localPath": "content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/05-quantitative-chemical-analysis.md",
@@ -9259,6 +9248,1141 @@
       "status": "correct-local-source-defect",
       "errataEntry": 3401,
       "rationale": "The answer to part (b) of the compressibility exercise says the ideal gas approximation breaks down “at a high pressure and temperature”; the section and the same answer’s part (e) put the breakdown at low temperature. The self-check’s model answer and its second rubric clause read “at a high pressure and low temperature”, with a visible Source note after the self-check and a footer clause. Found by the November 23, 2026 correctness audit (D2)."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/01-essential-ideas/01-chemistry-in-context.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68664",
+      "sourceElementIds": [
+        "fs-idm67489232",
+        "fs-idp55370768"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3402,
+      "rationale": "The domains exercise says copper wire “has a density of about 8 g/cm³”. The stem stays as printed (the keyed answer, macroscopic, does not depend on the number); a visible Source note after the item gives 8.960 g/cm³ from NIST and says the graded answer follows the stem as printed, and a footer clause. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3402."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/01-essential-ideas/02-phases-and-classification-of-matter.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68667",
+      "sourceElementIds": [
+        "fs-idm113901040"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3403,
+      "rationale": "“tens of millions of chemical compounds”. The page prints the suggested correction, with a visible Source note after the flow chart that follows the paragraph (a note may not stand between a paragraph and the figure it points to) citing the CAS counts, and a footer clause. No graded item reads the sentence. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3403."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/01-essential-ideas/02-phases-and-classification-of-matter.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68667",
+      "sourceElementIds": [
+        "fs-idm11351120",
+        "fs-idm21502784",
+        "fs-idm27166864"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3404,
+      "rationale": "The commercial-products sample answer lists “salt, sodium chloride” as two ingredients. The self-check's sample answer prints “sodium citrate”, with a visible Source note after the self-check and a footer clause. The rubric (drawn from the added opening sentence) is unchanged. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3404."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/01-essential-ideas/03-physical-and-chemical-properties.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68670",
+      "sourceElementIds": [
+        "fs-idp114795152",
+        "CNX_Chem_01_03_HazDiamond"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3405,
+      "rationale": "The white diamond is said to mark corrosive, acidic, alkaline, biological, and radioactive hazards; NFPA 704 authorizes only W, OX, and SA. The page prints the suggested sentence; the figure is the source's artwork and is kept, its alt and extended description transcribing the key as drawn. The Source note at the end of the callout says what the source prints, that NFPA 704 authorizes only W, OX, and SA and counts corrosive and acid hazards in the health rating, and that the figure key's ACID, ALK, COR, and radiation symbols are not part of the standard; a footer clause. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3405."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/01-essential-ideas/03-physical-and-chemical-properties.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68670",
+      "sourceElementIds": [
+        "fs-idp114795152"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3406,
+      "rationale": "The Hazard Diamond box says “each hazard is rated on a scale from 0 to 4”, the white special-hazards diamond included. The page prints the suggested sentence, with a visible Source note at the end of the callout (shared with entry 3405) and a footer clause. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3406."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/01-essential-ideas/04-measurements.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68674",
+      "sourceElementIds": [
+        "fs-idp3379184"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3407,
+      "rationale": "“Water freezes at 273.15 K (0 °C) and boils at 373.15 K (100 °C)”. The page prints the suggested sentence, with a visible Source note after the paragraph giving 373.124 K (99.974 °C) and a footer clause. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3407."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/01-essential-ideas/06-mathematical-treatment-of-measurement-results.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68683",
+      "sourceElementIds": [
+        "foot-00001"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3408,
+      "rationale": "The conversion-factor table's footnote calls the ounce and pound units of weight. The page prints the suggested footnote below the table, with a visible Source note quoting the source's footnote whole, and a footer clause (the footer's corrected statements go from five to six). This overturns the chapter 1 “Reviewed and not errata” line on this footnote (F15). Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3408."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/01-essential-ideas/06-mathematical-treatment-of-measurement-results.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68683",
+      "sourceElementIds": [
+        "fs-idm131802496"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3409,
+      "rationale": "The gas zero “at −273.15 °C” and Thomson's scale “based on this concept”. The page prints the suggested correction, with a visible Source note after the paragraph and a footer clause. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3409."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/01-essential-ideas/06-mathematical-treatment-of-measurement-results.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68683",
+      "sourceElementIds": [
+        "fs-idm309875456",
+        "fs-idm249665120"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3410,
+      "rationale": "“The freezing temperature of water on this scale is 273.15 K and its boiling temperature is 373.15 K”. The page prints the suggested sentence; the figure keeps its label; a visible Source note after the figure (beside the note of erratum 2909) gives 373.124 K (99.974 °C); a footer clause. The same sentence of §1.4 (m68674) is erratum 3407. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3410."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/01-essential-ideas/06-mathematical-treatment-of-measurement-results.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68683",
+      "sourceElementIds": [
+        "fs-idm250694352",
+        "fs-idp51878496"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3411,
+      "rationale": "The conversion exercise gives Mt. Kilimanjaro a height of 19,565 ft. The stem and its key (5.9634 km) are kept as printed; a visible Source note after the item gives the surveyed heights and says the answer graded follows the stem as printed; a footer clause. This overturns the §5.3 “Reviewed and not errata” line on Kilimanjaro so far as it says §1.6's 19,565 ft was kept from memory. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3411."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/01-early-ideas-in-atomic-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68685",
+      "sourceElementIds": [
+        "fs-idp28025040",
+        "fs-idp130268400"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3412,
+      "rationale": "The compound X / compound Y Check Your Learning divides two mass ratios it has already rounded and prints 0.800. The self-check's model answer prints the two ratios with the digits carried and the result 0.801 ≈ 4/5, its rubric clause to match, with a visible Source note after the self-check and a footer clause; a `DISCLOSED_DEVIATIONS` line (kind `solution`, exercise `fs-idp28025040#check`). This replaces the chapter 2 “Reviewed and not errata” line for the same step (Claim pass F11), overturned by the November 14, 2026 rule that a worked calculation never reuses a value it has rounded. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3412."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/02-evolution-of-atomic-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68687",
+      "sourceElementIds": [
+        "fs-idp20412272"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3413,
+      "rationale": "The charge-to-mass ratio “already known due to Thomson’s research (1.759 × 10¹¹ C/kg)”. The page prints the suggested correction, with a visible Source note after the equation (Thomson's values, about 0.8 × 10¹¹ C/kg) and a footer clause. This overturns the chapter 2 “Reviewed and not errata” line on this sentence (Claim pass F7). Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3413."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/02-evolution-of-atomic-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68687",
+      "sourceElementIds": [
+        "fs-idp153048272"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3414,
+      "rationale": "The protons provide “half, or less,” of the nucleus's mass, with no exception for hydrogen. The page prints the suggested sentence, with a visible Source note after the paragraph and a footer clause. No graded item reads the sentence. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3414."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/02-evolution-of-atomic-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68687",
+      "sourceElementIds": [
+        "fs-idm61727056",
+        "fs-idm76457600",
+        "fs-idp27196528"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3415,
+      "rationale": "The Rutherford-atom exercise's answer (b) gives no reasoning, though the question asks for it. The self-check's model answer adds that clause and two rubric clauses from it, with a visible Source note after the self-check and a footer clause. No `DISCLOSED_DEVIATIONS` line (the source-keys gate passes the added clause without one). Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3415."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/02-evolution-of-atomic-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68687",
+      "sourceElementIds": [
+        "fs-idm61727056",
+        "fs-idm76457600",
+        "fs-idp27196528"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3416,
+      "rationale": "The Rutherford-atom exercise's answer (d) does not state the generalization the question asks for. The self-check's model answer adds that sentence; the rubric's bare-noun-phrase clause is merged into one clause and three clauses from the added sentence are added; a visible Source note after the self-check and a footer clause; a `DISCLOSED_DEVIATIONS` line (kind `solution`, exercise `fs-idm61727056(d)`). Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3416."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/03-atomic-structure-and-symbolism.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68692",
+      "sourceElementIds": [
+        "fs-idm3186256"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3417,
+      "rationale": "The average mass of a terrestrial neon atom is printed as 20.1796 amu. The page prints 20.1797 amu, with a visible Source note after the solar-wind example's existing note citing CIAAW and NIST, and the footer's list of corrected statements extended (“four statements corrected”). No graded item reads the value. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3417."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/04-chemical-formulas.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68693",
+      "sourceElementIds": [
+        "fs-idm89120384"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3418,
+      "rationale": "The isomers Link to Learning (http://openstax.org/l/16isomers) lands on the NSF News index; the “Mirror Molecule: Carvone” video is not there. The page links the NBC News Learn video directly and writes the parenthesis as “(the video “Mirror Molecule: Carvone”)”; the footer names the old short link, where it landed, and the replacement. No Source note (the box's text is otherwise the source's). Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3418."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/05-the-periodic-table.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68695",
+      "sourceElementIds": [
+        "fs-idm382436640",
+        "CNX_Chem_02_05_PerTable1"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3419,
+      "rationale": "Several bracketed mass numbers of the heaviest elements are not those of the longest-lived known isotope. The page keeps the sentence and the drawing's brackets (taken from the source) as printed; the existing Source note after the paragraph (entry 2952) adds that for several of the heaviest elements the bracketed number is no longer the longest-lived isotope's, with lawrencium and meitnerium as examples. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3419."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/06-ionic-and-molecular-compounds.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68696",
+      "sourceElementIds": [
+        "fs-idp210658336"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3420,
+      "rationale": "The prefix *per-* is called “short for ‘hyper’”. The page prints the suggested words, with a visible Source note after the paragraph and a footer clause. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3420."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/02-atoms-molecules-and-ions/06-ionic-and-molecular-compounds.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68696",
+      "sourceElementIds": [
+        "fs-idp56020048"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3421,
+      "rationale": "Sodium chloride “boils at 1413 °C”. The page prints 1465 °C, with a visible Source note after the molten-salt figure that follows the paragraph and a footer clause. No item is keyed on the value. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3421."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68700",
+      "sourceElementIds": [
+        "CNX_Chem_03_01_brain"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3422,
+      "rationale": "The brain figure's caption gives 1.5 kg and 1.1 L, a density of 1.4 g/mL. The page prints the suggested correction, with a visible Source note after the figure citing both references, and a footer clause. No graded item reads the caption. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3422."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68700",
+      "sourceElementIds": [
+        "fs-idm2962416"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3423,
+      "rationale": "The dopamine vesicle content changes “by up to three-fold” under drug treatment. The page prints “roughly doubling or falling by about half”, with a visible Source note after the paragraph quoting the study's numbers, and a footer clause. No graded item reads the sentence. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3423."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68700",
+      "sourceElementIds": [
+        "fs-idp17737968",
+        "fs-idp55880640",
+        "fs-idp55880896"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3424,
+      "rationale": "The answer to the moles-from-mass exercise expresses the molar mass “in grams”. The self-check's model answer prints the suggested correction, its rubric clause follows it, with a visible Source note after the self-check and a footer clause. no `DISCLOSED_DEVIATIONS` line (the source-keys gate passes the changed phrase without one, and a listed deviation it does not exercise fails as stale). Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3424."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/01-formula-mass-and-the-mole-concept.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68700",
+      "sourceElementIds": [
+        "fs-idp41325696",
+        "fs-idp41326656"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3425,
+      "rationale": "Exercise “Cullinan diamond” gives its weight as 3104 carats. The stem and its key (3.113 × 10²⁵, from the printed 3104) are kept; a visible Source note after the item gives the accepted weight with the citation and says the graded answer follows the stem as printed; a footer clause. Supersedes the “Reviewed and not errata” line for this stem (“no source was opened … Claim pass (S5): suspicion from memory”). Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3425."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/02-determining-empirical-and-molecular-formulas.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68702",
+      "sourceElementIds": [
+        "CNX_Chem_03_03_BrewTank"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3426,
+      "rationale": "The brewery photograph's caption calls brew kettles “fermentation tanks” from which an oxide of carbon is removed. The page prints the suggested caption, with a visible Source note after the figure citing the Commons file, the example's “(shown in the photograph below)” reworded to “(the photograph below shows a brewery)”, and a footer clause (“four statements corrected, each with a Source note”). No graded item depends on the caption. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3426."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/02-determining-empirical-and-molecular-formulas.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68702",
+      "sourceElementIds": [
+        "fs-idm149528800",
+        "fs-idp1815712",
+        "fs-idp63157456"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3427,
+      "rationale": "The chrysotile exercise's percent composition and molar mass are not chrysotile's. The stem and both keys are kept as printed. A visible Source note after the two items says that the composition and molar mass are not chrysotile's, gives its formula and composition with the ATSDR citation, and says that the answers graded follow the stem as printed; a footer clause. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3427."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/03-molarity.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68703",
+      "sourceElementIds": [
+        "fs-idm26575872"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3428,
+      "rationale": "“4.25 g of NH₃ in 0.500 L of solution, the concentration of NH₃ in household ammonia”. The stem and key (0.499 *M*) are kept as printed, with a visible Source note after the item quoting the CDC/ATSDR range and saying that the answer graded follows the stem as printed, and a footer clause. No item re-hashed. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3428."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/04-other-units-for-solution-concentrations.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68704",
+      "sourceElementIds": [
+        "fs-idm37568416"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3429,
+      "rationale": "“Inline water filters are designed to reduce the concentration of fluoride and several other trace-level contaminants in tap water”. The page prints the suggested correction, with a visible Source note after the photograph citing both sources, and a footer clause. This replaces the chapter 3 “Reviewed and not errata” line (suspicion from memory, not opened). Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3429."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/04-other-units-for-solution-concentrations.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68704",
+      "sourceElementIds": [
+        "fs-idm85549664",
+        "fs-idm1848576",
+        "fs-idp13989120"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3430,
+      "rationale": "The D5W exercise calls D5W “a 5.0% by mass solution of dextrose”. Stem and key (0.29) kept as printed; a visible Source note after the item gives the label's composition and says the answer graded follows the stem as printed; a footer clause. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3430."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/01-writing-and-balancing-chemical-equations.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68709",
+      "sourceElementIds": [
+        "fs-idp267125008",
+        "fs-idp26705376",
+        "fs-idm90785536"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3431,
+      "rationale": "Hydrogen iodide written as a solid, “HI(s)”, in the hydrogen and iodine equation. Stem and key kept as printed (the key is right for its own stem); a visible Source note after the item gives the melting and boiling points and says the answer graded follows the stem as printed; a footer clause. The grader holds a learner who types 2HI(g) at `form` (state differs); an equation takes no accept list, so no accept member was added. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3431."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/02-classifying-chemical-reactions.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68710",
+      "sourceElementIds": [
+        "fs-idm50199792"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3432,
+      "rationale": "“In all cases, these compounds react only partially and so are classified as weak bases”. The page prints the suggested sentence, with a visible Source note after the paragraph quoting the source and citing Section 14.3; the footer names the correction and the note. no item is keyed on the sentence. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3432."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/02-classifying-chemical-reactions.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68710",
+      "sourceElementIds": [
+        "fs-idp4633776",
+        "fs-idm5712736"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3433,
+      "rationale": "The Link to Learning calls its video a “prototype, hybrid rocket engine”; the video shows a 5-percent scale model of the whole Space Launch System. The page prints “… showing the test firing of a small-scale model of NASA’s Space Launch System, a rocket whose core stage burns liquid propellants and whose boosters burn solid ones.”, the second sentence kept as printed (its timings and flame colors not checked against the video). The Source note after the callout (erratum 3002's) now opens by quoting the source's description and saying what the video shows, with the NASA links; the footer names the correction and the note. no item is keyed on the sentence. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3433."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/02-classifying-chemical-reactions.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68710",
+      "sourceElementIds": [
+        "fs-idm6604608",
+        "fs-idp56247296",
+        "fs-idp102506224"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3434,
+      "rationale": "Exercise 4.23(d) gives the product calcium hydroxide as aqueous, Ca(OH)₂(*aq*), against the module's own solubility guidelines. The graded key carries no state on Ca(OH)₂ (the other species keep the source's), so (*s*), (*aq*), and no state are all graded correct (probe November 24, 2026; the grader also takes (*l*) and (*g*), a stateless key species being fully open). A visible Source note after the item says only that the graded answer leaves the state of one product open where the source gives one, the item being unanswered above it; the footer names the note. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3434."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/03-reaction-stoichiometry.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68713",
+      "sourceElementIds": [
+        "fs-idp172099056",
+        "fs-idp172099568"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3435,
+      "rationale": "The silver exercise's equation writes zinc cyanide as dissolved, Zn(CN)₂(aq). Both items keep the equation as printed and their keys; the Source note after the first item (errata 3034 and 3035) now also says that zinc cyanide is practically insoluble in water, dissolves in alkali cyanide solutions, and ends up as [Zn(CN)₄]²⁻ as Section 19.1 writes this step, linking PubChem, and that both items are graded on the equation as printed; the footer clause is extended. No `DISCLOSED_DEVIATIONS` line. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3435."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/04-reaction-yields.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68714",
+      "sourceElementIds": [
+        "fs-idm46525040",
+        "fs-idp39307056",
+        "fs-idp98805200"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3436,
+      "rationale": "The ether exercise's outline starts from the mass of ethanol, though the stem gives a volume. The self-check's model answer opens with “Convert volume of ethanol to mass of ethanol through its density;” and the rubric gains that clause, with a visible Source note directly after the self-check and a footer clause. No `DISCLOSED_DEVIATIONS` line (the source-keys gate passes the added step without one). Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3436."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/04-reaction-yields.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68714",
+      "sourceElementIds": [
+        "fs-idm19471568",
+        "fs-idp8946384",
+        "fs-idp8960064"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3437,
+      "rationale": "The gold-atoms exercise's answer neither says whether to agree nor gives the mass. The self-check's model answer prints the suggested correction, its rubric adds the clauses `no` and `the mass of one trillion gold atoms is only about 0.33 nanogram`, a visible Source note follows the self-check, and a footer clause; a `DISCLOSED_DEVIATIONS` line (kind `solution`, exercise `fs-idm19471568`). Erratum 3024's “weighed” stands in the same sentence. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3437."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/01-energy-basics.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68724",
+      "sourceElementIds": [
+        "fs-idm68801008"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3438,
+      "rationale": "The table of specific heats labels ice's 2.093 J/g °C “at −10 °C”, a value ice has just below its melting point. The page prints “2.093 (near 0 °C)”, keeping the value the exercises and Appendix E use, and the Source note after the table (erratum 3045) gains a sentence giving what the source labels and the IAPWS value at −10 °C, with a link; the footer clause is extended. No key changes (the ice-cube exercise keys 1310 J and 313 cal from 2.093). Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3438."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/01-energy-basics.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68724",
+      "sourceElementIds": [
+        "fs-idp23764656",
+        "fs-idp23765168",
+        "fs-idp23772816"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3439,
+      "rationale": "Exercise 5.13's answer never says which way its assumptions move the result, which the question asks. The self-check's model answer keeps the source's sentences (with 3049's 7.5 kWh) and adds that sentence; its rubric drops the clause that repeats the stem's density and checks the direction; the Source note after the self-check now names both changed sentences; the footer clause is extended. A `DISCLOSED_DEVIATIONS` line (kind `solution`, exercise `fs-idp23764656`) beside erratum 3049's `key` line. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3439."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/02-calorimetry.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68726",
+      "sourceElementIds": [
+        "fs-idm56857472"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3440,
+      "rationale": "The National Nutrient Database link now reaches a nutrient-needs calculator, and the database holds fewer than “8000 foods”. The page links FoodData Central, says the database is now published there, and says “nearly 8000 foods”, with a visible Source note after the paragraph inside the callout (what the source's link reaches now and its count, with the SR Legacy documentation's count and link) and a footer clause. No item depends on the sentence. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3440."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68727",
+      "sourceElementIds": [
+        "fs-idp184316112",
+        "fs-idp184316368"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3441,
+      "rationale": "The nitric acid exercise writes as liquid the water whose enthalpy change, −907 kJ, is that of water vapor. The stem and the key stand as printed; a visible Source note after the item (the −907 kJ is the enthalpy change when the water forms as vapor, −906.3 kJ with H₂O(*g*) and −1170.4 kJ with H₂O(*l*) from Appendix G; the answer graded follows the stem as printed) and a footer clause. No `DISCLOSED_DEVIATIONS` line (the key is the source's). Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3441."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68727",
+      "sourceElementIds": [
+        "fs-idp155265632",
+        "fs-idp155265888"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3442,
+      "rationale": "The antimony chloride exercise writes SbCl₃ and SbCl₅ as solids with the enthalpy changes of the gases. The stem and the key stand as printed; a visible Source note after the item (the source writes SbCl₃ and SbCl₅ as solids, but the enthalpy changes it gives are not those of the solids: the −314 kJ is far from Appendix G's enthalpy of formation of solid SbCl₃; the answer graded follows the stem as printed — it does not name the gases, which would point to the key in Appendix G) and a footer clause. No `DISCLOSED_DEVIATIONS` line. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3442."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68727",
+      "sourceElementIds": [
+        "fs-idp7380800"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3443,
+      "rationale": "The rocket-fuel exercise's answer names the fuel without the heat per gram the question asks it to be chosen on. The self-check after the multiple-choice item prints the suggested correction, its rubric adds the three per-gram clauses, a visible Source note follows the self-check, and a footer clause; a `DISCLOSED_DEVIATIONS` line (kind `solution`, exercise `fs-idp181957264`). Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3443."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68727",
+      "sourceElementIds": [
+        "fs-idp124901952",
+        "fs-idp124902208"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3444,
+      "rationale": "The ethylene exercise calls ethylene “a byproduct from the fractional distillation of petroleum”. The stem stands as printed (the claim does not enter the key, −88.2 kJ); a visible Source note after the item quoting the DOE profile, with a link, and a footer clause. No `DISCLOSED_DEVIATIONS` line. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3444."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/01-electromagnetic-energy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68729",
+      "sourceElementIds": [
+        "fs-idp67580224"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3445,
+      "rationale": "The interference paragraph puts the two slits “about a wavelength apart”, too close for the many fringes the photograph shows. The page prints the suggested sentence, with a visible Source note after the interference photograph (beside the existing red-light note, erratum 3090) and a footer clause (“five statements corrected, each with a Source note”). This overturns the chapter 6 “Reviewed and not errata” line for the same text, which was ruled without an opened reference. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3445."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/01-electromagnetic-energy.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68729",
+      "sourceElementIds": [
+        "fs-idm57169680"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3446,
+      "rationale": "The Hodgkin box names “cholesterol iodide” for cholesteryl iodide. The page prints “cholesteryl iodide”, with a visible Source note after the box's paragraph (citing the paper) and a footer clause. No item depends on it. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3446."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/03-development-of-quantum-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68733",
+      "sourceElementIds": [
+        "fs-idm114335872"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3447,
+      "rationale": "Davisson and Germer are said to have used a nickel target because its atomic spacing matched the electrons' de Broglie wavelength. The page prints the suggested sentences; the existing Source note after the electron-interference figure (erratum 3111) gains a sentence (the source has the target chosen for its spacing; the lecture says the work began in 1919, reached a single crystal by chance, and was not at its inception a test of the wave theory), and the footer's corrected-statements clause names it. The page's added cloze on the sentence is reworded to match (key `nickel` unchanged; `accept=\"Ni\"` added) and re-opened. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3447."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/03-development-of-quantum-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68733",
+      "sourceElementIds": [
+        "fs-idm174719856"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3448,
+      "rationale": "A subshell is defined as the orbitals “with the same value of l”. The page prints the suggested sentence, with a visible Source note directly after the paragraph (citing the module's own Key term and Summary) and a footer clause. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3448."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/03-development-of-quantum-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68733",
+      "sourceElementIds": [
+        "CNX_Chem_06_03_sOrbit",
+        "CNX_Chem_06_03_sorbit.jpg",
+        "fs-idm165672208"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3449,
+      "rationale": "The s-orbital graphs label their vertical axes “probability density” where the curves are the radial probability. The figure and its extended description stay as printed; a visible Source note directly after the figure says the axes are labeled probability density where the curves are the radial probability (the density times 4πr²) and that the 1s density rises to the nucleus, citing both Orbitron pages; the paragraph's “graphs of the probability densities” is shortened to “graphs”; a footer clause. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3449."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/03-development-of-quantum-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68733",
+      "sourceElementIds": [
+        "CNX_Chem_06_03_Oshapes",
+        "fs-idm313200"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3450,
+      "rationale": "The f-orbital label f_y(x²−z²) belongs to the cubic set, so the seven labels name six independent orbitals. The figure and its extended description stay as printed (the description transcribes the label); a visible Source note directly after the figure says the label is the cubic set's, that the general set has f_z(x²−y²) in its place, and that as printed the seven labels name six independent orbitals, citing Orbitron; a footer clause. This overturns the chapter 6 “Reviewed and not errata” line for claim pass F12 (kept as printed because no source had been opened; J. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3450."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/05-periodic-variations-in-element-properties.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68735",
+      "sourceElementIds": [
+        "fs-idm146806928"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3451,
+      "rationale": "Removing an electron from oxygen is said to leave “a half-filled orbital”; what is half-filled is the 2p subshell. The page prints the corrected sentence, with a visible Source note directly after the paragraph quoting the source's words, and a footer clause. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3451."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/05-periodic-variations-in-element-properties.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68735",
+      "sourceElementIds": [
+        "fs-idp3693744"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3452,
+      "rationale": "The successive-ionization-energy table gives arsenic's fifth ionization energy as 6042.9 kJ/mol; NIST's measured value is 6056.4. The table stays as printed. The Source note after the table (entry 3133) now says five values differ and adds “As IE₅ 6042.9 and 6056.4”; the footer clause says “five values”. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3452."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/05-periodic-variations-in-element-properties.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68735",
+      "sourceElementIds": [
+        "CNX_Chem_06_05_Elaffin",
+        "fs-idm80294800"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3453,
+      "rationale": "The electron-affinity table gives gallium and indium calculated values, both since measured, and prints polonium's −170 as if measured. The figure and its extended description stay as printed. The Source note after the figure (entries 3134, 3135, 3396) adds: “Gallium and indium, to which the table gives a calculated −40, have measured electron affinities of −29 (Tang et al., Journal of Chemical Physics 152, 114303 (2020): 0.301166 eV) and −37. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3453."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/06-electronic-structure-and-periodic-properties-of-elements/05-periodic-variations-in-element-properties.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68735",
+      "sourceElementIds": [
+        "fs-idm92804752"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3454,
+      "rationale": "The summary says electron affinity “decreases as we move down a group” right after giving the trend across a period as “increasingly negative”. The page prints the corrected sentence, with a visible Source note directly after the summary quoting the source's words and citing Cl −348, Br −324, I −295 from the table, and a footer clause. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3454."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/02-covalent-bonding.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68738",
+      "sourceElementIds": [
+        "fs-idm32214656"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3455,
+      "rationale": "NH₃ and NaCl given as exceptions to the table of bond types, though both fall inside their ranges in it. The page prints the suggested correction, with a visible Source note after the paragraph (the source also gives NH₃ and NaCl among its exceptions; both fall inside their ranges in the table, so of the four only HF and MnI₂ are exceptions) and a footer clause. No graded item reads the paragraph. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3455."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/04-formal-charges-and-resonance.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68740",
+      "sourceElementIds": [
+        "fs-idm30783968",
+        "fs-idp189635616",
+        "fs-idp5472672"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3456,
+      "rationale": "The sulfuric acid answer drawing shows two nonbonding electrons on each double-bonded oxygen as single dots. The page keeps the drawing, with an alt that describes it as drawn; the self-check's describing sentence and its rubric say the oxygen has two lone pairs; a visible Source note after the self-check and a footer clause. Erratum 3164 files the alt's “three lone pairs” among the 7.4 alts; this entry files the drawing itself. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3456."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/06-molecular-structure-and-polarity.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68742",
+      "sourceElementIds": [
+        "fs-idp215771104",
+        "CNX_Chem_07_06_CH2O",
+        "fs-idp55258784"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3457,
+      "rationale": "Formaldehyde's bond angles printed as 121° and 118°; measured 121.9° and 116.1°. The page prints 122° and 116° in the paragraph, with a visible Source note directly after it (the source prints 121° and 118°, and the figure 118°; the measured 121.9° and 116.1°, NIST CCCBDB citing Gurvich, Veyts, and Alcock, 1989) and a footer clause. The figure and its alt stay as drawn (118°), with a visible Source note of its own directly after the figure giving the measured 116.1°. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3457."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/06-molecular-structure-and-polarity.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68742",
+      "sourceElementIds": [
+        "CNX_Chem_07_06_NH3",
+        "fs-idp50682928"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3458,
+      "rationale": "The ammonia figure labels the H–N–H angle 106.8°; measured 106.67°. The figure and its alt stay as drawn; a visible Source note directly after the figure gives the measured angle and its source, and a footer clause. Overturns the “NH₃ 106.8°” clause of the §7.6 “Reviewed and not errata” line. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3458."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/06-molecular-structure-and-polarity.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68742",
+      "sourceElementIds": [
+        "fs-idp50724128",
+        "fs-idp73534304"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3459,
+      "rationale": "The molecular-simulation Check Your Learning answer gives no bond angles, which the question asks for. The page's self-check keeps its opening criteria sentence and the source's sample whole, adds that sentence after the sample, and has a visible Source note directly after the block (the source's sample gives no bond angles; the last sentence is added) and a footer clause. A `DISCLOSED_DEVIATIONS` line (kind `solution`, exercise `fs-idp54012352#check`). Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3459."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/06-molecular-structure-and-polarity.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68742",
+      "sourceElementIds": [
+        "fs-idp56829344",
+        "fs-idp51557664"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3460,
+      "rationale": "The O₃ and NH₃ polarity-simulation exercise answers only part (c). The page's self-check model answer adds sentences on ozone and on ammonia's bond dipoles before the source's sentence, which is kept whole; the rubric is drawn from the new sentences; a visible Source note directly after the block (the source answers only the last part; ozone's measured 0.53 D, NIST CCCBDB; link to §7.4) and a footer clause. A `DISCLOSED_DEVIATIONS` line (kind `solution`, exercise `fs-idp56829344(c)`). Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3460."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/01-valence-bond-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68744",
+      "sourceElementIds": [
+        "fs-idm5865744",
+        "CNX_Chem_08_01_Morse"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3461,
+      "rationale": "The H₂ energy curve's minimum labeled −7.24 × 10⁻¹⁹ J. The figure and the paragraph keep the source's words and value; a visible Source note after the figure, below the caption's note, gives the bond energy's origin and the deeper minimum, citing the WebBook, with a footer clause. This overturns the chapter 8 “Reviewed and not errata” line on the H₂ energy (“7.24 × 10⁻¹⁹ J × N_A reproduces 4.36 × 10⁵ J/mol …”). Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3461."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/01-valence-bond-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68744",
+      "sourceElementIds": [
+        "fs-idp228190304"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3462,
+      "rationale": "“We can see a similar pattern when we compare other σ and π bonds”. The page keeps the source's words (the next sentence and a self-check rest on them) and adds a visible Source note after the paragraph citing the table's C–N, C–O, and O–O rows, with a footer clause. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3462."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/02-hybrid-atomic-orbitals.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68745",
+      "sourceElementIds": [
+        "CNX_Chem_08_02_H2Ovb",
+        "fs-idm125701968",
+        "CNX_Chem_08_02_spGeom"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3463,
+      "rationale": "Four captions call the p orbitals “(red)”, and the drawings color each p orbital one red lobe and one blue lobe. The page prints the suggested correction in all four captions, with a footer clause (the colors of the p orbitals printed as the drawings show them, where the source's captions call them red). No Source note, as for the calcium fluoride caption (3359); no graded item reads the captions. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3463."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/03-multiple-bonds.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68746",
+      "sourceElementIds": [
+        "CNX_Chem_08_03_C2H4orbit",
+        "fs-idp201403520"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3464,
+      "rationale": "The ethene caption says the C–C σ bond forms from “sp² hybrid orbitals on the carbon atom” overlapping one sp² orbital on the other. The page prints the suggested correction, with a visible Source note directly after the figure and a footer clause. No graded item reads the caption. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3464."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/04-molecular-orbital-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68747",
+      "sourceElementIds": [
+        "fs-idm51386912"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3465,
+      "rationale": "The Walter Kohn box says he was part of the Kindertransport “during World War II”. The page prints the suggested sentence; the existing Source note after the paragraph (on the Polaroid job, erratum 3184) is extended to say the source places the journey “during World War II” and that Kohn reached England in August 1939, three weeks before the war began, citing the same NobelPrize.org page; the footer's Polaroid clause is extended to name it. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3465."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/04-molecular-orbital-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68747",
+      "sourceElementIds": [
+        "fs-idm165679168",
+        "fs-idm101918992"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3466,
+      "rationale": "The answer to exercise 8.4.33(b) gives “only one electron at a time” as what sets an atomic orbital's ψ apart. The page's self-check model answer prints the suggested sentence and its rubric clause moves with it; the existing Source note after the block (erratum 3182) now says two phrases are corrected and names both, citing the Gold Book; the footer clause “one phrase … corrected” now reads “two phrases”. The existing `DISCLOSED_DEVIATIONS` line (kind `solution`, erratum 3182) names this erratum in its reason. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3466."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/04-molecular-orbital-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68747",
+      "sourceElementIds": [
+        "fs-idm119081680"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3467,
+      "rationale": "The answer to the N₂²⁺/O₂⁴⁺ exercise never says which electrons are paired. The page's self-check model answer prints the suggested text with two rubric clauses added (runs of the new sentences); a visible Source note directly after the block (the source's answer gives the filling order but stops short of the magnetism; the clauses on the paired and unpaired electrons are added) and a footer clause. A `DISCLOSED_DEVIATIONS` line (kind `solution`, exercise `fs-idm133690944`). Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3467."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/01-gas-pressure.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68750",
+      "sourceElementIds": [
+        "fs-idm10039728"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3468,
+      "rationale": "The latitude of Paris given as 45°. The page prints “which originally represented the average air pressure at sea level”, with a visible Source note after the paragraph citing the Paris Observatory and NBS Monograph 8, and a footer clause (“the closing words of the sentence on the atmosphere, which place its original pressure at the latitude of Paris and give that latitude as 45°, removed, with a Source note”). No graded item reads the sentence. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3468."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/01-gas-pressure.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68750",
+      "sourceElementIds": [
+        "fs-idm51193840",
+        "fs-idm88643488"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3469,
+      "rationale": "Exercise 9.9 gives the surface pressure of Venus as “about 88.8 atm”. The stem and both keys are kept as the exercise's data (the Venus key, 1.31 × 10³ psi, follows the stem; see 3210). The existing visible Source note after the pair (3210) is extended: “The stem’s 88.8 atm is kept as the exercise’s data: NASA’s Venus Fact Sheet gives a surface pressure of 92 bars, about 90.8 atm. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3469."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/01-gas-pressure.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68750",
+      "sourceElementIds": [
+        "fs-idp135833360",
+        "fs-idm51906080"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3470,
+      "rationale": "The volatile-liquid answer closes with “P_gas = P_atm + P_vol liquid”. The self-check's model answer prints the suggested correction; its rubric is unchanged. A visible Source note after the self-check says what the source prints; a footer clause. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3470."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/02-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68751",
+      "sourceElementIds": [
+        "fs-idm150329120",
+        "fs-idm241276032",
+        "CNX_Chem_09_03_BoylesLaw1"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3471,
+      "rationale": "The doubled-moles exercise asks about “the graph” of a figure that holds two. The self-check's question names “the $P$-$V$ graph, the upper graph in the figure of the syringe and its two graphs above”; model answer and rubric unchanged. A visible Source note after the self-check; a footer clause. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3471."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/03-stoichiometry-of-gaseous-substances-mixtures-and-reactions.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68752",
+      "sourceElementIds": [
+        "fs-idp201619456"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3472,
+      "rationale": "“After his execution, she was instrumental in publishing Lavoisier's major treatise”. The page prints the suggested sentence, with a visible Source note after the paragraph citing the Science History Institute, and a footer clause. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3472."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/03-stoichiometry-of-gaseous-substances-mixtures-and-reactions.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68752",
+      "sourceElementIds": [
+        "fs-idp74274064",
+        "fs-idm20853312"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3473,
+      "rationale": "Cyclopropane “is composed of 85.7% carbon and 14.3% hydrogen by mass”. The example keeps the source's given percentages and its working; a visible Source note after the example gives 85.6% and 14.4% and says the formulas are the same; a footer clause. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3473."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/03-stoichiometry-of-gaseous-substances-mixtures-and-reactions.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68752",
+      "sourceElementIds": [
+        "CNX_Chem_09_03_DaltonLaw1",
+        "fs-idp114351776"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3474,
+      "rationale": "The cylinders figure's second and third labels are interchanged with respect to the particles drawn. The image is kept. The page's alt gives the three particle counts beside the labels, and a visible Source note after the figure says that the second and third labels are interchanged with respect to the particles drawn, citing the ideal gas law of Section 9.2; a footer clause. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3474."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/03-stoichiometry-of-gaseous-substances-mixtures-and-reactions.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68752",
+      "sourceElementIds": [
+        "fs-idp39473616",
+        "fs-idp98992288",
+        "fs-idp75359296"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3475,
+      "rationale": "The chlorofluorocarbon exercise prints CCl₂F₂ + 4H₂ ⟶ CH₂F₂ + 2HCl, which does not balance, and keys the volume of hydrogen to it. The page prints the balanced equation in the exercise's self-check and its fill-in, keys the fill-in 1.86 × 10³ L, with a visible Source note after the fill-in (“the answer graded here is not the one the source prints; the source prints this exercise’s equation with 4H₂, which does not balance (eight hydrogen atoms on the left, four on the right), and the two items above print it balanced.”) and a footer clause. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3475."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/04-effusion-and-diffusion-of-gases.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68754",
+      "sourceElementIds": [
+        "fs-idm46537712"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3476,
+      "rationale": "The uranium box says “during the World War II”. The page prints “during World War II”, disclosed in the footer beside the box's other repairs (3254, 3266). No Source note. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3476."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/04-effusion-and-diffusion-of-gases.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68754",
+      "sourceElementIds": [
+        "fs-idp44111184",
+        "fs-idm48708288"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3477,
+      "rationale": "The answer to the Graham's-law derivation exercise stops at the ratio of molecular speeds and says the two gases have “the same kinetic energy”. The self-check's model answer prints both changes; its rubric replaces “both A and B are in the same container at the same temperature” with “at the same temperature” (the law needs no shared container), reads “the same average kinetic energy”, and adds a clause for the closing sentence; a visible Source note after the self-check and a footer clause. no `DISCLOSED_DEVIATIONS` line (the source-keys gate passes the changed model answer without one). Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3477."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/05-the-kinetic-molecular-theory.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68758",
+      "sourceElementIds": [
+        "fs-idm110634256"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3478,
+      "rationale": "The Link to Learning names the simulator’s “energy histograms” and “species information”, which the simulation its link opens does not have. The page prints the suggested sentence inside the Link to Learning callout, with a visible Source note after it (citing the PhET model description) and a footer clause (“its names for the simulator’s controls replaced by those of the simulation its link now opens, with a Source note”). The link is kept. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3478."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/06-non-ideal-gas-behavior.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68759",
+      "sourceElementIds": [
+        "fs-idm46435024",
+        "fs-idp26561024",
+        "CNX_Chem_09_06_ZvsPgraph"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3479,
+      "rationale": "The answer to the compressibility exercise’s part (d) does not say what intermolecular attractions do to Z. The self-check’s model answer begins with the suggested sentence, the source’s words following unchanged; two rubric clauses added from it (“intermolecular attractions lower Z”, “makes the gas more compressible than an ideal gas”); a visible Source note after the self-check (“this model answer adds its first sentence to the source’s, which does not say what intermolecular attractions do to $Z$”) and a footer clause. A `DISCLOSED_DEVIATIONS` line (kind `solution`, exercise `fs-idm89275552(d)`). Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3479."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/01-intermolecular-forces.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68761",
+      "sourceElementIds": [
+        "fs-idp15601504"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3480,
+      "rationale": "The enthalpy of vaporization of HCl is given as “about 17 kilojoules”, and the bond energy as “about 25 times” it. The page prints the suggested sentences, with a visible Source note after the intramolecular-versus-intermolecular figure the paragraph introduces (NIST link and value), and the footer's corrections clause extended. No `DISCLOSED_DEVIATIONS` line (no item). Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3480."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/01-intermolecular-forces.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68761",
+      "sourceElementIds": [
+        "fs-idm74321904"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3481,
+      "rationale": "Stark's gecko study is placed after the 2014 model and said to pull the geckos with a ribbon. The page prints the suggested sentences, with a visible Source note after the gecko figure (after the Autumn note, erratum 3311), citing the PNAS DOI, and the footer's corrections clause extended (“seven corrections”). No `DISCLOSED_DEVIATIONS` line (no item). Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3481."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/01-intermolecular-forces.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68761",
+      "sourceElementIds": [
+        "CNX_Chem_10_01_DNA2",
+        "fs-idm64449536",
+        "CNX_Chem_10_01_DNA2.jpg"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3482,
+      "rationale": "The base-pair structure labels as thymine a ring drawn without its methyl group. The page keeps the source's raster. Its extended description says that no methyl group is drawn on the ring labeled thymine, and a visible Source note under the figure says the ring as drawn is uracil, with the two PubChem links; a footer clause. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3482."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/02-properties-of-liquids.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68764",
+      "sourceElementIds": [
+        "fs-idm183311984",
+        "fs-idm80358384"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3483,
+      "rationale": "The answer to the molasses exercise speaks only of temperature, though the question also asks about molecular size and shape and molecular interactions. The page's model answer opens with the suggested sentence, the source's answer following it (with erratum 3288's phrase); three rubric clauses from the new sentence (one of them `molasses is mostly sugars`), and the source answer's loose first clause (“temperature has an effect on intermolecular forces”) dropped to keep six; the hint now points at the viscosity paragraph as well. The Source note after the block now names both changes, with the USDA and PubChem links, and the footer clause is extended. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3483."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/03-phase-transitions.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68768",
+      "sourceElementIds": [
+        "fs-idm57843872",
+        "fs-idm70086528"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3484,
+      "rationale": "The sweat example says we can lose “as much as 1.5 L of sweat per day” in very hot climates. The page prints the suggested sentence, with a visible Source note after the paragraph and a footer clause. No item is keyed on it. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3484."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/03-phase-transitions.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68768",
+      "sourceElementIds": [
+        "fs-idm136735584",
+        "fs-idm180226720",
+        "fs-idm202068832"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3485,
+      "rationale": "The titanium tetrachloride exercise gives titanium tetrachloride a melting point of “−23.2 °C”. The stems of the three items (fill-in, multiple choice, self-check) and the key 13.0 kJ are kept as printed (stem data are kept), with a visible Source note after the last of the three giving both measured values and saying no answer depends on it, and the footer's Source-note clause extended. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3485."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/04-phase-diagrams.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68769",
+      "sourceElementIds": [
+        "fs-idm180459824"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3486,
+      "rationale": "The table of critical constants gives nitrogen −147.2 °C, oxygen −118.9 °C, and sulfur dioxide 7800 kPa. The page prints the corrected cells, with a visible Source note after the table and a footer clause. No graded item reads these cells (the ammonia–oxygen self-check needs only “below room temperature”). Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3486."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/04-phase-diagrams.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68769",
+      "sourceElementIds": [
+        "fs-idp20092656",
+        "fs-idp19473808"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3487,
+      "rationale": "The coffee box calls coffee “the world’s second most widely traded commodity, following only petroleum”. The page prints the suggested sentence, with a visible Source note after the paragraph inside the box and a footer clause. Overturns the chapter 10 “Reviewed and not errata” line on this claim (its “400-plus compounds” half is untouched). Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3487."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/05-the-solid-state-of-matter.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68770",
+      "sourceElementIds": [
+        "fs-idp89753840"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3488,
+      "rationale": "“All exhibit high thermal and electrical conductivity, metallic luster, and malleability”. The page prints “Most exhibit”, with a visible Source note after the metallic-solid figure and a footer clause. No item is keyed on the sentence. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3488."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/05-the-solid-state-of-matter.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68770",
+      "sourceElementIds": [
+        "fs-idm59353248"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3489,
+      "rationale": "Silicon listed with “some other nonmetals”. The page drops “other”, with a visible Source note after the covalent-network figure and a footer clause. No item is keyed on the sentence. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3489."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/05-the-solid-state-of-matter.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68770",
+      "sourceElementIds": [
+        "fs-idm41841264"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3490,
+      "rationale": "Solids of polar molecules said to melt “at still higher temperatures” than those of larger nonpolar molecules. The page prints the suggested sentence, with a visible Source note after the molecular-solids figure and a footer clause. No item is keyed on the sentence. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3490."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/10-liquids-and-solids/06-lattice-structures-in-crystalline-solids.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68773",
+      "sourceElementIds": [
+        "fs-idm13402192"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3491,
+      "rationale": "SrH₂ listed among the compounds with half of the cubic holes occupied. The page prints the suggested sentence, with a visible Source note after it citing both AFLOW pages and a footer clause. No item is keyed on the sentence. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3491."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/b-essential-mathematics.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68860",
+      "sourceElementIds": [
+        "fs-idm316636240"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3492,
+      "rationale": "The rounding rule leaves out a 5 followed by nonzero digits. The page prints the suggested sentences, with a visible Source note after the paragraph (linking Section 1.5) and a footer clause. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3492."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/c-units-and-conversion-factors.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68861",
+      "sourceElementIds": [
+        "foot-00001"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3493,
+      "rationale": "The mass-table footnote calls the ounce and pound units of weight. The page prints the suggested footnote, with a visible Source note under the mass table quoting the source's footnote whole (which keeps `verify:source-tables` reading it) and a footer clause. This overturns the “Reviewed and not errata” line for the §1.6 twin footnote (m68683, F15), which opened no reference. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3493."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/e-water-properties.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68863",
+      "sourceElementIds": [
+        "CNX_Chem_00_EE_LiqWatAbso"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3494,
+      "rationale": "The absorption caption says the intensity is “diminished by 1/e (~37%)”. The page prints the suggested caption, with a visible Source note after the figure and a footer clause. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3494."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/j-solubility-products.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68868",
+      "sourceElementIds": [
+        "fs-idm454814336"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3495,
+      "rationale": "Lead(II) carbonate and mercury(I) carbonate are each about a hundred times off. The page prints the CRC values, with a visible Source note under the table, a footer clause, two `TABLE_NOTES` deviations for m68868. No module uses either value numerically (§15.1, m68811, names PbCO₃ only in a qualitative question). Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3495."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/l-standard-electrode-half-cell-potentials.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68870",
+      "sourceElementIds": [
+        "fs-idm126797824"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3496,
+      "rationale": "Two basic-solution potentials and a garbled condition. The page prints the three corrections, with a second visible Source note under the table (citing the *CRC Handbook of Chemistry and Physics* (P. Vanýsek), the table this one follows), the footer clause extended, three `TABLE_NOTES` deviations for m68870. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3496."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/m-half-lives-for-several-radioactive-isotopes.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68871",
+      "sourceElementIds": [
+        "fs-idp343615296"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3497,
+      "rationale": "Indium-115 and uranium-239. The page prints both, with a second visible Source note under the table, the footer clause extended, two `TABLE_NOTES` deviations for m68871. §21.5 (m68856) says “uranium-239, with a half-life of 23.5 minutes”, which both values give. Found by the November 23, 2026 deep correctness audit; fixed by the November 24, 2026 fix pass, erratum 3497."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/02-classifying-chemical-reactions.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68710",
+      "sourceElementIds": [
+        "fs-idp105919968"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3498,
+      "rationale": "The exercise asks for reactants and products as aqueous ions; the source answer to part (a) writes HClO₄(aq) whole and the products as ions. The self-check takes the sample-answer form (an opening sentence, then the source equation whole) with a visible Source note and a footer clause. Deep audit 4.2b F1; fix pass November 24, 2026."
     }
   ]
 }

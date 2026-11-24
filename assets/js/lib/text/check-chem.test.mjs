@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  checkChem, checkEquation, checkFormula, chemCanon, chemKeyProblem, fractionText, prettySpecies, previewChem, readSpecies, MULTIPLIED_FORMULA, ONE_MOLE, STATE_DIFFERS,
+  checkChem, checkEquation, checkFormula, chemCanon, chemKeyProblem, fractionText, prettySpecies, previewChem, readSpecies, MULTIPLIED_FORMULA, ONE_MOLE, OTHER_FORMULA_WRITING, STATE_DIFFERS,
 } from './check-chem.mjs';
 
 const formula = (typed, key, accept = '') => checkFormula(typed, key, { accept }).status;
@@ -85,6 +85,13 @@ test('a charge is read marked or bare, number first or sign first', () => {
   assert.equal(formula('SO3^2-', 'SO₄²⁻'), 'incorrect');
   // An explicit subscript is never a charge: Fe_3+ is three irons, 1+.
   assert.equal(formula('Fe_3+', 'Fe³⁺'), 'incorrect');
+  // A count of 1 is never written, so "13+" is the charge the group number
+  // suggests, not Al₁³⁺ (audit G2, November 24, 2026; Section 2.6).
+  for (const [typed, key] of [['Al13+', 'Al³⁺'], ['Al 13+', 'Al³⁺'], ['C14-', 'C⁴⁻'], ['Ba12+', 'Ba²⁺'], ['O12-', 'O²⁻'], ['Na11+', 'Na⁺']]) {
+    assert.equal(formula(typed, key), 'incorrect', typed);
+  }
+  assert.equal(formula('Al3+', 'Al³⁺'), 'correct');
+  assert.equal(formula('NH41+', 'NH₄⁺'), 'correct', 'a charge of 1 written out after a count of 4');
 });
 
 test('a hydrate keeps its water, and the dot is typed four ways', () => {
@@ -406,6 +413,11 @@ test('a nuclide\'s atomic number is its element\'s: read in a key, a response, a
   assert.match(checkFormula('23Na', '²³₁₁Na').message, /atomic number/);
   assert.equal(checkFormula('^23_12Na', '²³₁₁Na').status, 'incorrect');
   assert.equal(checkFormula('^24_11Na', '²³₁₁Na').status, 'incorrect');
+  // The prescripts are stacked in print: the atomic number may be typed first (audit G6, November 24, 2026).
+  for (const typed of ['_11^23Na', '_{11}^{23}Na', '₁₁²³Na', '{}_{11}^{23}Na']) assert.equal(checkFormula(typed, '²³₁₁Na').status, 'correct', typed);
+  assert.equal(checkFormula('_12^23Na', '²³₁₁Na').status, 'incorrect');
+  assert.equal(checkFormula('_11^24Na', '²³₁₁Na').status, 'incorrect');
+  assert.equal(chemCanon('_{11}^{23}Na', 'formula'), '^23_11Na');
   // A key that prints the mass number alone leaves the atomic number free — but never wrong.
   assert.equal(checkFormula('133Cs+', '¹³³Cs⁺').status, 'correct');
   assert.equal(checkFormula('^133_55Cs^+', '¹³³Cs⁺').status, 'correct');
@@ -542,6 +554,41 @@ test('a formula with every count multiplied up is told so, only against a key in
   assert.doesNotMatch(MULTIPLIED_FORMULA, /empirical|molecular/, 'the reader does not know which the item asks');
 });
 
+test('more keyboard writings of an equation read, and another formula of the same atoms is told so (audit G7, November 24, 2026)', () => {
+  const ether = '4C(s, graphite) + 5H₂(g) + ½O₂(g) ⟶ C₂H₅OC₂H₅(l)';
+  const soda = '2Na(s) + C(s, graphite) + 3⁄2O₂(g) ⟶ Na₂CO₃(s)';
+  // A fraction in parentheses, a mixed number with a space, an allotrope named alone.
+  assert.equal(equation('2Na(s) + C(s, graphite) + (3/2)O2(g) -> Na2CO3(s)', soda), 'correct');
+  assert.equal(equation('2 Na(s) + C(s, graphite) + 1 1/2 O2(g) -> Na2CO3(s)', soda), 'correct');
+  assert.equal(equation('2Na(s) + C(graphite) + 3/2O2(g) -> Na2CO3(s)', soda), 'correct');
+  assert.equal(equation('4C(graphite) + 5H2(g) + 1/2O2(g) -> C2H5OC2H5(l)', ether), 'correct');
+  assert.deepEqual(checkEquation('2Na(s) + C(diamond) + 3/2O2(g) -> Na2CO3(s)', soda), { status: 'form', message: STATE_DIFFERS });
+  // A charge in parentheses after the caret, and => for the arrow.
+  const salt = 'Fe(NO₃)₃(s) ⟶ Fe³⁺(aq) + 3NO₃⁻(aq)';
+  assert.equal(equation('Fe(NO3)3(s) -> Fe^(3+)(aq) + 3NO3^(-)(aq)', salt), 'correct');
+  assert.equal(equation('Fe(NO3)3 => Fe^3+ + 3NO3^-', salt), 'correct');
+  assert.equal(equation('Fe(NO3)3 ==> Fe^3+ + 3NO3^-', salt), 'correct');
+  // Another formula of the same atoms: form, said; with other coefficients it is not.
+  for (const typed of ['4C + 5H2 + 1/2O2 -> (C2H5)2O', '4C + 5H2 + 1/2O2 -> CH3CH2OCH2CH3(l)']) {
+    assert.deepEqual(checkEquation(typed, ether), { status: 'form', message: OTHER_FORMULA_WRITING }, typed);
+  }
+  assert.equal(equation('8C + 10H2 + O2 -> 2CH3CH2OCH2CH3', ether), 'incorrect');
+  // The sentence is true of an isomer too (round 2): it never says the compound is right.
+  assert.deepEqual(checkEquation('4C + 5H2 + 1/2O2 -> C4H9OH', ether), { status: 'form', message: OTHER_FORMULA_WRITING });
+  assert.doesNotMatch(OTHER_FORMULA_WRITING, /right|correct/);
+  // A wrong arrow or a wrong state as well: plainly incorrect, never masked (round 2).
+  assert.equal(equation('4C + 5H2 + 1/2O2 <=> (C2H5)2O', ether), 'incorrect');
+  assert.equal(equation('4C + 5H2 + 1/2O2 -> (C2H5)2O(g)', ether), 'incorrect');
+  assert.equal(equation('4C(s) + 5H2(g) + 1/2O2(g) -> (C2H5)2O(l)', ether), 'form');
+  // The same for an ion or acid in another atom order, with H⁺ read for H₃O⁺ (audit G8, Chemistry 2e 4.2).
+  const cyanate = '5CN⁻(aq) + 2ClO₂(aq) + 3H₂O(l) ⟶ 5CNO⁻(aq) + 2Cl⁻(aq) + 2H₃O⁺(aq)';
+  for (const typed of ['5CN- + 2ClO2 + H2O -> 5OCN- + 2Cl- + 2H+', '5CN- + 2ClO2 + 3H2O -> 5NCO- + 2Cl- + 2H3O+']) {
+    assert.deepEqual(checkEquation(typed, cyanate), { status: 'form', message: OTHER_FORMULA_WRITING }, typed);
+  }
+  assert.deepEqual(checkEquation('2HOBr -> 2Br- + O2 + 2H+', '2HBrO(aq) + 2H₂O(l) ⟶ 2H₃O⁺(aq) + 2Br⁻(aq) + O₂(g)'), { status: 'form', message: OTHER_FORMULA_WRITING });
+  assert.doesNotMatch(OTHER_FORMULA_WRITING, /C2H5|ether|\d/);
+});
+
 test('a formation equation with a fractional coefficient is graded at the key\'s own scale (Chemistry 2e 5.3)', () => {
   // The two Check Your Learning keys of 5.3's formation-equation example, in the book's print.
   const ether = '4C(s, graphite) + 5H₂(g) + ½O₂(g) ⟶ C₂H₅OC₂H₅(l)';
@@ -605,6 +652,17 @@ test('an ordering: members separated by <, or > from the other end', async () =>
   }
   // The source prints a charge's minus as a hyphen-minus or an en dash (6.5, Exercise 15).
   assert.equal(checkOrdering('Mg2+ < K+ < Br- < As3-', 'Mg²⁺ < K⁺ < Br⁻ < As³⁻').status, 'correct');
+});
+
+test('a tie typed with = is right where the page lists both orders, and otherwise told the members are not equal (audit G10, November 24, 2026)', async () => {
+  const { ORDERING_NOT_TIED, ORDERING_ORDER } = await import('./check-chem.mjs');
+  const grade = (typed) => checkChem(typed, 'H < P < S < O < F', { form: 'ordering', accept: 'P < H < S < O < F' });
+  for (const typed of ['H = P < S < O < F', 'P = H < S < O < F', 'F > O > S > H = P', 'F > O > S > P = H']) assert.equal(grade(typed).status, 'correct', typed);
+  assert.deepEqual(grade('H < P = S < O < F'), { status: 'incorrect', message: ORDERING_NOT_TIED });
+  assert.deepEqual(grade('H = P < O < S < F'), { status: 'incorrect', message: ORDERING_ORDER });
+  // Without the other order in accept, the page rules no tie.
+  assert.deepEqual(checkChem('H = C < N < O < F', 'H < C < N < O < F', { form: 'ordering' }), { status: 'incorrect', message: ORDERING_NOT_TIED });
+  assert.doesNotMatch(ORDERING_NOT_TIED, /\b(?:H|P|S|O|F)\b/);
 });
 
 test('a wrong ordering is told what is wrong, and never which member goes where', async () => {

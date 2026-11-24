@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
   checkConfiguration, configurationCanon, configurationKeyProblem, isConfiguration, previewConfiguration, readConfiguration,
-  CONFIGURATION_CORE, CONFIGURATION_COUNT, CONFIGURATION_DISTRIBUTION, CONFIGURATION_REPEATED, CONFIGURATION_UNREAD,
+  CONFIGURATION_CORE, CONFIGURATION_COUNT, CONFIGURATION_LABEL, CONFIGURATION_DISTRIBUTION, CONFIGURATION_REPEATED, CONFIGURATION_UNREAD,
 } from './check-config.mjs';
 import { checkChem, chemCanon, chemKeyProblem, previewChem } from './check-chem.mjs';
 import { gradeText, checkText, SUBSHELL_LETTER_ONLY } from './check-text.mjs';
@@ -137,4 +137,18 @@ test('a key that is a noble-gas core alone (7.1: "K⁺: [Ar]") grades the core, 
   assert.equal(previewConfiguration('[Ar]'), '[Ar]');
   assert.equal(previewChem('[kr]', 'configuration'), '[Kr]');
   assert.equal(previewConfiguration('Ar'), '');
+  // A label typed before the configuration (audit G9, round 2, November 24, 2026): against a key with
+  // none, form and told to type the configuration alone — right label or wrong, right configuration or wrong.
+  for (const typed of ['K+: [Ar]', 'K^+: [Ar]', 'K⁺: [Ar]', 'K: [Ar]', 'Ca2+: [Ar]', 'K+: [Ar]4s1', 'K+: [Ne]']) {
+    assert.deepEqual(checkConfiguration(typed, '[Ar]'), { status: 'form', message: CONFIGURATION_LABEL }, typed);
+  }
+  assert.deepEqual(checkChem('Mg2+: [Ne]', '[Ne]', { form: 'configuration' }), { status: 'form', message: CONFIGURATION_LABEL });
+  assert.doesNotMatch(CONFIGURATION_LABEL, /right|wrong|correct/);
+  // Against a key that carries a label, the typed label must be the key's, charge included.
+  assert.equal(status('K⁺: [Ar]', 'K⁺: [Ar]'), 'correct');
+  assert.equal(status('K+: [Ar]', 'K⁺: [Ar]'), 'correct');
+  assert.equal(status('K^{+}: 1s2 2s2 2p6 3s2 3p6', 'K⁺: [Ar]'), 'correct');
+  assert.equal(status('[Ar]', 'K⁺: [Ar]'), 'correct');
+  for (const typed of ['K: [Ar]', 'K-: [Ar]', 'Ca2+: [Ar]', 'K2+: [Ar]']) assert.equal(status(typed, 'K⁺: [Ar]'), 'incorrect', typed);
+  assert.equal(previewConfiguration('K+: [Ar]'), '[Ar]');
 });

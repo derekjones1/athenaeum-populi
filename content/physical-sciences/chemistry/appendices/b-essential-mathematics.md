@@ -107,7 +107,9 @@ In multiplication and division, the product or quotient should contain no more d
 
 $$0.623\underline{8} \times 6.\underline{6} = 4.\underline{1}$$
 
-When rounding numbers, increase the retained digit by 1 if it is followed by a number larger than 5 (“round up”). Do not change the retained digit if the digits that follow are less than 5 (“round down”). If the retained digit is followed by 5, round up if the retained digit is odd, or round down if it is even (after rounding, the retained digit will thus always be even).
+When rounding numbers, increase the retained digit by 1 if it is followed by a number larger than 5 (“round up”). Do not change the retained digit if the digits that follow are less than 5 (“round down”). If the retained digit is followed by 5 and nothing but zeros, round up if the retained digit is odd, or round down if it is even (after rounding, the retained digit will thus always be even). If any nonzero digit follows that 5, round up.
+
+*Source note:* the source’s last sentence reads “If the retained digit is followed by 5, round up if the retained digit is odd, or round down if it is even,” which leaves out a 5 followed by other digits and, read as printed, rounds 6.8652 to three figures as 6.86. A 5 with any nonzero digit after it is more than halfway, so the number rounds up, to 6.87, as the rounding rules of [Section 1.5 Measurement Uncertainty, Accuracy, and Precision](/physical-sciences/chemistry/01-essential-ideas/05-measurement-uncertainty-accuracy-and-precision/) say.
 
 ## The Use of Logarithms and Exponential Numbers
 
@@ -208,9 +210,9 @@ If the function that describes the dependence of $y$ on $x$ is known, it may be 
 | 3 | 11 |
 | 4 | 18 |
 
-{{< mediafigure src="chemistry/CNX_Chem_00_BB_Function_img" kind="diagram" alt="A line graph titled y = x² + 2. The horizontal axis, x, runs from 0 to 4.5 and the vertical axis, y, from 0 to 20. Four points are joined by a rising curve: (1, 3), (2, 6), (3, 11), and (4, 18)." >}}
+{{< mediafigure src="chemistry/CNX_Chem_00_BB_Function_img" kind="diagram" alt="A line graph titled y = x² + 2. The horizontal axis, x, runs from 0 to 4.5 and the vertical axis, y, from 0 to 20. Four points are joined by straight segments, each steeper than the last: (1, 3), (2, 6), (3, 11), and (4, 18)." >}}
 {{< /mediafigure >}}
 
 ---
 
-<small>This appendix is adapted from [Chemistry 2e, Appendix B: Essential Mathematics](https://openstax.org/books/chemistry-2e/pages/b-essential-mathematics) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the source’s equations and powers of ten typeset as KaTeX math and the symbols of variables set in italics; the twelve worked examples set as prose, each opening with “Example” and its title; the three tables transcribed as Markdown tables, the first with its title as a bold line above it; the underscored digits of the significant-figure examples set with underlines; the two graphs are the source’s images, re-encoded for the web, their alt text written from the images.</small>
+<small>This appendix is adapted from [Chemistry 2e, Appendix B: Essential Mathematics](https://openstax.org/books/chemistry-2e/pages/b-essential-mathematics) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the source’s equations and powers of ten typeset as KaTeX math and the symbols of variables set in italics; the twelve worked examples set as prose, each opening with “Example” and its title; the three tables transcribed as Markdown tables, the first with its title as a bold line above it; the underscored digits of the significant-figure examples set with underlines; the two graphs are the source’s images, re-encoded for the web, their alt text written from the images; and the rule for rounding a retained digit followed by 5 completed for a 5 with nonzero digits after it, with a Source note.</small>

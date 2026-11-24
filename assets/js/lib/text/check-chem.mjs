@@ -70,7 +70,8 @@ const ATOMIC_NUMBER = new Map([...ELEMENTS].map((symbol, index) => [symbol, inde
 
 const SUBSCRIPTS = '₀₁₂₃₄₅₆₇₈₉';
 const SUPERSCRIPTS = '⁰¹²³⁴⁵⁶⁷⁸⁹';
-const ARROW = /<=>|<->|⇌|⇄|⟷|↔|-->|->|→|⟶|=/g;
+// `=>` and `==>` are a keyboard's one-way arrow too (audit G7, November 24, 2026).
+const ARROW = /<=>|<->|⇌|⇄|⟷|↔|-->|->|==>|=>|→|⟶|=/g;
 const EQUILIBRIUM = /<=>|<->|⇌|⇄|⟷|↔/;
 const STATES = new Set(['s', 'l', 'g', 'aq']);
 
@@ -121,6 +122,12 @@ function prepare(raw) {
     .replace(/\\(?:ce|text|mathrm)\b|[{}$]/g, '')
     // The source's MathML prints a fractional coefficient as "( 1 )/( 2 )".
     .replace(/\(\s*(\d+)\s*\)\s*\/\s*\(\s*(\d+)\s*\)/g, '$1/$2')
+    // A learner's fraction in parentheses, (3/2)O2, and a mixed number typed
+    // with a space, 1 1/2 O2 (audit G7, November 24, 2026: neither read).
+    .replace(/\(\s*(\d+)\s*\/\s*(\d+)\s*\)/g, '$1/$2')
+    .replace(/(?<![\d/.])(\d+)\s+(\d+)\s*\/\s*(\d+)/g, (_, whole, top, bottom) => `${Number(whole) * Number(bottom) + Number(top)}/${bottom}`)
+    // A charge typed in parentheses after the caret: Fe^(3+), NO3^(-).
+    .replace(/\^\(\s*(\d*)\s*([+-])\s*(\d*)\s*\)/g, '^$1$2$3')
     // Heat over the arrow is a condition, not a species.
     .replace(/(->|→|⟶)\s*Δ|Δ\s*(->|→|⟶)/g, '$1$2')
     .replace(/[·•∙⋅*]/g, '·');
@@ -209,10 +216,17 @@ export function readSpecies(raw, { equation = false } = {}) {
   // where both the key and the response name one (graphite is not diamond).
   // A state typed in capitals, (S) or (AQ), is the same state.
   const stateMatch = /\((s|l|g|aq)(?:,([a-z]+))?\)$/i.exec(text);
+  // An allotrope named alone, C(graphite), is a solid's: (s, graphite)
+  // (audit G7, November 24, 2026: it did not read).
+  const allotropeOnly = stateMatch ? null : /\((graphite|diamond|rhombic|monoclinic|white|red)\)$/i.exec(text);
   if (stateMatch && STATES.has(stateMatch[1].toLowerCase())) {
     state = stateMatch[1].toLowerCase();
     allotrope = stateMatch[2] ? stateMatch[2].toLowerCase() : null;
     text = text.slice(0, stateMatch.index);
+  } else if (allotropeOnly) {
+    state = 's';
+    allotrope = allotropeOnly[1].toLowerCase();
+    text = text.slice(0, allotropeOnly.index);
   }
   let coef = 1;
   let mass = null;
@@ -232,10 +246,18 @@ export function readSpecies(raw, { equation = false } = {}) {
   // where one is written (`^23_11Na`, `²³₁₁Na`).
   let atomic = null;
   const isotope = (equation ? /^\^(\d+)(?:_(\d+))?/ : /^\^?(\d+)(?:_(\d+))?(?=[A-Z([])/).exec(text);
+  // The two prescripts are stacked in print, so either may be typed first:
+  // `_11^23Na`, `_{11}^{23}Na`, `₁₁²³Na` (audit G6, November 24, 2026: the
+  // atomic number first was "does not read as a formula").
+  const lowFirst = isotope ? null : /^_(\d+)\^(\d+)(?=[A-Z([])/.exec(text);
   if (isotope) {
     mass = Number(isotope[1]);
     atomic = isotope[2] === undefined ? null : Number(isotope[2]);
     text = text.slice(isotope[0].length);
+  } else if (lowFirst) {
+    mass = Number(lowFirst[2]);
+    atomic = Number(lowFirst[1]);
+    text = text.slice(lowFirst[0].length);
   }
   const body = parseBody(text, 0, null);
   if (!body || !body.items.length) return [];
@@ -270,7 +292,10 @@ export function readSpecies(raw, { equation = false } = {}) {
     // The likelier reading goes first, for the preview: two digits split
     // (SO₄²⁻, Hg₂²⁺), and one digit after a lone symbol is its charge
     // (Fe³⁺, O²⁻) where after a group of atoms it is a count (MnO₄⁻, NH₄⁺).
-    if (last.digits && !last.marked && /[1-9]$/.test(last.digits)) {
+    // A written count of 1 is never a count: `Al13+` is not Al₁³⁺ (Al³⁺) but
+    // the "13+" the group number suggests, which Section 2.6 warns against
+    // (audit G2, November 24, 2026). It reads only as thirteen atoms, 1+.
+    if (last.digits && !last.marked && /[1-9]$/.test(last.digits) && last.digits.slice(0, -1) !== '1') {
       const split = { charge: Number(last.digits.slice(-1)) * sign, lastCount: Number(last.digits.slice(0, -1) || 1) };
       const lone = body.items.length === 1 && Boolean(last.el);
       if (last.digits.length > 1 || lone) tails.unshift(split); else tails.push(split);
@@ -460,7 +485,7 @@ function readEquation(raw) {
 }
 
 /** Assign each key species one response species that can be read as it; null when the side differs. */
-function matchSide(keySide, responseSide) {
+function matchSide(keySide, responseSide, id = (species) => species.loose ?? species.canon) {
   if (keySide.length !== responseSide.length) return null;
   const used = new Set();
   const pairs = [];
@@ -469,7 +494,7 @@ function matchSide(keySide, responseSide) {
     const key = keySide[index][0];
     for (let j = 0; j < responseSide.length; j += 1) {
       if (used.has(j)) continue;
-      const reading = responseSide[j].find((candidate) => (candidate.loose ?? candidate.canon) === (key.loose ?? key.canon));
+      const reading = responseSide[j].find((candidate) => id(candidate) === id(key));
       if (!reading) continue;
       used.add(j);
       pairs.push({ key, reading });
@@ -727,7 +752,7 @@ const BARE_ELECTRON = 'An electron carries its charge: type it as e-, as in 2e-.
 const NO_ELECTRONS = 'Those are the right substances, but a half-reaction also shows the electrons transferred: add e- to the side that balances the charge.';
 
 const typedBareElectron = (input) => prepare(input)
-  .split(/<=>|<->|⇌|⇄|⟷|↔|-->|->|→|⟶|=|\+/)
+  .split(/<=>|<->|⇌|⇄|⟷|↔|-->|->|==>|=>|→|⟶|=|\+/)
   .some((part) => /^\s*\d*\s*e\s*$/.test(part));
 
 function missingElectrons(key, responses) {
@@ -752,6 +777,10 @@ export const STATE_DIFFERS = 'The substances and coefficients are right. A state
 // + O₂ ⟶ 2C₂H₅OC₂H₅ for the key's 4C + 5H₂ + ½O₂ ⟶ C₂H₅OC₂H₅). It names no
 // substance (the grader does not know which one the question counts).
 export const ONE_MOLE = 'That balances, but the question asks for the equation written for one mole, so a coefficient may be a fraction. Type a fraction as 1/2.';
+
+/** A typed state agrees with the key's where both print one; an allotrope is compared where both name one. */
+const stateAgrees = ({ key: k, reading }) => !reading.state || !k.state
+  || (reading.state === k.state && (!reading.allotrope || !k.allotrope || reading.allotrope === k.allotrope));
 
 /** @returns {{ status: 'empty'|'correct'|'form'|'incorrect', message?: string }} */
 export function checkEquation(input, answer) {
@@ -781,8 +810,7 @@ export function checkEquation(input, answer) {
       // is s, and a response that leaves every state out is right, so one
       // that types the state without the allotrope is no less right. An
       // allotrope typed is compared: `(s, diamond)` is not graphite.
-      const statesAgree = pairs.every(({ key: k, reading }) => !reading.state || !k.state
-        || (reading.state === k.state && (!reading.allotrope || !k.allotrope || reading.allotrope === k.allotrope)));
+      const statesAgree = pairs.every(stateAgrees);
       if (ratios.every((ratio) => Math.abs(ratio - 1) < 1e-9)) {
         if (statesAgree && typed.equilibrium !== key.equilibrium) {
           return { status: 'form', message: key.equilibrium ? EQUILIBRIUM_ARROW : ONE_WAY_ARROW };
@@ -810,8 +838,31 @@ export function checkEquation(input, answer) {
     const divided = simplestRatioFormula(key, responses);
     if (divided) return { status: 'form', message: divided };
     if (missingElectrons(key, responses)) return { status: 'incorrect', message: NO_ELECTRONS };
+    if (otherFormulaWriting(comparedKey, hydrogenIon ? responses.map(asProtons) : responses, key.equilibrium)) return { status: 'form', message: OTHER_FORMULA_WRITING };
   }
   return best;
+}
+
+/*
+ * A substance written with another formula of the same atoms — `(C2H5)2O`
+ * or `CH3CH2OCH2CH3` for the key's C₂H₅OC₂H₅ (Chemistry 2e 5.3; audit G7),
+ * or an ion or acid in another atom order than the stem's (`OCN⁻`/`NCO⁻` for
+ * CNO⁻, `HOBr` for HBrO; audit G8), H⁺ and H₃O⁺ read as one ion first. The
+ * formula field's precedent: the same atoms arranged differently are `form`.
+ * The sentence claims only what is true of every such response, an isomer
+ * (butanol for diethyl ether) included: the atoms are the answer's, arranged
+ * or ordered differently — never that the compound is right (round 2,
+ * November 24, 2026). Every species and coefficient must otherwise be the
+ * key's, and the arrow and every typed state too: with either also wrong it
+ * is plainly incorrect, so the message never masks them.
+ */
+export const OTHER_FORMULA_WRITING = 'Those are the same atoms as the answer’s, arranged or ordered differently: write each formula as the question prints it.';
+function otherFormulaWriting(key, responses, equilibrium) {
+  return responses.some((response) => {
+    if (response.equilibrium !== equilibrium) return false;
+    const pairs = [0, 1].map((i) => matchSide(key.sides[i], response.sides[i], compositionKey));
+    return pairs.every(Boolean) && pairs.flat().every((pair) => Math.abs(pair.reading.coef - pair.key.coef) < 1e-9 && stateAgrees(pair));
+  });
 }
 
 /*
@@ -892,6 +943,25 @@ export function checkOrdering(input, answer) {
   if (indices.every((index, at) => index === at)) return { status: 'correct' };
   if (indices.every((index, at) => index === key.length - 1 - at)) return { status: 'incorrect', message: ORDERING_REVERSED };
   return { status: 'incorrect', message: ORDERING_ORDER };
+}
+
+export const ORDERING_NOT_TIED = 'Those members are not equal: put < between every pair, in order.';
+
+/** Every writing of an ordering with its `=` ties broken each way (at most 24), or null when it types no tie. */
+function tieExpansions(raw) {
+  const text = String(raw ?? '');
+  if (!/[=＝]/.test(text)) return null;
+  const sign = text.includes('>') && !text.includes('<') ? '>' : '<';
+  const groups = text.split(sign).map((piece) => piece.split(/[=＝]/).map((member) => member.trim()));
+  if (groups.some((group) => group.some((member) => !member))) return null;
+  const permutations = (list) => (list.length <= 1 ? [list]
+    : list.flatMap((first, i) => permutations([...list.slice(0, i), ...list.slice(i + 1)]).map((rest) => [first, ...rest])));
+  let writings = [[]];
+  for (const group of groups) {
+    writings = writings.flatMap((head) => permutations(group).map((order) => [...head, ...order]));
+    if (writings.length > 24) return null;
+  }
+  return writings.map((members) => members.join(` ${sign} `));
 }
 
 /** An ordering as the field reads it, in the book's print and the direction typed. */
@@ -984,10 +1054,25 @@ export function checkChem(input, answer, { accept = '', form } = {}) {
   // response correct; otherwise the key's own verdict and message stand.
   if (form === 'configuration' || form === 'ordering') {
     const check = form === 'configuration' ? checkConfiguration : checkOrdering;
-    const verdict = check(typed, answer);
-    if (verdict.status === 'correct' || verdict.status === 'empty') return verdict;
     const members = String(accept || '').split('|').map((member) => member.trim()).filter(Boolean);
-    return members.some((member) => check(typed, member).status === 'correct') ? { status: 'correct' } : verdict;
+    const grade = (text) => {
+      const verdict = check(text, answer);
+      if (verdict.status === 'correct' || verdict.status === 'empty') return verdict;
+      return members.some((member) => check(text, member).status === 'correct') ? { status: 'correct' } : verdict;
+    };
+    // A tie typed with `=` ("H = P < S", 7.2: both 2.1): right when every
+    // order of the tied members is right — the page lists the other order
+    // in `accept` exactly where its data tie — and otherwise told that the
+    // members are not equal, never "use each member once" (audit G10,
+    // November 24, 2026).
+    const ties = form === 'ordering' ? tieExpansions(typed) : null;
+    if (ties) {
+      const verdicts = ties.map(grade);
+      if (verdicts.every((verdict) => verdict.status === 'correct')) return { status: 'correct' };
+      if (verdicts.some((verdict) => verdict.status === 'correct')) return { status: 'incorrect', message: ORDERING_NOT_TIED };
+      return verdicts[0];
+    }
+    return grade(typed);
   }
   if (form === 'quantum-numbers') return checkQuantum(typed, answer);
   return form === 'equation' ? checkEquation(typed, answer) : checkFormula(typed, answer, { accept });

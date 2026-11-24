@@ -36,7 +36,7 @@
 
 import { checkChem } from './check-chem.mjs';
 import { systematicName } from './older-names.mjs';
-import { ionicName } from './prefix-names.mjs';
+import { FIXED_CHARGE, ionicName } from './prefix-names.mjs';
 
 const DIACRITICS = /[̀-ͯ]/g;
 const DASHES = /[‐‑‒–—−]/g;
@@ -190,6 +190,7 @@ export function gradeText(input, answer, { accept = '', form = '' } = {}) {
     if (SHAPE_NAME.test(normalizeText(String(input ?? '').replace(ANGLE_AFTER, '')))) return { status: 'incorrect', message: HYBRID_SHAPE_MESSAGE };
     return { status };
   }
+  if (status === 'incorrect' && unitSymbolCaseMiss(input, answer, accept)) return { status: 'form', message: UNIT_SYMBOL_CASE_MESSAGE };
   if (status === 'incorrect' && isOlderName(input, answer, { accept })) {
     return { status: 'form', message: OLDER_NAME_MESSAGE };
   }
@@ -200,8 +201,26 @@ export function gradeText(input, answer, { accept = '', form = '' } = {}) {
     const numeral = numeralProblem(input, answer, { accept });
     if (numeral === 'arabic') return { status: 'form', message: ARABIC_NUMERAL_MESSAGE };
     if (numeral === 'missing') return { status: 'incorrect', message: MISSING_NUMERAL_MESSAGE };
+    if (hasUnneededNumeral(input, answer, { accept })) return { status: 'form', message: UNNEEDED_NUMERAL_MESSAGE };
   }
   return { status };
+}
+
+// A metal of one charge named with that charge as a Roman numeral —
+// "aluminum(III) fluoride" for aluminum fluoride (Chemistry 2e 2.7; audit
+// G13, November 24, 2026: a bare "Not quite"). IUPAC allows the numeral and
+// 2.7's own example writes "gallium(III) nitride", so the compound is right
+// and the name carries what the book leaves out: `form`. A numeral that is
+// not the metal's charge stays plainly incorrect. Gives no metal and no number.
+export const UNNEEDED_NUMERAL_MESSAGE = 'This metal forms only one ion, so its name needs no Roman numeral: name the compound without it.';
+
+/** Is the response the key with the metal's one charge added as a Roman numeral? */
+export function hasUnneededNumeral(input, answer, { accept = '' } = {}) {
+  const words = normalizeText(input).split(' ').filter(Boolean);
+  if (words.length < 3) return false;
+  const charge = ROMAN_NUMERALS.indexOf(words[1]);
+  if (charge < 1 || FIXED_CHARGE.get(words[0]) !== charge) return false;
+  return checkText([words[0], ...words.slice(2)].join(' '), answer, { accept }) === 'correct';
 }
 
 // Says nothing of the answer: not the metal, not the numeral.
@@ -342,6 +361,33 @@ const ANGLE_AFTER = /\s*\(\s*[<≈]?\s*\d+(?:\.\d+)?\s*°\s*\)\s*$/;
 // pairs" (Chemistry 2e 8.2, printed 19(b), the source's answer verbatim).
 const LONE_PAIRS_AFTER = /\s*,?\s*with\s+(?:a|an|one|two|three|four|\d+)\s+lone\s+pairs?\s*\.?\s*$/i;
 
+/*
+ * A unit's symbol is case-sensitive: `M` is mega (or molar), not meter, and
+ * `KG` is no symbol (Chemistry 2e 1.4; audit G11, November 24, 2026: the
+ * word grader lowercased both into the `m` and `kg` accept members). Read
+ * only against a key that NAMES a unit, and only of a member that is that
+ * unit's symbol, so no other short accept member (DNA, ATP) gains case.
+ * A response that is the symbol with other capitals is `form`, as wrong
+ * capitals on a formula are; the message gives no symbol.
+ */
+const UNIT_NAMES = new Set(['meter', 'metre', 'kilogram', 'gram', 'second', 'kelvin', 'ampere', 'mole', 'candela', 'liter', 'litre', 'joule', 'pascal', 'newton', 'watt', 'hertz']);
+const UNIT_SYMBOLS = new Set(['m', 'kg', 'g', 's', 'K', 'A', 'mol', 'cd', 'L', 'l', 'J', 'Pa', 'N', 'W', 'Hz']);
+export const UNIT_SYMBOL_CASE_MESSAGE = 'Those are the right letters — now fix the capitals: in a unit’s symbol, a capital and a small letter are different symbols.';
+// …and a square or cubic unit (`m3`, `m^3` for cubic meters), and the
+// symbol typed with a plural s (`Ms`, `Kgs`), which the plural fold would
+// otherwise lowercase past the rule (round 2, November 24, 2026).
+const POWER = /\^?\{?[23]\}?$/;
+function unitSymbolCaseMiss(input, answer, accept) {
+  const name = normalizeText(answer).replace(/^(?:square|cubic) /, '').replace(/ (?:squared|cubed)$/, '').replace(/s$/, '');
+  if (!UNIT_NAMES.has(name)) return false;
+  const typed = String(input ?? '').trim();
+  const members = String(accept ?? '').split('|').map((member) => member.trim())
+    .filter((member) => UNIT_SYMBOLS.has(member.replace(POWER, '')));
+  const writings = [typed, typed.replace(/s$/i, '')].filter(Boolean);
+  if (writings.some((writing) => members.includes(writing))) return false;
+  return writings.some((writing) => members.some((member) => member.toLowerCase() === writing.toLowerCase()));
+}
+
 export function checkText(input, answer, { accept = '', form = '' } = {}) {
   if (form) return checkChem(input, answer, { accept, form }).status;
   if (acceptedForms(answer, accept).some((member) => SHAPE_NAME.test(member))) {
@@ -360,6 +406,7 @@ export function checkText(input, answer, { accept = '', form = '' } = {}) {
     const closed = closedForm(text);
     return closedForms.some((form) => matchesForm(closed, form));
   };
+  if (unitSymbolCaseMiss(input, answer, accept)) return 'incorrect';
   if (graded(input)) return 'correct';
   // A hybridization label (Chemistry 2e chapter 8) is its orbitals and their
   // counts: `sp^3d`, `sp 3 d`, `sp3d hybridized` against `sp³d` (see

@@ -23,7 +23,7 @@ weight: 13
 | $\ce{^{60}_{27}Co}$ | 5.27 y | $(\beta^-)$ |
 | $\ce{^{87}_{37}Rb}$ | $4.7 \times 10^{10}$ y | $(\beta^-)$ |
 | $\ce{^{90}_{38}Sr}$ | 29 y | $(\beta^-)$ |
-| $\ce{^{115}_{49}In}$ | $5.1 \times 10^{15}$ y | $(\beta^-)$ |
+| $\ce{^{115}_{49}In}$ | $4.41 \times 10^{14}$ y | $(\beta^-)$ |
 | $\ce{^{131}_{53}I}$ | 8.040 d | $(\beta^-)$ |
 | $\ce{^{142}_{58}Ce}$ | $5 \times 10^{15}$ y | $(\alpha)$ |
 | $\ce{^{208}_{81}Tl}$ | 3.07 m | $(\beta^-)$ |
@@ -54,7 +54,7 @@ weight: 13
 | $\ce{^{234}_{92}U}$ | $2.45 \times 10^{5}$ y | $(\alpha)$ |
 | $\ce{^{235}_{92}U}$ | $7.03 \times 10^{8}$ y | $(\alpha)$ |
 | $\ce{^{238}_{92}U}$ | $4.47 \times 10^{9}$ y | $(\alpha)$ |
-| $\ce{^{239}_{92}U}$ | 23.54 m | $(\beta^-)$ |
+| $\ce{^{239}_{92}U}$ | 23.45 m | $(\beta^-)$ |
 | $\ce{^{239}_{93}Np}$ | 2.3 d | $(\beta^-)$ |
 | $\ce{^{239}_{94}Pu}$ | $2.407 \times 10^{4}$ y | $(\alpha)$ |
 | $\ce{^{240}_{94}Pu}$ | $6.54 \times 10^{3}$ y | $(\alpha)$ |
@@ -77,6 +77,8 @@ weight: 13
 
 *Source note:* two isotope symbols are corrected here. The source prints plutonium-239 twice, the second time with a half-life of $6.54 \times 10^{3}$ y, which is the half-life of plutonium-240; and it prints the symbol Ha for element 105, which is dubnium, Db, as the periodic table of Appendix A names it.
 
+*Source note:* two half-lives are corrected here from the evaluated nuclear structure data that the [Nuclear Data Section of the International Atomic Energy Agency](https://www-nds.iaea.org/relnsd/vcharthtml/VChartHTML.html) lists. The source prints $5.1 \times 10^{15}$ y for indium-115, whose half-life is $4.41 \times 10^{14}$ y, and 23.54 min for uranium-239, whose half-life is 23.45 min.
+
 ---
 
-<small>This appendix is adapted from [Chemistry 2e, Appendix M: Half-Lives for Several Radioactive Isotopes](https://openstax.org/books/chemistry-2e/pages/m-half-lives-for-several-radioactive-isotopes) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the table transcribed as a Markdown table with its title as a bold line above it, the two side-by-side sets of columns the source prints set as one list in order of atomic number and mass number; the isotope symbols, powers of ten, and particle symbols typeset as KaTeX math; the footnotes, which the source prints once for each set of columns, marked with the symbols \* and † and set once below the table; two isotope symbols corrected, as the Source note says.</small>
+<small>This appendix is adapted from [Chemistry 2e, Appendix M: Half-Lives for Several Radioactive Isotopes](https://openstax.org/books/chemistry-2e/pages/m-half-lives-for-several-radioactive-isotopes) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the table transcribed as a Markdown table with its title as a bold line above it, the two side-by-side sets of columns the source prints set as one list in order of atomic number and mass number; the isotope symbols, powers of ten, and particle symbols typeset as KaTeX math; the footnotes, which the source prints once for each set of columns, marked with the symbols \* and † and set once below the table; two isotope symbols corrected, as the Source note says; two half-lives corrected, as the second Source note says.</small>

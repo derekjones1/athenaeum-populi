@@ -145,7 +145,13 @@ an item. So:
     only; a misspelling the page fixed excludes nothing; and a recomputation
     from this book's periodic table, with the section's Source note on
     recomputed examples, is not a correction — the item keys what the
-    page prints, as Knowledge Check 1's glycine item keys 3.1's 0.3777);
+    page prints, as Knowledge Check 1's glycine item keys 3.1's 0.3777;
+    and neither is a Source note about wording only, or one saying that
+    the example's working carries unrounded digits, where the answer the
+    item keys is the value the section page prints — Knowledge Check 1's
+    chlorine-35 item on 2.3's example and Knowledge Check 2's ozone item
+    on 5.3's, each of which gained such a note after the item was written
+    *(November 24, 2026)*);
     **is not one
     a section-page item already asks again** — the same substance or data
     and the same answer, as the source's own exercises sometimes do (2.4

@@ -3687,8 +3687,9 @@ oxidation number, a negative enthalpy. Every gate read all of them.
 ### What landed
 
 `knowledge-check-04-05.md`, weight 7 (chapter 6 to 8, the appendices to
-9): 22 items over 8 sections — 9 fill-ins, 5 equation text-ins, 1 formula
-text-in, 3 recall text-ins, 4 multiple choices, no selfcheck; 15 are
+9): 22 items over 8 sections — 9 fill-ins, 4 equation text-ins, 1 formula
+text-in, 4 recall text-ins, 4 multiple choices, no selfcheck (corrected
+November 24, 2026: the line had said 5 equation and 3 recall text-ins); 15 are
 worked-example items. 4.3 and 5.2 stand at two items. 4.4's two multiple
 choices both serve the first objective, by the parent's ruling: the
 second objective's term is printed with its definition in the page's
@@ -5850,6 +5851,382 @@ The parent's open items: a `DISCLOSED_DEVIATIONS` line for 9.2's
 coverage without one); the blind re-solve of the two re-opened items; the
 6.5 Source note's “Cu 740 and 746” (NIST 7.726380 eV × 96.485 is 745.5,
 745 to the unit); the 9.1 Paris ruling; then the slower second audit.
+
+## Deep audit and its fix pass (November 23–24, 2026)
+
+The November 23 audit read fast and opened few figures; a slower second audit
+followed the same day, and a fix pass answered it on November 24. Derek
+delegated the decisions the audit raised; the parent ruled them in
+`rulings.md` (R1–R12, kept in the run's scratchpad) before any page was
+touched.
+
+### The deep audit
+
+- **Sixty-six Opus reviewers**, one page each, each told to open the
+  figures and a reference for every outside claim.
+- **A second blind solve of 404 items**, keys hidden: 386 agree, 0 disagree,
+  18 flags; every flag was adjudicated and none is a defect.
+- **310 findings.** Appendix A (118 atomic masses against CIAAW) and
+  Appendix D (17 constants against CODATA) came back clean.
+
+### The rulings
+
+Each ruling is a class of finding decided once. Where the rule lives is named.
+
+- **R1, trailing zeros.** This book counts every printed digit of a
+  whole-number datum as significant, trailing zeros included, as the source's
+  answers do. No item changed for this reason. Section 1.5 got one Source
+  note after its ambiguity paragraph. The limit is 1.5's own exercise
+  (27,340 → key 27440, `sig-figs:4`), which counts a trailing zero as not
+  significant: the rule holds from the later sections only, and the 1.5 note
+  says “later sections”. Rule in `docs/subjects/chemistry.md`.
+- **R2, self-check model answers.** A model answer that does not answer what
+  the question asks, stops short of it, or states something false is
+  completed or corrected, keeping the source's words, with a Source note
+  directly after the self-check, a footer clause, an erratum, and a
+  `DISCLOSED_DEVIATIONS` line. A rubric defect over a sound model answer is
+  ours: no note, no erratum. Rule in `docs/subjects/chemistry.md`.
+- **R3, the Knowledge Check usable-example rule.** A wording-only Source
+  note, or one saying an example's working carries unrounded digits, does not
+  disqualify an example when the item's key is the value the section page
+  prints. The two flagged items (KC1 l.220, KC2 l.182) stay. In
+  `docs/knowledge-check-playbook-chemistry.md`; the KC fixer confirmed 75.76
+  and 143.
+- **R4, Ca(OH)₂ in 4.2.** The Ca + H₂O equation key carries no state on
+  Ca(OH)₂ (the other species keep the source's), after a probe showed the
+  grader then takes (s), (aq), and none as correct. A Source note says only
+  that the graded answer leaves that one state open. This reverses the
+  November 23 “for Derek”. Rule in `docs/subjects/chemistry.md`.
+- **R5, the pickling sentence (4.2).** The body is corrected and the Source
+  note says what the source prints, as the paragraph's “starches” was
+  (erratum 3032).
+- **R6, Paris (9.1).** The drafted sentence, note, footer clause, and erratum
+  applied; the two references re-opened first.
+- **R7, the 1.4 density cells.** Nitrogen, carbon dioxide, and neon are
+  corrected to the NIST WebBook's values at the column's 25 °C and 1 atm
+  (1.15, 1.81, 0.82 g/L), and the dry-air note and footer clause name all
+  four cells. This reverses the November 23 revert.
+- **R8, “not opened; kept as printed”.** Every such finding is decided by a
+  reference opened now. If it contradicts the page: prose, caption, table
+  cell, Key term, Summary are corrected; the stem data of a graded item stay
+  with a Source note saying the answer graded follows the stem as printed; a
+  stem or key changes only when the item as printed has no right answer. A
+  reference that cannot be opened, or only secondary evidence, leaves the
+  page alone and says so.
+- **R9, a Source note against its own erratum.** Where the erratum is right
+  the page's note and footer clause are rewritten to agree; where the erratum
+  is wrong the parent fixes the erratum. Applied to 3180 (withdrawn), 3322,
+  3361, and 3078.
+- **R10, links.** A moved Link to Learning is linked at its present address
+  after opening, or at its Internet Archive copy, or the sentence is kept
+  with the dead link removed and a note; a link whose description is wrong is
+  re-described; a reference to another section is a link by its title
+  (Derek, November 14).
+- **R11, accept lists.** A correct phrasing a learner would type and the page
+  refuses goes in `accept=` (seven-word cap; nothing the grader already
+  folds); a spelling the page or a sibling prints is always added. It
+  contradicted `docs/subjects/chemistry.md`'s accept rule (a name the module
+  prints, or the key's own words respelled); the rule is amended to admit a
+  third kind, a standard name a reference opened in a re-review prints.
+- **R12, grader ownership.** One agent owned every finding that a page
+  cannot fix (charge typed as a superscript, `Al13+`, short-of-figures
+  answers, writings of equations, `K+: [Ar]`, the `H = P` tie, unit-symbol
+  case); page fixers named them “grader agent's” and did not work around them.
+
+### The run
+
+- **31 page units** by Opus fixers, in a rolling window of eight, each told
+  to open a reference for every claim it changed and to report rather than
+  improvise where a ruling did not fit.
+- **One grader agent** for R12's findings.
+- **A follow-up fixer** (u32) for the relays and the parent's rulings made
+  after reading the unit reports; 13 changes on twelve pages.
+- **Five independent Opus readers** of every changed line (ch1–2, 3–5, 6–7,
+  8–9, 10 with the Knowledge Checks and appendices), each reopening
+  references. An applier (u33) applied the accepted corrections: 46 of 47, on
+  27 pages.
+- **An errata compiler-verifier** (the records agent) checked every draft's
+  paragraph ids and quoted text against the CNXML, numbered the entries,
+  and filed them, the amendments, and the decisions entries.
+- **An independent code review** of the grader changes, which probed them
+  against the pre-change code, and **a second grader round** answering it.
+- **A blind re-solve of 16 re-opened graded items** by a fresh solver, keys
+  hidden: 16 agree, 0 disagree, 0 flags.
+
+### Fixed, by page
+
+Errata numbers are the final 3402–3498; “amended” means an existing entry
+gained a dated sentence. Section 11.1 and 11.2 needed no edit.
+
+| Page | Changes | Errata |
+|---|---|---|
+| 1.1 | copper wire density; thermometer self-check model answer; accept members; rubric | 3402 |
+| 1.2 | “tens of millions”; Gatorade sodium citrate model answer | 3403, 3404 |
+| 1.3 | hazard diamond: the white diamond and the 0–4 scale | 3405, 3406 |
+| 1.4 | density cells 1.15 / 1.81 / 0.82 with dry air 1.18; 373.15 K in the present tense; three accept re-opens | 3407; 3390 (addendum) |
+| 1.5 | R1 Source note; quarter note | none (ours) |
+| 1.6 | “formerly defined”; gas zero and Thomson's scale; 373.15 K; Kilimanjaro; pound/ounce footnote | 3408–3411; 3391 amended |
+| 2.1 | the 0.800 compound X / Y answer | 3412; 2925 amended (carbon 14.73, 22.19, 19.28) |
+| 2.2 | Thomson's e/m; protons “half, or less”; Rutherford answers (b) and (d) | 3413–3416 |
+| 2.3 | neon 20.1796 vs 20.1797 | 3417 |
+| 2.4 | isomers link now the NBC News Learn video; simulation self-checks to the “Sample answer:” form | 3418 |
+| 2.5 | bracketed mass numbers note extended; accept re-opens | 3419 |
+| 2.6 | NaCl boils at 1465 °C; *per-* etymology; links | 3420, 3421 |
+| 2.7 | accept oxoacid; Roman numeral on a one-charge metal sent to the grader | none |
+| 3.1 | brain caption; dopamine; Avogadro in the Summary; Cullinan; molar-mass self-check | 3422–3425 |
+| 3.2 | brew-kettles caption; chrysotile percent composition and molar mass (note, R8); homogeneous-mixtures accept | 3426, 3427 |
+| 3.3 | ammonia note; accept re-open | 3428 |
+| 3.4 | fluoride filters; D5W | 3429, 3430 |
+| 4.1 | HI(*s*) note | 3431 |
+| 4.2 | Ca(OH)₂ key stateless (R4); pickling; rocket video; weak bases; links; Mg(OH)₂ and HClO₄ self-check | 3432–3434; 3498 |
+| 4.3 | Zn(CN)₂(*aq*) in the silver exercise; GaCl₃ model answer | 3435 |
+| 4.4 | ether outline; gold-atoms model answer; links | 3436, 3437 |
+| 4.5 | filtration accept re-open; unlinked “last module” | none |
+| 5.1 | ice row relabelled “near 0 °C”; waterbed self-check; nitrogen hints; links | 3438, 3439 |
+| 5.2 | USDA link and “nearly 8000”; ammonium-nitrate self-check | 3440 |
+| 5.3 | nitric acid and antimony chloride states; rocket-fuel; ethylene; iron + chlorine −338 made a correction, not a register row; HCl hint | 3441–3444; 3078, 3069, 3075 amended |
+| 6.1 | slit spacing; cholesteryl iodide; Bohr and RGB rubrics | 3445, 3446 |
+| 6.2 | “Show your calculations.” dropped from the eV stem | none |
+| 6.3 | nickel cloze; subshell definition; s-orbital axis; f-label notes; softball self-check | 3447–3450 |
+| 6.4 | nine edits | none |
+| 6.5 | half-filled orbital; arsenic IE₅; electron affinities of Ga, In, Po; trend sentence | 3451–3454; 3130, 3133, 3134 amended |
+| 7.1 | chromium Source note | none |
+| 7.2 | NH₃ and NaCl “exceptions” removed; xenon wording | 3455; 3154 amended |
+| 7.3 | six ionic model answers completed; “radical” accept | 3159, 3160, 3164 amended |
+| 7.4 | sulfuric acid drawing dots; CO₂ self-check stem shortened | 3456 |
+| 7.6 | formaldehyde 122° / 116°, ammonia 106.67°; XeOF₄, O₃/NH₃, PH₂⁻ model answers; 22 accept-only re-opens | 3457–3460; 3174 amended |
+| 8.1 | H₂ well depth ~7.61 × 10⁻¹⁹ J; “similar pattern” | 3461, 3462 |
+| 8.2 | p-orbital colors in four captions; five accept re-opens | 3463 |
+| 8.3 | ethene caption | 3464 |
+| 8.4 | wave-figure alt, note, and footer clause removed; Kohn; ψ self-check; N₂²⁺/O₂⁴⁺ model answer | 3465–3467; 3180 withdrawn |
+| 9.1 | Paris; volatile-liquid model answer; Venus; surface-area accept | 3468–3470 |
+| 9.2 | two self-check questions reworded; 273 note | 3471 |
+| 9.3 | CCl₂F₂ equation and key; cylinders figure labels; Lavoisier; cyclopropane note | 3472–3475 |
+| 9.4 | Graham derivation answer; “World War II”; lime rubric | 3476, 3477 |
+| 9.5 | simulation-controls description; propane note | 3478 |
+| 9.6 | compressibility part (d) model answer | 3479 |
+| 10.1 | thymine drawn as uracil; gecko box; HCl 16 kJ / 27×; rubrics | 3480–3482 |
+| 10.2 | molasses model answer; Jasper 1972 Table 60 for mercury | 3483; 3322 amended |
+| 10.3 | sweat; TiCl₄ melting point; NIST link | 3484, 3485 |
+| 10.4 | N₂ and O₂ critical temperatures; SO₂ 7900 kPa; coffee (UN Comtrade) | 3486, 3487 |
+| 10.5 | “Most exhibit”; silicon; polar solids; accept re-open | 3488–3490 |
+| 10.6 | SrH₂ dropped from the fluorite list (AFLOW); “British”; iron rubric | 3491; 3361 amended |
+| KC 1–3 | argon and chemical-property options (below); three accept re-opens in KC3; R3 confirmed | none |
+| Appendices | B rounding rule; C pound/ounce; E 1/e; J PbCO₃ and Hg₂CO₃; L MnO₄⁻/MnO₂ 0.595 and two more potentials; M ¹¹⁵In, ²³⁹U | 3492–3497 |
+
+### Grader changes
+
+The grader agent's first round changed what a learner is told or credited:
+
+- A charge typed as a superscript (`4^{+}`, `^{4+}`) is correct.
+- `Al13+` and `C14-` are incorrect: a count of 1 is never written.
+- A nuclide typed atomic number first (`_11^23Na`) is correct.
+- Equations read `(3/2)O2`, `1 1/2 O2`, `C(graphite)`, `Fe^(3+)`, `=>`, `==>`.
+  Another formula of the same atoms (`OCN-` for `NCO-`, `HOBr`, an ether
+  written as `CH3CH2OCH2CH3`) is `form` with a new message.
+- A one-charge metal named with a Roman numeral (`aluminum(III) fluoride`) is
+  `form` with a message.
+- A tie typed `H = P < …` is correct where the page lists both orders;
+  otherwise a new true message.
+- A unit symbol keeps its case against a key that names an SI unit (`M`,
+  `KG` are `form`).
+- A right value given short of the key's figures is `form`: “That agrees
+  with the answer as far as it goes”.
+- `K+: [Ar]` was first made correct (label dropped).
+
+Left as they were, with the reasons in the grader's report: the power-of-ten
+crossing (`1.00` for `0.99`, `9` for `10`; right by the documented rule),
+`soy beans` (the page's accept member covers it), and lowercase orderings
+(already told to check capitals).
+
+The independent code review probed round one against the pre-change code and
+found six defects; the second round closed them:
+
+| Defect | Round-two closure |
+|---|---|
+| D1, serious: the short-of-figures window was a distance, ten times too wide below a power of ten, so `10` for 7.5 and `1.0` for 0.974 were told they agreed (34 flips) | “Short” is now a rounding: form only if the response equals the key rounded at the response's own count, or a tie neighbour. Sweep of 489 items: 658 incorrect→form flips, all true roundings or tie neighbours. |
+| D2, `100` for 150 at one figure re-opened the round-number case | Folded into D1's rounding test; the ambiguous-whole-number case is listed below as a consequence |
+| D3, `1000` read at two figures for the two-short test | Ambiguous whole numbers are tried at every count down to one |
+| D4, serious: the configuration label dropped unread, so `K: [Ar]` was correct | A typed label is `form`, “Type the configuration alone…”, whatever the label; no key in the book carries one |
+| D5, the same-atoms message was false for isomers | Reworded (“arranged or ordered differently”); the arrow and every typed state must agree or the response is plainly incorrect |
+| D6, cosmetic: unit symbols with a trailing s, squared or cubed | `Ms`, `Kgs`, `M3`, `M^3` are `form`; `m3`, `m^3` correct |
+
+Three consequences were flagged for Derek:
+
+1. `90` against 89.4 is now `form`. The 1.6 pilot refused it. Round two's
+   ambiguous-whole-number rule makes 89.4 to one figure equal 90; likewise
+   `10` for 9.92 and `100` for 98.7. Two test rows pinning the pilot's
+   refusal were flipped. Restoring the pilot's ruling means excluding
+   one-figure counts from the ambiguous exception.
+2. Eleven numbers printed within 15 lines above an item now get “agrees as
+   far as it goes”: 1.6 L376 `400` (355) and L575 `1` (1.5); 3.1 L277 `10`
+   (14.2), L366 `12` (12.011), L659 `3` (3.5); 3.3 L444 `10` (9.92); 3.4 L85
+   `1` (1.5); 4.5 L210 `20` (22.4); 9.1 L184 `100` (150); 9.3 L136 `100`
+   (124); 10.6 L379 `10` (10.8). Each is a true rounding; the worry is the
+   pilot's, a stem's round number “agreeing”.
+3. A typed configuration label (`K+: [Ar]`) is `form`, “type the
+   configuration alone”. No key carries a label; making it correct would
+   need the 7.1 keys to carry one and the lint and source gate to admit it.
+
+Both rounds ended with the grader unit tests green (11,266, then 11,289, 0
+failing), `verify:typed` at 1,380 items with none not graded correct, and
+the documentation tests at 50/50.
+
+### Errata and records
+
+- **Errata 3402–3498**, 97 entries. The compiler-verifier filed 3402–3497
+  (96) in page order in a block directly after 3401; the parent filed 3498
+  for the 4.2 Mg(OH)₂/HClO₄ self-check answer, which writes the acid whole,
+  with a Source note on the page, a deviation line, and a decisions entry.
+- **3180 withdrawn** (the 8.4 wave figure is right; our alt, note, and
+  footer clause were wrong and are gone). **3322** now cites Jasper 1972
+  Table 60; **3361** says “British”; **3078** no longer says Appendix G
+  rounds to 90.2. About forty other entries gained dated amendments
+  (2889, 2902, 2925, 2983, 3002, 3010, 3018, 3024, 3027, 3034, 3035, 3045,
+  3049, 3069, 3075, 3106, 3111, 3130, 3133, 3134, 3154, 3159, 3160, 3164,
+  3174, 3175, 3182, 3184, 3185, 3200, 3210, 3225, 3245, 3262, 3288, and
+  others), and 3390 and 3391 took addenda in place of numbered entries.
+- **Overturned “Reviewed and not errata” lines**: the 1.4 gas-column line,
+  the 1.6 lines, the 2.5/2.6 lines (three), 3.1 (two), 3.2 (two), 3.4 (two
+  plus the D5W backlog line in this history), 4.1, the 6.1, 6.3, 7.1, 8.1
+  (the “similar pattern” and well-depth lines), 9.1, 10.3 (four, plus the SO₂
+  7800 line), 10.5, and Appendix C lines. A 43-bullet list of items
+  considered and not filed (EPA 15 ppb, Priestley's date, 1.6's “about
+  −273 °C”, and the readers' declined items) follows the block.
+- **`data/openstax/reconciliation-decisions.json`**: 96 entries added, 3180
+  removed, three rationales (3390, 3391, 3322) amended; 3498 added by the
+  parent.
+- **`DISCLOSED_DEVIATIONS`**: 15 entries added by the records agent (12
+  solution, 2 key, plus amended reasons for 3182 and 3288), 7 tried and
+  dropped as stale because the gate passes them without a line; the parent
+  added one for 3498. Seven `TABLE_NOTES` deviations for Appendices J, L, M
+  carry 3495–3497. The 5.3 iron/chlorine row left
+  `data/verification/source-print-differences.json`.
+- **`--min-confirmed` floor, 8105 → 8091.** Disclosed corrections are not
+  counted as confirmed: 15 new deviation entries (13 solution, 2 key) and one
+  more item no longer confirmed, less 2 gained when the gate learned a form.
+- **The source-keys gate** was taught the one-of-many question form
+  (`ASKS_FOR_A_SET_RE` widened to “identify a/an …”, “more than one correct
+  answer”, “explain how you could”), with a line in
+  `docs/subjects/chemistry.md`.
+- `tests/browser-check.spec.mjs` was re-pointed at the 4.2 key without the
+  state on Ca(OH)₂; its form probe now types H₂(*aq*).
+
+### Items re-opened
+
+Graded items whose stem, options, or key changed:
+
+- **4.2, Ca + H₂O equation key**: no state on Ca(OH)₂ (R4).
+- **9.3, CCl₂F₂ + 4H₂ fill-in**: the printed equation does not balance; it is
+  now CCl₂F₂ + 2H₂ → CH₂F₂ + 2HCl and the key 3.72 × 10³ L → **1.86 × 10³ L**
+  (M = 120.907 g/mol, n = 8270.8 mol, V = 1862 L at 225 atm and 308.65 K;
+  the source's value is exactly twice). A reader solved it blind and
+  confirmed it.
+- **6.2, the eV fill-in for n = 5 → 2**: the closing “Show your
+  calculations.” dropped from the stem; key and form unchanged.
+- **6.3, the nickel cloze**: question reworded and `accept` Ni added; key
+  unchanged.
+- **KC1, the argon multiple choice**: options now gold / argon / nitrogen /
+  phosphorus (first nitrogen and chlorine → phosphorus and sulfur, then a
+  reader showed hydrogen, phosphorus, and sulfur share one caption, so the
+  applier took the reader's set).
+- **KC1, the chemical-property multiple choice**: hardness and electrical
+  conductivity → melting temperature and mass.
+- **Ten 5.1 items**, re-opened by dependency on the table whose ice row was
+  relabelled “near 0 °C”; their keys follow the page's table and are
+  unchanged.
+
+Accept-only re-opens, as the unit reports counted them: 1.1 (1), 1.2 (1),
+1.4 (3), 2.5 (2), 2.6 (1), 2.7 (1), 3.3 (1), 4.5 (1), 6.5 (1), 7.3 (2), 7.6
+(22, a reader's count), 8.2 (5), 9.1 (1), 10.4 (1), 10.5 (1), KC3 (3).
+
+The blind re-solve of the 16 re-opened graded items (4.2 ×1, 5.1 ×10, 6.2 and
+6.3, 9.3, KC1 ×2) by a fresh solver: 16 agree, 0 disagree, 0 flags. Its notes:
+5.1's ice label against its range (known, left) and aluminum 97.2 against
+97.3 (carried). 84 self-checks whose model answers or rubrics changed were
+re-read by the parent.
+
+### Left as printed, or open
+
+- **NiS in Appendix L** (+0.76 V): no reference has the row; left. For Derek
+  before chapter 17; Appendix L's old 0.558 is quoted in a chapter 17 figure
+  description.
+- **BaF₂ in Appendix J**: left by the stale-value rule, since 15.1 is keyed
+  from it. For Derek before chapter 15.
+- **9.6 van der Waals rows for CCl₄ and N₂**: unverified, the CRC unreachable.
+- **TiCl₄ heat of fusion** (9.37 kJ/mol, 10.3): unverified; JANAF implies
+  about 2.4.
+- **3.3 sodium cyanide “minimum lethal concentration in blood serum”**: no
+  reference settles it; left unverified.
+- **Db, Hs, Mt brackets** (2.5, Appendix A): left; the drawing follows the
+  IUPAC table.
+- **1.5's own trailing-zero exercise** (27,340 → 27440): counts the zero as
+  not significant, outside R1.
+- **Orbitron (University of Sheffield)** accepted as the citation for the
+  s-orbital axis and f-label notes; it is not on the brief's reference list.
+- **`90` for 89.4** is now `form`; reverses the 1.6 pilot (see grader
+  consequence 1).
+- **The eleven printed-above numbers** told “agrees as far as it goes” (grader
+  consequence 2).
+- **A typed configuration label** is `form` (grader consequence 3).
+- **Erratum 3151** (7.1, 769 kJ): an auditor's page prints 769.4 kJ/mol
+  experimental; unopened, and “no source opened prints 769” may need a line.
+- **Erratum 3045's ethanol wording** (“three papers”; the WebBook lists 33
+  liquid entries): not re-opened.
+- **Erratum 22565 (Appendix E boiling 373.15 K, “not errata”)** now goes the
+  other way from 3407 and 3410: a consistency call.
+- **3462** (8.1 “similar pattern”) was filed as an erratum, though the
+  parent's notes called it a loose claim: move it to not-errata if Derek
+  disagrees.
+- **2.5 Annalen year**: unsettled, left. **2.2 Thomson/Soddy**, **7.2
+  silicones rubric**, **8.2 chlorate rubric**, **10.4 checkpoint rubric**
+  (checkpoints render no math), and similar lower findings: left
+  by ruling.
+- **Appendix E vapor pressures, 44.016, K_w, H₃PO₄, and three Appendix J
+  rows**: left by the stale-value rule.
+- **11.1, NO in CO** stays dipole–dipole with no note.
+- **7.4 F3** (the H₂SO₄ drawing's dots): filed as erratum 3456 after the
+  follow-up fixer's proposal.
+
+### What the process got wrong
+
+- **Fixers introduced defects that the readers caught.** A 9.5 propane note
+  carried a clause that leaked the answer of an item still unanswered below
+  it; KC1's replacement argon options came from one caption, so three
+  distractors shared a clause with each other; and 7.6's rewritten PH₂⁻ note
+  kept “The model answer is the source's” beside a note that contradicted
+  it. A note placed above an unanswered item states no key, and a changed
+  item is checked against the playbook's one-clause-per-option rule by
+  someone who did not change it.
+- **The parent's own HCl hint ruling was wrong.** The 5.3 hint (“an exact
+  coefficient does not limit figures”) led a learner to −185, which the item
+  refuses; a reader showed that only reading 2ΔH°f as a sum reaches −184.6,
+  and the hint now says a sum keeps the decimal places of its terms. A hint
+  is tested by following it.
+- **The first grader round accepted powers of ten and unread labels** until
+  an independent code review probed it: `10` for 7.5, `1.0` for 0.974,
+  `K: [Ar]` correct. The author of a grader change does not sweep its own
+  verdict flips; a second reader replays old against new over the corpus.
+- **Ruling R11 contradicted the playbook's accept rule** before the rule was
+  amended: a fixer was told to add every phrasing a learner would type while
+  `docs/subjects/chemistry.md` allowed only names the module prints or the
+  key's words respelled. A ruling that widens a rule amends the rule first.
+
+### Gates
+
+`npm test` green at the close (the ledger current: 16 items re-solved blind,
+84 self-checks re-read, 50 carried, each re-solved item's provenance note
+carried by hand from its earlier record, since `ledger:provenance` labels
+source exercises “author-built” in this book); `verify:typed` 1,380 keys
+graded correct; the one browser test this run edited (4.2's calcium
+equation) run against a fresh build.
+
+### Next
+
+- Chapter 12.
+- Decide BaF₂ before chapter 15 and NiS before chapter 17.
+- The items under “open” above, in particular grader consequence 1 (`90` for
+  89.4) and the 3462, 22565 consistency calls.
 
 ## The `\dfrac` watch list
 

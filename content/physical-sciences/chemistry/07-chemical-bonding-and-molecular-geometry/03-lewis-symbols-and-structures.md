@@ -461,66 +461,80 @@ the charge 3− is written at its upper right
 {{< mediafigure src="chemistry/CNX_Chem_07_03_Exercise3a_img" kind="diagram" alt="Two Lewis symbols side by side: Mg²⁺ with no dots, and the symbol S with four lone pairs and the charge 2− at its upper right." >}}
 {{< /mediafigure >}}
 
-The cation Mg²⁺ has no dots, and the symbol S has four lone pairs and the charge 2−.
+The cation Mg²⁺ has no dots, and the symbol S has four lone pairs and the charge 2−. The magnesium atom has two single dots, and the sulfur atom has two lone pairs and two single dots.
 ===CHECKS===
 the cation Mg²⁺ has no dots
 the symbol S has four lone pairs and the charge 2−
+the magnesium atom has two single dots
+the sulfur atom has two lone pairs and two single dots
 {{< /selfcheck >}}
 
 {{< selfcheck question="Write the Lewis symbols of the ions in the following ionic compound and the Lewis symbols of the atom from which they are formed: Al₂O₃." hint="Write each atom’s Lewis symbol from its valence electrons, then move the electrons the metal atom loses to the nonmetal atom, as the figure of ionic compound formation in the Lewis Symbols subsection does." >}}
 {{< mediafigure src="chemistry/CNX_Chem_07_03_Exercise3b_img" kind="diagram" alt="Two Lewis symbols side by side: Al³⁺ with no dots, and the symbol O with four lone pairs and the charge 2− at its upper right." >}}
 {{< /mediafigure >}}
 
-The cation Al³⁺ has no dots, and the symbol O has four lone pairs and the charge 2−.
+The cation Al³⁺ has no dots, and the symbol O has four lone pairs and the charge 2−. The aluminum atom has three single dots, and the oxygen atom has two lone pairs and two single dots.
 ===CHECKS===
 the cation Al³⁺ has no dots
 the symbol O has four lone pairs and the charge 2−
+the aluminum atom has three single dots
+the oxygen atom has two lone pairs and two single dots
 {{< /selfcheck >}}
 
 {{< selfcheck question="Write the Lewis symbols of the ions in the following ionic compound and the Lewis symbols of the atom from which they are formed: GaCl₃." hint="Write each atom’s Lewis symbol from its valence electrons, then move the electrons the metal atom loses to the nonmetal atom, as the figure of ionic compound formation in the Lewis Symbols subsection does." >}}
 {{< mediafigure src="chemistry/CNX_Chem_07_03_Exercise3c_img" kind="diagram" alt="Two Lewis symbols side by side: Ga³⁺ with no dots, and the symbol Cl with four lone pairs and the charge − at its upper right." >}}
 {{< /mediafigure >}}
 
-The cation Ga³⁺ has no dots, and the symbol Cl has four lone pairs and the charge −.
+The cation Ga³⁺ has no dots, and the symbol Cl has four lone pairs and the charge −. The gallium atom has three single dots, and the chlorine atom has three lone pairs and one single dot.
 ===CHECKS===
 the cation Ga³⁺ has no dots
 the symbol Cl has four lone pairs and the charge −
+the gallium atom has three single dots
+the chlorine atom has three lone pairs and one single dot
 {{< /selfcheck >}}
 
 {{< selfcheck question="Write the Lewis symbols of the ions in the following ionic compound and the Lewis symbols of the atom from which they are formed: K₂O." hint="Write each atom’s Lewis symbol from its valence electrons, then move the electrons the metal atom loses to the nonmetal atom, as the figure of ionic compound formation in the Lewis Symbols subsection does." >}}
 {{< mediafigure src="chemistry/CNX_Chem_07_03_Exercise3d_img" kind="diagram" alt="Two Lewis symbols side by side: K⁺ with no dots, and the symbol O with four lone pairs and the charge 2− at its upper right." >}}
 {{< /mediafigure >}}
 
-The cation K⁺ has no dots, and the symbol O has four lone pairs and the charge 2−.
+The cation K⁺ has no dots, and the symbol O has four lone pairs and the charge 2−. The potassium atom has one single dot, and the oxygen atom has two lone pairs and two single dots.
 ===CHECKS===
 the cation K⁺ has no dots
 the symbol O has four lone pairs and the charge 2−
+the potassium atom has one single dot
+the oxygen atom has two lone pairs and two single dots
 {{< /selfcheck >}}
 
 {{< selfcheck question="Write the Lewis symbols of the ions in the following ionic compound and the Lewis symbols of the atom from which they are formed: Li₃N." hint="Write each atom’s Lewis symbol from its valence electrons, then move the electrons the metal atom loses to the nonmetal atom, as the figure of ionic compound formation in the Lewis Symbols subsection does." >}}
 {{< mediafigure src="chemistry/CNX_Chem_07_03_Exercise3e_img" kind="diagram" alt="Two Lewis symbols side by side: Li⁺ with no dots, and the symbol N with four lone pairs and the charge 3− at its upper right." >}}
 {{< /mediafigure >}}
 
-The cation Li⁺ has no dots, and the symbol N has four lone pairs and the charge 3−.
+The cation Li⁺ has no dots, and the symbol N has four lone pairs and the charge 3−. The lithium atom has one single dot, and the nitrogen atom has one lone pair and three single dots.
 ===CHECKS===
 the cation Li⁺ has no dots
 the symbol N has four lone pairs and the charge 3−
+the lithium atom has one single dot
+the nitrogen atom has one lone pair and three single dots
 {{< /selfcheck >}}
 
 {{< selfcheck question="Write the Lewis symbols of the ions in the following ionic compound and the Lewis symbols of the atom from which they are formed: KF." hint="Write each atom’s Lewis symbol from its valence electrons, then move the electrons the metal atom loses to the nonmetal atom, as the figure of ionic compound formation in the Lewis Symbols subsection does." >}}
 {{< mediafigure src="chemistry/CNX_Chem_07_03_Exercise3f_img" kind="diagram" alt="Two Lewis symbols side by side: K⁺ with no dots, and the symbol F with four lone pairs and the charge − at its upper right." >}}
 {{< /mediafigure >}}
 
-The cation K⁺ has no dots, and the symbol F has four lone pairs and the charge −.
+The cation K⁺ has no dots, and the symbol F has four lone pairs and the charge −. The potassium atom has one single dot, and the fluorine atom has three lone pairs and one single dot.
 ===CHECKS===
 the cation K⁺ has no dots
 the symbol F has four lone pairs and the charge −
+the potassium atom has one single dot
+the fluorine atom has three lone pairs and one single dot
 {{< /selfcheck >}}
+
+*Source note:* the source’s answers to this exercise, the six parts above from MgS to KF, show only the ions, though the question also asks for the Lewis symbols of the atoms they are formed from; the sentence on the two atoms is added to each model answer.
 
 {{< textin
   question="We use Lewis symbols to describe valence electron configurations of atoms and ________ ions."
   answer="monatomic"
-  accept="monatomic ions"
+  accept="monatomic ions|monoatomic|monoatomic ions"
   hint="Look at the sentence that opens the Lewis Symbols subsection, and at the Summary."
 >}}
 
@@ -538,7 +552,7 @@ the two phosphorus atoms are triple-bonded to each other
 each has one lone pair
 {{< /selfcheck >}}
 
-{{< selfcheck question="Write Lewis structures for the following: O₂." hint="Follow the step-by-step procedure in the Writing Lewis Structures with the Octet Rule subsection, starting with the total number of valence electrons." >}}
+{{< selfcheck question="Write the Lewis structure for the following: O₂." hint="Follow the step-by-step procedure in the Writing Lewis Structures with the Octet Rule subsection, starting with the total number of valence electrons." >}}
 {{< mediafigure src="chemistry/CNX_Chem_07_03_Question7a_img" kind="diagram" alt="A Lewis structure: two oxygen atoms double-bonded to each other, each with two lone pairs." >}}
 {{< /mediafigure >}}
 
@@ -550,7 +564,7 @@ the two oxygen atoms are double-bonded to each other
 each has two lone pairs
 {{< /selfcheck >}}
 
-{{< selfcheck question="Write Lewis structures for the following: H₂CO." hint="Follow the step-by-step procedure in the Writing Lewis Structures with the Octet Rule subsection, starting with the total number of valence electrons." >}}
+{{< selfcheck question="Write the Lewis structure for the following: H₂CO." hint="Follow the step-by-step procedure in the Writing Lewis Structures with the Octet Rule subsection, starting with the total number of valence electrons." >}}
 {{< mediafigure src="chemistry/CNX_Chem_07_03_Question7b_img" kind="diagram" alt="A Lewis structure: a carbon atom single-bonded to two hydrogen atoms and double-bonded to an oxygen atom with two lone pairs." >}}
 {{< /mediafigure >}}
 
@@ -561,7 +575,7 @@ single-bonded to two hydrogen atoms
 double-bonded to the oxygen atom, which has two lone pairs
 {{< /selfcheck >}}
 
-{{< selfcheck question="Write Lewis structures for the following: AsF₃." hint="Follow the step-by-step procedure in the Writing Lewis Structures with the Octet Rule subsection, starting with the total number of valence electrons." >}}
+{{< selfcheck question="Write the Lewis structure for the following: AsF₃." hint="Follow the step-by-step procedure in the Writing Lewis Structures with the Octet Rule subsection, starting with the total number of valence electrons." >}}
 {{< mediafigure src="chemistry/CNX_Chem_07_03_Question7c_img" kind="diagram" alt="A Lewis structure: an arsenic atom with one lone pair, single-bonded to three fluorine atoms, each with three lone pairs." >}}
 {{< /mediafigure >}}
 
@@ -573,7 +587,7 @@ arsenic has one lone pair
 each fluorine atom has three lone pairs
 {{< /selfcheck >}}
 
-{{< selfcheck question="Write Lewis structures for the following: ClNO." hint="Follow the step-by-step procedure in the Writing Lewis Structures with the Octet Rule subsection, starting with the total number of valence electrons." >}}
+{{< selfcheck question="Write the Lewis structure for the following: ClNO." hint="Follow the step-by-step procedure in the Writing Lewis Structures with the Octet Rule subsection, starting with the total number of valence electrons." >}}
 {{< mediafigure src="chemistry/CNX_Chem_07_03_Question7d_img" kind="diagram" alt="A Lewis structure: a nitrogen atom with one lone pair, single-bonded to a chlorine atom with three lone pairs and double-bonded to an oxygen atom with two lone pairs." >}}
 {{< /mediafigure >}}
 
@@ -584,18 +598,19 @@ single-bonded to the chlorine atom and double-bonded to the oxygen atom
 nitrogen has one lone pair, chlorine three, and oxygen two
 {{< /selfcheck >}}
 
-{{< selfcheck question="Write Lewis structures for the following: SiCl₄." hint="Follow the step-by-step procedure in the Writing Lewis Structures with the Octet Rule subsection, starting with the total number of valence electrons." >}}
+{{< selfcheck question="Write the Lewis structure for the following: SiCl₄." hint="Follow the step-by-step procedure in the Writing Lewis Structures with the Octet Rule subsection, starting with the total number of valence electrons." >}}
 {{< mediafigure src="chemistry/CNX_Chem_07_03_Question7e_img" kind="diagram" alt="A Lewis structure: a silicon atom single-bonded to four chlorine atoms, each with three lone pairs." >}}
 {{< /mediafigure >}}
 
-Silicon is the central atom, single-bonded to four chlorine atoms, each with three lone pairs.
+Silicon is the central atom, single-bonded to four chlorine atoms, each with three lone pairs. Silicon has no lone pair.
 ===CHECKS===
 silicon is the central atom
 single-bonded to four chlorine atoms
 each with three lone pairs
+silicon has no lone pair
 {{< /selfcheck >}}
 
-{{< selfcheck question="Write Lewis structures for the following: H₃O⁺." hint="Follow the step-by-step procedure in the Writing Lewis Structures with the Octet Rule subsection, starting with the total number of valence electrons." >}}
+{{< selfcheck question="Write the Lewis structure for the following: H₃O⁺." hint="Follow the step-by-step procedure in the Writing Lewis Structures with the Octet Rule subsection, starting with the total number of valence electrons." >}}
 {{< mediafigure src="chemistry/CNX_Chem_07_03_Question7f_img" kind="diagram" alt="A Lewis structure in square brackets with a plus sign at the upper right: an oxygen atom with one lone pair, single-bonded to three hydrogen atoms." >}}
 {{< /mediafigure >}}
 
@@ -606,7 +621,7 @@ has one lone pair
 the structure is in square brackets with the charge + outside
 {{< /selfcheck >}}
 
-{{< selfcheck question="Write Lewis structures for the following: NH₄⁺." hint="Follow the step-by-step procedure in the Writing Lewis Structures with the Octet Rule subsection, starting with the total number of valence electrons." >}}
+{{< selfcheck question="Write the Lewis structure for the following: NH₄⁺." hint="Follow the step-by-step procedure in the Writing Lewis Structures with the Octet Rule subsection, starting with the total number of valence electrons." >}}
 {{< mediafigure src="chemistry/CNX_Chem_07_03_Question7g_img" kind="diagram" alt="A Lewis structure in square brackets with a plus sign at the upper right: a nitrogen atom single-bonded to four hydrogen atoms, with no lone pairs." >}}
 {{< /mediafigure >}}
 
@@ -617,39 +632,42 @@ has no lone pairs
 the structure is in square brackets with the charge + outside
 {{< /selfcheck >}}
 
-{{< selfcheck question="Write Lewis structures for the following: BF₄⁻." hint="Follow the step-by-step procedure in the Writing Lewis Structures with the Octet Rule subsection, starting with the total number of valence electrons." >}}
+{{< selfcheck question="Write the Lewis structure for the following: BF₄⁻." hint="Follow the step-by-step procedure in the Writing Lewis Structures with the Octet Rule subsection, starting with the total number of valence electrons." >}}
 {{< mediafigure src="chemistry/CNX_Chem_07_03_Question7h_img" kind="diagram" alt="A Lewis structure in square brackets with a minus sign at the upper right: a boron atom single-bonded to four fluorine atoms, each with three lone pairs." >}}
 {{< /mediafigure >}}
 
-Boron is the central atom, single-bonded to four fluorine atoms, each with three lone pairs. The structure is in square brackets with the charge − outside.
+Boron is the central atom, single-bonded to four fluorine atoms, each with three lone pairs, and boron has no lone pair. The structure is in square brackets with the charge − outside.
 ===CHECKS===
 boron is the central atom, single-bonded to four fluorine atoms
 each with three lone pairs
+boron has no lone pair
 the structure is in square brackets with the charge − outside
 {{< /selfcheck >}}
 
-{{< selfcheck question="Write Lewis structures for the following: HCCH." hint="Follow the step-by-step procedure in the Writing Lewis Structures with the Octet Rule subsection, starting with the total number of valence electrons." >}}
+{{< selfcheck question="Write the Lewis structure for the following: HCCH." hint="Follow the step-by-step procedure in the Writing Lewis Structures with the Octet Rule subsection, starting with the total number of valence electrons." >}}
 {{< mediafigure src="chemistry/CNX_Chem_07_03_Question7i_img" kind="diagram" alt="A Lewis structure: two carbon atoms triple-bonded to each other, each single-bonded to one hydrogen atom, with no lone pairs." >}}
 {{< /mediafigure >}}
 
-The two carbon atoms are triple-bonded to each other, and each is single-bonded to one hydrogen atom.
+The two carbon atoms are triple-bonded to each other, and each is single-bonded to one hydrogen atom. Neither carbon atom has a lone pair.
 ===CHECKS===
 the two carbon atoms are triple-bonded to each other
 each is single-bonded to one hydrogen atom
+neither carbon atom has a lone pair
 {{< /selfcheck >}}
 
-{{< selfcheck question="Write Lewis structures for the following: ClCN." hint="Follow the step-by-step procedure in the Writing Lewis Structures with the Octet Rule subsection, starting with the total number of valence electrons." >}}
+{{< selfcheck question="Write the Lewis structure for the following: ClCN." hint="Follow the step-by-step procedure in the Writing Lewis Structures with the Octet Rule subsection, starting with the total number of valence electrons." >}}
 {{< mediafigure src="chemistry/CNX_Chem_07_03_Question7j_img" kind="diagram" alt="A Lewis structure: a carbon atom single-bonded to a chlorine atom with three lone pairs and triple-bonded to a nitrogen atom with one lone pair." >}}
 {{< /mediafigure >}}
 
-Carbon is the central atom, single-bonded to the chlorine atom, which has three lone pairs, and triple-bonded to the nitrogen atom, which has one lone pair.
+Carbon is the central atom, single-bonded to the chlorine atom, which has three lone pairs, and triple-bonded to the nitrogen atom, which has one lone pair. Carbon has no lone pair.
 ===CHECKS===
 carbon is the central atom
 single-bonded to the chlorine atom, which has three lone pairs
 triple-bonded to the nitrogen atom, which has one lone pair
+carbon has no lone pair
 {{< /selfcheck >}}
 
-{{< selfcheck question="Write Lewis structures for the following: C₂²⁺." hint="Follow the step-by-step procedure in the Writing Lewis Structures with the Octet Rule subsection, starting with the total number of valence electrons." >}}
+{{< selfcheck question="Write the Lewis structure for the following: C₂²⁺." hint="Follow the step-by-step procedure in the Writing Lewis Structures with the Octet Rule subsection, starting with the total number of valence electrons." >}}
 {{< mediafigure src="chemistry/CNX_Chem_07_03_Question7k_img" kind="diagram" alt="A Lewis structure: two carbon atoms triple-bonded to each other, with no lone pairs, and the charge 2+ at the upper right of the second carbon atom." >}}
 {{< /mediafigure >}}
 
@@ -660,20 +678,21 @@ have no lone pairs
 the charge 2+ is written at the upper right
 {{< /selfcheck >}}
 
-{{< selfcheck question="Write Lewis structures for the following: SeF₆." hint="Count the valence electrons first, then follow the Hypervalent Molecules subsection and the example on octet rule violations after it." >}}
+{{< selfcheck question="Write the Lewis structure for the following: SeF₆." hint="Count the valence electrons first, then follow the Hypervalent Molecules subsection and the example on octet rule violations after it." >}}
 SeF₆:
 
 {{< mediafigure src="chemistry/CNX_Chem_07_03_Question9a_img" kind="diagram" alt="A Lewis structure: a selenium atom single-bonded to six fluorine atoms, each with three lone pairs; the selenium atom has no lone pair." >}}
 {{< /mediafigure >}}
 
-Selenium is the central atom, single-bonded to six fluorine atoms, each with three lone pairs.
+Selenium is the central atom, single-bonded to six fluorine atoms, each with three lone pairs. Selenium has no lone pair.
 ===CHECKS===
 selenium is the central atom
 single-bonded to six fluorine atoms
 each with three lone pairs
+selenium has no lone pair
 {{< /selfcheck >}}
 
-{{< selfcheck question="Write Lewis structures for the following: XeF₄." hint="Count the valence electrons first, then follow the Hypervalent Molecules subsection and the example on octet rule violations after it." >}}
+{{< selfcheck question="Write the Lewis structure for the following: XeF₄." hint="Count the valence electrons first, then follow the example on octet rule violations at the end of the Hypervalent Molecules subsection, which draws XeF₂ and XeF₆." >}}
 XeF₄:
 
 {{< mediafigure src="chemistry/CNX_Chem_07_03_Question9b_img" kind="diagram" alt="A Lewis structure: a xenon atom with two lone pairs, single-bonded to four fluorine atoms, each with three lone pairs." >}}
@@ -686,7 +705,7 @@ single-bonded to four fluorine atoms, each with three lone pairs
 xenon has two lone pairs
 {{< /selfcheck >}}
 
-{{< selfcheck question="Write Lewis structures for the following: SeCl₃⁺." hint="Follow the step-by-step procedure in the Writing Lewis Structures with the Octet Rule subsection, starting with the total number of valence electrons." >}}
+{{< selfcheck question="Write the Lewis structure for the following: SeCl₃⁺." hint="Follow the step-by-step procedure in the Writing Lewis Structures with the Octet Rule subsection, starting with the total number of valence electrons." >}}
 SeCl₃⁺:
 
 {{< mediafigure src="chemistry/CNX_Chem_07_03_Question9c_img" kind="diagram" alt="A Lewis structure in square brackets with a plus sign at the upper right: a selenium atom with one lone pair, single-bonded to three chlorine atoms, each with three lone pairs." >}}
@@ -700,7 +719,7 @@ selenium has one lone pair
 the structure is in square brackets with the charge + outside
 {{< /selfcheck >}}
 
-{{< selfcheck question="Write Lewis structures for the following: Cl₂BBCl₂ (contains a B–B bond)." hint="Count the valence electrons first, then compare the boron atom of BF₃ in the Electron-deficient Molecules subsection." >}}
+{{< selfcheck question="Write the Lewis structure for the following: Cl₂BBCl₂ (contains a B–B bond)." hint="Count the valence electrons first, then compare the boron atom of BF₃ in the Electron-deficient Molecules subsection." >}}
 Cl₂BBCl₂:
 
 {{< mediafigure src="chemistry/CNX_Chem_07_03_Question9d_img" kind="diagram" alt="A Lewis structure: two boron atoms single-bonded to each other, each single-bonded to two chlorine atoms, each chlorine atom with three lone pairs; neither boron atom has a lone pair." >}}
@@ -728,23 +747,25 @@ the other six are located on the Cl atom as lone pairs of electrons
 {{< mediafigure src="chemistry/CNX_Chem_07_03_Question18_img" kind="diagram" alt="Two equations. Top: 2 methanol, a carbon atom single-bonded to three hydrogen atoms and to an O–H oxygen with two lone pairs, plus 3 O₂, each oxygen with two lone pairs, give 2 CO₂, each oxygen with two lone pairs, plus 4 H₂O, oxygen with two lone pairs. Bottom: ethanol, with no coefficient, two carbon atoms single-bonded to each other, the first single-bonded to three hydrogen atoms and the second to two hydrogen atoms and to an oxygen atom that has two lone pairs and is single-bonded to a hydrogen atom, plus 3 oxygen molecules give 2 carbon dioxide plus 3 water, drawn as above." >}}
 {{< /mediafigure >}}
 
-In the first equation, two methanol molecules react with three oxygen molecules to give two carbon dioxide molecules and four water molecules. In the second, one ethanol molecule reacts with three oxygen molecules to give two carbon dioxide molecules and three water molecules.
+In the first equation, two methanol molecules react with three oxygen molecules to give two carbon dioxide molecules and four water molecules. In the second, one ethanol molecule reacts with three oxygen molecules to give two carbon dioxide molecules and three water molecules. In the Lewis structures, the two oxygen atoms of each oxygen molecule are double-bonded to each other and each has two lone pairs; the carbon atom of each carbon dioxide molecule is double-bonded to two oxygen atoms, each with two lone pairs; and the oxygen atom of each water and alcohol molecule has two lone pairs.
 ===CHECKS===
-two methanol molecules react with three oxygen molecules
-to give two carbon dioxide molecules and four water molecules
-one ethanol molecule reacts with three oxygen molecules
-to give two carbon dioxide molecules and three water molecules
+two methanol molecules react with three oxygen molecules to give two carbon dioxide molecules and four water molecules
+one ethanol molecule reacts with three oxygen molecules to give two carbon dioxide molecules and three water molecules
+the two oxygen atoms of each oxygen molecule are double-bonded to each other and each has two lone pairs
+the carbon atom of each carbon dioxide molecule is double-bonded to two oxygen atoms, each with two lone pairs
+the oxygen atom of each water and alcohol molecule has two lone pairs
 {{< /selfcheck >}}
 
 {{< selfcheck question="Carbon tetrachloride was formerly used in fire extinguishers for electrical fires. It is no longer used for this purpose because of the formation of the toxic gas phosgene, Cl₂CO. Write the Lewis structures for carbon tetrachloride and phosgene." hint="Follow the step-by-step procedure in the Writing Lewis Structures with the Octet Rule subsection, starting with the total number of valence electrons." >}}
 {{< mediafigure src="chemistry/CNX_Chem_07_03_Carbtet_img" kind="diagram" alt="Two Lewis structures. Left: a carbon atom single-bonded to four chlorine atoms, each with three lone pairs. Right: a carbon atom single-bonded to two chlorine atoms, each with three lone pairs, and double-bonded to an oxygen atom with two lone pairs. Neither carbon atom has a lone pair." >}}
 {{< /mediafigure >}}
 
-In carbon tetrachloride, carbon is single-bonded to four chlorine atoms, each with three lone pairs. In phosgene, carbon is single-bonded to two chlorine atoms, each with three lone pairs, and double-bonded to an oxygen atom with two lone pairs.
+In carbon tetrachloride, carbon is single-bonded to four chlorine atoms, each with three lone pairs. In phosgene, carbon is single-bonded to two chlorine atoms, each with three lone pairs, and double-bonded to an oxygen atom with two lone pairs. Neither carbon atom has a lone pair.
 ===CHECKS===
 in carbon tetrachloride, carbon is single-bonded to four chlorine atoms, each with three lone pairs
-in phosgene, carbon is single-bonded to two chlorine atoms
+in phosgene, carbon is single-bonded to two chlorine atoms, each with three lone pairs
 double-bonded to an oxygen atom with two lone pairs
+neither carbon atom has a lone pair
 {{< /selfcheck >}}
 
 {{< mediafigure src="chemistry/CNX_Chem_07_03_Impbioa_img" kind="diagram" alt="A skeleton with single bonds and no lone pairs: a nitrogen atom single-bonded to two hydrogen atoms and to a carbon atom; that carbon atom single-bonded to a hydrogen atom, to a carbon atom that is single-bonded to two hydrogen atoms and to an oxygen atom above it with a hydrogen atom, and to a carbon atom single-bonded to two oxygen atoms, the upper one with no hydrogen atom and the right one single-bonded to a hydrogen atom." >}}
@@ -841,10 +862,10 @@ six electrons are shared in a triple bond
 {{< textin
   question="A molecule that contains an odd number of electrons is called a ________."
   answer="free radical"
-  accept="odd-electron molecule"
+  accept="odd-electron molecule|radical"
   hint="Look at the paragraph that opens the first of the three subsections on exceptions to the octet rule."
 >}}
 
 ---
 
-<small>This section is adapted from [Chemistry 2e, Section 7.3: Lewis Symbols and Structures](https://openstax.org/books/chemistry-2e/pages/7-3-lewis-symbols-and-structures) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the seventy-three figures used re-encoded as WebP, the photograph of Richard Smalley marked as a photo and the other seventy-two as diagrams; every figure’s alt text written from the image (among other differences, the source alts call calcium’s two single dots a lone pair, draw a double bond in the skeleton of CHO₂⁻ that the drawing does not show, give the nitrogen and oxygen of NO⁺ three lone pairs each where the drawing shows two, give each fluorine atom of AsF₃ one lone pair where the drawing shows three, call the sulfide anion a sulfur anion, and describe the combustion of methanol with coefficients the drawing does not print), with an extended description added to the figure of ionic compound formation; the table of third-period Lewis symbols, printed as an image, transcribed as a Markdown table of its atoms and electron configurations, with its column of Lewis symbols kept after it as a crop of the image and the sentence that introduces it naming the table and the figure; references to numbered figures replaced by describing phrases, and the reference to the buckminsterfullerene figure of the chapter opener linked to the chapter’s page; the Fullerene Chemistry box rendered as a callout with its photograph inside it; the four valence-electron sums set as display math and the worked examples’ arithmetic as inline math, with the procedure and the steps of the worked examples set as numbered lists, each figure inside its step; the worked example on octet rule violations made to say the procedure has five steps where the source says six, with a Source note; two source typos corrected: a stray comma before the period after “prehistoric times” in the Fullerene Chemistry box, and “valence electron/atom” for oxygen in the NO⁺ sum; the end-of-section exercises adapted into the interactive Practice block, with the 11 exercises the source keys carried as 39 self-checks, one per lettered part, each lead-in restated in the singular for its part, the biologically important molecules exercise restated for one molecule with its skeleton shown in the figure above its item, and the 42 g/mol exercise, whose source answer is one of two structures the data fit, given an added opening sentence saying what a correct answer contains and the added label “Sample answer:” before the source’s answer, whole, its rubric drawn from that sentence; each drawing answer shown as the source’s figure in the model answer, after any label the source prints, followed by one or two sentences saying what the drawing shows, the rubric checkpoints taken from those sentences; for the three ions the source answers “no electrons”, a sentence added saying the ion has lost its valence electrons; the model answers of the ionic-compound exercise show only the source’s drawings of the ions, though its stem also asks for the Lewis symbols of the atoms — a source defect, kept as printed; capitals and periods added to the model answers; the 10 exercises the source prints no answer for are omitted; the two Check Your Learning items carried as self-checks in the same form; two filler text-recall items added after the keyed items of their groups: a cloze on the body sentence that opens the Lewis Symbols subsection, since every keyed item of the Lewis-symbols group is a self-check and the group needs an auto-graded item, and a recall of the key term for a molecule with an odd number of electrons, since no keyed exercise or Check Your Learning asks about odd-electron molecules; the source alts of the third-period table, which leaves out sodium’s configuration, and of the selenium trichloride cation, which leaves out its positive charge; and the Lewis-structures group divided by two sub-headings where its run changes from bare formulas to Lewis structures in context and the kinds of bonds.</small>
+<small>This section is adapted from [Chemistry 2e, Section 7.3: Lewis Symbols and Structures](https://openstax.org/books/chemistry-2e/pages/7-3-lewis-symbols-and-structures) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the seventy-three figures used re-encoded as WebP, the photograph of Richard Smalley marked as a photo and the other seventy-two as diagrams; every figure’s alt text written from the image (among other differences, the source alts call calcium’s two single dots a lone pair, draw a double bond in the skeleton of CHO₂⁻ that the drawing does not show, give the nitrogen and oxygen of NO⁺ three lone pairs each where the drawing shows two, give each fluorine atom of AsF₃ one lone pair where the drawing shows three, call the sulfide anion a sulfur anion, describe the combustion of methanol with coefficients the drawing does not print, leave out sodium’s configuration in the third-period table, and leave out the positive charge of the selenium trichloride cation), with an extended description added to the figure of ionic compound formation; the table of third-period Lewis symbols, printed as an image, transcribed as a Markdown table of its atoms and electron configurations, with its column of Lewis symbols kept after it as a crop of the image and the sentence that introduces it naming the table and the figure; references to numbered figures replaced by describing phrases, and the reference to the buckminsterfullerene figure of the chapter opener linked to the chapter’s page; the Fullerene Chemistry box rendered as a callout with its photograph inside it; the four valence-electron sums set as display math and the worked examples’ arithmetic as inline math, with the procedure and the steps of the worked examples set as numbered lists, each figure inside its step; the worked example on octet rule violations made to say the procedure has five steps where the source says six, with a Source note; two source typos corrected: a stray comma before the period after “prehistoric times” in the Fullerene Chemistry box, and “valence electron/atom” for oxygen in the NO⁺ sum; the end-of-section exercises adapted into the interactive Practice block, with the 11 exercises the source keys carried as 39 self-checks, one per lettered part, each lead-in restated in the singular for its part, the biologically important molecules exercise restated for one molecule with its skeleton shown in the figure above its item, and the 42 g/mol exercise, whose source answer is one of two structures the data fit, given an added opening sentence saying what a correct answer contains and the added label “Sample answer:” before the source’s answer, whole, its rubric drawn from that sentence; each drawing answer shown as the source’s figure in the model answer, after any label the source prints, followed by one to three sentences saying what the drawing shows, the rubric checkpoints taken from those sentences; for the three ions the source answers “no electrons”, a sentence added saying the ion has lost its valence electrons; the model answers of the ionic-compound exercise, whose source answers show only the ions though its stem also asks for the Lewis symbols of the atoms, completed with a sentence on the two atoms, with a Source note after the last part; capitals and periods added to the model answers; the 10 exercises the source prints no answer for are omitted; the two Check Your Learning items carried as self-checks in the same form; two filler text-recall items added after the keyed items of their groups: a cloze on the body sentence that opens the Lewis Symbols subsection, since every keyed item of the Lewis-symbols group is a self-check and the group needs an auto-graded item, and a recall of the key term for a molecule with an odd number of electrons, since no keyed exercise or Check Your Learning asks about odd-electron molecules; and the Lewis-structures group divided by two sub-headings where its run changes from bare formulas to Lewis structures in context and the kinds of bonds.</small>

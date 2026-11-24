@@ -873,14 +873,17 @@ test('a formula field says when every count is a multiple of the answer’s', as
 // typed (s), as 4.2's own solubility table has it, against the source's
 // (aq), was told only "now check the state symbols, or leave them out" —
 // which read as a wrong equation. The field now says the rest is right and
-// that the states may be left out, and takes the answer without them.
+// that the states may be left out, and takes the answer without them. Since
+// November 24, 2026 the key leaves Ca(OH)₂'s state open (erratum 3434), so
+// (s) there is graded correct (the last answer below types it, with the
+// other states left out), and the differing state is hydrogen's, typed (aq).
 test('an equation field says a state symbol is optional, and says so again when one differs', async ({ page }) => {
   await gotoBuiltPage(
     page,
     '/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/02-classifying-chemical-reactions/',
   );
 
-  const card = page.locator('text-in[data-answer="Ca(s) + 2H₂O(l) ⟶ Ca(OH)₂(aq) + H₂(g)"]');
+  const card = page.locator('text-in[data-answer="Ca(s) + 2H₂O(l) ⟶ Ca(OH)₂ + H₂(g)"]');
   await expect(card).toHaveCount(1);
   await waitForUpgrade(card, (el) => (
     Boolean(customElements.get('text-in')) && Boolean(el.querySelector('.ap-textin-guide'))
@@ -890,7 +893,7 @@ test('an equation field says a state symbol is optional, and says so again when 
 
   const field = card.locator('.ap-textin-field');
   const feedback = card.locator('.ap-textin-feedback');
-  await field.fill('Ca(s) + 2H2O(l) -> Ca(OH)2(s) + H2(g)');
+  await field.fill('Ca(s) + 2H2O(l) -> Ca(OH)2(s) + H2(aq)');
   await field.press('Enter');
   await expect
     .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
@@ -898,7 +901,7 @@ test('an equation field says a state symbol is optional, and says so again when 
   await expect(feedback).toHaveText('The substances and coefficients are right. A state symbol you typed differs from the answer’s: check each one, or leave them out — state symbols are optional.');
   expect(await field.evaluate((el) => el.readOnly)).toBe(false);
 
-  await field.fill('Ca + 2H2O -> Ca(OH)2 + H2');
+  await field.fill('Ca + 2H2O -> Ca(OH)2(s) + H2');
   await field.press('Enter');
   await expect
     .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })

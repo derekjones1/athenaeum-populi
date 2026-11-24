@@ -139,7 +139,40 @@ export const CONFIGURATION_DISTRIBUTION = 'That has the right number of electron
 export const CONFIGURATION_COUNT = 'That configuration does not hold the number of electrons this atom or ion has.';
 
 /** @returns {{ status: 'empty'|'correct'|'form'|'incorrect', message?: string }} */
+/*
+ * The source's own answer shape labels the configuration with its atom or
+ * ion: "K⁺: [Ar]", "Mg²⁺: [Ne]" (Chemistry 2e 7.1). A label is graded, never
+ * dropped unread (audit G9, round 2, November 24, 2026: `K: [Ar]` — the
+ * neutral atom given the ion's configuration, what the item tests — was
+ * graded correct). Against a key with a label, the typed label must be the
+ * key's, charge included, or the response is incorrect. Against a key with
+ * none (every key of the book today), a typed label is `form`, told to type
+ * the configuration alone — whatever follows it, so the verdict says nothing
+ * about whether the configuration is right.
+ */
+const LABEL = /^\s*([A-Z][a-z]?)\s*(\^?\s*\{?\s*(?:\d*\s*[+\-−–⁺⁻]|[+\-−–⁺⁻]\s*\d*|[⁰¹²³⁴-⁹]*[⁺⁻])\s*\}?)?\s*:\s*/;
+export const CONFIGURATION_LABEL = 'Type the configuration alone, without the symbol of the atom or ion before it.';
+/** A label as `{ symbol, charge }` (charge a signed number), or null. */
+function readLabel(text) {
+  const match = LABEL.exec(String(text ?? ''));
+  if (!match) return null;
+  const raw = (match[2] ?? '').replace(/[\s^{}]/g, '').replace(/[−–⁻]/g, '-').replace(/⁺/g, '+')
+    .replace(/[⁰¹²³⁴-⁹]/g, (c) => String(SUPERSCRIPTS.indexOf(c)));
+  const digits = Number(raw.replace(/[+-]/g, '') || (raw ? 1 : 0));
+  return { symbol: match[1], charge: raw.includes('-') ? -digits : digits, length: match[0].length };
+}
+
 export function checkConfiguration(input, answer) {
+  const typedLabel = readLabel(input);
+  const keyLabel = readLabel(answer);
+  if (typedLabel && !keyLabel) {
+    return String(input).slice(typedLabel.length).trim() ? { status: 'form', message: CONFIGURATION_LABEL } : { status: 'incorrect', message: CONFIGURATION_UNREAD };
+  }
+  if (keyLabel) {
+    if (typedLabel && (typedLabel.symbol !== keyLabel.symbol || typedLabel.charge !== keyLabel.charge)) return { status: 'incorrect' };
+    answer = String(answer).slice(keyLabel.length);
+    if (typedLabel) input = String(input).slice(typedLabel.length);
+  }
   if (!String(input ?? '').trim()) return { status: 'empty' };
   const key = readConfiguration(answer);
   const keyElectrons = key && expanded(key);
@@ -175,6 +208,8 @@ const CORE_ALONE = /^\s*\[\s*(?:He|Ne|Ar|Kr|Xe|Rn)\s*\]\s*$/i;
 
 /** What the field shows it has read, or ''. */
 export function previewConfiguration(input) {
+  const label = readLabel(input);
+  if (label) input = String(input).slice(label.length);
   const config = readConfiguration(input);
   return config && (config.subshells.length || CORE_ALONE.test(String(input))) ? prettyConfiguration(config) : '';
 }

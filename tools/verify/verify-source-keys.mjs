@@ -1369,7 +1369,7 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     exercise: 'fs-idm165679168(b)',
     kind: 'solution',
     erratum: 3182,
-    reason: 'the source solution says ψ for an atomic orbital and ψ for a molecular orbital "are quantum-mechanical constructs that represent the probability of finding the electron"; ψ is the wave function and its square gives the probability, as the module\'s own text names the molecular orbital by Ψ², so the model answer prints "constructs whose squares represent the probability"',
+    reason: 'the source solution says ψ for an atomic orbital and ψ for a molecular orbital "are quantum-mechanical constructs that represent the probability of finding the electron"; ψ is the wave function and its square gives the probability, as the module\'s own text names the molecular orbital by Ψ², so the model answer prints "constructs whose squares represent the probability"; since November 24, 2026 it also drops "only one electron at a time", which the answer gives as a difference though ψ for a molecular orbital also describes one electron (IUPAC Gold Book), printing "describes the behavior of an electron based on a single atom" (erratum 3466)',
   },
   {
     page: 'content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/04-molecular-orbital-theory.md',
@@ -1537,7 +1537,7 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     exercise: 'fs-idm183311984',
     kind: 'solution',
     erratum: 3288,
-    reason: 'the answer ends "The lower the temperature, the less the intermolecular forces are overcome, and so the less viscous the liquid"; a colder liquid is more viscous, as the answer\'s own first half says of a hotter one, so the model answer prints "the more viscous the liquid"',
+    reason: 'the answer ends "The lower the temperature, the less the intermolecular forces are overcome, and so the less viscous the liquid"; a colder liquid is more viscous, as the answer\'s own first half says of a hotter one, so the model answer prints "the more viscous the liquid"; since November 24, 2026 the model answer also opens with a sentence on the size, shape, and hydrogen bonding of molasses\' sugars, which the question asks about and the source\'s answer leaves out (erratum 3483)',
   },
   {
     page: 'content/physical-sciences/chemistry/10-liquids-and-solids/02-properties-of-liquids.md',
@@ -1629,6 +1629,113 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     kind: 'solution',
     erratum: 3300,
     reason: 'the answer prints "can be occupied be a cation" and "the formula for thallium is TlI"; the model answer prints "by a cation" and "the formula for thallium iodide is TlI"',
+  },
+  // The fix pass of November 24, 2026 (errata 3402–3497, and amendments of
+  // 3069, 3159, and 3174).
+  {
+    page: 'content/physical-sciences/chemistry/01-essential-ideas/02-phases-and-classification-of-matter.md',
+    exercise: 'fs-idm11351120',
+    kind: 'solution',
+    erratum: 3404,
+    reason: 'the sample answer lists "salt, sodium chloride" as two of Gatorade\'s ingredients; table salt is sodium chloride, and the drink\'s label has sodium citrate in that place, so the model answer prints "sodium citrate"',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/02-atoms-molecules-and-ions/01-early-ideas-in-atomic-theory.md',
+    exercise: 'fs-idp28025040#check',
+    kind: 'solution',
+    erratum: 3412,
+    reason: 'the Check Your Learning answer divides the two mass ratios after rounding them, 4.77 ÷ 5.96 = 0.800; carried, 4.774 ÷ 5.961 = 0.801, so the model answer prints the ratios with their digits carried and 0.801 ≈ 4/5',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/02-atoms-molecules-and-ions/02-evolution-of-atomic-theory.md',
+    exercise: 'fs-idm61727056(d)',
+    kind: 'solution',
+    erratum: 3416,
+    reason: 'the answer to part (d) says only that the paths match the predictions, though the part asks for a generalization; the model answer adds it from the source\'s own answers to (b) and (c): the more protons, the more and the larger the deflections, and at higher energy the smaller',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/04-reaction-yields.md',
+    exercise: 'fs-idm19471568',
+    kind: 'solution',
+    erratum: 3437,
+    reason: 'the question asks whether to agree to buy a trillion gold atoms for $5 and why; the source answer gives only the reason, so the model answer opens with "No." and the mass of the atoms the reason rests on, "only about 0.33 nanogram (3.3 × 10⁻¹⁰ g)"',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/05-thermochemistry/01-energy-basics.md',
+    exercise: 'fs-idp23764656',
+    kind: 'solution',
+    erratum: 3439,
+    reason: 'the answer lists the assumptions but never says which way they move the result, which the question asks; the model answer adds "The last two assumptions both make the estimate low, a negative error" and why (its energy is erratum 3049\'s 7.5 kWh)',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md',
+    exercise: 'fs-idp107963312#check',
+    kind: 'key',
+    erratum: 3069,
+    reason: 'the Check Your Learning answer prints "ΔH = −338 kJ" for iron and chlorine forming FeCl₂; chlorine is the limiting reactant (0.025388 mol against the iron\'s 0.025428), and 8.60 kJ ÷ 0.025388 mol gives −339 kJ/mol, where −338 divides by the moles of the reactant in excess: a correction, not a register row, so the fill-in keys −339',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/05-thermochemistry/03-enthalpy.md',
+    exercise: 'fs-idp181957264',
+    kind: 'solution',
+    erratum: 3443,
+    reason: 'the question asks for the choice of rocket fuel on the basis of the heat released by 1.00 g of each substance; the answer names B₂H₆ without those heats, so the model answer adds them from Appendix G: B₂H₆ "releases about 73.6 kJ per gram", CH₄ 50.0, N₂H₄ 16.7',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/03-lewis-symbols-and-structures.md',
+    exercise: 'fs-idm49800144',
+    kind: 'solution',
+    erratum: 3159,
+    reason: 'the stem asks for the Lewis symbols of the ions and of the atoms they come from; each source answer draws the ions only, so each model answer adds a sentence on the two atoms\' Lewis symbols',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/06-molecular-structure-and-polarity.md',
+    exercise: 'fs-idp54012352#check',
+    kind: 'solution',
+    erratum: 3459,
+    reason: 'the Check Your Learning asks for the electron-group geometry, molecular structure, and bond angles, and the sample answer gives no bond angle; the model answer adds "The angles between its neighboring bonds are about 90°."',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/06-molecular-structure-and-polarity.md',
+    exercise: 'fs-idp87226080',
+    kind: 'solution',
+    erratum: 3174,
+    reason: 'the answer says "All of these molecules and ions contain polar bonds", where the module\'s table of electronegativities gives P and H the same value (2.1), so P–H is not polar by the book\'s data; the model answer is corrected to agree with the table',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/07-chemical-bonding-and-molecular-geometry/06-molecular-structure-and-polarity.md',
+    exercise: 'fs-idp56829344(c)',
+    kind: 'solution',
+    erratum: 3460,
+    reason: 'the answer to the ozone and ammonia simulation exercise answers only its last part; the model answer adds sentences on ozone\'s bond and molecular dipoles and on the direction of ammonia\'s bond dipoles before the source\'s sentence, kept whole',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/08-advanced-theories-of-covalent-bonding/04-molecular-orbital-theory.md',
+    exercise: 'fs-idm133690944',
+    kind: 'solution',
+    erratum: 3467,
+    reason: 'the exercise asks why N₂²⁺ is diamagnetic and O₂⁴⁺ paramagnetic; the answer gives the filling order only, so the model answer adds that all eight valence electrons of N₂²⁺ are paired and that the last two of O₂⁴⁺ go unpaired into the two π orbitals',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/09-gases/03-stoichiometry-of-gaseous-substances-mixtures-and-reactions.md',
+    exercise: 'fs-idp39473616(b)',
+    kind: 'key',
+    erratum: 3475,
+    reason: 'the exercise prints CCl₂F₂ + 4H₂ ⟶ CH₂F₂ + 2HCl, which has eight hydrogen atoms on the left and four on the right, and keys 3.72 × 10³ L of hydrogen from it; balanced with 2H₂, 1.000 × 10⁶ g of CCl₂F₂ needs 1.86 × 10³ L at 35 °C and 225 atm, so the page prints the balanced equation and the fill-in keys 1.86 × 10³',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/09-gases/06-non-ideal-gas-behavior.md',
+    exercise: 'fs-idm89275552(d)',
+    kind: 'solution',
+    erratum: 3479,
+    reason: 'part (d) asks first what intermolecular attractions do to Z, and the answer never says; the model answer begins "Intermolecular attractions lower Z: they pull the molecules a little closer together, which makes the gas more compressible than an ideal gas."',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/04-stoichiometry-of-chemical-reactions/02-classifying-chemical-reactions.md',
+    exercise: 'fs-idp105919968(a)',
+    kind: 'solution',
+    erratum: 3498,
+    reason: 'the question asks for aqueous ions and the source answer writes HClO₄(aq) whole; the model answer says what a correct answer contains, written whole or as ions, then gives the source equation as "Sample answer:"',
   },
 ]);
 
@@ -2113,8 +2220,15 @@ const OPEN_ANSWER_RE = /^(?:the )?(?:answers?|responses?) (?:is open|are open|wi
 /** A solution that says, anywhere in it, that its answer is one of several a learner could give. */
 const VARYING_EXERCISE_RE = /\b(?:answers?|responses?) (?:may|will) vary\b|\bother answers\b[^.]*\bpossible\b/i;
 
-/** A question that asks for one of many correct answers by its own words: "Write a set of quantum numbers for …". */
-const ASKS_FOR_A_SET_RE = /\bwrite a set of\b/i;
+/**
+ * A question that asks for one of many correct answers by its own words:
+ * "Write a set of quantum numbers for …"; "Identify a molecule with trigonal
+ * bipyramidal molecular structure." (7.6); "… there may be more than one
+ * correct answer …" (4.2); "Explain how you could experimentally determine
+ * …" (1.1: a method, of which the source gives one). Added November 24,
+ * 2026 with the fix pass that put those three in the sample-answer form.
+ */
+const ASKS_FOR_A_SET_RE = /\bwrite a set of\b|\bidentify an? (?:molecule|compound|substance|element|ion)\b|\bmore than one correct answer\b|\bexplain how you could\b/i;
 
 /** Whether a model answer carries a part's sample whole — its segment less any sentence that only says answers vary. */
 function sampleCarried(segment, model) {

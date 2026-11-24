@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { acceptedForms, checkText, closedForm, foldedForms, isOlderName, isPrefixName, matchesForm, normalizeText, numeralProblem, pluralFolds, singularFolds, gradeText, ARABIC_NUMERAL_MESSAGE, MISSING_NUMERAL_MESSAGE, OLDER_NAME_MESSAGE, PREFIX_NAME_MESSAGE } from './check-text.mjs';
+import { acceptedForms, checkText, closedForm, foldedForms, isOlderName, isPrefixName, matchesForm, normalizeText, numeralProblem, pluralFolds, singularFolds, gradeText, ARABIC_NUMERAL_MESSAGE, MISSING_NUMERAL_MESSAGE, OLDER_NAME_MESSAGE, PREFIX_NAME_MESSAGE, UNIT_SYMBOL_CASE_MESSAGE, UNNEEDED_NUMERAL_MESSAGE } from './check-text.mjs';
 import { CLASSICAL_NAMES, systematicName } from './older-names.mjs';
 import { ionicName } from './prefix-names.mjs';
 
@@ -303,6 +303,39 @@ test('a name keyed with a charge says when the numeral is missing, and when it i
   assert.equal(checkText('iron(2) chloride', 'iron(II) chloride'), 'incorrect');
   // Neither message gives the numeral or names the metal.
   for (const message of [MISSING_NUMERAL_MESSAGE, ARABIC_NUMERAL_MESSAGE]) assert.doesNotMatch(message, /iron|\(I|II\b|\b[2-8]\b/);
+});
+
+test('a metal of one charge named with that charge as a Roman numeral is form, said (audit G13, November 24, 2026)', () => {
+  for (const [typed, key] of [['aluminum(III) fluoride', 'aluminum fluoride'], ['aluminum (III) fluoride', 'aluminum fluoride'], ['Aluminium(III) fluoride', 'aluminum fluoride'],
+    ['cesium(I) chloride', 'cesium chloride'], ['barium(II) oxide', 'barium oxide'], ['potassium(I) sulfide', 'potassium sulfide'], ['beryllium(II) chloride', 'beryllium chloride']]) {
+    assert.deepEqual(gradeText(typed, key), { status: 'form', message: UNNEEDED_NUMERAL_MESSAGE }, typed);
+    assert.equal(checkText(typed, key), 'incorrect', 'no gate reads it as the key');
+  }
+  // A numeral that is not the metal's charge, or another compound, stays plainly wrong.
+  assert.deepEqual(gradeText('aluminum(II) fluoride', 'aluminum fluoride'), { status: 'incorrect' });
+  assert.deepEqual(gradeText('aluminum(III) chloride', 'aluminum fluoride'), { status: 'incorrect' });
+  // A metal of more than one charge is not this case.
+  assert.deepEqual(gradeText('iron(III) chloride', 'iron(II) chloride'), { status: 'incorrect' });
+  assert.doesNotMatch(UNNEEDED_NUMERAL_MESSAGE, /aluminum|\(I|II\b|\b[1-8]\b/);
+});
+
+test('a unit symbol keeps its case against a key that names the unit (audit G11, November 24, 2026; Chemistry 2e 1.4)', () => {
+  for (const [typed, key, accept] of [['M', 'meters', 'm|metres'], ['KG', 'kilograms', 'kg'], ['Kg', 'kilograms', 'kg']]) {
+    assert.equal(checkText(typed, key, { accept }), 'incorrect', typed);
+    assert.deepEqual(gradeText(typed, key, { accept }), { status: 'form', message: UNIT_SYMBOL_CASE_MESSAGE }, typed);
+  }
+  for (const [typed, key, accept] of [['m', 'meters', 'm|metres'], ['Meters', 'meters', 'm|metres'], ['kg', 'kilograms', 'kg'], ['KILOGRAMS', 'kilograms', 'kg']]) {
+    assert.equal(checkText(typed, key, { accept }), 'correct', typed);
+  }
+  // …with a plural s, and a square or cubic unit (round 2).
+  for (const [typed, key, accept] of [['Ms', 'meters', 'm|metres'], ['Kgs', 'kilograms', 'kg'], ['M3', 'cubic meters', 'm3|m^3'], ['M^3', 'cubic meters', 'm3|m^3']]) {
+    assert.equal(checkText(typed, key, { accept }), 'incorrect', typed);
+    assert.deepEqual(gradeText(typed, key, { accept }), { status: 'form', message: UNIT_SYMBOL_CASE_MESSAGE }, typed);
+  }
+  for (const [typed, key, accept] of [['kgs', 'kilograms', 'kg'], ['m3', 'cubic meters', 'm3|m^3'], ['m^3', 'cubic meters', 'm3|m^3']]) assert.equal(checkText(typed, key, { accept }), 'correct', typed);
+  // Only against a unit's name: another short member keeps the word grader's folding.
+  assert.equal(checkText('dna', 'deoxyribonucleic acid', { accept: 'DNA' }), 'correct');
+  assert.doesNotMatch(UNIT_SYMBOL_CASE_MESSAGE, /\b(?:m|kg|M|KG)\b/);
 });
 
 test('the increment sign a Mac keyboard types is read as the Greek capital delta', () => {

@@ -552,6 +552,10 @@
     "result": "agrees"
    }
   },
+  "0110f544e367b1ed": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm133690944, solution fs-idm119081680 whole | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
+  },
   "0111c6fa920c1591": {
    "verdict": "ok",
    "note": "glossary recall: Homo sapiens sapiens (fs-idp54635888) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -1553,6 +1557,10 @@
     "result": "agrees"
    }
   },
+  "02da57da4da3819e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp272460112 part (a), model answer the source’s | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
+  },
   "02da801688441791": {
    "verdict": "ok",
    "note": "author-written from § Isolation of Viruses + § Cultivation of Viruses: host-cell requirement, in vivo (embryonated egg / whole animal), in vitro (primary / continuous cell cultures), and the bacteriophage bacterial-lawn technique; source (CNXML fs-id1168328063119) prints no answer key. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -1687,6 +1695,10 @@
   },
   "030e1a07afb5149b": {
    "verdict": "ok"
+  },
+  "030e5fbe4a182c86": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm112612912 (omitted fs-idm28786800 restated verbatim); answers-will-vary form; guessed-mixture average corrected 20.18 -> 20.17 (ruling 2.3-1) | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "03119cecd7eb02b8": {
    "verdict": "ok",
@@ -2047,14 +2059,6 @@
   "0397908b14f233dd": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "0399fa193b0bda65": {
-   "verdict": "ok",
-   "note": "KC 3 7.6 § Example: Predicting Electron-pair Geometry and Molecular Structure: SF₄, m68742 | accept members added November 18, 2026: geometry twins and Sm³⁺ core form (Derek's rulings)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -2833,6 +2837,14 @@
    "verdict": "ok",
    "note": "source CT fs-id1358220; model answer = source solution verbatim; checks are its clauses"
   },
+  "052d4087293abeeb": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm11773136 part (b), J/°C; 453.59 x 0.897 = 406.87 -> 407, source 407 J/°C | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged | re-solved blind November 24, 2026 (fix pass after the deep audit; dependency-changed): the solver’s answer agrees with the key.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "053066168f142b8d": {
    "verdict": "ok",
    "note": "Review Question fs-idp44762736; source solution C 'increase muscle activity to generate heat' matches the keyed answer. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -3444,14 +3456,6 @@
    "note": "a_n=n!/n^2 for n=1..4, computed with BigInt-safe factorials: 1,1/2,2/3,3/2 (source Algebraic #43, printed solution matches). | carried Oct 12 2026 (Precalculus ch11–12 re-review): re-hashed by a form, stem, or hint edit, key unchanged; re-solved blind (fable-solver, 77/77)",
    "solved": {
     "by": "fable-solver",
-    "result": "agrees"
-   }
-  },
-  "066b9235bfe09391": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp67177072 — key tetrahedral; part: PH₂⁻. Enter the electron-pair geometry.",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -4080,10 +4084,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "07bb933bf0854be8": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm61727056 part (d) (simulation); model = source solution part (d) with \"(a), (b), and (c)\" written \"the three previous items\", and the stem's \"(a)/(b)/(c)\" written by position (parent ruling 7)"
   },
   "07bcf529cd82dfe4": {
    "verdict": "ok",
@@ -5356,10 +5356,6 @@
     "result": "agrees"
    }
   },
-  "0a0585dacccefa35": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm20127408 part (b) segment, ICI corrected to ICl (typo)"
-  },
   "0a06cb3d3234d606": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -5978,10 +5974,6 @@
     "result": "agrees"
    }
   },
-  "0b3cebf31f6a0e47": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm49800144 part (c)"
-  },
   "0b3e238bf275355f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -6046,14 +6038,6 @@
     "result": "agrees"
    }
   },
-  "0b58c39f8ae5f0bf": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm135170880 part (f): sublimation; at 10^6 Pa the only boundary between 3000 and 5000 K is the solid/vapor line at ~3845 K (graphite → vapor)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "0b59fcce9f9135fd": {
    "verdict": "ok"
   },
@@ -6068,10 +6052,6 @@
   "0b5dc6316451ce84": {
    "verdict": "ok",
    "note": "ILQ fs-id1582992 graded per Part C; fixing text caption fig-ch14_01_05 + fs-id2744243, fs-id2479589; model = source solution verbatim"
-  },
-  "0b5e6fc10818247f": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm20127408 part (c) segment"
   },
   "0b5f69083014b07d": {
    "verdict": "ok",
@@ -6194,10 +6174,6 @@
   "0b7fb179e7a45edf": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 529): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
-  },
-  "0b8065638c4e2974": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm61727056 part (b); model = source solution part (b) verbatim; stem \"those in (a)\" written \"those in the previous item\" (parent ruling 7)"
   },
   "0b8ba1043e796a83": {
    "verdict": "ok",
@@ -6929,14 +6905,6 @@
     "result": "agrees"
    }
   },
-  "0cf97f804b7e1108": {
-   "verdict": "ok",
-   "note": "glossary recall: Heisenberg uncertainty principle (fs-idm7039408), first sentence of the meaning; accept members printed in the body (fs-idp75105920, fs-idm139875104); hint re-pointed",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "0cfcc43aada7cf9b": {
    "verdict": "ok",
    "note": "author-built from § Habituation: \"Prairie dogs typically sound an alarm call when threatened by a predator, but they become habituated to the sound of human footsteps when n…\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -7430,14 +7398,6 @@
     "result": "agrees"
    }
   },
-  "0ded2d63a2d4411d": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp39473616 part (b); 1e6/120.91*4*0.08206*308.65/225 = 3724.0 -> 3.72e3, source 3.72e3 L",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "0df0a1f1fe688c2d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -7679,6 +7639,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "0e54f3a498e733a9": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp23764656 (printed 13), assumptions; solution fs-idp23772560, last sentence corrected to 'Energy required = 7.5 kWh.' per ruling 5.1-3, Source note after the block | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "0e58554b3eb6e548": {
    "verdict": "ok",
@@ -8123,10 +8087,6 @@
     "result": "agrees"
    }
   },
-  "0f258bae84e8bbc3": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp24507936 (printed 29), model answer = source solution fs-idp40695152 verbatim (italic n set as math) | re-read November 15, 2026: rubric clauses rewritten as runs of the model answer’s words; question, hint, and model answer unchanged"
-  },
   "0f29cfad5c4e9126": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -8269,6 +8229,14 @@
   "0f848c36be0f7e25": {
    "verdict": "ok",
    "note": "tan(2pi/3+pi/4)=tan(165deg); Math.tan vs (1-sqrt3)/(1+sqrt3) agree to 1e-12. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "0f861ed74474af68": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp39473616 part (b); 1e6/120.91*4*0.08206*308.65/225 = 3724.0 -> 3.72e3, source 3.72e3 L | re-solved blind November 24, 2026 (fix pass after the deep audit; changed): the solver’s answer agrees with the key. The stem equation was corrected to 2H₂ and the key to 1.86e3 L: 1e6/120.91*2*0.08206*308.65/225 = 1862 (the earlier figures in this note are the source’s, with 4H₂).",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "0f86298905df26ad": {
    "verdict": "ok",
@@ -8535,10 +8503,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "0feb0ceb6f92ba25": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idp17356704 — model answer the source solution; Identify a molecule with trigonal bipyramidal molecular structure."
   },
   "0fec5acacfbb9a97": {
    "verdict": "ok"
@@ -8964,6 +8928,10 @@
     "result": "agrees"
    }
   },
+  "10ec65d9edaa9b81": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp45725024 part (a) N: model answer shows OrbDiaSh2a_img (2s² 2p³), the part own image | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
+  },
   "10ed889268936d07": {
    "verdict": "ok",
    "note": "glossary recall: rhizoids (fs-idp72803296) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -9157,10 +9125,6 @@
     "result": "agrees"
    }
   },
-  "115b63b1ef7742cb": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm165750544 (printed 41) part (c), simulation selfcheck; model = solution fs-idp31066016 part (c)"
-  },
   "115f7f3a7a80a6a4": {
    "verdict": "ok",
    "note": "Reduced (x+3)/(x+1), both degree 1, ratio of leading coeffs 1/1=1; matches CNXML source answer. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -9340,6 +9304,14 @@
   "11a5ffbbc5110d7b": {
    "verdict": "ok",
    "note": "re-read against m46411 CNXML and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "11a65eeb605e95e7": {
+   "verdict": "ok",
+   "note": "filler cloze from body sentence fs-idm128012432 (Scientific notation is also known as exponential notation) | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -9709,10 +9681,6 @@
     "by": "fable-solver-F",
     "result": "agrees"
    }
-  },
-  "1264acef77fe3abb": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm49800144 part (a)"
   },
   "1269a094511cee54": {
    "verdict": "ok",
@@ -11838,6 +11806,10 @@
     "result": "agrees"
    }
   },
+  "163abc777a791728": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp169761136 part (a): source solution verbatim | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
+  },
   "163d52a21441cf38": {
    "verdict": "ok",
    "note": "KC 2 10.3 § body introduction (fs-id1966306), m66479 — parent re-read against the module"
@@ -12666,14 +12638,6 @@
     "result": "agrees"
    }
   },
-  "1796ece4e172f07d": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm9916608 part (d): Tetrahedral | accept members added November 18, 2026: geometry twins and Sm³⁺ core form (Derek's rulings)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "1798a3102d566f61": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -12805,6 +12769,14 @@
   "17dabbd9872006b4": {
    "verdict": "ok",
    "note": "textin 'iliotibial tract' re-read against m46482 glossary/body; accept checked through check-text",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "17dbac1e16e86f57": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm49726752 (answer '...Cr is the limiting reactant.'); options the stem's Cr, H3PO4; 0.50 mol Cr needs 0.50 mol H3PO4 of 0.75 -> Cr | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -13124,14 +13096,6 @@
     "result": "agrees"
    }
   },
-  "1879589ee620826b": {
-   "verdict": "ok",
-   "note": "Area = length x length -> square meters (source key 37(f)); only hint rewritten (G1), hint names no unit. [Filed by the round-3 fixer under an earlier hash of this item; carried by the orchestrator after a round-3 edit that changed no key (a hint, a stem period, a datum added to a stem).]",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "187b8140fa9f4a88": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -13443,6 +13407,14 @@
   "18fc264009d85d72": {
    "verdict": "ok",
    "note": "re-read against m46032 CNXML and page text",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "1901674ba74c4ac7": {
+   "verdict": "ok",
+   "note": "KC 1 1.3 § Physical and Chemical Properties, m68670 | re-solved blind November 24, 2026 (fix pass after the deep audit; changed): the solver’s answer agrees with the key.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -14131,10 +14103,6 @@
     "result": "agrees"
    }
   },
-  "1a527e9314ab75d3": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idp10418864 closing comment: source answer text after (c), (a)/(b) named as the two graph readings above"
-  },
   "1a55d5aec55d1300": {
    "verdict": "ok",
    "note": "source exercise fs-id1172100506672 (options-differ) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -14645,10 +14613,6 @@
     "result": "agrees"
    }
   },
-  "1b1c17aade6f2120": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp45725024 part (e) Mo: OrbDiaSh2e_img (5s¹ 4d⁵, the module-table configuration)"
-  },
   "1b1c64bb1a07baef": {
    "verdict": "ok",
    "note": "body cloze from § Healthcare-Associated (Nosocomial) Infections: \"Health-care facilities seek to limit nosocomial infections through training and hygiene protocols such as those described in Control of Mic…\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
@@ -14912,6 +14876,10 @@
   "1b9ac28af83a628e": {
    "verdict": "ok",
    "note": "Critical Thinking fs-idp147133360: model answer is the source solution verbatim, answers the question as asked. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "1b9bac5b1fe759be": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp39473616 part (a): source solution verbatim | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "1b9c2fcfc121022f": {
    "verdict": "ok"
@@ -17920,6 +17888,14 @@
    "verdict": "ok",
    "note": "parent re-read 2026-09-27: spec slope 1/3, intercept -1 is y = (1/3)x - 1 as asked"
   },
+  "2189cdf50859d510": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm34686800 (printed 7), joules; 2.093 x 28.4 x 22.0 = 1307.7 -> 1310, source 1310 J | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged | re-solved blind November 24, 2026 (fix pass after the deep audit; dependency-changed): the solver’s answer agrees with the key.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "218a63d890dd7e50": {
    "verdict": "ok",
    "note": "Check Your Learning of example fs-idm81897840; stem prints 129.8 g/mol (the book's table gives 129.83; the source prints 128.9, erratum 2997) and the key is 6.52/129.8/0.0750 = 0.66975 → 0.670 (129.83 gives 0.66959 → 0.670); DISCLOSED_DEVIATIONS fs-idm81897840#check; re-keyed November 14, 2026 (until then the source's stem and key, 0.674)",
@@ -18116,14 +18092,6 @@
   "21e64b218392b31a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "21e8f41a7ef56f5e": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp21050416 (printed 19): k(1/4-1/25) = 4.5780e-19 J / 1.602e-19 = 2.85768 -> 2.858 eV; source 2.856 eV (k = 2.179); correction with Source note",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -18608,14 +18576,6 @@
    "verdict": "ok",
    "note": "Body VC selfcheck (fig-ch33_03_04 / exercise fs-idp77964000, pyrogen): model answer is the source solution verbatim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "2306748b879f5403": {
-   "verdict": "ok",
-   "note": "cloze from summary sentence 'Pi (π) bonds are formed from unhybridized atomic orbitals (p or d orbitals).' (para fs-idm25402912)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "23085df8cf6d8269": {
    "verdict": "ok",
    "note": "cloze adrenergic from fs-id2525262, referent added; accept adrenergic receptor|α-adrenergic|alpha-adrenergic",
@@ -18718,10 +18678,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "23470a3e9352c158": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp39473616 part (a): source solution verbatim"
   },
   "23485ace72a712b6": {
    "verdict": "ok",
@@ -18843,6 +18799,10 @@
     "result": "agrees"
    }
   },
+  "237615bfd12b59fd": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp10418864 closing comment: source answer text after (c), (a)/(b) named as the two graph readings above | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
+  },
   "237e2e183f777155": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -18910,6 +18870,14 @@
   "238d793ee555bcd4": {
    "verdict": "ok",
    "note": "Check Your Learning of example fs-idm100317728 (ordering C₂H₆ < C₃H₈ < C₄H₁₀; members re-listed)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "2390e7e061fb6b99": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp16503888 — key bent; part: the central oxygen atom in the ozone molecule, O₃. Enter the molecular structure. | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -19290,6 +19258,10 @@
   },
   "2489144e89ffff7d": {
    "verdict": "ok"
+  },
+  "248be689eefe8c5c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp24507936 (printed 29), model answer = source solution fs-idp40695152 verbatim (italic n set as math) | re-read November 15, 2026: rubric clauses rewritten as runs of the model answer’s words; question, hint, and model answer unchanged | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "248ff7c7a92a6295": {
    "verdict": "ok",
@@ -20384,6 +20356,14 @@
     "result": "agrees"
    }
   },
+  "268b1e5bf12125a0": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm9916608 part (d): Tetrahedral | accept members added November 18, 2026: geometry twins and Sm³⁺ core form (Derek's rulings) | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "268d19ec18965406": {
    "verdict": "ok",
    "note": "KC 1 3.3 § Ribosomes, m58792",
@@ -20910,14 +20890,6 @@
     "result": "agrees"
    }
   },
-  "27913addadcfa9d7": {
-   "verdict": "ok",
-   "note": "glossary recall: oxyacid (definition fs-idp282228224) | re-stemmed November 14, 2026: the question is built on the body's sentence (\"at least one other element\") in place of the glossary's, which the page's Source note calls incomplete; key and accept unchanged",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "2792d0756e32e0cb": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): 2cos(3theta)=-sqrt2 -> cos(3theta)=-sqrt2/2 -> 3theta=3pi/4+2k*pi or 5pi/4+2k*pi -> theta=pi/4+2k*pi/3 or 5pi/12+2k*pi/3; k=0,1,2 reproduces the six printed values (3pi/12=pi/4, kept unreduced as printed in the source key).",
@@ -21260,10 +21232,6 @@
   "28560c8c9e70a64e": {
    "verdict": "ok"
   },
-  "28597f3dec741069": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm57514192 part (a); model answer = source solution, drawing CNX_Chem_02_04_Question9a_img checked against key-1137"
-  },
   "28622590a833f492": {
    "verdict": "ok",
    "note": "glossary recall fs-id1960128 (metastasis); body fs-id691867 prints the term; re-read against CNXML",
@@ -21306,6 +21274,14 @@
   "28723ed7336a16b2": {
    "verdict": "ok",
    "note": "source RQ fs-id1478128, key B station; fs-id1547688 ; hint reworded neutral",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "2878cb39404959a3": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm382810864 part (c): alkaline earth metal | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -21408,6 +21384,14 @@
   "28954cc251b32c72": {
    "verdict": "ok",
    "note": "Body cloze, m46687 fs-id1469316: 'the steroid hormone calcitriol (also known as 1,25-dihydroxyvitamin D), which is the active form of vitamin D3, in the kidneys' (parenthetical dropped, accepted).",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "289a9b41c6c411ff": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp21050416 (printed 19): k(1/4-1/25) = 4.5780e-19 J / 1.602e-19 = 2.85768 -> 2.858 eV; source 2.856 eV (k = 2.179); correction with Source note | re-solved blind November 24, 2026 (fix pass after the deep audit; changed): the solver’s answer agrees with the key.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -21806,6 +21790,14 @@
    "verdict": "ok",
    "note": "KC 7 36.3 § body Smell and Taste in the Brain (fs-idp93151360), m66405 — parent re-read against the module"
   },
+  "2952a496c907c1f6": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm9916608 part (b): 'Bent (120°)' -> bent | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "29596e59314c2f85": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -21997,14 +21989,6 @@
    "note": "Summary-derived textin (disclosed in footer). m66445 Section Summary states verbatim 'A cell is the smallest unit of life.' Answer 'smallest' matches; the word does not appear in the prompt. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "29bc2b1048a49d26": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp123628080 — key tetrahedral; part: SO₂F₂ (S is the central atom). Enter the electron-pair geometry.",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -23048,14 +23032,6 @@
     "result": "agrees"
    }
   },
-  "2bdab559293202df": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp67177072 — key seesaw; structure of the following molecule or ion? SeF₄. Enter the molecular structure.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "2be1bb93199a3604": {
    "verdict": "ok",
    "note": "source exercise fs-idp11428640 part (c), drawing Ques2ansc_img"
@@ -23258,6 +23234,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "2c307024116b1465": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm164758784 part (a); answers-will-vary form (G2), source sample carried whole | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "2c365f66a8a5cd66": {
    "verdict": "ok",
@@ -24402,10 +24382,6 @@
     "result": "agrees"
    }
   },
-  "2e6b5f31dbedd9f1": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm133690944, solution fs-idm119081680 whole"
-  },
   "2e70978c32227b6c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -25229,6 +25205,10 @@
     "result": "agrees"
    }
   },
+  "300af6bd90a12163": {
+   "verdict": "ok",
+   "note": "re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied; the question itself was reworded in the pass"
+  },
   "300c7f90c22685a5": {
    "verdict": "ok",
    "note": "author-built from § summary: \"Experimental epidemiology studies generate strong evidence of causation in disease or treatment by manipulating subjects and comparing them…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -25682,10 +25662,6 @@
     "result": "agrees"
    }
   },
-  "3105f55eaab1cd50": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp45725024 part (b) Si: OrbDiaSh2b_img (3s² 3p²)"
-  },
   "310f23a71a991ce1": {
    "verdict": "ok",
    "note": "key-term recall from the Glossary appendix: otitis (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -25802,14 +25778,6 @@
     "result": "agrees"
    }
   },
-  "314f232a85c7dabf": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm34686800 (printed 7), joules; 2.093 x 28.4 x 22.0 = 1307.7 -> 1310, source 1310 J | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "3150f10417446562": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -25844,6 +25812,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "315b70c5aba6b694": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp45725024 part (a) N: model answer shows OrbDiaSh2a_img (2s² 2p³), the part own image | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "315f6723d1246fee": {
    "verdict": "ok",
@@ -26539,10 +26511,6 @@
     "result": "agrees"
    }
   },
-  "32b887669532fb1d": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp15556576 part (k)"
-  },
   "32bb2182b48b152c": {
    "verdict": "ok",
    "note": "cloze sterile; fs-id2101775 \"In stark contrast, the fetal intestine is sterile\", referent added",
@@ -26934,10 +26902,6 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
-  },
-  "337977c3a5fed9ec": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idp59620704, source answer whole with its drawing Ex070402_img"
   },
   "337f05ecfcb6d673": {
    "verdict": "ok",
@@ -27993,10 +27957,6 @@
    "verdict": "ok",
    "note": "Biology 7.4 source visual-connection selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (proton pumping into the intermembrane space per the chemiosmosis caption; visible Source note corrects the source's 'electrons')"
   },
-  "358a40a25891f976": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp37438640 part (a)"
-  },
   "358c5c527c9a3c2d": {
    "verdict": "ok",
    "note": "RQ fs-id1433317, key C embryonic; the module names four categories: epithelial, connective, muscle, nervous.",
@@ -28121,6 +28081,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "35c0113ced7e1de5": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm49800144 part (a) | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "35c2e68412fc8dc0": {
    "verdict": "ok",
@@ -28279,6 +28243,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "3611f53de07d1eb5": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp87226080 (lead-in, scope parenthesis added) — model answer the source solution | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "36189ce4aa68b282": {
    "verdict": "ok",
@@ -28623,14 +28591,6 @@
     "result": "agrees"
    }
   },
-  "36acd9c0e21586d2": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm11773136 part (a), cal/°C; 47.632/4.184 = 11.384 -> 11.4 at the data's 3 figures; source prints 11.38 — corrected per ruling 5.1-1 (G4), Source note | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "36af825525b8fc23": {
    "verdict": "ok",
    "note": "m66474 critical-thinking solution fs-idm123143120 (roles of ATP/NADPH). Page model answer is a faithful paraphrase; three CHECKS clauses (both carry energy, NADPH has reducing power, fuels light-independent carbohydrate synthesis) restate it with no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -28857,6 +28817,15 @@
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
+   }
+  },
+  "371cf896bbae86bf": {
+   "verdict": "ok",
+   "note": "KC 3 6.3 § The Quantum–Mechanical Model of an Atom, m68733 | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "the key is “Max Born” and “Born” is its accept member; both grade correct"
    }
   },
   "371f0d481bc5e62c": {
@@ -29284,10 +29253,6 @@
     "result": "agrees"
    }
   },
-  "382da18f3935aecc": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm75285152"
-  },
   "3832a3faa0df9ee8": {
    "verdict": "ok",
    "note": "selfcheck C. acnes role — needs the infection sentence plus the enzyme/lesion sentence, stays selfcheck. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -29371,18 +29336,6 @@
     "result": "agrees"
    }
   },
-  "3851ef89b18ca91f": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp170194320 — model answer the source solution; Explain how a molecule that contains polar bonds can be nonpolar."
-  },
-  "3852ac8369f15c1e": {
-   "verdict": "ok",
-   "note": "cloze from body sentence fs-idm60561504 \"Solutions have previously been defined as homogeneous mixtures...\"",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "3853ef341b0aed33": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -29446,14 +29399,6 @@
   "387c7d5f6bd6b84b": {
    "verdict": "ok",
    "note": "source exercise fs-idm164758784 part (e); sample answer is the source segment whole; rubric keeps the criteria sentence's condition and the hint was reworded after the fix check (parent)"
-  },
-  "38814f68472f9b46": {
-   "verdict": "ok",
-   "note": "cloze from body sentence fs-idp40754368 (also Summary); accept monatomic ions (head noun)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "3881f50b672a5b91": {
    "verdict": "ok",
@@ -29593,6 +29538,14 @@
   "38d3c40c79912a2c": {
    "verdict": "ok",
    "note": "KC 1 3.2 § body Benefits of Carbohydrates (fs-id2584042), m66440 — parent re-read against the module"
+  },
+  "38d6e6e22a141986": {
+   "verdict": "ok",
+   "note": "glossary recall: Heisenberg uncertainty principle (fs-idm7039408), first sentence of the meaning; accept members printed in the body (fs-idp75105920, fs-idm139875104); hint re-pointed | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "38d8004151fe19f8": {
    "verdict": "ok",
@@ -29844,10 +29797,6 @@
     "result": "adjudicated",
     "note": "Key 105 stands: the pinned CNXML solution (m82455 fs-id Try It after the Mustangs example) reads \"The Bears lost 105 yards.\" The ask is \"the number of yards lost\", a magnitude; the example above ends the same way (3(-15) = -45, \"The team lost 45 yards\") and the hint says to answer with the number of yards lost."
    }
-  },
-  "39392bf9568fa98d": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp149682416 — model answer the source solution; ecule might have. Give an example of a molecule or ion for each shape."
   },
   "393b6b128a062f5c": {
    "verdict": "ok",
@@ -30119,14 +30068,6 @@
     "result": "agrees"
    }
   },
-  "39c94398b786adbe": {
-   "verdict": "ok",
-   "note": "glossary recall: free radical (definition fs-idm4719424); accept odd-electron molecule from Summary fs-idm18966656",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "39ccabd74234a416": {
    "verdict": "ok",
    "note": "KC 2 12.4 § Mechanisms and Risks of Gene Therapy, m58851 | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -30342,6 +30283,10 @@
   "3a1d3d8fc617bfb9": {
    "verdict": "ok",
    "note": "Practice #13 (fs-id1165134556459): B=[[3,9],[21,12],[0,64]]; 3B computed in Node = [[9,27],[63,36],[0,192]], row 3 = 0,192. Matches CNXML solution. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "3a1ef7a2b1a8ea4e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm20127408 part (c) segment | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "3a271d4bd9fff960": {
    "verdict": "ok",
@@ -30575,6 +30520,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "3aa954b3dddfb3c2": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp87226080 part (f), selfcheck per ruling 7.6-4 — model answer the source solution; Does the following molecule or ion have a dipole moment? PH₂⁻. | carried Nov 16 2026 (after chapter 8): rubric clauses split so that none of three or more words lies inside another (the clauses below ===CHECKS=== only; question, hint, and model answer unchanged) | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "3aaa9101da96fed2": {
    "verdict": "ok",
@@ -31012,6 +30961,14 @@
     "result": "agrees"
    }
   },
+  "3b887942ac80f8fc": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm9916608 part (a): 'Each S has a bent (109°) geometry' -> bent | closing sentence clarified by the parent after the blind solve (\"about each sulfur atom\"); key unchanged | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3b89d5f3b90a641a": {
    "verdict": "ok",
    "note": "Visual Connection MC (m66422 visual-exercise, nondisjunction two-panel figure): keyed B re-derived from panel (b) — meiosis II nondisjunction yields gametes n, n, n−1, n+1, so 50 percent are normal; meiosis I nondisjunction (panel a) yields none normal, refuting the other options. Restored from its visualcheck form (same question, options, and key) after the component was reverted; key re-derived and blind-solved this campaign. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -31137,6 +31094,10 @@
    "verdict": "ok",
    "note": "CT1 fs-id1999493 model answer = solution fs-id2444227 verbatim"
   },
+  "3bc4dba8d91ae6e3": {
+   "verdict": "ok",
+   "note": "Model answer = source solution 41(a) (m = 18.58 g, V = 5.7 mL) unchanged; rubric split into name and value clauses (G9). | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
+  },
   "3bca81de3f073a16": {
    "verdict": "ok",
    "note": "glossary recall: resistance (fs-idm54530672) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -31187,10 +31148,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "3be2249af43c8394": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp15556576 part (d)"
   },
   "3be24d36cb8266eb": {
    "verdict": "ok",
@@ -31854,6 +31811,10 @@
     "result": "agrees"
    }
   },
+  "3d3da6d75e70b664": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp56829344 — model answer the source solution; it will point. Check the molecular dipole box to test your hypothesis. | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
+  },
   "3d43437f30b99793": {
    "verdict": "ok",
    "note": "Keyed option 'hydrolysis' matches CNXML solution fs-id1398346 = A (m66438 Review Q2). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -32061,14 +32022,6 @@
   "3daefbb2c596da60": {
    "verdict": "ok",
    "note": "author-built from § summary: \"Ribosomal RNA ( rRNA ) is a type of stable RNA that is a major constituent of ribosomes.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "3db4ab60a043151d": {
-   "verdict": "ok",
-   "note": "cloze from summary sentence \"Gases exert pressure, which is force per unit area.\"",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -32677,6 +32630,14 @@
   },
   "3ee3675dd755ce1d": {
    "verdict": "ok"
+  },
+  "3eeada4010669f0e": {
+   "verdict": "ok",
+   "note": "glossary recall: free radical (definition fs-idm4719424); accept odd-electron molecule from Summary fs-idm18966656 | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "3eeb089daeaa07ad": {
    "verdict": "ok",
@@ -33942,14 +33903,6 @@
     "result": "agrees"
    }
   },
-  "41250777c89a1223": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp36064736 part (b); source 'Copper is a likely candidate.'; options the Table 5.1 metals in table order | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "412bf346e8c3fd04": {
    "verdict": "ok",
    "note": "source exercise fs-idp35699408 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -34521,6 +34474,14 @@
     "result": "agrees"
    }
   },
+  "423d90c1e6e5ffe7": {
+   "verdict": "ok",
+   "note": "KC 3 7.6 § Example: Predicting Electron-pair Geometry and Molecular Structure: SF₄, m68742 | accept members added November 18, 2026: geometry twins and Sm³⁺ core form (Derek's rulings) | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "424021a34ee8ba6c": {
    "verdict": "ok",
    "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -34747,6 +34708,14 @@
     "result": "agrees"
    }
   },
+  "42a75090db70eb92": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp67177072 — key tetrahedral; part: PH₂⁻. Enter the electron-pair geometry. | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "42a7a19a81c58b41": {
    "verdict": "ok",
    "note": "Summary cloze fs-id1707644 last sentence, key kidneys; accept collecting ducts|collecting tubules (fs-id1697734 'collecting ducts and tubules in the kidney')",
@@ -34812,6 +34781,14 @@
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "42c29eae45f87985": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm34686800 (printed 7), calories; 1307.7/4.184 = 312.55 -> 313, source 313 cal | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged | re-solved blind November 24, 2026 (fix pass after the deep audit; dependency-changed): the solver’s answer agrees with the key.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -34901,10 +34878,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "4307dd1c006dc545": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp56829344 — model answer the source solution; it will point. Check the molecular dipole box to test your hypothesis."
   },
   "4309e57293088e5a": {
    "verdict": "ok",
@@ -35713,6 +35686,10 @@
     "result": "agrees"
    }
   },
+  "4494513d64634687": {
+   "verdict": "ok",
+   "note": "re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied; the question itself was reworded in the pass"
+  },
   "449fe61944379279": {
    "verdict": "ok",
    "note": "re-read against m46549 CNXML and the page: selfcheck model = source solution"
@@ -35732,14 +35709,6 @@
   "44a6d8feda2a8857": {
    "verdict": "ok",
    "note": "m66374 solution fs-idm200102079 (decreasing temperature's two effects on diffusion): model answer verbatim match. Four CHECKS clauses restate kinetic energy decrease, slower molecular speed, membrane compression/density increase, and slowed diffusion — all present in the solution. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
-  },
-  "44a99fbf6cd543bf": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp123628080 — key tetrahedral; part: Cl₂SO (S is the central atom). Enter the electron-pair geometry.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "44acbcf312afdcca": {
    "verdict": "ok",
@@ -35854,6 +35823,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "44d593ea89880256": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp105919968; part: ; key (model answer) re-derived against the CNXML | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "44e5004d5cdb59c3": {
    "verdict": "ok",
@@ -36288,6 +36261,14 @@
     "result": "agrees"
    }
   },
+  "45cd133c02a78513": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp67177072 — key tetrahedral; part: PCl₃. Enter the electron-pair geometry. | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "45d03efa92b14b2d": {
    "verdict": "ok",
    "note": "source exercise fs-id1167660170633 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -36374,6 +36355,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "45fc4278a7b79ba5": {
+   "verdict": "ok",
+   "note": "re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied; the question itself was reworded in the pass"
   },
   "4602d818dfabb7e7": {
    "verdict": "ok",
@@ -36897,6 +36882,14 @@
     "result": "agrees"
    }
   },
+  "46f0547bb9797e91": {
+   "verdict": "ok",
+   "note": "cloze from body sentence \"The precipitate is typically isolated from the reaction mixture by filtration, carefully dried, and then weighed\" (para fs-idp272684448) | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "46f23dc967752386": {
    "verdict": "ok",
    "note": "Check Your Learning of example fs-idp85049088 part (c): answer note '(b) and (c) are σ bonds'; drawing (c) shows end-to-end overlap of unequal orbitals on the axis",
@@ -37338,10 +37331,6 @@
     "result": "agrees"
    }
   },
-  "47ef7fcaeb18440d": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp37438640 part (b)"
-  },
   "47f13cb190fe45c9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -37373,15 +37362,6 @@
   "47ffc167934d48c4": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "4806cc5310c8f0ea": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm11773136 part (b), cal/°C; 406.87/4.184 = 97.244 -> 97.2 carried; source 97.3 from its rounded 407 — corrected per ruling 5.1-2, last-digit:1 keeps 97.3 right, Source note | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "adjudicated",
-    "note": "The key is the pound's mass times aluminum's specific heat carried unrounded, 453.5924 g × 0.897 ÷ 4.184 = 97.24; the solver's alternative 97.3 is the source's print, reached by reusing the rounded 407 J/°C (m68724 fs-idm11773136(b), erratum). The item's last-digit:1 grades both."
-   }
   },
   "4809c495ec333fd6": {
    "verdict": "ok",
@@ -39077,6 +39057,14 @@
     "result": "agrees"
    }
   },
+  "4b84978586ac83f1": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp123628080 — key tetrahedral; part: ClOF₂⁺ (Cl is the central atom). Enter the electron-pair geometry. | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4b85a5a867132ebf": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"Because the causes have yet to be fully determined, treatment options are often lacking and only address symptoms.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -40280,6 +40268,14 @@
     "result": "agrees"
    }
   },
+  "4ddcefcbeb1473fd": {
+   "verdict": "ok",
+   "note": "cloze from body sentence of para fs-idm114335872 'Davisson and Germer used a crystalline nickel target for their “slits,” …' | re-solved blind November 24, 2026 (fix pass after the deep audit; changed): the solver’s answer agrees with the key.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4de0aea017da87f9": {
    "verdict": "ok"
   },
@@ -40321,10 +40317,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "4df3482fecfb56cf": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idp28025040; source answer carried as the model answer; rubric clause split after the fix check (parent), model answer unchanged | re-read November 15, 2026: rubric clauses rewritten as runs of the model answer’s words; question, hint, and model answer unchanged | carried November 17, 2026 (notation-lint sweep): re-hashed by a row gap (\\\\[6pt]) in the model answer’s display; the question and the key are byte-for-byte unchanged"
   },
   "4df64da10d01dd4b": {
    "verdict": "ok",
@@ -40557,14 +40549,6 @@
   "4e66cecb8821696e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "4e687b2e5b4c4e4f": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm11773136 part (b), J/°C; 453.59 x 0.897 = 406.87 -> 407, source 407 J/°C | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -40823,10 +40807,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "4f09bbbbd4dc8956": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm57514192 part (b); model answer = source solution, drawing CNX_Chem_02_04_Question9b_img checked against key-1137"
   },
   "4f0ca6844582f909": {
    "verdict": "ok",
@@ -41253,6 +41233,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "4fd10aba92abd6df": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp47770992 (printed 31): image CNX_Chem_08_02_CO2Diag + sentence fs-idp72644016 | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "4fd586b100f58e89": {
    "verdict": "ok",
@@ -42289,6 +42273,14 @@
     "result": "agrees"
    }
   },
+  "51d176aaec10c8d0": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp16503888 — key bent; part: the oxygen atom in hydrogen peroxide, HOOH. Enter the molecular structure. | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "51d266111679a09e": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"The theory of spontaneous generation states that life arose from nonliving matter.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -42707,6 +42699,14 @@
    "verdict": "ok",
    "note": "body selfcheck, Sporothrix progression; model answer is the Sporotrichosis section's second paragraph verbatim in substance; hash changed after the checker's concern 3 split the merged 'nodules...as more lymph nodes' checkpoint into two checkpoints matching the source's two stages | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "529ed44a38f3870a": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm11773136 part (a), J/°C; 45.8 x 1.040 = 47.632 -> 47.6, source 47.6 J/°C | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged | re-solved blind November 24, 2026 (fix pass after the deep audit; dependency-changed): the solver’s answer agrees with the key.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "52a2d075ac7ac778": {
    "verdict": "ok",
    "note": "glossary recall: phosphodiesterase — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -42841,10 +42841,6 @@
    "verdict": "ok",
    "note": "selfcheck model answer assembled from the hepatitis B subunit-vaccine paragraph, no new claim | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
-  "52ef49b9c52d234e": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm215245584 part (b) (printed 43); model answer = the (b) segment of solution fs-idm256168352 verbatim"
-  },
   "52f1e34a9770cb9b": {
    "verdict": "ok",
    "note": "key-term recall from the Glossary appendix: candidiasis (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -42960,15 +42956,6 @@
     "result": "agrees"
    }
   },
-  "533c03bbb85daea4": {
-   "verdict": "ok",
-   "note": "KC 3 6.3 § The Quantum–Mechanical Model of an Atom, m68733",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "adjudicated",
-    "note": "the key is “Max Born” and “Born” is its accept member; both grade correct"
-   }
-  },
   "533e0682d4182507": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -42984,10 +42971,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "5344c4a8e0ad3f12": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm165750544 (printed 41) part (d), simulation selfcheck; model = solution fs-idp31066016 part (d)"
   },
   "53468fa452bac96e": {
    "verdict": "ok",
@@ -43039,10 +43022,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "5355b12a77c6c44f": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp28635312, source solution whole"
   },
   "535695b4b582e6d6": {
    "verdict": "ok",
@@ -43706,14 +43685,6 @@
     "result": "agrees"
    }
   },
-  "548a55d32576469c": {
-   "verdict": "ok",
-   "note": "KC 1 1.3 § Physical and Chemical Properties, m68670",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "548aad58e897a84a": {
    "verdict": "ok",
    "note": "KC 1 3.6 § body Differentiation (fs-id1521639), Everyday Connection Stem Cell Research (fs-id704569), m46036"
@@ -44056,6 +44027,14 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 757): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
+  "5566b1963b66f2be": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm41581920 (identity); source 'the metal is likely to be iron'; options the Table 5.1 metals in table order (run facts decision 9) | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged | re-solved blind November 24, 2026 (fix pass after the deep audit; dependency-changed): the solver’s answer agrees with the key.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5566cc99d0ae4d6b": {
    "verdict": "ok",
    "note": "KC 2 10.2 § Karyokinesis (Mitosis), m66478 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -44338,10 +44317,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "55e3624295152aad": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp15556576 part (i)"
   },
   "55e58dd20ed0fd04": {
    "verdict": "ok"
@@ -44983,10 +44958,6 @@
     "result": "agrees"
    }
   },
-  "5735b8863efc8af3": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm46525040, model answer the source solution whole with a closing period"
-  },
   "573652ce08407587": {
    "verdict": "ok",
    "note": "body cloze from § Reconnection: \"Over time, the hybrid zone may change depending on the fitness of the hybrids and the reproductive barriers ( ).\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -45026,10 +44997,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "57402365612833b1": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm49800144 part (e)"
   },
   "57440bca1068b7af": {
    "verdict": "ok",
@@ -45173,6 +45140,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "578b462518a91875": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp17356704 — model answer the source solution; Identify a molecule with trigonal bipyramidal molecular structure. | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "578e217bbcd23ba5": {
    "verdict": "ok",
@@ -46888,10 +46859,6 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "5ab9ea45a4004013": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm49726752, model answer the source solution whole (unit chain set as Unicode prose) | chapter 10 close-out sweep, November 19, 2026: a choice and the self-check under it share one hint (lint)"
-  },
   "5abd26c58359ea10": {
    "verdict": "ok",
    "note": "Summary cloze fs-id1466200: Nervous tissues propagate information; accept list from body fs-id1312224 electrochemical signals / nerve impulses.",
@@ -47477,14 +47444,6 @@
     "result": "agrees"
    }
   },
-  "5bca8ee1994ecfd8": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm6604608; part: Ca(s) + H₂O(l) ⟶ (products are a strong base and a diatomic gas).; key Ca(s) + 2H₂O(l) ⟶ Ca(OH)₂(aq) + H₂(g) re-derived against the CNXML | carried 2026-11-14 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "5bcdf85ba8580653": {
    "verdict": "ok",
    "note": "source exercise fs-idm111217280 part (e), solution fs-idp7180048: “strongest bond is” N₂",
@@ -47893,6 +47852,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "5c68359e91aef7d0": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm11351120 (module ex 8, printed 15); model answer = criteria sentence in the question's words + source sample answer verbatim | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "5c6ec45911862df4": {
    "verdict": "ok",
@@ -49120,6 +49083,10 @@
     "result": "agrees"
    }
   },
+  "5ef18506ac3d5080": {
+   "verdict": "ok",
+   "note": "re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied; the question itself was reworded in the pass"
+  },
   "5efcc40cb0fa4abe": {
    "verdict": "ok",
    "note": "2.0 L has 2 sf; quotient → 2 (display now bare digit) | carried Nov 16 2026 (chapter 8 run, lint sweep): answerDisplay set as math (display only; question, key, form, and hint unchanged)",
@@ -49239,6 +49206,10 @@
     "result": "agrees"
    }
   },
+  "5f3fb52bb1f05d3f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm89275552, answer verbatim with $Z$ and describing phrase | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
+  },
   "5f42cbf163f9eddd": {
    "verdict": "ok",
    "note": "KC 5 23.1 § body Endosymbiotic Theory (fs-idp100923312), m66552 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
@@ -49352,14 +49323,6 @@
     "result": "agrees"
    }
   },
-  "5f8c48f46d2771d1": {
-   "verdict": "ok",
-   "note": "KC 1 1.2 § Atoms and Molecules, m68667",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "5f92e82f4cdf905c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -49438,6 +49401,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "5fbe330a56428c01": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp181957264 (printed 81) solution sentence — question reworded in the chapter 10 close-out sweep (November 19, 2026): the added “Explain.” removed, so the stem is the source’s verbatim; the model answer is unchanged (old hash a353e682bcea12d6) | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "5fc06d0af46fd95e": {
    "verdict": "ok",
@@ -49714,6 +49681,14 @@
   "604b992658f9746a": {
    "verdict": "ok"
   },
+  "6053a4e014c47920": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm6604608; part: Ca(s) + H₂O(l) ⟶ (products are a strong base and a diatomic gas).; key Ca(s) + 2H₂O(l) ⟶ Ca(OH)₂(aq) + H₂(g) re-derived against the CNXML | re-solved blind November 24, 2026 (fix pass after the deep audit; changed): the solver’s answer agrees with the key. The key now leaves Ca(OH)₂ without a state symbol (erratum and Source note; fix pass R4).",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "60568dba048e2dda": {
    "verdict": "ok",
    "note": "source exercise fs-id1167583718663 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -49721,10 +49696,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "6062befda0196d6d": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp37438640 part (d)"
   },
   "606fcd6ba3b0ffe4": {
    "verdict": "ok",
@@ -49804,14 +49775,6 @@
   "609a7fa54da3d573": {
    "verdict": "ok",
    "note": "Body selfcheck, author-written from § Characteristics of Fungi ('Some fungi are dimorphic... growing as a mold, for example, at 25 °C (77 °F), and as yeast cells at 37 °C (98.6 °F)'); 'explain' needs two module sentences assembled, so it stays a selfcheck per the unkeyed-question rule."
-  },
-  "609b3ce383229ef6": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp123628080 — key tetrahedral; part: SO₂F₂ (S is the central atom). Enter the molecular structure.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "609eda3ec8b3f1e9": {
    "verdict": "ok",
@@ -50172,6 +50135,14 @@
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "614535984353cd1f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp16503888 — key tetrahedral; part: the sulfur atom in sulfuric acid, H₂SO₄ [(HO)₂SO₂]. Enter the molecular structure. | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -51655,10 +51626,6 @@
     "result": "agrees"
    }
   },
-  "64d774be8d6007ea": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp37438640 part (c)"
-  },
   "64da425d5909e13b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -52334,6 +52301,10 @@
     "result": "agrees"
    }
   },
+  "66738060cab36e4d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp107697296; model = source solution fs-idm61224992 verbatim | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
+  },
   "6674e9ad0466be44": {
    "verdict": "ok",
    "note": "author-built from § Early Biotechnology: Cheese, Bread, Wine, Beer, and Yogurt: \"Some of the products of this early biotechnology as familiar as cheese and yogurt employ bacteria, while other microbes, such as yeast, a f…\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -52848,6 +52819,14 @@
    "verdict": "ok",
    "note": "The table above (x=2,4,6,8; f(x)=12,16,20,0) gives f(2)=12, so g(2)=3/4*12=9, matching the declared answer. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "67834d8b7281f545": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp123628080 — key tetrahedral; part: SO₂F₂ (S is the central atom). Enter the molecular structure. | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "678c1fbdd5456432": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -53153,14 +53132,6 @@
     "result": "agrees"
    }
   },
-  "68217ec317d5f197": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp16503888 — key bent; part: the oxygen atom in the OH group in nitric acid, HNO₃ [HONO₂]. Enter the molecular structur",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "682249ecccbbf9b3": {
    "verdict": "ok"
   },
@@ -53200,6 +53171,10 @@
     "result": "agrees"
    }
   },
+  "68479f05b2de0a8e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm83382672 (printed 13): source answer carried whole after opening sentence and 'Sample answer:' label (answers-will-vary form; decision 9) | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
+  },
   "684acf11c32b4ca3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -53222,6 +53197,15 @@
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
+   }
+  },
+  "68550d0f30d40c4a": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm68979552 (printed 83), name part of solution \"O, IE1\"; name spelled out from the body \"first ionization energy (IE1)\" (para fs-idm65502944) (hint rewritten) | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "Key \"first ionization energy\" stands: the source answers IE₁ (m68735 fs-idm68979552) and the reaction removes the first electron from a neutral atom. The solver's \"ionization energy\" is the general term and the page's own objective heading prints it, so the lint refuses it as an accept member (tried and reversed by the parent, November 15, 2026); the item's hint asks how many electrons are removed and from what."
    }
   },
   "6859401f0fb1c90e": {
@@ -54031,6 +54015,14 @@
    "verdict": "ok",
    "note": "f(x)=(x^2)^3=x^6: single term, variable to a fixed power (power function) AND expressible in general polynomial form with all but one coefficient zero (also a polynomial function). Matches CNXML fs-id1165137585053 solution text exactly (\"It is also a polynomial, with all coefficients except one equal to zero\")."
   },
+  "6a1b258c1d42d987": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp123628080 — key tetrahedral; part: Cl₂SO (S is the central atom). Enter the electron-pair geometry. | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6a1bb169f6b56432": {
    "verdict": "ok",
    "note": "body CYU 2, selfcheck; TSI/TSH-receptor mechanism for Graves vs TH1 cell-mediated attack for Hashimoto, both from m58893's own Disorders of the Thyroid subsection. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -54046,6 +54038,10 @@
   "6a2712682608d4be": {
    "verdict": "ok",
    "note": "source exercise fs-idm127368704 (printed 33), solution with m₁ corrected to m_l (one-character typo)"
+  },
+  "6a273955a7860eb9": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm49800144 part (a) | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "6a293d49189ed51e": {
    "verdict": "ok",
@@ -54410,14 +54406,6 @@
     "result": "agrees"
    }
   },
-  "6ac583a1e9df456f": {
-   "verdict": "ok",
-   "note": "cloze from body sentence (para fs-idp139124096) \"Chemist Percy Lavon Julian turned to a more plentiful source: soybeans.\"; accept soy (module prints soy protein, soy sterols)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "6ac8b880ad2f04b4": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -54493,10 +54481,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "6b04373b10298507": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp272460112 part (a), model answer the source’s"
   },
   "6b065cd3e948e890": {
    "verdict": "ok",
@@ -54899,6 +54883,10 @@
     "note": "the module never states where sodium is most concentrated and lists blood plasma, extracellular fluid, and intracellular fluid as three compartments; source key kept on source authority (blood plasma is not made true by any module sentence)"
    }
   },
+  "6c05ef68c61a83da": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm57514192 part (a); model answer = source solution, drawing CNX_Chem_02_04_Question9a_img checked against key-1137 | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
+  },
   "6c07def88926e939": {
    "verdict": "ok"
   },
@@ -54978,6 +54966,10 @@
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "6c27949f82e4e032": {
+   "verdict": "ok",
+   "note": "re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied; the question itself was reworded in the pass"
+  },
   "6c28a321100e28b5": {
    "verdict": "ok",
    "note": "source exercise fs-idp19159472 (printed 69); model answer = source equations with the minus restored before ΔHf[HCl(g)] on the D_HCl line (parent ruling, erratum 3146, Source note); rubric from the equations; 92.307+217.97+121.3 = 431.6 from Appendix G; the cycle's rows stacked by the parent on November 15, 2026 so the display fits the column — content unchanged | re-read November 15, 2026: rubric clauses rewritten as runs of the model answer’s words; question, hint, and model answer unchanged"
@@ -55051,14 +55043,6 @@
   "6c525b2985752c10": {
    "verdict": "ok",
    "note": "KC 2 9.5 § Dorsiflexion and Plantar Flexion, m46398",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "6c5565f1e541dd46": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp67177072 — key bent; part: ClO₂⁻. Enter the molecular structure.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -55654,6 +55638,10 @@
     "result": "agrees"
    }
   },
+  "6d7811df0e002f1b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm183311984 (printed 25), solution fs-idm78594320 with its last phrase corrected 'less viscous' -> 'more viscous' (run-facts decision 8, erratum 3288, deviation filed) | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
+  },
   "6d7c9f554d3ff8b6": {
    "verdict": "ok",
    "solved": {
@@ -55795,6 +55783,15 @@
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
+   }
+  },
+  "6dbc8dec0a2f880b": {
+   "verdict": "ok",
+   "note": "glossary recall: expansion work (fs-idp102383600), accept the module alias pressure-volume work | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "The glossary term is “expansion work (pressure-volume work)”; the item's accept list holds pressure-volume work."
    }
   },
   "6dbdf0fe30111ae3": {
@@ -55983,6 +55980,10 @@
   "6e1f6154b31ff3cc": {
    "verdict": "ok",
    "note": "Microbiology 9.6 source CT selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the fastidious-organism definition plus the stem's growth factors, scope decision disclosed in the footer)"
+  },
+  "6e23db7c1d761937": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp30217376 part (a), drawing Ques13ansb_img | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "6e2b5415654ffe74": {
    "verdict": "ok",
@@ -56802,10 +56803,6 @@
     "result": "agrees"
    }
   },
-  "6fcb7db6fe5c5cda": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp181957264 (printed 81) solution sentence — question reworded in the chapter 10 close-out sweep (November 19, 2026): the added “Explain.” removed, so the stem is the source’s verbatim; the model answer is unchanged (old hash a353e682bcea12d6)"
-  },
   "6fd0218c6726eeb2": {
    "verdict": "ok",
    "note": "multiplechoice, Review Question 2 (CNXML exercise fs-id1770002). Options/order and keyed answer 'the movement of hydrogen ions across a mitochondrial membrane' (SOLUTION: C) match source verbatim; confirmed against the Chemiosmosis section text. The 'hydrogen atoms' distractor is not independently true — the section specifies ions (protons), not neutral atoms, cross the membrane. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -56829,10 +56826,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "6fdaf94852049761": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp23764656 (printed 13), assumptions; solution fs-idp23772560, last sentence corrected to 'Energy required = 7.5 kWh.' per ruling 5.1-3, Source note after the block"
   },
   "6fdbfb232a423148": {
    "verdict": "ok",
@@ -57196,6 +57189,10 @@
    "verdict": "ok",
    "note": "CT fs-id1883956, solution fs-id2450246 verbatim; checks are its clauses"
   },
+  "708cb44d7907b4a3": {
+   "verdict": "ok",
+   "note": "re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied; the question itself was reworded in the pass"
+  },
   "709571c12b1d98ec": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -57551,14 +57548,6 @@
    "verdict": "ok",
    "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "7139747fa4323480": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idp167759616 (HCl); 2 × −92.3; run-facts decision 2",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "7139e7b6421703f9": {
    "verdict": "ok",
    "note": "source fs-id2444302, solution fs-id1720124 verbatim as model answer"
@@ -57857,6 +57846,10 @@
     "result": "agrees"
    }
   },
+  "71b3934a8b3c6f8b": {
+   "verdict": "ok",
+   "note": "Model answer = source solution 41(a) (m = 18.58 g, V = 5.7 mL) unchanged; rubric split into name and value clauses (G9). | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
+  },
   "71b3b246033f8ec3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -57912,10 +57905,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "71cc0ebb35768b4c": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm19471568, model answer the source solution with 'weighted' corrected to 'weighed' | re-read November 15, 2026: rubric clauses rewritten as runs of the model answer’s words; question, hint, and model answer unchanged"
   },
   "71cea7114c2b2cbd": {
    "verdict": "ok",
@@ -58067,10 +58056,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "7219c85fe7cd0e3b": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp30217376 part (a), drawing Ques13ansb_img"
   },
   "721a3a2aaa053aa2": {
    "verdict": "ok",
@@ -58296,6 +58281,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "728df9b388f27b92": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp113763312 solution | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "729576528c29690e": {
    "verdict": "ok",
@@ -58637,6 +58626,10 @@
   "734d14adb57bc11a": {
    "verdict": "ok"
   },
+  "734dec83c11e151d": {
+   "verdict": "ok",
+   "note": "Model answer = source solution 41(a) (m = 18.58 g, V = 5.7 mL) unchanged; rubric split into name and value clauses (G9). | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
+  },
   "7356f718a43eac8c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -58755,14 +58748,6 @@
   "7396f00f84591929": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "73973532fd15c1ee": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp67177072 — key tetrahedral; part: ClO₂⁻. Enter the electron-pair geometry.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "73994b4fb506f65c": {
    "verdict": "ok",
@@ -60353,14 +60338,6 @@
     "result": "agrees"
    }
   },
-  "7696690a5c2761e8": {
-   "verdict": "ok",
-   "note": "filler cloze from body sentence fs-idm128012432 (Scientific notation is also known as exponential notation)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "76977a56be06ccc8": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
@@ -60959,6 +60936,14 @@
   "779f5302211e8c88": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "77a4dacc868aa1d9": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp16503888 — key bent; part: the oxygen atom in the OH group in nitric acid, HNO₃ [HONO₂]. Enter the molecular structur | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "77aa1faaa54354fe": {
    "verdict": "ok",
@@ -61694,10 +61679,6 @@
     "result": "agrees"
    }
   },
-  "792dffc919457a6d": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm20127408 part (a) segment"
-  },
   "792e5e2484e9470a": {
    "verdict": "ok",
    "note": "source exercise fs-id933450 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -62044,6 +62025,14 @@
     "result": "agrees"
    }
   },
+  "79bc8fb7a2b1c27a": {
+   "verdict": "ok",
+   "note": "cloze from summary sentence \"Gases exert pressure, which is force per unit area.\" | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "79c099371710b0c5": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) Options reordered by the parent after the mc-distribution test (key moved off the first position); key text unchanged.",
@@ -62101,10 +62090,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "79e29a1ee2ca7288": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp15556576 part (b)"
   },
   "79eef584ea39546b": {
    "verdict": "ok",
@@ -62336,9 +62321,25 @@
     "result": "agrees"
    }
   },
+  "7a3a88672fbeff77": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp67177072 — key bent; part: ClO₂⁻. Enter the molecular structure. | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7a3b9e08dfca0c35": {
    "verdict": "ok",
    "note": "KC 2 7.2 § Polysaccharides, m58814 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "7a3e5be5df5c317f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp36064736 part (b); source 'Copper is a likely candidate.'; options the Table 5.1 metals in table order | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged | re-solved blind November 24, 2026 (fix pass after the deep audit; dependency-changed): the solver’s answer agrees with the key.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -63823,10 +63824,6 @@
     "result": "agrees"
    }
   },
-  "7cf590a2d3c2c560": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp87226080 part (f), selfcheck per ruling 7.6-4 — model answer the source solution; Does the following molecule or ion have a dipole moment? PH₂⁻. | carried Nov 16 2026 (after chapter 8): rubric clauses split so that none of three or more words lies inside another (the clauses below ===CHECKS=== only; question, hint, and model answer unchanged)"
-  },
   "7cf6c6caec6571ce": {
    "verdict": "ok",
    "note": "cloze of fs-id2655063 'stimulates the adrenal cortex to release the steroid hormone aldosterone'",
@@ -63953,6 +63950,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "7d482304e7121e51": {
+   "verdict": "ok",
+   "note": "re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied; the question itself was reworded in the pass"
   },
   "7d507ff57e0999a1": {
    "verdict": "ok",
@@ -64608,6 +64609,10 @@
     "result": "agrees"
    }
   },
+  "7ea3028322c21cae": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm75285152 | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
+  },
   "7ea371788365463d": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -64930,14 +64935,6 @@
     "result": "agrees"
    }
   },
-  "7f4be96d2da0bca0": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp123628080 — key bent; part: ClNO (N is the central atom). Enter the molecular structure.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "7f4cc16d26fedcd3": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -65232,6 +65229,14 @@
   "7fe40f4854c4e7ea": {
    "verdict": "ok",
    "note": "Bio 22.1 endolith selfcheck: source \"hypolith\" replaced by the tolerance it describes, inline source note, erratum 990 (m66542); parent re-read Sep 23 2026"
+  },
+  "7fe64ca3ce12fa28": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm11773136 part (a), cal/°C; 47.632/4.184 = 11.384 -> 11.4 at the data's 3 figures; source prints 11.38 — corrected per ruling 5.1-1 (G4), Source note | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged | re-solved blind November 24, 2026 (fix pass after the deep audit; dependency-changed): the solver’s answer agrees with the key.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "7febdee2940500eb": {
    "verdict": "ok",
@@ -65870,14 +65875,6 @@
   "813171ec69cd2f6a": {
    "verdict": "ok",
    "note": "glossary recall: thoracic cavity (fs-id2236953) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "81371d6003230df3": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp23764656 (printed 13), energy; 4.184 x 892000 x 7.222/3.6e6 = 7.487 -> 7.5 at the data's 2 figures; source 7.47 — corrected per ruling 5.1-3, Source note | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -66635,6 +66632,10 @@
     "result": "agrees"
    }
   },
+  "82c779ad3a8b1bde": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp54012352 — model answer the source solution; find a chemical formula that would match the structure you have drawn. | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
+  },
   "82cad078319d9412": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -66834,14 +66835,6 @@
     "result": "agrees"
    }
   },
-  "833f26989a2fe69d": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp123628080 — key seesaw; lowing molecule: XeO₂F₂ (Xe is the central atom). Enter the molecular structure.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "834335d30daeb7e9": {
    "verdict": "ok",
    "note": "author-built from § Halogens: \"Other chemicals commonly used for disinfection are the halogens iodine , chlorine , and fluorine .\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -66912,6 +66905,14 @@
   "835be551d1b73c0b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "835e527abb3e3ae8": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp13559760 (printed 9); 14500/(485 x 4.184) = 7.1455 -> 7.15, source 7.15 °C | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged | re-solved blind November 24, 2026 (fix pass after the deep audit; dependency-changed): the solver’s answer agrees with the key.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -67192,10 +67193,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "83eec2f8f72d2be3": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idp54012352 — model answer the source solution; find a chemical formula that would match the structure you have drawn."
   },
   "83f06d87ded7cd2f": {
    "verdict": "ok",
@@ -67812,6 +67809,10 @@
     "result": "agrees"
    }
   },
+  "84e118a00ec2716f": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm2891376 — model answer the source solution; part: Carbonate, CO₃²⁻, is a common polyatomic ion found in various materials from eggshells to  | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
+  },
   "84e68c85a4fc6458": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -68247,6 +68248,10 @@
    "verdict": "ok",
    "note": "KC 8 44.2 § body Water (fs-idp48507440), m66411 — parent re-read against the module"
   },
+  "85dcb63f0fe2dfc6": {
+   "verdict": "ok",
+   "note": "re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied; the question itself was reworded in the pass"
+  },
   "85dd59ee2b5d3ec4": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -68619,10 +68624,6 @@
     "result": "agrees"
    }
   },
-  "86aedd133fd50a06": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm51838704; source answer verbatim; 405.5 K = table 132.4 °C + 273.15 (405.55, kept as printed per decision 28)"
-  },
   "86afce6849354dc1": {
    "verdict": "ok",
    "note": "source exercise fs-id1167661429067 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -68825,10 +68826,6 @@
     "result": "agrees"
    }
   },
-  "870dce7fbb49ba5a": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp15556576 part (g)"
-  },
   "871697c2626292dc": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -68943,14 +68940,6 @@
   "875b5175144a721d": {
    "verdict": "ok",
    "note": "KC 3 14.4 § Antiprotozoan Drugs (table + body), m58861",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "8761dfd5c1af955f": {
-   "verdict": "ok",
-   "note": "cloze from body sentence of para fs-idm114335872 'Davisson and Germer used a crystalline nickel target for their “slits,” …'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -69259,10 +69248,6 @@
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
-  "87fdc3ca54549d8b": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm30783968, drawing H2SO4"
-  },
   "880851069957cc58": {
    "verdict": "ok",
    "note": "source exercise fs-id1167662886971 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -69565,6 +69550,10 @@
    "verdict": "ok",
    "note": "source exercise fs-idm104859984 (printed 9) part (b) color: source 'blue' (459 nm)"
   },
+  "889ef64c22eb624d": {
+   "verdict": "ok",
+   "note": "re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied; the question itself was reworded in the pass"
+  },
   "88a244bd52fc2c0d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -69649,6 +69638,10 @@
   "88d19d0bf4f08c4e": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "88d1dd3d0ad45b1d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm20127408 part (b) segment, ICI corrected to ICl (typo) | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "88d4c38e1c482eb8": {
    "verdict": "ok",
@@ -70608,10 +70601,6 @@
     "result": "agrees"
    }
   },
-  "8ab460a752960dd8": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp15556576 part (a)"
-  },
   "8ab8f5b66a539771": {
    "verdict": "ok",
    "note": "KC 8 47.3 § Exotic Species, m66709 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -70663,6 +70652,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "8aca78c401881a18": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm20127408 part (a) segment | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "8aca8b47015199ff": {
    "verdict": "ok",
@@ -70858,6 +70851,10 @@
     "result": "agrees"
    }
   },
+  "8b3adda688bf7c0e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm61727056 part (d) (simulation); model = source solution part (d) with \"(a), (b), and (c)\" written \"the three previous items\", and the stem's \"(a)/(b)/(c)\" written by position (parent ruling 7) | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
+  },
   "8b3b202fa0a3bd4d": {
    "verdict": "ok",
    "note": "glossary recall: trichome (fs-idp90524240) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -70916,6 +70913,15 @@
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
+   }
+  },
+  "8b504a37ab4c41d3": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm382810864 part (a): noble gas | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "Key stands (source answer fs-idm382810864: \"noble gas\"). \"inert gas\" is the module glossary's own alias and is already in the item's accept list; both grade correct."
    }
   },
   "8b508220d5736019": {
@@ -72020,14 +72026,6 @@
     "result": "agrees"
    }
   },
-  "8d971c12d9cb90be": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp16503888 — key tetrahedral; part: the sulfur atom in sulfuric acid, H₂SO₄ [(HO)₂SO₂]. Enter the molecular structure.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "8d9977f3f32dc3a6": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -72579,18 +72577,6 @@
     "result": "agrees"
    }
   },
-  "8eb84f88ed5b309a": {
-   "verdict": "ok",
-   "note": "KC 3 7.6 § Example: Predicting Electron-pair Geometry and Molecular Structure: Ammonium, m68742 | accept members added November 18, 2026: geometry twins and Sm³⁺ core form (Derek's rulings)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "8eba02f229ba9047": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp87226080 (lead-in, scope parenthesis added) — model answer the source solution"
-  },
   "8ebe2ad446602f39": {
    "verdict": "ok",
    "note": "KC 1 1.1 § body introduction, form-and-function paragraph (fs-id2104406), m45983"
@@ -73009,14 +72995,6 @@
    "verdict": "ok",
    "note": "Body CYU3, selfcheck. Model answer and rubric assembled from § Light-Independent Reactions' fixation/reduction/regeneration bulleted list (long list, several sentences — stays a selfcheck). Not a CNXML exercise; no source key upstream. HASH CHANGED (was 6b2bfa49bc12368f): checker defect 6 — hint's 'CO2' converted to 'CO₂' to match the page's Unicode convention."
   },
-  "8f8974c156fad63c": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm9916608 part (b): 'Bent (120°)' -> bent",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "8f89b6297ba21cbc": {
    "verdict": "ok",
    "note": "table fs-id1167661316692 row conversion (Matching shape), key 'Tinea pedis (athlete's foot)' = feet, from the table | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -73129,6 +73107,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "8fbe9552553aa773": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm46525040, model answer the source solution whole with a closing period | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "8fbea3492a72e67b": {
    "verdict": "ok",
@@ -73439,10 +73421,6 @@
   "9085ba3f2262b97e": {
    "verdict": "ok",
    "note": "source Short Answer fs-id1171360234778 (source prints no key); model author-written from the section's opening paragraph and the sizes figure caption."
-  },
-  "9086e2d584c25879": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm2891376 — model answer the source solution; part: Carbonate, CO₃²⁻, is a common polyatomic ion found in various materials from eggshells to "
   },
   "908a8472547e2bb3": {
    "verdict": "ok",
@@ -73867,6 +73845,14 @@
    "verdict": "ok",
    "note": "KC 1 6.2 § Chronic Infection, m58809"
   },
+  "915bdef401cf82a3": {
+   "verdict": "ok",
+   "note": "cloze from body sentence \"Weight refers to the force that gravity exerts on an object.\" (para fs-idp63221808); key gravity | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "915e34944bc4edf1": {
    "verdict": "ok",
    "note": "fs-idp148194704; module keys D, uterus; page keys the same option. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -73874,6 +73860,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "9164cb534155b796": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp22524928 explanation; ruling 6 model answer | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "916b1d20ed304ae6": {
    "verdict": "ok",
@@ -74277,14 +74267,6 @@
   "92338f882e627079": {
    "verdict": "ok",
    "note": "f(x)=2ln(x+3)-1: asymptote x=-3 matches the graphed asymptote; checked f(0)=2ln3-1≈1.2, f(5)=2ln8-1≈3.16 against the plotted curve's height at those x-values (visually consistent with the source PDF figure). Matches CNXML eip-id1525883/ti_04_04_11 solution f(x)=2ln(x+3)-1. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
-  },
-  "92376fe516c3c066": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp123628080 — key tetrahedral; part: ClOF₂⁺ (Cl is the central atom). Enter the electron-pair geometry.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "923d4a623b2cfc80": {
    "verdict": "ok",
@@ -74748,10 +74730,6 @@
     "by": "fable-solver-A",
     "result": "agrees"
    }
-  },
-  "9326c8a2c993f468": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm49800144 part (d)"
   },
   "932e8b866ee2e2a2": {
    "verdict": "ok",
@@ -75218,15 +75196,6 @@
     "result": "agrees"
    }
   },
-  "9417518fc63e03fd": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm11079584 (answer: Se2-, the selenide ion) — name, keyed bare with the two-word form accepted; hint reworded after the fix check (parent) so that it no longer says which kind of ion this is; key unchanged | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "adjudicated",
-    "note": "Key stands: keyed bare \"selenide\" with \"selenide ion\" in accept (playbook name row: the grader drops \"the\", not \"ion\"), so the solver's \"selenide ion\" and the bare name both grade correct. Source answer: \"Se2-, the selenide ion\"."
-   }
-  },
   "9417b54962312366": {
    "verdict": "ok",
    "note": "osmolality: cloze key printed verbatim in the cited module sentence; grader-checked",
@@ -75422,6 +75391,14 @@
   "9476d4c62dfd18dc": {
    "verdict": "ok",
    "note": "m66378 critical-thinking solution fs-id1441754: 'Intracellular signaling occurs within a cell, and intercellular signaling occurs between cells.' Page model answer verbatim match. Both CHECKS clauses restate the two halves with no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "94803a95464ed242": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp123628080 — key bent; part: ClNO (N is the central atom). Enter the molecular structure. | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "948092babe8de539": {
    "verdict": "ok",
@@ -75769,6 +75746,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "950feb4bcdd2bdf7": {
+   "verdict": "ok",
+   "note": "re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied; the question itself was reworded in the pass"
   },
   "9510bfeea3936bcf": {
    "verdict": "ok",
@@ -76466,10 +76447,6 @@
    "verdict": "ok",
    "note": "Selfcheck fs-idm197495200: model answer is the CNXML solution fs-idm223774464 verbatim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "96688aeed87b5241": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp45725024 part (d) Te: OrbDiaSh2d_img (5s² 5p⁴)"
-  },
   "96695eac55864f57": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
@@ -76644,14 +76621,9 @@
     "result": "agrees"
    }
   },
-  "96b1ead2d5f35c31": {
+  "96b3fbf47cce6cc6": {
    "verdict": "ok",
-   "note": "source exercise fs-idm68979552 (printed 83), name part of solution \"O, IE1\"; name spelled out from the body \"first ionization energy (IE1)\" (para fs-idm65502944) (hint rewritten)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "adjudicated",
-    "note": "Key \"first ionization energy\" stands: the source answers IE₁ (m68735 fs-idm68979552) and the reaction removes the first electron from a neutral atom. The solver's \"ionization energy\" is the general term and the page's own objective heading prints it, so the lint refuses it as an accept member (tried and reversed by the parent, November 15, 2026); the item's hint asks how many electrons are removed and from what."
-   }
+   "note": "source exercise fs-idp45725024 part (a) N: model answer shows OrbDiaSh2a_img (2s² 2p³), the part own image | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "96b4a26e869ace98": {
    "verdict": "ok",
@@ -76859,6 +76831,10 @@
     "result": "agrees"
    }
   },
+  "97179abacde90075": {
+   "verdict": "ok",
+   "note": "re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied; the question itself was reworded in the pass"
+  },
   "971a5b16820851f6": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -76866,6 +76842,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "971cdbab47e26586": {
+   "verdict": "ok",
+   "note": "re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied; the question itself was reworded in the pass"
   },
   "972c1dec540fd1d4": {
    "verdict": "ok",
@@ -77378,6 +77358,10 @@
     "result": "agrees"
    }
   },
+  "9827736ced651042": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm19471568, model answer the source solution with 'weighted' corrected to 'weighed' | re-read November 15, 2026: rubric clauses rewritten as runs of the model answer’s words; question, hint, and model answer unchanged | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
+  },
   "9827c92a4c86cfb9": {
    "verdict": "ok"
   },
@@ -77392,6 +77376,10 @@
   "982dd25c5b43f4d3": {
    "verdict": "ok",
    "note": "Practice obj2-1a: x^2/16+y^2/9=1, a^2=16>b^2=9 major axis x, vertices (+-4,0); matches CNXML fs-id1331349 solution. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "982fb9a9566f9a81": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp29495632, solution fs-idm72707904 (image phosnitro_img + paragraph) whole; drawing sentence author-written from the image | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "9830f8fbc76d5846": {
    "verdict": "ok",
@@ -77796,15 +77784,6 @@
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
-   }
-  },
-  "99041058fa4feda3": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm314038064 (printed 37) part (g); source key cubic meters; textin",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "adjudicated",
-    "note": "Key stands: the source answer is \"cubic meters\" and the stem asks for an SI base or derived unit built directly from base units; the module calls the liter \"the more common name for the cubic decimeter\", a prefixed multiple, and gives the cubic meter as the standard SI unit of volume."
    }
   },
   "9904935883e23c7a": {
@@ -78491,10 +78470,6 @@
   "9a7299224477d1c3": {
    "verdict": "ok",
    "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "9a73ba2b293a8177": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp84623072 (printed 5), model answer = solution fs-idp150643856 words verbatim plus its image CNX_Chem_08_01_O2bonds_img | hint reworded by the parent after the fix check or the blind solve (hint-only edit); stem, options, key, and model answer unchanged"
   },
   "9a7805c5c97ca8ac": {
    "verdict": "ok",
@@ -79954,6 +79929,10 @@
     "result": "agrees"
    }
   },
+  "9d6e76c3e02bad17": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm49800144 part (a) | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
+  },
   "9d7350e1868ba38a": {
    "verdict": "ok",
    "note": "author-built from § Platyhelminths (Flatworms): \"The other medically important group of platyhelminths are commonly known as tapeworms ( cestodes ) and are segmented flatworms that may hav…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -80076,10 +80055,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "9dc3db1ed23bc238": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm25727664, model answer = source solution verbatim (subscripted P's set as math)"
   },
   "9dc4158102522e63": {
    "verdict": "ok",
@@ -81319,6 +81294,14 @@
     "result": "agrees"
    }
   },
+  "a04f600f45a01ba6": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp67177072 — key tetrahedral; part: ClO₂⁻. Enter the electron-pair geometry. | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a0534053d9a25cba": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -81357,10 +81340,6 @@
     "by": "fable-blind-solve",
     "result": "agrees"
    }
-  },
-  "a0674e4ad03a0d31": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp15556576 part (e)"
   },
   "a068cb78128d3513": {
    "verdict": "ok"
@@ -81533,15 +81512,6 @@
    "solved": {
     "by": "fable-solver",
     "result": "agrees"
-   }
-  },
-  "a0bf7b08111d38a7": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm382810864 part (a): noble gas",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "adjudicated",
-    "note": "Key stands (source answer fs-idm382810864: \"noble gas\"). \"inert gas\" is the module glossary's own alias and is already in the item's accept list; both grade correct."
    }
   },
   "a0c25fa90cdb13cf": {
@@ -82194,10 +82164,6 @@
     "result": "agrees"
    }
   },
-  "a1df0f3ad86cb665": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp15556576 part (c)"
-  },
   "a1e1a948c2e185e9": {
    "verdict": "ok"
   },
@@ -82291,6 +82257,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "a20766929bf1845a": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm215245584 part (b) (printed 43); model answer = the (b) segment of solution fs-idm256168352 verbatim | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "a20b4f43471f36b5": {
    "verdict": "ok",
@@ -83597,6 +83567,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "a452609b05664f5e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm25727664, model answer = source solution verbatim (subscripted P's set as math) | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "a4563c4191b3b4f3": {
    "verdict": "ok",
@@ -84928,14 +84902,6 @@
     "result": "agrees"
    }
   },
-  "a700fd196b519d60": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp67177072 — key bent; part: PH₂⁻. Enter the molecular structure.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "a7020ed976a6d1f8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -85394,6 +85360,14 @@
     "result": "agrees"
    }
   },
+  "a7ed4c2c22306c01": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp123628080 — key seesaw; lowing molecule: XeO₂F₂ (Xe is the central atom). Enter the molecular structure. | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a7eea73baacb06ef": {
    "verdict": "ok",
    "note": "REVISED (checker D3): Source exercise fs-id1167658044762 (Short Answer, no source key) reverted from multiplechoice to selfcheck. The key sentence in § Carbon Cycle, fs-id1167662727931 (2nd sentence: 'Autotrophs also respire or ferment, consuming the organic molecules they form; they do not fix carbon for heterotrophs, but rather use it for their own metabolic needs.') states only autotrophs' own motivation; the former MC's key ('...just as heterotrophs do') needed inferring back to a different sentence about heterotrophs, and its distractors were invented rather than module-derived. Model answer is now the sourcing sentence verbatim; both rubric checkpoints are its own clauses. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -85485,6 +85459,14 @@
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "a814171989a54024": {
+   "verdict": "ok",
+   "note": "cloze from summary sentence 'Pi (π) bonds are formed from unhybridized atomic orbitals (p or d orbitals).' (para fs-idm25402912) | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a815fa215c653e95": {
    "verdict": "ok",
    "note": "Practice: line through (4,1) at t=0 and (6,-2) at t=1 -> x(t)=4+2t,y(t)=1-3t by linear interpolation; matches CNXML solution exactly. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -85505,14 +85487,6 @@
     "result": "agrees"
    }
   },
-  "a81e65a7e0cbb22b": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp16503888 — key bent; part: the central oxygen atom in the ozone molecule, O₃. Enter the molecular structure.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "a81f515e11255c34": {
    "verdict": "ok",
    "note": "KC 7-12 (multiplechoice, line 857): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
@@ -85528,10 +85502,6 @@
   "a824aab390e9ff48": {
    "verdict": "ok",
    "note": "body CYU selfcheck, unmatched (note is not an exercise); model answer from § Microbes and Viruses in Genetic Research (Morgan/Drosophila melanogaster paragraph). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
-  },
-  "a825c8b9c807b495": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp15556576 part (h)"
   },
   "a82aea864efc403b": {
    "verdict": "ok",
@@ -85584,10 +85554,6 @@
   "a839ab8dff192010": {
    "verdict": "ok",
    "note": "selfcheck, GAE diagnosis paragraph (CT/MRI, CSF/biopsy, serology not necessary) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "a83adb4ddfbf12b7": {
-   "verdict": "ok",
-   "note": "Model answer = source solution (block mass 2.76 g ~ displaced 2.8 g, Archimedes) unchanged; rubric split name/value (G9)."
   },
   "a83afe81a854f572": {
    "verdict": "ok",
@@ -85667,6 +85633,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "a860717d2990a3b3": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm49726752, model answer the source solution whole (unit chain set as Unicode prose) | chapter 10 close-out sweep, November 19, 2026: a choice and the self-check under it share one hint (lint) | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "a8616553012ebef6": {
    "verdict": "ok",
@@ -86044,6 +86014,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "a924433252f7cbe2": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm49800144 part (a) | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "a9259c078bb4a201": {
    "verdict": "ok",
@@ -86877,6 +86851,10 @@
     "result": "agrees"
    }
   },
+  "aafe77fc7191ab64": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm57514192 part (a); model answer = source solution, drawing CNX_Chem_02_04_Question9a_img checked against key-1137 | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
+  },
   "ab000ea458367231": {
    "verdict": "ok",
    "note": "KC 7-12 (multiplechoice, line 364): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
@@ -87037,10 +87015,6 @@
   "ab635a78fa91fa37": {
    "verdict": "ok",
    "note": "KC 5 21.2 § body Animal Viruses (fs-idm53380352), m66535 — parent re-read against the module"
-  },
-  "ab701b42250b6b2f": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm90452432, second answer paragraph (source comment) as model answer; question 'Why do we not notice…' added per parent decision 11 | re-read November 15, 2026: rubric clauses rewritten as runs of the model answer’s words; question, hint, and model answer unchanged"
   },
   "ab73769214c088b8": {
    "verdict": "ok",
@@ -88587,10 +88561,6 @@
     "result": "agrees"
    }
   },
-  "aea1d20965f6590b": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm183311984 (printed 25), solution fs-idm78594320 with its last phrase corrected 'less viscous' -> 'more viscous' (run-facts decision 8, erratum 3288, deviation filed)"
-  },
   "aea2b1adbd75e749": {
    "verdict": "ok",
    "note": "parent: t>=0 pin added (errata 57); residual y=5-sqrt(x/2-3) zero for t in 0..3 | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -88754,6 +88724,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "aee9c5f0b567cdb1": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp105919968; part: ; key (model answer) re-derived against the CNXML | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "aeedea25d536c666": {
    "verdict": "ok",
@@ -89334,14 +89308,6 @@
     "result": "agrees"
    }
   },
-  "b033243f19dc314c": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm16663792 — key tetrahedral; part: The hydronium ion, H₃O⁺, forms when acids are dissolved in water. Predict the electron-pai",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "b0366ee6bb3ac4db": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -89791,6 +89757,10 @@
     "result": "agrees"
    }
   },
+  "b140ed61a1f717ff": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm49800144 part (a) | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
+  },
   "b1464c3548696457": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -89868,6 +89838,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "b15a7d0972311270": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp44111184: model answer is the source solution, closing period added | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "b15c3ab5bba62064": {
    "verdict": "ok",
@@ -90007,6 +89981,14 @@
    "note": "author-built from § Evolving Trees of Life (Phylogenies): \"Whittaker’s tree also contained a level of categorization above the kingdom level—the empire or superkingdom level—to distinguish between o…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "b1b0932881c725ed": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp16503888 — key tetrahedral; part: the carbon atom in Freon, CCl₂F₂. Enter the molecular structure. | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -90214,10 +90196,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "b201a7c8934dfe04": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp105919968; part: ; key (model answer) re-derived against the CNXML"
   },
   "b2049744ccc405c6": {
    "verdict": "ok",
@@ -90938,6 +90916,10 @@
     "result": "agrees"
    }
   },
+  "b34e86e44821d23d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp17737968; key = source solution, re-derived against the CNXML and recomputed from the periodic table | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
+  },
   "b35043d425b14196": {
    "verdict": "ok",
    "note": "KC 2 7.4 § Amino Acids and Peptide Bonds, m58816",
@@ -91343,6 +91325,14 @@
   "b438d9d015a470f2": {
    "verdict": "ok",
    "note": "KC 4 19.1 § Type II (Cytotoxic) Hypersensitivities > ABO Blood Group Incompatibility, m58892",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "b43a35ec0163cf78": {
+   "verdict": "ok",
+   "note": "Area = length x length -> square meters (source key 37(f)); only hint rewritten (G1), hint names no unit. [Filed by the round-3 fixer under an earlier hash of this item; carried by the orchestrator after a round-3 edit that changed no key (a hint, a stem period, a datum added to a stem).] | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -91832,10 +91822,6 @@
     "result": "agrees"
    }
   },
-  "b52cf472a51c72b2": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm83382672 (printed 13): source answer carried whole after opening sentence and 'Sample answer:' label (answers-will-vary form; decision 9)"
-  },
   "b52f5550f2e5db05": {
    "verdict": "ok",
    "note": "body cloze from § Acid-Fast Stains: \"Two different methods for acid-fast staining are the Ziehl-Neelsen technique and the Kinyoun technique .\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried October 27, 2026: hyphenated accept member removed after the grader began folding a hyphen to nothing (closedForm); the removed spelling still grades correct",
@@ -91862,15 +91848,6 @@
   },
   "b53567259fd5787c": {
    "verdict": "ok"
-  },
-  "b536ca5e15613868": {
-   "verdict": "ok",
-   "note": "glossary recall: expansion work (fs-idp102383600), accept the module alias pressure-volume work",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "adjudicated",
-    "note": "The glossary term is “expansion work (pressure-volume work)”; the item's accept list holds pressure-volume work."
-   }
   },
   "b538f303689c8369": {
    "verdict": "ok",
@@ -92478,6 +92455,22 @@
    "verdict": "ok",
    "note": "Practice obj2, -2x^2+8xy+1=0, theta=45: node -e rotate(-2,8,0,0,0,1,45) gives Ap=3, Bp=2, Cp=-5, F=1 -> 3x'^2+2x'y'-5y'^2+1=0. Matches source's printed solution exactly. Not retype-passable from the printed subject (verified via check-answer.mjs, incorrect). | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "b663eb0294a8b946": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm32929264 part (b): 'S atoms, bent, with two lone pairs' -> bent | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "b666773a232c2716": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm11773136 part (b), cal/°C; 406.87/4.184 = 97.244 -> 97.2 carried; source 97.3 from its rounded 407 — corrected per ruling 5.1-2, last-digit:1 keeps 97.3 right, Source note | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged | re-solved blind November 24, 2026 (fix pass after the deep audit; dependency-changed): the solver’s answer agrees with the key.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b66ce828a65efe7e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -92902,6 +92895,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "b74e0acc45d58fde": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm25346224 solution | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "b7515e47eaf92e69": {
    "verdict": "ok",
@@ -93911,6 +93908,10 @@
    "verdict": "ok",
    "note": "PA KC 07-11 §11.1, Ch.11 Practice Test 'Plot and label these points' (m81354), whose key prints the answer graph with all five points. Re-derived by inspection of the printed prompt: the five ordered pairs are (2,5), (-1,-3), (-4,0), (3,-5) and (-2,1), and a points answer grades exactly the placement of those five. All five are distinct, on the snap-1 lattice and inside the -7..7 grid; the component grades them order-agnostically with partial-credit feedback."
   },
+  "b91b7052a13468a3": {
+   "verdict": "ok",
+   "note": "re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied; the question itself was reworded in the pass"
+  },
   "b921b5436e7ae1d2": {
    "verdict": "ok",
    "note": "sortbins from tbl-ch04_03_01; 11 items each in exactly one column; dense Elastic dropped as ambiguous",
@@ -94163,6 +94164,14 @@
   "b9c409a3c1d262e1": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "b9c7135298dcf55a": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp167759616 (HCl); 2 × −92.3; run-facts decision 2 | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "b9ca8f1a270b327b": {
    "verdict": "ok",
@@ -94795,6 +94804,14 @@
    "note": "glossary recall: stabilizing selection (fs-idm34760944) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "bb1662eb20da5ae4": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm16663792 — key tetrahedral; part: The hydronium ion, H₃O⁺, forms when acids are dissolved in water. Predict the electron-pai | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -96091,14 +96108,6 @@
     "result": "agrees"
    }
   },
-  "bd7cbd1032c5db70": {
-   "verdict": "ok",
-   "note": "glossary recall: tetrahedral (fs-idp51917808) — provenance backfilled 2026-11-16 (ledger-provenance.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "bd7dcf13f02eb323": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -96138,10 +96147,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "bd8ba379fdbc3f69": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm49800144 part (b)"
   },
   "bd8e537cefb11c9e": {
    "verdict": "ok",
@@ -96434,14 +96439,6 @@
   "be1fcaf7192b2ffa": {
    "verdict": "ok",
    "note": "glossary recall: trochophore (fs-idp5617408) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "be2013b5b34ded81": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp13559760 (printed 9); 14500/(485 x 4.184) = 7.1455 -> 7.15, source 7.15 °C | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -96847,6 +96844,19 @@
   "beff39bc82eb5fd0": {
    "verdict": "ok",
    "note": "author selfcheck paraphrasing fs-id1586933 sentences 2, 3, 5"
+  },
+  "bf07f2fe6dfc28d0": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm314038064 (printed 37) part (g); source key cubic meters; textin | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "Key stands: the source answer is \"cubic meters\" and the stem asks for an SI base or derived unit built directly from base units; the module calls the liter \"the more common name for the cubic decimeter\", a prefixed multiple, and gives the cubic meter as the standard SI unit of volume."
+   }
+  },
+  "bf096f89abf91614": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm165679168 part (b), solution fs-idm101918992, that part’s segment | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "bf0c87d7f5349125": {
    "verdict": "ok",
@@ -97273,10 +97283,6 @@
     "result": "agrees"
    }
   },
-  "bfe703364d65d204": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp45725024 part (a) N: model answer shows OrbDiaSh2a_img (2s² 2p³), the part own image"
-  },
   "bfe8359f42cf3585": {
    "verdict": "ok",
    "note": "reverted to selfcheck per checker defect 2 / parent ruling: the source SA's key needs the degerming definition sentence plus the later, non-adjacent 'remove most but not all' sentence — two sentences, not one — so it is not gradable as multiplechoice; model + rubric from those two sentences plus the alcohol-swab sentence between them. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -97608,6 +97614,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "c07067eb7fe62ac4": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm30783968, drawing H2SO4 | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "c071fa3c4cbb056c": {
    "verdict": "ok",
@@ -99071,6 +99081,10 @@
     "result": "agrees"
    }
   },
+  "c387b416fbc81cd0": {
+   "verdict": "ok",
+   "note": "re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied; the question itself was reworded in the pass"
+  },
   "c38cef516640783f": {
    "verdict": "ok",
    "note": "source key confirmed against CNXML",
@@ -99144,14 +99158,6 @@
     "note": "Source-keyed multiple choice (m58851 solution: D). The module's oversight paragraph describes FDA review of the IND, the clinical hold 'prior to or during the clinical trial', and the NDA for manufacture and marketing, so the source key stands; 'during clinical trials' alone is the incomplete answer the source's own option D supersedes."
    }
   },
-  "c3acadc579c83e24": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm32929264 part (b): 'S atoms, bent, with two lone pairs' -> bent",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "c3ad62d95cde0760": {
    "verdict": "ok",
    "note": "source exercise fs-id1172100621865 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -99175,14 +99181,6 @@
   "c3b2df2c7c6d5002": {
    "verdict": "ok",
    "note": "KC 2 9.1 § Sustaining Microbial Growth, m58828 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "c3b827906c325457": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm11773136 part (a), J/°C; 45.8 x 1.040 = 47.632 -> 47.6, source 47.6 J/°C | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -99247,6 +99245,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "c3caa286e932d073": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp45725024 part (a) N: model answer shows OrbDiaSh2a_img (2s² 2p³), the part own image | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "c3ce9a776dc941d0": {
    "verdict": "ok",
@@ -99725,14 +99727,6 @@
   "c4a986a4e7ee5b0e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "c4aa2c0d9a883683": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm9916608 part (a): 'Each S has a bent (109°) geometry' -> bent | closing sentence clarified by the parent after the blind solve (\"about each sulfur atom\"); key unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -100534,14 +100528,6 @@
     "result": "agrees"
    }
   },
-  "c6411e03ef387795": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp67177072 — key tetrahedral; part: PCl₃. Enter the electron-pair geometry.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "c643bf879fbcd97b": {
    "verdict": "ok",
    "note": "KC 6 28.4 § Effects of Hormones, m46353",
@@ -100673,6 +100659,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "c677aa75ef8f9d73": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp170194320 — model answer the source solution; Explain how a molecule that contains polar bonds can be nonpolar. | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "c677dfccc4f8cb65": {
    "verdict": "ok",
@@ -100855,10 +100845,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "c6d89a89eeb2f073": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp15556576 part (j)"
   },
   "c6dbf12c0545fe8f": {
    "verdict": "ok",
@@ -101346,14 +101332,6 @@
    "verdict": "ok",
    "note": "1+29e^(-.62t)=4/3 -> t=ln87/.62=7.203 -> 7.2; key p1316 #65"
   },
-  "c7e46373be8fdd73": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp16503888 — key bent; part: the oxygen atom in hydrogen peroxide, HOOH. Enter the molecular structure.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "c7e87d4ebbba8984": {
    "verdict": "ok",
    "note": "Critical Thinking fs-idp83533840 (obesity epidemic): model answer is the source solution verbatim; checkpoints decompose its three clauses with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -101773,6 +101751,14 @@
     "result": "agrees"
    }
   },
+  "c8d4584adc7391aa": {
+   "verdict": "ok",
+   "note": "glossary recall: oxyacid (definition fs-idp282228224) | re-stemmed November 14, 2026: the question is built on the body's sentence (\"at least one other element\") in place of the glossary's, which the page's Source note calls incomplete; key and accept unchanged | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c8d4eaa5afbb5c79": {
    "verdict": "ok",
    "note": "Glossary recall: term 'polysome', meaning transcribed from the module's own glossary definition.; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -101962,14 +101948,6 @@
   "c9375a1fc85884f0": {
    "verdict": "ok",
    "note": "author-built from § The Chemistry of Carbon: \"They are involved in dehydration synthesis and hydrolysis reactions.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "c939fe9828e70b00": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm41581920 (identity); source 'the metal is likely to be iron'; options the Table 5.1 metals in table order (run facts decision 9) | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -103305,6 +103283,14 @@
   "cb9471e91cfb14fc": {
    "verdict": "ok",
    "note": "Critical Thinking fs-id1752976, model answer = solution fs-id1891151 verbatim; checks are its clauses; moved to objective 2 after Review fs-id1689617"
+  },
+  "cb975287e10bc63f": {
+   "verdict": "ok",
+   "note": "cloze from body sentence fs-idp40754368 (also Summary); accept monatomic ions (head noun) | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "cb9839547d8dcce0": {
    "verdict": "ok",
@@ -104900,10 +104886,6 @@
     "result": "agrees"
    }
   },
-  "cef3a9bb7f57bb33": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp29495632, solution fs-idm72707904 (image phosnitro_img + paragraph) whole; drawing sentence author-written from the image"
-  },
   "cef4b970a3254ce8": {
    "verdict": "ok",
    "note": "KC 5 25.2 § body Charophytes (fs-idp24816448), m66567 — parent re-read against the module"
@@ -105479,6 +105461,10 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "d0343373db48ed84": {
+   "verdict": "ok",
+   "note": "re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied; the question itself was reworded in the pass"
+  },
   "d03b022c92f171e9": {
    "verdict": "ok",
    "note": "KC 7 43.4 § The Ovarian Cycle and the Menstrual Cycle, m66674 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | Biology knowledge check 33-43 author (KC) selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the corpus luteum and endometrium sentences of the ovarian-cycle paragraph)"
@@ -105689,6 +105675,10 @@
    "verdict": "ok",
    "note": "Bio 41.4 selfcheck \"In terms of evolution, why might the urea cycle ha\": hint location-only, model answer and rubric checked against the module; parent re-read Sep 24 2026"
   },
+  "d0a718539ad81d14": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm34987968 (printed Exercise 1), solution fs-idp19762080 verbatim as model answer | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
+  },
   "d0a993e7698c2da8": {
    "verdict": "ok",
    "note": "Glossary textin, term 'neritic zone' (fs-idm245749408). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -105753,10 +105743,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "d0d55c264ce4e79a": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm112612912 (omitted fs-idm28786800 restated verbatim); answers-will-vary form; guessed-mixture average corrected 20.18 -> 20.17 (ruling 2.3-1)"
   },
   "d0d7e3c46282ca45": {
    "verdict": "ok",
@@ -105985,10 +105971,6 @@
   "d15e0b6bee8f0e18": {
    "verdict": "ok",
    "note": "f(x)=-5(4)^x-1: as x->infinity, 4^x->infinity so f->-infinity; matches CNXML solution exactly (computed independently, not copied from key). | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
-  },
-  "d16046c8c6ecd11f": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp44111184: model answer is the source solution, closing period added"
   },
   "d160e390e58a6231": {
    "verdict": "ok",
@@ -106226,10 +106208,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "d1e624c58d96521e": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp47770992 (printed 31): image CNX_Chem_08_02_CO2Diag + sentence fs-idp72644016"
   },
   "d1ece4161c10e196": {
    "verdict": "ok",
@@ -107033,10 +107011,6 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "d3c4e2402b0cbde5": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm11351120 (module ex 8, printed 15); model answer = criteria sentence in the question's words + source sample answer verbatim"
-  },
   "d3ca7aacfc93641b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -107076,6 +107050,14 @@
   "d3db898660c8e02a": {
    "verdict": "ok",
    "note": "source exercise fs-idp15391168 part (f); key 0.44 from solution fs-idp334708000; recomputed with round-half-even [Filed by the author under an earlier hash of this item; carried by the orchestrator after a round-3 edit that changed no key (a hint, a stem period, a datum added to a stem).]",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d3dbe4a0aa26020d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp67177072 — key bent; part: PH₂⁻. Enter the molecular structure. | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -107196,10 +107178,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "d40bc54c36b2b2b6": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp105919968; part: ; key (model answer) re-derived against the CNXML"
   },
   "d40cde01c96d66cd": {
    "verdict": "ok",
@@ -107558,6 +107536,14 @@
   "d49ae3d38777925b": {
    "verdict": "ok",
    "note": "glossary recall fs-id1917098 erythroblastosis fetalis; body term-00002; accept 'hemolytic disease of the newborn' from fs-id2158747 apposition; accept also erythroblastosis foetalis (checker fix)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d49dac724fdbcac3": {
+   "verdict": "ok",
+   "note": "glossary recall: interstitial sites (definition fs-idm134621184) | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -108151,6 +108137,14 @@
   "d5d0534a6eb78a4a": {
    "verdict": "ok",
    "note": "glossary recall fs-id1640624 (axon hillock); body fs-id1455946 prints it; re-read against m46509 CNXML and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d5d6227c75e4274d": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp123628080 — key tetrahedral; part: SO₂F₂ (S is the central atom). Enter the electron-pair geometry. | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -110166,10 +110160,6 @@
     "result": "agrees"
    }
   },
-  "da0152d445c22f23": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp145119536"
-  },
   "da0261fd4f67c068": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -110416,14 +110406,6 @@
   "da6a46ed903c49b2": {
    "verdict": "ok",
    "note": "body cloze, Characteristics fs-id2271392; key friction verbatim",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "da6e00e3ae0097f1": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm382810864 part (c): alkaline earth metal",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -110804,6 +110786,14 @@
   "db1fb2a1513e7fba": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "db22799129e382ed": {
+   "verdict": "ok",
+   "note": "KC 3 7.6 § Example: Predicting Electron-pair Geometry and Molecular Structure: Ammonium, m68742 | accept members added November 18, 2026: geometry twins and Sm³⁺ core form (Derek's rulings) | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -111291,14 +111281,6 @@
     "result": "agrees"
    }
   },
-  "dc161cc236548c35": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm49726752 (answer '...Cr is the limiting reactant.'); options the stem's Cr, H3PO4; 0.50 mol Cr needs 0.50 mol H3PO4 of 0.75 -> Cr",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "dc166d84216555ec": {
    "verdict": "ok",
    "note": "CNXML fs-id1172102131740 SA, source prints no key; selfcheck assembled from § Plate Count and § Direct Cell Count (Coulter counter) sentences"
@@ -111488,10 +111470,6 @@
     "result": "agrees"
    }
   },
-  "dcac5b44a3e9f08e": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp45725024 part (c) Fe: OrbDiaSh2c_img (4s² 3d⁶)"
-  },
   "dcafdac3d7ae2787": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -111559,14 +111537,6 @@
   "dcd98f01f94765ed": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "dcda636642a0636b": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm34686800 (printed 7), calories; 1307.7/4.184 = 312.55 -> 313, source 313 cal | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -111656,6 +111626,10 @@
     "result": "agrees"
    }
   },
+  "dcfb0580ee4415cb": {
+   "verdict": "ok",
+   "note": "re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied; the question itself was reworded in the pass"
+  },
   "dcfe115005e47477": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -111667,10 +111641,6 @@
   "dcff7ad4161f9b73": {
    "verdict": "ok",
    "note": "6.4 author reading: source CT fs-id1812566; model answer = solution fs-id1173842 verbatim; 6 checks are its clauses"
-  },
-  "dd06c924dddc14d7": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp17737968; key = source solution, re-derived against the CNXML and recomputed from the periodic table"
   },
   "dd0af5d8d234318f": {
    "verdict": "ok",
@@ -111709,6 +111679,14 @@
   "dd293ebd83794f32": {
    "verdict": "ok",
    "note": "source exercise fs-id1167663887046 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "dd2b884e3fa2739d": {
+   "verdict": "ok",
+   "note": "glossary recall: tetrahedral (fs-idp51917808) — provenance backfilled 2026-11-16 (ledger-provenance.mjs) | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -112078,6 +112056,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "dde36393838f40c4": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp84623072 (printed 5), model answer = solution fs-idp150643856 words verbatim plus its image CNX_Chem_08_01_O2bonds_img | hint reworded by the parent after the fix check or the blind solve (hint-only edit); stem, options, key, and model answer unchanged | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "dde6361d989dcc0b": {
    "verdict": "ok",
@@ -112561,6 +112543,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "deffb263b71f63f2": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp23764656 (printed 13), energy; 4.184 x 892000 x 7.222/3.6e6 = 7.487 -> 7.5 at the data's 2 figures; source 7.47 — corrected per ruling 5.1-3, Source note | rebound 2026-11-16 (ledger-carry): \"the table\" now binds to the Markdown table, a named table to the table of that name; stem, options, key, and the page's blocks unchanged | re-solved blind November 24, 2026 (fix pass after the deep audit; dependency-changed): the solver’s answer agrees with the key.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "df000a05081419a1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -112889,10 +112879,6 @@
     "result": "agrees"
    }
   },
-  "dfa5728189ac8f48": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm150329120 (printed 23): solution carried whole"
-  },
   "dfa75dea5efea825": {
    "verdict": "ok",
    "note": "KC 4 18.3 § Varying Rates of Speciation, m66521 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | Biology KC re-review Sep 24 2026 (knowledge-check-18-20.md:89): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
@@ -113016,6 +113002,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "dfcbd139adb15b3b": {
+   "verdict": "ok",
+   "note": "re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied; the question itself was reworded in the pass"
   },
   "dfcbf0fbf7b76368": {
    "verdict": "ok",
@@ -113156,10 +113146,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "e0065c2d80caa54b": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm49800144 part (f)"
   },
   "e006f264984e0f4f": {
    "verdict": "ok",
@@ -113504,6 +113490,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "e0a0dfc2e5bf5093": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp59620704, source answer whole with its drawing Ex070402_img | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "e0a8250afcd25483": {
    "verdict": "ok",
@@ -114071,6 +114061,10 @@
    "verdict": "ok",
    "note": "EA 4.2 re-review (Sep 27 2026): parent re-derived y=-2x+4 → slope -2, intercept 4; three lattice points on the -12..12 grid, e.g. (0,4),(1,2),(2,0)."
   },
+  "e1c9f22dbbbd7bf0": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm61727056 part (b); model = source solution part (b) verbatim; stem \"those in (a)\" written \"those in the previous item\" (parent ruling 7) | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
+  },
   "e1ca76fb17ce98cd": {
    "verdict": "ok"
   },
@@ -114584,10 +114578,6 @@
     "result": "agrees"
    }
   },
-  "e2bc9c8534ec552a": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp113763312 solution"
-  },
   "e2bd132625a8fc8b": {
    "verdict": "ok",
    "note": "glossary recall fs-id1844994 pivot joint; accept pivot",
@@ -114987,6 +114977,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "e39f0e6ed66e5791": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm49800144 part (a) | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "e3a0bee938d437d8": {
    "verdict": "ok",
@@ -115704,6 +115698,14 @@
    "verdict": "ok",
    "note": "KC 1 4.2 § Gammaproteobacteria (fs-id1172100531140), m58796"
   },
+  "e4e9bf054811c177": {
+   "verdict": "ok",
+   "note": "KC 1 1.2 § Atoms and Molecules, m68667 | re-solved blind November 24, 2026 (fix pass after the deep audit; changed): the solver’s answer agrees with the key.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e4eaa9a3c15773e4": {
    "verdict": "ok"
   },
@@ -115797,10 +115799,6 @@
   },
   "e51e5f904e28f02a": {
    "verdict": "ok"
-  },
-  "e51ef1ad38ef6d85": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp22524928 explanation; ruling 6 model answer"
   },
   "e51f5522c82be501": {
    "verdict": "ok",
@@ -116675,6 +116673,14 @@
     "result": "agrees"
    }
   },
+  "e6fb13e28efd5347": {
+   "verdict": "ok",
+   "note": "cloze from body sentence (para fs-idp139124096) \"Chemist Percy Lavon Julian turned to a more plentiful source: soybeans.\"; accept soy (module prints soy protein, soy sterols) | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e6fd2f39b59b90bc": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -116878,10 +116884,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "e776e9bb2dc47ebe": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm89275552, answer verbatim with $Z$ and describing phrase"
   },
   "e779013356c9342b": {
    "verdict": "ok",
@@ -117318,10 +117320,6 @@
     "result": "agrees"
    }
   },
-  "e8a06cbb5e7a18a9": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm34987968 (printed Exercise 1), solution fs-idp19762080 verbatim as model answer"
-  },
   "e8ab30dc70781785": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -117361,6 +117359,10 @@
   "e8cb907d1123939d": {
    "verdict": "ok",
    "note": "Bio 45.3 selfcheck \"How does natural selection connect to intraspecifi\": hint location-only, model answer and rubric checked against the module; parent re-read Sep 24 2026"
+  },
+  "e8cfec50bd2c2471": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp149682416 — model answer the source solution; ecule might have. Give an example of a molecule or ion for each shape. | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "e8d46c27bf947cc7": {
    "verdict": "ok",
@@ -117634,10 +117636,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "e94ca0e44456d0b4": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp107697296; model = source solution fs-idm61224992 verbatim"
   },
   "e951150708b6db7f": {
    "verdict": "ok",
@@ -118019,14 +118017,6 @@
   "e9f15b3777832eb3": {
    "verdict": "ok",
    "note": "Critical Thinking fs-idp197210288. Model answer is the CNXML solution verbatim, naming the salivary glands, liver, pancreas, and gallbladder as the accessory organs, matching the Accessory Organs subsection. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "e9f9a2e9596d19e7": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp16503888 — key tetrahedral; part: the carbon atom in Freon, CCl₂F₂. Enter the molecular structure.",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "e9fb4780b76c9584": {
    "verdict": "ok",
@@ -119633,10 +119623,6 @@
     "result": "agrees"
    }
   },
-  "ecfdb108d3c15055": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp15556576 part (f)"
-  },
   "ed05219ea0e933bc": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -120648,6 +120634,14 @@
     "result": "agrees"
    }
   },
+  "ef222a0ddd8fb785": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm135170880 part (f): sublimation; at 10^6 Pa the only boundary between 3000 and 5000 K is the solid/vapor line at ~3845 K (graphite → vapor) | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ef2996707ef5298c": {
    "verdict": "ok",
    "note": "KC 3 15.1 § body The Genetic Code Is Degenerate and Universal (fs-id913366), m66497 — parent re-read against the module"
@@ -120739,6 +120733,10 @@
    "verdict": "ok",
    "note": "Source Critical Thinking Question fs-id2309538, module m46008; model answer is the source solution verbatim (12 C, 22 H, 11 O; one water molecule removed by dehydration synthesis)."
   },
+  "ef5fc16e7ca724a8": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp45725024 part (a) N: model answer shows OrbDiaSh2a_img (2s² 2p³), the part own image | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
+  },
   "ef6040d186ebfa38": {
    "verdict": "ok",
    "note": "Population decreasing by a constant factor (1/8) each equal period is exponential decay; matches CNXML solution 'exponential; the population decreases by a proportional rate.' | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -120770,6 +120768,14 @@
   "ef6ca679f08d0e49": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "ef6def070532902f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp67177072 — key seesaw; structure of the following molecule or ion? SeF₄. Enter the molecular structure. | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "ef7114faf2db6b88": {
    "verdict": "ok",
@@ -122299,10 +122305,6 @@
     "result": "agrees"
    }
   },
-  "f29680a885bced38": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp169761136 part (a): source solution verbatim"
-  },
   "f2970ed86018adc3": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -122427,14 +122429,6 @@
     "result": "agrees"
    }
   },
-  "f2ce23af9183eda4": {
-   "verdict": "ok",
-   "note": "glossary recall: interstitial sites (definition fs-idm134621184)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "f2d11e2ff7f053a6": {
    "verdict": "ok",
    "note": "source fs-id1706649 solution verbatim; checks are its clauses"
@@ -122544,6 +122538,15 @@
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
+   }
+  },
+  "f31c5ad8672d5fbd": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm11079584 (answer: Se2-, the selenide ion) — name, keyed bare with the two-word form accepted; hint reworded after the fix check (parent) so that it no longer says which kind of ion this is; key unchanged | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page) | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "Key stands: keyed bare \"selenide\" with \"selenide ion\" in accept (playbook name row: the grader drops \"the\", not \"ion\"), so the solver's \"selenide ion\" and the bare name both grade correct. Source answer: \"Se2-, the selenide ion\"."
    }
   },
   "f31d1880a0bd0c0e": {
@@ -124191,10 +124194,6 @@
     "result": "agrees"
    }
   },
-  "f61d4aad5ed357ad": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm165679168 part (b), solution fs-idm101918992, that part’s segment"
-  },
   "f6203ee771e66b3c": {
    "verdict": "ok",
    "note": "Glossary recall: alkaliphile, meaning transcribed from the glossary definition (pH nine or above).; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -125080,10 +125079,6 @@
     "note": "Key Ne is the source's (m68735 fs-idm167417008#check, \"Ne or He\"); He and H are in accept, H as a disclosed widening (erratum) because the page's own radii figure shows it smaller."
    }
   },
-  "f7b2e95cf4df6cc5": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm25346224 solution"
-  },
   "f7b9f5b77559ed4d": {
    "verdict": "ok",
    "note": "CT fs-id1517525 source solution verbatim; checks are its clauses"
@@ -125240,14 +125235,6 @@
    "note": "Body CYU, Transduction section (fs-id1167663636244), bullet 2. Multiplechoice keyed by the specialized-transduction sentence; distractors are this module's own descriptions of generalized transduction, conjugation (F plasmid/pilus), and transformation (naked DNA from environment) — a compare-the-three-mechanisms test, not invented content. Key at position C. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "f7fb688ddeeb1b2b": {
-   "verdict": "ok",
-   "note": "cloze from body sentence \"The precipitate is typically isolated from the reaction mixture by filtration, carefully dried, and then weighed\" (para fs-idp272684448)",
-   "solved": {
-    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -125956,6 +125943,14 @@
     "result": "agrees"
    }
   },
+  "f96288a2ff08d236": {
+   "verdict": "ok",
+   "note": "cloze from body sentence fs-idm60561504 \"Solutions have previously been defined as homogeneous mixtures...\" | carried 2026-11-24 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f9655f7f2ba36125": {
    "verdict": "ok",
    "note": "source exercise fs-idm91520496 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -126093,14 +126088,6 @@
   "f9a0a48b30f549ef": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "f9a4227aa4ffecab": {
-   "verdict": "ok",
-   "note": "cloze from body sentence \"Weight refers to the force that gravity exerts on an object.\" (para fs-idp63221808); key gravity",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -126253,6 +126240,10 @@
     "result": "agrees"
    }
   },
+  "f9f96a3780533e9b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp145119536 | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
+  },
   "f9fa4dbd86a6f4a6": {
    "verdict": "ok",
    "note": "author-built from § Lipid Catabolism: \"These microbes use phospholipases to destroy lipids and phospholipids in host cells and then use the catabolic products for energy (see Vir…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -126380,6 +126371,10 @@
   "fa46890c9a06b2e7": {
    "verdict": "ok",
    "note": "Body selfcheck, CYU box2 bullet1 (viral HA mechanism) — model answer from the hemagglutinin-binds/cross-links-RBCs/diffuse-mat sentences; kept as selfcheck rather than converted because it would otherwise re-ask the same fact as the source-keyed MC fs-id1167661643289."
+  },
+  "fa4c0cbd3440f87a": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm51838704; source answer verbatim; 405.5 K = table 132.4 °C + 273.15 (405.55, kept as printed per decision 28) | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "fa4de87d795bd08a": {
    "verdict": "ok"
@@ -127981,10 +127976,6 @@
     "result": "agrees"
    }
   },
-  "fd4745f347394ee3": {
-   "verdict": "ok",
-   "note": "source exercise fs-idm164758784 part (b); sample answer is the source segment whole; rubric clauses made statements after the fix check (parent) | re-read November 15, 2026: the added opening sentence now repeats its verb (\"states its net charge, and states its mass number\") so each rubric clause is a run of its words; the source’s sample answer unchanged"
-  },
   "fd474ee73cd369d3": {
    "verdict": "ok",
    "note": "source exercise fs-id1172102145471 (prose-key) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
@@ -128202,6 +128193,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "fda3d1a994de4df2": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp28025040; source answer carried as the model answer; rubric clause split after the fix check (parent), model answer unchanged | re-read November 15, 2026: rubric clauses rewritten as runs of the model answer’s words; question, hint, and model answer unchanged | carried November 17, 2026 (notation-lint sweep): re-hashed by a row gap (\\\\[6pt]) in the model answer’s display; the question and the key are byte-for-byte unchanged | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "fda3fd6d95feb140": {
    "verdict": "ok",
@@ -128438,6 +128433,10 @@
   "fe2634ad8129e33e": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "fe26accf03914959": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp28635312, source solution whole | re-read November 24, 2026 (fix pass after the deep audit): the fixer changed this self-check (model answer, rubric, hint, or question) to the audit finding and the rulings; an independent Opus reader then read the changed text against the question, the module, and the fixer’s evidence, and its corrections were applied"
   },
   "fe27e786f2fa6656": {
    "verdict": "ok",

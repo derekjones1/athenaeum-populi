@@ -580,7 +580,7 @@ For example, consider H₂CO₃ (which you might be tempted to call “hydrogen 
 {{< textin
   question="What is the term for a compound that contains hydrogen, oxygen, and at least one other element, and is bonded in such a way as to impart acidic properties to the compound?"
   answer="oxyacid"
-  accept="oxy acid"
+  accept="oxy acid|oxoacid|oxo acid"
   hint="Reread the last two subsections of the body, on naming acids."
 >}}
 

@@ -43,7 +43,7 @@ weight: 12
 | $\ce{HClO + H3O^+ + 2e^- -> Cl^- + 2H2O}$ | +1.482 |
 | $\ce{HClO + H3O^+ + e^- -> 1/2 Cl2 + 2H2O}$ | +1.611 |
 | $\ce{HClO2 + 2H3O^+ + 2e^- -> HClO + 3H2O}$ | +1.628 |
-| $\ce{Co^3+ + e^- -> Co^2+}$ (2 mol // H₂SO₄) | +1.83 |
+| $\ce{Co^3+ + e^- -> Co^2+}$ (2 *M* H₂SO₄) | +1.83 |
 | $\ce{Co^2+ + 2e^- -> Co}$ | −0.28 |
 | $\ce{[Co(NH3)6]^3+ + e^- -> [Co(NH3)6]^2+}$ | +0.1 |
 | $\ce{Co(OH)3 + e^- -> Co(OH)2 + OH^-}$ | +0.17 |
@@ -89,7 +89,7 @@ weight: 12
 | $\ce{Mg^2+ + 2e^- -> Mg}$ | −2.372 |
 | $\ce{Mn^2+ + 2e^- -> Mn}$ | −1.185 |
 | $\ce{MnO2 + 2H2O + 2e^- -> Mn(OH)2 + 2OH^-}$ | −0.05 |
-| $\ce{MnO4^- + 2H2O + 3e^- -> MnO2 + 4OH^-}$ | +0.558 |
+| $\ce{MnO4^- + 2H2O + 3e^- -> MnO2 + 4OH^-}$ | +0.595 |
 | $\ce{MnO2 + 4H^+ + 2e^- -> Mn^2+ + 2H2O}$ | +1.23 |
 | $\ce{MnO4^- + 8H^+ + 5e^- -> Mn^2+ + 4H2O}$ | +1.507 |
 | $\ce{Na^+ + e^- -> Na}$ | −2.71 |
@@ -101,7 +101,7 @@ weight: 12
 | $\ce{NiS + 2e^- -> Ni + S^2-}$ | +0.76 |
 | $\ce{NO3^- + 4H^+ + 3e^- -> NO + 2H2O}$ | +0.957 |
 | $\ce{NO3^- + 3H^+ + 2e^- -> HNO2 + H2O}$ | +0.92 |
-| $\ce{NO3^- + H2O + 2e^- -> NO2^- + 2OH^-}$ | +0.10 |
+| $\ce{NO3^- + H2O + 2e^- -> NO2^- + 2OH^-}$ | +0.01 |
 | $\ce{Np^3+ + 3e^- -> Np}$ | −1.856 |
 | $\ce{O2 + 2H2O + 4e^- -> 4OH^-}$ | +0.401 |
 | $\ce{O2 + 2H^+ + 2e^- -> H2O2}$ | +0.695 |
@@ -149,6 +149,8 @@ weight: 12
 
 *Source note:* six half-reactions are printed here with a charge the source misprints. The source gives the silver–thiosulfate complex, $\ce{[Ag(S2O3)2]^3-}$, a charge of 3+; it prints $\ce{Ce^3+}$, $\ce{Cr^3+}$, $\ce{Pu^3+}$, and $\ce{Zr^4+}$ in their reductions to the metal without the plus sign; and it prints $\ce{[Zn(OH)4]^2-}$ without the minus sign. With the charges shown here, each half-reaction is balanced in charge.
 
+*Source note:* three more rows are corrected here from the electrochemical series of the *CRC Handbook of Chemistry and Physics* (P. Vanýsek), the table this one follows. The source prints +0.558 V for the reduction of permanganate to manganese dioxide in base; 0.558 V is the potential of a different reaction, $\ce{MnO4^- + e^- -> MnO4^2-}$, and the handbook gives +0.595 V for this one. It prints +0.10 V for the reduction of nitrate to nitrite in base, where the handbook gives +0.01 V. And it writes the condition of the cobalt(III) reduction as “(2 mol // H₂SO₄)”, which the handbook gives as 2 molar sulfuric acid.
+
 ---
 
-<small>This appendix is adapted from [Chemistry 2e, Appendix L: Standard Electrode (Half-Cell) Potentials](https://openstax.org/books/chemistry-2e/pages/l-standard-electrode-half-cell-potentials) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the table transcribed as a Markdown table with its title as a bold line above it; the half-reactions typeset as KaTeX math; the charges of six ions corrected, as the Source note says.</small>
+<small>This appendix is adapted from [Chemistry 2e, Appendix L: Standard Electrode (Half-Cell) Potentials](https://openstax.org/books/chemistry-2e/pages/l-standard-electrode-half-cell-potentials) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the table transcribed as a Markdown table with its title as a bold line above it; the half-reactions typeset as KaTeX math; the charges of six ions corrected, as the Source note says; and the potentials of two half-reactions and the condition of a third corrected, as the second Source note says.</small>

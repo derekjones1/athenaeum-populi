@@ -505,7 +505,9 @@ test('the chemistry subject playbook states the rules its engine enforces', asyn
     assert.equal(describeIncorrectFeedback(typed, form, key), sentence, `${typed} against ${key}`);
     assert.ok(chem.replace(/\s+/g, ' ').includes(sentence), `the playbook quotes "${sentence}"`);
   }
-  for (const [typed, key] of [['0.7', '0.674'], ['90', '89.4']]) assert.equal(checkAnswer(typed, key, { form }), 'incorrect', `${typed} against ${key}`);
+  // Audit round 2 (November 24, 2026): a shorter response is form only where it IS the key rounded, a tie either neighbour.
+  for (const [typed, key] of [['0.7', '0.674'], ['10', '7.50'], ['1.0', '0.974']]) assert.equal(checkAnswer(typed, key, { form }), 'incorrect', `${typed} against ${key}`);
+  for (const [typed, key] of [['90', '89.4'], ['7.1', '7.15'], ['7.2', '7.15'], ['1000', '1040'], ['460', '462']]) assert.equal(checkAnswer(typed, key, { form }), 'form', `${typed} against ${key}`);
   assert.match(chem, /Both\s+tokens\s+are\s+always\s+declared\s+together/);
   // One data set, one right answer (November 12–13, 2026): the playbook's
   // table is the grader's real behaviour, and the two designs that gave a
@@ -615,6 +617,17 @@ test('the chemistry subject playbook states the rules its engine enforces', asyn
     { shown: '4Na + 2C + 3O2 -> 2Na2CO3', key: SODA, form: 'equation', status: 'form' },
     { shown: '2Na(s) + C(s) + 3/2O2(g) -> Na2CO3(s)', key: SODA, form: 'equation', status: 'correct' },
     { shown: '2Na(s) + C(s, diamond) + 3/2O2(g) -> Na2CO3(s)', key: SODA, form: 'equation', status: 'form' },
+    // The grader audit, November 24, 2026 (G2, G7, G8).
+    { shown: 'Al13+', key: 'Al³⁺', form: 'formula', status: 'incorrect' },
+    { shown: 'C14-', key: 'C⁴⁻', form: 'formula', status: 'incorrect' },
+    { shown: 'Na11+', key: 'Na⁺', form: 'formula', status: 'incorrect' },
+    { shown: '(3/2)O2', typed: '2Na + C + (3/2)O2 -> Na2CO3', key: SODA, form: 'equation', status: 'correct' },
+    { shown: '1 1/2 O2', typed: '2Na + C + 1 1/2 O2 -> Na2CO3', key: SODA, form: 'equation', status: 'correct' },
+    { shown: 'C(graphite)', typed: '2Na(s) + C(graphite) + 3/2O2(g) -> Na2CO3(s)', key: SODA, form: 'equation', status: 'correct' },
+    { shown: 'Fe^(3+)', typed: 'Fe(NO3)3 -> Fe^(3+) + 3NO3^(-)', key: 'Fe(NO₃)₃(s) ⟶ Fe³⁺(aq) + 3NO₃⁻(aq)', form: 'equation', status: 'correct' },
+    { shown: 'NO3^(-)', typed: 'Fe(NO3)3 => Fe^3+ + 3NO3^(-)', key: 'Fe(NO₃)₃(s) ⟶ Fe³⁺(aq) + 3NO₃⁻(aq)', form: 'equation', status: 'correct' },
+    { shown: '4C + 5H2 + 1/2O2 -> (C2H5)2O', key: ETHER, form: 'equation', status: 'form' },
+    { shown: '… -> CH3CH2OCH2CH3', typed: '4C + 5H2 + 1/2O2 -> CH3CH2OCH2CH3', key: ETHER, form: 'equation', status: 'form' },
   ];
   // The table, row by row: the backticked responses of its Typed cell (not
   // "for `NaCl`", which names a key, nor `=` or `→`, which name an arrow).

@@ -69,7 +69,7 @@ only an integer number of wavelengths could fit exactly within the orbit
 {{< textin
   question="Which scientist proposed the interpretation of the wavefunction that is still accepted today: electrons are still particles, and so the waves represented by ψ are not physical waves but, instead, are complex probability amplitudes? Enter the scientist’s name."
   answer="Max Born"
-  accept="Born"
+  accept="Born|M. Born"
 >}}
 
 {{< fillin
@@ -237,13 +237,13 @@ an endothermic reaction (ΔH positive, heat absorbed) results when the bonds in 
 {{< textin
   question="Two of the top 50 chemicals produced in the United States, ammonium nitrate and ammonium sulfate, both used as fertilizers, contain the ammonium ion. Predict the electron-pair geometry and molecular structure of the NH₄⁺ cation. Enter the electron-pair geometry."
   answer="tetrahedral"
-  accept="tetrahedron"
+  accept="tetrahedron|tetrahedral geometry"
 >}}
 
 {{< textin
   question="Sulfur tetrafluoride, SF₄, is extremely valuable for the preparation of fluorine-containing compounds used as herbicides (i.e., SF₄ is used as a fluorinating agent). Predict the electron-pair geometry and molecular structure of a SF₄ molecule. Enter the molecular structure."
   answer="seesaw"
-  accept="sawhorse|see saw|saw horse"
+  accept="sawhorse|see saw|saw horse|seesaw shaped"
 >}}
 
 {{< textin

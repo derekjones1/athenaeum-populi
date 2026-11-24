@@ -146,6 +146,8 @@ export const TABLE_NOTES = Object.freeze({
     deviations: [
       ['CaSO4·2H_2O', 'CaSO_4·2H_2O', 'erratum 2914: the source leaves the 4 of CaSO₄ on the line'],
       ['12Ag2O(Ag++OH-)', '1/2Ag2O(Ag++OH-)', 'the source stacks the ½ as a bare sub- and superscript; the page writes 1/2'],
+      ['1.5×10-15', '7.40×10-14', 'erratum 3495 (November 24, 2026): the solubility product of PbCO₃ is 7.40 × 10⁻¹⁴ (CRC Handbook, 84th ed.); the source’s value is about fifty times too small'],
+      ['9×10-15', '3.6×10-17', 'erratum 3495 (November 24, 2026): the solubility product of Hg₂CO₃ is 3.6 × 10⁻¹⁷ (CRC Handbook, 84th ed.); the source’s value is about two hundred fifty times too large'],
     ],
   },
   'chemistry-bundle:m68870': {
@@ -156,6 +158,9 @@ export const TABLE_NOTES = Object.freeze({
       ['Pu3+3e-→Pu', 'Pu3++3e-→Pu', 'erratum 2915: the ion is printed without its plus sign'],
       ['[Zn(OH)4]2+2e-→Zn+4OH-', '[Zn(OH)4]2-+2e-→Zn+4OH-', 'erratum 2915: the ion is printed without its minus sign'],
       ['Zr4+4e-→Zr', 'Zr4++4e-→Zr', 'erratum 2915: the ion is printed without its plus sign'],
+      ['+0.558', '+0.595', 'erratum 3496 (November 24, 2026): 0.558 V is the CRC potential of MnO₄⁻ + e⁻ → MnO₄²⁻; the electrochemical series of the CRC Handbook of Chemistry and Physics (P. Vanýsek) gives 0.595 V for MnO₄⁻ + 2H₂O + 3e⁻ → MnO₂ + 4OH⁻'],
+      ['+0.10', '+0.01', 'erratum 3496 (November 24, 2026): the CRC electrochemical series gives 0.01 V for NO₃⁻ + H₂O + 2e⁻ → NO₂⁻ + 2OH⁻'],
+      ['Co3++e-→Co2+(2mol//H2SO4)', 'Co3++e-→Co2+(2MH2SO4)', 'erratum 3496 (November 24, 2026): the CRC electrochemical series gives the condition as 2 molar H₂SO₄; “2 mol //” is garbled'],
     ],
   },
   // Appendix M: one three-column list printed as two side-by-side sets, on
@@ -166,6 +171,8 @@ export const TABLE_NOTES = Object.freeze({
     deviations: [
       ['23994Pu', '24094Pu', 'erratum 2916: the second plutonium-239 row carries plutonium-240’s half-life'],
       ['260105Ha', '260105Db', 'erratum 2917: element 105 is dubnium'],
+      ['5.1×1015y', '4.41×1014y', 'erratum 3497 (November 24, 2026): the half-life of indium-115 is 4.41 × 10¹⁴ y (ENSDF, IAEA LiveChart); the source’s exponent is one too high'],
+      ['23.54m', '23.45m', 'erratum 3497 (November 24, 2026): the half-life of uranium-239 is 23.45 min (ENSDF, IAEA LiveChart); two digits are exchanged'],
     ],
   },
 });
