@@ -6223,7 +6223,8 @@ equation) run against a fresh build.
 
 ### Next
 
-- Chapter 12.
+- Sections 11.3–11.5, then Knowledge Check block 4 (chapters 9–11), then
+  chapter 12.
 - Decide BaF₂ before chapter 15 and NiS before chapter 17.
 - The items under “open” above, in particular grader consequence 1 (`90` for
   89.4) and the 3462, 22565 consistency calls.
@@ -6278,7 +6279,11 @@ the pass had left unverified; the parent ruled on each.
   step of its combined crystal–liquid table, where its separate tables give
   9.966 kJ (2.382 kcal). A not-errata line.
 
-### Still open, for Derek
+### Left for Derek (closed November 25, 2026: both stand as they are)
+
+Derek ruled the same day that the two items below stand as written. BaF₂
+stays as printed, and the chapter 15 run puts the Source note at exercise
+15.17(b) as recommended. Nothing is open before the rest of chapter 11.
 
 - **BaF₂ in Appendix J (2.4 × 10⁻⁵).** No handbook or paper opened prints
   it; only OpenStax and its derivatives do. A measured solubility of 1.61
