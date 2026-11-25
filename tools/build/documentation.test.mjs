@@ -506,8 +506,9 @@ test('the chemistry subject playbook states the rules its engine enforces', asyn
     assert.ok(chem.replace(/\s+/g, ' ').includes(sentence), `the playbook quotes "${sentence}"`);
   }
   // Audit round 2 (November 24, 2026): a shorter response is form only where it IS the key rounded, a tie either neighbour.
-  for (const [typed, key] of [['0.7', '0.674'], ['10', '7.50'], ['1.0', '0.974']]) assert.equal(checkAnswer(typed, key, { form }), 'incorrect', `${typed} against ${key}`);
-  for (const [typed, key] of [['90', '89.4'], ['7.1', '7.15'], ['7.2', '7.15'], ['1000', '1040'], ['460', '462']]) assert.equal(checkAnswer(typed, key, { form }), 'form', `${typed} against ${key}`);
+  // November 25, 2026: a whole number read at one figure, two short, is refused like any single figure (the 1.6 pilot's `90`).
+  for (const [typed, key] of [['0.7', '0.674'], ['10', '7.50'], ['1.0', '0.974'], ['90', '89.4'], ['100', '98.7']]) assert.equal(checkAnswer(typed, key, { form }), 'incorrect', `${typed} against ${key}`);
+  for (const [typed, key] of [['7.1', '7.15'], ['7.2', '7.15'], ['1000', '1040'], ['460', '462']]) assert.equal(checkAnswer(typed, key, { form }), 'form', `${typed} against ${key}`);
   assert.match(chem, /Both\s+tokens\s+are\s+always\s+declared\s+together/);
   // One data set, one right answer (November 12–13, 2026): the playbook's
   // table is the grader's real behaviour, and the two designs that gave a

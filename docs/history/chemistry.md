@@ -6228,6 +6228,77 @@ equation) run against a fresh build.
 - The items under “open” above, in particular grader consequence 1 (`90` for
   89.4) and the 3462, 22565 consistency calls.
 
+## The deep audit's open list (November 25, 2026)
+
+Derek asked for the fix pass's open items to be investigated and fixed. The
+audit's seven most serious findings were re-checked on the tree first: all
+were already fixed by the November 24 pass except the NiS row, which was
+open. Four Opus research agents then opened references for the five values
+the pass had left unverified; the parent ruled on each.
+
+### Changed
+
+- **Appendix L, NiS + 2e⁻ → Ni + S²⁻: +0.76 → −0.83 V** (erratum 3500). Bard,
+  Parsons & Jordan (1985) and Latimer (1952) give −0.83 V for α-NiS, Milazzo
+  & Caroli −0.814; the 1991 edition of the book this one descends from
+  prints −0.83; Appendix J's own *K*sp gives the same. No reference prints
+  0.76 with either sign. A third Source note under the table, the footer
+  clause, a `TABLE_NOTES` deviation, a decisions entry. The quotations are
+  Internet Archive full-text snippets of lending-library scans, not page
+  images. Lange's 15th edition and three CRC editions have no NiS row.
+- **3.3, the sodium cyanide stem** (erratum 3499). 3.8 × 10⁻⁶ *M* is 0.099
+  mg/L as cyanide, inside the normal plasma range ATSDR gives (0–14 μg per
+  100 mL) and about thirty times below the blood level it gives for death.
+  By R8 the stem stays; a Source note follows the second graded part, with a
+  footer clause and a decisions entry. Only ATSDR's draft chapter (October
+  2024) could be fetched.
+- **`90` against 89.4 is incorrect again** (the 1.6 pilot's ruling). Round
+  two tried a whole number ending in zeros at every count down to one, so
+  `90` was told it agreed while `5` against 4.585 was refused. Such a number
+  is now tried from two figures like any other response:
+  `significant-figures.mjs`, its tests, the documentation test, and the
+  `0.67` row of `docs/subjects/chemistry.md`. A replay of old against new
+  over the 489 `sig-figs` items: 192 flips, every one form → incorrect for a
+  one-figure whole number two or more figures short (`400` for 355, `10` for
+  9.92, `100` for 98.7); nothing else moved. `1000` for 1040 and `100` for
+  150 stay `form`. Of the eleven printed-above numbers, six are refused
+  again; five remain `form` and are true roundings one figure short or at
+  two figures: 1.6 `1` (1.5), 3.1 `12` (12.011) and `3` (3.5), 3.4 `1`
+  (1.5), 9.1 `100` (150).
+
+### Confirmed and kept
+
+- **9.6 van der Waals rows.** All six rows are the older CRC table (atm,
+  from Amagat units in Landolt-Börnstein), rounded; CCl₄ 20.39 / 0.1383 is
+  in the 1959 edition. Superseded by the handbook's bar values, not wrong.
+  A not-errata line.
+- **10.3 TiCl₄ heat of fusion.** 2240 cal/mol (9.37 kJ/mol) at −23.2 °C in
+  the *CRC Materials Science and Engineering Handbook* (2001); Latimer's
+  1922 calorimetry gives 9.34. The “about 2.4” from JANAF is the 2.382 kJ
+  step of its combined crystal–liquid table, where its separate tables give
+  9.966 kJ (2.382 kcal). A not-errata line.
+
+### Still open, for Derek
+
+- **BaF₂ in Appendix J (2.4 × 10⁻⁵).** No handbook or paper opened prints
+  it; only OpenStax and its derivatives do. A measured solubility of 1.61
+  g/L gives 3.1 × 10⁻⁶; Lange's 1.6 × 10⁻⁶ and Martell–Smith 1.7 × 10⁻⁶ sit
+  near that, and the CRC's 1.84 × 10⁻⁷ does not. Every one of those was read
+  at second hand, the references disagree with each other by a factor of
+  ten, and exercise 15.17(b)'s printed answer (2.4 × 10⁻⁴ *M*) is built on
+  the printed value. Kept as printed. The recommendation for the chapter 15
+  run: keep the row and the key, and put a Source note at the exercise. The
+  live Section 15.1 text itself does not use BaF₂.
+- **The accept rule as R11 widened it, the configuration-label message, and
+  the Orbitron citation** stand as the fix pass left them. Orbitron is the
+  site the source itself sends learners to in Section 8.4.
+
+### Gates
+
+`npm test` green; `verify:source-tables` 3,418 cells; `verify-section` on
+3.3; grader, text, and documentation tests 11,305 passing, none failing. No
+graded item's stem, key, or form changed, so nothing was re-solved.
+
 ## The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under

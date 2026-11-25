@@ -176,12 +176,13 @@ test('compareMeasured grades value and figures together', async (t) => {
     ['10', '9.0', 2, 0, 'incorrect'],
     ['1', '0.51', 2, 0, 'incorrect'],
     ['1.0', '0.974', 3, 1, 'incorrect'],
-    ['100', '98.7', 3, 1, 'form', 'too-few'],          // 98.7 to one figure (an ambiguous whole number)
+    ['100', '98.7', 3, 1, 'incorrect'],                // 98.7 to one figure, two short: refused as `5` for 4.585 is
     ['100.', '98.7', 3, 1, 'incorrect'],
     ['1.0\\times10^{2}', '98.6', 3, 0, 'incorrect'],
-    ['10', '9.92', 3, 1, 'form', 'too-few'],           // 9.92 to one figure
+    ['10', '9.92', 3, 1, 'incorrect'],                 // 9.92 to one figure, two short
     ['10.', '9.92', 3, 1, 'incorrect'],
-    ['10', '9.551', 4, 0, 'form', 'too-few'],          // 9.551 to one figure
+    ['10', '9.551', 4, 0, 'incorrect'],                // 9.551 to one figure, three short
+    ['10', '9.951', 4, 0, 'form', 'too-few'],          // 9.951 to two figures IS 10
     ['1.0\\times10^{1}', '9.551', 4, 0, 'incorrect'],
     ['-1.0', '-0.962', 3, 0, 'incorrect'],
     ['10', '9.96', 3, 0, 'form', 'too-few'],          // 9.96 to two figures IS 10
@@ -191,13 +192,14 @@ test('compareMeasured grades value and figures together', async (t) => {
     ['300', '150', 2, 0, 'incorrect'],
     ['7', '7.5', 2, 1, 'form', 'too-few'],
     ['8', '7.5', 2, 1, 'form', 'too-few'],
-    // an ambiguous whole number is tried at every count (D3): 1040 to one figure
+    // an ambiguous whole number is tried at every count from two (D3): 1040 to two figures
     ['1000', '1040', 4, 0, 'form', 'too-few'],
+    ['1000', '1240', 4, 0, 'incorrect'],               // 1240 to one figure only
     ['1000.', '1040', 4, 0, 'incorrect'],
     ['1100', '1040', 4, 0, 'incorrect'],
     ['4.59\\times10^{22}', '4.585\\times10^{22}', 4, 1, 'form', 'too-few'],
     // the stem's own round number is not "right as far as it goes" (1.6: a 90 kg class limit, key 89.4)
-    ['90', '89.4', 3, 1, 'form', 'too-few'],             // 89.4 to one figure: a whole number with zeros is tried at every count (audit round 2)
+    ['90', '89.4', 3, 1, 'incorrect'],                   // 89.4 to one figure, two short (the pilot's ruling, restored November 25, 2026)
     ['89', '89.4', 3, 1, 'form', 'too-few'],
     // the key's own number with its zeros left off is the answer written short, at any count (4.3: 8.00 mol)
     ['8', '8.00', 3, 1, 'form', 'too-few'],

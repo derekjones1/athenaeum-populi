@@ -161,6 +161,7 @@ export const TABLE_NOTES = Object.freeze({
       ['+0.558', '+0.595', 'erratum 3496 (November 24, 2026): 0.558 V is the CRC potential of MnO₄⁻ + e⁻ → MnO₄²⁻; the electrochemical series of the CRC Handbook of Chemistry and Physics (P. Vanýsek) gives 0.595 V for MnO₄⁻ + 2H₂O + 3e⁻ → MnO₂ + 4OH⁻'],
       ['+0.10', '+0.01', 'erratum 3496 (November 24, 2026): the CRC electrochemical series gives 0.01 V for NO₃⁻ + H₂O + 2e⁻ → NO₂⁻ + 2OH⁻'],
       ['Co3++e-→Co2+(2mol//H2SO4)', 'Co3++e-→Co2+(2MH2SO4)', 'erratum 3496 (November 24, 2026): the CRC electrochemical series gives the condition as 2 molar H₂SO₄; “2 mol //” is garbled'],
+      ['+0.76', '-0.83', 'erratum 3500 (November 25, 2026): NiS + 2e⁻ → Ni + S²⁻ is −0.83 V for α-NiS (Bard, Parsons & Jordan, Standard Potentials in Aqueous Solution, 1985; Latimer, Oxidation Potentials, 1952); a sulfide lies below its metal’s −0.257 V, and no reference prints 0.76 with either sign'],
     ],
   },
   // Appendix M: one three-column list printed as two side-by-side sets, on

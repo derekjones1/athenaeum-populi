@@ -224,16 +224,19 @@ export function lastFigureExponent(key, figures) {
  * EQUALS the key rounded to its own count of figures; where the digits the
  * key drops there are exactly a 5 (a tie: the key is itself rounded), either
  * neighbour (7.1 and 7.2 for 7.15; 100 and 200 for 150). A whole number
- * ending in zeros is tried at every count it may show (`1000` for 1040).
- * Nothing else: the allowance is never widened for a response written to
+ * ending in zeros is tried at every count it may show, from two figures
+ * (`1000` for 1040 is the key to two figures). Nothing else: the allowance is never widened for a response written to
  * fewer figures, or `0.6` would stand for `0.674`, and a power of ten one
  * place coarser is no rounding (`10` for 7.5, `1.0` for 0.974). Since round
  * 2 of the November 24, 2026 audit a true rounding one figure short is
  * `too-few` at any count; two or more short it is `too-few` from two figures
- * shown (`0.7` for 0.674 is refused), except a whole number ending in zeros,
- * tried at every count it may show — so `90` against 89.4, 89.4 to one
- * figure, is now `too-few` (the 1.6 pilot refused it as a stem's round
- * number). The key's own number written short — `8` for `8.00` — is
+ * shown, whatever the response: `0.7` for 0.674 is refused, and so is a
+ * whole number ending in zeros read at one figure — `90` against 89.4, the
+ * round number of the 1.6 stem's own class limit, `100` against 98.7, `10`
+ * against 9.92. (Round 2 of that audit tried such a number at one figure
+ * too, which told `90` it agreed while `5` against 4.585 was refused; the
+ * 1.6 pilot's refusal was restored on November 25, 2026.) The key's own
+ * number written short — `8` for `8.00` — is
  * `too-few` too (Chemistry 2e 4.3).
  *
  * An `incorrect` verdict carries `reason: 'near'` when the response is
@@ -340,7 +343,7 @@ function compareAtKeyPrecision(response, key, { figures, lastDigit = 0 }) {
   // and 200 for 150 (audit G4, round 2, November 24, 2026). Nothing else: a
   // distance test let a power of ten through (`10` for 7.5, `1.0` for 0.974).
   // A whole number ending in zeros, whose count is ambiguous, is tried at
-  // every count its digits allow (`1000` for 1040 is the key to one figure).
+  // every count its digits allow (`100` for 150, `1000` for 1040).
   // The last-digit allowance is not carried down.
   const shortBy = (count) => response.sigMin <= count && count <= response.sigMax
     && roundingsAt(key, count).some((rounded) => sameNumber(response, rounded));
@@ -360,11 +363,12 @@ function compareAtKeyPrecision(response, key, { figures, lastDigit = 0 }) {
     if (coarse) return { verdict: 'incorrect', reason: 'near' };
   }
   // Two or more figures fewer, by the same test (audit G3 and round 2):
-  // 180.2 or 180 for 180.16, 463 for 462.610. From two figures shown — `0.7`
-  // for 0.674 stays refused — except a whole number ending in zeros, which is
-  // tried at every count it may show: `1000` for 1040 (the parent's ruling).
-  const ambiguous = response.sigMin < response.sigMax;
-  for (let count = shown - 1; count >= (ambiguous ? 1 : 2); count -= 1) {
+  // 180.2 or 180 for 180.16, 463 for 462.610, 1000 for 1040 (the key to two
+  // figures). From two figures shown, for every response: `0.7` for 0.674
+  // stays refused, and so does a whole number ending in zeros read at one
+  // figure — `90` for 89.4, the 1.6 stem's own class limit (the pilot's
+  // ruling, restored November 25, 2026).
+  for (let count = shown - 1; count >= 2; count -= 1) {
     if (shortBy(count)) return { verdict: 'form', reason: 'too-few' };
   }
   // The key's own number with its trailing zeros left off, however many:

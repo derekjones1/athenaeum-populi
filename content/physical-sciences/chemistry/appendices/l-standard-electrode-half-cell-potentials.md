@@ -98,7 +98,7 @@ weight: 12
 | $\ce{[Ni(NH3)6]^2+ + 2e^- -> Ni + 6NH3}$ | −0.49 |
 | $\ce{NiO2 + 4H^+ + 2e^- -> Ni^2+ + 2H2O}$ | +1.593 |
 | $\ce{NiO2 + 2H2O + 2e^- -> Ni(OH)2 + 2OH^-}$ | +0.49 |
-| $\ce{NiS + 2e^- -> Ni + S^2-}$ | +0.76 |
+| $\ce{NiS + 2e^- -> Ni + S^2-}$ | −0.83 |
 | $\ce{NO3^- + 4H^+ + 3e^- -> NO + 2H2O}$ | +0.957 |
 | $\ce{NO3^- + 3H^+ + 2e^- -> HNO2 + H2O}$ | +0.92 |
 | $\ce{NO3^- + H2O + 2e^- -> NO2^- + 2OH^-}$ | +0.01 |
@@ -151,6 +151,8 @@ weight: 12
 
 *Source note:* three more rows are corrected here from the electrochemical series of the *CRC Handbook of Chemistry and Physics* (P. Vanýsek), the table this one follows. The source prints +0.558 V for the reduction of permanganate to manganese dioxide in base; 0.558 V is the potential of a different reaction, $\ce{MnO4^- + e^- -> MnO4^2-}$, and the handbook gives +0.595 V for this one. It prints +0.10 V for the reduction of nitrate to nitrite in base, where the handbook gives +0.01 V. And it writes the condition of the cobalt(III) reduction as “(2 mol // H₂SO₄)”, which the handbook gives as 2 molar sulfuric acid.
 
+*Source note:* the source prints +0.76 V for the reduction of nickel sulfide. No reference prints that value, and the sign cannot be right: a metal ion held in a solid as sparingly soluble as a sulfide is harder to reduce than the free ion, so the potential must lie below the −0.257 V of $\ce{Ni^2+ + 2e^- -> Ni}$, as every other sulfide in this table lies below its metal. The value printed here, −0.83 V, is the one given by A. J. Bard, R. Parsons, and J. Jordan, [*Standard Potentials in Aqueous Solution*](https://archive.org/details/standardpotentia0000unse) (1985), for the α form of the solid, and by W. M. Latimer, [*Oxidation Potentials*](https://archive.org/details/oxidationstateso00lati), 2nd edition (1952).
+
 ---
 
-<small>This appendix is adapted from [Chemistry 2e, Appendix L: Standard Electrode (Half-Cell) Potentials](https://openstax.org/books/chemistry-2e/pages/l-standard-electrode-half-cell-potentials) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the table transcribed as a Markdown table with its title as a bold line above it; the half-reactions typeset as KaTeX math; the charges of six ions corrected, as the Source note says; and the potentials of two half-reactions and the condition of a third corrected, as the second Source note says.</small>
+<small>This appendix is adapted from [Chemistry 2e, Appendix L: Standard Electrode (Half-Cell) Potentials](https://openstax.org/books/chemistry-2e/pages/l-standard-electrode-half-cell-potentials) by Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/chemistry-2e). Changes: the table transcribed as a Markdown table with its title as a bold line above it; the half-reactions typeset as KaTeX math; the charges of six ions corrected, as the Source note says; the potentials of two half-reactions and the condition of a third corrected, as the second Source note says; and the potential of the nickel sulfide half-reaction corrected, as the third Source note says.</small>

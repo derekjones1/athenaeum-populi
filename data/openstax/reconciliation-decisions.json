@@ -10383,6 +10383,28 @@
       "status": "correct-local-source-defect",
       "errataEntry": 3498,
       "rationale": "The exercise asks for reactants and products as aqueous ions; the source answer to part (a) writes HClO₄(aq) whole and the products as ions. The self-check takes the sample-answer form (an opening sentence, then the source equation whole) with a visible Source note and a footer clause. Deep audit 4.2b F1; fix pass November 24, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/03-composition-of-substances-and-solutions/03-molarity.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68703",
+      "sourceElementIds": [
+        "fs-idm94203104"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3499,
+      "rationale": "The source calls 3.8 × 10⁻⁶ M NaCN “the minimum lethal concentration of sodium cyanide in blood serum”; ATSDR's Toxicological Profile for Cyanide (Chapter 3) puts normal plasma cyanide at 0–14 μg per 100 mL, which contains the printed figure, and death above 0.3 mg per 100 mL of blood. Both graded parts keep the stem as printed, with a visible Source note after the second and a footer clause. Reference opened November 25, 2026, erratum 3499."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/appendices/l-standard-electrode-half-cell-potentials.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68870",
+      "sourceElementIds": [
+        "fs-idm126797824"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3500,
+      "rationale": "NiS + 2e⁻ → Ni + S²⁻ is printed at +0.76 V; Bard, Parsons & Jordan (1985) and Latimer (1952) give −0.83 V for α-NiS, as does the 1991 edition of the book this one descends from, and Appendix J's own Ksp gives the same. The page prints −0.83, with a third visible Source note under the table, the footer clause extended, one `TABLE_NOTES` deviation for m68870. References opened November 25, 2026, erratum 3500."
     }
   ]
 }
