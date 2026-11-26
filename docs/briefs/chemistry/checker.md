@@ -54,7 +54,11 @@ catch.
 - **A numeric fill-in:** solve it from the stem and the book's own
   conversion factors, running the arithmetic (`python3 -c`), BEFORE reading
   the page's key or the source's. Then compare all three. Report: a key the
-  source does not print; a key written to other figures than the source's;
+  source does not print; a key written to other figures than the source's, or
+  than the stem's data give with every printed digit of a whole-number
+  datum counted, trailing zeros included (playbook "Exercises": 180 L is
+  three figures, so a source's 350 bar is keyed 349), and the same for a
+  worked example's result;
   a `sig-figs` count that is not the key's; a `last-digit` that the
   playbook's rule would set the other way (say which numbers in the
   calculation are measured factors); a stem that does not name the unit the

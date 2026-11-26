@@ -916,18 +916,33 @@ selfchecks, source defects, the footer — and each is stated once.
 - **A whole-number key whose trailing zeros hide its count is written
   plain, and so is its display** (`35200` at `sig-figs:3`,
   `$35{,}200\ \text{Pa}$`; `10` at `sig-figs:2`), as chapters 1–8 write
-  them; the declared count is the one the source's answer needs (350 bar
-  from a 180-L tank: two, since three would be 349; 0.974 atm from 740
-  torr: three), and where the answer fits every count (400 torr from 600
-  torr), the count of the stem's other data *(chapter 9)*.
+  them; the declared count is the one the stem's data give, each
+  whole-number datum counted to its last printed digit (the next rule):
+  0.974 atm from 740 torr is three, 400 torr from 600 torr is three, and
+  349 bar from a 180-L tank is three, where the source prints 350 bar
+  *(chapter 9; November 25, 2026: the tank was first keyed `350` at two
+  figures, "the count the source's answer needs", under which 349 was told
+  to round and 340 and 360 graded correct — the source's print never sets
+  the count, the data do, and a print the data's count does not reach is a
+  correction with the standing note, "the answer graded for this exercise
+  is written to the number of significant figures its data give")*.
 - **A whole-number datum in a stem counts every printed digit, trailing
   zeros included** *(November 24, 2026)*, as the source's answers do from
   chapter 2 on: 5.2's "390 mL" is three figures, 9.5's "500 pounds" is good
   to the ones place (880 − 500 = 380), "about 90 minutes" is two. No stem
   is reworded for it; 1.5 says so in a Source note after its paragraph on
   the ambiguity. 1.5's own exercises follow that section's rule instead
-  (27,340 is four figures there), and the note says "later sections". A
-  key the convention does not reach is reported to the parent.
+  (27,340 is four figures there), and the note says "later sections".
+  Chapter 1 is outside the rule: 1.6's pizza example ("set oven to 230 °C
+  (two significant figures)" from 450 °F) and its exercises state their own
+  count and stand. From chapter 2 on **the rule has no exceptions: a key or
+  a worked example's result that reads a trailing zero as not significant
+  is corrected**, a key with the standing figures note, an erratum, and a
+  `DISCLOSED_DEVIATIONS` line, an example as the next rules say *(November
+  25, 2026: every sig-figs fill-in, worked example, and calculation
+  self-check of chapters 1–12 was read for it; two results of 9.2 moved,
+  errata 3561–3562)*. A key the convention does not reach is reported to
+  the parent.
 - **A worked example converts to kelvin with 273.15 and prints the carried
   value** where a later step uses it (297.15 K, not the source's 297 K),
   under the Source note for rounded intermediates with one clause added
@@ -942,7 +957,13 @@ selfchecks, source defects, the footer — and each is stated once.
   of O₂ from 2.7 L of propane; the page prints 14 L, with a Source note
   directly after that says what the source prints. The examples are what
   a learner copies, and the same over-count typed into a field is told to
-  round. (A result whose count is only ambiguous — 9.2's 390 kPa — stands.)
+  round. The same holds for a result with FEWER figures than its data
+  give: 9.2's hair-spray example prints 391 kPa from 360 kPa, 24 °C, and
+  50 °C, where the source prints 390 kPa, with a Source note directly
+  after the display *(November 25, 2026, Derek: this result first stood as
+  one "whose count is only ambiguous"; the rule above, that a whole-number
+  datum counts every printed digit, leaves no such count, and the
+  exception is withdrawn)*.
 - **Where two routes of this book end one unit apart, the key is the ideal
   gas law's and `last-digit:1` takes the other** *(chapter 9)*: at STP,
   $nRT/P$ with the book's $R$ against the standard molar volume, 22.4 L
@@ -2182,10 +2203,12 @@ Rules for the key and the stem:
   molarity in mol/L", "Enter the enthalpy change in kJ/mol". A learner
   who types the unit after the right number — one letter included — is told
   to drop it.
-- **Count n from the source's answer, and say it when zeros hide it.** A
-  whole number ending in zeros shows two or three figures (`350 bar`):
-  declare the count the data support. The plain response `350` satisfies
-  either count; `3.5 × 10²` shows two figures and `3.50 × 10²` three.
+- **Count n from the stem's data, and say it when zeros hide it.** A
+  whole number ending in zeros shows two or three figures (`400 torr`):
+  declare the count the data give, each whole-number datum counted to its
+  last printed digit ("Measured quantities"); the source's print is the
+  check, never the count. The plain response `400` satisfies either
+  count; `4.0 × 10²` shows two figures and `4.00 × 10²` three.
 - **Either notation is accepted** unless the ask names one: add
   `scientific-notation` when the stem says "in scientific notation" (a
   calculator's `4.585e22` is then `form`), or `decimal` to require a plain

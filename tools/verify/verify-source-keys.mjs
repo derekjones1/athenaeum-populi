@@ -1415,6 +1415,13 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
   },
   {
     page: 'content/physical-sciences/chemistry/09-gases/02-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law.md',
+    exercise: 'fs-idm72969744#check',
+    kind: 'key',
+    erratum: 3562,
+    reason: 'the Check Your Learning answer prints "350 bar" for 2520 mol × 8.314 L kPa/(mol K) × 300.15 K ÷ 180 L = 34,936 kPa = 349.4 bar; the amount has four figures, the kelvin temperature three, and the 180 L of the stem counts every printed digit (a whole-number datum does, from chapter 2 on), so the result keeps three: the fill-in keys 349. The source\'s 350 is the two-figure reading of 180 L, and the first key followed it (sig-figs:2, under which 349 was told to round and 340 and 360 graded correct). Found by the trailing-zero scan, November 25, 2026',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/09-gases/02-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law.md',
     exercise: 'fs-idm71892416',
     kind: 'key',
     erratum: 3207,

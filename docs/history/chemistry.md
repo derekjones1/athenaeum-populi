@@ -4792,6 +4792,7 @@ records for the 1783 balloon flights, which did not identify the print.
 - 9.2's "relatively high pressures and low temperatures" of the scuba example.
 - 9.2's "About 12.5 L" (the figure's own table gives 12.2 L at 150 K).
 - 9.2's Example 1 result, 390 kPa: the two-figure reading of 360 kPa.
+  *(Corrected to 391 kPa on November 25, 2026: erratum 3561.)*
 - 9.2's example title "Volume of a Gas Sample" over an example that finds a
   pressure.
 - 9.1's exercise 13 repeats Example 3 (same picture, same answers); the footer
@@ -6888,6 +6889,8 @@ record was carried. Found by the chapter 10 checker.
   counts every printed digit, makes 360 kPa three figures, and 360 × 323.15
   / 297.15 = 391.499 is then 391 kPa. The two rules disagree on this one
   example. Nothing was changed; the check does not use it.
+  *Answered November 25–26: the exception is withdrawn and the page prints
+  391 kPa ("Whole-number data read to every printed digit", below).*
 
 ### Close-out
 
@@ -6904,6 +6907,122 @@ confirmed, unchanged).
 
 Sections 12.3–12.7 (a rate law needs its own answer form: decide and probe
 it before the wave). Block 5 (chapters 12–15) after chapter 15.
+
+## Whole-number data read to every printed digit (November 25–26, 2026)
+
+A fix pass on finished pages, by `docs/re-review/README.md`. It answers the
+one item Knowledge Check 4 left for Derek and then reads the rest of the
+book for the same conflict.
+
+### The ruling
+
+9.2's hair-spray example printed 390 kPa and the playbook said the result
+"stands" as one whose count is only ambiguous. Derek asked whether the
+exception should stay; the parent recommended that it go, and Derek said to
+think it through, scan the rest, and make the book consistent.
+
+- The exception was written on November 17. The rule of November 24 (R1 of
+  the deep audit: a whole-number datum counts every printed digit, from
+  chapter 2 on) removed the ambiguity it rested on, and 1.5's Source note
+  tells the learner so.
+- The printed line was then wrong on its face: 360 × 323.15 ÷ 297.15 is
+  391.499, and "390 kPa" read as the book reads every other whole number is
+  three figures.
+- The result sits on a rounding edge. With the source's 297 K and 323 K it
+  is 391.515, which is 392 at three figures; with 273.15 it is 391. The
+  page converts with 273.15 (the section's standing note), so it prints 391.
+
+**The exception is withdrawn; from chapter 2 on the rule has none.**
+
+### The scan
+
+Three mechanical lists, each read by the parent against the page:
+
+- all 552 fill-ins that declare `sig-figs`: the 30 whose stem prints a
+  whole number ending in a zero with more digits than the declared count;
+- all 179 worked examples: the 73 that print such a number beside a unit;
+- the 34 other items (multiple choice, self-check, text, reading) whose
+  stems print one, of which two are calculations (5.2's precipitation
+  self-check and 9.6's nitrogen flask; both already write the data's count).
+
+Two results read a trailing zero as not significant, both in 9.2:
+
+| Where | Was | Is | Erratum |
+|---|---|---|---|
+| the hair-spray example, part (b) | 390 kPa | 391 kPa, a Source note directly after the display | 3561 |
+| the hydrogen-tank Check Your Learning | key `350`, `sig-figs:2 last-digit:1` | key `349`, `sig-figs:3 last-digit:0`, the standing figures note | 3562 |
+
+The tank was the worse of the two, and nobody had listed it. Under the old
+key a learner who typed 349, the answer the book's own rule gives, was told
+"now round it to 2 significant figures", and 340 and 360 were graded
+correct. The playbook itself carried the cause: "the declared count is the
+one the source's answer needs (350 bar from a 180-L tank: two, since three
+would be 349)", and the author brief said a key is written "to the figures
+the source's answer shows". Now `350` is told "That agrees with the answer
+as far as it goes — now give it to 3 significant figures."
+
+The other 29 listed fill-ins are limited by another datum: a count the stem
+states (1.6's Prius and angstrom-run exercises, 11.3's "one significant
+digit"), a two-figure mass or percent, or a temperature difference (5.2's
+radiator water, 5.3's steam). 9.5's 380 lb stays two figures: 880 lb is
+good to the tens place.
+
+**Kept as printed: 1.6's pizza example**, "set oven to 230 °C (two
+significant figures)" and 5.1 × 10² K from 450 °F. The example states its
+own count, as that section's exercises do, and chapter 1 follows 1.5's
+advice; R1 begins at chapter 2. Listed under "Reviewed and not errata".
+
+### What changed
+
+- `09-gases/02-…ideal-gas-law.md`: the two results, two Source notes, the
+  kelvin note's last sentence ("Apart from the pressure above, one result
+  differs …"), three footer clauses. A footer clause that printed the new
+  key was refused by `verify-section` and reworded.
+- `docs/subjects/chemistry.md`: four passages. The count of a key is the
+  data's, never the source's print; R1 says chapter 1 is outside it and
+  that it has no exceptions after; the example rule covers a result with
+  fewer figures than its data give; the "Measured quantities" bullet is
+  headed "Count n from the stem's data".
+- `docs/briefs/chemistry/author.md`, `checker.md`, `solve.md`: each now
+  says a whole-number datum counts every printed digit. The solver's line
+  uses an example that is no item of the book.
+- `tools/verify/verify-source-keys.mjs`: one `DISCLOSED_DEVIATIONS` line
+  (kind `key`, 3562). `data/openstax/reconciliation-decisions.json`: two
+  entries. `docs/openstax-errata.md`: errata 3561–3562 under their own
+  heading with a "Reviewed and not errata" block; the chapter 9 line that
+  let 390 kPa stand now points at 3561.
+
+Both errata are written as an inconsistency of convention, not as slips of
+arithmetic: the source's 390 kPa and 350 bar are what its own Section 1.5
+advises, and they disagree with its answers from chapter 2 on.
+
+### Ledger and gates
+
+One item re-hashed (the tank). Its record could not be carried, so
+it was blind-solved by a fresh Fable agent on the masked page, in a
+directory that held nothing but the packet: 349 bar (349.3626 unrounded;
+349.19 with 300 K, 349.39 by way of atmospheres), four figures for 2520
+mol, three for 180 L and for 27 °C. 1 agree, 0 disagree, 0 flagged. The
+derivation is in the record's note. The example is prose and has no
+record; the parent re-ran its arithmetic by both conversions.
+
+`npm test` was green at HEAD (6a26c853) before the first edit.
+`verify-section` passes on 9.2. **One floor drops on purpose:**
+`--min-confirmed` 8166 → 8165, the tank item, which moved from a confirmed
+source key to a disclosed correction (`npm run baseline:update --
+--allow-decrease`). 19137 ledger records, unchanged. No browser spec names
+either value.
+
+### What the next run should know
+
+- **The source's print never sets a key's figure count.** The data do. A
+  source answer at another count is a correction, with the standing note.
+- **An exception written into the playbook is re-read when a later rule
+  touches its ground.** This one outlived its reason by a week and was
+  found only because a run happened to quote both sentences.
+- **A question left for Derek carries the parent's recommendation** (Derek,
+  November 25): the conflict, the proposed answer, the reason, and what it
+  would change.
 
 ## The `\dfrac` watch list
 

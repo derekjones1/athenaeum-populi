@@ -54229,6 +54229,14 @@
     "result": "agrees"
    }
   },
+  "69821e7a7b2fabde": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm72969744 (ideal gas law): 2520 mol x 8.314 L kPa/(mol K) x 300.15 K / 180 L = 34936 kPa = 349.36 bar -> 349 bar, three figures (180 L counts every printed digit); source prints 350 bar, erratum 3562, DISCLOSED_DEVIATIONS key. Re-keyed November 25, 2026 from 350 at sig-figs:2; blind solve agrees (349.3626; 349.19 with 300 K, 349.39 by atm)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6982e4bee76cba7c": {
    "verdict": "ok",
    "note": "multi-sentence cAMP/chloride-channel/osmotic mechanism, stays selfcheck; stem corrects the source's 'V. cholera' typo to 'V. cholerae' | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -118606,14 +118614,6 @@
   "e9727954efaa3b27": {
    "verdict": "ok",
    "note": "textin line 137: necrosis — re-read against m46058 and the page",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "e973d0068992ab42": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idm72969744: 2520 mol x 8.314 x 300.15 K / 180 L = 34936 kPa = 349.36 bar -> 3.5e2 bar, source 350 bar",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"

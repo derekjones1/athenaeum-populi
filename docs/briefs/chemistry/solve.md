@@ -43,8 +43,10 @@ those places.
   never in your head, carrying every digit to the end and rounding once.
   Report the answer **to the significant figures the stem's data support**,
   as a learner would type it: a plain decimal (`0.674`) or
-  `a\times10^{n}` with a braced exponent (`4.585\times10^{22}`). Never type
-  the unit; the stem names it. A count is a bare integer. Put the unrounded
+  `a\times10^{n}` with a braced exponent (`4.585\times10^{22}`). A
+  whole-number datum counts every printed digit, trailing zeros included
+  (250 mL is three figures; this book's Section 1.5 says so in a note).
+  Never type the unit; the stem names it. A count is a bare integer. Put the unrounded
   result and the one-line derivation in `note`.
 - **An item bound to a figure** (its packet has a `dependency` whose text
   is a `mediafigure`, or its stem says "the figure above"): open the

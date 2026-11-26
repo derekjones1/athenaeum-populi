@@ -8170,6 +8170,28 @@
       "bundle": "chemistry-bundle",
       "moduleId": "m68751",
       "sourceElementIds": [
+        "fs-idm66260928"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3561,
+      "rationale": "The hair-spray example prints 390 kPa for 360 kPa × 323 K ÷ 297 K; 360 kPa counts every printed digit (a whole-number datum does, from chapter 2 on) and both kelvin temperatures have three figures, so the result keeps three: 360 × 323.15 ÷ 297.15 = 391.499, 391 kPa. The page prints 391 kPa with a visible Source note directly after the display and a footer clause. First kept as printed as a result whose count was only ambiguous (November 17, 2026); the rule of November 24, 2026 removed the ambiguity. Raised by the Knowledge Check 4 run, and ruled by Derek and the orchestrator, November 25, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/02-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68751",
+      "sourceElementIds": [
+        "fs-idm72969744"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3562,
+      "rationale": "The Check Your Learning of the methane example answers \"350 bar\" for 2520 mol of hydrogen at 27 °C in a 180-L tank; 2520 × 8.314 × 300.15 ÷ 180 = 34,936 kPa = 349.4 bar, and the data give three figures (180 L counts every printed digit): 349 bar. The page keys 349 (sig-figs:3 last-digit:0) with a visible Source note and a footer clause, and tools/verify/verify-source-keys.mjs carries a DISCLOSED_DEVIATIONS line (kind key). Found by the trailing-zero scan, and ruled by the orchestrator, November 25, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/09-gases/02-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68751",
+      "sourceElementIds": [
         "fs-idp10418864"
       ],
       "status": "correct-local-source-defect",

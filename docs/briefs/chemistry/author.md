@@ -173,8 +173,12 @@ goes wrong.
   part restates that part's given data inline, never in a parenthetical
   sentence and never its answer; an equation set inline ends its sentence
   with a period (lint). Playbook "Stems" has each rule once.
-- **Numeric keys.** The key is a bare number, to the figures the source's
-  answer shows; the stem names the unit. Declare `sig-figs:<n>
+- **Numeric keys.** The key is a bare number, to the figures the stem's
+  data give — from chapter 2 on a whole-number datum counts every printed
+  digit, trailing zeros included (180 L is three figures) — and a source
+  answer printed to another count is reported to the parent as a
+  correction, never copied (9.2's tank: 349 bar, where the source prints
+  350); the stem names the unit. Declare `sig-figs:<n>
   last-digit:<k>` (playbook "Measured quantities" and the `last-digit` rule
   in "Exercises"); a count takes `whole-number`; a value the question has
   the learner read off a graph takes `reading:<division>` alone (playbook
