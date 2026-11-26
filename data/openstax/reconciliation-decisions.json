@@ -10405,6 +10405,172 @@
       "status": "correct-local-source-defect",
       "errataEntry": 3500,
       "rationale": "NiS + 2e⁻ → Ni + S²⁻ is printed at +0.76 V; Bard, Parsons & Jordan (1985) and Latimer (1952) give −0.83 V for α-NiS, as does the 1991 edition of the book this one descends from, and Appendix J's own Ksp gives the same. The page prints −0.83, with a third visible Source note under the table, the footer clause extended, one `TABLE_NOTES` deviation for m68870. References opened November 25, 2026, erratum 3500."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/11-solutions-and-colloids/04-colligative-properties.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68783",
+      "sourceElementIds": [
+        "fs-idp40718720"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3501,
+      "rationale": "The answer to the sucrose boiling-point exercise prints \"100.5 °C\" for 115.0 g of sucrose in 350.0 g of water. Water's normal freezing and boiling points are taken as exactly 0 °C and 100 °C (Derek, November 25, 2026: the module's seven water keys split, three at tenths and four exact, and one rule covers them). The boiling point keeps the decimal places of its elevation, 0.512 °C/m × 0.95990 m = 0.491 °C, and the fill-in keys 100.491. The page keys the corrected value with a visible Source note after the item, a footer clause, a DISCLOSED_DEVIATIONS entry in tools/verify/verify-source-keys.mjs, and this entry. Values report, section 3; ruled November 25, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/11-solutions-and-colloids/04-colligative-properties.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68783",
+      "sourceElementIds": [
+        "fs-idp140267616"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3502,
+      "rationale": "The answer to the sucrose freezing-temperature exercise prints \"−1.8 °C\" for 115.0 g of sucrose in 350.0 g of water. Water's normal freezing and boiling points are taken as exactly 0 °C and 100 °C (Derek, November 25, 2026: the module's seven water keys split, three at tenths and four exact, and one rule covers them). The freezing point keeps the decimal places of its depression, 1.86 °C/m × 0.95990 m = 1.79 °C, and the fill-in keys −1.79. The page keys the corrected value with a visible Source note after the item, a footer clause, a DISCLOSED_DEVIATIONS entry in tools/verify/verify-source-keys.mjs, and this entry. Values report, section 3; ruled November 25, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/11-solutions-and-colloids/04-colligative-properties.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68783",
+      "sourceElementIds": [
+        "fs-idp5504000"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3503,
+      "rationale": "The Check Your Learning answer prints \"109.2 °C\" for the antifreeze of the module's first example (17.88 m ethylene glycol). Water's normal freezing and boiling points are taken as exactly 0 °C and 100 °C (Derek, November 25, 2026: the module's seven water keys split, three at tenths and four exact, and one rule covers them). The boiling point keeps the decimal places of its elevation, 0.512 °C/m × 17.884 m = 9.16 °C, and the fill-in keys 109.16. The page keys the corrected value with a visible Source note after the item, a footer clause, a DISCLOSED_DEVIATIONS entry in tools/verify/verify-source-keys.mjs, and this entry. Values report, section 3; ruled November 25, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/11-solutions-and-colloids/04-colligative-properties.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68783",
+      "sourceElementIds": [
+        "fs-idm61658912"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3504,
+      "rationale": "The answer to part (c) prints \"X Cl2 = 0.192\" for 25 g of Cl₂ in 125 g of dichloromethane; 25 g has two figures and 0.3526 mol ÷ 1.8245 mol = 0.1933, which no table of masses rounds to 0.192, so the Cl₂ fill-in keys 0.19 at two significant figures (the CH₂Cl₂ fill-in keys the table's 0.807 beside the source's 0.808, a register row). The page keys the corrected value with a visible Source note after the item, a footer clause, a DISCLOSED_DEVIATIONS entry in tools/verify/verify-source-keys.mjs, and this entry. Ruled by Derek, November 25, 2026 (run facts, decision 2)."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/11-solutions-and-colloids/04-colligative-properties.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68783",
+      "sourceElementIds": [
+        "fs-idp14106448"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3505,
+      "rationale": "The Check Your Learning answer prints \"−9.3 °C\" for a 1.85 m solution in nitrobenzene; the module's table gives K_f = 8.1 °C/m, two figures, so the depression is 15 °C to the ones place and 5.67 °C − 15 °C = −9 °C, as the example above it rounds its own (5.5 − 1.7 = 3.8). The fill-in keys −9 (sig-figs:1 last-digit:0), with a visible Source note after the item, a footer clause, a DISCLOSED_DEVIATIONS entry, and this entry. Ruled by Derek, November 25, 2026 (run facts, decision 3)."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/11-solutions-and-colloids/04-colligative-properties.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68783",
+      "sourceElementIds": [
+        "fs-idm4591712"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3506,
+      "rationale": "The source answer to the hydrogen chloride in benzene exercise computes the depression with \"5.14 °C/m\" for benzene's K_f where the module's own table prints 5.12 °C/m; the result, 5.1 °C, is the same. The model answer prints 5.12, with a visible Source note after it, a footer clause, a DISCLOSED_DEVIATIONS solution entry in tools/verify/verify-source-keys.mjs, and this entry. Values report; ruled November 25, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/11-solutions-and-colloids/03-solubility.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68782",
+      "sourceElementIds": [
+        "fs-idm269049024"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3512,
+      "rationale": "The thermal-pollution example multiplies a concentration it had already rounded, (2.0 × 10⁻⁴ mol/L)(32.0 g/1 mol)(1000 mg/g) = 6.4 mg/L; carried, 2.04 × 10⁻⁴ × 31.998 × 1000 = 6.5276, which is 6.5 mg/L (the molar mass does not move it). The page prints the carried values and 6.5 mg/L, with a Source note after the first example, a second after this example's solution (\"The source prints 6.4 mg/L; it multiplies a concentration it had already rounded.\"), and a footer clause; the conclusion (below 7.5 mg/L) is unchanged. Values report; ruled by the orchestrator, November 25, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/11-solutions-and-colloids/04-colligative-properties.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68783",
+      "sourceElementIds": [
+        "fs-idm36515600"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3519,
+      "rationale": "Example 2 (molal-conversion) prints X_NaCl = 0.052 from 3.0 mol ÷ (3.0 mol + 55 mol), reusing 55 mol of water it had rounded from 55.509; carried, 3.0 ÷ 58.509 = 0.0513, so the page prints 0.051, with a Source note after the solution (\"the source prints 0.052 for the mole fraction of NaCl; it divides by a molar amount of water it had already rounded.\") and a footer clause. Values report; ruled November 25, 2026 (run facts, decision 6)."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/11-solutions-and-colloids/04-colligative-properties.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68783",
+      "sourceElementIds": [
+        "fs-idm39560176"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3519,
+      "rationale": "The vapor-pressure example prints \"4.000 mol C₂H₅OH\" for 184.4 g ÷ 46.069 g/mol, which is 4.0027; the page prints 4.003 mol (carried 4.0027), with a Source note after the solution (\"the source prints 4.000 mol of ethanol, which is not the quotient of its own line; the mole fraction and the vapor pressure are the same.\") and a footer clause. The mole fraction (0.800) and the pressure (0.142 atm) are unchanged. Values report; ruled November 25, 2026 (run facts, decision 6)."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/11-solutions-and-colloids/04-colligative-properties.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68783",
+      "sourceElementIds": [
+        "fs-idp67442432"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3519,
+      "rationale": "The freezing-point molar-mass example prints 0.63 m, 0.035 mol, and 1.1 × 10² g/mol, dividing 4.00 g by an amount of solute it had already rounded; carried, the molality is 0.6211, the moles 0.03416, and the molar mass 117.1, which is 1.2 × 10² g/mol. The page prints 0.62, 0.034 (carried 0.6211 and 0.03416), and 1.2 × 10² g/mol, with a Source note after the solution (\"the source prints 1.1 × 10² g/mol; it divides by an amount of solute it had already rounded.\") and a footer clause. Values report; ruled November 25, 2026 (run facts, decision 6)."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/11-solutions-and-colloids/04-colligative-properties.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68783",
+      "sourceElementIds": [
+        "fs-idp86700768"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3519,
+      "rationale": "The electrolyte example prints \"Result: 1.2 m\" for the molality of the ions, computed from an amount of sodium chloride it had already rounded (0.072 mol doubled over 0.125 kg); carried, 0.07187 mol NaCl gives 0.1437 mol ions and 1.150 m, which is 1.1 m, and its next result, 2.1 °C, follows from the carried value (2.139), not from 1.2 m (2.23). The page prints 1.1 m with the carried values beside each result (0.07187 mol, 0.1437 mol, 1.1499 m, 2.139 °C), and a Source note after the solution; the freezing point (−2.1 °C) is the same. Values report; ruled November 25, 2026 (run facts, decision 6), reworded after the checker."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/11-solutions-and-colloids/04-colligative-properties.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68783",
+      "sourceElementIds": [
+        "fs-idp189679696"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3525,
+      "rationale": "The urea Check Your Learning gives the vapor pressure of pure water at 25 °C as 23.7 torr where Appendix E and Section 9.3's table print 23.8 torr; with 23.8 torr the answer is 23.448, the source's 23.4 torr, and with the stem's 23.7 it is 23.350, so the printed answer does not follow from its own stem. The stem prints 23.8 torr (the words linked to Appendix E), with a visible Source note after the item, a footer clause, and the key 23.4 (sig-figs:3 last-digit:1). Values report; ruled by the orchestrator, November 25, 2026 (run facts, decision 4)."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/11-solutions-and-colloids/04-colligative-properties.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68783",
+      "sourceElementIds": [
+        "fs-idp84456528"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3530,
+      "rationale": "The source calls van ’t Hoff a German chemist. He was born in Rotterdam, in the Netherlands, studied at Delft, and held a chair at Amsterdam for 18 years before he moved to Berlin (Nobel Foundation biography, opened November 25, 2026). The page prints \"Dutch\", with a visible Source note directly after the paragraph and a footer clause. Found by the 11.4 claim pass (Finding 1), ruled by the orchestrator, November 25, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/11-solutions-and-colloids/05-colloids.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68784",
+      "sourceElementIds": [
+        "fs-idm23374592"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3539,
+      "rationale": "The iron(III) hydroxide equation prints one H₃O⁺ and does not balance (H 12 against 6, O 6 against 4, charge 0 against +1); with 3H₃O⁺ it balances (H 12 = 3 + 9, O 6 = 3 + 3, charge 0). The page prints 3H₃O⁺, with a visible Source note directly after the equation and a footer clause. Found by the 11.5 author, confirmed by the checker and the claim pass, November 25, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/11-solutions-and-colloids/05-colloids.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68784",
+      "sourceElementIds": [
+        "fs-idm167088304",
+        "fs-idm140606352"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3540,
+      "rationale": "The Deepwater Horizon box places the blowout \"near Mississippi\" and says the response used 1.84 million gallons of Corexit 9527, most injected underwater and small amounts sprayed on top. The Coastal Response Research Center and NOAA report (March 22, 2012) places the well on the Louisiana-Texas continental slope, gives 771,272 gallons injected at the source and about 1.1 million gallons applied to surface waters, and says Corexit 9500A and 9527A were both used, 9527A only at the surface (22% of the total). The page prints \"off the coast of Louisiana\" and the corrected dispersant sentence (1.84 million total kept; the sentence on 2-butoxyethanol kept, attached to Corexit 9527A), with one visible Source note after the box's figure and a footer clause. Found by the 11.5 claim pass (Finding 1), ruled by the orchestrator, November 25, 2026."
     }
   ]
 }

@@ -32,8 +32,9 @@ solutions—are also discussed.
 
 - **The Dissolution Process** — describing the basic properties of solutions and how they form; predicting whether a given mixture will yield a solution based on molecular properties of its components; and explaining why some solutions either produce or absorb heat when they form.
 - **Electrolytes** — defining and giving examples of electrolytes; distinguishing between the physical and chemical changes that accompany dissolution of ionic and covalent electrolytes; and relating electrolyte strength to solute-solvent attractive forces.
-
-The chapter’s remaining sections — Solubility; Colligative Properties; and Colloids — are being written and will appear here when they are finished and verified.
+- **Solubility** — describing the effects of temperature and pressure on solubility; stating Henry’s law and using it in calculations involving the solubility of a gas in a liquid; and explaining the degrees of solubility possible for liquid-liquid solutions.
+- **Colligative Properties** — expressing concentrations of solution components using mole fraction and molality; describing the effect of solute concentration on various solution properties (vapor pressure, boiling point, freezing point, and osmotic pressure); performing calculations using the mathematical equations that describe these various colligative effects; describing the process of distillation and its practical applications; and explaining the process of osmosis and describing how it is applied industrially and in nature.
+- **Colloids** — describing the composition and properties of colloidal dispersions; and listing and explaining several technological applications of colloids.
 
 ---
 

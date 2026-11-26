@@ -1544,6 +1544,19 @@ decisions entries) and 65k (pins). No rendered-page reader, no values agent,
 no facts Clerk: the parent wrote the landing, the run facts, the rulings,
 the playbook lines, and this entry.
 
+Chapter 11, Sections 11.3–11.5 (three sections, 56 auto-graded items and 16
+self-checks; one session): authors 348k, 483k, and 298k tokens each across
+all rounds (11.3 to 11.5); checkers 233k, 250k, and 173k; claim pass 176k;
+consistency reader 320k; fix checker 211k; three rendered-page readers 172k,
+165k, and 202k; blind solver 146k. Before the wave, the values agent 210k
+and the gate agent 377k; the gate agent's two later calls (the cancel-stroke
+check, the whole-chapter lint) took it to 418k. After the solve, the
+chapter-reference fixer 122k. Clerks: 85k (the facts half of the run facts),
+243k (errata, 47 entries and 15 decisions entries), 55k (pins), and 133k
+(the history draft). The parent wrote the decisions, the rulings, the
+landing's lines, the earlier pages' links, the ledger carry, and the
+playbook lines.
+
 Chapter 9, Sections 9.3–9.6 (four sections, 73 auto-graded items and 16
 self-checks; about two hours and a quarter of wall time in one session, of
 which the first thirty-five minutes were spent reading four other sessions'
@@ -6304,6 +6317,271 @@ stays as printed, and the chapter 15 run puts the Source note at exercise
 3.3; grader, text, and documentation tests 11,305 passing, none failing. No
 graded item's stem, key, or form changed, so nothing was re-solved.
 
+## Chapter 11, Sections 11.3–11.5 (November 25, 2026)
+
+The second run on chapter 11 (Solutions and Colloids), from commit `48720c49`,
+at Derek's word ("lets author the rest of 11"): Sections 11.3 Solubility
+(m68782), 11.4 Colligative Properties (m68783) and 11.5 Colloids (m68784).
+Chapter 11 is complete. The landing lists five sections, and the "being
+written" sentences are gone from the landing and the cover. Prep was
+re-rendered by this session (PDF indexes 547–598, answer key 1162–1164); the
+printed exercise offsets +15, +25 and +70 were confirmed by element count of
+the raw CNXML (8, 7, 10, 45 and 5 exercises in the five modules). The
+automatic probe's one finding (11.4 `fs-idp5504000#check` "read as another")
+was the probe's own defect, not two stems the page must tell apart, and is
+fixed in `tools/lib/keyed-units.mjs` (see the gates, below).
+
+72 ledger records (9, 57 and 6), of which 56 are auto-graded and blind-solved
+(8, 45 and 3) and 16 are self-checks (1, 12 and 3). By kind:
+
+- 11.3: 6 fill-ins (the two Check Your Learning items and four exercises),
+  2 text-recall fillers, 1 self-check; 11 figures, 8 key terms, one Key
+  equation; 5 keyed exercises carried, 5 unkeyed omitted.
+- 11.4: 43 fill-ins (12 in the body — the 11 Check Your Learning items, the
+  ammonia one as two — and 31 in Practice), 1 multiple choice, 1 formula
+  `textin` (S₈), 12 self-checks; 17 figures (11 captioned and six step
+  charts inside worked examples), 17 key terms, 6 Key equations; 22 keyed
+  exercises carried as 45 items, 23 unkeyed omitted, no fillers.
+- 11.5: 3 self-checks (the three keyed exercises) and 3 recall `textin`s
+  (the final state: an added fourth recall item was dropped); 9 figures, 9
+  key terms; 2 unkeyed exercises omitted.
+
+Blind solve (Fable): 50 agreed, 0 disagreed, 6 flagged, all adjudicated with
+no key change: four plain-integer writings of a power-of-ten key; the oxygen
+reading 8.3 beside the key 8.2; "Cottrell precipitator", already an accept
+member. Errata 3501–3547 (47); 15 decisions entries; six key deviations
+(3501–3506: five keys and one model answer).
+
+`--min-exercises` 18997 → 19069, `--min-confirmed` 8091 → 8153, `--min-covered`
+5155 → 5212, `--min-replayed` 9533 → 9623; the map test went from 832 to 835
+sections and Chemistry from 54 to 57. `npm test`, `verify:replay`,
+`source:verify`, the build, `check:build`, the browser suite, and
+`verify:typed` on the chapter closed the run.
+
+### The parent's decisions before the wave
+
+Fourteen, in the run facts. The one that moved the most keys was Derek's,
+asked while the gate agent was building forms: **water's normal freezing and
+boiling points are exact (0 °C and 100 °C)**. The table prints 0.0 and 100.0
+and the source's seven water keys split three at tenths and four exact; the
+rule is that a key which adds a temperature change to 100 °C, or takes it
+from 0 °C, keeps the decimal places of the change. Three keys moved:
+100.5 → 100.491, −1.8 → −1.79, 109.2 → 109.16. Standing as printed: 100.12,
+100.26, −0.208 and 144 g/mol. One Source note under 11.4's table of
+constants says so.
+
+The others, summarized:
+
+- X(Cl₂) 0.192 → 0.19 (25 g is two figures); nitrobenzene's freezing point
+  −9.3 → −9 (the one-figure rule the example above it follows).
+- The urea Check Your Learning's stem datum 23.7 torr is printed 23.8, which
+  Appendix E and Section 9.3 print, with the key back at the source's 23.4
+  and an item Source note; the stem links Appendix E.
+- The O₂ stem of 11.3 (0.70 g per liter at 0 °C, about ten times what the
+  page's own graph shows) is kept, with a Source note that the answer follows
+  the stem as printed.
+- The worked examples were recomputed from the book's own masses, with
+  carried digits printed and kelvin as °C + 273.15. Three results moved
+  (11.3 Example 2, 6.4 → 6.5 mg/L; 11.4 Example 2, X(NaCl) 0.052 → 0.051;
+  11.4 Example 9, 1.1 → 1.2 × 10² g/mol), each with a one-line Source note
+  after the example's solution.
+- Register rows: 5.68, 0.807, 0.00425 and 0.996. Model answers: benzene's
+  K_f 5.14 → the table's 5.12 and HgCl₂'s 271.496 → 271.49.
+- Tokens: `last-digit:1` where the item fetches a mass, R or a table constant,
+  `0` where every number is in the stem.
+
+### What the gates had to be taught
+
+One Author-kind gate agent built every keyed shape as the page carries it,
+right key and wrong key, before the wave (0.4 million tokens over its three
+calls). Four gate gaps and one lint gap, each fixed with a test in
+`tools/verify/verify-source-keys.chapter-11b.test.mjs` (six tests) or
+`tools/lib/item-units.test.mjs`:
+
+- A figure of another section named by a describing phrase ("the photograph
+  of oil and water in a glass in Section 11.3") left a stem of eleven words
+  unmatched: `CROSS_REFERENCE` in `keyed-units.mjs` gained that form.
+- A same-page example named with "(In that example, …)" sank a short stem:
+  the same table gained `the example “Title” above`.
+- Several quantities in one part: the keys gate confirmed a swapped key on
+  eleven items (mole fractions, "7.14 × 10⁻³; 0.399 m", "Vapor pressures
+  are:"). `heldNumber` now holds each by its formula, mole-fraction reading
+  or unit ("mol/kg" holds the number printed with m); the source's
+  "CH₂CI₂" misprint (a capital I) folds only when no label matches as
+  printed.
+- A model answer with two runs of words traded (two cells of a table row)
+  read verbatim: `swappedWords` now reports it.
+- Lint: the closing "Enter the molality in mol/kg." was refused against the
+  display `m`; `unitOf` reads mol/kg as m.
+
+The probe finding was a defect in `leansOn`: the antifreeze Check Your
+Learning links Example 1, whose antifreeze is in the example's question, and
+the probe restated Example 1's Check Your Learning in front of the stem.
+`leanTarget` now looks the thing named before the link up in the linked
+example's Check Your Learning first, then in its question. After it, the
+chapter's probe reads 79 keyed units with no finding.
+
+Two checks came from the readings and are on for every page: **unit-cancel
+strokes** (`struckEquations` against `\cancel` spans in
+`verify-source-coverage.mjs`; 18 pages carry strokes and all match), and the
+whole-chapter-reference lint `chapterWithoutSection` (below).
+
+### What each reading found
+
+- **Checkers** (one per page, no wrong key on any): 11.3, the footer counted
+  six figures where seven are referenced, said the molar mass moved a result
+  that the carried 2.04 moves, and two longdescs missed an exception
+  (methane's label, Ce₂(SO₄)₃'s label). 11.4, the seawater example did not
+  retrace from its printed step results (2.0, not 2.1) and the meat
+  self-check's first rubric clause checked nothing. 11.5, the footer's "the
+  group's one auto-graded item" was false, an emulsion alt overstated a
+  position, and the beyond-floor emulsion item was filed under a subsection
+  an existing item already reaches (dropped).
+- **Claim pass** (five findings): van ’t Hoff is Dutch, not German (Source
+  note citing the Nobel Foundation); the Deepwater Horizon box had the
+  dispersant, its split (surface against subsea) and the place wrong
+  (corrected, Source note citing the CRRC/NOAA report); the model answer's
+  ruby is a solid solution, not a colloid (kept as the source's, Source note
+  citing GIA); Lake Nyos's trigger and the iron(III) hydroxide counter-ions
+  could not be settled and are kept (below).
+- **Consistency reader**: the methanol–ethanol exercise's parts (b) and (c)
+  dropped (a)'s given masses (restated); 11.4's six percent-by-mass hints
+  named no section where 11.3's names 3.4 (named); 11.4's "the previous
+  chapter on gases" corrected as 11.1 did; a moved result's Source note
+  inside 11.3's solution (moved below it); the page-level worked-example
+  note exists in three wordings, no rulebook wording (playbook rows
+  proposed); `0°C` unspaced in one stem.
+- **Rendered pages** (11.3, 11.4 in two halves): the source's unit-cancel
+  strokes were missing in all three worked equations that carry them
+  (restored with `\cancel`); the oxygen item's window (below); carried
+  digits that appeared on the next row without being shown on the row that
+  produced them (11.3's k and C_g printed with their carried digits);
+  the seawater step printing 1.150 *m*, which a learner rounds to 1.2
+  (now 1.1499).
+- **Fix check**: the oxygen item's footer did not say it is graded as a
+  reading (added); the hint on the methanol–ethanol vapor-fraction items
+  dictated the operation (now names the relation and Section 9.3); the meat
+  rubric's second clause was a fragment (re-split at its verb); and the
+  ruling that every carried value be printed on the row that produces it
+  (below).
+
+### The oxygen Check Your Learning
+
+The 11.3 item (oxygen at 15 °C, key 8.2 mg/L) went from a `sig-figs:2
+last-digit:1` fill-in (the parent's decision 8: it reads the curve at two
+figures as the example does, and is not a reading item) to
+`reading:5.4`. A checker measured the curve (1.523 × 10⁻³ mol/L) and found
+the accepted window narrow; a rendered-page reader showed the whole window is
+about six pixels tall at a temperature with no gridline and a learner who
+reads 1.45 or 1.55 is told wrong; the solver then met the same window and
+flagged the item. The final form grades any value within two tenths of one
+marked division of the solubility axis (5.4 mg/L at 0.17 atm, so 7.1 to 9.3).
+The key and display are unchanged, and the footer says so. The playbook's
+"Graph readings" has the rule, marked for Derek.
+
+### Whole-chapter references on finished pages
+
+The consistency reader found 11.1 leaving "a later chapter" unresolved
+where 11.3 and 11.4 resolve it. A measuring script found 18 singular
+whole-chapter references on finished pages (chapters 1–5 and 11.1) with no
+section after them, and a fixer resolved all 18: eight linked to the section
+the sentence teaches (1.6 to 9.2, 3.1 to 2.3 and 2.4, 4.1 twice, 4.3, 4.5,
+5.1, 5.3's hint), ten named in plain text because the chapter is not on the
+site (five on nuclear chemistry, transition metals and organic chemistry;
+4.5's acid–base sentence; 11.1's thermodynamics sentences; 5.3's "chapter on
+thermodynamics", which the parent ruled to Section 16.4). One more, in an
+11.1 Source note, was found by the lint after the measurement. One graded stem
+changed (5.3's propane exercise): its ledger record was carried by the parent,
+with the question and key asserted unchanged apart from the link. Sections
+4.2, 5.2 and 11.1 now link Section 11.3 as the previous run asked. The lint
+`chapterWithoutSection` (in `chemistry-notation.mjs`, wired in
+`lints-leaks.mjs`) is an error: singular "chapter on …" or "(an|the)
+(earlier|previous|preceding|later|next) chapter" needs a "Section N.M" in the
+same sentence; plural "chapters", "this chapter" and the footer are not read.
+
+### What the process got wrong
+
+- The parent's ruling "print the carried value on the row that produces it"
+  went beyond the playbook's rule, which asks only that a later step print
+  the carried digits of a value it uses. The fix check showed the other nine
+  examples of 11.4 still printing the rounded value on its own row and
+  disagreeing with 11.3. The ruling was narrowed: the hemoglobin example's
+  one row that would retrace wrongly (3.205 → 3.2052 × 10⁻⁴) changed, and
+  the rest stand.
+- Decision 8's form for the oxygen item (above).
+- An added recall item on 11.5 (emulsion) whose footer reason was untrue,
+  since the colloidal-systems exercise's milk row already reaches the
+  subsection; dropped.
+- One deviation entry was filed for a change the gate reads as agreeing
+  (HgCl₂ 271.49); the entry was removed and its number reused.
+
+### Outside sources opened
+
+By the parent:
+
+- The Nobel Foundation's biography of van ’t Hoff (saved copy; cited at
+  `https://www.nobelprize.org/prizes/chemistry/1901/hoff/biographical/`).
+- GIA's ruby page (`https://www.gia.edu/ruby-description`).
+- The Coastal Response Research Center / NOAA report "The Future of
+  Dispersant Use in Oil Spill Response Initiative" of March 22, 2012 (saved
+  PDF text; the working address was found by curl and is byte-identical to
+  the saved copy).
+
+The National Research Council chapter refused the parent's request and is not
+cited.
+
+### Kept as printed
+
+- Lake Nyos's trigger, "It is believed that the lake underwent a turnover due
+  to gradual heating from below the lake" (11.3): the claim pass could not
+  settle it (Kling et al., PNAS 102 (2005) names no trigger; the USGS report
+  was refused and the 1987 Science paper is an image-only scan); hedged, kept.
+- The iron(III) hydroxide sol's counter-ions, "some free hydroxide ions" (11.5):
+  the page's own preparation is in acid, where chloride balances the charge;
+  no outside source opened; kept.
+- Nitrobenzene's K_f of 8.1 °C/*m* in 11.4's table: other tables give about
+  6.9 (from memory, no reference opened); the table's value is what the
+  module's key uses.
+- Methanol 94 torr and ethanol 44 torr at 20 °C (11.4): Section 10.3 prints
+  89.3 and 44.6 and a Source note there cites about 97.5 for methanol, so the
+  book gives three values for one quantity; the stem's data stand and the keys
+  follow them (55 and 18 torr).
+- "Approximately 7.7 atm" for blood serum beside the exercise's 7.6 atm: both
+  approximate the same pressure; kept.
+- Example 2's reading "approximately 1.2 × 10⁻³ mol/L" at 30.0 °C (11.3): the
+  curve reads about 1.1 × 10⁻³ (the checker measured 1.125), inside two tenths
+  of the axis division; the conclusion holds either way and the following
+  item is graded as a reading.
+- The Ca(NO₃)₂ stem that does not say the salt dissociates completely (11.4):
+  the key takes three ions per formula unit, the van ’t Hoff factor the module
+  teaches, and the stem says "ideal solution behavior".
+
+### `\dfrac` watch
+
+One: 11.4's HgCl₂ model answer, a fraction inside a fraction (about line 964).
+11.3 and 11.5 have none.
+
+### For Derek
+
+1. **The reading form for a value computed from a graph reading** (11.3, 7.1 to
+   9.3 mg/L). The playbook's "Graph readings" has the rule, marked for him:
+   `reading:` is for a value read in the answer's unit, and this key is a
+   graph reading carried through a multiplication.
+2. **Nitrobenzene's K_f of 8.1 °C/*m* in 11.4's table.** Other tables give
+   about 6.9 (from memory, no reference opened). It decides one Check Your
+   Learning key (−9).
+
+### Cost
+
+About 4.9 million subagent tokens over 24 agent runs: Opus authors, checkers
+and readers, one Fable solver, three Sonnet clerks. The three authors took 1.1
+million; the gate agent 0.4 million across its three calls.
+
+### Next
+
+Knowledge Check block 4 (chapters 9–11), from `docs/briefs/chemistry/kc-run.md`;
+then chapter 12.
+
 ## The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under
@@ -6374,3 +6652,8 @@ the ban, with its page and line. The ban is reviewed from this list.
   (the rendered-page reader). 10.1, 10.4, and 10.5 reported none.
 - Chapter 11, Sections 11.1 and 11.2: none this run (neither page sets a
   fraction).
+- Chapter 11, Sections 11.3–11.5 reported one place. 11.4, the HgCl₂
+  self-check's model answer (line ~964): a fraction inside a fraction, the
+  inner "1 mol HgCl₂ over 271.49 g" small; it is a display equation, where
+  `\frac` is full size, and the checker passed it as readable. 11.3 and
+  11.5 reported none.

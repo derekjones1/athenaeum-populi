@@ -70,9 +70,8 @@ chemistry, and nuclear chemistry.
 - **Liquids and Solids** — intermolecular forces, properties of liquids,
   phase transitions, phase diagrams, the solid state of matter, and lattice
   structures in crystalline solids.
-- **Solutions and Colloids** — the dissolution process and electrolytes. The
-  chapter’s last three sections — solubility, colligative properties, and
-  colloids — are being written.
+- **Solutions and Colloids** — the dissolution process, electrolytes,
+  solubility, colligative properties, and colloids.
 
 ## Appendices
 

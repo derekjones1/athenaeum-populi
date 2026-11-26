@@ -8,6 +8,7 @@ test('askedUnit reads the unit a closing sentence names, as a display prints it'
     ['Find the mass. Enter the mass in grams.', 'g'],
     ['Find the mass. Enter the mass in grams, to the nearest tenth of a gram.', 'g'],
     ['What is the molarity? Enter the concentration in mol/L.', 'M'],
+    ['What is the molality? Enter the molality in mol/kg.', 'm'],
     ['Enter the temperature in degrees Celsius.', '°C'],
     ['Enter the specific heat in J/g °C.', 'J/g °C'],
     ['Enter the heat capacity in cal/°C.', 'cal/°C'],

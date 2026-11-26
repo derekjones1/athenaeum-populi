@@ -486,6 +486,47 @@ Seven things chapter 11's first run added (`docs/history/chemistry.md`,
   parent read three tiles (no new shape); the Clerks were the errata
   drafter and the pins.
 
+Ten things chapter 11's second run added (`docs/history/chemistry.md`,
+"Chapter 11, Sections 11.3–11.5"):
+
+- **A module whose keys split between two readings of one datum is a
+  decision for Derek before the wave**, asked while the gate agent is still
+  building forms (water's 0.0 and 100.0 °C: three keys at tenths, four
+  exact). The values agent sets every key that shares the cause side by
+  side; the parent does not rule a split by picking the larger group.
+- **A values agent runs before the run facts are written** (Author kind,
+  one report): every key, example number, and constant by the one method,
+  each stem datum beside the appendix that prints it, a proposed ruling
+  for every flagged row of the figure screen. Its proposals are not
+  rulings: the run facts say which stand.
+- **The automatic probe's finding can be the probe's own defect** (a Check
+  Your Learning that names another example was pointed at that example's
+  own check): the gate agent reads the CNXML before the parent rules.
+- **A token table is run through `verify:replay` before it is ruled**: a
+  `last-digit:1` on a key one unit from a datum of its own stem (1.08
+  beside a density of 1.09) grades the stem's number right. The author
+  caught it.
+- **A key computed from a graph reading is graded as a reading** (playbook
+  "Graph readings"): the parent ruled it a `sig-figs` fill-in and three
+  readers met the window.
+- **The rendered-page readers compare the page's displays with the print's
+  cancel strokes**; `verify:source-coverage` now fails a page that sets
+  fewer `\cancel` displays than its module strikes out.
+- **A ruling that states a FORM for worked steps is written with "A worked
+  example never reuses a value it has rounded" open**: the parent's "print
+  the carried value on the row that produces it" went further than the
+  rule, one page applied it and one did not, and the fix check set them
+  side by side; the ruling was narrowed to the rule.
+- **A lettered part that needs an earlier part's GIVEN data is checked by
+  reading each item alone** (the methanol–ethanol parts (b) and (c) had
+  lost the masses): the consistency reader and a rendered-page reader
+  found it, no gate.
+- **An author who reports a rulings round in under a minute is read on
+  disk** — again true, and the page was right.
+- **The consistency reader's grep for whole-chapter references is run on
+  the whole book**: eighteen on finished pages had no section after them;
+  they were resolved in this run and a lint holds the rule.
+
 ## 1. Before the wave
 
 `SP` is this session's scratchpad. Never a git command from an agent — say

@@ -115,7 +115,7 @@ import {
   normalizeText, normalizeWhitespace, tokenSimilarity, loadSourceLock, bundleSourceDirectory,
 } from '../lib/openstax-source.mjs';
 import { integerFlag, parseCliArgs } from '../lib/cli.mjs';
-import { shortcodes } from '../lib/content.mjs';
+import { mathSpans, shortcodes } from '../lib/content.mjs';
 import { mediaBindings } from '../lib/exercise-context.mjs';
 import {
   KEYED_EXERCISE_CLASS, KEYED_ONLY_BOOKS, answerText, checkYourLearning, closedSet, closingStem, closingUnit, plain, readingRank, sequentialParts, splittingStem, twoUnitAnswer, unitScore, unlinked,
@@ -931,6 +931,49 @@ export function coverage(markdown, source, { listed = [], keyedOnly = false } = 
   });
 }
 
+/* ---- unit-cancel strokes ------------------------------------------------ */
+
+/**
+ * How many of a module's math blocks strike a term out — a display
+ * `<equation>`, or a `<m:math>` outside one, holding `<m:menclose
+ * notation="horizontalstrike">` (the book's unit cancellation) — leaving
+ * out those inside an exercise the source keys nothing for (the page omits
+ * it). 11.4's page first dropped all three of its source's strokes, and
+ * only the rendered-page readers saw it (chapter 11).
+ */
+export function struckEquations(xml) {
+  const text = String(xml ?? '');
+  const omitted = [];
+  for (const match of text.matchAll(/<exercise\b[\s\S]*?<\/exercise>/g)) {
+    if (!/<solution\b/.test(match[0])) omitted.push([match.index, match.index + match[0].length]);
+  }
+  let count = 0;
+  for (const match of text.matchAll(/<equation\b[\s\S]*?<\/equation>|<m:math\b[\s\S]*?<\/m:math>/g)) {
+    if (!/notation="[^"]*horizontalstrike/.test(match[0])) continue;
+    if (omitted.some(([from, to]) => match.index >= from && match.index < to)) continue;
+    count += 1;
+  }
+  return count;
+}
+
+/** How many math spans of a page set a term with `\cancel` (playbook "Notation": "A cancelled unit is `\cancel{\text{…}}`"). */
+export function cancelSpans(markdown) {
+  return mathSpans(String(markdown ?? ''), { maskCode: true, allowNewlines: true }).filter((span) => /\\cancel\b/.test(span.tex)).length;
+}
+
+/**
+ * The failure for a Chemistry page that carries fewer struck-out math blocks
+ * than its module, or null: every source block with a stroke is printed by
+ * the page (worked examples, keyed solutions), and each keeps it as
+ * `\cancel`. A count, not a binding: a page may split one source display in
+ * two, never drop a stroke.
+ */
+export function cancelShortfall(xml, markdown) {
+  const source = struckEquations(xml);
+  const page = cancelSpans(markdown);
+  return source > page ? `the source strikes out units in ${source} math block(s) and the page sets ${page} with \\cancel — restore each stroke as \\cancel{\\text{…}} (docs/subjects/chemistry.md "Notation")` : null;
+}
+
 /* ---- corpus walk ---------------------------------------------------------- */
 
 export function checkCoverage(repositoryRoot, { contentRoot = 'content' } = {}) {
@@ -950,7 +993,11 @@ export function checkCoverage(repositoryRoot, { contentRoot = 'content' } = {}) 
     if (!existsSync(pagePath)) { failures.push({ page: section.localPath, detail: 'mapped page is missing' }); continue; }
     if (!existsSync(modulePath)) { failures.push({ page: section.localPath, detail: `pinned module ${section.moduleId} is not checked out` }); continue; }
     const markdown = readFileSync(pagePath, 'utf8');
-    const source = sourceExercises(readFileSync(modulePath, 'utf8'));
+    const moduleXml = readFileSync(modulePath, 'utf8');
+    const source = sourceExercises(moduleXml);
+    // Chemistry: every unit-cancel stroke the source prints is kept (`cancelShortfall`).
+    const strokes = section.book === 'chemistry' ? cancelShortfall(moduleXml, markdown) : null;
+    if (strokes) failures.push({ page: section.localPath, detail: `${section.sourceSection} ${section.moduleId}: ${strokes}` });
     const listed = LISTED_EXERCISES.filter((entry) => entry.page === section.localPath);
     const verdicts = coverage(markdown, source, { listed, keyedOnly: KEYED_ONLY_BOOKS.includes(section.book) });
     for (const verdict of verdicts) {

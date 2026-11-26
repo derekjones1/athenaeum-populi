@@ -90,6 +90,8 @@ function unitOf(phrase) {
   const found = NAMES.find(([name]) => phrase.toLowerCase() === name);
   if (found) return found[1];
   if (phrase === 'mol/L') return 'M';
+  // Molality, as molarity: "Enter the molality in mol/kg." over the book's `$0.399\ m$` (11.4).
+  if (phrase === 'mol/kg') return 'm';
   return isUnitExpression(phrase) ? phrase : null;
 }
 

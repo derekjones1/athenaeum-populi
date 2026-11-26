@@ -290,3 +290,36 @@ export function plainAnswerDisplays(text) {
   }
   return hits;
 }
+
+/**
+ * l. A reference to ONE other chapter with no section after it (playbook,
+ * page-skeleton rule 9: "A reference to a whole chapter is resolved to the
+ * section meant"; chapter 11's consistency reader found six, a measurement
+ * of the book eighteen, all resolved November 25, 2026). Read: "chapter on
+ * …", and "(an|the) (earlier|previous|preceding|later|next) chapter" —
+ * singular. It passes when "Section N.M" — a link or plain text, for a page
+ * not yet written — follows in the same sentence ("…the chapter on
+ * thermochemistry ([Section 5.3 Enthalpy](…))", "a later chapter of this
+ * text (Section 16.1 Spontaneity)"). Not read: the plural "later
+ * chapters" / "subsequent chapters" (no one section to name), "this
+ * chapter", code, front matter, the footer (it quotes the source's words),
+ * and an alt, longdesc, or title attribute. A Source note IS read.
+ */
+export function chapterWithoutSection(text) {
+  const prose = body(text).replace(/\b(?:alt|longdesc|title|aria-label)="[^"]*"/g, blankPreservingOffsets)
+    // The footer quotes the source's words to say what changed ("“the next chapter on liquids” followed by a link").
+    .replace(/<small>[\s\S]*?<\/small>/g, blankPreservingOffsets);
+  const hits = [];
+  const REFERENCE = /\bchapter on\b|\b(?:an|the)\s+(?:earlier|previous|preceding|later|next)\s+(?:text\s+)?chapter\b(?!s)/gi;
+  for (const match of prose.matchAll(REFERENCE)) {
+    const rest = prose.slice(match.index + match[0].length);
+    // The rest of the sentence: up to a sentence's end (a period, question
+    // mark, or exclamation mark before a space, a quotation mark, or the
+    // line's end — "9.2" and a link's path are no end) or the line's end.
+    const end = rest.search(/[.?!](?=["”’)]?(?:\s|$))|\n/);
+    const sentence = end === -1 ? rest : rest.slice(0, end + 1);
+    if (/\bSection \d+\.\d+/.test(sentence)) continue;
+    hits.push({ index: match.index, written: String(text).slice(match.index, match.index + match[0].length + 50).replace(/\s+/g, ' ').trim() });
+  }
+  return hits;
+}

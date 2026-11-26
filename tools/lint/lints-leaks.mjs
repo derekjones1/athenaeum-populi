@@ -95,7 +95,7 @@ import { amountHintProblem, heatAsk, isNegativeKey } from '../lib/heat-ask.mjs';
 import { askedUnit, shownUnit, showsAskedUnit } from '../lib/item-units.mjs';
 import { isWordRun, readWords } from '../lib/rubric-run.mjs';
 import { cePrinted } from '../lib/keyed-units.mjs';
-import { bareGreekMath, bareProportionality, bareSigmaPi, crowdedFractionRows, ungroupedNumberBeforeUnit, britishSpellingAndStraightApostrophes, italicOrbitalLetters, minusAsBond, minusAsGroupBond, overlappingRubricClauses, plainAnswerDisplays, straightApostrophes } from './chemistry-notation.mjs';
+import { bareGreekMath, bareProportionality, chapterWithoutSection, bareSigmaPi, crowdedFractionRows, ungroupedNumberBeforeUnit, britishSpellingAndStraightApostrophes, italicOrbitalLetters, minusAsBond, minusAsGroupBond, overlappingRubricClauses, plainAnswerDisplays, straightApostrophes } from './chemistry-notation.mjs';
 import {
   chapterLandingLinks, choiceSelfcheckStems, colourOutsideVisible, dashHyphens, dataFiguresNoteVariants, DATA_FIGURES_NOTE, italicDescriptiveSubscripts,
   miscountedConfigurations, proseOnly, sourceNumberReferences, subshellLabelSlips,
@@ -1300,6 +1300,11 @@ export function lintLeaks(src, filename = '') {
     // whole book, every hit fixed before they were turned on).
     for (const hit of bareProportionality(text)) {
       err(hit.index, `"${hit.written}": a bare ∝ outside math renders as a speck in the body face — write \`$\\propto$\` (playbook "Notation")`);
+    }
+    // Chapter 11's consistency reading (November 25, 2026; measured on the
+    // whole book, all eighteen resolved before it was turned on).
+    for (const hit of chapterWithoutSection(text)) {
+      err(hit.index, `"${hit.written}": a reference to another chapter names the section meant — a link, or "Section N.M Title" in plain text for a page not yet written, in the same sentence (playbook page-skeleton rule 9)`);
     }
     for (const hit of ungroupedNumberBeforeUnit(text)) {
       err(hit.index, `\`${hit.written}\`: ${hit.value} stands before a unit in math, so it is no year — group it: \`${hit.grouped}\` (playbook "Notation", digit grouping)`);

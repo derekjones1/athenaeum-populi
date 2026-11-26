@@ -5,7 +5,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  straightApostrophes, bareGreekMath, bareProportionality, bareSigmaPi, crowdedFractionRows, ungroupedNumberBeforeUnit, britishSpellingAndStraightApostrophes, italicOrbitalLetters, minusAsBond, minusAsGroupBond, overlappingRubricClauses, plainAnswerDisplays,
+  straightApostrophes, bareGreekMath, bareProportionality, chapterWithoutSection, bareSigmaPi, crowdedFractionRows, ungroupedNumberBeforeUnit, britishSpellingAndStraightApostrophes, italicOrbitalLetters, minusAsBond, minusAsGroupBond, overlappingRubricClauses, plainAnswerDisplays,
 } from './chemistry-notation.mjs';
 import { lintLeaks } from './lints-leaks.mjs';
 
@@ -148,4 +148,24 @@ test('d2. a group\'s bond drawn with the minus sign (chapter 10, F3: 10.2\'s "�
   const errors = lintLeaks('Body: many −OH groups.\n', CHEM).errors;
   assert.ok(errors.some((error) => /"−OH" draws a group's bond with the minus sign U\+2212 .* "–OH"/.test(error)));
   assert.ok(!lintLeaks('Body: many −OH groups.\n', 'content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md').errors.some((error) => /group's bond/.test(error)), 'Chemistry only');
+});
+
+test('l. a reference to one other chapter names its section; the plural and "this chapter" are not read (November 25, 2026)', () => {
+  const hits = (text) => chapterWithoutSection(text).length;
+  // Right: a link, a plain-text section, inside or after a parenthesis.
+  assert.equal(hits('As described in the chapter on thermochemistry ([Section 5.3 Enthalpy](/physical-sciences/chemistry/05-thermochemistry/03-enthalpy/)), the enthalpy…\n'), 0);
+  assert.equal(hits('It is treated more thoroughly in a later chapter of this text (Section 16.1 Spontaneity). For now…\n'), 0);
+  assert.equal(hits('(an exothermic change, as discussed in the chapter on thermochemistry, [Section 5.1 Energy Basics](/x/))\n'), 0);
+  assert.equal(hits('{{< fillin\n  question="(Hint: We will see this in a later chapter on gases, [Section 9.3 Stoichiometry of Gaseous Substances, Mixtures, and Reactions](/x/)—for now use 1.00 L.) Enter the volume in liters."\n  answer="2"\n  hint="h"\n>}}\n'), 0, 'item text');
+  // Wrong: no section in the sentence, even if one follows in the next.
+  assert.equal(hits('The details are in the chapter on nuclear chemistry. See Section 21.1 Nuclear Structure and Stability.\n'), 1);
+  assert.equal(hits('An earlier chapter of this text described the atomic mass unit.\n'), 1);
+  assert.equal(hits('steps of the sort learned in the previous chapter are required.\n'), 1);
+  assert.equal(hits('{{< fillin\n  question="(Hint: We will see how to do this in a later chapter on gases—for now use 1.00 L.) Enter it."\n  answer="2"\n  hint="h"\n>}}\n'), 1, 'item text');
+  // Not read: the plural, this chapter, an alt, front matter.
+  assert.equal(hits('Other SI units will be introduced in subsequent chapters. This will be explored in later chapters of this text.\n'), 0);
+  assert.equal(hits('As will be discussed later in this chapter, and in the image that opens this chapter.\n'), 0);
+  assert.equal(hits('<small>Changes: “the next chapter on liquids” followed by a link to the section meant.</small>\n'), 0, 'the footer quotes the source');
+  assert.equal(hits('*Source note:* its low solubility comes from a decrease in entropy, a topic of the later chapter on thermodynamics.\n'), 1, 'a Source note is read');
+  assert.equal(hits('---\ntitle: "the chapter on gases"\n---\n{{< mediafigure src="chemistry/x" alt="A cover of the chapter on gases." >}}\n'), 0);
 });

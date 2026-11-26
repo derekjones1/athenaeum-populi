@@ -1737,6 +1737,48 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     erratum: 3498,
     reason: 'the question asks for aqueous ions and the source answer writes HClO₄(aq) whole; the model answer says what a correct answer contains, written whole or as ions, then gives the source equation as "Sample answer:"',
   },
+  {
+    page: 'content/physical-sciences/chemistry/11-solutions-and-colloids/04-colligative-properties.md',
+    exercise: 'fs-idp40718720(b)',
+    kind: 'key',
+    erratum: 3501,
+    reason: 'the source answer prints "100.5 °C" for 115.0 g of sucrose in 350.0 g of water; water\'s normal freezing and boiling points are taken as exactly 0 °C and 100 °C (Derek, November 25, 2026: the module\'s seven water keys split, three at tenths and four exact, and one rule covers them), so the boiling point keeps the decimal places of its elevation, 0.512 °C/m × 0.95990 m = 0.491 °C, and the fill-in keys 100.491',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/11-solutions-and-colloids/04-colligative-properties.md',
+    exercise: 'fs-idp140267616(b)',
+    kind: 'key',
+    erratum: 3502,
+    reason: 'the source answer prints "−1.8 °C" for 115.0 g of sucrose in 350.0 g of water; water\'s normal freezing and boiling points are taken as exactly 0 °C and 100 °C (Derek, November 25, 2026: the module\'s seven water keys split, three at tenths and four exact, and one rule covers them), so the freezing point keeps the decimal places of its depression, 1.86 °C/m × 0.95990 m = 1.79 °C, and the fill-in keys −1.79',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/11-solutions-and-colloids/04-colligative-properties.md',
+    exercise: 'fs-idp5504000#check',
+    kind: 'key',
+    erratum: 3503,
+    reason: 'the Check Your Learning answer prints "109.2 °C" for the antifreeze of the module\'s first example (17.88 m ethylene glycol); water\'s normal freezing and boiling points are taken as exactly 0 °C and 100 °C (Derek, November 25, 2026: the module\'s seven water keys split, three at tenths and four exact, and one rule covers them), so the boiling point keeps the decimal places of its elevation, 0.512 °C/m × 17.884 m = 9.16 °C, and the fill-in keys 109.16',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/11-solutions-and-colloids/04-colligative-properties.md',
+    exercise: 'fs-idm61658912(c)',
+    kind: 'key',
+    erratum: 3504,
+    reason: 'the source answer prints "X Cl2 = 0.192" for 25 g of Cl₂ in 125 g of dichloromethane; 25 g has two figures and 0.3526 mol ÷ 1.8245 mol = 0.1933, which no table of masses rounds to 0.192, so the Cl₂ fill-in keys 0.19 at two significant figures; the CH₂Cl₂ fill-in keys the table\'s 0.807 beside the source\'s 0.808, a register row',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/11-solutions-and-colloids/04-colligative-properties.md',
+    exercise: 'fs-idp14106448#check',
+    kind: 'key',
+    erratum: 3505,
+    reason: 'the Check Your Learning answer prints "−9.3 °C" for a 1.85 m solution in nitrobenzene; the module\'s table gives K_f = 8.1 °C/m, two figures, so the depression is 15 °C to the ones place and 5.67 °C − 15 °C = −9 °C, as the example above it rounds its own (5.5 − 1.7 = 3.8); the fill-in keys −9 at one significant figure',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/11-solutions-and-colloids/04-colligative-properties.md',
+    exercise: 'fs-idm4591712',
+    kind: 'solution',
+    erratum: 3506,
+    reason: 'the source answer computes the depression with "5.14 °C/m" for benzene\'s K_f where the module\'s own table prints 5.12 °C/m; the model answer prints 5.12 (the result, 5.1 °C, is the same)',
+  },
 ]);
 
 /* ---- source side ---------------------------------------------------------- */
@@ -3053,15 +3095,46 @@ function heldNumber(answer, question, key) {
   // 276 kPa; C _2 H _6 : 27 kPa; C _3 H _8 : 3.4 kPa" (9.3, partial
   // pressures): "Enter the partial pressure of C₂H₆ in kilopascals." is
   // keyed with C₂H₆'s number, so a swapped pair is refused.
-  const perFormula = String(answer).split(';').map((piece) => /^\s*([A-Z][A-Za-z0-9 _()]*?)\s*:\s*(.+)$/.exec(piece))
+  // A heading before the first pair is no formula: "Vapor pressures are:
+  // CH _3 OH: 55 torr; C _2 H _5 OH: 18 torr" (11.4) pairs CH₃OH with 55.
+  const perFormula = String(answer).split(';').map((piece) => /(?:^\s*|:\s*)([A-Z][A-Za-z0-9 _()]*?)\s*:\s*([^:]+)$/.exec(piece))
     .filter(Boolean).map((match) => ({ formula: formulaChars(match[1]), numeral: printedNumerals(match[2])[0] }))
     .filter((entry) => entry.numeral && /\d/.test(entry.formula));
-  if (perFormula.length >= 2) {
+  // A mole fraction per substance (11.4): the source's MathML X with the
+  // formula as its subscript, "X Na 2 CO 3 = 0.0119 ; X H 2 O = 0.988", or a
+  // sentence each, "The mole fraction of HNO _3 is 0.378. The mole fraction
+  // of H _2 O is 0.622." — "Enter the mole fraction of H₂O." is keyed with
+  // water's number.
+  const fractions = [...String(answer).matchAll(/(?:(?<![A-Za-z])X\s+|\bmole fraction of\s+)([A-Z][A-Za-z0-9 _()]*?)\s*(?:=|\bis\b)\s*([−–-]?\d[\d.]*(?:\s*×\s*10\s*\^\{[−–-]?\d+\})?)/g)]
+    .map((match) => ({ formula: formulaChars(match[1]), numeral: printedNumerals(match[2])[0] }))
+    .filter((entry) => entry.numeral && /\d/.test(entry.formula));
+  for (const entries of [perFormula, fractions]) {
+    if (entries.length < 2) continue;
     const words = new Set(String(closing).split(/\s+/).map((word) => formulaChars(word.replace(/[.,;:?]+$/, ''))));
-    const asked = perFormula.filter((entry) => words.has(entry.formula));
+    let asked = entries.filter((entry) => words.has(entry.formula));
+    // A label the source misprints with a capital I for the l of Cl — "X CH
+    // 2 CI 2" for dichloromethane (11.4's (c)) — is read so only when no
+    // label matches as printed.
+    if (!asked.length) {
+      const folded = new Set([...words].map((word) => word.replace(/I/g, 'l')));
+      asked = entries.filter((entry) => folded.has(entry.formula.replace(/I/g, 'l')));
+    }
     if (asked.length === 1) {
       return sameNumeral(asked[0].numeral, key) ? null : { what: `the value for ${asked[0].formula}`, numerals: [asked[0].numeral] };
     }
+  }
+  // A mole fraction and a molality with no labels — "7.14 × 10^{−3} ; 0.399
+  // m" (11.4's ammonia Check Your Learning): the molality is the number
+  // printed with m, the mole fraction the number printed with no unit, so
+  // "Enter the molality in mol/kg." keyed with 7.14 × 10⁻³ is refused.
+  const plainPieces = String(answer).split(';').map((piece) => piece.trim()).filter(Boolean)
+    .map((piece) => ({ piece, numeral: printedNumerals(piece)[0] })).filter((entry) => entry.numeral)
+    .map((entry) => ({ ...entry, after: entry.piece.slice(entry.piece.indexOf(entry.numeral.printed) + entry.numeral.printed.length).replace(/[*\s.]/g, '') }));
+  const molal = plainPieces.filter((entry) => entry.after === 'm').map((entry) => entry.numeral);
+  const bare = plainPieces.filter((entry) => entry.after === '').map((entry) => entry.numeral);
+  if (molal.length && bare.length && plainPieces.length === molal.length + bare.length) {
+    const held = /\bmolal(?:ity)?\b|\bmol\/kg\b/i.test(closing) ? ['the molality', molal] : /\bmole fraction\b/i.test(closing) ? ['the mole fraction', bare] : null;
+    if (held) return held[1].some((numeral) => sameNumeral(numeral, key)) ? null : { what: held[0], numerals: held[1] };
   }
   // One quantity printed in several units — "141 atm, 107,000 torr, 14,300
   // kPa" (9.3) — under a question that asks it in one ("…what is the
@@ -3363,6 +3436,41 @@ export function swappedWords(model, solution, { all = false } = {}) {
     else if (!small && !benign && before >= 1 && after >= 1 && before + after >= 4
       && from.some((word) => !FUNCTION_WORDS.has(word))) swaps.push([from.join(' '), to.join(' ')]);
     at = end;
+  }
+  // …or two runs of the source's words traded places: a table's row with
+  // its two cells reversed — "milk | water | butterfat" for the source's
+  // "milk | butterfat | water" (11.5's colloid table: the dispersed phase
+  // printed as the medium) — aligns as a word dropped on one side of a
+  // carried word and the same word added on the other, two hunks that
+  // change nothing alone. The moved run is one to six words, the carried
+  // run between the hunks one to six ("pearl | calcium carbonate (CaCO₃) | water"), and three carried words stand
+  // outside on each side (or the answer's edge).
+  const hunks = [];
+  for (let at = 0; at < steps.length;) {
+    if (steps[at].match) { at += 1; continue; }
+    let end = at;
+    while (end < steps.length && !steps[end].match) end += 1;
+    const hunk = steps.slice(at, end);
+    hunks.push({ at, end, from: hunk.filter((step) => step.source).map((step) => step.source), to: hunk.filter((step) => step.model).map((step) => step.model) });
+    at = end;
+  }
+  const carried = (from, to) => steps.slice(from, to).every((step) => step.match);
+  for (let k = 0; k + 1 < hunks.length; k += 1) {
+    const [first, second] = [hunks[k], hunks[k + 1]];
+    const between = second.at - first.end;
+    const moved = (first.from.length && !first.to.length && second.to.join(' ') === first.from.join(' ') && !second.from.length)
+      || (first.to.length && !first.from.length && second.from.join(' ') === first.to.join(' ') && !second.to.length);
+    if (!moved || Math.max(first.from.length, first.to.length) > 6 || between < 1 || between > 6) continue;
+    const outsideBefore = first.at >= 3 ? carried(first.at - 3, first.at) : first.at === 0 || carried(0, first.at);
+    const outsideAfter = steps.length - second.end >= 3 ? carried(second.end, second.end + 3) : carried(second.end, steps.length);
+    if (!outsideBefore || !outsideAfter) continue;
+    // Reported as the two orders of the words involved, the carried run included.
+    const sourceIndex = steps.slice(0, first.at).filter((step) => step.match || step.source).length;
+    const modelIndex = steps.slice(0, first.at).filter((step) => step.match || step.model).length;
+    const span = steps.slice(first.at, second.end);
+    const sourceLength = span.filter((step) => step.match || step.source).length;
+    const modelLength = span.filter((step) => step.match || step.model).length;
+    swaps.push([a.slice(sourceIndex, sourceIndex + sourceLength).join(' '), b.slice(modelIndex, modelIndex + modelLength).join(' ')]);
   }
   return swaps;
 }

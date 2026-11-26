@@ -545,11 +545,12 @@ export function checkYourLearning(document) {
       // The example whose Check Your Learning this one leans on ("the sweetened
       // tea described in [Example 3.14]", 3.3): the page restates that one's
       // given data (`unitFor`; the gate probe builds the item so).
-      const leans = paragraphs.flatMap((para) => descendants(para, (node) => localName(node) === 'link' && node.attributes['target-id']))
-        .map((link) => link.attributes['target-id']).find((target) => target !== example.attributes.id
-          && descendants(document, (node) => localName(node) === 'example' && node.attributes.id === target).length);
+      const links = paragraphs.flatMap((para) => descendants(para, (node) => localName(node) === 'link' && node.attributes['target-id']));
+      const leansLink = links.find((link) => link.attributes['target-id'] !== example.attributes.id
+        && descendants(document, (node) => localName(node) === 'example' && node.attributes.id === link.attributes['target-id']).length);
+      const leans = leansLink?.attributes['target-id'];
       found.push({
-        ...(leans ? { leansOn: `${leans}#check` } : {}),
+        ...(leans ? { leansOn: leanTarget(document, paragraphs, leansLink, leans) } : {}),
         id: `${example.attributes.id || ''}#check${ordinal ? ordinal + 1 : ''}`, cls: 'check-your-learning', stem, marked,
         keyed: answerAt !== -1, answer: answerAt === -1 ? '' : answerText(children[answerAt]),
         answerMarked: answerAt === -1 ? '' : markedStemText(children[answerAt]),
@@ -557,6 +558,33 @@ export function checkYourLearning(document) {
     });
   }
   return found;
+}
+
+/**
+ * What a Check Your Learning that links another example leans on: that
+ * example's own Check Your Learning (`<id>#check`) where the thing it names
+ * is there — "the sweetened tea described in [Example 3.14]" (3.3), whose
+ * tea is that example's Check Your Learning — or the example itself (`<id>`,
+ * no keyed unit) where the thing is in the example's question and not its
+ * Check Your Learning: "the antifreeze described in [Example 11.1]" (11.4,
+ * fs-idp5504000#check) is the worked example's antifreeze, and the ammonia
+ * solution of that example's Check Your Learning restated before it made
+ * the gate probe read the item as the ammonia one. The thing is the last
+ * word before the link, "described in" / "from" / "in" dropped; a link
+ * this cannot read keeps the `#check` reading.
+ */
+function leanTarget(document, paragraphs, link, target) {
+  const para = paragraphs.find((candidate) => (candidate.children || []).includes(link));
+  const before = para ? normalizeWhitespace(stemText({ children: para.children.slice(0, para.children.indexOf(link)) })) : '';
+  const thing = /([a-z][a-z-]+)\s+(?:described\s+)?(?:in|from|of)\s*$/i.exec(before)?.[1]?.toLowerCase();
+  const [targetExample] = descendants(document, (node) => localName(node) === 'example' && node.attributes.id === target);
+  if (!thing || !targetExample) return `${target}#check`;
+  const children = (targetExample.children || []).filter((child) => typeof child !== 'string');
+  const checkAt = children.findIndex((child) => localName(child) === 'para'
+    && /^check your learning$/i.test(normalizeWhitespace(stemText(firstElement(child, 'title') || { children: [] }))));
+  const words = (nodes) => new Set(normalizeWhitespace(nodes.map((node) => stemText(node)).join(' ')).toLowerCase().split(/[^a-z-]+/));
+  if (checkAt !== -1 && words(children.slice(checkAt)).has(thing)) return `${target}#check`;
+  return words(children.slice(0, checkAt === -1 ? children.length : checkAt)).has(thing) ? target : `${target}#check`;
 }
 
 /**
@@ -1225,10 +1253,20 @@ export function memberAfterColon(unit, question) {
   return asked ? listMembers(unit.stem).find((member) => tight(member) === tight(asked)) ?? null : null;
 }
 
-const CROSS_REFERENCE = /\bthe (?:example|exercise|figure|table) “[^”]*” in Section \d+\.\d+|\bthe [^,.;()“”]{1,60}? (?:example|exercise) in Section \d+\.\d+/g;
+// The third form is a figure or table of another section named by a
+// describing phrase, as page-skeleton rule 9 has the page name it — "the
+// photograph of oil and water in a glass in [Section 11.3 Solubility](…)" for
+// the source's bare link (11.4's fs-idp128725184, whose own stem is eleven
+// words: the phrase put it under the floor, chapter 11's gate probe). The
+// fourth is an example of the SAME page, "the example “Calculating Mole
+// Fraction and Molality” above", whose given data the item restates in the
+// same "(In that example, …)" parenthesis (11.4's antifreeze Check Your
+// Learning, fs-idp5504000#check: a seventeen-word stem under a thirty-word
+// parenthesis).
+const CROSS_REFERENCE = /\bthe (?:example|exercise|figure|table) “[^”]*” in Section \d+\.\d+|\bthe [^,.;()“”]{1,60}? (?:example|exercise) in Section \d+\.\d+|\bthe (?:figure|photograph|photo|graph|table|diagram|drawing|image)\b[^,.;()“”]{0,80}? in Section \d+\.\d+|\bthe (?:example|exercise) “[^”]*” above\b/g;
 /**
  * A question without what the page adds when it names another section's
- * example or exercise: the reference itself, the parenthesis that restates
+ * example, exercise, figure, or table: the reference itself, the parenthesis that restates
  * that one's given data ("(In that example, …)"), and a closing "Enter …"
  * sentence. Null when the question names no other section's example or
  * exercise. The question arrives unlinked ("Section 5.2", not its link).

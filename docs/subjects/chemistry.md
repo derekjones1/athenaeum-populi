@@ -882,6 +882,17 @@ selfchecks, source defects, the footer — and each is stated once.
   (110 °C − 100 °C is 10 °C, two figures). A key ruled after the blind solve
   has its figure count read again by the solver's note, not by the parent
   alone.
+- **Water's normal freezing and boiling points are exact** *(Derek,
+  November 25, 2026; chapter 11)*: 0 °C and 100 °C add no uncertainty, so a
+  boiling or freezing point of an aqueous solution keeps the decimal places
+  of its temperature change (0.512 °C/*m* × 0.95990 *m* = 0.491 °C gives
+  100.491 °C), and a change measured from 0 °C has the stem temperature's
+  figures (a solution that freezes at −1.94 °C is depressed by 1.94 °C).
+  11.4's table prints 0.0 and 100.0 and the source's seven water keys split,
+  three at tenths and four exact; one Source note under the table says so,
+  and the three keys at tenths are corrections. Another solvent's table
+  value limits a result to its own last place (benzene's 80.1 °C + 0.83 °C
+  is 80.9 °C).
 - **A kelvin temperature has the figures its last place gives** *(chapter
   9; the blind solver)*: every key is worked with $T_\text{K} =
   T_{°\text{C}} + 273.15$, exact, and a Celsius temperature to the units
@@ -2233,6 +2244,18 @@ token:
 - **The blind solve READS the figure** (solver brief): its reading inside
   the interval is the item's solve, and its note gives the division it
   found and what the data give.
+- **A value COMPUTED from a reading takes the same token, with the
+  division carried into the answer's unit** *(chapter 11; for Derek)*:
+  11.3's Check Your Learning reads oxygen's solubility at 15 °C off a graph
+  whose axis is marked every 1.0 × 10⁻³ mol/L and multiplies it by 0.17 atm
+  and oxygen's molar mass, so one division is 5.4 mg/L and the item
+  declares `reading:5.4` on the source's 8.2 (7.1 to 9.3). Under
+  `sig-figs:2 last-digit:1` the item took only a reading of 1.49 to
+  1.53 × 10⁻³, a window narrower than the curve's stroke, which a checker, a
+  rendered-page reader, and the blind solver (8.3) each met. The key is
+  still the curve as drawn, worked through the item's arithmetic; a
+  computed answer whose stem fixes ONE significant figure (11.3's 40% of
+  KBr) needs no reading token.
 - **The token is declared alone**, on a key that is one number (lint). No
   count of significant figures is asked: `17`, `17.5`, and `18` are all
   readings. The `answerDisplay` is the source's answer in its own words.
