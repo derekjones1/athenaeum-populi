@@ -111,3 +111,41 @@ test('Markdown emphasis in a stem is spoken as its words, never as asterisks', a
   // A blank's underscores are untouched.
   assert.equal(unemphasized('an ________ property'), 'an ________ property');
 });
+
+test('a \\ce inside a fraction reaches the serializer in place, so the fraction is read whole', async (t) => {
+  // Chemistry 12.1's rate relations. Cutting the formula out of the \frac
+  // handed MathLive `\frac{\Delta[` and `]}{\Delta t}`, and the key was
+  // named "minus one fifth the fraction Delta [ over placeholder . End
+  // fraction. Br⁻ ] Delta 'T' …". Now the whole construct is one piece, its
+  // formula spelled as text in the Unicode a prose formula uses.
+  await t.test('the bromide–bromate key', () => {
+    const option = '$-\\frac{1}{5}\\frac{\\Delta[\\ce{Br-}]}{\\Delta t} = -\\frac{\\Delta[\\ce{BrO3-}]}{\\Delta t} = -\\frac{1}{6}\\frac{\\Delta[\\ce{H+}]}{\\Delta t} = \\frac{1}{3}\\frac{\\Delta[\\ce{Br2}]}{\\Delta t} = \\frac{1}{3}\\frac{\\Delta[\\ce{H2O}]}{\\Delta t}$';
+    assert.equal(speakableMathText(option, spoken),
+      '<-\\frac{1}{5}\\frac{\\Delta[\\text{Br⁻}]}{\\Delta t} = -\\frac{\\Delta[\\text{BrO₃⁻}]}{\\Delta t} = -\\frac{1}{6}\\frac{\\Delta[\\text{H⁺}]}{\\Delta t} = \\frac{1}{3}\\frac{\\Delta[\\text{Br₂}]}{\\Delta t} = \\frac{1}{3}\\frac{\\Delta[\\text{H₂O}]}{\\Delta t}>');
+    assert.deepEqual(chemistry(option.slice(1, -1)), []);
+  });
+  await t.test('one concentration change', () => {
+    assert.deepEqual(splitChemistry('\\frac{\\Delta[\\ce{H2O2}]}{\\Delta t}'), [
+      { chemistry: false, text: '\\frac{\\Delta[\\text{H₂O₂}]}{\\Delta t}' },
+    ]);
+    assert.equal(speakableMathText('$\\frac{\\Delta[\\ce{H2O2}]}{\\Delta t}$', spoken), '<\\frac{\\Delta[\\text{H₂O₂}]}{\\Delta t}>');
+  });
+  await t.test('inside \\left … \\right and an environment too', () => {
+    assert.deepEqual(splitChemistry('\\left[\\ce{H+}\\right] = 0.1'), [{ chemistry: false, text: '\\left[\\text{H⁺}\\right] = 0.1' }]);
+    assert.deepEqual(splitChemistry('\\begin{aligned}\\ce{H2O}\\end{aligned}'), [{ chemistry: false, text: '\\begin{aligned}\\text{H₂O}\\end{aligned}' }]);
+  });
+  await t.test('a formula after a closed construct is still cut out', () => {
+    assert.deepEqual(splitChemistry('\\frac{1}{2}\\ \\ce{O2}'), [
+      { chemistry: false, text: '\\frac{1}{2}\\ ' },
+      { chemistry: true, text: 'O₂' },
+    ]);
+  });
+});
+
+test('the book\'s other math options are named as before', () => {
+  // Chemistry 8.1, 10.3, and 9.6: no chemistry in them, so the serializer
+  // gets each span unchanged.
+  assert.equal(speakableMathText('$\\sigma$ bond', spoken), '<\\sigma> bond');
+  assert.equal(speakableMathText('$\\Delta H_\\text{vaporization}$', spoken), '<\\Delta H_\\text{vaporization}>');
+  assert.equal(speakableMathText('$b$', spoken), '<b>');
+});

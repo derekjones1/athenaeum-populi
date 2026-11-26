@@ -501,6 +501,94 @@ export function twoUnitAnswer(answer, stem) {
   return units.length >= 2 ? units : [];
 }
 
+/*
+ * One part answered with several quantities, each NAMED in the answer
+ * (Chemistry 2e 12.1), carried as one fill-in per quantity — or a fill-in
+ * for those a learner can compute and a self-check for one that follows
+ * from the learner's own graph — each fill-in closing with the quantity it
+ * asks. Three ways an answer names them:
+ *   - an interval in a heading: "average rate, 0 − 10 s = 0.0375 mol
+ *     L⁻¹ s⁻¹; average rate, 10 − 20 s = 0.0265 …", asked "Enter the
+ *     average rate between 0.0 s and 10.0 s in mol/L/s.";
+ *   - a heading of words: "average rate for B formation = 0.0188 …;
+ *     instantaneous rate for B formation = 0.012 …", asked by the word
+ *     that tells the headings apart ("Enter the average rate of …");
+ *   - a formula after each number: "1.05 × 10⁻⁶ mol/L/s, N₂ and 3.15 ×
+ *     10⁻⁶ mol/L/s, H₂.", asked "Enter the rate of production of N₂ in
+ *     mol/L/s.".
+ * `verify-source-keys` holds each fill-in to the quantity its closing
+ * names; `verify-source-coverage` renders the part only when every
+ * quantity has its item.
+ */
+const INTERVAL_IN_HEAD = /(\d+(?:\.\d+)?)\s*[−–-]\s*(\d+(?:\.\d+)?)\s*([A-Za-z]+)\b/;
+const QUANTITY_STOP = new Set(['the', 'and', 'for', 'of', 'rate', 'rates']);
+/**
+ * The named quantities of an answer segment, or [] — each `{ printed,
+ * numeral, interval, words, formula }` — only when EVERY piece of the
+ * segment is one, and there are two or more.
+ */
+export function labelledQuantities(answer) {
+  const text = String(answer ?? '').trim().replace(/\s*\.\s*$/, '');
+  const headed = text.split(';').map((piece) => piece.trim()).filter(Boolean)
+    .map((piece) => ({ piece, match: /^([^=]*?[A-Za-z][^=]*?)\s*=\s*([^=]+)$/.exec(piece) }));
+  if (headed.length >= 2 && headed.every((entry) => entry.match)) {
+    const entries = headed.map(({ piece, match }) => {
+      const interval = INTERVAL_IN_HEAD.exec(match[1]);
+      return {
+        printed: piece,
+        numeral: printedNumerals(match[2])[0],
+        interval: interval ? { from: Number(interval[1]), to: Number(interval[2]), unit: interval[3] } : null,
+        words: plain(match[1].replace(INTERVAL_IN_HEAD, ' ')).split(' ').filter((word) => /^[a-z]{3,}$/.test(word) && !QUANTITY_STOP.has(word)),
+        formula: null,
+      };
+    });
+    // Each heading must tell its quantity apart — by an interval, or by a
+    // word no other heading has. A heading that is only a symbol ("X CH₃OH =
+    // 0.590", 11.4's mole fractions) is read by `heldNumber`'s own reader.
+    const told = entries.every((entry) => entry.interval)
+      || entries.every((entry) => entry.words.some((word) => !entries.some((other) => other !== entry && other.words.includes(word))));
+    if (told && entries.every((entry) => entry.numeral)) return entries;
+  }
+  const after = text.split(/\s+and\s+|;/).map((piece) => /^(.*\d.*?),\s*([A-Z][A-Za-z0-9 _()]*?)\s*$/.exec(piece.trim()));
+  if (after.length >= 2 && after.every(Boolean)) {
+    const entries = after.map((match) => ({
+      printed: match[0],
+      numeral: printedNumerals(match[1])[0],
+      interval: null,
+      words: [],
+      formula: chemCanon(match[2], 'formula'),
+    }));
+    if (entries.every((entry) => entry.numeral && entry.formula) && new Set(entries.map((entry) => entry.formula)).size === entries.length) return entries;
+  }
+  return [];
+}
+
+/**
+ * The one quantity of `entries` (labelledQuantities) that an item's closing
+ * sentence asks for: by its interval ("between 0.0 s and 10.0 s"), by its
+ * formula, or by the one heading word no other heading shares — or null.
+ */
+export function askedQuantity(entries, closing) {
+  const text = String(closing ?? '');
+  if (entries.every((entry) => entry.interval)) {
+    const named = /\bbetween\s+(\d+(?:\.\d+)?)\s*([A-Za-z]+)\s+and\s+(\d+(?:\.\d+)?)\s*([A-Za-z]+)/.exec(text);
+    if (!named) return null;
+    const hit = entries.filter((entry) => entry.interval.from === Number(named[1]) && entry.interval.to === Number(named[3])
+      && entry.interval.unit === named[2] && entry.interval.unit === named[4]);
+    return hit.length === 1 ? hit[0] : null;
+  }
+  if (entries.every((entry) => entry.formula)) {
+    const words = new Set(text.split(/\s+/).map((word) => chemCanon(word.replace(/[.,;:?]+$/, ''), 'formula')).filter(Boolean));
+    const hit = entries.filter((entry) => words.has(entry.formula));
+    return hit.length === 1 ? hit[0] : null;
+  }
+  const words = new Set(plain(text).split(' '));
+  const hit = entries.filter((entry) => entry.words
+    .filter((word) => !entries.some((other) => other !== entry && other.words.includes(word)))
+    .some((word) => words.has(word)));
+  return hit.length === 1 ? hit[0] : null;
+}
+
 /** The energy unit an item's closing sentence names ("Enter the heat in calories."), or null. */
 export function closingUnit(question) {
   const closing = String(question ?? '').trim().split(/(?<=[.?!][)”’"]?)\s+/).pop();

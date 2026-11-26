@@ -260,8 +260,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 21,
       "upstreamSections": 114,
-      "localChapters": 11,
-      "mappedSections": 57,
+      "localChapters": 12,
+      "mappedSections": 59,
       "upstreamAppendices": 13,
       "mappedAppendices": 13
     }
@@ -7781,6 +7781,24 @@
       "moduleId": "m68784",
       "sourceTitle": "Colloids",
       "moduleSha256": "19d689687848bf62db397a121f34ea907d29b4c15ad8856916383416251b63e1"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/12-kinetics/01-chemical-reaction-rates.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "12.1",
+      "moduleId": "m68786",
+      "sourceTitle": "Chemical Reaction Rates",
+      "moduleSha256": "85f79953513e8cce27992fef2394a3920f392aae9fcbfe2716f2430b12d3b49a"
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/12-kinetics/02-factors-affecting-reaction-rates.md",
+      "bundle": "chemistry-bundle",
+      "book": "chemistry",
+      "sourceSection": "12.2",
+      "moduleId": "m68787",
+      "sourceTitle": "Factors Affecting Reaction Rates",
+      "moduleSha256": "fb05e9fe7788bf44ae8e8a31006380f72c6fb83b7598d0e801266548929061f5"
     }
   ],
   "appendices": [

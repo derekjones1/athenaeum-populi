@@ -101,23 +101,59 @@ function balancedGroup(text, open) {
 }
 
 /**
+ * Whether TeX that precedes a point leaves a construct open there: a `{`
+ * group (a `\frac` argument, a subscript), a `\left`, or a `\begin`. A cut
+ * at such a point hands the serializer two halves of one construct.
+ */
+function opensConstruct(tex) {
+  let depth = 0;
+  for (let i = 0; i < tex.length; i += 1) {
+    if (tex[i] === '\\') { i += 1; continue; }
+    if (tex[i] === '{') depth += 1;
+    else if (tex[i] === '}') depth -= 1;
+  }
+  const count = (re) => (tex.match(re) || []).length;
+  return depth > 0
+    || count(/\\left(?![a-zA-Z])/g) > count(/\\right(?![a-zA-Z])/g)
+    || count(/\\begin\s*\{/g) > count(/\\end\s*\{/g);
+}
+
+/**
  * One math span cut at its `\ce{…}` groups: `[{ chemistry, text }]`, the
  * chemistry pieces already in Unicode and the rest still TeX for the
  * serializer. A span with no `\ce` is one TeX piece.
+ *
+ * A `\ce` inside a construct — Chemistry 12.1's rate relations,
+ * `\frac{\Delta[\ce{Br-}]}{\Delta t}` — is not cut out: cutting there gave
+ * the serializer `\frac{\Delta[` and `]}{\Delta t}`, which it read as "the
+ * fraction Delta [ over placeholder . End fraction. Br⁻ ] Delta 'T'". The
+ * formula is spelled in place as `\text{Br⁻}` instead, so the construct
+ * reaches the serializer whole and is read whole: "the fraction Delta [Br⁻]
+ * over Delta 'T'. End fraction."
  */
 export function splitChemistry(latex) {
   const pieces = [];
-  let rest = latex;
+  let tex = '';   // TeX since the last cut, not yet handed out
+  let at = 0;
   for (;;) {
-    const at = rest.search(/\\ce\s*\{/);
-    if (at === -1) break;
-    const group = balancedGroup(rest, rest.indexOf('{', at));
+    const found = latex.slice(at).search(/\\ce\s*\{/);
+    if (found === -1) break;
+    const start = at + found;
+    const group = balancedGroup(latex, latex.indexOf('{', start));
     if (!group) break;
-    if (rest.slice(0, at).trim()) pieces.push({ chemistry: false, text: rest.slice(0, at) });
-    pieces.push({ chemistry: true, text: ceText(group[0]) });
-    rest = rest.slice(group[1]);
+    const formula = ceText(group[0]);
+    tex += latex.slice(at, start);
+    if (opensConstruct(tex)) {
+      tex += `\\text{${formula.replace(/[{}#$%&_]/g, '\\$&')}}`;
+    } else {
+      if (tex.trim()) pieces.push({ chemistry: false, text: tex });
+      pieces.push({ chemistry: true, text: formula });
+      tex = '';
+    }
+    at = group[1];
   }
-  if (rest.trim()) pieces.push({ chemistry: false, text: rest });
+  tex += latex.slice(at);
+  if (tex.trim()) pieces.push({ chemistry: false, text: tex });
   return pieces;
 }
 

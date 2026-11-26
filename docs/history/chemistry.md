@@ -6582,6 +6582,162 @@ million; the gate agent 0.4 million across its three calls.
 Knowledge Check block 4 (chapters 9–11), from `docs/briefs/chemistry/kc-run.md`;
 then chapter 12.
 
+## Chapter 12, Sections 12.1–12.2 (November 25, 2026)
+
+The first run on chapter 12 (Kinetics), from commit `e7533feb`, at Derek's
+word ("let's author the next two sections of chemistry"): Sections 12.1
+Chemical Reaction Rates (m68786) and 12.2 Factors Affecting Reaction Rates
+(m68787), and the landing (m68785). Prep for the whole chapter was done once
+(media: 42 images vendored; PDF pages 599–607 and 641–644 rendered; answer key
+1164; inventory, shapes, figure screen, and the automatic probe, whose 2
+findings are both in 12.4 and none in these sections). Printed exercise offsets
+are +0 and +6. The landing lists the two sections and says the other five
+(Rate Laws; Integrated Rate Laws; Collision Theory; Reaction Mechanisms;
+Catalysis) are being written; the cover says the same. There was no values
+agent and no run-facts Clerk: the six numeric keys were run by the parent.
+
+19 ledger records, of which 11 are auto-graded and blind-solved (9 on 12.1, 2
+on 12.2) and 8 are self-checks (3 and 5). Blind solve (Fable): 9 agreed, 2
+disagreed on form and were adjudicated to the solver, with key changes (below).
+Errata 3548–3560 (seven corrections of a key, a model answer, or the body — 3548–3554 — four alt texts, one table summary attribute, one typo), with seven decisions entries.
+
+### Still owed
+
+**Knowledge Check block 4 (chapters 9–11) was NOT run first**, though run.md §4
+step 9 puts it before chapter 12. Derek asked for sections, the parent said so
+at the start of the run, and the check is still owed.
+
+### A shape new to the book: a chain of rate expressions
+
+The parent ruled one multiple choice of four whole chains (the rate written in
+terms of each species) before reading "Multiple choice stays open", which
+forbids invented distractors; the gate agent said so. Derek was asked while the
+12.1 author worked and chose the graded choice (November 25, 2026); the
+playbook has the row and the exception. The gate agent taught the keys gate to
+read a chain as terms (`rateChain`, status `wrong-option`). The 12.1 checker
+then found that the "signs exchanged" distractor is the key times −1, a true
+equation where no "rate =" leads the chain (the bromide–bromate item had two
+right options). It was replaced by "the reactants' minus signs left out" in both
+items, and the gate now refuses a sign-flipped option and two identical options.
+Details: `gate-ch12a.md` in the run's scratchpad.
+
+### What the gates had to be taught
+
+Besides `rateChain`: fill-ins are held to their own quantity by interval and by
+formula; coverage requires part (c)'s self-check; mol/L/s is read as
+mol L⁻¹ s⁻¹. The test file is
+`tools/verify/verify-source-keys.chapter-12.test.mjs`.
+
+### The blind solve
+
+9 agreed; 2 disagreed on form and were adjudicated to the solver, with key
+changes: the 2A ⟶ B exercise's average rate between 0.0 s and 10.0 s, 0.0375 →
+0.038, and the average rate of formation of B, 0.0188 → 0.019 (1.00 − 0.625 is
+good to the hundredths place, two figures; errata 3553, 3554). The parent's
+run-facts ruling had said three figures: the figure screen flagged the row and
+the parent ruled it by counting the digits of 0.375. `solve:compare` printed
+"11 agree" (run.md §0 already says it reports a figure-count disagreement as
+agreement); the solver's notes carried the finding. The two answers were
+carried to the re-hashed items after asserting the stems byte for byte.
+
+### What each reading found
+
+- **Checkers** (one per page). 12.1: the "signs exchanged" distractor
+  (above), and a units multiple choice under two fill-ins whose closings print
+  "mol/L/s", which answered itself; it was dropped and the part is one
+  self-check. A lint now holds it (`lint-measure-ch12a.md`: rule B on; rule A,
+  a hint that prints another item's key, measured at 10 hits, all judged
+  harmless, left to readers; six of them, 2.7's "the subsection on binary
+  acids", have the shape of 12.2's "the catalyst subsection" and are listed for
+  Derek). 12.2: two self-check hints said "the catalyst subsection" beside a
+  recall item keyed `catalyst`; the item was later replaced (its key was also a
+  body heading's word).
+- **Claim pass**: 3 findings, all on 12.2. CaSO₃(aq) → (s), with a Source note
+  citing the IUPAC-NIST Solubility Data Series vol. 26 p. 187 (the parent
+  opened the page); the PhET model answer's "slight excess of A" → "an excess
+  of A" (erratum 3550); SO₂ + H₂O(g) kept. The 12.2 author had already
+  balanced the iron–hydrochloric acid caption equation (3549).
+- **Consistency reader** and the parent's rulings (`consistency-ch12a.md`,
+  `rulings.md`):
+  - The rate unit in prose, stems, closings, hints, table headings, and model
+    answers is mol/L/s (mol/L/h where the hour is the unit); display math
+    keeps the source's form.
+  - One wording for the footer's sentence about added practice items on both
+    pages (11.2's, fitted to the page's count).
+  - The rate-chain footer clauses do not name the three confusions.
+  - The ClF₃ Source note says the source's answer, not its equation,
+    misprints one letter of an element symbol.
+  - The two estimate model answers lose "about" (the keys gate holds them to
+    the source's segment). This overturned part of the parent's earlier
+    ruling on the checker's C2/C3.
+  - The H₂O₂ table's headings are written with slashes, (mol/L) and
+    (mol/L/h). This overturned the run-facts decision to print the image's
+    headings.
+  - The body's general relation printed ΔA without brackets; restored as the
+    source's own Key Equations table prints it (erratum 3552).
+  - 12.2: CaSO₃ corrected with a Source note (3551); the "slight excess"
+    change; SO₂ + H₂O(g) kept; the `catalyst` recall item replaced by a
+    select-the-term choice (water or oxygen: which product makes the foam);
+    the phosphorus Link to Learning's text extended to "video to see an
+    example", as 11.3 has it.
+- **Fix check** (`fix-check-ch12a.md`): no defect. Two judgment calls
+  accepted (a hint that stated its key's definition; a Source note under an
+  unanswered self-check that told the outcome), one declined (the
+  oxygen/water choice stands).
+- **Rendered pages**: no reader (run.md, "A two-section run of prose pages
+  needs none"; 12.1 is not prose only, so the parent read the tiles of the
+  table and the chain choice). Tiles: 11 and 6, no KaTeX or page error.
+
+### What the process got wrong
+
+- The parent ruled the rate-chain multiple choice into the run facts before
+  reading "Multiple choice stays open".
+- The parent's run-facts ruling counted the figures of 0.375 for the average
+  rate and said three; the solver's two were right.
+- The parent's first ruling that the ClF₃ misprint took no Source note was
+  wrong; it was corrected before the wave with the playbook open.
+
+### Outside sources opened
+
+- IUPAC-NIST Solubility Data Series, volume 26, page 187 (CaSO₃·½H₂O in water
+  at 25 °C, 4.5 × 10⁻⁴ mol/dm³), opened by the parent and cited in 12.2's
+  Source note.
+
+### Kept as printed
+
+- SO₂ + H₂O(g) in 12.2 (the prose says water vapor in the air).
+
+### What the real browser found at close-out
+
+`verify:typed` could not click the key of the bromide–bromate choice at 1280
+px: KaTeX's invisible `.pstrut` spacers of one option's stacked fractions
+reached about 35 px above their button and took the click meant for the option
+above, so a learner clicking the right chain could select another. Fixed in
+`assets/css/custom.css` (`.ap-mc-option * { pointer-events: none; }`) with a
+browser test that checks the element at the centre of every math option on
+every Chemistry section page at 1280 and 390 px. The same probe showed the
+option's spoken label was nonsense ("the fraction Delta [ over placeholder"):
+`splitChemistry` cut a `\ce{…}` out of a `\frac` argument; a `\ce` inside an
+open group is now written in place (`assets/js/lib/shared/speakable-label.mjs`,
+with unit tests). The parent looked at the item at 390 px: each option wraps to
+two lines and reads.
+
+### Close-out
+
+`npm test`, lint, both source gates, `verify:replay`, `source:verify`, the link
+check, the build, `check:build`, the browser suite, and `verify:typed` with
+`--variants` (11 items, 0 not graded correct) closed green; floors 19088 /
+8166 / 5224 / 9631. A lint holds the units question (`lints-leaks.mjs`).
+
+### For Derek
+
+- **Knowledge Check block 4 (chapters 9–11) is still owed.**
+- The six 2.7 "binary acids" hints, which have the shape of 12.2's "the
+  catalyst subsection" (lint rule A, left to readers).
+- The rate-chain options' small fractions (the `\dfrac` watch list): looked at on a phone by the parent, where they wrap and read.
+- The oxygen/water choice added on 12.2 is a weak two-option item (water does
+  not foam), kept because every stronger key is printed by a heading or a stem.
+
 ## The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under
@@ -6657,3 +6813,8 @@ the ban, with its page and line. The ban is reviewed from this list.
   inner "1 mol HgCl₂ over 271.49 g" small; it is a display equation, where
   `\frac` is full size, and the checker passed it as readable. 11.3 and
   11.5 reported none.
+- Chapter 12, Sections 12.1–12.2 reported one place. 12.1, the two
+  rate-chain multiple choices (lines ~152 and ~249): every option is an inline
+  chain of stacked fractions (five terms in the bromide–bromate item), the
+  coefficients and the charges small; legible on the tile at 1100 px and,
+  wrapped to two lines, at 390 px (the parent). 12.2 reported none.

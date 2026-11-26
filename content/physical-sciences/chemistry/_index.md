@@ -72,6 +72,9 @@ chemistry, and nuclear chemistry.
   structures in crystalline solids.
 - **Solutions and Colloids** — the dissolution process, electrolytes,
   solubility, colligative properties, and colloids.
+- **Kinetics** — chemical reaction rates and the factors that affect them.
+  The chapter’s last five sections — rate laws, integrated rate laws,
+  collision theory, reaction mechanisms, and catalysis — are being written.
 
 ## Appendices
 
@@ -85,9 +88,6 @@ standard electrode potentials that the chapters refer to by letter.
 
 The remaining chapters of Chemistry 2e will appear in this order:
 
-- **Kinetics** — chemical reaction rates and the factors that affect them,
-  rate laws, integrated rate laws, collision theory, reaction mechanisms,
-  and catalysis.
 - **Fundamental Equilibrium Concepts** — chemical equilibria, equilibrium
   constants, Le Châtelier’s principle, and equilibrium calculations.
 - **Acid-Base Equilibria** — Brønsted-Lowry acids and bases, pH and pOH,

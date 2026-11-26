@@ -5843,6 +5843,10 @@
    "verdict": "ok",
    "note": "re-derived: f(x)=x^2+7=x^2+0x+7, vertex (0,7) on lattice; CNXML Try It (exercise fs-id1169149336332, m81405) prints the identical stem; grid -4..4/0..12 gives 5 reachable snap-lattice points for plotPoints:3 (gpcheck slack 2)."
   },
+  "0aeef03d38e25248": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm57147216 part (c) segment \"instantaneous rate for B formation = 0.012\", unit written mol/L/s; question closed on the instantaneous rate"
+  },
   "0af33936924a00a3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -23818,6 +23822,14 @@
     "result": "agrees"
    }
   },
+  "2d37d3804d3538a3": {
+   "verdict": "ok",
+   "note": "select-the-term filler from body sentence fs-idm237313312 '...the solution foams because of the vigorous production of oxygen gas'; options = the two products of 'Hydrogen peroxide decomposes to yield water and oxygen gas' (fs-idm99481872), sentence order",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2d39707f5f24b3c6": {
    "verdict": "ok"
   },
@@ -32589,6 +32601,14 @@
     "result": "agrees"
    }
   },
+  "3e8674a334116974": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm24260800, N2 quantity: 1/2 x 2.10e-6 = 1.05e-6 mol/L/s, source prints 1.05 x 10^-6",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3e86dc7a12dbb9d2": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -37832,6 +37852,14 @@
    "verdict": "ok",
    "note": "selfcheck 'What part of the immune response is responsible for graft rejection?' — model answer assembles fs-id1167661437218 (rejection sentence) and fs-id1167661542177's preceding sentence (dendritic cells, HLAs, helper/cytotoxic T cells, macrophages); matches CNXML. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "48a6cab2ccc170b7": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idm24260800, H2 quantity: 3/2 x 2.10e-6 = 3.15e-6 mol/L/s, source prints 3.15 x 10^-6",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "48a948fbee383774": {
    "verdict": "ok"
   },
@@ -41760,6 +41788,14 @@
    "verdict": "ok",
    "note": "KC 2 11.3 § Muscles That Move the Tongue, m46484"
   },
+  "506477d7fb7fbe78": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm57147216 part (c), average rate of B: 0.0375/2 = 0.01875 -> 0.019 at two figures; source prints 0.0188; corrected key, erratum 3554",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5068504007e51845": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
@@ -42548,6 +42584,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "520e3ee4ccf46a7c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm57147216 part (b) segment \"instantaneous rate, 15 s = 0.023\", unit written mol/L/s"
   },
   "52126e0330668014": {
    "verdict": "ok",
@@ -47596,6 +47636,14 @@
     "result": "agrees"
    }
   },
+  "5bb9953be380c34b": {
+   "verdict": "ok",
+   "note": "cloze from body sentence fs-idp11492384 \"For reactions involving aqueous electrolytes, rates may be measured via changes in a solution's conductivity.\"",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5bbaa02d46a02498": {
    "verdict": "ok",
    "note": "source fs-id2569816 key B; fs-id2632486, fs-id1632656",
@@ -48595,6 +48643,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "5d9759e9569bcee9": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm49710224 part (b), solution segment (b) of fs-idm123636848 with 'a slight excess' -> 'an excess' (ruling, erratum 3550, disclosed solution deviation)"
   },
   "5d985b459579b20b": {
    "verdict": "ok",
@@ -59225,6 +59277,10 @@
   "7405f9b635c31577": {
    "verdict": "ok",
    "note": "Source CT fs-id2093721, model answer = solution fs-id2289250 verbatim; fs-id2636907 supports it."
+  },
+  "74075a2a5b380519": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp53700320, model answer = source solution verbatim"
   },
   "740918693502e118": {
    "verdict": "ok",
@@ -80853,6 +80909,10 @@
    "verdict": "ok",
    "note": "KC 2 5.1 § Pigmentation, m46060"
   },
+  "9ecc8443cc38133e": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm49710224 part (a), source answer 'very slow' written as 'The rate of reaction is very slow.' (bare-value form)"
+  },
   "9ecd4a317c35acb2": {
    "verdict": "ok"
   },
@@ -93975,6 +94035,14 @@
     "result": "agrees"
    }
   },
+  "b88a5de34ba4ccde": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm82430624; key the source chain with CIF3 read as ClF3 (corrected key, DISCLOSED_DEVIATIONS erratum 3548); sign distractor now the reactants’ minus signs left out (checker D1)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b88ec74ec17c5b12": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -101485,6 +101553,10 @@
     "result": "agrees"
    }
   },
+  "c76b6d109abe397a": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm66513728 part (a), model answer = solution segment (a) of fs-idp58932000"
+  },
   "c76d374e6679c9a0": {
    "verdict": "ok",
    "note": "source selfcheck: exercise fs-idp233903200 (Critical Thinking), question and model answer transcribed verbatim from the CNXML solution; checkpoints decompose the model answer's own three clauses (organismal/population similarity, community/ecosystem difficulty, why) with no new claim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -102434,6 +102506,14 @@
   "c957403595064037": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "c9596e5791af0207": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp40614224 (bromide-bromate); key is the source answer chain fs-idm25685056 term for term; three distractors per parent decision 1; sign distractor now the reactants’ minus signs left out (checker D1)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "c95d87e0f4c56295": {
    "verdict": "ok",
@@ -105510,6 +105590,14 @@
   "cf6eb8f5ed032d8e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "cf7726e06517a29f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm57147216 part (a), second interval: (0.625 - 0.360)/10.0 = 0.0265; source prints 0.0265",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -111252,6 +111340,14 @@
    "verdict": "ok",
    "note": "diffs of 4,16,64,256,1024 are 12,48,192,768 (not constant) -> not arithmetic, no."
   },
+  "db2b95be990417b9": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm57147216 part (a), first interval: (1.00 - 0.625)/10.0 = 0.0375 -> 0.038 at two figures (difference good to hundredths); source prints 0.0375; corrected key, erratum 3553",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "db2ce413aefe4c2b": {
    "verdict": "ok",
    "note": "cloze, opening paragraph fs-id2663704: Only a light or electron microscope can reveal these structures.",
@@ -116166,6 +116262,14 @@
   "e4eaa9a3c15773e4": {
    "verdict": "ok"
   },
+  "e4f13ca5278c92f2": {
+   "verdict": "ok",
+   "note": "cloze from body sentence fs-idm26303136 \"For any given reaction, these rate expressions are all related simply to one another according to the reaction stoichiometry.\"",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e4f31630fe78c3a2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -120652,6 +120756,10 @@
     "result": "agrees"
    }
   },
+  "ee0e81611afdb71b": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm66513728 part (b), model answer = solution segment (b) of fs-idp58932000"
+  },
   "ee10a2afe6a63767": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -122985,6 +123093,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "f2ffa7a90c6ab450": {
+   "verdict": "ok",
+   "note": "source exercise fs-idm30837936 (m68787), model answer = its solution fs-idm111554432 verbatim, capitals/period only"
   },
   "f3027759c301e32f": {
    "verdict": "ok",
@@ -127016,6 +127128,14 @@
   "faa2365d4ba36888": {
    "verdict": "ok",
    "note": "source exercise fs-idp11428640 part (b), drawing Ques2ansb_img"
+  },
+  "faa61c13356b2816": {
+   "verdict": "ok",
+   "note": "select-the-term filler from body sentence fs-idm103128016 'Yet calcium reacts at a moderate rate, whereas sodium reacts so rapidly that the reaction is almost explosive.'; options = the two active metals that paragraph names (calcium, sodium)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "faa75eae1c50cf36": {
    "verdict": "ok",

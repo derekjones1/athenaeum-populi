@@ -118,9 +118,9 @@ import { integerFlag, parseCliArgs } from '../lib/cli.mjs';
 import { mathSpans, shortcodes } from '../lib/content.mjs';
 import { mediaBindings } from '../lib/exercise-context.mjs';
 import {
-  KEYED_EXERCISE_CLASS, KEYED_ONLY_BOOKS, answerText, checkYourLearning, closedSet, closingStem, closingUnit, plain, readingRank, sequentialParts, splittingStem, twoUnitAnswer, unitScore, unlinked,
+  KEYED_EXERCISE_CLASS, KEYED_ONLY_BOOKS, answerText, askedQuantity, checkYourLearning, closedSet, closingStem, closingUnit, labelledQuantities, plain, printedNumerals, readingRank, sequentialParts, splittingStem, texAsText, twoUnitAnswer, unitScore, unlinked,
 } from '../lib/keyed-units.mjs';
-import { MATCH_FLOOR } from './verify-source-keys.mjs';
+import { MATCH_FLOOR, sameNumeral } from './verify-source-keys.mjs';
 
 export { KEYED_ONLY_BOOKS, plain, sequentialParts };
 
@@ -577,6 +577,9 @@ export function pageTexts(markdown) {
         line: body.slice(0, sc.index).split('\n').length,
         // The source image the item is bound to ("the figure above").
         figure: figures.get(`${name}:${sc.index}`) || '',
+        // A self-check's model answer (before its rubric), for a part
+        // answered with several named quantities (`quantitiesLacking`).
+        ...(name === 'selfcheck' ? { model: String(sc.inner || '').split('===CHECKS===')[0] } : {}),
       });
     }
   }
@@ -878,6 +881,24 @@ export function coverage(markdown, source, { listed = [], keyedOnly = false } = 
     return { needed, lacking: needed.filter((wanted) => !items.some((item, itemIndex) => bestUnitOf.get(itemIndex)?.unitIndex === unitIndex
       && closingUnit(item.question) === wanted)) };
   };
+  // A part answered with several NAMED quantities (Chemistry 2e 12.1,
+  // keyed-units.mjs `labelledQuantities`: "average rate for B formation =
+  // 0.0188 …; instantaneous rate for B formation = 0.012 …") is rendered only
+  // when each has its item: a fill-in whose closing sentence names it
+  // (`askedQuantity`), or a self-check whose model answer prints its number —
+  // the one a learner reads off a graph of their own drawing.
+  const quantitiesLacking = (unit, unitIndex) => {
+    if (!keyedOnly || !unit.answer) return [];
+    const segment = unit.partText !== undefined && unit.partText !== null
+      ? (sequentialParts(unit.answer, { answer: true })?.parts.find((part) => `${unit.group}(${part.label})` === unit.id)?.text ?? unit.answer)
+      : unit.answer;
+    const entries = labelledQuantities(segment);
+    if (!entries.length) return [];
+    const own = items.filter((item, itemIndex) => bestUnitOf.get(itemIndex)?.unitIndex === unitIndex);
+    return entries.filter((entry) => !own.some((item) => (item.type === 'fillin'
+      && askedQuantity(entries, String(item.question).trim().split(/(?<=[.?!][)”’"]?)\s+/).pop()) === entry)
+      || (item.type === 'selfcheck' && printedNumerals(texAsText(item.model)).some((numeral) => sameNumeral(numeral, entry.numeral)))));
+  };
   return units.map((unit, unitIndex) => {
     const verdict = { id: unit.id, group: unit.group, cls: unit.cls, stem: unit.stem };
     if (omittable(unit)) {
@@ -918,6 +939,10 @@ export function coverage(markdown, source, { listed = [], keyedOnly = false } = 
       const { needed, lacking } = unitsLacking(unit, unitIndex);
       if (lacking.length) {
         return { ...verdict, status: 'missing', how: 'unit', detail: `the source answers it in ${needed.join(' and ')}, and no item for it closes naming ${lacking.join(' or ')} ("Enter the heat in calories.") — one fill-in per unit` };
+      }
+      const unasked = quantitiesLacking(unit, unitIndex);
+      if (unasked.length) {
+        return { ...verdict, status: 'missing', how: 'quantity', detail: `the source answers it with ${unasked.length > 1 ? 'quantities' : 'a quantity'} no item carries: ${unasked.map((entry) => JSON.stringify(entry.printed.slice(0, 60))).join(', ')} — one fill-in per quantity, closing with the one it asks, or a self-check that prints it` };
       }
       const folded = taken.score < 0.9 && isCheckQuestion(item.question, source.checkQuestions);
       return {

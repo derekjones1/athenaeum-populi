@@ -527,6 +527,40 @@ Ten things chapter 11's second run added (`docs/history/chemistry.md`,
   the whole book**: eighteen on finished pages had no section after them;
   they were resolved in this run and a lint holds the rule.
 
+Seven things chapter 12's first run added (`docs/history/chemistry.md`,
+"Chapter 12, Sections 12.1–12.2"):
+
+- **A figure-screen row whose key comes from a DIFFERENCE is ruled by the
+  difference's last place, not by counting the digits of the result.** The
+  parent wrote "0.375 M, three figures" for 1.00 − 0.625; the blind solver
+  counted two, and two keys moved (0.038, 0.019) after author, checker,
+  claim pass, and consistency reader had all passed three. Subtract first,
+  with the data's decimal places written beside each number.
+- **A decision that makes a source-keyed item a `multiplechoice` is written
+  with "Multiple choice stays open" open.** The parent ruled invented
+  distractors for the rate-expression chains before reading it; the gate
+  agent said so, and Derek was asked while the author worked. A new row of
+  the "Exercises" table is Derek's to approve.
+- **Every distractor of a math choice is tested for being TRUE.** A chain
+  of rate expressions with every sign exchanged is the key times −1; the
+  checker found two right options in one item. The parent works each
+  distractor as an equation before the forms file goes to the author.
+- **A units question is read beside its sibling items' closing sentences**:
+  "Enter … in mol/L/s." twice above "What are the units of this rate?"
+  (a lint holds it now).
+- **An added recall item's key is read against the BODY headings and every
+  hint on the page**, not only the objective headings the lint reads
+  ("catalyst" under "The Presence of a Catalyst", and two hints that said
+  "the catalyst subsection").
+- **A small run needs no values agent, run-facts Clerk, or landing Clerk**
+  (six numeric keys, two sections): the parent runs the numbers and writes
+  the facts — and still makes each ruling with its rule open, which is
+  where this run's two wrong rulings came from, not from the missing
+  agents.
+- **macOS has no `timeout` command**: "every command gets a wall-clock
+  limit" in a prompt says how (`perl -e 'alarm N; exec @ARGV' …`, or the
+  tool's own limit).
+
 ## 1. Before the wave
 
 `SP` is this session's scratchpad. Never a git command from an agent — say

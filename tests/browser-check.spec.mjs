@@ -2116,6 +2116,53 @@ test('no Chemistry page scrolls sideways on a phone, and a Key equations line to
   expect(await lines.evaluateAll((els) => els.filter((el) => el.scrollHeight > el.clientHeight || el.scrollWidth > el.clientWidth + 1).length)).toBe(0);
 });
 
+// Chemistry 12.1's rate-relation choice stacks five `\ce` concentration
+// fractions in every option. KaTeX shifts each fraction's rows up with an
+// invisible `.pstrut` strut, and in that chain the struts reached ~35 px
+// above their button — past the centre of the option above — so at 1280 px
+// a click on the key landed on the NEXT option (found November 25, 2026 by
+// `verify:typed`; at 390 px the wrapped buttons are taller and it did not
+// happen). The button is now its own only hit target (custom.css). Asked of
+// every multiple choice whose options hold math, on every Chemistry
+// section page, at a desktop and a phone width: the element at each
+// option's centre belongs to that option.
+test('a click at the centre of a Chemistry math option lands on that option', async ({ page }) => {
+  const routes = chemistrySectionRoutes();
+  expect(routes.length).toBeGreaterThanOrEqual(29);
+  test.setTimeout(60_000 + routes.length * 6_000);
+  let probed = 0;
+  for (const width of [1280, 390]) {
+    await page.setViewportSize({ width, height: width > 500 ? 900 : 844 });
+    for (const route of routes) {
+      await gotoBuiltPage(page, route);
+      await page.evaluate(() => document.fonts.ready);
+      const result = await page.evaluate(() => {
+        const misses = [];
+        let count = 0;
+        for (const mc of document.querySelectorAll('multiple-choice')) {
+          const options = [...mc.querySelectorAll('.ap-mc-option')];
+          if (!options.some((btn) => (btn.dataset.value || '').includes('$'))) continue;
+          options.forEach((btn, index) => {
+            btn.scrollIntoView({ block: 'center' });
+            const box = btn.getBoundingClientRect();
+            const hit = document.elementFromPoint(box.left + box.width / 2, box.top + box.height / 2);
+            count += 1;
+            if (!btn.contains(hit)) {
+              const owner = hit?.closest('.ap-mc-option');
+              misses.push(`option ${index + 1} of "${(mc.dataset.question || '').slice(0, 50)}…" hits ${owner ? `option ${options.indexOf(owner) + 1}` : hit?.tagName}`);
+            }
+          });
+        }
+        return { count, misses };
+      });
+      probed += result.count;
+      expect(result.misses, `${route} at ${width} px`).toEqual([]);
+    }
+  }
+  // The 12.1 chain and the book's other math options were all asked.
+  expect(probed).toBeGreaterThan(20);
+});
+
 test('a Chemistry appendix table scrolls inside its own box, its figures load, and a bracketed formula is not a link', async ({ page }) => {
   const routes = chemistryAppendixRoutes();
   expect(routes.length, 'the thirteen appendix pages were discovered in public/').toBe(13);

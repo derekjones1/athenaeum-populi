@@ -328,6 +328,7 @@ The component follows the SHAPE of the source's keyed answer:
 | two or more quantities ("5371 °F, 3239 K"; a range; a ratio) | one `fillin` per quantity, each stem saying which |
 | a sentence or two that hold symbols among their words ("Al will form a cation with a charge of 3+: Al³⁺, an aluminum ion. Carbon will form an anion with a charge of 4−: C⁴⁻, a carbide ion.") | a formula `textin` per symbol, each stem closing with a sentence that says whose ("Enter the symbol of the ion that carbon forms."), then ONE `selfcheck` with the source's stem and its answer whole — last, so its reveal does not hand over the keys. The gate reads a formula the answer introduces with a colon |
 | an explanation, a list, a description, "answers will vary" | `selfcheck` with the source solution as the model answer and a rubric |
+| a chain of rate expressions the stem asks the learner to write ("rate = +½ Δ[ClF₃]/Δt = −Δ[Cl₂]/Δt = −⅓ Δ[F₂]/Δt", 12.1) | ONE `multiplechoice` of four whole chains, each option one math span in the source's term order (`\frac`, a concentration `\Delta[\ce{…}]`): the key the source's chain, the three distractors always the same three confusions — the coefficients used as multipliers instead of reciprocals, the reactants' minus signs left out (every term positive), no coefficients with the signs right. Never the key with every sign exchanged: that chain is the key times −1 and is true wherever no "rate =" leads it (the gate refuses it). The stem keeps the source's "Write the equation …" and closes "Which equation relates them?" ("Which equations relate them?" where the source's stem says "equations"). The footer says the item has "the source's chain and three author-written chains" and never names the three confusions, which would pick out the key. `verify-source-keys` reads every option as terms (species, sign, coefficient) and holds the key to the source's chain term for term (`rateChain`); a distractor keyed fails whatever is disclosed. A chain cannot be typed in a field, and a graded choice is preferred to a self-check *(Derek, November 25, 2026, chapter 12)* |
 | a value estimated from a graph ("About 12.5 L", "about 17–18 mL", "~18 mL") | a `fillin` with `answerForm="reading:<division>"` ("Graph readings"), the figure named in the stem, the stem closing "Enter the volume you read from the graph, in milliliters.", and the source's answer as the `answerDisplay` (`$\text{about }17\text{–}18\ \text{mL}$`). Where one part of the same question is calculated (9.2's syringe: "(c) 17.7 mL"), that part is a measured `fillin` placed FIRST, so the readings' answers do not give it. A value that needs a construction drawn by hand — a tangent's slope, a rate "estimated from a graph" of data the learner plots — stays a `selfcheck`: two careful drawings differ by more than any scale's reading *(chapter 9; a self-check until November 17, 2026)* |
 | several quantities asked in one sentence with no lettered parts ("What is this pressure in atmospheres, in millimeters of mercury, in kilopascals, and in bar?") | one `fillin` per quantity, each repeating the source's stem whole and closing with the one it asks for ("Enter the pressure in kilopascals."); the lint reads fill-ins that share one stem up to the closing sentence as parts of one question *(chapter 9)* |
 | a drawing | `selfcheck` with the figure in the model answer ("Figures") |
@@ -347,7 +348,10 @@ classification: the row above), auto-graded, and never falls
 back to a `selfcheck` because a gate cannot yet read the form: the gate is
 taught the form, with a test (`run.md` §1 step 6a). What does not change is
 where the options come from: the stem's own set, in its order, the key the
-source's — never a distractor the author invented.
+source's — never a distractor the author invented. Two rows of the
+table name their distractors and are the only exceptions: a unit that is a
+quotient or a product, and a chain of rate expressions *(Derek, November
+25, 2026)*; an author adds no third.
 
 **An `accept` member is one of two things** *(chapter 2, Sections
 2.5–2.6)*. It is **another name or form of the answer that the module
@@ -406,7 +410,7 @@ selfchecks, source defects, the footer — and each is stated once.
 - **"Enter the … in …" is added only where the source stem leaves the unit
   open.** One named unit is spelled out ("grams", "liters", "kelvin",
   "degrees Celsius"); a quotient or product unit is its symbol ("g/mL",
-  "m/s", "kJ/mol"), since "mol/L·s" has no readable spelled form. A unit
+  "m/s", "kJ/mol", "mol/L/s"), since a rate's unit has no readable spelled form. A unit
   the book itself prints only as a symbol (amu) is named by that symbol:
   "Enter the average atomic mass in amu." *(chapter 2)*
 - **In a `fillin` or `multiplechoice` stem a reaction is `$\ce{…}$`**,
@@ -617,7 +621,14 @@ selfchecks, source defects, the footer — and each is stated once.
   formula items (2.6) needs none: its options say which.
 - **A keyed exercise whose answer comes from a linked simulation** is a
   `selfcheck` with the source's answer as the model answer; the link stays
-  in the question.
+  in the question. That holds where the stem names a set as well (12.2's
+  "Is the rate of reaction fast or slow?", keyed "very slow"): what the
+  learner sees in a simulation is not graded *(chapter 12)*.
+- **A units question whose answer the sibling items' closings print**
+  (12.1: "What are the units of this rate?" under two fill-ins that close
+  "… in mol/L/s") is not a `multiplechoice`: it stays in the part's
+  `selfcheck`, whose model answer carries the value with its unit
+  *(chapter 12)*.
 
 ### Numeric keys
 
@@ -1486,7 +1497,10 @@ between two quantities (`$1\ \text{ppm} = 10^{3}\ \text{ppb}$`) — and so do
 display math and an `answerDisplay`. The lint refuses an inline span that
 is only a symbol, an equals sign, and a value with its unit.
 **A quotient unit in prose, stems, and closing sentences is written with a
-slash** (m/s, J/mol, kJ/mol); only a bare reciprocal keeps its exponent, as
+slash** (m/s, J/mol, kJ/mol); a reaction rate's unit is mol/L/s (mol/L/h,
+mol/L/min), the form chapter 12's own prose prints, in a table heading and
+a self-check's model answer as well, where the source prints
+mol L⁻¹ s⁻¹ *(chapter 12)*; only a bare reciprocal keeps its exponent, as
 its own math span (`$\text{s}^{-1}$`, `$\text{m}^{-1}$`). Body display math
 keeps the source's form, and each change from the source's form is a
 footer clause *(chapter 6)*. The gas constant is the case with two

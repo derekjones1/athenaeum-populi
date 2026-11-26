@@ -439,6 +439,16 @@ ap-figure { display: block; }
    chosen answer keeps its is-correct styling. */
 .ap-mc-option:disabled,
 .ap-mc-option[aria-disabled="true"]:not(.is-correct) { cursor: default; opacity: 0.55; }
+/* The button's own box is the only hit target. KaTeX lays out every stacked
+   fraction as a vlist whose rows are shifted up by `top: -N em` and carry an
+   invisible `.pstrut` inline-block several em tall; in a chain of `\ce`
+   concentrations (Chemistry 12.1, five fractions per option) those strut
+   boxes reach ~35 px above their button — past the centre of the option
+   above it — and, painted later, they won the hit test: a click on the key
+   chose the next option. No ink leaves the button (the struts are empty),
+   so nothing is clipped or moved; the math simply stops taking pointer
+   events, and a click anywhere inside a button's border is that button's. */
+.ap-mc-option * { pointer-events: none; }
 /* Graph options carry an inline SVG per choice. The old flex-basis(150px) /
    max-width(210px) let three of them share one row inside the ~560px card,
    so each figure rendered ~153px wide and its 11px axis labels shrank to

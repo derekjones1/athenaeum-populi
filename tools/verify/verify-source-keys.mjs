@@ -115,7 +115,7 @@ import { readNumeral, withinPercent, withinReading } from '../../assets/js/lib/m
 import { loadElements } from '../lib/elements.mjs';
 import { massAsk, molarMass, statesNoNumber } from './molar-mass.mjs';
 import {
-  KEYED_ONLY_BOOKS, answerUnits, choiceLabels, closingUnit, isPartLabel, keyedUnits, listMembers, memberAsked, moduleAliases, panelAsked, plain as foldedPlain, texAsText, printedAbbreviations, printedNumerals, sortedExercise, twoUnitAnswer, unitFor, unlinked,
+  KEYED_ONLY_BOOKS, answerUnits, askedQuantity, ceAsPrint, choiceLabels, labelledQuantities, closingUnit, isPartLabel, keyedUnits, listMembers, memberAsked, moduleAliases, panelAsked, plain as foldedPlain, texAsText, printedAbbreviations, printedNumerals, sortedExercise, twoUnitAnswer, unitFor, unlinked,
 } from '../lib/keyed-units.mjs';
 
 /** A page question must share this much of a source problem's vocabulary to
@@ -1779,6 +1779,34 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     erratum: 3506,
     reason: 'the source answer computes the depression with "5.14 °C/m" for benzene\'s K_f where the module\'s own table prints 5.12 °C/m; the model answer prints 5.12 (the result, 5.1 °C, is the same)',
   },
+  {
+    page: 'content/physical-sciences/chemistry/12-kinetics/01-chemical-reaction-rates.md',
+    exercise: 'fs-idm82430624',
+    kind: 'key',
+    erratum: 3548,
+    reason: 'the source solution prints the product\'s rate expression as "Δ[CIF₃]" for chlorine trifluoride, with a capital I where the lowercase l of Cl belongs: CIF₃ would be carbon, iodine, and fluorine, and the stem\'s own reaction and its "formation of ClF₃" print ClF₃, so the multiple choice keys the chain with Δ[ClF₃], every other term as printed',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/12-kinetics/01-chemical-reaction-rates.md',
+    exercise: 'fs-idm57147216(a)',
+    kind: 'key',
+    erratum: 3553,
+    reason: 'the source answer prints "0.0375 mol L⁻¹ s⁻¹" for the average rate between 0.0 s and 10.0 s; the table gives [A] as 1.00 M at 0.0 s and 0.625 M at 10.0 s, so the change is good to the hundredths place (0.38 M, two figures) and the rate is 0.038 mol/L/s, as the module\'s own table of hydrogen peroxide data holds 0.125 − 0.0625 to −0.062 and its rate to 0.010; the second interval (0.625 − 0.360) keeps three figures and stands at 0.0265',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/12-kinetics/01-chemical-reaction-rates.md',
+    exercise: 'fs-idm57147216(c)',
+    kind: 'key',
+    erratum: 3554,
+    reason: 'the source answer prints "0.0188 mol L⁻¹ s⁻¹" for the average rate of formation of B between 0.00 s and 10.0 s, half of its 0.0375; the concentration change 1.00 − 0.625 is good to the hundredths place, two figures, so half of the unrounded 0.0375 is 0.019 mol/L/s',
+  },
+  {
+    page: 'content/physical-sciences/chemistry/12-kinetics/02-factors-affecting-reaction-rates.md',
+    exercise: 'fs-idm49710224',
+    kind: 'solution',
+    erratum: 3550,
+    reason: 'the source answer to part (b) ends "a slight excess of A" beside "a roughly equal amount of BC, AB, and C"; the stem starts 15 molecules of A and 10 of BC, and each reaction A + BC ⟶ AB + C uses one of each, so A stays five above BC throughout and is about twice each of the others when they are equal; the model answer prints "an excess of A"',
+  },
 ]);
 
 /* ---- source side ---------------------------------------------------------- */
@@ -3208,6 +3236,21 @@ function heldNumber(answer, question, key) {
       return held.some((entry) => sameNumeral(entry.numeral, key)) ? null : { what: `the number for ${asked[0]}`, numerals: held.map((entry) => entry.numeral) };
     }
   }
+  // Several quantities, each NAMED in the answer (12.1, `labelledQuantities`):
+  // an interval in its heading ("average rate, 0 − 10 s = 0.0375 …; average
+  // rate, 10 − 20 s = 0.0265 …"), a heading word ("average rate for B
+  // formation = …; instantaneous rate for B formation = …"), or a formula
+  // after the number ("1.05 × 10⁻⁶ mol/L/s, N₂ and 3.15 × 10⁻⁶ mol/L/s,
+  // H₂"). The item is held to the one its closing sentence names, and an
+  // item whose closing names none of them is refused.
+  const quantities = labelledQuantities(answer);
+  if (quantities.length) {
+    const asked = askedQuantity(quantities, closing);
+    if (!asked) {
+      return { what: `one of ${quantities.length} named quantities (${quantities.map((entry) => JSON.stringify(entry.printed.slice(0, 48))).join(', ')}), and the closing sentence names none of them — close with the one it keys ("Enter the average rate between 0.0 s and 10.0 s in mol/L/s.", "Enter the rate of production of N₂ in mol/L/s.")`, numerals: [] };
+    }
+    return sameNumeral(asked.numeral, key) ? null : { what: `the quantity its closing sentence names (${JSON.stringify(asked.printed.slice(0, 60))})`, numerals: [asked.numeral] };
+  }
   const KINDS = { mol: 'moles', g: 'mass', kg: 'mass', mg: 'mass' };
   const amounts = [];
   for (const piece of String(answer).split(/[,;]/)) {
@@ -3633,6 +3676,76 @@ const optionReadings = (option) => {
   return [option, ...(aside ? [`${aside[1]} ${aside[3]}`, `${aside[2]} ${aside[3]}`] : []),
     ...(change ? [`heat of ${change}`, `enthalpy of ${change}`] : [])].map(optionWords);
 };
+/*
+ * A chain of rate expressions (Chemistry 2e 12.1): "rate = +½ Δ[ClF₃]/Δt =
+ * −Δ[Cl₂]/Δt = −⅓ Δ[F₂]/Δt". The page sets each multiple-choice option as
+ * one math span — `$\text{rate} = +\frac{1}{2}\frac{\Delta[\ce{ClF3}]}{\Delta
+ * t} = …$` — and the source's MathML reads "rate = + ( 1 )/( 2 ) ( Δ [ CIF
+ * 3 ] )/( Δ t ) = …". Both are read to one list of terms, `{ species, sign,
+ * num, den }`, the species through the formula grader; a leading "rate ="
+ * is no term. Anything else in the text, and the reading is null.
+ */
+const TEX_RATE_TERM = /^([+\-−]?)\s*(?:\\frac\s*\{\s*(\d+)\s*\}\s*\{\s*(\d+)\s*\}|(\d+))?\s*\\frac\s*\{\s*\\Delta\s*\[\s*\\ce\s*\{([^{}]*)\}\s*\]\s*\}\s*\{\s*\\Delta\s*t\s*\}$/;
+const PRINTED_RATE_TERM = /^([+\-−]?)\s*(?:\(\s*(\d+)\s*\)\s*\/\s*\(\s*(\d+)\s*\)|(\d+))?\s*\(\s*Δ\s*\[\s*(.+?)\s*\]\s*\)\s*\/\s*\(\s*Δ\s*t\s*\)$/;
+export function rateChain(text, { foldCapitalI = false } = {}) {
+  const written = String(text ?? '').trim();
+  const tex = /\\(?:frac|Delta)\b/.test(written);
+  const body = (tex ? written.replace(/^\$\s*|\s*\$$/g, '') : written)
+    .replace(/^(?:\\text\s*\{\s*rate\s*\}|rate)\s*=\s*/i, '');
+  const terms = body.split('=').map((term) => term.trim());
+  if (terms.length < 2) return null;
+  const chain = [];
+  for (const term of terms) {
+    const match = (tex ? TEX_RATE_TERM : PRINTED_RATE_TERM).exec(term);
+    if (!match) return null;
+    const printed = tex ? ceAsPrint(match[5]) : match[5];
+    const species = (foldCapitalI && /I/.test(printed) ? chemCanon(printed.replace(/I/g, 'l'), 'formula') : null) ?? chemCanon(printed, 'formula');
+    if (!species) return null;
+    chain.push({ species, sign: /[-−]/.test(match[1]) ? -1 : 1, num: Number(match[4] ?? match[2] ?? 1), den: Number(match[3] ?? 1) });
+  }
+  return chain;
+}
+/** Two rate chains term for term: species, sign, and coefficient (as a ratio). */
+export function sameChain(a, b) {
+  return a.length === b.length && a.every((term, at) => term.species === b[at].species && term.sign === b[at].sign
+    && term.num * b[at].den === b[at].num * term.den);
+}
+const chainText = (chain) => chain.map((term) => `${term.sign < 0 ? '−' : '+'}${term.den === 1 && term.num === 1 ? '' : term.den === 1 ? term.num : `${term.num}/${term.den}`} Δ[${term.species}]/Δt`).join(' = ');
+
+/*
+ * A unit written as base units and powers (12.1's "What are the units of
+ * this rate?"): "mol/L/s", "mol/(L s)", "mol L^{−1} s^{−1}", and "mol L⁻¹ s⁻¹"
+ * are one unit, read "L^-1 mol^1 s^-1"; "L s/mol", "mol L s", and "mol/L"
+ * are others. Only the symbols below are read; a word that is none of them
+ * (a unit spelled out, any other text) makes the reading null.
+ */
+const UNIT_SYMBOLS = new Set(['mol', 'L', 'mL', 's', 'min', 'h', 'd', 'g', 'kg', 'mg', 'm', 'cm', 'nm', 'K', 'atm', 'torr', 'Pa', 'kPa', 'J', 'kJ', 'M']);
+const SUPERSCRIPT_DIGITS = { '⁰': 0, '¹': 1, '²': 2, '³': 3, '⁴': 4, '⁵': 5, '⁶': 6, '⁷': 7, '⁸': 8, '⁹': 9 };
+export function unitPowers(text) {
+  const written = String(text ?? '').trim().replace(/^\$|\$$/g, '').replace(/\\text\s*\{([^{}]*)\}/g, '$1')
+    .replace(/[·×*]/g, ' ').replace(/\\(?:,|;|\s)/g, ' ');
+  if (!written || /[^A-Za-z0-9/()^{}\s⁰¹²³⁴-⁹⁻−–-]/.test(written)) return null;
+  const powers = new Map();
+  const groups = written.split('/');
+  for (const [at, group] of groups.entries()) {
+    const sign = at === 0 ? 1 : -1;
+    const inner = group.trim().replace(/^\((.*)\)$/, '$1');
+    if (!inner && at > 0) return null;
+    for (const token of inner.match(/[A-Za-z]+(?:\s*\^\s*\{?\s*[−–-]?\s*\d+\s*\}?|[⁻]?[⁰¹²³⁴-⁹]+)?/g) ?? []) {
+      const [, symbol, power] = /^([A-Za-z]+)(.*)$/.exec(token);
+      if (!UNIT_SYMBOLS.has(symbol)) return null;
+      const digits = power.replace(/[\s^{}]/g, '');
+      const value = !digits ? 1 : /[⁰¹²³⁴-⁹]/.test(digits)
+        ? (digits.startsWith('⁻') ? -1 : 1) * Number([...digits.replace('⁻', '')].map((char) => SUPERSCRIPT_DIGITS[char]).join(''))
+        : Number(digits.replace(/[−–]/, '-'));
+      powers.set(symbol, (powers.get(symbol) ?? 0) + sign * value);
+    }
+    if (inner.replace(/[A-Za-z]+(?:\s*\^\s*\{?\s*[−–-]?\s*\d+\s*\}?|[⁻]?[⁰¹²³⁴-⁹]+)?/g, '').trim()) return null;
+  }
+  const read = [...powers].filter(([, power]) => power !== 0).sort(([a], [b]) => a.localeCompare(b)).map(([symbol, power]) => `${symbol}^${power}`);
+  return read.length ? read.join(' ') : null;
+}
+
 export function optionsNamedIn(answer, options) {
   // Word by word only for words: a formula's pieces are no words — "K₂O"
   // folds to "k 2 o", which "Na₂O; Na⁺ has a smaller radius than K⁺" prints
@@ -4128,6 +4241,64 @@ export function judgeKeyedUnit(linkedItem, units, { aliases = [], elements = nul
     // the fill-ins key): the item's is the species after "is".
     const superlative = /\b(strongest|weakest|highest|lowest|largest|smallest|longest|shortest)\s+[a-z ]*?\bis\s+([^,;]+?)\s*\.?\s*$/i.exec(unit.answer);
     if (superlative && new RegExp(`\\b${superlative[1]}\\b`, 'i').test(item.question)) said = superlative[2];
+    // Options that are chains of rate expressions (12.1: "rate = +½ Δ[ClF₃]/Δt
+    // = −Δ[Cl₂]/Δt = −⅓ Δ[F₂]/Δt", each a whole chain set in math): the key
+    // is the option that IS the source's chain, term for term in its order —
+    // the species, the sign, and the coefficient of each. A chain with the
+    // coefficients as multipliers, the signs exchanged, or no coefficients
+    // is another option, never the key.
+    const chains = item.options.map((option) => rateChain(option));
+    const saidChain = rateChain(unit.answer);
+    if (saidChain && chains.length >= 2 && chains.every(Boolean)) {
+      const keyAt = item.options.findIndex((option) => option.trim() === String(item.answer).trim());
+      // Two options that are one chain, or an option that is the key with
+      // EVERY sign exchanged — the key times −1, a true equation when no
+      // "rate =" leads it (12.1's checker) — make two right answers: refused
+      // whatever the key.
+      const twin = chains.findIndex((chain, index) => chains.findIndex((other) => sameChain(other, chain)) !== index);
+      const negated = keyAt === -1 ? -1 : chains.findIndex((chain) => sameChain(chain, chains[keyAt].map((entry) => ({ ...entry, sign: -entry.sign }))));
+      if (twin !== -1 || negated !== -1) {
+        return { status: 'wrong-option', exercise, detail: twin !== -1
+          ? `option ${twin + 1} is the same chain as an earlier option (${JSON.stringify(chainText(chains[twin]))}) — two options, one answer`
+          : `option ${negated + 1} is the key with every sign exchanged (${JSON.stringify(chainText(chains[negated]))}), the same equation times −1 — a second right answer; use another confusion` };
+      }
+      const at = chains.findIndex((chain) => sameChain(chain, saidChain));
+      if (at !== -1 && at === keyAt) return { status: 'confirmed', exercise };
+      // A species the source misprints with a capital I for the l of Cl
+      // ("Δ[CIF 3]" for ClF₃, erratum 3548) is read so only when no option
+      // is the chain as printed: the option that is the corrected chain is
+      // a correction (a `key` deviation discloses it). Any other option keyed
+      // — a distractor, or text that is none of them — is a wrong key no
+      // deviation excuses (`wrong-option`).
+      const foldedChain = rateChain(unit.answer, { foldCapitalI: true });
+      const corrected = at === -1 && foldedChain ? chains.findIndex((chain) => sameChain(chain, foldedChain)) : -1;
+      const describe = (index) => (index === -1 ? 'none of the options' : `option ${index + 1}, ${JSON.stringify(chainText(chains[index]))}`);
+      if (corrected !== -1 && corrected === keyAt) {
+        return { status: 'key-differs', exercise, detail: `source ${unit.id} prints the chain ${JSON.stringify(chainText(saidChain))}; the page keys ${describe(keyAt)}, which reads a capital I in a formula as the l of Cl — a correction` };
+      }
+      return {
+        status: 'wrong-option',
+        exercise,
+        detail: `source ${unit.id} answers the chain ${JSON.stringify(chainText(saidChain))}, ${at !== -1 ? describe(at) : corrected !== -1 ? `corrected for its capital I ${describe(corrected)}` : describe(-1)}; page keys ${keyAt === -1 ? `${JSON.stringify(String(item.answer).slice(0, 80))}, which is none of the options` : describe(keyAt)} — a distractor keyed, which no DISCLOSED_DEVIATIONS line excuses`,
+      };
+    }
+    // Options that are units, under a question that asks the units ("What
+    // are the units of this rate?", 12.1): the key is the option that is the
+    // unit printed after the answer's number, read as base units and powers —
+    // "mol/L/s" is the source's "mol L⁻¹ s⁻¹"; "L s/mol", "mol L s", and
+    // "mol/L" are not.
+    const unitOptions = item.options.map((option) => unitPowers(option));
+    if (/\bunits?\b/i.test(askedClosing(item.question)) && unitOptions.length >= 2 && unitOptions.every(Boolean)
+      && new Set(unitOptions).size === unitOptions.length) {
+      const last = printedNumerals(said).at(-1);
+      const printedUnit = last ? unitPowers(said.slice(said.lastIndexOf(last.printed) + last.printed.length).trim().replace(/[.;,]\s*$/, '')) : null;
+      if (printedUnit) {
+        const at = unitOptions.indexOf(printedUnit);
+        const keyAt = item.options.findIndex((option) => option.trim() === String(item.answer).trim());
+        if (at !== -1 && at === keyAt) return { status: 'confirmed', exercise };
+        return { status: 'key-differs', exercise, detail: `source ${unit.id} answers ${JSON.stringify(said.trim())}, whose unit is ${at === -1 ? 'none of the options' : `option ${JSON.stringify(item.options[at])}`}; page keys ${JSON.stringify(item.answer)}` };
+      }
+    }
     // Options that are formulas — "H₂", "H₂⁺", "H₂⁻", which fold to one
     // word run — are read by the formula grader: the option that IS the one
     // formula the answer says (8.4's printed 41 and 43: "H _2", "O").
@@ -4772,7 +4943,7 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
             });
           }
         }
-        if (status === 'table-differs') {
+        if (status === 'table-differs' || status === 'wrong-option') {
           failures.push({ page: section.localPath, line: item.line, detail: keyedVerdict.detail });
         } else if (status === 'data-differs') {
           counts.fillin.dataDiffers = (counts.fillin.dataDiffers ?? 0) + 1;

@@ -586,6 +586,52 @@ export function selfcheckForwardLeak(sc, next, count = /^(?:\d+|zero|one|two|thr
   return null;
 }
 
+// ---- a units choice under closings that print its key ------------------------
+
+/** The stem's first sentence, the part the parts of one exercise share. */
+const firstSentenceOf = (question) => (/^[\s\S]*?[.?!](?=\s|$)/.exec(question) || [question])[0].trim();
+
+/** Do two stems belong to one exercise: the same first sentence, or the same first 80 characters? */
+function sameExercise(a, b) {
+  const qa = String(a ?? '').trim();
+  const qb = String(b ?? '').trim();
+  if (!qa || !qb) return false;
+  return firstSentenceOf(qa) === firstSentenceOf(qb) || (qa.length >= 80 && qb.length >= 80 && qa.slice(0, 80) === qb.slice(0, 80));
+}
+
+/**
+ * The unit a multiple choice is keyed to, read by the closing reader, when
+ * the key holds a slash or more than one unit symbol ("mol/L/s",
+ * "mol L⁻¹ s⁻¹"); null otherwise. A one-symbol key is left alone: `N` keys
+ * nitrogen in 7.2, not the newton.
+ */
+function compoundUnitKey(answer) {
+  const key = String(answer ?? '').trim();
+  const unit = askedUnit(`Enter the value in ${key}.`);
+  if (!unit) return null;
+  return key.includes('/') || unit.split(/[\s/]+/).filter(Boolean).length > 1 ? unit : null;
+}
+
+/**
+ * Multiple choices keyed to a compound unit whose exercise has another item
+ * closing "… in <that unit>." Returns `[{ item, sibling }]`. Exported for
+ * the test.
+ */
+export function unitChoiceUnderClosings(items) {
+  const hits = [];
+  for (const item of items) {
+    if (item.kind !== 'multiplechoice' || item.params.mode === 'graph') continue;
+    const key = String(item.params.answer ?? '').trim();
+    const unit = compoundUnitKey(key);
+    if (!unit) continue;
+    const sibling = items.find((other) => other !== item
+      && sameExercise(item.params.question, other.params.question)
+      && (String(other.params.question ?? '').includes(`in ${key}`) || askedUnit(other.params.question) === unit));
+    if (sibling) hits.push({ item, sibling });
+  }
+  return hits;
+}
+
 // ---- Chemistry chapter 4: what its readers found -----------------------------
 
 /**
@@ -1259,6 +1305,14 @@ export function lintLeaks(src, filename = '') {
       const key = item.kind === 'selfcheck' ? item.inner.split(/^[ \t]*===CHECKS===[ \t]*$/m)[0] : item.params.answer;
       const colour = colourOutsideVisible(question, key);
       if (colour) err(item.index, `${where}: ${colour} — the answer is the region the light falls in, read from the page's own spectrum; where the source's answer names a colour, that is a correction with a Source note`);
+    }
+    // Chapter 12.1 shipped a multiple choice keyed `mol/L/s` beside two
+    // fill-ins of the same exercise closing "Enter … in mol/L/s.": the
+    // sibling closings print the units item's key. Measured November 25,
+    // 2026 on the whole book before it was turned on (0 hits over the 8
+    // unit-keyed choices).
+    for (const hit of unitChoiceUnderClosings(items)) {
+      err(hit.item.index, `${labelOf('multiplechoice', hit.item.params)}: keyed ${JSON.stringify(hit.item.params.answer)}, and the closing of a sibling item of the same exercise (line ${lineOf(src, hit.sibling.index)}) asks for its answer in that unit — the sibling items' closings print this unit: keep the units question in the part's self-check`);
     }
     for (const hit of subshellLabelSlips(text)) {
       err(hit.index, `\`${hit.written}\` sets the shell number italic and the subshell letter upright — a subshell label with a variable shell number is one upright token, n included: \`${hit.upright}\` (\`$n$\` alone, the quantum number, stays math)`);

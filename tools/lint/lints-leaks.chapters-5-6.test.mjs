@@ -105,3 +105,18 @@ test('the footer and a Source note do not repeat a point of a self-check\'s rubr
   assert.deepEqual(repeats(`${short}${footer('the volume of the cylinder restated in the stem')}`), []);
   assert.deepEqual(repeats(`${item}${footer('which places that line outside the visible range')}`, BIO), [], 'Chemistry only');
 });
+
+test('a multiple choice keyed to a unit is refused under sibling closings that print it (12.1\'s mol/L/s)', () => {
+  const units = rule(/the sibling items' closings print this unit/);
+  const KIN = 'content/physical-sciences/chemistry/12-kinetics/01-chemical-reaction-rates.md';
+  const stem = 'If the rate of decomposition of ammonia, NH₃, at 1150 K is $2.10 \\times 10^{-6}$ mol/L/s, what is the rate of production of nitrogen and hydrogen?';
+  const choice = (question) => `{{< multiplechoice\n  question="${question}"\n  answer="mol/L/s"\n  hint="Reread the subsection on reaction rates."\n>}}\nmol/L/s\nmol/L\nL/mol/s\n{{< /multiplechoice >}}\n`;
+  const parts = fillin({ question: `${stem} Enter the rate of production of N₂ in mol/L/s.`, answer: '1.05e-6' })
+    + fillin({ question: `${stem} Enter the rate of production of H₂ in mol/L/s.`, answer: '3.15e-6' });
+  const failing = parts + choice(`${stem} In what unit is a rate of production expressed?`);
+  assert.equal(units(failing, KIN).length, 1);
+  // The same choice as its own exercise passes: no sibling closing prints its key.
+  const passing = parts + choice('A reaction rate is a change in concentration per unit time. In what unit is it expressed?');
+  assert.deepEqual(units(passing, KIN), []);
+  assert.deepEqual(units(failing, BIO), [], 'Chemistry only');
+});

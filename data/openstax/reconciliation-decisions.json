@@ -10571,6 +10571,84 @@
       "status": "correct-local-source-defect",
       "errataEntry": 3540,
       "rationale": "The Deepwater Horizon box places the blowout \"near Mississippi\" and says the response used 1.84 million gallons of Corexit 9527, most injected underwater and small amounts sprayed on top. The Coastal Response Research Center and NOAA report (March 22, 2012) places the well on the Louisiana-Texas continental slope, gives 771,272 gallons injected at the source and about 1.1 million gallons applied to surface waters, and says Corexit 9500A and 9527A were both used, 9527A only at the surface (22% of the total). The page prints \"off the coast of Louisiana\" and the corrected dispersant sentence (1.84 million total kept; the sentence on 2-butoxyethanol kept, attached to Corexit 9527A), with one visible Source note after the box's figure and a footer clause. Found by the 11.5 claim pass (Finding 1), ruled by the orchestrator, November 25, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/12-kinetics/01-chemical-reaction-rates.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68786",
+      "sourceElementIds": [
+        "fs-idp8330592"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3548,
+      "rationale": "The chlorine trifluoride answer prints the product's rate expression as \"Δ[CIF₃]\", a capital I where the l of Cl belongs; the stem's own reaction and its \"formation of ClF₃\" print ClF₃. The page's multiple choice keys the chain with Δ[ClF₃], every other term as the source prints it, with a visible Source note after the item (\"the source’s answer misprints one letter of an element symbol\"), a footer clause, and a DISCLOSED_DEVIATIONS key entry. Found by the orchestrator at prep and the gate agent; ruled by the orchestrator, November 25, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/12-kinetics/02-factors-affecting-reaction-rates.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68787",
+      "sourceElementIds": [
+        "CNX_Chem_12_02_AcidDissol",
+        "fs-idm108837008"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3549,
+      "rationale": "The caption of the iron-powder figure prints \"Fe(s) + HCl(aq) ⟶ 2FeCl₂(aq) + 3H₂(g)\", which is unbalanced in iron, hydrogen, and chlorine; Fe + 2HCl ⟶ FeCl₂ + H₂ balances. The page prints the balanced equation in the caption, with a visible Source note directly after the figure and a footer clause. Found by the 12.2 author, confirmed by the checker and the claim pass, November 25, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/12-kinetics/02-factors-affecting-reaction-rates.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68787",
+      "sourceElementIds": [
+        "fs-idm111616960"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3550,
+      "rationale": "The model answer to the Many Collisions exercise, part (b), ends \"a roughly equal amount of BC, AB, and C in the mixture and a slight excess of A\". The stem starts 15 molecules of A and 10 of BC, and each reaction A + BC ⟶ AB + C uses one of each, so A stays five above BC throughout and is about twice each of the others when they are equal. The page's model answer reads \"an excess of A\", with a visible Source note directly after the item, a footer clause, and a DISCLOSED_DEVIATIONS solution entry. Found by the 12.2 checker and the claim pass; ruled by the orchestrator, November 25, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/12-kinetics/02-factors-affecting-reaction-rates.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68787",
+      "sourceElementIds": [
+        "fs-idp86192224"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3551,
+      "rationale": "The equation for calcium carbonate and sulfurous acid prints calcium sulfite as dissolved, CaSO₃(aq). The IUPAC-NIST Solubility Data Series, volume 26, page 187, gives the solubility of CaSO₃·½H₂O in water at 25 °C as 4.5 (±1.0) × 10⁻⁴ mol/dm³ (solubility product 3.1 (±1.5) × 10⁻⁷ mol²/dm⁶), less than calcium sulfate, which the book's own solubility guidelines list as insoluble; Appendix G lists calcium sulfite only as a solid. The page prints CaSO₃(s), with a visible Source note directly after the equation citing the volume, and a footer clause. Found by the 12.2 author and checker, confirmed by the claim pass; ruled by the orchestrator, November 25, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/12-kinetics/01-chemical-reaction-rates.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68786",
+      "sourceElementIds": [
+        "fs-idm243742160"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3552,
+      "rationale": "The general relation between rate expressions prints ΔA and ΔB without the brackets that its own sentence (\"the concentration of A\") and its Key Equations table (Δ[A], Δ[B]) give. The page's body display and Key equations entry print the brackets, with the coefficients a and b in italics and the species upright, and a footer clause says so; no Source note (a text slip the source's own table corrects). Found by the 12.1 author, confirmed by the consistency reading; ruled by the orchestrator, November 25, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/12-kinetics/01-chemical-reaction-rates.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68786",
+      "sourceElementIds": [
+        "fs-idm57147216"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3553,
+      "rationale": "The 2A ⟶ B exercise's answer prints the average rate of disappearance of A between 0.0 s and 10.0 s as 0.0375 mol L⁻¹ s⁻¹. The change in concentration, 1.00 − 0.625 = 0.375 M, is good to the hundredths place, two figures (0.38 M), so over 10.0 s the rate is 0.038 mol/L/s, as the module's own table of hydrogen peroxide data holds 0.125 − 0.0625 to −0.062 and its rate to 0.010; the second interval (0.625 − 0.360) keeps three figures and stands at 0.0265. The page's fill-in keys 0.038 (sig-figs:2 last-digit:0), with a visible Source note directly after it, a footer clause, and a DISCLOSED_DEVIATIONS key entry. Found by the blind solver, whose count of the difference 1.00 − 0.625 overturned the orchestrator's ruling before the wave; ruled by the orchestrator, November 25, 2026."
+    },
+    {
+      "localPath": "content/physical-sciences/chemistry/12-kinetics/01-chemical-reaction-rates.md",
+      "bundle": "chemistry-bundle",
+      "moduleId": "m68786",
+      "sourceElementIds": [
+        "fs-idm57147216"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 3554,
+      "rationale": "The 2A ⟶ B exercise's answer prints the average rate of formation of B between 0.00 s and 10.0 s as 0.0188 mol L⁻¹ s⁻¹, half of its 0.0375. The concentration change 1.00 − 0.625 is good to two figures, so half of the unrounded 0.0375 is 0.019 mol/L/s. The page's fill-in keys 0.019 (sig-figs:2 last-digit:0), with a visible Source note directly after it, a footer clause, and a DISCLOSED_DEVIATIONS key entry. Found by the blind solver, whose count of the difference 1.00 − 0.625 overturned the orchestrator's ruling before the wave; ruled by the orchestrator, November 25, 2026."
     }
   ]
 }
