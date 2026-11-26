@@ -120,3 +120,15 @@ test('a multiple choice keyed to a unit is refused under sibling closings that p
   assert.deepEqual(units(passing, KIN), []);
   assert.deepEqual(units(failing, BIO), [], 'Chemistry only');
 });
+
+test('a hint that names a subsection by another item\'s key is refused (2.7\'s binary acids, 12.2\'s catalyst)', () => {
+  const named = rule(/names a subsection by the words of another item's key/);
+  const NOM = 'content/physical-sciences/chemistry/02-atoms-molecules-and-ions/07-chemical-nomenclature.md';
+  const name = (hint) => `{{< textin\n  question="Name the following compound: HBr."\n  answer="hydrogen bromide"\n  hint="${hint}"\n>}}\n\n`;
+  const recall = '{{< textin\n  question="What is the term for a compound that contains hydrogen and one other element, bonded in a way that imparts acidic properties?"\n  answer="binary acid"\n  hint="Reread the last two subsections of the body, on naming acids."\n>}}\n';
+  assert.equal(named(name('Name the element written first. For a compound of hydrogen, recall from the subsection on binary acids when an acid’s name is used.') + recall, NOM).length, 1);
+  assert.deepEqual(named(name('Name the element written first. For a compound of hydrogen, recall from the next-to-last subsection of the body when an acid’s name is used.') + recall, NOM), []);
+  // The key in another clause of the hint is not the subsection's name.
+  assert.deepEqual(named(name('A binary acid is named from its anion; reread the last subsection of the body.') + recall, NOM), []);
+  assert.deepEqual(named(name('Recall from the subsection on binary acids when an acid’s name is used.') + recall, BIO), [], 'Chemistry only');
+});

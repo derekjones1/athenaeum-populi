@@ -640,6 +640,40 @@ export function unitChoiceUnderClosings(items) {
  * heading drops it (Chemistry 4.x shipped "### Derive … equations." beside
  * its siblings). Exported for the library-wide count.
  */
+/**
+ * A hint that names a subsection by the words of ANOTHER item's key on the
+ * same page: 12.2's two "the catalyst subsection" hints beside a recall keyed
+ * `catalyst`, and 2.7's six "the subsection on binary acids" above the recall
+ * keyed `binary acid` (reworded November 25, 2026). The playbook's rule: a
+ * subsection whose title is a key is named by position. Read per clause of
+ * the hint, so a key that is only a word of some other locator ("the
+ * calculation of the mass of the electron") is not a hit. Typed keys only: a
+ * multiple choice prints its key among its options, so a subsection named
+ * after one (2.6's "the Ionic Compounds subsection", 3.4's "Mass-Volume
+ * Percentage") gives nothing away (11 hits when they were read, all of
+ * that kind).
+ */
+export function subsectionHintPrintsKey(items) {
+  const keyed = items
+    .filter((it) => it.kind === 'textin' && it.params.answer)
+    .map((it) => ({ item: it, key: normalizeText(String(it.params.answer).replace(/\.$/, '')).replace(/^(?:the|a|an) /, '') }))
+    .filter((k) => k.key.length >= 5 && !numericKey(k.key));
+  const hits = [];
+  for (const item of items) {
+    const hint = item.params?.hint;
+    if (!hint || !/subsection/i.test(hint)) continue;
+    for (const clause of String(hint).split(/[.;,:—]/)) {
+      if (!/subsection/i.test(clause)) continue;
+      const hay = normalizeText(clause);
+      for (const k of keyed) {
+        if (k.item === item) continue;
+        if ([k.key, ...foldedForms(k.key)].some((form) => containsWholeWordRun(hay, form))) hits.push({ item, keyItem: k.item, key: k.item.params.answer });
+      }
+    }
+  }
+  return hits;
+}
+
 export function practicePeriodHeadings(text) {
   const practice = /^## Practice[ \t]*$/m.exec(text);
   if (!practice) return [];
@@ -1313,6 +1347,13 @@ export function lintLeaks(src, filename = '') {
     // unit-keyed choices).
     for (const hit of unitChoiceUnderClosings(items)) {
       err(hit.item.index, `${labelOf('multiplechoice', hit.item.params)}: keyed ${JSON.stringify(hit.item.params.answer)}, and the closing of a sibling item of the same exercise (line ${lineOf(src, hit.sibling.index)}) asks for its answer in that unit — the sibling items' closings print this unit: keep the units question in the part's self-check`);
+    }
+    // The same run's other leak: a hint that names a subsection by another
+    // item's key. Left to readers on November 25 (10 hits of a wider rule,
+    // judged harmless); narrowed to the clause that names the subsection and
+    // turned on once 2.7's six hints were reworded (0 hits).
+    for (const hit of subsectionHintPrintsKey(items)) {
+      err(hit.item.index, `${labelOf(hit.item.kind, hit.item.params)}: the hint names a subsection by the words of another item's key on this page (${JSON.stringify(hit.key)}, line ${lineOf(src, hit.keyItem.index)}) — name that subsection by its position ("the next-to-last subsection of the body"), never by its title`);
     }
     for (const hit of subshellLabelSlips(text)) {
       err(hit.index, `\`${hit.written}\` sets the shell number italic and the subshell letter upright — a subshell label with a variable shell number is one upright token, n included: \`${hit.upright}\` (\`$n$\` alone, the quantum number, stays math)`);

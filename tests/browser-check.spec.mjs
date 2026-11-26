@@ -2163,6 +2163,62 @@ test('a click at the centre of a Chemistry math option lands on that option', as
   expect(probed).toBeGreaterThan(20);
 });
 
+// The same chains are a choice AMONG fractions: 1/5 against 5 is the whole
+// question, and as inline `\\frac` the coefficient's digits were set at
+// script size (12.7 px in a 15 px button, on the `\\dfrac` watch list since
+// the page was written). The shortcode now sets an item whose every option
+// is one formula with a stacked fraction in display style, one option per
+// row (November 25, 2026). Asked at a desktop and a phone width: a
+// coefficient's digits are at least the button's own text size, every
+// fraction is inside its button (a chain that wraps keeps its second row),
+// the options stand in one column, and the page does not scroll sideways.
+// An item with one fraction among plain options keeps the inline size.
+test('a choice among fraction formulas sets its fractions at full size, one option per row', async ({ page }) => {
+  for (const width of [1280, 390]) {
+    await page.setViewportSize({ width, height: width > 500 ? 900 : 844 });
+    await gotoBuiltPage(page, '/physical-sciences/chemistry/12-kinetics/01-chemical-reaction-rates/');
+    await page.evaluate(() => document.fonts.ready);
+    const result = await page.evaluate(() => {
+      const problems = [];
+      const buttons = [...document.querySelectorAll('.ap-mc-option-formula')];
+      const lefts = new Set();
+      for (const btn of buttons) {
+        btn.scrollIntoView({ block: 'center' });
+        const box = btn.getBoundingClientRect();
+        const name = (btn.dataset.value || '').slice(0, 40);
+        lefts.add(Math.round(box.left));
+        if (!btn.querySelector('mstyle[displaystyle="true"]')) problems.push(`${name}: not in display style`);
+        const own = parseFloat(getComputedStyle(btn).fontSize);
+        for (const frac of btn.querySelectorAll('.katex-html .mfrac')) {
+          const r = frac.getBoundingClientRect();
+          if (r.top < box.top - 0.5 || r.bottom > box.bottom + 0.5 || r.right > box.right + 0.5) problems.push(`${name}: a fraction leaves its button`);
+          for (const digit of frac.querySelectorAll('.mord')) {
+            if (!/^\d$/.test(digit.textContent) || digit.closest('.msupsub')) continue;
+            const size = parseFloat(getComputedStyle(digit).fontSize);
+            if (size < own) problems.push(`${name}: a digit is set at ${size} px, under the button's ${own} px`);
+          }
+        }
+      }
+      const tops = buttons.map((btn) => Math.round(btn.getBoundingClientRect().top + window.scrollY));
+      return {
+        count: buttons.length,
+        problems,
+        columns: lefts.size,
+        distinctRows: new Set(tops).size,
+        sideways: document.documentElement.scrollWidth - window.innerWidth,
+      };
+    });
+    expect(result.count, `${width} px: both rate-chain items, four options each`).toBe(8);
+    expect(result.problems, `${width} px`).toEqual([]);
+    expect(result.columns, `${width} px: one column`).toBe(1);
+    expect(result.distinctRows, `${width} px: one option per row`).toBe(8);
+    expect(result.sideways, `${width} px: no sideways scroll`).toBeLessThanOrEqual(0);
+  }
+  await gotoBuiltPage(page, '/math/precalculus/knowledge-check-07-12/');
+  expect(await page.locator('.ap-mc-option-formula').count(), 'one fraction among plain options stays inline').toBe(0);
+  expect(await page.locator('.ap-mc-option[data-value*="frac"]').count()).toBeGreaterThan(0);
+});
+
 test('a Chemistry appendix table scrolls inside its own box, its figures load, and a bracketed formula is not a link', async ({ page }) => {
   const routes = chemistryAppendixRoutes();
   expect(routes.length, 'the thirteen appendix pages were discovered in public/').toBe(13);

@@ -4471,15 +4471,6 @@
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "083f22ccc1c8b03f": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp282297472 part (e); key hydrogen bromide | Section 2.7, after the blind solve: \"hydrobromic acid\" added to accept on the solver's also-defensible note (the solver's own answer is the key); parent ruling, November 10, 2026 | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "adjudicated",
-    "note": "The solver's answer is the key, the source's own (fs-idp282297472(e), \"hydrogen bromide\"). The second name is the module's name for the same formula in water (table fs-idp272649888: HBr(aq), hydrobromic acid), and the stem prints no state, so it cannot refuse it: by the playbook's name row (a second name the module prints for the compound, which the stem does not print) \"hydrobromic acid\" becomes an accept member. This overturns parent decision 5; four readings (author, checker, consistency reader, solver) had raised it."
-   }
-  },
   "0842675c82025c36": {
    "verdict": "ok",
    "note": "m66530 glossary definition fs-idp85464784 (kingdom): meaning ('domain division...') used as prompt, term as answer; accept='kingdoms' (regular plural).; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -9662,6 +9653,14 @@
   "123718a5d86a698c": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "123879457652e74f": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp282297472 part (a); key cesium chloride | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page) | carried 2026-11-26 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "1240511af0a3e800": {
    "verdict": "ok",
@@ -23822,14 +23821,6 @@
     "result": "agrees"
    }
   },
-  "2d37d3804d3538a3": {
-   "verdict": "ok",
-   "note": "select-the-term filler from body sentence fs-idm237313312 '...the solution foams because of the vigorous production of oxygen gas'; options = the two products of 'Hydrogen peroxide decomposes to yield water and oxygen gas' (fs-idm99481872), sentence order",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "2d39707f5f24b3c6": {
    "verdict": "ok"
   },
@@ -32066,6 +32057,14 @@
   "3d756c64eb90b7a7": {
    "verdict": "ok",
    "note": "RESTORED per parent adjudication: unkeyed SA fs-id1167583701925 as Practice selfcheck; model answer and 3 checkpoints from the Phenol Coefficient subsection's opening two sentences (Lister/phenol, Rideal and Walker's 1903 protocol, phenol coefficient calculation). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "3d7698baef7bd117": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp282297472 part (f); key aluminum fluoride | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page) | carried 2026-11-26 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "3d76cc8d1379ed8d": {
    "verdict": "ok",
@@ -53135,6 +53134,15 @@
     "result": "agrees"
    }
   },
+  "6794ae3c8aa2254c": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp282297472 part (e); key hydrogen bromide | Section 2.7, after the blind solve: \"hydrobromic acid\" added to accept on the solver's also-defensible note (the solver's own answer is the key); parent ruling, November 10, 2026 | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page) | carried 2026-11-26 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "The solver's answer is the key, the source's own (fs-idp282297472(e), \"hydrogen bromide\"). The second name is the module's name for the same formula in water (table fs-idp272649888: HBr(aq), hydrobromic acid), and the stem prints no state, so it cannot refuse it: by the playbook's name row (a second name the module prints for the compound, which the stem does not print) \"hydrobromic acid\" becomes an accept member. This overturns parent decision 5; four readings (author, checker, consistency reader, solver) had raised it."
+   }
+  },
   "6799025500f514c8": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -54513,6 +54521,14 @@
    "note": "author-built from § Effects of Mutations on DNA Sequence, Check Your Understanding: \"What type of a mutation occurs when a gene has two fewer nucleotides in its sequence?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "6a7d9512319f20b4": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp282297472 part (d); key beryllium chloride | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page) | carried 2026-11-26 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -67906,14 +67922,6 @@
    "verdict": "ok",
    "note": "Practice (source fs-id1165135550012, a=5,c=6,beta=35): Area=0.5*5*6*sin(35)=8.6036 -> 8.6. Matches CNXML answer 8.6."
   },
-  "849a3f460655fc0e": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp282297472 part (f); key aluminum fluoride | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "849ed231a4fcd2ce": {
    "verdict": "ok",
    "note": "CT fs-id2196608, solution fs-id2516114 with 'pelvic girdle' corrected to 'pectoral girdle' (parent ruling, Source note after the item; body fs-id1397217); four rubric clauses"
@@ -68377,6 +68385,14 @@
   "85615b6ad931438d": {
    "verdict": "ok",
    "note": "selfcheck fs-idm89669536: model answer is the source solution verbatim (systemic circulation), decomposed into 4 checkpoints, no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "856614110864b2ce": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp282297472 part (b); key barium oxide | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page) | carried 2026-11-26 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "85675bb94559ef18": {
    "verdict": "ok",
@@ -77048,14 +77064,6 @@
   "96d23c3cc3b0929d": {
    "verdict": "ok",
    "note": "CT3 fs-id2661166 model answer = solution fs-id2168014 verbatim"
-  },
-  "96d36b90f32f84a7": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp282297472 part (a); key cesium chloride | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "96d3e1bc7fbdc0ed": {
    "verdict": "ok"
@@ -92744,14 +92752,6 @@
     "result": "agrees"
    }
   },
-  "b6241aa2c432f051": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp282297472 part (d); key beryllium chloride | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "b630cb2ffde30524": {
    "verdict": "ok",
    "note": "source exercise fs-id1172101888699 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -95830,14 +95830,6 @@
   "bc190d16b294da97": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "bc283fe63d5878ca": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp282297472 part (c); key potassium sulfide | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -101344,6 +101336,14 @@
   "c6f28c8d282c458c": {
    "verdict": "ok",
    "note": "glossary recall: torpor (fs-idm78728352) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c6f3437452cb26db": {
+   "verdict": "ok",
+   "note": "source exercise fs-idp282297472 part (c); key potassium sulfide | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page) | carried 2026-11-26 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -110232,14 +110232,6 @@
    "verdict": "ok",
    "note": "Table (0,2)(pi/4,7)(pi/2,2)(3pi/4,-3)(pi,2)(5pi/4,7)(3pi/2,2): amplitude (7-(-3))/2=5, midline (7-3)/2=2, midline crossing rising at x=0 -> sine form, max at x=pi/4 -> B=2. y=5sin(2x)+2 numerically checked against all 7 table points (matches source exercise #7 solution). | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
-  "d8eaa6ee3c11a562": {
-   "verdict": "ok",
-   "note": "source exercise fs-idp282297472 part (b); key barium oxide | carried November 11, 2026: the stem lost only the retired pointer sentence \"Use the periodic table.\" (the table is now a control on every Chemistry page)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "d8f138962867b16c": {
    "verdict": "ok",
    "note": "cloze from body fs-id1147496",
@@ -111682,6 +111674,14 @@
   "dbdb5448b9ae6889": {
    "verdict": "ok",
    "note": "author-built from § Severe Combined Immunodeficiency: \"Patients with SCID also cannot develop immunological memory, so vaccine s provide them no protection, and live attenuated vaccines (e.g., f…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "dbdcfc6e84c36f7e": {
+   "verdict": "ok",
+   "note": "select-the-term filler for the subsection The Presence of a Catalyst, from body paragraph fs-idm237313312 ('Under typical conditions, this decomposition occurs very slowly ... substances within the wound’s exposed tissues that accelerate the decomposition process. Substances that function to increase the rate of a reaction are called catalysts'); options = the five factors the opening paragraph lists (fs-idm233990000), in its order; replaced the oxygen-or-water choice November 25, 2026",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"

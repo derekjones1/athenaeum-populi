@@ -449,6 +449,13 @@ ap-figure { display: block; }
    so nothing is clipped or moved; the math simply stops taking pointer
    events, and a click anywhere inside a button's border is that button's. */
 .ap-mc-option * { pointer-events: none; }
+/* A choice among formulas with stacked fractions (the shortcode says which,
+   and sets them in display style): one option per row, read down the column
+   like a set of display equations, the formula starting at the left edge so
+   the terms of one chain stand under the same terms of the next. The line
+   height gives a chain that wraps on a phone room for its second row of
+   fractions. */
+.ap-mc-option-formula { flex: 1 1 100%; max-width: 100%; text-align: left; line-height: 3.6; padding-block: 0; }
 /* Graph options carry an inline SVG per choice. The old flex-basis(150px) /
    max-width(210px) let three of them share one row inside the ~560px card,
    so each figure rendered ~153px wide and its 11px axis labels shrank to

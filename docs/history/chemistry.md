@@ -6732,11 +6732,56 @@ check, the build, `check:build`, the browser suite, and `verify:typed` with
 ### For Derek
 
 - **Knowledge Check block 4 (chapters 9–11) is still owed.**
-- The six 2.7 "binary acids" hints, which have the shape of 12.2's "the
-  catalyst subsection" (lint rule A, left to readers).
-- The rate-chain options' small fractions (the `\dfrac` watch list): looked at on a phone by the parent, where they wrap and read.
-- The oxygen/water choice added on 12.2 is a weak two-option item (water does
-  not foam), kept because every stronger key is printed by a heading or a stem.
+- The other three items first listed here were fixed the same day: the
+  follow-up below.
+
+### Follow-up, November 25: the three items listed for Derek
+
+Derek: "Let's fix these items." Done by `docs/re-review/README.md` (snapshot,
+carry, a fresh blind solve of the one changed key).
+
+- **2.7's six hints** said "recall from the subsection on binary acids" above
+  the recall keyed `binary acid`; they now say "the next-to-last subsection
+  of the body" (the playbook's rule: a subsection whose title is a key is
+  named by position). Six records carried, no key changed. **A lint holds the
+  shape** (`subsectionHintPrintsKey`, `lints-leaks.mjs`, with a test): the
+  clause of a hint that names a subsection may not print another item's typed
+  key. The wider rule A measured 10 hits; this one read per clause and over
+  typed keys only is silent on the book. With multiple-choice keys included
+  it had 11 hits on 2.6 and 3.4, all a subsection named after an option the
+  item prints anyway, so those keys are left out.
+- **12.1's rate-chain options** set their coefficient fractions at script size
+  (12.7 px digits in a 15 px button). The `multiplechoice` shortcode now sets
+  an item whose EVERY option is one formula with a stacked fraction in display
+  style, one option per row, left-aligned (`ap-mc-option-formula`); the
+  author's text and `data-value` are untouched, so no item re-hashed and
+  `\dfrac` stays banned in content. Two items in the library qualify, both on
+  12.1; an item with one fraction among plain options (Precalculus Knowledge
+  Check 7–12) keeps the inline size. Looked at by the parent at 1280 px (the
+  five-term chain wraps its last term to a second row) and 390 px (two or
+  three rows); a browser test holds digit size, containment, one column, and
+  no sideways scroll at both widths.
+- **12.2's oxygen-or-water choice** is replaced by a choice among the five
+  factors the section's opening paragraph lists, in its order, keyed `the
+  presence of a catalyst`: "Which factor does the following statement
+  describe? Dilute H₂O₂(*aq*) decomposes very slowly under typical conditions
+  and rapidly when it is poured onto an open wound, where substances within
+  the exposed tissues accelerate the decomposition." Every option is a body
+  heading's phrase, so no heading makes the choice. Its hint names the
+  question to ask ("which of the five factors … differs between the two
+  cases") and not the subsection, since on a choice among the page's own
+  subsections the place to look is the answer. Blind solve: agreed, no second
+  defensible option. The solver also noted the source's sentence "large
+  pieces of iron react more slowly with acids than they do with finely
+  divided iron powder" reads oddly; it is the source's wording and stands.
+  The footer clause is rewritten.
+- The sodium-or-calcium choice on 12.2 stands: its sentence names exactly two
+  metals.
+
+Close-out: `npm run ci` green (196 browser tests passed), `verify:typed` on
+chapter 12 with `--variants` (11 items) and on 2.7 (48 items), 0 not graded
+correct; floors unchanged (19088 records). The first `npm test` failed on the
+new item's missing provenance note, written by hand.
 
 ## The `\dfrac` watch list
 

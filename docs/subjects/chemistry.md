@@ -1112,6 +1112,14 @@ after the rule was written, so the line is drawn by pairs:
   Mendeleev's table was arranged by, and what the relationship was found
   to involve instead" marks the wrong option, which is the key by
   elimination.
+- **A subsection whose title is another item's typed key is named by
+  position** ("the next-to-last subsection of the body"), never by title or
+  topic: 2.7's "the subsection on binary acids" stood above the recall keyed
+  `binary acid`, 12.2's "the catalyst subsection" beside one keyed `catalyst`
+  (lint, typed keys). **On a choice among the page's own subsections** (12.2:
+  which of the section's five factors a case shows) the hint names the
+  question to ask and the list the options come from, never the subsection
+  the case is printed in — that subsection's title is the key.
 - A hint never sends the learner to a table that lacks the answer (1.4's
   area item pointed at the table of base units, which has no area unit).
 - **A hint never points at a body passage that works the item's own
@@ -1625,7 +1633,10 @@ mhchem extension, so nothing is loaded:
   lost), the parent adds it to "The `\dfrac` watch list" in
   `docs/history/chemistry.md`, and the ban is revisited from that list,
   not from taste. A display equation is not affected: `$$…$$` sets
-  `\frac` at full size.
+  `\frac` at full size. Neither is **a multiple choice whose every option
+  is one formula with a stacked fraction** (12.1's chains of rate
+  expressions): the shortcode sets those options in display style, one per
+  row, from the author's plain `\frac` *(November 25, 2026; browser test)*.
 - **A number in scientific notation never breaks at its ×.** The math
   render hook holds a short inline `a \times 10^{n}` on one line (browser
   test); nothing is written for it. A number and its unit in prose may

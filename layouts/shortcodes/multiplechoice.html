@@ -103,12 +103,31 @@
           {{- end -}}
         {{- end -}}
       {{- else -}}
+        {{- /* A choice whose every option is one formula with a stacked
+             fraction — Chemistry 12.1's chains of rate expressions — is a
+             choice AMONG fractions: the coefficient 1/5 against 5 is the
+             whole question, and inline `\frac` set those digits at about
+             10 px. Each such option is typeset in display style (the size a
+             `$$…$$` equation gets) and takes a row of its own (the
+             `ap-mc-option-formula` class). It stays an inline formula, so a
+             chain still breaks at its equals signs on a phone. Only the
+             typesetting changes: `data-value`, which grading compares, is
+             the option as the author wrote it. An item with one fraction
+             option among plain ones is left alone — there the fraction is
+             a value, not the thing compared, and its siblings set its size. */ -}}
+        {{- $opts := slice -}}
         {{- range (split (trim .Inner "\n") "\n") -}}
-          {{- $opt := trim . " " -}}
-          {{- with $opt -}}
-            {{- $optionLabel := replace ((. | markdownify | plainify) | string) "$" "" -}}
-            <button type="button" disabled class="ap-mc-option" data-value="{{ . }}" aria-label="Answer choice: {{ $optionLabel }}">{{ partial "mathtext" . }}</button>
-          {{- end -}}
+          {{- with trim . " " -}}{{- $opts = $opts | append . -}}{{- end -}}
+        {{- end -}}
+        {{- $formulaChoice := gt (len $opts) 0 -}}
+        {{- range $opts -}}
+          {{- if not (findRE `^\$[^$]*\\frac[^$]*\$$` . 1) -}}{{- $formulaChoice = false -}}{{- end -}}
+        {{- end -}}
+        {{- range $opts -}}
+          {{- $optionLabel := replace ((. | markdownify | plainify) | string) "$" "" -}}
+          {{- $shown := . -}}
+          {{- if $formulaChoice -}}{{- $shown = printf "$\\displaystyle %s" (strings.TrimPrefix "$" .) -}}{{- end -}}
+          <button type="button" disabled class="ap-mc-option{{ if $formulaChoice }} ap-mc-option-formula{{ end }}" data-value="{{ . }}" aria-label="Answer choice: {{ $optionLabel }}">{{ partial "mathtext" $shown }}</button>
         {{- end -}}
       {{- end -}}
     </div>

@@ -329,38 +329,38 @@ For example, consider H₂CO₃ (which you might be tempted to call “hydrogen 
 {{< textin
   question="Name the following compound: CsCl."
   answer="cesium chloride"
-  hint="Name the element written first, then the other element with its ending replaced by the suffix -ide. For a compound of hydrogen, recall from the subsection on binary acids when an acid’s name is used."
+  hint="Name the element written first, then the other element with its ending replaced by the suffix -ide. For a compound of hydrogen, recall from the next-to-last subsection of the body when an acid’s name is used."
 >}}
 
 {{< textin
   question="Name the following compound: BaO."
   answer="barium oxide"
-  hint="Name the element written first, then the other element with its ending replaced by the suffix -ide. For a compound of hydrogen, recall from the subsection on binary acids when an acid’s name is used."
+  hint="Name the element written first, then the other element with its ending replaced by the suffix -ide. For a compound of hydrogen, recall from the next-to-last subsection of the body when an acid’s name is used."
 >}}
 
 {{< textin
   question="Name the following compound: K₂S."
   answer="potassium sulfide"
-  hint="Name the element written first, then the other element with its ending replaced by the suffix -ide. For a compound of hydrogen, recall from the subsection on binary acids when an acid’s name is used."
+  hint="Name the element written first, then the other element with its ending replaced by the suffix -ide. For a compound of hydrogen, recall from the next-to-last subsection of the body when an acid’s name is used."
 >}}
 
 {{< textin
   question="Name the following compound: BeCl₂."
   answer="beryllium chloride"
-  hint="Name the element written first, then the other element with its ending replaced by the suffix -ide. For a compound of hydrogen, recall from the subsection on binary acids when an acid’s name is used."
+  hint="Name the element written first, then the other element with its ending replaced by the suffix -ide. For a compound of hydrogen, recall from the next-to-last subsection of the body when an acid’s name is used."
 >}}
 
 {{< textin
   question="Name the following compound: HBr."
   answer="hydrogen bromide"
   accept="hydrobromic acid"
-  hint="Name the element written first, then the other element with its ending replaced by the suffix -ide. For a compound of hydrogen, recall from the subsection on binary acids when an acid’s name is used."
+  hint="Name the element written first, then the other element with its ending replaced by the suffix -ide. For a compound of hydrogen, recall from the next-to-last subsection of the body when an acid’s name is used."
 >}}
 
 {{< textin
   question="Name the following compound: AlF₃."
   answer="aluminum fluoride"
-  hint="Name the element written first, then the other element with its ending replaced by the suffix -ide. For a compound of hydrogen, recall from the subsection on binary acids when an acid’s name is used."
+  hint="Name the element written first, then the other element with its ending replaced by the suffix -ide. For a compound of hydrogen, recall from the next-to-last subsection of the body when an acid’s name is used."
 >}}
 
 {{< textin
