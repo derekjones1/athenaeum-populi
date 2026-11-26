@@ -195,7 +195,7 @@ $$\text{Ca} = \frac{2.662 \times 10^{-22}\ \text{g}}{1.745 \times 10^{-22}\ \tex
 {{< fillin
   question="Silver crystallizes in an FCC structure. The edge length of its unit cell is 409 pm. What is the atomic radius of Ag in this structure? Enter the radius in picometers."
   answer="145"
-  answerForm="sig-figs:3 last-digit:1"
+  answerForm="sig-figs:3 last-digit:0"
   answerDisplay="$145\ \text{pm}$"
   hint="Ask along which line of the unit cell the atoms touch, and how many radii span it."
 >}}

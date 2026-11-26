@@ -6783,6 +6783,128 @@ chapter 12 with `--variants` (11 items) and on 2.7 (48 items), 0 not graded
 correct; floors unchanged (19088 records). The first `npm test` failed on the
 new item's missing provenance note, written by hand.
 
+## Knowledge Check 4: chapters 9–11 (November 25, 2026)
+
+Run from `docs/briefs/chemistry/kc-run.md` from commit e512904c, the check
+`run.md` puts before chapter 12 and the Sections 12.1–12.2 run left owed.
+`knowledge-check-09-11.md`: 49 items over 17 sections — 10 fill-ins, 19
+text-ins, 9 multiple choices, 11 self-checks; 11 are worked-example items
+(the ten fill-ins and 10.1's N₂-or-CO choice). 9.6 and 10.1 stand at two
+items. Weight 15; chapter 12 moved to 16 and the appendices to 17. No new
+erratum: the last is still 3560.
+
+### Before the wave
+
+- **Run facts by an Author-kind drafter, ruled by the parent.** Of the
+  block's 56 worked examples 18 were ruled usable. The rest need a constant
+  or a table value their question does not print (the gas constant in 9.2,
+  9.3, 9.5, 9.6, 10.3, and 11.4; $K_\text{f}$ and $K_\text{b}$; a vapor
+  pressure; *g*), read a graph or a picture (9.1's manometers, 10.3, 10.4,
+  11.3's thermal pollution), or were corrected by the section page in the
+  part a check would ask (9.3's propane, 9.5's root-mean-square speed,
+  10.1's ethanol, 11.4's vapor pressure). Nine sections are written items
+  only: 9.1, 9.5, 9.6, 10.2, 10.4, 10.5, 11.1, 11.2, 11.5.
+- **Rulings.** The kelvin offset and a metric prefix are definitions the
+  learner knows, not factors a stem must print (four examples turn on it);
+  9.1's pressure-unit conversion needs the section's table and is not used
+  (the 1.6 fuel-economy precedent); 9.2's Boyle's-law part (c) is not used,
+  the page having corrected a sentence of its working; 10.3's sweat example
+  is used, its Source note being about the words "as much as" only; 10.6's
+  polonium part (a) is not used, since only the Solution says the cell is
+  simple cubic, nor its Al₂O₃ example, which Section 2.6's worked example
+  asks; 10.1's group-14 hydrides are not used, the question listing them in
+  the answer's order. The playbook edition carries the first.
+- **The gate probe.** Right and wrong keys of the block's new shapes — a
+  negative power of ten at `last-digit:0`, two figures at `last-digit:1`,
+  a lettered part, a sine. `kc sources` refused the RIGHT key of 11.4's 3.0
+  *m* sodium chloride example: it read "Enter the mole fraction of …" as an
+  ask for a molar amount and held the item to the working's 55 mol. Fixed
+  in `heldNumber` (`tools/verify/verify-source-keys.mjs`), which now also
+  reads a mole fraction's formula where the subscript has no digit ("X
+  NaCl"), so a closing that names H₂O is held to water's fraction and the
+  swapped 0.052 is refused; test in `tools/source/knowledge-check.test.mjs`
+  on the pinned modules. The full source-keys gate confirms 8,166 before
+  and after.
+
+### The readings
+
+Three authors wrote 50 items. The three checkers answered every item
+key-covered with no disagreement and found 2 hard: 9.1's torr multiple
+choice, which a page Check Your Learning grades in the other direction (a
+text-in on the systolic pressure replaced it), and 10.2's
+adhesive-or-cohesive choice, whose stem defined its key under a self-check
+printing both words (a text-in keyed `xylem`). The parent's read removed
+two of chapter 11's four two-option multiple choices (11.2's orientation of
+water about a chloride ion became a self-check on solvation; 11.5's charge
+of a metal hydroxide colloid became a text-in keyed `soaps`). The sweep
+found 3 hard and 27 soft: 10.1's dispersion-force choice, a reverse recall
+of a Practice item and its hint, was deleted with no clean replacement;
+10.3's self-check lost the sentence that gave away 10.5's "molecular"; and
+the third, 9.2's carbon dioxide item under the section's note on the
+kelvin conversion, was ruled no defect (below). One soft flag was promoted:
+11.2's weak-electrolyte choice, left by elimination on the page's rubrics,
+became a text-in keyed `electrons`. The second checker read 11 replacements
+and rewrites and failed 3 — two trimmed self-checks whose stems no longer
+asked for what their rubrics grade (9.6, 10.3), and `electrons` without
+`delocalized electrons`, which Section 10.5 prints; the parent fixed all
+three. The blind solver agreed on 33 of 38 and flagged 5, every one a
+second form the grader already takes, except Bragg's 0.1541 (below).
+
+### Rulings
+
+- **9.2's carbon dioxide item stays.** The section's Source note says its
+  examples convert to kelvin with 273.15 where the source adds 273; the
+  example's answer, 0.321 L, did not move. That is the carried-digits case
+  of "A usable example", and the playbook now names it.
+- **10.6, the Bragg spacing, is keyed 0.154 nm**, as the source and the
+  section page print it, though both data carry four figures; the errata
+  log already rules the three figures kept as printed. The blind solver
+  answered 0.1541, which the field grades `form` — told to round, not
+  marked wrong.
+- **Objectives without an item**, recorded: 9.1's units of pressure (its
+  torr item went and the page's conversions spend the rest), 10.1's
+  description of the types of force (every sentence is a page item, a
+  corrected sentence, or the open van der Waals question), 11.4's
+  calculations and distillation (three items, and its other examples need
+  a table constant or the gas constant).
+- **11.4's antifreeze example, part (a)**, was the author's first choice
+  and the gate refused it: the question's letters sit inside one sentence
+  ("What are the (a) mole fraction and (b) molality of …"), and the parser
+  gives part (a) no data. The author took the sodium chloride example. A
+  gate limit, recorded in `kc-run.md` §5.
+
+### A section page corrected
+
+10.6's silver Check Your Learning (the atomic radius, 145 pm) declared
+`last-digit:1` with every number in its stem, so 144 and 146 graded
+correct. It is `last-digit:0` now; the key is unchanged and its ledger
+record was carried. Found by the chapter 10 checker.
+
+### For Derek
+
+- **9.2's hair-spray example prints 390 kPa.** `docs/subjects/chemistry.md`
+  says in so many words that this result "stands" as one whose count is
+  only ambiguous; the rule of November 24, 2026, that a whole-number datum
+  counts every printed digit, makes 360 kPa three figures, and 360 × 323.15
+  / 297.15 = 391.499 is then 391 kPa. The two rules disagree on this one
+  example. Nothing was changed; the check does not use it.
+
+### Close-out
+
+`npm run ci` green in its parts: `npm test`, `verify:replay`, the build
+and `check:build`, and the browser suite (198 passed, then 199 with the
+check's own test in `tests/browser-check.spec.mjs`: its place after
+chapter 11, no hint control, the periodic-table control, a wrong and a
+right answer in a text field and in a fill-in). The check's route is in
+`tests/accessibility.spec.mjs`. The built page is 244 KB. Floors: 19137
+records, 9666 replayed; the source gates do not visit a check (8166
+confirmed, unchanged).
+
+### Next
+
+Sections 12.3–12.7 (a rate law needs its own answer form: decide and probe
+it before the wave). Block 5 (chapters 12–15) after chapter 15.
+
 ## The `\dfrac` watch list
 
 Every inline fraction an author or checker reports as hard to read under

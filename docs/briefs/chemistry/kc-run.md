@@ -287,3 +287,52 @@ flagged one form (Δ beside "delta").
 - **Costs**: two authors about 240 and 260 thousand tokens, two checkers
   about 150 each, the sweep 175, the second checker 80, the solver 82;
   about 25 minutes of agent wall time to the solve.
+
+**Block 4, chapters 9–11 (November 25, 2026;
+`docs/history/chemistry.md`, "Knowledge Check 4").** Three authors wrote 50
+items and 49 landed (10 fill-ins, 19 text-ins, 9 multiple choices, 11
+selfchecks; 11 of them worked-example items); 9.6 and 10.1 stand at two.
+The checkers disagreed with no key and found 2 hard; the parent's read
+added 2 (coin-flip multiple choices); the sweep 3 hard, one of them ruled
+not a defect; the second checker failed 3 of 11; the solver agreed on 33
+and flagged 5 forms the grader already takes.
+
+- **A chapter of constants is a chapter of written items.** 18 of 56
+  examples were usable: the gas constant, a $K_\text{f}$ or
+  $K_\text{b}$, a vapor pressure, or a table of unit factors rules out
+  most of 9.2, 9.3, and 11.4, and a graph reading most of 10.3 and 10.4.
+  The kelvin offset and a metric prefix do not (the playbook now says so);
+  that one ruling decided four examples.
+- **The probe found a wrong refusal this time, not a wrong confirmation.**
+  `kc sources` read the closing "Enter the mole fraction of …" as an ask
+  for moles and refused 11.4's right key; and it could not hold a mole
+  fraction to its formula where one subscript has no digit ("X NaCl").
+  Both fixed before the wave, with a test. A mole-fraction item closes
+  with the FORMULA it asks ("…of the solvent, H₂O.").
+- **Two gate limits left standing**: the gate confirms any number a
+  Solution prints, an intermediate included (11.3's Henry's-law constant
+  under the solubility stem), so the final value is the checker's to hold;
+  and it cannot split a question whose letters sit inside one sentence
+  ("What are the (a) mole fraction and (b) molality of …", 11.4), so that
+  example's part (a) is refused — the author took another example. Teach
+  it when a block needs such an example.
+- **Two-option multiple choices pile up on a written-items chapter.** The
+  chapter 11 author wrote four among eight multiple choices; each was
+  defensible alone ("the module's sentence prints exactly two"). The
+  parent's read counts them per chapter: two went, and so did chapter 10's
+  adhesive-or-cohesive choice, which sat under a self-check printing both
+  words.
+- **A self-check's rubric is a neighbour too.** 10.3's model answer said
+  that weak attractive forces give low melting points, two sections above
+  10.5's "low melting points" multiple choice keyed "molecular"; only the
+  sweep, reading the block whole, saw it. And a trimmed self-check must
+  still ask for what its remaining clauses grade: the second checker
+  failed 9.6's and 10.3's stems after their trims.
+- **A checker reading a section page finds the page's own defects.** The
+  chapter 10 checker found 10.6's silver Check Your Learning at
+  `last-digit:1` with every number in its stem; fixed in the same run
+  (one record carried).
+- **Costs**: run-facts drafter 395 thousand tokens (12 minutes), three
+  authors 335–350 each over two or three rounds, three checkers 200–235,
+  the sweep 266, the second checker 157, the solver 103.
+

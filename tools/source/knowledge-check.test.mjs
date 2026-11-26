@@ -313,3 +313,33 @@ test('a worked Solution in prose: labelled configurations, the whole ranking, a 
     refused('6.3', shell('25'), /does not print/);
   });
 }
+
+{
+  const CHEM = path.join(ROOT, 'sources/openstax/osbooks-chemistry-bundle/modules');
+  const ids = { '10.3': 'm68768', '10.6': 'm68773', '11.3': 'm68782', '11.4': 'm68783' };
+  const skip = !Object.values(ids).every((id) => existsSync(path.join(CHEM, id, 'index.cnxml')));
+  const realModule = (section) => (ids[section] ? readFileSync(path.join(CHEM, ids[section], 'index.cnxml'), 'utf8') : null);
+  const one = (section, item) => checkSources(['## Chapter N: Title', '', `### ${section} Title`, '', item, ''].join('\n'), realModule);
+  const fillin = (question, answer, form) => `{{< fillin question="${question}" answer="${answer}" answerForm="${form}" >}}`;
+  const NACL = 'Calculate the mole fraction of solute and solvent in a 3.0 *m* solution of sodium chloride.';
+  const HENRY = 'At 20 °C, the concentration of dissolved oxygen in water exposed to gaseous oxygen at a partial pressure of 101.3 kPa is $1.38 \\times 10^{-3}$ mol/L. Use Henry’s law to determine the solubility of oxygen when its partial pressure is 20.7 kPa, the approximate pressure of oxygen in earth’s atmosphere. Enter the solubility in mol/L.';
+  const SWEAT = 'One way our body is cooled is by evaporation of the water in sweat. In very hot climates, we can lose 1.5 L of sweat or more per day. Although sweat is not pure water, we can get an approximate value of the amount of heat removed by evaporation by assuming that it is. How much heat is required to evaporate 1.5 L of water (1.5 kg) at $T$ = 37 °C (normal body temperature); $\\Delta H_\\text{vap}$ = 43.46 kJ/mol at 37 °C. Enter the heat in kilojoules.';
+  const CALCIUM = 'Calcium crystallizes in a face-centered cubic structure. The edge length of its unit cell is 558.8 pm. What is the atomic radius of Ca in this structure? Enter the radius in picometers.';
+
+  test('sources read Knowledge Check block 4\'s shapes: a mole fraction is no molar amount, a negative power of ten, two figures from a table (Chemistry 2e chapters 10–11)', { skip }, () => {
+    const ok = (section, item) => assert.deepEqual(one(section, item), { confirmed: 1, failures: [] }, item);
+    const refused = (section, item, pattern) => assert.match(one(section, item).failures[0]?.detail ?? '(confirmed)', pattern, item);
+    // "mole fraction" in the closing is not "moles": 0.95 is printed, and the working's 55 mol is not held against it.
+    ok('11.4', fillin(`${NACL} Enter the mole fraction of the solvent, H₂O.`, '0.95', 'sig-figs:2 last-digit:1'));
+    ok('11.4', fillin(`${NACL} Enter the mole fraction of the solvent, water.`, '0.95', 'sig-figs:2 last-digit:1'));
+    // …and a closing that names the formula holds the item to that formula's fraction.
+    refused('11.4', fillin(`${NACL} Enter the mole fraction of the solvent, H₂O.`, '0.052', 'sig-figs:2 last-digit:1'), /for the value for H2O|does not print/);
+    ok('11.3', fillin(HENRY, '2.82\\times10^{-4}', 'sig-figs:3 last-digit:0'));
+    refused('11.3', fillin(HENRY, '2.82\\times10^{-3}', 'sig-figs:3 last-digit:0'), /does not print/);
+    refused('11.3', fillin(HENRY, '1.38\\times10^{-3}', 'sig-figs:3 last-digit:0'), /./);
+    ok('10.3', fillin(SWEAT, '3.6\\times10^{3}', 'sig-figs:2 last-digit:1'));
+    refused('11.3', fillin(HENRY, '2.82\\times10^{-4}', 'sig-figs:2 last-digit:0'), /sig-figs:2/);
+    ok('10.6', fillin(CALCIUM, '197.6', 'sig-figs:4 last-digit:0'));
+    refused('10.6', fillin(CALCIUM, '1.54', 'sig-figs:4 last-digit:0'), /does not print/);
+  });
+}

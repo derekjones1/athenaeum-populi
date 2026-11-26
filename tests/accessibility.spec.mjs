@@ -88,6 +88,12 @@ const REPRESENTATIVE_PAGES = [
     path: '/physical-sciences/chemistry/knowledge-check-06-08/',
   },
   {
+    // The first check with a key in scientific notation with a negative
+    // exponent, and gas-law and unit-cell calculations.
+    name: 'chemistry block 4 knowledge check (chapters 09–11)',
+    path: '/physical-sciences/chemistry/knowledge-check-09-11/',
+  },
+  {
     name: 'biology unit 1 knowledge check (chapters 01–03)',
     path: '/life-health-sciences/biology/knowledge-check-01-03/',
   },

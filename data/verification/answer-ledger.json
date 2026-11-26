@@ -2080,6 +2080,14 @@
     "result": "agrees"
    }
   },
+  "0397f421d0802de6": {
+   "verdict": "ok",
+   "note": "KC 4 11.3 § Solutions of Liquids in Liquids, m68782",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0399fc25b75681e7": {
    "verdict": "ok",
    "note": "selfcheck, CT fs-id1167658066298, module does not compare to bacterial infections (stated in model answer) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -5782,6 +5790,14 @@
     "result": "agrees"
    }
   },
+  "0acd941e71c7a042": {
+   "verdict": "ok",
+   "note": "KC 4 9.6 § glossary, m68759",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0ad040be294f55b6": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -6697,6 +6713,14 @@
     "result": "agrees"
    }
   },
+  "0c876cc8797464d2": {
+   "verdict": "ok",
+   "note": "KC 4 11.3 § Example: Application of Henry’s Law, m68782",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0c8a7a3b8694f996": {
    "verdict": "ok",
    "note": "author-built from § Bacterial Rhinosinusitis, Check Your Understanding: \"What factor often triggers bacterial rhinosinusitis?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -6772,6 +6796,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "0cb6dff0e894f643": {
+   "verdict": "ok",
+   "note": "KC 4 9.1 § Gas Pressure, m68750"
   },
   "0cbbd711373fe3ca": {
    "verdict": "ok",
@@ -8804,6 +8832,14 @@
     "result": "agrees"
    }
   },
+  "10937ade39f95ac4": {
+   "verdict": "ok",
+   "note": "KC 4 11.2 § Covalent Electrolytes, m68781",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1095de2e97358f16": {
    "verdict": "ok",
    "note": "Matches the printed solution for fs-id1165137935628 (2, source exercise 7); the authored quadratic y=-2x^2+4 gives f(1)=2 (open circle at x=1 from the left branch), node-checked. | carried Oct 12 2026 (Precalculus ch11–12 re-review): re-hashed by a form, stem, or hint edit, key unchanged; re-solved blind (fable-solver, 77/77)",
@@ -9706,6 +9742,14 @@
    "note": "KC 3 11.2 § body Life Cycles of Sexually Reproducing Organisms (fs-id1746755), m66484 — parent re-read against the module | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "1260e62b3686527e": {
+   "verdict": "ok",
+   "note": "KC 4 9.4 § Use of Diffusion for Nuclear Energy Applications: Uranium Enrichment, m68754",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -14499,6 +14543,10 @@
     "result": "agrees"
    }
   },
+  "1acd4c4214225475": {
+   "verdict": "ok",
+   "note": "KC 4 9.6 § Non-Ideal Gas Behavior, m68759"
+  },
   "1ad112bd00a0cad3": {
    "verdict": "ok",
    "note": "glossary recall: white blood cell (fs-idm167407344) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -17486,6 +17534,15 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "2083a6d600dd1f67": {
+   "verdict": "ok",
+   "note": "KC 4 9.2 § Pressure and Temperature: Amontons’s Law, m68751",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "Both forms grade correct: the key is Gay-Lussac and the full name the module prints is an accept member."
+   }
+  },
   "2083bc2febca75ea": {
    "verdict": "ok",
    "note": "textin re-read against CNXML/page after checker fixes: phosphate",
@@ -18026,6 +18083,10 @@
   "21a4a328565310e4": {
    "verdict": "ok"
   },
+  "21b5c12d2f0e651a": {
+   "verdict": "ok",
+   "note": "KC 4 11.2 § Ionic Electrolytes, m68781"
+  },
   "21b673cec541db62": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -18378,6 +18439,15 @@
     "result": "agrees"
    }
   },
+  "225817d7f7fd72ea": {
+   "verdict": "ok",
+   "note": "KC 4 11.5 § Preparation of Colloidal Systems, m68784",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "Both grade correct: emulsifier is an accept member."
+   }
+  },
   "2258c00433090dd1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -18559,6 +18629,14 @@
   "22a458e5978c3aee": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "22b05fa7cc7187a1": {
+   "verdict": "ok",
+   "note": "KC 4 11.4 § Example: Converting Mole Fraction and Molal Concentrations, m68783",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -19301,6 +19379,14 @@
    "note": "source exercise fs-idp96311840 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "24756cca3ed09c2c": {
+   "verdict": "ok",
+   "note": "KC 4 10.5 § Crystal Defects, m68770",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -21272,6 +21358,14 @@
    "verdict": "ok",
    "note": "Critical Thinking fs-idp14432288; model answer is the source solution verbatim (ferns, seed-plant-like traits). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "2831a2a4c3b4494a": {
+   "verdict": "ok",
+   "note": "KC 4 10.1 § Example: Dipole-Dipole Forces and Their Effects, m68761",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "283780a236431427": {
    "verdict": "ok",
    "note": "KC 1 2.2 § lead paragraph (before Early Microscopes), m58786",
@@ -22074,6 +22168,14 @@
   "29b1ba24a8f40901": {
    "verdict": "ok",
    "note": "55.8752 m / 56.53 s = 0.988417... m/s; 56.53 has 4 sig figs, 55.8752 has 6, so 4 figures: 0.9884. Stem unit changed to the symbol m/s (G4); key unchanged.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "29b75f746faab037": {
+   "verdict": "ok",
+   "note": "KC 4 10.2 § glossary, m68764",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -23496,6 +23598,10 @@
     "result": "agrees"
    }
   },
+  "2ca35f134b0d2f0c": {
+   "verdict": "ok",
+   "note": "KC 4 11.4 § Vapor Pressure Lowering, m68783"
+  },
   "2cad53173bdf8c9f": {
    "verdict": "ok",
    "note": "textin glossary recall: answer 'genome mapping' matches glossary definition fs-id2023354 verbatim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -24812,6 +24918,14 @@
    "note": "Parent re-derived after restoring OH⁻/H⁺ superscripts in the fourth option: CNXML review question keyed 'Acids and bases will neutralize each other.' — the section says a base neutralizes an acid; the fourth option reverses which ion each donates and is false; options 1 and 3 contradict the buffer prose. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "2f14910049a87fee": {
+   "verdict": "ok",
+   "note": "KC 4 11.5 § Soaps and Detergents, m68784",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -32382,6 +32496,14 @@
     "result": "agrees"
    }
   },
+  "3e29496340291003": {
+   "verdict": "ok",
+   "note": "KC 4 9.4 § Example: Effusion Time Calculations, m68754",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3e2f117e2d6457d9": {
    "verdict": "ok",
    "note": "glossary recall: hypha (fs-idm44074976) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -36158,6 +36280,14 @@
     "result": "agrees"
    }
   },
+  "455778db369fa1db": {
+   "verdict": "ok",
+   "note": "KC 4 11.2 § introduction (conductance paragraph), m68781",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4559ef288efa6ed4": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -39172,6 +39302,14 @@
     "result": "agrees"
    }
   },
+  "4b4f489380fac1cd": {
+   "verdict": "ok",
+   "note": "KC 4 9.2 § Example: Predicting Change in Volume with Temperature, m68751",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4b4feebe4b246471": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -39635,6 +39773,14 @@
   "4c46c9afeb92efd8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "4c478f5a0cb343df": {
+   "verdict": "ok",
+   "note": "KC 4 9.5 § Molecular Speeds and Kinetic Energy, m68758",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -42814,6 +42960,10 @@
   "527efcdebe2e1bdf": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "528477d0cdc872ef": {
+   "verdict": "ok",
+   "note": "KC 4 9.5 § The Kinetic-Molecular Theory Explains the Behavior of Gases, Part I, m68758"
   },
   "528621d429181371": {
    "verdict": "ok",
@@ -46231,6 +46381,14 @@
   "592a16995a2b218f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "592c3ee02f7d8b7c": {
+   "verdict": "ok",
+   "note": "KC 4 10.1 § Dispersion Forces, m68761",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -57405,6 +57563,14 @@
     "result": "agrees"
    }
   },
+  "706766bfaf444731": {
+   "verdict": "ok",
+   "note": "KC 4 10.6 § Example: Calculation of Atomic Radius and Density for Metals, Part 2, m68773",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "706b2d4831da87d1": {
    "verdict": "ok",
    "note": "Check Your Learning of example fs-idm31201088 part (c): 0.20318 bar -> 0.20, source ~0.20",
@@ -59367,6 +59533,14 @@
   },
   "743968eacefa83a1": {
    "verdict": "ok"
+  },
+  "7439710fbdea0be0": {
+   "verdict": "ok",
+   "note": "KC 4 10.4 § body (the liquid-vapor curve), m68769",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "743c28a31a69d848": {
    "verdict": "ok",
@@ -65550,6 +65724,14 @@
     "result": "agrees"
    }
   },
+  "7fe3a9f3686584be": {
+   "verdict": "ok",
+   "note": "Check Your Learning of example fs-idp79703472 part (a): sqrt(2)*409/4 = 144.60 pm, keyed 145 (parent decision 42; source prints 144, erratum 3297) | 10.6 silver radius: last-digit:1 → 0 (every number is in the stem); the key is unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7fe40f4854c4e7ea": {
    "verdict": "ok",
    "note": "Bio 22.1 endolith selfcheck: source \"hypolith\" replaced by the tolerance it describes, inline source note, erratum 990 (m66542); parent re-read Sep 23 2026"
@@ -69992,6 +70174,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "88d5d1469b1b59d3": {
+   "verdict": "ok",
+   "note": "KC 4 9.3 § Example: The Pressure of a Mixture of Gases, m68752",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "88d831d53fbafb8e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -72138,6 +72328,14 @@
     "result": "agrees"
    }
   },
+  "8d014f6e230c6efb": {
+   "verdict": "ok",
+   "note": "KC 4 10.4 § body (the triple point), m68769",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8d04c270fd00c932": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -73652,6 +73850,14 @@
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "9038aa7ba47cc606": {
+   "verdict": "ok",
+   "note": "KC 4 10.5 § Metallic Solids, m68770",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -76016,6 +76222,14 @@
     "result": "agrees"
    }
   },
+  "94d9184b8017149d": {
+   "verdict": "ok",
+   "note": "KC 4 11.1 § The Formation of Solutions, m68778",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "94d9b3ddf81194aa": {
    "verdict": "ok",
    "note": "m66459 CT exercise fs-id1863345, solution fs-id1871574: model answer matches source verbatim (\"The transition state is always higher in energy than the reactants and the products...regardless of whether...endergonic or exergonic.\", ∆ normalized to Δ). Both CHECKS clauses restate it, no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -77624,6 +77838,15 @@
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
+   }
+  },
+  "97e53faef59b87b0": {
+   "verdict": "ok",
+   "note": "KC 4 10.3 § Example: Using Enthalpy of Vaporization, m68768",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "Form only: the grader takes 3600 as well as 3.6 × 10^3 at sig-figs:2; the section page prints both."
    }
   },
   "97e71642f6825ce8": {
@@ -79763,6 +79986,14 @@
    "note": "source exercise fs-idm14716480 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "9c7b9a355ca74743": {
+   "verdict": "ok",
+   "note": "KC 4 9.5 § The Kinetic-Molecular Theory, m68758",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -86000,6 +86231,14 @@
    "verdict": "ok",
    "note": "m66434 Critical Thinking Q2 <solution id=fs-idm199022944>: 'Some insects can walk on water... because of the surface tension of water. Surface tension results from cohesion, or the attraction between water molecules at the surface of the body of water...' Page model answer matches verbatim; both CHECKS clauses restate this with no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "a85257c9ed8847e0": {
+   "verdict": "ok",
+   "note": "KC 4 10.4 § Supercritical Fluids, m68769",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a8551c7341d8de63": {
    "verdict": "ok",
    "note": "source exercise fs-idm74775376 (printed 5) energy in eV: 2.018; 3.23267e-19/1.602e-19 = 2.01790",
@@ -88283,6 +88522,14 @@
   "ad59d70a9ac49ee1": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "ad5ae255a481c224": {
+   "verdict": "ok",
+   "note": "KC 4 10.6 § Example: Calculation of Ionic Radii, m68773",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "ad63edae9bb0eed0": {
    "verdict": "ok",
@@ -91417,6 +91664,14 @@
     "result": "agrees"
    }
   },
+  "b37792d19be59efe": {
+   "verdict": "ok",
+   "note": "KC 4 10.2 § body (capillary action in plants), m68764",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b3786a696dbf2cbe": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -91464,6 +91719,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "b3a8c48aacc225f1": {
+   "verdict": "ok",
+   "note": "KC 4 11.3 § Solutions of Gases in Liquids, m68782"
   },
   "b3abc9d713d79683": {
    "verdict": "ok",
@@ -99902,14 +100161,6 @@
    "verdict": "ok",
    "note": "unkeyed CYU, selfcheck: multi-sentence explanation | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
-  "c44699538f494b21": {
-   "verdict": "ok",
-   "note": "Check Your Learning of example fs-idp79703472 part (a): sqrt(2)*409/4 = 144.60 pm, keyed 145 (parent decision 42; source prints 144, erratum 3297)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "c44d2f1d0612c474": {
    "verdict": "ok",
    "note": "glossary recall: streptophytes (fs-idp1203696) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -100441,6 +100692,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "c512e10144464d87": {
+   "verdict": "ok",
+   "note": "KC 4 10.2 § body (adhesive forces and wetting), m68764"
   },
   "c512fabc4a9ff462": {
    "verdict": "ok",
@@ -107338,6 +107593,14 @@
     "result": "agrees"
    }
   },
+  "d3745b381f445e8e": {
+   "verdict": "ok",
+   "note": "KC 4 11.4 § Osmosis and Osmotic Pressure of Solutions, m68783",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d3763bc77a3bbf23": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -107754,6 +108017,14 @@
   "d429e1959fe86db5": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d43029e617ee8daa": {
+   "verdict": "ok",
+   "note": "KC 4 10.3 § glossary, m68768",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -108618,6 +108889,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "d5cbf376fb9361de": {
+   "verdict": "ok",
+   "note": "KC 4 10.3 § Melting and Freezing, m68768"
   },
   "d5ccd629fa164f08": {
    "verdict": "ok",
@@ -111343,6 +111618,14 @@
   "db2ce413aefe4c2b": {
    "verdict": "ok",
    "note": "cloze, opening paragraph fs-id2663704: Only a light or electron microscope can reveal these structures.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "db2ed8e8b9d24473": {
+   "verdict": "ok",
+   "note": "KC 4 9.1 § glossary, m68750",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -115067,6 +115350,14 @@
     "result": "agrees"
    }
   },
+  "e298d1f68f798a44": {
+   "verdict": "ok",
+   "note": "KC 4 9.2 § Volume and Pressure: Boyle’s Law, m68751",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e29a052d48afbe65": {
    "verdict": "ok",
    "note": "source exercise fs-idm111217280 part (b), solution fs-idp7180048: bond order of O₂ = 2, recomputed from the MO filling",
@@ -118008,6 +118299,15 @@
     "result": "agrees"
    }
   },
+  "e8f0a47f4041dd53": {
+   "verdict": "ok",
+   "note": "KC 4 9.3 § Example: Volumes of Reacting Gases, m68752",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "Form only: the grader takes 1020 as well as 1.02 × 10^3 at sig-figs:3; the section page prints both."
+   }
+  },
   "e8f2a1657ecd8d2a": {
    "verdict": "ok",
    "note": "KC 5 25.4 § Chagas Disease, m58938 | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -118898,6 +119198,14 @@
     "result": "agrees"
    }
   },
+  "ea99f611f2f309fd": {
+   "verdict": "ok",
+   "note": "KC 4 11.1 § glossary spontaneous process, m68778",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ea9fcd9098073e41": {
    "verdict": "ok",
    "note": "Prose-built sortbins from fs-id1640470 (myoglobin gives SO fibers their red color), fs-id2460105 (SO useful in maintaining posture), fs-id1424369 (FO sometimes called intermediate fibers; FO used primarily for movements such as walking), fs-id1207069 (FG white color; FG rapid, forceful contractions to make quick, powerful movements). Each label is attributed to one type only; FO and FG explicitly lack significant myoglobin.",
@@ -119386,6 +119694,15 @@
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
+   }
+  },
+  "eba4bb7ce125a7d8": {
+   "verdict": "ok",
+   "note": "KC 4 10.6 § Example: Using the Bragg Equation, m68773",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "The key stays 0.154, the value the source and the section page print; the errata log rules the three figures kept as printed (Section 10.6, Bragg example, \"Not an erratum\"). 0.1541 is graded form, so the learner is told to round, not marked wrong."
    }
   },
   "eba63cfc3a6cce17": {
@@ -121043,6 +121360,10 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
+  },
+  "eeba0655347aa437": {
+   "verdict": "ok",
+   "note": "KC 4 11.1 § The Formation of Solutions, m68778"
   },
   "eebf8f800fc27fb7": {
    "verdict": "ok",
@@ -122721,6 +123042,14 @@
    "verdict": "ok",
    "note": "Visual Connection selfcheck (exercise fs-idm2452752); model answer is the CNXML solution verbatim, checks decompose its two clauses. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "f240a2b9e0f72f87": {
+   "verdict": "ok",
+   "note": "KC 4 10.5 § Properties of Solids, m68770",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f240d3b516dc2c8f": {
    "verdict": "ok"
   },
@@ -124145,6 +124474,10 @@
   "f4b9261bcf3f8d75": {
    "verdict": "ok",
    "note": "KC 6 30.4 § body Leaf Adaptations (fs-idp93137392), m66599 — parent re-read against the module"
+  },
+  "f4c1210fd527e686": {
+   "verdict": "ok",
+   "note": "KC 4 9.4 § Effusion and Diffusion of Gases, m68754"
   },
   "f4c533d5d8f9733d": {
    "verdict": "ok",
@@ -126498,6 +126831,14 @@
     "result": "agrees"
    }
   },
+  "f9415639129eac7b": {
+   "verdict": "ok",
+   "note": "KC 4 9.1 § Measuring Blood Pressure, m68750",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f943bb6661e80f69": {
    "verdict": "ok",
    "note": "glossary recall: species-area relationship (fs-idp43419616) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -128546,6 +128887,14 @@
    "verdict": "ok",
    "note": "Critical Thinking fs-idp117922032; model answer is the source solution verbatim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "fd25ab38f47b3d46": {
+   "verdict": "ok",
+   "note": "KC 4 11.5 § table Examples of Colloidal Systems (fs-idm28163488, aerosol row), m68784",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "fd2a10ccbbb50b11": {
    "verdict": "ok",
    "note": "Practice ex19: D=1 read directly, matches CNXML midline y=1. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -129083,6 +129432,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "fe2f88d2485ff998": {
+   "verdict": "ok",
+   "note": "KC 4 9.3 § Gas Density and Molar Mass (the lead-in of the example “Determining the Molar Mass of a Volatile Liquid”), m68752"
   },
   "fe301b2b9c481c47": {
    "verdict": "ok"

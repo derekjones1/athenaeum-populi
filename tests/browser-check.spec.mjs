@@ -3681,3 +3681,51 @@ test('the Chemistry Knowledge Check for chapters 6–8 follows chapter 8, has no
   await check('-1');
   await expect.poll(status).toBe('correct');
 });
+
+// The fourth Chemistry Knowledge Check (November 25, 2026): gas-law and
+// unit-cell calculations, and the block's written items.
+test('the Chemistry Knowledge Check for chapters 9–11 follows chapter 11, has no hints, and grades a gas-law volume and a text answer', async ({ page }) => {
+  await gotoBuiltPage(page, '/physical-sciences/chemistry/knowledge-check-09-11/');
+
+  const book = await page.locator('aside a[href^="/physical-sciences/chemistry/"]').evaluateAll(
+    (links) => [...new Set(links.map((a) => a.getAttribute('href')))],
+  );
+  const at = book.findIndex((href) => href.endsWith('/chemistry/knowledge-check-09-11/'));
+  expect(at, 'the check is in the sidebar').toBeGreaterThan(0);
+  expect(book[at - 1]).toMatch(/^\/physical-sciences\/chemistry\/11-[^/]+\/\d\d-[^/]+\/$/);
+  expect(book[at + 1]).toBe('/physical-sciences/chemistry/12-kinetics/');
+
+  await expect(page.locator('[class*="hint"]')).toHaveCount(0);
+  await expect(page.locator('nav#ap-toc a.ap-reference-figure')).toHaveText('Periodic table');
+
+  // A text answer: another charged particle is not it; the key with an accepted adjective is.
+  const upgraded = (el) => Boolean(customElements.get('text-in')) && Boolean(el.querySelector('.ap-textin-check'));
+  const electrons = page.locator('text-in[data-answer="electrons"]');
+  await expect(electrons).toHaveCount(1);
+  await waitForUpgrade(electrons, upgraded);
+  await electrons.scrollIntoViewIfNeeded();
+  const typeInto = async (typed, wanted) => {
+    const field = electrons.locator('.ap-textin-field');
+    await field.fill(typed);
+    await field.press('Enter');
+    await expect.poll(() => electrons.evaluate((el) => el.status)).toBe(wanted);
+  };
+  await typeInto('ions', 'incorrect');
+  await typeInto('free electrons', 'correct');
+
+  // Charles's law: the starting volume retyped from the stem is not the answer.
+  const volume = page.locator('fill-in[data-question^="A sample of carbon dioxide"]');
+  await expect(volume).toHaveCount(1);
+  const field = volume.locator('math-field');
+  const status = () => volume.evaluate((el) => el.status);
+  const check = async (keys) => {
+    await clearMathField(field);
+    await focusMathField(page, field);
+    await page.keyboard.type(keys, { delay: 15 });
+    await volume.getByRole('button', { name: /check/i }).click();
+  };
+  await check('0.300');
+  await expect.poll(status).toBe('incorrect');
+  await check('0.321');
+  await expect.poll(status).toBe('correct');
+});

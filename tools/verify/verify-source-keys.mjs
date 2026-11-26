@@ -3135,7 +3135,9 @@ function heldNumber(answer, question, key) {
   // water's number.
   const fractions = [...String(answer).matchAll(/(?:(?<![A-Za-z])X\s+|\bmole fraction of\s+)([A-Z][A-Za-z0-9 _()]*?)\s*(?:=|\bis\b)\s*([−–-]?\d[\d.]*(?:\s*×\s*10\s*\^\{[−–-]?\d+\})?)/g)]
     .map((match) => ({ formula: formulaChars(match[1]), numeral: printedNumerals(match[2])[0] }))
-    .filter((entry) => entry.numeral && /\d/.test(entry.formula));
+    // A subscript with no digit is still a formula where it is two symbols
+    // or more ("X NaCl = 0.052" beside "X H 2 O = 0.95", 11.4's worked example).
+    .filter((entry) => entry.numeral && (/\d/.test(entry.formula) || /^(?:[A-Z][a-z]?){2,}$/.test(entry.formula)));
   for (const entries of [perFormula, fractions]) {
     if (entries.length < 2) continue;
     const words = new Set(String(closing).split(/\s+/).map((word) => formulaChars(word.replace(/[.,;:?]+$/, ''))));
@@ -3260,7 +3262,9 @@ function heldNumber(answer, question, key) {
     if (rest) amounts.push({ numeral, kind: KINDS[rest[1]], formula: formulaChars(rest[2].replace(/[.;]\s*$/, '')) });
   }
   if (amounts.length < 2) return null;
-  const kind = /\bmoles?\b/i.test(closing) ? 'moles' : /\bmass\b/i.test(closing) ? 'mass' : null;
+  // "Enter the mole fraction of …" asks no molar amount (11.4's 3.0 m NaCl,
+  // re-asked on Knowledge Check 4): the 55 mol of its working is no key of it.
+  const kind = /\bmoles?\b(?!\s+fractions?\b)/i.test(closing) ? 'moles' : /\bmass\b/i.test(closing) ? 'mass' : null;
   if (!kind) return null;
   const ofWhat = /.*\bof\s+(.+?)(?:\s+in\s+[a-z]+)?\.?$/i.exec(closing);
   const formula = ofWhat ? formulaChars(ofWhat[1]) : '';

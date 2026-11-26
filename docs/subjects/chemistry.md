@@ -2568,6 +2568,15 @@ to 13. Seven sections carry written items only — 6.1, 6.2, 7.2, 7.3, 8.1,
 by a Practice item of the block (`docs/history/chemistry.md`, "Knowledge
 Check 3").
 
+Block 4 landed November 25, 2026, after Sections 12.1–12.2 were already on
+the site: `knowledge-check-09-11.md`, 49 items over 17 sections (11 of them
+worked-example items), weight 15, chapter 12 moving to 16 and the
+appendices to 17. Nine sections carry written items only — 9.1, 9.5, 9.6,
+10.2, 10.4, 10.5, 11.1, 11.2, 11.5 — because they have no worked example
+or theirs need the gas constant, a table value, or a reading from a
+picture; 9.6 and 10.1 stand at two items (`docs/history/chemistry.md`,
+"Knowledge Check 4").
+
 ## What is still open
 
 What chapter 1 settled, and what the scan of the book counted, are in

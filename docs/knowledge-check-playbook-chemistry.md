@@ -135,7 +135,14 @@ an item. So:
     used, and 5.2 is written items only. That count is not in the 18. A
     set of RULES the section teaches — the solubility guidelines, the
     guidelines for oxidation numbers — is not such a table: the learner is
-    asked to know them, and 4.2's examples are used. Is, **in the part the item asks**, as the
+    asked to know them, and 4.2's examples are used. **Neither is the
+    kelvin offset or a metric prefix** *(block 4)*: $T_\text{K} =
+    T_{°\text{C}} + 273.15$ and 1 kg = 1000 g are exact definitions the
+    learner is asked to know, so 9.2's Charles's-law example and 11.4's
+    3.0 *m* sodium chloride example are used, while the gas constant, a
+    $K_\text{f}$ or $K_\text{b}$, a vapor pressure, and the section's
+    table of pressure units are factors like any other (9.1's conversion
+    example is not used; 9.5, 9.6, and most of 11.4 are written items). Is, **in the part the item asks**, as the
     source prints it — the section page corrected nothing in that part's
     question, its data, the working that leads to its answer, or the
     answer, and no Source note is about it (a known defect is not an
@@ -151,7 +158,10 @@ an item. So:
     item keys is the value the section page prints — Knowledge Check 1's
     chlorine-35 item on 2.3's example and Knowledge Check 2's ozone item
     on 5.3's, each of which gained such a note after the item was written
-    *(November 24, 2026)*);
+    *(November 24, 2026)*; and the same holds for the note that a section's
+    examples convert to kelvin with 273.15 where the source adds 273, where
+    the answer the item keys did not move — Knowledge Check 4's carbon
+    dioxide item on 9.2's example *(block 4)*);
     **is not one
     a section-page item already asks again** — the same substance or data
     and the same answer, as the source's own exercises sometimes do (2.4

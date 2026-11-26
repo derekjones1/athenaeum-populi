@@ -2,7 +2,7 @@
 title: Kinetics
 description: Kinetics — chemical reaction rates and the factors that affect them.
 source_chapter: "12"
-weight: 15
+weight: 16
 ---
 
 {{< mediafigure src="chemistry/CNX_Chem_12_00_Ectotherm" kind="photo" alt="A close-up photograph of a lizard resting on a pale, sunlit rock, seen from its left side, with its head raised and turned to the left. Its head, neck, and shoulders are covered in small scales colored magenta and reddish-pink, and its front leg and the part of its body nearest the right edge are deep blue-violet. Only the head, one front leg, and the front part of the body are in the picture. The background is an out-of-focus dark green." eager="true" >}}
